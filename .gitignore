@@ -1,0 +1,65 @@
+# ─────────────────────────────────────────────────────────────
+# Legacy site — reference only, NOT part of the new build.
+# Kept on disk + summarized in docs/01-legacy-site-audit.md.
+# (~750 MB of archives + ~20k files incl. a WordPress backup —
+#  excluded to keep this a clean "from scratch" repo.
+#  Remove these lines if you want the legacy source tracked.)
+# ─────────────────────────────────────────────────────────────
+/well-known/
+/blog.zip
+*.zip
+# Legacy blog DB dump now lives inside well-known/ (kaitekim_blog2.sql.gz) — already
+# covered by /well-known/; *.gz/*.sql are extra safety so no dump/export is ever committed.
+*.gz
+*.sql
+
+# ── Node / package managers ──
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# ── Next.js ──
+/.next/
+/out/
+/build
+/dist
+next-env.d.ts
+*.tsbuildinfo
+
+# ── Env & secrets ──
+.env
+.env.*
+!.env.example
+
+# ── Testing / coverage ──
+/coverage
+/playwright-report
+/test-results
+
+# ── Logs ──
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ── Editor / OS ──
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# ── Misc caches ──
+.vercel
+.turbo
+.cache/
+
+# ── Tooling scratch (MCP page snapshots, design-tool cache, etc.) ──
+.playwright-mcp/
+.impeccable/*.cache.json

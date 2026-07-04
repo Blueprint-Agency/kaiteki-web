@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Kaiteki — "Quiet Clinic" design tokens (docs/06 §2)
+   Brand palette (client-provided 2026-07): warm neutrals.
+   - Text-safe colours (AA on page/white): ink-900 / ink-700 / ink-500,
+     + ink-on-dark for text on the espresso footer.
+   - Surface / large-accent only (fail small-text AA): mocha, sand, porcelain.
+   - The ONE saturated colour on any page is the WhatsApp CTA green.
+   No dark mode at launch (docs/06 §10.3).
+   ============================================================ */
+
+@theme {
+  /* Brand anchors (client palette) */
+  --color-porcelain: #e4e0e1; /* lightest warm neutral */
+  --color-sand:      #d6c0b3; /* taupe — bands, strong dividers, chips */
+  --color-mocha:     #ab886d; /* mid brand brown — large accents/borders only */
+  --color-espresso:  #493628; /* darkest — primary ink + footer bg */
+
+  /* Surfaces */
+  --color-page:      #fcfbfa; /* warm near-white page */
+  --color-surface:   #ffffff; /* cards */
+  --color-tint:      #f4f0ed; /* subtle warm alternating band */
+  --color-hairline:  #e7ded6; /* 1px warm rules / card borders */
+
+  /* Text (contrast-verified on page/white) */
+  --color-ink-900:    #493628; /* primary  ~11:1 */
+  --color-ink-700:    #5b4636; /* secondary ~8.8:1 */
+  --color-ink-500:    #6f5647; /* muted / ledger ~6.8:1 */
+  --color-ink-on-dark:#f1ebe6; /* text on espresso ~10:1 */
+
+  /* Accent (eyebrows/icons/small — 4.9:1 on white; NOT large fills) */
+  --color-accent:    #8a6a4f;
+
+  /* The single action colour — WhatsApp (owns the brightest pixel) */
+  --color-cta:       #0e7a55;
+  --color-cta-hover: #0a5f43;
+
+  /* Feedback (rare — form-less site) */
+  --color-error:   #b3261e;
+  --color-warn:    #8a5a00;
+  --color-success: #1a7f4e;
+
+  /* Radius (docs/06 §2.3) */
+  --radius-s:    4px;
+  --radius-m:    10px;
+  --radius-pill: 999px;
+}
+
+/* Font families — faces wired via next/font in layout.tsx (docs/06 §2.2).
+   `inline` so Tailwind keeps the runtime CSS vars from next/font. */
+@theme inline {
+  --font-sans:  var(--font-display-face), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-serif-face), ui-serif, Georgia, "Times New Roman", serif;
+  --font-mono:  ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+}
+
+:root {
+  color-scheme: light; /* no dark mode at launch */
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-page);
+  color: var(--color-ink-900);
+  font-family: var(--font-sans); /* UI default = Schibsted Grotesk */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Long-form article prose opts into the serif (docs/06 §2.2) */
+.prose {
+  font-family: var(--font-serif);
+}
+
+/* Ledger / record utility — MMC, KKLIU, NAP (docs/06 §4.6) */
+.ledger {
+  font-family: var(--font-mono);
+  color: var(--color-ink-500);
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
+}
+
+/* Visible focus (WCAG 2.2 — docs/06 §7) */
+:focus-visible {
+  outline: 2px solid var(--color-espresso);
+  outline-offset: 2px;
+}
+
+/* Reduced motion is mandatory (docs/06 §3) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
