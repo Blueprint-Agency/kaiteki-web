@@ -6,6 +6,10 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: __dirname,
   },
+  // Modern formats for the warm imagery (docs/02 §2).
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
 };
 
 export default nextConfig;
