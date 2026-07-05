@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Legacy site reference dump — excluded in tsconfig.json for the same reason.
+    "well-known/**",
   ]),
 ]);
 

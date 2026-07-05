@@ -62,4 +62,4 @@ Thumbs.db
 
 # ── Tooling scratch (MCP page snapshots, design-tool cache, etc.) ──
 .playwright-mcp/
-.impeccable/*.cache.json
+.impeccable/

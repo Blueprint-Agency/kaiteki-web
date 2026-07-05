@@ -76,18 +76,125 @@ body {
   font-family: var(--font-serif);
 }
 
-/* Ledger / record utility — MMC, KKLIU, NAP (docs/06 §4.6) */
+/* Ledger / record utility — MMC, KKLIU, NAP (docs/06 §4.6).
+   Uses the brand sans (not mono — dropped 2026-07 for font consistency); the
+   "record" feel comes from tracking + tabular figures, not a console typeface. */
 .ledger {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   color: var(--color-ink-500);
   font-size: 0.8125rem;
   letter-spacing: 0.01em;
+  font-variant-numeric: tabular-nums;
 }
 
 /* Visible focus (WCAG 2.2 — docs/06 §7) */
 :focus-visible {
   outline: 2px solid var(--color-espresso);
   outline-offset: 2px;
+}
+
+/* ============================================================
+   Motion system (docs/06 §3 evolved 2026-07 for more "pop").
+   CSS-first, transform/opacity only, reduced-motion-safe.
+   Easing + durations follow the 100/300/500 rule.
+   ============================================================ */
+:root {
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-1: 120ms;
+  --dur-2: 260ms;
+  --dur-hero: 720ms;
+}
+
+@keyframes kaiteki-rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: none; }
+}
+/* Transform-only — content stays fully visible even if motion never plays
+   (crawler/headless/no-scroll safe). Used for below-the-fold reveal. */
+@keyframes kaiteki-slide {
+  from { transform: translateY(26px); }
+  to { transform: none; }
+}
+@keyframes kaiteki-mask-in {
+  from { opacity: 0; transform: translateY(115%); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes kaiteki-media-in {
+  from { opacity: 0; transform: scale(1.06); clip-path: inset(0 0 22% 0 round 1rem); }
+  to { opacity: 1; transform: scale(1); clip-path: inset(0 0 0 0 round 1rem); }
+}
+@keyframes kaiteki-seed {
+  0% { opacity: 0; transform: translate(0, 0) rotate(0deg); }
+  12% { opacity: 0.7; }
+  100% { opacity: 0; transform: translate(var(--sx, 40px), var(--sy, -120px)) rotate(220deg); }
+}
+@keyframes kaiteki-glow {
+  0%, 100% { box-shadow: 0 8px 24px rgb(14 122 85 / 0.28), 0 0 0 0 rgb(14 122 85 / 0.35); }
+  50% { box-shadow: 0 10px 28px rgb(14 122 85 / 0.34), 0 0 0 8px rgb(14 122 85 / 0); }
+}
+
+/* Only animate when JS is present (avoids blank content for crawlers/no-JS)
+   and only when the user hasn't asked for reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  /* Above-the-fold hero: play on load with a staggered delay via --i */
+  .reveal-ready .rise {
+    animation: kaiteki-rise var(--dur-hero) var(--ease-out-quart) both;
+    animation-delay: calc(var(--i, 0) * 90ms);
+  }
+  .reveal-ready .mask-line {
+    display: inline-block;
+    animation: kaiteki-mask-in var(--dur-hero) var(--ease-out-expo) both;
+    animation-delay: calc(var(--i, 0) * 90ms);
+  }
+  .reveal-ready .hero-media {
+    animation: kaiteki-media-in 900ms var(--ease-out-expo) both;
+    animation-delay: 120ms;
+  }
+
+  /* Below-the-fold reveal: native CSS scroll-driven animation where supported.
+     No JS, no observer. Where unsupported (e.g. Firefox) or under reduced
+     motion, content is simply visible — it NEVER ships blank (crawler/headless
+     safe; content is in the server HTML regardless). Cards in a row enter
+     together and rows stagger naturally with scroll. */
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: kaiteki-slide linear both;
+      animation-timeline: view();
+      animation-range: entry 5% entry 48%;
+    }
+  }
+
+  .cta-glow { animation: kaiteki-glow 3.2s ease-in-out infinite; }
+}
+
+.mask-clip { overflow: hidden; }
+
+/* Hide the scrollbar on native horizontal scroll-snap tracks (e.g. the
+   doctors slider) — the arrow buttons remain the visible affordance. */
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Dandelion seed-drift — the brand signature (logo motif). Decorative only. */
+.seed {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--color-mocha);
+  opacity: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-ready .seed {
+    animation: kaiteki-seed var(--seed-dur, 9s) var(--ease-out-quart) infinite;
+    animation-delay: var(--seed-delay, 0s);
+  }
 }
 
 /* Reduced motion is mandatory (docs/06 §3) */
@@ -100,4 +207,5 @@ body {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+  .seed { display: none; }
 }
