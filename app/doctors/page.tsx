@@ -23,9 +23,10 @@ export default function DoctorsHub() {
           how we work — and why we don&rsquo;t rely on testimonials or before-and-after photos.
         </p>
       </div>
-      <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {doctors.map((d) => (
-          <DoctorCard key={d.slug} d={d} />
+          // Square crop to match the homepage doctor strip (was a tall 2:3 portrait).
+          <DoctorCard key={d.slug} d={d} mediaClassName="aspect-square" />
         ))}
       </div>
       <p className="mt-8 text-sm text-ink-500">

@@ -91,6 +91,42 @@ export interface Doctor {
   photo: string;
   branches: string[];
   interests: string[];
+  /** Optional authored bio paragraphs for the profile page. Omitted until the
+   *  clinic supplies verified copy — no fabricated medical claims (docs/05 §9). */
+  bio?: string[];
+}
+
+/** Grouping for the skincare (cosmeceuticals) product hub — Kaiteki's own
+ *  medical-grade line vs. resold partner brands. */
+export type ProductGroup = "Kaiteki® Cosmeceuticals" | "Partner Brands";
+
+/** A retail skincare/cosmeceutical product (legacy /skincare.html → /skincare).
+ *  Conversion is WhatsApp-only, consistent with the rest of the site — no cart. */
+export interface Product {
+  slug: string;
+  name: string;
+  /** Manufacturer/brand, e.g. "Kaiteki", "Heliocare". */
+  brand: string;
+  group: ProductGroup;
+  /** Product type shown as the card eyebrow, e.g. "Serum", "Sunscreen". */
+  category: string;
+  /** Price in Malaysian Ringgit (MYR). */
+  price: number;
+  /** Optional secondary price line, e.g. a bundle ("3 for RM1,200"). */
+  priceNote?: string;
+  /** Description — factual, purchase-useful copy adapted from the legacy page
+   *  with hard efficacy/outcome claims softened for compliance (docs/02 §8).
+   *  Pending final approved marketing copy. */
+  summary: string;
+  /** Key active ingredients, surfaced on the card to aid the decision. */
+  ingredients?: string[];
+  /** Who or what it's for — skin type or intended use. */
+  bestFor?: string;
+  /** Short factual highlights (format, SPF, pack size, usage, "free-from").
+   *  Product facts only — not efficacy/outcome claims. */
+  highlights?: string[];
+  /** Concern slugs this product relates to — drives internal cross-linking. */
+  concerns?: string[];
 }
 
 /** Device/brand-partner performance award — substantiated by the naming
