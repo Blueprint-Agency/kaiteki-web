@@ -1,0 +1,391 @@
+<title>Kaiteki — URL Structure: Old vs Proposed</title>
+<style>
+  :root{
+    --porcelain:#F7F3ED; --paper:#FBF9F5; --sand:#EAE0D3; --sand-line:#DCCFBD;
+    --mocha:#6F5647; --mocha-soft:#8C7362; --espresso:#3A2E27; --ink:#2A211C;
+    --gold:#B08D57; --old:#B4675A; --old-bg:#F5E7E3; --old-line:#E4C7C0;
+    --new:#5E7C63; --new-bg:#E7F0E8; --new-line:#C6DCC9;
+    --muted:#8a7c70;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --porcelain:#1C1815; --paper:#241F1B; --sand:#2E2721; --sand-line:#3B322A;
+      --mocha:#C9AE97; --mocha-soft:#B79A82; --espresso:#EFE7DD; --ink:#F3ECE3;
+      --gold:#D2AA73; --old:#D98F80; --old-bg:#2E211E; --old-line:#4A322D;
+      --new:#8FB596; --new-bg:#1F2A21; --new-line:#33472F;
+      --muted:#9c8d80;
+    }
+  }
+  :root[data-theme="dark"]{
+    --porcelain:#1C1815; --paper:#241F1B; --sand:#2E2721; --sand-line:#3B322A;
+    --mocha:#C9AE97; --mocha-soft:#B79A82; --espresso:#EFE7DD; --ink:#F3ECE3;
+    --gold:#D2AA73; --old:#D98F80; --old-bg:#2E211E; --old-line:#4A322D;
+    --new:#8FB596; --new-bg:#1F2A21; --new-line:#33472F; --muted:#9c8d80;
+  }
+  :root[data-theme="light"]{
+    --porcelain:#F7F3ED; --paper:#FBF9F5; --sand:#EAE0D3; --sand-line:#DCCFBD;
+    --mocha:#6F5647; --mocha-soft:#8C7362; --espresso:#3A2E27; --ink:#2A211C;
+    --gold:#B08D57; --old:#B4675A; --old-bg:#F5E7E3; --old-line:#E4C7C0;
+    --new:#5E7C63; --new-bg:#E7F0E8; --new-line:#C6DCC9; --muted:#8a7c70;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--porcelain); color:var(--espresso);
+    font-family:"Georgia","Times New Roman",serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1100px; margin:0 auto; padding:clamp(1.5rem,4vw,4rem) clamp(1rem,4vw,2.5rem) 5rem;}
+  code,.mono{font-family:"SF Mono","Consolas","Menlo",monospace; font-size:.82em;}
+  header.hero{border-bottom:1px solid var(--sand-line); padding-bottom:1.75rem; margin-bottom:2.5rem;}
+  .eyebrow{font-family:"SF Mono",monospace; font-size:.7rem; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); margin:0 0 .9rem;}
+  h1{font-size:clamp(1.9rem,4.5vw,2.9rem); line-height:1.1; margin:0 0 .6rem; letter-spacing:-.01em; font-weight:600; color:var(--ink);}
+  .sub{font-size:1.05rem; color:var(--muted); max-width:60ch; margin:0;}
+  .stats{display:flex; flex-wrap:wrap; gap:1rem; margin-top:1.9rem;}
+  .stat{background:var(--paper); border:1px solid var(--sand-line); border-radius:12px; padding:.85rem 1.15rem; min-width:130px; flex:1;}
+  .stat b{display:block; font-size:1.55rem; color:var(--mocha); line-height:1; margin-bottom:.35rem; font-weight:600;}
+  .stat span{font-size:.78rem; color:var(--muted); letter-spacing:.02em;}
+  .cols{display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin:2rem 0;}
+  @media (max-width:760px){ .cols{grid-template-columns:1fr;} }
+  .panel{border-radius:16px; padding:1.5rem 1.6rem 1.75rem; border:1px solid;}
+  .panel.old{background:var(--old-bg); border-color:var(--old-line);}
+  .panel.new{background:var(--new-bg); border-color:var(--new-line);}
+  .ptag{display:inline-flex; align-items:center; gap:.5rem; font-family:"SF Mono",monospace; font-size:.68rem; letter-spacing:.16em; text-transform:uppercase; font-weight:700; padding:.3rem .65rem; border-radius:100px; margin-bottom:.4rem;}
+  .panel.old .ptag{color:#fff; background:var(--old);}
+  .panel.new .ptag{color:#fff; background:var(--new);}
+  :root[data-theme="dark"] .panel.old .ptag,:root[data-theme="dark"] .panel.new .ptag{color:#1C1815;}
+  @media (prefers-color-scheme:dark){.panel.old .ptag,.panel.new .ptag{color:#1C1815;}}
+  .panel h2{font-size:1.35rem; margin:.35rem 0 .3rem; color:var(--ink); font-weight:600;}
+  .panel .desc{font-size:.9rem; color:var(--muted); margin:0 0 1.2rem;}
+  .grp{margin-bottom:1.15rem;}
+  .grp:last-child{margin-bottom:0;}
+  .grp-h{font-family:"SF Mono",monospace; font-size:.68rem; letter-spacing:.12em; text-transform:uppercase; color:var(--mocha-soft); margin:0 0 .5rem; font-weight:700;}
+  ul.tree{list-style:none; margin:0; padding:0;}
+  ul.tree li{font-family:"SF Mono",monospace; font-size:.8rem; padding:.16rem 0 .16rem .1rem; color:var(--espresso); display:flex; gap:.5rem; align-items:baseline;}
+  ul.tree li .u{color:var(--espresso);}
+  ul.tree li .note{font-family:Georgia,serif; font-size:.76rem; color:var(--muted); font-style:italic;}
+  ul.tree li.indent{padding-left:1.35rem;}
+  ul.tree li.indent2{padding-left:2.5rem;}
+  .badge{font-family:"SF Mono",monospace; font-size:.6rem; letter-spacing:.05em; padding:.05rem .4rem; border-radius:5px; font-style:normal; vertical-align:middle;}
+  .b-new{background:var(--new); color:#fff;}
+  .b-drop{background:var(--old); color:#fff;}
+  :root[data-theme="dark"] .b-new,:root[data-theme="dark"] .b-drop{color:#1C1815;}
+  @media (prefers-color-scheme:dark){.b-new,.b-drop{color:#1C1815;}}
+  section.block{margin-top:3rem;}
+  .block > h2{font-size:1.5rem; color:var(--ink); border-bottom:1px solid var(--sand-line); padding-bottom:.6rem; margin:0 0 1.25rem; font-weight:600;}
+  .block > h2 .k{font-family:"SF Mono",monospace; font-size:.7rem; color:var(--gold); letter-spacing:.15em; text-transform:uppercase; margin-left:.6rem; vertical-align:middle;}
+  .tblwrap{overflow-x:auto; border:1px solid var(--sand-line); border-radius:12px; background:var(--paper);}
+  table{border-collapse:collapse; width:100%; min-width:560px;}
+  th,td{text-align:left; padding:.6rem .95rem; font-size:.82rem; border-bottom:1px solid var(--sand-line); vertical-align:top;}
+  th{font-family:"SF Mono",monospace; font-size:.66rem; letter-spacing:.1em; text-transform:uppercase; color:var(--mocha-soft); background:var(--sand); font-weight:700;}
+  tr:last-child td{border-bottom:none;}
+  td.old-c code{color:var(--old);}
+  td.new-c code{color:var(--new); font-weight:600;}
+  td .arrow{color:var(--gold); padding:0 .3rem;}
+  .pill{font-family:"SF Mono",monospace; font-size:.62rem; padding:.1rem .45rem; border-radius:5px; background:var(--sand); color:var(--mocha); letter-spacing:.03em;}
+  .pill.p410{background:var(--old-bg); color:var(--old);}
+  .grpcap{caption-side:top; text-align:left; font-family:"SF Mono",monospace; font-size:.66rem; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); padding:.9rem .95rem .3rem; font-weight:700;}
+  .principles{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:.9rem; margin-top:1rem;}
+  .pr{background:var(--paper); border:1px solid var(--sand-line); border-radius:8px; padding:.85rem 1rem;}
+  .pr b{display:block; font-size:.9rem; color:var(--ink); margin-bottom:.25rem;}
+  .pr b::before{content:"›"; color:var(--gold); font-weight:700; margin-right:.4rem;}
+  .pr span{font-size:.82rem; color:var(--muted);}
+  footer{margin-top:3.5rem; padding-top:1.4rem; border-top:1px solid var(--sand-line); font-size:.78rem; color:var(--muted);}
+  footer code{color:var(--mocha);}
+  .themebtn{position:fixed; top:1rem; right:1rem; background:var(--paper); border:1px solid var(--sand-line); color:var(--espresso); border-radius:100px; padding:.4rem .8rem; font-size:.72rem; cursor:pointer; font-family:"SF Mono",monospace; letter-spacing:.05em;}
+</style>
+
+<button class="themebtn" onclick="(function(){var r=document.documentElement;var d=getComputedStyle(r).getPropertyValue('--porcelain').trim().startsWith('#1');r.setAttribute('data-theme',d?'light':'dark');})()">◐ theme</button>
+
+<div class="wrap">
+
+  <header class="hero">
+    <p class="eyebrow">Kaiteki Rebuild · Information Architecture</p>
+    <h1>URL Structure: Legacy vs Proposed</h1>
+    <p class="sub">How the old static <code>.html/.php</code> site maps onto the new Next.js clean-URL taxonomy — the migration contract for <code>kaiteki.my</code>.</p>
+    <div class="stats">
+      <div class="stat"><b>~80</b><span>legacy URLs in sitemap<br>(root + /cn mirror)</span></div>
+      <div class="stat"><b>5</b><span>typed axes: treatments · concerns · locations · doctors · blog</span></div>
+      <div class="stat"><b>≤ 2</b><span>path levels deep<br>(≤ 3 clicks from home)</span></div>
+      <div class="stat"><b>9</b><span>branches — one canonical<br>location page each</span></div>
+    </div>
+  </header>
+
+  <!-- SIDE BY SIDE TREES -->
+  <div class="cols">
+
+    <!-- OLD -->
+    <div class="panel old">
+      <span class="ptag">● Legacy — as-is</span>
+      <h2>Old structure</h2>
+      <p class="desc">Flat, hand-maintained static HTML + light PHP. Extension-laden, no templating, EN &amp; CN duplicated by hand. Blog off-domain.</p>
+
+      <div class="grp">
+        <p class="grp-h">Core / global</p>
+        <ul class="tree">
+          <li><span class="u">/index.html</span></li>
+          <li><span class="u">/aboutus.html</span> <span class="note">+ #Doctors anchor</span></li>
+          <li><span class="u">/our-clinics.php</span> <span class="note">contact + 9 branches</span></li>
+          <li><span class="u">/services.html</span> <span class="note">"Others" catch-all</span></li>
+          <li><span class="u">/promo.html</span></li>
+          <li><span class="u">/privacy.html</span></li>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <p class="grp-h">Concern "hub" pages</p>
+        <ul class="tree">
+          <li><span class="u">/skincare.html</span></li>
+          <li><span class="u">/skin.html</span> <span class="note">#Birthmark, #Sweating…</span></li>
+          <li><span class="u">/facial-treatment-malaysia.html</span></li>
+          <li><span class="u">/hair.html</span> <span class="note">#HairLoss</span></li>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <p class="grp-h">Concern pages (flat)</p>
+        <ul class="tree">
+          <li><span class="u">/acne.html</span></li>
+          <li><span class="u">/aging.html</span></li>
+          <li><span class="u">/pigmentation.html</span></li>
+          <li><span class="u">/pores.html</span></li>
+          <li><span class="u">/dark-eye-circle-treatment.html</span></li>
+          <li><span class="u">/face-contour-treatment.html</span></li>
+          <li><span class="u">/face-lifting-treatment.html</span></li>
+          <li><span class="u">/fine-lines-and-wrinkles-treatment.html</span></li>
+          <li><span class="u">/slimming-treatment.html</span></li>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <p class="grp-h">Treatment / machine pages (flat)</p>
+        <ul class="tree">
+          <li><span class="u">/hifu.html</span> · <span class="u">/ultherapy.html</span></li>
+          <li><span class="u">/pico-laser-treatment.html</span></li>
+          <li><span class="u">/coolsculpting.html</span> <span class="note">not in sitemap</span></li>
+          <li><span class="u">/fat-freezing.html</span> · <span class="u">/fotona-4d.html</span></li>
+          <li><span class="u">/onda.html</span> · <span class="u">/microneedling.html</span></li>
+          <li><span class="u">/radiofrequency.html</span> · <span class="u">/dermav.html</span></li>
+          <li><span class="u">/bio-stimulator.html</span> · <span class="u">/skinbooster.html</span></li>
+          <li><span class="u">/exosome-therapy.html</span> · <span class="u">/tattoo-removal.html</span></li>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <p class="grp-h">Branch pages — 9 × <code>.php</code></p>
+        <ul class="tree">
+          <li><span class="u">/mont-kiara.php</span></li>
+          <li><span class="u">/cheras.php</span></li>
+          <li><span class="u">/kuala-lumpur.php</span> <span class="note">= Bukit Jalil (mismatch!)</span></li>
+          <li><span class="u">/fourseasons-kl.php</span></li>
+          <li><span class="u">/petaling-jaya.php</span></li>
+          <li><span class="u">/shah-alam.php</span> <span class="note">= Kota Kemuning</span></li>
+          <li><span class="u">/johor.php</span></li>
+          <li><span class="u">/johor-pelangi-avenue.php</span></li>
+          <li><span class="u">/kota-kinabalu.php</span></li>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <p class="grp-h">Campaign / localisation / blog</p>
+        <ul class="tree">
+          <li><span class="u">/anniversary.html</span>, <span class="u">/6th-anniversary(2).html</span></li>
+          <li><span class="u">/component-colors.html</span> <span class="note">dev artifact</span></li>
+          <li><span class="u">/cn/*</span> <span class="note">full Chinese mirror + double-eyelid</span></li>
+          <li><span class="u">/sg/*</span> <span class="note">standalone; not in sitemap</span></li>
+          <li><span class="u">/indonesia/</span> <span class="note">empty placeholder</span></li>
+          <li><span class="u">blog.kaiteki.my</span> <span class="note">external WordPress</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- NEW -->
+    <div class="panel new">
+      <span class="ptag">● Proposed — Next.js</span>
+      <h2>Proposed structure</h2>
+      <p class="desc">Clean, extensionless, lowercase, non-www, ≤ 2 levels. Typed &amp; siloed by axis; every leaf generated from in-repo data. English at root, <code>/zh</code> reserved.</p>
+
+      <div class="grp">
+        <p class="grp-h">Root &amp; global</p>
+        <ul class="tree">
+          <li><span class="u">/</span> <span class="note">Home</span></li>
+          <li><span class="u">/about</span></li>
+          <li><span class="u">/promotions</span></li>
+          <li><span class="u">/contact</span></li>
+          <li><span class="u">/privacy</span> · <span class="u">/terms</span></li>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <p class="grp-h">Doctors <span class="badge b-new">NEW axis</span></p>
+        <ul class="tree">
+          <li><span class="u">/doctors</span> <span class="note">E-E-A-T roster hub</span></li>
+          <li class="indent"><span class="u">/doctors/[doctor-slug]</span> <span class="note">dr-jane-tan</span></li>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <p class="grp-h">Treatments</p>
+        <ul class="tree">
+          <li><span class="u">/treatments</span> <span class="note">pillar hub</span></li>
+          <li class="indent"><span class="u">/treatments/[slug]</span></li>
+          <li class="indent2"><span class="note">hifu · ultherapy · pico-laser · coolsculpting · fat-freezing · fotona-4d · onda · microneedling · radiofrequency · dermav · bio-stimulator · skin-booster · exosome-therapy · tattoo-removal · double-eyelid</span></li>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <p class="grp-h">Concerns <span class="badge b-new">NEW axis</span></p>
+        <ul class="tree">
+          <li><span class="u">/concerns</span> <span class="note">pillar hub</span></li>
+          <li class="indent"><span class="u">/concerns/skin</span> · <span class="u">/concerns/face</span> <span class="note">categories</span></li>
+          <li class="indent"><span class="u">/concerns/[slug]</span></li>
+          <li class="indent2"><span class="note">acne · aging · pigmentation · enlarged-pores · dark-eye-circles · face-contouring · face-lifting · fine-lines-wrinkles · body-slimming · hair-loss</span></li>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <p class="grp-h">Locations</p>
+        <ul class="tree">
+          <li><span class="u">/locations</span> <span class="note">crawlable locator hub</span></li>
+          <li class="indent"><span class="u">/locations/[branch-slug]</span></li>
+          <li class="indent2"><span class="note">mont-kiara · cheras · bukit-jalil · four-seasons-kl · petaling-jaya · kota-kemuning · southkey-johor-bahru · pelangi-johor-bahru · kota-kinabalu</span></li>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <p class="grp-h">Blog <span class="badge b-new">on-domain</span></p>
+        <ul class="tree">
+          <li><span class="u">/blog</span> <span class="note">index / hub</span></li>
+          <li class="indent"><span class="u">/blog/[slug]</span> <span class="note">1:1 from blog.kaiteki.my</span></li>
+          <li class="indent"><span class="u">/blog/category/[c]</span> <span class="note">optional · noindex,follow</span></li>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <p class="grp-h">System &amp; i18n</p>
+        <ul class="tree">
+          <li><span class="u">/sitemap.xml</span> <span class="note">index → per-type</span></li>
+          <li><span class="u">/sitemaps/[type].xml</span> · <span class="u">/robots.txt</span></li>
+          <li><span class="u">404</span> <span class="note">real status</span></li>
+          <li><span class="u">/zh/**</span> <span class="note">reserved mirror (EN unprefixed)</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRINCIPLES -->
+  <section class="block">
+    <h2>What changed <span class="k">docs/04 §1</span></h2>
+    <div class="principles">
+      <div class="pr"><b>Flat → typed &amp; siloed</b><span>One route group per axis, each with its own data &amp; sitemap segment. No more ~80 loose files.</span></div>
+      <div class="pr"><b>Extensions removed</b><span><code>.html</code>/<code>.php</code> → clean, lowercase, hyphenated, extensionless paths.</span></div>
+      <div class="pr"><b>Two new axes</b><span>Dedicated <code>/concerns</code> and <code>/doctors</code> — a competitor gap and the E-E-A-T moat.</span></div>
+      <div class="pr"><b>Blog consolidated</b><span><code>blog.kaiteki.my</code> subdomain → <code>/blog</code> subfolder to reclaim domain authority.</span></div>
+      <div class="pr"><b>Branch slug fixed</b><span>Legacy <code>/kuala-lumpur.php</code> actually served Bukit Jalil — corrected to <code>/locations/bukit-jalil</code>.</span></div>
+      <div class="pr"><b>i18n-ready</b><span>Locale-neutral slugs; EN at root, <code>/zh</code> (later <code>/ms</code>) purely additive — no geo baked into slugs.</span></div>
+    </div>
+  </section>
+
+  <!-- REDIRECT MAP -->
+  <section class="block">
+    <h2>Migration map — every legacy URL → new home <span class="k">docs/04 §9 · 301</span></h2>
+    <div class="tblwrap">
+      <table>
+        <caption class="grpcap">Host &amp; core / global pages</caption>
+        <thead><tr><th>Legacy</th><th>New</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td class="old-c"><code>www. / http:// / blog. hosts</code></td><td class="new-c"><code>https://kaiteki.my/…</code><span class="arrow">→</span>apex, 1 hop</td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/index.html</code></td><td class="new-c"><code>/</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/aboutus.html</code></td><td class="new-c"><code>/about</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/our-clinics.php</code></td><td class="new-c"><code>/locations</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/services.html</code></td><td class="new-c"><code>/treatments</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/skin-care</code></td><td class="new-c"><code>/concerns</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/promo.html</code></td><td class="new-c"><code>/promotions</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/privacy.html</code></td><td class="new-c"><code>/privacy</code></td><td><span class="pill">301</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tblwrap" style="margin-top:1.25rem">
+      <table>
+        <caption class="grpcap">Concern hubs &amp; concern pages</caption>
+        <thead><tr><th>Legacy</th><th>New</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td class="old-c"><code>/skincare.html · /skin.html</code></td><td class="new-c"><code>/concerns/skin</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/facial-treatment-malaysia.html</code></td><td class="new-c"><code>/concerns/face</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/hair.html</code></td><td class="new-c"><code>/concerns/hair-loss</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/acne.html</code></td><td class="new-c"><code>/concerns/acne</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/aging.html</code></td><td class="new-c"><code>/concerns/aging</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/pigmentation.html</code></td><td class="new-c"><code>/concerns/pigmentation</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/pores.html</code></td><td class="new-c"><code>/concerns/enlarged-pores</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/dark-eye-circle-treatment.html</code></td><td class="new-c"><code>/concerns/dark-eye-circles</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/face-contour-treatment.html</code></td><td class="new-c"><code>/concerns/face-contouring</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/face-lifting-treatment.html</code></td><td class="new-c"><code>/concerns/face-lifting</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/fine-lines-and-wrinkles-treatment.html</code></td><td class="new-c"><code>/concerns/fine-lines-wrinkles</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/slimming-treatment.html</code></td><td class="new-c"><code>/concerns/body-slimming</code></td><td><span class="pill">301</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tblwrap" style="margin-top:1.25rem">
+      <table>
+        <caption class="grpcap">Treatment / machine pages</caption>
+        <thead><tr><th>Legacy</th><th>New</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td class="old-c"><code>/hifu.html</code></td><td class="new-c"><code>/treatments/hifu</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/ultherapy.html</code></td><td class="new-c"><code>/treatments/ultherapy</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/pico-laser-treatment.html</code></td><td class="new-c"><code>/treatments/pico-laser</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/coolsculpting.html</code></td><td class="new-c"><code>/treatments/coolsculpting</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/fat-freezing.html</code></td><td class="new-c"><code>/treatments/fat-freezing</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/fotona-4d.html</code></td><td class="new-c"><code>/treatments/fotona-4d</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/onda.html</code></td><td class="new-c"><code>/treatments/onda</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/microneedling.html</code></td><td class="new-c"><code>/treatments/microneedling</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/radiofrequency.html</code></td><td class="new-c"><code>/treatments/radiofrequency</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/dermav.html</code></td><td class="new-c"><code>/treatments/dermav</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/bio-stimulator.html</code></td><td class="new-c"><code>/treatments/bio-stimulator</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/skinbooster.html</code></td><td class="new-c"><code>/treatments/skin-booster</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/exosome-therapy.html</code></td><td class="new-c"><code>/treatments/exosome-therapy</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/tattoo-removal.html</code></td><td class="new-c"><code>/treatments/tattoo-removal</code></td><td><span class="pill">301</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tblwrap" style="margin-top:1.25rem">
+      <table>
+        <caption class="grpcap">Branch / location pages — slugs corrected to local place names</caption>
+        <thead><tr><th>Legacy</th><th>New</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td class="old-c"><code>/mont-kiara.php</code></td><td class="new-c"><code>/locations/mont-kiara</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/cheras.php</code></td><td class="new-c"><code>/locations/cheras</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/kuala-lumpur.php</code> <em class="note">(→ Bukit Jalil)</em></td><td class="new-c"><code>/locations/bukit-jalil</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/fourseasons-kl.php</code></td><td class="new-c"><code>/locations/four-seasons-kl</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/petaling-jaya.php</code></td><td class="new-c"><code>/locations/petaling-jaya</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/shah-alam.php</code> <em class="note">(→ Kota Kemuning)</em></td><td class="new-c"><code>/locations/kota-kemuning</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/johor.php</code></td><td class="new-c"><code>/locations/southkey-johor-bahru</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/johor-pelangi-avenue.php</code></td><td class="new-c"><code>/locations/pelangi-johor-bahru</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/kota-kinabalu.php</code></td><td class="new-c"><code>/locations/kota-kinabalu</code></td><td><span class="pill">301</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tblwrap" style="margin-top:1.25rem">
+      <table>
+        <caption class="grpcap">Blog, campaigns, localisation &amp; retirement</caption>
+        <thead><tr><th>Legacy</th><th>New</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td class="old-c"><code>blog.kaiteki.my/&lt;post&gt;</code></td><td class="new-c"><code>/blog/&lt;post&gt;</code><span class="arrow">→</span>1:1 per post</td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/anniversary.html · /6th-anniversary*.html</code></td><td class="new-c"><code>/promotions</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/cn/*</code> <em class="note">Chinese mirror</em></td><td class="new-c">EN equivalent now<span class="arrow">→</span><code>/zh/*</code> at locale launch</td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/cn/double-eyelid-suture-treatment.html</code></td><td class="new-c"><code>/treatments/double-eyelid</code></td><td><span class="pill">301</span></td></tr>
+          <tr><td class="old-c"><code>/sg/*</code> <em class="note">separate entity</em></td><td class="new-c"><code>/</code> or retire</td><td><span class="pill">301</span> / <span class="pill p410">410</span></td></tr>
+          <tr><td class="old-c"><code>/component-colors.html</code> <em class="note">dev artifact</em></td><td class="new-c">— removed from index</td><td><span class="pill p410">410</span></td></tr>
+          <tr><td class="old-c">Any testimonial / before-after post</td><td class="new-c">— retire under MAB rules</td><td><span class="pill p410">410</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    Sources: <code>docs/01-legacy-site-audit.md</code> (old structure, §1–2) · <code>docs/04-information-architecture.md</code> (proposed tree §2.3, slugs §2.4, full 301 map §9). Canonical host is non-www <code>https://kaiteki.my</code>; trailing slash off. <code>410</code> = Gone (no equivalent); all redirects permanent (301/308), single-hop, kept live ≥ 1 year.
+  </footer>
+
+</div>
