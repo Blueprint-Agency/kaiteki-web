@@ -51,6 +51,7 @@ export function SiteHeader() {
   }, [mobileOpen]);
 
   return (
+    <>
     <header
       className={`sticky top-0 z-50 border-b bg-page/95 backdrop-blur transition-shadow ${
         scrolled ? "border-hairline shadow-sm" : "border-transparent"
@@ -74,21 +75,35 @@ export function SiteHeader() {
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
             {primaryNav.map((item) =>
               item.mega ? (
-                <div key={item.label} className="static">
+                // Split control: the label is a real link to the hub page
+                // (clickable + keyboard-focusable), while the chevron toggles the
+                // mega panel. Hovering the group also opens it.
+                <div
+                  key={item.label}
+                  className="static flex items-center"
+                  onMouseEnter={() => setMega(item.mega as Mega)}
+                >
+                  <Link
+                    href={item.href}
+                    className={`rounded-md py-2 pl-3 pr-1 text-sm font-medium transition-colors ${
+                      mega === item.mega ? "text-espresso" : "text-ink-700 hover:text-espresso"
+                    }`}
+                    onFocus={() => setMega(item.mega as Mega)}
+                    onClick={() => setMega(null)}
+                  >
+                    {item.label}
+                  </Link>
                   <button
                     type="button"
-                    className={`flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium transition-colors ${
-                      mega === item.mega
-                        ? "text-espresso"
-                        : "text-ink-700 hover:text-espresso"
+                    className={`rounded-md py-2 pl-1 pr-3 transition-colors ${
+                      mega === item.mega ? "text-espresso" : "text-ink-700 hover:text-espresso"
                     }`}
+                    aria-label={`${item.label} menu`}
                     aria-expanded={mega === item.mega}
-                    onMouseEnter={() => setMega(item.mega as Mega)}
                     onClick={() =>
                       setMega((m) => (m === item.mega ? null : (item.mega as Mega)))
                     }
                   >
-                    {item.label}
                     <ChevronDown
                       size={16}
                       className={`text-accent transition-transform ${
@@ -212,8 +227,14 @@ export function SiteHeader() {
           </Container>
         </div>
       )}
+    </header>
 
-      {/* Mobile drawer */}
+      {/* Mobile drawer — rendered OUTSIDE the backdrop-blur <header> so its
+          position:fixed resolves against the viewport. A header with
+          backdrop-filter becomes the containing block for its fixed descendants,
+          which collapsed this drawer to 0px (inset-0/top-[68px] resolved against
+          the 68px header box, not the screen). As a sibling it fills the
+          viewport below the header. */}
       {mobileOpen && (
         <div className="fixed inset-0 top-[68px] z-40 overflow-y-auto bg-page lg:hidden">
           <Container>
@@ -256,7 +277,7 @@ export function SiteHeader() {
           </Container>
         </div>
       )}
-    </header>
+    </>
   );
 }
 

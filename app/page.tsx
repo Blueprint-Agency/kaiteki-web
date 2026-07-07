@@ -141,7 +141,7 @@ export default function Home() {
               title="Evidence-informed treatments"
               intro="Non-surgical, established platforms for skin, ageing and body concerns."
             />
-            <Link href="/treatments" className="inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-espresso">
+            <Link href="/treatments" className="inline-flex items-center gap-1.5 py-1.5 -my-1.5 text-sm font-medium text-accent hover:text-espresso">
               View all treatments <ArrowRight size={16} />
             </Link>
           </div>
@@ -161,7 +161,7 @@ export default function Home() {
               title="Care led by registered doctors"
               intro="Every treatment page names the doctor who reviewed it, with their MMC registration and review date. It is the same standard we hold ourselves to in the clinic — and the reason we don't rely on testimonials or before-and-after photos."
             />
-            <Link href="/doctors" className="inline-flex items-center gap-1.5 whitespace-nowrap text-sm font-medium text-accent hover:text-espresso">
+            <Link href="/doctors" className="inline-flex items-center gap-1.5 py-1.5 -my-1.5 whitespace-nowrap text-sm font-medium text-accent hover:text-espresso">
               Meet the full medical team <ArrowRight size={16} />
             </Link>
           </div>
@@ -199,7 +199,7 @@ export default function Home() {
         <Container className="py-16 sm:py-20">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <SectionHeading title="Nine branches across Malaysia" intro="Klang Valley, Johor and Sabah — with full address, hours and directions on each branch page." />
-            <Link href="/locations" className="inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-espresso">
+            <Link href="/locations" className="inline-flex items-center gap-1.5 py-1.5 -my-1.5 text-sm font-medium text-accent hover:text-espresso">
               All locations <ArrowRight size={16} />
             </Link>
           </div>

@@ -17,12 +17,12 @@ function Col({
       <h2 className="mb-4 text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-ink-on-dark/70">
         {title}
       </h2>
-      <ul className="space-y-2.5">
+      <ul className="space-y-0.5">
         {links.map((l) => (
           <li key={l.href + l.label}>
             <Link
               href={l.href}
-              className="text-sm text-ink-on-dark/80 transition-colors hover:text-ink-on-dark"
+              className="block py-1 text-sm text-ink-on-dark/80 transition-colors hover:text-ink-on-dark"
             >
               {l.label}
             </Link>
@@ -83,8 +83,8 @@ export function SiteFooter() {
         </div>
 
         {/* Compliance band — the ledger, as brand furniture (docs/04 §4.2) */}
-        <div className="flex flex-col gap-3 border-t border-white/10 py-6 text-xs leading-relaxed text-ink-on-dark/60 md:flex-row md:items-center md:justify-between">
-          <p className="ledger !text-ink-on-dark/60">
+        <div className="flex flex-col gap-3 border-t border-white/10 py-6 text-xs leading-relaxed text-ink-on-dark/70 md:flex-row md:items-center md:justify-between">
+          <p className="ledger !text-ink-on-dark/70">
             {site.entity} · {site.kkliu} · {site.mmcNote}
           </p>
           <div className="flex items-center gap-4">
