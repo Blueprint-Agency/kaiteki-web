@@ -1,0 +1,26 @@
+{
+  "projectId": "baeb9aea-a429-4fce-a0e0-a2874e94ac16",
+  "shape": "package",
+  "pkg": "kaiteki",
+  "globalName": "Kaiteki",
+  "srcDir": "components",
+  "tsconfig": "./tsconfig.dssync.json",
+  "cssEntry": "./.design-sync/.cache/ds-compiled.css",
+  "buildCmd": "node scripts/ds-sync-css.mjs",
+  "guidelinesGlob": "docs/06-uiux-design-system.md",
+  "readmeHeader": ".design-sync/conventions.md",
+  "extraFonts": ".design-sync/fonts/fonts.css",
+  "runtimeFontPrefixes": ["Cascadia Code", "SF Mono"],
+  "overrides": {
+    "TreatmentCard": { "cardMode": "column" },
+    "ConcernCard": { "cardMode": "column" },
+    "BranchCard": { "cardMode": "column" },
+    "DoctorCard": { "cardMode": "column" },
+    "SeeAllCard": { "cardMode": "column" },
+    "WhatsAppButton": { "cardMode": "column" },
+    "Container": { "cardMode": "column" },
+    "Dandelion": { "cardMode": "column" },
+    "SiteHeader": { "cardMode": "column" },
+    "StickyWhatsApp": { "cardMode": "single", "primaryStory": "DesktopFloating" }
+  }
+}
