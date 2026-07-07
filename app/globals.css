@@ -29,8 +29,10 @@
   --color-ink-500:    #6f5647; /* muted / ledger ~6.8:1 */
   --color-ink-on-dark:#f1ebe6; /* text on espresso ~10:1 */
 
-  /* Accent (eyebrows/icons/small — 4.9:1 on white; NOT large fills) */
-  --color-accent:    #8a6a4f;
+  /* Accent (eyebrows/icons/small text — AA on page/tint/white; NOT large fills).
+     Darkened 2026-07 from #8a6a4f, which failed AA on the tinted bands
+     (4.36:1 on --tint). Now ~5.2:1 on --tint, ~5.9:1 on white. */
+  --color-accent:    #7c5f47;
 
   /* The single action colour — WhatsApp (owns the brightest pixel) */
   --color-cta:       #0e7a55;
