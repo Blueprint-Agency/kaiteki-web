@@ -276,7 +276,7 @@ The legacy `robots.txt` referenced a **`www.` sitemap** URL while the canonical 
 | `/about-us` | `/about` | 301 |
 | `/our-clinics.php` | `/locations` | 301 |
 | `/services.html` | `/treatments` | 301 |
-| `/skin-care` | `/concerns` | 301 |
+| `/skin-care` | `/skincare` | 301 |
 | `/promo.html` | `/promotions` | 301 |
 | `/privacy.html` | `/privacy` | 301 |
 
@@ -284,11 +284,16 @@ The legacy `robots.txt` referenced a **`www.` sitemap** URL while the canonical 
 
 | Legacy path | New path | Type |
 |---|---|---|
-| `/skincare.html` | `/concerns/skin` | 301 |
+| `/skincare.html` | `/skincare` | 301 |
 | `/skin.html` | `/concerns/skin` | 301 |
 | `/skin` | `/concerns/skin` | 301 |
 | `/facial-treatment-malaysia.html` | `/concerns/face` | 301 |
 | `/hair.html` | `/concerns/hair-loss` | 301 |
+
+> **Correction (2026-07):** `/skincare.html` is **not** a "Skin" concern landing — it is the
+> **Kaiteki® Cosmeceuticals product catalogue** (retail, WhatsApp ordering). It now maps to the
+> dedicated products hub `/skincare`, not `/concerns/skin`. Its legacy pretty alias `/skin-care`
+> follows the same target. (`/skin.html` remains the genuine Skin concern hub → `/concerns/skin`.)
 
 ### 9.4 Concern pages
 
