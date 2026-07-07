@@ -39,7 +39,7 @@ The main nav groups pages into ~7 buckets.
 ### 1.2 Concern "Hub" pages (problem-oriented landings)
 | Page | Concern area |
 |------|--------------|
-| `skincare.html` | Top-level "Skin Care" overview (menu landing). |
+| `skincare.html` | Top-level "Skin Care" nav item — **Kaiteki® Cosmeceuticals product catalogue** (retail, RM prices + WhatsApp ordering), not a concern overview. New home: `/skincare` (see `docs/04` §9.3). |
 | `skin.html` | **Skin** hub + anchors `#Birthmark`, `#VascularLesions`, `#ExcessiveSweating`, `#DermatologicalProblems`. |
 | `facial-treatment-malaysia.html` | **Face** hub. |
 | `hair.html` | **Hair & Body** hub (incl. `#HairLoss`). |
@@ -186,7 +186,8 @@ From `.htaccess`, `robots.txt`, and page `<head>`s:
 | `/aboutus.html` | `/about` |
 | `/our-clinics.php` | `/locations` (or `/contact`) |
 | `/services.html` | `/treatments` |
-| `/skincare.html`, `/skin.html`, `/facial-treatment-malaysia.html`, `/hair.html` | `/concerns/<hub>` |
+| `/skincare.html` | `/skincare` (products hub — see §1.2 correction) |
+| `/skin.html`, `/facial-treatment-malaysia.html`, `/hair.html` | `/concerns/<hub>` |
 | `/acne.html`, `/aging.html`, `/pigmentation.html`, `/pores.html`, … | `/concerns/<slug>` |
 | `/hifu.html`, `/ultherapy.html`, `/pico-laser-treatment.html`, … | `/treatments/<slug>` |
 | `/mont-kiara.php`, `/cheras.php`, … (9 branches) | `/locations/<branch-slug>` |

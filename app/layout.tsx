@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Schibsted_Grotesk, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
+import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
+import { StickyWhatsApp } from "@/components/WhatsAppCTA";
 
 // Display & UI — a characterful grotesk (docs/06 §2.2)
 const display = Schibsted_Grotesk({
@@ -34,9 +37,25 @@ export default function RootLayout({
   return (
     <html
       lang="en-MY"
+      // the reveal-ready class is added by an inline script before hydration
+      // (motion gating); scope-suppress the resulting html attribute mismatch.
+      suppressHydrationWarning
       className={`${display.variable} ${serif.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {/* Enable motion only when JS runs — content is visible without it (globals.css) */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.documentElement.classList.add('reveal-ready')",
+          }}
+        />
+        <SiteHeader />
+        <div className="flex-1">{children}</div>
+        <SiteFooter />
+        {/* spacer so the mobile sticky CTA never covers footer content */}
+        <div className="h-16 md:hidden" aria-hidden />
+        <StickyWhatsApp />
+      </body>
     </html>
   );
 }
