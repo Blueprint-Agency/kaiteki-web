@@ -23,3 +23,11 @@ export function waForConcern(name: string): string {
 export function waForBranch(branch: string): string {
   return waLink(`Hi Kaiteki ${branch}, I'd like to book a free consultation.`);
 }
+
+export function waForDoctor(name: string): string {
+  return waLink(`Hi Kaiteki, I'd like to book a free consultation with ${name}.`);
+}
+
+export function waForProduct(name: string): string {
+  return waLink(`Hi Kaiteki, I'd like to order ${name}.`);
+}

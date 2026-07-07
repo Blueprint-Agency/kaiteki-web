@@ -19,6 +19,7 @@ export const site = {
 export const primaryNav = [
   { label: "Treatments", href: "/treatments", mega: "treatments" as const },
   { label: "Concerns", href: "/concerns", mega: "concerns" as const },
+  { label: "Skincare", href: "/skincare" },
   { label: "Locations", href: "/locations" },
   { label: "Doctors", href: "/doctors" },
   { label: "About", href: "/about" },

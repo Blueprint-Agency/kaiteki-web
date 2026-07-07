@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { CSSProperties } from "react";
-import { ArrowRight, MapPin } from "./icons";
-import type { Treatment, Concern, Branch, Doctor } from "@/lib/types";
+import { ArrowRight, MapPin, WhatsApp } from "./icons";
+import { ExpandableText } from "./ExpandableText";
+import type { Treatment, Concern, Branch, Doctor, Product } from "@/lib/types";
+import { waForProduct } from "@/lib/wa";
 
 // Cards now have a gentle lift + soft warm shadow on hover (docs/06 §3 motion,
 // evolved 2026-07 for more life). Transform/opacity only; reduced-motion safe.
@@ -11,18 +13,57 @@ const cardBase =
 
 type Extra = { className?: string; style?: CSSProperties };
 
+// Interim treatment-card visual (2026-07). Commissioned photography isn't shot
+// yet, and the stand-in device product-shots carry other brands' logos
+// (Cynosure, DEKA, Jeisys…) on cold white/black — a YMYL endorsement risk and
+// off the "Warm Sanctuary" register. Until real imagery lands we render a warm,
+// on-brand motif: a soft neutral field + concentric arcs that nod to a focused
+// treatment without depicting a machine. Deterministic per-slug variation keeps
+// the grid from reading as identical cards.
+const MOTIF_FIELDS = [
+  "linear-gradient(135deg, #efe7df 0%, #e0d1c3 100%)",
+  "linear-gradient(140deg, #f1eae4 0%, #ddc9ba 100%)",
+  "linear-gradient(120deg, #ece4db 0%, #e4d4c6 100%)",
+  "linear-gradient(150deg, #f0e9e3 0%, #dbc8b9 100%)",
+];
+
+function motifHash(slug: string) {
+  let h = 0;
+  for (let i = 0; i < slug.length; i += 1) h = (h * 31 + slug.charCodeAt(i)) >>> 0;
+  return h;
+}
+
+/** Warm placeholder art for a treatment card — see MOTIF_FIELDS note. */
+export function TreatmentMotif({ t, className = "" }: { t: Treatment; className?: string }) {
+  const h = motifHash(t.slug);
+  const field = MOTIF_FIELDS[h % MOTIF_FIELDS.length];
+  const cx = (62 + (h % 3) * 12) * 3.2; // focal x within the 320-wide viewBox
+  const cy = (30 + ((h >> 2) % 3) * 10) * 2; // focal y within the 200-tall viewBox
+  const rings = 3 + (h % 3); // 3–5 arcs
+  return (
+    <div className={`relative overflow-hidden ${className}`} style={{ background: field }} aria-hidden>
+      <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" className="absolute inset-0 size-full">
+        {Array.from({ length: rings }).map((_, i) => (
+          <circle
+            key={i}
+            cx={cx}
+            cy={cy}
+            r={20 + i * 27}
+            fill="none"
+            stroke="#493628"
+            strokeOpacity={0.12 - i * 0.017}
+            strokeWidth={1.5}
+          />
+        ))}
+      </svg>
+    </div>
+  );
+}
+
 export function TreatmentCard({ t, className = "", style }: { t: Treatment } & Extra) {
   return (
     <Link href={`/treatments/${t.slug}`} style={style} className={`${cardBase} overflow-hidden ${className}`}>
-      <div className="relative aspect-[16/10] overflow-hidden bg-tint">
-        <Image
-          src={t.image}
-          alt={t.name}
-          fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-          className="object-cover"
-        />
-      </div>
+      <TreatmentMotif t={t} className="aspect-[16/10]" />
       <div className="flex flex-1 flex-col p-5">
         <h3 className="text-lg font-semibold text-espresso decoration-mocha/60 underline-offset-4 group-hover:underline">
           {t.name}
@@ -61,6 +102,12 @@ export function ConcernCard({ c, className = "", style }: { c: Concern } & Extra
   );
 }
 
+// Federal-territory branches store a city + state that repeat ("Kuala Lumpur" /
+// "WP Kuala Lumpur"); collapse the redundant pair to one label.
+function formatLocation(city: string, state: string) {
+  return state.includes(city) ? city : `${city}, ${state}`;
+}
+
 export function BranchCard({ b, className = "", style }: { b: Branch } & Extra) {
   return (
     <Link href={`/locations/${b.slug}`} style={style} className={`${cardBase} overflow-hidden ${className}`}>
@@ -77,7 +124,7 @@ export function BranchCard({ b, className = "", style }: { b: Branch } & Extra) 
         <div>
           <h3 className="font-semibold text-espresso">{b.name}</h3>
           <p className="mt-0.5 flex items-center gap-1 text-sm text-ink-500">
-            <MapPin size={14} className="text-mocha" /> {b.city}, {b.state}
+            <MapPin size={14} className="text-mocha" /> {formatLocation(b.city, b.state)}
           </p>
         </div>
         <ArrowRight size={18} className="shrink-0 text-accent transition-transform group-hover:translate-x-0.5" />
@@ -107,31 +154,134 @@ export function SeeAllCard({
   );
 }
 
-export function DoctorCard({ d, className = "", style }: { d: Doctor } & Extra) {
+export function DoctorCard({
+  d,
+  className = "",
+  style,
+  mediaClassName = "aspect-[2/3]",
+  compact = false,
+}: { d: Doctor; mediaClassName?: string; compact?: boolean } & Extra) {
   return (
-    <div style={style} className={`flex flex-col rounded-xl border border-hairline bg-surface p-5 ${className}`}>
-      <div className="flex items-center gap-4">
-        <span className="relative size-14 shrink-0 overflow-hidden rounded-full bg-tint">
-          <Image src={d.photo} alt={d.fullName} fill sizes="56px" className="object-cover" />
-        </span>
-        <div>
-          <h3 className="font-semibold text-espresso">{d.fullName}</h3>
-          <p className="ledger mt-0.5 !text-ink-500">
-            {d.credentials}
-            {d.mmc ? ` · ${d.mmc}` : ""}
+    <Link href={`/doctors/${d.slug}`} style={style} className={`${cardBase} overflow-hidden ${className}`}>
+      <div className={`relative ${mediaClassName} overflow-hidden bg-tint`}>
+        <Image
+          src={d.photo}
+          alt={d.fullName}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          className="object-cover object-top"
+        />
+      </div>
+      <div className="flex flex-1 flex-col p-5">
+        <h3 className="text-lg font-semibold text-espresso decoration-mocha/60 underline-offset-4 group-hover:underline">
+          {d.fullName}
+        </h3>
+        {d.role && <p className="mt-1 text-sm font-medium text-accent">{d.role}</p>}
+        <p className="ledger mt-3 border-t border-hairline pt-3 !text-ink-500">
+          {d.credentials}
+          {d.mmc ? ` · ${d.mmc}` : ""}
+        </p>
+        {!compact && d.interests.length > 0 && (
+          <p className="mt-2 text-sm leading-relaxed text-ink-700">
+            Special interests: {d.interests.join(", ")}.
           </p>
+        )}
+        <span className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-medium text-accent">
+          View profile <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
+        </span>
+      </div>
+    </Link>
+  );
+}
+
+/** Warm placeholder art for a product card — a subtle bottle glyph on the same
+ *  neutral field as the treatment motif, until real product photography lands.
+ *  Deterministic per-slug field keeps the grid from reading as identical tiles. */
+export function ProductMotif({ slug, className = "" }: { slug: string; className?: string }) {
+  const h = motifHash(slug);
+  const field = MOTIF_FIELDS[h % MOTIF_FIELDS.length];
+  return (
+    <div className={`relative overflow-hidden ${className}`} style={{ background: field }} aria-hidden>
+      <svg viewBox="0 0 320 240" preserveAspectRatio="xMidYMid slice" className="absolute inset-0 size-full">
+        <g fill="none" stroke="#493628" strokeOpacity={0.16} strokeWidth={1.6} strokeLinejoin="round">
+          <rect x={138} y={94} width={44} height={94} rx={12} />
+          <rect x={150} y={74} width={20} height={22} rx={4} />
+          <line x1={138} y1={122} x2={182} y2={122} />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+/** Skincare product tile. Not a link (single hub, no per-product pages); the
+ *  action is a WhatsApp order deep-link. Photo-led layout (2026-07): a prominent
+ *  product-image band, then category, name, a chip row (a "best for" pill plus
+ *  active-ingredient pills), a 2-line description that expands in place via
+ *  ExpandableText, and a bold price above a full-width "Order Now" button. No
+ *  ratings or units-sold — patient reviews of medical products are a YMYL /
+ *  Malaysian-advertising risk (docs/02 §8). Price/CTA is pinned to the bottom so
+ *  cards align regardless of copy length. */
+export function ProductCard({ p, className = "", style }: { p: Product } & Extra) {
+  const ingredientChips = p.ingredients?.slice(0, 2) ?? [];
+  const highlights =
+    p.highlights && p.highlights.length > 0 ? (
+      <ul className="space-y-1.5">
+        {p.highlights.map((h) => (
+          <li key={h} className="flex gap-2 text-xs leading-relaxed text-ink-700">
+            <span className="mt-1.5 size-1 shrink-0 rounded-full bg-mocha" />
+            <span>{h}</span>
+          </li>
+        ))}
+      </ul>
+    ) : undefined;
+
+  return (
+    <div style={style} className={`${cardBase} overflow-hidden ${className}`}>
+      <ProductMotif slug={p.slug} className="aspect-square" />
+      <div className="flex flex-1 flex-col p-5">
+        <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-accent">
+          {p.category}
+        </p>
+        <h3 className="mt-1.5 line-clamp-2 font-semibold leading-snug text-espresso">{p.name}</h3>
+
+        {(p.bestFor || ingredientChips.length > 0) && (
+          <ul className="mt-3 flex flex-wrap gap-1.5">
+            {/* "Best for" — outline pill so "who it's for" reads apart from the
+                filled "what's in it" ingredient pills. */}
+            {p.bestFor && (
+              <li className="rounded-full border border-mocha/40 px-2.5 py-1 text-xs font-medium text-mocha">
+                {p.bestFor}
+              </li>
+            )}
+            {ingredientChips.map((c) => (
+              <li
+                key={c}
+                className="rounded-full bg-tint px-2.5 py-1 text-xs font-medium text-mocha"
+              >
+                {c}
+              </li>
+            ))}
+          </ul>
+        )}
+
+        <div className="mt-3">
+          <ExpandableText text={p.summary} extra={highlights} />
+        </div>
+
+        <div className="mt-auto pt-5">
+          <div className="flex items-baseline gap-2">
+            <p className="text-lg font-bold text-espresso">RM{p.price}</p>
+            {p.priceNote && <p className="text-sm text-ink-500">{p.priceNote}</p>}
+          </div>
+          <a
+            href={waForProduct(p.name)}
+            aria-label={`Order ${p.name} on WhatsApp`}
+            className="mt-3 flex w-full items-center justify-center gap-2 rounded-full bg-cta px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-cta-hover"
+          >
+            <WhatsApp size={16} /> Order Now
+          </a>
         </div>
       </div>
-      {(d.role || d.interests.length > 0) && (
-        <div className="mt-4 space-y-1.5">
-          {d.role && <p className="text-sm font-medium text-accent">{d.role}</p>}
-          {d.interests.length > 0 && (
-            <p className="text-sm leading-relaxed text-ink-700">
-              Special interests: {d.interests.join(", ")}.
-            </p>
-          )}
-        </div>
-      )}
     </div>
   );
 }
