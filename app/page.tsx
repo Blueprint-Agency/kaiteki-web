@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import type { CSSProperties, ReactNode } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { ConcernCard, TreatmentCard, SeeAllCard } from "@/components/cards";
 import { BranchesExplorer } from "@/components/BranchesExplorer";
+import { HeroFace } from "@/components/HeroFace";
 import { DoctorsSlider } from "@/components/DoctorsSlider";
 import { ArrowRight, MapPin, ShieldCheck, BadgeCheck, WhatsApp } from "@/components/icons";
 import { site } from "@/lib/site";
@@ -41,47 +41,61 @@ export default function Home() {
 
   return (
     <>
-      {/* HERO — immersive, full-bleed treatment-room photo */}
-      <section className="relative overflow-hidden bg-espresso">
-        <div className="hero-media absolute inset-0">
-          <Image
-            src="/images/clinics/clinic-four-seasons.jpg"
-            alt="A Kaiteki treatment room at Four Seasons Place, Kuala Lumpur"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-espresso/95 via-espresso/70 to-espresso/20" />
-          <div className="absolute inset-0 bg-gradient-to-t from-espresso/60 via-transparent to-transparent" />
-        </div>
-        <Container className="relative flex min-h-[560px] items-center py-16 sm:min-h-[620px] sm:py-20 lg:min-h-[680px]">
-          <div className="max-w-xl">
-            <p className="rise text-xs font-semibold uppercase tracking-[0.14em] text-sand" style={si(0)}>
-              {site.tagline}
-            </p>
-            <h1
-              className="mask-clip mt-3 block text-4xl font-bold leading-[1.08] text-ink-on-dark sm:text-5xl lg:text-[3.25rem]"
-              style={{ letterSpacing: "-0.02em" }}
-            >
-              <span className="mask-line text-balance" style={si(0)}>
-                Considered skin &amp; aesthetic care, across Malaysia.
-              </span>
-            </h1>
-            <p className="rise prose mt-5 max-w-[48ch] text-lg leading-relaxed text-ink-on-dark/90" style={si(1)}>
-              Nine branches nationwide. Every treatment is assessed and carried out
-              by registered doctors — a calm, informed decision about your skin.
-            </p>
-            <div className="rise mt-7 flex flex-wrap items-center gap-4" style={si(2)}>
-              <WhatsAppButton size="lg" />
-              <Link
-                href="/treatments"
-                className="inline-flex items-center gap-1.5 border-b border-ink-on-dark/40 pb-0.5 text-base font-semibold text-ink-on-dark transition-colors hover:border-ink-on-dark"
+      {/* HERO — warm-sanctuary fold: subject photo with interactive concern
+          hotspots (see HeroFace). Pulled under the transparent header. */}
+      <section className="hero-warm relative -mt-[68px] overflow-hidden">
+        <Container className="relative">
+          {/* min-h-[100svh] + the -mt on the section = the fold always fills
+              the viewport exactly (svh so mobile URL bars don't cause jump). */}
+          <div className="grid min-h-[100svh] items-end gap-x-10 pt-[68px] lg:grid-cols-[minmax(0,1fr)_minmax(0,46%)]">
+            {/* Copy column */}
+            <div className="pb-10 pt-10 sm:pt-14 lg:self-center lg:pb-24 lg:pt-16">
+              <p className="rise text-xs font-semibold uppercase tracking-[0.14em] text-accent" style={si(0)}>
+                {site.tagline}
+              </p>
+              <h1
+                className="mask-clip mt-3 block text-4xl font-bold leading-[1.08] text-espresso sm:text-5xl lg:text-[3.5rem]"
+                style={{ letterSpacing: "-0.02em" }}
+              >
+                <span className="mask-line text-balance" style={si(0)}>
+                  Considered skin &amp; aesthetic care, across Malaysia.
+                </span>
+              </h1>
+              <p className="rise prose mt-5 max-w-[46ch] text-lg leading-relaxed text-ink-700" style={si(1)}>
+                Nine branches nationwide. Every treatment is assessed and carried out
+                by registered doctors — a calm, informed decision about your skin.
+              </p>
+              <div className="rise mt-7 flex flex-col items-start gap-5" style={si(2)}>
+                <WhatsAppButton size="lg" label="Book a Free Consultation" />
+                <Link
+                  href="/treatments"
+                  className="group inline-flex items-center gap-1.5 text-base font-medium text-espresso"
                 >
-                  Explore treatments <ArrowRight size={18} />
+                  <span className="border-b border-espresso/30 pb-0.5 transition-colors group-hover:border-espresso">
+                    Explore treatments
+                  </span>
+                  <ArrowRight size={18} className="text-accent transition-transform group-hover:translate-x-0.5" />
                 </Link>
               </div>
+
+              {/* One quiet trust line — no card chrome, keeps the fold calm */}
+              <p className="rise mt-10 hidden items-center gap-2.5 text-sm text-ink-500 sm:flex" style={si(3)}>
+                <MapPin size={16} className="shrink-0 text-accent" />
+                <span>
+                  9 branches across KL, Selangor, Johor &amp; Sabah —{" "}
+                  <Link
+                    href="/locations"
+                    className="font-medium text-accent underline decoration-mocha/50 underline-offset-4 transition-colors hover:text-espresso"
+                  >
+                    find your nearest
+                  </Link>
+                </span>
+              </p>
             </div>
+
+            {/* Subject column — bottom-flush, hotspots on the face */}
+            <HeroFace />
+          </div>
         </Container>
       </section>
 

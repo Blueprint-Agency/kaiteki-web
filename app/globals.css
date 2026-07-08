@@ -123,9 +123,21 @@ body {
   from { opacity: 0; transform: translateY(115%); }
   to { opacity: 1; transform: translateY(0); }
 }
-@keyframes kaiteki-media-in {
-  from { opacity: 0; transform: scale(1.06); clip-path: inset(0 0 22% 0 round 1rem); }
-  to { opacity: 1; transform: scale(1); clip-path: inset(0 0 0 0 round 1rem); }
+@keyframes kaiteki-figure-in {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes kaiteki-arch-in {
+  from { opacity: 0; transform: translateY(46px) scale(0.97); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes kaiteki-spot-pop {
+  from { opacity: 0; transform: scale(0.4); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes kaiteki-spot-pulse {
+  0% { box-shadow: 0 0 0 0 rgb(73 54 40 / 0.28); }
+  70%, 100% { box-shadow: 0 0 0 8px rgb(73 54 40 / 0); }
 }
 @keyframes kaiteki-seed {
   0% { opacity: 0; transform: translate(0, 0) rotate(0deg); }
@@ -150,9 +162,22 @@ body {
     animation: kaiteki-mask-in var(--dur-hero) var(--ease-out-expo) both;
     animation-delay: calc(var(--i, 0) * 90ms);
   }
-  .reveal-ready .hero-media {
-    animation: kaiteki-media-in 900ms var(--ease-out-expo) both;
-    animation-delay: 120ms;
+  /* Hero fold entrance: arch → subject → hotspot dots (staggered via --i) */
+  .reveal-ready .hero-arch {
+    animation: kaiteki-arch-in 900ms var(--ease-out-expo) both;
+    animation-delay: 80ms;
+  }
+  .reveal-ready .hero-figure-img {
+    animation: kaiteki-figure-in 900ms var(--ease-out-expo) both;
+    animation-delay: 180ms;
+  }
+  .reveal-ready .hero-spot {
+    animation: kaiteki-spot-pop 480ms var(--ease-out-quart) both;
+    animation-delay: calc(750ms + var(--i, 0) * 90ms);
+  }
+  .hero-spot-dot {
+    animation: kaiteki-spot-pulse 2.8s var(--ease-out-quart) infinite;
+    animation-delay: calc(1400ms + var(--i, 0) * 400ms);
   }
 
   /* Below-the-fold reveal: native CSS scroll-driven animation where supported.
@@ -172,6 +197,85 @@ body {
 }
 
 .mask-clip { overflow: hidden; }
+
+/* ============================================================
+   Homepage hero — "Warm Sanctuary" fold (components/HeroFace.tsx).
+   The subject photo carries interactive concern hotspots: each is a
+   server-rendered link whose result card is revealed with CSS only,
+   so the fold works without JS and every card link is crawlable.
+   ============================================================ */
+.hero-warm {
+  background: linear-gradient(180deg, #faf6f2 0%, #f3eae1 58%, #eee2d7 100%);
+}
+
+/* Result card: hidden at rest, revealed by hovering/focusing its dot (the
+   card is the dot's adjacent sibling). `visibility` carries a 250ms grace
+   period so the pointer can travel from dot to card without it vanishing;
+   once reached, the card's own :hover sustains it. Positioning transforms
+   live on .hero-card-pos; the reveal transform lives on .hero-card — the
+   two never fight. */
+.hero-card-pos {
+  visibility: hidden;
+  transition: visibility 0s linear 250ms;
+}
+.hero-spot:hover + .hero-card-pos,
+.hero-spot:focus-visible + .hero-card-pos,
+.hero-card-pos:hover {
+  visibility: visible;
+  transition-delay: 0s;
+}
+.hero-card {
+  opacity: 0;
+  transform: translateY(8px) scale(0.96);
+  transition:
+    opacity var(--dur-2) var(--ease-out-quart),
+    transform var(--dur-2) var(--ease-out-quart);
+}
+.hero-spot:hover + .hero-card-pos .hero-card,
+.hero-spot:focus-visible + .hero-card-pos .hero-card,
+.hero-card-pos:hover .hero-card {
+  opacity: 1;
+  transform: none;
+}
+
+/* Leader lines: drawn from the dot toward the card as it opens */
+.hero-line-h,
+.hero-line-r,
+.hero-line-v {
+  opacity: 0;
+  transition:
+    opacity var(--dur-2) var(--ease-out-quart),
+    transform var(--dur-2) var(--ease-out-quart);
+}
+.hero-line-h {
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+}
+.hero-line-r {
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+}
+.hero-line-v {
+  transform: scaleY(0);
+  transform-origin: 50% 0%;
+}
+.hero-spot:hover .hero-line-h,
+.hero-spot:focus-visible .hero-line-h,
+.hero-spot:has(+ .hero-card-pos:hover) .hero-line-h,
+.hero-spot:hover .hero-line-r,
+.hero-spot:focus-visible .hero-line-r,
+.hero-spot:has(+ .hero-card-pos:hover) .hero-line-r,
+.hero-spot:hover .hero-line-v,
+.hero-spot:focus-visible .hero-line-v,
+.hero-spot:has(+ .hero-card-pos:hover) .hero-line-v {
+  opacity: 1;
+  transform: none;
+}
+/* The open hotspot paints above its siblings' dots */
+.hero-spot:hover,
+.hero-spot:focus-visible {
+  z-index: 30;
+}
 
 /* Hide the scrollbar on native horizontal scroll-snap tracks (e.g. the
    doctors slider) — the arrow buttons remain the visible affordance. */

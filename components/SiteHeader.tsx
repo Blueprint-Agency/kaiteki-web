@@ -50,11 +50,17 @@ export function SiteHeader() {
     };
   }, [mobileOpen]);
 
+  // Transparent over the top of the page (the homepage hero runs underneath);
+  // solid as soon as the user scrolls or any panel needs a surface behind it.
+  const solid = scrolled || mega !== null || mobileOpen;
+
   return (
     <>
     <header
-      className={`sticky top-0 z-50 border-b bg-page/95 backdrop-blur transition-shadow ${
-        scrolled ? "border-hairline shadow-sm" : "border-transparent"
+      className={`sticky top-0 z-50 border-b transition-[background-color,box-shadow,border-color] duration-200 ${
+        solid
+          ? "border-hairline bg-page/95 shadow-sm backdrop-blur"
+          : "border-transparent bg-transparent"
       }`}
       onMouseLeave={() => setMega(null)}
     >
