@@ -61,6 +61,50 @@ export function BadgeCheck({ className, size }: IconProps) {
   );
 }
 
+export function Sparkle({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <path d="M12 3.5 13.9 9l5.6 1.9-5.6 1.9L12 18.5l-1.9-5.7-5.6-1.9L10.1 9 12 3.5Z" />
+    </svg>
+  );
+}
+
+export function Eye({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <path d="M2.5 12S6 5.75 12 5.75 21.5 12 21.5 12 18 18.25 12 18.25 2.5 12 2.5 12Z" />
+      <circle cx="12" cy="12" r="2.5" />
+    </svg>
+  );
+}
+
+export function Sun({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4" />
+    </svg>
+  );
+}
+
+export function Droplet({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <path d="M12 3s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11Z" />
+    </svg>
+  );
+}
+
+/** Jaw / facial-contour curve. */
+export function Contour({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <path d="M5 7c0 6.5 3.6 11 7 11s7-4.5 7-11" />
+      <path d="M5 7c2.2 1.4 4.7 2 7 2s4.8-.6 7-2" />
+    </svg>
+  );
+}
+
 /** Official WhatsApp glyph (filled) — used only inside the CTA. */
 export function WhatsApp({ className, size = 20 }: IconProps) {
   return (
