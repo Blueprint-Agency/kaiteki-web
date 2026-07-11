@@ -10,6 +10,7 @@ import { branches, branchBySlug } from "@/content/data/branches";
 import { treatmentBySlug } from "@/content/data/treatments";
 import { doctors } from "@/content/data/doctors";
 import { waForBranch } from "@/lib/wa";
+import { site } from "@/lib/site";
 
 export const dynamicParams = false;
 
@@ -44,8 +45,39 @@ export default async function BranchPage({
   const offered = b.treatments.map((s) => treatmentBySlug(s)).filter(Boolean);
   const here = doctors.filter((d) => d.branches.includes(b.slug));
 
+  // LocalBusiness (MedicalClinic) schema — the primary local-SEO signal for a
+  // branch page. NAP + map come from branch data; geo/openingHoursSpecification
+  // are omitted until we store lat/lng and structured hours (docs/02 local-SEO).
+  // ponytail: no openingHoursSpecification — hours are free-text in 3 formats; add
+  // when hours become structured data.
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    name: `Kaiteki ${b.name}`,
+    image: `${site.url}${b.photo}`,
+    url: `${site.url}/locations/${b.slug}`,
+    telephone: b.phone,
+    hasMap: b.mapUrl,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: b.address,
+      addressLocality: b.city,
+      addressRegion: b.state,
+      addressCountry: "MY",
+    },
+    parentOrganization: {
+      "@type": "MedicalClinic",
+      name: site.name,
+      url: site.url,
+    },
+  };
+
   return (
     <Container className="py-10 sm:py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumbs items={[{ label: "Locations", href: "/locations" }, { label: b.name }]} />
 
       <div className="mt-8 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-14">
