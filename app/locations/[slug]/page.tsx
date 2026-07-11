@@ -65,6 +65,20 @@ export default async function BranchPage({
       addressRegion: b.state,
       addressCountry: "MY",
     },
+    ...(b.lat != null && b.lng != null
+      ? { geo: { "@type": "GeoCoordinates", latitude: b.lat, longitude: b.lng } }
+      : {}),
+    ...(b.hoursSpec
+      ? {
+          openingHoursSpecification: b.hoursSpec.map((h) => ({
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: h.days,
+            opens: h.opens,
+            closes: h.closes,
+          })),
+        }
+      : {}),
+    ...(b.serves ? { areaServed: b.serves } : {}),
     parentOrganization: {
       "@type": "MedicalClinic",
       name: site.name,
@@ -85,10 +99,16 @@ export default async function BranchPage({
           <p className="text-sm font-medium text-accent">{b.region}</p>
           <h1 className="mt-2 text-3xl font-bold text-espresso sm:text-4xl">Kaiteki {b.name}</h1>
           <p className="prose mt-4 max-w-[60ch] text-lg leading-relaxed text-ink-700">
-            Our {b.name} branch offers doctor-led skin, aesthetic and laser treatments in{" "}
-            {b.city}, {b.state}. Message us on WhatsApp to book a free consultation or ask
-            about directions and parking.
+            {b.gettingHere ??
+              `Our ${b.name} branch offers doctor-led skin, aesthetic and laser treatments in ${b.city}, ${b.state}.`}{" "}
+            Message us on WhatsApp to book a free consultation or ask about directions and parking.
           </p>
+
+          {b.serves && (
+            <p className="mt-3 text-sm text-ink-500">
+              Serving {b.serves.join(", ")}.
+            </p>
+          )}
 
           <div className="mt-8 max-w-md rounded-xl border border-hairline bg-surface p-5">
             <Ledger
@@ -96,6 +116,7 @@ export default async function BranchPage({
                 { label: "Address", value: b.address },
                 { label: "Phone", value: b.phone },
                 { label: "Hours", value: b.hours.join(" · ") },
+                ...(b.parking ? [{ label: "Parking", value: b.parking }] : []),
               ]}
             />
             <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">

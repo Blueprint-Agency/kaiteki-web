@@ -83,6 +83,20 @@ export interface Branch {
   hours: string[];
   /** Google Maps share link. */
   mapUrl: string;
+  /** Machine-readable hours mirroring `hours` — drives openingHoursSpecification.
+   *  Day names are schema.org long form ("Monday"). */
+  hoursSpec?: { days: string[]; opens: string; closes: string }[];
+  /** Nearby areas this branch conveniently serves — nearby-suburb SEO + areaServed.
+   *  Inferred from location; verify with the clinic before launch. */
+  serves?: string[];
+  /** Parking note shown under "Getting here" — inferred; verify before launch. */
+  parking?: string;
+  /** 1–2 sentence branch-specific intro (unique per branch; beats a templated line). */
+  gettingHere?: string;
+  /** Geo coordinates — enable schema `geo` + map pack. Client data (docs/05 §9);
+   *  left undefined until verified so no wrong coordinates ship. */
+  lat?: number;
+  lng?: number;
   /** Treatment slugs offered here (sample subset). */
   treatments: string[];
 }
