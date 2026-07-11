@@ -6,19 +6,6 @@ import { ProductCard } from "@/components/cards";
 import { WhatsApp } from "@/components/icons";
 import { Disclaimer } from "@/components/Disclaimer";
 import { products, productGroups, productsByGroup } from "@/content/data/products";
-import { concernBySlug } from "@/content/data/concerns";
-import { waLink } from "@/lib/wa";
-import type { Concern } from "@/lib/types";
-
-// Shop-by-concern entry points, derived from the concerns actually tagged on
-// products — offloads each product's "best for" job into navigation.
-const shopConcerns = [...new Set(products.flatMap((p) => p.concerns ?? []))]
-  .map((slug) => concernBySlug(slug))
-  .filter((c): c is Concern => Boolean(c));
-
-const waMatchRoutine = waLink(
-  "Hi Kaiteki, I'd like help choosing the right skincare routine for my skin.",
-);
 
 export const metadata: Metadata = {
   title: "Skincare — Kaiteki® Cosmeceuticals",
@@ -61,28 +48,6 @@ export default function SkincareHub() {
           Our medical-grade skincare range and the partner brands we use in clinic — order any
           product on WhatsApp.
         </p>
-
-        {shopConcerns.length > 0 && (
-          <div className="mt-6 flex flex-wrap items-center gap-2">
-            <span className="text-sm text-ink-500">Shop by concern:</span>
-            {shopConcerns.map((c) => (
-              <Link
-                key={c.slug}
-                href={`/concerns/${c.slug}`}
-                className="rounded-full border border-hairline bg-surface px-3 py-1 text-sm text-espresso transition-colors hover:border-mocha"
-              >
-                {c.name}
-              </Link>
-            ))}
-          </div>
-        )}
-
-        <a
-          href={waMatchRoutine}
-          className="mt-4 inline-flex items-center gap-2 rounded-full bg-cta px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-cta-hover"
-        >
-          <WhatsApp size={16} /> Not sure? Chat to match my routine
-        </a>
       </div>
 
       <div className="mt-12 space-y-14">
