@@ -279,7 +279,19 @@ export function ProductCard({ p, className = "", style }: { p: Product } & Extra
 
   return (
     <div style={style} className={`${cardBase} overflow-hidden ${className}`}>
-      <ProductMotif slug={p.slug} className="aspect-square" />
+      {p.image ? (
+        <div className="relative aspect-square bg-tint">
+          <Image
+            src={p.image}
+            alt={p.name}
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+            className="object-cover"
+          />
+        </div>
+      ) : (
+        <ProductMotif slug={p.slug} className="aspect-square" />
+      )}
       <div className="flex flex-1 flex-col p-5">
         <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-accent">
           {p.category}
