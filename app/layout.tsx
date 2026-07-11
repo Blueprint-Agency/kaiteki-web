@@ -12,10 +12,14 @@ const display = Schibsted_Grotesk({
   display: "swap",
 });
 
-// Long-form body prose — journal-like serif (docs/06 §2.2)
+// Long-form body prose + editorial heading accents — journal-like serif
+// (docs/06 §2.2). Italic is loaded explicitly: a few serif-italic accent words
+// in section headings carry the boutique-editorial warmth of the "Warm
+// Sanctuary" register without adding a third typeface.
 const serif = Source_Serif_4({
   variable: "--font-serif-face",
   subsets: ["latin"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 

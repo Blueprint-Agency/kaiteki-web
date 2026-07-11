@@ -44,7 +44,7 @@ export function SiteFooter() {
   }));
 
   return (
-    <footer className="mt-20 bg-espresso text-ink-on-dark">
+    <footer className="bg-espresso text-ink-on-dark">
       <Container>
         <div className="grid grid-cols-2 gap-8 py-14 md:grid-cols-4 lg:grid-cols-5">
           <div className="col-span-2 md:col-span-1">
@@ -74,7 +74,6 @@ export function SiteFooter() {
               { href: "/about", label: "About" },
               { href: "/doctors", label: "Doctors" },
               { href: "/blog", label: "Blog" },
-              { href: "/promotions", label: "Promotions" },
               { href: "/contact", label: "Contact" },
               { href: "/privacy", label: "Privacy" },
               { href: "/terms", label: "Terms" },
