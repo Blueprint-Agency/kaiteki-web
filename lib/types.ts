@@ -75,6 +75,14 @@ export interface Branch {
   region: Region;
   /** Photo under /public/images/branches. */
   photo: string;
+  /** Full street address — migrated from the live site's published NAP. */
+  address: string;
+  /** Public branch phone, display format (e.g. "+6011-3332 5126"). */
+  phone: string;
+  /** Opening-hours lines, e.g. ["Mon–Fri: 10am–7pm", "Sat–Sun: 10:30am–6pm"]. */
+  hours: string[];
+  /** Google Maps share link. */
+  mapUrl: string;
   /** Treatment slugs offered here (sample subset). */
   treatments: string[];
 }
@@ -132,7 +140,14 @@ export interface Product {
 /** Device/brand-partner performance award — substantiated by the naming
  *  manufacturer, not a general "best clinic" superlative (docs/02 §5). */
 export interface Award {
+  /** The recognition as it reads on the plaque, e.g. "Ultherapy — Top 10 Transducer Sales". */
   title: string;
+  /** The manufacturer / treatment partner that issued it, e.g. "Merz Aesthetics". */
+  issuer: string;
   /** Year or year range, e.g. "2023–2024". Empty if the source didn't date it. */
   period: string;
+  /** Photograph of the physical award, served from /public/awards. */
+  image: string;
+  /** Descriptive alt text for the award photo. */
+  alt: string;
 }

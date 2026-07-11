@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Contour, Droplet, Eye, Sparkle, Sun } from "./icons";
 
-/* Face hotspots — anchored as % of the subject image (1122×1402). Each spot is
+/* Face hotspots — anchored as % of the subject image (873×1091). Each spot is
    a server-rendered <a> to a concern page (crawlable); its result card is the
    adjacent sibling, revealed purely in CSS (:hover / :focus-visible — see
    .hero-spot in globals.css). Copy stays MAB-safe: concerns + doctor
@@ -27,55 +27,55 @@ const spots: Spot[] = [
     name: "Fine lines & wrinkles",
     note: "Forehead and expression lines, assessed before anything is recommended.",
     icon: <Sparkle size={18} />,
-    x: 54.5,
-    y: 17.5,
+    x: 50,
+    y: 15,
     side: "left",
     cardClass:
-      "left-[54.5%] top-[calc(17.5%+16px)] -translate-x-1/2 w-56 sm:translate-x-0 sm:-translate-y-1/2 sm:left-auto sm:right-[calc(45.5%+44px)] sm:top-[17.5%] sm:w-64",
+      "left-[50%] top-[calc(15%+16px)] -translate-x-1/2 w-56 sm:translate-x-0 sm:-translate-y-1/2 sm:left-auto sm:right-[calc(50%+44px)] sm:top-[15%] sm:w-64",
   },
   {
     slug: "dark-eye-circles",
     name: "Dark eye circles",
     note: "Under-eye darkness and eye bags — options depend on the cause.",
     icon: <Eye size={18} />,
-    x: 50,
-    y: 28.5,
+    x: 44,
+    y: 31,
     side: "left",
     cardClass:
-      "left-[50%] top-[calc(28.5%+16px)] -translate-x-1/2 w-56 sm:translate-x-0 sm:-translate-y-1/2 sm:left-auto sm:right-[calc(50%+44px)] sm:top-[28.5%] sm:w-64",
+      "left-[44%] top-[calc(31%+16px)] -translate-x-1/2 w-56 sm:translate-x-0 sm:-translate-y-1/2 sm:left-auto sm:right-[calc(56%+44px)] sm:top-[31%] sm:w-64",
   },
   {
     slug: "pigmentation",
     name: "Pigmentation",
     note: "Sun spots, melasma and uneven tone, mapped to the right laser.",
     icon: <Sun size={18} />,
-    x: 66,
+    x: 63,
     y: 32,
     side: "right",
     cardClass:
-      "left-[66%] top-[calc(32%+16px)] -translate-x-1/2 w-56 sm:translate-x-0 sm:-translate-y-1/2 sm:left-[calc(66%+36px)] sm:top-[32%] sm:w-48 lg:left-auto lg:right-[-4%] xl:left-[calc(66%+36px)] xl:right-auto",
+      "left-[63%] top-[calc(32%+16px)] -translate-x-1/2 w-56 sm:translate-x-0 sm:-translate-y-1/2 sm:left-[calc(63%+36px)] sm:top-[32%] sm:w-48 lg:left-auto lg:right-[-4%] xl:left-[calc(63%+36px)] xl:right-auto",
   },
   {
     slug: "enlarged-pores",
     name: "Enlarged pores",
     note: "Texture and visible pores — often paired with hydration care.",
     icon: <Droplet size={18} />,
-    x: 45,
-    y: 34.5,
+    x: 44.5,
+    y: 36,
     side: "left",
     cardClass:
-      "left-[45%] top-[calc(34.5%+16px)] -translate-x-1/2 w-56 sm:translate-x-0 sm:-translate-y-1/2 sm:left-auto sm:right-[calc(55%+44px)] sm:top-[34.5%] sm:w-64",
+      "left-[44.5%] top-[calc(36%+16px)] -translate-x-1/2 w-56 sm:translate-x-0 sm:-translate-y-1/2 sm:left-auto sm:right-[calc(55.5%+44px)] sm:top-[36%] sm:w-64",
   },
   {
     slug: "face-contouring",
     name: "Face contouring",
     note: "Jawline and facial definition, planned with a doctor.",
     icon: <Contour size={18} />,
-    x: 66,
-    y: 42,
+    x: 63,
+    y: 46,
     side: "right",
     cardClass:
-      "left-[66%] top-[calc(42%+16px)] -translate-x-1/2 w-56 sm:translate-x-0 sm:-translate-y-1/2 sm:left-[calc(66%+36px)] sm:top-[46%] sm:w-48 lg:left-auto lg:right-[-4%] xl:left-[calc(66%+36px)] xl:right-auto",
+      "left-[63%] top-[calc(46%+16px)] -translate-x-1/2 w-56 sm:translate-x-0 sm:-translate-y-1/2 sm:left-[calc(63%+36px)] sm:top-[50%] sm:w-48 lg:left-auto lg:right-[-4%] xl:left-[calc(63%+36px)] xl:right-auto",
   },
 ];
 
@@ -83,8 +83,13 @@ const spotStyle = (s: Spot, i: number): CSSProperties =>
   ({ left: `${s.x}%`, top: `${s.y}%`, "--i": i } as CSSProperties);
 
 export function HeroFace() {
+  /* lg: width-driven — the figure fills the column up to the width whose
+     natural height (873:1091 image) fits the fold: (100vh - header) × 873/1091.
+     The image's intrinsic ratio sets the wrapper height (no aspect-ratio /
+     h-full / object-contain chain), so the dot percentages can never drift
+     from the photo, whatever the zoom or engine. */
   return (
-    <div className="hero-figure relative mx-auto w-[min(100%,400px)] self-end sm:w-[min(100%,460px)] lg:w-full lg:max-w-[560px]">
+    <div className="hero-figure relative mx-auto w-[min(100%,400px)] self-end sm:w-[min(100%,460px)] lg:mx-0 lg:ml-auto lg:w-[min(100%,calc((100vh-96px)*0.8))]">
       {/* Warm arch behind the subject — the reference's silhouette shape */}
       <span
         aria-hidden
@@ -98,8 +103,8 @@ export function HeroFace() {
       <Image
         src="/images/hero/hero-subject.png"
         alt="A smiling woman with calm, healthy-looking skin, resting her hands beneath her chin"
-        width={1122}
-        height={1402}
+        width={873}
+        height={1091}
         priority
         sizes="(min-width: 1024px) 560px, (min-width: 640px) 460px, 92vw"
         className="hero-figure-img relative z-10 h-auto w-full"

@@ -13,6 +13,9 @@
 *.gz
 *.sql
 
+# ── Scratch design exports dumped at repo root (public/ PNGs stay tracked) ──
+/*.png
+
 # ── Node / package managers ──
 node_modules/
 .pnp

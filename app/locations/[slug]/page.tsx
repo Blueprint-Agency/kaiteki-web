@@ -61,14 +61,19 @@ export default async function BranchPage({
           <div className="mt-8 max-w-md rounded-xl border border-hairline bg-surface p-5">
             <Ledger
               rows={[
-                { label: "Branch", value: `Kaiteki ${b.name}` },
-                { label: "City", value: `${b.city}, ${b.state}` },
-                { label: "Address", value: "Full address — to be confirmed" },
-                { label: "Hours", value: "Daily — to be confirmed" },
+                { label: "Address", value: b.address },
+                { label: "Phone", value: b.phone },
+                { label: "Hours", value: b.hours.join(" · ") },
               ]}
             />
-            <div className="mt-5">
+            <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
               <WhatsAppButton href={waForBranch(b.name)} label={`Contact ${b.name}`} />
+              <a href={`tel:${b.phone.replace(/[^\d+]/g, "")}`} className="text-sm font-medium text-mocha hover:text-espresso">
+                Call {b.phone}
+              </a>
+              <a href={b.mapUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-mocha hover:text-espresso">
+                Get directions →
+              </a>
             </div>
           </div>
         </div>
@@ -116,11 +121,6 @@ export default async function BranchPage({
           </ul>
         </section>
       )}
-
-      <p className="mt-12 text-sm text-ink-500">
-        Address, opening hours and branch details shown are placeholders and will be
-        completed with verified branch data.
-      </p>
     </Container>
   );
 }

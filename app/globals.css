@@ -189,7 +189,7 @@ body {
     .reveal {
       animation: kaiteki-slide linear both;
       animation-timeline: view();
-      animation-range: entry 5% entry 48%;
+      animation-range: entry 0% cover 30%;
     }
   }
 
@@ -197,6 +197,42 @@ body {
 }
 
 .mask-clip { overflow: hidden; }
+
+/* ============================================================
+   Flip cards — concern & treatment tiles (homepage). The front shows
+   the label; hover/keyboard-focus flips to a description on the back.
+   Both faces are server-rendered (crawlable); reduced-motion flips
+   instantly instead of animating.
+   ============================================================ */
+.flip {
+  perspective: 1200px;
+}
+.flip-inner {
+  position: relative;
+  height: 100%;
+  transition: transform var(--dur-hero) var(--ease-out-expo);
+  transform-style: preserve-3d;
+}
+.flip:hover .flip-inner,
+.flip:focus-visible .flip-inner,
+.flip:focus-within .flip-inner {
+  transform: rotateY(180deg);
+}
+.flip-face {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip-back {
+  transform: rotateY(180deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  .flip-inner {
+    transition-duration: 1ms;
+  }
+}
 
 /* ============================================================
    Homepage hero — "Warm Sanctuary" fold (components/HeroFace.tsx).

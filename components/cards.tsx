@@ -77,6 +77,48 @@ export function TreatmentCard({ t, className = "", style }: { t: Treatment } & E
   );
 }
 
+/** Image-forward concern tile for the homepage mosaic: an arch-topped photo with
+ *  the concern name over a warm gradient. Less "boxed card", more editorial — the
+ *  photograph carries it (docs/06 §5). `feature` makes it span & sit taller. */
+export function ConcernTile({
+  c,
+  feature = false,
+  className = "",
+  style,
+}: { c: Concern; feature?: boolean } & Extra) {
+  return (
+    <Link
+      href={`/concerns/${c.slug}`}
+      style={style}
+      className={`group relative block overflow-hidden rounded-2xl rounded-t-[2.75rem] ring-1 ring-hairline transition-shadow duration-300 hover:shadow-[0_18px_40px_rgb(73_54_40/0.14)] ${
+        feature ? "aspect-[4/5] sm:aspect-auto" : "aspect-[4/5]"
+      } ${className}`}
+    >
+      <Image
+        src={c.image}
+        alt={c.name}
+        fill
+        sizes={feature ? "(max-width: 640px) 100vw, 40vw" : "(max-width: 640px) 50vw, 22vw"}
+        className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+      />
+      {/* Legibility scrim — espresso, bottom-weighted, so the white label clears AA */}
+      <span
+        aria-hidden
+        className="absolute inset-0 bg-gradient-to-t from-espresso/80 via-espresso/15 to-transparent"
+      />
+      <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 p-4 sm:p-5">
+        <h3 className={`font-semibold leading-tight text-white ${feature ? "text-xl sm:text-2xl" : "text-base sm:text-lg"}`}>
+          {c.name}
+        </h3>
+        <ArrowRight
+          size={feature ? 22 : 18}
+          className="mb-0.5 shrink-0 text-white/85 transition-transform group-hover:translate-x-0.5"
+        />
+      </div>
+    </Link>
+  );
+}
+
 export function ConcernCard({ c, className = "", style }: { c: Concern } & Extra) {
   return (
     <Link href={`/concerns/${c.slug}`} style={style} className={`${cardBase} overflow-hidden ${className}`}>
