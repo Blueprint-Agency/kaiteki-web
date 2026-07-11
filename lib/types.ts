@@ -130,6 +130,9 @@ export interface Product {
   /** Manufacturer/brand, e.g. "Kaiteki", "Heliocare". */
   brand: string;
   group: ProductGroup;
+  /** Packshot under /public/images/skincare (migrated from the legacy catalogue).
+   *  Optional — cards fall back to the generated motif when absent. */
+  image?: string;
   /** Product type shown as the card eyebrow, e.g. "Serum", "Sunscreen". */
   category: string;
   /** Price in Malaysian Ringgit (MYR). */
