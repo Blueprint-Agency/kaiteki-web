@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Container } from "./Container";
 import { FlipCard } from "./FlipCard";
 import { ArrowRight, Sparkle, Sun, Droplet, Eye, Contour, ShieldCheck } from "./icons";
-import { treatments } from "@/content/data/treatments";
+import { categoryTreatments, treatmentHref } from "@/content/data/treatments";
 
 const si = (i: number): CSSProperties => ({ "--i": Math.min(i, 8) } as CSSProperties);
 
@@ -19,7 +19,7 @@ const WASH = [
 ];
 
 export function TreatmentsMenu() {
-  const six = treatments.slice(0, 6);
+  const six = categoryTreatments().slice(0, 6);
 
   return (
     <section id="treatments" className="bg-gradient-to-b from-page to-tint">
@@ -50,7 +50,7 @@ export function TreatmentsMenu() {
             return (
               <FlipCard
                 key={t.slug}
-                href={`/treatments/${t.slug}`}
+                href={treatmentHref(t)}
                 ariaLabel={`${t.name} — read the treatment guide`}
                 className="reveal"
                 style={si(i)}

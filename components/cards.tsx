@@ -4,6 +4,7 @@ import type { CSSProperties } from "react";
 import { ArrowRight, MapPin, WhatsApp } from "./icons";
 import { ExpandableText } from "./ExpandableText";
 import type { Treatment, Concern, Branch, Doctor, Product } from "@/lib/types";
+import { treatmentHref } from "@/content/data/treatments";
 import { waForProduct } from "@/lib/wa";
 
 // Cards now have a gentle lift + soft warm shadow on hover (docs/06 §3 motion,
@@ -62,7 +63,7 @@ export function TreatmentMotif({ t, className = "" }: { t: Treatment; className?
 
 export function TreatmentCard({ t, className = "", style }: { t: Treatment } & Extra) {
   return (
-    <Link href={`/treatments/${t.slug}`} style={style} className={`${cardBase} overflow-hidden ${className}`}>
+    <Link href={treatmentHref(t)} style={style} className={`${cardBase} overflow-hidden ${className}`}>
       <TreatmentMotif t={t} className="aspect-[16/10]" />
       <div className="flex flex-1 flex-col p-5">
         <h3 className="text-lg font-semibold text-espresso decoration-mocha/60 underline-offset-4 group-hover:underline">
