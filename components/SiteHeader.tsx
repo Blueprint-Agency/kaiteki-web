@@ -10,7 +10,6 @@ import { waGeneric } from "@/lib/wa";
 import {
   treatmentCategories,
   treatmentsByCategory,
-  machinesOf,
   treatmentHref,
 } from "@/content/data/treatments";
 import { concernGroups, concernsByGroup } from "@/content/data/concerns";
@@ -193,20 +192,6 @@ export function SiteHeader() {
                             >
                               {t.name}
                             </Link>
-                            {machinesOf(t.slug).length > 0 && (
-                              <ul className="mt-1.5 space-y-1.5 pl-3">
-                                {machinesOf(t.slug).map((m) => (
-                                  <li key={m.slug}>
-                                    <Link
-                                      href={treatmentHref(m)}
-                                      className="text-sm text-ink-500 transition-colors hover:text-espresso"
-                                    >
-                                      {m.name}
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
-                            )}
                           </li>
                         ))}
                       </ul>
@@ -265,10 +250,7 @@ export function SiteHeader() {
             <nav className="flex flex-col py-4" aria-label="Mobile">
               <MobileGroup title="Treatments" seeAll="/treatments" onNavigate={() => setMobileOpen(false)}>
                 {treatmentCategories.flatMap((cat) =>
-                  treatmentsByCategory(cat).flatMap((t) => [
-                    { href: treatmentHref(t), label: t.name },
-                    ...machinesOf(t.slug).map((m) => ({ href: treatmentHref(m), label: m.name })),
-                  ])
+                  treatmentsByCategory(cat).map((t) => ({ href: treatmentHref(t), label: t.name }))
                 )}
               </MobileGroup>
               <MobileGroup title="Concerns" seeAll="/concerns" onNavigate={() => setMobileOpen(false)}>

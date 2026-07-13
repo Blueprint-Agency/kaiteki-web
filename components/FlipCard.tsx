@@ -27,7 +27,7 @@ export function FlipCard({
       href={href}
       aria-label={ariaLabel}
       style={style}
-      className={`flip group relative block aspect-[5/6] rounded-[1.75rem] focus:outline-none focus-visible:ring-2 focus-visible:ring-espresso focus-visible:ring-offset-2 ${className}`}
+      className={`flip group relative block aspect-[16/10] rounded-[1.75rem] focus:outline-none focus-visible:ring-2 focus-visible:ring-espresso focus-visible:ring-offset-2 ${className}`}
     >
       <div className="flip-inner">
         <div className="flip-face rounded-[1.75rem] ring-1 ring-hairline">{front}</div>
