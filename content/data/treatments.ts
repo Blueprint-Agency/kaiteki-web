@@ -134,13 +134,13 @@ export const treatments: Treatment[] = [
         heading: "How it works",
         body: [
           "HIFU concentrates ultrasound energy at set depths within the skin's supporting layers. This controlled energy is intended to prompt the skin's natural collagen-renewal response over the following weeks, which may gradually support a firmer, more lifted appearance.",
-          "At Kaiteki, HIFU is delivered using devices such as Lifthera 2 and Ultracel. The treating doctor selects the applicator and settings for your skin and the area being addressed. Any changes develop gradually and vary between individuals.",
+          "At Kaiteki, HIFU is delivered using devices such as Lifthera and Ultracel Q. The treating doctor selects the applicator and settings for your skin and the area being addressed. Any changes develop gradually and vary between individuals.",
         ],
       },
       {
         heading: "Devices & technology: HIFU and Ultherapy",
         body: [
-          "HIFU and Ultherapy both use focused ultrasound but are distinct treatments. The HIFU devices used at Kaiteki (Lifthera 2 / Ultracel) deliver focused ultrasound and are often considered for deeper areas such as the jaw and jowls. Ultherapy is a separate micro-focused-ultrasound platform sometimes considered for more precise areas such as the brow and neck.",
+          "HIFU and Ultherapy both use focused ultrasound but are distinct treatments. The HIFU devices used at Kaiteki (Lifthera / Ultracel Q) deliver focused ultrasound and are often considered for deeper areas such as the jaw and jowls. Ultherapy is a separate micro-focused-ultrasound platform sometimes considered for more precise areas such as the brow and neck.",
           "This is a factual difference in how each device delivers energy, not a statement that one is better than the other. Which approach is appropriate — if any — is decided with your doctor at consultation.",
         ],
       },
@@ -196,7 +196,7 @@ export const treatments: Treatment[] = [
       },
       {
         q: "What is the difference between HIFU and Ultherapy?",
-        a: "Both use focused ultrasound but are different treatments. HIFU at Kaiteki uses devices such as Lifthera 2 and Ultracel and is often considered for deeper areas like the jaw and jowls, while Ultherapy is a separate micro-focused-ultrasound platform sometimes considered for more precise areas such as the brow and neck. Which one suits you, if any, is decided with your doctor.",
+        a: "Both use focused ultrasound but are different treatments. HIFU at Kaiteki uses devices such as Lifthera and Ultracel Q and is often considered for deeper areas like the jaw and jowls, while Ultherapy is a separate micro-focused-ultrasound platform sometimes considered for more precise areas such as the brow and neck. Which one suits you, if any, is decided with your doctor.",
       },
       {
         q: "Is there any downtime after HIFU?",
@@ -519,7 +519,7 @@ export const treatments: Treatment[] = [
         heading: "How it works",
         body: [
           "RF devices deliver controlled thermal energy into the dermis, gently heating the tissue. This warming is intended to act on existing collagen fibres and to prompt the skin's own gradual collagen-renewal response over time.",
-          "Different RF devices allow the treating doctor to adjust treatment depth and intensity for your skin condition and goals. At Kaiteki these include Oligio, which uses monopolar radiofrequency to deliver deep, uniform heating, and Density, an RF platform with precise energy control. A contact-cooling step is used during treatment to help keep each session comfortable.",
+          "Different RF devices allow the treating doctor to adjust treatment depth and intensity for your skin condition and goals. At Kaiteki these include BTL Exilis, which uses monopolar radiofrequency to deliver deep, uniform heating, and Wonderface, an RF platform with precise energy control. A contact-cooling step is used during treatment to help keep each session comfortable.",
           "Any changes develop gradually over weeks to months and vary between individuals.",
         ],
       },
@@ -829,6 +829,13 @@ export const treatments: Treatment[] = [
         ],
       },
       {
+        heading: "Devices we use",
+        body: [
+          "Kaiteki performs fat-freezing sessions using Cooltech, a cryolipolysis device. CoolSculpting, another cryolipolysis brand offered at Kaiteki, has its own dedicated page, as it is often searched for by name.",
+          "Naming a device is a factual description, not a claim that one performs better than another. The treating doctor selects the device and applicator suited to your treatment area and goals at consultation.",
+        ],
+      },
+      {
         heading: "What it may help address",
         body: [
           "Fat freezing is commonly considered for localised areas of fat that persist despite diet and exercise. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
@@ -932,9 +939,11 @@ export const treatments: Treatment[] = [
           "Kaiteki uses several skin-booster formulations, and they differ in their active ingredient and what they are typically used for. A doctor selects and personalises the choice based on your skin during consultation.",
         ],
         list: [
-          "Plinest — a polynucleotide-based formulation used to support skin regeneration and elasticity; often considered for stressed, ageing, or post-treatment skin.",
+          "Plinest/Newest — a polynucleotide-based formulation used to support skin regeneration and elasticity; often considered for stressed, ageing, or post-treatment skin.",
           "Profhilo — a high-concentration hyaluronic acid formulation used for deep hydration and skin remodelling, and to support firmness.",
           "Rejuran — based on salmon polynucleotide (PN/DNA) technology, used to support the skin barrier and skin healing; often considered for sensitive, acne-prone, or damaged skin.",
+          "Restylane Skinboosters — a hyaluronic-acid-based range used to support skin hydration and quality over a course of sessions.",
+          "Hydrodeluxe — a hydrating injectable formulation used to support skin moisture and overall skin quality.",
           "Juvelook — a hybrid, collagen-stimulating skin booster used to address pores, texture, and fine lines as part of longer-term skin-quality care.",
         ],
       },
