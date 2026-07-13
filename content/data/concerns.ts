@@ -633,6 +633,68 @@ export const concerns: Concern[] = [
       },
     ],
   },
+  {
+    slug: "tattoo-removal",
+    name: "Tattoo Removal",
+    group: "Skin",
+    image: "/images/concerns/tattoo-removal.jpg",
+    summary:
+      "Fading or removing unwanted tattoo ink, assessed by a doctor before any treatment.",
+    leadAnswer:
+      "Tattoo removal is the gradual fading of tattoo ink using laser energy that breaks pigment into smaller particles the body may clear over time. Ink type, colour, depth and skin type all affect suitability and the number of sessions, which a doctor assesses at consultation.",
+    treatments: ["pico-laser"],
+    reviewedBy: "dr-chew-yuhhui",
+    lastReviewed: "2026-07-13",
+    sections: [
+      {
+        heading: "What is laser tattoo removal?",
+        body: [
+          "Laser tattoo removal is a procedure that uses focused laser energy to gradually break down the ink held in the skin. People consider it for many reasons, including a change in personal taste or simply wanting to move on from an earlier decision.",
+          "It is not an instant process: a tattoo is removed progressively across several sessions, and how a given tattoo responds varies between individuals. A doctor assesses your tattoo during consultation before any treatment is recommended.",
+        ],
+      },
+      {
+        heading: "What affects the number of sessions",
+        body: [
+          "There is no fixed number of sessions that suits everyone. The tattoo is reviewed at each visit to track how it is fading and to decide whether further sessions are needed. Several factors influence how a tattoo responds, often in combination.",
+        ],
+        list: [
+          "Ink colour — different colours absorb laser energy differently",
+          "Depth of the ink in the skin",
+          "Size of the tattoo",
+          "Location on the body",
+          "Age of the tattoo",
+        ],
+      },
+      {
+        heading: "Types of ink & response",
+        body: [
+          "Darker inks such as black and dark blue tend to respond more predictably to laser treatment, while certain colours — particularly light colours, white, and some cosmetic or permanent-makeup pigments — can be more resistant or behave less predictably. Amateur tattoos with less densely packed ink often fade differently to professional tattoos.",
+          "Because ink composition varies and is rarely known with certainty, a doctor assesses the tattoo directly rather than predicting the outcome from a description alone.",
+        ],
+      },
+      {
+        heading: "When to see a doctor",
+        body: [
+          "It is reasonable to seek advice if you are considering removing or fading a tattoo. A doctor can examine the tattoo, discuss your medical history, explain the options and their risks, and help you decide whether treatment is appropriate for you.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Can a tattoo be fully removed?",
+        a: "It varies between individuals and cannot be predicted before a consultation. Some tattoos fade substantially over a course of sessions, while others respond less completely depending on ink colour, depth, size, location and age. A doctor assesses your tattoo and explains what a course of treatment may realistically involve for you.",
+      },
+      {
+        q: "Is laser tattoo removal painful?",
+        a: "There may be some discomfort during treatment. People describe the sensation differently, and the treated area may feel sore afterwards. Your doctor can discuss comfort measures at your appointment.",
+      },
+      {
+        q: "How many sessions will removal take?",
+        a: "There is no fixed number. The tattoo is reviewed at each visit and sessions continue until you and the doctor are satisfied with the fading, or agree to stop. The total varies between individuals, which is why an in-person assessment is needed before a plan is set.",
+      },
+    ],
+  },
 ];
 
 export const concernGroups: Concern["group"][] = ["Skin", "Face", "Eyes", "Hair & Body"];
