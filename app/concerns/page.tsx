@@ -12,7 +12,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "/concerns" },
 };
 
-const groupHref: Record<string, string> = { Skin: "/concerns/skin", "Face & Body": "/concerns/face" };
+const groupHref: Record<string, string> = {
+  Skin: "/concerns/skin",
+  Face: "/concerns/face",
+  Eyes: "/concerns/eyes",
+  "Hair & Body": "/concerns/hair-body",
+};
 
 export default function ConcernsHub() {
   return (
