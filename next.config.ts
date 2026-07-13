@@ -10,6 +10,17 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  // 301s for URLs moved by the treatment/concern taxonomy restructure
+  // (docs/superpowers/plans/2026-07-13-treatment-taxonomy-restructure.md, Task 5).
+  async redirects() {
+    return [
+      { source: "/treatments/ultherapy", destination: "/treatments/hifu/ultherapy", permanent: true },
+      { source: "/treatments/coolsculpting", destination: "/treatments/fat-freezing/coolsculpting", permanent: true },
+      { source: "/treatments/onda", destination: "/treatments/microwave-contouring/onda", permanent: true },
+      { source: "/treatments/dermav", destination: "/treatments/vascular-pigment-laser/dermav", permanent: true },
+      { source: "/treatments/tattoo-removal", destination: "/concerns/tattoo-removal", permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;
