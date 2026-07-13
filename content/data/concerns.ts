@@ -695,6 +695,168 @@ export const concerns: Concern[] = [
       },
     ],
   },
+  {
+    slug: "birthmark",
+    name: "Birthmark",
+    group: "Skin",
+    image: "/images/concerns/birthmark.jpg",
+    summary:
+      "Birthmarks vary widely in type and cause — a doctor assesses which, if any, treatment may be appropriate.",
+    leadAnswer:
+      "Birthmarks are marks present at or shortly after birth, caused by clusters of pigment cells or blood vessels in the skin. They vary in colour, size and type, and most are harmless. A consultation helps determine whether any treatment is appropriate, and which approach may suit your skin.",
+    treatments: ["pico-laser", "vascular-pigment-laser"],
+    reviewedBy: "dr-chew-yuhhui",
+    lastReviewed: "2026-07-13",
+    sections: [
+      {
+        heading: "What is a birthmark?",
+        body: [
+          "A birthmark is an area of skin that is discoloured from birth or appears shortly afterwards. Birthmarks are common and most are benign, but they differ widely in cause, colour and depth, which is why they are assessed individually.",
+          "Understanding the type of birthmark you have is the first step in deciding whether any treatment may be relevant at all.",
+        ],
+      },
+      {
+        heading: "Types of birthmarks",
+        body: [
+          "Birthmarks broadly fall into two groups. Pigmented birthmarks — such as café-au-lait patches, Mongolian spots and moles — arise from clusters of pigment-producing cells. Vascular birthmarks — such as salmon patches, port-wine stains and some haemangiomas — arise from blood vessels in the skin and can appear pink, red or purplish.",
+        ],
+        list: [
+          "Pigmented — café-au-lait patches, Mongolian spots, congenital moles",
+          "Vascular — salmon patches, port-wine stains, haemangiomas",
+        ],
+      },
+      {
+        heading: "When to see a doctor",
+        body: [
+          "Most birthmarks are harmless, but it is reasonable to have any birthmark examined, particularly if it changes in size, shape or colour, becomes raised, bleeds, or affects how you feel about your appearance. A doctor can assess the mark, explain what it likely is, and discuss the options and their risks if treatment is being considered.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Can birthmarks be removed?",
+        a: "It depends on the type of birthmark, and outcomes vary between individuals. Some pigmented or vascular birthmarks may be considered for laser treatment, while others are best left alone or monitored. A doctor assesses the mark and explains what is realistic before recommending anything.",
+      },
+      {
+        q: "Are birthmarks dangerous?",
+        a: "Most birthmarks are harmless, but any mark that changes over time, becomes raised, bleeds or looks unusual should be examined by a doctor. This is a general precaution and does not mean a birthmark is a concern in itself.",
+      },
+      {
+        q: "Why do different birthmarks need different treatments?",
+        a: "Pigmented and vascular birthmarks arise from different structures in the skin — pigment cells versus blood vessels — so they respond to different types of laser energy. A doctor identifies the type first before discussing which approach, if any, may be appropriate.",
+      },
+    ],
+  },
+  {
+    slug: "vascular-lesions",
+    name: "Vascular Lesions",
+    group: "Skin",
+    image: "/images/concerns/vascular-lesions.jpg",
+    summary:
+      "Visible blood vessels and redness have several causes — assessment guides whether treatment may help.",
+    leadAnswer:
+      "Vascular lesions are visible blood vessels or areas of redness in the skin, such as facial thread veins, spider veins or persistent flushing. They have several possible causes, so a doctor assesses the type before discussing whether any treatment may be appropriate for you.",
+    treatments: ["vascular-pigment-laser", "dermav"],
+    reviewedBy: "dr-yeong-bin",
+    lastReviewed: "2026-07-13",
+    sections: [
+      {
+        heading: "What are vascular lesions?",
+        body: [
+          "Vascular lesions occur when small blood vessels near the surface of the skin become visible or dilated, appearing as fine red or purplish lines, patches, or persistent redness. They most commonly affect the face, particularly the cheeks and nose, but can appear elsewhere on the body.",
+          "Because visible vessels can arise from several different underlying causes, a doctor assesses which type is present before discussing any approach.",
+        ],
+      },
+      {
+        heading: "Common types & causes",
+        body: [
+          "Several patterns of vascular lesion are commonly seen, often influenced by more than one factor.",
+        ],
+        list: [
+          "Facial thread veins (telangiectasia) — fine visible vessels, often on the cheeks and nose",
+          "Spider veins — small clusters of vessels radiating from a central point",
+          "Persistent facial redness or flushing, sometimes associated with rosacea",
+          "Sun exposure and skin ageing, which can make vessels more visible over time",
+          "Genetics and skin type",
+        ],
+      },
+      {
+        heading: "When to see a doctor",
+        body: [
+          "It is reasonable to seek advice if visible vessels or redness are persistent, spreading, or affecting how you feel. A doctor can examine the area, help identify the likely cause, and explain the options and their risks so you can decide on a sensible plan.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Can vascular lesions be treated?",
+        a: "Some vascular lesions may respond to laser treatment, while others need a different approach or ongoing management, and results vary between individuals. A consultation helps determine which type is present and which approach, if any, is appropriate.",
+      },
+      {
+        q: "Why does the cause of redness matter?",
+        a: "Persistent redness can come from visible blood vessels, skin sensitivity, or conditions such as rosacea, each of which is approached differently. A doctor assesses the likely cause before discussing any treatment.",
+      },
+      {
+        q: "Do vascular lesions come back after treatment?",
+        a: "New vessels can develop over time, particularly with continued sun exposure or an underlying tendency toward them, so outcomes vary between individuals. A doctor can explain what is realistic for your skin before recommending anything.",
+      },
+    ],
+  },
+  {
+    slug: "excessive-sweating",
+    name: "Excessive Sweating",
+    group: "Skin",
+    image: "/images/concerns/excessive-sweating.jpg",
+    summary:
+      "Excessive sweating has several possible causes — a doctor assesses your situation at consultation.",
+    leadAnswer:
+      "Excessive sweating (hyperhidrosis) is sweating beyond what is needed to regulate body temperature, most often affecting the underarms, palms, soles or face. It can have several causes. A consultation helps assess your situation and discuss whether any approach may be appropriate for you.",
+    treatments: [],
+    reviewedBy: "dr-yeong-bin",
+    lastReviewed: "2026-07-13",
+    sections: [
+      {
+        heading: "What is excessive sweating?",
+        body: [
+          "Sweating is a normal bodily function that helps regulate temperature. Excessive sweating, medically known as hyperhidrosis, describes sweating that is noticeably more than what is needed for temperature regulation, and can affect daily activities and confidence.",
+          "It most commonly affects the underarms, palms, soles of the feet and, less often, the face. Understanding the pattern and likely cause is the first step in deciding whether any approach may help.",
+        ],
+      },
+      {
+        heading: "Possible causes",
+        body: [
+          "Excessive sweating can occur on its own (primary hyperhidrosis) or alongside another underlying condition (secondary hyperhidrosis). A doctor considers both possibilities when assessing you.",
+        ],
+        list: [
+          "Primary focal hyperhidrosis, often without an identifiable underlying cause",
+          "Hormonal changes",
+          "Anxiety or stress",
+          "Certain medications",
+          "Underlying medical conditions, in some cases",
+        ],
+      },
+      {
+        heading: "When to see a doctor",
+        body: [
+          "It is reasonable to seek advice if sweating is persistent, affects daily life or confidence, or occurs alongside other symptoms. A doctor can assess your situation, consider possible underlying causes, and explain the options and their risks so you can decide on a sensible plan — including whether treatment is needed at all.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is excessive sweating a medical condition?",
+        a: "Yes — when sweating is noticeably beyond what is needed to regulate temperature, it is recognised as a condition called hyperhidrosis. A doctor can assess whether this applies to you and discuss it accordingly.",
+      },
+      {
+        q: "What causes excessive sweating?",
+        a: "It can occur on its own or alongside factors such as hormonal changes, stress or certain medications and medical conditions. A consultation helps identify the likely contributors for you before anything is considered.",
+      },
+      {
+        q: "Is excessive sweating treatable?",
+        a: "This depends on the cause and your individual situation, and outcomes vary between individuals. A doctor assesses your situation at consultation and explains what may be appropriate before recommending anything.",
+      },
+    ],
+  },
 ];
 
 export const concernGroups: Concern["group"][] = ["Skin", "Face", "Eyes", "Hair & Body"];
