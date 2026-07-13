@@ -3,10 +3,13 @@
 // mirror docs/05 §9 closely enough to render the sample pages faithfully.
 
 export type NavCategory =
+  | "Lasers"
   | "Lifting & Tightening"
-  | "Pigment & Resurfacing"
-  | "Body Contouring"
-  | "Regenerative & Injectables"
+  | "Body & Slimming"
+  | "Injectables"
+  | "Facials"
+  | "Hair Removal"
+  | "Regenerative"
   | "Eyes";
 
 export type Region = "Klang Valley" | "Johor" | "Sabah";
@@ -44,6 +47,10 @@ export interface Treatment {
   faqs?: Faq[];
   /** Device/brand name shown in the technology context. */
   device?: string;
+  /** Category slug this machine sits under. Absent = this IS a category (high-level) page. */
+  parent?: string;
+  /** Devices described as sections on a category page (drives the "we use …" line). */
+  machineNames?: string[];
   /** Compliance + review (placeholder values for the sample — docs/05 §9). */
   reviewedBy: string; // doctor slug
   lastReviewed: string; // ISO date
@@ -54,7 +61,7 @@ export interface Treatment {
 export interface Concern {
   slug: string;
   name: string;
-  group: "Skin" | "Face & Body";
+  group: "Skin" | "Face" | "Eyes" | "Hair & Body";
   /** Photo under /public/images/concerns. */
   image: string;
   summary: string;

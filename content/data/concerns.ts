@@ -194,7 +194,7 @@ export const concerns: Concern[] = [
   {
     slug: "fine-lines-wrinkles",
     name: "Fine Lines & Wrinkles",
-    group: "Skin",
+    group: "Face",
     image: "/images/concerns/fine-lines-wrinkles.jpg",
     summary:
       "Expression lines and static wrinkles are approached differently — assessment guides the plan.",
@@ -264,7 +264,7 @@ export const concerns: Concern[] = [
   {
     slug: "dark-eye-circles",
     name: "Dark Eye Circles",
-    group: "Skin",
+    group: "Eyes",
     image: "/images/concerns/dark-eye-circles.jpg",
     summary:
       "Under-eye darkness can be pigment, vascular or structural — the cause guides the approach.",
@@ -327,7 +327,7 @@ export const concerns: Concern[] = [
   {
     slug: "face-contouring",
     name: "Face Contouring",
-    group: "Face & Body",
+    group: "Face",
     image: "/images/concerns/face-contouring.jpg",
     summary:
       "Facial contour concerns are assessed individually to determine suitable options.",
@@ -388,7 +388,7 @@ export const concerns: Concern[] = [
   {
     slug: "face-lifting",
     name: "Face Lifting",
-    group: "Face & Body",
+    group: "Face",
     image: "/images/concerns/face-lifting.jpg",
     summary:
       "Non-surgical lifting and firmness concerns are assessed to guide a suitable plan.",
@@ -452,7 +452,7 @@ export const concerns: Concern[] = [
   {
     slug: "aging",
     name: "Aging",
-    group: "Face & Body",
+    group: "Skin",
     image: "/images/concerns/aging.jpg",
     summary:
       "Skin ageing involves firmness, texture and volume — approached with an individual plan.",
@@ -514,7 +514,7 @@ export const concerns: Concern[] = [
   {
     slug: "body-slimming",
     name: "Body Slimming",
-    group: "Face & Body",
+    group: "Hair & Body",
     image: "/images/concerns/body-slimming.jpg",
     summary: "Localised fat concerns are assessed individually; these are not weight-loss treatments.",
     leadAnswer:
@@ -573,7 +573,7 @@ export const concerns: Concern[] = [
   {
     slug: "hair-loss",
     name: "Hair Loss",
-    group: "Face & Body",
+    group: "Hair & Body",
     image: "/images/concerns/hair-loss.jpg",
     summary: "Hair-loss patterns have different causes — assessment guides whether treatment may help.",
     leadAnswer:
@@ -635,7 +635,7 @@ export const concerns: Concern[] = [
   },
 ];
 
-export const concernGroups: Concern["group"][] = ["Skin", "Face & Body"];
+export const concernGroups: Concern["group"][] = ["Skin", "Face", "Eyes", "Hair & Body"];
 
 export function concernBySlug(slug: string) {
   return concerns.find((c) => c.slug === slug);

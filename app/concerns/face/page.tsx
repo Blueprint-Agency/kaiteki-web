@@ -23,7 +23,7 @@ export default function FaceCategory() {
         </p>
       </div>
       <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {concernsByGroup("Face & Body").map((c) => (
+        {concernsByGroup("Face").map((c) => (
           <ConcernCard key={c.slug} c={c} />
         ))}
       </div>
