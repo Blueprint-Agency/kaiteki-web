@@ -12,7 +12,8 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "validate:content": "node scripts/validate-content.mjs",
-    "validate:refs": "node --experimental-strip-types scripts/validate-content.mts"
+    "validate:refs": "node --experimental-strip-types scripts/validate-content.mts",
+    "test:redirects": "node --experimental-strip-types scripts/test-redirects.mts"
   },
   "dependencies": {
     "next": "16.2.10",
