@@ -306,13 +306,13 @@ export const treatments: Treatment[] = [
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
   },
-  { slug: "fotona-4d", name: "Fotona 4D", category: "Lasers", image: "/images/treatments/fotona-4d.png", device: "Fotona", summary: "A laser approach combining several modes for skin-firming and refinement concerns.", leadAnswer: "Fotona 4D is a laser treatment that combines several modes to address firmness and skin-quality concerns from inside the mouth and on the skin surface. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.", concerns: ["aging", "face-lifting", "fine-lines-wrinkles"], related: ["hifu", "ultherapy"], reviewedBy: "dr-chew-yuhhui", lastReviewed: "2026-06-15", kkliu: "KKLIU 0000/2026 (sample)", kkliuExpiry: "2026-12-31",
+  { slug: "fotona-4d", name: "Fotona Laser", category: "Lasers", image: "/images/treatments/fotona-laser.jpg", device: "Fotona", machineNames: ["Fotona SP Dynamis / TimeWalker (4D, NightLase, LipLase, SmoothEye, TightSculpting)"], summary: "A multi-application Nd:YAG/Er:YAG laser platform, most often used at Kaiteki for its Fotona 4D facial-firming protocol.", leadAnswer: "Fotona Laser refers to Kaiteki's Fotona SP Dynamis / TimeWalker platform, an Nd:YAG and Er:YAG laser system offered in several application modes. Its best-known protocol, Fotona 4D, combines four modes to address facial firmness and skin-quality concerns. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.", concerns: ["aging", "face-lifting", "fine-lines-wrinkles"], related: ["hifu", "ultherapy"], reviewedBy: "dr-chew-yuhhui", lastReviewed: "2026-06-15", kkliu: "KKLIU 0000/2026 (sample)", kkliuExpiry: "2026-12-31",
     sections: [
       {
-        heading: "What is Fotona 4D?",
+        heading: "What is Fotona Laser?",
         body: [
-          "Fotona 4D refers to a non-surgical laser protocol that uses an Nd:YAG and Er:YAG laser system to deliver energy to the face through a combination of modes. It is called \"4D\" because it works across four steps, treating both the skin surface and the tissue inside the mouth.",
-          "The treatment is generally considered for firmness, skin-quality and volume-related concerns of the face. It uses laser energy rather than injectables or surgery. Whether it is appropriate for you, and what it may realistically address, is something a doctor assesses during consultation, as suitability and outcomes vary between individuals.",
+          "Fotona Laser refers to Kaiteki's Fotona SP Dynamis / TimeWalker platform, a dual-wavelength (Nd:YAG and Er:YAG) laser system offered in several distinct applications, including NightLase (for snoring-related concerns), LipLase, SmoothEye and TightSculpting, alongside its flagship facial protocol, Fotona 4D.",
+          "Fotona 4D is a non-surgical protocol that uses the platform's Nd:YAG and Er:YAG modes together to deliver energy to the face through a combination of steps. It is called \"4D\" because it works across four steps, treating both the skin surface and the tissue inside the mouth. It is generally considered for firmness, skin-quality and volume-related concerns of the face. Whether it — or another application of the platform — is appropriate for you is something a doctor assesses during consultation, as suitability and outcomes vary between individuals.",
         ],
       },
       {
@@ -1405,6 +1405,666 @@ export const treatments: Treatment[] = [
       {
         q: "Does the procedure hurt?",
         a: "Local anaesthesia is used for comfort during the procedure. Some tightness, swelling or tenderness is common while healing and typically settles. Your doctor will discuss comfort and aftercare with you at consultation.",
+      },
+    ],
+  },
+
+  // 8 new category (parent-less) pages, authored to the pico-laser template
+  // (docs/superpowers/plans/2026-07-13-treatment-taxonomy-restructure.md, Task 8).
+  {
+    slug: "vascular-pigment-laser",
+    name: "Vascular / Pigment Laser",
+    category: "Lasers",
+    image: "/images/treatments/vascular-pigment-laser.jpg",
+    machineNames: ["Pro Yellow (Quadrostar 577nm)", "M22 IPL"],
+    summary:
+      "Laser and light-based devices used for visible blood vessels, redness and pigment concerns.",
+    leadAnswer:
+      "Vascular / Pigment Laser refers to devices used to address visible blood vessels, facial redness and pigment concerns using targeted wavelengths of light. At Kaiteki this includes Pro Yellow and M22 IPL, alongside the dedicated DermaV platform. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
+    concerns: ["vascular-lesions", "pigmentation"],
+    related: ["pico-laser", "dermav"],
+    reviewedBy: "dr-chew-yuhhui",
+    lastReviewed: "2026-07-13",
+    kkliu: "KKLIU 0000/2026 (sample)",
+    kkliuExpiry: "2026-12-31",
+    sections: [
+      {
+        heading: "What is Vascular / Pigment Laser treatment?",
+        body: [
+          "Vascular / Pigment Laser is a category of light-based devices selected for their ability to target either visible blood vessels or pigment in the skin, depending on the wavelength used. It is not a single machine but a group of technologies matched to the concern being addressed.",
+          "At Kaiteki this category includes Pro Yellow (a Quadrostar 577nm yellow-light laser) and M22 IPL (intense pulsed light), used alongside the dedicated DermaV vascular-pigment platform. Whether any of these suits your skin depends on your concern, skin type and history, which a doctor assesses during consultation.",
+        ],
+      },
+      {
+        heading: "How it works",
+        body: [
+          "Pro Yellow delivers 577nm yellow-light energy, a wavelength associated with absorption by blood vessels, and is generally considered for vascular concerns such as redness and visible vessels. M22 IPL delivers broad-spectrum light that can be filtered for either vascular or pigment targets, offering flexibility across different skin concerns in one platform.",
+          "The treating doctor selects the device, wavelength and settings appropriate to your concern and skin tone. Energy is absorbed by the target (vessel or pigment particle), which may gradually reduce its visibility or prompt the body to clear it over time. Results develop gradually and vary between individuals.",
+        ],
+      },
+      {
+        heading: "What it may help address",
+        body: [
+          "This category is commonly considered for the following concerns. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
+        ],
+        list: [
+          "Facial redness and visible thread veins",
+          "Sun spots and other pigment-related marks",
+          "Rosacea-associated flushing (as part of a wider plan)",
+          "General skin-tone refinement alongside other treatments",
+        ],
+      },
+      {
+        heading: "Suitability & who should avoid it",
+        body: [
+          "Suitability is assessed individually and depends on the specific device being considered. These treatments may not be appropriate during pregnancy, with certain skin conditions or medications, or on recently tanned skin. Please share your full medical and skincare history at consultation so the doctor can advise safely and select the appropriate device, if any.",
+        ],
+      },
+      {
+        heading: "The session at Kaiteki",
+        body: [
+          "A typical visit begins with a doctor consultation and skin assessment. If a vascular or pigment laser is appropriate, the doctor selects the device and settings suited to your concern, and a patch or test area may be considered before proceeding.",
+          "A course of several sessions spaced a few weeks apart is common, but the plan is individual. Your doctor will explain what to expect for your skin.",
+        ],
+      },
+      {
+        heading: "Downtime & aftercare",
+        body: [
+          "Downtime is usually limited but varies. Temporary redness or mild sensitivity can occur and typically settles. Sun protection and gentle skincare are advised afterwards; your doctor will give aftercare guidance specific to you.",
+        ],
+      },
+      {
+        heading: "Risks & side effects",
+        body: [
+          "As with any medical procedure, these treatments carry risks, which are explained during consultation. Temporary effects can include redness, swelling or changes in pigmentation. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor.",
+        ],
+      },
+      {
+        heading: "Sessions & cost factors",
+        body: [
+          "The number of sessions and overall cost depend on the device used, the concern being addressed and your individual response. Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "What is the difference between Pro Yellow and M22 IPL?",
+        a: "Pro Yellow delivers a specific 577nm yellow-light wavelength generally considered for vascular concerns, while M22 IPL delivers broad-spectrum light that can be filtered for either vascular or pigment targets. Which device suits your concern is decided by your doctor at consultation.",
+      },
+      {
+        q: "How is this different from DermaV?",
+        a: "DermaV is a dedicated dual-wavelength vascular-pigment device offered at Kaiteki alongside Pro Yellow and M22 IPL within this category. All three address related concerns using different technologies; your doctor selects the one suited to your skin and concern.",
+      },
+      {
+        q: "Is this suitable for darker Asian skin tones?",
+        a: "These devices are used across a range of skin tones, but suitability is individual. A doctor assesses your skin type and history first, as some concerns and skin types need particular care to reduce the risk of pigment changes.",
+      },
+      {
+        q: "How many sessions will I need?",
+        a: "It varies. A course of several sessions spaced a few weeks apart is common, but the plan depends on your concern and how your skin responds. Your doctor will outline a realistic plan at consultation.",
+      },
+    ],
+  },
+  {
+    slug: "resurfacing-laser",
+    name: "Resurfacing Laser",
+    category: "Lasers",
+    image: "/images/treatments/resurfacing-laser.jpg",
+    machineNames: ["Fractional CO2"],
+    summary: "A fractional CO2 laser used for skin texture, scarring and pore concerns.",
+    leadAnswer:
+      "Resurfacing Laser at Kaiteki uses fractional CO2 laser technology to create controlled micro-injury columns in the skin, prompting a renewal response. It is commonly considered for texture, scarring and enlarged-pore concerns. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
+    concerns: ["enlarged-pores", "fine-lines-wrinkles", "acne"],
+    related: ["pico-laser", "microneedling"],
+    reviewedBy: "dr-yeong-bin",
+    lastReviewed: "2026-07-13",
+    kkliu: "KKLIU 0000/2026 (sample)",
+    kkliuExpiry: "2026-12-31",
+    sections: [
+      {
+        heading: "What is Resurfacing Laser treatment?",
+        body: [
+          "Resurfacing Laser refers to ablative and fractional laser technology — at Kaiteki, a fractional CO2 laser — that works by creating a controlled pattern of micro-injury columns across the treated skin, leaving surrounding tissue intact to support recovery.",
+          "This differs from non-ablative lasers such as Pico laser, which do not remove tissue at the surface. Whether fractional CO2 resurfacing suits your skin depends on your concern, skin type and history, which a doctor assesses during consultation.",
+        ],
+      },
+      {
+        heading: "How it works",
+        body: [
+          "The fractional CO2 laser delivers energy in a grid-like pattern of microscopic columns, each surrounded by untreated skin. This fractional approach is intended to prompt a controlled skin-renewal and collagen-remodelling response while allowing faster recovery than treating the entire surface at once.",
+          "Settings, depth and density are selected by the treating doctor for your skin type and concern. Results develop gradually over the following weeks and vary between individuals.",
+        ],
+      },
+      {
+        heading: "What it may help address",
+        body: [
+          "Resurfacing Laser is commonly considered for the following concerns. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
+        ],
+        list: [
+          "Acne scarring and uneven skin texture",
+          "Enlarged or visible pores",
+          "Fine lines and areas of textural irregularity",
+          "Overall skin-tone and texture refinement as part of a plan",
+        ],
+      },
+      {
+        heading: "Suitability & who should avoid it",
+        body: [
+          "Suitability is assessed individually. Fractional CO2 resurfacing may not be appropriate during pregnancy, with certain skin conditions, active infection or a history of keloid scarring, or on recently tanned skin. Please share your full medical and skincare history at consultation so the doctor can advise safely.",
+        ],
+      },
+      {
+        heading: "The session at Kaiteki",
+        body: [
+          "A typical visit begins with a doctor consultation and skin assessment. Topical numbing is usually applied beforehand to help with comfort. If resurfacing is appropriate, the laser is passed across the treatment area at settings chosen for your skin.",
+          "The number and spacing of sessions is individual and depends on the concern and depth of treatment. Your doctor will explain what to expect for your skin.",
+        ],
+      },
+      {
+        heading: "Downtime & aftercare",
+        body: [
+          "Downtime is generally more noticeable than with non-ablative lasers and varies with the settings used. Redness, swelling and skin flaking or peeling over several days to about a week are common and typically settle. Diligent sun protection and gentle skincare are advised afterwards; your doctor will give aftercare guidance specific to you.",
+        ],
+      },
+      {
+        heading: "Risks & side effects",
+        body: [
+          "As with any medical procedure, Resurfacing Laser carries risks, which are explained during consultation. Temporary effects can include redness, swelling, peeling and changes in pigmentation. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor.",
+        ],
+      },
+      {
+        heading: "Sessions & cost factors",
+        body: [
+          "The number of sessions and overall cost depend on the concern being addressed, the treatment depth and your individual response. Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is Resurfacing Laser the same as Pico laser?",
+        a: "No. Resurfacing Laser uses a fractional CO2 laser that creates controlled micro-injury columns in the skin, while Pico laser is non-ablative and does not remove tissue at the surface. Your doctor can explain which is more appropriate for your concern.",
+      },
+      {
+        q: "How much downtime should I expect?",
+        a: "Downtime is generally more noticeable than with non-ablative treatments. Redness, swelling and flaking over several days to about a week are common and typically settle, though this varies between individuals. Your doctor will explain what to expect for your settings.",
+      },
+      {
+        q: "Is it painful?",
+        a: "Topical numbing is usually applied beforehand to help with comfort. Many people describe a warm or prickling sensation during treatment. Comfort varies between individuals, and your doctor can discuss options beforehand.",
+      },
+      {
+        q: "How many sessions will I need?",
+        a: "It varies with the concern and treatment depth. Your doctor will outline a realistic plan and spacing between sessions at consultation, based on your skin and how it responds.",
+      },
+    ],
+  },
+  {
+    slug: "microwave-contouring",
+    name: "Microwave Contouring",
+    category: "Body & Slimming",
+    image: "/images/treatments/microwave-contouring.jpg",
+    machineNames: ["Onda Coolwaves"],
+    summary: "Microwave-based technology used for body-contouring, cellulite and firmness concerns.",
+    leadAnswer:
+      "Microwave Contouring uses microwave-based energy, delivered at Kaiteki through the Onda platform, to address localised fat, cellulite appearance and skin firmness. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
+    concerns: ["body-slimming"],
+    related: ["fat-freezing", "muscle-stimulation"],
+    reviewedBy: "dr-yeong-bin",
+    lastReviewed: "2026-07-13",
+    kkliu: "KKLIU 0000/2026 (sample)",
+    kkliuExpiry: "2026-12-31",
+    sections: [
+      {
+        heading: "What is Microwave Contouring?",
+        body: [
+          "Microwave Contouring is a category of non-invasive body- and face-contouring technology that uses microwave-based energy to act on tissue beneath the skin's surface. At Kaiteki this is delivered using the Onda platform, which the manufacturer refers to as Coolwaves® technology.",
+          "It is used to address localised fat, the appearance of cellulite, and skin firmness. Whether it suits you depends on your concern, body area, skin and medical history, which a doctor assesses during consultation.",
+        ],
+      },
+      {
+        heading: "How it works",
+        body: [
+          "Microwave energy is delivered beneath the skin's surface while built-in cooling helps keep the surface protected during treatment. The energy is intended to act on the targeted tissue — for example localised fat cells or the fibrous bands associated with cellulite — and may also prompt a gradual collagen-remodelling response supporting firmness.",
+          "Settings and applicator are selected by the treating doctor for the area and your skin. Results develop over time and vary between individuals.",
+        ],
+      },
+      {
+        heading: "What it may help address",
+        body: [
+          "Microwave Contouring is commonly considered for the concerns below. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
+        ],
+        list: [
+          "Localised fat on areas such as the abdomen, flanks, thighs and arms",
+          "The dimpled appearance associated with cellulite",
+          "Skin firmness and tone over treated areas",
+          "Firmness concerns of the face and jawline as part of a plan",
+        ],
+      },
+      {
+        heading: "Suitability & who should avoid it",
+        body: [
+          "Suitability is assessed individually. Microwave Contouring is not a weight-loss treatment; it addresses localised areas rather than overall body weight. It may not be appropriate during pregnancy, with certain implants or medical devices in the treatment area, or with some skin or health conditions.",
+          "Please share your full medical history and any devices or implants at consultation so the doctor can advise safely.",
+        ],
+      },
+      {
+        heading: "The session at Kaiteki",
+        body: [
+          "A typical visit begins with a doctor consultation and assessment of the area of concern. If Microwave Contouring is appropriate, a handpiece is moved over the treatment area to deliver the energy while the surface is cooled.",
+          "A course of several sessions spaced a few weeks apart is common, but the plan is individual. Your doctor will explain what to expect for you.",
+        ],
+      },
+      {
+        heading: "Downtime & aftercare",
+        body: [
+          "Downtime is usually limited, though this varies between individuals. Temporary warmth, redness or mild tenderness over the treated area can occur and typically settles. Most people are able to return to usual activities, and your doctor will give aftercare guidance specific to you.",
+        ],
+      },
+      {
+        heading: "Risks & side effects",
+        body: [
+          "As with any medical procedure, Microwave Contouring carries risks, which are explained during consultation. Temporary effects can include redness, swelling, warmth or tenderness in the treated area. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor.",
+        ],
+      },
+      {
+        heading: "Sessions & cost factors",
+        body: [
+          "The number of sessions and overall cost depend on the area being treated, the concern being addressed and your individual response. Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is Microwave Contouring a weight-loss treatment?",
+        a: "No. It addresses localised areas of fat, cellulite appearance and skin firmness rather than overall body weight. It is not a substitute for weight management, and a doctor assesses at consultation whether it suits your goals.",
+      },
+      {
+        q: "What device is used at Kaiteki?",
+        a: "Kaiteki delivers Microwave Contouring using the Onda platform (Coolwaves® technology). Your doctor can explain how it is applied to your specific area of concern.",
+      },
+      {
+        q: "Is it painful, and is there downtime?",
+        a: "Comfort varies between individuals; built-in cooling is intended to keep the session comfortable, and most people describe a warming sensation. Downtime is usually limited, but any temporary effects are explained at consultation.",
+      },
+      {
+        q: "How many sessions will I need?",
+        a: "It varies. A course of several sessions spaced a few weeks apart is common, but the plan depends on the area treated and how you respond. Your doctor will outline a realistic plan at consultation.",
+      },
+    ],
+  },
+  {
+    slug: "muscle-stimulation",
+    name: "Muscle Stimulation",
+    category: "Body & Slimming",
+    image: "/images/treatments/muscle-stimulation.jpg",
+    machineNames: ["Schwarzy (Em-Fit)"],
+    summary: "Electromagnetic muscle-stimulation technology used for body-toning concerns.",
+    leadAnswer:
+      "Muscle Stimulation at Kaiteki uses the Schwarzy (Em-Fit) platform, which delivers electromagnetic energy intended to induce muscle contractions beyond what voluntary exercise can achieve. It is considered for body-toning concerns as part of an individual plan. Suitability and results vary between individuals; a consultation is required.",
+    concerns: ["body-slimming"],
+    related: ["fat-freezing", "microwave-contouring"],
+    reviewedBy: "dr-yeong-bin",
+    lastReviewed: "2026-07-13",
+    kkliu: "KKLIU 0000/2026 (sample)",
+    kkliuExpiry: "2026-12-31",
+    sections: [
+      {
+        heading: "What is Muscle Stimulation?",
+        body: [
+          "Muscle Stimulation is a non-invasive treatment category that uses electromagnetic energy to induce repeated muscle contractions in a targeted area. At Kaiteki this is delivered using the Schwarzy (Em-Fit) platform.",
+          "It is generally considered for body-toning concerns in areas such as the abdomen, thighs or buttocks, rather than for fat reduction or weight loss. Whether it suits you depends on your goals, body area and medical history, which a doctor assesses during consultation.",
+        ],
+      },
+      {
+        heading: "How it works",
+        body: [
+          "The device delivers electromagnetic energy through an applicator placed over the target muscle group, inducing supramaximal contractions — a level of contraction that is difficult to achieve through voluntary exercise alone.",
+          "Repeated contractions during a session are intended to work the muscle in a concentrated way. Any change in muscle tone develops gradually over a course of sessions and varies between individuals; it is not a substitute for regular exercise.",
+        ],
+      },
+      {
+        heading: "What it may help address",
+        body: [
+          "Muscle Stimulation is commonly considered for the following concerns. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
+        ],
+        list: [
+          "Muscle tone and definition in targeted areas such as the abdomen",
+          "Firmness of the thighs or buttocks as part of a wider plan",
+          "Support alongside a fitness routine, rather than as a replacement for it",
+        ],
+      },
+      {
+        heading: "Suitability & who should avoid it",
+        body: [
+          "Suitability is assessed individually. Muscle Stimulation is not a weight-loss or fat-reduction treatment, and it is not a substitute for exercise. It may not be appropriate for people with certain implanted electronic devices, during pregnancy, or with some medical conditions affecting the treatment area.",
+          "Please share your full medical history at consultation so the doctor can advise safely.",
+        ],
+      },
+      {
+        heading: "The session at Kaiteki",
+        body: [
+          "A typical visit begins with a doctor consultation and assessment of the area and your goals. If appropriate, the applicator is positioned over the target muscle group and the device delivers a programme of contractions for a set period.",
+          "A course of several sessions spaced across a few weeks is common, but the plan is individual. Your doctor will explain what to expect for you.",
+        ],
+      },
+      {
+        heading: "Downtime & aftercare",
+        body: [
+          "There is generally no set downtime, though muscle soreness similar to that after exercise can occur following a session and typically settles within a few days. Most people return to usual activities immediately; your doctor will give guidance specific to you.",
+        ],
+      },
+      {
+        heading: "Risks & side effects",
+        body: [
+          "As with any medical procedure, Muscle Stimulation carries risks, which are explained during consultation. Temporary effects can include muscle soreness, mild redness or tenderness at the treated area. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor.",
+        ],
+      },
+      {
+        heading: "Sessions & cost factors",
+        body: [
+          "The number of sessions and overall cost depend on the area treated, your goals and your individual response. Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is Muscle Stimulation a substitute for exercise?",
+        a: "No. It is generally considered as a complement to, rather than a replacement for, regular exercise and a healthy lifestyle. A doctor assesses at consultation whether it is a reasonable addition to your routine.",
+      },
+      {
+        q: "Does it reduce fat?",
+        a: "Muscle Stimulation is aimed at muscle tone and contraction rather than fat reduction. If fat reduction is your goal, your doctor may discuss other options such as fat-freezing or microwave contouring as part of a wider plan.",
+      },
+      {
+        q: "Is there any downtime?",
+        a: "There is generally no set downtime. Muscle soreness similar to that after exercise can occur and typically settles within a few days. Your doctor will explain what to expect for you.",
+      },
+      {
+        q: "How many sessions will I need?",
+        a: "It varies. A course of several sessions spaced across a few weeks is common, but the plan depends on your goals and how you respond. Your doctor will outline a realistic plan at consultation.",
+      },
+    ],
+  },
+  {
+    slug: "dermal-fillers",
+    name: "Dermal Fillers",
+    category: "Injectables",
+    image: "/images/treatments/dermal-fillers.jpg",
+    machineNames: ["Juvederm", "Restylane", "Belotero"],
+    summary: "Hyaluronic-acid injectable fillers used to add volume and support facial contour.",
+    leadAnswer:
+      "Dermal fillers are hyaluronic-acid (HA) based injectables used by a doctor to add volume or support the shape of specific facial areas. At Kaiteki these include Juvederm, Restylane and Belotero. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
+    concerns: ["face-contouring", "fine-lines-wrinkles"],
+    related: ["skin-booster", "bio-stimulator"],
+    reviewedBy: "dr-chew-yuhhui",
+    lastReviewed: "2026-07-13",
+    kkliu: "KKLIU 0000/2026 (sample)",
+    kkliuExpiry: "2026-12-31",
+    sections: [
+      {
+        heading: "What are dermal fillers?",
+        body: [
+          "Dermal fillers are injectable gels based on hyaluronic acid (HA), a substance naturally present in skin. Unlike bio-stimulators, which work gradually by supporting the skin's own structural renewal, HA fillers are formulated to sit within the tissue and provide volume or support more directly once injected.",
+          "At Kaiteki this includes Juvederm, Restylane and Belotero — established HA filler ranges that differ in gel formulation and are used across different facial areas. Because it is an injectable, it is performed by a doctor, who assesses whether filler is appropriate for you at consultation.",
+        ],
+      },
+      {
+        heading: "How it works",
+        body: [
+          "HA fillers are injected into targeted layers of the skin or the tissue beneath it, where the gel is intended to provide volume or structural support at the treated site. HA is also naturally water-binding, so filler placed in the skin may contribute a degree of hydration.",
+          "Different formulations vary in thickness and how they behave in tissue, which is why the doctor selects a specific filler and technique for the area and outcome being considered. Any effect is present from the point of injection but continues to settle over the following days, and varies between individuals.",
+        ],
+      },
+      {
+        heading: "What it may help address",
+        body: [
+          "Dermal fillers are commonly considered for the following concerns. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
+        ],
+        list: [
+          "Volume loss in areas such as the cheeks or temples",
+          "Definition of the chin, jawline or nose bridge as part of facial contouring",
+          "Static lines such as nasolabial folds and marionette lines",
+          "Lip volume and shape, assessed individually",
+        ],
+      },
+      {
+        heading: "Suitability & who should avoid it",
+        body: [
+          "Dermal fillers are not suitable for everyone. As a general precaution, injectable treatments are usually avoided during pregnancy or breastfeeding, over active skin infection or open lesions in the treatment area, and where there is a known allergy to a formulation's ingredients.",
+          "Please share your full medical history, medications and any allergies at consultation so the doctor can advise safely and confirm whether filler, or another option, is appropriate for you.",
+        ],
+      },
+      {
+        heading: "The session at Kaiteki",
+        body: [
+          "A session begins with a consultation and facial assessment by a Kaiteki doctor, who discusses your goals and, if filler is appropriate, selects a suitable product for the area. The skin is cleansed and, where relevant, a topical numbing step is used for comfort.",
+          "The doctor then administers the injections into the assessed areas. Because this is an injectable treatment, it is carried out by a doctor throughout, and comfort measures can be discussed beforehand.",
+        ],
+      },
+      {
+        heading: "Downtime & aftercare",
+        body: [
+          "Downtime is generally minimal for most people. Mild swelling, redness, bruising or tenderness at the injection sites can occur and commonly settles within a few days to about a week; this varies between individuals.",
+          "Your doctor will give aftercare guidance specific to your treatment, which may include avoiding certain activities in the days afterwards. Follow the specific advice given and contact the clinic with any concerns.",
+        ],
+      },
+      {
+        heading: "Risks & side effects",
+        body: [
+          "As with any injectable treatment, dermal fillers carry potential risks and side effects. Commonly reported temporary effects include swelling, redness, bruising, tenderness or lumpiness at the injection site, which typically settle over time.",
+          "Less common but more serious effects can occur with any filler injection, and the full range of risks relevant to you is explained by the doctor during consultation before proceeding, so you can make an informed decision.",
+        ],
+      },
+      {
+        heading: "Sessions & cost factors",
+        body: [
+          "The amount of filler, the product used and overall cost depend on the area treated and your individual assessment. Cost is confirmed at consultation once a plan has been discussed, so it is not quoted online. To ask about a consultation, message us on WhatsApp.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "What is the difference between dermal fillers and bio-stimulators?",
+        a: "Dermal fillers are HA-based gels that provide volume or support once injected, while bio-stimulators are intended to work more gradually by supporting the skin's own structural renewal. Which is appropriate for you is assessed by the doctor at consultation.",
+      },
+      {
+        q: "How long do dermal fillers last?",
+        a: "This varies between individuals and depends on the product, the area treated and how your body processes it. Your doctor can discuss what is realistic for the specific filler and area being considered.",
+      },
+      {
+        q: "Is there any downtime?",
+        a: "Downtime is generally minimal. Mild swelling, bruising or tenderness may occur at the injection sites and usually settles within a few days to about a week, though this varies between individuals.",
+      },
+      {
+        q: "Are dermal fillers reversible?",
+        a: "Some HA fillers can, in certain circumstances, be managed with a dissolving agent, which your doctor can discuss if relevant. This is not guaranteed in every situation and is assessed individually.",
+      },
+    ],
+  },
+  {
+    slug: "facial-treatments",
+    name: "Facial Treatments",
+    category: "Facials",
+    image: "/images/treatments/facial-treatments.jpg",
+    machineNames: ["Hydrafacial", "Silkpeel", "Kaiteki Signature Facial"],
+    summary: "Clinic facials used to support skin cleansing, exfoliation and general skin quality.",
+    leadAnswer:
+      "Facial Treatments at Kaiteki are clinic-based facials — including Hydrafacial, Silkpeel and the Kaiteki Signature Facial — that combine cleansing, exfoliation and skin-conditioning steps to support general skin quality. Suitability and results vary between individuals; a consultation helps determine which option, if any, is appropriate for you.",
+    concerns: ["acne", "enlarged-pores", "pigmentation"],
+    related: ["pico-laser", "skin-booster"],
+    reviewedBy: "dr-yeong-bin",
+    lastReviewed: "2026-07-13",
+    kkliu: "KKLIU 0000/2026 (sample)",
+    kkliuExpiry: "2026-12-31",
+    sections: [
+      {
+        heading: "What are Facial Treatments?",
+        body: [
+          "Facial Treatments are clinic-based procedures that combine cleansing, exfoliation and skin-conditioning steps in a single session, generally with gentler technology than laser or energy-based devices. At Kaiteki this category includes Hydrafacial, Silkpeel and the Kaiteki Signature Facial.",
+          "They are typically considered for general skin maintenance and quality, and can be used alongside other treatments as part of a wider plan. Whether a facial is appropriate for you, and which one, is assessed by a doctor or trained clinician during consultation.",
+        ],
+      },
+      {
+        heading: "How it works",
+        body: [
+          "Hydrafacial uses a device-based process that cleanses, exfoliates and extracts debris from pores before infusing serums suited to the skin. Silkpeel combines exfoliation with simultaneous infusion of topical solutions. The Kaiteki Signature Facial is a clinic-designed combination facial tailored to general skin support.",
+          "Across these options, the aim is to clear surface build-up, refine texture and support skin hydration, rather than to address deeper structural concerns. The clinician selects the treatment and any add-on serums for your skin type. Results are generally supportive rather than corrective and vary between individuals.",
+        ],
+      },
+      {
+        heading: "What it may help address",
+        body: [
+          "Facial Treatments are commonly considered for the following concerns, generally as gentle, ongoing skin support. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
+        ],
+        list: [
+          "Congested pores and surface-level acne-prone skin",
+          "Dull or uneven-looking skin tone",
+          "Enlarged-pore appearance as part of routine skin maintenance",
+          "General hydration and skin-quality support between other treatments",
+        ],
+      },
+      {
+        heading: "Suitability & who should avoid it",
+        body: [
+          "Facial Treatments are generally gentle, but suitability is still assessed individually. They may not be appropriate over active skin infection, significant inflammation, or immediately after certain other procedures. Please share your skincare and medical history at consultation so the clinician can advise on a suitable option.",
+        ],
+      },
+      {
+        heading: "The session at Kaiteki",
+        body: [
+          "A session begins with a brief skin assessment to confirm which facial is appropriate. The skin is then cleansed, exfoliated and, depending on the option chosen, treated with a device-based extraction and serum-infusion step.",
+          "Sessions are generally comfortable, and most people can return to normal activities immediately afterwards. Your clinician will explain what to expect for the specific facial chosen.",
+        ],
+      },
+      {
+        heading: "Downtime & aftercare",
+        body: [
+          "Downtime is minimal to none for most people. Mild, temporary redness can occur immediately after some facials and usually settles within a few hours. Sun protection and gentle skincare are advised afterwards; your clinician will give guidance specific to your skin.",
+        ],
+      },
+      {
+        heading: "Risks & side effects",
+        body: [
+          "Facial Treatments are generally low-risk, but as with any procedure, mild temporary redness, sensitivity or, uncommonly, an irritation reaction to a serum can occur. These are discussed at consultation, particularly if you have known sensitivities.",
+        ],
+      },
+      {
+        heading: "Sessions & cost factors",
+        body: [
+          "Facial Treatments are often booked periodically as part of ongoing skin maintenance, though the suitable frequency depends on your skin and goals. Cost depends on the option chosen and is confirmed at consultation rather than quoted online. Message us on WhatsApp to arrange a consultation.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "What is the difference between Hydrafacial and Silkpeel?",
+        a: "Both combine exfoliation with serum infusion, but they use different device technology and formulations. Your clinician can advise which suits your skin type and concern at consultation.",
+      },
+      {
+        q: "Can facials replace treatments like Pico laser or skin boosters?",
+        a: "No. Facial Treatments are generally supportive and address surface-level skin quality, while lasers and injectables work at a different level and are used for more specific concerns. A doctor can advise how a facial fits into a wider plan, if at all.",
+      },
+      {
+        q: "Is there any downtime?",
+        a: "Downtime is minimal to none for most people. Mild, temporary redness can occur and usually settles within a few hours. Your clinician will give aftercare guidance for the option chosen.",
+      },
+      {
+        q: "How often should I get a facial?",
+        a: "This depends on your skin and goals, and is best discussed with your clinician, as there is no single frequency that suits everyone.",
+      },
+    ],
+  },
+  {
+    slug: "laser-hair-removal",
+    name: "Laser Hair Removal",
+    category: "Hair Removal",
+    image: "/images/treatments/laser-hair-removal.jpg",
+    machineNames: ["Alma (IPL + RF)"],
+    summary: "IPL and radiofrequency technology used to reduce unwanted hair over a course of sessions.",
+    leadAnswer:
+      "Laser Hair Removal at Kaiteki uses the Alma platform, which combines IPL (intense pulsed light) and radiofrequency energy, to target hair follicles over a course of sessions. Suitability and results vary between individuals and hair type; a consultation is required to assess whether it is appropriate for you.",
+    concerns: [],
+    related: ["exosome-therapy"],
+    reviewedBy: "dr-chew-yuhhui",
+    lastReviewed: "2026-07-13",
+    kkliu: "KKLIU 0000/2026 (sample)",
+    kkliuExpiry: "2026-12-31",
+    sections: [
+      {
+        heading: "What is Laser Hair Removal?",
+        body: [
+          "Laser Hair Removal is a treatment intended to reduce unwanted hair by targeting the hair follicle with light or energy-based technology. At Kaiteki this is delivered using the Alma platform, which combines IPL (intense pulsed light) with radiofrequency energy.",
+          "It is generally considered for areas such as the underarms, legs, arms or face. Whether it suits you depends on your hair type, skin tone and medical history, which a doctor or trained clinician assesses during consultation.",
+        ],
+      },
+      {
+        heading: "How it works",
+        body: [
+          "The device delivers IPL energy combined with radiofrequency to the treatment area. The light energy is intended to be absorbed by pigment in the hair follicle, while the radiofrequency component adds a further energy pathway to the follicle, which may support the treatment's effect on the hair-growth cycle.",
+          "Because hair follicles cycle through active and resting phases, a single session only affects follicles that are in an active growth phase at the time. A course of sessions over time is intended to address more of the follicles across their cycle. Results vary between individuals and hair and skin type.",
+        ],
+      },
+      {
+        heading: "What it may help address",
+        body: [
+          "Laser Hair Removal is commonly considered for reducing unwanted hair in the areas below. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
+        ],
+        list: [
+          "Underarm hair",
+          "Leg and arm hair",
+          "Facial hair, assessed individually",
+          "Other body areas, assessed at consultation",
+        ],
+      },
+      {
+        heading: "Suitability & who should avoid it",
+        body: [
+          "Suitability is assessed individually and depends partly on hair colour and skin tone, as light-based hair removal generally works best on hair with more pigment. It may not be appropriate during pregnancy, on recently tanned skin, over certain skin conditions, or with some medications that increase light sensitivity.",
+          "Please share your full medical and skincare history at consultation so the clinician can advise safely.",
+        ],
+      },
+      {
+        heading: "The session at Kaiteki",
+        body: [
+          "A typical visit begins with a consultation and assessment of the treatment area, hair type and skin tone. The area is cleansed and, if appropriate, the device is passed over the area to deliver the combined IPL and radiofrequency energy.",
+          "A course of several sessions spaced a few weeks apart is common, reflecting the hair-growth cycle, but the plan is individual. Your clinician will explain what to expect for you.",
+        ],
+      },
+      {
+        heading: "Downtime & aftercare",
+        body: [
+          "Downtime is usually minimal. Temporary redness, warmth or mild sensitivity in the treated area can occur and typically settles within a few hours to a day. Sun protection is advised on treated areas between sessions; your clinician will give aftercare guidance specific to you.",
+        ],
+      },
+      {
+        heading: "Risks & side effects",
+        body: [
+          "As with any energy-based procedure, Laser Hair Removal carries risks, which are explained during consultation. Temporary effects can include redness, swelling or changes in pigmentation. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained clinician.",
+        ],
+      },
+      {
+        heading: "Sessions & cost factors",
+        body: [
+          "The number of sessions and overall cost depend on the area treated, hair type and your individual response, reflecting the hair-growth cycle. Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "How many sessions will I need?",
+        a: "It varies with hair type, area and the hair-growth cycle. A course of several sessions spaced a few weeks apart is common, since a single session only affects hairs in an active growth phase. Your clinician will outline a realistic plan at consultation.",
+      },
+      {
+        q: "Is Laser Hair Removal permanent?",
+        a: "It is intended to reduce hair over a course of sessions rather than guarantee permanent removal, and some regrowth or maintenance sessions may be needed over time. Your clinician will explain what is realistic for your hair and skin type.",
+      },
+      {
+        q: "Is it suitable for all skin tones and hair colours?",
+        a: "Suitability depends partly on hair colour and skin tone, as light-based hair removal generally works best where there is more contrast between hair and skin pigment. A consultation assesses whether it suits your specific hair and skin type.",
+      },
+      {
+        q: "Is there any downtime?",
+        a: "Downtime is usually minimal. Temporary redness or warmth can occur and typically settles within a few hours to a day. Your clinician will give aftercare guidance specific to you.",
       },
     ],
   },
