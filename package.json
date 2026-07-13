@@ -11,7 +11,7 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "validate:content": "node scripts/validate-content.mjs"
+    "validate:content": "node --experimental-strip-types scripts/validate-content.mts"
   },
   "dependencies": {
     "next": "16.2.10",
