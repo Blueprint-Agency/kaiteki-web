@@ -11,9 +11,10 @@ export const treatments: Treatment[] = [
   {
     slug: "pico-laser",
     name: "Pico Laser",
-    category: "Pigment & Resurfacing",
+    category: "Lasers",
     image: "/images/treatments/pico-laser.webp",
     device: "PicoSure",
+    machineNames: ["Picosure", "Fotona PQX (StarWalker)", "PicoCare"],
     summary:
       "A picosecond laser used for pigmentation, dull skin tone and tattoo removal, suited to a range of Asian skin tones.",
     leadAnswer:
@@ -111,6 +112,7 @@ export const treatments: Treatment[] = [
     category: "Lifting & Tightening",
     image: "/images/treatments/hifu.png",
     device: "HIFU",
+    machineNames: ["Ultracel Q", "Lifthera"],
     summary: "Focused ultrasound used for non-surgical skin-lifting and tightening concerns.",
     leadAnswer:
       "HIFU (high-intensity focused ultrasound) is a non-surgical treatment that delivers focused ultrasound energy to deeper skin layers. It is commonly used for skin-lifting and tightening concerns. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
@@ -210,6 +212,7 @@ export const treatments: Treatment[] = [
     slug: "ultherapy",
     name: "Ultherapy",
     category: "Lifting & Tightening",
+    parent: "hifu",
     image: "/images/treatments/ultherapy.png",
     device: "Ultherapy",
     summary: "A focused-ultrasound platform used for lifting and tightening of the face and neck.",
@@ -303,7 +306,7 @@ export const treatments: Treatment[] = [
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
   },
-  { slug: "fotona-4d", name: "Fotona 4D", category: "Lifting & Tightening", image: "/images/treatments/fotona-4d.png", device: "Fotona", summary: "A laser approach combining several modes for skin-firming and refinement concerns.", leadAnswer: "Fotona 4D is a laser treatment that combines several modes to address firmness and skin-quality concerns from inside the mouth and on the skin surface. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.", concerns: ["aging", "face-lifting", "fine-lines-wrinkles"], related: ["hifu", "ultherapy"], reviewedBy: "dr-chew-yuhhui", lastReviewed: "2026-06-15", kkliu: "KKLIU 0000/2026 (sample)", kkliuExpiry: "2026-12-31",
+  { slug: "fotona-4d", name: "Fotona 4D", category: "Lasers", image: "/images/treatments/fotona-4d.png", device: "Fotona", summary: "A laser approach combining several modes for skin-firming and refinement concerns.", leadAnswer: "Fotona 4D is a laser treatment that combines several modes to address firmness and skin-quality concerns from inside the mouth and on the skin surface. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.", concerns: ["aging", "face-lifting", "fine-lines-wrinkles"], related: ["hifu", "ultherapy"], reviewedBy: "dr-chew-yuhhui", lastReviewed: "2026-06-15", kkliu: "KKLIU 0000/2026 (sample)", kkliuExpiry: "2026-12-31",
     sections: [
       {
         heading: "What is Fotona 4D?",
@@ -394,7 +397,8 @@ export const treatments: Treatment[] = [
   {
     slug: "onda",
     name: "Onda",
-    category: "Lifting & Tightening",
+    category: "Body & Slimming",
+    parent: "microwave-contouring",
     image: "/images/treatments/onda.png",
     device: "Onda",
     summary:
@@ -493,6 +497,7 @@ export const treatments: Treatment[] = [
     name: "Radiofrequency",
     category: "Lifting & Tightening",
     image: "/images/treatments/radiofrequency.png",
+    machineNames: ["BTL Exilis", "Wonderface"],
     summary: "Radiofrequency energy used to support skin-firmness and texture concerns.",
     leadAnswer:
       "Radiofrequency treatments use controlled energy to warm deeper skin layers, which may support firmness and texture concerns over a course of sessions. Suitability and results vary between individuals; a consultation is required.",
@@ -587,10 +592,11 @@ export const treatments: Treatment[] = [
   },
   {
     slug: "microneedling",
-    name: "Microneedling",
-    category: "Pigment & Resurfacing",
+    name: "RF Microneedling",
+    category: "Lifting & Tightening",
     image: "/images/treatments/microneedling.png",
     device: "Potenza",
+    machineNames: ["Sylfirm X", "Morpheus8", "Potenza"],
     summary: "A radiofrequency (RF) microneedling treatment used for texture, scarring and pore concerns.",
     leadAnswer:
       "Microneedling at Kaiteki is most often performed as radiofrequency (RF) microneedling, combining fine needles with radiofrequency energy to prompt a controlled skin-renewal response at multiple depths. It is commonly considered for texture, acne-scarring and pore concerns. Suitability and results vary between individuals; a consultation is required.",
@@ -696,7 +702,7 @@ export const treatments: Treatment[] = [
   {
     slug: "tattoo-removal",
     name: "Tattoo Removal",
-    category: "Pigment & Resurfacing",
+    category: "Lasers",
     image: "/images/treatments/tattoo-removal.jpg",
     device: "PicoSure",
     summary: "Laser tattoo removal, most often performed with a picosecond laser.",
@@ -794,7 +800,8 @@ export const treatments: Treatment[] = [
   {
     slug: "coolsculpting",
     name: "CoolSculpting",
-    category: "Body Contouring",
+    category: "Body & Slimming",
+    parent: "fat-freezing",
     image: "/images/treatments/coolsculpting.png",
     device: "CoolSculpting",
     summary: "A controlled-cooling treatment (cryolipolysis) for localised fat concerns.",
@@ -892,8 +899,9 @@ export const treatments: Treatment[] = [
   {
     slug: "fat-freezing",
     name: "Fat Freezing",
-    category: "Body Contouring",
+    category: "Body & Slimming",
     image: "/images/treatments/fat-freezing.jpg",
+    machineNames: ["Cooltech"],
     summary: "The general term for cryolipolysis for localised fat concerns.",
     leadAnswer:
       "Fat freezing (cryolipolysis) uses controlled cooling to target localised fat in specific areas, and is not a weight-loss treatment. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
@@ -988,9 +996,10 @@ export const treatments: Treatment[] = [
   {
     slug: "skin-booster",
     name: "Skin Booster",
-    category: "Regenerative & Injectables",
+    category: "Injectables",
     image: "/images/treatments/skin-booster.jpg",
     device: "Profhilo",
+    machineNames: ["Profhilo", "Rejuran", "Plinest/Newest", "Restylane Skinboosters", "Hydrodeluxe"],
     summary: "Injectable hydrating treatments used to support skin quality and hydration.",
     leadAnswer:
       "Skin boosters are injectable treatments that deliver hydrating ingredients into the skin to support skin quality and hydration over a course of sessions. Suitability and results vary between individuals; a consultation is required.",
@@ -1097,9 +1106,10 @@ export const treatments: Treatment[] = [
   {
     slug: "bio-stimulator",
     name: "Bio-stimulator",
-    category: "Regenerative & Injectables",
+    category: "Injectables",
     image: "/images/treatments/bio-stimulator.jpg",
     device: "Sculptra",
+    machineNames: ["Sculptra", "Ellanse", "Radiesse"],
     summary: "Injectable treatments used to support the skin's own structural renewal.",
     leadAnswer:
       "Bio-stimulator treatments are injectables intended to support the skin's own gradual structural renewal over time. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
@@ -1206,7 +1216,7 @@ export const treatments: Treatment[] = [
   {
     slug: "exosome-therapy",
     name: "Exosome Therapy",
-    category: "Regenerative & Injectables",
+    category: "Regenerative",
     image: "/images/treatments/exosome-therapy.jpg",
     summary:
       "A regenerative approach used alongside other treatments for skin and scalp concerns.",
@@ -1302,7 +1312,8 @@ export const treatments: Treatment[] = [
   {
     slug: "dermav",
     name: "DermaV",
-    category: "Regenerative & Injectables",
+    category: "Lasers",
+    parent: "vascular-pigment-laser",
     image: "/images/treatments/dermav.png",
     summary: "A vascular laser used for redness and selected vascular skin concerns.",
     leadAnswer:
@@ -1498,10 +1509,13 @@ export const treatments: Treatment[] = [
 ];
 
 export const treatmentCategories: Treatment["category"][] = [
+  "Lasers",
   "Lifting & Tightening",
-  "Pigment & Resurfacing",
-  "Body Contouring",
-  "Regenerative & Injectables",
+  "Body & Slimming",
+  "Injectables",
+  "Facials",
+  "Hair Removal",
+  "Regenerative",
   "Eyes",
 ];
 
@@ -1509,6 +1523,32 @@ export function treatmentBySlug(slug: string) {
   return treatments.find((t) => t.slug === slug);
 }
 
+/** Category (high-level) pages only, in source order. */
+export function categoryTreatments() {
+  return treatments.filter((t) => !t.parent);
+}
+
+/** Machine (low-level) pages that sit under a category. */
+export function machinesOf(categorySlug: string) {
+  return treatments.filter((t) => t.parent === categorySlug);
+}
+
+/** Resolve a nested path. `machine` undefined → a category page. */
+export function treatmentByPath(category: string, machine?: string) {
+  if (machine) {
+    const m = treatments.find((t) => t.slug === machine);
+    return m && m.parent === category ? m : undefined;
+  }
+  const c = treatments.find((t) => t.slug === category);
+  return c && !c.parent ? c : undefined;
+}
+
+/** Correct URL for any treatment (category or machine). */
+export function treatmentHref(t: Treatment) {
+  return t.parent ? `/treatments/${t.parent}/${t.slug}` : `/treatments/${t.slug}`;
+}
+
+/** Categories filtered to one menu group (hub + nav use this — categories only). */
 export function treatmentsByCategory(category: Treatment["category"]) {
-  return treatments.filter((t) => t.category === category);
+  return treatments.filter((t) => t.category === category && !t.parent);
 }
