@@ -5,20 +5,20 @@ import { ConcernCard } from "@/components/cards";
 import { concernsByGroup } from "@/content/data/concerns";
 
 export const metadata: Metadata = {
-  title: "Face & Body Concerns",
+  title: "Face Concerns",
   description:
-    "Doctor-reviewed guides to face and body concerns — contouring, lifting, ageing, body shape and hair loss.",
+    "Doctor-reviewed guides to face concerns — contouring, lifting and ageing.",
   alternates: { canonical: "/concerns/face" },
 };
 
 export default function FaceCategory() {
   return (
     <Container className="py-10 sm:py-12">
-      <Breadcrumbs items={[{ label: "Concerns", href: "/concerns" }, { label: "Face & Body" }]} />
+      <Breadcrumbs items={[{ label: "Concerns", href: "/concerns" }, { label: "Face" }]} />
       <div className="mt-8 max-w-2xl">
-        <h1 className="text-3xl font-bold text-espresso sm:text-4xl">Face &amp; body concerns</h1>
+        <h1 className="text-3xl font-bold text-espresso sm:text-4xl">Face concerns</h1>
         <p className="prose mt-4 text-lg leading-relaxed text-ink-700">
-          Firmness, contour and body-shape concerns are assessed individually. These guides
+          Firmness, contour and ageing concerns are assessed individually. These guides
           explain the non-surgical options a doctor may consider.
         </p>
       </div>

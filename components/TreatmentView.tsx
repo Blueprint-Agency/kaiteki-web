@@ -55,6 +55,14 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
             <ReviewByline doctorName={doctor.fullName} mmc={doctor.mmc} date={reviewedDate} />
           </div>
         )}
+        {t.machineNames && t.machineNames.length > 0 && (
+          <div className="mt-6">
+            <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-mocha">
+              Platforms &amp; devices
+            </p>
+            <p className="mt-1.5 text-sm text-ink-700">{t.machineNames.join(" · ")}</p>
+          </div>
+        )}
       </div>
 
       <div className="mt-12 grid gap-12 lg:grid-cols-[1fr_20rem] lg:gap-16">

@@ -1709,7 +1709,7 @@ export const treatments: Treatment[] = [
     machineNames: ["Schwarzy (Em-Fit)"],
     summary: "Electromagnetic muscle-stimulation technology used for body-toning concerns.",
     leadAnswer:
-      "Muscle Stimulation at Kaiteki uses the Schwarzy (Em-Fit) platform, which delivers electromagnetic energy intended to induce muscle contractions beyond what voluntary exercise can achieve. It is considered for body-toning concerns as part of an individual plan. Suitability and results vary between individuals; a consultation is required.",
+      "Muscle Stimulation at Kaiteki uses the Schwarzy (Em-Fit) platform, which delivers electromagnetic energy intended to induce muscle contractions that can be difficult to achieve through voluntary exercise alone. It is considered for body-toning concerns as part of an individual plan. Suitability and results vary between individuals; a consultation is required.",
     concerns: ["body-slimming"],
     related: ["fat-freezing", "microwave-contouring"],
     reviewedBy: "dr-yeong-bin",

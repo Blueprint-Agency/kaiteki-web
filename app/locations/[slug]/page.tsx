@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Ledger } from "@/components/Ledger";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { branches, branchBySlug } from "@/content/data/branches";
-import { treatmentBySlug } from "@/content/data/treatments";
+import { treatmentBySlug, treatmentHref } from "@/content/data/treatments";
 import { doctors } from "@/content/data/doctors";
 import { waForBranch } from "@/lib/wa";
 import { site } from "@/lib/site";
@@ -151,7 +151,7 @@ export default async function BranchPage({
           <ul className="flex flex-wrap gap-2">
             {offered.map((t) => (
               <li key={t!.slug}>
-                <Link href={`/treatments/${t!.slug}`} className="rounded-full border border-hairline bg-surface px-4 py-2 text-sm text-ink-700 transition-colors hover:border-mocha">
+                <Link href={treatmentHref(t!)} className="rounded-full border border-hairline bg-surface px-4 py-2 text-sm text-ink-700 transition-colors hover:border-mocha">
                   {t!.name}
                 </Link>
               </li>

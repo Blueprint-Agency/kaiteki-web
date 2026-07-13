@@ -8,7 +8,7 @@ import { Ledger } from "@/components/Ledger";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { ArrowRight } from "@/components/icons";
 import { doctors, doctorBySlug } from "@/content/data/doctors";
-import { treatments } from "@/content/data/treatments";
+import { treatments, treatmentHref } from "@/content/data/treatments";
 import { branchBySlug } from "@/content/data/branches";
 import { site } from "@/lib/site";
 import { waForDoctor } from "@/lib/wa";
@@ -154,7 +154,7 @@ export default async function DoctorPage({
             {reviewed.map((t) => (
               <li key={t.slug}>
                 <Link
-                  href={`/treatments/${t.slug}`}
+                  href={treatmentHref(t)}
                   className="group inline-flex items-center gap-1.5 text-ink-700 transition-colors hover:text-espresso"
                 >
                   {t.name}

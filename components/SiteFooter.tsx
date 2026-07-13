@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Container } from "./Container";
 import { site } from "@/lib/site";
-import { treatments } from "@/content/data/treatments";
+import { categoryTreatments, treatmentHref } from "@/content/data/treatments";
 import { concerns } from "@/content/data/concerns";
 import { branches } from "@/content/data/branches";
 
@@ -34,8 +34,8 @@ function Col({
 }
 
 export function SiteFooter() {
-  const topTreatments = treatments.slice(0, 8).map((t) => ({
-    href: `/treatments/${t.slug}`,
+  const topTreatments = categoryTreatments().slice(0, 8).map((t) => ({
+    href: treatmentHref(t),
     label: t.name,
   }));
   const topConcerns = concerns.slice(0, 8).map((c) => ({
