@@ -20,7 +20,7 @@ export const treatments: Treatment[] = [
     leadAnswer:
       "Pico laser is a picosecond-pulse laser treatment that delivers very short bursts of energy to the skin. It is commonly used for pigmentation concerns, uneven skin tone and tattoo removal. Suitability and the number of sessions vary between individuals; a consultation is required to assess whether it is appropriate for you.",
     concerns: ["pigmentation", "acne", "enlarged-pores"],
-    related: ["microneedling", "skin-booster", "tattoo-removal"],
+    related: ["microneedling", "skin-booster"],
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-06-20",
     kkliu: "KKLIU 0000/2026 (sample)",
@@ -696,104 +696,6 @@ export const treatments: Treatment[] = [
       {
         q: "How many sessions will I need?",
         a: "RF microneedling is usually planned as a course of sessions spaced a few weeks apart. The number and spacing vary between individuals and are decided with your clinician at consultation.",
-      },
-    ],
-  },
-  {
-    slug: "tattoo-removal",
-    name: "Tattoo Removal",
-    category: "Lasers",
-    image: "/images/treatments/tattoo-removal.jpg",
-    device: "PicoSure",
-    summary: "Laser tattoo removal, most often performed with a picosecond laser.",
-    leadAnswer:
-      "Tattoo removal at Kaiteki is most often performed with a picosecond laser that breaks down tattoo ink over a course of sessions. The number of sessions varies with ink type and depth; a consultation is required to assess suitability.",
-    concerns: [],
-    related: ["pico-laser"],
-    reviewedBy: "dr-chew-yuhhui",
-    lastReviewed: "2026-06-10",
-    kkliu: "KKLIU 0000/2026 (sample)",
-    kkliuExpiry: "2026-12-31",
-    sections: [
-      {
-        heading: "What is laser tattoo removal?",
-        body: [
-          "Laser tattoo removal is a procedure that uses focused laser energy to gradually break down the ink held in the skin. People consider it for many reasons, including a change in personal taste or simply wanting to move on from an earlier decision.",
-          "At Kaiteki it is most often performed with a picosecond laser. It is not an instant process: a tattoo is removed progressively across several sessions, and how a given tattoo responds varies between individuals. A doctor assesses your tattoo during consultation before any treatment is recommended.",
-        ],
-      },
-      {
-        heading: "How it works",
-        body: [
-          "The laser delivers very short pulses of concentrated energy that fragment the tattoo ink into much smaller particles. Once fragmented, these particles are gradually cleared by the body's own lymphatic (immune) system over the following weeks.",
-          "PicoSure is a picosecond aesthetic laser that delivers energy in trillionths of a second. It uses a 755nm wavelength that targets pigment while aiming to spare the surrounding skin. Because clearance happens gradually, the tattoo tends to fade in stages rather than disappear after a single session.",
-        ],
-      },
-      {
-        heading: "What affects the number of sessions",
-        body: [
-          "There is no fixed number of sessions that suits everyone. The tattoo is reviewed at each visit to track how it is fading and to decide whether further sessions are needed. Several factors influence how a tattoo responds:",
-        ],
-        list: [
-          "Ink colour — different colours absorb laser energy differently",
-          "Depth of the ink in the skin",
-          "Size of the tattoo",
-          "Location on the body",
-          "Age of the tattoo",
-        ],
-      },
-      {
-        heading: "Suitability & who should avoid it",
-        body: [
-          "Laser tattoo removal is not suitable for everyone, and suitability depends on factors such as your skin, the tattoo itself, and your medical history. A doctor assesses these during consultation.",
-          "Tell the clinic if you are pregnant or breastfeeding, have a history of keloid or abnormal scarring, are prone to pigmentation changes, have active skin infection or irritation over the area, or are taking medication that affects the skin or healing. These are discussed at consultation so the doctor can advise whether treatment is appropriate for you.",
-        ],
-      },
-      {
-        heading: "The session at Kaiteki",
-        body: [
-          "Your first visit is a consultation. A doctor examines the tattoo, reviews your medical history and expectations, and explains what a course of treatment may involve for you specifically.",
-          "During a session, the laser is passed over the tattoo to fragment the ink. Sessions are spaced apart to allow the skin to heal and the body to clear the fragmented particles between visits. Follow-up appointments are used to review progress and decide whether additional sessions are needed.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
-          "The treated area may feel sore and can appear red or swollen for a short period after a session. Your clinician will give you aftercare guidance tailored to your skin and the treated area.",
-          "General aftercare usually includes keeping the area clean, avoiding picking or scratching, protecting it from sun exposure, and applying sunscreen once the skin has settled. Following the aftercare advice supports healing between sessions.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
-        body: [
-          "As with any laser procedure, laser tattoo removal carries potential risks and side effects. Common short-term effects include redness, swelling, tenderness, blistering or scabbing over the treated area.",
-          "Less common effects can include temporary changes in skin pigmentation (lighter or darker patches) and, in some cases, scarring. Individual factors such as skin type and the tattoo itself affect these risks. All risks and side effects relevant to you are explained by the doctor at consultation before treatment begins.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "Because the number of sessions varies with ink colour, depth, size, location and the age of the tattoo, cost is discussed at consultation once a doctor has assessed your tattoo and outlined a suitable plan.",
-          "To ask a question or arrange an assessment, message the Kaiteki team on WhatsApp for a free consultation.",
-        ],
-      },
-    ],
-    faqs: [
-      {
-        q: "Can a tattoo be fully removed?",
-        a: "It varies between individuals and cannot be predicted before a consultation. Some tattoos fade substantially over a course of sessions, while others respond less completely depending on ink colour, depth, size, location and age. A doctor assesses your tattoo during consultation and explains what a course of treatment may realistically involve for you.",
-      },
-      {
-        q: "How many sessions will I need?",
-        a: "There is no fixed number. The tattoo is reviewed at each visit and sessions continue until you and the doctor are satisfied with the fading. The total varies from person to person, which is why an in-person assessment is needed before a plan is set.",
-      },
-      {
-        q: "Is laser tattoo removal painful?",
-        a: "There may be some discomfort during treatment. People describe the sensation differently — some compare it to a rubber band snapping against the skin. The treated area may feel sore afterwards. Your clinician will discuss comfort measures at your appointment.",
-      },
-      {
-        q: "How long do the results last?",
-        a: "Once ink has been cleared by the body it does not return, so fading achieved through treatment is generally lasting. Individual results vary, and occasional follow-up sessions may be advised. Suitability and expectations are discussed at consultation.",
       },
     ],
   },
