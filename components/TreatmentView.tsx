@@ -1,41 +1,19 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import { Container } from "@/components/Container";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { Breadcrumbs, type Crumb } from "@/components/Breadcrumbs";
 import { LeadAnswer } from "@/components/LeadAnswer";
 import { ReviewByline, Ledger } from "@/components/Ledger";
 import { Faq } from "@/components/Faq";
 import { Disclaimer } from "@/components/Disclaimer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { ArrowRight } from "@/components/icons";
-import { treatments, treatmentBySlug } from "@/content/data/treatments";
+import { treatmentBySlug, machinesOf, treatmentHref } from "@/content/data/treatments";
 import { concernBySlug } from "@/content/data/concerns";
 import { branches } from "@/content/data/branches";
 import { doctorBySlug } from "@/content/data/doctors";
 import { waForTreatment } from "@/lib/wa";
-
-export const dynamicParams = false;
-
-export function generateStaticParams() {
-  return treatments.map((t) => ({ slug: t.slug }));
-}
-
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
-  const { slug } = await params;
-  const t = treatmentBySlug(slug);
-  if (!t) return {};
-  return {
-    title: `${t.name} in Malaysia — What It Involves, Suitability & Branches`,
-    description: t.summary,
-    alternates: { canonical: `/treatments/${t.slug}` },
-  };
-}
+import type { Treatment } from "@/lib/types";
 
 const deviceLogo: Record<string, string> = {
   PicoSure: "logob_picosure.png",
@@ -48,18 +26,11 @@ const deviceLogo: Record<string, string> = {
   Potenza: "logob_potenza.png",
 };
 
-export default async function TreatmentPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
-  const { slug } = await params;
-  const t = treatmentBySlug(slug);
-  if (!t) notFound();
-
+export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
   const doctor = doctorBySlug(t.reviewedBy);
   const offering = branches.filter((b) => b.treatments.includes(t.slug));
   const related = t.related.map((r) => treatmentBySlug(r)).filter(Boolean);
+  const machines = machinesOf(t.slug);
   const logo = t.device ? deviceLogo[t.device] : undefined;
   const reviewedDate = new Date(t.lastReviewed).toLocaleDateString("en-GB", {
     day: "numeric",
@@ -69,7 +40,7 @@ export default async function TreatmentPage({
 
   return (
     <Container className="py-10 sm:py-12">
-      <Breadcrumbs items={[{ label: "Treatments", href: "/treatments" }, { label: t.name }]} />
+      <Breadcrumbs items={trail} />
 
       <div className="mt-8 max-w-3xl">
         <p className="text-sm font-medium text-accent">{t.category}</p>
@@ -140,6 +111,24 @@ export default async function TreatmentPage({
             </div>
           )}
 
+          {machines.length > 0 && (
+            <section className="mt-12">
+              <h2 className="mb-4 text-xl font-bold text-espresso sm:text-2xl">Devices &amp; platforms</h2>
+              <ul className="flex flex-wrap gap-3">
+                {machines.map((m) => (
+                  <li key={m.slug}>
+                    <Link
+                      href={treatmentHref(m)}
+                      className="inline-flex items-center gap-1.5 rounded-full border border-hairline bg-surface px-4 py-2 text-sm font-medium text-ink-700 transition-colors hover:border-mocha hover:text-espresso"
+                    >
+                      {m.name} <ArrowRight size={14} className="text-accent" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
           {t.faqs && (
             <section className="mt-12">
               <h2 className="mb-4 text-xl font-bold text-espresso sm:text-2xl">Frequently asked questions</h2>
@@ -199,7 +188,7 @@ export default async function TreatmentPage({
               <ul className="space-y-1.5">
                 {related.map((r) => (
                   <li key={r!.slug}>
-                    <Link href={`/treatments/${r!.slug}`} className="inline-flex items-center gap-1.5 text-sm text-ink-700 transition-colors hover:text-espresso">
+                    <Link href={treatmentHref(r!)} className="inline-flex items-center gap-1.5 text-sm text-ink-700 transition-colors hover:text-espresso">
                       {r!.name} <ArrowRight size={14} className="text-accent" />
                     </Link>
                   </li>
