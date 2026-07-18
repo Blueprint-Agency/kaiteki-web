@@ -16,13 +16,6 @@ import { concernGroups, concernsByGroup } from "@/content/data/concerns";
 
 type Mega = "treatments" | "concerns" | null;
 
-const groupHref: Record<string, string> = {
-  Skin: "/concerns/skin",
-  Face: "/concerns/face",
-  Eyes: "/concerns/eyes",
-  "Hair & Body": "/concerns/hair-body",
-};
-
 export function SiteHeader() {
   const [mega, setMega] = useState<Mega>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -121,12 +114,48 @@ export function SiteHeader() {
                     />
                   </button>
                 </div>
+              ) : item.dropdown ? (
+                // Compact hover/focus dropdown (e.g. About) — CSS-only, no panel state.
+                <div
+                  key={item.label}
+                  className="group relative flex items-center"
+                  onMouseEnter={() => setMega(null)}
+                >
+                  <Link
+                    href={item.href}
+                    className="rounded-md py-2 pl-3 pr-1 text-sm font-medium text-ink-700 transition-colors hover:text-espresso group-hover:text-espresso group-focus-within:text-espresso"
+                  >
+                    {item.label}
+                  </Link>
+                  <span className="py-2 pl-1 pr-3" aria-hidden>
+                    <ChevronDown
+                      size={16}
+                      className="text-accent transition-transform group-hover:rotate-180 group-focus-within:rotate-180"
+                    />
+                  </span>
+                  <div
+                    className={`invisible absolute left-0 top-full max-h-[75vh] translate-y-1 overflow-y-auto rounded-xl border border-hairline bg-surface p-1.5 opacity-0 shadow-lg transition-[opacity,transform] duration-150 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100 ${
+                      item.dropdown.length > 6 ? "grid w-[24rem] grid-cols-2 gap-x-1" : "w-52"
+                    }`}
+                  >
+                    {item.dropdown.map((d) => (
+                      <Link
+                        key={d.href}
+                        href={d.href}
+                        className="block rounded-lg px-3 py-2 text-sm text-ink-700 transition-colors hover:bg-tint hover:text-espresso"
+                      >
+                        {d.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
               ) : (
                 <Link
                   key={item.label}
                   href={item.href}
                   className="rounded-md px-3 py-2 text-sm font-medium text-ink-700 transition-colors hover:text-espresso"
                   onMouseEnter={() => setMega(null)}
+                  {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 >
                   {item.label}
                 </Link>
@@ -173,17 +202,20 @@ export function SiteHeader() {
 
       {/* Mega panels (desktop) — links are in the server HTML, crawlable */}
       {mega && (
-        <div className="absolute inset-x-0 top-full hidden border-b border-hairline bg-surface shadow-lg lg:block">
+        <div
+          key={mega}
+          className="mega-in absolute inset-x-0 top-full hidden border-b border-hairline bg-surface shadow-lg lg:block"
+        >
           <Container>
             <div className="py-8">
               {mega === "treatments" ? (
-                <div className="grid grid-cols-2 gap-x-8 gap-y-6 md:grid-cols-3 lg:grid-cols-5">
+                <div className="grid grid-cols-2 gap-x-8 gap-y-5 md:grid-cols-3 lg:grid-cols-5">
                   {treatmentCategories.map((cat) => (
                     <div key={cat}>
-                      <p className="mb-3 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-accent">
+                      <p className="mb-2.5 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-accent">
                         {cat}
                       </p>
-                      <ul className="space-y-2">
+                      <ul className="space-y-1.5">
                         {treatmentsByCategory(cat).map((t) => (
                           <li key={t.slug}>
                             <Link
@@ -199,16 +231,13 @@ export function SiteHeader() {
                   ))}
                 </div>
               ) : (
-                <div className="grid grid-cols-2 gap-x-8 gap-y-6">
+                <div className="grid grid-cols-2 gap-x-8 gap-y-5 md:grid-cols-3 lg:grid-cols-5">
                   {concernGroups.map((g) => (
                     <div key={g}>
-                      <Link
-                        href={groupHref[g]}
-                        className="mb-3 inline-block text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-accent hover:text-espresso"
-                      >
+                      <p className="mb-2.5 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-accent">
                         {g}
-                      </Link>
-                      <ul className="space-y-2">
+                      </p>
+                      <ul className="space-y-1.5">
                         {concernsByGroup(g).map((c) => (
                           <li key={c.slug}>
                             <Link
@@ -263,16 +292,42 @@ export function SiteHeader() {
               </MobileGroup>
               {primaryNav
                 .filter((i) => !i.mega)
-                .map((i) => (
-                  <Link
-                    key={i.label}
-                    href={i.href}
-                    onClick={() => setMobileOpen(false)}
-                    className="border-b border-hairline py-4 text-base font-medium text-espresso"
-                  >
-                    {i.label}
-                  </Link>
-                ))}
+                .map((i) =>
+                  i.dropdown ? (
+                    <details key={i.label} className="group border-b border-hairline">
+                      <summary className="flex cursor-pointer list-none items-center justify-between py-4 text-base font-medium text-espresso [&::-webkit-details-marker]:hidden">
+                        {i.label}
+                        <ChevronDown
+                          size={20}
+                          className="text-accent transition-transform group-open:rotate-180"
+                        />
+                      </summary>
+                      <ul className="pb-3">
+                        {i.dropdown.map((d) => (
+                          <li key={d.href}>
+                            <Link
+                              href={d.href}
+                              onClick={() => setMobileOpen(false)}
+                              className="block py-2 text-sm text-ink-700"
+                            >
+                              {d.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </details>
+                  ) : (
+                    <Link
+                      key={i.label}
+                      href={i.href}
+                      onClick={() => setMobileOpen(false)}
+                      className="border-b border-hairline py-4 text-base font-medium text-espresso"
+                      {...(i.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                    >
+                      {i.label}
+                    </Link>
+                  )
+                )}
               <a
                 href={waGeneric}
                 className="mt-6 flex items-center justify-center gap-2 rounded-full bg-cta px-5 py-3.5 text-sm font-semibold text-white"

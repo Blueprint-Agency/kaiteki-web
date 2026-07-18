@@ -10,7 +10,7 @@ function Col({
   links,
 }: {
   title: string;
-  links: { href: string; label: string }[];
+  links: { href: string; label: string; external?: boolean }[];
 }) {
   return (
     <div>
@@ -23,6 +23,7 @@ function Col({
             <Link
               href={l.href}
               className="block py-1 text-sm text-ink-on-dark/80 transition-colors hover:text-ink-on-dark"
+              {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
             >
               {l.label}
             </Link>
@@ -71,12 +72,12 @@ export function SiteFooter() {
           <Col
             title="Company"
             links={[
-              { href: "/technology", label: "Products & Technology" },
+              { href: "/our-story", label: "About us" },
               { href: "/doctors", label: "Doctors" },
-              { href: "/blog", label: "Blog" },
-              { href: "/contact", label: "Contact" },
+              { href: "/technology", label: "Products & Technology" },
+              { href: "/skincare", label: "Skincare" },
+              { href: "https://blog.kaiteki.my", label: "Blog", external: true },
               { href: "/privacy", label: "Privacy" },
-              { href: "/terms", label: "Terms" },
             ]}
           />
         </div>
