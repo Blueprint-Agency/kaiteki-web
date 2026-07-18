@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import type { CSSProperties } from "react";
 import Link from "next/link";
 import { Container } from "@/components/Container";
@@ -13,11 +12,14 @@ import { BranchStrip } from "@/components/BranchStrip";
 import { ClosingCta } from "@/components/ClosingCta";
 import { ArrowRight, MapPin } from "@/components/icons";
 import { site } from "@/lib/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
+  title: "Kaiteki Skin Aesthetic Clinic — Doctor-Led Care in Malaysia",
   description:
-    "Kaiteki Skin Aesthetic Clinic — an MOH-licensed skin & aesthetic clinic with 9 branches across Malaysia. Doctor-led care for skin, ageing and body concerns. Book a free consultation on WhatsApp.",
-};
+    "Kaiteki Skin Aesthetic Clinic — MOH-licensed, doctor-led skin and aesthetic care at 9 branches across Malaysia. Book a free consultation on WhatsApp.",
+  path: "/",
+});
 
 // stagger index helper (typed CSS custom property)
 const si = (i: number): CSSProperties => ({ "--i": Math.min(i, 8) } as CSSProperties);
@@ -83,11 +85,11 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* Post-hero narrative: the doctors who stand behind it → concerns →
-          treatments → why (E-E-A-T) → recognition → branches → invitation. */}
-      <DoctorsFeature />
+      {/* Post-hero narrative: concerns → treatments → the doctors who stand
+          behind them → why (E-E-A-T) → recognition → branches → invitation. */}
       <ConcernsMosaic />
       <TreatmentsMenu />
+      <DoctorsFeature />
       <WhyKaiteki />
       <RecognitionCabinet />
       <BranchStrip />

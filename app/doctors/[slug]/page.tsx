@@ -7,11 +7,14 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Ledger } from "@/components/Ledger";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { ArrowRight, Instagram, LinkedIn } from "@/components/icons";
+import { JsonLd } from "@/components/JsonLd";
 import { doctors, doctorBySlug } from "@/content/data/doctors";
 import { treatments, treatmentHref } from "@/content/data/treatments";
 import { branchBySlug } from "@/content/data/branches";
 import { site } from "@/lib/site";
 import { waForDoctor } from "@/lib/wa";
+import { pageMeta } from "@/lib/seo";
+import { physicianNode } from "@/lib/schema";
 
 export const dynamicParams = false;
 
@@ -28,11 +31,14 @@ export async function generateMetadata({
   const d = doctorBySlug(slug);
   if (!d) return {};
   const role = d.role ?? "Aesthetic Physician";
-  return {
-    title: `${d.fullName} — ${role} at Kaiteki`,
-    description: `${d.fullName}, ${role} at Kaiteki Skin Aesthetic Clinic. Credentials: ${d.credentials}. Book a free consultation on WhatsApp.`,
-    alternates: { canonical: `/doctors/${d.slug}` },
-  };
+  return pageMeta({
+    title: d.seoTitle ?? d.fullName,
+    description:
+      d.seoDescription ??
+      `${d.fullName}, ${role} at Kaiteki Skin Aesthetic Clinic. Credentials: ${d.credentials}. Book a free consultation on WhatsApp.`,
+    path: `/doctors/${d.slug}`,
+    image: d.photo,
+  });
 }
 
 export default async function DoctorPage({
@@ -52,28 +58,14 @@ export default async function DoctorPage({
     .map((b) => branchBySlug(b)?.name)
     .filter((name): name is string => Boolean(name));
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Physician",
-    name: d.fullName,
-    image: `${site.url}${d.photo}`,
-    url: `${site.url}/doctors/${d.slug}`,
-    jobTitle: role,
-    ...(d.interests.length > 0 ? { knowsAbout: d.interests } : {}),
-    worksFor: {
-      "@type": "MedicalClinic",
-      name: site.name,
-      url: site.url,
-    },
-  };
-
   return (
     <Container className="py-10 sm:py-12">
+      <JsonLd data={physicianNode(d, branchNames)} />
       <Breadcrumbs items={[{ label: "Doctors", href: "/doctors" }, { label: d.fullName }]} />
 
       <div className="mt-8 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
         {/* Portrait */}
-        <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl border border-hairline bg-tint lg:mx-0">
+        <div className="relative mx-auto aspect-[2/3] w-full max-w-sm overflow-hidden rounded-2xl border border-hairline bg-tint lg:mx-0">
           <Image
             src={d.photo}
             alt={d.fullName}
@@ -213,11 +205,6 @@ export default async function DoctorPage({
         MMC registration numbers are pending confirmation and will be added to each profile
         before launch.
       </p>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
     </Container>
   );
 }

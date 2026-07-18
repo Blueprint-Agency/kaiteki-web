@@ -1,23 +1,16 @@
-import type { Metadata } from "next";
-import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ConcernCard } from "@/components/cards";
+import { CardRow } from "@/components/CardRow";
 import { concernGroups, concernsByGroup } from "@/content/data/concerns";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Concerns",
+export const metadata = pageMeta({
+  title: "Skin, Ageing & Body Concerns Guide | Kaiteki Clinic",
   description:
-    "Understand your skin, ageing and body concerns first — plain-language, doctor-reviewed guides to the options that may help.",
-  alternates: { canonical: "/concerns" },
-};
-
-const groupHref: Record<string, string> = {
-  Skin: "/concerns/skin",
-  Face: "/concerns/face",
-  Eyes: "/concerns/eyes",
-  "Hair & Body": "/concerns/hair-body",
-};
+    "Explore skin, ageing and body concerns with doctor-reviewed guides from Kaiteki Clinic. Understand your options first — book a free consultation on WhatsApp.",
+  path: "/concerns",
+});
 
 export default function ConcernsHub() {
   return (
@@ -31,19 +24,17 @@ export default function ConcernsHub() {
         </p>
       </div>
       <div className="mt-12 space-y-12">
-        {concernGroups.map((g) => (
+        {concernGroups.map((g, gi) => (
           <section key={g}>
-            <div className="mb-5 flex items-center justify-between">
+            <div className="mb-5">
               <h2 className="text-sm font-semibold uppercase tracking-[0.1em] text-mocha">{g}</h2>
-              <Link href={groupHref[g]} className="text-sm font-medium text-accent hover:text-espresso">
-                View {g} overview →
-              </Link>
             </div>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {concernsByGroup(g).map((c) => (
-                <ConcernCard key={c.slug} c={c} />
+            <CardRow>
+              {concernsByGroup(g).map((c, i) => (
+                // First row of the first group is above the fold → eager-load (LCP).
+                <ConcernCard key={c.slug} c={c} priority={gi === 0 && i < 3} />
               ))}
-            </div>
+            </CardRow>
           </section>
         ))}
       </div>
