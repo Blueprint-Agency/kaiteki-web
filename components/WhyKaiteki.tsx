@@ -26,7 +26,7 @@ const reasons = [
 
 export function WhyKaiteki() {
   return (
-    <section id="why" className="relative overflow-hidden bg-gradient-to-b from-tint to-page">
+    <section id="why" className="relative overflow-hidden bg-tint">
       <Dandelion className="opacity-70" />
       <Container className="reveal relative py-16 sm:py-20">
         <div className="mx-auto max-w-2xl text-center">

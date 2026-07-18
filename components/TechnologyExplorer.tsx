@@ -1,11 +1,10 @@
 "use client";
 
-import { useMemo, useState, type CSSProperties } from "react";
+import { useMemo, useState } from "react";
 import { TechnologyCard } from "./cards";
+import { CardRow } from "./CardRow";
 import { technology } from "@/content/data/technology";
 import type { NavCategory, TechType } from "@/lib/types";
-
-const si = (i: number): CSSProperties => ({ "--i": Math.min(i, 8) } as CSSProperties);
 
 const TYPE_LABEL: Record<TechType, string> = { device: "Devices", injectable: "Injectables" };
 
@@ -72,11 +71,11 @@ export function TechnologyExplorer() {
       </div>
 
       {shown.length > 0 ? (
-        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {shown.map((x, i) => (
-            <TechnologyCard key={x.slug} x={x} className="reveal" style={si(i)} />
+        <CardRow className="mt-8">
+          {shown.map((x) => (
+            <TechnologyCard key={x.slug} x={x} />
           ))}
-        </div>
+        </CardRow>
       ) : (
         <p className="mt-10 text-ink-500">No matching devices or injectables.</p>
       )}

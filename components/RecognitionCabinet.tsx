@@ -21,13 +21,13 @@ const PARTNERS = "Merz · Allergan · Neauvia · Galderma · Neoasia · Elogio";
  */
 export function RecognitionCabinet() {
   return (
-    <section id="recognition" className="relative overflow-hidden bg-gradient-to-b from-page to-tint">
+    <section id="recognition" className="relative overflow-hidden bg-page">
       {/* A soft porcelain arch rising behind the wall, echoing the hero silhouette */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 h-[62%] rounded-b-[50%] bg-gradient-to-b from-porcelain/50 to-transparent"
       />
-      <Container className="relative py-16 sm:py-24">
+      <Container className="reveal relative py-16 sm:py-24">
         <div className="grid gap-x-14 gap-y-12 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.55fr)] lg:items-start">
           {/* Editorial column — the story + the ledger of record */}
           <div className="lg:sticky lg:top-28">

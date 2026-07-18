@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Breadcrumbs, type Crumb } from "@/components/Breadcrumbs";
 import { LeadAnswer } from "@/components/LeadAnswer";
-import { ReviewByline, Ledger } from "@/components/Ledger";
+import { Ledger } from "@/components/Ledger";
 import { Faq } from "@/components/Faq";
 import { Disclaimer } from "@/components/Disclaimer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
@@ -64,11 +64,6 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
         <div className="mt-6">
           <LeadAnswer>{t.leadAnswer}</LeadAnswer>
         </div>
-        {doctor && (
-          <div className="mt-6 max-w-md">
-            <ReviewByline doctorName={doctor.fullName} mmc={doctor.mmc} date={reviewedDate} />
-          </div>
-        )}
       </div>
 
       <div className="mt-12 grid gap-12 lg:grid-cols-[1fr_20rem] lg:gap-16">

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Breadcrumbs, type Crumb } from "@/components/Breadcrumbs";
-import { ReviewByline, Ledger } from "@/components/Ledger";
+import { Ledger } from "@/components/Ledger";
 import { Faq } from "@/components/Faq";
 import { Disclaimer } from "@/components/Disclaimer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
@@ -86,11 +86,6 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
           {x.name}
         </h1>
         <p className="prose mt-6 max-w-[65ch] text-lg leading-relaxed text-ink-700">{x.summary}</p>
-        {doctor && reviewedDate && (
-          <div className="mt-6 max-w-md">
-            <ReviewByline doctorName={doctor.fullName} mmc={doctor.mmc} date={reviewedDate} />
-          </div>
-        )}
       </div>
 
       <div className="mt-12 grid gap-12 lg:grid-cols-[1fr_20rem] lg:gap-16">
