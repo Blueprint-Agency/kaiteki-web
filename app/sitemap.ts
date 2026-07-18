@@ -17,25 +17,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/treatments",
     "/technology",
     "/concerns",
-    "/concerns/skin",
-    "/concerns/face",
-    "/concerns/eyes",
-    "/concerns/hair-body",
     "/locations",
     "/skincare",
-    "/blog",
-    "/contact",
+    "/our-story",
     "/privacy",
-    "/terms",
   ];
 
-  const dynamicPaths = [
-    ...treatments.map(treatmentHref),
-    ...doctors.map((d) => `/doctors/${d.slug}`),
-    ...concerns.map((c) => `/concerns/${c.slug}`),
-    ...branches.map((b) => `/locations/${b.slug}`),
-    ...technology.map((t) => `/technology/${t.slug}`),
+  // lastModified only where the data carries a real review date — a faked
+  // lastmod trains crawlers to distrust the field, so doctors/branches/static
+  // (no date) are emitted without one.
+  const dynamicEntries: { path: string; lastmod?: string }[] = [
+    ...treatments.map((t) => ({ path: treatmentHref(t), lastmod: t.lastReviewed })),
+    ...doctors.map((d) => ({ path: `/doctors/${d.slug}` })),
+    ...concerns.map((c) => ({ path: `/concerns/${c.slug}`, lastmod: c.lastReviewed })),
+    ...branches.map((b) => ({ path: `/locations/${b.slug}` })),
+    ...technology.map((t) => ({ path: `/technology/${t.slug}`, lastmod: t.lastReviewed })),
   ];
 
-  return [...staticPaths, ...dynamicPaths].map((path) => ({ url: url(path) }));
+  return [
+    ...staticPaths.map((path) => ({ path } as { path: string; lastmod?: string })),
+    ...dynamicEntries,
+  ].map(({ path, lastmod }) => ({
+    url: url(path),
+    ...(lastmod ? { lastModified: lastmod } : {}),
+  }));
 }
