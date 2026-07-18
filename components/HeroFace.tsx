@@ -60,11 +60,11 @@ const spots: Spot[] = [
     name: "Enlarged pores",
     note: "Texture and visible pores — often paired with hydration care.",
     icon: <Droplet size={18} />,
-    x: 44.5,
+    x: 40,
     y: 36,
     side: "left",
     cardClass:
-      "left-[44.5%] top-[calc(36%+16px)] -translate-x-1/2 w-56 sm:translate-x-0 sm:-translate-y-1/2 sm:left-auto sm:right-[calc(55.5%+44px)] sm:top-[36%] sm:w-64",
+      "left-[40%] top-[calc(36%+16px)] -translate-x-1/2 w-56 sm:translate-x-0 sm:-translate-y-1/2 sm:left-auto sm:right-[calc(60%+44px)] sm:top-[36%] sm:w-64",
   },
   {
     slug: "face-contouring",

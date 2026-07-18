@@ -3,8 +3,9 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import { ArrowRight, MapPin, WhatsApp } from "./icons";
 import { ExpandableText } from "./ExpandableText";
-import type { Treatment, Concern, Branch, Doctor, Product } from "@/lib/types";
+import type { Treatment, Concern, Branch, Doctor, Product, Technology } from "@/lib/types";
 import { treatmentHref } from "@/content/data/treatments";
+import { treatmentsOfTechnology } from "@/content/data/relations";
 import { waForProduct } from "@/lib/wa";
 
 // Cards now have a gentle lift + soft warm shadow on hover (docs/06 §3 motion,
@@ -64,7 +65,19 @@ export function TreatmentMotif({ t, className = "" }: { t: Treatment; className?
 export function TreatmentCard({ t, className = "", style }: { t: Treatment } & Extra) {
   return (
     <Link href={treatmentHref(t)} style={style} className={`${cardBase} overflow-hidden ${className}`}>
-      <TreatmentMotif t={t} className="aspect-[16/10]" />
+      {t.image ? (
+        <div className="relative aspect-[16/10] overflow-hidden bg-tint">
+          <Image
+            src={t.image}
+            alt={t.name}
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+          />
+        </div>
+      ) : (
+        <TreatmentMotif t={t} className="aspect-[16/10]" />
+      )}
       <div className="flex flex-1 flex-col p-5">
         <h3 className="text-lg font-semibold text-espresso decoration-mocha/60 underline-offset-4 group-hover:underline">
           {t.name}
@@ -338,5 +351,52 @@ export function ProductCard({ p, className = "", style }: { p: Product } & Extra
         </div>
       </div>
     </div>
+  );
+}
+
+const TECH_TYPE_LABEL: Record<Technology["type"], string> = {
+  device: "Device",
+  injectable: "Injectable",
+};
+
+/** Photo-card for a device/injectable — mirrors TreatmentCard (image or motif
+ *  fallback, name, a type badge, and the treatment(s) it powers). Links to the
+ *  item's own /technology/[slug] page. */
+export function TechnologyCard({ x, className = "", style }: { x: Technology } & Extra) {
+  const powers = treatmentsOfTechnology(x.slug);
+  return (
+    <Link href={`/technology/${x.slug}`} style={style} className={`${cardBase} overflow-hidden ${className}`}>
+      {x.image ? (
+        <div className="relative aspect-[16/10] overflow-hidden bg-tint">
+          <Image
+            src={x.image}
+            alt={x.name}
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+          />
+        </div>
+      ) : (
+        <ProductMotif slug={x.slug} className="aspect-[16/10]" />
+      )}
+      <div className="flex flex-1 flex-col p-5">
+        <div className="flex items-center gap-2">
+          <span className="rounded-full bg-tint px-2.5 py-1 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-mocha">
+            {TECH_TYPE_LABEL[x.type]}
+          </span>
+        </div>
+        <h3 className="mt-3 text-lg font-semibold text-espresso decoration-mocha/60 underline-offset-4 group-hover:underline">
+          {x.name}
+        </h3>
+        {powers.length > 0 && (
+          <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-700">
+            Used in {powers.map((t) => t.name).join(", ")}.
+          </p>
+        )}
+        <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-accent">
+          Learn more <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
+        </span>
+      </div>
+    </Link>
   );
 }

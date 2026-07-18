@@ -78,7 +78,7 @@ export const concerns: Concern[] = [
       "Uneven pigmentation such as melasma, sun spots and post-inflammatory marks are assessed individually.",
     leadAnswer:
       "Pigmentation describes areas of darker skin such as melasma, sun-related spots or marks left after inflammation. The type matters, because each responds differently and some need particular care. A consultation helps determine which approach, if any, may be appropriate for your skin.",
-    treatments: ["pico-laser", "skin-booster", "dermav"],
+    treatments: ["pico-laser", "skin-booster", "vascular-pigment-laser"],
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-06-20",
     sections: [
@@ -270,7 +270,7 @@ export const concerns: Concern[] = [
       "Under-eye darkness can be pigment, vascular or structural — the cause guides the approach.",
     leadAnswer:
       "Dark eye circles can be caused by pigmentation, visible blood vessels, or the structure and hollowing of the under-eye area — often in combination. Because the causes differ, a consultation helps determine which approach, if any, may be appropriate for you.",
-    treatments: ["skin-booster", "dermav", "radiofrequency"],
+    treatments: ["skin-booster", "vascular-pigment-laser", "radiofrequency"],
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-06-14",
     sections: [
@@ -333,7 +333,7 @@ export const concerns: Concern[] = [
       "Facial contour concerns are assessed individually to determine suitable options.",
     leadAnswer:
       "Face-contouring concerns relate to the shape and definition of areas such as the jawline and chin. Several treatments may be considered depending on the concern and your anatomy. A consultation helps determine which approach, if any, may be appropriate.",
-    treatments: ["hifu", "coolsculpting", "radiofrequency"],
+    treatments: ["hifu", "fat-freezing", "radiofrequency"],
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-06-12",
     sections: [
@@ -394,7 +394,7 @@ export const concerns: Concern[] = [
       "Non-surgical lifting and firmness concerns are assessed to guide a suitable plan.",
     leadAnswer:
       "Face-lifting concerns relate to firmness and laxity as skin changes over time. Non-surgical, energy-based treatments may be considered depending on your assessment. A consultation helps determine which approach, if any, may be appropriate for you.",
-    treatments: ["hifu", "ultherapy", "fotona-4d", "onda"],
+    treatments: ["hifu", "ultherapy", "fotona-4d", "microwave-contouring"],
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-06-12",
     sections: [
@@ -519,7 +519,7 @@ export const concerns: Concern[] = [
     summary: "Localised fat concerns are assessed individually; these are not weight-loss treatments.",
     leadAnswer:
       "Body-contouring concerns relate to pockets of localised fat in specific areas, rather than overall weight. In-clinic treatments are not a substitute for weight loss. A consultation helps determine which approach, if any, may be appropriate for you.",
-    treatments: ["coolsculpting", "fat-freezing", "onda"],
+    treatments: ["fat-freezing", "microwave-contouring"],
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-06-08",
     sections: [
@@ -756,7 +756,7 @@ export const concerns: Concern[] = [
       "Visible blood vessels and redness have several causes — assessment guides whether treatment may help.",
     leadAnswer:
       "Vascular lesions are visible blood vessels or areas of redness in the skin, such as facial thread veins, spider veins or persistent flushing. They have several possible causes, so a doctor assesses the type before discussing whether any treatment may be appropriate for you.",
-    treatments: ["vascular-pigment-laser", "dermav"],
+    treatments: ["vascular-pigment-laser"],
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-07-13",
     sections: [

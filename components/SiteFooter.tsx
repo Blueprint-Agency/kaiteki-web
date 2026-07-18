@@ -71,7 +71,7 @@ export function SiteFooter() {
           <Col
             title="Company"
             links={[
-              { href: "/about", label: "About" },
+              { href: "/technology", label: "Products & Technology" },
               { href: "/doctors", label: "Doctors" },
               { href: "/blog", label: "Blog" },
               { href: "/contact", label: "Contact" },

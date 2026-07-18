@@ -22,6 +22,6 @@ export const primaryNav = [
   { label: "Skincare", href: "/skincare" },
   { label: "Locations", href: "/locations" },
   { label: "Doctors", href: "/doctors" },
-  { label: "About", href: "/about" },
+  { label: "Products & Technology", href: "/technology" },
   { label: "Blog", href: "/blog" },
 ];

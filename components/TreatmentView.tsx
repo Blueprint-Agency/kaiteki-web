@@ -8,8 +8,8 @@ import { Faq } from "@/components/Faq";
 import { Disclaimer } from "@/components/Disclaimer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { ArrowRight } from "@/components/icons";
-import { treatmentBySlug, machinesOf, treatmentHref } from "@/content/data/treatments";
-import { concernBySlug } from "@/content/data/concerns";
+import { treatmentBySlug, treatmentHref } from "@/content/data/treatments";
+import { technologyOfTreatment, concernsOfTreatment } from "@/content/data/relations";
 import { branches } from "@/content/data/branches";
 import { doctorBySlug } from "@/content/data/doctors";
 import { waForTreatment } from "@/lib/wa";
@@ -30,7 +30,8 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
   const doctor = doctorBySlug(t.reviewedBy);
   const offering = branches.filter((b) => b.treatments.includes(t.slug));
   const related = t.related.map((r) => treatmentBySlug(r)).filter(Boolean);
-  const machines = machinesOf(t.slug);
+  const techItems = technologyOfTreatment(t.slug);
+  const relatedConcerns = concernsOfTreatment(t.slug);
   const logo = t.device ? deviceLogo[t.device] : undefined;
   const reviewedDate = new Date(t.lastReviewed).toLocaleDateString("en-GB", {
     day: "numeric",
@@ -41,6 +42,19 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
   return (
     <Container className="py-10 sm:py-12">
       <Breadcrumbs items={trail} />
+
+      {t.image && (
+        <div className="relative mt-6 aspect-[21/9] overflow-hidden rounded-2xl bg-tint sm:aspect-[3/1]">
+          <Image
+            src={t.image}
+            alt={t.name}
+            fill
+            priority
+            sizes="(max-width: 1024px) 100vw, 1024px"
+            className="object-cover"
+          />
+        </div>
+      )}
 
       <div className="mt-8 max-w-3xl">
         <p className="text-sm font-medium text-accent">{t.category}</p>
@@ -53,14 +67,6 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
         {doctor && (
           <div className="mt-6 max-w-md">
             <ReviewByline doctorName={doctor.fullName} mmc={doctor.mmc} date={reviewedDate} />
-          </div>
-        )}
-        {t.machineNames && t.machineNames.length > 0 && (
-          <div className="mt-6">
-            <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-mocha">
-              Platforms &amp; devices
-            </p>
-            <p className="mt-1.5 text-sm text-ink-700">{t.machineNames.join(" · ")}</p>
           </div>
         )}
       </div>
@@ -99,37 +105,31 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
                 involves, and our doctors can explain whether it is suitable for you at a free
                 consultation.
               </p>
-              {t.concerns.length > 0 && (
+              {relatedConcerns.length > 0 && (
                 <div>
                   <h2 className="text-lg font-semibold text-espresso">What it may help address</h2>
                   <ul className="mt-3 flex flex-wrap gap-2">
-                    {t.concerns.map((c) => {
-                      const concern = concernBySlug(c);
-                      return concern ? (
-                        <li key={c}>
-                          <Link href={`/concerns/${c}`} className="rounded-full border border-hairline bg-surface px-3 py-1.5 text-sm text-ink-700 transition-colors hover:border-mocha">
-                            {concern.name}
-                          </Link>
-                        </li>
-                      ) : null;
-                    })}
+                    {relatedConcerns.map((concern) => (
+                      <li key={concern.slug}>
+                        <Link href={`/concerns/${concern.slug}`} className="rounded-full border border-hairline bg-surface px-3 py-1.5 text-sm text-ink-700 transition-colors hover:border-mocha">
+                          {concern.name}
+                        </Link>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               )}
             </div>
           )}
 
-          {machines.length > 0 && (
+          {techItems.length > 0 && (
             <section className="mt-12">
               <h2 className="mb-4 text-xl font-bold text-espresso sm:text-2xl">Devices &amp; platforms</h2>
               <ul className="flex flex-wrap gap-3">
-                {machines.map((m) => (
-                  <li key={m.slug}>
-                    <Link
-                      href={treatmentHref(m)}
-                      className="inline-flex items-center gap-1.5 rounded-full border border-hairline bg-surface px-4 py-2 text-sm font-medium text-ink-700 transition-colors hover:border-mocha hover:text-espresso"
-                    >
-                      {m.name} <ArrowRight size={14} className="text-accent" />
+                {techItems.map((x) => (
+                  <li key={x.slug}>
+                    <Link href={`/technology/${x.slug}`} className="inline-flex items-center rounded-full border border-hairline bg-surface px-4 py-2 text-sm font-medium text-ink-700 transition-colors hover:border-mocha">
+                      {x.name}
                     </Link>
                   </li>
                 ))}

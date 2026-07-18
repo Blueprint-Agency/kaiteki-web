@@ -61,7 +61,7 @@ export function RecognitionCabinet() {
             </dl>
 
             <Link
-              href="/about"
+              href="/doctors"
               className="group mt-7 inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors hover:text-espresso"
             >
               <span className="border-b border-mocha/40 pb-0.5 transition-colors group-hover:border-espresso">

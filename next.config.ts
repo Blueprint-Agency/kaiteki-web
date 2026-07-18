@@ -10,14 +10,15 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
-  // 301s for URLs moved by the treatment/concern taxonomy restructure
-  // (docs/superpowers/plans/2026-07-13-treatment-taxonomy-restructure.md, Task 5).
+  // 301s for URLs moved by the taxonomy restructures.
+  // IA v2 (2026-07-18): ultherapy is a flat treatment again; coolsculpting/onda/dermav
+  // are now Technology items. ponytail: old nested /treatments/x/y URLs get their 301s
+  // in the deferred redirect-map pass, not here.
   async redirects() {
     return [
-      { source: "/treatments/ultherapy", destination: "/treatments/hifu/ultherapy", permanent: true },
-      { source: "/treatments/coolsculpting", destination: "/treatments/fat-freezing/coolsculpting", permanent: true },
-      { source: "/treatments/onda", destination: "/treatments/microwave-contouring/onda", permanent: true },
-      { source: "/treatments/dermav", destination: "/treatments/vascular-pigment-laser/dermav", permanent: true },
+      { source: "/treatments/coolsculpting", destination: "/technology/coolsculpting", permanent: true },
+      { source: "/treatments/onda", destination: "/technology/onda-coolwaves", permanent: true },
+      { source: "/treatments/dermav", destination: "/technology/dermav", permanent: true },
       { source: "/treatments/tattoo-removal", destination: "/concerns/tattoo-removal", permanent: true },
     ];
   },
