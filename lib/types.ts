@@ -38,8 +38,6 @@ export interface Treatment {
   summary: string;
   /** 40–60 word answer-first capsule (docs/05 §1.3). */
   leadAnswer: string;
-  /** Concern slugs this treatment may address (drives the mesh). */
-  concerns: string[];
   /** Related treatment slugs. */
   related: string[];
   /** Deep body — present for fully authored pages (e.g. pico-laser). */
@@ -47,15 +45,38 @@ export interface Treatment {
   faqs?: Faq[];
   /** Device/brand name shown in the technology context. */
   device?: string;
-  /** Category slug this machine sits under. Absent = this IS a category (high-level) page. */
-  parent?: string;
-  /** Devices described as sections on a category page (drives the "we use …" line). */
-  machineNames?: string[];
   /** Compliance + review (placeholder values for the sample — docs/05 §9). */
   reviewedBy: string; // doctor slug
   lastReviewed: string; // ISO date
   kkliu: string;
   kkliuExpiry: string; // ISO date
+}
+
+export type TechType = "device" | "injectable";
+
+/** A device or injectable that powers one or more treatments. Its link to a
+ *  treatment is the ONLY authored edge (many-to-many); concerns are derived. */
+export interface Technology {
+  slug: string;
+  name: string;
+  /** Reuses the treatment NavCategory taxonomy (group of its primary treatment). */
+  group: NavCategory;
+  /** "device" (machine) or "injectable" (consumable). */
+  type: TechType;
+  /** Treatment slugs this powers — the ONLY authored edge. Many-to-many. */
+  treatments: string[];
+  /** Photo under /public/images/technology. Optional — 4 items fall back to the
+   *  generated motif until real product photography lands. */
+  image?: string;
+  /** One compliant, factual sentence. */
+  summary: string;
+  /** Optional rich body — carried over for the 3 converted pages. */
+  sections?: Section[];
+  faqs?: Faq[];
+  /** Optional device-brand logo (existing /images/tech logos). */
+  device?: string;
+  reviewedBy?: string;
+  lastReviewed?: string;
 }
 
 export interface Concern {
@@ -120,9 +141,13 @@ export interface Doctor {
   photo: string;
   branches: string[];
   interests: string[];
-  /** Optional authored bio paragraphs for the profile page. Omitted until the
-   *  clinic supplies verified copy — no fabricated medical claims (docs/05 §9). */
+  /** Optional authored bio paragraphs for the profile page. Sourced verbatim
+   *  from the clinic's published "Meet the Experts" copy (legacy aboutus.html). */
   bio?: string[];
+  /** Full profile URLs. `instagram` defaults to the clinic account; per-doctor
+   *  personal handles + `linkedin` are a client data dependency (docs/05 §9). */
+  instagram?: string;
+  linkedin?: string;
 }
 
 /** Grouping for the skincare (cosmeceuticals) product hub — Kaiteki's own

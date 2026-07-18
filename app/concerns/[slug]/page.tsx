@@ -11,6 +11,7 @@ import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { TreatmentCard } from "@/components/cards";
 import { concerns, concernBySlug } from "@/content/data/concerns";
 import { treatmentBySlug } from "@/content/data/treatments";
+import { technologyOfConcern } from "@/content/data/relations";
 import { doctorBySlug } from "@/content/data/doctors";
 import { waForConcern } from "@/lib/wa";
 
@@ -46,6 +47,7 @@ export default async function ConcernPage({
 
   const doctor = doctorBySlug(c.reviewedBy);
   const options = c.treatments.map((s) => treatmentBySlug(s)).filter(Boolean);
+  const techItems = technologyOfConcern(c.slug);
   const reviewedDate = new Date(c.lastReviewed).toLocaleDateString("en-GB", {
     day: "numeric",
     month: "short",
@@ -119,6 +121,22 @@ export default async function ConcernPage({
               <TreatmentCard key={t!.slug} t={t!} />
             ))}
           </div>
+        </section>
+      )}
+
+      {/* Technology used — derived from the concern's treatments */}
+      {techItems.length > 0 && (
+        <section className="mt-14">
+          <h2 className="text-xl font-bold text-espresso sm:text-2xl">Technology used</h2>
+          <ul className="mt-6 flex flex-wrap gap-3">
+            {techItems.map((x) => (
+              <li key={x.slug}>
+                <Link href={`/technology/${x.slug}`} className="inline-flex items-center rounded-full border border-hairline bg-surface px-4 py-2 text-sm font-medium text-ink-700 transition-colors hover:border-mocha">
+                  {x.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 

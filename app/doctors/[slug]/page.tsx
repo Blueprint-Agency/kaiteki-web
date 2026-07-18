@@ -6,7 +6,7 @@ import { Container } from "@/components/Container";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Ledger } from "@/components/Ledger";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
-import { ArrowRight } from "@/components/icons";
+import { ArrowRight, Instagram, LinkedIn } from "@/components/icons";
 import { doctors, doctorBySlug } from "@/content/data/doctors";
 import { treatments, treatmentHref } from "@/content/data/treatments";
 import { branchBySlug } from "@/content/data/branches";
@@ -90,6 +90,37 @@ export default async function DoctorPage({
           <h1 className="mt-2 text-3xl font-bold leading-tight text-espresso sm:text-4xl">
             {d.fullName}
           </h1>
+
+          {(d.instagram || d.linkedin) && (
+            <ul className="mt-4 flex items-center gap-2.5">
+              {d.instagram && (
+                <li>
+                  <a
+                    href={d.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${shortName} on Instagram`}
+                    className="flex size-10 items-center justify-center rounded-full border border-hairline text-mocha transition-colors hover:border-mocha hover:bg-mocha hover:text-white"
+                  >
+                    <Instagram size={18} />
+                  </a>
+                </li>
+              )}
+              {d.linkedin && (
+                <li>
+                  <a
+                    href={d.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${shortName} on LinkedIn`}
+                    className="flex size-10 items-center justify-center rounded-full border border-hairline text-mocha transition-colors hover:border-mocha hover:bg-mocha hover:text-white"
+                  >
+                    <LinkedIn size={18} />
+                  </a>
+                </li>
+              )}
+            </ul>
+          )}
 
           {d.bio ? (
             <div className="prose mt-5 max-w-[60ch] space-y-4 text-lg leading-relaxed text-ink-700">
