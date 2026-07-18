@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Lean container image: emit a self-contained server (.next/standalone) for Docker.
+  output: "standalone",
   // Pin the workspace root so Next doesn't infer it from a stray parent lockfile.
   // (docs/07 §14 — this repo root is the app root; well-known/ is excluded reference.)
   turbopack: {

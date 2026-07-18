@@ -1,0 +1,16 @@
+node_modules
+.next
+.git
+.github
+.claude
+.superpowers
+.design-sync
+.ds-sync
+.impeccable
+.playwright-mcp
+ds-bundle
+docs
+well-known
+*.png
+Dockerfile
+.dockerignore
