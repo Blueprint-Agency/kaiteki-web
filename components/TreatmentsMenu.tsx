@@ -1,29 +1,20 @@
 import type { CSSProperties } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "./Container";
 import { FlipCard } from "./FlipCard";
-import { ArrowRight, Sparkle, Sun, Droplet, Eye, Contour, ShieldCheck } from "./icons";
+import { TreatmentMotif } from "./cards";
+import { ArrowRight } from "./icons";
 import { categoryTreatments, treatmentHref } from "@/content/data/treatments";
 
 const si = (i: number): CSSProperties => ({ "--i": Math.min(i, 8) } as CSSProperties);
-
-// Rotating line-icons for the tinted fronts (treatment photography carries rival
-// brands' logos and is withheld — docs note in cards.tsx; the icon front follows
-// the same "solid tile" pattern as the reference instead).
-const ICONS = [Sparkle, Sun, Droplet, Contour, Eye, ShieldCheck];
-// Alternating warm front washes so the six tiles read with rhythm, not repetition.
-const WASH = [
-  "from-tint to-porcelain",
-  "from-[#f3ece4] to-sand/50",
-  "from-[#efe7df] to-porcelain",
-];
 
 export function TreatmentsMenu() {
   const six = categoryTreatments().slice(0, 6);
 
   return (
-    <section id="treatments" className="bg-gradient-to-b from-page to-tint">
-      <Container className="py-16 sm:py-24">
+    <section id="treatments" className="bg-tint">
+      <Container className="reveal py-16 sm:py-24">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="max-w-2xl">
             <h2 className="text-balance text-2xl font-bold leading-tight text-espresso sm:text-3xl">
@@ -45,46 +36,53 @@ export function TreatmentsMenu() {
         </div>
 
         <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5">
-          {six.map((t, i) => {
-            const Icon = ICONS[i % ICONS.length];
-            return (
-              <FlipCard
-                key={t.slug}
-                href={treatmentHref(t)}
-                ariaLabel={`${t.name} — read the treatment guide`}
-                className="reveal"
-                style={si(i)}
-                front={
-                  <div
-                    className={`flex h-full w-full flex-col items-center justify-center gap-4 bg-gradient-to-br p-5 text-center ${WASH[i % WASH.length]}`}
-                  >
-                    <span className="flex size-14 items-center justify-center rounded-full bg-surface/70 text-mocha ring-1 ring-hairline">
-                      <Icon size={26} />
-                    </span>
-                    <h3 className="text-lg font-semibold leading-tight text-espresso sm:text-xl">
+          {six.map((t, i) => (
+            <FlipCard
+              key={t.slug}
+              href={treatmentHref(t)}
+              ariaLabel={`${t.name} — read the treatment guide`}
+              className="reveal"
+              style={si(i)}
+              front={
+                <div className="relative h-full w-full overflow-hidden rounded-[1.75rem]">
+                  {t.image ? (
+                    <Image
+                      src={t.image}
+                      alt=""
+                      fill
+                      sizes="(max-width: 640px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                    />
+                  ) : (
+                    <TreatmentMotif t={t} className="h-full w-full" />
+                  )}
+                  {/* Scrim keeps the label legible over the photo. */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-espresso/75 via-espresso/15 to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 p-5 text-left">
+                    <h3 className="text-lg font-semibold leading-tight text-white sm:text-xl">
                       {t.name}
                     </h3>
                     {t.category && (
-                      <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-accent">
+                      <p className="mt-1 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-white/80">
                         {t.category}
                       </p>
                     )}
                   </div>
-                }
-                back={
-                  <div className="flex h-full flex-col justify-between p-5 text-left">
-                    <div>
-                      <h3 className="text-lg font-semibold leading-tight text-espresso">{t.name}</h3>
-                      <p className="mt-2 text-sm leading-relaxed text-ink-700">{t.summary}</p>
-                    </div>
-                    <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent">
-                      Learn more <ArrowRight size={15} />
-                    </span>
+                </div>
+              }
+              back={
+                <div className="flex h-full flex-col justify-between p-5 text-left">
+                  <div>
+                    <h3 className="text-lg font-semibold leading-tight text-espresso">{t.name}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-ink-700">{t.summary}</p>
                   </div>
-                }
-              />
-            );
-          })}
+                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent">
+                    Learn more <ArrowRight size={15} />
+                  </span>
+                </div>
+              }
+            />
+          ))}
         </div>
       </Container>
     </section>
