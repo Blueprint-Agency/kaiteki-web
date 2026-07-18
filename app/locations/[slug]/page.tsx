@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/Container";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Ledger } from "@/components/Ledger";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
+import { JsonLd } from "@/components/JsonLd";
 import { branches, branchBySlug } from "@/content/data/branches";
-import { treatmentBySlug, treatmentHref } from "@/content/data/treatments";
 import { doctors } from "@/content/data/doctors";
 import { waForBranch } from "@/lib/wa";
-import { site } from "@/lib/site";
+import { pageMeta } from "@/lib/seo";
+import { medicalClinicNode } from "@/lib/schema";
 
 export const dynamicParams = false;
 
@@ -26,11 +26,14 @@ export async function generateMetadata({
   const { slug } = await params;
   const b = branchBySlug(slug);
   if (!b) return {};
-  return {
-    title: `Aesthetic Clinic in ${b.name} — Kaiteki ${b.name}`,
-    description: `Kaiteki ${b.name} skin & aesthetic clinic in ${b.city}, ${b.state}. Doctor-led treatments; book a free consultation on WhatsApp.`,
-    alternates: { canonical: `/locations/${b.slug}` },
-  };
+  return pageMeta({
+    title: b.seoTitle ?? b.name,
+    description:
+      b.seoDescription ??
+      `Kaiteki ${b.name} skin & aesthetic clinic in ${b.city}, ${b.state}. Doctor-led treatments; book a free consultation on WhatsApp.`,
+    path: `/locations/${b.slug}`,
+    image: b.photo,
+  });
 }
 
 export default async function BranchPage({
@@ -42,62 +45,26 @@ export default async function BranchPage({
   const b = branchBySlug(slug);
   if (!b) notFound();
 
-  const offered = b.treatments.map((s) => treatmentBySlug(s)).filter(Boolean);
   const here = doctors.filter((d) => d.branches.includes(b.slug));
 
   // LocalBusiness (MedicalClinic) schema — the primary local-SEO signal for a
-  // branch page. NAP + map come from branch data; geo/openingHoursSpecification
-  // are omitted until we store lat/lng and structured hours (docs/02 local-SEO).
-  // ponytail: no openingHoursSpecification — hours are free-text in 3 formats; add
-  // when hours become structured data.
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "MedicalClinic",
-    name: `Kaiteki ${b.name}`,
-    image: `${site.url}${b.photo}`,
-    url: `${site.url}/locations/${b.slug}`,
-    telephone: b.phone,
-    hasMap: b.mapUrl,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: b.address,
-      addressLocality: b.city,
-      addressRegion: b.state,
-      addressCountry: "MY",
-    },
-    ...(b.lat != null && b.lng != null
-      ? { geo: { "@type": "GeoCoordinates", latitude: b.lat, longitude: b.lng } }
-      : {}),
-    ...(b.hoursSpec
-      ? {
-          openingHoursSpecification: b.hoursSpec.map((h) => ({
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: h.days,
-            opens: h.opens,
-            closes: h.closes,
-          })),
-        }
-      : {}),
-    ...(b.serves ? { areaServed: b.serves } : {}),
-    parentOrganization: {
-      "@type": "MedicalClinic",
-      name: site.name,
-      url: site.url,
-    },
-  };
-
+  // Per-branch MedicalClinic node (NAP, geo, hours) wired to the site graph by
+  // @id — built in lib/schema.ts so all branches stay consistent.
   return (
     <Container className="py-10 sm:py-12">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={medicalClinicNode(b)} />
       <Breadcrumbs items={[{ label: "Locations", href: "/locations" }, { label: b.name }]} />
 
-      <div className="mt-8 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-14">
+      {/* Intro + storefront, vertically centred so neither column orphans whitespace. */}
+      <div className="mt-8 grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
         <div>
           <p className="text-sm font-medium text-accent">{b.region}</p>
           <h1 className="mt-2 text-3xl font-bold text-espresso sm:text-4xl">Kaiteki {b.name}</h1>
+          {b.alsoKnownAs && (
+            <p className="mt-2 text-sm text-ink-500">
+              Also known as <span className="font-medium text-ink-700">{b.alsoKnownAs}</span>
+            </p>
+          )}
           <p className="prose mt-4 max-w-[60ch] text-lg leading-relaxed text-ink-700">
             {b.gettingHere ??
               `Our ${b.name} branch offers doctor-led skin, aesthetic and laser treatments in ${b.city}, ${b.state}.`}{" "}
@@ -109,26 +76,6 @@ export default async function BranchPage({
               Serving {b.serves.join(", ")}.
             </p>
           )}
-
-          <div className="mt-8 max-w-md rounded-xl border border-hairline bg-surface p-5">
-            <Ledger
-              rows={[
-                { label: "Address", value: b.address },
-                { label: "Phone", value: b.phone },
-                { label: "Hours", value: b.hours.join(" · ") },
-                ...(b.parking ? [{ label: "Parking", value: b.parking }] : []),
-              ]}
-            />
-            <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
-              <WhatsAppButton href={waForBranch(b.name)} label={`Contact ${b.name}`} />
-              <a href={`tel:${b.phone.replace(/[^\d+]/g, "")}`} className="text-sm font-medium text-mocha hover:text-espresso">
-                Call {b.phone}
-              </a>
-              <a href={b.mapUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-mocha hover:text-espresso">
-                Get directions →
-              </a>
-            </div>
-          </div>
         </div>
 
         <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-hairline bg-tint">
@@ -143,22 +90,42 @@ export default async function BranchPage({
         </div>
       </div>
 
-      {offered.length > 0 && (
-        <section className="mt-14">
-          <h2 className="mb-4 text-sm font-semibold uppercase tracking-[0.1em] text-mocha">
-            Treatments offered here
-          </h2>
-          <ul className="flex flex-wrap gap-2">
-            {offered.map((t) => (
-              <li key={t!.slug}>
-                <Link href={treatmentHref(t!)} className="rounded-full border border-hairline bg-surface px-4 py-2 text-sm text-ink-700 transition-colors hover:border-mocha">
-                  {t!.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+      {/* "Find us" — the contact details paired with their map at matched height,
+          so the address sits beside the pin it describes rather than floating apart. */}
+      <div className="mt-10 grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:gap-8">
+        <div className="flex flex-col rounded-2xl border border-hairline bg-surface p-6">
+          <Ledger
+            rows={[
+              { label: "Address", value: b.address },
+              { label: "Phone", value: b.phone },
+              { label: "Hours", value: b.hours.join(" · ") },
+              ...(b.parking ? [{ label: "Parking", value: b.parking }] : []),
+            ]}
+          />
+          <div className="mt-auto pt-6">
+            <WhatsAppButton href={waForBranch(b.name)} label={`Contact ${b.name}`} />
+          </div>
+        </div>
+
+        {/* The stored mapUrl is a maps.app.goo.gl short link, which can't be iframed;
+            the no-key `output=embed` endpoint geocodes a query instead. The query is
+            biased with the business name so it pins the clinic, not a neighbouring
+            shop in the same plaza. Prefer stored lat/lng once the clinic supplies them.
+            ponytail: name+address query embed, no Maps API key needed. */}
+        <div className="relative min-h-[320px] overflow-hidden rounded-2xl border border-hairline bg-tint">
+          <iframe
+            title={`Map of Kaiteki ${b.name}`}
+            src={`https://maps.google.com/maps?q=${encodeURIComponent(
+              b.lat != null && b.lng != null
+                ? `${b.lat},${b.lng}`
+                : `Kaiteki ${b.name}, ${b.address}`,
+            )}&z=16&output=embed`}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="absolute inset-0 size-full border-0"
+          />
+        </div>
+      </div>
 
       {here.length > 0 && (
         <section className="mt-12">

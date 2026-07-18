@@ -2,6 +2,7 @@
 
 import { useState, type CSSProperties } from "react";
 import { BranchCard } from "./cards";
+import { CardRow } from "./CardRow";
 import { branches, regionOrder } from "@/content/data/branches";
 import type { Region } from "@/lib/types";
 
@@ -40,11 +41,11 @@ export function BranchesExplorer() {
           );
         })}
       </div>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <CardRow>
         {shown.map((b, i) => (
           <BranchCard key={b.slug} b={b} className="reveal" style={si(i)} />
         ))}
-      </div>
+      </CardRow>
     </div>
   );
 }

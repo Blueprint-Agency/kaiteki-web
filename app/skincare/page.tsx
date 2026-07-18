@@ -1,18 +1,19 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ProductCard } from "@/components/cards";
+import { CardRow } from "@/components/CardRow";
 import { WhatsApp } from "@/components/icons";
 import { Disclaimer } from "@/components/Disclaimer";
 import { products, productGroups, productsByGroup } from "@/content/data/products";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Skincare — Kaiteki® Cosmeceuticals",
+export const metadata = pageMeta({
+  title: "Kaiteki Skincare — Cosmeceutical Products | Kaiteki",
   description:
-    "Kaiteki® Cosmeceuticals — our medical-grade skincare range plus selected partner brands. Order any product on WhatsApp.",
-  alternates: { canonical: "/skincare" },
-};
+    "Kaiteki Cosmeceuticals — medical-grade skincare and partner brands used in clinic. Order any product or book a free consultation on WhatsApp.",
+  path: "/skincare",
+});
 
 const itemListJsonLd = {
   "@context": "https://schema.org",
@@ -56,11 +57,11 @@ export default function SkincareHub() {
             <h2 className="mb-5 text-sm font-semibold uppercase tracking-[0.1em] text-mocha">
               {group}
             </h2>
-            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <CardRow>
               {productsByGroup(group).map((p) => (
                 <ProductCard key={p.slug} p={p} />
               ))}
-            </div>
+            </CardRow>
           </section>
         ))}
       </div>

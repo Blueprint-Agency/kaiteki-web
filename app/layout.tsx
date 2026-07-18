@@ -4,6 +4,9 @@ import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { StickyWhatsApp } from "@/components/WhatsAppCTA";
+import { ScrollReveal } from "@/components/ScrollReveal";
+import { JsonLd } from "@/components/JsonLd";
+import { siteGraph } from "@/lib/schema";
 
 // Display & UI — a characterful grotesk (docs/06 §2.2)
 const display = Schibsted_Grotesk({
@@ -31,6 +34,16 @@ export const metadata: Metadata = {
   },
   description:
     "MOH-licensed skin & aesthetic clinic with 9 branches across Malaysia. Book a free consultation on WhatsApp.",
+  // Site-wide social-share defaults; per-page pageMeta() overrides title/description/image.
+  openGraph: {
+    type: "website",
+    siteName: "Kaiteki Skin Aesthetic Clinic",
+    locale: "en_MY",
+    images: [{ url: "/images/hero/hero-subject.png", alt: "Kaiteki Skin Aesthetic Clinic" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({
@@ -47,6 +60,8 @@ export default function RootLayout({
       className={`${display.variable} ${serif.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        {/* Site-wide identity graph: Organization (MedicalBusiness) + WebSite */}
+        <JsonLd data={siteGraph()} />
         {/* Enable motion only when JS runs — content is visible without it (globals.css) */}
         <script
           dangerouslySetInnerHTML={{
@@ -59,6 +74,7 @@ export default function RootLayout({
         {/* spacer so the mobile sticky CTA never covers footer content */}
         <div className="h-16 md:hidden" aria-hidden />
         <StickyWhatsApp />
+        <ScrollReveal />
       </body>
     </html>
   );

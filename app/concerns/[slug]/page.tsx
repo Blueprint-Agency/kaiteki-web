@@ -1,19 +1,23 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { pageMeta } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/Container";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
 import { LeadAnswer } from "@/components/LeadAnswer";
 import { ReviewByline, Ledger } from "@/components/Ledger";
 import { Faq } from "@/components/Faq";
 import { Disclaimer } from "@/components/Disclaimer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { TreatmentCard } from "@/components/cards";
+import { CardRow } from "@/components/CardRow";
 import { concerns, concernBySlug } from "@/content/data/concerns";
 import { treatmentBySlug } from "@/content/data/treatments";
 import { technologyOfConcern } from "@/content/data/relations";
 import { doctorBySlug } from "@/content/data/doctors";
 import { waForConcern } from "@/lib/wa";
+import { medicalWebPageNode } from "@/lib/schema";
 
 export const dynamicParams = false;
 
@@ -29,11 +33,12 @@ export async function generateMetadata({
   const { slug } = await params;
   const c = concernBySlug(slug);
   if (!c) return {};
-  return {
-    title: `${c.name}: Causes, Types & Treatment Options`,
-    description: c.summary,
-    alternates: { canonical: `/concerns/${c.slug}` },
-  };
+  return pageMeta({
+    title: c.seoTitle ?? c.name,
+    description: c.seoDescription ?? c.summary,
+    path: `/concerns/${c.slug}`,
+    image: c.image,
+  });
 }
 
 export default async function ConcernPage({
@@ -56,6 +61,18 @@ export default async function ConcernPage({
 
   return (
     <Container className="py-10 sm:py-12">
+      <JsonLd
+        data={medicalWebPageNode({
+          path: `/concerns/${c.slug}`,
+          name: c.seoTitle ?? c.name,
+          description: c.seoDescription ?? c.summary,
+          about: { type: "MedicalCondition", name: c.name },
+          lastReviewed: c.lastReviewed,
+          reviewer: doctor
+            ? { name: doctor.fullName, slug: doctor.slug, credentials: doctor.credentials }
+            : undefined,
+        })}
+      />
       <Breadcrumbs items={[{ label: "Concerns", href: "/concerns" }, { label: c.name }]} />
 
       <div className="mt-8 max-w-3xl">
@@ -116,11 +133,11 @@ export default async function ConcernPage({
             These treatments may be considered for {c.name.toLowerCase()}-related concerns.
             Suitability is always assessed individually.
           </p>
-          <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <CardRow className="mt-6">
             {options.map((t) => (
               <TreatmentCard key={t!.slug} t={t!} />
             ))}
-          </div>
+          </CardRow>
         </section>
       )}
 
