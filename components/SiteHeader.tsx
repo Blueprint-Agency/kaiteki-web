@@ -14,10 +14,11 @@ import {
 } from "@/content/data/treatments";
 import { concernGroups, concernsByGroup } from "@/content/data/concerns";
 
-type Mega = "treatments" | "concerns" | null;
-
 export function SiteHeader() {
-  const [mega, setMega] = useState<Mega>(null);
+  // One piece of state drives every desktop dropdown (mega + compact), keyed by
+  // the nav item's label. null = all closed. Same open/close model everywhere so
+  // selecting any option (or leaving the header) closes whatever is open.
+  const [open, setOpen] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -31,7 +32,7 @@ export function SiteHeader() {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
-        setMega(null);
+        setOpen(null);
         setMobileOpen(false);
       }
     };
@@ -48,7 +49,8 @@ export function SiteHeader() {
 
   // Transparent over the top of the page (the homepage hero runs underneath);
   // solid as soon as the user scrolls or any panel needs a surface behind it.
-  const solid = scrolled || mega !== null || mobileOpen;
+  const solid = scrolled || open !== null || mobileOpen;
+  const openItem = primaryNav.find((i) => i.label === open) ?? null;
 
   return (
     <>
@@ -58,7 +60,7 @@ export function SiteHeader() {
           ? "border-hairline bg-page/95 shadow-sm backdrop-blur"
           : "border-transparent bg-transparent"
       }`}
-      onMouseLeave={() => setMega(null)}
+      onMouseLeave={() => setOpen(null)}
     >
       <Container>
         <div className="flex h-[68px] items-center justify-between gap-6">
@@ -83,78 +85,98 @@ export function SiteHeader() {
                 <div
                   key={item.label}
                   className="static flex items-center"
-                  onMouseEnter={() => setMega(item.mega as Mega)}
+                  onMouseEnter={() => setOpen(item.label)}
                 >
                   <Link
                     href={item.href}
                     className={`rounded-md py-2 pl-3 pr-1 text-sm font-medium transition-colors ${
-                      mega === item.mega ? "text-espresso" : "text-ink-700 hover:text-espresso"
+                      open === item.label ? "text-espresso" : "text-ink-700 hover:text-espresso"
                     }`}
-                    onFocus={() => setMega(item.mega as Mega)}
-                    onClick={() => setMega(null)}
+                    onFocus={() => setOpen(item.label)}
+                    onClick={() => setOpen(null)}
                   >
                     {item.label}
                   </Link>
                   <button
                     type="button"
                     className={`rounded-md py-2 pl-1 pr-3 transition-colors ${
-                      mega === item.mega ? "text-espresso" : "text-ink-700 hover:text-espresso"
+                      open === item.label ? "text-espresso" : "text-ink-700 hover:text-espresso"
                     }`}
                     aria-label={`${item.label} menu`}
-                    aria-expanded={mega === item.mega}
+                    aria-expanded={open === item.label}
                     onClick={() =>
-                      setMega((m) => (m === item.mega ? null : (item.mega as Mega)))
+                      setOpen((o) => (o === item.label ? null : item.label))
                     }
                   >
                     <ChevronDown
                       size={16}
                       className={`text-accent transition-transform ${
-                        mega === item.mega ? "rotate-180" : ""
+                        open === item.label ? "rotate-180" : ""
                       }`}
                     />
                   </button>
                 </div>
               ) : item.dropdown ? (
-                // Compact hover/focus dropdown (e.g. About) — CSS-only, no panel state.
+                // Compact dropdown (e.g. Locations, About) — same state-driven
+                // split control as the mega panels so open/close behaves identically.
                 <div
                   key={item.label}
-                  className="group relative flex items-center"
-                  onMouseEnter={() => setMega(null)}
+                  className="relative flex items-center"
+                  onMouseEnter={() => setOpen(item.label)}
                 >
                   <Link
                     href={item.href}
-                    className="rounded-md py-2 pl-3 pr-1 text-sm font-medium text-ink-700 transition-colors hover:text-espresso group-hover:text-espresso group-focus-within:text-espresso"
+                    className={`rounded-md py-2 pl-3 pr-1 text-sm font-medium transition-colors ${
+                      open === item.label ? "text-espresso" : "text-ink-700 hover:text-espresso"
+                    }`}
+                    onFocus={() => setOpen(item.label)}
+                    onClick={() => setOpen(null)}
                   >
                     {item.label}
                   </Link>
-                  <span className="py-2 pl-1 pr-3" aria-hidden>
+                  <button
+                    type="button"
+                    className={`rounded-md py-2 pl-1 pr-3 transition-colors ${
+                      open === item.label ? "text-espresso" : "text-ink-700 hover:text-espresso"
+                    }`}
+                    aria-label={`${item.label} menu`}
+                    aria-expanded={open === item.label}
+                    onClick={() =>
+                      setOpen((o) => (o === item.label ? null : item.label))
+                    }
+                  >
                     <ChevronDown
                       size={16}
-                      className="text-accent transition-transform group-hover:rotate-180 group-focus-within:rotate-180"
+                      className={`text-accent transition-transform ${
+                        open === item.label ? "rotate-180" : ""
+                      }`}
                     />
-                  </span>
-                  <div
-                    className={`invisible absolute left-0 top-full max-h-[75vh] translate-y-1 overflow-y-auto rounded-xl border border-hairline bg-surface p-1.5 opacity-0 shadow-lg transition-[opacity,transform] duration-150 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100 ${
-                      item.dropdown.length > 6 ? "grid w-[24rem] grid-cols-2 gap-x-1" : "w-52"
-                    }`}
-                  >
-                    {item.dropdown.map((d) => (
-                      <Link
-                        key={d.href}
-                        href={d.href}
-                        className="block rounded-lg px-3 py-2 text-sm text-ink-700 transition-colors hover:bg-tint hover:text-espresso"
-                      >
-                        {d.label}
-                      </Link>
-                    ))}
-                  </div>
+                  </button>
+                  {open === item.label && (
+                    <div
+                      className={`mega-in absolute left-0 top-full max-h-[75vh] overflow-y-auto rounded-xl border border-hairline bg-surface p-1.5 shadow-lg ${
+                        item.dropdown.length > 6 ? "grid w-[24rem] grid-cols-2 gap-x-1" : "w-52"
+                      }`}
+                    >
+                      {item.dropdown.map((d) => (
+                        <Link
+                          key={d.href}
+                          href={d.href}
+                          onClick={() => setOpen(null)}
+                          className="block rounded-lg px-3 py-2 text-sm text-ink-700 transition-colors hover:bg-tint hover:text-espresso"
+                        >
+                          {d.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ) : (
                 <Link
                   key={item.label}
                   href={item.href}
                   className="rounded-md px-3 py-2 text-sm font-medium text-ink-700 transition-colors hover:text-espresso"
-                  onMouseEnter={() => setMega(null)}
+                  onMouseEnter={() => setOpen(null)}
                   {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 >
                   {item.label}
@@ -201,14 +223,14 @@ export function SiteHeader() {
       </Container>
 
       {/* Mega panels (desktop) — links are in the server HTML, crawlable */}
-      {mega && (
+      {openItem?.mega && (
         <div
-          key={mega}
+          key={openItem.mega}
           className="mega-in absolute inset-x-0 top-full hidden border-b border-hairline bg-surface shadow-lg lg:block"
         >
           <Container>
             <div className="py-8">
-              {mega === "treatments" ? (
+              {openItem.mega === "treatments" ? (
                 <div className="grid grid-cols-2 gap-x-8 gap-y-5 md:grid-cols-3 lg:grid-cols-5">
                   {treatmentCategories.map((cat) => (
                     <div key={cat}>
@@ -220,6 +242,7 @@ export function SiteHeader() {
                           <li key={t.slug}>
                             <Link
                               href={treatmentHref(t)}
+                              onClick={() => setOpen(null)}
                               className="text-sm text-ink-700 transition-colors hover:text-espresso"
                             >
                               {t.name}
@@ -242,6 +265,7 @@ export function SiteHeader() {
                           <li key={c.slug}>
                             <Link
                               href={`/concerns/${c.slug}`}
+                              onClick={() => setOpen(null)}
                               className="text-sm text-ink-700 transition-colors hover:text-espresso"
                             >
                               {c.name}
@@ -255,10 +279,11 @@ export function SiteHeader() {
               )}
               <div className="mt-6 border-t border-hairline pt-4">
                 <Link
-                  href={mega === "treatments" ? "/treatments" : "/concerns"}
+                  href={openItem.mega === "treatments" ? "/treatments" : "/concerns"}
+                  onClick={() => setOpen(null)}
                   className="text-sm font-medium text-accent hover:text-espresso"
                 >
-                  View all {mega} →
+                  View all {openItem.mega} →
                 </Link>
               </div>
             </div>
@@ -302,7 +327,7 @@ export function SiteHeader() {
                           className="text-accent transition-transform group-open:rotate-180"
                         />
                       </summary>
-                      <ul className="pb-3">
+                      <ul className="grid grid-cols-2 gap-x-4 gap-y-1 pb-3">
                         {i.dropdown.map((d) => (
                           <li key={d.href}>
                             <Link
@@ -328,12 +353,8 @@ export function SiteHeader() {
                     </Link>
                   )
                 )}
-              <a
-                href={waGeneric}
-                className="mt-6 flex items-center justify-center gap-2 rounded-full bg-cta px-5 py-3.5 text-sm font-semibold text-white"
-              >
-                <WhatsApp size={18} /> Book a free consultation
-              </a>
+              {/* No CTA button here — the sticky WhatsApp bar already covers the
+                  mobile conversion action, so a second one in the drawer is redundant. */}
             </nav>
           </Container>
         </div>

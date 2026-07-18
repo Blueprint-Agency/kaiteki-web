@@ -34,8 +34,8 @@ export default function Home() {
           {/* pt-[68px] offsets the -mt on the section so content clears the
               transparent header; the fold sizes to its content, not the viewport. */}
           <div className="grid items-end gap-x-10 pt-[68px] lg:grid-cols-[minmax(0,1fr)_minmax(0,50%)]">
-            {/* Copy column */}
-            <div className="pb-10 pt-10 sm:pt-14 lg:self-center lg:pb-24 lg:pt-16">
+            {/* Copy column — centred on mobile, left-aligned from lg up */}
+            <div className="pb-10 pt-10 text-center sm:pt-14 lg:self-center lg:pb-24 lg:pt-16 lg:text-left">
               <p className="rise text-xs font-semibold uppercase tracking-[0.14em] text-accent" style={si(0)}>
                 {site.tagline}
               </p>
@@ -44,14 +44,14 @@ export default function Home() {
                 style={{ letterSpacing: "-0.02em" }}
               >
                 <span className="mask-line text-balance" style={si(0)}>
-                  Considered skin &amp; aesthetic care, across Malaysia.
+                  Japanese-inspired skin &amp; aesthetic care, across Malaysia.
                 </span>
               </h1>
-              <p className="rise prose mt-5 max-w-[46ch] text-lg leading-relaxed text-ink-700" style={si(1)}>
+              <p className="rise prose mt-5 max-w-[46ch] text-lg leading-relaxed text-ink-700 mx-auto lg:mx-0" style={si(1)}>
                 Nine branches nationwide. Every treatment is assessed and carried out
                 by registered doctors — a calm, informed decision about your skin.
               </p>
-              <div className="rise mt-7 flex flex-col items-start gap-5" style={si(2)}>
+              <div className="rise mt-7 flex flex-col items-center gap-5 lg:items-start" style={si(2)}>
                 <WhatsAppButton size="lg" label="Book a Free Consultation" />
                 <Link
                   href="/treatments"
@@ -65,7 +65,7 @@ export default function Home() {
               </div>
 
               {/* One quiet trust line — no card chrome, keeps the fold calm */}
-              <p className="rise mt-10 hidden items-center gap-2.5 text-sm text-ink-500 sm:flex" style={si(3)}>
+              <p className="rise mt-10 hidden items-center justify-center gap-2.5 text-sm text-ink-500 sm:flex lg:justify-start" style={si(3)}>
                 <MapPin size={16} className="shrink-0 text-accent" />
                 <span>
                   9 branches across KL, Selangor, Johor &amp; Sabah —{" "}

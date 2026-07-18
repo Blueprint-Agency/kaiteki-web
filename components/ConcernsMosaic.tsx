@@ -45,13 +45,16 @@ export function ConcernsMosaic() {
           </Link>
         </div>
 
-        <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5">
+        {/* Mobile: horizontal snap-scroll carousel (cards peek at the edge).
+            sm+: reverts to the static 3-col grid. -mx/px lets cards bleed to the
+            screen edge past the Container padding on mobile only. */}
+        <div className="mt-10 -mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:mx-0 sm:grid sm:grid-cols-3 sm:gap-5 sm:overflow-visible sm:px-0 sm:pb-0">
           {six.map((c, i) => (
             <FlipCard
               key={c.slug}
               href={`/concerns/${c.slug}`}
               ariaLabel={`${c.name} — read the concern guide`}
-              className="reveal"
+              className="reveal w-[78%] shrink-0 snap-start sm:w-auto"
               style={si(i)}
               front={
                 <>

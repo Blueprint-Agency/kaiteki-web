@@ -59,7 +59,9 @@ export default async function BranchPage({
       <div className="mt-8 grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
         <div>
           <p className="text-sm font-medium text-accent">{b.region}</p>
-          <h1 className="mt-2 text-3xl font-bold text-espresso sm:text-4xl">Kaiteki {b.name}</h1>
+          <h1 className="mt-2 font-serif text-4xl font-semibold leading-[1.1] tracking-tight text-espresso sm:text-5xl">
+            Kaiteki {b.name}
+          </h1>
           {b.alsoKnownAs && (
             <p className="mt-2 text-sm text-ink-500">
               Also known as <span className="font-medium text-ink-700">{b.alsoKnownAs}</span>

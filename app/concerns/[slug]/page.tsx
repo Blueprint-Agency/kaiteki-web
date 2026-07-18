@@ -77,7 +77,7 @@ export default async function ConcernPage({
 
       <div className="mt-8 max-w-3xl">
         <p className="text-sm font-medium text-accent">Concern · {c.group}</p>
-        <h1 className="mt-2 text-3xl font-bold leading-tight text-espresso sm:text-4xl">
+        <h1 className="mt-2 font-serif text-4xl font-semibold leading-[1.1] tracking-tight text-espresso sm:text-5xl">
           {c.name}
         </h1>
         <div className="mt-6">

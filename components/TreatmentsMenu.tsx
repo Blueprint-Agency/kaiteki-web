@@ -35,13 +35,14 @@ export function TreatmentsMenu() {
           </Link>
         </div>
 
-        <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5">
+        {/* Mobile: horizontal snap-scroll carousel; sm+ reverts to the 3-col grid. */}
+        <div className="mt-10 -mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:mx-0 sm:grid sm:grid-cols-3 sm:gap-5 sm:overflow-visible sm:px-0 sm:pb-0">
           {six.map((t, i) => (
             <FlipCard
               key={t.slug}
               href={treatmentHref(t)}
               ariaLabel={`${t.name} — read the treatment guide`}
-              className="reveal"
+              className="reveal w-[78%] shrink-0 snap-start sm:w-auto"
               style={si(i)}
               front={
                 <div className="relative h-full w-full overflow-hidden rounded-[1.75rem]">
