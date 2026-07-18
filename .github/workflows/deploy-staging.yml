@@ -1,0 +1,59 @@
+name: Deploy kaiteki-web (staging)
+
+# Builds the revamped kaiteki site image, pushes it to Docker Hub, and deploys to
+# BPVPS1 over Tailscale → staging.kaiteki.my. The running compose file is owned by
+# the infrastructure repo (vps/bpvps1/stacks/kaiteki-staging/).
+on:
+  push:
+    branches: [staging]
+  workflow_dispatch:
+
+env:
+  IMAGE: blueprintagency/kaiteki-web
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ vars.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and push image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: |
+            ${{ env.IMAGE }}:staging
+            ${{ env.IMAGE }}:${{ github.sha }}
+
+      - name: Connect to Tailscale
+        uses: tailscale/github-action@v4
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
+          ping: ${{ vars.BPVPS1_TAILSCALE_HOST }}
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" | tr -d '\r' > ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+          ssh-keyscan -H "${{ vars.BPVPS1_TAILSCALE_HOST }}" >> ~/.ssh/known_hosts 2>/dev/null || true
+
+      - name: Deploy on BPVPS1
+        run: |
+          ssh -i ~/.ssh/id_deploy -o StrictHostKeyChecking=no \
+            "deploy@${{ vars.BPVPS1_TAILSCALE_HOST }}" '
+            set -e
+            cd /root/stacks/kaiteki-staging
+            docker compose pull
+            docker compose up -d --remove-orphans
+            docker image prune -af
+          '
