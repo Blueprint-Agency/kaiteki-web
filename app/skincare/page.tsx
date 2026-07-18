@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/Container";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { PageHeader } from "@/components/PageHeader";
 import { ProductCard } from "@/components/cards";
 import { CardRow } from "@/components/CardRow";
 import { WhatsApp } from "@/components/icons";
@@ -40,16 +40,12 @@ const itemListJsonLd = {
 export default function SkincareHub() {
   return (
     <Container className="py-10 sm:py-12">
-      <Breadcrumbs items={[{ label: "Skincare" }]} />
-
-      <div className="mt-8 max-w-2xl">
-        <p className="text-sm font-medium text-accent">Kaiteki® Cosmeceuticals</p>
-        <h1 className="mt-2 text-3xl font-bold text-espresso sm:text-4xl">Skincare</h1>
-        <p className="mt-4 text-lg leading-relaxed text-ink-700">
-          Our medical-grade skincare range and the partner brands we use in clinic — order any
-          product on WhatsApp.
-        </p>
-      </div>
+      <PageHeader
+        crumbs={[{ label: "Skincare" }]}
+        eyebrow="Kaiteki® Cosmeceuticals"
+        title="Skincare"
+        description="Our medical-grade skincare range and the partner brands we use in clinic — order any product on WhatsApp."
+      />
 
       <div className="mt-12 space-y-14">
         {productGroups.map((group) => (

@@ -1,5 +1,5 @@
 import { Container } from "@/components/Container";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { PageHeader } from "@/components/PageHeader";
 import { BranchCard } from "@/components/cards";
 import { CardRow } from "@/components/CardRow";
 import { branches, regionOrder } from "@/content/data/branches";
@@ -15,14 +15,12 @@ export const metadata = pageMeta({
 export default function LocationsHub() {
   return (
     <Container className="py-10 sm:py-12">
-      <Breadcrumbs items={[{ label: "Locations" }]} />
-      <div className="mt-8 max-w-2xl">
-        <h1 className="text-3xl font-bold text-espresso sm:text-4xl">Our locations</h1>
-        <p className="prose mt-4 text-lg leading-relaxed text-ink-700">
-          Nine branches across Klang Valley, Johor and Sabah. Each branch page has full
-          address, opening hours and directions.
-        </p>
-      </div>
+      <PageHeader
+        crumbs={[{ label: "Locations" }]}
+        eyebrow="Nine branches"
+        title="Our locations"
+        description="Nine branches across Klang Valley, Johor and Sabah. Each branch page has full address, opening hours and directions."
+      />
       <div className="mt-12 space-y-12">
         {regionOrder.map((region) => (
           <section key={region}>

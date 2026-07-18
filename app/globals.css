@@ -219,10 +219,15 @@ body {
   transition: transform var(--dur-hero) var(--ease-out-expo);
   transform-style: preserve-3d;
 }
-.flip:hover .flip-inner,
-.flip:focus-visible .flip-inner,
-.flip:focus-within .flip-inner {
-  transform: rotateY(180deg);
+/* Flip only on hover-capable (non-touch) devices. On touch there's no hover, so
+   the tile stays on its front face — a static tappable card (keeps the 2-col grid,
+   drops the broken flip on mobile). */
+@media (hover: hover) {
+  .flip:hover .flip-inner,
+  .flip:focus-visible .flip-inner,
+  .flip:focus-within .flip-inner {
+    transform: rotateY(180deg);
+  }
 }
 .flip-face {
   position: absolute;
