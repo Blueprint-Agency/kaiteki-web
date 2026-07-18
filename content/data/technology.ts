@@ -24,6 +24,9 @@ export const technology: Technology[] = [
       "A picosecond aesthetic laser used within Pico laser treatment for pigmentation, uneven tone and tattoo ink.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "PicoSure Picosecond Laser Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "PicoSure is a picosecond laser used within Pico Laser treatment for pigmentation, uneven tone and tattoo ink. Book a free consultation to check suitability.",
   },
   {
     slug: "fotona-pqx",
@@ -37,6 +40,9 @@ export const technology: Technology[] = [
       "A picosecond laser platform, also known as StarWalker, used within Pico laser treatment for pigment and tattoo concerns.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "Fotona PQX (StarWalker) Laser Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Fotona PQX, also known as StarWalker, is a picosecond laser used within Pico Laser treatment for pigment and tattoo concerns. Book a free consultation today.",
   },
   {
     slug: "picocare",
@@ -49,6 +55,9 @@ export const technology: Technology[] = [
       "A picosecond laser device used within Pico laser treatment for pigmentation and tattoo removal.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "PicoCare Picosecond Laser Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "PicoCare is a picosecond laser used within Pico Laser treatment for pigmentation and tattoo removal concerns. Book a free consultation to check suitability.",
   },
   {
     slug: "fotona-sp-dynamis",
@@ -62,6 +71,9 @@ export const technology: Technology[] = [
       "An Nd:YAG and Er:YAG laser platform used to deliver Kaiteki's Fotona 4D facial protocol.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "Fotona SP Dynamis (TimeWalker) Laser Malaysia | Kaiteki",
+    seoDescription:
+      "Fotona SP Dynamis, also called TimeWalker, is the laser platform behind Kaiteki's Fotona 4D facial protocol. Book a free consultation to check if it suits you.",
   },
   {
     slug: "dermav",
@@ -154,6 +166,9 @@ export const technology: Technology[] = [
     ],
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "DermaV Vascular & Pigment Laser Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "DermaV is a dual-wavelength laser used at Kaiteki for facial redness, visible vessels and pigment concerns. Book a free consultation to check your suitability.",
   },
   {
     slug: "pro-yellow",
@@ -166,6 +181,9 @@ export const technology: Technology[] = [
       "A 577nm yellow-light laser used for vascular concerns such as facial redness and visible vessels.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "Pro Yellow 577nm Vascular Laser Malaysia | Kaiteki",
+    seoDescription:
+      "Pro Yellow (Quadrostar 577nm) is a yellow-light laser used at Kaiteki for facial redness and visible vessels. Book a free consultation to assess suitability.",
   },
   {
     slug: "m22-ipl",
@@ -178,6 +196,9 @@ export const technology: Technology[] = [
       "An intense pulsed light (IPL) platform that can be filtered for vascular or pigment targets and used for hair reduction.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "M22 IPL Laser Treatment Price in Malaysia | Kaiteki",
+    seoDescription:
+      "M22 IPL is an intense pulsed light platform used at Kaiteki for vascular, pigment and hair-reduction concerns. Book a free consultation to find what suits you.",
   },
   {
     slug: "fractional-co2",
@@ -190,6 +211,9 @@ export const technology: Technology[] = [
       "A fractional CO2 laser that creates controlled micro-injury columns, used within resurfacing-laser treatment for texture and scarring.",
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-07-18",
+    seoTitle: "Fractional CO2 Laser Resurfacing Malaysia | Kaiteki",
+    seoDescription:
+      "Fractional CO2 is a resurfacing laser used within Kaiteki's resurfacing-laser treatment for texture and scarring concerns. Book a free consultation today.",
   },
 
   // ── Lifting & Tightening ────────────────────────────────────────────────
@@ -204,6 +228,9 @@ export const technology: Technology[] = [
       "A high-intensity focused ultrasound (HIFU) device used for non-surgical skin-lifting and tightening concerns.",
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-07-18",
+    seoTitle: "Ultracel Q HIFU Skin-Lifting Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Ultracel Q is a HIFU device used at Kaiteki for non-surgical skin-lifting and tightening concerns. Book a free consultation to check if it suits your skin.",
   },
   {
     slug: "lifthera",
@@ -216,6 +243,9 @@ export const technology: Technology[] = [
       "A focused-ultrasound device used within HIFU treatment for skin-lifting and tightening concerns.",
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-07-18",
+    seoTitle: "Lifthera HIFU Skin-Lifting Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Lifthera is a focused-ultrasound device used within Kaiteki's HIFU treatment for skin-lifting and tightening concerns. Book a free consultation to learn more.",
   },
   {
     slug: "ultherapy-system",
@@ -229,6 +259,9 @@ export const technology: Technology[] = [
       "A micro-focused ultrasound platform with built-in ultrasound imaging used for non-surgical lifting of the face and neck.",
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-07-18",
+    seoTitle: "Ultherapy System Non-Surgical Lifting Malaysia | Kaiteki",
+    seoDescription:
+      "The Ultherapy System uses micro-focused ultrasound with built-in imaging for non-surgical face and neck lifting. Book a free consultation to learn more.",
   },
   {
     slug: "sylfirm-x",
@@ -241,6 +274,9 @@ export const technology: Technology[] = [
       "A radiofrequency microneedling device with pulsed and continuous modes used for pigment, vascular and texture concerns.",
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-07-18",
+    seoTitle: "Sylfirm X RF Microneedling Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Sylfirm X is a radiofrequency microneedling device used at Kaiteki for pigment, vascular and texture concerns. Book a free consultation to check suitability.",
   },
   {
     slug: "morpheus8",
@@ -253,6 +289,9 @@ export const technology: Technology[] = [
       "A radiofrequency microneedling device offering deeper RF penetration, used for skin-tightening and texture concerns.",
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-07-18",
+    seoTitle: "Morpheus8 RF Microneedling Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Morpheus8 is a radiofrequency microneedling device offering deeper penetration, used at Kaiteki for skin-tightening and texture. Book a free consultation today.",
   },
   {
     slug: "potenza",
@@ -266,6 +305,9 @@ export const technology: Technology[] = [
       "A radiofrequency microneedling device with adjustable depth and monopolar/bipolar modes, used for scarring and pore concerns.",
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-07-18",
+    seoTitle: "Potenza RF Microneedling Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Potenza is a radiofrequency microneedling device with adjustable depth used at Kaiteki for scarring and pore concerns. Book a free consultation to learn more.",
   },
   {
     slug: "btl-exilis",
@@ -278,6 +320,9 @@ export const technology: Technology[] = [
       "A monopolar radiofrequency device that delivers deep, uniform heating, used for skin-firmness and texture concerns.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "BTL Exilis Radiofrequency Skin Firming Malaysia | Kaiteki",
+    seoDescription:
+      "BTL Exilis is a monopolar radiofrequency device that delivers deep, uniform heating for skin-firmness and texture at Kaiteki. Book a free consultation today.",
   },
   {
     slug: "wonderface",
@@ -290,6 +335,9 @@ export const technology: Technology[] = [
       "A radiofrequency platform with precise energy control used for skin-firmness and contour concerns of the face.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "Wonderface Radiofrequency Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Wonderface is a radiofrequency platform with precise energy control used at Kaiteki for skin-firmness and facial contour. Book a free consultation today.",
   },
 
   // ── Body & Slimming ─────────────────────────────────────────────────────
@@ -387,6 +435,9 @@ export const technology: Technology[] = [
     ],
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-07-18",
+    seoTitle: "CoolSculpting Fat-Freezing Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "CoolSculpting is a cryolipolysis device using controlled cooling to target pockets of localised fat. Book a free consultation at Kaiteki to check suitability.",
   },
   {
     slug: "cooltech",
@@ -399,6 +450,9 @@ export const technology: Technology[] = [
       "A cryolipolysis device that uses controlled cooling to target pockets of localised fat.",
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-07-18",
+    seoTitle: "Cooltech Cryolipolysis Fat-Freezing Malaysia | Kaiteki",
+    seoDescription:
+      "Cooltech is a cryolipolysis device that uses controlled cooling to target pockets of localised fat at Kaiteki. Book a free consultation to check suitability.",
   },
   {
     slug: "onda-coolwaves",
@@ -492,6 +546,9 @@ export const technology: Technology[] = [
     ],
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-07-18",
+    seoTitle: "Onda Coolwaves Body & Face Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Onda uses microwave-based Coolwaves technology at Kaiteki for localised fat, cellulite appearance and facial firmness. Book a free consultation to learn more.",
   },
   {
     slug: "schwarzy",
@@ -504,6 +561,9 @@ export const technology: Technology[] = [
       "An electromagnetic muscle-stimulation device used to induce muscle contractions for body-toning concerns.",
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-07-18",
+    seoTitle: "Schwarzy (Em-Fit) Muscle-Toning Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Schwarzy (Em-Fit) is an electromagnetic muscle-stimulation device used at Kaiteki to induce contractions for body-toning concerns. Book a free consultation.",
   },
 
   // ── Injectables ─────────────────────────────────────────────────────────
@@ -519,6 +579,9 @@ export const technology: Technology[] = [
       "A high-concentration hyaluronic acid injectable used within skin-booster treatment for hydration and skin remodelling.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "Profhilo Skin Booster Treatment in Malaysia | Kaiteki",
+    seoDescription:
+      "Profhilo is a high-concentration hyaluronic acid injectable used within Kaiteki's skin-booster treatment for hydration. Book a free consultation to learn more.",
   },
   {
     slug: "rejuran",
@@ -531,6 +594,9 @@ export const technology: Technology[] = [
       "A polynucleotide (salmon PN/DNA) injectable used within skin-booster treatment to support the skin barrier.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "Rejuran Skin Booster Injectable Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Rejuran is a polynucleotide injectable used within Kaiteki's skin-booster treatment to support the skin barrier. Book a free consultation to check suitability.",
   },
   {
     slug: "plinest",
@@ -543,6 +609,9 @@ export const technology: Technology[] = [
       "A polynucleotide-based injectable used within skin-booster treatment to support skin regeneration and elasticity.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "Plinest/Newest Skin Booster Injectable Malaysia | Kaiteki",
+    seoDescription:
+      "Plinest/Newest is a polynucleotide-based injectable used within Kaiteki's skin-booster treatment for regeneration and elasticity. Book a free consultation.",
   },
   {
     slug: "restylane-skinbooster",
@@ -555,6 +624,9 @@ export const technology: Technology[] = [
       "A hyaluronic-acid injectable range used within skin-booster treatment to support skin hydration and quality.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "Restylane Skinboosters Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Restylane Skinboosters is a hyaluronic-acid range used within Kaiteki's skin-booster treatment to support hydration and skin quality. Book a free consultation.",
   },
   {
     slug: "hydrodeluxe",
@@ -567,6 +639,9 @@ export const technology: Technology[] = [
       "A hydrating injectable formulation used within skin-booster treatment to support skin moisture and quality.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "Hydrodeluxe Hydrating Skin Booster Malaysia | Kaiteki",
+    seoDescription:
+      "Hydrodeluxe is a hydrating injectable formulation used within Kaiteki's skin-booster treatment to support moisture and skin quality. Book a free consultation.",
   },
   {
     slug: "sculptra",
@@ -580,6 +655,9 @@ export const technology: Technology[] = [
       "A poly-L-lactic acid (PLLA) injectable used within bio-stimulator treatment to support gradual structural renewal.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "Sculptra Bio-Stimulator Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Sculptra is a poly-L-lactic acid injectable used within Kaiteki's bio-stimulator treatment to support gradual structural renewal. Book a free consultation.",
   },
   {
     slug: "ellanse",
@@ -592,6 +670,9 @@ export const technology: Technology[] = [
       "A polycaprolactone (PCL) injectable used within bio-stimulator treatment as a collagen-stimulating injectable.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "Ellanse Bio-Stimulator Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Ellanse is a polycaprolactone injectable used within Kaiteki's bio-stimulator treatment as a collagen-supporting option. Book a free consultation to learn more.",
   },
   {
     slug: "radiesse",
@@ -604,6 +685,9 @@ export const technology: Technology[] = [
       "A calcium hydroxylapatite (CaHA) injectable used within bio-stimulator treatment with collagen-supporting properties.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "Radiesse Bio-Stimulator Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Radiesse is a calcium hydroxylapatite injectable used within Kaiteki's bio-stimulator treatment with collagen-supporting properties. Book a free consultation.",
   },
   {
     slug: "juvederm",
@@ -616,6 +700,9 @@ export const technology: Technology[] = [
       "A hyaluronic-acid dermal filler range used to add volume and support facial contour.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "Juvederm Dermal Filler Treatment in Malaysia | Kaiteki",
+    seoDescription:
+      "Juvederm is a hyaluronic-acid dermal filler range used at Kaiteki to add volume and support facial contour. Book a free consultation to check suitability.",
   },
   {
     slug: "restylane",
@@ -628,6 +715,9 @@ export const technology: Technology[] = [
       "A hyaluronic-acid dermal filler range used to add volume and support facial contour.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "Restylane Dermal Filler Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Restylane is a hyaluronic-acid dermal filler range used at Kaiteki to add volume and support facial contour. Book a free consultation to learn more.",
   },
   {
     slug: "belotero",
@@ -640,6 +730,9 @@ export const technology: Technology[] = [
       "A hyaluronic-acid dermal filler range used to add volume and soften static lines.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "Belotero Dermal Filler Treatment in Malaysia | Kaiteki",
+    seoDescription:
+      "Belotero is a hyaluronic-acid dermal filler range used at Kaiteki to add volume and soften static lines. Book a free consultation to check suitability.",
   },
 
   // ── Facials ─────────────────────────────────────────────────────────────
@@ -654,6 +747,9 @@ export const technology: Technology[] = [
       "A device-based facial that cleanses, exfoliates and infuses serums to support skin quality.",
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-07-18",
+    seoTitle: "Hydrafacial Device-Based Facial Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Hydrafacial is a device-based facial that cleanses, exfoliates and infuses serums to support skin quality at Kaiteki. Book a free consultation to learn more.",
   },
   {
     slug: "silkpeel",
@@ -666,6 +762,9 @@ export const technology: Technology[] = [
       "A device-based facial that combines exfoliation with simultaneous infusion of topical solutions.",
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-07-18",
+    seoTitle: "Silkpeel Dermalinfusion Facial Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Silkpeel is a device-based facial combining exfoliation with infusion of topical solutions at Kaiteki. Book a free consultation to check what suits your skin.",
   },
 
   // ── Hair Removal ────────────────────────────────────────────────────────
@@ -680,6 +779,9 @@ export const technology: Technology[] = [
       "A hair-removal platform combining IPL and radiofrequency energy to target hair follicles over a course of sessions.",
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
+    seoTitle: "Alma IPL + RF Hair Removal Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Alma combines IPL and radiofrequency energy at Kaiteki to target hair follicles over a course of sessions. Book a free consultation to discuss your goals.",
   },
 ];
 

@@ -28,6 +28,8 @@ export const branches: Branch[] = [
     parking: "Covered parking at Arcoris Plaza.",
     serves: ["Mont Kiara", "Sri Hartamas", "Desa ParkCity", "Dutamas", "Segambut"],
     treatments: ["pico-laser", "hifu", "ultherapy", "coolsculpting"],
+    seoTitle: "Aesthetic Clinic in Mont Kiara, Kuala Lumpur | Kaiteki",
+    seoDescription: "Kaiteki's aesthetic clinic in Mont Kiara offers pico laser, HIFU & skin boosters. See hours, address & doctors. Book a free consultation via WhatsApp.",
   },
   {
     slug: "cheras", name: "Cheras", city: "Kuala Lumpur", state: "WP Kuala Lumpur", region: "Klang Valley",
@@ -39,6 +41,8 @@ export const branches: Branch[] = [
     parking: "Street and building parking nearby.",
     serves: ["Cheras", "Desa Aman", "Taman Connaught", "Bandar Sri Permaisuri", "Sungai Long"],
     treatments: ["pico-laser", "hifu", "skin-booster"],
+    seoTitle: "Aesthetic Clinic in Cheras, Kuala Lumpur | Kaiteki",
+    seoDescription: "Visit Kaiteki's aesthetic clinic in Cheras for pico laser, HIFU & skin booster consultations. Check address, hours & doctors. Book free via WhatsApp.",
   },
   {
     slug: "bukit-jalil", name: "Bukit Jalil", city: "Kuala Lumpur", state: "WP Kuala Lumpur", region: "Klang Valley",
@@ -50,9 +54,12 @@ export const branches: Branch[] = [
     parking: "Ground-level parking around Jalil Link.",
     serves: ["Bukit Jalil", "Sri Petaling", "Puchong", "Bukit Kinrara", "Old Klang Road"],
     treatments: ["pico-laser", "fotona-4d", "microneedling"],
+    seoTitle: "Aesthetic Clinic in Bukit Jalil, Kuala Lumpur | Kaiteki",
+    seoDescription: "Kaiteki's aesthetic clinic in Bukit Jalil offers pico laser, Fotona 4D & microneedling assessments. See address, hours & doctors. Book free on WhatsApp.",
   },
   {
     slug: "four-seasons-kl", name: "Four Seasons KL", city: "Kuala Lumpur", state: "WP Kuala Lumpur", region: "Klang Valley",
+    alsoKnownAs: "La Jung Clinic by Kaiteki",
     photo: "/images/branches/four-seasons-kl.jpg",
     address: "L4A-1, Level 4A, Shoppes at Four Seasons Place-KL, No 145 Jalan Ampang, 50450 Kuala Lumpur",
     phone: "+6011-1427 8916",
@@ -66,6 +73,8 @@ export const branches: Branch[] = [
     parking: "Valet and mall parking at Four Seasons Place.",
     serves: ["KLCC", "Kuala Lumpur city centre", "Bukit Bintang", "Ampang", "Kampung Baru"],
     treatments: ["ultherapy", "hifu", "skin-booster"],
+    seoTitle: "Aesthetic Clinic Near KLCC, Ampang & Four Seasons | Kaiteki",
+    seoDescription: "Kaiteki's clinic at Four Seasons Place serves KLCC, Ampang & Bukit Bintang with Ultherapy, HIFU & skin booster consultations. Book free on WhatsApp.",
   },
   {
     slug: "petaling-jaya", name: "Petaling Jaya", city: "Petaling Jaya", state: "Selangor", region: "Klang Valley",
@@ -77,6 +86,8 @@ export const branches: Branch[] = [
     parking: "Covered parking at The Hub SS2.",
     serves: ["Petaling Jaya", "SS2", "Damansara", "Kelana Jaya", "Section 17"],
     treatments: ["pico-laser", "coolsculpting", "onda"],
+    seoTitle: "Aesthetic Clinic in Petaling Jaya, Selangor | Kaiteki",
+    seoDescription: "Kaiteki's aesthetic clinic in Petaling Jaya (SS2) offers pico laser, CoolSculpting & Onda consultations. See hours & doctors. Book free via WhatsApp.",
   },
   {
     slug: "kota-kemuning", name: "Kota Kemuning", city: "Shah Alam", state: "Selangor", region: "Klang Valley",
@@ -88,6 +99,8 @@ export const branches: Branch[] = [
     parking: "On-street parking by the shoplots.",
     serves: ["Kota Kemuning", "Shah Alam", "Bukit Rimau", "Alam Impian", "Bandar Saujana Putra"],
     treatments: ["pico-laser", "hifu", "microneedling"],
+    seoTitle: "Aesthetic Clinic in Kota Kemuning, Shah Alam | Kaiteki",
+    seoDescription: "Kaiteki's aesthetic clinic in Kota Kemuning, Shah Alam offers facials, pico laser & HIFU consultations. See address & hours. Book free via WhatsApp.",
   },
   {
     slug: "southkey-johor-bahru", name: "Southkey, Johor Bahru", city: "Johor Bahru", state: "Johor", region: "Johor",
@@ -99,6 +112,8 @@ export const branches: Branch[] = [
     parking: "Commercial-area parking beside Mid Valley Southkey.",
     serves: ["Johor Bahru", "Southkey", "Mount Austin", "Tebrau", "Taman Molek"],
     treatments: ["pico-laser", "hifu", "coolsculpting"],
+    seoTitle: "Aesthetic Clinic in Southkey, Johor Bahru | Kaiteki",
+    seoDescription: "Kaiteki's aesthetic clinic at Southkey, Johor Bahru offers pico laser, HIFU & CoolSculpting consultations. See hours & doctors. Book free on WhatsApp.",
   },
   {
     slug: "pelangi-johor-bahru", name: "Pelangi, Johor Bahru", city: "Johor Bahru", state: "Johor", region: "Johor",
@@ -110,6 +125,8 @@ export const branches: Branch[] = [
     parking: "On-street parking around the commercial blocks.",
     serves: ["Johor Bahru", "Taman Pelangi", "Century Garden", "Taman Sentosa", "Taman Abad"],
     treatments: ["pico-laser", "skin-booster"],
+    seoTitle: "Aesthetic Clinic in Taman Pelangi, Johor Bahru | Kaiteki",
+    seoDescription: "Kaiteki's aesthetic clinic in Taman Pelangi, Johor Bahru offers pico laser & skin booster consultations. See address & hours. Book free via WhatsApp.",
   },
   {
     slug: "kota-kinabalu", name: "Kota Kinabalu", city: "Kota Kinabalu", state: "Sabah", region: "Sabah",
@@ -123,6 +140,8 @@ export const branches: Branch[] = [
     parking: "Covered mall parking at Imago / KK Times Square.",
     serves: ["Kota Kinabalu", "Imago", "Sutera Harbour", "Likas", "Penampang"],
     treatments: ["pico-laser", "hifu", "fotona-4d"],
+    seoTitle: "Aesthetic Clinic in Kota Kinabalu, Sabah | Kaiteki",
+    seoDescription: "Kaiteki's aesthetic clinic in Kota Kinabalu (Imago) offers pico laser, HIFU & Fotona 4D consultations. See hours & doctors. Book free via WhatsApp.",
   },
 ];
 

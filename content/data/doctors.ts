@@ -21,6 +21,9 @@ export const doctors: Doctor[] = [
       "She also emphasizes on healthy aging and believes that everyone at every stage of life deserves to be confident thus improving quality in all aspects. Being a committed doctor, she always devotes time in managing patient's concern and expectations in order to produce safe and effective results.",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Jessie Lim — Founder & CEO, Aesthetic Physician | Kaiteki",
+    seoDescription:
+      "Dr Jessie Lim (LCP), Kaiteki aesthetic physician, focuses on injectables & aesthetic lasers. Review credentials, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-chew-yuhhui",
@@ -38,6 +41,9 @@ export const doctors: Doctor[] = [
       "On the days she is not seeing patients , she enjoys blogging and dabbling in video making.",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Chew Yuhhui — Senior Medical Director | Kaiteki",
+    seoDescription:
+      "Dr Chew Yuhhui (MBBS, LCP), Kaiteki aesthetic physician, focuses on lasers & injectables. Review credentials, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-yeong-bin",
@@ -53,6 +59,9 @@ export const doctors: Doctor[] = [
       "Dr Yeong Bin firmly believes that every individual is unique, hence he constantly seeks to engage with his clients and attain a clear understanding before drafting customised treatment plans for them.",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Yeong Bin, Senior Medical Director — Kaiteki Clinic",
+    seoDescription:
+      "Dr Yeong Bin (MBBS, MAC), Kaiteki aesthetic physician, focuses on minimally invasive treatments. Review credentials, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-william-yap",
@@ -68,6 +77,9 @@ export const doctors: Doctor[] = [
       "Dr William believes that aging is inevitable, but to age gracefully is the key. He is very passionate in helping his patients improve their outer appearance and build their confidence.",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr William Yap — Partner, Aesthetic Physician | Kaiteki",
+    seoDescription:
+      "Dr William Yap (MD, LCP), Kaiteki aesthetic physician, focuses on Rejuran injectables. Review credentials, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-lim-xiao-chien",
@@ -84,6 +96,9 @@ export const doctors: Doctor[] = [
       "Ageing is inevitable so why not practice self-love? Self-love doesn't necessarily mean just a healthy lifestyle, it can also include getting better skin or features.",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Lim Xiao Chien — Partner, Aesthetic Physician | Kaiteki",
+    seoDescription:
+      "Dr Lim Xiao Chien (MBBS, MAC) practises minimally invasive treatments at Kaiteki. Review credentials and branch info, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-jeremy-low",
@@ -98,6 +113,9 @@ export const doctors: Doctor[] = [
       "Dr Jeremy has helped many patients bring out their inner beauty and confidence by enhancing their outer appearances. His warm-hearted personality has given many patients comfort and assurance during consultations and treatments. He was awarded Excellence Service Award (APC) by the State Ministry of Health in recognition of his excellence service. Dr Jeremy loves sharing his knowledge with his patients, providing them with an in-depth understanding of the treatment options and process, tailored to each individual needs and desired outcome. Patient's well-being and satisfaction are his utmost priorities!",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Jeremy Low — Partner, Aesthetic Physician | Kaiteki",
+    seoDescription:
+      "Dr Jeremy Low (MBBS, MAC), Kaiteki aesthetic physician, focuses on acne, rosacea & pigmentation. Review credentials, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-chang-chee-seong",
@@ -113,6 +131,9 @@ export const doctors: Doctor[] = [
       "Through continuous learning and dedication, Dr Chang has become proficient in the latest techniques and advancement in hair restoration procedures. His comprehensive approach to treatment encompasses both surgical and non-surgical options, tailored to meet the unique needs and preference of each patient.",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Chang Chee Seong — Wellness Physician | Kaiteki",
+    seoDescription:
+      "Dr Chang Chee Seong (MD, MAC), Kaiteki aesthetic physician, focuses on hair restoration. Review credentials, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-jacqueline-tan",
@@ -128,6 +149,9 @@ export const doctors: Doctor[] = [
       "Dr. Jac believes that everyone is beautiful in their own way. She will helps you achieve a more youthful appearance in order to boost your confidence, mindset, and overall enjoyment of everyday life.",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Jacqueline Tan, Aesthetic Physician — Kaiteki Clinic",
+    seoDescription:
+      "Dr Jacqueline Tan (MBBS, MSc), Kaiteki aesthetic physician, focuses on healthy-aging aesthetics. Review credentials, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-joaan-kong",
@@ -143,6 +167,9 @@ export const doctors: Doctor[] = [
       "She is a also a gym enthusiast and enjoy the adrenaline rush of adventurous activities. She believes that fitness and positive mindset enhance beauty and make you glow from within.",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Joaan Kong, Aesthetic Physician — Kaiteki Clinic",
+    seoDescription:
+      "Dr Joaan Kong (MBBS, LCP), Kaiteki aesthetic physician, focuses on paediatric-trained injectables. Review credentials, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-tim-chua",
@@ -157,6 +184,9 @@ export const doctors: Doctor[] = [
       "He has a passion for enhancing natural beauty and boosting self-confidence and specializes in personalized treatments that deliver natural looking results. Through continuous education and staying up-to-date with the latest advancements, Dr Tim's warm approach and artistic eye makes a competent practitioner in the industry and is committed to empowering individuals to embrace their unique beauty and feel confident in their own skin.",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Tim Chua — Aesthetic Physician | Kaiteki Clinic",
+    seoDescription:
+      "Dr Tim Chua (MBBS, MAC), Kaiteki aesthetic physician, focuses on personalised aesthetic treatments. Review credentials, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-calvin-tan",
@@ -172,6 +202,9 @@ export const doctors: Doctor[] = [
       "In medical aesthetics, he has passion for facial contouring and anti-aging treatments that emphasize natural yet harmonious results. He is driven by a commitment to his patients' satisfaction hence he strives to ensure that every patient leaves not only looking at their best outcome but also feeling confident and happy.",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Calvin Tan, Aesthetic Physician — Kaiteki Clinic",
+    seoDescription:
+      "Dr Calvin Tan (MD, MAC), Kaiteki aesthetic physician, focuses on facial contouring. Review credentials, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-lucas-chew",
@@ -187,6 +220,9 @@ export const doctors: Doctor[] = [
       "His patient-centered philosophy not only seeks to enhance appearance but also aims to boost confidence and promote overall well-being, ensuring every individual receives effective and innovative aesthetic care.",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Lucas Chew, Aesthetic Physician — Kaiteki Clinic",
+    seoDescription:
+      "Dr Lucas Chew (MBBS), Kaiteki aesthetic physician, focuses on evidence-based skin treatments. Review credentials, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-jade",
@@ -202,6 +238,9 @@ export const doctors: Doctor[] = [
       "Drawing from her experience in Sarawak family practice, what comes naturally to her is fostering meaningful and trusting relationships with her patients. She believes that it is with this rapport that she is able to truly see her patients more holistically , better understand their individual needs and expectations, and thus create a more a personalized and effective treatment plan for them.",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Jade, MBBS, LCP — Aesthetic Physician | Kaiteki",
+    seoDescription:
+      "Dr Jade (MBBS, LCP), Kaiteki aesthetic physician, focuses on anti-aging & holistic care. Review credentials, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-teresa-tan",
@@ -217,6 +256,9 @@ export const doctors: Doctor[] = [
       "Beyond her medical expertise, Dr. Teresa is an adventurous spirit who thrives on the excitement of travel and adrenaline-fueled activities. She views beauty as a catalyst for confidence and personal growth, empowering individuals to reach their full potential.",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Teresa Tan, Aesthetic Physician — Kaiteki Clinic",
+    seoDescription:
+      "Dr Teresa Tan (MD, MAC), Kaiteki aesthetic physician, focuses on skin rejuvenation. Review credentials, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-chin-wei-horng",
@@ -231,6 +273,9 @@ export const doctors: Doctor[] = [
       "As a qualified General Practitioner, Dr. Chin continually enhances his expertise through advanced professional training. His credentials include the Graduate Certificate in Family Medicine (GCFM, AFPM), Occupational Health Doctor (OHD, NIOSH), postgraduate Medical Aesthetic Certification (MAC), and accreditation as a Basic Life Support (BLS) Instructor under the American Heart Association. He is also a board-certified LCP aesthetic practitioner, reflecting his commitment to high standards and clinical excellence in aesthetic medicine.",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Chin Wei Horng, Aesthetic Physician — Kaiteki Clinic",
+    seoDescription:
+      "Dr Chin Wei Horng (MD, GCFM, MAC) practises general aesthetic medicine at Kaiteki. Review credentials and branch info, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-yvonne-chuah",
@@ -248,6 +293,9 @@ export const doctors: Doctor[] = [
       "Her favourite quote and personal belief is to always strive to be the best version of yourself.",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Yvonne Chuah, Aesthetic Physician — Kaiteki Clinic",
+    seoDescription:
+      "Dr Yvonne Chuah (MD, MAC), Kaiteki aesthetic physician, focuses on skin health & natural results. Review credentials, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-jamie-gan",
@@ -263,6 +311,9 @@ export const doctors: Doctor[] = [
       "Her approach is holistic and comprehensive, guided by the philosophy of natural, soft, and timeless enhancement. She focuses on preserving individuality while refining facial harmony through personalised treatment plans. Her goal is to deliver results that are refined, elegant, and enduring — allowing clients to look effortlessly refreshed and confident at every stage.",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Jamie Gan, Aesthetic Physician — Kaiteki Clinic",
+    seoDescription:
+      "Dr Jamie Gan (MD, PDAM), Kaiteki aesthetic physician, focuses on facial harmony & enhancement. Review credentials, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-jen-meng",
@@ -277,6 +328,9 @@ export const doctors: Doctor[] = [
       "Specialising in medical skincare and minimally invasive aesthetic treatments, Dr Jen Meng is dedicated to delivering natural, balanced, and refined results. Currently pursuing Medical Aesthetic Certification (MAC), he carefully evaluates patient concerns and creates personalised, safe, and effective treatment plans at Kaiteki Clinic",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Jen Meng — Aesthetic Physician | Kaiteki Clinic",
+    seoDescription:
+      "Dr Jen Meng (MBBS, MAC), Kaiteki aesthetic physician, focuses on facial anatomy & medical skincare. Review credentials, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-chloe-wan",
@@ -292,6 +346,9 @@ export const doctors: Doctor[] = [
       "Known for her gentle approach and attentive consultations, Dr Chloe prioritizes patients' safety, comfort and satisfaction. She is committed to continuously updating her knowledge and skills to stay aligned with the latest advancements in aesthetic medicine, ensuring that patients receive safe and effective care.",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Chloe Wan, Aesthetic Physician — Kaiteki Clinic",
+    seoDescription:
+      "Dr Chloe Wan (MBBS, MAC), Kaiteki aesthetic physician, focuses on skin rejuvenation & lasers. Review credentials, then book a free WhatsApp consultation.",
   },
   {
     slug: "dr-say-wei-xian",
@@ -308,6 +365,9 @@ export const doctors: Doctor[] = [
       "Dr Say values building genuine connections with her patients, creating a space where they feel heard, understood, and at ease. For her, it is not about doing more, but about doing what is right for each patient.",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
+    seoTitle: "Dr Say Wei Xian, Aesthetic Physician — Kaiteki Clinic",
+    seoDescription:
+      "Dr Say Wei Xian (MBBS, MAC) practises precise, natural-balanced results at Kaiteki. Review credentials and branch info, then book a free WhatsApp consultation.",
   },
 ];
 
