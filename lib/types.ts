@@ -50,6 +50,10 @@ export interface Treatment {
   lastReviewed: string; // ISO date
   kkliu: string;
   kkliuExpiry: string; // ISO date
+  /** SEO-optimized <title>, 50–60 chars, brand baked in (docs/10). */
+  seoTitle?: string;
+  /** SEO meta description, 140–160 chars (docs/10). */
+  seoDescription?: string;
 }
 
 export type TechType = "device" | "injectable";
@@ -77,6 +81,10 @@ export interface Technology {
   device?: string;
   reviewedBy?: string;
   lastReviewed?: string;
+  /** SEO-optimized <title>, 50–60 chars, brand baked in (docs/10). */
+  seoTitle?: string;
+  /** SEO meta description, 140–160 chars (docs/10). */
+  seoDescription?: string;
 }
 
 export interface Concern {
@@ -93,6 +101,10 @@ export interface Concern {
   faqs?: Faq[];
   reviewedBy: string;
   lastReviewed: string;
+  /** SEO-optimized <title>, 50–60 chars, brand baked in (docs/10). */
+  seoTitle?: string;
+  /** SEO meta description, 140–160 chars (docs/10). */
+  seoDescription?: string;
 }
 
 export interface Branch {
@@ -125,8 +137,15 @@ export interface Branch {
    *  left undefined until verified so no wrong coordinates ship. */
   lat?: number;
   lng?: number;
+  /** Sub-brand / trading name this branch also operates under (e.g. a co-located
+   *  concept clinic). Surfaced for search + disambiguation. */
+  alsoKnownAs?: string;
   /** Treatment slugs offered here (sample subset). */
   treatments: string[];
+  /** SEO-optimized <title>, 50–60 chars, brand baked in (docs/10). */
+  seoTitle?: string;
+  /** SEO meta description, 140–160 chars (docs/10). */
+  seoDescription?: string;
 }
 
 export interface Doctor {
@@ -148,6 +167,10 @@ export interface Doctor {
    *  personal handles + `linkedin` are a client data dependency (docs/05 §9). */
   instagram?: string;
   linkedin?: string;
+  /** SEO-optimized <title>, 50–60 chars, brand baked in (docs/10). */
+  seoTitle?: string;
+  /** SEO meta description, 140–160 chars (docs/10). */
+  seoDescription?: string;
 }
 
 /** Grouping for the skincare (cosmeceuticals) product hub — Kaiteki's own

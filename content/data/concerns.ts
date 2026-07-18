@@ -19,6 +19,9 @@ export const concerns: Concern[] = [
     treatments: ["pico-laser", "microneedling", "exosome-therapy"],
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-06-22",
+    seoTitle: "Acne Treatment & Scarring Care in Malaysia | Kaiteki",
+    seoDescription:
+      "Acne and acne scarring have different causes. A doctor-led acne treatment plan in Malaysia starts with assessment — book a free consultation with Kaiteki.",
     sections: [
       {
         heading: "What is acne?",
@@ -81,6 +84,9 @@ export const concerns: Concern[] = [
     treatments: ["pico-laser", "skin-booster", "vascular-pigment-laser"],
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-06-20",
+    seoTitle: "Pigmentation Treatment Options in Malaysia | Kaiteki",
+    seoDescription:
+      "Melasma, sun spots and post-inflammatory marks need different care. A doctor assesses your pigmentation before any treatment — book a free consultation.",
     sections: [
       {
         heading: "What is pigmentation?",
@@ -141,6 +147,9 @@ export const concerns: Concern[] = [
     treatments: ["microneedling", "pico-laser", "radiofrequency"],
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-06-18",
+    seoTitle: "Enlarged Pores Treatment & Assessment in Malaysia | Kaiteki",
+    seoDescription:
+      "Pore appearance is shaped by oil, texture, sun exposure and age. A doctor assesses your skin before an enlarged pores treatment — book a free consultation.",
     sections: [
       {
         heading: "What are enlarged pores?",
@@ -203,6 +212,9 @@ export const concerns: Concern[] = [
     treatments: ["hifu", "ultherapy", "skin-booster", "microneedling"],
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-06-16",
+    seoTitle: "Fine Lines & Wrinkles Treatment in Malaysia | Kaiteki",
+    seoDescription:
+      "Expression lines and static wrinkles are approached differently. A consultation identifies the right fine lines and wrinkles treatment — book a free session.",
     sections: [
       {
         heading: "What are fine lines and wrinkles?",
@@ -273,6 +285,9 @@ export const concerns: Concern[] = [
     treatments: ["skin-booster", "vascular-pigment-laser", "radiofrequency"],
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-06-14",
+    seoTitle: "Dark Eye Circle Treatment Assessment in Malaysia | Kaiteki",
+    seoDescription:
+      "Dark eye circles can be pigment, vascular or structural in cause. A doctor assesses yours before recommending treatment — book a free consultation with Kaiteki.",
     sections: [
       {
         heading: "What causes dark eye circles?",
@@ -336,6 +351,9 @@ export const concerns: Concern[] = [
     treatments: ["hifu", "fat-freezing", "radiofrequency"],
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-06-12",
+    seoTitle: "Face Contouring Treatment & Assessment in Malaysia | Kaiteki",
+    seoDescription:
+      "Jawline and chin definition are assessed individually before any face contouring treatment is suggested. Book a free consultation with a Kaiteki doctor.",
     sections: [
       {
         heading: "What is face contouring?",
@@ -397,6 +415,9 @@ export const concerns: Concern[] = [
     treatments: ["hifu", "ultherapy", "fotona-4d", "microwave-contouring"],
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-06-12",
+    seoTitle: "Non-Surgical Face Lifting Treatment in Malaysia | Kaiteki",
+    seoDescription:
+      "Firmness and skin laxity are assessed before any non-surgical face lifting treatment is discussed. Book a free consultation to find what may suit you.",
     sections: [
       {
         heading: "What is face lifting (as a concern)?",
@@ -461,6 +482,9 @@ export const concerns: Concern[] = [
     treatments: ["hifu", "ultherapy", "skin-booster", "bio-stimulator"],
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-06-10",
+    seoTitle: "Skin Ageing & Anti-Ageing Treatment in Malaysia | Kaiteki",
+    seoDescription:
+      "Skin ageing involves firmness, texture and volume changes over time. A consultation helps map an anti-ageing treatment plan — book a free session with Kaiteki.",
     sections: [
       {
         heading: "What is skin ageing?",
@@ -522,6 +546,9 @@ export const concerns: Concern[] = [
     treatments: ["fat-freezing", "microwave-contouring"],
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-06-08",
+    seoTitle: "Body Slimming Treatment & Assessment in Malaysia | Kaiteki",
+    seoDescription:
+      "Localised fat pockets are assessed individually — body slimming is not a weight-loss treatment. Book a free consultation to discuss suitable options today.",
     sections: [
       {
         heading: "What is body slimming / contouring?",
@@ -581,6 +608,9 @@ export const concerns: Concern[] = [
     treatments: ["exosome-therapy"],
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-06-06",
+    seoTitle: "Hair Loss Treatment & Assessment in Malaysia | Kaiteki",
+    seoDescription:
+      "Hair loss has several patterns and causes, and a doctor identifies yours before any treatment. Book a free hair loss consultation with Kaiteki today.",
     sections: [
       {
         heading: "Understanding hair loss",
@@ -645,6 +675,9 @@ export const concerns: Concern[] = [
     treatments: ["pico-laser"],
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-13",
+    seoTitle: "Laser Tattoo Removal Assessment in Malaysia | Kaiteki",
+    seoDescription:
+      "Ink type, colour, depth and skin type affect tattoo removal suitability and session count. A doctor assesses your tattoo — book a free consultation today.",
     sections: [
       {
         heading: "What is laser tattoo removal?",
@@ -707,6 +740,9 @@ export const concerns: Concern[] = [
     treatments: ["pico-laser", "vascular-pigment-laser"],
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-13",
+    seoTitle: "Birthmark Removal Assessment in Malaysia | Kaiteki",
+    seoDescription:
+      "Birthmarks vary widely in type and cause, and most are harmless. A doctor examines yours before discussing birthmark removal — book a free consultation.",
     sections: [
       {
         heading: "What is a birthmark?",
@@ -759,6 +795,9 @@ export const concerns: Concern[] = [
     treatments: ["vascular-pigment-laser"],
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-07-13",
+    seoTitle: "Vascular Lesions & Facial Redness Care in Malaysia | Kaiteki",
+    seoDescription:
+      "Thread veins, spider veins and persistent redness have several causes. A doctor assesses the type before any treatment — book a free consultation today.",
     sections: [
       {
         heading: "What are vascular lesions?",
@@ -814,6 +853,9 @@ export const concerns: Concern[] = [
     treatments: [],
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-07-13",
+    seoTitle: "Excessive Sweating Treatment & Assessment | Kaiteki",
+    seoDescription:
+      "Hyperhidrosis goes beyond normal temperature regulation and has several possible causes. A consultation helps assess your situation — book a free session today.",
     sections: [
       {
         heading: "What is excessive sweating?",

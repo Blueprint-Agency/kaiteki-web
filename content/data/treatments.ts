@@ -23,6 +23,9 @@ export const treatments: Treatment[] = [
     lastReviewed: "2026-06-20",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
+    seoTitle: "Pico Laser Malaysia | Pigmentation & Tattoo | Kaiteki",
+    seoDescription:
+      "Pico laser treatment for pigmentation, dull skin tone and tattoo removal in Malaysia. Book a free consultation with a Kaiteki doctor to assess suitability.",
     sections: [
       {
         heading: "What is Pico laser?",
@@ -118,6 +121,9 @@ export const treatments: Treatment[] = [
     lastReviewed: "2026-06-18",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
+    seoTitle: "HIFU Malaysia | Non-Surgical Lifting Treatment | Kaiteki",
+    seoDescription:
+      "HIFU treatment in Malaysia for non-surgical skin lifting and tightening concerns. Book a free consultation with a Kaiteki doctor to check suitability.",
     sections: [
       {
         heading: "What is HIFU?",
@@ -213,6 +219,9 @@ export const treatments: Treatment[] = [
     summary: "A focused-ultrasound platform used for lifting and tightening of the face and neck.",
     leadAnswer: "Ultherapy is a focused-ultrasound treatment used for non-surgical lifting and tightening of areas such as the brow, chin and neck. It works at set depths within the skin. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
     related: ["hifu", "fotona-4d"],
+    seoTitle: "Ultherapy Malaysia | Non-Surgical Face Lifting | Kaiteki",
+    seoDescription:
+      "Ultherapy treatment in Malaysia using focused ultrasound for non-surgical lifting and tightening. Book a free consultation to assess suitability at Kaiteki.",
     sections: [
       {
         heading: "What is Ultherapy?",
@@ -300,7 +309,7 @@ export const treatments: Treatment[] = [
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
   },
-  { slug: "fotona-4d", name: "Fotona Laser", category: "Lasers", image: "/images/treatments/fotona-laser.jpg", device: "Fotona", summary: "A multi-application Nd:YAG/Er:YAG laser platform, most often used at Kaiteki for its Fotona 4D facial-firming protocol.", leadAnswer: "Fotona Laser refers to Kaiteki's Fotona SP Dynamis / TimeWalker platform, an Nd:YAG and Er:YAG laser system offered in several application modes. Its best-known protocol, Fotona 4D, combines four modes to address facial firmness and skin-quality concerns. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.", related: ["hifu", "ultherapy"], reviewedBy: "dr-chew-yuhhui", lastReviewed: "2026-06-15", kkliu: "KKLIU 0000/2026 (sample)", kkliuExpiry: "2026-12-31",
+  { slug: "fotona-4d", name: "Fotona Laser", category: "Lasers", image: "/images/treatments/fotona-laser.jpg", device: "Fotona", summary: "A multi-application Nd:YAG/Er:YAG laser platform, most often used at Kaiteki for its Fotona 4D facial-firming protocol.", leadAnswer: "Fotona Laser refers to Kaiteki's Fotona SP Dynamis / TimeWalker platform, an Nd:YAG and Er:YAG laser system offered in several application modes. Its best-known protocol, Fotona 4D, combines four modes to address facial firmness and skin-quality concerns. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.", related: ["hifu", "ultherapy"], reviewedBy: "dr-chew-yuhhui", lastReviewed: "2026-06-15", kkliu: "KKLIU 0000/2026 (sample)", kkliuExpiry: "2026-12-31", seoTitle: "Fotona 4D Laser Skin Tightening Malaysia | Kaiteki", seoDescription: "Fotona 4D is a multi-mode laser used for facial firming and skin quality, doctor-assessed at Kaiteki clinics in Malaysia. Book a free consultation on WhatsApp.",
     sections: [
       {
         heading: "What is Fotona Laser?",
@@ -401,6 +410,9 @@ export const treatments: Treatment[] = [
     lastReviewed: "2026-06-12",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
+    seoTitle: "Radiofrequency Treatment Malaysia | Skin Firmness | Kaiteki",
+    seoDescription:
+      "Radiofrequency (RF) treatment in Malaysia to support skin firmness and texture concerns. Book a free consultation with a Kaiteki doctor to assess suitability.",
     sections: [
       {
         heading: "What is radiofrequency (RF) treatment?",
@@ -498,6 +510,9 @@ export const treatments: Treatment[] = [
     lastReviewed: "2026-06-12",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
+    seoTitle: "RF Microneedling Malaysia | Potenza, Morpheus8 | Kaiteki",
+    seoDescription:
+      "RF microneedling in Malaysia for texture, acne scarring and pore concerns using Potenza, Morpheus8 or Sylfirm X. Book a free consultation at Kaiteki.",
     sections: [
       {
         heading: "What is RF microneedling?",
@@ -604,6 +619,9 @@ export const treatments: Treatment[] = [
     lastReviewed: "2026-06-10",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
+    seoTitle: "Fat Freezing Malaysia | Cryolipolysis Treatment | Kaiteki",
+    seoDescription:
+      "Fat freezing (cryolipolysis) in Malaysia for localised fat pockets, not weight loss. Book a free consultation with a Kaiteki doctor to check suitability.",
     sections: [
       {
         heading: "What is fat freezing?",
@@ -707,6 +725,9 @@ export const treatments: Treatment[] = [
     lastReviewed: "2026-06-08",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
+    seoTitle: "Skin Booster Malaysia | Rejuran, Profhilo & Juvelook",
+    seoDescription:
+      "Injectable skin boosters in Malaysia, including Rejuran, Profhilo and Juvelook, for skin hydration and quality. Book a free consultation at Kaiteki.",
     sections: [
       {
         heading: "What is a skin booster?",
@@ -817,6 +838,9 @@ export const treatments: Treatment[] = [
     lastReviewed: "2026-06-08",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
+    seoTitle: "Bio-Stimulator Malaysia | Sculptra, Ellanse | Kaiteki",
+    seoDescription:
+      "Bio-stimulator injectables in Malaysia, including Sculptra and Ellanse, to support the skin's structural renewal. Book a free consultation at Kaiteki.",
     sections: [
       {
         heading: "What is a bio-stimulator?",
@@ -925,6 +949,9 @@ export const treatments: Treatment[] = [
     lastReviewed: "2026-06-05",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
+    seoTitle: "Exosome Therapy Malaysia | Regenerative Treatment | Kaiteki",
+    seoDescription:
+      "Exosome therapy in Malaysia, a regenerative approach for skin and scalp concerns. Book a free consultation with a Kaiteki doctor to assess suitability.",
     sections: [
       {
         heading: "What is exosome therapy?",
@@ -1019,6 +1046,9 @@ export const treatments: Treatment[] = [
     lastReviewed: "2026-06-01",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
+    seoTitle: "Double Eyelid Surgery Malaysia | Crease Procedure | Kaiteki",
+    seoDescription:
+      "Double-eyelid procedure in Malaysia to create or refine an upper-eyelid crease. Book a free consultation with a Kaiteki doctor to assess suitability.",
     sections: [
       {
         heading: "What is double-eyelid treatment?",
@@ -1123,6 +1153,9 @@ export const treatments: Treatment[] = [
     lastReviewed: "2026-07-13",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
+    seoTitle: "Pigmentation & Vascular Laser Malaysia | Kaiteki",
+    seoDescription:
+      "Laser treatment in Malaysia for pigmentation, redness and visible vessels using M22 IPL, Pro Yellow and DermaV. Book a free consultation at Kaiteki.",
     sections: [
       {
         heading: "What is Vascular / Pigment Laser treatment?",
@@ -1214,6 +1247,9 @@ export const treatments: Treatment[] = [
     lastReviewed: "2026-07-13",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
+    seoTitle: "CO2 Resurfacing Laser Malaysia | Kaiteki",
+    seoDescription:
+      "Fractional CO2 resurfacing laser in Malaysia for skin texture, acne scarring and pores. Book a free consultation with a Kaiteki doctor to assess suitability.",
     sections: [
       {
         heading: "What is Resurfacing Laser treatment?",
@@ -1305,6 +1341,9 @@ export const treatments: Treatment[] = [
     lastReviewed: "2026-07-13",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
+    seoTitle: "Onda Microwave Contouring Malaysia | Kaiteki",
+    seoDescription:
+      "Onda microwave contouring in Malaysia for localised fat, cellulite appearance and firmness. Book a free consultation with a Kaiteki doctor to check suitability.",
     sections: [
       {
         heading: "What is Microwave Contouring?",
@@ -1397,6 +1436,9 @@ export const treatments: Treatment[] = [
     lastReviewed: "2026-07-13",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
+    seoTitle: "Muscle Stimulation Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Electromagnetic muscle-stimulation treatment in Malaysia for body-toning concerns as part of an individual plan. Book a free consultation at Kaiteki.",
     sections: [
       {
         heading: "What is Muscle Stimulation?",
@@ -1488,6 +1530,9 @@ export const treatments: Treatment[] = [
     lastReviewed: "2026-07-13",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
+    seoTitle: "Dermal Fillers Malaysia | Juvederm, Restylane | Kaiteki",
+    seoDescription:
+      "Dermal filler treatment in Malaysia using Juvederm, Restylane and Belotero to support facial volume and contour. Book a free consultation at Kaiteki.",
     sections: [
       {
         heading: "What are dermal fillers?",
@@ -1582,6 +1627,9 @@ export const treatments: Treatment[] = [
     lastReviewed: "2026-07-13",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
+    seoTitle: "Facial Treatments Malaysia | Hydrafacial, Silkpeel | Kaiteki",
+    seoDescription:
+      "Clinic facial treatments in Malaysia, including Hydrafacial and Silkpeel, to support skin cleansing and quality. Book a free consultation at Kaiteki.",
     sections: [
       {
         heading: "What are Facial Treatments?",
@@ -1673,6 +1721,9 @@ export const treatments: Treatment[] = [
     lastReviewed: "2026-07-13",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
+    seoTitle: "Laser Hair Removal Malaysia | IPL & RF Treatment | Kaiteki",
+    seoDescription:
+      "Laser hair removal in Malaysia using IPL and radiofrequency over a course of sessions. Book a free consultation with a Kaiteki doctor to assess suitability.",
     sections: [
       {
         heading: "What is Laser Hair Removal?",
