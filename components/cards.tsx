@@ -133,7 +133,7 @@ export function ConcernTile({
   );
 }
 
-export function ConcernCard({ c, className = "", style }: { c: Concern } & Extra) {
+export function ConcernCard({ c, priority = false, className = "", style }: { c: Concern; priority?: boolean } & Extra) {
   return (
     <Link href={`/concerns/${c.slug}`} style={style} className={`${cardBase} overflow-hidden ${className}`}>
       <div className="relative aspect-[16/10] overflow-hidden bg-tint">
@@ -141,6 +141,7 @@ export function ConcernCard({ c, className = "", style }: { c: Concern } & Extra
           src={c.image}
           alt={c.name}
           fill
+          priority={priority}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover"
         />

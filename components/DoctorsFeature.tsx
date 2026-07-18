@@ -15,7 +15,7 @@ const trio = [
 
 export function DoctorsFeature() {
   return (
-    <section id="doctors-feature" className="relative overflow-hidden bg-gradient-to-b from-page to-tint">
+    <section id="doctors-feature" className="relative overflow-hidden bg-page">
       <Container className="relative py-16 sm:py-24">
         <div className="reveal grid items-center gap-x-12 gap-y-10 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.92fr)]">
           {/* Copy + record */}

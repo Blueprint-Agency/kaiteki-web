@@ -4,18 +4,27 @@ import Link from "next/link";
 import { Container } from "./Container";
 import { FlipCard } from "./FlipCard";
 import { ArrowRight } from "./icons";
-import { concerns } from "@/content/data/concerns";
+import { concernBySlug } from "@/content/data/concerns";
 
 const si = (i: number): CSSProperties => ({ "--i": Math.min(i, 8) } as CSSProperties);
+
+const FEATURED = [
+  "acne",
+  "body-slimming",
+  "fine-lines-wrinkles",
+  "tattoo-removal",
+  "hair-loss",
+  "face-contouring",
+];
 
 /** "What brings you in?" — a 3×2 grid of photo tiles that flip to reveal what a
  *  doctor may consider, then link through to the concern guide. */
 export function ConcernsMosaic() {
-  const six = concerns.slice(0, 6);
+  const six = FEATURED.map(concernBySlug).filter((c) => c !== undefined);
 
   return (
-    <section id="concerns" className="relative overflow-hidden bg-gradient-to-b from-tint to-page">
-      <Container className="py-16 sm:py-24">
+    <section id="concerns" className="relative overflow-hidden bg-page">
+      <Container className="reveal py-16 sm:py-24">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="max-w-2xl">
             <h2 className="text-balance text-2xl font-bold leading-tight text-espresso sm:text-3xl">
