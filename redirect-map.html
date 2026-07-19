@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kaiteki.my — New vs Legacy URL structure (redirect map)</title>
+<style>
+  body { font: 14px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; max-width: 980px; margin: 2rem auto; padding: 0 1.5rem; color: #1a1a1a; }
+  h1 { font-size: 1.1rem; }
+  h2 { font-size: 0.95rem; margin: 2rem 0 0.5rem; }
+  small { color: #888; font-weight: normal; }
+  table { border-collapse: collapse; width: 100%; margin: 0.4rem 0 0; font-size: 0.82rem; table-layout: fixed; }
+  th, td { text-align: left; padding: 4px 10px; border-bottom: 1px solid #eee; vertical-align: top; overflow-wrap: anywhere; }
+  th:nth-child(1), td:nth-child(1) { width: 46%; }
+  td.arrow { width: 1.5rem; }
+  td.code { width: 2.5rem; }
+  th { color: #888; font-weight: 600; border-bottom: 1px solid #ccc; }
+  td.old { color: #a33; }
+  td.isnew { color: #178f4e; }
+  td.arrow { color: #bbb; text-align: center; }
+  code { color: inherit; }
+  a { color: #0b57d0; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .code { color: #888; font-size: 0.78rem; white-space: nowrap; }
+  .gap td { color: #555; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #111; color: #ddd; }
+    th, td { border-color: #2a2a2a; } th { border-color: #444; color: #999; }
+    small { color: #777; }
+    td.old { color: #e88; } td.isnew { color: #4ecb83; } td.arrow { color: #555; } .gap td { color: #aaa; }
+    a { color: #7aa7ff; }
+  }
+</style>
+</head>
+<body>
+<h1>kaiteki.my <small>— new vs legacy URL structure &amp; redirects</small></h1>
+
+<h2>Summary</h2>
+<table>
+<tr><th>Metric</th><th>Count</th></tr>
+<tr><td>New site URLs (live)</td><td><b>104</b></td></tr>
+<tr><td>&nbsp;&nbsp;&bull; migrated from legacy (301)</td><td>40</td></tr>
+<tr><td>&nbsp;&nbsp;&bull; newly added (no legacy)</td><td class="isnew">64</td></tr>
+<tr><td>Legacy URLs redirected &rarr; live</td><td>46</td></tr>
+<tr><td>Legacy URLs deleted (410 / dropped)</td><td class="old">~43 <small>+ /sg, /indonesia</small></td></tr>
+<tr><td>Legacy URLs total (approx)</td><td>~89</td></tr>
+</table>
+<p style="color:#888;font-size:0.78rem;max-width:720px">Legacy count excludes the 4 new-scheme internal moves and the <code>www</code>&rarr;non-www host rule. Deleted URLs are the <b>Deletions</b> section below; <code>/cn/*</code> (~38) counted, <code>/sg/*</code> &amp; <code>/indonesia/*</code> are wildcards.</p>
+
+<h2>Host</h2>
+<table>
+<tr><th>New URL</th><th></th><th>Legacy URL</th><th>Code</th></tr>
+<tr><td><code>kaiteki.my/*</code></td><td class="arrow">←</td><td class="old"><code>www.kaiteki.my/*</code></td><td class="code">301</td></tr>
+</table>
+
+<h2>Home</h2>
+<table>
+<tr><th>New URL</th><th></th><th>Legacy URL</th><th>Code</th></tr>
+<tr><td><a href="https://staging.kaiteki.my/">/</a></td><td class="arrow">←</td><td class="old"><code>/index.html</code></td><td class="code">301</td></tr>
+</table>
+
+<h2>Treatments</h2>
+<table>
+<tr><th>New URL</th><th></th><th>Legacy URL</th><th>Code</th></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments">/treatments</a></td><td class="arrow">←</td><td class="old"><code>/services.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments/pico-laser">/treatments/pico-laser</a></td><td class="arrow">←</td><td class="old"><code>/pico-laser-treatment.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments/hifu">/treatments/hifu</a></td><td class="arrow">←</td><td class="old"><code>/hifu.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments/ultherapy">/treatments/ultherapy</a></td><td class="arrow">←</td><td class="old"><code>/ultherapy.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments/fotona-4d">/treatments/fotona-4d</a></td><td class="arrow">←</td><td class="old"><code>/fotona-4d.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments/radiofrequency">/treatments/radiofrequency</a></td><td class="arrow">←</td><td class="old"><code>/radiofrequency.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments/microneedling">/treatments/microneedling</a></td><td class="arrow">←</td><td class="old"><code>/microneedling.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments/fat-freezing">/treatments/fat-freezing</a></td><td class="arrow">←</td><td class="old"><code>/fat-freezing.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments/skin-booster">/treatments/skin-booster</a></td><td class="arrow">←</td><td class="old"><code>/skinbooster.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments/bio-stimulator">/treatments/bio-stimulator</a></td><td class="arrow">←</td><td class="old"><code>/bio-stimulator.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments/exosome-therapy">/treatments/exosome-therapy</a></td><td class="arrow">←</td><td class="old"><code>/exosome-therapy.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments/double-eyelid">/treatments/double-eyelid</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments/vascular-pigment-laser">/treatments/vascular-pigment-laser</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments/resurfacing-laser">/treatments/resurfacing-laser</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments/microwave-contouring">/treatments/microwave-contouring</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments/muscle-stimulation">/treatments/muscle-stimulation</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments/dermal-fillers">/treatments/dermal-fillers</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments/facial-treatments">/treatments/facial-treatments</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/treatments/laser-hair-removal">/treatments/laser-hair-removal</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+</table>
+
+<h2>Concerns</h2>
+<table>
+<tr><th>New URL</th><th></th><th>Legacy URL</th><th>Code</th></tr>
+<tr><td><a href="https://staging.kaiteki.my/concerns">/concerns</a></td><td class="arrow">←</td><td class="old"><code>/skin.html</code><br><code>/facial-treatment-malaysia.html</code><br><code>/skin</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/concerns/acne">/concerns/acne</a></td><td class="arrow">←</td><td class="old"><code>/acne.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/concerns/pigmentation">/concerns/pigmentation</a></td><td class="arrow">←</td><td class="old"><code>/pigmentation.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/concerns/enlarged-pores">/concerns/enlarged-pores</a></td><td class="arrow">←</td><td class="old"><code>/pores.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/concerns/fine-lines-wrinkles">/concerns/fine-lines-wrinkles</a></td><td class="arrow">←</td><td class="old"><code>/fine-lines-and-wrinkles-treatment.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/concerns/dark-eye-circles">/concerns/dark-eye-circles</a></td><td class="arrow">←</td><td class="old"><code>/dark-eye-circle-treatment.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/concerns/face-contouring">/concerns/face-contouring</a></td><td class="arrow">←</td><td class="old"><code>/face-contour-treatment.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/concerns/face-lifting">/concerns/face-lifting</a></td><td class="arrow">←</td><td class="old"><code>/face-lifting-treatment.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/concerns/aging">/concerns/aging</a></td><td class="arrow">←</td><td class="old"><code>/aging.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/concerns/body-slimming">/concerns/body-slimming</a></td><td class="arrow">←</td><td class="old"><code>/slimming-treatment.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/concerns/hair-loss">/concerns/hair-loss</a></td><td class="arrow">←</td><td class="old"><code>/hair.html</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/concerns/tattoo-removal">/concerns/tattoo-removal</a></td><td class="arrow">←</td><td class="old"><code>/tattoo-removal.html</code><br><code>/treatments/tattoo-removal</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/concerns/birthmark">/concerns/birthmark</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/concerns/vascular-lesions">/concerns/vascular-lesions</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/concerns/excessive-sweating">/concerns/excessive-sweating</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+</table>
+
+<h2>Technology</h2>
+<table>
+<tr><th>New URL</th><th></th><th>Legacy URL</th><th>Code</th></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology">/technology</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/picosure">/technology/picosure</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/fotona-pqx">/technology/fotona-pqx</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/picocare">/technology/picocare</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/fotona-sp-dynamis">/technology/fotona-sp-dynamis</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/dermav">/technology/dermav</a></td><td class="arrow">←</td><td class="old"><code>/dermav.html</code><br><code>/treatments/dermav</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/pro-yellow">/technology/pro-yellow</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/m22-ipl">/technology/m22-ipl</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/fractional-co2">/technology/fractional-co2</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/ultracel-q">/technology/ultracel-q</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/lifthera">/technology/lifthera</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/ultherapy-system">/technology/ultherapy-system</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/sylfirm-x">/technology/sylfirm-x</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/morpheus8">/technology/morpheus8</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/potenza">/technology/potenza</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/btl-exilis">/technology/btl-exilis</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/wonderface">/technology/wonderface</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/coolsculpting">/technology/coolsculpting</a></td><td class="arrow">←</td><td class="old"><code>/coolsculpting.html</code><br><code>/treatments/coolsculpting</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/cooltech">/technology/cooltech</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/onda-coolwaves">/technology/onda-coolwaves</a></td><td class="arrow">←</td><td class="old"><code>/onda.html</code><br><code>/treatments/onda</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/schwarzy">/technology/schwarzy</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/profhilo">/technology/profhilo</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/rejuran">/technology/rejuran</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/plinest">/technology/plinest</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/restylane-skinbooster">/technology/restylane-skinbooster</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/hydrodeluxe">/technology/hydrodeluxe</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/sculptra">/technology/sculptra</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/ellanse">/technology/ellanse</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/radiesse">/technology/radiesse</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/juvederm">/technology/juvederm</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/restylane">/technology/restylane</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/belotero">/technology/belotero</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/hydrafacial">/technology/hydrafacial</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/silkpeel">/technology/silkpeel</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/technology/alma">/technology/alma</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+</table>
+
+<h2>Doctors</h2>
+<table>
+<tr><th>New URL</th><th></th><th>Legacy URL</th><th>Code</th></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors">/doctors</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-jessie-lim">/doctors/dr-jessie-lim</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-chew-yuhhui">/doctors/dr-chew-yuhhui</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-yeong-bin">/doctors/dr-yeong-bin</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-william-yap">/doctors/dr-william-yap</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-lim-xiao-chien">/doctors/dr-lim-xiao-chien</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-jeremy-low">/doctors/dr-jeremy-low</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-chang-chee-seong">/doctors/dr-chang-chee-seong</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-jacqueline-tan">/doctors/dr-jacqueline-tan</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-joaan-kong">/doctors/dr-joaan-kong</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-tim-chua">/doctors/dr-tim-chua</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-calvin-tan">/doctors/dr-calvin-tan</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-lucas-chew">/doctors/dr-lucas-chew</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-jade">/doctors/dr-jade</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-teresa-tan">/doctors/dr-teresa-tan</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-chin-wei-horng">/doctors/dr-chin-wei-horng</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-yvonne-chuah">/doctors/dr-yvonne-chuah</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-jamie-gan">/doctors/dr-jamie-gan</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-jen-meng">/doctors/dr-jen-meng</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-chloe-wan">/doctors/dr-chloe-wan</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+<tr><td><a href="https://staging.kaiteki.my/doctors/dr-say-wei-xian">/doctors/dr-say-wei-xian</a></td><td class="arrow"></td><td class="isnew">new</td><td class="code"></td></tr>
+</table>
+
+<h2>Locations</h2>
+<table>
+<tr><th>New URL</th><th></th><th>Legacy URL</th><th>Code</th></tr>
+<tr><td><a href="https://staging.kaiteki.my/locations">/locations</a></td><td class="arrow">←</td><td class="old"><code>/our-clinics.php</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/locations/mont-kiara">/locations/mont-kiara</a></td><td class="arrow">←</td><td class="old"><code>/mont-kiara.php</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/locations/cheras">/locations/cheras</a></td><td class="arrow">←</td><td class="old"><code>/cheras.php</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/locations/bukit-jalil">/locations/bukit-jalil</a></td><td class="arrow">←</td><td class="old"><code>/kuala-lumpur.php</code><br><code>/kuala-lumpur</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/locations/four-seasons-kl">/locations/four-seasons-kl</a></td><td class="arrow">←</td><td class="old"><code>/fourseasons-kl.php</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/locations/petaling-jaya">/locations/petaling-jaya</a></td><td class="arrow">←</td><td class="old"><code>/petaling-jaya.php</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/locations/kota-kemuning">/locations/kota-kemuning</a></td><td class="arrow">←</td><td class="old"><code>/shah-alam.php</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/locations/southkey-johor-bahru">/locations/southkey-johor-bahru</a></td><td class="arrow">←</td><td class="old"><code>/johor.php</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/locations/pelangi-johor-bahru">/locations/pelangi-johor-bahru</a></td><td class="arrow">←</td><td class="old"><code>/johor-pelangi-avenue.php</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/locations/kota-kinabalu">/locations/kota-kinabalu</a></td><td class="arrow">←</td><td class="old"><code>/kota-kinabalu.php</code></td><td class="code">301</td></tr>
+</table>
+
+<h2>Skincare</h2>
+<table>
+<tr><th>New URL</th><th></th><th>Legacy URL</th><th>Code</th></tr>
+<tr><td><a href="https://staging.kaiteki.my/skincare">/skincare</a></td><td class="arrow">←</td><td class="old"><code>/skincare.html</code><br><code>/skin-care</code></td><td class="code">301</td></tr>
+</table>
+
+<h2>Our Story</h2>
+<table>
+<tr><th>New URL</th><th></th><th>Legacy URL</th><th>Code</th></tr>
+<tr><td><a href="https://staging.kaiteki.my/our-story">/our-story</a></td><td class="arrow">←</td><td class="old"><code>/aboutus.html</code><br><code>/about-us</code><br><code>/about</code></td><td class="code">301</td></tr>
+</table>
+
+<h2>Privacy</h2>
+<table>
+<tr><th>New URL</th><th></th><th>Legacy URL</th><th>Code</th></tr>
+<tr><td><a href="https://staging.kaiteki.my/privacy">/privacy</a></td><td class="arrow">←</td><td class="old"><code>/privacy.html</code></td><td class="code">301</td></tr>
+</table>
+
+<h2>Blog <small>— temporary until MDX migration</small></h2>
+<table>
+<tr><th>New URL</th><th></th><th>Legacy URL</th><th>Code</th></tr>
+<tr><td><code>/blog</code></td><td class="arrow">←</td><td class="old"><code>blog.kaiteki.my</code></td><td class="code">307</td></tr>
+</table>
+
+<h2>Deletions <small>— legacy pages not carried over</small></h2>
+<table>
+<tr><th>Legacy URL(s)</th><th>Recommendation</th></tr>
+<tr class="gap"><td class="old"><code>/promo.html</code>, <code>/anniversary.html</code>, <code>/6th-anniversary.html</code>, <code>/6th-anniversary2.html</code></td><td>410 Gone (dead campaigns) or &rarr; homepage</td></tr>
+<tr class="gap"><td class="old"><code>/component-colors.html</code></td><td>410 / ignore (internal styleguide)</td></tr>
+<tr class="gap"><td class="old"><code>/cn/*</code> <small>(~38 URLs)</small></td><td><code>/cn/* &rarr; /zh/*</code> when locale ships</td></tr>
+<tr class="gap"><td class="old"><code>/sg/*</code></td><td>410 Gone or &rarr; homepage (SG market dropped)</td></tr>
+<tr class="gap"><td class="old"><code>/indonesia/*</code></td><td>410 / ignore (empty placeholder)</td></tr>
+<tr class="gap"><td class="old"><code>blog.kaiteki.my/&lt;posts&gt;</code></td><td>Per-post 301s with the MDX blog migration</td></tr>
+</table>
+
+</body>
+</html>
