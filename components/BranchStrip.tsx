@@ -11,12 +11,12 @@ export function BranchStrip() {
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="max-w-2xl">
             <h2 className="text-balance text-2xl font-bold leading-tight text-espresso sm:text-3xl">
-              Nine branches{" "}
-              <span className="font-serif font-normal italic text-mocha">across Malaysia</span>
+              Find your{" "}
+              <span className="font-serif font-normal italic text-mocha">nearest branch</span>
             </h2>
             <p className="mt-3 text-lg leading-relaxed text-ink-700">
-              Klang Valley, Johor and Sabah — with full address, hours and directions on
-              each branch page.
+              Nine locations across KL, Selangor, Johor and Sabah. Same doctors, same
+              protocols at every one.
             </p>
           </div>
           <Link

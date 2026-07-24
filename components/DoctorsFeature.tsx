@@ -25,10 +25,9 @@ export function DoctorsFeature() {
               <span className="font-serif font-normal italic text-mocha">behind your care</span>
             </h2>
             <p className="mt-4 max-w-md text-lg leading-relaxed text-ink-700">
-              Kaiteki is doctor-founded and doctor-run. Our physicians are LCP
-              board-certified and MMC-registered, and they hold to the same protocols
-              at every branch — which is why we name the doctor on each treatment page
-              rather than leaning on testimonials.
+              20 LCP-certified, MMC-registered physicians across nine branches. We
+              name the doctor on every treatment page because we&rsquo;d rather you
+              trust credentials than testimonials.
             </p>
 
             <dl className="mt-8 max-w-md border-t border-hairline">

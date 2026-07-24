@@ -20,6 +20,12 @@ export function waForConcern(name: string): string {
   return waLink(`Hi Kaiteki, I'd like a free consultation about ${name}.`);
 }
 
+/** Prefilled WA message for the /concerns "pick your top concerns" CTA. */
+export function waForConcerns(names: string[]): string {
+  if (names.length === 0) return waGeneric;
+  return waLink(`Hi Kaiteki, I'd like a free consultation about: ${names.join(", ")}.`);
+}
+
 export function waForBranch(branch: string): string {
   return waLink(`Hi Kaiteki ${branch}, I'd like to book a free consultation.`);
 }

@@ -13,7 +13,7 @@ export const concerns: Concern[] = [
     group: "Skin",
     image: "/images/concerns/acne.jpg",
     summary:
-      "Acne and acne scarring have several causes and types — assessment guides which treatments may help.",
+      "Active breakouts and old scarring respond to different treatments. A doctor identifies the type and cause before recommending a plan.",
     leadAnswer:
       "Acne is a common skin condition in which pores become blocked, sometimes leading to spots, inflammation and, over time, scarring. It has several causes and types, so what helps one person may not suit another. A consultation helps determine which approach, if any, is appropriate for your skin.",
     treatments: ["pico-laser", "microneedling", "exosome-therapy"],
@@ -78,7 +78,7 @@ export const concerns: Concern[] = [
     group: "Skin",
     image: "/images/concerns/pigmentation.jpg",
     summary:
-      "Uneven pigmentation such as melasma, sun spots and post-inflammatory marks are assessed individually.",
+      "Melasma, sun spots and post-inflammatory marks each behave differently. The right laser or treatment depends on which type you have.",
     leadAnswer:
       "Pigmentation describes areas of darker skin such as melasma, sun-related spots or marks left after inflammation. The type matters, because each responds differently and some need particular care. A consultation helps determine which approach, if any, may be appropriate for your skin.",
     treatments: ["pico-laser", "skin-booster", "vascular-pigment-laser"],
@@ -141,7 +141,8 @@ export const concerns: Concern[] = [
     name: "Enlarged Pores",
     group: "Skin",
     image: "/images/concerns/enlarged-pores.jpg",
-    summary: "Pore appearance is influenced by oil, skin texture and age — several options may help.",
+    summary:
+      "Visible pores are often tied to oil production, texture or age. Treatment options range from lasers to skin boosters, matched to the cause.",
     leadAnswer:
       "Enlarged-looking pores are influenced by oil production, skin texture, sun exposure and age. Pores do not physically open and close, but their appearance can sometimes be refined. A consultation helps determine which approach, if any, may suit your skin.",
     treatments: ["microneedling", "pico-laser", "radiofrequency"],
@@ -206,7 +207,7 @@ export const concerns: Concern[] = [
     group: "Face",
     image: "/images/concerns/fine-lines-wrinkles.jpg",
     summary:
-      "Expression lines and static wrinkles are approached differently — assessment guides the plan.",
+      "Lines that appear when you move and lines that stay at rest need different approaches. A doctor assesses which type you have before recommending treatment.",
     leadAnswer:
       "Fine lines and wrinkles develop with movement, age and skin quality. Expression lines and static lines are approached differently, so a doctor assesses which you have. A consultation helps determine which approach, if any, may be appropriate for your skin.",
     treatments: ["hifu", "ultherapy", "skin-booster", "microneedling"],
@@ -279,7 +280,7 @@ export const concerns: Concern[] = [
     group: "Eyes",
     image: "/images/concerns/dark-eye-circles.jpg",
     summary:
-      "Under-eye darkness can be pigment, vascular or structural — the cause guides the approach.",
+      "Dark circles can come from pigment, blood vessels or hollowing under the eye. The treatment depends entirely on which cause is behind yours.",
     leadAnswer:
       "Dark eye circles can be caused by pigmentation, visible blood vessels, or the structure and hollowing of the under-eye area — often in combination. Because the causes differ, a consultation helps determine which approach, if any, may be appropriate for you.",
     treatments: ["skin-booster", "vascular-pigment-laser", "radiofrequency"],
@@ -345,7 +346,7 @@ export const concerns: Concern[] = [
     group: "Face",
     image: "/images/concerns/face-contouring.jpg",
     summary:
-      "Facial contour concerns are assessed individually to determine suitable options.",
+      "Jawline definition, cheek volume and facial proportions can be refined without surgery. A doctor plans the approach based on your facial structure.",
     leadAnswer:
       "Face-contouring concerns relate to the shape and definition of areas such as the jawline and chin. Several treatments may be considered depending on the concern and your anatomy. A consultation helps determine which approach, if any, may be appropriate.",
     treatments: ["hifu", "fat-freezing", "radiofrequency"],
@@ -409,7 +410,7 @@ export const concerns: Concern[] = [
     group: "Face",
     image: "/images/concerns/face-lifting.jpg",
     summary:
-      "Non-surgical lifting and firmness concerns are assessed to guide a suitable plan.",
+      "Sagging along the jawline, neck or mid-face can be addressed with non-surgical lifting options. A doctor assesses the degree of laxity first.",
     leadAnswer:
       "Face-lifting concerns relate to firmness and laxity as skin changes over time. Non-surgical, energy-based treatments may be considered depending on your assessment. A consultation helps determine which approach, if any, may be appropriate for you.",
     treatments: ["hifu", "ultherapy", "fotona-4d", "microwave-contouring"],
@@ -476,7 +477,7 @@ export const concerns: Concern[] = [
     group: "Skin",
     image: "/images/concerns/aging.jpg",
     summary:
-      "Skin ageing involves firmness, texture and volume — approached with an individual plan.",
+      "Firmness, texture and volume change at different rates. A doctor maps what's happening with your skin before building a plan.",
     leadAnswer:
       "Skin ageing involves gradual changes in firmness, texture, hydration and volume. Because several factors are usually involved, a plan is individual. A consultation helps determine which approaches, if any, may be appropriate for your skin and goals.",
     treatments: ["hifu", "ultherapy", "skin-booster", "bio-stimulator"],
@@ -540,7 +541,8 @@ export const concerns: Concern[] = [
     name: "Body Slimming",
     group: "Hair & Body",
     image: "/images/concerns/body-slimming.jpg",
-    summary: "Localised fat concerns are assessed individually; these are not weight-loss treatments.",
+    summary:
+      "Stubborn fat in specific areas can be targeted without surgery. These are body-contouring treatments, not weight-loss solutions.",
     leadAnswer:
       "Body-contouring concerns relate to pockets of localised fat in specific areas, rather than overall weight. In-clinic treatments are not a substitute for weight loss. A consultation helps determine which approach, if any, may be appropriate for you.",
     treatments: ["fat-freezing", "microwave-contouring"],
@@ -602,7 +604,8 @@ export const concerns: Concern[] = [
     name: "Hair Loss",
     group: "Hair & Body",
     image: "/images/concerns/hair-loss.jpg",
-    summary: "Hair-loss patterns have different causes — assessment guides whether treatment may help.",
+    summary:
+      "Thinning, receding and patchy hair loss each have different causes. A doctor evaluates your pattern before recommending whether treatment can help.",
     leadAnswer:
       "Hair loss has several patterns and causes, and some shedding is normal. Identifying the likely cause is important before considering treatment. A consultation helps determine which approach, if any, may be appropriate for you.",
     treatments: ["exosome-therapy"],
@@ -669,7 +672,7 @@ export const concerns: Concern[] = [
     group: "Skin",
     image: "/images/concerns/tattoo-removal.jpg",
     summary:
-      "Fading or removing unwanted tattoo ink, assessed by a doctor before any treatment.",
+      "Ink colour, depth and skin tone all affect how removal works. A doctor assesses your tattoo before estimating what to expect.",
     leadAnswer:
       "Tattoo removal is the gradual fading of tattoo ink using laser energy that breaks pigment into smaller particles the body may clear over time. Ink type, colour, depth and skin type all affect suitability and the number of sessions, which a doctor assesses at consultation.",
     treatments: ["pico-laser"],
@@ -734,7 +737,7 @@ export const concerns: Concern[] = [
     group: "Skin",
     image: "/images/concerns/birthmark.jpg",
     summary:
-      "Birthmarks vary widely in type and cause — a doctor assesses which, if any, treatment may be appropriate.",
+      "Not all birthmarks respond to treatment the same way. A doctor evaluates the type, depth and location before discussing options.",
     leadAnswer:
       "Birthmarks are marks present at or shortly after birth, caused by clusters of pigment cells or blood vessels in the skin. They vary in colour, size and type, and most are harmless. A consultation helps determine whether any treatment is appropriate, and which approach may suit your skin.",
     treatments: ["pico-laser", "vascular-pigment-laser"],
@@ -789,7 +792,7 @@ export const concerns: Concern[] = [
     group: "Skin",
     image: "/images/concerns/vascular-lesions.jpg",
     summary:
-      "Visible blood vessels and redness have several causes — assessment guides whether treatment may help.",
+      "Visible blood vessels, redness and broken capillaries can have different causes. A doctor identifies yours before recommending a treatment path.",
     leadAnswer:
       "Vascular lesions are visible blood vessels or areas of redness in the skin, such as facial thread veins, spider veins or persistent flushing. They have several possible causes, so a doctor assesses the type before discussing whether any treatment may be appropriate for you.",
     treatments: ["vascular-pigment-laser"],
@@ -847,7 +850,7 @@ export const concerns: Concern[] = [
     group: "Skin",
     image: "/images/concerns/excessive-sweating.jpg",
     summary:
-      "Excessive sweating has several possible causes — a doctor assesses your situation at consultation.",
+      "Sweating that disrupts daily life can often be managed. A doctor assesses your pattern and severity to determine which approach fits.",
     leadAnswer:
       "Excessive sweating (hyperhidrosis) is sweating beyond what is needed to regulate body temperature, most often affecting the underarms, palms, soles or face. It can have several causes. A consultation helps assess your situation and discuss whether any approach may be appropriate for you.",
     treatments: [],

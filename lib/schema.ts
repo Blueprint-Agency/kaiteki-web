@@ -102,7 +102,6 @@ export function physicianNode(d: Doctor, branchNames: string[]) {
     url: `${site.url}/doctors/${d.slug}`,
     jobTitle: role,
     ...(suffix ? { honorificSuffix: suffix } : {}),
-    ...(d.interests.length > 0 ? { knowsAbout: d.interests } : {}),
     ...(branchNames.length > 0
       ? { workLocation: branchNames.map((n) => ({ "@type": "MedicalClinic", name: `Kaiteki ${n}` })) }
       : {}),

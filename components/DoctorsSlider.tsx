@@ -29,12 +29,11 @@ export function DoctorsSlider() {
             key={d.slug}
             d={d}
             style={si(i)}
-            // Square crop + compact copy (drops the special-interests line) so the
-            // whole card — photo through CTA — clears one viewport on the homepage
-            // strip; the arrows below stay reachable without the face scrolling off.
-            // The taller half-body portrait + full detail live on the /doctors hub.
+            // Square crop so the whole card — photo through CTA — clears one
+            // viewport on the homepage strip; the arrows below stay reachable
+            // without the face scrolling off. The taller half-body portrait +
+            // full detail live on the /doctors hub.
             mediaClassName="aspect-square"
-            compact
             className="reveal w-[82%] shrink-0 snap-start sm:w-[47%] lg:w-[calc((100%-2rem)/3)]"
           />
         ))}

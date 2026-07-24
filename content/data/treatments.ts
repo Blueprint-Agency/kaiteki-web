@@ -10,6 +10,7 @@ import type { Treatment } from "@/lib/types";
 export const treatments: Treatment[] = [
   {
     slug: "pico-laser",
+    durationDowntime: "15-30 min · Minimal downtime (1-2 days)",
     name: "Pico Laser",
     category: "Lasers",
     image: "/images/treatments/pico-laser.jpg",
@@ -18,6 +19,40 @@ export const treatments: Treatment[] = [
       "A picosecond laser used for pigmentation, dull skin tone and tattoo removal, suited to a range of Asian skin tones.",
     leadAnswer:
       "Pico laser is a picosecond-pulse laser treatment that delivers very short bursts of energy to the skin. It is commonly used for pigmentation concerns, uneven skin tone and tattoo removal. Suitability and the number of sessions vary between individuals; a consultation is required to assess whether it is appropriate for you.",
+    typicalSessions: "4-6",
+    areas: ["Face", "Neck", "Hands"],
+    suitableFor: [
+      "Pigmentation, dullness or uneven tone",
+      "Post-acne marks and enlarged pores",
+      "Selected tattoo inks",
+      "A range of Asian skin tones",
+    ],
+    notSuitableFor: [
+      "Keloid or hypertrophic scar tendency",
+      "Recent deep peels or dermabrasion",
+      "Active skin infection in the area",
+      "Pregnancy or breastfeeding",
+      "Recently tanned or sun-exposed skin",
+      "Certain medications — flagged at consultation",
+    ],
+    comparisons: [
+      { name: "Pico laser", bestFor: "Pigment, tone, tattoo", downtime: "Minimal" },
+      { name: "RF microneedling", bestFor: "Texture, scars, pores", downtime: "2-3 days" },
+      { name: "Resurfacing laser", bestFor: "Deep scars, texture", downtime: "5-7 days" },
+    ],
+    preCare: [
+      "Avoid ablative laser treatments in the 4 weeks prior",
+      "Disclose your full medical and skincare history",
+      "Tell your doctor about any history of cold sores (herpes simplex)",
+      "Avoid deliberate tanning for 2 weeks beforehand",
+    ],
+    postCare: [
+      "Avoid prolonged sun exposure for 7-10 days and apply sunscreen daily",
+      "Use a gentle cleanser and moisturiser",
+      "Avoid alcohol-based products and retinol until your skin has settled",
+      "Avoid facials for at least 2 days",
+      "Mild redness or peeling, if it occurs, usually settles within 1-2 days",
+    ],
     related: ["microneedling", "skin-booster"],
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-06-20",
@@ -28,48 +63,21 @@ export const treatments: Treatment[] = [
       "Pico laser treatment for pigmentation, dull skin tone and tattoo removal in Malaysia. Book a free consultation with a Kaiteki doctor to assess suitability.",
     sections: [
       {
-        heading: "What is Pico laser?",
-        body: [
-          "Pico laser refers to a group of aesthetic lasers that release energy in picoseconds — trillionths of a second. Because the pulses are so short, the energy is delivered as a rapid photomechanical effect rather than mainly as heat.",
-          "At Kaiteki, Pico laser is used chiefly to address pigmentation, uneven tone and certain tattoo inks. Whether it suits your skin depends on your concern, skin type and history, which a doctor assesses during consultation.",
-        ],
-      },
-      {
         heading: "How it works",
         body: [
-          "The short pulses target pigment particles and break them into smaller fragments that the body may gradually clear over time. The same photomechanical effect can also prompt a mild skin-renewal response.",
-          "Settings are selected by the treating doctor for your skin tone and concern. Results develop gradually and vary between individuals.",
-        ],
-      },
-      {
-        heading: "What it may help address",
-        body: [
-          "Pico laser is commonly considered for the following concerns. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
+          "Pico laser delivers energy in picoseconds — trillionths of a second — so pigment particles shatter into fragments the body clears naturally, with less heat than older laser types. Settings are tailored to your skin tone and concern by the treating doctor.",
         ],
         list: [
           "Uneven pigmentation and dull-looking skin tone",
-          "Certain sun-related and post-inflammatory marks",
+          "Sun-related and post-inflammatory marks",
           "Selected tattoo inks (as tattoo removal)",
           "Overall skin-tone refinement as part of a plan",
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
-        body: [
-          "Suitability is assessed individually. Pico laser may not be appropriate during pregnancy, with certain skin conditions or medications, or on recently tanned skin. Please share your full medical and skincare history at consultation so the doctor can advise safely.",
-        ],
-      },
-      {
         heading: "The session at Kaiteki",
         body: [
-          "A typical visit begins with a doctor consultation and skin assessment. If Pico laser is appropriate, a patch or test area may be considered before proceeding. Sessions are usually short; a cooling or soothing step may follow.",
-          "A course of several sessions spaced a few weeks apart is common, but the plan is individual. Your doctor will explain what to expect for your skin.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
-          "Downtime is usually limited but varies. Temporary redness or mild sensitivity can occur and typically settles. Sun protection and gentle skincare are advised afterwards; your doctor will give aftercare guidance specific to you.",
+          "A typical visit begins with a consultation and skin assessment, followed by a short session with a cooling step to finish. A course of several sessions spaced a few weeks apart is common, though your doctor will confirm what to expect for your skin.",
         ],
       },
       {
@@ -102,6 +110,30 @@ export const treatments: Treatment[] = [
         q: "When will I see results?",
         a: "Results develop gradually over weeks as the skin responds, and they vary between individuals. Your doctor will explain what is realistic for your skin and concern.",
       },
+      {
+        q: "Is Pico laser permanent?",
+        a: "Pico laser addresses existing pigment and marks, but it does not prevent new pigmentation from forming — ongoing sun protection and skincare help maintain results. Your doctor can advise on a long-term plan.",
+      },
+      {
+        q: "Will Pico laser thin my skin?",
+        a: "No. Pico laser works through short photomechanical pulses rather than sustained heat, and is not associated with skin thinning when performed appropriately by a trained doctor.",
+      },
+      {
+        q: "Can I wear makeup after a session?",
+        a: "Most people can resume light makeup once any redness has settled, often the next day, but this varies by individual. Your doctor will confirm what is appropriate for your skin.",
+      },
+      {
+        q: "How soon can I get a facial after Pico laser?",
+        a: "Facials are generally avoided for at least 2 days afterwards to let the skin settle. Your doctor will advise on timing specific to your treatment.",
+      },
+      {
+        q: "What's the difference between Pico laser and Q-switch lasers?",
+        a: "Pico laser delivers pulses in picoseconds (trillionths of a second), shorter than the nanosecond pulses of Q-switched lasers. This can mean a more mechanical, less heat-based effect on pigment, though suitability for your concern is assessed individually.",
+      },
+      {
+        q: "Is Pico laser suitable for tattoo removal?",
+        a: "Pico laser is used for certain tattoo inks and colours, though response varies by ink type, colour and how the tattoo was applied. A doctor will assess your tattoo at consultation to discuss what may realistically be achieved.",
+      },
     ],
   },
 
@@ -109,6 +141,7 @@ export const treatments: Treatment[] = [
   // its [slug] page renders honestly; deep sections are authored progressively.
   {
     slug: "hifu",
+    durationDowntime: "30-60 min · No downtime",
     name: "HIFU",
     category: "Lifting & Tightening",
     image: "/images/treatments/hifu.jpg",
@@ -212,6 +245,7 @@ export const treatments: Treatment[] = [
   },
   {
     slug: "ultherapy",
+    durationDowntime: "60-90 min · No downtime",
     name: "Ultherapy",
     category: "Lifting & Tightening",
     image: "/images/treatments/ultherapy.jpg",
@@ -309,7 +343,7 @@ export const treatments: Treatment[] = [
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
   },
-  { slug: "fotona-4d", name: "Fotona Laser", category: "Lasers", image: "/images/treatments/fotona-laser.jpg", device: "Fotona", summary: "A multi-application Nd:YAG/Er:YAG laser platform, most often used at Kaiteki for its Fotona 4D facial-firming protocol.", leadAnswer: "Fotona Laser refers to Kaiteki's Fotona SP Dynamis / TimeWalker platform, an Nd:YAG and Er:YAG laser system offered in several application modes. Its best-known protocol, Fotona 4D, combines four modes to address facial firmness and skin-quality concerns. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.", related: ["hifu", "ultherapy"], reviewedBy: "dr-chew-yuhhui", lastReviewed: "2026-06-15", kkliu: "KKLIU 0000/2026 (sample)", kkliuExpiry: "2026-12-31", seoTitle: "Fotona 4D Laser Skin Tightening Malaysia | Kaiteki", seoDescription: "Fotona 4D is a multi-mode laser used for facial firming and skin quality, doctor-assessed at Kaiteki clinics in Malaysia. Book a free consultation on WhatsApp.",
+  { slug: "fotona-4d", durationDowntime: "30-60 min · No downtime", name: "Fotona Laser", category: "Lasers", image: "/images/treatments/fotona-laser.jpg", device: "Fotona", summary: "A multi-application Nd:YAG/Er:YAG laser platform, most often used at Kaiteki for its Fotona 4D facial-firming protocol.", leadAnswer: "Fotona Laser refers to Kaiteki's Fotona SP Dynamis / TimeWalker platform, an Nd:YAG and Er:YAG laser system offered in several application modes. Its best-known protocol, Fotona 4D, combines four modes to address facial firmness and skin-quality concerns. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.", related: ["hifu", "ultherapy"], reviewedBy: "dr-chew-yuhhui", lastReviewed: "2026-06-15", kkliu: "KKLIU 0000/2026 (sample)", kkliuExpiry: "2026-12-31", seoTitle: "Fotona 4D Laser Skin Tightening Malaysia | Kaiteki", seoDescription: "Fotona 4D is a multi-mode laser used for facial firming and skin quality, doctor-assessed at Kaiteki clinics in Malaysia. Book a free consultation on WhatsApp.",
     sections: [
       {
         heading: "What is Fotona Laser?",
@@ -399,6 +433,7 @@ export const treatments: Treatment[] = [
   },
   {
     slug: "radiofrequency",
+    durationDowntime: "30-60 min · No downtime",
     name: "Radiofrequency",
     category: "Lifting & Tightening",
     image: "/images/treatments/radiofrequency.jpg",
@@ -498,6 +533,7 @@ export const treatments: Treatment[] = [
   },
   {
     slug: "microneedling",
+    durationDowntime: "30-60 min · 2-3 days recovery",
     name: "RF Microneedling",
     category: "Lifting & Tightening",
     image: "/images/treatments/microneedling.jpg",
@@ -608,6 +644,7 @@ export const treatments: Treatment[] = [
   },
   {
     slug: "fat-freezing",
+    durationDowntime: "35-60 min per area · No downtime",
     name: "Fat Freezing",
     category: "Body & Slimming",
     image: "/images/treatments/fat-freezing.jpg",
@@ -713,6 +750,7 @@ export const treatments: Treatment[] = [
   },
   {
     slug: "skin-booster",
+    durationDowntime: "15-30 min · 1-2 days",
     name: "Skin Booster",
     category: "Injectables",
     image: "/images/treatments/skin-booster.jpg",
@@ -826,6 +864,7 @@ export const treatments: Treatment[] = [
   },
   {
     slug: "bio-stimulator",
+    durationDowntime: "15-30 min · 1-2 days",
     name: "Bio-stimulator",
     category: "Injectables",
     image: "/images/treatments/bio-stimulator.jpg",
@@ -937,6 +976,7 @@ export const treatments: Treatment[] = [
   },
   {
     slug: "exosome-therapy",
+    durationDowntime: "Consult required · Recovery varies",
     name: "Exosome Therapy",
     category: "Regenerative",
     image: "/images/treatments/exosome-therapy.jpg",
@@ -1035,6 +1075,7 @@ export const treatments: Treatment[] = [
   },
   {
     slug: "double-eyelid",
+    durationDowntime: "Consult required · Recovery varies",
     name: "Double Eyelid",
     category: "Eyes",
     image: "/images/treatments/double-eyelid.jpg",
@@ -1141,6 +1182,7 @@ export const treatments: Treatment[] = [
   // (docs/superpowers/plans/2026-07-13-treatment-taxonomy-restructure.md, Task 8).
   {
     slug: "vascular-pigment-laser",
+    durationDowntime: "15-30 min · Minimal downtime (1-3 days)",
     name: "Vascular / Pigment Laser",
     category: "Lasers",
     image: "/images/treatments/vascular-pigment-laser.jpg",
@@ -1236,6 +1278,7 @@ export const treatments: Treatment[] = [
   },
   {
     slug: "resurfacing-laser",
+    durationDowntime: "30-60 min · 5-7 days recovery",
     name: "Resurfacing Laser",
     category: "Lasers",
     image: "/images/treatments/resurfacing-laser.jpg",
@@ -1330,6 +1373,7 @@ export const treatments: Treatment[] = [
   },
   {
     slug: "microwave-contouring",
+    durationDowntime: "20-30 min · No downtime",
     name: "Microwave Contouring",
     category: "Body & Slimming",
     image: "/images/treatments/microwave-contouring.jpg",
@@ -1425,6 +1469,7 @@ export const treatments: Treatment[] = [
   },
   {
     slug: "muscle-stimulation",
+    durationDowntime: "20-30 min · No downtime",
     name: "Muscle Stimulation",
     category: "Body & Slimming",
     image: "/images/treatments/muscle-stimulation.jpg",
@@ -1519,6 +1564,7 @@ export const treatments: Treatment[] = [
   },
   {
     slug: "dermal-fillers",
+    durationDowntime: "15-30 min · 1-3 days",
     name: "Dermal Fillers",
     category: "Injectables",
     image: "/images/treatments/dermal-fillers.jpg",
@@ -1616,6 +1662,7 @@ export const treatments: Treatment[] = [
   },
   {
     slug: "facial-treatments",
+    durationDowntime: "30-60 min · No downtime",
     name: "Facial Treatments",
     category: "Facials",
     image: "/images/treatments/facial-treatments.jpg",
@@ -1710,6 +1757,7 @@ export const treatments: Treatment[] = [
   },
   {
     slug: "laser-hair-removal",
+    durationDowntime: "15-45 min · No downtime",
     name: "Laser Hair Removal",
     category: "Hair Removal",
     image: "/images/treatments/laser-hair-removal.jpg",

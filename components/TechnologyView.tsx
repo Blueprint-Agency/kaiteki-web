@@ -6,6 +6,7 @@ import { Ledger } from "@/components/Ledger";
 import { Faq } from "@/components/Faq";
 import { Disclaimer } from "@/components/Disclaimer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
+import { SectionCard } from "@/components/SectionCard";
 import { ArrowRight } from "@/components/icons";
 import { ProductMotif } from "@/components/cards";
 import { treatmentsOfTechnology, concernsOfTreatment } from "@/content/data/relations";
@@ -61,87 +62,118 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
 
   return (
     <Container className="py-10 sm:py-12">
-      <Breadcrumbs items={trail} />
+      <div className="mx-auto max-w-3xl">
+        <Breadcrumbs items={trail} />
 
-      <div className="relative mt-6 aspect-[21/9] overflow-hidden rounded-2xl bg-tint sm:aspect-[3/1]">
-        {x.image ? (
-          <Image
-            src={x.image}
-            alt={x.name}
-            fill
-            priority
-            sizes="(max-width: 1024px) 100vw, 1024px"
-            className="object-cover"
-          />
-        ) : (
-          <ProductMotif slug={x.slug} className="size-full" />
-        )}
-      </div>
-
-      <div className="mt-8 max-w-3xl">
-        <p className="text-sm font-medium text-accent">
-          {x.group} · {TYPE_LABEL[x.type]}
-        </p>
-        <h1 className="mt-2 text-3xl font-bold leading-tight text-espresso sm:text-4xl">
-          {x.name}
-        </h1>
-        <p className="prose mt-6 max-w-[65ch] text-lg leading-relaxed text-ink-700">{x.summary}</p>
-      </div>
-
-      <div className="mt-12 grid gap-12 lg:grid-cols-[1fr_20rem] lg:gap-16">
-        {/* Body */}
-        <div className="min-w-0">
-          {x.sections && (
-            <div className="space-y-10">
-              {x.sections.map((s) => (
-                <section key={s.heading}>
-                  <h2 className="text-xl font-bold text-espresso sm:text-2xl">{s.heading}</h2>
-                  <div className="prose mt-3 max-w-[65ch] space-y-4 leading-relaxed text-ink-700">
-                    {s.body.map((p, i) => (
-                      <p key={i}>{p}</p>
-                    ))}
-                  </div>
-                  {s.list && (
-                    <ul className="mt-4 max-w-[65ch] space-y-2">
-                      {s.list.map((li) => (
-                        <li key={li} className="flex gap-3 text-ink-700">
-                          <span className="mt-2.5 size-1.5 shrink-0 rounded-full bg-mocha" />
-                          <span>{li}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </section>
-              ))}
-            </div>
+        <div className="relative mt-6 aspect-[16/10] overflow-hidden rounded-2xl bg-tint sm:aspect-[21/9]">
+          {x.image ? (
+            <Image
+              src={x.image}
+              alt={x.name}
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover"
+            />
+          ) : (
+            <ProductMotif slug={x.slug} className="size-full" />
           )}
+        </div>
+
+        <div className="mt-8">
+          <p className="text-sm font-medium text-accent">
+            {x.group} · {TYPE_LABEL[x.type]}
+          </p>
+          <h1 className="mt-2 text-3xl font-bold leading-tight text-espresso sm:text-4xl">
+            {x.name}
+          </h1>
+          <p className="prose mt-6 leading-relaxed text-ink-700">{x.summary}</p>
+        </div>
+
+        <div className="mt-10 space-y-6">
+          {x.sections?.map((s) => (
+            <SectionCard key={s.heading} title={s.heading}>
+              <div className="prose space-y-4 leading-relaxed text-ink-700">
+                {s.body.map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
+              </div>
+              {s.list && (
+                <ul className="mt-4 space-y-2">
+                  {s.list.map((li) => (
+                    <li key={li} className="flex gap-3 text-ink-700">
+                      <span className="mt-2.5 size-1.5 shrink-0 rounded-full bg-mocha" />
+                      <span>{li}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </SectionCard>
+          ))}
 
           {relatedConcerns.length > 0 && (
-            <section className={x.sections ? "mt-12" : ""}>
-              <h2 className="mb-4 text-xl font-bold text-espresso sm:text-2xl">May help with</h2>
+            <SectionCard title="May help with">
               <ul className="flex flex-wrap gap-2">
                 {relatedConcerns.map((c) => (
                   <li key={c.slug}>
                     <Link
                       href={`/concerns/${c.slug}`}
-                      className="rounded-full border border-hairline bg-surface px-3 py-1.5 text-sm text-ink-700 transition-colors hover:border-mocha"
+                      className="rounded-full border border-hairline bg-tint px-3 py-1.5 text-sm text-ink-700 transition-colors hover:border-mocha"
                     >
                       {c.name}
                     </Link>
                   </li>
                 ))}
               </ul>
-            </section>
+            </SectionCard>
+          )}
+
+          {powers.length > 0 && (
+            <SectionCard title="Used in this treatment at Kaiteki">
+              <ul className="flex flex-wrap gap-3">
+                {powers.map((t) => (
+                  <li key={t.slug}>
+                    <Link
+                      href={treatmentHref(t)}
+                      className="inline-flex items-center gap-1.5 rounded-full border border-hairline bg-tint px-4 py-2 text-sm font-medium text-ink-700 transition-colors hover:border-mocha"
+                    >
+                      {t.name} <ArrowRight size={14} className="text-accent" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </SectionCard>
+          )}
+
+          {logo && (
+            <SectionCard eyebrow="Brand">
+              <Image
+                src={`/images/tech/${logo}`}
+                alt={x.device!}
+                width={140}
+                height={44}
+                className="h-8 w-auto object-contain opacity-80"
+              />
+            </SectionCard>
           )}
 
           {x.faqs && (
-            <section className="mt-12">
-              <h2 className="mb-4 text-xl font-bold text-espresso sm:text-2xl">Frequently asked questions</h2>
+            <SectionCard title="Frequently asked questions">
               <Faq items={x.faqs} />
-            </section>
+            </SectionCard>
           )}
 
-          <div className="mt-12 space-y-6">
+          <SectionCard className="bg-tint">
+            <h2 className="font-semibold text-espresso">Book a free consultation</h2>
+            <p className="mt-2 text-sm leading-relaxed text-ink-700">
+              A doctor will assess whether {x.name} is suitable for you.
+            </p>
+            <div className="mt-4">
+              <WhatsAppButton href={waForTreatment(x.name)} label="Ask about this" />
+            </div>
+          </SectionCard>
+
+          <div className="space-y-6 px-2">
             {doctor && reviewedDate && (
               <Ledger
                 rows={[
@@ -153,50 +185,6 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
             <Disclaimer />
           </div>
         </div>
-
-        {/* Rail */}
-        <aside className="space-y-8 lg:sticky lg:top-24 lg:self-start">
-          <div className="rounded-xl border border-hairline bg-tint p-5">
-            <h2 className="font-semibold text-espresso">Book a free consultation</h2>
-            <p className="mt-2 text-sm leading-relaxed text-ink-700">
-              A doctor will assess whether {x.name} is suitable for you.
-            </p>
-            <div className="mt-4">
-              <WhatsAppButton href={waForTreatment(x.name)} label="Ask about this" />
-            </div>
-          </div>
-
-          {powers.length > 0 && (
-            <div>
-              <h2 className="mb-3 text-sm font-semibold uppercase tracking-[0.1em] text-mocha">Used in</h2>
-              <ul className="space-y-1.5">
-                {powers.map((t) => (
-                  <li key={t.slug}>
-                    <Link
-                      href={treatmentHref(t)}
-                      className="inline-flex items-center gap-1.5 text-sm text-ink-700 transition-colors hover:text-espresso"
-                    >
-                      {t.name} <ArrowRight size={14} className="text-accent" />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-
-          {logo && (
-            <div>
-              <h2 className="mb-3 text-sm font-semibold uppercase tracking-[0.1em] text-mocha">Brand</h2>
-              <Image
-                src={`/images/tech/${logo}`}
-                alt={x.device!}
-                width={140}
-                height={44}
-                className="h-8 w-auto object-contain opacity-80"
-              />
-            </div>
-          )}
-        </aside>
       </div>
     </Container>
   );

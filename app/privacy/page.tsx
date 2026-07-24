@@ -4,9 +4,9 @@ import { PDPA_NOTICE_HTML } from "./notice";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "Privacy Policy | Kaiteki",
+  title: "Privacy Policy | Kaiteki Skin Aesthetic Clinic",
   description:
-    "How Kaiteki Skin Aesthetic Clinic collects, uses, stores and protects your personal data, in line with Malaysia's Personal Data Protection Act (PDPA) 2010.",
+    "How Kaiteki Skin Aesthetic Clinic collects, uses and protects your personal data in accordance with Malaysia's Personal Data Protection Act (PDPA).",
   path: "/privacy",
   noindex: true,
 });

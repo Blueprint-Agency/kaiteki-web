@@ -6,9 +6,7 @@ import type { Technology } from "@/lib/types";
 // item's primary treatment. Summaries are single, factual, MAB-compliant
 // sentences (docs/05, docs/02 §8) — no superlatives, guarantees or before/after.
 // `reviewedBy`/`lastReviewed` are SAMPLE placeholders pending real MAB sign-off,
-// mirroring the primary treatment's reviewer (see treatments.ts note). The four
-// items without a dedicated photo (picocare, pro-yellow, wonderface, hydrodeluxe)
-// fall back to their primary treatment's photo. coolsculpting, onda-coolwaves and
+// mirroring the primary treatment's reviewer (see treatments.ts note). coolsculpting, onda-coolwaves and
 // dermav carry over the rich sections/faqs from their former child-treatment pages.
 export const technology: Technology[] = [
   // ── Lasers ──────────────────────────────────────────────────────────────
@@ -43,21 +41,6 @@ export const technology: Technology[] = [
     seoTitle: "Fotona PQX (StarWalker) Laser Treatment Malaysia | Kaiteki",
     seoDescription:
       "Fotona PQX, also known as StarWalker, is a picosecond laser used within Pico Laser treatment for pigment and tattoo concerns. Book a free consultation today.",
-  },
-  {
-    slug: "picocare",
-    name: "PicoCare",
-    group: "Lasers",
-    type: "device",
-    treatments: ["pico-laser"],
-    image: "/images/treatments/pico-laser.jpg",
-    summary:
-      "A picosecond laser device used within Pico laser treatment for pigmentation and tattoo removal.",
-    reviewedBy: "dr-chew-yuhhui",
-    lastReviewed: "2026-07-18",
-    seoTitle: "PicoCare Picosecond Laser Treatment Malaysia | Kaiteki",
-    seoDescription:
-      "PicoCare is a picosecond laser used within Pico Laser treatment for pigmentation and tattoo removal concerns. Book a free consultation to check suitability.",
   },
   {
     slug: "fotona-sp-dynamis",
@@ -176,7 +159,7 @@ export const technology: Technology[] = [
     group: "Lasers",
     type: "device",
     treatments: ["vascular-pigment-laser"],
-    image: "/images/treatments/vascular-pigment-laser.jpg",
+    image: "/images/technology/pro-yellow.jpg",
     summary:
       "A 577nm yellow-light laser used for vascular concerns such as facial redness and visible vessels.",
     reviewedBy: "dr-chew-yuhhui",
@@ -330,7 +313,7 @@ export const technology: Technology[] = [
     group: "Lifting & Tightening",
     type: "device",
     treatments: ["radiofrequency"],
-    image: "/images/treatments/radiofrequency.jpg",
+    image: "/images/technology/wonderface.jpg",
     summary:
       "A radiofrequency platform with precise energy control used for skin-firmness and contour concerns of the face.",
     reviewedBy: "dr-chew-yuhhui",
@@ -634,7 +617,7 @@ export const technology: Technology[] = [
     group: "Injectables",
     type: "injectable",
     treatments: ["skin-booster"],
-    image: "/images/treatments/skin-booster.jpg",
+    image: "/images/technology/hydrodeluxe.jpg",
     summary:
       "A hydrating injectable formulation used within skin-booster treatment to support skin moisture and quality.",
     reviewedBy: "dr-chew-yuhhui",
