@@ -7,17 +7,19 @@ import { WhyKaiteki } from "@/components/WhyKaiteki";
 import { RecognitionCabinet } from "@/components/RecognitionCabinet";
 import { ConcernsMosaic } from "@/components/ConcernsMosaic";
 import { TreatmentsMenu } from "@/components/TreatmentsMenu";
+import { HowItWorks } from "@/components/HowItWorks";
 import { DoctorsFeature } from "@/components/DoctorsFeature";
 import { BranchStrip } from "@/components/BranchStrip";
 import { ClosingCta } from "@/components/ClosingCta";
+import { HomeFaq } from "@/components/HomeFaq";
 import { ArrowRight, MapPin } from "@/components/icons";
 import { site } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "Kaiteki Skin Aesthetic Clinic — Doctor-Led Care in Malaysia",
+  title: "Kaiteki — Japanese-Inspired Aesthetic Clinic in Malaysia",
   description:
-    "Kaiteki Skin Aesthetic Clinic — MOH-licensed, doctor-led skin and aesthetic care at 9 branches across Malaysia. Book a free consultation on WhatsApp.",
+    "9 branches, 20 doctors, one standard of aesthetic care across KL, Selangor, Johor and Sabah. Your concern is assessed first, then the right treatment follows.",
   path: "/",
 });
 
@@ -48,8 +50,8 @@ export default function Home() {
                 </span>
               </h1>
               <p className="rise prose mt-5 max-w-[46ch] text-lg leading-relaxed text-ink-700 mx-auto lg:mx-0" style={si(1)}>
-                Nine branches nationwide. Every treatment is assessed and carried out
-                by registered doctors — a calm, informed decision about your skin.
+                A calm, considered approach to your skin. Nine branches, 20 doctors,
+                and every treatment starts with an assessment.
               </p>
               <div className="rise mt-7 flex flex-col items-center gap-5 lg:items-start" style={si(2)}>
                 <WhatsAppButton size="lg" label="Book a Free Consultation" />
@@ -89,11 +91,13 @@ export default function Home() {
           behind them → why (E-E-A-T) → recognition → branches → invitation. */}
       <ConcernsMosaic />
       <TreatmentsMenu />
+      <HowItWorks />
       <DoctorsFeature />
       <WhyKaiteki />
       <RecognitionCabinet />
       <BranchStrip />
       <ClosingCta />
+      <HomeFaq />
     </>
   );
 }

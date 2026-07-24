@@ -17,6 +17,23 @@ function base(size = 20) {
   };
 }
 
+export function Check({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <path d="m5 12 5 5 9-9" />
+    </svg>
+  );
+}
+
+export function X({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <path d="M18 6 6 18" />
+      <path d="m6 6 12 12" />
+    </svg>
+  );
+}
+
 export function ChevronDown({ className, size }: IconProps) {
   return (
     <svg {...base(size)} className={className}>
@@ -65,6 +82,15 @@ export function Sparkle({ className, size }: IconProps) {
   return (
     <svg {...base(size)} className={className}>
       <path d="M12 3.5 13.9 9l5.6 1.9-5.6 1.9L12 18.5l-1.9-5.7-5.6-1.9L10.1 9 12 3.5Z" />
+    </svg>
+  );
+}
+
+export function Search({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <circle cx={11} cy={11} r={7} />
+      <path d="m20 20-3.5-3.5" />
     </svg>
   );
 }

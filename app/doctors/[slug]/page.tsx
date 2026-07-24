@@ -124,8 +124,6 @@ export default async function DoctorPage({
             <p className="prose mt-5 max-w-[60ch] text-lg leading-relaxed text-ink-700">
               {d.fullName} is a {role.toLowerCase()} at {site.name}. Every treatment at Kaiteki
               is assessed and carried out by an MMC-registered doctor.
-              {d.interests.length > 0 &&
-                ` ${shortName}’s clinical focus includes ${d.interests.join(", ")}.`}
             </p>
           )}
 
@@ -149,24 +147,6 @@ export default async function DoctorPage({
           </div>
         </div>
       </div>
-
-      {d.interests.length > 0 && (
-        <section className="mt-14">
-          <h2 className="mb-4 text-sm font-semibold uppercase tracking-[0.1em] text-mocha">
-            Special interests
-          </h2>
-          <ul className="flex flex-wrap gap-2">
-            {d.interests.map((i) => (
-              <li
-                key={i}
-                className="rounded-full border border-hairline bg-surface px-4 py-2 text-sm text-ink-700"
-              >
-                {i}
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
 
       {reviewed.length > 0 && (
         <section className="mt-12">

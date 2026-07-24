@@ -18,12 +18,12 @@ export function ClosingCta() {
           Free consultation · No obligation
         </p>
         <h2 className="text-balance text-3xl font-bold leading-tight text-espresso sm:text-4xl lg:text-[2.75rem]">
-          Talk to a doctor{" "}
-          <span className="font-serif font-normal italic text-mocha">before you decide.</span>
+          Not sure{" "}
+          <span className="font-serif font-normal italic text-mocha">where to start?</span>
         </h2>
         <p className="max-w-xl text-lg leading-relaxed text-ink-700">
-          Message us on WhatsApp and a registered doctor&rsquo;s team will help you find the
-          right branch and the right starting point &mdash; at your pace.
+          Talk to a doctor first. Message us on WhatsApp for a free consultation.
+          We&rsquo;ll help you find the right branch and the right plan, no obligation.
         </p>
         <div className="mt-2">
           <WhatsAppButton size="lg" />

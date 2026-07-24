@@ -10,9 +10,9 @@ import { doctors } from "@/content/data/doctors";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "About Kaiteki — A Doctor-Led Skin Clinic in Malaysia",
+  title: "Our Story | Kaiteki Skin Aesthetic Clinic",
   description:
-    "Kaiteki is a doctor-led, Japanese-inspired skin and aesthetic clinic, grown from one PJ clinic to nine across Malaysia. Book a free consultation on WhatsApp.",
+    "The story behind Kaiteki. A Japanese-inspired aesthetic clinic founded by doctors, built on calm and considered care, now across 9 Malaysian branches.",
   path: "/our-story",
 });
 
@@ -27,56 +27,21 @@ const stats = [
   { value: `${doctors.length}`, label: "Doctors" },
 ];
 
-const timeline = [
-  {
-    year: "2020",
-    place: "Petaling Jaya",
-    title: "It began with one room, and one idea",
-    body:
-      "Dr Jessie Lim opened Kaiteki as a single medical-aesthetic clinic at The Hub SS2, Petaling Jaya — a treatment room run like a Japanese sanctuary rather than a salon. The name says the whole intention: kaiteki, comfortable.",
-    image: "/images/branches/petaling-jaya.jpg",
-  },
-  {
-    year: "2021",
-    place: "A clinic, formalised",
-    title: "Kaiteki Skin Sdn Bhd",
-    body:
-      "The practice was incorporated and the team grew — more registered doctors, more of the Klang Valley. The promise stayed fixed: care designed and delivered by doctors, with honest advice first and treatment second.",
-    image: "/images/branches/bukit-jalil.jpg",
-  },
-  {
-    year: "Growth",
-    place: "Across the Klang Valley",
-    title: "The same clinic, in more neighbourhoods",
-    body:
-      "Mont Kiara, Cheras, Four Seasons, Kota Kemuning — each new clinic kept the same warm, unhurried room and the same doctor-led standard, so the experience travelled with the name.",
-    image: "/images/clinics/clinic-mont-kiara.jpg",
-  },
-  {
-    year: "Today",
-    place: "KL · Selangor · Johor · Sabah",
-    title: "Nine clinics, one standard of comfort",
-    body:
-      "Kaiteki now spans nine clinics and a team of registered doctors across four states — from the Klang Valley down to Johor and across to Kota Kinabalu. Still Japanese in spirit, still comfortable by design.",
-    image: "/images/branches/four-seasons-kl.jpg",
-  },
-];
-
 const values = [
   {
     kanji: "快適",
     title: "Comfort first",
-    body: "Kaiteki means comfortable. Calm rooms, unhurried consults, and time to ask anything — the feeling is part of the treatment.",
+    body: "The name says it. Calm rooms, unhurried consultations, and the space to ask anything before you decide.",
   },
   {
     kanji: "医",
-    title: "Doctor-led medicine",
-    body: "Every treatment is assessed and carried out by registered doctors who hold to primum non nocere — first, do no harm.",
+    title: "Assessment before treatment",
+    body: "Every treatment plan is assessed by a registered doctor. The plan comes from your concern, not from a treatment menu or a sales conversation.",
   },
   {
     kanji: "誠",
-    title: "Honest guidance",
-    body: "We give you a trustworthy, honest opinion — including when the answer is to do less, or nothing at all.",
+    title: "The honest answer",
+    body: "Sometimes the right recommendation is to do less, wait, or try something different. We give you that answer even when it's not the profitable one.",
   },
 ];
 
@@ -85,9 +50,9 @@ const values = [
 // founders read at equal length. Factual and MAB-safe — no outcome claims.
 const founderBlurbs: Record<string, string> = {
   "dr-jessie-lim":
-    "Dr Jessie Lim is Kaiteki's founder and CEO — an LCP-certified aesthetic physician specialising in injectables and lasers. Trained at Universiti Putra Malaysia and the American Academy of Aesthetic Medicine, she focuses on healthy, natural ageing.",
+    "Dr Jessie Lim is an LCP-certified aesthetic physician specialising in injectables and laser treatments. She trained at Universiti Putra Malaysia and the American Academy of Aesthetic Medicine. She founded Kaiteki around one principle: that aesthetic care should start with an honest assessment, not a sales target.",
   "dr-chew-yuhhui":
-    "Dr Chew Yuhhui is Kaiteki's co-founder and senior medical director — an LCP-certified aesthetic physician who trained at Melaka-Manipal Medical College. Guided by primum non nocere — first, do no harm — she practises ethical, evidence-based care.",
+    "Dr Chew Yuhhui is an LCP-certified aesthetic physician who trained at Melaka-Manipal Medical College. Guided by primum non nocere, first do no harm, she oversees clinical protocols and training across all nine branches, ensuring every doctor follows the same standard of care.",
 };
 
 // Founder interviews in the Malaysian lifestyle press (verified URLs).
@@ -161,8 +126,9 @@ export default function AboutPage() {
             </h1>
             <p className="prose mt-6 text-lg leading-relaxed text-ink-700">
               It&rsquo;s a Japanese word — 快適 — for being at ease, physically and mentally.
-              It is also the single promise behind every Kaiteki clinic: medical-grade skin
-              and aesthetic care that feels calm, unhurried and genuinely on your side.
+              Not just relaxed, but genuinely settled. That feeling is the single promise
+              behind every Kaiteki clinic: medical-grade skin and aesthetic care where
+              nothing is sold, rushed, or justified.
             </p>
             <div className="mt-8">
               <WhatsAppButton label="Book a free consultation" />
@@ -195,14 +161,15 @@ export default function AboutPage() {
             />
             <div className="prose mt-4 space-y-4 text-lg leading-relaxed text-ink-700">
               <p>
-                Kaiteki practises <em>omotenashi</em> — detail-oriented Japanese hospitality
-                and whole-hearted service. We offer the space and the quality, and the medical
-                expertise to use them well.
+                Kaiteki practises <em>omotenashi</em>, the Japanese principle of whole-hearted,
+                detail-oriented hospitality. It shapes everything from the way a consultation
+                is structured to the way a treatment is carried out.
               </p>
               <p>
-                Because every plan is designed and carried out by registered doctors, the advice
-                you receive is clinical first and commercial never. The aim is simple: restore a
-                sense of harmony to your skin, and let you feel like yourself again.
+                Every treatment plan at Kaiteki is designed and carried out by a registered
+                doctor. The advice is clinical first and commercial never. If the right
+                recommendation is to do less, or nothing at all, that&rsquo;s what you&rsquo;ll
+                hear. That standard applies equally at every branch, with every doctor.
               </p>
             </div>
           </div>
@@ -218,64 +185,13 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      {/* ── Timeline: the signature ── */}
-      <section id="journey" className="scroll-mt-24 bg-page">
-        <Container className="py-16 sm:py-24">
-          <SectionHeading
-            eyebrow="Our journey"
-            title={
-              <>
-                From one room in Petaling Jaya{" "}
-                <span className="font-serif font-normal italic text-mocha">to nine clinics</span>
-              </>
-            }
-            intro="Kaiteki grew the slow way — one clinic at a time, each holding the same standard as the first."
-          />
-
-          <ol className="mt-14 space-y-14 border-l border-hairline pl-6 sm:space-y-20 sm:pl-10">
-            {timeline.map((m, i) => (
-              <li key={i} className="reveal relative">
-                {/* node on the spine */}
-                <span
-                  aria-hidden
-                  className="absolute -left-[calc(1.5rem+5px)] top-2 h-2.5 w-2.5 rounded-full bg-mocha ring-4 ring-page sm:-left-[calc(2.5rem+5px)]"
-                />
-                <div className="grid gap-6 lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-12">
-                  <div>
-                    <div className="flex items-baseline gap-3">
-                      <span className="text-4xl font-bold leading-none text-espresso sm:text-5xl">
-                        {m.year}
-                      </span>
-                      <span className="text-xs font-semibold uppercase tracking-[0.14em] text-accent">
-                        {m.place}
-                      </span>
-                    </div>
-                    <h3 className="mt-4 text-xl font-bold text-espresso sm:text-2xl">{m.title}</h3>
-                    <p className="mt-3 text-lg leading-relaxed text-ink-700">{m.body}</p>
-                  </div>
-                  <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-hairline">
-                    <Image
-                      src={m.image}
-                      alt={`Kaiteki — ${m.place}`}
-                      fill
-                      sizes="(max-width: 1024px) 100vw, 50vw"
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ol>
-        </Container>
-      </section>
-
       {/* ── Founders ── */}
       <section className="border-t border-hairline bg-tint">
         <Container className="py-16 sm:py-20">
           <SectionHeading
             eyebrow="The founders"
-            title="The doctors who started it"
-            intro="Kaiteki was founded by two aesthetic physicians who wanted a clinic that felt different from the inside out."
+            title="Founded by doctors, run by doctors"
+            intro={`Kaiteki was started by two aesthetic physicians who believed the consultation should feel as considered as the treatment itself. That philosophy now guides a team of ${doctors.length} registered doctors across nine branches.`}
           />
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
             {founders.map((d) => (

@@ -18,12 +18,12 @@ export function TreatmentsMenu() {
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="max-w-2xl">
             <h2 className="text-balance text-2xl font-bold leading-tight text-espresso sm:text-3xl">
-              A considered menu of{" "}
-              <span className="font-serif font-normal italic text-mocha">treatments</span>
+              What we treat{" "}
+              <span className="font-serif font-normal italic text-mocha">and how</span>
             </h2>
             <p className="mt-3 text-lg leading-relaxed text-ink-700">
-              Non-surgical, established platforms for skin, ageing and body concerns.
-              Hover any card to see what it addresses.
+              Lasers, lifting, skin boosters and body treatments. Every option is
+              doctor-assessed and non-surgical.
             </p>
           </div>
           <Link

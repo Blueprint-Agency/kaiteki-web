@@ -32,15 +32,15 @@ export function ConcernsMosaic() {
               <span className="font-serif font-normal italic text-mocha">in?</span>
             </h2>
             <p className="mt-3 text-lg leading-relaxed text-ink-700">
-              Start with the concern, not the machine. Hover any card for what a doctor
-              may consider — and what to realistically expect.
+              Tell us the concern. A doctor will assess it before recommending any
+              treatment.
             </p>
           </div>
           <Link
             href="/concerns"
             className="group inline-flex items-center gap-1.5 py-1.5 text-sm font-medium text-accent hover:text-espresso"
           >
-            Explore all concerns{" "}
+            View all concerns{" "}
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
           </Link>
         </div>

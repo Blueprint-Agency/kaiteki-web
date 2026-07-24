@@ -6,9 +6,9 @@ import { doctors } from "@/content/data/doctors";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "Meet Our Aesthetic Doctors Across Malaysia | Kaiteki",
+  title: "Meet Our Doctors | Kaiteki Aesthetic Clinic",
   description:
-    "Meet Kaiteki's aesthetic physicians across Malaysia, their credentials and focus areas. Book a free WhatsApp consultation with a doctor near you.",
+    "20 LCP board-certified, MMC-registered aesthetic doctors across 9 branches. Every treatment plan is assessed and carried out by a registered physician.",
   path: "/doctors",
 });
 

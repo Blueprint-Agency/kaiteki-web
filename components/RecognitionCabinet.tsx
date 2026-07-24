@@ -36,9 +36,9 @@ export function RecognitionCabinet() {
               <span className="font-serif font-normal italic text-mocha">behind your care</span>
             </h2>
             <p className="mt-4 max-w-md text-lg leading-relaxed text-ink-700">
-              The device and product partners we work with issue these for clinical
-              volume and standards. They reflect our standing with the manufacturers —
-              not a promise about any individual result.
+              These awards are issued by the device and product manufacturers for
+              clinical volume and standards. They reflect our standing with the
+              brands, not a guarantee of individual results.
             </p>
 
             {/* The clinical ledger — the signature trust element (docs/06 §4.6) */}

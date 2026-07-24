@@ -31,12 +31,12 @@ export function WhyKaiteki() {
       <Container className="reveal relative py-16 sm:py-20">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-pretty text-2xl font-bold leading-tight text-espresso sm:text-[2rem]">
-            Considered care,{" "}
-            <span className="font-serif font-normal italic text-mocha">not a hard sell</span>
+            A different kind of{" "}
+            <span className="font-serif font-normal italic text-mocha">aesthetic clinic</span>
           </h2>
           <p className="mt-3 text-lg leading-relaxed text-ink-700">
-            A calm, medical approach to skin and aesthetics — the reasons people travel
-            across the city to see the same doctors.
+            A calm, medical approach to skin and aesthetics. Just a doctor who assesses
+            your concern and recommends what fits. That&rsquo;s the standard at every branch.
           </p>
         </div>
 

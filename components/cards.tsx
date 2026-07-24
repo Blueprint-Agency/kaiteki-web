@@ -35,9 +35,19 @@ function motifHash(slug: string) {
   return h;
 }
 
-/** Warm placeholder art for a treatment card — see MOTIF_FIELDS note. */
-export function TreatmentMotif({ t, className = "" }: { t: Treatment; className?: string }) {
-  const h = motifHash(t.slug);
+/** Warm placeholder art for a treatment card — see MOTIF_FIELDS note.
+ *  `seed` varies the pattern when the same treatment needs more than one
+ *  placeholder image on a page (e.g. hero vs. an in-body visual break). */
+export function TreatmentMotif({
+  t,
+  seed = "",
+  className = "",
+}: {
+  t: Treatment;
+  seed?: string;
+  className?: string;
+}) {
+  const h = motifHash(t.slug + seed);
   const field = MOTIF_FIELDS[h % MOTIF_FIELDS.length];
   const cx = (62 + (h % 3) * 12) * 3.2; // focal x within the 320-wide viewBox
   const cy = (30 + ((h >> 2) % 3) * 10) * 2; // focal y within the 200-tall viewBox
@@ -82,6 +92,11 @@ export function TreatmentCard({ t, className = "", style }: { t: Treatment } & E
         <h3 className="text-lg font-semibold text-espresso decoration-mocha/60 underline-offset-4 group-hover:underline">
           {t.name}
         </h3>
+        {t.durationDowntime && (
+          <p className="mt-1.5 text-xs font-medium uppercase tracking-[0.04em] text-mocha">
+            {t.durationDowntime}
+          </p>
+        )}
         <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-700">{t.summary}</p>
         <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-accent">
           Learn more <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
@@ -216,8 +231,7 @@ export function DoctorCard({
   className = "",
   style,
   mediaClassName = "aspect-[2/3]",
-  compact = false,
-}: { d: Doctor; mediaClassName?: string; compact?: boolean } & Extra) {
+}: { d: Doctor; mediaClassName?: string } & Extra) {
   return (
     <Link href={`/doctors/${d.slug}`} style={style} className={`${cardBase} overflow-hidden ${className}`}>
       <div className={`relative ${mediaClassName} overflow-hidden bg-tint`}>
@@ -238,11 +252,6 @@ export function DoctorCard({
           {d.credentials}
           {d.mmc ? ` · ${d.mmc}` : ""}
         </p>
-        {!compact && d.interests.length > 0 && (
-          <p className="mt-2 text-sm leading-relaxed text-ink-700">
-            Special interests: {d.interests.join(", ")}.
-          </p>
-        )}
         <span className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-medium text-accent">
           View profile <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
         </span>
@@ -366,38 +375,57 @@ const TECH_TYPE_LABEL: Record<Technology["type"], string> = {
 export function TechnologyCard({ x, className = "", style }: { x: Technology } & Extra) {
   const powers = treatmentsOfTechnology(x.slug);
   return (
-    <Link href={`/technology/${x.slug}`} style={style} className={`${cardBase} overflow-hidden ${className}`}>
-      {x.image ? (
-        <div className="relative aspect-[16/10] overflow-hidden bg-tint">
-          <Image
-            src={x.image}
-            alt={x.name}
-            fill
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-          />
+    <div style={style} className={`${cardBase} overflow-hidden ${className}`}>
+      <Link href={`/technology/${x.slug}`} className="flex flex-1 flex-col">
+        {x.image ? (
+          <div className="relative aspect-[16/10] overflow-hidden bg-tint">
+            <Image
+              src={x.image}
+              alt={x.name}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            />
+          </div>
+        ) : (
+          <ProductMotif slug={x.slug} className="aspect-[16/10]" />
+        )}
+        <div className="flex flex-1 flex-col p-5 pb-0">
+          <div className="flex items-center gap-2">
+            <span className="rounded-full bg-tint px-2.5 py-1 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-mocha">
+              {TECH_TYPE_LABEL[x.type]}
+            </span>
+          </div>
+          <h3 className="mt-3 text-lg font-semibold text-espresso decoration-mocha/60 underline-offset-4 group-hover:underline">
+            {x.name}
+          </h3>
         </div>
-      ) : (
-        <ProductMotif slug={x.slug} className="aspect-[16/10]" />
-      )}
-      <div className="flex flex-1 flex-col p-5">
-        <div className="flex items-center gap-2">
-          <span className="rounded-full bg-tint px-2.5 py-1 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-mocha">
-            {TECH_TYPE_LABEL[x.type]}
-          </span>
-        </div>
-        <h3 className="mt-3 text-lg font-semibold text-espresso decoration-mocha/60 underline-offset-4 group-hover:underline">
-          {x.name}
-        </h3>
+      </Link>
+      <div className="p-5 pt-3">
         {powers.length > 0 && (
-          <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-700">
-            Used in {powers.map((t) => t.name).join(", ")}.
+          <p className="text-sm leading-relaxed text-ink-700">
+            Used in{" "}
+            {powers.map((t, i) => (
+              <span key={t.slug}>
+                {i > 0 ? ", " : ""}
+                <Link
+                  href={treatmentHref(t)}
+                  className="underline decoration-mocha/40 underline-offset-2 hover:text-accent"
+                >
+                  {t.name}
+                </Link>
+              </span>
+            ))}
+            .
           </p>
         )}
-        <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-accent">
+        <Link
+          href={`/technology/${x.slug}`}
+          className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-accent"
+        >
           Learn more <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
-        </span>
+        </Link>
       </div>
-    </Link>
+    </div>
   );
 }

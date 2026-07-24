@@ -12,7 +12,7 @@ export type NavCategory =
   | "Regenerative"
   | "Eyes";
 
-export type Region = "Klang Valley" | "Johor" | "Sabah";
+export type Region = "Kuala Lumpur" | "Selangor" | "Johor" | "Sabah";
 
 export interface Faq {
   q: string;
@@ -36,6 +36,8 @@ export interface Treatment {
   image: string;
   /** One compliant sentence — used on cards, hubs and meta. */
   summary: string;
+  /** Short duration/downtime tag shown on hub cards, e.g. "15-30 min · Minimal downtime (1-2 days)". */
+  durationDowntime?: string;
   /** 40–60 word answer-first capsule (docs/05 §1.3). */
   leadAnswer: string;
   /** Related treatment slugs. */
@@ -45,6 +47,24 @@ export interface Treatment {
   faqs?: Faq[];
   /** Device/brand name shown in the technology context. */
   device?: string;
+  /** Typical number of sessions for a course, e.g. "4-6". Session time and
+   *  downtime are already carried in `durationDowntime`. */
+  typicalSessions?: string;
+  /** Areas this treatment is commonly applied to, e.g. ["Face", "Neck"]. */
+  areas?: string[];
+  /** Who this treatment is generally appropriate for — paired with
+   *  `notSuitableFor` as a scannable suitable/not-suitable checklist. */
+  suitableFor?: string[];
+  /** Contraindications / who should avoid this treatment (docs/05 §9) —
+   *  paired with `suitableFor`. Before/after patient photography is not used
+   *  anywhere on the site (MAB — see DESIGN.md "Imagery"). */
+  notSuitableFor?: string[];
+  /** Factual comparison vs alternative treatments for the same concerns. */
+  comparisons?: { name: string; bestFor: string; downtime: string }[];
+  /** Pre-treatment care bullets. */
+  preCare?: string[];
+  /** Post-treatment care bullets. */
+  postCare?: string[];
   /** Compliance + review (placeholder values for the sample — docs/05 §9). */
   reviewedBy: string; // doctor slug
   lastReviewed: string; // ISO date
@@ -69,8 +89,8 @@ export interface Technology {
   type: TechType;
   /** Treatment slugs this powers — the ONLY authored edge. Many-to-many. */
   treatments: string[];
-  /** Photo under /public/images/technology. Optional — 4 items fall back to the
-   *  generated motif until real product photography lands. */
+  /** Photo under /public/images/technology. Optional — items without one fall
+   *  back to the generated motif until real product photography lands. */
   image?: string;
   /** One compliant, factual sentence. */
   summary: string;
@@ -140,8 +160,6 @@ export interface Branch {
   /** Sub-brand / trading name this branch also operates under (e.g. a co-located
    *  concept clinic). Surfaced for search + disambiguation. */
   alsoKnownAs?: string;
-  /** Treatment slugs offered here (sample subset). */
-  treatments: string[];
   /** SEO-optimized <title>, 50–60 chars, brand baked in (docs/10). */
   seoTitle?: string;
   /** SEO meta description, 140–160 chars (docs/10). */
@@ -159,7 +177,6 @@ export interface Doctor {
   /** Photo under /public/images/doctors. */
   photo: string;
   branches: string[];
-  interests: string[];
   /** Optional authored bio paragraphs for the profile page. Sourced verbatim
    *  from the clinic's published "Meet the Experts" copy (legacy aboutus.html). */
   bio?: string[];
