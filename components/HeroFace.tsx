@@ -79,12 +79,7 @@ const spots: Spot[] = [
   },
 ];
 
-const spotStyle = (s: Spot, i: number): CSSProperties =>
-  ({ left: `${s.x}%`, top: `${s.y}%`, "--i": i } as CSSProperties);
-
-/* Cards get --i only — their position comes from cardClass, and an inline
-   left/top would beat those Tailwind classes. */
-const cardStyle = (i: number): CSSProperties => ({ "--i": i } as CSSProperties);
+const spotStyle = (s: Spot): CSSProperties => ({ left: `${s.x}%`, top: `${s.y}%` });
 
 export function HeroFace() {
   /* lg: width-driven — the figure fills the column up to the width whose
@@ -114,12 +109,12 @@ export function HeroFace() {
         className="hero-figure-img relative z-10 h-auto w-full"
       />
 
-      {spots.map((s, i) => (
+      {spots.map((s) => (
         <Fragment key={s.slug}>
           <Link
             href={`/concerns/${s.slug}`}
             aria-label={`${s.name} — read the concern guide`}
-            style={spotStyle(s, i)}
+            style={spotStyle(s)}
             className="hero-spot group absolute z-20 -ml-3 -mt-3 flex size-6 items-center justify-center rounded-full"
           >
             {/* Dot — small so it annotates the face instead of covering it */}
@@ -146,11 +141,7 @@ export function HeroFace() {
               figure (right-side callouts included) without clipping. Not a
               link: the dot above is the one anchor per concern. Hidden from AT
               (the dot's aria-label already names the concern). */}
-          <span
-            aria-hidden="true"
-            style={cardStyle(i)}
-            className={`hero-card-pos absolute z-30 ${s.cardClass}`}
-          >
+          <span aria-hidden="true" className={`hero-card-pos absolute z-30 ${s.cardClass}`}>
             <span className="hero-card block rounded-[10px] bg-surface p-4 shadow-xl ring-1 ring-espresso/10">
               <span className="flex size-9 items-center justify-center rounded-full bg-tint text-accent">
                 {s.icon}

@@ -13,7 +13,7 @@ import { waForProduct } from "@/lib/wa";
 // always held "cards never lift"). Hover instead zooms the image, underlines the
 // title and warms the hairline to mocha — quieter, more magazine than dashboard.
 const cardBase =
-  "group flex flex-col overflow-hidden rounded-2xl bg-surface ring-1 ring-hairline transition-[box-shadow,--tw-ring-color] duration-300 ease-out hover:ring-mocha/70 hover:shadow-[0_18px_44px_rgb(73_54_40/0.09)] focus-within:ring-mocha";
+  "group flex flex-col overflow-hidden rounded-2xl bg-surface ring-1 ring-hairline transition-[box-shadow,transform,--tw-ring-color] duration-300 ease-out hover:z-10 hover:scale-[1.02] hover:ring-mocha/70 hover:shadow-[0_18px_44px_rgb(73_54_40/0.09)] focus-within:z-10 focus-within:scale-[1.02] focus-within:ring-mocha";
 
 type Extra = { className?: string; style?: CSSProperties };
 
@@ -94,11 +94,6 @@ export function TreatmentCard({ t, className = "", style }: { t: Treatment } & E
         <h3 className="font-display text-xl font-medium text-espresso decoration-mocha/50 underline-offset-[5px] group-hover:underline">
           {t.name}
         </h3>
-        {t.durationDowntime && (
-          <p className="mt-1.5 text-xs font-medium uppercase tracking-[0.04em] text-mocha">
-            {t.durationDowntime}
-          </p>
-        )}
         <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-700">{t.summary}</p>
         <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-accent">
           Learn more <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
@@ -121,7 +116,7 @@ export function ConcernTile({
     <Link
       href={`/concerns/${c.slug}`}
       style={style}
-      className={`group relative block overflow-hidden rounded-2xl rounded-t-[2.75rem] ring-1 ring-hairline transition-shadow duration-300 hover:shadow-[0_18px_40px_rgb(73_54_40/0.14)] ${
+      className={`group relative block overflow-hidden rounded-2xl rounded-t-[2.75rem] ring-1 ring-hairline transition-[box-shadow,transform] duration-300 ease-out hover:z-10 hover:scale-[1.02] hover:shadow-[0_18px_40px_rgb(73_54_40/0.14)] focus-visible:z-10 focus-visible:scale-[1.02] ${
         feature ? "aspect-[4/5] sm:aspect-auto" : "aspect-[4/5]"
       } ${className}`}
     >
@@ -191,7 +186,7 @@ export function BranchCard({ b, className = "", style }: { b: Branch } & Extra) 
           alt={`Kaiteki ${b.name} clinic`}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover"
+          className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
         />
       </div>
       <div className="flex flex-1 items-center justify-between gap-3 p-4">
@@ -220,7 +215,7 @@ export function SeeAllCard({
     <Link
       href={href}
       style={style}
-      className={`group flex items-center justify-between gap-3 rounded-2xl bg-surface px-6 py-5 font-medium text-espresso ring-1 ring-hairline transition-[box-shadow,--tw-ring-color] duration-300 ease-out hover:ring-mocha/70 hover:shadow-[0_18px_44px_rgb(73_54_40/0.09)] focus-visible:ring-mocha ${className}`}
+      className={`group flex items-center justify-between gap-3 rounded-2xl bg-surface px-6 py-5 font-medium text-espresso ring-1 ring-hairline transition-[box-shadow,transform,--tw-ring-color] duration-300 ease-out hover:z-10 hover:scale-[1.02] hover:ring-mocha/70 hover:shadow-[0_18px_44px_rgb(73_54_40/0.09)] focus-visible:z-10 focus-visible:scale-[1.02] focus-visible:ring-mocha ${className}`}
     >
       <span>{label}</span>
       <ArrowRight size={18} className="shrink-0 text-accent transition-transform group-hover:translate-x-0.5" />
@@ -242,7 +237,7 @@ export function DoctorCard({
           alt={d.fullName}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover object-top"
+          className="object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
         />
       </div>
       <div className="flex flex-1 flex-col p-5">
@@ -306,13 +301,13 @@ export function ProductCard({ p, className = "", style }: { p: Product } & Extra
   return (
     <div style={style} className={`${cardBase} overflow-hidden ${className}`}>
       {p.image ? (
-        <div className="relative aspect-square bg-tint">
+        <div className="relative aspect-square overflow-hidden bg-tint">
           <Image
             src={p.image}
             alt={p.name}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-            className="object-cover"
+            className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
           />
         </div>
       ) : (

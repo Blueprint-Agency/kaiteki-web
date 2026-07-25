@@ -377,89 +377,6 @@ body {
   z-index: 30;
 }
 
-/* Auto-cycle — the reveal above is hover/focus-only, so on touch (no hover,
-   and a tap navigates) the callouts were never seen. One card at a time walks
-   the face on a 15s loop: 5 spots × 3s, staggered by the --i each spot already
-   carries. Pointer users take over on hover, which drops the animation and
-   hands control back to the :hover rules. */
-@media (prefers-reduced-motion: no-preference) {
-  .hero-figure:not(:hover) .hero-card-pos {
-    animation: hero-cycle-pos 15s steps(1, end) infinite;
-    animation-delay: calc(var(--i) * 3s);
-  }
-  .hero-figure:not(:hover) .hero-card-pos .hero-card {
-    animation: hero-cycle-card 15s var(--ease-out-quart) infinite;
-    animation-delay: calc(var(--i) * 3s);
-  }
-  .hero-figure:not(:hover) .hero-line-h,
-  .hero-figure:not(:hover) .hero-line-r {
-    animation: hero-cycle-line-x 15s var(--ease-out-quart) infinite;
-    animation-delay: calc(var(--i) * 3s);
-  }
-  .hero-figure:not(:hover) .hero-line-v {
-    animation: hero-cycle-line-y 15s var(--ease-out-quart) infinite;
-    animation-delay: calc(var(--i) * 3s);
-  }
-}
-@keyframes hero-cycle-pos {
-  0%,
-  19.99% {
-    visibility: visible;
-  }
-  20%,
-  100% {
-    visibility: hidden;
-  }
-}
-@keyframes hero-cycle-card {
-  0% {
-    opacity: 0;
-    transform: translateY(8px) scale(0.96);
-  }
-  5%,
-  16% {
-    opacity: 1;
-    transform: none;
-  }
-  20%,
-  100% {
-    opacity: 0;
-    transform: translateY(8px) scale(0.96);
-  }
-}
-@keyframes hero-cycle-line-x {
-  0% {
-    opacity: 0;
-    transform: scaleX(0);
-  }
-  6%,
-  16% {
-    opacity: 1;
-    transform: none;
-  }
-  20%,
-  100% {
-    opacity: 0;
-    transform: scaleX(0);
-  }
-}
-@keyframes hero-cycle-line-y {
-  0% {
-    opacity: 0;
-    transform: scaleY(0);
-  }
-  6%,
-  16% {
-    opacity: 1;
-    transform: none;
-  }
-  20%,
-  100% {
-    opacity: 0;
-    transform: scaleY(0);
-  }
-}
-
 /* Hide the scrollbar on native horizontal scroll-snap tracks (e.g. the
    doctors slider) — the arrow buttons remain the visible affordance. */
 .scrollbar-none {
@@ -483,6 +400,81 @@ body {
   .reveal-ready .seed {
     animation: kaiteki-seed var(--seed-dur, 9s) var(--ease-out-quart) infinite;
     animation-delay: var(--seed-delay, 0s);
+  }
+}
+
+/* ============================================================
+   .hscroll — sectional horizontal scroll (components/HowItWorks.tsx).
+
+   Base layer (every browser): heading above a native, swipeable,
+   snap-pointed track. Nothing can break, nothing is hidden.
+
+   Enhancement: where scroll-driven animations exist AND the viewport is
+   tall enough to hold the heading plus a panel, the block grows to 300vh
+   with a sticky 100vh stage, and vertical scroll drives the track's
+   translateX off the block's own view-timeline — no scroll listener, no
+   JS. Gated on min-height because a short window would centre-overflow
+   the stage and clip the heading out of the pinned screen.
+
+   translateX(-100% + 100vw) always lands the track's right edge on the
+   viewport's right edge, whatever the panel count, so a fifth step needs
+   no math — only a taller .hscroll.
+   ============================================================ */
+.hscroll-stage {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 4vh, 3rem);
+  padding-block: 4rem 5rem; /* the pinned stage gets its air from 100vh instead */
+}
+.hscroll-track {
+  display: flex;
+  gap: 1.5rem;
+  padding-inline: max(1.25rem, calc((100vw - 72rem) / 2));
+  padding-block: 0.5rem; /* room for the panels' shadow-free edges */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.hscroll-track::-webkit-scrollbar {
+  display: none;
+}
+.hscroll-panel {
+  width: min(78vw, 34rem);
+  flex: none;
+  scroll-snap-align: center;
+  border-radius: 1rem;
+  border: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+  padding: 2rem;
+}
+@supports (animation-timeline: view()) {
+  @media (min-height: 44rem) and (prefers-reduced-motion: no-preference) {
+    .hscroll {
+      height: 300vh; /* scroll distance for the whole sideways travel */
+      view-timeline-name: --hscroll;
+      view-timeline-axis: block;
+    }
+    .hscroll-stage {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      justify-content: center;
+      overflow: hidden;
+      padding-block: 0;
+    }
+    .hscroll-track {
+      width: max-content;
+      overflow-x: visible;
+      scroll-snap-type: none;
+      animation: hscroll-x linear both;
+      animation-timeline: --hscroll;
+      animation-range: contain 0% contain 100%;
+    }
+  }
+}
+@keyframes hscroll-x {
+  to {
+    transform: translateX(calc(-100% + 100vw));
   }
 }
 

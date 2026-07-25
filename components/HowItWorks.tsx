@@ -32,38 +32,41 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="relative overflow-hidden bg-page">
-      <Container className="reveal py-16 sm:py-24">
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="kicker">What to expect</p>
-          <h2 className="mt-3 h-section">Your first visit, step by step</h2>
-          <p className="mt-3 text-lg leading-relaxed text-ink-700">
-            Every treatment at Kaiteki begins the same way, with a conversation. Here&rsquo;s
-            what the process looks like from start to finish.
-          </p>
-        </div>
+    <section id="how-it-works" className="relative bg-page">
+      {/* The four steps read sideways: while this tall block is pinned, vertical
+          scroll drives the track's translateX (CSS scroll-driven animation — see
+          .hscroll in globals.css). The heading lives inside the pinned stage so
+          the section is one screen tall with no dead space above the track.
+          Browsers without animation-timeline, and anyone on
+          prefers-reduced-motion, get the same track as a plain swipeable
+          scroller — the markup is one list either way. */}
+      <div className="hscroll">
+        <div className="hscroll-stage">
+          <Container className="reveal shrink-0">
+            <div className="mx-auto max-w-2xl text-center">
+              <p className="kicker">What to expect</p>
+              <h2 className="mt-3 h-section">Your first visit, step by step</h2>
+              <p className="mt-3 text-lg leading-relaxed text-ink-700">
+                Every treatment at Kaiteki begins the same way, with a conversation.
+                Here&rsquo;s what the process looks like from start to finish.
+              </p>
+            </div>
+          </Container>
 
-        {/* Centred and capped to the reading measure — at full Container width the
-            62ch body column left a dead third of the row, so the hairlines ran
-            far past where the text stopped. */}
-        <ol className="mx-auto mt-14 max-w-3xl divide-y divide-hairline border-y border-hairline">
-          {steps.map((s) => (
-            <li
-              key={s.n}
-              className="grid gap-x-8 gap-y-3 py-8 sm:grid-cols-[3rem_1fr] sm:items-baseline lg:grid-cols-[4rem_1fr]"
-            >
-              <span className="font-display text-4xl font-medium leading-none text-mocha/45 tabular-nums sm:text-5xl">
-                {s.n}
-              </span>
-              <div>
-                <h3 className="h-sub text-espresso">{s.title}</h3>
+          <ol className="hscroll-track">
+            {steps.map((s) => (
+              <li key={s.n} className="hscroll-panel">
+                <span className="font-display text-5xl font-medium leading-none text-mocha/45 tabular-nums sm:text-6xl">
+                  {s.n}
+                </span>
+                <h3 className="h-sub mt-5 text-espresso">{s.title}</h3>
                 <p className="mt-1 text-sm font-medium text-accent">{s.kicker}</p>
-                <p className="mt-2 leading-relaxed text-ink-700">{s.body}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
-      </Container>
+                <p className="mt-3 leading-relaxed text-ink-700">{s.body}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </div>
     </section>
   );
 }
