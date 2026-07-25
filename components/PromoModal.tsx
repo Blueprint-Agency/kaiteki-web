@@ -61,7 +61,7 @@ export function PromoModal({ trigger }: { trigger?: string }) {
           />
           {!trigger && (
             <Link
-              href="/skincare"
+              href="/products"
               onClick={() => ref.current?.close()}
               className="inline-flex flex-1 items-center justify-center rounded-full border border-ink-900/15 px-5 py-3 text-sm font-semibold text-ink-900 transition-colors hover:bg-tint"
             >

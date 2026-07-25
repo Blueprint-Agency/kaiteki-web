@@ -42,7 +42,7 @@ const nextConfig: NextConfig = {
       { source: "/index.html", destination: "/", statusCode: 301 },
       { source: "/our-clinics.php", destination: "/locations", statusCode: 301 },
       { source: "/services.html", destination: "/treatments", statusCode: 301 },
-      { source: "/skincare.html", destination: "/skincare", statusCode: 301 },
+      { source: "/skincare.html", destination: "/products", statusCode: 301 },
       { source: "/privacy.html", destination: "/privacy", statusCode: 301 },
       // About / Our Story (page lives at /our-story)
       { source: "/aboutus.html", destination: "/our-story", statusCode: 301 },
@@ -96,7 +96,8 @@ const nextConfig: NextConfig = {
 
       // Extensionless variants the old .htaccess rewrote (docs/01 §3)
       { source: "/skin", destination: "/concerns", statusCode: 301 },
-      { source: "/skin-care", destination: "/skincare", statusCode: 301 },
+      { source: "/skin-care", destination: "/products", statusCode: 301 },
+      { source: "/skincare", destination: "/products", statusCode: 301 },
       { source: "/kuala-lumpur", destination: "/locations/bukit-jalil", statusCode: 301 },
     ];
   },

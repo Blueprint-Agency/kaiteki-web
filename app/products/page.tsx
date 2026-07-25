@@ -14,7 +14,7 @@ export const metadata = pageMeta({
   title: "Kaiteki Cosmeceuticals | Japanese-Inspired Skincare",
   description:
     "Japanese-inspired, dermatologist-formulated skincare for acne, ageing and dull skin. Medical-grade ingredients, MOH-approved. Suitable for all skin types.",
-  path: "/skincare",
+  path: "/products",
 });
 
 // Bespoke rather than collectionPageNode(): these children are Products with
@@ -22,13 +22,13 @@ export const metadata = pageMeta({
 // deliberately doesn't carry. Products have no detail route — the ItemList item
 // URL is the hub anchor. Offer prices are marked up because they are rendered
 // on the card (SD policy: only mark up visible content).
-const SKINCARE_URL = `${site.url}/skincare`;
+const PRODUCTS_URL = `${site.url}/products`;
 
 const collectionJsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "@id": `${SKINCARE_URL}#webpage`,
-  url: SKINCARE_URL,
+  "@id": `${PRODUCTS_URL}#webpage`,
+  url: PRODUCTS_URL,
   name: "Kaiteki® Cosmeceuticals",
   description:
     "Japanese-inspired, dermatologist-formulated skincare available at Kaiteki clinics.",
@@ -44,7 +44,7 @@ const collectionJsonLd = {
       item: {
         "@type": "Product",
         name: p.name,
-        url: `${SKINCARE_URL}#${p.slug}`,
+        url: `${PRODUCTS_URL}#${p.slug}`,
         ...(p.image ? { image: `${site.url}${p.image}` } : {}),
         description: p.summary,
         brand: { "@type": "Brand", name: p.brand },
@@ -54,7 +54,7 @@ const collectionJsonLd = {
           price: p.price,
           priceCurrency: "MYR",
           availability: "https://schema.org/InStock",
-          url: SKINCARE_URL,
+          url: PRODUCTS_URL,
           seller: { "@id": orgId },
         },
       },
@@ -62,13 +62,13 @@ const collectionJsonLd = {
   },
 };
 
-export default function SkincareHub() {
+export default function ProductsHub() {
   return (
     <Container className="py-10 sm:py-12">
       <PageHeader
-        crumbs={[{ label: "Skincare" }]}
+        crumbs={[{ label: "Products" }]}
         eyebrow="Kaiteki® Cosmeceuticals"
-        title="Skincare"
+        title="Products"
         description="Medical-grade skincare formulated to support your skin between clinic treatments. Our own range alongside the partner brands our doctors trust and recommend."
       />
 

@@ -55,7 +55,7 @@ const orderSections = (present: string[]) =>
 
 const types: TechType[] = ["device", "injectable"];
 
-/** Search + filter over the Products & Technology catalog, grouped under
+/** Search + filter over the Device & Injectables catalog, grouped under
  *  visible section headings so the page carries real H2 structure for crawlers
  *  even though the filters can hide/show individual sections. */
 export function TechnologyExplorer() {
