@@ -12,6 +12,7 @@ import { DoctorsFeature } from "@/components/DoctorsFeature";
 import { BranchStrip } from "@/components/BranchStrip";
 import { ClosingCta } from "@/components/ClosingCta";
 import { HomeFaq } from "@/components/HomeFaq";
+import { PromoModal } from "@/components/PromoModal";
 import { ArrowRight, MapPin } from "@/components/icons";
 import { site } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
@@ -29,6 +30,7 @@ const si = (i: number): CSSProperties => ({ "--i": Math.min(i, 8) } as CSSProper
 export default function Home() {
   return (
     <>
+      <PromoModal />
       {/* HERO — warm-sanctuary fold: subject photo with interactive concern
           hotspots (see HeroFace). Pulled under the transparent header. */}
       <section className="hero-warm relative -mt-[68px] overflow-hidden">
