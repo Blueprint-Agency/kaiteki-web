@@ -1,18 +1,10 @@
 import { Container } from "@/components/Container";
 import { PageHeader } from "@/components/PageHeader";
-import { ProductCard } from "@/components/cards";
-import { CardRow } from "@/components/CardRow";
+import { SkincareExplorer } from "@/components/SkincareExplorer";
 import { Disclaimer } from "@/components/Disclaimer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
-import { products, productGroups, productsByGroup } from "@/content/data/products";
+import { products } from "@/content/data/products";
 import { pageMeta } from "@/lib/seo";
-
-const GROUP_INTRO: Record<string, string> = {
-  "Kaiteki® Cosmeceuticals":
-    "Kaiteki Cosmeceuticals is our own skincare range, formulated with medical-grade ingredients for everyday use. Each product is designed to complement your treatment plan or work as a standalone daily routine.",
-  "Partner Brands":
-    "These are the partner products our doctors recommend alongside clinic treatments. Each one is selected for clinical evidence and suitability for the concerns we treat.",
-};
 
 export const metadata = pageMeta({
   title: "Kaiteki Cosmeceuticals | Japanese-Inspired Skincare",
@@ -53,22 +45,8 @@ export default function SkincareHub() {
         description="Medical-grade skincare formulated to support your skin between clinic treatments. Our own range alongside the partner brands our doctors trust and recommend."
       />
 
-      <div className="mt-12 space-y-14">
-        {productGroups.map((group) => (
-          <section key={group}>
-            <h2 className="text-sm font-semibold uppercase tracking-[0.1em] text-mocha">
-              {group}
-            </h2>
-            {GROUP_INTRO[group] && (
-              <p className="mt-3 max-w-2xl text-ink-700">{GROUP_INTRO[group]}</p>
-            )}
-            <CardRow className="mt-5">
-              {productsByGroup(group).map((p) => (
-                <ProductCard key={p.slug} p={p} />
-              ))}
-            </CardRow>
-          </section>
-        ))}
+      <div className="mt-12">
+        <SkincareExplorer />
       </div>
 
       <div className="mt-14 max-w-2xl space-y-4">

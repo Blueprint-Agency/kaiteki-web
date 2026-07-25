@@ -43,7 +43,10 @@ export function HowItWorks() {
           </p>
         </div>
 
-        <ol className="mt-14 divide-y divide-hairline border-y border-hairline">
+        {/* Centred and capped to the reading measure — at full Container width the
+            62ch body column left a dead third of the row, so the hairlines ran
+            far past where the text stopped. */}
+        <ol className="mx-auto mt-14 max-w-3xl divide-y divide-hairline border-y border-hairline">
           {steps.map((s) => (
             <li
               key={s.n}
@@ -55,7 +58,7 @@ export function HowItWorks() {
               <div>
                 <h3 className="h-sub text-espresso">{s.title}</h3>
                 <p className="mt-1 text-sm font-medium text-accent">{s.kicker}</p>
-                <p className="mt-2 max-w-[62ch] leading-relaxed text-ink-700">{s.body}</p>
+                <p className="mt-2 leading-relaxed text-ink-700">{s.body}</p>
               </div>
             </li>
           ))}

@@ -3,7 +3,6 @@ import { PageHeader } from "@/components/PageHeader";
 import { ConcernsExplorer } from "@/components/ConcernsExplorer";
 import { ConcernPicker } from "@/components/ConcernPicker";
 import { ClosingCta } from "@/components/ClosingCta";
-import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
@@ -24,23 +23,17 @@ export default function ConcernsHub() {
           description="Tell us the concern. Each guide below is reviewed by a doctor and explains what they look for, what options exist, and what to realistically expect."
         />
 
-        <div className="mt-12">
-          <ConcernsExplorer />
-        </div>
-
-        <div className="mt-10 flex flex-wrap items-center justify-between gap-4 rounded-2xl bg-tint px-6 py-5 sm:px-8">
-          <p className="max-w-xl text-sm leading-relaxed text-ink-700 sm:text-base">
-            Not sure which concern fits? That&rsquo;s normal. Book a free consultation and a
-            doctor will help you figure out the right starting point.
-          </p>
-          <WhatsAppButton />
-        </div>
-
-        <div className="mt-16">
+        {/* The picker answers the H1 directly, so it leads — browsing the full
+            set is the fallback for anyone who doesn't see their concern in it. */}
+        <div className="mt-10">
           <ConcernPicker />
         </div>
 
-        <section className="mt-16 max-w-2xl">
+        <div className="mt-16">
+          <ConcernsExplorer />
+        </div>
+
+        <section className="mx-auto mt-16 max-w-2xl">
           <h2 className="font-serif text-2xl font-semibold text-espresso sm:text-3xl">
             How we approach your concern
           </h2>

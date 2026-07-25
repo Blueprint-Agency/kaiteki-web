@@ -863,11 +863,12 @@ export const treatments: Treatment[] = [
     ],
   },
   {
-    // Deliberately generic naming throughout. Botulinum toxin is a prescription
-    // medicine (scheduled poison) in Malaysia, and advertising such products to
-    // the public by brand name is not permitted — so no brand appears in the
-    // copy, `device`, or the paired technology entry, and no efficacy or
-    // longevity promises are made (docs/02 §8).
+    // The procedure page; brands live on their /technology pages (Botox today).
+    // Botulinum toxin is a prescription medicine, so copy stays mechanism-level:
+    // no efficacy, longevity or outcome promises, no pricing or packages, and
+    // dose and suitability always defer to an in-person assessment (docs/02 §8).
+    // Client to confirm with their MAB advisor that brand-level pages for a
+    // prescription medicine are within their approved advertising position.
     slug: "botulinum-toxin",
     durationDowntime: "10-20 min · No downtime",
     name: "Botulinum Toxin",
@@ -939,7 +940,8 @@ export const treatments: Treatment[] = [
         heading: "What is botulinum toxin?",
         body: [
           "Botulinum toxin is a purified protein produced by the bacterium Clostridium botulinum. In very small, controlled doses it is used in medicine to temporarily reduce the activity of a specific muscle or gland. It has been used clinically for decades, originally in neurology and ophthalmology, and later in aesthetic medicine.",
-          "In Malaysia it is a prescription medicine. That means it can only be supplied and administered by a registered doctor after an in-person assessment, and it cannot be bought, requested or self-administered like a cosmetic product. Kaiteki does not advertise it by brand name for the same reason.",
+          "In Malaysia it is a prescription medicine. That means it can only be supplied and administered by a registered doctor after an in-person assessment, and it cannot be bought, requested or self-administered like a cosmetic product.",
+          "Several brands of botulinum toxin type A are registered in Malaysia, of which Botox is the best known — the name is widely used to mean the treatment itself, though it is one product among several. Which one your doctor recommends depends on the area being treated and your assessment.",
         ],
       },
       {
@@ -1012,8 +1014,8 @@ export const treatments: Treatment[] = [
         a: "That outcome relates to dose and placement, which is why the doctor assesses how your muscles move before deciding anything. Tell your doctor at consultation how much movement you want to keep, and ask what is realistic. A review appointment lets the doctor assess the result before considering any further treatment.",
       },
       {
-        q: "Why don't you name the brand you use?",
-        a: "Botulinum toxin is a prescription medicine in Malaysia, and advertising prescription medicines to the public by brand name is not permitted. Your doctor will tell you at consultation exactly which registered product is being recommended for you, and you are welcome to ask about it then.",
+        q: "Is this the same as Botox?",
+        a: "Botox is one registered brand of botulinum toxin type A, and it is the brand most people mean when they say the word. It is a product, not a separate treatment. Several brands are registered in Malaysia and they differ in formulation and unit potency, so your doctor will explain which one they are recommending for you and why.",
       },
       {
         q: "Is it the same as dermal filler?",
