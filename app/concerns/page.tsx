@@ -4,17 +4,36 @@ import { ConcernsExplorer } from "@/components/ConcernsExplorer";
 import { ConcernPicker } from "@/components/ConcernPicker";
 import { ClosingCta } from "@/components/ClosingCta";
 import { pageMeta } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { collectionPageNode } from "@/lib/schema";
+import { concerns } from "@/content/data/concerns";
+
+const TITLE = "Skin Concerns We Treat | Kaiteki Aesthetic Clinic";
+const DESCRIPTION =
+  "Acne, pigmentation, fine lines, dark eye circles, enlarged pores and more. Start with what concerns you. A doctor will assess and guide the right plan.";
 
 export const metadata = pageMeta({
-  title: "Skin Concerns We Treat | Kaiteki Aesthetic Clinic",
-  description:
-    "Acne, pigmentation, fine lines, dark eye circles, enlarged pores and more. Start with what concerns you. A doctor will assess and guide the right plan.",
+  title: TITLE,
+  description: DESCRIPTION,
   path: "/concerns",
 });
 
 export default function ConcernsHub() {
   return (
     <>
+      <JsonLd
+        data={collectionPageNode({
+          path: "/concerns",
+          name: TITLE,
+          description: DESCRIPTION,
+          items: concerns.map((c) => ({
+            name: c.name,
+            path: `/concerns/${c.slug}`,
+            type: "MedicalCondition",
+            image: c.image,
+          })),
+        })}
+      />
       <Container className="py-10 sm:py-12">
         <PageHeader
           crumbs={[{ label: "Concerns" }]}

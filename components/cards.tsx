@@ -81,7 +81,7 @@ export function TreatmentCard({ t, className = "", style }: { t: Treatment } & E
         <div className="relative aspect-[16/10] overflow-hidden bg-tint">
           <Image
             src={t.image}
-            alt={t.name}
+            alt={`${t.name} treatment at Kaiteki Skin Aesthetic Clinic`}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -122,7 +122,7 @@ export function ConcernTile({
     >
       <Image
         src={c.image}
-        alt={c.name}
+        alt={`${c.name} — skin concern treated at Kaiteki Skin Aesthetic Clinic`}
         fill
         sizes={feature ? "(max-width: 640px) 100vw, 40vw" : "(max-width: 640px) 50vw, 22vw"}
         className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -151,7 +151,7 @@ export function ConcernCard({ c, priority = false, className = "", style }: { c:
       <div className="relative aspect-[16/10] overflow-hidden bg-tint">
         <Image
           src={c.image}
-          alt={c.name}
+          alt={`${c.name} — skin concern treated at Kaiteki Skin Aesthetic Clinic`}
           fill
           priority={priority}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -183,7 +183,7 @@ export function BranchCard({ b, className = "", style }: { b: Branch } & Extra) 
       <div className="relative aspect-[3/2] overflow-hidden bg-tint">
         <Image
           src={b.photo}
-          alt={`Kaiteki ${b.name} clinic`}
+          alt={`Kaiteki Skin Aesthetic Clinic ${b.name}, ${formatLocation(b.city, b.state)}`}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -234,7 +234,7 @@ export function DoctorCard({
       <div className={`relative ${mediaClassName} overflow-hidden bg-tint`}>
         <Image
           src={d.photo}
-          alt={d.fullName}
+          alt={`${d.fullName}, ${d.credentials} — aesthetic doctor at Kaiteki Skin Aesthetic Clinic`}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
@@ -299,12 +299,13 @@ export function ProductCard({ p, className = "", style }: { p: Product } & Extra
     ) : undefined;
 
   return (
-    <div style={style} className={`${cardBase} overflow-hidden ${className}`}>
+    // id doubles as the deep-link anchor the skincare Product schema points at.
+    <div id={p.slug} style={style} className={`${cardBase} overflow-hidden ${className}`}>
       {p.image ? (
         <div className="relative aspect-square overflow-hidden bg-tint">
           <Image
             src={p.image}
-            alt={p.name}
+            alt={`${p.brand} ${p.name} ${p.category.toLowerCase()} — skincare at Kaiteki Skin Aesthetic Clinic`}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -384,7 +385,7 @@ export function TechnologyCard({
           <div className="relative aspect-[16/10] overflow-hidden bg-tint">
             <Image
               src={x.image}
-              alt={x.name}
+              alt={`${x.name}${x.device ? ` (${x.device})` : ""} — aesthetic technology at Kaiteki Skin Aesthetic Clinic`}
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"

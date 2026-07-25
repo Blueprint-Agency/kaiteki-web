@@ -3,17 +3,38 @@ import { PageHeader } from "@/components/PageHeader";
 import { LocationsExplorer } from "@/components/LocationsExplorer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { pageMeta } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { collectionPageNode } from "@/lib/schema";
+import { branches } from "@/content/data/branches";
+import { site } from "@/lib/site";
+
+const TITLE = "Find a Branch | Kaiteki Skin Aesthetic Clinic";
+const DESCRIPTION =
+  "Doctor-led aesthetic care at 9 locations across Malaysia. Find your nearest branch with full address, hours and directions. Book a free consultation.";
 
 export const metadata = pageMeta({
-  title: "Find a Branch | Kaiteki Skin Aesthetic Clinic",
-  description:
-    "Doctor-led aesthetic care at 9 locations across Malaysia. Find your nearest branch with full address, hours and directions. Book a free consultation.",
+  title: TITLE,
+  description: DESCRIPTION,
   path: "/locations",
 });
 
 export default function LocationsHub() {
   return (
     <Container className="py-10 sm:py-12">
+      <JsonLd
+        data={collectionPageNode({
+          path: "/locations",
+          name: TITLE,
+          description: DESCRIPTION,
+          // Reference each branch page's MedicalClinic node by @id rather than
+          // restating NAP here — one authoritative node per branch, no conflicts.
+          items: branches.map((b) => ({
+            name: `Kaiteki ${b.name}`,
+            path: `/locations/${b.slug}`,
+            refId: `${site.url}/locations/${b.slug}#clinic`,
+          })),
+        })}
+      />
       <PageHeader
         crumbs={[{ label: "Locations" }]}
         eyebrow="Nine branches"

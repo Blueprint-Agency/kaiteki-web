@@ -1,20 +1,39 @@
 import { pageMeta } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { collectionPageNode } from "@/lib/schema";
+import { categoryTreatments, treatmentHref } from "@/content/data/treatments";
 import { Container } from "@/components/Container";
 import { PageHeader } from "@/components/PageHeader";
 import { TreatmentsExplorer } from "@/components/TreatmentsExplorer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { ClosingCta } from "@/components/ClosingCta";
 
+const TITLE = "Skin & Aesthetic Treatments | Kaiteki Clinic Malaysia";
+const DESCRIPTION =
+  "Laser, lifting, skin boosters and body treatments. Every option is doctor-assessed before it's recommended. Explore our full treatment menu.";
+
 export const metadata = pageMeta({
-  title: "Skin & Aesthetic Treatments | Kaiteki Clinic Malaysia",
-  description:
-    "Laser, lifting, skin boosters and body treatments. Every option is doctor-assessed before it's recommended. Explore our full treatment menu.",
+  title: TITLE,
+  description: DESCRIPTION,
   path: "/treatments",
 });
 
 export default function TreatmentsHub() {
   return (
     <>
+      <JsonLd
+        data={collectionPageNode({
+          path: "/treatments",
+          name: TITLE,
+          description: DESCRIPTION,
+          items: categoryTreatments().map((t) => ({
+            name: t.name,
+            path: treatmentHref(t),
+            type: "MedicalProcedure",
+            image: t.image,
+          })),
+        })}
+      />
       <Container className="py-10 sm:py-12">
         <PageHeader
           crumbs={[{ label: "Treatments" }]}

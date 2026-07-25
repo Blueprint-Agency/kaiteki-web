@@ -47,6 +47,7 @@ export default async function CategoryPage({
           description: t.seoDescription ?? t.summary,
           about: { type: "MedicalProcedure", name: t.name },
           lastReviewed: t.lastReviewed,
+          image: t.image,
           reviewer: reviewer
             ? { name: reviewer.fullName, slug: reviewer.slug, credentials: reviewer.credentials }
             : undefined,

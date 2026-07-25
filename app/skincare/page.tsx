@@ -6,6 +6,9 @@ import { Disclaimer } from "@/components/Disclaimer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { products } from "@/content/data/products";
 import { pageMeta } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { orgId, websiteId } from "@/lib/schema";
+import { site } from "@/lib/site";
 
 export const metadata = pageMeta({
   title: "Kaiteki Cosmeceuticals | Japanese-Inspired Skincare",
@@ -14,26 +17,49 @@ export const metadata = pageMeta({
   path: "/skincare",
 });
 
-const itemListJsonLd = {
+// Bespoke rather than collectionPageNode(): these children are Products with
+// visible RM prices, so each needs Brand + Offer, which the generic hub builder
+// deliberately doesn't carry. Products have no detail route — the ItemList item
+// URL is the hub anchor. Offer prices are marked up because they are rendered
+// on the card (SD policy: only mark up visible content).
+const SKINCARE_URL = `${site.url}/skincare`;
+
+const collectionJsonLd = {
   "@context": "https://schema.org",
-  "@type": "ItemList",
+  "@type": "CollectionPage",
+  "@id": `${SKINCARE_URL}#webpage`,
+  url: SKINCARE_URL,
   name: "Kaiteki® Cosmeceuticals",
-  itemListElement: products.map((p, i) => ({
-    "@type": "ListItem",
-    position: i + 1,
-    item: {
-      "@type": "Product",
-      name: p.name,
-      brand: { "@type": "Brand", name: p.brand },
-      category: p.category,
-      offers: {
-        "@type": "Offer",
-        price: p.price,
-        priceCurrency: "MYR",
-        availability: "https://schema.org/InStock",
+  description:
+    "Japanese-inspired, dermatologist-formulated skincare available at Kaiteki clinics.",
+  inLanguage: "en-MY",
+  isPartOf: { "@id": websiteId },
+  mainEntity: {
+    "@type": "ItemList",
+    name: "Kaiteki® Cosmeceuticals",
+    numberOfItems: products.length,
+    itemListElement: products.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "Product",
+        name: p.name,
+        url: `${SKINCARE_URL}#${p.slug}`,
+        ...(p.image ? { image: `${site.url}${p.image}` } : {}),
+        description: p.summary,
+        brand: { "@type": "Brand", name: p.brand },
+        category: p.category,
+        offers: {
+          "@type": "Offer",
+          price: p.price,
+          priceCurrency: "MYR",
+          availability: "https://schema.org/InStock",
+          url: SKINCARE_URL,
+          seller: { "@id": orgId },
+        },
       },
-    },
-  })),
+    })),
+  },
 };
 
 export default function SkincareHub() {
@@ -83,10 +109,7 @@ export default function SkincareHub() {
         <WhatsAppButton label="Ask us on WhatsApp" />
       </div>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
-      />
+      <JsonLd data={collectionJsonLd} />
     </Container>
   );
 }

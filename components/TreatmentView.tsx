@@ -51,7 +51,7 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
           <div className="relative mt-6 aspect-[16/10] overflow-hidden rounded-2xl bg-tint sm:aspect-[21/9]">
             <Image
               src={t.image}
-              alt={t.name}
+              alt={`${t.name} treatment at Kaiteki Skin Aesthetic Clinic Malaysia`}
               fill
               priority
               sizes="(max-width: 768px) 100vw, 768px"
@@ -266,7 +266,7 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
               {logo && (
                 <Image
                   src={`/images/tech/${logo}`}
-                  alt={t.device!}
+                  alt={`${t.device!} logo`}
                   width={140}
                   height={44}
                   className="mt-6 h-7 w-auto object-contain opacity-80"

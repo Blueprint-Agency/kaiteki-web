@@ -68,6 +68,7 @@ export default async function ConcernPage({
           description: c.seoDescription ?? c.summary,
           about: { type: "MedicalCondition", name: c.name },
           lastReviewed: c.lastReviewed,
+          image: c.image,
           reviewer: doctor
             ? { name: doctor.fullName, slug: doctor.slug, credentials: doctor.credentials }
             : undefined,

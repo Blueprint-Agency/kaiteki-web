@@ -53,7 +53,7 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
           {x.image ? (
             <Image
               src={x.image}
-              alt={x.name}
+              alt={`${x.name}${x.device ? ` (${x.device})` : ""} — aesthetic technology at Kaiteki Skin Aesthetic Clinic Malaysia`}
               fill
               priority
               sizes="(max-width: 768px) 100vw, 768px"
@@ -144,7 +144,7 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
             <SectionCard eyebrow="Brand">
               <Image
                 src={`/images/tech/${logo}`}
-                alt={x.device!}
+                alt={`${x.device!} logo`}
                 width={140}
                 height={44}
                 className="h-8 w-auto object-contain opacity-80"

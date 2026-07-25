@@ -52,7 +52,7 @@ export function ReviewByline({
 }) {
   const avatar = photo ? (
     <span className="relative size-11 shrink-0 overflow-hidden rounded-full bg-tint">
-      <Image src={photo} alt={doctorName} fill sizes="44px" className="object-cover object-top" />
+      <Image src={photo} alt={`${doctorName} — medical reviewer at Kaiteki Skin Aesthetic Clinic`} fill sizes="44px" className="object-cover object-top" />
     </span>
   ) : (
     <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-tint text-accent">

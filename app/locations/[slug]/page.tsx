@@ -83,7 +83,7 @@ export default async function BranchPage({
         <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-hairline bg-tint">
           <Image
             src={b.photo}
-            alt={`Kaiteki ${b.name} clinic`}
+            alt={`Kaiteki Skin Aesthetic Clinic ${b.name} — aesthetic clinic in ${b.city}, ${b.state}`}
             fill
             priority
             sizes="(max-width: 1024px) 100vw, 45vw"

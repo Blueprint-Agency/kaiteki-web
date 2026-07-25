@@ -3,17 +3,38 @@ import { PageHeader } from "@/components/PageHeader";
 import { TechnologyExplorer } from "@/components/TechnologyExplorer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { pageMeta } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { collectionPageNode } from "@/lib/schema";
+import { technology } from "@/content/data/technology";
+
+const TITLE = "Technology Behind Our Treatments | Kaiteki Malaysia";
+// "clinically proven" / "efficacy" removed — MAB rules bar efficacy claims in
+// advertising copy, and meta descriptions are advertising copy (docs/02 §8).
+const DESCRIPTION =
+  "The devices and injectables in active clinical use at Kaiteki, across lasers, lifting, body, injectables and facials. Selected by our doctors and matched to you.";
 
 export const metadata = pageMeta({
-  title: "Technology Behind Our Treatments | Kaiteki Malaysia",
-  description:
-    "We work with established brands and clinically proven platforms. Every device and product is selected by our doctors for safety, efficacy and suitability.",
+  title: TITLE,
+  description: DESCRIPTION,
   path: "/technology",
 });
 
 export default function TechnologyHub() {
   return (
     <Container className="py-10 sm:py-12">
+      <JsonLd
+        data={collectionPageNode({
+          path: "/technology",
+          name: TITLE,
+          description: DESCRIPTION,
+          items: technology.map((x) => ({
+            name: x.name,
+            path: `/technology/${x.slug}`,
+            type: x.type === "device" ? "MedicalDevice" : "MedicalProcedure",
+            image: x.image,
+          })),
+        })}
+      />
       <PageHeader
         crumbs={[{ label: "Products & Technology" }]}
         eyebrow="In active use"

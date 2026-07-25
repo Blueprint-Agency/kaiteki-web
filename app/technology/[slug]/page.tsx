@@ -48,6 +48,7 @@ export default async function TechnologyPage({
           // A machine → MedicalDevice; an injectable is administered via a procedure.
           about: { type: x.type === "device" ? "MedicalDevice" : "MedicalProcedure", name: x.name },
           lastReviewed: x.lastReviewed,
+          image: x.image,
           reviewer: reviewer
             ? { name: reviewer.fullName, slug: reviewer.slug, credentials: reviewer.credentials }
             : undefined,
