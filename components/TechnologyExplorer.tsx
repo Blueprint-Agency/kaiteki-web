@@ -1,8 +1,9 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { TechnologyCard } from "./cards";
 import { CardRow } from "./CardRow";
+import { alignFilterRow } from "./FilterTabs";
 import { Search, X } from "./icons";
 import { technology } from "@/content/data/technology";
 import type { Technology, TechType } from "@/lib/types";
@@ -72,9 +73,17 @@ export function TechnologyExplorer() {
     [type],
   );
 
+  const rowRef = useRef<HTMLDivElement>(null);
+
   const selectType = (t: TechType | "All") => {
     setType(t);
     setSection("All");
+    alignFilterRow(rowRef.current);
+  };
+
+  const selectSection = (s: string | "All") => {
+    setSection(s);
+    alignFilterRow(rowRef.current);
   };
 
   const shown = useMemo(() => {
@@ -110,7 +119,10 @@ export function TechnologyExplorer() {
 
   return (
     <div>
-      <div className="sticky top-[68px] z-30 -mx-5 border-b border-hairline bg-page px-5 pb-4 pt-2 sm:mx-0 sm:px-0">
+      <div
+        ref={rowRef}
+        className="sticky top-[68px] z-30 -mx-5 border-b border-hairline bg-page px-5 pb-4 pt-2 sm:mx-0 sm:px-0"
+      >
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
           <div className="relative flex-1">
             <Search className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-ink-500" size={18} />
@@ -149,13 +161,13 @@ export function TechnologyExplorer() {
         <div className="scrollbar-none mt-3 flex gap-2 overflow-x-auto">
           <button
             type="button"
-            onClick={() => setSection("All")}
+            onClick={() => selectSection("All")}
             className={categoryChip(section === "All")}
           >
             All categories
           </button>
           {sections.map((s) => (
-            <button key={s} type="button" onClick={() => setSection(s)} className={categoryChip(section === s)}>
+            <button key={s} type="button" onClick={() => selectSection(s)} className={categoryChip(section === s)}>
               {s}
             </button>
           ))}
