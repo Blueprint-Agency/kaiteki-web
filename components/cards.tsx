@@ -8,10 +8,12 @@ import { treatmentHref } from "@/content/data/treatments";
 import { treatmentsOfTechnology } from "@/content/data/relations";
 import { waForProduct } from "@/lib/wa";
 
-// Cards now have a gentle lift + soft warm shadow on hover (docs/06 §3 motion,
-// evolved 2026-07 for more life). Transform/opacity only; reduced-motion safe.
+// Editorial tile (2026-07 redesign): the photograph is the object; the card no
+// longer levitates on hover (that soft-shadow lift read as templated — DESIGN.md
+// always held "cards never lift"). Hover instead zooms the image, underlines the
+// title and warms the hairline to mocha — quieter, more magazine than dashboard.
 const cardBase =
-  "group flex flex-col rounded-xl border border-hairline bg-surface transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-1 hover:border-mocha hover:shadow-[0_14px_34px_rgb(73_54_40/0.10)] focus-within:border-mocha";
+  "group flex flex-col overflow-hidden rounded-2xl bg-surface ring-1 ring-hairline transition-[box-shadow,--tw-ring-color] duration-300 ease-out hover:ring-mocha/70 hover:shadow-[0_18px_44px_rgb(73_54_40/0.09)] focus-within:ring-mocha";
 
 type Extra = { className?: string; style?: CSSProperties };
 
@@ -89,7 +91,7 @@ export function TreatmentCard({ t, className = "", style }: { t: Treatment } & E
         <TreatmentMotif t={t} className="aspect-[16/10]" />
       )}
       <div className="flex flex-1 flex-col p-5">
-        <h3 className="text-lg font-semibold text-espresso decoration-mocha/60 underline-offset-4 group-hover:underline">
+        <h3 className="font-display text-xl font-medium text-espresso decoration-mocha/50 underline-offset-[5px] group-hover:underline">
           {t.name}
         </h3>
         {t.durationDowntime && (
@@ -136,7 +138,7 @@ export function ConcernTile({
         className="absolute inset-0 bg-gradient-to-t from-espresso/80 via-espresso/15 to-transparent"
       />
       <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 p-4 sm:p-5">
-        <h3 className={`font-semibold leading-tight text-white ${feature ? "text-xl sm:text-2xl" : "text-base sm:text-lg"}`}>
+        <h3 className={`font-display font-medium leading-tight text-white ${feature ? "text-2xl sm:text-3xl" : "text-lg sm:text-xl"}`}>
           {c.name}
         </h3>
         <ArrowRight
@@ -162,7 +164,7 @@ export function ConcernCard({ c, priority = false, className = "", style }: { c:
         />
       </div>
       <div className="flex flex-1 flex-col p-5">
-        <h3 className="text-lg font-semibold text-espresso decoration-mocha/60 underline-offset-4 group-hover:underline">
+        <h3 className="font-display text-xl font-medium text-espresso decoration-mocha/50 underline-offset-[5px] group-hover:underline">
           {c.name}
         </h3>
         <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-700">{c.summary}</p>
@@ -194,7 +196,7 @@ export function BranchCard({ b, className = "", style }: { b: Branch } & Extra) 
       </div>
       <div className="flex flex-1 items-center justify-between gap-3 p-4">
         <div>
-          <h3 className="font-semibold text-espresso">{b.name}</h3>
+          <h3 className="font-display text-lg font-medium text-espresso">{b.name}</h3>
           <p className="mt-0.5 flex items-center gap-1 text-sm text-ink-500">
             <MapPin size={14} className="text-mocha" /> {formatLocation(b.city, b.state)}
           </p>
@@ -218,7 +220,7 @@ export function SeeAllCard({
     <Link
       href={href}
       style={style}
-      className={`group flex items-center justify-between gap-3 rounded-xl border border-hairline bg-surface px-6 py-5 font-medium text-espresso transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-1 hover:border-mocha hover:shadow-[0_14px_34px_rgb(73_54_40/0.10)] focus-visible:border-mocha ${className}`}
+      className={`group flex items-center justify-between gap-3 rounded-2xl bg-surface px-6 py-5 font-medium text-espresso ring-1 ring-hairline transition-[box-shadow,--tw-ring-color] duration-300 ease-out hover:ring-mocha/70 hover:shadow-[0_18px_44px_rgb(73_54_40/0.09)] focus-visible:ring-mocha ${className}`}
     >
       <span>{label}</span>
       <ArrowRight size={18} className="shrink-0 text-accent transition-transform group-hover:translate-x-0.5" />
@@ -244,7 +246,7 @@ export function DoctorCard({
         />
       </div>
       <div className="flex flex-1 flex-col p-5">
-        <h3 className="text-lg font-semibold text-espresso decoration-mocha/60 underline-offset-4 group-hover:underline">
+        <h3 className="font-display text-xl font-medium text-espresso decoration-mocha/50 underline-offset-[5px] group-hover:underline">
           {d.fullName}
         </h3>
         {d.role && <p className="mt-1 text-sm font-medium text-accent">{d.role}</p>}
@@ -370,9 +372,15 @@ const TECH_TYPE_LABEL: Record<Technology["type"], string> = {
 };
 
 /** Photo-card for a device/injectable — mirrors TreatmentCard (image or motif
- *  fallback, name, a type badge, and the treatment(s) it powers). Links to the
- *  item's own /technology/[slug] page. */
-export function TechnologyCard({ x, className = "", style }: { x: Technology } & Extra) {
+ *  fallback, type badge, name, summary, and the treatment(s) it powers). Links to
+ *  the item's own /technology/[slug] page. `showUsedIn` is off on a treatment page,
+ *  where every card would repeat the treatment you are already reading. */
+export function TechnologyCard({
+  x,
+  showUsedIn = true,
+  className = "",
+  style,
+}: { x: Technology; showUsedIn?: boolean } & Extra) {
   const powers = treatmentsOfTechnology(x.slug);
   return (
     <div style={style} className={`${cardBase} overflow-hidden ${className}`}>
@@ -396,13 +404,14 @@ export function TechnologyCard({ x, className = "", style }: { x: Technology } &
               {TECH_TYPE_LABEL[x.type]}
             </span>
           </div>
-          <h3 className="mt-3 text-lg font-semibold text-espresso decoration-mocha/60 underline-offset-4 group-hover:underline">
+          <h3 className="mt-3 font-display text-xl font-medium text-espresso decoration-mocha/50 underline-offset-[5px] group-hover:underline">
             {x.name}
           </h3>
+          <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-700">{x.summary}</p>
         </div>
       </Link>
       <div className="p-5 pt-3">
-        {powers.length > 0 && (
+        {showUsedIn && powers.length > 0 && (
           <p className="text-sm leading-relaxed text-ink-700">
             Used in{" "}
             {powers.map((t, i) => (

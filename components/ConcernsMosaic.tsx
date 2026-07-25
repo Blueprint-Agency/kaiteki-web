@@ -27,11 +27,8 @@ export function ConcernsMosaic() {
       <Container className="reveal py-16 sm:py-24">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="max-w-2xl">
-            <h2 className="text-balance text-2xl font-bold leading-tight text-espresso sm:text-3xl">
-              What brings you{" "}
-              <span className="font-serif font-normal italic text-mocha">in?</span>
-            </h2>
-            <p className="mt-3 text-lg leading-relaxed text-ink-700">
+            <h2 className="h-section">What brings you in?</h2>
+            <p className="mt-4 max-w-md text-lg leading-relaxed text-ink-700">
               Tell us the concern. A doctor will assess it before recommending any
               treatment.
             </p>
@@ -70,7 +67,7 @@ export function ConcernsMosaic() {
                     className="absolute inset-0 bg-gradient-to-t from-espresso/80 via-espresso/15 to-transparent"
                   />
                   <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 p-5">
-                    <h3 className="text-lg font-semibold leading-tight text-white sm:text-xl">
+                    <h3 className="font-display text-xl font-medium leading-tight text-white sm:text-2xl">
                       {c.name}
                     </h3>
                     <ArrowRight size={18} className="mb-1 shrink-0 text-white/85" />
@@ -80,7 +77,7 @@ export function ConcernsMosaic() {
               back={
                 <div className="flex h-full flex-col justify-between p-5 text-left">
                   <div>
-                    <h3 className="text-lg font-semibold leading-tight text-espresso">{c.name}</h3>
+                    <h3 className="font-display text-xl font-medium leading-tight text-espresso">{c.name}</h3>
                     <p className="mt-2 text-sm leading-relaxed text-ink-700">{c.summary}</p>
                   </div>
                   <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent">

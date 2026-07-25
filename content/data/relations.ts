@@ -8,6 +8,17 @@ import { technology } from "./technology";
 // Only two edges are authored — `concern.treatments[]` and `technology.treatments[]`;
 // everything reachable below is derived from them.
 
+/** Treatments a concern may be addressed with — the authored `concern.treatments`
+ *  edge, resolved to objects. The single accessor every concern→treatment card
+ *  grid reads from (no page maps the raw slug array itself). */
+export function treatmentsOfConcern(concernSlug: string): Treatment[] {
+  const concern = concerns.find((c) => c.slug === concernSlug);
+  if (!concern) return [];
+  return concern.treatments
+    .map((slug) => treatments.find((t) => t.slug === slug))
+    .filter((t): t is Treatment => Boolean(t));
+}
+
 /** Technology (devices/injectables) that power a given treatment. */
 export function technologyOfTreatment(treatmentSlug: string): Technology[] {
   return technology.filter((x) => x.treatments.includes(treatmentSlug));
@@ -25,6 +36,24 @@ export function treatmentsOfTechnology(techSlug: string): Treatment[] {
 /** Concerns a given treatment may address (reverse of concern.treatments). */
 export function concernsOfTreatment(treatmentSlug: string): Concern[] {
   return concerns.filter((c) => c.treatments.includes(treatmentSlug));
+}
+
+/** Concerns reachable from a technology item, unioned over the treatments it
+ *  powers (deduped) — the derived "may help with" edge. */
+export function concernsOfTechnology(techSlug: string): Concern[] {
+  const tech = technology.find((x) => x.slug === techSlug);
+  if (!tech) return [];
+  const seen = new Set<string>();
+  const out: Concern[] = [];
+  for (const treatmentSlug of tech.treatments) {
+    for (const c of concernsOfTreatment(treatmentSlug)) {
+      if (!seen.has(c.slug)) {
+        seen.add(c.slug);
+        out.push(c);
+      }
+    }
+  }
+  return out;
 }
 
 /** Technology reachable from a concern, unioned over its treatments (deduped). */

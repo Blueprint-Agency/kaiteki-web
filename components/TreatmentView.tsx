@@ -3,12 +3,13 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Breadcrumbs, type Crumb } from "@/components/Breadcrumbs";
 import { LeadAnswer } from "@/components/LeadAnswer";
-import { Ledger } from "@/components/Ledger";
+import { Ledger, ReviewByline } from "@/components/Ledger";
 import { Faq } from "@/components/Faq";
 import { Disclaimer } from "@/components/Disclaimer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { SectionCard } from "@/components/SectionCard";
-import { TreatmentMotif } from "@/components/cards";
+import { TreatmentMotif, TechnologyCard } from "@/components/cards";
+import { CardRow } from "@/components/CardRow";
 import { ArrowRight, Check, X } from "@/components/icons";
 import { treatmentBySlug, treatmentHref } from "@/content/data/treatments";
 import { technologyOfTreatment, concernsOfTreatment } from "@/content/data/relations";
@@ -67,6 +68,18 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
           <div className="mt-6">
             <LeadAnswer>{t.leadAnswer}</LeadAnswer>
           </div>
+
+          {doctor && (
+            <div className="mt-6 max-w-md">
+              <ReviewByline
+                doctorName={doctor.fullName}
+                mmc={doctor.mmc}
+                date={reviewedDate}
+                photo={doctor.photo}
+                href={`/doctors/${doctor.slug}`}
+              />
+            </div>
+          )}
 
           {(sessionTime || t.typicalSessions || downtimeLabel) && (
             <dl className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
@@ -235,38 +248,30 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
             </SectionCard>
           )}
 
-          {(doctor || techItems.length > 0) && (
-            <SectionCard title="Your treatment team">
-              <div className="grid gap-6 sm:grid-cols-2">
-                {doctor && (
-                  <div className="flex items-center gap-4">
-                    <div className="relative size-14 shrink-0 overflow-hidden rounded-full bg-tint">
-                      <Image src={doctor.photo} alt={doctor.fullName} fill className="object-cover" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-espresso">{doctor.fullName}</p>
-                      {doctor.mmc && <p className="text-sm text-ink-500">{doctor.mmc}</p>}
-                    </div>
-                  </div>
-                )}
-                {techItems.length > 0 && (
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.1em] text-mocha">Devices &amp; platforms</p>
-                    <ul className="mt-2 flex flex-wrap gap-2">
-                      {techItems.map((x) => (
-                        <li key={x.slug}>
-                          <Link href={`/technology/${x.slug}`} className="inline-flex items-center rounded-full border border-hairline bg-tint px-3 py-1.5 text-sm font-medium text-ink-700 transition-colors hover:border-mocha">
-                            {x.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                    {logo && (
-                      <Image src={`/images/tech/${logo}`} alt={t.device!} width={140} height={44} className="mt-3 h-7 w-auto object-contain opacity-80" />
-                    )}
-                  </div>
-                )}
-              </div>
+          {/* Technology used — the authored technology→treatment edge, read back
+              through relations.ts. Uncapped: every device/injectable that powers
+              this treatment gets a card and an internal link. */}
+          {techItems.length > 0 && (
+            <SectionCard title="Technology used at Kaiteki">
+              <p className="text-ink-700">
+                {t.name} at Kaiteki is delivered on the following{" "}
+                {techItems.length === 1 ? "platform" : "platforms"}. Which one is used depends
+                on your individual assessment.
+              </p>
+              <CardRow className="mt-6">
+                {techItems.map((x) => (
+                  <TechnologyCard key={x.slug} x={x} showUsedIn={false} />
+                ))}
+              </CardRow>
+              {logo && (
+                <Image
+                  src={`/images/tech/${logo}`}
+                  alt={t.device!}
+                  width={140}
+                  height={44}
+                  className="mt-6 h-7 w-auto object-contain opacity-80"
+                />
+              )}
             </SectionCard>
           )}
 

@@ -20,7 +20,7 @@ export const technology: Technology[] = [
     device: "PicoSure",
     summary:
       "A picosecond aesthetic laser used within Pico laser treatment for pigmentation, uneven tone and tattoo ink.",
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-jade",
     lastReviewed: "2026-07-18",
     seoTitle: "PicoSure Picosecond Laser Treatment Malaysia | Kaiteki",
     seoDescription:
@@ -36,7 +36,7 @@ export const technology: Technology[] = [
     device: "Fotona",
     summary:
       "A picosecond laser platform, also known as StarWalker, used within Pico laser treatment for pigment and tattoo concerns.",
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-teresa-tan",
     lastReviewed: "2026-07-18",
     seoTitle: "Fotona PQX (StarWalker) Laser Treatment Malaysia | Kaiteki",
     seoDescription:
@@ -52,7 +52,7 @@ export const technology: Technology[] = [
     device: "Fotona",
     summary:
       "An Nd:YAG and Er:YAG laser platform used to deliver Kaiteki's Fotona 4D facial protocol.",
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-chin-wei-horng",
     lastReviewed: "2026-07-18",
     seoTitle: "Fotona SP Dynamis (TimeWalker) Laser Malaysia | Kaiteki",
     seoDescription:
@@ -147,7 +147,7 @@ export const technology: Technology[] = [
         a: "It varies. A course of several sessions spaced a few weeks apart is common, sometimes with occasional maintenance afterwards, but the plan depends on your concern and how your skin responds. Your doctor will outline a realistic plan at consultation.",
       },
     ],
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-yvonne-chuah",
     lastReviewed: "2026-07-18",
     seoTitle: "DermaV Vascular & Pigment Laser Treatment Malaysia | Kaiteki",
     seoDescription:
@@ -162,7 +162,7 @@ export const technology: Technology[] = [
     image: "/images/technology/pro-yellow.jpg",
     summary:
       "A 577nm yellow-light laser used for vascular concerns such as facial redness and visible vessels.",
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-jamie-gan",
     lastReviewed: "2026-07-18",
     seoTitle: "Pro Yellow 577nm Vascular Laser Malaysia | Kaiteki",
     seoDescription:
@@ -177,7 +177,7 @@ export const technology: Technology[] = [
     image: "/images/technology/m22-ipl.jpg",
     summary:
       "An intense pulsed light (IPL) platform that can be filtered for vascular or pigment targets and used for hair reduction.",
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-jen-meng",
     lastReviewed: "2026-07-18",
     seoTitle: "M22 IPL Laser Treatment Price in Malaysia | Kaiteki",
     seoDescription:
@@ -192,7 +192,7 @@ export const technology: Technology[] = [
     image: "/images/technology/fractional-co2.jpg",
     summary:
       "A fractional CO2 laser that creates controlled micro-injury columns, used within resurfacing-laser treatment for texture and scarring.",
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-chloe-wan",
     lastReviewed: "2026-07-18",
     seoTitle: "Fractional CO2 Laser Resurfacing Malaysia | Kaiteki",
     seoDescription:
@@ -209,7 +209,7 @@ export const technology: Technology[] = [
     image: "/images/technology/ultracel-q.jpg",
     summary:
       "A high-intensity focused ultrasound (HIFU) device used for non-surgical skin-lifting and tightening concerns.",
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-say-wei-xian",
     lastReviewed: "2026-07-18",
     seoTitle: "Ultracel Q HIFU Skin-Lifting Treatment Malaysia | Kaiteki",
     seoDescription:
@@ -224,7 +224,7 @@ export const technology: Technology[] = [
     image: "/images/technology/lifthera.jpg",
     summary:
       "A focused-ultrasound device used within HIFU treatment for skin-lifting and tightening concerns.",
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-jessie-lim",
     lastReviewed: "2026-07-18",
     seoTitle: "Lifthera HIFU Skin-Lifting Treatment Malaysia | Kaiteki",
     seoDescription:
@@ -240,7 +240,7 @@ export const technology: Technology[] = [
     device: "Ultherapy",
     summary:
       "A micro-focused ultrasound platform with built-in ultrasound imaging used for non-surgical lifting of the face and neck.",
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-07-18",
     seoTitle: "Ultherapy System Non-Surgical Lifting Malaysia | Kaiteki",
     seoDescription:
@@ -270,7 +270,7 @@ export const technology: Technology[] = [
     image: "/images/technology/morpheus8.jpg",
     summary:
       "A radiofrequency microneedling device offering deeper RF penetration, used for skin-tightening and texture concerns.",
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-william-yap",
     lastReviewed: "2026-07-18",
     seoTitle: "Morpheus8 RF Microneedling Treatment Malaysia | Kaiteki",
     seoDescription:
@@ -286,7 +286,7 @@ export const technology: Technology[] = [
     device: "Potenza",
     summary:
       "A radiofrequency microneedling device with adjustable depth and monopolar/bipolar modes, used for scarring and pore concerns.",
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-lim-xiao-chien",
     lastReviewed: "2026-07-18",
     seoTitle: "Potenza RF Microneedling Treatment Malaysia | Kaiteki",
     seoDescription:
@@ -301,7 +301,7 @@ export const technology: Technology[] = [
     image: "/images/technology/btl-exilis.jpg",
     summary:
       "A monopolar radiofrequency device that delivers deep, uniform heating, used for skin-firmness and texture concerns.",
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-jeremy-low",
     lastReviewed: "2026-07-18",
     seoTitle: "BTL Exilis Radiofrequency Skin Firming Malaysia | Kaiteki",
     seoDescription:
@@ -316,7 +316,7 @@ export const technology: Technology[] = [
     image: "/images/technology/wonderface.jpg",
     summary:
       "A radiofrequency platform with precise energy control used for skin-firmness and contour concerns of the face.",
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-chang-chee-seong",
     lastReviewed: "2026-07-18",
     seoTitle: "Wonderface Radiofrequency Treatment Malaysia | Kaiteki",
     seoDescription:
@@ -416,7 +416,7 @@ export const technology: Technology[] = [
         a: "Downtime is usually limited and many people resume daily activities the same day, though this varies. Temporary redness, swelling, firmness or altered sensation can occur and typically settles. Your doctor will give aftercare guidance specific to you.",
       },
     ],
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-jacqueline-tan",
     lastReviewed: "2026-07-18",
     seoTitle: "CoolSculpting Fat-Freezing Treatment Malaysia | Kaiteki",
     seoDescription:
@@ -431,7 +431,7 @@ export const technology: Technology[] = [
     image: "/images/technology/cooltech.jpg",
     summary:
       "A cryolipolysis device that uses controlled cooling to target pockets of localised fat.",
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-joaan-kong",
     lastReviewed: "2026-07-18",
     seoTitle: "Cooltech Cryolipolysis Fat-Freezing Malaysia | Kaiteki",
     seoDescription:
@@ -527,7 +527,7 @@ export const technology: Technology[] = [
         a: "It varies. A course of several sessions spaced a few weeks apart is common, but the plan depends on the area treated and how you respond. Your doctor will outline a realistic plan at consultation.",
       },
     ],
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-tim-chua",
     lastReviewed: "2026-07-18",
     seoTitle: "Onda Coolwaves Body & Face Treatment Malaysia | Kaiteki",
     seoDescription:
@@ -542,7 +542,7 @@ export const technology: Technology[] = [
     image: "/images/technology/schwarzy.jpg",
     summary:
       "An electromagnetic muscle-stimulation device used to induce muscle contractions for body-toning concerns.",
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-calvin-tan",
     lastReviewed: "2026-07-18",
     seoTitle: "Schwarzy (Em-Fit) Muscle-Toning Treatment Malaysia | Kaiteki",
     seoDescription:
@@ -560,7 +560,7 @@ export const technology: Technology[] = [
     device: "Profhilo",
     summary:
       "A high-concentration hyaluronic acid injectable used within skin-booster treatment for hydration and skin remodelling.",
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-lucas-chew",
     lastReviewed: "2026-07-18",
     seoTitle: "Profhilo Skin Booster Treatment in Malaysia | Kaiteki",
     seoDescription:
@@ -575,7 +575,7 @@ export const technology: Technology[] = [
     image: "/images/technology/rejuran.jpg",
     summary:
       "A polynucleotide (salmon PN/DNA) injectable used within skin-booster treatment to support the skin barrier.",
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-jade",
     lastReviewed: "2026-07-18",
     seoTitle: "Rejuran Skin Booster Injectable Treatment Malaysia | Kaiteki",
     seoDescription:
@@ -590,7 +590,7 @@ export const technology: Technology[] = [
     image: "/images/technology/plinest.jpg",
     summary:
       "A polynucleotide-based injectable used within skin-booster treatment to support skin regeneration and elasticity.",
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-teresa-tan",
     lastReviewed: "2026-07-18",
     seoTitle: "Plinest/Newest Skin Booster Injectable Malaysia | Kaiteki",
     seoDescription:
@@ -605,7 +605,7 @@ export const technology: Technology[] = [
     image: "/images/technology/restylane-skinbooster.jpg",
     summary:
       "A hyaluronic-acid injectable range used within skin-booster treatment to support skin hydration and quality.",
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-chin-wei-horng",
     lastReviewed: "2026-07-18",
     seoTitle: "Restylane Skinboosters Treatment Malaysia | Kaiteki",
     seoDescription:
@@ -620,11 +620,55 @@ export const technology: Technology[] = [
     image: "/images/technology/hydrodeluxe.jpg",
     summary:
       "A hydrating injectable formulation used within skin-booster treatment to support skin moisture and quality.",
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-yvonne-chuah",
     lastReviewed: "2026-07-18",
     seoTitle: "Hydrodeluxe Hydrating Skin Booster Malaysia | Kaiteki",
     seoDescription:
       "Hydrodeluxe is a hydrating injectable formulation used within Kaiteki's skin-booster treatment to support moisture and skin quality. Book a free consultation.",
+  },
+  {
+    // Named by its active substance, not by a brand: botulinum toxin is a
+    // prescription medicine in Malaysia and advertising such products to the
+    // public by brand name is not permitted. Which registered product a doctor
+    // uses is disclosed at consultation, not on the site (docs/02 §8).
+    slug: "botulinum-toxin-type-a",
+    name: "Botulinum Toxin Type A",
+    group: "Injectables",
+    type: "injectable",
+    treatments: ["botulinum-toxin"],
+    summary:
+      "The prescription injectable used in botulinum toxin treatment — supplied as a powder, reconstituted by the doctor and dosed in units per treatment point.",
+    reviewedBy: "dr-chang-chee-seong",
+    lastReviewed: "2026-07-24",
+    seoTitle: "Botulinum Toxin Type A Injectable | Kaiteki Malaysia",
+    seoDescription:
+      "Botulinum toxin type A is the prescription injectable used in Kaiteki's botulinum toxin treatment, dosed in units by a doctor. Book a free consultation.",
+    sections: [
+      {
+        heading: "What it is",
+        body: [
+          "Botulinum toxin type A is one of several serotypes of the purified protein produced by Clostridium botulinum, and it is the type used in aesthetic and most medical practice. Products are supplied as a sterile powder in single-use vials, stored cold, and reconstituted with sterile saline by the doctor immediately before treatment.",
+          "Dosing is measured in units rather than millilitres, and units are specific to each registered product — they are not interchangeable between products. This is one reason dose and product selection are clinical decisions made at consultation rather than choices offered from a menu.",
+        ],
+      },
+      {
+        heading: "How it is handled at Kaiteki",
+        body: [
+          "Only registered products are used, sourced through licensed channels and stored under the cold-chain conditions their manufacturers specify. Vials are reconstituted for a single patient and used within the stated window; nothing is pooled or carried over between patients.",
+          "Because the product is a prescription medicine, it is prescribed and administered by a registered doctor after an in-person assessment — never by a therapist or nurse acting alone, and never supplied for you to take away.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Are all botulinum toxin products the same?",
+        a: "No. Registered products differ in formulation, unit potency and licensed indications, so units cannot be converted between them. Your doctor selects a product and dose based on the area being treated and your assessment, and will tell you which registered product is being used.",
+      },
+      {
+        q: "Why is the product not named on this page?",
+        a: "Botulinum toxin is a prescription medicine in Malaysia, and advertising prescription medicines to the public by brand name is not permitted. Ask your doctor at consultation — they will tell you exactly which registered product they are recommending and why.",
+      },
+    ],
   },
   {
     slug: "sculptra",
@@ -636,7 +680,7 @@ export const technology: Technology[] = [
     device: "Sculptra",
     summary:
       "A poly-L-lactic acid (PLLA) injectable used within bio-stimulator treatment to support gradual structural renewal.",
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-jamie-gan",
     lastReviewed: "2026-07-18",
     seoTitle: "Sculptra Bio-Stimulator Treatment Malaysia | Kaiteki",
     seoDescription:
@@ -651,7 +695,7 @@ export const technology: Technology[] = [
     image: "/images/technology/ellanse.jpg",
     summary:
       "A polycaprolactone (PCL) injectable used within bio-stimulator treatment as a collagen-stimulating injectable.",
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-jen-meng",
     lastReviewed: "2026-07-18",
     seoTitle: "Ellanse Bio-Stimulator Treatment Malaysia | Kaiteki",
     seoDescription:
@@ -666,7 +710,7 @@ export const technology: Technology[] = [
     image: "/images/technology/radiesse.jpg",
     summary:
       "A calcium hydroxylapatite (CaHA) injectable used within bio-stimulator treatment with collagen-supporting properties.",
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-chloe-wan",
     lastReviewed: "2026-07-18",
     seoTitle: "Radiesse Bio-Stimulator Treatment Malaysia | Kaiteki",
     seoDescription:
@@ -681,7 +725,7 @@ export const technology: Technology[] = [
     image: "/images/technology/juvederm.jpg",
     summary:
       "A hyaluronic-acid dermal filler range used to add volume and support facial contour.",
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-say-wei-xian",
     lastReviewed: "2026-07-18",
     seoTitle: "Juvederm Dermal Filler Treatment in Malaysia | Kaiteki",
     seoDescription:
@@ -696,7 +740,7 @@ export const technology: Technology[] = [
     image: "/images/technology/restylane.jpg",
     summary:
       "A hyaluronic-acid dermal filler range used to add volume and support facial contour.",
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-jessie-lim",
     lastReviewed: "2026-07-18",
     seoTitle: "Restylane Dermal Filler Treatment Malaysia | Kaiteki",
     seoDescription:
@@ -743,7 +787,7 @@ export const technology: Technology[] = [
     image: "/images/technology/silkpeel.jpg",
     summary:
       "A device-based facial that combines exfoliation with simultaneous infusion of topical solutions.",
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-william-yap",
     lastReviewed: "2026-07-18",
     seoTitle: "Silkpeel Dermalinfusion Facial Treatment Malaysia | Kaiteki",
     seoDescription:
@@ -760,7 +804,7 @@ export const technology: Technology[] = [
     image: "/images/technology/alma.jpg",
     summary:
       "A hair-removal platform combining IPL and radiofrequency energy to target hair follicles over a course of sessions.",
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-lim-xiao-chien",
     lastReviewed: "2026-07-18",
     seoTitle: "Alma IPL + RF Hair Removal Treatment Malaysia | Kaiteki",
     seoDescription:

@@ -2,18 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Breadcrumbs, type Crumb } from "@/components/Breadcrumbs";
-import { Ledger } from "@/components/Ledger";
+import { Ledger, ReviewByline } from "@/components/Ledger";
 import { Faq } from "@/components/Faq";
 import { Disclaimer } from "@/components/Disclaimer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { SectionCard } from "@/components/SectionCard";
 import { ArrowRight } from "@/components/icons";
 import { ProductMotif } from "@/components/cards";
-import { treatmentsOfTechnology, concernsOfTreatment } from "@/content/data/relations";
+import { treatmentsOfTechnology, concernsOfTechnology } from "@/content/data/relations";
 import { treatmentHref } from "@/content/data/treatments";
 import { doctorBySlug } from "@/content/data/doctors";
 import { waForTreatment } from "@/lib/wa";
-import type { Concern, Technology } from "@/lib/types";
+import type { Technology } from "@/lib/types";
 
 const deviceLogo: Record<string, string> = {
   PicoSure: "logob_picosure.png",
@@ -31,25 +31,9 @@ const TYPE_LABEL: Record<Technology["type"], string> = {
   injectable: "Injectable",
 };
 
-/** Concerns reachable from a technology item, unioned over the treatments it
- *  powers (deduped) — the derived "May help with" edge. */
-function concernsOfTechnology(x: Technology): Concern[] {
-  const seen = new Set<string>();
-  const out: Concern[] = [];
-  for (const treatmentSlug of x.treatments) {
-    for (const c of concernsOfTreatment(treatmentSlug)) {
-      if (!seen.has(c.slug)) {
-        seen.add(c.slug);
-        out.push(c);
-      }
-    }
-  }
-  return out;
-}
-
 export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) {
   const powers = treatmentsOfTechnology(x.slug);
-  const relatedConcerns = concernsOfTechnology(x);
+  const relatedConcerns = concernsOfTechnology(x.slug);
   const doctor = x.reviewedBy ? doctorBySlug(x.reviewedBy) : undefined;
   const logo = x.device ? deviceLogo[x.device] : undefined;
   const reviewedDate = x.lastReviewed
@@ -88,6 +72,17 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
             {x.name}
           </h1>
           <p className="prose mt-6 leading-relaxed text-ink-700">{x.summary}</p>
+          {doctor && reviewedDate && (
+            <div className="mt-6 max-w-md">
+              <ReviewByline
+                doctorName={doctor.fullName}
+                mmc={doctor.mmc}
+                date={reviewedDate}
+                photo={doctor.photo}
+                href={`/doctors/${doctor.slug}`}
+              />
+            </div>
+          )}
         </div>
 
         <div className="mt-10 space-y-6">

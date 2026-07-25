@@ -54,7 +54,7 @@ export const treatments: Treatment[] = [
       "Mild redness or peeling, if it occurs, usually settles within 1-2 days",
     ],
     related: ["microneedling", "skin-booster"],
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-chin-wei-horng",
     lastReviewed: "2026-06-20",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
@@ -149,8 +149,8 @@ export const treatments: Treatment[] = [
     summary: "Focused ultrasound used for non-surgical skin-lifting and tightening concerns.",
     leadAnswer:
       "HIFU (high-intensity focused ultrasound) is a non-surgical treatment that delivers focused ultrasound energy to deeper skin layers. It is commonly used for skin-lifting and tightening concerns. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
-    related: ["ultherapy", "skin-booster"],
-    reviewedBy: "dr-yeong-bin",
+    related: ["ultherapy", "skin-booster", "botulinum-toxin"],
+    reviewedBy: "dr-yvonne-chuah",
     lastReviewed: "2026-06-18",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
@@ -338,12 +338,12 @@ export const treatments: Treatment[] = [
         a: "For most people Ultherapy involves little to no set downtime. Some notice mild redness, swelling or tenderness for a short period afterwards. Your doctor will give you aftercare advice, including sun protection, tailored to your skin.",
       },
     ],
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-jamie-gan",
     lastReviewed: "2026-06-18",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
   },
-  { slug: "fotona-4d", durationDowntime: "30-60 min · No downtime", name: "Fotona Laser", category: "Lasers", image: "/images/treatments/fotona-laser.jpg", device: "Fotona", summary: "A multi-application Nd:YAG/Er:YAG laser platform, most often used at Kaiteki for its Fotona 4D facial-firming protocol.", leadAnswer: "Fotona Laser refers to Kaiteki's Fotona SP Dynamis / TimeWalker platform, an Nd:YAG and Er:YAG laser system offered in several application modes. Its best-known protocol, Fotona 4D, combines four modes to address facial firmness and skin-quality concerns. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.", related: ["hifu", "ultherapy"], reviewedBy: "dr-chew-yuhhui", lastReviewed: "2026-06-15", kkliu: "KKLIU 0000/2026 (sample)", kkliuExpiry: "2026-12-31", seoTitle: "Fotona 4D Laser Skin Tightening Malaysia | Kaiteki", seoDescription: "Fotona 4D is a multi-mode laser used for facial firming and skin quality, doctor-assessed at Kaiteki clinics in Malaysia. Book a free consultation on WhatsApp.",
+  { slug: "fotona-4d", durationDowntime: "30-60 min · No downtime", name: "Fotona Laser", category: "Lasers", image: "/images/treatments/fotona-laser.jpg", device: "Fotona", summary: "A multi-application Nd:YAG/Er:YAG laser platform, most often used at Kaiteki for its Fotona 4D facial-firming protocol.", leadAnswer: "Fotona Laser refers to Kaiteki's Fotona SP Dynamis / TimeWalker platform, an Nd:YAG and Er:YAG laser system offered in several application modes. Its best-known protocol, Fotona 4D, combines four modes to address facial firmness and skin-quality concerns. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.", related: ["hifu", "ultherapy"], reviewedBy: "dr-jen-meng", lastReviewed: "2026-06-15", kkliu: "KKLIU 0000/2026 (sample)", kkliuExpiry: "2026-12-31", seoTitle: "Fotona 4D Laser Skin Tightening Malaysia | Kaiteki", seoDescription: "Fotona 4D is a multi-mode laser used for facial firming and skin quality, doctor-assessed at Kaiteki clinics in Malaysia. Book a free consultation on WhatsApp.",
     sections: [
       {
         heading: "What is Fotona Laser?",
@@ -441,7 +441,7 @@ export const treatments: Treatment[] = [
     leadAnswer:
       "Radiofrequency treatments use controlled energy to warm deeper skin layers, which may support firmness and texture concerns over a course of sessions. Suitability and results vary between individuals; a consultation is required.",
     related: ["microneedling", "hifu"],
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-chloe-wan",
     lastReviewed: "2026-06-12",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
@@ -542,7 +542,7 @@ export const treatments: Treatment[] = [
     leadAnswer:
       "Microneedling at Kaiteki is most often performed as radiofrequency (RF) microneedling, combining fine needles with radiofrequency energy to prompt a controlled skin-renewal response at multiple depths. It is commonly considered for texture, acne-scarring and pore concerns. Suitability and results vary between individuals; a consultation is required.",
     related: ["pico-laser", "skin-booster"],
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-say-wei-xian",
     lastReviewed: "2026-06-12",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
@@ -652,7 +652,7 @@ export const treatments: Treatment[] = [
     leadAnswer:
       "Fat freezing (cryolipolysis) uses controlled cooling to target localised fat in specific areas, and is not a weight-loss treatment. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
     related: ["microwave-contouring"],
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-jessie-lim",
     lastReviewed: "2026-06-10",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
@@ -758,7 +758,7 @@ export const treatments: Treatment[] = [
     summary: "Injectable hydrating treatments used to support skin quality and hydration.",
     leadAnswer:
       "Skin boosters are injectable treatments that deliver hydrating ingredients into the skin to support skin quality and hydration over a course of sessions. Suitability and results vary between individuals; a consultation is required.",
-    related: ["microneedling", "bio-stimulator"],
+    related: ["microneedling", "bio-stimulator", "botulinum-toxin"],
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-06-08",
     kkliu: "KKLIU 0000/2026 (sample)",
@@ -863,6 +863,165 @@ export const treatments: Treatment[] = [
     ],
   },
   {
+    // Deliberately generic naming throughout. Botulinum toxin is a prescription
+    // medicine (scheduled poison) in Malaysia, and advertising such products to
+    // the public by brand name is not permitted — so no brand appears in the
+    // copy, `device`, or the paired technology entry, and no efficacy or
+    // longevity promises are made (docs/02 §8).
+    slug: "botulinum-toxin",
+    durationDowntime: "10-20 min · No downtime",
+    name: "Botulinum Toxin",
+    category: "Injectables",
+    typicalSessions: "1 per cycle",
+    summary:
+      "A doctor-administered prescription injectable used to relax targeted muscles or reduce sweat-gland activity.",
+    leadAnswer:
+      "Botulinum toxin is a prescription injectable that temporarily reduces the signal between nerves and the muscle or sweat gland it acts on. In aesthetic medicine it is used for expression lines, jaw and calf muscle bulk, and excessive sweating. It is a medicine, so a doctor must assess suitability before it can be prescribed or given.",
+    areas: ["Forehead", "Frown lines", "Crow's feet", "Jawline", "Underarms", "Palms", "Calves"],
+    suitableFor: [
+      "Adults in general good health seeking assessment for dynamic expression lines",
+      "People bothered by excessive underarm, palm or sole sweating that has not responded to antiperspirants",
+      "People interested in assessment for jaw or calf muscle bulk",
+      "People comfortable with a treatment that wears off and needs repeating",
+    ],
+    notSuitableFor: [
+      "Pregnancy or breastfeeding",
+      "Known neuromuscular conditions such as myasthenia gravis or Lambert-Eaton syndrome",
+      "Known allergy to botulinum toxin or any component of the preparation",
+      "Active skin infection or inflammation at the intended injection site",
+      "Certain medications, including some antibiotics and muscle relaxants — tell your doctor everything you take",
+    ],
+    comparisons: [
+      {
+        name: "Botulinum toxin",
+        bestFor: "Lines caused by muscle movement; sweating; muscle bulk",
+        downtime: "None",
+      },
+      {
+        name: "Dermal fillers",
+        bestFor: "Lines and hollows caused by lost volume or structure",
+        downtime: "1-3 days",
+      },
+      {
+        name: "Skin booster",
+        bestFor: "Fine lines linked to skin dryness and skin quality",
+        downtime: "1-2 days",
+      },
+      {
+        name: "HIFU / Ultherapy",
+        bestFor: "Laxity and firmness rather than movement lines",
+        downtime: "None to minimal",
+      },
+    ],
+    preCare: [
+      "Tell your doctor about all medicines and supplements, especially blood thinners, and any neuromuscular condition",
+      "Avoid alcohol for around 24 hours beforehand to reduce bruising",
+      "Come with the treatment area clean and free of make-up where possible",
+      "Reschedule if you have an active infection, rash or cold sore in the area",
+    ],
+    postCare: [
+      "Stay upright for about four hours and avoid pressing, rubbing or massaging the area",
+      "Skip strenuous exercise, saunas, steam and hot yoga for the rest of the day",
+      "Avoid facials, facial massage and lying face-down for around 24 hours",
+      "Small raised bumps at the injection points usually settle within an hour",
+      "Contact the clinic if you notice drooping, double vision, swallowing or breathing difficulty",
+    ],
+    related: ["dermal-fillers", "skin-booster", "hifu"],
+    reviewedBy: "dr-jeremy-low",
+    lastReviewed: "2026-07-24",
+    kkliu: "KKLIU 0000/2026 (sample)",
+    kkliuExpiry: "2026-12-31",
+    seoTitle: "Botulinum Toxin Injections in Malaysia | Kaiteki",
+    seoDescription:
+      "Botulinum toxin is a prescription injectable used for expression lines, jaw or calf muscle bulk and excessive sweating. Doctor-assessed at Kaiteki Malaysia.",
+    sections: [
+      {
+        heading: "What is botulinum toxin?",
+        body: [
+          "Botulinum toxin is a purified protein produced by the bacterium Clostridium botulinum. In very small, controlled doses it is used in medicine to temporarily reduce the activity of a specific muscle or gland. It has been used clinically for decades, originally in neurology and ophthalmology, and later in aesthetic medicine.",
+          "In Malaysia it is a prescription medicine. That means it can only be supplied and administered by a registered doctor after an in-person assessment, and it cannot be bought, requested or self-administered like a cosmetic product. Kaiteki does not advertise it by brand name for the same reason.",
+        ],
+      },
+      {
+        heading: "How it works",
+        body: [
+          "Muscles contract when a nerve releases a chemical messenger called acetylcholine at the junction between the nerve and the muscle. Botulinum toxin temporarily blocks that release, so the treated muscle contracts less strongly. The same mechanism applies to the nerves that switch on sweat glands, which is why it is also used for excessive sweating.",
+          "The effect is confined to the small area injected and is temporary — nerve signalling gradually returns and the muscle or gland resumes its usual activity. How long that takes, and how noticeable any change is, varies considerably between individuals. Because the effect wears off, this is a treatment that is repeated rather than a one-off procedure.",
+        ],
+      },
+      {
+        heading: "What it may be used for",
+        body: [
+          "A doctor considers botulinum toxin for concerns driven by muscle movement or gland activity, rather than by volume loss or skin quality. If your concern is not movement-related, another approach may be more appropriate, and your doctor will say so.",
+        ],
+        list: [
+          "Dynamic expression lines — forehead lines, frown lines between the brows, and lines at the outer eye",
+          "Excessive sweating (hyperhidrosis) of the underarms, palms or soles",
+          "Jawline width associated with masseter muscle bulk",
+          "Calf shape associated with muscle bulk",
+          "Certain medical uses, such as chronic migraine or muscle spasm, assessed separately",
+        ],
+      },
+      {
+        heading: "Suitability & who should avoid it",
+        body: [
+          "Botulinum toxin is not suitable for everyone, and being interested in it is not the same as being a candidate for it. Your doctor examines the area, watches how the muscles move, reviews your medical history and medications, and then advises whether treatment is reasonable — including advising against it.",
+          "It is generally avoided in pregnancy and breastfeeding, where there is a neuromuscular disorder such as myasthenia gravis, where there is a known allergy to the preparation, and over active infection or inflammation at the injection site. Some medications, including certain antibiotics and muscle relaxants, can interact with it, so bring a full list to your consultation.",
+        ],
+      },
+      {
+        heading: "The session at Kaiteki",
+        body: [
+          "Your appointment starts with a consultation. The doctor assesses the area at rest and in movement, discusses what you are hoping to change, explains what is and is not achievable, and goes through the risks. Only then is a treatment plan and dose decided — dosing is individual and is not set from a price list.",
+          "If you proceed, the area is cleansed and the doctor administers a series of small injections with a fine needle at planned points. Most sessions take ten to twenty minutes. Discomfort is usually described as brief stinging; the doctor can discuss numbing or cooling beforehand if you are concerned. You are given written aftercare before you leave.",
+        ],
+      },
+      {
+        heading: "Downtime & aftercare",
+        body: [
+          "There is normally no downtime and most people return to their day straight away. Small raised bumps, minor redness or a mild headache can occur and usually settle quickly; bruising is possible, particularly around the eyes.",
+          "For the first day, stay upright for around four hours, do not rub or massage the treated area, and avoid strenuous exercise, saunas, steam rooms and facials. Any change develops gradually over the following days rather than immediately, and your doctor will usually offer a review appointment to assess the result before deciding anything further.",
+        ],
+      },
+      {
+        heading: "Risks & side effects",
+        body: [
+          "Commonly reported temporary effects include tenderness, redness or small bruises at the injection points, and headache. These are usually mild and short-lived.",
+          "Less commonly, the effect can extend slightly beyond the intended muscle, which may cause temporary asymmetry, a heavy-feeling brow or eyelid drooping. These are temporary but can take weeks to resolve. Rarely, more serious effects associated with spread of the toxin — including difficulty swallowing, speaking or breathing, or muscle weakness away from the injection site — have been reported and require urgent medical attention. Your doctor will explain the full risk profile as it applies to you before you consent, and Kaiteki asks you to contact the clinic about any effect that concerns you.",
+        ],
+      },
+      {
+        heading: "Sessions & cost factors",
+        body: [
+          "Because the effect is temporary, treatment is planned as a repeating cycle rather than a course with an endpoint. How often that is appropriate depends on the area, the dose used and how your body responds, and is decided with your doctor at review rather than fixed in advance.",
+          "Cost depends on the area, the dose your doctor determines and your individual plan, so it is confirmed at consultation. As a prescription medicine, it cannot be quoted or promoted as a package before assessment. To arrange an assessment, message Kaiteki on WhatsApp.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is botulinum toxin permanent?",
+        a: "No. The effect is temporary because nerve signalling gradually returns, so the treated muscle or gland resumes its usual activity. How long that takes varies between individuals, which is why treatment is planned as a repeating cycle and reviewed by your doctor rather than set to a fixed schedule.",
+      },
+      {
+        q: "Can it help with excessive sweating?",
+        a: "It is one option a doctor may consider for excessive sweating of the underarms, palms or soles, usually where antiperspirants have not been enough. It works on the nerves that activate sweat glands. Whether it is appropriate for you depends on assessment, including ruling out underlying causes of the sweating.",
+      },
+      {
+        q: "Will my face look frozen or expressionless?",
+        a: "That outcome relates to dose and placement, which is why the doctor assesses how your muscles move before deciding anything. Tell your doctor at consultation how much movement you want to keep, and ask what is realistic. A review appointment lets the doctor assess the result before considering any further treatment.",
+      },
+      {
+        q: "Why don't you name the brand you use?",
+        a: "Botulinum toxin is a prescription medicine in Malaysia, and advertising prescription medicines to the public by brand name is not permitted. Your doctor will tell you at consultation exactly which registered product is being recommended for you, and you are welcome to ask about it then.",
+      },
+      {
+        q: "Is it the same as dermal filler?",
+        a: "No. Botulinum toxin relaxes muscle activity, so it addresses lines caused by movement. Dermal fillers add volume or structure, so they address hollowing and lines caused by lost volume. They work differently and are sometimes considered together — your doctor will explain which, if either, fits your concern.",
+      },
+    ],
+  },
+  {
     slug: "bio-stimulator",
     durationDowntime: "15-30 min · 1-2 days",
     name: "Bio-stimulator",
@@ -873,7 +1032,7 @@ export const treatments: Treatment[] = [
     leadAnswer:
       "Bio-stimulator treatments are injectables intended to support the skin's own gradual structural renewal over time. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
     related: ["skin-booster"],
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-06-08",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
@@ -985,7 +1144,7 @@ export const treatments: Treatment[] = [
     leadAnswer:
       "Exosome therapy is a regenerative approach sometimes used alongside other treatments for skin and scalp concerns. The evidence base continues to develop; a consultation is required to assess whether it is appropriate for you.",
     related: ["skin-booster"],
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-william-yap",
     lastReviewed: "2026-06-05",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
@@ -1083,7 +1242,7 @@ export const treatments: Treatment[] = [
     leadAnswer:
       "Double-eyelid treatment creates or refines an upper-eyelid crease and is assessed individually within the clinic's scope of practice. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
     related: [],
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-lim-xiao-chien",
     lastReviewed: "2026-06-01",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
@@ -1191,7 +1350,7 @@ export const treatments: Treatment[] = [
     leadAnswer:
       "Vascular / Pigment Laser refers to devices used to address visible blood vessels, facial redness and pigment concerns using targeted wavelengths of light. At Kaiteki this includes Pro Yellow and M22 IPL, alongside the dedicated DermaV platform. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
     related: ["pico-laser"],
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-jeremy-low",
     lastReviewed: "2026-07-13",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
@@ -1286,7 +1445,7 @@ export const treatments: Treatment[] = [
     leadAnswer:
       "Resurfacing Laser at Kaiteki uses fractional CO2 laser technology to create controlled micro-injury columns in the skin, prompting a renewal response. It is commonly considered for texture, scarring and enlarged-pore concerns. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
     related: ["pico-laser", "microneedling"],
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-chang-chee-seong",
     lastReviewed: "2026-07-13",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
@@ -1381,7 +1540,7 @@ export const treatments: Treatment[] = [
     leadAnswer:
       "Microwave Contouring uses microwave-based energy, delivered at Kaiteki through the Onda platform, to address localised fat, cellulite appearance and skin firmness. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
     related: ["fat-freezing", "muscle-stimulation"],
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-jacqueline-tan",
     lastReviewed: "2026-07-13",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
@@ -1477,7 +1636,7 @@ export const treatments: Treatment[] = [
     leadAnswer:
       "Muscle Stimulation at Kaiteki uses the Schwarzy (Em-Fit) platform, which delivers electromagnetic energy intended to induce muscle contractions that can be difficult to achieve through voluntary exercise alone. It is considered for body-toning concerns as part of an individual plan. Suitability and results vary between individuals; a consultation is required.",
     related: ["fat-freezing", "microwave-contouring"],
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-joaan-kong",
     lastReviewed: "2026-07-13",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
@@ -1571,8 +1730,8 @@ export const treatments: Treatment[] = [
     summary: "Hyaluronic-acid injectable fillers used to add volume and support facial contour.",
     leadAnswer:
       "Dermal fillers are hyaluronic-acid (HA) based injectables used by a doctor to add volume or support the shape of specific facial areas. At Kaiteki these include Juvederm, Restylane and Belotero. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
-    related: ["skin-booster", "bio-stimulator"],
-    reviewedBy: "dr-chew-yuhhui",
+    related: ["skin-booster", "bio-stimulator", "botulinum-toxin"],
+    reviewedBy: "dr-tim-chua",
     lastReviewed: "2026-07-13",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
@@ -1670,7 +1829,7 @@ export const treatments: Treatment[] = [
     leadAnswer:
       "Facial Treatments at Kaiteki are clinic-based facials — including Hydrafacial and Silkpeel — that combine cleansing, exfoliation and skin-conditioning steps to support general skin quality. Suitability and results vary between individuals; a consultation helps determine which option, if any, is appropriate for you.",
     related: ["pico-laser", "skin-booster"],
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-calvin-tan",
     lastReviewed: "2026-07-13",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
@@ -1765,7 +1924,7 @@ export const treatments: Treatment[] = [
     leadAnswer:
       "Laser Hair Removal at Kaiteki uses the Alma platform, which combines IPL (intense pulsed light) and radiofrequency energy, to target hair follicles over a course of sessions. Suitability and results vary between individuals and hair type; a consultation is required to assess whether it is appropriate for you.",
     related: ["exosome-therapy"],
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-lucas-chew",
     lastReviewed: "2026-07-13",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",

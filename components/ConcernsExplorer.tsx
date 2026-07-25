@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type CSSProperties } from "react";
+import { useState } from "react";
 import { ConcernCard } from "./cards";
 import { CardRow } from "./CardRow";
 import { concerns } from "@/content/data/concerns";
@@ -13,8 +13,6 @@ const FILTER_GROUPS: Record<Exclude<Filter, "All">, Concern["group"][]> = {
   "Face & Eyes": ["Face", "Eyes"],
   "Hair & Body": ["Hair & Body"],
 };
-
-const si = (i: number): CSSProperties => ({ "--i": Math.min(i, 8) } as CSSProperties);
 
 /** Filterable concern grid for the /concerns hub — renders every concern
  *  server-side by default (Filter = "All") so crawlers/no-JS visitors see the
@@ -50,7 +48,7 @@ export function ConcernsExplorer() {
       </div>
       <CardRow>
         {shown.map((c, i) => (
-          <ConcernCard key={c.slug} c={c} priority={i < 3} className="reveal" style={si(i)} />
+          <ConcernCard key={c.slug} c={c} priority={i < 3} />
         ))}
       </CardRow>
     </div>

@@ -10,11 +10,8 @@ export function BranchStrip() {
       <Container className="reveal py-16 sm:py-24">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="max-w-2xl">
-            <h2 className="text-balance text-2xl font-bold leading-tight text-espresso sm:text-3xl">
-              Find your{" "}
-              <span className="font-serif font-normal italic text-mocha">nearest branch</span>
-            </h2>
-            <p className="mt-3 text-lg leading-relaxed text-ink-700">
+            <h2 className="h-section">Find your nearest branch</h2>
+            <p className="mt-4 max-w-md text-lg leading-relaxed text-ink-700">
               Nine locations across KL, Selangor, Johor and Sabah. Same doctors, same
               protocols at every one.
             </p>

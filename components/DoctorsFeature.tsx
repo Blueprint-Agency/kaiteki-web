@@ -20,10 +20,7 @@ export function DoctorsFeature() {
         <div className="reveal grid items-center gap-x-12 gap-y-10 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.92fr)]">
           {/* Copy + record */}
           <div className="lg:order-2">
-            <h2 className="text-balance text-2xl font-bold leading-tight text-espresso sm:text-3xl">
-              Meet the doctors{" "}
-              <span className="font-serif font-normal italic text-mocha">behind your care</span>
-            </h2>
+            <h2 className="h-section">Meet the doctors behind your care</h2>
             <p className="mt-4 max-w-md text-lg leading-relaxed text-ink-700">
               20 LCP-certified, MMC-registered physicians across nine branches. We
               name the doctor on every treatment page because we&rsquo;d rather you
@@ -69,7 +66,6 @@ export function DoctorsFeature() {
                 aria-hidden
                 className="absolute inset-x-[-4%] bottom-0 top-[1%] rounded-t-[999px] border border-mocha/25"
               />
-
               <Image
                 src="/images/doctors/team-trio.png"
                 alt="Three Kaiteki doctors — Dr Chew, Dr Jessie and Dr Yeong Bin — in black clinic scrubs"

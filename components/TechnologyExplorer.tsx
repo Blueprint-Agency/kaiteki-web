@@ -15,6 +15,7 @@ const INJECTABLE_SECTION: Record<string, string> = {
   "skin-booster": "Injectables — Skin Boosters",
   "bio-stimulator": "Injectables — Bio-stimulators",
   "dermal-fillers": "Injectables — Dermal Fillers",
+  "botulinum-toxin": "Injectables — Botulinum Toxin",
 };
 
 /** Display-only section for a catalog item — sub-splits Injectables and merges
@@ -28,6 +29,9 @@ function sectionOf(x: Technology): string {
   return x.group;
 }
 
+// Display order only — NOT a whitelist. A section missing from this list sorts
+// last rather than disappearing, so adding a catalog item can never silently
+// drop it from the hub.
 const SECTION_ORDER = [
   "Lasers",
   "Lifting & Tightening",
@@ -35,8 +39,18 @@ const SECTION_ORDER = [
   "Injectables — Skin Boosters",
   "Injectables — Bio-stimulators",
   "Injectables — Dermal Fillers",
+  "Injectables — Botulinum Toxin",
   "Facials & Hair Removal",
 ];
+
+const sectionRank = (s: string) => {
+  const i = SECTION_ORDER.indexOf(s);
+  return i === -1 ? SECTION_ORDER.length : i;
+};
+
+/** Every section present in the catalog, in display order. */
+const orderSections = (present: string[]) =>
+  [...new Set(present)].sort((a, b) => sectionRank(a) - sectionRank(b) || a.localeCompare(b));
 
 const types: TechType[] = ["device", "injectable"];
 
@@ -52,8 +66,8 @@ export function TechnologyExplorer() {
   // device categories, so the two levels never contradict each other.
   const sections = useMemo(
     () =>
-      SECTION_ORDER.filter((s) =>
-        technology.some((x) => sectionOf(x) === s && (type === "All" || x.type === type)),
+      orderSections(
+        technology.filter((x) => type === "All" || x.type === type).map(sectionOf),
       ),
     [type],
   );
@@ -79,7 +93,7 @@ export function TechnologyExplorer() {
       const s = sectionOf(x);
       bySection.set(s, [...(bySection.get(s) ?? []), x]);
     }
-    return SECTION_ORDER.filter((s) => bySection.has(s)).map((s) => [s, bySection.get(s)!] as const);
+    return orderSections([...bySection.keys()]).map((s) => [s, bySection.get(s)!] as const);
   }, [shown]);
 
   const categoryChip = (active: boolean) =>
