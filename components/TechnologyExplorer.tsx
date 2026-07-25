@@ -13,10 +13,10 @@ const TYPE_LABEL: Record<TechType, string> = { device: "Devices", injectable: "I
 // Injectables share one NavCategory group but are three distinct product types
 // (docs/05) — split for display only, so the shared taxonomy stays untouched.
 const INJECTABLE_SECTION: Record<string, string> = {
-  "skin-booster": "Injectables — Skin Boosters",
-  "bio-stimulator": "Injectables — Bio-stimulators",
-  "dermal-fillers": "Injectables — Dermal Fillers",
-  "botulinum-toxin": "Injectables — Botulinum Toxin",
+  "skin-booster": "Skin Boosters",
+  "bio-stimulator": "Bio-stimulators",
+  "dermal-fillers": "Dermal Fillers",
+  "botulinum-toxin": "Botulinum Toxin",
 };
 
 /** Display-only section for a catalog item — sub-splits Injectables and merges
@@ -37,10 +37,10 @@ const SECTION_ORDER = [
   "Lasers",
   "Lifting & Tightening",
   "Body & Slimming",
-  "Injectables — Skin Boosters",
-  "Injectables — Bio-stimulators",
-  "Injectables — Dermal Fillers",
-  "Injectables — Botulinum Toxin",
+  "Skin Boosters",
+  "Bio-stimulators",
+  "Dermal Fillers",
+  "Botulinum Toxin",
   "Facials & Hair Removal",
 ];
 
