@@ -1,6 +1,7 @@
 import { Container } from "@/components/Container";
 import { PageHeader } from "@/components/PageHeader";
 import { SkincareExplorer } from "@/components/SkincareExplorer";
+import { PromoModal } from "@/components/PromoModal";
 import { Disclaimer } from "@/components/Disclaimer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { products } from "@/content/data/products";
@@ -44,6 +45,22 @@ export default function SkincareHub() {
         title="Skincare"
         description="Medical-grade skincare formulated to support your skin between clinic treatments. Our own range alongside the partner brands our doctors trust and recommend."
       />
+
+      <section className="mt-10 flex flex-wrap items-center justify-between gap-5 rounded-2xl bg-tint px-6 py-7 ring-2 ring-accent/25 sm:px-8">
+        <div>
+          <p className="inline-flex items-center gap-2 rounded-full bg-accent px-3 py-1 text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-white">
+            Limited-time promotion
+          </p>
+          <p className="mt-3 font-display text-2xl leading-tight text-espresso sm:text-3xl">
+            Skincare Mix &amp; Match — 5 products for RM699
+          </p>
+          <p className="mt-1.5 max-w-xl text-sm leading-relaxed text-ink-700">
+            Build a five-step routine from our Kaiteki&reg; Cosmeceuticals range. Normally up to
+            RM888.
+          </p>
+        </div>
+        <PromoModal trigger="View promotion" />
+      </section>
 
       <div className="mt-12">
         <SkincareExplorer />

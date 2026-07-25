@@ -247,6 +247,21 @@ export const technology: Technology[] = [
       "The Ultherapy System uses micro-focused ultrasound with built-in imaging for non-surgical face and neck lifting. Book a free consultation to learn more.",
   },
   {
+    slug: "xerf",
+    name: "XERF",
+    group: "Lifting & Tightening",
+    type: "device",
+    treatments: ["radiofrequency"],
+    image: "/images/technology/xerf.png",
+    summary:
+      "A radiofrequency platform for structural skin tightening, used within RF treatment for skin-firmness and laxity concerns.",
+    reviewedBy: "dr-chloe-wan",
+    lastReviewed: "2026-07-26",
+    seoTitle: "XERF Radiofrequency Skin Tightening Malaysia | Kaiteki",
+    seoDescription:
+      "XERF is a radiofrequency platform used at Kaiteki within RF treatment for skin-firmness and laxity concerns. Book a free consultation to check suitability.",
+  },
+  {
     slug: "sylfirm-x",
     name: "Sylfirm X",
     group: "Lifting & Tightening",
@@ -597,19 +612,18 @@ export const technology: Technology[] = [
       "Plinest/Newest is a polynucleotide-based injectable used within Kaiteki's skin-booster treatment for regeneration and elasticity. Book a free consultation.",
   },
   {
-    slug: "restylane-skinbooster",
-    name: "Restylane Skinboosters",
+    slug: "juvelook",
+    name: "Juvelook",
     group: "Injectables",
     type: "injectable",
     treatments: ["skin-booster"],
-    image: "/images/technology/restylane-skinbooster.jpg",
     summary:
-      "A hyaluronic-acid injectable range used within skin-booster treatment to support skin hydration and quality.",
+      "A poly-D,L-lactic acid (PDLLA) collagen-stimulating injectable used within skin-booster treatment for pore, texture and fine-line concerns.",
     reviewedBy: "dr-chin-wei-horng",
-    lastReviewed: "2026-07-18",
-    seoTitle: "Restylane Skinboosters Treatment Malaysia | Kaiteki",
+    lastReviewed: "2026-07-26",
+    seoTitle: "Juvelook Collagen-Stimulating Skin Booster Malaysia | Kaiteki",
     seoDescription:
-      "Restylane Skinboosters is a hyaluronic-acid range used within Kaiteki's skin-booster treatment to support hydration and skin quality. Book a free consultation.",
+      "Juvelook is a PDLLA collagen-stimulating injectable used within Kaiteki's skin-booster treatment for pore, texture and fine-line concerns. Book a free consultation.",
   },
   {
     slug: "hydrodeluxe",
@@ -772,6 +786,20 @@ export const technology: Technology[] = [
     seoTitle: "Belotero Dermal Filler Treatment in Malaysia | Kaiteki",
     seoDescription:
       "Belotero is a hyaluronic-acid dermal filler range used at Kaiteki to add volume and soften static lines. Book a free consultation to check suitability.",
+  },
+  {
+    slug: "art-filler",
+    name: "Art Filler",
+    group: "Injectables",
+    type: "injectable",
+    treatments: ["dermal-fillers"],
+    summary:
+      "A hyaluronic-acid dermal filler range from Laboratoires Fillmed, used to add volume and support facial contour.",
+    reviewedBy: "dr-jessie-lim",
+    lastReviewed: "2026-07-26",
+    seoTitle: "Art Filler Dermal Filler Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Art Filler is a hyaluronic-acid dermal filler range used at Kaiteki to add volume and support facial contour. Book a free consultation to check suitability.",
   },
 
   // ── Facials ─────────────────────────────────────────────────────────────

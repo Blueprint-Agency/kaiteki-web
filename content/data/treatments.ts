@@ -460,7 +460,7 @@ export const treatments: Treatment[] = [
         heading: "How it works",
         body: [
           "RF devices deliver controlled thermal energy into the dermis, gently heating the tissue. This warming is intended to act on existing collagen fibres and to prompt the skin's own gradual collagen-renewal response over time.",
-          "Different RF devices allow the treating doctor to adjust treatment depth and intensity for your skin condition and goals. At Kaiteki these include BTL Exilis, which uses monopolar radiofrequency to deliver deep, uniform heating, and Wonderface, an RF platform with precise energy control. A contact-cooling step is used during treatment to help keep each session comfortable.",
+          "Different RF devices allow the treating doctor to adjust treatment depth and intensity for your skin condition and goals. At Kaiteki these include BTL Exilis, which uses monopolar radiofrequency to deliver deep, uniform heating, Wonderface, an RF platform with precise energy control, and XERF, an RF platform used for structural skin tightening. A contact-cooling step is used during treatment to help keep each session comfortable.",
           "Any changes develop gradually over weeks to months and vary between individuals.",
         ],
       },
@@ -790,7 +790,6 @@ export const treatments: Treatment[] = [
           "Plinest/Newest — a polynucleotide-based formulation used to support skin regeneration and elasticity; often considered for stressed, ageing, or post-treatment skin.",
           "Profhilo — a high-concentration hyaluronic acid formulation used for deep hydration and skin remodelling, and to support firmness.",
           "Rejuran — based on salmon polynucleotide (PN/DNA) technology, used to support the skin barrier and skin healing; often considered for sensitive, acne-prone, or damaged skin.",
-          "Restylane Skinboosters — a hyaluronic-acid-based range used to support skin hydration and quality over a course of sessions.",
           "Hydrodeluxe — a hydrating injectable formulation used to support skin moisture and overall skin quality.",
           "Juvelook — a hybrid, collagen-stimulating skin booster used to address pores, texture, and fine lines as part of longer-term skin-quality care.",
         ],
@@ -1731,7 +1730,7 @@ export const treatments: Treatment[] = [
     image: "/images/treatments/dermal-fillers.jpg",
     summary: "Hyaluronic-acid injectable fillers used to add volume and support facial contour.",
     leadAnswer:
-      "Dermal fillers are hyaluronic-acid (HA) based injectables used by a doctor to add volume or support the shape of specific facial areas. At Kaiteki these include Juvederm, Restylane and Belotero. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
+      "Dermal fillers are hyaluronic-acid (HA) based injectables used by a doctor to add volume or support the shape of specific facial areas. At Kaiteki these include Juvederm, Restylane, Belotero and Art Filler. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
     related: ["skin-booster", "bio-stimulator", "botulinum-toxin"],
     reviewedBy: "dr-tim-chua",
     lastReviewed: "2026-07-13",
@@ -1739,13 +1738,14 @@ export const treatments: Treatment[] = [
     kkliuExpiry: "2026-12-31",
     seoTitle: "Dermal Fillers Malaysia | Juvederm, Restylane | Kaiteki",
     seoDescription:
-      "Dermal filler treatment in Malaysia using Juvederm, Restylane and Belotero to support facial volume and contour. Book a free consultation at Kaiteki.",
+      "Dermal filler treatment in Malaysia using Juvederm, Restylane, Belotero and Art Filler to support facial volume and contour. Book a free consultation at Kaiteki.",
     sections: [
       {
         heading: "What are dermal fillers?",
         body: [
           "Dermal fillers are injectable gels based on hyaluronic acid (HA), a substance naturally present in skin. Unlike bio-stimulators, which work gradually by supporting the skin's own structural renewal, HA fillers are formulated to sit within the tissue and provide volume or support more directly once injected.",
-          "At Kaiteki this includes Juvederm, Restylane and Belotero — established HA filler ranges that differ in gel formulation and are used across different facial areas. Because it is an injectable, it is performed by a doctor, who assesses whether filler is appropriate for you at consultation.",
+          "At Kaiteki this includes Juvederm, Restylane, Belotero and Art Filler — established HA filler ranges that differ in gel formulation and are used across different facial areas.",
+          "Art Filler, from Laboratoires Fillmed, is one of the ranges available here; like the others, it is selected by the doctor for a specific area rather than chosen from a menu. Because it is an injectable, it is performed by a doctor, who assesses whether filler is appropriate for you at consultation.",
         ],
       },
       {
