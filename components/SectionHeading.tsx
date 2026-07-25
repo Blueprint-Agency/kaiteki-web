@@ -20,14 +20,8 @@ export function SectionHeading({
   const alignment = align === "center" ? "text-center mx-auto" : "";
   return (
     <div className={`max-w-2xl ${alignment}`}>
-      {eyebrow && (
-        <p className="mb-2 text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-accent">
-          {eyebrow}
-        </p>
-      )}
-      <As className="text-pretty text-2xl font-bold leading-tight text-espresso sm:text-3xl">
-        {title}
-      </As>
+      {eyebrow && <p className="kicker mb-3">{eyebrow}</p>}
+      <As className="h-section">{title}</As>
       {intro && <p className="mt-3 text-lg leading-relaxed text-ink-700">{intro}</p>}
     </div>
   );

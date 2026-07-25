@@ -16,8 +16,14 @@ export const concerns: Concern[] = [
       "Active breakouts and old scarring respond to different treatments. A doctor identifies the type and cause before recommending a plan.",
     leadAnswer:
       "Acne is a common skin condition in which pores become blocked, sometimes leading to spots, inflammation and, over time, scarring. It has several causes and types, so what helps one person may not suit another. A consultation helps determine which approach, if any, is appropriate for your skin.",
-    treatments: ["pico-laser", "microneedling", "exosome-therapy"],
-    reviewedBy: "dr-yeong-bin",
+    treatments: [
+      "pico-laser",
+      "microneedling",
+      "exosome-therapy",
+      "resurfacing-laser",
+      "facial-treatments",
+    ],
+    reviewedBy: "dr-jessie-lim",
     lastReviewed: "2026-06-22",
     seoTitle: "Acne Treatment & Scarring Care in Malaysia | Kaiteki",
     seoDescription:
@@ -81,7 +87,13 @@ export const concerns: Concern[] = [
       "Melasma, sun spots and post-inflammatory marks each behave differently. The right laser or treatment depends on which type you have.",
     leadAnswer:
       "Pigmentation describes areas of darker skin such as melasma, sun-related spots or marks left after inflammation. The type matters, because each responds differently and some need particular care. A consultation helps determine which approach, if any, may be appropriate for your skin.",
-    treatments: ["pico-laser", "skin-booster", "vascular-pigment-laser"],
+    treatments: [
+      "pico-laser",
+      "skin-booster",
+      "vascular-pigment-laser",
+      "resurfacing-laser",
+      "facial-treatments",
+    ],
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-06-20",
     seoTitle: "Pigmentation Treatment Options in Malaysia | Kaiteki",
@@ -145,8 +157,14 @@ export const concerns: Concern[] = [
       "Visible pores are often tied to oil production, texture or age. Treatment options range from lasers to skin boosters, matched to the cause.",
     leadAnswer:
       "Enlarged-looking pores are influenced by oil production, skin texture, sun exposure and age. Pores do not physically open and close, but their appearance can sometimes be refined. A consultation helps determine which approach, if any, may suit your skin.",
-    treatments: ["microneedling", "pico-laser", "radiofrequency"],
-    reviewedBy: "dr-chew-yuhhui",
+    treatments: [
+      "microneedling",
+      "pico-laser",
+      "radiofrequency",
+      "resurfacing-laser",
+      "facial-treatments",
+    ],
+    reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-06-18",
     seoTitle: "Enlarged Pores Treatment & Assessment in Malaysia | Kaiteki",
     seoDescription:
@@ -210,8 +228,16 @@ export const concerns: Concern[] = [
       "Lines that appear when you move and lines that stay at rest need different approaches. A doctor assesses which type you have before recommending treatment.",
     leadAnswer:
       "Fine lines and wrinkles develop with movement, age and skin quality. Expression lines and static lines are approached differently, so a doctor assesses which you have. A consultation helps determine which approach, if any, may be appropriate for your skin.",
-    treatments: ["hifu", "ultherapy", "skin-booster", "microneedling"],
-    reviewedBy: "dr-yeong-bin",
+    treatments: [
+      "hifu",
+      "ultherapy",
+      "skin-booster",
+      "microneedling",
+      "botulinum-toxin",
+      "dermal-fillers",
+      "resurfacing-laser",
+    ],
+    reviewedBy: "dr-william-yap",
     lastReviewed: "2026-06-16",
     seoTitle: "Fine Lines & Wrinkles Treatment in Malaysia | Kaiteki",
     seoDescription:
@@ -283,8 +309,13 @@ export const concerns: Concern[] = [
       "Dark circles can come from pigment, blood vessels or hollowing under the eye. The treatment depends entirely on which cause is behind yours.",
     leadAnswer:
       "Dark eye circles can be caused by pigmentation, visible blood vessels, or the structure and hollowing of the under-eye area — often in combination. Because the causes differ, a consultation helps determine which approach, if any, may be appropriate for you.",
-    treatments: ["skin-booster", "vascular-pigment-laser", "radiofrequency"],
-    reviewedBy: "dr-chew-yuhhui",
+    treatments: [
+      "skin-booster",
+      "vascular-pigment-laser",
+      "radiofrequency",
+      "dermal-fillers",
+    ],
+    reviewedBy: "dr-lim-xiao-chien",
     lastReviewed: "2026-06-14",
     seoTitle: "Dark Eye Circle Treatment Assessment in Malaysia | Kaiteki",
     seoDescription:
@@ -349,8 +380,8 @@ export const concerns: Concern[] = [
       "Jawline definition, cheek volume and facial proportions can be refined without surgery. A doctor plans the approach based on your facial structure.",
     leadAnswer:
       "Face-contouring concerns relate to the shape and definition of areas such as the jawline and chin. Several treatments may be considered depending on the concern and your anatomy. A consultation helps determine which approach, if any, may be appropriate.",
-    treatments: ["hifu", "fat-freezing", "radiofrequency"],
-    reviewedBy: "dr-yeong-bin",
+    treatments: ["hifu", "fat-freezing", "radiofrequency", "botulinum-toxin", "dermal-fillers"],
+    reviewedBy: "dr-jeremy-low",
     lastReviewed: "2026-06-12",
     seoTitle: "Face Contouring Treatment & Assessment in Malaysia | Kaiteki",
     seoDescription:
@@ -413,8 +444,15 @@ export const concerns: Concern[] = [
       "Sagging along the jawline, neck or mid-face can be addressed with non-surgical lifting options. A doctor assesses the degree of laxity first.",
     leadAnswer:
       "Face-lifting concerns relate to firmness and laxity as skin changes over time. Non-surgical, energy-based treatments may be considered depending on your assessment. A consultation helps determine which approach, if any, may be appropriate for you.",
-    treatments: ["hifu", "ultherapy", "fotona-4d", "microwave-contouring"],
-    reviewedBy: "dr-yeong-bin",
+    treatments: [
+      "hifu",
+      "ultherapy",
+      "fotona-4d",
+      "microwave-contouring",
+      "bio-stimulator",
+      "dermal-fillers",
+    ],
+    reviewedBy: "dr-chang-chee-seong",
     lastReviewed: "2026-06-12",
     seoTitle: "Non-Surgical Face Lifting Treatment in Malaysia | Kaiteki",
     seoDescription:
@@ -480,8 +518,16 @@ export const concerns: Concern[] = [
       "Firmness, texture and volume change at different rates. A doctor maps what's happening with your skin before building a plan.",
     leadAnswer:
       "Skin ageing involves gradual changes in firmness, texture, hydration and volume. Because several factors are usually involved, a plan is individual. A consultation helps determine which approaches, if any, may be appropriate for your skin and goals.",
-    treatments: ["hifu", "ultherapy", "skin-booster", "bio-stimulator"],
-    reviewedBy: "dr-chew-yuhhui",
+    treatments: [
+      "hifu",
+      "ultherapy",
+      "skin-booster",
+      "bio-stimulator",
+      "dermal-fillers",
+      "resurfacing-laser",
+      "fotona-4d",
+    ],
+    reviewedBy: "dr-jacqueline-tan",
     lastReviewed: "2026-06-10",
     seoTitle: "Skin Ageing & Anti-Ageing Treatment in Malaysia | Kaiteki",
     seoDescription:
@@ -545,8 +591,8 @@ export const concerns: Concern[] = [
       "Stubborn fat in specific areas can be targeted without surgery. These are body-contouring treatments, not weight-loss solutions.",
     leadAnswer:
       "Body-contouring concerns relate to pockets of localised fat in specific areas, rather than overall weight. In-clinic treatments are not a substitute for weight loss. A consultation helps determine which approach, if any, may be appropriate for you.",
-    treatments: ["fat-freezing", "microwave-contouring"],
-    reviewedBy: "dr-yeong-bin",
+    treatments: ["fat-freezing", "microwave-contouring", "muscle-stimulation"],
+    reviewedBy: "dr-joaan-kong",
     lastReviewed: "2026-06-08",
     seoTitle: "Body Slimming Treatment & Assessment in Malaysia | Kaiteki",
     seoDescription:
@@ -609,7 +655,7 @@ export const concerns: Concern[] = [
     leadAnswer:
       "Hair loss has several patterns and causes, and some shedding is normal. Identifying the likely cause is important before considering treatment. A consultation helps determine which approach, if any, may be appropriate for you.",
     treatments: ["exosome-therapy"],
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-tim-chua",
     lastReviewed: "2026-06-06",
     seoTitle: "Hair Loss Treatment & Assessment in Malaysia | Kaiteki",
     seoDescription:
@@ -676,7 +722,7 @@ export const concerns: Concern[] = [
     leadAnswer:
       "Tattoo removal is the gradual fading of tattoo ink using laser energy that breaks pigment into smaller particles the body may clear over time. Ink type, colour, depth and skin type all affect suitability and the number of sessions, which a doctor assesses at consultation.",
     treatments: ["pico-laser"],
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-calvin-tan",
     lastReviewed: "2026-07-13",
     seoTitle: "Laser Tattoo Removal Assessment in Malaysia | Kaiteki",
     seoDescription:
@@ -741,7 +787,7 @@ export const concerns: Concern[] = [
     leadAnswer:
       "Birthmarks are marks present at or shortly after birth, caused by clusters of pigment cells or blood vessels in the skin. They vary in colour, size and type, and most are harmless. A consultation helps determine whether any treatment is appropriate, and which approach may suit your skin.",
     treatments: ["pico-laser", "vascular-pigment-laser"],
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-lucas-chew",
     lastReviewed: "2026-07-13",
     seoTitle: "Birthmark Removal Assessment in Malaysia | Kaiteki",
     seoDescription:
@@ -796,7 +842,7 @@ export const concerns: Concern[] = [
     leadAnswer:
       "Vascular lesions are visible blood vessels or areas of redness in the skin, such as facial thread veins, spider veins or persistent flushing. They have several possible causes, so a doctor assesses the type before discussing whether any treatment may be appropriate for you.",
     treatments: ["vascular-pigment-laser"],
-    reviewedBy: "dr-yeong-bin",
+    reviewedBy: "dr-jade",
     lastReviewed: "2026-07-13",
     seoTitle: "Vascular Lesions & Facial Redness Care in Malaysia | Kaiteki",
     seoDescription:
@@ -853,8 +899,8 @@ export const concerns: Concern[] = [
       "Sweating that disrupts daily life can often be managed. A doctor assesses your pattern and severity to determine which approach fits.",
     leadAnswer:
       "Excessive sweating (hyperhidrosis) is sweating beyond what is needed to regulate body temperature, most often affecting the underarms, palms, soles or face. It can have several causes. A consultation helps assess your situation and discuss whether any approach may be appropriate for you.",
-    treatments: [],
-    reviewedBy: "dr-yeong-bin",
+    treatments: ["botulinum-toxin"],
+    reviewedBy: "dr-teresa-tan",
     lastReviewed: "2026-07-13",
     seoTitle: "Excessive Sweating Treatment & Assessment | Kaiteki",
     seoDescription:

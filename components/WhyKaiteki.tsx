@@ -30,11 +30,8 @@ export function WhyKaiteki() {
       <Dandelion className="opacity-70" />
       <Container className="reveal relative py-16 sm:py-20">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-pretty text-2xl font-bold leading-tight text-espresso sm:text-[2rem]">
-            A different kind of{" "}
-            <span className="font-serif font-normal italic text-mocha">aesthetic clinic</span>
-          </h2>
-          <p className="mt-3 text-lg leading-relaxed text-ink-700">
+          <h2 className="h-section">A different kind of aesthetic clinic</h2>
+          <p className="mt-4 text-lg leading-relaxed text-ink-700">
             A calm, medical approach to skin and aesthetics. Just a doctor who assesses
             your concern and recommends what fits. That&rsquo;s the standard at every branch.
           </p>
@@ -51,7 +48,7 @@ export function WhyKaiteki() {
               <span className="flex size-12 items-center justify-center rounded-full bg-surface ring-1 ring-hairline">
                 <Icon size={22} className="text-mocha" />
               </span>
-              <h3 className="mt-4 text-lg font-semibold text-espresso">{title}</h3>
+              <h3 className="mt-4 h-sub text-espresso">{title}</h3>
               <p className="mt-2 max-w-[32ch] text-sm leading-relaxed text-ink-700">{body}</p>
             </div>
           ))}

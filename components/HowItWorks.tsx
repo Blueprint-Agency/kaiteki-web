@@ -35,13 +35,8 @@ export function HowItWorks() {
     <section id="how-it-works" className="relative overflow-hidden bg-page">
       <Container className="reveal py-16 sm:py-24">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
-            What to expect
-          </p>
-          <h2 className="mt-2 text-balance text-2xl font-bold leading-tight text-espresso sm:text-3xl">
-            Your first visit,{" "}
-            <span className="font-serif font-normal italic text-mocha">step by step</span>
-          </h2>
+          <p className="kicker">What to expect</p>
+          <h2 className="mt-3 h-section">Your first visit, step by step</h2>
           <p className="mt-3 text-lg leading-relaxed text-ink-700">
             Every treatment at Kaiteki begins the same way, with a conversation. Here&rsquo;s
             what the process looks like from start to finish.
@@ -54,9 +49,11 @@ export function HowItWorks() {
               key={s.n}
               className="grid gap-x-8 gap-y-3 py-8 sm:grid-cols-[3rem_1fr] sm:items-baseline lg:grid-cols-[4rem_1fr]"
             >
-              <span className="ledger text-3xl !text-mocha/40 sm:text-4xl">{s.n}</span>
+              <span className="font-display text-4xl font-medium leading-none text-mocha/45 tabular-nums sm:text-5xl">
+                {s.n}
+              </span>
               <div>
-                <h3 className="text-lg font-semibold text-espresso sm:text-xl">{s.title}</h3>
+                <h3 className="h-sub text-espresso">{s.title}</h3>
                 <p className="mt-1 text-sm font-medium text-accent">{s.kicker}</p>
                 <p className="mt-2 max-w-[62ch] leading-relaxed text-ink-700">{s.body}</p>
               </div>

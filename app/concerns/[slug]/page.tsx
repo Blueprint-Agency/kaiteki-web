@@ -14,8 +14,7 @@ import { SectionCard } from "@/components/SectionCard";
 import { TreatmentCard } from "@/components/cards";
 import { CardRow } from "@/components/CardRow";
 import { concerns, concernBySlug } from "@/content/data/concerns";
-import { treatmentBySlug } from "@/content/data/treatments";
-import { technologyOfConcern } from "@/content/data/relations";
+import { technologyOfConcern, treatmentsOfConcern } from "@/content/data/relations";
 import { doctorBySlug } from "@/content/data/doctors";
 import { waForConcern } from "@/lib/wa";
 import { medicalWebPageNode } from "@/lib/schema";
@@ -52,7 +51,7 @@ export default async function ConcernPage({
   if (!c) notFound();
 
   const doctor = doctorBySlug(c.reviewedBy);
-  const options = c.treatments.map((s) => treatmentBySlug(s)).filter(Boolean);
+  const options = treatmentsOfConcern(c.slug);
   const techItems = technologyOfConcern(c.slug);
   const reviewedDate = new Date(c.lastReviewed).toLocaleDateString("en-GB", {
     day: "numeric",
@@ -88,7 +87,13 @@ export default async function ConcernPage({
           </div>
           {doctor && (
             <div className="mt-6 max-w-md">
-              <ReviewByline doctorName={doctor.fullName} mmc={doctor.mmc} date={reviewedDate} />
+              <ReviewByline
+                doctorName={doctor.fullName}
+                mmc={doctor.mmc}
+                date={reviewedDate}
+                photo={doctor.photo}
+                href={`/doctors/${doctor.slug}`}
+              />
             </div>
           )}
         </div>
@@ -131,7 +136,7 @@ export default async function ConcernPage({
               </p>
               <CardRow className="mt-6">
                 {options.map((t) => (
-                  <TreatmentCard key={t!.slug} t={t!} />
+                  <TreatmentCard key={t.slug} t={t} />
                 ))}
               </CardRow>
             </SectionCard>

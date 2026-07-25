@@ -31,10 +31,7 @@ export function RecognitionCabinet() {
         <div className="grid gap-x-14 gap-y-12 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.55fr)] lg:items-start">
           {/* Editorial column — the story + the ledger of record */}
           <div className="lg:sticky lg:top-28">
-            <h2 className="text-balance text-2xl font-bold leading-tight text-espresso sm:text-3xl">
-              Recognised by the brands{" "}
-              <span className="font-serif font-normal italic text-mocha">behind your care</span>
-            </h2>
+            <h2 className="h-section">Recognised by the brands behind your care</h2>
             <p className="mt-4 max-w-md text-lg leading-relaxed text-ink-700">
               These awards are issued by the device and product manufacturers for
               clinical volume and standards. They reflect our standing with the

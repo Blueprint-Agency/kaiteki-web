@@ -32,8 +32,9 @@ export interface Treatment {
   slug: string;
   name: string;
   category: NavCategory;
-  /** Photo under /public/images/treatments. */
-  image: string;
+  /** Photo under /public/images/treatments. Optional — treatments without one
+   *  fall back to the generated motif until real photography lands. */
+  image?: string;
   /** One compliant sentence — used on cards, hubs and meta. */
   summary: string;
   /** Short duration/downtime tag shown on hub cards, e.g. "15-30 min · Minimal downtime (1-2 days)". */

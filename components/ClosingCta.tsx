@@ -17,9 +17,8 @@ export function ClosingCta() {
         <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
           Free consultation · No obligation
         </p>
-        <h2 className="text-balance text-3xl font-bold leading-tight text-espresso sm:text-4xl lg:text-[2.75rem]">
-          Not sure{" "}
-          <span className="font-serif font-normal italic text-mocha">where to start?</span>
+        <h2 className="h-section">
+          Not sure <span className="h-em">where to start?</span>
         </h2>
         <p className="max-w-xl text-lg leading-relaxed text-ink-700">
           Talk to a doctor first. Message us on WhatsApp for a free consultation.

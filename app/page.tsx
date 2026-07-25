@@ -38,15 +38,12 @@ export default function Home() {
           <div className="grid items-end gap-x-10 pt-[68px] lg:grid-cols-[minmax(0,1fr)_minmax(0,50%)]">
             {/* Copy column — centred on mobile, left-aligned from lg up */}
             <div className="pb-10 pt-10 text-center sm:pt-14 lg:self-center lg:pb-24 lg:pt-16 lg:text-left">
-              <p className="rise text-xs font-semibold uppercase tracking-[0.14em] text-accent" style={si(0)}>
+              <p className="rise kicker" style={si(0)}>
                 {site.tagline}
               </p>
-              <h1
-                className="mask-clip mt-3 block text-4xl font-bold leading-[1.08] text-espresso sm:text-5xl lg:text-[3.5rem]"
-                style={{ letterSpacing: "-0.02em" }}
-              >
-                <span className="mask-line text-balance" style={si(0)}>
-                  Japanese-inspired skin &amp; aesthetic care, across Malaysia.
+              <h1 className="mask-clip mt-4 block h-hero">
+                <span className="mask-line" style={si(0)}>
+                  Japanese-inspired skin &amp; <span className="h-em">aesthetic care</span>, across Malaysia.
                 </span>
               </h1>
               <p className="rise prose mt-5 max-w-[46ch] text-lg leading-relaxed text-ink-700 mx-auto lg:mx-0" style={si(1)}>

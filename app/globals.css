@@ -52,9 +52,10 @@
 /* Font families — faces wired via next/font in layout.tsx (docs/06 §2.2).
    `inline` so Tailwind keeps the runtime CSS vars from next/font. */
 @theme inline {
-  --font-sans:  var(--font-display-face), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-serif-face), ui-serif, Georgia, "Times New Roman", serif;
-  --font-mono:  ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+  --font-sans:    var(--font-sans-face), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display-face), ui-serif, Georgia, "Times New Roman", serif;
+  --font-serif:   var(--font-serif-face), ui-serif, Georgia, "Times New Roman", serif;
+  --font-mono:    ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
 }
 
 :root {
@@ -76,6 +77,58 @@ body {
 /* Long-form article prose opts into the serif (docs/06 §2.2) */
 .prose {
   font-family: var(--font-serif);
+}
+
+/* ============================================================
+   Editorial display scale — Fraunces (2026-07 redesign).
+   ONE central heading voice for the whole site, so the section
+   headings stop reading as the templated "grotesk bold + italic
+   accent word" formula. Size is fluid; weight stays on the light
+   side of Fraunces where its high contrast reads as boutique-
+   editorial rather than heavy.
+   ============================================================ */
+.h-hero,
+.h-section,
+.h-sub {
+  font-family: var(--font-display);
+  color: var(--color-espresso);
+  font-optical-sizing: auto;
+  text-wrap: balance;
+}
+.h-hero {
+  font-weight: 460;
+  letter-spacing: -0.02em;
+  line-height: 1.03;
+  font-size: clamp(2.5rem, 1.5rem + 4.4vw, 4rem);
+}
+.h-section {
+  font-weight: 500;
+  letter-spacing: -0.016em;
+  line-height: 1.07;
+  font-size: clamp(1.9rem, 1.42rem + 2.1vw, 2.8rem);
+}
+.h-sub {
+  font-weight: 560;
+  letter-spacing: -0.008em;
+  line-height: 1.16;
+  font-size: 1.2rem;
+}
+/* A single deliberate flourish word inside a display heading — same family,
+   an italic (not a second typeface, not on every section). Use sparingly. */
+.h-em {
+  font-style: italic;
+  font-weight: 380;
+  color: var(--color-mocha);
+}
+/* Restrained tracked kicker — kept for the one or two sections that genuinely
+   read as a labelled step, never as blanket grammar over every band. */
+.kicker {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-accent);
 }
 
 /* Ledger / record utility — MMC, KKLIU, NAP (docs/06 §4.6).

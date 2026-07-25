@@ -52,10 +52,7 @@ export function HomeFaq() {
     <section id="faq" className="relative overflow-hidden bg-page">
       <Container className="reveal py-16 sm:py-24">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-balance text-2xl font-bold leading-tight text-espresso sm:text-3xl">
-            Frequently asked{" "}
-            <span className="font-serif font-normal italic text-mocha">questions</span>
-          </h2>
+          <h2 className="h-section">Frequently asked questions</h2>
         </div>
         <div className="mx-auto mt-10 max-w-[68ch]">
           <Faq items={faqs} />

@@ -31,13 +31,14 @@ Rule: body text only on `page`/`surface`/`tint`; `sand`/`mocha`/`porcelain` are 
 
 ## Typography
 
-Two variable families via `next/font` (self-hosted, latin subset), paired on a contrast axis:
+Three variable families via `next/font` (self-hosted, latin subset), paired on a contrast axis:
 
-- **Schibsted Grotesk** — display, headings, nav, UI, tables, labels. A clean Scandinavian grotesk: refined without the SaaS-Inter default or salon-script cliché.
+- **Fraunces** — display headings only (`.h-hero` / `.h-section` / `.h-sub` and the `font-display` utility; tokens `--font-display-face` → `--font-display`). A warm, high-contrast editorial serif with optical sizing. Adopted 2026-07 to retire the templated *grotesk-bold heading + one italic-mocha accent word* formula that made every section read as AI-generated; carries the boutique-medical register (Aesop/Tatcha, not salon-glam). Weights stay light (460–560) where its contrast reads elegant. Italic is loaded for a single deliberate flourish word (`.h-em`), used sparingly — not as blanket grammar over every band.
+- **Schibsted Grotesk** — UI, nav, tables, labels, body, and the `.kicker`. A clean grotesk; no longer carries display headings (token renamed `--font-sans-face` → `--font-sans`).
 - **Source Serif 4** — long-form article/treatment/concern body prose only (`.prose`). Journal-like credibility for YMYL medical reading.
 - **System mono** (`ui-monospace`) — the "ledger" (MMC/KKLIU numbers, NAP, dates). Zero download; reads like a record.
 
-Neither is on Impeccable's reflex-reject list. Scale is fluid `clamp()`, ≥1.25 steps (`docs/06 §2.2`). Body measure ≤68ch. May be revisited when the full landing page is crafted.
+Display scale is fluid `clamp()`, centralised in `globals.css` so one heading voice governs the whole site. `--color-mocha` on display words is large-text only (≥2rem, ≥3:1) — never body. Body measure ≤68ch.
 
 ## Spacing, radius, elevation
 

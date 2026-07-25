@@ -1,14 +1,12 @@
 "use client";
 
-import { useState, type CSSProperties } from "react";
+import { useState } from "react";
 import { BranchCard } from "./cards";
 import { CardRow } from "./CardRow";
 import { branches, regionOrder } from "@/content/data/branches";
 import type { Region } from "@/lib/types";
 
 type Filter = "All" | Region;
-
-const si = (i: number): CSSProperties => ({ "--i": Math.min(i, 8) } as CSSProperties);
 
 /** Region-filtered branch grid (docs/06 homepage refresh). Renders all
  *  branches server-side by default (Filter = "All") so crawlers and no-JS
@@ -42,8 +40,8 @@ export function BranchesExplorer() {
         })}
       </div>
       <CardRow>
-        {shown.map((b, i) => (
-          <BranchCard key={b.slug} b={b} className="reveal" style={si(i)} />
+        {shown.map((b) => (
+          <BranchCard key={b.slug} b={b} />
         ))}
       </CardRow>
     </div>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import { ShieldCheck } from "./icons";
 
 /** Row of the clinical ledger: mono label + value (docs/06 §4.6). */
@@ -32,29 +34,55 @@ export function Ledger({
   );
 }
 
-/** "Medically reviewed by" byline used on every YMYL page (docs/05 §4). */
+/** "Medically reviewed by" byline used on every YMYL page (docs/05 §4). The
+ *  reviewer's portrait carries the E-E-A-T signal when we have one; pages without
+ *  a photo fall back to the shield mark. */
 export function ReviewByline({
   doctorName,
   mmc,
   date,
+  photo,
+  href,
 }: {
   doctorName: string;
   mmc?: string;
   date: string;
+  photo?: string;
+  href?: string;
 }) {
-  return (
-    <div className="flex items-center gap-3 rounded-lg border border-hairline bg-surface px-4 py-3">
-      <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-tint text-accent">
-        <ShieldCheck size={18} />
-      </span>
+  const avatar = photo ? (
+    <span className="relative size-11 shrink-0 overflow-hidden rounded-full bg-tint">
+      <Image src={photo} alt={doctorName} fill sizes="44px" className="object-cover object-top" />
+    </span>
+  ) : (
+    <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-tint text-accent">
+      <ShieldCheck size={18} />
+    </span>
+  );
+
+  const body = (
+    <>
+      {avatar}
       <p className="ledger leading-snug !text-ink-700">
         <span className="text-[0.625rem] uppercase tracking-[0.12em] text-accent">
           Medically reviewed
         </span>
         <br />
-        {doctorName}
+        <span className={href ? "decoration-mocha/50 underline-offset-2 group-hover:underline" : ""}>
+          {doctorName}
+        </span>
         {mmc ? ` · ${mmc}` : ""} · {date}
       </p>
-    </div>
+    </>
+  );
+
+  const shell = "group flex items-center gap-3 rounded-lg border border-hairline bg-surface px-4 py-3";
+
+  return href ? (
+    <Link href={href} className={`${shell} transition-colors hover:border-mocha`}>
+      {body}
+    </Link>
+  ) : (
+    <div className={shell}>{body}</div>
   );
 }
