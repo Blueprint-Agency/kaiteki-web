@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/technology",
     "/concerns",
     "/locations",
-    "/skincare",
+    "/products",
     "/our-story",
     "/privacy",
   ];

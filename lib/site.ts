@@ -30,8 +30,8 @@ export type NavItem = {
 export const primaryNav: NavItem[] = [
   { label: "Concerns", href: "/concerns", mega: "concerns" },
   { label: "Treatments", href: "/treatments", mega: "treatments" },
-  { label: "Products & Technology", href: "/technology" },
-  { label: "Skincare", href: "/skincare" },
+  { label: "Device & Injectables", href: "/technology" },
+  { label: "Products", href: "/products" },
   {
     label: "Locations",
     href: "/locations",

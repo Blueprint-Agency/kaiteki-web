@@ -1,6 +1,6 @@
 import type { Technology } from "@/lib/types";
 
-// Products & Technology catalog (docs/superpowers/specs/2026-07-18…). Each item's
+// Device & Injectables catalog (docs/superpowers/specs/2026-07-18…). Each item's
 // link to a treatment (`treatments[]`) is the ONLY authored edge; concerns are
 // derived via content/data/relations.ts. `group` is the NavCategory of the
 // item's primary treatment. Summaries are single, factual, MAB-compliant

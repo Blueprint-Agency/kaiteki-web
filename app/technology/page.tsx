@@ -36,9 +36,9 @@ export default function TechnologyHub() {
         })}
       />
       <PageHeader
-        crumbs={[{ label: "Products & Technology" }]}
+        crumbs={[{ label: "Device & Injectables" }]}
         eyebrow="In active use"
-        title="Products & Technology"
+        title="Device & Injectables"
         description="Every device and injectable below is in active clinical use at Kaiteki, chosen for clinical evidence and matched to each patient rather than one default machine."
       />
 

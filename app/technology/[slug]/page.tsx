@@ -56,7 +56,7 @@ export default async function TechnologyPage({
       />
       <TechnologyView
         x={x}
-        trail={[{ label: "Products & Technology", href: "/technology" }, { label: x.name }]}
+        trail={[{ label: "Device & Injectables", href: "/technology" }, { label: x.name }]}
       />
     </>
   );

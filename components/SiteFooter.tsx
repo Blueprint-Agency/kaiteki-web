@@ -74,8 +74,8 @@ export function SiteFooter() {
             links={[
               { href: "/our-story", label: "About us" },
               { href: "/doctors", label: "Doctors" },
-              { href: "/technology", label: "Products & Technology" },
-              { href: "/skincare", label: "Skincare" },
+              { href: "/technology", label: "Device & Injectables" },
+              { href: "/products", label: "Products" },
               { href: "https://blog.kaiteki.my", label: "Blog", external: true },
               { href: "/privacy", label: "Privacy" },
             ]}
