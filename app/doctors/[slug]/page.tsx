@@ -101,7 +101,7 @@ export default async function DoctorPage({
 
       <div className="mt-10 grid gap-10 lg:grid-cols-[22rem_1fr] lg:gap-16">
         {/* Left rail — portrait + verifiable facts + CTA, sticky on desktop */}
-        <aside className="mx-auto w-full max-w-sm lg:mx-0 lg:sticky lg:top-24 lg:self-start">
+        <aside className="mx-auto w-full max-w-sm lg:mx-0 lg:sticky lg:top-24 lg:max-h-[calc(100dvh-7rem)] lg:self-start lg:overflow-y-auto">
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-hairline bg-tint">
             <Image
               src={d.photo}
