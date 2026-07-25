@@ -43,12 +43,12 @@ export default function Home() {
               </p>
               <h1 className="mask-clip mt-4 block h-hero">
                 <span className="mask-line" style={si(0)}>
-                  Japanese-inspired skin &amp; <span className="h-em">aesthetic care</span>, across Malaysia.
+                  Japanese-inspired skin &amp; <span className="h-em">aesthetic care</span>.
                 </span>
               </h1>
               <p className="rise prose mt-5 max-w-[46ch] text-lg leading-relaxed text-ink-700 mx-auto lg:mx-0" style={si(1)}>
-                A calm, considered approach to your skin. Nine branches, 20 doctors,
-                and every treatment starts with an assessment.
+                A calm, considered approach to your skin — nine branches across
+                Malaysia, 20 doctors, and every treatment starts with an assessment.
               </p>
               <div className="rise mt-7 flex flex-col items-center gap-5 lg:items-start" style={si(2)}>
                 <WhatsAppButton size="lg" label="Book a Free Consultation" />

@@ -627,46 +627,58 @@ export const technology: Technology[] = [
       "Hydrodeluxe is a hydrating injectable formulation used within Kaiteki's skin-booster treatment to support moisture and skin quality. Book a free consultation.",
   },
   {
-    // Named by its active substance, not by a brand: botulinum toxin is a
-    // prescription medicine in Malaysia and advertising such products to the
-    // public by brand name is not permitted. Which registered product a doctor
-    // uses is disclosed at consultation, not on the site (docs/02 §8).
-    slug: "botulinum-toxin-type-a",
-    name: "Botulinum Toxin Type A",
+    // Botox is a prescription medicine, not a device or cosmetic. Copy stays
+    // factual and mechanism-level: no efficacy, longevity or outcome claims, no
+    // pricing, no "packages", and every line defers dose and suitability to an
+    // in-person doctor assessment (docs/02 §8).
+    slug: "botox",
+    name: "Botox",
     group: "Injectables",
     type: "injectable",
     treatments: ["botulinum-toxin"],
+    device: "Botox",
     summary:
-      "The prescription injectable used in botulinum toxin treatment — supplied as a powder, reconstituted by the doctor and dosed in units per treatment point.",
+      "A registered botulinum toxin type A injectable (onabotulinumtoxinA) from Allergan, used within botulinum toxin treatment and dosed in units by a doctor.",
     reviewedBy: "dr-chang-chee-seong",
     lastReviewed: "2026-07-24",
-    seoTitle: "Botulinum Toxin Type A Injectable | Kaiteki Malaysia",
+    seoTitle: "Botox in Malaysia | Kaiteki Skin Aesthetic Clinic",
     seoDescription:
-      "Botulinum toxin type A is the prescription injectable used in Kaiteki's botulinum toxin treatment, dosed in units by a doctor. Book a free consultation.",
+      "Botox is a registered botulinum toxin type A injectable used at Kaiteki within doctor-assessed botulinum toxin treatment. Book a free consultation on WhatsApp.",
     sections: [
       {
-        heading: "What it is",
+        heading: "What Botox is",
         body: [
-          "Botulinum toxin type A is one of several serotypes of the purified protein produced by Clostridium botulinum, and it is the type used in aesthetic and most medical practice. Products are supplied as a sterile powder in single-use vials, stored cold, and reconstituted with sterile saline by the doctor immediately before treatment.",
-          "Dosing is measured in units rather than millilitres, and units are specific to each registered product — they are not interchangeable between products. This is one reason dose and product selection are clinical decisions made at consultation rather than choices offered from a menu.",
+          "Botox is a brand of botulinum toxin type A, developed by Allergan (now part of AbbVie). Its active substance is onabotulinumtoxinA, a purified protein produced by the bacterium Clostridium botulinum. It is one of several registered botulinum toxin products, and the one most people have heard of — the name is often used loosely to mean any botulinum toxin treatment, which it is not.",
+          "It is supplied as a sterile powder in single-use vials, kept refrigerated and reconstituted with sterile saline by the doctor immediately before treatment. Alongside aesthetic use, botulinum toxin type A has a long clinical history in neurology and ophthalmology, and Botox specifically holds registered indications for conditions including excessive underarm sweating and chronic migraine.",
+        ],
+      },
+      {
+        heading: "How it is dosed",
+        body: [
+          "Dosing is measured in units, not millilitres, and units are specific to each product — Botox units cannot be converted to another brand's units, and the two are not interchangeable. This is why comparing brands or clinics on unit count alone is misleading.",
+          "The number of units, the injection points and the depth are clinical decisions your doctor makes after examining the area at rest and in movement. They depend on the muscle being treated, your anatomy and your assessment, so they are not set from a menu or quoted before a consultation.",
         ],
       },
       {
         heading: "How it is handled at Kaiteki",
         body: [
-          "Only registered products are used, sourced through licensed channels and stored under the cold-chain conditions their manufacturers specify. Vials are reconstituted for a single patient and used within the stated window; nothing is pooled or carried over between patients.",
-          "Because the product is a prescription medicine, it is prescribed and administered by a registered doctor after an in-person assessment — never by a therapist or nurse acting alone, and never supplied for you to take away.",
+          "Kaiteki uses product registered with Malaysia's National Pharmaceutical Regulatory Agency, sourced through licensed channels and stored under the cold-chain conditions the manufacturer specifies. Vials are reconstituted for a single patient and used within the stated window — nothing is pooled or carried over between patients.",
+          "As a prescription medicine, it is prescribed and administered by a registered doctor after an in-person assessment. It is never given by a therapist acting alone and never supplied for you to take away or inject yourself.",
         ],
       },
     ],
     faqs: [
       {
-        q: "Are all botulinum toxin products the same?",
-        a: "No. Registered products differ in formulation, unit potency and licensed indications, so units cannot be converted between them. Your doctor selects a product and dose based on the area being treated and your assessment, and will tell you which registered product is being used.",
+        q: "Is Botox the same as botulinum toxin?",
+        a: "Botox is one registered brand of botulinum toxin type A, not a separate treatment. Several brands are registered in Malaysia and they differ in formulation and unit potency. Your doctor will tell you which product they are recommending for you and why at consultation.",
       },
       {
-        q: "Why is the product not named on this page?",
-        a: "Botulinum toxin is a prescription medicine in Malaysia, and advertising prescription medicines to the public by brand name is not permitted. Ask your doctor at consultation — they will tell you exactly which registered product they are recommending and why.",
+        q: "Can I ask for a specific number of units?",
+        a: "You can raise it, but dose is a clinical decision. Your doctor examines how the muscles in the area move before deciding units and placement, and will explain what they are recommending. Units are also product-specific, so a figure quoted for another brand or clinic does not transfer.",
+      },
+      {
+        q: "Is Botox permanent?",
+        a: "No. The effect is temporary — nerve signalling gradually returns and the treated muscle or gland resumes its usual activity. How long that takes varies between individuals, so treatment is planned as a repeating cycle and reviewed by your doctor rather than set to a fixed schedule.",
       },
     ],
   },

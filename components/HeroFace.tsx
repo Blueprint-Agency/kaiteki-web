@@ -82,6 +82,10 @@ const spots: Spot[] = [
 const spotStyle = (s: Spot, i: number): CSSProperties =>
   ({ left: `${s.x}%`, top: `${s.y}%`, "--i": i } as CSSProperties);
 
+/* Cards get --i only — their position comes from cardClass, and an inline
+   left/top would beat those Tailwind classes. */
+const cardStyle = (i: number): CSSProperties => ({ "--i": i } as CSSProperties);
+
 export function HeroFace() {
   /* lg: width-driven — the figure fills the column up to the width whose
      natural height (873:1091 image) fits the fold: (100vh - header) × 873/1091.
@@ -139,13 +143,12 @@ export function HeroFace() {
           </Link>
 
           {/* Result card — sibling of the dot so it can sit anywhere over the
-              figure (right-side callouts included) without clipping. Duplicate
-              link for pointer users; hidden from AT/tab order (the dot is the
-              accessible link). */}
-          <Link
-            href={`/concerns/${s.slug}`}
-            tabIndex={-1}
+              figure (right-side callouts included) without clipping. Not a
+              link: the dot above is the one anchor per concern. Hidden from AT
+              (the dot's aria-label already names the concern). */}
+          <span
             aria-hidden="true"
+            style={cardStyle(i)}
             className={`hero-card-pos absolute z-30 ${s.cardClass}`}
           >
             <span className="hero-card block rounded-[10px] bg-surface p-4 shadow-xl ring-1 ring-espresso/10">
@@ -158,7 +161,7 @@ export function HeroFace() {
                 Doctor-assessed options <ArrowRight size={12} />
               </span>
             </span>
-          </Link>
+          </span>
         </Fragment>
       ))}
     </div>

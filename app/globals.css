@@ -377,6 +377,89 @@ body {
   z-index: 30;
 }
 
+/* Auto-cycle — the reveal above is hover/focus-only, so on touch (no hover,
+   and a tap navigates) the callouts were never seen. One card at a time walks
+   the face on a 15s loop: 5 spots × 3s, staggered by the --i each spot already
+   carries. Pointer users take over on hover, which drops the animation and
+   hands control back to the :hover rules. */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-figure:not(:hover) .hero-card-pos {
+    animation: hero-cycle-pos 15s steps(1, end) infinite;
+    animation-delay: calc(var(--i) * 3s);
+  }
+  .hero-figure:not(:hover) .hero-card-pos .hero-card {
+    animation: hero-cycle-card 15s var(--ease-out-quart) infinite;
+    animation-delay: calc(var(--i) * 3s);
+  }
+  .hero-figure:not(:hover) .hero-line-h,
+  .hero-figure:not(:hover) .hero-line-r {
+    animation: hero-cycle-line-x 15s var(--ease-out-quart) infinite;
+    animation-delay: calc(var(--i) * 3s);
+  }
+  .hero-figure:not(:hover) .hero-line-v {
+    animation: hero-cycle-line-y 15s var(--ease-out-quart) infinite;
+    animation-delay: calc(var(--i) * 3s);
+  }
+}
+@keyframes hero-cycle-pos {
+  0%,
+  19.99% {
+    visibility: visible;
+  }
+  20%,
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes hero-cycle-card {
+  0% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.96);
+  }
+  5%,
+  16% {
+    opacity: 1;
+    transform: none;
+  }
+  20%,
+  100% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.96);
+  }
+}
+@keyframes hero-cycle-line-x {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  6%,
+  16% {
+    opacity: 1;
+    transform: none;
+  }
+  20%,
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+}
+@keyframes hero-cycle-line-y {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  6%,
+  16% {
+    opacity: 1;
+    transform: none;
+  }
+  20%,
+  100% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+}
+
 /* Hide the scrollbar on native horizontal scroll-snap tracks (e.g. the
    doctors slider) — the arrow buttons remain the visible affordance. */
 .scrollbar-none {
