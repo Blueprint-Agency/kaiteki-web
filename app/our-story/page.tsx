@@ -8,11 +8,16 @@ import { ClosingCta } from "@/components/ClosingCta";
 import { RecognitionCabinet } from "@/components/RecognitionCabinet";
 import { doctors } from "@/content/data/doctors";
 import { pageMeta } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { webPageNode } from "@/lib/schema";
+
+const TITLE = "Our Story | Kaiteki Skin Aesthetic Clinic";
+const DESCRIPTION =
+  "The story behind Kaiteki. A Japanese-inspired aesthetic clinic founded by doctors, built on calm and considered care, now across 9 Malaysian branches.";
 
 export const metadata = pageMeta({
-  title: "Our Story | Kaiteki Skin Aesthetic Clinic",
-  description:
-    "The story behind Kaiteki. A Japanese-inspired aesthetic clinic founded by doctors, built on calm and considered care, now across 9 Malaysian branches.",
+  title: TITLE,
+  description: DESCRIPTION,
   path: "/our-story",
 });
 
@@ -115,6 +120,14 @@ export default function AboutPage() {
           快適
         </span>
         <Container className="relative py-16 sm:py-24">
+          <JsonLd
+            data={webPageNode({
+              path: "/our-story",
+              name: TITLE,
+              description: DESCRIPTION,
+              type: "AboutPage",
+            })}
+          />
           <Breadcrumbs items={[{ label: "About" }]} />
           <div className="mt-8 max-w-2xl">
             <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-accent">
@@ -176,7 +189,7 @@ export default function AboutPage() {
           <div className="reveal relative aspect-[4/3] overflow-hidden rounded-3xl border border-hairline">
             <Image
               src="/images/clinics/clinic-mont-kiara.jpg"
-              alt="Inside a Kaiteki clinic"
+              alt="Treatment room inside Kaiteki Skin Aesthetic Clinic Mont Kiara"
               fill
               sizes="(max-width: 1024px) 100vw, 45vw"
               className="object-cover"
@@ -202,7 +215,7 @@ export default function AboutPage() {
                 <div className="relative aspect-[3/4] w-32 shrink-0 self-center overflow-hidden rounded-2xl border border-hairline bg-tint sm:w-40 sm:self-start">
                   <Image
                     src={d.photo}
-                    alt={d.fullName}
+                    alt={`${d.fullName}, ${d.credentials} — co-founder of Kaiteki Skin Aesthetic Clinic`}
                     fill
                     sizes="(max-width: 640px) 128px, 160px"
                     className="object-cover object-top"

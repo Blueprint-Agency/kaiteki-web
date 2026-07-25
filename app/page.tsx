@@ -16,11 +16,16 @@ import { PromoModal } from "@/components/PromoModal";
 import { ArrowRight, MapPin } from "@/components/icons";
 import { site } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { webPageNode } from "@/lib/schema";
+
+const TITLE = "Kaiteki — Japanese-Inspired Aesthetic Clinic in Malaysia";
+const DESCRIPTION =
+  "9 branches, 20 doctors, one standard of aesthetic care across KL, Selangor, Johor and Sabah. Your concern is assessed first, then the right treatment follows.";
 
 export const metadata = pageMeta({
-  title: "Kaiteki — Japanese-Inspired Aesthetic Clinic in Malaysia",
-  description:
-    "9 branches, 20 doctors, one standard of aesthetic care across KL, Selangor, Johor and Sabah. Your concern is assessed first, then the right treatment follows.",
+  title: TITLE,
+  description: DESCRIPTION,
   path: "/",
 });
 
@@ -30,6 +35,14 @@ const si = (i: number): CSSProperties => ({ "--i": Math.min(i, 8) } as CSSProper
 export default function Home() {
   return (
     <>
+      <JsonLd
+        data={webPageNode({
+          path: "/",
+          name: TITLE,
+          description: DESCRIPTION,
+          image: "/images/hero/hero-subject.png",
+        })}
+      />
       <PromoModal />
       {/* HERO — warm-sanctuary fold: subject photo with interactive concern
           hotspots (see HeroFace). Pulled under the transparent header. */}

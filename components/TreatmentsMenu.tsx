@@ -46,7 +46,7 @@ export function TreatmentsMenu() {
                   {t.image ? (
                     <Image
                       src={t.image}
-                      alt=""
+                      alt={`${t.name} treatment at Kaiteki Skin Aesthetic Clinic`}
                       fill
                       sizes="(max-width: 640px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"

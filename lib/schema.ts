@@ -2,6 +2,7 @@
 // @id (docs/02 §3). Emit ONLY visible content; never Review/AggregateRating,
 // FAQPage or HowTo (self-serving + MY medical-ad rules + deprecated rich results).
 import { site } from "@/lib/site";
+import { WHATSAPP_NUMBER } from "@/lib/wa";
 import type { Branch, Doctor } from "@/lib/types";
 
 // Stable identity anchors other nodes reference by @id.
@@ -21,6 +22,11 @@ export function organizationNode() {
     logo: `${site.url}/brand/kaiteki-logo.png`,
     image: `${site.url}/images/hero/hero-subject.png`,
     description: site.positioning,
+    // docs/02 §3 lists telephone as a P1 Organization property. The clinic is
+    // WhatsApp-only, so the WhatsApp line IS the published contact number.
+    telephone: `+${WHATSAPP_NUMBER}`,
+    medicalSpecialty: "Dermatology",
+    areaServed: { "@type": "Country", name: "Malaysia" },
     address: { "@type": "PostalAddress", addressCountry: "MY" },
     sameAs: [site.instagram, site.facebook],
   };
@@ -112,6 +118,98 @@ export function physicianNode(d: Doctor, branchNames: string[]) {
   };
 }
 
+export interface ListItemInput {
+  name: string;
+  /** Absolute path of the child page. */
+  path: string;
+  /** Image path — emitted only when the item is typed. */
+  image?: string;
+  /** schema.org type for a nested `item` node (e.g. "Person", "MedicalProcedure").
+   *  Omit for a bare name+url ListItem, which is all a plain hub needs. */
+  type?: string;
+  /** Reference an existing node by @id instead of restating it — used by the
+   *  locations hub to point at each branch page's MedicalClinic node. */
+  refId?: string;
+}
+
+/** Hub/index pages: a CollectionPage whose mainEntity is an ItemList of its
+ *  children. Gives crawlers and AI answer engines the hub→children edge
+ *  explicitly instead of leaving it to link discovery. */
+export function collectionPageNode({
+  path,
+  name,
+  description,
+  items,
+}: {
+  path: string;
+  name: string;
+  description: string;
+  items: ListItemInput[];
+}) {
+  const url = abs(path);
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${url}#webpage`,
+    url,
+    name,
+    description,
+    inLanguage: "en-MY",
+    isPartOf: { "@id": websiteId },
+    mainEntity: {
+      "@type": "ItemList",
+      name,
+      numberOfItems: items.length,
+      itemListElement: items.map((it, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: it.name,
+        ...(it.refId
+          ? { item: { "@id": it.refId } }
+          : it.type
+            ? {
+                item: {
+                  "@type": it.type,
+                  name: it.name,
+                  url: abs(it.path),
+                  ...(it.image ? { image: `${site.url}${it.image}` } : {}),
+                },
+              }
+            : { url: abs(it.path) }),
+      })),
+    },
+  };
+}
+
+/** Non-medical pages (home, about). `type` narrows to AboutPage/ContactPage etc. */
+export function webPageNode({
+  path,
+  name,
+  description,
+  type = "WebPage",
+  image,
+}: {
+  path: string;
+  name: string;
+  description: string;
+  type?: "WebPage" | "AboutPage" | "ContactPage";
+  image?: string;
+}) {
+  const url = abs(path);
+  return {
+    "@context": "https://schema.org",
+    "@type": type,
+    "@id": `${url}#webpage`,
+    url,
+    name,
+    description,
+    inLanguage: "en-MY",
+    isPartOf: { "@id": websiteId },
+    about: { "@id": orgId },
+    ...(image ? { primaryImageOfPage: `${site.url}${image}` } : {}),
+  };
+}
+
 interface MedicalPageInput {
   /** Absolute path, e.g. "/treatments/pico-laser". */
   path: string;
@@ -123,8 +221,11 @@ interface MedicalPageInput {
     type: "MedicalProcedure" | "MedicalCondition" | "MedicalDevice";
     name: string;
   };
-  /** ISO date of last medical review (YMYL freshness signal). */
+  /** ISO date of last medical review (YMYL freshness signal). Also emitted as
+   *  `dateModified`, which is the generic freshness property crawlers read. */
   lastReviewed?: string;
+  /** Hero image path — becomes primaryImageOfPage. */
+  image?: string;
   /** Reviewing doctor — inlined as a credentialed Person (cross-page @id refs
    *  don't resolve reliably in Google's parser, so we self-contain it). */
   reviewer?: { name: string; slug: string; credentials?: string };
@@ -138,6 +239,7 @@ export function medicalWebPageNode({
   description,
   about,
   lastReviewed,
+  image,
   reviewer,
 }: MedicalPageInput) {
   const url = abs(path);
@@ -160,7 +262,8 @@ export function medicalWebPageNode({
           },
         }
       : {}),
-    ...(lastReviewed ? { lastReviewed } : {}),
+    ...(lastReviewed ? { lastReviewed, dateModified: lastReviewed } : {}),
+    ...(image ? { primaryImageOfPage: `${site.url}${image}` } : {}),
     ...(reviewer
       ? {
           reviewedBy: {

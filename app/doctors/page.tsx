@@ -4,17 +4,37 @@ import { DoctorCard } from "@/components/cards";
 import { CardRow } from "@/components/CardRow";
 import { doctors } from "@/content/data/doctors";
 import { pageMeta } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { collectionPageNode } from "@/lib/schema";
+
+const TITLE = "Meet Our Doctors | Kaiteki Aesthetic Clinic";
+const DESCRIPTION =
+  "20 LCP board-certified, MMC-registered aesthetic doctors across 9 branches. Every treatment plan is assessed and carried out by a registered physician.";
 
 export const metadata = pageMeta({
-  title: "Meet Our Doctors | Kaiteki Aesthetic Clinic",
-  description:
-    "20 LCP board-certified, MMC-registered aesthetic doctors across 9 branches. Every treatment plan is assessed and carried out by a registered physician.",
+  title: TITLE,
+  description: DESCRIPTION,
   path: "/doctors",
 });
 
 export default function DoctorsHub() {
   return (
     <Container className="py-10 sm:py-12">
+      <JsonLd
+        data={collectionPageNode({
+          path: "/doctors",
+          name: TITLE,
+          description: DESCRIPTION,
+          // Person, not Physician: schema.org Physician is a MedicalOrganization
+          // type, not a Person subtype (see physicianNode's note).
+          items: doctors.map((d) => ({
+            name: d.fullName,
+            path: `/doctors/${d.slug}`,
+            type: "Person",
+            image: d.photo,
+          })),
+        })}
+      />
       <PageHeader
         crumbs={[{ label: "Doctors" }]}
         eyebrow="MMC-registered"
