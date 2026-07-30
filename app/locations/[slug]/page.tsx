@@ -1,18 +1,64 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/Container";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Ledger } from "@/components/Ledger";
+import { SectionHeading } from "@/components/SectionHeading";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
+import { ConcernPicker } from "@/components/ConcernPicker";
+import { Faq } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
 import { branches, branchBySlug } from "@/content/data/branches";
 import { doctors } from "@/content/data/doctors";
+import {
+  treatmentCategories,
+  treatmentsByCategory,
+  treatmentHref,
+} from "@/content/data/treatments";
 import { waForBranch } from "@/lib/wa";
 import { pageMeta } from "@/lib/seo";
 import { medicalClinicNode } from "@/lib/schema";
+import type { Branch, Faq as FaqItem } from "@/lib/types";
 
 export const dynamicParams = false;
+
+/**
+ * Branch FAQ built from this branch's own fields, so the answers differ across
+ * the nine pages instead of repeating one template. Only facts already in
+ * `branches.ts` are used — nothing here is inferred beyond what that file
+ * already flags as client-verifiable.
+ */
+function branchFaqs(b: Branch): FaqItem[] {
+  const items: FaqItem[] = [
+    {
+      q: `Where is Kaiteki ${b.name}?`,
+      a: `Kaiteki ${b.name} is at ${b.address}.${b.gettingHere ? ` ${b.gettingHere}` : ""}`,
+    },
+    {
+      q: `What are Kaiteki ${b.name}'s opening hours?`,
+      a: `${b.hours.join(". ")}. Hours can change on public holidays, so message us on WhatsApp to confirm before travelling.`,
+    },
+  ];
+  if (b.parking) {
+    items.push({
+      q: `Is there parking at Kaiteki ${b.name}?`,
+      a: `${b.parking} If you are unsure where to enter, message us on WhatsApp and we will send directions.`,
+    });
+  }
+  if (b.serves?.length) {
+    items.push({
+      q: `Which areas does Kaiteki ${b.name} serve?`,
+      a: `Kaiteki ${b.name} is convenient for ${b.serves.join(", ")}, and for anyone travelling within ${b.city}. Kaiteki has nine branches across Malaysia, so if another is closer to you we will say so.`,
+    });
+  }
+  items.push({
+    q: `How do I book an appointment at Kaiteki ${b.name}?`,
+    a: `Booking is by WhatsApp on ${b.phone} or through the button on this page. Your first visit is a free consultation with a doctor rather than a treatment: the doctor assesses your skin and explains what is appropriate, and sometimes the honest answer is to wait or to do something else.`,
+  });
+  return items;
+}
 
 export function generateStaticParams() {
   return branches.map((b) => ({ slug: b.slug }));
@@ -46,6 +92,7 @@ export default async function BranchPage({
   if (!b) notFound();
 
   const here = doctors.filter((d) => d.branches.includes(b.slug));
+  const nearby = branches.filter((n) => n.region === b.region && n.slug !== b.slug);
 
   // LocalBusiness (MedicalClinic) schema — the primary local-SEO signal for a
   // Per-branch MedicalClinic node (NAP, geo, hours) wired to the site graph by
@@ -137,9 +184,99 @@ export default async function BranchPage({
           <ul className="space-y-1.5">
             {here.map((d) => (
               <li key={d.slug} className="text-ink-700">
-                {d.fullName} — <span className="ledger !text-ink-500">{d.credentials}</span>
+                <Link href={`/doctors/${d.slug}`} className="font-medium hover:text-espresso">
+                  {d.fullName}
+                </Link>{" "}
+                — <span className="ledger !text-ink-500">{d.credentials}</span>
               </li>
             ))}
+          </ul>
+        </section>
+      )}
+
+      {/* Treatments offered — the topical-relevance and internal-linking layer a
+          NAP-only branch page has none of. Availability is stated as chain-wide
+          rather than per-branch until the clinic supplies a per-branch service
+          list; see the note below the grid. */}
+      <section className="mt-14">
+        <SectionHeading
+          eyebrow="Treatments"
+          title={
+            <>
+              What you can be treated for{" "}
+              <span className="font-serif font-normal italic text-mocha">at {b.name}</span>
+            </>
+          }
+          intro={`Kaiteki ${b.name} is a doctor-led clinic. Every plan starts with a consultation and an assessment, and the treatment is chosen from your concern rather than from a menu.`}
+        />
+        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {treatmentCategories.map((cat) => (
+            <div key={cat} className="rounded-2xl border border-hairline bg-surface p-5">
+              <h3 className="font-semibold text-espresso">{cat}</h3>
+              <ul className="mt-3 space-y-1.5">
+                {treatmentsByCategory(cat).map((t) => (
+                  <li key={t.slug}>
+                    <Link
+                      href={treatmentHref(t)}
+                      className="text-sm text-ink-700 transition-colors hover:text-espresso"
+                    >
+                      {t.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        <p className="mt-5 text-sm text-ink-500">
+          Not every device is present at every branch. Message us and we&rsquo;ll confirm what is
+          available at {b.name}, or point you to the nearest branch that has it.
+        </p>
+      </section>
+
+      {/* Concern-first entry point — the same picker the /concerns hub uses,
+          with the branch carried into the prefilled WhatsApp message. */}
+      <section className="mt-14">
+        <ConcernPicker branch={b.name} />
+      </section>
+
+      {/* Branch FAQ. Every answer is drawn from this branch's own data, so the
+          nine pages differ rather than repeating one template — which is the
+          actual local-SEO risk, not word count. No FAQPage JSON-LD, per the
+          schema rule in lib/schema.ts. */}
+      <section className="mt-14">
+        <h2 className="text-xl font-bold text-espresso sm:text-2xl">
+          Kaiteki {b.name} — common questions
+        </h2>
+        <div className="mt-5">
+          <Faq items={branchFaqs(b)} />
+        </div>
+      </section>
+
+      {nearby.length > 0 && (
+        <section className="mt-14">
+          <h2 className="mb-4 text-sm font-semibold uppercase tracking-[0.1em] text-mocha">
+            Other Kaiteki branches in {b.region}
+          </h2>
+          <ul className="flex flex-wrap gap-2">
+            {nearby.map((n) => (
+              <li key={n.slug}>
+                <Link
+                  href={`/locations/${n.slug}`}
+                  className="inline-flex rounded-full border border-hairline bg-surface px-4 py-2 text-sm text-ink-700 transition-colors hover:border-mocha hover:text-espresso"
+                >
+                  {n.name}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link
+                href="/locations"
+                className="inline-flex rounded-full border border-hairline bg-surface px-4 py-2 text-sm font-medium text-accent transition-colors hover:border-mocha"
+              >
+                All 9 branches
+              </Link>
+            </li>
           </ul>
         </section>
       )}
