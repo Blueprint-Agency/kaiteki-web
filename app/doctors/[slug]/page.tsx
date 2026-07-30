@@ -13,7 +13,7 @@ import { branchBySlug } from "@/content/data/branches";
 import { site } from "@/lib/site";
 import { waForDoctor } from "@/lib/wa";
 import { pageMeta } from "@/lib/seo";
-import { physicianNode } from "@/lib/schema";
+import { profilePageGraph } from "@/lib/schema";
 
 export const dynamicParams = false;
 
@@ -58,7 +58,7 @@ export default async function DoctorPage({
 
   return (
     <Container className="py-10 sm:py-12">
-      <JsonLd data={physicianNode(d, branchNames)} />
+      <JsonLd data={profilePageGraph(d, branchNames)} />
       <Breadcrumbs items={[{ label: "Doctors", href: "/doctors" }, { label: d.fullName }]} />
 
       {/* Header — name reads as the page title, full width */}

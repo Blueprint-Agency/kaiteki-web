@@ -10,10 +10,13 @@ import { JsonLd } from "@/components/JsonLd";
 import { orgId, websiteId } from "@/lib/schema";
 import { site } from "@/lib/site";
 
+const TITLE = "Kaiteki Cosmeceuticals | Japanese-Inspired Skincare";
+const DESCRIPTION =
+  "Japanese-inspired, dermatologist-formulated skincare for acne, ageing and dull skin. Medical-grade ingredients, MOH-approved. Suitable for all skin types.";
+
 export const metadata = pageMeta({
-  title: "Kaiteki Cosmeceuticals | Japanese-Inspired Skincare",
-  description:
-    "Japanese-inspired, dermatologist-formulated skincare for acne, ageing and dull skin. Medical-grade ingredients, MOH-approved. Suitable for all skin types.",
+  title: TITLE,
+  description: DESCRIPTION,
   path: "/products",
 });
 
@@ -29,9 +32,8 @@ const collectionJsonLd = {
   "@type": "CollectionPage",
   "@id": `${PRODUCTS_URL}#webpage`,
   url: PRODUCTS_URL,
-  name: "Kaiteki® Cosmeceuticals",
-  description:
-    "Japanese-inspired, dermatologist-formulated skincare available at Kaiteki clinics.",
+  name: TITLE,
+  description: DESCRIPTION,
   inLanguage: "en-MY",
   isPartOf: { "@id": websiteId },
   mainEntity: {

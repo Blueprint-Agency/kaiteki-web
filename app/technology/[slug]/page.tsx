@@ -4,7 +4,7 @@ import { TechnologyView } from "@/components/TechnologyView";
 import { technology, technologyBySlug } from "@/content/data/technology";
 import { doctorBySlug } from "@/content/data/doctors";
 import { pageMeta } from "@/lib/seo";
-import { medicalWebPageNode } from "@/lib/schema";
+import { medicalWebPageNode, techEntityType } from "@/lib/schema";
 import { JsonLd } from "@/components/JsonLd";
 
 export const dynamicParams = false;
@@ -45,8 +45,8 @@ export default async function TechnologyPage({
           path: `/technology/${x.slug}`,
           name: x.seoTitle ?? x.name,
           description: x.seoDescription ?? x.summary,
-          // A machine → MedicalDevice; an injectable is administered via a procedure.
-          about: { type: x.type === "device" ? "MedicalDevice" : "MedicalProcedure", name: x.name },
+          // These pages are about a product, not a procedure (see techEntityType).
+          about: { type: techEntityType(x.slug), name: x.name },
           lastReviewed: x.lastReviewed,
           image: x.image,
           reviewer: reviewer
