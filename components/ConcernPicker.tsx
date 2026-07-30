@@ -10,7 +10,10 @@ import { waForConcerns, waLink } from "@/lib/wa";
  *
  *  Pass `branch` on a location page so the prefilled message names the branch
  *  the visitor is actually looking at. */
-export function ConcernPicker({ branch }: { branch?: string } = {}) {
+export function ConcernPicker({
+  branch,
+  className = "",
+}: { branch?: string; className?: string } = {}) {
   const [selected, setSelected] = useState<string[]>([]);
 
   function toggle(name: string) {
@@ -29,10 +32,10 @@ export function ConcernPicker({ branch }: { branch?: string } = {}) {
         : waForConcerns(selected);
 
   return (
-    <div className="rounded-2xl border border-hairline bg-surface p-6 sm:p-8">
-      <h3 className="font-serif text-xl font-semibold text-espresso sm:text-2xl">
-        What&rsquo;s your top skin concern?
-      </h3>
+    <div
+      className={`rounded-2xl border border-hairline bg-surface p-6 sm:p-8 ${className}`}
+    >
+      <h3 className="h-sub sm:text-2xl">What&rsquo;s your top skin concern?</h3>
       <p className="mt-1.5 text-sm text-ink-700">
         Pick as many as apply. We&rsquo;ll carry them straight into your WhatsApp message
         {branch ? ` to Kaiteki ${branch}` : ""}.
