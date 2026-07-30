@@ -3,16 +3,30 @@
 import { useState } from "react";
 import { WhatsApp, Check } from "./icons";
 import { concerns } from "@/content/data/concerns";
-import { waForConcerns } from "@/lib/wa";
+import { waForConcerns, waLink } from "@/lib/wa";
 
 /** "What's your top concern?" CTA — pick one or more concerns, then Continue
- *  opens WhatsApp with those concerns already written into the message. */
-export function ConcernPicker() {
+ *  opens WhatsApp with those concerns already written into the message.
+ *
+ *  Pass `branch` on a location page so the prefilled message names the branch
+ *  the visitor is actually looking at. */
+export function ConcernPicker({ branch }: { branch?: string } = {}) {
   const [selected, setSelected] = useState<string[]>([]);
 
   function toggle(name: string) {
     setSelected((prev) => (prev.includes(name) ? prev.filter((n) => n !== name) : [...prev, name]));
   }
+
+  const href =
+    selected.length === 0
+      ? branch
+        ? waLink(`Hi Kaiteki ${branch}, I'd like to book a free consultation.`)
+        : waForConcerns([])
+      : branch
+        ? waLink(
+            `Hi Kaiteki ${branch}, I'd like a free consultation about: ${selected.join(", ")}.`,
+          )
+        : waForConcerns(selected);
 
   return (
     <div className="rounded-2xl border border-hairline bg-surface p-6 sm:p-8">
@@ -20,7 +34,8 @@ export function ConcernPicker() {
         What&rsquo;s your top skin concern?
       </h3>
       <p className="mt-1.5 text-sm text-ink-700">
-        Pick as many as apply. We&rsquo;ll carry them straight into your WhatsApp message.
+        Pick as many as apply. We&rsquo;ll carry them straight into your WhatsApp message
+        {branch ? ` to Kaiteki ${branch}` : ""}.
       </p>
       <div className="mt-5 flex flex-wrap gap-2">
         {concerns.map((c) => {
@@ -44,7 +59,7 @@ export function ConcernPicker() {
         })}
       </div>
       <a
-        href={waForConcerns(selected)}
+        href={href}
         className="mt-6 inline-flex items-center justify-center gap-2.5 rounded-full bg-cta px-6 py-3 text-sm font-semibold text-white shadow-sm transition-[transform,background-color] duration-150 hover:bg-cta-hover active:scale-[0.98]"
       >
         <WhatsApp size={18} />
