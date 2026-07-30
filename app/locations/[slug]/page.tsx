@@ -106,9 +106,7 @@ export default async function BranchPage({
       <div className="mt-8 grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
         <div>
           <p className="text-sm font-medium text-accent">{b.region}</p>
-          <h1 className="mt-2 font-serif text-4xl font-semibold leading-[1.1] tracking-tight text-espresso sm:text-5xl">
-            Kaiteki {b.name}
-          </h1>
+          <h1 className="h-hero mt-2">Kaiteki {b.name}</h1>
           {b.alsoKnownAs && (
             <p className="mt-2 text-sm text-ink-500">
               Also known as <span className="font-medium text-ink-700">{b.alsoKnownAs}</span>
@@ -178,7 +176,7 @@ export default async function BranchPage({
 
       {here.length > 0 && (
         <section className="mt-12">
-          <h2 className="mb-4 text-sm font-semibold uppercase tracking-[0.1em] text-mocha">
+          <h2 className="h-sub mb-4">
             Doctors at this branch
           </h2>
           <ul className="space-y-1.5">
@@ -198,54 +196,62 @@ export default async function BranchPage({
           NAP-only branch page has none of. Availability is stated as chain-wide
           rather than per-branch until the clinic supplies a per-branch service
           list; see the note below the grid. */}
-      <section className="mt-14">
+      <section className="mt-16 sm:mt-20">
         <SectionHeading
-          eyebrow="Treatments"
-          title={
-            <>
-              What you can be treated for{" "}
-              <span className="font-serif font-normal italic text-mocha">at {b.name}</span>
-            </>
-          }
-          intro={`Kaiteki ${b.name} is a doctor-led clinic. Every plan starts with a consultation and an assessment, and the treatment is chosen from your concern rather than from a menu.`}
+          title={`Treatments at Kaiteki ${b.name}`}
+          intro="Every plan starts with a doctor's assessment, so the treatment follows your concern rather than a menu."
         />
-        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {/* An index, not a card grid: rows size to their own content, so a
+            single-treatment category costs one line instead of a box padded
+            out to match a four-item neighbour. Hairlines do the separating
+            (DESIGN.md "hairline-first"). */}
+        <dl className="mt-10 border-t border-hairline">
           {treatmentCategories.map((cat) => (
-            <div key={cat} className="rounded-2xl border border-hairline bg-surface p-5">
-              <h3 className="font-semibold text-espresso">{cat}</h3>
-              <ul className="mt-3 space-y-1.5">
+            <div
+              key={cat}
+              className="grid gap-x-10 gap-y-1 border-b border-hairline py-5 sm:grid-cols-[minmax(0,12rem)_1fr] sm:py-6"
+            >
+              <dt className="h-sub">{cat}</dt>
+              {/* Negative y-margin cancels the links' touch-target padding so the
+                  first link's text aligns to the label's cap line instead of
+                  sitting ~8px below it; the row's own py keeps the rhythm. */}
+              <dd className="-my-1.5 flex flex-wrap gap-x-6">
                 {treatmentsByCategory(cat).map((t) => (
-                  <li key={t.slug}>
-                    <Link
-                      href={treatmentHref(t)}
-                      className="text-sm text-ink-700 transition-colors hover:text-espresso"
-                    >
-                      {t.name}
-                    </Link>
-                  </li>
+                  <Link
+                    key={t.slug}
+                    href={treatmentHref(t)}
+                    className="py-1.5 text-[0.9375rem] text-ink-700 underline-offset-4 transition-colors hover:text-espresso hover:underline"
+                  >
+                    {t.name}
+                  </Link>
                 ))}
-              </ul>
+              </dd>
             </div>
           ))}
-        </div>
-        <p className="mt-5 text-sm text-ink-500">
+        </dl>
+        <p className="mt-6 max-w-[62ch] text-sm leading-relaxed text-ink-500">
           Not every device is present at every branch. Message us and we&rsquo;ll confirm what is
           available at {b.name}, or point you to the nearest branch that has it.
         </p>
       </section>
 
       {/* Concern-first entry point — the same picker the /concerns hub uses,
-          with the branch carried into the prefilled WhatsApp message. */}
-      <section className="mt-14">
-        <ConcernPicker branch={b.name} />
-      </section>
+          with the branch carried into the prefilled WhatsApp message. Rendered
+          as a warm band rather than a bordered card so the page stops reading
+          as one box after another. */}
+      <div className="mt-16 sm:mt-20">
+        <ConcernPicker
+          branch={b.name}
+          className="-mx-5 rounded-none border-x-0 bg-tint px-5 sm:mx-0 sm:rounded-2xl sm:border-x sm:px-8"
+        />
+      </div>
 
       {/* Branch FAQ. Every answer is drawn from this branch's own data, so the
           nine pages differ rather than repeating one template — which is the
           actual local-SEO risk, not word count. No FAQPage JSON-LD, per the
           schema rule in lib/schema.ts. */}
       <section className="mt-14">
-        <h2 className="text-xl font-bold text-espresso sm:text-2xl">
+        <h2 className="h-section">
           Kaiteki {b.name} — common questions
         </h2>
         <div className="mt-5">
@@ -255,7 +261,7 @@ export default async function BranchPage({
 
       {nearby.length > 0 && (
         <section className="mt-14">
-          <h2 className="mb-4 text-sm font-semibold uppercase tracking-[0.1em] text-mocha">
+          <h2 className="h-sub mb-4">
             Other Kaiteki branches in {b.region}
           </h2>
           <ul className="flex flex-wrap gap-2">
