@@ -99,7 +99,6 @@ export function physicianNode(d: Doctor, branchNames: string[]) {
   const role = d.role ?? "Aesthetic Physician";
   const suffix = [d.credentials, d.mmc].filter(Boolean).join(" · ");
   return {
-    "@context": "https://schema.org",
     "@type": "Person",
     additionalType: "https://schema.org/Physician",
     "@id": `${site.url}/doctors/${d.slug}#person`,
@@ -117,6 +116,36 @@ export function physicianNode(d: Doctor, branchNames: string[]) {
       : {}),
   };
 }
+
+/** Doctor profile route: ProfilePage + the Person it is about, in one graph so the
+ *  @id ref resolves in a single parse (Google's profile-page guidance). */
+export function profilePageGraph(d: Doctor, branchNames: string[]) {
+  const url = `${site.url}/doctors/${d.slug}`;
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfilePage",
+        "@id": `${url}#webpage`,
+        url,
+        name: d.fullName,
+        inLanguage: "en-MY",
+        isPartOf: { "@id": websiteId },
+        mainEntity: { "@id": `${url}#person` },
+        primaryImageOfPage: `${site.url}${d.photo}`,
+      },
+      physicianNode(d, branchNames),
+    ],
+  };
+}
+
+/** /technology pages describe a product, not a procedure. Botulinum toxin brands
+ *  are prescription medicines → Drug; every other device/injectable on the shelf
+ *  (lasers, fillers, biostimulators, skinboosters) is MDA device-regulated. Add
+ *  new toxin brands to TOXINS. */
+const TOXINS = new Set(["botox"]);
+export const techEntityType = (slug: string): "Drug" | "MedicalDevice" =>
+  TOXINS.has(slug) ? "Drug" : "MedicalDevice";
 
 export interface ListItemInput {
   name: string;
@@ -165,7 +194,7 @@ export function collectionPageNode({
         position: i + 1,
         name: it.name,
         ...(it.refId
-          ? { item: { "@id": it.refId } }
+          ? { url: abs(it.path), item: { "@id": it.refId } }
           : it.type
             ? {
                 item: {
@@ -218,7 +247,7 @@ interface MedicalPageInput {
   description: string;
   /** The medical entity this page is about. */
   about?: {
-    type: "MedicalProcedure" | "MedicalCondition" | "MedicalDevice";
+    type: "MedicalProcedure" | "MedicalCondition" | "MedicalDevice" | "Drug";
     name: string;
   };
   /** ISO date of last medical review (YMYL freshness signal). Also emitted as

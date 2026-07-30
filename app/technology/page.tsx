@@ -4,7 +4,7 @@ import { TechnologyExplorer } from "@/components/TechnologyExplorer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { pageMeta } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
-import { collectionPageNode } from "@/lib/schema";
+import { collectionPageNode, techEntityType } from "@/lib/schema";
 import { technology } from "@/content/data/technology";
 
 const TITLE = "Technology Behind Our Treatments | Kaiteki Malaysia";
@@ -30,7 +30,7 @@ export default function TechnologyHub() {
           items: technology.map((x) => ({
             name: x.name,
             path: `/technology/${x.slug}`,
-            type: x.type === "device" ? "MedicalDevice" : "MedicalProcedure",
+            type: techEntityType(x.slug),
             image: x.image,
           })),
         })}
