@@ -34,9 +34,8 @@ export const doctors: Doctor[] = [
     bio: [
       "Allow your passion to become your purpose and it will one day become your profession.",
       "To practice with passion is utmost importance for Dr Chew. It was a circumspect decision to embark on this arduous journey of medicine but she pursued relentlessly and graduated from Melaka Manipal Medical College with a degree of Bachelor in Medicine, Bachelor in Surgery ( MBBS).",
-      "Her love for discovering new knowledge and keen eye on beauty motivated her to pursue aesthetic medicine where she practices with delectation. Often placing herself in her patient's shoes, she listens with empathy and goes the extra mile to ensure satisfaction from them. She also holds on to the Hippocratic Oath of ‘Primum non nocere' (first, do no harm) and emphasizes on safe medicine.",
-      "For her, job satisfaction and patient's satisfaction gives her insurmountable joy. She is an accomplished Aesthetic Physician with MBBS, MAC certification. She is bubbly, approachable and you will definitely feel comfortable sharing your stories or your problems with her!",
-      "On the days she is not seeing patients , she enjoys blogging and dabbling in video making.",
+      "Her love for discovering new knowledge and keen eye on beauty motivated her to pursue aesthetic medicine where she practices with delectation. She specialises in skin problems like acne and acne scars, injectables like botox, fillers and lifting treatments. On top of that, she is also a medical trainer for Ellanse.",
+      "For her, job satisfaction and patient's satisfaction gives her insurmountable joy. She has a quiet steady energy, approachable and you will definitely feel comfortable sharing your stories or your problems with her!",
     ],
     instagram: "https://www.instagram.com/kaiteki.my",
     seoTitle: "Dr Chew Yuhhui — Senior Medical Director | Kaiteki",
@@ -353,4 +352,14 @@ export const doctors: Doctor[] = [
 
 export function doctorBySlug(slug: string) {
   return doctors.find((d) => d.slug === slug);
+}
+
+/**
+ * "Reviewed by" byline. `mmc` is still a pending client data dependency, so
+ * fall back to published credentials rather than interpolating `undefined`
+ * (spec bug B-01 / TB-01 — rendered "Dr Chew Yuhhui, undefined" on every page).
+ */
+export function reviewerByline(d: Doctor | undefined) {
+  if (!d) return "—";
+  return [d.fullName, d.mmc || d.credentials].filter(Boolean).join(", ");
 }

@@ -584,6 +584,8 @@ export const concerns: Concern[] = [
   },
   {
     slug: "body-slimming",
+    ctaHeading: "Not sure where to start?",
+    ctaAssesses: "the areas you’re concerned about",
     name: "Body Slimming",
     group: "Hair & Body",
     image: "/images/concerns/body-slimming.jpg",
@@ -647,6 +649,8 @@ export const concerns: Concern[] = [
   },
   {
     slug: "hair-loss",
+    ctaHeading: "Not sure what’s behind your hair loss?",
+    ctaAssesses: "your scalp",
     name: "Hair Loss",
     group: "Hair & Body",
     image: "/images/concerns/hair-loss.jpg",
@@ -714,6 +718,8 @@ export const concerns: Concern[] = [
   },
   {
     slug: "tattoo-removal",
+    ctaHeading: "Not sure if your tattoo can be treated?",
+    ctaAssesses: "your tattoo",
     name: "Tattoo Removal",
     group: "Skin",
     image: "/images/concerns/tattoo-removal.jpg",
@@ -779,6 +785,8 @@ export const concerns: Concern[] = [
   },
   {
     slug: "birthmark",
+    ctaHeading: "Not sure which type you have?",
+    ctaAssesses: "your birthmark",
     name: "Birthmark",
     group: "Skin",
     image: "/images/concerns/birthmark.jpg",
@@ -834,6 +842,8 @@ export const concerns: Concern[] = [
   },
   {
     slug: "vascular-lesions",
+    ctaHeading: "Not sure which type you have?",
+    ctaAssesses: "the affected skin",
     name: "Vascular Lesions",
     group: "Skin",
     image: "/images/concerns/vascular-lesions.jpg",
@@ -892,6 +902,8 @@ export const concerns: Concern[] = [
   },
   {
     slug: "excessive-sweating",
+    ctaHeading: "Not sure which areas are affected?",
+    ctaAssesses: "the affected areas",
     name: "Excessive Sweating",
     group: "Skin",
     image: "/images/concerns/excessive-sweating.jpg",

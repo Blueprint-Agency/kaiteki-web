@@ -11,7 +11,7 @@ import { ArrowRight } from "@/components/icons";
 import { ProductMotif } from "@/components/cards";
 import { treatmentsOfTechnology, concernsOfTechnology } from "@/content/data/relations";
 import { treatmentHref } from "@/content/data/treatments";
-import { doctorBySlug } from "@/content/data/doctors";
+import { doctorBySlug, reviewerByline } from "@/content/data/doctors";
 import { waForTreatment } from "@/lib/wa";
 import type { Technology } from "@/lib/types";
 
@@ -172,7 +172,7 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
             {doctor && reviewedDate && (
               <Ledger
                 rows={[
-                  { label: "Reviewed by", value: `${doctor.fullName}, ${doctor.mmc}` },
+                  { label: "Reviewed by", value: reviewerByline(doctor) },
                   { label: "Last reviewed", value: reviewedDate },
                 ]}
               />

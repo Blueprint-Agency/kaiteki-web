@@ -3,24 +3,37 @@ import { waGeneric } from "@/lib/wa";
 
 type Size = "md" | "lg";
 
-/** Inline WhatsApp CTA — a server-rendered <a>, the one saturated element (docs/06 §4.5).
- *  Always the single action green; it owns the brightest pixel on every surface. */
+/**
+ * Inline WhatsApp CTA — a server-rendered <a>, the one saturated element
+ * (docs/06 §4.5). Solid owns the brightest pixel on the surface.
+ *
+ * `outline` is the ghost variant the treatment template requires for the hero
+ * and cost-section CTAs: a medical page must not open as a sales page, and the
+ * cost CTA is a secondary variant of the same destination rather than a fourth
+ * CTA (spec rule R-06).
+ */
 export function WhatsAppButton({
   href = waGeneric,
   label = "Book a free consultation on WhatsApp",
   size = "md",
+  variant = "solid",
   className = "",
 }: {
   href?: string;
   label?: string;
   size?: Size;
+  variant?: "solid" | "outline";
   className?: string;
 }) {
   const sizing = size === "lg" ? "px-7 py-3.5 text-base" : "px-5 py-3 text-sm";
+  const skin =
+    variant === "outline"
+      ? "border border-cta bg-transparent text-cta hover:bg-cta/5"
+      : "bg-cta text-white shadow-sm hover:bg-cta-hover";
   return (
     <a
       href={href}
-      className={`inline-flex items-center justify-center gap-2.5 rounded-full bg-cta font-semibold text-white shadow-sm transition-[transform,background-color] duration-150 hover:bg-cta-hover active:scale-[0.98] ${sizing} ${className}`}
+      className={`inline-flex items-center justify-center gap-2.5 rounded-full font-semibold transition-[transform,background-color] duration-150 active:scale-[0.98] ${skin} ${sizing} ${className}`}
     >
       <WhatsApp size={size === "lg" ? 20 : 18} />
       <span>{label}</span>

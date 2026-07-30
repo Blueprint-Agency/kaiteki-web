@@ -26,7 +26,6 @@ const founders = ["dr-jessie-lim", "dr-chew-yuhhui"]
   .filter((d): d is (typeof doctors)[number] => Boolean(d));
 
 const stats = [
-  { value: "2020", label: "Founded in PJ" },
   { value: "9", label: "Clinics today" },
   { value: "4", label: "States" },
   { value: `${doctors.length}`, label: "Doctors" },
@@ -34,7 +33,7 @@ const stats = [
 
 const values = [
   {
-    kanji: "快適",
+    kanji: "かいてき",
     title: "Comfort first",
     body: "The name says it. Calm rooms, unhurried consultations, and the space to ask anything before you decide.",
   },
@@ -57,7 +56,7 @@ const founderBlurbs: Record<string, string> = {
   "dr-jessie-lim":
     "Dr Jessie Lim is an LCP-certified aesthetic physician specialising in injectables and laser treatments. She trained at Universiti Putra Malaysia and the American Academy of Aesthetic Medicine. She founded Kaiteki around one principle: that aesthetic care should start with an honest assessment, not a sales target.",
   "dr-chew-yuhhui":
-    "Dr Chew Yuhhui is an LCP-certified aesthetic physician who trained at Melaka-Manipal Medical College. Guided by primum non nocere, first do no harm, she oversees clinical protocols and training across all nine branches, ensuring every doctor follows the same standard of care.",
+    "Dr Chew Yuhhui is an LCP-certified aesthetic physician who graduated from Melaka Manipal Medical College with an MBBS. She specialises in skin problems like acne and acne scars, injectables like botox, fillers and lifting treatments, and is also a medical trainer for Ellanse. She has a quiet steady energy — you’ll feel comfortable sharing your concerns with her.",
 };
 
 // Founder interviews in the Malaysian lifestyle press (verified URLs).
@@ -115,9 +114,9 @@ export default function AboutPage() {
       <section className="relative overflow-hidden bg-page">
         <span
           aria-hidden
-          className="pointer-events-none absolute -right-6 top-1/2 -translate-y-1/2 select-none text-[13rem] font-semibold leading-none text-mocha/10 sm:text-[20rem] lg:text-[26rem]"
+          className="pointer-events-none absolute -right-6 top-1/2 -translate-y-1/2 select-none whitespace-nowrap text-[7rem] font-semibold leading-none text-mocha/10 sm:text-[10rem] lg:text-[13rem]"
         >
-          快適
+          かいてき
         </span>
         <Container className="relative py-16 sm:py-24">
           <JsonLd
@@ -138,7 +137,7 @@ export default function AboutPage() {
               <span className="font-serif font-normal italic text-mocha">comfortable.</span>
             </h1>
             <p className="prose mt-6 text-lg leading-relaxed text-ink-700">
-              It&rsquo;s a Japanese word — 快適 — for being at ease, physically and mentally.
+              It&rsquo;s a Japanese word — かいてき — for being at ease, physically and mentally.
               Not just relaxed, but genuinely settled. That feeling is the single promise
               behind every Kaiteki clinic: medical-grade skin and aesthetic care where
               nothing is sold, rushed, or justified.
@@ -149,7 +148,7 @@ export default function AboutPage() {
           </div>
 
           {/* Ledger of verified facts */}
-          <dl className="mt-14 grid max-w-2xl grid-cols-2 gap-px overflow-hidden rounded-2xl border border-hairline bg-hairline sm:grid-cols-4">
+          <dl className="mt-14 grid max-w-2xl grid-cols-3 gap-px overflow-hidden rounded-2xl border border-hairline bg-hairline">
             {stats.map((s) => (
               <div key={s.label} className="bg-page px-5 py-6">
                 <dt className="text-3xl font-bold text-espresso sm:text-4xl">{s.value}</dt>
@@ -204,7 +203,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="The founders"
             title="Founded by doctors, run by doctors"
-            intro={`Kaiteki was started by two aesthetic physicians who believed the consultation should feel as considered as the treatment itself. That philosophy now guides a team of ${doctors.length} registered doctors across nine branches.`}
+            intro={`Being doctors, they have the knowledge and skills to design curated treatment protocols for each individual. The team now has ${doctors.length} doctors across 9 branches.`}
           />
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
             {founders.map((d) => (

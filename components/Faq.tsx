@@ -8,8 +8,9 @@ import type { Faq as FaqItem } from "@/lib/types";
 export function Faq({ items }: { items: FaqItem[] }) {
   return (
     <div className="divide-y divide-hairline border-y border-hairline">
-      {items.map((item) => (
-        <details key={item.q} className="group">
+      {items.map((item, i) => (
+        // First item open so the section doesn't read as an empty list (T-16).
+        <details key={item.q} open={i === 0} className="group">
           <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 text-left font-medium text-espresso [&::-webkit-details-marker]:hidden">
             <h3 className="text-base">{item.q}</h3>
             <ChevronDown

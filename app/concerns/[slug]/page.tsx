@@ -15,7 +15,7 @@ import { TreatmentCard } from "@/components/cards";
 import { CardRow } from "@/components/CardRow";
 import { concerns, concernBySlug } from "@/content/data/concerns";
 import { technologyOfConcern, treatmentsOfConcern } from "@/content/data/relations";
-import { doctorBySlug } from "@/content/data/doctors";
+import { doctorBySlug, reviewerByline } from "@/content/data/doctors";
 import { waForConcern } from "@/lib/wa";
 import { medicalWebPageNode } from "@/lib/schema";
 
@@ -132,8 +132,8 @@ export default async function ConcernPage({
           {options.length > 0 && (
             <SectionCard title="Treatment options at Kaiteki">
               <p className="text-ink-700">
-                These treatments may be considered for {c.name.toLowerCase()}-related concerns.
-                Suitability is always assessed individually.
+                These treatments may be considered for {c.name.toLowerCase()}. Suitability is
+                always assessed individually.
               </p>
               <CardRow className="mt-6">
                 {options.map((t) => (
@@ -168,10 +168,12 @@ export default async function ConcernPage({
           <SectionCard className="bg-tint">
             <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <h2 className="text-xl font-bold text-espresso">Not sure what&rsquo;s causing it?</h2>
+                <h2 className="text-xl font-bold text-espresso">
+                  {c.ctaHeading ?? "Not sure what’s causing it?"}
+                </h2>
                 <p className="mt-1 max-w-md text-ink-700">
-                  Message us on WhatsApp for a free consultation — a doctor can assess your skin
-                  and talk you through the options.
+                  Message us on WhatsApp for a free consultation — a doctor can assess{" "}
+                  {c.ctaAssesses ?? "your skin"} and talk you through the options.
                 </p>
               </div>
               <WhatsAppButton href={waForConcern(c.name)} size="lg" label="Book a free consultation" />
@@ -181,7 +183,7 @@ export default async function ConcernPage({
           <div className="space-y-6 px-2">
             <Ledger
               rows={[
-                { label: "Reviewed by", value: doctor ? `${doctor.fullName}, ${doctor.mmc}` : "—" },
+                { label: "Reviewed by", value: reviewerByline(doctor) },
                 { label: "Last reviewed", value: reviewedDate },
               ]}
             />

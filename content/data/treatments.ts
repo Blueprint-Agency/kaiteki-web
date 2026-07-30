@@ -8,131 +8,293 @@ import type { Treatment } from "@/lib/types";
 // MAB-compliant patterns in docs/05 §2 — no superlatives, guarantees or
 // before/after. pico-laser is fully authored as the master-template showcase.
 export const treatments: Treatment[] = [
+  // ── Reference implementation of the v2 treatment template (config/treatments.json,
+  // archetype ED, depth "full"). Copy authored in the Pico Laser page preview,
+  // 30 Jul 2026, pending Dr Chew Yuhhui's clinical sign-off. Two deliberate
+  // departures from that document, both because the source it cited is a 404:
+  // PicoCare is absent from T-07 and T-15, and the fact strip says two platforms,
+  // not three. Restore both together if /technology/picocare ships.
   {
     slug: "pico-laser",
-    durationDowntime: "15-30 min · Minimal downtime (1-2 days)",
+    durationDowntime: "20-40 min · Minimal downtime (1-2 days)",
     name: "Pico Laser",
     category: "Lasers",
     image: "/images/treatments/pico-laser.jpg",
     device: "PicoSure",
     summary:
       "A picosecond laser used for pigmentation, dull skin tone and tattoo removal, suited to a range of Asian skin tones.",
+    // T-01 "In brief" — leads with the page's key distinction inside 60 words
+    // (pico is a category, wavelength decides suitability), not a definition.
     leadAnswer:
-      "Pico laser is a picosecond-pulse laser treatment that delivers very short bursts of energy to the skin. It is commonly used for pigmentation concerns, uneven skin tone and tattoo removal. Suitability and the number of sessions vary between individuals; a consultation is required to assess whether it is appropriate for you.",
-    typicalSessions: "4-6",
-    areas: ["Face", "Neck", "Hands"],
-    suitableFor: [
-      "Pigmentation, dullness or uneven tone",
-      "Post-acne marks and enlarged pores",
-      "Selected tattoo inks",
-      "A range of Asian skin tones",
+      "Pico laser is a category of laser rather than a single machine. Every pico device fires pulses measured in trillionths of a second, but they differ in wavelength, and wavelength is what determines which pigment, which ink colours and which skin tones a device is appropriate for. Kaiteki uses more than one pico platform for that reason. A doctor examines your skin and decides which, if any, is suitable before anything is booked.",
+
+    // T-02 — process facts only. A time-to-result here would be an outcome
+    // claim (R-01) and is medically wrong for melasma regardless.
+    facts: [
+      { value: "2 pico platforms", label: "Matched to your skin type and pigment at consultation" },
+      { value: "20–40 minutes", label: "Typical facial pigment appointment, including preparation" },
+      { value: "Assessment first", label: "Your first visit is a doctor consultation, not a treatment" },
     ],
-    notSuitableFor: [
-      "Keloid or hypertrophic scar tendency",
-      "Recent deep peels or dermabrasion",
-      "Active skin infection in the area",
-      "Pregnancy or breastfeeding",
-      "Recently tanned or sun-exposed skin",
-      "Certain medications — flagged at consultation",
+
+    // T-03 — seven is the ceiling, not the target.
+    jumpNav: [
+      { id: "what-is-pico-laser", label: "What it is" },
+      { id: "what-it-treats", label: "What it treats" },
+      { id: "which-device", label: "Which device" },
+      { id: "suitability", label: "Suitability" },
+      { id: "after-a-session", label: "After a session" },
+      { id: "risks", label: "Risks & limits" },
+      { id: "sessions-cost", label: "Sessions & cost" },
     ],
-    comparisons: [
-      { name: "Pico laser", bestFor: "Pigment, tone, tattoo", downtime: "Minimal" },
-      { name: "RF microneedling", bestFor: "Texture, scars, pores", downtime: "2-3 days" },
-      { name: "Resurfacing laser", bestFor: "Deep scars, texture", downtime: "5-7 days" },
+
+    // T-06 — routes the deeper query to the concern page that owns it instead
+    // of competing with it. Descriptions are specific to pico laser (R-04).
+    routes: [
+      {
+        title: "Surface pigment",
+        body: "Sun spots, freckles and other benign pigmented marks sitting in the upper skin. These are generally the most predictable pigment to treat and usually need the fewest sessions.",
+        links: [{ href: "/concerns/pigmentation", label: "Read about pigmentation" }],
+      },
+      {
+        title: "Deeper and hormonal pigment",
+        body: "Melasma, and dermal pigment conditions such as naevus of Ota or Hori's naevus. These sit deeper, respond less predictably, and melasma in particular is a long-term condition managed rather than finished.",
+        links: [{ href: "/concerns/pigmentation", label: "Read about pigmentation" }],
+      },
+      {
+        title: "Post-acne marks and tone",
+        body: "Brown marks left behind after spots have settled, along with dull or uneven overall tone and the look of enlarged pores. Active acne is managed medically first; see below.",
+        links: [
+          { href: "/concerns/acne", label: "Read about acne" },
+          { href: "/concerns/enlarged-pores", label: "Enlarged pores" },
+        ],
+      },
+      {
+        title: "Tattoo ink",
+        body: "Black and dark blue inks respond most predictably. Light colours, white and some cosmetic or permanent-makeup pigments can be resistant or behave unpredictably, so tattoos are assessed individually.",
+        links: [{ href: "/concerns/tattoo-removal", label: "Read about tattoo removal" }],
+      },
     ],
-    preCare: [
-      "Avoid ablative laser treatments in the 4 weeks prior",
-      "Disclose your full medical and skincare history",
-      "Tell your doctor about any history of cold sores (herpes simplex)",
-      "Avoid deliberate tanning for 2 weeks beforehand",
+    routesNote:
+      "An honest note on acne. Pico laser addresses the marks acne leaves behind, not acne itself. If you have active inflammatory spots, those are usually managed medically first, and pigment work follows once the skin has settled. A doctor will tell you if that is the sequence in your case.",
+
+    // T-07 — a factual difference in energy delivery, never a ranking (R-02).
+    variantModule: {
+      heading: "Which pico device, and why it matters",
+      intro:
+        "Both platforms below fire picosecond pulses, but their primary wavelengths differ, and wavelength changes how strongly the pulse is absorbed by melanin. That is a factual difference in how each device delivers energy, not a ranking. Which one suits you, if any, is decided by your doctor after examining your skin.",
+      items: [
+        {
+          eyebrow: "755nm · Cynosure",
+          title: "PicoSure",
+          body: "An alexandrite-wavelength platform. 755nm is absorbed strongly by melanin, which is useful for certain pigment and ink colours but makes skin tone a larger factor in the settings chosen. The manufacturer limits some indications by Fitzpatrick skin type.",
+          href: "/technology/picosure",
+          hrefLabel: "About PicoSure",
+        },
+        {
+          eyebrow: "1064nm · Fotona",
+          title: "Fotona PQX (StarWalker)",
+          body: "Built around the longer 1064nm Nd:YAG wavelength, which interacts less with surface melanin and travels deeper. Often the platform of choice where skin tone or depth of pigment makes a 755nm pass less appropriate.",
+          href: "/technology/fotona-pqx",
+          hrefLabel: "About Fotona PQX",
+        },
+      ],
+      note: "This is the reason Kaiteki runs more than one pico platform. A clinic with a single device can only offer that device's wavelength; having more than one means the device is matched to your skin rather than your skin being matched to the device.",
+    },
+
+    // T-08 — placed at the point of maximum unanswered question.
+    ctaMid: {
+      heading: "Not sure which applies to you?",
+      body: "A doctor can look at your skin, tell you which type of pigment you have, and say honestly whether a pico laser is the right tool for it. Free consultation, no obligation.",
+    },
+
+    // T-09
+    avoidIf: [
+      { lead: "Pregnancy or breastfeeding.", body: "Treatment is generally deferred." },
+      {
+        lead: "Recently tanned or sunburnt skin.",
+        body: "This raises the risk of an uneven response and of pigment change afterwards.",
+      },
+      {
+        lead: "Active infection, inflammation or open skin",
+        body: "in the area to be treated.",
+      },
+      { lead: "A history of keloid or hypertrophic scarring.", body: "" },
+      {
+        lead: "Medications that increase light sensitivity,",
+        body: "including oral isotretinoin. Bring your current list rather than trying to recall it.",
+      },
+      { lead: "Recent lasers, peels or other procedures", body: "on the same area." },
     ],
-    postCare: [
-      "Avoid prolonged sun exposure for 7-10 days and apply sunscreen daily",
-      "Use a gentle cleanser and moisturiser",
-      "Avoid alcohol-based products and retinol until your skin has settled",
-      "Avoid facials for at least 2 days",
-      "Mild redness or peeling, if it occurs, usually settles within 1-2 days",
+    bringToConsult:
+      "Bring your full medical, medication and skincare history to the consultation, including any previous laser or peel treatments and any tendency to darken after a spot or a scratch. That last detail changes the settings a doctor will choose.",
+
+    // T-10 — step 1 states the first visit is not a treatment.
+    sessionSteps: [
+      {
+        title: "Consultation and skin assessment",
+        body: "Your first visit is a doctor consultation, not a treatment. The doctor examines the area, takes your history, and explains whether a pico laser is appropriate. Sometimes the answer is a different treatment, or waiting.",
+      },
+      {
+        title: "Test area where appropriate",
+        body: "A small patch may be treated first, particularly for deeper pigment or for tattoo ink of unknown composition, and reviewed before a full session is booked.",
+      },
+      {
+        title: "Preparation",
+        body: "The skin is cleansed and eye shields are fitted. Topical numbing may be applied where the plan calls for it, most often for sensitive areas and tattoo work.",
+      },
+      {
+        title: "The treatment pass",
+        body: "The handpiece is passed over the area in overlapping passes. Most people describe brief snapping or hot-pinprick sensations rather than sustained pain. Treated pigment may look temporarily darker or greyish straight away, which is expected.",
+      },
+      {
+        title: "Afterwards",
+        body: "A cooling or soothing step, sunscreen, and aftercare instructions specific to the area treated. A facial pigment appointment is usually around 20 to 40 minutes including preparation; tattoo work depends on size.",
+      },
     ],
-    related: ["microneedling", "skin-booster"],
-    reviewedBy: "dr-chin-wei-horng",
+
+    // T-11 — physical healing timeframes only, never a timeframe to a result.
+    afterSession: {
+      intro:
+        "Downtime after a pico laser is usually short, but “short” is not “none”, and what you see in the first fortnight is part of the process rather than a problem. This varies with the intensity used and between individuals.",
+      bands: [
+        {
+          title: "The first few hours",
+          body: "Mild redness, warmth and sometimes slight swelling. Most people go back to their day.",
+        },
+        {
+          title: "Day one to two",
+          body: "Redness typically settles. Where pigment was targeted directly, treated spots often look darker than before. This is expected and not a sign the treatment has gone wrong.",
+        },
+        {
+          title: "Day three to roughly two weeks",
+          body: "Small darkened flecks or fine crusting may appear and then flake away on their own. Leave them alone; picking is the most common cause of a mark that outlasts the treatment.",
+        },
+        {
+          title: "Between sessions",
+          body: "Sessions are spaced a few weeks apart to let the skin clear treated pigment before the next pass.",
+        },
+      ],
+      aftercare:
+        "Aftercare that actually matters: daily broad-spectrum sunscreen and genuine sun avoidance, because sun exposure between sessions is one of the main reasons pigment returns; gentle cleansing and moisturising; and pausing actives such as retinoids and acids until your doctor confirms it is fine to resume.",
+    },
+
+    // T-12 — the pigment-change note is mandatory on energy-based treatments (R-05).
+    risks: {
+      intro:
+        "As with any medical laser procedure, a pico laser carries risks. These are explained to you in full at consultation, before anything is booked.",
+      common:
+        "Redness, warmth, mild swelling, pinpoint bruising and small crusts that flake away over one to two weeks.",
+      lessCommon:
+        "Darkening of the treated skin after treatment (post-inflammatory hyperpigmentation), lightening of the treated skin, blistering and, rarely, scarring.",
+      pigmentNote:
+        "Post-inflammatory hyperpigmentation is the risk that matters most in the skin tones common here. Skin with more melanin responds to injury by producing more pigment, which means an over-aggressive laser setting can leave a darker mark than the one it was aimed at. This is why a doctor may choose lower energy, a longer interval between sessions, a test patch, or a different wavelength than you were expecting, and why a plan that looks slower is often the safer one. It is a deliberate trade-off, not caution for its own sake.",
+      cannotDo: [
+        "It does not stop new pigment forming. Without daily sun protection, sun-related marks return, and melasma in particular fluctuates with sun exposure and hormones, so it is managed long-term rather than finished in a fixed course.",
+        "It does not treat active acne. Marks left behind, yes; the inflammatory condition itself is managed medically.",
+        "It cannot guarantee complete clearance of a tattoo. Ink composition is rarely known with certainty, and some colours respond poorly.",
+        "It does not lift or tighten skin. That is a different category of treatment entirely.",
+      ],
+      disclose:
+        "Tell your doctor if you are or may be pregnant or breastfeeding, are taking any medication, have a history of cold sores or keloid scarring, have had recent procedures on the area, or have been in strong sun recently.",
+    },
+
+    // T-13 — factors only, no figures (R-03). A list so it can become a price
+    // table later without a rebuild.
+    costFactors: {
+      intro:
+        "There is no single course length that fits everyone, and Kaiteki does not quote prices online. The figure you are given at consultation reflects the plan actually assessed for you rather than an average. What moves it:",
+      factors: [
+        "Type and depth of pigment. Surface sun spots generally need fewer visits than deeper dermal pigment.",
+        "Size of the area treated, whether a few spots, a full face, or a body area.",
+        "Which device and settings your doctor selects for your skin type.",
+        "For tattoos: ink colours, density, how many layers were applied, the age of the tattoo and where it sits on the body.",
+        "How your skin responds between sessions, which is reviewed each visit.",
+        "Whether pico work is combined with other steps in a wider plan.",
+      ],
+      outro:
+        "Facial pigment is commonly planned as a course of several sessions spaced a few weeks apart, with the plan reviewed as it goes. Some conditions, melasma among them, are managed on an ongoing basis rather than completed in a fixed number of visits.",
+    },
+
+    // T-17 — each reason is specific to what pico laser does NOT do.
+    related: ["microneedling", "vascular-pigment-laser", "resurfacing-laser"],
+    relatedReasons: {
+      microneedling:
+        "Considered where the concern is depressed acne scarring or texture rather than pigment.",
+      "vascular-pigment-laser":
+        "Used where redness and visible vessels sit alongside the pigment, which a pico laser does not address.",
+      "resurfacing-laser":
+        "A fractional CO2 approach, considered for deeper scarring and significant texture change.",
+    },
+
+    reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-06-20",
     kkliu: "KKLIU 0000/2026 (sample)",
     kkliuExpiry: "2026-12-31",
-    seoTitle: "Pico Laser Malaysia | Pigmentation & Tattoo | Kaiteki",
+    // Title drops "Tattoo" so /concerns/tattoo-removal owns tattoo queries (OV-00c).
+    seoTitle: "Pico Laser Treatment Malaysia | Pigmentation | Kaiteki",
     seoDescription:
-      "Pico laser treatment for pigmentation, dull skin tone and tattoo removal in Malaysia. Book a free consultation with a Kaiteki doctor to assess suitability.",
+      "Pico laser at Kaiteki uses picosecond pulses for pigmentation, uneven tone and tattoo ink. A doctor assesses which device and settings suit your skin.",
     sections: [
       {
+        // T-04 — para 2 is what earns the snippet / AI-answer citation.
+        heading: "What is Pico laser?",
+        body: [
+          "“Pico” refers to the length of the laser pulse, not to a brand. A picosecond is a trillionth of a second, and pulses that short deliver their energy faster than the surrounding skin can heat up. The effect on pigment is therefore largely photomechanical (a rapid shockwave that fractures pigment clusters) rather than thermal.",
+          "That matters because heat is what tends to provoke pigment problems in the skin tones common in Malaysia. It is the reason picosecond devices are widely used here for pigment work. It is not, however, a guarantee of suitability: what actually determines whether a pico laser is appropriate for you is the type and depth of your pigment, your skin type, and your history of marking after inflammation. A doctor assesses all three before recommending anything.",
+        ],
+      },
+      {
+        // T-05
         heading: "How it works",
         body: [
-          "Pico laser delivers energy in picoseconds — trillionths of a second — so pigment particles shatter into fragments the body clears naturally, with less heat than older laser types. Settings are tailored to your skin tone and concern by the treating doctor.",
-        ],
-        list: [
-          "Uneven pigmentation and dull-looking skin tone",
-          "Sun-related and post-inflammatory marks",
-          "Selected tattoo inks (as tattoo removal)",
-          "Overall skin-tone refinement as part of a plan",
-        ],
-      },
-      {
-        heading: "The session at Kaiteki",
-        body: [
-          "A typical visit begins with a consultation and skin assessment, followed by a short session with a cooling step to finish. A course of several sessions spaced a few weeks apart is common, though your doctor will confirm what to expect for your skin.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
-        body: [
-          "As with any medical procedure, Pico laser carries risks, which are explained during consultation. Temporary effects can include redness, swelling or changes in pigmentation. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The number of sessions and overall cost depend on the concern being addressed, the area treated and your individual response. Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
+          "The pulse is absorbed by pigment far more strongly than by the surrounding skin. Because it arrives and ends in trillionths of a second, the pigment particle takes the energy as a mechanical shock and breaks into smaller fragments. Those fragments are then cleared gradually by the body's own immune cells over the weeks that follow, which is why the visible change after a pico session develops over time rather than appearing on the day.",
+          "Delivered at lower energy with a diffractive lens, the same pulse creates small zones of controlled injury in the upper skin without breaking the surface, which is used as a skin-renewal pass for texture and tone rather than for a specific mark. Wavelength, energy, spot size and lens are all selected by the treating doctor for your skin and your concern; they are not fixed settings.",
         ],
       },
     ],
+    // T-16 — 10 at Full depth, 60–90 words each. Required mix: device
+    // comparison, pain, session count, post-session timeline, expectations,
+    // local skin tones, cost-without-a-price, then practical.
     faqs: [
       {
-        q: "Is Pico laser painful?",
-        a: "Most people describe a mild, brief sensation during the pulses. Comfort varies between individuals, and your doctor can discuss options to keep the session comfortable. Any discomfort is typically short-lived.",
+        q: "What is the difference between PicoSure and Fotona PQX?",
+        a: "Both are picosecond lasers, but their primary wavelengths differ. PicoSure's main wavelength is 755nm, which is absorbed strongly by melanin and is useful for certain pigment and ink colours, though it makes skin tone a bigger factor in the settings chosen. Fotona PQX is built around the longer 1064nm wavelength, which interacts less with surface melanin and travels deeper. Your doctor may use one, the other, or both across a plan, decided after examining your skin.",
       },
       {
-        q: "How many Pico laser sessions will I need?",
-        a: "It varies. A course of several sessions spaced a few weeks apart is common, but the plan depends on your concern and how your skin responds. Your doctor will outline a realistic plan at consultation.",
+        q: "Does Pico laser hurt?",
+        a: "Most people describe brief snapping or hot-pinprick sensations during the pulses rather than sustained pain, and picosecond pulses are generally reported as more tolerable than older longer-pulse lasers. Comfort varies between individuals and with the area treated. Topical numbing can be applied where your doctor considers it appropriate, particularly for sensitive areas and tattoo work. Tell the team during the session if anything is uncomfortable, as settings and pacing can be adjusted.",
       },
       {
-        q: "Is Pico laser suitable for darker Asian skin tones?",
-        a: "Pico laser is used across a range of skin tones, but suitability is individual. A doctor assesses your skin type and history first, as some concerns and skin types need particular care to reduce the risk of pigment changes.",
+        q: "How many sessions will I need?",
+        a: "It depends on the type and depth of pigment, the size of the area, and how your skin responds between visits. Surface sun spots generally need fewer sessions than deeper dermal pigment or a dense tattoo. Facial pigment is commonly planned as a course of several sessions spaced a few weeks apart, reviewed as it goes. Some conditions, melasma among them, are managed on an ongoing basis rather than completed in a fixed number of visits.",
       },
       {
-        q: "When will I see results?",
-        a: "Results develop gradually over weeks as the skin responds, and they vary between individuals. Your doctor will explain what is realistic for your skin and concern.",
+        q: "What happens in the days after a session?",
+        a: "Expect mild redness and warmth for a few hours, sometimes with slight swelling. Where pigment was targeted directly, the treated spots often look darker over the first day or two, which is expected. Small darkened flecks or fine crusting may then appear and flake away on their own over roughly one to two weeks. Leave them alone rather than picking, keep skincare gentle, and use sunscreen daily.",
       },
       {
-        q: "Is Pico laser permanent?",
-        a: "Pico laser addresses existing pigment and marks, but it does not prevent new pigmentation from forming — ongoing sun protection and skincare help maintain results. Your doctor can advise on a long-term plan.",
+        q: "Will I see a difference after one session?",
+        a: "It varies, and a single session is not a reliable guide to how a course will go. Because the fragmented pigment is cleared gradually by your own body, change develops over the weeks after each session rather than on the day. Deeper pigment typically needs more sessions than surface marks. Your doctor will tell you what is realistic for your particular pigment before you commit to anything, and will review progress at each visit.",
       },
       {
-        q: "Will Pico laser thin my skin?",
-        a: "No. Pico laser works through short photomechanical pulses rather than sustained heat, and is not associated with skin thinning when performed appropriately by a trained doctor.",
+        q: "Is Pico laser suitable for darker Malaysian skin tones?",
+        a: "Picosecond lasers are used across a wide range of skin tones, but skin with more melanin carries a higher risk of darkening after treatment, so settings, wavelength and intervals are chosen more conservatively and a test patch is often used. A 755nm wavelength interacts more with melanin than a 1064nm one, which is one reason Kaiteki runs more than one platform. Your doctor assesses your skin type and marking history and will say honestly if another approach suits you better.",
       },
       {
-        q: "Can I wear makeup after a session?",
-        a: "Most people can resume light makeup once any redness has settled, often the next day, but this varies by individual. Your doctor will confirm what is appropriate for your skin.",
+        q: "Can Pico laser treat melasma?",
+        a: "Melasma is sometimes addressed with picosecond lasers, but it needs particular caution. It is a chronic condition influenced by sun exposure and hormones, it can recur, and over-aggressive treatment can make it worse rather than better. That is why melasma is usually managed as an ongoing plan combining sun protection, topical care and conservative in-clinic settings rather than treated as a fixed course. A doctor assesses whether any laser is appropriate for your melasma at all.",
       },
       {
-        q: "How soon can I get a facial after Pico laser?",
-        a: "Facials are generally avoided for at least 2 days afterwards to let the skin settle. Your doctor will advise on timing specific to your treatment.",
+        q: "Can a tattoo be completely removed?",
+        a: "It cannot be predicted before assessment. Black and dark blue inks generally respond most predictably, while light colours, white, and some cosmetic or permanent-makeup pigments can be resistant or behave unpredictably. Ink composition is rarely known with certainty, so a doctor assesses the tattoo directly and may treat a small test area first. Size, depth, age and body location all affect how a tattoo responds and how many sessions it needs.",
       },
       {
-        q: "What's the difference between Pico laser and Q-switch lasers?",
-        a: "Pico laser delivers pulses in picoseconds (trillionths of a second), shorter than the nanosecond pulses of Q-switched lasers. This can mean a more mechanical, less heat-based effect on pigment, though suitability for your concern is assessed individually.",
+        q: "How much does Pico laser cost in Malaysia?",
+        a: "Kaiteki does not quote prices online, because the cost depends on what is actually being treated: the type and depth of pigment, the size of the area, the device and settings chosen, the number of sessions, and whether pico work forms part of a wider plan. For tattoos, ink colours and density matter too. Pricing is discussed at consultation so the figure reflects your assessed plan rather than an average.",
       },
       {
-        q: "Is Pico laser suitable for tattoo removal?",
-        a: "Pico laser is used for certain tattoo inks and colours, though response varies by ink type, colour and how the tattoo was applied. A doctor will assess your tattoo at consultation to discuss what may realistically be achieved.",
+        q: "Can I wear makeup or go back to work afterwards?",
+        a: "Most people return to their usual day straight after a facial pigment session. Redness typically settles within a few hours to a day or two. Your doctor will advise when makeup can be reapplied, which is usually once any redness has settled and always over intact skin, so avoid applying it over crusting. Daily sunscreen matters more than makeup timing, since sun exposure between sessions is a common reason pigment returns.",
       },
     ],
   },
@@ -149,6 +311,27 @@ export const treatments: Treatment[] = [
     summary: "Focused ultrasound used for non-surgical skin-lifting and tightening concerns.",
     leadAnswer:
       "HIFU (high-intensity focused ultrasound) is a non-surgical treatment that delivers focused ultrasound energy to deeper skin layers. It is commonly used for skin-lifting and tightening concerns. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.",
+
+    // Second verified page in config/treatments.json (archetype ED, "full").
+    // Only the non-clinical v2 blocks are filled here: T-09 to T-14 need copy
+    // authored and signed off by Dr Chuah, not inferred from the existing prose.
+    facts: [
+      { value: "2 ultrasound platforms", label: "Selected for your face and the depth being treated" },
+      { value: "30–60 minutes", label: "Typical face and neck appointment, including preparation" },
+      { value: "Assessment first", label: "Your first visit is a doctor consultation, not a treatment" },
+    ],
+    jumpNav: [
+      { id: "what-is-hifu", label: "What it is" },
+      { id: "how-it-works", label: "How it works" },
+      { id: "devices-technology-hifu-and-ultherapy", label: "HIFU vs Ultherapy" },
+      { id: "what-it-may-help-address", label: "What it addresses" },
+      { id: "devices", label: "Devices" },
+      { id: "faq", label: "FAQ" },
+    ],
+    ctaMid: {
+      heading: "Not sure whether lifting is what your face needs?",
+      body: "Laxity, volume loss and skin quality look similar in the mirror and are treated differently. A doctor can tell you which one you are actually seeing, and whether HIFU addresses it. Free consultation, no obligation.",
+    },
     related: ["ultherapy", "skin-booster", "botulinum-toxin"],
     reviewedBy: "dr-yvonne-chuah",
     lastReviewed: "2026-06-18",
@@ -872,6 +1055,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "10-20 min · No downtime",
     name: "Botulinum Toxin",
     category: "Injectables",
+    image: "/images/treatments/botulinum-toxin.jpg",
     typicalSessions: "1 per cycle",
     summary:
       "A doctor-administered prescription injectable used to relax targeted muscles or reduce sweat-gland activity.",
