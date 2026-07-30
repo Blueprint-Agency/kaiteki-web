@@ -1,0 +1,253 @@
+{
+  "templateVersion": "1.0",
+  "referenceImplementation": "acne",
+  "blocks": [
+    "01-hero",
+    "02-facts",
+    "02b-jumpnav",
+    "03-what",
+    "04-causes",
+    "05-variant",
+    "06-location",
+    "07-seedoctor",
+    "08-midcta",
+    "09-treatments",
+    "10-compare",
+    "11-beforeafter",
+    "12-firstvisit",
+    "13-risks",
+    "14-cost",
+    "15-technology",
+    "16-faq",
+    "17-related",
+    "18-footer"
+  ],
+  "depthRules": {
+    "full": {
+      "minTreatments": 4,
+      "faqCount": 12,
+      "omitBlocks": []
+    },
+    "lite": {
+      "maxTreatments": 3,
+      "faqCount": 8,
+      "omitBlocks": [
+        "10-compare"
+      ]
+    }
+  },
+  "archetypes": {
+    "A": {
+      "name": "multi-type-condition",
+      "block04": "causes",
+      "block05": "type-selector-3tab",
+      "block06": "location-grid"
+    },
+    "B": {
+      "name": "myth-correction",
+      "block04": "contributing-factors",
+      "block05": "works-vs-doesnt",
+      "block06": null
+    },
+    "C": {
+      "name": "procedure-defined",
+      "block04": "what-affects-sessions",
+      "block05": "response-table",
+      "block06": "body-location"
+    },
+    "D": {
+      "name": "single-treatment-medical",
+      "block04": "causes",
+      "block05": "primary-vs-secondary",
+      "block06": "location-grid",
+      "expandBlock07": true
+    },
+    "E": {
+      "name": "goal-defined",
+      "block04": "what-influences",
+      "block05": "skin-volume-muscle",
+      "block06": "surgical-vs-nonsurgical"
+    }
+  },
+  "concerns": [
+    {
+      "slug": "acne",
+      "category": "Skin",
+      "archetype": "A",
+      "depth": "full",
+      "treatments": 5,
+      "technologies": 8,
+      "reviewer": "Dr Jessie Lim Jia Min",
+      "lastReviewed": "2026-06-22",
+      "status": "reference"
+    },
+    {
+      "slug": "pigmentation",
+      "category": "Skin",
+      "archetype": "A",
+      "depth": "full",
+      "treatments": 5,
+      "technologies": 13,
+      "reviewer": "Dr Chew Yuhhui",
+      "lastReviewed": "2026-06-20",
+      "status": "pending"
+    },
+    {
+      "slug": "enlarged-pores",
+      "category": "Skin",
+      "archetype": "B",
+      "depth": "full",
+      "treatments": 5,
+      "technologies": 11,
+      "reviewer": "Dr Yeong Bin",
+      "lastReviewed": "2026-06-18",
+      "status": "pending"
+    },
+    {
+      "slug": "aging",
+      "category": "Skin",
+      "archetype": "A",
+      "depth": "full",
+      "treatments": 7,
+      "technologies": 17,
+      "reviewer": "Dr Jacqueline Tan",
+      "lastReviewed": "2026-06-10",
+      "variantNote": "use stages not types",
+      "status": "pending"
+    },
+    {
+      "slug": "tattoo-removal",
+      "category": "Skin",
+      "archetype": "C",
+      "depth": "lite",
+      "treatments": 1,
+      "technologies": 2,
+      "reviewer": "Dr Calvin Tan",
+      "lastReviewed": "2026-07-13",
+      "status": "pending"
+    },
+    {
+      "slug": "birthmark",
+      "category": "Skin",
+      "archetype": "A",
+      "depth": "lite",
+      "treatments": 2,
+      "technologies": 5,
+      "reviewer": "Dr Lucas Chew",
+      "lastReviewed": "2026-07-13",
+      "variantNote": "no causes block; add change-monitoring to 07",
+      "status": "pending"
+    },
+    {
+      "slug": "vascular-lesions",
+      "category": "Skin",
+      "archetype": "A",
+      "depth": "lite",
+      "treatments": 1,
+      "technologies": 3,
+      "reviewer": "Dr Jade",
+      "lastReviewed": "2026-07-13",
+      "flags": [
+        "reviewer-name-incomplete",
+        "split-types-from-causes"
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "excessive-sweating",
+      "category": "Skin",
+      "archetype": "D",
+      "depth": "lite",
+      "treatments": 1,
+      "technologies": 1,
+      "reviewer": "Dr Teresa Tan",
+      "lastReviewed": "2026-07-13",
+      "flags": [
+        "category-review",
+        "names-prescription-medicine"
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "fine-lines-wrinkles",
+      "category": "Face",
+      "archetype": "A",
+      "depth": "full",
+      "treatments": 7,
+      "technologies": 17,
+      "reviewer": "Dr William Yap",
+      "lastReviewed": "2026-06-16",
+      "flags": [
+        "names-prescription-medicine",
+        "overlap-cluster-aging"
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "face-contouring",
+      "category": "Face",
+      "archetype": "E",
+      "depth": "full",
+      "treatments": 5,
+      "technologies": 12,
+      "reviewer": "Dr Jeremy Low Jia Wei",
+      "lastReviewed": "2026-06-12",
+      "flags": [
+        "names-prescription-medicine",
+        "overlap-cluster-aging"
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "face-lifting",
+      "category": "Face",
+      "archetype": "E",
+      "depth": "full",
+      "treatments": 6,
+      "technologies": 12,
+      "reviewer": "Dr Chang Chee Seong",
+      "lastReviewed": "2026-06-12",
+      "flags": [
+        "overlap-cluster-aging"
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "dark-eye-circles",
+      "category": "Eyes",
+      "archetype": "A",
+      "depth": "full",
+      "treatments": 4,
+      "technologies": 15,
+      "reviewer": "Dr Lim Xiao Chien",
+      "lastReviewed": "2026-06-14",
+      "variantNote": "4 types: pigment/vascular/structural/mixed",
+      "status": "pending"
+    },
+    {
+      "slug": "body-slimming",
+      "category": "Hair & Body",
+      "archetype": "B",
+      "depth": "lite",
+      "treatments": 3,
+      "technologies": 4,
+      "reviewer": "Dr Joaan Kong",
+      "lastReviewed": "2026-06-08",
+      "status": "pending"
+    },
+    {
+      "slug": "hair-loss",
+      "category": "Hair & Body",
+      "archetype": "D",
+      "depth": "lite",
+      "treatments": 1,
+      "technologies": 0,
+      "reviewer": "Dr Tim Chua",
+      "lastReviewed": "2026-06-06",
+      "flags": [
+        "no-technology-section"
+      ],
+      "status": "pending"
+    }
+  ]
+}

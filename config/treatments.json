@@ -1,0 +1,434 @@
+{
+  "templateVersion": "2.0",
+  "generated": "2026-07-28",
+  "market": {
+    "country": "MY",
+    "regulator": "MOH / Medicine Advertisements Board",
+    "publishPrices": false,
+    "patientImages": false,
+    "manufacturerImages": true
+  },
+  "blocks": [
+    {
+      "id": "T-01",
+      "name": "hero",
+      "scope": "universal"
+    },
+    {
+      "id": "T-02",
+      "name": "factStrip",
+      "scope": "universal",
+      "factCount": 3
+    },
+    {
+      "id": "T-03",
+      "name": "jumpNav",
+      "scope": "universal",
+      "maxItems": 7
+    },
+    {
+      "id": "T-04",
+      "name": "whatIsIt",
+      "scope": "universal"
+    },
+    {
+      "id": "T-05",
+      "name": "howItWorks",
+      "scope": "universal"
+    },
+    {
+      "id": "T-06",
+      "name": "routingModule",
+      "scope": "variant",
+      "requiresConcernLinks": true
+    },
+    {
+      "id": "T-07",
+      "name": "variantModule",
+      "scope": "variant",
+      "fullOnly": true
+    },
+    {
+      "id": "T-08",
+      "name": "ctaMid",
+      "scope": "universal",
+      "headingPerArchetype": true
+    },
+    {
+      "id": "T-09",
+      "name": "suitability",
+      "scope": "universal"
+    },
+    {
+      "id": "T-10",
+      "name": "session",
+      "scope": "universal",
+      "steps": 5
+    },
+    {
+      "id": "T-11",
+      "name": "afterSession",
+      "scope": "variant"
+    },
+    {
+      "id": "T-12",
+      "name": "risksAndLimits",
+      "scope": "universal",
+      "minCannotDo": 3
+    },
+    {
+      "id": "T-13",
+      "name": "costFactors",
+      "scope": "universal",
+      "allowFigures": false
+    },
+    {
+      "id": "T-14",
+      "name": "whatTheseDo",
+      "scope": "universal",
+      "fullOnly": true,
+      "manufacturerImagesOnly": true
+    },
+    {
+      "id": "T-15",
+      "name": "devices",
+      "scope": "universal"
+    },
+    {
+      "id": "T-16",
+      "name": "faq",
+      "scope": "universal"
+    },
+    {
+      "id": "T-17",
+      "name": "whereNext",
+      "scope": "universal"
+    },
+    {
+      "id": "T-18",
+      "name": "ctaBottomLocations",
+      "scope": "universal",
+      "listAllLocations": true
+    },
+    {
+      "id": "T-19",
+      "name": "reviewerDisclaimer",
+      "scope": "universal"
+    }
+  ],
+  "depthRules": {
+    "full": {
+      "blocks": 19,
+      "faq": 10,
+      "when": "devices >= 2 || concerns >= 3"
+    },
+    "lite": {
+      "blocks": 17,
+      "faq": 8,
+      "omit": [
+        "T-07",
+        "T-14"
+      ]
+    }
+  },
+  "archetypes": {
+    "ED": {
+      "label": "Energy / device",
+      "T-06": "byConcernTypeAndDepth",
+      "T-07": "deviceWavelengthComparison",
+      "T-11": "hours|d1-2|d3-14|betweenSessions"
+    },
+    "BD": {
+      "label": "Body / contouring",
+      "T-06": "byBodyAreaAndWhatItIsNot",
+      "T-07": "fatMuscleOrSkin",
+      "T-11": "sameDay|week1|w4-12"
+    },
+    "IN": {
+      "label": "Injectable",
+      "T-06": "byWhatIsSupported",
+      "T-07": "productClassAndRegulation",
+      "T-11": "injectionSite|d1-3|review",
+      "complianceFlag": "brandNaming"
+    },
+    "RG": {
+      "label": "Regenerative / adjunct",
+      "T-06": "byWhatItAccompanies",
+      "T-07": "evidenceStatus",
+      "T-11": "sameDay|week1|cadence",
+      "complianceFlag": "efficacyClaims"
+    },
+    "MF": {
+      "label": "Maintenance / facial",
+      "T-06": "bySkinState",
+      "T-07": "protocolSteps",
+      "T-11": "sameDay"
+    },
+    "PR": {
+      "label": "Procedural",
+      "T-06": "byStructuralChange",
+      "T-07": "procedureAndReversibility",
+      "T-11": "d0|week1|w2-8",
+      "complianceFlag": "surgicalReview"
+    }
+  },
+  "treatments": [
+    {
+      "slug": "pico-laser",
+      "category": "Lasers",
+      "archetype": "ED",
+      "depth": "full",
+      "devices": [
+        "picosure",
+        "fotona-pqx",
+        "picocare"
+      ],
+      "concerns": [
+        "pigmentation",
+        "acne",
+        "enlarged-pores",
+        "tattoo-removal",
+        "birthmark"
+      ],
+      "reviewer": "Dr Chew Yuhhui",
+      "lastReviewed": "2026-06-20",
+      "nextReview": "2027-06-20",
+      "redirectFrom": [
+        "/pico-laser-treatment.html"
+      ],
+      "variantNote": "T-07 must compare 755nm vs 1064nm; restored from legacy FAQ",
+      "flags": [
+        "TB-01",
+        "TB-05",
+        "TB-06",
+        "TB-07",
+        "TB-08",
+        "TB-11",
+        "TB-12",
+        "TB-13"
+      ],
+      "verified": true,
+      "status": "rebuild-ready"
+    },
+    {
+      "slug": "hifu",
+      "category": "Lifting & Tightening",
+      "archetype": "ED",
+      "depth": "full",
+      "devices": [
+        "ultracel-q",
+        "lifthera"
+      ],
+      "concerns": [
+        "fine-lines-wrinkles",
+        "face-contouring",
+        "face-lifting",
+        "aging"
+      ],
+      "reviewer": "Dr Yvonne Chuah",
+      "lastReviewed": "2026-06-18",
+      "nextReview": "2027-06-18",
+      "flags": [
+        "TB-01",
+        "TB-09",
+        "TB-11"
+      ],
+      "verified": true,
+      "status": "reference-page"
+    },
+    {
+      "slug": "fotona-4d",
+      "category": "Lasers",
+      "archetype": "ED",
+      "verified": false,
+      "status": "pending-crawl"
+    },
+    {
+      "slug": "vascular-pigment-laser",
+      "category": "Lasers",
+      "archetype": "ED",
+      "verified": false,
+      "flags": [
+        "OV-01"
+      ],
+      "status": "pending-crawl"
+    },
+    {
+      "slug": "resurfacing-laser",
+      "category": "Lasers",
+      "archetype": "ED",
+      "verified": false,
+      "status": "pending-crawl"
+    },
+    {
+      "slug": "ultherapy",
+      "category": "Lifting & Tightening",
+      "archetype": "ED",
+      "verified": false,
+      "flags": [
+        "OV-02"
+      ],
+      "status": "pending-crawl"
+    },
+    {
+      "slug": "radiofrequency",
+      "category": "Lifting & Tightening",
+      "archetype": "ED",
+      "verified": false,
+      "flags": [
+        "OV-03"
+      ],
+      "status": "pending-crawl"
+    },
+    {
+      "slug": "microneedling",
+      "category": "Lifting & Tightening",
+      "archetype": "ED",
+      "verified": false,
+      "flags": [
+        "OV-03",
+        "CAT-01"
+      ],
+      "status": "pending-crawl"
+    },
+    {
+      "slug": "fat-freezing",
+      "category": "Body & Slimming",
+      "archetype": "BD",
+      "verified": false,
+      "status": "pending-crawl"
+    },
+    {
+      "slug": "microwave-contouring",
+      "category": "Body & Slimming",
+      "archetype": "BD",
+      "verified": false,
+      "status": "pending-crawl"
+    },
+    {
+      "slug": "muscle-stimulation",
+      "category": "Body & Slimming",
+      "archetype": "BD",
+      "verified": false,
+      "status": "pending-crawl"
+    },
+    {
+      "slug": "skin-booster",
+      "category": "Injectables",
+      "archetype": "IN",
+      "verified": false,
+      "flags": [
+        "CMP-01"
+      ],
+      "status": "pending-crawl"
+    },
+    {
+      "slug": "bio-stimulator",
+      "category": "Injectables",
+      "archetype": "IN",
+      "verified": false,
+      "flags": [
+        "CMP-01"
+      ],
+      "status": "pending-crawl"
+    },
+    {
+      "slug": "dermal-fillers",
+      "category": "Injectables",
+      "archetype": "IN",
+      "verified": false,
+      "flags": [
+        "CMP-01"
+      ],
+      "status": "pending-crawl"
+    },
+    {
+      "slug": "facial-treatments",
+      "category": "Facials",
+      "archetype": "MF",
+      "verified": false,
+      "status": "pending-crawl"
+    },
+    {
+      "slug": "laser-hair-removal",
+      "category": "Hair Removal",
+      "archetype": "ED",
+      "verified": false,
+      "flags": [
+        "GAP-01"
+      ],
+      "status": "pending-crawl"
+    },
+    {
+      "slug": "exosome-therapy",
+      "category": "Regenerative",
+      "archetype": "RG",
+      "verified": false,
+      "flags": [
+        "CMP-02"
+      ],
+      "status": "pending-crawl"
+    },
+    {
+      "slug": "double-eyelid",
+      "category": "Eyes",
+      "archetype": "PR",
+      "verified": false,
+      "flags": [
+        "CMP-03"
+      ],
+      "status": "pending-crawl"
+    }
+  ],
+  "analytics": [
+    {
+      "event": "jump_nav_click",
+      "params": [
+        "destination"
+      ]
+    },
+    {
+      "event": "cta_click",
+      "params": [
+        "cta_position"
+      ],
+      "values": [
+        "hero",
+        "mid",
+        "cost",
+        "bottom"
+      ],
+      "keyEvent": true
+    },
+    {
+      "event": "scroll_depth",
+      "params": [
+        "percent"
+      ],
+      "values": [
+        25,
+        50,
+        75,
+        100
+      ]
+    },
+    {
+      "event": "faq_open",
+      "params": [
+        "question"
+      ]
+    },
+    {
+      "event": "device_card_click",
+      "params": [
+        "device"
+      ]
+    },
+    {
+      "event": "concern_route_click",
+      "params": [
+        "concern"
+      ]
+    }
+  ]
+}

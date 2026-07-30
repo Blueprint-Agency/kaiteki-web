@@ -4,6 +4,13 @@ import type { Metadata } from "next";
 // 1200×630 branded share card (e.g. public/brand/og-default.jpg) before launch.
 const DEFAULT_OG_IMAGE = "/images/hero/hero-subject.png";
 
+/**
+ * Set NEXT_PUBLIC_NOINDEX=1 on staging. A canonical to production does NOT stop
+ * Google indexing a staging host (spec bugs B-08 / TB-14) — this forces
+ * `noindex, nofollow` site-wide and flips /robots.txt to Disallow: /.
+ */
+export const NOINDEX_SITE = process.env.NEXT_PUBLIC_NOINDEX === "1";
+
 export interface PageMetaInput {
   /** Full <title> (50–60 chars, brand already baked in). Set as-is via title.absolute
    *  so the root layout's "%s | Kaiteki…" template does NOT double-append the brand. */
@@ -39,6 +46,10 @@ export function pageMeta({ title, description, path, image, noindex }: PageMetaI
       description,
       images: [ogImage],
     },
-    ...(noindex ? { robots: { index: false, follow: true } } : {}),
+    ...(NOINDEX_SITE
+      ? { robots: { index: false, follow: false } }
+      : noindex
+        ? { robots: { index: false, follow: true } }
+        : {}),
   };
 }

@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: __dirname,
   },
+  // Dev-only: allow HMR when previewing from another device on the LAN.
+  allowedDevOrigins: ["192.168.101.7"],
   // Modern formats for the warm imagery (docs/02 §2).
   images: {
     formats: ["image/avif", "image/webp"],

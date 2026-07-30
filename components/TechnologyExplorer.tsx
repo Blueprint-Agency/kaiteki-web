@@ -132,7 +132,7 @@ export function TechnologyExplorer() {
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search devices & injectables…"
               aria-label="Search technology by name"
-              className="w-full rounded-full border border-hairline bg-surface py-2.5 pl-11 pr-10 text-sm text-espresso outline-none transition-colors placeholder:text-ink-500 focus:border-mocha"
+              className="w-full appearance-none rounded-full border border-hairline bg-surface py-2.5 pl-11 pr-10 text-sm text-espresso outline-none transition-colors placeholder:text-ink-500 focus:border-mocha [&::-webkit-search-cancel-button]:hidden"
             />
             {query && (
               <button

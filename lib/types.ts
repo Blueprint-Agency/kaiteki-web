@@ -66,6 +66,62 @@ export interface Treatment {
   preCare?: string[];
   /** Post-treatment care bullets. */
   postCare?: string[];
+  // ── Treatment-template v2 blocks (config/treatments.json). Every field is
+  // optional: a block renders only when its data exists, so switching a block
+  // off is a data edit, not a code edit. Block IDs match the spec.
+
+  /** T-02 fact strip. Exactly three PROCESS facts — never a time-to-result. */
+  facts?: { value: string; label: string }[];
+  /** T-03 jump nav. Max 7. `id` must match a block's anchor id. */
+  jumpNav?: { id: string; label: string }[];
+  /** T-06 routing module: sub-groups of the concern space, each linked out. */
+  routes?: { title: string; body: string; links: { href: string; label: string }[] }[];
+  /** T-06 closing note — one honest limit or sequencing caveat. */
+  routesNote?: string;
+  /** T-07 archetype variant module (Full depth only). Factual difference in
+   *  delivery, never a ranking between devices (rule R-02). */
+  variantModule?: {
+    heading: string;
+    intro: string;
+    items: { eyebrow: string; title: string; body: string; href?: string; hrefLabel?: string }[];
+    note?: string;
+  };
+  /** T-08 mid-page CTA. Heading authored per page, never hardcoded. */
+  ctaMid?: { heading: string; body: string };
+  /** T-09 "who should avoid it" — bold lead-in per bullet. */
+  avoidIf?: { lead: string; body: string }[];
+  /** T-09 closing paragraph on what to bring to consultation. */
+  bringToConsult?: string;
+  /** T-10 five steps. Step 1 must say the first visit is a consultation. */
+  sessionSteps?: { title: string; body: string }[];
+  /** T-11 recovery bands (archetype-specific) — physical healing only. */
+  afterSession?: {
+    intro: string;
+    bands: { title: string; body: string }[];
+    aftercare: string;
+  };
+  /** T-12 risks. `cannotDo` needs at least three real limits (rule R-05), and
+   *  `pigmentNote` is mandatory on every energy-based treatment. */
+  risks?: {
+    intro: string;
+    common: string;
+    lessCommon: string;
+    pigmentNote?: string;
+    cannotDo: string[];
+    disclose: string;
+  };
+  /** T-13 cost factors. Factors only — no figures, no ranges, no "from RM". */
+  costFactors?: { intro: string; factors: string[]; outro?: string };
+  /** T-14 manufacturer images (Full only). Labelled in four places or omitted
+   *  entirely — never shipped half-labelled (rule R-07). */
+  manufacturerImages?: { src: string; alt: string; caption: string }[];
+  /** T-17 one-line reason per related treatment slug, framed around what this
+   *  treatment does NOT do. */
+  relatedReasons?: Record<string, string>;
+  /** T-18 branch slugs offering this treatment. Omit to list all branches;
+   *  never render a "+N more" (rule R-12). */
+  availableAt?: string[];
+
   /** Compliance + review (placeholder values for the sample — docs/05 §9). */
   reviewedBy: string; // doctor slug
   lastReviewed: string; // ISO date
@@ -120,6 +176,14 @@ export interface Concern {
   treatments: string[];
   sections?: Section[];
   faqs?: Faq[];
+  /**
+   * Bottom-CTA overrides (spec bugs B-03/B-04). The default heading assumes
+   * something "causes" the concern and that a doctor assesses "your skin" —
+   * both wrong on tattoo-removal, birthmark, hair-loss and excessive-sweating.
+   */
+  ctaHeading?: string;
+  /** What the doctor actually assesses, e.g. "your scalp". Default "your skin". */
+  ctaAssesses?: string;
   reviewedBy: string;
   lastReviewed: string;
   /** SEO-optimized <title>, 50–60 chars, brand baked in (docs/10). */
