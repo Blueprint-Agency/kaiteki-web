@@ -192,10 +192,23 @@ export default async function BranchPage({
         </section>
       )}
 
+      {/* Concern-first entry point, placed ahead of the treatment index: a
+          visitor who knows their concern but not the treatment can convert
+          without reading the list. Same picker the /concerns hub uses, with the
+          branch carried into the prefilled WhatsApp message. Rendered as a warm
+          band rather than a bordered card so the page stops reading as one box
+          after another. */}
+      <div className="mt-16 sm:mt-20">
+        <ConcernPicker
+          branch={b.name}
+          className="-mx-5 rounded-none border-x-0 bg-tint px-5 sm:mx-0 sm:rounded-2xl sm:border-x sm:px-8"
+        />
+      </div>
+
       {/* Treatments offered — the topical-relevance and internal-linking layer a
           NAP-only branch page has none of. Availability is stated as chain-wide
           rather than per-branch until the clinic supplies a per-branch service
-          list; see the note below the grid. */}
+          list; see the note below the index. */}
       <section className="mt-16 sm:mt-20">
         <SectionHeading
           title={`Treatments at Kaiteki ${b.name}`}
@@ -234,17 +247,6 @@ export default async function BranchPage({
           available at {b.name}, or point you to the nearest branch that has it.
         </p>
       </section>
-
-      {/* Concern-first entry point — the same picker the /concerns hub uses,
-          with the branch carried into the prefilled WhatsApp message. Rendered
-          as a warm band rather than a bordered card so the page stops reading
-          as one box after another. */}
-      <div className="mt-16 sm:mt-20">
-        <ConcernPicker
-          branch={b.name}
-          className="-mx-5 rounded-none border-x-0 bg-tint px-5 sm:mx-0 sm:rounded-2xl sm:border-x sm:px-8"
-        />
-      </div>
 
       {/* Branch FAQ. Every answer is drawn from this branch's own data, so the
           nine pages differ rather than repeating one template — which is the
