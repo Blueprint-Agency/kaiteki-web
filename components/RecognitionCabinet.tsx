@@ -42,7 +42,6 @@ export function RecognitionCabinet() {
             <dl className="mt-9 max-w-md border-t border-hairline">
               {[
                 ["Partners", PARTNERS],
-                ["Awarded", "2023 – 2024"],
                 ["On record", `${awards.length} partner awards`],
               ].map(([label, value]) => (
                 <div
