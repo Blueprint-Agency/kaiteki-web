@@ -17,7 +17,10 @@ export function CardRow({
 }) {
   return (
     <div
-      className={`scrollbar-none -mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-5 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-3 ${className}`}
+      // overflow-y-hidden is load-bearing: per CSS spec a non-visible overflow-x
+      // forces overflow-y to compute to `auto`, so the shelf picked up a few px
+      // of stray vertical scroll on mobile.
+      className={`scrollbar-none -mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto overflow-y-hidden px-5 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-5 sm:overflow-visible sm:overflow-y-visible sm:px-0 sm:pb-0 lg:grid-cols-3 ${className}`}
     >
       {Children.map(children, (child) =>
         child == null ? null : (

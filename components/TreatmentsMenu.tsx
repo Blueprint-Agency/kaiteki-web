@@ -33,7 +33,7 @@ export function TreatmentsMenu() {
         </div>
 
         {/* Mobile: horizontal snap-scroll carousel; sm+ reverts to the 3-col grid. */}
-        <div className="mt-10 -mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:mx-0 sm:grid sm:grid-cols-3 sm:gap-5 sm:overflow-visible sm:px-0 sm:pb-0">
+        <div className="mt-10 -mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto overflow-y-hidden px-4 pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:mx-0 sm:grid sm:grid-cols-3 sm:gap-5 sm:overflow-visible sm:overflow-y-visible sm:px-0 sm:pb-0">
           {six.map((t, i) => (
             <FlipCard
               key={t.slug}

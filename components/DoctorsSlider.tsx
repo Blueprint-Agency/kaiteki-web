@@ -22,7 +22,7 @@ export function DoctorsSlider() {
     <div className="relative">
       <div
         ref={trackRef}
-        className="scrollbar-none flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2"
+        className="scrollbar-none flex snap-x snap-mandatory gap-4 overflow-x-auto overflow-y-hidden scroll-smooth pb-2"
       >
         {doctors.map((d, i) => (
           <DoctorCard
