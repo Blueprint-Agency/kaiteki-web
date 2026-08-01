@@ -6,7 +6,7 @@ import { Container } from "@/components/Container";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Ledger } from "@/components/Ledger";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
-import { ArrowRight, Instagram, LinkedIn } from "@/components/icons";
+import { ArrowRight } from "@/components/icons";
 import { JsonLd } from "@/components/JsonLd";
 import { doctors, doctorBySlug } from "@/content/data/doctors";
 import { branchBySlug } from "@/content/data/branches";
@@ -67,36 +67,6 @@ export default async function DoctorPage({
         <h1 className="mt-2 font-serif text-4xl font-semibold leading-[1.1] tracking-tight text-espresso sm:text-5xl">
           {d.fullName}
         </h1>
-        {(d.instagram || d.linkedin) && (
-          <ul className="mt-5 flex items-center gap-2.5">
-            {d.instagram && (
-              <li>
-                <a
-                  href={d.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`${shortName} on Instagram`}
-                  className="flex size-10 items-center justify-center rounded-full border border-hairline text-mocha transition-colors hover:border-mocha hover:bg-mocha hover:text-white"
-                >
-                  <Instagram size={18} />
-                </a>
-              </li>
-            )}
-            {d.linkedin && (
-              <li>
-                <a
-                  href={d.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`${shortName} on LinkedIn`}
-                  className="flex size-10 items-center justify-center rounded-full border border-hairline text-mocha transition-colors hover:border-mocha hover:bg-mocha hover:text-white"
-                >
-                  <LinkedIn size={18} />
-                </a>
-              </li>
-            )}
-          </ul>
-        )}
       </header>
 
       <div className="mt-10 grid gap-10 lg:grid-cols-[22rem_1fr] lg:gap-16">

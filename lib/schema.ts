@@ -111,9 +111,6 @@ export function physicianNode(d: Doctor, branchNames: string[]) {
       ? { workLocation: branchNames.map((n) => ({ "@type": "MedicalClinic", name: `Kaiteki ${n}` })) }
       : {}),
     worksFor: { "@id": orgId },
-    ...(d.instagram || d.linkedin
-      ? { sameAs: [d.instagram, d.linkedin].filter(Boolean) }
-      : {}),
   };
 }
 

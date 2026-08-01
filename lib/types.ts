@@ -361,10 +361,6 @@ export interface Doctor {
   /** Optional authored bio paragraphs for the profile page. Sourced verbatim
    *  from the clinic's published "Meet the Experts" copy (legacy aboutus.html). */
   bio?: string[];
-  /** Full profile URLs. `instagram` defaults to the clinic account; per-doctor
-   *  personal handles + `linkedin` are a client data dependency (docs/05 §9). */
-  instagram?: string;
-  linkedin?: string;
   /** SEO-optimized <title>, 50–60 chars, brand baked in (docs/10). */
   seoTitle?: string;
   /** SEO meta description, 140–160 chars (docs/10). */
