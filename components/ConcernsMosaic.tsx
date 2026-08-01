@@ -45,7 +45,7 @@ export function ConcernsMosaic() {
         {/* Mobile: horizontal snap-scroll carousel (cards peek at the edge).
             sm+: reverts to the static 3-col grid. -mx/px lets cards bleed to the
             screen edge past the Container padding on mobile only. */}
-        <div className="mt-10 -mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:mx-0 sm:grid sm:grid-cols-3 sm:gap-5 sm:overflow-visible sm:px-0 sm:pb-0">
+        <div className="mt-10 -mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto overflow-y-hidden px-4 pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:mx-0 sm:grid sm:grid-cols-3 sm:gap-5 sm:overflow-visible sm:overflow-y-visible sm:px-0 sm:pb-0">
           {six.map((c, i) => (
             <FlipCard
               key={c.slug}

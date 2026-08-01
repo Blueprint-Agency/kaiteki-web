@@ -31,6 +31,10 @@ jobs:
         with:
           context: .
           push: true
+          # Both must be set as repo variables or production ships `noindex`.
+          build-args: |
+            NEXT_PUBLIC_KKLIU=${{ vars.NEXT_PUBLIC_KKLIU }}
+            NEXT_PUBLIC_COMPANY_NO=${{ vars.NEXT_PUBLIC_COMPANY_NO }}
           tags: |
             ${{ env.IMAGE }}:prod
             ${{ env.IMAGE }}:${{ github.sha }}

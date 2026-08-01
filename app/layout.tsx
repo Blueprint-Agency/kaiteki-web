@@ -72,6 +72,8 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${sans.variable} ${display.variable} ${serif.variable} h-full antialiased`}
     >
+      {/* GTM is the heaviest third party on the page; warm the connection early. */}
+      <link rel="preconnect" href="https://www.googletagmanager.com" />
       {/* Google Tag Manager — same container as the legacy site. GA4/Meta/etc.
           live inside the container, never inline here. */}
       <GoogleTagManager gtmId="GTM-M42CTGL" />

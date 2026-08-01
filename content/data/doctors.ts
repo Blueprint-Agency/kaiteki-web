@@ -2,14 +2,14 @@ import type { Doctor } from "@/lib/types";
 
 // Real names, credentials, roles and photos — sourced from the clinic's own
 // published team page (legacy well-known/aboutus.html "Meet the Experts").
-// MMC registration numbers are NOT shown on that page and are a client data
-// dependency (docs/05 §9) still pending; branch assignment isn't published
-// either, so `branches` is left empty rather than guessed.
+// MMC registration numbers supplied by the client (2026-08). Branch assignment
+// isn't published, so `branches` is left empty rather than guessed.
 export const doctors: Doctor[] = [
   {
     slug: "dr-jessie-lim",
     fullName: "Dr Jessie Lim Jia Min",
     credentials: "MD, LCP Board Certified, MAC, AAAM",
+    mmc: "MMC 64964",
     role: "Founder & CEO, Aesthetic Physician",
     photo: "/images/doctors/dr-jessie-lim.jpg",
     branches: [],
@@ -28,6 +28,7 @@ export const doctors: Doctor[] = [
     slug: "dr-chew-yuhhui",
     fullName: "Dr Chew Yuhhui",
     credentials: "MBBS, LCP Board Certified, MAC, MSAM",
+    mmc: "MMC 68232",
     role: "Co-Founder & Senior Medical Director",
     photo: "/images/doctors/dr-chew-yuhhui.jpg",
     branches: [],
@@ -46,6 +47,7 @@ export const doctors: Doctor[] = [
     slug: "dr-yeong-bin",
     fullName: "Dr Yeong Bin",
     credentials: "MBBS, LCP Board Certified, MAC, MSAM",
+    mmc: "MMC 78238",
     role: "Co-Founder & Senior Medical Director",
     photo: "/images/doctors/dr-yeong-bin.jpg",
     branches: [],
@@ -63,6 +65,7 @@ export const doctors: Doctor[] = [
     slug: "dr-william-yap",
     fullName: "Dr William Yap",
     credentials: "MD, LCP Board Certified, MAC",
+    mmc: "MMC 68812",
     role: "Partner, Aesthetic Physician",
     photo: "/images/doctors/dr-william-yap.jpg",
     branches: [],
@@ -80,6 +83,7 @@ export const doctors: Doctor[] = [
     slug: "dr-lim-xiao-chien",
     fullName: "Dr Lim Xiao Chien",
     credentials: "MBBS, LCP Board Certified, GCFM, MAC",
+    mmc: "MMC 74662",
     role: "Partner, Aesthetic Physician",
     photo: "/images/doctors/dr-lim-xiao-chien.jpg",
     branches: [],
@@ -98,6 +102,7 @@ export const doctors: Doctor[] = [
     slug: "dr-jeremy-low",
     fullName: "Dr Jeremy Low Jia Wei",
     credentials: "MBBS, MAC, LCP Board Certified",
+    mmc: "MMC 91193",
     role: "Partner, Aesthetic Physician",
     photo: "/images/doctors/dr-jeremy-low.jpg",
     branches: [],
@@ -114,6 +119,7 @@ export const doctors: Doctor[] = [
     slug: "dr-chang-chee-seong",
     fullName: "Dr Chang Chee Seong",
     credentials: "MD, OHD (NIOSH), MAC",
+    mmc: "MMC 64526",
     role: "Wellness Physician",
     photo: "/images/doctors/dr-chang-chee-seong.jpg",
     branches: [],
@@ -131,6 +137,7 @@ export const doctors: Doctor[] = [
     slug: "dr-jacqueline-tan",
     fullName: "Dr Jacqueline Tan",
     credentials: "MBBS, LCP Board Certified, MSc (UCSI)",
+    mmc: "MMC 83965",
     role: "Aesthetic Physician",
     photo: "/images/doctors/dr-jacqueline-tan.jpg",
     branches: [],
@@ -148,6 +155,7 @@ export const doctors: Doctor[] = [
     slug: "dr-joaan-kong",
     fullName: "Dr Joaan Kong",
     credentials: "MBBS, AAAM, LCP Board Certified",
+    mmc: "MMC 90047",
     role: "Aesthetic Physician",
     photo: "/images/doctors/dr-joaan-kong.jpg",
     branches: [],
@@ -165,6 +173,7 @@ export const doctors: Doctor[] = [
     slug: "dr-tim-chua",
     fullName: "Dr Tim Chua",
     credentials: "MBBS, MAC, LCP Certified",
+    mmc: "MMC 77677",
     role: "Aesthetic Physician",
     photo: "/images/doctors/dr-tim-chua.jpg",
     branches: [],
@@ -181,6 +190,7 @@ export const doctors: Doctor[] = [
     slug: "dr-calvin-tan",
     fullName: "Dr Calvin Tan",
     credentials: "MD, MAC",
+    mmc: "MMC 71657",
     role: "Aesthetic Physician",
     photo: "/images/doctors/dr-calvin-tan.jpg",
     branches: [],
@@ -198,6 +208,7 @@ export const doctors: Doctor[] = [
     slug: "dr-lucas-chew",
     fullName: "Dr Lucas Chew",
     credentials: "MBBS",
+    mmc: "MMC 103677",
     role: "Aesthetic Physician",
     photo: "/images/doctors/dr-lucas-chew.jpg",
     branches: [],
@@ -215,6 +226,7 @@ export const doctors: Doctor[] = [
     slug: "dr-jade",
     fullName: "Dr Jade",
     credentials: "MBBS, LCP Board Certified",
+    mmc: "MMC 60253",
     role: "Aesthetic Physician",
     photo: "/images/doctors/dr-jade.jpg",
     branches: [],
@@ -232,6 +244,7 @@ export const doctors: Doctor[] = [
     slug: "dr-teresa-tan",
     fullName: "Dr Teresa Tan",
     credentials: "MD, MAC",
+    mmc: "MMC 87513",
     role: "Aesthetic Physician",
     photo: "/images/doctors/dr-teresa-tan.jpg",
     branches: [],
@@ -249,6 +262,7 @@ export const doctors: Doctor[] = [
     slug: "dr-chin-wei-horng",
     fullName: "Dr Chin Wei Horng",
     credentials: "MD, GCFM, OHD, MAC, LCP Certified",
+    mmc: "MMC 50809",
     role: "Aesthetic Physician",
     photo: "/images/doctors/dr-chin-wei-horng.jpg",
     branches: [],
@@ -265,6 +279,7 @@ export const doctors: Doctor[] = [
     slug: "dr-yvonne-chuah",
     fullName: "Dr Yvonne Chuah",
     credentials: "MD, MAC, LCP Certified",
+    mmc: "MMC 86640",
     role: "Aesthetic Physician",
     photo: "/images/doctors/dr-yvonne-chuah.jpg",
     branches: [],
@@ -284,6 +299,7 @@ export const doctors: Doctor[] = [
     slug: "dr-jamie-gan",
     fullName: "Dr Jamie Gan Ee Vienn",
     credentials: "MD, PDAM (EIU)",
+    mmc: "MMC 97231",
     role: "Aesthetic Physician",
     photo: "/images/doctors/dr-jamie-gan.jpg",
     branches: [],
@@ -301,6 +317,7 @@ export const doctors: Doctor[] = [
     slug: "dr-jen-meng",
     fullName: "Dr Jen Meng",
     credentials: "MBBS, MAC",
+    mmc: "MMC 104167",
     role: "Aesthetic Physician",
     photo: "/images/doctors/dr-jen-meng.jpg",
     branches: [],
@@ -317,6 +334,7 @@ export const doctors: Doctor[] = [
     slug: "dr-chloe-wan",
     fullName: "Dr Chloe Wan Poh Yee",
     credentials: "MBBS, MAC",
+    mmc: "MMC 104547",
     role: "Aesthetic Physician",
     photo: "/images/doctors/dr-chloe-wan.jpg",
     branches: [],
@@ -334,6 +352,7 @@ export const doctors: Doctor[] = [
     slug: "dr-say-wei-xian",
     fullName: "Dr Say Wei Xian",
     credentials: "MBBS, MAC",
+    mmc: "MMC 103512",
     role: "Aesthetic Physician",
     photo: "/images/doctors/dr-say-wei-xian.jpg",
     branches: [],
@@ -354,11 +373,7 @@ export function doctorBySlug(slug: string) {
   return doctors.find((d) => d.slug === slug);
 }
 
-/**
- * "Reviewed by" byline. `mmc` is still a pending client data dependency, so
- * fall back to published credentials rather than interpolating `undefined`
- * (spec bug B-01 / TB-01 — rendered "Dr Chew Yuhhui, undefined" on every page).
- */
+/** "Reviewed by" byline. Falls back to credentials if `mmc` is ever missing. */
 export function reviewerByline(d: Doctor | undefined) {
   if (!d) return "—";
   return [d.fullName, d.mmc || d.credentials].filter(Boolean).join(", ");
