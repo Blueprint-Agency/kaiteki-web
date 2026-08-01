@@ -14,6 +14,11 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  // Ads landing pages live in public/ads/ but serve from the root URL they're bought on.
+  async rewrites() {
+    return [{ source: "/lp-ultherapy.html", destination: "/ads/lp-ultherapy.html" }];
+  },
+
   // 301s for URLs moved by the taxonomy restructures.
   // IA v2 (2026-07-18): ultherapy is a flat treatment again; coolsculpting/onda/dermav
   // are now Technology items. ponytail: old nested /treatments/x/y URLs get their 301s
