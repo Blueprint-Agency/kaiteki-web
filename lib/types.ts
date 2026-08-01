@@ -125,8 +125,6 @@ export interface Treatment {
   /** Compliance + review (placeholder values for the sample — docs/05 §9). */
   reviewedBy: string; // doctor slug
   lastReviewed: string; // ISO date
-  kkliu: string;
-  kkliuExpiry: string; // ISO date
   /** SEO-optimized <title>, 50–60 chars, brand baked in (docs/10). */
   seoTitle?: string;
   /** SEO meta description, 140–160 chars (docs/10). */

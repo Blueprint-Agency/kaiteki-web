@@ -85,7 +85,7 @@ export function SiteFooter() {
         {/* Compliance band — the ledger, as brand furniture (docs/04 §4.2) */}
         <div className="flex flex-col gap-3 border-t border-white/10 py-6 text-xs leading-relaxed text-ink-on-dark/70 md:flex-row md:items-center md:justify-between">
           <p className="ledger !text-ink-on-dark/70">
-            {site.entity} · {site.kkliu} · {site.mmcNote}
+            {site.entity} · {site.mmcNote}
           </p>
           <div className="flex items-center gap-4">
             <a href={site.instagram} className="hover:text-ink-on-dark">Instagram</a>

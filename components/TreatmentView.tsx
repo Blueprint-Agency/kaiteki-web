@@ -423,7 +423,6 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
               { label: "Reviewed by", value: reviewerByline(doctor) },
               { label: "Last reviewed", value: reviewedDate },
               { label: "Next review due", value: nextReview(t.lastReviewed) },
-              { label: "Advertisement ref", value: `${t.kkliu}` },
             ]}
           />
           <Disclaimer />
