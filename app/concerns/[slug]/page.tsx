@@ -1,22 +1,11 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { pageMeta } from "@/lib/seo";
 import { notFound } from "next/navigation";
-import { Container } from "@/components/Container";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { pageMeta } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
-import { LeadAnswer } from "@/components/LeadAnswer";
-import { ReviewByline, Ledger } from "@/components/Ledger";
-import { Faq } from "@/components/Faq";
-import { Disclaimer } from "@/components/Disclaimer";
-import { WhatsAppButton } from "@/components/WhatsAppCTA";
-import { SectionCard } from "@/components/SectionCard";
-import { TreatmentCard } from "@/components/cards";
-import { CardRow } from "@/components/CardRow";
+import { ConcernView } from "@/components/ConcernView";
 import { concerns, concernBySlug } from "@/content/data/concerns";
-import { technologyOfConcern, treatmentsOfConcern } from "@/content/data/relations";
-import { doctorBySlug, reviewerByline } from "@/content/data/doctors";
-import { waForConcern } from "@/lib/wa";
+import { treatmentsOfConcern } from "@/content/data/relations";
+import { doctorBySlug } from "@/content/data/doctors";
 import { medicalWebPageNode } from "@/lib/schema";
 
 export const dynamicParams = false;
@@ -51,22 +40,19 @@ export default async function ConcernPage({
   if (!c) notFound();
 
   const doctor = doctorBySlug(c.reviewedBy);
-  const options = treatmentsOfConcern(c.slug);
-  const techItems = technologyOfConcern(c.slug);
-  const reviewedDate = new Date(c.lastReviewed).toLocaleDateString("en-GB", {
-    day: "numeric",
-    month: "short",
-    year: "numeric",
-  });
 
   return (
-    <Container className="py-10 sm:py-12">
+    <>
       <JsonLd
         data={medicalWebPageNode({
           path: `/concerns/${c.slug}`,
           name: c.seoTitle ?? c.name,
           description: c.seoDescription ?? c.summary,
-          about: { type: "MedicalCondition", name: c.name },
+          about: {
+            type: "MedicalCondition",
+            name: c.name,
+            possibleTreatment: treatmentsOfConcern(c.slug).map((t) => t.name),
+          },
           lastReviewed: c.lastReviewed,
           image: c.image,
           reviewer: doctor
@@ -74,123 +60,7 @@ export default async function ConcernPage({
             : undefined,
         })}
       />
-
-      <div className="mx-auto max-w-3xl">
-        <Breadcrumbs items={[{ label: "Concerns", href: "/concerns" }, { label: c.name }]} />
-
-        <div className="mt-8">
-          <p className="text-sm font-medium text-accent">Concern · {c.group}</p>
-          <h1 className="mt-2 font-serif text-4xl font-semibold leading-[1.1] tracking-tight text-espresso sm:text-5xl">
-            {c.name}
-          </h1>
-          <div className="mt-6">
-            <LeadAnswer>{c.leadAnswer}</LeadAnswer>
-          </div>
-          {doctor && (
-            <div className="mt-6 max-w-md">
-              <ReviewByline
-                doctorName={doctor.fullName}
-                mmc={doctor.mmc}
-                date={reviewedDate}
-                photo={doctor.photo}
-                href={`/doctors/${doctor.slug}`}
-              />
-            </div>
-          )}
-        </div>
-
-        <div className="mt-10 space-y-6">
-          {c.sections?.map((s) => (
-            <SectionCard key={s.heading} title={s.heading}>
-              <div className="prose space-y-4 leading-relaxed text-ink-700">
-                {s.body.map((p, i) => (
-                  <p key={i}>{p}</p>
-                ))}
-              </div>
-              {s.list && (
-                <ul className="mt-4 space-y-2">
-                  {s.list.map((li) => (
-                    <li key={li} className="flex gap-3 text-ink-700">
-                      <span className="mt-2.5 size-1.5 shrink-0 rounded-full bg-mocha" />
-                      <span>{li}</span>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </SectionCard>
-          )) ?? (
-            <SectionCard>
-              <p className="prose leading-relaxed text-ink-700">
-                {c.summary} A full, doctor-reviewed guide to {c.name.toLowerCase()} is being
-                finalised for the new site. The options below may be considered depending on
-                your individual assessment.
-              </p>
-            </SectionCard>
-          )}
-
-          {/* Treatment options — the hub role (docs/04 §6.1) */}
-          {options.length > 0 && (
-            <SectionCard title="Treatment options at Kaiteki">
-              <p className="text-ink-700">
-                These treatments may be considered for {c.name.toLowerCase()}. Suitability is
-                always assessed individually.
-              </p>
-              <CardRow className="mt-6">
-                {options.map((t) => (
-                  <TreatmentCard key={t.slug} t={t} />
-                ))}
-              </CardRow>
-            </SectionCard>
-          )}
-
-          {/* Technology used — derived from the concern's treatments */}
-          {techItems.length > 0 && (
-            <SectionCard title="Technology used">
-              <ul className="flex flex-wrap gap-3">
-                {techItems.map((x) => (
-                  <li key={x.slug}>
-                    <Link href={`/technology/${x.slug}`} className="inline-flex items-center rounded-full border border-hairline bg-tint px-4 py-2 text-sm font-medium text-ink-700 transition-colors hover:border-mocha">
-                      {x.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </SectionCard>
-          )}
-
-          {c.faqs && (
-            <SectionCard title="Frequently asked questions">
-              <Faq items={c.faqs} />
-            </SectionCard>
-          )}
-
-          {/* Soft CTA */}
-          <SectionCard className="bg-tint">
-            <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
-              <div>
-                <h2 className="text-xl font-bold text-espresso">
-                  {c.ctaHeading ?? "Not sure what’s causing it?"}
-                </h2>
-                <p className="mt-1 max-w-md text-ink-700">
-                  Message us on WhatsApp for a free consultation — a doctor can assess{" "}
-                  {c.ctaAssesses ?? "your skin"} and talk you through the options.
-                </p>
-              </div>
-              <WhatsAppButton href={waForConcern(c.name)} size="lg" label="Book a free consultation" />
-            </div>
-          </SectionCard>
-
-          <div className="space-y-6 px-2">
-            <Ledger
-              rows={[
-                { label: "Reviewed by", value: reviewerByline(doctor) },
-                { label: "Last reviewed", value: reviewedDate },
-              ]}
-            />
-            <Disclaimer />
-          </div>
-        </div>
-      </div>
-    </Container>
+      <ConcernView c={c} />
+    </>
   );
 }

@@ -113,24 +113,14 @@ export function Rows({ children, className = "" }: { children: ReactNode; classN
  * tags. A full-width rule-divided rail rather than three tinted boxes — the
  * boxed stat row is the template tell, and these are record values, not metrics.
  */
-export function FactRail({ t }: { t: Treatment }) {
-  const [sessionTime, downtime] = (t.durationDowntime ?? "").split("·").map((s) => s.trim());
-  const facts =
-    t.facts?.slice(0, 3) ??
-    (
-      [
-        sessionTime && { value: sessionTime, label: "Typical session time" },
-        t.typicalSessions && { value: t.typicalSessions, label: "Typical sessions" },
-        downtime && { value: downtime, label: "Downtime" },
-      ].filter(Boolean) as { value: string; label: string }[]
-    );
-  if (!facts.length) return null;
+export function FactRail({ facts }: { facts?: { value: string; label: string }[] }) {
+  if (!facts?.length) return null;
 
   return (
     <div className="border-y border-hairline">
       <Container>
         <dl className="grid divide-y divide-hairline sm:grid-cols-3 sm:divide-x sm:divide-y-0">
-          {facts.map((f) => (
+          {facts.slice(0, 3).map((f) => (
             <div key={f.label} className="py-6 sm:px-9 sm:py-8 sm:first:pl-0 sm:last:pr-0">
               <dt className="h-sub">{f.value}</dt>
               <dd className="mt-2 max-w-[34ch] text-sm leading-snug text-ink-500">{f.label}</dd>
@@ -161,6 +151,8 @@ export function JumpNav({ items }: { items?: { id: string; label: string }[] }) 
             <li key={i.id}>
               <a
                 href={`#${i.id}`}
+                data-ga="jump_nav_click"
+                data-ga-destination={i.id}
                 className="inline-flex whitespace-nowrap rounded-full px-3.5 py-1.5 text-sm text-ink-700 transition-colors hover:bg-tint hover:text-espresso"
               >
                 {i.label}
@@ -294,7 +286,15 @@ export function VariantModule({ t, m }: { t: Treatment; m?: Treatment["variantMo
  * the loudest thing on screen. The green pill carries a warm-white ring because
  * green on espresso is only 2.1:1 — the ring is what identifies the control.
  */
-export function CtaMid({ cta, href }: { cta?: Treatment["ctaMid"]; href: string }) {
+export function CtaMid({
+  cta,
+  href,
+  position = "mid",
+}: {
+  cta?: Treatment["ctaMid"];
+  href: string;
+  position?: string;
+}) {
   if (!cta) return null;
   return (
     <Block tone="espresso">
@@ -306,6 +306,7 @@ export function CtaMid({ cta, href }: { cta?: Treatment["ctaMid"]; href: string 
         <WhatsAppButton
           href={href}
           size="lg"
+          position={position}
           label="Ask about this on WhatsApp"
           className="ring-1 ring-ink-on-dark/60"
         />
@@ -504,6 +505,7 @@ export function CostFactors({ c, href }: { c?: Treatment["costFactors"]; href: s
             <WhatsAppButton
               href={href}
               variant="outline"
+              position="cost"
               label="Ask what a plan might involve"
               className="mt-7"
             />

@@ -14,9 +14,11 @@
     "typecheck": "tsc --noEmit",
     "validate:content": "node scripts/validate-content.mjs",
     "validate:refs": "node --experimental-strip-types scripts/validate-content.mts",
+    "validate:concerns": "node --experimental-strip-types scripts/validate-concerns.mts",
     "test:redirects": "node --experimental-strip-types scripts/test-redirects.mts"
   },
   "dependencies": {
+    "@next/third-parties": "16.2.10",
     "leaflet": "^1.9.4",
     "next": "16.2.10",
     "react": "19.2.4",

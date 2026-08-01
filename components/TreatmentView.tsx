@@ -52,6 +52,16 @@ function nextReview(iso: string) {
   return dmy(d.toISOString());
 }
 
+/** T-02 fallback for treatments whose fact strip has not been authored yet. */
+function derivedFacts(t: Treatment) {
+  const [sessionTime, downtime] = (t.durationDowntime ?? "").split("·").map((s) => s.trim());
+  return [
+    sessionTime && { value: sessionTime, label: "Typical session time" },
+    t.typicalSessions && { value: t.typicalSessions, label: "Typical sessions" },
+    downtime && { value: downtime, label: "Downtime" },
+  ].filter(Boolean) as { value: string; label: string }[];
+}
+
 /** Chip row — the one shape used for every "browse sideways" list on the page. */
 function ChipList({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return <ul className={`flex flex-wrap gap-2 ${className}`}>{children}</ul>;
@@ -88,6 +98,7 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
                 <WhatsAppButton
                   href={wa}
                   variant="outline"
+                  position="hero"
                   label="Ask if it suits your skin"
                 />
                 <p className="text-sm text-ink-500">Free consultation, no obligation.</p>
@@ -122,8 +133,8 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
         </Container>
       </header>
 
-      {/* T-02 */}
-      <FactRail t={t} />
+      {/* T-02 — authored process facts, else the derived session/downtime tags. */}
+      <FactRail facts={t.facts ?? derivedFacts(t)} />
 
       {/* T-01 · The answer-first capsule, identical across the site so it stays
           recognisable and extractable. */}
@@ -390,6 +401,7 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
             <WhatsAppButton
               href={wa}
               size="lg"
+              position="bottom"
               label="Ask about this treatment"
               className="mt-8"
             />

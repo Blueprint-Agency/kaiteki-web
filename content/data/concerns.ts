@@ -1,4 +1,7 @@
 import type { Concern } from "@/lib/types";
+// Relative + import attribute, not the "@/" alias: the validate:* scripts load
+// this module through node --experimental-strip-types, which resolves neither.
+import registry from "../../config/concerns.json" with { type: "json" };
 
 // acne is fully authored as the concern-pillar showcase (docs/06 §5.3). Others
 // carry a compliant summary + lead answer so their [slug] page renders honestly.
@@ -25,57 +28,419 @@ export const concerns: Concern[] = [
     ],
     reviewedBy: "dr-jessie-lim",
     lastReviewed: "2026-06-22",
-    seoTitle: "Acne Treatment & Scarring Care in Malaysia | Kaiteki",
+    seoTitle: "Acne & Acne Scar Treatment in Malaysia | Kaiteki",
     seoDescription:
-      "Acne and acne scarring have different causes. A doctor-led acne treatment plan in Malaysia starts with assessment — book a free consultation with Kaiteki.",
+      "Active acne and acne scarring are different problems with different treatments. A doctor assesses which you have. Book a free consultation at Kaiteki.",
+
+    // ── 02 · three neutral process facts. The v2 spec's "results in 4–8 weeks"
+    // was removed outright: it is an outcome promise (R-01), and it is wrong for
+    // scarring, where collagen remodelling continues for months.
+    facts: [
+      {
+        value: "Very common",
+        label: "Affects up to 85% of people aged 12–24, and can continue or begin in adulthood.",
+      },
+      {
+        value: "Two different problems",
+        label:
+          "Active breakouts and the marks or scarring left behind need different approaches.",
+      },
+      {
+        value: "Assessment first",
+        label:
+          "A doctor examines your skin and explains the options and risks before any treatment.",
+      },
+    ],
+
+    // ── 02b · seven decision points, not eighteen sections (R-13).
+    jumpNav: [
+      { id: "which-type", label: "Which type do I have?" },
+      { id: "where", label: "Where it appears" },
+      { id: "treatments", label: "Treatments" },
+      { id: "first-visit", label: "Your first visit" },
+      { id: "risks", label: "Risks" },
+      { id: "cost", label: "Cost" },
+      { id: "faq", label: "FAQ" },
+    ],
+
     sections: [
       {
         heading: "What is acne?",
         body: [
-          "Acne occurs when hair follicles become blocked with oil and dead skin cells, which can lead to blackheads, whiteheads and inflamed spots. It most often affects the face but can appear on the back and chest.",
-          "Acne is a medical condition rather than simply a cosmetic concern, and it is common in both teenagers and adults. Understanding your type of acne is the first step in deciding whether treatment may help.",
-        ],
-      },
-      {
-        heading: "Common causes",
-        body: [
-          "Several factors can contribute to acne, often in combination. These may include hormones, oil production, certain bacteria and inflammation. Skincare habits, environment and family history can also play a part.",
-        ],
-        list: [
-          "Hormonal changes and cycles",
-          "Excess oil (sebum) production",
-          "Blocked pores and skin-cell build-up",
-          "Inflammation and skin bacteria",
-        ],
-      },
-      {
-        heading: "Types of acne & scarring",
-        body: [
-          "Acne ranges from non-inflamed blackheads and whiteheads to inflamed papules, pustules and deeper nodules. When inflamed acne settles, it can sometimes leave marks or scarring — such as rolling, boxcar or ice-pick scars — which are addressed differently from active acne.",
-          "Because active acne and acne scarring are different, a doctor assesses which you have before discussing options.",
-        ],
-      },
-      {
-        heading: "When to see a doctor",
-        body: [
-          "It is reasonable to seek advice if acne is persistent, painful, leaving marks, or affecting how you feel. A doctor can assess your skin, explain the options and their risks, and help you decide on a sensible plan.",
+          "Acne occurs when hair follicles become blocked with oil and dead skin cells. That blockage can stay quiet as a blackhead or whitehead, or it can become inflamed and form a red, tender spot. It most often appears on the face, but the back, chest and shoulders are also common.",
+          "Acne is a medical condition, not just a cosmetic one. It affects teenagers and adults, and it is one of the most common reasons people see a doctor about their skin. Understanding which type you have is the first step in working out whether treatment is likely to help.",
         ],
       },
     ],
+
+    // ── 04 · archetype A: causes. Bold lead-in per bullet — scannable, and the
+    // shape an assistant quotes cleanly.
+    drivers: {
+      heading: "Common causes",
+      intro:
+        "Acne is usually driven by several factors at once rather than one single cause. The main ones are:",
+      items: [
+        {
+          lead: "Hormonal changes —",
+          body: "puberty, menstrual cycles, pregnancy, polycystic ovary syndrome, or stopping hormonal contraception.",
+        },
+        {
+          lead: "Excess sebum —",
+          body: "oil glands producing more than the skin can clear.",
+        },
+        {
+          lead: "Blocked pores —",
+          body: "dead skin cells building up inside the follicle instead of shedding.",
+        },
+        {
+          lead: "Inflammation and skin bacteria —",
+          body: "Cutibacterium acnes multiplying in a blocked follicle and triggering redness and swelling.",
+        },
+        {
+          lead: "Contributing factors —",
+          body: "family history, certain medications, occlusive skincare or makeup, humidity and sweat, friction from helmets, straps or masks.",
+        },
+      ],
+      outro:
+        "Diet, stress and sleep can influence acne for some people, but they are rarely the whole picture on their own.",
+    },
+
+    // ── 05 · the differentiator. Three tabs, each ending in a routing line that
+    // sends a different group to a different treatment set. This orients; it
+    // never states a conclusion about the reader — the doctor diagnoses.
+    variant: {
+      kind: "tabs",
+      heading: "Which type do I have?",
+      intro:
+        "Most people arrive with a mix. Working out the balance matters, because treating scarring while acne is still active usually does not work well, and treating active acne will not remove existing scars.",
+      tabs: [
+        {
+          label: "Active acne",
+          sub: "Spots you have now",
+          title: "Active acne",
+          body: "Spots that are currently forming. These are usually treated medically first — with topical or oral treatment — because settling the inflammation protects the skin from further marking and scarring.",
+          items: [
+            {
+              lead: "Comedonal —",
+              body: "blackheads and whiteheads, no redness. Often across the forehead, nose and chin.",
+            },
+            {
+              lead: "Inflammatory —",
+              body: "red papules and pustules that are tender to touch.",
+            },
+            {
+              lead: "Nodulocystic —",
+              body: "deep, firm, painful lumps under the skin that do not come to a head. This type carries the highest risk of permanent scarring and should be assessed sooner rather than later.",
+            },
+          ],
+          routing:
+            "medical management first, with clinic facials or RF microneedling considered as support once the doctor advises it.",
+        },
+        {
+          label: "Marks",
+          sub: "Flat red or brown",
+          title: "Post-acne marks",
+          body: "Flat discolouration left behind after a spot has healed. The skin is smooth to the touch — only the colour is different. Marks often fade on their own over months, but treatment can shorten that.",
+          items: [
+            {
+              lead: "Red or purple marks",
+              body: "(post-inflammatory erythema) — from dilated blood vessels near the surface. More visible on lighter skin.",
+            },
+            {
+              lead: "Brown marks",
+              body: "(post-inflammatory hyperpigmentation) — from excess pigment produced during inflammation. Very common in the medium and deeper skin tones seen across Malaysia, and worsened by sun exposure.",
+            },
+          ],
+          routing: "pico laser, with daily sunscreen as a non-negotiable part of the plan.",
+        },
+        {
+          label: "Scarring",
+          sub: "Texture you can feel",
+          title: "Acne scarring",
+          body: "A change in the skin's structure, not just its colour. If you run a finger over it, you can feel a dip or an irregularity. Scars do not fade on their own — they are remodelled, gradually, over months.",
+          items: [
+            {
+              lead: "Ice pick —",
+              body: "narrow, deep, sharply defined pits. The hardest type to treat with energy devices alone.",
+            },
+            {
+              lead: "Boxcar —",
+              body: "wider depressions with defined edges, like a shallow crater.",
+            },
+            {
+              lead: "Rolling —",
+              body: "soft, wave-like undulations caused by tethering beneath the skin.",
+            },
+            {
+              lead: "Raised (hypertrophic or keloid) —",
+              body: "firm, thickened tissue sitting above skin level. More common on the chest, shoulders and back, and treated very differently from depressed scars.",
+            },
+          ],
+          routing:
+            "RF microneedling or resurfacing laser, often over several sessions, with combinations chosen by scar type.",
+        },
+      ],
+    },
+
+    // ── 06 · where it appears. The closing differential card is the honest part,
+    // and the part most likely to be cited.
+    locationBlock: {
+      heading: "Where acne appears",
+      intro:
+        "Location is a clue, not a diagnosis. The idea that a spot in one place points to a specific organ has no clinical basis, but some patterns are genuinely useful to notice.",
+      cards: [
+        {
+          title: "Chin and jawline",
+          body: "Often follows a hormonal pattern, particularly in adult women, and can flare in a monthly cycle. Worth mentioning at consultation if it recurs in the same place.",
+        },
+        {
+          title: "Forehead",
+          body: "Commonly linked to oil, sweat, hair products and friction from caps, helmets or fringes. Small rough bumps here are usually closed comedones.",
+        },
+        {
+          title: "Cheeks",
+          body: "Friction and contact are frequent contributors — phone screens, pillowcases, mask edges. Cheeks also mark and scar readily, so early assessment matters.",
+        },
+        {
+          title: "Nose",
+          body: "Dense oil glands mean blackheads and visible pores are common here. Squeezing tends to worsen both.",
+        },
+        {
+          title: "Back, chest and shoulders",
+          body: "Sweat, friction and heavier body products play a part. Lesions here can be larger and are more likely to leave raised rather than depressed scars.",
+        },
+      ],
+      note: {
+        title: "Not typical acne?",
+        body: "Small uniform bumps that itch, or rashes that do not respond to acne treatment, may be something else entirely — such as folliculitis or rosacea. A doctor can tell the difference.",
+      },
+    },
+
+    // ── 07
+    seeDoctor: {
+      intro: "It is reasonable to get your skin looked at if any of the following apply:",
+      triggers: [
+        "Over-the-counter products have not helped after around eight to twelve weeks of consistent use.",
+        "Spots are deep, painful or leaving marks behind.",
+        "You are already seeing indentations or texture change.",
+        "Breakouts started in adulthood, or changed pattern suddenly.",
+        "Your acne is affecting your mood, confidence or how you go about your day.",
+      ],
+      outro:
+        "Earlier assessment matters most with deep or scarring acne, because the aim is to settle inflammation before it leaves permanent change. There is no benefit in waiting to see whether it resolves on its own.",
+    },
+
+    // ── 08
+    ctaMid: {
+      heading: "Not sure which one you're dealing with?",
+      body: "Send us a photo on WhatsApp and a doctor can tell you whether you're looking at active acne, marks, scarring — or a combination.",
+    },
+
+    // ── 09 · the "why for acne" line on every card is what stops five concern
+    // pages that share this treatment list from competing with each other (R-04).
+    treatmentsIntro:
+      "These are the treatments most often considered for acne at our clinics. None of them is a default. Which one is appropriate — and whether any of them is — depends on what the assessment finds.",
+    treatmentWhy: {
+      "pico-laser": {
+        why: "For post-acne marks and uneven tone",
+        body: "A picosecond laser that targets pigment in short, high-speed pulses. Most relevant once acne has settled and what remains is discolouration rather than texture. Typically has minimal downtime.",
+      },
+      microneedling: {
+        why: "For depressed scarring, texture and enlarged pores",
+        body: "Fine needles deliver radiofrequency energy into the deeper layer of the skin to stimulate collagen. Often the starting point for rolling and boxcar scarring, and generally considered a lower pigmentation-risk option for medium and deeper skin tones.",
+      },
+      "resurfacing-laser": {
+        why: "For deeper scarring and significant texture change",
+        body: "A fractional CO₂ laser used where scarring is more established. More downtime than the options above, and requires careful sun avoidance afterwards — the doctor will weigh this against your skin tone and your schedule.",
+      },
+      "exosome-therapy": {
+        why: "Used alongside other treatments, not instead of them",
+        body: "A regenerative approach applied after energy-based treatment to support skin recovery. The evidence base is still developing, and it is offered as an adjunct rather than a standalone acne treatment.",
+      },
+      "facial-treatments": {
+        why: "For congestion, cleansing and ongoing maintenance",
+        body: "Hydrafacial and Silkpeel are used to support cleansing and exfoliation, particularly with comedonal congestion. Supportive care — they do not replace medical treatment for inflammatory acne.",
+      },
+    },
+    treatmentsNote:
+      "Active inflammatory acne is usually managed medically first. Energy-based treatments are generally considered once breakouts are under control, or alongside medical treatment where the doctor judges it appropriate.",
+
+    // ── 10 · full depth only. "Commonly considered", never "best suited" (R-02),
+    // and no column promises a result or a timeframe to one.
+    compare: {
+      intro:
+        "A general guide only. Combinations are common, and the doctor may recommend something different after examining your skin.",
+      columns: ["What you have", "Commonly considered", "Typical course", "Downtime"],
+      rows: [
+        [
+          "Active inflammatory acne",
+          "Medical management, with supportive facials",
+          "Reviewed at 8–12 weeks",
+          "None",
+        ],
+        ["Blackheads & congestion", "Clinic facials, topical treatment", "Ongoing maintenance", "None"],
+        ["Red marks after spots", "Pico laser", "Multiple sessions, spaced", "Minimal"],
+        [
+          "Brown marks after spots",
+          "Pico laser + daily sun protection",
+          "Multiple sessions, spaced",
+          "Minimal",
+        ],
+        ["Rolling & boxcar scars", "RF microneedling", "Several sessions, ~4 weeks apart", "2–3 days redness"],
+        ["Deeper or mixed scarring", "Assessed individually", "Assessed individually", "5–7 days"],
+        [
+          "Raised or keloid scars",
+          "Assessed separately — different approach",
+          "Individual",
+          "Individual",
+        ],
+      ],
+      note: "Session counts and intervals are set by the doctor after assessment. Skin responds at different rates, and plans are adjusted as they go.",
+    },
+
+    // ── 12
+    firstVisit: {
+      intro:
+        "The consultation is free and there is no obligation to book treatment afterwards. It usually takes 20 to 30 minutes.",
+      steps: [
+        {
+          title: "History",
+          body: "What you've tried, how long it's been going on, your medical history, and any medication or skincare you're currently using.",
+        },
+        {
+          title: "Examination",
+          body: "The doctor examines your skin — sometimes under magnification — to identify what's active, what's marking, and what's scarring.",
+        },
+        {
+          title: "Discussion",
+          body: "What the options are, what each involves, what the risks and downtime are, and what is realistic for your skin. Including when the honest answer is to wait.",
+        },
+        {
+          title: "Plan",
+          body: "If you choose to proceed, a sequence and a review point. You can take the plan away and think about it.",
+        },
+      ],
+      outro:
+        "Bring a list of anything you're currently applying or taking, including supplements and oral acne medication. If you have photographs of your skin during a flare, those help too.",
+    },
+
+    // ── 13 · the PIH paragraph is the most locally relevant thing on the page,
+    // and "what treatment cannot do" is mandatory (R-05).
+    risks: {
+      intro: "Every treatment on this page carries some risk.",
+      items: [
+        {
+          lead: "Common and usually temporary",
+          body: "Redness, swelling, dryness, flaking and a warm or gritty sensation for a few days. Less common effects include prolonged redness, blistering, infection, or a change in skin pigment.",
+        },
+        {
+          lead: "Pigment change and Malaysian skin",
+          body: "Medium and deeper skin tones — common across Malaysia — carry a higher chance of post-inflammatory hyperpigmentation after energy-based treatment. This is why doctors here often choose gentler settings and longer intervals between sessions. It can extend the timeline, and it is a deliberate safety trade-off.",
+        },
+        {
+          lead: "Sun protection is not optional",
+          body: "Daily broad-spectrum sunscreen is part of the plan for every treatment listed above, both before and after. Without it, marks are likely to return or deepen.",
+        },
+        {
+          lead: "What treatment cannot do",
+          body: "Ice-pick scarring rarely resolves fully with energy devices alone. Acne can recur after treatment, because treating marks or scars does not change the tendency to break out. Improvement builds gradually over months as collagen remodels — it is not visible the following week.",
+        },
+      ],
+      disclose:
+        "Tell your doctor if you are pregnant or breastfeeding, take or recently took oral acne medication, have a history of cold sores, keloid scarring or recent tanning, or have had any skin procedure in the past few weeks. Any of these may change what is appropriate or when.",
+    },
+
+    // ── 14 · factors only, no figures (R-03). Structured as a list so it can
+    // become a price table later without restructuring the page.
+    costFactors: {
+      intro:
+        "Costs are not published because they depend on the assessment. What they depend on is worth knowing before you come in:",
+      factors: [
+        "What is being treated — marks generally need a different approach from structural scarring.",
+        "The area — full face, targeted zone, or back and chest.",
+        "The treatment and device — different platforms have different session structures.",
+        "How many sessions — set after assessment, and adjusted at review as your skin responds.",
+        "Whether treatments are combined — mixed scarring sometimes responds better to more than one modality.",
+      ],
+      outro:
+        "The doctor will go through the specifics with you at the consultation, including how many sessions they'd expect and over what period, before you commit to anything.",
+    },
+
+    // ── 15
+    technologyIntro:
+      "Having more than one platform means the doctor can match the device to your skin type and to what is being treated, rather than fitting your skin to a single machine.",
+
+    // ── 16 · twelve questions, 60–90 words each, all in the DOM (R-10).
     faqs: [
       {
+        q: "What's the difference between active acne and acne scars?",
+        a: "Active acne is what's forming now — spots, redness, congestion. Scarring is the structural change left behind after inflammation has settled, and you can usually feel it as a dip or an irregularity. Between the two sit flat marks: red or brown discolouration where the skin is smooth but the colour hasn't returned to normal. All three are common at the same time, and each is treated differently, which is why assessment comes first.",
+      },
+      {
         q: "Can acne scarring be treated?",
-        a: "Acne scarring is approached differently from active acne, and several options may be considered depending on the scar type. Results vary between individuals, so a doctor assesses your skin and explains what is realistic before recommending anything.",
+        a: "Depressed scarring can often be improved, though rarely erased. Treatments like RF microneedling and resurfacing lasers work by stimulating the skin to remodel its own collagen, which takes place gradually over months rather than immediately. How much improvement is realistic depends heavily on scar type — rolling and boxcar scars usually respond better than ice-pick scars, which are narrow and deep. A doctor will look at what you actually have and tell you what's achievable before recommending anything.",
       },
       {
         q: "Why does adult acne happen?",
-        a: "Adult acne can be influenced by hormones, oil production, skincare and other factors, often in combination. A consultation helps identify the likely contributors for your skin so any plan is tailored to you.",
+        a: "Adult acne is usually multi-factorial. Hormonal fluctuation is a frequent contributor, particularly for women with breakouts around the jawline and chin that follow a cycle. Skincare and makeup that block pores, certain medications, stress affecting sleep and skin barrier function, and simple genetic tendency all play a part. It's also common for adult acne to look different from teenage acne — fewer spots, but deeper and slower to settle. Identifying the likely contributors for you is part of the consultation.",
       },
       {
         q: "Will treatment make my acne worse first?",
-        a: "Some approaches can involve an adjustment period, which your doctor will explain beforehand. Sharing your history at consultation helps the doctor choose an approach suited to your skin and set realistic expectations.",
+        a: "Some medical acne treatments involve an initial adjustment period where the skin appears worse before it improves — this is expected with certain topical treatments and your doctor will tell you in advance if it applies. Energy-based treatments don't typically cause a flare, but they can leave redness or dryness for a few days. Either way, the point is that you should know what to expect before you start, not discover it afterwards.",
+      },
+      {
+        q: "How many sessions will I need?",
+        a: "This is set after the doctor examines your skin, because it depends on what's being treated and how severe it is. Energy-based treatments for scarring are typically planned as a course of several sessions spaced around four weeks apart, with a review point built in to check how your skin is responding. Plans are adjusted as they go — nobody can accurately predict the full course at the first visit, and anyone who does should be treated with caution.",
+      },
+      {
+        q: "How soon will I see a difference?",
+        a: "It depends entirely on what's being treated. Marks and discolouration generally shift earlier than structural scarring. Scar treatment works by stimulating collagen remodelling, and that process continues for months beneath the surface after the skin looks recovered — deeper scars are often formally reassessed six to twelve months after a course. It's genuinely gradual. Taking your own photographs in consistent lighting helps, because daily change is very hard to notice in the mirror.",
+      },
+      {
+        q: "Is laser treatment safe for darker or Asian skin tones?",
+        a: "Yes, when the device and settings are chosen appropriately by a doctor who is experienced with your skin type. The specific concern with medium and deeper skin tones is post-inflammatory hyperpigmentation — the skin responding to treatment by producing extra pigment. This is managed by selecting suitable devices, using conservative settings, spacing sessions further apart, and being strict about sun protection. It's a real consideration, not a reason to avoid treatment, and it's a large part of what the assessment is for.",
+      },
+      {
+        q: "Can I wear makeup after treatment?",
+        a: "It depends on the treatment. After minimal-downtime treatments, makeup can usually be applied the following day. After RF microneedling, most people wait until the redness settles, typically two to three days. After resurfacing laser, longer — the skin needs to re-epithelialise first. Your doctor will give you specific timing for what you've had, and it's worth asking before you book if you have an event coming up.",
+      },
+      {
+        q: "Will my acne come back after treatment?",
+        a: "Possibly. Treating marks or scars addresses what previous breakouts left behind — it doesn't change your skin's underlying tendency to break out. Acne is a chronic condition for many people, with periods of flare and quiet. That's why the plan usually includes a maintenance element: appropriate daily skincare, sun protection, and ongoing medical management where indicated. Long-term control is a realistic goal; a permanent cure isn't something anyone can promise.",
+      },
+      {
+        q: "Do I need to stop my current skincare or acne medication?",
+        a: "Don't stop anything without telling your doctor first. Some products — retinoids and exfoliating acids in particular — are usually paused for a period before and after energy-based treatment. Oral acne medication matters especially: if you're taking it now or have taken it recently, say so at the consultation, as it can affect the timing of what's appropriate. Bring the actual products or a photo of the labels if that's easier than remembering names.",
+      },
+      {
+        q: "Is treatment painful?",
+        a: "Most people describe energy-based treatments as uncomfortable rather than painful. Topical numbing cream is applied beforehand where appropriate, and cooling is used during and after. RF microneedling is generally felt more than pico laser. If discomfort is a particular concern for you, raise it at the consultation — settings and numbing time can be adjusted.",
+      },
+      {
+        q: "Can acne on my back or chest be treated?",
+        a: "Yes, though these areas behave differently from the face. Skin on the back and chest is thicker, lesions there tend to be larger, and scarring is more likely to be raised than depressed — which calls for a different approach entirely. Treatment sessions also cover a bigger area. It's assessed the same way: the doctor looks at what's active versus what's scarred before recommending anything.",
       },
     ],
+
+    // ── 17
+    relatedConcerns: [
+      {
+        slug: "pigmentation",
+        reason: "Melasma, sun spots and uneven tone — overlaps with post-acne marks.",
+      },
+      {
+        slug: "enlarged-pores",
+        reason: "Often noticed alongside oily skin and congestion.",
+      },
+      {
+        slug: "aging",
+        reason: "Texture, laxity and fine lines — sometimes treated with the same devices.",
+      },
+    ],
+
+    // ── 18
+    ctaHeading: "Have a doctor look at it",
+    ctaAssesses: "your skin",
   },
 
   {
@@ -422,8 +787,8 @@ export const concerns: Concern[] = [
     ],
     faqs: [
       {
-        q: "Which treatment is best for face contouring?",
-        a: "There is no single best treatment, because facial contour has several possible contributors and suitable options vary between individuals. A consultation helps a doctor assess your face and determine which approach, if any, may be appropriate.",
+        q: "Which treatment is commonly considered for face contouring?",
+        a: "There is no single default treatment, because facial contour has several possible contributors and suitable options vary between individuals. A consultation helps a doctor assess your face and determine which approach, if any, may be appropriate.",
       },
       {
         q: "Can non-surgical treatments change facial contour?",
@@ -828,7 +1193,7 @@ export const concerns: Concern[] = [
     faqs: [
       {
         q: "Can birthmarks be removed?",
-        a: "It depends on the type of birthmark, and outcomes vary between individuals. Some pigmented or vascular birthmarks may be considered for laser treatment, while others are best left alone or monitored. A doctor assesses the mark and explains what is realistic before recommending anything.",
+        a: "It depends on the type of birthmark, and outcomes vary between individuals. Some pigmented or vascular birthmarks may be considered for laser treatment, while others are more appropriately left alone or monitored. A doctor assesses the mark and explains what is realistic before recommending anything.",
       },
       {
         q: "Are birthmarks dangerous?",
@@ -961,6 +1326,24 @@ export const concerns: Concern[] = [
     ],
   },
 ];
+
+/**
+ * config/concerns.json is the source of truth for archetype and depth (spec
+ * §00: "parse it, don't infer from prose"). They are merged in here rather than
+ * duplicated on each object above, so adding a page is one JSON object plus its
+ * copy — and a concern missing from the registry throws at build rather than
+ * silently rendering with an invented archetype.
+ */
+for (const c of concerns) {
+  const entry = registry.concerns.find((r) => r.slug === c.slug);
+  if (!entry) {
+    throw new Error(
+      `concerns.ts: "${c.slug}" is not in config/concerns.json. Add it to the registry (slug, archetype, depth, reviewer, lastReviewed) — do not guess an archetype.`,
+    );
+  }
+  c.archetype = entry.archetype as Concern["archetype"];
+  c.depth = entry.depth as Concern["depth"];
+}
 
 export const concernGroups: Concern["group"][] = ["Skin", "Face", "Eyes", "Hair & Body"];
 
