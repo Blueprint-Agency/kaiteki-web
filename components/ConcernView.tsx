@@ -33,7 +33,6 @@ import { concernBySlug } from "@/content/data/concerns";
 import { technologyOfConcern, treatmentsOfConcern } from "@/content/data/relations";
 import { doctorBySlug, reviewerByline } from "@/content/data/doctors";
 import { waForConcern } from "@/lib/wa";
-import { site } from "@/lib/site";
 import type { Concern } from "@/lib/types";
 
 /**
@@ -270,7 +269,6 @@ export function ConcernView({ c }: { c: Concern }) {
               { label: "Reviewed by", value: reviewerByline(doctor) },
               { label: "Last reviewed", value: reviewedDate },
               { label: "Next review due", value: nextReview(c.lastReviewed) },
-              { label: "Advertisement ref", value: site.kkliu },
             ]}
           />
           <Disclaimer />

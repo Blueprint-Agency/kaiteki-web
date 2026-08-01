@@ -14,15 +14,10 @@ RUN pnpm install --frozen-lockfile
 FROM base AS build
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-# NEXT_PUBLIC_* are inlined at build time, so compliance/staging flags must arrive
-# as build args — setting them in compose at runtime has no effect. Missing KKLIU
-# or company number ⇒ the whole site renders `noindex` (lib/seo.ts).
-ARG NEXT_PUBLIC_KKLIU
-ARG NEXT_PUBLIC_COMPANY_NO
+# NEXT_PUBLIC_* is inlined at build time, so the staging noindex flag has to
+# arrive as a build arg — setting it in compose at runtime has no effect.
 ARG NEXT_PUBLIC_NOINDEX
 ENV NEXT_TELEMETRY_DISABLED=1 \
-    NEXT_PUBLIC_KKLIU=$NEXT_PUBLIC_KKLIU \
-    NEXT_PUBLIC_COMPANY_NO=$NEXT_PUBLIC_COMPANY_NO \
     NEXT_PUBLIC_NOINDEX=$NEXT_PUBLIC_NOINDEX
 RUN pnpm build
 

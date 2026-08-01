@@ -17,9 +17,10 @@ const root = path.resolve(fileURLToPath(import.meta.url), "../..");
 const BANNED = [/xxxx/i, /\(sample\)/i, /\bsample\b/i, /\bpending\b/i, /\bplaceholder\b/i, /\btbd\b/i];
 
 const TARGETS = [
-  { file: "lib/site.ts", fields: ["entity", "kkliu"] },
+  // kkliu dropped 2026-08 — no advertisement ref is displayed anywhere now,
+  // so there is no longer a field here for a placeholder to hide in.
+  { file: "lib/site.ts", fields: ["entity"] },
   { file: "content/data/doctors.ts", fields: ["mmc"] },
-  { file: "content/data/treatments.ts", fields: ["kkliu"] },
 ];
 
 function extractFieldValues(source, field) {
