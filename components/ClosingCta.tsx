@@ -25,7 +25,7 @@ export function ClosingCta() {
           We&rsquo;ll help you find the right branch and the right plan, no obligation.
         </p>
         <div className="mt-2">
-          <WhatsAppButton size="lg" />
+          <WhatsAppButton size="lg" position="closing" />
         </div>
         <p className="mt-1 flex items-center gap-2 text-sm text-ink-500">
           <MapPin size={16} className="shrink-0 text-accent" />

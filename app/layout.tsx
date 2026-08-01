@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { Schibsted_Grotesk, Source_Serif_4, Fraunces } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -6,6 +7,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { StickyWhatsApp } from "@/components/WhatsAppCTA";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { JsonLd } from "@/components/JsonLd";
+import { Analytics } from "@/components/Analytics";
 import { siteGraph } from "@/lib/schema";
 
 // UI, nav, labels, tables, the "ledger" — a clean grotesk (docs/06 §2.2).
@@ -70,9 +72,23 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${sans.variable} ${display.variable} ${serif.variable} h-full antialiased`}
     >
+      {/* Google Tag Manager — same container as the legacy site. GA4/Meta/etc.
+          live inside the container, never inline here. */}
+      <GoogleTagManager gtmId="GTM-M42CTGL" />
       <body className="min-h-full flex flex-col">
+        {/* GTM noscript fallback — the component ships the script only */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-M42CTGL"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         {/* Site-wide identity graph: Organization (MedicalBusiness) + WebSite */}
         <JsonLd data={siteGraph()} />
+        {/* The five template events (rule R-14), pushed to the GTM dataLayer */}
+        <Analytics />
         {/* Enable motion only when JS runs — content is visible without it (globals.css) */}
         <script
           dangerouslySetInnerHTML={{

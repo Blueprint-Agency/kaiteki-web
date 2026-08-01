@@ -249,6 +249,9 @@ interface MedicalPageInput {
   about?: {
     type: "MedicalProcedure" | "MedicalCondition" | "MedicalDevice" | "Drug";
     name: string;
+    /** Concern pages (spec R-09): the treatments block, machine-readable. Only
+     *  ever names treatments the page itself lists. */
+    possibleTreatment?: string[];
   };
   /** ISO date of last medical review (YMYL freshness signal). Also emitted as
    *  `dateModified`, which is the generic freshness property crawlers read. */
@@ -288,6 +291,14 @@ export function medicalWebPageNode({
             name: about.name,
             // provider belongs on the procedure/entity, not the WebPage (spec §7).
             ...(about.type === "MedicalProcedure" ? { provider: { "@id": orgId } } : {}),
+            ...(about.possibleTreatment?.length
+              ? {
+                  possibleTreatment: about.possibleTreatment.map((n) => ({
+                    "@type": "MedicalTherapy",
+                    name: n,
+                  })),
+                }
+              : {}),
           },
         }
       : {}),

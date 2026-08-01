@@ -63,6 +63,10 @@ export function ConcernPicker({
       </div>
       <a
         href={href}
+        target="_blank"
+        rel="noopener"
+        data-ga="cta_click"
+        data-ga-cta_position="concern-picker"
         className="mt-6 inline-flex items-center justify-center gap-2.5 rounded-full bg-cta px-6 py-3 text-sm font-semibold text-white shadow-sm transition-[transform,background-color] duration-150 hover:bg-cta-hover active:scale-[0.98]"
       >
         <WhatsApp size={18} />

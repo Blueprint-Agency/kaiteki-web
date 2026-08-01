@@ -164,6 +164,51 @@ export interface Technology {
   seoDescription?: string;
 }
 
+/** A bold lead-in bullet: `lead` renders semibold, `body` plain after it. */
+export interface LeadIn {
+  lead: string;
+  body: string;
+}
+
+/**
+ * C-05 · the archetype differentiator — the one section that stops 14 concern
+ * pages reading as one template repeated. Three presentations cover all five
+ * archetypes: A/D/E are tab sets (3, 2 and 3 tabs), B is claim/reality pairs,
+ * C is a response table.
+ */
+export type ConcernVariant =
+  | {
+      kind: "tabs";
+      heading: string;
+      intro: string;
+      tabs: {
+        /** Tab button text — short enough to sit three-across on mobile. */
+        label: string;
+        /** Second line inside the tab button, e.g. "Texture you can feel". */
+        sub?: string;
+        title: string;
+        body: string;
+        items?: LeadIn[];
+        /** "Usually assessed for: …" — the routing line that makes the tab useful. */
+        routing?: string;
+      }[];
+    }
+  | {
+      kind: "pairs";
+      heading: string;
+      intro: string;
+      /** 4–6 claim/reality pairs (archetype B, myth correction). */
+      pairs: { claim: string; reality: string }[];
+    }
+  | {
+      kind: "table";
+      heading: string;
+      intro: string;
+      columns: string[];
+      rows: string[][];
+      note?: string;
+    };
+
 export interface Concern {
   slug: string;
   name: string;
@@ -184,6 +229,77 @@ export interface Concern {
   ctaHeading?: string;
   /** What the doctor actually assesses, e.g. "your scalp". Default "your skin". */
   ctaAssesses?: string;
+
+  // ── Concern-template v1 blocks (config/concerns.json, 01…18). Every field is
+  // optional: a block renders only when its data exists, so switching a block
+  // off is a data edit, not a code branch. `archetype`/`depth` are injected from
+  // config/concerns.json at module load — never authored here (spec §00).
+
+  /** From config/concerns.json. Selects which variant blocks 04/05/06 use. */
+  archetype?: "A" | "B" | "C" | "D" | "E";
+  /** From config/concerns.json. `lite` omits block 10 and targets 8 FAQs. */
+  depth?: "full" | "lite";
+
+  /** C-02 fact strip. Exactly three neutral PROCESS facts — never a
+   *  time-to-result, which would be an outcome claim (rule R-01). */
+  facts?: { value: string; label: string }[];
+  /** C-02b jump nav. Max 7; `id` must match a rendered block anchor (R-13). */
+  jumpNav?: { id: string; label: string }[];
+  /** C-04 · archetype-dependent heading — "Common causes" on A/D, "What makes
+   *  it look this way" on B, "What affects your session count" on C, "What
+   *  influences it" on E. Authored per concern so nothing is inferred. */
+  drivers?: { heading: string; intro?: string; items: LeadIn[]; outro?: string };
+  /** C-05 the differentiator — see ConcernVariant. */
+  variant?: ConcernVariant;
+  /** C-06 where it appears. Omitted on archetype B; becomes "Non-surgical vs
+   *  surgical" on E and "Body location" on C. */
+  locationBlock?: {
+    heading: string;
+    intro?: string;
+    cards: { title: string; body: string }[];
+    /** Closing differential card, e.g. "Not typical acne?". */
+    note?: { title: string; body: string };
+  };
+  /** C-07 when to see a doctor. Carries extra weight on archetype D
+   *  (`expandBlock07`) and becomes "what a doctor checks first" on C. */
+  seeDoctor?: { heading?: string; intro: string; triggers: string[]; outro?: string };
+  /** C-08 mid-page CTA — the primary of three permitted CTAs (rule R-06). */
+  ctaMid?: { heading: string; body: string };
+  /** C-09 lead sentence. Authored per concern because the generic template
+   *  ("treatments for {name}-related concerns") produces "excessive
+   *  sweating-related concerns" (spec bug B-05). */
+  treatmentsIntro?: string;
+  /** C-09 the mandatory concern-specific "why for X" line per treatment slug.
+   *  Must be unique across all 14 concern pages (rule R-04) — enforced by
+   *  scripts/validate-concerns.mjs, not by review. */
+  treatmentWhy?: Record<string, { why: string; body: string }>;
+  /** C-09 closing honesty note, e.g. "lasers are not first-line for active acne". */
+  treatmentsNote?: string;
+  /** C-10 comparison table (Full depth only — a table needs 4+ things to
+   *  compare). Column headers must not rank: "Commonly considered", never
+   *  "Best suited" (rule R-02). */
+  compare?: {
+    intro: string;
+    columns: string[];
+    rows: string[][];
+    note?: string;
+  };
+  /** C-11 manufacturer images. Labelled in four places or omitted (rule R-07). */
+  manufacturerImages?: { src: string; alt: string; caption: string }[];
+  /** C-12 what the first visit involves. 4 numbered steps. */
+  firstVisit?: { intro: string; steps: { title: string; body: string }[]; outro?: string };
+  /** C-13 risks and realistic limits. `items` must include at least one thing
+   *  treatment cannot do, and a pigment-change note where energy devices are
+   *  listed (rule R-05). */
+  risks?: { intro?: string; items: LeadIn[]; disclose: string };
+  /** C-14 what affects cost — factors only, no figures (rule R-03). */
+  costFactors?: { intro: string; factors: string[]; outro?: string };
+  /** C-15 lead sentence above the technology chips. A bare logo wall says
+   *  nothing; this frames multiple platforms as "the device is matched to you". */
+  technologyIntro?: string;
+  /** C-17 related concerns, each with a one-line reason for the relationship. */
+  relatedConcerns?: { slug: string; reason: string }[];
+
   reviewedBy: string;
   lastReviewed: string;
   /** SEO-optimized <title>, 50–60 chars, brand baked in (docs/10). */

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { COMPLIANCE_READY } from "@/lib/site";
 
 // Brand OG fallback. ponytail: reusing the hero photo; swap for a purpose-built
 // 1200×630 branded share card (e.g. public/brand/og-default.jpg) before launch.
@@ -8,8 +9,12 @@ const DEFAULT_OG_IMAGE = "/images/hero/hero-subject.png";
  * Set NEXT_PUBLIC_NOINDEX=1 on staging. A canonical to production does NOT stop
  * Google indexing a staging host (spec bugs B-08 / TB-14) — this forces
  * `noindex, nofollow` site-wide and flips /robots.txt to Disallow: /.
+ *
+ * It is also forced while the KKLIU / company number are unset (spec bug B-02):
+ * these pages are advertising under Malaysian rules and cannot be publicly
+ * indexable carrying a placeholder approval number, whatever host they are on.
  */
-export const NOINDEX_SITE = process.env.NEXT_PUBLIC_NOINDEX === "1";
+export const NOINDEX_SITE = process.env.NEXT_PUBLIC_NOINDEX === "1" || !COMPLIANCE_READY;
 
 export interface PageMetaInput {
   /** Full <title> (50–60 chars, brand already baked in). Set as-is via title.absolute

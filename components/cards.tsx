@@ -351,6 +351,10 @@ export function ProductCard({ p, className = "", style }: { p: Product } & Extra
           </div>
           <a
             href={waForProduct(p.name)}
+            target="_blank"
+            rel="noopener"
+            data-ga="cta_click"
+            data-ga-cta_position="product"
             aria-label={`Order ${p.name} on WhatsApp`}
             className="mt-3 flex w-full items-center justify-center gap-2 rounded-full bg-cta px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-cta-hover"
           >

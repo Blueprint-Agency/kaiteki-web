@@ -1,0 +1,133 @@
+// Concern-template QA gate (spec §08). Every check here is a rule that would
+// otherwise be caught in review, or not at all:
+//
+//   Q-02  depth matches the registry: full = 12 FAQs + comparison table,
+//         lite  = 8 FAQs and NO comparison table
+//   Q-03  every "why for X" line is unique across all 14 concern pages
+//   Q-04  zero outcome promises, superiority words or prices
+//   Q-05  the risks block names at least one thing treatment cannot do
+//   Q-07  the reviewer resolves to a real doctor with credentials
+//   Q-08  bottom-CTA heading and body are concern-specific
+//   Q-10  every jump-nav anchor resolves to a block the page actually renders
+//   Q-13  jump nav is at most 7 items
+//
+// Run: pnpm validate:concerns   (exits non-zero on any failure)
+import { concerns } from "../content/data/concerns.ts";
+import { doctorBySlug } from "../content/data/doctors.ts";
+import registry from "../config/concerns.json" with { type: "json" };
+import type { Concern } from "../lib/types.ts";
+
+const errors: string[] = [];
+const warnings: string[] = [];
+const fail = (slug: string, id: string, msg: string) => errors.push(`${slug} · ${id}: ${msg}`);
+
+// Q-04 — the banned-language sweep, run over every string the page renders.
+const BANNED: [RegExp, string][] = [
+  [/\bbest\b/i, "superiority claim 'best' (R-02) — use 'commonly considered'"],
+  [/\bmost effective\b/i, "superiority claim (R-02)"],
+  [/\bindustry[- ]leading\b/i, "superiority claim (R-02)"],
+  [/\bguarantee/i, "outcome promise (R-01)"],
+  [/\bresults? in \d/i, "outcome promise with a timeframe (R-01)"],
+  [/\bRM\s?\d/i, "price (R-03)"],
+  [/\bfrom RM\b/i, "price (R-03)"],
+];
+
+const headingAnchor = (h: string) =>
+  h.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+/** The anchor ids ConcernView actually renders, given the authored data. */
+function anchorsOf(c: Concern): string[] {
+  return [
+    ...(c.sections ?? []).map((s) => headingAnchor(s.heading)),
+    c.drivers && "causes",
+    c.variant && "which-type",
+    c.locationBlock && "where",
+    c.seeDoctor && "see-a-doctor",
+    c.treatments.length > 0 && "treatments",
+    c.compare && "compare",
+    c.firstVisit && "first-visit",
+    c.risks && "risks",
+    c.costFactors && "cost",
+    "technology",
+    c.faqs?.length && "faq",
+  ].filter((x): x is string => typeof x === "string");
+}
+
+const seenWhy = new Map<string, string>();
+
+for (const c of concerns) {
+  const entry = registry.concerns.find((r) => r.slug === c.slug);
+  if (!entry) {
+    fail(c.slug, "Q-01", "not in config/concerns.json — stop and ask, do not guess an archetype");
+    continue;
+  }
+
+  // Q-02 — depth. A page with no FAQs at all is unwritten, not wrong.
+  const want = registry.depthRules[entry.depth as "full" | "lite"];
+  const faqCount = c.faqs?.length ?? 0;
+  if (faqCount !== want.faqCount) {
+    const msg = `${c.slug} · Q-02: ${entry.depth} depth expects ${want.faqCount} FAQs, has ${faqCount}`;
+    (faqCount < 4 ? warnings : errors).push(msg);
+  }
+  if (entry.depth === "lite" && c.compare) {
+    fail(c.slug, "Q-02", "lite depth must omit the comparison table (block 10)");
+  }
+  if (entry.depth === "full" && c.treatments.length < registry.depthRules.full.minTreatments) {
+    fail(c.slug, "Q-02", `full depth needs ${registry.depthRules.full.minTreatments}+ treatments`);
+  }
+
+  // Q-03 — the "why for X" line must be unique across all concern pages (R-04).
+  // This is the only thing stopping five pages that share a treatment list from
+  // competing for the same terms, so a duplicate is a failure, not a warning.
+  for (const [slug, w] of Object.entries(c.treatmentWhy ?? {})) {
+    const key = w.why.trim().toLowerCase();
+    const prev = seenWhy.get(key);
+    if (prev) fail(c.slug, "Q-03", `"why for X" on ${slug} duplicates ${prev} (R-04)`);
+    else seenWhy.set(key, `${c.slug}/${slug}`);
+  }
+  const missingWhy = c.treatments.filter((t) => !c.treatmentWhy?.[t]);
+  if (missingWhy.length) {
+    warnings.push(`${c.slug} · Q-03: no "why for X" line for ${missingWhy.join(", ")} (R-04)`);
+  }
+
+  // Q-04 — banned language over the whole authored object.
+  const prose = JSON.stringify(c);
+  for (const [re, why] of BANNED) {
+    const hit = prose.match(re);
+    if (hit) fail(c.slug, "Q-04", `${why} — found "${hit[0]}"`);
+  }
+
+  // Q-05 — the risks block must name at least one real limit.
+  if (
+    c.risks &&
+    !c.risks.items.some((i) => /cannot|can't|rarely|does not|will not|is not/i.test(i.lead + i.body))
+  ) {
+    fail(c.slug, "Q-05", "risks block names nothing treatment cannot do (R-05)");
+  }
+
+  // Q-07 — reviewer resolves to a credentialed doctor (spec bug B-01).
+  const d = doctorBySlug(c.reviewedBy);
+  if (!d) fail(c.slug, "Q-07", `reviewedBy "${c.reviewedBy}" does not resolve to a doctor`);
+  else if (!d.mmc && !d.credentials) fail(c.slug, "Q-07", `${d.fullName} has no credentials or MMC`);
+
+  // Q-08 — the bottom CTA must not fall back to the template default.
+  if (!c.ctaHeading || !c.ctaAssesses) {
+    warnings.push(`${c.slug} · Q-08: bottom CTA falls back to the default string (B-03/B-04)`);
+  }
+
+  // Q-10 / Q-13 — jump nav.
+  const anchors = new Set(anchorsOf(c));
+  for (const j of c.jumpNav ?? []) {
+    if (!anchors.has(j.id)) {
+      fail(c.slug, "Q-10", `jump nav "${j.label}" → #${j.id}, which no rendered block owns`);
+    }
+  }
+  if ((c.jumpNav?.length ?? 0) > 7) fail(c.slug, "Q-13", "jump nav exceeds 7 items (R-13)");
+}
+
+for (const w of warnings) console.warn(`  warn  ${w}`);
+for (const e of errors) console.error(`  FAIL  ${e}`);
+console.log(
+  `\n${concerns.length} concerns checked · ${errors.length} failures · ${warnings.length} warnings`,
+);
+process.exit(errors.length ? 1 : 0);

@@ -1,6 +1,20 @@
-// Brand constants + primary navigation (docs/04 §4). SAMPLE compliance values
-// (KKLIU/registration) are placeholders pending real MAB approvals (docs/05 §8).
+// Brand constants + primary navigation (docs/04 §4).
 import { branches } from "@/content/data/branches";
+
+/**
+ * Spec bug B-02 — the footer shipped `KKLIU 0000/2026 (sample)` and
+ * `Co. No. — pending`, which legally blocks public indexing (website content
+ * for aesthetic services is advertising in Malaysia and needs MAB approval).
+ *
+ * Both now come from the environment, and their absence is what forces the
+ * whole site `noindex` (see lib/seo.ts) — so the placeholder can never be
+ * indexed by anyone forgetting a flag. Set both in .env to go live.
+ */
+const KKLIU = process.env.NEXT_PUBLIC_KKLIU?.trim();
+const COMPANY_NO = process.env.NEXT_PUBLIC_COMPANY_NO?.trim();
+
+/** False until the real MAB advertisement ref and company number are supplied. */
+export const COMPLIANCE_READY = Boolean(KKLIU && COMPANY_NO);
 
 export const site = {
   name: "Kaiteki Skin Aesthetic Clinic",
@@ -10,9 +24,8 @@ export const site = {
   positioning: "MOH-licensed skin & aesthetic clinic, 9 branches across Malaysia.",
   instagram: "https://instagram.com/kaiteki.my",
   facebook: "https://facebook.com/mykaiteki",
-  // Placeholders pending client data (docs/05 §9).
-  entity: "Kaiteki Clinic Sdn Bhd (Co. No. — pending)",
-  kkliu: "KKLIU 0000/2026 (sample)",
+  entity: COMPANY_NO ? `Kaiteki Clinic Sdn Bhd (${COMPANY_NO})` : "Kaiteki Clinic Sdn Bhd",
+  kkliu: KKLIU ?? "Advertisement approval pending",
   mmcNote: "All treatments are performed by MMC-registered doctors.",
 } as const;
 
