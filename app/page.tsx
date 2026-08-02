@@ -10,6 +10,7 @@ import { TreatmentsMenu } from "@/components/TreatmentsMenu";
 import { HowItWorks } from "@/components/HowItWorks";
 import { DoctorsFeature } from "@/components/DoctorsFeature";
 import { BranchStrip } from "@/components/BranchStrip";
+import { GoogleReviews } from "@/components/GoogleReviews";
 import { ClosingCta } from "@/components/ClosingCta";
 import { HomeFaq } from "@/components/HomeFaq";
 import { PromoModal } from "@/components/PromoModal";
@@ -107,6 +108,10 @@ export default function Home() {
       <DoctorsFeature />
       <WhyKaiteki />
       <RecognitionCabinet />
+      {/* Compliance: patient testimonials are restricted under MAB 1/2023 &
+          3/2023 — see the note in content/data/reviews.ts. Delete this line to
+          remove the block. */}
+      <GoogleReviews />
       <BranchStrip />
       <ClosingCta />
       <HomeFaq />

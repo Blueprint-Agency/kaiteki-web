@@ -322,6 +322,13 @@ export interface Branch {
   hours: string[];
   /** Google Maps share link. */
   mapUrl: string;
+  /** Star rating + review count read off this branch's Google Business Profile
+   *  (see GOOGLE_REVIEWS_READ_ON in branches.ts for the date). Rendered as a
+   *  link-out trust signal only — deliberately NOT emitted as AggregateRating
+   *  schema: docs/02 §5 says keep ratings on the GBP, and self-serving review
+   *  markup is ineligible for rich results. */
+  googleRating?: number;
+  googleReviewCount?: number;
   /** Machine-readable hours mirroring `hours` — drives openingHoursSpecification.
    *  Day names are schema.org long form ("Monday"). */
   hoursSpec?: { days: string[]; opens: string; closes: string }[];
@@ -343,6 +350,19 @@ export interface Branch {
   seoTitle?: string;
   /** SEO meta description, 140–160 chars (docs/10). */
   seoDescription?: string;
+}
+
+export interface GoogleReview {
+  /** Reviewer's public Google display name, as shown on the profile. */
+  author: string;
+  rating: number;
+  /** Month posted, e.g. "Jul 2026". Absolute on purpose: a statically built
+   *  page cannot keep a "3 weeks ago" relative date honest. */
+  posted: string;
+  /** Verbatim review text — never reworded or paraphrased. Excerpts of longer
+   *  reviews are cut at a sentence boundary and end in "…"; the card links to
+   *  the full review on Google. */
+  text: string;
 }
 
 export interface Doctor {
