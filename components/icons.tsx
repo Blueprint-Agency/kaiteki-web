@@ -140,6 +140,40 @@ export function WhatsApp({ className, size = 20 }: IconProps) {
   );
 }
 
+/** Google "G" in its four official brand colours — used only to attribute
+ *  reviews to their source, which is what the Google Maps badge guidelines ask
+ *  for. Not tinted to the Kaiteki palette: a recoloured G is an altered logo. */
+export function GoogleG({ className, size = 20 }: IconProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" aria-hidden className={className}>
+      <path fill="#4285F4" d="M23.52 12.273c0-.851-.076-1.67-.218-2.455H12v4.642h6.458a5.52 5.52 0 0 1-2.395 3.622v3.01h3.878c2.269-2.088 3.579-5.165 3.579-8.819" />
+      <path fill="#34A853" d="M12 24c3.24 0 5.956-1.075 7.941-2.908l-3.878-3.01c-1.075.72-2.45 1.145-4.063 1.145-3.125 0-5.77-2.11-6.714-4.946H1.276v3.109A11.995 11.995 0 0 0 12 24" />
+      <path fill="#FBBC05" d="M5.286 14.281A7.212 7.212 0 0 1 4.909 12c0-.791.136-1.56.377-2.281V6.61H1.276A11.995 11.995 0 0 0 0 12c0 1.937.464 3.77 1.276 5.39z" />
+      <path fill="#EA4335" d="M12 4.773c1.762 0 3.343.606 4.587 1.795l3.44-3.44C17.951 1.19 15.235 0 12 0 7.309 0 3.25 2.69 1.276 6.61l4.01 3.109C6.23 6.882 8.875 4.773 12 4.773" />
+    </svg>
+  );
+}
+
+/** Single star. `filled` draws the gold review star; empty draws the outline so a
+ *  4-star row is visibly four, not five. */
+export function Star({ className, size = 16, filled = true }: IconProps & { filled?: boolean }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill={filled ? "currentColor" : "none"}
+      stroke="currentColor"
+      strokeWidth={filled ? 0 : 1.5}
+      strokeLinejoin="round"
+      aria-hidden
+      className={className}
+    >
+      <path d="m12 2.5 2.9 5.88 6.49.945-4.695 4.576 1.108 6.462L12 17.31l-5.803 3.052 1.108-6.462L2.61 9.325l6.49-.945z" />
+    </svg>
+  );
+}
+
 export function Instagram({ className, size = 20 }: IconProps) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden className={className}>

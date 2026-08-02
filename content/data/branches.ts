@@ -9,6 +9,13 @@ import type { Branch } from "@/lib/types";
 // local-SEO uniqueness — CLIENT TO VERIFY before launch. `lat`/`lng` left unset
 // on purpose (no fabricated coordinates); fill from clinic records to light up
 // schema `geo` + the map pack.
+// `googleRating`/`googleReviewCount` are a manual snapshot of each branch's
+// Google Business Profile, read on this date. Static on purpose — no Places API
+// key, no third-party widget (both cost money and neither is crawlable). The
+// figures drift, so the page dates them rather than implying they're live.
+// ponytail: refresh by re-reading each mapUrl; automate only if it becomes a chore.
+export const GOOGLE_REVIEWS_READ_ON = "2026-08-02";
+
 const STD_HOURS = ["Mon–Fri: 10am–7pm", "Sat–Sun: 10:30am–6pm"];
 const WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 const WEEKEND = ["Saturday", "Sunday"];
@@ -24,6 +31,7 @@ export const branches: Branch[] = [
     address: "LOT LG3-2-LG3-3A, LG 3 Level, ARCORIS Plaza, 10 Jalan Kiara, Mont Kiara, 50480 Kuala Lumpur",
     phone: "+6011-3332 5126", hours: STD_HOURS, hoursSpec: STD_SPEC,
     mapUrl: "https://maps.app.goo.gl/BRJmHruQb9QMEYVE6",
+    googleRating: 4.9, googleReviewCount: 147,
     lat: 3.1674598, lng: 101.6524178,
     gettingHere: "Kaiteki Mont Kiara sits on the LG3 level of Arcoris Plaza on Jalan Kiara, in the heart of Mont Kiara. Covered mall parking is available on site.",
     parking: "Covered parking at Arcoris Plaza.",
@@ -37,6 +45,7 @@ export const branches: Branch[] = [
     address: "G-11, Wisma Aman Elite, Jalan Desa Aman 1, Desa Aman, 56100 Kuala Lumpur",
     phone: "+6010-381 8170", hours: STD_HOURS, hoursSpec: STD_SPEC,
     mapUrl: "https://maps.app.goo.gl/o1ZjrDXVU63RpjbM7",
+    googleRating: 5.0, googleReviewCount: 224,
     lat: 3.0949371, lng: 101.7396651,
     gettingHere: "Kaiteki Cheras is on the ground floor of Wisma Aman Elite along Jalan Desa Aman 1. On-street and building parking are available nearby.",
     parking: "Street and building parking nearby.",
@@ -50,6 +59,7 @@ export const branches: Branch[] = [
     address: "C-5-G, Jalil Link 2, No 5, Jalan Jalil Perkasa 1, Bukit Jalil, 57000 Kuala Lumpur",
     phone: "+6011-3301 7188", hours: STD_HOURS, hoursSpec: STD_SPEC,
     mapUrl: "https://maps.app.goo.gl/eQaG35pEVW5RPjGx8",
+    googleRating: 4.9, googleReviewCount: 424,
     lat: 3.0522998, lng: 101.6786783,
     gettingHere: "Kaiteki Bukit Jalil is at Jalil Link 2 on Jalan Jalil Perkasa 1, close to Bukit Jalil City. Ground-level parking is available around the shoplots.",
     parking: "Ground-level parking around Jalil Link.",
@@ -69,6 +79,8 @@ export const branches: Branch[] = [
       { days: WEEKEND, opens: "10:30", closes: "18:00" },
     ],
     mapUrl: "https://maps.app.goo.gl/crfDAoT2oGYAc9bP8",
+    // GBP for this branch is listed under the La Jung sub-brand (see alsoKnownAs).
+    googleRating: 4.7, googleReviewCount: 25,
     lat: 3.1579864, lng: 101.7136884,
     gettingHere: "Kaiteki Four Seasons is on Level 4A of the Shoppes at Four Seasons Place on Jalan Ampang, by KLCC. Valet and mall parking are available. Note: closed on Thursdays.",
     parking: "Valet and mall parking at Four Seasons Place.",
@@ -82,6 +94,7 @@ export const branches: Branch[] = [
     address: "B-1-03, The Hub SS2, 19 Sentral, Jalan Harapan, Seksyen 19, 46300 Petaling Jaya, Selangor",
     phone: "+6010-368 1400", hours: STD_HOURS, hoursSpec: STD_SPEC,
     mapUrl: "https://maps.app.goo.gl/nm3aAT2CikD3pXLb8",
+    googleRating: 4.9, googleReviewCount: 372,
     lat: 3.1237148, lng: 101.6289326,
     gettingHere: "Kaiteki Petaling Jaya is at The Hub SS2 (19 Sentral) on Jalan Harapan, Seksyen 19. Covered building parking is available on site.",
     parking: "Covered parking at The Hub SS2.",
@@ -95,6 +108,7 @@ export const branches: Branch[] = [
     address: "6-1, 8 Jalan Anggerik Vanilla BE31/BE, Kota Kemuning, Seksyen 31, 40460 Shah Alam, Selangor",
     phone: "+6012-686 6818", hours: STD_HOURS, hoursSpec: STD_SPEC,
     mapUrl: "https://maps.app.goo.gl/2ymU6QX2maTupLWJ9",
+    googleRating: 5.0, googleReviewCount: 451,
     lat: 3.0039713, lng: 101.5364495,
     gettingHere: "Kaiteki Kota Kemuning is on Jalan Anggerik Vanilla in Kota Kemuning, Seksyen 31, Shah Alam. On-street parking is available in front of the shoplots.",
     parking: "On-street parking by the shoplots.",
@@ -108,6 +122,7 @@ export const branches: Branch[] = [
     address: "No 01-10 Block G, Komersil Southkey Mozek, Persiaran Southkey 1, 80150 Kota Southkey, Johor",
     phone: "+6014-337 5126", hours: STD_HOURS, hoursSpec: STD_SPEC,
     mapUrl: "https://maps.app.goo.gl/ZZE3nJPccPvcL8Sp9",
+    googleRating: 5.0, googleReviewCount: 548,
     lat: 1.4968249, lng: 103.777061,
     gettingHere: "Kaiteki Southkey is at Komersil Southkey Mozek on Persiaran Southkey 1, beside the Mid Valley Southkey precinct. Ample parking is available in the commercial area.",
     parking: "Commercial-area parking beside Mid Valley Southkey.",
@@ -121,6 +136,7 @@ export const branches: Branch[] = [
     address: "12, Blok C, Pusat Komersial Pelangi, Jln Sri Pelangi 4, Taman Pelangi, 80400 Johor Bahru, Johor",
     phone: "+6016-930 0138", hours: STD_HOURS, hoursSpec: STD_SPEC,
     mapUrl: "https://maps.app.goo.gl/pg1Y6ouZFg7QAPZL6",
+    googleRating: 5.0, googleReviewCount: 202,
     lat: 1.4834502, lng: 103.7733636,
     gettingHere: "Kaiteki Pelangi is at Pusat Komersial Pelangi on Jalan Sri Pelangi 4, Taman Pelangi. On-street parking is available around the commercial blocks.",
     parking: "On-street parking around the commercial blocks.",
@@ -136,6 +152,7 @@ export const branches: Branch[] = [
     hours: ["Daily: 10:30am–7pm"],
     hoursSpec: [{ days: [...WEEKDAYS, ...WEEKEND], opens: "10:30", closes: "19:00" }],
     mapUrl: "https://maps.app.goo.gl/7kKAjSdWaALGxMT58",
+    googleRating: 5.0, googleReviewCount: 42,
     lat: 5.9711659, lng: 116.0659065,
     gettingHere: "Kaiteki Kota Kinabalu is on the first floor of Imago Shopping Mall (KK Times Square), off the Coastal Highway. Covered mall parking is available; open daily.",
     parking: "Covered mall parking at Imago / KK Times Square.",

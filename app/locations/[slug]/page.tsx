@@ -11,6 +11,7 @@ import { ConcernPicker } from "@/components/ConcernPicker";
 import { Faq } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
 import { branches, branchBySlug } from "@/content/data/branches";
+import { GoogleReviews } from "@/components/GoogleReviews";
 import { doctors } from "@/content/data/doctors";
 import {
   treatmentCategories,
@@ -98,7 +99,8 @@ export default async function BranchPage({
   // Per-branch MedicalClinic node (NAP, geo, hours) wired to the site graph by
   // @id — built in lib/schema.ts so all branches stay consistent.
   return (
-    <Container className="py-10 sm:py-12">
+    <>
+      <Container className="py-10 sm:py-12">
       <JsonLd data={medicalClinicNode(b)} />
       <Breadcrumbs items={[{ label: "Locations", href: "/locations" }, { label: b.name }]} />
 
@@ -288,6 +290,11 @@ export default async function BranchPage({
           </ul>
         </section>
       )}
-    </Container>
+      </Container>
+
+      {/* Full-bleed band, so it sits outside the page Container rather than
+          nesting a second one. See the compliance note in GoogleReviews.tsx. */}
+      <GoogleReviews branch={b} className="bg-tint" />
+    </>
   );
 }
