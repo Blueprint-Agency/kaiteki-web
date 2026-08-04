@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/Container";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { BranchGallery } from "@/components/BranchGallery";
 import { Ledger } from "@/components/Ledger";
 import { SectionHeading } from "@/components/SectionHeading";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
@@ -127,16 +127,10 @@ export default async function BranchPage({
           )}
         </div>
 
-        <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-hairline bg-tint">
-          <Image
-            src={b.photo}
-            alt={`Kaiteki Skin Aesthetic Clinic ${b.name} — aesthetic clinic in ${b.city}, ${b.state}`}
-            fill
-            priority
-            sizes="(max-width: 1024px) 100vw, 45vw"
-            className="object-cover"
-          />
-        </div>
+        <BranchGallery
+          photos={[b.photo, ...(b.photos ?? [])]}
+          alt={`Kaiteki Skin Aesthetic Clinic ${b.name} — aesthetic clinic in ${b.city}, ${b.state}`}
+        />
       </div>
 
       {/* "Find us" — the contact details paired with their map at matched height,

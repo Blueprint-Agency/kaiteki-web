@@ -132,7 +132,9 @@ export const branches: Branch[] = [
   },
   {
     slug: "pelangi-johor-bahru", name: "Pelangi, Johor Bahru", city: "Johor Bahru", state: "Johor", region: "Johor",
-    photo: "/images/branches/pelangi-johor-bahru.jpg",
+    // Pre-cropped to the 4:3 cover frame (storefront nudged up, reception right).
+    photo: "/images/branches/pelangi-johor-bahru-2.jpg",
+    photos: ["/images/branches/pelangi-johor-bahru-3.jpg"],
     address: "12, Blok C, Pusat Komersial Pelangi, Jln Sri Pelangi 4, Taman Pelangi, 80400 Johor Bahru, Johor",
     phone: "+6016-930 0138", hours: STD_HOURS, hoursSpec: STD_SPEC,
     mapUrl: "https://maps.app.goo.gl/pg1Y6ouZFg7QAPZL6",
