@@ -314,6 +314,9 @@ export interface Branch {
   region: Region;
   /** Photo under /public/images/branches. */
   photo: string;
+  /** Extra branch photos (storefront, interior) shown after `photo` in the
+   *  swipeable cover gallery. */
+  photos?: string[];
   /** Full street address — migrated from the live site's published NAP. */
   address: string;
   /** Public branch phone, display format (e.g. "+6011-3332 5126"). */
