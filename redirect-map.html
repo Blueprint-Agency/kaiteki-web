@@ -202,10 +202,13 @@
 <tr><td><a href="https://staging.kaiteki.my/privacy">/privacy</a></td><td class="arrow">←</td><td class="old"><code>/privacy.html</code></td><td class="code">301</td></tr>
 </table>
 
-<h2>Blog <small>— temporary until MDX migration</small></h2>
+<h2>Blog <small>— /blog is now a real section; these 301s belong on the blog host, not in next.config.ts</small></h2>
 <table>
 <tr><th>New URL</th><th></th><th>Legacy URL</th><th>Code</th></tr>
-<tr><td><code>/blog</code></td><td class="arrow">←</td><td class="old"><code>blog.kaiteki.my</code></td><td class="code">307</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/blog">/blog</a></td><td class="arrow">←</td><td class="old"><code>blog.kaiteki.my/</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/blog/alma-titanium-lifting">/blog/alma-titanium-lifting</a></td><td class="arrow">←</td><td class="old"><code>blog.kaiteki.my/alma-titanium-lifting-is-this-non-surgical-facelift-worth-it/</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/blog/discovery-pico-vs-picosure">/blog/discovery-pico-vs-picosure</a></td><td class="arrow">←</td><td class="old"><code>blog.kaiteki.my/discovery-pico-vs-picosure/</code></td><td class="code">301</td></tr>
+<tr><td><a href="https://staging.kaiteki.my/blog/wegovy-vs-mounjaro">/blog/wegovy-vs-mounjaro</a></td><td class="arrow">←</td><td class="old"><code>blog.kaiteki.my/wegovy-vs-mounjaro-which-is-better-for-you/</code></td><td class="code">301</td></tr>
 </table>
 
 <h2>Deletions <small>— legacy pages not carried over</small></h2>
@@ -216,7 +219,7 @@
 <tr class="gap"><td class="old"><code>/cn/*</code> <small>(~38 URLs)</small></td><td><code>/cn/* &rarr; /zh/*</code> when locale ships</td></tr>
 <tr class="gap"><td class="old"><code>/sg/*</code></td><td>410 Gone or &rarr; homepage (SG market dropped)</td></tr>
 <tr class="gap"><td class="old"><code>/indonesia/*</code></td><td>410 / ignore (empty placeholder)</td></tr>
-<tr class="gap"><td class="old"><code>blog.kaiteki.my/&lt;posts&gt;</code></td><td>Per-post 301s with the MDX blog migration</td></tr>
+<tr class="gap"><td class="old"><code>blog.kaiteki.my/&lt;remaining posts&gt;</code></td><td>Per-post 301s as each post is ported into <code>content/blog/</code>; source of truth is <code>legacyPath</code> in <code>content/data/blog.ts</code></td></tr>
 </table>
 
 </body>

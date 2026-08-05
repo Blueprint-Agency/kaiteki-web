@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import createMDX from "@next/mdx";
 
 const nextConfig: NextConfig = {
   // Lean container image: emit a self-contained server (.next/standalone) for Docker.
@@ -25,9 +26,6 @@ const nextConfig: NextConfig = {
   // in the deferred redirect-map pass, not here.
   async redirects() {
     return [
-      // Blog still lives on its own subdomain until it migrates to /blog.
-      { source: "/blog", destination: "https://blog.kaiteki.my", permanent: false },
-
       // --- Interim taxonomy 301s (new-URL internal moves, IA v2) ---
       { source: "/treatments/coolsculpting", destination: "/technology/coolsculpting", statusCode: 301 },
       { source: "/treatments/onda", destination: "/technology/onda-coolwaves", statusCode: 301 },
@@ -111,4 +109,19 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+// MDX for /blog bodies (locked decision #3). Turbopack can't serialize plugin
+// *functions* through the config, so remark/rehype plugins are named as strings
+// and resolved by the loader — the documented Turbopack form.
+const withMDX = createMDX({
+  extension: /\.mdx$/,
+  options: {
+    // GFM buys us tables (the comparison posts need real <table>s, not
+    // screenshots) plus strikethrough and autolinks.
+    remarkPlugins: [["remark-gfm", {}]],
+    // Stable id="" on every heading so the article table of contents can anchor
+    // to them without hand-authored ids.
+    rehypePlugins: [["rehype-slug", {}]],
+  } as never,
+});
+
+export default withMDX(nextConfig);

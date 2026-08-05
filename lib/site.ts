@@ -48,6 +48,5 @@ export const primaryNav: NavItem[] = [
       { href: "/doctors", label: "Our doctors" },
     ],
   },
-  // Blog still lives on blog.kaiteki.my — link out (new tab) until it migrates to /blog.
-  { label: "Blog", href: "https://blog.kaiteki.my", external: true },
+  { label: "Journal", href: "/blog" },
 ];

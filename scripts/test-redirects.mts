@@ -20,7 +20,14 @@ import ts from "typescript";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const source = readFileSync(join(root, "next.config.ts"), "utf8");
 const { outputText } = ts.transpileModule(source, {
-  compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 },
+  // esModuleInterop matches tsconfig.json. Without it, next.config.ts's default
+  // import of the CJS `@next/mdx` transpiles to a bare `.default` access and
+  // blows up with "is not a function" before any redirect is read.
+  compilerOptions: {
+    module: ts.ModuleKind.CommonJS,
+    target: ts.ScriptTarget.ES2020,
+    esModuleInterop: true,
+  },
 });
 
 const tmpFile = join(root, "scripts", ".next.config.redirect-check.cjs");

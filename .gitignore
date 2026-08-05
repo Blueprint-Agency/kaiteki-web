@@ -75,3 +75,6 @@ ds-bundle/
 .design-sync/.cache/
 .design-sync/learnings/
 .design-sync/node_modules
+
+# Blog-migration working files (regenerate: pnpm blog:manifest)
+/scripts/.migration/
