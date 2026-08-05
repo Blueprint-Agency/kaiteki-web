@@ -10,6 +10,7 @@ import { ArrowRight } from "@/components/icons";
 import { JsonLd } from "@/components/JsonLd";
 import { doctors, doctorBySlug } from "@/content/data/doctors";
 import { branchBySlug } from "@/content/data/branches";
+import { pagesReviewedBy } from "@/content/data/relations";
 import { site } from "@/lib/site";
 import { waForDoctor } from "@/lib/wa";
 import { pageMeta } from "@/lib/seo";
@@ -55,6 +56,7 @@ export default async function DoctorPage({
   const branchNames = d.branches
     .map((b) => branchBySlug(b)?.name)
     .filter((name): name is string => Boolean(name));
+  const reviewed = pagesReviewedBy(d.slug);
 
   return (
     <Container className="py-10 sm:py-12">
@@ -114,6 +116,31 @@ export default async function DoctorPage({
         )}
       </div>
 
+      {reviewed.length > 0 && (
+        <section className="mt-14 border-t border-hairline pt-8">
+          <h2 className="font-serif text-2xl font-semibold text-espresso">
+            Guides reviewed by {shortName}
+          </h2>
+          <p className="mt-3 max-w-[64ch] text-lg leading-relaxed text-ink-700">
+            {shortName} is the named medical reviewer for the treatment and concern guides
+            below. Every clinical page on this site carries the name of the MMC-registered
+            doctor who checked it, so you can see who stands behind what you are reading.
+          </p>
+          <ul className="mt-5 flex flex-wrap gap-2">
+            {reviewed.map((p) => (
+              <li key={p.href}>
+                <Link
+                  href={p.href}
+                  className="inline-block rounded-full border border-hairline px-4 py-1.5 text-sm text-ink-700 transition-colors hover:border-accent hover:text-accent"
+                >
+                  {p.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       <div className="mt-14 border-t border-hairline pt-6">
         <Link
           href="/doctors"
@@ -122,11 +149,6 @@ export default async function DoctorPage({
           <ArrowRight size={16} className="rotate-180" /> All doctors
         </Link>
       </div>
-
-      <p className="mt-8 text-sm text-ink-500">
-        MMC registration numbers are pending confirmation and will be added to each profile
-        before launch.
-      </p>
     </Container>
   );
 }

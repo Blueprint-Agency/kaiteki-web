@@ -48,6 +48,7 @@ const nextConfig: NextConfig = {
       // Core pages
       { source: "/index.html", destination: "/", statusCode: 301 },
       { source: "/our-clinics.php", destination: "/locations", statusCode: 301 },
+      { source: "/our-clinics", destination: "/locations", statusCode: 301 },
       { source: "/services.html", destination: "/treatments", statusCode: 301 },
       { source: "/skincare.html", destination: "/products", statusCode: 301 },
       { source: "/privacy.html", destination: "/privacy", statusCode: 301 },

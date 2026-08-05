@@ -53,10 +53,6 @@ export default function DoctorsHub() {
           <DoctorCard key={d.slug} d={d} />
         ))}
       </CardRow>
-      <p className="mt-8 text-sm text-ink-500">
-        MMC registration numbers are pending confirmation and will be added to each profile
-        before launch.
-      </p>
     </Container>
   );
 }
