@@ -1,5 +1,5 @@
 import type { Concern, Technology, Treatment } from "@/lib/types";
-import { treatments } from "./treatments";
+import { treatments, treatmentHref } from "./treatments";
 import { concerns } from "./concerns";
 import { technology } from "./technology";
 
@@ -54,6 +54,19 @@ export function concernsOfTechnology(techSlug: string): Concern[] {
     }
   }
   return out;
+}
+
+/** Pages a doctor is the named medical reviewer of — the reverse of the
+ *  `reviewedBy` edge. Powers the reviewer list on each doctor profile (E-E-A-T:
+ *  the credential claim and the reviewed content link to each other). */
+export function pagesReviewedBy(doctorSlug: string): { name: string; href: string }[] {
+  return [
+    ...treatments.filter((t) => t.reviewedBy === doctorSlug).map((t) => ({ name: t.name, href: treatmentHref(t) })),
+    ...concerns.filter((c) => c.reviewedBy === doctorSlug).map((c) => ({ name: c.name, href: `/concerns/${c.slug}` })),
+    ...technology
+      .filter((x) => x.reviewedBy === doctorSlug)
+      .map((x) => ({ name: x.name, href: `/technology/${x.slug}` })),
+  ];
 }
 
 /** Technology reachable from a concern, unioned over its treatments (deduped). */
