@@ -25,7 +25,7 @@ export function generateStaticParams() {
  *  page can never say different things. */
 function copy(category: string, count: number) {
   return {
-    title: `${category} Articles | Kaiteki Journal`,
+    title: `${category} Articles | Kaiteki Blog`,
     description: `${count} article${count === 1 ? "" : "s"} on ${category.toLowerCase()}, written and medically reviewed by the MMC-registered doctors at Kaiteki Skin Aesthetic Clinic.`,
   };
 }
@@ -71,8 +71,8 @@ export default async function BlogCategoryArchive({
       />
 
       <PageHeader
-        crumbs={[{ label: "Journal", href: "/blog" }, { label: category }]}
-        eyebrow="Journal"
+        crumbs={[{ label: "Blog", href: "/blog" }, { label: category }]}
+        eyebrow="Blog"
         title={category}
         description={description}
       />

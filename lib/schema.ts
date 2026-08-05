@@ -327,7 +327,7 @@ export function blogNode({
     "@type": "Blog",
     "@id": `${url}#blog`,
     url,
-    name: `${site.name}: Skin & Aesthetic Journal`,
+    name: `${site.name}: Skin & Aesthetic Blog`,
     description,
     inLanguage: "en-MY",
     isPartOf: { "@id": websiteId },
