@@ -64,7 +64,7 @@ export function SiteHeader() {
     >
       <Container>
         <div className="flex h-[68px] items-center justify-between gap-6">
-          <Link href="/" className="shrink-0" aria-label="Kaiteki — home">
+          <Link href="/" className="shrink-0" aria-label="Kaiteki home">
             <Image
               src="/brand/kaiteki-logo.png"
               alt="Kaiteki Skin Aesthetic Clinic"

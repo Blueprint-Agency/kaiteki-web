@@ -424,6 +424,73 @@ export interface Product {
   concerns?: string[];
 }
 
+/**
+ * Blog taxonomy. Deliberately a short, closed list rather than the legacy
+ * WordPress blog's ~20 overlapping categories (Acne / Acne Scars / Aging /
+ * Pigmentation … duplicated the /concerns hub and split link equity across
+ * near-empty archives). Concern- and treatment-level topicality is carried by
+ * `concerns[]` / `treatments[]` below, which cross-link to the real hub pages
+ * instead of minting a parallel taxonomy (docs/02 §4, docs/04 §3).
+ */
+export type PostCategory =
+  | "Treatments Explained"
+  | "Skin Concerns"
+  | "Device & Injectables"
+  | "Weight & Wellness"
+  | "Skincare";
+
+/**
+ * A /blog article. Metadata lives here (typed, validated, feeds the hub, the
+ * sitemap and the JSON-LD); the body lives beside it as `content/blog/<slug>.mdx`
+ * so long-form prose keeps inline links, tables and emphasis.
+ *
+ * YMYL note: `author` and `reviewedBy` are doctor slugs from content/data/doctors.
+ * Every post carries a named, MMC-registered medical author — the E-E-A-T signal
+ * Google's health guidance leans on (docs/02 §5).
+ */
+export interface Post {
+  slug: string;
+  /** Visible H1. */
+  title: string;
+  /** Full <title> if it should differ from the H1 (50–60 chars). */
+  seoTitle?: string;
+  /** Meta description + card/summary copy, 140–160 chars. */
+  description: string;
+  category: PostCategory;
+  /** Hero + share image under /public/images/blog. Optional: posts without
+   *  commissioned photography fall back to a warm generated motif (BlogMotif),
+   *  the same approach treatments take. 65 of the legacy posts have no featured
+   *  image, so this is the norm during the migration, not the exception. */
+  image?: string;
+  /** Descriptive alt for the hero image. Required whenever `image` is set. */
+  imageAlt?: string;
+  /** Doctor slug — the byline. */
+  author: string;
+  /** Doctor slug of the medical reviewer. Defaults to the author when unset. */
+  reviewedBy?: string;
+  /** ISO date first published. */
+  publishedAt: string;
+  /** ISO date last substantively updated / medically re-reviewed. */
+  updatedAt?: string;
+  /** Estimated read time in minutes (shown on cards and the byline). */
+  readingMinutes: number;
+  /** 40–60 word answer-first capsule, mirrors treatment/concern pages (docs/05 §1.3). */
+  leadAnswer: string;
+  /** Concern slugs this post relates to — drives blog → /concerns internal links. */
+  concerns?: string[];
+  /** Treatment slugs this post relates to — drives blog → /treatments links. */
+  treatments?: string[];
+  /** Technology slugs this post relates to — drives blog → /technology links. */
+  technology?: string[];
+  /** Related post slugs. Falls back to same-category posts when unset. */
+  related?: string[];
+  /** Surfaced first on the hub. At most one post should carry this. */
+  featured?: boolean;
+  /** Legacy blog.kaiteki.my path this post replaces, e.g. "/discovery-pico-vs-picosure/".
+   *  Collected here so the subdomain-level 301 map can be generated from the data. */
+  legacyPath?: string;
+}
+
 /** Device/brand-partner performance award — substantiated by the naming
  *  manufacturer, not a general "best clinic" superlative (docs/02 §5). */
 export interface Award {

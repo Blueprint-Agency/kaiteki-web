@@ -236,6 +236,113 @@ export function webPageNode({
   };
 }
 
+/** Author/reviewer identity for a blog post — a credentialed Person, inlined
+ *  rather than referenced, because cross-page @id refs don't resolve reliably in
+ *  Google's parser (same reasoning as medicalWebPageNode's `reviewer`). */
+function personNode(d: { fullName: string; slug: string; credentials?: string; mmc?: string; photo?: string }) {
+  const suffix = [d.credentials, d.mmc].filter(Boolean).join(" · ");
+  return {
+    "@type": "Person",
+    additionalType: "https://schema.org/Physician",
+    name: d.fullName,
+    url: `${site.url}/doctors/${d.slug}`,
+    ...(suffix ? { honorificSuffix: suffix } : {}),
+    ...(d.photo ? { image: `${site.url}${d.photo}` } : {}),
+    worksFor: { "@id": orgId },
+  };
+}
+
+type PostPerson = Parameters<typeof personNode>[0];
+
+/**
+ * A /blog article. Typed BlogPosting *and* MedicalWebPage: the content is
+ * editorial (BlogPosting is what Google's article guidance reads) but the
+ * subject matter is YMYL health, so the medical typing plus a named author,
+ * reviewer and `lastReviewed` carry the E-E-A-T signal (docs/02 §3, §5).
+ *
+ * Deliberately omits FAQPage/HowTo and any Review/AggregateRating — see the
+ * note at the top of this file.
+ */
+export function blogPostingGraph({
+  path,
+  headline,
+  description,
+  image,
+  datePublished,
+  dateModified,
+  author,
+  reviewer,
+  section,
+}: {
+  path: string;
+  headline: string;
+  description: string;
+  /** Omitted for posts rendering the generated motif — better to emit no
+   *  `image` than to point Google at a decorative placeholder. */
+  image?: string;
+  datePublished: string;
+  dateModified?: string;
+  author: PostPerson;
+  reviewer?: PostPerson;
+  /** Blog category, emitted as articleSection. */
+  section: string;
+}) {
+  const url = abs(path);
+  const modified = dateModified ?? datePublished;
+  return {
+    "@context": "https://schema.org",
+    "@type": ["BlogPosting", "MedicalWebPage"],
+    "@id": `${url}#article`,
+    url,
+    mainEntityOfPage: url,
+    headline,
+    description,
+    ...(image
+      ? { image: `${site.url}${image}`, primaryImageOfPage: `${site.url}${image}` }
+      : {}),
+    articleSection: section,
+    inLanguage: "en-MY",
+    isPartOf: { "@id": `${site.url}/blog#blog` },
+    datePublished,
+    dateModified: modified,
+    lastReviewed: modified,
+    author: personNode(author),
+    ...(reviewer ? { reviewedBy: personNode(reviewer) } : {}),
+    publisher: { "@id": orgId },
+  };
+}
+
+/** The /blog hub — a Blog node whose posts are listed as BlogPosting stubs, so
+ *  crawlers and answer engines get the hub→post edges without a second fetch. */
+export function blogNode({
+  description,
+  items,
+}: {
+  description: string;
+  items: { name: string; path: string; image?: string; datePublished: string }[];
+}) {
+  const url = `${site.url}/blog`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": `${url}#blog`,
+    url,
+    name: `${site.name}: Skin & Aesthetic Journal`,
+    description,
+    inLanguage: "en-MY",
+    isPartOf: { "@id": websiteId },
+    publisher: { "@id": orgId },
+    blogPost: items.map((it) => ({
+      "@type": "BlogPosting",
+      "@id": `${abs(it.path)}#article`,
+      headline: it.name,
+      url: abs(it.path),
+      ...(it.image ? { image: `${site.url}${it.image}` } : {}),
+      datePublished: it.datePublished,
+    })),
+  };
+}
+
 interface MedicalPageInput {
   /** Absolute path, e.g. "/treatments/pico-laser". */
   path: string;

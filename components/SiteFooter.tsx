@@ -76,7 +76,7 @@ export function SiteFooter() {
               { href: "/doctors", label: "Doctors" },
               { href: "/technology", label: "Device & Injectables" },
               { href: "/products", label: "Products" },
-              { href: "https://blog.kaiteki.my", label: "Blog", external: true },
+              { href: "/blog", label: "Journal" },
               { href: "/privacy", label: "Privacy" },
             ]}
           />

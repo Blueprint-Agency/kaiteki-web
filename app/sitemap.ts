@@ -5,6 +5,7 @@ import { doctors } from "@/content/data/doctors";
 import { concerns } from "@/content/data/concerns";
 import { branches } from "@/content/data/branches";
 import { technology } from "@/content/data/technology";
+import { posts, activeCategories, categorySlug } from "@/content/data/blog";
 
 // Native Next.js sitemap — served at /sitemap.xml, regenerated on each build
 // from the same data the pages render, so it never drifts out of sync.
@@ -20,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/locations",
     "/products",
     "/our-story",
+    "/blog",
     "/privacy",
   ];
 
@@ -32,6 +34,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...concerns.map((c) => ({ path: `/concerns/${c.slug}`, lastmod: c.lastReviewed })),
     ...branches.map((b) => ({ path: `/locations/${b.slug}` })),
     ...technology.map((t) => ({ path: `/technology/${t.slug}`, lastmod: t.lastReviewed })),
+    // Posts carry a real publish/review date, so they get a truthful lastmod.
+    // Category archives don't — their contents change, the page itself doesn't.
+    ...posts.map((p) => ({ path: `/blog/${p.slug}`, lastmod: p.updatedAt ?? p.publishedAt })),
+    ...activeCategories().map((c) => ({ path: `/blog/category/${categorySlug(c)}` })),
   ];
 
   return [
