@@ -76,7 +76,7 @@ export function SiteFooter() {
               { href: "/doctors", label: "Doctors" },
               { href: "/technology", label: "Device & Injectables" },
               { href: "/products", label: "Products" },
-              { href: "/blog", label: "Journal" },
+              { href: "/blog", label: "Blog" },
               { href: "/privacy", label: "Privacy" },
             ]}
           />

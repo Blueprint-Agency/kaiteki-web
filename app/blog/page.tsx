@@ -9,7 +9,7 @@ import { featuredPost, postsNewestFirst } from "@/content/data/blog";
 import { pageMeta } from "@/lib/seo";
 import { blogNode } from "@/lib/schema";
 
-const TITLE = "Skin & Aesthetic Journal | Kaiteki Malaysia";
+const TITLE = "Skin & Aesthetic Blog | Kaiteki Malaysia";
 // MAB rules bar efficacy and outcome claims in advertising copy, and a meta
 // description is advertising copy (docs/02 §8) — so this describes the writing,
 // not the results.
@@ -41,9 +41,9 @@ export default function BlogHub() {
       />
 
       <PageHeader
-        crumbs={[{ label: "Journal" }]}
+        crumbs={[{ label: "Blog" }]}
         eyebrow="Written by our doctors"
-        title="Skin &amp; Aesthetic Journal"
+        title="Skin &amp; Aesthetic Blog"
         description="What a treatment actually does, who it suits, and what it cannot do. Every article is written and reviewed by an MMC-registered doctor at Kaiteki, including the parts most clinic pages leave out."
       />
 

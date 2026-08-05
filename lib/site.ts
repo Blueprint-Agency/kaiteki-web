@@ -48,5 +48,5 @@ export const primaryNav: NavItem[] = [
       { href: "/doctors", label: "Our doctors" },
     ],
   },
-  { label: "Journal", href: "/blog" },
+  { label: "Blog", href: "/blog" },
 ];
