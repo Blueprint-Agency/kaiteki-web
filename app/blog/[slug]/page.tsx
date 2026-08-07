@@ -121,7 +121,11 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           </header>
 
           {post.image ? (
-            <div className="relative mt-8 aspect-[16/10] overflow-hidden rounded-2xl bg-tint sm:aspect-[21/9]">
+            /* Covers are authored 4:3 (1440x1080) with the headline set into
+               the artwork, so the hero matches that ratio — a wider crop cuts
+               the top and bottom off the image the client supplied. Keep new
+               covers 4:3 or this starts cropping again. */
+            <div className="relative mt-8 aspect-[4/3] overflow-hidden rounded-2xl bg-tint">
               <Image
                 src={post.image}
                 alt={post.imageAlt ?? post.title}
