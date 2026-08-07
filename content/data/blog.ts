@@ -19,7 +19,9 @@ export const posts: Post[] = [
     description:
       "How to manage eczema with the right daily routine, what triggers flares in Malaysia, and when to see a doctor. Causes, ingredients and clinic options.",
     category: "Skin Concerns",
-    // No hero supplied, so this renders the generated BlogMotif.
+    image: "/images/blog/eczema-treatment-daily-skincare-to-clinic-care.png",
+    imageAlt:
+      "Illustration of a woman with eczema patches on her arms, for a Kaiteki guide to daily skincare and in-clinic eczema care",
     author: "dr-yvonne-chuah",
     publishedAt: "2026-08-05",
     readingMinutes: 8,
@@ -34,7 +36,9 @@ export const posts: Post[] = [
     description:
       "Struggling with excessive sweating? What causes hyperhidrosis, how it is diagnosed, and the options from antiperspirants to botulinum toxin.",
     category: "Skin Concerns",
-    // No hero supplied, so this renders the generated BlogMotif.
+    image: "/images/blog/excessive-sweating-hyperhidrosis-causes-treatment.png",
+    imageAlt:
+      "Illustration of a woman blotting sweat from her face, for a Kaiteki guide to hyperhidrosis causes and treatment",
     author: "dr-joaan-kong",
     publishedAt: "2026-08-05",
     readingMinutes: 8,
@@ -50,8 +54,9 @@ export const posts: Post[] = [
     description:
       "Struggling with rough, bumpy skin? Which ingredients help keratosis pilaris, how to apply them, and when it is worth seeing a doctor.",
     category: "Skincare",
-    // No hero supplied, so this renders the generated BlogMotif. Swap in real
-    // photography (and write imageAlt) when it's available.
+    image: "/images/blog/best-moisturiser-keratosis-pilaris-when-creams-not-enough.png",
+    imageAlt:
+      "Illustration of a woman applying moisturiser beside an open cream jar, for a Kaiteki guide to keratosis pilaris moisturisers",
     author: "dr-chin-wei-horng",
     publishedAt: "2026-08-05",
     readingMinutes: 7,
