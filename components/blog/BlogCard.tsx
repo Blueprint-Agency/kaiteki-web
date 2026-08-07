@@ -90,7 +90,7 @@ export function BlogCard({
     <article className={`${shell} ${className}`}>
       <Link href={`/blog/${post.slug}`} className="flex flex-1 flex-col">
         {post.image ? (
-          <div className="relative aspect-[16/10] overflow-hidden bg-tint">
+          <div className="relative aspect-[4/3] overflow-hidden bg-tint">
             <Image
               src={post.image}
               alt={post.imageAlt ?? post.title}
@@ -101,7 +101,7 @@ export function BlogCard({
             />
           </div>
         ) : (
-          <BlogMotif slug={post.slug} className="aspect-[16/10]" />
+          <BlogMotif slug={post.slug} className="aspect-[4/3]" />
         )}
         <div className="flex flex-1 flex-col p-5">
           <PostMeta post={post} />
@@ -143,7 +143,11 @@ export function FeaturedPostCard({ post }: { post: Post }) {
     <article className={`${shell} lg:grid lg:grid-cols-2 lg:items-stretch`}>
       <Link href={`/blog/${post.slug}`} className="contents">
         {post.image ? (
-          <div className="relative aspect-[16/10] overflow-hidden bg-tint lg:aspect-auto lg:h-full lg:min-h-[22rem]">
+          /* self-start, not the row's stretch: a stretched grid item takes the
+             row height and aspect-ratio stops applying, which is what used to
+             crop the cover. The image is the taller column, so it sets the row
+             height and the copy centres against it — no gap in the card. */
+          <div className="relative aspect-[4/3] overflow-hidden bg-tint lg:self-start">
             <Image
               src={post.image}
               alt={post.imageAlt ?? post.title}
@@ -154,10 +158,7 @@ export function FeaturedPostCard({ post }: { post: Post }) {
             />
           </div>
         ) : (
-          <BlogMotif
-            slug={post.slug}
-            className="aspect-[16/10] lg:aspect-auto lg:h-full lg:min-h-[22rem]"
-          />
+          <BlogMotif slug={post.slug} className="aspect-[4/3] lg:self-start" />
         )}
         <div className="flex flex-col justify-center p-6 sm:p-9">
           <p className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.16em] text-mocha">
