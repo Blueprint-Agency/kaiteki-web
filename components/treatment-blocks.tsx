@@ -146,7 +146,10 @@ export function JumpNav({ items }: { items?: { id: string; label: string }[] }) 
       className="z-30 border-b border-hairline bg-page/90 backdrop-blur sm:sticky sm:top-[68px]"
     >
       <Container>
-        <ul className="scrollbar-none -mx-5 flex w-max gap-1 overflow-x-auto px-5 py-3.5 sm:mx-0 sm:w-auto sm:flex-wrap sm:justify-center sm:px-0">
+        {/* No w-max here: a max-content width on the scroll container itself makes
+            the box wider than the viewport, so the whole document scrolls sideways
+            instead of just this pill row. */}
+        <ul className="scrollbar-none -mx-5 flex gap-1 overflow-x-auto px-5 py-3.5 sm:mx-0 sm:flex-wrap sm:justify-center sm:px-0">
           {items.slice(0, 7).map((i) => (
             <li key={i.id}>
               <a
