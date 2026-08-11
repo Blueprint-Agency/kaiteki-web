@@ -65,7 +65,7 @@ export function PromoModal({ trigger }: { trigger?: string }) {
         </button>
         <Image
           src="/images/promos/skincare-mix-match-699.jpg"
-          alt="Kaiteki Skincare Mix & Match promotion — RM699"
+          alt="Kaiteki Skincare Mix & Match promotion: RM699"
           width={1241}
           height={1755}
           // Height-driven, so the rendered width is ~500–700px. Without `sizes`

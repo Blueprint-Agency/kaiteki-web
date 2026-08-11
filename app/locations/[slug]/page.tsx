@@ -129,7 +129,7 @@ export default async function BranchPage({
 
         <BranchGallery
           photos={[b.photo, ...(b.photos ?? [])]}
-          alt={`Kaiteki Skin Aesthetic Clinic ${b.name} — aesthetic clinic in ${b.city}, ${b.state}`}
+          alt={`Kaiteki Skin Aesthetic Clinic ${b.name}: aesthetic clinic in ${b.city}, ${b.state}`}
         />
       </div>
 
@@ -180,8 +180,9 @@ export default async function BranchPage({
               <li key={d.slug} className="text-ink-700">
                 <Link href={`/doctors/${d.slug}`} className="font-medium hover:text-espresso">
                   {d.fullName}
-                </Link>{" "}
-                — <span className="ledger !text-ink-500">{d.credentials}</span>
+                </Link>
+                {", "}
+                <span className="ledger !text-ink-500">{d.credentials}</span>
               </li>
             ))}
           </ul>
@@ -250,7 +251,7 @@ export default async function BranchPage({
           schema rule in lib/schema.ts. */}
       <section className="mt-14">
         <h2 className="h-section">
-          Kaiteki {b.name} — common questions
+          Kaiteki {b.name}: common questions
         </h2>
         <div className="mt-5">
           <Faq items={branchFaqs(b)} />

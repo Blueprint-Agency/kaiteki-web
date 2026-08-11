@@ -50,14 +50,14 @@ export function ConcernsMosaic() {
             <FlipCard
               key={c.slug}
               href={`/concerns/${c.slug}`}
-              ariaLabel={`${c.name} — read the concern guide`}
+              ariaLabel={`${c.name}, read the concern guide`}
               className="reveal w-[78%] shrink-0 snap-start sm:w-auto"
               style={si(i)}
               front={
                 <>
                   <Image
                     src={c.image}
-                    alt={`${c.name} — skin concern treated at Kaiteki Skin Aesthetic Clinic`}
+                    alt={`${c.name}, skin concern treated at Kaiteki Skin Aesthetic Clinic`}
                     fill
                     sizes="(max-width: 640px) 50vw, 33vw"
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"

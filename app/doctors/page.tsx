@@ -43,7 +43,7 @@ export default function DoctorsHub() {
           <>
             Every treatment at Kaiteki is assessed and carried out by an MMC-registered doctor,
             and every treatment guide names the doctor who reviewed it. It is the foundation of
-            how we work — and why we don&rsquo;t rely on testimonials or before-and-after photos.
+            how we work, and why we don&rsquo;t rely on testimonials or before-and-after photos.
           </>
         }
       />

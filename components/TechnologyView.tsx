@@ -53,7 +53,7 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
           {x.image ? (
             <Image
               src={x.image}
-              alt={`${x.name}${x.device ? ` (${x.device})` : ""} — aesthetic technology at Kaiteki Skin Aesthetic Clinic Malaysia`}
+              alt={`${x.name}${x.device ? ` (${x.device})` : ""}, aesthetic technology at Kaiteki Skin Aesthetic Clinic Malaysia`}
               fill
               priority
               sizes="(max-width: 768px) 100vw, 768px"

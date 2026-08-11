@@ -10,12 +10,12 @@ const reasons = [
   {
     Icon: ShieldCheck,
     title: "Doctor-led, always",
-    body: "Every plan is assessed and carried out by an MMC-registered doctor — never handed to a salesperson.",
+    body: "Every plan is assessed and carried out by an MMC-registered doctor, never handed to a salesperson.",
   },
   {
     Icon: MapPin,
     title: "Nine branches, one standard",
-    body: "Across KL, Selangor, Johor and Sabah — the same doctors and the same protocols at each.",
+    body: "Across KL, Selangor, Johor and Sabah: the same doctors and the same protocols at each.",
   },
   {
     Icon: BadgeCheck,

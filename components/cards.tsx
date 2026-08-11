@@ -122,7 +122,7 @@ export function ConcernTile({
     >
       <Image
         src={c.image}
-        alt={`${c.name} — skin concern treated at Kaiteki Skin Aesthetic Clinic`}
+        alt={`${c.name}, skin concern treated at Kaiteki Skin Aesthetic Clinic`}
         fill
         sizes={feature ? "(max-width: 640px) 100vw, 40vw" : "(max-width: 640px) 50vw, 22vw"}
         className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -151,7 +151,7 @@ export function ConcernCard({ c, priority = false, className = "", style }: { c:
       <div className="relative aspect-[16/10] overflow-hidden bg-tint">
         <Image
           src={c.image}
-          alt={`${c.name} — skin concern treated at Kaiteki Skin Aesthetic Clinic`}
+          alt={`${c.name}, skin concern treated at Kaiteki Skin Aesthetic Clinic`}
           fill
           priority={priority}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -234,7 +234,7 @@ export function DoctorCard({
       <div className={`relative ${mediaClassName} overflow-hidden bg-tint`}>
         <Image
           src={d.photo}
-          alt={`${d.fullName}, ${d.credentials} — aesthetic doctor at Kaiteki Skin Aesthetic Clinic`}
+          alt={`${d.fullName}, ${d.credentials}, aesthetic doctor at Kaiteki Skin Aesthetic Clinic`}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
@@ -305,7 +305,7 @@ export function ProductCard({ p, className = "", style }: { p: Product } & Extra
         <div className="relative aspect-square overflow-hidden bg-tint">
           <Image
             src={p.image}
-            alt={`${p.brand} ${p.name} ${p.category.toLowerCase()} — skincare at Kaiteki Skin Aesthetic Clinic`}
+            alt={`${p.brand} ${p.name} ${p.category.toLowerCase()}, skincare at Kaiteki Skin Aesthetic Clinic`}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -389,7 +389,7 @@ export function TechnologyCard({
           <div className="relative aspect-[16/10] overflow-hidden bg-tint">
             <Image
               src={x.image}
-              alt={`${x.name}${x.device ? ` (${x.device})` : ""} — aesthetic technology at Kaiteki Skin Aesthetic Clinic`}
+              alt={`${x.name}${x.device ? ` (${x.device})` : ""}, aesthetic technology at Kaiteki Skin Aesthetic Clinic`}
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"

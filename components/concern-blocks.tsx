@@ -166,7 +166,7 @@ export function TreatmentsBlock({
       <h2 className="h-section max-w-[22ch]">Treatment options at Kaiteki</h2>
       <p className="mt-6 max-w-[64ch] leading-relaxed text-ink-700">
         {c.treatmentsIntro ??
-          `These are the treatments most often considered at our clinics for ${c.name.toLowerCase()}. None of them is a default — which one is appropriate, and whether any of them is, depends on what the assessment finds.`}
+          `These are the treatments most often considered at our clinics for ${c.name.toLowerCase()}. None of them is a default. Which one is appropriate, and whether any of them is, depends on what the assessment finds.`}
       </p>
       <div className="mt-12 grid gap-x-12 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
         {options.map((t) => {

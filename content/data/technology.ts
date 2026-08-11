@@ -25,13 +25,13 @@ export const technology: Technology[] = [
         heading: "What is PicoSure?",
         body: [
           "PicoSure is a picosecond aesthetic laser made by Cynosure (United States), used at Kaiteki as one of the devices within our Pico laser treatment. Picosecond lasers fire pulses measured in trillionths of a second, which is short enough that the energy acts on pigment largely through a photomechanical shockwave rather than by heating the surrounding skin.",
-          "What separates PicoSure from most other picosecond platforms is its primary wavelength. Cynosure describes it as a 755nm picosecond laser — 755nm is the alexandrite wavelength — whereas the majority of pico devices are built around a 1064nm/532nm Nd:YAG source. The manufacturer also offers optional 532nm and 1064nm delivery systems for tattoo work. Which wavelength, and whether a pico laser suits you at all, is something a doctor decides after examining your skin at consultation.",
+          "What separates PicoSure from most other picosecond platforms is its primary wavelength. Cynosure describes it as a 755nm picosecond laser (755nm is the alexandrite wavelength), whereas the majority of pico devices are built around a 1064nm/532nm Nd:YAG source. The manufacturer also offers optional 532nm and 1064nm delivery systems for tattoo work. Which wavelength, and whether a pico laser suits you at all, is something a doctor decides after examining your skin at consultation.",
         ],
       },
       {
         heading: "How the 755nm picosecond platform works",
         body: [
-          "At 755nm, absorption by melanin is comparatively high relative to longer wavelengths, so the pulse can be aimed at pigment clusters with less energy spilling into surrounding tissue. Cynosure states that the 755nm system is indicated for tattoo and benign pigmented lesion removal, and — with the Platinum Focus™ lens array — for acne scars and wrinkles in skin types I to IV. The optional 532nm delivery is indicated by the manufacturer for tattoo removal in skin types I to III, and the optional 1064nm delivery for tattoo and benign pigmented lesions, including black ink in darker skin types.",
+          "At 755nm, absorption by melanin is comparatively high relative to longer wavelengths, so the pulse can be aimed at pigment clusters with less energy spilling into surrounding tissue. Cynosure states that the 755nm system is indicated for tattoo and benign pigmented lesion removal, and, with the Platinum Focus™ lens array, for acne scars and wrinkles in skin types I to IV. The optional 532nm delivery is indicated by the manufacturer for tattoo removal in skin types I to III, and the optional 1064nm delivery for tattoo and benign pigmented lesions, including black ink in darker skin types.",
           "Delivery is adjustable rather than one-size-fits-all: Cynosure lists a zoom handpiece covering 2–6mm and fixed handpieces at 5, 6, 8 and 10mm, a flat lens for pigment work, and the focus lens array, which concentrates energy into microscopic points in the epidermis for skin revitalisation passes. A shortened-pulse turbo mode is offered for stubborn tattoo ink. Fluence, spot size and lens are selected by the treating doctor for your skin type and concern; changes develop gradually over a course and vary between individuals.",
         ],
       },
@@ -53,7 +53,7 @@ export const technology: Technology[] = [
         heading: "Suitability & who should avoid it",
         body: [
           "Because 755nm is well absorbed by melanin, skin tone matters more with this wavelength than with a 1064nm pico laser. That is precisely why your doctor may recommend PicoSure for one patient and a 1064nm platform such as Fotona PQX for another, and why the manufacturer's own indications are limited by skin type for certain wavelengths. A doctor assesses your Fitzpatrick skin type, pigment pattern and tendency to pigment after inflammation before proposing settings.",
-          "A pico laser may not be suitable during pregnancy or breastfeeding, on recently tanned or sunburnt skin, with active skin infection or inflammation in the treatment area, with a history of keloid scarring, or while you are taking medications that increase light sensitivity — oral isotretinoin among them. Please bring your full medical, medication and skincare history to consultation, including any previous laser or peel treatments, so the doctor can advise safely.",
+          "A pico laser may not be suitable during pregnancy or breastfeeding, on recently tanned or sunburnt skin, with active skin infection or inflammation in the treatment area, with a history of keloid scarring, or while you are taking medications that increase light sensitivity, oral isotretinoin among them. Please bring your full medical, medication and skincare history to consultation, including any previous laser or peel treatments, so the doctor can advise safely.",
         ],
       },
       {
@@ -66,7 +66,7 @@ export const technology: Technology[] = [
       {
         heading: "Downtime & aftercare",
         body: [
-          "Downtime is usually short but varies between individuals and with the intensity used. Mild redness, a warm sensation and slight swelling are common for a few hours to a day or two. Where pigment has been targeted directly, small darkened flecks or fine crusting may appear and then flake away over roughly one to two weeks — these should be left alone rather than picked.",
+          "Downtime is usually short but varies between individuals and with the intensity used. Mild redness, a warm sensation and slight swelling are common for a few hours to a day or two. Where pigment has been targeted directly, small darkened flecks or fine crusting may appear and then flake away over roughly one to two weeks. These should be left alone rather than picked.",
           "Daily broad-spectrum sunscreen and strict sun avoidance are important afterwards, because sun exposure between sessions is one of the main reasons pigment concerns return. Keep skincare gentle and pause actives such as retinoids and acids until your doctor confirms it is fine to resume. You will be given aftercare instructions specific to the area treated.",
         ],
       },
@@ -80,7 +80,7 @@ export const technology: Technology[] = [
         heading: "Sessions & cost factors",
         body: [
           "What drives session count is the depth and type of pigment, the size of the area, your skin's response between visits and, for tattoos, the ink colours and how many layers were applied. Superficial sun spots generally need fewer visits than dermal pigment or a dense multicolour tattoo, and some pigment conditions such as melasma are managed on an ongoing basis rather than finished in a fixed number of sessions.",
-          "Cost follows the same variables — area, session count and whether pico work is combined with other steps in your plan. Pricing is discussed at consultation rather than quoted online, so the figure you are given reflects your actual assessed plan. Message us on WhatsApp to arrange a consultation.",
+          "Cost follows the same variables: area, session count and whether pico work is combined with other steps in your plan. Pricing is discussed at consultation rather than quoted online, so the figure you are given reflects your actual assessed plan. Message us on WhatsApp to arrange a consultation.",
         ],
       },
     ],
@@ -127,9 +127,9 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "How it works — 1064nm, 532nm and structured pulses",
+        heading: "How it works: 1064nm, 532nm and structured pulses",
         body: [
-          "The 1064nm Nd:YAG wavelength penetrates more deeply and is absorbed relatively little by melanin in the epidermis, which is why it is the wavelength usually chosen for deeper pigment and for darker skin types. The frequency-doubled 532nm output is more strongly absorbed by superficial pigment and by red-family tattoo inks. Both are delivered as very short pulses, and Fotona's ASP technology governs the structure of each pulse so the doctor can vary how the energy is packaged for the target — Fotona also builds in EFC (Energy Feedback Control), which monitors the energy of each individual pulse against the setting the practitioner selected.",
+          "The 1064nm Nd:YAG wavelength penetrates more deeply and is absorbed relatively little by melanin in the epidermis, which is why it is the wavelength usually chosen for deeper pigment and for darker skin types. The frequency-doubled 532nm output is more strongly absorbed by superficial pigment and by red-family tattoo inks. Both are delivered as very short pulses, and Fotona's ASP technology governs the structure of each pulse so the doctor can vary how the energy is packaged for the target. Fotona also builds in EFC (Energy Feedback Control), which monitors the energy of each individual pulse against the setting the practitioner selected.",
           "Delivery matters as much as the source. Alongside conventional full-beam handpieces, Fotona offers fractional handpieces for its patented FracTAT® method, in which micro-holes are first created with a fractional handpiece before a full-beam pass; Fotona explains that these micro-holes reduce frosting and act as pressure-relief ducts so gases formed during tattoo clearance can escape. A related two-step protocol, FracRevive®, combines full-spot brushing with fractional stamping for photorejuvenation. Wavelength, handpiece, spot size and energy are all selected by the treating doctor, and changes develop gradually across a course and vary between individuals.",
         ],
       },
@@ -157,7 +157,7 @@ export const technology: Technology[] = [
       {
         heading: "The session at Kaiteki",
         body: [
-          "Every plan starts with a doctor consultation and skin assessment, not a treatment. If StarWalker PQX is appropriate, the doctor decides which wavelength and handpiece to use and may treat a small test area before committing to a full session. On the day, the skin is cleansed, eye protection is fitted, and topical numbing may be used where the doctor considers it appropriate — more often for tattoo work than for a light toning pass.",
+          "Every plan starts with a doctor consultation and skin assessment, not a treatment. If StarWalker PQX is appropriate, the doctor decides which wavelength and handpiece to use and may treat a small test area before committing to a full session. On the day, the skin is cleansed, eye protection is fitted, and topical numbing may be used where the doctor considers it appropriate, more often for tattoo work than for a light toning pass.",
           "During the pass you will hear rapid clicking and feel brief snapping or hot-pinprick sensations. Superficial pigment may whiten or grey momentarily, and treated tattoo areas commonly frost. A facial session is usually a short appointment, often in the region of 20 to 40 minutes including preparation, while tattoo sessions scale with size and the number of steps in a FracTAT® protocol. Courses are typically several sessions a few weeks apart so the skin can clear treated pigment in between; tattoo courses are usually spaced further apart. Your doctor sets the interval.",
         ],
       },
@@ -177,7 +177,7 @@ export const technology: Technology[] = [
       {
         heading: "Sessions & cost factors",
         body: [
-          "Session count is driven by how deep the pigment sits, the size of the area, how your skin clears pigment between visits, and for tattoos the ink colours, density and layering — a small black amateur tattoo behaves very differently from a dense multicolour piece. Fractional protocols add steps to a session, which also affects appointment length.",
+          "Session count is driven by how deep the pigment sits, the size of the area, how your skin clears pigment between visits, and for tattoos the ink colours, density and layering. A small black amateur tattoo behaves very differently from a dense multicolour piece. Fractional protocols add steps to a session, which also affects appointment length.",
           "Cost tracks the same variables, plus whether pico work is combined with other steps in your plan. Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
         ],
       },
@@ -221,20 +221,20 @@ export const technology: Technology[] = [
         heading: "What is Fotona SP Dynamis?",
         body: [
           "SP Dynamis is a multi-application aesthetic laser platform from Fotona (Slovenia), and it is the machine behind Kaiteki's Fotona 4D facial treatment. Its defining feature is that it houses two complementary laser sources in one system: an Er:YAG laser at 2940nm and an Nd:YAG laser at 1064nm. Fotona describes the Nd:YAG wavelength as reaching the deepest layers of the skin, and the Er:YAG wavelength as suited to working on the surface. TimeWalker® is Fotona's related dual-wavelength system dedicated to facial aesthetics, and the manufacturer lists both as suitable platforms for the Fotona4D® protocol.",
-          "That dual-source design is what makes a multi-step protocol possible at all — a single-wavelength device cannot work intraorally, deep in the dermis and on the skin surface within one appointment. It does not, however, make the treatment right for everyone. Whether Fotona 4D suits your face, your skin and your medical history is assessed by a doctor at an in-person consultation.",
+          "That dual-source design is what makes a multi-step protocol possible at all: a single-wavelength device cannot work intraorally, deep in the dermis and on the skin surface within one appointment. It does not, however, make the treatment right for everyone. Whether Fotona 4D suits your face, your skin and your medical history is assessed by a doctor at an in-person consultation.",
         ],
       },
       {
         heading: "How the dual-wavelength platform enables a 4D protocol",
         body: [
-          "Fotona describes Fotona4D® as applying its two wavelengths across four named modes. SmoothLiftin™ uses the Er:YAG laser in SMOOTH® mode from inside the mouth, working on the tissue behind the perioral area; FRAC3® is a non-ablative Nd:YAG mode that Fotona describes as a three-dimensional effect seeking out small age-related irregularities in the tissue; PIANO® is an ultra-long-pulse Nd:YAG bulk-heating mode; and SupErficial™ is a light Er:YAG pass over the skin surface. Fotona documents PIANO® pulse durations of 0.3 to 60 seconds — longer than the thermal relaxation time of the epidermis, which is why it can warm deeper tissue while keeping the surface comfortable. SMOOTH® mode is described as a rapid sequence of low-fluence pulses inside an overall super-long pulse of 200–350 milliseconds, producing gentle coagulative heating without significant ablation of the epidermis.",
-          "Underneath all of this sits Fotona's patented VSP (Variable Square Pulse) technology, which the manufacturer states allows pulse durations to be adjusted from 50 microseconds up to 1500 microseconds, plus EFC (Energy Feedback Control), which monitors each individual pulse's energy against the setting chosen. Energy is delivered through named scanners and handpieces — the S-11 Nd:YAG scanner and the L-Runner Pro with MatrixView® temperature sensing, and the T-Runner Er:YAG scanner among them. Which modes are included, in what order and at what settings is decided by the treating doctor; changes develop gradually over weeks and vary between individuals.",
+          "Fotona describes Fotona4D® as applying its two wavelengths across four named modes. SmoothLiftin™ uses the Er:YAG laser in SMOOTH® mode from inside the mouth, working on the tissue behind the perioral area; FRAC3® is a non-ablative Nd:YAG mode that Fotona describes as a three-dimensional effect seeking out small age-related irregularities in the tissue; PIANO® is an ultra-long-pulse Nd:YAG bulk-heating mode; and SupErficial™ is a light Er:YAG pass over the skin surface. Fotona documents PIANO® pulse durations of 0.3 to 60 seconds, longer than the thermal relaxation time of the epidermis, which is why it can warm deeper tissue while keeping the surface comfortable. SMOOTH® mode is described as a rapid sequence of low-fluence pulses inside an overall super-long pulse of 200–350 milliseconds, producing gentle coagulative heating without significant ablation of the epidermis.",
+          "Underneath all of this sits Fotona's patented VSP (Variable Square Pulse) technology, which the manufacturer states allows pulse durations to be adjusted from 50 microseconds up to 1500 microseconds, plus EFC (Energy Feedback Control), which monitors each individual pulse's energy against the setting chosen. Energy is delivered through named scanners and handpieces: the S-11 Nd:YAG scanner and the L-Runner Pro with MatrixView® temperature sensing, and the T-Runner Er:YAG scanner among them. Which modes are included, in what order and at what settings is decided by the treating doctor; changes develop gradually over weeks and vary between individuals.",
         ],
       },
       {
         heading: "What it may help address",
         body: [
-          "As the platform for Kaiteki's Fotona 4D treatment, SP Dynamis is commonly considered for the concerns below. It is not appropriate for everyone, and a consultation determines whether it suits your face and your goals — including whether a different approach would serve you better.",
+          "As the platform for Kaiteki's Fotona 4D treatment, SP Dynamis is commonly considered for the concerns below. It is not appropriate for everyone, and a consultation determines whether it suits your face and your goals, including whether a different approach would serve you better.",
         ],
         list: [
           "Early skin laxity along the jawline, cheeks and neck",
@@ -248,14 +248,14 @@ export const technology: Technology[] = [
       {
         heading: "Suitability & who should avoid it",
         body: [
-          "Fotona notes that the Nd:YAG wavelength's low absorption in melanin allows it to be used across skin types, which is relevant for Malaysian patients, and the Er:YAG surface pass is typically kept light in a 4D protocol. Even so, the treatment is aimed at people with early to moderate laxity rather than significant sagging, where a doctor may tell you a laser is not the right tool — and saying so honestly is part of the consultation.",
+          "Fotona notes that the Nd:YAG wavelength's low absorption in melanin allows it to be used across skin types, which is relevant for Malaysian patients, and the Er:YAG surface pass is typically kept light in a 4D protocol. Even so, the treatment is aimed at people with early to moderate laxity rather than significant sagging, where a doctor may tell you a laser is not the right tool, and saying so honestly is part of the consultation.",
           "The protocol may not be suitable during pregnancy or breastfeeding, with active infection, cold sores or inflamed skin in the area, with recent sunburn or tanning, with a history of keloid scarring, or while you are taking photosensitising medication including oral isotretinoin. Because one step is delivered intraorally, your doctor also needs to know about oral or dental conditions, recent dental work and any oral appliances. Please bring your full medical, dental and medication history to consultation.",
         ],
       },
       {
         heading: "The session at Kaiteki",
         body: [
-          "The first appointment is a doctor consultation and facial assessment, where the doctor decides which of the modes are appropriate for you and in what sequence. On a treatment day the skin is cleansed and make-up removed, eye protection is fitted, and — because the intraoral step works through the inside of the mouth — you will be positioned and prepared for that part separately.",
+          "The first appointment is a doctor consultation and facial assessment, where the doctor decides which of the modes are appropriate for you and in what sequence. On a treatment day the skin is cleansed and make-up removed, eye protection is fitted, and, because the intraoral step works through the inside of the mouth, you will be positioned and prepared for that part separately.",
           "The steps are then performed in sequence, and most patients describe the sensation as spreading warmth rather than sharp pain, with the intraoral step feeling warm against the inner cheek. A full protocol is generally around 45 to 60 minutes depending on how many modes are included. A course of several sessions spaced a few weeks apart is common, followed by occasional maintenance, but the schedule is individual and your doctor will explain what is realistic for your skin.",
         ],
       },
@@ -275,7 +275,7 @@ export const technology: Technology[] = [
       {
         heading: "Sessions & cost factors",
         body: [
-          "Session count depends on how much laxity and surface change you are starting with, your age and skin quality, how your collagen responds and how many of the four modes your plan includes — a two-step protocol is not the same appointment as a full four-step one. Because the effect relies on gradual tissue remodelling, plans are usually built as a short course followed by maintenance rather than a single visit.",
+          "Session count depends on how much laxity and surface change you are starting with, your age and skin quality, how your collagen responds and how many of the four modes your plan includes. A two-step protocol is not the same appointment as a full four-step one. Because the effect relies on gradual tissue remodelling, plans are usually built as a short course followed by maintenance rather than a single visit.",
           "Cost follows the number of steps, the number of sessions and whether the protocol is combined with other treatments in your plan. Pricing is discussed at consultation rather than quoted online, so the figure you receive reflects your actual assessment. Message us on WhatsApp to arrange a consultation.",
         ],
       },
@@ -291,7 +291,7 @@ export const technology: Technology[] = [
       },
       {
         q: "How does Fotona 4D compare with HIFU or RF tightening?",
-        a: "They are different energy types reaching tissue in different ways — Fotona 4D uses two laser wavelengths including an intraoral step, while HIFU uses focused ultrasound and RF devices use radiofrequency heating. One is not automatically better than the other; the sensible choice depends on your degree of laxity, your skin and what you want to avoid. A doctor will compare the realistic options for your face at consultation.",
+        a: "They are different energy types reaching tissue in different ways: Fotona 4D uses two laser wavelengths including an intraoral step, while HIFU uses focused ultrasound and RF devices use radiofrequency heating. One is not automatically better than the other; the sensible choice depends on your degree of laxity, your skin and what you want to avoid. A doctor will compare the realistic options for your face at consultation.",
       },
       {
         q: "Can I have Fotona 4D if I have deeper skin tone?",
@@ -322,7 +322,7 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "How it works — dual wavelengths",
+        heading: "How it works: dual wavelengths",
         body: [
           "DermaV delivers two laser wavelengths that target different concerns. A 595nm wavelength is directed at vascular concerns such as visible vessels and facial redness, while a 1064nm wavelength reaches deeper and is used for certain pigment concerns.",
           "An integrated contact-cooling system helps protect and soothe the skin surface during treatment, which is intended to support comfort and reduce the risk of heat-related effects. The treating doctor selects the wavelength, settings and combination for your skin tone and concern. Results develop gradually and vary between individuals.",
@@ -413,14 +413,14 @@ export const technology: Technology[] = [
         heading: "What is Pro Yellow?",
         body: [
           "Pro Yellow is the name commonly used in Malaysian clinics for the QuadroStarPRO YELLOW, a yellow-light laser made by Asclepion Laser Technologies in Jena, Germany. It emits a single wavelength of 577nm, generated by what the manufacturer calls HOPSL technology, and Asclepion positions it for the treatment of superficial vessels and pigmented lesions in dermatology practice. At Kaiteki it is used within our vascular and pigment laser treatment.",
-          "Its distinguishing feature is the wavelength itself rather than a long list of modes. Yellow light at 577nm sits close to a peak in oxyhaemoglobin absorption while being absorbed comparatively little by melanin — Asclepion describes it as offering maximum haemoglobin absorption with low melanin absorption for fewer side effects. That combination is the whole argument for choosing yellow over other vascular options. Whether it is the right choice for your redness or vessels is a judgement a doctor makes after examining your skin at consultation.",
+          "Its distinguishing feature is the wavelength itself rather than a long list of modes. Yellow light at 577nm sits close to a peak in oxyhaemoglobin absorption while being absorbed comparatively little by melanin. Asclepion describes it as offering maximum haemoglobin absorption with low melanin absorption for fewer side effects. That combination is the whole argument for choosing yellow over other vascular options. Whether it is the right choice for your redness or vessels is a judgement a doctor makes after examining your skin at consultation.",
         ],
       },
       {
         heading: "How 577nm yellow light works",
         body: [
-          "Vascular lasers work by selective photothermolysis: the wavelength is chosen so that the target — in this case haemoglobin inside small vessels — absorbs the light far more strongly than the surrounding tissue does. Because 577nm is well absorbed by haemoglobin and poorly absorbed by melanin, the energy is preferentially taken up by the vessel rather than by pigment in the overlying epidermis. In practice this is why a doctor may favour yellow light in more pigmented skin, where a wavelength with higher melanin absorption carries more risk of unwanted pigment change.",
-          "Asclepion lists a standard handpiece spot size of 1.0mm with optional 0.5mm, 1.5mm and 2.8mm optics for precise work on individual vessels, and an optional scanner with integrated skin cooling that covers a 15 x 15mm scan area at a 1mm spot with adjustable scan density of 60 to 100 percent — intended for treating larger areas more quickly and comfortably. The system offers several treatment modes from basic to expert. Spot size, energy and whether the scanner is used are selected by the treating doctor for your skin and vessel type. Changes develop gradually across a course and vary between individuals.",
+          "Vascular lasers work by selective photothermolysis: the wavelength is chosen so that the target, in this case haemoglobin inside small vessels, absorbs the light far more strongly than the surrounding tissue does. Because 577nm is well absorbed by haemoglobin and poorly absorbed by melanin, the energy is preferentially taken up by the vessel rather than by pigment in the overlying epidermis. In practice this is why a doctor may favour yellow light in more pigmented skin, where a wavelength with higher melanin absorption carries more risk of unwanted pigment change.",
+          "Asclepion lists a standard handpiece spot size of 1.0mm with optional 0.5mm, 1.5mm and 2.8mm optics for precise work on individual vessels, and an optional scanner with integrated skin cooling that covers a 15 x 15mm scan area at a 1mm spot with adjustable scan density of 60 to 100 percent, intended for treating larger areas more quickly and comfortably. The system offers several treatment modes from basic to expert. Spot size, energy and whether the scanner is used are selected by the treating doctor for your skin and vessel type. Changes develop gradually across a course and vary between individuals.",
         ],
       },
       {
@@ -448,14 +448,14 @@ export const technology: Technology[] = [
         heading: "The session at Kaiteki",
         body: [
           "Your first visit is a doctor consultation and skin assessment. The doctor examines the pattern and depth of the redness or vessels, discusses what is realistic, and decides whether the fine handpiece, the cooling scanner or a combination is appropriate. Where useful, a small test area may be treated first and reviewed before proceeding.",
-          "On a treatment day the skin is cleansed, eye protection is fitted, and the laser is applied either vessel by vessel with the small-spot handpiece or in scanned passes over broader areas of redness. Most patients describe brief hot pinpricks or a snapping sensation; the scanner's integrated skin cooling is intended to make larger-area work more comfortable. Sessions are typically short — often around 15 to 30 minutes for a face depending on the area covered. A course of several sessions spaced a few weeks apart is common, with occasional maintenance for chronic redness, but your doctor will set the plan.",
+          "On a treatment day the skin is cleansed, eye protection is fitted, and the laser is applied either vessel by vessel with the small-spot handpiece or in scanned passes over broader areas of redness. Most patients describe brief hot pinpricks or a snapping sensation; the scanner's integrated skin cooling is intended to make larger-area work more comfortable. Sessions are typically short, often around 15 to 30 minutes for a face depending on the area covered. A course of several sessions spaced a few weeks apart is common, with occasional maintenance for chronic redness, but your doctor will set the plan.",
         ],
       },
       {
         heading: "Downtime & aftercare",
         body: [
           "Downtime is usually limited but varies between individuals. Redness, warmth and mild swelling in the treated area for a few hours to a day or two are common, and treated vessels can look temporarily darker, greyish or slightly bruised before settling. Occasionally fine crusting appears over a treated vessel and should be left to flake away on its own.",
-          "Daily broad-spectrum sunscreen and sun avoidance are important, as is avoiding heat triggers such as saunas, hot showers, spicy food and alcohol for the period your doctor specifies — particularly if flushing is part of your concern. Keep skincare gentle and pause actives until your doctor confirms it is fine to resume. Aftercare guidance is tailored to your skin and the area treated.",
+          "Daily broad-spectrum sunscreen and sun avoidance are important, as is avoiding heat triggers such as saunas, hot showers, spicy food and alcohol for the period your doctor specifies, particularly if flushing is part of your concern. Keep skincare gentle and pause actives until your doctor confirms it is fine to resume. Aftercare guidance is tailored to your skin and the area treated.",
         ],
       },
       {
@@ -516,7 +516,7 @@ export const technology: Technology[] = [
         {
           heading: "How M22 IPL works",
           body: [
-            "Each pulse of filtered light is absorbed preferentially by a target in the skin — haemoglobin in a visible vessel, melanin in a sun spot, or pigment in a hair follicle — and converted to heat. Changing the filter shifts which target absorbs most strongly. Lumenis calls the delivery method Optimal Pulse Technology (OPT™), which the manufacturer describes as allowing control of pulse shape and equalising energy distribution across the pulse or sequential sub-pulses, so higher peak power can be delivered in shorter pulses at lower effective fluence.",
+            "Each pulse of filtered light is absorbed preferentially by a target in the skin, haemoglobin in a visible vessel, melanin in a sun spot, or pigment in a hair follicle, and converted to heat. Changing the filter shifts which target absorbs most strongly. Lumenis calls the delivery method Optimal Pulse Technology (OPT™), which the manufacturer describes as allowing control of pulse shape and equalising energy distribution across the pulse or sequential sub-pulses, so higher peak power can be delivered in shorter pulses at lower effective fluence.",
             "Comfort is managed at the skin surface: the manufacturer describes three SapphireCool™ lightguides in different sizes providing continuous contact cooling while the pulse is delivered, so the epidermis is cooled as the light passes through it. Because M22 is modular, the same console can carry laser modules such as ResurFX™ for non-ablative fractional resurfacing, so a plan may combine modules where appropriate. Filter choice, pulse settings and energy are selected by the treating doctor for your skin tone and concern, and results develop gradually and vary between individuals.",
           ],
         },
@@ -605,7 +605,7 @@ export const technology: Technology[] = [
           heading: "What is fractional CO2 laser resurfacing?",
           body: [
             "Fractional CO2 is a category of resurfacing laser rather than a single brand. A carbon dioxide laser emits infrared light at 10,600nm, a wavelength strongly absorbed by water in the skin, which makes it ablative: rather than heating tissue through an intact surface, it vaporises a thin amount of tissue where the beam lands. That places it at the more assertive end of the laser spectrum, which is why it is generally considered for textural concerns and scarring rather than surface tone alone.",
-            "The word fractional describes how the energy is delivered. Instead of treating the whole surface at once, the beam is split into a grid of very fine columns — commonly called microthermal treatment zones — so each treated column is surrounded by untreated skin. That untreated skin is what separates fractional delivery from the fully ablative resurfacing that preceded it: it shortens recovery considerably, at the cost of treating less surface per pass, which is why a small course is usual. At Kaiteki, fractional CO2 is used within our resurfacing laser treatment. Whether it suits your skin, or whether a gentler non-ablative option would be more appropriate, is assessed by a doctor at an in-person consultation.",
+            "The word fractional describes how the energy is delivered. Instead of treating the whole surface at once, the beam is split into a grid of very fine columns, commonly called microthermal treatment zones, so each treated column is surrounded by untreated skin. That untreated skin is what separates fractional delivery from the fully ablative resurfacing that preceded it: it shortens recovery considerably, at the cost of treating less surface per pass, which is why a small course is usual. At Kaiteki, fractional CO2 is used within our resurfacing laser treatment. Whether it suits your skin, or whether a gentler non-ablative option would be more appropriate, is assessed by a doctor at an in-person consultation.",
           ],
         },
         {
@@ -639,7 +639,7 @@ export const technology: Technology[] = [
           heading: "The session at Kaiteki",
           body: [
             "A visit begins with a doctor consultation and skin assessment, and for ablative resurfacing that includes planning your recovery around work or events before anything is booked. On the day the skin is cleansed, topical anaesthetic is applied and left to take effect, and eye protection is fitted. The doctor then passes the handpiece across the area, and individual scars may be treated at different settings from the surrounding skin.",
-            "The laser pass itself is often quick — commonly in the region of 15 to 30 minutes for a full face — but the appointment is longer because of numbing and cooling. A small course spaced several weeks to a few months apart is usual, to allow full healing and remodelling between visits, and for scarring it may be combined with other modalities within a plan. Your doctor will explain the course they consider realistic for your skin.",
+            "The laser pass itself is often quick, commonly in the region of 15 to 30 minutes for a full face, but the appointment is longer because of numbing and cooling. A small course spaced several weeks to a few months apart is usual, to allow full healing and remodelling between visits, and for scarring it may be combined with other modalities within a plan. Your doctor will explain the course they consider realistic for your skin.",
           ],
         },
         {
@@ -702,14 +702,14 @@ export const technology: Technology[] = [
           heading: "What is Ultracel Q?",
           body: [
             "Ultracel Q is a high-intensity focused ultrasound (HIFU) platform made by Jeisys Medical, a Korean aesthetic device manufacturer. It sits in the non-surgical lifting and tightening category, and at Kaiteki it is one of the devices used within the HIFU treatment. Rather than working on the skin surface, HIFU passes focused ultrasound energy through the surface and concentrates it at a chosen depth below it, so the layer being treated is deeper than the layer the handpiece touches.",
-            "What distinguishes the platform for someone comparing HIFU devices is that it is cartridge-based: the doctor swaps cartridges to change the focal depth and the shape of the heat that is delivered, instead of working at one fixed setting. Whether HIFU is appropriate for you at all — and if so, which depths and how many passes — depends on your degree of laxity, tissue thickness and medical history, which a doctor assesses at an in-person consultation.",
+            "What distinguishes the platform for someone comparing HIFU devices is that it is cartridge-based: the doctor swaps cartridges to change the focal depth and the shape of the heat that is delivered, instead of working at one fixed setting. Whether HIFU is appropriate for you at all, and if so, which depths and how many passes, depends on your degree of laxity, tissue thickness and medical history, which a doctor assesses at an in-person consultation.",
           ],
         },
         {
           heading: "How focused ultrasound works on Ultracel Q",
           body: [
             "Each cartridge focuses ultrasound to a small point at a set depth, creating controlled heating there while the skin surface is largely spared. Jeisys supplies cartridges of differing focal depths so that the dermis, the deeper SMAS layer or the fat layer can be targeted according to the plan; the manufacturer also offers a linear cartridge series it calls LinearFirm, which spreads the focus along a line rather than a single dot, giving a longer continuous heat zone in one pulse. Jeisys states that irradiation time drops from roughly 1.5 seconds per pulse with a dot cartridge to about 0.7 seconds with a linear cartridge, and describes the shorter exposure as more comfortable.",
-            "Jeisys also describes the platform as operating at a moderated focal temperature — quoted in its clinician material as around 60–65°C, below the range at which collagen is fully broken down — with the intention of prompting collagen renewal through partial thermal denaturation rather than complete destruction. The cartridges have a compact contact tip, which the manufacturer says helps reach awkward contours such as the jawline and under the chin. Depth, energy, cartridge choice and the number of lines delivered are all selected by the treating doctor. Any change develops gradually over weeks and varies between individuals.",
+            "Jeisys also describes the platform as operating at a moderated focal temperature (quoted in its clinician material as around 60–65°C, below the range at which collagen is fully broken down) with the intention of prompting collagen renewal through partial thermal denaturation rather than complete destruction. The cartridges have a compact contact tip, which the manufacturer says helps reach awkward contours such as the jawline and under the chin. Depth, energy, cartridge choice and the number of lines delivered are all selected by the treating doctor. Any change develops gradually over weeks and varies between individuals.",
           ],
         },
         {
@@ -755,7 +755,7 @@ export const technology: Technology[] = [
         {
           heading: "Sessions & cost factors",
           body: [
-            "What drives the cost of a HIFU session is the area treated, the number of shots or lines delivered, and which cartridges are needed for your plan — a jawline-and-neck plan is a different amount of work from a full face and neck. How your tissue responds also affects whether a review or maintenance session is worth considering later.",
+            "What drives the cost of a HIFU session is the area treated, the number of shots or lines delivered, and which cartridges are needed for your plan. A jawline-and-neck plan is a different amount of work from a full face and neck. How your tissue responds also affects whether a review or maintenance session is worth considering later.",
             "Pricing is discussed at consultation rather than quoted online, so that any figure reflects the plan actually recommended for you rather than a generic package. Message us on WhatsApp to arrange a consultation.",
           ],
         },
@@ -775,7 +775,7 @@ export const technology: Technology[] = [
         },
         {
           q: "Are HIFU results permanent?",
-          a: "No — skin continues to age after any tightening treatment, so any change is not permanent and varies between individuals. Many plans include a review some months later and occasional maintenance rather than a single one-off treatment. Your doctor will explain a realistic timeline for your skin at consultation.",
+          a: "No. Skin continues to age after any tightening treatment, so any change is not permanent and varies between individuals. Many plans include a review some months later and occasional maintenance rather than a single one-off treatment. Your doctor will explain a realistic timeline for your skin at consultation.",
         },
       ],
       reviewedBy: "dr-say-wei-xian",
@@ -797,7 +797,7 @@ export const technology: Technology[] = [
         {
           heading: "What is Lifthera?",
           body: [
-            "Lifthera — also written Liftera — is a focused-ultrasound lifting device from Asterasys, a Korean medical aesthetic device manufacturer. It belongs to the same broad category as other HIFU devices: ultrasound energy is focused to a point beneath the skin surface so that heating happens in a chosen deeper layer while the surface is largely spared. At Kaiteki it is one of the devices used within the HIFU treatment, and it is often chosen for facial contour work rather than as a whole-face blanket treatment.",
+            "Lifthera (also written Liftera) is a focused-ultrasound lifting device from Asterasys, a Korean medical aesthetic device manufacturer. It belongs to the same broad category as other HIFU devices: ultrasound energy is focused to a point beneath the skin surface so that heating happens in a chosen deeper layer while the surface is largely spared. At Kaiteki it is one of the devices used within the HIFU treatment, and it is often chosen for facial contour work rather than as a whole-face blanket treatment.",
             "Where it sits in the category is worth understanding if you are comparing quotes. It is a line-focused HIFU platform, not an imaging-guided system, and it is generally positioned as a comfort-oriented, contour-focused option rather than a deep single-session lift. Whether it is the right device for your particular pattern of laxity is a clinical judgement your doctor makes at an in-person consultation.",
           ],
         },
@@ -863,7 +863,7 @@ export const technology: Technology[] = [
         },
         {
           q: "How does Lifthera differ from dot-based HIFU devices?",
-          a: "Conventional HIFU deposits energy as a row of separate focal dots, whereas Asterasys describes Lifthera as drawing the focus along a continuous line, which it says creates larger and more continuous heated zones at the same depth and is more comfortable. Neither approach is automatically better for every face — they suit different patterns of laxity and different areas. Your doctor selects the device and settings after assessing your skin.",
+          a: "Conventional HIFU deposits energy as a row of separate focal dots, whereas Asterasys describes Lifthera as drawing the focus along a continuous line, which it says creates larger and more continuous heated zones at the same depth and is more comfortable. Neither approach is automatically better for every face. They suit different patterns of laxity and different areas. Your doctor selects the device and settings after assessing your skin.",
         },
         {
           q: "Can Lifthera be used around the eyes and other small areas?",
@@ -901,8 +901,8 @@ export const technology: Technology[] = [
         {
           heading: "How micro-focused ultrasound with visualisation works",
           body: [
-            "Energy is focused to very small points at set depths, producing discrete zones of controlled heating that prompt a tissue-repair and collagen-remodelling response over the following months. Merz describes DeepSEE transducers that treat at three depths — approximately 1.5 mm in the superficial dermis, 3.0 mm in the deeper dermis and 4.5 mm at the level of the SMAS fascia — so the doctor can choose the layer rather than treating one fixed plane. The intervening tissue and the skin surface are not the target, which is why there is no wound to heal afterwards.",
-            "The imaging is the practical difference during the session. The manufacturer states that the system visualises tissue to a depth of around 8 mm; the current Ultherapy PRIME generation adds a larger screen and a faster image refresh, and Merz lists the face, neck, décolletage, abdomen and arms among the areas it is indicated for. This does not make imaging-free HIFU devices unsuitable — they are well established and are chosen for good reasons — but visualisation does let the doctor confirm depth and avoid structures such as bone and dense fascia before each line. Transducer choice, depth and line count are decided by the treating doctor, and any change develops gradually and varies between individuals.",
+            "Energy is focused to very small points at set depths, producing discrete zones of controlled heating that prompt a tissue-repair and collagen-remodelling response over the following months. Merz describes DeepSEE transducers that treat at three depths (approximately 1.5 mm in the superficial dermis, 3.0 mm in the deeper dermis and 4.5 mm at the level of the SMAS fascia), so the doctor can choose the layer rather than treating one fixed plane. The intervening tissue and the skin surface are not the target, which is why there is no wound to heal afterwards.",
+            "The imaging is the practical difference during the session. The manufacturer states that the system visualises tissue to a depth of around 8 mm; the current Ultherapy PRIME generation adds a larger screen and a faster image refresh, and Merz lists the face, neck, décolletage, abdomen and arms among the areas it is indicated for. This does not make imaging-free HIFU devices unsuitable (they are well established and are chosen for good reasons), but visualisation does let the doctor confirm depth and avoid structures such as bone and dense fascia before each line. Transducer choice, depth and line count are decided by the treating doctor, and any change develops gradually and varies between individuals.",
           ],
         },
         {
@@ -948,7 +948,7 @@ export const technology: Technology[] = [
         {
           heading: "Sessions & cost factors",
           body: [
-            "Cost in this category is driven by the number of ultrasound lines delivered and the areas covered, not by how long you are in the room — a brow-and-jawline plan, a full face and neck, and a décolletage or body area each represent a different amount of energy delivered. Whether a review or a later maintenance session is worthwhile depends on how your tissue responds.",
+            "Cost in this category is driven by the number of ultrasound lines delivered and the areas covered, not by how long you are in the room. A brow-and-jawline plan, a full face and neck, and a décolletage or body area each represent a different amount of energy delivered. Whether a review or a later maintenance session is worthwhile depends on how your tissue responds.",
             "Pricing is discussed at consultation rather than quoted online, so that any figure reflects the plan actually recommended for you. Message us on WhatsApp to arrange a consultation.",
           ],
         },
@@ -968,7 +968,7 @@ export const technology: Technology[] = [
         },
         {
           q: "How long before I see anything, and how long does it last?",
-          a: "The tissue response is gradual, so any change typically develops over roughly two to six months rather than immediately, and it varies considerably between individuals. It is not permanent — skin continues to age — so plans often include a review and periodic maintenance. Your doctor will give you a realistic timeline for your own skin at consultation.",
+          a: "The tissue response is gradual, so any change typically develops over roughly two to six months rather than immediately, and it varies considerably between individuals. It is not permanent (skin continues to age), so plans often include a review and periodic maintenance. Your doctor will give you a realistic timeline for your own skin at consultation.",
         },
       ],
       reviewedBy: "dr-chew-yuhhui",
@@ -991,14 +991,14 @@ export const technology: Technology[] = [
           heading: "What is XERF?",
           body: [
             "XERF is a monopolar radiofrequency (RF) platform from Cynosure Lutronic, used at Kaiteki within our radiofrequency treatment for skin-firmness and laxity concerns. The manufacturer markets it under the term Structural Skin Tightening. What sets it apart in the RF category is that it is multifrequency: rather than running at a single fixed frequency, it combines 6.78 MHz and 2 MHz simultaneously, so energy can be biased towards shallower or deeper tissue depending on what the doctor is treating.",
-            "If you are comparing options, the practical distinction is that XERF is a bulk-heating, non-needling device. It works entirely from the skin surface with no needles, no incisions and no topical anaesthetic — different from RF microneedling platforms such as Sylfirm X or Morpheus8, which create fractional channels in the skin and are covered on their own pages. Whether XERF, a needling device, or something else fits your concern is decided by a doctor at an in-person consultation.",
+            "If you are comparing options, the practical distinction is that XERF is a bulk-heating, non-needling device. It works entirely from the skin surface with no needles, no incisions and no topical anaesthetic, different from RF microneedling platforms such as Sylfirm X or Morpheus8, which create fractional channels in the skin and are covered on their own pages. Whether XERF, a needling device, or something else fits your concern is decided by a doctor at an in-person consultation.",
           ],
         },
         {
           heading: "How multifrequency monopolar RF works",
           body: [
             "Monopolar RF sends current from a single treatment electrode through the tissue towards a return path, which is what allows it to reach deeper than bipolar or multipolar RF, where the current simply arcs between two or more closely spaced electrodes and stays comparatively superficial. Depth is also a function of frequency: higher frequencies deposit energy more superficially, lower frequencies travel further. By combining 6.78 MHz and 2 MHz, XERF is intended to deposit energy across the shallow, middle and deeper layers within one pass rather than forcing a single-depth compromise. Controlled heating in the dermis is what RF uses to prompt collagen remodelling over time.",
-            "Comfort is handled by two manufacturer technologies: the pulse-shaping the manufacturer calls Wave Fit™, and an Advanced Integrated Cryogen Delivery cooling system that keeps the skin surface cool while heat builds underneath. Surface cooling matters more than it sounds — it is what lets a device heat the dermis to a useful temperature without the epidermis becoming the limiting factor, and it is the reason the manufacturer describes XERF as a Never-Numb™ treatment that does not require numbing cream beforehand. Frequency balance, energy level and number of passes are all selected by the treating doctor for your skin. Any change develops gradually and varies between individuals.",
+            "Comfort is handled by two manufacturer technologies: the pulse-shaping the manufacturer calls Wave Fit™, and an Advanced Integrated Cryogen Delivery cooling system that keeps the skin surface cool while heat builds underneath. Surface cooling matters more than it sounds: it is what lets a device heat the dermis to a useful temperature without the epidermis becoming the limiting factor, and it is the reason the manufacturer describes XERF as a Never-Numb™ treatment that does not require numbing cream beforehand. Frequency balance, energy level and number of passes are all selected by the treating doctor for your skin. Any change develops gradually and varies between individuals.",
           ],
         },
         {
@@ -1026,13 +1026,13 @@ export const technology: Technology[] = [
           heading: "The session at Kaiteki",
           body: [
             "A visit begins with a doctor consultation and skin assessment to confirm that RF is the right category for your concern and to map the areas to be treated. If XERF is appropriate, the skin is cleansed and a coupling gel applied. The handpiece is then moved over the treatment area in passes while the integrated cooling holds the surface temperature down; most people describe RF as a warm, deep massage-like sensation that builds and eases as the handpiece moves. No numbing cream is needed.",
-            "Session length depends on how many areas are being treated — a single facial area is typically shorter than a full face and neck, and body areas take longer again. A course of several sessions spaced a few weeks apart is common for RF, with occasional maintenance afterwards, but the plan is individual and your doctor will explain what to expect for your skin.",
+            "Session length depends on how many areas are being treated: a single facial area is typically shorter than a full face and neck, and body areas take longer again. A course of several sessions spaced a few weeks apart is common for RF, with occasional maintenance afterwards, but the plan is individual and your doctor will explain what to expect for your skin.",
           ],
         },
         {
           heading: "Downtime & aftercare",
           body: [
-            "Downtime is usually minimal, which is much of the appeal of non-needling RF — most people return to normal activities and can wear makeup the same day. Mild warmth or pinkness in the treated area can occur and typically settles within a few hours, though this varies between individuals.",
+            "Downtime is usually minimal, which is much of the appeal of non-needling RF: most people return to normal activities and can wear makeup the same day. Mild warmth or pinkness in the treated area can occur and typically settles within a few hours, though this varies between individuals.",
             "Gentle skincare, good hydration and daily sun protection are advised afterwards. Avoid very hot showers, saunas and vigorous heat exposure for the rest of the day. Your doctor will give aftercare guidance specific to your skin and the areas treated.",
           ],
         },
@@ -1052,7 +1052,7 @@ export const technology: Technology[] = [
       faqs: [
         {
           q: "How is XERF different from RF microneedling like Sylfirm X or Morpheus8?",
-          a: "XERF is a surface-applied bulk-heating device — the handpiece glides over intact skin and no needles are involved, so there are no pinpoint marks and essentially no downtime. RF microneedling instead delivers energy through fine needles into the skin, which suits some texture and scarring concerns but involves recovery time. They are different tools rather than better and worse ones, and your doctor will advise at consultation which category fits your concern.",
+          a: "XERF is a surface-applied bulk-heating device: the handpiece glides over intact skin and no needles are involved, so there are no pinpoint marks and essentially no downtime. RF microneedling instead delivers energy through fine needles into the skin, which suits some texture and scarring concerns but involves recovery time. They are different tools rather than better and worse ones, and your doctor will advise at consultation which category fits your concern.",
         },
         {
           q: "Why does XERF use two frequencies instead of one?",
@@ -1064,7 +1064,7 @@ export const technology: Technology[] = [
         },
         {
           q: "Is XERF safe for Asian or darker skin tones?",
-          a: "Radiofrequency heats tissue rather than targeting pigment, so unlike some light-based devices it does not depend on contrast between skin and target colour — which is why RF is used across a wide range of skin tones. Suitability is still assessed individually, taking into account your skin history, medications and any implanted devices. A doctor confirms this at an in-person consultation before treatment.",
+          a: "Radiofrequency heats tissue rather than targeting pigment, so unlike some light-based devices it does not depend on contrast between skin and target colour, which is why RF is used across a wide range of skin tones. Suitability is still assessed individually, taking into account your skin history, medications and any implanted devices. A doctor confirms this at an in-person consultation before treatment.",
         },
       ],
       reviewedBy: "dr-chloe-wan",
@@ -1087,13 +1087,13 @@ export const technology: Technology[] = [
         heading: "What is Sylfirm X?",
         body: [
           "Sylfirm X is a radiofrequency (RF) microneedling device made by Viol, a South Korean medical-aesthetic device manufacturer. Like other RF microneedling systems, it passes very fine needles through the skin surface and delivers radiofrequency energy from the needle tips, so the energy is placed at a chosen depth rather than heating the skin from the outside in. At Kaiteki it is used within our microneedling treatment.",
-          "What distinguishes it within the RF microneedling category is that it offers two energy delivery modes rather than one. Alongside a continuous wave (CW) mode, which is the more familiar heating mode used for firmness and texture work, it has a pulsed wave (PW) mode that the manufacturer developed with pigment and vascular concerns in mind — which is often why a doctor reaches for this device rather than a purely tightening-focused one. Whether Sylfirm X suits your skin depends on your concern, skin type, medical history and what you want to address, and that is assessed by a doctor at an in-person consultation.",
+          "What distinguishes it within the RF microneedling category is that it offers two energy delivery modes rather than one. Alongside a continuous wave (CW) mode, which is the more familiar heating mode used for firmness and texture work, it has a pulsed wave (PW) mode that the manufacturer developed with pigment and vascular concerns in mind, which is often why a doctor reaches for this device rather than a purely tightening-focused one. Whether Sylfirm X suits your skin depends on your concern, skin type, medical history and what you want to address, and that is assessed by a doctor at an in-person consultation.",
         ],
       },
       {
         heading: "How pulsed and continuous wave modes work",
         body: [
-          "Sylfirm X uses non-insulated gold microneedles that the manufacturer describes as 300 microns in diameter, delivering bipolar radiofrequency at 2MHz. Because the needles are non-insulated, energy is released along the needle rather than only at the tip. In pulsed wave mode, the manufacturer describes the energy as producing selective coagulation around the basement membrane and small vessels near the epidermal-dermal junction and upper dermis, with the intention of limiting effect on surrounding tissue — the mechanism the manufacturer markets as Selective Regional Regeneration. Continuous wave mode delivers a steadier heating pattern used for deeper collagen-focused work.",
+          "Sylfirm X uses non-insulated gold microneedles that the manufacturer describes as 300 microns in diameter, delivering bipolar radiofrequency at 2MHz. Because the needles are non-insulated, energy is released along the needle rather than only at the tip. In pulsed wave mode, the manufacturer describes the energy as producing selective coagulation around the basement membrane and small vessels near the epidermal-dermal junction and upper dermis, with the intention of limiting effect on surrounding tissue, the mechanism the manufacturer markets as Selective Regional Regeneration. Continuous wave mode delivers a steadier heating pattern used for deeper collagen-focused work.",
           "The two waveforms are subdivided into several preset modes, and needle depth is adjustable so the doctor can work shallow for surface pigment and texture or deeper for dermal remodelling. Topical numbing cream is normally applied beforehand, and the treated area is cooled and soothed afterwards. The mode, depth, energy and number of passes are all selected by the treating doctor for your skin. Results develop gradually over weeks and vary between individuals.",
         ],
       },
@@ -1183,7 +1183,7 @@ export const technology: Technology[] = [
       {
         heading: "What is Morpheus8?",
         body: [
-          "Morpheus8 is a fractional radiofrequency (RF) microneedling device made by InMode, an Israeli medical-aesthetic device company. It works on the same principle as other RF microneedling systems — fine needles carry radiofrequency energy through the skin surface and release it at a set depth — and at Kaiteki it is used within our microneedling treatment.",
+          "Morpheus8 is a fractional radiofrequency (RF) microneedling device made by InMode, an Israeli medical-aesthetic device company. It works on the same principle as other RF microneedling systems (fine needles carry radiofrequency energy through the skin surface and release it at a set depth), and at Kaiteki it is used within our microneedling treatment.",
           "What sets it apart in this category is reach and pattern of delivery. The manufacturer positions Morpheus8 for both dermal contraction and subdermal work, and it can be set to work below the dermis into the fatty layer rather than only within the skin. That deeper subdermal capability is usually why a doctor selects it when the primary concern is firmness along the jawline, lower face or neck rather than surface pigment or pore texture. Whether it suits you depends on your anatomy, skin quality and medical history, which a doctor assesses at an in-person consultation.",
         ],
       },
@@ -1191,7 +1191,7 @@ export const technology: Technology[] = [
         heading: "How the Burst technology works",
         body: [
           "Morpheus8 delivers bipolar radiofrequency between the microneedles, so the energy stays between the pins at the depth they are set to. The manufacturer's SCALE and BURST functions automatically deploy that energy to several treatment depths within a single pulse at programmable energy levels, so one insertion can address more than one layer instead of requiring separate passes at each depth. The manufacturer states that its Body platform, using Burst and 3D Smart Frame, produces a thermal profile reaching around 8mm.",
-          "The system uses interchangeable fractional tips with different pin configurations for different jobs — the manufacturer lists a 12-pin Burst Prime, a 24-pin Burst, a 24-pin Burst Resurfacing tip and a 40-pin Burst Deep tip — so finer facial areas, resurfacing-style work and larger or deeper body areas can be handled with the appropriate tip. Topical numbing is applied beforehand and the area is cooled afterwards. Tip choice, depth, energy and coverage are all selected by the treating doctor. Tissue responses to heating develop over weeks to months and vary between individuals.",
+          "The system uses interchangeable fractional tips with different pin configurations for different jobs (the manufacturer lists a 12-pin Burst Prime, a 24-pin Burst, a 24-pin Burst Resurfacing tip and a 40-pin Burst Deep tip), so finer facial areas, resurfacing-style work and larger or deeper body areas can be handled with the appropriate tip. Topical numbing is applied beforehand and the area is cooled afterwards. Tip choice, depth, energy and coverage are all selected by the treating doctor. Tissue responses to heating develop over weeks to months and vary between individuals.",
         ],
       },
       {
@@ -1246,7 +1246,7 @@ export const technology: Technology[] = [
     faqs: [
       {
         q: "How deep does Morpheus8 go compared with standard RF microneedling?",
-        a: "Morpheus8 can be set to work below the dermis into the subdermal fatty layer, and the manufacturer describes a thermal profile reaching around 8mm on its Body platform, which is deeper than devices designed to work within the skin alone. Deeper is not automatically better — the right depth depends on the concern and the area. Your doctor selects tip and depth at consultation.",
+        a: "Morpheus8 can be set to work below the dermis into the subdermal fatty layer, and the manufacturer describes a thermal profile reaching around 8mm on its Body platform, which is deeper than devices designed to work within the skin alone. Deeper is not automatically better: the right depth depends on the concern and the area. Your doctor selects tip and depth at consultation.",
       },
       {
         q: "Will Morpheus8 tighten sagging skin without surgery?",
@@ -1282,13 +1282,13 @@ export const technology: Technology[] = [
         heading: "What is Potenza?",
         body: [
           "Potenza is a radiofrequency (RF) microneedling device from Cynosure Lutronic. Like other devices in this category it passes very fine needles through the skin surface and releases radiofrequency energy from them at a chosen depth, and at Kaiteki it is used within our microneedling treatment.",
-          "Its distinguishing feature is configurability. Most RF microneedling devices deliver one type of radiofrequency; Potenza offers four combinations — monopolar or bipolar radiofrequency, each delivered at 1MHz or 2MHz — in a single platform, alongside a range of interchangeable tips and adjustable needle depth. That range of settings is usually why a doctor selects it when the plan involves working at several different depths across a face, which is common with scarring and pore concerns. Whether it is the right device for you depends on your concern, skin type and medical history, which a doctor assesses at an in-person consultation.",
+          "Its distinguishing feature is configurability. Most RF microneedling devices deliver one type of radiofrequency; Potenza offers four combinations (monopolar or bipolar radiofrequency, each delivered at 1MHz or 2MHz) in a single platform, alongside a range of interchangeable tips and adjustable needle depth. That range of settings is usually why a doctor selects it when the plan involves working at several different depths across a face, which is common with scarring and pore concerns. Whether it is the right device for you depends on your concern, skin type and medical history, which a doctor assesses at an in-person consultation.",
         ],
       },
       {
         heading: "How the four modes and depth control work",
         body: [
-          "Bipolar radiofrequency passes energy between the needles, keeping it relatively contained around the needle field; monopolar radiofrequency travels from the needles toward a return electrode, which spreads the energy more broadly and deeply. Frequency changes the character of the heating as well — the manufacturer pairs these two options with 1MHz and 2MHz settings, giving four modes that can be matched to shallow or deeper work. Needle depth is set separately, so the doctor can treat superficially around fine surface texture and go deeper into a tethered scar in the same session.",
+          "Bipolar radiofrequency passes energy between the needles, keeping it relatively contained around the needle field; monopolar radiofrequency travels from the needles toward a return electrode, which spreads the energy more broadly and deeply. Frequency changes the character of the heating as well: the manufacturer pairs these two options with 1MHz and 2MHz settings, giving four modes that can be matched to shallow or deeper work. Needle depth is set separately, so the doctor can treat superficially around fine surface texture and go deeper into a tethered scar in the same session.",
           "Tips are interchangeable, with different pin counts and configurations for small precise areas versus broader coverage. The manufacturer also offers a Fusion Tip, which it describes as using a dual air-chamber design to release air toward the skin with each pulse in order to help topical products applied during the session penetrate; the manufacturer states this tip runs in monopolar mode at 1MHz. Topical numbing is applied first and the area cooled afterwards. Mode, frequency, tip, depth and energy are all chosen by the treating doctor. Changes develop gradually over weeks to months and vary between individuals.",
         ],
       },
@@ -1316,14 +1316,14 @@ export const technology: Technology[] = [
       {
         heading: "The session at Kaiteki",
         body: [
-          "Your visit begins with a doctor consultation and a close look at your skin, mapping which areas need which depth — scarred areas, pore-dense zones and finer skin are often treated with different settings in the same session. The skin is then cleansed and topical anaesthetic applied and left to take effect, which usually takes up most of the appointment time.",
+          "Your visit begins with a doctor consultation and a close look at your skin, mapping which areas need which depth: scarred areas, pore-dense zones and finer skin are often treated with different settings in the same session. The skin is then cleansed and topical anaesthetic applied and left to take effect, which usually takes up most of the appointment time.",
           "The handpiece is passed over the mapped areas in overlapping stamps, with the doctor changing depth, mode or tip as they move between zones. Most people describe heat and a prickling or tapping sensation, felt more distinctly at deeper settings. Active treatment of a full face commonly takes around 30 to 45 minutes, with the full appointment closer to an hour and a half including numbing and aftercare. Scar-focused plans typically run to several sessions spaced roughly four to six weeks apart, with the number and spacing decided by your doctor.",
         ],
       },
       {
         heading: "Downtime & aftercare",
         body: [
-          "Redness, warmth and mild swelling are usual straight afterwards, often with a visible pattern from the needle pins. This commonly settles over two to three days, though it varies between individuals and with the depths used — deeper scar settings tend to leave the skin looking flushed and feeling tender for slightly longer, and pinpoint scabs can occur.",
+          "Redness, warmth and mild swelling are usual straight afterwards, often with a visible pattern from the needle pins. This commonly settles over two to three days, though it varies between individuals and with the depths used. Deeper scar settings tend to leave the skin looking flushed and feeling tender for slightly longer, and pinpoint scabs can occur.",
           "Gentle cleansing, a bland moisturiser and daily sunscreen are advised while the skin recovers, with retinoids, acids and other actives paused for a short period. Makeup is usually left off for the first day or so, and heat, sweat and sun exposure avoided for a few days. Your doctor will give aftercare guidance specific to your skin and the settings used.",
         ],
       },
@@ -1379,7 +1379,7 @@ export const technology: Technology[] = [
           heading: "What is BTL Exilis?",
           body: [
             "BTL Exilis is a monopolar radiofrequency (RF) platform made by BTL, the manufacturer behind Emsculpt and Emsella, and it is used at Kaiteki within our radiofrequency treatment. Its category is non-invasive tissue heating: the handpiece is moved over intact skin and RF energy warms the dermis and, at deeper settings, the fatty layer beneath. BTL positions Exilis as a head-to-toe platform, with different applicators for delicate facial areas and for larger body areas, and the Exilis Ultra generation adds an ultrasound component alongside the RF in the same applicator.",
-            "What distinguishes Exilis within the RF category is the combination of monopolar delivery with embedded surface cooling. Because the skin surface is actively cooled while energy is applied, the device can keep working for longer at a depth that reaches subcutaneous fat rather than being limited by surface discomfort — which is why Exilis is used for body-contour concerns as well as facial firmness. Whether it suits your concern is assessed by a doctor at an in-person consultation.",
+            "What distinguishes Exilis within the RF category is the combination of monopolar delivery with embedded surface cooling. Because the skin surface is actively cooled while energy is applied, the device can keep working for longer at a depth that reaches subcutaneous fat rather than being limited by surface discomfort, which is why Exilis is used for body-contour concerns as well as facial firmness. Whether it suits your concern is assessed by a doctor at an in-person consultation.",
           ],
         },
         {
@@ -1406,7 +1406,7 @@ export const technology: Technology[] = [
         {
           heading: "Suitability & who should avoid it",
           body: [
-            "Exilis is generally aimed at people with mild to moderate laxity, and at those who want a non-needling option with little interruption to daily life. BTL states there are no BMI or skin type restrictions for the platform, and because RF heats tissue rather than targeting pigment it is used across a wide range of skin tones including Asian skin. That said, it is a firming and contouring device, not a substitute for surgery where there is significant excess skin — your doctor will be direct with you about what category of treatment matches your concern.",
+            "Exilis is generally aimed at people with mild to moderate laxity, and at those who want a non-needling option with little interruption to daily life. BTL states there are no BMI or skin type restrictions for the platform, and because RF heats tissue rather than targeting pigment it is used across a wide range of skin tones including Asian skin. That said, it is a firming and contouring device, not a substitute for surgery where there is significant excess skin. Your doctor will be direct with you about what category of treatment matches your concern.",
             "RF is generally avoided during pregnancy or breastfeeding, over active skin infections, inflamed skin or open wounds, and in the presence of pacemakers, defibrillators or other electronic or metal implants in or near the treatment area. Recent fillers or threads, certain medications, impaired sensation in the area and a history of keloid scarring are also relevant. Please share your full medical history, medications and any implanted devices at consultation so the doctor can advise safely.",
           ],
         },
@@ -1414,7 +1414,7 @@ export const technology: Technology[] = [
           heading: "The session at Kaiteki",
           body: [
             "A visit begins with a doctor consultation and assessment to confirm RF is the appropriate category and to define the treatment area. If Exilis is appropriate, the skin is cleansed and a coupling gel applied, then the applicator is moved continuously over the area in passes while temperature is monitored. Nothing is injected and no needles are used, so numbing cream is generally not required; most people describe steady, deep warmth that eases as the applicator moves on.",
-            "Session length depends on the area — BTL indicates that treating a specific area commonly takes somewhere between a few minutes and around half an hour, so a small facial area is much shorter than an abdomen. For courses, BTL's patient material describes most people having roughly two to four treatments spaced about seven to ten days apart, though your doctor will set the actual plan and spacing for your skin and concern.",
+            "Session length depends on the area: BTL indicates that treating a specific area commonly takes somewhere between a few minutes and around half an hour, so a small facial area is much shorter than an abdomen. For courses, BTL's patient material describes most people having roughly two to four treatments spaced about seven to ten days apart, though your doctor will set the actual plan and spacing for your skin and concern.",
           ],
         },
         {
@@ -1441,7 +1441,7 @@ export const technology: Technology[] = [
       faqs: [
         {
           q: "Can BTL Exilis be used on the body as well as the face?",
-          a: "Yes — Exilis is a platform with different applicators, and BTL positions it for both facial areas and larger body areas such as the abdomen, arms and thighs. Because its cooling allows energy to reach the deeper fatty layer, it is often considered where laxity and localised fat occur together. Which areas are suitable for you, and in what order, is decided by your doctor at consultation.",
+          a: "Yes. Exilis is a platform with different applicators, and BTL positions it for both facial areas and larger body areas such as the abdomen, arms and thighs. Because its cooling allows energy to reach the deeper fatty layer, it is often considered where laxity and localised fat occur together. Which areas are suitable for you, and in what order, is decided by your doctor at consultation.",
         },
         {
           q: "How is Exilis different from a bipolar or multipolar RF facial device?",
@@ -1449,7 +1449,7 @@ export const technology: Technology[] = [
         },
         {
           q: "Is BTL Exilis painful?",
-          a: "It is generally well tolerated. The embedded cooling keeps the skin surface comfortable while heat builds underneath, and BTL's own patient material likens the sensation to a hot stone massage. Comfort varies between individuals and with the energy used, so tell your doctor during the session if the warmth becomes too intense — settings can be adjusted.",
+          a: "It is generally well tolerated. The embedded cooling keeps the skin surface comfortable while heat builds underneath, and BTL's own patient material likens the sensation to a hot stone massage. Comfort varies between individuals and with the energy used, so tell your doctor during the session if the warmth becomes too intense: settings can be adjusted.",
         },
         {
           q: "How many Exilis sessions are typical, and is the effect permanent?",
@@ -1476,14 +1476,14 @@ export const technology: Technology[] = [
           heading: "What is Wonderface?",
           body: [
             "Wonderface is a face-specific device from the Spanish aesthetic-technology brand Wonder, used at Kaiteki within our radiofrequency treatment. Unlike a pure skin-tightening machine, it is a two-technology platform: a bipolar radiofrequency mode that warms the skin, and a neuromuscular stimulation mode that produces controlled contractions in the facial muscles. The manufacturer describes the two as independent modes rather than a single blended output, so a session can be weighted towards skin quality, towards muscle work, or set to include both.",
-            "That second element is the reason people compare Wonderface with muscle-stimulating facial devices rather than only with RF machines: the premise is that facial ageing is partly a matter of muscle tone and support, not skin laxity alone. It is a non-needling, surface-applied treatment — nothing is injected and nothing pierces the skin, which is what separates it from RF microneedling devices covered on their own pages. Whether it suits your face is assessed by a doctor at an in-person consultation.",
+            "That second element is the reason people compare Wonderface with muscle-stimulating facial devices rather than only with RF machines: the premise is that facial ageing is partly a matter of muscle tone and support, not skin laxity alone. It is a non-needling, surface-applied treatment: nothing is injected and nothing pierces the skin, which is what separates it from RF microneedling devices covered on their own pages. Whether it suits your face is assessed by a doctor at an in-person consultation.",
           ],
         },
         {
           heading: "How the two modes work",
           body: [
-            "In the radiofrequency mode, Wonderface uses a bipolar configuration — current passes between two closely spaced electrodes rather than travelling deep towards a return path as in monopolar systems. Bipolar RF is therefore more contained and comparatively superficial, which suits the thinner, more delicate tissue of the face where controlled, shallower heating is the point. The manufacturer describes the RF mode as bringing tissue to a controlled temperature in the region of 42 to 44 °C to a depth of approximately 2 cm, the range used in aesthetics to encourage collagen remodelling without damaging the skin surface.",
-            "In the neuromuscular mode, the applicators deliver pulses intended to stimulate the motor nerves supplying selected facial muscle groups, producing repeated involuntary contractions — the manufacturer's own description is of muscle conditioning rather than paralysis, and it is worth being clear that this is a different mechanism from botulinum toxin, which reduces muscle activity rather than exercising it. The two are not interchangeable and are not alternatives for the same goal. Which mode is used, at what intensity, over which muscle groups and for how long is decided by the treating doctor. Any change develops gradually across a course and varies between individuals.",
+            "In the radiofrequency mode, Wonderface uses a bipolar configuration: current passes between two closely spaced electrodes rather than travelling deep towards a return path as in monopolar systems. Bipolar RF is therefore more contained and comparatively superficial, which suits the thinner, more delicate tissue of the face where controlled, shallower heating is the point. The manufacturer describes the RF mode as bringing tissue to a controlled temperature in the region of 42 to 44 °C to a depth of approximately 2 cm, the range used in aesthetics to encourage collagen remodelling without damaging the skin surface.",
+            "In the neuromuscular mode, the applicators deliver pulses intended to stimulate the motor nerves supplying selected facial muscle groups, producing repeated involuntary contractions, the manufacturer's own description is of muscle conditioning rather than paralysis, and it is worth being clear that this is a different mechanism from botulinum toxin, which reduces muscle activity rather than exercising it. The two are not interchangeable and are not alternatives for the same goal. Which mode is used, at what intensity, over which muscle groups and for how long is decided by the treating doctor. Any change develops gradually across a course and varies between individuals.",
           ],
         },
         {
@@ -1511,7 +1511,7 @@ export const technology: Technology[] = [
           heading: "The session at Kaiteki",
           body: [
             "A visit begins with a doctor consultation and facial assessment, including which muscle groups and which skin areas are relevant to your concern. If Wonderface is appropriate, the skin is cleansed and applicators or pads are positioned on the face. In the neuromuscular mode you will feel repeated tapping or twitching sensations as the muscles contract, which is expected and not painful for most people; in the RF mode you feel building warmth as the applicator works over the area. No numbing is generally required and nothing is injected.",
-            "Sessions are typically short — this is a treatment people often schedule around a working day. A course of several sessions over a few weeks is usual for tone-based treatments, sometimes followed by periodic maintenance, but the number, spacing and mode balance are set by your doctor for your face rather than fixed in advance.",
+            "Sessions are typically short: this is a treatment people often schedule around a working day. A course of several sessions over a few weeks is usual for tone-based treatments, sometimes followed by periodic maintenance, but the number, spacing and mode balance are set by your doctor for your face rather than fixed in advance.",
           ],
         },
         {
@@ -1542,7 +1542,7 @@ export const technology: Technology[] = [
         },
         {
           q: "Is Wonderface an alternative to botulinum toxin?",
-          a: "No — the mechanisms are opposite. Botulinum toxin is a prescription medicine that reduces the activity of selected muscles, while Wonderface's neuromuscular mode stimulates muscles to contract. They are used for different goals and are not substitutes for one another. If you are considering either, discuss it with your doctor, who will advise what is appropriate and how treatments can be sequenced.",
+          a: "No. The mechanisms are opposite. Botulinum toxin is a prescription medicine that reduces the activity of selected muscles, while Wonderface's neuromuscular mode stimulates muscles to contract. They are used for different goals and are not substitutes for one another. If you are considering either, discuss it with your doctor, who will advise what is appropriate and how treatments can be sequenced.",
         },
         {
           q: "What does the muscle stimulation feel like?",
@@ -1550,7 +1550,7 @@ export const technology: Technology[] = [
         },
         {
           q: "Can I have Wonderface if I have fillers, threads or dental implants?",
-          a: "It depends on what you have, where it sits and how recently it was placed — existing injectables, threads and metal in or near the treatment area all need to be assessed before treatment, and implanted electronic devices such as pacemakers are a contraindication. This is exactly why a full treatment history matters. Bring the details to your consultation so the doctor can advise safely.",
+          a: "It depends on what you have, where it sits and how recently it was placed: existing injectables, threads and metal in or near the treatment area all need to be assessed before treatment, and implanted electronic devices such as pacemakers are a contraindication. This is exactly why a full treatment history matters. Bring the details to your consultation so the doctor can advise safely.",
         },
       ],
       reviewedBy: "dr-chang-chee-seong",
@@ -1673,7 +1673,7 @@ export const technology: Technology[] = [
         heading: "What is Cooltech?",
         body: [
           "Cooltech is a non-invasive cryolipolysis (controlled-cooling) body-contouring platform developed by Cocoon Medical, a Barcelona-based aesthetic device manufacturer. It sits in the same category as other fat-freezing systems and is used within Kaiteki's fat freezing treatment to address pockets of localised fat that have not responded to diet and exercise. The manufacturer refers to the process as cryoadipolysis.",
-          "What distinguishes Cooltech for someone comparing devices is the applicator design. The manufacturer describes 360° cooling plates — cooling delivered around the drawn-in tissue rather than from a single contact plate — together with a range of applicator shapes and sizes, and the ability to run more than one applicator at the same time. In practice this means two areas, or two sides of a symmetrical area such as the flanks, may be addressed within the same appointment rather than across separate visits. Whether Cooltech is appropriate for you, and which areas can reasonably be addressed, is assessed by a doctor at an in-person consultation.",
+          "What distinguishes Cooltech for someone comparing devices is the applicator design. The manufacturer describes 360° cooling plates (cooling delivered around the drawn-in tissue rather than from a single contact plate) together with a range of applicator shapes and sizes, and the ability to run more than one applicator at the same time. In practice this means two areas, or two sides of a symmetrical area such as the flanks, may be addressed within the same appointment rather than across separate visits. Whether Cooltech is appropriate for you, and which areas can reasonably be addressed, is assessed by a doctor at an in-person consultation.",
         ],
       },
       {
@@ -1686,7 +1686,7 @@ export const technology: Technology[] = [
       {
         heading: "What it may help address",
         body: [
-          "Cooltech is commonly considered for defined pockets of pinchable fat in the areas below. It is a contouring option for localised areas, not a weight-loss treatment, and it is not suitable for everyone — a consultation determines whether it is appropriate for you.",
+          "Cooltech is commonly considered for defined pockets of pinchable fat in the areas below. It is a contouring option for localised areas, not a weight-loss treatment, and it is not suitable for everyone. A consultation determines whether it is appropriate for you.",
         ],
         list: [
           "Lower abdomen and upper abdomen",
@@ -1700,7 +1700,7 @@ export const technology: Technology[] = [
       {
         heading: "Suitability & who should avoid it",
         body: [
-          "Cooltech is aimed at people who are close to a stable weight and have discrete, pinchable pockets of fat in specific areas. It is not a weight-loss treatment, not a treatment for obesity, and not a substitute for diet, exercise or medical weight management — if overall weight is your main concern, your doctor will discuss more appropriate options. Because it acts on fat below the skin rather than on pigment, skin tone is not the primary consideration it is with lasers, but the thickness and distribution of fat in the area very much are.",
+          "Cooltech is aimed at people who are close to a stable weight and have discrete, pinchable pockets of fat in specific areas. It is not a weight-loss treatment, not a treatment for obesity, and not a substitute for diet, exercise or medical weight management. If overall weight is your main concern, your doctor will discuss more appropriate options. Because it acts on fat below the skin rather than on pigment, skin tone is not the primary consideration it is with lasers, but the thickness and distribution of fat in the area very much are.",
           "Cryolipolysis may not be appropriate during pregnancy or breastfeeding, with cold-related conditions such as cryoglobulinaemia, cold urticaria or paroxysmal cold haemoglobinuria, with hernias in or near the treatment area, over broken or infected skin, or with certain circulatory, nerve or liver conditions. Please share your full medical history, current medications, any implants or devices, and any previous body-contouring procedures at consultation so the doctor can advise safely.",
         ],
       },
@@ -1735,11 +1735,11 @@ export const technology: Technology[] = [
     faqs: [
       {
         q: "Will Cooltech help me lose weight?",
-        a: "No. Cryolipolysis is used to address defined, pinchable pockets of localised fat in specific areas — it is a contouring option, not a weight-loss treatment and not a substitute for diet, exercise or medical weight management. Your weight on the scales is unlikely to change meaningfully. If overall weight is your main concern, discuss that with the doctor at consultation so you are pointed towards something appropriate.",
+        a: "No. Cryolipolysis is used to address defined, pinchable pockets of localised fat in specific areas: it is a contouring option, not a weight-loss treatment and not a substitute for diet, exercise or medical weight management. Your weight on the scales is unlikely to change meaningfully. If overall weight is your main concern, discuss that with the doctor at consultation so you are pointed towards something appropriate.",
       },
       {
         q: "Can more than one area be treated in the same visit?",
-        a: "Cooltech is designed so that more than one applicator can operate at the same time, so a plan covering two areas — or both flanks — may be able to be done within a single appointment rather than across separate visits. Whether that is sensible for you depends on the areas involved and your tolerance on the day. Your doctor will decide the sequence and settings at consultation.",
+        a: "Cooltech is designed so that more than one applicator can operate at the same time, so a plan covering two areas, or both flanks, may be able to be done within a single appointment rather than across separate visits. Whether that is sensible for you depends on the areas involved and your tolerance on the day. Your doctor will decide the sequence and settings at consultation.",
       },
       {
         q: "What does the session actually feel like?",
@@ -1747,7 +1747,7 @@ export const technology: Technology[] = [
       },
       {
         q: "How soon might I notice a change, and will it last?",
-        a: "Cryolipolysis works gradually — the body clears the affected fat cells over the weeks following a session, so any change is typically assessed a couple of months later rather than immediately. Outcomes vary between individuals and no result can be guaranteed. Maintaining a stable weight matters, because remaining fat cells can still enlarge with weight gain; your doctor will explain what is realistic for you at consultation.",
+        a: "Cryolipolysis works gradually: the body clears the affected fat cells over the weeks following a session, so any change is typically assessed a couple of months later rather than immediately. Outcomes vary between individuals and no result can be guaranteed. Maintaining a stable weight matters, because remaining fat cells can still enlarge with weight gain; your doctor will explain what is realistic for you at consultation.",
       },
     ],
     reviewedBy: "dr-joaan-kong",
@@ -1771,18 +1771,18 @@ export const technology: Technology[] = [
         heading: "What is Onda?",
         body: [
           "Onda is a non-invasive body- and face-contouring device that uses a microwave-based technology the manufacturer calls Coolwaves®. It is used to address localised fat, skin firmness and the appearance of cellulite on the body, and firmness of the face.",
-          "At Kaiteki, Onda is offered in two forms — Onda for Body and Onda for Face — using the same underlying technology at settings suited to each area. Whether it suits you depends on your concern, body area, skin and medical history, which a doctor assesses during consultation.",
+          "At Kaiteki, Onda is offered in two forms, Onda for Body and Onda for Face, using the same underlying technology at settings suited to each area. Whether it suits you depends on your concern, body area, skin and medical history, which a doctor assesses during consultation.",
         ],
       },
       {
         heading: "How Coolwaves technology works",
         body: [
-          "Coolwaves® are a specific range of microwaves delivered beneath the skin's surface. The energy is intended to act on the targeted tissue — for example, localised fat cells or the fibrous bands associated with cellulite — while the built-in cooling helps keep the surface of the skin protected during treatment.",
+          "Coolwaves® are a specific range of microwaves delivered beneath the skin's surface. The energy is intended to act on the targeted tissue, for example, localised fat cells or the fibrous bands associated with cellulite, while the built-in cooling helps keep the surface of the skin protected during treatment.",
           "The same energy may also prompt a gradual collagen-remodelling response, which is why the device is used for firmness as well as contouring. Settings are selected by the treating doctor for the area and your skin. Results develop over time and vary between individuals.",
         ],
       },
       {
-        heading: "What it may help address — body & face",
+        heading: "What it may help address: body & face",
         body: [
           "Onda is commonly considered for the concerns below. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
           "Onda for Body is used for localised fat and skin firmness, while Onda for Face uses a gentler approach for the face and jawline.",
@@ -1865,21 +1865,21 @@ export const technology: Technology[] = [
       {
         heading: "What is Schwarzy?",
         body: [
-          "Schwarzy is a non-invasive muscle-stimulation platform made by DEKA, an Italian medical laser and aesthetic device manufacturer. It uses a technology the manufacturer calls TOP FMS — Flat Magnetic Stimulation — to induce involuntary muscle contractions in a targeted area. At Kaiteki it is offered under the Em-Fit name as part of the muscle stimulation treatment, and it is used for muscle tone and definition, not for fat reduction.",
-          "That boundary is the most important thing to understand before booking. Schwarzy works on muscle: it is a toning modality, it is not a fat-reduction device, it is not a weight-loss treatment, and it is not a substitute for diet, exercise or medical weight management. Where fat is the concern, it is used alongside a separate fat-reduction approach rather than in place of one. What distinguishes it mechanically from a simple electrical stimulator is that the stimulus is magnetic rather than electrical, so it does not have to cross the resistance of the skin — and the manufacturer describes the field as deliberately flat and evenly distributed, without the intensity peaks associated with discomfort. Whether it is appropriate for you is assessed by a doctor at an in-person consultation.",
+          "Schwarzy is a non-invasive muscle-stimulation platform made by DEKA, an Italian medical laser and aesthetic device manufacturer. It uses a technology the manufacturer calls TOP FMS (Flat Magnetic Stimulation) to induce involuntary muscle contractions in a targeted area. At Kaiteki it is offered under the Em-Fit name as part of the muscle stimulation treatment, and it is used for muscle tone and definition, not for fat reduction.",
+          "That boundary is the most important thing to understand before booking. Schwarzy works on muscle: it is a toning modality, it is not a fat-reduction device, it is not a weight-loss treatment, and it is not a substitute for diet, exercise or medical weight management. Where fat is the concern, it is used alongside a separate fat-reduction approach rather than in place of one. What distinguishes it mechanically from a simple electrical stimulator is that the stimulus is magnetic rather than electrical, so it does not have to cross the resistance of the skin, and the manufacturer describes the field as deliberately flat and evenly distributed, without the intensity peaks associated with discomfort. Whether it is appropriate for you is assessed by a doctor at an in-person consultation.",
         ],
       },
       {
         heading: "How flat magnetic stimulation works",
         body: [
           "A coil inside the applicator generates a rapidly changing magnetic field. Rather than passing current through the skin the way electrode-based electrical stimulation does, the field passes through tissue and acts on the motor nerves supplying the muscle beneath, prompting it to contract. Because pain receptors in the skin are not being driven directly, the manufacturer describes the treatment as tolerable at intensities that would be difficult to reach with electrical stimulation, and no conductive gel or adhesive electrode is needed.",
-          "The contractions are involuntary and repeated many times over a session, at a rate and depth you could not produce by choice in the gym — which is the intended mechanism for a change in muscle tone. DEKA supplies three pad shapes so the applicator can sit properly against different areas: a FLAT pad chiefly for the thighs and buttocks, a CURVE pad for the lower legs and forearms, and an ELLIPSE pad for the abdomen. The manufacturer also describes selectable programmes graded by physical condition — Aerobic, Shaping and Strength — for people at different levels of conditioning. The programme, pad, intensity and progression are all selected by the treating doctor. Any change develops gradually over a course and varies between individuals.",
+          "The contractions are involuntary and repeated many times over a session, at a rate and depth you could not produce by choice in the gym, which is the intended mechanism for a change in muscle tone. DEKA supplies three pad shapes so the applicator can sit properly against different areas: a FLAT pad chiefly for the thighs and buttocks, a CURVE pad for the lower legs and forearms, and an ELLIPSE pad for the abdomen. The manufacturer also describes selectable programmes graded by physical condition (Aerobic, Shaping and Strength) for people at different levels of conditioning. The programme, pad, intensity and progression are all selected by the treating doctor. Any change develops gradually over a course and varies between individuals.",
         ],
       },
       {
         heading: "What it may help address",
         body: [
-          "Schwarzy is commonly considered for muscle tone and definition in the areas below, usually where someone is already reasonably close to their target shape and wants more definition. It does not reduce fat and it does not tighten loose skin, and it is not suitable for everyone — a consultation determines whether it is appropriate for you.",
+          "Schwarzy is commonly considered for muscle tone and definition in the areas below, usually where someone is already reasonably close to their target shape and wants more definition. It does not reduce fat and it does not tighten loose skin, and it is not suitable for everyone. A consultation determines whether it is appropriate for you.",
         ],
         list: [
           "Abdominal muscle tone and core definition",
@@ -1893,7 +1893,7 @@ export const technology: Technology[] = [
       {
         heading: "Suitability & who should avoid it",
         body: [
-          "It is aimed at people whose concern is definition and tone rather than volume of fat. If a layer of fat sits over the muscle, strengthening what is underneath will not change what is above it — your doctor may discuss pairing it with a separate fat-reduction treatment, or addressing that first. It is likewise not appropriate as a way of avoiding exercise or managing weight; it is best thought of as something that sits alongside your own activity.",
+          "It is aimed at people whose concern is definition and tone rather than volume of fat. If a layer of fat sits over the muscle, strengthening what is underneath will not change what is above it. Your doctor may discuss pairing it with a separate fat-reduction treatment, or addressing that first. It is likewise not appropriate as a way of avoiding exercise or managing weight; it is best thought of as something that sits alongside your own activity.",
           "Because the technology is magnetic, metal and electronic implants matter a great deal. Schwarzy is generally not used in people with a cardiac pacemaker, implanted defibrillator, neurostimulator, drug pump, metal implants, plates, screws, coils or an intrauterine device in or near the treatment area, and it may not be appropriate during pregnancy, with epilepsy or seizure history, with a hernia in the area, with active infection or malignancy, or with certain heart, kidney or bleeding conditions. Please declare every implant, device and medication along with your full medical history at consultation so the doctor can advise safely.",
         ],
       },
@@ -1901,7 +1901,7 @@ export const technology: Technology[] = [
         heading: "The session at Kaiteki",
         body: [
           "A visit starts with a doctor consultation, an assessment of the area and a review of your implant and medical history, since that is the main gate on suitability. If Schwarzy is appropriate you stay fully clothed or lightly draped, the pad is positioned and secured over the target muscle group, and the intensity is raised gradually. You will feel the muscle tense and release repeatedly in a way that feels strange at first but not painful; there are no needles and no anaesthetic.",
-          "A session commonly runs around half an hour per area, and treatment is typically planned as a course of several sessions over a few weeks, spaced so the muscle has time to recover between visits — much as you would space training. Occasional maintenance sessions afterwards are common, since muscle tone gained is not held indefinitely without ongoing stimulus or activity. Your doctor will set out a realistic schedule at consultation.",
+          "A session commonly runs around half an hour per area, and treatment is typically planned as a course of several sessions over a few weeks, spaced so the muscle has time to recover between visits, much as you would space training. Occasional maintenance sessions afterwards are common, since muscle tone gained is not held indefinitely without ongoing stimulus or activity. Your doctor will set out a realistic schedule at consultation.",
         ],
       },
       {
@@ -1914,7 +1914,7 @@ export const technology: Technology[] = [
       {
         heading: "Risks & side effects",
         body: [
-          "As with any medical procedure, Schwarzy carries risks, which are explained during consultation. Temporary effects can include muscle soreness, aching or cramping in the treated area, transient muscle fatigue, mild redness or warmth where the pad sat, and occasionally a temporary change in skin sensation. Serious effects are uncommon when the treatment is appropriately selected — particularly when implants, pregnancy and seizure history have been properly screened — and performed by a trained doctor, who will explain how any problem would be managed.",
+          "As with any medical procedure, Schwarzy carries risks, which are explained during consultation. Temporary effects can include muscle soreness, aching or cramping in the treated area, transient muscle fatigue, mild redness or warmth where the pad sat, and occasionally a temporary change in skin sensation. Serious effects are uncommon when the treatment is appropriately selected, particularly when implants, pregnancy and seizure history have been properly screened, and performed by a trained doctor, who will explain how any problem would be managed.",
         ],
       },
       {
@@ -1928,7 +1928,7 @@ export const technology: Technology[] = [
     faqs: [
       {
         q: "Does Schwarzy reduce fat or help with weight loss?",
-        a: "No. Schwarzy is a muscle-stimulation device — it acts on muscle tone and definition, not on fat, and it is not a weight-loss treatment or a substitute for diet, exercise or medical weight management. If fat is your concern, it pairs with a separate fat-reduction treatment rather than replacing one. Your doctor will explain at consultation which approach, or combination, actually fits your goal.",
+        a: "No. Schwarzy is a muscle-stimulation device: it acts on muscle tone and definition, not on fat, and it is not a weight-loss treatment or a substitute for diet, exercise or medical weight management. If fat is your concern, it pairs with a separate fat-reduction treatment rather than replacing one. Your doctor will explain at consultation which approach, or combination, actually fits your goal.",
       },
       {
         q: "Can I have Schwarzy if I have metal implants, a pacemaker or an IUD?",
@@ -1936,7 +1936,7 @@ export const technology: Technology[] = [
       },
       {
         q: "How is it different from doing the exercise myself?",
-        a: "The contractions are involuntary and are repeated at a rate and depth you cannot produce voluntarily, which is the mechanism the manufacturer describes for changing muscle tone. It is intended to work alongside your own activity, not to replace it — general fitness, cardiovascular health and weight management still come from exercise and diet. Your doctor will discuss how to fit it around your training at consultation.",
+        a: "The contractions are involuntary and are repeated at a rate and depth you cannot produce voluntarily, which is the mechanism the manufacturer describes for changing muscle tone. It is intended to work alongside your own activity, not to replace it: general fitness, cardiovascular health and weight management still come from exercise and diet. Your doctor will discuss how to fit it around your training at consultation.",
       },
       {
         q: "Is the effect permanent, and will I need top-ups?",
@@ -1966,14 +1966,14 @@ export const technology: Technology[] = [
         heading: "What is Profhilo?",
         body: [
           "Profhilo is an injectable hyaluronic acid (HA) product made by IBSA, an Italian pharmaceutical group. It sits in the skin-booster category rather than the dermal-filler category: it is not designed to add contour or reshape a feature, but to be placed into the skin so that HA is distributed through the tissue. The manufacturer describes this purpose as bio-remodelling.",
-          "What makes Profhilo mechanically distinct from other HA injectables is how the HA itself is prepared. IBSA describes its NAHYCO® Hybrid Technology as a patented thermal process in which high-molecular-weight and low-molecular-weight hyaluronic acid are bound into stable hybrid cooperative complexes by hydrogen bonds, without a chemical cross-linking agent such as BDDE. Whether Profhilo is an appropriate choice for you — and which product, quantity and technique are used — is a decision your doctor makes at an in-person consultation, not something that can be settled online.",
+          "What makes Profhilo mechanically distinct from other HA injectables is how the HA itself is prepared. IBSA describes its NAHYCO® Hybrid Technology as a patented thermal process in which high-molecular-weight and low-molecular-weight hyaluronic acid are bound into stable hybrid cooperative complexes by hydrogen bonds, without a chemical cross-linking agent such as BDDE. Whether Profhilo is an appropriate choice for you, and which product, quantity and technique are used, is a decision your doctor makes at an in-person consultation, not something that can be settled online.",
         ],
       },
       {
-        heading: "How it works — NAHYCO hybrid complexes",
+        heading: "How it works: NAHYCO hybrid complexes",
         body: [
           "IBSA states the composition as 32 mg of high-molecular-weight and 32 mg of low-molecular-weight hyaluronic acid in a 2 ml presentation, giving 64 mg of HA in total. The manufacturer associates the long-chain fraction mainly with water-binding and the short-chain fraction with signalling to the skin's own cells, and describes the hybrid complexes as spreading within the tissue rather than staying as a shaped bolus. Because there is no chemical cross-linker holding a gel structure, it behaves very differently from a contouring filler.",
-          "The manufacturer also describes a standardised placement approach it calls Bio Aesthetic Points (BAP), a defined set of entry points chosen to sit in anatomically safer areas and to allow the product to distribute. How that is applied to your face, neck or body — the points used, the amount, the depth and the number of visits — is determined entirely by the treating doctor after assessing you. Changes develop gradually over weeks and vary between individuals.",
+          "The manufacturer also describes a standardised placement approach it calls Bio Aesthetic Points (BAP), a defined set of entry points chosen to sit in anatomically safer areas and to allow the product to distribute. How that is applied to your face, neck or body, the points used, the amount, the depth and the number of visits, is determined entirely by the treating doctor after assessing you. Changes develop gradually over weeks and vary between individuals.",
         ],
       },
       {
@@ -1993,7 +1993,7 @@ export const technology: Technology[] = [
       {
         heading: "Suitability & who should avoid it",
         body: [
-          "Profhilo is aimed at adults whose main concern is skin hydration, texture and firmness. If what you actually want is contour — a fuller cheek, a defined chin, a corrected hollow — a skin booster is the wrong category, and your doctor will say so rather than substituting one for the other. Because Profhilo works through hyaluronic acid rather than light or heat, skin tone is not a limiting factor in the way it can be with laser treatment, though this does not make it appropriate for everyone.",
+          "Profhilo is aimed at adults whose main concern is skin hydration, texture and firmness. If what you actually want is contour, a fuller cheek, a defined chin, a corrected hollow, a skin booster is the wrong category, and your doctor will say so rather than substituting one for the other. Because Profhilo works through hyaluronic acid rather than light or heat, skin tone is not a limiting factor in the way it can be with laser treatment, though this does not make it appropriate for everyone.",
           "It may not be suitable during pregnancy or breastfeeding, if you have a known hypersensitivity to hyaluronic acid products, if there is active infection, acne or inflammation at the intended site, if you have a bleeding disorder or take blood-thinning medication, or alongside certain autoimmune conditions. Please share your full medical history, medications, supplements and any previous injectable treatments at consultation so your doctor can advise safely.",
         ],
       },
@@ -2001,7 +2001,7 @@ export const technology: Technology[] = [
         heading: "The session at Kaiteki",
         body: [
           "Every Profhilo session at Kaiteki starts with a doctor consultation and skin assessment, since Profhilo is used within Kaiteki's skin-booster treatment and is only one of several products a doctor may consider. If it is appropriate, the skin is cleansed and a topical anaesthetic may be applied for comfort. The doctor then places the product using the technique and points they judge suitable for you.",
-          "The injecting itself is usually brief — the visit often takes well under an hour including preparation. The manufacturer describes an initial course of more than one visit spaced some weeks apart, followed by periodic maintenance, but the number of sessions and their spacing is not a fixed schedule and will be set by your doctor based on your skin and your response. Nothing about quantity, depth or interval should be decided in advance of assessment.",
+          "The injecting itself is usually brief: the visit often takes well under an hour including preparation. The manufacturer describes an initial course of more than one visit spaced some weeks apart, followed by periodic maintenance, but the number of sessions and their spacing is not a fixed schedule and will be set by your doctor based on your skin and your response. Nothing about quantity, depth or interval should be decided in advance of assessment.",
         ],
       },
       {
@@ -2020,7 +2020,7 @@ export const technology: Technology[] = [
       {
         heading: "Sessions & cost factors",
         body: [
-          "The number of sessions and the overall cost depend on the area or areas being addressed — face, neck, décolletage, arms or abdomen all differ — the quantity of product your doctor judges appropriate, and whether maintenance visits form part of your plan over time.",
+          "The number of sessions and the overall cost depend on the area or areas being addressed (face, neck, décolletage, arms or abdomen all differ), the quantity of product your doctor judges appropriate, and whether maintenance visits form part of your plan over time.",
           "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual assessed plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
         ],
       },
@@ -2069,8 +2069,8 @@ export const technology: Technology[] = [
       {
         heading: "How polynucleotides work",
         body: [
-          "The manufacturer describes Rejuran's polynucleotides as purified, fragmented DNA chains that form a soft gel-like matrix once placed in the skin and that support fibroblast activity — the cells responsible for producing the skin's structural proteins. It is described as working with the skin's own repair processes rather than adding volume, which is why the intended change is in skin quality, texture and resilience rather than in shape. The hybrid variant adds hyaluronic acid so that a hydration component sits alongside the polynucleotide component.",
-          "Delivery is by a series of small injections spread across the treatment area rather than a single placement, and a topical anaesthetic is commonly applied beforehand for comfort. The variant, the quantity, the distribution and the depth are all selected by the treating doctor for your skin and concern. Changes develop gradually over weeks and vary between individuals — nothing here is a promised outcome.",
+          "The manufacturer describes Rejuran's polynucleotides as purified, fragmented DNA chains that form a soft gel-like matrix once placed in the skin and that support fibroblast activity, the cells responsible for producing the skin's structural proteins. It is described as working with the skin's own repair processes rather than adding volume, which is why the intended change is in skin quality, texture and resilience rather than in shape. The hybrid variant adds hyaluronic acid so that a hydration component sits alongside the polynucleotide component.",
+          "Delivery is by a series of small injections spread across the treatment area rather than a single placement, and a topical anaesthetic is commonly applied beforehand for comfort. The variant, the quantity, the distribution and the depth are all selected by the treating doctor for your skin and concern. Changes develop gradually over weeks and vary between individuals. Nothing here is a promised outcome.",
         ],
       },
       {
@@ -2098,7 +2098,7 @@ export const technology: Technology[] = [
       {
         heading: "The session at Kaiteki",
         body: [
-          "Rejuran is used within Kaiteki's skin-booster treatment, and a session begins with a doctor consultation and skin assessment — including which variant, if any, suits your concern. If it is appropriate, the skin is cleansed and a topical anaesthetic is usually applied and left to take effect, which accounts for much of the appointment time.",
+          "Rejuran is used within Kaiteki's skin-booster treatment, and a session begins with a doctor consultation and skin assessment, including which variant, if any, suits your concern. If it is appropriate, the skin is cleansed and a topical anaesthetic is usually applied and left to take effect, which accounts for much of the appointment time.",
           "The doctor then places a series of small injections across the assessed area. Including preparation and numbing, a visit commonly runs from around half an hour to somewhat longer depending on the area. A course of several sessions spaced a few weeks apart is often described for polynucleotide treatment, but the number and spacing is set by your doctor for your skin rather than fixed in advance, and should not be treated as a guaranteed schedule.",
         ],
       },
@@ -2118,7 +2118,7 @@ export const technology: Technology[] = [
       {
         heading: "Sessions & cost factors",
         body: [
-          "What drives session count and cost is which variant your doctor selects, the size and number of areas being addressed — a full face, the under-eye area and scar-focused work all differ — the quantity of product used, and how your skin responds over the course.",
+          "What drives session count and cost is which variant your doctor selects, the size and number of areas being addressed (a full face, the under-eye area and scar-focused work all differ), the quantity of product used, and how your skin responds over the course.",
           "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
         ],
       },
@@ -2160,8 +2160,8 @@ export const technology: Technology[] = [
       {
         heading: "What is Plinest/Newest?",
         body: [
-          "Plinest and Newest are injectable polynucleotide products made by Mastelli, an Italian pharmaceutical company. Polynucleotides are chains of purified DNA fragments, and Mastelli's are derived from trout — a point of difference worth knowing, since the better-known Korean polynucleotide products are salmon-derived. The manufacturer's trademark for its extraction and purification process is PN-HPT™, which stands for Polynucleotides Highly Purified Technology, and it presents the purity grade of the polynucleotide chains as the defining feature of the range.",
-          "The two names are not interchangeable products. Plinest is the polynucleotide formulation on its own; Newest is described by the manufacturer as combining PN-HPT with hyaluronic acid and mannitol, so a hydration component and an antioxidant component sit alongside the polynucleotides. The range also includes presentations intended for particular areas such as the eye region. Which product — if any in this category — suits you, and the quantity and technique used, is decided by the treating doctor after an in-person assessment.",
+          "Plinest and Newest are injectable polynucleotide products made by Mastelli, an Italian pharmaceutical company. Polynucleotides are chains of purified DNA fragments, and Mastelli's are derived from trout, a point of difference worth knowing, since the better-known Korean polynucleotide products are salmon-derived. The manufacturer's trademark for its extraction and purification process is PN-HPT™, which stands for Polynucleotides Highly Purified Technology, and it presents the purity grade of the polynucleotide chains as the defining feature of the range.",
+          "The two names are not interchangeable products. Plinest is the polynucleotide formulation on its own; Newest is described by the manufacturer as combining PN-HPT with hyaluronic acid and mannitol, so a hydration component and an antioxidant component sit alongside the polynucleotides. The range also includes presentations intended for particular areas such as the eye region. Which product, if any in this category, suits you, and the quantity and technique used, is decided by the treating doctor after an in-person assessment.",
         ],
       },
       {
@@ -2189,7 +2189,7 @@ export const technology: Technology[] = [
       {
         heading: "Suitability & who should avoid it",
         body: [
-          "The range is aimed at adults whose priority is skin quality rather than contour. Because it works through injected material rather than light or heat, skin tone is not a limiting factor in the way it can be with laser treatment, and it is used across a range of skin tones — though that does not make it appropriate for everyone. As the polynucleotides are fish-derived, you must declare any fish or seafood allergy before treatment.",
+          "The range is aimed at adults whose priority is skin quality rather than contour. Because it works through injected material rather than light or heat, skin tone is not a limiting factor in the way it can be with laser treatment, and it is used across a range of skin tones, though that does not make it appropriate for everyone. As the polynucleotides are fish-derived, you must declare any fish or seafood allergy before treatment.",
           "It may not be suitable during pregnancy or breastfeeding, where there is active infection, an acne flare or inflammation at the intended site, if you have a known hypersensitivity to hyaluronic acid or mannitol in the case of Newest, if you have a bleeding disorder or take blood-thinning medication, or alongside certain autoimmune conditions. Please share your full medical history, allergies, medications and previous injectable treatments at consultation so your doctor can advise safely.",
         ],
       },
@@ -2216,7 +2216,7 @@ export const technology: Technology[] = [
       {
         heading: "Sessions & cost factors",
         body: [
-          "What drives session count and cost is which formulation your doctor selects, the number and size of areas being addressed — a full face, the eye area or the neck and hands all differ — the quantity of product used, and how your skin responds across the course.",
+          "What drives session count and cost is which formulation your doctor selects, the number and size of areas being addressed (a full face, the eye area or the neck and hands all differ), the quantity of product used, and how your skin responds across the course.",
           "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
         ],
       },
@@ -2228,7 +2228,7 @@ export const technology: Technology[] = [
       },
       {
         q: "How does Plinest differ from Rejuran?",
-        a: "Both are polynucleotide skin boosters, but they come from different manufacturers and different sources: Mastelli's polynucleotides are trout-derived and use its PN-HPT purification technology, while Rejuran's are salmon-derived and made by Pharma Research in Korea. Their formulations and available variants also differ. Neither is presented here as superior — which one a doctor selects depends on your assessment, and that decision is theirs to make in person.",
+        a: "Both are polynucleotide skin boosters, but they come from different manufacturers and different sources: Mastelli's polynucleotides are trout-derived and use its PN-HPT purification technology, while Rejuran's are salmon-derived and made by Pharma Research in Korea. Their formulations and available variants also differ. Neither is presented here as superior: which one a doctor selects depends on your assessment, and that decision is theirs to make in person.",
       },
       {
         q: "Will Plinest or Newest add volume to my face?",
@@ -2266,7 +2266,7 @@ export const technology: Technology[] = [
         heading: "How PDLLA collagen stimulation works",
         body: [
           "Poly-D,L-lactic acid is a resorbable polymer. As microspheres, it is not intended to act as a space-filling gel; the manufacturer's premise is that the particles remain in the tissue for a period, during which they act as a stimulus for fibroblast activity, and are then gradually broken down by hydrolysis into lactic acid and cleared by the body over a period of months. That is why any change is described as developing gradually rather than appearing on the day, and why the hyaluronic acid carrier matters: it provides the immediate hydration component while the PDLLA component works on a much slower timescale.",
-          "Because the product is reconstituted before use, the dilution, the quantity, the placement and the plane are entirely determined by the treating doctor for your skin and concern — this is not a fixed recipe, and it is not something a patient should specify. Changes develop gradually over weeks to months and vary between individuals.",
+          "Because the product is reconstituted before use, the dilution, the quantity, the placement and the plane are entirely determined by the treating doctor for your skin and concern. This is not a fixed recipe, and it is not something a patient should specify. Changes develop gradually over weeks to months and vary between individuals.",
         ],
       },
       {
@@ -2294,7 +2294,7 @@ export const technology: Technology[] = [
       {
         heading: "The session at Kaiteki",
         body: [
-          "Juvelook is used within Kaiteki's skin-booster treatment, so a visit begins with a doctor consultation and skin assessment — including whether a collagen-stimulating product suits your concern, or whether a hydrating or polynucleotide booster would be the more sensible starting point. If Juvelook is appropriate, the product is prepared, the skin is cleansed and a topical anaesthetic is usually applied and left to take effect.",
+          "Juvelook is used within Kaiteki's skin-booster treatment, so a visit begins with a doctor consultation and skin assessment, including whether a collagen-stimulating product suits your concern, or whether a hydrating or polynucleotide booster would be the more sensible starting point. If Juvelook is appropriate, the product is prepared, the skin is cleansed and a topical anaesthetic is usually applied and left to take effect.",
           "The doctor then places the product across the assessed area. Including preparation and numbing, a visit commonly runs from around half an hour upwards. Biostimulator treatment is typically described as a course of more than one session spaced several weeks apart, with the change appearing over months rather than days, but the number of sessions and the interval between them are set by your doctor based on your skin and your response, not by a standard schedule.",
         ],
       },
@@ -2308,7 +2308,7 @@ export const technology: Technology[] = [
       {
         heading: "Risks & side effects",
         body: [
-          "As with any injectable procedure, Juvelook carries risks, which are explained during consultation. Temporary effects can include swelling, redness, bruising, tenderness and small palpable bumps. Less common effects include infection, prolonged swelling, persistent nodules or granuloma formation — a recognised consideration with collagen-stimulating products generally — and hypersensitivity reactions, while vascular complications are rare but recognised with any facial injection. Serious effects are uncommon when the product is appropriately selected and administered by a trained doctor.",
+          "As with any injectable procedure, Juvelook carries risks, which are explained during consultation. Temporary effects can include swelling, redness, bruising, tenderness and small palpable bumps. Less common effects include infection, prolonged swelling, persistent nodules or granuloma formation (a recognised consideration with collagen-stimulating products generally), and hypersensitivity reactions, while vascular complications are rare but recognised with any facial injection. Serious effects are uncommon when the product is appropriately selected and administered by a trained doctor.",
         ],
       },
       {
@@ -2326,11 +2326,11 @@ export const technology: Technology[] = [
       },
       {
         q: "How long before anything is visible, and is it permanent?",
-        a: "Any hydration effect from the hyaluronic acid carrier is immediate but short-lived, while the PDLLA component is intended to work gradually over weeks to months as the polymer is broken down and cleared. Nothing about it is permanent — PDLLA is resorbable, and results vary between individuals. Your doctor will set out a realistic timeframe for your skin at consultation.",
+        a: "Any hydration effect from the hyaluronic acid carrier is immediate but short-lived, while the PDLLA component is intended to work gradually over weeks to months as the polymer is broken down and cleared. Nothing about it is permanent: PDLLA is resorbable, and results vary between individuals. Your doctor will set out a realistic timeframe for your skin at consultation.",
       },
       {
         q: "Is Juvelook the same as Sculptra?",
-        a: "They are not the same product. Both are poly-lactic-acid-based collagen stimulators, but they differ in polymer form, formulation and how they are prepared and used — Juvelook suspends PDLLA microspheres in non-crosslinked hyaluronic acid, and VAIM's range includes a separate higher-concentration product intended for volume rather than skin quality. Which is appropriate for you, if either, is a decision for your doctor after assessment.",
+        a: "They are not the same product. Both are poly-lactic-acid-based collagen stimulators, but they differ in polymer form, formulation and how they are prepared and used: Juvelook suspends PDLLA microspheres in non-crosslinked hyaluronic acid, and VAIM's range includes a separate higher-concentration product intended for volume rather than skin quality. Which is appropriate for you, if either, is a decision for your doctor after assessment.",
       },
       {
         q: "Can Juvelook cause lumps or nodules?",
@@ -2356,14 +2356,14 @@ export const technology: Technology[] = [
       {
         heading: "What is Hydrodeluxe?",
         body: [
-          "Hydrodeluxe is the injectable skin booster marketed under the Neauvia brand as Hydro Deluxe, manufactured by Matex Lab in Italy. It sits in the hyaluronic acid family of skin boosters — the category chosen primarily for hydration and skin quality — rather than among the polynucleotide products such as Rejuran or Plinest, or the collagen-stimulating poly-lactic-acid products such as Juvelook. Because clinics sometimes shorten or vary the trade name, it is worth confirming at consultation exactly which product is being used.",
-          "What distinguishes it within the hyaluronic acid category is the rest of the formulation. The manufacturer describes it as a biodegradable linear hyaluronic acid hydrogel — non-crosslinked, so not designed to hold a shape — enriched with calcium hydroxyapatite (CaHA) and with the amino acids glycine and L-proline. That places it a little apart from a plain hydrating booster. Whether it is the right product for you, and the quantity and technique used, is a decision the treating doctor makes after an in-person assessment.",
+          "Hydrodeluxe is the injectable skin booster marketed under the Neauvia brand as Hydro Deluxe, manufactured by Matex Lab in Italy. It sits in the hyaluronic acid family of skin boosters (the category chosen primarily for hydration and skin quality), rather than among the polynucleotide products such as Rejuran or Plinest, or the collagen-stimulating poly-lactic-acid products such as Juvelook. Because clinics sometimes shorten or vary the trade name, it is worth confirming at consultation exactly which product is being used.",
+          "What distinguishes it within the hyaluronic acid category is the rest of the formulation. The manufacturer describes it as a biodegradable linear hyaluronic acid hydrogel (non-crosslinked, so not designed to hold a shape) enriched with calcium hydroxyapatite (CaHA) and with the amino acids glycine and L-proline. That places it a little apart from a plain hydrating booster. Whether it is the right product for you, and the quantity and technique used, is a decision the treating doctor makes after an in-person assessment.",
         ],
       },
       {
         heading: "How the formulation works",
         body: [
-          "The hyaluronic acid component is linear and non-crosslinked, which means it is not formulated to resist spreading or to create structure the way a contouring filler is; the manufacturer describes it as a hydrogel intended to be placed into the skin and resorbed over time. Its role is water-binding — supporting hydration and, through that, the look and feel of the skin surface. This is also why it is not an alternative to a filler and should not be discussed as one.",
+          "The hyaluronic acid component is linear and non-crosslinked, which means it is not formulated to resist spreading or to create structure the way a contouring filler is; the manufacturer describes it as a hydrogel intended to be placed into the skin and resorbed over time. Its role is water-binding, supporting hydration and, through that, the look and feel of the skin surface. This is also why it is not an alternative to a filler and should not be discussed as one.",
           "The additional ingredients are what the manufacturer positions as the difference. Glycine and proline are the two amino acids most abundant in collagen, and the manufacturer includes them along with calcium hydroxyapatite, a mineral-based material used elsewhere in aesthetics as a collagen-stimulating agent. Here it appears in a hydrating, non-crosslinked hydrogel rather than as a volumising product. The quantity, distribution and depth are selected entirely by the treating doctor. Changes develop gradually and vary between individuals.",
         ],
       },
@@ -2384,7 +2384,7 @@ export const technology: Technology[] = [
       {
         heading: "Suitability & who should avoid it",
         body: [
-          "It is aimed at adults whose priority is skin hydration and quality. If contour is what concerns you, this is the wrong category and your doctor will tell you so rather than substituting one for the other. Because it works through injected material rather than light or heat, skin tone is not a limiting factor in the way it can be with laser treatment, and it is used across a range of skin tones — though that alone does not make it appropriate for everyone.",
+          "It is aimed at adults whose priority is skin hydration and quality. If contour is what concerns you, this is the wrong category and your doctor will tell you so rather than substituting one for the other. Because it works through injected material rather than light or heat, skin tone is not a limiting factor in the way it can be with laser treatment, and it is used across a range of skin tones, though that alone does not make it appropriate for everyone.",
           "It may not be suitable if you have a known hypersensitivity to hyaluronic acid or to calcium hydroxyapatite, during pregnancy or breastfeeding, where there is active infection, an acne flare or inflammation at the intended site, if you have a bleeding disorder or take blood-thinning medication, if you have a tendency to keloid scarring, or alongside certain autoimmune conditions. Tell your doctor about any previous CaHA-based or filler treatment, along with your full medical history, allergies and medications, so they can advise safely.",
         ],
       },
@@ -2392,7 +2392,7 @@ export const technology: Technology[] = [
         heading: "The session at Kaiteki",
         body: [
           "Hydrodeluxe is used within Kaiteki's skin-booster treatment, so a visit begins with a doctor consultation and skin assessment, including whether a hydrating booster is the sensible starting point for your concern or whether another category would be more appropriate. If it is suitable, the skin is cleansed and a topical anaesthetic may be applied for comfort.",
-          "The doctor then places the product across the assessed area using the technique they judge appropriate. Including preparation, a visit is typically short — commonly well under an hour. A course of more than one session spaced some weeks apart, with occasional maintenance afterwards, is a common pattern for hydrating boosters, but the number of sessions and the interval are set by your doctor for your skin and response rather than promised in advance.",
+          "The doctor then places the product across the assessed area using the technique they judge appropriate. Including preparation, a visit is typically short, commonly well under an hour. A course of more than one session spaced some weeks apart, with occasional maintenance afterwards, is a common pattern for hydrating boosters, but the number of sessions and the interval are set by your doctor for your skin and response rather than promised in advance.",
         ],
       },
       {
@@ -2411,7 +2411,7 @@ export const technology: Technology[] = [
       {
         heading: "Sessions & cost factors",
         body: [
-          "What drives session count and cost is the number and size of areas being addressed — face, neck and décolletage all differ — the quantity of product your doctor judges appropriate, and whether maintenance visits form part of your plan over time.",
+          "What drives session count and cost is the number and size of areas being addressed (face, neck and décolletage all differ), the quantity of product your doctor judges appropriate, and whether maintenance visits form part of your plan over time.",
           "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
         ],
       },
@@ -2463,21 +2463,21 @@ export const technology: Technology[] = [
       {
         heading: "What Botox is",
         body: [
-          "Botox is a brand of botulinum toxin type A, developed by Allergan (now part of AbbVie). Its active substance is onabotulinumtoxinA, a purified protein produced by the bacterium Clostridium botulinum. It is one of several registered botulinum toxin products, and the one most people have heard of — the name is often used loosely to mean any botulinum toxin treatment, which it is not.",
+          "Botox is a brand of botulinum toxin type A, developed by Allergan (now part of AbbVie). Its active substance is onabotulinumtoxinA, a purified protein produced by the bacterium Clostridium botulinum. It is one of several registered botulinum toxin products, and the one most people have heard of. The name is often used loosely to mean any botulinum toxin treatment, which it is not.",
           "It is supplied as a sterile powder in single-use vials, kept refrigerated and reconstituted with sterile saline by the doctor immediately before treatment. Alongside aesthetic use, botulinum toxin type A has a long clinical history in neurology and ophthalmology, and Botox specifically holds registered indications for conditions including excessive underarm sweating and chronic migraine.",
         ],
       },
       {
         heading: "How it is dosed",
         body: [
-          "Dosing is measured in units, not millilitres, and units are specific to each product — Botox units cannot be converted to another brand's units, and the two are not interchangeable. This is why comparing brands or clinics on unit count alone is misleading.",
+          "Dosing is measured in units, not millilitres, and units are specific to each product: Botox units cannot be converted to another brand's units, and the two are not interchangeable. This is why comparing brands or clinics on unit count alone is misleading.",
           "The number of units, the injection points and the depth are clinical decisions your doctor makes after examining the area at rest and in movement. They depend on the muscle being treated, your anatomy and your assessment, so they are not set from a menu or quoted before a consultation.",
         ],
       },
       {
         heading: "How it is handled at Kaiteki",
         body: [
-          "Kaiteki uses product registered with Malaysia's National Pharmaceutical Regulatory Agency, sourced through licensed channels and stored under the cold-chain conditions the manufacturer specifies. Vials are reconstituted for a single patient and used within the stated window — nothing is pooled or carried over between patients.",
+          "Kaiteki uses product registered with Malaysia's National Pharmaceutical Regulatory Agency, sourced through licensed channels and stored under the cold-chain conditions the manufacturer specifies. Vials are reconstituted for a single patient and used within the stated window. Nothing is pooled or carried over between patients.",
           "As a prescription medicine, it is prescribed and administered by a registered doctor after an in-person assessment. It is never given by a therapist acting alone and never supplied for you to take away or inject yourself.",
         ],
       },
@@ -2493,7 +2493,7 @@ export const technology: Technology[] = [
       },
       {
         q: "Is Botox permanent?",
-        a: "No. The effect is temporary — nerve signalling gradually returns and the treated muscle or gland resumes its usual activity. How long that takes varies between individuals, so treatment is planned as a repeating cycle and reviewed by your doctor rather than set to a fixed schedule.",
+        a: "No. The effect is temporary: nerve signalling gradually returns and the treated muscle or gland resumes its usual activity. How long that takes varies between individuals, so treatment is planned as a repeating cycle and reviewed by your doctor rather than set to a fixed schedule.",
       },
     ],
   },
@@ -2511,15 +2511,15 @@ export const technology: Technology[] = [
         {
           heading: "What is Sculptra?",
           body: [
-            "Sculptra is an injectable collagen stimulator made by Galderma. Its active material is poly-L-lactic acid — the manufacturer refers to its particle form as PLLA-SCA — supplied as a dry powder that the clinic reconstitutes with sterile water before use. It sits in the bio-stimulator category rather than the dermal filler category, and that distinction matters if you are comparing options: a hyaluronic acid filler adds volume the moment it is placed, whereas Sculptra is intended to work by prompting your own collagen response over a period of months.",
-            "Because of that mechanism, Sculptra is generally considered where the concern is overall firmness and skin quality across a region — the cheek area, for example — rather than reshaping a single line on the day. Whether it is an appropriate choice for you, and whether a filler or a different bio-stimulator would suit your concern better, is a clinical decision your doctor makes at an in-person consultation.",
+            "Sculptra is an injectable collagen stimulator made by Galderma. Its active material is poly-L-lactic acid (the manufacturer refers to its particle form as PLLA-SCA) supplied as a dry powder that the clinic reconstitutes with sterile water before use. It sits in the bio-stimulator category rather than the dermal filler category, and that distinction matters if you are comparing options: a hyaluronic acid filler adds volume the moment it is placed, whereas Sculptra is intended to work by prompting your own collagen response over a period of months.",
+            "Because of that mechanism, Sculptra is generally considered where the concern is overall firmness and skin quality across a region, the cheek area, for example, rather than reshaping a single line on the day. Whether it is an appropriate choice for you, and whether a filler or a different bio-stimulator would suit your concern better, is a clinical decision your doctor makes at an in-person consultation.",
           ],
         },
         {
           heading: "How poly-L-lactic acid works",
           body: [
-            "Poly-L-lactic acid is a synthetic, bioresorbable material that has long been used in absorbable medical sutures. Once injected, the PLLA particles are gradually broken down and cleared by the body; while that happens, they act as a stimulus for the skin's own collagen-forming activity. The reconstituting fluid is absorbed relatively quickly, so any immediate change you see straight after a session is not the treatment effect — the intended change develops slowly as new collagen is laid down.",
-            "This is why Sculptra is planned as a short course rather than a single visit, and why the manufacturer's own materials describe change appearing over weeks to months rather than immediately. Product choice, the number of sessions, the depth and the amount used are all decided by the treating doctor after examining you — Kaiteki does not publish dose guidance, because it is not something a reader should self-prescribe. Results develop gradually and vary between individuals.",
+            "Poly-L-lactic acid is a synthetic, bioresorbable material that has long been used in absorbable medical sutures. Once injected, the PLLA particles are gradually broken down and cleared by the body; while that happens, they act as a stimulus for the skin's own collagen-forming activity. The reconstituting fluid is absorbed relatively quickly, so any immediate change you see straight after a session is not the treatment effect: the intended change develops slowly as new collagen is laid down.",
+            "This is why Sculptra is planned as a short course rather than a single visit, and why the manufacturer's own materials describe change appearing over weeks to months rather than immediately. Product choice, the number of sessions, the depth and the amount used are all decided by the treating doctor after examining you. Kaiteki does not publish dose guidance, because it is not something a reader should self-prescribe. Results develop gradually and vary between individuals.",
           ],
         },
         {
@@ -2546,7 +2546,7 @@ export const technology: Technology[] = [
         {
           heading: "The session at Kaiteki",
           body: [
-            "A visit begins with a doctor consultation and facial assessment, where the concern, your history and the realistic time course are discussed. If Sculptra is appropriate, the product is reconstituted in advance per the manufacturer's instructions, the skin is cleansed and a topical anaesthetic or local anaesthetic is used for comfort. The injection itself typically takes a relatively short time — most of the appointment is assessment, preparation and aftercare discussion rather than the injecting.",
+            "A visit begins with a doctor consultation and facial assessment, where the concern, your history and the realistic time course are discussed. If Sculptra is appropriate, the product is reconstituted in advance per the manufacturer's instructions, the skin is cleansed and a topical anaesthetic or local anaesthetic is used for comfort. The injection itself typically takes a relatively short time: most of the appointment is assessment, preparation and aftercare discussion rather than the injecting.",
             "The doctor may massage the treated area afterwards and will explain the aftercare routine, including whether any at-home massage is advised for you. Sculptra is normally planned as a small number of sessions spaced a few weeks apart, with the response reviewed between visits. The exact number and spacing depend on your assessment, and your doctor will set out what to expect for your case.",
           ],
         },
@@ -2554,7 +2554,7 @@ export const technology: Technology[] = [
           heading: "Downtime & aftercare",
           body: [
             "Most people return to normal activity the same day, though this varies. Injection-site swelling, redness, tenderness or bruising is common in the first few days and usually settles; bruising can occasionally take longer to fade, which is worth planning around if you have an event coming up.",
-            "Your doctor will advise on aftercare specific to you, which commonly includes avoiding pressure or vigorous facial treatments on the area for a short period, and following any massage instructions given. Because change develops over months, review appointments matter more here than with an immediate-result treatment — keep them, and raise anything unexpected with the clinic rather than waiting.",
+            "Your doctor will advise on aftercare specific to you, which commonly includes avoiding pressure or vigorous facial treatments on the area for a short period, and following any massage instructions given. Because change develops over months, review appointments matter more here than with an immediate-result treatment: keep them, and raise anything unexpected with the clinic rather than waiting.",
           ],
         },
         {
@@ -2574,11 +2574,11 @@ export const technology: Technology[] = [
       faqs: [
         {
           q: "How is Sculptra different from a hyaluronic acid filler?",
-          a: "A hyaluronic acid filler adds volume in the moment it is placed and can often be dissolved if needed. Sculptra instead works through poly-L-lactic acid, which is gradually resorbed while acting as a stimulus for your own collagen, so change is intended to appear over weeks to months and it cannot be dissolved in the same way. Neither category is better in the abstract — they answer different concerns, and your doctor will advise which fits yours at consultation.",
+          a: "A hyaluronic acid filler adds volume in the moment it is placed and can often be dissolved if needed. Sculptra instead works through poly-L-lactic acid, which is gradually resorbed while acting as a stimulus for your own collagen, so change is intended to appear over weeks to months and it cannot be dissolved in the same way. Neither category is better in the abstract: they answer different concerns, and your doctor will advise which fits yours at consultation.",
         },
         {
           q: "How soon would I notice a change after Sculptra?",
-          a: "Not immediately. The fluid used to reconstitute the product is absorbed within days, so early appearance is not the treatment effect. The intended change develops gradually over a period of months as the collagen response builds, and it varies considerably between individuals — your doctor will set out a realistic time course for your own plan at consultation.",
+          a: "Not immediately. The fluid used to reconstitute the product is absorbed within days, so early appearance is not the treatment effect. The intended change develops gradually over a period of months as the collagen response builds, and it varies considerably between individuals. Your doctor will set out a realistic time course for your own plan at consultation.",
         },
         {
           q: "Does Sculptra hurt, and is anaesthetic used?",
@@ -2586,7 +2586,7 @@ export const technology: Technology[] = [
         },
         {
           q: "Is Sculptra permanent?",
-          a: "No. The poly-L-lactic acid itself is bioresorbable and is broken down and cleared by the body. Any change comes from your own collagen response, which continues to age normally afterwards, so the effect is not permanent and duration is not guaranteed — how long it holds differs between individuals. Your doctor will discuss review and any maintenance at consultation.",
+          a: "No. The poly-L-lactic acid itself is bioresorbable and is broken down and cleared by the body. Any change comes from your own collagen response, which continues to age normally afterwards, so the effect is not permanent and duration is not guaranteed: how long it holds differs between individuals. Your doctor will discuss review and any maintenance at consultation.",
         },
       ],
       reviewedBy: "dr-jamie-gan",
@@ -2608,15 +2608,15 @@ export const technology: Technology[] = [
         {
           heading: "What is Ellansé?",
           body: [
-            "Ellansé is an injectable implant whose active material is polycaprolactone — smooth PCL microspheres suspended in a carrier gel that the manufacturer describes as a carboxymethylcellulose-based gel. It is manufactured in the Netherlands and distributed by Sinclair, and its CE-marked intended use is subdermal implantation in the face for the correction of wrinkles and signs of facial ageing. Kaiteki uses it within its bio-stimulator treatment, alongside other bio-stimulator materials.",
+            "Ellansé is an injectable implant whose active material is polycaprolactone, smooth PCL microspheres suspended in a carrier gel that the manufacturer describes as a carboxymethylcellulose-based gel. It is manufactured in the Netherlands and distributed by Sinclair, and its CE-marked intended use is subdermal implantation in the face for the correction of wrinkles and signs of facial ageing. Kaiteki uses it within its bio-stimulator treatment, alongside other bio-stimulator materials.",
             "What distinguishes Ellansé from a hyaluronic acid filler is the two-part behaviour the manufacturer describes: the carrier gel provides support when it is placed, while the PCL microspheres remain and act as a stimulus for the skin's own collagen response as they are gradually resorbed. So part of the intended change is immediate and part of it develops over months. Whether Ellansé, another bio-stimulator or a filler suits your concern is a clinical judgement your doctor makes at an in-person consultation.",
           ],
         },
         {
           heading: "How polycaprolactone works",
           body: [
-            "Polycaprolactone is a synthetic, bioresorbable polymer already used in absorbable medical implants and sutures. In Ellansé the PCL is formed into uniform microspheres held in the carrier gel. The gel component is absorbed over time, leaving the microspheres in place; as those are gradually broken down and cleared, they act as a scaffold and stimulus around which the body forms its own collagen. That is why the manufacturer frames Ellansé as regenerative rather than purely volumising — the later part of the effect is your tissue, not the product.",
-            "Ellansé is supplied as a range of variants (identified by the manufacturer as Ellansé-S through to Ellansé-E) which differ in how long the PCL microspheres take to be resorbed. The manufacturer describes the range as offering sustained duration from around twelve months at the shorter end up to several years at the longest, but individual response varies and duration is not guaranteed. Which variant is used, where it is placed and how much is used are decisions for the treating doctor after assessing your face — not something to choose from a website. Results develop gradually and vary between individuals.",
+            "Polycaprolactone is a synthetic, bioresorbable polymer already used in absorbable medical implants and sutures. In Ellansé the PCL is formed into uniform microspheres held in the carrier gel. The gel component is absorbed over time, leaving the microspheres in place; as those are gradually broken down and cleared, they act as a scaffold and stimulus around which the body forms its own collagen. That is why the manufacturer frames Ellansé as regenerative rather than purely volumising: the later part of the effect is your tissue, not the product.",
+            "Ellansé is supplied as a range of variants (identified by the manufacturer as Ellansé-S through to Ellansé-E) which differ in how long the PCL microspheres take to be resorbed. The manufacturer describes the range as offering sustained duration from around twelve months at the shorter end up to several years at the longest, but individual response varies and duration is not guaranteed. Which variant is used, where it is placed and how much is used are decisions for the treating doctor after assessing your face, not something to choose from a website. Results develop gradually and vary between individuals.",
           ],
         },
         {
@@ -2637,7 +2637,7 @@ export const technology: Technology[] = [
           heading: "Suitability & who should avoid it",
           body: [
             "Ellansé is aimed at adults who want a staged, structural approach and understand that part of the change appears later rather than immediately. Because the mechanism is biological rather than light-based, skin tone is not a limiting factor in the way it can be for laser treatments, so it is used across a range of skin tones including Asian skin. Your facial anatomy, how much support has been lost and any previous injectable work in the area all influence whether it is appropriate.",
-            "Ellansé is not appropriate for anyone with a known hypersensitivity to its components, and it is not used where there is active infection or inflammation at or near the intended site. It is not used in pregnancy or while breastfeeding. Bleeding disorders and blood-thinning medication, autoimmune or connective-tissue conditions, a history of keloid or hypertrophic scarring, and previous permanent or semi-permanent implants in the same area are all relevant considerations. Because polycaprolactone cannot be dissolved the way hyaluronic acid can, careful assessment before treatment matters more, not less — please share your full medical history, medication list and any past injectable or surgical treatments at consultation.",
+            "Ellansé is not appropriate for anyone with a known hypersensitivity to its components, and it is not used where there is active infection or inflammation at or near the intended site. It is not used in pregnancy or while breastfeeding. Bleeding disorders and blood-thinning medication, autoimmune or connective-tissue conditions, a history of keloid or hypertrophic scarring, and previous permanent or semi-permanent implants in the same area are all relevant considerations. Because polycaprolactone cannot be dissolved the way hyaluronic acid can, careful assessment before treatment matters more, not less. Please share your full medical history, medication list and any past injectable or surgical treatments at consultation.",
           ],
         },
         {
@@ -2651,7 +2651,7 @@ export const technology: Technology[] = [
           heading: "Downtime & aftercare",
           body: [
             "Downtime is usually limited, but this varies. Swelling, redness, tenderness or bruising at the injection sites is common in the first days and typically settles; bruising can take longer to fade in some people, so it is worth planning around any upcoming event.",
-            "Your doctor will give aftercare guidance for your case, which commonly includes avoiding pressure, vigorous massage, facial treatments, heat and strenuous exercise on the area for a short period, plus any specific instructions for the treated region. Because part of the intended change develops over months, attending the review appointment matters — and anything unexpected should be raised with the clinic promptly rather than left.",
+            "Your doctor will give aftercare guidance for your case, which commonly includes avoiding pressure, vigorous massage, facial treatments, heat and strenuous exercise on the area for a short period, plus any specific instructions for the treated region. Because part of the intended change develops over months, attending the review appointment matters, and anything unexpected should be raised with the clinic promptly rather than left.",
           ],
         },
         {
@@ -2675,11 +2675,11 @@ export const technology: Technology[] = [
         },
         {
           q: "Can Ellansé be dissolved if I change my mind?",
-          a: "No. Unlike hyaluronic acid fillers, polycaprolactone has no dissolving agent — it is bioresorbable and is cleared by the body over time rather than reversed on demand. That is precisely why assessment beforehand is so important, and why the doctor talks through expectations and alternatives with you before proceeding. Raise any concerns at consultation before treatment.",
+          a: "No. Unlike hyaluronic acid fillers, polycaprolactone has no dissolving agent: it is bioresorbable and is cleared by the body over time rather than reversed on demand. That is precisely why assessment beforehand is so important, and why the doctor talks through expectations and alternatives with you before proceeding. Raise any concerns at consultation before treatment.",
         },
         {
           q: "What do the different Ellansé variants mean?",
-          a: "The manufacturer supplies Ellansé as a range of variants that differ in how long the PCL microspheres take to be resorbed, described as spanning around a year at the shorter end up to several years. Those are the manufacturer's figures for its product range, not a promise for any individual — response and duration vary and are not guaranteed. Which variant suits you, if any, is the treating doctor's decision after examining you in person.",
+          a: "The manufacturer supplies Ellansé as a range of variants that differ in how long the PCL microspheres take to be resorbed, described as spanning around a year at the shorter end up to several years. Those are the manufacturer's figures for its product range, not a promise for any individual: response and duration vary and are not guaranteed. Which variant suits you, if any, is the treating doctor's decision after examining you in person.",
         },
         {
           q: "Is Ellansé suitable for Asian skin and facial structure?",
@@ -2705,14 +2705,14 @@ export const technology: Technology[] = [
         {
           heading: "What is Radiesse?",
           body: [
-            "Radiesse is an injectable made by Merz Aesthetics. Its active material is calcium hydroxylapatite — CaHA — in the form of microspheres suspended in a gel carrier; the manufacturer describes CaHA as a mineral-like substance also found naturally in the body. It belongs to the bio-stimulator category rather than the hyaluronic acid filler category, and Kaiteki uses it within its bio-stimulator treatment.",
-            "The buyer's distinction is what happens on the day versus what happens later. A hyaluronic acid filler adds volume immediately and can be dissolved if needed; a pure collagen stimulator such as a poly-L-lactic acid product works mainly over months. Radiesse sits between the two in behaviour — the manufacturer describes immediate volume correction from the gel carrier alongside stimulation of the skin's own collagen and elastin over time, with the CaHA microspheres being gradually resorbed. Whether that profile suits your concern is a clinical judgement your doctor makes at an in-person consultation.",
+            "Radiesse is an injectable made by Merz Aesthetics. Its active material is calcium hydroxylapatite (CaHA) in the form of microspheres suspended in a gel carrier; the manufacturer describes CaHA as a mineral-like substance also found naturally in the body. It belongs to the bio-stimulator category rather than the hyaluronic acid filler category, and Kaiteki uses it within its bio-stimulator treatment.",
+            "The buyer's distinction is what happens on the day versus what happens later. A hyaluronic acid filler adds volume immediately and can be dissolved if needed; a pure collagen stimulator such as a poly-L-lactic acid product works mainly over months. Radiesse sits between the two in behaviour: the manufacturer describes immediate volume correction from the gel carrier alongside stimulation of the skin's own collagen and elastin over time, with the CaHA microspheres being gradually resorbed. Whether that profile suits your concern is a clinical judgement your doctor makes at an in-person consultation.",
           ],
         },
         {
           heading: "How calcium hydroxylapatite works",
           body: [
-            "Once placed, the gel carrier provides support immediately and is then absorbed, leaving the CaHA microspheres in the tissue. Those microspheres act as a stimulus around which the body forms its own collagen, and the manufacturer also describes an elastin response. The CaHA itself is bioresorbable — it is broken down into calcium and phosphate components and cleared over time — so what remains later is your own tissue response rather than the injected material.",
+            "Once placed, the gel carrier provides support immediately and is then absorbed, leaving the CaHA microspheres in the tissue. Those microspheres act as a stimulus around which the body forms its own collagen, and the manufacturer also describes an elastin response. The CaHA itself is bioresorbable (it is broken down into calcium and phosphate components and cleared over time), so what remains later is your own tissue response rather than the injected material.",
             "The manufacturer also describes a diluted application in which Radiesse is thinned with sterile saline so it can be spread across a broader area rather than used for focal support; this is the approach usually referred to as hyperdilute or HD Radiesse, and the manufacturer's own labelling covers a diluted preparation for the décolletage. Whether standard or diluted preparation is appropriate, at what dilution, where and in what quantity are all decisions for the treating doctor after examining you. Kaiteki does not publish dilution ratios, volumes or injection technique, because those are not choices a reader should make. Results develop gradually and vary between individuals.",
           ],
         },
@@ -2734,13 +2734,13 @@ export const technology: Technology[] = [
           heading: "Suitability & who should avoid it",
           body: [
             "Radiesse is aimed at adults who want structural support with a collagen response building afterwards, and it is one of the few injectables in this category with manufacturer-cleared use beyond the face, on the hands and décolletage. Because the mechanism is biological rather than light-based, skin tone does not limit suitability the way it can for laser treatments, so it is used across a range of skin tones. Your anatomy, how much support has been lost, the area concerned and any previous injectable work all influence whether it is appropriate.",
-            "Radiesse is not appropriate for anyone with a known allergy or hypersensitivity to its components, and the manufacturer advises against use where there is a bleeding disorder or an active skin infection or inflammation at or near the intended site. It is not used in pregnancy or while breastfeeding. Blood-thinning medication, autoimmune and connective-tissue conditions, a history of keloid or hypertrophic scarring, and previous permanent or semi-permanent implants in the same area are all relevant. Calcium hydroxylapatite is radiopaque, which means it can be visible on some imaging — tell your doctor if you are due to have imaging of the treated region. Please share your full medical history and medication list at consultation.",
+            "Radiesse is not appropriate for anyone with a known allergy or hypersensitivity to its components, and the manufacturer advises against use where there is a bleeding disorder or an active skin infection or inflammation at or near the intended site. It is not used in pregnancy or while breastfeeding. Blood-thinning medication, autoimmune and connective-tissue conditions, a history of keloid or hypertrophic scarring, and previous permanent or semi-permanent implants in the same area are all relevant. Calcium hydroxylapatite is radiopaque, which means it can be visible on some imaging. Tell your doctor if you are due to have imaging of the treated region. Please share your full medical history and medication list at consultation.",
           ],
         },
         {
           heading: "The session at Kaiteki",
           body: [
-            "The visit begins with a doctor consultation and assessment of the area, your medical history and whether a bio-stimulator or a different category is the right answer for your concern. If Radiesse is appropriate, the doctor decides the preparation and plan, the area is cleansed, and topical or local anaesthetic is used for comfort. The injection is then carried out to the assessed plan — the injecting portion is usually brief, with most of the appointment given to assessment, comfort and aftercare.",
+            "The visit begins with a doctor consultation and assessment of the area, your medical history and whether a bio-stimulator or a different category is the right answer for your concern. If Radiesse is appropriate, the doctor decides the preparation and plan, the area is cleansed, and topical or local anaesthetic is used for comfort. The injection is then carried out to the assessed plan: the injecting portion is usually brief, with most of the appointment given to assessment, comfort and aftercare.",
             "The area is commonly shaped or massaged afterwards, particularly on the hands, and your doctor will explain aftercare and when to return for review. Some plans are a single session with a review; others are staged over more than one visit depending on the area and how it responds. Your doctor will set out what to expect for your case.",
           ],
         },
@@ -2760,7 +2760,7 @@ export const technology: Technology[] = [
         {
           heading: "Sessions & cost factors",
           body: [
-            "Cost is driven by the area treated — a single fold, a jawline, both hands or the décolletage are very different in scope — how much support has been lost, the quantity your doctor judges appropriate, and whether your plan is staged across more than one visit. Diluted applications over broader areas are often planned as a short course with review.",
+            "Cost is driven by the area treated (a single fold, a jawline, both hands or the décolletage are very different in scope), how much support has been lost, the quantity your doctor judges appropriate, and whether your plan is staged across more than one visit. Diluted applications over broader areas are often planned as a short course with review.",
             "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual assessed plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
           ],
         },
@@ -2772,7 +2772,7 @@ export const technology: Technology[] = [
         },
         {
           q: "What is hyperdilute or HD Radiesse?",
-          a: "It refers to Radiesse thinned with sterile saline so it can be spread more thinly across a broader area rather than used for focal structural support — the manufacturer's labelling covers a diluted preparation for the décolletage. Whether a diluted approach is appropriate for you, and at what dilution, is entirely the treating doctor's decision after in-person assessment. We do not publish dilution or volume guidance.",
+          a: "It refers to Radiesse thinned with sterile saline so it can be spread more thinly across a broader area rather than used for focal structural support, the manufacturer's labelling covers a diluted preparation for the décolletage. Whether a diluted approach is appropriate for you, and at what dilution, is entirely the treating doctor's decision after in-person assessment. We do not publish dilution or volume guidance.",
         },
         {
           q: "Can Radiesse be used on the hands and chest, not just the face?",
@@ -2780,7 +2780,7 @@ export const technology: Technology[] = [
         },
         {
           q: "How long does Radiesse last, and can it be reversed?",
-          a: "Duration varies between individuals and is not something we quote as a promise — the calcium hydroxylapatite is bioresorbable and is cleared by the body over time, and your own tissue continues to age. Unlike hyaluronic acid fillers, it has no dissolving agent, so it cannot be reversed on demand, which is why careful assessment beforehand matters. Your doctor will discuss realistic expectations and review timing at consultation.",
+          a: "Duration varies between individuals and is not something we quote as a promise: the calcium hydroxylapatite is bioresorbable and is cleared by the body over time, and your own tissue continues to age. Unlike hyaluronic acid fillers, it has no dissolving agent, so it cannot be reversed on demand, which is why careful assessment beforehand matters. Your doctor will discuss realistic expectations and review timing at consultation.",
         },
       ],
       reviewedBy: "dr-chloe-wan",
@@ -2803,20 +2803,20 @@ export const technology: Technology[] = [
         heading: "What is Juvéderm?",
         body: [
           "Juvéderm is a collection of injectable hyaluronic-acid (HA) dermal fillers made by Allergan Aesthetics, an AbbVie company. Hyaluronic acid occurs naturally in skin, and the HA in every Juvéderm gel is of non-animal origin. Because HA on its own would break down within days, it is chemically cross-linked into a gel so it can sit in the tissue and provide volume and support. Several Juvéderm gels are also supplied with lidocaine included to support injection comfort.",
-          "What distinguishes Juvéderm from other HA ranges is not the raw ingredient — all four of the main filler families used at Kaiteki are cross-linked HA — but the gel engineering. Allergan Aesthetics markets most of the current range on a cross-linking platform it calls VYCROSS®, and the range is deliberately graded from soft, spreadable gels through to firm gels used where structural support is the goal. Juvéderm is used within Kaiteki's dermal fillers treatment. Which filler family suits you, if any, and which gel within it, is a clinical decision your doctor makes at an in-person consultation.",
+          "What distinguishes Juvéderm from other HA ranges is not the raw ingredient (all four of the main filler families used at Kaiteki are cross-linked HA), but the gel engineering. Allergan Aesthetics markets most of the current range on a cross-linking platform it calls VYCROSS®, and the range is deliberately graded from soft, spreadable gels through to firm gels used where structural support is the goal. Juvéderm is used within Kaiteki's dermal fillers treatment. Which filler family suits you, if any, and which gel within it, is a clinical decision your doctor makes at an in-person consultation.",
         ],
       },
       {
         heading: "How VYCROSS® gel technology works",
         body: [
-          "Allergan Aesthetics describes VYCROSS® as a cross-linking process that combines shorter-chain and longer-chain hyaluronic acid in the same gel, which the manufacturer says produces a smooth, cohesive gel. That cohesivity is the practical point for a comparison shopper: it influences how the gel behaves once placed — how readily it spreads, how much it resists deformation, and therefore which part of the face it is used in. The manufacturer also reports that tissue integration was demonstrated for gels including Volbella, Volift, Voluma and Volux in animal in-vivo studies.",
+          "Allergan Aesthetics describes VYCROSS® as a cross-linking process that combines shorter-chain and longer-chain hyaluronic acid in the same gel, which the manufacturer says produces a smooth, cohesive gel. That cohesivity is the practical point for a comparison shopper: it influences how the gel behaves once placed: how readily it spreads, how much it resists deformation, and therefore which part of the face it is used in. The manufacturer also reports that tissue integration was demonstrated for gels including Volbella, Volift, Voluma and Volux in animal in-vivo studies.",
           "The range is graded by firmness rather than sold as one product. Softer, lower-firmness gels such as Volbella are used in delicate areas including the lips and perioral lines; mid-range gels such as Volift are used for facial lines and folds; firmer gels such as Voluma and Volux are used where projection and contour definition are the objective, for example the mid-face or jawline. Allergan Aesthetics states that duration in clinical studies varies by the area treated and the specific filler used. Product selection, placement and quantity are decided by the treating doctor after assessing your face in person. Results vary between individuals.",
         ],
       },
       {
         heading: "What it may help address",
         body: [
-          "Juvéderm gels are commonly considered for the following concerns as part of an individually planned dermal filler treatment. Being on this list does not mean the treatment is appropriate for you — that is determined at consultation.",
+          "Juvéderm gels are commonly considered for the following concerns as part of an individually planned dermal filler treatment. Being on this list does not mean the treatment is appropriate for you. That is determined at consultation.",
         ],
         list: [
           "Loss of mid-face or cheek volume",
@@ -2838,33 +2838,33 @@ export const technology: Technology[] = [
         heading: "The session at Kaiteki",
         body: [
           "Every filler visit begins with a doctor consultation: your concern, your medical history and an assessment of your facial proportions. If treatment is appropriate, the doctor discusses which areas to address and in what order, and explains the risks before you consent. The skin is cleansed and a topical anaesthetic may be applied; many Juvéderm gels also contain lidocaine, which contributes to comfort during injection. The gel is then placed in small increments using a needle or cannula, depending on the area and the doctor's judgement.",
-          "Injection time for a single area is typically short — often within 15 to 30 minutes once preparation is complete — although a multi-area plan takes longer. Many plans are staged across more than one visit rather than treating everything at once, and a review appointment is commonly arranged so the doctor can assess how the area has settled. Product choice, placement and quantity are the treating doctor's decisions, never a fixed formula.",
+          "Injection time for a single area is typically short, often within 15 to 30 minutes once preparation is complete, although a multi-area plan takes longer. Many plans are staged across more than one visit rather than treating everything at once, and a review appointment is commonly arranged so the doctor can assess how the area has settled. Product choice, placement and quantity are the treating doctor's decisions, never a fixed formula.",
         ],
       },
       {
         heading: "Downtime & aftercare",
         body: [
-          "Most people return to normal activity the same day, but swelling, tenderness and bruising at injection points are common in the first few days and vary considerably between individuals — the lips and under-eye area tend to swell more visibly than the cheeks or jawline. If you have a significant event coming up, allow a comfortable margin and discuss timing at consultation.",
+          "Most people return to normal activity the same day, but swelling, tenderness and bruising at injection points are common in the first few days and vary considerably between individuals: the lips and under-eye area tend to swell more visibly than the cheeks or jawline. If you have a significant event coming up, allow a comfortable margin and discuss timing at consultation.",
           "Your doctor will give aftercare guidance for the specific area treated. This usually includes avoiding pressure or massage on the treated site, keeping strenuous exercise, heat exposure and alcohol to a minimum for a short period, and contacting the clinic promptly rather than waiting if anything feels unusual.",
         ],
       },
       {
         heading: "Risks & side effects",
         body: [
-          "As with any injectable medical device, Juvéderm carries risks, and these are explained to you at consultation before you consent. Temporary effects can include redness, swelling, bruising, tenderness, firmness or small lumps at the injection site, and occasionally discolouration. Less common effects include infection, inflammatory nodules and delayed hypersensitivity. The most serious recognised risk of any dermal filler is vascular occlusion — filler entering or compressing a blood vessel, which can affect the skin or, rarely, vision. It is uncommon, but it is the reason fillers must be administered by a doctor trained in facial anatomy and in managing complications, and the reason you should report sudden pain, skin blanching or any visual change immediately. Hyaluronic-acid fillers such as Juvéderm can be dissolved with hyaluronidase where a doctor judges this clinically indicated.",
+          "As with any injectable medical device, Juvéderm carries risks, and these are explained to you at consultation before you consent. Temporary effects can include redness, swelling, bruising, tenderness, firmness or small lumps at the injection site, and occasionally discolouration. Less common effects include infection, inflammatory nodules and delayed hypersensitivity. The most serious recognised risk of any dermal filler is vascular occlusion, filler entering or compressing a blood vessel, which can affect the skin or, rarely, vision. It is uncommon, but it is the reason fillers must be administered by a doctor trained in facial anatomy and in managing complications, and the reason you should report sudden pain, skin blanching or any visual change immediately. Hyaluronic-acid fillers such as Juvéderm can be dissolved with hyaluronidase where a doctor judges this clinically indicated.",
         ],
       },
       {
         heading: "Sessions & cost factors",
         body: [
-          "Filler cost is driven by how many areas are being addressed, which gel in the range is clinically appropriate for each of them, and how much product your anatomy actually calls for — which is why an online figure would be meaningless. Firmer structural gels and delicate-area gels are not interchangeable, so a plan is priced around what the doctor selects rather than a single per-area rate.",
+          "Filler cost is driven by how many areas are being addressed, which gel in the range is clinically appropriate for each of them, and how much product your anatomy actually calls for, which is why an online figure would be meaningless. Firmer structural gels and delicate-area gels are not interchangeable, so a plan is priced around what the doctor selects rather than a single per-area rate.",
           "Duration is finite: hyaluronic-acid fillers are gradually broken down by the body, and Allergan Aesthetics reports duration in clinical studies as varying by product and treatment area. Top-up intervals are individual and depend on the area, the gel used and your own metabolism. Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
         ],
       },
     ],
     faqs: [
       {
-        q: "What is the difference between the Juvéderm gels — how does the doctor choose?",
+        q: "What is the difference between the Juvéderm gels, and how does the doctor choose?",
         a: "The range is graded by gel firmness rather than being one product. Softer gels are used in delicate areas such as the lips and fine perioral lines, while firmer gels are used where projection or contour definition is the objective, such as the mid-face, chin or jawline. Choosing between them depends on the area, your facial anatomy and how much support the tissue needs. That selection is your doctor's decision after an in-person assessment.",
       },
       {
@@ -2894,7 +2894,7 @@ export const technology: Technology[] = [
     treatments: ["dermal-fillers"],
     image: "/images/technology/restylane.jpg",
     summary:
-      "A hyaluronic-acid dermal filler range from Galderma built on two distinct gel technologies — firmer NASHA® gels for definition and flexible OBT™ gels for expressive areas.",
+      "A hyaluronic-acid dermal filler range from Galderma built on two distinct gel technologies: firmer NASHA® gels for definition and flexible OBT™ gels for expressive areas.",
     sections: [
       {
         heading: "What is Restylane?",
@@ -2906,8 +2906,8 @@ export const technology: Technology[] = [
       {
         heading: "How NASHA® and OBT™ gel technologies differ",
         body: [
-          "Galderma describes NASHA® (Non-Animal Stabilised Hyaluronic Acid) as engineered for precision and structure: it uses minimal chemical modification and controlled particle sizing, producing a firmer gel that the manufacturer says is used to create projection and definition — for example lifting the cheeks, defining the jawline or the chin profile. In rheological terms this is the higher-firmness end of the range, where the gel is intended to hold its shape and resist the surrounding tissue rather than spread through it.",
-          "OBT™ (Optimal Balance Technology) takes the opposite approach. Galderma describes OBT™ gels as softer and more flexible, with firmness varied by the degree of cross-linking, designed to integrate into the tissue and to suit dynamic, expressive areas such as the lips, cheeks and facial lines, or patients with thinner tissue coverage where a softer gel is preferred. The range therefore includes both — gels such as Lyft on the firmer side and gels such as Refyne, Defyne and Kysse on the flexible side. Neither approach is better than the other; they are suited to different jobs. Which technology and gel is used, where and in what amount, is decided by the treating doctor after in-person assessment. Results vary between individuals.",
+          "Galderma describes NASHA® (Non-Animal Stabilised Hyaluronic Acid) as engineered for precision and structure: it uses minimal chemical modification and controlled particle sizing, producing a firmer gel that the manufacturer says is used to create projection and definition, for example lifting the cheeks, defining the jawline or the chin profile. In rheological terms this is the higher-firmness end of the range, where the gel is intended to hold its shape and resist the surrounding tissue rather than spread through it.",
+          "OBT™ (Optimal Balance Technology) takes the opposite approach. Galderma describes OBT™ gels as softer and more flexible, with firmness varied by the degree of cross-linking, designed to integrate into the tissue and to suit dynamic, expressive areas such as the lips, cheeks and facial lines, or patients with thinner tissue coverage where a softer gel is preferred. The range therefore includes both: gels such as Lyft on the firmer side and gels such as Refyne, Defyne and Kysse on the flexible side. Neither approach is better than the other; they are suited to different jobs. Which technology and gel is used, where and in what amount, is decided by the treating doctor after in-person assessment. Results vary between individuals.",
         ],
       },
       {
@@ -2927,14 +2927,14 @@ export const technology: Technology[] = [
       {
         heading: "Suitability & who should avoid it",
         body: [
-          "Restylane is aimed at adults who want volume replacement, contour support or line softening. Because HA fillers do not use light or heat, skin tone is not the constraint it can be with laser treatments — the relevant factors are your facial anatomy, the mobility of the area concerned, and your medical history. The breadth of the range means the doctor can choose a firmer or more flexible gel to match the area, but breadth is not the same as universal suitability.",
+          "Restylane is aimed at adults who want volume replacement, contour support or line softening. Because HA fillers do not use light or heat, skin tone is not the constraint it can be with laser treatments: the relevant factors are your facial anatomy, the mobility of the area concerned, and your medical history. The breadth of the range means the doctor can choose a firmer or more flexible gel to match the area, but breadth is not the same as universal suitability.",
           "Fillers are generally avoided in pregnancy and breastfeeding, and where there is active infection, inflammation or a skin lesion at the intended injection site. Tell your doctor if you have a history of severe allergy or anaphylaxis, known sensitivity to hyaluronic acid or to lidocaine and amide-type local anaesthetics, an autoimmune condition, a bleeding tendency or blood-thinning medication, previous filler or any permanent implant in the area, or a tendency to form abnormal scars. Please share your full medical history so the doctor can advise safely.",
         ],
       },
       {
         heading: "The session at Kaiteki",
         body: [
-          "A visit starts with a doctor consultation covering your concern, your medical history and an assessment of your facial proportions and tissue quality — the latter matters here, because it influences whether a firmer NASHA® gel or a more flexible OBT™ gel is the better fit. Risks are explained before you give consent. The area is cleansed and a topical anaesthetic may be used; several gels in the range are also available with lidocaine included for injection comfort.",
+          "A visit starts with a doctor consultation covering your concern, your medical history and an assessment of your facial proportions and tissue quality: the latter matters here, because it influences whether a firmer NASHA® gel or a more flexible OBT™ gel is the better fit. Risks are explained before you give consent. The area is cleansed and a topical anaesthetic may be used; several gels in the range are also available with lidocaine included for injection comfort.",
           "The gel is placed in small increments with a needle or cannula according to the area and the doctor's judgement. Injection for a single area is usually a matter of minutes rather than hours, with a typical appointment often running 15 to 30 minutes once preparation is done. Multi-area plans are frequently staged over more than one visit rather than completed in a single sitting, and a follow-up review is commonly arranged once swelling has settled.",
         ],
       },
@@ -2948,21 +2948,21 @@ export const technology: Technology[] = [
       {
         heading: "Risks & side effects",
         body: [
-          "Restylane is an injectable medical device and carries risks, which are explained to you at consultation before you consent. Temporary effects can include swelling, bruising, redness, tenderness, firmness or small lumps at the injection site. Less common effects include infection, inflammatory nodules and delayed hypersensitivity reactions. The most serious recognised risk of any dermal filler is vascular occlusion — filler entering or compressing a blood vessel, which can affect the skin and, rarely, vision. It is uncommon, but it is precisely why filler must be administered by a doctor trained in facial anatomy and complication management, and why sudden pain, skin blanching or any change in vision should be reported immediately. Hyaluronic-acid gels such as Restylane can be dissolved with hyaluronidase where a doctor judges this clinically indicated.",
+          "Restylane is an injectable medical device and carries risks, which are explained to you at consultation before you consent. Temporary effects can include swelling, bruising, redness, tenderness, firmness or small lumps at the injection site. Less common effects include infection, inflammatory nodules and delayed hypersensitivity reactions. The most serious recognised risk of any dermal filler is vascular occlusion, filler entering or compressing a blood vessel, which can affect the skin and, rarely, vision. It is uncommon, but it is precisely why filler must be administered by a doctor trained in facial anatomy and complication management, and why sudden pain, skin blanching or any change in vision should be reported immediately. Hyaluronic-acid gels such as Restylane can be dissolved with hyaluronidase where a doctor judges this clinically indicated.",
         ],
       },
       {
         heading: "Sessions & cost factors",
         body: [
           "Cost depends on how many areas are being addressed, which gel technology and which specific gel the doctor selects for each of them, and how much product your anatomy calls for. A firmer structural gel used for jawline definition and a flexible gel used for lips are not interchangeable products, so a plan is costed around the clinical selection rather than a flat per-area rate.",
-          "Hyaluronic-acid fillers are gradually broken down by the body, so the effect is not permanent and maintenance is individual — the area's movement, the gel used and your own metabolism all influence how long it lasts. Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
+          "Hyaluronic-acid fillers are gradually broken down by the body, so the effect is not permanent and maintenance is individual: the area's movement, the gel used and your own metabolism all influence how long it lasts. Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
         ],
       },
     ],
     faqs: [
       {
         q: "What is the difference between Restylane NASHA® and OBT™ gels?",
-        a: "Galderma describes NASHA® as a firmer gel made with minimal modification and controlled particle sizing, used where projection and definition are the objective. OBT™ gels are softer and more flexible, intended to integrate into tissue and suited to expressive, mobile areas or thinner tissue coverage. Neither is superior — they are engineered for different jobs. Your doctor decides which is appropriate for your face at an in-person consultation.",
+        a: "Galderma describes NASHA® as a firmer gel made with minimal modification and controlled particle sizing, used where projection and definition are the objective. OBT™ gels are softer and more flexible, intended to integrate into tissue and suited to expressive, mobile areas or thinner tissue coverage. Neither is superior: they are engineered for different jobs. Your doctor decides which is appropriate for your face at an in-person consultation.",
       },
       {
         q: "How does Restylane compare with other hyaluronic-acid filler brands?",
@@ -2970,7 +2970,7 @@ export const technology: Technology[] = [
       },
       {
         q: "Does Restylane hurt, and is anaesthetic used?",
-        a: "Most people describe filler injection as briefly uncomfortable rather than painful. A topical anaesthetic may be applied beforehand, and several gels in the range are available with lidocaine included to support comfort during injection. Sensitivity differs by area — lips are generally more sensitive than cheeks. Your doctor will discuss comfort options with you before starting.",
+        a: "Most people describe filler injection as briefly uncomfortable rather than painful. A topical anaesthetic may be applied beforehand, and several gels in the range are available with lidocaine included to support comfort during injection. Sensitivity differs by area: lips are generally more sensitive than cheeks. Your doctor will discuss comfort options with you before starting.",
       },
       {
         q: "Can Restylane be used for the chin and jawline, or only for lines?",
@@ -2997,20 +2997,20 @@ export const technology: Technology[] = [
         heading: "What is Belotero?",
         body: [
           "Belotero is a range of injectable hyaluronic-acid (HA) dermal fillers from Merz Aesthetics, the German aesthetics company. Hyaluronic acid is a substance that occurs naturally in skin; for use as a filler it must be cross-linked, because uncross-linked HA would break down within days. The Belotero range spans several gel densities, including Belotero Balance and Belotero Intense for lines and lip work, Belotero Volume for volume and contour such as cheeks and chin, and Belotero Revive, which the manufacturer positions for overall skin quality rather than volume.",
-          "What sets Belotero apart from other HA ranges is how the gel is cross-linked. Merz Aesthetics states that, unlike HA fillers made with a single phase of cross-linking, Belotero uses a patented two-phase dynamic cross-linking process — the technology long marketed as Cohesive Polydensified Matrix (CPM®) and now presented as Belotero Biomimetic Matrix Technology. Belotero is used within Kaiteki's dermal fillers treatment. Whether it is appropriate for you, and which gel in the range, is decided by a doctor at an in-person consultation.",
+          "What sets Belotero apart from other HA ranges is how the gel is cross-linked. Merz Aesthetics states that, unlike HA fillers made with a single phase of cross-linking, Belotero uses a patented two-phase dynamic cross-linking process, the technology long marketed as Cohesive Polydensified Matrix (CPM®) and now presented as Belotero Biomimetic Matrix Technology. Belotero is used within Kaiteki's dermal fillers treatment. Whether it is appropriate for you, and which gel in the range, is decided by a doctor at an in-person consultation.",
         ],
       },
       {
         heading: "How the biomimetic matrix cross-linking works",
         body: [
-          "In a standard process, HA strands are straightened out of their natural coiled form and cross-linked once with an ether to form a gel. Merz Aesthetics describes Belotero as going a step further: the cross-linked gel is expanded so that additional hyaluronic acid can be introduced and cross-linked in a second, dynamic phase. The manufacturer says this creates a three-dimensional structure with varying HA densities within the same gel, intended to mimic the natural detail of skin — hence the biomimetic description.",
-          "For a comparison shopper the practical consequence is placement. A gel with lower firmness and good spread can be used more superficially and in delicate skin, which is why the softer Belotero gels are commonly discussed for fine lines and thin-skinned areas, while the firmer Belotero Volume gel is used where support and projection are the objective. That is a difference in engineering, not a ranking — a structural gel and a fine-line gel are simply built for different jobs. Gel choice, placement depth and quantity are the treating doctor's decisions, and results develop over the days after treatment and vary between individuals.",
+          "In a standard process, HA strands are straightened out of their natural coiled form and cross-linked once with an ether to form a gel. Merz Aesthetics describes Belotero as going a step further: the cross-linked gel is expanded so that additional hyaluronic acid can be introduced and cross-linked in a second, dynamic phase. The manufacturer says this creates a three-dimensional structure with varying HA densities within the same gel, intended to mimic the natural detail of skin, hence the biomimetic description.",
+          "For a comparison shopper the practical consequence is placement. A gel with lower firmness and good spread can be used more superficially and in delicate skin, which is why the softer Belotero gels are commonly discussed for fine lines and thin-skinned areas, while the firmer Belotero Volume gel is used where support and projection are the objective. That is a difference in engineering, not a ranking: a structural gel and a fine-line gel are simply built for different jobs. Gel choice, placement depth and quantity are the treating doctor's decisions, and results develop over the days after treatment and vary between individuals.",
         ],
       },
       {
         heading: "What it may help address",
         body: [
-          "Belotero gels are commonly considered for the following concerns as part of an individually planned filler treatment. Inclusion here does not mean the treatment is right for you — that is established at consultation.",
+          "Belotero gels are commonly considered for the following concerns as part of an individually planned filler treatment. Inclusion here does not mean the treatment is right for you. That is established at consultation.",
         ],
         list: [
           "Fine superficial lines and etched-in creases",
@@ -3024,42 +3024,42 @@ export const technology: Technology[] = [
       {
         heading: "Suitability & who should avoid it",
         body: [
-          "Belotero is aimed at adults who want lines softened, volume replaced or contour supported. HA fillers do not use light or heat, so skin tone is not a limiting factor as it can be with lasers; anatomy, skin thickness and medical history matter far more. Thin, delicate skin — around the eyes or the perioral area — needs particular care with any filler regardless of brand, and whether it should be treated at all is a clinical judgement.",
+          "Belotero is aimed at adults who want lines softened, volume replaced or contour supported. HA fillers do not use light or heat, so skin tone is not a limiting factor as it can be with lasers; anatomy, skin thickness and medical history matter far more. Thin, delicate skin, around the eyes or the perioral area, needs particular care with any filler regardless of brand, and whether it should be treated at all is a clinical judgement.",
           "Fillers are generally avoided in pregnancy and breastfeeding, and where there is active infection, inflammation or a skin lesion at the intended site. Tell your doctor about known hypersensitivity to hyaluronic acid or to lidocaine and amide-type local anaesthetics, a history of severe allergy or anaphylaxis, autoimmune conditions or immune-modulating treatment, bleeding tendency or blood-thinning medication, previous filler or any permanent implant in the area, a tendency to abnormal scarring, and any recent or planned laser, peel or dermabrasion. Please share your full medical history so the doctor can advise safely.",
         ],
       },
       {
         heading: "The session at Kaiteki",
         body: [
-          "Your visit begins with a doctor consultation: your concern, your medical history, and an assessment of your facial proportions and skin thickness — the latter is directly relevant to which Belotero gel would be appropriate. The doctor explains the risks before you consent. The skin is then cleansed and a topical anaesthetic may be applied; some gels in the range are supplied with lidocaine included to support comfort during injection.",
-          "The gel is placed in small increments using a needle or a cannula, chosen according to the area and the doctor's judgement. A single-area appointment is usually short — often 15 to 30 minutes once preparation is complete — while a multi-area plan takes longer and is frequently staged across more than one visit rather than done all at once. A review appointment is commonly arranged so the doctor can assess the area after swelling has settled.",
+          "Your visit begins with a doctor consultation: your concern, your medical history, and an assessment of your facial proportions and skin thickness: the latter is directly relevant to which Belotero gel would be appropriate. The doctor explains the risks before you consent. The skin is then cleansed and a topical anaesthetic may be applied; some gels in the range are supplied with lidocaine included to support comfort during injection.",
+          "The gel is placed in small increments using a needle or a cannula, chosen according to the area and the doctor's judgement. A single-area appointment is usually short, often 15 to 30 minutes once preparation is complete, while a multi-area plan takes longer and is frequently staged across more than one visit rather than done all at once. A review appointment is commonly arranged so the doctor can assess the area after swelling has settled.",
         ],
       },
       {
         heading: "Downtime & aftercare",
         body: [
           "Most people carry on with their day afterwards, but redness, swelling, tenderness and bruising at injection points are common in the first few days and vary between individuals. Fine, superficial placement can leave small raised areas that settle over the following days, and mobile or thin-skinned areas such as the lips and perioral region tend to swell more visibly.",
-          "Your doctor will give aftercare guidance for the specific area treated — typically avoiding pressure or massage on the site, keeping strenuous exercise, heat and alcohol to a minimum briefly, and contacting the clinic promptly rather than waiting if anything feels unusual.",
+          "Your doctor will give aftercare guidance for the specific area treated: typically avoiding pressure or massage on the site, keeping strenuous exercise, heat and alcohol to a minimum briefly, and contacting the clinic promptly rather than waiting if anything feels unusual.",
         ],
       },
       {
         heading: "Risks & side effects",
         body: [
-          "Belotero is an injectable medical device and carries risks, which are explained at consultation before you consent. Temporary effects can include swelling, bruising, redness, tenderness, firmness or small nodules at the injection site, and occasionally a bluish discolouration where filler sits very superficially. Less common effects include infection, inflammatory nodules and delayed hypersensitivity. The most serious recognised risk of any dermal filler is vascular occlusion — filler entering or compressing a blood vessel, which can affect the skin and, rarely, vision. It is uncommon, but it is exactly why filler must be administered by a doctor trained in facial anatomy and in managing complications, and why sudden pain, skin blanching or any visual change must be reported immediately. Hyaluronic-acid gels such as Belotero can be dissolved with hyaluronidase where a doctor judges this clinically indicated.",
+          "Belotero is an injectable medical device and carries risks, which are explained at consultation before you consent. Temporary effects can include swelling, bruising, redness, tenderness, firmness or small nodules at the injection site, and occasionally a bluish discolouration where filler sits very superficially. Less common effects include infection, inflammatory nodules and delayed hypersensitivity. The most serious recognised risk of any dermal filler is vascular occlusion, filler entering or compressing a blood vessel, which can affect the skin and, rarely, vision. It is uncommon, but it is exactly why filler must be administered by a doctor trained in facial anatomy and in managing complications, and why sudden pain, skin blanching or any visual change must be reported immediately. Hyaluronic-acid gels such as Belotero can be dissolved with hyaluronidase where a doctor judges this clinically indicated.",
         ],
       },
       {
         heading: "Sessions & cost factors",
         body: [
           "Cost is driven by how many areas are addressed, which gel density in the range is clinically appropriate for each, and how much product your anatomy actually calls for. A fine-line gel and a volumising gel are different products with different roles, so a plan is costed around what the doctor selects rather than a single per-area figure.",
-          "Hyaluronic-acid fillers are gradually broken down by the body, so the effect is not permanent, and maintenance intervals are individual — the area's movement, the gel used and your own metabolism all play a part. Some plans combine a softer gel superficially with a firmer gel for support, which also affects planning. Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
+          "Hyaluronic-acid fillers are gradually broken down by the body, so the effect is not permanent, and maintenance intervals are individual: the area's movement, the gel used and your own metabolism all play a part. Some plans combine a softer gel superficially with a firmer gel for support, which also affects planning. Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
         ],
       },
     ],
     faqs: [
       {
         q: "What makes Belotero different from other hyaluronic-acid fillers?",
-        a: "The ingredient is the same class — cross-linked hyaluronic acid — so the difference lies in the gel. Merz Aesthetics states that Belotero is made with a patented two-phase dynamic cross-linking process rather than a single phase, producing a gel with varying hyaluronic-acid densities that the manufacturer describes as biomimetic. Whether that makes it the right choice for your concern depends on the area and your skin, which your doctor assesses in person.",
+        a: "The ingredient is the same class (cross-linked hyaluronic acid), so the difference lies in the gel. Merz Aesthetics states that Belotero is made with a patented two-phase dynamic cross-linking process rather than a single phase, producing a gel with varying hyaluronic-acid densities that the manufacturer describes as biomimetic. Whether that makes it the right choice for your concern depends on the area and your skin, which your doctor assesses in person.",
       },
       {
         q: "Is Belotero suitable for very fine lines and thin skin?",
@@ -3067,7 +3067,7 @@ export const technology: Technology[] = [
       },
       {
         q: "Which Belotero product would I need?",
-        a: "That is not something to decide before being seen. The range covers several gel densities — from softer gels for lines and lip work to firmer gels for cheek and chin volume, plus a formulation the manufacturer positions for skin quality rather than volume. Product choice, placement and quantity are the treating doctor's decisions after assessing your face, skin thickness and goals in person.",
+        a: "That is not something to decide before being seen. The range covers several gel densities, from softer gels for lines and lip work to firmer gels for cheek and chin volume, plus a formulation the manufacturer positions for skin quality rather than volume. Product choice, placement and quantity are the treating doctor's decisions after assessing your face, skin thickness and goals in person.",
       },
       {
         q: "How soon will I look normal after Belotero, and how long does it last?",
@@ -3094,20 +3094,20 @@ export const technology: Technology[] = [
         heading: "What is Art Filler?",
         body: [
           "Art Filler is a range of injectable hyaluronic-acid (HA) dermal fillers from Laboratoires Fillmed, a French aesthetics manufacturer. The range was introduced in 2016 and, according to Fillmed, every gel in it is made from non-animal-origin hyaluronic acid combined with lidocaine, which is included to support comfort during injection. The range is graded by correction potential rather than sold as a single product: Fillmed lists gels including Fine Lines, Universal, Volume, Lips, Lips Soft and Eyes, each intended for a different depth and type of correction.",
-          "What differentiates Art Filler from other HA ranges is the gel formulation rather than the raw ingredient — all the main filler families used at Kaiteki are cross-linked hyaluronic acid. Fillmed formulates Art Filler with a technology it calls Tri-Hyal®, which combines three hyaluronic-acid fractions in a controlled balance. Art Filler is used within Kaiteki's dermal fillers treatment. Whether filler is appropriate for you at all, and which gel in the range, is a clinical decision your doctor makes at an in-person consultation.",
+          "What differentiates Art Filler from other HA ranges is the gel formulation rather than the raw ingredient: all the main filler families used at Kaiteki are cross-linked hyaluronic acid. Fillmed formulates Art Filler with a technology it calls Tri-Hyal®, which combines three hyaluronic-acid fractions in a controlled balance. Art Filler is used within Kaiteki's dermal fillers treatment. Whether filler is appropriate for you at all, and which gel in the range, is a clinical decision your doctor makes at an in-person consultation.",
         ],
       },
       {
         heading: "How Tri-Hyal® technology works",
         body: [
-          "Fillmed describes Tri-Hyal® as combining three types of hyaluronic acid in the same gel: very long chains (above 3.5 MDa) and long chains (above 1.5 MDa), which are entangled and cross-linked with BDDE, together with free, uncross-linked hyaluronic acid (above 1.5 MDa) that the manufacturer says supports smooth integration into the tissue. Fillmed states that the character of each gel is tuned by adjusting three parameters — chain length, BDDE concentration and free-HA content — so a single technology platform can produce both structured gels for support and softer gels for delicate work.",
+          "Fillmed describes Tri-Hyal® as combining three types of hyaluronic acid in the same gel: very long chains (above 3.5 MDa) and long chains (above 1.5 MDa), which are entangled and cross-linked with BDDE, together with free, uncross-linked hyaluronic acid (above 1.5 MDa) that the manufacturer says supports smooth integration into the tissue. Fillmed states that the character of each gel is tuned by adjusting three parameters (chain length, BDDE concentration and free-HA content), so a single technology platform can produce both structured gels for support and softer gels for delicate work.",
           "The practical relevance for someone comparing brands is where each gel is suited. A gel with higher firmness resists the surrounding tissue and is used where projection or contour support is the objective, such as temples, mid-face, jawline and chin in the case of Art Filler Volume; a softer, more spreadable gel is used for superficial lines and delicate skin, as with the Fine Lines and Lips Soft gels. That is a difference in engineering, not a hierarchy. Which gel is used, at what depth and in what quantity, is decided by the treating doctor after assessing your face in person. Results develop over the days following treatment and vary between individuals.",
         ],
       },
       {
         heading: "What it may help address",
         body: [
-          "Fillmed lists the following indications across the Art Filler range. They are commonly considered within an individually planned filler treatment, but appearing here does not mean the treatment is appropriate for you — that is established at consultation.",
+          "Fillmed lists the following indications across the Art Filler range. They are commonly considered within an individually planned filler treatment, but appearing here does not mean the treatment is appropriate for you. That is established at consultation.",
         ],
         list: [
           "Superficial to medium wrinkles and fine lines",
@@ -3128,7 +3128,7 @@ export const technology: Technology[] = [
       {
         heading: "The session at Kaiteki",
         body: [
-          "Your visit opens with a doctor consultation covering your concern, your medical history and medications, and an assessment of your facial proportions and skin thickness — all of which bear on which Art Filler gel would be appropriate. The doctor explains the risks before you consent. The skin is then cleansed and a topical anaesthetic may be applied in addition to the lidocaine already present in the gel.",
+          "Your visit opens with a doctor consultation covering your concern, your medical history and medications, and an assessment of your facial proportions and skin thickness, all of which bear on which Art Filler gel would be appropriate. The doctor explains the risks before you consent. The skin is then cleansed and a topical anaesthetic may be applied in addition to the lidocaine already present in the gel.",
           "The gel is placed in small increments using a needle or a cannula depending on the area and the doctor's judgement. A single-area appointment is usually short, often around 15 to 30 minutes once preparation is complete, while a multi-area plan takes longer and is frequently staged across more than one visit rather than completed at once. A review appointment is commonly arranged so the doctor can assess the area once swelling has settled.",
         ],
       },
@@ -3142,7 +3142,7 @@ export const technology: Technology[] = [
       {
         heading: "Risks & side effects",
         body: [
-          "Art Filler is an injectable medical device and carries risks, which are explained to you at consultation before you consent. Fillmed lists potential adverse effects including inflammatory reactions such as burning, swelling, redness, nodules, granuloma and pain; bruising, haematoma and skin discolouration including the Tyndall effect; infection; local and systemic allergic reactions; and vascular complications. Vascular occlusion — filler entering or compressing a blood vessel — is the most serious recognised risk of any dermal filler and can affect the skin or, rarely, vision. It is uncommon, but it is the reason fillers must be administered by a doctor trained in facial anatomy and in managing complications, and the reason sudden pain, skin blanching or any change in vision must be reported immediately. Hyaluronic-acid gels such as Art Filler can be dissolved with hyaluronidase where a doctor judges this clinically indicated.",
+          "Art Filler is an injectable medical device and carries risks, which are explained to you at consultation before you consent. Fillmed lists potential adverse effects including inflammatory reactions such as burning, swelling, redness, nodules, granuloma and pain; bruising, haematoma and skin discolouration including the Tyndall effect; infection; local and systemic allergic reactions; and vascular complications. Vascular occlusion (filler entering or compressing a blood vessel) is the most serious recognised risk of any dermal filler and can affect the skin or, rarely, vision. It is uncommon, but it is the reason fillers must be administered by a doctor trained in facial anatomy and in managing complications, and the reason sudden pain, skin blanching or any change in vision must be reported immediately. Hyaluronic-acid gels such as Art Filler can be dissolved with hyaluronidase where a doctor judges this clinically indicated.",
         ],
       },
       {
@@ -3156,7 +3156,7 @@ export const technology: Technology[] = [
     faqs: [
       {
         q: "What is Tri-Hyal® technology, and why does it matter?",
-        a: "Fillmed describes Tri-Hyal® as balancing three hyaluronic-acid fractions in one gel — very long chains and long chains that are cross-linked, plus free hyaluronic acid that the manufacturer says supports smooth tissue integration. By adjusting chain length, cross-linker concentration and free-HA content, Fillmed produces gels of different firmness from one platform. Whether a firmer or softer gel suits your concern is a decision your doctor makes after assessing you in person.",
+        a: "Fillmed describes Tri-Hyal® as balancing three hyaluronic-acid fractions in one gel: very long chains and long chains that are cross-linked, plus free hyaluronic acid that the manufacturer says supports smooth tissue integration. By adjusting chain length, cross-linker concentration and free-HA content, Fillmed produces gels of different firmness from one platform. Whether a firmer or softer gel suits your concern is a decision your doctor makes after assessing you in person.",
       },
       {
         q: "Is Art Filler suitable for the under-eye area?",
@@ -3200,7 +3200,7 @@ export const technology: Technology[] = [
           heading: "How the treatment steps work",
           body: [
             "The manufacturer describes the treatment as a sequence of steps delivered through interchangeable tips. Physical exfoliation, which it terms microdermabrasion, uses a crystal-free tip to lift away surface dead skin. A gentle peel step applies a mild chemical exfoliating solution intended to help loosen the contents of clogged pores. An extraction step uses vacuum suction through the tip to draw out debris. A hydration and infusion step then delivers an antioxidant-rich serum to the freshly exfoliated surface, and a lymphatic drainage step uses gentler suction over the face and neck.",
-            "Beyond the standard sequence, Hydrafacial offers targeted serum boosters that can be selected according to the concern being addressed, and many providers pair the session with LED light. Which tips, which solutions, how much suction and which boosters are used are chosen for your skin on the day — a reactive, thin skin type is treated very differently from congested, oily skin. Any change in skin appearance is gradual and varies between individuals.",
+            "Beyond the standard sequence, Hydrafacial offers targeted serum boosters that can be selected according to the concern being addressed, and many providers pair the session with LED light. Which tips, which solutions, how much suction and which boosters are used are chosen for your skin on the day: a reactive, thin skin type is treated very differently from congested, oily skin. Any change in skin appearance is gradual and varies between individuals.",
           ],
         },
         {
@@ -3226,14 +3226,14 @@ export const technology: Technology[] = [
         {
           heading: "The session at Kaiteki",
           body: [
-            "A visit starts with a skin assessment so that the tips, solutions and suction level can be matched to your skin, and any boosters discussed. The face is cleansed, then the handpiece is worked systematically across the face in sections. Most people find it comfortable — the usual description is a cool, wet feeling with a light tugging or vacuum sensation, particularly around the nose during extraction. There are no needles and no anaesthetic.",
-            "A standard session commonly takes around 30 to 60 minutes depending on the steps and any add-ons included. Because it is a maintenance treatment, it is often repeated on a regular rhythm — monthly is a common pattern — rather than as a fixed course, and it is frequently scheduled alongside other treatments in a longer-term plan. Your doctor or therapist will suggest a realistic interval for your skin.",
+            "A visit starts with a skin assessment so that the tips, solutions and suction level can be matched to your skin, and any boosters discussed. The face is cleansed, then the handpiece is worked systematically across the face in sections. Most people find it comfortable: the usual description is a cool, wet feeling with a light tugging or vacuum sensation, particularly around the nose during extraction. There are no needles and no anaesthetic.",
+            "A standard session commonly takes around 30 to 60 minutes depending on the steps and any add-ons included. Because it is a maintenance treatment, it is often repeated on a regular rhythm (monthly is a common pattern), rather than as a fixed course, and it is frequently scheduled alongside other treatments in a longer-term plan. Your doctor or therapist will suggest a realistic interval for your skin.",
           ],
         },
         {
           heading: "Downtime & aftercare",
           body: [
-            "Downtime is typically minimal, which is much of the appeal — most people go back to work or out the same day. Mild redness or a warm flush can occur for a short period afterwards, and skin that was congested may look a little pink where extraction was done.",
+            "Downtime is typically minimal, which is much of the appeal: most people go back to work or out the same day. Mild redness or a warm flush can occur for a short period afterwards, and skin that was congested may look a little pink where extraction was done.",
             "Keep skincare gentle for a day or two, hold off on strong actives such as retinoids and acids unless advised otherwise, and use daily sun protection. Your therapist will give aftercare guidance based on what was used in your session.",
           ],
         },
@@ -3246,7 +3246,7 @@ export const technology: Technology[] = [
         {
           heading: "Sessions & cost factors",
           body: [
-            "What drives cost is the length of the session, which steps are included, whether targeted serum boosters or add-ons such as LED are used, and whether areas beyond the face — the neck, chest or back — are treated. Because it is maintenance rather than a one-off correction, the frequency you settle on also affects what you spend over a year.",
+            "What drives cost is the length of the session, which steps are included, whether targeted serum boosters or add-ons such as LED are used, and whether areas beyond the face, the neck, chest or back, are treated. Because it is maintenance rather than a one-off correction, the frequency you settle on also affects what you spend over a year.",
             "Pricing is discussed at consultation rather than quoted online, so that any figure reflects the session actually recommended for your skin. Message us on WhatsApp to arrange a consultation.",
           ],
         },
@@ -3288,15 +3288,15 @@ export const technology: Technology[] = [
         {
           heading: "What is Silkpeel?",
           body: [
-            "Silkpeel is a device-based facial built around the process its makers named Dermalinfusion — a closed handpiece that carries a diamond-abrasive tip, gentle negative pressure and a flow of topical solution all at once. The system originated with Envy Medical in the United States and the Dermalinfusion platform was later acquired by Allergan Aesthetics, which markets the current generation under the DiamondGlow® name; Silkpeel remains the name most clinics and patients in Malaysia know it by. It sits in the medical-facial category rather than the laser or energy category, so it is typically the entry point into a skincare plan rather than a resurfacing procedure.",
-            "What distinguishes it mechanically is the word simultaneously. Rather than exfoliating first and applying a serum afterwards, the abrasive tip lifts away surface dead cells while the serum is delivered to that freshly abraded surface within the same closed pass, under the tip, with the negative pressure holding the skin in contact. At Kaiteki, Silkpeel is used within our facial treatments, often alongside other treatments in a longer plan. Which serum and which settings suit your skin — and whether a facial is the right starting point at all — is assessed at consultation.",
+            "Silkpeel is a device-based facial built around the process its makers named Dermalinfusion, a closed handpiece that carries a diamond-abrasive tip, gentle negative pressure and a flow of topical solution all at once. The system originated with Envy Medical in the United States and the Dermalinfusion platform was later acquired by Allergan Aesthetics, which markets the current generation under the DiamondGlow® name; Silkpeel remains the name most clinics and patients in Malaysia know it by. It sits in the medical-facial category rather than the laser or energy category, so it is typically the entry point into a skincare plan rather than a resurfacing procedure.",
+            "What distinguishes it mechanically is the word simultaneously. Rather than exfoliating first and applying a serum afterwards, the abrasive tip lifts away surface dead cells while the serum is delivered to that freshly abraded surface within the same closed pass, under the tip, with the negative pressure holding the skin in contact. At Kaiteki, Silkpeel is used within our facial treatments, often alongside other treatments in a longer plan. Which serum and which settings suit your skin, and whether a facial is the right starting point at all, is assessed at consultation.",
           ],
         },
         {
           heading: "How Dermalinfusion works",
           body: [
-            "The handpiece does three things in one movement. The recessed diamond-coated tip provides mechanical exfoliation of the stratum corneum as it is drawn across the skin; the vacuum applied through the tip holds the skin against the abrasive surface and draws away loosened cells and debris from the pores; and a condition-specific topical solution flows continuously into the same enclosed treatment chamber, so it meets skin whose barrier has just been thinned rather than skin that has been left to close over. Tip grade, vacuum level, number of passes and serum are all variables the therapist adjusts by area — lighter around the eyes and on thinner skin, firmer where the skin is thicker or more congested.",
-            "Compared with a suction-based hydra-type facial, the difference is where the work is done. A hydra-type device typically relies on aqueous solutions and vortex suction through a spiral tip to loosen and lift debris, so the exfoliation is largely fluid-driven. Silkpeel's exfoliation is physical abrasion by the diamond tip, with the solution delivered to the abraded surface rather than doing the loosening itself — which is why it is often chosen where texture and congestion, not just hydration, are the concern. Neither approach makes the other unnecessary, and the treating clinician selects the protocol and serum for your skin. Effects are gradual and cumulative across a course, and vary between individuals.",
+            "The handpiece does three things in one movement. The recessed diamond-coated tip provides mechanical exfoliation of the stratum corneum as it is drawn across the skin; the vacuum applied through the tip holds the skin against the abrasive surface and draws away loosened cells and debris from the pores; and a condition-specific topical solution flows continuously into the same enclosed treatment chamber, so it meets skin whose barrier has just been thinned rather than skin that has been left to close over. Tip grade, vacuum level, number of passes and serum are all variables the therapist adjusts by area: lighter around the eyes and on thinner skin, firmer where the skin is thicker or more congested.",
+            "Compared with a suction-based hydra-type facial, the difference is where the work is done. A hydra-type device typically relies on aqueous solutions and vortex suction through a spiral tip to loosen and lift debris, so the exfoliation is largely fluid-driven. Silkpeel's exfoliation is physical abrasion by the diamond tip, with the solution delivered to the abraded surface rather than doing the loosening itself, which is why it is often chosen where texture and congestion, not just hydration, are the concern. Neither approach makes the other unnecessary, and the treating clinician selects the protocol and serum for your skin. Effects are gradual and cumulative across a course, and vary between individuals.",
           ],
         },
         {
@@ -3323,15 +3323,15 @@ export const technology: Technology[] = [
         {
           heading: "The session at Kaiteki",
           body: [
-            "A visit starts with a skin assessment so the tip grade and serum can be matched to your skin on the day rather than assumed. The skin is cleansed, then the handpiece is worked across the face in overlapping passes, section by section, with the therapist adjusting pressure and settings around delicate areas. Most people describe the sensation as a cool, slightly gritty pull across the skin — comparable to a firm massage rather than something requiring numbing — and no anaesthetic is needed.",
-            "A session commonly runs in the region of 30 to 45 minutes, longer if it is combined with masking, extractions or another treatment in the same visit. Because the effect is cumulative, Silkpeel is usually planned as a regular treatment — often every few weeks initially and then at a maintenance interval — rather than as a one-off. Your clinician will suggest a rhythm that fits your skin and your other treatments.",
+            "A visit starts with a skin assessment so the tip grade and serum can be matched to your skin on the day rather than assumed. The skin is cleansed, then the handpiece is worked across the face in overlapping passes, section by section, with the therapist adjusting pressure and settings around delicate areas. Most people describe the sensation as a cool, slightly gritty pull across the skin, comparable to a firm massage rather than something requiring numbing, and no anaesthetic is needed.",
+            "A session commonly runs in the region of 30 to 45 minutes, longer if it is combined with masking, extractions or another treatment in the same visit. Because the effect is cumulative, Silkpeel is usually planned as a regular treatment, often every few weeks initially and then at a maintenance interval, rather than as a one-off. Your clinician will suggest a rhythm that fits your skin and your other treatments.",
           ],
         },
         {
           heading: "Downtime & aftercare",
           body: [
             "There is typically no meaningful downtime, and most people return to normal activity immediately, though this varies between individuals. Mild pinkness or a slight warm flush for an hour or two is common, and skin can feel a little tight until it rehydrates.",
-            "Because a layer of dead surface cells has been removed, your skin is temporarily more receptive — to skincare, and also to sun and irritants. Sunscreen the same day, gentle cleansing, and pausing exfoliating acids and retinoids for a day or two are usually advised, along with avoiding heavy makeup for the rest of the day. Your clinician will give aftercare guidance specific to your skin and the serum used.",
+            "Because a layer of dead surface cells has been removed, your skin is temporarily more receptive, to skincare, and also to sun and irritants. Sunscreen the same day, gentle cleansing, and pausing exfoliating acids and retinoids for a day or two are usually advised, along with avoiding heavy makeup for the rest of the day. Your clinician will give aftercare guidance specific to your skin and the serum used.",
           ],
         },
         {
@@ -3355,11 +3355,11 @@ export const technology: Technology[] = [
         },
         {
           q: "Is Silkpeel suitable for sensitive or acne-prone skin?",
-          a: "Often yes, with adjustments — a finer tip grade, lower vacuum and a serum chosen for the concern. It is generally avoided on actively inflamed or cystic acne, broken skin or during an eczema or rosacea flare. Your clinician assesses your skin on the day and adapts the protocol, or advises a different treatment if it is not appropriate.",
+          a: "Often yes, with adjustments: a finer tip grade, lower vacuum and a serum chosen for the concern. It is generally avoided on actively inflamed or cystic acne, broken skin or during an eczema or rosacea flare. Your clinician assesses your skin on the day and adapts the protocol, or advises a different treatment if it is not appropriate.",
         },
         {
           q: "How often should I have Silkpeel?",
-          a: "The effect is cumulative rather than one-off, so a regular rhythm is usual — commonly every few weeks at first, then at a longer maintenance interval once your skin has settled. The right frequency depends on your skin type, your concern and what else is in your plan. Your clinician will suggest a schedule at consultation and adjust it as your skin responds.",
+          a: "The effect is cumulative rather than one-off, so a regular rhythm is usual, commonly every few weeks at first, then at a longer maintenance interval once your skin has settled. The right frequency depends on your skin type, your concern and what else is in your plan. Your clinician will suggest a schedule at consultation and adjust it as your skin responds.",
         },
         {
           q: "Can Silkpeel be combined with other treatments at Kaiteki?",
@@ -3387,14 +3387,14 @@ export const technology: Technology[] = [
         {
           heading: "What is the Alma hair-removal platform?",
           body: [
-            "Alma is an Israeli aesthetic device manufacturer whose hair-removal systems are built around light energy delivered through interchangeable applicators. Its broadband applicators use what the manufacturer calls AFT (Advanced Fluorescence Technology) — an intense pulsed light approach in which a wide band of light is shaped towards the wavelengths melanin absorbs most strongly, with the Speed AFT applicator described by the manufacturer as covering a 6.4cm² spot for larger areas. Because this is filtered broadband light rather than a single laser wavelength, one applicator can cover a wide range of hair types.",
+            "Alma is an Israeli aesthetic device manufacturer whose hair-removal systems are built around light energy delivered through interchangeable applicators. Its broadband applicators use what the manufacturer calls AFT (Advanced Fluorescence Technology), an intense pulsed light approach in which a wide band of light is shaped towards the wavelengths melanin absorbs most strongly, with the Speed AFT applicator described by the manufacturer as covering a 6.4cm² spot for larger areas. Because this is filtered broadband light rather than a single laser wavelength, one applicator can cover a wide range of hair types.",
             "Where a radiofrequency element is combined with the light pulse, the radiofrequency contributes bulk heating of the surrounding dermis rather than being absorbed selectively by pigment. Less light energy is then needed to reach the temperature the follicle requires, which is why combined light-and-radiofrequency systems are generally described as more tolerant across hair colours and skin tones than light alone. Alma is used within Kaiteki's laser hair removal treatment, and which applicator and energy combination suits your hair and skin is decided by a doctor at an in-person consultation.",
           ],
         },
         {
           heading: "How it works",
           body: [
-            "Light-based hair removal depends on delivering enough heat to the follicle to interrupt regrowth while leaving surrounding skin unharmed. Alma's approach to that balance is the technology it calls SHR (Super Hair Removal), which the manufacturer describes as delivering low-fluence energy at a high repetition rate while the practitioner glides the applicator over the skin — an in-motion technique — so heat accumulates gradually rather than arriving as one high-energy pulse. Alma states that the applicator's cooled tip protects the epidermis throughout.",
+            "Light-based hair removal depends on delivering enough heat to the follicle to interrupt regrowth while leaving surrounding skin unharmed. Alma's approach to that balance is the technology it calls SHR (Super Hair Removal), which the manufacturer describes as delivering low-fluence energy at a high repetition rate while the practitioner glides the applicator over the skin (an in-motion technique), so heat accumulates gradually rather than arriving as one high-energy pulse. Alma states that the applicator's cooled tip protects the epidermis throughout.",
             "That accumulative delivery is the main mechanical difference from conventional stamping IPL, where each pulse is placed shot by shot and gaps can leave uneven coverage. Alma describes the SHR approach as giving more uniform coverage and as being usable on darker, melanin-rich skin. Energy levels, applicator choice, number of passes and endpoint are selected by the treating doctor for your skin tone, hair type and the area treated. Hair reduction develops gradually across a course and varies between individuals.",
           ],
         },
@@ -3423,7 +3423,7 @@ export const technology: Technology[] = [
           heading: "The session at Kaiteki",
           body: [
             "A visit begins with a doctor consultation and a skin and hair assessment, and a test area may be considered first. You will usually be asked to shave shortly beforehand rather than wax or pluck, because the hair above the skin should be short while the follicle below stays intact. On the day the area is cleansed, gel applied where required and eye protection fitted, and the doctor moves the cooled applicator over the area in repeated passes, building warmth gradually.",
-            "Most people describe the sensation as spreading warmth rather than the snap of a stamping device, and the manufacturer describes the technique as well tolerated. A small area such as the underarms may take only a few minutes; full legs or a back take considerably longer. A course is always needed, spaced according to the growth cycle for the area — often around four to eight weeks apart — because only follicles in their active growth phase respond to any one session. Your doctor will explain the course they consider realistic and review it as your hair responds.",
+            "Most people describe the sensation as spreading warmth rather than the snap of a stamping device, and the manufacturer describes the technique as well tolerated. A small area such as the underarms may take only a few minutes; full legs or a back take considerably longer. A course is always needed, spaced according to the growth cycle for the area, often around four to eight weeks apart, because only follicles in their active growth phase respond to any one session. Your doctor will explain the course they consider realistic and review it as your hair responds.",
           ],
         },
         {
@@ -3461,7 +3461,7 @@ export const technology: Technology[] = [
         },
         {
           q: "Should I shave or wax before my session?",
-          a: "Shave, do not wax. The hair above the skin should be short so energy is not wasted heating it, but the follicle below needs to be intact for the treatment to have a target — and waxing, plucking and threading remove exactly that. Keep to shaving between sessions as well, and your doctor or therapist will tell you how close to your appointment to do it.",
+          a: "Shave, do not wax. The hair above the skin should be short so energy is not wasted heating it, but the follicle below needs to be intact for the treatment to have a target, and waxing, plucking and threading remove exactly that. Keep to shaving between sessions as well, and your doctor or therapist will tell you how close to your appointment to do it.",
         },
       ],
       reviewedBy: "dr-lim-xiao-chien",

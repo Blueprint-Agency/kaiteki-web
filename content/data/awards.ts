@@ -10,7 +10,7 @@ import type { Award } from "@/lib/types";
 // client before this ships live.
 export const awards: Award[] = [
   {
-    title: "Ultherapy — Top 10 Authentic Transducer Sales",
+    title: "Ultherapy: Top 10 Authentic Transducer Sales",
     issuer: "Merz Aesthetics",
     period: "2023 / 2024",
     image: "/awards/merz-ultherapy-2024.jpg",
@@ -24,28 +24,28 @@ export const awards: Award[] = [
     alt: "Neauvia trophy presented to Kaiteki Clinic as a Top Neauvia User, 2024.",
   },
   {
-    title: "Rejuran — Elite Platinum Award",
+    title: "Rejuran: Elite Platinum Award",
     issuer: "Elogio Asia · PharmaResearch",
     period: "2024",
     image: "/awards/elogio-elite-platinum-2024.jpg",
     alt: "Rejuran Elite Platinum crystal trophy presented to Kaiteki Clinic by Elogio Asia and PharmaResearch, 2024.",
   },
   {
-    title: "Profhilo — Platinum Award",
+    title: "Profhilo: Platinum Award",
     issuer: "Neoasia",
     period: "2023",
     image: "/awards/neoasia-profhilo-platinum-2023.jpg",
     alt: "Neoasia Profhilo Platinum award plaque presented to Kaiteki, 2023.",
   },
   {
-    title: "Sylfirm X — Elite Partner",
+    title: "Sylfirm X: Elite Partner",
     issuer: "Elogio Asia",
     period: "2024",
     image: "/awards/elogio-sylfirm-x-elite-partner-2024.jpg",
     alt: "Elogio Asia Sylfirm X Elite Partner award presented to Kaiteki, 2024.",
   },
   {
-    title: "Restylane — Top 5 Provider",
+    title: "Restylane: Top 5 Provider",
     issuer: "Galderma",
     period: "2024",
     image: "/awards/galderma-restylane-top5-2024.jpg",

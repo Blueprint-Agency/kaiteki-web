@@ -77,7 +77,7 @@ export default async function DoctorPage({
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-hairline bg-tint">
             <Image
               src={d.photo}
-              alt={`${d.fullName}, ${d.credentials} — aesthetic doctor at Kaiteki Skin Aesthetic Clinic Malaysia`}
+              alt={`${d.fullName}, ${d.credentials}, aesthetic doctor at Kaiteki Skin Aesthetic Clinic Malaysia`}
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 22rem"

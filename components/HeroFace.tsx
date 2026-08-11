@@ -36,7 +36,7 @@ const spots: Spot[] = [
   {
     slug: "dark-eye-circles",
     name: "Dark eye circles",
-    note: "Under-eye darkness and eye bags — options depend on the cause.",
+    note: "Under-eye darkness and eye bags: options depend on the cause.",
     icon: <Eye size={18} />,
     x: 44,
     y: 31,
@@ -58,7 +58,7 @@ const spots: Spot[] = [
   {
     slug: "enlarged-pores",
     name: "Enlarged pores",
-    note: "Texture and visible pores — often paired with hydration care.",
+    note: "Texture and visible pores: often paired with hydration care.",
     icon: <Droplet size={18} />,
     x: 40,
     y: 36,
@@ -113,7 +113,7 @@ export function HeroFace() {
         <Fragment key={s.slug}>
           <Link
             href={`/concerns/${s.slug}`}
-            aria-label={`${s.name} — read the concern guide`}
+            aria-label={`${s.name}, read the concern guide`}
             style={spotStyle(s)}
             className="hero-spot group absolute z-20 -ml-3 -mt-3 flex size-6 items-center justify-center rounded-full"
           >

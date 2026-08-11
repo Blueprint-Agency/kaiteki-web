@@ -43,7 +43,7 @@ export default function LocationsHub() {
       />
       <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink-700">
         Every Kaiteki branch offers the same treatments, the same doctor-led process and
-        the same standard of care. Choose the location closest to you — each branch page
+        the same standard of care. Choose the location closest to you. Each branch page
         has directions, opening hours and contact details.
       </p>
 

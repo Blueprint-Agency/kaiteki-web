@@ -24,7 +24,7 @@ export function BranchGallery({ photos, alt }: { photos: string[]; alt: string }
           <div key={src} className="relative h-full w-full shrink-0 snap-center">
             <Image
               src={src}
-              alt={i === 0 ? alt : `${alt} — photo ${i + 1}`}
+              alt={i === 0 ? alt : `${alt}, photo ${i + 1}`}
               fill
               priority={i === 0}
               sizes="(max-width: 1024px) 100vw, 45vw"

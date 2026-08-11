@@ -91,7 +91,7 @@ export const reviewsByBranch: Record<string, GoogleReview[]> = {
       author: "Jing wen",
       rating: 5,
       posted: "2025",
-      text: "I had a great experience at Kaiteki Cheras. Dr. William is a really nice doctor who explains everything clearly and patiently. The environment is super comfortable — it feels just like a second home. Plus, they even have a Dyson hair dryer for you to use after treatments, which is such a thoughtful touch.",
+      text: "I had a great experience at Kaiteki Cheras. Dr. William is a really nice doctor who explains everything clearly and patiently. The environment is super comfortable. It feels just like a second home. Plus, they even have a Dyson hair dryer for you to use after treatments, which is such a thoughtful touch.",
     },
     {
       author: "LChoon Tan",
@@ -247,7 +247,7 @@ export const reviewsByBranch: Record<string, GoogleReview[]> = {
       author: "Peggy Chieng",
       rating: 5,
       posted: "May 2026",
-      text: "Great experience at Kaiteki Clinic with Dr. Jac, who is incredibly skilled and professional — her advice was honest, clear, and tailored to what I actually needed, which I really appreciated. Also, a big thank you to Jessie for the facial treatment — she made the whole experience so comfortable and relaxing.…",
+      text: "Great experience at Kaiteki Clinic with Dr. Jac, who is incredibly skilled and professional. Her advice was honest, clear, and tailored to what I actually needed, which I really appreciated. Also, a big thank you to Jessie for the facial treatment. She made the whole experience so comfortable and relaxing.…",
     },
     {
       author: "Carmen Chan",
@@ -346,7 +346,7 @@ export const reviewsByBranch: Record<string, GoogleReview[]> = {
       author: "Carmen Pang",
       rating: 5,
       posted: "Jul 2026",
-      text: "Kaiteki is one of my favourite beauty clinics! I've been here countless times, and each visit feels like a whole new experience — they offer so many different services. The staff are always so welcoming, it makes you feel right at home and genuinely well taken care of.",
+      text: "Kaiteki is one of my favourite beauty clinics! I've been here countless times, and each visit feels like a whole new experience. They offer so many different services. The staff are always so welcoming, it makes you feel right at home and genuinely well taken care of.",
     },
     {
       author: "Dennis Lim",
