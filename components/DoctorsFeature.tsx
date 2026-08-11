@@ -68,7 +68,7 @@ export function DoctorsFeature() {
               />
               <Image
                 src="/images/doctors/team-trio.png"
-                alt="Three Kaiteki doctors — Dr Chew, Dr Jessie and Dr Yeong Bin — in black clinic scrubs"
+                alt="Three Kaiteki doctors, Dr Chew, Dr Jessie and Dr Yeong Bin, in black clinic scrubs"
                 width={1516}
                 height={1010}
                 loading="eager"
@@ -83,7 +83,7 @@ export function DoctorsFeature() {
                 <Link
                   key={d.slug}
                   href={`/doctors/${d.slug}`}
-                  aria-label={`${d.name}, ${d.role} — view profile`}
+                  aria-label={`${d.name}, ${d.role}, view profile`}
                   className="group flex items-center gap-3 rounded-full border border-hairline bg-surface px-4 py-2 shadow-[0_8px_22px_rgb(73_54_40/0.16)] transition-colors hover:border-mocha sm:gap-4 sm:px-5 sm:py-2.5"
                 >
                   <span className="text-left leading-tight">

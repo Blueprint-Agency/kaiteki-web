@@ -115,7 +115,7 @@ export function ConcernView({ c }: { c: Concern }) {
             <div className="relative aspect-[3/2] overflow-hidden rounded-2xl rounded-t-[4rem] bg-tint ring-1 ring-hairline lg:aspect-[4/5]">
               <Image
                 src={c.image}
-                alt={`${c.name} — assessed and treated at Kaiteki Skin Aesthetic Clinic Malaysia`}
+                alt={`${c.name}, assessed and treated at Kaiteki Skin Aesthetic Clinic Malaysia`}
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 420px"

@@ -355,7 +355,7 @@ export const treatments: Treatment[] = [
         heading: "Devices & technology: HIFU and Ultherapy",
         body: [
           "HIFU and Ultherapy both use focused ultrasound but are distinct treatments. The HIFU devices used at Kaiteki (Lifthera / Ultracel Q) deliver focused ultrasound and are often considered for deeper areas such as the jaw and jowls. Ultherapy is a separate micro-focused-ultrasound platform sometimes considered for more precise areas such as the brow and neck.",
-          "This is a factual difference in how each device delivers energy, not a statement that one is better than the other. Which approach is appropriate — if any — is decided with your doctor at consultation.",
+          "This is a factual difference in how each device delivers energy, not a statement that one is better than the other. Which approach is appropriate, if any, is decided with your doctor at consultation.",
         ],
       },
       {
@@ -526,11 +526,11 @@ export const treatments: Treatment[] = [
         heading: "What is Fotona Laser?",
         body: [
           "Fotona Laser refers to Kaiteki's Fotona SP Dynamis / TimeWalker platform, a dual-wavelength (Nd:YAG and Er:YAG) laser system offered in several distinct applications, including NightLase (for snoring-related concerns), LipLase, SmoothEye and TightSculpting, alongside its flagship facial protocol, Fotona 4D.",
-          "Fotona 4D is a non-surgical protocol that uses the platform's Nd:YAG and Er:YAG modes together to deliver energy to the face through a combination of steps. It is called \"4D\" because it works across four steps, treating both the skin surface and the tissue inside the mouth. It is generally considered for firmness, skin-quality and volume-related concerns of the face. Whether it — or another application of the platform — is appropriate for you is something a doctor assesses during consultation, as suitability and outcomes vary between individuals.",
+          "Fotona 4D is a non-surgical protocol that uses the platform's Nd:YAG and Er:YAG modes together to deliver energy to the face through a combination of steps. It is called \"4D\" because it works across four steps, treating both the skin surface and the tissue inside the mouth. It is generally considered for firmness, skin-quality and volume-related concerns of the face. Whether it, or another application of the platform, is appropriate for you is something a doctor assesses during consultation, as suitability and outcomes vary between individuals.",
         ],
       },
       {
-        heading: "How it works — the four modes",
+        heading: "How it works: the four modes",
         body: [
           "A Fotona 4D session combines four laser modes in a set sequence. Each mode targets the skin at a different level, and a doctor decides which modes and settings are used based on your assessment.",
         ],
@@ -743,9 +743,9 @@ export const treatments: Treatment[] = [
           "Kaiteki offers three RF microneedling devices. Each has different technical characteristics, and a doctor matches the device and settings to your concern and skin during consultation.",
         ],
         list: [
-          "Morpheus8 — designed for deeper RF penetration. It is generally discussed in the context of skin-tightening and deeper concerns such as sagging, the jaw and neck area.",
-          "Sylfirm X — a dual-wave device that can deliver RF in both pulsed and continuous modes. It is generally discussed in the context of pigment-related and vascular concerns such as melasma, post-inflammatory hyperpigmentation and redness.",
-          "Potenza — offers adjustable needle depth with both monopolar and bipolar RF modes. It is generally discussed in the context of acne scarring, enlarged pores and oil-related texture concerns.",
+          "Morpheus8: designed for deeper RF penetration. It is generally discussed in the context of skin-tightening and deeper concerns such as sagging, the jaw and neck area.",
+          "Sylfirm X: a dual-wave device that can deliver RF in both pulsed and continuous modes. It is generally discussed in the context of pigment-related and vascular concerns such as melasma, post-inflammatory hyperpigmentation and redness.",
+          "Potenza: offers adjustable needle depth with both monopolar and bipolar RF modes. It is generally discussed in the context of acne scarring, enlarged pores and oil-related texture concerns.",
         ],
       },
       {
@@ -798,7 +798,7 @@ export const treatments: Treatment[] = [
     ],
     faqs: [
       {
-        q: "Which device is right for me — Morpheus8, Sylfirm X or Potenza?",
+        q: "Which device is right for me: Morpheus8, Sylfirm X or Potenza?",
         a: "It depends on your concern and skin. As a general guide, Morpheus8 is associated with deeper, skin-tightening treatment, Sylfirm X with pigment and redness concerns, and Potenza with scarring and pore concerns. The right choice for you is decided by a doctor during consultation.",
       },
       {
@@ -956,11 +956,11 @@ export const treatments: Treatment[] = [
           "Kaiteki uses several skin-booster formulations, and they differ in their active ingredient and what they are typically used for. A doctor selects and personalises the choice based on your skin during consultation.",
         ],
         list: [
-          "Plinest/Newest — a polynucleotide-based formulation used to support skin regeneration and elasticity; often considered for stressed, ageing, or post-treatment skin.",
-          "Profhilo — a high-concentration hyaluronic acid formulation used for deep hydration and skin remodelling, and to support firmness.",
-          "Rejuran — based on salmon polynucleotide (PN/DNA) technology, used to support the skin barrier and skin healing; often considered for sensitive, acne-prone, or damaged skin.",
-          "Hydrodeluxe — a hydrating injectable formulation used to support skin moisture and overall skin quality.",
-          "Juvelook — a hybrid, collagen-stimulating skin booster used to address pores, texture, and fine lines as part of longer-term skin-quality care.",
+          "Plinest/Newest: a polynucleotide-based formulation used to support skin regeneration and elasticity; often considered for stressed, ageing, or post-treatment skin.",
+          "Profhilo: a high-concentration hyaluronic acid formulation used for deep hydration and skin remodelling, and to support firmness.",
+          "Rejuran: based on salmon polynucleotide (PN/DNA) technology, used to support the skin barrier and skin healing; often considered for sensitive, acne-prone, or damaged skin.",
+          "Hydrodeluxe: a hydrating injectable formulation used to support skin moisture and overall skin quality.",
+          "Juvelook: a hybrid, collagen-stimulating skin booster used to address pores, texture, and fine lines as part of longer-term skin-quality care.",
         ],
       },
       {
@@ -1059,7 +1059,7 @@ export const treatments: Treatment[] = [
       "Known neuromuscular conditions such as myasthenia gravis or Lambert-Eaton syndrome",
       "Known allergy to botulinum toxin or any component of the preparation",
       "Active skin infection or inflammation at the intended injection site",
-      "Certain medications, including some antibiotics and muscle relaxants — tell your doctor everything you take",
+      "Certain medications, including some antibiotics and muscle relaxants: tell your doctor everything you take",
     ],
     comparisons: [
       {
@@ -1108,14 +1108,14 @@ export const treatments: Treatment[] = [
         body: [
           "Botulinum toxin is a purified protein produced by the bacterium Clostridium botulinum. In very small, controlled doses it is used in medicine to temporarily reduce the activity of a specific muscle or gland. It has been used clinically for decades, originally in neurology and ophthalmology, and later in aesthetic medicine.",
           "In Malaysia it is a prescription medicine. That means it can only be supplied and administered by a registered doctor after an in-person assessment, and it cannot be bought, requested or self-administered like a cosmetic product.",
-          "Several brands of botulinum toxin type A are registered in Malaysia, of which Botox is the best known — the name is widely used to mean the treatment itself, though it is one product among several. Which one your doctor recommends depends on the area being treated and your assessment.",
+          "Several brands of botulinum toxin type A are registered in Malaysia, of which Botox is the best known: the name is widely used to mean the treatment itself, though it is one product among several. Which one your doctor recommends depends on the area being treated and your assessment.",
         ],
       },
       {
         heading: "How it works",
         body: [
           "Muscles contract when a nerve releases a chemical messenger called acetylcholine at the junction between the nerve and the muscle. Botulinum toxin temporarily blocks that release, so the treated muscle contracts less strongly. The same mechanism applies to the nerves that switch on sweat glands, which is why it is also used for excessive sweating.",
-          "The effect is confined to the small area injected and is temporary — nerve signalling gradually returns and the muscle or gland resumes its usual activity. How long that takes, and how noticeable any change is, varies considerably between individuals. Because the effect wears off, this is a treatment that is repeated rather than a one-off procedure.",
+          "The effect is confined to the small area injected and is temporary: nerve signalling gradually returns and the muscle or gland resumes its usual activity. How long that takes, and how noticeable any change is, varies considerably between individuals. Because the effect wears off, this is a treatment that is repeated rather than a one-off procedure.",
         ],
       },
       {
@@ -1124,7 +1124,7 @@ export const treatments: Treatment[] = [
           "A doctor considers botulinum toxin for concerns driven by muscle movement or gland activity, rather than by volume loss or skin quality. If your concern is not movement-related, another approach may be more appropriate, and your doctor will say so.",
         ],
         list: [
-          "Dynamic expression lines — forehead lines, frown lines between the brows, and lines at the outer eye",
+          "Dynamic expression lines: forehead lines, frown lines between the brows, and lines at the outer eye",
           "Excessive sweating (hyperhidrosis) of the underarms, palms or soles",
           "Jawline width associated with masseter muscle bulk",
           "Calf shape associated with muscle bulk",
@@ -1134,14 +1134,14 @@ export const treatments: Treatment[] = [
       {
         heading: "Suitability & who should avoid it",
         body: [
-          "Botulinum toxin is not suitable for everyone, and being interested in it is not the same as being a candidate for it. Your doctor examines the area, watches how the muscles move, reviews your medical history and medications, and then advises whether treatment is reasonable — including advising against it.",
+          "Botulinum toxin is not suitable for everyone, and being interested in it is not the same as being a candidate for it. Your doctor examines the area, watches how the muscles move, reviews your medical history and medications, and then advises whether treatment is reasonable, including advising against it.",
           "It is generally avoided in pregnancy and breastfeeding, where there is a neuromuscular disorder such as myasthenia gravis, where there is a known allergy to the preparation, and over active infection or inflammation at the injection site. Some medications, including certain antibiotics and muscle relaxants, can interact with it, so bring a full list to your consultation.",
         ],
       },
       {
         heading: "The session at Kaiteki",
         body: [
-          "Your appointment starts with a consultation. The doctor assesses the area at rest and in movement, discusses what you are hoping to change, explains what is and is not achievable, and goes through the risks. Only then is a treatment plan and dose decided — dosing is individual and is not set from a price list.",
+          "Your appointment starts with a consultation. The doctor assesses the area at rest and in movement, discusses what you are hoping to change, explains what is and is not achievable, and goes through the risks. Only then is a treatment plan and dose decided: dosing is individual and is not set from a price list.",
           "If you proceed, the area is cleansed and the doctor administers a series of small injections with a fine needle at planned points. Most sessions take ten to twenty minutes. Discomfort is usually described as brief stinging; the doctor can discuss numbing or cooling beforehand if you are concerned. You are given written aftercare before you leave.",
         ],
       },
@@ -1156,7 +1156,7 @@ export const treatments: Treatment[] = [
         heading: "Risks & side effects",
         body: [
           "Commonly reported temporary effects include tenderness, redness or small bruises at the injection points, and headache. These are usually mild and short-lived.",
-          "Less commonly, the effect can extend slightly beyond the intended muscle, which may cause temporary asymmetry, a heavy-feeling brow or eyelid drooping. These are temporary but can take weeks to resolve. Rarely, more serious effects associated with spread of the toxin — including difficulty swallowing, speaking or breathing, or muscle weakness away from the injection site — have been reported and require urgent medical attention. Your doctor will explain the full risk profile as it applies to you before you consent, and Kaiteki asks you to contact the clinic about any effect that concerns you.",
+          "Less commonly, the effect can extend slightly beyond the intended muscle, which may cause temporary asymmetry, a heavy-feeling brow or eyelid drooping. These are temporary but can take weeks to resolve. Rarely, more serious effects associated with spread of the toxin, including difficulty swallowing, speaking or breathing, or muscle weakness away from the injection site, have been reported and require urgent medical attention. Your doctor will explain the full risk profile as it applies to you before you consent, and Kaiteki asks you to contact the clinic about any effect that concerns you.",
         ],
       },
       {
@@ -1186,7 +1186,7 @@ export const treatments: Treatment[] = [
       },
       {
         q: "Is it the same as dermal filler?",
-        a: "No. Botulinum toxin relaxes muscle activity, so it addresses lines caused by movement. Dermal fillers add volume or structure, so they address hollowing and lines caused by lost volume. They work differently and are sometimes considered together — your doctor will explain which, if either, fits your concern.",
+        a: "No. Botulinum toxin relaxes muscle activity, so it addresses lines caused by movement. Dermal fillers add volume or structure, so they address hollowing and lines caused by lost volume. They work differently and are sometimes considered together. Your doctor will explain which, if either, fits your concern.",
       },
     ],
   },
@@ -1227,10 +1227,10 @@ export const treatments: Treatment[] = [
           "Several bio-stimulator products may be used, each with a different base material and characteristics. Product selection is made by the doctor based on the individual assessment. Common examples include:",
         ],
         list: [
-          "Radiesse — based on calcium hydroxylapatite (CaHA), a substance also found naturally in bone. It is used as a bio-stimulatory injectable with collagen-supporting properties.",
-          "Ellansé — based on polycaprolactone (PCL), a biocompatible material suspended in a gel carrier and used as a collagen-stimulating injectable.",
-          "Sculptra — based on poly-L-lactic acid (PLLA), a biocompatible material used to support the skin's gradual structural renewal over a course of sessions.",
-          "Deusaderm — a collagen-based injectable intended to support skin quality, structure and elasticity.",
+          "Radiesse: based on calcium hydroxylapatite (CaHA), a substance also found naturally in bone. It is used as a bio-stimulatory injectable with collagen-supporting properties.",
+          "Ellansé: based on polycaprolactone (PCL), a biocompatible material suspended in a gel carrier and used as a collagen-stimulating injectable.",
+          "Sculptra: based on poly-L-lactic acid (PLLA), a biocompatible material used to support the skin's gradual structural renewal over a course of sessions.",
+          "Deusaderm: a collagen-based injectable intended to support skin quality, structure and elasticity.",
         ],
       },
       {
@@ -1353,7 +1353,7 @@ export const treatments: Treatment[] = [
       {
         heading: "The session at Kaiteki",
         body: [
-          "A visit begins with a doctor consultation and assessment of your skin or scalp. Exosome therapy is often combined with another treatment — for example microneedling, a laser, or a PRP (platelet-rich plasma) procedure — so the session is planned around that combination where appropriate.",
+          "A visit begins with a doctor consultation and assessment of your skin or scalp. Exosome therapy is often combined with another treatment, for example microneedling, a laser, or a PRP (platelet-rich plasma) procedure, so the session is planned around that combination where appropriate.",
           "The number of sessions is individual. A short course spaced a few weeks apart is common for regenerative treatments, but your doctor will outline a plan suited to you rather than a fixed package.",
         ],
       },
@@ -1421,10 +1421,10 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "Methods — suture and incisional",
+        heading: "Methods: suture and incisional",
         body: [
           "There are two broad approaches. The suture (embedding) method uses small access points through which fine sutures are placed to form the crease, without a continuous incision. The incisional method uses an incision along the intended crease line and is sometimes considered where there is excess skin or fat, or where a suture approach is less suitable.",
-          "The two methods differ in recovery and how long the crease tends to hold. Which approach is appropriate — if any — is decided by the treating doctor based on your eyelids and goals, and discussed at consultation.",
+          "The two methods differ in recovery and how long the crease tends to hold. Which approach is appropriate, if any, is decided by the treating doctor based on your eyelids and goals, and discussed at consultation.",
         ],
       },
       {
@@ -1463,7 +1463,7 @@ export const treatments: Treatment[] = [
       {
         heading: "Recovery & aftercare",
         body: [
-          "Some swelling and bruising of the eyelids is expected afterwards and settles over time. Recovery varies with the method and the individual — the suture approach generally involves a shorter period of swelling than the incisional approach.",
+          "Some swelling and bruising of the eyelids is expected afterwards and settles over time. Recovery varies with the method and the individual: the suture approach generally involves a shorter period of swelling than the incisional approach.",
           "Many people return to everyday activities within around ten to fourteen days, though this varies. The eyelids' appearance continues to settle over the following weeks to months. Your doctor will give aftercare guidance specific to you.",
         ],
       },
@@ -1615,7 +1615,7 @@ export const treatments: Treatment[] = [
       {
         heading: "What is Resurfacing Laser treatment?",
         body: [
-          "Resurfacing Laser refers to ablative and fractional laser technology — at Kaiteki, a fractional CO2 laser — that works by creating a controlled pattern of micro-injury columns across the treated skin, leaving surrounding tissue intact to support recovery.",
+          "Resurfacing Laser refers to ablative and fractional laser technology (at Kaiteki, a fractional CO2 laser) that works by creating a controlled pattern of micro-injury columns across the treated skin, leaving surrounding tissue intact to support recovery.",
           "This differs from non-ablative lasers such as Pico laser, which do not remove tissue at the surface. Whether fractional CO2 resurfacing suits your skin depends on your concern, skin type and history, which a doctor assesses during consultation.",
         ],
       },
@@ -1715,7 +1715,7 @@ export const treatments: Treatment[] = [
       {
         heading: "How it works",
         body: [
-          "Microwave energy is delivered beneath the skin's surface while built-in cooling helps keep the surface protected during treatment. The energy is intended to act on the targeted tissue — for example localised fat cells or the fibrous bands associated with cellulite — and may also prompt a gradual collagen-remodelling response supporting firmness.",
+          "Microwave energy is delivered beneath the skin's surface while built-in cooling helps keep the surface protected during treatment. The energy is intended to act on the targeted tissue, for example localised fat cells or the fibrous bands associated with cellulite, and may also prompt a gradual collagen-remodelling response supporting firmness.",
           "Settings and applicator are selected by the treating doctor for the area and your skin. Results develop over time and vary between individuals.",
         ],
       },
@@ -1809,7 +1809,7 @@ export const treatments: Treatment[] = [
       {
         heading: "How it works",
         body: [
-          "The device delivers electromagnetic energy through an applicator placed over the target muscle group, inducing supramaximal contractions — a level of contraction that is difficult to achieve through voluntary exercise alone.",
+          "The device delivers electromagnetic energy through an applicator placed over the target muscle group, inducing supramaximal contractions, a level of contraction that is difficult to achieve through voluntary exercise alone.",
           "Repeated contractions during a session are intended to work the muscle in a concentrated way. Any change in muscle tone develops gradually over a course of sessions and varies between individuals; it is not a substitute for regular exercise.",
         ],
       },
@@ -1896,7 +1896,7 @@ export const treatments: Treatment[] = [
         heading: "What are dermal fillers?",
         body: [
           "Dermal fillers are injectable gels based on hyaluronic acid (HA), a substance naturally present in skin. Unlike bio-stimulators, which work gradually by supporting the skin's own structural renewal, HA fillers are formulated to sit within the tissue and provide volume or support more directly once injected.",
-          "At Kaiteki this includes Juvederm, Restylane, Belotero and Art Filler — established HA filler ranges that differ in gel formulation and are used across different facial areas.",
+          "At Kaiteki this includes Juvederm, Restylane, Belotero and Art Filler, established HA filler ranges that differ in gel formulation and are used across different facial areas.",
           "Art Filler, from Laboratoires Fillmed, is one of the ranges available here; like the others, it is selected by the doctor for a specific area rather than chosen from a menu. Because it is an injectable, it is performed by a doctor, who assesses whether filler is appropriate for you at consultation.",
         ],
       },
@@ -1981,7 +1981,7 @@ export const treatments: Treatment[] = [
     image: "/images/treatments/facial-treatments.jpg",
     summary: "Clinic facials used to support skin cleansing, exfoliation and general skin quality.",
     leadAnswer:
-      "Facial Treatments at Kaiteki are clinic-based facials — including Hydrafacial and Silkpeel — that combine cleansing, exfoliation and skin-conditioning steps to support general skin quality. Suitability and results vary between individuals; a consultation helps determine which option, if any, is appropriate for you.",
+      "Facial Treatments at Kaiteki are clinic-based facials, including Hydrafacial and Silkpeel, that combine cleansing, exfoliation and skin-conditioning steps to support general skin quality. Suitability and results vary between individuals; a consultation helps determine which option, if any, is appropriate for you.",
     related: ["pico-laser", "skin-booster"],
     reviewedBy: "dr-calvin-tan",
     lastReviewed: "2026-07-13",

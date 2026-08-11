@@ -38,7 +38,7 @@ export function TreatmentsMenu() {
             <FlipCard
               key={t.slug}
               href={treatmentHref(t)}
-              ariaLabel={`${t.name} — read the treatment guide`}
+              ariaLabel={`${t.name}, read the treatment guide`}
               className="reveal w-[78%] shrink-0 snap-start sm:w-auto"
               style={si(i)}
               front={

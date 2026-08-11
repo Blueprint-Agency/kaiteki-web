@@ -80,7 +80,7 @@ export default function ProductsHub() {
             Limited-time promotion
           </p>
           <p className="mt-3 font-display text-2xl leading-tight text-espresso sm:text-3xl">
-            Skincare Mix &amp; Match — 5 products for RM699
+            Skincare Mix &amp; Match: 5 products for RM699
           </p>
           <p className="mt-1.5 max-w-xl text-sm leading-relaxed text-ink-700">
             Build a five-step routine from our Kaiteki&reg; Cosmeceuticals range. Normally up to

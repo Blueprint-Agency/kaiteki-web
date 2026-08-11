@@ -56,7 +56,7 @@ const founderBlurbs: Record<string, string> = {
   "dr-jessie-lim":
     "Dr Jessie Lim is an LCP-certified aesthetic physician specialising in injectables and laser treatments. She trained at Universiti Putra Malaysia and the American Academy of Aesthetic Medicine. She founded Kaiteki around one principle: that aesthetic care should start with an honest assessment, not a sales target.",
   "dr-chew-yuhhui":
-    "Dr Chew Yuhhui is an LCP-certified aesthetic physician who graduated from Melaka Manipal Medical College with an MBBS. She specialises in skin problems like acne and acne scars, injectables like botox, fillers and lifting treatments, and is also a medical trainer for Ellanse. She has a quiet steady energy — you’ll feel comfortable sharing your concerns with her.",
+    "Dr Chew Yuhhui is an LCP-certified aesthetic physician who graduated from Melaka Manipal Medical College with an MBBS. She specialises in skin problems like acne and acne scars, injectables like botox, fillers and lifting treatments, and is also a medical trainer for Ellanse. She has a quiet steady energy. You’ll feel comfortable sharing your concerns with her.",
 };
 
 // Founder interviews in the Malaysian lifestyle press (verified URLs).
@@ -71,7 +71,7 @@ const interviews: Record<string, string> = {
 const press = [
   {
     pub: "The Yum List",
-    title: "Meet the founder — Dr Jessie Lim",
+    title: "Meet the founder: Dr Jessie Lim",
     year: "2020",
     href: "https://www.theyumlist.net/2020/07/dr-jessie-lim-aesthetic-physician-pj.html",
   },
@@ -137,7 +137,7 @@ export default function AboutPage() {
               <span className="font-serif font-normal italic text-mocha">comfortable.</span>
             </h1>
             <p className="prose mt-6 text-lg leading-relaxed text-ink-700">
-              It&rsquo;s a Japanese word — かいてき — for being at ease, physically and mentally.
+              It&rsquo;s a Japanese word, かいてき, for being at ease, physically and mentally.
               Not just relaxed, but genuinely settled. That feeling is the single promise
               behind every Kaiteki clinic: medical-grade skin and aesthetic care where
               nothing is sold, rushed, or justified.
@@ -214,7 +214,7 @@ export default function AboutPage() {
                 <div className="relative aspect-[3/4] w-32 shrink-0 self-center overflow-hidden rounded-2xl border border-hairline bg-tint sm:w-40 sm:self-start">
                   <Image
                     src={d.photo}
-                    alt={`${d.fullName}, ${d.credentials} — co-founder of Kaiteki Skin Aesthetic Clinic`}
+                    alt={`${d.fullName}, ${d.credentials}, co-founder of Kaiteki Skin Aesthetic Clinic`}
                     fill
                     sizes="(max-width: 640px) 128px, 160px"
                     className="object-cover object-top"
@@ -286,7 +286,7 @@ export default function AboutPage() {
                 >
                   <span className="min-w-0">
                     <span className="font-semibold text-espresso">{p.pub}</span>
-                    <span className="text-ink-700"> — {p.title}</span>
+                    <span className="text-ink-700">, {p.title}</span>
                   </span>
                   <span className="flex shrink-0 items-center gap-2 text-sm text-ink-500 transition-colors group-hover:text-espresso">
                     {p.year} <span aria-hidden>↗</span>

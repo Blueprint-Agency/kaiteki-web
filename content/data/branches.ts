@@ -37,7 +37,7 @@ export const branches: Branch[] = [
     parking: "Covered parking at Arcoris Plaza.",
     serves: ["Mont Kiara", "Sri Hartamas", "Desa ParkCity", "Dutamas", "Segambut"],
     seoTitle: "Aesthetic Clinic in Mont Kiara, Kuala Lumpur | Kaiteki",
-    seoDescription: "Kaiteki's aesthetic clinic in Mont Kiara — doctor-led skin & aesthetic treatments. See hours, address & doctors. Book a free consultation via WhatsApp.",
+    seoDescription: "Kaiteki's aesthetic clinic in Mont Kiara: doctor-led skin & aesthetic treatments. See hours, address & doctors. Book a free consultation via WhatsApp.",
   },
   {
     slug: "cheras", name: "Cheras", city: "Kuala Lumpur", state: "WP Kuala Lumpur", region: "Kuala Lumpur",
@@ -65,7 +65,7 @@ export const branches: Branch[] = [
     parking: "Ground-level parking around Jalil Link.",
     serves: ["Bukit Jalil", "Sri Petaling", "Puchong", "Bukit Kinrara", "Old Klang Road"],
     seoTitle: "Aesthetic Clinic in Bukit Jalil, Kuala Lumpur | Kaiteki",
-    seoDescription: "Kaiteki's aesthetic clinic in Bukit Jalil — doctor-led skin & aesthetic assessments. See address, hours & doctors. Book free on WhatsApp.",
+    seoDescription: "Kaiteki's aesthetic clinic in Bukit Jalil: doctor-led skin & aesthetic assessments. See address, hours & doctors. Book free on WhatsApp.",
   },
   {
     slug: "four-seasons-kl", name: "Four Seasons KL", city: "Kuala Lumpur", state: "WP Kuala Lumpur", region: "Kuala Lumpur",
@@ -100,7 +100,7 @@ export const branches: Branch[] = [
     parking: "Covered parking at The Hub SS2.",
     serves: ["Petaling Jaya", "SS2", "Damansara", "Kelana Jaya", "Section 17"],
     seoTitle: "Aesthetic Clinic in Petaling Jaya, Selangor | Kaiteki",
-    seoDescription: "Kaiteki's aesthetic clinic in Petaling Jaya (SS2) — doctor-led skin & aesthetic consultations. See hours & doctors. Book free via WhatsApp.",
+    seoDescription: "Kaiteki's aesthetic clinic in Petaling Jaya (SS2): doctor-led skin & aesthetic consultations. See hours & doctors. Book free via WhatsApp.",
   },
   {
     slug: "kota-kemuning", name: "Kota Kemuning", city: "Shah Alam", state: "Selangor", region: "Selangor",
@@ -114,7 +114,7 @@ export const branches: Branch[] = [
     parking: "On-street parking by the shoplots.",
     serves: ["Kota Kemuning", "Shah Alam", "Bukit Rimau", "Alam Impian", "Bandar Saujana Putra"],
     seoTitle: "Aesthetic Clinic in Kota Kemuning, Shah Alam | Kaiteki",
-    seoDescription: "Kaiteki's aesthetic clinic in Kota Kemuning, Shah Alam — doctor-led skin & aesthetic consultations. See address & hours. Book free via WhatsApp.",
+    seoDescription: "Kaiteki's aesthetic clinic in Kota Kemuning, Shah Alam: doctor-led skin & aesthetic consultations. See address & hours. Book free via WhatsApp.",
   },
   {
     slug: "southkey-johor-bahru", name: "Southkey, Johor Bahru", city: "Johor Bahru", state: "Johor", region: "Johor",
@@ -128,7 +128,7 @@ export const branches: Branch[] = [
     parking: "Commercial-area parking beside Mid Valley Southkey.",
     serves: ["Johor Bahru", "Southkey", "Mount Austin", "Tebrau", "Taman Molek"],
     seoTitle: "Aesthetic Clinic in Southkey, Johor Bahru | Kaiteki",
-    seoDescription: "Kaiteki's aesthetic clinic at Southkey, Johor Bahru — doctor-led skin & aesthetic consultations. See hours & doctors. Book free on WhatsApp.",
+    seoDescription: "Kaiteki's aesthetic clinic at Southkey, Johor Bahru: doctor-led skin & aesthetic consultations. See hours & doctors. Book free on WhatsApp.",
   },
   {
     slug: "pelangi-johor-bahru", name: "Pelangi, Johor Bahru", city: "Johor Bahru", state: "Johor", region: "Johor",
@@ -144,7 +144,7 @@ export const branches: Branch[] = [
     parking: "On-street parking around the commercial blocks.",
     serves: ["Johor Bahru", "Taman Pelangi", "Century Garden", "Taman Sentosa", "Taman Abad"],
     seoTitle: "Aesthetic Clinic in Taman Pelangi, Johor Bahru | Kaiteki",
-    seoDescription: "Kaiteki's aesthetic clinic in Taman Pelangi, Johor Bahru — doctor-led skin & aesthetic consultations. See address & hours. Book free via WhatsApp.",
+    seoDescription: "Kaiteki's aesthetic clinic in Taman Pelangi, Johor Bahru: doctor-led skin & aesthetic consultations. See address & hours. Book free via WhatsApp.",
   },
   {
     slug: "kota-kinabalu", name: "Kota Kinabalu", city: "Kota Kinabalu", state: "Sabah", region: "Sabah",
@@ -160,7 +160,7 @@ export const branches: Branch[] = [
     parking: "Covered mall parking at Imago / KK Times Square.",
     serves: ["Kota Kinabalu", "Imago", "Sutera Harbour", "Likas", "Penampang"],
     seoTitle: "Aesthetic Clinic in Kota Kinabalu, Sabah | Kaiteki",
-    seoDescription: "Kaiteki's aesthetic clinic in Kota Kinabalu (Imago) — doctor-led skin & aesthetic consultations. See hours & doctors. Book free via WhatsApp.",
+    seoDescription: "Kaiteki's aesthetic clinic in Kota Kinabalu (Imago): doctor-led skin & aesthetic consultations. See hours & doctors. Book free via WhatsApp.",
   },
 ];
 

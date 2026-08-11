@@ -163,7 +163,7 @@ export const products: Product[] = [
     price: 550,
     priceNote: "or 3 for RM1,200",
     summary:
-      "An oral skin supplement with Pycnogenol, tomato extract and L-cysteine, using nano-technology for high absorption — taken as one tablet a day.",
+      "An oral skin supplement with Pycnogenol, tomato extract and L-cysteine, using nano-technology for high absorption, taken as one tablet a day.",
     ingredients: ["Pycnogenol", "Tomato extract", "L-cysteine"],
     bestFor: "Pigmentation, radiance & overall skin health",
     highlights: ["One tablet daily", "Nano-tech for absorption"],
@@ -178,7 +178,7 @@ export const products: Product[] = [
     category: "Oral Sun Protection",
     price: 200,
     summary:
-      "Oral capsules that support your skin's sun defence from within — designed to be used together with, not as a replacement for, a topical sunscreen.",
+      "Oral capsules that support your skin's sun defence from within, designed to be used together with, not as a replacement for, a topical sunscreen.",
     ingredients: ["Vitamin D", "Antioxidants"],
     bestFor: "Added daily UV & blue-light protection",
     highlights: [
@@ -211,7 +211,7 @@ export const products: Product[] = [
     category: "Sunscreen",
     price: 198,
     summary:
-      "A 3-in-1 shampoo, face and body wash with broad-spectrum SPF 30 — a clinically studied 'shower-on' sunscreen that cleanses and leaves a protective barrier in a single step.",
+      "A 3-in-1 shampoo, face and body wash with broad-spectrum SPF 30, a clinically studied 'shower-on' sunscreen that cleanses and leaves a protective barrier in a single step.",
     bestFor: "Body & scalp sun protection in the shower",
     highlights: [
       "SPF 30, broad-spectrum UVA/UVB",

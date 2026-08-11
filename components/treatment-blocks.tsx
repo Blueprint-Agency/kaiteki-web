@@ -246,7 +246,7 @@ export function VariantModule({ t, m }: { t: Treatment; m?: Treatment["variantMo
               {cover ? (
                 <Image
                   src={cover}
-                  alt={`${i.title} — aesthetic technology at Kaiteki Skin Aesthetic Clinic`}
+                  alt={`${i.title}: aesthetic technology at Kaiteki Skin Aesthetic Clinic`}
                   fill
                   loading="lazy"
                   sizes="(max-width: 640px) 100vw, 45vw"
