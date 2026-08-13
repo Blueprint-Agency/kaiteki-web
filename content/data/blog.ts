@@ -13,6 +13,57 @@ import type { Post, PostCategory } from "@/lib/types";
  */
 export const posts: Post[] = [
   {
+    slug: "ultherapy-vs-hifu-difference-which-suits-you",
+    title: "Ultherapy vs HIFU: what’s the difference and which suits you?",
+    seoTitle: "Ultherapy vs HIFU: What’s the Difference? | Kaiteki",
+    description:
+      "Ultherapy and HIFU both use focused ultrasound. How they differ in imaging and delivery, what each costs in Malaysia, and how to check the device is genuine.",
+    category: "Treatments Explained",
+    author: "dr-jamie-gan",
+    reviewedBy: "dr-chew-yuhhui",
+    publishedAt: "2026-08-13",
+    readingMinutes: 10,
+    leadAnswer:
+      "Both use focused ultrasound to reach the deeper support layer of the face without surgery, and Kaiteki offers both. The substantive difference is imaging: the Ultherapy platform lets the doctor view tissue layers on screen before delivering energy, while HIFU devices treat at depths set by the cartridge and clinical assessment.",
+    concerns: ["face-lifting", "aging"],
+    treatments: ["ultherapy", "hifu"],
+    technology: ["ultherapy-system", "ultracel-q", "lifthera"],
+    related: ["alma-titanium-lifting"],
+  },
+  {
+    slug: "how-to-reduce-facial-redness-causes-treatment",
+    title: "How to reduce facial redness: what causes it and what actually helps",
+    seoTitle: "How to Reduce Facial Redness: Causes & Treatment | Kaiteki",
+    description:
+      "What causes facial redness, which ingredients calm it, how ageing skin makes it worse, and when vascular laser or IPL is the right next step.",
+    category: "Skin Concerns",
+    author: "dr-jeremy-low",
+    publishedAt: "2026-08-13",
+    readingMinutes: 8,
+    leadAnswer:
+      "Facial redness comes from dilated blood vessels near the skin's surface or from inflammation that has damaged the skin barrier. Rosacea, sun damage and over-exfoliation are the usual causes. A gentle barrier-repair routine with daily SPF 50+ settles most cases; persistent vessels are addressed with vascular laser or IPL.",
+    concerns: ["vascular-lesions", "aging"],
+    treatments: ["vascular-pigment-laser"],
+    technology: ["pro-yellow", "dermav", "m22-ipl"],
+    related: ["melasma-treatment-malaysia-causes-skincare"],
+  },
+  {
+    slug: "melasma-treatment-malaysia-causes-skincare",
+    title: "Melasma treatment in Malaysia: causes, skincare and when to see a doctor",
+    seoTitle: "Melasma Treatment Malaysia: Causes & Skincare | Kaiteki",
+    description:
+      "What causes melasma in Malaysia's tropical climate, how to manage it with daily skincare and sun protection, and when professional treatment is the next step.",
+    category: "Skin Concerns",
+    author: "dr-joaan-kong",
+    publishedAt: "2026-08-13",
+    readingMinutes: 8,
+    leadAnswer:
+      "Melasma is a chronic pigmentation disorder causing symmetrical brown or grey patches on the face, driven by UV exposure, hormones and genetics. Daily broad-spectrum SPF 50+ is the foundation of every plan. Where that is not enough, doctors add topical brighteners, oral tranexamic acid or low-energy Pico Laser.",
+    concerns: ["pigmentation"],
+    treatments: ["pico-laser", "vascular-pigment-laser"],
+    related: ["how-to-reduce-facial-redness-causes-treatment", "discovery-pico-vs-picosure"],
+  },
+  {
     slug: "eczema-treatment-daily-skincare-to-clinic-care",
     title: "Eczema treatment: from daily skincare to in-clinic care",
     seoTitle: "Eczema Treatment: Daily Skincare to Clinic Care | Kaiteki",
