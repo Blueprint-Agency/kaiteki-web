@@ -19,6 +19,9 @@ export const posts: Post[] = [
     description:
       "Ultherapy and HIFU both use focused ultrasound. How they differ in imaging and delivery, what each costs in Malaysia, and how to check the device is genuine.",
     category: "Treatments Explained",
+    image: "/images/blog/ultherapy-vs-hifu-difference-which-suits-you.png",
+    imageAlt:
+      "A woman lying back as a clinician passes an ultrasound handpiece along her jawline, for a Kaiteki guide comparing Ultherapy and HIFU",
     author: "dr-jamie-gan",
     reviewedBy: "dr-chew-yuhhui",
     publishedAt: "2026-08-13",
@@ -37,6 +40,9 @@ export const posts: Post[] = [
     description:
       "What causes facial redness, which ingredients calm it, how ageing skin makes it worse, and when vascular laser or IPL is the right next step.",
     category: "Skin Concerns",
+    image: "/images/blog/how-to-reduce-facial-redness-causes-treatment.png",
+    imageAlt:
+      "Illustration of a woman with a flushed face wearing a soothing mask and hair towel, for a Kaiteki guide to facial redness",
     author: "dr-jeremy-low",
     publishedAt: "2026-08-13",
     readingMinutes: 8,
@@ -54,6 +60,9 @@ export const posts: Post[] = [
     description:
       "What causes melasma in Malaysia's tropical climate, how to manage it with daily skincare and sun protection, and when professional treatment is the next step.",
     category: "Skin Concerns",
+    image: "/images/blog/melasma-treatment-malaysia-causes-skincare.png",
+    imageAlt:
+      "Illustration of a woman touching her cheek where a melasma patch sits, for a Kaiteki guide to melasma treatment in Malaysia",
     author: "dr-joaan-kong",
     publishedAt: "2026-08-13",
     readingMinutes: 8,
