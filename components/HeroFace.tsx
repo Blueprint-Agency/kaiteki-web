@@ -104,7 +104,10 @@ export function HeroFace() {
         alt="A smiling woman with calm, healthy-looking skin, resting her hands beneath her chin"
         width={873}
         height={1091}
-        priority
+        // Not `priority` any more: this figure sits on hero slide 2, so the
+        // campaign banner on slide 1 is the LCP element and owns the preload.
+        // The slide is laid out (opacity-0, not display:none), so the browser
+        // still fetches this immediately — just at normal priority.
         sizes="(min-width: 1024px) 560px, (min-width: 640px) 460px, 92vw"
         className="hero-figure-img relative z-10 h-auto w-full"
       />
