@@ -6,6 +6,7 @@ import { Container } from "@/components/Container";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Ledger, ReviewByline } from "@/components/Ledger";
 import { Disclaimer } from "@/components/Disclaimer";
+import { Faq } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { ArrowRight } from "@/components/icons";
@@ -158,6 +159,17 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           </div>
 
           <div className="mt-12 space-y-6">
+            {post.faqs && post.faqs.length > 0 && (
+              <section className="rounded-2xl border border-hairline bg-surface p-6 sm:p-8">
+                <h2 className="font-display text-xl font-medium text-espresso">
+                  Common questions
+                </h2>
+                <div className="mt-4">
+                  <Faq items={post.faqs} />
+                </div>
+              </section>
+            )}
+
             <section className="rounded-2xl border border-hairline bg-tint p-6 sm:p-8">
               <h2 className="font-display text-xl font-medium text-espresso">
                 Book a free consultation

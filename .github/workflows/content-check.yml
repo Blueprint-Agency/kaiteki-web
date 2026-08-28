@@ -1,0 +1,26 @@
+name: Content check
+
+# Gate for content PRs (new /blog posts especially): the blog publishing
+# contract, the types and lint. Deploy workflows only run on main, so this is
+# what tells an author whether their post is safe to merge.
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm check:blog
+      - run: pnpm typecheck
+      - run: pnpm lint
+      # main is the deploy branch, so a body that only breaks at render time
+      # must fail here rather than on merge.
+      - run: pnpm build

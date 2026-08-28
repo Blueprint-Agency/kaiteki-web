@@ -25,7 +25,7 @@ This is a **YMYL / medical** site: health-content accuracy, E-E-A-T, and **Malay
 1. **Stack:** Next.js (App Router) + TypeScript. (Details finalized in `docs/07`.)
 2. **Languages:** **English first**, but architecture must be **i18n-ready** (Chinese `/cn`→`/zh` planned later). Don't hard-code English assumptions into routing/data.
 3. **Blog:** migrate posts onto the main domain at **`kaiteki.my/blog`** (consolidates authority off the subdomain). Stored **in-repo as MDX**.
-   *Shipped:* bodies in `content/blog/<slug>.mdx`, typed metadata in `content/data/blog.ts`, routes at `/blog`, `/blog/[slug]`, `/blog/category/[slug]`. MDX is wired via `@next/mdx` + remark-gfm + rehype-slug (`next.config.ts`), styled in `mdx-components.tsx`.
+   *Shipped:* bodies in `content/blog/<slug>.mdx`, typed metadata in `content/data/blog.ts`, routes at `/blog`, `/blog/[slug]`, `/blog/category/[slug]`. MDX is wired via `@next/mdx` + remark-gfm + rehype-slug (`next.config.ts`), styled in `mdx-components.tsx`. **Authoring a post: `content/blog/AUTHORING.md` is the contract; `pnpm check:blog` enforces it.**
 4. **Content management:** **none — pure code.** Content lives in the repo (MDX + typed data files). No headless CMS for now.
 5. **Conversion:** **WhatsApp-only** (pre-filled deep-links, click-to-WhatsApp / click-to-call). No online booking engine.
 
