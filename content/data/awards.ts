@@ -66,3 +66,24 @@ export const awards: Award[] = [
     alt: "Allergan Aesthetics Facial Aesthetics Appreciation award presented to Kaiteki, 2024.",
   },
 ];
+
+// The rest of the record — same class of partner award as `awards` above, but
+// with no plaque photography yet, so they're listed rather than hung on the
+// wall. Client-supplied; re-confirm each before this ships live.
+export const furtherAwards: { title: string; year: string }[] = [
+  { title: "SkinHealth Platinum Partner Award", year: "2026" },
+  { title: "Rejuran Platinum Partner Award", year: "2026" },
+  { title: "Top 10 Merz Portfolio", year: "2025" },
+  { title: "Top 10 Authentic Ultherapy Transducer Sales", year: "2025" },
+  { title: "Top 10 Authentic Belotero Treatment Provider", year: "2025" },
+  { title: "Top 10 Authentic Belotero Revive Treatment Provider", year: "2025" },
+  { title: "Top 10 Authentic Radiesse Treatment Provider", year: "2025" },
+  { title: "Allergan Aesthetics: Facial Aesthetics Gold Award", year: "2025" },
+  { title: "Sinclair APAC Top 50 Clinics", year: "2025" },
+  { title: "Rejuran Top Selling Clinic", year: "2025" },
+  { title: "Plinest Top Achiever", year: "2025" },
+  { title: "NCTF Top Achiever", year: "2025" },
+  { title: "Density Alpha Award", year: "2025" },
+  { title: "Top 10 Juvelook User", year: "2024" },
+  { title: "Profhilo Platinum Award", year: "2024" },
+];
