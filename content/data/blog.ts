@@ -92,7 +92,7 @@ export const posts: Post[] = [
   {
     slug: "excessive-sweating-hyperhidrosis-causes-treatment",
     title: "Excessive sweating (hyperhidrosis): causes and how it’s treated",
-    seoTitle: "Excessive Sweating (Hyperhidrosis): Causes & Treatment | Kaiteki",
+    seoTitle: "Excessive Sweating (Hyperhidrosis): Causes & Care | Kaiteki",
     description:
       "Struggling with excessive sweating? What causes hyperhidrosis, how it is diagnosed, and the options from antiperspirants to botulinum toxin.",
     category: "Skin Concerns",
@@ -128,7 +128,7 @@ export const posts: Post[] = [
   {
     slug: "alma-titanium-lifting",
     title: "Alma Titanium Lifting: is this non-surgical facelift worth it?",
-    seoTitle: "Alma Titanium Lifting: Non-Surgical Facelift Explained | Kaiteki",
+    seoTitle: "Alma Titanium Lifting: Non-Surgical Lifting | Kaiteki",
     description:
       "How Alma Titanium Lifting works, the areas it treats, who it suits and how many sessions a course usually takes, explained by a Kaiteki doctor.",
     category: "Treatments Explained",
@@ -167,7 +167,7 @@ export const posts: Post[] = [
   {
     slug: "wegovy-vs-mounjaro",
     title: "Wegovy vs Mounjaro: which is better for you?",
-    seoTitle: "Wegovy vs Mounjaro: What the Head-to-Head Trial Shows | Kaiteki",
+    seoTitle: "Wegovy vs Mounjaro: What the Trial Shows | Kaiteki",
     description:
       "Wegovy and Mounjaro compared on how they work, the SURMOUNT-5 head-to-head data, side effects, switching, and availability in Malaysia.",
     category: "Weight & Wellness",

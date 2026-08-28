@@ -9,7 +9,10 @@ import type { Branch, Doctor } from "@/lib/types";
 export const orgId = `${site.url}/#organization`;
 export const websiteId = `${site.url}/#website`;
 
-const abs = (path: string) => `${site.url}${path === "/" ? "" : path}`;
+// Root-relative path → absolute URL. Media already on an absolute host
+// (media.kaiteki.my, the R2 bucket) passes through untouched.
+const abs = (path: string) =>
+  path.startsWith("https://") ? path : `${site.url}${path === "/" ? "" : path}`;
 
 /** Site-wide brand entity — Organization typed MedicalBusiness (docs/02 §3). */
 export function organizationNode() {
@@ -60,7 +63,7 @@ export function medicalClinicNode(b: Branch) {
     "@type": "MedicalClinic",
     "@id": `${site.url}/locations/${b.slug}#clinic`,
     name: `Kaiteki ${b.name}`,
-    image: `${site.url}${b.photo}`,
+    image: abs(b.photo),
     url: `${site.url}/locations/${b.slug}`,
     telephone: b.phone,
     hasMap: b.mapUrl,
@@ -103,7 +106,7 @@ export function physicianNode(d: Doctor, branchNames: string[]) {
     additionalType: "https://schema.org/Physician",
     "@id": `${site.url}/doctors/${d.slug}#person`,
     name: d.fullName,
-    image: `${site.url}${d.photo}`,
+    image: abs(d.photo),
     url: `${site.url}/doctors/${d.slug}`,
     jobTitle: role,
     ...(suffix ? { honorificSuffix: suffix } : {}),
@@ -129,7 +132,7 @@ export function profilePageGraph(d: Doctor, branchNames: string[]) {
         inLanguage: "en-MY",
         isPartOf: { "@id": websiteId },
         mainEntity: { "@id": `${url}#person` },
-        primaryImageOfPage: `${site.url}${d.photo}`,
+        primaryImageOfPage: abs(d.photo),
       },
       physicianNode(d, branchNames),
     ],
@@ -198,7 +201,7 @@ export function collectionPageNode({
                   "@type": it.type,
                   name: it.name,
                   url: abs(it.path),
-                  ...(it.image ? { image: `${site.url}${it.image}` } : {}),
+                  ...(it.image ? { image: abs(it.image) } : {}),
                 },
               }
             : { url: abs(it.path) }),
@@ -232,7 +235,7 @@ export function webPageNode({
     inLanguage: "en-MY",
     isPartOf: { "@id": websiteId },
     about: { "@id": orgId },
-    ...(image ? { primaryImageOfPage: `${site.url}${image}` } : {}),
+    ...(image ? { primaryImageOfPage: abs(image) } : {}),
   };
 }
 
@@ -247,7 +250,7 @@ function personNode(d: { fullName: string; slug: string; credentials?: string; m
     name: d.fullName,
     url: `${site.url}/doctors/${d.slug}`,
     ...(suffix ? { honorificSuffix: suffix } : {}),
-    ...(d.photo ? { image: `${site.url}${d.photo}` } : {}),
+    ...(d.photo ? { image: abs(d.photo) } : {}),
     worksFor: { "@id": orgId },
   };
 }
@@ -298,7 +301,7 @@ export function blogPostingGraph({
     headline,
     description,
     ...(image
-      ? { image: `${site.url}${image}`, primaryImageOfPage: `${site.url}${image}` }
+      ? { image: abs(image), primaryImageOfPage: abs(image) }
       : {}),
     articleSection: section,
     inLanguage: "en-MY",
@@ -337,7 +340,7 @@ export function blogNode({
       "@id": `${abs(it.path)}#article`,
       headline: it.name,
       url: abs(it.path),
-      ...(it.image ? { image: `${site.url}${it.image}` } : {}),
+      ...(it.image ? { image: abs(it.image) } : {}),
       datePublished: it.datePublished,
     })),
   };
@@ -407,7 +410,7 @@ export function medicalWebPageNode({
         }
       : {}),
     ...(lastReviewed ? { lastReviewed, dateModified: lastReviewed } : {}),
-    ...(image ? { primaryImageOfPage: `${site.url}${image}` } : {}),
+    ...(image ? { primaryImageOfPage: abs(image) } : {}),
     ...(reviewer
       ? {
           reviewedBy: {

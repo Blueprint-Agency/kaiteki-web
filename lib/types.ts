@@ -486,6 +486,9 @@ export interface Post {
   related?: string[];
   /** Surfaced first on the hub. At most one post should carry this. */
   featured?: boolean;
+  /** End-of-article Q and A, rendered with the shared accordion. Visible only:
+   *  we never emit FAQPage JSON-LD (see lib/schema.ts). */
+  faqs?: Faq[];
   /** Legacy blog.kaiteki.my path this post replaces, e.g. "/discovery-pico-vs-picosure/".
    *  Collected here so the subdomain-level 301 map can be generated from the data. */
   legacyPath?: string;

@@ -16,7 +16,7 @@
     "validate:refs": "node --experimental-strip-types scripts/validate-content.mts",
     "validate:concerns": "node --experimental-strip-types scripts/validate-concerns.mts",
     "test:redirects": "node --experimental-strip-types scripts/test-redirects.mts",
-    "check:blog-style": "node scripts/check-blog-style.mjs",
+    "check:blog": "node --experimental-strip-types scripts/check-blog.mts",
     "blog:manifest": "node scripts/blog-import.mjs --manifest",
     "blog:import": "node scripts/blog-import.mjs",
     "blog:redirects": "node scripts/blog-redirects.mjs"
