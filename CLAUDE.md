@@ -33,19 +33,8 @@ This is a **YMYL / medical** site: health-content accuracy, E-E-A-T, and **Malay
 
 ## Repo layout
 
-```
-/                         # Next.js 16.2 app root — App Router (scaffolded)
-├─ app/                   # routes (App Router)
-├─ public/                # static assets
-├─ next.config.ts · tsconfig.json · package.json · postcss.config.mjs  # config
-├─ CLAUDE.md              # this file
-├─ docs/                  # research, audit, specs, proposals (see docs/README.md)
-├─ PRODUCT.md · DESIGN.md # Impeccable brand/design context (register, palette, "Warm Sanctuary")
-└─ well-known/            # ⚠️ LEGACY site (git-ignored) — read-only reference only (excluded in tsconfig)
-   └─ kaitekim_blog2.sql.gz  # ⚠️ legacy blog WordPress SQL dump — source for the /blog MDX migration
-```
-
-- **`well-known/` is the OLD site, git-ignored on purpose** (~750 MB, ~20k files incl. a WordPress backup). Treat it as **read-only reference**. Never edit it; never assume it's the new app. To track it, remove the relevant lines in `.gitignore`.
+- `docs/` — research, audit, specs, proposals (see `docs/README.md`). `PRODUCT.md` · `DESIGN.md` — Impeccable brand/design context (register, palette, "Warm Sanctuary").
+- **`well-known/` is the OLD site, git-ignored on purpose** (~750 MB, ~20k files incl. a WordPress backup, plus `kaitekim_blog2.sql.gz` — the legacy WordPress dump that sources the `/blog` MDX migration). Treat it as **read-only reference**. Never edit it; never assume it's the new app. To track it, remove the relevant lines in `.gitignore`.
 - All new application code goes at the repo root, not inside `well-known/`.
 
 ## Documentation map
@@ -70,7 +59,7 @@ See **`docs/README.md`** for the full index. Phase status:
 
 ## Commands
 
-Stack: **Next.js 16.2.10 · React 19.2 · TypeScript 5 (strict) · Tailwind v4 · ESLint 9**, package manager **pnpm**. Node ≥20.9 (dev machine on 23.11; target Node 24 LTS for the prod Docker image per `docs/07`).
+Package manager is **pnpm**. Node ≥20.9 (dev machine on 23.11; target Node 24 LTS for the prod Docker image per `docs/07`).
 
 ```bash
 pnpm install     # install deps
