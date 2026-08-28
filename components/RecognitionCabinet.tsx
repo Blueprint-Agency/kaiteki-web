@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "./Container";
 import { ArrowRight } from "./icons";
-import { awards } from "@/content/data/awards";
+import { awards, furtherAwards } from "@/content/data/awards";
 
 // Stagger index for the scroll reveal (typed CSS custom property).
 const si = (i: number): CSSProperties => ({ "--i": Math.min(i, 8) } as CSSProperties);
@@ -33,16 +33,18 @@ export function RecognitionCabinet() {
           <div className="lg:sticky lg:top-28">
             <h2 className="h-section">Recognised by the brands behind your care</h2>
             <p className="mt-4 max-w-md text-lg leading-relaxed text-ink-700">
-              These awards are issued by the device and product manufacturers for
-              clinical volume and standards. They reflect our standing with the
-              brands, not a guarantee of individual results.
+              The manufacturers behind our devices and injectables audit the
+              clinics that use them — on training, on volume, and on sourcing
+              every product through authorised supply. These are the awards that
+              audit produces: a record of how we practise, kept here in full.
             </p>
 
             {/* The clinical ledger — the signature trust element (docs/06 §4.6) */}
             <dl className="mt-9 max-w-md border-t border-hairline">
               {[
                 ["Partners", PARTNERS],
-                ["On record", `${awards.length} partner awards`],
+                ["On record", `${awards.length + furtherAwards.length} partner awards`],
+                ["Years", "2023 — 2026"],
               ].map(([label, value]) => (
                 <div
                   key={label}
@@ -61,7 +63,7 @@ export function RecognitionCabinet() {
               className="group mt-7 inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors hover:text-espresso"
             >
               <span className="border-b border-mocha/40 pb-0.5 transition-colors group-hover:border-espresso">
-                See the full recognition record
+                Meet the doctors who earned them
               </span>
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
             </Link>
@@ -101,6 +103,25 @@ export function RecognitionCabinet() {
                     )}
                   </figcaption>
                 </figure>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* The rest of the record — same awards, no plaque photography yet.
+            Rows echo the "In the press" ledger: name left, year right. */}
+        <div className="reveal mt-16 border-t border-hairline pt-10 sm:mt-20">
+          <h3 className="text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-accent">
+            Also on record
+          </h3>
+          <ul className="mt-5 grid sm:grid-cols-2 sm:gap-x-14">
+            {furtherAwards.map((a) => (
+              <li
+                key={a.title}
+                className="flex items-baseline justify-between gap-6 border-b border-hairline py-3"
+              >
+                <span className="text-[0.95rem] leading-snug text-ink-700">{a.title}</span>
+                <span className="ledger shrink-0 !text-ink-500">{a.year}</span>
               </li>
             ))}
           </ul>
