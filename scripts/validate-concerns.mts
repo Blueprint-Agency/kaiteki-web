@@ -19,6 +19,8 @@
 //   Q-18  a concern declaring results has the shared disclaimer rendered
 //   Q-19  figures are authored one per cause — they pair by position, so a
 //         mismatch re-captions or drops photographs without saying so
+//   Q-20  every concern is named in the sign-off ledger — unsigned pages are
+//         warned by name, and every ledger entry resolves to a real doctor
 //
 // Run: pnpm validate:concerns   (exits non-zero on any failure)
 import { readFileSync, readdirSync } from "node:fs";
@@ -28,6 +30,7 @@ import { doctorBySlug } from "../content/data/doctors.ts";
 import registry from "../config/concerns.json" with { type: "json" };
 import manifest from "../config/concern-media.json" with { type: "json" };
 import { concernToc } from "../lib/concern-toc.ts";
+import { concernSignoff, concernSignoffs } from "../lib/signoff.ts";
 import type { Concern } from "../lib/types.ts";
 
 const errors: string[] = [];
@@ -201,17 +204,30 @@ if (concerns.some((c) => c.results?.length)) {
     .flatMap((dir) =>
       readdirSync(join(root, dir), { recursive: true, encoding: "utf8" }).map((f) => `${dir}/${f}`),
     )
-    // proto/ is the throwaway prototype (removed in issue 06) — a mention there
-    // is not the shipped page rendering it.
+    // proto-tx/ is the throwaway treatments prototype — a mention there is not
+    // the shipped page rendering it. (The concern prototype is gone: issue 06.)
     .filter(
       (f) =>
         f.endsWith(".tsx") &&
         f !== "components/Disclaimer.tsx" &&
-        !f.startsWith("components/proto/"),
+        !f.startsWith("components/proto-tx/"),
     );
   if (!renderers.some((f) => /<ResultsDisclaimer\b/.test(readFileSync(join(root, f), "utf8")))) {
     fail("all", "Q-18", "concerns declare results but no renderer renders <ResultsDisclaimer /> (ADR-0001 §2)");
   }
+}
+
+// Q-20 — medical sign-off. An unsigned concern is not a failure (the pages are
+// authored before they are reviewed), but it must be impossible to miss: it is
+// listed here by name, and the page itself says "Awaiting medical review".
+const unsigned = concerns.filter((c) => !concernSignoff(c.slug));
+for (const c of unsigned) {
+  warnings.push(`${c.slug} · Q-20: unsigned — no doctor has reviewed this page (config/concern-signoff.json)`);
+}
+for (const [slug, s] of Object.entries(concernSignoffs)) {
+  if (!concerns.some((c) => c.slug === slug)) fail(slug, "Q-20", "sign-off for a concern that does not exist");
+  else if (!doctorBySlug(s.doctor)) fail(slug, "Q-20", `signed off by unknown doctor '${s.doctor}'`);
+  else if (Number.isNaN(Date.parse(s.date))) fail(slug, "Q-20", `unparseable sign-off date '${s.date}'`);
 }
 
 for (const w of warnings) console.warn(`  warn  ${w}`);

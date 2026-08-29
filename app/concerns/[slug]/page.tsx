@@ -5,14 +5,8 @@ import { JsonLd } from "@/components/JsonLd";
 import { ConcernView } from "@/components/ConcernView";
 import { concerns, concernBySlug } from "@/content/data/concerns";
 import { treatmentsOfConcern } from "@/content/data/relations";
-import { doctorBySlug } from "@/content/data/doctors";
 import { medicalWebPageNode } from "@/lib/schema";
-// PROTOTYPE — throwaway, remove with components/proto/.
-import { Suspense } from "react";
-import { VariantA } from "@/components/proto/VariantA";
-import { VariantB } from "@/components/proto/VariantB";
-import { VariantC } from "@/components/proto/VariantC";
-import { PrototypeSwitcher } from "@/components/proto/PrototypeSwitcher";
+import { concernReviewer } from "@/lib/signoff";
 
 export const dynamicParams = false;
 
@@ -38,21 +32,18 @@ export async function generateMetadata({
 
 export default async function ConcernPage({
   params,
-  searchParams,
 }: {
   params: Promise<{ slug: string }>;
-  // PROTOTYPE — remove with components/proto/. `?variant=A|B|C` swaps the
-  // rendering only; data fetching, metadata and schema below are untouched.
-  searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const { slug } = await params;
   const c = concernBySlug(slug);
   if (!c) notFound();
 
-  const variant = (await searchParams).variant;
-  const v = typeof variant === "string" ? variant.toUpperCase() : null;
-
-  const doctor = doctorBySlug(c.reviewedBy);
+  // Only a signed-off page may assert a reviewer or a review date in schema.
+  // `c.reviewedBy` is an intended reviewer, not a claim that the doctor read
+  // the page — the claim lives in config/concern-signoff.json. `dateModified`
+  // is a different fact (when the copy last changed) and is emitted either way.
+  const review = concernReviewer(c.slug);
 
   return (
     <>
@@ -66,20 +57,19 @@ export default async function ConcernPage({
             name: c.name,
             possibleTreatment: treatmentsOfConcern(c.slug).map((t) => t.name),
           },
-          lastReviewed: c.lastReviewed,
+          lastReviewed: review?.date,
+          dateModified: c.lastReviewed,
           image: c.image,
-          reviewer: doctor
-            ? { name: doctor.fullName, slug: doctor.slug, credentials: doctor.credentials }
+          reviewer: review
+            ? {
+                name: review.doctor.fullName,
+                slug: review.doctor.slug,
+                credentials: review.doctor.credentials,
+              }
             : undefined,
         })}
       />
-      {/* PROTOTYPE — delete this block and the import to restore the real page. */}
-      {v === "A" ? <VariantA c={c} /> : v === "B" ? <VariantB c={c} /> : v === "C" ? <VariantC c={c} /> : <ConcernView c={c} />}
-      {v && (
-        <Suspense fallback={null}>
-          <PrototypeSwitcher current={v} />
-        </Suspense>
-      )}
+      <ConcernView c={c} />
     </>
   );
 }

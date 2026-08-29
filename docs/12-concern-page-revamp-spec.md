@@ -321,6 +321,18 @@ path" (stepper, media-dominant, one step mounted at a time). A won. The prototyp
 losing variants belong on a throwaway branch, not in main; the switcher, the variant
 components and the staged prototype media must all be removed as part of this work.
 
+*Done (issue 06).* All three variants, the `?variant=` switcher and the 6.4 MB of staged
+imagery in `public/proto/acne/` are preserved on the local branch
+**`prototype/concern-layout-variants`** (tip `a870f1d`); main carries the editorial banner
+only. Throwaway by design — it is never merged, and it is the only place the losing
+layouts still exist.
+
+**Medical sign-off is tracked in `config/concern-signoff.json`.** `reviewedBy` in the
+concern data is an intended reviewer, not a review. A concern appears in the ledger only
+once a named doctor has actually read the page; until then the page renders "Awaiting
+medical review" in place of the byline, emits no `reviewedBy`/`lastReviewed` in schema, and
+is warned by name in `pnpm validate:concerns` (Q-20). All fourteen are currently unsigned.
+
 **Asset-ownership flag.** One results file carries a third-party watermark from a doctor's
 personal account rather than Kaiteki branding. Ownership is unconfirmed. This is separate
 from the advertising-compliance question and is recorded in `docs/11` §3.1.
