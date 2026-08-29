@@ -299,6 +299,36 @@ export interface Concern {
   /** C-17 related concerns, each with a one-line reason for the relationship. */
   relatedConcerns?: { slug: string; reason: string }[];
 
+  // ── Concern media (spec docs/12 "Data contract"). Optional like every other
+  // block: omitting a field turns its section off, no code branch. Every `src`
+  // must sit on the concerns CDN prefix and resolve to an entry in
+  // config/concern-media.json — enforced by validate-concerns.mts Q-14…Q-18.
+
+  /** C-01 responsive banner pair. The subject sits left in every source asset;
+   *  the hero sets object-position:left and puts the H1 in the right half. */
+  banner?: { src: string; sm: string; alt: string };
+  /** 2:1 photo, subject left. The caption carries the meaning, so alt is "". */
+  figures?: { src: string; caption: string }[];
+  /** 2:1 designed infographic — headline and body already in the artwork. No
+   *  caption (it would double-label); alt transcribes the burned-in text. */
+  slides?: { src: string; alt: string }[];
+  /** 1:1 transparent PNG, scalloped die-cut. Page ground only, never a tint
+   *  band. `group` splits sets on one page (active types vs scar types). */
+  illustrations?: { src: string; label: string; sub: string; group?: string }[];
+  /** Pre-composited before+after in one file — NOT a two-panel comparator.
+   *  `nativeWidth` caps the cell: 74 of 111 sources are under 700px wide
+   *  (docs/11 §1.2) and blowing one up misrepresents it (ADR-0001 §5).
+   *  Declaring results obliges the page to render RESULTS_DISCLAIMER. */
+  results?: {
+    src: string;
+    caption: string;
+    nativeWidth: number;
+    ratio: "1/1" | "5/4" | "1.71/1";
+  }[];
+  /** Treatment-in-progress photography for the first-visit block. Deliberately
+   *  separate from `results` so a device photo is never shown as an outcome. */
+  visitImages?: { src: string; caption: string }[];
+
   reviewedBy: string;
   lastReviewed: string;
   /** SEO-optimized <title>, 50–60 chars, brand baked in (docs/10). */

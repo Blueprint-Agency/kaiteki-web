@@ -38,16 +38,17 @@ the compliance posture.
 1. **Labelled.** Each image carries a caption naming what was treated and the course
    (`"Acne scarring · 6 sessions"`). No claim of a typical, expected, or guaranteed result.
 2. **Disclaimed.** Any concern page rendering results also renders the shared disclaimer
-   that individual results vary and are not guaranteed. To be enforced in code rather than
-   by author discipline — `validate-concerns.mts` Q-18, **not yet written** (issue 02 of the
-   concern-page revamp). Until it lands this is an author obligation.
+   that individual results vary and are not guaranteed. Enforced in code rather than by
+   author discipline: the string lives only inside `<ResultsDisclaimer />`
+   (`components/Disclaimer.tsx`), and `validate-concerns.mts` Q-18 fails the build if any
+   concern declares `results` while no concern renderer renders that component.
 3. **Not marked up.** Results images are never expressed as `Review`, `AggregateRating`, or
    any schema that reads as a testimonial or an efficacy claim.
 4. **Unidentifiable.** Cropped to the treated area; no identifying features, no names.
 5. **Not upscaled.** 74 of 111 sources are under 700px wide (`docs/11` §1.2). A soft,
    stretched clinical photo misrepresents the result as much as a retouched one does. The
-   manifest records every source's pixel dimensions so `validate-concerns.mts` Q-16 can
-   check authored widths against them; that check is **not yet written** (issue 02).
+   manifest records every source's pixel dimensions, and `validate-concerns.mts` Q-16
+   fails any results entry whose declared `nativeWidth` disagrees with the source.
 6. **No retouching** beyond consistent crop and colour handling across the pair.
 
 ## 4. The delivery divergence this also records
