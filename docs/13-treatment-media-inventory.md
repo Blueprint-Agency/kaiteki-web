@@ -53,36 +53,62 @@ which is precisely what an in-body figure needs.
 
 ## 3. Coverage matrix — 19 treatments
 
-Technology media rolled up through the authored `technology.treatments[]` edge.
-`hero` = already shipping. `figure` = `treatments-*` / `info_*`. `device` = `machine_*`.
-`logo` = `logob_*`. `product` = `product_*`. `area` = `img_onda_*`.
+Counted as **net-new media only**. Device and product shots are excluded from the totals
+because §2 established they are already composited into the shipping `/images/technology`
+images — re-counting them would inflate every row with media the site already renders.
+A logo counts only where the `logob_*` file is **not** already in `public/images/tech`.
+`figure` excludes the two files that *are* the shipping hero.
 
-| Treatment | hero | banner | figure | device | logo | product | area | verdict |
-|---|:--:|--:|--:|--:|--:|--:|--:|---|
-| `microwave-contouring` | ✓ | **2** | 1 | 1 | 1 | 0 | **15** | ★ richest by far |
-| `skin-booster` | ✓ | 0 | 3 | 1 | 3 | 5 | 0 | ok |
-| `pico-laser` | ✓ | **3** | 2 | 3 | 2 | 0 | 0 | ok |
-| `bio-stimulator` | ✓ | 0 | 1 | 0 | 3 | 4 | 0 | ok |
-| `dermal-fillers` | ✓ | 0 | 1 | 1 | 2 | 5 | 0 | ok |
-| `radiofrequency` | ✓ | 0 | 1 | 3 | 3 | 0 | 0 | ok |
-| `vascular-pigment-laser` | ✓ | 0 | 1 | 3 | 2 | 0 | 0 | ok |
-| `fat-freezing` | ✓ | 0 | 2 | 2 | 1 | 0 | 0 | ok |
-| `microneedling` | ✓ | 0 | 2 (1 dup) | 2 | 2 | 0 | 0 | ok |
-| `fotona-4d` | ✓ | 0 | 3 | 1 | 1 | 0 | 0 | ok |
-| `laser-hair-removal` | ✓ | 0 | **0** | 2 | 2 | 0 | 0 | thin |
-| `facial-treatments` | ✓ | 0 | 1 | 1 | 2 | 0 | 0 | thin |
-| `muscle-stimulation` | ✓ | 0 | 1 | 1 | 1 | 0 | 0 | thin |
-| `resurfacing-laser` | ✓ | 0 | 1 | 1 | 0 | 0 | 0 | thin |
-| `hifu` | ✓ | 0 | 1 | 2 | 0 | 0 | 0 | thin |
-| `botulinum-toxin` | ✓ | 0 | 1 | 1 | 0 | 0 | 0 | thin |
-| `double-eyelid` | ✓ | 0 | 1 (dup) | 0 | 0 | 0 | 0 | ⚠️ 5 × 156px step icons only |
-| `exosome-therapy` | ✓ | **2** | 1 | 0 | 0 | 0 | 0 | ⚠️ no device/logo |
-| `ultherapy` | ✓ | 0 | **0** | **0** | 1 | 0 | 0 | ❌ **bare** — logo + `img_WhatCanUltherapyTreat` only |
+**Explainer** = `figure` + `area` + `steps` — the in-body media that gives a page something
+to show mid-scroll. This is the same test `docs/11` §4 applied to concerns, where
+`enlarged-pores` was excluded despite holding 13 assets because none of them explained
+anything.
 
-**No treatment is without a hero.** One (`ultherapy`) has nothing usable beyond it; two
-(`double-eyelid`, `exosome-therapy`) are close behind.
+| Treatment | banner | figure | area | steps | logo (new) | **explainer** | verdict |
+|---|--:|--:|--:|--:|--:|--:|---|
+| `microwave-contouring` | 2 | 1 | **15** | 0 | 0 | **16** | ✅ **GO** |
+| `skin-booster` | 0 | **5** | 0 | 0 | 1 | **5** | ✅ GO |
+| `double-eyelid` | 0 | 0 | 0 | **5** | 0 | **5** | ✅ GO |
+| `pico-laser` | **3** | 4 | 0 | 0 | 0 | **4** | ✅ GO |
+| `radiofrequency` | 0 | 3 | 0 | 0 | 1 | **3** | ✅ GO |
+| `fotona-4d` | 0 | 3 | 0 | 0 | 0 | **3** | ✅ GO |
+| `fat-freezing` | 0 | 2 | 0 | 0 | 0 | **2** | ✅ GO |
+| `resurfacing-laser` | 0 | 2 | 0 | 0 | 0 | **2** | ✅ GO |
+| `bio-stimulator` | 0 | 1 | 0 | 0 | 2 | 1 | ⚠️ GO (thin) |
+| `dermal-fillers` | 0 | 1 | 0 | 0 | 2 | 1 | ⚠️ GO (thin) |
+| `facial-treatments` | 0 | 1 | 0 | 0 | 2 | 1 | ⚠️ GO (thin) |
+| `microneedling` | 0 | 1 | 0 | 0 | 1 | 1 | ⚠️ GO (thin) |
+| `muscle-stimulation` | 0 | 1 | 0 | 0 | 1 | 1 | ⚠️ GO (thin) |
+| `vascular-pigment-laser` | 0 | 1 | 0 | 0 | 1 | 1 | ⚠️ GO (thin) |
+| `botulinum-toxin` | 0 | 1 | 0 | 0 | 0 | 1 | ⛔ **HOLD** |
+| `exosome-therapy` | **2** | 1 | 0 | 0 | 0 | 1 | ⛔ HOLD |
+| `hifu` | 0 | 1 | 0 | 0 | 0 | 1 | ⛔ HOLD |
+| `ultherapy` | 0 | 1 | 0 | 0 | 0 | 1 | ⛔ HOLD |
+| `laser-hair-removal` | 0 | **0** | 0 | 0 | 1 | **0** | ❌ **EXCLUDE** |
 
-### 3.1 There is no before/after media here
+**14 GO · 4 HOLD · 1 EXCLUDE.** Split of the GO tier: **8 substantive** (2+ explainers) and
+**6 thin** (1 explainer, carried by unused manufacturer logos).
+
+**No treatment is without a hero** — unlike concerns, nothing here is bare at the top. The
+gap is entirely below the fold.
+
+### 3.1 Why the four HOLDs are held, not excluded
+
+Each has exactly **one** net-new photograph and nothing else — no second figure, no zone
+art, no unused logo. A revamped page built on that is a text page with one picture in it:
+the same layout cost as `microwave-contouring` for a twentieth of the payoff.
+
+They are **HOLD, not EXCLUDE**, because one asset is not zero — the concern precedent for
+exclusion was *no* explainer media at all. They ship on the current layout, unchanged, and
+re-enter the revamp the moment either a second figure or a device photo is commissioned.
+`ultherapy` is the weakest: its one figure is `img_WhatCanUltherapyTreat.jpg`, an explainer
+graphic rather than treatment photography, and it has no device shot at all despite
+`ultherapy-system` being a `/technology` entry.
+
+`laser-hair-removal` is the single **EXCLUDE**: zero net-new photography of any kind. Its
+only unused asset is one manufacturer logo.
+
+### 3.3 There is no before/after media here
 
 Folder `4. before after` is keyed by **concern**, not treatment. Neither source folder in
 this audit contains a results image. **The MAB/PDPA compliance decision recorded in
@@ -170,20 +196,35 @@ treatments. Whether it's a service Kaiteki still offers is a client question.
 
 ---
 
-## 9. Recommendation
+## 9. Revamp decision — 14 in, 5 out
 
-The treatment pages do **not** need the concern revamp's media-wiring work — they are not
-starving. Three targeted moves cover almost all the value:
+Mirrors `docs/11` §4. The exclusion rule is the same one the concern revamp used: a page
+with no explainer media gets **no media fields and no placeholder component** — blocks
+return null and it renders as clean text on the layout it already has.
 
-1. Wire `img_onda_*` into a zone gallery on `microwave-contouring`. Self-contained, one page,
-   the media is already the right shape.
-2. Author `manufacturerImages` from the 23 `logob_*` logos. The field, the component and the
-   assets all already exist; only the data is missing.
-3. Add `treatments-*` as an in-body figure where a treatment has a hero and nothing else.
+| Tier | n | Treatments | What they get |
+|---|--:|---|---|
+| **GO — substantive** | 8 | `microwave-contouring`, `skin-booster`, `double-eyelid`, `pico-laser`, `radiofrequency`, `fotona-4d`, `fat-freezing`, `resurfacing-laser` | Full media wiring: figures, and the zone gallery / step sequence where they apply |
+| **GO — thin** | 6 | `bio-stimulator`, `dermal-fillers`, `facial-treatments`, `microneedling`, `muscle-stimulation`, `vascular-pigment-laser` | One figure + `manufacturerImages`. Carried by the logos, not the photography |
+| **HOLD** | 4 | `botulinum-toxin`, `exosome-therapy`, `hifu`, `ultherapy` | Nothing. Current layout, unchanged. Re-enter on a second asset |
+| **EXCLUDE** | 1 | `laser-hair-removal` | Nothing. Zero net-new photography |
 
-Everything else — banners, the missing device/injectable pages, hair transplant — is a
-**client question, not a build task.** Ask before scoping.
+**Three moves carry almost all of the value:**
 
-**Do not copy Variant A to treatments on autopilot.** §4 is the reason, and
-`components/treatment-blocks.tsx` (top comment) documents a deliberate 2026-07 move *away*
-from the layout Variant A partially returns to. That call needs to be made consciously.
+1. **The zone gallery on `microwave-contouring`.** 15 die-cut area photos, already the right
+   shape, and the structures doc already asks for the section. One page, self-contained,
+   the single highest-value item in this audit.
+2. **`manufacturerImages` across the GO tier.** The field is declared on `Treatment`
+   (`lib/types.ts:117`), rendered by `ManufacturerImages`, and authored nowhere — while 12
+   `logob_*` marks sit unused. Data-only; no component work. This is what makes the six thin
+   pages worth touching at all.
+3. **In-body figures** from `treatments-*` on the eight substantive pages.
+
+Everything else — banners, the six device photos with no `/technology` page, the three
+unmatched injectables, hair transplant — is a **client question, not a build task** (§6, §7).
+
+**Do not copy Variant A to treatments on autopilot.** §4 is the reason (four banner subjects
+for nineteen pages), and `components/treatment-blocks.tsx` (top comment) documents a
+deliberate 2026-07 move *away* from the layout Variant A partially returns to. The
+consequence is recorded in `docs/14` §Implementation Decisions: treatments keep their
+editorial spine and take media into it, rather than inheriting the concern hero.
