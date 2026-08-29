@@ -5,8 +5,8 @@ import { JsonLd } from "@/components/JsonLd";
 import { ConcernView } from "@/components/ConcernView";
 import { concerns, concernBySlug } from "@/content/data/concerns";
 import { treatmentsOfConcern } from "@/content/data/relations";
-import { doctorBySlug } from "@/content/data/doctors";
 import { medicalWebPageNode } from "@/lib/schema";
+import { concernReviewer } from "@/lib/signoff";
 
 export const dynamicParams = false;
 
@@ -39,7 +39,11 @@ export default async function ConcernPage({
   const c = concernBySlug(slug);
   if (!c) notFound();
 
-  const doctor = doctorBySlug(c.reviewedBy);
+  // Only a signed-off page may assert a reviewer or a review date in schema.
+  // `c.reviewedBy` is an intended reviewer, not a claim that the doctor read
+  // the page — the claim lives in config/concern-signoff.json. `dateModified`
+  // is a different fact (when the copy last changed) and is emitted either way.
+  const review = concernReviewer(c.slug);
 
   return (
     <>
@@ -53,10 +57,15 @@ export default async function ConcernPage({
             name: c.name,
             possibleTreatment: treatmentsOfConcern(c.slug).map((t) => t.name),
           },
-          lastReviewed: c.lastReviewed,
+          lastReviewed: review?.date,
+          dateModified: c.lastReviewed,
           image: c.image,
-          reviewer: doctor
-            ? { name: doctor.fullName, slug: doctor.slug, credentials: doctor.credentials }
+          reviewer: review
+            ? {
+                name: review.doctor.fullName,
+                slug: review.doctor.slug,
+                credentials: review.doctor.credentials,
+              }
             : undefined,
         })}
       />

@@ -52,7 +52,7 @@ Header + two mega-menus, mobile drawer, 4-column footer with an espresso **compl
 
 ## Imagery
 
-Original photography only — no stock, **no patient before/after or testimonials** (MAB). Clinics (natural light, uncluttered), devices in context (treatment-page heroes), consistent doctor portraits (3:4), calm material b-roll (water/stone/linen), minimal mechanism line-diagrams. Every slot declares `aspect-ratio`. Commissioning across 9 branches + doctors is a launch dependency.
+Original photography only — no stock, **no testimonials** (MAB). Patient before/after is permitted **on concern pages only**, under the conditions in [ADR-0001](docs/adr/0001-before-after-imagery.md) §3 (caption, disclaimer, unidentifiable, never upscaled past the source width). Clinics (natural light, uncluttered), devices in context (treatment-page heroes), consistent doctor portraits (3:4), calm material b-roll (water/stone/linen), minimal mechanism line-diagrams. Every slot declares `aspect-ratio`. Commissioning across 9 branches + doctors is a launch dependency.
 
 ## Motion
 

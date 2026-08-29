@@ -19,6 +19,21 @@ export interface Faq {
   a: string;
 }
 
+/** 2:1 photo, subject left. The caption carries the meaning, so alt is "" —
+ *  shared by `Concern` and `Treatment` rather than declared twice: the sources
+ *  are one family and the container is one component (docs/14). */
+export interface Figure {
+  src: string;
+  caption: string;
+}
+
+/** A labelled zone photograph — a 1:1 transparent die-cut on page ground, never
+ *  a tint band. The object half of the `Treatment.areas` union. */
+export interface AreaZone {
+  label: string;
+  src: string;
+}
+
 /** A body section of a treatment/concern page (answer-first). */
 export interface Section {
   heading: string;
@@ -51,14 +66,17 @@ export interface Treatment {
   /** Typical number of sessions for a course, e.g. "4-6". Session time and
    *  downtime are already carried in `durationDowntime`. */
   typicalSessions?: string;
-  /** Areas this treatment is commonly applied to, e.g. ["Face", "Neck"]. */
-  areas?: string[];
+  /** Areas this treatment is commonly applied to. A string renders as a text
+   *  chip, an object as a die-cut zone photograph with its label beneath — one
+   *  concept, one field (docs/14). Mixing the two in one array fails Q-20. */
+  areas?: (string | AreaZone)[];
   /** Who this treatment is generally appropriate for — paired with
    *  `notSuitableFor` as a scannable suitable/not-suitable checklist. */
   suitableFor?: string[];
   /** Contraindications / who should avoid this treatment (docs/05 §9) —
-   *  paired with `suitableFor`. Before/after patient photography is not used
-   *  anywhere on the site (MAB — see DESIGN.md "Imagery"). */
+   *  paired with `suitableFor`. Before/after patient photography belongs on
+   *  concern pages only, under docs/adr/0001-before-after-imagery.md; treatment
+   *  pages carry none. */
   notSuitableFor?: string[];
   /** Factual comparison vs alternative treatments for the same concerns. */
   comparisons?: { name: string; bestFor: string; downtime: string }[];
@@ -72,7 +90,9 @@ export interface Treatment {
 
   /** T-02 fact strip. Exactly three PROCESS facts — never a time-to-result. */
   facts?: { value: string; label: string }[];
-  /** T-03 jump nav. Max 7. `id` must match a block's anchor id. */
+  /** T-03 jump nav. No longer rendered: the horizontal bar retired with the
+   *  heading gutter (docs/14 §"The contents rail"), and the sticky contents
+   *  rail derives its own list. Survives as the authored ordering hint. */
   jumpNav?: { id: string; label: string }[];
   /** T-06 routing module: sub-groups of the concern space, each linked out. */
   routes?: { title: string; body: string; links: { href: string; label: string }[] }[];
@@ -115,6 +135,14 @@ export interface Treatment {
   /** T-14 manufacturer images (Full only). Labelled in four places or omitted
    *  entirely — never shipped half-labelled (rule R-07). */
   manufacturerImages?: { src: string; alt: string; caption: string }[];
+  /** Photographs inside the reading column, placed one per two prose sections —
+   *  so a treatment must not declare more than floor(sections / 2) of them, or
+   *  the surplus is dropped silently (Q-23). */
+  figures?: Figure[];
+  /** An ordered procedure sequence. Numbered because the order is the
+   *  information. Sources are 156×156 icons and the cell is capped there:
+   *  upscaling an icon is visibly soft (Q-19). */
+  steps?: { label: string; src: string; body: string }[];
   /** T-17 one-line reason per related treatment slug, framed around what this
    *  treatment does NOT do. */
   relatedReasons?: Record<string, string>;
@@ -297,6 +325,36 @@ export interface Concern {
   technologyIntro?: string;
   /** C-17 related concerns, each with a one-line reason for the relationship. */
   relatedConcerns?: { slug: string; reason: string }[];
+
+  // ── Concern media (spec docs/12 "Data contract"). Optional like every other
+  // block: omitting a field turns its section off, no code branch. Every `src`
+  // must sit on the concerns CDN prefix and resolve to an entry in
+  // config/concern-media.json — enforced by validate-concerns.mts Q-14…Q-18.
+
+  /** C-01 responsive banner pair. The subject sits left in every source asset;
+   *  the hero sets object-position:left and puts the H1 in the right half. */
+  banner?: { src: string; sm: string; alt: string };
+  /** 2:1 photo, subject left. Shared with `Treatment` (docs/14). */
+  figures?: Figure[];
+  /** 2:1 designed infographic — headline and body already in the artwork. No
+   *  caption (it would double-label); alt transcribes the burned-in text. */
+  slides?: { src: string; alt: string }[];
+  /** 1:1 transparent PNG, scalloped die-cut. Page ground only, never a tint
+   *  band. `group` splits sets on one page (active types vs scar types). */
+  illustrations?: { src: string; label: string; sub: string; group?: string }[];
+  /** Pre-composited before+after in one file — NOT a two-panel comparator.
+   *  `nativeWidth` caps the cell: 74 of 111 sources are under 700px wide
+   *  (docs/11 §1.2) and blowing one up misrepresents it (ADR-0001 §5).
+   *  Declaring results obliges the page to render RESULTS_DISCLAIMER. */
+  results?: {
+    src: string;
+    caption: string;
+    nativeWidth: number;
+    ratio: "1/1" | "5/4" | "1.71/1";
+  }[];
+  /** Treatment-in-progress photography for the first-visit block. Deliberately
+   *  separate from `results` so a device photo is never shown as an outcome. */
+  visitImages?: { src: string; caption: string }[];
 
   reviewedBy: string;
   lastReviewed: string;

@@ -19,6 +19,10 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm check:blog
+      # --live HEADs every concern and treatment image. That media is uploaded
+      # from a laptop, not by a workflow, so this is the only thing that catches
+      # a page shipping URLs whose bytes were never synced to the bucket.
+      - run: pnpm validate:concerns --live
       - run: pnpm typecheck
       - run: pnpm lint
       # main is the deploy branch, so a body that only breaks at render time

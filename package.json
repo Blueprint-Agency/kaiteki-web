@@ -4,7 +4,7 @@
   "private": true,
   "packageManager": "pnpm@10.9.0",
   "engines": {
-    "node": ">=20.9.0"
+    "node": ">=20.16.0"
   },
   "scripts": {
     "dev": "next dev",
@@ -17,6 +17,10 @@
     "validate:concerns": "node --experimental-strip-types scripts/validate-concerns.mts",
     "test:redirects": "node --experimental-strip-types scripts/test-redirects.mts",
     "check:blog": "node --experimental-strip-types scripts/check-blog.mts",
+    "audit:concern-media": "node --env-file-if-exists=.env.local scripts/media-audit.mjs concerns",
+    "sync:concern-media": "node --env-file-if-exists=.env.local scripts/sync-media.mjs concerns",
+    "audit:treatment-media": "node --env-file-if-exists=.env.local scripts/media-audit.mjs treatments",
+    "sync:treatment-media": "node --env-file-if-exists=.env.local scripts/sync-media.mjs treatments",
     "blog:manifest": "node scripts/blog-import.mjs --manifest",
     "blog:import": "node scripts/blog-import.mjs",
     "blog:redirects": "node scripts/blog-redirects.mjs"

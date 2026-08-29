@@ -38,6 +38,8 @@ export default async function CategoryPage({
   const t = treatmentBySlug(category);
   if (!t) notFound();
   const reviewer = doctorBySlug(t.reviewedBy);
+  const trail = [{ label: "Treatments", href: "/treatments" }, { label: t.name }];
+
   return (
     <>
       <JsonLd
@@ -53,10 +55,7 @@ export default async function CategoryPage({
             : undefined,
         })}
       />
-      <TreatmentView
-        t={t}
-        trail={[{ label: "Treatments", href: "/treatments" }, { label: t.name }]}
-      />
+      <TreatmentView t={t} trail={trail} />
     </>
   );
 }

@@ -232,6 +232,17 @@ export const treatments: Treatment[] = [
     seoTitle: "Pico Laser Treatment Malaysia | Pigmentation | Kaiteki",
     seoDescription:
       "Pico laser at Kaiteki uses picosecond pulses for pigmentation, uneven tone and tattoo ink. A doctor assesses which device and settings suit your skin.",
+    // Four figure candidates, one slot: this page carries two prose sections,
+    // so Q-23 allows floor(2 / 2) = 1. The device photograph is the one kept —
+    // `lasers`, `pro-yellow-laser-2` and `premium-laser` are generic handpiece
+    // stock and none of them names the platform. They re-enter when the body
+    // grows; this is a section-count problem, not a media one.
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/pico-laser/picosure.jpg",
+        caption: "A PicoSure handpiece held against the cheek during a session.",
+      },
+    ],
     sections: [
       {
         // T-04 — para 2 is what earns the snippet / AI-answer citation.
@@ -521,6 +532,20 @@ export const treatments: Treatment[] = [
     lastReviewed: "2026-06-18",
   },
   { slug: "fotona-4d", durationDowntime: "30-60 min · No downtime", name: "Fotona Laser", category: "Lasers", image: "/images/treatments/fotona-laser.jpg", device: "Fotona", summary: "A multi-application Nd:YAG/Er:YAG laser platform, most often used at Kaiteki for its Fotona 4D facial-firming protocol.", leadAnswer: "Fotona Laser refers to Kaiteki's Fotona SP Dynamis / TimeWalker platform, an Nd:YAG and Er:YAG laser system offered in several application modes. Its best-known protocol, Fotona 4D, combines four modes to address facial firmness and skin-quality concerns. Suitability and results vary between individuals; a consultation is required to assess whether it is appropriate for you.", related: ["hifu", "ultherapy"], reviewedBy: "dr-jen-meng", lastReviewed: "2026-06-15", seoTitle: "Fotona 4D Laser Skin Tightening Malaysia | Kaiteki", seoDescription: "Fotona 4D is a multi-mode laser used for facial firming and skin quality, doctor-assessed at Kaiteki clinics in Malaysia. Book a free consultation on WhatsApp.",
+    // The third candidate, `fotona-4d.jpg`, is held: it is a manufacturer
+    // infographic with outcome copy burned into the artwork ("restore youthful
+    // texture", "tighten and lift"), which no caption can walk back (R-01).
+    // docs/13 §8 also names it as the duplicate of the file kept here.
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/fotona-4d/fotona-4d-2.jpg",
+        caption: "A Fotona handpiece being worked over the cheek and jaw during a session at Kaiteki.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/treatments/fotona-4d/fotona-laser.jpg",
+        caption: "The external pass, delivered across the skin surface rather than intraorally.",
+      },
+    ],
     sections: [
       {
         heading: "What is Fotona Laser?",
@@ -623,6 +648,22 @@ export const treatments: Treatment[] = [
     seoTitle: "Radiofrequency Treatment Malaysia | Skin Firmness | Kaiteki",
     seoDescription:
       "Radiofrequency (RF) treatment in Malaysia to support skin firmness and texture concerns. Book a free consultation with a Kaiteki doctor to assess suitability.",
+    // `wonderface-1` and `-2` are held: both are 1544×2000 portraits and the
+    // figure frame is 2:1, so placing them means a 2.6× crop that loses the
+    // subject. They wait for a container that can carry a portrait.
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/radiofrequency/oligio.jpg",
+        caption: "An Oligio session in progress, with the device console and its handpiece alongside.",
+      },
+    ],
+    manufacturerImages: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/radiofrequency/logo-oligio.png",
+        alt: "Oligio manufacturer logo",
+        caption: "Oligio — the manufacturer's mark for the monopolar radiofrequency platform.",
+      },
+    ],
     sections: [
       {
         heading: "What is radiofrequency (RF) treatment?",
@@ -722,6 +763,19 @@ export const treatments: Treatment[] = [
     seoTitle: "RF Microneedling Malaysia | Potenza, Morpheus8 | Kaiteki",
     seoDescription:
       "RF microneedling in Malaysia for texture, acne scarring and pore concerns using Potenza, Morpheus8 or Sylfirm X. Book a free consultation at Kaiteki.",
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/microneedling/sylfirm.jpg",
+        caption: "A microneedling handpiece stamped along the jaw, one pass at a time.",
+      },
+    ],
+    manufacturerImages: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/microneedling/logo-sylfirm.png",
+        alt: "Sylfirm manufacturer logo",
+        caption: "Sylfirm — the manufacturer's mark for the radiofrequency microneedling device.",
+      },
+    ],
     sections: [
       {
         heading: "What is RF microneedling?",
@@ -830,6 +884,14 @@ export const treatments: Treatment[] = [
     seoTitle: "Fat Freezing Malaysia | Cryolipolysis Treatment | Kaiteki",
     seoDescription:
       "Fat freezing (cryolipolysis) in Malaysia for localised fat pockets, not weight loss. Book a free consultation with a Kaiteki doctor to check suitability.",
+    // `body-slimming.jpg` is held: a tape measure drawn round a waist is an
+    // outcome picture, and the caption cannot undo what the image says (R-01).
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/fat-freezing/coolsculpting.jpg",
+        caption: "An applicator clamped over the abdomen with its gel membrane in place, partway through a cycle.",
+      },
+    ],
     sections: [
       {
         heading: "What is fat freezing?",
@@ -935,6 +997,36 @@ export const treatments: Treatment[] = [
     seoTitle: "Skin Booster Malaysia | Rejuran, Profhilo & Juvelook",
     seoDescription:
       "Injectable skin boosters in Malaysia, including Rejuran, Profhilo and Juvelook, for skin hydration and quality. Book a free consultation at Kaiteki.",
+    // Five figure candidates, four slots (Q-23: floor(9 sections / 2)). The one
+    // dropped is `rejuran.jpg`: a packaging shot rather than treatment
+    // photography, and it does not belong in `manufacturerImages` either — that
+    // block renders transparent marks contained on page ground, so an opaque
+    // JPEG lands there as a white rectangle.
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/skin-booster/skin-booster.jpg",
+        caption: "A fine needle positioned at the cheek under a treatment lamp during a skin-booster session.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/treatments/skin-booster/profhilo.jpg",
+        caption: "An injection placed along the lower cheek — one of the points used in a Profhilo protocol.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/treatments/skin-booster/rejuran-healer.jpg",
+        caption: "Injection points marked out on the cheek before a Rejuran Healer session.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/treatments/skin-booster/skin-booster-2.jpg",
+        caption: "The doctor steadies the jawline while positioning the needle at the cheek.",
+      },
+    ],
+    manufacturerImages: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/skin-booster/logo-plinest.png",
+        alt: "Plinest manufacturer logo",
+        caption: "Plinest — the manufacturer's mark for the polynucleotide skin booster.",
+      },
+    ],
     sections: [
       {
         heading: "What is a skin booster?",
@@ -1206,6 +1298,24 @@ export const treatments: Treatment[] = [
     seoTitle: "Bio-Stimulator Malaysia | Sculptra, Ellanse | Kaiteki",
     seoDescription:
       "Bio-stimulator injectables in Malaysia, including Sculptra and Ellanse, to support the skin's structural renewal. Book a free consultation at Kaiteki.",
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/bio-stimulator/radiesse.jpg",
+        caption: "A syringe held at the mid-cheek, one of the planes a collagen stimulator is placed in.",
+      },
+    ],
+    manufacturerImages: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/bio-stimulator/logo-radiesse.png",
+        alt: "Radiesse manufacturer logo",
+        caption: "Radiesse — the manufacturer's mark for the calcium hydroxylapatite stimulator.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/treatments/bio-stimulator/logo-ellanse.png",
+        alt: "Ellansé manufacturer logo",
+        caption: "Ellansé — the manufacturer's mark for the polycaprolactone stimulator.",
+      },
+    ],
     sections: [
       {
         heading: "What is a bio-stimulator?",
@@ -1412,6 +1522,35 @@ export const treatments: Treatment[] = [
     seoTitle: "Double Eyelid Surgery Malaysia | Crease Procedure | Kaiteki",
     seoDescription:
       "Double-eyelid procedure in Malaysia to create or refine an upper-eyelid crease. Book a free consultation with a Kaiteki doctor to assess suitability.",
+    // The only authored `steps` sequence. Sources are 156×156 icons and the
+    // cell is capped there (Q-19) — the order is the information, not the art.
+    steps: [
+      {
+        label: "Design",
+        src: "https://cdn.kaiteki.my/treatments/double-eyelid/step-1-design.png",
+        body: "The doctor marks the intended crease height and shape with you, checking symmetry with your eyes open and closed.",
+      },
+      {
+        label: "Anaesthesia",
+        src: "https://cdn.kaiteki.my/treatments/double-eyelid/step-2-anesthesia.png",
+        body: "Local anaesthetic is given to the eyelid area. You stay awake throughout — the area is numbed, not sedated.",
+      },
+      {
+        label: "The procedure begins",
+        src: "https://cdn.kaiteki.my/treatments/double-eyelid/step-3-start-process.png",
+        body: "The doctor works along the marked line, using the suture or incisional method agreed at your consultation.",
+      },
+      {
+        label: "Suturing",
+        src: "https://cdn.kaiteki.my/treatments/double-eyelid/step-4-suturing.png",
+        body: "Fine sutures form and secure the crease. How many are placed, and where, depends on the method used.",
+      },
+      {
+        label: "Healing and review",
+        src: "https://cdn.kaiteki.my/treatments/double-eyelid/step-5-results.png",
+        body: "Swelling and bruising are expected in the first days, and a review appointment checks how the eyelid is healing. How the crease settles differs between individuals.",
+      },
+    ],
     sections: [
       {
         heading: "What is double-eyelid treatment?",
@@ -1518,6 +1657,17 @@ export const treatments: Treatment[] = [
     seoTitle: "Pigmentation & Vascular Laser Malaysia | Kaiteki",
     seoDescription:
       "Laser treatment in Malaysia for pigmentation, redness and visible vessels using M22 IPL, Pro Yellow and DermaV. Book a free consultation at Kaiteki.",
+    // No figure. The one candidate, `vascular-lesions.png`, is a magnified
+    // side-by-side of a treated and an untreated leg — a before/after in all
+    // but name, and the treatment revamp ships none (docs/13 §3.3, ADR-0001).
+    // This page is carried by its manufacturer mark alone.
+    manufacturerImages: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/vascular-pigment-laser/logo-quadrostar.png",
+        alt: "QuadroStar manufacturer logo",
+        caption: "QuadroStar — the manufacturer's mark for the vascular and pigment laser platform.",
+      },
+    ],
     sections: [
       {
         heading: "What is Vascular / Pigment Laser treatment?",
@@ -1611,6 +1761,15 @@ export const treatments: Treatment[] = [
     seoTitle: "CO2 Resurfacing Laser Malaysia | Kaiteki",
     seoDescription:
       "Fractional CO2 resurfacing laser in Malaysia for skin texture, acne scarring and pores. Book a free consultation with a Kaiteki doctor to assess suitability.",
+    // `retinopeel.jpg` is held on two counts: it is an opaque packaging JPEG,
+    // which `manufacturerImages` renders as a white rectangle on page ground,
+    // and NeoStrata makes a peel kit rather than the laser this page describes.
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/resurfacing-laser/chemical-peel.jpg",
+        caption: "Product applied to the face in sections, with a handpiece held above the treated area.",
+      },
+    ],
     sections: [
       {
         heading: "What is Resurfacing Laser treatment?",
@@ -1704,6 +1863,33 @@ export const treatments: Treatment[] = [
     seoTitle: "Onda Microwave Contouring Malaysia | Kaiteki",
     seoDescription:
       "Onda microwave contouring in Malaysia for localised fat, cellulite appearance and firmness. Book a free consultation with a Kaiteki doctor to check suitability.",
+    // The zone gallery (docs/13 §6) — 15 die-cut files, 11 subjects. The four
+    // `*-2` files are the same photographs cut to a circle instead of the
+    // scalloped shape, so shipping both would show one body area twice.
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/microwave-contouring/onda-coolwave-therapy.png",
+        caption:
+          "The Onda handpiece being moved across the abdomen during a session, with the console beside the couch.",
+      },
+    ],
+    // Labels name the body area, not the concern. The source filenames are
+    // concern-shaped ("heavyjowl", "dullskin", "skinlaxity") and each photograph
+    // is simply that part of the body — a captioned grid of named defects reads
+    // as an indication list on an advertisement page (docs/02 §8).
+    areas: [
+      { label: "Forehead and brow", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-skin-laxity.png" },
+      { label: "Cheeks", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-dull-skin.png" },
+      { label: "Nasolabial folds", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-nasolabial.png" },
+      { label: "Jowls", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-heavy-jowl.png" },
+      { label: "Jawline", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-sagging-jawline.png" },
+      { label: "Under the chin", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-double-chin.png" },
+      { label: "Upper arms", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-upper-arms.png" },
+      { label: "Back and bra line", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-bra-fat.png" },
+      { label: "Flanks and waist", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-love-handles.png" },
+      { label: "Thighs", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-thigh.png" },
+      { label: "Knees", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-knees.png" },
+    ],
     sections: [
       {
         heading: "What is Microwave Contouring?",
@@ -1798,6 +1984,19 @@ export const treatments: Treatment[] = [
     seoTitle: "Muscle Stimulation Treatment Malaysia | Kaiteki",
     seoDescription:
       "Electromagnetic muscle-stimulation treatment in Malaysia for body-toning concerns as part of an individual plan. Book a free consultation at Kaiteki.",
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/muscle-stimulation/schwarzy.jpg",
+        caption: "A Schwarzy applicator and its strap, positioned before the belt is fastened over the area.",
+      },
+    ],
+    manufacturerImages: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/muscle-stimulation/logo-schwazy.png",
+        alt: "Schwarzy manufacturer logo",
+        caption: "Schwarzy — the manufacturer's mark for the electromagnetic muscle-stimulation device.",
+      },
+    ],
     sections: [
       {
         heading: "What is Muscle Stimulation?",
@@ -1891,6 +2090,24 @@ export const treatments: Treatment[] = [
     seoTitle: "Dermal Fillers Malaysia | Juvederm, Restylane | Kaiteki",
     seoDescription:
       "Dermal filler treatment in Malaysia using Juvederm, Restylane, Belotero and Art Filler to support facial volume and contour. Book a free consultation at Kaiteki.",
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/dermal-fillers/dermal-fillers.jpg",
+        caption: "Syringes positioned at the temple and the cheek — two of the planes filler is placed in.",
+      },
+    ],
+    manufacturerImages: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/dermal-fillers/logo-juvaderm.png",
+        alt: "Juvéderm manufacturer logo",
+        caption: "Juvéderm — the manufacturer's mark for its hyaluronic acid filler range.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/treatments/dermal-fillers/logo-restylane.png",
+        alt: "Restylane manufacturer logo",
+        caption: "Restylane — the manufacturer's mark for its hyaluronic acid filler range.",
+      },
+    ],
     sections: [
       {
         heading: "What are dermal fillers?",
@@ -1988,6 +2205,24 @@ export const treatments: Treatment[] = [
     seoTitle: "Facial Treatments Malaysia | Hydrafacial, Silkpeel | Kaiteki",
     seoDescription:
       "Clinic facial treatments in Malaysia, including Hydrafacial and Silkpeel, to support skin cleansing and quality. Book a free consultation at Kaiteki.",
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/facial-treatments/hydroglow.jpg",
+        caption: "The cleansing and extraction stage of a facial, worked over with pads before the device passes.",
+      },
+    ],
+    manufacturerImages: [
+      {
+        src: "https://cdn.kaiteki.my/treatments/facial-treatments/logo-hydrafacial.png",
+        alt: "HydraFacial manufacturer logo",
+        caption: "HydraFacial — the manufacturer's mark for the hydradermabrasion system.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/treatments/facial-treatments/logo-silkpeel.png",
+        alt: "SilkPeel manufacturer logo",
+        caption: "SilkPeel — the manufacturer's mark for the dermalinfusion system.",
+      },
+    ],
     sections: [
       {
         heading: "What are Facial Treatments?",

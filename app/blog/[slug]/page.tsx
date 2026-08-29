@@ -94,7 +94,18 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       />
 
       <Container className="py-10 sm:py-12">
-        <article className="mx-auto max-w-3xl">
+        {/* No `items-start`: the aside must stretch the full article height or
+            its sticky child has nowhere to travel. */}
+        <div className="lg:flex lg:gap-10">
+          {/* Sticky contents rail. Wide screens only — below lg the inline card
+              inside the article does the same job without stealing a column. */}
+          <aside className="hidden shrink-0 lg:block lg:w-56 xl:w-64">
+            <div className="sticky top-28 max-h-[calc(100vh-9rem)] overflow-y-auto pb-6">
+              <ArticleToc headings={headings} variant="sidebar" />
+            </div>
+          </aside>
+
+          <article className="mx-auto max-w-3xl">
           <Breadcrumbs
             items={[
               { label: "Blog", href: "/blog" },
@@ -150,7 +161,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             {post.leadAnswer}
           </p>
 
-          <div className="mt-8">
+          <div className="mt-8 lg:hidden">
             <ArticleToc headings={headings} />
           </div>
 
@@ -226,8 +237,9 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               />
               <Disclaimer />
             </div>
-          </div>
-        </article>
+            </div>
+          </article>
+        </div>
 
         {related.length > 0 && (
           <section className="mt-16 border-t border-hairline pt-10">
