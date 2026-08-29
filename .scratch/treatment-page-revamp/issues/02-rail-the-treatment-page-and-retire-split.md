@@ -65,28 +65,53 @@ Layout reference is `components/proto-tx/VariantA.tsx` — Variant A "Inline", c
 
 **Blocked by:** 01 — the media types reference CDN URLs the manifest has to define first.
 
-- [ ] Every treatment page renders one contents rail, sticky beside the whole scrollable body
-- [ ] The rail is `ArticleToc` at `variant="sidebar"`; the inline card renders below `lg` and
+**Status:** done
+
+- [x] Every treatment page renders one contents rail, sticky beside the whole scrollable body
+- [x] The rail is `ArticleToc` at `variant="sidebar"`; the inline card renders below `lg` and
       never alongside it
-- [ ] Below the three-heading threshold there is no rail and no reserved gutter
-- [ ] `JumpNav` no longer renders on treatment pages
-- [ ] No rail entry points at a section the page does not render (Q-24)
-- [ ] All 13 `Split` call sites render their heading and intro inline — the 7 exported blocks
+- [x] Below the three-heading threshold there is no rail and no reserved gutter
+- [x] `JumpNav` no longer renders on treatment pages
+- [x] No rail entry points at a section the page does not render (Q-24)
+- [x] All 13 `Split` call sites render their heading and intro inline — the 7 exported blocks
       **and** the 6 inline in `TreatmentView.tsx`
-- [ ] `botulinum-toxin` — the only page authoring `comparisons`, `preCare`, `postCare` and
+- [x] `botulinum-toxin` — the only page authoring `comparisons`, `preCare`, `postCare` and
       `areas` — renders all four railed, with the comparison table still scrollable on narrow
       screens. It is a HOLD treatment; it still gets the layout
-- [ ] `Split` is deleted and nothing imports it
-- [ ] Tone bands render as inset panels; the conversion, safety-notice and compliance
+- [x] `Split` is deleted and nothing imports it
+- [x] Tone bands render as inset panels; the conversion, safety-notice and compliance
       surfaces each still appear exactly once
-- [ ] `figures` is the shared type, not a second declaration
-- [ ] `areas` accepts both a string and a labelled image; every currently authored value
+- [x] `figures` is the shared type, not a second declaration
+- [x] `areas` accepts both a string and a labelled image; every currently authored value
       still renders as a chip
-- [ ] `steps` exists, and a step cell never exceeds its 156px native width (Q-19)
-- [ ] `manufacturerImages` renders contained on page ground at the source ratio — a
+- [x] `steps` exists, and a step cell never exceeds its 156px native width (Q-19)
+- [x] `manufacturerImages` renders contained on page ground at the source ratio — a
       transparent logo is neither cropped nor backed by a tint panel
-- [ ] The four-place labelling rule still holds, and a treatment cannot ship manufacturer
+- [x] The four-place labelling rule still holds, and a treatment cannot ship manufacturer
       images without the disclaimer (Q-21)
-- [ ] Q-20 fails a treatment mixing strings and objects in one `areas` array
-- [ ] Q-23 fails a treatment declaring more than `floor(sections / 2)` figures
-- [ ] Metadata, canonical URLs and JSON-LD are unchanged
+- [x] Q-20 fails a treatment mixing strings and objects in one `areas` array
+- [x] Q-23 fails a treatment declaring more than `floor(sections / 2)` figures
+- [x] Metadata, canonical URLs and JSON-LD are unchanged
+
+**Three notes on what shipped**, none of them skipped work:
+
+1. **The closing CTA (T-18) keeps its full-bleed tint.** It renders past the reading column,
+   where the rail has ended, so there is nothing for a band to float over — the reason
+   bands became panels does not reach it. The three surfaces the checklist names are inset:
+   espresso (conversion) and porcelain (safety notice) once each, tint on the device
+   comparison.
+2. **Q-24 is a spelling check, not a render check.** The rail and the page derive from one
+   list, so a static gate can only prove that every id the rail can emit is an anchor the
+   components still set. That is the failure it exists for (a block renamed out from under
+   the rail); proving a section *ran* needs a rendered page, which is what caught the
+   prototype's dead `devices` anchor in the first place.
+3. **Q-19…Q-21 collide with the concern gate's existing rule numbers.** `docs/14` assigned
+   Q-19…Q-24 to the treatment rules without noticing that the first three were taken. The
+   spec's numbers are kept — they are what a reviewer looks for — and the collision is
+   recorded at the top of `scripts/validate-concerns.mts`. Every failure carries a slug, so
+   the page type disambiguates them.
+
+**Where the work landed.** The bulk of this ticket is in `a0379e0`, which a parallel session
+committed while the work was still in flight (its message records the inclusion). The review
+pass is `884ea10`: Q-22, Q-17 widened to figures, Q-21 bounded to its own function, and the
+T-18 bleed restored.
