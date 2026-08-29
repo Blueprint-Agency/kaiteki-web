@@ -1,0 +1,39 @@
+name: Sync blog media to R2
+
+# All blog media lives in Cloudflare R2, never in public/ (content/blog/AUTHORING.md §3).
+# This is the only thing that puts it there.
+#
+# Both deploy workflows call it before they build, so a push to staging or main
+# warms the CDN ahead of the site that references it. It also runs on demand
+# from any branch, which is what an author needs: the images have to be live
+# before the post can be previewed locally or reviewed in a PR, and neither of
+# those is a merge.
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      # Credentials come from the repo's GitHub secrets and variables. Nothing
+      # about the bucket is hardcoded, and no author ever holds the keys.
+      - name: Sync content/blog/media to the bucket's blog/ prefix
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+          # R2 rejects the CRC32 trailer the AWS CLI v2 now sends by default.
+          AWS_REQUEST_CHECKSUM_CALCULATION: when_required
+          AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
+        run: |
+          # No --delete: dropping a file from git must not 404 a URL that is
+          # already indexed. Retire an object by hand in the bucket instead.
+          # --size-only because a git checkout has fresh mtimes on every run, so
+          # the default comparison would re-upload the whole tree each time.
+          # ponytail: a same-size replacement won't re-upload; rename the file.
+          aws s3 sync content/blog/media "s3://${{ vars.R2_BUCKET_NAME }}/blog" \
+            --endpoint-url "https://${{ vars.R2_ACCOUNT_ID }}.r2.cloudflarestorage.com" \
+            --size-only --no-progress
