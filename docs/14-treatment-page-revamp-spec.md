@@ -324,7 +324,12 @@ hold a complete responsive pair (`docs/13` §4) and the layout keeps its existin
 - Fourteen treatments need captions and labels only — roughly **60 authored fields**, versus
   the ~180 the concern revamp needed. **The treatment copy is already written.** This is a
   media-wiring job, not an authoring job, and it should not grow into one.
-- `microwave-contouring` additionally needs its 15 area labels authored for the first time.
+- `microwave-contouring` additionally needs its area labels authored for the first time.
+  **Eleven shipped, not fifteen** (ticket 03): `img_onda_{brafat,lovehandles,thigh,upperarms}2`
+  are second die-cuts of four photographs already in the set, so shipping them would show the
+  same body area twice. `docs/13` §6 names eleven subjects for the same reason. The labels name
+  the body area, never the concern the filename names — a captioned grid of defects reads as an
+  indication list (`docs/02` §8).
 - **`reviewedBy` is untouched.** No medical claims change; existing sign-off state carries.
 
 ### Non-goals for the data model
@@ -402,9 +407,15 @@ treatments did not need one because no layout was changing. That was wrong twice
 first pass shipped a rail over the prose and left `Split` owning the bottom half, which the
 client rejected on sight and which no amount of reading the code would have surfaced; and it
 shipped a dead `devices` anchor that only a rendered page revealed. Both were caught in the
-browser, not in review. The variants live at `components/proto-tx/` with staged assets in
-`public/proto/tx/` — **primary source for the A decision, preserve on the throwaway branch,
-do not delete.**
+browser, not in review. The variants lived at `components/proto-tx/` with staged assets in
+`public/proto/tx/`.
+
+**Variant A "Inline" was chosen on 2026-08-29 and the prototype is now off main** (ticket 03).
+`components/proto-tx/`, `public/proto/tx/` and the `?variant=A|B|C` gate in
+`app/treatments/[category]/page.tsx` are all deleted; `Split` went with the rail in ticket 02
+and nothing imports it. The three variants and their staged assets are preserved on the
+throwaway branch **`proto/treatment-variants-2026-08-29`** — primary source for the A
+decision, so do not garbage-collect that branch.
 
 **Two blocks were dead code before this spec and one still will be.**
 `manufacturerImages` gets authored here. `areas` gets authored on a second treatment. But
