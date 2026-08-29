@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { Block, Split, Rows, Row } from "@/components/treatment-blocks";
+import type { ReactNode } from "react";
+import { Container } from "@/components/Container";
+import { Rows, Row } from "@/components/treatment-blocks";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { ArrowRight } from "@/components/icons";
 import { VariantTabs } from "@/components/VariantTabs";
@@ -16,10 +18,62 @@ import type { Treatment } from "@/lib/types";
  * that change shape by archetype, and even those are data-driven — the
  * archetype picks which data was authored, not which branch runs here.
  *
- * Layout reuses the treatment page's editorial spine (Block/Split/Rows) so a
- * visitor moving between /concerns/acne and /treatments/pico-laser is reading
- * one site, not two templates.
+ * Layout is forked from the treatment spine (docs/12 §Layout). `Split` — the
+ * sticky 21rem heading gutter — is gone from concern pages and left untouched
+ * on /treatments: here the heading sits above its own content in a single
+ * measured column beside the contents rail. Sections therefore render *inside*
+ * ConcernView's reading column and carry no Container of their own; only the
+ * three surfaced bands break out to full width.
  */
+
+/* ── Layout primitives (concern-only fork) ──────────────────────────────── */
+
+/** Clearance for the 68px sticky site header. The jump-nav bar retired with
+ *  the gutter, so there is only one piece of sticky chrome left to clear. */
+const CLEAR_HEADER = "scroll-mt-24";
+
+/** A section of the reading column. No Container: the column supplies it. */
+export function Section({
+  id,
+  className = "",
+  children,
+}: {
+  id?: string;
+  className?: string;
+  children: ReactNode;
+}) {
+  return (
+    <section id={id} className={`py-12 sm:py-14 ${id ? CLEAR_HEADER : ""} ${className}`}>
+      {children}
+    </section>
+  );
+}
+
+/**
+ * One of the exactly three surfaced bands, each used once: espresso is the
+ * conversion moment, tint the technology comparison, porcelain the safety
+ * notice. A band breaks out of the reading column, so it carries a Container.
+ */
+export function Band({
+  id,
+  tone,
+  children,
+}: {
+  id?: string;
+  tone: "tint" | "porcelain" | "espresso";
+  children: ReactNode;
+}) {
+  const surface = {
+    tint: "border-y border-hairline bg-tint",
+    porcelain: "border-y border-hairline bg-porcelain",
+    espresso: "on-dark bg-espresso text-ink-on-dark",
+  }[tone];
+  return (
+    <section id={id} className={`py-14 sm:py-20 ${id ? CLEAR_HEADER : ""} ${surface}`}>
+      <Container>{children}</Container>
+    </section>
+  );
+}
 
 /** Bold lead-in bullets — the scannable, quotable shape blocks 04 and 13 share. */
 function LeadInList({ items }: { items: LeadIn[] }) {
@@ -42,13 +96,14 @@ function LeadInList({ items }: { items: LeadIn[] }) {
 export function DriversBlock({ d }: { d?: Concern["drivers"] }) {
   if (!d?.items.length) return null;
   return (
-    <Block id="causes">
-      <Split aside={<h2 className="h-section">{d.heading}</h2>}>
-        {d.intro && <p className="mb-8 max-w-[62ch] text-lg leading-relaxed text-ink-900">{d.intro}</p>}
+    <Section id="causes">
+      <h2 className="h-section">{d.heading}</h2>
+      {d.intro && <p className="mt-6 max-w-[62ch] text-lg leading-relaxed text-ink-900">{d.intro}</p>}
+      <div className="mt-8">
         <LeadInList items={d.items} />
-        {d.outro && <p className="mt-8 max-w-[62ch] leading-relaxed text-ink-700">{d.outro}</p>}
-      </Split>
-    </Block>
+      </div>
+      {d.outro && <p className="mt-8 max-w-[62ch] leading-relaxed text-ink-700">{d.outro}</p>}
+    </Section>
   );
 }
 
@@ -61,7 +116,7 @@ export function VariantBlock({ v }: { v?: Concern["variant"] }) {
   if (!v) return null;
 
   return (
-    <Block id="which-type" tone="tint">
+    <Section id="which-type">
       <h2 className="h-section max-w-[24ch]">{v.heading}</h2>
       <p className="mt-6 max-w-[64ch] leading-relaxed text-ink-700">{v.intro}</p>
 
@@ -88,7 +143,7 @@ export function VariantBlock({ v }: { v?: Concern["variant"] }) {
           )}
         </>
       )}
-    </Block>
+    </Section>
   );
 }
 
@@ -101,10 +156,10 @@ export function VariantBlock({ v }: { v?: Concern["variant"] }) {
 export function LocationBlock({ l }: { l?: Concern["locationBlock"] }) {
   if (!l?.cards.length) return null;
   return (
-    <Block id="where">
+    <Section id="where">
       <h2 className="h-section max-w-[22ch]">{l.heading}</h2>
       {l.intro && <p className="mt-6 max-w-[64ch] leading-relaxed text-ink-700">{l.intro}</p>}
-      <div className="mt-10 grid gap-x-12 gap-y-9 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-10 grid gap-x-12 gap-y-9 sm:grid-cols-2">
         {l.cards.map((c) => (
           <div key={c.title} className="border-t border-hairline pt-5">
             <h3 className="h-sub">{c.title}</h3>
@@ -118,7 +173,7 @@ export function LocationBlock({ l }: { l?: Concern["locationBlock"] }) {
           </div>
         )}
       </div>
-    </Block>
+    </Section>
   );
 }
 
@@ -130,19 +185,18 @@ export function LocationBlock({ l }: { l?: Concern["locationBlock"] }) {
 export function SeeDoctorBlock({ s }: { s?: Concern["seeDoctor"] }) {
   if (!s?.triggers.length) return null;
   return (
-    <Block id="see-a-doctor">
-      <Split aside={<h2 className="h-section">{s.heading ?? "When to see a doctor"}</h2>}>
-        <p className="max-w-[62ch] text-lg leading-relaxed text-ink-900">{s.intro}</p>
-        <ul className="mt-7 divide-y divide-hairline border-y border-hairline">
-          {s.triggers.map((t) => (
-            <li key={t} className="max-w-[62ch] py-4 leading-relaxed text-ink-700">
-              {t}
-            </li>
-          ))}
-        </ul>
-        {s.outro && <p className="mt-8 max-w-[62ch] leading-relaxed text-ink-700">{s.outro}</p>}
-      </Split>
-    </Block>
+    <Section id="see-a-doctor">
+      <h2 className="h-section">{s.heading ?? "When to see a doctor"}</h2>
+      <p className="mt-6 max-w-[62ch] text-lg leading-relaxed text-ink-900">{s.intro}</p>
+      <ul className="mt-7 divide-y divide-hairline border-y border-hairline">
+        {s.triggers.map((t) => (
+          <li key={t} className="max-w-[62ch] py-4 leading-relaxed text-ink-700">
+            {t}
+          </li>
+        ))}
+      </ul>
+      {s.outro && <p className="mt-8 max-w-[62ch] leading-relaxed text-ink-700">{s.outro}</p>}
+    </Section>
   );
 }
 
@@ -162,13 +216,13 @@ export function TreatmentsBlock({
 }) {
   if (!options.length) return null;
   return (
-    <Block id="treatments">
+    <Section id="treatments">
       <h2 className="h-section max-w-[22ch]">Treatment options at Kaiteki</h2>
       <p className="mt-6 max-w-[64ch] leading-relaxed text-ink-700">
         {c.treatmentsIntro ??
           `These are the treatments most often considered at our clinics for ${c.name.toLowerCase()}. None of them is a default. Which one is appropriate, and whether any of them is, depends on what the assessment finds.`}
       </p>
-      <div className="mt-12 grid gap-x-12 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-12 grid gap-x-12 gap-y-10 sm:grid-cols-2">
         {options.map((t) => {
           const w = c.treatmentWhy?.[t.slug];
           return (
@@ -197,7 +251,7 @@ export function TreatmentsBlock({
           {c.treatmentsNote}
         </p>
       )}
-    </Block>
+    </Section>
   );
 }
 
@@ -259,12 +313,12 @@ function ScrollTable({
 export function CompareBlock({ c }: { c?: Concern["compare"] }) {
   if (!c?.rows.length) return null;
   return (
-    <Block id="compare">
+    <Section id="compare">
       <h2 className="h-section max-w-[24ch]">Which treatment suits which type?</h2>
       <p className="mt-6 max-w-[64ch] leading-relaxed text-ink-700">{c.intro}</p>
       <ScrollTable columns={c.columns} rows={c.rows} className="mt-10" />
       {c.note && <p className="mt-8 max-w-[62ch] leading-relaxed text-ink-700">{c.note}</p>}
-    </Block>
+    </Section>
   );
 }
 
@@ -276,32 +330,25 @@ export function CompareBlock({ c }: { c?: Concern["compare"] }) {
 export function FirstVisitBlock({ f }: { f?: Concern["firstVisit"] }) {
   if (!f?.steps.length) return null;
   return (
-    <Block id="first-visit">
-      <Split
-        aside={
-          <>
-            <h2 className="h-section">What your first visit involves</h2>
-            <p className="mt-6 max-w-[40ch] leading-relaxed text-ink-700">{f.intro}</p>
-          </>
-        }
-      >
-        <ol className="space-y-8 border-l border-hairline pl-8">
-          {f.steps.map((s, i) => (
-            <li key={s.title} className="relative">
-              <span
-                aria-hidden
-                className="absolute -left-[2.0625rem] top-0.5 flex size-[2.125rem] items-center justify-center rounded-full border border-hairline bg-page text-[0.8125rem] font-semibold text-accent"
-              >
-                {i + 1}
-              </span>
-              <h3 className="h-sub">{s.title}</h3>
-              <p className="mt-2 max-w-[54ch] leading-relaxed text-ink-700">{s.body}</p>
-            </li>
-          ))}
-        </ol>
-        {f.outro && <p className="mt-9 max-w-[62ch] leading-relaxed text-ink-700">{f.outro}</p>}
-      </Split>
-    </Block>
+    <Section id="first-visit">
+      <h2 className="h-section">What your first visit involves</h2>
+      <p className="mt-6 max-w-[62ch] leading-relaxed text-ink-700">{f.intro}</p>
+      <ol className="mt-10 space-y-8 border-l border-hairline pl-8">
+        {f.steps.map((s, i) => (
+          <li key={s.title} className="relative">
+            <span
+              aria-hidden
+              className="absolute -left-[2.0625rem] top-0.5 flex size-[2.125rem] items-center justify-center rounded-full border border-hairline bg-page text-[0.8125rem] font-semibold text-accent"
+            >
+              {i + 1}
+            </span>
+            <h3 className="h-sub">{s.title}</h3>
+            <p className="mt-2 max-w-[54ch] leading-relaxed text-ink-700">{s.body}</p>
+          </li>
+        ))}
+      </ol>
+      {f.outro && <p className="mt-9 max-w-[62ch] leading-relaxed text-ink-700">{f.outro}</p>}
+    </Section>
   );
 }
 
@@ -314,27 +361,18 @@ export function FirstVisitBlock({ f }: { f?: Concern["firstVisit"] }) {
 export function ConcernRisksBlock({ r }: { r?: Concern["risks"] }) {
   if (!r?.items.length) return null;
   return (
-    <Block id="risks" tone="porcelain">
-      <Split
-        aside={
-          <>
-            <h2 className="h-section">Risks and what to expect</h2>
-            {r.intro && (
-              <p className="mt-6 max-w-[40ch] leading-relaxed text-ink-700">{r.intro}</p>
-            )}
-          </>
-        }
-      >
-        <div className="divide-y divide-espresso/15 border-y border-espresso/15">
-          {r.items.map((i) => (
-            <Row key={i.lead} title={i.lead}>
-              {i.body}
-            </Row>
-          ))}
-        </div>
-        <p className="mt-8 max-w-[62ch] leading-relaxed text-ink-700">{r.disclose}</p>
-      </Split>
-    </Block>
+    <Band id="risks" tone="porcelain">
+      <h2 className="h-section">Risks and what to expect</h2>
+      {r.intro && <p className="mt-6 max-w-[62ch] leading-relaxed text-ink-700">{r.intro}</p>}
+      <div className="mt-10 divide-y divide-espresso/15 border-y border-espresso/15">
+        {r.items.map((i) => (
+          <Row key={i.lead} title={i.lead}>
+            {i.body}
+          </Row>
+        ))}
+      </div>
+      <p className="mt-8 max-w-[62ch] leading-relaxed text-ink-700">{r.disclose}</p>
+    </Band>
   );
 }
 
@@ -353,32 +391,25 @@ export function ConcernCostBlock({
 }) {
   if (!c?.factors.length) return null;
   return (
-    <Block id="cost">
-      <Split
-        aside={
-          <>
-            <h2 className="h-section">What affects the cost</h2>
-            <p className="mt-6 max-w-[40ch] leading-relaxed text-ink-700">{c.intro}</p>
-            <WhatsAppButton
-              href={href}
-              variant="outline"
-              position="cost"
-              label="Ask about pricing for your case"
-              className="mt-7"
-            />
-          </>
-        }
-      >
-        <ul className="divide-y divide-hairline border-y border-hairline">
-          {c.factors.map((f) => (
-            <li key={f} className="max-w-[62ch] py-4 leading-relaxed text-ink-700">
-              {f}
-            </li>
-          ))}
-        </ul>
-        {c.outro && <p className="mt-8 max-w-[62ch] leading-relaxed text-ink-700">{c.outro}</p>}
-      </Split>
-    </Block>
+    <Section id="cost">
+      <h2 className="h-section">What affects the cost</h2>
+      <p className="mt-6 max-w-[62ch] leading-relaxed text-ink-700">{c.intro}</p>
+      <ul className="mt-8 divide-y divide-hairline border-y border-hairline">
+        {c.factors.map((f) => (
+          <li key={f} className="max-w-[62ch] py-4 leading-relaxed text-ink-700">
+            {f}
+          </li>
+        ))}
+      </ul>
+      {c.outro && <p className="mt-8 max-w-[62ch] leading-relaxed text-ink-700">{c.outro}</p>}
+      <WhatsAppButton
+        href={href}
+        variant="outline"
+        position="cost"
+        label="Ask about pricing for your case"
+        className="mt-8"
+      />
+    </Section>
   );
 }
 
@@ -395,33 +426,32 @@ export function RelatedConcernsBlock({
 }) {
   if (!items.length) return null;
   return (
-    <Block>
-      <Split aside={<h2 className="h-section">Related concerns</h2>}>
-        <ul className="divide-y divide-hairline border-y border-hairline">
-          {items.map((i) => (
-            <li key={i.slug} className="py-5">
-              <Link
-                href={`/concerns/${i.slug}`}
-                className="group inline-flex items-center gap-1.5 font-display text-lg font-medium text-espresso decoration-mocha/50 underline-offset-4 hover:underline"
-              >
-                {i.name}
-                <ArrowRight
-                  size={15}
-                  className="text-accent transition-transform group-hover:translate-x-0.5"
-                />
-              </Link>
-              <p className="mt-1.5 max-w-[58ch] leading-relaxed text-ink-700">{i.reason}</p>
-            </li>
-          ))}
-        </ul>
-        <Link
-          href="/concerns"
-          className="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-espresso"
-        >
-          Back to all concerns
-        </Link>
-      </Split>
-    </Block>
+    <Section>
+      <h2 className="h-section">Related concerns</h2>
+      <ul className="mt-8 divide-y divide-hairline border-y border-hairline">
+        {items.map((i) => (
+          <li key={i.slug} className="py-5">
+            <Link
+              href={`/concerns/${i.slug}`}
+              className="group inline-flex items-center gap-1.5 font-display text-lg font-medium text-espresso decoration-mocha/50 underline-offset-4 hover:underline"
+            >
+              {i.name}
+              <ArrowRight
+                size={15}
+                className="text-accent transition-transform group-hover:translate-x-0.5"
+              />
+            </Link>
+            <p className="mt-1.5 max-w-[58ch] leading-relaxed text-ink-700">{i.reason}</p>
+          </li>
+        ))}
+      </ul>
+      <Link
+        href="/concerns"
+        className="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-espresso"
+      >
+        Back to all concerns
+      </Link>
+    </Section>
   );
 }
 
