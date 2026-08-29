@@ -36,6 +36,8 @@
 // The numbers are kept as specced — they are what a reviewer looks for — and
 // the page type disambiguates them, as does the slug every failure carries.
 //
+//   Q-04  (treatments) the same banned-language sweep, over the media captions,
+//         labels and alt text — not the whole object, see the check for why
 //   Q-19  (treatments) every `steps` icon is at most 156px, its native width —
 //         the anti-upscaling guard, and the twin of Q-16
 //   Q-20  (treatments) the `areas` union holds: chips or zones, never both, and
@@ -77,6 +79,16 @@ const BANNED: [RegExp, string][] = [
   [/\bRM\s?\d/i, "price (R-03)"],
   [/\bfrom RM\b/i, "price (R-03)"],
 ];
+
+/** One implementation, two callers: concerns sweep the whole authored object,
+ *  treatments sweep their media captions. `where` names which, so a failure
+ *  says what was read as well as what it found. */
+function sweepBanned(slug: string, text: string, where: string) {
+  for (const [re, why] of BANNED) {
+    const hit = text.match(re);
+    if (hit) fail(slug, "Q-04", `${where}${why} — found "${hit[0]}"`);
+  }
+}
 
 /**
  * The anchor ids ConcernView actually renders, given the authored data — read
@@ -226,11 +238,7 @@ for (const c of concerns) {
   }
 
   // Q-04 — banned language over the whole authored object.
-  const prose = JSON.stringify(c);
-  for (const [re, why] of BANNED) {
-    const hit = prose.match(re);
-    if (hit) fail(c.slug, "Q-04", `${why} — found "${hit[0]}"`);
-  }
+  sweepBanned(c.slug, JSON.stringify(c), "");
 
   // Q-05 — the risks block must name at least one real limit.
   if (
@@ -302,6 +310,25 @@ for (const c of concerns) {
 // manifest, and every other argument is the same. Q-19…Q-24 are treatment-only.
 for (const t of treatments) {
   checkMedia(t.slug, treatmentMediaUrls(t), treatmentMedia);
+
+  // Q-04 — the same sweep, over the media captions, labels and alt text only.
+  // Deliberately narrower than the concern sweep, which reads the whole object:
+  // the treatment prose predates these rules and uses some of these words
+  // legitimately (pico-laser's "not a guarantee of suitability" is the opposite
+  // of an outcome promise). Widening it is a prose-audit ticket, not this one.
+  // The separator has to be something no caption ends or starts with, or a
+  // phrase would match across two unrelated captions.
+  sweepBanned(
+    t.slug,
+    [
+      ...(t.manufacturerImages ?? []).flatMap((m) => [m.caption, m.alt]),
+      ...(t.figures ?? []).map((f) => f.caption),
+      ...(t.steps ?? []).flatMap((s) => [s.label, s.body]),
+      ...(t.areas ?? []).map((a) => (typeof a === "string" ? a : a.label)),
+    ].join("\n"),
+    "media caption: ",
+  );
+
   // Q-17 — rule R-07 wants the manufacturer named in four places. Two of them are
   // authored data, so a mark shipped without either is caught here rather than by
   // a compliance reviewer reading fourteen pages.
