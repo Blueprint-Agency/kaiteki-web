@@ -58,7 +58,7 @@ Blog media is staged in the repo (`content/blog/media/`) and pushed by a deploy 
 permanent git weight for files the build never reads.
 
 Instead: `config/concern-media.json` maps every source file to its CDN key and records its
-pixel dimensions, and `scripts/sync-concern-media.mjs` uploads from the designer's local
+pixel dimensions, and `scripts/sync-media.mjs concerns` uploads from the designer's local
 folder using R2 credentials from the environment. The manifest is what will give
 `scripts/validate-concerns.mts` the same build-time guarantee `check-blog.mts` gets from
 staged files, without the weight. Filenames are rewritten on upload from mixed-case

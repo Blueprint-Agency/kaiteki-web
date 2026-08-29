@@ -59,7 +59,7 @@ See **`docs/README.md`** for the full index. Phase status:
 
 ## Commands
 
-Package manager is **pnpm**. Node ≥20.16 (raised from 20.9 for `--env-file-if-exists`, which the concern-media scripts use; dev machine on 24.13; target Node 24 LTS for the prod Docker image per `docs/07`).
+Package manager is **pnpm**. Node ≥20.16 (raised from 20.9 for `--env-file-if-exists`, which the media scripts use; dev machine on 24.13; target Node 24 LTS for the prod Docker image per `docs/07`).
 
 ```bash
 pnpm install     # install deps

@@ -228,3 +228,50 @@ for nineteen pages), and `components/treatment-blocks.tsx` (top comment) documen
 deliberate 2026-07 move *away* from the layout Variant A partially returns to. The
 consequence is recorded in `docs/14` §Implementation Decisions: treatments keep their
 editorial spine and take media into it, rather than inheriting the concern hero.
+
+---
+
+## 10. Delivery, and regenerating this document
+
+Treatment media serves from **`https://cdn.kaiteki.my/treatments/<slug>/<name>.<ext>`**
+(bucket `kaiteki-web-prod`, prefix `treatments/`), mirroring concerns. The 37 MB of source
+binaries are **not** committed — the same divergence from `content/blog/AUTHORING.md` §3
+that ADR-0001 §4 already records, for the same reason, so no new ADR. `next.config.ts`
+`images.remotePatterns` fences image optimisation to `/blog/**`, `/concerns/**` and
+`/treatments/**`.
+
+**One pipeline, two page types.** `scripts/media-audit.mjs` is the engine — read the source
+folders, measure every image with `sips`, emit the matrix and the manifest. The facts live
+beside it in `scripts/media/treatments.mjs`: the two source folders, the 19 slugs in the
+order §3 publishes them, the figure and logo assignment tables, and the bucket reasons.
+`scripts/media/concerns.mjs` is its sibling. There is no second copy of either script.
+
+```bash
+pnpm audit:treatment-media            # prints the §3 matrix
+pnpm audit:treatment-media --write    # rewrites §3 of this file
+pnpm audit:treatment-media --manifest # rewrites config/treatment-media.json
+pnpm sync:treatment-media --dry-run   # prints every planned upload, writes nothing
+pnpm sync:treatment-media             # stages the renamed tree and runs one `aws s3 sync`
+```
+
+Source folders come from `TREATMENT_MEDIA_SOURCE`; R2 credentials from `.env.local`, never
+the repo. `sips` is macOS-only, so the audit is designer/dev tooling and does not run in CI.
+
+**69 of the 201 upload; 132 carry a `hold`** naming the reason, and a held asset is never
+synced. The buckets, and what each records:
+
+| Bucket | n | Why it never uploads |
+|---|--:|---|
+| `~devices` | 41 | `machine_*` + `product_*` — already composited into `/images/technology` (§2) |
+| `~partners` | 39 | 36 partner marks + 3 brand logos (§8) |
+| `~hub-cards` | 27 | `treatment_*` — concern hub cards, not treatment media (§5) |
+| `~shipped` | 12 | 10 `logob_*` already in `public/images/tech`, 2 photos that *are* the hero (§2) |
+| `~unassigned` | 7 | Hair transplant, vaginal rejuvenation, mesolipolysis, `logob_density` (§6–§7) |
+| `~zh` | 6 | CN duplicates, parked for `/zh` (§8) |
+
+**Filenames rename on upload** to treatment-scoped kebab-case describing the subject —
+`img_onda_saggingjawline.png` → `treatments/microwave-contouring/area-sagging-jawline.png`.
+The manifest preserves the original → new mapping plus each source's pixel dimensions, which
+is what lets `validate-concerns.mts` Q-14/Q-15 fail the build on a URL the sync will never
+put in the bucket. Those rules walk treatments and concerns from one implementation; there
+is no `validate-treatments.mts`.

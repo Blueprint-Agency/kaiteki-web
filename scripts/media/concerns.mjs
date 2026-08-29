@@ -1,31 +1,21 @@
-#!/usr/bin/env node
 /**
- * Concern media audit — the generator behind docs/11 §2 and config/concern-media.json.
- *
- *   pnpm audit:concern-media            # print the coverage matrix
- *   pnpm audit:concern-media --write    # rewrite §2 of docs/11 in place
- *   pnpm audit:concern-media --manifest # rewrite config/concern-media.json
- *
- * Source folders are the designer's local export (CONCERN_MEDIA_SOURCE), never the repo:
- * 44 MB of binaries is permanent git weight we chose not to carry (ADR-0001 §4).
+ * Concern media facts, read by scripts/media-audit.mjs. Everything here is a decision about
+ * *these* files — which folders they live in, which concern each one belongs to, and which
+ * ones no page reads. The machinery that measures and emits them is in the engine.
  *
  * Classification is filename-driven with an explicit override table for the 20 files that
  * carry no concern in their name and were classified by opening them (docs/11 §3).
- *
- * ponytail: dimensions come from macOS `sips`. This is local designer/dev tooling that
- * already requires the source folder on disk; port to a pure-JS header reader only if it
- * ever needs to run in CI.
  */
-import { execFileSync } from "node:child_process";
-import { readdirSync, readFileSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { uniqueKey } from "./load.mjs";
 
-const SOURCE = process.env.CONCERN_MEDIA_SOURCE;
-if (!SOURCE) throw new Error("set CONCERN_MEDIA_SOURCE to the media export folder (see .env.example)");
-const FOLDERS = ["1. concerns", "4. before after"];
-const IMAGE = /\.(jpe?g|png|gif|webp|avif)$/i;
-const DOC = "docs/11-concern-media-inventory.md";
-const MANIFEST = "config/concern-media.json";
+export const sourceEnv = "CONCERN_MEDIA_SOURCE";
+export const folders = ["1. concerns", "4. before after"];
+export const bucketPrefix = "concerns/";
+export const publicBase = "https://cdn.kaiteki.my/concerns/";
+export const groupField = "concern";
+export const manifestPath = "config/concern-media.json";
+export const docPath = "docs/11-concern-media-inventory.md";
+export const docAnchor = /(## 2\. Coverage matrix\n\nAfter the visual reclassification in §3\.\n\n)\|[\s\S]*?\n\n/;
 
 /** Row order of the matrix: the 14 concerns, then the three non-concern buckets. */
 const CONCERNS = [
@@ -185,6 +175,11 @@ function concernOf(name) {
   return "~unassigned";
 }
 
+export function classify(f) {
+  f.family = familyOf(f.folder, f.name);
+  f.group = concernOf(f.name);
+}
+
 /** Noise the original filenames carry that says nothing about the subject. */
 const NOISE =
   /^(pbanner[-_]|info[-_]|img[-_]ba[-_]|img[-_]|mp[-_]service[-_]|ba[-_]|skin[-_]|main[-_]feature[-_])/i;
@@ -244,8 +239,8 @@ function nameBanners(files) {
       .slice(0, f.name.lastIndexOf("."))
       .replace(/[-_]sm(?=\d*$)/i, "")
       .toLowerCase();
-    if (!byConcern.has(f.concern)) byConcern.set(f.concern, new Map());
-    const groups = byConcern.get(f.concern);
+    if (!byConcern.has(f.group)) byConcern.set(f.group, new Map());
+    const groups = byConcern.get(f.group);
     if (!groups.has(stem)) groups.set(stem, []);
     groups.get(stem).push(f);
   }
@@ -260,70 +255,27 @@ function nameBanners(files) {
   }
 }
 
-function dimensions(paths) {
-  // One sips call for the whole set; it prints a block per file in argument order.
-  const out = execFileSync("sips", ["-g", "pixelWidth", "-g", "pixelHeight", ...paths], {
-    encoding: "utf8",
-    maxBuffer: 1 << 24,
-  });
-  const dims = [];
-  let width;
-  for (const line of out.split("\n")) {
-    const w = line.match(/pixelWidth:\s*(\d+)/);
-    const h = line.match(/pixelHeight:\s*(\d+)/);
-    if (w) width = Number(w[1]);
-    if (h) dims.push({ width, height: Number(h[1]) });
-  }
-  if (dims.length !== paths.length) throw new Error(`sips returned ${dims.length} of ${paths.length}`);
-  return dims;
-}
-
-function scan() {
-  const files = [];
-  for (const folder of FOLDERS) {
-    for (const name of readdirSync(join(SOURCE, folder)).sort()) {
-      // desktop.ini, .DS_Store and any other stowaway: `sips` exits non-zero on them.
-      if (!IMAGE.test(name)) continue;
-      files.push({ folder, name, source: `${folder}/${name}` });
-    }
-  }
-  const dims = dimensions(files.map((f) => join(SOURCE, f.source)));
-  files.forEach((f, i) => {
-    f.width = dims[i].width;
-    f.height = dims[i].height;
-    f.family = familyOf(f.folder, f.name);
-    f.concern = concernOf(f.name);
-  });
-
-  // Keys are assigned after classification: results number per concern, and any leaf
-  // collision (two originals reducing to the same subject) gets a -2, -3 suffix.
+/** Keys are assigned after classification: results number per concern. */
+export function assignKeys(files) {
   const seq = new Map();
   const taken = new Set();
   nameBanners(files);
   for (const f of files) {
-    f.hold = HOLDS[f.name] || (PARKED.has(f.concern) ? "no concern page reads this" : undefined);
+    f.hold = HOLDS[f.name] || (PARKED.has(f.group) ? "no concern page reads this" : undefined);
     if (f.key) {
       taken.add(f.key);
       continue;
     }
-    const n = (seq.get(f.concern + f.family) || 0) + 1;
-    seq.set(f.concern + f.family, n);
-    let leaf = leafOf(f.family, f.name, f.concern, n);
-    // Two originals can reduce to the same subject (a duplicate export, a second crop).
-    const base = leaf;
-    for (let i = 2; taken.has(`${prefixOf(f.concern)}/${leaf}`); i++) {
-      leaf = base.replace(/(\.[a-z]+)$/i, `-${i}$1`);
-    }
-    f.key = `${prefixOf(f.concern)}/${leaf}`;
-    taken.add(f.key);
+    const n = (seq.get(f.group + f.family) || 0) + 1;
+    seq.set(f.group + f.family, n);
+    f.key = uniqueKey(taken, prefixOf(f.group), leafOf(f.family, f.name, f.group, n));
   }
-  return files;
 }
 
-function matrix(files) {
+export function matrix(files) {
   const rows = [...CONCERNS, ...BUCKETS].map((concern) => {
     const counts = FAMILIES.map(
-      (fam) => files.filter((f) => f.concern === concern && f.family === fam).length,
+      (fam) => files.filter((f) => f.group === concern && f.family === fam).length,
     );
     return { concern, counts, total: counts.reduce((a, b) => a + b, 0) };
   });
@@ -348,42 +300,6 @@ function matrix(files) {
       return `| ${label} | ${cells.join(" | ")} | ${r.total} | ${verdict(r)} |`;
     }),
   ];
-  return { rows, table: lines.join("\n") };
-}
-
-const files = scan();
-const { rows, table } = matrix(files);
-
-if (process.argv.includes("--manifest")) {
-  const manifest = {
-    "//": "Generated by scripts/audit-concern-media.mjs --manifest. Source binaries are not committed (ADR-0001 §4); this file is both the provenance record and the upload plan for scripts/sync-concern-media.mjs.",
-    bucketPrefix: "concerns/",
-    publicBase: "https://cdn.kaiteki.my/concerns/",
-    assets: files.map((f) => ({
-      source: f.source,
-      key: f.key,
-      concern: f.concern,
-      family: f.family,
-      width: f.width,
-      height: f.height,
-      // Present means "mapped, but do not upload" — the reason is the whole point.
-      ...(f.hold ? { hold: f.hold } : {}),
-    })),
-  };
-  writeFileSync(MANIFEST, `${JSON.stringify(manifest, null, 2)}\n`);
-  const held = files.filter((f) => f.hold).length;
-  console.log(`${MANIFEST}: ${files.length} assets, ${held} held back`);
-} else if (process.argv.includes("--write")) {
-  const doc = readFileSync(DOC, "utf8");
-  const next = doc.replace(
-    /(## 2\. Coverage matrix\n\nAfter the visual reclassification in §3\.\n\n)\|[\s\S]*?\n\n/,
-    `$1${table}\n\n`,
-  );
-  if (next === doc) throw new Error(`${DOC}: §2 table not found — has the heading changed?`);
-  writeFileSync(DOC, next);
-  console.log(`${DOC} §2 rewritten (${files.length} files)`);
-} else {
   const covered = rows.filter((r) => !r.concern.startsWith("~") && !EXCLUDED.has(r.concern)).length;
-  console.log(table);
-  console.log(`\n${files.length} files · ${covered}/14 concerns covered`);
+  return { table: lines.join("\n"), summary: `${files.length} files · ${covered}/14 concerns covered` };
 }
