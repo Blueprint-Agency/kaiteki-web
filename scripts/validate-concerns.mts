@@ -42,6 +42,7 @@
 //         every zone carries a label and a src
 //   Q-21  (treatments) the manufacturer renderer keeps the two labelling places
 //         that live in code — R-07 machine-checked rather than commented
+//   Q-22  (treatments) none of the five HOLD/EXCLUDE treatments declares media
 //   Q-23  (treatments) no more figures than Variant A renders, floor(sections/2)
 //   Q-24  (treatments) no rail entry points at a section no block renders
 //   Q-20  every concern is named in the sign-off ledger — unsigned pages are
@@ -89,11 +90,29 @@ const anchorsOf = (c: Concern): string[] => concernToc(c, true).map((h) => h.id)
 const STEP_MAX_WIDTH = 156;
 
 /**
- * Every anchor id the treatment renderers actually set, read from their source
- * rather than restated here: a list restated in the gate is a second source of
- * truth, and it goes stale the first time a block is renamed. Section anchors
- * are derived (`id={headingAnchor(...)}`) and checked against the authored
- * headings instead.
+ * The five treatments docs/13 §9 excludes from the media work — four HOLD plus
+ * one EXCLUDE. Listed here because Q-22 is the rule that they stay empty, and a
+ * rule cannot read its own exceptions out of the data it is checking.
+ */
+const NO_MEDIA = new Set([
+  "botulinum-toxin",
+  "exosome-therapy",
+  "hifu",
+  "ultherapy",
+  "laser-hair-removal",
+]);
+
+/**
+ * Every anchor id the treatment renderers set as a literal, read from their
+ * source rather than restated here: a list restated in the gate is a second
+ * source of truth and goes stale the first time a block is renamed.
+ *
+ * **This is a spelling check, not a render check** — it proves the id exists in
+ * the renderers, not that the block owning it ran. That is as far as a static
+ * check reaches, and it is enough for the failure it exists for: the rail and
+ * the page derive from one list, so an entry can only go dead by naming an
+ * anchor the components no longer set. Section anchors are derived
+ * (`id={headingAnchor(...)}`) and checked against the authored headings.
  */
 const RENDERED_ANCHORS = new Set(
   ["components/TreatmentView.tsx", "components/treatment-blocks.tsx"].flatMap((f) =>
@@ -278,9 +297,9 @@ for (const c of concerns) {
   }
 }
 
-// Q-14 / Q-15 / Q-17, second data source. Treatment media serves from the
-// treatments/ prefix and its own manifest; every other argument is the same.
-// `manufacturerImages` is the only CDN media field on Treatment until ticket 02.
+// The treatment rules. Q-14 / Q-15 / Q-17 are the concern rules against a second
+// data source — treatment media serves from the treatments/ prefix and its own
+// manifest, and every other argument is the same. Q-19…Q-24 are treatment-only.
 for (const t of treatments) {
   checkMedia(t.slug, treatmentMediaUrls(t), treatmentMedia);
   // Q-17 — rule R-07 wants the manufacturer named in four places. Two of them are
@@ -289,6 +308,17 @@ for (const t of treatments) {
   for (const m of t.manufacturerImages ?? []) {
     if (!m.caption.trim()) fail(t.slug, "Q-17", `manufacturer image "${m.src}" has no caption (R-07)`);
     if (!m.alt.trim()) fail(t.slug, "Q-17", `manufacturer image "${m.src}" has no alt (R-07)`);
+  }
+  // Q-17, second data source: a figure's caption carries its meaning, and the
+  // image is alt="" precisely because of that — an uncaptioned one says nothing.
+  for (const f of t.figures ?? []) {
+    if (!f.caption?.trim()) fail(t.slug, "Q-17", `figure "${f.src}" has no caption`);
+  }
+
+  // Q-22 — the exclusion is enforced, not remembered. These five have no media
+  // to author (docs/13 §9); a field appearing on one is a mis-wire, not a gift.
+  if (NO_MEDIA.has(t.slug) && treatmentMediaUrls(t).length) {
+    fail(t.slug, "Q-22", `declares media but is HOLD/EXCLUDE in docs/13 §9`);
   }
 
   // Q-19 — the anti-upscaling guard on `steps`, the treatment twin of Q-16.
@@ -331,6 +361,11 @@ for (const t of treatments) {
   // can only go dead by naming an anchor no block sets; the prototype shipped
   // exactly that (`devices`) and only a rendered page revealed it.
   const authored = new Set((t.sections ?? []).map((s) => headingAnchor(s.heading)));
+  // Both relation flags are passed true on purpose: that is the maximal list
+  // the rail can ever emit for this treatment, so every id it could produce is
+  // checked, not just the ones today's relations happen to switch on. (The
+  // relations module cannot be imported here — it uses extensionless imports
+  // that node's type stripping will not resolve.)
   for (const h of treatmentToc(t, true, true)) {
     if (!RENDERED_ANCHORS.has(h.id) && !authored.has(h.id)) {
       fail(t.slug, "Q-24", `rail entry "${h.text}" → #${h.id}, which no rendered block owns`);
@@ -344,7 +379,11 @@ for (const t of treatments) {
 // the treatment data so they cannot be edited away one page at a time.
 if (treatments.some((t) => t.manufacturerImages?.length)) {
   const src = readFileSync(join(import.meta.dirname, "..", "components/treatment-blocks.tsx"), "utf8");
-  const block = src.slice(src.indexOf("export function ManufacturerImages"));
+  const from = src.indexOf("export function ManufacturerImages");
+  // Bounded at the next export: a disclaimer three blocks further down the file
+  // is not this block rendering one.
+  const to = src.indexOf("\nexport function ", from + 1);
+  const block = src.slice(from, to === -1 ? undefined : to);
   if (!/supplied by the device manufacturers/.test(block)) {
     fail("all", "Q-21", "manufacturer images render no heading paragraph naming the source (R-07)");
   }
