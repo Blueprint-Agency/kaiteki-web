@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { Heading } from "@/lib/blog";
+import { TOC_MIN_HEADINGS } from "@/lib/toc";
 
 /**
  * In-article contents. Anchor links plus a scroll-spy that highlights the
@@ -28,7 +29,7 @@ export function ArticleToc({
   const ids = list.map((h) => h.id).join(",");
   const active = useActiveHeading(ids);
 
-  if (headings.length < 3) return null;
+  if (headings.length < TOC_MIN_HEADINGS) return null;
 
   const sidebar = variant === "sidebar";
 

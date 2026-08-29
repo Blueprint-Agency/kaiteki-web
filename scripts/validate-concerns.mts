@@ -24,6 +24,7 @@ import { concerns } from "../content/data/concerns.ts";
 import { doctorBySlug } from "../content/data/doctors.ts";
 import registry from "../config/concerns.json" with { type: "json" };
 import manifest from "../config/concern-media.json" with { type: "json" };
+import { concernToc } from "../lib/concern-toc.ts";
 import type { Concern } from "../lib/types.ts";
 
 const errors: string[] = [];
@@ -41,26 +42,13 @@ const BANNED: [RegExp, string][] = [
   [/\bfrom RM\b/i, "price (R-03)"],
 ];
 
-const headingAnchor = (h: string) =>
-  h.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-
-/** The anchor ids ConcernView actually renders, given the authored data. */
-function anchorsOf(c: Concern): string[] {
-  return [
-    ...(c.sections ?? []).map((s) => headingAnchor(s.heading)),
-    c.drivers && "causes",
-    c.variant && "which-type",
-    c.locationBlock && "where",
-    c.seeDoctor && "see-a-doctor",
-    c.treatments.length > 0 && "treatments",
-    c.compare && "compare",
-    c.firstVisit && "first-visit",
-    c.risks && "risks",
-    c.costFactors && "cost",
-    "technology",
-    c.faqs?.length && "faq",
-  ].filter((x): x is string => typeof x === "string");
-}
+/**
+ * The anchor ids ConcernView actually renders, given the authored data — read
+ * from the same list that feeds the page's contents rail, so a jump-nav anchor
+ * and a rail entry can never disagree about what the page contains. Technology
+ * is passed as present: it is derived from the relations map, not from `c`.
+ */
+const anchorsOf = (c: Concern): string[] => concernToc(c, true).map((h) => h.id);
 
 // Q-14…Q-16 — every authored media URL must be one the sync script will
 // actually upload. Parked keys are excluded on purpose: they never upload.
@@ -144,7 +132,9 @@ for (const c of concerns) {
     warnings.push(`${c.slug} · Q-08: bottom CTA falls back to the default string (B-03/B-04)`);
   }
 
-  // Q-10 / Q-13 — jump nav.
+  // Q-10 / Q-13 — jump nav. The horizontal jump bar retired from concern pages
+  // with the heading gutter (docs/12 §Layout); `jumpNav` survives as the
+  // authored ordering hint, so the gate stays until the field is retired too.
   const anchors = new Set(anchorsOf(c));
   for (const j of c.jumpNav ?? []) {
     if (!anchors.has(j.id)) {

@@ -1,5 +1,6 @@
-import Image from "next/image";
+import { getImageProps } from "next/image";
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { Container } from "@/components/Container";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { LeadAnswer } from "@/components/LeadAnswer";
@@ -7,17 +8,11 @@ import { Ledger, ReviewByline } from "@/components/Ledger";
 import { Faq } from "@/components/Faq";
 import { Disclaimer } from "@/components/Disclaimer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
+import { ArticleToc } from "@/components/blog/ArticleToc";
+import { FactRail, CtaMid, LocationsBlock } from "@/components/treatment-blocks";
 import {
-  Block,
-  Split,
-  CLEAR_CHROME,
-  FactRail,
-  JumpNav,
-  CtaMid,
-  ManufacturerImages,
-  LocationsBlock,
-} from "@/components/treatment-blocks";
-import {
+  Section,
+  Band,
   DriversBlock,
   VariantBlock,
   LocationBlock,
@@ -32,18 +27,28 @@ import {
 import { concernBySlug } from "@/content/data/concerns";
 import { technologyOfConcern, treatmentsOfConcern } from "@/content/data/relations";
 import { doctorBySlug, reviewerByline } from "@/content/data/doctors";
+import { concernToc, headingAnchor } from "@/lib/concern-toc";
+import { TOC_MIN_HEADINGS } from "@/lib/toc";
 import { waForConcern } from "@/lib/wa";
 import type { Concern } from "@/lib/types";
 
 /**
- * Concern-page template v1 — the 18-block spine (config/concerns.json).
+ * Concern-page template v2 — the editorial banner layout (docs/12).
  *
- * The order never changes and there is no `if (archetype === …)` anywhere: a
- * block renders when its data exists and returns null when it does not, so
- * "lite depth omits block 10" is satisfied by `compare` being absent from the
- * data rather than by a branch here. `archetype` and `depth` are injected into
- * each concern from config/concerns.json (content/data/concerns.ts) and are
- * read here only for the schema and the QA-visible ledger.
+ * The block spine is unchanged: order is fixed, there is no
+ * `if (archetype === …)` anywhere, and a block renders when its data exists and
+ * returns null when it does not. What changed is the frame around it —
+ *
+ *   · a full-bleed banner with the H1 in the empty right half the artwork was
+ *     cut for, replacing the photo-beside-headline hero;
+ *   · one reading column beside the blog's sticky contents rail, replacing the
+ *     sticky 21rem heading gutter (`Split`) and the horizontal jump bar. Both
+ *     stay on /treatments, which this file no longer shares a layout with;
+ *   · exactly three surfaced bands, each used once: espresso is the conversion
+ *     moment, tint the technology comparison, porcelain the safety notice.
+ *
+ * A concern with no banner and no media renders the same page as clean text —
+ * there is no placeholder furniture to advertise what is missing.
  */
 
 const dmy = (iso: string) =>
@@ -56,8 +61,84 @@ function nextReview(iso: string) {
   return dmy(d.toISOString());
 }
 
-const slugifyHeading = (h: string) =>
-  h.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+/**
+ * C-01 · The banner. Every `pbanner_*` places its subject hard left and
+ * reserves the right half for copy, so `object-position: left` is part of the
+ * contract, not a style choice — centre-cropping destroys the composition.
+ *
+ * `<picture>` rather than two `<Image>`s: a hidden `<img>` is still fetched, so
+ * the two-component trick would download both halves of the responsive pair on
+ * every visit. `getImageProps` keeps Next's optimisation on both sources.
+ */
+function Banner({ c }: { c: Concern }) {
+  if (!c.banner) return null;
+  const common = { alt: c.banner.alt, fill: true, priority: true, sizes: "100vw" } as const;
+  const desktop = getImageProps({ ...common, src: c.banner.src }).props;
+  const { srcSet: mobileSrcSet, ...img } = getImageProps({ ...common, src: c.banner.sm }).props;
+
+  return (
+    <div className="relative aspect-[16/9] w-full bg-tint sm:aspect-[2.88/1]">
+      <picture>
+        <source media="(min-width: 640px)" srcSet={desktop.srcSet} sizes={desktop.sizes} />
+        <source srcSet={mobileSrcSet} sizes={img.sizes} />
+        {/* eslint-disable-next-line jsx-a11y/alt-text -- alt comes from getImageProps */}
+        <img {...img} className="absolute inset-0 h-full w-full object-cover object-left" />
+      </picture>
+      {/* The scrim is what gives the headline its contrast, so it only exists
+          where the headline is over the artwork — below sm the copy sits under
+          the image and a scrim would wash out half the shot for nothing. */}
+      <div
+        aria-hidden
+        className="absolute inset-0 hidden bg-gradient-to-r from-transparent via-page/25 to-page/92 sm:block"
+      />
+    </div>
+  );
+}
+
+/**
+ * The reading column, with the sticky contents rail beside it on wide screens.
+ * The rail is rendered once, in the first group; the groups after it keep the
+ * column aligned with an empty spacer. When there is no contents at all the
+ * column is not reserved either — an empty 15rem gutter is the thing this
+ * layout exists to remove.
+ */
+function Reading({
+  hasRail,
+  rail,
+  children,
+}: {
+  hasRail: boolean;
+  rail?: ReactNode;
+  children: ReactNode;
+}) {
+  // A sticky element only sticks while its own parent is on screen, so the rail
+  // has to live in the group it accompanies. The bands are placed *after* that
+  // group for exactly this reason — the article runs unbroken beside the rail,
+  // and the tail group is indented to stay aligned rather than rendering an
+  // empty aside, which would put the gutter straight back.
+  if (!hasRail) {
+    return (
+      <Container>
+        <div className="min-w-0">{children}</div>
+      </Container>
+    );
+  }
+  if (!rail) {
+    return (
+      <Container>
+        <div className="min-w-0 lg:pl-[19rem]">{children}</div>
+      </Container>
+    );
+  }
+  return (
+    <Container>
+      <div className="lg:grid lg:grid-cols-[15rem_1fr] lg:items-start lg:gap-16">
+        <aside className="hidden lg:sticky lg:top-24 lg:block">{rail}</aside>
+        <div className="min-w-0">{children}</div>
+      </div>
+    </Container>
+  );
+}
 
 export function ConcernView({ c }: { c: Concern }) {
   const doctor = doctorBySlug(c.reviewedBy);
@@ -73,193 +154,218 @@ export function ConcernView({ c }: { c: Concern }) {
     })
     .filter((r): r is { slug: string; name: string; reason: string } => Boolean(r));
 
+  // The rail is fed from the same list the QA gate checks jump-nav anchors
+  // against, so every entry scrolls to a section this page actually renders.
+  // Below ArticleToc's own 3-heading threshold there is no contents at all, and
+  // the rail column is not reserved either — an empty 15rem gutter is the thing
+  // this layout exists to remove.
+  const headings = concernToc(c, techItems.length > 0);
+  const hasRail = headings.length >= TOC_MIN_HEADINGS;
+
   return (
     <article>
-      {/* ── 01 · Hero, in-brief and medical reviewer. The ghost CTA catches the
-          visitor who arrives already decided, without opening a medical page
-          as a sales page — it is the first of the three permitted CTAs. ──── */}
-      <header>
-        <Container className="pt-8 pb-14 sm:pb-16">
+      {/* ── 01 · Banner, breadcrumb, ghost CTA and medical reviewer. The ghost
+          CTA catches the visitor who arrives already decided, without opening a
+          medical page as a sales page — first of the three permitted CTAs. ── */}
+      <header className="border-b border-hairline">
+        {/* Breadcrumbs stay above the H1 (docs/04 §5, docs/06 §4.9), which on a
+            banner page means above the banner rather than under it. */}
+        <Container className="pt-6">
           <Breadcrumbs items={[{ label: "Concerns", href: "/concerns" }, { label: c.name }]} />
-          <div className="mt-8 grid gap-10 lg:grid-cols-[1fr_0.78fr] lg:items-center lg:gap-16">
-            <div>
-              <p className="kicker flex items-center gap-3">
-                <span aria-hidden className="h-px w-7 flex-none bg-sand" />
-                Concern · {c.group}
-              </p>
-              <h1 className="h-hero mt-5">{c.name}</h1>
-              <p className="mt-6 max-w-[48ch] text-lg leading-relaxed text-ink-700">{c.summary}</p>
-              <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
-                <WhatsAppButton
-                  href={wa}
-                  variant="outline"
-                  position="hero"
-                  label="Book a free consultation"
-                />
-                <p className="text-sm text-ink-500">
-                  Free, about 20–30 minutes, no obligation to book treatment.
+        </Container>
+
+        {c.banner ? (
+          <div className="relative mt-6">
+            <Banner c={c} />
+            {/* On sm+ the headline sits in the banner's empty right half; on
+                narrow screens the artwork is too tight for it, so it falls
+                below the image instead of over a face. */}
+            <Container className="sm:absolute sm:inset-0 sm:flex sm:items-center">
+              <div className="pt-8 sm:ml-auto sm:w-1/2 sm:pt-0">
+                <p className="kicker">Concern · {c.group}</p>
+                <h1 className="h-hero mt-4">{c.name}</h1>
+                <p className="mt-5 max-w-[46ch] text-lg leading-relaxed text-ink-700">
+                  {c.summary}
                 </p>
               </div>
-              {doctor && (
-                <div className="mt-8 max-w-sm">
-                  <ReviewByline
-                    doctorName={doctor.fullName}
-                    mmc={doctor.mmc}
-                    date={reviewedDate}
-                    photo={doctor.photo}
-                    href={`/doctors/${doctor.slug}`}
-                  />
-                </div>
-              )}
+            </Container>
+          </div>
+        ) : (
+          <Container className="pt-6">
+            <div className="max-w-[52ch]">
+              <p className="kicker">Concern · {c.group}</p>
+              <h1 className="h-hero mt-4">{c.name}</h1>
+              <p className="mt-5 text-lg leading-relaxed text-ink-700">{c.summary}</p>
             </div>
-            <div className="relative aspect-[3/2] overflow-hidden rounded-2xl rounded-t-[4rem] bg-tint ring-1 ring-hairline lg:aspect-[4/5]">
-              <Image
-                src={c.image}
-                alt={`${c.name}, assessed and treated at Kaiteki Skin Aesthetic Clinic Malaysia`}
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 420px"
-                className="object-cover"
+          </Container>
+        )}
+
+        <Container className="py-8 sm:py-10">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+            <WhatsAppButton
+              href={wa}
+              variant="outline"
+              position="hero"
+              label="Book a free consultation"
+            />
+            <p className="text-sm text-ink-500">
+              Free, about 20–30 minutes, no obligation to book treatment.
+            </p>
+          </div>
+          {doctor && (
+            <div className="mt-7 max-w-sm">
+              <ReviewByline
+                doctorName={doctor.fullName}
+                mmc={doctor.mmc}
+                date={reviewedDate}
+                photo={doctor.photo}
+                href={`/doctors/${doctor.slug}`}
               />
             </div>
-          </div>
+          )}
         </Container>
       </header>
 
       {/* 02 — three neutral process facts, never a time to a result (R-01). */}
       <FactRail facts={c.facts} />
 
-      {/* The answer-first capsule, identical across the site so it stays
-          recognisable and extractable by an assistant. */}
-      <Container className="py-12 sm:py-14">
-        <div className="mx-auto max-w-[68ch]">
-          <LeadAnswer>{c.leadAnswer}</LeadAnswer>
-        </div>
-      </Container>
+      {/* ── The reading column. Prose holds its measure; tables, grids and media
+          take the column's full width. ─────────────────────────────────────── */}
+      <Reading
+        hasRail={hasRail}
+        rail={hasRail ? <ArticleToc headings={headings} variant="sidebar" /> : undefined}
+      >
+        {hasRail && (
+          <div className="pt-10 lg:hidden">
+            <ArticleToc headings={headings} />
+          </div>
+        )}
 
-      {/* 02b */}
-      <JumpNav items={c.jumpNav} />
+        <Section>
+          <div className="max-w-[68ch]">
+            <LeadAnswer>{c.leadAnswer}</LeadAnswer>
+          </div>
+        </Section>
 
-      {/* 03 · What is X — the reading spine. Anchor ids derive from the heading
-          so any section is addressable from the jump nav without a second field. */}
-      <Block>
-        <div className="mx-auto max-w-[68ch] space-y-14">
-          {c.sections?.map((s) => (
-            <section key={s.heading} id={slugifyHeading(s.heading)} className={CLEAR_CHROME}>
-              <h2 className="h-section">{s.heading}</h2>
-              <div className="prose mt-6 space-y-5 leading-[1.75] text-ink-700">
-                {s.body.map((p, i) => (
-                  <p key={i} className={i === 0 ? "text-lg text-ink-900" : undefined}>
-                    {p}
-                  </p>
+        {/* 03 · What is X — anchor ids derive from the heading, so the rail
+            addresses any section without a second authored field. */}
+        {c.sections?.map((s) => (
+          <Section key={s.heading} id={headingAnchor(s.heading)}>
+            <h2 className="h-section">{s.heading}</h2>
+            <div className="prose mt-6 max-w-[68ch] space-y-5 leading-[1.75] text-ink-700">
+              {s.body.map((p, i) => (
+                <p key={i} className={i === 0 ? "text-lg text-ink-900" : undefined}>
+                  {p}
+                </p>
+              ))}
+            </div>
+            {s.list && (
+              <ul className="mt-6 divide-y divide-hairline border-y border-hairline">
+                {s.list.map((li) => (
+                  <li key={li} className="max-w-[68ch] py-3.5 leading-relaxed text-ink-700">
+                    {li}
+                  </li>
                 ))}
-              </div>
-              {s.list && (
-                <ul className="mt-6 divide-y divide-hairline border-y border-hairline">
-                  {s.list.map((li) => (
-                    <li key={li} className="py-3.5 leading-relaxed text-ink-700">
-                      {li}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </section>
-          )) ?? (
-            <p className="prose text-lg leading-relaxed text-ink-700">
+              </ul>
+            )}
+          </Section>
+        )) ?? (
+          <Section>
+            <p className="prose max-w-[68ch] text-lg leading-relaxed text-ink-700">
               {c.summary} A full, doctor-reviewed guide to {c.name.toLowerCase()} is being
               finalised. Our doctors can talk you through the options at a free consultation.
             </p>
-          )}
-        </div>
-      </Block>
+          </Section>
+        )}
 
-      {/* 04 · 05 · 06 — the three archetype-variant blocks. */}
-      <DriversBlock d={c.drivers} />
-      <VariantBlock v={c.variant} />
-      <LocationBlock l={c.locationBlock} />
+        {/* 04 · 05 · 06 — the three archetype-variant blocks. */}
+        <DriversBlock d={c.drivers} />
+        <VariantBlock v={c.variant} />
+        <LocationBlock l={c.locationBlock} />
 
-      {/* 07 */}
-      <SeeDoctorBlock s={c.seeDoctor} />
+        {/* 07 */}
+        <SeeDoctorBlock s={c.seeDoctor} />
 
-      {/* 08 — the primary CTA, placed where the visitor has a question they
-          cannot answer alone. */}
+        {/* 09 · 10 */}
+        <TreatmentsBlock c={c} options={options} />
+        <CompareBlock c={c.compare} />
+      </Reading>
+
+      {/* 08 — band 1 of 3, espresso: the conversion moment, placed where the
+          visitor has just read the options and cannot pick between them alone. */}
       <CtaMid cta={c.ctaMid} href={wa} position="mid" />
 
-      {/* 09 · 10 */}
-      <TreatmentsBlock c={c} options={options} />
-      <CompareBlock c={c.compare} />
-
-      {/* 11 — manufacturer imagery only, labelled in four places (R-07). */}
-      <ManufacturerImages images={c.manufacturerImages} />
-
-      {/* 12 · 13 · 14 */}
-      <FirstVisitBlock f={c.firstVisit} />
-      <ConcernRisksBlock r={c.risks} />
-      <ConcernCostBlock c={c.costFactors} href={wa} />
-
-      {/* 15 — the lead sentence is the point: a bare logo wall says nothing,
-          "the device is matched to you" is a reason to choose Kaiteki. */}
+      {/* 15 — band 2 of 3, tint: the technology comparison. The lead sentence is
+          the point — a bare logo wall says nothing, "the device is matched to
+          you" is a reason to choose Kaiteki. */}
       {techItems.length > 0 && (
-        <Block id="technology" tone="tint">
-          <Split aside={<h2 className="h-section">Technology used</h2>}>
-            <p className="max-w-[62ch] leading-relaxed text-ink-700">
-              {c.technologyIntro ??
-                "Having more than one platform means the doctor can match the device to your skin type and to what is being treated, rather than fitting your skin to a single machine."}
-            </p>
-            <ul className="mt-8 flex flex-wrap gap-2">
-              {techItems.map((x) => (
-                <li key={x.slug}>
-                  <Link
-                    href={`/technology/${x.slug}`}
-                    className="inline-flex rounded-full border border-hairline bg-surface px-3.5 py-1.5 text-sm text-ink-700 transition-colors hover:border-mocha hover:text-espresso"
-                  >
-                    {x.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </Split>
-        </Block>
+        <Band id="technology" tone="tint">
+          <h2 className="h-section">Technology used</h2>
+          <p className="mt-6 max-w-[62ch] leading-relaxed text-ink-700">
+            {c.technologyIntro ??
+              "Having more than one platform means the doctor can match the device to your skin type and to what is being treated, rather than fitting your skin to a single machine."}
+          </p>
+          <ul className="mt-8 flex flex-wrap gap-2">
+            {techItems.map((x) => (
+              <li key={x.slug}>
+                <Link
+                  href={`/technology/${x.slug}`}
+                  className="inline-flex rounded-full border border-hairline bg-surface px-3.5 py-1.5 text-sm text-ink-700 transition-colors hover:border-mocha hover:text-espresso"
+                >
+                  {x.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </Band>
       )}
 
-      {/* 16 — native <details>, answers always in the DOM (R-10). */}
-      {c.faqs && c.faqs.length > 0 && (
-        <Block id="faq">
-          <Split aside={<h2 className="h-section">Common questions</h2>}>
-            <Faq items={c.faqs} />
-          </Split>
-        </Block>
-      )}
+      {/* 13 — band 3 of 3, porcelain: the safety notice. */}
+      <ConcernRisksBlock r={c.risks} />
 
-      {/* 17 */}
-      <RelatedConcernsBlock items={related} />
+      {/* 12 · 14 · 16 · 17 — the tail, past the three bands. */}
+      <Reading hasRail={hasRail}>
+        <FirstVisitBlock f={c.firstVisit} />
+        <ConcernCostBlock c={c.costFactors} href={wa} />
 
-      {/* 18 — bottom CTA. Heading and body are per-concern strings (spec bugs
-          B-03/B-04): "what's causing it" is nonsense on a tattoo, and "your
-          skin" is wrong for a scalp or a palm. */}
-      <Block tone="tint">
-        <div className="grid gap-10 lg:grid-cols-[1fr_0.72fr] lg:items-center lg:gap-16">
-          <div>
-            <h2 className="h-section max-w-[18ch]">
-              {c.ctaHeading ?? "Have a doctor look at it"}
-            </h2>
-            <p className="mt-5 max-w-[52ch] leading-relaxed text-ink-700">
-              The consultation is free, takes about 20–30 minutes, and there is no obligation to
-              book treatment afterwards. A doctor will examine {c.ctaAssesses ?? "your skin"} and
-              talk you through what is, and is not, worth doing.
-            </p>
-            <WhatsAppButton
-              href={wa}
-              size="lg"
-              position="bottom"
-              label="Book a free consultation"
-              className="mt-8"
-            />
-            {/* All 9 branches, every one an internal link — never "+6 more" (R-12). */}
-            <LocationsBlock />
-          </div>
+        {/* 16 — native <details>, answers always in the DOM (R-10). */}
+        {c.faqs && c.faqs.length > 0 && (
+          <Section id="faq">
+            <h2 className="h-section">Common questions</h2>
+            <div className="mt-6">
+              <Faq items={c.faqs} />
+            </div>
+          </Section>
+        )}
+
+        <RelatedConcernsBlock items={related} />
+      </Reading>
+
+      {/* 18 — bottom CTA, on page ground: the three surfaced bands are spent.
+          Heading and body are per-concern strings (spec bugs B-03/B-04):
+          "what's causing it" is nonsense on a tattoo, and "your skin" is wrong
+          for a scalp or a palm. */}
+      <Container className="border-t border-hairline py-14 sm:py-20">
+        <div className="max-w-[62ch]">
+          <h2 className="h-section max-w-[18ch]">
+            {c.ctaHeading ?? "Have a doctor look at it"}
+          </h2>
+          <p className="mt-5 max-w-[52ch] leading-relaxed text-ink-700">
+            The consultation is free, takes about 20–30 minutes, and there is no obligation to
+            book treatment afterwards. A doctor will examine {c.ctaAssesses ?? "your skin"} and
+            talk you through what is, and is not, worth doing.
+          </p>
+          <WhatsAppButton
+            href={wa}
+            size="lg"
+            position="bottom"
+            label="Book a free consultation"
+            className="mt-8"
+          />
+          {/* All 9 branches, every one an internal link — never "+6 more" (R-12). */}
+          <LocationsBlock />
         </div>
-      </Block>
+      </Container>
 
       {/* 18 · ledger — reviewer, review date, derived next-review date (R-08). */}
       <Container className="py-12 sm:py-14">

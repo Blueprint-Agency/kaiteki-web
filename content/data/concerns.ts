@@ -32,6 +32,15 @@ export const concerns: Concern[] = [
     seoDescription:
       "Active acne and acne scarring are different problems with different treatments. A doctor assesses which you have. Book a free consultation at Kaiteki.",
 
+    // ── 01 · the banner pair. Subject hard left, headline in the right half.
+    // The alt describes the illustrative photograph as what it is: this is not
+    // a Kaiteki patient and not a result, so it must not read as either.
+    banner: {
+      src: "https://cdn.kaiteki.my/concerns/acne/banner.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/acne/banner-sm.jpg",
+      alt: "Illustrative photograph: a person holding a magnifying glass over a spot on their cheek",
+    },
+
     // ── 02 · three neutral process facts. The v2 spec's "results in 4–8 weeks"
     // was removed outright: it is an outcome promise (R-01), and it is wrong for
     // scarring, where collagen remodelling continues for months.
