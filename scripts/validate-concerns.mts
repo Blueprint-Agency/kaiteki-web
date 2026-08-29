@@ -1,5 +1,16 @@
 // Concern-template QA gate (spec §08). Every check here is a rule that would
-// otherwise be caught in review, or not at all:
+// otherwise be caught in review, or not at all.
+//
+// The media rules — Q-14, Q-15, Q-17, Q-21 — are page-type-agnostic in everything
+// but the CDN prefix and the manifest they read, so they walk treatments as well
+// as concerns from one implementation (docs/14 §Testing Decisions). There is no
+// validate-treatments.mts: two near-identical gates drift, and the drift ships as
+// a page that 404s its own imagery.
+//
+// Q-16 is the exception and stays concern-only: it is the anti-upscaling guard on
+// the results gallery, and treatments have no results (docs/14 §"No results gallery,
+// and no compliance reversal"). Its treatment twin is the 156px `steps` ceiling,
+// which arrives with the field in ticket 02.
 //
 //   Q-02  depth matches the registry: full = 12 FAQs + comparison table,
 //         lite  = 8 FAQs and NO comparison table
@@ -10,28 +21,32 @@
 //   Q-08  bottom-CTA heading and body are concern-specific
 //   Q-10  every jump-nav anchor resolves to a block the page actually renders
 //   Q-13  jump nav is at most 7 items
-//   Q-14  every media src sits on the concerns CDN prefix (never public/)
-//   Q-15  every media src resolves to an entry in config/concern-media.json
+//   Q-14  every media src sits on its page type's CDN prefix (never public/)
+//   Q-15  every media src resolves to an entry in that page type's manifest
 //         that the sync script will actually upload (not parked, not held)
 //   Q-16  results declare a native width + ratio, and the width matches the
 //         manifest's recorded source width (the anti-upscaling guard)
-//   Q-17  slides carry alt and NO caption; figures carry a caption
+//   Q-17  slides carry alt and NO caption; figures carry a caption; a treatment's
+//         manufacturer images carry both (rule R-07 labels in four places)
 //   Q-18  a concern declaring results has the shared disclaimer rendered
 //   Q-19  figures are authored one per cause — they pair by position, so a
 //         mismatch re-captions or drops photographs without saying so
 //   Q-20  every concern is named in the sign-off ledger — unsigned pages are
 //         warned by name, and every ledger entry resolves to a real doctor
+//   Q-21  (--live only) every media URL actually resolves in the bucket
 //
 // Run: pnpm validate:concerns   (exits non-zero on any failure)
 import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { concerns } from "../content/data/concerns.ts";
 import { doctorBySlug } from "../content/data/doctors.ts";
+import { treatments } from "../content/data/treatments.ts";
 import registry from "../config/concerns.json" with { type: "json" };
 import manifest from "../config/concern-media.json" with { type: "json" };
+import treatmentManifest from "../config/treatment-media.json" with { type: "json" };
 import { concernToc } from "../lib/concern-toc.ts";
 import { concernSignoff, concernSignoffs } from "../lib/signoff.ts";
-import type { Concern } from "../lib/types.ts";
+import type { Concern, Treatment } from "../lib/types.ts";
 
 const errors: string[] = [];
 const warnings: string[] = [];
@@ -60,11 +75,28 @@ const anchorsOf = (c: Concern): string[] => concernToc(c, true).map((h) => h.id)
 // actually upload. Parked keys are excluded on purpose: they never upload, and
 // neither does a held asset (ADR-0001 §5) — authoring either produces a page
 // that 404s its own imagery, which is the failure Q-15 exists to catch.
-const byUrl = new Map<string, number>(
-  manifest.assets
-    .filter((a) => a.key.startsWith(manifest.bucketPrefix) && !("hold" in a))
-    .map((a) => [manifest.publicBase + a.key.slice(manifest.bucketPrefix.length), a.width]),
-);
+type Manifest = {
+  bucketPrefix: string;
+  publicBase: string;
+  assets: { key: string; width: number; hold?: string }[];
+};
+
+/**
+ * A manifest paired with the URL → source-width map of everything the sync will actually
+ * upload. The two always travel together — a URL is only checkable against the manifest it
+ * came from — so they are bound once here rather than passed as a pair everywhere.
+ */
+const uploadable = (m: Manifest) => ({
+  publicBase: m.publicBase,
+  live: new Map<string, number>(
+    m.assets
+      .filter((a) => a.key.startsWith(m.bucketPrefix) && !("hold" in a))
+      .map((a) => [m.publicBase + a.key.slice(m.bucketPrefix.length), a.width]),
+  ),
+});
+
+const concernMedia = uploadable(manifest);
+const treatmentMedia = uploadable(treatmentManifest);
 
 /** Every media src on a concern, tagged with the field it came from. */
 function mediaUrls(c: Concern): [string, string][] {
@@ -76,6 +108,29 @@ function mediaUrls(c: Concern): [string, string][] {
     ...(c.results ?? []).map((r) => [r.src, "results"]),
     ...(c.visitImages ?? []).map((v) => [v.src, "visitImages"]),
   ] as [string, string][];
+}
+
+/**
+ * Every CDN media src on a treatment. `image` is deliberately absent: the 19 heroes are
+ * already-migrated legacy media and stay in public/ (docs/14 §Media delivery). Ticket 02
+ * adds figures, steps and the areas union here; the rules below already cover them.
+ */
+function treatmentMediaUrls(t: Treatment): [string, string][] {
+  return (t.manufacturerImages ?? []).map((m) => [m.src, "manufacturerImages"]);
+}
+
+/**
+ * Q-14 / Q-15 — media lives on the page type's CDN prefix, and only where its
+ * manifest says something will exist. Either failure is a 404 in production.
+ */
+function checkMedia(slug: string, entries: [string, string][], m: ReturnType<typeof uploadable>) {
+  for (const [url, field] of entries) {
+    if (!url.startsWith(m.publicBase)) {
+      fail(slug, "Q-14", `${field} "${url}" is not on ${m.publicBase}`);
+    } else if (!m.live.has(url)) {
+      fail(slug, "Q-15", `${field} "${url}" has no entry in the media manifest`);
+    }
+  }
 }
 
 const seenWhy = new Map<string, string>();
@@ -151,15 +206,7 @@ for (const c of concerns) {
   }
   if ((c.jumpNav?.length ?? 0) > 7) fail(c.slug, "Q-13", "jump nav exceeds 7 items (R-13)");
 
-  // Q-14 / Q-15 — media lives on the concerns CDN prefix, and only where the
-  // manifest says something will exist. Either failure is a 404 in production.
-  for (const [url, field] of mediaUrls(c)) {
-    if (!url.startsWith(manifest.publicBase)) {
-      fail(c.slug, "Q-14", `${field} "${url}" is not on ${manifest.publicBase}`);
-    } else if (!byUrl.has(url)) {
-      fail(c.slug, "Q-15", `${field} "${url}" has no entry in config/concern-media.json`);
-    }
-  }
+  checkMedia(c.slug, mediaUrls(c), concernMedia);
 
   // Q-16 — the anti-upscaling guard (ADR-0001 §5). A width that disagrees with
   // the source is worse than a missing one: it reads as checked.
@@ -168,7 +215,7 @@ for (const c of concerns) {
       fail(c.slug, "Q-16", `results "${r.src}" omits nativeWidth or ratio`);
       continue;
     }
-    const sourceWidth = byUrl.get(r.src);
+    const sourceWidth = concernMedia.live.get(r.src);
     if (sourceWidth && sourceWidth !== r.nativeWidth) {
       fail(c.slug, "Q-16", `results "${r.src}" declares ${r.nativeWidth}px, source is ${sourceWidth}px`);
     }
@@ -192,6 +239,20 @@ for (const c of concerns) {
   const driverCount = c.drivers?.items.length ?? 0;
   if (figureCount && figureCount !== driverCount) {
     fail(c.slug, "Q-19", `${figureCount} figures against ${driverCount} causes — they pair by position`);
+  }
+}
+
+// Q-14 / Q-15 / Q-17, second data source. Treatment media serves from the
+// treatments/ prefix and its own manifest; every other argument is the same.
+// `manufacturerImages` is the only CDN media field on Treatment until ticket 02.
+for (const t of treatments) {
+  checkMedia(t.slug, treatmentMediaUrls(t), treatmentMedia);
+  // Q-17 — rule R-07 wants the manufacturer named in four places. Two of them are
+  // authored data, so a mark shipped without either is caught here rather than by
+  // a compliance reviewer reading fourteen pages.
+  for (const m of t.manufacturerImages ?? []) {
+    if (!m.caption.trim()) fail(t.slug, "Q-17", `manufacturer image "${m.src}" has no caption (R-07)`);
+    if (!m.alt.trim()) fail(t.slug, "Q-17", `manufacturer image "${m.src}" has no alt (R-07)`);
   }
 }
 
@@ -230,9 +291,37 @@ for (const [slug, s] of Object.entries(concernSignoffs)) {
   else if (Number.isNaN(Date.parse(s.date))) fail(slug, "Q-20", `unparseable sign-off date '${s.date}'`);
 }
 
+// Q-21 — liveness. Everything above proves the URLs are authored correctly;
+// only a request proves the bytes were ever uploaded. Media is synced from a
+// laptop, not CI (ADR-0001 §4), so nothing else notices a deploy that ships
+// pages of broken images. Opt-in: it needs the network.
+if (process.argv.includes("--live")) {
+  const urls = [
+    ...new Set([
+      ...concerns.flatMap((c) => mediaUrls(c).map(([url]) => url)),
+      ...treatments.flatMap((t) => treatmentMediaUrls(t).map(([url]) => url)),
+    ]),
+  ];
+  const dead: string[] = [];
+  let next = 0;
+  await Promise.all(
+    // ponytail: fixed fan-out of 12, plenty for ~160 HEADs against a CDN.
+    Array.from({ length: 12 }, async () => {
+      while (next < urls.length) {
+        const url = urls[next++];
+        const res = await fetch(url, { method: "HEAD" }).catch((e: Error) => e);
+        if (res instanceof Error) dead.push(`${url} — ${res.message}`);
+        else if (!res.ok) dead.push(`${url} — HTTP ${res.status}`);
+      }
+    }),
+  );
+  for (const d of dead) fail("live", "Q-21", `${d} (run pnpm sync:concern-media / sync:treatment-media)`);
+  console.log(`Q-21: ${urls.length} media URLs checked · ${dead.length} unreachable`);
+}
+
 for (const w of warnings) console.warn(`  warn  ${w}`);
 for (const e of errors) console.error(`  FAIL  ${e}`);
 console.log(
-  `\n${concerns.length} concerns checked · ${errors.length} failures · ${warnings.length} warnings`,
+  `\n${concerns.length} concerns + ${treatments.length} treatments checked · ${errors.length} failures · ${warnings.length} warnings`,
 );
 process.exit(errors.length ? 1 : 0);

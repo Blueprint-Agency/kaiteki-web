@@ -153,7 +153,7 @@ deliberate divergence, recorded in the ADR:
 - **Divergence:** the 44 MB of source binaries are **not** committed to the repo (blog
   stages files under `content/blog/media/` and lets the deploy workflow sync them).
   Concern media uploads directly from the local source folder via
-  `scripts/sync-concern-media.mjs`, driven by a committed manifest
+  `scripts/sync-media.mjs concerns`, driven by a committed manifest
   (`config/concern-media.json`) mapping source path → R2 key. `validate-concerns.mts` will
   check authored URLs against the manifest (rules Q-14 to Q-18, **not yet written** — issue
   02), giving the same build-time guarantee as `check-blog.mts` without the permanent git
@@ -172,8 +172,11 @@ deliberate divergence, recorded in the ADR:
 
 ## 6. Regenerating
 
-`scripts/audit-concern-media.mjs` reads the source folders, applies the §3
-reclassification table, and re-emits §2. Run it after any change to the source media:
+`scripts/media-audit.mjs` reads the source folders, applies the §3 reclassification table
+from `scripts/media/concerns.mjs`, and re-emits §2. The same engine serves `/treatments`
+(`docs/13` §3) from a second config; the concern facts — folders, the 14 slugs, the
+classified-by-eye override table — live in that config module, not in the engine. Run it
+after any change to the source media:
 
 ```bash
 pnpm audit:concern-media            # prints the matrix
