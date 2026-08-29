@@ -33,21 +33,39 @@ to cover treatments as well, not twice.
 
 **Blocked by:** None — can start immediately.
 
-- [ ] The sync script serves both concerns and treatments from one implementation; no
+**Status:** done
+
+- [x] The sync script serves both concerns and treatments from one implementation; no
       `sync-treatment-media.mjs` exists
-- [ ] The audit script's generic half is shared; the concern-specific folder list, slug list
+- [x] The audit script's generic half is shared; the concern-specific folder list, slug list
       and override table move to config without changing the concern output
-- [ ] Re-running the concern audit reproduces the committed `docs/11` §2 table byte for byte
-- [ ] A committed manifest maps every uploading treatment source file to its CDN key, with
+- [x] Re-running the concern audit reproduces the committed `docs/11` §2 table byte for byte
+- [x] A committed manifest maps every uploading treatment source file to its CDN key, with
       pixel dimensions, generated rather than transcribed
-- [ ] Keys are treatment-scoped kebab-case describing the subject, not the original
+- [x] Keys are treatment-scoped kebab-case describing the subject, not the original
       mixed-case underscore names
-- [ ] Assets excluded by `docs/13` §5 and §8 carry a `hold` naming the reason, and never upload
-- [ ] A dry run prints every planned upload and writes nothing
+- [x] Assets excluded by `docs/13` §5 and §8 carry a `hold` naming the reason, and never upload
+- [x] A dry run prints every planned upload and writes nothing
 - [ ] A real run uploads under the treatments prefix, reading credentials from the
       environment — never from the repo
-- [ ] Source binaries are not committed to the repository
+- [x] Source binaries are not committed to the repository
 - [ ] A treatment image loads from the CDN in a browser
-- [ ] `remotePatterns` permits blog, concerns and treatments; all three still resolve
-- [ ] Q-14…Q-17 walk treatments as well as concerns, from one implementation
-- [ ] The audit regenerates `docs/13` §3 and reproduces the committed table
+- [x] `remotePatterns` permits blog, concerns and treatments; all three still resolve
+- [x] Q-14…Q-17 walk treatments as well as concerns, from one implementation
+- [x] The audit regenerates `docs/13` §3 and reproduces the committed table
+
+**The two unticked boxes are the credential gap this ticket's Open section predicted**, not
+skipped work. There is no `.env.local` on the build machine, so the upload cannot run and
+nothing is in the bucket to load in a browser. The concern equivalent shipped with exactly
+these two open for the same reason (`5ed4c13`). Everything up to the upload is verified:
+`pnpm sync:treatment-media --dry-run` plans 69 objects / 11.9 MB and writes nothing.
+
+Two extensions beyond the ticket's wording, both recorded in `docs/13` §10:
+
+1. **Holds go wider than §5/§8.** Those cover 65 files; 60 more are held because no page
+   reads them either — the `machine_*`/`product_*` families and 10 `logob_*` marks already
+   composited into what ships from `public/` (§2), and the assets whose subject has no page
+   at all (§6–§7). Uploading them would put objects under `treatments/` that nothing renders.
+2. **Q-16 is deliberately not widened.** It is the anti-upscaling guard on the results
+   gallery and treatments have no results (`docs/14`). Its treatment twin is the 156px
+   `steps` ceiling, which arrives with the field in ticket 02.
