@@ -10,11 +10,20 @@
 //   Q-08  bottom-CTA heading and body are concern-specific
 //   Q-10  every jump-nav anchor resolves to a block the page actually renders
 //   Q-13  jump nav is at most 7 items
+//   Q-14  every media src sits on the concerns CDN prefix (never public/)
+//   Q-15  every media src resolves to an entry in config/concern-media.json
+//   Q-16  results declare a native width + ratio, and the width matches the
+//         manifest's recorded source width (the anti-upscaling guard)
+//   Q-17  slides carry alt and NO caption; figures carry a caption
+//   Q-18  a concern declaring results has the shared disclaimer rendered
 //
 // Run: pnpm validate:concerns   (exits non-zero on any failure)
+import { readFileSync, readdirSync } from "node:fs";
+import { join } from "node:path";
 import { concerns } from "../content/data/concerns.ts";
 import { doctorBySlug } from "../content/data/doctors.ts";
 import registry from "../config/concerns.json" with { type: "json" };
+import manifest from "../config/concern-media.json" with { type: "json" };
 import type { Concern } from "../lib/types.ts";
 
 const errors: string[] = [];
@@ -51,6 +60,26 @@ function anchorsOf(c: Concern): string[] {
     "technology",
     c.faqs?.length && "faq",
   ].filter((x): x is string => typeof x === "string");
+}
+
+// Q-14…Q-16 — every authored media URL must be one the sync script will
+// actually upload. Parked keys are excluded on purpose: they never upload.
+const byUrl = new Map<string, number>(
+  manifest.assets
+    .filter((a) => a.key.startsWith(manifest.bucketPrefix))
+    .map((a) => [manifest.publicBase + a.key.slice(manifest.bucketPrefix.length), a.width]),
+);
+
+/** Every media src on a concern, tagged with the field it came from. */
+function mediaUrls(c: Concern): [string, string][] {
+  return [
+    ...(c.banner ? [[c.banner.src, "banner"], [c.banner.sm, "banner.sm"]] : []),
+    ...(c.figures ?? []).map((f) => [f.src, "figures"]),
+    ...(c.slides ?? []).map((s) => [s.src, "slides"]),
+    ...(c.illustrations ?? []).map((i) => [i.src, "illustrations"]),
+    ...(c.results ?? []).map((r) => [r.src, "results"]),
+    ...(c.visitImages ?? []).map((v) => [v.src, "visitImages"]),
+  ] as [string, string][];
 }
 
 const seenWhy = new Map<string, string>();
@@ -123,6 +152,61 @@ for (const c of concerns) {
     }
   }
   if ((c.jumpNav?.length ?? 0) > 7) fail(c.slug, "Q-13", "jump nav exceeds 7 items (R-13)");
+
+  // Q-14 / Q-15 — media lives on the concerns CDN prefix, and only where the
+  // manifest says something will exist. Either failure is a 404 in production.
+  for (const [url, field] of mediaUrls(c)) {
+    if (!url.startsWith(manifest.publicBase)) {
+      fail(c.slug, "Q-14", `${field} "${url}" is not on ${manifest.publicBase}`);
+    } else if (!byUrl.has(url)) {
+      fail(c.slug, "Q-15", `${field} "${url}" has no entry in config/concern-media.json`);
+    }
+  }
+
+  // Q-16 — the anti-upscaling guard (ADR-0001 §5). A width that disagrees with
+  // the source is worse than a missing one: it reads as checked.
+  for (const r of c.results ?? []) {
+    if (!r.nativeWidth || !r.ratio) {
+      fail(c.slug, "Q-16", `results "${r.src}" omits nativeWidth or ratio`);
+      continue;
+    }
+    const sourceWidth = byUrl.get(r.src);
+    if (sourceWidth && sourceWidth !== r.nativeWidth) {
+      fail(c.slug, "Q-16", `results "${r.src}" declares ${r.nativeWidth}px, source is ${sourceWidth}px`);
+    }
+  }
+
+  // Q-17 — the figure/slide split, at the data layer. A captioned slide
+  // double-labels its burned-in headline; an uncaptioned figure says nothing.
+  for (const s of c.slides ?? []) {
+    if (!s.alt?.trim()) fail(c.slug, "Q-17", `slide "${s.src}" has no alt transcribing its burned-in text`);
+    if ("caption" in s) fail(c.slug, "Q-17", `slide "${s.src}" carries a caption — slides are captionless`);
+  }
+  for (const f of c.figures ?? []) {
+    if (!f.caption?.trim()) fail(c.slug, "Q-17", `figure "${f.src}" has no caption (the caption carries the meaning)`);
+  }
+}
+
+// Q-18 — results oblige the disclaimer (ADR-0001 §2). Checked once, against the
+// renderers rather than the data: the string is deliberately defined outside
+// the concern data so it cannot be edited away one page at a time.
+if (concerns.some((c) => c.results?.length)) {
+  const root = join(import.meta.dirname, "..");
+  const renderers = ["components", "app/concerns"]
+    .flatMap((dir) =>
+      readdirSync(join(root, dir), { recursive: true, encoding: "utf8" }).map((f) => `${dir}/${f}`),
+    )
+    // proto/ is the throwaway prototype (removed in issue 06) — a mention there
+    // is not the shipped page rendering it.
+    .filter(
+      (f) =>
+        f.endsWith(".tsx") &&
+        f !== "components/Disclaimer.tsx" &&
+        !f.startsWith("components/proto/"),
+    );
+  if (!renderers.some((f) => /<ResultsDisclaimer\b/.test(readFileSync(join(root, f), "utf8")))) {
+    fail("all", "Q-18", "concerns declare results but no renderer renders <ResultsDisclaimer /> (ADR-0001 §2)");
+  }
 }
 
 for (const w of warnings) console.warn(`  warn  ${w}`);
