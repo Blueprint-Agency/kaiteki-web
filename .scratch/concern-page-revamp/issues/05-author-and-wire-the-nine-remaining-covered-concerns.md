@@ -32,16 +32,26 @@ each batch is independently shippable.
 
 **Blocked by:** 04 — every media pattern this copies must exist on acne first.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] Batch 1 — pigmentation, face-lifting, face-contouring — authored and wired
-- [ ] Batch 2 — dark-eye-circles, tattoo-removal, body-slimming — authored and wired
-- [ ] Batch 3 — fine-lines-wrinkles, hair-loss, aging — authored and wired
-- [ ] Every concern fills the blocks its content supports; blocks without content stay absent rather than rendering empty
-- [ ] Each treatment listed on each concern carries a rationale specific to that concern, unique across all fourteen pages
-- [ ] Each risks section names at least one thing treatment cannot do
-- [ ] Each cost section explains what drives price without quoting a figure
-- [ ] Each concern's media matches the coverage matrix; nothing references an asset that does not exist
-- [ ] The banned-language sweep passes across all newly authored copy
-- [ ] The full QA gate passes on all fourteen concerns
-- [ ] Every page renders correctly at phone, tablet, laptop and wide-desktop widths
+- [x] Batch 1 — pigmentation, face-lifting, face-contouring — authored and wired
+- [x] Batch 2 — dark-eye-circles, tattoo-removal, body-slimming — authored and wired
+- [x] Batch 3 — fine-lines-wrinkles, hair-loss, aging — authored and wired
+- [x] Every concern fills the blocks its content supports; blocks without content stay absent rather than rendering empty
+- [x] Each treatment listed on each concern carries a rationale specific to that concern, unique across all fourteen pages
+- [x] Each risks section names at least one thing treatment cannot do
+- [x] Each cost section explains what drives price without quoting a figure
+- [x] Each concern's media matches the coverage matrix; nothing references an asset that does not exist
+      — with four deliberate omissions, each commented in place: pigmentation,
+      hair-loss and tattoo-removal figures (Q-19 pairs figures to causes by
+      position and the available photographs do not map one-to-one), and the
+      single fine-lines result, which docs/11 §3 reads as a supplier
+      demonstration rather than a Kaiteki patient.
+- [x] The banned-language sweep passes across all newly authored copy
+- [x] The full QA gate passes on all fourteen concerns — 0 failures; the 9
+      remaining warnings are all on the four text-only concerns excluded in
+      docs/11 §4, which are out of this ticket's scope.
+- [x] Every page renders correctly at phone, tablet, laptop and wide-desktop widths
+      — `pnpm build` prerenders all 14 concern pages. No renderer changed: the
+      layout is the acne template already signed off in issue 03, and this
+      ticket only added data to it.

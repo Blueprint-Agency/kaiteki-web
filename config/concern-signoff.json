@@ -1,0 +1,4 @@
+{
+  "$comment": "Medical sign-off ledger for /concerns/*. A slug appears under `signed` ONLY when the named doctor has actually read that page and told us so — it is not the same thing as `reviewedBy` in content/data/concerns.ts, which is an intended reviewer. An absent slug means unsigned: the page renders 'Awaiting medical review' in place of the reviewer byline, its schema asserts no reviewer and no lastReviewed, and `pnpm validate:concerns` warns. To sign one off, add \"<concern-slug>\": { \"doctor\": \"<slug from content/data/doctors.ts>\", \"date\": \"YYYY-MM-DD\" }.",
+  "signed": {}
+}

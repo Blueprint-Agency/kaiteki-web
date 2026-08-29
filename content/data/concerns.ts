@@ -10,8 +10,11 @@ import registry from "../../config/concerns.json" with { type: "json" };
 // text-only until assets exist for them (docs/11 §4).
 // `reviewedBy` points at real doctors from content/data/doctors.ts as a
 // plausible provisional assignment — NOT a confirmed claim that they
-// personally reviewed this page; real editorial sign-off must replace this
-// before launch.
+// personally reviewed this page. Nothing here is rendered or put into schema
+// as a review claim: the only record of an actual sign-off is
+// config/concern-signoff.json, and a concern missing from it renders
+// "Awaiting medical review" and is warned by name in `pnpm validate:concerns`
+// (Q-20). Real sign-off must land there before launch.
 export const concerns: Concern[] = [
   {
     slug: "acne",

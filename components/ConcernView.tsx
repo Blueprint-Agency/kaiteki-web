@@ -27,7 +27,8 @@ import {
 } from "@/components/concern-blocks";
 import { concernBySlug } from "@/content/data/concerns";
 import { technologyOfConcern, treatmentsOfConcern } from "@/content/data/relations";
-import { doctorBySlug, reviewerByline } from "@/content/data/doctors";
+import { reviewerByline } from "@/content/data/doctors";
+import { concernReviewer } from "@/lib/signoff";
 import { concernToc, headingAnchor } from "@/lib/concern-toc";
 import { TOC_MIN_HEADINGS } from "@/lib/toc";
 import { waForConcern } from "@/lib/wa";
@@ -142,11 +143,13 @@ function Reading({
 }
 
 export function ConcernView({ c }: { c: Concern }) {
-  const doctor = doctorBySlug(c.reviewedBy);
+  // A reviewer byline is only shown for a page a doctor has actually signed off
+  // (config/concern-signoff.json). Unsigned pages say "Awaiting medical review"
+  // instead — visible on the page, so nothing ships silently unreviewed.
+  const review = concernReviewer(c.slug);
   const options = treatmentsOfConcern(c.slug);
   const techItems = technologyOfConcern(c.slug);
   const wa = waForConcern(c.name);
-  const reviewedDate = dmy(c.lastReviewed);
 
   const related = (c.relatedConcerns ?? [])
     .map((r) => {
@@ -213,16 +216,21 @@ export function ConcernView({ c }: { c: Concern }) {
               Free, about 20–30 minutes, no obligation to book treatment.
             </p>
           </div>
-          {doctor && (
+          {review ? (
             <div className="mt-7 max-w-sm">
               <ReviewByline
-                doctorName={doctor.fullName}
-                mmc={doctor.mmc}
-                date={reviewedDate}
-                photo={doctor.photo}
-                href={`/doctors/${doctor.slug}`}
+                doctorName={review.doctor.fullName}
+                mmc={review.doctor.mmc}
+                date={dmy(review.date)}
+                photo={review.doctor.photo}
+                href={`/doctors/${review.doctor.slug}`}
               />
             </div>
+          ) : (
+            <p className="ledger mt-7 max-w-sm rounded-lg border border-dashed border-hairline px-4 py-3 !text-ink-500">
+              Awaiting medical review — this page has not yet been signed off by
+              a Kaiteki doctor.
+            </p>
           )}
         </Container>
       </header>
@@ -378,11 +386,15 @@ export function ConcernView({ c }: { c: Concern }) {
       <Container className="py-12 sm:py-14">
         <div className="max-w-[62ch] space-y-8">
           <Ledger
-            rows={[
-              { label: "Reviewed by", value: reviewerByline(doctor) },
-              { label: "Last reviewed", value: reviewedDate },
-              { label: "Next review due", value: nextReview(c.lastReviewed) },
-            ]}
+            rows={
+              review
+                ? [
+                    { label: "Reviewed by", value: reviewerByline(review.doctor) },
+                    { label: "Last reviewed", value: dmy(review.date) },
+                    { label: "Next review due", value: nextReview(review.date) },
+                  ]
+                : [{ label: "Reviewed by", value: "Awaiting medical review" }]
+            }
           />
           <Disclaimer />
         </div>

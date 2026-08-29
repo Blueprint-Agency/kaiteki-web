@@ -360,9 +360,14 @@ interface MedicalPageInput {
      *  ever names treatments the page itself lists. */
     possibleTreatment?: string[];
   };
-  /** ISO date of last medical review (YMYL freshness signal). Also emitted as
-   *  `dateModified`, which is the generic freshness property crawlers read. */
+  /** ISO date of last medical review (YMYL freshness signal). Omit unless a
+   *  doctor really reviewed the page — it is a claim, not a timestamp. Doubles
+   *  as `dateModified` when no separate one is given. */
   lastReviewed?: string;
+  /** ISO date the content itself last changed. Split from `lastReviewed` so a
+   *  page awaiting sign-off still carries the freshness signal crawlers read
+   *  without claiming a review that has not happened. */
+  dateModified?: string;
   /** Hero image path — becomes primaryImageOfPage. */
   image?: string;
   /** Reviewing doctor — inlined as a credentialed Person (cross-page @id refs
@@ -378,6 +383,7 @@ export function medicalWebPageNode({
   description,
   about,
   lastReviewed,
+  dateModified,
   image,
   reviewer,
 }: MedicalPageInput) {
@@ -409,7 +415,8 @@ export function medicalWebPageNode({
           },
         }
       : {}),
-    ...(lastReviewed ? { lastReviewed, dateModified: lastReviewed } : {}),
+    ...(lastReviewed ? { lastReviewed } : {}),
+    ...(dateModified ?? lastReviewed ? { dateModified: dateModified ?? lastReviewed } : {}),
     ...(image ? { primaryImageOfPage: abs(image) } : {}),
     ...(reviewer
       ? {
