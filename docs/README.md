@@ -39,5 +39,6 @@ Research, audit, and design docs for rebuilding [kaiteki.my](https://kaiteki.my)
 ## Conventions
 
 - Docs are numbered for reading order; cross-reference by number/section (e.g. "see `docs/02` §9").
+- Imagery that belongs to a doc goes in a dated folder under [`screenshots/`](./screenshots), never at the repo root: `.gitignore` treats a root `*.png` as a scratch export.
 - `docs/02` uses priority labels **[P1] / [P2] / [P3]** (do-first → nice-to-have) and *Kaiteki application* callouts.
 - The legacy site lives (git-ignored) in `../well-known/` — reference only.

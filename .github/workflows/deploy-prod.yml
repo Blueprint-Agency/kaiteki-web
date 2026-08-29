@@ -15,7 +15,14 @@ env:
   IMAGE: blueprintagency/kaiteki-web
 
 jobs:
+  # Blog media lives in R2, and the CDN must be warm before the site that
+  # references it goes live, so this gates the build rather than racing it.
+  media:
+    uses: ./.github/workflows/sync-blog-media.yml
+    secrets: inherit
+
   build-deploy:
+    needs: media
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
