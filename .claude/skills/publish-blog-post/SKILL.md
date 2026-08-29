@@ -65,6 +65,10 @@ Explicit instruction only. Keep it small: CI is faster and more capable than the
 
 1. **Branch.** Already on a working branch? Use it, do not rename or recreate. Otherwise the contract's convention. Never commit to `main`: it is protected and merge is the publish event.
 2. **Write the two files.** Metadata appended to the data file, body file created.
+   Any image the post uses is a third: commit the file wherever the contract's
+   media section says it is staged, and reference it by the URL that section
+   dictates. Never invent a media URL with no file behind it, and never park a
+   blog image in the app's static directory to save a step.
 3. **Run the validation script only.** Fix and re-run until clean. Do not run install, typecheck, lint or build: CI does all four in under a minute on a machine that can finish them, and a sandboxed build often cannot.
 4. **Commit.** Two files, one commit.
 5. **Push**, then deploy the preview if the project has one. Give the user the URL.

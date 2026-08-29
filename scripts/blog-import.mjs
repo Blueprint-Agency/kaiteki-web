@@ -22,7 +22,10 @@ import { gfm } from "turndown-plugin-gfm";
 const API = "https://blog.kaiteki.my/wp-json/wp/v2";
 const ROOT = path.join(import.meta.dirname, "..");
 const OUT_MDX = path.join(ROOT, "content", "blog");
-const OUT_IMG = path.join(ROOT, "public", "images", "blog");
+// Blog media never lands in public/: it is staged here and the deploy workflows
+// sync it into R2 (content/blog/AUTHORING.md §3).
+const OUT_IMG = path.join(ROOT, "content", "blog", "media");
+const CDN = "https://cdn.kaiteki.my/blog";
 const WORK = path.join(ROOT, "scripts", ".migration");
 
 /** WP author slug → our content/data/doctors.ts slug. Non-doctor accounts
@@ -180,8 +183,8 @@ function stripBoilerplate(md) {
 }
 
 /**
- * Pull every inline wp-content image into /public/images/blog/<slug>/ and
- * rewrite the markdown to the local path. Without this, 152 migrated posts
+ * Pull every inline wp-content image into content/blog/media/<slug>/ and
+ * rewrite the markdown to its R2 URL. Without this, 152 migrated posts
  * would keep hotlinking the old subdomain — which breaks the moment the blog
  * host is retired, and leaks the migration to anyone reading the HTML.
  */
@@ -203,7 +206,7 @@ async function localiseImages(md, slug) {
       const res = await fetch(original);
       const buf = Buffer.from(await (res.ok ? res : await fetch(url)).arrayBuffer());
       await writeFile(path.join(dir, name), buf);
-      out = out.replace(full, `![${alt}](/images/blog/${slug}/${name})`);
+      out = out.replace(full, `![${alt}](${CDN}/${slug}/${name})`);
       n += 1;
     } catch {
       // Leave the original URL in place and let the review catch it.
@@ -358,9 +361,10 @@ async function importPost(legacySlug) {
   if (post.featured_media) {
     const media = await get(`${API}/media/${post.featured_media}?_fields=source_url,alt_text`);
     const ext = path.extname(new URL(media.source_url).pathname) || ".jpg";
-    image = { path: `/images/blog/${slug}${ext}`, alt: media.alt_text || "" };
+    image = { path: `${CDN}/${slug}/${slug}${ext}`, alt: media.alt_text || "" };
     const buf = Buffer.from(await (await fetch(media.source_url)).arrayBuffer());
-    await writeFile(path.join(OUT_IMG, `${slug}${ext}`), buf);
+    await mkdir(path.join(OUT_IMG, slug), { recursive: true });
+    await writeFile(path.join(OUT_IMG, slug, `${slug}${ext}`), buf);
   }
 
   const mdxPath = path.join(OUT_MDX, `${slug}.mdx`);

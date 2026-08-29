@@ -23,9 +23,22 @@ import { branchBySlug } from "../content/data/branches.ts";
 
 const ROOT = process.cwd();
 const BLOG_DIR = join(ROOT, "content", "blog");
-const PUBLIC = join(ROOT, "public");
 // The R2 bucket's custom domain, the only remote host next.config.ts allows.
 const R2_HOST = "https://cdn.kaiteki.my/blog/";
+// Source of truth for what the deploy workflows sync into that bucket. A URL
+// with no file here would be a 404 the moment the post goes live.
+const MEDIA_DIR = join(ROOT, "content", "blog", "media");
+
+/** Every blog media URL must be on R2 and backed by a file staged for upload. */
+const checkMedia = (at: string, url: string, what: string): void => {
+  if (!url.startsWith(R2_HOST)) {
+    err(`${at}: ${what} must be on ${R2_HOST} (blog media lives in R2, not public/)`);
+    return;
+  }
+  const key = url.slice(R2_HOST.length);
+  if (!existsSync(join(MEDIA_DIR, key)))
+    err(`${at}: ${what} has no source file at content/blog/media/${key}, so it will never upload`);
+};
 
 const errors: string[] = [];
 const warnings: string[] = [];
@@ -122,11 +135,7 @@ for (const p of posts) {
   // Imagery. A hero is optional (most migrated posts have none and fall back to
   // the generated motif) but a broken path or a missing alt is not.
   if (p.image) {
-    // New posts point at R2 (cdn.kaiteki.my); only repo-hosted paths can be
-    // checked on disk. A wrong host is caught by next/image at build.
-    if (p.image.startsWith("https://")) {
-      if (!p.image.startsWith(R2_HOST)) err(`${at}: remote image must be on ${R2_HOST}`);
-    } else if (!existsSync(join(PUBLIC, p.image))) err(`${at}: image missing ${p.image}`);
+    checkMedia(at, p.image, "image");
     if (!p.imageAlt) err(`${at}: image set but imageAlt missing`);
     else if (p.imageAlt.length < 30) warn(`${at}: imageAlt is thin (${p.imageAlt.length} chars)`);
   }
@@ -202,7 +211,9 @@ for (const p of posts) {
   if (/!\[[^\]]*\]\(/.test(body)) warn(`${at}: markdown image in body, use <Figure> instead`);
   for (const tag of body.match(/<Figure[^>]*>/g) ?? []) {
     if (!/\salt="/.test(tag)) err(`${at}: <Figure> without alt text`);
-    if (!/\ssrc="/.test(tag)) err(`${at}: <Figure> without src`);
+    const src = tag.match(/\ssrc="([^"]*)"/)?.[1];
+    if (!src) err(`${at}: <Figure> without src`);
+    else checkMedia(at, src, `<Figure> src ${src}`);
   }
 
   // Reading time is shown on every card, so a wrong one is a small broken promise.

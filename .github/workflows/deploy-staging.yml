@@ -12,7 +12,15 @@ env:
   IMAGE: blueprintagency/kaiteki-web
 
 jobs:
+  # Same one bucket as production: R2 holds the canonical bytes and staging only
+  # ever adds to them, so a post previewed here needs no second upload on the
+  # way to main.
+  media:
+    uses: ./.github/workflows/sync-blog-media.yml
+    secrets: inherit
+
   build-deploy:
+    needs: media
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
