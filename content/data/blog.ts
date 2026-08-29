@@ -19,7 +19,8 @@ export const posts: Post[] = [
     description:
       "Ultherapy and HIFU both use focused ultrasound. How they differ in imaging and delivery, what each costs in Malaysia, and how to check the device is genuine.",
     category: "Treatments Explained",
-    image: "/images/blog/ultherapy-vs-hifu-difference-which-suits-you.png",
+    image:
+      "https://cdn.kaiteki.my/blog/ultherapy-vs-hifu-difference-which-suits-you/ultherapy-vs-hifu-difference-which-suits-you.png",
     imageAlt:
       "A woman lying back as a clinician passes an ultrasound handpiece along her jawline, for a Kaiteki guide comparing Ultherapy and HIFU",
     author: "dr-jamie-gan",
@@ -40,7 +41,8 @@ export const posts: Post[] = [
     description:
       "What causes facial redness, which ingredients calm it, how ageing skin makes it worse, and when vascular laser or IPL is the right next step.",
     category: "Skin Concerns",
-    image: "/images/blog/how-to-reduce-facial-redness-causes-treatment.png",
+    image:
+      "https://cdn.kaiteki.my/blog/how-to-reduce-facial-redness-causes-treatment/how-to-reduce-facial-redness-causes-treatment.png",
     imageAlt:
       "Illustration of a woman with a flushed face wearing a soothing mask and hair towel, for a Kaiteki guide to facial redness",
     author: "dr-jeremy-low",
@@ -60,7 +62,8 @@ export const posts: Post[] = [
     description:
       "What causes melasma in Malaysia's tropical climate, how to manage it with daily skincare and sun protection, and when professional treatment is the next step.",
     category: "Skin Concerns",
-    image: "/images/blog/melasma-treatment-malaysia-causes-skincare.png",
+    image:
+      "https://cdn.kaiteki.my/blog/melasma-treatment-malaysia-causes-skincare/melasma-treatment-malaysia-causes-skincare.png",
     imageAlt:
       "Illustration of a woman touching her cheek where a melasma patch sits, for a Kaiteki guide to melasma treatment in Malaysia",
     author: "dr-joaan-kong",
@@ -79,7 +82,8 @@ export const posts: Post[] = [
     description:
       "How to manage eczema with the right daily routine, what triggers flares in Malaysia, and when to see a doctor. Causes, ingredients and clinic options.",
     category: "Skin Concerns",
-    image: "/images/blog/eczema-treatment-daily-skincare-to-clinic-care.png",
+    image:
+      "https://cdn.kaiteki.my/blog/eczema-treatment-daily-skincare-to-clinic-care/eczema-treatment-daily-skincare-to-clinic-care.png",
     imageAlt:
       "Illustration of a woman with eczema patches on her arms, for a Kaiteki guide to daily skincare and in-clinic eczema care",
     author: "dr-yvonne-chuah",
@@ -96,7 +100,8 @@ export const posts: Post[] = [
     description:
       "Struggling with excessive sweating? What causes hyperhidrosis, how it is diagnosed, and the options from antiperspirants to botulinum toxin.",
     category: "Skin Concerns",
-    image: "/images/blog/excessive-sweating-hyperhidrosis-causes-treatment.png",
+    image:
+      "https://cdn.kaiteki.my/blog/excessive-sweating-hyperhidrosis-causes-treatment/excessive-sweating-hyperhidrosis-causes-treatment.png",
     imageAlt:
       "Illustration of a woman blotting sweat from her face, for a Kaiteki guide to hyperhidrosis causes and treatment",
     author: "dr-joaan-kong",
@@ -114,7 +119,8 @@ export const posts: Post[] = [
     description:
       "Struggling with rough, bumpy skin? Which ingredients help keratosis pilaris, how to apply them, and when it is worth seeing a doctor.",
     category: "Skincare",
-    image: "/images/blog/best-moisturiser-keratosis-pilaris-when-creams-not-enough.png",
+    image:
+      "https://cdn.kaiteki.my/blog/best-moisturiser-keratosis-pilaris-when-creams-not-enough/best-moisturiser-keratosis-pilaris-when-creams-not-enough.png",
     imageAlt:
       "Illustration of a woman applying moisturiser beside an open cream jar, for a Kaiteki guide to keratosis pilaris moisturisers",
     author: "dr-chin-wei-horng",
@@ -132,7 +138,7 @@ export const posts: Post[] = [
     description:
       "How Alma Titanium Lifting works, the areas it treats, who it suits and how many sessions a course usually takes, explained by a Kaiteki doctor.",
     category: "Treatments Explained",
-    image: "/images/blog/alma-titanium-lifting.jpg",
+    image: "https://cdn.kaiteki.my/blog/alma-titanium-lifting/alma-titanium-lifting.jpg",
     imageAlt:
       "Alma Titanium Lifting, a triple-wavelength laser lifting treatment at Kaiteki Skin Aesthetic Clinic",
     author: "dr-calvin-tan",
@@ -151,7 +157,7 @@ export const posts: Post[] = [
     description:
       "Discovery Pico and PicoSure compared on wavelengths, melasma cautions and safety for Asian skin, so you can ask your doctor the right questions.",
     category: "Device & Injectables",
-    image: "/images/blog/discovery-pico-vs-picosure.png",
+    image: "https://cdn.kaiteki.my/blog/discovery-pico-vs-picosure/discovery-pico-vs-picosure.png",
     imageAlt:
       "Discovery Pico and PicoSure picosecond lasers compared for pigmentation and tattoo treatment at Kaiteki",
     author: "dr-joaan-kong",
@@ -171,7 +177,7 @@ export const posts: Post[] = [
     description:
       "Wegovy and Mounjaro compared on how they work, the SURMOUNT-5 head-to-head data, side effects, switching, and availability in Malaysia.",
     category: "Weight & Wellness",
-    image: "/images/blog/wegovy-vs-mounjaro.png",
+    image: "https://cdn.kaiteki.my/blog/wegovy-vs-mounjaro/wegovy-vs-mounjaro.png",
     imageAlt:
       "Wegovy and Mounjaro weekly injection pens compared for medical weight management at Kaiteki",
     author: "dr-tim-chua",

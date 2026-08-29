@@ -457,7 +457,8 @@ export interface Post {
   /** Meta description + card/summary copy, 140–160 chars. */
   description: string;
   category: PostCategory;
-  /** Hero + share image under /public/images/blog. Optional: posts without
+  /** Hero + share image: a full https://cdn.kaiteki.my/blog/... URL, staged for
+   *  upload under content/blog/media/ (AUTHORING.md §3). Optional: posts without
    *  commissioned photography fall back to a warm generated motif (BlogMotif),
    *  the same approach treatments take. 65 of the legacy posts have no featured
    *  image, so this is the norm during the migration, not the exception. */

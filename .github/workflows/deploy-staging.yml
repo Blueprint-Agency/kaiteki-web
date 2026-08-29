@@ -17,6 +17,21 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      # Same one bucket as production: R2 holds the canonical bytes and staging
+      # only ever adds to them, so a post previewed here needs no second upload
+      # on the way to main. See deploy-prod.yml for the flag reasoning.
+      - name: Sync blog media to R2
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+          AWS_REQUEST_CHECKSUM_CALCULATION: when_required
+          AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
+        run: |
+          aws s3 sync content/blog/media "s3://${{ vars.R2_BUCKET_NAME }}/blog" \
+            --endpoint-url "https://${{ vars.R2_ACCOUNT_ID }}.r2.cloudflarestorage.com" \
+            --size-only --no-progress
+
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:

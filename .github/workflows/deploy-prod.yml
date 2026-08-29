@@ -20,6 +20,27 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      # All blog media lives in R2, never in public/ (content/blog/AUTHORING.md
+      # §3). Sync before the build so every cdn.kaiteki.my URL the site renders
+      # is already serving. Credentials come from the repo's GitHub secrets and
+      # variables; nothing about the bucket is hardcoded here.
+      - name: Sync blog media to R2
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+          # R2 rejects the CRC32 trailer the AWS CLI v2 now sends by default.
+          AWS_REQUEST_CHECKSUM_CALCULATION: when_required
+          AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
+        run: |
+          # No --delete: dropping a file from git must not 404 a URL already
+          # indexed. --size-only because a git checkout has fresh mtimes on
+          # every run, so the default comparison would re-upload everything.
+          # ponytail: a same-size replacement won't re-upload; rename the file.
+          aws s3 sync content/blog/media "s3://${{ vars.R2_BUCKET_NAME }}/blog" \
+            --endpoint-url "https://${{ vars.R2_ACCOUNT_ID }}.r2.cloudflarestorage.com" \
+            --size-only --no-progress
+
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
