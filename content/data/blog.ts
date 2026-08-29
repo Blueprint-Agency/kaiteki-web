@@ -182,6 +182,41 @@ export const posts: Post[] = [
     concerns: ["body-slimming"],
     legacyPath: "/wegovy-vs-mounjaro-which-is-better-for-you/",
   },
+  {
+    slug: "exosome-treatment-what-the-evidence-shows",
+    title: "Exosome treatment: what it is and what the evidence actually shows",
+    seoTitle: "Exosome Treatment: What the Evidence Shows | Kaiteki",
+    description:
+      "What exosomes are, how clinics pair them with microneedling or a laser, what the small human trials report so far, and where regulators have drawn the line.",
+    category: "Treatments Explained",
+    author: "dr-william-yap",
+    reviewedBy: "dr-lim-xiao-chien",
+    publishedAt: "2026-08-29",
+    readingMinutes: 7,
+    leadAnswer:
+      "Exosomes are nanoscale vesicles released by cells, carrying proteins and RNA that act as signals between them. In clinics, exosome preparations are usually applied to skin or scalp straight after microneedling or a laser. Human trials are small and short, and no major regulator has approved an exosome product for cosmetic use.",
+    concerns: ["aging", "hair-loss", "fine-lines-wrinkles"],
+    treatments: ["exosome-therapy", "microneedling"],
+    related: ["alma-titanium-lifting", "ultherapy-vs-hifu-difference-which-suits-you"],
+    faqs: [
+      {
+        q: "Is exosome treatment permanent?",
+        a: "No. Any change from a regenerative add-on develops gradually and is not permanent, and the studies published so far follow patients for weeks to a few months rather than years. Longevity beyond that has not been established.",
+      },
+      {
+        q: "Exosomes or PRP: which has more evidence behind it?",
+        a: "PRP has the longer clinical record, particularly in hair loss, where it has been studied for well over a decade. Exosome preparations are newer and the human trials are smaller and fewer. Your doctor will weigh both against your concern at consultation.",
+      },
+      {
+        q: "What are the side effects of exosome treatment?",
+        a: "Most reported effects belong to the procedure it is paired with: temporary redness, swelling, pinpoint bleeding or sensitivity after microneedling or a laser, usually settling over a few days. Because the products are not standardised, the safety picture for the exosome preparation itself is still incomplete.",
+      },
+      {
+        q: "What are exosome preparations derived from?",
+        a: "It varies by product. Sources in use include human mesenchymal stem cells, animal cells and plant material such as rose stem cells. The source is not something you can infer from the treatment name, so ask the clinic directly which product it uses and what it is derived from.",
+      },
+    ],
+  },
 ];
 
 /** Display order everywhere — newest first. */
