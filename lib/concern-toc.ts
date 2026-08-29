@@ -37,6 +37,7 @@ export function concernToc(c: Concern, hasTechnology: boolean): Heading[] {
     },
     c.treatments.length > 0 && { id: "treatments", text: "Treatment options at Kaiteki", level: 2 as const },
     !!c.compare?.rows.length && { id: "compare", text: "Which treatment suits which type?", level: 2 as const },
+    !!c.results?.length && { id: "results", text: "Results from Kaiteki patients", level: 2 as const },
     hasTechnology && { id: "technology", text: "Technology used", level: 2 as const },
     !!c.risks?.items.length && { id: "risks", text: "Risks and what to expect", level: 2 as const },
     !!c.firstVisit?.steps.length && { id: "first-visit", text: "What your first visit involves", level: 2 as const },
