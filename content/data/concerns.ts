@@ -94,12 +94,8 @@ export const concerns: Concern[] = [
           body: "puberty, menstrual cycles, pregnancy, polycystic ovary syndrome, or stopping hormonal contraception.",
         },
         {
-          lead: "Excess sebum:",
-          body: "oil glands producing more than the skin can clear.",
-        },
-        {
-          lead: "Blocked pores:",
-          body: "dead skin cells building up inside the follicle instead of shedding.",
+          lead: "Excess sebum and blocked pores:",
+          body: "oil glands producing more than the skin can clear, and dead skin cells building up inside the follicle instead of shedding.",
         },
         {
           lead: "Inflammation and skin bacteria:",
@@ -113,6 +109,33 @@ export const concerns: Concern[] = [
       outro:
         "Diet, stress and sleep can influence acne for some people, but they are rarely the whole picture on their own.",
     },
+
+    // ── 04 media · one figure per cause, in the same order as `drivers.items`.
+    // Every one is a photograph with its subject left and the right half empty,
+    // so the caption sits in that space and carries the meaning — the image
+    // itself is decorative and renders with an empty alt.
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/acne/hormonal-changes.jpg",
+        caption:
+          "Hormonal shifts change how much oil the skin produces, which is why adult acne often sits along the jaw and chin.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/acne/sebum-skin-debris.jpg",
+        caption:
+          "Oil and dead skin cells collect inside the follicle. That blockage is where every type of acne begins.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/acne/inflammation.jpg",
+        caption:
+          "When a blocked follicle becomes inflamed, the spot turns red, raised and tender to touch.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/acne/skincare-habits.jpg",
+        caption:
+          "Heavy or occlusive products can worsen blockage on skin that is already prone to it.",
+      },
+    ],
 
     // ── 05 · the differentiator. Three tabs, each ending in a routing line that
     // sends a different group to a different treatment set. This orients; it
@@ -190,6 +213,80 @@ export const concerns: Concern[] = [
         },
       ],
     },
+
+    // ── 05 media · the type illustrations, grouped. Active acne and scarring
+    // are two different problems treated two different ways, so they read as
+    // two sets rather than one grid of eight. Transparent scalloped die-cuts:
+    // they sit on the page ground, never on a tinted band.
+    illustrations: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/acne/comedonal.png",
+        label: "Comedonal",
+        sub: "Blackheads and whiteheads, no redness",
+        group: "Types of active acne",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/acne/inflammatory.png",
+        label: "Inflammatory",
+        sub: "Red, raised and tender",
+        group: "Types of active acne",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/acne/cystic.png",
+        label: "Nodulocystic",
+        sub: "Deep, painful, scars most readily",
+        group: "Types of active acne",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/acne/hormonal.png",
+        label: "Hormonal pattern",
+        sub: "Jaw, chin and lower face",
+        group: "Types of active acne",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/acne/ice-pick-scars.png",
+        label: "Ice pick scars",
+        sub: "Narrow, deep, sharply defined",
+        group: "Types of scarring",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/acne/boxcar-scars.png",
+        label: "Boxcar scars",
+        sub: "Wider depressions with defined edges",
+        group: "Types of scarring",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/acne/rolling-scars.png",
+        label: "Rolling scars",
+        sub: "Broad, soft-edged undulations",
+        group: "Types of scarring",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/acne/hypertrophic-and-keloid-scars.png",
+        label: "Raised scars",
+        sub: "Hypertrophic and keloid",
+        group: "Types of scarring",
+      },
+    ],
+
+    // ── 05 media · the stage infographics. Headline and body are burned into
+    // the artwork, so these carry no caption and the alt transcribes what the
+    // slide says. Transcriptions are provisional and are on the list for
+    // editorial sign-off (issue 06) — they must match the artwork verbatim.
+    slides: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/acne/stage-1.jpg",
+        alt: "Stage 1, comedonal acne: follicles clog with oil and dead skin cells, forming blackheads and whiteheads without redness.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/acne/stage-2.jpg",
+        alt: "Stage 2, inflammatory acne: blocked follicles become inflamed, forming red papules and pustules that are tender to touch.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/acne/stage-3.jpg",
+        alt: "Stage 3, nodulocystic acne: inflammation reaches deeper into the skin, forming firm nodules and cysts that carry the highest risk of scarring.",
+      },
+    ],
 
     // ── 06 · where it appears. The closing differential card is the honest part,
     // and the part most likely to be cited.
@@ -307,6 +404,36 @@ export const concerns: Concern[] = [
       note: "Session counts and intervals are set by the doctor after assessment. Skin responds at different rates, and plans are adjusted as they go.",
     },
 
+    // ── results · pre-composited before-and-after in a single file, so the
+    // gallery is captioned single images and not a two-panel comparator.
+    // `nativeWidth` is the source width recorded in config/concern-media.json
+    // (gate rule Q-16): the cell is capped there rather than upscaled, because
+    // most of this set is small. Captions say what was treated and nothing
+    // more — session counts and intervals are per-patient facts the clinic has
+    // to supply, and inventing them here would be an outcome claim.
+    results: [
+      { src: "https://cdn.kaiteki.my/concerns/acne/before-after-01.jpg", nativeWidth: 564, ratio: "1.71/1", caption: "Active acne, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/acne/before-after-02.jpg", nativeWidth: 564, ratio: "1.71/1", caption: "Active acne, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/acne/before-after-03.jpg", nativeWidth: 564, ratio: "1.71/1", caption: "Active acne, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/acne/before-after-04.jpg", nativeWidth: 564, ratio: "1.71/1", caption: "Active acne, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/acne/before-after-05.jpg", nativeWidth: 564, ratio: "1.71/1", caption: "Active acne, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/acne/before-after-06.jpg", nativeWidth: 564, ratio: "1.71/1", caption: "Acne scarring, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/acne/before-after-07.jpg", nativeWidth: 600, ratio: "1/1", caption: "Active acne, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/acne/before-after-08.jpg", nativeWidth: 600, ratio: "1/1", caption: "Active acne, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/acne/before-after-09.jpg", nativeWidth: 600, ratio: "1/1", caption: "Active acne, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/acne/before-after-10.jpg", nativeWidth: 600, ratio: "1/1", caption: "Active acne, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/acne/before-after-11.jpg", nativeWidth: 600, ratio: "1/1", caption: "Active acne, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/acne/before-after-12.jpg", nativeWidth: 600, ratio: "1/1", caption: "Skin texture and tone, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/acne/before-after-13.jpg", nativeWidth: 600, ratio: "1/1", caption: "Skin texture and tone, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/acne/before-after-14.jpg", nativeWidth: 1412, ratio: "1/1", caption: "Acne scarring, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/acne/before-after-15.jpg", nativeWidth: 1415, ratio: "1/1", caption: "Acne scarring, before and after a course of treatment at Kaiteki" },
+      // before-after-16 is deliberately absent: it carries a hold in
+      // config/concern-media.json (ownership unconfirmed, ADR-0001 §5) and the
+      // sync script refuses to upload it. It can be authored here once the
+      // hold is lifted.
+      { src: "https://cdn.kaiteki.my/concerns/acne/before-after-17.jpg", nativeWidth: 1735, ratio: "5/4", caption: "Acne and post-acne marks, before and after a course of treatment at Kaiteki" },
+    ],
+
     // ── 12
     firstVisit: {
       intro:
@@ -332,6 +459,24 @@ export const concerns: Concern[] = [
       outro:
         "Bring a list of anything you're currently applying or taking, including supplements and oral acne medication. If you have photographs of your skin during a flare, those help too.",
     },
+
+    // ── 12 media · in-clinic photography of a session in progress. Kept out of
+    // `results` deliberately: a photograph of a device is not an outcome
+    // (docs/11 §3), and these three were reassigned here for exactly that.
+    visitImages: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/first-visit/treatment-in-progress-01.jpg",
+        caption: "The doctor examines the skin, sometimes under magnification, before anything is recommended.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/first-visit/treatment-in-progress-02.jpg",
+        caption: "Device and settings are matched to your skin type rather than to a fixed protocol.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/first-visit/treatment-in-progress-03.jpg",
+        caption: "Sessions are carried out at the clinic, and the plan is reviewed as your skin responds.",
+      },
+    ],
 
     // ── 13 · the PIH paragraph is the most locally relevant thing on the page,
     // and "what treatment cannot do" is mandatory (R-05).

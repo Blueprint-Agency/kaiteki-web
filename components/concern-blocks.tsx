@@ -1,6 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { Container } from "@/components/Container";
+import { ResultsDisclaimer } from "@/components/Disclaimer";
 import { Rows, Row } from "@/components/treatment-blocks";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { ArrowRight } from "@/components/icons";
@@ -88,19 +90,175 @@ function LeadInList({ items }: { items: LeadIn[] }) {
   );
 }
 
+/* ── Media (docs/12 §"Two figure components, not one") ──────────────────── */
+
+/**
+ * A 2:1 photograph whose subject sits hard left with the right half empty. The
+ * caption goes in that empty half and carries the meaning, so the image is
+ * `alt=""` — a screen reader that heard both would hear the same thing twice.
+ */
+function Figure({ src, caption }: { src: string; caption: string }) {
+  return (
+    <figure className="mt-6 grid gap-4 sm:grid-cols-[1.5fr_1fr] sm:items-center sm:gap-7">
+      <div className="relative aspect-[2/1] overflow-hidden rounded-xl bg-tint">
+        <Image
+          src={src}
+          alt=""
+          fill
+          sizes="(max-width: 640px) 100vw, 460px"
+          className="object-cover object-left"
+        />
+      </div>
+      <figcaption className="text-sm leading-relaxed text-ink-500">{caption}</figcaption>
+    </figure>
+  );
+}
+
+/**
+ * A finished infographic: headline and body copy are already in the artwork.
+ * `object-contain` because cropping one cuts words off, no caption because it
+ * would double-label what the image already says, and the alt transcribes the
+ * burned-in copy so both audiences get the same information.
+ */
+function Slide({ src, alt }: { src: string; alt: string }) {
+  return (
+    <div className="relative mt-6 aspect-[2/1] overflow-hidden rounded-xl bg-tint ring-1 ring-hairline">
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        sizes="(max-width: 1024px) 100vw, 720px"
+        className="object-contain"
+      />
+    </div>
+  );
+}
+
+/**
+ * The scalloped die-cut illustrations. Transparent PNGs on the page ground —
+ * never on a tinted band, where the die-cut edge reads as a rendering fault.
+ * `group` splits one set into two (active types vs scar types) without a second
+ * field; ungrouped illustrations render as a single unlabelled set. The label
+ * and sub are the accessible text, so the image itself is decorative.
+ */
+function IllustrationGrid({ items }: { items: NonNullable<Concern["illustrations"]> }) {
+  // Grouped by name rather than by adjacency: authored data that interleaves
+  // two groups would otherwise render the same heading twice, under a repeated
+  // React key. First mention fixes a group's position.
+  const groups = new Map<string | undefined, typeof items>();
+  for (const i of items) groups.set(i.group, [...(groups.get(i.group) ?? []), i]);
+  return (
+    <div className="mt-10 space-y-12">
+      {[...groups].map(([name, group]) => (
+        <div key={name ?? "ungrouped"}>
+          {name && <h3 className="h-sub">{name}</h3>}
+          <ul className={`grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4 ${name ? "mt-6" : ""}`}>
+            {group.map((i) => (
+              <li key={i.src}>
+                <div className="relative aspect-square">
+                  <Image
+                    src={i.src}
+                    alt=""
+                    fill
+                    sizes="(max-width: 640px) 45vw, 180px"
+                    className="object-contain"
+                  />
+                </div>
+                <p className="mt-3 font-display text-base text-espresso">{i.label}</p>
+                <p className="mt-1 text-sm leading-snug text-ink-500">{i.sub}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/**
+ * The results gallery. The sources are pre-composited — before and after are
+ * already side by side in one file — so this is a captioned grid of single
+ * images, not a two-panel comparator.
+ *
+ * Each cell is capped at the image's own native width: 74 of 111 sources are
+ * under 700px (docs/11 §1.2), and stretching one to fill a column is the
+ * failure this exists to prevent. The declared ratio reserves the space, so
+ * nothing shifts as the images arrive. The disclaimer is not optional
+ * furniture — it renders from its single shared source with every gallery
+ * (ADR-0001 §2, gate rule Q-18).
+ */
+export function ResultsBlock({ items }: { items?: Concern["results"] }) {
+  if (!items?.length) return null;
+  return (
+    <section id="results" className={`py-14 sm:py-20 ${CLEAR_HEADER}`}>
+      <Container>
+        <h2 className="h-section">Results from Kaiteki patients</h2>
+        <ul className="mt-10 grid grid-cols-2 gap-x-6 gap-y-9 sm:grid-cols-3 lg:grid-cols-4">
+          {items.map((r) => (
+            <li key={r.src}>
+              <div
+                className="relative overflow-hidden rounded-lg bg-tint ring-1 ring-hairline"
+                style={{ aspectRatio: r.ratio, maxWidth: r.nativeWidth }}
+              >
+                {/* `object-contain`, not cover: the file is a composited pair,
+                    and any drift between the declared ratio and the source
+                    would crop one half of it. The caption carries the meaning,
+                    so the image is decorative to a screen reader. */}
+                <Image
+                  src={r.src}
+                  alt=""
+                  fill
+                  sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 260px"
+                  className="object-contain"
+                />
+              </div>
+              <p className="mt-2.5 max-w-[34ch] text-sm leading-snug text-ink-500">{r.caption}</p>
+            </li>
+          ))}
+        </ul>
+        <div className="mt-10 max-w-[70ch]">
+          <ResultsDisclaimer />
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 /**
  * C-04 · What drives it. The heading is authored per concern rather than fixed,
  * because nothing "causes" a tattoo and nobody "develops" a birthmark —
  * hardcoding "Common causes" here is what makes a template read as generated.
  */
-export function DriversBlock({ d }: { d?: Concern["drivers"] }) {
+export function DriversBlock({
+  d,
+  figures,
+}: {
+  d?: Concern["drivers"];
+  figures?: Concern["figures"];
+}) {
   if (!d?.items.length) return null;
   return (
     <Section id="causes">
       <h2 className="h-section">{d.heading}</h2>
       {d.intro && <p className="mt-6 max-w-[62ch] text-lg leading-relaxed text-ink-900">{d.intro}</p>}
+      {/* One figure per cause, in authored order. Without figures this is the
+          same bold lead-in list every other block uses; with them each cause
+          gets its photograph and the caption beside it. */}
       <div className="mt-8">
-        <LeadInList items={d.items} />
+        {figures?.length ? (
+          <ul className="divide-y divide-hairline border-y border-hairline">
+            {d.items.map((i, n) => (
+              <li key={i.lead} className="py-6">
+                <p className="max-w-[62ch] leading-relaxed text-ink-700">
+                  <strong className="font-semibold text-espresso">{i.lead}</strong> {i.body}
+                </p>
+                {figures[n] && <Figure {...figures[n]} />}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <LeadInList items={d.items} />
+        )}
       </div>
       {d.outro && <p className="mt-8 max-w-[62ch] leading-relaxed text-ink-700">{d.outro}</p>}
     </Section>
@@ -112,7 +270,15 @@ export function DriversBlock({ d }: { d?: Concern["drivers"] }) {
  * archetypes; which one renders is decided by the authored data's `kind`, so
  * adding archetype F later is a data shape, not a new branch in every page.
  */
-export function VariantBlock({ v }: { v?: Concern["variant"] }) {
+export function VariantBlock({
+  v,
+  illustrations,
+  slides,
+}: {
+  v?: Concern["variant"];
+  illustrations?: Concern["illustrations"];
+  slides?: Concern["slides"];
+}) {
   if (!v) return null;
 
   return (
@@ -120,7 +286,20 @@ export function VariantBlock({ v }: { v?: Concern["variant"] }) {
       <h2 className="h-section max-w-[24ch]">{v.heading}</h2>
       <p className="mt-6 max-w-[64ch] leading-relaxed text-ink-700">{v.intro}</p>
 
+      {!!illustrations?.length && <IllustrationGrid items={illustrations} />}
+
       {v.kind === "tabs" && <VariantTabs tabs={v.tabs} />}
+
+      {/* No heading above the slides: each one already carries its own
+          headline in the artwork, and a hardcoded one here would be the
+          template writing copy it does not have (see DriversBlock). */}
+      {!!slides?.length && (
+        <div className="mt-12">
+          {slides.map((s) => (
+            <Slide key={s.src} {...s} />
+          ))}
+        </div>
+      )}
 
       {v.kind === "pairs" && (
         <dl className="mt-12 divide-y divide-hairline border-y border-hairline">
@@ -327,7 +506,13 @@ export function CompareBlock({ c }: { c?: Concern["compare"] }) {
  * but never says what one is; this is friction removal, and the "no obligation"
  * and "sometimes the answer is to wait" lines do more than a fourth CTA would.
  */
-export function FirstVisitBlock({ f }: { f?: Concern["firstVisit"] }) {
+export function FirstVisitBlock({
+  f,
+  images,
+}: {
+  f?: Concern["firstVisit"];
+  images?: Concern["visitImages"];
+}) {
   if (!f?.steps.length) return null;
   return (
     <Section id="first-visit">
@@ -348,6 +533,27 @@ export function FirstVisitBlock({ f }: { f?: Concern["firstVisit"] }) {
         ))}
       </ol>
       {f.outro && <p className="mt-9 max-w-[62ch] leading-relaxed text-ink-700">{f.outro}</p>}
+      {/* Treatment-in-progress photography, here and nowhere else: a photograph
+          of a device in use is not an outcome, and the results gallery would
+          present it as one (docs/11 §3). The caption carries the meaning. */}
+      {!!images?.length && (
+        <ul className="mt-10 grid gap-6 sm:grid-cols-3">
+          {images.map((v) => (
+            <li key={v.src}>
+              <div className="relative aspect-square overflow-hidden rounded-lg bg-tint">
+                <Image
+                  src={v.src}
+                  alt=""
+                  fill
+                  sizes="(max-width: 640px) 100vw, 240px"
+                  className="object-cover"
+                />
+              </div>
+              <p className="mt-2.5 text-sm leading-snug text-ink-500">{v.caption}</p>
+            </li>
+          ))}
+        </ul>
+      )}
     </Section>
   );
 }

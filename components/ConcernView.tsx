@@ -23,6 +23,7 @@ import {
   ConcernRisksBlock,
   ConcernCostBlock,
   RelatedConcernsBlock,
+  ResultsBlock,
 } from "@/components/concern-blocks";
 import { concernBySlug } from "@/content/data/concerns";
 import { technologyOfConcern, treatmentsOfConcern } from "@/content/data/relations";
@@ -279,8 +280,8 @@ export function ConcernView({ c }: { c: Concern }) {
         )}
 
         {/* 04 · 05 · 06 — the three archetype-variant blocks. */}
-        <DriversBlock d={c.drivers} />
-        <VariantBlock v={c.variant} />
+        <DriversBlock d={c.drivers} figures={c.figures} />
+        <VariantBlock v={c.variant} illustrations={c.illustrations} slides={c.slides} />
         <LocationBlock l={c.locationBlock} />
 
         {/* 07 */}
@@ -294,6 +295,12 @@ export function ConcernView({ c }: { c: Concern }) {
       {/* 08 — band 1 of 3, espresso: the conversion moment, placed where the
           visitor has just read the options and cannot pick between them alone. */}
       <CtaMid cta={c.ctaMid} href={wa} position="mid" />
+
+      {/* Results — full container width, out of the reading column, because a
+          gallery capped at the prose measure would shrink images that are
+          already small. Placed after the conversion moment and before the
+          technology band; it renders its own disclaimer (ADR-0001 §2). */}
+      <ResultsBlock items={c.results} />
 
       {/* 15 — band 2 of 3, tint: the technology comparison. The lead sentence is
           the point — a bare logo wall says nothing, "the device is matched to
@@ -325,7 +332,7 @@ export function ConcernView({ c }: { c: Concern }) {
 
       {/* 12 · 14 · 16 · 17 — the tail, past the three bands. */}
       <Reading hasRail={hasRail}>
-        <FirstVisitBlock f={c.firstVisit} />
+        <FirstVisitBlock f={c.firstVisit} images={c.visitImages} />
         <ConcernCostBlock c={c.costFactors} href={wa} />
 
         {/* 16 — native <details>, answers always in the DOM (R-10). */}

@@ -12,10 +12,13 @@
 //   Q-13  jump nav is at most 7 items
 //   Q-14  every media src sits on the concerns CDN prefix (never public/)
 //   Q-15  every media src resolves to an entry in config/concern-media.json
+//         that the sync script will actually upload (not parked, not held)
 //   Q-16  results declare a native width + ratio, and the width matches the
 //         manifest's recorded source width (the anti-upscaling guard)
 //   Q-17  slides carry alt and NO caption; figures carry a caption
 //   Q-18  a concern declaring results has the shared disclaimer rendered
+//   Q-19  figures are authored one per cause — they pair by position, so a
+//         mismatch re-captions or drops photographs without saying so
 //
 // Run: pnpm validate:concerns   (exits non-zero on any failure)
 import { readFileSync, readdirSync } from "node:fs";
@@ -51,10 +54,12 @@ const BANNED: [RegExp, string][] = [
 const anchorsOf = (c: Concern): string[] => concernToc(c, true).map((h) => h.id);
 
 // Q-14…Q-16 — every authored media URL must be one the sync script will
-// actually upload. Parked keys are excluded on purpose: they never upload.
+// actually upload. Parked keys are excluded on purpose: they never upload, and
+// neither does a held asset (ADR-0001 §5) — authoring either produces a page
+// that 404s its own imagery, which is the failure Q-15 exists to catch.
 const byUrl = new Map<string, number>(
   manifest.assets
-    .filter((a) => a.key.startsWith(manifest.bucketPrefix))
+    .filter((a) => a.key.startsWith(manifest.bucketPrefix) && !("hold" in a))
     .map((a) => [manifest.publicBase + a.key.slice(manifest.bucketPrefix.length), a.width]),
 );
 
@@ -174,6 +179,16 @@ for (const c of concerns) {
   }
   for (const f of c.figures ?? []) {
     if (!f.caption?.trim()) fail(c.slug, "Q-17", `figure "${f.src}" has no caption (the caption carries the meaning)`);
+  }
+
+  // Q-19 — figures pair with causes by position, so a count mismatch is not a
+  // cosmetic gap: it re-captions every photograph after the missing one, or
+  // drops the tail silently. The pairing is enforced here rather than trusted
+  // to the author, because neither failure is visible in review.
+  const figureCount = c.figures?.length ?? 0;
+  const driverCount = c.drivers?.items.length ?? 0;
+  if (figureCount && figureCount !== driverCount) {
+    fail(c.slug, "Q-19", `${figureCount} figures against ${driverCount} causes — they pair by position`);
   }
 }
 
