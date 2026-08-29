@@ -8,12 +8,17 @@ import type { Doctor } from "@/lib/types";
  * E-E-A-T payload: a named, MMC-registered doctor with credentials and a link to
  * a full profile page (docs/02 §5) — not a generic "Kaiteki team" byline.
  */
-export function AuthorCard({ doctor }: { doctor: Doctor }) {
+export function AuthorCard({
+  doctor,
+  label = "About the author",
+}: {
+  doctor: Doctor;
+  /** Concern and treatment pages reuse the card for the medical reviewer. */
+  label?: string;
+}) {
   return (
     <section className="rounded-2xl border border-hairline bg-surface p-6 sm:p-8">
-      <p className="text-xs font-semibold uppercase tracking-[0.14em] text-mocha">
-        About the author
-      </p>
+      <p className="text-xs font-semibold uppercase tracking-[0.14em] text-mocha">{label}</p>
       <div className="mt-5 flex flex-col gap-5 sm:flex-row">
         <Link
           href={`/doctors/${doctor.slug}`}

@@ -1,18 +1,17 @@
 import { getImageProps } from "next/image";
-import Link from "next/link";
 import type { ReactNode } from "react";
 import { Container } from "@/components/Container";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { LeadAnswer } from "@/components/LeadAnswer";
 import { Ledger, ReviewByline } from "@/components/Ledger";
 import { Faq } from "@/components/Faq";
-import { Disclaimer } from "@/components/Disclaimer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { ArticleToc } from "@/components/blog/ArticleToc";
-import { FactRail, CtaMid, LocationsBlock } from "@/components/treatment-blocks";
+import { AuthorCard } from "@/components/blog/AuthorCard";
+import { TechnologyCard } from "@/components/cards";
+import { FactRail, CtaMid } from "@/components/treatment-blocks";
 import {
   Section,
-  Band,
   DriversBlock,
   VariantBlock,
   LocationBlock,
@@ -99,10 +98,8 @@ function Banner({ c }: { c: Concern }) {
 
 /**
  * The reading column, with the sticky contents rail beside it on wide screens.
- * The rail is rendered once, in the first group; the groups after it keep the
- * column aligned with an empty spacer. When there is no contents at all the
- * column is not reserved either — an empty 15rem gutter is the thing this
- * layout exists to remove.
+ * When there is no contents at all the column is not reserved either — an empty
+ * 15rem gutter is the thing this layout exists to remove.
  */
 function Reading({
   hasRail,
@@ -113,22 +110,14 @@ function Reading({
   rail?: ReactNode;
   children: ReactNode;
 }) {
-  // A sticky element only sticks while its own parent is on screen, so the rail
-  // has to live in the group it accompanies. The bands are placed *after* that
-  // group for exactly this reason — the article runs unbroken beside the rail,
-  // and the tail group is indented to stay aligned rather than rendering an
-  // empty aside, which would put the gutter straight back.
-  if (!hasRail) {
+  // A sticky element only sticks while its own parent is on screen, so every
+  // reading group that should have the rail beside it renders its own copy —
+  // otherwise the groups after the full-bleed bands scroll with no contents at
+  // all, which is exactly the half-a-page rail this avoids.
+  if (!hasRail || !rail) {
     return (
       <Container>
         <div className="min-w-0">{children}</div>
-      </Container>
-    );
-  }
-  if (!rail) {
-    return (
-      <Container>
-        <div className="min-w-0 lg:pl-[19rem]">{children}</div>
       </Container>
     );
   }
@@ -140,6 +129,17 @@ function Reading({
       </div>
     </Container>
   );
+}
+
+/**
+ * A band inside the reading column. Bands carry their own full-width section
+ * and Container, so below lg — where there is no rail and the column is the
+ * page — the wrapper cancels the column's gutter and the band bleeds to the
+ * screen edge as before. From lg the band stops at the column, leaving the
+ * contents rail an unbroken gutter all the way down the article.
+ */
+function Bleed({ children }: { children: ReactNode }) {
+  return <div className="-mx-5 sm:-mx-6 lg:mx-0">{children}</div>;
 }
 
 export function ConcernView({ c }: { c: Concern }) {
@@ -293,48 +293,46 @@ export function ConcernView({ c }: { c: Concern }) {
         {/* 09 · 10 */}
         <TreatmentsBlock c={c} options={options} />
         <CompareBlock c={c.compare} />
-      </Reading>
 
-      {/* 08 — band 1 of 3, espresso: the conversion moment, placed where the
-          visitor has just read the options and cannot pick between them alone. */}
-      <CtaMid cta={c.ctaMid} href={wa} position="mid" />
+        {/* 08 — band 1 of 3, espresso: the conversion moment, placed where the
+            visitor has just read the options and cannot pick between them alone. */}
+        <Bleed>
+          <CtaMid cta={c.ctaMid} href={wa} position="mid" />
+        </Bleed>
 
-      {/* Results — full container width, out of the reading column, because a
-          gallery capped at the prose measure would shrink images that are
-          already small. Placed after the conversion moment and before the
-          technology band; it renders its own disclaimer (ADR-0001 §2). */}
-      <ResultsBlock items={c.results} />
+        {/* Results — breaks the prose measure but stays in the column, so the
+            contents rail keeps running beside it. It renders its own disclaimer
+            (ADR-0001 §2). */}
+        <Bleed>
+          <ResultsBlock items={c.results} />
+        </Bleed>
 
-      {/* 15 — band 2 of 3, tint: the technology comparison. The lead sentence is
-          the point — a bare logo wall says nothing, "the device is matched to
-          you" is a reason to choose Kaiteki. */}
-      {techItems.length > 0 && (
-        <Band id="technology" tone="tint">
-          <h2 className="h-section">Technology used</h2>
-          <p className="mt-6 max-w-[62ch] leading-relaxed text-ink-700">
-            {c.technologyIntro ??
-              "Having more than one platform means the doctor can match the device to your skin type and to what is being treated, rather than fitting your skin to a single machine."}
-          </p>
-          <ul className="mt-8 flex flex-wrap gap-2">
-            {techItems.map((x) => (
-              <li key={x.slug}>
-                <Link
-                  href={`/technology/${x.slug}`}
-                  className="inline-flex rounded-full border border-hairline bg-surface px-3.5 py-1.5 text-sm text-ink-700 transition-colors hover:border-mocha hover:text-espresso"
-                >
-                  {x.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </Band>
-      )}
+        {/* 15 · technology. The lead sentence is the point — a bare logo wall
+            says nothing, "the device is matched to you" is a reason to choose
+            Kaiteki. Photo cards in a horizontal scroller: the list runs to a
+            dozen platforms on some concerns, and a grid that deep would bury
+            the sections after it. */}
+        {techItems.length > 0 && (
+          <Section id="technology">
+            <h2 className="h-section">Technology used</h2>
+            <p className="mt-6 max-w-[62ch] leading-relaxed text-ink-700">
+              {c.technologyIntro ??
+                "Having more than one platform means the doctor can match the device to your skin type and to what is being treated, rather than fitting your skin to a single machine."}
+            </p>
+            <ul className="mt-8 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4">
+              {techItems.map((x) => (
+                <li key={x.slug} className="w-[17rem] shrink-0 snap-start">
+                  <TechnologyCard x={x} showUsedIn={false} className="h-full" />
+                </li>
+              ))}
+            </ul>
+          </Section>
+        )}
 
-      {/* 13 — band 3 of 3, porcelain: the safety notice. */}
-      <ConcernRisksBlock r={c.risks} />
+        {/* 13 · the safety notice. */}
+        <ConcernRisksBlock r={c.risks} />
 
-      {/* 12 · 14 · 16 · 17 — the tail, past the three bands. */}
-      <Reading hasRail={hasRail}>
+        {/* 12 · 14 · 16 · 17 — the tail, past the three bands. */}
         <FirstVisitBlock f={c.firstVisit} images={c.visitImages} />
         <ConcernCostBlock c={c.costFactors} href={wa} />
 
@@ -351,17 +349,18 @@ export function ConcernView({ c }: { c: Concern }) {
         <RelatedConcernsBlock items={related} />
       </Reading>
 
+
       {/* 18 — bottom CTA, on page ground: the three surfaced bands are spent.
           Heading and body are per-concern strings (spec bugs B-03/B-04):
           "what's causing it" is nonsense on a tattoo, and "your skin" is wrong
           for a scalp or a palm. */}
       <Container className="border-t border-hairline py-14 sm:py-20">
-        <div className="max-w-[62ch]">
-          <h2 className="h-section max-w-[18ch]">
+        <div className="mx-auto max-w-[62ch] text-center">
+          <h2 className="h-section mx-auto max-w-[18ch]">
             {c.ctaHeading ?? "Have a doctor look at it"}
           </h2>
-          <p className="mt-5 max-w-[52ch] leading-relaxed text-ink-700">
-            The consultation is free, takes about 20–30 minutes, and there is no obligation to
+          <p className="mx-auto mt-5 max-w-[52ch] leading-relaxed text-ink-700">
+            The consultation is free, takes about 20 to 30 minutes, and there is no obligation to
             book treatment afterwards. A doctor will examine {c.ctaAssesses ?? "your skin"} and
             talk you through what is, and is not, worth doing.
           </p>
@@ -372,28 +371,26 @@ export function ConcernView({ c }: { c: Concern }) {
             label="Book a free consultation"
             className="mt-8"
           />
-          {/* All 9 branches, every one an internal link — never "+6 more" (R-12). */}
-          <LocationsBlock />
         </div>
       </Container>
 
-      {/* 18 · ledger — reviewer, review date, derived next-review date (R-08). */}
-      <Container className="py-12 sm:py-14">
-        <div className="max-w-[62ch] space-y-8">
-          <Ledger
-            rows={
-              review
-                ? [
-                    { label: "Reviewed by", value: reviewerByline(review.doctor) },
-                    { label: "Last reviewed", value: dmy(review.date) },
-                    { label: "Next review due", value: nextReview(review.date) },
-                  ]
-                : [{ label: "Reviewed by", value: "Awaiting medical review" }]
-            }
-          />
-          <Disclaimer />
-        </div>
-      </Container>
+      {/* 18 · the reviewer, as the blog renders one: a named, MMC-registered
+          doctor with a photo and a link to the profile (docs/02 §5), plus the
+          ledger's review dates (R-08). */}
+      {review && (
+        <Container className="py-12 sm:py-14">
+          <div className="max-w-[62ch] space-y-8">
+            <AuthorCard doctor={review.doctor} label="Medically reviewed by" />
+            <Ledger
+              rows={[
+                { label: "Reviewed by", value: reviewerByline(review.doctor) },
+                { label: "Last reviewed", value: dmy(review.date) },
+                { label: "Next review due", value: nextReview(review.date) },
+              ]}
+            />
+          </div>
+        </Container>
+      )}
     </article>
   );
 }

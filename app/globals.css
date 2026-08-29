@@ -113,14 +113,6 @@ body {
   line-height: 1.16;
   font-size: 1.2rem;
 }
-/* A section heading living in a narrow sticky aside column takes one step down
-   the scale — at full .h-section size a real medical heading ("Risks, side
-   effects, and what Pico Laser cannot do") runs to six lines in a 21rem column.
-   Same voice, same weight; only the size yields to the container. */
-.aside-col .h-section {
-  font-size: clamp(1.6rem, 1.28rem + 1vw, 2.05rem);
-  line-height: 1.12;
-}
 /* Display headings inherit espresso; on an espresso surface they need the
    inverse ink. One switch on the band, rather than an override per heading. */
 .on-dark .h-hero,
