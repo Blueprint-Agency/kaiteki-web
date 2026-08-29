@@ -19,6 +19,21 @@ export interface Faq {
   a: string;
 }
 
+/** 2:1 photo, subject left. The caption carries the meaning, so alt is "" —
+ *  shared by `Concern` and `Treatment` rather than declared twice: the sources
+ *  are one family and the container is one component (docs/14). */
+export interface Figure {
+  src: string;
+  caption: string;
+}
+
+/** A labelled zone photograph — a 1:1 transparent die-cut on page ground, never
+ *  a tint band. The object half of the `Treatment.areas` union. */
+export interface AreaZone {
+  label: string;
+  src: string;
+}
+
 /** A body section of a treatment/concern page (answer-first). */
 export interface Section {
   heading: string;
@@ -51,8 +66,10 @@ export interface Treatment {
   /** Typical number of sessions for a course, e.g. "4-6". Session time and
    *  downtime are already carried in `durationDowntime`. */
   typicalSessions?: string;
-  /** Areas this treatment is commonly applied to, e.g. ["Face", "Neck"]. */
-  areas?: string[];
+  /** Areas this treatment is commonly applied to. A string renders as a text
+   *  chip, an object as a die-cut zone photograph with its label beneath — one
+   *  concept, one field (docs/14). Mixing the two in one array fails Q-20. */
+  areas?: (string | AreaZone)[];
   /** Who this treatment is generally appropriate for — paired with
    *  `notSuitableFor` as a scannable suitable/not-suitable checklist. */
   suitableFor?: string[];
@@ -73,7 +90,9 @@ export interface Treatment {
 
   /** T-02 fact strip. Exactly three PROCESS facts — never a time-to-result. */
   facts?: { value: string; label: string }[];
-  /** T-03 jump nav. Max 7. `id` must match a block's anchor id. */
+  /** T-03 jump nav. No longer rendered: the horizontal bar retired with the
+   *  heading gutter (docs/14 §"The contents rail"), and the sticky contents
+   *  rail derives its own list. Survives as the authored ordering hint. */
   jumpNav?: { id: string; label: string }[];
   /** T-06 routing module: sub-groups of the concern space, each linked out. */
   routes?: { title: string; body: string; links: { href: string; label: string }[] }[];
@@ -116,6 +135,14 @@ export interface Treatment {
   /** T-14 manufacturer images (Full only). Labelled in four places or omitted
    *  entirely — never shipped half-labelled (rule R-07). */
   manufacturerImages?: { src: string; alt: string; caption: string }[];
+  /** Photographs inside the reading column, placed one per two prose sections —
+   *  so a treatment must not declare more than floor(sections / 2) of them, or
+   *  the surplus is dropped silently (Q-23). */
+  figures?: Figure[];
+  /** An ordered procedure sequence. Numbered because the order is the
+   *  information. Sources are 156×156 icons and the cell is capped there:
+   *  upscaling an icon is visibly soft (Q-19). */
+  steps?: { label: string; src: string; body: string }[];
   /** T-17 one-line reason per related treatment slug, framed around what this
    *  treatment does NOT do. */
   relatedReasons?: Record<string, string>;
@@ -307,8 +334,8 @@ export interface Concern {
   /** C-01 responsive banner pair. The subject sits left in every source asset;
    *  the hero sets object-position:left and puts the H1 in the right half. */
   banner?: { src: string; sm: string; alt: string };
-  /** 2:1 photo, subject left. The caption carries the meaning, so alt is "". */
-  figures?: { src: string; caption: string }[];
+  /** 2:1 photo, subject left. Shared with `Treatment` (docs/14). */
+  figures?: Figure[];
   /** 2:1 designed infographic — headline and body already in the artwork. No
    *  caption (it would double-label); alt transcribes the burned-in text. */
   slides?: { src: string; alt: string }[];

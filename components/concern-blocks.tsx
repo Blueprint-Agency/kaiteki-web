@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { Container } from "@/components/Container";
 import { ResultsDisclaimer } from "@/components/Disclaimer";
+import { ResultsGallery } from "@/components/ResultsGallery";
 import { Rows, Row } from "@/components/treatment-blocks";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { ArrowRight } from "@/components/icons";
@@ -193,29 +194,7 @@ export function ResultsBlock({ items }: { items?: Concern["results"] }) {
     <section id="results" className={`py-14 sm:py-20 ${CLEAR_HEADER}`}>
       <Container>
         <h2 className="h-section">Results from Kaiteki patients</h2>
-        <ul className="mt-10 grid grid-cols-2 gap-x-6 gap-y-9 sm:grid-cols-3 lg:grid-cols-4">
-          {items.map((r) => (
-            <li key={r.src}>
-              <div
-                className="relative overflow-hidden rounded-lg bg-tint ring-1 ring-hairline"
-                style={{ aspectRatio: r.ratio, maxWidth: r.nativeWidth }}
-              >
-                {/* `object-contain`, not cover: the file is a composited pair,
-                    and any drift between the declared ratio and the source
-                    would crop one half of it. The caption carries the meaning,
-                    so the image is decorative to a screen reader. */}
-                <Image
-                  src={r.src}
-                  alt=""
-                  fill
-                  sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 260px"
-                  className="object-contain"
-                />
-              </div>
-              <p className="mt-2.5 max-w-[34ch] text-sm leading-snug text-ink-500">{r.caption}</p>
-            </li>
-          ))}
-        </ul>
+        <ResultsGallery items={items} />
         <div className="mt-10 max-w-[70ch]">
           <ResultsDisclaimer />
         </div>
@@ -559,15 +538,16 @@ export function FirstVisitBlock({
 }
 
 /**
- * C-13 · Risks and realistic limits. Porcelain band — a formal clinical notice
- * rather than an alert card. At least one item must state what treatment cannot
- * do, and the pigment-change note is required wherever energy devices are
- * listed (rule R-05); both are enforced by scripts/validate-concerns.mjs.
+ * C-13 · Risks and realistic limits. A formal clinical notice rather than an
+ * alert card, and on page ground like the rest of the reading column: at least
+ * one item must state what treatment cannot do, and the pigment-change note is
+ * required wherever energy devices are listed (rule R-05); both are enforced by
+ * scripts/validate-concerns.mjs.
  */
 export function ConcernRisksBlock({ r }: { r?: Concern["risks"] }) {
   if (!r?.items.length) return null;
   return (
-    <Band id="risks" tone="porcelain">
+    <Section id="risks">
       <h2 className="h-section">Risks and what to expect</h2>
       {r.intro && <p className="mt-6 max-w-[62ch] leading-relaxed text-ink-700">{r.intro}</p>}
       <div className="mt-10 divide-y divide-espresso/15 border-y border-espresso/15">
@@ -578,7 +558,7 @@ export function ConcernRisksBlock({ r }: { r?: Concern["risks"] }) {
         ))}
       </div>
       <p className="mt-8 max-w-[62ch] leading-relaxed text-ink-700">{r.disclose}</p>
-    </Band>
+    </Section>
   );
 }
 

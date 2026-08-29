@@ -31,6 +31,19 @@
 //   Q-18  a concern declaring results has the shared disclaimer rendered
 //   Q-19  figures are authored one per cause — they pair by position, so a
 //         mismatch re-captions or drops photographs without saying so
+// Q-19…Q-21 are numbered twice: docs/14 assigned Q-19…Q-24 to the treatment
+// rules without noticing that the concern gate already used the first three.
+// The numbers are kept as specced — they are what a reviewer looks for — and
+// the page type disambiguates them, as does the slug every failure carries.
+//
+//   Q-19  (treatments) every `steps` icon is at most 156px, its native width —
+//         the anti-upscaling guard, and the twin of Q-16
+//   Q-20  (treatments) the `areas` union holds: chips or zones, never both, and
+//         every zone carries a label and a src
+//   Q-21  (treatments) the manufacturer renderer keeps the two labelling places
+//         that live in code — R-07 machine-checked rather than commented
+//   Q-23  (treatments) no more figures than Variant A renders, floor(sections/2)
+//   Q-24  (treatments) no rail entry points at a section no block renders
 //   Q-20  every concern is named in the sign-off ledger — unsigned pages are
 //         warned by name, and every ledger entry resolves to a real doctor
 //   Q-21  (--live only) every media URL actually resolves in the bucket
@@ -45,6 +58,7 @@ import registry from "../config/concerns.json" with { type: "json" };
 import manifest from "../config/concern-media.json" with { type: "json" };
 import treatmentManifest from "../config/treatment-media.json" with { type: "json" };
 import { concernToc } from "../lib/concern-toc.ts";
+import { treatmentToc, headingAnchor } from "../lib/treatment-toc.ts";
 import { concernSignoff, concernSignoffs } from "../lib/signoff.ts";
 import type { Concern, Treatment } from "../lib/types.ts";
 
@@ -70,6 +84,24 @@ const BANNED: [RegExp, string][] = [
  * is passed as present: it is derived from the relations map, not from `c`.
  */
 const anchorsOf = (c: Concern): string[] => concernToc(c, true).map((h) => h.id);
+
+/** Native width of every `steps` icon (docs/14 §"Step sequence"). */
+const STEP_MAX_WIDTH = 156;
+
+/**
+ * Every anchor id the treatment renderers actually set, read from their source
+ * rather than restated here: a list restated in the gate is a second source of
+ * truth, and it goes stale the first time a block is renamed. Section anchors
+ * are derived (`id={headingAnchor(...)}`) and checked against the authored
+ * headings instead.
+ */
+const RENDERED_ANCHORS = new Set(
+  ["components/TreatmentView.tsx", "components/treatment-blocks.tsx"].flatMap((f) =>
+    [...readFileSync(join(import.meta.dirname, "..", f), "utf8").matchAll(/\bid="([a-z0-9-]+)"/g)].map(
+      (m) => m[1],
+    ),
+  ),
+);
 
 // Q-14…Q-16 — every authored media URL must be one the sync script will
 // actually upload. Parked keys are excluded on purpose: they never upload, and
@@ -112,11 +144,15 @@ function mediaUrls(c: Concern): [string, string][] {
 
 /**
  * Every CDN media src on a treatment. `image` is deliberately absent: the 19 heroes are
- * already-migrated legacy media and stay in public/ (docs/14 §Media delivery). Ticket 02
- * adds figures, steps and the areas union here; the rules below already cover them.
+ * already-migrated legacy media and stay in public/ (docs/14 §Media delivery).
  */
 function treatmentMediaUrls(t: Treatment): [string, string][] {
-  return (t.manufacturerImages ?? []).map((m) => [m.src, "manufacturerImages"]);
+  return [
+    ...(t.manufacturerImages ?? []).map((m) => [m.src, "manufacturerImages"]),
+    ...(t.figures ?? []).map((f) => [f.src, "figures"]),
+    ...(t.steps ?? []).map((s) => [s.src, "steps"]),
+    ...(t.areas ?? []).filter((a) => typeof a !== "string").map((a) => [a.src, "areas"]),
+  ] as [string, string][];
 }
 
 /**
@@ -253,6 +289,67 @@ for (const t of treatments) {
   for (const m of t.manufacturerImages ?? []) {
     if (!m.caption.trim()) fail(t.slug, "Q-17", `manufacturer image "${m.src}" has no caption (R-07)`);
     if (!m.alt.trim()) fail(t.slug, "Q-17", `manufacturer image "${m.src}" has no alt (R-07)`);
+  }
+
+  // Q-19 — the anti-upscaling guard on `steps`, the treatment twin of Q-16.
+  // These are 156px icons; rendered wider they are visibly soft, so the source
+  // must not claim to be something it is not and the cell is capped in the
+  // component (StepsBlock renders w-[156px]).
+  for (const s of t.steps ?? []) {
+    if (!s.label?.trim() || !s.body?.trim()) {
+      fail(t.slug, "Q-19", `step "${s.src}" needs both a label and a body`);
+    }
+    const width = treatmentMedia.live.get(s.src);
+    if (width && width > STEP_MAX_WIDTH) {
+      fail(t.slug, "Q-19", `step "${s.src}" is ${width}px — steps render at ${STEP_MAX_WIDTH}px`);
+    }
+  }
+
+  // Q-20 — the `areas` union at the data layer. A mixed array is the failure
+  // mode: the block renders zones OR chips, so mixing silently drops one shape.
+  const areas = t.areas ?? [];
+  const zones = areas.filter((a) => typeof a !== "string");
+  if (zones.length && zones.length !== areas.length) {
+    fail(t.slug, "Q-20", `areas mixes ${areas.length - zones.length} chips with ${zones.length} zones`);
+  }
+  for (const z of zones) {
+    if (!z.label?.trim() || !z.src?.trim()) fail(t.slug, "Q-20", "an areas zone omits its label or src");
+  }
+
+  // Q-23 — Variant A places one figure per two prose sections and drops the
+  // surplus. A figure nobody notices is missing is exactly what a gate is for.
+  const maxFigures = Math.floor((t.sections?.length ?? 0) / 2);
+  if ((t.figures?.length ?? 0) > maxFigures) {
+    fail(
+      t.slug,
+      "Q-23",
+      `${t.figures!.length} figures against ${t.sections?.length ?? 0} sections — at most ${maxFigures} are rendered`,
+    );
+  }
+
+  // Q-24 — the treatment twin of concern Q-10. The rail is derived, so an entry
+  // can only go dead by naming an anchor no block sets; the prototype shipped
+  // exactly that (`devices`) and only a rendered page revealed it.
+  const authored = new Set((t.sections ?? []).map((s) => headingAnchor(s.heading)));
+  for (const h of treatmentToc(t, true, true)) {
+    if (!RENDERED_ANCHORS.has(h.id) && !authored.has(h.id)) {
+      fail(t.slug, "Q-24", `rail entry "${h.text}" → #${h.id}, which no rendered block owns`);
+    }
+  }
+}
+
+// Q-21 — R-07's four labelling places. Two are authored data (Q-17 above); the
+// other two live in the renderer, so they are checked against its source rather
+// than trusted to a comment. Checked once: the strings are deliberately outside
+// the treatment data so they cannot be edited away one page at a time.
+if (treatments.some((t) => t.manufacturerImages?.length)) {
+  const src = readFileSync(join(import.meta.dirname, "..", "components/treatment-blocks.tsx"), "utf8");
+  const block = src.slice(src.indexOf("export function ManufacturerImages"));
+  if (!/supplied by the device manufacturers/.test(block)) {
+    fail("all", "Q-21", "manufacturer images render no heading paragraph naming the source (R-07)");
+  }
+  if (!/Images supplied by device manufacturers\. Not Kaiteki patients/.test(block)) {
+    fail("all", "Q-21", "manufacturer images render no closing disclaimer (R-07)");
   }
 }
 

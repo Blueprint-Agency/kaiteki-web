@@ -963,7 +963,7 @@ export const concerns: Concern[] = [
         },
         {
           lead: "Pigment change and Malaysian skin",
-          body: "Medium and deeper skin tones carry a higher chance of post-inflammatory hyperpigmentation after energy-based treatment — the exact problem being treated, made worse. This is why doctors here choose conservative settings and longer intervals, and why the course may run longer than you expect.",
+          body: "Medium and deeper skin tones carry a higher chance of post-inflammatory hyperpigmentation after energy-based treatment: the exact problem being treated, made worse. This is why doctors here choose conservative settings and longer intervals, and why the course may run longer than you expect.",
         },
         {
           lead: "Melasma can rebound",
@@ -1712,7 +1712,7 @@ export const concerns: Concern[] = [
       {
         src: "https://cdn.kaiteki.my/concerns/dark-eye-circles/figure-01.jpg",
         caption:
-          "A groove between the lower lid and the cheek casts a shadow. Nothing there is pigmented — the darkness is contour.",
+          "A groove between the lower lid and the cheek casts a shadow. Nothing there is pigmented: the darkness is contour.",
       },
     ],
 
@@ -1916,7 +1916,7 @@ export const concerns: Concern[] = [
         },
         {
           title: "Examination",
-          body: "The doctor looks at the area in more than one light and angle, stretches the skin gently, and checks whether the darkness moves with the light — the same tests you can do at home, done properly.",
+          body: "The doctor looks at the area in more than one light and angle, stretches the skin gently, and checks whether the darkness moves with the light. These are the same tests you can do at home, done properly.",
         },
         {
           title: "Discussion",
@@ -3919,7 +3919,7 @@ export const concerns: Concern[] = [
         "It has been gradual, is affecting your confidence, and you want to understand your options while there is still hair to work with.",
       ],
       outro:
-        "Timing genuinely matters here, more than in most cosmetic concerns. A follicle that has been dormant for years behaves differently from one that is still producing fine hair, and scarring conditions cause permanent loss if they are left. Earlier assessment is not a sales line on this page — it is the honest advice.",
+        "Timing genuinely matters here, more than in most cosmetic concerns. A follicle that has been dormant for years behaves differently from one that is still producing fine hair, and scarring conditions cause permanent loss if they are left. Earlier assessment is not a sales line on this page; it is the honest advice.",
     },
 
     // ── 08

@@ -5,7 +5,7 @@
  * `results` and no concern renderer renders this.
  */
 const RESULTS_DISCLAIMER =
-  "Photographs of Kaiteki patients, published with consent. Individual results vary and are not guaranteed. These images are not a promise of outcome — a doctor will assess whether any treatment is suitable for you.";
+  "Photographs of Kaiteki patients, published with consent. Individual results vary and are not guaranteed. These images are not a promise of outcome. A doctor will assess whether any treatment is suitable for you.";
 
 /** Rendered with every results gallery. */
 export function ResultsDisclaimer() {
