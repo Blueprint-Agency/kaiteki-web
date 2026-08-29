@@ -573,6 +573,13 @@ This section governs how Kaiteki publishes health content at the intersection of
 
 ### 8.1 Hard compliance rules (legal first, SEO second)
 
+> ⚠️ **Superseded in part by [ADR-0001](adr/0001-before-after-imagery.md) (2026-08-29).** On
+> the client's explicit instruction, before/after imagery **is** published on concern pages,
+> under the conditions in that ADR §3 (caption, disclaimer, no schema markup,
+> unidentifiable, no upscaling, no retouching). Everything else below stands unchanged —
+> testimonials, superlatives, guarantees, and `Review`/`AggregateRating` schema remain
+> prohibited. Read the ADR before treating a results image on a concern page as a bug.
+
 - **No patient testimonials, reviews, or identifiable before/after photos on the medical site. [P1]** MMC ethical guidelines and the MAB Advertising Guidelines for Healthcare Facilities (3/2023) prohibit patient testimonials, before/after patient photographs, identifiable patients, celebrity endorsement, and anything creating an "unjustified expectation of beneficial treatment" ([Medical Protection MY](https://www.medicalprotection.org/malaysia/casebook-resources/factsheets/factsheets/mal-practice-promotion), [MMC dissemination guideline, Sept 2025](https://mmc.gov.my/wp-content/uploads/2025/09/The-Dissemination-of-Information-by-Medical-Profesionals-Including-on-Social-Media.pdf)). The 2025 MMC reissue extends this to social media.
   - **Do** keep factual non-patient signals: doctor qualifications, substantiated accreditations/awards, years operating, number of branches.
   - **Avoid** embedded Google review stars, quote cards, written testimonials, or before/after galleries on treatment/service pages — and do **not** add `Review`/`AggregateRating` schema to medical pages (it both marks up prohibited content and breaches Google's self-serving-review policy; see §11.1).

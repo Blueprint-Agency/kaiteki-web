@@ -91,7 +91,7 @@ The foundation is solid: legacy inventory (01), SEO/AEO standard (02), competito
 **Phase D — Migration QA (pre-launch)**
 12. Implement full redirect map (`redirects()` + `proxy.ts` host/case/`/cn/`/blog rules); generate hurl suite from the map; all green.
 13. Screaming Frog crawl of staging: no orphans, no chains, depth ≤ 3; sitemap-vs-crawl diff clean; Unlighthouse + Pa11y pass; validator.schema.org spot-checks.
-14. Compliance gate: doctor review of medical copy, KKLIU numbers in hand, MAB checklist (no testimonials/before-after/superlatives), PDPA privacy live.
+14. Compliance gate: doctor review of medical copy, KKLIU numbers in hand, MAB checklist (no testimonials/superlatives), PDPA privacy live. **Before/after is no longer part of that checklist** — [ADR-0001](adr/0001-before-after-imagery.md) reinstated it for concern pages, and its §3 conditions plus MAB adviser sign-off are what the gate checks instead.
 15. Staging blocked at host level (auth), not robots.
 
 **Phase E — Cutover**

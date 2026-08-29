@@ -36,6 +36,25 @@ Research, audit, and design docs for rebuilding [kaiteki.my](https://kaiteki.my)
 
 > Phase 2 docs are written on request, in order. Each should be validated against `docs/02` before implementation.
 
+### Phase 3 — Implementation references
+| # | Doc | What it covers |
+|---|-----|-----------|
+| 08 | [`08-legacy-redirect-map.md`](./08-legacy-redirect-map.md) | The shipped 301 map from legacy URLs to their new homes. |
+| 09 | [`09-analytics-migration.md`](./09-analytics-migration.md) | GA4/GSC continuity across the cutover. |
+| 10 | [`10-onpage-meta-keyword-map.md`](./10-onpage-meta-keyword-map.md) | Per-page title/meta templates and the keyword map behind them. |
+| 11 | [`11-concern-media-inventory.md`](./11-concern-media-inventory.md) | **Concern media ground truth**: the five source families and their ratios, the 14-concern coverage matrix, the four under-covered concerns excluded from media wiring, and the R2 delivery model. |
+| 12 | [`12-concern-page-revamp-spec.md`](./12-concern-page-revamp-spec.md) | The `/concerns/[slug]` revamp: chosen layout, the six media fields, delivery, testing decisions, and what is out of scope. |
+| 13 | [`13-treatment-media-inventory.md`](./13-treatment-media-inventory.md) | **Treatment/technology media ground truth**: the 201 source files in `2. treatments` + `3. device and injectables`, what already ships (19/19 treatments, 36/36 technologies), the 19-treatment coverage matrix, the banner gap that blocks copying the concern layout, and the media with no page to live on. |
+
+## Decision records
+
+Numbered ADRs in [`adr/`](./adr) record decisions that **reverse** something the numbered
+docs assert. A doc and an ADR that disagree are not a bug in the doc — read the ADR.
+
+| ADR | Decision |
+|---|---|
+| [0001](./adr/0001-before-after-imagery.md) | Before/after imagery **is** published on concern pages, under stated conditions. Reverses `docs/02` §8.1, `docs/05` §1, `docs/06` §5, `docs/00` §14, `DESIGN.md` "Imagery", and the `notSuitableFor` comment in `lib/types.ts`. Also records why concern media skips the blog's staged-in-repo rule. |
+
 ## Conventions
 
 - Docs are numbered for reading order; cross-reference by number/section (e.g. "see `docs/02` §9").

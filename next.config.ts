@@ -19,7 +19,14 @@ const nextConfig: NextConfig = {
     // brand/ objects already there. Migrated legacy media stays in public/:
     // one deliberate boundary, not a half-and-half drift.
     // See content/blog/AUTHORING.md §3.
-    remotePatterns: [{ protocol: "https", hostname: "cdn.kaiteki.my", pathname: "/blog/**" }],
+    //
+    // Concern media joins it under a concerns/ prefix (docs/11 §5). Unlike blog media it
+    // is never staged in git — 44 MB of source uploads straight from the designer's
+    // folder via scripts/sync-concern-media.mjs (ADR-0001 §4).
+    remotePatterns: [
+      { protocol: "https", hostname: "cdn.kaiteki.my", pathname: "/blog/**" },
+      { protocol: "https", hostname: "cdn.kaiteki.my", pathname: "/concerns/**" },
+    ],
   },
   // Ads landing pages live in public/ads/ but serve from the root URL they're bought on.
   async rewrites() {
