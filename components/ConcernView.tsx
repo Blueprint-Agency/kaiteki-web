@@ -144,8 +144,7 @@ function Reading({
 
 export function ConcernView({ c }: { c: Concern }) {
   // A reviewer byline is only shown for a page a doctor has actually signed off
-  // (config/concern-signoff.json). Unsigned pages say "Awaiting medical review"
-  // instead — visible on the page, so nothing ships silently unreviewed.
+  // (config/concern-signoff.json). Unsigned pages show no byline.
   const review = concernReviewer(c.slug);
   const options = treatmentsOfConcern(c.slug);
   const techItems = technologyOfConcern(c.slug);
@@ -165,6 +164,16 @@ export function ConcernView({ c }: { c: Concern }) {
   // this layout exists to remove.
   const headings = concernToc(c, techItems.length > 0);
   const hasRail = headings.length >= TOC_MIN_HEADINGS;
+
+  // Ghost CTA — sits in the hero next to the summary, on both hero variants.
+  const cta = (
+    <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
+      <WhatsAppButton href={wa} variant="outline" position="hero" label="Book a free consultation" />
+      <p className="text-sm text-ink-500">
+        Free, about 20–30 minutes, no obligation to book treatment.
+      </p>
+    </div>
+  );
 
   return (
     <article>
@@ -191,6 +200,7 @@ export function ConcernView({ c }: { c: Concern }) {
                 <p className="mt-5 max-w-[46ch] text-lg leading-relaxed text-ink-700">
                   {c.summary}
                 </p>
+                {cta}
               </div>
             </Container>
           </div>
@@ -200,24 +210,14 @@ export function ConcernView({ c }: { c: Concern }) {
               <p className="kicker">Concern · {c.group}</p>
               <h1 className="h-hero mt-4">{c.name}</h1>
               <p className="mt-5 text-lg leading-relaxed text-ink-700">{c.summary}</p>
+              {cta}
             </div>
           </Container>
         )}
 
-        <Container className="py-8 sm:py-10">
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
-            <WhatsAppButton
-              href={wa}
-              variant="outline"
-              position="hero"
-              label="Book a free consultation"
-            />
-            <p className="text-sm text-ink-500">
-              Free, about 20–30 minutes, no obligation to book treatment.
-            </p>
-          </div>
-          {review ? (
-            <div className="mt-7 max-w-sm">
+        {review && (
+          <Container className="py-8 sm:py-10">
+            <div className="max-w-sm">
               <ReviewByline
                 doctorName={review.doctor.fullName}
                 mmc={review.doctor.mmc}
@@ -226,13 +226,8 @@ export function ConcernView({ c }: { c: Concern }) {
                 href={`/doctors/${review.doctor.slug}`}
               />
             </div>
-          ) : (
-            <p className="ledger mt-7 max-w-sm rounded-lg border border-dashed border-hairline px-4 py-3 !text-ink-500">
-              Awaiting medical review — this page has not yet been signed off by
-              a Kaiteki doctor.
-            </p>
-          )}
-        </Container>
+          </Container>
+        )}
       </header>
 
       {/* 02 — three neutral process facts, never a time to a result (R-01). */}
