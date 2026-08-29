@@ -10,7 +10,7 @@ export const orgId = `${site.url}/#organization`;
 export const websiteId = `${site.url}/#website`;
 
 // Root-relative path → absolute URL. Media already on an absolute host
-// (media.kaiteki.my, the R2 bucket) passes through untouched.
+// (cdn.kaiteki.my, the R2 bucket) passes through untouched.
 const abs = (path: string) =>
   path.startsWith("https://") ? path : `${site.url}${path === "/" ? "" : path}`;
 

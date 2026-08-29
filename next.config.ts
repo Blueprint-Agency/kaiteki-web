@@ -14,11 +14,12 @@ const nextConfig: NextConfig = {
   // Modern formats for the warm imagery (docs/02 §2).
   images: {
     formats: ["image/avif", "image/webp"],
-    // New blog media lives in Cloudflare R2 behind media.kaiteki.my (zero egress,
-    // keeps the repo lean past ~100 posts). Migrated legacy media stays in
-    // public/ — one deliberate boundary, not a half-and-half drift.
+    // New blog media lives in Cloudflare R2 (bucket kaiteki-web-prod) behind the
+    // existing cdn.kaiteki.my, under a blog/ prefix so it stays clear of the
+    // brand/ objects already there. Migrated legacy media stays in public/:
+    // one deliberate boundary, not a half-and-half drift.
     // See content/blog/AUTHORING.md §3.
-    remotePatterns: [{ protocol: "https", hostname: "media.kaiteki.my", pathname: "/blog/**" }],
+    remotePatterns: [{ protocol: "https", hostname: "cdn.kaiteki.my", pathname: "/blog/**" }],
   },
   // Ads landing pages live in public/ads/ but serve from the root URL they're bought on.
   async rewrites() {

@@ -24,8 +24,8 @@ import { branchBySlug } from "../content/data/branches.ts";
 const ROOT = process.cwd();
 const BLOG_DIR = join(ROOT, "content", "blog");
 const PUBLIC = join(ROOT, "public");
-// The R2 bucket's custom domain — the only remote host next.config.ts allows.
-const R2_HOST = "https://media.kaiteki.my/blog/";
+// The R2 bucket's custom domain, the only remote host next.config.ts allows.
+const R2_HOST = "https://cdn.kaiteki.my/blog/";
 
 const errors: string[] = [];
 const warnings: string[] = [];
@@ -122,7 +122,7 @@ for (const p of posts) {
   // Imagery. A hero is optional (most migrated posts have none and fall back to
   // the generated motif) but a broken path or a missing alt is not.
   if (p.image) {
-    // New posts point at R2 (media.kaiteki.my); only repo-hosted paths can be
+    // New posts point at R2 (cdn.kaiteki.my); only repo-hosted paths can be
     // checked on disk. A wrong host is caught by next/image at build.
     if (p.image.startsWith("https://")) {
       if (!p.image.startsWith(R2_HOST)) err(`${at}: remote image must be on ${R2_HOST}`);

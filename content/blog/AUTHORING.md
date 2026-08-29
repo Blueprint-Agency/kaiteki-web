@@ -115,11 +115,12 @@ Text always lives in the repo. Media splits by origin, once and deliberately:
 
 - **Migrated media** (the one-time WordPress back-catalogue) stays **in-repo**
   under `public/images/blog/`. Don't move it; there is nothing to gain.
-- **All media for new posts goes to Cloudflare R2**, served from
-  `https://media.kaiteki.my`. Path convention:
+- **All media for new posts goes to Cloudflare R2** (bucket `kaiteki-web-prod`),
+  served from `https://cdn.kaiteki.my`. Path convention:
   `blog/<post-slug>/<descriptive-name>.jpg` — descriptive filenames are image
-  SEO, so name the file what the picture is, not `img-2.jpg`.
-- Reference it as the full URL: `https://media.kaiteki.my/blog/<slug>/<name>.jpg`.
+  SEO, so name the file what the picture is, not `img-2.jpg`. The `blog/` prefix
+  keeps posts clear of the `brand/` objects already in that bucket.
+- Reference it as the full URL: `https://cdn.kaiteki.my/blog/<slug>/<name>.jpg`.
   `next/image` optimizes it exactly like a local file (`next.config.ts`
   allows the host), and the JSON-LD passes it through absolute.
 - **Video is never in the repo and never raw in R2.** R2 serves flat files with
