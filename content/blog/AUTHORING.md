@@ -33,7 +33,8 @@ array does not matter; every page sorts by `publishedAt`.
   description:
     "What causes melasma in Malaysia's tropical climate, how to manage it with daily skincare and sun protection, and when professional treatment is the next step.",
   category: "Skin Concerns",
-  image: "/images/blog/melasma-treatment-malaysia-causes-skincare.png",
+  image:
+    "https://cdn.kaiteki.my/blog/melasma-treatment-malaysia-causes-skincare/melasma-treatment-malaysia-causes-skincare.png",
   imageAlt:
     "Illustration of a woman touching her cheek where a melasma patch sits, for a Kaiteki guide to melasma treatment in Malaysia",
   author: "dr-joaan-kong",
@@ -57,7 +58,7 @@ array does not matter; every page sorts by `publishedAt`.
 | `seoTitle` | recommended | The `<title>`. **Max 60 characters including `\| Kaiteki`.** Title Case, head keyword first. Omit only when `title` is already under 60. |
 | `description` | yes | Meta description, **140–160 characters** (the gate errors outside 120–170). Describes what the reader gets. No "Learn more", no clickbait. |
 | `category` | yes | Exactly one of: `Treatments Explained`, `Skin Concerns`, `Device & Injectables`, `Weight & Wellness`, `Skincare`. |
-| `image` / `imageAlt` | optional pair | 1440×1080 (4:3). New posts: an R2 URL (§3). Migrated posts keep their `public/images/blog/<slug>.png` path. Alt describes the picture for someone who cannot see it. Omit both and the post renders a generated motif instead, which is fine. |
+| `image` / `imageAlt` | optional pair | 1440×1080 (4:3). Always a `https://cdn.kaiteki.my/blog/...` URL with the file staged under `content/blog/media/` (§3). Alt describes the picture for someone who cannot see it. Omit both and the post renders a generated motif instead, which is fine. |
 | `author` | yes | Doctor slug from `content/data/doctors.ts`. The byline: a real doctor, never "Kaiteki team". |
 | `reviewedBy` | recommended | A second doctor slug. Spread reviews across the panel rather than piling them on one name. |
 | `publishedAt` | yes | `YYYY-MM-DD`. |
@@ -109,26 +110,39 @@ Rules the gate enforces:
 - **Tables** are Markdown (GFM) and scroll on their own on mobile. Use them for
   real comparisons.
 
-## 3. Media: the two-home rule
+## 3. Media: R2, and nothing under `public/`
 
-Text always lives in the repo. Media splits by origin, once and deliberately:
+**Every image a blog post serves lives in Cloudflare R2** (bucket
+`kaiteki-web-prod`, served from `https://cdn.kaiteki.my`). `public/` is for the
+rest of the site only; there is no blog media there and none should return.
 
-- **Migrated media** (the one-time WordPress back-catalogue) stays **in-repo**
-  under `public/images/blog/`. Don't move it; there is nothing to gain.
-- **All media for new posts goes to Cloudflare R2** (bucket `kaiteki-web-prod`),
-  served from `https://cdn.kaiteki.my`. Path convention:
-  `blog/<post-slug>/<descriptive-name>.jpg` — descriptive filenames are image
-  SEO, so name the file what the picture is, not `img-2.jpg`. The `blog/` prefix
-  keeps posts clear of the `brand/` objects already in that bucket.
-- Reference it as the full URL: `https://cdn.kaiteki.my/blog/<slug>/<name>.jpg`.
-  `next/image` optimizes it exactly like a local file (`next.config.ts`
-  allows the host), and the JSON-LD passes it through absolute.
-- **Video is never in the repo and never raw in R2.** R2 serves flat files with
-  no transcoding or adaptive streaming. Default to a YouTube embed.
+You do not upload anything by hand. The publish is git-based, so the git push
+does it:
 
-Upload is S3-compatible (any S3 MCP server, `wrangler r2`, or the Cloudflare
-API), with credentials write-scoped to that bucket. They are operator secrets:
-never in the repo, never in `.env.example`.
+1. Put the file at **`content/blog/media/<post-slug>/<descriptive-name>.png`**.
+   That directory is not served by Next, it is the upload queue. Descriptive
+   filenames are image SEO, so name the file what the picture is, not
+   `img-2.jpg`.
+2. Reference it as the full CDN URL, mirroring that path exactly:
+   `https://cdn.kaiteki.my/blog/<post-slug>/<descriptive-name>.png`.
+3. Merge to `staging` or `main`. The deploy workflow syncs
+   `content/blog/media/` into the bucket's `blog/` prefix before it builds the
+   image, using credentials held in the repo's GitHub secrets. Nothing is
+   hardcoded and no author needs the keys.
+
+`pnpm check:blog` fails the PR if a post points anywhere but that host, or if a
+CDN URL has no matching file staged for upload, which is the 404 that would
+otherwise only show up in production.
+
+`next/image` optimizes an R2 URL exactly like a local file (`next.config.ts`
+allows the host), and the JSON-LD passes it through absolute.
+
+The sync only ever adds; it never deletes. Removing a file from git leaves the
+old URL serving, deliberately, because it may already be indexed. To retire an
+object, delete it from the bucket yourself.
+
+**Video is never in the repo and never raw in R2.** R2 serves flat files with
+no transcoding or adaptive streaming. Default to a YouTube embed.
 
 ## 4. Blocks
 
@@ -136,7 +150,7 @@ Available in any `.mdx` body with no import line (`components/blog/blocks.tsx`):
 
 ```mdx
 <Figure
-  src="/images/blog/melasma-depth-diagram.png"
+  src="https://cdn.kaiteki.my/blog/melasma-treatment-malaysia-causes-skincare/melasma-depth-diagram.png"
   alt="Cross-section showing epidermal, dermal and mixed melasma depths"
   caption="Epidermal pigment sits shallow; dermal pigment sits deeper and needs a different plan."
   ratio="16/9"
