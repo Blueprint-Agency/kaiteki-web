@@ -96,12 +96,11 @@ export function Panel({
   );
 }
 
-/** A full-bleed band with its own Container — what `CtaMid` renders on concern
- *  pages, where the mid-page CTA is still one of three full-width bands. */
-function Band({ tone, children }: { tone: "espresso"; children: ReactNode }) {
-  const surface = { espresso: "on-dark bg-espresso text-ink-on-dark" }[tone];
+/** The full-bleed espresso band — what `CtaMid` renders on concern pages, where
+ *  the mid-page CTA is still one of three full-width bands. */
+function EspressoBand({ children }: { children: ReactNode }) {
   return (
-    <section className={`py-14 sm:py-20 ${surface}`}>
+    <section className="on-dark bg-espresso py-14 text-ink-on-dark sm:py-20">
       <Container>{children}</Container>
     </section>
   );
@@ -319,7 +318,7 @@ export function CtaMid({
   return variant === "panel" ? (
     <Panel tone="espresso">{body}</Panel>
   ) : (
-    <Band tone="espresso">{body}</Band>
+    <EspressoBand>{body}</EspressoBand>
   );
 }
 

@@ -1,6 +1,5 @@
 import type { Treatment } from "@/lib/types";
 import type { Heading } from "@/lib/blog";
-
 /**
  * The treatment page's contents, derived from the authored data — the sibling
  * of `lib/concern-toc.ts`, not a copy of it: the two page types render
@@ -20,7 +19,10 @@ import type { Heading } from "@/lib/blog";
  * Every entry is level 2: treatment sections are peers.
  */
 
-/** Anchor id for an authored section heading — the same slug the h2 carries. */
+/** Anchor id for an authored section heading — the same slug the h2 carries.
+ *  Duplicated from `lib/concern-toc.ts` deliberately: both are imported by
+ *  `scripts/validate-concerns.mts` under bare node, which resolves neither the
+ *  `@/` alias nor an extensionless path, so they can only share *types*. */
 export const headingAnchor = (h: string) =>
   h.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 

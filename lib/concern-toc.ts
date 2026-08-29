@@ -20,7 +20,10 @@ import type { Heading } from "@/lib/blog";
  * only give the rail an indent to render.
  */
 
-/** Anchor id for an authored section heading — the same slug the h2 carries. */
+/** Anchor id for an authored section heading — the same slug the h2 carries.
+ *  `lib/treatment-toc.ts` carries its own copy: both modules are imported by
+ *  `scripts/validate-concerns.mts` under bare node, which resolves neither the
+ *  `@/` alias nor an extensionless path, so they can only share *types*. */
 export const headingAnchor = (h: string) =>
   h.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 

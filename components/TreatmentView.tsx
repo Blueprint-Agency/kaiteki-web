@@ -447,32 +447,35 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
         )}
       </Reading>
 
-      {/* T-18 — the closing CTA, on page ground past the reading column: the
-          three surfaces are spent. */}
-      <Container className="border-t border-hairline py-14 sm:py-20">
-        <div className="grid gap-10 lg:grid-cols-[1fr_0.72fr] lg:items-center lg:gap-16">
-          <div>
-            <h2 className="h-section max-w-[16ch]">Book a free consultation</h2>
-            <p className="mt-5 max-w-[52ch] leading-relaxed text-ink-700">
-              A doctor will examine your skin and tell you whether {t.name} is appropriate, and if
-              it isn&rsquo;t, what would be. No obligation.
-            </p>
-            <WhatsAppButton
-              href={wa}
-              size="lg"
-              position="bottom"
-              label="Ask about this treatment"
-              className="mt-8"
+      {/* T-18 — the closing CTA. Past the reading column, so it keeps the tint
+          bleed it has always had: the rail has ended and there is nothing left
+          for a full-width band to float over. */}
+      <section className="border-y border-hairline bg-tint py-14 sm:py-20">
+        <Container>
+          <div className="grid gap-10 lg:grid-cols-[1fr_0.72fr] lg:items-center lg:gap-16">
+            <div>
+              <h2 className="h-section max-w-[16ch]">Book a free consultation</h2>
+              <p className="mt-5 max-w-[52ch] leading-relaxed text-ink-700">
+                A doctor will examine your skin and tell you whether {t.name} is appropriate, and
+                if it isn&rsquo;t, what would be. No obligation.
+              </p>
+              <WhatsAppButton
+                href={wa}
+                size="lg"
+                position="bottom"
+                label="Ask about this treatment"
+                className="mt-8"
+              />
+              <LocationsBlock availableAt={t.availableAt} />
+            </div>
+            <TreatmentMotif
+              t={t}
+              seed="consult"
+              className="hidden aspect-[4/3] rounded-2xl rounded-t-[3rem] ring-1 ring-hairline lg:block"
             />
-            <LocationsBlock availableAt={t.availableAt} />
           </div>
-          <TreatmentMotif
-            t={t}
-            seed="consult"
-            className="hidden aspect-[4/3] rounded-2xl rounded-t-[3rem] ring-1 ring-hairline lg:block"
-          />
-        </div>
-      </Container>
+        </Container>
+      </section>
 
       {/* T-19 */}
       <Container className="py-12 sm:py-14">
