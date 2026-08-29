@@ -1,155 +1,109 @@
 ---
 name: publish-blog-post
-description: Write and publish a blog post to a git-based site (no CMS, posts are repo files). Use when asked to draft, write or publish a blog post for a project's repo. Gathers what it needs, reads the repo's own authoring contract, drafts for approval, then branches, previews and opens a PR.
+description: Draft and publish a blog post to a git-based site (no CMS, posts are repo files). Use when asked to draft, write or publish a blog post for a project's repo. Phase A drafts in chat for fast iteration; Phase B ships it to a PR, and only runs when the user says so.
 ---
 
 # Publish a blog post from a git repo
 
-Some sites have no CMS. The repo is the database, a PR is the draft, and a merge
-to `main` is the publish button. A post is one or two files plus a contract that
-says exactly what those files must contain.
+No CMS: the repo is the database, a PR is the draft, a merge to `main` publishes.
 
-Your job: find that contract, obey it, and produce the files.
+**Two phases. You are in Phase A unless told otherwise.**
 
-## Step 1 — gather what you cannot look up
+| | A: DRAFT | B: PUBLISH |
+|---|---|---|
+| When | Default, always | Only on "publish" / "ship it" / "open the PR" |
+| Output | The post, in chat | Files, branch, preview, PR |
+| Writes files | Never | Yes |
+| Installs or builds | Never | No, CI does that |
 
-Ask for these in **one message**, not one at a time. Never ask for anything you
-can discover from the repo yourself.
+"Looks good" approves the prose. It is not an instruction to ship. If unsure, ask in one line.
 
-**Required:**
+---
 
-- **Repo** — `owner/name`. If the session already has a repo checked out, that
-  is the repo; do not ask.
-- **Topic** — what the post is about.
+# Phase A: draft
 
-**Ask only if the answer would change the post, and offer a default:**
+**A1. Ask once.** One message, not a serial interview. Never ask what the repo can tell you.
 
-- Angle or reader — who it is for, what question it answers.
-- Target keyword, if the project does SEO.
-- Category or section, if the contract has a fixed list (read the list first,
-  then ask them to pick from it).
-- Author or byline, if the contract requires a real person.
+- Repo (`owner/name`). If one is checked out, that is it. Do not ask.
+- Topic.
+- Angle, keyword, category, byline: only if the answer changes the post, and offer a default.
 
-If they already gave you a draft, you still do Step 2 before touching it. A
-draft written without the contract will not satisfy the contract.
+**A2. Read the contract, one batch.** If the project is in Known projects, read exactly the files that row lists and stop exploring. Otherwise find the contract (`content/blog/AUTHORING.md`, `docs/publishing.md`, `CONTRIBUTING.md`), then the metadata type, the data files slugs come from, one recent post, and the validation script.
 
-## Step 2 — find and read the contract
+Read the validation script, not just the prose. It holds the exact limits the written contract rounds off. **The contract overrides this skill.**
 
-If the repo is checked out, read the files directly. Otherwise list the tree
-(public repos need no auth):
+No contract? Say so, infer from two published posts, flag that you are guessing.
+
+**A3. Research.** The part worth spending time on. Everything else here is mechanical.
+
+- **Web search** for primary sources: regulator positions, trial data, guidelines. Mandatory on YMYL topics (medical, financial, legal).
+- **`gsc`**, if connected. Highest value: find queries with impressions and no good landing page (that is your post), and avoid cannibalising a page that already ranks.
+- **`ubersuggest`**, if connected: volume, difficulty, related questions, what the SERP rewards.
+- **`ga4`**, if connected: which posts get read. Informs depth and shape, not topic.
+
+Use what is connected, skip what is not, say which you used. Never block on a missing tool.
+
+**A4. Write, show, stop.** Output the metadata (slug, title, seoTitle, description, category, author, reviewer) and the full body in chat. Name your sources. Say what you are least sure about. Then wait.
+
+**No file writes. No branch. No commit. No install. No build.** None of it helps the user judge prose, all of it is slow. Iterate here as many times as they want; it costs seconds.
+
+Check before showing:
+
+- Field lengths are hard limits with a validator behind them. Count characters, do not estimate.
+- Do not duplicate what the template renders (H1, byline, TOC, related links, closing CTA come from metadata). Duplicating ships two H1s.
+- Internal links must resolve to slugs you actually read. Never invent one.
+- House style is machine-enforced: banned characters (em-dashes are common), heading depth, minimum sections and links.
+- Match the voice of the published post you read.
+
+**A5. Compliance**, where the contract has a section for it. No validator catches these, so re-read the draft against them specifically. Usual shape: no outcome guarantees, no testimonials or before/after imagery, no superlatives about the business, no prices or promotions, cite real sources, say when evidence is limited. If a claim cannot be supported, cut it rather than soften it.
+
+---
+
+# Phase B: publish
+
+Explicit instruction only. Keep it small: CI is faster and more capable than the sandbox.
+
+1. **Branch.** Already on a working branch? Use it, do not rename or recreate. Otherwise the contract's convention. Never commit to `main`: it is protected and merge is the publish event.
+2. **Write the two files.** Metadata appended to the data file, body file created.
+3. **Run the validation script only.** Fix and re-run until clean. Do not run install, typecheck, lint or build: CI does all four in under a minute on a machine that can finish them, and a sandboxed build often cannot.
+4. **Commit.** Two files, one commit.
+5. **Push**, then deploy the preview if the project has one. Give the user the URL.
+6. **Open the PR with a command**, not an assumption: `gh pr create --base main --title "..." --body "..."`. If `gh` is missing, use the API; if that fails, give the compare URL and say plainly you could not open it. Body: what the post is, what you ran, what you could not verify.
+7. **Stop. Do not merge.** Merge belongs to the human, whose job is the one CI cannot do: deciding whether the claims are true and the copy is compliant. If they want it unattended, tell them to enable auto-merge themselves.
+
+Cannot push (no credentials)? Say so plainly and output the files as code blocks, one per file, labelled with its path, no prose around them.
+
+**Done means:** Phase A, the user has the draft. Phase B, the PR is open, checks are green, they have a preview URL, and you have said which checks you skipped.
+
+---
+
+# Known projects
+
+## Kaiteki: `Blueprint-Agency/kaiteki-web`
+
+Medical aesthetics clinic, Malaysia. YMYL: MAB/MMC advertising rules bind every claim. `AUTHORING.md` §5 is hard.
+
+Read exactly these in A2:
 
 ```
-https://api.github.com/repos/<owner>/<name>/git/trees/<default-branch>?recursive=1
-https://raw.githubusercontent.com/<owner>/<name>/<default-branch>/<path>
+content/blog/AUTHORING.md                 the contract
+scripts/check-blog.mts                    the gate, the real limits
+lib/types.ts                              the Post type
+content/data/doctors.ts                   author / reviewedBy slugs
+content/data/concerns.ts                  /concerns/... slugs
+content/data/treatments.ts                /treatments/... slugs
+content/data/technology.ts                /technology/... slugs
+content/blog/alma-titanium-lifting.mdx    a published body, for shape
 ```
 
-Look for the authoring contract. Names vary by project:
+Phase B:
 
 ```
-content/blog/AUTHORING.md   docs/publishing.md   content/AUTHORING.md
-CONTRIBUTING.md             docs/content.md      README.md (a "blog" section)
+pnpm check:blog                          # no install needed, the only local check
+git push origin HEAD:staging --force     # preview at staging.kaiteki.my, noindexed
+gh pr create --base main                 # then stop
 ```
 
-**The contract overrides this skill.** Where they disagree, it wins.
+Staging holds one post at a time: the branch is cut from `main`, so the force-push makes staging exactly main plus this post, and the next post overwrites it.
 
-Then read what the contract points at:
-
-- The **type or schema** for post metadata, so every field is real and typed
-  correctly.
-- The **data files** any slug must come from (authors, categories, tags,
-  related pages). Never invent a slug or a category; if it is not in the data
-  file, the page does not exist and the link will fail the build.
-- **One published post**, the most recent one. Copy its shape. It is the only
-  reliable record of what the project actually accepts.
-- The **validation script** the contract names (`check:blog`,
-  `validate:content`, or similar). Read it. It carries the exact limits —
-  character counts, minimum sections, link rules — that prose may round off.
-
-If no contract exists, say so plainly, infer the format from two published
-posts, and flag that you are guessing.
-
-## Step 3 — draft, then stop
-
-Write the post to the contract. Then **output the draft in chat and stop.**
-
-Do not create a branch, write files, or commit until the user approves. Iterating
-prose in chat is faster than iterating as commits.
-
-Show them: the proposed metadata (title, description, category, author, slug)
-and the full body. Say what you are least sure about. Then wait.
-
-If they ask for changes, revise and show it again. Only move on when they say so.
-
-The things drafts break in every project, worth checking before you show it:
-
-- Metadata **field lengths** are usually hard limits with a validator behind
-  them. Count characters, do not estimate.
-- **Do not duplicate what the page template renders.** Most sites render the H1,
-  byline, table of contents, related links and closing CTA from metadata. Repeat
-  them in the body and the post ships with two H1s.
-- **Internal links must resolve.** Use the slugs you read in Step 2, on
-  descriptive anchor text.
-- **House style is enforced by machine** more often than you expect: banned
-  characters (em-dashes are a common one), heading depth, minimum sections,
-  minimum links. The validation script is the truth.
-- Match the **voice of the published post you read**, not your default register.
-
-## Step 4 — compliance, if the project has any
-
-Regulated niches (medical, financial, legal, health claims) carry rules no
-validator can check. If the contract has a compliance section, treat every line
-as a hard constraint, and re-read your draft against it specifically.
-
-Common shape: no outcome guarantees, no testimonials or before/after imagery,
-no superlatives about the business, no prices or promotions in editorial copy,
-cite real sources, say when evidence is limited.
-
-If a claim cannot be supported, cut it. Do not soften it.
-
-## Step 5 — write the files and run the gate
-
-Once approved:
-
-1. Branch. Use the convention the contract names (often `content/<slug>`).
-   **Never commit to `main`.** It is usually protected, and merge is the publish
-   event. Branch commits and open PRs publish nothing, so iterate freely.
-2. Write the files. Append metadata to the data file, create the body file.
-3. Run the project's validation script, plus typecheck and lint. Fix what it
-   reports and re-run until clean. Expect the first run to fail.
-4. If a step fails for an environment reason rather than a content reason
-   (blocked network, missing font fetch, no package registry), say so explicitly
-   and do not present it as a content failure.
-5. Commit. Two files, one commit.
-
-## Step 6 — preview
-
-Push the branch, then deploy it to the project's preview environment if it has
-one (see Known projects). Give the user the preview URL and wait for their read.
-
-Further changes: amend or add commits to the branch, push, redeploy the preview.
-
-## Step 7 — open the PR
-
-Base `main`, head your branch. In the description say what the post is, which
-checks you ran locally, and anything you could not verify.
-
-**Do not merge.** Merge is the publish event and it belongs to the human, whose
-job is the thing CI cannot do: check that the claims are true and the copy is
-compliant. If they want it to land unattended once checks pass, tell them to
-enable GitHub auto-merge on the PR themselves.
-
-If you cannot push (no credentials in the sandbox), say so plainly, and output
-the files as code blocks — one per file, labelled with its exact path, no prose
-around them.
-
-## What "done" means
-
-The PR is open, the required checks are green, and the user has a preview URL.
-Say which checks you could not run and what you are least sure about. That is
-more useful than a confident hand-off.
-
-## Known projects
-
-| Say | Repo | Contract | Preview | Gate |
-|---|---|---|---|---|
-| Kaiteki, kaiteki.my | `Blueprint-Agency/kaiteki-web` | `content/blog/AUTHORING.md` | `git push origin HEAD:staging --force` → staging.kaiteki.my (one post at a time, branch is cut from `main` so staging becomes main + this post) | `pnpm check:blog`, `typecheck`, `lint`. `pnpm build` fails in sandboxes — Google Fonts is blocked outbound; CI runs the real build. |
+Never run `pnpm build` here. It cannot finish in a sandbox (Google Fonts fetch is blocked) and CI runs it on the PR in about 40 seconds.
