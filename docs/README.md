@@ -45,6 +45,7 @@ Research, audit, and design docs for rebuilding [kaiteki.my](https://kaiteki.my)
 | 11 | [`11-concern-media-inventory.md`](./11-concern-media-inventory.md) | **Concern media ground truth**: the five source families and their ratios, the 14-concern coverage matrix, the four under-covered concerns excluded from media wiring, and the R2 delivery model. |
 | 12 | [`12-concern-page-revamp-spec.md`](./12-concern-page-revamp-spec.md) | The `/concerns/[slug]` revamp: chosen layout, the six media fields, delivery, testing decisions, and what is out of scope. |
 | 13 | [`13-treatment-media-inventory.md`](./13-treatment-media-inventory.md) | **Treatment/technology media ground truth**: the 201 source files in `2. treatments` + `3. device and injectables`, what already ships (19/19 treatments, 36/36 technologies), the 19-treatment coverage matrix, the banner gap that blocks copying the concern layout, and the media with no page to live on. |
+| 14 | [`14-treatment-page-revamp-spec.md`](./14-treatment-page-revamp-spec.md) | The `/treatments/[slug]` revamp: 14 treatments in, 5 excluded, why the concern layout is **not** ported, the `areas` union, the `manufacturerImages` container fix, and the shared media contract. |
 
 ## Decision records
 
