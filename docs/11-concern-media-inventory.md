@@ -184,7 +184,7 @@ pnpm audit:concern-media --write    # rewrites §2 of this file
 pnpm audit:concern-media --manifest # rewrites config/concern-media.json
 ```
 
-Source folders are found via `CONCERN_MEDIA_SOURCE` (see `.env.example`); dimensions come
+Source folders are found via `MEDIA_SOURCE` (see `.env.example`); dimensions come
 from macOS `sips`, so this is designer/dev tooling and does not run in CI.
 
 The first machine run of the audit corrected three rows the hand-count of 2026-08-29 had
