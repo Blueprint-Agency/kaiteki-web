@@ -146,9 +146,6 @@ export interface Treatment {
   /** T-17 one-line reason per related treatment slug, framed around what this
    *  treatment does NOT do. */
   relatedReasons?: Record<string, string>;
-  /** T-18 branch slugs offering this treatment. Omit to list all branches;
-   *  never render a "+N more" (rule R-12). */
-  availableAt?: string[];
 
   /** Compliance + review (placeholder values for the sample — docs/05 §9). */
   reviewedBy: string; // doctor slug

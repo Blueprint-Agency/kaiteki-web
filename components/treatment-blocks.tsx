@@ -3,9 +3,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { Container } from "@/components/Container";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
-import { TreatmentMotif } from "@/components/cards";
 import { ArrowRight, Check, X } from "@/components/icons";
-import { branches } from "@/content/data/branches";
 import { technologyBySlug } from "@/content/data/technology";
 import type { Treatment } from "@/lib/types";
 
@@ -16,11 +14,8 @@ import type { Treatment } from "@/lib/types";
  * that data is absent — so a page turns a block off by omitting its field, and
  * TreatmentView stays a flat list of blocks with no per-page branching.
  *
- * Layout model. The 2026-07 redesign made this page an editorial spine — three
- * meaningful tone surfaces, a 62–68ch prose measure, Fraunces display headings
- * — and that spine survives unchanged. What docs/14 changed is the frame around
- * it: one sticky contents rail (`ArticleToc`) now runs the whole scrollable
- * body, so
+ * Layout model. A 62–68ch prose measure, Fraunces display headings, and one
+ * sticky contents rail (`ArticleToc`) running the whole scrollable body, so
  *
  *   · `Split`, the sticky 21rem *heading* gutter, is gone. A page cannot carry
  *     that and a 15rem contents rail; they are two left columns, and the
@@ -30,10 +25,13 @@ import type { Treatment } from "@/lib/types";
  *     rules. This is the fork `concern-blocks.tsx` already performed;
  *   · sections render *inside* TreatmentView's reading column and carry no
  *     Container of their own;
- *   · the three tone surfaces become inset panels rather than full-bleed bands,
- *     because a full-bleed band inside a railed column would leave the rail
- *     floating over it. Each still means one thing: espresso is the conversion
- *     moment, porcelain the safety notice, tint the device comparison.
+ *   · **every section sits on page ground.** The 2026-07 spine gave the device
+ *     comparison a tint panel and the safety notice a porcelain one; 2026-08
+ *     removed both, so treatments match the concern page they are read
+ *     alongside. One surface survives — the espresso mid-page CTA — because it
+ *     is the conversion moment and the only thing allowed to be loudest on the
+ *     page. It bleeds full width, as it does on `/concerns`, rather than
+ *     floating as an inset panel under the rail.
  *
  * `JumpNav` retired with the gutter, for the reason docs/12 retired it on
  * concerns: two navigations doing one job.
@@ -65,39 +63,9 @@ export function Section({
   );
 }
 
-/**
- * One of the three surfaced panels, inset in the reading column. `tone` is the
- * meaning, not a decoration: espresso = the conversion moment, porcelain = the
- * safety notice, tint = the device comparison. Each appears once per page.
- */
-export function Panel({
-  id,
-  tone,
-  className = "",
-  children,
-}: {
-  id?: string;
-  tone: "tint" | "porcelain" | "espresso";
-  className?: string;
-  children: ReactNode;
-}) {
-  const surface = {
-    tint: "border border-hairline bg-tint",
-    porcelain: "border border-hairline bg-porcelain",
-    espresso: "on-dark bg-espresso text-ink-on-dark",
-  }[tone];
-  return (
-    <section
-      id={id}
-      className={`my-12 rounded-2xl p-8 sm:my-14 sm:p-10 ${id ? CLEAR_CHROME : ""} ${surface} ${className}`}
-    >
-      {children}
-    </section>
-  );
-}
-
-/** The full-bleed espresso band — what `CtaMid` renders on concern pages, where
- *  the mid-page CTA is still one of three full-width bands. */
+/** The full-bleed espresso band — the one surfaced band both page types keep,
+ *  and the only place the conversion is allowed to be the loudest thing on the
+ *  screen. Nothing else on a treatment page carries a background. */
 function EspressoBand({ children }: { children: ReactNode }) {
   return (
     <section className="on-dark bg-espresso py-14 text-ink-on-dark sm:py-20">
@@ -216,26 +184,27 @@ export function RoutingModule({
  * treatments this is the wavelength comparison; the copy must read as a
  * factual difference in delivery, never as a ranking (rule R-02). Two genuinely
  * equivalent columns, so an equal two-up is honest here — and it is the one
- * place on the page where imagery does real work. Tint: the device comparison,
- * one of the three surfaces.
+ * place on the page where imagery does real work.
  */
 /** The variant's own `/technology/[slug]` link already names the platform, so
  *  the cover shot is derived from it rather than authored a second time. */
 const deviceImage = (href?: string) =>
   href?.startsWith("/technology/") ? technologyBySlug(href.split("/").pop()!)?.image : undefined;
 
-export function VariantModule({ t, m }: { t: Treatment; m?: Treatment["variantModule"] }) {
+export function VariantModule({ m }: { m?: Treatment["variantModule"] }) {
   if (!m) return null;
   return (
-    <Panel id="which-device" tone="tint">
+    <Section id="which-device">
       <Lede heading={m.heading} intro={m.intro} />
       <div className="mt-10 grid gap-10 sm:grid-cols-2 sm:gap-12">
-        {m.items.map((i, idx) => {
+        {m.items.map((i) => {
           const cover = deviceImage(i.href);
           return (
             <div key={i.title}>
-              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl rounded-t-[2.5rem] bg-surface ring-1 ring-hairline">
-                {cover ? (
+              {/* No frame where there is no photograph — an empty tinted box is
+                  the placeholder furniture this page type does not carry. */}
+              {cover && (
+                <div className="relative mb-6 aspect-[4/3] overflow-hidden rounded-2xl rounded-t-[2.5rem] bg-tint ring-1 ring-hairline">
                   <Image
                     src={cover}
                     alt={`${i.title}: aesthetic technology at Kaiteki Skin Aesthetic Clinic`}
@@ -244,11 +213,9 @@ export function VariantModule({ t, m }: { t: Treatment; m?: Treatment["variantMo
                     sizes="(max-width: 640px) 100vw, 45vw"
                     className="object-cover"
                   />
-                ) : (
-                  <TreatmentMotif t={t} seed={`device-${idx}`} className="size-full" />
-                )}
-              </div>
-              <p className="ledger mt-6 text-[0.6875rem] uppercase tracking-[0.14em]">{i.eyebrow}</p>
+                </div>
+              )}
+              <p className="ledger text-[0.6875rem] uppercase tracking-[0.14em]">{i.eyebrow}</p>
               <h3 className="h-sub mt-1.5">{i.title}</h3>
               <p className="mt-3 max-w-[46ch] leading-relaxed text-ink-700">{i.body}</p>
               {i.href && (
@@ -272,7 +239,7 @@ export function VariantModule({ t, m }: { t: Treatment; m?: Treatment["variantMo
           {m.note}
         </p>
       )}
-    </Panel>
+    </Section>
   );
 }
 
@@ -285,19 +252,18 @@ export function VariantModule({ t, m }: { t: Treatment; m?: Treatment["variantMo
  * warm-white ring because green on espresso is only 2.1:1 — the ring is what
  * identifies the control.
  *
- * `variant` is the layout, not the meaning: treatments render it as an inset
- * panel in the reading column, concerns as one of their three full-bleed bands.
+ * One shape for both page types: a full-bleed espresso band. Treatments used to
+ * render it as an inset panel; matching concerns means a visitor who reads a
+ * concern and a treatment back to back meets the same CTA twice, not two.
  */
 export function CtaMid({
   cta,
   href,
   position = "mid",
-  variant = "band",
 }: {
   cta?: Treatment["ctaMid"];
   href: string;
   position?: string;
-  variant?: "band" | "panel";
 }) {
   if (!cta) return null;
   const body = (
@@ -315,11 +281,7 @@ export function CtaMid({
       />
     </div>
   );
-  return variant === "panel" ? (
-    <Panel tone="espresso">{body}</Panel>
-  ) : (
-    <EspressoBand>{body}</EspressoBand>
-  );
+  return <EspressoBand>{body}</EspressoBand>;
 }
 
 /**
@@ -378,36 +340,32 @@ export function SuitabilityBlock({ t }: { t: Treatment }) {
 
 /**
  * T-10 · What a session involves. Numbered because it is genuinely a sequence;
- * step 1 states that the first visit is a consultation, not a treatment. The
- * plate beside it survives the gutter's removal as a wide-screen companion
- * column, so the block keeps its one real image slot.
+ * step 1 states that the first visit is a consultation, not a treatment.
+ *
+ * The generated motif that used to sit beside it is gone. It was decoration
+ * standing in for a photograph nobody has taken — the same placeholder
+ * furniture `/concerns` refuses — and the numbered ladder is identical to
+ * `FirstVisitBlock`'s, which never had one.
  */
 export function SessionBlock({ t }: { t: Treatment }) {
   if (!t.sessionSteps?.length) return null;
   return (
     <Section id="your-session">
       <Lede heading="What a session involves" />
-      <div className="mt-8 grid gap-10 xl:grid-cols-[minmax(0,1fr)_15rem]">
-        <ol className="space-y-8 border-l border-hairline pl-8">
-          {t.sessionSteps.map((s, i) => (
-            <li key={s.title} className="relative">
-              <span
-                aria-hidden
-                className="absolute -left-[2.0625rem] top-0.5 flex size-[2.125rem] items-center justify-center rounded-full border border-hairline bg-page text-[0.8125rem] font-semibold text-accent"
-              >
-                {i + 1}
-              </span>
-              <h3 className="h-sub">{s.title}</h3>
-              <p className="mt-2 max-w-[54ch] leading-relaxed text-ink-700">{s.body}</p>
-            </li>
-          ))}
-        </ol>
-        <TreatmentMotif
-          t={t}
-          seed="session"
-          className="hidden aspect-[4/5] rounded-2xl rounded-t-[3rem] ring-1 ring-hairline xl:block"
-        />
-      </div>
+      <ol className="mt-8 space-y-8 border-l border-hairline pl-8">
+        {t.sessionSteps.map((s, i) => (
+          <li key={s.title} className="relative">
+            <span
+              aria-hidden
+              className="absolute -left-[2.0625rem] top-0.5 flex size-[2.125rem] items-center justify-center rounded-full border border-hairline bg-page text-[0.8125rem] font-semibold text-accent"
+            >
+              {i + 1}
+            </span>
+            <h3 className="h-sub">{s.title}</h3>
+            <p className="mt-2 max-w-[54ch] leading-relaxed text-ink-700">{s.body}</p>
+          </li>
+        ))}
+      </ol>
     </Section>
   );
 }
@@ -475,15 +433,16 @@ export function AfterSession({ a }: { a?: Treatment["afterSession"] }) {
 }
 
 /**
- * T-12 · Risks and what it cannot do. Visually distinct so it cannot be
- * skimmed past — a porcelain surface reading as a formal clinical notice rather
- * than a yellow alert card. `cannotDo` carries at least three real limits and
- * the pigment-change note is mandatory on energy-based treatments (rule R-05).
+ * T-12 · Risks and what it cannot do. A formal clinical notice rather than an
+ * alert card, and on page ground like the rest of the reading column — the
+ * twin of `ConcernRisksBlock`, which never carried a surface. `cannotDo`
+ * carries at least three real limits and the pigment-change note is mandatory
+ * on energy-based treatments (rule R-05).
  */
 export function RisksBlock({ r, name }: { r?: Treatment["risks"]; name: string }) {
   if (!r) return null;
   return (
-    <Panel id="risks" tone="porcelain">
+    <Section id="risks">
       <Lede heading={`Risks, side effects, and what ${name} cannot do`} intro={r.intro} />
       <div className="mt-8 divide-y divide-espresso/15 border-y border-espresso/15">
         <Row title="Common and temporary">{r.common}</Row>
@@ -501,7 +460,7 @@ export function RisksBlock({ r, name }: { r?: Treatment["risks"]; name: string }
         </Row>
       </div>
       <p className="mt-8 max-w-[62ch] leading-relaxed text-ink-700">{r.disclose}</p>
-    </Panel>
+    </Section>
   );
 }
 
@@ -634,32 +593,8 @@ export function AreasBlock({ t }: { t: Treatment }) {
   );
 }
 
-/**
- * T-18 · Locations. Every branch where the treatment is offered, each linked —
- * never a "+N more" (rule R-12). Omitting `availableAt` lists all branches.
- */
-export function LocationsBlock({ availableAt }: { availableAt?: string[] }) {
-  const list = availableAt?.length
-    ? branches.filter((b) => availableAt.includes(b.slug))
-    : branches;
-  if (!list.length) return null;
-  return (
-    <div className="mt-10 border-t border-hairline pt-6">
-      <h3 className="text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-accent">
-        Available at
-      </h3>
-      <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
-        {list.map((b) => (
-          <li key={b.slug}>
-            <Link
-              href={`/locations/${b.slug}`}
-              className="text-[0.9375rem] text-ink-700 underline decoration-hairline underline-offset-4 transition-colors hover:decoration-mocha hover:text-espresso"
-            >
-              {b.name}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
+/* T-18 · Locations ("Available at") was removed in 2026-08. No treatment ever
+ * authored `availableAt`, so every page listed all nine branches identically —
+ * nine outbound links repeated nineteen times, saying nothing about the
+ * treatment. The branch list belongs to /locations and the footer, which is
+ * where it stays. */

@@ -75,8 +75,11 @@ const FIGURES = {
   "mp_service_rejuran.jpg": "skin-booster",
   "treatments-Picosure.jpg": "pico-laser",
   "treatments-Lasers.jpg": "pico-laser",
-  "treatments-ProYellowLaser2.jpg": "pico-laser",
   "img_blog_premiumlaser.jpg": "pico-laser",
+  // Pro Yellow is the QuadroStar 577nm, which content/data/technology.ts places
+  // under vascular-pigment-laser, not pico. The filename says "Laser" and the
+  // first pass read it as one; the device edge says otherwise (corrected 2026-08).
+  "treatments-ProYellowLaser2.jpg": "vascular-pigment-laser",
   "treatments-Oligio.jpg": "radiofrequency",
   // Wonderface is an RF platform (content/data/technology.ts → radiofrequency).
   "services_wonderface1.jpg": "radiofrequency",

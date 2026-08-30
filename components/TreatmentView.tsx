@@ -6,12 +6,11 @@ import { Breadcrumbs, type Crumb } from "@/components/Breadcrumbs";
 import { LeadAnswer } from "@/components/LeadAnswer";
 import { Ledger, ReviewByline } from "@/components/Ledger";
 import { Faq } from "@/components/Faq";
-import { Disclaimer } from "@/components/Disclaimer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { ArticleToc } from "@/components/blog/ArticleToc";
-import { TreatmentMotif, TechnologyCard } from "@/components/cards";
+import { AuthorCard } from "@/components/blog/AuthorCard";
+import { ConcernCard, TreatmentCard, TechnologyCard } from "@/components/cards";
 import { CardRow } from "@/components/CardRow";
-import { ArrowRight } from "@/components/icons";
 import {
   Section,
   Rows,
@@ -28,9 +27,8 @@ import {
   CostFactors,
   ManufacturerImages,
   AreasBlock,
-  LocationsBlock,
 } from "@/components/treatment-blocks";
-import { treatmentBySlug, treatmentHref } from "@/content/data/treatments";
+import { treatmentBySlug } from "@/content/data/treatments";
 import { technologyOfTreatment, concernsOfTreatment } from "@/content/data/relations";
 import { doctorBySlug, reviewerByline } from "@/content/data/doctors";
 import { waForTreatment } from "@/lib/wa";
@@ -41,15 +39,29 @@ import type { Treatment } from "@/lib/types";
 /**
  * Treatment-page template v2 (docs/14).
  *
- * The 2026-07 editorial spine is unchanged — same hero, same block order, same
- * three meanings for the three tone surfaces. What docs/14 changed is the frame:
- * one sticky contents rail (`ArticleToc` at `variant="sidebar"`) runs beside the
+ * One sticky contents rail (`ArticleToc` at `variant="sidebar"`) runs beside the
  * *whole* scrollable body, so `Split`'s 21rem heading gutter is gone and every
  * block flows its heading inline. Media enters the reading column — Variant A
  * "Inline", chosen from the prototype on 2026-08-29.
  *
- * A treatment with no media renders the same page as clean text: there is no
- * placeholder furniture advertising what is missing.
+ * **2026-08 · aligned with the concern template.** A visitor moves between
+ * `/concerns/[slug]` and `/treatments/[category]` constantly — they are the two
+ * halves of one decision — and the two pages were furnished differently enough
+ * to read as two sites. Four things changed, all of them adopting what
+ * `ConcernView` already does:
+ *
+ *   · **no section backgrounds.** The tint device-comparison panel and the
+ *     porcelain safety notice are gone; every section sits on page ground. The
+ *     one surviving surface is the mid-page espresso CTA, which now bleeds full
+ *     width here exactly as it does on a concern page;
+ *   · **the reviewer byline** sits in its own band under the hero rather than
+ *     stacked inside the hero's left column, and the page closes with the
+ *     blog's `AuthorCard` above the review ledger;
+ *   · **the closing CTA** is the concern page's centred block on page ground —
+ *     no tint band, no generated motif beside it;
+ *   · **no generated motifs anywhere.** They were decoration standing in for
+ *     photography, which is the placeholder furniture `/concerns` refuses. A
+ *     treatment with no media renders as clean text instead.
  */
 
 const dmy = (iso: string) =>
@@ -72,13 +84,9 @@ function derivedFacts(t: Treatment) {
   ].filter(Boolean) as { value: string; label: string }[];
 }
 
-/** Chip row — the one shape used for every "browse sideways" list on the page. */
-function ChipList({ children, className = "" }: { children: ReactNode; className?: string }) {
-  return <ul className={`flex flex-wrap gap-2 ${className}`}>{children}</ul>;
-}
-
-const chip =
-  "inline-flex rounded-full border border-hairline bg-surface px-3.5 py-1.5 text-sm text-ink-700 transition-colors hover:border-mocha hover:text-espresso";
+/* The chip row retired with the tail's concern list (2026-08). Every "browse
+ * sideways" list on this page is now a card shelf; `AreasBlock` keeps its own
+ * chips for treatment areas, which are labels rather than links. */
 
 /**
  * The reading column, with the sticky contents rail beside it on wide screens.
@@ -96,6 +104,17 @@ function Reading({ rail, children }: { rail?: ReactNode; children: ReactNode }) 
       </div>
     </Container>
   );
+}
+
+/**
+ * A band inside the reading column, as `ConcernView` renders one. Bands carry
+ * their own full-width section and Container, so below lg — where there is no
+ * rail and the column is the page — the wrapper cancels the column's gutter and
+ * the band bleeds to the screen edge. From lg the band stops at the column,
+ * leaving the contents rail an unbroken gutter all the way down.
+ */
+function Bleed({ children }: { children: ReactNode }) {
+  return <div className="-mx-5 sm:-mx-6 lg:mx-0">{children}</div>;
 }
 
 /**
@@ -143,10 +162,12 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
       {/* ── Fold. Asymmetric: the title claims the left two-thirds, the
           photograph is an arched object on the right rather than a banner
           strip above the text. ─────────────────────────────────────────── */}
-      <header>
-        <Container className="pt-8 pb-14 sm:pb-16">
+      <header className="border-b border-hairline">
+        <Container className="pt-8 pb-12 sm:pb-14">
           <Breadcrumbs items={trail} />
-          <div className="mt-8 grid gap-10 lg:grid-cols-[1fr_0.78fr] lg:items-center lg:gap-16">
+          <div
+            className={`mt-8 grid gap-10 lg:gap-16 ${t.image ? "lg:grid-cols-[1fr_0.78fr] lg:items-center" : ""}`}
+          >
             <div>
               <p className="kicker flex items-center gap-3">
                 <span aria-hidden className="h-px w-7 flex-none bg-sand" />
@@ -154,6 +175,9 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
               </p>
               <h1 className="h-hero mt-5">{t.name}</h1>
               <p className="mt-6 max-w-[48ch] text-lg leading-relaxed text-ink-700">{t.summary}</p>
+              {/* Ghost CTA, as the concern hero renders it: the visitor who
+                  arrives already decided gets a route out without the page
+                  opening as a sales page. First of the three permitted CTAs. */}
               <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
                 <WhatsAppButton
                   href={wa}
@@ -163,20 +187,12 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
                 />
                 <p className="text-sm text-ink-500">Free consultation, no obligation.</p>
               </div>
-              {doctor && (
-                <div className="mt-8 max-w-sm">
-                  <ReviewByline
-                    doctorName={doctor.fullName}
-                    mmc={doctor.mmc}
-                    date={reviewedDate}
-                    photo={doctor.photo}
-                    href={`/doctors/${doctor.slug}`}
-                  />
-                </div>
-              )}
             </div>
-            <div className="relative aspect-[3/2] overflow-hidden rounded-2xl rounded-t-[4rem] bg-tint ring-1 ring-hairline lg:aspect-[4/5]">
-              {t.image ? (
+            {/* No frame without a photograph: all 19 treatments carry a hero
+                today, and the day one does not, the headline takes the width
+                rather than a generated motif taking the space. */}
+            {t.image && (
+              <div className="relative aspect-[3/2] overflow-hidden rounded-2xl rounded-t-[4rem] bg-tint ring-1 ring-hairline lg:aspect-[4/5]">
                 <Image
                   src={t.image}
                   alt={`${t.name} treatment at Kaiteki Skin Aesthetic Clinic Malaysia`}
@@ -185,12 +201,26 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
                   sizes="(max-width: 1024px) 100vw, 420px"
                   className="object-cover"
                 />
-              ) : (
-                <TreatmentMotif t={t} seed="hero" className="size-full" />
-              )}
-            </div>
+              </div>
+            )}
           </div>
         </Container>
+
+        {/* The reviewer byline in its own band under the hero — where a concern
+            page puts it — rather than stacked under the hero CTA. */}
+        {doctor && (
+          <Container className="py-8 sm:py-10">
+            <div className="max-w-sm">
+              <ReviewByline
+                doctorName={doctor.fullName}
+                mmc={doctor.mmc}
+                date={reviewedDate}
+                photo={doctor.photo}
+                href={`/doctors/${doctor.slug}`}
+              />
+            </div>
+          </Container>
+        )}
       </header>
 
       {/* T-02 — authored process facts, else the derived session/downtime tags. */}
@@ -263,26 +293,37 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
           />
         ) : (
           relatedConcerns.length > 0 && (
+            /* Photo cards, not chips. This is the block that routes a visitor
+               who arrived on a device name to the page that actually answers
+               their question, and two bare pills gave it none of that weight —
+               the same shelf the devices section below it uses. `routes`, where
+               a treatment authors one, is still the better version of this
+               block, because it explains *why* each concern is on the list. */
             <Section id="concerns-addressed">
               <h2 className="h-section">Concerns this treatment addresses</h2>
-              <ChipList className="mt-8">
+              <p className="mt-5 max-w-[52ch] leading-relaxed text-ink-700">
+                Each of these pages covers what the concern is and every option considered for
+                it, not only {t.name}.
+              </p>
+              <CardRow className="mt-10">
                 {relatedConcerns.map((concern) => (
-                  <li key={concern.slug}>
-                    <Link href={`/concerns/${concern.slug}`} className={chip}>
-                      {concern.name}
-                    </Link>
-                  </li>
+                  <ConcernCard key={concern.slug} c={concern} />
                 ))}
-              </ChipList>
+              </CardRow>
             </Section>
           )
         )}
 
-        {/* T-07 — surface 1 of 3, tint: the device comparison. */}
-        <VariantModule t={t} m={t.variantModule} />
+        {/* T-07 — the device comparison, on page ground like every section. */}
+        <VariantModule m={t.variantModule} />
 
-        {/* T-08 — surface 2 of 3, espresso: the conversion moment. */}
-        <CtaMid cta={t.ctaMid} href={wa} variant="panel" />
+        {/* T-08 — the one surfaced band on the page: the conversion moment,
+            placed where the visitor has just read the device comparison and
+            cannot pick between the options alone. Same espresso bleed the
+            concern page uses. */}
+        <Bleed>
+          <CtaMid cta={t.ctaMid} href={wa} />
+        </Bleed>
 
         {/* T-09 */}
         <SuitabilityBlock t={t} />
@@ -296,7 +337,7 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
         {/* T-11 */}
         <AfterSession a={t.afterSession} />
 
-        {/* T-12 — surface 3 of 3, porcelain: the safety notice. */}
+        {/* T-12 — the safety notice, on page ground. */}
         <RisksBlock r={t.risks} name={t.name} />
 
         {/* T-13 */}
@@ -393,103 +434,72 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
           </Section>
         )}
 
-        {/* T-17 — each related treatment carries a one-line reason, framed
-            around what THIS treatment does not do, so the link is useful
-            rather than decorative. */}
-        {(related.length > 0 || relatedConcerns.length > 0) && (
+        {/* T-17 — photo cards, matching `concerns-addressed` above and the
+            device shelf between them, so the page's three "go here next"
+            blocks are one shape rather than three. Each card carries the
+            authored reason for the link where there is one, framed around what
+            THIS treatment does not do; without one it falls back to the
+            treatment's own summary, which still beats a bare name. */}
+        {related.length > 0 && (
           <Section>
             <h2 className="h-section">Where to go next</h2>
-            {related.length > 0 && (
-              <ul className="mt-8 divide-y divide-hairline border-y border-hairline">
-                {related.map((r) => (
-                  <li key={r!.slug} className="py-5">
-                    <Link
-                      href={treatmentHref(r!)}
-                      className="group inline-flex items-center gap-1.5 font-display text-lg font-medium text-espresso decoration-mocha/50 underline-offset-4 hover:underline"
-                    >
-                      {r!.name}
-                      <ArrowRight
-                        size={15}
-                        className="text-accent transition-transform group-hover:translate-x-0.5"
-                      />
-                    </Link>
-                    {t.relatedReasons?.[r!.slug] && (
-                      <p className="mt-1.5 max-w-[58ch] leading-relaxed text-ink-700">
-                        {t.relatedReasons[r!.slug]}
-                      </p>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            )}
-            {relatedConcerns.length > 0 && (
-              <>
-                <h3 className="mt-9 text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-accent">
-                  Related concerns
-                </h3>
-                <ChipList className="mt-4">
-                  {relatedConcerns.map((c) => (
-                    <li key={c.slug}>
-                      <Link href={`/concerns/${c.slug}`} className={chip}>
-                        {c.name}
-                      </Link>
-                    </li>
-                  ))}
-                  <li>
-                    <Link href="/treatments" className={`${chip} font-medium text-accent`}>
-                      All treatments
-                    </Link>
-                  </li>
-                </ChipList>
-              </>
-            )}
+            <CardRow className="mt-10">
+              {related.map((r) => (
+                <TreatmentCard key={r!.slug} t={r!} reason={t.relatedReasons?.[r!.slug]} />
+              ))}
+            </CardRow>
+            {/* Treatments only. The concern chips that used to sit under this
+                row are gone: a `routes` page already routes to its concerns in
+                prose, with a reason per group, and every other page renders
+                them as cards further up. A pill row repeating either was a
+                third presentation of a list the page had already made. */}
+            <Link
+              href="/treatments"
+              className="mt-9 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-espresso"
+            >
+              Back to all treatments
+            </Link>
           </Section>
         )}
       </Reading>
 
-      {/* T-18 — the closing CTA. Past the reading column, so it keeps the tint
-          bleed it has always had: the rail has ended and there is nothing left
-          for a full-width band to float over. */}
-      <section className="border-y border-hairline bg-tint py-14 sm:py-20">
-        <Container>
-          <div className="grid gap-10 lg:grid-cols-[1fr_0.72fr] lg:items-center lg:gap-16">
-            <div>
-              <h2 className="h-section max-w-[16ch]">Book a free consultation</h2>
-              <p className="mt-5 max-w-[52ch] leading-relaxed text-ink-700">
-                A doctor will examine your skin and tell you whether {t.name} is appropriate, and
-                if it isn&rsquo;t, what would be. No obligation.
-              </p>
-              <WhatsAppButton
-                href={wa}
-                size="lg"
-                position="bottom"
-                label="Ask about this treatment"
-                className="mt-8"
-              />
-              <LocationsBlock availableAt={t.availableAt} />
-            </div>
-            <TreatmentMotif
-              t={t}
-              seed="consult"
-              className="hidden aspect-[4/3] rounded-2xl rounded-t-[3rem] ring-1 ring-hairline lg:block"
+      {/* T-18 — the closing CTA, on page ground: the one surfaced band is spent
+          on the mid-page CTA. Centred, as the concern page closes. */}
+      <Container className="border-t border-hairline py-14 sm:py-20">
+        <div className="mx-auto max-w-[62ch] text-center">
+          <h2 className="h-section mx-auto max-w-[18ch]">Book a free consultation</h2>
+          <p className="mx-auto mt-5 max-w-[52ch] leading-relaxed text-ink-700">
+            The consultation is free, takes about 20 to 30 minutes, and there is no obligation to
+            book treatment afterwards. A doctor will examine your skin and tell you whether{" "}
+            {t.name} is appropriate, and if it isn&rsquo;t, what would be.
+          </p>
+          <WhatsAppButton
+            href={wa}
+            size="lg"
+            position="bottom"
+            label="Ask about this treatment"
+            className="mt-8"
+          />
+        </div>
+      </Container>
+
+      {/* T-19 — the reviewer as the blog and the concern page render one: a
+          named, MMC-registered doctor with a photo and a link to the profile
+          (docs/02 §5), above the ledger's review dates. */}
+      {doctor && (
+        <Container className="py-12 sm:py-14">
+          <div className="max-w-[62ch] space-y-8">
+            <AuthorCard doctor={doctor} label="Medically reviewed by" />
+            <Ledger
+              rows={[
+                { label: "Reviewed by", value: reviewerByline(doctor) },
+                { label: "Last reviewed", value: reviewedDate },
+                { label: "Next review due", value: nextReview(t.lastReviewed) },
+              ]}
             />
           </div>
         </Container>
-      </section>
-
-      {/* T-19 */}
-      <Container className="py-12 sm:py-14">
-        <div className="max-w-[62ch] space-y-8">
-          <Ledger
-            rows={[
-              { label: "Reviewed by", value: reviewerByline(doctor) },
-              { label: "Last reviewed", value: reviewedDate },
-              { label: "Next review due", value: nextReview(t.lastReviewed) },
-            ]}
-          />
-          <Disclaimer />
-        </div>
-      </Container>
+      )}
     </article>
   );
 }

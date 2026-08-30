@@ -102,17 +102,21 @@ const anchorsOf = (c: Concern): string[] => concernToc(c, true).map((h) => h.id)
 const STEP_MAX_WIDTH = 156;
 
 /**
- * The five treatments docs/13 §9 excludes from the media work — four HOLD plus
- * one EXCLUDE. Listed here because Q-22 is the rule that they stay empty, and a
- * rule cannot read its own exceptions out of the data it is checking.
+ * Treatments that must declare no in-body media.
+ *
+ * docs/13 §9 listed five — four HOLD, one EXCLUDE — on the reasoning that a
+ * page carrying one photograph did not justify the layout work. 2026-08 settled
+ * that reasoning: the layout shipped, wiring an asset is data-only, and the
+ * alternative was never "clean text" but a generated motif in the closing CTA.
+ * Four of the five had a usable asset sitting in the manifest and now render it.
+ *
+ * `ultherapy` is the one that stays. Its only candidate,
+ * `img_WhatCanUltherapyTreat.jpg`, is a Kaiteki-branded indication diagram whose
+ * burned-in copy includes "ideal for prevention in your 30s" — a promotional
+ * claim no caption or alt text can walk back (docs/02 §8, rule R-01). It
+ * re-enters on treatment photography, not on this file.
  */
-const NO_MEDIA = new Set([
-  "botulinum-toxin",
-  "exosome-therapy",
-  "hifu",
-  "ultherapy",
-  "laser-hair-removal",
-]);
+const NO_MEDIA = new Set(["ultherapy"]);
 
 /**
  * Every anchor id the treatment renderers set as a literal, read from their
