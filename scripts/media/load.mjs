@@ -8,8 +8,8 @@ export async function loadMediaConfig(type) {
     throw new Error(`unknown media type '${type}' — expected 'concerns' or 'treatments'`);
   }
   const cfg = await import(`./${type}.mjs`);
-  const source = process.env[cfg.sourceEnv];
-  if (!source) throw new Error(`set ${cfg.sourceEnv} to the media export folder (see .env.example)`);
+  const source = process.env.MEDIA_SOURCE;
+  if (!source) throw new Error(`set MEDIA_SOURCE to the media export folder (see .env.example)`);
   return { cfg, source };
 }
 

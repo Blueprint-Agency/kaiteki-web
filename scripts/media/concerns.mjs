@@ -8,7 +8,6 @@
  */
 import { uniqueKey } from "./load.mjs";
 
-export const sourceEnv = "CONCERN_MEDIA_SOURCE";
 export const folders = ["1. concerns", "4. before after"];
 export const bucketPrefix = "concerns/";
 export const publicBase = "https://cdn.kaiteki.my/concerns/";
