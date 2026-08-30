@@ -591,8 +591,8 @@
     },
     {
       "source": "2. treatments/treatments-ProYellowLaser2.jpg",
-      "key": "treatments/pico-laser/pro-yellow-laser-2.jpg",
-      "treatment": "pico-laser",
+      "key": "treatments/vascular-pigment-laser/pro-yellow-laser.jpg",
+      "treatment": "vascular-pigment-laser",
       "family": "figure",
       "width": 800,
       "height": 400

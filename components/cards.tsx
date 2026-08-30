@@ -74,7 +74,19 @@ export function TreatmentMotif({
   );
 }
 
-export function TreatmentCard({ t, className = "", style }: { t: Treatment } & Extra) {
+export function TreatmentCard({
+  t,
+  reason,
+  className = "",
+  style,
+}: {
+  t: Treatment;
+  /** T-17. On a treatment page's "Where to go next", the card carries the
+   *  authored reason for the link — framed around what the *current* treatment
+   *  does not do — in place of the generic summary. That sentence is the whole
+   *  point of the relationship, so it wins the slot where it exists. */
+  reason?: string;
+} & Extra) {
   return (
     <Link href={treatmentHref(t)} style={style} className={`${cardBase} overflow-hidden ${className}`}>
       {t.image ? (
@@ -94,7 +106,7 @@ export function TreatmentCard({ t, className = "", style }: { t: Treatment } & E
         <h3 className="font-display text-xl font-medium text-espresso decoration-mocha/50 underline-offset-[5px] group-hover:underline">
           {t.name}
         </h3>
-        <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-700">{t.summary}</p>
+        <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-700">{reason ?? t.summary}</p>
         <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-accent">
           Learn more <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
         </span>

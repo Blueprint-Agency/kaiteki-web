@@ -209,6 +209,19 @@ return null and it renders as clean text on the layout it already has.
 | **HOLD** | 4 | `botulinum-toxin`, `exosome-therapy`, `hifu`, `ultherapy` | Nothing. Current layout, unchanged. Re-enter on a second asset |
 | **EXCLUDE** | 1 | `laser-hair-removal` | Nothing. Zero net-new photography |
 
+> **2026-08 — four of the five re-entered.** The HOLD/EXCLUDE reasoning was that one asset did
+> not justify the layout work. The layout shipped, so wiring is now data-only, and the
+> alternative to "one photograph" turned out to be a generated motif rather than clean text.
+> `hifu`, `botulinum-toxin` and `exosome-therapy` render their one session photograph;
+> `laser-hair-removal` renders the Alma Lasers mark its own lead answer names. **Only
+> `ultherapy` stays held** — `img_WhatCanUltherapyTreat.jpg` carries "ideal for prevention in
+> your 30s" burned into the artwork, a promotional claim no caption can walk back — and
+> `scripts/validate-concerns.mts` `NO_MEDIA` is now that one slug. Also corrected:
+> `treatments-ProYellowLaser2.jpg` was assigned to `pico-laser` by filename; Pro Yellow is the
+> QuadroStar 577nm and belongs to `vascular-pigment-laser`, where the figure and its CDN key
+> now sit. Full reasoning, including the three assets re-reviewed and still held, in `docs/14`
+> §Scope. See also §11 on running the audit off macOS.
+
 **Three moves carry almost all of the value:**
 
 1. **The zone gallery on `microwave-contouring`.** 15 die-cut area photos, already the right
@@ -256,6 +269,14 @@ pnpm sync:treatment-media             # stages the renamed tree and runs one `aw
 
 Source folders come from `MEDIA_SOURCE`; R2 credentials from `.env.local`, never
 the repo. `sips` is macOS-only, so the audit is designer/dev tooling and does not run in CI.
+
+> **`--manifest` cannot be regenerated on Windows or Linux.** `scripts/media-audit.mjs`
+> reads pixel dimensions by shelling out to `sips`, so on any non-macOS machine it exits
+> `spawnSync sips ENOENT` before writing anything. The 2026-08 re-key of
+> `treatments-ProYellowLaser2.jpg` was therefore applied to `config/treatment-media.json`
+> by hand. Small edits are safe that way — the file is JSON and the shape is one flat list
+> — but a bulk change needs a Mac, or a `sips` fallback (`sharp` is already an indirect
+> dependency of Next's image pipeline) if this becomes routine.
 
 **69 of the 201 upload; 132 carry a `hold`** naming the reason, and a held asset is never
 synced. The buckets, and what each records:
