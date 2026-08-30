@@ -144,6 +144,61 @@ This is the sharpest divergence from `docs/12`, and it is deliberate.
   and their existing block order. This revamp adds media *into* the spine and changes no
   section's position.
 
+#### 2026-08 amendment — the *furnishing* converges, the layout does not
+
+The section above holds: the hero, the block order and the reading column are unchanged, and
+the concern banner is still not portable. What changed is everything below the structure.
+Reading a concern page and a treatment page back to back, they read as two sites, and none of
+the four differences was carrying its weight:
+
+| | Was | Now |
+|---|---|---|
+| Section surfaces | tint panel (device comparison), porcelain panel (safety notice), espresso panel (CTA) | **one** surface: the espresso CTA, full-bleed, exactly as `/concerns` renders it. Everything else on page ground |
+| Reviewer byline | stacked inside the hero's left column | its own band under the hero, plus `AuthorCard` above the ledger at the foot |
+| Closing CTA | tint band, two-up, generated motif on the right | centred on page ground under a hairline, as `ConcernView` closes |
+| Standing disclaimer | `<Disclaimer />` under the ledger | removed from `/treatments`. `RisksBlock` already carries the per-treatment risk copy, and every page states that a doctor assesses suitability; a fourth generic restatement was noise. Still rendered on `/blog`, `/products` and `/technology` |
+
+"Three meaningful tone surfaces" was the 2026-07 argument for the panels. In practice each one
+meant "this section is different", which the headings already say — and the porcelain notice
+in particular read as an alert card the redesign had explicitly set out to avoid.
+
+**"Available at" went with them.** No treatment ever authored `availableAt`, so
+`LocationsBlock` listed all nine branches on all nineteen pages: nine identical outbound links
+saying nothing about the treatment. The component, its call, and the `availableAt` field on
+`Treatment` are all removed; the branch list lives on `/locations` and in the footer.
+
+**T-06's fallback became cards.** `concerns-addressed` — the block a treatment renders when it
+has not authored `routes` — was a row of bare pills. It is the one thing on the page that moves
+a visitor who arrived on a device name to the page that answers their actual question, and two
+pills carried none of that weight. It now renders `ConcernCard` in a `CardRow`: the same shelf
+the "Devices used at Kaiteki" section immediately below it already uses.
+
+With that, the tail's **"Related concerns" chip row is gone from every treatment page.** It had
+been a third presentation of a list the page already made twice: a `routes` page routes to its
+concerns in prose with a reason per group, and every other page now renders them as cards
+further up. "Where to go next" is treatments only, closing on a single "Back to all treatments"
+link. `ChipList` and its `chip` class retired with it — every browse-sideways list on the page
+is a card shelf now, and `AreasBlock` keeps its own chips because those are labels, not links.
+
+**T-17's related-treatment list became cards too.** It was a hairline-divided list of names and
+arrows, which is what the block looks like on the eighteen pages that author no
+`relatedReasons` — a name, an arrow, and nothing else. It now renders `TreatmentCard` in a
+`CardRow`, so the page's three "go here next" blocks — concerns, devices, treatments — are one
+shape rather than three.
+
+`TreatmentCard` takes an optional **`reason`** prop for this. T-17's authored sentence is framed
+around what the *current* treatment does not do, which is the whole value of the link, so where
+one exists it takes the card's body slot in place of the generic summary. Only `pico-laser`
+authors them today; every other page falls back to the target treatment's own summary, which is
+still more than the bare name it replaced.
+
+**No generated motifs anywhere on the page.** `TreatmentMotif` filled the hero fallback, the
+`SessionBlock` companion column, the `VariantModule` device covers and the closing CTA. Only
+the first was ever conditional; the other two were unconditional decoration standing in for
+photography that does not exist — the same placeholder furniture this document refuses two
+sections down. Every frame is now conditional on a real image, and the section reflows without
+one. `TreatmentMotif` survives only on the card grids (`TreatmentCard`, `TreatmentsMenu`).
+
 ### Media placement — Variant A "Inline", chosen from the prototype
 
 Three variants were built on the real route behind `?variant=`, on two hosts (one per GO
@@ -209,6 +264,44 @@ Per `docs/13` §9, on the exclusion rule `docs/11` §4 established for concerns:
 The five receive no media fields and render as they do today. **No placeholder component is
 built** — same reasoning as `docs/12`: an empty frame advertises incompleteness on a page
 whose job is authority. They re-enter when assets exist.
+
+#### 2026-08 amendment — four of the five re-enter
+
+The HOLD reasoning was "one photograph does not justify the layout cost". The layout has since
+shipped, so wiring an asset is a data-only edit, and the alternative was never the clean text
+this section describes — it was a generated motif in the closing CTA. Four of the five now
+render the asset that was already staged for them:
+
+| Page | Asset | Why it is safe to render |
+|---|---|---|
+| `hifu` | `hifu/hifu.jpg` | Session photograph: an ultrasound handpiece along the jaw. No copy in the artwork |
+| `botulinum-toxin` | `botulinum-toxin/face-muscle-relax.png` | Session photograph: a needle at the outer eye |
+| `exosome-therapy` | `exosome-therapy/prp.jpg` | Session photograph of a PRP preparation. **Captioned as PRP**, which is what it shows — the page's own copy names PRP as a treatment exosomes are combined with |
+| `laser-hair-removal` | `laser-hair-removal/logo-alma-lasers.png` | The manufacturer mark for the platform the page's lead answer names. Labelled in all four R-07 places |
+
+**`ultherapy` stays held**, and the gate now enforces exactly that one page. Its only candidate,
+`img_WhatCanUltherapyTreat.jpg`, is a Kaiteki-branded indication diagram whose burned-in copy
+includes *"Early signs of aging — ideal for prevention in your 30s"*. That is a promotional
+claim inside the artwork, which no caption or alt text can walk back (`docs/02` §8, rule R-01).
+It re-enters on treatment photography, not on this file.
+
+Three further unused assets were reviewed and stay out, on the same test:
+
+- `vascular-pigment-laser/vascular-lesions.png` — a magnified split circle of a treated and an
+  untreated leg. A before/after in all but name (§3.3, ADR-0001).
+- `fat-freezing/body-slimming.jpg` — a tape measure at the waist on pink sparkle art. Implies
+  size reduction as an outcome (R-01).
+- `microwave-contouring/area-*-2.png` (×4) — second shots of zones the gallery already covers.
+
+**One mis-assignment corrected.** `treatments-ProYellowLaser2.jpg` was filed under `pico-laser`
+by the first media pass because the filename says "Laser". Pro Yellow is the QuadroStar 577nm,
+which `content/data/technology.ts` places under `vascular-pigment-laser`; the figure now lives
+there, and the CDN key moved with it. **This needs `pnpm sync:treatment-media` before the page
+is deployed** — the old key still holds the object.
+
+`pico-laser/lasers.jpg` is staged but deliberately unauthored: pico-laser runs two prose
+sections, and Variant A renders `floor(sections / 2)` = 1 figure, so a second would be dropped
+silently (Q-23). It lands when a third section is written.
 
 ### Fix `ManufacturerImages` before authoring into it
 
