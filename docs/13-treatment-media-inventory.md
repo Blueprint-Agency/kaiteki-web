@@ -254,7 +254,7 @@ pnpm sync:treatment-media --dry-run   # prints every planned upload, writes noth
 pnpm sync:treatment-media             # stages the renamed tree and runs one `aws s3 sync`
 ```
 
-Source folders come from `TREATMENT_MEDIA_SOURCE`; R2 credentials from `.env.local`, never
+Source folders come from `MEDIA_SOURCE`; R2 credentials from `.env.local`, never
 the repo. `sips` is macOS-only, so the audit is designer/dev tooling and does not run in CI.
 
 **69 of the 201 upload; 132 carry a `hold`** naming the reason, and a held asset is never

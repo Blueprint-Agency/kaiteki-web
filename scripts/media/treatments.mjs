@@ -12,7 +12,6 @@ import { readdirSync } from "node:fs";
 import { join } from "node:path";
 import { uniqueKey } from "./load.mjs";
 
-export const sourceEnv = "TREATMENT_MEDIA_SOURCE";
 export const folders = ["2. treatments", "3. device and injectables"];
 export const bucketPrefix = "treatments/";
 export const publicBase = "https://cdn.kaiteki.my/treatments/";
