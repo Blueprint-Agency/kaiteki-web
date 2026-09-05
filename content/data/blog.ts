@@ -188,6 +188,50 @@ export const posts: Post[] = [
     concerns: ["body-slimming"],
     legacyPath: "/wegovy-vs-mounjaro-which-is-better-for-you/",
   },
+  {
+    slug: "onda-coolwave-vs-coolsculpting-fat-cellulite",
+    title: "Onda Coolwaves vs CoolSculpting: how they differ and which suits you",
+    seoTitle: "Onda Coolwave vs CoolSculpting: Which Suits You | Kaiteki",
+    description:
+      "Onda Coolwaves and CoolSculpting reduce localised fat by opposite mechanisms. How microwave energy and cryolipolysis differ, and which one suits your goals.",
+    category: "Device & Injectables",
+    author: "dr-jacqueline-tan",
+    reviewedBy: "dr-tim-chua",
+    publishedAt: "2026-09-06",
+    readingMinutes: 7,
+    leadAnswer:
+      "Both are non-invasive body contouring devices for localised fat, working by opposite mechanisms. CoolSculpting cools fat cells until they are damaged, a process called cryolipolysis. Onda heats the targeted tissue with microwave energy while cooling the skin. The practical difference is scope: Onda is also used for firmness and the dimpled appearance associated with cellulite.",
+    concerns: ["body-slimming"],
+    treatments: ["fat-freezing", "microwave-contouring"],
+    technology: ["coolsculpting", "onda-coolwaves"],
+    related: ["wegovy-vs-mounjaro"],
+    faqs: [
+      {
+        q: "Can Onda and CoolSculpting be combined?",
+        a: "Sometimes. The two act on different targets, so a plan can use cryolipolysis for a defined pocket of fat and Onda across a broader zone where firmness and skin texture are also part of the picture. Whether that suits you depends on the areas involved, your skin and your medical history, and it is a decision for the treating doctor rather than a package chosen in advance.",
+      },
+      {
+        q: "Is fat freezing a permanent solution?",
+        a: "Fat cells affected by cryolipolysis are cleared by the body and are not replaced, but that is not the same as a permanent result. The fat cells remaining in the treated area can still enlarge if your weight increases, which is why neither device is a substitute for diet, exercise or medical weight management. Both are intended for people close to their target weight.",
+      },
+      {
+        q: "Does Onda hurt, and is there downtime?",
+        a: "Comfort varies between individuals. There is no suction and no cold, the built-in cooling is intended to keep the skin surface comfortable, and most people describe a warming sensation. Downtime is usually limited, though temporary warmth, redness or mild tenderness over the treated area can occur and typically settles. Your doctor explains what to expect for you.",
+      },
+      {
+        q: "How many sessions will I need?",
+        a: "It is individual with both devices, and it is set after the area has been assessed rather than before. CoolSculpting is planned by area and applicator, with each cycle running around 35 to 60 minutes. Onda is commonly a course of several sessions spaced a few weeks apart. Anyone quoting a fixed session count without assessing the area is guessing.",
+      },
+      {
+        q: "Which one is better for belly fat?",
+        a: "Both are used on the abdomen, so the answer depends on what is bothering you. If it is a defined, pinchable pocket of fat and the skin over it is still firm, cryolipolysis is built for that. If loose skin or texture over the area is part of the concern, Onda addresses fat, firmness and the dimpled appearance associated with cellulite together. A doctor decides after examining the area.",
+      },
+      {
+        q: "Will either treatment help me lose weight?",
+        a: "No. Both address specific pockets of localised fat rather than overall body weight, and neither substitutes for diet, exercise or medical weight management. They are intended for people already close to their target weight. If overall weight is the concern, that is a different conversation and a different assessment.",
+      },
+    ],
+  },
 ];
 
 /** Display order everywhere — newest first. */
