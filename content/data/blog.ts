@@ -188,6 +188,54 @@ export const posts: Post[] = [
     concerns: ["body-slimming"],
     legacyPath: "/wegovy-vs-mounjaro-which-is-better-for-you/",
   },
+  {
+    slug: "lip-filler-malaysia-types-cost-what-to-expect",
+    title: "Lip fillers in Malaysia: types, what the cost depends on, and what to expect",
+    seoTitle: "Lip Fillers Malaysia: Types, Cost & What to Expect | Kaiteki",
+    description:
+      "What lip fillers are, how hyaluronic acid gels differ, the styles people ask for, what the cost depends on, and the risks to understand before you book.",
+    category: "Device & Injectables",
+    author: "dr-say-wei-xian",
+    reviewedBy: "dr-jessie-lim",
+    publishedAt: "2026-09-06",
+    readingMinutes: 9,
+    leadAnswer:
+      "Lip fillers are cross-linked hyaluronic acid gels injected by a doctor to add volume, shape or definition. The injection takes 15 to 30 minutes and downtime is generally limited, but lips swell more than most areas, so the shape settles over the following weeks. Which gel and how much is assessed individually.",
+    concerns: ["face-contouring"],
+    treatments: ["dermal-fillers"],
+    technology: ["juvederm", "restylane"],
+    related: ["ultherapy-vs-hifu-difference-which-suits-you"],
+    faqs: [
+      {
+        q: "Do lip fillers hurt?",
+        a: "Most people describe filler injection as briefly uncomfortable rather than painful. A topical anaesthetic is commonly applied beforehand, and several gels are supplied with lidocaine included to support comfort during injection. Lips are more sensitive than cheeks, so comfort options are worth discussing before the doctor starts.",
+      },
+      {
+        q: "How long do lip fillers last?",
+        a: "It varies between individuals and depends on the gel used, how much was placed and how your body processes it. Lips tend not to hold filler as long as less mobile areas such as the cheeks, because they are in constant motion through eating, speaking and expression. Your doctor can tell you what is realistic for the specific product being considered.",
+      },
+      {
+        q: "Can lip fillers be reversed?",
+        a: "Hyaluronic acid fillers can, in certain circumstances, be managed with a dissolving agent, and your doctor can discuss whether that applies to you. It is a genuine advantage over permanent alternatives, but it is not guaranteed in every situation, the agent carries its own risks including allergic reaction, and it is assessed individually rather than treated as an undo button.",
+      },
+      {
+        q: "How much filler will I need?",
+        a: "That is assessed rather than chosen in advance, and it depends on your lip anatomy and what you want to change. Starting conservatively and building over more than one session is common for lips, because it is easier to add than to correct. A doctor should tell you plainly if what you are asking for is more than your anatomy will carry well.",
+      },
+      {
+        q: "Why does Kaiteki not publish lip filler prices?",
+        a: "Because the plan determines the product and the product determines the cost. Which gel your anatomy calls for, how much of it, whether the area around the lips is involved and whether more than one session is sensible are all decided after assessment. Cost is confirmed at consultation once a plan has been discussed, and the consultation itself is free.",
+      },
+      {
+        q: "What are the serious risks of lip filler?",
+        a: "The significant one with any facial filler is a vascular complication, where product enters or compresses a blood vessel and interrupts blood supply to the tissue. It is uncommon, but the lips are well supplied with blood vessels, which is why anatomy and injection technique matter and why this is a doctor's procedure. Severe or increasing pain, blanching, or dusky discolouration in the hours after treatment should be reported to the clinic immediately.",
+      },
+      {
+        q: "How do I choose a doctor for lip filler?",
+        a: "Check that they are registered with the Malaysian Medical Council and certified by the Lembaga Cosmetic Physicians, both of which are verifiable. Beyond that, expect to be examined before anything is recommended, to be told which specific branded product is being used, and to have the risks explained before you consent. A doctor willing to advise against treatment or to suggest starting with less is showing judgement.",
+      },
+    ],
+  },
 ];
 
 /** Display order everywhere — newest first. */
