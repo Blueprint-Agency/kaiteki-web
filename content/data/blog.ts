@@ -188,6 +188,53 @@ export const posts: Post[] = [
     concerns: ["body-slimming"],
     legacyPath: "/wegovy-vs-mounjaro-which-is-better-for-you/",
   },
+  {
+    slug: "hair-loss-treatment-malaysia-options-how-to-choose",
+    title: "Hair loss treatment in Malaysia: the options, and how to choose",
+    seoTitle: "Hair Loss Treatment Malaysia: How to Choose | Kaiteki",
+    description:
+      "Compare hair loss treatment options in Malaysia, from topical minoxidil and PRP to exosome therapy and transplant surgery, and how to choose the right one.",
+    category: "Skin Concerns",
+    author: "dr-tim-chua",
+    reviewedBy: "dr-william-yap",
+    publishedAt: "2026-09-06",
+    readingMinutes: 11,
+    leadAnswer:
+      "Hair loss treatment in Malaysia ranges from over-the-counter topicals to prescription medical management, in-clinic regenerative treatment and transplant surgery. Which one is appropriate depends on the cause, which is why a scalp assessment comes first. Hereditary pattern loss, stress-related shedding and a scalp condition are each managed differently.",
+    concerns: ["hair-loss"],
+    treatments: ["exosome-therapy"],
+    related: ["excessive-sweating-hyperhidrosis-causes-treatment"],
+    faqs: [
+      {
+        q: "What is the most effective hair loss treatment?",
+        a: "There is no single answer, because effectiveness depends on the cause. Hereditary pattern loss is managed medically for the long term, often with in-clinic treatment alongside it. Shedding after illness, childbirth or a stressful period usually settles once the trigger passes. A scalp condition or an iron or thyroid problem needs that cause treated first, since hair rarely improves while the reason it is falling remains unaddressed.",
+      },
+      {
+        q: "Is hair loss reversible?",
+        a: "It depends on the cause. Telogen effluvium, the shedding that follows illness, surgery, childbirth or severe stress, usually recovers once the trigger has resolved. Hereditary pattern loss is managed rather than cured, and starting earlier generally leaves more to work with. Follicles that have scarred or been dormant for years cannot be brought back by any treatment, which is why timing matters here more than in most concerns.",
+      },
+      {
+        q: "Why does Kaiteki not publish hair loss treatment prices?",
+        a: "Because a price is meaningless before an assessment. What it depends on is the area involved, whether investigation such as blood testing is needed first, how many sessions are appropriate, and whether medical management forms part of the plan alongside in-clinic treatment. The doctor goes through the specifics with you at the consultation, which is free, before you commit to anything.",
+      },
+      {
+        q: "Does minoxidil work for women?",
+        a: "Topical minoxidil is well established for female pattern hair loss and is one of the usual starting points. A low-dose oral form is also prescribed for some women under medical supervision. It works only for as long as it is used, and in women it is worth pairing with investigation of iron status and thyroid function, since those are frequent contributors that no topical addresses.",
+      },
+      {
+        q: "How long before hair loss treatment is reviewed?",
+        a: "Hair changes slowly, so every option here is judged over months rather than weeks. Photographs taken at the start and compared later are far more reliable than memory or a mirror. Some people notice a brief increase in shedding early in a course, which is expected and should be explained to you in advance. Anyone offering regrowth on a fixed timetable is overstating what is known.",
+      },
+      {
+        q: "Do I need blood tests for hair loss?",
+        a: "Often, particularly where the loss is diffuse, came on suddenly, or comes with other symptoms such as fatigue or nail changes. Thyroid function and iron status are common and treatable contributors that no topical or in-clinic treatment addresses, and finding one changes the plan entirely. A clinic proposing a course of treatment for diffuse hair loss without investigating anything is worth questioning.",
+      },
+      {
+        q: "Does Kaiteki perform hair transplant surgery?",
+        a: "No. Kaiteki assesses hair loss, investigates the cause, and offers in-clinic treatment alongside medical management where that is appropriate. Transplant surgery is not performed here. If your assessment points that way, the doctor will tell you directly rather than recommend a course of something else.",
+      },
+    ],
+  },
 ];
 
 /** Display order everywhere — newest first. */
