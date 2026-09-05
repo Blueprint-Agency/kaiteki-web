@@ -195,6 +195,10 @@ export const posts: Post[] = [
     description:
       "Compare hair loss treatment options in Malaysia, from topical minoxidil and PRP to exosome therapy and transplant surgery, and how to choose the right one.",
     category: "Skin Concerns",
+    image:
+      "https://cdn.kaiteki.my/blog/hair-loss-treatment-malaysia-options-how-to-choose/hair-loss-treatment-malaysia-options-how-to-choose.png",
+    imageAlt:
+      "Illustration of a woman brushing her hair with loose strands caught in the brush, for a Kaiteki guide to hair loss treatment in Malaysia",
     author: "dr-tim-chua",
     reviewedBy: "dr-william-yap",
     publishedAt: "2026-09-06",
