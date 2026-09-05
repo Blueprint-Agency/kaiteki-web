@@ -195,6 +195,10 @@ export const posts: Post[] = [
     description:
       "What lip fillers are, how hyaluronic acid gels differ, the styles people ask for, what the cost depends on, and the risks to understand before you book.",
     category: "Device & Injectables",
+    image:
+      "https://cdn.kaiteki.my/blog/lip-filler-malaysia-types-cost-what-to-expect/lip-filler-malaysia-types-cost-what-to-expect.png",
+    imageAlt:
+      "Close-up of a woman's lower face as a fine needle is positioned at her lip, for a Kaiteki guide to lip fillers in Malaysia",
     author: "dr-say-wei-xian",
     reviewedBy: "dr-jessie-lim",
     publishedAt: "2026-09-06",
