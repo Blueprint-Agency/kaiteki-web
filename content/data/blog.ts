@@ -195,6 +195,10 @@ export const posts: Post[] = [
     description:
       "Onda Coolwaves and CoolSculpting reduce localised fat by opposite mechanisms. How microwave energy and cryolipolysis differ, and which one suits your goals.",
     category: "Device & Injectables",
+    image:
+      "https://cdn.kaiteki.my/blog/onda-coolwave-vs-coolsculpting-fat-cellulite/onda-coolwave-vs-coolsculpting-fat-cellulite.png",
+    imageAlt:
+      "Illustration of a woman in activewear seated against a hibiscus motif, for a Kaiteki guide comparing Onda Coolwaves and CoolSculpting",
     author: "dr-jacqueline-tan",
     reviewedBy: "dr-tim-chua",
     publishedAt: "2026-09-06",
