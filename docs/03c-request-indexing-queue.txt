@@ -1,0 +1,63 @@
+« Kaiteki — GSC "Request indexing" queue — generated 2026-09-06 »
+« 44 URLs not indexed. 5 already requested by client, 39 remain below. »
+« Work top to bottom. ~10-15/day. Hubs first — they may pull the clusters in behind them. »
+
+--- HUBS (2) — DO THESE FIRST ---
+https://kaiteki.my/technology
+https://kaiteki.my/doctors
+
+--- TREATMENTS (7 remaining) ---
+https://kaiteki.my/treatments/double-eyelid
+https://kaiteki.my/treatments/facial-treatments
+https://kaiteki.my/treatments/laser-hair-removal
+https://kaiteki.my/treatments/muscle-stimulation
+https://kaiteki.my/treatments/microwave-contouring
+https://kaiteki.my/treatments/resurfacing-laser
+https://kaiteki.my/treatments/vascular-pigment-laser
+
+--- CONCERNS (2 remaining) ---
+https://kaiteki.my/concerns/excessive-sweating
+https://kaiteki.my/concerns/vascular-lesions
+
+--- TECHNOLOGY: INJECTABLES (11 remaining) ---
+https://kaiteki.my/technology/botox
+https://kaiteki.my/technology/restylane
+https://kaiteki.my/technology/sculptra
+https://kaiteki.my/technology/radiesse
+https://kaiteki.my/technology/belotero
+https://kaiteki.my/technology/profhilo
+https://kaiteki.my/technology/juvelook
+https://kaiteki.my/technology/plinest
+https://kaiteki.my/technology/hydrodeluxe
+https://kaiteki.my/technology/ellanse
+https://kaiteki.my/technology/art-filler
+
+--- TECHNOLOGY: DEVICES (10) ---
+https://kaiteki.my/technology/sylfirm-x
+https://kaiteki.my/technology/morpheus8
+https://kaiteki.my/technology/ultherapy-system
+https://kaiteki.my/technology/ultracel-q
+https://kaiteki.my/technology/fractional-co2
+https://kaiteki.my/technology/fotona-sp-dynamis
+https://kaiteki.my/technology/cooltech
+https://kaiteki.my/technology/wonderface
+https://kaiteki.my/technology/xerf
+https://kaiteki.my/technology/lifthera
+
+--- DOCTORS (6) — dr-chew-yuhhui first, he is the named reviewedBy on treatment pages ---
+https://kaiteki.my/doctors/dr-chew-yuhhui
+https://kaiteki.my/doctors/dr-jeremy-low
+https://kaiteki.my/doctors/dr-jessie-lim
+https://kaiteki.my/doctors/dr-say-wei-xian
+https://kaiteki.my/doctors/dr-tim-chua
+https://kaiteki.my/doctors/dr-yeong-bin
+
+--- BLOG (1) ---
+https://kaiteki.my/blog/how-to-reduce-facial-redness-causes-treatment
+
+--- ALREADY REQUESTED 2026-09-06 (do not repeat) ---
+https://kaiteki.my/treatments/botulinum-toxin
+https://kaiteki.my/treatments/dermal-fillers
+https://kaiteki.my/concerns/melasma
+https://kaiteki.my/technology/rejuran
+https://kaiteki.my/technology/juvederm
