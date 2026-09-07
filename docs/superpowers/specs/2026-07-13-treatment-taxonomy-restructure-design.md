@@ -34,7 +34,7 @@ export interface Treatment {
   // ...existing fields...
   /** Category slug this machine belongs to. Absent = this IS a category (high-level) page. */
   parent?: string;
-  /** Named devices described as sections on a category page ("we use Picosure, PQX, PicoCare"). */
+  /** Named devices described as sections on a category page ("we use Picosure, PQX, Picocare"). */
   machineNames?: string[];
 }
 
@@ -53,7 +53,7 @@ export interface Concern {
 Menu group → **Category page** (slug) → *machine child pages* / §sections.
 
 **Lasers**
-- **Pico Laser** (`pico-laser`, exists) — §Picosure, §Fotona PQX (StarWalker), §PicoCare
+- **Pico Laser** (`pico-laser`, exists) — §Picosure, §Fotona PQX (StarWalker), §Picocare
 - **Fotona Laser** (`fotona-laser`, NEW) — §Fotona SP Dynamis / TimeWalker (4D, NightLase, LipLase, SmoothEye, TightSculpting)
 - **Vascular / Pigment Laser** (`vascular-pigment-laser`, NEW) — child: `dermav`; §Pro Yellow (Quadrostar 577nm), §M22 IPL
 - **Resurfacing Laser** (`resurfacing-laser`, NEW) — §Fractional CO2
