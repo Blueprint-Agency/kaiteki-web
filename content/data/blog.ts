@@ -73,7 +73,7 @@ export const posts: Post[] = [
       "Melasma is a chronic pigmentation disorder causing symmetrical brown or grey patches on the face, driven by UV exposure, hormones and genetics. Daily broad-spectrum SPF 50+ is the foundation of every plan. Where that is not enough, doctors add topical brighteners, oral tranexamic acid or low-energy Pico Laser.",
     concerns: ["pigmentation"],
     treatments: ["pico-laser", "vascular-pigment-laser"],
-    related: ["how-to-reduce-facial-redness-causes-treatment", "discovery-pico-vs-picosure"],
+    related: ["how-to-reduce-facial-redness-causes-treatment", "picocare-vs-picosure"],
   },
   {
     slug: "eczema-treatment-daily-skincare-to-clinic-care",
@@ -151,20 +151,21 @@ export const posts: Post[] = [
     legacyPath: "/alma-titanium-lifting-is-this-non-surgical-facelift-worth-it/",
   },
   {
-    slug: "discovery-pico-vs-picosure",
-    title: "Discovery Pico vs PicoSure: which laser delivers better results?",
-    seoTitle: "Discovery Pico vs PicoSure: An Honest Comparison | Kaiteki",
+    slug: "picocare-vs-picosure",
+    title: "Picocare vs PicoSure: which laser delivers better results?",
+    seoTitle: "Picocare vs PicoSure: An Honest Comparison | Kaiteki",
     description:
-      "Discovery Pico and PicoSure compared on wavelengths, melasma cautions and safety for Asian skin, so you can ask your doctor the right questions.",
+      "Picocare and PicoSure compared on wavelengths, melasma cautions and safety for Asian and Malaysian skin, so you can ask your doctor the right questions.",
     category: "Device & Injectables",
-    image: "https://cdn.kaiteki.my/blog/discovery-pico-vs-picosure/discovery-pico-vs-picosure.png",
+    image: "https://cdn.kaiteki.my/blog/picocare-vs-picosure/picocare-vs-picosure.png",
     imageAlt:
-      "Discovery Pico and PicoSure picosecond lasers compared for pigmentation and tattoo treatment at Kaiteki",
+      "Picocare and PicoSure picosecond lasers compared for pigmentation and tattoo treatment at Kaiteki",
     author: "dr-joaan-kong",
     publishedAt: "2026-05-28",
+    updatedAt: "2026-09-07",
     readingMinutes: 6,
     leadAnswer:
-      "Neither device is universally better. Discovery Pico offers three native wavelengths and a 1064nm option that is generally the lower-risk setting on deeper skin tones; PicoSure's 755nm and Focus lens are strong on green and blue tattoo ink and skin revitalisation. The right choice depends on your concern, your skin type and your doctor's assessment.",
+      "Neither device is universally better. Picocare is a 1064nm/532nm platform whose 1064nm output is generally the lower-risk setting on deeper skin tones, with 595nm and 660nm handpieces for stubborn tattoo colours. PicoSure's 755nm and Focus lens suit green and blue ink and skin revitalisation. The right choice depends on your concern and your doctor's assessment.",
     concerns: ["pigmentation", "tattoo-removal"],
     treatments: ["pico-laser"],
     technology: ["picosure"],

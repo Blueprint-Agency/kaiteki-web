@@ -82,7 +82,7 @@ itself into its treatment page, its concerns, the hub, and the sitemap — no ot
 Validated against manufacturer/clinical sources; category alignment confirmed sound.
 
 **Lasers**
-- Pico Laser → Picosure, Fotona PQX (StarWalker), PicoCare *(device)*
+- Pico Laser → Picosure, Fotona PQX (StarWalker), Picocare *(device)*
 - Fotona 4D → Fotona SP Dynamis / TimeWalker *(device)*
 - Vascular / Pigment Laser → DermaV, Pro Yellow (Quadrostar 577nm), **M22 IPL** *(device)*
 - Resurfacing Laser → Fractional CO2 *(device)*

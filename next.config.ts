@@ -47,6 +47,9 @@ const nextConfig: NextConfig = {
       { source: "/treatments/onda", destination: "/technology/onda-coolwaves", statusCode: 301 },
       { source: "/treatments/dermav", destination: "/technology/dermav", statusCode: 301 },
       { source: "/treatments/tattoo-removal", destination: "/concerns/tattoo-removal", statusCode: 301 },
+      // Post renamed 2026-09-07: the comparison now covers Picocare, not Discovery Pico
+      // (a device we do not offer). The slug is the URL, so the old one keeps its 301.
+      { source: "/blog/discovery-pico-vs-picosure", destination: "/blog/picocare-vs-picosure", statusCode: 301 },
 
       // ===== Legacy site 301 map (old static HTML/PHP → new routes) =====
       // Source of truth: docs/01 §1–2 (legacy sitemap.xml inventory).
