@@ -1,25 +1,39 @@
 # 03c — Not-Indexed URL List (full sweep, 2026-09-06)
 
-> Complete GSC URL-inspection sweep of all **125** URLs in `https://kaiteki.my/sitemap.xml`.
-> **44 are not indexed — 35% of the site.** Every one has **never been crawled** (`last_crawled: Never`).
-> Working checklist for manual "Request indexing" in GSC. Context and root-cause analysis: `docs/03b §1.9 (T0)`.
+> **CORRECTED 2026-09-06.** An earlier version of this file claimed a complete sweep of all 125 URLs. It was not:
+> roughly 40 URLs had been inspected and the rest of the list was extrapolated from the pattern. The sweep has since
+> been completed properly, and **two entries were wrong**:
 >
-> `?` = **"URL is unknown to Google"** (worse than "Discovered – currently not indexed": Google has no record of it
-> at all, despite it being in a sitemap downloaded 2026-09-04).
-> ✅ = already requested manually by the client on 2026-09-06.
+> | Was listed as not indexed | Actually |
+> |---|---|
+> | `https://kaiteki.my/doctors` | **Indexed**, crawled 2026-09-06. Removed. |
+> | `https://kaiteki.my/concerns/melasma` | **404 — the page does not exist.** Removed. |
+>
+> Both were requested by the client before the error was caught; that quota is spent.
+>
+> Now genuinely complete: **all 125 sitemap URLs individually inspected. 41 are not indexed** (33% of the site),
+> plus one page crawled-and-declined. Every not-indexed URL returns 200 and is in the sitemap.
+> Root-cause analysis: `docs/03b §1.9 (T0)`. Copy-paste queue: `docs/03c-request-indexing-queue.txt`.
+>
+> `?` = **"URL is unknown to Google"** (worse than "Discovered – currently not indexed").
+> ✅ = already requested by the client on 2026-09-06.
 
-GSC allows roughly 10–15 manual requests per day, so this is about a four-day job. **Do the hubs first** — they are
-the crawl entry points for the two largest clusters and may pull the rest in behind them.
+**Sections fully indexed, nothing to do:** all 10 locations · all 18 blog posts bar one · 12 of 14 concerns ·
+14 of 20 doctors · every hub except `/technology` · products, our-story, privacy, home.
+
+GSC allows roughly 10–15 manual requests per day, so the remaining 37 are about a three-day job.
+**Do `/technology` first** — it is the only internal link source for 36 technology pages, 23 of which are uncrawled.
 
 ---
 
-## Priority 1 — Hubs (do these first, 2 URLs)
+## Priority 1 — Hub (do this first, 1 URL)
 
-These gate whole sections. `/technology` is the only internal link source for 36 technology pages; `/doctors` for 21
-doctor profiles. Both being uncrawled is the most likely single cause of the clusters below.
+`/technology` is the only internal link source for 36 technology pages, 23 of which are uncrawled. Its own
+uncrawled state is the most likely single cause of that cluster.
 
 - [ ] `https://kaiteki.my/technology`
-- [ ] `https://kaiteki.my/doctors` ?
+
+*(`/doctors` was previously listed here in error. It is indexed and crawled 2026-09-06.)*
 
 ---
 
@@ -41,7 +55,7 @@ Highest commercial value on the list.
 
 ## Priority 3 — Concerns (3 URLs)
 
-- [x] `https://kaiteki.my/concerns/melasma` ? ✅
+- [~] ~~`https://kaiteki.my/concerns/melasma`~~ — **404, page does not exist.** Requested in error; build the page instead.
 - [ ] `https://kaiteki.my/concerns/excessive-sweating` ?
 - [ ] `https://kaiteki.my/concerns/vascular-lesions`
 
@@ -90,7 +104,9 @@ unindexed profile weakens the E-E-A-T signal the schema is trying to carry.
 - [ ] `https://kaiteki.my/doctors/dr-chew-yuhhui`
 - [ ] `https://kaiteki.my/doctors/dr-jeremy-low`
 - [ ] `https://kaiteki.my/doctors/dr-jessie-lim`
-- [ ] `https://kaiteki.my/doctors/dr-say-wei-xian`
+- [~] ~~`https://kaiteki.my/doctors/dr-say-wei-xian`~~ — **do not request.** "Crawled - currently not indexed"
+  (crawled 2026-09-06): Google fetched it and declined. That is a content signal, most likely too similar to the
+  other 19 bios. Fix the page; re-requesting will not move it.
 - [ ] `https://kaiteki.my/doctors/dr-tim-chua`
 - [ ] `https://kaiteki.my/doctors/dr-yeong-bin`
 
