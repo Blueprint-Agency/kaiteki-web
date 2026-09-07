@@ -12,7 +12,7 @@ export const treatments: Treatment[] = [
   // archetype ED, depth "full"). Copy authored in the Pico Laser page preview,
   // 30 Jul 2026, pending Dr Chew Yuhhui's clinical sign-off. Two deliberate
   // departures from that document, both because the source it cited is a 404:
-  // PicoCare is absent from T-07 and T-15, and the fact strip says two platforms,
+  // Picocare is absent from T-07 and T-15, and the fact strip says two platforms,
   // not three. Restore both together if /technology/picocare ships.
   {
     slug: "pico-laser",

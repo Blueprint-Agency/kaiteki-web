@@ -51,7 +51,7 @@
 `treatmentCategories` (menu-group order): `["Lasers","Lifting & Tightening","Body & Slimming","Injectables","Facials","Hair Removal","Regenerative","Eyes"]`.
 
 **Machine sections named inside each category** (`machineNames`, described as `sections`, NOT separate pages):
-- pico-laser: Picosure, Fotona PQX (StarWalker), PicoCare
+- pico-laser: Picosure, Fotona PQX (StarWalker), Picocare
 - fotona-laser: Fotona SP Dynamis / TimeWalker (4D, NightLase, LipLase, SmoothEye, TightSculpting)
 - vascular-pigment-laser: Pro Yellow (Quadrostar 577nm), M22 IPL *(child page: DermaV)*
 - resurfacing-laser: Fractional CO2
@@ -217,7 +217,7 @@ In `interface Concern`, change:
 
 - [ ] **Step 3: Add `parent` to the 4 existing machines** — `ultherapy` → `parent: "hifu"`; `coolsculpting` → `parent: "fat-freezing"`; `onda` → `parent: "microwave-contouring"`; `dermav` → `parent: "vascular-pigment-laser"`. (The NEW category parents `microwave-contouring` / `vascular-pigment-laser` are added in Task 8; validator is allowed to fail between Task 2 and Task 8 — see Step 7 note.)
 
-- [ ] **Step 4: Add `machineNames` to existing categories** — e.g. `pico-laser` → `machineNames: ["Picosure", "Fotona PQX (StarWalker)", "PicoCare"]`, per the machine-sections table (only for the 8 existing categories in this task).
+- [ ] **Step 4: Add `machineNames` to existing categories** — e.g. `pico-laser` → `machineNames: ["Picosure", "Fotona PQX (StarWalker)", "Picocare"]`, per the machine-sections table (only for the 8 existing categories in this task).
 
 - [ ] **Step 5: Rewrite `treatmentCategories` + add helpers** at the bottom of `treatments.ts`:
 
