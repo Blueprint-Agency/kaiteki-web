@@ -94,7 +94,7 @@ The best click-through rates on the entire property, Malaysia-filtered, are **co
 
 Against a site-wide norm nearer 0.1–1%. Comparisons ask for a verdict, which an AI Overview answers poorly and a
 searcher still wants a source for. The repo's existing direction (`onda-vs-coolsculpting`,
-`discovery-pico-vs-picosure`, `ultherapy-vs-hifu`, `wegovy-vs-mounjaro`) is **validated by the data — keep going**.
+`picocare-vs-picosure`, `ultherapy-vs-hifu`, `wegovy-vs-mounjaro`) is **validated by the data — keep going**.
 
 ---
 
