@@ -335,7 +335,7 @@ export const posts: Post[] = [
       },
       {
         q: "How do I choose a doctor for lip filler?",
-        a: "Check that they are registered with the Malaysian Medical Council and certified by the Lembaga Cosmetic Physicians, both of which are verifiable. Beyond that, expect to be examined before anything is recommended, to be told which specific branded product is being used, and to have the risks explained before you consent. A doctor willing to advise against treatment or to suggest starting with less is showing judgement.",
+        a: "Check that they are registered with the Malaysian Medical Council and LCP certified, both of which are verifiable. Beyond that, expect to be examined before anything is recommended, to be told which specific branded product is being used, and to have the risks explained before you consent. A doctor willing to advise against treatment or to suggest starting with less is showing judgement.",
       },
     ],
   },
