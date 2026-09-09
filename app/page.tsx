@@ -6,6 +6,7 @@ import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { HeroFace } from "@/components/HeroFace";
 import { HeroSlider } from "@/components/HeroSlider";
 import { WhyKaiteki } from "@/components/WhyKaiteki";
+import { LeaderBadges } from "@/components/LeaderBadges";
 import { RecognitionCabinet } from "@/components/RecognitionCabinet";
 import { ConcernsMosaic } from "@/components/ConcernsMosaic";
 import { TreatmentsMenu } from "@/components/TreatmentsMenu";
@@ -69,6 +70,9 @@ export default function Home() {
 
       {/* Post-hero narrative: concerns → treatments → the doctors who stand
           behind them → why (E-E-A-T) → recognition → branches → invitation. */}
+      {/* Device-fleet records, straight under the fold: the first thing after
+          the hero, before the site starts explaining itself. */}
+      <LeaderBadges />
       <ConcernsMosaic />
       <TreatmentsMenu />
       <HowItWorks />
