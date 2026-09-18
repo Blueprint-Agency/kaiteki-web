@@ -19,15 +19,17 @@
 One message to the client with the four asks from `03d §5`. Nothing in weeks 2–4 that depends on them starts
 until the answers land, so send it first.
 
-- [ ] **A1 · Doctor sign-off** for 14 concerns and 36 technologies. Which doctor reviews which page; one line per
-      slug. Feeds D1. `Client`
+- [ ] **A1 · Doctor sign-off** for **all 69 pages** — 14 concerns, 36 technologies **and 19 treatments** (found on
+      day 1: treatment reviewers are placeholders too, `treatments.ts` line 3). Which doctor reviews which page and
+      the date they read it; one line per slug. Sheet A in `docs/15a`. Feeds D1. `Client`
 - [ ] **A2 · Branch × device matrix.** Which of the 36 machines/injectables is available at which of the 9
       branches. Feeds D3. `Client`
 - [ ] **A3 · Price decision.** (a) publish Kaiteki's own price list, or (b) indicative market ranges only, or (c)
       cost-factors sections with no figures. Feeds D4. `Client`
 - [ ] **A4 · Service scope.** Are skin-tag/mole removal and subcision offered? Feeds D6 scope. `Client`
-- [ ] **A5 · Cloudflare.** Disable Managed robots.txt / AI Crawl Control for `kaiteki.my` (03b T2 step 1).
-      `Client` → verify with `curl -s https://kaiteki.my/robots.txt` showing only the repo's rules. `Ops`
+- [x] **A5 · Cloudflare.** ~~Disable Managed robots.txt~~ **Verified clear on 2026-09-18**: the live file is the
+      repo's own (one `User-agent: *` group, six retrieval agents allowed, no Cloudflare block). Remaining: record
+      the training-bucket decision (03b T2 step 3). `Ops`
 - [ ] **A6 · Request indexing** for the 22 never-crawled URLs in `03c-request-indexing-queue.txt`, in the order
       given (03b T0). `Ops`
 
@@ -40,7 +42,7 @@ Theme: the moat we own is off; turn it on. Zero new page types this week.
 | # | Item | Lane | Depends on | Done when |
 |---|---|---|---|---|
 | 1.1 | **D1 · Sign the 14 concerns.** Fill `config/concern-signoff.json` from A1. | Content | A1 | All 14 `/concerns/*` render the ReviewByline + AuthorCard; `MedicalWebPage.reviewedBy`/`lastReviewed` present in JSON-LD; sitemap `lastmod` populated for concerns. |
-| 1.2 | **D1 · Real technology sign-offs.** Replace the placeholder `reviewedBy`/`lastReviewed` on 36 entries in `content/data/technology.ts` (header comment at line 8 flags them). | Content | A1 | No entry carries the sample reviewer; header comment removed; dates are the real review dates. |
+| 1.2 | **D1 · Real technology and treatment sign-offs.** Replace the placeholder `reviewedBy`/`lastReviewed` on 36 entries in `content/data/technology.ts` (header at line 8) **and 19 in `content/data/treatments.ts`** (header at line 3) from Sheet A. Where a doctor has not yet signed by end of week 1, the honest interim is to gate treatments and technologies through the same ledger pattern as concerns (`lib/signoff.ts`) so the page says "awaiting medical review" rather than naming someone. | Content + Dev | A1 | No entry carries a sample reviewer; header comments removed; every byline on the site is backed by a signed date or is absent. |
 | 1.3 | **D7 / T2 · Verify robots.** After A5, confirm the live file matches `app/robots.ts` and decide the training bucket (GPTBot, ClaudeBot, CCBot, Google-Extended) as a recorded client call. | Ops | A5 | `curl` shows one `User-agent: *` group and the six retrieval agents allowed; decision noted in 03b T2. |
 | 1.4 | **D5 · `relatedPosts` slot on all three templates.** Add a "Read next" row of up to 3 blog cards to `TreatmentView`, `ConcernView`, `TechnologyView`, resolved from `content/data/blog.ts` tags (`treatments`, `concerns`, `technology` arrays already exist on posts). | Dev | none | Every treatment/concern/technology page with ≥1 tagged post shows the row; rendered `<a href="/blog/…">` present in HTML; no page without a match renders an empty block. |
 | 1.5 | **D2 · Author the v2 block set for `hifu` and `skin-booster`.** `typicalSessions`, `suitableFor`, `notSuitableFor`, `avoidIf`, `sessionSteps`, `afterSession`, `risks`, `costFactors`, one `comparisons` table. Use `pico-laser` as the worked example; no "from RM", no outcome claims. | Content | none (review by 1.1's signer before merge) | Both pages render SuitabilityBlock, SessionBlock, AfterSession, RisksBlock, CostFactors and the comparison table; signer has approved the medical copy. |
