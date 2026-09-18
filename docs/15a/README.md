@@ -71,6 +71,13 @@ Written for: Kaiteki management (the person who can reach the doctors, the branc
 > 6 Sep worked within a day. We'll send the remaining list in three batches of 12 over the next three days; each
 > batch takes about five minutes in Search Console. If you'd rather we do it, add us as an owner on the property.
 >
+> **7. Chinese and Malay versions.**
+> In the last week of the plan we'll build the site's language layer and launch a first set of pages in Chinese
+> and in Bahasa Malaysia (about eight pages each: the most-searched treatment, concern and device pages, the home
+> page and one clinic page), with the rest following after. Two things from you: confirm you want both languages,
+> and name one doctor who reads Chinese and one who reads Malay to sign off the translated medical text, the same
+> way as in point 1. Translation will be done by people, not software.
+>
 > Once 1 and 2 are back we can ship the first changes the same week.
 >
 > Thanks,
@@ -190,7 +197,25 @@ exceeded, stop for the day and continue tomorrow.
 **Verification** (us, plan item 3.1): re-inspect the whole list on 6 Oct. Anything still "Discovered, not indexed"
 gets a second request and a contextual link from an already-crawled page.
 
-## 7. Side finding to park
+## 7. Languages — what week 4 delivers and what it does not
+
+Plan item 4.5. **Delivers:** `/zh/**` and `/ms/**` routing with the same slugs as English, translated chrome,
+reciprocal hreflang with `x-default`, locale URLs in the sitemap, a language switcher, and the `/cn/*` legacy
+redirects re-pointed to `/zh/*`. Plus a signed pilot of 8 pages per language:
+
+| Locale | Pilot pages | Why these |
+|---|---|---|
+| `/zh` | home · treatments/pico-laser · concerns/pigmentation · technology/onda-coolwaves · one KL location · 3 by client choice | Highest-impression pages; the legacy `/cn/` mirror had indexed equity on these topics |
+| `/ms` | home · technology/rejuran · treatments/skin-booster · concerns/acne · one JB location · 3 by client choice | Kaiteki already ranks pos 1 for `jenis rejuran` / `macam macam rejuran` with no Malay content; `jerawat` and `harga` clusters (03b T7, 03d) |
+
+**Does not deliver:** the other 61 pages per language. Those follow in week 5+, paced by in-language doctor
+sign-off. No page goes live under a locale prefix as English or as machine translation; a page without a signed
+translation simply has no locale URL and no hreflang.
+
+**Needs from the client:** confirmation of both languages, and bilingual reviewers (ask 7). If the reviewers are
+not named by 12 Oct, the plumbing ships with no locale URLs live and the pilot moves to week 5.
+
+## 8. Side finding to park
 
 GSC reports the `/technology` hub with a **Product snippets: FAIL** rich-result verdict. The hub emits
 `CollectionPage` + `ItemList`, not `Product`, so this is Google interpreting the list as products. Not urgent; add

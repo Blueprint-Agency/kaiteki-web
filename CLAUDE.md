@@ -23,7 +23,7 @@ This is a **YMYL / medical** site: health-content accuracy, E-E-A-T, and **Malay
 ## Locked decisions (from project kickoff)
 
 1. **Stack:** Next.js (App Router) + TypeScript. (Details finalized in `docs/07`.)
-2. **Languages:** **English first**, but architecture must be **i18n-ready** (Chinese `/cn`→`/zh` planned later). Don't hard-code English assumptions into routing/data.
+2. **Languages:** **English first**, but architecture must be **i18n-ready** (Chinese `/cn`→`/zh` planned later). Don't hard-code English assumptions into routing/data. *Timing update 2026-09-19:* `/zh` **and** `/ms` plumbing plus a signed pilot are scheduled for week 4 of `docs/15` (item 4.5), pending client confirmation (`docs/15a` ask 7).
 3. **Blog:** migrate posts onto the main domain at **`kaiteki.my/blog`** (consolidates authority off the subdomain). Stored **in-repo as MDX**.
    *Shipped:* bodies in `content/blog/<slug>.mdx`, typed metadata in `content/data/blog.ts`, routes at `/blog`, `/blog/[slug]`, `/blog/category/[slug]`. MDX is wired via `@next/mdx` + remark-gfm + rehype-slug (`next.config.ts`), styled in `mdx-components.tsx`. **Authoring a post: `content/blog/AUTHORING.md` is the contract; `pnpm check:blog` enforces it.**
 4. **Content management:** **none — pure code.** Content lives in the repo (MDX + typed data files). No headless CMS for now.

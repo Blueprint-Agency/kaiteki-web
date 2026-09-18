@@ -379,6 +379,9 @@ they ask for a verdict that an AI Overview answers poorly. Keep commissioning th
 This contradicts a locked decision, so it goes to the client as a question — **do not silently re-order it**
 (`docs/03a §6`).
 
+**2026-09-19 update:** agency direction is to do **both**, plumbing plus an 8-page signed pilot per language, in
+week 4 of `docs/15` (item 4.5). Put to the client as day-1 ask A7 in `docs/15a`. T7 closes when A7 is answered.
+
 ### T8 — Re-baseline quarterly · P2 · process
 Re-run the AIO check on the top ~15 queries each quarter and log which engines cite whom (`docs/02 §9.10`,
 `docs/05`). AIO coverage is the metric that now governs content strategy; it was never being measured.
