@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 import { Container } from "@/components/Container";
 import { Breadcrumbs, type Crumb } from "@/components/Breadcrumbs";
 import { LeadAnswer } from "@/components/LeadAnswer";
-import { Ledger, ReviewByline } from "@/components/Ledger";
+import { Ledger } from "@/components/Ledger";
 import { Faq } from "@/components/Faq";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { ArticleToc } from "@/components/blog/ArticleToc";
@@ -54,9 +54,9 @@ import type { Treatment } from "@/lib/types";
  *     porcelain safety notice are gone; every section sits on page ground. The
  *     one surviving surface is the mid-page espresso CTA, which now bleeds full
  *     width here exactly as it does on a concern page;
- *   · **the reviewer byline** sits in its own band under the hero rather than
- *     stacked inside the hero's left column, and the page closes with the
- *     blog's `AuthorCard` above the review ledger;
+ *   · **the reviewer byline** is not in the hero at all: the page closes with
+ *     the blog's `AuthorCard` above the review ledger, which carries the
+ *     named-doctor, MMC and last-reviewed signals once instead of twice;
  *   · **the closing CTA** is the concern page's centred block on page ground —
  *     no tint band, no generated motif beside it;
  *   · **no generated motifs anywhere.** They were decoration standing in for
@@ -163,7 +163,7 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
           photograph is an arched object on the right rather than a banner
           strip above the text. ─────────────────────────────────────────── */}
       <header className="border-b border-hairline">
-        <Container className="pt-8 pb-12 sm:pb-14">
+        <Container className="pt-8 pb-10 sm:pb-12">
           <Breadcrumbs items={trail} />
           <div
             className={`mt-8 grid gap-10 lg:gap-16 ${t.image ? "lg:grid-cols-[1fr_0.78fr] lg:items-center" : ""}`}
@@ -192,7 +192,7 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
                 today, and the day one does not, the headline takes the width
                 rather than a generated motif taking the space. */}
             {t.image && (
-              <div className="relative aspect-[3/2] overflow-hidden rounded-2xl rounded-t-[4rem] bg-tint ring-1 ring-hairline lg:aspect-[4/5]">
+              <div className="relative aspect-[3/2] overflow-hidden rounded-2xl rounded-t-[4rem] bg-tint ring-1 ring-hairline lg:aspect-[5/4]">
                 <Image
                   src={t.image}
                   alt={`${t.name} treatment at Kaiteki Skin Aesthetic Clinic Malaysia`}
@@ -205,22 +205,6 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
             )}
           </div>
         </Container>
-
-        {/* The reviewer byline in its own band under the hero — where a concern
-            page puts it — rather than stacked under the hero CTA. */}
-        {doctor && (
-          <Container className="py-8 sm:py-10">
-            <div className="max-w-sm">
-              <ReviewByline
-                doctorName={doctor.fullName}
-                mmc={doctor.mmc}
-                date={reviewedDate}
-                photo={doctor.photo}
-                href={`/doctors/${doctor.slug}`}
-              />
-            </div>
-          </Container>
-        )}
       </header>
 
       {/* T-02 — authored process facts, else the derived session/downtime tags. */}
