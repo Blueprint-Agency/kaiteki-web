@@ -1,10 +1,8 @@
 import type { CSSProperties } from "react";
-import { getImageProps } from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { HeroFace } from "@/components/HeroFace";
-import { HeroSlider } from "@/components/HeroSlider";
 import { WhyKaiteki } from "@/components/WhyKaiteki";
 import { LeaderBadges } from "@/components/LeaderBadges";
 import { RecognitionCabinet } from "@/components/RecognitionCabinet";
@@ -19,7 +17,6 @@ import { HomeFaq } from "@/components/HomeFaq";
 import { PromoModal } from "@/components/PromoModal";
 import { ArrowRight, MapPin } from "@/components/icons";
 import { site } from "@/lib/site";
-import { waLink } from "@/lib/wa";
 import { pageMeta } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { webPageNode } from "@/lib/schema";
@@ -49,23 +46,11 @@ export default function Home() {
         })}
       />
       <PromoModal />
-      {/* HERO — a two-slide carousel that auto-advances every 5s: the current
-          campaign banner, then the warm-sanctuary fold. Both slides are
-          server-rendered inside the client HeroSlider, so the <h1>, the CTAs and
-          every concern hotspot link stay in the HTML. Pulled under the
-          transparent header; each slide re-adds the 68px clearance itself. */}
+      {/* HERO — warm-sanctuary fold: subject photo with interactive concern
+          hotspots (see HeroFace). Pulled under the transparent header. When a
+          campaign banner is running, wrap this in components/HeroSlider. */}
       <section className="hero-warm relative -mt-[68px] overflow-hidden">
-        <HeroSlider
-          // Matches slide 1's natural height exactly (68px clearance + the
-          // capped banner), so nothing shifts when the measured height takes
-          // over at hydration. Two ratios because the banner is art-directed:
-          // 4:5 (125vw) on phones, 16:9 (56.25vw) from sm up — see PromoSlide.
-          initialHeightClass="h-[calc(68px+min(125vw,100dvh-92px))] sm:h-[calc(68px+min(56.25vw,100dvh-92px))]"
-          slides={[
-            { label: "Merdeka Steady Deals promotion", content: <PromoSlide /> },
-            { label: "Japanese-inspired skin & aesthetic care", content: <WarmSlide /> },
-          ]}
-        />
+        <WarmSlide />
       </section>
 
       {/* Post-hero narrative: concerns → treatments → the doctors who stand
@@ -90,84 +75,7 @@ export default function Home() {
   );
 }
 
-/* ── Hero slide 1 — current campaign banner ─────────────────────────────────
-   Art-directed, not just rescaled: the 16:9 desktop artwork puts its cards in
-   one row, which at 390px renders the captions around 5px tall, so phones get a
-   4:5 recut instead. A <picture> (rather than two <Image>s toggled with
-   `hidden`) is what keeps the browser from downloading both — a display:none
-   <img> is still fetched, and this one is on the LCP path.
-
-   Both files are width-capped so the banner can never grow taller than the
-   fold. Tapping it opens WhatsApp with the campaign named, matching the site's
-   WhatsApp-only conversion model. */
-function PromoSlide() {
-  const shared = {
-    alt: "Kaiteki Merdeka Steady Deals: buy 2 get 1 free across four treatment bundles, with a free Deusaderm or Radiesse bonus. Promo period 16 August to 15 September. Terms and conditions apply.",
-    sizes: "100vw",
-    priority: true,
-  };
-  const { props: desktop } = getImageProps({
-    ...shared,
-    src: "/images/hero/merdeka-2026-banner.png",
-    width: 1920,
-    height: 1080,
-  });
-  const { props: mobile } = getImageProps({
-    ...shared,
-    src: "/images/hero/merdeka-2026-banner-mobile.png",
-    width: 1080,
-    height: 1350,
-  });
-
-  return (
-    <div className="pt-[68px]">
-      {/* getImageProps() returns the srcSet but drops `priority`'s side effects,
-          so the LCP banner gets neither a preload nor fetchpriority unless we
-          emit them by hand. React hoists these into <head>; `media` is what
-          keeps the phone from preloading the desktop file and vice versa. */}
-      <link
-        rel="preload"
-        as="image"
-        media="(min-width: 640px)"
-        imageSrcSet={desktop.srcSet}
-        imageSizes={desktop.sizes}
-        fetchPriority="high"
-      />
-      <link
-        rel="preload"
-        as="image"
-        media="(max-width: 639.98px)"
-        imageSrcSet={mobile.srcSet}
-        imageSizes={mobile.sizes}
-        fetchPriority="high"
-      />
-      <a
-        href={waLink("Hi Kaiteki, I'd like to know more about the Merdeka Steady Deals promotion.")}
-        target="_blank"
-        rel="noopener"
-        data-ga="cta_click"
-        data-ga-cta_position="hero_banner"
-        className="block"
-      >
-        <picture>
-          <source media="(min-width: 640px)" srcSet={desktop.srcSet} sizes={desktop.sizes} />
-          {/* The <img> carries the phone artwork, so `sm:` restyles it for the
-              desktop source the media query above swaps in. The aspect classes
-              set the box (never inherited from the file), and object-cover is
-              belt-and-braces: both ratios are exact, so nothing is cropped. */}
-          <img
-            {...mobile}
-            alt={shared.alt}
-            fetchPriority="high"
-            className="mx-auto w-full max-w-[calc((100dvh-92px)*0.8)] object-cover aspect-[4/5] sm:aspect-[16/9] sm:max-w-[calc((100dvh-92px)*1.7778)]"
-          />
-        </picture>
-      </a>
-    </div>
-  );
-}
-
-/* ── Hero slide 2 — the "Warm Sanctuary" fold ───────────────────────────────
+/* ── Hero — the "Warm Sanctuary" fold ─────────────────────────────────────────
    Subject photo with interactive concern hotspots (see HeroFace). */
 function WarmSlide() {
   return (
