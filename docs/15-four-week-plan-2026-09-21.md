@@ -3,6 +3,9 @@
 > **What this is.** The execution plan for `docs/03d` (treatment / concern / technology gap analysis, 2026-09-18).
 > Eight decisions D1–D8 plus the two 03b tickets that gate them (T0 never-crawled, T2 Cloudflare bot block),
 > laid out week by week with an owner, a dependency and a definition of done per item.
+> **2026-09-19:** week-4 item 4.5 adds Chinese and Bahasa Malaysia (plumbing + pilot). This brings both locales
+> forward from "later" in `docs/04 §8` and the locked decisions in `CLAUDE.md`; recorded there as a timing change,
+> not a change of scheme, and confirmed with the client through day-1 ask A7.
 > Tick boxes as work lands; keep the dates. If a client input slips, the item moves to the next week, not off the
 > plan.
 >
@@ -30,6 +33,9 @@ until the answers land, so send it first.
 - [x] **A5 · Cloudflare.** ~~Disable Managed robots.txt~~ **Verified clear on 2026-09-18**: the live file is the
       repo's own (one `User-agent: *` group, six retrieval agents allowed, no Cloudflare block). Remaining: record
       the training-bucket decision (03b T2 step 3). `Ops`
+- [ ] **A7 · Two languages in week 4.** Confirm Chinese (`/zh`) **and** Bahasa Malaysia (`/ms`) both go ahead
+      (this closes 03b T7 by doing both), and name at least one doctor who reads Chinese and one who reads Malay to
+      sign the translated pilot pages. Feeds 4.5. `Client`
 - [ ] **A6 · Request indexing** for the 22 never-crawled URLs in `03c-request-indexing-queue.txt`, in the order
       given (03b T0). `Ops`
 
@@ -91,7 +97,8 @@ Theme: finish the treatment set, deepen FAQs where the surface is shallowest, me
 | 4.2 | **FAQ depth pass.** Bring every treatment and technology page to 4–6 FAQs phrased as the real query (pull from GSC query lists: "does pico laser hurt", "can pico laser remove pigmentation", "how does pico laser work on pigmentation"). No off-topic questions. FAQPage schema stays off (docs/02 §3). | Content | none | No treatment/technology page below 4 FAQs; every question appears as an H3 in the DOM with the answer in the initial HTML. |
 | 4.3 | **Internal-link audit.** Each treatment → its concerns, technologies, related treatments, 1–3 posts, reviewer. Each concern → treatments (with `treatmentWhy`), technologies, related concerns, posts. Each technology → treatments, concerns, branches, posts. | Dev | 1.4, 2.1 | A script in `scripts/` lists pages missing any link class; zero rows. |
 | 4.4 | **Measure.** Re-pull the week-1 baseline (28 days, MY filter). Compare impressions, clicks, CTR and position per page type; count pages with a reviewer in schema (target 69/69), pages with `costFactors` (target 19/19 treatments), technology pages with `availableAt` (36/36). | Ops | 1.6 | A dated section appended to this doc with the numbers and a one-paragraph read; titles are **not** touched until this exists (03d §6). |
-| 4.5 | **Handover note to the client.** What shipped, what needs their next input (BM decision 03b T7, price list if A3 = a), and the week-5 backlog from 3.7. | Content | all | Sent; copy filed in `docs/`. |
+| 4.5 | **Multilingual: Chinese `/zh` and Bahasa Malaysia `/ms`, plumbing + pilot.** Added 2026-09-19. Resolves 03b T7 by doing both, on a pilot footprint. **Build (Dev):** locale-prefixed routing per `docs/04 §8` (`/zh/**`, `/ms/**`, English unprefixed; same locale-neutral slugs), a `[locale]` layout with `lang` attribute, translated site chrome (nav, footer, CTA strings, breadcrumbs), reciprocal `alternates.languages` hreflang with `x-default` → English on every page that has a sibling, both locales in `sitemap.ts`, language switcher, and the `/cn/*` redirect flip from English-interim to `/zh/*` 1:1 (`docs/04 §9.9`). Pages with no translation yet emit **no** hreflang and no `/zh` or `/ms` URL (never a machine-translated or English-under-a-prefix page). **Content (pilot, 8 pages × 2 locales):** home, one location page, and the highest-impression treatment, concern and technology page per language, plus three by client choice. Chinese: `treatments/pico-laser`, `concerns/pigmentation`, `technology/onda-coolwaves`, a KL location. Malay: `technology/rejuran`, `treatments/skin-booster`, `concerns/acne`, a JB location (captures the `jenis rejuran` / `jerawat` / `harga` demand 03b T7 and 03d name). Translated by people, not a model; the medical body copy of each translated page is **signed by a doctor who reads that language** and recorded in the ledger with a locale key. | Dev + Content + Client | A7 (client confirms both locales and names bilingual reviewers); D1 ledger; 2.1 | Both prefixes resolve; every pilot page passes hreflang validation (each sibling lists all siblings and itself); `/cn/*` legacy URLs land on `/zh/*`; sitemap lists locale URLs; a lint blocks any locale URL whose body is still English; pilot pages signed in-language. |
+| 4.6 | **Handover note to the client.** What shipped, what needs their next input (BM decision 03b T7, price list if A3 = a), and the week-5 backlog from 3.7. | Content | all | Sent; copy filed in `docs/`. |
 
 ---
 
@@ -99,12 +106,14 @@ Theme: finish the treatment set, deepen FAQs where the surface is shallowest, me
 
 - FAQPage or HowTo schema; hidden `Product`/`Offer` prices; celebrity or testimonial video; Google-reviews widgets with schema; GTranslate-style language copies (03d "What to skip").
 - Title and meta rewrites. 03b showed the click problem is AEO, not titles; 4.4 decides whether any title work is warranted after depth ships.
-- The blog migration (03b T3) and the `/zh` build. Both continue on their own tracks; 1.4 links to whatever posts are in-repo at the time.
-- Bahasa Malaysia page types. 03b T7 escalation stays open; if the client wants BM this quarter it enters as a week-5+ workstream, not a week-4 squeeze.
+- The blog migration (03b T3) continues on its own track; 1.4 links to whatever posts are in-repo at the time.
+- **Full translation of all 69 medical pages into Chinese and Malay.** Week 4 (item 4.5) ships the locale plumbing and a signed 8-page pilot per language; the remaining pages are the week-5+ workstream, paced by bilingual doctor sign-off, not by translation speed.
 
 ## Capacity check
 
-Roughly: Dev ≈ 4 days (1.4, 2.1, 2.2, 4.3 + reviews). Content ≈ 12–14 days across the four weeks (18 treatment
+Roughly: Dev ≈ 4 days (1.4, 2.1, 2.2, 4.3 + reviews) **plus ≈ 3 days for the locale plumbing in 4.5**. Content ≈ 12–14 days across the four weeks (18 treatment
 block sets, 2 new concern pages, 12 technology lead answers, 36 `availableAt`, FAQ pass). Client ≈ 2 hours on
-day 1 and 30 minutes a week for medical review. Ops ≈ half a day a week. If content capacity is one person, 4.1
-is the item to push to week 5; everything in weeks 1–3 stays.
+day 1 and 30 minutes a week for medical review. Ops ≈ half a day a week. Translation for 4.5 is a separate
+budget (16 pilot pages, human translators) and does not come out of the content lane. If content capacity is one
+person, 4.1 is the item to push to week 5; everything in weeks 1–3 stays. If the bilingual sign-off in A7 has not
+landed by 12 Oct, 4.5 ships the plumbing with **zero** locale URLs live and the pilot follows in week 5.
