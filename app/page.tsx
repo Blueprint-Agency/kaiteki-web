@@ -17,13 +17,13 @@ import { HomeFaq } from "@/components/HomeFaq";
 import { PromoModal } from "@/components/PromoModal";
 import { ArrowRight, MapPin } from "@/components/icons";
 import { site } from "@/lib/site";
+import { doctors } from "@/content/data/doctors";
 import { pageMeta } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { webPageNode } from "@/lib/schema";
 
 const TITLE = "Kaiteki: Japanese-Inspired Aesthetic Clinic in Malaysia";
-const DESCRIPTION =
-  "9 branches, 20 doctors, one standard of aesthetic care across KL, Selangor, Johor and Sabah. Your concern is assessed first, then the right treatment follows.";
+const DESCRIPTION = `9 branches, ${doctors.length} doctors, one standard of aesthetic care across KL, Selangor, Johor and Sabah. Your concern is assessed first, then the right treatment follows.`;
 
 export const metadata = pageMeta({
   title: TITLE,
@@ -95,7 +95,7 @@ function WarmSlide() {
           </h1>
           <p className="rise prose mt-5 max-w-[46ch] text-lg leading-relaxed text-ink-700 mx-auto lg:mx-0" style={si(1)}>
             A calm, considered approach to your skin. Nine branches across
-            Malaysia, 20 doctors, and every treatment starts with an assessment.
+            Malaysia, {doctors.length} doctors, and every treatment starts with an assessment.
           </p>
           <div className="rise mt-7 flex flex-col items-center gap-5 lg:items-start" style={si(2)}>
             <WhatsAppButton size="lg" label="Book a Free Consultation" />
