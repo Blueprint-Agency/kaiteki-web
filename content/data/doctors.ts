@@ -347,6 +347,24 @@ export const doctors: Doctor[] = [
     seoDescription:
       "Dr Say Wei Xian (MBBS, MAC), Kaiteki aesthetic physician. Review credentials and branch info, then book a free WhatsApp consultation.",
   },
+  {
+    slug: "dr-hong-peiyi",
+    fullName: "Dr Hong Peiyi",
+    credentials: "MD",
+    mmc: "MMC 64902",
+    role: "Aesthetic Physician",
+    photo: "/images/doctors/dr-hong-peiyi.jpg",
+    branches: [],
+    bio: [
+      "Dr Hong Peiyi graduated from Universiti Putra Malaysia (UPM) and subsequently completed advanced training in Family Medicine. With more than a decade of experience in primary care, she has developed a strong foundation in comprehensive and patient-centred healthcare.",
+      "With a special interest in women's health, aesthetic medicine and gynaecological aesthetics, Dr Hong is passionate about helping women feel confident and comfortable in their own skin at every stage of life. Her clinical experience has given her a deeper understanding of the physical, emotional and lifestyle factors that influence a woman's health, appearance and overall wellbeing.",
+      "Her approach to aesthetic medicine goes beyond treating individual concerns. Dr Hong believes in understanding each patient as a whole and developing personalised treatment plans that complement their natural features while maintaining a balanced and natural-looking outcome.",
+      "Combining her background in family medicine with her interest in aesthetics, Dr Hong strives to provide an integrated approach to beauty and wellness, helping her patients look good, feel confident and, most importantly, feel well from within.",
+    ],
+    seoTitle: "Dr Hong Peiyi, Aesthetic Physician, Kaiteki Clinic",
+    seoDescription:
+      "Dr Hong Peiyi (MD), Kaiteki aesthetic physician with a family medicine background and a focus on women's health. Book a free WhatsApp consultation.",
+  },
 ];
 
 export function doctorBySlug(slug: string) {
