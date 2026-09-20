@@ -101,6 +101,54 @@ searcher still wants a source for. The repo's existing direction (`onda-vs-cools
 ## 1.9 ⛔ T0 — **A large share of the site has never been crawled** · P0, above everything else
 
 Found while investigating T4 on 2026-09-06, by URL-inspecting a 40-URL sample of the 125-URL sitemap.
+
+> ### ⛔ Re-diagnosis 2026-09-20 — it is not a technical fault, and manual requests will not fix it
+>
+> **Trigger.** The client reports requesting indexing manually since 6 Sep with no movement. Spot checks on
+> 18 Sep confirmed it: `/treatments/laser-hair-removal`, `/treatments/botulinum-toxin` and
+> `/treatments/dermal-fillers` were all still "Discovered – currently not indexed", `last_crawled: null`.
+> The three URLs the client *did* request on 6 Sep (`/technology`, `/technology/rejuran`,
+> `/technology/profhilo`) were crawled within a day — so requesting works *sometimes*, which is the confusing part.
+>
+> **Four hypotheses tested against the repo and the live site, 2026-09-20:**
+>
+> | Hypothesis | Test | Result |
+> |---|---|---|
+> | Not in the sitemap / not discoverable | sitemap submitted, 0 errors, every URL present with `lastmod` | ❌ ruled out (already in §"What it is not") |
+> | Not internally linked | counted rendered `<a href>` on the live hubs | ❌ ruled out — `/technology` links **36 of 36**, `/treatments` **19 of 19**, `/concerns` **14 of 14**, and all three hubs are themselves indexed |
+> | Thin content | word-count every entry in the three data files, split by crawled vs never-crawled | ❌ **ruled out, and it is the reverse of what we assumed**: never-crawled technology pages average **1,342 words** vs **1,274** for crawled ones. `botulinum-toxin` (1,578 w) is uncrawled; `exosome-therapy` (926 w) is indexed. `birthmark` (442 w) is indexed; `excessive-sweating` (400 w) is not. Length does not predict it at all. |
+> | **Cluster template sameness** | normalise every section heading (strip brand names) and count repeats across each cluster | ✅ **supported** |
+>
+> **The evidence for sameness:**
+>
+> | Cluster | Repeated section heading | Pages sharing it |
+> |---|---|---|
+> | Technology (36) | "Suitability & who should avoid it" · "The session at Kaiteki" · "Downtime & aftercare" · "Risks & side effects" · "Sessions & cost factors" | **35 of 36 each** |
+> | Technology (36) | "What it may help address" | 34 of 36 |
+> | Treatments (19) | "Suitability & who should avoid it" · "Risks & side effects" · "Sessions & cost factors" | **18 of 19 each** |
+> | Treatments (19) | "The session at Kaiteki" · "Downtime & aftercare" | 17 of 19 |
+>
+> Fifty-five URLs differ from one another mainly in their nouns. On a DA-19 domain with organic traffic down 42%
+> year on year, that is a cluster Google can discover cheaply and decline to fetch. The control case is decisive:
+> **`pico-laser` is the one treatment authored off the shared spine (2 sections plus the v2 blocks, 2,679 words)
+> and it is crawled, indexed and ranking.** The 13 injectables — the single most templated sub-group — are
+> **uncrawled without exception**.
+>
+> **What follows.**
+> 1. **Stop submitting manual indexing requests.** They are not the lever, and they consume client goodwill.
+> 2. **T0 is not a gate on content work; content work is the treatment for T0.** `docs/15` week 3 has been
+>    reframed accordingly — previously it said content work on those slugs was wasted until T0 cleared, which was
+>    backwards.
+> 3. **Differentiate the clusters.** `docs/15` items 1.5, 2.3, 2.5, 3.4 and 4.1 do exactly this: per-page lead
+>    answers, per-page fact sets, and a section spine that varies by page instead of one spine stamped 36 times.
+>    Item 2.3 was widened from 12 technology pages to all 36 on the strength of this finding.
+> 4. **Measure it properly.** `docs/15` item 3.1 becomes a two-arm check — pages that got depth vs pages that did
+>    not — and item 4.4 reports how many of the 34 never-crawled URLs have been crawled since. That is a real test
+>    of this diagnosis, and it can falsify it.
+>
+> **Caveat.** This is the best-supported explanation, not a confirmed cause; Google does not report crawl-demand
+> decisions. It earns its place by being the only hypothesis left standing after the other three were tested and
+> failed, and by the `pico-laser` control. Treat item 4.4 as the verdict.
 **Roughly half of the sampled `/technology` and `/treatments` pages have never been fetched by Google.**
 
 ### Never crawled (22 confirmed)

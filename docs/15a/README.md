@@ -18,6 +18,25 @@ Send §1 as-is (WhatsApp or email). Attach the two CSVs. Keep the returned sheet
 
 ---
 
+## 0. Client answers — received 2026-09-20
+
+Answered against this document's section numbers.
+
+| § | Ask | Answer | Consequence |
+|---|---|---|---|
+| 1 | Message to the client | **Sent** | — |
+| 2 | Sheet A, medical sign-off | **Done** | ⚠️ **The returned sheet is not in the repo yet.** Plan items 1.1 and 1.2 cannot start until the filled CSV lands in `docs/15a/`. This is the only thing blocking week 1's first two items. |
+| 3 | Sheet B, branch × device | **Not needed — the machines rotate between branches** | The "Available at" block is **cancelled** (plan items 2.2 and 2.4). We lose what 03d called the second ownable gap: there is no stable branch→device fact, so publishing one would be wrong within a month. Freed capacity moves to per-page lead answers (2.3, widened from 12 pages to 36). |
+| 4 | Price | **Show no price at all** | D4 closes at option (c). No price list, no indicative range, no `Offer` schema, no `/pricing` page. Cost sections list factors only. Rule R-03 stands; no ADR needed. This is a deliberate concession on the most-rewarded element of every SERP we tested — the compensation is specificity (contraindications, session length, interval, device names). |
+| 5 | AI crawlers | **OK to allow training bots** | No code change: nothing is disallowed today, so `app/robots.ts` already reflects this. Decision recorded against 03b T2 step 3, which now closes. |
+| 6 | Indexing requests | **Requesting manually, no movement from Google** | Re-diagnosed the same day — see §6 below and the 03b T0 update. **Stop requesting.** It is not discovery, not linking and not thin content; it is cluster template sameness, and the plan's depth work is the fix. |
+| 7 | Chinese and Bahasa Malaysia | **OK** | Both confirmed for week 4 (item 4.5), closing 03b T7. Still needed before 12 Oct: one Chinese-reading and one Malay-reading doctor to sign the pilot pages. |
+
+**Still open:** the original ask 4 in the message below (does any branch offer skin-tag/mole removal or subcision?)
+has no answer yet. It feeds item 3.7 only, so nothing before 11 Oct is blocked.
+
+---
+
 ## 1. Message to the client
 
 Written for: Kaiteki management (the person who can reach the doctors, the branch managers, and the price decision).
@@ -109,7 +128,15 @@ Treatments and technologies: replace `reviewedBy`/`lastReviewed` in the data fil
 delete the placeholder header comments. Any page still unsigned at the end of week 1 gets gated through the same
 ledger pattern as concerns so it says "awaiting medical review" instead of naming a doctor (plan item 1.2).
 
-## 3. Sheet B — branch × device (`sheet-b-branch-device-matrix.csv`)
+## 3. ~~Sheet B — branch × device~~ · CANCELLED 2026-09-20
+
+> **The client's answer: not needed, the machines rotate between branches.** The CSV stays in this folder as a
+> record of what was asked, unfilled. Do not add `availableAt` to the `Technology` type; plan items 2.2 and 2.4
+> are struck. If the client later wants rotation described honestly on the page, the cheapest version is one
+> sentence plus the WhatsApp CTA ("our devices move between clinics — message us to confirm where this one is"),
+> which needs no matrix and no maintenance. Proposed, not scheduled.
+
+### What was asked (`sheet-b-branch-device-matrix.csv`)
 
 36 rows × 9 branch columns (Mont Kiara, Cheras, Bukit Jalil, Four Seasons KL, Petaling Jaya SS2, Kota Kemuning,
 Southkey JB, Pelangi JB, Kota Kinabalu) plus a notes column. Any mark in a cell counts as available.
@@ -118,7 +145,7 @@ Southkey JB, Pelangi JB, Kota Kinabalu) plus a notes column. Any mark in a cell 
 branch-card row on every technology page and, as a stretch, a reciprocal "Devices at this clinic" list on each
 location page (plan items 2.1, 2.2, 2.4).
 
-## 4. Price decision — what each option means for the build
+## 4. Price decision — CLOSED at option (c), 2026-09-20: no price at all
 
 | Option | Build | Compliance | Search effect |
 |---|---|---|---|
@@ -129,7 +156,20 @@ location page (plan items 2.1, 2.2, 2.4).
 Rule R-03 ("no from RM") stays under (b) and (c). Under (a) it is superseded by a client decision and should be
 recorded as an ADR.
 
-## 5. AI crawler decision
+> **Decision: (c).** No Kaiteki price, no indicative market range, no `Offer` schema, no `/pricing` page. Treatment
+> pages get a "What affects the cost of X" section listing factors — area treated, number of sessions, device,
+> whether it is combined — with no figure anywhere. Rule R-03 stands unchanged and no ADR is needed.
+>
+> **State the cost plainly for the record:** a third of every treatment SERP we sampled leads with a Ringgit
+> figure, and we are choosing not to compete on that element. The compensating move is D8 — be the page that
+> states contraindications, session length, interval, device name and honest caveats, none of which our rivals do.
+> Worth revisiting at the 4.4 measurement, once depth has shipped and we can see whether the factors-only section
+> captures any of the price query cluster on its own.
+>
+> **Build guard:** add a lint that fails on any `RM` or digit-currency string inside `costFactors`, so this cannot
+> drift back in by accident.
+
+## 5. AI crawler decision — CLOSED 2026-09-20: training bots allowed
 
 Live state 18 Sep: all agents allowed; six retrieval agents named explicitly (`OAI-SearchBot`, `ChatGPT-User`,
 `Claude-SearchBot`, `Claude-User`, `PerplexityBot`, `Applebot`). Nothing is disallowed, so the training bots are
@@ -137,7 +177,36 @@ allowed by default today. If the client says no to training, add a `Disallow: /`
 `CCBot`, `Google-Extended`, `Applebot-Extended`, `Meta-ExternalAgent` in `app/robots.ts` (Clique's exact setup).
 Either way, record the call in 03b T2.
 
-## 6. Indexing queue — three batches
+> **Decision: allow the training bots.** No code change is required — nothing is disallowed in `app/robots.ts`
+> today, so the live file already reflects this. 03b T2 closes.
+
+## 6. Indexing queue — SUSPENDED 2026-09-20
+
+> **The client reports requesting manually since 6 Sep with no movement, and the spot checks agree.** On 18 Sep,
+> `/treatments/laser-hair-removal`, `/treatments/botulinum-toxin` and `/treatments/dermal-fillers` were all still
+> "Discovered – currently not indexed" with no crawl ever recorded.
+>
+> **Stop requesting.** Re-diagnosis on 2026-09-20 (full working in the 03b T0 update) tested four explanations:
+>
+> - **Not discoverable?** No — every URL is in a clean submitted sitemap with a valid `lastmod`.
+> - **Not internally linked?** No — the live `/technology` hub links 36 of 36, `/treatments` 19 of 19, `/concerns`
+>   14 of 14, and all three hubs are themselves indexed.
+> - **Thin content?** No, and it is the reverse of what we assumed: the never-crawled technology pages average
+>   1,342 words against 1,274 for the crawled ones. Length does not predict crawl status at all.
+> - **Cluster template sameness?** Yes. Thirty-five of the 36 technology pages share the same five section
+>   headings; 18 of 19 treatments share three. Fifty-five URLs that differ mainly in their nouns. The one
+>   treatment authored off that spine, `pico-laser`, is crawled, indexed and ranking. All 13 injectables, the most
+>   templated sub-group on the site, are uncrawled without exception.
+>
+> So the lever is not Search Console. It is making the pages genuinely different from one another, which is
+> already what plan items 1.5, 2.3, 2.5, 3.4 and 4.1 do. Item 2.3 was widened from 12 technology pages to all 36
+> because of this finding. Item 4.4 measures whether it worked, and can falsify it.
+>
+> **What to tell the client:** stop spending time in Search Console on this; it is not their fault and it is not a
+> bug. The fix is the content work already scheduled, and we will report the crawl recovery at the 18 Oct
+> measurement.
+
+### The queue as it stood (retained for reference, not for action)
 
 Source: `docs/03c-request-indexing-queue.txt` (37 unrequested as of 6 Sep). GSC allows roughly 10–15 requests a
 day. Order is by commercial value, then by "unknown to Google" first within a group. Tick as requested.

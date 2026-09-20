@@ -20,7 +20,7 @@
 2. **The SERPs are price-led and blog-tolerant.** 4 of 10 pico results and 3 of 10 HIFU results lead with an RM figure. Clinic *blog posts* rank beside clinic *service pages* on every query. No result on any of the three SERPs shows a named doctor reviewer.
 3. **Our moat is built but switched off.** Every rival lacks per-page medical schema and a named MMC reviewer. We have both — yet all 14 concern pages ship with no reviewer (the sign-off ledger is empty), and 36 technology pages emit placeholder review dates. **Correction 2026-09-18 (day 1):** the 19 treatment pages are placeholders too — `content/data/treatments.ts` line 3 says `reviewedBy` is "a plausible provisional assignment, NOT a confirmed claim" — so the byline and schema on every treatment page currently name a doctor who may not have read it. The sign-off ask covers all 69 pages, and until it lands the treatment bylines are a compliance exposure, not a moat. See `docs/15a` Sheet A.
 4. **18 of 19 treatment pages are the thin template.** Only `pico-laser` carries the suitability / risks / sessions / cost / comparison blocks specced in `docs/14`. The SERP rewards exactly those blocks.
-5. **Technology pages are our best-clicking surface and our weakest template.** They earn 3–5% CTR on brand-name queries (Onda alone: 189 clicks) yet have no lead answer, no anchors, no fact rail and no "which branch has this machine".
+5. **Technology pages are our best-clicking surface and our weakest template.** They earn 3–5% CTR on brand-name queries (Onda alone: 189 clicks) yet have no lead answer, no anchors and no fact rail. **Update 2026-09-20:** 23 of the 36 are also in the never-crawled set, including all 13 injectables, and the cause is cluster sameness rather than thin content — see the 03b T0 update. The lead-answer work in `docs/15` item 2.3 is now both the AEO fix and the crawl fix.
 
 ---
 
@@ -65,14 +65,14 @@ Every row changes what gets built. ✅ present · ⚠️ partial · ❌ absent.
 
 | Element | Cleo | Dr Chong | Clique | **Us** | Why the row exists |
 |---|---|---|---|---|---|
-| Visible RM price or price-range on the treatment page | ✅ market range + factors table | ⚠️ "cost" H2, no figure (schema hides RM1,400) | ⚠️ Sylfirm only | **❌** (rule R-03: no "from RM"; no price field on any type) | The single most-rewarded element on every SERP tested. See D4. |
+| Visible RM price or price-range on the treatment page | ✅ market range + factors table | ⚠️ "cost" H2, no figure (schema hides RM1,400) | ⚠️ Sylfirm only | **❌ — and now a settled client decision (2026-09-20): no price, no range, ever** | The single most-rewarded element on every SERP tested. D4 is closed at option (c): factors only. This is a deliberate, permanent concession; D8's specificity is the compensation. |
 | "How much does X cost" section (captures the query even without a figure) | ✅ | ✅ | ⚠️ FAQ | ⚠️ `costFactors` 1/19 treatments, 10/14 concerns | Cheap to add; Dr Chong ranks with it empty |
 | Named reviewer + MMC + linked doctor page | ⚠️ named, LCP, no MMC, no link | ❌ admin author | ❌ | ⚠️ treatments (placeholder assignment, shown as if signed) · **❌ concerns (ledger empty)** · ⚠️ technology (placeholder dates) | **The ownable gap.** Nobody else does it; we do it on 19 of 69 pages |
 | `MedicalProcedure` / `MedicalCondition` / `Physician` schema | ❌ | ❌ (`Product+Offer+FAQPage`) | ❌ (Sylfirm only) | ✅ | Ownable and already shipped; keep it clean |
 | Who is **not** suitable / contraindications | ⚠️ HIFU only | ❌ | ❌ | ⚠️ 1/19 treatments (`avoidIf`) · 10/14 concerns (`seeDoctor`/`risks`) | Ownable; also the most compliance-safe way to sound expert |
 | Sessions · interval · session duration as facts | ⚠️ | ✅ precise | ⚠️ Sylfirm only | ⚠️ fact rail 19/19 but `typicalSessions` authored 1/19 | Extractable facts AI answers quote; ours are derived, not authored |
 | Device named by brand | ✅ | ❌ | ✅ | ✅ (36 technology pages; `device` on 7/19 treatments) | Parity; link the two directions harder |
-| **Which branch has which device** | ❌ | ❌ | ❌ | ❌ | **Second ownable gap.** 9 branches × 36 machines; nobody answers "is Onda at Cheras?" |
+| **Which branch has which device** | ❌ | ❌ | ❌ | **❌ — and unownable after all** | Was the second ownable gap. **Retired 2026-09-20:** the client confirms the machines rotate between branches, so there is no stable fact to publish and we would be wrong within a month. Nobody answers "is Onda at Cheras?" because, at least here, nobody can. |
 | In-page comparison vs the obvious alternative | ✅ | ⚠️ one FAQ line | ✅ Sylfirm (5 short) | ⚠️ `comparisons` 1/19 treatments · `compare` 7/14 concerns | 03b: comparison is the one format still earning clicks |
 | Concern → treatment mapping (which treatment for which scar type) | ❌ | ✅ (blog) | ❌ | ⚠️ `treatmentWhy` 10/14 concerns; `routes` 1/19 treatments | Cleo is #1 for acne scars *without* it; we can beat the page |
 | Visible FAQ depth | 5 | 5 | 11–30 | ~4 treatments · ~9 concerns · ~4 technology | Clique's long-tail sweep works; ours is shallowest on the surface with most pages |
