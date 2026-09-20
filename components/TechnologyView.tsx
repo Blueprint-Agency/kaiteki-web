@@ -10,12 +10,16 @@ import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { LeadAnswer } from "@/components/LeadAnswer";
 import { ArticleToc } from "@/components/blog/ArticleToc";
 import { AuthorCard } from "@/components/blog/AuthorCard";
-import { ConcernCard, TreatmentCard } from "@/components/cards";
+import { ConcernCard, TreatmentCard, TechnologyCard } from "@/components/cards";
 import { CardRow } from "@/components/CardRow";
 import { Section, FactRail, CostFactors } from "@/components/treatment-blocks";
-import { treatmentsOfTechnology, concernsOfTechnology } from "@/content/data/relations";
+import {
+  treatmentsOfTechnology,
+  concernsOfTechnology,
+  relatedTechnology,
+} from "@/content/data/relations";
 import { doctorBySlug, reviewerByline } from "@/content/data/doctors";
-import { technologyToc } from "@/lib/technology-toc";
+import { technologyToc, alternativesHeading } from "@/lib/technology-toc";
 import { headingAnchor } from "@/lib/treatment-toc";
 import { TOC_MIN_HEADINGS } from "@/lib/toc";
 import { waForTreatment } from "@/lib/wa";
@@ -89,6 +93,7 @@ function Reading({ rail, children }: { rail?: ReactNode; children: ReactNode }) 
 export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) {
   const treatments = treatmentsOfTechnology(x.slug);
   const relatedConcerns = concernsOfTechnology(x.slug);
+  const siblings = relatedTechnology(x.slug);
   const doctor = x.reviewedBy ? doctorBySlug(x.reviewedBy) : undefined;
   const logo = x.device ? deviceLogo[x.device] : undefined;
   const reviewedDate = x.lastReviewed ? dmy(x.lastReviewed) : undefined;
@@ -104,7 +109,12 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
 
   // The rail reads the same derived list the page renders from, so an entry
   // can never point at a section that is not on the page.
-  const headings = technologyToc(x, relatedConcerns.length > 0, treatments.length > 0);
+  const headings = technologyToc(
+    x,
+    relatedConcerns.length > 0,
+    treatments.length > 0,
+    siblings.length > 0,
+  );
   const rail =
     headings.length >= TOC_MIN_HEADINGS ? (
       <ArticleToc headings={headings} variant="sidebar" />
@@ -247,6 +257,27 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
         {/* Factors only. No figure, no range, no Offer schema — settled
             2026-09-20 and linted in CI. */}
         <CostFactors c={x.costFactors} href={wa} />
+
+        {/* docs/17 finding 1. Until now no technology page linked to another,
+            so equity arrived in the cluster and never circulated. The heading
+            names the group rather than repeating one phrase 36 times, and the
+            cards are ranked by shared treatments, so what a reader is offered
+            is the genuine alternative rather than whatever sits next in the
+            data file. */}
+        {siblings.length > 0 && (
+          <Section id="alternatives">
+            <h2 className="h-section">{alternativesHeading(x)}</h2>
+            <p className="mt-5 max-w-[62ch] leading-relaxed text-ink-700">
+              These address overlapping concerns. Which one suits you is a decision for a doctor who
+              has examined your skin, not a choice to make from a page.
+            </p>
+            <CardRow className="mt-10">
+              {siblings.map((s) => (
+                <TechnologyCard key={s.slug} x={s} showUsedIn={false} />
+              ))}
+            </CardRow>
+          </Section>
+        )}
 
         {logo && (
           <Section>
