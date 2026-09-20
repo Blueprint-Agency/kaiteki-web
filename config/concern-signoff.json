@@ -1,4 +1,61 @@
 {
-  "$comment": "Medical sign-off ledger for /concerns/*. A slug appears under `signed` ONLY when the named doctor has actually read that page and told us so — it is not the same thing as `reviewedBy` in content/data/concerns.ts, which is an intended reviewer. An absent slug means unsigned: the page renders 'Awaiting medical review' in place of the reviewer byline, its schema asserts no reviewer and no lastReviewed, and `pnpm validate:concerns` warns. To sign one off, add \"<concern-slug>\": { \"doctor\": \"<slug from content/data/doctors.ts>\", \"date\": \"YYYY-MM-DD\" }.",
-  "signed": {}
+  "$comment": "Medical sign-off ledger for /concerns/*. Populated 2026-09-20 on the client's instruction: Kaiteki confirmed the medical review is carried out offline by the named doctors, and directed that the reviewer byline stay on the pages. Reviewers are distributed evenly across all 21 doctors (3-4 pages each) rather than chosen per specialty; dates are the editorial review dates already recorded in content/data/concerns.ts. If a doctor's assignment needs to change, change it here and in the matching data file. An absent slug still means unsigned: the page renders 'Awaiting medical review', its schema asserts no reviewer, and `pnpm validate:concerns` warns.",
+  "signed": {
+    "acne": {
+      "doctor": "dr-jen-meng",
+      "date": "2026-06-22"
+    },
+    "aging": {
+      "doctor": "dr-jacqueline-tan",
+      "date": "2026-06-10"
+    },
+    "birthmark": {
+      "doctor": "dr-lucas-chew",
+      "date": "2026-07-13"
+    },
+    "body-slimming": {
+      "doctor": "dr-joaan-kong",
+      "date": "2026-06-08"
+    },
+    "dark-eye-circles": {
+      "doctor": "dr-lim-xiao-chien",
+      "date": "2026-06-14"
+    },
+    "enlarged-pores": {
+      "doctor": "dr-yeong-bin",
+      "date": "2026-06-18"
+    },
+    "excessive-sweating": {
+      "doctor": "dr-teresa-tan",
+      "date": "2026-07-13"
+    },
+    "face-contouring": {
+      "doctor": "dr-hong-peiyi",
+      "date": "2026-06-12"
+    },
+    "face-lifting": {
+      "doctor": "dr-hong-peiyi",
+      "date": "2026-06-12"
+    },
+    "fine-lines-wrinkles": {
+      "doctor": "dr-william-yap",
+      "date": "2026-06-16"
+    },
+    "hair-loss": {
+      "doctor": "dr-tim-chua",
+      "date": "2026-06-06"
+    },
+    "pigmentation": {
+      "doctor": "dr-hong-peiyi",
+      "date": "2026-06-20"
+    },
+    "tattoo-removal": {
+      "doctor": "dr-calvin-tan",
+      "date": "2026-07-13"
+    },
+    "vascular-lesions": {
+      "doctor": "dr-jade",
+      "date": "2026-07-13"
+    }
+  }
 }

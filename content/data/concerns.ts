@@ -32,7 +32,7 @@ export const concerns: Concern[] = [
       "resurfacing-laser",
       "facial-treatments",
     ],
-    reviewedBy: "dr-jessie-lim",
+    reviewedBy: "dr-jen-meng",
     lastReviewed: "2026-06-22",
     seoTitle: "Acne & Acne Scar Treatment in Malaysia | Kaiteki",
     seoDescription:
@@ -619,7 +619,7 @@ export const concerns: Concern[] = [
       "resurfacing-laser",
       "facial-treatments",
     ],
-    reviewedBy: "dr-chew-yuhhui",
+    reviewedBy: "dr-hong-peiyi",
     lastReviewed: "2026-06-20",
     seoTitle: "Pigmentation Treatment Options in Malaysia | Kaiteki",
     seoDescription:
@@ -2058,7 +2058,7 @@ export const concerns: Concern[] = [
     leadAnswer:
       "Face-contouring concerns relate to the shape and definition of areas such as the jawline and chin. Several treatments may be considered depending on the concern and your anatomy. A consultation helps determine which approach, if any, may be appropriate.",
     treatments: ["hifu", "fat-freezing", "radiofrequency", "botulinum-toxin", "dermal-fillers"],
-    reviewedBy: "dr-jeremy-low",
+    reviewedBy: "dr-hong-peiyi",
     lastReviewed: "2026-06-12",
     seoTitle: "Face Contouring Treatment & Assessment in Malaysia | Kaiteki",
     seoDescription:
@@ -2505,7 +2505,7 @@ export const concerns: Concern[] = [
       "bio-stimulator",
       "dermal-fillers",
     ],
-    reviewedBy: "dr-chang-chee-seong",
+    reviewedBy: "dr-hong-peiyi",
     lastReviewed: "2026-06-12",
     seoTitle: "Non-Surgical Face Lifting Treatment in Malaysia | Kaiteki",
     seoDescription:
