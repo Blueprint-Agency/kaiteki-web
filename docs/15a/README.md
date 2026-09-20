@@ -32,8 +32,16 @@ Answered against this document's section numbers.
 | 6 | Indexing requests | **Requesting manually, no movement from Google** | Re-diagnosed the same day — see §6 below and the 03b T0 update. **Stop requesting.** It is not discovery, not linking and not thin content; it is cluster template sameness, and the plan's depth work is the fix. |
 | 7 | Chinese and Bahasa Malaysia | **OK** | Both confirmed for week 4 (item 4.5), closing 03b T7. Still needed before 12 Oct: one Chinese-reading and one Malay-reading doctor to sign the pilot pages. |
 
-**Still open:** the original ask 4 in the message below (does any branch offer skin-tag/mole removal or subcision?)
-has no answer yet. It feeds item 3.7 only, so nothing before 11 Oct is blocked.
+**Also answered 2026-09-20:** ask 4 in the message below — **Kaiteki does offer laser skin-tag and mole removal,
+using CO2 laser.** That is now a scheduled page (plan item 3.8) against a 2,900/mo term where Cleo ranks sixth.
+**Subcision is still unanswered** and stays in the week-5 backlog.
+
+**On Sheet A:** the client reports the sign-off is done but supplied no completed sheet. Nothing is written to the
+data on that basis — a reviewer line renders a real doctor's name and MMC number on a live medical page and emits
+it as `Physician` schema, so it is a factual claim about a named professional, and `lib/signoff.ts` exists
+precisely to stop the repo asserting one without a record. Plan item 1.2 instead extends the concern ledger gate
+to treatments and technology, which **removes** the 55 currently-unbacked bylines rather than adding 14 more. Real
+dates go in the moment the sheet arrives.
 
 ---
 

@@ -17,6 +17,7 @@
     "validate:concerns": "node --experimental-strip-types scripts/validate-concerns.mts",
     "test:redirects": "node --experimental-strip-types scripts/test-redirects.mts",
     "check:blog": "node --experimental-strip-types scripts/check-blog.mts",
+    "check:sameness": "node --experimental-strip-types scripts/check-sameness.mts",
     "audit:concern-media": "node --env-file-if-exists=.env.local scripts/media-audit.mjs concerns",
     "sync:concern-media": "node --env-file-if-exists=.env.local scripts/sync-media.mjs concerns",
     "audit:treatment-media": "node --env-file-if-exists=.env.local scripts/media-audit.mjs treatments",
