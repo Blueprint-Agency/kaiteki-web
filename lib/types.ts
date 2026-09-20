@@ -177,6 +177,27 @@ export interface Technology {
   /** Optional rich body — carried over for the 3 converted pages. */
   sections?: Section[];
   faqs?: Faq[];
+  /**
+   * 40-60 word answer-first capsule, as treatment and concern pages carry
+   * (docs/02 §9.3). Optional while the 36 pages are authored one batch at a
+   * time; `docs/15` item 2.3 fills every one. Write it for *this* device: a
+   * capsule that would read the same with another brand name in it is the
+   * sameness problem in miniature (docs/16 R4).
+   */
+  leadAnswer?: string;
+  /**
+   * Up to three extractable facts for the rail — depth reached, energy type,
+   * session length, how long it lasts. Deliberately different per page: this
+   * is one of the two places a technology page can carry something only it can
+   * say (docs/16 R4).
+   */
+  facts?: { value: string; label: string }[];
+  /**
+   * "What affects the cost" — factors only. **Never a figure, a range or a
+   * currency string**: the client settled this on 2026-09-20 and
+   * `docs/15` item 2.4 adds the lint that enforces it.
+   */
+  costFactors?: { intro: string; factors: string[]; outro?: string };
   /** Optional device-brand logo (existing /images/tech logos). */
   device?: string;
   reviewedBy?: string;
