@@ -26,6 +26,8 @@ export async function generateMetadata({
     description: t.seoDescription ?? t.summary,
     path: `/treatments/${t.slug}`,
     image: t.image,
+    // Carries an author, a review date and a named reviewer (docs/17 finding 6).
+    ogType: "article",
   });
 }
 
