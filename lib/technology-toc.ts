@@ -18,10 +18,37 @@ import { headingAnchor } from "@/lib/treatment-toc";
  * pages earn the best click-through rates we have (3-5% on brand-name queries)
  * and they are the cluster Google has refused to crawl (`docs/03b` T0).
  */
+/**
+ * Heading for the sibling-devices shelf, written per group rather than
+ * assembled from the group name — "Other body & slimming we work with" is what
+ * the generic version produced. Six distinct headings across 36 pages also
+ * keeps this section out of the generic bucket `pnpm check:sameness` counts.
+ * One source, read by both the rail and the page.
+ */
+export function alternativesHeading(x: Technology): string {
+  switch (x.group) {
+    case "Injectables":
+      return "Other injectables we use";
+    case "Lasers":
+      return "Other lasers we work with";
+    case "Lifting & Tightening":
+      return "Other lifting and tightening devices";
+    case "Body & Slimming":
+      return "Other body and slimming devices";
+    case "Facials":
+      return "Other facial devices we use";
+    case "Hair Removal":
+      return "Other hair-removal devices";
+    default:
+      return "Other devices we work with";
+  }
+}
+
 export function technologyToc(
   x: Technology,
   hasConcerns: boolean,
   hasTreatments: boolean,
+  hasSiblings = false,
 ): Heading[] {
   const h = (id: string, text: string): Heading => ({ id, text, level: 2 });
 
@@ -35,6 +62,7 @@ export function technologyToc(
     hasConcerns && h("may-help-with", `Concerns this ${typeWord} addresses`),
     hasTreatments && h("used-in", `Treatments that use ${x.name}`),
     !!x.costFactors && h("sessions-cost", "What affects the number of sessions, and the cost"),
+    hasSiblings && h("alternatives", alternativesHeading(x)),
     !!x.faqs?.length && h("faq", "Common questions"),
   ];
 

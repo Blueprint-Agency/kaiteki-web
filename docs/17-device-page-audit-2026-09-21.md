@@ -93,7 +93,23 @@ a flat result in October is not evidence against the `docs/03b` T0 diagnosis.
 **What compounds is the sequence.** The template had to exist before the fields could carry content, and the
 content is what earns the crawl. Batch 1 — the 13 injectables — is the test.
 
-## 6. Recommended now
+## 6. Resolved same day (2026-09-21)
+
+All six were fixed on the branch after this audit; re-verified against the rendered pages.
+
+| # | Fix | Verified |
+|---|---|---|
+| 1 | **Sibling device links.** New `relatedTechnology()` ranks other devices by *shared treatments* first, then type and group, so what a reader is offered is the genuine alternative rather than the next row in the data file. Juvéderm now points to Art Filler, Belotero, Restylane and Botox; Rejuran to Hydrodeluxe, Juvelook, Plinest and Profhilo. The shelf heading is written per group, six distinct headings across 36 pages, so it does not add to the generic-heading count. | 36/36 pages link out; Hair Removal and Facials render 1 sibling each, correctly. |
+| 2 | **Both answer-engine slots filled.** A 41-to-56 word capsule and a three-fact rail authored for all 36, each derived from that page's own already-reviewed body text. Facts are material or wavelength, manufacturer and origin, and the Kaiteki treatment it sits within — verifiable, and different on every page. | Capsule 36/36, fact rail 36/36. |
+| 3 | Heading differentiation — **not fixed, and deliberately so.** Still item 2.3's job; sameness holds at 35/36. The capsules and facts are the first differentiation to land. | `check:sameness` unchanged. |
+| 4 | **FAQ anchor ids.** Each `<details>` now carries a readable slug id with `scroll-mt`, so a single answer is linkable and citable. | e.g. `#faq-is-rejuran-safe-if-i-have-a-fish`. |
+| 5 | **Metadata.** ⚠️ **Finding 5 was overstated.** The original measurement counted HTML-escaped `&amp;`, inflating any title or description containing an ampersand by four characters. Re-measured with entities decoded: **no title exceeds 60**, and only three descriptions were over, each by one or two characters. All three trimmed. | 0 outliers across 36. |
+| 6 | **`og:type`.** `pageMeta()` takes an `ogType` option; technology, treatment, concern and blog pages now declare `article`. | `article` on all four types. |
+
+**Correction worth carrying forward:** measure metadata on decoded text, not raw HTML. The escaping artefact turned
+one real issue into seven.
+
+## 7. Recommended at the time
 
 Inside the current branch, under an hour together:
 
