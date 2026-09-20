@@ -33,6 +33,39 @@ export function treatmentsOfTechnology(techSlug: string): Treatment[] {
     .filter((t): t is Treatment => Boolean(t));
 }
 
+/**
+ * Other devices or injectables a reader of this one would plausibly weigh
+ * against it — added 2026-09-21 (`docs/17` finding 1, the zero-sibling-links
+ * hole: not one of the 36 technology pages linked to another).
+ *
+ * Ranked by a real edge rather than by group order: items sharing the most
+ * treatments with this one come first, because sharing a treatment is what
+ * makes two devices genuine alternatives (Juvéderm and Restylane both sit
+ * under dermal fillers; Rejuran and Plinest both under skin boosters). Same
+ * group is the fallback so a device with no shared treatment still has
+ * somewhere to send a reader, and `type` is matched first within that so an
+ * injectable never leads with a machine.
+ */
+export function relatedTechnology(techSlug: string, limit = 4): Technology[] {
+  const self = technology.find((x) => x.slug === techSlug);
+  if (!self) return [];
+  const shares = (x: Technology) => x.treatments.filter((t) => self.treatments.includes(t)).length;
+
+  const ranked = technology
+    .filter((x) => x.slug !== self.slug)
+    .map((x) => ({ x, shared: shares(x), sameGroup: x.group === self.group, sameType: x.type === self.type }))
+    .filter((r) => r.shared > 0 || r.sameGroup)
+    .sort(
+      (a, b) =>
+        b.shared - a.shared ||
+        Number(b.sameType) - Number(a.sameType) ||
+        Number(b.sameGroup) - Number(a.sameGroup) ||
+        a.x.name.localeCompare(b.x.name),
+    );
+
+  return ranked.slice(0, limit).map((r) => r.x);
+}
+
 /** Concerns a given treatment may address (reverse of concern.treatments). */
 export function concernsOfTreatment(treatmentSlug: string): Concern[] {
   return concerns.filter((c) => c.treatments.includes(treatmentSlug));

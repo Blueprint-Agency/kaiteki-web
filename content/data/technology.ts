@@ -22,6 +22,13 @@ export const technology: Technology[] = [
     device: "PicoSure",
     summary:
       "A 755nm picosecond aesthetic laser used within Pico laser treatment for pigmentation, uneven tone and tattoo ink.",
+    leadAnswer:
+      "PicoSure is a 755nm picosecond aesthetic laser made by Cynosure, used at Kaiteki as one of the devices within our Pico laser treatment. Its pulses are short enough to act on pigment largely through a photomechanical shockwave rather than by heating surrounding tissue. Whether it suits your pigment, and at what settings, is decided at consultation.",
+    facts: [
+      { value: "755nm", label: "Wavelength" },
+      { value: "Cynosure, United States", label: "Manufacturer" },
+      { value: "Pico laser", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is PicoSure?",
@@ -120,6 +127,13 @@ export const technology: Technology[] = [
     device: "Fotona",
     summary:
       "A 1064nm/532nm picosecond and Q-switched laser platform, also known as StarWalker PQX, used within Pico laser treatment for pigment and tattoo concerns.",
+    leadAnswer:
+      "StarWalker PQX is a picosecond and Q-switched laser platform from Fotona, used at Kaiteki within our Pico laser treatment. It generates Nd:YAG energy at 1064nm and, through a KTP crystal, at 532nm, so the doctor selects the wavelength to match the pigment or tattoo ink being treated.",
+    facts: [
+      { value: "1064nm and 532nm", label: "Wavelengths" },
+      { value: "Fotona, Slovenia", label: "Manufacturer" },
+      { value: "Pico laser", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is Fotona StarWalker PQX?",
@@ -218,6 +232,13 @@ export const technology: Technology[] = [
     device: "Fotona",
     summary:
       "A dual-wavelength Er:YAG (2940nm) and Nd:YAG (1064nm) laser platform used to deliver Kaiteki's Fotona 4D facial protocol.",
+    leadAnswer:
+      "SP Dynamis is the Fotona laser platform behind Kaiteki's Fotona 4D facial protocol. It houses two complementary sources in one system, an Er:YAG laser at 2940nm that works at the surface and an Nd:YAG at 1064nm that reaches deeper, and a plan may use some or all of the four modes.",
+    facts: [
+      { value: "2940nm Er:YAG + 1064nm Nd:YAG", label: "Wavelengths" },
+      { value: "Fotona, Slovenia", label: "Manufacturer" },
+      { value: "Fotona 4D", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is Fotona SP Dynamis?",
@@ -315,6 +336,13 @@ export const technology: Technology[] = [
     image: "/images/technology/dermav.jpg",
     summary:
       "A dual-wavelength (595nm/1064nm) vascular and pigment laser used for facial redness, visible vessels and pigment concerns.",
+    leadAnswer:
+      "DermaV is a dual-wavelength laser that can be directed at both red and brown concerns in one treatment plan. It combines 595nm for vascular targets such as facial redness and visible vessels with 1064nm, and at Kaiteki it is used within our vascular and pigment laser treatment.",
+    facts: [
+      { value: "595nm and 1064nm", label: "Wavelengths" },
+      { value: "Vascular and pigment", label: "Targets" },
+      { value: "Vascular / pigment laser", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is DermaV?",
@@ -410,6 +438,13 @@ export const technology: Technology[] = [
     image: "/images/technology/pro-yellow.jpg",
     summary:
       "A 577nm yellow-light laser used for vascular concerns such as facial redness and visible vessels, and for some superficial pigment.",
+    leadAnswer:
+      "Pro Yellow is the name Malaysian clinics commonly use for the QuadroStarPRO YELLOW, a single-wavelength 577nm yellow-light laser from Asclepion in Germany. Yellow light is absorbed strongly by haemoglobin, which is why the manufacturer positions it for superficial vessels and some pigment.",
+    facts: [
+      { value: "577nm", label: "Wavelength" },
+      { value: "Asclepion, Germany", label: "Manufacturer" },
+      { value: "Vascular / pigment laser", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is Pro Yellow?",
@@ -507,6 +542,13 @@ export const technology: Technology[] = [
       image: "/images/technology/m22-ipl.jpg",
       summary:
         "An intense pulsed light (IPL) platform that can be filtered for vascular or pigment targets and used for hair reduction.",
+      leadAnswer:
+        "M22 IPL is the intense pulsed light module of Lumenis's M22 platform. The distinction that matters when comparing devices is that IPL is not a laser: it emits a broadband pulse of non-coherent light, which the doctor narrows with a filter chosen for a vascular, pigment or hair-reduction target.",
+      facts: [
+        { value: "Broadband, filtered", label: "Light source" },
+        { value: "Lumenis", label: "Manufacturer" },
+        { value: "Not a laser", label: "Category" },
+      ],
       sections: [
         {
           heading: "What is M22 IPL?",
@@ -602,6 +644,13 @@ export const technology: Technology[] = [
       image: "/images/technology/fractional-co2.jpg",
       summary:
         "A fractional ablative CO2 resurfacing laser that creates controlled columns of micro-injury, used within resurfacing-laser treatment for texture and scarring.",
+      leadAnswer:
+        "Fractional CO2 is a category of resurfacing laser rather than a single brand. A carbon dioxide laser emits infrared light at 10,600nm, a wavelength absorbed by water, which makes it ablative: it vaporises a thin amount of tissue in controlled columns rather than heating through an intact surface.",
+      facts: [
+        { value: "10,600nm", label: "Wavelength" },
+        { value: "Ablative", label: "Laser class" },
+        { value: "Resurfacing laser", label: "Used within" },
+      ],
       sections: [
         {
           heading: "What is fractional CO2 laser resurfacing?",
@@ -699,6 +748,13 @@ export const technology: Technology[] = [
       image: "/images/technology/ultracel-q.jpg",
       summary:
         "A multi-cartridge HIFU platform from Jeisys Medical, used within Kaiteki's HIFU treatment for non-surgical lifting and tightening concerns.",
+      leadAnswer:
+        "Ultracel Q is a high-intensity focused ultrasound platform from Jeisys Medical, used at Kaiteki within our HIFU treatment. Rather than working at the surface, it passes focused ultrasound through the skin so that heating happens in a chosen deeper layer, with the cartridge selected for that depth.",
+      facts: [
+        { value: "Focused ultrasound", label: "Energy" },
+        { value: "Jeisys Medical, Korea", label: "Manufacturer" },
+        { value: "HIFU", label: "Used within" },
+      ],
       sections: [
         {
           heading: "What is Ultracel Q?",
@@ -784,7 +840,7 @@ export const technology: Technology[] = [
       lastReviewed: "2026-07-18",
       seoTitle: "Ultracel Q HIFU Skin-Lifting Treatment Malaysia | Kaiteki",
       seoDescription:
-        "Ultracel Q is a multi-cartridge HIFU device used at Kaiteki for non-surgical lifting and tightening concerns. Book a free consultation to check your suitability.",
+        "Ultracel Q is a multi-cartridge HIFU device used at Kaiteki for non-surgical lifting and tightening concerns. Book a free consultation to check suitability.",
     },
   {
       slug: "lifthera",
@@ -795,6 +851,13 @@ export const technology: Technology[] = [
       image: "/images/technology/lifthera.jpg",
       summary:
         "A line-focused ultrasound lifting device from Korean manufacturer Asterasys, used within Kaiteki's HIFU treatment for lifting and tightening concerns.",
+      leadAnswer:
+        "Lifthera, also written Liftera, is a focused-ultrasound lifting device from Asterasys in Korea, used at Kaiteki within our HIFU treatment. It delivers energy along a line rather than as separate points, and the areas are mapped at consultation rather than treated uniformly.",
+      facts: [
+        { value: "Line-focused ultrasound", label: "Energy" },
+        { value: "Asterasys, Korea", label: "Manufacturer" },
+        { value: "HIFU", label: "Used within" },
+      ],
       sections: [
         {
           heading: "What is Lifthera?",
@@ -892,6 +955,13 @@ export const technology: Technology[] = [
       device: "Ultherapy",
       summary:
         "A micro-focused ultrasound platform from Merz Aesthetics with built-in DeepSEE ultrasound imaging, used for non-surgical lifting of the face and neck.",
+      leadAnswer:
+        "The Ultherapy System is a micro-focused ultrasound platform from Merz Aesthetics. What separates it from other focused-ultrasound devices is DeepSEE imaging, which lets the doctor see the tissue layers on screen while planning where energy is placed, rather than working to a standard grid alone.",
+      facts: [
+        { value: "Micro-focused ultrasound", label: "Energy" },
+        { value: "DeepSEE imaging", label: "Distinguishing feature" },
+        { value: "Ultherapy", label: "Used within" },
+      ],
       sections: [
         {
           heading: "What is the Ultherapy System?",
@@ -988,6 +1058,13 @@ export const technology: Technology[] = [
       image: "/images/technology/xerf.png",
       summary:
         "A multifrequency monopolar radiofrequency platform with integrated cryogen cooling, used within RF treatment for skin-firmness and laxity concerns.",
+      leadAnswer:
+        "XERF is a monopolar radiofrequency platform from Cynosure Lutronic, used at Kaiteki within our radiofrequency treatment. Unlike single-frequency RF it is multifrequency, so the operating frequency can be matched to the tissue being treated, and integrated cryogen cooling protects the surface.",
+      facts: [
+        { value: "Multifrequency monopolar RF", label: "Energy" },
+        { value: "Cryogen cooling", label: "Surface protection" },
+        { value: "Radiofrequency", label: "Used within" },
+      ],
       sections: [
         {
           heading: "What is XERF?",
@@ -1084,6 +1161,13 @@ export const technology: Technology[] = [
     image: "/images/technology/sylfirm-x.jpg",
     summary:
       "A dual-mode (pulsed and continuous wave) radiofrequency microneedling device used for pigment, vascular and texture concerns.",
+    leadAnswer:
+      "Sylfirm X is a radiofrequency microneedling device from Viol in South Korea. Fine needles carry RF energy to a chosen depth rather than heating the surface, and its distinguishing feature is dual mode: a pulsed wave and a continuous wave, selected for the concern being treated.",
+    facts: [
+      { value: "Pulsed and continuous wave", label: "Dual mode" },
+      { value: "Viol, South Korea", label: "Manufacturer" },
+      { value: "RF microneedling", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is Sylfirm X?",
@@ -1181,6 +1265,13 @@ export const technology: Technology[] = [
     image: "/images/technology/morpheus8.jpg",
     summary:
       "A fractional radiofrequency microneedling device that reaches into the subdermal layer, used for skin-firmness and texture concerns.",
+    leadAnswer:
+      "Morpheus8 is a fractional radiofrequency microneedling device from InMode, used at Kaiteki within our microneedling treatment. It works on the same principle as other RF microneedling systems, with the difference that its deeper settings are intended to reach into the subdermal layer.",
+    facts: [
+      { value: "Subdermal reach", label: "Depth" },
+      { value: "InMode, Israel", label: "Manufacturer" },
+      { value: "RF microneedling", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is Morpheus8?",
@@ -1279,6 +1370,13 @@ export const technology: Technology[] = [
     device: "Potenza",
     summary:
       "A radiofrequency microneedling device combining monopolar and bipolar modes at two frequencies, used for scarring, pore and texture concerns.",
+    leadAnswer:
+      "Potenza is a radiofrequency microneedling device from Cynosure Lutronic, and its distinguishing feature is configurability: it offers monopolar and bipolar modes at two frequencies, so scarred areas, pore-dense zones and finer skin can be treated at different settings within one session.",
+    facts: [
+      { value: "Monopolar and bipolar", label: "RF modes" },
+      { value: "Two frequencies", label: "Configurability" },
+      { value: "RF microneedling", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is Potenza?",
@@ -1365,7 +1463,7 @@ export const technology: Technology[] = [
     lastReviewed: "2026-07-18",
     seoTitle: "Potenza RF Microneedling Treatment Malaysia | Kaiteki",
     seoDescription:
-      "Potenza is an RF microneedling device with four RF modes and adjustable depth, used at Kaiteki for scars and pores. Book a free consultation to check suitability.",
+      "Potenza is an RF microneedling device with four modes and adjustable depth, used at Kaiteki for scars and pores. Book a free consultation to check suitability.",
   },
   {
       slug: "btl-exilis",
@@ -1376,6 +1474,13 @@ export const technology: Technology[] = [
       image: "/images/technology/btl-exilis.jpg",
       summary:
         "A monopolar radiofrequency device with embedded cooling that heats tissue volumetrically, used for skin-firmness, texture and body-contour concerns.",
+      leadAnswer:
+        "BTL Exilis is a monopolar radiofrequency platform from BTL, the manufacturer behind Emsculpt. It heats tissue volumetrically rather than at a point: the applicator moves continuously over intact skin while embedded cooling protects the surface, warming the dermis and, at deeper settings, the layer beneath.",
+      facts: [
+        { value: "Monopolar RF", label: "Energy" },
+        { value: "Volumetric heating", label: "Method" },
+        { value: "Radiofrequency", label: "Used within" },
+      ],
       sections: [
         {
           heading: "What is BTL Exilis?",
@@ -1473,6 +1578,13 @@ export const technology: Technology[] = [
       image: "/images/technology/wonderface.jpg",
       summary:
         "A facial platform combining bipolar radiofrequency with neuromuscular stimulation, used for skin-firmness and facial contour concerns.",
+      leadAnswer:
+        "Wonderface is a face-specific platform from the Spanish brand Wonder, and unlike a pure skin-tightening machine it combines two technologies: a bipolar radiofrequency mode that warms the skin, and a neuromuscular stimulation mode that produces controlled contractions in the facial muscles.",
+      facts: [
+        { value: "Bipolar RF + neuromuscular", label: "Two technologies" },
+        { value: "Wonder, Spain", label: "Manufacturer" },
+        { value: "Radiofrequency", label: "Used within" },
+      ],
       sections: [
         {
           heading: "What is Wonderface?",
@@ -1573,6 +1685,13 @@ export const technology: Technology[] = [
     device: "CoolSculpting",
     summary:
       "A cryolipolysis (fat-freezing) device that uses controlled cooling to target pockets of localised fat.",
+    leadAnswer:
+      "CoolSculpting is a brand of cryolipolysis device that uses controlled cooling, applied through applicators placed on the skin, to target pockets of localised fat that persist despite diet and exercise. It is not a weight-loss treatment, and whether it suits your concern is assessed by a doctor.",
+    facts: [
+      { value: "Controlled cooling", label: "Method" },
+      { value: "35 to 60 minutes", label: "Typical applicator cycle" },
+      { value: "Fat freezing", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is CoolSculpting?",
@@ -1670,6 +1789,13 @@ export const technology: Technology[] = [
     image: "/images/technology/cooltech.jpg",
     summary:
       "A cryolipolysis device with 360° cooling applicators and multi-applicator capability, used to target pockets of localised fat.",
+    leadAnswer:
+      "Cooltech is a cryolipolysis body-contouring platform from Cocoon Medical in Barcelona, used at Kaiteki within our fat freezing treatment. Its applicators cool the tissue from 360 degrees rather than one face, and more than one applicator can run in a session depending on the areas planned.",
+    facts: [
+      { value: "360 degree cooling", label: "Applicator design" },
+      { value: "Cocoon Medical, Spain", label: "Manufacturer" },
+      { value: "Fat freezing", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is Cooltech?",
@@ -1768,6 +1894,13 @@ export const technology: Technology[] = [
     device: "Onda",
     summary:
       "A microwave-based (Coolwaves) device used for localised fat, cellulite appearance and skin firmness.",
+    leadAnswer:
+      "Onda uses a microwave-based technology the manufacturer calls Coolwaves, which distinguishes it from the cooling and radiofrequency devices it is usually compared against. At Kaiteki it is offered in two forms, Onda for Body and Onda for Face, using the same platform with different handpieces.",
+    facts: [
+      { value: "Microwave (Coolwaves)", label: "Energy" },
+      { value: "Body and Face", label: "Two forms" },
+      { value: "Microwave contouring", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is Onda?",
@@ -1863,6 +1996,13 @@ export const technology: Technology[] = [
     image: "/images/technology/schwarzy.jpg",
     summary:
       "An electromagnetic muscle-stimulation device that induces involuntary contractions, used for muscle tone rather than fat reduction.",
+    leadAnswer:
+      "Schwarzy is a muscle-stimulation platform from the Italian manufacturer DEKA, offered at Kaiteki under the Em-Fit name. It induces involuntary contractions through flat magnetic stimulation, so it addresses muscle tone rather than fat, and implant and medical history are the main gate on suitability.",
+    facts: [
+      { value: "Flat magnetic stimulation", label: "Energy" },
+      { value: "Muscle tone, not fat", label: "What it addresses" },
+      { value: "Muscle stimulation", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is Schwarzy?",
@@ -1963,6 +2103,13 @@ export const technology: Technology[] = [
     device: "Profhilo",
     summary:
       "A hyaluronic acid injectable made with IBSA's NAHYCO hybrid technology, used within skin-booster treatment for hydration and skin remodelling rather than contour.",
+    leadAnswer:
+      "Profhilo is an injectable hyaluronic acid from the Italian pharmaceutical group IBSA, made with its NAHYCO hybrid technology. It sits in the skin-booster category rather than the dermal-filler category: it is not designed to add contour or reshape a feature, but to distribute HA through the tissue.",
+    facts: [
+      { value: "Hyaluronic acid (NAHYCO)", label: "Material" },
+      { value: "IBSA, Italy", label: "Manufacturer" },
+      { value: "Not a contour filler", label: "Category" },
+    ],
     sections: [
       {
         heading: "What is Profhilo?",
@@ -2060,6 +2207,13 @@ export const technology: Technology[] = [
     image: "/images/technology/rejuran.jpg",
     summary:
       "A polynucleotide (salmon-derived PN) injectable range from Pharma Research, used within skin-booster treatment to support skin quality and the skin barrier.",
+    leadAnswer:
+      "Rejuran is a range of polynucleotide injectables from Pharma Research in South Korea. Polynucleotides are chains of purified DNA fragments, salmon-derived in Rejuran's case, which places it in a different skin-booster category from hyaluronic acid boosters: those are chosen mainly to hold water in the skin.",
+    facts: [
+      { value: "Polynucleotide, salmon", label: "Material" },
+      { value: "Pharma Research, Korea", label: "Manufacturer" },
+      { value: "Skin booster", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is Rejuran?",
@@ -2158,6 +2312,13 @@ export const technology: Technology[] = [
     image: "/images/technology/plinest.jpg",
     summary:
       "An Italian polynucleotide injectable range from Mastelli, made with PN-HPT technology and used within skin-booster treatment for skin quality and elasticity.",
+    leadAnswer:
+      "Plinest and Newest are polynucleotide injectables from the Italian company Mastelli, made with its PN-HPT technology. The point of difference worth knowing is the source: Mastelli's polynucleotides are derived from trout, whereas the better-known Korean polynucleotide products are salmon-derived. Which formulation suits your concern, if any, is a decision made at consultation.",
+    facts: [
+      { value: "Polynucleotide, trout", label: "Material" },
+      { value: "Mastelli, Italy", label: "Manufacturer" },
+      { value: "Skin booster", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is Plinest/Newest?",
@@ -2256,6 +2417,13 @@ export const technology: Technology[] = [
     image: "/images/technology/juvelook.png",
     summary:
       "A Korean collagen-stimulating injectable combining PDLLA microspheres with non-crosslinked hyaluronic acid, used within skin-booster treatment for pore, texture and fine-line concerns.",
+    leadAnswer:
+      "Juvelook is an injectable from the South Korean manufacturer VAIM that belongs to a third skin-booster category. Hyaluronic acid boosters are chosen mainly for water-binding and polynucleotide products work through purified DNA fragments; Juvelook combines PDLLA microspheres with non-crosslinked hyaluronic acid.",
+    facts: [
+      { value: "PDLLA + non-crosslinked HA", label: "Material" },
+      { value: "VAIM, South Korea", label: "Manufacturer" },
+      { value: "Skin booster", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is Juvelook?",
@@ -2354,6 +2522,13 @@ export const technology: Technology[] = [
     image: "/images/technology/hydrodeluxe.jpg",
     summary:
       "A non-crosslinked hyaluronic acid hydrogel enriched with calcium hydroxyapatite and amino acids, used within skin-booster treatment for hydration and skin quality.",
+    leadAnswer:
+      "Hydrodeluxe is the injectable skin booster marketed under the Neauvia brand and manufactured by Matex Lab in Italy. It sits in the hyaluronic acid family, the category chosen primarily for hydration and skin quality, and is enriched with calcium hydroxyapatite and amino acids.",
+    facts: [
+      { value: "Non-crosslinked HA", label: "Material" },
+      { value: "Matex Lab, Italy", label: "Manufacturer" },
+      { value: "Skin booster", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is Hydrodeluxe?",
@@ -2440,7 +2615,7 @@ export const technology: Technology[] = [
     lastReviewed: "2026-07-18",
     seoTitle: "Hydrodeluxe Hydrating Skin Booster Malaysia | Kaiteki",
     seoDescription:
-      "Hydrodeluxe is a non-crosslinked hyaluronic acid injectable used within Kaiteki's skin-booster treatment for hydration and skin quality. Book a free consultation.",
+      "Hydrodeluxe is a non-crosslinked hyaluronic acid injectable used in Kaiteki's skin-booster treatment for hydration and skin quality. Book a free consultation.",
   },
   {
     // Botox is a prescription medicine, not a device or cosmetic. Copy stays
@@ -2456,6 +2631,13 @@ export const technology: Technology[] = [
     device: "Botox",
     summary:
       "A registered botulinum toxin type A injectable (onabotulinumtoxinA) from Allergan, used within botulinum toxin treatment and dosed in units by a doctor.",
+    leadAnswer:
+      "Botox is a brand of botulinum toxin type A developed by Allergan, and its active substance is onabotulinumtoxinA. It is one of several registered botulinum toxin products, and the name is often used loosely to mean any botulinum toxin treatment, which it is not. Dosing is measured in units by a doctor.",
+    facts: [
+      { value: "OnabotulinumtoxinA", label: "Active substance" },
+      { value: "Allergan / AbbVie", label: "Manufacturer" },
+      { value: "Dosed in units", label: "How it is measured" },
+    ],
     reviewedBy: "dr-chang-chee-seong",
     lastReviewed: "2026-07-24",
     seoTitle: "Botox in Malaysia | Kaiteki Skin Aesthetic Clinic",
@@ -2509,6 +2691,13 @@ export const technology: Technology[] = [
       device: "Sculptra",
       summary:
         "A poly-L-lactic acid (PLLA) injectable used within bio-stimulator treatment to support gradual structural renewal.",
+      leadAnswer:
+        "Sculptra is an injectable collagen stimulator from Galderma whose active material is poly-L-lactic acid, supplied as a dry powder that the clinic reconstitutes before use. It sits in the bio-stimulator category rather than the dermal filler category, and works gradually over a staged course.",
+      facts: [
+        { value: "Poly-L-lactic acid", label: "Material" },
+        { value: "Galderma", label: "Manufacturer" },
+        { value: "Bio-stimulator", label: "Used within" },
+      ],
       sections: [
         {
           heading: "What is Sculptra?",
@@ -2606,6 +2795,13 @@ export const technology: Technology[] = [
       image: "/images/technology/ellanse.jpg",
       summary:
         "A polycaprolactone (PCL) injectable used within bio-stimulator treatment as a collagen-stimulating injectable.",
+      leadAnswer:
+        "Ellanse is an injectable implant whose active material is polycaprolactone, smooth PCL microspheres suspended in a carrier gel. It is manufactured in the Netherlands and distributed by Sinclair, and at Kaiteki it is used within our bio-stimulator treatment rather than as a hyaluronic acid filler.",
+      facts: [
+        { value: "Polycaprolactone (PCL)", label: "Material" },
+        { value: "Sinclair, Netherlands", label: "Manufacturer" },
+        { value: "Bio-stimulator", label: "Used within" },
+      ],
       sections: [
         {
           heading: "What is Ellansé?",
@@ -2703,6 +2899,13 @@ export const technology: Technology[] = [
       image: "/images/technology/radiesse.jpg",
       summary:
         "A calcium hydroxylapatite (CaHA) injectable used within bio-stimulator treatment with collagen-supporting properties.",
+      leadAnswer:
+        "Radiesse is an injectable from Merz Aesthetics whose active material is calcium hydroxylapatite in microsphere form, suspended in a gel carrier. It belongs to the bio-stimulator category rather than the hyaluronic acid filler category, which is the distinction that matters when comparing the two.",
+      facts: [
+        { value: "Calcium hydroxylapatite", label: "Material" },
+        { value: "Merz Aesthetics", label: "Manufacturer" },
+        { value: "Bio-stimulator", label: "Used within" },
+      ],
       sections: [
         {
           heading: "What is Radiesse?",
@@ -2800,6 +3003,13 @@ export const technology: Technology[] = [
     image: "/images/technology/juvederm.jpg",
     summary:
       "A cross-linked hyaluronic-acid dermal filler range from Allergan Aesthetics, built on the manufacturer's VYCROSS® gel technology and spanning soft gels for fine lines through to firm gels used for structural contour.",
+    leadAnswer:
+      "Juvederm is a range of hyaluronic acid dermal fillers from Allergan Aesthetics, built on the manufacturer's VYCROSS gel technology. Hyaluronic acid on its own breaks down within days, so it is cross-linked into a gel; the range spans soft gels for fine lines through to firm gels used for structural contour.",
+    facts: [
+      { value: "Cross-linked HA (VYCROSS)", label: "Gel technology" },
+      { value: "Allergan Aesthetics", label: "Manufacturer" },
+      { value: "Dermal fillers", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is Juvéderm?",
@@ -2897,6 +3107,13 @@ export const technology: Technology[] = [
     image: "/images/technology/restylane.jpg",
     summary:
       "A hyaluronic-acid dermal filler range from Galderma built on two distinct gel technologies: firmer NASHA® gels for definition and flexible OBT™ gels for expressive areas.",
+    leadAnswer:
+      "Restylane is a range of hyaluronic acid dermal fillers from Galderma, and what distinguishes it is that it is built on two gel technologies rather than one: firmer NASHA gels used where definition is the aim, and more flexible OBT gels intended for expressive, mobile areas.",
+    facts: [
+      { value: "NASHA and OBT", label: "Two gel technologies" },
+      { value: "Galderma", label: "Manufacturer" },
+      { value: "Dermal fillers", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is Restylane?",
@@ -2994,6 +3211,13 @@ export const technology: Technology[] = [
     image: "/images/technology/belotero.jpg",
     summary:
       "A hyaluronic-acid dermal filler range from Merz Aesthetics made with a two-phase dynamic cross-linking process, giving softer gels used for fine lines and delicate areas alongside firmer gels for volume.",
+    leadAnswer:
+      "Belotero is a range of hyaluronic acid dermal fillers from Merz Aesthetics, made with a two-phase dynamic cross-linking process. The range spans several gel densities, from softer gels used for fine lines and delicate areas through to firmer gels for volume, matched to skin thickness at consultation.",
+    facts: [
+      { value: "Dynamic cross-linking", label: "Gel process" },
+      { value: "Merz Aesthetics, Germany", label: "Manufacturer" },
+      { value: "Dermal fillers", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is Belotero?",
@@ -3091,6 +3315,13 @@ export const technology: Technology[] = [
     image: "/images/technology/art-filler.png",
     summary:
       "A hyaluronic-acid dermal filler range from Laboratoires Fillmed, built on the manufacturer's Tri-Hyal® technology, which blends three hyaluronic-acid fractions in each gel.",
+    leadAnswer:
+      "Art Filler is a range of hyaluronic acid dermal fillers from the French manufacturer Laboratoires Fillmed, built on its Tri-Hyal technology, which blends three hyaluronic acid fractions in each gel. Every gel in the range is combined with lidocaine, included to support comfort during injection.",
+    facts: [
+      { value: "Tri-Hyal, three HA fractions", label: "Gel technology" },
+      { value: "Laboratoires Fillmed, France", label: "Manufacturer" },
+      { value: "Dermal fillers", label: "Used within" },
+    ],
     sections: [
       {
         heading: "What is Art Filler?",
@@ -3190,6 +3421,13 @@ export const technology: Technology[] = [
       image: "/images/technology/hydrafacial.jpg",
       summary:
         "A device-based facial using a spiral tip with vacuum suction and simultaneous serum delivery to cleanse, exfoliate, extract and infuse in one pass.",
+      leadAnswer:
+        "Hydrafacial is a device-based facial rather than a therapist working purely by hand. A handpiece fitted with a spiral tip is drawn across the skin while the machine delivers a solution and applies vacuum suction, so cleansing, exfoliating, extracting and infusing happen in the same pass.",
+      facts: [
+        { value: "Spiral tip and vacuum", label: "Method" },
+        { value: "Serum infused in the same pass", label: "What makes it device-based" },
+        { value: "Facial treatments", label: "Used within" },
+      ],
       sections: [
         {
           heading: "What is Hydrafacial?",
@@ -3286,6 +3524,13 @@ export const technology: Technology[] = [
       image: "/images/technology/silkpeel.jpg",
       summary:
         "A device-based facial that exfoliates with a diamond tip while simultaneously infusing a condition-specific topical serum into the same pass.",
+      leadAnswer:
+        "Silkpeel is a device-based facial built around a process its makers named Dermalinfusion: a closed handpiece carrying a diamond-abrasive tip, gentle negative pressure and a flow of topical solution all at once, so exfoliation and serum delivery happen in the same pass rather than in sequence.",
+      facts: [
+        { value: "Diamond tip (Dermalinfusion)", label: "Method" },
+        { value: "Condition-specific serum", label: "What is infused" },
+        { value: "Facial treatments", label: "Used within" },
+      ],
       sections: [
         {
           heading: "What is Silkpeel?",
@@ -3385,6 +3630,13 @@ export const technology: Technology[] = [
       image: "/images/technology/alma.jpg",
       summary:
         "A light-based hair-reduction platform from Alma, combining broadband IPL energy with radiofrequency heating to target hair follicles over a course of sessions.",
+      leadAnswer:
+        "Alma's hair-removal platform combines two energies rather than one: broadband light through what the manufacturer calls AFT, alongside radiofrequency heating. Hair grows in cycles and only follicles in the active phase respond to any one session, which is why treatment is planned as a course.",
+      facts: [
+        { value: "IPL and radiofrequency", label: "Two energies" },
+        { value: "Alma, Israel", label: "Manufacturer" },
+        { value: "Laser hair removal", label: "Used within" },
+      ],
       sections: [
         {
           heading: "What is the Alma hair-removal platform?",

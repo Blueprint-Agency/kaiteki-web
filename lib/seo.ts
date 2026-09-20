@@ -28,11 +28,25 @@ export interface PageMetaInput {
   image?: string;
   /** Utility/thin pages: noindex but still follow. */
   noindex?: boolean;
+  /**
+   * Open Graph type. Defaults to "website"; pass "article" for a page that
+   * carries an author, a review date and a named reviewer — treatment, concern,
+   * technology and blog pages all do (`docs/17` finding 6). Describing a
+   * medically reviewed page as a website understates what it is.
+   */
+  ogType?: "website" | "article";
 }
 
 /** Single source of truth for per-page metadata. Guarantees a self-referencing
  *  canonical + Open Graph + Twitter card on every page that uses it. */
-export function pageMeta({ title, description, path, image, noindex }: PageMetaInput): Metadata {
+export function pageMeta({
+  title,
+  description,
+  path,
+  image,
+  noindex,
+  ogType = "website",
+}: PageMetaInput): Metadata {
   const ogImage = image ?? DEFAULT_OG_IMAGE;
   return {
     title: { absolute: title },
@@ -42,7 +56,7 @@ export function pageMeta({ title, description, path, image, noindex }: PageMetaI
       title,
       description,
       url: path,
-      type: "website",
+      type: ogType,
       images: [{ url: ogImage }],
     },
     twitter: {
