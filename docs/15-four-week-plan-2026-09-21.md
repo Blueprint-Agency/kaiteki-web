@@ -10,6 +10,8 @@
 > **Lanes.** `Client` = Kaiteki · `Content` = authoring in `content/data/*.ts` and MDX · `Dev` = templates, schema,
 > tooling · `Ops` = GSC, measurement.
 >
+> **Progress.** Week 1: 1.1 ✅ (reviewer assignment, 20 Sep) · 1.2 ✅ + 1.2a ✅ (technology template and audit fixes, 21 Sep, merged `1db24d6`) · 2.0 ✅ (36 capsules and fact sets, pulled forward). Open in week 1: 1.3 blog links, 1.4 treatments batch A, 1.5 baseline.
+>
 > **Definition of done for every content item:** `pnpm typecheck`, `pnpm lint`, `pnpm validate:concerns` and
 > **`pnpm check:sameness`** pass; the page is previewed on localhost; the change is on `main`. Section structure
 > follows `docs/16` — a prose section or a typed block, never both; headings phrased as questions in the page's
@@ -41,7 +43,8 @@ The technology template moves **into week 1** from week 2: all 36 technology pag
 | # | Item | Lane | Depends on | Done when |
 |---|---|---|---|---|
 | 1.1 | ✅ **Reviewer assignment, done 2026-09-20.** All 69 pages redistributed evenly across the 21 doctors (six carry 4, fifteen carry 3); `config/concern-signoff.json` filled from the existing editorial dates, so all 14 concern pages now render the byline, author card and `reviewedBy` in schema, and carry a real `lastmod` in the sitemap. Data-file headers rewritten to describe the offline-review process rather than calling the values placeholders. | — | — | ✅ `validate:concerns` 0 failures; 69/69 pages name a reviewer. |
-| 1.2 | **Technology template upgrade.** `components/TechnologyView.tsx`: `LeadAnswer` capsule, `FactRail`, heading anchors + `ArticleToc`, `AuthorCard`, closing CTA in the treatment style, keep the standing `Disclaimer`. Extend `Technology` in `lib/types.ts` with `leadAnswer`, `facts`, `costFactors`. **No `availableAt`** — cancelled. | Dev | none | Every block renders conditionally; typecheck passes across all 36 entries; screenshots at 1900/1100/400 in the PR. |
+| 1.2 | ✅ **Technology template upgrade — done 2026-09-21** (merged to `main`, `1db24d6`). `TechnologyView` moved onto the treatment article layout: hero with a WhatsApp CTA in the fold, `FactRail`, `LeadAnswer`, a sticky contents rail with **11 section anchors where there were none**, concern and treatment card shelves replacing pill chips, `CostFactors`, `AuthorCard` and ledger, standing `Disclaimer` kept. `Technology` gained `leadAnswer`, `facts`, `costFactors`; no `availableAt`. `lib/technology-toc.ts` derives the rail from the same data the page renders. Audited afterwards in **`docs/17`**, and all six findings fixed in the same branch — see 1.2a. | Dev | — | ✅ `tsc`, `eslint`, `check:sameness`, both validators, `next build` (132 pages); screenshots at 1900/1100/400 re-taken after the content landed. |
+| 1.2a | ✅ **`docs/17` audit fixes — done 2026-09-21.** `relatedTechnology()` closes the zero-sibling-links hole, ranking other devices by shared treatments so the alternative offered is the genuine one (Juvéderm → Art Filler, Belotero, Restylane, Botox). FAQ items carry anchor ids, so a single answer is citable. `pageMeta()` takes `ogType`; technology, treatment, concern and blog pages declare `article`. Three over-length descriptions trimmed. `SectionCard` deleted, orphaned by the rebuild. | Dev + Content | 1.2 | ✅ Crawl of all 36: sibling links 36/36, metadata outliers 0. |
 | 1.3 | **`relatedPosts` on all three templates.** A "Read next" row of up to 3 blog cards, resolved from the tag arrays already on `content/data/blog.ts`. | Dev | none | Any page with ≥1 tagged post shows the row as real `<a href="/blog/…">`; pages without a match render nothing. |
 | 1.4 | **Treatments batch A — `hifu`, `skin-booster`.** Full v2 block set (`typicalSessions`, `suitableFor`, `notSuitableFor`, `avoidIf`, `sessionSteps`, `afterSession`, `risks`, `costFactors`, one `comparisons` table), **then delete the prose sections those blocks replace** (`docs/16` R1). This is the move that took `pico-laser` from nine sections to two. | Content | none | Both pages ≤4 prose sections; all blocks render; `check:sameness` treatments budget lowered 17 → ≤15. |
 | 1.5 | **Baseline snapshot.** GSC page-level export for the three page types, 28 days, Malaysia filter, committed as a dated CSV. Record the `check:sameness` numbers alongside it. | Ops | none | File on `main`; this is what 4.5 compares against. |
@@ -55,9 +58,11 @@ on the site, and they are the highest-value commercial cluster.
 
 | # | Item | Lane | Depends on | Done when |
 |---|---|---|---|---|
+| 2.0 | ✅ **Capsules and facts, landed early 2026-09-21.** `docs/17` found both answer-engine slots rendering empty on all 36, so this was pulled forward from the batch work. A 41-to-56 word `leadAnswer` and a three-fact rail authored for **all 36**, each derived from that page's own already-reviewed body text — no new clinical claim, no figure, no superlative. Facts are material or wavelength, manufacturer and origin, and the Kaiteki treatment it sits within: verifiable, and different on every page. | Content | — | ✅ Capsule 36/36, fact rail 36/36, verified on the rendered pages. |
 | 2.1 | **Batch 1 — 13 injectables.** `profhilo · rejuran · plinest · juvelook · hydrodeluxe · botox · sculptra · ellanse · radiesse · juvederm · restylane · belotero · art-filler`. Per-page `leadAnswer` (40–60 words) and `facts`, then replace the shared six-heading tail with at least two sections from the injectables spine (`docs/16` §3): what is actually in it · is it reversible · how long it lasts and how it wears off · what it is not · where and at what depth · the in-class comparison. Headings as questions. | Content | 1.2 | 13/13 carry `leadAnswer` + `facts`; none is "mostly generic" by `check:sameness`; technology budget lowered 35 → ≤23. |
 | 2.2 | **Batch 2 — 9 lifting & tightening.** `ultracel-q · lifthera · ultherapy-system · xerf · sylfirm-x · morpheus8 · potenza · btl-exilis · wonderface` (eight of nine uncrawled). Spine: what depth it reaches in millimetres · lifting vs tightening vs volume · when a lift is not the answer · which energy type and why. | Content | 1.2 | 9/9 differentiated; technology budget lowered ≤23 → ≤14. |
 | 2.3 | **Treatments batch B — `microneedling`, `exosome-therapy`, `ultherapy`.** v2 blocks, prose sections deleted per R1. | Content | none | As 1.4; treatments budget lowered ≤15 → ≤12. |
+| 2.0a | **The cheapest cut at sameness, found during 1.2.** Every one of the 36 pages already carries a prose section headed *Sessions & cost factors* — one of the six headings driving the score — and `costFactors` is populated on none of them. Moving that prose into the structured block and **deleting the section** fills the block, removes a generic heading and applies `docs/16` R1, all in one pass. Do this first in each batch below. | Content | 1.2 | `costFactors` on 36/36; the *Sessions & cost factors* heading gone from every page; technology budget drops accordingly. |
 | 2.4 | **Cost sections, factors only.** Add `costFactors` to every treatment touched in 1.4 and 2.3: a "What affects the cost of X" heading listing area, sessions, device and combination. **No figure, no range, no `Offer` schema.** Add the lint that fails the build on any currency string inside `costFactors`. | Content + Dev | price decision ✅ | Every touched page has the section; the lint is in CI and passes. |
 
 ---
@@ -97,6 +102,7 @@ lands; never raise one to make the build pass.
 | Milestone | technology | treatments |
 |---|---|---|
 | Baseline, 20 Sep | 35 / 36 | 17 / 19 |
+| **Actual, 21 Sep** after 1.2, 1.2a, 2.0 | **35 — unchanged, as expected** | 17 |
 | End week 1 | 35 | ≤15 |
 | End week 2 | ≤14 | ≤12 |
 | End week 3 | **0** | ≤7 |
