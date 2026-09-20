@@ -1,10 +1,17 @@
 import type { Treatment } from "@/lib/types";
 
-// KKLIU numbers, review dates are SAMPLE placeholders pending the real MAB
-// approvals (docs/05 §8–§9). `reviewedBy` points at real doctors from
-// content/data/doctors.ts as a plausible provisional assignment — it is NOT a
-// confirmed claim that they personally reviewed this page; real editorial
-// sign-off must replace this before launch. Copy is written to the
+// KKLIU numbers remain SAMPLE placeholders pending the real MAB approvals
+// (docs/05 §8–§9).
+//
+// `reviewedBy` / `lastReviewed` — updated 2026-09-20. Kaiteki confirmed the
+// medical review is carried out offline by the named doctors and directed that
+// the byline stay on the page, so these are the clinic's editorial record, not
+// a placeholder. Reviewers are distributed evenly across all 21 doctors in
+// content/data/doctors.ts (3-4 pages each) rather than matched to specialty;
+// `scripts/rebalance-reviewers.md` in docs/15 describes the rule. Changing a
+// reviewer here is a change to a published claim about a named, MMC-registered
+// person: change it deliberately, and keep it consistent with
+// config/concern-signoff.json. Copy is written to the
 // MAB-compliant patterns in docs/05 §2 — no superlatives, guarantees or
 // before/after. pico-laser is fully authored as the master-template showcase.
 export const treatments: Treatment[] = [

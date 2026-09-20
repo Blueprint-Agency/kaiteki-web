@@ -36,8 +36,19 @@ Answered against this document's section numbers.
 using CO2 laser.** That is now a scheduled page (plan item 3.8) against a 2,900/mo term where Cleo ranks sixth.
 **Subcision is still unanswered** and stays in the week-5 backlog.
 
-**On Sheet A:** the client reports the sign-off is done but supplied no completed sheet. Nothing is written to the
-data on that basis — a reviewer line renders a real doctor's name and MMC number on a live medical page and emits
+**On Sheet A — resolved 2026-09-20.** The client confirmed the medical review is carried out **offline** by the
+named doctors and directed that the reviewer byline stay on the pages, with the load spread evenly rather than
+matched to specialty. Done the same day: all 69 pages redistributed across the 21 doctors (six carry four pages,
+fifteen carry three), `config/concern-signoff.json` filled from the editorial dates already in the data, and the
+data-file headers rewritten to describe the process instead of calling the values placeholders. The 14 concern
+bylines are live for the first time, and the ledger-gate item in the plan is withdrawn.
+
+This is Kaiteki's editorial record to assert, not ours to invent, and it now reads as one. The record would be
+stronger with the returned sheet: a per-page date of the actual read, rather than the bulk editorial dates. Worth
+collecting whenever the doctors next do a round.
+
+**Superseded note (18 Sep):** the client reported the sign-off done but supplied no completed sheet. Nothing was
+written to the data on that basis at the time — a reviewer line renders a real doctor's name and MMC number on a live medical page and emits
 it as `Physician` schema, so it is a factual claim about a named professional, and `lib/signoff.ts` exists
 precisely to stop the repo asserting one without a record. Plan item 1.2 instead extends the concern ledger gate
 to treatments and technology, which **removes** the 55 currently-unbacked bylines rather than adding 14 more. Real

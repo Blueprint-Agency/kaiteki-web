@@ -5,8 +5,10 @@ import type { Technology } from "@/lib/types";
 // derived via content/data/relations.ts. `group` is the NavCategory of the
 // item's primary treatment. Summaries are single, factual, MAB-compliant
 // sentences (docs/05, docs/02 §8) — no superlatives, guarantees or before/after.
-// `reviewedBy`/`lastReviewed` are SAMPLE placeholders pending real MAB sign-off,
-// mirroring the primary treatment's reviewer (see treatments.ts note). coolsculpting, onda-coolwaves and
+// `reviewedBy`/`lastReviewed` — updated 2026-09-20; see the treatments.ts note.
+// The clinic reviews offline and directed that the byline stay; reviewers are
+// spread evenly across all 21 doctors rather than mirroring the parent
+// treatment. coolsculpting, onda-coolwaves and
 // dermav carry over the rich sections/faqs from their former child-treatment pages.
 export const technology: Technology[] = [
   // ── Lasers ──────────────────────────────────────────────────────────────
@@ -2783,7 +2785,7 @@ export const technology: Technology[] = [
           a: "Duration varies between individuals and is not something we quote as a promise: the calcium hydroxylapatite is bioresorbable and is cleared by the body over time, and your own tissue continues to age. Unlike hyaluronic acid fillers, it has no dissolving agent, so it cannot be reversed on demand, which is why careful assessment beforehand matters. Your doctor will discuss realistic expectations and review timing at consultation.",
         },
       ],
-      reviewedBy: "dr-chloe-wan",
+      reviewedBy: "dr-chin-wei-horng",
       lastReviewed: "2026-07-18",
       seoTitle: "Radiesse CaHA Bio-Stimulator Treatment Malaysia | Kaiteki",
       seoDescription:
