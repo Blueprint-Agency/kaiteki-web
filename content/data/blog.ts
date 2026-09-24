@@ -387,6 +387,38 @@ export function featuredPost(): Post {
   return posts.find((p) => p.featured) ?? postsNewestFirst()[0];
 }
 
+type PostTag = "concerns" | "treatments" | "technology";
+
+/**
+ * The "Read next" row on a treatment, concern or technology page (`docs/15`
+ * item 1.3): posts carrying this page's slug in the matching tag array, newest
+ * first. `fallback` names tags one hop away and only fills slots the direct
+ * match leaves empty — a device page falls back to the treatments it delivers,
+ * so Belotero surfaces the lip filler guide tagged to dermal fillers.
+ *
+ * Unlike `relatedPosts`, this never pads with unrelated newest posts. A guide
+ * that has nothing to do with the page is a worse link than none, so no match
+ * means no row.
+ *
+ * The hop runs one way only. Treatment → its devices was tried and put the
+ * facial redness guide on laser hair removal, via the M22 it shares.
+ */
+export function postsFor(
+  tag: PostTag,
+  slug: string,
+  fallback?: { tag: PostTag; slugs: readonly string[] },
+  limit = 3,
+): Post[] {
+  const newest = postsNewestFirst();
+  const direct = newest.filter((p) => p[tag]?.includes(slug));
+  const hop = fallback
+    ? newest.filter(
+        (p) => !direct.includes(p) && p[fallback.tag]?.some((s) => fallback.slugs.includes(s)),
+      )
+    : [];
+  return [...direct, ...hop].slice(0, limit);
+}
+
 /** Up to `limit` related posts: explicit `related` first, then same-category,
  *  then newest — so a young blog never renders an empty "Keep reading" block. */
 export function relatedPosts(post: Post, limit = 3): Post[] {
