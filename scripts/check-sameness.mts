@@ -17,6 +17,10 @@
  * things are today, and the build fails if a change makes any cluster worse.
  * Lower a budget every time a batch of pages is differentiated — never raise
  * one to make the build pass.
+ *
+ * `--csv` prints one row per page instead (cluster, slug, generic, total,
+ * mostly_generic) for the dated baselines in `docs/15b`, so a later snapshot
+ * can say which pages moved, not only how many.
  */
 import { technology } from "../content/data/technology.ts";
 import { treatments } from "../content/data/treatments.ts";
@@ -63,6 +67,8 @@ const clusters: Record<string, Page[]> = {
 };
 
 let failed = false;
+const csv = process.argv.includes("--csv");
+if (csv) console.log("cluster,slug,generic_headings,total_headings,mostly_generic");
 
 for (const [name, pages] of Object.entries(clusters)) {
   const withSections = pages.filter((p) => p.headings.length > 0);
@@ -88,6 +94,11 @@ for (const [name, pages] of Object.entries(clusters)) {
   const budget = BUDGET[name] ?? 0;
   const ok = mostlyGeneric.length <= budget;
   if (!ok) failed = true;
+
+  if (csv) {
+    for (const s of scored) console.log(`${name},${s.slug},${s.generic},${s.total},${s.share >= GENERIC_SHARE}`);
+    continue;
+  }
 
   console.log(`\n${ok ? "✓" : "✗"} ${name}: ${withSections.length} pages with sections`);
   console.log(
@@ -119,7 +130,7 @@ for (const [name, pages] of Object.entries(clusters)) {
   }
 }
 
-console.log(
+if (!csv) console.log(
   failed
     ? "\nFAIL — a cluster got more templated than its recorded budget. See docs/16 for the per-group spines."
     : "\nOK — no cluster exceeded its sameness budget. Lower the budgets in this file as pages are differentiated.",
