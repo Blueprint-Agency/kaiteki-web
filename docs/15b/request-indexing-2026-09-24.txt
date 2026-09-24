@@ -1,0 +1,27 @@
+« Kaiteki — GSC "Request indexing" queue, 2026-09-24 (docs/15 item 1.6, decision D1) »
+«
+« These are the 14 URLs still not indexed on 24 Sep, each confirmed by live URL Inspection.
+« The other 20 on the 06 Sep list are already indexed, so do not request them again.
+« One day's quota. In GSC, paste each URL into the top search bar, then click "Request indexing".
+« Ordered by commercial value.
+« ? = "URL is unknown to Google". Every other URL is "Discovered - currently not indexed".
+
+--- TREATMENTS (5) ---
+https://kaiteki.my/treatments/resurfacing-laser
+https://kaiteki.my/treatments/vascular-pigment-laser
+https://kaiteki.my/treatments/double-eyelid
+https://kaiteki.my/treatments/microwave-contouring
+https://kaiteki.my/treatments/muscle-stimulation
+
+--- CONCERNS (2) ---
+https://kaiteki.my/concerns/vascular-lesions
+https://kaiteki.my/concerns/excessive-sweating
+
+--- TECHNOLOGY (7) ---
+https://kaiteki.my/technology/juvederm            ?  (requested 06 Sep, still unknown)
+https://kaiteki.my/technology/ultracel-q
+https://kaiteki.my/technology/lifthera
+https://kaiteki.my/technology/xerf
+https://kaiteki.my/technology/wonderface          ?
+https://kaiteki.my/technology/cooltech
+https://kaiteki.my/technology/fotona-sp-dynamis

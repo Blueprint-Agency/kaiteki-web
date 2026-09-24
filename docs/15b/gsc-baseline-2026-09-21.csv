@@ -1,0 +1,70 @@
+page_type,slug,url,clicks,impressions,ctr,position,first_impression,not_indexed_2026_09_06,requested_2026_09_06,generic_headings,total_headings,mostly_generic,inspection_2026_09_24
+treatments,pico-laser,https://kaiteki.my/treatments/pico-laser,5,8457,0.0006,13.3,2026-08-07,false,false,1,2,false,
+treatments,hifu,https://kaiteki.my/treatments/hifu,2,3069,0.0007,18.2,2026-08-06,false,false,7,9,true,
+treatments,ultherapy,https://kaiteki.my/treatments/ultherapy,0,1455,0.0000,32.4,2026-08-06,false,false,7,8,true,
+treatments,fotona-4d,https://kaiteki.my/treatments/fotona-4d,3,438,0.0068,7.6,2026-08-07,false,false,6,8,true,
+treatments,radiofrequency,https://kaiteki.my/treatments/radiofrequency,3,705,0.0043,19.3,2026-08-18,false,false,7,8,true,
+treatments,microneedling,https://kaiteki.my/treatments/microneedling,13,2251,0.0058,11.6,2026-08-07,false,false,7,9,true,
+treatments,fat-freezing,https://kaiteki.my/treatments/fat-freezing,4,1285,0.0031,33.6,2026-08-13,false,false,6,9,true,
+treatments,skin-booster,https://kaiteki.my/treatments/skin-booster,9,2136,0.0042,11.1,2026-08-01,false,false,7,9,true,
+treatments,botulinum-toxin,https://kaiteki.my/treatments/botulinum-toxin,0,2,0.0000,6,2026-09-20,true,true,6,8,true,Submitted and indexed · crawled 2026-09-20
+treatments,bio-stimulator,https://kaiteki.my/treatments/bio-stimulator,2,429,0.0047,31.0,2026-08-18,false,false,7,9,true,
+treatments,exosome-therapy,https://kaiteki.my/treatments/exosome-therapy,61,3727,0.0164,7.7,2026-08-04,false,false,7,8,true,
+treatments,double-eyelid,https://kaiteki.my/treatments/double-eyelid,0,0,,,,true,false,3,8,false,Discovered - currently not indexed
+treatments,vascular-pigment-laser,https://kaiteki.my/treatments/vascular-pigment-laser,0,0,,,,true,false,7,8,true,Discovered - currently not indexed
+treatments,resurfacing-laser,https://kaiteki.my/treatments/resurfacing-laser,0,0,,,,true,false,7,8,true,Discovered - currently not indexed
+treatments,microwave-contouring,https://kaiteki.my/treatments/microwave-contouring,0,0,,,,true,false,7,8,true,Discovered - currently not indexed
+treatments,muscle-stimulation,https://kaiteki.my/treatments/muscle-stimulation,0,0,,,,true,false,7,8,true,Discovered - currently not indexed
+treatments,dermal-fillers,https://kaiteki.my/treatments/dermal-fillers,0,41,0.0000,15.9,2026-09-20,true,true,7,8,true,
+treatments,facial-treatments,https://kaiteki.my/treatments/facial-treatments,1,15,0.0667,10.1,2026-09-15,true,false,7,8,true,
+treatments,laser-hair-removal,https://kaiteki.my/treatments/laser-hair-removal,0,5,0.0000,9.4,2026-09-20,true,false,7,8,true,
+concerns,acne,https://kaiteki.my/concerns/acne,0,1869,0.0000,21.4,2026-08-07,false,false,0,1,false,
+concerns,pigmentation,https://kaiteki.my/concerns/pigmentation,5,8200,0.0006,16.7,2026-08-04,false,false,0,1,false,
+concerns,enlarged-pores,https://kaiteki.my/concerns/enlarged-pores,1,1630,0.0006,9.4,2026-08-06,false,false,0,4,false,
+concerns,fine-lines-wrinkles,https://kaiteki.my/concerns/fine-lines-wrinkles,0,780,0.0000,30.3,2026-08-10,false,false,0,1,false,
+concerns,dark-eye-circles,https://kaiteki.my/concerns/dark-eye-circles,16,5834,0.0027,6.8,2026-08-09,false,false,0,1,false,
+concerns,face-contouring,https://kaiteki.my/concerns/face-contouring,2,216,0.0093,23.8,2026-08-02,false,false,0,1,false,
+concerns,face-lifting,https://kaiteki.my/concerns/face-lifting,5,1996,0.0025,12.3,2026-08-07,false,false,0,1,false,
+concerns,aging,https://kaiteki.my/concerns/aging,0,1433,0.0000,35.6,2026-08-03,false,false,0,1,false,
+concerns,body-slimming,https://kaiteki.my/concerns/body-slimming,0,3011,0.0000,13.7,2026-08-07,false,false,0,1,false,
+concerns,hair-loss,https://kaiteki.my/concerns/hair-loss,0,389,0.0000,15.8,2026-08-03,false,false,0,1,false,
+concerns,tattoo-removal,https://kaiteki.my/concerns/tattoo-removal,1,1567,0.0006,8.1,2026-08-05,false,false,0,1,false,
+concerns,birthmark,https://kaiteki.my/concerns/birthmark,0,401,0.0000,18.0,2026-08-05,false,false,0,3,false,
+concerns,vascular-lesions,https://kaiteki.my/concerns/vascular-lesions,0,0,,,,true,false,0,3,false,Discovered - currently not indexed
+concerns,excessive-sweating,https://kaiteki.my/concerns/excessive-sweating,0,0,,,,true,false,0,3,false,Discovered - currently not indexed
+technology,picosure,https://kaiteki.my/technology/picosure,1,633,0.0016,14.1,2026-08-03,false,false,7,8,true,
+technology,fotona-pqx,https://kaiteki.my/technology/fotona-pqx,0,22,0.0000,6.1,2026-08-04,false,false,6,8,true,
+technology,fotona-sp-dynamis,https://kaiteki.my/technology/fotona-sp-dynamis,0,0,,,,true,false,6,8,true,Discovered - currently not indexed
+technology,dermav,https://kaiteki.my/technology/dermav,7,114,0.0614,12.4,2026-08-04,false,false,7,8,true,
+technology,pro-yellow,https://kaiteki.my/technology/pro-yellow,1,57,0.0175,7.3,2026-08-04,false,false,7,8,true,
+technology,m22-ipl,https://kaiteki.my/technology/m22-ipl,1,121,0.0083,8.3,2026-08-04,false,false,6,8,true,
+technology,fractional-co2,https://kaiteki.my/technology/fractional-co2,0,530,0.0000,31.7,2026-09-08,true,false,6,8,true,
+technology,ultracel-q,https://kaiteki.my/technology/ultracel-q,0,0,,,,true,false,7,8,true,Discovered - currently not indexed
+technology,lifthera,https://kaiteki.my/technology/lifthera,0,0,,,,true,false,7,8,true,Discovered - currently not indexed
+technology,ultherapy-system,https://kaiteki.my/technology/ultherapy-system,0,289,0.0000,59.0,2026-09-07,true,false,6,8,true,
+technology,xerf,https://kaiteki.my/technology/xerf,0,0,,,,true,false,7,8,true,Discovered - currently not indexed
+technology,sylfirm-x,https://kaiteki.my/technology/sylfirm-x,1,134,0.0075,27.5,2026-09-07,true,false,7,8,true,
+technology,morpheus8,https://kaiteki.my/technology/morpheus8,0,2,0.0000,33.5,2026-09-07,true,false,7,8,true,
+technology,potenza,https://kaiteki.my/technology/potenza,5,763,0.0066,13.0,2026-08-19,false,false,7,8,true,
+technology,btl-exilis,https://kaiteki.my/technology/btl-exilis,0,0,,,2026-08-02,false,false,7,8,true,
+technology,wonderface,https://kaiteki.my/technology/wonderface,0,0,,,,true,false,7,8,true,URL is unknown to Google
+technology,coolsculpting,https://kaiteki.my/technology/coolsculpting,2,4592,0.0004,15.4,2026-08-02,false,false,7,8,true,
+technology,cooltech,https://kaiteki.my/technology/cooltech,0,0,,,,true,false,7,8,true,Discovered - currently not indexed
+technology,onda-coolwaves,https://kaiteki.my/technology/onda-coolwaves,53,1828,0.0290,5.8,2026-08-07,false,false,6,8,true,
+technology,schwarzy,https://kaiteki.my/technology/schwarzy,1,15,0.0667,6.5,2026-08-06,false,false,7,8,true,
+technology,profhilo,https://kaiteki.my/technology/profhilo,0,313,0.0000,24.1,2026-09-06,true,false,7,8,true,
+technology,rejuran,https://kaiteki.my/technology/rejuran,0,250,0.0000,21.5,2026-09-06,true,true,7,8,true,
+technology,plinest,https://kaiteki.my/technology/plinest,2,412,0.0049,18.3,2026-09-06,true,false,6,8,true,Submitted and indexed · crawled 2026-09-06
+technology,juvelook,https://kaiteki.my/technology/juvelook,1,480,0.0021,9.8,2026-09-06,true,false,7,8,true,
+technology,hydrodeluxe,https://kaiteki.my/technology/hydrodeluxe,0,6,0.0000,1.8,2026-09-07,true,false,7,8,true,
+technology,botox,https://kaiteki.my/technology/botox,0,22,0.0000,10.9,2026-09-07,true,false,0,3,false,
+technology,sculptra,https://kaiteki.my/technology/sculptra,1,265,0.0038,18.4,2026-09-07,true,false,7,8,true,Submitted and indexed · crawled 2026-09-16
+technology,ellanse,https://kaiteki.my/technology/ellanse,1,113,0.0088,31.5,2026-09-07,true,false,6,8,true,
+technology,radiesse,https://kaiteki.my/technology/radiesse,1,99,0.0101,8.4,2026-09-07,true,false,7,8,true,
+technology,juvederm,https://kaiteki.my/technology/juvederm,0,0,,,,true,true,7,8,true,URL is unknown to Google
+technology,restylane,https://kaiteki.my/technology/restylane,2,114,0.0175,6.2,2026-09-07,true,false,7,8,true,
+technology,belotero,https://kaiteki.my/technology/belotero,0,101,0.0000,12.3,2026-09-07,true,false,7,8,true,
+technology,art-filler,https://kaiteki.my/technology/art-filler,1,23,0.0435,3.5,2026-09-07,true,false,7,8,true,
+technology,hydrafacial,https://kaiteki.my/technology/hydrafacial,0,350,0.0000,18.5,2026-08-05,false,false,7,8,true,
+technology,silkpeel,https://kaiteki.my/technology/silkpeel,6,675,0.0089,19.9,2026-08-04,false,false,7,8,true,
+technology,alma,https://kaiteki.my/technology/alma,1,20,0.0500,13.9,2026-08-11,false,false,6,8,true,
