@@ -39,7 +39,7 @@ const GENERIC_SHARE = 0.6;
 const BUDGET: Record<string, number> = {
   // 2026-09-20 baseline — lower these as pages are differentiated. Target: 0.
   technology: 35,
-  treatments: 17,
+  treatments: 15, // 2026-09-24: hifu and skin-booster differentiated (docs/15 1.4)
   concerns: 0,
 };
 
