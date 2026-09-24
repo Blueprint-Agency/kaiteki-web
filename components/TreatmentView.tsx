@@ -9,6 +9,7 @@ import { Faq } from "@/components/Faq";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { ArticleToc } from "@/components/blog/ArticleToc";
 import { AuthorCard } from "@/components/blog/AuthorCard";
+import { ReadNext } from "@/components/blog/ReadNext";
 import { ConcernCard, TreatmentCard, TechnologyCard } from "@/components/cards";
 import { CardRow } from "@/components/CardRow";
 import {
@@ -29,6 +30,7 @@ import {
   AreasBlock,
 } from "@/components/treatment-blocks";
 import { treatmentBySlug } from "@/content/data/treatments";
+import { postsFor } from "@/content/data/blog";
 import { technologyOfTreatment, concernsOfTreatment } from "@/content/data/relations";
 import { doctorBySlug, reviewerByline } from "@/content/data/doctors";
 import { waForTreatment } from "@/lib/wa";
@@ -145,6 +147,7 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
   const related = t.related.map((r) => treatmentBySlug(r)).filter(Boolean);
   const techItems = technologyOfTreatment(t.slug);
   const relatedConcerns = concernsOfTreatment(t.slug);
+  const posts = postsFor("treatments", t.slug);
   const wa = waForTreatment(t.name);
   const reviewedDate = dmy(t.lastReviewed);
   const sections = t.sections ?? [];
@@ -417,6 +420,8 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
             </div>
           </Section>
         )}
+
+        <ReadNext posts={posts} />
 
         {/* T-17 — photo cards, matching `concerns-addressed` above and the
             device shelf between them, so the page's three "go here next"
