@@ -104,6 +104,10 @@ Found while investigating T4 on 2026-09-06, by URL-inspecting a 40-URL sample of
 
 > ### ⛔ Re-diagnosis 2026-09-20 — it is not a technical fault, and manual requests will not fix it
 >
+> **⚠ 2026-09-24 — the crawl data behind this re-diagnosis is stale.** Live inspection and GSC impressions show
+> 20 of the 34 URLs indexed between 6 and 20 Sep, including 12 of the 13 injectables on 6–7 Sep, and sameness
+> scores do not separate indexed from unindexed pages. Read `docs/15b` before relying on the tables below.
+>
 > **Trigger.** The client reports requesting indexing manually since 6 Sep with no movement. Spot checks on
 > 18 Sep confirmed it: `/treatments/laser-hair-removal`, `/treatments/botulinum-toxin` and
 > `/treatments/dermal-fillers` were all still "Discovered – currently not indexed", `last_crawled: null`.
