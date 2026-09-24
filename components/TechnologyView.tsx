@@ -10,6 +10,7 @@ import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { LeadAnswer } from "@/components/LeadAnswer";
 import { ArticleToc } from "@/components/blog/ArticleToc";
 import { AuthorCard } from "@/components/blog/AuthorCard";
+import { ReadNext } from "@/components/blog/ReadNext";
 import { ConcernCard, TreatmentCard, TechnologyCard } from "@/components/cards";
 import { CardRow } from "@/components/CardRow";
 import { Section, FactRail, CostFactors } from "@/components/treatment-blocks";
@@ -19,6 +20,7 @@ import {
   relatedTechnology,
 } from "@/content/data/relations";
 import { doctorBySlug, reviewerByline } from "@/content/data/doctors";
+import { postsFor } from "@/content/data/blog";
 import { technologyToc, alternativesHeading } from "@/lib/technology-toc";
 import { headingAnchor } from "@/lib/treatment-toc";
 import { TOC_MIN_HEADINGS } from "@/lib/toc";
@@ -94,6 +96,9 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
   const treatments = treatmentsOfTechnology(x.slug);
   const relatedConcerns = concernsOfTechnology(x.slug);
   const siblings = relatedTechnology(x.slug);
+  // Falls back to the treatments this device delivers: 11 of 36 devices are
+  // tagged by a post directly, and the hop lifts that to 22 without leaving topic.
+  const posts = postsFor("technology", x.slug, { tag: "treatments", slugs: x.treatments });
   const doctor = x.reviewedBy ? doctorBySlug(x.reviewedBy) : undefined;
   const logo = x.device ? deviceLogo[x.device] : undefined;
   const reviewedDate = x.lastReviewed ? dmy(x.lastReviewed) : undefined;
@@ -300,6 +305,8 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
             </div>
           </Section>
         )}
+
+        <ReadNext posts={posts} />
       </Reading>
 
       {/* The closing CTA on page ground, centred, as the treatment and concern

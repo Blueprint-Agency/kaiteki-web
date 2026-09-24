@@ -8,6 +8,7 @@ import { Faq } from "@/components/Faq";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { ArticleToc } from "@/components/blog/ArticleToc";
 import { AuthorCard } from "@/components/blog/AuthorCard";
+import { ReadNext } from "@/components/blog/ReadNext";
 import { TechnologyCard } from "@/components/cards";
 import { FactRail, CtaMid } from "@/components/treatment-blocks";
 import {
@@ -25,6 +26,7 @@ import {
   ResultsBlock,
 } from "@/components/concern-blocks";
 import { concernBySlug } from "@/content/data/concerns";
+import { postsFor } from "@/content/data/blog";
 import { technologyOfConcern, treatmentsOfConcern } from "@/content/data/relations";
 import { reviewerByline } from "@/content/data/doctors";
 import { concernReviewer } from "@/lib/signoff";
@@ -148,6 +150,7 @@ export function ConcernView({ c }: { c: Concern }) {
   const review = concernReviewer(c.slug);
   const options = treatmentsOfConcern(c.slug);
   const techItems = technologyOfConcern(c.slug);
+  const posts = postsFor("concerns", c.slug);
   const wa = waForConcern(c.name);
 
   const related = (c.relatedConcerns ?? [])
@@ -345,6 +348,8 @@ export function ConcernView({ c }: { c: Concern }) {
             </div>
           </Section>
         )}
+
+        <ReadNext posts={posts} />
 
         <RelatedConcernsBlock items={related} />
       </Reading>
