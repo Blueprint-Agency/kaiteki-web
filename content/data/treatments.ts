@@ -328,31 +328,211 @@ export const treatments: Treatment[] = [
     category: "Lifting & Tightening",
     image: "/images/treatments/hifu.jpg",
     device: "HIFU",
+    typicalSessions: "1 to a few, with review",
     summary: "Focused ultrasound used for non-surgical skin-lifting and tightening concerns.",
     leadAnswer:
       "HIFU (high-intensity focused ultrasound) is a non-surgical treatment that delivers focused ultrasound energy to deeper skin layers. It is commonly used for skin-lifting and tightening concerns. How much laxity there is, and how deep it sits, is what decides whether it applies to you at all — so a doctor examines your face before any plan is made.",
 
-    // Second verified page in config/treatments.json (archetype ED, "full").
-    // Only the non-clinical v2 blocks are filled here: T-09 to T-14 need copy
-    // authored and signed off by Dr Chuah, not inferred from the existing prose.
+    // docs/15 item 1.4 (2026-09-24): the v2 block set, applied under docs/16 R1.
+    // Seven shared prose sections became typed blocks and were deleted. Every
+    // clinical line below is restructured from copy that already carries a
+    // named reviewer: this page's own sections, the Ultracel Q and Lifthera
+    // device pages, and the Ultherapy vs HIFU guide. No new claim, no figure.
+    // The re-arrangement goes to Dr Chuah in the offline review round, which is
+    // why `lastReviewed` is unchanged.
     facts: [
       { value: "2 ultrasound platforms", label: "Selected for your face and the depth being treated" },
       { value: "30–60 minutes", label: "Typical face and neck appointment, including preparation" },
       { value: "Assessment first", label: "Your first visit is a doctor consultation, not a treatment" },
     ],
-    jumpNav: [
-      { id: "what-is-hifu", label: "What it is" },
-      { id: "how-it-works", label: "How it works" },
-      { id: "devices-technology-hifu-and-ultherapy", label: "HIFU vs Ultherapy" },
-      { id: "what-it-may-help-address", label: "What it addresses" },
-      { id: "devices", label: "Devices" },
-      { id: "faq", label: "FAQ" },
+
+    // T-06 — the concern pages that list HIFU, each reached by what it is
+    // actually used for rather than by a list of nouns.
+    routes: [
+      {
+        title: "Sagging along the jaw and jowls",
+        body: "Early to moderate laxity in the lower face and along the jawline, and loss of definition under the chin. This is the pattern focused ultrasound is most often considered for.",
+        links: [
+          { href: "/concerns/face-lifting", label: "Read about face lifting" },
+          { href: "/concerns/face-contouring", label: "Face contouring" },
+        ],
+      },
+      {
+        title: "Firmness and fine lines with age",
+        body: "Loss of firmness associated with reduced collagen, crepey or loose-feeling skin on the neck, and an overall loss of tone. Usually part of a longer-term maintenance plan rather than a single fix.",
+        links: [
+          { href: "/concerns/aging", label: "Read about ageing skin" },
+          { href: "/concerns/fine-lines-wrinkles", label: "Fine lines & wrinkles" },
+        ],
+      },
     ],
+    routesNote:
+      "Laxity, volume loss and skin quality look alike in the mirror and are treated differently. Focused ultrasound addresses laxity. It does not replace lost volume, relax movement lines or improve skin quality, so plans often combine it with other treatments.",
+
+    // T-07 — the two HIFU platforms Kaiteki runs, told apart by how each
+    // delivers energy. A factual difference, never a ranking (R-02).
+    variantModule: {
+      heading: "Ultracel Q or Lifthera: which HIFU device, and why",
+      intro:
+        "Both devices focus ultrasound to a depth beneath the skin surface so that heating happens in a chosen deeper layer while the surface is largely spared. They differ in how that energy is shaped, which is why a doctor chooses between them for your face rather than using one for everyone.",
+      items: [
+        {
+          eyebrow: "Cartridge-based · Jeisys Medical",
+          title: "Ultracel Q",
+          body: "The doctor changes cartridges to change the focal depth, so the same platform can be aimed at the dermis, the deeper SMAS layer or the fat layer, with the energy focused either as a dot or along a line. The compact tip is designed to reach contours such as the jawline and under the chin.",
+          href: "/technology/ultracel-q",
+          hrefLabel: "About Ultracel Q",
+        },
+        {
+          eyebrow: "Line-focused · Asterasys",
+          title: "Lifthera",
+          body: "Draws the focus along a continuous line rather than a row of separate dots, which the manufacturer links to reduced discomfort. A pen-type applicator reaches smaller, curved areas such as around the eyes, the nasolabial region and along the jaw.",
+          href: "/technology/lifthera",
+          hrefLabel: "About Lifthera",
+        },
+      ],
+      note: "Neither device includes on-screen imaging of the tissue layers. Where the doctor wants to see those layers before placing energy, the separate Ultherapy platform is the one used.",
+    },
+
     ctaMid: {
       heading: "Not sure whether lifting is what your face needs?",
       body: "Laxity, volume loss and skin quality look similar in the mirror and are treated differently. A doctor can tell you which one you are actually seeing, and whether HIFU addresses it. Free consultation, no obligation.",
     },
+
+    // T-09
+    avoidIf: [
+      { lead: "Pregnancy or breastfeeding.", body: "Treatment is deferred." },
+      {
+        lead: "Active infection, inflamed acne or open wounds",
+        body: "in the area to be treated.",
+      },
+      {
+        lead: "Implants, metallic or cardiac devices, or recently placed dermal fillers",
+        body: "lying in the path of the energy.",
+      },
+      { lead: "A tendency to keloid scarring.", body: "" },
+      {
+        lead: "Certain medications and medical conditions,",
+        body: "which your doctor goes through with you at consultation.",
+      },
+    ],
+    bringToConsult:
+      "Bring your full medical history, a list of your medications and every previous aesthetic treatment. Implants and devices in the treatment field are the ones people most often forget to mention, and they matter here.",
+
+    // T-10 — step 1 states the first visit is not a treatment.
+    sessionSteps: [
+      {
+        title: "Consultation and assessment",
+        body: "Your first visit is a consultation, not a treatment. The doctor examines where your laxity actually sits and decides whether there is enough of it for focused ultrasound to be worth doing, and which device suits the areas involved.",
+      },
+      {
+        title: "Mapping and preparation",
+        body: "The skin is cleansed, the treatment areas are marked so the energy is mapped rather than applied uniformly, and ultrasound coupling gel is applied. Topical numbing may be used depending on the area.",
+      },
+      {
+        title: "The treatment lines",
+        body: "The doctor delivers the energy line by line with the selected cartridges. Most people describe brief warmth, prickling or a deep tapping with each pulse rather than continuous pain, felt more over bony areas such as the jaw and forehead. Settings can be adjusted if it is uncomfortable.",
+      },
+      {
+        title: "Afterwards",
+        body: "The gel is removed and you are given aftercare advice. Most people return to normal activities the same day.",
+      },
+    ],
+
+    // T-11 — physical recovery only, never a timeframe to a result.
+    afterSession: {
+      intro:
+        "HIFU is usually associated with little to no downtime, though this varies between individuals. Nothing needs to heal on the surface, because the energy is placed beneath it.",
+      bands: [
+        {
+          title: "Straight afterwards",
+          body: "Mild redness and slight swelling in the treated area can occur. Most people carry on with their day.",
+        },
+        {
+          title: "The first few days",
+          body: "Tenderness to touch, or a temporary feeling of firmness in the treated area, generally settles on its own over a few days.",
+        },
+        {
+          title: "The following weeks and months",
+          body: "The collagen response continues gradually, so any change develops over weeks to a few months rather than on the day, and it varies considerably between individuals. Plans often include a review once enough time has passed to judge it.",
+        },
+      ],
+      aftercare:
+        "Gentle skincare and daily sun protection afterwards. Your doctor may ask you to avoid intense heat such as saunas or hot yoga for a short period, and will give aftercare guidance specific to your plan.",
+    },
+
+    // T-12
+    risks: {
+      intro:
+        "As with any medical procedure, HIFU carries risks. These are explained to you in full at consultation, before anything is booked.",
+      common:
+        "Redness, swelling, tenderness, small areas of bruising, and transient numbness or tingling in the treated area.",
+      lessCommon:
+        "Welts, and temporary nerve-related effects such as localised muscle weakness, have been reported with focused-ultrasound treatments. Serious effects are uncommon when the treatment is appropriately selected, correctly mapped and performed by a trained doctor.",
+      pigmentNote:
+        "Focused ultrasound is absorbed by tissue rather than by melanin, so HIFU is generally used across a wide range of skin tones, including deeper Asian skin, without the pigment considerations that apply to some lasers. The risk that matters here is a different one: energy delivered deep into tissue by a poorly calibrated device or an untrained operator can cause burns, unwanted fat loss or nerve injury. That is why the specific named device, and a doctor delivering it, matter more than the word HIFU on a price list.",
+      cannotDo: [
+        "It is not a facelift. It does not cut, lift or remove skin, and the degree of change is not comparable to surgery. Significant, heavy sagging is often better discussed as a surgical question, and your doctor will say so honestly.",
+        "It does not replace lost volume, relax lines caused by muscle movement, or treat surface texture and pigment.",
+        "It is not permanent. Skin continues to age after any tightening treatment, which is why plans include review and occasional maintenance.",
+      ],
+      disclose:
+        "Tell your doctor if you are or may be pregnant or breastfeeding, have implants, metallic or cardiac devices or recent dermal fillers in the treatment area, have a tendency to keloid scarring, take any medication, or have had previous energy-based treatments.",
+    },
+
+    // T-13 — factors only, no figures (settled 2026-09-20).
+    costFactors: {
+      intro:
+        "Kaiteki does not quote prices online, because what a HIFU plan involves is decided by examining your face. What moves it:",
+      factors: [
+        "The areas treated. A jawline-and-neck plan is a different amount of work from a full face and neck.",
+        "The number of shots or lines delivered across those areas.",
+        "Which device and cartridges your plan needs.",
+        "Whether the plan is a single session with a review, or a short course.",
+        "Whether HIFU is combined with another treatment in a wider plan.",
+      ],
+      outro:
+        "HIFU is often planned as a single session with a review some months later, or as a small number of sessions spaced over time, with occasional maintenance afterwards. Your doctor sets out what is realistic for your face.",
+    },
+
+    // Factual rows only. Downtime is each treatment's own `durationDowntime`.
+    comparisons: [
+      {
+        name: "HIFU",
+        bestFor: "Early to moderate laxity along the jaw, lower face and neck",
+        downtime: "None for most people",
+      },
+      {
+        name: "Ultherapy",
+        bestFor: "Laxity where the doctor views the tissue layers on screen before treating",
+        downtime: "None for most people",
+      },
+      {
+        name: "Dermal fillers",
+        bestFor: "Lines and hollows caused by lost volume or structure",
+        downtime: "1-3 days",
+      },
+      {
+        name: "Botulinum toxin",
+        bestFor: "Lines caused by muscle movement",
+        downtime: "None",
+      },
+      {
+        name: "Skin booster",
+        bestFor: "Skin quality and hydration rather than laxity",
+        downtime: "1-2 days",
+      },
+    ],
+
     related: ["ultherapy", "skin-booster", "botulinum-toxin"],
+    relatedReasons: {
+      ultherapy:
+        "Focused ultrasound with on-screen imaging, used where the doctor wants to see the tissue layers before placing energy.",
+      "skin-booster":
+        "Considered where the concern is skin quality and hydration rather than laxity, which HIFU does not address.",
+      "botulinum-toxin":
+        "Used for lines caused by muscle movement, which focused ultrasound does not treat.",
+    },
     reviewedBy: "dr-yvonne-chuah",
     lastReviewed: "2026-06-18",
     seoTitle: "HIFU Malaysia | Non-Surgical Lifting Treatment | Kaiteki",
@@ -373,61 +553,10 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How it works",
+        heading: "How does HIFU reach the layer a facelift works on?",
         body: [
-          "HIFU concentrates ultrasound energy at set depths within the skin's supporting layers. This controlled energy is intended to prompt the skin's natural collagen-renewal response over the following weeks, which may gradually support a firmer, more lifted appearance.",
-          "At Kaiteki, HIFU is delivered using devices such as Lifthera and Ultracel Q. The treating doctor selects the applicator and settings for your skin and the area being addressed. Any changes develop gradually and vary between individuals.",
-        ],
-      },
-      {
-        heading: "Devices & technology: HIFU and Ultherapy",
-        body: [
-          "HIFU and Ultherapy both use focused ultrasound but are distinct treatments. The HIFU devices used at Kaiteki (Lifthera / Ultracel Q) deliver focused ultrasound and are often considered for deeper areas such as the jaw and jowls. Ultherapy is a separate micro-focused-ultrasound platform sometimes considered for more precise areas such as the brow and neck.",
-          "This is a factual difference in how each device delivers energy, not a statement that one is better than the other. Which approach is appropriate, if any, is decided with your doctor at consultation.",
-        ],
-      },
-      {
-        heading: "What it may help address",
-        body: [
-          "HIFU is commonly considered for the concerns below. Whether it is one of the options for you depends on how much laxity there is and how deep it sits, which a doctor establishes by examining your face — not from a list, and not from a photograph.",
-        ],
-        list: [
-          "Skin laxity and sagging along the jawline and jowls",
-          "Loss of firmness associated with reduced collagen over time",
-          "Fine lines and an overall loss of skin tone on the face and neck",
-          "Facial contour concerns as part of a wider plan",
-        ],
-      },
-      {
-        heading: "Suitability & who should avoid it",
-        body: [
-          "Suitability is assessed individually. HIFU may not be appropriate during pregnancy or breastfeeding, with certain skin conditions, active infection or lesions in the treatment area, some implants or medical devices, or particular medications. Bring your full medical history to the consultation — implants and devices in the treatment field are the ones people most often forget to mention, and they matter here.",
-        ],
-      },
-      {
-        heading: "The session at Kaiteki",
-        body: [
-          "Your first visit is a consultation, not a treatment: the doctor examines the face and decides whether there is enough laxity for focused ultrasound to be worth doing. If HIFU is appropriate, the ultrasound energy is applied beneath the skin across the treatment area; the collagen-renewal response then continues gradually over the following weeks.",
-          "HIFU is often planned as a small number of sessions spaced across the year rather than a single fixed course, but the plan is individual. Your doctor will explain the expected cadence for your skin, without guaranteeing any particular outcome.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
-          "HIFU is usually associated with little to no downtime, though this varies. Temporary redness, mild swelling or tenderness in the treated area can occur and typically settles on its own. Gentle skincare and sun protection are advised afterwards; your doctor will give aftercare guidance specific to you.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
-        body: [
-          "As with any medical procedure, HIFU carries risks, which are explained during consultation. Temporary effects can include redness, swelling, tenderness or altered sensation in the treated area. Less common effects are discussed by your doctor beforehand. Risks are lower when the treatment is appropriately selected and performed by a trained doctor.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The number of sessions and the cost depend on the area treated, the device used and your individual plan, so pricing is discussed at consultation rather than quoted online. There are no fixed outcomes, and results vary between individuals.",
-          "To find out whether HIFU is suitable for you and what a plan might involve, message us on WhatsApp to arrange a consultation with a Kaiteki doctor.",
+          "HIFU concentrates ultrasound energy at set depths beneath the surface, including the deeper support layer sometimes called the SMAS (superficial muscular aponeurotic system). That is the same layer a surgical facelift addresses, though focused ultrasound reaches it without incisions. The energy creates small, controlled points of heat at those depths while the skin surface is largely spared, which is why there is no wound to heal.",
+          "That controlled heating is what prompts the body's repair response, and over the following weeks the skin produces fresh collagen in the treated zones. Because the mechanism is a collagen response rather than a mechanical tightening, any change develops gradually and varies between individuals. The treating doctor selects the device, depth and settings for your face and the area being addressed.",
         ],
       },
     ],
@@ -447,6 +576,18 @@ export const treatments: Treatment[] = [
       {
         q: "How many HIFU sessions will I need?",
         a: "This varies with the area treated and your individual plan; HIFU is often planned as a small number of sessions across the year rather than a single fixed course. Your doctor will recommend a suitable cadence at consultation. Results vary between individuals.",
+      },
+      {
+        q: "Does HIFU hurt?",
+        a: "Most people describe brief warmth, prickling or a deep tapping with each pulse rather than sustained pain, and it is usually felt more over bony areas such as the jaw and forehead. Topical numbing and adjusted settings can be used to keep it tolerable. Tell your doctor how you are finding it during the session so the settings can be adapted.",
+      },
+      {
+        q: "Are HIFU results permanent?",
+        a: "No. Skin continues to age after any tightening treatment, so any change is not permanent and varies between individuals. Many plans include a review some months later and occasional maintenance rather than a single one-off treatment. Your doctor will explain a realistic timeline for your skin at consultation.",
+      },
+      {
+        q: "Is cheap HIFU safe?",
+        a: "Very low-priced HIFU, particularly in non-medical settings, is where the real risk sits. Focused ultrasound delivers energy deep into tissue, and a poorly calibrated device or an untrained operator can cause burns, unwanted fat loss or nerve injury. Choose a clinic that names its device, uses one registered with Malaysia's Medical Device Authority, and has a registered doctor delivering the treatment.",
       },
     ],
   },
@@ -1005,36 +1146,251 @@ export const treatments: Treatment[] = [
     category: "Injectables",
     image: "/images/treatments/skin-booster.jpg",
     device: "Profhilo",
+    typicalSessions: "A short course, then maintenance",
     summary: "Injectable hydrating treatments used to support skin quality and hydration.",
     leadAnswer:
       "Skin boosters are injectable treatments that deliver hydrating ingredients into the skin to support skin quality and hydration over a course of sessions. Which product suits your skin, and whether an injectable is the right route for what is bothering you, is decided by a doctor at consultation.",
+
+    // docs/15 item 1.4 (2026-09-24): the v2 block set, applied under docs/16 R1.
+    // Seven shared prose sections became typed blocks and were deleted. Every
+    // clinical line below is restructured from copy that already carries a
+    // named reviewer: this page's own sections and the five product pages
+    // (Rejuran, Profhilo, Plinest, Juvelook, Hydrodeluxe). Where the products
+    // differ, the block says which one it means rather than averaging them.
+    // The re-arrangement goes to Dr Chew in the offline review round, which is
+    // why `lastReviewed` is unchanged.
+
+    // T-06 — the concern pages that list skin boosters, plus the two the
+    // product pages route to (acne-affected skin, texture and pores).
+    routes: [
+      {
+        title: "Dull, dry or dehydrated-looking skin",
+        body: "Hydration and overall skin quality, and fine lines associated with dryness. Profhilo and Hydrodeluxe are the hyaluronic acid products in the range, built for hydration.",
+        links: [
+          { href: "/concerns/aging", label: "Read about ageing skin" },
+          { href: "/concerns/fine-lines-wrinkles", label: "Fine lines & wrinkles" },
+        ],
+      },
+      {
+        title: "Sensitised, acne-affected or post-treatment skin",
+        body: "Skin that needs support rather than hydration alone. The polynucleotide boosters, Rejuran and Plinest, are often considered here, once any active acne flare has settled.",
+        links: [{ href: "/concerns/acne", label: "Read about acne" }],
+      },
+      {
+        title: "Texture, pores and the under-eye area",
+        body: "Uneven texture and the look of enlarged pores, where a collagen-stimulating booster such as Juvelook is one option, and the under-eye area, which some products are specifically used for.",
+        links: [
+          { href: "/concerns/enlarged-pores", label: "Enlarged pores" },
+          { href: "/concerns/dark-eye-circles", label: "Dark eye circles" },
+        ],
+      },
+    ],
+    routesNote:
+      "If what you want is a change in contour, such as a fuller cheek, a defined chin or a corrected hollow, a skin booster is the wrong category. Your doctor will say so rather than substituting one for the other.",
+
+    // T-07 — the five products, told apart by what is in them. Material and
+    // manufacturer are the facts already on each product page (docs/15 2.0).
+    variantModule: {
+      heading: "Which skin booster, and what is in it",
+      intro:
+        "Skin booster is an umbrella term, and the products under it are not interchangeable. They differ in their active ingredient, and the ingredient is what decides which skin a doctor considers them for. Which one suits you, if any, is decided after examining your skin.",
+      items: [
+        {
+          eyebrow: "Salmon polynucleotide · Pharma Research, Korea",
+          title: "Rejuran",
+          body: "Used to support the skin barrier and skin healing, and often considered for sensitive, acne-prone or damaged skin. Because it is salmon-derived, any fish or seafood allergy must be declared.",
+          href: "/technology/rejuran",
+          hrefLabel: "About Rejuran",
+        },
+        {
+          eyebrow: "Trout polynucleotide · Mastelli, Italy",
+          title: "Plinest / Newest",
+          body: "A polynucleotide range used to support skin regeneration and elasticity, often considered for stressed, ageing or post-treatment skin. Also fish-derived.",
+          href: "/technology/plinest",
+          hrefLabel: "About Plinest",
+        },
+        {
+          eyebrow: "Hyaluronic acid · IBSA, Italy",
+          title: "Profhilo",
+          body: "A high-concentration hyaluronic acid used for deep hydration and skin remodelling, and to support firmness. It is not a contour filler.",
+          href: "/technology/profhilo",
+          hrefLabel: "About Profhilo",
+        },
+        {
+          eyebrow: "Non-crosslinked HA · Matex Lab, Italy",
+          title: "Hydrodeluxe",
+          body: "A hyaluronic acid hydrogel enriched with calcium hydroxyapatite and amino acids, used to support skin moisture and overall skin quality.",
+          href: "/technology/hydrodeluxe",
+          hrefLabel: "About Hydrodeluxe",
+        },
+        {
+          eyebrow: "PDLLA + HA · VAIM, South Korea",
+          title: "Juvelook",
+          body: "A collagen-stimulating booster used for pores, texture and fine lines. The change builds over months rather than days, so it suits someone willing to wait for a gradual one.",
+          href: "/technology/juvelook",
+          hrefLabel: "About Juvelook",
+        },
+      ],
+      note: "This is why the consultation comes first. A doctor may decide a hydrating or polynucleotide booster is the sensible starting point before a collagen-stimulating one, or that a skin booster is not the right category at all.",
+    },
+
+    // T-09 — the union of the five product pages' contraindications, each
+    // tied to the product it applies to where it is product-specific.
+    avoidIf: [
+      { lead: "Pregnancy or breastfeeding.", body: "Treatment is deferred." },
+      {
+        lead: "Active infection, an acne flare or inflammation",
+        body: "at the intended injection site.",
+      },
+      {
+        lead: "A fish or seafood allergy",
+        body: "for the polynucleotide products, Rejuran and Plinest, which are fish-derived. Any known hypersensitivity to hyaluronic acid or another ingredient matters for the others.",
+      },
+      {
+        lead: "A bleeding disorder or blood-thinning medication.",
+        body: "",
+      },
+      {
+        lead: "A tendency to keloid or hypertrophic scarring,",
+        body: "or certain autoimmune conditions.",
+      },
+      {
+        lead: "Nodules or granulomatous reactions to a previous filler or biostimulator,",
+        body: "which is a consideration for collagen-stimulating products such as Juvelook.",
+      },
+    ],
+    bringToConsult:
+      "Bring your full medical history, allergies and medications, and a list of every injectable you have had before, including fillers. Which product is appropriate, if any, depends on all of it.",
+
+    // T-10 — step 1 states the first visit is not a treatment.
+    sessionSteps: [
+      {
+        title: "Consultation and skin assessment",
+        body: "A doctor examines your skin and decides whether a skin booster is the right category for your concern and, if so, which one: hydrating, polynucleotide or collagen-stimulating.",
+      },
+      {
+        title: "Preparation",
+        body: "The skin is cleansed and a topical anaesthetic is usually applied and left to take effect, which accounts for much of the appointment time.",
+      },
+      {
+        title: "The injections",
+        body: "The doctor places the product as a series of small injections across the assessed area, using the technique and points they judge suitable for you. Because this is an injectable treatment, it is carried out by a doctor throughout.",
+      },
+      {
+        title: "Afterwards",
+        body: "Soothing care and aftercare advice. The number of sessions and the interval between them are set for your skin and your response, not by a standard schedule.",
+      },
+    ],
+
+    // T-11 — physical recovery only. The bands follow the product pages:
+    // hyaluronic acid disperses faster than polynucleotide.
+    afterSession: {
+      intro:
+        "Downtime after a skin booster is usually short but genuinely visible for a period, and it varies between products and between individuals.",
+      bands: [
+        {
+          title: "Straight afterwards",
+          body: "Small raised bumps at each injection point are expected. Redness, mild swelling and pinpoint bruising can also occur.",
+        },
+        {
+          title: "The first day or two",
+          body: "The bumps settle as the product disperses: within hours to about a day for hyaluronic acid boosters such as Profhilo, and over roughly one to two days for polynucleotides such as Rejuran and Plinest.",
+        },
+        {
+          title: "The following few days",
+          body: "Some tenderness and any bruising fade. After a collagen-stimulating booster such as Juvelook, redness and bumps can take a few days to settle.",
+        },
+        {
+          title: "Across the course",
+          body: "Sessions are spaced some weeks apart. Any change develops gradually, and for a collagen-stimulating booster it appears over months rather than days.",
+        },
+      ],
+      aftercare:
+        "Gentle skincare and consistent sun protection afterwards, and temporarily avoiding heat, strenuous exercise and pressure on the treated area. Your doctor will tell you when to resume active skincare, makeup and exercise.",
+    },
+
+    // T-12 — not energy-based, so no pigment note: skin tone is not a
+    // limiting factor the way it is with lasers (every product page says so).
+    risks: {
+      intro:
+        "As with any injectable treatment, skin boosters carry risks. These are explained to you in full at consultation, before anything is booked.",
+      common:
+        "Bumps at the injection points, swelling, redness, bruising, tenderness and small palpable lumps, which typically settle over a short period.",
+      lessCommon:
+        "Infection, prolonged swelling, nodules and hypersensitivity reactions. Persistent nodules or granuloma formation are a recognised consideration with collagen-stimulating products. Vascular complications are rare but recognised with any facial injection. Serious effects are uncommon when the product is appropriately selected and administered by a trained doctor.",
+      cannotDo: [
+        "It does not add volume or change the shape of the face. Skin boosters are not fillers, and a concern about contour needs a different treatment.",
+        "It does not work in a single session. Skin boosters are used as a course, and any change develops gradually.",
+        "It is not permanent. Courses are commonly followed by periodic maintenance.",
+      ],
+      disclose:
+        "Tell your doctor if you are or may be pregnant or breastfeeding, have a fish, seafood or other allergy, take blood-thinning or other medication, have a tendency to keloid scarring or an autoimmune condition, or have had any previous filler or biostimulator treatment.",
+    },
+
+    // T-13 — factors only, no figures (settled 2026-09-20).
+    costFactors: {
+      intro:
+        "Kaiteki does not quote prices online, because the product and the amount of it are decided after examining your skin. What moves it:",
+      factors: [
+        "Which product your doctor selects, and for Juvelook which concentration.",
+        "The number and size of areas: a full face, the under-eye area, the neck, hands or décolletage all differ.",
+        "The quantity of product your doctor judges appropriate.",
+        "How many sessions the course needs, and whether maintenance visits form part of the plan.",
+        "How your skin responds across the course, which is reviewed between sessions.",
+      ],
+      outro:
+        "Skin boosters are typically planned as a short course with maintenance afterwards, but the number of sessions and their spacing are set by your doctor rather than fixed in advance.",
+    },
+
+    // Factual rows only. Downtime is each treatment's own `durationDowntime`.
+    comparisons: [
+      {
+        name: "Skin booster",
+        bestFor: "Skin quality, hydration and fine lines linked to dryness",
+        downtime: "1-2 days",
+      },
+      {
+        name: "Dermal fillers",
+        bestFor: "Lines and hollows caused by lost volume or structure",
+        downtime: "1-3 days",
+      },
+      {
+        name: "Botulinum toxin",
+        bestFor: "Lines caused by muscle movement",
+        downtime: "None",
+      },
+      {
+        name: "HIFU / Ultherapy",
+        bestFor: "Laxity and firmness rather than skin quality",
+        downtime: "None for most people",
+      },
+    ],
+
     related: ["microneedling", "bio-stimulator", "botulinum-toxin"],
+    relatedReasons: {
+      microneedling:
+        "Radiofrequency microneedling, considered for texture, acne-scarring and pore concerns where a device rather than an injectable is the route.",
+      "bio-stimulator":
+        "Injectables intended to support the skin's own structural renewal, planned across months, where the concern is structure rather than hydration.",
+      "botulinum-toxin":
+        "Used for lines caused by muscle movement, which a skin booster does not treat.",
+    },
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-06-08",
     seoTitle: "Skin Booster Malaysia | Rejuran, Profhilo & Juvelook",
     seoDescription:
       "Injectable skin boosters in Malaysia, including Rejuran, Profhilo and Juvelook, for skin hydration and quality. Book a free consultation at Kaiteki.",
-    // Five figure candidates, four slots (Q-23: floor(9 sections / 2)). The one
-    // dropped is `rejuran.jpg`: a packaging shot rather than treatment
-    // photography, and it does not belong in `manufacturerImages` either — that
-    // block renders transparent marks contained on page ground, so an opaque
-    // JPEG lands there as a white rectangle.
+    // Two prose sections, so Q-23 allows floor(2 / 2) = 1 figure. The general
+    // session photograph is the one kept. Held out rather than authored until
+    // the body grows, as pico-laser does:
+    //   treatments/skin-booster/profhilo.jpg        "An injection placed along the lower cheek — one of the points used in a Profhilo protocol."
+    //   treatments/skin-booster/rejuran-healer.jpg  "Injection points marked out on the cheek before a Rejuran Healer session."
+    //   treatments/skin-booster/skin-booster-2.jpg  "The doctor steadies the jawline while positioning the needle at the cheek."
+    // `rejuran.jpg` stays out for the reason it always did: a packaging shot.
     figures: [
       {
         src: "https://cdn.kaiteki.my/treatments/skin-booster/skin-booster.jpg",
         caption: "A fine needle positioned at the cheek under a treatment lamp during a skin-booster session.",
-      },
-      {
-        src: "https://cdn.kaiteki.my/treatments/skin-booster/profhilo.jpg",
-        caption: "An injection placed along the lower cheek — one of the points used in a Profhilo protocol.",
-      },
-      {
-        src: "https://cdn.kaiteki.my/treatments/skin-booster/rejuran-healer.jpg",
-        caption: "Injection points marked out on the cheek before a Rejuran Healer session.",
-      },
-      {
-        src: "https://cdn.kaiteki.my/treatments/skin-booster/skin-booster-2.jpg",
-        caption: "The doctor steadies the jawline while positioning the needle at the cheek.",
       },
     ],
     manufacturerImages: [
@@ -1053,70 +1409,10 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How it works",
+        heading: "How is a skin booster different from a filler?",
         body: [
-          "During a session, a doctor delivers small amounts of the chosen formulation into the skin through a series of fine micro-injections across the treatment area. The ingredients are intended to work within the skin itself to support hydration and skin quality over time.",
-          "Skin boosters are generally used as a course rather than a single treatment, and any change tends to develop gradually and varies between individuals. They are not fillers and are not placed to change shape, which is worth being clear about before the first session.",
-        ],
-      },
-      {
-        heading: "Types of skin booster",
-        body: [
-          "Kaiteki uses several skin-booster formulations, and they differ in their active ingredient and what they are typically used for. A doctor selects and personalises the choice based on your skin during consultation.",
-        ],
-        list: [
-          "Plinest/Newest: a polynucleotide-based formulation used to support skin regeneration and elasticity; often considered for stressed, ageing, or post-treatment skin.",
-          "Profhilo: a high-concentration hyaluronic acid formulation used for deep hydration and skin remodelling, and to support firmness.",
-          "Rejuran: based on salmon polynucleotide (PN/DNA) technology, used to support the skin barrier and skin healing; often considered for sensitive, acne-prone, or damaged skin.",
-          "Hydrodeluxe: a hydrating injectable formulation used to support skin moisture and overall skin quality.",
-          "Juvelook: a hybrid, collagen-stimulating skin booster used to address pores, texture, and fine lines as part of longer-term skin-quality care.",
-        ],
-      },
-      {
-        heading: "What it may help address",
-        body: [
-          "Skin boosters are commonly considered for skin-quality and hydration concerns. Whether a skin booster is appropriate for your concern, and which formulation suits you, is assessed during a consultation.",
-        ],
-        list: [
-          "Dull, dry or dehydrated-looking skin",
-          "Fine lines associated with dryness and loss of skin quality",
-          "Uneven texture and the appearance of enlarged pores",
-          "Sensitised, acne-affected or post-treatment skin needing support",
-        ],
-      },
-      {
-        heading: "Suitability & who should avoid it",
-        body: [
-          "Skin boosters are not suitable for everyone. Your doctor will assess your skin, medical history and goals to advise whether a skin booster is a reasonable option for you and, if so, which formulation.",
-          "As a general precaution, injectable treatments are usually avoided during pregnancy or breastfeeding, over active skin infection or open lesions in the treatment area, and where there is a known allergy to a formulation's ingredients. Tell your doctor about your medical history, medications and any allergies during the consultation so suitability and risks can be assessed properly.",
-        ],
-      },
-      {
-        heading: "The session at Kaiteki",
-        body: [
-          "A session begins with a consultation and skin assessment by a Kaiteki doctor, who discusses your concerns and, if a skin booster is appropriate, selects a suitable formulation. The skin is then cleansed and prepared.",
-          "The doctor delivers the treatment as a series of precise micro-injections into the targeted areas, and finishes with soothing care and aftercare advice. Because this is an injectable treatment, it is carried out by a doctor throughout. Comfort varies between individuals, and your doctor can discuss comfort measures beforehand.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
-          "Downtime is generally minimal for most people. Mild redness or small injection marks can occur in the treated area and commonly settle within a day or two; this varies between individuals.",
-          "Your doctor will give you aftercare guidance, which commonly includes using sunscreen and being gentle with the treated skin for the first few days. Follow the specific advice given for your skin and raise any concerns with the clinic.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
-        body: [
-          "As with any injectable treatment, skin boosters carry potential side effects. Commonly reported temporary effects include redness, minor swelling, small bruises or injection marks, and tenderness at the injection sites, which typically settle over a short period.",
-          "Less common effects can occur, and the full range of risks and how they apply to you is explained by the doctor during your consultation. Contact the clinic if you have any effect that concerns you or does not settle as expected.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "Skin boosters are typically planned as a short course, with the number of sessions and any maintenance cadence depending on your skin, the formulation chosen and your goals. This is planned with your doctor rather than set in advance.",
-          "Cost depends on the formulation and your individual plan, so it is confirmed at consultation rather than quoted upfront. To ask about a consultation, message Kaiteki on WhatsApp and the team will help you arrange an assessment.",
+          "A filler is placed to add volume or change contour: a fuller cheek, a defined chin, a corrected hollow. A skin booster is not. It is delivered as small amounts through a series of fine micro-injections spread across the treatment area, and the ingredients are intended to work within the skin itself to support hydration and skin quality over time.",
+          "That is also why the two are planned differently. A skin booster is generally used as a course rather than a single treatment, and any change tends to develop gradually and varies between individuals. It is worth being clear about which of the two you are after before the first session, because a doctor will not substitute one for the other.",
         ],
       },
     ],
@@ -1136,6 +1432,14 @@ export const treatments: Treatment[] = [
       {
         q: "How many sessions will I need?",
         a: "Skin boosters are generally planned as a course, and the number of sessions and any maintenance vary between individuals depending on your skin and goals. Your doctor will plan this with you rather than set it in advance.",
+      },
+      {
+        q: "What is the difference between Rejuran and Profhilo?",
+        a: "They are built on different ingredients. Rejuran is a salmon-derived polynucleotide, used to support the skin barrier and healing and often considered for sensitive or damaged skin. Profhilo is a high-concentration hyaluronic acid, used for deep hydration and skin remodelling. Neither is a contour filler. Which suits you, if either, depends on your skin and is decided by a doctor at consultation.",
+      },
+      {
+        q: "Can I have a skin booster if I am allergic to fish?",
+        a: "Tell your doctor before anything else. Rejuran and Plinest are polynucleotide products derived from fish, so a fish or seafood allergy matters for those two. The hyaluronic acid boosters are built on a different ingredient, and your doctor will go through your allergies and history before recommending any product.",
       },
     ],
   },
