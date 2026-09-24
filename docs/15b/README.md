@@ -87,5 +87,5 @@ Google already serves. What changes is the reason for doing it, and some of the 
 - **Item 4.5's headline number** ("how many of the 34 have been crawled since") now reads 20 before any
   differentiation has shipped. Report it against this baseline, not against 34.
 
-Resuming the requests and re-framing 3.7 and 4.5 are decisions for the project owner. They are not
-changed here.
+**Decided 2026-09-24:** all three recommendations accepted, recorded as D1–D3 in `docs/15`. The request queue
+is [`request-indexing-2026-09-24.txt`](request-indexing-2026-09-24.txt).
