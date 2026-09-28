@@ -604,6 +604,191 @@ export const treatments: Treatment[] = [
     seoTitle: "Ultherapy Malaysia | Non-Surgical Face Lifting | Kaiteki",
     seoDescription:
       "Ultherapy treatment in Malaysia using focused ultrasound for non-surgical lifting and tightening. Book a free consultation to assess suitability at Kaiteki.",
+    // docs/15 item 2.3 (2026-09-28): the v2 block set, applied under docs/16 R1.
+    // Two prose sections kept; the rest became typed blocks and were deleted.
+    // Block copy is restructured from reviewed text only: this page, the
+    // Ultherapy System device page, the HIFU page and the Ultherapy vs HIFU
+    // guide, and the concern pages' treatmentWhy lines. No new claim, no
+    // figure. The re-arrangement goes to Dr Gan in the offline review round,
+    // which is why `lastReviewed` is unchanged.
+    typicalSessions: "Often 1, with a review",
+    facts: [
+      { value: "On-screen imaging", label: "The doctor sees the tissue layers before each line" },
+      { value: "60–90 minutes", label: "Typical face and neck session" },
+      { value: "Assessment first", label: "Your first visit is a doctor consultation, not a treatment" },
+    ],
+
+    // T-06 — from the concern pages' reviewed treatmentWhy lines.
+    routes: [
+      {
+        title: "Lifting where laxity leads the picture",
+        body: "The same principle as HIFU, with real-time imaging so the doctor can see the tissue layers as energy is delivered. Relevant where precision at depth matters, or where anatomy makes blind delivery less appropriate.",
+        links: [
+          { href: "/concerns/face-lifting", label: "Read about face lifting" },
+          { href: "/concerns/aging", label: "Ageing skin" },
+        ],
+      },
+      {
+        title: "Lifting that softens the fold above it",
+        body: "Relevant where the doctor wants to see the tissue planes while treating, particularly around the brow and lower face.",
+        links: [{ href: "/concerns/fine-lines-wrinkles", label: "Fine lines & wrinkles" }],
+      },
+    ],
+    routesNote:
+      "Laxity, volume loss and skin quality look alike in the mirror and are treated differently. Focused ultrasound addresses laxity. It does not replace lost volume, relax movement lines or improve skin quality, so plans often combine it with other treatments.",
+
+    // T-07 — imaging is the one factual difference; never a ranking (R-02).
+    variantModule: {
+      heading: "Ultherapy or HIFU: what the imaging changes",
+      intro:
+        "Both focus ultrasound energy at a depth beneath the skin, so mechanically they belong to the same family. The distinction is whether the doctor sees the tissue layers on screen before delivering energy, or selects the depth from assessment alone.",
+      items: [
+        {
+          eyebrow: "Imaging-guided · Merz Aesthetics",
+          title: "Ultherapy",
+          body: "The same transducer that delivers energy also produces a live ultrasound image of the tissue beneath it, which the manufacturer calls DeepSEE imaging. Transducers treat at three depths, approximately 1.5 mm, 3.0 mm and 4.5 mm at the level of the SMAS fascia, chosen per area after viewing the anatomy.",
+          href: "/technology/ultherapy-system",
+          hrefLabel: "About the Ultherapy System",
+        },
+        {
+          eyebrow: "Depth set by cartridge · Ultracel Q, Lifthera",
+          title: "HIFU",
+          body: "Energy is delivered at depths set by the cartridge and the doctor's assessment, without the on-screen view. Depth is chosen per area from the available cartridge depths.",
+          href: "/treatments/hifu",
+          hrefLabel: "About HIFU",
+        },
+      ],
+      note: "Imaging-free HIFU devices remain widely and appropriately used. Which suits you depends on your anatomy and goals, and your doctor will explain the reasoning at consultation.",
+    },
+
+    ctaMid: {
+      heading: "Not sure whether Ultherapy or HIFU fits your face?",
+      body: "Both address laxity, and they differ in whether the doctor sees the tissue layers while treating. A doctor can tell you whether your laxity is the kind focused ultrasound addresses, and which approach suits your anatomy. Free consultation, no obligation.",
+    },
+
+    // T-09 — this page's suitability copy plus the Ultherapy System page.
+    avoidIf: [
+      { lead: "Pregnancy or breastfeeding.", body: "Treatment is deferred." },
+      {
+        lead: "Active skin infection, open lesions or significant inflammatory acne",
+        body: "in the treatment area.",
+      },
+      {
+        lead: "Implants, metallic or electronic devices such as pacemakers, or recently placed fillers or threads",
+        body: "lying in the intended path.",
+      },
+      {
+        lead: "Keloid tendency, bleeding disorders, certain medications and some autoimmune conditions,",
+        body: "which your doctor weighs with you at consultation.",
+      },
+    ],
+    bringToConsult:
+      "Tell your doctor about your medical history, medications and any implants during the consultation so suitability can be assessed properly, along with any previous aesthetic treatments.",
+
+    // T-10 — step 1 states the first visit is not a treatment.
+    sessionSteps: [
+      {
+        title: "Consultation and assessment",
+        body: "Your first visit is a consultation, not a treatment. A Kaiteki doctor discusses your concerns, assesses how your laxity is distributed and confirms whether Ultherapy is appropriate.",
+      },
+      {
+        title: "Mapping with imaging",
+        body: "The skin is cleansed, treatment zones are marked on a grid and coupling gel is applied. The doctor then uses the ultrasound imaging to map the tissue layers and choose the depth and settings for each area.",
+      },
+      {
+        title: "The treatment lines",
+        body: "The doctor places the transducer, checks the tissue image on screen to confirm the plane, and delivers a line of focused pulses, repeated line by line across the mapped area. Most people feel warmth and a tingling or prickling sensation, felt more strongly over bony areas, and comfort measures can be discussed beforehand.",
+      },
+      {
+        title: "Afterwards",
+        body: "The doctor finishes with aftercare advice and, where relevant, a follow-up plan. Ultherapy is often planned as a single session with a review a few months later, with maintenance considered periodically rather than on a fixed schedule.",
+      },
+    ],
+
+    // T-11 — physical recovery only, never a timeframe to a result.
+    afterSession: {
+      intro:
+        "Ultherapy is generally a walk-in, walk-out treatment with little to no set downtime for most people. There is usually no wound and no dressing.",
+      bands: [
+        {
+          title: "Straight afterwards",
+          body: "Some people notice mild redness or slight swelling in the treated area for a short period. Most return to normal activities the same day.",
+        },
+        {
+          title: "Days to a few weeks",
+          body: "Tenderness to touch, or a temporary firm or lumpy feeling under the skin, can occur and generally settles over days to a few weeks, though this varies between individuals.",
+        },
+        {
+          title: "Weeks to months",
+          body: "Ultherapy works by prompting the skin's own gradual collagen-renewal response, so any change tends to develop over weeks to months rather than immediately, and it varies between individuals.",
+        },
+      ],
+      aftercare:
+        "The aftercare is short and unglamorous: sun protection, and nothing abrasive on the treated skin for a few days. Your doctor will set out the version that applies to your skin, and the clinic is the right place to take anything that does not settle.",
+    },
+
+    // T-12
+    risks: {
+      intro:
+        "As with any energy-based treatment, Ultherapy carries potential side effects. These are explained to you at consultation, before anything is booked.",
+      common:
+        "Redness, swelling, tenderness, and small areas of numbness or tingling in the treated area, which typically settle over time.",
+      lessCommon:
+        "Because the energy is delivered at fixed depths, the less common effects are the ones that follow from placing it wrongly: temporary weakness or altered sensation where a nerve runs close to the treatment plane. The imaging step exists to make that less likely, and the doctor will go through it with you before treating.",
+      pigmentNote:
+        "Micro-focused ultrasound is absorbed by tissue rather than by melanin, so it is generally used across the full range of skin tones, including deeper Asian skin, without the pigment-related risk profile of some lasers.",
+      cannotDo: [
+        "It is not a facelift. It does not cut or remove skin. It reaches some of the same deeper tissue a surgical facelift addresses, but where surgery would be more appropriate for your concern, your doctor will tell you.",
+        "It is generally considered for mild to moderate laxity rather than very advanced sagging.",
+        "It addresses laxity and loss of definition, not surface texture or pigment.",
+        "It is not permanent. Skin continues to age, so plans often include a review and periodic maintenance.",
+      ],
+      disclose:
+        "Tell your doctor if you are or may be pregnant or breastfeeding, have implants, electronic devices, fillers or threads in the treatment area, have a keloid tendency or bleeding disorder, or take any medication.",
+    },
+
+    // T-13 — factors only, no figures (settled 2026-09-20).
+    costFactors: {
+      intro:
+        "Kaiteki does not quote prices online, because cost is set by the lines of energy delivered and over which areas, and those are decided at consultation. What moves it:",
+      factors: [
+        "The number of lines of energy delivered.",
+        "Which areas are treated. A brow-and-jawline plan, a full face and neck, and a décolletage each represent a different amount of energy delivered.",
+        "The number of sessions and any maintenance cadence, planned with your doctor rather than set in advance.",
+        "Whether Ultherapy is combined with other treatments as part of a wider plan.",
+      ],
+    },
+
+    // Factual rows, as on the HIFU page. Downtime is each treatment's own.
+    comparisons: [
+      {
+        name: "Ultherapy",
+        bestFor: "Laxity where the doctor views the tissue layers on screen before treating",
+        downtime: "None for most people",
+      },
+      {
+        name: "HIFU",
+        bestFor: "Early to moderate laxity along the jaw, lower face and neck",
+        downtime: "None for most people",
+      },
+      {
+        name: "Dermal fillers",
+        bestFor: "Lines and hollows caused by lost volume or structure",
+        downtime: "1-3 days",
+      },
+      {
+        name: "Botulinum toxin",
+        bestFor: "Lines caused by muscle movement",
+        downtime: "None",
+      },
+    ],
+
+    relatedReasons: {
+      hifu: "The same focused-ultrasound principle on devices without on-screen imaging, with the depth set by cartridge and assessment.",
+      "fotona-4d":
+        "A multi-mode laser protocol generally considered for firmness and skin-quality concerns, a different mechanism from focused ultrasound.",
+    },
+
     sections: [
       {
         heading: "What is Ultherapy?",
@@ -613,58 +798,11 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How it works",
+        heading: "How does Ultherapy see the layer it treats?",
         body: [
           "Ultherapy delivers focused ultrasound energy to specific depths, including the deeper support layer of the face sometimes referred to as the SMAS layer. This is the same layer that a surgical facelift addresses, though Ultherapy reaches it non-surgically rather than through incisions.",
           "The energy creates controlled points of heat at those depths, which is intended to prompt the skin's own gradual collagen-renewal response. Because this response builds over time, any change tends to develop gradually over weeks to months and varies between individuals.",
           "Before energy is delivered, the doctor uses the built-in ultrasound imaging to map the tissue layers and choose the depth and settings for each area.",
-        ],
-      },
-      {
-        heading: "What it may help address",
-        body: [
-          "Ultherapy is commonly considered for lifting and tightening concerns on the face and neck. Whether it is appropriate for your concern is assessed during a consultation.",
-        ],
-        list: [
-          "Sagging or loss of firmness around the cheeks and jawline",
-          "Loose or lax skin on the neck",
-          "A drooping or heavy brow",
-          "Fine lines and early signs of skin ageing",
-        ],
-      },
-      {
-        heading: "Suitability & who should avoid it",
-        body: [
-          "Ultherapy is not suitable for everyone, and it is not a substitute for surgery where surgery is more appropriate. It is generally considered for people with mild to moderate skin laxity rather than very advanced sagging. Your doctor will assess your skin, the degree of laxity and your goals to advise whether it is a reasonable option for you.",
-          "As a general precaution, focused-ultrasound treatments are usually avoided during pregnancy or breastfeeding, over active skin infection or open lesions in the treatment area, and where there are certain implants or devices in the treatment zone. Tell your doctor about your medical history, medications and any implants during the consultation so suitability can be assessed properly.",
-        ],
-      },
-      {
-        heading: "The session at Kaiteki",
-        body: [
-          "A session begins with a consultation and skin assessment by a Kaiteki doctor, who will discuss your concerns and confirm whether Ultherapy is appropriate. The doctor then uses ultrasound imaging to map the treatment areas before delivering the focused energy.",
-          "During delivery most people feel warmth and a tingling or prickling sensation while the energy reaches each point; comfort varies between individuals and by area, and your doctor can discuss comfort measures beforehand. The doctor finishes with aftercare advice and, where relevant, a follow-up plan.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
-          "Ultherapy is generally a walk-in, walk-out treatment with little to no set downtime for most people. Some people notice mild redness, slight swelling or tenderness in the treated area for a short period afterwards; this varies between individuals.",
-          "The aftercare is short and unglamorous: sun protection, and nothing abrasive on the treated skin for a few days. Your doctor will set out the version that applies to your skin, and the clinic is the right place to take anything that does not settle.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
-        body: [
-          "As with any energy-based treatment, Ultherapy carries potential side effects. Commonly reported temporary effects include redness, swelling, tenderness, and small areas of numbness or tingling in the treated area, which typically settle over time.",
-          "Because the energy is delivered at fixed depths, the less common effects are the ones that follow from placing it wrongly: temporary weakness or altered sensation where a nerve runs close to the treatment plane. The imaging step exists to make that less likely, and the doctor will go through it with you before treating.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The number of sessions and any maintenance cadence depend on your skin, the areas treated and your goals, and are planned with your doctor rather than set in advance. Ultherapy is sometimes considered alongside other treatments as part of a wider plan, which the doctor will discuss if relevant.",
-          "Cost is set by the number of lines of energy delivered and over which areas, so it is confirmed at consultation once those are decided rather than quoted upfront. Message Kaiteki on WhatsApp and the team will arrange the assessment.",
         ],
       },
     ],
@@ -934,6 +1072,173 @@ export const treatments: Treatment[] = [
         caption: "Sylfirm — the manufacturer's mark for the radiofrequency microneedling device.",
       },
     ],
+    // docs/15 item 2.3 (2026-09-28): the v2 block set, applied under docs/16 R1.
+    // Two prose sections kept. "Devices & technology" became the variant
+    // module, and the shared sections became typed blocks and were deleted.
+    // Block copy is restructured from reviewed text only: this page, the
+    // Morpheus8, Sylfirm X and Potenza device pages, and the concern pages'
+    // treatmentWhy lines. No new claim, no figure. The re-arrangement goes to
+    // Dr Say in the offline review round; `lastReviewed` is unchanged.
+    typicalSessions: "A course, spaced a few weeks apart",
+    facts: [
+      { value: "3 RF microneedling devices", label: "Matched to your concern and skin" },
+      { value: "30–45 minutes of numbing", label: "Before a treatment of around 20 to 40 minutes" },
+      { value: "Assessment first", label: "Your first visit is a doctor consultation, not a treatment" },
+    ],
+
+    // T-06 — from the concern pages' reviewed treatmentWhy lines.
+    routes: [
+      {
+        title: "Depressed scarring, texture and enlarged pores",
+        body: "Fine needles deliver radiofrequency energy into the deeper layer of the skin to stimulate collagen. Often the starting point for rolling and boxcar scarring.",
+        links: [
+          { href: "/concerns/acne", label: "Read about acne and acne scarring" },
+          { href: "/concerns/enlarged-pores", label: "Enlarged pores" },
+        ],
+      },
+      {
+        title: "Etched lines and overall texture",
+        body: "Considered for static lines and general texture, where the aim is collagen through the deeper skin rather than relaxing movement.",
+        links: [{ href: "/concerns/fine-lines-wrinkles", label: "Fine lines & wrinkles" }],
+      },
+    ],
+    routesNote:
+      "Scar work is a staged process: different scar types respond differently, and some benefit from being combined with other treatments. A doctor sets realistic expectations at consultation rather than promising a single fix.",
+
+    // T-07 — the "Devices & technology" section, as the variant module (R1).
+    variantModule: {
+      heading: "Morpheus8, Sylfirm X or Potenza: which device, and why",
+      intro:
+        "Kaiteki offers three RF microneedling devices. Each has different technical characteristics, and a doctor matches the device and settings to your concern and skin during consultation.",
+      items: [
+        {
+          eyebrow: "Subdermal reach · InMode",
+          title: "Morpheus8",
+          body: "Designed for deeper RF penetration. It is generally discussed in the context of skin-tightening and deeper concerns such as sagging, the jaw and neck area.",
+          href: "/technology/morpheus8",
+          hrefLabel: "About Morpheus8",
+        },
+        {
+          eyebrow: "Pulsed and continuous wave · Viol",
+          title: "Sylfirm X",
+          body: "A dual-wave device that can deliver RF in both pulsed and continuous modes. It is generally discussed in the context of pigment-related and vascular concerns such as melasma, post-inflammatory hyperpigmentation and redness.",
+          href: "/technology/sylfirm-x",
+          hrefLabel: "About Sylfirm X",
+        },
+        {
+          eyebrow: "Monopolar and bipolar · Cynosure Lutronic",
+          title: "Potenza",
+          body: "Offers adjustable needle depth with both monopolar and bipolar RF modes. It is generally discussed in the context of acne scarring, enlarged pores and oil-related texture concerns.",
+          href: "/technology/potenza",
+          hrefLabel: "About Potenza",
+        },
+      ],
+      note: "The right choice for you is decided by a doctor during consultation.",
+    },
+
+    ctaMid: {
+      heading: "Not sure which of the three devices suits your skin?",
+      body: "Scarring, pores, pigment and firmness point to different devices and different depths. A doctor can tell you which one you are actually dealing with. Free consultation, no obligation.",
+    },
+
+    // T-09 — this page's suitability copy plus the three device pages.
+    avoidIf: [
+      { lead: "Pregnancy or breastfeeding.", body: "Treatment is deferred." },
+      {
+        lead: "Active skin infection, acne flares or inflamed areas",
+        body: "in the treatment area.",
+      },
+      { lead: "Recent oral isotretinoin,", body: "or other medications your doctor goes through with you." },
+      { lead: "A history of keloid scarring.", body: "" },
+      {
+        lead: "A pacemaker or other implanted electronic device,",
+        body: "metal implants or permanent fillers in the treatment area, which must be declared.",
+      },
+      { lead: "Clotting disorders or blood thinners.", body: "" },
+    ],
+    bringToConsult:
+      "Please share your full medical, medication and skincare history at consultation. Recently tanned or sunburnt skin may also mean postponing.",
+
+    // T-10 — step 1 states the first visit is not a treatment.
+    sessionSteps: [
+      {
+        title: "Consultation and assessment",
+        body: "Your first visit is a consultation, not a treatment. A doctor reviews your skin, medical history and any current skin conditions, and matches the device and settings to your concern.",
+      },
+      {
+        title: "Numbing",
+        body: "A topical numbing cream is applied for around 30 to 45 minutes to help with comfort. This usually accounts for much of the appointment.",
+      },
+      {
+        title: "The treatment",
+        body: "The procedure itself usually takes around 20 to 40 minutes, depending on the area and settings. Needle depth, energy level and pattern are adjusted to your skin, and many people describe the sensation as mild heat and pressure.",
+      },
+      {
+        title: "Afterwards",
+        body: "The treated area is cooled and soothed, and you are given aftercare guidance. RF microneedling is usually approached as a course of sessions spaced a few weeks apart, planned with your clinician.",
+      },
+    ],
+
+    // T-11 — physical recovery only.
+    afterSession: {
+      intro: "Downtime varies between individuals, and with the depth and energy used.",
+      bands: [
+        {
+          title: "The first one to two days",
+          body: "Some redness is common, and the skin can look flushed and feel warm, often with a faint grid pattern from the needle tips.",
+        },
+        {
+          title: "The following days",
+          body: "Some dryness or light flaking afterwards can be normal. Deeper settings can leave the skin flushed and tender for slightly longer, and pinpoint scabs can occur.",
+        },
+        {
+          title: "Between sessions",
+          body: "The skin's repair and collagen-remodelling response builds over time, which is why the course is spaced a few weeks apart and reviewed as it goes.",
+        },
+      ],
+      aftercare:
+        "Sun protection and gentle skincare while the skin settles, with actives such as retinoids or acids usually paused for a short period. Follow the specific instructions given to you at your appointment.",
+    },
+
+    // T-12
+    risks: {
+      intro:
+        "As with any procedure that penetrates the skin, RF microneedling carries potential risks and side effects. The relevant risks for your skin and history are explained during consultation so you can make an informed decision.",
+      common:
+        "Redness, swelling, sensitivity, dryness, pinpoint bruising or scabbing, and temporary changes in skin appearance.",
+      lessCommon:
+        "Infection, prolonged pigment change or scarring. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor.",
+      pigmentNote:
+        "Radiofrequency energy is not absorbed by melanin the way laser light is, so RF microneedling is used across a broad range of skin tones, including deeper Asian skin, and is generally considered a lower pigmentation-risk option for medium and deeper skin tones. Temporary pigment changes are still possible, particularly with deeper settings or without good sun protection afterwards.",
+      cannotDo: [
+        "It is not a substitute for surgery where there is significant sagging or excess skin.",
+        "Scar work is staged. Different scar types respond differently, and no single session is a fix.",
+        "It does not settle melasma for good. Melasma is chronic and relapsing, and needs ongoing topical care and sun protection alongside any procedure.",
+      ],
+      disclose:
+        "Tell your doctor if you are or may be pregnant or breastfeeding, have taken oral isotretinoin recently, have a keloid history, a clotting disorder or take blood thinners, or have a pacemaker, metal implants or permanent fillers.",
+    },
+
+    // T-13 — factors only, no figures (settled 2026-09-20).
+    costFactors: {
+      intro:
+        "Kaiteki does not quote prices online, because the device, the area and the plan are decided at consultation. What moves it:",
+      factors: [
+        "Which device your doctor selects for your concern.",
+        "The size of the area treated.",
+        "The depths and modes used.",
+        "The number of sessions in the course.",
+        "Single-use consumable needle tips, which are part of what shapes the cost of any RF microneedling session.",
+      ],
+    },
+
+    relatedReasons: {
+      "pico-laser":
+        "A picosecond laser used for pigmentation, dull skin tone and tattoo removal, where the concern is pigment rather than texture or scarring.",
+      "skin-booster":
+        "Injectable hydrating treatments used to support skin quality and hydration, where an injectable rather than a device is the route.",
+    },
+
     sections: [
       {
         heading: "What is RF microneedling?",
@@ -943,68 +1248,10 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How it works",
+        heading: "How does RF microneedling treat several depths in one session?",
         body: [
           "The device passes fine needles into the skin to create controlled micro-injuries, then delivers radiofrequency energy from the needle tips as thermal energy within the skin.",
           "Because the needle depth and energy can be adjusted, the treatment can be targeted at multiple skin depths in one session. This combination is intended to prompt the skin's natural repair and collagen-remodelling response over time. The extent of any change varies between individuals.",
-        ],
-      },
-      {
-        heading: "Devices & technology",
-        body: [
-          "Kaiteki offers three RF microneedling devices. Each has different technical characteristics, and a doctor matches the device and settings to your concern and skin during consultation.",
-        ],
-        list: [
-          "Morpheus8: designed for deeper RF penetration. It is generally discussed in the context of skin-tightening and deeper concerns such as sagging, the jaw and neck area.",
-          "Sylfirm X: a dual-wave device that can deliver RF in both pulsed and continuous modes. It is generally discussed in the context of pigment-related and vascular concerns such as melasma, post-inflammatory hyperpigmentation and redness.",
-          "Potenza: offers adjustable needle depth with both monopolar and bipolar RF modes. It is generally discussed in the context of acne scarring, enlarged pores and oil-related texture concerns.",
-        ],
-      },
-      {
-        heading: "What it may help address",
-        body: [
-          "RF microneedling is commonly considered for the following concerns. Whether it is suitable for your situation, and what results are realistic, varies between individuals and is assessed at consultation.",
-        ],
-        list: [
-          "Acne scarring and uneven skin texture",
-          "Enlarged or visible pores",
-          "Pigmentation concerns such as melasma and post-inflammatory hyperpigmentation",
-          "Redness and general skin firmness",
-        ],
-      },
-      {
-        heading: "Suitability & who should avoid it",
-        body: [
-          "RF microneedling is not suitable for everyone. A doctor reviews your skin, medical history and any current skin conditions before recommending it.",
-          "It may not be appropriate during pregnancy or breastfeeding, over active skin infections, acne flares or inflamed areas, or where certain medications, implants or medical conditions are involved. Please raise any of these at consultation so suitability can be assessed on an individual basis.",
-        ],
-      },
-      {
-        heading: "The session at Kaiteki",
-        body: [
-          "A typical session begins with a consultation, after which a topical numbing cream is applied for around 30 to 45 minutes to help with comfort. The RF microneedling procedure itself usually takes around 20 to 40 minutes, depending on the area and settings.",
-          "During treatment, needle depth, energy level and pattern are adjusted to your skin. Many people describe the sensation as mild heat and pressure. Any discomfort and what to expect on the day is explained beforehand.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
-          "Downtime varies between individuals. Some redness for one to two days is common, and some dryness or light flaking afterwards can be normal.",
-          "Your clinician will give you aftercare guidance, which typically includes sun protection and gentle skincare while the skin settles. Follow the specific instructions given to you at your appointment.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
-        body: [
-          "As with any procedure that penetrates the skin, RF microneedling carries potential risks and side effects. These can include redness, swelling, sensitivity, dryness, and temporary changes in skin appearance, and less commonly other reactions.",
-          "The relevant risks for your skin and history are explained during consultation so you can make an informed decision.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "RF microneedling is usually approached as a course of sessions spaced a few weeks apart, with the number and interval tailored to your concern and skin. This is planned with your clinician.",
-          "Cost depends on the device, the area treated and your individual plan, so it is confirmed at consultation rather than quoted upfront. To ask about a consultation, message us on WhatsApp at +60 10-381 8170 to book a free consultation.",
         ],
       },
     ],
@@ -1765,6 +2012,128 @@ export const treatments: Treatment[] = [
           "A PRP preparation drawn up at the couch — one of the procedures exosome therapy is combined with.",
       },
     ],
+    // docs/15 item 2.3 (2026-09-28): the v2 block set, applied under docs/16 R1.
+    // Two prose sections kept; the rest became typed blocks and were deleted.
+    // Block copy is restructured from reviewed text only: this page and the
+    // acne and hair-loss pages' treatmentWhy lines. No variant module: the RG
+    // archetype's T-07 is an evidence-status comparison, and no reviewed copy
+    // states one, so it is left out rather than written (docs/16 R3). The
+    // re-arrangement goes to Dr Yap in the offline review round.
+    typicalSessions: "A short course, individual",
+    facts: [
+      { value: "Used alongside other treatments", label: "Microneedling, a laser or PRP, planned together" },
+      { value: "Skin or scalp", label: "The two areas it is applied to" },
+      { value: "Assessment first", label: "Your first visit is a doctor consultation, not a treatment" },
+    ],
+
+    // T-06 — from the concern pages' reviewed treatmentWhy lines.
+    routes: [
+      {
+        title: "Skin recovery after energy-based acne treatment",
+        body: "A regenerative approach applied after energy-based treatment to support skin recovery. It is offered as an adjunct rather than a standalone acne treatment.",
+        links: [{ href: "/concerns/acne", label: "Read about acne" }],
+      },
+      {
+        title: "The scalp, alongside medical hair-loss treatment",
+        body: "A regenerative preparation applied to the scalp to support the follicular environment, offered as an adjunct to medical management. It is not a substitute for finding the cause.",
+        links: [{ href: "/concerns/hair-loss", label: "Read about hair loss" }],
+      },
+    ],
+    routesNote:
+      "Exosome therapy is used alongside other treatments, not instead of them. The evidence base is still developing, so a doctor will be explicit at consultation about what is established and what is not before suggesting it to anyone.",
+
+    ctaMid: {
+      heading: "Wondering whether exosome therapy adds anything to your plan?",
+      body: "It is an adjunct, so whether it belongs in your plan depends on what it would accompany. A doctor will explain what the current evidence does and does not support. Free consultation, no obligation.",
+    },
+
+    // T-09
+    avoidIf: [
+      { lead: "Pregnancy or breastfeeding.", body: "Treatment is deferred." },
+      { lead: "Certain skin or scalp conditions", body: "in the area to be treated." },
+      {
+        lead: "Some medical conditions or medications,",
+        body: "which your doctor goes through with you at consultation.",
+      },
+    ],
+    bringToConsult:
+      "Please share your full medical, skincare and hair history at consultation so the doctor can advise you safely. Because this is an emerging treatment, your doctor will also discuss what is and is not known before you decide.",
+
+    // T-10 — step 1 states the first visit is not a treatment.
+    sessionSteps: [
+      {
+        title: "Consultation and assessment",
+        body: "Your first visit is a consultation, not a treatment. A doctor assesses your skin or scalp and decides whether exosome therapy is appropriate, and what it would be combined with.",
+      },
+      {
+        title: "The accompanying procedure",
+        body: "Exosome therapy is often combined with another treatment, for example microneedling, a laser, or a PRP (platelet-rich plasma) procedure, so the session is planned around that combination. Because exosomes are small, they are commonly applied after a procedure that briefly opens channels in the skin.",
+      },
+      {
+        title: "Application",
+        body: "The exosome preparation is applied to the treated skin or scalp.",
+      },
+      {
+        title: "Afterwards",
+        body: "You are given aftercare guidance specific to your treatment. The number of sessions is individual: a short course spaced a few weeks apart is common for regenerative treatments, but your doctor will outline a plan suited to you rather than a fixed package.",
+      },
+    ],
+
+    // T-11 — RG archetype: same day, the first week, cadence.
+    afterSession: {
+      intro:
+        "Downtime depends largely on any procedure exosome therapy is combined with, and varies between individuals.",
+      bands: [
+        {
+          title: "The same day",
+          body: "When paired with microneedling or a laser, temporary redness, mild swelling or sensitivity can occur.",
+        },
+        {
+          title: "The first week",
+          body: "These typically settle over the following days.",
+        },
+        {
+          title: "Across a course",
+          body: "Any change tends to develop gradually over the weeks after treatment rather than immediately, and the extent varies between individuals.",
+        },
+      ],
+      aftercare:
+        "Gentle skincare and sun protection are usually advised afterwards. Your doctor will give aftercare guidance specific to your treatment.",
+    },
+
+    // T-12
+    risks: {
+      intro:
+        "As with any medical procedure, exosome therapy carries risks, which are explained during consultation.",
+      common: "Redness, swelling, sensitivity or irritation at the treated area.",
+      lessCommon:
+        "Any procedure it is combined with, such as microneedling, a laser or PRP, carries its own considerations, which are explained alongside it.",
+      cannotDo: [
+        "It is not a standalone acne treatment. It is offered as an adjunct, applied after energy-based treatment to support skin recovery.",
+        "It is not a treatment for hair loss in its own right, and it is not a substitute for finding the cause.",
+        "It is not an established treatment in the way the procedures it accompanies are. The evidence base continues to develop, and your doctor will discuss its current limits so you can make an informed decision.",
+      ],
+      disclose:
+        "Tell your doctor if you are or may be pregnant or breastfeeding, and share your full medical, skincare and hair history, including any skin or scalp condition and any medication.",
+    },
+
+    // T-13 — factors only, no figures (settled 2026-09-20).
+    costFactors: {
+      intro:
+        "Kaiteki does not quote prices online. Exosome therapy is almost always planned as part of a combination rather than on its own, so the figure only means anything once that combination is decided. What moves it:",
+      factors: [
+        "The concern being addressed.",
+        "The area treated, skin or scalp.",
+        "Any treatment it is combined with.",
+        "The number of sessions, and your individual response across the course.",
+      ],
+    },
+
+    relatedReasons: {
+      "skin-booster":
+        "Injectable hydrating treatments used to support skin quality and hydration, with their own established role rather than as an adjunct.",
+    },
+
     sections: [
       {
         heading: "What is exosome therapy?",
@@ -1774,56 +2143,10 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How it works",
+        heading: "Why is exosome therapy applied after another procedure?",
         body: [
           "The aim of exosome therapy is to support the skin's or scalp's own repair and renewal processes by delivering exosome-based signalling molecules to the treated area. Because exosomes are small, they are commonly applied after a procedure that briefly opens channels in the skin, such as microneedling or certain lasers.",
           "How an individual responds varies, and any change tends to develop gradually rather than immediately. Your doctor will explain what is realistic for your skin or scalp and how exosome therapy fits your overall plan.",
-        ],
-      },
-      {
-        heading: "What it may help address",
-        body: [
-          "Exosome therapy is being used, often within a broader plan, in relation to the concerns below. The evidence base is still developing, so a doctor will be explicit at consultation about what is established and what is not before suggesting it to anyone.",
-        ],
-        list: [
-          "Skin quality, texture and tone as part of a facial-rejuvenation plan",
-          "Support for the skin after resurfacing procedures such as laser or microneedling",
-          "Fine lines and general signs of skin ageing",
-          "Scalp and hair concerns, including thinning hair, often alongside other hair treatments",
-        ],
-      },
-      {
-        heading: "Suitability & who should avoid it",
-        body: [
-          "Suitability is assessed individually. As exosome therapy is an emerging treatment whose evidence base continues to develop, your doctor will discuss what is and is not known before you decide. It may not be appropriate during pregnancy or breastfeeding, with certain skin or scalp conditions, or alongside some medical conditions or medications.",
-          "Please share your full medical, skincare and hair history at consultation so the doctor can advise you safely.",
-        ],
-      },
-      {
-        heading: "The session at Kaiteki",
-        body: [
-          "A visit begins with a doctor consultation and assessment of your skin or scalp. Exosome therapy is often combined with another treatment, for example microneedling, a laser, or a PRP (platelet-rich plasma) procedure, so the session is planned around that combination where appropriate.",
-          "The number of sessions is individual. A short course spaced a few weeks apart is common for regenerative treatments, but your doctor will outline a plan suited to you rather than a fixed package.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
-          "Downtime depends largely on any procedure exosome therapy is combined with, and varies between individuals. When paired with microneedling or a laser, temporary redness, mild swelling or sensitivity can occur and typically settles over the following days.",
-          "Gentle skincare and sun protection are usually advised afterwards. Your doctor will give aftercare guidance specific to your treatment.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
-        body: [
-          "As with any medical procedure, exosome therapy carries risks, which are explained during consultation. Temporary effects can include redness, swelling, sensitivity or irritation at the treated area, and any combined procedure carries its own considerations.",
-          "Because this is an emerging treatment, your doctor will also discuss the current limits of the evidence so that you can make an informed decision.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The number of sessions and overall cost depend on the concern being addressed, the area treated, any treatments it is combined with and your individual response. Since it is almost always priced as part of a combination rather than on its own, the figure only means anything once that combination is decided. Message us on WhatsApp and we will arrange the assessment.",
         ],
       },
     ],
