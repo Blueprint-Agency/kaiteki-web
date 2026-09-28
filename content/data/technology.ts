@@ -766,14 +766,22 @@ export const technology: Technology[] = [
         {
           heading: "How focused ultrasound works on Ultracel Q",
           body: [
-            "Each cartridge focuses ultrasound to a small point at a set depth, creating controlled heating there while the skin surface is largely spared. Jeisys supplies cartridges of differing focal depths so that the dermis, the deeper SMAS layer or the fat layer can be targeted according to the plan; the manufacturer also offers a linear cartridge series it calls LinearFirm, which spreads the focus along a line rather than a single dot, giving a longer continuous heat zone in one pulse. Jeisys states that irradiation time drops from roughly 1.5 seconds per pulse with a dot cartridge to about 0.7 seconds with a linear cartridge, and describes the shorter exposure as more comfortable.",
+            "Each cartridge focuses ultrasound to a small point at a set depth, creating controlled heating there while the skin surface is largely spared. Jeisys also offers a linear cartridge series it calls LinearFirm, which spreads the focus along a line rather than a single dot, giving a longer continuous heat zone in one pulse. Jeisys states that irradiation time drops from roughly 1.5 seconds per pulse with a dot cartridge to about 0.7 seconds with a linear cartridge, and describes the shorter exposure as more comfortable.",
             "Jeisys also describes the platform as operating at a moderated focal temperature (quoted in its clinician material as around 60–65°C, below the range at which collagen is fully broken down) with the intention of prompting collagen renewal through partial thermal denaturation rather than complete destruction. The cartridges have a compact contact tip, which the manufacturer says helps reach awkward contours such as the jawline and under the chin. Depth, energy, cartridge choice and the number of lines delivered are all selected by the treating doctor. Any change develops gradually over weeks and varies between individuals.",
           ],
         },
         {
-          heading: "What it may help address",
+          heading: "Which layers can Ultracel Q reach, and why does the SMAS matter?",
           body: [
-            "Ultracel Q is commonly considered for early to moderate laxity in the lower face and neck, and for definition along the jaw. It is a tightening-type treatment rather than a substitute for surgery, and it is not suitable for everyone.",
+            "Jeisys supplies cartridges of differing focal depths so that the dermis, the deeper SMAS layer or the fat layer can be targeted according to the plan. The SMAS (superficial muscular aponeurotic system) is the deeper support layer of the face: the same layer a surgical facelift addresses, though focused ultrasound reaches it without incisions.",
+            "Which depths are used, and how many lines at each, depends on your degree of laxity and your tissue thickness, which a doctor assesses in person.",
+          ],
+        },
+        {
+          heading: "Is Ultracel Q a facelift?",
+          body: [
+            "No. It is a tightening-type treatment rather than a substitute for surgery: it does not cut, lift or remove skin, and the degree of change is not comparable to surgery. Significant, heavy sagging is often better discussed as a surgical question, and your doctor will say so honestly if that is the case.",
+            "Ultracel Q is commonly considered for early to moderate laxity in the lower face and neck, and for definition along the jaw. It is not suitable for everyone. Concerns it is typically considered for include:",
           ],
           list: [
             "Mild to moderate sagging along the jawline and lower face",
@@ -784,40 +792,38 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "Suitability & who should avoid it",
+          heading: "Who should not have Ultracel Q, and why do fillers in the path matter?",
           body: [
-            "Because focused ultrasound is absorbed by tissue rather than by pigment, HIFU is generally used across a wide range of skin tones, including deeper Asian skin, without the pigment-related considerations that apply to some lasers. It tends to be aimed at people with early to moderate laxity who want a non-surgical option; significant, heavy sagging is often better discussed as a surgical question, and your doctor will say so honestly if that is the case.",
+            "Because focused ultrasound is absorbed by tissue rather than by pigment, HIFU is generally used across a wide range of skin tones, including deeper Asian skin, without the pigment-related considerations that apply to some lasers. It tends to be aimed at people with early to moderate laxity who want a non-surgical option.",
             "Ultracel Q may not be suitable during pregnancy or breastfeeding, over active skin infection or inflammation in the treatment area, or where there are implants, metallic devices, cardiac devices or dermal fillers in the intended path. Certain medications, keloid tendency and some medical conditions also need to be considered. Please share your full medical history, medication list and any previous aesthetic treatments at consultation so the doctor can advise safely.",
           ],
         },
         {
-          heading: "The session at Kaiteki",
+          heading: "How long does an Ultracel Q session take, and what does each pulse feel like?",
           body: [
             "A visit starts with a doctor consultation, an assessment of where your laxity actually sits, and a discussion of whether HIFU is the right tool for it. If it is appropriate, the skin is cleansed, treatment areas are marked, and ultrasound coupling gel is applied. Topical numbing may be used depending on the area and your comfort. The doctor then delivers the shots line by line with the selected cartridges; most people describe brief warmth, prickling or a deep tapping sensation that comes and goes with each pulse rather than continuous pain.",
             "A full face and neck session commonly takes somewhere in the region of 45 to 90 minutes including preparation, depending on the areas covered. HIFU is often planned as a single session with review some months later, or as a small number of sessions spaced out over time, with occasional maintenance afterwards. Your doctor will set out what is realistic for your face at consultation.",
-          ],
-        },
-        {
-          heading: "Downtime & aftercare",
-          body: [
             "Downtime is usually minimal, and most people return to normal activities the same day. Mild redness, slight swelling, tenderness to touch or a temporary feeling of firmness in the treated area can occur and generally settle over a few days.",
             "Gentle skincare and daily sun protection are advised afterwards. Your doctor may ask you to avoid vigorous heat exposure such as saunas for a short period, and will give aftercare guidance specific to your treatment plan.",
           ],
         },
         {
-          heading: "Risks & side effects",
+          heading: "Can Ultracel Q affect the nerves, and what else can go wrong?",
           body: [
             "As with any medical procedure, HIFU with Ultracel Q carries risks, which are explained during consultation. Temporary effects can include redness, swelling, tenderness, small areas of bruising, or transient numbness or tingling in the treated area; less commonly, welts or temporary nerve-related effects such as localised muscle weakness have been reported with focused-ultrasound treatments. Serious effects are uncommon when the treatment is appropriately selected, correctly mapped and performed by a trained doctor.",
           ],
         },
-        {
-          heading: "Sessions & cost factors",
-          body: [
-            "What drives the cost of a HIFU session is the area treated, the number of shots or lines delivered, and which cartridges are needed for your plan. A jawline-and-neck plan is a different amount of work from a full face and neck. How your tissue responds also affects whether a review or maintenance session is worth considering later.",
-            "Pricing is discussed at consultation rather than quoted online, so that any figure reflects the plan actually recommended for you rather than a generic package. Message us on WhatsApp to arrange a consultation.",
-          ],
-        },
       ],
+      costFactors: {
+        intro:
+          "Pricing is discussed at consultation rather than quoted online, so that any figure reflects the plan actually recommended for you rather than a generic package. What moves it:",
+        factors: [
+          "The area treated. A jawline-and-neck plan is a different amount of work from a full face and neck.",
+          "The number of shots or lines delivered.",
+          "Which cartridges are needed for your plan.",
+          "How your tissue responds, which affects whether a review or maintenance session is worth considering later.",
+        ],
+      },
       faqs: [
         {
           q: "How does Ultracel Q differ from other HIFU devices?",
@@ -863,7 +869,6 @@ export const technology: Technology[] = [
           heading: "What is Lifthera?",
           body: [
             "Lifthera (also written Liftera) is a focused-ultrasound lifting device from Asterasys, a Korean medical aesthetic device manufacturer. It belongs to the same broad category as other HIFU devices: ultrasound energy is focused to a point beneath the skin surface so that heating happens in a chosen deeper layer while the surface is largely spared. At Kaiteki it is one of the devices used within the HIFU treatment, and it is often chosen for facial contour work rather than as a whole-face blanket treatment.",
-            "Where it sits in the category is worth understanding if you are comparing quotes. It is a line-focused HIFU platform, not an imaging-guided system, and it is generally positioned as a comfort-oriented, contour-focused option rather than a deep single-session lift. Whether it is the right device for your particular pattern of laxity is a clinical judgement your doctor makes at an in-person consultation.",
           ],
         },
         {
@@ -874,9 +879,17 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "What it may help address",
+          heading: "Line-focused, dot-based or imaging-guided: where does Lifthera sit?",
           body: [
-            "Lifthera is commonly considered where the concern is contour and firmness rather than surface texture or pigment. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
+            "Where it sits in the category is worth understanding if you are comparing quotes. It is a line-focused HIFU platform, not an imaging-guided system, and it is generally positioned as a comfort-oriented, contour-focused option rather than a deep single-session lift. Whether it is the right device for your particular pattern of laxity is a clinical judgement your doctor makes at an in-person consultation.",
+            "Conventional HIFU deposits energy as a row of separate focal dots, whereas Asterasys describes Lifthera as drawing the focus along a continuous line. Neither approach is automatically better for every face. They suit different patterns of laxity and different areas.",
+          ],
+        },
+        {
+          heading: "When is a device like Lifthera not the right answer?",
+          body: [
+            "Lifthera is commonly considered where the concern is contour and firmness rather than surface texture or pigment. It is usually aimed at people with early to moderate laxity. If your laxity is advanced, your doctor may tell you plainly that a non-surgical tightening device is unlikely to be the right answer.",
+            "It is not suitable for everyone, and a consultation determines whether it is appropriate for you. Concerns it is typically considered for include:",
           ],
           list: [
             "Softening definition along the jawline and jowl area",
@@ -887,40 +900,38 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "Suitability & who should avoid it",
+          heading: "What would rule out Lifthera for you?",
           body: [
-            "Focused ultrasound is absorbed by tissue rather than by melanin, so it is generally used across a wide range of skin tones, including deeper Asian skin, without the pigment considerations that apply to some light-based treatments. It is usually aimed at people with early to moderate laxity. If your laxity is advanced, your doctor may tell you plainly that a non-surgical tightening device is unlikely to be the right answer.",
+            "Focused ultrasound is absorbed by tissue rather than by melanin, so it is generally used across a wide range of skin tones, including deeper Asian skin, without the pigment considerations that apply to some light-based treatments.",
             "It may not be suitable during pregnancy or breastfeeding, over active infection, inflamed acne or open wounds in the treatment area, or where implants, metallic or cardiac devices, or recently placed dermal fillers lie in the intended path. Keloid tendency, certain medications and some medical conditions also need to be considered. Please bring your full medical history and a list of previous aesthetic treatments to consultation.",
           ],
         },
         {
-          heading: "The session at Kaiteki",
+          heading: "Why is a Lifthera session mapped area by area, and what is recovery like?",
           body: [
             "A visit begins with a doctor consultation and an assessment of where your laxity actually sits, so that the treatment is mapped rather than applied uniformly. If Lifthera is appropriate, the skin is cleansed, the areas are marked and ultrasound coupling gel is applied. Topical numbing may be offered depending on the area. The doctor then delivers passes with the selected cartridges, using the pen-type applicator for smaller or curved regions where a large cartridge does not sit well.",
             "A face and neck session commonly takes in the region of 45 to 75 minutes including preparation, depending on the areas covered. Plans vary: some are structured as a single session with a review a few months later, others as a small number of sessions spaced weeks apart, sometimes combined with other devices. Your doctor will set out what is realistic for you.",
-          ],
-        },
-        {
-          heading: "Downtime & aftercare",
-          body: [
             "Downtime is usually minimal and most people carry on with their day afterwards. Mild redness, slight swelling or tenderness in the treated area can occur and generally settles within a few days, though this varies between individuals.",
             "Gentle skincare and daily sun protection are advised afterwards, and your doctor may ask you to avoid intense heat such as saunas or hot yoga for a short period. Specific aftercare guidance is given for your plan.",
           ],
         },
         {
-          heading: "Risks & side effects",
+          heading: "What are the risks of Lifthera's line-focused ultrasound?",
           body: [
             "As with any medical procedure, focused-ultrasound treatment with Lifthera carries risks, which are explained during consultation. Temporary effects can include redness, swelling, tenderness, small bruises, or transient numbness or tingling; less commonly, welts or temporary nerve-related effects such as localised muscle weakness have been reported with focused-ultrasound treatments generally. Serious effects are uncommon when the treatment is appropriately selected, carefully mapped and performed by a trained doctor.",
           ],
         },
-        {
-          heading: "Sessions & cost factors",
-          body: [
-            "Cost is driven by the areas treated and the number of lines or passes delivered rather than by time in the chair, so a targeted jawline plan and a full face-and-neck plan are priced differently. Whether your plan is a single session with review or a short course also affects the total, as does any decision to combine it with another device.",
-            "Pricing is discussed at consultation rather than quoted online, so any figure reflects the plan actually recommended for you. Message us on WhatsApp to arrange a consultation.",
-          ],
-        },
       ],
+      costFactors: {
+        intro:
+          "Pricing is discussed at consultation rather than quoted online, so any figure reflects the plan actually recommended for you. What moves it:",
+        factors: [
+          "The areas treated: a targeted jawline plan and a full face-and-neck plan are priced differently.",
+          "The number of lines or passes delivered, rather than time in the chair.",
+          "Whether your plan is a single session with review or a short course.",
+          "Whether it is combined with another device.",
+        ],
+      },
       faqs: [
         {
           q: "What is Lifthera and who makes it?",
@@ -973,13 +984,21 @@ export const technology: Technology[] = [
         {
           heading: "How micro-focused ultrasound with visualisation works",
           body: [
-            "Energy is focused to very small points at set depths, producing discrete zones of controlled heating that prompt a tissue-repair and collagen-remodelling response over the following months. Merz describes DeepSEE transducers that treat at three depths (approximately 1.5 mm in the superficial dermis, 3.0 mm in the deeper dermis and 4.5 mm at the level of the SMAS fascia), so the doctor can choose the layer rather than treating one fixed plane. The intervening tissue and the skin surface are not the target, which is why there is no wound to heal afterwards.",
-            "The imaging is the practical difference during the session. The manufacturer states that the system visualises tissue to a depth of around 8 mm; the current Ultherapy PRIME generation adds a larger screen and a faster image refresh, and Merz lists the face, neck, décolletage, abdomen and arms among the areas it is indicated for. This does not make imaging-free HIFU devices unsuitable (they are well established and are chosen for good reasons), but visualisation does let the doctor confirm depth and avoid structures such as bone and dense fascia before each line. Transducer choice, depth and line count are decided by the treating doctor, and any change develops gradually and varies between individuals.",
+            "Energy is focused to very small points at set depths, producing discrete zones of controlled heating that prompt a tissue-repair and collagen-remodelling response over the following months. The intervening tissue and the skin surface are not the target, which is why there is no wound to heal afterwards.",
+            "The imaging is the practical difference during the session. The current Ultherapy PRIME generation adds a larger screen and a faster image refresh, and Merz lists the face, neck, décolletage, abdomen and arms among the areas it is indicated for. This does not make imaging-free HIFU devices unsuitable (they are well established and are chosen for good reasons), but visualisation does let the doctor confirm depth and avoid structures such as bone and dense fascia before each line. Transducer choice, depth and line count are decided by the treating doctor, and any change develops gradually and varies between individuals.",
           ],
         },
         {
-          heading: "What it may help address",
+          heading: "Which layers does Ultherapy treat, and at what depths?",
           body: [
+            "Merz describes DeepSEE transducers that treat at three depths (approximately 1.5 mm in the superficial dermis, 3.0 mm in the deeper dermis and 4.5 mm at the level of the SMAS fascia), so the doctor can choose the layer rather than treating one fixed plane. The SMAS (superficial muscular aponeurotic system) is the deeper support layer of the face: the same layer a surgical facelift addresses, though focused ultrasound reaches it without incisions.",
+            "The manufacturer states that the system visualises tissue to a depth of around 8 mm, which is what lets the doctor confirm the plane on screen before each line is delivered.",
+          ],
+        },
+        {
+          heading: "Is Ultherapy a non-surgical facelift?",
+          body: [
+            "No. It reaches some of the same deeper tissue a surgical facelift addresses, but it does not cut, lift or remove skin, and the degree of change is not comparable to surgery. If your laxity is advanced or there is significant excess skin, your doctor may say honestly that a non-surgical option is unlikely to achieve what you have in mind.",
             "Ultherapy is commonly considered where the concern is laxity and loss of definition rather than surface texture or pigment. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
           ],
           list: [
@@ -991,40 +1010,37 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "Suitability & who should avoid it",
+          heading: "Does Ultherapy suit every skin tone, and who should avoid it?",
           body: [
-            "Micro-focused ultrasound is absorbed by tissue rather than by melanin, so it is generally used across the full range of skin tones, including deeper Asian skin, without the pigment-related risk profile of some lasers. It tends to suit people with mild to moderate laxity who still have reasonable skin quality. If your laxity is advanced or there is significant excess skin, your doctor may say honestly that a non-surgical option is unlikely to achieve what you have in mind.",
+            "Micro-focused ultrasound is absorbed by tissue rather than by melanin, so it is generally used across the full range of skin tones, including deeper Asian skin, without the pigment-related risk profile of some lasers. It tends to suit people with mild to moderate laxity who still have reasonable skin quality.",
             "It may not be suitable during pregnancy or breastfeeding, over active infection, open wounds or significant inflammatory acne in the treatment area, or where implants, metallic or electronic devices such as pacemakers, or recently placed fillers or threads lie in the intended path. Keloid tendency, bleeding disorders, certain medications and some autoimmune conditions also need to be weighed. Please share your full medical history and previous aesthetic treatments at consultation.",
           ],
         },
         {
-          heading: "The session at Kaiteki",
+          heading: "What happens during an Ultherapy session, from mapping to aftercare?",
           body: [
             "A visit begins with a doctor consultation and an assessment of how your laxity is distributed, since this treatment is planned area by area rather than applied uniformly. If Ultherapy is appropriate, the skin is cleansed, treatment zones are marked on a grid, and coupling gel is applied. The doctor then places the transducer, checks the tissue image on screen to confirm the plane, and delivers a line of micro-focused pulses; this is repeated line by line across the mapped area.",
             "Most people describe brief deep prickling, heat or tingling with each line, felt more strongly over bony areas, with the sensation ending as soon as the pulse does. Comfort measures can be discussed beforehand. A face and neck session commonly takes in the region of 60 to 90 minutes. It is often planned as a single session with a review a few months later once the tissue response has had time to develop, with maintenance considered periodically rather than on a fixed schedule.",
-          ],
-        },
-        {
-          heading: "Downtime & aftercare",
-          body: [
             "There is usually no wound and no dressing, and most people return to normal activities the same day. Mild redness, slight swelling, tenderness to touch, or a temporary firm or lumpy feeling under the skin can occur and generally settle over days to a few weeks, though this varies between individuals.",
             "Gentle skincare and daily sun protection are advised, and your doctor may ask you to avoid strenuous heat exposure for a short period. Aftercare guidance is given specific to the areas treated.",
           ],
         },
         {
-          heading: "Risks & side effects",
+          heading: "What are the risks of Ultherapy, including temporary nerve effects?",
           body: [
             "As with any medical procedure, Ultherapy carries risks, which are explained during consultation. Temporary effects can include redness, swelling, tenderness, bruising, welts, or transient numbness or tingling in the treated area; less commonly, temporary nerve-related effects such as localised muscle weakness or altered sensation have been reported with focused-ultrasound treatments. Serious effects are uncommon when the treatment is appropriately selected, carefully mapped and performed by a trained doctor.",
           ],
         },
-        {
-          heading: "Sessions & cost factors",
-          body: [
-            "Cost in this category is driven by the number of ultrasound lines delivered and the areas covered, not by how long you are in the room. A brow-and-jawline plan, a full face and neck, and a décolletage or body area each represent a different amount of energy delivered. Whether a review or a later maintenance session is worthwhile depends on how your tissue responds.",
-            "Pricing is discussed at consultation rather than quoted online, so that any figure reflects the plan actually recommended for you. Message us on WhatsApp to arrange a consultation.",
-          ],
-        },
       ],
+      costFactors: {
+        intro:
+          "Pricing is discussed at consultation rather than quoted online, so that any figure reflects the plan actually recommended for you. What moves it:",
+        factors: [
+          "The number of ultrasound lines delivered, rather than how long you are in the room.",
+          "The areas covered. A brow-and-jawline plan, a full face and neck, and a décolletage or body area each represent a different amount of energy delivered.",
+          "How your tissue responds, which decides whether a review or a later maintenance session is worthwhile.",
+        ],
+      },
       faqs: [
         {
           q: "What is the difference between Ultherapy and HIFU?",
@@ -1070,7 +1086,6 @@ export const technology: Technology[] = [
           heading: "What is XERF?",
           body: [
             "XERF is a monopolar radiofrequency (RF) platform from Cynosure Lutronic, used at Kaiteki within our radiofrequency treatment for skin-firmness and laxity concerns. The manufacturer markets it under the term Structural Skin Tightening. What sets it apart in the RF category is that it is multifrequency: rather than running at a single fixed frequency, it combines 6.78 MHz and 2 MHz simultaneously, so energy can be biased towards shallower or deeper tissue depending on what the doctor is treating.",
-            "If you are comparing options, the practical distinction is that XERF is a bulk-heating, non-needling device. It works entirely from the skin surface with no needles, no incisions and no topical anaesthetic, different from RF microneedling platforms such as Sylfirm X or Morpheus8, which create fractional channels in the skin and are covered on their own pages. Whether XERF, a needling device, or something else fits your concern is decided by a doctor at an in-person consultation.",
           ],
         },
         {
@@ -1081,8 +1096,16 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "What it may help address",
+          heading: "XERF or RF microneedling: which kind of radiofrequency is this?",
           body: [
+            "If you are comparing options, the practical distinction is that XERF is a bulk-heating, non-needling device. It works entirely from the skin surface with no needles, no incisions and no topical anaesthetic, different from RF microneedling platforms such as Sylfirm X or Morpheus8, which create fractional channels in the skin and are covered on their own pages. Whether XERF, a needling device, or something else fits your concern is decided by a doctor at an in-person consultation.",
+            "RF microneedling delivers energy through fine needles into the skin, which suits some texture and scarring concerns but involves recovery time. XERF's handpiece glides over intact skin, so there are no pinpoint marks. They are different tools rather than better and worse ones.",
+          ],
+        },
+        {
+          heading: "What can XERF firm, and when does sagging need another approach?",
+          body: [
+            "XERF is generally aimed at people with early to moderate laxity who want a non-needling, no-downtime option and are not looking for surgery. Marked sagging may be better served by other approaches your doctor can discuss.",
             "XERF is commonly considered for concerns related to skin laxity and firmness, on the face and on selected body areas. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
           ],
           list: [
@@ -1095,39 +1118,38 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "Suitability & who should avoid it",
+          heading: "Is XERF safe for darker skin, and what rules it out?",
           body: [
-            "XERF is generally aimed at people with early to moderate laxity who want a non-needling, no-downtime option and are not looking for surgery. Because RF heats tissue rather than targeting pigment, it does not rely on colour contrast in the skin, which is why RF platforms are used across a wide range of skin tones including Asian skin. That is a genuine advantage over some light-based devices, but it does not make XERF appropriate for everyone, and marked sagging may be better served by other approaches your doctor can discuss.",
+            "Because RF heats tissue rather than targeting pigment, it does not rely on colour contrast in the skin, which is why RF platforms are used across a wide range of skin tones including Asian skin. That is a genuine advantage over some light-based devices, but it does not make XERF appropriate for everyone.",
             "RF is generally avoided during pregnancy, over active skin infections or inflamed areas, and near metal implants or electronic implanted devices such as pacemakers. Recent injectables, certain medications, thyroid conditions in the neck area and a history of keloid scarring are also relevant. Please share your full medical history, current medications and any implanted devices at consultation so the doctor can advise safely.",
           ],
         },
         {
-          heading: "The session at Kaiteki",
+          heading: "Does XERF need numbing, and can you go straight back to work?",
           body: [
             "A visit begins with a doctor consultation and skin assessment to confirm that RF is the right category for your concern and to map the areas to be treated. If XERF is appropriate, the skin is cleansed and a coupling gel applied. The handpiece is then moved over the treatment area in passes while the integrated cooling holds the surface temperature down; most people describe RF as a warm, deep massage-like sensation that builds and eases as the handpiece moves. No numbing cream is needed.",
             "Session length depends on how many areas are being treated: a single facial area is typically shorter than a full face and neck, and body areas take longer again. A course of several sessions spaced a few weeks apart is common for RF, with occasional maintenance afterwards, but the plan is individual and your doctor will explain what to expect for your skin.",
-          ],
-        },
-        {
-          heading: "Downtime & aftercare",
-          body: [
             "Downtime is usually minimal, which is much of the appeal of non-needling RF: most people return to normal activities and can wear makeup the same day. Mild warmth or pinkness in the treated area can occur and typically settles within a few hours, though this varies between individuals.",
             "Gentle skincare, good hydration and daily sun protection are advised afterwards. Avoid very hot showers, saunas and vigorous heat exposure for the rest of the day. Your doctor will give aftercare guidance specific to your skin and the areas treated.",
           ],
         },
         {
-          heading: "Risks & side effects",
+          heading: "Can XERF burn or mark the skin?",
           body: [
             "As with any medical procedure, XERF carries risks, which are explained during consultation. Temporary effects can include redness, warmth, mild swelling or short-lived tenderness in the treated area. Uncommon effects include blistering, burns or changes in pigmentation, and are less likely when the device is appropriately selected, cooling is used correctly and treatment is performed by a trained doctor.",
           ],
         },
-        {
-          heading: "Sessions & cost factors",
-          body: [
-            "Session count and overall cost depend on how many areas you are treating, the size of those areas, the degree of laxity and how your skin responds. Face-only plans differ from face-and-neck or body plans, and some people include occasional maintenance sessions over time. Pricing is discussed at consultation rather than quoted online, so any figure you are given reflects your actual plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
-          ],
-        },
       ],
+      costFactors: {
+        intro:
+          "Pricing is discussed at consultation rather than quoted online, so any figure you are given reflects your actual plan rather than a generic package. What moves it:",
+        factors: [
+          "How many areas you are treating, and their size. Face-only plans differ from face-and-neck or body plans.",
+          "The degree of laxity.",
+          "How your skin responds.",
+          "Whether occasional maintenance sessions form part of the plan over time.",
+        ],
+      },
       faqs: [
         {
           q: "How is XERF different from RF microneedling like Sylfirm X or Morpheus8?",
@@ -1173,7 +1195,7 @@ export const technology: Technology[] = [
         heading: "What is Sylfirm X?",
         body: [
           "Sylfirm X is a radiofrequency (RF) microneedling device made by Viol, a South Korean medical-aesthetic device manufacturer. Like other RF microneedling systems, it passes very fine needles through the skin surface and delivers radiofrequency energy from the needle tips, so the energy is placed at a chosen depth rather than heating the skin from the outside in. At Kaiteki it is used within our microneedling treatment.",
-          "What distinguishes it within the RF microneedling category is that it offers two energy delivery modes rather than one. Alongside a continuous wave (CW) mode, which is the more familiar heating mode used for firmness and texture work, it has a pulsed wave (PW) mode that the manufacturer developed with pigment and vascular concerns in mind, which is often why a doctor reaches for this device rather than a purely tightening-focused one. Whether Sylfirm X suits your skin depends on your concern, skin type, medical history and what you want to address, and that is assessed by a doctor at an in-person consultation.",
+          "What distinguishes it within the RF microneedling category is that it offers two energy delivery modes rather than one. Whether Sylfirm X suits your skin depends on your concern, skin type, medical history and what you want to address, and that is assessed by a doctor at an in-person consultation.",
         ],
       },
       {
@@ -1184,8 +1206,9 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "Is Sylfirm X for tightening, or for pigment and redness?",
         body: [
+          "Alongside a continuous wave (CW) mode, which is the more familiar heating mode used for firmness and texture work, it has a pulsed wave (PW) mode that the manufacturer developed with pigment and vascular concerns in mind, which is often why a doctor reaches for this device rather than a purely tightening-focused one.",
           "Sylfirm X is commonly considered for the concerns below. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
         ],
         list: [
@@ -1198,40 +1221,46 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Why does melasma need a course of Sylfirm X, not one session?",
         body: [
-          "Because radiofrequency energy is not absorbed by melanin the way laser light is, RF microneedling is used across a broad range of skin tones, including the deeper Asian skin tones common in Malaysia. That does not make it appropriate for everyone. Pigment concerns such as melasma are chronic and relapsing, so any plan involving Sylfirm X is usually combined with topical care and strict sun protection rather than treated as a one-off procedure.",
+          "Pigment concerns such as melasma are chronic and relapsing, so any plan involving Sylfirm X is usually combined with topical care and strict sun protection rather than treated as a one-off procedure.",
+          "A course of several sessions spaced roughly a month apart is typical, with the exact plan and spacing decided by your doctor based on your concern and how your skin responds. Sun protection matters particularly when pigment is the concern being addressed.",
+        ],
+      },
+      {
+        heading: "Who should postpone or avoid Sylfirm X?",
+        body: [
+          "Because radiofrequency energy is not absorbed by melanin the way laser light is, RF microneedling is used across a broad range of skin tones, including the deeper Asian skin tones common in Malaysia. That does not make it appropriate for everyone.",
           "Sylfirm X may not be suitable during pregnancy or breastfeeding, with active skin infection, inflamed acne or eczema in the treatment area, a history of keloid scarring, certain medications including recent oral isotretinoin, blood-clotting disorders, or if you have a pacemaker or other implanted electronic device. Recently tanned or sunburnt skin may also mean postponing. Please share your full medical, medication and skincare history at consultation so the doctor can advise safely.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "How long does a Sylfirm X session take, and how long does the redness last?",
         body: [
           "Your visit begins with a doctor consultation and skin assessment to confirm whether RF microneedling is the right route for your concern, and whether Sylfirm X specifically is the appropriate device. If it is, the skin is cleansed and topical anaesthetic cream is applied and left to take effect, which usually accounts for most of the appointment time.",
-          "The handpiece is then passed over the treatment area, stamping the microneedles and delivering RF at the selected depth. Most people describe a warm prickling or tapping sensation. Active treatment of a full face commonly takes around 20 to 30 minutes, with the whole appointment nearer an hour once numbing and aftercare are included. A course of several sessions spaced roughly a month apart is typical, with the exact plan and spacing decided by your doctor based on your concern and how your skin responds.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
+          "The handpiece is then passed over the treatment area, stamping the microneedles and delivering RF at the selected depth. Most people describe a warm prickling or tapping sensation. Active treatment of a full face commonly takes around 20 to 30 minutes, with the whole appointment nearer an hour once numbing and aftercare are included.",
           "Expect the skin to look flushed and feel warm immediately afterwards, often with a faint grid pattern from the needle tips. This commonly settles within a day or two, though it varies between individuals and with the depth and energy used. Mild swelling, dryness or slight roughness for a few days is not unusual.",
-          "Gentle cleansing, a bland moisturiser and diligent daily sunscreen are advised while the skin settles, and actives such as retinoids or acids are usually paused for a short period. Sun protection matters particularly when pigment is the concern being addressed. Your doctor will give aftercare guidance specific to your skin and the settings used.",
+          "Gentle cleansing, a bland moisturiser and diligent daily sunscreen are advised while the skin settles, and actives such as retinoids or acids are usually paused for a short period. Your doctor will give aftercare guidance specific to your skin and the settings used.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "Can Sylfirm X cause pigment change or scarring?",
         body: [
           "As with any medical procedure, Sylfirm X carries risks, which are explained during consultation. Temporary effects can include redness, swelling, pinpoint bruising or scabbing, dryness and transient changes in pigmentation. Less commonly, infection, prolonged pigment change or scarring can occur. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor.",
         ],
       },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "Session count and overall cost depend on the concern, the size of the area treated, the depth and modes used, whether the plan combines Sylfirm X with topical or other treatments, and how your skin responds. Consumable needle tips are single-use, which is part of what shapes the cost of any RF microneedling session. Pigment-driven plans often include occasional maintenance sessions over time.",
-          "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
-        ],
-      },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan rather than a generic package. What moves it:",
+      factors: [
+        "The concern being treated, and the size of the area.",
+        "The depth and modes used.",
+        "Whether the plan combines Sylfirm X with topical or other treatments.",
+        "Single-use consumable needle tips, which are part of what shapes the cost of any RF microneedling session.",
+        "How your skin responds. Pigment-driven plans often include occasional maintenance sessions over time.",
+      ],
+    },
     faqs: [
       {
         q: "How is Sylfirm X different from other RF microneedling devices?",
@@ -1277,19 +1306,27 @@ export const technology: Technology[] = [
         heading: "What is Morpheus8?",
         body: [
           "Morpheus8 is a fractional radiofrequency (RF) microneedling device made by InMode, an Israeli medical-aesthetic device company. It works on the same principle as other RF microneedling systems (fine needles carry radiofrequency energy through the skin surface and release it at a set depth), and at Kaiteki it is used within our microneedling treatment.",
-          "What sets it apart in this category is reach and pattern of delivery. The manufacturer positions Morpheus8 for both dermal contraction and subdermal work, and it can be set to work below the dermis into the fatty layer rather than only within the skin. That deeper subdermal capability is usually why a doctor selects it when the primary concern is firmness along the jawline, lower face or neck rather than surface pigment or pore texture. Whether it suits you depends on your anatomy, skin quality and medical history, which a doctor assesses at an in-person consultation.",
+          "What sets it apart in this category is reach and pattern of delivery. Whether it suits you depends on your anatomy, skin quality and medical history, which a doctor assesses at an in-person consultation.",
         ],
       },
       {
         heading: "How the Burst technology works",
         body: [
-          "Morpheus8 delivers bipolar radiofrequency between the microneedles, so the energy stays between the pins at the depth they are set to. The manufacturer's SCALE and BURST functions automatically deploy that energy to several treatment depths within a single pulse at programmable energy levels, so one insertion can address more than one layer instead of requiring separate passes at each depth. The manufacturer states that its Body platform, using Burst and 3D Smart Frame, produces a thermal profile reaching around 8mm.",
+          "Morpheus8 delivers bipolar radiofrequency between the microneedles, so the energy stays between the pins at the depth they are set to. The manufacturer's SCALE and BURST functions automatically deploy that energy to several treatment depths within a single pulse at programmable energy levels, so one insertion can address more than one layer instead of requiring separate passes at each depth.",
           "The system uses interchangeable fractional tips with different pin configurations for different jobs (the manufacturer lists a 12-pin Burst Prime, a 24-pin Burst, a 24-pin Burst Resurfacing tip and a 40-pin Burst Deep tip), so finer facial areas, resurfacing-style work and larger or deeper body areas can be handled with the appropriate tip. Topical numbing is applied beforehand and the area is cooled afterwards. Tip choice, depth, energy and coverage are all selected by the treating doctor. Tissue responses to heating develop over weeks to months and vary between individuals.",
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "Why does Morpheus8 reach below the skin, into the fat layer?",
         body: [
+          "The manufacturer positions Morpheus8 for both dermal contraction and subdermal work, and it can be set to work below the dermis into the fatty layer rather than only within the skin. That deeper subdermal capability is usually why a doctor selects it when the primary concern is firmness along the jawline, lower face or neck rather than surface pigment or pore texture.",
+          "The manufacturer states that its Body platform, using Burst and 3D Smart Frame, produces a thermal profile reaching around 8mm. Deeper is not automatically better: the right depth depends on the concern and the area.",
+        ],
+      },
+      {
+        heading: "Is Morpheus8 a substitute for a surgical lift?",
+        body: [
+          "Suitability for Morpheus8 specifically has more to do with what you are trying to change: it is aimed at skin quality and tissue firmness, and it is not a substitute for surgery where there is significant sagging or excess skin. A doctor will be straightforward with you at consultation about whether your degree of laxity is likely to respond to this kind of treatment.",
           "Morpheus8 is commonly considered for the concerns below, on the face and on selected body areas. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
         ],
         list: [
@@ -1302,40 +1339,40 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Who should avoid Morpheus8, and what must you declare?",
         body: [
-          "Radiofrequency energy is not absorbed by melanin the way laser light is, so RF microneedling is used across a wide range of skin tones, including deeper Asian skin tones. Suitability for Morpheus8 specifically has more to do with what you are trying to change: it is aimed at skin quality and tissue firmness, and it is not a substitute for surgery where there is significant sagging or excess skin. A doctor will be straightforward with you at consultation about whether your degree of laxity is likely to respond to this kind of treatment.",
+          "Radiofrequency energy is not absorbed by melanin the way laser light is, so RF microneedling is used across a wide range of skin tones, including deeper Asian skin tones.",
           "It may not be suitable during pregnancy or breastfeeding, with active infection, inflamed acne or dermatitis in the treatment area, a history of keloid scarring, recent oral isotretinoin, clotting disorders or if you take blood thinners, and it is generally avoided in people with a pacemaker or other implanted electronic device. Metal implants or permanent fillers in the treatment area should also be declared. Please share your full medical and medication history at consultation.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What does a Morpheus8 session involve, and how many days of redness should you plan for?",
         body: [
           "Your visit starts with a doctor consultation and assessment, including which areas are being treated and whether a deeper subdermal setting is appropriate for them. The skin is cleansed, topical anaesthetic is applied and left to take effect, and the treatment map is marked out. Numbing usually accounts for a large share of the appointment.",
           "The handpiece is then applied in overlapping stamps across the marked area, delivering radiofrequency at the set depths. Most people describe pressure, heat and a prickling sensation, with deeper settings felt more distinctly, particularly over bony areas such as the jaw. Active treatment of the lower face and neck commonly takes around 30 to 45 minutes; larger body areas take longer. A course of around three sessions spaced roughly four to six weeks apart is a common starting plan, but your doctor decides the number and spacing based on your assessment and response.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
           "Redness, warmth and some swelling are usual immediately afterwards, and a faint grid pattern from the needle pins is often visible. Most people find this settles substantially within two to three days, though swelling along the jaw or neck can linger a little longer and recovery varies with the depth and energy used. Small scabs or pinpoint bruising can occur, particularly with deeper settings.",
           "Gentle cleansing, a bland moisturiser and daily sunscreen are advised while the skin recovers, with actives such as retinoids and acids paused for a short period. Strenuous exercise, heat and sun exposure are usually avoided for a few days. Your doctor will give aftercare guidance specific to the areas and settings treated.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "What are the risks of Morpheus8, especially at deeper settings?",
         body: [
           "As with any medical procedure, Morpheus8 carries risks, which are explained during consultation. Temporary effects can include redness, swelling, bruising, small scabs, tenderness and transient changes in pigmentation. Less commonly, infection, prolonged pigment change, scarring, small contour irregularities where deeper subdermal settings are used, or temporary nerve-related numbness or tingling can occur. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor.",
         ],
       },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "Session count and cost depend on how many areas are treated and their size, whether treatment is limited to the face or extends to the neck or body, the tips and depths required, and how your tissue responds. Fractional tips are single-use consumables and larger tips cover more area per session, both of which shape the cost of a plan. Some people choose an occasional maintenance session in later years.",
-          "Pricing is discussed at consultation rather than quoted online, so any figure reflects the areas and plan actually agreed with your doctor. Message us on WhatsApp to arrange a consultation.",
-        ],
-      },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any figure reflects the areas and plan actually agreed with your doctor. What moves it:",
+      factors: [
+        "How many areas are treated, and their size.",
+        "Whether treatment is limited to the face or extends to the neck or body.",
+        "The tips and depths required. Fractional tips are single-use consumables, and larger tips cover more area per session.",
+        "How your tissue responds.",
+      ],
+      outro:
+        "Some people choose an occasional maintenance session in later years.",
+    },
     faqs: [
       {
         q: "How deep does Morpheus8 go compared with standard RF microneedling?",
@@ -1382,19 +1419,26 @@ export const technology: Technology[] = [
         heading: "What is Potenza?",
         body: [
           "Potenza is a radiofrequency (RF) microneedling device from Cynosure Lutronic. Like other devices in this category it passes very fine needles through the skin surface and releases radiofrequency energy from them at a chosen depth, and at Kaiteki it is used within our microneedling treatment.",
-          "Its distinguishing feature is configurability. Most RF microneedling devices deliver one type of radiofrequency; Potenza offers four combinations (monopolar or bipolar radiofrequency, each delivered at 1MHz or 2MHz) in a single platform, alongside a range of interchangeable tips and adjustable needle depth. That range of settings is usually why a doctor selects it when the plan involves working at several different depths across a face, which is common with scarring and pore concerns. Whether it is the right device for you depends on your concern, skin type and medical history, which a doctor assesses at an in-person consultation.",
+          "Its distinguishing feature is configurability. Most RF microneedling devices deliver one type of radiofrequency; Potenza offers four combinations (monopolar or bipolar radiofrequency, each delivered at 1MHz or 2MHz) in a single platform, alongside a range of interchangeable tips and adjustable needle depth. Whether it is the right device for you depends on your concern, skin type and medical history, which a doctor assesses at an in-person consultation.",
         ],
       },
       {
         heading: "How the four modes and depth control work",
         body: [
-          "Bipolar radiofrequency passes energy between the needles, keeping it relatively contained around the needle field; monopolar radiofrequency travels from the needles toward a return electrode, which spreads the energy more broadly and deeply. Frequency changes the character of the heating as well: the manufacturer pairs these two options with 1MHz and 2MHz settings, giving four modes that can be matched to shallow or deeper work. Needle depth is set separately, so the doctor can treat superficially around fine surface texture and go deeper into a tethered scar in the same session.",
+          "Bipolar radiofrequency passes energy between the needles, keeping it relatively contained around the needle field; monopolar radiofrequency travels from the needles toward a return electrode, which spreads the energy more broadly and deeply. Frequency changes the character of the heating as well: the manufacturer pairs these two options with 1MHz and 2MHz settings, giving four modes that can be matched to shallow or deeper work.",
           "Tips are interchangeable, with different pin counts and configurations for small precise areas versus broader coverage. The manufacturer also offers a Fusion Tip, which it describes as using a dual air-chamber design to release air toward the skin with each pulse in order to help topical products applied during the session penetrate; the manufacturer states this tip runs in monopolar mode at 1MHz. Topical numbing is applied first and the area cooled afterwards. Mode, frequency, tip, depth and energy are all chosen by the treating doctor. Changes develop gradually over weeks to months and vary between individuals.",
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "Why does Potenza treat different parts of the face at different depths?",
         body: [
+          "That range of settings is usually why a doctor selects it when the plan involves working at several different depths across a face, which is common with scarring and pore concerns. Needle depth is set separately, so the doctor can treat superficially around fine surface texture and go deeper into a tethered scar in the same session.",
+        ],
+      },
+      {
+        heading: "Is Potenza mainly for scars and pores, or for tightening?",
+        body: [
+          "Scar work in particular is a staged process: different scar types respond differently, some benefit from being released or combined with other treatments, and a doctor will set realistic expectations at consultation rather than promising a single fix.",
           "Potenza is commonly considered for the concerns below. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
         ],
         list: [
@@ -1407,40 +1451,39 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Who should avoid Potenza, and why does monopolar mode matter for implants?",
         body: [
-          "Because radiofrequency is not absorbed by melanin the way laser light is, RF microneedling is used across a broad range of skin tones, including the deeper Asian skin tones common in Malaysia. Scar work in particular is a staged process: different scar types respond differently, some benefit from being released or combined with other treatments, and a doctor will set realistic expectations at consultation rather than promising a single fix.",
+          "Because radiofrequency is not absorbed by melanin the way laser light is, RF microneedling is used across a broad range of skin tones, including the deeper Asian skin tones common in Malaysia.",
           "Potenza may not be suitable during pregnancy or breastfeeding, with active skin infection or inflamed dermatitis in the area, a history of keloid scarring, recent oral isotretinoin, clotting disorders or while taking blood thinners. Monopolar radiofrequency in particular means implanted electronic devices such as pacemakers, and metal implants in the treatment area, must be declared, as does any permanent filler. Please share your full medical, medication and skincare history at consultation so the doctor can advise safely.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What happens in a Potenza session, and how long does the skin take to settle?",
         body: [
           "Your visit begins with a doctor consultation and a close look at your skin, mapping which areas need which depth: scarred areas, pore-dense zones and finer skin are often treated with different settings in the same session. The skin is then cleansed and topical anaesthetic applied and left to take effect, which usually takes up most of the appointment time.",
           "The handpiece is passed over the mapped areas in overlapping stamps, with the doctor changing depth, mode or tip as they move between zones. Most people describe heat and a prickling or tapping sensation, felt more distinctly at deeper settings. Active treatment of a full face commonly takes around 30 to 45 minutes, with the full appointment closer to an hour and a half including numbing and aftercare. Scar-focused plans typically run to several sessions spaced roughly four to six weeks apart, with the number and spacing decided by your doctor.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
           "Redness, warmth and mild swelling are usual straight afterwards, often with a visible pattern from the needle pins. This commonly settles over two to three days, though it varies between individuals and with the depths used. Deeper scar settings tend to leave the skin looking flushed and feeling tender for slightly longer, and pinpoint scabs can occur.",
           "Gentle cleansing, a bland moisturiser and daily sunscreen are advised while the skin recovers, with retinoids, acids and other actives paused for a short period. Makeup is usually left off for the first day or so, and heat, sweat and sun exposure avoided for a few days. Your doctor will give aftercare guidance specific to your skin and the settings used.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "Can Potenza trigger an acne flare or pigment change?",
         body: [
           "As with any medical procedure, Potenza carries risks, which are explained during consultation. Temporary effects can include redness, swelling, pinpoint bruising or scabbing, tenderness, dryness and transient changes in pigmentation. Less commonly, infection, an acne flare, prolonged pigment change or scarring can occur. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor.",
         ],
       },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "Session count and cost depend on the concern and its severity, the size of the area treated, the number of modes and tips a session requires, and how your skin responds. Scarring generally needs a longer course than pore or texture work, and treatment tips are single-use consumables, both of which shape what a plan costs. Some plans combine Potenza with other treatments where the doctor judges that appropriate.",
-          "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
-        ],
-      },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan. What moves it:",
+      factors: [
+        "The concern and its severity. Scarring generally needs a longer course than pore or texture work.",
+        "The size of the area treated.",
+        "The number of modes and tips a session requires. Treatment tips are single-use consumables.",
+        "How your skin responds.",
+        "Whether Potenza is combined with other treatments, where the doctor judges that appropriate.",
+      ],
+    },
     faqs: [
       {
         q: "What do Potenza's monopolar and bipolar modes actually change for me?",
@@ -1486,7 +1529,7 @@ export const technology: Technology[] = [
           heading: "What is BTL Exilis?",
           body: [
             "BTL Exilis is a monopolar radiofrequency (RF) platform made by BTL, the manufacturer behind Emsculpt and Emsella, and it is used at Kaiteki within our radiofrequency treatment. Its category is non-invasive tissue heating: the handpiece is moved over intact skin and RF energy warms the dermis and, at deeper settings, the fatty layer beneath. BTL positions Exilis as a head-to-toe platform, with different applicators for delicate facial areas and for larger body areas, and the Exilis Ultra generation adds an ultrasound component alongside the RF in the same applicator.",
-            "What distinguishes Exilis within the RF category is the combination of monopolar delivery with embedded surface cooling. Because the skin surface is actively cooled while energy is applied, the device can keep working for longer at a depth that reaches subcutaneous fat rather than being limited by surface discomfort, which is why Exilis is used for body-contour concerns as well as facial firmness. Whether it suits your concern is assessed by a doctor at an in-person consultation.",
+            "Whether it suits your concern is assessed by a doctor at an in-person consultation.",
           ],
         },
         {
@@ -1497,8 +1540,16 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "What it may help address",
+          heading: "Why can Exilis reach the fat layer as well as the skin?",
           body: [
+            "What distinguishes Exilis within the RF category is the combination of monopolar delivery with embedded surface cooling. Because the skin surface is actively cooled while energy is applied, the device can keep working for longer at a depth that reaches subcutaneous fat rather than being limited by surface discomfort, which is why Exilis is used for body-contour concerns as well as facial firmness.",
+            "Because its cooling allows energy to reach the deeper fatty layer, it is often considered where laxity and localised fat occur together.",
+          ],
+        },
+        {
+          heading: "What can Exilis firm, and when is surgery the better conversation?",
+          body: [
+            "That said, it is a firming and contouring device, not a substitute for surgery where there is significant excess skin. Your doctor will be direct with you about what category of treatment matches your concern.",
             "Exilis is commonly considered for firmness and contour concerns on both face and body. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
           ],
           list: [
@@ -1511,40 +1562,38 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "Suitability & who should avoid it",
+          heading: "Does Exilis have BMI or skin type limits, and who should avoid it?",
           body: [
-            "Exilis is generally aimed at people with mild to moderate laxity, and at those who want a non-needling option with little interruption to daily life. BTL states there are no BMI or skin type restrictions for the platform, and because RF heats tissue rather than targeting pigment it is used across a wide range of skin tones including Asian skin. That said, it is a firming and contouring device, not a substitute for surgery where there is significant excess skin. Your doctor will be direct with you about what category of treatment matches your concern.",
+            "Exilis is generally aimed at people with mild to moderate laxity, and at those who want a non-needling option with little interruption to daily life. BTL states there are no BMI or skin type restrictions for the platform, and because RF heats tissue rather than targeting pigment it is used across a wide range of skin tones including Asian skin.",
             "RF is generally avoided during pregnancy or breastfeeding, over active skin infections, inflamed skin or open wounds, and in the presence of pacemakers, defibrillators or other electronic or metal implants in or near the treatment area. Recent fillers or threads, certain medications, impaired sensation in the area and a history of keloid scarring are also relevant. Please share your full medical history, medications and any implanted devices at consultation so the doctor can advise safely.",
           ],
         },
         {
-          heading: "The session at Kaiteki",
+          heading: "How long does an Exilis session take, and can you go back to work afterwards?",
           body: [
             "A visit begins with a doctor consultation and assessment to confirm RF is the appropriate category and to define the treatment area. If Exilis is appropriate, the skin is cleansed and a coupling gel applied, then the applicator is moved continuously over the area in passes while temperature is monitored. Nothing is injected and no needles are used, so numbing cream is generally not required; most people describe steady, deep warmth that eases as the applicator moves on.",
             "Session length depends on the area: BTL indicates that treating a specific area commonly takes somewhere between a few minutes and around half an hour, so a small facial area is much shorter than an abdomen. For courses, BTL's patient material describes most people having roughly two to four treatments spaced about seven to ten days apart, though your doctor will set the actual plan and spacing for your skin and concern.",
-          ],
-        },
-        {
-          heading: "Downtime & aftercare",
-          body: [
             "Downtime is usually minimal. Most people return to work, exercise and normal routine the same day, and makeup can generally be worn straight after a facial session. Temporary warmth, pinkness or mild tenderness in the treated area can occur and typically settles within a few hours, though this varies between individuals.",
             "Drinking water, gentle skincare and daily sun protection are advised afterwards, and it is sensible to avoid saunas, hot baths and intense heat for the rest of the day. Your doctor will give aftercare guidance specific to the area treated.",
           ],
         },
         {
-          heading: "Risks & side effects",
+          heading: "What side effects can Exilis cause in the skin and fat?",
           body: [
             "As with any medical procedure, Exilis carries risks, which are explained during consultation. Temporary effects can include redness, warmth, mild swelling, tenderness or small firm areas in treated fat that settle over time. Burns, blistering and changes in pigmentation are uncommon and are less likely when the applicator and settings are appropriately selected, cooling is used correctly and treatment is performed by a trained doctor.",
           ],
         },
-        {
-          heading: "Sessions & cost factors",
-          body: [
-            "The number of sessions and overall cost depend on the size and number of areas treated, whether you are addressing laxity alone or laxity together with localised fat, and how your body responds. Body areas involve more surface to cover than facial areas, so they generally require longer sessions. Some plans include occasional maintenance over time.",
-            "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
-          ],
-        },
       ],
+      costFactors: {
+        intro:
+          "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan rather than a generic package. What moves it:",
+        factors: [
+          "The size and number of areas treated. Body areas involve more surface to cover than facial areas, so they generally need longer sessions.",
+          "Whether you are addressing laxity alone, or laxity together with localised fat.",
+          "How your body responds.",
+          "Whether occasional maintenance forms part of the plan over time.",
+        ],
+      },
       faqs: [
         {
           q: "Can BTL Exilis be used on the body as well as the face?",
@@ -1590,7 +1639,7 @@ export const technology: Technology[] = [
           heading: "What is Wonderface?",
           body: [
             "Wonderface is a face-specific device from the Spanish aesthetic-technology brand Wonder, used at Kaiteki within our radiofrequency treatment. Unlike a pure skin-tightening machine, it is a two-technology platform: a bipolar radiofrequency mode that warms the skin, and a neuromuscular stimulation mode that produces controlled contractions in the facial muscles. The manufacturer describes the two as independent modes rather than a single blended output, so a session can be weighted towards skin quality, towards muscle work, or set to include both.",
-            "That second element is the reason people compare Wonderface with muscle-stimulating facial devices rather than only with RF machines: the premise is that facial ageing is partly a matter of muscle tone and support, not skin laxity alone. It is a non-needling, surface-applied treatment: nothing is injected and nothing pierces the skin, which is what separates it from RF microneedling devices covered on their own pages. Whether it suits your face is assessed by a doctor at an in-person consultation.",
+            "Whether it suits your face is assessed by a doctor at an in-person consultation.",
           ],
         },
         {
@@ -1601,8 +1650,9 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "What it may help address",
+          heading: "Muscle tone or skin: which problem does Wonderface address?",
           body: [
+            "That second element is the reason people compare Wonderface with muscle-stimulating facial devices rather than only with RF machines: the premise is that facial ageing is partly a matter of muscle tone and support, not skin laxity alone.",
             "Wonderface is commonly considered for facial firmness and contour concerns, particularly where loss of definition rather than surface pigmentation is the issue. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
           ],
           list: [
@@ -1615,40 +1665,45 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "Suitability & who should avoid it",
+          heading: "Who is Wonderface for, and when is it not the answer?",
           body: [
-            "Wonderface is generally aimed at people with early to moderate loss of facial firmness who want a non-needling, no-downtime option, and it tends to appeal to those who prefer working on facial tone rather than adding volume. Because RF heats tissue rather than targeting pigment, it does not depend on contrast in skin colour and is used across a wide range of skin tones including Asian skin. It is not a substitute for surgery where there is significant excess skin, and your doctor will tell you plainly if your concern sits outside what this device is used for.",
+            "Wonderface is generally aimed at people with early to moderate loss of facial firmness who want a non-needling, no-downtime option, and it tends to appeal to those who prefer working on facial tone rather than adding volume. It is not a substitute for surgery where there is significant excess skin, and your doctor will tell you plainly if your concern sits outside what this device is used for.",
+            "It is a non-needling, surface-applied treatment: nothing is injected and nothing pierces the skin, which is what separates it from RF microneedling devices covered on their own pages.",
+          ],
+        },
+        {
+          heading: "Why do implants, seizures and dental metalwork matter before Wonderface?",
+          body: [
+            "Because RF heats tissue rather than targeting pigment, it does not depend on contrast in skin colour and is used across a wide range of skin tones including Asian skin.",
             "Devices that deliver electrical stimulation and RF to the face are generally avoided during pregnancy, over active skin infections or inflamed skin, and in people with pacemakers, defibrillators, implanted electronic devices, metal implants in the treatment area or a history of seizures. Recent injectables, threads, dental metalwork, neurological conditions and certain medications are all relevant to the assessment. Please share your full medical and treatment history at consultation so the doctor can advise safely.",
           ],
         },
         {
-          heading: "The session at Kaiteki",
+          heading: "How short is a Wonderface session, and is there any downtime?",
           body: [
             "A visit begins with a doctor consultation and facial assessment, including which muscle groups and which skin areas are relevant to your concern. If Wonderface is appropriate, the skin is cleansed and applicators or pads are positioned on the face. In the neuromuscular mode you will feel repeated tapping or twitching sensations as the muscles contract, which is expected and not painful for most people; in the RF mode you feel building warmth as the applicator works over the area. No numbing is generally required and nothing is injected.",
             "Sessions are typically short: this is a treatment people often schedule around a working day. A course of several sessions over a few weeks is usual for tone-based treatments, sometimes followed by periodic maintenance, but the number, spacing and mode balance are set by your doctor for your face rather than fixed in advance.",
-          ],
-        },
-        {
-          heading: "Downtime & aftercare",
-          body: [
             "Downtime is usually minimal. Most people return to normal activities immediately and can apply makeup the same day. Temporary warmth, pinkness, or a mild worked or tired feeling in the treated muscles can occur afterwards and typically settles within hours, though this varies between individuals.",
             "Gentle skincare, hydration and daily sun protection are advised. Your doctor will give aftercare guidance specific to your skin and the areas treated, including how it fits around any injectables or other treatments you are having.",
           ],
         },
         {
-          heading: "Risks & side effects",
+          heading: "Can Wonderface leave the muscles tired or the skin irritated?",
           body: [
             "As with any medical procedure, Wonderface carries risks, which are explained during consultation. Temporary effects can include redness, warmth, mild swelling, transient muscle fatigue or tenderness where the applicators sat. Skin irritation, burns or blistering are uncommon and are less likely when settings are appropriately selected and treatment is performed by a trained doctor who has reviewed your medical history and any implanted devices.",
           ],
         },
-        {
-          heading: "Sessions & cost factors",
-          body: [
-            "The number of sessions and overall cost depend on your concern, whether you are using one mode or both, the areas treated and how your face responds. Tone-based plans generally involve a short initial course followed by less frequent maintenance, and some people combine Wonderface with other treatments, which changes the plan.",
-            "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
-          ],
-        },
       ],
+      costFactors: {
+        intro:
+          "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan rather than a generic package. What moves it:",
+        factors: [
+          "Your concern, and whether one mode or both are used.",
+          "The areas treated.",
+          "How your face responds. Tone-based plans generally involve a short initial course followed by less frequent maintenance.",
+          "Whether Wonderface is combined with other treatments, which changes the plan.",
+        ],
+      },
       faqs: [
         {
           q: "How is Wonderface different from a normal RF skin-tightening facial?",
