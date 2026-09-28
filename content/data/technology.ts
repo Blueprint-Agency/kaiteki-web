@@ -2126,10 +2126,10 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "Is Profhilo a filler?",
         body: [
-          "Profhilo is commonly considered where the concern is skin quality and firmness rather than lost volume or a change in shape. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
-          "Concerns it is typically directed at include:",
+          "No. Profhilo is not designed to add contour or reshape a feature. If what you actually want is contour, a fuller cheek, a defined chin, a corrected hollow, a skin booster is the wrong category, and your doctor will say so rather than substituting one for the other.",
+          "Profhilo is commonly considered where the concern is skin quality and firmness rather than lost volume or a change in shape. It is not suitable for everyone, and a consultation determines whether it is appropriate for you. Concerns it is typically directed at include:",
         ],
         list: [
           "Dehydrated, dull-looking skin on the face",
@@ -2140,40 +2140,45 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Why is Profhilo given as a course, with maintenance?",
         body: [
-          "Profhilo is aimed at adults whose main concern is skin hydration, texture and firmness. If what you actually want is contour, a fuller cheek, a defined chin, a corrected hollow, a skin booster is the wrong category, and your doctor will say so rather than substituting one for the other. Because Profhilo works through hyaluronic acid rather than light or heat, skin tone is not a limiting factor in the way it can be with laser treatment, though this does not make it appropriate for everyone.",
+          "The manufacturer describes an initial course of more than one visit spaced some weeks apart, followed by periodic maintenance. Hyaluronic acid is gradually broken down and resorbed by the body, so any change is temporary and not permanent. Some plans therefore include maintenance visits over time.",
+          "The number of sessions and their spacing is not a fixed schedule and will be set by your doctor based on your skin and your response. Nothing about quantity, depth or interval should be decided in advance of assessment.",
+        ],
+      },
+      {
+        heading: "When would a doctor advise against Profhilo?",
+        body: [
+          "Profhilo is aimed at adults whose main concern is skin hydration, texture and firmness. Because Profhilo works through hyaluronic acid rather than light or heat, skin tone is not a limiting factor in the way it can be with laser treatment, though this does not make it appropriate for everyone.",
           "It may not be suitable during pregnancy or breastfeeding, if you have a known hypersensitivity to hyaluronic acid products, if there is active infection, acne or inflammation at the intended site, if you have a bleeding disorder or take blood-thinning medication, or alongside certain autoimmune conditions. Please share your full medical history, medications, supplements and any previous injectable treatments at consultation so your doctor can advise safely.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What does a Profhilo visit involve, and how quickly do the bumps settle?",
         body: [
           "Every Profhilo session at Kaiteki starts with a doctor consultation and skin assessment, since Profhilo is used within Kaiteki's skin-booster treatment and is only one of several products a doctor may consider. If it is appropriate, the skin is cleansed and a topical anaesthetic may be applied for comfort. The doctor then places the product using the technique and points they judge suitable for you.",
-          "The injecting itself is usually brief: the visit often takes well under an hour including preparation. The manufacturer describes an initial course of more than one visit spaced some weeks apart, followed by periodic maintenance, but the number of sessions and their spacing is not a fixed schedule and will be set by your doctor based on your skin and your response. Nothing about quantity, depth or interval should be decided in advance of assessment.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
+          "The injecting itself is usually brief: the visit often takes well under an hour including preparation.",
           "Downtime is usually limited but varies. Small raised bumps at the entry points are expected immediately afterwards and typically settle within hours to about a day as the product distributes. Mild redness, tenderness or pinpoint bruising can also occur.",
           "Your doctor will give aftercare guidance specific to you, which commonly includes gentle skincare, sun protection and temporarily avoiding heat, strenuous exercise and pressure on the treated area. Follow their instructions rather than general advice found online.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "What side effects can follow Profhilo?",
         body: [
           "As with any injectable procedure, Profhilo carries risks, which are explained during consultation. Temporary effects can include injection-site swelling, redness, bruising, tenderness and small palpable lumps. Less common effects include infection, prolonged swelling, nodules or hypersensitivity reactions, and vascular complications are rare but recognised with any facial injection. Serious effects are uncommon when the product is appropriately selected and administered by a trained doctor.",
         ],
       },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The number of sessions and the overall cost depend on the area or areas being addressed (face, neck, décolletage, arms or abdomen all differ), the quantity of product your doctor judges appropriate, and whether maintenance visits form part of your plan over time.",
-          "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual assessed plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
-        ],
-      },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. What moves it:",
+      factors: [
+        "The area or areas being addressed: face, neck, décolletage, arms or abdomen all differ.",
+        "The quantity of product your doctor judges appropriate.",
+        "How many visits the initial course needs.",
+        "Whether maintenance visits form part of your plan over time.",
+      ],
+    },
     faqs: [
       {
         q: "How is Profhilo different from a dermal filler?",
@@ -2225,15 +2230,15 @@ export const technology: Technology[] = [
       {
         heading: "How polynucleotides work",
         body: [
-          "The manufacturer describes Rejuran's polynucleotides as purified, fragmented DNA chains that form a soft gel-like matrix once placed in the skin and that support fibroblast activity, the cells responsible for producing the skin's structural proteins. It is described as working with the skin's own repair processes rather than adding volume, which is why the intended change is in skin quality, texture and resilience rather than in shape. The hybrid variant adds hyaluronic acid so that a hydration component sits alongside the polynucleotide component.",
+          "The manufacturer describes Rejuran's polynucleotides as purified, fragmented DNA chains that form a soft gel-like matrix once placed in the skin and that support fibroblast activity, the cells responsible for producing the skin's structural proteins. The hybrid variant adds hyaluronic acid so that a hydration component sits alongside the polynucleotide component.",
           "Delivery is by a series of small injections spread across the treatment area rather than a single placement, and a topical anaesthetic is commonly applied beforehand for comfort. The variant, the quantity, the distribution and the depth are all selected by the treating doctor for your skin and concern. Changes develop gradually over weeks and vary between individuals. Nothing here is a promised outcome.",
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "Does Rejuran add volume?",
         body: [
-          "Rejuran is commonly considered where the concern is skin quality and resilience rather than volume. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
-          "Concerns it is typically directed at include:",
+          "No. The manufacturer describes Rejuran as working with the skin's own repair processes rather than adding volume, which is why the intended change is in skin quality, texture and resilience rather than in shape.",
+          "Rejuran is commonly considered where the concern is skin quality and resilience rather than volume. It is not suitable for everyone, and a consultation determines whether it is appropriate for you. Concerns it is typically directed at include:",
         ],
         list: [
           "Rough or uneven skin texture",
@@ -2245,40 +2250,46 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Rejuran or Plinest: how do two polynucleotide boosters differ?",
         body: [
-          "Rejuran is aimed at adults whose priority is skin quality rather than contour, and because it does not rely on light or heat, skin tone is not a limiting factor in the way it can be with laser treatment. It is used across a range of skin tones, though that does not make it appropriate for everyone. Because the polynucleotides are salmon-derived, you must tell your doctor if you have any fish or seafood allergy.",
+          "Both are polynucleotide skin boosters, but they come from different manufacturers and different sources: Rejuran's polynucleotides are salmon-derived and made by Pharma Research in Korea, while Mastelli's Plinest and Newest are trout-derived and use its PN-HPT purification technology.",
+          "Their formulations and available variants also differ. The Rejuran range includes a scar-directed version, an eye-area version and a hybrid that combines polynucleotides with hyaluronic acid; Mastelli's Newest combines PN-HPT with hyaluronic acid and mannitol. Neither is presented here as superior: which one a doctor selects depends on your assessment, and that decision is theirs to make in person.",
+        ],
+      },
+      {
+        heading: "Can you have Rejuran with a fish allergy, and who else should avoid it?",
+        body: [
+          "Because the polynucleotides are salmon-derived, you must tell your doctor if you have any fish or seafood allergy. Your doctor will weigh that history and may advise against it or consider a different category of product.",
+          "Rejuran is aimed at adults whose priority is skin quality rather than contour, and because it does not rely on light or heat, skin tone is not a limiting factor in the way it can be with laser treatment. It is used across a range of skin tones, though that does not make it appropriate for everyone.",
           "It may not be suitable during pregnancy or breastfeeding, where there is active infection, an acne flare or inflammation at the intended site, if you have a tendency to keloid or hypertrophic scarring, if you have a bleeding disorder or take blood-thinning medication, or alongside certain autoimmune conditions. Please share your full medical history, allergies, medications and previous injectable treatments at consultation so your doctor can advise safely.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "How long does a Rejuran appointment take, and how visible is it afterwards?",
         body: [
           "Rejuran is used within Kaiteki's skin-booster treatment, and a session begins with a doctor consultation and skin assessment, including which variant, if any, suits your concern. If it is appropriate, the skin is cleansed and a topical anaesthetic is usually applied and left to take effect, which accounts for much of the appointment time.",
           "The doctor then places a series of small injections across the assessed area. Including preparation and numbing, a visit commonly runs from around half an hour to somewhat longer depending on the area. A course of several sessions spaced a few weeks apart is often described for polynucleotide treatment, but the number and spacing is set by your doctor for your skin rather than fixed in advance, and should not be treated as a guaranteed schedule.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
           "Downtime is usually short but genuinely visible for a period. Small raised bumps at each injection point are expected and commonly settle over roughly one to two days as the product disperses, though this varies. Redness, mild swelling and pinpoint bruising can also occur.",
           "Gentle skincare and diligent sun protection are advised afterwards, and your doctor will tell you when to resume actives, makeup, exercise and heat exposure. Follow their instructions for your skin rather than generic advice.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "What are the risks of Rejuran injections?",
         body: [
           "As with any injectable procedure, Rejuran carries risks, which are explained during consultation. Temporary effects can include injection-site bumps, swelling, redness, bruising and tenderness. Less common effects include infection, prolonged swelling, nodules or hypersensitivity reactions, and vascular complications are rare but recognised with any facial injection. Serious effects are uncommon when the product is appropriately selected and administered by a trained doctor.",
         ],
       },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "What drives session count and cost is which variant your doctor selects, the size and number of areas being addressed (a full face, the under-eye area and scar-focused work all differ), the quantity of product used, and how your skin responds over the course.",
-          "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
-        ],
-      },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. What moves it:",
+      factors: [
+        "Which variant in the range your doctor selects.",
+        "The size and number of areas being addressed: a full face, the under-eye area and scar-focused work all differ.",
+        "The quantity of product used.",
+        "How your skin responds over the course.",
+      ],
+    },
     faqs: [
       {
         q: "What is the difference between Rejuran and a hyaluronic acid skin booster like Profhilo?",
@@ -2330,14 +2341,13 @@ export const technology: Technology[] = [
       {
         heading: "How PN-HPT polynucleotides work",
         body: [
-          "Polynucleotides are a different material from the hyaluronic acid used in hydration boosters and from the poly-lactic acid used in collagen-stimulating boosters. Mastelli describes PN-HPT as producing long polynucleotide chains that form a hydrating gel-like matrix in the skin and support fibroblast activity, the cells that produce the skin's structural proteins. The intention is a change in skin quality, elasticity and resilience rather than in contour or volume. In Newest, the added hyaluronic acid contributes water-binding, while the manufacturer associates mannitol with antioxidant, free-radical-scavenging properties.",
-          "Delivery is by a series of small injections distributed across the treatment area. A topical anaesthetic is commonly applied beforehand for comfort. The formulation, the quantity, the distribution and the depth are all chosen by the treating doctor for your skin, your concern and the area involved. Changes develop gradually over weeks and vary between individuals.",
+          "Polynucleotides are a different material from the hyaluronic acid used in hydration boosters and from the poly-lactic acid used in collagen-stimulating boosters. Mastelli describes PN-HPT as producing long polynucleotide chains that form a hydrating gel-like matrix in the skin and support fibroblast activity, the cells that produce the skin's structural proteins. In Newest, the added hyaluronic acid contributes water-binding, while the manufacturer associates mannitol with antioxidant, free-radical-scavenging properties.",
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "What are Plinest and Newest for, if not volume?",
         body: [
-          "Plinest and Newest are commonly considered where the concern is the quality and elasticity of the skin itself rather than lost volume. Neither is suitable for everyone, and a consultation determines whether either is appropriate for you.",
+          "The intention is a change in skin quality, elasticity and resilience rather than in contour or volume. Plinest and Newest are commonly considered where the concern is the quality and elasticity of the skin itself rather than lost volume. Neither is suitable for everyone, and a consultation determines whether either is appropriate for you.",
           "Concerns the range is typically directed at include:",
         ],
         list: [
@@ -2350,40 +2360,46 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Where are Plinest and Newest injected?",
         body: [
-          "The range is aimed at adults whose priority is skin quality rather than contour. Because it works through injected material rather than light or heat, skin tone is not a limiting factor in the way it can be with laser treatment, and it is used across a range of skin tones, though that does not make it appropriate for everyone. As the polynucleotides are fish-derived, you must declare any fish or seafood allergy before treatment.",
-          "It may not be suitable during pregnancy or breastfeeding, where there is active infection, an acne flare or inflammation at the intended site, if you have a known hypersensitivity to hyaluronic acid or mannitol in the case of Newest, if you have a bleeding disorder or take blood-thinning medication, or alongside certain autoimmune conditions. Please share your full medical history, allergies, medications and previous injectable treatments at consultation so your doctor can advise safely.",
+          "Delivery is by a series of small injections distributed across the treatment area. A topical anaesthetic is commonly applied beforehand for comfort. The formulation, the quantity, the distribution and the depth are all chosen by the treating doctor for your skin, your concern and the area involved. Changes develop gradually over weeks and vary between individuals.",
+          "The range is used beyond the face: the eye area, the neck and the hands are all areas it is considered for, and the Mastelli range includes presentations intended for particular areas such as the eye region. Which area, if any, is appropriate for you is decided at an in-person consultation.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What should you declare before Plinest or Newest?",
+        body: [
+          "Mastelli's polynucleotides are fish-derived, so you must declare any fish or seafood allergy before treatment. If Newest is being considered, a known hypersensitivity to hyaluronic acid or mannitol matters too.",
+          "The range is aimed at adults whose priority is skin quality rather than contour. Because it works through injected material rather than light or heat, skin tone is not a limiting factor in the way it can be with laser treatment, and it is used across a range of skin tones, though that does not make it appropriate for everyone.",
+          "It may not be suitable during pregnancy or breastfeeding, where there is active infection, an acne flare or inflammation at the intended site, if you have a bleeding disorder or take blood-thinning medication, or alongside certain autoimmune conditions. Please share your full medical history, allergies, medications and previous injectable treatments at consultation so your doctor can advise safely.",
+        ],
+      },
+      {
+        heading: "What happens during a Plinest or Newest session, and after it?",
         body: [
           "These products are used within Kaiteki's skin-booster treatment, so a visit begins with a doctor consultation and skin assessment that includes whether a polynucleotide product is the right category for you, and if so which formulation. If it is appropriate, the skin is cleansed and a topical anaesthetic is usually applied and left to take effect, which accounts for much of the appointment time.",
           "The doctor then places a series of small injections across the assessed area. Including preparation and numbing, a visit commonly runs from around half an hour upwards depending on the area. A course of several sessions spaced a few weeks apart is often described for polynucleotide treatment, but the number and the spacing are set by your doctor for your skin and response rather than fixed in advance, and should not be read as a promised schedule.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
           "Downtime is usually short but visible for a period. Small raised bumps at each injection point are expected and commonly settle within a day or two as the product disperses, though this varies between individuals and by area. Redness, mild swelling and pinpoint bruising can also occur.",
           "Gentle skincare and consistent sun protection are advised afterwards, and your doctor will tell you when to resume active skincare, makeup, exercise and heat exposure. Follow the aftercare they give you for your skin rather than generic advice.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "What are the side effects of Plinest and Newest?",
         body: [
           "As with any injectable procedure, Plinest and Newest carry risks, which are explained during consultation. Temporary effects can include injection-site bumps, swelling, redness, bruising and tenderness. Less common effects include infection, prolonged swelling, nodules or hypersensitivity reactions, and vascular complications are rare but recognised with any facial injection. Serious effects are uncommon when the product is appropriately selected and administered by a trained doctor.",
         ],
       },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "What drives session count and cost is which formulation your doctor selects, the number and size of areas being addressed (a full face, the eye area or the neck and hands all differ), the quantity of product used, and how your skin responds across the course.",
-          "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
-        ],
-      },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. What moves it:",
+      factors: [
+        "Which formulation your doctor selects: Plinest or Newest.",
+        "The number and size of areas being addressed: a full face, the eye area or the neck and hands all differ.",
+        "The quantity of product used.",
+        "How your skin responds across the course.",
+      ],
+    },
     faqs: [
       {
         q: "What is the difference between Plinest and Newest?",
@@ -2440,10 +2456,10 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "Is Juvelook for skin quality or for contour?",
         body: [
-          "Juvelook is commonly considered where the concern is overall skin quality and firmness rather than a change in contour. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
-          "Concerns it is typically directed at include:",
+          "Juvelook is commonly considered where the concern is overall skin quality and firmness rather than a change in contour. If you are looking for an immediate visible difference, or for contour correction, this is the wrong category and your doctor will say so.",
+          "It is not suitable for everyone, and a consultation determines whether it is appropriate for you. Concerns it is typically directed at include:",
         ],
         list: [
           "Enlarged-looking pores",
@@ -2455,40 +2471,45 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Why is Juvelook planned as a course, reviewed as it goes?",
         body: [
-          "Juvelook is aimed at adults who want a change in skin quality and are willing to wait for a gradual one. If you are looking for an immediate visible difference, or for contour correction, this is the wrong category and your doctor will say so. Because it works through injected material rather than light or heat, skin tone is not a limiting factor in the way it can be with laser treatment.",
+          "Biostimulator treatment is typically described as a course of more than one session spaced several weeks apart, with the change appearing over months rather than days. Because the effect of a biostimulator builds over months, plans are usually reviewed between sessions rather than fixed at the outset.",
+          "The number of sessions and the interval between them are set by your doctor based on your skin and your response, not by a standard schedule.",
+        ],
+      },
+      {
+        heading: "Who is Juvelook the wrong choice for?",
+        body: [
+          "Juvelook is aimed at adults who want a change in skin quality and are willing to wait for a gradual one. Because it works through injected material rather than light or heat, skin tone is not a limiting factor in the way it can be with laser treatment.",
           "Biostimulators have their own contraindications. Juvelook may not be suitable during pregnancy or breastfeeding, where there is active infection, an acne flare or inflammation at the intended site, if you have a tendency to keloid or hypertrophic scarring, if you have a history of nodules or granulomatous reactions to previous biostimulator or filler treatment, if you have a bleeding disorder or take blood-thinning medication, or alongside certain autoimmune conditions. Please share your full medical history, allergies, medications and every previous injectable you have had at consultation so your doctor can advise safely.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What happens on the day of a Juvelook session, and in the days after?",
         body: [
           "Juvelook is used within Kaiteki's skin-booster treatment, so a visit begins with a doctor consultation and skin assessment, including whether a collagen-stimulating product suits your concern, or whether a hydrating or polynucleotide booster would be the more sensible starting point. If Juvelook is appropriate, the product is prepared, the skin is cleansed and a topical anaesthetic is usually applied and left to take effect.",
-          "The doctor then places the product across the assessed area. Including preparation and numbing, a visit commonly runs from around half an hour upwards. Biostimulator treatment is typically described as a course of more than one session spaced several weeks apart, with the change appearing over months rather than days, but the number of sessions and the interval between them are set by your doctor based on your skin and your response, not by a standard schedule.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
+          "The doctor then places the product across the assessed area. Including preparation and numbing, a visit commonly runs from around half an hour upwards.",
           "Downtime is usually short but varies. Redness, mild swelling, small bumps at injection points and pinpoint bruising can occur and commonly settle over a few days. Some tenderness in the treated area is also possible in the days afterwards.",
           "Your doctor will give aftercare guidance specific to you, which for biostimulator treatment may include instructions on skincare, sun protection, and temporarily avoiding heat, strenuous exercise and pressure on the area. Follow their instructions precisely rather than advice found online, and contact the clinic if anything concerns you.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "What are the risks of a collagen stimulator like Juvelook?",
         body: [
           "As with any injectable procedure, Juvelook carries risks, which are explained during consultation. Temporary effects can include swelling, redness, bruising, tenderness and small palpable bumps. Less common effects include infection, prolonged swelling, persistent nodules or granuloma formation (a recognised consideration with collagen-stimulating products generally), and hypersensitivity reactions, while vascular complications are rare but recognised with any facial injection. Serious effects are uncommon when the product is appropriately selected and administered by a trained doctor.",
         ],
       },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "What drives session count and cost is the number and size of areas being addressed, the quantity of product your doctor judges appropriate, which concentration in the range is used, and how gradually your skin responds across the course. Because the effect of a biostimulator builds over months, plans are usually reviewed between sessions rather than fixed at the outset.",
-          "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
-        ],
-      },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. What moves it:",
+      factors: [
+        "The number and size of areas being addressed.",
+        "The quantity of product your doctor judges appropriate.",
+        "Which concentration in the range is used.",
+        "How gradually your skin responds across the course.",
+      ],
+    },
     faqs: [
       {
         q: "How is Juvelook different from Rejuran or a hyaluronic acid skin booster?",
@@ -2545,10 +2566,10 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "Why is Hydrodeluxe not used for contour?",
         body: [
-          "Hydrodeluxe is commonly considered where the concern is skin hydration, density and general quality rather than contour. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
-          "Concerns it is typically directed at include:",
+          "The hyaluronic acid in it is linear and non-crosslinked, so it is not formulated to hold a shape or restore contour the way a cross-linked filler is. If contour is what concerns you, this is the wrong category and your doctor will tell you so rather than substituting one for the other.",
+          "Hydrodeluxe is commonly considered where the concern is skin hydration, density and general quality rather than contour. It is not suitable for everyone, and a consultation determines whether it is appropriate for you. Concerns it is typically directed at include:",
         ],
         list: [
           "Dehydrated, dull or tired-looking skin",
@@ -2559,40 +2580,44 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Hydrodeluxe or Profhilo: how do two HA boosters differ?",
         body: [
-          "It is aimed at adults whose priority is skin hydration and quality. If contour is what concerns you, this is the wrong category and your doctor will tell you so rather than substituting one for the other. Because it works through injected material rather than light or heat, skin tone is not a limiting factor in the way it can be with laser treatment, and it is used across a range of skin tones, though that alone does not make it appropriate for everyone.",
+          "Both are hyaluronic acid skin boosters from Italian manufacturers, but the formulations differ. Profhilo is built on IBSA's NAHYCO hybrid complexes of high and low molecular weight HA, bound without a chemical cross-linking agent; Hydrodeluxe is a non-crosslinked HA hydrogel that the manufacturer enriches with calcium hydroxyapatite and the amino acids glycine and L-proline.",
+          "Neither is presented here as superior. Which one a doctor selects depends on your skin, your concern and your history, assessed in person.",
+        ],
+      },
+      {
+        heading: "Who should avoid Hydrodeluxe, including anyone sensitive to CaHA?",
+        body: [
+          "It is aimed at adults whose priority is skin hydration and quality. Because it works through injected material rather than light or heat, skin tone is not a limiting factor in the way it can be with laser treatment, and it is used across a range of skin tones, though that alone does not make it appropriate for everyone.",
           "It may not be suitable if you have a known hypersensitivity to hyaluronic acid or to calcium hydroxyapatite, during pregnancy or breastfeeding, where there is active infection, an acne flare or inflammation at the intended site, if you have a bleeding disorder or take blood-thinning medication, if you have a tendency to keloid scarring, or alongside certain autoimmune conditions. Tell your doctor about any previous CaHA-based or filler treatment, along with your full medical history, allergies and medications, so they can advise safely.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What does a Hydrodeluxe visit involve, and is there downtime?",
         body: [
           "Hydrodeluxe is used within Kaiteki's skin-booster treatment, so a visit begins with a doctor consultation and skin assessment, including whether a hydrating booster is the sensible starting point for your concern or whether another category would be more appropriate. If it is suitable, the skin is cleansed and a topical anaesthetic may be applied for comfort.",
           "The doctor then places the product across the assessed area using the technique they judge appropriate. Including preparation, a visit is typically short, commonly well under an hour. A course of more than one session spaced some weeks apart, with occasional maintenance afterwards, is a common pattern for hydrating boosters, but the number of sessions and the interval are set by your doctor for your skin and response rather than promised in advance.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
           "Downtime is usually limited but varies between individuals. Small bumps at the injection points, redness, mild swelling, tenderness or pinpoint bruising can occur and commonly settle over a short period as the product distributes.",
           "Gentle skincare and consistent sun protection are advised afterwards. Your doctor will tell you when to resume makeup, active skincare, exercise and heat exposure, and will give aftercare guidance specific to your skin and the area treated.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "Is Hydrodeluxe safe, and what side effects are possible?",
         body: [
           "As with any injectable procedure, Hydrodeluxe carries risks, which are explained during consultation. Temporary effects can include injection-site swelling, redness, bruising, tenderness and small palpable bumps. Less common effects include infection, prolonged swelling, nodules or hypersensitivity reactions, and vascular complications are rare but recognised with any facial injection. Serious effects are uncommon when the product is appropriately selected and administered by a trained doctor.",
         ],
       },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "What drives session count and cost is the number and size of areas being addressed (face, neck and décolletage all differ), the quantity of product your doctor judges appropriate, and whether maintenance visits form part of your plan over time.",
-          "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
-        ],
-      },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. What moves it:",
+      factors: [
+        "The number and size of areas being addressed: face, neck and décolletage all differ.",
+        "The quantity of product your doctor judges appropriate.",
+        "Whether maintenance visits form part of your plan over time.",
+      ],
+    },
     faqs: [
       {
         q: "Is Hydrodeluxe a filler?",
@@ -2666,6 +2691,15 @@ export const technology: Technology[] = [
         ],
       },
     ],
+    costFactors: {
+      intro:
+        "Cost depends on the area, the dose your doctor determines and your individual plan, so it is confirmed at consultation. As a prescription medicine, it cannot be quoted or promoted as a package before assessment. What moves it:",
+      factors: [
+        "The area or areas being treated.",
+        "The number of units your doctor decides after examining how the muscles in the area move. Units are product-specific, so a figure quoted for another brand or clinic does not transfer.",
+        "Your plan over time. The effect is temporary, so treatment is planned as a repeating cycle and reviewed by your doctor rather than set to a fixed schedule.",
+      ],
+    },
     faqs: [
       {
         q: "Is Botox the same as botulinum toxin?",
@@ -2703,7 +2737,7 @@ export const technology: Technology[] = [
           heading: "What is Sculptra?",
           body: [
             "Sculptra is an injectable collagen stimulator made by Galderma. Its active material is poly-L-lactic acid (the manufacturer refers to its particle form as PLLA-SCA) supplied as a dry powder that the clinic reconstitutes with sterile water before use. It sits in the bio-stimulator category rather than the dermal filler category, and that distinction matters if you are comparing options: a hyaluronic acid filler adds volume the moment it is placed, whereas Sculptra is intended to work by prompting your own collagen response over a period of months.",
-            "Because of that mechanism, Sculptra is generally considered where the concern is overall firmness and skin quality across a region, the cheek area, for example, rather than reshaping a single line on the day. Whether it is an appropriate choice for you, and whether a filler or a different bio-stimulator would suit your concern better, is a clinical decision your doctor makes at an in-person consultation.",
+            "Whether it is an appropriate choice for you, and whether a filler or a different bio-stimulator would suit your concern better, is a clinical decision your doctor makes at an in-person consultation.",
           ],
         },
         {
@@ -2714,8 +2748,9 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "What it may help address",
+          heading: "What is Sculptra used for, if not instant volume?",
           body: [
+            "Because of that mechanism, Sculptra is generally considered where the concern is overall firmness and skin quality across a region, the cheek area, for example, rather than reshaping a single line on the day.",
             "Within Kaiteki's bio-stimulator treatment, Sculptra is commonly considered for concerns related to gradual loss of firmness and structural support. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
           ],
           list: [
@@ -2728,40 +2763,45 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "Suitability & who should avoid it",
+          heading: "What happens to Sculptra in the skin over time?",
+          body: [
+            "The poly-L-lactic acid itself is bioresorbable and is broken down and cleared by the body. Any change comes from your own collagen response, which continues to age normally afterwards, so the effect is not permanent and duration is not guaranteed: how long it holds differs between individuals.",
+            "Unlike a hyaluronic acid filler, which can often be dissolved if needed, Sculptra cannot be dissolved in the same way. That is why careful assessment beforehand matters, and why some people choose occasional maintenance later rather than a larger treatment up front. Your doctor will discuss review and any maintenance at consultation.",
+          ],
+        },
+        {
+          heading: "Who suits a staged treatment like Sculptra, and who should avoid it?",
           body: [
             "Sculptra is aimed at adults who accept a gradual, staged approach and are not looking for an immediate change. It suits people who prefer to build support progressively, and it is used across a range of skin tones because the mechanism is biological rather than light-based, so skin tone is not the limiting factor it can be with lasers. Your existing facial structure, skin thickness and how much support has already been lost all influence whether it is the right category of product for you.",
             "Sculptra is not appropriate for anyone with a known allergy to its components, and the manufacturer advises against use in people with a history of keloid or hypertrophic scarring. It is not used in pregnancy or while breastfeeding, or where there is active infection or inflammation in the intended treatment area. Bleeding disorders, blood-thinning medication, autoimmune conditions and previous injectable treatments in the same area are all relevant. Please share your full medical history, medication list and any past injectable or surgical work at consultation so the doctor can advise safely.",
           ],
         },
         {
-          heading: "The session at Kaiteki",
+          heading: "What happens across a Sculptra session and the days after it?",
           body: [
             "A visit begins with a doctor consultation and facial assessment, where the concern, your history and the realistic time course are discussed. If Sculptra is appropriate, the product is reconstituted in advance per the manufacturer's instructions, the skin is cleansed and a topical anaesthetic or local anaesthetic is used for comfort. The injection itself typically takes a relatively short time: most of the appointment is assessment, preparation and aftercare discussion rather than the injecting.",
             "The doctor may massage the treated area afterwards and will explain the aftercare routine, including whether any at-home massage is advised for you. Sculptra is normally planned as a small number of sessions spaced a few weeks apart, with the response reviewed between visits. The exact number and spacing depend on your assessment, and your doctor will set out what to expect for your case.",
-          ],
-        },
-        {
-          heading: "Downtime & aftercare",
-          body: [
             "Most people return to normal activity the same day, though this varies. Injection-site swelling, redness, tenderness or bruising is common in the first few days and usually settles; bruising can occasionally take longer to fade, which is worth planning around if you have an event coming up.",
             "Your doctor will advise on aftercare specific to you, which commonly includes avoiding pressure or vigorous facial treatments on the area for a short period, and following any massage instructions given. Because change develops over months, review appointments matter more here than with an immediate-result treatment: keep them, and raise anything unexpected with the clinic rather than waiting.",
           ],
         },
         {
-          heading: "Risks & side effects",
+          heading: "What are Sculptra's risks, including lumps that appear later?",
           body: [
             "As with any injectable procedure, Sculptra carries risks, which are explained during consultation. Temporary effects can include swelling, redness, tenderness, bruising, bleeding at the injection site and small bumps under the skin. Delayed-onset lumps or nodules have been reported with poly-L-lactic acid products, sometimes months after treatment, and rare but serious vascular complications are recognised for facial injectables in general. These are uncommon when the treatment is appropriately selected and performed by a trained doctor using an assessed injection plan, and your doctor will explain the warning signs to report.",
           ],
         },
-        {
-          heading: "Sessions & cost factors",
-          body: [
-            "What drives cost is the area being addressed, how much structural support has been lost, how many sessions your plan involves and how your skin responds between visits. Because Sculptra is a staged treatment, the plan is best understood as a course rather than a single appointment, and some people choose occasional maintenance later.",
-            "Pricing is discussed at consultation rather than quoted online, so any figure you are given reflects your actual assessed plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
-          ],
-        },
       ],
+      costFactors: {
+        intro:
+          "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. What moves it:",
+        factors: [
+          "The area being addressed.",
+          "How much structural support has been lost.",
+          "How many sessions your plan involves. Sculptra is a staged treatment, so the plan is best understood as a course rather than a single appointment.",
+          "How your skin responds between visits.",
+        ],
+      },
       faqs: [
         {
           q: "How is Sculptra different from a hyaluronic acid filler?",
@@ -2814,13 +2854,21 @@ export const technology: Technology[] = [
           heading: "How polycaprolactone works",
           body: [
             "Polycaprolactone is a synthetic, bioresorbable polymer already used in absorbable medical implants and sutures. In Ellansé the PCL is formed into uniform microspheres held in the carrier gel. The gel component is absorbed over time, leaving the microspheres in place; as those are gradually broken down and cleared, they act as a scaffold and stimulus around which the body forms its own collagen. That is why the manufacturer frames Ellansé as regenerative rather than purely volumising: the later part of the effect is your tissue, not the product.",
+          ],
+        },
+        {
+          heading: "Why can Ellansé not be dissolved, and how long does it last?",
+          body: [
+            "Unlike hyaluronic acid fillers, polycaprolactone has no dissolving agent: it is bioresorbable and is cleared by the body over time rather than reversed on demand.",
             "Ellansé is supplied as a range of variants (identified by the manufacturer as Ellansé-S through to Ellansé-E) which differ in how long the PCL microspheres take to be resorbed. The manufacturer describes the range as offering sustained duration from around twelve months at the shorter end up to several years at the longest, but individual response varies and duration is not guaranteed. Which variant is used, where it is placed and how much is used are decisions for the treating doctor after assessing your face, not something to choose from a website. Results develop gradually and vary between individuals.",
           ],
         },
         {
-          heading: "What it may help address",
+          heading: "What is Ellansé used for, and how does it differ from Sculptra?",
           body: [
             "Within Kaiteki's bio-stimulator treatment, Ellansé is commonly considered where the concern combines loss of structural support with declining skin quality. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
+            "It is often compared with Sculptra. Both are bio-stimulators, but the material differs: Ellansé's polycaprolactone microspheres sit in a carrier gel that the manufacturer describes as giving support when placed, while Sculptra's poly-L-lactic acid is reconstituted before use and is intended to act more purely as a gradual collagen stimulus over a course of sessions. Which is appropriate for your concern is decided by your doctor at consultation.",
+            "Concerns it is typically directed at include:",
           ],
           list: [
             "Nasolabial folds and other established facial folds",
@@ -2832,40 +2880,40 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "Suitability & who should avoid it",
+          heading: "Why does Ellansé need a more careful assessment than a filler?",
           body: [
             "Ellansé is aimed at adults who want a staged, structural approach and understand that part of the change appears later rather than immediately. Because the mechanism is biological rather than light-based, skin tone is not a limiting factor in the way it can be for laser treatments, so it is used across a range of skin tones including Asian skin. Your facial anatomy, how much support has been lost and any previous injectable work in the area all influence whether it is appropriate.",
-            "Ellansé is not appropriate for anyone with a known hypersensitivity to its components, and it is not used where there is active infection or inflammation at or near the intended site. It is not used in pregnancy or while breastfeeding. Bleeding disorders and blood-thinning medication, autoimmune or connective-tissue conditions, a history of keloid or hypertrophic scarring, and previous permanent or semi-permanent implants in the same area are all relevant considerations. Because polycaprolactone cannot be dissolved the way hyaluronic acid can, careful assessment before treatment matters more, not less. Please share your full medical history, medication list and any past injectable or surgical treatments at consultation.",
+            "Because polycaprolactone cannot be dissolved the way hyaluronic acid can, careful assessment before treatment matters more, not less. Ellansé is not appropriate for anyone with a known hypersensitivity to its components, and it is not used where there is active infection or inflammation at or near the intended site. It is not used in pregnancy or while breastfeeding. Bleeding disorders and blood-thinning medication, autoimmune or connective-tissue conditions, a history of keloid or hypertrophic scarring, and previous permanent or semi-permanent implants in the same area are all relevant considerations. Please share your full medical history, medication list and any past injectable or surgical treatments at consultation.",
           ],
         },
         {
-          heading: "The session at Kaiteki",
+          heading: "Is Ellansé a single session, and what is the recovery like?",
           body: [
             "The visit starts with a doctor consultation and facial assessment, covering your concern, your medical history, which product category is appropriate and the realistic time course. If Ellansé is appropriate, the doctor selects the variant and plan, the skin is cleansed and prepared, and topical or local anaesthetic is used for comfort. The injection is carried out according to the assessed plan; the appointment as a whole is usually short, with most of the time spent on assessment and aftercare rather than injecting.",
             "The doctor may shape and massage the area afterwards and will explain aftercare. Many plans are built around a single treatment session with a review afterwards, though some people need more than one depending on the assessment and how the area responds. Your doctor will explain what to expect for you and when to come back for review.",
-          ],
-        },
-        {
-          heading: "Downtime & aftercare",
-          body: [
             "Downtime is usually limited, but this varies. Swelling, redness, tenderness or bruising at the injection sites is common in the first days and typically settles; bruising can take longer to fade in some people, so it is worth planning around any upcoming event.",
             "Your doctor will give aftercare guidance for your case, which commonly includes avoiding pressure, vigorous massage, facial treatments, heat and strenuous exercise on the area for a short period, plus any specific instructions for the treated region. Because part of the intended change develops over months, attending the review appointment matters, and anything unexpected should be raised with the clinic promptly rather than left.",
           ],
         },
         {
-          heading: "Risks & side effects",
+          heading: "What side effects does the manufacturer list for Ellansé?",
           body: [
             "As with any injectable procedure, Ellansé carries risks, which are explained during consultation. The manufacturer lists possible effects including pain, swelling, redness, bruising, inflammation, infection, hypersensitivity reactions and nodule or lump formation, and recognises rare but serious complications associated with inadvertent intravascular injection during facial filler procedures. These are uncommon when the treatment is appropriately selected and performed by a trained doctor working to an assessed plan, and your doctor will explain which symptoms to report and how quickly.",
           ],
         },
-        {
-          heading: "Sessions & cost factors",
-          body: [
-            "Cost is driven by the area being addressed, how much structural support has been lost, the variant and quantity your doctor judges appropriate, and whether your plan involves more than one session. Because part of the effect develops over months, the plan is best understood as a course with review rather than a one-off purchase.",
-            "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual assessed plan. Message us on WhatsApp to arrange a consultation.",
-          ],
-        },
       ],
+      costFactors: {
+        intro:
+          "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual assessed plan. What moves it:",
+        factors: [
+          "The area being addressed.",
+          "How much structural support has been lost.",
+          "The variant and quantity your doctor judges appropriate.",
+          "Whether your plan involves more than one session.",
+        ],
+        outro:
+          "Because part of the effect develops over months, the plan is best understood as a course with review rather than a one-off purchase.",
+      },
       faqs: [
         {
           q: "How is Ellansé different from Sculptra?",
@@ -2911,7 +2959,6 @@ export const technology: Technology[] = [
           heading: "What is Radiesse?",
           body: [
             "Radiesse is an injectable made by Merz Aesthetics. Its active material is calcium hydroxylapatite (CaHA) in the form of microspheres suspended in a gel carrier; the manufacturer describes CaHA as a mineral-like substance also found naturally in the body. It belongs to the bio-stimulator category rather than the hyaluronic acid filler category, and Kaiteki uses it within its bio-stimulator treatment.",
-            "The buyer's distinction is what happens on the day versus what happens later. A hyaluronic acid filler adds volume immediately and can be dissolved if needed; a pure collagen stimulator such as a poly-L-lactic acid product works mainly over months. Radiesse sits between the two in behaviour: the manufacturer describes immediate volume correction from the gel carrier alongside stimulation of the skin's own collagen and elastin over time, with the CaHA microspheres being gradually resorbed. Whether that profile suits your concern is a clinical judgement your doctor makes at an in-person consultation.",
           ],
         },
         {
@@ -2922,9 +2969,16 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "What it may help address",
+          heading: "Filler or collagen stimulator: where does Radiesse sit?",
           body: [
-            "Within Kaiteki's bio-stimulator treatment, Radiesse is commonly considered where structural support and skin quality are both part of the concern. The manufacturer's cleared indications include facial folds, the back of the hands, the décolletage in diluted form and jawline contour. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
+            "The buyer's distinction is what happens on the day versus what happens later. A hyaluronic acid filler adds volume immediately and can be dissolved if needed; a pure collagen stimulator such as a poly-L-lactic acid product works mainly over months. Radiesse sits between the two in behaviour: the manufacturer describes immediate volume correction from the gel carrier alongside stimulation of the skin's own collagen and elastin over time, with the CaHA microspheres being gradually resorbed. Whether that profile suits your concern is a clinical judgement your doctor makes at an in-person consultation.",
+            "Unlike hyaluronic acid fillers, it has no dissolving agent, so it cannot be reversed on demand. The calcium hydroxylapatite is bioresorbable and is cleared by the body over time, and your own tissue continues to age, so duration varies between individuals and is not something we quote as a promise.",
+          ],
+        },
+        {
+          heading: "Can Radiesse be used beyond the face?",
+          body: [
+            "Radiesse is one of the few injectables in this category with manufacturer-cleared use beyond the face, on the hands and décolletage. Within Kaiteki's bio-stimulator treatment, Radiesse is commonly considered where structural support and skin quality are both part of the concern. The manufacturer's cleared indications include facial folds, the back of the hands, the décolletage in diluted form and jawline contour. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
           ],
           list: [
             "Nasolabial folds and other moderate to severe facial folds",
@@ -2936,40 +2990,40 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "Suitability & who should avoid it",
+          heading: "Who should avoid Radiesse, and why mention it before a scan?",
           body: [
-            "Radiesse is aimed at adults who want structural support with a collagen response building afterwards, and it is one of the few injectables in this category with manufacturer-cleared use beyond the face, on the hands and décolletage. Because the mechanism is biological rather than light-based, skin tone does not limit suitability the way it can for laser treatments, so it is used across a range of skin tones. Your anatomy, how much support has been lost, the area concerned and any previous injectable work all influence whether it is appropriate.",
+            "Radiesse is aimed at adults who want structural support with a collagen response building afterwards. Because the mechanism is biological rather than light-based, skin tone does not limit suitability the way it can for laser treatments, so it is used across a range of skin tones. Your anatomy, how much support has been lost, the area concerned and any previous injectable work all influence whether it is appropriate.",
             "Radiesse is not appropriate for anyone with a known allergy or hypersensitivity to its components, and the manufacturer advises against use where there is a bleeding disorder or an active skin infection or inflammation at or near the intended site. It is not used in pregnancy or while breastfeeding. Blood-thinning medication, autoimmune and connective-tissue conditions, a history of keloid or hypertrophic scarring, and previous permanent or semi-permanent implants in the same area are all relevant. Calcium hydroxylapatite is radiopaque, which means it can be visible on some imaging. Tell your doctor if you are due to have imaging of the treated region. Please share your full medical history and medication list at consultation.",
           ],
         },
         {
-          heading: "The session at Kaiteki",
+          heading: "What happens at a Radiesse appointment, and what should you expect after hand treatment?",
           body: [
             "The visit begins with a doctor consultation and assessment of the area, your medical history and whether a bio-stimulator or a different category is the right answer for your concern. If Radiesse is appropriate, the doctor decides the preparation and plan, the area is cleansed, and topical or local anaesthetic is used for comfort. The injection is then carried out to the assessed plan: the injecting portion is usually brief, with most of the appointment given to assessment, comfort and aftercare.",
             "The area is commonly shaped or massaged afterwards, particularly on the hands, and your doctor will explain aftercare and when to return for review. Some plans are a single session with a review; others are staged over more than one visit depending on the area and how it responds. Your doctor will set out what to expect for your case.",
-          ],
-        },
-        {
-          heading: "Downtime & aftercare",
-          body: [
             "Most people carry on with normal activity the same day, though this varies. Swelling, redness, tenderness, bruising or itching at the injection sites is common in the first days and generally settles; the manufacturer notes that lumps can occur after hand treatment and may take longer to resolve, which the doctor will discuss with you if the hands are being treated.",
             "Your doctor will give aftercare instructions specific to the area, commonly including avoiding pressure, vigorous massage, heat and strenuous exercise for a short period. Where the décolletage or hands are treated, sun protection on the area is advised. Raise anything unexpected with the clinic promptly rather than waiting for your review appointment.",
           ],
         },
         {
-          heading: "Risks & side effects",
+          heading: "What are the risks of Radiesse on the face and hands?",
           body: [
             "As with any injectable procedure, Radiesse carries risks, which are explained during consultation. The manufacturer lists common effects including bruising, redness, swelling, pain and itching at the injection site, and notes that nodules may occur, particularly in hand treatment, and can persist for a period. Rare but serious vascular complications are recognised for facial injectables generally. These are uncommon when the treatment is appropriately selected and performed by a trained doctor working to an assessed plan, and your doctor will explain which symptoms warrant contacting the clinic immediately.",
           ],
         },
-        {
-          heading: "Sessions & cost factors",
-          body: [
-            "Cost is driven by the area treated (a single fold, a jawline, both hands or the décolletage are very different in scope), how much support has been lost, the quantity your doctor judges appropriate, and whether your plan is staged across more than one visit. Diluted applications over broader areas are often planned as a short course with review.",
-            "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual assessed plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
-          ],
-        },
       ],
+      costFactors: {
+        intro:
+          "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. What moves it:",
+        factors: [
+          "The area treated: a single fold, a jawline, both hands or the décolletage are very different in scope.",
+          "How much support has been lost.",
+          "The quantity your doctor judges appropriate.",
+          "Whether your plan is staged across more than one visit.",
+        ],
+        outro:
+          "Diluted applications over broader areas are often planned as a short course with review.",
+      },
       faqs: [
         {
           q: "Is Radiesse a filler or a collagen stimulator?",
@@ -3022,12 +3076,19 @@ export const technology: Technology[] = [
         heading: "How VYCROSS® gel technology works",
         body: [
           "Allergan Aesthetics describes VYCROSS® as a cross-linking process that combines shorter-chain and longer-chain hyaluronic acid in the same gel, which the manufacturer says produces a smooth, cohesive gel. That cohesivity is the practical point for a comparison shopper: it influences how the gel behaves once placed: how readily it spreads, how much it resists deformation, and therefore which part of the face it is used in. The manufacturer also reports that tissue integration was demonstrated for gels including Volbella, Volift, Voluma and Volux in animal in-vivo studies.",
-          "The range is graded by firmness rather than sold as one product. Softer, lower-firmness gels such as Volbella are used in delicate areas including the lips and perioral lines; mid-range gels such as Volift are used for facial lines and folds; firmer gels such as Voluma and Volux are used where projection and contour definition are the objective, for example the mid-face or jawline. Allergan Aesthetics states that duration in clinical studies varies by the area treated and the specific filler used. Product selection, placement and quantity are decided by the treating doctor after assessing your face in person. Results vary between individuals.",
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "How long does Juvéderm last, and can it be dissolved?",
         body: [
+          "Duration is finite: hyaluronic-acid fillers are gradually broken down by the body, and Allergan Aesthetics reports duration in clinical studies as varying by product and treatment area. Top-up intervals are individual and depend on the area, the gel used and your own metabolism.",
+          "Because Juvéderm is a hyaluronic-acid filler, it can be dissolved with an enzyme called hyaluronidase where a doctor judges this clinically indicated. This is a medical procedure with its own risks and assessment, not a routine undo button, and it is not appropriate in every situation. Discuss reversibility with your doctor before treatment so you understand what is and is not possible.",
+        ],
+      },
+      {
+        heading: "Where on the face is each Juvéderm gel used?",
+        body: [
+          "The range is graded by firmness rather than sold as one product. Softer, lower-firmness gels such as Volbella are used in delicate areas including the lips and perioral lines; mid-range gels such as Volift are used for facial lines and folds; firmer gels such as Voluma and Volux are used where projection and contour definition are the objective, for example the mid-face or jawline. Allergan Aesthetics states that duration in clinical studies varies by the area treated and the specific filler used. Product selection, placement and quantity are decided by the treating doctor after assessing your face in person. Results vary between individuals.",
           "Juvéderm gels are commonly considered for the following concerns as part of an individually planned dermal filler treatment. Being on this list does not mean the treatment is appropriate for you. That is determined at consultation.",
         ],
         list: [
@@ -3040,40 +3101,38 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Who should not have Juvéderm, according to the manufacturer?",
         body: [
           "Juvéderm is aimed at adults seeking volume replacement or contour support rather than skin-surface texture change. The manufacturer notes that formulas in the collection were studied across Fitzpatrick skin types I to VI, and HA fillers are not light-based, so skin tone itself is not the limiting factor it can be with lasers. Suitability instead depends on your facial anatomy, your concern, and your medical history.",
           "The manufacturer advises against treatment where there is known hypersensitivity to hyaluronic acid or to lidocaine and amide-type local anaesthetics, a history of severe allergy or anaphylaxis, or active inflammation or infection at the intended site. Fillers are generally not used during pregnancy or breastfeeding. Tell your doctor about autoimmune conditions, blood-thinning or immune-modulating medication, previous filler or any permanent implant in the area, and any recent or planned laser, peel or dental work, so a full assessment can be made before anything is injected.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "How long does a Juvéderm appointment take, and when does the swelling settle?",
         body: [
           "Every filler visit begins with a doctor consultation: your concern, your medical history and an assessment of your facial proportions. If treatment is appropriate, the doctor discusses which areas to address and in what order, and explains the risks before you consent. The skin is cleansed and a topical anaesthetic may be applied; many Juvéderm gels also contain lidocaine, which contributes to comfort during injection. The gel is then placed in small increments using a needle or cannula, depending on the area and the doctor's judgement.",
           "Injection time for a single area is typically short, often within 15 to 30 minutes once preparation is complete, although a multi-area plan takes longer. Many plans are staged across more than one visit rather than treating everything at once, and a review appointment is commonly arranged so the doctor can assess how the area has settled. Product choice, placement and quantity are the treating doctor's decisions, never a fixed formula.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
           "Most people return to normal activity the same day, but swelling, tenderness and bruising at injection points are common in the first few days and vary considerably between individuals: the lips and under-eye area tend to swell more visibly than the cheeks or jawline. If you have a significant event coming up, allow a comfortable margin and discuss timing at consultation.",
           "Your doctor will give aftercare guidance for the specific area treated. This usually includes avoiding pressure or massage on the treated site, keeping strenuous exercise, heat exposure and alcohol to a minimum for a short period, and contacting the clinic promptly rather than waiting if anything feels unusual.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "What are the risks of Juvéderm, and which symptoms are urgent?",
         body: [
-          "As with any injectable medical device, Juvéderm carries risks, and these are explained to you at consultation before you consent. Temporary effects can include redness, swelling, bruising, tenderness, firmness or small lumps at the injection site, and occasionally discolouration. Less common effects include infection, inflammatory nodules and delayed hypersensitivity. The most serious recognised risk of any dermal filler is vascular occlusion, filler entering or compressing a blood vessel, which can affect the skin or, rarely, vision. It is uncommon, but it is the reason fillers must be administered by a doctor trained in facial anatomy and in managing complications, and the reason you should report sudden pain, skin blanching or any visual change immediately. Hyaluronic-acid fillers such as Juvéderm can be dissolved with hyaluronidase where a doctor judges this clinically indicated.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "Filler cost is driven by how many areas are being addressed, which gel in the range is clinically appropriate for each of them, and how much product your anatomy actually calls for, which is why an online figure would be meaningless. Firmer structural gels and delicate-area gels are not interchangeable, so a plan is priced around what the doctor selects rather than a single per-area rate.",
-          "Duration is finite: hyaluronic-acid fillers are gradually broken down by the body, and Allergan Aesthetics reports duration in clinical studies as varying by product and treatment area. Top-up intervals are individual and depend on the area, the gel used and your own metabolism. Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
+          "As with any injectable medical device, Juvéderm carries risks, and these are explained to you at consultation before you consent. Temporary effects can include redness, swelling, bruising, tenderness, firmness or small lumps at the injection site, and occasionally discolouration. Less common effects include infection, inflammatory nodules and delayed hypersensitivity. The most serious recognised risk of any dermal filler is vascular occlusion, filler entering or compressing a blood vessel, which can affect the skin or, rarely, vision. It is uncommon, but it is the reason fillers must be administered by a doctor trained in facial anatomy and in managing complications, and the reason you should report sudden pain, skin blanching or any visual change immediately.",
         ],
       },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online. Filler cost is driven by what your anatomy actually calls for, which is why an online figure would be meaningless. What moves it:",
+      factors: [
+        "How many areas are being addressed.",
+        "Which gel in the range is clinically appropriate for each of them. Firmer structural gels and delicate-area gels are not interchangeable, so a plan is priced around what the doctor selects rather than a single per-area rate.",
+        "How much product your anatomy actually calls for.",
+        "How often top-ups are needed, which is individual.",
+      ],
+    },
     faqs: [
       {
         q: "What is the difference between the Juvéderm gels, and how does the doctor choose?",
@@ -3130,8 +3189,16 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "Can Restylane be reversed, and how long does it last?",
         body: [
+          "Hyaluronic-acid gels such as Restylane can be dissolved with hyaluronidase where a doctor judges this clinically indicated. It is a medical procedure with its own risks and assessment, not a routine undo button, and it is not appropriate in every situation.",
+          "Hyaluronic-acid fillers are gradually broken down by the body, so the effect is not permanent and maintenance is individual: the area's movement, the gel used and your own metabolism all influence how long it lasts.",
+        ],
+      },
+      {
+        heading: "Restylane or another HA filler: what actually differs?",
+        body: [
+          "All the main filler families used at Kaiteki are cross-linked hyaluronic acid, so the meaningful difference is the gel technology rather than the ingredient. Restylane is distinctive in offering two separate technologies, a firmer particle-based gel and a flexible integrating gel, within one range. Which brand and gel is appropriate depends on the area being treated and your anatomy, and that is a clinical decision made at consultation.",
           "Restylane gels are commonly considered for the following concerns within an individually planned filler treatment. Appearing on this list does not mean the treatment is suitable for you; that is established at consultation.",
         ],
         list: [
@@ -3144,40 +3211,37 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Does a wide range of gels mean Restylane suits everyone?",
         body: [
           "Restylane is aimed at adults who want volume replacement, contour support or line softening. Because HA fillers do not use light or heat, skin tone is not the constraint it can be with laser treatments: the relevant factors are your facial anatomy, the mobility of the area concerned, and your medical history. The breadth of the range means the doctor can choose a firmer or more flexible gel to match the area, but breadth is not the same as universal suitability.",
           "Fillers are generally avoided in pregnancy and breastfeeding, and where there is active infection, inflammation or a skin lesion at the intended injection site. Tell your doctor if you have a history of severe allergy or anaphylaxis, known sensitivity to hyaluronic acid or to lidocaine and amide-type local anaesthetics, an autoimmune condition, a bleeding tendency or blood-thinning medication, previous filler or any permanent implant in the area, or a tendency to form abnormal scars. Please share your full medical history so the doctor can advise safely.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What happens at a Restylane appointment, and how much swelling follows?",
         body: [
           "A visit starts with a doctor consultation covering your concern, your medical history and an assessment of your facial proportions and tissue quality: the latter matters here, because it influences whether a firmer NASHA® gel or a more flexible OBT™ gel is the better fit. Risks are explained before you give consent. The area is cleansed and a topical anaesthetic may be used; several gels in the range are also available with lidocaine included for injection comfort.",
           "The gel is placed in small increments with a needle or cannula according to the area and the doctor's judgement. Injection for a single area is usually a matter of minutes rather than hours, with a typical appointment often running 15 to 30 minutes once preparation is done. Multi-area plans are frequently staged over more than one visit rather than completed in a single sitting, and a follow-up review is commonly arranged once swelling has settled.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
           "Downtime is generally limited, though this varies between individuals. Swelling, tenderness, redness and bruising at injection points are common in the first few days, and mobile areas such as the lips tend to swell more noticeably than the cheeks or jawline. Plan a comfortable margin before any event that matters to you.",
           "Your doctor will give aftercare guidance specific to the area treated, which typically covers avoiding pressure or massage on the site, limiting strenuous exercise, saunas and alcohol briefly, and contacting the clinic straight away rather than waiting if anything feels unexpected.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "Which side effects after Restylane need reporting straight away?",
         body: [
-          "Restylane is an injectable medical device and carries risks, which are explained to you at consultation before you consent. Temporary effects can include swelling, bruising, redness, tenderness, firmness or small lumps at the injection site. Less common effects include infection, inflammatory nodules and delayed hypersensitivity reactions. The most serious recognised risk of any dermal filler is vascular occlusion, filler entering or compressing a blood vessel, which can affect the skin and, rarely, vision. It is uncommon, but it is precisely why filler must be administered by a doctor trained in facial anatomy and complication management, and why sudden pain, skin blanching or any change in vision should be reported immediately. Hyaluronic-acid gels such as Restylane can be dissolved with hyaluronidase where a doctor judges this clinically indicated.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "Cost depends on how many areas are being addressed, which gel technology and which specific gel the doctor selects for each of them, and how much product your anatomy calls for. A firmer structural gel used for jawline definition and a flexible gel used for lips are not interchangeable products, so a plan is costed around the clinical selection rather than a flat per-area rate.",
-          "Hyaluronic-acid fillers are gradually broken down by the body, so the effect is not permanent and maintenance is individual: the area's movement, the gel used and your own metabolism all influence how long it lasts. Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
+          "Restylane is an injectable medical device and carries risks, which are explained to you at consultation before you consent. Temporary effects can include swelling, bruising, redness, tenderness, firmness or small lumps at the injection site. Less common effects include infection, inflammatory nodules and delayed hypersensitivity reactions. The most serious recognised risk of any dermal filler is vascular occlusion, filler entering or compressing a blood vessel, which can affect the skin and, rarely, vision. It is uncommon, but it is precisely why filler must be administered by a doctor trained in facial anatomy and complication management, and why sudden pain, skin blanching or any change in vision should be reported immediately.",
         ],
       },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan. What moves it:",
+      factors: [
+        "How many areas are being addressed.",
+        "Which gel technology and which specific gel the doctor selects for each area. A firmer structural gel used for jawline definition and a flexible gel used for lips are not interchangeable, so a plan is costed around the clinical selection rather than a flat per-area rate.",
+        "How much product your anatomy calls for.",
+      ],
+    },
     faqs: [
       {
         q: "What is the difference between Restylane NASHA® and OBT™ gels?",
@@ -3230,12 +3294,20 @@ export const technology: Technology[] = [
         heading: "How the biomimetic matrix cross-linking works",
         body: [
           "In a standard process, HA strands are straightened out of their natural coiled form and cross-linked once with an ether to form a gel. Merz Aesthetics describes Belotero as going a step further: the cross-linked gel is expanded so that additional hyaluronic acid can be introduced and cross-linked in a second, dynamic phase. The manufacturer says this creates a three-dimensional structure with varying HA densities within the same gel, intended to mimic the natural detail of skin, hence the biomimetic description.",
-          "For a comparison shopper the practical consequence is placement. A gel with lower firmness and good spread can be used more superficially and in delicate skin, which is why the softer Belotero gels are commonly discussed for fine lines and thin-skinned areas, while the firmer Belotero Volume gel is used where support and projection are the objective. That is a difference in engineering, not a ranking: a structural gel and a fine-line gel are simply built for different jobs. Gel choice, placement depth and quantity are the treating doctor's decisions, and results develop over the days after treatment and vary between individuals.",
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "Is Belotero permanent, and can it be dissolved?",
         body: [
+          "Hyaluronic-acid fillers are gradually broken down by the body, so the effect is not permanent, and maintenance intervals are individual: the area's movement, the gel used and your own metabolism all play a part. Some plans combine a softer gel superficially with a firmer gel for support, which also affects planning.",
+          "Hyaluronic-acid gels such as Belotero can be dissolved with hyaluronidase where a doctor judges this clinically indicated. It is a medical procedure with its own risks and assessment, not a routine undo button, and it is not appropriate in every situation.",
+        ],
+      },
+      {
+        heading: "Can Belotero be used for fine lines and thin skin?",
+        body: [
+          "For a comparison shopper the practical consequence is placement. A gel with lower firmness and good spread can be used more superficially and in delicate skin, which is why the softer Belotero gels are commonly discussed for fine lines and thin-skinned areas, while the firmer Belotero Volume gel is used where support and projection are the objective. That is a difference in engineering, not a ranking: a structural gel and a fine-line gel are simply built for different jobs. Gel choice, placement depth and quantity are the treating doctor's decisions, and results develop over the days after treatment and vary between individuals.",
+          "Superficial placement carries its own considerations, including the risk of visible or bluish-looking filler. Thin, delicate skin, around the eyes or the perioral area, needs particular care with any filler regardless of brand, and whether it should be treated at all is a clinical judgement.",
           "Belotero gels are commonly considered for the following concerns as part of an individually planned filler treatment. Inclusion here does not mean the treatment is right for you. That is established at consultation.",
         ],
         list: [
@@ -3248,40 +3320,38 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "What should you tell the doctor before Belotero?",
         body: [
-          "Belotero is aimed at adults who want lines softened, volume replaced or contour supported. HA fillers do not use light or heat, so skin tone is not a limiting factor as it can be with lasers; anatomy, skin thickness and medical history matter far more. Thin, delicate skin, around the eyes or the perioral area, needs particular care with any filler regardless of brand, and whether it should be treated at all is a clinical judgement.",
+          "Belotero is aimed at adults who want lines softened, volume replaced or contour supported. HA fillers do not use light or heat, so skin tone is not a limiting factor as it can be with lasers; anatomy, skin thickness and medical history matter far more.",
           "Fillers are generally avoided in pregnancy and breastfeeding, and where there is active infection, inflammation or a skin lesion at the intended site. Tell your doctor about known hypersensitivity to hyaluronic acid or to lidocaine and amide-type local anaesthetics, a history of severe allergy or anaphylaxis, autoimmune conditions or immune-modulating treatment, bleeding tendency or blood-thinning medication, previous filler or any permanent implant in the area, a tendency to abnormal scarring, and any recent or planned laser, peel or dermabrasion. Please share your full medical history so the doctor can advise safely.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What happens at a Belotero appointment, and why can small raised areas appear?",
         body: [
           "Your visit begins with a doctor consultation: your concern, your medical history, and an assessment of your facial proportions and skin thickness: the latter is directly relevant to which Belotero gel would be appropriate. The doctor explains the risks before you consent. The skin is then cleansed and a topical anaesthetic may be applied; some gels in the range are supplied with lidocaine included to support comfort during injection.",
           "The gel is placed in small increments using a needle or a cannula, chosen according to the area and the doctor's judgement. A single-area appointment is usually short, often 15 to 30 minutes once preparation is complete, while a multi-area plan takes longer and is frequently staged across more than one visit rather than done all at once. A review appointment is commonly arranged so the doctor can assess the area after swelling has settled.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
           "Most people carry on with their day afterwards, but redness, swelling, tenderness and bruising at injection points are common in the first few days and vary between individuals. Fine, superficial placement can leave small raised areas that settle over the following days, and mobile or thin-skinned areas such as the lips and perioral region tend to swell more visibly.",
           "Your doctor will give aftercare guidance for the specific area treated: typically avoiding pressure or massage on the site, keeping strenuous exercise, heat and alcohol to a minimum briefly, and contacting the clinic promptly rather than waiting if anything feels unusual.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "What are Belotero's side effects, including a bluish tinge?",
         body: [
-          "Belotero is an injectable medical device and carries risks, which are explained at consultation before you consent. Temporary effects can include swelling, bruising, redness, tenderness, firmness or small nodules at the injection site, and occasionally a bluish discolouration where filler sits very superficially. Less common effects include infection, inflammatory nodules and delayed hypersensitivity. The most serious recognised risk of any dermal filler is vascular occlusion, filler entering or compressing a blood vessel, which can affect the skin and, rarely, vision. It is uncommon, but it is exactly why filler must be administered by a doctor trained in facial anatomy and in managing complications, and why sudden pain, skin blanching or any visual change must be reported immediately. Hyaluronic-acid gels such as Belotero can be dissolved with hyaluronidase where a doctor judges this clinically indicated.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "Cost is driven by how many areas are addressed, which gel density in the range is clinically appropriate for each, and how much product your anatomy actually calls for. A fine-line gel and a volumising gel are different products with different roles, so a plan is costed around what the doctor selects rather than a single per-area figure.",
-          "Hyaluronic-acid fillers are gradually broken down by the body, so the effect is not permanent, and maintenance intervals are individual: the area's movement, the gel used and your own metabolism all play a part. Some plans combine a softer gel superficially with a firmer gel for support, which also affects planning. Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
+          "Belotero is an injectable medical device and carries risks, which are explained at consultation before you consent. Temporary effects can include swelling, bruising, redness, tenderness, firmness or small nodules at the injection site, and occasionally a bluish discolouration where filler sits very superficially. Less common effects include infection, inflammatory nodules and delayed hypersensitivity. The most serious recognised risk of any dermal filler is vascular occlusion, filler entering or compressing a blood vessel, which can affect the skin and, rarely, vision. It is uncommon, but it is exactly why filler must be administered by a doctor trained in facial anatomy and in managing complications, and why sudden pain, skin blanching or any visual change must be reported immediately.",
         ],
       },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. What moves it:",
+      factors: [
+        "How many areas are addressed.",
+        "Which gel density in the range is clinically appropriate for each. A fine-line gel and a volumising gel are different products with different roles, so a plan is costed around what the doctor selects rather than a single per-area figure.",
+        "How much product your anatomy actually calls for.",
+        "Whether the plan combines a softer gel placed superficially with a firmer gel for support.",
+      ],
+    },
     faqs: [
       {
         q: "What makes Belotero different from other hyaluronic-acid fillers?",
@@ -3334,12 +3404,19 @@ export const technology: Technology[] = [
         heading: "How Tri-Hyal® technology works",
         body: [
           "Fillmed describes Tri-Hyal® as combining three types of hyaluronic acid in the same gel: very long chains (above 3.5 MDa) and long chains (above 1.5 MDa), which are entangled and cross-linked with BDDE, together with free, uncross-linked hyaluronic acid (above 1.5 MDa) that the manufacturer says supports smooth integration into the tissue. Fillmed states that the character of each gel is tuned by adjusting three parameters (chain length, BDDE concentration and free-HA content), so a single technology platform can produce both structured gels for support and softer gels for delicate work.",
-          "The practical relevance for someone comparing brands is where each gel is suited. A gel with higher firmness resists the surrounding tissue and is used where projection or contour support is the objective, such as temples, mid-face, jawline and chin in the case of Art Filler Volume; a softer, more spreadable gel is used for superficial lines and delicate skin, as with the Fine Lines and Lips Soft gels. That is a difference in engineering, not a hierarchy. Which gel is used, at what depth and in what quantity, is decided by the treating doctor after assessing your face in person. Results develop over the days following treatment and vary between individuals.",
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "What do Fillmed's 18-month studies mean for how long Art Filler lasts?",
         body: [
+          "Hyaluronic-acid fillers are gradually broken down by the body, so the effect is not permanent. Fillmed cites 18-month clinical studies for several Art Filler indications, including wrinkles and volume restoration, but a manufacturer's study range is not a promise: how long it lasts for you depends on the gel used, the movement of the area and your own metabolism.",
+          "Hyaluronic-acid gels such as Art Filler can be dissolved with hyaluronidase where a doctor judges this clinically indicated. It is a medical procedure with its own risks and assessment, not a routine undo button, and it is not appropriate in every situation.",
+        ],
+      },
+      {
+        heading: "Which Art Filler gel is used where?",
+        body: [
+          "The practical relevance for someone comparing brands is where each gel is suited. A gel with higher firmness resists the surrounding tissue and is used where projection or contour support is the objective, such as temples, mid-face, jawline and chin in the case of Art Filler Volume; a softer, more spreadable gel is used for superficial lines and delicate skin, as with the Fine Lines and Lips Soft gels. That is a difference in engineering, not a hierarchy. Which gel is used, at what depth and in what quantity, is decided by the treating doctor after assessing your face in person. Results develop over the days following treatment and vary between individuals.",
           "Fillmed lists the following indications across the Art Filler range. They are commonly considered within an individually planned filler treatment, but appearing here does not mean the treatment is appropriate for you. That is established at consultation.",
         ],
         list: [
@@ -3352,40 +3429,37 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "What does Fillmed list as reasons not to use Art Filler?",
         body: [
           "Art Filler is intended for adults seeking wrinkle correction, lip enhancement or volume restoration. HA fillers are not light-based, so skin tone is not the constraint it can be with lasers; facial anatomy, skin thickness and medical history are what matter. Fillmed states that Art Filler is not for use in anyone under 18.",
           "Fillmed's stated contraindications are specific and worth raising at consultation. The range is not to be used in pregnancy or breastfeeding, where there is known hypersensitivity to hyaluronic acid, lidocaine or amide-type local anaesthetics, in a history of autoimmune illness or ongoing immunotherapy, in a history of severe multiple allergies or anaphylactic shock, in uncontrolled epilepsy, in porphyria, in a tendency to hypertrophic scarring, in an area where a non-absorbable implant has already been placed, on inflamed or contagious skin lesions such as active acne or herpes, or immediately before or after laser treatment, deep chemical peeling or dermabrasion. Fillmed also flags interactions with cytochrome P450 inhibitors because of the lidocaine content. Please share your full medical history and medication list so the doctor can assess you safely.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What happens at an Art Filler appointment, and why keep it apart from lasers and peels?",
         body: [
           "Your visit opens with a doctor consultation covering your concern, your medical history and medications, and an assessment of your facial proportions and skin thickness, all of which bear on which Art Filler gel would be appropriate. The doctor explains the risks before you consent. The skin is then cleansed and a topical anaesthetic may be applied in addition to the lidocaine already present in the gel.",
           "The gel is placed in small increments using a needle or a cannula depending on the area and the doctor's judgement. A single-area appointment is usually short, often around 15 to 30 minutes once preparation is complete, while a multi-area plan takes longer and is frequently staged across more than one visit rather than completed at once. A review appointment is commonly arranged so the doctor can assess the area once swelling has settled.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
           "Most people return to their day afterwards, but swelling, redness, tenderness and bruising at injection points are common in the first few days and vary between individuals. Lips and the periorbital area tend to swell more visibly than the jawline or temples, so allow a comfortable margin before any event that matters.",
           "Your doctor will give aftercare guidance specific to the area treated. Fillmed advises against combining Art Filler with laser treatment, deep peels or dermabrasion around the time of injection, and your doctor will tell you how long to leave between procedures. Contact the clinic promptly rather than waiting if anything feels unusual.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "What adverse effects does Fillmed list for Art Filler?",
         body: [
-          "Art Filler is an injectable medical device and carries risks, which are explained to you at consultation before you consent. Fillmed lists potential adverse effects including inflammatory reactions such as burning, swelling, redness, nodules, granuloma and pain; bruising, haematoma and skin discolouration including the Tyndall effect; infection; local and systemic allergic reactions; and vascular complications. Vascular occlusion (filler entering or compressing a blood vessel) is the most serious recognised risk of any dermal filler and can affect the skin or, rarely, vision. It is uncommon, but it is the reason fillers must be administered by a doctor trained in facial anatomy and in managing complications, and the reason sudden pain, skin blanching or any change in vision must be reported immediately. Hyaluronic-acid gels such as Art Filler can be dissolved with hyaluronidase where a doctor judges this clinically indicated.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "Cost depends on how many areas are addressed, which gel in the range is clinically appropriate for each, and how much product your anatomy actually calls for. A structural volumising gel and a fine-line gel are different products with different roles, so a plan is costed around the doctor's selection rather than a flat per-area rate.",
-          "Hyaluronic-acid fillers are gradually broken down by the body, so the effect is not permanent. Fillmed cites 18-month clinical studies for several Art Filler indications, including wrinkles and volume restoration, but a manufacturer's study range is not a promise: how long it lasts for you depends on the gel used, the movement of the area and your own metabolism. Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
+          "Art Filler is an injectable medical device and carries risks, which are explained to you at consultation before you consent. Fillmed lists potential adverse effects including inflammatory reactions such as burning, swelling, redness, nodules, granuloma and pain; bruising, haematoma and skin discolouration including the Tyndall effect; infection; local and systemic allergic reactions; and vascular complications. Vascular occlusion (filler entering or compressing a blood vessel) is the most serious recognised risk of any dermal filler and can affect the skin or, rarely, vision. It is uncommon, but it is the reason fillers must be administered by a doctor trained in facial anatomy and in managing complications, and the reason sudden pain, skin blanching or any change in vision must be reported immediately.",
         ],
       },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. What moves it:",
+      factors: [
+        "How many areas are addressed.",
+        "Which gel in the range is clinically appropriate for each. A structural volumising gel and a fine-line gel are different products with different roles, so a plan is costed around the doctor's selection rather than a flat per-area rate.",
+        "How much product your anatomy actually calls for.",
+      ],
+    },
     faqs: [
       {
         q: "What is Tri-Hyal® technology, and why does it matter?",
