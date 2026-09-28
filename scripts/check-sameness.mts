@@ -38,7 +38,7 @@ import { concerns } from "../content/data/concerns.ts";
 const GENERIC_SHARE = 0.6;
 const BUDGET: Record<string, number> = {
   // 2026-09-20 baseline — lower these as pages are differentiated. Target: 0.
-  technology: 23, // 2026-09-28: the 13 injectables differentiated (docs/15 2.1)
+  technology: 14, // 2026-09-28: injectables + lifting differentiated (docs/15 2.1, 2.2)
   treatments: 15, // 2026-09-24: hifu and skin-booster differentiated (docs/15 1.4)
   concerns: 0,
 };
