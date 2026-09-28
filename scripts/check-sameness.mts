@@ -28,7 +28,8 @@ import { concerns } from "../content/data/concerns.ts";
 
 /**
  * Budget = how many pages in a cluster may be "mostly generic", meaning at
- * least GENERIC_SHARE of their headings are ones half the cluster already uses.
+ * least GENERIC_SHARE of their headings are ones GENERIC_MIN_PAGES or more
+ * pages in the cluster already use.
  *
  * Measuring the *whole* heading sequence does not work: a single varying
  * heading ("How polynucleotides work" vs "How VYCROSS gel technology works")
@@ -36,6 +37,18 @@ import { concerns } from "../content/data/concerns.ts";
  * duplication is positional, so count generic headings instead.
  */
 const GENERIC_SHARE = 0.6;
+/**
+ * A heading is generic when this many pages in the cluster carry it.
+ *
+ * Until 2026-09-28 the line was *half the cluster*. That breaks as the ratchet
+ * works: once 22 of 36 technology pages were rewritten, the six template
+ * headings survived on 14 pages, below 18, and the script reported 0 while
+ * those 14 were still identical to each other. A fixed count does not drift
+ * with progress. Any value from 3 to 8 flagged exactly the same pages on the
+ * day it changed, so 5 is chosen on principle: a genuine sub-family (the four
+ * HA fillers) may share a phrasing, five pages sharing one is a template.
+ */
+const GENERIC_MIN_PAGES = 5;
 const BUDGET: Record<string, number> = {
   // 2026-09-20 baseline — lower these as pages are differentiated. Target: 0.
   technology: 14, // 2026-09-28: injectables + lifting differentiated (docs/15 2.1, 2.2)
@@ -47,8 +60,12 @@ const BUDGET: Record<string, number> = {
 const BRANDS =
   /\b(picosure|pico|rejuran|botox|botulinum|plinest|newest|juvelook|profhilo|sculptra|ellanse|radiesse|juv[eé]derm|restylane|belotero|hydrodeluxe|morpheus\s*8|potenza|sylfirm\s*x|ultherapy|ultracel\s*q|lifthera|xerf|coolsculpting|cooltech|onda|coolwaves|schwarzy|em-?fit|hydrafacial|silkpeel|alma|m22|derma\s*v|pro\s*yellow|quadrostar|fotona|starwalker|pqx|sp\s*dynamis|timewalker|fractional\s*co2|co2|wonderface|btl\s*exilis|art\s*filler|hifu|vycross|polynucleotide|coolwave)\b/gi;
 
+// Accents are stripped first: "Ellansé" must match `ellanse`, or its headings
+// look unique and the page scores cleaner than it is.
 const norm = (h: string) =>
   h
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
     .toLowerCase()
     .replace(BRANDS, "«brand»")
     .replace(/[^a-z«»]+/g, " ")
@@ -79,9 +96,8 @@ for (const [name, pages] of Object.entries(clusters)) {
     const k = norm(h);
     headingCount.set(k, (headingCount.get(k) ?? 0) + 1);
   }
-  // A heading is "generic" when half the cluster or more already uses it.
-  const half = withSections.length / 2;
-  const isGeneric = (h: string) => (headingCount.get(norm(h)) ?? 0) >= half;
+  // A heading is "generic" when GENERIC_MIN_PAGES or more pages already use it.
+  const isGeneric = (h: string) => (headingCount.get(norm(h)) ?? 0) >= GENERIC_MIN_PAGES;
 
   const scored = withSections
     .map((p) => {
@@ -102,11 +118,11 @@ for (const [name, pages] of Object.entries(clusters)) {
 
   console.log(`\n${ok ? "✓" : "✗"} ${name}: ${withSections.length} pages with sections`);
   console.log(
-    `  mostly-generic pages (≥${Math.round(GENERIC_SHARE * 100)}% shared headings): ${mostlyGeneric.length}  (budget ${budget})`,
+    `  mostly-generic pages (≥${Math.round(GENERIC_SHARE * 100)}% headings shared by ${GENERIC_MIN_PAGES}+ pages): ${mostlyGeneric.length}  (budget ${budget})`,
   );
 
   const topGeneric = [...headingCount.entries()]
-    .filter(([, n]) => n >= half)
+    .filter(([, n]) => n >= GENERIC_MIN_PAGES)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 6);
   if (topGeneric.length) {
