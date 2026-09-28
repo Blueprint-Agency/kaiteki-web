@@ -21,8 +21,27 @@ jobs:
     uses: ./.github/workflows/sync-blog-media.yml
     secrets: inherit
 
+  # Work merges to main directly, so content-check.yml (pull requests only)
+  # never runs on the way to production. These two guards run here instead,
+  # on Node 24: the image itself is node:20 and cannot run them. A failure
+  # stops the deploy and the live site stays on the previous version.
+  guards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      # No price in any "What affects the cost" block (docs/15 2.4).
+      - run: pnpm check:cost
+      # No cluster more templated than its recorded budget (docs/16).
+      - run: pnpm check:sameness
+
   build-deploy:
-    needs: media
+    needs: [media, guards]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
