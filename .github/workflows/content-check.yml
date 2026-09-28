@@ -19,6 +19,11 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm check:blog
+      # No price in any "What affects the cost" block (client decision
+      # 2026-09-20, docs/15 2.4), and no cluster more templated than its
+      # recorded budget (docs/16).
+      - run: pnpm check:cost
+      - run: pnpm check:sameness
       # --live HEADs every concern and treatment image. That media is uploaded
       # from a laptop, not by a workflow, so this is the only thing that catches
       # a page shipping URLs whose bytes were never synced to the bucket.
