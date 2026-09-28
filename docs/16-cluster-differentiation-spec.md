@@ -12,7 +12,8 @@
 
 ## 1. The measurement
 
-`pnpm check:sameness` scores each cluster. A heading is **generic** when half the cluster or more already uses it
+`pnpm check:sameness` scores each cluster. A heading is **generic** when five or more pages in the cluster already use it
+(half the cluster until 2026-09-28, changed because that line drifts down as pages are fixed; see `docs/15`)
 (brand names normalised away, so "What is Rejuran?" and "What is Juvéderm?" count as the same heading). A page is
 **mostly generic** when 60% or more of its headings are generic.
 
