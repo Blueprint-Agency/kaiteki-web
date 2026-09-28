@@ -52,7 +52,7 @@ const GENERIC_MIN_PAGES = 5;
 const BUDGET: Record<string, number> = {
   // 2026-09-20 baseline — lower these as pages are differentiated. Target: 0.
   technology: 14, // 2026-09-28: injectables + lifting differentiated (docs/15 2.1, 2.2)
-  treatments: 15, // 2026-09-24: hifu and skin-booster differentiated (docs/15 1.4)
+  treatments: 12, // 2026-09-28: + ultherapy, microneedling, exosome-therapy (docs/15 2.3)
   concerns: 0,
 };
 
