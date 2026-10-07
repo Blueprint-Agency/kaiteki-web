@@ -388,15 +388,23 @@
       ]
     },
     {
-      "event": "cta_click",
+      "event": "whatsapp_click",
       "params": [
+        "page_path",
+        "click_text",
         "cta_position"
       ],
       "values": [
         "hero",
         "mid",
         "cost",
-        "bottom"
+        "bottom",
+        "closing",
+        "sticky",
+        "header",
+        "product",
+        "concern-picker",
+        "inline"
       ],
       "keyEvent": true
     },
