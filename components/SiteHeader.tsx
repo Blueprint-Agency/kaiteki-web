@@ -190,7 +190,6 @@ export function SiteHeader() {
               href={waGeneric}
               target="_blank"
               rel="noopener"
-              data-ga="cta_click"
               data-ga-cta_position="header"
               className="hidden items-center gap-2 rounded-full bg-cta px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-cta-hover sm:inline-flex"
             >
