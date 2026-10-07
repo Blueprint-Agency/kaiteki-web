@@ -1102,6 +1102,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   show(0);
 })();
 
+// whatsapp_click: the same single WhatsApp event the main site sends (components/Analytics.tsx)
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href*="wa.me/"], a[href*="api.whatsapp.com/"]');
+  if(!a)return;
+  var t=(a.textContent||'').replace(/\s+/g,' ').trim()||a.getAttribute('aria-label')||'';
+  window.dataLayer=window.dataLayer||[];
+  dataLayer.push({event:'whatsapp_click',page_path:location.pathname,click_text:t.slice(0,100),cta_position:a.getAttribute('data-ga-cta_position')||'inline'});
+});
+
 // awards marquee: duplicate items once for a seamless infinite scroll
 (function(){
   var t=document.getElementById('awardTrack'); if(!t) return;

@@ -23,10 +23,10 @@ Trade-off accepted: one third-party script (GTM) instead of the leaner GA4-direc
 ## 3. Migration steps
 
 1. **New site head:** inject `GTM-M42CTGL` (Consent Mode v2 defaults set *before* the tag — see §4). Prefer `@next/third-parties` `GoogleTagManager` or a gated inline snippet.
-2. **Events:** push to `dataLayer` from the WhatsApp + call CTAs:
-   - `whatsapp_lead` — `{ branch, service }`
-   - `phone_call_click` — `{ branch }`
-   In the GTM UI, map these triggers to the GA4 event + the relevant `AW-…` conversion(s). No app redeploy needed after initial wiring.
+2. **Events:** one WhatsApp event, pushed to `dataLayer` for every WhatsApp link (`components/Analytics.tsx`; the same listener is inlined in `public/ads/*.html`):
+   - `whatsapp_click` — `{ page_path, click_text, cta_position }`. `cta_position` comes from `data-ga-cta_position` on the link, or `"inline"` when it has none.
+   In the GTM UI, map this trigger to the GA4 event + the relevant `AW-…` conversion(s). No app redeploy needed after initial wiring.
+   *Updated 2026-10-07:* the old site's `click_wa_dropdown`, `click_wa_book_appointment` and `click_WA_bottom_right_corner` tags matched old-site markup and stopped firing at the 1 Aug cutover; the interim `cta_click` was never given a GTM tag. Both are replaced by `whatsapp_click`. The planned `whatsapp_lead` / `phone_call_click` pair was not built (the site has no click-to-call CTA).
 3. **GA4:** no change — same `G-8PB8RQWWZJ`, history continuous. Confirm data stream host filter allows the new deploy host.
 4. **UA:** remove `UA-160155049-1` tag from the container.
 5. **GSC:** leave the two Cloudflare `google-site-verification` TXT records untouched — the **domain property** already covers the rebuilt site on the same host. Submit new sitemap after cutover.

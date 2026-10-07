@@ -24,7 +24,7 @@ export function WhatsAppButton({
   label?: string;
   size?: Size;
   variant?: "solid" | "outline";
-  /** GA4 `cta_click.cta_position` (rule R-14) — "hero" | "mid" | "bottom" | "cost". */
+  /** GA4 `whatsapp_click.cta_position` (rule R-14) — "hero" | "mid" | "bottom" | "cost". */
   position?: string;
   className?: string;
 }) {
@@ -38,7 +38,6 @@ export function WhatsAppButton({
       href={href}
       target="_blank"
       rel="noopener"
-      data-ga="cta_click"
       data-ga-cta_position={position}
       className={`inline-flex items-center justify-center gap-2.5 rounded-full font-semibold transition-[transform,background-color] duration-150 active:scale-[0.98] ${skin} ${sizing} ${className}`}
     >
@@ -57,7 +56,6 @@ export function StickyWhatsApp({ href = waGeneric }: { href?: string }) {
         href={href}
         target="_blank"
         rel="noopener"
-        data-ga="cta_click"
         data-ga-cta_position="sticky"
         aria-label="Book a free consultation on WhatsApp"
         className="cta-glow group fixed bottom-6 right-6 z-40 hidden items-center rounded-full bg-cta p-3.5 font-semibold text-white ring-1 ring-black/5 transition-colors hover:bg-cta-hover md:inline-flex"
@@ -73,7 +71,6 @@ export function StickyWhatsApp({ href = waGeneric }: { href?: string }) {
           href={href}
           target="_blank"
           rel="noopener"
-          data-ga="cta_click"
           data-ga-cta_position="sticky"
           className="flex w-full items-center justify-center gap-2.5 rounded-full bg-cta px-5 py-3.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-cta-hover"
         >
