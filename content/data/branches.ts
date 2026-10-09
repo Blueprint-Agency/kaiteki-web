@@ -120,7 +120,7 @@ export const branches: Branch[] = [
     slug: "southkey-johor-bahru", name: "Southkey, Johor Bahru", city: "Johor Bahru", state: "Johor", region: "Johor",
     photo: "/images/branches/southkey-johor-bahru.jpg",
     address: "No 01-10 Block G, Komersil Southkey Mozek, Persiaran Southkey 1, 80150 Kota Southkey, Johor",
-    phone: "+6014-337 5126", hours: STD_HOURS, hoursSpec: STD_SPEC,
+    phone: "+6017-358 8128", hours: STD_HOURS, hoursSpec: STD_SPEC,
     mapUrl: "https://maps.app.goo.gl/ZZE3nJPccPvcL8Sp9",
     googleRating: 5.0, googleReviewCount: 548,
     lat: 1.4968249, lng: 103.777061,
