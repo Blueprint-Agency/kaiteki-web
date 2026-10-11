@@ -1221,7 +1221,7 @@ export const technology: Technology[] = [
     group: "Lifting & Tightening",
     type: "device",
     treatments: ["radiofrequency"],
-    image: "https://cdn.kaiteki.my/treatments/radiofrequency/oligio.jpg",
+    image: "https://cdn.kaiteki.my/treatments/radiofrequency/image-oligio.jpg",
     summary:
       "A Korean 6.78 MHz monopolar radiofrequency platform with contact cooling of the skin surface, used within RF treatment for mild to moderate facial laxity.",
     leadAnswer:
