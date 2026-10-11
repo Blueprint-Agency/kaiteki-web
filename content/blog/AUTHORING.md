@@ -156,6 +156,14 @@ Available in any `.mdx` body with no import line (`components/blog/blocks.tsx`):
   ratio="16/9"
 />
 
+<Timeline
+  steps={[
+    { when: "Day 0", label: "Injection", body: "Some change is visible at once.", mark: true },
+    { when: "Days 3–14", label: "Settling", body: "Swelling eases and the shape softens." },
+  ]}
+  caption="Typical timings. They vary between individuals."
+/>
+
 <AskCta
   heading="Not sure which type you have?"
   body="A doctor can tell epidermal from dermal melasma at the consultation, which decides the plan."
@@ -165,6 +173,9 @@ Available in any `.mdx` body with no import line (`components/blog/blocks.tsx`):
 
 - `Figure` — in-body imagery. Use this rather than `![]()`: it goes through
   `next/image` (AVIF/WebP, lazy, no layout shift). `alt` is mandatory.
+- `Timeline` — a staged sequence (recovery, a course of sessions) as real
+  text in an `<ol>`. Never put words a reader needs inside an image: Google and
+  answer engines cannot read them. `mark: true` fills a milestone's dot.
 - `AskCta` — one mid-article WhatsApp CTA for long posts. At most one; the
   closing CTA is rendered by the page already.
 
