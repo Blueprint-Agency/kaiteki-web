@@ -308,6 +308,73 @@ body {
 }
 
 /* ============================================================
+   Skin-depth diagram — melasma's depth tabs (components/SkinDepthDiagram).
+   The active tab's melanin is a STATE, not an effect: it is set without
+   motion for everyone, and only animated when motion is welcome. The
+   authored moment is the first view: surface and collagen lines draw in,
+   then the active pigment settles into place.
+   ============================================================ */
+.skin-diagram .sd-dots circle {
+  opacity: 0.13;
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: scale(0.72);
+}
+.skin-diagram .sd-dots.is-on circle {
+  opacity: 1;
+  transform: none;
+}
+/* Inactive layer names stay AA-legible; the active one is told apart by
+   weight, not by fading the other below contrast. */
+.skin-diagram .sd-label {
+  opacity: 0.78;
+}
+.skin-diagram .sd-label.is-on {
+  opacity: 1;
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .skin-diagram .sd-dots circle,
+  .skin-diagram .sd-label {
+    transition:
+      opacity var(--dur-2) var(--ease-out-quart),
+      transform 420ms var(--ease-out-expo);
+  }
+  /* Switching tabs: the incoming population settles in a quick ripple. */
+  .skin-diagram .sd-dots.is-on circle {
+    transition-delay: calc(var(--i, 0) * 22ms);
+  }
+
+  /* First view: the lines draw themselves, gated like every reveal. */
+  .reveal-ready .skin-diagram .sd-line {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    transition: stroke-dashoffset 1400ms var(--ease-out-expo);
+  }
+  .reveal-ready .skin-diagram .sd-fade {
+    opacity: 0;
+    transition: opacity 900ms var(--ease-out-quart) 500ms;
+  }
+  .reveal-ready .skin-diagram:not(.is-visible) .sd-dots circle {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  .reveal-ready .skin-diagram.is-visible .sd-line {
+    stroke-dashoffset: 0;
+  }
+  .reveal-ready .skin-diagram.is-visible .sd-fade {
+    opacity: 1;
+  }
+
+  /* A short stagger for lists of peers (causes, location cards): each item
+     rises a beat after the one before. Pairs with .reveal. */
+  .reveal-ready .reveal.reveal-stagger {
+    transition-delay: calc(var(--i, 0) * 80ms);
+  }
+}
+
+/* ============================================================
    Homepage hero — "Warm Sanctuary" fold (components/HeroFace.tsx).
    The subject photo carries interactive concern hotspots: each is a
    server-rendered link whose result card is revealed with CSS only,

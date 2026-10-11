@@ -225,7 +225,12 @@ export type ConcernVariant =
       kind: "tabs";
       heading: string;
       intro: string;
+      /** An illustrative diagram drawn beside the tabs, reacting to the active
+       *  tab. `skin-depth` is the skin cross-section (melasma's depth types). */
+      diagram?: "skin-depth";
       tabs: {
+        /** Where the pigment sits, for the `skin-depth` diagram. */
+        depth?: "epidermis" | "dermis" | "both";
         /** Tab button text — short enough to sit three-across on mobile. */
         label: string;
         /** Second line inside the tab button, e.g. "Texture you can feel". */
