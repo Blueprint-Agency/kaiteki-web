@@ -128,10 +128,13 @@ export function RoutingModule({
   title,
   routes,
   note,
+  children,
 }: {
   title: string;
   routes?: Treatment["routes"];
   note?: string;
+  /** The concern card shelf, so routed pages show the same cards as the rest. */
+  children?: ReactNode;
 }) {
   if (!routes?.length) return null;
   return (
@@ -164,6 +167,7 @@ export function RoutingModule({
           {note}
         </p>
       )}
+      {children}
     </Section>
   );
 }
