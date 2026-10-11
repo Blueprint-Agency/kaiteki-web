@@ -384,6 +384,50 @@ export const posts: Post[] = [
       },
     ],
   },
+  {
+    slug: "radiofrequency-skin-tightening",
+    title: "Radiofrequency skin tightening: how it works and what it treats",
+    seoTitle: "Radiofrequency Skin Tightening: How It Works | Kaiteki",
+    description:
+      "How radiofrequency skin tightening works, the device types doctors use, which concerns it suits, what a session and recovery involve, and how results develop.",
+    category: "Device & Injectables",
+    image:
+      "https://cdn.kaiteki.my/blog/radiofrequency-skin-tightening/radiofrequency-skin-tightening.png",
+    imageAlt:
+      "A smiling woman with her eyes closed holds her cheeks in both hands, on a cover titled Radiofrequency Skin Tightening: How It Works and What It Treats",
+    author: "dr-chew-yuhhui",
+    reviewedBy: "dr-chloe-wan",
+    publishedAt: "2026-10-11",
+    readingMinutes: 7,
+    leadAnswer:
+      "Radiofrequency skin tightening uses controlled electrical energy to warm the deeper layers of the skin, prompting collagen to contract and then remodel over the following months. It is non-surgical with little downtime, suited to mild to moderate laxity rather than marked sagging, and usually planned as a short course of sessions.",
+    concerns: ["face-lifting", "face-contouring", "aging"],
+    treatments: ["radiofrequency", "microneedling"],
+    technology: ["xerf", "btl-exilis", "morpheus8"],
+    related: ["ultherapy-vs-hifu-difference-which-suits-you", "alma-titanium-lifting"],
+    faqs: [
+      {
+        q: "Is radiofrequency the same as HIFU?",
+        a: "No. Both prompt a collagen response, but HIFU uses focused ultrasound delivered to set points at depth, while radiofrequency warms a broader volume of tissue. They suit different degrees of laxity, which is why clinics often offer both.",
+      },
+      {
+        q: "How many sessions will I need?",
+        a: "A course of about two to three sessions, roughly four to six weeks apart, is common, followed by maintenance. The plan is set after assessment rather than fixed in advance.",
+      },
+      {
+        q: "Does radiofrequency hurt?",
+        a: "Most people describe a deep, building warmth, like a hot stone massage, rather than pain. Surface devices use contact cooling. RF microneedling is different: numbing cream is usually applied first.",
+      },
+      {
+        q: "How long do the results last?",
+        a: "Results typically last one to two years, depending on age, skin quality, sun exposure and lifestyle. The change comes from new collagen, so it fades gradually, and maintenance sessions help it hold.",
+      },
+      {
+        q: "Is it safe for Asian skin?",
+        a: "Radiofrequency heats tissue rather than targeting pigment, so it does not depend on colour contrast and is used across a wide range of skin tones. Settings still matter: burns and pigment change trace back to energy that was wrong for the skin.",
+      },
+    ],
+  },
 ];
 
 /** Display order everywhere — newest first. */
