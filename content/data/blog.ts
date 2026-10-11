@@ -428,6 +428,49 @@ export const posts: Post[] = [
       },
     ],
   },
+  {
+    slug: "best-laser-for-acne-scars",
+    title: "Best laser for acne scars: how each works and what to expect",
+    seoTitle: "Best Laser for Acne Scars: How Each Works | Kaiteki",
+    description:
+      "Which laser suits which acne scar: how pico, fractional CO2 and RF microneedling differ, the sessions and downtime involved, and what results to expect.",
+    category: "Treatments Explained",
+    image: "https://cdn.kaiteki.my/blog/best-laser-for-acne-scars/best-laser-for-acne-scars.png",
+    imageAlt:
+      "Illustration of a man in a headband applying patches to his cheeks, on a cover titled Best Laser for Acne Scars: How Each Works and What Results to Expect",
+    author: "dr-hong-peiyi",
+    reviewedBy: "dr-chloe-wan",
+    publishedAt: "2026-10-11",
+    readingMinutes: 7,
+    leadAnswer:
+      "There is no single best laser for acne scars. The right choice depends on the scar type: RF microneedling is often the starting point for rolling and boxcar scars, fractional CO2 for established or deeper scarring, and pico laser for the flat marks around them. Most plans combine treatments over several sessions.",
+    concerns: ["acne-scars", "acne"],
+    treatments: ["resurfacing-laser", "microneedling", "pico-laser"],
+    technology: ["fractional-co2", "potenza", "picosure"],
+    related: ["picocare-vs-picosure", "radiofrequency-skin-tightening"],
+    faqs: [
+      {
+        q: "What is the best laser for acne scars?",
+        a: "There is no universal best laser, because ice pick, boxcar, rolling and raised scars sit at different depths and respond differently. RF microneedling is often the starting point for rolling and boxcar scars, and fractional CO2 for more established scarring. A doctor examines which types you have before recommending a device or a combination.",
+      },
+      {
+        q: "Can laser treatment completely remove acne scars?",
+        a: "Depressed scarring can often be improved, though rarely erased. Ice pick scars in particular rarely resolve fully with energy devices alone. A realistic goal is a meaningful improvement in texture over a course of treatment, not a complete erasure.",
+      },
+      {
+        q: "Is laser treatment for acne scars painful?",
+        a: "Most people describe it as uncomfortable rather than painful. Numbing cream is applied beforehand where appropriate, and cooling is used during and after. Ablative CO2 resurfacing is felt more than RF microneedling, and RF microneedling more than pico laser.",
+      },
+      {
+        q: "How soon will I see results?",
+        a: "Improvement builds gradually over months as collagen remodels, not the following week. Deeper scars are often formally reassessed six to twelve months after a course. Photos taken in the same light help, because slow change is hard to see in the mirror.",
+      },
+      {
+        q: "Is laser for acne scars safe on Asian skin?",
+        a: "Yes, when the device and settings suit your skin. Medium and deeper skin tones carry a higher chance of post-inflammatory hyperpigmentation after energy-based treatment, which doctors manage with conservative settings, longer intervals between sessions and strict sun protection.",
+      },
+    ],
+  },
 ];
 
 /** Display order everywhere — newest first. */
