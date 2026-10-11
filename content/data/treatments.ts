@@ -1092,7 +1092,8 @@ export const treatments: Treatment[] = [
         title: "Depressed scarring, texture and enlarged pores",
         body: "Fine needles deliver radiofrequency energy into the deeper layer of the skin to stimulate collagen. Often the starting point for rolling and boxcar scarring.",
         links: [
-          { href: "/concerns/acne", label: "Read about acne and acne scarring" },
+          { href: "/concerns/acne-scars", label: "Read about acne scars" },
+          { href: "/concerns/acne", label: "Acne" },
           { href: "/concerns/enlarged-pores", label: "Enlarged pores" },
         ],
       },
