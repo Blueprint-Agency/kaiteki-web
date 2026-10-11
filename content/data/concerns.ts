@@ -1813,6 +1813,8 @@ export const concerns: Concern[] = [
 
   {
     slug: "enlarged-pores",
+    ctaHeading: "Want to know what is making yours visible?",
+    ctaAssesses: "your skin and pores",
     name: "Enlarged Pores",
     group: "Skin",
     image: "/images/concerns/enlarged-pores.jpg",
@@ -1832,53 +1834,359 @@ export const concerns: Concern[] = [
     seoTitle: "Enlarged Pores Treatment & Assessment in Malaysia | Kaiteki",
     seoDescription:
       "Pore appearance is shaped by oil, texture, sun exposure and age. A doctor assesses your skin before an enlarged pores treatment. Book a free consultation.",
+
+    // ── 01
+    banner: {
+      src: "https://cdn.kaiteki.my/concerns/enlarged-pores/banner.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/enlarged-pores/banner-sm.jpg",
+      alt: "Illustrative photograph: a close view of a woman's face showing visible pores across the nose and cheeks",
+    },
+
+    // ── 02 · process facts. Nothing about how much smaller pores get, or how
+    // soon: either would be an outcome claim (R-01).
+    facts: [
+      {
+        value: "Every face has them",
+        label: "Pores carry oil and sweat to the surface. They cannot be removed, only made less noticeable.",
+      },
+      {
+        value: "Several causes at once",
+        label: "Oil, build-up, sun damage and loss of firmness each make pores look larger, and usually overlap.",
+      },
+      {
+        value: "Assessment first",
+        label: "A doctor examines your skin and explains the options and risks before any treatment.",
+      },
+    ],
+
+    // ── 02b
+    jumpNav: [
+      { id: "causes", label: "What makes them visible" },
+      { id: "which-type", label: "Myths and facts" },
+      { id: "treatments", label: "Treatments" },
+      { id: "compare", label: "Compare options" },
+      { id: "risks", label: "Risks" },
+      { id: "cost", label: "Cost" },
+      { id: "faq", label: "FAQ" },
+    ],
+
     sections: [
       {
         heading: "What are enlarged pores?",
         body: [
           "Pores are the small openings on the surface of the skin that connect to the follicles and glands beneath, which produce the oil and sweat that lubricate and cool the skin. Everyone has them, and they are a normal, necessary part of healthy skin.",
-          "When people talk about \"enlarged\" pores, they usually mean pores that look more visible than they would like, most often across the nose, forehead and chin. The pores have not truly changed size on their own; rather, several factors can make them appear larger. Understanding what is influencing yours is the first step in deciding whether treatment may help.",
-        ],
-      },
-      {
-        heading: "What makes pores look larger",
-        body: [
-          "Pore visibility is influenced by a combination of factors rather than a single cause, and it varies between individuals. When a pore becomes clogged with oil, dead skin cells or other build-up, or when the surrounding skin loses firmness, the pore can appear more prominent.",
-        ],
-        list: [
-          "Higher oil (sebum) production and skin type",
-          "Build-up of dead skin cells and impurities in the pore",
-          "Sun exposure and related skin damage over time",
-          "Age and a gradual loss of skin firmness and elasticity",
-          "Genetics, which influence natural pore size",
+          "When people talk about \"enlarged\" pores, they usually mean pores that look more visible than they would like, most often across the nose, forehead, inner cheeks and chin. The opening itself is largely set by genetics; what changes is how much oil and debris sits in it and how firmly the surrounding skin holds its shape. Understanding which of those is driving yours is the first step in deciding whether treatment may help.",
         ],
       },
       {
         heading: "Types of pores",
         body: [
-          "Skin has two broad kinds of pores. Sebaceous (oil) pores connect to the glands that produce sebum and are more concentrated on the face, especially the T-zone of the forehead, nose and chin. These are the pores most people notice.",
-          "Sweat pores connect to sweat glands, which help regulate body temperature. These are generally far less visible, so when people refer to enlarged pores they are usually describing the sebaceous pores of the face.",
+          "Skin has two broad kinds of pores. Sebaceous (oil) pores connect to the glands that produce sebum and are more concentrated on the face, especially the T-zone of the forehead, nose and chin. These are the pores most people notice, and the ones every treatment on this page is aimed at.",
+          "Sweat pores connect to sweat glands, which help regulate body temperature. They are far smaller and generally not visible to the eye, so when people refer to enlarged pores they are almost always describing the sebaceous pores of the face.",
         ],
       },
       {
-        heading: "When to see a doctor",
+        heading: "Pores, blackheads and sebaceous filaments",
         body: [
-          "Visible pores are normal and not a medical problem, but if their appearance bothers you, a doctor can assess your skin, explain what is likely contributing, and outline the options and their risks. This helps you decide whether any approach is worthwhile and set realistic expectations.",
+          "Three things are easily confused, and they are handled differently. Sebaceous filaments are the fine, greyish dots across the nose that look like blackheads: they are a normal lining of oil and skin cells in every pore, and they refill within weeks of being squeezed or stripped out. Blackheads are true plugs that have darkened at the surface and are a mild form of acne. An enlarged pore is the opening itself, visible whether or not anything is sitting in it.",
+          "Which one you are looking at changes the plan. Filaments are usually left alone or managed with skincare, blackheads respond to acne care and clinical cleansing, and a pore that stays visible on clean skin is a texture and firmness question.",
         ],
       },
     ],
+
+    // ── 04 · archetype B: contributing factors, not causes. A pore does not have
+    // a single cause, so the heading says what makes it look this way.
+    drivers: {
+      heading: "What makes pores look larger",
+      intro:
+        "Pore visibility comes from a combination of factors, and the mix differs from person to person. These are the ones a doctor looks at:",
+      items: [
+        {
+          lead: "Oil production:",
+          body: "more sebum fills and stretches the opening, and an oily surface reflects light in a way that makes pores stand out. Oil output is largely set by genetics and hormones, which is why pores are often most noticeable in the teens and twenties.",
+        },
+        {
+          lead: "Build-up inside the pore:",
+          body: "oil and dead skin cells collecting in the opening make it look wider and darker, especially when the mix oxidises at the surface.",
+        },
+        {
+          lead: "Loss of firmness:",
+          body: "collagen and elastin around each pore help hold the opening tight. As they decline with age, the edges slacken and pores can look elongated or teardrop-shaped, particularly on the cheeks.",
+        },
+        {
+          lead: "Sun exposure:",
+          body: "years of UV damage weaken the supporting structure of the skin, so sun-exposed areas often show more visible pores than protected ones.",
+        },
+        {
+          lead: "Heat and humidity:",
+          body: "warm, humid conditions increase oil and sweat on the surface, which is part of why pores can look more obvious in Malaysia's climate by the end of the day.",
+        },
+        {
+          lead: "Picking and squeezing:",
+          body: "repeatedly pressing out pores or spots can inflame the area and stretch or scar the opening over time.",
+        },
+      ],
+      outro:
+        "Genetics sets the starting point. The factors above decide how visible pores become from there, which is also why the same treatment does not suit everyone.",
+    },
+
+    // ── 05 · archetype B: works vs doesn't. The claims are the ones people
+    // arrive with; the realities are the honest answer to each.
+    variant: {
+      kind: "pairs",
+      heading: "Pore myths and what is actually true",
+      intro:
+        "Pores attract more myths than almost any other skin concern, and several of them lead people to habits that make things worse. These are the six heard most often.",
+      pairs: [
+        {
+          claim: "Hot water opens pores and cold water closes them.",
+          reality:
+            "Pores have no muscles, so they cannot open or close. Warmth softens the oil inside them, which is why cleansing feels easier after a shower, and cold briefly tightens the skin surface. Neither changes the size of the pore.",
+        },
+        {
+          claim: "Pore strips and squeezing shrink pores.",
+          reality:
+            "They empty the pore for a short time, which can make it look smaller until it refills, usually within weeks. Squeezing in particular can inflame the skin, leave marks and, done repeatedly, stretch the opening.",
+        },
+        {
+          claim: "A treatment can close pores permanently.",
+          reality:
+            "Pores cannot be closed, because skin needs them to release oil. Treatment aims to make pores less noticeable by improving firmness, texture and oil control around them, and that change needs maintaining rather than being permanent.",
+        },
+        {
+          claim: "Only oily skin has visible pores.",
+          reality:
+            "Oily skin shows them earlier, but loss of firmness with age and sun damage make pores more visible on drier skin too. Pores that appear in later life are often a firmness problem rather than an oil problem.",
+        },
+        {
+          claim: "Dark dots on the nose mean the skin is dirty.",
+          reality:
+            "Most are sebaceous filaments, a normal lining of oil in every pore, or blackheads, which darken because the oil oxidises in air, not because of dirt. Scrubbing harder tends to irritate the skin without changing either.",
+        },
+        {
+          claim: "Primers and mattifying products shrink pores.",
+          reality:
+            "They blur pores optically and absorb surface oil, which can look good for a day. They do not change the pore itself, and heavy, occlusive layers can add to congestion on skin that is already prone to it.",
+        },
+      ],
+    },
+
+    // ── 07
+    seeDoctor: {
+      intro:
+        "Visible pores are not a medical problem in themselves, but it is worth having your skin looked at if any of these apply:",
+      triggers: [
+        "A consistent skincare routine has not made a difference after a few months.",
+        "Pores come with frequent breakouts, blackheads or congestion.",
+        "You can feel dips or uneven texture, which may be early scarring rather than pores.",
+        "There is a single, unusually large pore, often with a dark plug, that has been there a long time.",
+        "Small yellowish bumps with a dip in the centre have appeared, often on the forehead or cheeks.",
+        "Their appearance is affecting your confidence and you want to understand what is realistic.",
+      ],
+      outro:
+        "The single large pore and the yellowish bumps are usually harmless, but they are different conditions from enlarged pores and are treated differently, so a doctor should confirm what they are first.",
+    },
+
+    // ── 08
+    ctaMid: {
+      heading: "Not sure what is behind your pores?",
+      body: "Oil, build-up, loss of firmness and early scarring can look much the same in a mirror. Send us a photo on WhatsApp and a doctor can tell you which is most likely, and whether treatment is worth considering.",
+    },
+
+    // ── 09 · the "why for pores" line on each card must differ from every other
+    // concern page that lists the same treatment (R-04).
+    treatmentsIntro:
+      "These are the treatments most often considered for enlarged pores at our clinics. Which one is appropriate depends on what is driving yours: congestion, oil, texture or loss of firmness. None of them is a default, and good daily skincare is part of every plan.",
+    treatmentWhy: {
+      microneedling: {
+        why: "For pores that look stretched as skin loses firmness",
+        body: "Fine needles deliver radiofrequency energy into the dermis to stimulate collagen around the pore walls. Often a starting point where pores sit alongside texture change, and generally considered a lower pigmentation-risk option for medium and deeper skin tones. Usually planned as a course.",
+      },
+      "pico-laser": {
+        why: "For pores alongside dullness and uneven tone",
+        body: "A picosecond laser mainly used for pigment, with a fractional mode some doctors use for surface texture. Considered where visible pores come with uneven tone or post-acne marks, and typically has minimal downtime.",
+      },
+      radiofrequency: {
+        why: "For firmness around the pores without needles",
+        body: "Radiofrequency energy heats the deeper layers of the skin to support collagen without breaking the surface. Considered where loss of firmness is part of the picture and downtime needs to be kept low. Change is gradual.",
+      },
+      "resurfacing-laser": {
+        why: "For pores set in rough, uneven texture",
+        body: "A fractional CO₂ laser that resurfaces columns of skin to prompt remodelling. Reserved for more marked texture change, often with scarring, and carries more downtime and a higher pigment-change risk than the options above.",
+      },
+      "facial-treatments": {
+        why: "For clearing build-up from congested pores",
+        body: "Clinical facials such as Hydrafacial and Silkpeel cleanse, exfoliate and extract. They help pores look clearer for a time and suit maintenance between other treatments, but they do not change the structure of the pore.",
+      },
+    },
+    treatmentsNote:
+      "Where pores sit alongside active acne, the acne is usually settled first, because energy-based treatment on inflamed skin carries more risk and less benefit. Results vary between individuals, and pores tend to become more visible again without ongoing skincare and sun protection.",
+
+    // ── 10 · full depth only. "Commonly considered", never a ranking (R-02).
+    compare: {
+      intro:
+        "A general guide only. Many people have more than one factor at once, and the doctor may recommend something different, or a combination, after examining your skin.",
+      columns: ["What you notice", "Commonly considered", "Typical course", "Downtime"],
+      rows: [
+        ["Congestion and blackheads", "Clinic facials, with acne-focused skincare", "Ongoing maintenance", "None"],
+        ["Oily skin, visible T-zone pores", "Clinic facials, skincare for oil control", "Ongoing maintenance", "None"],
+        ["Pores with uneven tone or marks", "Pico laser", "Multiple sessions, spaced", "Minimal"],
+        ["Pores with loss of firmness", "Radiofrequency or RF microneedling", "Several sessions, spaced", "None to 2–3 days redness"],
+        ["Pores with rough texture or scarring", "RF microneedling or resurfacing laser", "Several sessions, spaced", "2–3 days to 5–7 days"],
+        ["Single large pore or new bumps", "Assessed individually", "Assessed individually", "Individual"],
+      ],
+      note: "Session counts and intervals are set by the doctor after assessment and adjusted as your skin responds.",
+    },
+
+    // ── results · 03 and 04 are the same patients as 01 and 02 in a branded
+    // frame naming the product, so only the unbranded crops are used.
+    results: [
+      { src: "https://cdn.kaiteki.my/concerns/enlarged-pores/before-after-01.jpg", nativeWidth: 564, ratio: "1.71/1", caption: "Pore appearance on the cheek, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/enlarged-pores/before-after-02.jpg", nativeWidth: 564, ratio: "1.71/1", caption: "Skin texture and pores, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/enlarged-pores/before-after-05.jpg", nativeWidth: 1412, ratio: "1/1", caption: "Pores and texture across the face, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/enlarged-pores/before-after-06.jpg", nativeWidth: 1415, ratio: "1/1", caption: "Pores on the nose and cheek, before and after a course of treatment at Kaiteki" },
+    ],
+
+    // ── 12
+    firstVisit: {
+      intro:
+        "The consultation is free and there is no obligation to book treatment afterwards. It usually takes 20 to 30 minutes.",
+      steps: [
+        {
+          title: "History",
+          body: "Your skincare routine, what you have already tried, how oily your skin runs through the day, any breakouts, and your sun exposure.",
+        },
+        {
+          title: "Examination",
+          body: "The doctor looks at your skin on clean skin and sometimes under magnification, to separate open pores from blackheads, filaments, texture change and early scarring.",
+        },
+        {
+          title: "Discussion",
+          body: "What is likely driving your pores, which options are reasonable, what each involves in risk and downtime, and what change is realistic, including when skincare alone is the sensible answer.",
+        },
+        {
+          title: "Plan",
+          body: "If you choose to proceed, a sequence of treatment and a review point, alongside the daily skincare that keeps any change going. You can take the plan away and think about it.",
+        },
+      ],
+      outro:
+        "Come without makeup if you can, and bring the products you use daily or photos of their labels. Both make the assessment more accurate.",
+    },
+
+    // ── 13 · R-05: names what treatment cannot do, and carries the pigment
+    // note because energy devices are listed.
+    risks: {
+      intro: "Every treatment on this page carries some risk.",
+      items: [
+        {
+          lead: "Common and usually temporary",
+          body: "Redness, mild swelling, dryness, flaking and a warm or tight feeling for a few days after energy-based treatment. Less common effects include prolonged redness, breakouts, blistering, infection or a change in skin pigment.",
+        },
+        {
+          lead: "Pigment change and Malaysian skin",
+          body: "Medium and deeper skin tones, common across Malaysia, carry a higher chance of post-inflammatory hyperpigmentation after laser and other energy-based treatment. Doctors manage this by choosing suitable devices, using conservative settings and spacing sessions further apart, which can lengthen the plan as a deliberate safety trade-off.",
+        },
+        {
+          lead: "Sun protection and skincare are part of it",
+          body: "Daily broad-spectrum sunscreen protects the collagen that keeps pores looking tighter. Without sun protection and a consistent routine, any change from treatment is likely to fade.",
+        },
+        {
+          lead: "What treatment cannot do",
+          body: "Treatment cannot close or remove pores, and it does not change the genetic pore size you were born with. It does not stop your skin producing oil. Any improvement in appearance builds gradually and needs maintaining, because ageing and sun exposure continue afterwards.",
+        },
+      ],
+      disclose:
+        "Tell your doctor if you are pregnant or breastfeeding, take or recently took oral acne medication, use retinoids or exfoliating acids, have a history of cold sores, keloid scarring or recent tanning, or have had any skin procedure in the past few weeks.",
+    },
+
+    // ── 14 · factors only, no figures (R-03).
+    costFactors: {
+      intro:
+        "Costs are not published because they depend on the assessment. What they depend on is worth knowing before you come in:",
+      factors: [
+        "What is driving your pores: congestion, oil, texture or firmness each lead to a different approach.",
+        "The area: full face, or a targeted zone such as the nose and inner cheeks.",
+        "The treatment and device, since different platforms have different session structures.",
+        "How many sessions, which is set after assessment and adjusted at review.",
+        "Whether treatments are combined, and whether maintenance sessions are part of the plan.",
+      ],
+      outro:
+        "The doctor will go through the specifics with you at the consultation, including how many sessions they would expect and over what period, before you commit to anything.",
+    },
+
+    // ── 15
+    technologyIntro:
+      "Pores driven by oil, texture and loss of firmness respond to different energy types, so having several platforms lets the doctor match the device to what is behind yours.",
+
+    // ── 16 · twelve questions (full depth).
     faqs: [
       {
         q: "Can pores be shrunk permanently?",
-        a: "Pores cannot be closed or removed permanently, because the skin needs them to release oil and sweat and stay healthy. Some treatments and skincare may reduce the appearance of pores, but results vary between individuals and are not permanent. A consultation helps determine which approach, if any, is appropriate for your skin.",
+        a: "Pores cannot be closed or removed permanently, because the skin needs them to release oil and sweat and stay healthy. Some treatments and skincare may reduce the appearance of pores by improving firmness, texture and oil control around them, but results vary between individuals and need maintaining. Ageing and sun exposure continue after treatment. A consultation helps determine which approach, if any, is appropriate for your skin.",
       },
       {
         q: "Do pores open and close?",
-        a: "Pores do not have muscles, so they do not physically open and close the way this is sometimes described. Their appearance can change with oil, build-up, hydration and skin firmness, which is why they may look more or less visible at different times.",
+        a: "Pores do not have muscles, so they do not physically open and close the way this is sometimes described. Their appearance changes with oil, build-up, hydration and skin firmness, which is why they may look more or less visible at different times of day. Warm water softens the oil inside them, and cold water briefly tightens the surface, but neither changes the size of the pore itself.",
       },
       {
         q: "Is skincare or in-clinic treatment better for pores?",
-        a: "A consistent skincare routine can help keep pores clear and improve skin texture over time, while in-clinic options may be considered for more noticeable concerns. Which is suitable varies between individuals, and a consultation helps determine which approach, if any, is appropriate for you.",
+        a: "They do different jobs. A consistent routine with gentle cleansing, sun protection and, where suitable, ingredients such as retinoids or salicylic acid keeps pores clearer and supports texture over time. In-clinic treatment is considered when the issue is firmness or texture that skincare alone does not reach. Most plans use both, and the doctor will say plainly if skincare is all you need.",
+      },
+      {
+        q: "Why are my pores bigger on my nose and cheeks?",
+        a: "The nose and central face have the densest oil glands, so pores there carry more sebum and look wider. Cheek pores behave differently: they often become more visible with age, as the skin around them loses firmness and the openings stretch into an oval or teardrop shape. That difference matters, because oil-driven and firmness-driven pores are usually approached with different treatments.",
+      },
+      {
+        q: "Are the dark dots on my nose blackheads?",
+        a: "Often they are sebaceous filaments, the normal lining of oil and skin cells inside every pore, which look grey or tan and sit flat. Blackheads are true plugs, usually darker and slightly raised, and are a mild form of acne. Filaments refill within weeks of being removed, so squeezing them repeatedly mostly irritates the skin. A doctor can tell the two apart in a few seconds.",
+      },
+      {
+        q: "Do pore strips and extractions help?",
+        a: "They empty the pore for a while, which can make it look smaller until it refills. Professional extraction during a clinical facial is done with the skin prepared and in a controlled way, which limits damage. Squeezing at home, particularly with fingernails, is more likely to inflame the skin, leave marks and gradually stretch the opening, so it tends to work against the goal.",
+      },
+      {
+        q: "Does the humid weather in Malaysia make pores worse?",
+        a: "Heat and humidity increase oil and sweat on the skin surface, which can make pores look more obvious as the day goes on. The pores themselves do not grow in hot weather. Light, non-comedogenic products, regular gentle cleansing and daily sunscreen help keep oily skin manageable in this climate, and are part of the plan whatever treatment is chosen.",
+      },
+      {
+        q: "How many sessions will I need?",
+        a: "This is set after the doctor examines your skin, because it depends on what is driving your pores and which treatment suits it. Energy-based treatments for texture and firmness are usually planned as a course of several sessions spaced weeks apart, with a review point to check how your skin is responding. Clinical facials are typically used as ongoing maintenance rather than a fixed course.",
+      },
+      {
+        q: "Is treatment for pores safe for darker or Asian skin tones?",
+        a: "It can be, when the device and settings are chosen by a doctor experienced with your skin type. The main concern with medium and deeper skin tones is post-inflammatory hyperpigmentation after laser or other energy-based treatment. This is managed by selecting suitable devices, using conservative settings, spacing sessions further apart and being strict about sun protection. It is a large part of what the assessment is for.",
+      },
+      {
+        q: "Will my pores come back after treatment?",
+        a: "Pores do not disappear, so the question is how long any improvement in appearance lasts. Oil production continues, and ageing and sun exposure keep weakening the support around each pore. Most people who see a change keep it with daily sunscreen, a suitable skincare routine and, where appropriate, occasional maintenance sessions. Results vary between individuals, and the doctor will explain what is realistic for your skin.",
+      },
+      {
+        q: "Can enlarged pores be a sign of something else?",
+        a: "Usually they are just pores. Occasionally what looks like an enlarged pore is a different, benign condition: a single very large pore with a dark plug, or small yellowish bumps with a central dip that become more common with age. Neither is a cause for alarm, but both are treated differently from ordinary pores, so it is worth having a doctor confirm what they are.",
+      },
+      {
+        q: "What should I stop before treatment?",
+        a: "Do not stop anything without telling your doctor first. Retinoids and exfoliating acids are usually paused for a few days before and after energy-based treatment, and recent oral acne medication can affect what is appropriate and when. Recent sun exposure or tanning also matters. Bring your products, or photos of their labels, to the consultation so the doctor can give you specific advice.",
+      },
+    ],
+
+    // ── 17
+    relatedConcerns: [
+      {
+        slug: "acne",
+        reason: "Oily skin, blackheads and congestion often come with visible pores.",
+      },
+      {
+        slug: "acne-scars",
+        reason: "Small rolling or boxcar scars can be mistaken for enlarged pores.",
+      },
+      {
+        slug: "aging",
+        reason: "Loss of firmness with age is a common reason cheek pores become visible.",
+      },
+      {
+        slug: "pigmentation",
+        reason: "Uneven tone and sun damage are often treated alongside pore texture.",
       },
     ],
   },
@@ -2201,11 +2509,15 @@ export const concerns: Concern[] = [
       note: "Session counts and intervals are set by the doctor after assessment. Collagen-based change continues for months after a session, so plans include review points rather than fixed end dates.",
     },
 
-    // ── results · deliberately absent. The one before-and-after asset assigned
-    // to this concern reads as a supplier demonstration rather than a Kaiteki
-    // patient (docs/11 §3), and the results block is headed "Results from
-    // Kaiteki patients". It is authored here only once that provenance is
-    // confirmed (issue 06).
+    // ── results · before-after-01 is still left out: it reads as a supplier
+    // demonstration rather than a Kaiteki patient (docs/11 §3), and the block is
+    // headed "Results from Kaiteki patients". 02–04 are the clinic's own
+    // watermarked patient photographs (supplied 2026-10).
+    results: [
+      { src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/before-after-02.png", nativeWidth: 1080, ratio: "1/1", caption: "Forehead lines, before and after treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/before-after-03.png", nativeWidth: 1080, ratio: "1/1", caption: "Forehead lines, before and after treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/before-after-04.png", nativeWidth: 1080, ratio: "1/1", caption: "Frown lines between the brows, before and after treatment at Kaiteki" },
+    ],
 
     // ── 12
     firstVisit: {
@@ -5170,43 +5482,344 @@ export const concerns: Concern[] = [
     seoTitle: "Birthmark Removal Assessment in Malaysia | Kaiteki",
     seoDescription:
       "Birthmarks vary widely in type and cause, and most are harmless. A doctor examines yours before discussing birthmark removal. Book a free consultation.",
+
+    // ── 01 · licensed stock (StockSnap CC0), see config/concern-media.json.
+    banner: {
+      src: "https://cdn.kaiteki.my/concerns/birthmark/banner.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/birthmark/banner-sm.jpg",
+      alt: "Illustrative photograph: a woman applying a skincare serum to her cheek",
+    },
+
+    // ── 02 · process facts. Nothing about fading or clearance, which would be
+    // an outcome claim, and nothing about how long anything takes (R-01).
+    facts: [
+      {
+        value: "Type before treatment",
+        label: "Pigment birthmarks and blood-vessel birthmarks respond to different laser energy.",
+      },
+      {
+        value: "Some are left alone",
+        label: "Several common birthmarks fade on their own or are better monitored than treated.",
+      },
+      {
+        value: "Change is the signal",
+        label: "A birthmark that grows, darkens, bleeds or becomes raised should be examined.",
+      },
+    ],
+
+    // ── 02b
+    jumpNav: [
+      { id: "which-type", label: "Which type is it?" },
+      { id: "where", label: "Where it appears" },
+      { id: "see-a-doctor", label: "When to see a doctor" },
+      { id: "treatments", label: "Treatment" },
+      { id: "risks", label: "Risks" },
+      { id: "cost", label: "Cost" },
+      { id: "faq", label: "FAQ" },
+    ],
+
+    // ── 03 · no causes block on this concern (registry note): a birthmark is
+    // something a person is born with, not something with triggers to avoid.
+    // The explanatory weight sits in these sections instead.
     sections: [
       {
         heading: "What is a birthmark?",
         body: [
-          "A birthmark is an area of skin that is discoloured from birth or appears shortly afterwards. Birthmarks are common and most are benign, but they differ widely in cause, colour and depth, which is why they are assessed individually.",
-          "Understanding the type of birthmark you have is the first step in deciding whether any treatment may be relevant at all.",
+          "A birthmark is an area of skin that is discoloured from birth or appears in the first weeks of life. Birthmarks are common and most are benign, but they differ widely in cause, colour and depth, which is why they are assessed individually rather than treated as one thing.",
+          "Nothing a parent did or did not do during pregnancy causes a birthmark. They arise from how pigment cells or blood vessels developed in that patch of skin, and understanding which of the two is involved is the first step in deciding whether any treatment is relevant at all.",
         ],
       },
       {
-        heading: "Types of birthmarks",
+        heading: "How birthmarks form",
         body: [
-          "Birthmarks broadly fall into two groups. Pigmented birthmarks, such as café-au-lait patches, Mongolian spots and moles, arise from clusters of pigment-producing cells. Vascular birthmarks, such as salmon patches, port-wine stains and some haemangiomas, arise from blood vessels in the skin and can appear pink, red or purplish.",
+          "Birthmarks fall into two broad families, and the difference between them decides almost everything that follows. Pigmented birthmarks come from an excess or clustering of melanocytes, the cells that make skin pigment. Vascular birthmarks come from blood vessels that formed in greater numbers, or wider, than usual.",
+          "Depth matters as much as type. Pigment sitting near the surface tends to look light brown, while pigment deeper in the dermis scatters light differently and looks blue or grey. A vascular mark can be a flat pink stain or a raised, spongy lump, depending on which vessels are involved.",
         ],
         list: [
-          "Pigmented: café-au-lait patches, Mongolian spots, congenital moles",
-          "Vascular: salmon patches, port-wine stains, haemangiomas",
+          "Pigmented: café-au-lait patches, naevus of Ota, Mongolian spots (congenital dermal melanocytosis), congenital moles",
+          "Vascular: salmon patches (stork bites), port-wine stains, infantile haemangiomas",
         ],
       },
       {
-        heading: "When to see a doctor",
+        heading: "Birthmarks that are usually left alone",
         body: [
-          "Most birthmarks are harmless, but it is reasonable to have any birthmark examined, particularly if it changes in size, shape or colour, becomes raised, bleeds, or affects how you feel about your appearance. A doctor can assess the mark, explain what it likely is, and discuss the options and their risks if treatment is being considered.",
+          "A good assessment ends with \"no treatment needed\" more often than people expect. Many birthmarks change on their own, and some are better watched than lasered.",
+        ],
+        list: [
+          "Mongolian spots: blue-grey patches over the lower back, common in Asian babies, which usually fade during childhood",
+          "Salmon patches on the eyelids or forehead, which commonly fade in the first years of life",
+          "Infantile haemangiomas, which typically grow over the first months and then slowly shrink; when treatment is needed it is medical and led by a paediatric specialist",
+          "Congenital moles, which are monitored for change and, where removal is considered, assessed by a dermatologist rather than lasered for appearance",
+        ],
+      },
+      {
+        heading: "Birthmarks in children and adults",
+        body: [
+          "In babies and young children the priority is diagnosis and, often, waiting. Some marks fade, some need a paediatric opinion, and a small number are associated with conditions elsewhere in the body, such as several café-au-lait patches together or a port-wine stain across the forehead and eyelid. These are referred for assessment before anything cosmetic is discussed.",
+          "In adults the question is usually different: the mark has been stable for years and the person would like it lighter or less noticeable. Here a doctor confirms the type, checks that it has not changed, and explains honestly how that type tends to respond, including when the answer is that it responds poorly.",
         ],
       },
     ],
+
+    // ── 05 · archetype A: the three-way type selector. The third tab exists
+    // because "this one is monitored, not treated" is a real routing answer.
+    variant: {
+      kind: "tabs",
+      heading: "Which type is it?",
+      intro:
+        "Pigment and blood vessels absorb different wavelengths of light, so the first thing a doctor establishes is which one the birthmark is made of. Some marks belong to neither treatment route.",
+      tabs: [
+        {
+          label: "Pigmented",
+          sub: "Brown, blue or grey",
+          title: "Pigmented birthmarks",
+          body: "Flat patches that are light to dark brown, or blue-grey where the pigment sits deeper. Café-au-lait patches, naevus of Ota around the eye and temple, and Mongolian spots that persist past childhood all belong here.",
+          items: [
+            {
+              lead: "The tell:",
+              body: "the colour does not blanch when pressed, and the surface is usually flat and smooth.",
+            },
+            {
+              lead: "What it means:",
+              body: "response varies by type. Naevus of Ota often lightens over a course of sessions; café-au-lait patches are less predictable and can return.",
+            },
+          ],
+          routing: "assessed for pigment laser, with a test area often discussed first.",
+        },
+        {
+          label: "Vascular",
+          sub: "Pink, red or purple",
+          title: "Vascular birthmarks",
+          body: "Marks made of blood vessels: flat pink-to-purple port-wine stains, paler salmon patches, and raised haemangiomas in infancy. Port-wine stains persist and can darken or thicken with age, which is one reason adults seek treatment for them.",
+          items: [
+            {
+              lead: "The tell:",
+              body: "the colour often fades briefly when pressed, and may look darker when warm, crying or exercising.",
+            },
+            {
+              lead: "What it means:",
+              body: "vascular laser targets the vessels rather than pigment. Port-wine stains typically need several sessions, and lightening rather than clearance is the usual aim.",
+            },
+          ],
+          routing:
+            "assessed for vascular laser, or referred to a paediatric specialist where an infant haemangioma is involved.",
+        },
+        {
+          label: "Monitor",
+          sub: "Moles and changing marks",
+          title: "Marks to watch, not laser",
+          body: "Congenital moles, and any birthmark that has started to change, sit outside the cosmetic route. Lasering a mole can mask changes that matter, so these are examined, monitored and, where needed, referred for dermatological assessment.",
+          items: [
+            {
+              lead: "The tell:",
+              body: "a raised or textured mark, hair growing from it, or any recent change in size, shape or colour.",
+            },
+            {
+              lead: "What it means:",
+              body: "the plan is documentation and review, not treatment for appearance.",
+            },
+          ],
+          routing: "assessed and photographed for monitoring, with referral where anything looks atypical.",
+        },
+      ],
+    },
+
+    // ── 06 · archetype A: location grid. Location changes both the likely
+    // diagnosis and how cautiously a mark is treated.
+    locationBlock: {
+      heading: "Where it appears",
+      intro:
+        "Where a birthmark sits affects both what it is likely to be and how it is approached.",
+      cards: [
+        {
+          title: "Around the eye and temple",
+          body: "A blue-grey or brown patch here in an adult is often naevus of Ota. Treatment near the eye uses protective eye shields and extra care, and the eye itself is sometimes checked as part of the assessment.",
+        },
+        {
+          title: "Cheek and side of the face",
+          body: "Port-wine stains and café-au-lait patches are common here. On the face, colour matching to the surrounding skin is the main consideration, so test areas and conservative settings are usual.",
+        },
+        {
+          title: "Forehead, eyelids and nape",
+          body: "Salmon patches cluster here in babies. Those on the face commonly fade; those on the back of the neck more often persist but are usually covered by hair.",
+        },
+        {
+          title: "Lower back and buttocks",
+          body: "The usual site for Mongolian spots, which are very common in Asian infants and normally fade during childhood without any treatment.",
+        },
+        {
+          title: "Trunk and limbs",
+          body: "Café-au-lait patches and congenital moles are frequently found here. The number of café-au-lait patches matters as much as their appearance, which is why they are counted at assessment.",
+        },
+      ],
+      note: {
+        title: "Several patches, or a mark across the forehead and eyelid?",
+        body: "Six or more café-au-lait patches, or a port-wine stain over the forehead and upper eyelid, can occasionally be linked to conditions affecting other parts of the body. These are referred for medical assessment before any cosmetic treatment is discussed.",
+      },
+    },
+
+    // ── 07 · with change-monitoring added (registry note): on this concern the
+    // most important thing the block does is say which changes need a doctor.
+    seeDoctor: {
+      heading: "When to see a doctor",
+      intro:
+        "Most birthmarks are harmless and stay that way. These are the reasons to have one examined:",
+      triggers: [
+        "It is growing, changing shape, or developing an irregular or blurred edge.",
+        "The colour has changed, darkened unevenly, or now has several shades in it.",
+        "It has become raised, lumpy, itchy, crusted, or bleeds without an obvious injury.",
+        "A new pigmented mark has appeared in adulthood that you did not have before.",
+        "An infant's haemangioma is growing quickly, is near the eye, nose, lip or nappy area, or has broken down into a sore.",
+        "A child has several café-au-lait patches, or a port-wine stain across the forehead and eyelid.",
+        "It is stable but affects how you feel about your appearance, and you want to know whether treatment is realistic.",
+      ],
+      outro:
+        "Photographing a birthmark against a ruler every few months is the simplest way to track it. Change is what matters, and change is almost impossible to judge from memory.",
+    },
+
+    // ── 08
+    ctaMid: {
+      heading: "Not sure whether yours is pigment or blood vessels?",
+      body: "It decides which laser is even relevant, and whether one is relevant at all. Send us a photo on WhatsApp and a doctor can tell you what it looks like and whether it is worth an in-person assessment.",
+    },
+
+    // ── 09
+    treatmentsIntro:
+      "Birthmark treatment depends on which structure the mark is made of. Pigmented and vascular birthmarks are treated with different lasers, and some birthmarks are not treated at all.",
+    treatmentWhy: {
+      "pico-laser": {
+        why: "For pigment birthmarks such as naevus of Ota",
+        body: "Very short laser pulses break up pigment in the skin so the body can gradually clear it. It is used for pigmented birthmarks, particularly deeper blue-grey marks such as naevus of Ota, and usually over several sessions. Café-au-lait patches respond less predictably and can recur, which the doctor will discuss before a test area.",
+      },
+      "vascular-pigment-laser": {
+        why: "For port-wine stains and other vessel birthmarks",
+        body: "Laser energy absorbed by the blood in the vessels heats and closes them, lightening the colour of a vascular birthmark. Port-wine stains generally need a series of sessions, and the aim is usually lightening rather than complete clearance. Response varies with the depth of the vessels and the age of the mark.",
+      },
+    },
+    treatmentsNote:
+      "Congenital moles, changing marks and infant haemangiomas are not part of this route. Moles are monitored and referred where needed, and haemangiomas that need treatment are managed medically under a paediatric specialist rather than with cosmetic laser.",
+
+    // ── results
+    results: [
+      { src: "https://cdn.kaiteki.my/concerns/birthmark/before-after-01.png", nativeWidth: 1080, ratio: "1/1", caption: "Pigmented birthmark around the mouth, before and after laser treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/birthmark/before-after-02.png", nativeWidth: 1080, ratio: "1/1", caption: "Port-wine stain on the back of the neck, before and after vascular laser at Kaiteki" },
+    ],
+
+    // ── 12
+    firstVisit: {
+      intro:
+        "The consultation is free and there is no obligation to book treatment afterwards. It usually takes 20 to 30 minutes.",
+      steps: [
+        {
+          title: "History",
+          body: "When the mark first appeared, whether it has changed, any previous treatment, other similar marks on the body, and your skin's history with sun, pigmentation and scarring.",
+        },
+        {
+          title: "Examination",
+          body: "The doctor looks at the colour, depth, texture and edge of the mark, often under magnification, and checks whether the colour blanches under pressure to tell pigment from blood vessels.",
+        },
+        {
+          title: "Photographs",
+          body: "Standardised photographs are taken so that any change, whether from treatment or over time, can be judged against a fixed record rather than memory.",
+        },
+        {
+          title: "Discussion and plan",
+          body: "What the mark most likely is, whether treatment is appropriate, which laser if any, what a test area would involve, and what is realistic for that type. Referral is discussed here if anything needs it.",
+        },
+      ],
+      outro:
+        "Bring any earlier photographs of the birthmark, especially from childhood. They are the most reliable way to show whether it has changed.",
+    },
+
+    // ── 13
+    risks: {
+      intro: "Every laser treatment discussed on this page carries some risk.",
+      items: [
+        {
+          lead: "Common and usually temporary",
+          body: "Redness, swelling and stinging after a session, and with vascular laser, purple-grey bruising over the treated area that can last one to two weeks. Small crusts or blisters can form and should be left to heal on their own.",
+        },
+        {
+          lead: "Pigment change",
+          body: "Darkening (post-inflammatory hyperpigmentation) or lightening of the treated skin is possible with any laser, and is more likely in darker skin types and with sun exposure around treatment. It usually fades over months but can occasionally persist. Strict sun protection before and after sessions reduces the risk.",
+        },
+        {
+          lead: "Uncommon",
+          body: "Scarring, a change in skin texture, and patchy or uneven lightening that leaves the mark looking mottled. A test area is used partly to show how your skin reacts before a larger area is treated.",
+        },
+        {
+          lead: "What treatment cannot do",
+          body: "Laser cannot promise complete removal of any birthmark. Some types, café-au-lait patches in particular, can return after lightening, and port-wine stains are usually lightened rather than cleared. Laser is not used to remove congenital moles for appearance, and it does not change the underlying tendency that formed the mark.",
+        },
+      ],
+      disclose:
+        "Tell your doctor if you are pregnant, take medication that makes skin sensitive to light, have a tendency to keloid or raised scars, have had recent sun exposure or a tan, or have had previous treatment on the birthmark.",
+    },
+
+    // ── 14
+    costFactors: {
+      intro:
+        "Costs are not published because they depend on the assessment. What they depend on is worth knowing before you come in:",
+      factors: [
+        "The type of birthmark, since pigmented and vascular marks are treated with different lasers.",
+        "The size of the area and where it sits, because marks near the eye take more time and care.",
+        "Whether a test area is done first, which is common on the face and on darker skin.",
+        "How many sessions are planned, which varies widely between types and is reviewed as the mark responds.",
+        "The spacing between sessions, as some types need longer gaps for the skin to settle.",
+      ],
+      outro:
+        "The doctor will go through the specifics with you at the consultation, including what would be reviewed after a test area, before you commit to anything.",
+    },
+
+    // ── 16
     faqs: [
       {
         q: "Can birthmarks be removed?",
-        a: "It depends on the type of birthmark, and outcomes vary between individuals. Some pigmented or vascular birthmarks may be considered for laser treatment, while others are more appropriately left alone or monitored. A doctor assesses the mark and explains what is realistic before recommending anything.",
+        a: "It depends on the type, and outcomes vary between individuals. Some pigmented birthmarks, such as naevus of Ota, often lighten with a course of pigment laser, and port-wine stains are commonly lightened with vascular laser. Others, including congenital moles and many birthmarks in young children, are better monitored or left alone. A doctor identifies the type before explaining what is realistic.",
       },
       {
         q: "Are birthmarks dangerous?",
-        a: "Most birthmarks are harmless, but any mark that changes over time, becomes raised, bleeds or looks unusual should be examined by a doctor. This is a general precaution and does not mean a birthmark is a concern in itself.",
+        a: "Most are harmless. The ones worth examining are marks that change: growing, darkening unevenly, becoming raised, bleeding or itching. Large congenital moles are monitored over time, and some birthmark patterns in children are checked for links to other conditions. This is a general precaution and does not mean a birthmark is a problem in itself.",
       },
       {
         q: "Why do different birthmarks need different treatments?",
-        a: "Pigmented and vascular birthmarks arise from different structures in the skin, pigment cells versus blood vessels, so they respond to different types of laser energy. A doctor identifies the type first before discussing which approach, if any, may be appropriate.",
+        a: "Pigmented and vascular birthmarks arise from different structures in the skin, pigment cells versus blood vessels, and each absorbs a different wavelength of laser light. Using the wrong one does little to the mark and still carries the risks of treatment. The doctor establishes which structure is involved before anything else is discussed.",
+      },
+      {
+        q: "Will my child's birthmark fade on its own?",
+        a: "Many do. Mongolian spots usually fade during childhood, salmon patches on the face often fade in the first years, and infant haemangiomas typically grow for several months before slowly shrinking. Port-wine stains and café-au-lait patches generally persist. A paediatric opinion is the right first step for a birthmark in a baby, particularly one that is growing quickly or sits near the eye, nose or mouth.",
+      },
+      {
+        q: "How many sessions does birthmark laser take?",
+        a: "There is no standard number, because it depends on the type, depth, size and location of the mark and on how your skin responds. Pigment and vascular birthmarks usually need a series of sessions spaced weeks apart, and the plan is reviewed after each one. The doctor will give you a realistic range after examining the mark and, often, after a test area.",
+      },
+      {
+        q: "Does birthmark laser hurt?",
+        a: "Most people describe a snapping or stinging sensation, like a rubber band flicked against the skin. Numbing cream and skin cooling are commonly used to make sessions more comfortable. Sensitivity varies with the area treated, and skin near the eye or upper lip tends to feel more.",
+      },
+      {
+        q: "Can a birthmark come back after laser?",
+        a: "Some can. Café-au-lait patches in particular may darken again after initial lightening, and port-wine stains can slowly re-darken over years. Sun exposure makes both more likely. This is discussed before treatment so that expectations are realistic from the start.",
+      },
+      {
+        q: "Can a mole I was born with be lasered off?",
+        a: "Laser is not used to remove congenital moles for appearance. It can lighten the surface while leaving cells deeper down, which makes future changes harder to spot. Moles are examined, photographed and monitored, and where removal is appropriate the doctor will refer you for dermatological assessment rather than offer laser.",
+      },
+    ],
+
+    // ── 17
+    relatedConcerns: [
+      {
+        slug: "pigmentation",
+        reason: "Pigment birthmarks and acquired pigmentation are told apart at the same assessment.",
+      },
+      {
+        slug: "vascular-lesions",
+        reason: "Port-wine stains share their treatment approach with visible facial vessels.",
+      },
+      {
+        slug: "tattoo-removal",
+        reason: "Pico laser targets birthmark pigment and tattoo ink by a similar mechanism.",
       },
     ],
   },
@@ -5227,34 +5840,296 @@ export const concerns: Concern[] = [
     seoTitle: "Vascular Lesions & Facial Redness Care in Malaysia | Kaiteki",
     seoDescription:
       "Thread veins, spider veins and persistent redness have several causes. A doctor assesses the type before any treatment. Book a free consultation today.",
+
+    // ── 01 · licensed stock (StockSnap CC0), see config/concern-media.json.
+    banner: {
+      src: "https://cdn.kaiteki.my/concerns/vascular-lesions/banner.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/vascular-lesions/banner-sm.jpg",
+      alt: "Illustrative photograph: a woman touching her cheek, looking at her skin",
+    },
+
+    // ── 02 · process facts. Nothing about clearance or how quickly anything
+    // fades, which would be an outcome claim (R-01).
+    facts: [
+      {
+        value: "Type before treatment",
+        label: "A thread vein, a red spot and rosacea flushing are assessed and managed differently.",
+      },
+      {
+        value: "Most are harmless",
+        label: "The common facial types are cosmetic, but a few patterns are worth checking medically.",
+      },
+      {
+        value: "Face and legs differ",
+        label: "Facial vessels and leg veins sit in different systems and are not assessed the same way.",
+      },
+    ],
+
+    // ── 02b
+    jumpNav: [
+      { id: "causes", label: "Common causes" },
+      { id: "which-type", label: "Which type is it?" },
+      { id: "where", label: "Where they appear" },
+      { id: "see-a-doctor", label: "When to see a doctor" },
+      { id: "treatments", label: "Treatment" },
+      { id: "risks", label: "Risks" },
+      { id: "faq", label: "FAQ" },
+    ],
+
     sections: [
       {
         heading: "What are vascular lesions?",
         body: [
-          "Vascular lesions occur when small blood vessels near the surface of the skin become visible or dilated, appearing as fine red or purplish lines, patches, or persistent redness. They most commonly affect the face, particularly the cheeks and nose, but can appear elsewhere on the body.",
+          "Vascular lesions occur when small blood vessels near the surface of the skin become visible or dilated, appearing as fine red or purplish lines, small red spots, patches, or persistent redness. They most commonly affect the face, particularly the cheeks and nose, but can appear elsewhere on the body.",
           "Because visible vessels can arise from several different underlying causes, a doctor assesses which type is present before discussing any approach.",
         ],
       },
       {
-        heading: "Common types & causes",
+        heading: "Why visible vessels are so common",
         body: [
-          "Several patterns of vascular lesion are commonly seen, often influenced by more than one factor.",
-        ],
-        list: [
-          "Facial thread veins (telangiectasia): fine visible vessels, often on the cheeks and nose",
-          "Spider veins: small clusters of vessels radiating from a central point",
-          "Persistent facial redness or flushing, sometimes associated with rosacea",
-          "Sun exposure and skin ageing, which can make vessels more visible over time",
-          "Genetics and skin type",
-        ],
-      },
-      {
-        heading: "When to see a doctor",
-        body: [
-          "It is reasonable to seek advice if visible vessels or redness are persistent, spreading, or affecting how you feel. A doctor can examine the area, help identify the likely cause, and explain the options and their risks so you can decide on a sensible plan.",
+          "The skin's smallest vessels widen and narrow all day to control temperature and blood flow. Over time, repeated widening, sun damage to the supporting tissue around the vessels and a natural thinning of the skin can leave some of them permanently dilated. Once a vessel stays open, it shows through the skin as a fine line or a patch of redness.",
+          "In a warm, humid climate with strong year-round sun, that process has more to work with. This is part of why thread veins and persistent redness are among the concerns people bring up most often, and why sun protection features in almost every plan.",
         ],
       },
     ],
+
+    // ── 04 · archetype A: causes only. Types are kept in the tabs below, per
+    // the registry flag "split-types-from-causes".
+    drivers: {
+      heading: "Common causes",
+      intro:
+        "Visible vessels rarely have a single cause. These are the contributors a doctor considers when looking at your skin.",
+      items: [
+        {
+          lead: "Sun exposure:",
+          body: "ultraviolet light weakens the collagen that supports the small vessels in the upper skin, which is why thread veins gather on the cheeks and nose, the most exposed parts of the face.",
+        },
+        {
+          lead: "Genetics and skin type:",
+          body: "a tendency toward visible vessels and facial flushing often runs in families, and fair or thin skin shows vessels that sit at the same depth in other skin.",
+        },
+        {
+          lead: "Skin ageing:",
+          body: "as the skin thins with age, vessels that were always there become easier to see, and small red spots on the trunk become more common from middle age onwards.",
+        },
+        {
+          lead: "Heat, alcohol and spicy food:",
+          body: "anything that repeatedly flushes the face widens the vessels over and over. For someone prone to redness, these triggers matter as much as anything done in clinic.",
+        },
+        {
+          lead: "Hormonal change:",
+          body: "pregnancy and hormonal medication can bring on spider veins, some of which settle on their own afterwards.",
+        },
+        {
+          lead: "Skin damage and harsh routines:",
+          body: "long-term use of strong topical steroids, aggressive scrubs, and injury to the skin can all leave vessels more visible.",
+        },
+      ],
+      outro:
+        "Where flushing comes and goes with triggers, rosacea is often part of the picture, and that changes what the plan looks like.",
+    },
+
+    // ── 05 · archetype A: type selector. Port-wine stains are named and routed
+    // to the birthmark page rather than handled here.
+    variant: {
+      kind: "tabs",
+      heading: "Which type is it?",
+      intro:
+        "Most vascular lesions fall into a few recognisable patterns. Identifying which one you have is what decides whether a laser is relevant at all.",
+      tabs: [
+        {
+          label: "Thread veins",
+          sub: "Fine red lines",
+          title: "Facial thread veins and spider veins",
+          body: "Fine red or purple lines (telangiectasia), usually on the cheeks, around the nostrils and on the chin. A spider angioma is a related pattern: a small central red point with fine vessels radiating outward, which briefly blanches when pressed.",
+          items: [
+            {
+              lead: "The tell:",
+              body: "individual vessels you can trace with a fingertip, steady rather than coming and going.",
+            },
+            {
+              lead: "Worth knowing:",
+              body: "a single spider angioma is common and harmless. Many appearing in a short time is a reason to see a GP, not a clinic.",
+            },
+          ],
+          routing: "usually assessed for vascular laser.",
+        },
+        {
+          label: "Red spots",
+          sub: "Small, raised or bluish",
+          title: "Cherry angiomas and venous lakes",
+          body: "Cherry angiomas are small, bright red, often slightly raised spots, most common on the trunk and arms and increasingly frequent with age. Venous lakes are soft, dark blue or purple bumps, usually on the lips or ears in sun-exposed older skin.",
+          items: [
+            {
+              lead: "The tell:",
+              body: "a well-defined spot rather than a line or a flush, stable over months.",
+            },
+            {
+              lead: "Worth knowing:",
+              body: "both are benign, but a spot that bleeds, grows quickly or looks different from the others should be examined before anything else.",
+            },
+          ],
+          routing: "usually assessed for vascular laser once the doctor is satisfied the spot is what it appears to be.",
+        },
+        {
+          label: "Redness",
+          sub: "Flushing, patchy redness",
+          title: "Persistent redness and rosacea",
+          body: "Background redness across the cheeks, nose and chin that worsens with heat, sun, alcohol, spicy food or stress, sometimes with fine visible vessels and, in some people, small bumps. This pattern is frequently part of rosacea.",
+          items: [
+            {
+              lead: "The tell:",
+              body: "redness that comes and goes with triggers, often with sensitive, easily irritated skin.",
+            },
+            {
+              lead: "Worth knowing:",
+              body: "laser can address the visible vessels, but rosacea itself is a long-term condition managed with skincare, trigger control and sometimes prescribed treatment.",
+            },
+          ],
+          routing: "assessed for medical management first, with vascular laser discussed for persistent vessels.",
+        },
+      ],
+    },
+
+    // ── 06 · archetype A: where they appear.
+    locationBlock: {
+      heading: "Where they appear",
+      intro:
+        "Where a vessel sits on the body says a good deal about what it is and how it is approached.",
+      cards: [
+        {
+          title: "Cheeks and nose",
+          body: "The most common site for thread veins and diffuse redness, because these areas take the most sun and flush the most readily. Redness centred here, with triggers, often points toward rosacea.",
+        },
+        {
+          title: "Chin and around the mouth",
+          body: "Fine vessels on the chin and beside the nostrils are common. Redness with scaling or small bumps around the mouth can be a different skin condition and is assessed as such.",
+        },
+        {
+          title: "Trunk and arms",
+          body: "Small red cherry angiomas cluster here, often multiplying gradually with age. They are typically harmless and are assessed spot by spot.",
+        },
+        {
+          title: "Legs",
+          body: "Fine spider veins on the legs can sometimes be treated, but larger, bulging or rope-like veins are varicose veins. These involve the deeper venous system and need a vascular assessment, not a facial laser.",
+        },
+      ],
+      note: {
+        title: "A birthmark rather than a vein?",
+        body: "A flat pink, red or purple patch present since birth, such as a port-wine stain, is a vascular birthmark. It is assessed on the birthmark page, because its behaviour and treatment course differ.",
+      },
+    },
+
+    // ── 07
+    seeDoctor: {
+      heading: "When to see a doctor",
+      intro:
+        "Most facial vessels are a cosmetic concern, but a few patterns need medical attention first. Any of these is a reason to be examined:",
+      triggers: [
+        "A red spot or lesion bleeds easily, bleeds repeatedly or has started to ulcerate.",
+        "A lesion is growing quickly, changing colour or looks different from the others around it.",
+        "Several new spider angiomas have appeared in a short time. In numbers, these can be linked to liver or hormonal causes and are worth checking with a GP.",
+        "Leg veins are bulging, aching, swollen, or the skin over them has changed colour.",
+        "Facial redness comes with burning, stinging, bumps or eye irritation.",
+        "The vessels or redness are persistent and affecting how you feel about your skin.",
+      ],
+      outro:
+        "If anything here points toward a medical cause, the doctor will tell you and arrange for it to be looked at first. Cosmetic treatment comes after that, not instead of it.",
+    },
+
+    // ── 08
+    ctaMid: {
+      heading: "Thread vein, red spot or rosacea?",
+      body: "These three look alike in a mirror and are handled differently. Send us a photo on WhatsApp and a doctor can tell you which it most likely is and what an assessment would cover.",
+    },
+
+    // ── 09
+    treatmentsIntro:
+      "Vascular laser is the in-clinic option for visible vessels on the face and body. Whether it is appropriate depends on the type, its depth and your skin tone, which the assessment establishes first.",
+    treatmentWhy: {
+      "vascular-pigment-laser": {
+        why: "For dilated vessels you can see at the surface",
+        body: "Delivers light absorbed by the haemoglobin in small, superficial vessels, heating them so the body can gradually clear them. Settings are chosen for the vessel's size and depth and for your skin tone. Larger or deeper vessels, and leg veins, may not be suitable.",
+      },
+    },
+    treatmentsNote:
+      "Where redness is driven by rosacea, laser addresses the visible vessels but not the condition underneath. Gentle skincare, daily sun protection and managing your own triggers are part of the plan, and some people need prescribed treatment alongside, which the doctor will discuss with you individually.",
+
+    // ── results · 02 and 03 repeat the patients in 01 and 04 at a smaller size,
+    // so only one of each pair is used.
+    results: [
+      { src: "https://cdn.kaiteki.my/concerns/vascular-lesions/before-after-01.jpg", nativeWidth: 564, ratio: "1.71/1", caption: "Facial redness on the cheek, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/vascular-lesions/before-after-04.jpg", nativeWidth: 1415, ratio: "1/1", caption: "Fine thread veins, before and after a course of vascular laser at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/vascular-lesions/before-after-05.png", nativeWidth: 1080, ratio: "1/1", caption: "Thread veins on the cheek, before and after vascular laser at Kaiteki" },
+    ],
+
+    // ── 12
+    firstVisit: {
+      intro:
+        "The consultation is free and there is no obligation to book treatment afterwards. It usually takes 20 to 30 minutes.",
+      steps: [
+        {
+          title: "History",
+          body: "When the vessels or redness appeared, whether they come and go, what makes them worse, your skincare and any medication, and relevant medical history such as liver or hormonal conditions.",
+        },
+        {
+          title: "Examination",
+          body: "The doctor looks closely at the affected skin, sometimes under magnification, and may press on a lesion to see how it blanches. This is what separates a thread vein, a red spot and rosacea-type redness.",
+        },
+        {
+          title: "Ruling out medical causes",
+          body: "Anything that bleeds, is changing, or appears in an unusual pattern is assessed first, with referral to a GP or specialist where that is the right next step.",
+        },
+        {
+          title: "Discussion and plan",
+          body: "Whether laser is appropriate, what it can and cannot change for your type, what aftercare involves, and what to do about triggers. You can take the plan away and think about it.",
+        },
+      ],
+      outro:
+        "Come without make-up on the affected area if you can. Concealer hides exactly what the doctor needs to see.",
+    },
+
+    // ── 13
+    risks: {
+      intro: "Laser treatment for visible vessels is generally well tolerated, but it carries some risk.",
+      items: [
+        {
+          lead: "Common and usually temporary",
+          body: "Redness, swelling and a warm, sunburn-like feeling for a short time after treatment. Some vessels darken or look purple-grey before they fade, and some settings leave temporary bruising.",
+        },
+        {
+          lead: "Pigment change",
+          body: "Darkening or lightening of the treated skin can occur, particularly in medium to darker skin tones or after sun exposure. This is why settings are adjusted to your skin tone and why sun protection before and after matters.",
+        },
+        {
+          lead: "Less common",
+          body: "Blistering, crusting or, rarely, scarring. Following the aftercare instructions and avoiding sun on the treated area reduces this risk.",
+        },
+        {
+          lead: "What treatment cannot do",
+          body: "Laser does not cure rosacea or change a tendency toward visible vessels, so new vessels can appear over time, especially with ongoing sun exposure. It is not suitable for varicose veins, and some deeper or larger vessels respond only partly or not at all.",
+        },
+      ],
+      disclose:
+        "Tell your doctor if you are pregnant or breastfeeding, have a tan or recent sun exposure, take blood thinners or medication that increases light sensitivity, have a history of cold sores in the area, keloid scarring, or a liver or hormonal condition.",
+    },
+
+    // ── 14
+    costFactors: {
+      intro:
+        "Costs are not published because they depend on the assessment. What they depend on is worth knowing before you come in:",
+      factors: [
+        "The type of lesion, since a single red spot and widespread facial redness are different in scale.",
+        "How large an area is treated, from a few spots to the whole of both cheeks.",
+        "How many sessions are planned, which is set after assessment and reviewed as the skin responds.",
+        "Whether medical management of rosacea or skin sensitivity forms part of the plan.",
+        "Whether occasional maintenance is likely, given that new vessels can form over time.",
+      ],
+      outro:
+        "The doctor will go through the specifics with you at the consultation before you commit to anything.",
+    },
+
+    // ── 16
     faqs: [
       {
         q: "Can vascular lesions be treated?",
@@ -5267,6 +6142,42 @@ export const concerns: Concern[] = [
       {
         q: "Do vascular lesions come back after treatment?",
         a: "New vessels can develop over time, particularly with continued sun exposure or an underlying tendency toward them, so outcomes vary between individuals. A doctor can explain what is realistic for your skin before recommending anything.",
+      },
+      {
+        q: "Are broken capillaries actually broken?",
+        a: "No. The common name is misleading: the vessels are dilated, not broken. They have widened and stayed open, which is why they show through the skin as fine red lines. This is also why they do not heal on their own the way a bruise does.",
+      },
+      {
+        q: "Are red spots on my body a sign of something serious?",
+        a: "Small, bright red cherry angiomas are very common and harmless, and they tend to increase in number with age. A spot that bleeds, grows quickly or looks different from the others should be examined. Many spider angiomas appearing in a short time are also worth checking with a GP, as they can occasionally point to a liver or hormonal cause.",
+      },
+      {
+        q: "Is rosacea the same as a vascular lesion?",
+        a: "Not quite. Rosacea is a long-term skin condition that often includes flushing, persistent redness and visible vessels, sometimes with bumps or eye irritation. The visible vessels are one part of it that laser can address, but managing triggers, gentle skincare and sometimes prescribed treatment address the condition itself.",
+      },
+      {
+        q: "Can leg veins be treated the same way?",
+        a: "Fine spider veins on the legs can sometimes be treated with laser, but they are assessed differently from facial vessels. Larger, bulging or aching veins are varicose veins, which involve the deeper venous system and need a vascular assessment rather than a cosmetic laser.",
+      },
+      {
+        q: "Is vascular laser suitable for darker skin tones?",
+        a: "It can be, with care. Darker skin carries more pigment that also absorbs laser light, which increases the risk of pigment change. The doctor adjusts settings to your skin tone, may suggest a test area, and will tell you plainly if the balance of benefit and risk does not favour treatment.",
+      },
+    ],
+
+    // ── 17
+    relatedConcerns: [
+      {
+        slug: "birthmark",
+        reason: "Port-wine stains and some haemangiomas are vascular birthmarks, assessed on their own page.",
+      },
+      {
+        slug: "pigmentation",
+        reason: "Redness and brown patches often sit together, and the same assessment separates them.",
+      },
+      {
+        slug: "aging",
+        reason: "Thinning skin and sun damage with age make small vessels easier to see.",
       },
     ],
   },
@@ -5287,46 +6198,330 @@ export const concerns: Concern[] = [
     seoTitle: "Excessive Sweating Treatment & Assessment | Kaiteki",
     seoDescription:
       "Hyperhidrosis goes beyond normal temperature regulation and has several possible causes. A consultation helps assess your situation. Book a free session today.",
+
+    // ── 01 · licensed stock (StockSnap CC0), see config/concern-media.json.
+    banner: {
+      src: "https://cdn.kaiteki.my/concerns/excessive-sweating/banner.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/excessive-sweating/banner-sm.jpg",
+      alt: "Illustrative photograph: a woman resting on a running track, her skin damp with sweat",
+    },
+
+    // ── 02 · process facts. Nothing about how dry anyone will be, or for how
+    // long, which would be an outcome claim (R-01).
+    facts: [
+      {
+        value: "Pattern first",
+        label: "Which areas sweat, and when it started, decide what the assessment looks for.",
+      },
+      {
+        value: "Primary or secondary",
+        label: "Sweating on its own and sweating caused by something else are handled differently.",
+      },
+      {
+        value: "Stepped approach",
+        label: "Simpler measures are usually tried before anything is injected.",
+      },
+    ],
+
+    // ── 02b
+    jumpNav: [
+      { id: "causes", label: "Common causes" },
+      { id: "which-type", label: "Which kind is it?" },
+      { id: "where", label: "Where it happens" },
+      { id: "see-a-doctor", label: "When to see a doctor" },
+      { id: "treatments", label: "Treatment" },
+      { id: "risks", label: "Risks" },
+      { id: "faq", label: "FAQ" },
+    ],
+
     sections: [
       {
         heading: "What is excessive sweating?",
         body: [
           "Sweating is a normal bodily function that helps regulate temperature. Excessive sweating, medically known as hyperhidrosis, describes sweating that is noticeably more than what is needed for temperature regulation, and can affect daily activities and confidence.",
-          "It most commonly affects the underarms, palms, soles of the feet and, less often, the face. Understanding the pattern and likely cause is the first step in deciding whether any approach may help.",
+          "It most commonly affects the underarms, palms, soles of the feet and, less often, the face and scalp. Understanding the pattern and likely cause is the first step in deciding whether any approach may help.",
         ],
       },
       {
-        heading: "Possible causes",
+        heading: "How sweating is controlled",
         body: [
-          "Excessive sweating can occur on its own (primary hyperhidrosis) or alongside another underlying condition (secondary hyperhidrosis). A doctor considers both possibilities when assessing you.",
-        ],
-        list: [
-          "Primary focal hyperhidrosis, often without an identifiable underlying cause",
-          "Hormonal changes",
-          "Anxiety or stress",
-          "Certain medications",
-          "Underlying medical conditions, in some cases",
+          "The skin carries millions of eccrine sweat glands, which release a watery sweat to cool the body, and a smaller number of apocrine glands concentrated in the underarms and groin. Eccrine glands are switched on by nerve signals from the sympathetic nervous system, the same system that responds to heat, exercise and stress.",
+          "In primary hyperhidrosis the glands themselves are normal; the signal reaching them is stronger or more frequent than the body needs. That is why the condition is not a hygiene problem, and why treatments that work on the signal, rather than on the skin surface, are part of the discussion.",
         ],
       },
       {
-        heading: "When to see a doctor",
+        heading: "Sweating in a hot, humid climate",
         body: [
-          "It is reasonable to seek advice if sweating is persistent, affects daily life or confidence, or occurs alongside other symptoms. A doctor can assess your situation, consider possible underlying causes, and explain the options and their risks so you can decide on a sensible plan, including whether treatment is needed at all.",
+          "In Malaysia's year-round heat and humidity, everyone sweats more than they would in a temperate climate, and it can be hard to tell what is normal. The useful distinction is not how much you sweat on a hot afternoon, but whether you sweat heavily in an air-conditioned room, at rest, or in specific areas regardless of temperature.",
+          "The climate also makes daily management harder: clothing stays damp for longer, and skin in constantly moist areas is more prone to irritation and fungal infection. These are reasonable things to raise at an assessment, alongside the sweating itself.",
         ],
       },
     ],
+
+    // ── 04 · archetype D: causes.
+    drivers: {
+      heading: "Common causes",
+      intro:
+        "Excessive sweating can occur on its own (primary hyperhidrosis) or alongside another underlying condition (secondary hyperhidrosis). A doctor considers both possibilities when assessing you.",
+      items: [
+        {
+          lead: "Primary focal hyperhidrosis:",
+          body: "the most common form, usually starting in childhood or adolescence, often with no identifiable underlying cause. It tends to affect the same areas on both sides of the body and frequently runs in families.",
+        },
+        {
+          lead: "Hormonal change:",
+          body: "puberty, pregnancy, menopause and thyroid disorders can all increase sweating. Sweating that arrives with a hormonal shift is assessed differently from sweating that has been present since the teenage years.",
+        },
+        {
+          lead: "Stress and anxiety:",
+          body: "emotional triggers activate the same nerve pathway that drives sweating. For someone with primary hyperhidrosis, stressful situations can make it noticeably worse, and the worry about sweating can become a trigger of its own.",
+        },
+        {
+          lead: "Medication:",
+          body: "some antidepressants, diabetes medicines, hormone therapies and other drugs list increased sweating as a side effect. Bring a list of everything you take, including supplements, to the consultation.",
+        },
+        {
+          lead: "Underlying medical conditions:",
+          body: "an overactive thyroid, diabetes, infections and, rarely, more serious conditions can cause sweating. This is why generalised sweating or sweating that starts in adulthood is investigated before anything else is planned.",
+        },
+      ],
+      outro:
+        "Diet, caffeine, alcohol and tight synthetic clothing can make sweating worse, but they are aggravating factors rather than causes. Cutting them out is sensible and rarely the whole answer.",
+    },
+
+    // ── 05 · archetype D's differentiator: primary vs secondary. On this
+    // concern it decides whether the next step is treatment or investigation.
+    variant: {
+      kind: "tabs",
+      heading: "Which kind is it?",
+      intro:
+        "The most important thing an assessment does here is decide whether the sweating is the condition itself, or a sign of something else. The second needs investigating rather than treating.",
+      tabs: [
+        {
+          label: "Primary",
+          sub: "Focal, since your teens",
+          title: "Primary focal hyperhidrosis",
+          body: "Sweating in specific areas, typically the underarms, palms, soles or face, affecting both sides evenly. It usually began in childhood or adolescence, often runs in the family, and tends to ease during sleep.",
+          items: [
+            {
+              lead: "The tell:",
+              body: "the same areas, on both sides, for years, often with relatives who describe the same thing.",
+            },
+            {
+              lead: "What it means:",
+              body: "a long-term condition to be managed rather than a symptom to investigate, with options discussed in steps from simplest to more involved.",
+            },
+          ],
+          routing:
+            "assessed for a stepped management plan, starting with topical measures and moving on only if they are not enough.",
+        },
+        {
+          label: "Secondary",
+          sub: "Generalised or new in adulthood",
+          title: "Sweating as a symptom",
+          body: "Sweating across large areas of the body, sweating that started in adulthood without an obvious reason, sweating on one side only, or sweating at night that soaks the bedding. Here the sweating is a signal, and treating it cosmetically without finding the cause would miss the point.",
+          items: [
+            {
+              lead: "The tell:",
+              body: "a clear change from what is normal for you, night sweats, or other symptoms such as weight loss, fever or a racing heart.",
+            },
+            {
+              lead: "What it means:",
+              body: "investigation first, which may include blood tests or referral, because several causes here are treatable and some need prompt attention.",
+            },
+          ],
+          routing:
+            "assessed with history, examination and, where indicated, investigation or referral before any cosmetic treatment is discussed.",
+        },
+      ],
+    },
+
+    // ── 06 · archetype D: location grid.
+    locationBlock: {
+      heading: "Where it happens",
+      intro:
+        "Which areas sweat is one of the most useful things a doctor learns at an assessment, because each area is managed differently.",
+      cards: [
+        {
+          title: "Underarms",
+          body: "The most common site, and the one people usually come in about. Visible marks on clothing and the need to change shirts during the day are often what prompts a visit.",
+        },
+        {
+          title: "Palms",
+          body: "Sweaty hands affect handshakes, writing, gripping and using phones or keyboards. Treatment options for the palms differ from the underarms because the skin and the hand's function are different.",
+        },
+        {
+          title: "Soles of the feet",
+          body: "Often accompanies sweaty palms. Constant moisture can lead to slipping in footwear, odour and fungal infection between the toes, which may need treating in their own right.",
+        },
+        {
+          title: "Face and scalp",
+          body: "Sweating from the forehead, scalp or upper lip, often triggered by heat, food or stress. It is particularly noticeable and is assessed carefully, as the face is a delicate area to treat.",
+        },
+        {
+          title: "Across the whole body",
+          body: "Generalised sweating, rather than sweating in a few defined areas, is more often secondary to another cause and is investigated before treatment is considered.",
+        },
+      ],
+      note: {
+        title: "Sweating on one side only?",
+        body: "Sweating that affects only one side of the body or face, or a single small patch, is not the usual pattern of primary hyperhidrosis and should be examined by a doctor promptly.",
+      },
+    },
+
+    // ── 07 · archetype D carries extra weight here: whether this is a cosmetic
+    // concern or a medical one is decided in this block.
+    seeDoctor: {
+      heading: "When to see a doctor",
+      intro:
+        "Sweating more than others is not always a medical problem, so the question is what makes it worth an appointment. Any of these is a reason:",
+      triggers: [
+        "Sweating that soaks through clothing, drips, or interferes with work, gripping or daily tasks.",
+        "Night sweats that soak your sleepwear or bedding.",
+        "Generalised sweating that started in adulthood without an obvious reason.",
+        "Unexplained weight loss, fever, a racing or irregular heartbeat, or feeling unusually tired alongside the sweating.",
+        "Sweating on one side of the body or face only.",
+        "Sweating that began or increased after starting a new medication.",
+        "Clinical-strength antiperspirant, used correctly for a few weeks, has not made enough difference.",
+      ],
+      outro:
+        "If any of the symptoms in the middle of this list apply, the right first step may be investigation by your GP or a referral rather than an aesthetic treatment, and a doctor here will say so. Primary hyperhidrosis that is simply affecting your confidence is also a perfectly good reason to come in.",
+    },
+
+    // ── 08
+    ctaMid: {
+      heading: "Not sure whether your sweating needs investigating?",
+      body: "Sweating that has been with you since your teens and sweating that started recently are handled very differently. Message us on WhatsApp and a doctor can tell you which you are likely dealing with and what to do first.",
+    },
+
+    // ── 09 · botulinum toxin is a prescription-only medicine (registry flag
+    // "names-prescription-medicine"): no brand, no promotion, framed as
+    // something the doctor may discuss.
+    treatmentsIntro:
+      "Excessive sweating is managed in steps, starting with the simplest measures. What is offered in-clinic is one step in that sequence, and whether it is appropriate depends on what the assessment finds.",
+    treatmentWhy: {
+      "botulinum-toxin": {
+        why: "For focal sweating that topical measures have not controlled",
+        body: "A prescription injectable the doctor may discuss when primary sweating is confined to defined areas such as the underarms. Small amounts are placed in the skin to interrupt the nerve signal that switches the sweat glands on in that area. It is temporary, needs repeating, and is only considered once secondary causes have been ruled out.",
+      },
+    },
+    treatmentsNote:
+      "Clinical-strength antiperspirants, applied to dry skin at night, are a reasonable first step for many people and are worth trying properly before anything else. Other medical options, including prescription topicals, oral medication and iontophoresis for hands and feet, exist and are discussed individually by the doctor rather than advertised here. Where the sweating is secondary to another condition, that condition is addressed first.",
+
+    // ── 12
+    firstVisit: {
+      intro:
+        "The consultation is free and there is no obligation to book treatment afterwards. It usually takes 20 to 30 minutes.",
+      steps: [
+        {
+          title: "History",
+          body: "When the sweating started, which areas are affected, whether it happens at rest or during sleep, family history, any other symptoms, your medications, and what you have already tried.",
+        },
+        {
+          title: "Examination",
+          body: "The doctor looks at the affected areas and the skin around them, checking for irritation or infection and whether the pattern fits primary focal sweating.",
+        },
+        {
+          title: "Ruling out other causes",
+          body: "Where the history or pattern suggests something else may be driving it, the doctor will discuss investigation, such as blood tests, or a referral before planning any treatment.",
+        },
+        {
+          title: "Discussion and plan",
+          body: "Which step makes sense for you now, what it involves, its risks and limits, and what would come next if it is not enough. You can take the plan away and think about it.",
+        },
+      ],
+      outro:
+        "It helps to bring a list of your medications and to note when the sweating is worst. A few days of notes is more useful than trying to remember.",
+    },
+
+    // ── 13
+    risks: {
+      intro: "Every treatment discussed on this page carries some risk.",
+      items: [
+        {
+          lead: "Common and usually temporary",
+          body: "Discomfort, small bruises, redness or tenderness at the injection points, usually settling within days. In the palms, temporary weakness of grip can occur, which is one reason hands are assessed carefully.",
+        },
+        {
+          lead: "Less common",
+          body: "Some people notice more sweating in untreated areas, or skin irritation from topical treatments. Allergic reactions are rare. Your doctor will go through what applies to your treatment area before anything is done.",
+        },
+        {
+          lead: "Treating the wrong thing",
+          body: "The most consequential risk here is managing the sweating while an overactive thyroid, an infection or another underlying cause goes unnoticed. This is why secondary causes are ruled out first.",
+        },
+        {
+          lead: "What treatment cannot do",
+          body: "Nothing on this page cures primary hyperhidrosis. In-clinic treatment is temporary and needs repeating, it does not change the tendency behind the sweating, and it does not address sweating caused by another condition. How much difference it makes varies between individuals.",
+        },
+      ],
+      disclose:
+        "Tell your doctor if you are pregnant, breastfeeding or planning pregnancy, have a neuromuscular condition, take blood thinners or any regular medication, have had a reaction to an injectable before, or have a thyroid condition, diabetes or any recent unexplained symptoms.",
+    },
+
+    // ── 14
+    costFactors: {
+      intro:
+        "Costs are not published because they depend on the assessment. What they depend on is worth knowing before you come in:",
+      factors: [
+        "Which areas are being treated, and how many.",
+        "The size of each area, since underarms, palms and the scalp differ considerably.",
+        "Whether investigation or a referral is needed before anything is planned.",
+        "How often treatment would need repeating, which varies between individuals.",
+      ],
+      outro:
+        "The doctor will go through the specifics with you at the consultation, including what is involved over time, before you commit to anything.",
+    },
+
+    // ── 16
     faqs: [
       {
         q: "Is excessive sweating a medical condition?",
-        a: "Yes. When sweating is noticeably beyond what is needed to regulate temperature, it is recognised as a condition called hyperhidrosis. A doctor can assess whether this applies to you and discuss it accordingly.",
+        a: "Yes. When sweating is noticeably beyond what is needed to regulate temperature, it is recognised as a condition called hyperhidrosis. It is not a hygiene problem: the sweat glands receive a stronger signal than the body needs. A doctor can assess whether this applies to you and discuss it accordingly.",
       },
       {
         q: "What causes excessive sweating?",
-        a: "It can occur on its own or alongside factors such as hormonal changes, stress or certain medications and medical conditions. A consultation helps identify the likely contributors for you before anything is considered.",
+        a: "Most often it occurs on its own, usually starting in childhood or adolescence and often running in families. It can also be caused or worsened by hormonal changes, stress, certain medications and some medical conditions. A consultation helps identify the likely contributors for you before anything is considered.",
       },
       {
         q: "Is excessive sweating treatable?",
-        a: "This depends on the cause and your individual situation, and outcomes vary between individuals. A doctor assesses your situation at consultation and explains what may be appropriate before recommending anything.",
+        a: "It can usually be managed, though primary hyperhidrosis is not cured. Options range from clinical-strength antiperspirants to prescription treatments and in-clinic procedures, tried in steps. Where sweating is caused by another condition, treating that condition comes first. Outcomes vary between individuals, and a doctor explains what may be appropriate before recommending anything.",
+      },
+      {
+        q: "How is it different from normal sweating in hot weather?",
+        a: "Everyone sweats more in Malaysia's heat and humidity. Hyperhidrosis is suggested when you sweat heavily in a cool or air-conditioned room, at rest, or in specific areas such as the palms or underarms regardless of the temperature, and when it interferes with daily life.",
+      },
+      {
+        q: "What is the difference between deodorant and antiperspirant?",
+        a: "A deodorant masks or reduces odour but does not reduce sweat. An antiperspirant contains aluminium salts that temporarily plug the sweat ducts, reducing how much sweat reaches the skin. Clinical-strength antiperspirants are applied to dry skin at night, when the glands are less active, and are a reasonable first step before considering anything else.",
+      },
+      {
+        q: "Why do night sweats matter?",
+        a: "Primary hyperhidrosis usually eases during sleep. Sweating at night that soaks your sleepwear or bedding is more likely to have another cause, such as a hormonal change, an infection, a medication side effect or another medical condition, and is worth having investigated rather than simply treated.",
+      },
+      {
+        q: "Will treating one area make me sweat more elsewhere?",
+        a: "Some people notice more sweating in untreated areas after treatment, which is called compensatory sweating. It is most strongly associated with surgical approaches, which are not offered here, but it is still worth discussing with your doctor. The body has many sweat glands outside any treated area, so temperature regulation continues.",
+      },
+      {
+        q: "Does excessive sweating cause body odour?",
+        a: "Sweat itself has very little smell. Odour develops when bacteria on the skin break down secretions, mostly from the apocrine glands in the underarms and groin. Constant moisture makes this more likely, so sweating and odour often come together, but they are separate problems and a doctor will consider both.",
+      },
+    ],
+
+    // ── 17
+    relatedConcerns: [
+      {
+        slug: "acne",
+        reason: "Heat, sweat and friction can aggravate breakouts on the face, chest and back.",
+      },
+      {
+        slug: "hair-loss",
+        reason: "Scalp sweating and scalp conditions are often assessed in the same visit.",
+      },
+      {
+        slug: "pigmentation",
+        reason: "Underarm darkening from friction and constant moisture is assessed alongside the sweating.",
       },
     ],
   },
