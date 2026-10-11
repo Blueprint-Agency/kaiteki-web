@@ -898,6 +898,22 @@
       "height": 667
     },
     {
+      "source": "1. concerns/pbanner_melasma.jpg",
+      "key": "concerns/melasma/banner.jpg",
+      "concern": "melasma",
+      "family": "banner",
+      "width": 1920,
+      "height": 667
+    },
+    {
+      "source": "1. concerns/pbanner_melasma_sm.jpg",
+      "key": "concerns/melasma/banner-sm.jpg",
+      "concern": "melasma",
+      "family": "banner",
+      "width": 1203,
+      "height": 667
+    },
+    {
       "source": "1. concerns/pbanner_pores.jpg",
       "key": "concerns/enlarged-pores/banner.jpg",
       "concern": "enlarged-pores",

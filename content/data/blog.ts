@@ -71,7 +71,7 @@ export const posts: Post[] = [
     readingMinutes: 8,
     leadAnswer:
       "Melasma is a chronic pigmentation disorder causing symmetrical brown or grey patches on the face, driven by UV exposure, hormones and genetics. Daily broad-spectrum SPF 50+ is the foundation of every plan. Where that is not enough, doctors add topical brighteners, oral tranexamic acid or low-energy Pico Laser.",
-    concerns: ["pigmentation"],
+    concerns: ["melasma", "pigmentation"],
     treatments: ["pico-laser", "vascular-pigment-laser"],
     related: ["how-to-reduce-facial-redness-causes-treatment", "picocare-vs-picosure"],
   },
