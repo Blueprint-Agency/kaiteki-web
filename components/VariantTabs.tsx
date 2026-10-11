@@ -2,9 +2,11 @@
 
 import { useRef, useState } from "react";
 import { track } from "@/components/Analytics";
+import { SkinDepthDiagram } from "@/components/SkinDepthDiagram";
 import type { ConcernVariant } from "@/lib/types";
 
-type Tabs = Extract<ConcernVariant, { kind: "tabs" }>["tabs"];
+type TabSet = Extract<ConcernVariant, { kind: "tabs" }>;
+type Tabs = TabSet["tabs"];
 
 /**
  * C-05 · the tab set behind archetypes A (3 types), D (primary vs secondary)
@@ -19,7 +21,13 @@ type Tabs = Extract<ConcernVariant, { kind: "tabs" }>["tabs"];
  * Keyboard: arrow keys move between tabs and activate, Home/End jump to the
  * ends — the WAI-ARIA automatic-activation tabs pattern.
  */
-export function VariantTabs({ tabs }: { tabs: Tabs }) {
+export function VariantTabs({
+  tabs,
+  diagram,
+}: {
+  tabs: Tabs;
+  diagram?: TabSet["diagram"];
+}) {
   const [active, setActive] = useState(0);
   const refs = useRef<(HTMLButtonElement | null)[]>([]);
 
@@ -33,7 +41,12 @@ export function VariantTabs({ tabs }: { tabs: Tabs }) {
 
   const onKeyDown = (e: React.KeyboardEvent) => {
     const last = tabs.length - 1;
-    const next = { ArrowRight: active + 1, ArrowLeft: active - 1, Home: 0, End: last }[e.key];
+    const next = {
+      ArrowRight: active + 1,
+      ArrowLeft: active - 1,
+      Home: 0,
+      End: last,
+    }[e.key];
     if (next === undefined) return;
     e.preventDefault();
     select(Math.max(0, Math.min(last, next)));
@@ -41,7 +54,12 @@ export function VariantTabs({ tabs }: { tabs: Tabs }) {
 
   return (
     <div className="mt-10">
-      <div role="tablist" aria-label="Which type" onKeyDown={onKeyDown} className="flex flex-wrap gap-3">
+      <div
+        role="tablist"
+        aria-label="Which type"
+        onKeyDown={onKeyDown}
+        className="flex flex-wrap gap-3"
+      >
         {tabs.map((t, i) => (
           <button
             key={t.label}
@@ -61,40 +79,71 @@ export function VariantTabs({ tabs }: { tabs: Tabs }) {
                 : "border-hairline bg-transparent hover:border-mocha"
             }`}
           >
-            <span className="block font-display text-base font-medium text-espresso">{t.label}</span>
-            {t.sub && <span className="mt-0.5 block text-sm text-ink-500">{t.sub}</span>}
+            <span className="block font-display text-base font-medium text-espresso">
+              {t.label}
+            </span>
+            {t.sub && (
+              <span className="mt-0.5 block text-sm text-ink-500">{t.sub}</span>
+            )}
           </button>
         ))}
       </div>
 
-      {tabs.map((t, i) => (
-        <div
-          key={t.label}
-          role="tabpanel"
-          id={`variant-panel-${i}`}
-          aria-labelledby={`variant-tab-${i}`}
-          hidden={i !== active}
-          className="mt-9"
-        >
-          <h3 className="h-sub">{t.title}</h3>
-          <p className="mt-3 max-w-[64ch] leading-relaxed text-ink-700">{t.body}</p>
-          {t.items && (
-            <ul className="mt-6 divide-y divide-hairline border-y border-hairline">
-              {t.items.map((it) => (
-                <li key={it.lead} className="max-w-[62ch] py-4 leading-relaxed text-ink-700">
-                  <strong className="font-semibold text-espresso">{it.lead}</strong> {it.body}
-                </li>
-              ))}
-            </ul>
-          )}
-          {t.routing && (
-            <p className="mt-6 max-w-[62ch] leading-relaxed text-ink-700">
-              <strong className="font-semibold text-espresso">Usually assessed for:</strong>{" "}
-              {t.routing}
-            </p>
-          )}
+      {/* With a diagram, panels and drawing share a row from lg; below lg the
+          drawing leads, so a tap visibly changes it before the text does. */}
+      <div
+        className={
+          diagram
+            ? "lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,26rem)] lg:items-start lg:gap-14"
+            : ""
+        }
+      >
+        {diagram === "skin-depth" && (
+          <div className="mt-9 lg:order-2">
+            <SkinDepthDiagram depth={tabs[active].depth ?? "both"} />
+          </div>
+        )}
+        <div className="lg:order-1">
+          {tabs.map((t, i) => (
+            <div
+              key={t.label}
+              role="tabpanel"
+              id={`variant-panel-${i}`}
+              aria-labelledby={`variant-tab-${i}`}
+              hidden={i !== active}
+              className="mt-9"
+            >
+              <h3 className="h-sub">{t.title}</h3>
+              <p className="mt-3 max-w-[64ch] leading-relaxed text-ink-700">
+                {t.body}
+              </p>
+              {t.items && (
+                <ul className="mt-6 divide-y divide-hairline border-y border-hairline">
+                  {t.items.map((it) => (
+                    <li
+                      key={it.lead}
+                      className="max-w-[62ch] py-4 leading-relaxed text-ink-700"
+                    >
+                      <strong className="font-semibold text-espresso">
+                        {it.lead}
+                      </strong>{" "}
+                      {it.body}
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {t.routing && (
+                <p className="mt-6 max-w-[62ch] leading-relaxed text-ink-700">
+                  <strong className="font-semibold text-espresso">
+                    Usually assessed for:
+                  </strong>{" "}
+                  {t.routing}
+                </p>
+              )}
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 }

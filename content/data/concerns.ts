@@ -1552,14 +1552,43 @@ export const concerns: Concern[] = [
         "Irritation matters too. Inflammation makes melasma worse, which is why aggressive skincare routines usually backfire.",
     },
 
+    // ── 04 media · one figure per cause, in the order of `drivers.items` (Q-19).
+    // AI-generated illustrative photographs (Higgsfield Soul 2.0, outpainted with
+    // FLUX.2 Pro to 2:1), 2026-10-11. Captions are the page's own reviewed copy.
+    // Served from public/ until uploaded to R2 (see TEMP_LOCAL_MEDIA).
+    figures: [
+      {
+        src: "/images/concerns/melasma-cause-uv.jpg",
+        caption:
+          "Malaysia's equatorial sun is the primary trigger: even brief unprotected time outdoors can darken existing patches.",
+      },
+      {
+        src: "/images/concerns/melasma-cause-hormones.jpg",
+        caption:
+          "Pregnancy is one of the most common settings in which melasma first appears, which is why it is sometimes called the mask of pregnancy.",
+      },
+      {
+        src: "/images/concerns/melasma-cause-genetics.jpg",
+        caption:
+          "If close family members have melasma, your pigment cells are more likely to react strongly to the same triggers.",
+      },
+      {
+        src: "/images/concerns/melasma-cause-heat.jpg",
+        caption:
+          "Heat from cooking can aggravate melasma even where sunscreen is being used properly.",
+      },
+    ],
+
     // ── 05 · the differentiator: depth, because depth decides the plan.
     variant: {
       kind: "tabs",
       heading: "How deep does your melasma sit?",
+      diagram: "skin-depth",
       intro:
         "Melasma is classified by depth, and the depth changes what is likely to help. A doctor estimates it at examination.",
       tabs: [
         {
+          depth: "epidermis",
           label: "Epidermal",
           sub: "In the outer layer",
           title: "Epidermal melasma",
@@ -1568,6 +1597,7 @@ export const concerns: Concern[] = [
             "a tailored topical routine and daily sun protection first, with clinical treatment added if that is not enough.",
         },
         {
+          depth: "dermis",
           label: "Dermal",
           sub: "Deeper, blue-grey",
           title: "Dermal melasma",
@@ -1576,6 +1606,7 @@ export const concerns: Concern[] = [
             "low-energy pico laser or pulsed-wave RF microneedling, within a combined plan.",
         },
         {
+          depth: "both",
           label: "Mixed",
           sub: "Both depths",
           title: "Mixed melasma",

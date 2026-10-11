@@ -302,9 +302,8 @@ export function ConcernView({ c }: { c: Concern }) {
 
         {/* 08 — band 1 of 3, espresso: the conversion moment, placed where the
             visitor has just read the options and cannot pick between them alone. */}
-        <Bleed>
-          <CtaMid cta={c.ctaMid} href={wa} position="mid" />
-        </Bleed>
+        {/* A rounded card inside the column at every width, so it does not bleed. */}
+        <CtaMid cta={c.ctaMid} href={wa} position="mid" />
 
         {/* Results — breaks the prose measure but stays in the column, so the
             contents rail keeps running beside it. It renders its own disclaimer

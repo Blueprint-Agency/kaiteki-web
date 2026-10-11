@@ -52,7 +52,7 @@
 //   Q-21  (--live only) every media URL actually resolves in the bucket
 //
 // Run: pnpm validate:concerns   (exits non-zero on any failure)
-import { readFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { concerns } from "../content/data/concerns.ts";
 import { doctorBySlug } from "../content/data/doctors.ts";
@@ -203,6 +203,11 @@ const TEMP_LOCAL_MEDIA = new Set([
   // melasma banner, approved 2026-10-11, owner uploading to R2 later
   "/images/concerns/melasma-banner.jpg",
   "/images/concerns/melasma-banner-sm.jpg",
+  // melasma cause photographs, 2026-10-11, same upload
+  "/images/concerns/melasma-cause-uv.jpg",
+  "/images/concerns/melasma-cause-hormones.jpg",
+  "/images/concerns/melasma-cause-genetics.jpg",
+  "/images/concerns/melasma-cause-heat.jpg",
 ]);
 
 function checkMedia(slug: string, entries: [string, string][], m: ReturnType<typeof uploadable>) {
@@ -478,13 +483,18 @@ for (const [slug, s] of Object.entries(concernSignoffs)) {
 // laptop, not CI (ADR-0001 §4), so nothing else notices a deploy that ships
 // pages of broken images. Opt-in: it needs the network.
 if (process.argv.includes("--live")) {
-  const urls = [
+  const all = [
     ...new Set([
       ...concerns.flatMap((c) => mediaUrls(c).map(([url]) => url)),
       ...treatments.flatMap((t) => treatmentMediaUrls(t).map(([url]) => url)),
     ]),
   ];
-  const dead: string[] = [];
+  // Allow-listed public/ files are root-relative, so there is no host to HEAD.
+  // Q-14 already warns they are temporary; here they only have to exist on disk.
+  const urls = all.filter((u) => !TEMP_LOCAL_MEDIA.has(u));
+  const dead: string[] = all
+    .filter((u) => TEMP_LOCAL_MEDIA.has(u) && !existsSync(join("public", u)))
+    .map((u) => `${u} — missing from public/`);
   let next = 0;
   await Promise.all(
     // ponytail: fixed fan-out of 12, plenty for ~160 HEADs against a CDN.
