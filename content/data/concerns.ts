@@ -20,7 +20,7 @@ export const concerns: Concern[] = [
     slug: "acne",
     name: "Acne",
     group: "Skin",
-    image: "https://cdn.kaiteki.my/images/concerns/acne.jpg",
+    image: "https://cdn.kaiteki.my/concerns/acne/card.jpg",
     summary:
       "Active breakouts and old scarring respond to different treatments. A doctor identifies the type and cause before recommending a plan.",
     leadAnswer:
@@ -42,8 +42,8 @@ export const concerns: Concern[] = [
     // The alt describes the illustrative photograph as what it is: this is not
     // a Kaiteki patient and not a result, so it must not read as either.
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/acne/banner.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/acne/banner-sm.jpg",
+      src: "https://cdn.kaiteki.my/concerns/acne/hero.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/acne/hero-mobile.jpg",
       alt: "Illustrative photograph: a person holding a magnifying glass over a spot on their cheek",
     },
 
@@ -122,22 +122,22 @@ export const concerns: Concern[] = [
     // itself is decorative and renders with an empty alt.
     figures: [
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/hormonal-changes.jpg",
+        src: "https://cdn.kaiteki.my/concerns/acne/image-hormonal-changes.jpg",
         caption:
           "Hormonal shifts change how much oil the skin produces, which is why adult acne often sits along the jaw and chin.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/sebum-skin-debris.jpg",
+        src: "https://cdn.kaiteki.my/concerns/acne/image-sebum-skin-debris.jpg",
         caption:
           "Oil and dead skin cells collect inside the follicle. That blockage is where every type of acne begins.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/inflammation.jpg",
+        src: "https://cdn.kaiteki.my/concerns/acne/image-inflammation.jpg",
         caption:
           "When a blocked follicle becomes inflamed, the spot turns red, raised and tender to touch.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/skincare-habits.jpg",
+        src: "https://cdn.kaiteki.my/concerns/acne/image-skincare-habits.jpg",
         caption:
           "Heavy or occlusive products can worsen blockage on skin that is already prone to it.",
       },
@@ -226,49 +226,49 @@ export const concerns: Concern[] = [
     // they sit on the page ground, never on a tinted band.
     illustrations: [
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/comedonal.png",
+        src: "https://cdn.kaiteki.my/concerns/acne/image-comedonal.png",
         label: "Comedonal",
         sub: "Blackheads and whiteheads, no redness",
         group: "Types of active acne",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/inflammatory.png",
+        src: "https://cdn.kaiteki.my/concerns/acne/image-inflammatory.png",
         label: "Inflammatory",
         sub: "Red, raised and tender",
         group: "Types of active acne",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/cystic.png",
+        src: "https://cdn.kaiteki.my/concerns/acne/image-cystic.png",
         label: "Nodulocystic",
         sub: "Deep, painful, scars most readily",
         group: "Types of active acne",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/hormonal.png",
+        src: "https://cdn.kaiteki.my/concerns/acne/image-hormonal.png",
         label: "Hormonal pattern",
         sub: "Jaw, chin and lower face",
         group: "Types of active acne",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/ice-pick-scars.png",
+        src: "https://cdn.kaiteki.my/concerns/acne/image-ice-pick-scars.png",
         label: "Ice pick scars",
         sub: "Narrow, deep, sharply defined",
         group: "Types of scarring",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/boxcar-scars.png",
+        src: "https://cdn.kaiteki.my/concerns/acne/image-boxcar-scars.png",
         label: "Boxcar scars",
         sub: "Wider depressions with defined edges",
         group: "Types of scarring",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/rolling-scars.png",
+        src: "https://cdn.kaiteki.my/concerns/acne/image-rolling-scars.png",
         label: "Rolling scars",
         sub: "Broad, soft-edged undulations",
         group: "Types of scarring",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/hypertrophic-and-keloid-scars.png",
+        src: "https://cdn.kaiteki.my/concerns/acne/image-hypertrophic-and-keloid-scars.png",
         label: "Raised scars",
         sub: "Hypertrophic and keloid",
         group: "Types of scarring",
@@ -281,15 +281,15 @@ export const concerns: Concern[] = [
     // editorial sign-off (issue 06) — they must match the artwork verbatim.
     slides: [
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/stage-1.jpg",
+        src: "https://cdn.kaiteki.my/concerns/acne/image-stage-1.jpg",
         alt: "Stage 1, comedonal acne: follicles clog with oil and dead skin cells, forming blackheads and whiteheads without redness.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/stage-2.jpg",
+        src: "https://cdn.kaiteki.my/concerns/acne/image-stage-2.jpg",
         alt: "Stage 2, inflammatory acne: blocked follicles become inflamed, forming red papules and pustules that are tender to touch.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/stage-3.jpg",
+        src: "https://cdn.kaiteki.my/concerns/acne/image-stage-3.jpg",
         alt: "Stage 3, nodulocystic acne: inflammation reaches deeper into the skin, forming firm nodules and cysts that carry the highest risk of scarring.",
       },
     ],
@@ -437,7 +437,7 @@ export const concerns: Concern[] = [
       // config/concern-media.json (ownership unconfirmed, ADR-0001 §5) and the
       // sync script refuses to upload it. It can be authored here once the
       // hold is lifted.
-      { src: "https://cdn.kaiteki.my/concerns/acne/before-after-17.jpg", nativeWidth: 1735, ratio: "5/4", caption: "Acne and post-acne marks, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/acne/before-after-16.jpg", nativeWidth: 1735, ratio: "5/4", caption: "Acne and post-acne marks, before and after a course of treatment at Kaiteki" },
     ],
 
     // ── 12
@@ -471,15 +471,15 @@ export const concerns: Concern[] = [
     // (docs/11 §3), and these three were reassigned here for exactly that.
     visitImages: [
       {
-        src: "https://cdn.kaiteki.my/concerns/first-visit/treatment-in-progress-01.jpg",
+        src: "https://cdn.kaiteki.my/concerns/acne/procedure-01.jpg",
         caption: "The doctor examines the skin, sometimes under magnification, before anything is recommended.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/first-visit/treatment-in-progress-02.jpg",
+        src: "https://cdn.kaiteki.my/concerns/acne/procedure-02.jpg",
         caption: "Device and settings are matched to your skin type rather than to a fixed protocol.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/first-visit/treatment-in-progress-03.jpg",
+        src: "https://cdn.kaiteki.my/concerns/acne/procedure-03.jpg",
         caption: "Sessions are carried out at the clinic, and the plan is reviewed as your skin responds.",
       },
     ],
@@ -621,7 +621,7 @@ export const concerns: Concern[] = [
     slug: "acne-scars",
     name: "Acne Scars",
     group: "Skin",
-    image: "https://cdn.kaiteki.my/images/concerns/acne-scars.jpg",
+    image: "https://cdn.kaiteki.my/concerns/acne-scars/card.jpg",
     summary:
       "Acne scars are a change in the skin's structure, not its colour, and the type of scar decides what is likely to help. A doctor assesses which types you have.",
     leadAnswer:
@@ -636,8 +636,8 @@ export const concerns: Concern[] = [
     // ── 01 · the acne-scar banner already in the media manifest, unused until
     // now. Illustrative stock photography: not a patient, not a result.
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/acne/banner-2.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/acne/banner-2-sm.jpg",
+      src: "https://cdn.kaiteki.my/concerns/acne-scars/hero.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/acne-scars/hero-mobile.jpg",
       alt: "Illustrative photograph: a person with acne marks on their cheeks, holding their face in both hands",
     },
 
@@ -748,25 +748,25 @@ export const concerns: Concern[] = [
     // ── 05 media · the acne page's scar-type die-cuts, already on the CDN.
     illustrations: [
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/ice-pick-scars.png",
+        src: "https://cdn.kaiteki.my/concerns/acne-scars/image-ice-pick-scars.png",
         label: "Ice pick scars",
         sub: "Narrow, deep, sharply defined",
         group: "Types of scarring",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/boxcar-scars.png",
+        src: "https://cdn.kaiteki.my/concerns/acne-scars/image-boxcar-scars.png",
         label: "Boxcar scars",
         sub: "Wider depressions with defined edges",
         group: "Types of scarring",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/rolling-scars.png",
+        src: "https://cdn.kaiteki.my/concerns/acne-scars/image-rolling-scars.png",
         label: "Rolling scars",
         sub: "Broad, soft-edged undulations",
         group: "Types of scarring",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/acne/hypertrophic-and-keloid-scars.png",
+        src: "https://cdn.kaiteki.my/concerns/acne-scars/image-hypertrophic-and-keloid-scars.png",
         label: "Raised scars",
         sub: "Hypertrophic and keloid",
         group: "Types of scarring",
@@ -863,12 +863,29 @@ export const concerns: Concern[] = [
     },
     visitImages: [
       {
-        src: "https://cdn.kaiteki.my/concerns/first-visit/treatment-in-progress-01.jpg",
+        src: "https://cdn.kaiteki.my/concerns/acne-scars/procedure-01.jpg",
         caption: "The doctor examines the skin, sometimes under magnification, before anything is recommended.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/first-visit/treatment-in-progress-02.jpg",
+        src: "https://cdn.kaiteki.my/concerns/acne-scars/procedure-02.jpg",
         caption: "Device and settings are matched to your skin type rather than to a fixed protocol.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/acne-scars/procedure-03.png",
+        caption: "A resurfacing laser for scarring in progress. The depth is set by the type of scar and your skin tone.",
+      },
+    ],
+
+    // An illustration, not a photograph: the before-and-afters on file are the
+    // acne page's, and none is borrowed. The caption says so up front, and the
+    // shared results disclaimer still renders beneath it.
+    results: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/acne-scars/before-after-01.png",
+        nativeWidth: 1200,
+        ratio: "1.71/1",
+        illustration: true,
+        caption: "Illustration, not a patient result: collagen remodelling can make the edges of some depressed scars shallower",
       },
     ],
 
@@ -997,7 +1014,7 @@ export const concerns: Concern[] = [
     slug: "pigmentation",
     name: "Pigmentation",
     group: "Skin",
-    image: "https://cdn.kaiteki.my/images/concerns/pigmentation.jpg",
+    image: "https://cdn.kaiteki.my/concerns/pigmentation/card.jpg",
     summary:
       "Melasma, sun spots and post-inflammatory marks each behave differently. The right laser or treatment depends on which type you have.",
     leadAnswer:
@@ -1016,8 +1033,8 @@ export const concerns: Concern[] = [
       "Melasma, sun spots and post-inflammatory marks need different care. A doctor assesses your pigmentation before any treatment. Book a free consultation.",
     // ── 01
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/pigmentation/banner.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/pigmentation/banner-sm.jpg",
+      src: "https://cdn.kaiteki.my/concerns/pigmentation/hero.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/pigmentation/hero-mobile.jpg",
       alt: "Illustrative photograph: a person examining an area of uneven tone on their cheek in the mirror",
     },
 
@@ -1160,23 +1177,23 @@ export const concerns: Concern[] = [
     // sign-off (issue 06) — they must match the artwork verbatim.
     slides: [
       {
-        src: "https://cdn.kaiteki.my/concerns/pigmentation/stage-1.jpg",
+        src: "https://cdn.kaiteki.my/concerns/pigmentation/image-stage-1.jpg",
         alt: "Stage 1: UV exposure prompts melanocytes in the lower epidermis to produce extra melanin.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/pigmentation/stage-2.jpg",
+        src: "https://cdn.kaiteki.my/concerns/pigmentation/image-stage-2.jpg",
         alt: "Stage 2: the extra melanin is passed into surrounding skin cells, and even tone begins to break up.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/pigmentation/stage-3.jpg",
+        src: "https://cdn.kaiteki.my/concerns/pigmentation/image-stage-3.jpg",
         alt: "Stage 3: pigment concentrates in patches, and defined spots become visible at the surface.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/pigmentation/stage-4.jpg",
+        src: "https://cdn.kaiteki.my/concerns/pigmentation/image-stage-4.jpg",
         alt: "Stage 4: with continued exposure, patches darken and spread across the sun-exposed areas.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/pigmentation/stage-5.jpg",
+        src: "https://cdn.kaiteki.my/concerns/pigmentation/image-stage-5.jpg",
         alt: "Stage 5: pigment reaches deeper layers of the skin, where it is harder to reach and slower to change.",
       },
     ],
@@ -1342,6 +1359,20 @@ export const concerns: Concern[] = [
       outro:
         "Bring the products you are currently using, or photographs of the labels. Bring older photographs of your face too, if you have them: they show whether the pattern is spreading or holding steady.",
     },
+    visitImages: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/pigmentation/procedure-02.png",
+        caption: "A picosecond laser session in progress. Eye shields stay on for every laser treatment to the face.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/pigmentation/procedure-03.png",
+        caption: "The doctor works across the area in passes, adjusting the settings to the type of pigment being treated.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/pigmentation/procedure-04.png",
+        caption: "Pigment treatment is carried out at the clinic, and the plan is reviewed at each visit.",
+      },
+    ],
 
     // ── 13
     risks: {
@@ -1473,7 +1504,7 @@ export const concerns: Concern[] = [
     slug: "melasma",
     name: "Melasma",
     group: "Skin",
-    image: "https://cdn.kaiteki.my/images/concerns/melasma.jpg",
+    image: "https://cdn.kaiteki.my/concerns/melasma/card.jpg",
     summary:
       "Melasma is managed rather than cured, and the wrong laser can darken it. A doctor confirms it is melasma, and how deep it sits, before anything is used.",
     leadAnswer:
@@ -1490,8 +1521,8 @@ export const concerns: Concern[] = [
     // patient and not a result; the alt says so. Uploaded by hand: the source
     // binaries are pbanner_melasma(.jpg|_sm.jpg) for the media export folder.
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/melasma/banner.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/melasma/banner-sm.jpg",
+      src: "https://cdn.kaiteki.my/concerns/melasma/hero.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/melasma/hero-mobile.jpg",
       alt: "Illustrative photograph: a person with soft brown melasma patches across both cheeks, touching one cheek",
     },
 
@@ -1553,22 +1584,22 @@ export const concerns: Concern[] = [
     // FLUX.2 Pro to 2:1), 2026-10-11. Captions are the page's own reviewed copy.
     figures: [
       {
-        src: "https://cdn.kaiteki.my/concerns/melasma/cause-uv.jpg",
+        src: "https://cdn.kaiteki.my/concerns/melasma/image-uv.jpg",
         caption:
           "Malaysia's equatorial sun is the primary trigger: even brief unprotected time outdoors can darken existing patches.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/melasma/cause-hormones.jpg",
+        src: "https://cdn.kaiteki.my/concerns/melasma/image-hormones.jpg",
         caption:
           "Pregnancy is one of the most common settings in which melasma first appears, which is why it is sometimes called the mask of pregnancy.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/melasma/cause-genetics.jpg",
+        src: "https://cdn.kaiteki.my/concerns/melasma/image-genetics.jpg",
         caption:
           "If close family members have melasma, your pigment cells are more likely to react strongly to the same triggers.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/melasma/cause-heat.jpg",
+        src: "https://cdn.kaiteki.my/concerns/melasma/image-heat.jpg",
         caption:
           "Heat from cooking can aggravate melasma even where sunscreen is being used properly.",
       },
@@ -1702,8 +1733,12 @@ export const concerns: Concern[] = [
     },
     visitImages: [
       {
-        src: "https://cdn.kaiteki.my/concerns/first-visit/treatment-in-progress-01.jpg",
+        src: "https://cdn.kaiteki.my/concerns/melasma/procedure-01.jpg",
         caption: "The doctor examines the skin, sometimes under magnification, before anything is recommended.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/melasma/procedure-02.png",
+        caption: "Melasma is treated with gentle, low-energy settings, because heat can make it worse.",
       },
     ],
 
@@ -1812,7 +1847,7 @@ export const concerns: Concern[] = [
     ctaAssesses: "your skin and pores",
     name: "Enlarged Pores",
     group: "Skin",
-    image: "https://cdn.kaiteki.my/images/concerns/enlarged-pores.jpg",
+    image: "https://cdn.kaiteki.my/concerns/enlarged-pores/card.jpg",
     summary:
       "Visible pores are often tied to oil production, texture or age. Treatment options range from lasers to skin boosters, matched to the cause.",
     leadAnswer:
@@ -1832,8 +1867,8 @@ export const concerns: Concern[] = [
 
     // ── 01
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/enlarged-pores/banner.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/enlarged-pores/banner-sm.jpg",
+      src: "https://cdn.kaiteki.my/concerns/enlarged-pores/hero.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/enlarged-pores/hero-mobile.jpg",
       alt: "Illustrative photograph: a close view of a woman's face showing visible pores across the nose and cheeks",
     },
 
@@ -2038,8 +2073,8 @@ export const concerns: Concern[] = [
     results: [
       { src: "https://cdn.kaiteki.my/concerns/enlarged-pores/before-after-01.jpg", nativeWidth: 564, ratio: "1.71/1", caption: "Pore appearance on the cheek, before and after a course of treatment at Kaiteki" },
       { src: "https://cdn.kaiteki.my/concerns/enlarged-pores/before-after-02.jpg", nativeWidth: 564, ratio: "1.71/1", caption: "Skin texture and pores, before and after a course of treatment at Kaiteki" },
-      { src: "https://cdn.kaiteki.my/concerns/enlarged-pores/before-after-05.jpg", nativeWidth: 1412, ratio: "1/1", caption: "Pores and texture across the face, before and after a course of treatment at Kaiteki" },
-      { src: "https://cdn.kaiteki.my/concerns/enlarged-pores/before-after-06.jpg", nativeWidth: 1415, ratio: "1/1", caption: "Pores on the nose and cheek, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/enlarged-pores/before-after-03.jpg", nativeWidth: 1412, ratio: "1/1", caption: "Pores and texture across the face, before and after a course of treatment at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/enlarged-pores/before-after-04.jpg", nativeWidth: 1415, ratio: "1/1", caption: "Pores on the nose and cheek, before and after a course of treatment at Kaiteki" },
     ],
 
     // ── 12
@@ -2067,6 +2102,27 @@ export const concerns: Concern[] = [
       outro:
         "Come without makeup if you can, and bring the products you use daily or photos of their labels. Both make the assessment more accurate.",
     },
+    // ── 04 media · pairs with the six drivers by position; four have no photograph.
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/enlarged-pores/image-oil-production.jpg",
+        caption: "Pores on the nose and cheeks tend to look larger where the skin produces more oil.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/enlarged-pores/image-skin-structure.jpg",
+        caption: "Oil glands open into the hair follicle, and what collects in that opening is what makes a pore look larger. Illustration: National Cancer Institute.",
+      },
+      null,
+      null,
+      null,
+      null,
+    ],
+    visitImages: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/enlarged-pores/procedure-02.png",
+        caption: "A fractional laser treatment in progress. The doctor sets the depth and density for your skin type before starting.",
+      },
+    ],
 
     // ── 13 · R-05: names what treatment cannot do, and carries the pigment
     // note because energy devices are listed.
@@ -2189,7 +2245,7 @@ export const concerns: Concern[] = [
     slug: "fine-lines-wrinkles",
     name: "Fine Lines & Wrinkles",
     group: "Face",
-    image: "https://cdn.kaiteki.my/images/concerns/fine-lines-wrinkles.jpg",
+    image: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/card.jpg",
     summary:
       "Lines that appear when you move and lines that stay at rest need different approaches. A doctor assesses which type you have before recommending treatment.",
     leadAnswer:
@@ -2210,8 +2266,8 @@ export const concerns: Concern[] = [
       "Expression lines and static wrinkles are approached differently. A consultation identifies the right fine lines and wrinkles treatment. Book a free session.",
     // ── 01
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/banner.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/banner-sm.jpg",
+      src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/hero.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/hero-mobile.jpg",
       alt: "Illustrative photograph: a person looking closely at the skin around their eyes in a mirror",
     },
 
@@ -2296,37 +2352,37 @@ export const concerns: Concern[] = [
     // ── 04 media · one figure per cause, in the same order as `drivers.items`.
     figures: [
       {
-        src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/line-expression.jpg",
+        src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/image-line-expression.jpg",
         caption:
           "Expression lines follow the way a face moves, appearing first only on movement before they begin to persist at rest.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/line-glabellar.jpg",
+        src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/image-line-glabellar.jpg",
         caption:
           "Glabellar lines are the vertical creases between the brows, produced by the muscles that pull them together.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/line-perioral.jpg",
+        src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/image-line-perioral.jpg",
         caption:
           "Perioral lines are fine vertical creases around the mouth, driven by the circular muscle in the lips.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/line-marionette.jpg",
+        src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/image-line-marionette.jpg",
         caption:
           "Marionette lines run from the corners of the mouth toward the chin, and deepen as mid-face support is lost.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/line-static.jpg",
+        src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/image-line-static.jpg",
         caption:
           "Static wrinkles are visible at rest and reflect the skin's own structure, with sun exposure the largest accelerator.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/line-sleep.jpg",
+        src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/image-line-sleep.jpg",
         caption:
           "Sleep lines come from hours of pressure against a pillow, and are typically diagonal and asymmetric.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/line-neck.jpg",
+        src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/image-line-neck.jpg",
         caption:
           "Neck lines are shaped by posture and movement, on skin that is thinner and most often left out of a sunscreen routine.",
       },
@@ -2539,6 +2595,12 @@ export const concerns: Concern[] = [
       outro:
         "Bring details of any previous injectable treatment, including the product and roughly when. It changes both the assessment and the timing of anything new.",
     },
+    visitImages: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/procedure-02.png",
+        caption: "A prescription injectable being placed by the doctor. The dose and the injection points are planned at the consultation, not on the day.",
+      },
+    ],
 
     // ── 13
     risks: {
@@ -2660,7 +2722,7 @@ export const concerns: Concern[] = [
     slug: "dark-eye-circles",
     name: "Dark Eye Circles",
     group: "Eyes",
-    image: "https://cdn.kaiteki.my/images/concerns/dark-eye-circles.jpg",
+    image: "https://cdn.kaiteki.my/concerns/dark-eye-circles/card.jpg",
     summary:
       "Dark circles can come from pigment, blood vessels or hollowing under the eye. The treatment depends entirely on which cause is behind yours.",
     leadAnswer:
@@ -2678,8 +2740,8 @@ export const concerns: Concern[] = [
       "Dark eye circles can be pigment, vascular or structural in cause. A doctor assesses yours before recommending treatment. Book a free consultation with Kaiteki.",
     // ── 01
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/dark-eye-circles/banner.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/dark-eye-circles/banner-sm.jpg",
+      src: "https://cdn.kaiteki.my/concerns/dark-eye-circles/hero.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/dark-eye-circles/hero-mobile.jpg",
       alt: "Illustrative photograph: a person looking into a mirror at the skin beneath their eye",
     },
 
@@ -2749,17 +2811,17 @@ export const concerns: Concern[] = [
     // ── 04 media · one figure per cause, in the same order as `drivers.items`.
     figures: [
       {
-        src: "https://cdn.kaiteki.my/concerns/dark-eye-circles/pigmentation-circle.jpg",
+        src: "https://cdn.kaiteki.my/concerns/dark-eye-circles/image-pigmentation-circle.jpg",
         caption:
           "Pigment concentrated in the skin around the eye reads as brown or grey, and is often an inherited pattern.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/dark-eye-circles/vascular.jpg",
+        src: "https://cdn.kaiteki.my/concerns/dark-eye-circles/image-vascular.jpg",
         caption:
           "Fine blood vessels beneath very thin skin show through as blue, purple or grey rather than brown.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/dark-eye-circles/figure-01.jpg",
+        src: "https://cdn.kaiteki.my/concerns/dark-eye-circles/image-figure-01.jpg",
         caption:
           "A groove between the lower lid and the cheek casts a shadow. Nothing there is pigmented: the darkness is contour.",
       },
@@ -2979,6 +3041,12 @@ export const concerns: Concern[] = [
       outro:
         "Come without makeup if you can, and bring a photograph of yourself in daylight. Clinic lighting is overhead, which exaggerates shadow, so a daylight photograph often shows the area more honestly than the mirror in the room.",
     },
+    visitImages: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/dark-eye-circles/procedure-02.png",
+        caption: "Laser work near the eye is done with protective shields in place and settings chosen for the thinner skin of the area.",
+      },
+    ],
 
     // ── 13
     risks: {
@@ -3101,7 +3169,7 @@ export const concerns: Concern[] = [
     slug: "face-contouring",
     name: "Face Contouring",
     group: "Face",
-    image: "https://cdn.kaiteki.my/images/concerns/face-contouring.jpg",
+    image: "https://cdn.kaiteki.my/concerns/face-contouring/card.jpg",
     summary:
       "Jawline definition, cheek volume and facial proportions can be refined without surgery. A doctor plans the approach based on your facial structure.",
     leadAnswer:
@@ -3114,8 +3182,8 @@ export const concerns: Concern[] = [
       "Jawline and chin definition are assessed individually before any face contouring treatment is suggested. Book a free consultation with a Kaiteki doctor.",
     // ── 01
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/face-contouring/banner.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/face-contouring/banner-sm.jpg",
+      src: "https://cdn.kaiteki.my/concerns/face-contouring/hero.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/face-contouring/hero-mobile.jpg",
       alt: "Illustrative photograph: a person in profile with the light falling along the jawline and chin",
     },
 
@@ -3182,12 +3250,12 @@ export const concerns: Concern[] = [
     // ── 04 media · one figure per cause, in the same order as `drivers.items`.
     figures: [
       {
-        src: "https://cdn.kaiteki.my/concerns/face-contouring/sagging-jawline.jpg",
+        src: "https://cdn.kaiteki.my/concerns/face-contouring/image-sagging-jawline.jpg",
         caption:
           "As tissue settles downward, the jaw reads as two lines rather than one, which is what most people mean by a lost jawline.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/face-contouring/doublechin.jpg",
+        src: "https://cdn.kaiteki.my/concerns/face-contouring/image-doublechin.jpg",
         caption:
           "A pocket of fat under the chin blurs the angle between jaw and neck, and it can be present at any weight.",
       },
@@ -3416,6 +3484,12 @@ export const concerns: Concern[] = [
       outro:
         "Bring a photograph of what you have in mind if you have one. It is far more useful than a description, and it lets the doctor be specific about what is and is not achievable on your face.",
     },
+    visitImages: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/face-contouring/procedure-02.png",
+        caption: "Focused ultrasound being applied along the jawline, one line at a time, at depths chosen for the area.",
+      },
+    ],
 
     // ── 13
     risks: {
@@ -3541,7 +3615,7 @@ export const concerns: Concern[] = [
     slug: "face-lifting",
     name: "Face Lifting",
     group: "Face",
-    image: "https://cdn.kaiteki.my/images/concerns/face-lifting.jpg",
+    image: "https://cdn.kaiteki.my/concerns/face-lifting/card.jpg",
     summary:
       "Sagging along the jawline, neck or mid-face can be addressed with non-surgical lifting options. A doctor assesses the degree of laxity first.",
     leadAnswer:
@@ -3561,8 +3635,8 @@ export const concerns: Concern[] = [
       "Firmness and skin laxity are assessed before any non-surgical face lifting treatment is discussed. Book a free consultation to find what may suit you.",
     // ── 01
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/face-lifting/banner.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/face-lifting/banner-sm.jpg",
+      src: "https://cdn.kaiteki.my/concerns/face-lifting/hero.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/face-lifting/hero-mobile.jpg",
       alt: "Illustrative photograph: a person resting a hand along their jawline in front of a mirror",
     },
 
@@ -3635,22 +3709,22 @@ export const concerns: Concern[] = [
     // ── 04 media · one figure per cause, in the same order as `drivers.items`.
     figures: [
       {
-        src: "https://cdn.kaiteki.my/concerns/face-lifting/lossof-collagen.jpg",
+        src: "https://cdn.kaiteki.my/concerns/face-lifting/image-lossof-collagen.jpg",
         caption:
           "Collagen and elastin are renewed more slowly over time, so skin recovers its shape less readily after it is stretched.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/face-lifting/skin-laxity.jpg",
+        src: "https://cdn.kaiteki.my/concerns/face-lifting/image-skin-laxity.jpg",
         caption:
           "As the supporting scaffold thins, skin sits looser than the structure beneath it, and the excess settles along the jaw.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/face-lifting/muscle-changes.jpg",
+        src: "https://cdn.kaiteki.my/concerns/face-lifting/image-muscle-changes.jpg",
         caption:
           "The muscle and connective-tissue layer under the skin loosens with age. Much of what reads as sagging happens at this depth.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/face-lifting/gravity.jpg",
+        src: "https://cdn.kaiteki.my/concerns/face-lifting/image-gravity.jpg",
         caption:
           "A constant downward load on tissue that resists it less each year, which is why the jawline and neck change first.",
       },
@@ -3870,9 +3944,15 @@ export const concerns: Concern[] = [
         "Bring photographs of yourself from five or ten years ago if you have them. They are far more useful than a description for judging what has actually changed and how quickly.",
     },
 
-    // ── 12 media · deliberately absent. Only three treatment-in-progress
-    // photographs exist (docs/11 §3) and acne already renders all three;
-    // repeating them here would put the same imagery on two concern pages.
+    // ── 12 media · the clinic's own session photography (Drive "Media Sync",
+    // issue #16). Each concern renders different photographs, so no image
+    // appears on two concern pages.
+    visitImages: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/face-lifting/procedure-02.png",
+        caption: "Microfocused ultrasound with on-screen imaging, which lets the doctor see the layers beneath the skin before energy is delivered.",
+      },
+    ],
 
     // ── 13
     risks: {
@@ -3994,7 +4074,7 @@ export const concerns: Concern[] = [
     slug: "aging",
     name: "Aging",
     group: "Skin",
-    image: "https://cdn.kaiteki.my/images/concerns/aging.jpg",
+    image: "https://cdn.kaiteki.my/concerns/aging/card.jpg",
     summary:
       "Firmness, texture and volume change at different rates. A doctor maps what's happening with your skin before building a plan.",
     leadAnswer:
@@ -4015,8 +4095,8 @@ export const concerns: Concern[] = [
       "Skin ageing involves firmness, texture and volume changes over time. A consultation helps map an anti-ageing treatment plan. Book a free session with Kaiteki.",
     // ── 01
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/aging/banner.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/aging/banner-sm.jpg",
+      src: "https://cdn.kaiteki.my/concerns/aging/hero.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/aging/hero-mobile.jpg",
       alt: "Illustrative photograph: a person looking at their reflection in soft daylight",
     },
 
@@ -4163,23 +4243,23 @@ export const concerns: Concern[] = [
     // sign-off (issue 06) — they must match the artwork verbatim.
     slides: [
       {
-        src: "https://cdn.kaiteki.my/concerns/aging/stage-1.jpg",
+        src: "https://cdn.kaiteki.my/concerns/aging/image-stage-1.jpg",
         alt: "Stage 1: skin loses a little elasticity, and fine expression lines become more noticeable on movement.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/aging/stage-2.jpg",
+        src: "https://cdn.kaiteki.my/concerns/aging/image-stage-2.jpg",
         alt: "Stage 2: lines begin to remain visible at rest as collagen decline continues and the skin thins.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/aging/stage-3.jpg",
+        src: "https://cdn.kaiteki.my/concerns/aging/image-stage-3.jpg",
         alt: "Stage 3: wrinkles deepen and mild laxity appears around the eyes and along the jawline.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/aging/stage-4.jpg",
+        src: "https://cdn.kaiteki.my/concerns/aging/image-stage-4.jpg",
         alt: "Stage 4: folds become more pronounced and definition is lost along the cheekbones and jaw.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/aging/stage-5.jpg",
+        src: "https://cdn.kaiteki.my/concerns/aging/image-stage-5.jpg",
         alt: "Stage 5: laxity extends to the neck and décolletage, with accumulated texture and tone change in the skin.",
       },
     ],
@@ -4322,6 +4402,12 @@ export const concerns: Concern[] = [
       outro:
         "Bring photographs of yourself from five or ten years ago. They are the most useful thing in the room, because gradual change is genuinely hard to judge from memory or from a mirror seen every day.",
     },
+    visitImages: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/aging/procedure-02.jpg",
+        caption: "A laser session for skin ageing in progress. Settings are matched to your skin type, and gentler settings are often chosen for deeper skin tones.",
+      },
+    ],
 
     // ── 13
     risks: {
@@ -4445,7 +4531,7 @@ export const concerns: Concern[] = [
     ctaAssesses: "the areas you’re concerned about",
     name: "Body Slimming",
     group: "Hair & Body",
-    image: "https://cdn.kaiteki.my/images/concerns/body-slimming.jpg",
+    image: "https://cdn.kaiteki.my/concerns/body-slimming/card.jpg",
     summary:
       "Stubborn fat in specific areas can be targeted without surgery. These are body-contouring treatments, not weight-loss solutions.",
     leadAnswer:
@@ -4458,8 +4544,8 @@ export const concerns: Concern[] = [
       "Localised fat pockets are assessed individually. Body slimming is not a weight-loss treatment. Book a free consultation to discuss suitable options today.",
     // ── 01
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/body-slimming/banner.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/body-slimming/banner-sm.jpg",
+      src: "https://cdn.kaiteki.my/concerns/body-slimming/hero.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/body-slimming/hero-mobile.jpg",
       alt: "Illustrative photograph: a person measuring their waist with a tape measure",
     },
 
@@ -4531,22 +4617,22 @@ export const concerns: Concern[] = [
     // ── 04 media · one figure per area, in the same order as `drivers.items`.
     figures: [
       {
-        src: "https://cdn.kaiteki.my/concerns/body-slimming/lowerbellypouch.jpg",
+        src: "https://cdn.kaiteki.my/concerns/body-slimming/image-lowerbellypouch.jpg",
         caption:
           "A pocket below the navel that persists at a stable weight, and often on an abdomen that is otherwise flat.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/body-slimming/lovehandles.jpg",
+        src: "https://cdn.kaiteki.my/concerns/body-slimming/image-lovehandles.jpg",
         caption:
           "Fat over the sides of the waist. Where your body stores it is largely genetic, and targeted exercise does not reduce it.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/body-slimming/brabunglesbackfat.jpg",
+        src: "https://cdn.kaiteki.my/concerns/body-slimming/image-brabunglesbackfat.jpg",
         caption:
           "Folds across the back and under the arm that show through fitted clothing, and are often missed by general weight loss.",
       },
       {
-        src: "https://cdn.kaiteki.my/concerns/body-slimming/cellulite-smoothing.jpg",
+        src: "https://cdn.kaiteki.my/concerns/body-slimming/image-cellulite-smoothing.jpg",
         caption:
           "Dimpling from fibrous bands tethering skin to deeper tissue. It is a feature of skin structure at every body size.",
       },
@@ -4668,6 +4754,20 @@ export const concerns: Concern[] = [
       outro:
         "Wear or bring clothing that lets the area be examined comfortably. If you have photographs from a period when your weight was different, they help the doctor judge what has actually changed.",
     },
+    visitImages: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/body-slimming/procedure-02.png",
+        caption: "A microwave-based body treatment on the lower abdomen. The handpiece keeps moving over the marked area.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/body-slimming/procedure-03.png",
+        caption: "A cooling applicator in place on the upper arm. The area is assessed and marked before the applicator goes on.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/body-slimming/procedure-04.png",
+        caption: "Smaller areas such as the upper arm are assessed separately, because what suits the abdomen may not suit them.",
+      },
+    ],
 
     // ── 13
     risks: {
@@ -4775,7 +4875,7 @@ export const concerns: Concern[] = [
     ctaAssesses: "your scalp",
     name: "Hair Loss",
     group: "Hair & Body",
-    image: "https://cdn.kaiteki.my/images/concerns/hair-loss.jpg",
+    image: "https://cdn.kaiteki.my/concerns/hair-loss/card.jpg",
     summary:
       "Thinning, receding and patchy hair loss each have different causes. A doctor evaluates your pattern before recommending whether treatment can help.",
     leadAnswer:
@@ -4788,8 +4888,8 @@ export const concerns: Concern[] = [
       "Hair loss has several patterns and causes, and a doctor identifies yours before any treatment. Book a free hair loss consultation with Kaiteki today.",
     // ── 01
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/hair-loss/banner.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/hair-loss/banner-sm.jpg",
+      src: "https://cdn.kaiteki.my/concerns/hair-loss/hero.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/hair-loss/hero-mobile.jpg",
       alt: "Illustrative photograph: a person parting their hair to look at the scalp beneath",
     },
 
@@ -5023,6 +5123,42 @@ export const concerns: Concern[] = [
       outro:
         "Bring photographs of your hair from one, three and five years ago if you have them. They are the most useful thing you can bring, because gradual change is almost impossible to judge from memory.",
     },
+    // ── 04 media · pairs with the seven drivers by position; three have no photograph.
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/hair-loss/image-pattern-scale.jpg",
+        caption: "Genetic hair loss in men usually follows a recognisable pattern from the temples and crown, charted here on the Norwood scale.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/hair-loss/image-widening-parting.jpg",
+        caption: "In women, hormonal and genetic hair loss more often shows as a widening parting than as bald patches.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/hair-loss/image-stress.jpg",
+        caption: "Shedding brought on by physical or emotional stress usually shows up two to three months after the event.",
+      },
+      null,
+      null,
+      null,
+      {
+        src: "https://cdn.kaiteki.my/concerns/hair-loss/image-traction-styling.jpg",
+        caption: "Tight ponytails, braids and extensions pull on the hair at the root, and over time this can thin the hairline.",
+      },
+    ],
+    visitImages: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/hair-loss/procedure-02.png",
+        caption: "Scalp treatment is carried out along partings, so the doctor can see the skin directly.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/hair-loss/procedure-03.png",
+        caption: "Injections into the scalp are given by the doctor, with the areas planned at the consultation.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/hair-loss/procedure-04.png",
+        caption: "Some scalp treatments use a device rather than a needle. Which suits you depends on the cause of the hair loss.",
+      },
+    ],
 
     // ── 13
     risks: {
@@ -5122,7 +5258,7 @@ export const concerns: Concern[] = [
     ctaAssesses: "your tattoo",
     name: "Tattoo Removal",
     group: "Skin",
-    image: "https://cdn.kaiteki.my/images/concerns/tattoo-removal.jpg",
+    image: "https://cdn.kaiteki.my/concerns/tattoo-removal/card.jpg",
     summary:
       "Ink colour, depth and skin tone all affect how removal works. A doctor assesses your tattoo before estimating what to expect.",
     leadAnswer:
@@ -5135,8 +5271,8 @@ export const concerns: Concern[] = [
       "Ink type, colour, depth and skin type affect tattoo removal suitability and session count. A doctor assesses your tattoo. Book a free consultation today.",
     // ── 01
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/tattoo-removal/banner.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/tattoo-removal/banner-sm.jpg",
+      src: "https://cdn.kaiteki.my/concerns/tattoo-removal/hero.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/tattoo-removal/hero-mobile.jpg",
       alt: "Illustrative photograph: a tattooed forearm resting on a clinic treatment surface",
     },
 
@@ -5364,6 +5500,34 @@ export const concerns: Concern[] = [
         "Bring any information you have about the tattoo: who did it, when, and whether it covers earlier work. Photographs from when it was new are useful, since they show how much it has already faded.",
     },
 
+    visitImages: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/tattoo-removal/procedure-02.jpg",
+        caption: "A picosecond laser treatment in progress. Sessions are spaced weeks apart so the skin can settle between them.",
+      },
+    ],
+
+    // ── 04 media · pairs with the five drivers by position; the last has no photograph.
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/tattoo-removal/image-ink-colour.jpg",
+        caption: "Several colours in one tattoo usually call for more than one wavelength, because each colour absorbs light differently.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/tattoo-removal/image-ink-depth.jpg",
+        caption: "Tattoo ink sits in the dermis, the layer beneath the surface. Illustration: National Cancer Institute.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/tattoo-removal/image-size-density.jpg",
+        caption: "Large, densely shaded work holds more ink than a fine-line design, and usually needs more sessions.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/tattoo-removal/image-upper-back.jpg",
+        caption: "Blood and lymph flow differ across the body, which affects how quickly broken-up ink is cleared from each area.",
+      },
+      null,
+    ],
+
     // ── 13
     risks: {
       intro: "Laser tattoo removal carries real risks, and they are worth reading before you book.",
@@ -5466,7 +5630,7 @@ export const concerns: Concern[] = [
     ctaAssesses: "your birthmark",
     name: "Birthmark",
     group: "Skin",
-    image: "https://cdn.kaiteki.my/images/concerns/birthmark.jpg",
+    image: "https://cdn.kaiteki.my/concerns/birthmark/card.jpg",
     summary:
       "Not all birthmarks respond to treatment the same way. A doctor evaluates the type, depth and location before discussing options.",
     leadAnswer:
@@ -5480,8 +5644,8 @@ export const concerns: Concern[] = [
 
     // ── 01 · licensed stock (StockSnap CC0), see config/concern-media.json.
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/birthmark/banner.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/birthmark/banner-sm.jpg",
+      src: "https://cdn.kaiteki.my/concerns/birthmark/hero.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/birthmark/hero-mobile.jpg",
       alt: "Illustrative photograph: a woman applying a skincare serum to her cheek",
     },
 
@@ -5726,6 +5890,17 @@ export const concerns: Concern[] = [
         "Bring any earlier photographs of the birthmark, especially from childhood. They are the most reliable way to show whether it has changed.",
     },
 
+    visitImages: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/birthmark/procedure-02.png",
+        caption: "A vascular laser in use. Its wavelength targets blood vessels, which is why it is used for red and purple marks.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/birthmark/procedure-03.png",
+        caption: "Some small marks are treated with a fine laser handpiece that works on a very small area at a time.",
+      },
+    ],
+
     // ── 13
     risks: {
       intro: "Every laser treatment discussed on this page carries some risk.",
@@ -5824,7 +5999,7 @@ export const concerns: Concern[] = [
     ctaAssesses: "the affected skin",
     name: "Vascular Lesions",
     group: "Skin",
-    image: "https://cdn.kaiteki.my/images/concerns/vascular-lesions.jpg",
+    image: "https://cdn.kaiteki.my/concerns/vascular-lesions/card.jpg",
     summary:
       "Visible blood vessels, redness and broken capillaries can have different causes. A doctor identifies yours before recommending a treatment path.",
     leadAnswer:
@@ -5838,8 +6013,8 @@ export const concerns: Concern[] = [
 
     // ── 01 · licensed stock (StockSnap CC0), see config/concern-media.json.
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/vascular-lesions/banner.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/vascular-lesions/banner-sm.jpg",
+      src: "https://cdn.kaiteki.my/concerns/vascular-lesions/hero.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/vascular-lesions/hero-mobile.jpg",
       alt: "Illustrative photograph: a woman touching her cheek, looking at her skin",
     },
 
@@ -6054,8 +6229,8 @@ export const concerns: Concern[] = [
     // so only one of each pair is used.
     results: [
       { src: "https://cdn.kaiteki.my/concerns/vascular-lesions/before-after-01.jpg", nativeWidth: 564, ratio: "1.71/1", caption: "Facial redness on the cheek, before and after a course of treatment at Kaiteki" },
-      { src: "https://cdn.kaiteki.my/concerns/vascular-lesions/before-after-04.jpg", nativeWidth: 1415, ratio: "1/1", caption: "Fine thread veins, before and after a course of vascular laser at Kaiteki" },
-      { src: "https://cdn.kaiteki.my/concerns/vascular-lesions/before-after-05.png", nativeWidth: 1080, ratio: "1/1", caption: "Thread veins on the cheek, before and after vascular laser at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/vascular-lesions/before-after-02.jpg", nativeWidth: 1415, ratio: "1/1", caption: "Fine thread veins, before and after a course of vascular laser at Kaiteki" },
+      { src: "https://cdn.kaiteki.my/concerns/vascular-lesions/before-after-03.png", nativeWidth: 1080, ratio: "1/1", caption: "Thread veins on the cheek, before and after vascular laser at Kaiteki" },
     ],
 
     // ── 12
@@ -6083,6 +6258,37 @@ export const concerns: Concern[] = [
       outro:
         "Come without make-up on the affected area if you can. Concealer hides exactly what the doctor needs to see.",
     },
+
+    visitImages: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/vascular-lesions/procedure-02.png",
+        caption: "Light-based treatment for visible vessels in progress, with the eyes shielded throughout.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/vascular-lesions/procedure-03.png",
+        caption: "The handpiece moves across the area in overlapping passes, with settings matched to the size and depth of the vessels.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/vascular-lesions/procedure-04.png",
+        caption: "Treatment takes place in a clinic room, with the doctor present for the whole session.",
+      },
+    ],
+
+    // ── 04 media · pairs with the six drivers by position; four have no photograph.
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/vascular-lesions/image-sun-exposure.jpg",
+        caption: "Sun protection matters for visible vessels as well as for pigment, because UV weakens the support around small vessels over time.",
+      },
+      null,
+      null,
+      {
+        src: "https://cdn.kaiteki.my/concerns/vascular-lesions/image-spicy-food.jpg",
+        caption: "Heat, alcohol and spicy food widen small vessels for a while, which can make redness more noticeable.",
+      },
+      null,
+      null,
+    ],
 
     // ── 13
     risks: {
@@ -6182,7 +6388,7 @@ export const concerns: Concern[] = [
     ctaAssesses: "the affected areas",
     name: "Excessive Sweating",
     group: "Skin",
-    image: "https://cdn.kaiteki.my/images/concerns/excessive-sweating.jpg",
+    image: "https://cdn.kaiteki.my/concerns/excessive-sweating/card.jpg",
     summary:
       "Sweating that disrupts daily life can often be managed. A doctor assesses your pattern and severity to determine which approach fits.",
     leadAnswer:
@@ -6196,8 +6402,8 @@ export const concerns: Concern[] = [
 
     // ── 01 · licensed stock (StockSnap CC0), see config/concern-media.json.
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/excessive-sweating/banner.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/excessive-sweating/banner-sm.jpg",
+      src: "https://cdn.kaiteki.my/concerns/excessive-sweating/hero.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/excessive-sweating/hero-mobile.jpg",
       alt: "Illustrative photograph: a woman resting on a running track, her skin damp with sweat",
     },
 
@@ -6428,6 +6634,42 @@ export const concerns: Concern[] = [
       outro:
         "It helps to bring a list of your medications and to note when the sweating is worst. A few days of notes is more useful than trying to remember.",
     },
+    // ── 04 media · pairs with the five drivers by position; two have no photograph.
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/excessive-sweating/image-underarms.jpg",
+        caption: "The underarms are one of the most common places for focal sweating, which usually affects both sides.",
+      },
+      null,
+      {
+        src: "https://cdn.kaiteki.my/concerns/excessive-sweating/image-face-scalp.jpg",
+        caption: "Stress and anxiety can bring on sweating, often on the face, scalp and hands.",
+      },
+      null,
+      {
+        src: "https://cdn.kaiteki.my/concerns/excessive-sweating/image-whole-body.jpg",
+        caption: "Sweating across the whole body, rather than in one area, is more often linked to an underlying cause and is worth checking with a doctor.",
+      },
+    ],
+    visitImages: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/excessive-sweating/procedure-01.jpg",
+        caption: "The first visit is a conversation with the doctor about where and when the sweating happens, before anything is recommended.",
+      },
+    ],
+
+    // An illustration, not a photograph: Kaiteki has no before-and-after of its
+    // own for sweating, and none is borrowed. The caption says so up front, and
+    // the shared results disclaimer still renders beneath it.
+    results: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/excessive-sweating/before-after-01.png",
+        nativeWidth: 1200,
+        ratio: "1.71/1",
+        illustration: true,
+        caption: "Illustration, not a patient result: a prescription injectable reduces the nerve signal to sweat glands in the treated area, for a limited time",
+      },
+    ],
 
     // ── 13
     risks: {
