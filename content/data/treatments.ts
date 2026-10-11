@@ -832,16 +832,174 @@ export const treatments: Treatment[] = [
     // infographic with outcome copy burned into the artwork ("restore youthful
     // texture", "tighten and lift"), which no caption can walk back (R-01).
     // docs/13 §8 also names it as the duplicate of the file kept here.
+    // `fotona-laser.jpg` (the external pass) is held since 3.6: two prose
+    // sections render at most floor(2/2) = 1 figure (Q-23).
     figures: [
       {
         src: "https://cdn.kaiteki.my/treatments/fotona-4d/fotona-4d-2.jpg",
         caption: "A Fotona handpiece being worked over the cheek and jaw during a session at Kaiteki.",
       },
+    ],
+
+    // docs/15 item 3.6 (2026-10-11): the v2 block set, applied under docs/16 R1.
+    // Two prose sections kept; the rest became typed blocks and were deleted.
+    // Block copy is restructured from reviewed text only: this page, the Fotona SP Dynamis page,
+    // and the concern pages' treatmentWhy lines. No new claim, no figure. The
+    // re-arrangement goes to Dr Jen Meng in the offline review round, which is why
+    // `lastReviewed` is unchanged.
+    typicalSessions: "A course, then maintenance",
+    facts: [
+      { value: "Two lasers, four modes", label: "Nd:YAG and Er:YAG, combined in one protocol" },
+      { value: "45–60 minutes", label: "A full protocol, depending on how many modes are included" },
+      { value: "Assessment first", label: "Your first visit is a doctor consultation, not a treatment" },
+    ],
+
+    // T-06 — from the concern pages' reviewed treatmentWhy lines.
+    routes: [
       {
-        src: "https://cdn.kaiteki.my/treatments/fotona-4d/fotona-laser.jpg",
-        caption: "The external pass, delivered across the skin surface rather than intraorally.",
+        title: "Laxity treated from inside the mouth outwards",
+        body: "A laser protocol that works in several passes, one of them delivered through the inside of the cheek. Considered where firmness and skin quality are both part of the picture rather than descent alone.",
+        links: [{ href: "/concerns/face-lifting", label: "Read about face lifting" }],
+      },
+      {
+        title: "Firmness and surface quality in the same course",
+        body: "A laser protocol working in several passes at different depths, including one delivered from inside the mouth. Considered where firmness and surface quality both need attention in the same course.",
+        links: [{ href: "/concerns/aging", label: "Ageing skin" }],
       },
     ],
+    routesNote:
+      "The treatment is aimed at people with early to moderate laxity rather than significant sagging, where a doctor may tell you a laser is not the right tool, and saying so honestly is part of the consultation.",
+
+    // T-07 — the former "four modes" section, as the variant module (R1).
+    variantModule: {
+      heading: "The four modes, and what each one does",
+      intro:
+        "A Fotona 4D session combines four laser modes in a set sequence. Each mode targets the skin at a different level, and a doctor decides which modes and settings are used based on your assessment.",
+      items: [
+        {
+          eyebrow: "Er:YAG · intraoral",
+          title: "SMOOTH",
+          body: "Laser energy is delivered to the tissue inside the mouth, working on the areas behind the cheeks and around the nasolabial region from within.",
+        },
+        {
+          eyebrow: "Nd:YAG · fractional",
+          title: "FRAC3",
+          body: "A fractional mode that reaches deeper layers of the skin to target imperfections such as pigmentation and lines.",
+        },
+        {
+          eyebrow: "Nd:YAG · bulk heating",
+          title: "PIANO",
+          body: "A bulk-heating mode that warms deeper tissue in a gradual, controlled way, working below the skin surface.",
+        },
+        {
+          eyebrow: "Er:YAG · surface",
+          title: "Superficial peel",
+          body: "A light resurfacing pass over the skin surface intended to smooth texture.",
+          href: "/technology/fotona-sp-dynamis",
+          hrefLabel: "About the Fotona platform",
+        },
+      ],
+      note: "All four run on the Fotona SP Dynamis / TimeWalker platform. Not every plan includes every mode.",
+    },
+
+    ctaMid: {
+      heading: "Not sure whether a laser or another energy suits your laxity?",
+      body: "Fotona 4D, focused ultrasound and radiofrequency reach tissue in different ways, and one is not automatically better than the other. A doctor will compare the realistic options for your face. Free consultation, no obligation.",
+    },
+
+    // T-09 — the SP Dynamis page.
+    avoidIf: [
+      { lead: "Pregnancy or breastfeeding.", body: "Treatment is deferred." },
+      { lead: "Active infection, cold sores or inflamed skin", body: "in the area to be treated." },
+      { lead: "Recent sunburn or tanning.", body: "" },
+      { lead: "A history of keloid scarring.", body: "" },
+      { lead: "Photosensitising medication,", body: "including oral isotretinoin." },
+      {
+        lead: "Oral or dental conditions, recent dental work or oral appliances,",
+        body: "because one step is delivered from inside the mouth.",
+      },
+    ],
+    bringToConsult: "Please bring your full medical, dental and medication history to consultation.",
+
+    // T-10 — step 1 states the first visit is not a treatment.
+    sessionSteps: [
+      {
+        title: "Consultation and assessment",
+        body: "Your first visit is a consultation, not a treatment. The doctor assesses your face and decides which of the modes are appropriate for you, and in what sequence.",
+      },
+      {
+        title: "Preparation",
+        body: "The skin is cleansed and make-up removed, eye protection is fitted, and you are positioned and prepared separately for the intraoral step.",
+      },
+      {
+        title: "The protocol",
+        body: "The modes are performed in sequence. Most patients describe spreading warmth rather than sharp pain, with the intraoral step feeling warm against the inner cheek. A full protocol is generally around 45 to 60 minutes.",
+      },
+      {
+        title: "Afterwards",
+        body: "Your doctor explains aftercare and when to follow up. A course of several sessions spaced a few weeks apart is common, followed by occasional maintenance.",
+      },
+    ],
+
+    // T-11 — physical recovery only.
+    afterSession: {
+      intro:
+        "Downtime is usually limited, which is much of the appeal of a non-ablative protocol, but it varies between individuals.",
+      bands: [
+        {
+          title: "The same day",
+          body: "Flushing, warmth and a mild tight feeling for a few hours to a day are common, and the skin can look slightly pink after the surface pass. Most people return to normal activities the same day.",
+        },
+        {
+          title: "The first few days",
+          body: "Keep skincare gentle and well moisturised, and pause retinoids and acids until your doctor says otherwise.",
+        },
+        {
+          title: "Between sessions",
+          body: "The effect relies on gradual tissue remodelling, so plans are usually built as a short course followed by maintenance rather than a single visit.",
+        },
+      ],
+      aftercare:
+        "Use daily broad-spectrum sunscreen, as skin can be more sensitive to sunlight after laser treatment, and avoid heat such as saunas and hot yoga for the period your doctor specifies.",
+    },
+
+    // T-12
+    risks: {
+      intro:
+        "As with any laser treatment, Fotona 4D carries potential side effects. These are explained to you during consultation so you can make an informed decision.",
+      common:
+        "Redness, warmth, mild swelling, transient dryness or flaking, and temporary sensitivity of the inner cheek or lips after the intraoral step.",
+      lessCommon:
+        "Cold sores can be reactivated in people prone to them. Burns, blistering, changes in pigmentation and scarring are uncommon.",
+      pigmentNote:
+        "Fotona notes that the Nd:YAG wavelength's low absorption in melanin allows it to be used across skin types, which is relevant for Malaysian patients, and the Er:YAG surface pass is typically kept light in a 4D protocol. Suitability is still individual and depends on your skin's history of pigment change.",
+      cannotDo: [
+        "It is aimed at early to moderate laxity rather than significant sagging, where a doctor may tell you a laser is not the right tool.",
+        "It is not a single visit: the effect relies on gradual tissue remodelling across a course.",
+        "It is not automatically better than focused ultrasound or radiofrequency. They are different energy types reaching tissue in different ways.",
+      ],
+      disclose:
+        "Tell your doctor if you are or may be pregnant or breastfeeding, are prone to cold sores, have had recent sun exposure, dental work or an oral condition, have a keloid tendency, or take photosensitising medication including oral isotretinoin.",
+    },
+
+    // T-13 — factors only, no figures (settled 2026-09-20).
+    costFactors: {
+      intro:
+        "Kaiteki does not quote prices online, because cost depends on the plan agreed at consultation. What moves it:",
+      factors: [
+        "How many of the platform's modes your plan uses. A two-step protocol is not the same appointment as a full four-step one.",
+        "How many areas are covered.",
+        "The number of sessions in the course, and any maintenance.",
+        "Whether the protocol is combined with other treatments in your plan.",
+      ],
+    },
+
+    relatedReasons: {
+      hifu: "Focused ultrasound for laxity at a chosen depth, a different energy type from laser.",
+      ultherapy:
+        "Focused ultrasound with on-screen imaging of the tissue layers, a different energy type from laser.",
+    },
+
     sections: [
       {
         heading: "What is Fotona Laser?",
@@ -851,62 +1009,10 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How it works: the four modes",
+        heading: "Why does Fotona 4D work from inside the mouth?",
         body: [
-          "A Fotona 4D session combines four laser modes in a set sequence. Each mode targets the skin at a different level, and a doctor decides which modes and settings are used based on your assessment.",
-        ],
-        list: [
-          "SMOOTH (intraoral): laser energy is delivered to the tissue inside the mouth, working on the areas behind the cheeks and around the nasolabial region from within.",
-          "FRAC3: a fractional mode that reaches deeper layers of the skin to target imperfections such as pigmentation and lines.",
-          "PIANO: a bulk-heating mode that warms deeper tissue in a gradual, controlled way, working below the skin surface.",
-          "Superficial light peel: a light resurfacing pass over the skin surface intended to smooth texture.",
-        ],
-      },
-      {
-        heading: "What it may help address",
-        body: [
-          "During consultation, a doctor will discuss whether Fotona 4D is relevant to your concern. It is commonly considered for concerns such as:",
-        ],
-        list: [
-          "Loss of firmness around the cheeks and jawline",
-          "Fine lines and expression lines",
-          "Skin texture and tone concerns",
-          "Volume-related and skin-quality concerns of the face",
-        ],
-      },
-      {
-        heading: "Suitability & who should avoid it",
-        body: [
-          "Fotona 4D is not suitable for everyone. A doctor assesses your skin, medical history and current medications during consultation to decide whether it is appropriate for you.",
-          "Laser treatments may not be advised during pregnancy or breastfeeding, for people with certain photosensitising medications or skin conditions, or where there is active infection, cold sores or broken skin in the treatment area. Recent sun exposure or certain skin conditions may also affect timing. Tell your doctor about your full medical and medication history so suitability can be assessed on an individual basis.",
-        ],
-      },
-      {
-        heading: "The session at Kaiteki",
-        body: [
-          "A session begins with a consultation and skin assessment with one of our doctors, who confirm suitability and plan the treatment. The laser modes are then delivered in sequence, including the intraoral SMOOTH step and the external modes on the skin surface.",
-          "Treatment is carried out by our doctors. The number of modes used and the energy settings are tailored to the individual. Your doctor will explain each step and what to expect before treatment begins.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
-          "Downtime varies between individuals. Some people notice warmth, mild redness or a flushed appearance in the treated area for a short period afterwards; your doctor will advise what is typical for you.",
-          "Aftercare usually includes gentle skincare, moisturising and diligent daily sun protection, as skin can be more sensitive to sunlight after laser treatment. Your doctor will give you specific aftercare instructions and tell you when to follow up.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
-        body: [
-          "As with any laser treatment, Fotona 4D carries potential side effects. These are explained to you during consultation so you can make an informed decision.",
-          "Possible effects can include redness, swelling, warmth or temporary sensitivity in the treated area, and, less commonly, changes in skin pigmentation or blistering. The likelihood of side effects varies between individuals and depends on your skin and the settings used. Report any concerns after treatment to the clinic so your doctor can advise.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "Fotona 4D is generally performed as a course of sessions rather than a single treatment, with the number and spacing decided by your doctor based on your concern and how your skin responds. Results develop gradually and vary between individuals.",
-          "Cost depends on the treatment plan agreed at consultation, so it is confirmed after your doctor has assessed you rather than quoted upfront. To ask about a consultation, message us on WhatsApp and our team will help you arrange one.",
+          "Fotona describes the Nd:YAG wavelength as reaching the deepest layers of the skin, and the Er:YAG wavelength as suited to working on the surface. That dual-source design is what makes a multi-step protocol possible at all: a single-wavelength device cannot work intraorally, deep in the dermis and on the skin surface within one appointment.",
+          "In the step Fotona calls SmoothLiftin™, the Er:YAG laser is applied in SMOOTH® mode from inside the mouth rather than through the outer skin. Fotona describes SMOOTH® mode as a rapid sequence of low-fluence pulses within a much longer pulse, producing gentle coagulative heating rather than ablation.",
         ],
       },
     ],
@@ -960,6 +1066,162 @@ export const treatments: Treatment[] = [
         caption: "Oligio — the manufacturer's mark for the monopolar radiofrequency platform.",
       },
     ],
+    // docs/15 item 3.6 (2026-10-11): the v2 block set, applied under docs/16 R1.
+    // Two prose sections kept; the rest became typed blocks and were deleted.
+    // Block copy is restructured from reviewed text only: this page, the BTL Exilis, Wonderface and XERF pages,
+    // and the concern pages' treatmentWhy lines. No new claim, no figure. The
+    // re-arrangement goes to Dr Chloe Wan in the offline review round, which is why
+    // `lastReviewed` is unchanged.
+    typicalSessions: "About 2 to 3, then maintenance",
+    facts: [
+      { value: "3 RF platforms", label: "BTL Exilis, Wonderface and XERF, matched to your skin" },
+      { value: "30–60 minutes", label: "Typical session, depending on the areas treated" },
+      { value: "Assessment first", label: "Your first visit is a doctor consultation, not a treatment" },
+    ],
+
+    // T-06 — from the concern pages' reviewed treatmentWhy lines.
+    routes: [
+      {
+        title: "Skin firmness across the lower face",
+        body: "Heats the dermis to prompt collagen change across a broader area than a focused device. Considered where general firmness rather than a single line is the concern.",
+        links: [{ href: "/concerns/face-contouring", label: "Read about face contouring" }],
+      },
+      {
+        title: "Laxity in the lower lid",
+        body: "Gentle heating to prompt collagen change where the lower lid skin has loosened and creased. Considered where crepiness accompanies the darkness rather than where a hollow dominates.",
+        links: [{ href: "/concerns/dark-eye-circles", label: "Dark eye circles" }],
+      },
+    ],
+    routesNote:
+      "Skin thickness, how much laxity there is and what has already been tried all change the answer, so a doctor decides after examining you rather than from the concern name alone.",
+
+    // T-07 — the devices paragraph of "How it works", as the variant module (R1).
+    variantModule: {
+      heading: "BTL Exilis, Wonderface or XERF: which RF platform, and why",
+      intro:
+        "Different RF devices allow the treating doctor to adjust treatment depth and intensity for your skin condition and goals.",
+      items: [
+        {
+          eyebrow: "Monopolar · embedded cooling",
+          title: "BTL Exilis",
+          body: "Monopolar delivery with embedded surface cooling lets the device keep working at a depth that reaches subcutaneous fat, which is why it is used for body-contour concerns as well as facial firmness.",
+          href: "/technology/btl-exilis",
+          hrefLabel: "About BTL Exilis",
+        },
+        {
+          eyebrow: "Bipolar RF + neuromuscular",
+          title: "Wonderface",
+          body: "A face-specific platform pairing bipolar radiofrequency, more contained and comparatively superficial, with a separate neuromuscular stimulation mode that works on muscle tone.",
+          href: "/technology/wonderface",
+          hrefLabel: "About Wonderface",
+        },
+        {
+          eyebrow: "Multifrequency monopolar · cryogen cooling",
+          title: "XERF",
+          body: "Combines 6.78 MHz and 2 MHz so energy can be biased towards shallower or deeper tissue, with integrated cryogen cooling, and works entirely from the skin surface with no needles.",
+          href: "/technology/xerf",
+          hrefLabel: "About XERF",
+        },
+      ],
+      note: "The doctor selects the device and settings for your skin and the area being treated.",
+    },
+
+    ctaMid: {
+      heading: "Not sure whether radiofrequency or another energy fits your skin?",
+      body: "Surface radiofrequency, focused ultrasound and RF microneedling reach tissue in different ways. A doctor can tell you which one your laxity actually calls for. Free consultation, no obligation.",
+    },
+
+    // T-09 — this page and the three device pages.
+    avoidIf: [
+      { lead: "Pregnancy.", body: "Treatment is deferred." },
+      {
+        lead: "Implanted electronic or metal devices,",
+        body: "such as a pacemaker, in or near the treatment area.",
+      },
+      { lead: "Active skin infection or inflamed areas", body: "where the treatment would be applied." },
+      { lead: "A history of keloid scarring.", body: "" },
+      { lead: "Some skin conditions or medications,", body: "which your doctor goes through with you." },
+    ],
+    bringToConsult:
+      "Tell the doctor what you are already using on your skin as well as what you take: retinoids and recent peels change what the skin will tolerate on the day.",
+
+    // T-10 — step 1 states the first visit is not a treatment.
+    sessionSteps: [
+      {
+        title: "Consultation and assessment",
+        body: "Your first visit is a consultation, not a treatment. The doctor assesses your skin's thickness and how it sits, because both change the settings.",
+      },
+      {
+        title: "Device and settings",
+        body: "If RF is appropriate, the doctor selects a suitable device and settings for your skin and the area being treated.",
+      },
+      {
+        title: "The treatment",
+        body: "Controlled RF energy is delivered to the target areas, with contact cooling for comfort. Most people describe a warm, deep, massage-like sensation that builds and eases as the handpiece moves.",
+      },
+      {
+        title: "Afterwards",
+        body: "A course of about 2 to 3 sessions spaced roughly 4 to 6 weeks apart is common, but the plan is individual and your doctor will explain what to expect for your skin.",
+      },
+    ],
+
+    // T-11 — physical recovery only.
+    afterSession: {
+      intro: "Downtime is usually minimal but varies between individuals.",
+      bands: [
+        {
+          title: "Straight afterwards",
+          body: "Mild redness or a feeling of warmth may occur and typically settles within a few hours.",
+        },
+        {
+          title: "The same day",
+          body: "Most people return to normal activities, and makeup can generally be worn straight after a facial session.",
+        },
+        {
+          title: "Over the following months",
+          body: "Collagen turnover is slow, so any change develops gradually over weeks to months, and a plan here is written in months rather than weeks.",
+        },
+      ],
+      aftercare:
+        "Gentle skincare and sun protection are advised afterwards. Your doctor will give aftercare guidance specific to you, which may include maintenance care to support ongoing results.",
+    },
+
+    // T-12
+    risks: {
+      intro:
+        "As with any medical procedure, RF treatment carries risks, which are explained during consultation.",
+      common: "Redness, warmth or mild swelling that usually settles.",
+      lessCommon:
+        "Burns and lasting pigment change are the effects that matter here, and both trace back to energy settings. That is why the settings are chosen for your skin by a doctor rather than fixed at the machine.",
+      pigmentNote:
+        "Because RF heats tissue rather than targeting pigment, it does not rely on colour contrast in the skin, which is why RF platforms are used across a wide range of skin tones including Asian skin. That does not make it appropriate for everyone.",
+      cannotDo: [
+        "It is not a substitute for surgery where there is significant excess skin.",
+        "Marked sagging may be better served by other approaches your doctor can discuss.",
+        "There is nothing to see immediately after a session: radiofrequency works by warming tissue and letting it remodel afterwards.",
+      ],
+      disclose:
+        "Tell your doctor if you are or may be pregnant, have a pacemaker, metal implant or other implanted device, have a keloid tendency, or use retinoids or have had a recent peel.",
+    },
+
+    // T-13 — factors only, no figures (settled 2026-09-20).
+    costFactors: {
+      intro:
+        "Kaiteki does not quote prices online. The course length is set by what the assessment finds rather than by the device, so a figure quoted before that assessment would be a guess. What moves it:",
+      factors: [
+        "Your skin condition.",
+        "The area treated. Face-only plans differ from face-and-neck or body plans.",
+        "The number of sessions in the course.",
+        "Maintenance sessions, often every 6 to 12 months, decided with your doctor.",
+      ],
+    },
+
+    relatedReasons: {
+      microneedling:
+        "Radiofrequency delivered through fine needles, used for texture and scarring, with more recovery time.",
+      hifu: "Focused ultrasound for laxity at a chosen depth, a different energy type from radiofrequency.",
+    },
+
     sections: [
       {
         heading: "What is radiofrequency (RF) treatment?",
@@ -969,58 +1231,10 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How it works",
+        heading: "How does radiofrequency warm the skin without needles?",
         body: [
           "RF devices deliver controlled thermal energy into the dermis, gently heating the tissue. This warming is intended to act on existing collagen fibres and to prompt the skin's own gradual collagen-renewal response over time.",
-          "Different RF devices allow the treating doctor to adjust treatment depth and intensity for your skin condition and goals. At Kaiteki these include BTL Exilis, which uses monopolar radiofrequency to deliver deep, uniform heating, Wonderface, an RF platform with precise energy control, and XERF, an RF platform used for structural skin tightening. A contact-cooling step is used during treatment to help keep each session comfortable.",
-          "Any changes develop gradually over weeks to months and vary between individuals.",
-        ],
-      },
-      {
-        heading: "What it may help address",
-        body: [
-          "RF treatment is commonly considered for the following concerns. Skin thickness, how much laxity there is and what has already been tried all change the answer, so a doctor decides after examining you rather than from the concern name alone.",
-        ],
-        list: [
-          "Skin laxity and loss of firmness",
-          "Sagging around the jawline, cheeks or neck",
-          "Loss of facial definition and contour",
-          "Overall skin texture as part of a plan",
-        ],
-      },
-      {
-        heading: "Suitability & who should avoid it",
-        body: [
-          "Suitability is assessed individually. RF is generally well tolerated, and your doctor adjusts the settings to your skin condition. It may not be appropriate during pregnancy, with certain implanted electronic or metal devices, or with some skin conditions or medications.",
-          "Tell the doctor what you are already using on your skin as well as what you take: retinoids and recent peels change what the skin will tolerate on the day.",
-        ],
-      },
-      {
-        heading: "The session at Kaiteki",
-        body: [
-          "The visit opens with the doctor assessing your skin's thickness and how it sits, because both change the settings. If RF is appropriate, the doctor selects a suitable device and settings for your skin and the area being treated.",
-          "Controlled RF energy is then delivered to the target areas, with contact cooling for comfort. A course of about 2 to 3 sessions spaced roughly 4 to 6 weeks apart is common, but the plan is individual and your doctor will explain what to expect for your skin.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
-          "Downtime is usually minimal but varies between individuals. Mild redness or a feeling of warmth may occur and typically settles within a few hours.",
-          "Gentle skincare and sun protection are advised afterwards. Your doctor will give aftercare guidance specific to you, which may include maintenance care to support ongoing results.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
-        body: [
-          "As with any medical procedure, RF treatment carries risks, which are explained during consultation. Temporary effects can include redness, warmth or mild swelling that usually settles. Less common effects relating to heat energy are discussed with you beforehand.",
-          "Burns and lasting pigment change are the effects that matter here, and both trace back to energy settings. That is why the settings are chosen for your skin by a doctor rather than fixed at the machine.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The number of sessions and overall cost depend on your skin condition, the area treated and your individual response. Many plans involve a short course followed by maintenance sessions, often every 6 to 12 months, but this is decided with your doctor.",
-          "Because the course length is set by what the assessment finds rather than by the device, a figure quoted before that assessment would be a guess. Pricing is confirmed at consultation. Message us on WhatsApp to arrange one.",
+          "A contact-cooling step is used during treatment to help keep each session comfortable. Any changes develop gradually over weeks to months and vary between individuals.",
         ],
       },
     ],
@@ -1298,6 +1512,156 @@ export const treatments: Treatment[] = [
         caption: "An applicator clamped over the abdomen with its gel membrane in place, partway through a cycle.",
       },
     ],
+    // docs/15 item 3.6 (2026-10-11): the v2 block set, applied under docs/16 R1.
+    // Two prose sections kept; the rest became typed blocks and were deleted.
+    // Block copy is restructured from reviewed text only: this page, the Cooltech and CoolSculpting pages,
+    // and the concern pages' treatmentWhy lines. No new claim, no figure. The
+    // re-arrangement goes to Dr Jessie Lim in the offline review round, which is why
+    // `lastReviewed` is unchanged.
+    typicalSessions: "Individual, per area",
+    facts: [
+      { value: "Controlled cooling", label: "Applied to a pocket of fat an applicator can draw and hold" },
+      { value: "35–60 minutes", label: "Typical applicator cycle, per area" },
+      { value: "Assessment first", label: "Your first visit is a doctor consultation, not a treatment" },
+    ],
+
+    // T-06 — from the concern pages' reviewed treatmentWhy lines.
+    routes: [
+      {
+        title: "A pinchable pocket that diet has not shifted",
+        body: "Controlled cooling applied to a defined pocket of fat, which the body then clears over the following weeks. Suitable where the fat can be drawn into an applicator, which is why the pinch test at assessment decides whether it applies at all.",
+        links: [{ href: "/concerns/body-slimming", label: "Read about body slimming" }],
+      },
+      {
+        title: "A defined pocket of fat under the chin",
+        body: "Controlled cooling applied to the submental area to reduce a localised fat pocket. Relevant only where fat is genuinely what is there, which is why the pinch test at assessment matters.",
+        links: [{ href: "/concerns/face-contouring", label: "Face contouring" }],
+      },
+    ],
+    routesNote:
+      "Fat freezing is not a weight-loss treatment and is not a substitute for a healthy diet and exercise. It is intended for people at or near a stable weight who have specific, pinchable pockets of fat rather than generalised weight to lose.",
+
+    // T-07 — the former "Devices we use" section, as the variant module (R1).
+    variantModule: {
+      heading: "Cooltech or CoolSculpting: which device, and why",
+      intro:
+        "Both are cryolipolysis devices working on the same principle. They differ in applicator design, and the treating doctor selects the device and applicator suited to your treatment area and goals at consultation.",
+      items: [
+        {
+          eyebrow: "360° cooling · Cocoon Medical",
+          title: "Cooltech",
+          body: "The manufacturer describes 360° cooling plates, cooling delivered around the drawn-in tissue rather than from a single contact plate, and the ability to run more than one applicator at the same time, so two areas or both flanks may be addressed within one appointment.",
+          href: "/technology/cooltech",
+          hrefLabel: "About Cooltech",
+        },
+        {
+          eyebrow: "Cryolipolysis · CoolSculpting",
+          title: "CoolSculpting",
+          body: "A device applicator draws the target area against a cooling plate. Each applicator cycle typically runs for around 35 to 60 minutes, and the number of areas and applicators is individual.",
+          href: "/technology/coolsculpting",
+          hrefLabel: "About CoolSculpting",
+        },
+      ],
+      note: "Naming a device is a factual description, not a claim that one performs better than another.",
+    },
+
+    ctaMid: {
+      heading: "Not sure whether your area is one an applicator can hold?",
+      body: "Not every pocket of fat is one an applicator can draw and hold, and that is something a doctor checks in person. Free consultation, no obligation.",
+    },
+
+    // T-09 — this page and the Cooltech page.
+    avoidIf: [
+      { lead: "Pregnancy or breastfeeding.", body: "Treatment is deferred." },
+      {
+        lead: "Cold-related conditions",
+        body: "such as cryoglobulinaemia, cold urticaria or paroxysmal cold haemoglobinuria.",
+      },
+      { lead: "A hernia", body: "in or near the treatment area." },
+      { lead: "Broken or infected skin", body: "over the area to be treated." },
+      { lead: "Certain circulatory, nerve or liver conditions,", body: "which your doctor goes through with you." },
+    ],
+    bringToConsult:
+      "Please share your full medical history, current medications, any implants or devices, and any previous body-contouring procedures at consultation so the doctor can advise safely.",
+
+    // T-10 — step 1 states the first visit is not a treatment.
+    sessionSteps: [
+      {
+        title: "Consultation and assessment",
+        body: "Your first visit is a consultation, not a treatment. The doctor assesses the area, including whether the fat can be drawn into an applicator, and discusses what is realistic for your body.",
+      },
+      {
+        title: "Preparation",
+        body: "The treatment area is marked, and a protective gel pad and applicator are positioned over the pocket of fat.",
+      },
+      {
+        title: "The cooling cycle",
+        body: "The area is cooled for a set period. There is an initial period of intense cold and a firm pulling sensation from the suction, which commonly eases as the area becomes numb.",
+      },
+      {
+        title: "Afterwards",
+        body: "The applicator is removed and the area is massaged. More than one area or session may be discussed depending on your goals, but the plan is individual.",
+      },
+    ],
+
+    // T-11 — physical recovery only, never a timeframe to a result.
+    afterSession: {
+      intro:
+        "Downtime is usually limited but varies between individuals, and most people return to everyday activities after a session.",
+      bands: [
+        {
+          title: "Straight afterwards",
+          body: "The area often looks red and feels firm, cold or oddly numb, and this typically settles over the following hours to days.",
+        },
+        {
+          title: "The first weeks",
+          body: "Temporary tenderness, swelling, tingling or a dull ache in the treated area can persist for a few days to a couple of weeks, and some people find loose clothing or a compression garment more comfortable during that period.",
+        },
+        {
+          title: "Weeks to months",
+          body: "Any change is gradual, because the body clears the treated cells over the following weeks rather than at the appointment, so it is typically assessed a couple of months later rather than immediately.",
+        },
+      ],
+      aftercare:
+        "Maintaining a stable weight with your usual diet and activity supports the contour you are working towards. Your doctor will give aftercare guidance specific to you.",
+    },
+
+    // T-12
+    risks: {
+      intro:
+        "As with any medical procedure, cryolipolysis carries risks, which are explained during consultation.",
+      common:
+        "Redness, swelling, bruising, firmness, numbness, tingling, itching or cramping in the treated area, and altered skin sensation that may take some weeks to normalise.",
+      lessCommon:
+        "Lingering pain in the treated area, and paradoxical adipose hyperplasia, in which the treated fat pocket firms and enlarges rather than reduces. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor.",
+      pigmentNote:
+        "Because it acts on fat below the skin rather than on pigment, skin tone is not the primary consideration it is with lasers, but the thickness and distribution of fat in the area very much are.",
+      cannotDo: [
+        "It is not a weight-loss treatment, not a treatment for obesity, and not a substitute for diet, exercise or medical weight management.",
+        "Not every pocket of fat is one an applicator can draw and hold.",
+        "It does not stop remaining fat cells enlarging with weight gain, which is why a stable weight matters.",
+      ],
+      disclose:
+        "Tell your doctor if you are or may be pregnant or breastfeeding, have a cold-related condition, a hernia, or any implant or device, take any medication, or have had previous body-contouring procedures.",
+    },
+
+    // T-13 — factors only, no figures (settled 2026-09-20).
+    costFactors: {
+      intro:
+        "Kaiteki does not quote prices online. Cost is quoted per applicator cycle once the doctor has seen which areas can actually be treated. What moves it:",
+      factors: [
+        "The areas being addressed.",
+        "The size of the fat pocket, and how many applicator placements it needs to cover.",
+        "The number of cycles each area requires.",
+        "Your individual response.",
+      ],
+    },
+
+    relatedReasons: {
+      "microwave-contouring":
+        "A microwave-based approach for localised fat, cellulite appearance and firmness, where cooling is not the method.",
+    },
+
     sections: [
       {
         heading: "What is fat freezing?",
@@ -1307,64 +1671,10 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How cryolipolysis works",
+        heading: "Why does cooling affect fat and not the skin around it?",
         body: [
           "Cryolipolysis is based on the idea that fat cells are more sensitive to cold than the surrounding skin, nerves and muscle. During a session, an applicator cools a defined area to a controlled low temperature for a set period.",
           "The aim is to affect fat cells within the treated pocket while limiting effect on nearby tissue. Any change develops gradually over the following weeks as the body processes the treated area. Settings and applicators are selected by the treating doctor, and results vary between individuals.",
-        ],
-      },
-      {
-        heading: "Devices we use",
-        body: [
-          "Kaiteki performs fat-freezing sessions using Cooltech, a cryolipolysis device. CoolSculpting, another cryolipolysis brand offered at Kaiteki, has its own dedicated page, as it is often searched for by name.",
-          "Naming a device is a factual description, not a claim that one performs better than another. The treating doctor selects the device and applicator suited to your treatment area and goals at consultation.",
-        ],
-      },
-      {
-        heading: "What it may help address",
-        body: [
-          "Fat freezing is commonly considered for localised areas of fat that persist despite diet and exercise. It is not a weight-loss treatment, and not every pocket of fat is one an applicator can draw and hold — a doctor examines the area before anything is booked.",
-        ],
-        list: [
-          "Lower-abdomen or \"muffin top\" fullness",
-          "Flank fat, sometimes called love handles",
-          "Back or bra-line fullness",
-          "Inner or outer thigh pockets",
-          "Under-chin fullness (assessed individually)",
-        ],
-      },
-      {
-        heading: "Suitability & who should avoid it",
-        body: [
-          "Fat freezing is not a weight-loss treatment and is not a substitute for a healthy diet and exercise. It is intended for people at or near a stable weight who have specific, pinchable pockets of fat rather than generalised weight to lose.",
-          "Suitability is assessed individually. Cryolipolysis may not be appropriate during pregnancy, with certain cold-related conditions, or with some medical histories. Please share your full medical history at consultation so the doctor can advise safely and explain the risks.",
-        ],
-      },
-      {
-        heading: "The session at Kaiteki",
-        body: [
-          "A typical visit begins with a doctor consultation and body assessment. If fat freezing is appropriate, the treatment area is marked and a protective gel pad and applicator are positioned over the pocket of fat.",
-          "The area is then cooled for a set period, and a short massage of the treated area may follow. More than one area or session may be discussed depending on your goals, but the plan is individual. Any change is gradual, because the body clears the treated cells over weeks rather than at the appointment.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
-          "Downtime is usually limited but varies between individuals. Temporary redness, firmness, tingling, numbness or mild tenderness in the treated area can occur and typically settle over time.",
-          "Most people are able to return to everyday activities after a session. Your doctor will give aftercare guidance specific to you and explain when any change might become noticeable.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
-        body: [
-          "As with any medical procedure, cryolipolysis carries risks, which are explained during consultation. Temporary effects can include redness, swelling, bruising, firmness and altered sensation in the treated area, which usually resolve.",
-          "Less common effects exist and are discussed with you before proceeding so you can make an informed decision. The treatment should be carried out by a trained doctor after an individual assessment.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The number of sessions and overall cost depend on the areas being addressed, the size of the fat pocket and your individual response. Cost is quoted per applicator cycle once the doctor has seen which areas can actually be treated, so it is confirmed at consultation rather than online. Message us on WhatsApp to arrange one.",
         ],
       },
     ],
@@ -1892,6 +2202,165 @@ export const treatments: Treatment[] = [
         caption: "Ellansé — the manufacturer's mark for the polycaprolactone stimulator.",
       },
     ],
+    // docs/15 item 3.6 (2026-10-11): the v2 block set, applied under docs/16 R1.
+    // Two prose sections kept; the rest became typed blocks and were deleted.
+    // Block copy is restructured from reviewed text only: this page, the Sculptra, Radiesse and Ellansé pages,
+    // and the concern pages' treatmentWhy lines. No new claim, no figure. The
+    // re-arrangement goes to Dr Yeong Bin in the offline review round, which is why
+    // `lastReviewed` is unchanged.
+    typicalSessions: "A short course, spaced several weeks apart",
+    facts: [
+      { value: "Gradual by design", label: "Supports your own collagen rather than adding volume on the day" },
+      { value: "15–30 minutes", label: "Typical injecting appointment" },
+      { value: "Assessment first", label: "Your first visit is a doctor consultation, not a treatment" },
+    ],
+
+    // T-06 — from the concern pages' reviewed treatmentWhy lines.
+    routes: [
+      {
+        title: "Gradual collagen rebuilding over months",
+        body: "An injectable that prompts the skin to produce its own collagen rather than adding volume directly. Change is deliberately slow, which some people prefer and others find frustrating.",
+        links: [{ href: "/concerns/face-lifting", label: "Read about face lifting" }],
+      },
+      {
+        title: "Rebuilding structure rather than filling",
+        body: "An injectable that prompts your own collagen production over months instead of adding volume immediately. Suits people who want change to arrive slowly and are willing to wait for it.",
+        links: [{ href: "/concerns/aging", label: "Ageing skin" }],
+      },
+    ],
+    routesNote:
+      "Some injectables sit within the tissue to provide structural fill; bio-stimulators are formulated to work more gradually. Which approach is appropriate depends on the individual.",
+
+    // T-07 — the former "Types of bio-stimulator" section (R1).
+    variantModule: {
+      heading: "Sculptra, Radiesse or Ellansé: which material, and why",
+      intro:
+        "Several bio-stimulator products may be used, each with a different base material and characteristics. Product selection is made by the doctor based on the individual assessment.",
+      items: [
+        {
+          eyebrow: "Poly-L-lactic acid · Galderma",
+          title: "Sculptra",
+          body: "Reconstituted before use and intended to act as a gradual collagen stimulus over a course of sessions. The reconstituting fluid is absorbed within days, so early appearance is not the treatment effect.",
+          href: "/technology/sculptra",
+          hrefLabel: "About Sculptra",
+        },
+        {
+          eyebrow: "Calcium hydroxylapatite · Merz",
+          title: "Radiesse",
+          body: "Support from the gel carrier when it is placed, then a collagen and elastin response as the microspheres are resorbed, with manufacturer-cleared use on the hands and décolletage as well as the face.",
+          href: "/technology/radiesse",
+          hrefLabel: "About Radiesse",
+        },
+        {
+          eyebrow: "Polycaprolactone · Sinclair",
+          title: "Ellansé",
+          body: "Support from the carrier gel when it is placed, plus a collagen response as the PCL microspheres are resorbed, supplied in variants that differ in how long the microspheres take to clear.",
+          href: "/technology/ellanse",
+          hrefLabel: "About Ellansé",
+        },
+        {
+          eyebrow: "Collagen-based",
+          title: "Deusaderm",
+          body: "A collagen-based injectable intended to support skin quality, structure and elasticity.",
+        },
+      ],
+      note: "None of these can be dissolved the way a hyaluronic acid filler can, which is why assessment beforehand matters.",
+    },
+
+    ctaMid: {
+      heading: "Not sure whether you need a filler or a bio-stimulator?",
+      body: "Both are injectables, but one adds volume directly and the other supports your own gradual renewal. A doctor can tell you which your concern calls for. Free consultation, no obligation.",
+    },
+
+    // T-09 — this page and the three product pages.
+    avoidIf: [
+      { lead: "Pregnancy or breastfeeding.", body: "Treatment is deferred." },
+      { lead: "Active infection or inflammation", body: "in the treatment area." },
+      { lead: "A history of keloid or hypertrophic scarring.", body: "" },
+      { lead: "Bleeding disorders or blood-thinning medication.", body: "" },
+      { lead: "Autoimmune or connective-tissue conditions.", body: "" },
+      {
+        lead: "Previous permanent or semi-permanent implants",
+        body: "in the same area.",
+      },
+    ],
+    bringToConsult:
+      "Please share your full medical history, any allergies, your medication list and any past injectable or surgical treatments at consultation so the doctor can determine whether the treatment is appropriate for you.",
+
+    // T-10 — step 1 states the first visit is not a treatment.
+    sessionSteps: [
+      {
+        title: "Consultation and assessment",
+        body: "Your first visit is a consultation, not a treatment. The doctor assesses your skin, confirms suitability, discusses the realistic time course and selects the product.",
+      },
+      {
+        title: "Preparation",
+        body: "The skin is cleansed and prepared, and topical or local anaesthetic is used for comfort.",
+      },
+      {
+        title: "The injections",
+        body: "The doctor administers the injections into the assessed areas. The injecting itself usually takes a relatively short time: most of the appointment is assessment, preparation and aftercare.",
+      },
+      {
+        title: "Afterwards",
+        body: "The doctor may massage the treated area and will explain aftercare. A common approach is a short course of sessions spaced several weeks apart, with the specifics determined at consultation.",
+      },
+    ],
+
+    // T-11 — injection site, the first days, review.
+    afterSession: {
+      intro: "Downtime is generally minimal, though this varies between individuals.",
+      bands: [
+        {
+          title: "At the injection sites",
+          body: "Mild swelling, redness or tenderness may occur and usually settles within a few days. Bruising can occasionally take longer to fade, which is worth planning around if you have an event coming up.",
+        },
+        {
+          title: "The first days",
+          body: "Avoid pressure or vigorous facial treatments on the area for a short period, and follow any massage instructions given.",
+        },
+        {
+          title: "Review",
+          body: "Because change develops over months, review appointments matter more here than with an immediate-result treatment. Keep them, and raise anything unexpected with the clinic rather than waiting.",
+        },
+      ],
+      aftercare:
+        "The doctor will provide aftercare guidance specific to your treatment. Follow any instructions given, and contact the clinic if you have concerns.",
+    },
+
+    // T-12
+    risks: {
+      intro:
+        "As with any injectable treatment, bio-stimulators carry potential risks and side effects, which the doctor explains before any treatment proceeds.",
+      common: "Temporary redness, swelling, bruising or tenderness at the injection sites.",
+      lessCommon:
+        "Delayed-onset lumps or nodules have been reported with collagen-stimulating products, sometimes months after treatment, and rare but serious vascular complications are recognised for facial injectables in general.",
+      cannotDo: [
+        "It does not add volume on the day: change develops gradually over months.",
+        "It cannot be dissolved the way a hyaluronic acid filler can.",
+        "It is not permanent. The material is resorbed, and your own tissue continues to age.",
+      ],
+      disclose:
+        "Tell your doctor about any allergy, keloid or hypertrophic scarring, bleeding disorder or blood-thinning medication, autoimmune condition, and any previous injectable, implant or surgery in the area.",
+    },
+
+    // T-13 — factors only, no figures (settled 2026-09-20).
+    costFactors: {
+      intro:
+        "Kaiteki does not quote prices online, because the product and the plan are decided at consultation. What moves it:",
+      factors: [
+        "Which product the doctor selects for your assessment.",
+        "The area being addressed, and how much structural support has been lost.",
+        "The number of sessions in the course.",
+        "Whether periodic maintenance is part of the plan.",
+      ],
+    },
+
+    relatedReasons: {
+      "skin-booster":
+        "Injectable hydrating treatments for skin quality, where the concern is hydration rather than structure.",
+    },
+
     sections: [
       {
         heading: "What is a bio-stimulator?",
@@ -1901,69 +2370,10 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How it works",
+        heading: "How does a bio-stimulator work with your own collagen?",
         body: [
           "Bio-stimulators are delivered by injection into targeted layers of the skin. The formulation acts as a scaffold within the tissue, and the body is intended to respond by gradually renewing its own supporting structures around it.",
           "Because the process is gradual, bio-stimulators are typically approached as a course of sessions rather than a single treatment. How an individual responds, and how many sessions may be considered, varies between people and is assessed by the doctor.",
-        ],
-      },
-      {
-        heading: "Types of bio-stimulator",
-        body: [
-          "Several bio-stimulator products may be used, each with a different base material and characteristics. Product selection is made by the doctor based on the individual assessment. Common examples include:",
-        ],
-        list: [
-          "Radiesse: based on calcium hydroxylapatite (CaHA), a substance also found naturally in bone. It is used as a bio-stimulatory injectable with collagen-supporting properties.",
-          "Ellansé: based on polycaprolactone (PCL), a biocompatible material suspended in a gel carrier and used as a collagen-stimulating injectable.",
-          "Sculptra: based on poly-L-lactic acid (PLLA), a biocompatible material used to support the skin's gradual structural renewal over a course of sessions.",
-          "Deusaderm: a collagen-based injectable intended to support skin quality, structure and elasticity.",
-        ],
-      },
-      {
-        heading: "What it may help address",
-        body: [
-          "Bio-stimulators are most often considered for concerns relating to skin firmness and structural support. During consultation, the doctor discusses which concerns are relevant to you and whether this approach is suitable. Concerns for which they are commonly considered include:",
-        ],
-        list: [
-          "Loss of skin firmness and elasticity",
-          "Early laxity around the cheeks, jawline or temples",
-          "Fine lines associated with reduced skin support",
-          "Overall skin quality and structure",
-        ],
-      },
-      {
-        heading: "Suitability & who should avoid it",
-        body: [
-          "Bio-stimulators are not suitable for everyone. Suitability depends on your skin condition, medical history and treatment goals, all of which the doctor assesses before any treatment is carried out.",
-          "As a general guide, injectable treatments are usually not appropriate during pregnancy or breastfeeding, where there is active infection or inflammation in the treatment area, or where there are certain skin or medical conditions. Please share your full medical history and any allergies at consultation so the doctor can determine whether the treatment is appropriate for you.",
-        ],
-      },
-      {
-        heading: "The session at Kaiteki",
-        body: [
-          "Bio-stimulator treatments at Kaiteki are injectables performed by a doctor. A typical session begins with a consultation and skin assessment, during which suitability is confirmed and the plan discussed.",
-          "The skin is then cleansed and prepared, and the doctor administers the injections into the assessed areas. The number of sessions and the interval between them varies between individuals; a common approach is a short course of sessions spaced several weeks apart, with the specifics determined at consultation.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
-          "Downtime is generally minimal. Mild swelling, redness or tenderness at the injection sites may occur and usually settles within a few days, though this varies between individuals.",
-          "The doctor will provide aftercare guidance specific to your treatment, which may include how to care for the treated area in the days following the session. Follow any instructions given, and contact the clinic if you have concerns.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
-        body: [
-          "As with any injectable treatment, bio-stimulators carry potential risks and side effects. These commonly include temporary redness, swelling, bruising or tenderness at the injection sites, and less commonly other reactions.",
-          "All potential risks and side effects relevant to you are explained by the doctor at consultation before any treatment proceeds, so that you can make an informed decision. Raise any questions or concerns during that discussion.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "Because bio-stimulator treatment is tailored to the individual, the number of sessions and the product used depend on your assessment. Cost is discussed at consultation once the doctor has determined a suitable plan, as it varies with these factors.",
-          "To ask a question or arrange a consultation, message the clinic on WhatsApp to book a consultation, and the team will assist you.",
         ],
       },
     ],
@@ -2997,6 +3407,114 @@ export const treatments: Treatment[] = [
         caption: "Alma Lasers — the manufacturer's mark for the IPL and radiofrequency platform.",
       },
     ],
+    // docs/15 item 3.6 (2026-10-11): the v2 block set, applied under docs/16 R1.
+    // Two prose sections kept; the rest became typed blocks and were deleted.
+    // Block copy is restructured from reviewed text only: this page, the Alma page,
+    // (no concern page links to it, so there is no routing block). No new claim, no figure. The
+    // re-arrangement goes to Dr Lucas Chew in the offline review round, which is why
+    // `lastReviewed` is unchanged.
+    typicalSessions: "A course, spaced with the growth cycle",
+    facts: [
+      { value: "IPL and radiofrequency", label: "Two energies on the Alma platform" },
+      { value: "15–45 minutes", label: "Typical session, depending on the area" },
+      { value: "Assessment first", label: "Your first visit is a consultation, not a treatment" },
+    ],
+
+    ctaMid: {
+      heading: "Not sure whether your hair and skin suit light-based removal?",
+      body: "Hair colour, skin tone and the reason for the growth all change what a course can reasonably do. A doctor can tell you what is realistic before you commit. Free consultation, no obligation.",
+    },
+
+    // T-09 — this page and the Alma page.
+    avoidIf: [
+      { lead: "Pregnancy.", body: "Treatment is deferred." },
+      { lead: "Recently tanned or sunburnt skin.", body: "" },
+      { lead: "Tattoos or permanent makeup", body: "in the area to be treated." },
+      { lead: "Active infection, inflammation or open skin", body: "in the area." },
+      {
+        lead: "Light-sensitive conditions, keloid scarring, or photosensitising medication,",
+        body: "which your clinician goes through with you.",
+      },
+    ],
+    bringToConsult:
+      "Please share your full medical, medication and hair-removal history at consultation, including recent waxing, plucking or threading. Hormonal causes of excess hair growth may need investigating alongside treatment.",
+
+    // T-10 — step 1 states the first visit is not a treatment.
+    sessionSteps: [
+      {
+        title: "Consultation and assessment",
+        body: "Your first visit is a consultation, not a treatment. The treatment area, hair type and skin tone are assessed, and a test area may be considered first.",
+      },
+      {
+        title: "Before the session",
+        body: "You will usually be asked to shave shortly beforehand rather than wax or pluck, because the hair above the skin should be short while the follicle below stays intact.",
+      },
+      {
+        title: "The treatment",
+        body: "The area is cleansed and the cooled applicator is moved over it in repeated passes, building warmth gradually. Most people describe spreading warmth rather than the snap of a stamping device.",
+      },
+      {
+        title: "Afterwards",
+        body: "A course of several sessions spaced a few weeks apart is common, reflecting the hair-growth cycle, but the plan is individual.",
+      },
+    ],
+
+    // T-11 — physical recovery only.
+    afterSession: {
+      intro: "Downtime is usually minimal.",
+      bands: [
+        {
+          title: "Straight afterwards",
+          body: "Temporary redness, warmth or mild sensitivity in the treated area can occur and typically settles within a few hours to a day.",
+        },
+        {
+          title: "The following weeks",
+          body: "Treated hairs may appear to grow out for a week or two before shedding.",
+        },
+        {
+          title: "Between sessions",
+          body: "You can shave, but waxing, plucking, threading and depilatory creams are normally avoided because they remove the follicle contents the light needs to target.",
+        },
+      ],
+      aftercare:
+        "Sun protection is advised on treated areas between sessions; your clinician will give aftercare guidance specific to you.",
+    },
+
+    // T-12
+    risks: {
+      intro:
+        "As with any energy-based procedure, Laser Hair Removal carries risks, which are explained during consultation.",
+      common: "Redness, swelling or changes in pigmentation.",
+      lessCommon:
+        "Blistering, burns, folliculitis and, rarely, paradoxical stimulation of fine hair in some areas. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained clinician.",
+      pigmentNote:
+        "Light-based hair removal generally works best where there is more contrast between hair and skin pigment. Alma describes its low-fluence, high-repetition delivery with a cooled applicator tip as usable on darker skin, but recently tanned skin is generally not treated.",
+      cannotDo: [
+        "It is not permanent removal. It reduces hair over a course of sessions, and some regrowth or maintenance sessions may be needed over time.",
+        "One session cannot do it, because only follicles in their active growth phase respond to any one session.",
+        "Very light, grey or white hair contains little pigment for light to target on any platform.",
+      ],
+      disclose:
+        "Tell your clinician if you are pregnant, have recent tanning, tattoos or permanent makeup in the area, a light-sensitive condition or keloid tendency, or take photosensitising medication.",
+    },
+
+    // T-13 — factors only, no figures (settled 2026-09-20).
+    costFactors: {
+      intro:
+        "Kaiteki does not quote prices online. Courses are priced by area across a series rather than per visit, and the series is set at consultation. What moves it:",
+      factors: [
+        "The area treated.",
+        "Your hair type: colour, thickness and density.",
+        "Your individual response across the course.",
+        "Whether maintenance sessions are needed afterwards.",
+      ],
+    },
+
+    relatedReasons: {
+      "exosome-therapy":
+        "A regenerative preparation applied to the scalp alongside medical hair-loss treatment: for hair loss, not unwanted hair.",
+    },
+
     sections: [
       {
         heading: "What is Laser Hair Removal?",
@@ -3006,54 +3524,10 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "How it works",
+        heading: "Why does hair removal need a course of sessions?",
         body: [
           "The device delivers IPL energy combined with radiofrequency to the treatment area. The light energy is intended to be absorbed by pigment in the hair follicle, while the radiofrequency component adds a further energy pathway to the follicle, which may support the treatment's effect on the hair-growth cycle.",
           "Because hair follicles cycle through active and resting phases, a single session only affects follicles that are in an active growth phase at the time. A course of sessions over time is intended to address more of the follicles across their cycle. Results vary between individuals and hair and skin type.",
-        ],
-      },
-      {
-        heading: "What it may help address",
-        body: [
-          "Laser Hair Removal is commonly considered for reducing unwanted hair in the areas below. Hair colour, skin tone and the reason for the growth all change what a course can reasonably do, and sometimes the honest answer is that the growth needs investigating first.",
-        ],
-        list: [
-          "Underarm hair",
-          "Leg and arm hair",
-          "Facial hair, assessed individually",
-          "Other body areas, assessed at consultation",
-        ],
-      },
-      {
-        heading: "Suitability & who should avoid it",
-        body: [
-          "Suitability is assessed individually and depends partly on hair colour and skin tone, as light-based hair removal generally works best on hair with more pigment. It may not be appropriate during pregnancy, on recently tanned skin, over certain skin conditions, or with some medications that increase light sensitivity.",
-          "Please share your full medical and skincare history at consultation so the clinician can advise safely.",
-        ],
-      },
-      {
-        heading: "The session at Kaiteki",
-        body: [
-          "A typical visit begins with a consultation and assessment of the treatment area, hair type and skin tone. The area is cleansed and, if appropriate, the device is passed over the area to deliver the combined IPL and radiofrequency energy.",
-          "A course of several sessions spaced a few weeks apart is common, reflecting the hair-growth cycle, but the plan is individual. Your clinician will explain what to expect for you.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
-          "Downtime is usually minimal. Temporary redness, warmth or mild sensitivity in the treated area can occur and typically settles within a few hours to a day. Sun protection is advised on treated areas between sessions; your clinician will give aftercare guidance specific to you.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
-        body: [
-          "As with any energy-based procedure, Laser Hair Removal carries risks, which are explained during consultation. Temporary effects can include redness, swelling or changes in pigmentation. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained clinician.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The number of sessions and overall cost depend on the area treated, hair type and your individual response, reflecting the hair-growth cycle. Because only hair in its active growth phase responds to a given session, courses are priced by area across a series rather than per visit, and the series is set at consultation. Message us on WhatsApp to arrange one.",
         ],
       },
     ],
