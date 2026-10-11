@@ -528,8 +528,8 @@
       "key": "concerns/birthmark/image-how-birthmarks-form.jpg",
       "concern": "birthmark",
       "family": "figure",
-      "width": 1016,
-      "height": 1012
+      "width": 1600,
+      "height": 800
     },
     {
       "source": "concerns/birthmark/image-marks-to-watch.jpg",
@@ -537,7 +537,7 @@
       "concern": "birthmark",
       "family": "figure",
       "width": 1600,
-      "height": 1300
+      "height": 800
     },
     {
       "source": "concerns/birthmark/image-slate-grey-patch.jpg",
@@ -545,7 +545,7 @@
       "concern": "birthmark",
       "family": "figure",
       "width": 1024,
-      "height": 773
+      "height": 512
     },
     {
       "source": "concerns/birthmark/procedure-01.jpg",

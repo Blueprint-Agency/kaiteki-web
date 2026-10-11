@@ -5677,9 +5677,8 @@ export const concerns: Concern[] = [
       { id: "faq", label: "FAQ" },
     ],
 
-    // ── 03 · no causes block on this concern (registry note): a birthmark is
-    // something a person is born with, not something with triggers to avoid.
-    // The explanatory weight sits in these sections instead.
+    // ── 03 · a birthmark has no triggers to avoid, so the drivers block below is
+    // framed as what a doctor reads in the mark, not as causes.
     sections: [
       {
         heading: "What is a birthmark?",
@@ -5717,6 +5716,41 @@ export const concerns: Concern[] = [
           "In babies and young children the priority is diagnosis and, often, waiting. Some marks fade, some need a paediatric opinion, and a small number are associated with conditions elsewhere in the body, such as several café-au-lait patches together or a port-wine stain across the forehead and eyelid. These are referred for assessment before anything cosmetic is discussed.",
           "In adults the question is usually different: the mark has been stable for years and the person would like it lighter or less noticeable. Here a doctor confirms the type, checks that it has not changed, and explains honestly how that type tends to respond, including when the answer is that it responds poorly.",
         ],
+      },
+    ],
+
+    // ── 04 · what the assessment reads, one figure per item (pairs by position).
+    drivers: {
+      heading: "What a doctor looks at first",
+      intro:
+        "Three things decide whether a birthmark is a candidate for treatment at all, and which laser would even be relevant.",
+      items: [
+        {
+          lead: "Which structure it is made of.",
+          body: "Pigmented birthmarks come from clusters of melanocytes, the pigment cells in the upper layer of skin. Vascular birthmarks come from blood vessels in the dermis below. Each absorbs a different wavelength of light, which is why the type is confirmed before anything else.",
+        },
+        {
+          lead: "How deep the colour sits.",
+          body: "Pigment near the surface looks brown; pigment deeper in the dermis looks blue or grey. A slate-grey patch over an infant's lower back is usually a Mongolian spot, which is common in Asian babies and normally fades during childhood without treatment.",
+        },
+        {
+          lead: "Whether it is changing.",
+          body: "A mole or mark that is growing, darkening or becoming raised is examined and monitored rather than lasered, because laser can hide the changes a doctor needs to see.",
+        },
+      ],
+    },
+    figures: [
+      {
+        src: "https://cdn.kaiteki.my/concerns/birthmark/image-how-birthmarks-form.jpg",
+        caption: "Cross-section of skin: pigment cells (melanocytes) sit in the upper layer, blood vessels deeper in the dermis. Diagram: National Cancer Institute, public domain.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/birthmark/image-slate-grey-patch.jpg",
+        caption: "A slate-grey Mongolian spot on an infant's lower back. Photo: abby lu, CC BY 2.0, via Wikimedia Commons.",
+      },
+      {
+        src: "https://cdn.kaiteki.my/concerns/birthmark/image-marks-to-watch.jpg",
+        caption: "A mole being examined. Moles are monitored for change, not treated for appearance.",
       },
     ],
 
