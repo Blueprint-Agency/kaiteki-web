@@ -20,7 +20,7 @@ export const concerns: Concern[] = [
     slug: "acne",
     name: "Acne",
     group: "Skin",
-    image: "/images/concerns/acne.jpg",
+    image: "https://cdn.kaiteki.my/images/concerns/acne.jpg",
     summary:
       "Active breakouts and old scarring respond to different treatments. A doctor identifies the type and cause before recommending a plan.",
     leadAnswer:
@@ -621,7 +621,7 @@ export const concerns: Concern[] = [
     slug: "acne-scars",
     name: "Acne Scars",
     group: "Skin",
-    image: "/images/concerns/acne-scars.jpg",
+    image: "https://cdn.kaiteki.my/images/concerns/acne-scars.jpg",
     summary:
       "Acne scars are a change in the skin's structure, not its colour, and the type of scar decides what is likely to help. A doctor assesses which types you have.",
     leadAnswer:
@@ -997,7 +997,7 @@ export const concerns: Concern[] = [
     slug: "pigmentation",
     name: "Pigmentation",
     group: "Skin",
-    image: "/images/concerns/pigmentation.jpg",
+    image: "https://cdn.kaiteki.my/images/concerns/pigmentation.jpg",
     summary:
       "Melasma, sun spots and post-inflammatory marks each behave differently. The right laser or treatment depends on which type you have.",
     leadAnswer:
@@ -1473,7 +1473,7 @@ export const concerns: Concern[] = [
     slug: "melasma",
     name: "Melasma",
     group: "Skin",
-    image: "/images/concerns/melasma.jpg",
+    image: "https://cdn.kaiteki.my/images/concerns/melasma.jpg",
     summary:
       "Melasma is managed rather than cured, and the wrong laser can darken it. A doctor confirms it is melasma, and how deep it sits, before anything is used.",
     leadAnswer:
@@ -1489,13 +1489,9 @@ export const concerns: Concern[] = [
     // with FLUX.2 Pro to the banner shape), approved by the owner 2026-10-11. Not a
     // patient and not a result; the alt says so. Uploaded by hand: the source
     // binaries are pbanner_melasma(.jpg|_sm.jpg) for the media export folder.
-    // Temporarily served from public/ (see below).
     banner: {
-      // Served from public/ until the owner uploads to R2 (2026-10-11). Then switch
-      // back to https://cdn.kaiteki.my/concerns/melasma/banner(-sm).jpg, delete the
-      // two public/ files and the TEMP_LOCAL_MEDIA entries in validate-concerns.
-      src: "/images/concerns/melasma-banner.jpg",
-      sm: "/images/concerns/melasma-banner-sm.jpg",
+      src: "https://cdn.kaiteki.my/concerns/melasma/banner.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/melasma/banner-sm.jpg",
       alt: "Illustrative photograph: a person with soft brown melasma patches across both cheeks, touching one cheek",
     },
 
@@ -1555,25 +1551,24 @@ export const concerns: Concern[] = [
     // ── 04 media · one figure per cause, in the order of `drivers.items` (Q-19).
     // AI-generated illustrative photographs (Higgsfield Soul 2.0, outpainted with
     // FLUX.2 Pro to 2:1), 2026-10-11. Captions are the page's own reviewed copy.
-    // Served from public/ until uploaded to R2 (see TEMP_LOCAL_MEDIA).
     figures: [
       {
-        src: "/images/concerns/melasma-cause-uv.jpg",
+        src: "https://cdn.kaiteki.my/concerns/melasma/cause-uv.jpg",
         caption:
           "Malaysia's equatorial sun is the primary trigger: even brief unprotected time outdoors can darken existing patches.",
       },
       {
-        src: "/images/concerns/melasma-cause-hormones.jpg",
+        src: "https://cdn.kaiteki.my/concerns/melasma/cause-hormones.jpg",
         caption:
           "Pregnancy is one of the most common settings in which melasma first appears, which is why it is sometimes called the mask of pregnancy.",
       },
       {
-        src: "/images/concerns/melasma-cause-genetics.jpg",
+        src: "https://cdn.kaiteki.my/concerns/melasma/cause-genetics.jpg",
         caption:
           "If close family members have melasma, your pigment cells are more likely to react strongly to the same triggers.",
       },
       {
-        src: "/images/concerns/melasma-cause-heat.jpg",
+        src: "https://cdn.kaiteki.my/concerns/melasma/cause-heat.jpg",
         caption:
           "Heat from cooking can aggravate melasma even where sunscreen is being used properly.",
       },
@@ -1815,7 +1810,7 @@ export const concerns: Concern[] = [
     slug: "enlarged-pores",
     name: "Enlarged Pores",
     group: "Skin",
-    image: "/images/concerns/enlarged-pores.jpg",
+    image: "https://cdn.kaiteki.my/images/concerns/enlarged-pores.jpg",
     summary:
       "Visible pores are often tied to oil production, texture or age. Treatment options range from lasers to skin boosters, matched to the cause.",
     leadAnswer:
@@ -1886,7 +1881,7 @@ export const concerns: Concern[] = [
     slug: "fine-lines-wrinkles",
     name: "Fine Lines & Wrinkles",
     group: "Face",
-    image: "/images/concerns/fine-lines-wrinkles.jpg",
+    image: "https://cdn.kaiteki.my/images/concerns/fine-lines-wrinkles.jpg",
     summary:
       "Lines that appear when you move and lines that stay at rest need different approaches. A doctor assesses which type you have before recommending treatment.",
     leadAnswer:
@@ -2353,7 +2348,7 @@ export const concerns: Concern[] = [
     slug: "dark-eye-circles",
     name: "Dark Eye Circles",
     group: "Eyes",
-    image: "/images/concerns/dark-eye-circles.jpg",
+    image: "https://cdn.kaiteki.my/images/concerns/dark-eye-circles.jpg",
     summary:
       "Dark circles can come from pigment, blood vessels or hollowing under the eye. The treatment depends entirely on which cause is behind yours.",
     leadAnswer:
@@ -2794,7 +2789,7 @@ export const concerns: Concern[] = [
     slug: "face-contouring",
     name: "Face Contouring",
     group: "Face",
-    image: "/images/concerns/face-contouring.jpg",
+    image: "https://cdn.kaiteki.my/images/concerns/face-contouring.jpg",
     summary:
       "Jawline definition, cheek volume and facial proportions can be refined without surgery. A doctor plans the approach based on your facial structure.",
     leadAnswer:
@@ -3234,7 +3229,7 @@ export const concerns: Concern[] = [
     slug: "face-lifting",
     name: "Face Lifting",
     group: "Face",
-    image: "/images/concerns/face-lifting.jpg",
+    image: "https://cdn.kaiteki.my/images/concerns/face-lifting.jpg",
     summary:
       "Sagging along the jawline, neck or mid-face can be addressed with non-surgical lifting options. A doctor assesses the degree of laxity first.",
     leadAnswer:
@@ -3687,7 +3682,7 @@ export const concerns: Concern[] = [
     slug: "aging",
     name: "Aging",
     group: "Skin",
-    image: "/images/concerns/aging.jpg",
+    image: "https://cdn.kaiteki.my/images/concerns/aging.jpg",
     summary:
       "Firmness, texture and volume change at different rates. A doctor maps what's happening with your skin before building a plan.",
     leadAnswer:
@@ -4138,7 +4133,7 @@ export const concerns: Concern[] = [
     ctaAssesses: "the areas you’re concerned about",
     name: "Body Slimming",
     group: "Hair & Body",
-    image: "/images/concerns/body-slimming.jpg",
+    image: "https://cdn.kaiteki.my/images/concerns/body-slimming.jpg",
     summary:
       "Stubborn fat in specific areas can be targeted without surgery. These are body-contouring treatments, not weight-loss solutions.",
     leadAnswer:
@@ -4468,7 +4463,7 @@ export const concerns: Concern[] = [
     ctaAssesses: "your scalp",
     name: "Hair Loss",
     group: "Hair & Body",
-    image: "/images/concerns/hair-loss.jpg",
+    image: "https://cdn.kaiteki.my/images/concerns/hair-loss.jpg",
     summary:
       "Thinning, receding and patchy hair loss each have different causes. A doctor evaluates your pattern before recommending whether treatment can help.",
     leadAnswer:
@@ -4815,7 +4810,7 @@ export const concerns: Concern[] = [
     ctaAssesses: "your tattoo",
     name: "Tattoo Removal",
     group: "Skin",
-    image: "/images/concerns/tattoo-removal.jpg",
+    image: "https://cdn.kaiteki.my/images/concerns/tattoo-removal.jpg",
     summary:
       "Ink colour, depth and skin tone all affect how removal works. A doctor assesses your tattoo before estimating what to expect.",
     leadAnswer:
@@ -5159,7 +5154,7 @@ export const concerns: Concern[] = [
     ctaAssesses: "your birthmark",
     name: "Birthmark",
     group: "Skin",
-    image: "/images/concerns/birthmark.jpg",
+    image: "https://cdn.kaiteki.my/images/concerns/birthmark.jpg",
     summary:
       "Not all birthmarks respond to treatment the same way. A doctor evaluates the type, depth and location before discussing options.",
     leadAnswer:
@@ -5216,7 +5211,7 @@ export const concerns: Concern[] = [
     ctaAssesses: "the affected skin",
     name: "Vascular Lesions",
     group: "Skin",
-    image: "/images/concerns/vascular-lesions.jpg",
+    image: "https://cdn.kaiteki.my/images/concerns/vascular-lesions.jpg",
     summary:
       "Visible blood vessels, redness and broken capillaries can have different causes. A doctor identifies yours before recommending a treatment path.",
     leadAnswer:
@@ -5276,7 +5271,7 @@ export const concerns: Concern[] = [
     ctaAssesses: "the affected areas",
     name: "Excessive Sweating",
     group: "Skin",
-    image: "/images/concerns/excessive-sweating.jpg",
+    image: "https://cdn.kaiteki.my/images/concerns/excessive-sweating.jpg",
     summary:
       "Sweating that disrupts daily life can often be managed. A doctor assesses your pattern and severity to determine which approach fits.",
     leadAnswer:

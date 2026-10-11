@@ -11,7 +11,7 @@ export const doctors: Doctor[] = [
     credentials: "MD, LCP Board Certified, MAC, AAAM",
     mmc: "MMC 64964",
     role: "Founder & CEO, Aesthetic Physician",
-    photo: "/images/doctors/dr-jessie-lim.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-jessie-lim.jpg",
     branches: [],
     bio: [
       "Dr Jessie Lim is a LCP certified aesthetic doctor. She obtained her medical degree from University Putra Malaysia with honours. She then went on to pursue her post-graduate certification in Aesthetics in Medical Aesthetic Certification Programme and American Academy of Aesthetic Medicine (AAAM).",
@@ -29,7 +29,7 @@ export const doctors: Doctor[] = [
     credentials: "MBBS, LCP Board Certified, MAC, MSAM",
     mmc: "MMC 68232",
     role: "Co-Founder & Senior Medical Director",
-    photo: "/images/doctors/dr-chew-yuhhui.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-chew-yuhhui.jpg",
     branches: [],
     bio: [
       "Allow your passion to become your purpose and it will one day become your profession.",
@@ -47,7 +47,7 @@ export const doctors: Doctor[] = [
     credentials: "MBBS, LCP Board Certified, MAC, MSAM",
     mmc: "MMC 78238",
     role: "Co-Founder & Senior Medical Director",
-    photo: "/images/doctors/dr-yeong-bin.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-yeong-bin.jpg",
     branches: [],
     bio: [
       "Dr Yeong Bin earned his Bachelor of Medicine & Surgery (MBBS) from Monash University. He began his career as a doctor and completed his 2 years compulsory service in government hospitals, obtaining and sharpening his skills along the way as a medical officer in various departments.",
@@ -64,7 +64,7 @@ export const doctors: Doctor[] = [
     credentials: "MD, LCP Board Certified, MAC",
     mmc: "MMC 68812",
     role: "Partner, Aesthetic Physician",
-    photo: "/images/doctors/dr-william-yap.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-william-yap.jpg",
     branches: [],
     bio: [
       "Dr William Yap obtained his Medical Degree (MD) from University of Gahjah Mada. After completing his compulsory house officer training, he continued his 6 years journey in government hospital as medical officer. He has been rotating in different subdepartment including dermatology, infectious disease, cardiology, etc to enhance his skills and knowledge.",
@@ -81,7 +81,7 @@ export const doctors: Doctor[] = [
     credentials: "MBBS, LCP Board Certified, GCFM, MAC",
     mmc: "MMC 74662",
     role: "Partner, Aesthetic Physician",
-    photo: "/images/doctors/dr-lim-xiao-chien.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-lim-xiao-chien.jpg",
     branches: [],
     bio: [
       "Dr Lim Xiao Chien graduated from Jawaharlal Nehru Medical College, KLE University in India with a degree in Bachelor of Medicine and Bachelor of Surgery (MBBS).",
@@ -99,7 +99,7 @@ export const doctors: Doctor[] = [
     credentials: "MBBS, MAC, LCP Board Certified",
     mmc: "MMC 91193",
     role: "Partner, Aesthetic Physician",
-    photo: "/images/doctors/dr-jeremy-low.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-jeremy-low.jpg",
     branches: [],
     bio: [
       "Dr Jeremy graduated with a Bachelor of Medicine & Surgery (MBBS) from Newcastle University Medicine Malaysia. After completing his compulsory housemanship, he served as a medical officer in the Dermatology department and undergone training under a renowned dermatologist. He has vast knowledge and experience in dealing with a broad spectrum of skin conditions such as acne, rosacea and pigmentation. Dr Jeremy is also a distinguished speaker for several dermatology workshops associated with acne. With his years of experience in the hospital treating patients, improving their well-being and appearances, Dr Jeremy decided to venture into aesthetic medicine, aiming to broaden his horizons and achieve new heights in this field.",
@@ -115,7 +115,7 @@ export const doctors: Doctor[] = [
     credentials: "MD, OHD (NIOSH), MAC",
     mmc: "MMC 64526",
     role: "Wellness Physician",
-    photo: "/images/doctors/dr-chang-chee-seong.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-chang-chee-seong.jpg",
     branches: [],
     bio: [
       "Dr Chang Chee Seong graduated from Kursk State Medical University with an M.D. and after serving the public sector, pursued his post graduate diploma in Occupational Health with NIOSH.",
@@ -132,7 +132,7 @@ export const doctors: Doctor[] = [
     credentials: "MBBS, LCP Board Certified, MSc (UCSI)",
     mmc: "MMC 83965",
     role: "Aesthetic Physician",
-    photo: "/images/doctors/dr-jacqueline-tan.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-jacqueline-tan.jpg",
     branches: [],
     bio: [
       "Dr. Jacqueline Tan graduated from IMU with a Bachelor of Medicine & Surgery (MBBS). She started her career as a doctor and has completed her 2 years compulsory service as a house officer in government hospital. She continued her medical journey as a medical officer in the Emergency Department to enhance her skill and experience in resuscitation. Being involved in emergency cases, her nature is being calm, empathic and determined.",
@@ -149,7 +149,7 @@ export const doctors: Doctor[] = [
     credentials: "MBBS, AAAM, LCP Board Certified",
     mmc: "MMC 90047",
     role: "Aesthetic Physician",
-    photo: "/images/doctors/dr-joaan-kong.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-joaan-kong.jpg",
     branches: [],
     bio: [
       "Dr Joaan Kong obtained her Bachelor of Medicine and Surgery (MBBS) from International Medical University (IMU). She then trained as a Paediatric doctor before embarking her journey in aesthetic medicine. Her training in the paediatric department has refined her skills in needle handling and detailed meticulous work.",
@@ -166,7 +166,7 @@ export const doctors: Doctor[] = [
     credentials: "MBBS, MAC, LCP Certified",
     mmc: "MMC 77677",
     role: "Aesthetic Physician",
-    photo: "/images/doctors/dr-tim-chua.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-tim-chua.jpg",
     branches: [],
     bio: [
       "Dr Tim Chua graduated from Taylor's University with an MBBS. Years of working experience as a medical officer in otorhinolaryngology has equipped him with the relevant skills to deal with both medical and surgical cases.",
@@ -182,7 +182,7 @@ export const doctors: Doctor[] = [
     credentials: "MD, MAC",
     mmc: "MMC 71657",
     role: "Aesthetic Physician",
-    photo: "/images/doctors/dr-calvin-tan.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-calvin-tan.jpg",
     branches: [],
     bio: [
       "Dr Calvin is a passionate medical doctor with a Medical Degree from Universiti Sains Malaysia (USM). He has over 9 years of experience in the medical industry where he worked in Orthopaedic Surgery as a medical officer then he pursued his interest into medical aesthetics. With a strong foundation in surgical training, he has acquired the hands on dexterity and precision that he can bring that experience into the field of medical aesthetics.",
@@ -199,7 +199,7 @@ export const doctors: Doctor[] = [
     credentials: "MBBS",
     mmc: "MMC 103677",
     role: "Aesthetic Physician",
-    photo: "/images/doctors/dr-lucas-chew.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-lucas-chew.jpg",
     branches: [],
     bio: [
       "Dr. Lucas Chew is a committed aesthetic physician holding a Bachelor of Medicine and Bachelor of Surgery (MBBS) from Taylor's University. He is dedicated to delivering personalized, evidence-based treatments aimed at enhancing skin health and natural beauty. Dr. Lucas is passionate about maintaining a leading role in advancements in aesthetic medicine to provide safe, high-quality healthcare solutions.",
@@ -216,7 +216,7 @@ export const doctors: Doctor[] = [
     credentials: "MBBS, LCP Board Certified",
     mmc: "MMC 60253",
     role: "Aesthetic Physician",
-    photo: "/images/doctors/dr-jade.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-jade.jpg",
     branches: [],
     bio: [
       "Dr Jade obtained her Medical Degree from Russian State Medical University (Moscow). After serving her compulsory service with the government, she moved on to continue her services in the Emergency Department before subsequently moving on to serve in the interior towns of Sarawak.",
@@ -233,7 +233,7 @@ export const doctors: Doctor[] = [
     credentials: "MD, MAC",
     mmc: "MMC 87513",
     role: "Aesthetic Physician",
-    photo: "/images/doctors/dr-teresa-tan.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-teresa-tan.jpg",
     branches: [],
     bio: [
       "Dr. Teresa Tan earned her Medical Degree (MD) from Lincoln University College and initially pursued a career in Obstetrics and Gynecology (O&G). This valuable experience honed her precision and meticulousness in needle handling, skills that translate seamlessly to aesthetic medicine.",
@@ -250,7 +250,7 @@ export const doctors: Doctor[] = [
     credentials: "MD, GCFM, OHD, MAC, LCP Certified",
     mmc: "MMC 50809",
     role: "Aesthetic Physician",
-    photo: "/images/doctors/dr-chin-wei-horng.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-chin-wei-horng.jpg",
     branches: [],
     bio: [
       "Dr. Chin is a medical doctor with over 10 years experience in clinical practice, dedicated to helping patients look and feel their best through safe, effective, and personalised treatments. He graduated from Crimea State Medical University and gained valuable clinical experience in emergency medicine and psychiatry during his compulsory service, forming a strong foundation in patient care.",
@@ -266,7 +266,7 @@ export const doctors: Doctor[] = [
     credentials: "MD, MAC, LCP Certified",
     mmc: "MMC 86640",
     role: "Aesthetic Physician",
-    photo: "/images/doctors/dr-yvonne-chuah.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-yvonne-chuah.jpg",
     branches: [],
     bio: [
       "Dr. Yvonne Chuah graduated from Nizhny Novgorod State Medical Academy (NNSMA). She began her medical career serving as a Medical Officer at Hospital Pulau Pinang, followed by further service at Hospital Sungai Bakap.",
@@ -285,7 +285,7 @@ export const doctors: Doctor[] = [
     credentials: "MD, PDAM (EIU)",
     mmc: "MMC 97231",
     role: "Aesthetic Physician",
-    photo: "/images/doctors/dr-jamie-gan.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-jamie-gan.jpg",
     branches: [],
     bio: [
       "Dr. Jamie obtained her medical degree from Kursk State Medical University, Russia. She subsequently completed her housemanship and served in the Emergency Department at Hospital Tuanku Jaafar, Seremban, where she developed strong clinical judgement, precision, and the ability to perform under pressure.",
@@ -302,7 +302,7 @@ export const doctors: Doctor[] = [
     credentials: "MBBS, MAC",
     mmc: "MMC 104167",
     role: "Aesthetic Physician",
-    photo: "/images/doctors/dr-jen-meng.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-jen-meng.jpg",
     branches: [],
     bio: [
       "Dr Jen Meng is an aesthetic medical doctor who graduated with Bachelor of Medicine, Bachelor of Surgery (MBBS) from Manipal Academy of Higher Education. With training in Plastic and Reconstructive Surgery, he has strong expertise in facial anatomy, skin health, and procedural safety.",
@@ -318,7 +318,7 @@ export const doctors: Doctor[] = [
     credentials: "MBBS, MAC",
     mmc: "MMC 104547",
     role: "Aesthetic Physician",
-    photo: "/images/doctors/dr-chloe-wan.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-chloe-wan.jpg",
     branches: [],
     bio: [
       "Dr Chloe graduated from Newcastle University Medicine Malaysia with a Bachelor of Medicine & Bachelor of Surgery (MBBS). She has a strong passion for aesthetic medicine and is dedicated to help patients achieve healthier, more confident skin through personalized and evidence-based treatments.",
@@ -335,7 +335,7 @@ export const doctors: Doctor[] = [
     credentials: "MBBS, MAC",
     mmc: "MMC 103512",
     role: "Aesthetic Physician",
-    photo: "/images/doctors/dr-say-wei-xian.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-say-wei-xian.jpg",
     branches: [],
     bio: [
       "Dr Say Wei Xian is a medical doctor, graduating from International Medical University (IMU). She spent her medical officer years in ophthalmology, where she developed strong precision through microsurgical and laser-based procedures.",
@@ -353,7 +353,7 @@ export const doctors: Doctor[] = [
     credentials: "MD",
     mmc: "MMC 64902",
     role: "Aesthetic Physician",
-    photo: "/images/doctors/dr-hong-peiyi.jpg",
+    photo: "https://cdn.kaiteki.my/images/doctors/dr-hong-peiyi.jpg",
     branches: [],
     bio: [
       "Dr Hong Peiyi graduated from Universiti Putra Malaysia (UPM) and subsequently completed advanced training in Family Medicine. With more than a decade of experience in primary care, she has developed a strong foundation in comprehensive and patient-centred healthcare.",

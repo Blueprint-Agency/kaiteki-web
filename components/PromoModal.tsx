@@ -64,7 +64,7 @@ export function PromoModal({ trigger }: { trigger?: string }) {
           ×
         </button>
         <Image
-          src="/images/promos/skincare-mix-match-699.jpg"
+          src="https://cdn.kaiteki.my/images/promos/skincare-mix-match-699.jpg"
           alt="Kaiteki Skincare Mix & Match promotion: RM699"
           width={1241}
           height={1755}
