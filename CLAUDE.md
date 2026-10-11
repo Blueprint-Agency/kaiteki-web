@@ -70,12 +70,40 @@ pnpm lint        # ESLint
 pnpm typecheck   # tsc --noEmit
 ```
 
-Content/redirect/blog tooling (`validate:content`, `test:redirects`, `blog:export`) is specced in `docs/07 §16` and added as those scripts are built. `well-known/` is excluded in `tsconfig.json` and `turbopack.root` is pinned in `next.config.ts` (both required for a clean build).
+Content and media tooling (all in `package.json`):
+
+```bash
+pnpm validate:content    # no placeholder values in ledger-displayed content
+pnpm validate:refs       # cross-refs + every card image listed in config/site-media.json
+pnpm validate:concerns   # concern/treatment page rules (Q-xx); add --live to HEAD every CDN URL
+pnpm test:redirects      # 301 map
+pnpm check:blog          # blog authoring contract (content/blog/AUTHORING.md)
+pnpm check:sameness      # cross-page sameness (docs/16)
+pnpm check:cost          # cost-factor copy
+pnpm audit:concern-media / audit:treatment-media   # source-folder audit (macOS: uses sips)
+pnpm sync:concern-media / sync:treatment-media     # upload to R2 (--dry-run first)
+pnpm blog:manifest / blog:import / blog:redirects  # legacy WordPress migration
+```
+
+**Images live in Cloudflare R2** (bucket `kaiteki-web-prod`, served from `https://cdn.kaiteki.my`), not `public/`. Only SEO-pinned files stay local: `public/brand/` (schema logo), `public/images/hero/` (site-wide OG image), app icons, and the `public/ads/` landing bundle. A new image goes up to R2 and its URL into the data file; card images also get a key in `config/site-media.json`. R2 creds are in `.env.local` (see `.env.example`).
+
+`well-known/` is excluded in `tsconfig.json` and `turbopack.root` is pinned in `next.config.ts` (both required for a clean build).
 
 ## Git
 
 - Branch off before substantial work; commit when the user asks.
-- Commit message trailer:
-  ```
-  Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
-  ```
+- No AI attribution: no `Co-Authored-By: Claude` trailer in commits, no "Generated with Claude" line in PR bodies.
+
+## Agent skills
+
+### Issue tracker
+
+Issues live in GitHub Issues on `Blueprint-Agency/kaiteki-web` (via the `gh` CLI). See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default vocabulary: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: one root `GLOSSARY.md` (created lazily) plus `docs/adr/`. See `docs/agents/domain.md`.
