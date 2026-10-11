@@ -104,6 +104,17 @@
       "status": "pending"
     },
     {
+      "slug": "melasma",
+      "category": "Skin",
+      "archetype": "A",
+      "depth": "lite",
+      "treatments": 3,
+      "technologies": 0,
+      "reviewer": "Dr Joaan Kong (proposed, unsigned)",
+      "lastReviewed": "2026-10-11",
+      "status": "pending"
+    },
+    {
       "slug": "enlarged-pores",
       "category": "Skin",
       "archetype": "B",
