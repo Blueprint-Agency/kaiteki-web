@@ -47,8 +47,8 @@ export interface Treatment {
   slug: string;
   name: string;
   category: NavCategory;
-  /** Photo under https://cdn.kaiteki.my/images/treatments/. Optional — treatments without one
-   *  fall back to the generated motif until real photography lands. */
+  /** Hero + card photo, https://cdn.kaiteki.my/treatments/<slug>/hero.jpg (Media Sync).
+   *  Optional — treatments without one fall back to the generated motif. */
   image?: string;
   /** One compliant sentence — used on cards, hubs and meta. */
   summary: string;
@@ -143,6 +143,9 @@ export interface Treatment {
    *  information. Sources are 156×156 icons and the cell is capped there:
    *  upscaling an icon is visibly soft (Q-19). */
   steps?: { label: string; src: string; body: string }[];
+  /** Kaiteki's own photos of this treatment being performed — the treatment
+   *  twin of `Concern.visitImages`. A device in use, never an outcome. */
+  procedureImages?: { src: string; caption: string }[];
   /** T-17 one-line reason per related treatment slug, framed around what this
    *  treatment does NOT do. */
   relatedReasons?: Record<string, string>;

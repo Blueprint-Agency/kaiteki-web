@@ -23,6 +23,7 @@ import {
   SuitabilityBlock,
   SessionBlock,
   StepsBlock,
+  ProcedurePhotos,
   AfterSession,
   RisksBlock,
   CostFactors,
@@ -316,6 +317,9 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
 
         {/* The illustrated procedure sequence, where one is authored. */}
         <StepsBlock steps={t.steps} />
+
+        {/* Kaiteki's own procedure photos. */}
+        <ProcedurePhotos images={t.procedureImages} />
 
         {/* T-11 */}
         <AfterSession a={t.afterSession} />
