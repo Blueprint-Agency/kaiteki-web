@@ -194,8 +194,23 @@ function treatmentMediaUrls(t: Treatment): [string, string][] {
  * Q-14 / Q-15 — media lives on the page type's CDN prefix, and only where its
  * manifest says something will exist. Either failure is a 404 in production.
  */
+/**
+ * Q-14 exceptions, each one temporary and named. A file here is served from public/
+ * because it has not reached R2 yet; it is reported as a warning on every run until
+ * it moves, so the exception cannot be forgotten. Remove the entry when it does.
+ */
+const TEMP_LOCAL_MEDIA = new Set([
+  // melasma banner, approved 2026-10-11, owner uploading to R2 later
+  "/images/concerns/melasma-banner.jpg",
+  "/images/concerns/melasma-banner-sm.jpg",
+]);
+
 function checkMedia(slug: string, entries: [string, string][], m: ReturnType<typeof uploadable>) {
   for (const [url, field] of entries) {
+    if (TEMP_LOCAL_MEDIA.has(url)) {
+      warnings.push(`${slug} · Q-14: ${field} "${url}" is served from public/ temporarily — move it to ${m.publicBase}`);
+      continue;
+    }
     if (!url.startsWith(m.publicBase)) {
       fail(slug, "Q-14", `${field} "${url}" is not on ${m.publicBase}`);
     } else if (!m.live.has(url)) {

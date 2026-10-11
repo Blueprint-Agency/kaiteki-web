@@ -126,7 +126,7 @@ function Reading({
   return (
     <Container>
       <div className="lg:grid lg:grid-cols-[15rem_1fr] lg:items-start lg:gap-16">
-        <aside className="hidden lg:sticky lg:top-24 lg:block">{rail}</aside>
+        <aside className="hidden lg:sticky lg:top-24 lg:mt-14 lg:block">{rail}</aside>
         <div className="min-w-0">{children}</div>
       </div>
     </Container>
@@ -208,7 +208,10 @@ export function ConcernView({ c }: { c: Concern }) {
             </Container>
           </div>
         ) : (
-          <Container className="pt-6">
+          // No banner and no reviewer byline (an unsigned page) leaves the CTA
+          // line as the header's last child, sitting on the divider; the
+          // byline's own padding is what normally separates them.
+          <Container className={review ? "pt-6" : "pt-6 pb-10 sm:pb-12"}>
             <div className="max-w-[52ch]">
               <p className="kicker">Concern · {c.group}</p>
               <h1 className="h-hero mt-4">{c.name}</h1>
