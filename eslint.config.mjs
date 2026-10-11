@@ -14,6 +14,10 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
     // Legacy site reference dump — excluded in tsconfig.json for the same reason.
     "well-known/**",
+    // design-sync tooling: shims, staged converters and generated bundles, not app code.
+    ".design-sync/**",
+    ".ds-sync/**",
+    "ds-bundle/**",
   ]),
 ]);
 
