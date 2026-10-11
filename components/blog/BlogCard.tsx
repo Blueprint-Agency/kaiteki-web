@@ -124,6 +124,7 @@ export function BlogCard({
                 <span className="ledger">{author.fullName}</span>
               </span>
             )}
+            {!author && post.authorName && <span className="ledger">{post.authorName}</span>}
             <ArrowRight
               size={16}
               className="shrink-0 text-accent transition-transform group-hover:translate-x-0.5"
