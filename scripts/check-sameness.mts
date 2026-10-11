@@ -52,7 +52,7 @@ const GENERIC_MIN_PAGES = 5;
 const BUDGET: Record<string, number> = {
   // 2026-09-20 baseline — lower these as pages are differentiated. Target: 0.
   technology: 0, // 2026-10-11: all 36 differentiated (docs/15 3.2). Target reached; hold.
-  treatments: 12, // 2026-09-28: + ultherapy, microneedling, exosome-therapy (docs/15 2.3)
+  treatments: 7, // 2026-10-11: + batch C, five treatments (docs/15 3.6)
   concerns: 0,
 };
 
