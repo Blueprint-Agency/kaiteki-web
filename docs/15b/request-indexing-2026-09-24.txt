@@ -25,3 +25,8 @@ https://kaiteki.my/technology/xerf
 https://kaiteki.my/technology/wonderface          ?
 https://kaiteki.my/technology/cooltech
 https://kaiteki.my/technology/fotona-sp-dynamis
+
+--- ADDED 2026-10-11 (docs/15 3.7) ---
+https://kaiteki.my/technology/plinest           (was indexed 24 Sep; now "Crawled - currently not indexed", last crawled 06 Sep)
+
+« Status 11 Oct: juvederm, ultracel-q, lifthera, xerf still "Discovered - currently not indexed"; wonderface still unknown. »

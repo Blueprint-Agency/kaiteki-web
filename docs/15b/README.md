@@ -89,3 +89,71 @@ Google already serves. What changes is the reason for doing it, and some of the 
 
 **Decided 2026-09-24:** all three recommendations accepted, recorded as D1–D3 in `docs/15`. The request queue
 is [`request-indexing-2026-09-24.txt`](request-indexing-2026-09-24.txt).
+
+---
+
+## 3.7 · Ranking check, 2026-10-11 (re-scoped by D2)
+
+> Data file: [`ranking-check-2026-10-11.csv`](ranking-check-2026-10-11.csv), one row per technology page with its
+> arm, its last-crawled date from live URL Inspection on 11 Oct, and both windows.
+
+**Verdict: no measurable effect yet, in either direction.** The rewrite has not visibly helped or hurt
+ranking. Ten days of data on pages with a handful of clicks each cannot separate a real effect from noise.
+Re-run at 4.5 with a 28-day after-window.
+
+### How it was pulled
+
+| | |
+|---|---|
+| Source | Search Console API, `sc-domain:kaiteki.my`, Web, country = Malaysia, dimension `page` |
+| Before | **18–27 Sep** (10 days). Starts after the injectables were indexed on 6–7 Sep, so indexing does not contaminate it |
+| After | **29 Sep – 8 Oct** (10 days). 8 Oct was the latest date with data on 11 Oct |
+| Rewrite live | 28 Sep, injectables 05:42 UTC and lifting 06:04 UTC (deploy runs for `a136ec8`, `91c8849`) |
+
+### The design changed once the data was in
+
+The plan compared "rewritten" against "not yet rewritten". That turned out to be the wrong cut: **Google had
+re-read only some of the rewritten pages**. A page Google has not re-crawled is still being ranked on its
+old text, so it cannot show an effect of the new one. URL Inspection gave each page's last crawl date, and
+the rewritten pages split into three groups:
+
+| Arm | Pages | Clicks | Impressions | Impression-weighted position | Median position change per page |
+|---|---|---|---|---|---|
+| **A · rewritten, re-crawled since 28 Sep** | 12: profhilo, juvelook, hydrodeluxe, botox, ellanse, restylane, belotero, art-filler, sylfirm-x, morpheus8, potenza, btl-exilis | 10 → 11 | 1,507 → 1,918 (+27%) | 11.8 → 11.7 | −1.3 |
+| B · rewritten, not re-crawled | 5: rejuran, plinest, sculptra, radiesse (re-crawled 9 Oct, after the window), ultherapy-system | 3 → 1 | 702 → 337 (−52%) | 19.8 → 45.3 | −3.7 |
+| **C · control, untouched until 11 Oct** | 14: the 7 lasers, 4 body devices, 2 facials, alma | 39 → 35 | 2,507 → 2,992 (+19%) | 11.8 → 16.3 | −1.3 |
+| C without onda-coolwaves | 13 (onda is 27 of the 39 control clicks) | 12 → 13 | 1,841 → 2,312 (+26%) | 14.2 → 19.5 | −2.5 |
+
+Five rewritten pages are in no arm because Google has never crawled them: juvederm, ultracel-q, lifthera, xerf
+(all *Discovered – currently not indexed*) and wonderface (*URL is unknown to Google*).
+
+### Reading it
+
+- **Impressions rose in both A and C by about the same amount.** That points to a site-wide or seasonal lift,
+  not to the rewrite.
+- **The weighted position favours A** (held at 11.7 while C slipped to 16.3). But the median per-page change is
+  identical (−1.3), so the weighted gap comes from which pages happened to gain impressions at low positions
+  (fractional-co2 alone added 347 impressions at position 24), not from the rewrite.
+- **One page moved sharply:** ellansé, re-crawled 5 Oct, went from 69 impressions at position 24.7 to 284 at
+  7.4. One page is an anecdote, not evidence.
+- **Arm B's fall has nothing to do with the rewrite.** Google never saw the new text on those pages. Rejuran and
+  Plinest both collapsed on **26 Sep, two days before the rewrite shipped**; see below.
+
+### Three things found on the way, more useful than the test
+
+1. **Plinest has been dropped from the index.** On 24 Sep it was indexed; on 11 Oct it reads *Crawled –
+   currently not indexed*, last crawled 6 Sep. Google dropped it without re-reading it. Added to the request
+   queue below.
+2. **The legacy blog owns the injectable brand searches.** For queries containing "rejuran", 25 Aug – 8 Oct,
+   the results are almost entirely `blog.kaiteki.my` posts: *rejuran healer* 4,099 impressions, *plinest vs
+   rejuran* about 1,300 spread across one post's anchor URLs, *juvelook vs rejuran* 213. `/technology/rejuran`
+   barely appears. The new technology pages are competing with the old subdomain for the same queries.
+   **This is the strongest argument yet for finishing the blog migration (03b T3) with 301s from the
+   subdomain**, so that authority consolidates on one URL per topic.
+3. **1.6 has not worked.** Of the 7 technology URLs queued on 24 Sep, juvederm, ultracel-q, lifthera and
+   xerf are still *Discovered – currently not indexed* and wonderface is still unknown to Google. Either the
+   requests were not made, or Google has not acted on them. To confirm with the client.
+
+Side note: Google reports a failing *Product snippets* rich result on `/technology/botox`. The page declares
+schema.org `Drug`, correctly for a prescription medicine, and Google treats `Drug` as a kind of Product, then
+fails it for having no price or review. No issue is listed and it does not affect ranking; no change made.

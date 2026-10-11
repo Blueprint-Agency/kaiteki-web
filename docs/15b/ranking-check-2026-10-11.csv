@@ -1,0 +1,37 @@
+slug,batch,arm,last_crawled_2026_10_11,clicks_before,impressions_before,position_before,clicks_after,impressions_after,position_after
+profhilo,injectables,A_reread,2026-09-29,0,187,15.7,1,156,13.9
+rejuran,injectables,B_not_reread,2026-09-06,1,149,16.2,0,0,
+plinest,injectables,B_not_reread,2026-09-06 (dropped from index),0,289,16.2,0,0,
+juvelook,injectables,A_reread,2026-10-01,0,480,8.4,2,328,10.6
+hydrodeluxe,injectables,A_reread,2026-09-29,0,27,15.5,0,28,11.9
+botox,injectables,A_reread,2026-09-28,0,127,17.3,0,101,19.0
+sculptra,injectables,B_not_reread,2026-09-16,2,118,15.4,1,94,19.1
+ellanse,injectables,A_reread,2026-10-05,1,69,24.7,0,284,7.4
+radiesse,injectables,B_not_reread,2026-10-09,0,63,7.4,0,31,8.5
+juvederm,injectables,not_indexed,never (discovered, not indexed),0,0,,0,0,
+restylane,injectables,A_reread,2026-09-29,0,99,7.7,1,97,10.7
+belotero,injectables,A_reread,2026-09-29,1,85,8.9,0,74,10.2
+art-filler,injectables,A_reread,2026-10-02,3,14,7.6,0,21,14.8
+ultracel-q,lifting,not_indexed,never (discovered, not indexed),0,0,,0,0,
+lifthera,lifting,not_indexed,never (discovered, not indexed),0,0,,0,0,
+ultherapy-system,lifting,B_not_reread,2026-09-19,0,83,54.3,0,212,62.3
+xerf,lifting,not_indexed,never (discovered, not indexed),0,0,,0,0,
+sylfirm-x,lifting,A_reread,2026-09-29,1,101,18.3,3,427,12.7
+morpheus8,lifting,A_reread,2026-09-29,0,3,11.3,0,41,33.6
+potenza,lifting,A_reread,2026-10-04,4,315,9.5,4,361,9.9
+btl-exilis,lifting,A_reread,2026-10-03,0,0,,0,0,
+wonderface,lifting,not_indexed,never (unknown to Google),0,0,,0,0,
+picosure,control,C_control,n/a (rewritten 11 Oct),1,154,14.4,1,195,23.6
+fotona-pqx,control,C_control,n/a (rewritten 11 Oct),0,7,6.3,2,64,9.9
+fotona-sp-dynamis,control,C_control,n/a (rewritten 11 Oct),0,0,,0,0,
+dermav,control,C_control,n/a (rewritten 11 Oct),3,19,4.4,2,27,3.6
+pro-yellow,control,C_control,n/a (rewritten 11 Oct),1,43,6.4,1,57,7.3
+m22-ipl,control,C_control,n/a (rewritten 11 Oct),3,61,9.9,0,46,7.2
+fractional-co2,control,C_control,n/a (rewritten 11 Oct),0,305,22.8,1,652,24.1
+coolsculpting,control,C_control,n/a (rewritten 11 Oct),1,959,13.0,3,831,17.7
+cooltech,control,C_control,n/a (rewritten 11 Oct),0,0,,0,0,
+onda-coolwaves,control,C_control,n/a (rewritten 11 Oct),27,666,5.1,22,680,5.5
+schwarzy,control,C_control,n/a (rewritten 11 Oct),0,0,,0,0,
+hydrafacial,control,C_control,n/a (rewritten 11 Oct),1,53,10.5,2,159,24.4
+silkpeel,control,C_control,n/a (rewritten 11 Oct),2,218,12.2,1,268,16.7
+alma,control,C_control,n/a (rewritten 11 Oct),0,22,11.4,0,13,9.4
