@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { CSSProperties } from "react";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { waLink } from "@/lib/wa";
 
@@ -80,5 +81,54 @@ export function AskCta({
         />
       </div>
     </aside>
+  );
+}
+
+/**
+ * A staged timeline (recovery, a course of sessions). Rendered as a real <ol>
+ * so every stage is crawlable text, never baked into an image: Google and
+ * answer engines cannot read words inside a picture. Stacks vertically on
+ * mobile and runs across on wider screens. `mark` fills a stage's dot to flag
+ * the milestones worth noticing.
+ */
+export function Timeline({
+  steps,
+  caption,
+}: {
+  steps: { when: string; label: string; body: string; mark?: boolean }[];
+  caption?: string;
+}) {
+  return (
+    <figure className="mt-8 rounded-2xl bg-tint p-6 ring-1 ring-hairline sm:p-8">
+      <ol
+        className="grid gap-7 md:grid-cols-[repeat(var(--steps),minmax(0,1fr))] md:gap-5"
+        style={{ "--steps": steps.length } as CSSProperties}
+      >
+        {steps.map((s, i) => (
+          <li key={s.when} className="relative pl-8 md:pl-0 md:pt-9">
+            <span
+              aria-hidden
+              className={`absolute left-0 top-1 size-4 rounded-full border-2 border-mocha md:top-0 ${s.mark ? "bg-mocha" : "bg-page"}`}
+            />
+            {i < steps.length - 1 && (
+              <span
+                aria-hidden
+                className="absolute bottom-[-1.75rem] left-[7px] top-6 w-px bg-sand md:bottom-auto md:left-6 md:right-[-1.25rem] md:top-[7px] md:h-px md:w-auto"
+              />
+            )}
+            <p className="font-display text-lg font-medium leading-tight text-espresso">{s.when}</p>
+            <p className="mt-1.5 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-accent">
+              {s.label}
+            </p>
+            <p className="mt-2 text-[0.9375rem] leading-relaxed text-ink-700">{s.body}</p>
+          </li>
+        ))}
+      </ol>
+      {caption && (
+        <figcaption className="mt-6 border-t border-hairline pt-4 text-[0.8125rem] leading-snug text-ink-500">
+          {caption}
+        </figcaption>
+      )}
+    </figure>
   );
 }

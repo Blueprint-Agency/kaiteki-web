@@ -1,6 +1,6 @@
 import type { MDXComponents } from "mdx/types";
 import Link from "next/link";
-import { AskCta, Figure } from "@/components/blog/blocks";
+import { AskCta, Figure, Timeline } from "@/components/blog/blocks";
 
 /**
  * Brand styling for MDX bodies (currently /blog only). @next/mdx looks this file
@@ -98,6 +98,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     // with no import line. See content/blog/AUTHORING.md.
     Figure,
     AskCta,
+    Timeline,
     ...components,
   };
 }

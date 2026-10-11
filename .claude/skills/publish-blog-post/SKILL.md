@@ -110,4 +110,6 @@ gh pr create --base main                 # then stop
 
 Staging holds one post at a time: the branch is cut from `main`, so the force-push makes staging exactly main plus this post, and the next post overwrites it.
 
+In-body illustrations follow the house style in `AUTHORING.md` §3 ("House illustration style"): prompt template there, terracotta line art on cream, no text in the image. A staged sequence (timeline, course of sessions) is a `<Timeline>` block, never an image.
+
 Never run `pnpm build` here. It cannot finish in a sandbox (Google Fonts fetch is blocked) and CI runs it on the PR in about 40 seconds.
