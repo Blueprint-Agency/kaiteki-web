@@ -1804,7 +1804,13 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "What will CoolSculpting not do?",
+        body: [
+          "CoolSculpting is not a weight-loss treatment and is not a substitute for diet, exercise or medical management of weight. It is intended for people close to their target weight who have specific, pinchable pockets of fat.",
+        ],
+      },
+      {
+        heading: "Which areas can a CoolSculpting applicator fit?",
         body: [
           "CoolSculpting is commonly considered for localised fat in areas where a suitable applicator can be fitted. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
         ],
@@ -1817,41 +1823,38 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Which conditions rule out CoolSculpting?",
         body: [
-          "CoolSculpting is not a weight-loss treatment and is not a substitute for diet, exercise or medical management of weight. It is intended for people close to their target weight who have specific, pinchable pockets of fat.",
           "It may not be appropriate during pregnancy, with certain cold-related conditions, or with some medical histories. Please share your full medical history at consultation so the doctor can assess suitability and explain the risks before any treatment is planned.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What does a CoolSculpting cycle feel like, and is there downtime?",
         body: [
           "A visit begins with a doctor assessment of the area and your goals. If treatment is appropriate, the area is marked, a gel pad is applied to protect the skin, and the applicator is positioned.",
           "Each applicator cycle typically runs for around 35 to 60 minutes, during which you may feel cold and some pulling or pressure that usually eases. A short massage of the treated area may follow. The number of areas and applicators is individual, so overall visit time varies.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
           "Downtime is usually limited, and many people return to daily activities the same day, though this varies. Temporary redness, swelling, firmness, tenderness or altered sensation in the treated area can occur and typically settles over days to weeks.",
           "Your doctor will give aftercare guidance specific to you. Any change to the area develops gradually over the weeks and months that follow.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "What are the risks of freezing fat with CoolSculpting?",
         body: [
           "As with any medical procedure, cryolipolysis carries risks, which are explained during consultation. Common temporary effects include redness, swelling, bruising, firmness, tingling or numbness in the treated area.",
           "Less common effects exist and are discussed individually. Serious effects are uncommon when the treatment is appropriately selected and performed under a trained doctor's care.",
         ],
       },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The number of areas, applicators and sessions depends on your concern and how your body responds, so a plan is individual. Cost depends on these factors and is discussed at consultation rather than quoted online, so any estimate reflects your actual plan.",
-          "Message us on WhatsApp to arrange a consultation, where suitability is assessed and the risks are explained before anything is planned.",
-        ],
-      },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. What moves it:",
+      factors: [
+        "The number of areas.",
+        "The number of applicators each area needs.",
+        "The number of sessions.",
+        "How your body responds.",
+      ],
+    },
     faqs: [
       {
         q: "Is CoolSculpting a weight-loss treatment?",
@@ -1897,7 +1900,6 @@ export const technology: Technology[] = [
         heading: "What is Cooltech?",
         body: [
           "Cooltech is a non-invasive cryolipolysis (controlled-cooling) body-contouring platform developed by Cocoon Medical, a Barcelona-based aesthetic device manufacturer. It sits in the same category as other fat-freezing systems and is used within Kaiteki's fat freezing treatment to address pockets of localised fat that have not responded to diet and exercise. The manufacturer refers to the process as cryoadipolysis.",
-          "What distinguishes Cooltech for someone comparing devices is the applicator design. The manufacturer describes 360° cooling plates (cooling delivered around the drawn-in tissue rather than from a single contact plate) together with a range of applicator shapes and sizes, and the ability to run more than one applicator at the same time. In practice this means two areas, or two sides of a symmetrical area such as the flanks, may be addressed within the same appointment rather than across separate visits. Whether Cooltech is appropriate for you, and which areas can reasonably be addressed, is assessed by a doctor at an in-person consultation.",
         ],
       },
       {
@@ -1908,8 +1910,16 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "Why can Cooltech treat two areas at once?",
         body: [
+          "What distinguishes Cooltech for someone comparing devices is the applicator design. The manufacturer describes 360° cooling plates (cooling delivered around the drawn-in tissue rather than from a single contact plate) together with a range of applicator shapes and sizes, and the ability to run more than one applicator at the same time. In practice this means two areas, or two sides of a symmetrical area such as the flanks, may be addressed within the same appointment rather than across separate visits. Whether Cooltech is appropriate for you, and which areas can reasonably be addressed, is assessed by a doctor at an in-person consultation.",
+          "Being able to run applicators simultaneously can reduce the number of appointments for a multi-area plan, though it does not change the amount of treatment delivered.",
+        ],
+      },
+      {
+        heading: "Who is Cooltech for, if not for weight loss?",
+        body: [
+          "Cooltech is aimed at people who are close to a stable weight and have discrete, pinchable pockets of fat in specific areas. It is not a weight-loss treatment, not a treatment for obesity, and not a substitute for diet, exercise or medical weight management. If overall weight is your main concern, your doctor will discuss more appropriate options.",
           "Cooltech is commonly considered for defined pockets of pinchable fat in the areas below. It is a contouring option for localised areas, not a weight-loss treatment, and it is not suitable for everyone. A consultation determines whether it is appropriate for you.",
         ],
         list: [
@@ -1922,40 +1932,38 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Why do cold-related conditions and hernias rule out Cooltech?",
         body: [
-          "Cooltech is aimed at people who are close to a stable weight and have discrete, pinchable pockets of fat in specific areas. It is not a weight-loss treatment, not a treatment for obesity, and not a substitute for diet, exercise or medical weight management. If overall weight is your main concern, your doctor will discuss more appropriate options. Because it acts on fat below the skin rather than on pigment, skin tone is not the primary consideration it is with lasers, but the thickness and distribution of fat in the area very much are.",
+          "Because it acts on fat below the skin rather than on pigment, skin tone is not the primary consideration it is with lasers, but the thickness and distribution of fat in the area very much are.",
           "Cryolipolysis may not be appropriate during pregnancy or breastfeeding, with cold-related conditions such as cryoglobulinaemia, cold urticaria or paroxysmal cold haemoglobinuria, with hernias in or near the treatment area, over broken or infected skin, or with certain circulatory, nerve or liver conditions. Please share your full medical history, current medications, any implants or devices, and any previous body-contouring procedures at consultation so the doctor can advise safely.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What happens during a Cooltech cycle, and how sore is the area after?",
         body: [
           "A visit begins with a doctor consultation, an assessment of the area and a discussion of what is realistic for your body. If Cooltech is appropriate, the area is marked, a protective gel pad is applied, and the applicator is positioned and switched on. There is an initial period of intense cold and a firm pulling sensation from the suction, which commonly eases as the area becomes numb; most people sit or lie comfortably for the rest of the cycle. A single cooling cycle usually takes in the region of half an hour to an hour depending on the applicator and settings, and because more than one applicator can run at once, a plan covering two areas need not always mean two appointments.",
           "The applicator is removed at the end of the cycle and the area is massaged. Many areas are addressed with one or two cycles spaced several weeks or months apart, since the body needs that time to clear the affected cells before the outcome can be judged. Your doctor will set out a realistic schedule for your areas at consultation.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
           "There is generally no formal downtime and most people return to usual activities the same day, though this varies between individuals. Immediately after the applicator is removed the area often looks red and feels firm, cold or oddly numb, and this typically settles over the following hours to days.",
           "Temporary tenderness, swelling, tingling or a dull ache in the treated area can persist for a few days to a couple of weeks, and some people find loose clothing or a compression garment more comfortable during that period. Maintaining a stable weight with your usual diet and activity supports the contour you are working towards. Your doctor will give aftercare guidance specific to you.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "What is paradoxical adipose hyperplasia, and what other risks does Cooltech carry?",
         body: [
           "As with any medical procedure, cryolipolysis carries risks, which are explained during consultation. Temporary effects can include redness, swelling, bruising, firmness, numbness, tingling, itching or cramping in the treated area, and altered skin sensation that may take some weeks to normalise. Less common effects include lingering pain in the treated area and paradoxical adipose hyperplasia, in which the treated fat pocket firms and enlarges rather than reduces. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor, and your doctor will discuss how any complication would be managed.",
         ],
       },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The main drivers are how many areas you want addressed, the size of applicator each area needs, how many cooling cycles each area requires and how your body responds. Larger areas such as the abdomen may need several applicator placements to cover fully, while a small pocket may need only one. Being able to run applicators simultaneously can reduce the number of appointments for a multi-area plan, though it does not change the amount of treatment delivered.",
-          "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual areas and plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
-        ],
-      },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual areas and plan rather than a generic package. What moves it:",
+      factors: [
+        "How many areas you want addressed.",
+        "The size of applicator each area needs. Larger areas such as the abdomen may need several placements to cover fully, while a small pocket may need only one.",
+        "How many cooling cycles each area requires.",
+        "How your body responds.",
+      ],
+    },
     faqs: [
       {
         q: "Will Cooltech help me lose weight?",
@@ -2002,7 +2010,6 @@ export const technology: Technology[] = [
         heading: "What is Onda?",
         body: [
           "Onda is a non-invasive body- and face-contouring device that uses a microwave-based technology the manufacturer calls Coolwaves®. It is used to address localised fat, skin firmness and the appearance of cellulite on the body, and firmness of the face.",
-          "At Kaiteki, Onda is offered in two forms, Onda for Body and Onda for Face, using the same underlying technology at settings suited to each area. Whether it suits you depends on your concern, body area, skin and medical history, which a doctor assesses during consultation.",
         ],
       },
       {
@@ -2013,10 +2020,9 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "What it may help address: body & face",
+        heading: "Fat, cellulite or firmness: what does Onda act on?",
         body: [
           "Onda is commonly considered for the concerns below. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
-          "Onda for Body is used for localised fat and skin firmness, while Onda for Face uses a gentler approach for the face and jawline.",
         ],
         list: [
           "Body: localised fat on areas such as the abdomen and flanks (love handles), thighs and buttocks, upper arms, and the bra-line and back",
@@ -2027,38 +2033,44 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Onda for Body or Onda for Face, and is either for weight loss?",
         body: [
-          "Suitability is assessed individually. Onda is not a weight-loss treatment; it addresses localised areas rather than overall body weight. It may not be appropriate during pregnancy, with certain implants or medical devices in the treatment area, or with some skin or health conditions.",
+          "At Kaiteki, Onda is offered in two forms, Onda for Body and Onda for Face, using the same underlying technology at settings suited to each area. Whether it suits you depends on your concern, body area, skin and medical history, which a doctor assesses during consultation.",
+          "Onda for Body is used for localised fat and skin firmness, while Onda for Face uses a gentler approach for the face and jawline.",
+          "Onda is not a weight-loss treatment; it addresses localised areas rather than overall body weight.",
+        ],
+      },
+      {
+        heading: "Why do implants and medical devices matter before Onda?",
+        body: [
+          "Suitability is assessed individually. It may not be appropriate during pregnancy, with certain implants or medical devices in the treatment area, or with some skin or health conditions.",
           "Please share your full medical history and any devices or implants at consultation so the doctor can advise safely and confirm whether Onda, or another option, is right for you.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What does an Onda session involve, and is there downtime?",
         body: [
           "A typical visit begins with a doctor consultation and assessment of the area of concern. If Onda is appropriate, a handpiece is moved over the treatment area to deliver the energy while the surface is cooled.",
           "A course of several sessions spaced a few weeks apart is common, but the plan is individual and depends on the area and your response. Your doctor will explain what to expect for you.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
           "Downtime is usually limited, though this varies between individuals. Temporary warmth, redness or mild tenderness over the treated area can occur and typically settles. Most people are able to return to usual activities, and your doctor will give aftercare guidance specific to you.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "What side effects can Onda's microwave energy cause?",
         body: [
           "As with any medical procedure, Onda carries risks, which are explained during consultation. Temporary effects can include redness, swelling, warmth or tenderness in the treated area. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor.",
         ],
       },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The number of sessions and overall cost depend on the area being treated, the concern being addressed and your individual response. Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
-        ],
-      },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. What moves it:",
+      factors: [
+        "The area being treated, body or face.",
+        "The concern being addressed.",
+        "Your individual response, which sets how many sessions the course needs.",
+      ],
+    },
     faqs: [
       {
         q: "Is Onda a weight-loss treatment?",
@@ -2104,7 +2116,7 @@ export const technology: Technology[] = [
         heading: "What is Schwarzy?",
         body: [
           "Schwarzy is a non-invasive muscle-stimulation platform made by DEKA, an Italian medical laser and aesthetic device manufacturer. It uses a technology the manufacturer calls TOP FMS (Flat Magnetic Stimulation) to induce involuntary muscle contractions in a targeted area. At Kaiteki it is offered under the Em-Fit name as part of the muscle stimulation treatment, and it is used for muscle tone and definition, not for fat reduction.",
-          "That boundary is the most important thing to understand before booking. Schwarzy works on muscle: it is a toning modality, it is not a fat-reduction device, it is not a weight-loss treatment, and it is not a substitute for diet, exercise or medical weight management. Where fat is the concern, it is used alongside a separate fat-reduction approach rather than in place of one. What distinguishes it mechanically from a simple electrical stimulator is that the stimulus is magnetic rather than electrical, so it does not have to cross the resistance of the skin, and the manufacturer describes the field as deliberately flat and evenly distributed, without the intensity peaks associated with discomfort. Whether it is appropriate for you is assessed by a doctor at an in-person consultation.",
+          "What distinguishes it mechanically from a simple electrical stimulator is that the stimulus is magnetic rather than electrical, so it does not have to cross the resistance of the skin, and the manufacturer describes the field as deliberately flat and evenly distributed, without the intensity peaks associated with discomfort. Whether it is appropriate for you is assessed by a doctor at an in-person consultation.",
         ],
       },
       {
@@ -2115,8 +2127,9 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "Muscle, not fat: what does Schwarzy act on?",
         body: [
+          "Schwarzy works on muscle: it is a toning modality, it is not a fat-reduction device, it is not a weight-loss treatment, and it is not a substitute for diet, exercise or medical weight management. Where fat is the concern, it is used alongside a separate fat-reduction approach rather than in place of one.",
           "Schwarzy is commonly considered for muscle tone and definition in the areas below, usually where someone is already reasonably close to their target shape and wants more definition. It does not reduce fat and it does not tighten loose skin, and it is not suitable for everyone. A consultation determines whether it is appropriate for you.",
         ],
         list: [
@@ -2129,40 +2142,43 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Why does a layer of fat change what Schwarzy can do?",
         body: [
           "It is aimed at people whose concern is definition and tone rather than volume of fat. If a layer of fat sits over the muscle, strengthening what is underneath will not change what is above it. Your doctor may discuss pairing it with a separate fat-reduction treatment, or addressing that first. It is likewise not appropriate as a way of avoiding exercise or managing weight; it is best thought of as something that sits alongside your own activity.",
+        ],
+      },
+      {
+        heading: "Why do implants matter so much with a magnetic device?",
+        body: [
           "Because the technology is magnetic, metal and electronic implants matter a great deal. Schwarzy is generally not used in people with a cardiac pacemaker, implanted defibrillator, neurostimulator, drug pump, metal implants, plates, screws, coils or an intrauterine device in or near the treatment area, and it may not be appropriate during pregnancy, with epilepsy or seizure history, with a hernia in the area, with active infection or malignancy, or with certain heart, kidney or bleeding conditions. Please declare every implant, device and medication along with your full medical history at consultation so the doctor can advise safely.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "How does a Schwarzy session feel, and how sore are the muscles after?",
         body: [
           "A visit starts with a doctor consultation, an assessment of the area and a review of your implant and medical history, since that is the main gate on suitability. If Schwarzy is appropriate you stay fully clothed or lightly draped, the pad is positioned and secured over the target muscle group, and the intensity is raised gradually. You will feel the muscle tense and release repeatedly in a way that feels strange at first but not painful; there are no needles and no anaesthetic.",
           "A session commonly runs around half an hour per area, and treatment is typically planned as a course of several sessions over a few weeks, spaced so the muscle has time to recover between visits, much as you would space training. Occasional maintenance sessions afterwards are common, since muscle tone gained is not held indefinitely without ongoing stimulus or activity. Your doctor will set out a realistic schedule at consultation.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
           "There is generally no downtime and most people return to usual activities immediately, though this varies between individuals. The most common after-effect is muscle soreness in the treated area over the following day or two, similar to the ache after unfamiliar exercise, sometimes with a brief sensation of tightness or fatigue in the muscle.",
           "Staying hydrated, keeping up gentle movement and allowing the muscle a recovery day are usually advised, and your doctor will tell you how to space it around your own training. Aftercare guidance is given specific to you and the area treated.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "What are the risks of Schwarzy's muscle stimulation?",
         body: [
           "As with any medical procedure, Schwarzy carries risks, which are explained during consultation. Temporary effects can include muscle soreness, aching or cramping in the treated area, transient muscle fatigue, mild redness or warmth where the pad sat, and occasionally a temporary change in skin sensation. Serious effects are uncommon when the treatment is appropriately selected, particularly when implants, pregnancy and seizure history have been properly screened, and performed by a trained doctor, who will explain how any problem would be managed.",
         ],
       },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "Cost is driven by how many muscle groups you want addressed, how many sessions the plan calls for and whether maintenance sessions are included, since tone is not held indefinitely without ongoing stimulus. A single area over a short course sits at one end of the range; a multi-area plan with maintenance at the other. If your goals involve both fat and tone, the plan will likely combine treatments, and that combination is what determines the overall figure.",
-          "Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
-        ],
-      },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. What moves it:",
+      factors: [
+        "How many muscle groups you want addressed.",
+        "How many sessions the plan calls for.",
+        "Whether maintenance sessions are included, since tone is not held indefinitely without ongoing stimulus.",
+        "Whether your goals involve both fat and tone, in which case the plan combines treatments.",
+      ],
+    },
     faqs: [
       {
         q: "Does Schwarzy reduce fat or help with weight loss?",
@@ -3603,7 +3619,6 @@ export const technology: Technology[] = [
           heading: "What is Hydrafacial?",
           body: [
             "Hydrafacial is a device-based facial platform, used within Kaiteki's facial treatments. Rather than a therapist working purely by hand, a handpiece fitted with a spiral tip is drawn across the skin while the machine simultaneously delivers a solution and applies vacuum suction, so exfoliating, lifting debris out of pores and applying serum happen in the same pass. The manufacturer has described this simultaneous suction-and-delivery mechanism as Vortex-Fusion.",
-            "That mechanism is the practical difference from a traditional manual facial, where extraction is done by pressing on the skin and serums are applied afterwards. With a device, the depth of exfoliation is set by the tip and the pressure setting rather than by hand pressure, and debris is drawn away into a waste canister rather than being worked across the surface. It is a skin-quality and maintenance treatment, not a medical treatment for a diagnosed skin condition, and your doctor or therapist will assess whether it fits your skin at consultation.",
           ],
         },
         {
@@ -3614,9 +3629,15 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "What it may help address",
+          heading: "Device or hands: what changes with a Hydrafacial?",
           body: [
-            "Hydrafacial is commonly considered as a maintenance treatment for general skin quality and congestion. It is not a substitute for medical treatment of acne or pigmentation, and a consultation determines what is appropriate for you.",
+            "That mechanism is the practical difference from a traditional manual facial, where extraction is done by pressing on the skin and serums are applied afterwards. With a device, the depth of exfoliation is set by the tip and the pressure setting rather than by hand pressure, and debris is drawn away into a waste canister rather than being worked across the surface. It is a skin-quality and maintenance treatment, not a medical treatment for a diagnosed skin condition, and your doctor or therapist will assess whether it fits your skin at consultation.",
+          ],
+        },
+        {
+          heading: "When is a Hydrafacial not the right treatment?",
+          body: [
+            "Hydrafacial is commonly considered as a maintenance treatment for general skin quality and congestion. It is not a substitute for medical treatment of acne or pigmentation, and a consultation determines what is appropriate for you. If your congestion is really inflammatory acne, your doctor may recommend a medical treatment path instead.",
           ],
           list: [
             "Congested pores, blackheads and a rough surface texture",
@@ -3627,40 +3648,38 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "Suitability & who should avoid it",
+          heading: "Can sensitive skin have a Hydrafacial, and when should it wait?",
           body: [
             "Because the treatment does not use light or laser energy, it is generally suitable across skin tones, and the settings can be dialled down considerably for sensitive skin. It is often chosen by people who want regular upkeep with little disruption to their week, and it can be adapted for teenage congestion as well as mature, drier skin.",
             "It may not be appropriate over active inflamed or pustular acne, open or broken skin, active cold sores, sunburn, eczema or rosacea flares, or where you are using strong topical retinoids or have recently had a peel, laser or waxing in the area. It is also not advised for anyone with a known allergy to ingredients in the serums, and recent isotretinoin use needs to be declared. Please share your skincare routine, medications and full medical history so the treatment can be adjusted or deferred safely.",
           ],
         },
         {
-          heading: "The session at Kaiteki",
+          heading: "What does a Hydrafacial feel like, and how often is it repeated?",
           body: [
             "A visit starts with a skin assessment so that the tips, solutions and suction level can be matched to your skin, and any boosters discussed. The face is cleansed, then the handpiece is worked systematically across the face in sections. Most people find it comfortable: the usual description is a cool, wet feeling with a light tugging or vacuum sensation, particularly around the nose during extraction. There are no needles and no anaesthetic.",
             "A standard session commonly takes around 30 to 60 minutes depending on the steps and any add-ons included. Because it is a maintenance treatment, it is often repeated on a regular rhythm (monthly is a common pattern), rather than as a fixed course, and it is frequently scheduled alongside other treatments in a longer-term plan. Your doctor or therapist will suggest a realistic interval for your skin.",
-          ],
-        },
-        {
-          heading: "Downtime & aftercare",
-          body: [
             "Downtime is typically minimal, which is much of the appeal: most people go back to work or out the same day. Mild redness or a warm flush can occur for a short period afterwards, and skin that was congested may look a little pink where extraction was done.",
             "Keep skincare gentle for a day or two, hold off on strong actives such as retinoids and acids unless advised otherwise, and use daily sun protection. Your therapist will give aftercare guidance based on what was used in your session.",
           ],
         },
         {
-          heading: "Risks & side effects",
+          heading: "Can a Hydrafacial cause a breakout or a reaction?",
           body: [
             "Hydrafacial is a low-risk treatment for most people, but it is not risk-free and the considerations are explained beforehand. Temporary effects can include redness, mild sensitivity or tightness, small areas of irritation where extraction was firm, and occasionally a short-lived breakout as congestion clears. Reactions to serum ingredients are uncommon but possible, which is why your product history matters. Serious effects are uncommon when the treatment is appropriately selected and performed by trained staff under medical supervision.",
           ],
         },
-        {
-          heading: "Sessions & cost factors",
-          body: [
-            "What drives cost is the length of the session, which steps are included, whether targeted serum boosters or add-ons such as LED are used, and whether areas beyond the face, the neck, chest or back, are treated. Because it is maintenance rather than a one-off correction, the frequency you settle on also affects what you spend over a year.",
-            "Pricing is discussed at consultation rather than quoted online, so that any figure reflects the session actually recommended for your skin. Message us on WhatsApp to arrange a consultation.",
-          ],
-        },
       ],
+      costFactors: {
+        intro:
+          "Pricing is discussed at consultation rather than quoted online, so that any figure reflects the session actually recommended for your skin. What moves it:",
+        factors: [
+          "Which steps are included, and the length of the session.",
+          "Whether targeted serum boosters or add-ons such as LED are used.",
+          "Whether areas beyond the face, the neck, chest or back, are treated.",
+          "How often you choose to come in, since it is maintenance rather than a one-off correction.",
+        ],
+      },
       faqs: [
         {
           q: "How is Hydrafacial different from a normal facial?",
@@ -3705,7 +3724,7 @@ export const technology: Technology[] = [
         {
           heading: "What is Silkpeel?",
           body: [
-            "Silkpeel is a device-based facial built around the process its makers named Dermalinfusion, a closed handpiece that carries a diamond-abrasive tip, gentle negative pressure and a flow of topical solution all at once. The system originated with Envy Medical in the United States and the Dermalinfusion platform was later acquired by Allergan Aesthetics, which markets the current generation under the DiamondGlow® name; Silkpeel remains the name most clinics and patients in Malaysia know it by. It sits in the medical-facial category rather than the laser or energy category, so it is typically the entry point into a skincare plan rather than a resurfacing procedure.",
+            "Silkpeel is a device-based facial built around the process its makers named Dermalinfusion, a closed handpiece that carries a diamond-abrasive tip, gentle negative pressure and a flow of topical solution all at once. The system originated with Envy Medical in the United States and the Dermalinfusion platform was later acquired by Allergan Aesthetics, which markets the current generation under the DiamondGlow® name; Silkpeel remains the name most clinics and patients in Malaysia know it by.",
             "What distinguishes it mechanically is the word simultaneously. Rather than exfoliating first and applying a serum afterwards, the abrasive tip lifts away surface dead cells while the serum is delivered to that freshly abraded surface within the same closed pass, under the tip, with the negative pressure holding the skin in contact. At Kaiteki, Silkpeel is used within our facial treatments, often alongside other treatments in a longer plan. Which serum and which settings suit your skin, and whether a facial is the right starting point at all, is assessed at consultation.",
           ],
         },
@@ -3713,12 +3732,18 @@ export const technology: Technology[] = [
           heading: "How Dermalinfusion works",
           body: [
             "The handpiece does three things in one movement. The recessed diamond-coated tip provides mechanical exfoliation of the stratum corneum as it is drawn across the skin; the vacuum applied through the tip holds the skin against the abrasive surface and draws away loosened cells and debris from the pores; and a condition-specific topical solution flows continuously into the same enclosed treatment chamber, so it meets skin whose barrier has just been thinned rather than skin that has been left to close over. Tip grade, vacuum level, number of passes and serum are all variables the therapist adjusts by area: lighter around the eyes and on thinner skin, firmer where the skin is thicker or more congested.",
+          ],
+        },
+        {
+          heading: "Silkpeel or a hydra-type facial: what is the difference?",
+          body: [
             "Compared with a suction-based hydra-type facial, the difference is where the work is done. A hydra-type device typically relies on aqueous solutions and vortex suction through a spiral tip to loosen and lift debris, so the exfoliation is largely fluid-driven. Silkpeel's exfoliation is physical abrasion by the diamond tip, with the solution delivered to the abraded surface rather than doing the loosening itself, which is why it is often chosen where texture and congestion, not just hydration, are the concern. Neither approach makes the other unnecessary, and the treating clinician selects the protocol and serum for your skin. Effects are gradual and cumulative across a course, and vary between individuals.",
           ],
         },
         {
-          heading: "What it may help address",
+          heading: "When is Silkpeel the right starting point, and when is it not?",
           body: [
+            "It sits in the medical-facial category rather than the laser or energy category, so it is typically the entry point into a skincare plan rather than a resurfacing procedure. It is often a sensible option if you want a treatment with essentially no recovery period, or if your doctor wants your barrier in better condition before a more assertive treatment is considered.",
             "Silkpeel is commonly considered as a maintenance or preparatory treatment for the concerns below, and is often used alongside other treatments in a longer plan. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
           ],
           list: [
@@ -3731,40 +3756,38 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "Suitability & who should avoid it",
+          heading: "Is Silkpeel suitable for Asian and sensitive skin, and who should wait?",
           body: [
-            "Because it is non-ablative and uses no light energy, Silkpeel is generally suitable across skin tones, including Asian skin, and does not carry the pigment-related considerations that come with lasers or IPL. It is often a sensible option if you want a treatment with essentially no recovery period, or if your doctor wants your barrier in better condition before a more assertive treatment is considered. Sensitive or reactive skin can often still be treated, with a lighter tip and lower vacuum.",
+            "Because it is non-ablative and uses no light energy, Silkpeel is generally suitable across skin tones, including Asian skin, and does not carry the pigment-related considerations that come with lasers or IPL. Sensitive or reactive skin can often still be treated, with a lighter tip and lower vacuum.",
             "It may not be appropriate on skin with active inflamed or cystic acne, open or broken skin, active cold sores, eczema or rosacea flares in the treatment area, recent sunburn, or immediately after other resurfacing procedures, and some serum ingredients are avoided in pregnancy. Recent isotretinoin use or a course of topical retinoids may mean waiting or adjusting the protocol. Please share your full skincare and medical history at consultation, including active ingredients you use at home, so your clinician can select a suitable protocol.",
           ],
         },
         {
-          heading: "The session at Kaiteki",
+          heading: "How long is a Silkpeel session, and why is it repeated every few weeks?",
           body: [
             "A visit starts with a skin assessment so the tip grade and serum can be matched to your skin on the day rather than assumed. The skin is cleansed, then the handpiece is worked across the face in overlapping passes, section by section, with the therapist adjusting pressure and settings around delicate areas. Most people describe the sensation as a cool, slightly gritty pull across the skin, comparable to a firm massage rather than something requiring numbing, and no anaesthetic is needed.",
             "A session commonly runs in the region of 30 to 45 minutes, longer if it is combined with masking, extractions or another treatment in the same visit. Because the effect is cumulative, Silkpeel is usually planned as a regular treatment, often every few weeks initially and then at a maintenance interval, rather than as a one-off. Your clinician will suggest a rhythm that fits your skin and your other treatments.",
-          ],
-        },
-        {
-          heading: "Downtime & aftercare",
-          body: [
             "There is typically no meaningful downtime, and most people return to normal activity immediately, though this varies between individuals. Mild pinkness or a slight warm flush for an hour or two is common, and skin can feel a little tight until it rehydrates.",
             "Because a layer of dead surface cells has been removed, your skin is temporarily more receptive, to skincare, and also to sun and irritants. Sunscreen the same day, gentle cleansing, and pausing exfoliating acids and retinoids for a day or two are usually advised, along with avoiding heavy makeup for the rest of the day. Your clinician will give aftercare guidance specific to your skin and the serum used.",
           ],
         },
         {
-          heading: "Risks & side effects",
+          heading: "What are the risks of a Silkpeel, including serum reactions?",
           body: [
             "Silkpeel is a low-risk treatment, but risks exist and are explained beforehand. Temporary effects can include redness, mild sensitivity, dryness or tightness, small pinpoint marks where suction has been applied, and occasional short-lived breakouts as congestion clears. Irritation or an allergic reaction to a serum ingredient is uncommon but possible, which is why your skincare history matters. Serious effects are uncommon when the protocol is appropriately selected and performed by a trained clinician.",
           ],
         },
-        {
-          heading: "Sessions & cost factors",
-          body: [
-            "Cost is driven mainly by which serums your skin calls for, whether add-on steps such as extractions, masking or LED are included, whether areas beyond the face are treated, and how frequently you choose to come in. Because the effect is maintenance-led rather than one-off, most people think about it as an ongoing rhythm rather than a single procedure.",
-            "Pricing is discussed at consultation rather than quoted online, so what you are told reflects the protocol chosen for your skin. Message us on WhatsApp to arrange a consultation.",
-          ],
-        },
       ],
+      costFactors: {
+        intro:
+          "Pricing is discussed at consultation rather than quoted online, so what you are told reflects the protocol chosen for your skin. What moves it:",
+        factors: [
+          "Which serums your skin calls for.",
+          "Whether add-on steps such as extractions, masking or LED are included.",
+          "Whether areas beyond the face are treated.",
+          "How frequently you choose to come in.",
+        ],
+      },
       faqs: [
         {
           q: "How is Silkpeel different from a hydra-type suction facial?",
@@ -3823,8 +3846,9 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "What it may help address",
+          heading: "Why does hair grow back, and why can one session not work?",
           body: [
+            "A course is always needed, spaced according to the growth cycle for the area, often around four to eight weeks apart, because only follicles in their active growth phase respond to any one session. Multiple sessions are always needed because of the growth cycle, and occasional maintenance afterwards is normal rather than a sign something has gone wrong.",
             "Alma is commonly considered for unwanted hair on the areas below, planned as a course of sessions rather than a single visit. It is not suitable for every hair type or every area, and a consultation determines whether it is appropriate for you.",
           ],
           list: [
@@ -3837,39 +3861,43 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "Suitability & who should avoid it",
+          heading: "Can Alma treat darker skin, and fine or pale hair?",
           body: [
             "Alma describes its hair-removal technologies as usable across a wide range of skin types, including darker skin, because low-fluence high-repetition delivery with a cooled tip reduces how much energy the surrounding skin absorbs at once. That makes it worth discussing if you have Asian or deeper skin and have been told elsewhere that hair removal carries more risk for you. It is still not appropriate for everyone, and very light, grey or white hair contains little pigment for light to target on any platform.",
+          ],
+        },
+        {
+          heading: "Why do tattoos, tans and medications matter before Alma?",
+          body: [
             "It may not be suitable during pregnancy, over tattoos or permanent makeup in the area, on recently tanned or sunburnt skin, where there is active infection, inflammation or open skin, with a history of light-sensitive conditions or keloid scarring, or while taking photosensitising medication. Hormonal causes of excess hair growth may need investigating alongside treatment. Please share your full medical, medication and hair-removal history at consultation, including recent waxing, plucking or threading, so the doctor can advise safely.",
           ],
         },
         {
-          heading: "The session at Kaiteki",
+          heading: "Should you shave before Alma, and what does a session feel like?",
           body: [
             "A visit begins with a doctor consultation and a skin and hair assessment, and a test area may be considered first. You will usually be asked to shave shortly beforehand rather than wax or pluck, because the hair above the skin should be short while the follicle below stays intact. On the day the area is cleansed, gel applied where required and eye protection fitted, and the doctor moves the cooled applicator over the area in repeated passes, building warmth gradually.",
-            "Most people describe the sensation as spreading warmth rather than the snap of a stamping device, and the manufacturer describes the technique as well tolerated. A small area such as the underarms may take only a few minutes; full legs or a back take considerably longer. A course is always needed, spaced according to the growth cycle for the area, often around four to eight weeks apart, because only follicles in their active growth phase respond to any one session. Your doctor will explain the course they consider realistic and review it as your hair responds.",
-          ],
-        },
-        {
-          heading: "Downtime & aftercare",
-          body: [
+            "Most people describe the sensation as spreading warmth rather than the snap of a stamping device, and the manufacturer describes the technique as well tolerated. A small area such as the underarms may take only a few minutes; full legs or a back take considerably longer. Your doctor will explain the course they consider realistic and review it as your hair responds.",
             "Downtime is usually minimal and most people return to normal activity the same day, though this varies between individuals. Mild redness and slight bumpiness around the treated follicles is common for a few hours, and treated hairs may appear to grow out for a week or two before shedding.",
             "Sun protection on exposed areas, avoiding heat such as hot baths, saunas and vigorous exercise for the first day, and skipping deodorant or fragranced products on freshly treated skin are usually advised. Between sessions you can shave, but waxing, plucking, threading and depilatory creams are normally avoided because they remove the follicle contents the light needs to target. Your doctor will give aftercare guidance specific to the area treated.",
           ],
         },
         {
-          heading: "Risks & side effects",
+          heading: "Can Alma cause burns, folliculitis or more hair?",
           body: [
             "As with any light-based medical treatment, hair removal carries risks, which are explained during consultation. Temporary effects can include redness, mild swelling around the follicles, a warm sunburnt feeling, and short-lived changes in pigmentation. Less common effects include blistering, burns, folliculitis and, rarely, paradoxical stimulation of fine hair in some areas. Serious effects are uncommon when settings are appropriately selected for your skin tone and the treatment is performed by a trained doctor.",
           ],
         },
-        {
-          heading: "Sessions & cost factors",
-          body: [
-            "Session count and cost depend mainly on the size and number of areas treated, your hair colour, thickness and density, whether an underlying hormonal factor is driving growth, and how your hair responds as the course progresses. Multiple sessions are always needed because of the growth cycle, and occasional maintenance afterwards is normal rather than a sign something has gone wrong. Pricing is discussed at consultation rather than quoted online, so what you are quoted reflects the areas in your actual plan. Message us on WhatsApp to arrange a consultation.",
-          ],
-        },
       ],
+      costFactors: {
+        intro:
+          "Pricing is discussed at consultation rather than quoted online, so what you are quoted reflects the areas in your actual plan. What moves it:",
+        factors: [
+          "The size and number of areas treated.",
+          "Your hair colour, thickness and density.",
+          "Whether an underlying hormonal factor is driving growth.",
+          "How your hair responds as the course progresses.",
+        ],
+      },
       faqs: [
         {
           q: "Why combine radiofrequency with IPL for hair removal?",
