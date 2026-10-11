@@ -141,6 +141,40 @@ The sync only ever adds; it never deletes. Removing a file from git leaves the
 old URL serving, deliberately, because it may already be indexed. To retire an
 object, delete it from the bucket yourself.
 
+### House illustration style
+
+In-body illustrations share one look, so the blog reads as one publication.
+The reference is
+`content/blog/media/chin-filler-before-and-after/chin-and-tear-trough-zones.png`.
+
+- Single-weight terracotta line art (`#C8705F`) on warm cream (`#FBF8F3`),
+  fine sketch-like hatching in the hair, generous negative space.
+- One calm adult figure, neutral expression. East Asian features by default
+  (the audience is Malaysian); vary age and sex to fit the topic.
+- Treatment zones or features of interest: soft translucent blush-pink fill
+  with a thin dotted outline. Nothing else coloured.
+- Guide lines, where a diagram needs one: thin dotted charcoal.
+- **No text, labels, numbers or arrows in the image.** Words a reader needs go
+  in the caption or the body, where search engines can read them (§4,
+  `Timeline`).
+- No needles, syringes or devices on skin, no patient likeness, never two
+  faces side by side (that reads as a before/after, §5).
+
+Generated with GPT Image (Higgsfield `gpt_image_2_5`), 16:9 or 4:3 to match
+the `Figure` ratio. Prompt template, filling the bracketed part:
+
+```
+Minimal medical editorial illustration on a warm cream background (#FBF8F3).
+Elegant single-weight terracotta (#C8705F) line drawing of [subject, view and
+pose]. [What is highlighted, as soft translucent blush-pink shaded areas
+outlined by thin dotted lines.] Clean, airy, lots of negative space, refined
+anatomical sketch style like a premium clinic brochure. No text, no letters,
+no labels, no numbers, no arrows, no needles or syringes, single figure only.
+```
+
+Look at every result before staging it: check the anatomy, and that the
+highlighted zone is where the copy says it is.
+
 **Video is never in the repo and never raw in R2.** R2 serves flat files with
 no transcoding or adaptive streaming. Default to a YouTube embed.
 
@@ -156,6 +190,14 @@ Available in any `.mdx` body with no import line (`components/blog/blocks.tsx`):
   ratio="16/9"
 />
 
+<Timeline
+  steps={[
+    { when: "Day 0", label: "Injection", body: "Some change is visible at once.", mark: true },
+    { when: "Days 3–14", label: "Settling", body: "Swelling eases and the shape softens." },
+  ]}
+  caption="Typical timings. They vary between individuals."
+/>
+
 <AskCta
   heading="Not sure which type you have?"
   body="A doctor can tell epidermal from dermal melasma at the consultation, which decides the plan."
@@ -165,6 +207,9 @@ Available in any `.mdx` body with no import line (`components/blog/blocks.tsx`):
 
 - `Figure` — in-body imagery. Use this rather than `![]()`: it goes through
   `next/image` (AVIF/WebP, lazy, no layout shift). `alt` is mandatory.
+- `Timeline` — a staged sequence (recovery, a course of sessions) as real
+  text in an `<ol>`. Never put words a reader needs inside an image: Google and
+  answer engines cannot read them. `mark: true` fills a milestone's dot.
 - `AskCta` — one mid-article WhatsApp CTA for long posts. At most one; the
   closing CTA is rendered by the page already.
 
