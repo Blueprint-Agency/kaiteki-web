@@ -340,6 +340,50 @@ export const posts: Post[] = [
       },
     ],
   },
+  {
+    slug: "chin-filler-before-and-after",
+    title: "Chin filler before and after: what changes, and when",
+    seoTitle: "Chin Filler Before and After: What to Expect | Kaiteki",
+    description:
+      "What chin filler changes and when: the recovery timeline, how long results last, which fillers are used, and when it is paired with tear trough filler.",
+    category: "Device & Injectables",
+    image:
+      "https://cdn.kaiteki.my/blog/chin-filler-before-and-after/chin-filler-before-and-after.png",
+    imageAlt:
+      "A woman lies back with her eyes closed as a gloved doctor positions a fine needle at her lower face, on a cover titled Chin Filler Before and After",
+    author: "dr-chloe-wan",
+    reviewedBy: "dr-chew-yuhhui",
+    publishedAt: "2026-10-11",
+    readingMinutes: 7,
+    leadAnswer:
+      "Chin filler is an injectable gel placed by a doctor to add projection and definition to a recessed or undefined chin. Some change is visible straight after injection, but swelling hides the settled shape for around two weeks. Hyaluronic acid chin fillers commonly last around a year, sometimes longer, and this varies between individuals.",
+    concerns: ["face-contouring", "dark-eye-circles"],
+    treatments: ["dermal-fillers", "bio-stimulator"],
+    technology: ["juvederm", "belotero"],
+    related: ["lip-filler-malaysia-types-cost-what-to-expect"],
+    faqs: [
+      {
+        q: "How noticeable is chin filler?",
+        a: "The change is in proportion rather than size. Most people notice their profile first, where the chin sits relative to the lips and nose. How much changes depends on how much projection was lacking and how much filler your anatomy carries well.",
+      },
+      {
+        q: "How long does chin filler last?",
+        a: "Hyaluronic acid chin fillers commonly last around a year, and some studies have followed results for 18 months. It varies with the product, the amount placed and how quickly your body breaks the gel down.",
+      },
+      {
+        q: "Does chin filler look natural?",
+        a: "It can, when the amount respects your facial proportions. Overfilling is the usual reason a chin looks obviously treated, so a doctor may advise less than you asked for, or building up over two sessions.",
+      },
+      {
+        q: "Can chin filler and tear trough filler be done together?",
+        a: "Sometimes, if an assessment finds both areas need it. The under-eye is a more demanding area, and not every dark circle is a hollow, so the tear trough is assessed on its own merits rather than added to a chin plan by default.",
+      },
+      {
+        q: "Is chin filler painful?",
+        a: "Most people describe a brief pinch or pressure. Numbing cream is applied first and many chin gels contain lidocaine. Some tenderness for a day or two afterwards is normal.",
+      },
+    ],
+  },
 ];
 
 /** Display order everywhere — newest first. */
