@@ -85,7 +85,7 @@ function Reading({ rail, children }: { rail?: ReactNode; children: ReactNode }) 
   return (
     <Container>
       <div className={rail ? "lg:grid lg:grid-cols-[15rem_1fr] lg:items-start lg:gap-16" : ""}>
-        {rail && <aside className="hidden lg:sticky lg:top-24 lg:block">{rail}</aside>}
+        {rail && <aside className="hidden lg:sticky lg:top-24 lg:mt-14 lg:block">{rail}</aside>}
         <div className="min-w-0">{children}</div>
       </div>
     </Container>
