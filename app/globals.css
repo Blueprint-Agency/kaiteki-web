@@ -324,6 +324,13 @@ body {
   opacity: 1;
   transform: none;
 }
+/* Whole-layer highlight for the under-eye and face-layers drawings. */
+.skin-diagram .sd-part {
+  opacity: 0.32;
+}
+.skin-diagram .sd-part.is-on {
+  opacity: 1;
+}
 /* Inactive layer names stay AA-legible; the active one is told apart by
    weight, not by fading the other below contrast. */
 .skin-diagram .sd-label {
@@ -336,6 +343,7 @@ body {
 
 @media (prefers-reduced-motion: no-preference) {
   .skin-diagram .sd-dots circle,
+  .skin-diagram .sd-part,
   .skin-diagram .sd-label {
     transition:
       opacity var(--dur-2) var(--ease-out-quart),

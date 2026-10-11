@@ -2,11 +2,19 @@
 
 import { useRef, useState } from "react";
 import { track } from "@/components/Analytics";
+import { FaceLayersDiagram } from "@/components/FaceLayersDiagram";
 import { SkinDepthDiagram } from "@/components/SkinDepthDiagram";
+import { UnderEyeDiagram } from "@/components/UnderEyeDiagram";
 import type { ConcernVariant } from "@/lib/types";
 
 type TabSet = Extract<ConcernVariant, { kind: "tabs" }>;
 type Tabs = TabSet["tabs"];
+type Focus = Tabs[number]["focus"];
+
+// Each drawing takes only its own focus values; anything else shows them all.
+const underEye = (f: Focus) =>
+  f === "pigment" || f === "vascular" || f === "structural" ? f : "mixed";
+const faceLayer = (f: Focus) => (f === "skin" || f === "volume" ? f : "structure");
 
 /**
  * C-05 · the tab set behind archetypes A (3 types), D (primary vs secondary)
@@ -98,9 +106,15 @@ export function VariantTabs({
             : ""
         }
       >
-        {diagram === "skin-depth" && (
+        {diagram && (
           <div className="mt-9 lg:order-2">
-            <SkinDepthDiagram depth={tabs[active].depth ?? "both"} />
+            {diagram === "skin-depth" && <SkinDepthDiagram depth={tabs[active].depth ?? "both"} />}
+            {diagram === "under-eye" && (
+              <UnderEyeDiagram focus={underEye(tabs[active].focus)} />
+            )}
+            {diagram === "face-layers" && (
+              <FaceLayersDiagram focus={faceLayer(tabs[active].focus)} />
+            )}
           </div>
         )}
         <div className="lg:order-1">
