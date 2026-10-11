@@ -272,14 +272,14 @@ export function CtaMid({
     },
   ];
   return (
-    <section className="on-dark relative isolate overflow-hidden bg-espresso py-14 text-ink-on-dark sm:py-20">
+    <section className="on-dark relative isolate my-6 overflow-hidden rounded-[1.5rem] bg-espresso py-14 text-ink-on-dark sm:rounded-[2rem] sm:py-20">
       {/* Warmth, not decoration: a low mocha glow behind the steps keeps the
           band from reading as a flat slab, and a hairline frame gives it an edge. */}
       <div
         aria-hidden
         className="pointer-events-none absolute -right-24 -top-32 -z-10 h-[30rem] w-[30rem] rounded-full bg-mocha/25 blur-3xl"
       />
-      <div aria-hidden className="pointer-events-none absolute inset-3 -z-10 rounded-[1.25rem] border border-ink-on-dark/10 sm:inset-4" />
+      <div aria-hidden className="pointer-events-none absolute inset-3 -z-10 rounded-[1.125rem] border border-ink-on-dark/10 sm:inset-4 sm:rounded-[1.5rem]" />
       <Container>
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:items-center lg:gap-20">
           <div>

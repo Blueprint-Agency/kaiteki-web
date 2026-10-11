@@ -109,17 +109,6 @@ function Reading({ rail, children }: { rail?: ReactNode; children: ReactNode }) 
 }
 
 /**
- * A band inside the reading column, as `ConcernView` renders one. Bands carry
- * their own full-width section and Container, so below lg — where there is no
- * rail and the column is the page — the wrapper cancels the column's gutter and
- * the band bleeds to the screen edge. From lg the band stops at the column,
- * leaving the contents rail an unbroken gutter all the way down.
- */
-function Bleed({ children }: { children: ReactNode }) {
-  return <div className="-mx-5 sm:-mx-6 lg:mx-0">{children}</div>;
-}
-
-/**
  * A photograph inside the reading column, at the width of the prose it belongs
  * to. The caption carries the meaning, so the image is `alt=""` — a screen
  * reader that heard both would hear the same thing twice.
@@ -308,9 +297,7 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
             placed where the visitor has just read the device comparison and
             cannot pick between the options alone. Same espresso bleed the
             concern page uses. */}
-        <Bleed>
-          <CtaMid cta={t.ctaMid} href={wa} />
-        </Bleed>
+        <CtaMid cta={t.ctaMid} href={wa} />
 
         {/* T-09 */}
         <SuitabilityBlock t={t} />
