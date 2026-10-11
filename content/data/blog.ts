@@ -524,6 +524,31 @@ export function featuredPost(): Post {
   return posts.find((p) => p.featured) ?? postsNewestFirst()[0];
 }
 
+/** The hub's list under the featured card: every post except that one. */
+export function hubPosts(): Post[] {
+  const featured = featuredPost();
+  return postsNewestFirst().filter((p) => p.slug !== featured.slug);
+}
+
+/** Cards per listing page, on the hub and every category archive. A multiple
+ *  of 3 and 2 so the last row of a full page is never ragged. */
+export const PAGE_SIZE = 12;
+
+export function pageCount(total: number): number {
+  return Math.max(1, Math.ceil(total / PAGE_SIZE));
+}
+
+/** One page of a listing, 1-based. */
+export function pageOf<T>(list: T[], page: number): T[] {
+  return list.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+}
+
+/** generateStaticParams for /page/[page] routes: page 1 is the base URL itself
+ *  (next.config.ts 301s /page/1 there), so only 2..n are built. */
+export function laterPages(total: number): { page: string }[] {
+  return Array.from({ length: pageCount(total) - 1 }, (_, i) => ({ page: String(i + 2) }));
+}
+
 type PostTag = "concerns" | "treatments" | "technology";
 
 /**
