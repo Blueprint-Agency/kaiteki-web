@@ -26,7 +26,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "20-40 min · Minimal downtime (1-2 days)",
     name: "Pico Laser",
     category: "Lasers",
-    image: "/images/treatments/pico-laser.jpg",
+    image: "https://cdn.kaiteki.my/images/treatments/pico-laser.jpg",
     device: "PicoSure",
     summary:
       "A picosecond laser used for pigmentation, dull skin tone and tattoo removal, suited to a range of Asian skin tones.",
@@ -326,7 +326,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "30-60 min · No downtime",
     name: "HIFU",
     category: "Lifting & Tightening",
-    image: "/images/treatments/hifu.jpg",
+    image: "https://cdn.kaiteki.my/images/treatments/hifu.jpg",
     device: "HIFU",
     typicalSessions: "1 to a few, with review",
     summary: "Focused ultrasound used for non-surgical skin-lifting and tightening concerns.",
@@ -596,7 +596,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "60-90 min · No downtime",
     name: "Ultherapy",
     category: "Lifting & Tightening",
-    image: "/images/treatments/ultherapy.jpg",
+    image: "https://cdn.kaiteki.my/images/treatments/ultherapy.jpg",
     device: "Ultherapy",
     summary: "A focused-ultrasound platform used for lifting and tightening of the face and neck.",
     leadAnswer: "Ultherapy is a focused-ultrasound treatment used for non-surgical lifting and tightening of areas such as the brow, chin and neck. It works at set depths within the skin, and the platform's own ultrasound imaging lets the doctor see those depths before energy is delivered — the practical difference from other focused-ultrasound devices. Whether it suits you is still decided at consultation.",
@@ -827,7 +827,7 @@ export const treatments: Treatment[] = [
     reviewedBy: "dr-jamie-gan",
     lastReviewed: "2026-06-18",
   },
-  { slug: "fotona-4d", durationDowntime: "30-60 min · No downtime", name: "Fotona Laser", category: "Lasers", image: "/images/treatments/fotona-laser.jpg", device: "Fotona", summary: "A multi-application Nd:YAG/Er:YAG laser platform, most often used at Kaiteki for its Fotona 4D facial-firming protocol.", leadAnswer: "Fotona Laser refers to Kaiteki's Fotona SP Dynamis / TimeWalker platform, an Nd:YAG and Er:YAG laser system offered in several application modes. Its best-known protocol, Fotona 4D, combines four modes to address facial firmness and skin-quality concerns. Which modes are used, and whether any application of the platform fits, is decided by a doctor at consultation.", related: ["hifu", "ultherapy"], reviewedBy: "dr-jen-meng", lastReviewed: "2026-06-15", seoTitle: "Fotona 4D Laser Skin Tightening Malaysia | Kaiteki", seoDescription: "Fotona 4D is a multi-mode laser used for facial firming and skin quality, doctor-assessed at Kaiteki clinics in Malaysia. Book a free consultation on WhatsApp.",
+  { slug: "fotona-4d", durationDowntime: "30-60 min · No downtime", name: "Fotona Laser", category: "Lasers", image: "https://cdn.kaiteki.my/images/treatments/fotona-laser.jpg", device: "Fotona", summary: "A multi-application Nd:YAG/Er:YAG laser platform, most often used at Kaiteki for its Fotona 4D facial-firming protocol.", leadAnswer: "Fotona Laser refers to Kaiteki's Fotona SP Dynamis / TimeWalker platform, an Nd:YAG and Er:YAG laser system offered in several application modes. Its best-known protocol, Fotona 4D, combines four modes to address facial firmness and skin-quality concerns. Which modes are used, and whether any application of the platform fits, is decided by a doctor at consultation.", related: ["hifu", "ultherapy"], reviewedBy: "dr-jen-meng", lastReviewed: "2026-06-15", seoTitle: "Fotona 4D Laser Skin Tightening Malaysia | Kaiteki", seoDescription: "Fotona 4D is a multi-mode laser used for facial firming and skin quality, doctor-assessed at Kaiteki clinics in Malaysia. Book a free consultation on WhatsApp.",
     // The third candidate, `fotona-4d.jpg`, is held: it is a manufacturer
     // infographic with outcome copy burned into the artwork ("restore youthful
     // texture", "tighten and lift"), which no caption can walk back (R-01).
@@ -1040,7 +1040,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "30-60 min · No downtime",
     name: "Radiofrequency",
     category: "Lifting & Tightening",
-    image: "/images/treatments/radiofrequency.jpg",
+    image: "https://cdn.kaiteki.my/images/treatments/radiofrequency.jpg",
     summary: "Radiofrequency energy used to support skin-firmness and texture concerns.",
     leadAnswer:
       "Radiofrequency treatments use controlled energy to warm deeper skin layers, which may support firmness and texture concerns over a course of sessions. How many sessions, and whether radiofrequency is the right energy for your skin at all, follows a doctor's examination rather than the concern name.",
@@ -1262,7 +1262,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "30-60 min · 2-3 days recovery",
     name: "RF Microneedling",
     category: "Lifting & Tightening",
-    image: "/images/treatments/microneedling.jpg",
+    image: "https://cdn.kaiteki.my/images/treatments/microneedling.jpg",
     device: "Potenza",
     summary: "A radiofrequency (RF) microneedling treatment used for texture, scarring and pore concerns.",
     leadAnswer:
@@ -1494,7 +1494,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "35-60 min per area · No downtime",
     name: "Fat Freezing",
     category: "Body & Slimming",
-    image: "/images/treatments/fat-freezing.jpg",
+    image: "https://cdn.kaiteki.my/images/treatments/fat-freezing.jpg",
     summary: "The general term for cryolipolysis for localised fat concerns.",
     leadAnswer:
       "Fat freezing (cryolipolysis) uses controlled cooling to target localised fat in specific areas, and is not a weight-loss treatment. Whether a given area can be treated at all depends on whether an applicator can draw and hold it, which is something a doctor checks in person.",
@@ -1702,7 +1702,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "15-30 min · 1-2 days",
     name: "Skin Booster",
     category: "Injectables",
-    image: "/images/treatments/skin-booster.jpg",
+    image: "https://cdn.kaiteki.my/images/treatments/skin-booster.jpg",
     device: "Profhilo",
     typicalSessions: "A short course, then maintenance",
     summary: "Injectable hydrating treatments used to support skin quality and hydration.",
@@ -2012,7 +2012,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "10-20 min · No downtime",
     name: "Botulinum Toxin",
     category: "Injectables",
-    image: "/images/treatments/botulinum-toxin.jpg",
+    image: "https://cdn.kaiteki.my/images/treatments/botulinum-toxin.jpg",
     typicalSessions: "1 per cycle",
     summary:
       "A doctor-administered prescription injectable used to relax targeted muscles or reduce sweat-gland activity.",
@@ -2173,7 +2173,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "15-30 min · 1-2 days",
     name: "Bio-stimulator",
     category: "Injectables",
-    image: "/images/treatments/bio-stimulator.jpg",
+    image: "https://cdn.kaiteki.my/images/treatments/bio-stimulator.jpg",
     device: "Sculptra",
     summary: "Injectable treatments used to support the skin's own structural renewal.",
     leadAnswer:
@@ -2401,7 +2401,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "Consult required · Recovery varies",
     name: "Exosome Therapy",
     category: "Regenerative",
-    image: "/images/treatments/exosome-therapy.jpg",
+    image: "https://cdn.kaiteki.my/images/treatments/exosome-therapy.jpg",
     summary:
       "A regenerative approach used alongside other treatments for skin and scalp concerns.",
     leadAnswer:
@@ -2585,7 +2585,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "Consult required · Recovery varies",
     name: "Double Eyelid",
     category: "Eyes",
-    image: "/images/treatments/double-eyelid.jpg",
+    image: "https://cdn.kaiteki.my/images/treatments/double-eyelid.jpg",
     summary: "A procedure to create or refine an upper-eyelid crease, assessed individually.",
     leadAnswer:
       "Double-eyelid treatment creates or refines an upper-eyelid crease and is assessed individually within the clinic's scope of practice. Eyelid anatomy decides which method applies, and whether either of them does, so it is examined in person before anything is arranged.",
@@ -2719,7 +2719,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "15-30 min · Minimal downtime (1-3 days)",
     name: "Vascular / Pigment Laser",
     category: "Lasers",
-    image: "/images/treatments/vascular-pigment-laser.jpg",
+    image: "https://cdn.kaiteki.my/images/treatments/vascular-pigment-laser.jpg",
     summary:
       "Laser and light-based devices used for visible blood vessels, redness and pigment concerns.",
     leadAnswer:
@@ -2832,7 +2832,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "30-60 min · 5-7 days recovery",
     name: "Resurfacing Laser",
     category: "Lasers",
-    image: "/images/treatments/resurfacing-laser.jpg",
+    image: "https://cdn.kaiteki.my/images/treatments/resurfacing-laser.jpg",
     summary: "A fractional CO2 laser used for skin texture, scarring and pore concerns.",
     leadAnswer:
       "Resurfacing Laser at Kaiteki uses fractional CO2 laser technology to create controlled micro-injury columns in the skin, prompting a renewal response. It is commonly considered for texture, scarring and enlarged-pore concerns. It asks more of both recovery and skin type than the non-ablative lasers do, so a doctor is deliberate about who it is offered to.",
@@ -2934,7 +2934,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "20-30 min · No downtime",
     name: "Microwave Contouring",
     category: "Body & Slimming",
-    image: "/images/treatments/microwave-contouring.jpg",
+    image: "https://cdn.kaiteki.my/images/treatments/microwave-contouring.jpg",
     summary: "Microwave-based technology used for body-contouring, cellulite and firmness concerns.",
     leadAnswer:
       "Microwave Contouring uses microwave-based energy, delivered at Kaiteki through the Onda platform, to address localised fat, cellulite appearance and skin firmness. Which areas are treatable, and whether any of yours are, is settled by examining the area rather than by naming the concern.",
@@ -3055,7 +3055,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "20-30 min · No downtime",
     name: "Muscle Stimulation",
     category: "Body & Slimming",
-    image: "/images/treatments/muscle-stimulation.jpg",
+    image: "https://cdn.kaiteki.my/images/treatments/muscle-stimulation.jpg",
     summary: "Electromagnetic muscle-stimulation technology used for body-toning concerns.",
     leadAnswer:
       "Muscle Stimulation at Kaiteki uses the Schwarzy (Em-Fit) platform, which delivers electromagnetic energy intended to induce muscle contractions that can be difficult to achieve through voluntary exercise alone. It is considered for body-toning concerns as part of an individual plan. It acts on muscle rather than on fat or body weight, and a doctor will confirm that is actually what you are after before a block of sessions is planned.",
@@ -3161,7 +3161,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "15-30 min · 1-3 days",
     name: "Dermal Fillers",
     category: "Injectables",
-    image: "/images/treatments/dermal-fillers.jpg",
+    image: "https://cdn.kaiteki.my/images/treatments/dermal-fillers.jpg",
     summary: "Hyaluronic-acid injectable fillers used to add volume and support facial contour.",
     leadAnswer:
       "Dermal fillers are hyaluronic-acid (HA) based injectables used by a doctor to add volume or support the shape of specific facial areas. At Kaiteki these include Juvederm, Restylane, Belotero and Art Filler. Filler is placed into the face by a doctor, so facial structure and your medical history are assessed before any product, plane or plan is chosen.",
@@ -3276,7 +3276,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "30-60 min · No downtime",
     name: "Facial Treatments",
     category: "Facials",
-    image: "/images/treatments/facial-treatments.jpg",
+    image: "https://cdn.kaiteki.my/images/treatments/facial-treatments.jpg",
     summary: "Clinic facials used to support skin cleansing, exfoliation and general skin quality.",
     leadAnswer:
       "Facial Treatments at Kaiteki are clinic-based facials, including Hydrafacial and Silkpeel, that combine cleansing, exfoliation and skin-conditioning steps to support general skin quality. Suitability and results vary between individuals; a consultation helps determine which option, if any, is appropriate for you.",
@@ -3387,7 +3387,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "15-45 min · No downtime",
     name: "Laser Hair Removal",
     category: "Hair Removal",
-    image: "/images/treatments/laser-hair-removal.jpg",
+    image: "https://cdn.kaiteki.my/images/treatments/laser-hair-removal.jpg",
     summary: "IPL and radiofrequency technology used to reduce unwanted hair over a course of sessions.",
     leadAnswer:
       "Laser Hair Removal at Kaiteki uses the Alma platform, which combines IPL (intense pulsed light) and radiofrequency energy, to target hair follicles over a course of sessions. Suitability and results vary between individuals and hair type; a consultation is required to assess whether it is appropriate for you.",

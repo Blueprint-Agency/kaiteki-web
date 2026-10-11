@@ -18,7 +18,7 @@ export const technology: Technology[] = [
     group: "Lasers",
     type: "device",
     treatments: ["pico-laser"],
-    image: "/images/technology/picosure.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/picosure.jpg",
     device: "PicoSure",
     summary:
       "A 755nm picosecond aesthetic laser used within Pico laser treatment for pigmentation, uneven tone and tattoo ink.",
@@ -130,7 +130,7 @@ export const technology: Technology[] = [
     group: "Lasers",
     type: "device",
     treatments: ["pico-laser"],
-    image: "/images/technology/fotona-pqx.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/fotona-pqx.jpg",
     device: "Fotona",
     summary:
       "A 1064nm/532nm picosecond and Q-switched laser platform, also known as StarWalker PQX, used within Pico laser treatment for pigment and tattoo concerns.",
@@ -241,7 +241,7 @@ export const technology: Technology[] = [
     group: "Lasers",
     type: "device",
     treatments: ["fotona-4d"],
-    image: "/images/technology/fotona-sp-dynamis.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/fotona-sp-dynamis.jpg",
     device: "Fotona",
     summary:
       "A dual-wavelength Er:YAG (2940nm) and Nd:YAG (1064nm) laser platform used to deliver Kaiteki's Fotona 4D facial protocol.",
@@ -352,7 +352,7 @@ export const technology: Technology[] = [
     group: "Lasers",
     type: "device",
     treatments: ["vascular-pigment-laser"],
-    image: "/images/technology/dermav.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/dermav.jpg",
     summary:
       "A dual-wavelength (595nm/1064nm) vascular and pigment laser used for facial redness, visible vessels and pigment concerns.",
     leadAnswer:
@@ -459,7 +459,7 @@ export const technology: Technology[] = [
     group: "Lasers",
     type: "device",
     treatments: ["vascular-pigment-laser"],
-    image: "/images/technology/pro-yellow.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/pro-yellow.jpg",
     summary:
       "A 577nm yellow-light laser used for vascular concerns such as facial redness and visible vessels, and for some superficial pigment.",
     leadAnswer:
@@ -566,7 +566,7 @@ export const technology: Technology[] = [
       group: "Lasers",
       type: "device",
       treatments: ["vascular-pigment-laser", "laser-hair-removal"],
-      image: "/images/technology/m22-ipl.jpg",
+      image: "https://cdn.kaiteki.my/images/technology/m22-ipl.jpg",
       summary:
         "An intense pulsed light (IPL) platform that can be filtered for vascular or pigment targets and used for hair reduction.",
       leadAnswer:
@@ -675,7 +675,7 @@ export const technology: Technology[] = [
       group: "Lasers",
       type: "device",
       treatments: ["resurfacing-laser"],
-      image: "/images/technology/fractional-co2.jpg",
+      image: "https://cdn.kaiteki.my/images/technology/fractional-co2.jpg",
       summary:
         "A fractional ablative CO2 resurfacing laser that creates controlled columns of micro-injury, used within resurfacing-laser treatment for texture and scarring.",
       leadAnswer:
@@ -786,7 +786,7 @@ export const technology: Technology[] = [
       group: "Lifting & Tightening",
       type: "device",
       treatments: ["hifu"],
-      image: "/images/technology/ultracel-q.jpg",
+      image: "https://cdn.kaiteki.my/images/technology/ultracel-q.jpg",
       summary:
         "A multi-cartridge HIFU platform from Jeisys Medical, used within Kaiteki's HIFU treatment for non-surgical lifting and tightening concerns.",
       leadAnswer:
@@ -895,7 +895,7 @@ export const technology: Technology[] = [
       group: "Lifting & Tightening",
       type: "device",
       treatments: ["hifu"],
-      image: "/images/technology/lifthera.jpg",
+      image: "https://cdn.kaiteki.my/images/technology/lifthera.jpg",
       summary:
         "A line-focused ultrasound lifting device from Korean manufacturer Asterasys, used within Kaiteki's HIFU treatment for lifting and tightening concerns.",
       leadAnswer:
@@ -1003,7 +1003,7 @@ export const technology: Technology[] = [
       group: "Lifting & Tightening",
       type: "device",
       treatments: ["ultherapy"],
-      image: "/images/technology/ultherapy-system.jpg",
+      image: "https://cdn.kaiteki.my/images/technology/ultherapy-system.jpg",
       device: "Ultherapy",
       summary:
         "A micro-focused ultrasound platform from Merz Aesthetics with built-in DeepSEE ultrasound imaging, used for non-surgical lifting of the face and neck.",
@@ -1112,7 +1112,7 @@ export const technology: Technology[] = [
       group: "Lifting & Tightening",
       type: "device",
       treatments: ["radiofrequency"],
-      image: "/images/technology/xerf.png",
+      image: "https://cdn.kaiteki.my/images/technology/xerf.png",
       summary:
         "A multifrequency monopolar radiofrequency platform with integrated cryogen cooling, used within RF treatment for skin-firmness and laxity concerns.",
       leadAnswer:
@@ -1221,7 +1221,7 @@ export const technology: Technology[] = [
     group: "Lifting & Tightening",
     type: "device",
     treatments: ["microneedling"],
-    image: "/images/technology/sylfirm-x.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/sylfirm-x.jpg",
     summary:
       "A dual-mode (pulsed and continuous wave) radiofrequency microneedling device used for pigment, vascular and texture concerns.",
     leadAnswer:
@@ -1332,7 +1332,7 @@ export const technology: Technology[] = [
     group: "Lifting & Tightening",
     type: "device",
     treatments: ["microneedling"],
-    image: "/images/technology/morpheus8.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/morpheus8.jpg",
     summary:
       "A fractional radiofrequency microneedling device that reaches into the subdermal layer, used for skin-firmness and texture concerns.",
     leadAnswer:
@@ -1444,7 +1444,7 @@ export const technology: Technology[] = [
     group: "Lifting & Tightening",
     type: "device",
     treatments: ["microneedling"],
-    image: "/images/technology/potenza.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/potenza.jpg",
     device: "Potenza",
     summary:
       "A radiofrequency microneedling device combining monopolar and bipolar modes at two frequencies, used for scarring, pore and texture concerns.",
@@ -1555,7 +1555,7 @@ export const technology: Technology[] = [
       group: "Lifting & Tightening",
       type: "device",
       treatments: ["radiofrequency"],
-      image: "/images/technology/btl-exilis.jpg",
+      image: "https://cdn.kaiteki.my/images/technology/btl-exilis.jpg",
       summary:
         "A monopolar radiofrequency device with embedded cooling that heats tissue volumetrically, used for skin-firmness, texture and body-contour concerns.",
       leadAnswer:
@@ -1665,7 +1665,7 @@ export const technology: Technology[] = [
       group: "Lifting & Tightening",
       type: "device",
       treatments: ["radiofrequency"],
-      image: "/images/technology/wonderface.jpg",
+      image: "https://cdn.kaiteki.my/images/technology/wonderface.jpg",
       summary:
         "A facial platform combining bipolar radiofrequency with neuromuscular stimulation, used for skin-firmness and facial contour concerns.",
       leadAnswer:
@@ -1777,7 +1777,7 @@ export const technology: Technology[] = [
     group: "Body & Slimming",
     type: "device",
     treatments: ["fat-freezing"],
-    image: "/images/technology/coolsculpting.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/coolsculpting.jpg",
     device: "CoolSculpting",
     summary:
       "A cryolipolysis (fat-freezing) device that uses controlled cooling to target pockets of localised fat.",
@@ -1885,7 +1885,7 @@ export const technology: Technology[] = [
     group: "Body & Slimming",
     type: "device",
     treatments: ["fat-freezing"],
-    image: "/images/technology/cooltech.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/cooltech.jpg",
     summary:
       "A cryolipolysis device with 360° cooling applicators and multi-applicator capability, used to target pockets of localised fat.",
     leadAnswer:
@@ -1994,7 +1994,7 @@ export const technology: Technology[] = [
     group: "Body & Slimming",
     type: "device",
     treatments: ["microwave-contouring"],
-    image: "/images/technology/onda-coolwaves.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/onda-coolwaves.jpg",
     device: "Onda",
     summary:
       "A microwave-based (Coolwaves) device used for localised fat, cellulite appearance and skin firmness.",
@@ -2101,7 +2101,7 @@ export const technology: Technology[] = [
     group: "Body & Slimming",
     type: "device",
     treatments: ["muscle-stimulation"],
-    image: "/images/technology/schwarzy.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/schwarzy.jpg",
     summary:
       "An electromagnetic muscle-stimulation device that induces involuntary contractions, used for muscle tone rather than fat reduction.",
     leadAnswer:
@@ -2211,7 +2211,7 @@ export const technology: Technology[] = [
     group: "Injectables",
     type: "injectable",
     treatments: ["skin-booster"],
-    image: "/images/technology/profhilo.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/profhilo.jpg",
     device: "Profhilo",
     summary:
       "A hyaluronic acid injectable made with IBSA's NAHYCO hybrid technology, used within skin-booster treatment for hydration and skin remodelling rather than contour.",
@@ -2321,7 +2321,7 @@ export const technology: Technology[] = [
     group: "Injectables",
     type: "injectable",
     treatments: ["skin-booster"],
-    image: "/images/technology/rejuran.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/rejuran.jpg",
     summary:
       "A polynucleotide (salmon-derived PN) injectable range from Pharma Research, used within skin-booster treatment to support skin quality and the skin barrier.",
     leadAnswer:
@@ -2432,7 +2432,7 @@ export const technology: Technology[] = [
     group: "Injectables",
     type: "injectable",
     treatments: ["skin-booster"],
-    image: "/images/technology/plinest.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/plinest.jpg",
     summary:
       "An Italian polynucleotide injectable range from Mastelli, made with PN-HPT technology and used within skin-booster treatment for skin quality and elasticity.",
     leadAnswer:
@@ -2542,7 +2542,7 @@ export const technology: Technology[] = [
     group: "Injectables",
     type: "injectable",
     treatments: ["skin-booster"],
-    image: "/images/technology/juvelook.png",
+    image: "https://cdn.kaiteki.my/images/technology/juvelook.png",
     summary:
       "A Korean collagen-stimulating injectable combining PDLLA microspheres with non-crosslinked hyaluronic acid, used within skin-booster treatment for pore, texture and fine-line concerns.",
     leadAnswer:
@@ -2652,7 +2652,7 @@ export const technology: Technology[] = [
     group: "Injectables",
     type: "injectable",
     treatments: ["skin-booster"],
-    image: "/images/technology/hydrodeluxe.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/hydrodeluxe.jpg",
     summary:
       "A non-crosslinked hyaluronic acid hydrogel enriched with calcium hydroxyapatite and amino acids, used within skin-booster treatment for hydration and skin quality.",
     leadAnswer:
@@ -2764,7 +2764,7 @@ export const technology: Technology[] = [
     group: "Injectables",
     type: "injectable",
     treatments: ["botulinum-toxin"],
-    image: "/images/technology/botox.png",
+    image: "https://cdn.kaiteki.my/images/technology/botox.png",
     device: "Botox",
     summary:
       "A registered botulinum toxin type A injectable (onabotulinumtoxinA) from Allergan, used within botulinum toxin treatment and dosed in units by a doctor.",
@@ -2833,7 +2833,7 @@ export const technology: Technology[] = [
       group: "Injectables",
       type: "injectable",
       treatments: ["bio-stimulator"],
-      image: "/images/technology/sculptra.jpg",
+      image: "https://cdn.kaiteki.my/images/technology/sculptra.jpg",
       device: "Sculptra",
       summary:
         "A poly-L-lactic acid (PLLA) injectable used within bio-stimulator treatment to support gradual structural renewal.",
@@ -2944,7 +2944,7 @@ export const technology: Technology[] = [
       group: "Injectables",
       type: "injectable",
       treatments: ["bio-stimulator"],
-      image: "/images/technology/ellanse.jpg",
+      image: "https://cdn.kaiteki.my/images/technology/ellanse.jpg",
       summary:
         "A polycaprolactone (PCL) injectable used within bio-stimulator treatment as a collagen-stimulating injectable.",
       leadAnswer:
@@ -3056,7 +3056,7 @@ export const technology: Technology[] = [
       group: "Injectables",
       type: "injectable",
       treatments: ["bio-stimulator"],
-      image: "/images/technology/radiesse.jpg",
+      image: "https://cdn.kaiteki.my/images/technology/radiesse.jpg",
       summary:
         "A calcium hydroxylapatite (CaHA) injectable used within bio-stimulator treatment with collagen-supporting properties.",
       leadAnswer:
@@ -3166,7 +3166,7 @@ export const technology: Technology[] = [
     group: "Injectables",
     type: "injectable",
     treatments: ["dermal-fillers"],
-    image: "/images/technology/juvederm.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/juvederm.jpg",
     summary:
       "A cross-linked hyaluronic-acid dermal filler range from Allergan Aesthetics, built on the manufacturer's VYCROSS® gel technology and spanning soft gels for fine lines through to firm gels used for structural contour.",
     leadAnswer:
@@ -3275,7 +3275,7 @@ export const technology: Technology[] = [
     group: "Injectables",
     type: "injectable",
     treatments: ["dermal-fillers"],
-    image: "/images/technology/restylane.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/restylane.jpg",
     summary:
       "A hyaluronic-acid dermal filler range from Galderma built on two distinct gel technologies: firmer NASHA® gels for definition and flexible OBT™ gels for expressive areas.",
     leadAnswer:
@@ -3384,7 +3384,7 @@ export const technology: Technology[] = [
     group: "Injectables",
     type: "injectable",
     treatments: ["dermal-fillers"],
-    image: "/images/technology/belotero.jpg",
+    image: "https://cdn.kaiteki.my/images/technology/belotero.jpg",
     summary:
       "A hyaluronic-acid dermal filler range from Merz Aesthetics made with a two-phase dynamic cross-linking process, giving softer gels used for fine lines and delicate areas alongside firmer gels for volume.",
     leadAnswer:
@@ -3494,7 +3494,7 @@ export const technology: Technology[] = [
     group: "Injectables",
     type: "injectable",
     treatments: ["dermal-fillers"],
-    image: "/images/technology/art-filler.png",
+    image: "https://cdn.kaiteki.my/images/technology/art-filler.png",
     summary:
       "A hyaluronic-acid dermal filler range from Laboratoires Fillmed, built on the manufacturer's Tri-Hyal® technology, which blends three hyaluronic-acid fractions in each gel.",
     leadAnswer:
@@ -3604,7 +3604,7 @@ export const technology: Technology[] = [
       group: "Facials",
       type: "device",
       treatments: ["facial-treatments"],
-      image: "/images/technology/hydrafacial.jpg",
+      image: "https://cdn.kaiteki.my/images/technology/hydrafacial.jpg",
       summary:
         "A device-based facial using a spiral tip with vacuum suction and simultaneous serum delivery to cleanse, exfoliate, extract and infuse in one pass.",
       leadAnswer:
@@ -3710,7 +3710,7 @@ export const technology: Technology[] = [
       group: "Facials",
       type: "device",
       treatments: ["facial-treatments"],
-      image: "/images/technology/silkpeel.jpg",
+      image: "https://cdn.kaiteki.my/images/technology/silkpeel.jpg",
       summary:
         "A device-based facial that exfoliates with a diamond tip while simultaneously infusing a condition-specific topical serum into the same pass.",
       leadAnswer:
@@ -3820,7 +3820,7 @@ export const technology: Technology[] = [
       group: "Hair Removal",
       type: "device",
       treatments: ["laser-hair-removal"],
-      image: "/images/technology/alma.jpg",
+      image: "https://cdn.kaiteki.my/images/technology/alma.jpg",
       summary:
         "A light-based hair-reduction platform from Alma, combining broadband IPL energy with radiofrequency heating to target hair follicles over a course of sessions.",
       leadAnswer:

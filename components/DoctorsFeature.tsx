@@ -4,8 +4,8 @@ import { Container } from "./Container";
 import { ArrowRight } from "./icons";
 import { doctors } from "@/content/data/doctors";
 
-// The three founders/directors in the group portrait (public/images/doctors/
-// team-trio.png), left → right, each a callout to their profile — rendered as
+// The three founders/directors in the group portrait (cdn.kaiteki.my/images/
+// doctors/team-trio.png), left → right, each a callout to their profile — rendered as
 // a row beneath the portrait, in the same order as the people above.
 const trio = [
   { slug: "dr-chew-yuhhui", name: "Dr Chew", role: "Co-Founder" },
@@ -67,7 +67,7 @@ export function DoctorsFeature() {
                 className="absolute inset-x-[-4%] bottom-0 top-[1%] rounded-t-[999px] border border-mocha/25"
               />
               <Image
-                src="/images/doctors/team-trio.png"
+                src="https://cdn.kaiteki.my/images/doctors/team-trio.png"
                 alt="Three Kaiteki doctors, Dr Chew, Dr Jessie and Dr Yeong Bin, in black clinic scrubs"
                 width={1516}
                 height={1010}

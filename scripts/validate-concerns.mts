@@ -199,15 +199,8 @@ function treatmentMediaUrls(t: Treatment): [string, string][] {
  * because it has not reached R2 yet; it is reported as a warning on every run until
  * it moves, so the exception cannot be forgotten. Remove the entry when it does.
  */
-const TEMP_LOCAL_MEDIA = new Set([
-  // melasma banner, approved 2026-10-11, owner uploading to R2 later
-  "/images/concerns/melasma-banner.jpg",
-  "/images/concerns/melasma-banner-sm.jpg",
-  // melasma cause photographs, 2026-10-11, same upload
-  "/images/concerns/melasma-cause-uv.jpg",
-  "/images/concerns/melasma-cause-hormones.jpg",
-  "/images/concerns/melasma-cause-genetics.jpg",
-  "/images/concerns/melasma-cause-heat.jpg",
+const TEMP_LOCAL_MEDIA: Set<string> = new Set([
+  // Empty: the melasma banner + cause photographs reached R2 on 2026-10-11.
 ]);
 
 function checkMedia(slug: string, entries: [string, string][], m: ReturnType<typeof uploadable>) {

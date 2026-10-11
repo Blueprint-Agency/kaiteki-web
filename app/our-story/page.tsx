@@ -187,7 +187,7 @@ export default function AboutPage() {
           </div>
           <div className="reveal relative aspect-[4/3] overflow-hidden rounded-3xl border border-hairline">
             <Image
-              src="/images/clinics/clinic-mont-kiara.jpg"
+              src="https://cdn.kaiteki.my/images/clinics/clinic-mont-kiara.jpg"
               alt="Treatment room inside Kaiteki Skin Aesthetic Clinic Mont Kiara"
               fill
               sizes="(max-width: 1024px) 100vw, 45vw"
