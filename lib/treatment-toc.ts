@@ -45,6 +45,7 @@ export function treatmentToc(
         h("suitability", "Is this right for you?"),
     !!t.sessionSteps?.length && h("your-session", "What a session involves"),
     !!t.steps?.length && h("steps", "The procedure, step by step"),
+    !!t.procedureImages?.length && h("in-the-treatment-room", "In the treatment room"),
     !!t.afterSession && h("after-a-session", "After a session"),
     !!t.risks && h("risks", `Risks, side effects, and what ${t.name} cannot do`),
     !!t.costFactors && h("sessions-cost", "What affects the number of sessions, and the cost"),

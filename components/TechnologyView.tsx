@@ -288,7 +288,7 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
           <Section>
             <p className="kicker">Manufacturer</p>
             <Image
-              src={`/images/tech/${logo}`}
+              src={`https://cdn.kaiteki.my/images/tech/${logo}`}
               alt={`${x.device!} logo`}
               width={140}
               height={44}
