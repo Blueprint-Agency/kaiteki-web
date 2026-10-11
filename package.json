@@ -25,7 +25,8 @@
     "sync:treatment-media": "node --env-file-if-exists=.env.local scripts/sync-media.mjs treatments",
     "blog:manifest": "node scripts/blog-import.mjs --manifest",
     "blog:import": "node scripts/blog-import.mjs",
-    "blog:redirects": "node scripts/blog-redirects.mjs"
+    "blog:migrate-legacy": "node scripts/blog-migrate-legacy.mjs",
+    "blog:redirects": "node --experimental-strip-types --no-warnings scripts/blog-redirects.mts"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.1",
