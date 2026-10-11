@@ -26,11 +26,16 @@ export function Figure({
   alt,
   caption,
   ratio = "16/9",
+  labels,
 }: {
   src: string;
   alt: string;
   caption?: string;
   ratio?: string;
+  /** Text labels laid over the picture at x/y percentages (centre of the
+   *  label). Real HTML, so search engines read them: words never go inside
+   *  the image file itself (AUTHORING §3). */
+  labels?: { text: string; x: number; y: number }[];
 }) {
   return (
     <figure className="mt-8">
@@ -39,6 +44,15 @@ export function Figure({
         style={{ aspectRatio: ratio }}
       >
         <Image src={src} alt={alt} fill loading="lazy" sizes="(max-width: 768px) 100vw, 768px" className="object-cover" />
+        {labels?.map((l) => (
+          <span
+            key={l.text}
+            className="absolute max-w-[30%] -translate-x-1/2 -translate-y-1/2 text-center font-sans text-[0.5625rem] font-semibold uppercase leading-tight tracking-[0.08em] text-accent sm:text-[0.6875rem] sm:tracking-[0.12em]"
+            style={{ left: `${l.x}%`, top: `${l.y}%` }}
+          >
+            {l.text}
+          </span>
+        ))}
       </div>
       {caption && (
         <figcaption className="mt-3 text-[0.8125rem] leading-snug text-ink-500">
