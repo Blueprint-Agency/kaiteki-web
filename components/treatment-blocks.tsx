@@ -410,6 +410,36 @@ export function SessionBlock({ t }: { t: Treatment }) {
 }
 
 /**
+ * Kaiteki's own photos of the treatment in progress — same 1:1 grid as the
+ * concern page's first-visit photos. A device in use is not an outcome, so the
+ * caption carries the meaning and there is no results framing.
+ */
+export function ProcedurePhotos({ images }: { images?: Treatment["procedureImages"] }) {
+  if (!images?.length) return null;
+  return (
+    <Section id="in-the-treatment-room">
+      <Lede heading="In the treatment room" />
+      <ul className="mt-8 grid gap-6 sm:grid-cols-3">
+        {images.map((v) => (
+          <li key={v.src}>
+            <div className="relative aspect-square overflow-hidden rounded-lg bg-tint">
+              <Image
+                src={v.src}
+                alt=""
+                fill
+                sizes="(max-width: 640px) 100vw, 240px"
+                className="object-cover"
+              />
+            </div>
+            <p className="mt-2.5 text-sm leading-snug text-ink-500">{v.caption}</p>
+          </li>
+        ))}
+      </ul>
+    </Section>
+  );
+}
+
+/**
  * The illustrated procedure sequence (`steps`). Numbered because the order is
  * the information, not decoration.
  *

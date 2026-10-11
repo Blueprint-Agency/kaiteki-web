@@ -178,11 +178,13 @@ function mediaUrls(c: Concern): [string, string][] {
 }
 
 /**
- * Every CDN media src on a treatment. `image` is deliberately absent: the 19 heroes are
- * already-migrated legacy media and stay in public/ (docs/14 §Media delivery).
+ * Every CDN media src on a treatment, the hero `image` included: it lives in
+ * Media Sync at treatments/<slug>/hero.jpg like every other slot.
  */
 function treatmentMediaUrls(t: Treatment): [string, string][] {
   return [
+    ...(t.image ? [[t.image, "image"]] : []),
+    ...(t.procedureImages ?? []).map((p) => [p.src, "procedureImages"]),
     ...(t.manufacturerImages ?? []).map((m) => [m.src, "manufacturerImages"]),
     ...(t.figures ?? []).map((f) => [f.src, "figures"]),
     ...(t.steps ?? []).map((s) => [s.src, "steps"]),
@@ -340,6 +342,7 @@ for (const t of treatments) {
     [
       ...(t.manufacturerImages ?? []).flatMap((m) => [m.caption, m.alt]),
       ...(t.figures ?? []).map((f) => f.caption),
+      ...(t.procedureImages ?? []).map((p) => p.caption),
       ...(t.steps ?? []).flatMap((s) => [s.label, s.body]),
       ...(t.areas ?? []).map((a) => (typeof a === "string" ? a : a.label)),
     ].join("\n"),
@@ -355,13 +358,16 @@ for (const t of treatments) {
   }
   // Q-17, second data source: a figure's caption carries its meaning, and the
   // image is alt="" precisely because of that — an uncaptioned one says nothing.
-  for (const f of t.figures ?? []) {
+  for (const f of [...(t.figures ?? []), ...(t.procedureImages ?? [])]) {
     if (!f.caption?.trim()) fail(t.slug, "Q-17", `figure "${f.src}" has no caption`);
   }
 
-  // Q-22 — the exclusion is enforced, not remembered. These five have no media
-  // to author (docs/13 §9); a field appearing on one is a mis-wire, not a gift.
-  if (NO_MEDIA.has(t.slug) && treatmentMediaUrls(t).length) {
+  // Q-22 — the exclusion is enforced, not remembered. These have no in-body
+  // media to author (docs/13 §9); a field appearing on one is a mis-wire, not a
+  // gift. The hero and Kaiteki's own procedure photography are exempt: that is
+  // the treatment photography the exclusion was waiting for.
+  const inBody = treatmentMediaUrls(t).filter(([, f]) => f !== "image" && f !== "procedureImages");
+  if (NO_MEDIA.has(t.slug) && inBody.length) {
     fail(t.slug, "Q-22", `declares media but is HOLD/EXCLUDE in docs/13 §9`);
   }
 
