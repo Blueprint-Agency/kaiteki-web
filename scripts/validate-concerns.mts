@@ -203,6 +203,11 @@ const TEMP_LOCAL_MEDIA = new Set([
   // melasma banner, approved 2026-10-11, owner uploading to R2 later
   "/images/concerns/melasma-banner.jpg",
   "/images/concerns/melasma-banner-sm.jpg",
+  // melasma cause photographs, 2026-10-11, same upload
+  "/images/concerns/melasma-cause-uv.jpg",
+  "/images/concerns/melasma-cause-hormones.jpg",
+  "/images/concerns/melasma-cause-genetics.jpg",
+  "/images/concerns/melasma-cause-heat.jpg",
 ]);
 
 function checkMedia(slug: string, entries: [string, string][], m: ReturnType<typeof uploadable>) {
