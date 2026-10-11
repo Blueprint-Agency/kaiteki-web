@@ -227,7 +227,11 @@ export function DriversBlock({
         {figures?.length ? (
           <ul className="divide-y divide-hairline border-y border-hairline">
             {d.items.map((i, n) => (
-              <li key={i.lead} className="py-6">
+              <li
+                key={i.lead}
+                className="reveal reveal-stagger py-6"
+                style={{ ["--i" as string]: n }}
+              >
                 <p className="max-w-[62ch] leading-relaxed text-ink-700">
                   <strong className="font-semibold text-espresso">{i.lead}</strong> {i.body}
                 </p>
@@ -267,7 +271,7 @@ export function VariantBlock({
 
       {!!illustrations?.length && <IllustrationGrid items={illustrations} />}
 
-      {v.kind === "tabs" && <VariantTabs tabs={v.tabs} />}
+      {v.kind === "tabs" && <VariantTabs tabs={v.tabs} diagram={v.diagram} />}
 
       {/* No heading above the slides: each one already carries its own
           headline in the artwork, and a hardcoded one here would be the
@@ -318,14 +322,21 @@ export function LocationBlock({ l }: { l?: Concern["locationBlock"] }) {
       <h2 className="h-section max-w-[22ch]">{l.heading}</h2>
       {l.intro && <p className="mt-6 max-w-[64ch] leading-relaxed text-ink-700">{l.intro}</p>}
       <div className="mt-10 grid gap-x-12 gap-y-9 sm:grid-cols-2">
-        {l.cards.map((c) => (
-          <div key={c.title} className="border-t border-hairline pt-5">
+        {l.cards.map((c, n) => (
+          <div
+            key={c.title}
+            className="reveal reveal-stagger border-t border-hairline pt-5"
+            style={{ ["--i" as string]: n }}
+          >
             <h3 className="h-sub">{c.title}</h3>
             <p className="mt-2.5 leading-relaxed text-ink-700">{c.body}</p>
           </div>
         ))}
         {l.note && (
-          <div className="border-t border-warn/50 pt-5">
+          <div
+            className="reveal reveal-stagger border-t border-warn/50 pt-5"
+            style={{ ["--i" as string]: l.cards.length }}
+          >
             <h3 className="h-sub">{l.note.title}</h3>
             <p className="mt-2.5 leading-relaxed text-ink-700">{l.note.body}</p>
           </div>
