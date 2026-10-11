@@ -21,7 +21,9 @@ Pages intentionally deferred or stubbed during the rebuild. Track and revisit.
          watermark baked in, so they duplicate the H1 and carry retired branding.
       3. No legacy post maps to concerns/treatments/technology yet, so none appears in a
          page's "Read next" row and none links out to the money pages.
-      4. `/blog` lists all 167 posts on one page (1.6 MB of HTML). Paginate the hub.
+      4. ~~Paginate the hub~~ — done 2026-10: 12 per page at `/blog/page/<n>` and
+         `/blog/category/<slug>/page/<n>`, plus search, topic/author/category filters and
+         sort (`components/blog/BlogExplorer.tsx`, over `/blog/search-index.json`).
       5. Malay posts → `/ms/blog` once the locale exists; they 301 to `/blog` until then.
 - [ ] **About Us page** — removed in the IA v2 refactor. Rebuild (clinic story, E-E-A-T,
       credentials) or fold into `/doctors`.

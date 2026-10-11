@@ -42,6 +42,15 @@ export function ChevronDown({ className, size }: IconProps) {
   );
 }
 
+export function ArrowLeft({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <path d="M19 12H5" />
+      <path d="m12 19-7-7 7-7" />
+    </svg>
+  );
+}
+
 export function ArrowRight({ className, size }: IconProps) {
   return (
     <svg {...base(size)} className={className}>

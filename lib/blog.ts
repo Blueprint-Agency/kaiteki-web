@@ -78,20 +78,6 @@ export async function postHeadings(slug: string): Promise<Heading[]> {
   return headings;
 }
 
-/** Long-form dates in one place so cards, bylines and archives never diverge. */
-export function formatPostDate(iso: string): string {
-  return new Date(iso).toLocaleDateString("en-GB", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
-}
-
-/** Compact variant for cards, where the byline row is tight. */
-export function formatPostDateShort(iso: string): string {
-  return new Date(iso).toLocaleDateString("en-GB", {
-    day: "numeric",
-    month: "short",
-    year: "numeric",
-  });
-}
+// Date formatting lives in lib/post-date.ts so client components (the blog
+// search) can use it without pulling node:fs into the browser bundle.
+export { formatPostDate, formatPostDateShort } from "./post-date";
