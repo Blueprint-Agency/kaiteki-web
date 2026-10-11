@@ -242,13 +242,14 @@ export function webPageNode({
 /** Author/reviewer identity for a blog post — a credentialed Person, inlined
  *  rather than referenced, because cross-page @id refs don't resolve reliably in
  *  Google's parser (same reasoning as medicalWebPageNode's `reviewer`). */
-function personNode(d: { fullName: string; slug: string; credentials?: string; mmc?: string; photo?: string }) {
+function personNode(d: { fullName: string; slug?: string; credentials?: string; mmc?: string; photo?: string }) {
   const suffix = [d.credentials, d.mmc].filter(Boolean).join(" · ");
   return {
     "@type": "Person",
     additionalType: "https://schema.org/Physician",
     name: d.fullName,
-    url: `${site.url}/doctors/${d.slug}`,
+    // No slug: a legacy author with no profile page here, so no URL to give.
+    ...(d.slug ? { url: `${site.url}/doctors/${d.slug}` } : {}),
     ...(suffix ? { honorificSuffix: suffix } : {}),
     ...(d.photo ? { image: abs(d.photo) } : {}),
     worksFor: { "@id": orgId },

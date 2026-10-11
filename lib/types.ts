@@ -555,8 +555,12 @@ export interface Post {
   image?: string;
   /** Descriptive alt for the hero image. Required whenever `image` is set. */
   imageAlt?: string;
-  /** Doctor slug — the byline. */
+  /** Doctor slug — the byline. Empty only on a legacy post whose author has no
+   *  profile on this site, which carries `authorName` instead. */
   author: string;
+  /** Byline for a legacy author with no doctor profile (e.g. "Dr Lee Jin").
+   *  Shown as plain text: no profile link, photo or MMC number to show. */
+  authorName?: string;
   /** Doctor slug of the medical reviewer. Defaults to the author when unset. */
   reviewedBy?: string;
   /** ISO date first published. */
@@ -565,8 +569,9 @@ export interface Post {
   updatedAt?: string;
   /** Estimated read time in minutes (shown on cards and the byline). */
   readingMinutes: number;
-  /** 40–60 word answer-first capsule, mirrors treatment/concern pages (docs/05 §1.3). */
-  leadAnswer: string;
+  /** 40–60 word answer-first capsule, mirrors treatment/concern pages (docs/05 §1.3).
+   *  Required on every new post (`pnpm check:blog`); legacy posts never had one. */
+  leadAnswer?: string;
   /** Concern slugs this post relates to — drives blog → /concerns internal links. */
   concerns?: string[];
   /** Treatment slugs this post relates to — drives blog → /treatments links. */
@@ -583,6 +588,13 @@ export interface Post {
   /** Legacy blog.kaiteki.my path this post replaces, e.g. "/discovery-pico-vs-picosure/".
    *  Collected here so the subdomain-level 301 map can be generated from the data. */
   legacyPath?: string;
+  /** Moved verbatim from blog.kaiteki.my by scripts/blog-migrate-legacy.mjs.
+   *  Published copy, moved rather than re-edited, so `pnpm check:blog` skips its
+   *  house-style rules (em-dashes, meta lengths, lead answer, section count). */
+  legacy?: boolean;
+  /** The post's original WordPress category names, kept when it moved into one
+   *  of our five categories. Shown on the article; no archive pages. */
+  tags?: string[];
 }
 
 /** Device/brand-partner performance award — substantiated by the naming

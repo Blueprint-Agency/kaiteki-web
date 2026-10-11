@@ -1,4 +1,6 @@
 import type { Post, PostCategory } from "@/lib/types";
+// Explicit extension: scripts/check-blog.mts loads this file in plain Node.
+import { legacyPosts } from "./blog-legacy.ts";
 
 /**
  * /blog index. Metadata only — each post's body is `content/blog/<slug>.mdx`.
@@ -9,9 +11,11 @@ import type { Post, PostCategory } from "@/lib/types";
  *
  * Compliance: descriptions and lead answers are advertising copy under the MAB
  * rules, so they stay factual — no outcome guarantees, no superlatives, no
- * before/after or testimonial framing (docs/02 §8).
+ * before/after or testimonial framing (docs/02 §8). That applies to posts
+ * written here; the archive moved verbatim from blog.kaiteki.my is
+ * `legacyPosts` (content/data/blog-legacy.ts), appended below.
  */
-export const posts: Post[] = [
+const authored: Post[] = [
   {
     slug: "ultherapy-vs-hifu-difference-which-suits-you",
     title: "Ultherapy vs HIFU: what’s the difference and which suits you?",
@@ -472,6 +476,8 @@ export const posts: Post[] = [
     ],
   },
 ];
+
+export const posts: Post[] = [...authored, ...legacyPosts];
 
 /** Display order everywhere — newest first. */
 export function postsNewestFirst(): Post[] {

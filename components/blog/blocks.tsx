@@ -99,6 +99,26 @@ export function AskCta({
 }
 
 /**
+ * A YouTube video, embedded from youtube-nocookie.com (no tracking cookie until
+ * the reader presses play). Video never goes in the repo or raw in R2
+ * (AUTHORING §3). `title` names the iframe for screen readers.
+ */
+export function YouTube({ id, title }: { id: string; title: string }) {
+  return (
+    <div className="mt-8 aspect-video overflow-hidden rounded-2xl bg-tint ring-1 ring-hairline">
+      <iframe
+        src={`https://www.youtube-nocookie.com/embed/${id}`}
+        title={title}
+        loading="lazy"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        className="size-full"
+      />
+    </div>
+  );
+}
+
+/**
  * A staged timeline (recovery, a course of sessions). Rendered as a real <ol>
  * so every stage is crawlable text, never baked into an image: Google and
  * answer engines cannot read words inside a picture. Stacks vertically on
