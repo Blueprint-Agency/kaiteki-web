@@ -207,10 +207,6 @@ Available in any `.mdx` body with no import line (`components/blog/blocks.tsx`):
 
 - `Figure` — in-body imagery. Use this rather than `![]()`: it goes through
   `next/image` (AVIF/WebP, lazy, no layout shift). `alt` is mandatory.
-- `Figure` `labels` — name parts of a diagram without putting words in the
-  image: `labels={[{ text: "Pico laser", x: 28, y: 91 }]}`, where x and y are
-  the label's centre as a percentage of the image. Rendered as HTML over the
-  picture, so it is crawlable. Check the positions against the image.
 - `Timeline` — a staged sequence (recovery, a course of sessions) as real
   text in an `<ol>`. Never put words a reader needs inside an image: Google and
   answer engines cannot read them. `mark: true` fills a milestone's dot.
