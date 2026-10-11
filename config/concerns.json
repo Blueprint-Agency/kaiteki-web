@@ -82,6 +82,17 @@
       "status": "reference"
     },
     {
+      "slug": "acne-scars",
+      "category": "Skin",
+      "archetype": "A",
+      "depth": "full",
+      "treatments": 4,
+      "technologies": 0,
+      "reviewer": "Dr Hong Peiyi (proposed, unsigned)",
+      "lastReviewed": "2026-10-11",
+      "status": "pending"
+    },
+    {
       "slug": "pigmentation",
       "category": "Skin",
       "archetype": "A",
