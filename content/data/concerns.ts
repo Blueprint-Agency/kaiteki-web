@@ -1489,9 +1489,13 @@ export const concerns: Concern[] = [
     // with FLUX.2 Pro to the banner shape), approved by the owner 2026-10-11. Not a
     // patient and not a result; the alt says so. Uploaded by hand: the source
     // binaries are pbanner_melasma(.jpg|_sm.jpg) for the media export folder.
+    // Temporarily served from public/ (see below).
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/melasma/banner.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/melasma/banner-sm.jpg",
+      // Served from public/ until the owner uploads to R2 (2026-10-11). Then switch
+      // back to https://cdn.kaiteki.my/concerns/melasma/banner(-sm).jpg, delete the
+      // two public/ files and the TEMP_LOCAL_MEDIA entries in validate-concerns.
+      src: "/images/concerns/melasma-banner.jpg",
+      sm: "/images/concerns/melasma-banner-sm.jpg",
       alt: "Illustrative photograph: a person with soft brown melasma patches across both cheeks, touching one cheek",
     },
 
