@@ -260,13 +260,22 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
           </Section>
         )}
 
-        {/* T-06 — falls back to a plain chip row until routing cards are authored. */}
+        {/* T-06 — every page ends this block on the same concern card shelf;
+            authored routes add the why above it. */}
         {t.routes ? (
           <RoutingModule
             title={`What ${t.name} is used for at Kaiteki`}
             routes={t.routes}
             note={t.routesNote}
-          />
+          >
+            {relatedConcerns.length > 0 && (
+              <CardRow className="mt-10">
+                {relatedConcerns.map((concern) => (
+                  <ConcernCard key={concern.slug} c={concern} />
+                ))}
+              </CardRow>
+            )}
+          </RoutingModule>
         ) : (
           relatedConcerns.length > 0 && (
             /* Photo cards, not chips. This is the block that routes a visitor

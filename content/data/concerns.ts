@@ -4886,11 +4886,11 @@ export const concerns: Concern[] = [
     seoTitle: "Hair Loss Treatment & Assessment in Malaysia | Kaiteki",
     seoDescription:
       "Hair loss has several patterns and causes, and a doctor identifies yours before any treatment. Book a free hair loss consultation with Kaiteki today.",
-    // ── 01
+    // ── 01 · Pexels (pexels.com/photo/5468618), see config/concern-media.json.
     banner: {
       src: "https://cdn.kaiteki.my/concerns/hair-loss/hero.jpg",
       sm: "https://cdn.kaiteki.my/concerns/hair-loss/hero-mobile.jpg",
-      alt: "Illustrative photograph: a person parting their hair to look at the scalp beneath",
+      alt: "Illustrative photograph: a woman brushing her hair against a plain white wall",
     },
 
     // ── 02 · process facts. Nothing about regrowth, which would be an outcome
@@ -5642,11 +5642,12 @@ export const concerns: Concern[] = [
     seoDescription:
       "Birthmarks vary widely in type and cause, and most are harmless. A doctor examines yours before discussing birthmark removal. Book a free consultation.",
 
-    // ── 01 · licensed stock (StockSnap CC0), see config/concern-media.json.
+    // ── 01 · Pexels (pexels.com/photo/7395920), right side extended in the
+    // wall tone so the H1 sits on plain ground.
     banner: {
       src: "https://cdn.kaiteki.my/concerns/birthmark/hero.jpg",
       sm: "https://cdn.kaiteki.my/concerns/birthmark/hero-mobile.jpg",
-      alt: "Illustrative photograph: a woman applying a skincare serum to her cheek",
+      alt: "Illustrative photograph: a woman with a brown birthmark on her cheek",
     },
 
     // ── 02 · process facts. Nothing about fading or clearance, which would be
@@ -6434,11 +6435,11 @@ export const concerns: Concern[] = [
     seoDescription:
       "Hyperhidrosis goes beyond normal temperature regulation and has several possible causes. A consultation helps assess your situation. Book a free session today.",
 
-    // ── 01 · licensed stock (StockSnap CC0), see config/concern-media.json.
+    // ── 01 · Pexels (pexels.com/photo/5000223), see config/concern-media.json.
     banner: {
       src: "https://cdn.kaiteki.my/concerns/excessive-sweating/hero.jpg",
       sm: "https://cdn.kaiteki.my/concerns/excessive-sweating/hero-mobile.jpg",
-      alt: "Illustrative photograph: a woman resting on a running track, her skin damp with sweat",
+      alt: "Illustrative photograph: a woman holding a towel to her cheek against a white wall",
     },
 
     // ── 02 · process facts. Nothing about how dry anyone will be, or for how
