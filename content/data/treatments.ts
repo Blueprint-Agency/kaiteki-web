@@ -1074,7 +1074,7 @@ export const treatments: Treatment[] = [
     // `lastReviewed` is unchanged.
     typicalSessions: "About 2 to 3, then maintenance",
     facts: [
-      { value: "3 RF platforms", label: "BTL Exilis, Wonderface and XERF, matched to your skin" },
+      { value: "4 RF platforms", label: "BTL Exilis, Oligio, Wonderface and XERF, matched to your skin" },
       { value: "30–60 minutes", label: "Typical session, depending on the areas treated" },
       { value: "Assessment first", label: "Your first visit is a doctor consultation, not a treatment" },
     ],
@@ -1097,7 +1097,7 @@ export const treatments: Treatment[] = [
 
     // T-07 — the devices paragraph of "How it works", as the variant module (R1).
     variantModule: {
-      heading: "BTL Exilis, Wonderface or XERF: which RF platform, and why",
+      heading: "BTL Exilis, Oligio, Wonderface or XERF: which RF platform, and why",
       intro:
         "Different RF devices allow the treating doctor to adjust treatment depth and intensity for your skin condition and goals.",
       items: [
@@ -1107,6 +1107,13 @@ export const treatments: Treatment[] = [
           body: "Monopolar delivery with embedded surface cooling lets the device keep working at a depth that reaches subcutaneous fat, which is why it is used for body-contour concerns as well as facial firmness.",
           href: "/technology/btl-exilis",
           hrefLabel: "About BTL Exilis",
+        },
+        {
+          eyebrow: "Monopolar 6.78 MHz · contact cooling",
+          title: "Oligio",
+          body: "A Korean monopolar platform delivered shot by shot through a cooled tip that monitors contact, studied mainly for mild to moderate laxity of the lower face.",
+          href: "/technology/oligio",
+          hrefLabel: "About Oligio",
         },
         {
           eyebrow: "Bipolar RF + neuromuscular",
