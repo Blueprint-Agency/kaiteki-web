@@ -1467,8 +1467,8 @@ export const concerns: Concern[] = [
   // prescription drug names and doses, timeframes to a result (R-01), and the
   // "combinations outperform any single agent" line (R-02). Lite depth: three
   // treatments. Not in config/concern-signoff.json, so no byline until signed;
-  // proposed reviewer is the post's author. Card image is the post's own
-  // illustration, cropped clear of its burned-in title, as an interim.
+  // proposed reviewer is the post's author. Banner and card image are one
+  // AI-generated illustrative photograph (see the banner note below).
   {
     slug: "melasma",
     name: "Melasma",
@@ -1484,6 +1484,16 @@ export const concerns: Concern[] = [
     seoTitle: "Melasma Treatment in Malaysia | Kaiteki",
     seoDescription:
       "Melasma is managed, not cured, and the wrong laser can darken it. A doctor assesses its type and depth first. Book a free consultation at Kaiteki.",
+
+    // ── 01 · AI-generated illustrative photograph (Higgsfield Soul 2.0, outpainted
+    // with FLUX.2 Pro to the banner shape), approved by the owner 2026-10-11. Not a
+    // patient and not a result; the alt says so. Uploaded by hand: the source
+    // binaries are pbanner_melasma(.jpg|_sm.jpg) for the media export folder.
+    banner: {
+      src: "https://cdn.kaiteki.my/concerns/melasma/banner.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/melasma/banner-sm.jpg",
+      alt: "Illustrative photograph: a person with soft brown melasma patches across both cheeks, touching one cheek",
+    },
 
     // ── 02 · process facts, no time-to-result (R-01).
     facts: [
