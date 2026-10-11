@@ -1314,6 +1314,8 @@ export const technology: Technology[] = [
         a: "It varies with age, skin quality, sun exposure and lifestyle. Change develops over months as collagen remodels, and the published Oligio studies followed patients for up to six months. Maintenance sessions are usually part of the plan to help the effect hold.",
       },
     ],
+    reviewedBy: "dr-chew-yuhhui",
+    lastReviewed: "2026-10-11",
     seoTitle: "Oligio Monopolar RF Skin Tightening Malaysia | Kaiteki",
     seoDescription:
       "Oligio is a Korean 6.78 MHz monopolar RF platform used at Kaiteki for mild to moderate facial laxity, with surface cooling and no needles. Book a consultation.",
