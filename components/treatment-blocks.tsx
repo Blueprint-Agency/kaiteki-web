@@ -63,17 +63,6 @@ export function Section({
   );
 }
 
-/** The full-bleed espresso band — the one surfaced band both page types keep,
- *  and the only place the conversion is allowed to be the loudest thing on the
- *  screen. Nothing else on a treatment page carries a background. */
-function EspressoBand({ children }: { children: ReactNode }) {
-  return (
-    <section className="on-dark bg-espresso py-14 text-ink-on-dark sm:py-20">
-      <Container>{children}</Container>
-    </section>
-  );
-}
-
 /** The heading and optional intro that used to sit in `Split`'s gutter. */
 function Lede({ heading, intro }: { heading: ReactNode; intro?: ReactNode }) {
   return (
@@ -266,22 +255,68 @@ export function CtaMid({
   position?: string;
 }) {
   if (!cta) return null;
-  const body = (
-    <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end lg:gap-16">
-      <div>
-        <h2 className="h-section max-w-[18ch]">{cta.heading}</h2>
-        <p className="mt-5 max-w-[54ch] leading-relaxed text-ink-on-dark/80">{cta.body}</p>
-      </div>
-      <WhatsAppButton
-        href={href}
-        size="lg"
-        position={position}
-        label="Ask about this on WhatsApp"
-        className="ring-1 ring-ink-on-dark/60"
+  // The action sits under the copy it answers, not across an empty gutter, and
+  // the right column says what happens after the tap: a cautious visitor is
+  // more likely to message when the next three steps are known. Every step is
+  // copy the site already states elsewhere (hero CTA line, the "Assessment
+  // first" fact), so the band adds no claim of its own.
+  const steps = [
+    { title: "Message us", body: "Send a question, or a photo, on WhatsApp." },
+    {
+      title: "Free consultation",
+      body: "About 20 to 30 minutes, with no obligation to book treatment.",
+    },
+    {
+      title: "Assessment first",
+      body: "A doctor examines your skin and explains the options and risks before any treatment.",
+    },
+  ];
+  return (
+    <section className="on-dark relative isolate overflow-hidden bg-espresso py-14 text-ink-on-dark sm:py-20">
+      {/* Warmth, not decoration: a low mocha glow behind the steps keeps the
+          band from reading as a flat slab, and a hairline frame gives it an edge. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -right-24 -top-32 -z-10 h-[30rem] w-[30rem] rounded-full bg-mocha/25 blur-3xl"
       />
-    </div>
+      <div aria-hidden className="pointer-events-none absolute inset-3 -z-10 rounded-[1.25rem] border border-ink-on-dark/10 sm:inset-4" />
+      <Container>
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:items-center lg:gap-20">
+          <div>
+            <h2 className="h-section max-w-[18ch]">{cta.heading}</h2>
+            <p className="mt-5 max-w-[50ch] leading-relaxed text-ink-on-dark/85">{cta.body}</p>
+            <div className="mt-8 flex flex-col items-start gap-3">
+              <WhatsAppButton
+                href={href}
+                size="lg"
+                position={position}
+                label="Ask about this on WhatsApp"
+                className="w-full shadow-[0_10px_28px_-8px_rgb(0_0_0/0.45)] sm:w-auto"
+              />
+              <p className="text-sm text-ink-on-dark/75">Free consultation, no obligation.</p>
+            </div>
+          </div>
+
+          <ol className="relative border-l border-ink-on-dark/15 pl-8">
+            {steps.map((s, i) => (
+              <li key={s.title} className={`relative ${i < steps.length - 1 ? "pb-8" : ""}`}>
+                <span
+                  aria-hidden
+                  className="absolute -left-[2.95rem] top-0 flex h-[1.875rem] w-[1.875rem] items-center justify-center rounded-full border border-ink-on-dark/35 bg-espresso font-display text-sm text-ink-on-dark"
+                >
+                  {i + 1}
+                </span>
+                <p className="font-display text-lg leading-snug text-ink-on-dark">{s.title}</p>
+                <p className="mt-1.5 max-w-[40ch] text-[0.9375rem] leading-relaxed text-ink-on-dark/75">
+                  {s.body}
+                </p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </Container>
+    </section>
   );
-  return <EspressoBand>{body}</EspressoBand>;
 }
 
 /**
