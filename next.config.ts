@@ -16,9 +16,13 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
     // New blog media lives in Cloudflare R2 (bucket kaiteki-web-prod) behind the
     // existing cdn.kaiteki.my, under a blog/ prefix so it stays clear of the
-    // brand/ objects already there. Migrated legacy media stays in public/:
-    // one deliberate boundary, not a half-and-half drift.
-    // See content/blog/AUTHORING.md §3.
+    // brand/ objects already there. See content/blog/AUTHORING.md §3.
+    //
+    // The site's own images followed on 2026-10-11: everything that was in
+    // public/images/ and public/awards/ now serves from the same paths on the CDN
+    // (/images/**, /awards/**). Only the SEO-pinned files stay in public/: the brand
+    // logo (schema Organization.logo), images/hero/ (site-wide OG/Twitter/schema image),
+    // app icons, and the self-contained ads/ landing bundle.
     //
     // Concern media joins it under a concerns/ prefix (docs/11 §5), treatment media under
     // treatments/ (docs/13 §10). Unlike blog media neither is staged in git — the source
@@ -29,6 +33,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "cdn.kaiteki.my", pathname: "/blog/**" },
       { protocol: "https", hostname: "cdn.kaiteki.my", pathname: "/concerns/**" },
       { protocol: "https", hostname: "cdn.kaiteki.my", pathname: "/treatments/**" },
+      { protocol: "https", hostname: "cdn.kaiteki.my", pathname: "/images/**" },
+      { protocol: "https", hostname: "cdn.kaiteki.my", pathname: "/awards/**" },
     ],
   },
   // Ads landing pages live in public/ads/ but serve from the root URL they're bought on.
