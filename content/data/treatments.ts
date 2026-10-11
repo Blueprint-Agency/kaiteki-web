@@ -111,7 +111,7 @@ export const treatments: Treatment[] = [
     // T-08 — placed at the point of maximum unanswered question.
     ctaMid: {
       heading: "Not sure which applies to you?",
-      body: "A doctor can look at your skin, tell you which type of pigment you have, and say honestly whether a pico laser is the right tool for it. Free consultation, no obligation.",
+      body: "A doctor can look at your skin, tell you which type of pigment you have, and say honestly whether a pico laser is the right tool for it.",
     },
 
     // T-09
@@ -396,7 +396,7 @@ export const treatments: Treatment[] = [
 
     ctaMid: {
       heading: "Not sure whether lifting is what your face needs?",
-      body: "Laxity, volume loss and skin quality look similar in the mirror and are treated differently. A doctor can tell you which one you are actually seeing, and whether HIFU addresses it. Free consultation, no obligation.",
+      body: "Laxity, volume loss and skin quality look similar in the mirror and are treated differently. A doctor can tell you which one you are actually seeing, and whether HIFU addresses it.",
     },
 
     // T-09
@@ -663,7 +663,7 @@ export const treatments: Treatment[] = [
 
     ctaMid: {
       heading: "Not sure whether Ultherapy or HIFU fits your face?",
-      body: "Both address laxity, and they differ in whether the doctor sees the tissue layers while treating. A doctor can tell you whether your laxity is the kind focused ultrasound addresses, and which approach suits your anatomy. Free consultation, no obligation.",
+      body: "Both address laxity, and they differ in whether the doctor sees the tissue layers while treating. A doctor can tell you whether your laxity is the kind focused ultrasound addresses, and which approach suits your anatomy.",
     },
 
     // T-09 — this page's suitability copy plus the Ultherapy System page.
@@ -904,7 +904,7 @@ export const treatments: Treatment[] = [
 
     ctaMid: {
       heading: "Not sure whether a laser or another energy suits your laxity?",
-      body: "Fotona 4D, focused ultrasound and radiofrequency reach tissue in different ways, and one is not automatically better than the other. A doctor will compare the realistic options for your face. Free consultation, no obligation.",
+      body: "Fotona 4D, focused ultrasound and radiofrequency reach tissue in different ways, and one is not automatically better than the other. A doctor will compare the realistic options for your face.",
     },
 
     // T-09 — the SP Dynamis page.
@@ -1128,7 +1128,7 @@ export const treatments: Treatment[] = [
 
     ctaMid: {
       heading: "Not sure whether radiofrequency or another energy fits your skin?",
-      body: "Surface radiofrequency, focused ultrasound and RF microneedling reach tissue in different ways. A doctor can tell you which one your laxity actually calls for. Free consultation, no obligation.",
+      body: "Surface radiofrequency, focused ultrasound and RF microneedling reach tissue in different ways. A doctor can tell you which one your laxity actually calls for.",
     },
 
     // T-09 — this page and the three device pages.
@@ -1353,7 +1353,7 @@ export const treatments: Treatment[] = [
 
     ctaMid: {
       heading: "Not sure which of the three devices suits your skin?",
-      body: "Scarring, pores, pigment and firmness point to different devices and different depths. A doctor can tell you which one you are actually dealing with. Free consultation, no obligation.",
+      body: "Scarring, pores, pigment and firmness point to different devices and different depths. A doctor can tell you which one you are actually dealing with.",
     },
 
     // T-09 — this page's suitability copy plus the three device pages.
@@ -1567,7 +1567,7 @@ export const treatments: Treatment[] = [
 
     ctaMid: {
       heading: "Not sure whether your area is one an applicator can hold?",
-      body: "Not every pocket of fat is one an applicator can draw and hold, and that is something a doctor checks in person. Free consultation, no obligation.",
+      body: "Not every pocket of fat is one an applicator can draw and hold, and that is something a doctor checks in person.",
     },
 
     // T-09 — this page and the Cooltech page.
@@ -2269,7 +2269,7 @@ export const treatments: Treatment[] = [
 
     ctaMid: {
       heading: "Not sure whether you need a filler or a bio-stimulator?",
-      body: "Both are injectables, but one adds volume directly and the other supports your own gradual renewal. A doctor can tell you which your concern calls for. Free consultation, no obligation.",
+      body: "Both are injectables, but one adds volume directly and the other supports your own gradual renewal. A doctor can tell you which your concern calls for.",
     },
 
     // T-09 — this page and the three product pages.
@@ -2455,7 +2455,7 @@ export const treatments: Treatment[] = [
 
     ctaMid: {
       heading: "Wondering whether exosome therapy adds anything to your plan?",
-      body: "It is an adjunct, so whether it belongs in your plan depends on what it would accompany. A doctor will explain what the current evidence does and does not support. Free consultation, no obligation.",
+      body: "It is an adjunct, so whether it belongs in your plan depends on what it would accompany. A doctor will explain what the current evidence does and does not support.",
     },
 
     // T-09
@@ -3422,7 +3422,7 @@ export const treatments: Treatment[] = [
 
     ctaMid: {
       heading: "Not sure whether your hair and skin suit light-based removal?",
-      body: "Hair colour, skin tone and the reason for the growth all change what a course can reasonably do. A doctor can tell you what is realistic before you commit. Free consultation, no obligation.",
+      body: "Hair colour, skin tone and the reason for the growth all change what a course can reasonably do. A doctor can tell you what is realistic before you commit.",
     },
 
     // T-09 — this page and the Alma page.
