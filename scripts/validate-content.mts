@@ -1,24 +1,26 @@
-import { existsSync } from "node:fs";
-import { join } from "node:path";
+import { readFileSync } from "node:fs";
 import { treatments, treatmentBySlug } from "../content/data/treatments.ts";
 import { concerns } from "../content/data/concerns.ts";
 import { technology, technologyBySlug } from "../content/data/technology.ts";
 
-const PUBLIC = join(process.cwd(), "public");
+// Card images live in R2 (cdn.kaiteki.my), not public/, so "exists" means "listed in
+// the upload manifest" — checkable offline, same as the concern/treatment manifests.
+const siteMedia = JSON.parse(readFileSync("config/site-media.json", "utf8"));
+const uploaded = new Set<string>(siteMedia.keys.map((k: string) => siteMedia.publicBase + k));
 const errors: string[] = [];
 const err = (m: string) => errors.push(m);
 
 for (const t of treatments) {
-  if (t.image && !existsSync(join(PUBLIC, t.image))) err(`treatment ${t.slug}: image missing ${t.image}`);
+  if (t.image && !uploaded.has(t.image)) err(`treatment ${t.slug}: image missing ${t.image}`);
   for (const r of t.related) if (!treatmentBySlug(r)) err(`treatment ${t.slug}: related '${r}' not found`);
 }
 for (const c of concerns) {
-  if (!existsSync(join(PUBLIC, c.image))) err(`concern ${c.slug}: image missing ${c.image}`);
+  if (!uploaded.has(c.image)) err(`concern ${c.slug}: image missing ${c.image}`);
   for (const tr of c.treatments) if (!treatmentBySlug(tr)) err(`concern ${c.slug}: treatment '${tr}' not found`);
 }
 for (const x of technology) {
   if (technologyBySlug(x.slug) !== x) err(`technology ${x.slug}: duplicate or unresolved slug`);
-  if (x.image && !existsSync(join(PUBLIC, x.image))) err(`technology ${x.slug}: image missing ${x.image}`);
+  if (x.image && !uploaded.has(x.image)) err(`technology ${x.slug}: image missing ${x.image}`);
   for (const tr of x.treatments) if (!treatmentBySlug(tr)) err(`technology ${x.slug}: treatment '${tr}' not found`);
 }
 

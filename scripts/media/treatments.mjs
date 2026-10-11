@@ -8,8 +8,6 @@
  * device→treatment edge lives in content/data/technology.ts, not in the filename — so the
  * assignment is a table, and every entry in it is a judgement docs/13 §3 records.
  */
-import { readdirSync } from "node:fs";
-import { join } from "node:path";
 import { uniqueKey } from "./load.mjs";
 
 export const folders = ["2. treatments", "3. device and injectables"];
@@ -55,8 +53,8 @@ const FAMILIES = ["banner", "figure", "area", "steps", "logo"];
 const BUCKETS = {
   "~hub-cards": "concern hub card, not treatment media (docs/13 §5)",
   "~partners": "partner or brand mark, no clinical page (docs/13 §8)",
-  "~devices": "already composited into public/images/technology (docs/13 §2)",
-  "~shipped": "already ships from public/ (docs/13 §2)",
+  "~devices": "already composited into cdn images/technology (docs/13 §2)",
+  "~shipped": "already ships from cdn images/ (docs/13 §2)",
   "~zh": "CN duplicate, parked for /zh (docs/13 §8)",
   "~unassigned": "no treatment page reads this (docs/13 §6–§7)",
 };
@@ -103,7 +101,7 @@ const FIGURES = {
   // An explainer graphic rather than treatment photography — docs/13 §3.1 on why
   // ultherapy is the weakest of the four HOLDs.
   "img_WhatCanUltherapyTreat.jpg": "ultherapy",
-  // These two ARE the shipping hero (public/images/treatments), not a second photo.
+  // These two ARE the shipping hero (cdn.kaiteki.my/images/treatments), not a second photo.
   "treatments-Microneedling.jpg": "~shipped",
   "treatments-DoubleEyeLid.jpg": "~shipped",
   // Mesolipolysis is a fat-melting injection with no treatment page of its own.
@@ -124,7 +122,7 @@ const BANNERS = {
 
 /**
  * Manufacturer mark → the treatment its device powers, via content/data/technology.ts.
- * Only the marks NOT already in public/images/tech appear here; the other ten ship today.
+ * Only the marks NOT already in SHIPPED_LOGOS appear here; the other ten ship today.
  * Two have no technology entry at all and are read off the mark itself.
  */
 const LOGOS = {
@@ -146,17 +144,24 @@ const LOGOS = {
 };
 
 /**
- * The marks that already ship, read from the folder that ships them rather than listed
- * here. `docs/13` §3 counts a logo only where the file is *not* already in
- * `public/images/tech`, and a list would be a second copy of that folder free to drift.
- * A `logob_*` in neither this set nor LOGOS is new since the audit: it lands in
- * `~unassigned`, so it is looked at rather than quietly filed as already-shipping.
+ * The marks that already ship, from https://cdn.kaiteki.my/images/tech/. `docs/13` §3
+ * counts a logo only where the file is *not* already there. This used to be read off
+ * `public/images/tech`; that folder moved to R2, so keep this list in step with the
+ * bucket prefix. A `logob_*` in neither this set nor LOGOS is new since the audit: it
+ * lands in `~unassigned`, so it is looked at rather than quietly filed as already-shipping.
  */
-const SHIPPED_LOGOS = new Set(
-  // Anchored to this module, not the cwd: this runs at import time, before the caller's
-  // working directory is anyone's business.
-  readdirSync(join(import.meta.dirname, "../../public/images/tech")),
-);
+const SHIPPED_LOGOS = new Set([
+  "logob_coolsculpting.png",
+  "logob_fotona.png",
+  "logob_onda.png",
+  "logob_picosure.png",
+  "logob_potenza.png",
+  "logob_profhilo.png",
+  "logob_rejuran.png",
+  "logob_sculptra.png",
+  "logob_stellarm22.png",
+  "logob_ultherapy.png",
+]);
 
 export function classify(f) {
   const name = f.name;

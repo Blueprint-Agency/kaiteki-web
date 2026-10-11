@@ -169,7 +169,7 @@ const treatmentMedia = uploadable(treatmentManifest);
 function mediaUrls(c: Concern): [string, string][] {
   return [
     ...(c.banner ? [[c.banner.src, "banner"], [c.banner.sm, "banner.sm"]] : []),
-    ...(c.figures ?? []).map((f) => [f.src, "figures"]),
+    ...(c.figures ?? []).flatMap((f) => (f ? [[f.src, "figures"]] : [])),
     ...(c.slides ?? []).map((s) => [s.src, "slides"]),
     ...(c.illustrations ?? []).map((i) => [i.src, "illustrations"]),
     ...(c.results ?? []).map((r) => [r.src, "results"]),
@@ -178,11 +178,13 @@ function mediaUrls(c: Concern): [string, string][] {
 }
 
 /**
- * Every CDN media src on a treatment. `image` is deliberately absent: the 19 heroes are
- * already-migrated legacy media and stay in public/ (docs/14 §Media delivery).
+ * Every CDN media src on a treatment, the hero `image` included: it lives in
+ * Media Sync at treatments/<slug>/hero.jpg like every other slot.
  */
 function treatmentMediaUrls(t: Treatment): [string, string][] {
   return [
+    ...(t.image ? [[t.image, "image"]] : []),
+    ...(t.procedureImages ?? []).map((p) => [p.src, "procedureImages"]),
     ...(t.manufacturerImages ?? []).map((m) => [m.src, "manufacturerImages"]),
     ...(t.figures ?? []).map((f) => [f.src, "figures"]),
     ...(t.steps ?? []).map((s) => [s.src, "steps"]),
@@ -199,15 +201,8 @@ function treatmentMediaUrls(t: Treatment): [string, string][] {
  * because it has not reached R2 yet; it is reported as a warning on every run until
  * it moves, so the exception cannot be forgotten. Remove the entry when it does.
  */
-const TEMP_LOCAL_MEDIA = new Set([
-  // melasma banner, approved 2026-10-11, owner uploading to R2 later
-  "/images/concerns/melasma-banner.jpg",
-  "/images/concerns/melasma-banner-sm.jpg",
-  // melasma cause photographs, 2026-10-11, same upload
-  "/images/concerns/melasma-cause-uv.jpg",
-  "/images/concerns/melasma-cause-hormones.jpg",
-  "/images/concerns/melasma-cause-genetics.jpg",
-  "/images/concerns/melasma-cause-heat.jpg",
+const TEMP_LOCAL_MEDIA: Set<string> = new Set([
+  // Empty: the melasma banner + cause photographs reached R2 on 2026-10-11.
 ]);
 
 function checkMedia(slug: string, entries: [string, string][], m: ReturnType<typeof uploadable>) {
@@ -315,7 +310,7 @@ for (const c of concerns) {
     if ("caption" in s) fail(c.slug, "Q-17", `slide "${s.src}" carries a caption — slides are captionless`);
   }
   for (const f of c.figures ?? []) {
-    if (!f.caption?.trim()) fail(c.slug, "Q-17", `figure "${f.src}" has no caption (the caption carries the meaning)`);
+    if (f && !f.caption?.trim()) fail(c.slug, "Q-17", `figure "${f.src}" has no caption (the caption carries the meaning)`);
   }
 
   // Q-19 — figures pair with causes by position, so a count mismatch is not a
@@ -347,6 +342,7 @@ for (const t of treatments) {
     [
       ...(t.manufacturerImages ?? []).flatMap((m) => [m.caption, m.alt]),
       ...(t.figures ?? []).map((f) => f.caption),
+      ...(t.procedureImages ?? []).map((p) => p.caption),
       ...(t.steps ?? []).flatMap((s) => [s.label, s.body]),
       ...(t.areas ?? []).map((a) => (typeof a === "string" ? a : a.label)),
     ].join("\n"),
@@ -362,13 +358,16 @@ for (const t of treatments) {
   }
   // Q-17, second data source: a figure's caption carries its meaning, and the
   // image is alt="" precisely because of that — an uncaptioned one says nothing.
-  for (const f of t.figures ?? []) {
+  for (const f of [...(t.figures ?? []), ...(t.procedureImages ?? [])]) {
     if (!f.caption?.trim()) fail(t.slug, "Q-17", `figure "${f.src}" has no caption`);
   }
 
-  // Q-22 — the exclusion is enforced, not remembered. These five have no media
-  // to author (docs/13 §9); a field appearing on one is a mis-wire, not a gift.
-  if (NO_MEDIA.has(t.slug) && treatmentMediaUrls(t).length) {
+  // Q-22 — the exclusion is enforced, not remembered. These have no in-body
+  // media to author (docs/13 §9); a field appearing on one is a mis-wire, not a
+  // gift. The hero and Kaiteki's own procedure photography are exempt: that is
+  // the treatment photography the exclusion was waiting for.
+  const inBody = treatmentMediaUrls(t).filter(([, f]) => f !== "image" && f !== "procedureImages");
+  if (NO_MEDIA.has(t.slug) && inBody.length) {
     fail(t.slug, "Q-22", `declares media but is HOLD/EXCLUDE in docs/13 §9`);
   }
 

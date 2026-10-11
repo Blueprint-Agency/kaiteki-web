@@ -29,8 +29,9 @@ const prefix = manifest.bucketPrefix;
 
 // A `hold` on an asset is a decision recorded in the manifest — an unconfirmed-ownership
 // watermark (ADR-0001 §5), a partner brand mark, or a file no page reads. Held never uploads.
+// A `manual` asset is already in the bucket, uploaded by hand with no source-folder file.
 const held = manifest.assets.filter((a) => a.hold);
-const assets = manifest.assets.filter((a) => !a.hold);
+const assets = manifest.assets.filter((a) => !a.hold && !a.manual);
 for (const a of held) console.log(`held: ${a.source} — ${a.hold}`);
 
 let bytes = 0;

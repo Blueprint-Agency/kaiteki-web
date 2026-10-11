@@ -47,8 +47,8 @@ export interface Treatment {
   slug: string;
   name: string;
   category: NavCategory;
-  /** Photo under /public/images/treatments. Optional — treatments without one
-   *  fall back to the generated motif until real photography lands. */
+  /** Hero + card photo, https://cdn.kaiteki.my/treatments/<slug>/hero.jpg (Media Sync).
+   *  Optional — treatments without one fall back to the generated motif. */
   image?: string;
   /** One compliant sentence — used on cards, hubs and meta. */
   summary: string;
@@ -143,6 +143,9 @@ export interface Treatment {
    *  information. Sources are 156×156 icons and the cell is capped there:
    *  upscaling an icon is visibly soft (Q-19). */
   steps?: { label: string; src: string; body: string }[];
+  /** Kaiteki's own photos of this treatment being performed — the treatment
+   *  twin of `Concern.visitImages`. A device in use, never an outcome. */
+  procedureImages?: { src: string; caption: string }[];
   /** T-17 one-line reason per related treatment slug, framed around what this
    *  treatment does NOT do. */
   relatedReasons?: Record<string, string>;
@@ -169,7 +172,7 @@ export interface Technology {
   type: TechType;
   /** Treatment slugs this powers — the ONLY authored edge. Many-to-many. */
   treatments: string[];
-  /** Photo under /public/images/technology. Optional — items without one fall
+  /** Photo under https://cdn.kaiteki.my/images/technology/. Optional — items without one fall
    *  back to the generated motif until real product photography lands. */
   image?: string;
   /** One compliant, factual sentence. */
@@ -262,7 +265,7 @@ export interface Concern {
   slug: string;
   name: string;
   group: "Skin" | "Face" | "Eyes" | "Hair & Body";
-  /** Photo under /public/images/concerns. */
+  /** Photo under https://cdn.kaiteki.my/images/concerns/. */
   image: string;
   summary: string;
   leadAnswer: string;
@@ -357,8 +360,10 @@ export interface Concern {
   /** C-01 responsive banner pair. The subject sits left in every source asset;
    *  the hero sets object-position:left and puts the H1 in the right half. */
   banner?: { src: string; sm: string; alt: string };
-  /** 2:1 photo, subject left. Shared with `Treatment` (docs/14). */
-  figures?: Figure[];
+  /** 2:1 photo, subject left. Shared with `Treatment` (docs/14). Pairs with
+   *  `drivers.items` by position; `null` holds the place of a cause that has
+   *  no photograph, so the ones after it keep their pairing. */
+  figures?: (Figure | null)[];
   /** 2:1 designed infographic — headline and body already in the artwork. No
    *  caption (it would double-label); alt transcribes the burned-in text. */
   slides?: { src: string; alt: string }[];
@@ -374,6 +379,10 @@ export interface Concern {
     caption: string;
     nativeWidth: number;
     ratio: "1/1" | "5/4" | "1.71/1";
+    /** A drawn explainer standing in where the clinic has no before-and-after
+     *  of its own. When every item is one, the section stops calling itself
+     *  patient results (see `resultsHeading`). */
+    illustration?: true;
   }[];
   /** Treatment-in-progress photography for the first-visit block. Deliberately
    *  separate from `results` so a device photo is never shown as an outcome. */
@@ -393,7 +402,7 @@ export interface Branch {
   city: string;
   state: string;
   region: Region;
-  /** Photo under /public/images/branches. */
+  /** Photo under https://cdn.kaiteki.my/images/branches/. */
   photo: string;
   /** Extra branch photos (storefront, interior) shown after `photo` in the
    *  swipeable cover gallery. */
@@ -457,7 +466,7 @@ export interface Doctor {
   mmc?: string;
   /** Title/role, e.g. "Founder & CEO", "Partner", "Aesthetic Physician". */
   role?: string;
-  /** Photo under /public/images/doctors. */
+  /** Photo under https://cdn.kaiteki.my/images/doctors/. */
   photo: string;
   branches: string[];
   /** Optional authored bio paragraphs for the profile page. Sourced verbatim
@@ -481,7 +490,7 @@ export interface Product {
   /** Manufacturer/brand, e.g. "Kaiteki", "Heliocare". */
   brand: string;
   group: ProductGroup;
-  /** Packshot under /public/images/skincare (migrated from the legacy catalogue).
+  /** Packshot under https://cdn.kaiteki.my/images/skincare/ (migrated from the legacy catalogue).
    *  Optional — cards fall back to the generated motif when absent. */
   image?: string;
   /** Product type shown as the card eyebrow, e.g. "Serum", "Sunscreen". */
@@ -585,7 +594,7 @@ export interface Award {
   issuer: string;
   /** Year or year range, e.g. "2023–2024". Empty if the source didn't date it. */
   period: string;
-  /** Photograph of the physical award, served from /public/awards. */
+  /** Photograph of the physical award, served from https://cdn.kaiteki.my/awards/. */
   image: string;
   /** Descriptive alt text for the award photo. */
   alt: string;
