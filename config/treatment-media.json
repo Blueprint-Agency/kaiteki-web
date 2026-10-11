@@ -184,7 +184,7 @@
       "family": "product",
       "width": 1600,
       "height": 1600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "2. treatments/treatment_body_HairTransplant.png",
@@ -505,7 +505,7 @@
       "family": "figure",
       "width": 800,
       "height": 400,
-      "hold": "already ships from public/ (docs/13 §2)"
+      "hold": "already ships from cdn images/ (docs/13 §2)"
     },
     {
       "source": "2. treatments/treatments-FotonaLaser.jpg",
@@ -555,7 +555,7 @@
       "family": "figure",
       "width": 800,
       "height": 400,
-      "hold": "already ships from public/ (docs/13 §2)"
+      "hold": "already ships from cdn images/ (docs/13 §2)"
     },
     {
       "source": "2. treatments/treatments-Oligio.jpg",
@@ -1155,7 +1155,7 @@
       "family": "logo",
       "width": 250,
       "height": 200,
-      "hold": "already ships from public/ (docs/13 §2)"
+      "hold": "already ships from cdn images/ (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/logo/logob_density.png",
@@ -1181,7 +1181,7 @@
       "family": "logo",
       "width": 250,
       "height": 200,
-      "hold": "already ships from public/ (docs/13 §2)"
+      "hold": "already ships from cdn images/ (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/logo/logob_hydrafacial.png",
@@ -1214,7 +1214,7 @@
       "family": "logo",
       "width": 250,
       "height": 200,
-      "hold": "already ships from public/ (docs/13 §2)"
+      "hold": "already ships from cdn images/ (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/logo/logob_picosure.png",
@@ -1223,7 +1223,7 @@
       "family": "logo",
       "width": 250,
       "height": 200,
-      "hold": "already ships from public/ (docs/13 §2)"
+      "hold": "already ships from cdn images/ (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/logo/logob_plinest.png",
@@ -1240,7 +1240,7 @@
       "family": "logo",
       "width": 250,
       "height": 200,
-      "hold": "already ships from public/ (docs/13 §2)"
+      "hold": "already ships from cdn images/ (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/logo/logob_profhilo.png",
@@ -1249,7 +1249,7 @@
       "family": "logo",
       "width": 250,
       "height": 200,
-      "hold": "already ships from public/ (docs/13 §2)"
+      "hold": "already ships from cdn images/ (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/logo/logob_quadrostar.png",
@@ -1274,7 +1274,7 @@
       "family": "logo",
       "width": 250,
       "height": 200,
-      "hold": "already ships from public/ (docs/13 §2)"
+      "hold": "already ships from cdn images/ (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/logo/logob_restylane.png",
@@ -1299,7 +1299,7 @@
       "family": "logo",
       "width": 250,
       "height": 200,
-      "hold": "already ships from public/ (docs/13 §2)"
+      "hold": "already ships from cdn images/ (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/logo/logob_silkpeel.png",
@@ -1316,7 +1316,7 @@
       "family": "logo",
       "width": 250,
       "height": 200,
-      "hold": "already ships from public/ (docs/13 §2)"
+      "hold": "already ships from cdn images/ (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/logo/logob_sylfirm.png",
@@ -1333,7 +1333,7 @@
       "family": "logo",
       "width": 250,
       "height": 200,
-      "hold": "already ships from public/ (docs/13 §2)"
+      "hold": "already ships from cdn images/ (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_BTLExilis.png",
@@ -1342,7 +1342,7 @@
       "family": "device",
       "width": 300,
       "height": 450,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_Cooltech.png",
@@ -1351,7 +1351,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_DensityRF.png",
@@ -1360,7 +1360,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_DermaV.png",
@@ -1369,7 +1369,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_HIFU.webp",
@@ -1378,7 +1378,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_Morpheus8.png",
@@ -1387,7 +1387,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_Oligio.png",
@@ -1396,7 +1396,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_alma.png",
@@ -1405,7 +1405,7 @@
       "family": "device",
       "width": 294,
       "height": 300,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_botox.png",
@@ -1414,7 +1414,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_co2laser.png",
@@ -1423,7 +1423,7 @@
       "family": "device",
       "width": 500,
       "height": 500,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_co2laser.webp",
@@ -1432,7 +1432,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_coolsculpting.png",
@@ -1441,7 +1441,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_fillers.png",
@@ -1450,7 +1450,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_fotona.png",
@@ -1459,7 +1459,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_fotonapqx.png",
@@ -1468,7 +1468,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_lifterav.png",
@@ -1477,7 +1477,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_m22.png",
@@ -1486,7 +1486,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_morexel.png",
@@ -1495,7 +1495,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_onda.png",
@@ -1504,7 +1504,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_picoplus.png",
@@ -1513,7 +1513,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_picosure.webp",
@@ -1522,7 +1522,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_potenza.png",
@@ -1531,7 +1531,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_proyellow.png",
@@ -1540,7 +1540,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_schwarzy.png",
@@ -1549,7 +1549,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_silkpeel.png",
@@ -1558,7 +1558,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/machine_skinbooster.png",
@@ -1567,7 +1567,7 @@
       "family": "device",
       "width": 600,
       "height": 600,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/mp_service_rejuran.jpg",
@@ -1608,7 +1608,7 @@
       "family": "product",
       "width": 1735,
       "height": 1410,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/product-plinest-treatment.png",
@@ -1617,7 +1617,7 @@
       "family": "product",
       "width": 358,
       "height": 358,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/product-profhilo.png",
@@ -1626,7 +1626,7 @@
       "family": "product",
       "width": 428,
       "height": 446,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/product_DeusadermLido.jpg",
@@ -1635,7 +1635,7 @@
       "family": "product",
       "width": 1735,
       "height": 1410,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/product_beletero.jpg",
@@ -1644,7 +1644,7 @@
       "family": "product",
       "width": 1735,
       "height": 1410,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/product_cromasaypha.jpg",
@@ -1653,7 +1653,7 @@
       "family": "product",
       "width": 1735,
       "height": 1410,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/product_ellanse.jpg",
@@ -1662,7 +1662,7 @@
       "family": "product",
       "width": 1735,
       "height": 1410,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/product_gouri.jpg",
@@ -1671,7 +1671,7 @@
       "family": "product",
       "width": 1735,
       "height": 1410,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/product_juverderm.jpg",
@@ -1680,7 +1680,7 @@
       "family": "product",
       "width": 1735,
       "height": 1410,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/product_mastelli.jpg",
@@ -1689,7 +1689,7 @@
       "family": "product",
       "width": 1735,
       "height": 1410,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/product_profhilo.jpg",
@@ -1698,7 +1698,7 @@
       "family": "product",
       "width": 1735,
       "height": 1410,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/product_radiesse.jpg",
@@ -1707,7 +1707,7 @@
       "family": "product",
       "width": 1735,
       "height": 1410,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/product_restylane.jpg",
@@ -1716,7 +1716,7 @@
       "family": "product",
       "width": 1735,
       "height": 1410,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/product_sculptra.jpg",
@@ -1725,7 +1725,7 @@
       "family": "product",
       "width": 1735,
       "height": 1410,
-      "hold": "already composited into public/images/technology (docs/13 §2)"
+      "hold": "already composited into cdn images/technology (docs/13 §2)"
     },
     {
       "source": "3. device and injectables/services_wonderface1.jpg",

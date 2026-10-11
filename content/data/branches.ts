@@ -27,7 +27,7 @@ const STD_SPEC = [
 export const branches: Branch[] = [
   {
     slug: "mont-kiara", name: "Mont Kiara", city: "Kuala Lumpur", state: "WP Kuala Lumpur", region: "Kuala Lumpur",
-    photo: "/images/branches/mont-kiara.jpg",
+    photo: "https://cdn.kaiteki.my/images/branches/mont-kiara.jpg",
     address: "LOT LG3-2-LG3-3A, LG 3 Level, ARCORIS Plaza, 10 Jalan Kiara, Mont Kiara, 50480 Kuala Lumpur",
     phone: "+6011-3332 5126", hours: STD_HOURS, hoursSpec: STD_SPEC,
     mapUrl: "https://maps.app.goo.gl/BRJmHruQb9QMEYVE6",
@@ -41,7 +41,7 @@ export const branches: Branch[] = [
   },
   {
     slug: "cheras", name: "Cheras", city: "Kuala Lumpur", state: "WP Kuala Lumpur", region: "Kuala Lumpur",
-    photo: "/images/branches/cheras.jpg",
+    photo: "https://cdn.kaiteki.my/images/branches/cheras.jpg",
     address: "G-11, Wisma Aman Elite, Jalan Desa Aman 1, Desa Aman, 56100 Kuala Lumpur",
     phone: "+6010-381 8170", hours: STD_HOURS, hoursSpec: STD_SPEC,
     mapUrl: "https://maps.app.goo.gl/o1ZjrDXVU63RpjbM7",
@@ -55,7 +55,7 @@ export const branches: Branch[] = [
   },
   {
     slug: "bukit-jalil", name: "Bukit Jalil", city: "Kuala Lumpur", state: "WP Kuala Lumpur", region: "Kuala Lumpur",
-    photo: "/images/branches/bukit-jalil.jpg",
+    photo: "https://cdn.kaiteki.my/images/branches/bukit-jalil.jpg",
     address: "C-5-G, Jalil Link 2, No 5, Jalan Jalil Perkasa 1, Bukit Jalil, 57000 Kuala Lumpur",
     phone: "+6011-3301 7188", hours: STD_HOURS, hoursSpec: STD_SPEC,
     mapUrl: "https://maps.app.goo.gl/eQaG35pEVW5RPjGx8",
@@ -70,7 +70,7 @@ export const branches: Branch[] = [
   {
     slug: "four-seasons-kl", name: "Four Seasons KL", city: "Kuala Lumpur", state: "WP Kuala Lumpur", region: "Kuala Lumpur",
     alsoKnownAs: "La Jung Clinic by Kaiteki",
-    photo: "/images/branches/four-seasons-kl.jpg",
+    photo: "https://cdn.kaiteki.my/images/branches/four-seasons-kl.jpg",
     address: "L4A-1, Level 4A, Shoppes at Four Seasons Place-KL, No 145 Jalan Ampang, 50450 Kuala Lumpur",
     phone: "+6011-1427 8916",
     hours: ["Mon–Wed, Fri: 10am–7pm", "Sat–Sun: 10:30am–6pm", "Closed Thursday"],
@@ -90,7 +90,7 @@ export const branches: Branch[] = [
   },
   {
     slug: "petaling-jaya", name: "Petaling Jaya", city: "Petaling Jaya", state: "Selangor", region: "Selangor",
-    photo: "/images/branches/petaling-jaya.jpg",
+    photo: "https://cdn.kaiteki.my/images/branches/petaling-jaya.jpg",
     address: "B-1-03, The Hub SS2, 19 Sentral, Jalan Harapan, Seksyen 19, 46300 Petaling Jaya, Selangor",
     phone: "+6010-368 1400", hours: STD_HOURS, hoursSpec: STD_SPEC,
     mapUrl: "https://maps.app.goo.gl/nm3aAT2CikD3pXLb8",
@@ -104,7 +104,7 @@ export const branches: Branch[] = [
   },
   {
     slug: "kota-kemuning", name: "Kota Kemuning", city: "Shah Alam", state: "Selangor", region: "Selangor",
-    photo: "/images/branches/kota-kemuning.jpg",
+    photo: "https://cdn.kaiteki.my/images/branches/kota-kemuning.jpg",
     address: "6-1, 8 Jalan Anggerik Vanilla BE31/BE, Kota Kemuning, Seksyen 31, 40460 Shah Alam, Selangor",
     phone: "+6012-686 6818", hours: STD_HOURS, hoursSpec: STD_SPEC,
     mapUrl: "https://maps.app.goo.gl/2ymU6QX2maTupLWJ9",
@@ -118,7 +118,7 @@ export const branches: Branch[] = [
   },
   {
     slug: "southkey-johor-bahru", name: "Southkey, Johor Bahru", city: "Johor Bahru", state: "Johor", region: "Johor",
-    photo: "/images/branches/southkey-johor-bahru.jpg",
+    photo: "https://cdn.kaiteki.my/images/branches/southkey-johor-bahru.jpg",
     address: "No 01-10 Block G, Komersil Southkey Mozek, Persiaran Southkey 1, 80150 Kota Southkey, Johor",
     phone: "+6017-358 8128", hours: STD_HOURS, hoursSpec: STD_SPEC,
     mapUrl: "https://maps.app.goo.gl/ZZE3nJPccPvcL8Sp9",
@@ -133,8 +133,8 @@ export const branches: Branch[] = [
   {
     slug: "pelangi-johor-bahru", name: "Pelangi, Johor Bahru", city: "Johor Bahru", state: "Johor", region: "Johor",
     // Pre-cropped to the 4:3 cover frame (storefront nudged up, reception right).
-    photo: "/images/branches/pelangi-johor-bahru-2.jpg",
-    photos: ["/images/branches/pelangi-johor-bahru-3.jpg"],
+    photo: "https://cdn.kaiteki.my/images/branches/pelangi-johor-bahru-2.jpg",
+    photos: ["https://cdn.kaiteki.my/images/branches/pelangi-johor-bahru-3.jpg"],
     address: "12, Blok C, Pusat Komersial Pelangi, Jln Sri Pelangi 4, Taman Pelangi, 80400 Johor Bahru, Johor",
     phone: "+6016-930 0138", hours: STD_HOURS, hoursSpec: STD_SPEC,
     mapUrl: "https://maps.app.goo.gl/pg1Y6ouZFg7QAPZL6",
@@ -148,7 +148,7 @@ export const branches: Branch[] = [
   },
   {
     slug: "kota-kinabalu", name: "Kota Kinabalu", city: "Kota Kinabalu", state: "Sabah", region: "Sabah",
-    photo: "/images/branches/kota-kinabalu.jpg",
+    photo: "https://cdn.kaiteki.my/images/branches/kota-kinabalu.jpg",
     address: "Lot 1-45/46, First Floor, KK Times Square, Imago Shopping Mall, Phase 2, Off Coastal Highway, 88100 Kota Kinabalu, Sabah",
     phone: "+6014-823 1688",
     hours: ["Daily: 10:30am–7pm"],

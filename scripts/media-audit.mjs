@@ -90,6 +90,12 @@ if (process.argv.includes("--manifest")) {
       ...(f.hold ? { hold: f.hold } : {}),
     })),
   };
+  // `manual` assets were uploaded by hand and have no file in the source folder, so the
+  // scan can't see them; carry them over or a regenerate would 404 their pages.
+  try {
+    const previous = JSON.parse(readFileSync(cfg.manifestPath, "utf8"));
+    manifest.assets.push(...previous.assets.filter((a) => a.manual));
+  } catch {}
   writeFileSync(cfg.manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
   const held = files.filter((f) => f.hold).length;
   console.log(`${cfg.manifestPath}: ${files.length} assets, ${held} held back`);
