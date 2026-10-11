@@ -45,8 +45,11 @@ const HOLDS = {
   "mp_service_other1.jpg": "ownership unconfirmed (docs/11 §3.1)",
 };
 
-/** Concern pages that ship text-only — no media wiring (docs/11 §4). */
-const EXCLUDED = new Set(["enlarged-pores", "vascular-lesions", "birthmark", "excessive-sweating"]);
+/**
+ * Concern pages that ship text-only — no media wiring (docs/11 §4). Empty since 2026-10:
+ * the four pages it held re-entered the build once the clinic supplied their assets.
+ */
+const EXCLUDED = new Set([]);
 
 /**
  * Files whose filename names no concern, or names one that misleads. Every entry here is

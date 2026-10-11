@@ -930,6 +930,60 @@
       "height": 667
     },
     {
+      "source": "1. concerns/pbanner_birthmark.jpg",
+      "key": "concerns/birthmark/banner.jpg",
+      "concern": "birthmark",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "credit": "StockSnap CC0, photo MLJXK2FAUO (mirrored, cropped)"
+    },
+    {
+      "source": "1. concerns/pbanner_birthmark_sm.jpg",
+      "key": "concerns/birthmark/banner-sm.jpg",
+      "concern": "birthmark",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "credit": "StockSnap CC0, photo MLJXK2FAUO (mirrored, cropped)"
+    },
+    {
+      "source": "1. concerns/pbanner_sweating.jpg",
+      "key": "concerns/excessive-sweating/banner.jpg",
+      "concern": "excessive-sweating",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "credit": "StockSnap CC0, photo EXFBXHHFCI (mirrored, cropped)"
+    },
+    {
+      "source": "1. concerns/pbanner_sweating_sm.jpg",
+      "key": "concerns/excessive-sweating/banner-sm.jpg",
+      "concern": "excessive-sweating",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "credit": "StockSnap CC0, photo EXFBXHHFCI (mirrored, cropped)"
+    },
+    {
+      "source": "1. concerns/pbanner_telangiectasia.jpg",
+      "key": "concerns/vascular-lesions/banner.jpg",
+      "concern": "vascular-lesions",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "credit": "StockSnap CC0, photo P1KLMCNBPU (cropped)"
+    },
+    {
+      "source": "1. concerns/pbanner_telangiectasia_sm.jpg",
+      "key": "concerns/vascular-lesions/banner-sm.jpg",
+      "concern": "vascular-lesions",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "credit": "StockSnap CC0, photo P1KLMCNBPU (cropped)"
+    },
+    {
       "source": "1. concerns/pbanner_slimming.jpg",
       "key": "concerns/body-slimming/banner-2.jpg",
       "concern": "body-slimming",
@@ -1411,6 +1465,22 @@
       "family": "results",
       "width": 564,
       "height": 330
+    },
+    {
+      "source": "4. before after/birthmark_pigmented_01.png",
+      "key": "concerns/birthmark/before-after-01.png",
+      "concern": "birthmark",
+      "family": "results",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "source": "4. before after/birthmark_portwine_02.png",
+      "key": "concerns/birthmark/before-after-02.png",
+      "concern": "birthmark",
+      "family": "results",
+      "width": 1080,
+      "height": 1080
     },
     {
       "source": "4. before after/img_ba_acne_01.jpg",
@@ -1914,12 +1984,44 @@
       "height": 1410
     },
     {
+      "source": "4. before after/mp_service_fineline_forehead_01.png",
+      "key": "concerns/fine-lines-wrinkles/before-after-02.png",
+      "concern": "fine-lines-wrinkles",
+      "family": "results",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "source": "4. before after/mp_service_fineline_forehead_02.png",
+      "key": "concerns/fine-lines-wrinkles/before-after-03.png",
+      "concern": "fine-lines-wrinkles",
+      "family": "results",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "source": "4. before after/mp_service_fineline_frown_03.png",
+      "key": "concerns/fine-lines-wrinkles/before-after-04.png",
+      "concern": "fine-lines-wrinkles",
+      "family": "results",
+      "width": 1080,
+      "height": 1080
+    },
+    {
       "source": "4. before after/mp_service_proyellow.jpg",
       "key": "concerns/pigmentation/before-after-14.jpg",
       "concern": "pigmentation",
       "family": "results",
       "width": 1735,
       "height": 1410
+    },
+    {
+      "source": "4. before after/vein_dermav_01.png",
+      "key": "concerns/vascular-lesions/before-after-05.png",
+      "concern": "vascular-lesions",
+      "family": "results",
+      "width": 1080,
+      "height": 1080
     }
   ]
 }
