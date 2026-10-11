@@ -357,8 +357,10 @@ export interface Concern {
   /** C-01 responsive banner pair. The subject sits left in every source asset;
    *  the hero sets object-position:left and puts the H1 in the right half. */
   banner?: { src: string; sm: string; alt: string };
-  /** 2:1 photo, subject left. Shared with `Treatment` (docs/14). */
-  figures?: Figure[];
+  /** 2:1 photo, subject left. Shared with `Treatment` (docs/14). Pairs with
+   *  `drivers.items` by position; `null` holds the place of a cause that has
+   *  no photograph, so the ones after it keep their pairing. */
+  figures?: (Figure | null)[];
   /** 2:1 designed infographic — headline and body already in the artwork. No
    *  caption (it would double-label); alt transcribes the burned-in text. */
   slides?: { src: string; alt: string }[];
@@ -374,6 +376,10 @@ export interface Concern {
     caption: string;
     nativeWidth: number;
     ratio: "1/1" | "5/4" | "1.71/1";
+    /** A drawn explainer standing in where the clinic has no before-and-after
+     *  of its own. When every item is one, the section stops calling itself
+     *  patient results (see `resultsHeading`). */
+    illustration?: true;
   }[];
   /** Treatment-in-progress photography for the first-visit block. Deliberately
    *  separate from `results` so a device photo is never shown as an outcome. */

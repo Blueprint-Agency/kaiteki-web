@@ -9,6 +9,7 @@ import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { ArrowRight } from "@/components/icons";
 import { VariantTabs } from "@/components/VariantTabs";
 import { treatmentHref } from "@/content/data/treatments";
+import { resultsHeading } from "@/lib/concern-toc";
 import type { Concern, LeadIn } from "@/lib/types";
 import type { Treatment } from "@/lib/types";
 
@@ -193,7 +194,7 @@ export function ResultsBlock({ items }: { items?: Concern["results"] }) {
   return (
     <section id="results" className={`py-14 sm:py-20 ${CLEAR_HEADER}`}>
       <Container>
-        <h2 className="h-section">Results from Kaiteki patients</h2>
+        <h2 className="h-section">{resultsHeading(items)}</h2>
         <ResultsGallery items={items} />
         <div className="mt-10 max-w-[70ch]">
           <ResultsDisclaimer />

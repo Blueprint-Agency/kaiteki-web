@@ -27,6 +27,11 @@ import type { Heading } from "@/lib/blog";
 export const headingAnchor = (h: string) =>
   h.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
+/** The results section's h2. A section holding only illustrations must not be
+ *  headed as patient results — that is the claim the illustration avoids. */
+export const resultsHeading = (results: NonNullable<Concern["results"]>) =>
+  results.every((r) => r.illustration) ? "How treatment works, illustrated" : "Results from Kaiteki patients";
+
 export function concernToc(c: Concern, hasTechnology: boolean): Heading[] {
   const entries: (Heading | false | undefined | 0)[] = [
     ...(c.sections ?? []).map((s) => ({ id: headingAnchor(s.heading), text: s.heading, level: 2 as const })),
@@ -40,7 +45,7 @@ export function concernToc(c: Concern, hasTechnology: boolean): Heading[] {
     },
     c.treatments.length > 0 && { id: "treatments", text: "Treatment options at Kaiteki", level: 2 as const },
     !!c.compare?.rows.length && { id: "compare", text: "Which treatment suits which type?", level: 2 as const },
-    !!c.results?.length && { id: "results", text: "Results from Kaiteki patients", level: 2 as const },
+    !!c.results?.length && { id: "results", text: resultsHeading(c.results), level: 2 as const },
     hasTechnology && { id: "technology", text: "Technology used", level: 2 as const },
     !!c.risks?.items.length && { id: "risks", text: "Risks and what to expect", level: 2 as const },
     !!c.firstVisit?.steps.length && { id: "first-visit", text: "What your first visit involves", level: 2 as const },

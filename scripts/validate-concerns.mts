@@ -169,7 +169,7 @@ const treatmentMedia = uploadable(treatmentManifest);
 function mediaUrls(c: Concern): [string, string][] {
   return [
     ...(c.banner ? [[c.banner.src, "banner"], [c.banner.sm, "banner.sm"]] : []),
-    ...(c.figures ?? []).map((f) => [f.src, "figures"]),
+    ...(c.figures ?? []).flatMap((f) => (f ? [[f.src, "figures"]] : [])),
     ...(c.slides ?? []).map((s) => [s.src, "slides"]),
     ...(c.illustrations ?? []).map((i) => [i.src, "illustrations"]),
     ...(c.results ?? []).map((r) => [r.src, "results"]),
@@ -308,7 +308,7 @@ for (const c of concerns) {
     if ("caption" in s) fail(c.slug, "Q-17", `slide "${s.src}" carries a caption — slides are captionless`);
   }
   for (const f of c.figures ?? []) {
-    if (!f.caption?.trim()) fail(c.slug, "Q-17", `figure "${f.src}" has no caption (the caption carries the meaning)`);
+    if (f && !f.caption?.trim()) fail(c.slug, "Q-17", `figure "${f.src}" has no caption (the caption carries the meaning)`);
   }
 
   // Q-19 — figures pair with causes by position, so a count mismatch is not a
