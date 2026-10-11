@@ -40,13 +40,14 @@ export const technology: Technology[] = [
       {
         heading: "How the 755nm picosecond platform works",
         body: [
-          "At 755nm, absorption by melanin is comparatively high relative to longer wavelengths, so the pulse can be aimed at pigment clusters with less energy spilling into surrounding tissue. Cynosure states that the 755nm system is indicated for tattoo and benign pigmented lesion removal, and, with the Platinum Focus™ lens array, for acne scars and wrinkles in skin types I to IV. The optional 532nm delivery is indicated by the manufacturer for tattoo removal in skin types I to III, and the optional 1064nm delivery for tattoo and benign pigmented lesions, including black ink in darker skin types.",
+          "At 755nm, absorption by melanin is comparatively high relative to longer wavelengths, so the pulse can be aimed at pigment clusters with less energy spilling into surrounding tissue.",
           "Delivery is adjustable rather than one-size-fits-all: Cynosure lists a zoom handpiece covering 2–6mm and fixed handpieces at 5, 6, 8 and 10mm, a flat lens for pigment work, and the focus lens array, which concentrates energy into microscopic points in the epidermis for skin revitalisation passes. A shortened-pulse turbo mode is offered for stubborn tattoo ink. Fluence, spot size and lens are selected by the treating doctor for your skin type and concern; changes develop gradually over a course and vary between individuals.",
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "Which pigment and ink does each PicoSure wavelength suit?",
         body: [
+          "Cynosure states that the 755nm system is indicated for tattoo and benign pigmented lesion removal, and, with the Platinum Focus™ lens array, for acne scars and wrinkles in skin types I to IV. The optional 532nm delivery is indicated by the manufacturer for tattoo removal in skin types I to III, and the optional 1064nm delivery for tattoo and benign pigmented lesions, including black ink in darker skin types.",
           "Within Kaiteki's Pico laser treatment, PicoSure is commonly considered for the concerns below. It is not appropriate for everyone, and a consultation determines whether it is suitable for you and whether a different wavelength or device would be a better fit.",
         ],
         list: [
@@ -59,40 +60,46 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Why does skin tone matter more with PicoSure's 755nm?",
         body: [
           "Because 755nm is well absorbed by melanin, skin tone matters more with this wavelength than with a 1064nm pico laser. That is precisely why your doctor may recommend PicoSure for one patient and a 1064nm platform such as Fotona PQX for another, and why the manufacturer's own indications are limited by skin type for certain wavelengths. A doctor assesses your Fitzpatrick skin type, pigment pattern and tendency to pigment after inflammation before proposing settings.",
+        ],
+      },
+      {
+        heading: "When should PicoSure be postponed, and who should avoid it?",
+        body: [
           "A pico laser may not be suitable during pregnancy or breastfeeding, on recently tanned or sunburnt skin, with active skin infection or inflammation in the treatment area, with a history of keloid scarring, or while you are taking medications that increase light sensitivity, oral isotretinoin among them. Please bring your full medical, medication and skincare history to consultation, including any previous laser or peel treatments, so the doctor can advise safely.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What happens at a PicoSure session, and why does pigment darken first?",
         body: [
           "Your first visit is a doctor consultation and skin assessment rather than a treatment. If PicoSure is appropriate, the doctor may treat a small test area first, particularly for dermal pigment or for tattoo ink of unknown composition. On a treatment day the skin is cleansed, eye shields are fitted, and topical numbing may be applied where the plan calls for it.",
           "The handpiece is then passed over the area in overlapping passes. Most patients describe brief snapping or prickling sensations rather than sustained pain, and pigment lesions may look temporarily darker or greyish immediately afterwards. A facial pigment session is usually a short appointment, often around 20 to 40 minutes including preparation, while tattoo work depends on size. Courses are typically several sessions spaced a few weeks apart to allow the skin to clear treated pigment between visits; your doctor will set the interval for your case.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
           "Downtime is usually short but varies between individuals and with the intensity used. Mild redness, a warm sensation and slight swelling are common for a few hours to a day or two. Where pigment has been targeted directly, small darkened flecks or fine crusting may appear and then flake away over roughly one to two weeks. These should be left alone rather than picked.",
           "Daily broad-spectrum sunscreen and strict sun avoidance are important afterwards, because sun exposure between sessions is one of the main reasons pigment concerns return. Keep skincare gentle and pause actives such as retinoids and acids until your doctor confirms it is fine to resume. You will be given aftercare instructions specific to the area treated.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "Can PicoSure darken or lighten the skin?",
         body: [
           "As with any medical laser procedure, PicoSure carries risks, and these are explained to you at consultation before anything is booked. Temporary effects can include redness, swelling, pinpoint bruising, crusting, and either darkening (post-inflammatory hyperpigmentation) or lightening of the treated skin, which is a particular consideration for melasma and for deeper skin tones. Blistering and scarring are uncommon. Risk is reduced, though never removed, when the device and settings are appropriately selected and the treatment is performed by a trained doctor.",
         ],
       },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "What drives session count is the depth and type of pigment, the size of the area, your skin's response between visits and, for tattoos, the ink colours and how many layers were applied. Superficial sun spots generally need fewer visits than dermal pigment or a dense multicolour tattoo, and some pigment conditions such as melasma are managed on an ongoing basis rather than finished in a fixed number of sessions.",
-          "Cost follows the same variables: area, session count and whether pico work is combined with other steps in your plan. Pricing is discussed at consultation rather than quoted online, so the figure you are given reflects your actual assessed plan. Message us on WhatsApp to arrange a consultation.",
-        ],
-      },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so the figure you are given reflects your actual assessed plan. What moves it:",
+      factors: [
+        "The depth and type of pigment. Superficial sun spots generally need fewer visits than dermal pigment or a dense multicolour tattoo.",
+        "The size of the area.",
+        "For tattoos, the ink colours and how many layers were applied.",
+        "Your skin's response between visits.",
+        "Whether pico work is combined with other steps in your plan.",
+      ],
+      outro:
+        "Some pigment conditions such as melasma are managed on an ongoing basis rather than finished in a fixed number of sessions.",
+    },
     faqs: [
       {
         q: "How is PicoSure different from a 1064nm pico laser?",
@@ -145,13 +152,14 @@ export const technology: Technology[] = [
       {
         heading: "How it works: 1064nm, 532nm and structured pulses",
         body: [
-          "The 1064nm Nd:YAG wavelength penetrates more deeply and is absorbed relatively little by melanin in the epidermis, which is why it is the wavelength usually chosen for deeper pigment and for darker skin types. The frequency-doubled 532nm output is more strongly absorbed by superficial pigment and by red-family tattoo inks. Both are delivered as very short pulses, and Fotona's ASP technology governs the structure of each pulse so the doctor can vary how the energy is packaged for the target. Fotona also builds in EFC (Energy Feedback Control), which monitors the energy of each individual pulse against the setting the practitioner selected.",
+          "Both wavelengths are delivered as very short pulses, and Fotona's ASP technology governs the structure of each pulse so the doctor can vary how the energy is packaged for the target. Fotona also builds in EFC (Energy Feedback Control), which monitors the energy of each individual pulse against the setting the practitioner selected.",
           "Delivery matters as much as the source. Alongside conventional full-beam handpieces, Fotona offers fractional handpieces for its patented FracTAT® method, in which micro-holes are first created with a fractional handpiece before a full-beam pass; Fotona explains that these micro-holes reduce frosting and act as pressure-relief ducts so gases formed during tattoo clearance can escape. A related two-step protocol, FracRevive®, combines full-spot brushing with fractional stamping for photorejuvenation. Wavelength, handpiece, spot size and energy are all selected by the treating doctor, and changes develop gradually across a course and vary between individuals.",
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "1064nm or 532nm: which wavelength for which pigment?",
         body: [
+          "The 1064nm Nd:YAG wavelength penetrates more deeply and is absorbed relatively little by melanin in the epidermis, which is why it is the wavelength usually chosen for deeper pigment and for darker skin types. The frequency-doubled 532nm output is more strongly absorbed by superficial pigment and by red-family tattoo inks.",
           "Within Kaiteki's Pico laser treatment, StarWalker PQX is commonly considered for the concerns listed below. It is not suitable for everyone, and a consultation establishes whether it is appropriate for you and which wavelength is the sensible starting point.",
         ],
         list: [
@@ -164,40 +172,45 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Why is a test patch used before PQX on melasma or deeper skin?",
         body: [
           "The 1064nm wavelength's low melanin absorption is the practical reason a doctor may prefer this platform for deeper Fitzpatrick skin types or for pigment that sits deeper in the skin. That does not make it universally safe: settings still have to be matched to your skin, and a test patch is often used first for dermal pigment, melasma or a tattoo whose ink composition is unknown.",
+        ],
+      },
+      {
+        heading: "What would delay or rule out a PQX session?",
+        body: [
           "A picosecond laser may not be suitable during pregnancy or breastfeeding, on recently tanned or sunburnt skin, over active infection, eczema or open wounds in the area, where you have a history of keloid scarring, or while you are taking photosensitising medication including oral isotretinoin. Please share your full medical, medication and treatment history at consultation, including previous lasers, peels or injectables in the area, so the doctor can advise safely.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What happens during a PQX session, and why does tattoo ink frost?",
         body: [
           "Every plan starts with a doctor consultation and skin assessment, not a treatment. If StarWalker PQX is appropriate, the doctor decides which wavelength and handpiece to use and may treat a small test area before committing to a full session. On the day, the skin is cleansed, eye protection is fitted, and topical numbing may be used where the doctor considers it appropriate, more often for tattoo work than for a light toning pass.",
           "During the pass you will hear rapid clicking and feel brief snapping or hot-pinprick sensations. Superficial pigment may whiten or grey momentarily, and treated tattoo areas commonly frost. A facial session is usually a short appointment, often in the region of 20 to 40 minutes including preparation, while tattoo sessions scale with size and the number of steps in a FracTAT® protocol. Courses are typically several sessions a few weeks apart so the skin can clear treated pigment in between; tattoo courses are usually spaced further apart. Your doctor sets the interval.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
           "Downtime is generally short but varies with the intensity used and between individuals. Expect the possibility of redness, warmth and mild swelling for a few hours to a couple of days. Where pigment or ink was targeted directly, pinpoint darkening, fine crusting or small scabs can appear and then flake off over roughly one to two weeks; fractional passes may leave a sandpaper-like texture briefly. Let all of it shed naturally.",
           "Daily broad-spectrum sunscreen and genuine sun avoidance between sessions are essential, and gentle cleansing with actives paused until your doctor clears you. Tattoo areas may need a dressing and specific wound-care instructions. Your doctor will give aftercare guidance matched to the area and the protocol used.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "What are the risks of PQX, and why is melasma approached cautiously?",
         body: [
           "As with any medical laser, StarWalker PQX carries risks, which are explained at consultation before treatment is arranged. Temporary effects can include redness, swelling, pinpoint bleeding or bruising, crusting, and either darkening or lightening of the treated skin; melasma in particular can behave unpredictably and is approached cautiously. Blistering, infection of a crusted area and scarring are uncommon. Risk is reduced, but never eliminated, when the wavelength and settings are appropriately selected and the treatment is performed by a trained doctor.",
         ],
       },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "Session count is driven by how deep the pigment sits, the size of the area, how your skin clears pigment between visits, and for tattoos the ink colours, density and layering. A small black amateur tattoo behaves very differently from a dense multicolour piece. Fractional protocols add steps to a session, which also affects appointment length.",
-          "Cost tracks the same variables, plus whether pico work is combined with other steps in your plan. Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. Message us on WhatsApp to arrange a consultation.",
-        ],
-      },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. What moves it:",
+      factors: [
+        "How deep the pigment sits.",
+        "The size of the area.",
+        "How your skin clears pigment between visits.",
+        "For tattoos, the ink colours, density and layering. A small black amateur tattoo behaves very differently from a dense multicolour piece.",
+        "Fractional protocols, which add steps to a session and affect appointment length.",
+        "Whether pico work is combined with other steps in your plan.",
+      ],
+    },
     faqs: [
       {
         q: "What is the difference between Fotona PQX and PicoSure?",
@@ -243,7 +256,7 @@ export const technology: Technology[] = [
       {
         heading: "What is Fotona SP Dynamis?",
         body: [
-          "SP Dynamis is a multi-application aesthetic laser platform from Fotona (Slovenia), and it is the machine behind Kaiteki's Fotona 4D facial treatment. Its defining feature is that it houses two complementary laser sources in one system: an Er:YAG laser at 2940nm and an Nd:YAG laser at 1064nm. Fotona describes the Nd:YAG wavelength as reaching the deepest layers of the skin, and the Er:YAG wavelength as suited to working on the surface. TimeWalker® is Fotona's related dual-wavelength system dedicated to facial aesthetics, and the manufacturer lists both as suitable platforms for the Fotona4D® protocol.",
+          "SP Dynamis is a multi-application aesthetic laser platform from Fotona (Slovenia), and it is the machine behind Kaiteki's Fotona 4D facial treatment. Its defining feature is that it houses two complementary laser sources in one system: an Er:YAG laser at 2940nm and an Nd:YAG laser at 1064nm. TimeWalker® is Fotona's related dual-wavelength system dedicated to facial aesthetics, and the manufacturer lists both as suitable platforms for the Fotona4D® protocol.",
           "That dual-source design is what makes a multi-step protocol possible at all: a single-wavelength device cannot work intraorally, deep in the dermis and on the skin surface within one appointment. It does not, however, make the treatment right for everyone. Whether Fotona 4D suits your face, your skin and your medical history is assessed by a doctor at an in-person consultation.",
         ],
       },
@@ -255,8 +268,9 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "2940nm at the surface, 1064nm deeper: what does each wavelength do?",
         body: [
+          "Fotona describes the Nd:YAG wavelength as reaching the deepest layers of the skin, and the Er:YAG wavelength as suited to working on the surface. The Er:YAG laser at 2940nm is strongly absorbed by water and works at the surface and intraorally, while the Nd:YAG laser at 1064nm penetrates deeper to create thermal effects without ablating the skin surface.",
           "As the platform for Kaiteki's Fotona 4D treatment, SP Dynamis is commonly considered for the concerns below. It is not appropriate for everyone, and a consultation determines whether it suits your face and your goals, including whether a different approach would serve you better.",
         ],
         list: [
@@ -269,40 +283,45 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Is Fotona 4D ablative, and what does that mean for your week?",
+        body: [
+          "No. Fotona describes FRAC3® as a non-ablative Nd:YAG mode and SMOOTH® mode as producing gentle coagulative heating without significant ablation of the epidermis, and the Er:YAG surface pass is typically kept light in a 4D protocol.",
+          "Downtime is usually limited, which is much of the appeal of a non-ablative protocol, but it varies between individuals.",
+        ],
+      },
+      {
+        heading: "Who is Fotona 4D for, and why does your dental history matter?",
         body: [
           "Fotona notes that the Nd:YAG wavelength's low absorption in melanin allows it to be used across skin types, which is relevant for Malaysian patients, and the Er:YAG surface pass is typically kept light in a 4D protocol. Even so, the treatment is aimed at people with early to moderate laxity rather than significant sagging, where a doctor may tell you a laser is not the right tool, and saying so honestly is part of the consultation.",
           "The protocol may not be suitable during pregnancy or breastfeeding, with active infection, cold sores or inflamed skin in the area, with recent sunburn or tanning, with a history of keloid scarring, or while you are taking photosensitising medication including oral isotretinoin. Because one step is delivered intraorally, your doctor also needs to know about oral or dental conditions, recent dental work and any oral appliances. Please bring your full medical, dental and medication history to consultation.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What does the intraoral step feel like, and how long is a full protocol?",
         body: [
           "The first appointment is a doctor consultation and facial assessment, where the doctor decides which of the modes are appropriate for you and in what sequence. On a treatment day the skin is cleansed and make-up removed, eye protection is fitted, and, because the intraoral step works through the inside of the mouth, you will be positioned and prepared for that part separately.",
           "The steps are then performed in sequence, and most patients describe the sensation as spreading warmth rather than sharp pain, with the intraoral step feeling warm against the inner cheek. A full protocol is generally around 45 to 60 minutes depending on how many modes are included. A course of several sessions spaced a few weeks apart is common, followed by occasional maintenance, but the schedule is individual and your doctor will explain what is realistic for your skin.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
-          "Downtime is usually limited, which is much of the appeal of a non-ablative protocol, but it varies between individuals. Flushing, warmth and a mild tight feeling for a few hours to a day are common, and the skin can look slightly pink after the surface pass. Most people return to normal activities the same day.",
+          "Flushing, warmth and a mild tight feeling for a few hours to a day are common, and the skin can look slightly pink after the surface pass. Most people return to normal activities the same day.",
           "Keep skincare gentle and well moisturised for a few days, pause retinoids and acids until your doctor says otherwise, and use daily broad-spectrum sunscreen. Avoid heat exposure such as saunas and hot yoga for the period your doctor specifies. You will be given aftercare instructions specific to the steps performed.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "Can Fotona 4D reactivate cold sores, and what else can go wrong?",
         body: [
           "As with any medical laser procedure, treatment on this platform carries risks, and these are explained at consultation before anything is arranged. Temporary effects can include redness, warmth, mild swelling, transient dryness or flaking, and temporary sensitivity of the inner cheek or lips after the intraoral step; cold sores can be reactivated in people prone to them. Burns, blistering, changes in pigmentation and scarring are uncommon. Risk is reduced, though never removed, when settings are appropriately selected and the treatment is performed by a trained doctor.",
         ],
       },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "Session count depends on how much laxity and surface change you are starting with, your age and skin quality, how your collagen responds and how many of the four modes your plan includes. A two-step protocol is not the same appointment as a full four-step one. Because the effect relies on gradual tissue remodelling, plans are usually built as a short course followed by maintenance rather than a single visit.",
-          "Cost follows the number of steps, the number of sessions and whether the protocol is combined with other treatments in your plan. Pricing is discussed at consultation rather than quoted online, so the figure you receive reflects your actual assessment. Message us on WhatsApp to arrange a consultation.",
-        ],
-      },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so the figure you receive reflects your actual assessment. What moves it:",
+      factors: [
+        "How much laxity and surface change you are starting with.",
+        "How many of the four modes your plan includes. A two-step protocol is not the same appointment as a full four-step one.",
+        "The number of sessions. Because the effect relies on gradual tissue remodelling, plans are usually a short course followed by maintenance.",
+        "Whether the protocol is combined with other treatments in your plan.",
+      ],
+    },
     faqs: [
       {
         q: "Why does Fotona 4D need two different lasers?",
@@ -359,8 +378,9 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "Can DermaV treat redness and pigment in the same plan?",
         body: [
+          "DermaV combines a vascular (595nm) and a pigment (1064nm) wavelength in one device, so it may be directed at both red and brown concerns within a plan.",
           "DermaV is commonly considered for the following concerns. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
         ],
         list: [
@@ -372,39 +392,43 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Why is DermaV used on Asian and sensitive skin?",
         body: [
-          "Suitability is assessed individually. The dual wavelengths and integrated cooling mean DermaV is used across a range of skin tones, including Asian and more sensitive skin, but this does not make it appropriate for everyone.",
+          "Suitability is assessed individually. The dual wavelengths and integrated cooling mean DermaV is used across a range of skin tones, including Asian and more sensitive skin, but this does not make it appropriate for everyone. If DermaV is appropriate, a patch or test area may be considered before proceeding.",
+        ],
+      },
+      {
+        heading: "When should DermaV be postponed?",
+        body: [
           "DermaV may not be suitable during pregnancy, with certain skin conditions or medications, or on recently tanned skin. Please share your full medical and skincare history at consultation so the doctor can advise safely.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What happens at a DermaV session, and how red is the skin afterwards?",
         body: [
-          "A typical visit begins with a doctor consultation and skin assessment. If DermaV is appropriate, a patch or test area may be considered before proceeding. The skin is cleansed and a cooling gel applied, then the laser is delivered using the 595nm and 1064nm wavelengths as needed for your concern.",
+          "A typical visit begins with a doctor consultation and skin assessment. The skin is cleansed and a cooling gel applied, then the laser is delivered using the 595nm and 1064nm wavelengths as needed for your concern.",
           "A cooling and soothing step follows, and the doctor will advise on aftercare and sun protection. A course of several sessions spaced a few weeks apart is common, but the plan is individual and your doctor will explain what to expect for your skin.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
           "Downtime is usually limited but varies between individuals. Temporary redness or mild sensitivity can occur after a session and typically settles within a short period.",
           "Sun protection and gentle skincare are advised afterwards. Your doctor will give aftercare guidance specific to your skin and concern.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "What are DermaV's risks, including pigment change?",
         body: [
           "As with any medical procedure, DermaV carries risks, which are explained during consultation. Temporary effects can include redness, swelling or changes in pigmentation. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor.",
         ],
       },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The number of sessions and overall cost depend on the concern being addressed, the area treated and your individual response. Some plans include occasional maintenance sessions over time. Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
-        ],
-      },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. What moves it:",
+      factors: [
+        "The concern being addressed.",
+        "The area treated.",
+        "Your individual response.",
+        "Whether occasional maintenance sessions form part of the plan over time.",
+      ],
+    },
     faqs: [
       {
         q: "Is DermaV suitable for darker or sensitive Asian skin tones?",
@@ -456,14 +480,14 @@ export const technology: Technology[] = [
       {
         heading: "How 577nm yellow light works",
         body: [
-          "Vascular lasers work by selective photothermolysis: the wavelength is chosen so that the target, in this case haemoglobin inside small vessels, absorbs the light far more strongly than the surrounding tissue does. Because 577nm is well absorbed by haemoglobin and poorly absorbed by melanin, the energy is preferentially taken up by the vessel rather than by pigment in the overlying epidermis. In practice this is why a doctor may favour yellow light in more pigmented skin, where a wavelength with higher melanin absorption carries more risk of unwanted pigment change.",
+          "Vascular lasers work by selective photothermolysis: the wavelength is chosen so that the target, in this case haemoglobin inside small vessels, absorbs the light far more strongly than the surrounding tissue does. Because 577nm is well absorbed by haemoglobin and poorly absorbed by melanin, the energy is preferentially taken up by the vessel rather than by pigment in the overlying epidermis.",
           "Asclepion lists a standard handpiece spot size of 1.0mm with optional 0.5mm, 1.5mm and 2.8mm optics for precise work on individual vessels, and an optional scanner with integrated skin cooling that covers a 15 x 15mm scan area at a 1mm spot with adjustable scan density of 60 to 100 percent, intended for treating larger areas more quickly and comfortably. The system offers several treatment modes from basic to expert. Spot size, energy and whether the scanner is used are selected by the treating doctor for your skin and vessel type. Changes develop gradually across a course and vary between individuals.",
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "What can 577nm treat, and when is it not the right wavelength?",
         body: [
-          "Pro Yellow is commonly considered for the concerns below. It is not suitable for everyone, and a consultation determines whether it is appropriate for you or whether another device in the same category is better matched to your skin.",
+          "Pro Yellow is commonly considered for the concerns below. It is not suitable for everyone, and a consultation determines whether it is appropriate for you or whether another device in the same category is better matched to your skin. Vessels that are very deep or large may respond differently from fine superficial ones, and your doctor may recommend a different wavelength, a combination approach, or in some cases no laser at all.",
         ],
         list: [
           "Facial redness and rosacea-type flushing",
@@ -475,40 +499,43 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "Why is 577nm discussed for Asian and more pigmented skin?",
         body: [
-          "Low melanin absorption is the reason 577nm is often discussed as a reasonable option for Asian and more pigmented skin, but that is a matter of relative risk, not an exemption from assessment. Vessels that are very deep or large may respond differently from fine superficial ones, and your doctor may recommend a different wavelength, a combination approach, or in some cases no laser at all. Test spots are sometimes used before a full treatment.",
+          "Low melanin absorption is the reason 577nm is often discussed as a reasonable option for Asian and more pigmented skin, but that is a matter of relative risk, not an exemption from assessment. In practice this is why a doctor may favour yellow light in more pigmented skin, where a wavelength with higher melanin absorption carries more risk of unwanted pigment change. Test spots are sometimes used before a full treatment.",
+        ],
+      },
+      {
+        heading: "Why does your rosacea history matter before Pro Yellow?",
+        body: [
           "Treatment may not be suitable during pregnancy or breastfeeding, on recently tanned or sunburnt skin, over active infection or inflamed skin in the area, where you have a history of keloid scarring, or while you are taking photosensitising medication including oral isotretinoin. Rosacea is a chronic condition, so your doctor also needs to know about triggers, current topical or oral treatment and any prior vascular laser work. Please share your full medical and skincare history at consultation.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What happens during a Pro Yellow session, and why can vessels look grey afterwards?",
         body: [
           "Your first visit is a doctor consultation and skin assessment. The doctor examines the pattern and depth of the redness or vessels, discusses what is realistic, and decides whether the fine handpiece, the cooling scanner or a combination is appropriate. Where useful, a small test area may be treated first and reviewed before proceeding.",
           "On a treatment day the skin is cleansed, eye protection is fitted, and the laser is applied either vessel by vessel with the small-spot handpiece or in scanned passes over broader areas of redness. Most patients describe brief hot pinpricks or a snapping sensation; the scanner's integrated skin cooling is intended to make larger-area work more comfortable. Sessions are typically short, often around 15 to 30 minutes for a face depending on the area covered. A course of several sessions spaced a few weeks apart is common, with occasional maintenance for chronic redness, but your doctor will set the plan.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
           "Downtime is usually limited but varies between individuals. Redness, warmth and mild swelling in the treated area for a few hours to a day or two are common, and treated vessels can look temporarily darker, greyish or slightly bruised before settling. Occasionally fine crusting appears over a treated vessel and should be left to flake away on its own.",
           "Daily broad-spectrum sunscreen and sun avoidance are important, as is avoiding heat triggers such as saunas, hot showers, spicy food and alcohol for the period your doctor specifies, particularly if flushing is part of your concern. Keep skincare gentle and pause actives until your doctor confirms it is fine to resume. Aftercare guidance is tailored to your skin and the area treated.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "What are Pro Yellow's risks, and can treated vessels recur?",
         body: [
           "As with any medical laser procedure, Pro Yellow carries risks, which are explained during consultation before treatment is arranged. Temporary effects can include redness, swelling, bruising, small crusts over treated vessels, and changes in pigmentation of the treated area. Blistering and scarring are uncommon, and vessels can also recur over time because the underlying tendency remains. Risk is reduced, though never removed, when the wavelength and settings are appropriately selected and the treatment is performed by a trained doctor.",
         ],
       },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The main drivers of session count are how extensive and how deep the vascular concern is, whether it is a handful of discrete vessels or diffuse background redness, and whether the underlying condition is chronic. Rosacea and persistent flushing are generally managed with a course plus periodic maintenance rather than a fixed endpoint, while a few isolated capillaries may need far fewer visits.",
-          "Cost follows the area treated, the number of sessions and whether treatment is combined with other steps in your plan such as topical therapy. Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan. Message us on WhatsApp to arrange a consultation.",
-        ],
-      },
     ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan. What moves it:",
+      factors: [
+        "How extensive and how deep the vascular concern is: a handful of discrete vessels, or diffuse background redness.",
+        "Whether the underlying condition is chronic. Rosacea and persistent flushing are generally managed with a course plus periodic maintenance, while a few isolated capillaries may need far fewer visits.",
+        "The area treated.",
+        "Whether treatment is combined with other steps in your plan, such as topical therapy.",
+      ],
+    },
     faqs: [
       {
         q: "Why is 577nm yellow light used for redness and visible vessels?",
@@ -553,7 +580,7 @@ export const technology: Technology[] = [
         {
           heading: "What is M22 IPL?",
           body: [
-            "M22 is a modular aesthetic light platform made by Lumenis, and the M22 IPL module is its intense pulsed light component. The distinction that matters when comparing devices is that IPL is not a laser: a laser emits a single coherent wavelength, while IPL emits a broadband pulse of non-coherent light which the manufacturer describes as spanning roughly 400nm to 1200nm, then filters it down to the band suited to the target. That is why one IPL handpiece can be directed at redness one week and brown pigment the next, whereas a laser is generally bought for a narrower job.",
+            "M22 is a modular aesthetic light platform made by Lumenis, and the M22 IPL module is its intense pulsed light component.",
             "What sets the M22 module apart within the IPL category is how that filtering is handled. Lumenis describes the Universal IPL handpiece as taking nine interchangeable ExpertFilters™ with computer-enabled filter recognition, so the doctor changes the light band in seconds rather than swapping handpieces. At Kaiteki, M22 IPL is used within our vascular and pigment laser treatment and our laser hair removal treatment. Whether IPL suits your concern, or whether a true laser would suit you better, is assessed by a doctor at an in-person consultation.",
           ],
         },
@@ -565,8 +592,9 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "What it may help address",
+          heading: "IPL or laser: what changes with broadband, filtered light?",
           body: [
+            "The distinction that matters when comparing devices is that IPL is not a laser: a laser emits a single coherent wavelength, while IPL emits a broadband pulse of non-coherent light which the manufacturer describes as spanning roughly 400nm to 1200nm, then filters it down to the band suited to the target. That is why one IPL handpiece can be directed at redness one week and brown pigment the next, whereas a laser is generally bought for a narrower job.",
             "M22 IPL is commonly considered for the concerns below, usually across a course of sessions rather than a single visit. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
           ],
           list: [
@@ -578,39 +606,45 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "Suitability & who should avoid it",
+          heading: "Why is IPL used more cautiously on deeper and tanned skin?",
           body: [
             "Because IPL is absorbed by melanin, skin tone matters more with broadband light than with some longer-wavelength lasers. IPL is generally aimed at lighter and mid-range skin tones, and at hair that is dark against paler surrounding skin. On deeper skin tones, or where a tan is present, the surrounding skin competes for the light and your doctor may recommend a laser wavelength instead.",
+          ],
+        },
+        {
+          heading: "Which medications and conditions rule out M22 IPL?",
+          body: [
             "M22 IPL may not be suitable during pregnancy, on recently tanned or sunburnt skin, with active infection or inflammation in the area, with a history of light-sensitive conditions, or while taking photosensitising medication such as isotretinoin or certain antibiotics. Please share your full medical, medication and skincare history at consultation, including recent sun exposure and hair-removal methods, so the doctor can advise safely.",
           ],
         },
         {
-          heading: "The session at Kaiteki",
+          heading: "What does an IPL pulse feel like, and how many sessions are planned?",
           body: [
             "A visit begins with a doctor consultation and skin assessment, and a test area may be considered first. The skin is cleansed, eye protection fitted and cooling gel applied. The doctor then fits the filter suited to your concern and places the cooled lightguide against the skin, working across the area pulse by pulse. Most people describe each pulse as a brief warm snap, eased by the cooled contact tip between pulses.",
             "A facial session is often in the region of 20 to 40 minutes including preparation; larger body areas take longer. IPL is normally planned as a course of several sessions spaced a few weeks apart, with hair-reduction spacing following the growth cycle rather than the calendar. Your doctor will explain the course they consider realistic and review it as your skin responds.",
-          ],
-        },
-        {
-          heading: "Downtime & aftercare",
-          body: [
             "Downtime is usually limited and most people return to normal activity the same day, though this varies between individuals. Mild redness or a warm, mildly sunburnt feeling for a few hours is common, and treated pigment may look temporarily darker or slightly crusted before flaking away over the following days.",
             "Daily sun protection matters before and after an IPL course, since the light targets pigment and treated skin is more sun-reactive. Gentle cleansing, no scrubbing or active acids for a few days, and avoiding heat such as hot showers, saunas and vigorous exercise immediately afterwards are usually advised. Your doctor will give aftercare instructions specific to your skin.",
           ],
         },
         {
-          heading: "Risks & side effects",
+          heading: "Can IPL cause burns or pigment change, and when is that more likely?",
           body: [
             "As with any medical procedure, IPL carries risks, which are explained during consultation. Temporary effects can include redness, swelling around treated vessels or follicles, mild crusting of treated pigment, and short-lived changes in pigmentation. Blistering, burns and longer-lasting pigment change are uncommon but possible, and are more likely where the device is used on unsuitable or recently tanned skin. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor.",
           ],
         },
-        {
-          heading: "Sessions & cost factors",
-          body: [
-            "Session count and cost depend on the concern, the size and number of areas treated, and how your skin responds between visits. Vascular and pigment concerns are usually planned as a short course with occasional maintenance, while hair reduction needs more sessions because only follicles in the active growth phase respond at any one time. Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan. Message us on WhatsApp to arrange a consultation.",
-          ],
-        },
       ],
+      costFactors: {
+        intro:
+          "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan. What moves it:",
+        factors: [
+          "The concern being treated.",
+          "The size and number of areas.",
+          "How your skin responds between visits.",
+          "For hair reduction, more sessions, because only follicles in the active growth phase respond at any one time.",
+        ],
+        outro:
+          "Vascular and pigment concerns are usually planned as a short course with occasional maintenance.",
+      },
       faqs: [
         {
           q: "Is M22 IPL a laser, and does that matter when choosing a treatment?",
@@ -662,14 +696,16 @@ export const technology: Technology[] = [
         {
           heading: "How fractional CO2 works",
           body: [
-            "Each ablated column is surrounded by a narrow zone of coagulated tissue, and the intact skin between columns acts as a reservoir for healing. Remodelling depends on the skin's repair response to those columns, so the effect develops over weeks rather than appearing on the treatment table. Three variables determine how a session behaves: how deep the columns go, how densely they are placed, and how much total area is covered. Fewer, shallower columns mean a lighter session and quicker recovery; deeper or denser settings reach more tissue but ask more of your recovery time.",
-            "Comfort is managed rather than eliminated. A topical anaesthetic cream is normally applied and given time to work beforehand, and cool air or cooling packs may be used during and after the pass. Because ablative resurfacing removes surface tissue, settings appropriate to your skin tone matter, and Asian skin is generally treated conservatively to reduce the risk of pigment change. All settings are selected by the treating doctor, and results develop gradually and vary between individuals.",
+            "Each ablated column is surrounded by a narrow zone of coagulated tissue, and the intact skin between columns acts as a reservoir for healing. Remodelling depends on the skin's repair response to those columns, so the effect develops over weeks rather than appearing on the treatment table. Three variables determine how a session behaves: how deep the columns go, how densely they are placed, and how much total area is covered.",
+            "Comfort is managed rather than eliminated. A topical anaesthetic cream is normally applied and given time to work beforehand, and cool air or cooling packs may be used during and after the pass. All settings are selected by the treating doctor, and results develop gradually and vary between individuals.",
           ],
         },
         {
-          heading: "What it may help address",
+          heading: "What is fractional CO2 used for, and what does it mean for your week?",
           body: [
-            "Fractional CO2 resurfacing is commonly considered for concerns that involve the texture or structure of the skin rather than its colour alone. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
+            "This is not a lunchtime treatment and it is worth planning for. Expect treated skin to look red, feel hot and tight and be visibly swollen for the first day or two, followed by bronzing, roughness and flaking as the treated columns work their way out. Recovery commonly spans several days to around a week for a lighter session, longer for deeper settings, and varies between individuals.",
+            "Fewer, shallower columns mean a lighter session and quicker recovery; deeper or denser settings reach more tissue but ask more of your recovery time.",
+            "Fractional CO2 resurfacing is commonly considered for concerns that involve the texture or structure of the skin rather than its colour alone. It is not suitable for everyone, and a consultation determines whether it is appropriate for you. Concerns it is commonly considered for include:",
           ],
           list: [
             "Atrophic acne scarring, including boxcar and rolling scars",
@@ -680,39 +716,44 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "Suitability & who should avoid it",
+          heading: "Why is fractional CO2 used more conservatively on Asian skin?",
           body: [
-            "Fractional CO2 is aimed at people willing to accept a genuine recovery period in exchange for addressing deeper textural concerns, and is often considered after gentler resurfacing options. Skin tone is a real factor: deeper and Asian skin tones carry a higher risk of post-inflammatory hyperpigmentation after ablative resurfacing, so settings are typically conservative, priming skincare may be advised, and more sessions at lower intensity may be preferred over one aggressive session.",
+            "Skin tone is a real factor: deeper and Asian skin tones carry a higher risk of post-inflammatory hyperpigmentation after ablative resurfacing, so settings are typically conservative, priming skincare may be advised, and more sessions at lower intensity may be preferred over one aggressive session.",
+            "Because pigmentation risk is higher on Asian skin, your doctor may advise specific products before and after treatment, and will give instructions specific to your skin.",
+          ],
+        },
+        {
+          heading: "Why is fractional CO2 often tried after gentler options, and who should avoid it?",
+          body: [
+            "Fractional CO2 is aimed at people willing to accept a genuine recovery period in exchange for addressing deeper textural concerns, and is often considered after gentler resurfacing options.",
             "It may not be suitable during pregnancy or breastfeeding, with active infection or inflammation in the area including acne or cold sores, with a history of keloid or hypertrophic scarring, with certain autoimmune or connective-tissue conditions, on recently tanned skin, or after recent isotretinoin. Please share your full medical, medication and skincare history at consultation, including any history of scarring or pigmentation problems, so the doctor can advise safely.",
           ],
         },
         {
-          heading: "The session at Kaiteki",
+          heading: "What happens on the day of a fractional CO2 session, and how is the skin cared for after?",
           body: [
             "A visit begins with a doctor consultation and skin assessment, and for ablative resurfacing that includes planning your recovery around work or events before anything is booked. On the day the skin is cleansed, topical anaesthetic is applied and left to take effect, and eye protection is fitted. The doctor then passes the handpiece across the area, and individual scars may be treated at different settings from the surrounding skin.",
             "The laser pass itself is often quick, commonly in the region of 15 to 30 minutes for a full face, but the appointment is longer because of numbing and cooling. A small course spaced several weeks to a few months apart is usual, to allow full healing and remodelling between visits, and for scarring it may be combined with other modalities within a plan. Your doctor will explain the course they consider realistic for your skin.",
+            "Aftercare matters as much as the session. Gentle cleansing, a bland emollient or occlusive ointment as directed, no picking or exfoliating, and strict daily sun protection are usually advised, while heat, saunas, swimming, makeup and active skincare are paused for a defined period. Your doctor will give instructions specific to your skin.",
           ],
         },
         {
-          heading: "Downtime & aftercare",
-          body: [
-            "This is not a lunchtime treatment and it is worth planning for. Expect treated skin to look red, feel hot and tight and be visibly swollen for the first day or two, followed by bronzing, roughness and flaking as the treated columns work their way out. Recovery commonly spans several days to around a week for a lighter session, longer for deeper settings, and varies between individuals.",
-            "Aftercare matters as much as the session. Gentle cleansing, a bland emollient or occlusive ointment as directed, no picking or exfoliating, and strict daily sun protection are usually advised, while heat, saunas, swimming, makeup and active skincare are paused for a defined period. Because pigmentation risk is higher on Asian skin, your doctor may advise specific products before and after treatment, and will give instructions specific to your skin.",
-          ],
-        },
-        {
-          heading: "Risks & side effects",
+          heading: "What are the risks of fractional CO2 compared with non-ablative lasers?",
           body: [
             "As an ablative procedure, fractional CO2 carries more risk than non-ablative resurfacing, and these risks are explained during consultation. Expected temporary effects include redness, swelling, heat, crusting and peeling, and lingering pinkness that can persist for weeks. Less common effects include post-inflammatory hyperpigmentation, prolonged redness, reactivation of cold sores, infection, and scarring or textural change. Serious effects are uncommon when settings are appropriately selected for your skin tone and the treatment is performed by a trained doctor with proper aftercare.",
           ],
         },
-        {
-          heading: "Sessions & cost factors",
-          body: [
-            "The main cost drivers are the size of the area, the depth and density of settings your concern calls for, how many sessions the plan involves, and whether fractional CO2 is combined with other treatments in a scar or resurfacing programme. Established acne scarring generally needs a course rather than one visit, spaced widely enough for healing. Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan and the recovery it involves. Message us on WhatsApp to arrange a consultation.",
-          ],
-        },
       ],
+      costFactors: {
+        intro:
+          "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan and the recovery it involves. What moves it:",
+        factors: [
+          "The size of the area.",
+          "The depth and density of settings your concern calls for.",
+          "How many sessions the plan involves. Established acne scarring generally needs a course rather than one visit, spaced widely enough for healing.",
+          "Whether fractional CO2 is combined with other treatments in a scar or resurfacing programme.",
+        ],
+      },
       faqs: [
         {
           q: "What is the difference between fractional and fully ablative CO2 resurfacing?",

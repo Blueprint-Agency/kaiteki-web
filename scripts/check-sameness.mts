@@ -51,7 +51,7 @@ const GENERIC_SHARE = 0.6;
 const GENERIC_MIN_PAGES = 5;
 const BUDGET: Record<string, number> = {
   // 2026-09-20 baseline — lower these as pages are differentiated. Target: 0.
-  technology: 14, // 2026-09-28: injectables + lifting differentiated (docs/15 2.1, 2.2)
+  technology: 7, // 2026-10-11: + the 7 lasers (docs/15 3.1)
   treatments: 12, // 2026-09-28: + ultherapy, microneedling, exosome-therapy (docs/15 2.3)
   concerns: 0,
 };
