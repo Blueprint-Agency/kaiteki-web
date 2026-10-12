@@ -12,10 +12,9 @@ import { AuthorCard } from "@/components/blog/AuthorCard";
 import { ReadNext } from "@/components/blog/ReadNext";
 import { ConcernCard, TreatmentCard, TechnologyCard } from "@/components/cards";
 import { CardRow } from "@/components/CardRow";
+import { Figure, List, Item, ScrollTable } from "@/components/page-blocks";
 import {
   Section,
-  Rows,
-  Row,
   FactRail,
   RoutingModule,
   VariantModule,
@@ -109,29 +108,6 @@ function Reading({ rail, children }: { rail?: ReactNode; children: ReactNode }) 
   );
 }
 
-/**
- * A photograph inside the reading column, at the width of the prose it belongs
- * to. The caption carries the meaning, so the image is `alt=""` — a screen
- * reader that heard both would hear the same thing twice.
- */
-function Figure({ src, caption }: { src: string; caption: string }) {
-  return (
-    <figure className="max-w-[68ch] pb-4">
-      <div className="relative aspect-[2/1] overflow-hidden rounded-xl bg-tint ring-1 ring-hairline">
-        <Image
-          src={src}
-          alt=""
-          fill
-          loading="lazy"
-          sizes="(max-width: 1024px) 100vw, 60vw"
-          className="object-cover object-left"
-        />
-      </div>
-      <figcaption className="mt-3 text-[0.8125rem] leading-snug text-ink-500">{caption}</figcaption>
-    </figure>
-  );
-}
-
 export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
   const doctor = doctorBySlug(t.reviewedBy);
   const related = t.related.map((r) => treatmentBySlug(r)).filter(Boolean);
@@ -162,10 +138,7 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
             className={`mt-8 grid gap-10 lg:gap-16 ${t.image ? "lg:grid-cols-[1fr_0.78fr] lg:items-center" : ""}`}
           >
             <div>
-              <p className="kicker flex items-center gap-3">
-                <span aria-hidden className="h-px w-7 flex-none bg-sand" />
-                {t.category}
-              </p>
+              <p className="kicker">{t.category}</p>
               <h1 className="h-hero mt-5">{t.name}</h1>
               <p className="mt-6 max-w-[48ch] text-lg leading-relaxed text-ink-700">{t.summary}</p>
               {/* Ghost CTA, as the concern hero renders it: the visitor who
@@ -185,7 +158,7 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
                 today, and the day one does not, the headline takes the width
                 rather than a generated motif taking the space. */}
             {t.image && (
-              <div className="relative aspect-[3/2] overflow-hidden rounded-2xl rounded-t-[4rem] bg-tint ring-1 ring-hairline lg:aspect-[5/4]">
+              <div className="relative aspect-[3/2] overflow-hidden rounded-2xl bg-tint ring-1 ring-hairline lg:aspect-[5/4]">
                 <Image
                   src={t.image}
                   alt={t.imageAlt ?? `${t.name} treatment at Kaiteki Skin Aesthetic Clinic Malaysia`}
@@ -203,20 +176,21 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
       {/* T-02 — authored process facts, else the derived session/downtime tags. */}
       <FactRail facts={t.facts ?? derivedFacts(t)} />
 
-      {/* T-01 · The answer-first capsule, identical across the site so it stays
-          recognisable and extractable. */}
-      <Container className="py-12 sm:py-14">
-        <div className="mx-auto max-w-[68ch]">
-          <LeadAnswer>{t.leadAnswer}</LeadAnswer>
-        </div>
-      </Container>
-
       <Reading rail={rail}>
         {rail && (
-          <div className="pt-4 lg:hidden">
-            <ArticleToc headings={headings} />
+          <div className="pt-8 lg:hidden">
+            <ArticleToc headings={headings} variant="collapsed" />
           </div>
         )}
+
+        {/* T-01 · The answer-first capsule, identical across the site so it
+            stays recognisable and extractable — in the reading column, as the
+            concern page places it. */}
+        <Section>
+          <div className="max-w-[68ch]">
+            <LeadAnswer>{t.leadAnswer}</LeadAnswer>
+          </div>
+        </Section>
 
         {/* T-04 · T-05 — the reading spine. Prose holds a 68ch measure; anchor
             ids derive from the heading so any section is addressable without a
@@ -244,11 +218,7 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
                   ))}
                 </ul>
               )}
-              {figure && (
-                <div className="mt-10">
-                  <Figure src={figure.src} caption={figure.caption} />
-                </div>
-              )}
+              {figure && <Figure src={figure.src} caption={figure.caption} />}
             </Section>
           );
         })}
@@ -339,58 +309,33 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
         {t.comparisons && t.comparisons.length > 0 && (
           <Section id="comparisons">
             <h2 className="h-section">{t.name} vs other options</h2>
-            <div className="mt-8 overflow-x-auto">
-              <table className="w-full min-w-[34rem] border-collapse text-left">
-                <thead>
-                  <tr className="border-b border-espresso/25">
-                    {["Treatment", "Best for", "Downtime"].map((h) => (
-                      <th
-                        key={h}
-                        scope="col"
-                        className="pb-3 pr-6 text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-accent"
-                      >
-                        {h}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-hairline">
-                  {t.comparisons.map((row) => (
-                    <tr key={row.name}>
-                      <td className="py-4 pr-6 font-medium text-espresso">{row.name}</td>
-                      <td className="py-4 pr-6 text-[0.9375rem] text-ink-700">{row.bestFor}</td>
-                      <td className="py-4 text-[0.9375rem] text-ink-700">{row.downtime}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            <ScrollTable
+              columns={["Treatment", "Best for", "Downtime"]}
+              rows={t.comparisons.map((row) => [row.name, row.bestFor, row.downtime])}
+              minWidth="34rem"
+            />
           </Section>
         )}
 
         {(t.preCare?.length || t.postCare?.length) && (
           <Section id="care">
             <h2 className="h-section">Pre and post treatment care</h2>
-            <Rows className="mt-8">
-              {t.preCare && t.preCare.length > 0 && (
-                <Row title="Before treatment">
-                  <ul className="space-y-2">
-                    {t.preCare.map((li) => (
-                      <li key={li}>{li}</li>
-                    ))}
-                  </ul>
-                </Row>
-              )}
-              {t.postCare && t.postCare.length > 0 && (
-                <Row title="After treatment">
-                  <ul className="space-y-2">
-                    {t.postCare.map((li) => (
-                      <li key={li}>{li}</li>
-                    ))}
-                  </ul>
-                </Row>
-              )}
-            </Rows>
+            <List>
+              {[
+                { title: "Before treatment", items: t.preCare ?? [] },
+                { title: "After treatment", items: t.postCare ?? [] },
+              ]
+                .filter((g) => g.items.length > 0)
+                .map((g) => (
+                  <Item key={g.title} title={g.title}>
+                    <ul className="list-disc space-y-2 pl-5 marker:text-ink-500">
+                      {g.items.map((li) => (
+                        <li key={li}>{li}</li>
+                      ))}
+                    </ul>
+                  </Item>
+                ))}
+            </List>
           </Section>
         )}
 

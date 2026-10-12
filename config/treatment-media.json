@@ -4,6 +4,42 @@
   "publicBase": "https://cdn.kaiteki.my/treatments/",
   "assets": [
     {
+      "source": "treatments/bio-stimulator/hero-2.jpg",
+      "key": "treatments/bio-stimulator/hero-2.jpg",
+      "treatment": "bio-stimulator",
+      "family": "hero",
+      "width": 1440,
+      "height": 900,
+      "manual": true
+    },
+    {
+      "source": "treatments/pico-laser/hero-2.jpg",
+      "key": "treatments/pico-laser/hero-2.jpg",
+      "treatment": "pico-laser",
+      "family": "hero",
+      "width": 1440,
+      "height": 900,
+      "manual": true
+    },
+    {
+      "source": "treatments/skin-booster/hero-2.jpg",
+      "key": "treatments/skin-booster/hero-2.jpg",
+      "treatment": "skin-booster",
+      "family": "hero",
+      "width": 1440,
+      "height": 900,
+      "manual": true
+    },
+    {
+      "source": "treatments/ultherapy/hero-2.jpg",
+      "key": "treatments/ultherapy/hero-2.jpg",
+      "treatment": "ultherapy",
+      "family": "hero",
+      "width": 1440,
+      "height": 900,
+      "manual": true
+    },
+    {
       "source": "treatments/bio-stimulator/hero.jpg",
       "key": "treatments/bio-stimulator/hero.jpg",
       "treatment": "bio-stimulator",

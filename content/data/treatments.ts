@@ -26,7 +26,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "20-40 min · Minimal downtime (1-2 days)",
     name: "Pico Laser",
     category: "Lasers",
-    image: "https://cdn.kaiteki.my/treatments/pico-laser/hero.jpg",
+    image: "https://cdn.kaiteki.my/treatments/pico-laser/hero-2.jpg",
     procedureImages: [
       { src: "https://cdn.kaiteki.my/treatments/pico-laser/procedure-01.jpg", caption: "A practitioner guides the laser handpiece over the patient's cheek during a session at Kaiteki." },
       { src: "https://cdn.kaiteki.my/treatments/pico-laser/procedure-02.jpg", caption: "A practitioner in protective eyewear works the laser handpiece across the patient's face." },
@@ -584,7 +584,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "60-90 min · No downtime",
     name: "Ultherapy",
     category: "Lifting & Tightening",
-    image: "https://cdn.kaiteki.my/treatments/ultherapy/hero.jpg",
+    image: "https://cdn.kaiteki.my/treatments/ultherapy/hero-2.jpg",
     procedureImages: [
       { src: "https://cdn.kaiteki.my/treatments/ultherapy/procedure-01.jpg", caption: "A practitioner moves the ultrasound transducer along the patient's jaw and neck." },
       { src: "https://cdn.kaiteki.my/treatments/ultherapy/procedure-02.jpg", caption: "A practitioner positions the ultrasound transducer under the patient's jaw." },
@@ -1648,7 +1648,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "15-30 min · 1-2 days",
     name: "Skin Booster",
     category: "Injectables",
-    image: "https://cdn.kaiteki.my/treatments/skin-booster/hero.jpg",
+    image: "https://cdn.kaiteki.my/treatments/skin-booster/hero-2.jpg",
     device: "Profhilo",
     typicalSessions: "A short course, then maintenance",
     summary: "Injectable hydrating treatments used to support skin quality and hydration.",
@@ -2058,7 +2058,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "15-30 min · 1-2 days",
     name: "Bio-stimulator",
     category: "Injectables",
-    image: "https://cdn.kaiteki.my/treatments/bio-stimulator/hero.jpg",
+    image: "https://cdn.kaiteki.my/treatments/bio-stimulator/hero-2.jpg",
     device: "Sculptra",
     summary: "Injectable treatments used to support the skin's own structural renewal.",
     leadAnswer:

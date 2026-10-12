@@ -43,10 +43,12 @@ export const concerns: Concern[] = [
     // ── 01 · the banner pair. Subject hard left, headline in the right half.
     // The alt describes the illustrative photograph as what it is: this is not
     // a Kaiteki patient and not a result, so it must not read as either.
+    // Pexels (pexels.com/photo/5468704), wall extended right; uploaded by hand
+    // (`manual` in config/concern-media.json).
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/acne/hero.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/acne/hero-mobile.jpg",
-      alt: "Illustrative photograph: a person holding a magnifying glass over a spot on their cheek",
+      src: "https://cdn.kaiteki.my/concerns/acne/banner.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/acne/banner-mobile.jpg",
+      alt: "Illustrative photograph: a woman in a white bathrobe touching her chin, with small blemishes on her cheek and jaw, against a plain off-white wall",
     },
 
     // ── 02 · three neutral process facts. The v2 spec's "results in 4–8 weeks"
@@ -492,7 +494,7 @@ export const concerns: Concern[] = [
     slug: "acne-scars",
     name: "Acne Scars",
     group: "Skin",
-    image: "https://cdn.kaiteki.my/concerns/acne-scars/card.jpg",
+    image: "https://cdn.kaiteki.my/concerns/acne-scars/card-2.jpg",
     summary:
       "Acne scars are a change in the skin's structure, not its colour, and the type of scar decides what is likely to help. A doctor assesses which types you have.",
     leadAnswer:
@@ -504,12 +506,13 @@ export const concerns: Concern[] = [
     seoDescription:
       "Ice pick, boxcar, rolling and raised acne scars respond to different treatments. A doctor assesses which you have. Book a free consultation at Kaiteki.",
 
-    // ── 01 · the acne-scar banner already in the media manifest, unused until
-    // now. Illustrative stock photography: not a patient, not a result.
+    // ── 01 · Pexels (pexels.com/photo/9253763), skin close-up faded into the
+    // page on the right; uploaded by hand (`manual` in config/concern-media.json).
+    // Illustrative stock photography: not a patient, not a result.
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/acne-scars/hero.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/acne-scars/hero-mobile.jpg",
-      alt: "Illustrative photograph: a person with acne marks on their cheeks, holding their face in both hands",
+      src: "https://cdn.kaiteki.my/concerns/acne-scars/banner-skin.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/acne-scars/banner-skin-mobile.jpg",
+      alt: "Illustrative photograph: close-up of a cheek with uneven texture and marks left by past breakouts",
     },
 
     // ── 02 · three process facts, no time-to-result (R-01).
@@ -883,11 +886,12 @@ export const concerns: Concern[] = [
     seoTitle: "Pigmentation Treatment Options in Malaysia | Kaiteki",
     seoDescription:
       "Melasma, sun spots and post-inflammatory marks need different care. A doctor assesses your pigmentation before any treatment. Book a free consultation.",
-    // ── 01
+    // ── 01 · Pexels (pexels.com/photo/7479572), skin close-up faded into the
+    // page on the right; uploaded by hand (`manual` in config/concern-media.json).
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/pigmentation/hero.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/pigmentation/hero-mobile.jpg",
-      alt: "Illustrative photograph: a person examining an area of uneven tone on their cheek in the mirror",
+      src: "https://cdn.kaiteki.my/concerns/pigmentation/banner-skin.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/pigmentation/banner-skin-mobile.jpg",
+      alt: "Illustrative photograph: close-up of skin with patches of brown pigmentation of varying size",
     },
 
     // ── 02 · process facts only. Nothing here says how long anything takes to
@@ -1641,11 +1645,12 @@ export const concerns: Concern[] = [
     seoDescription:
       "Pore appearance is shaped by oil, texture, sun exposure and age. A doctor assesses your skin before an enlarged pores treatment. Book a free consultation.",
 
-    // ── 01
+    // ── 01 · Pexels (pexels.com/photo/7479592), skin close-up faded into the
+    // page on the right; uploaded by hand (`manual` in config/concern-media.json).
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/enlarged-pores/hero.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/enlarged-pores/hero-mobile.jpg",
-      alt: "Illustrative photograph: a woman with her hands at the sides of her face, looking at the camera",
+      src: "https://cdn.kaiteki.my/concerns/enlarged-pores/banner-skin.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/enlarged-pores/banner-skin-mobile.jpg",
+      alt: "Illustrative photograph: close-up of the side of the nose and cheek with visible pores",
     },
 
     // ── 02 · process facts. Nothing about how much smaller pores get, or how
@@ -2398,11 +2403,12 @@ export const concerns: Concern[] = [
     seoTitle: "Dark Eye Circle Treatment Assessment in Malaysia | Kaiteki",
     seoDescription:
       "Dark eye circles can be pigment, vascular or structural in cause. A doctor assesses yours before recommending treatment. Book a free consultation with Kaiteki.",
-    // ── 01
+    // ── 01 · Pexels (pexels.com/photo/24428508), skin close-up faded into the
+    // page on the right; uploaded by hand (`manual` in config/concern-media.json).
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/dark-eye-circles/hero.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/dark-eye-circles/hero-mobile.jpg",
-      alt: "Illustrative photograph: a person looking into a mirror at the skin beneath their eye",
+      src: "https://cdn.kaiteki.my/concerns/dark-eye-circles/banner-skin.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/dark-eye-circles/banner-skin-mobile.jpg",
+      alt: "Illustrative photograph: close-up of an eye with visible dark shadowing in the skin beneath it",
     },
 
     // ── 02 · process facts. No claim about sleep fixing it, and no timeframe.
@@ -3613,11 +3619,12 @@ export const concerns: Concern[] = [
     seoTitle: "Skin Ageing & Anti-Ageing Treatment in Malaysia | Kaiteki",
     seoDescription:
       "Skin ageing involves firmness, texture and volume changes over time. A consultation helps map an anti-ageing treatment plan. Book a free session with Kaiteki.",
-    // ── 01
+    // ── 01 · Pexels (pexels.com/photo/7859324), wall extended right; uploaded
+    // by hand (`manual` in config/concern-media.json).
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/aging/hero.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/aging/hero-mobile.jpg",
-      alt: "Illustrative photograph: a person looking at their reflection in soft daylight",
+      src: "https://cdn.kaiteki.my/concerns/aging/banner.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/aging/banner-mobile.jpg",
+      alt: "Illustrative photograph: a mature woman with short greying hair and a light scarf, in profile, against a plain light grey background",
     },
 
     // ── 02 · process facts. Nothing here promises to reverse or slow anything,
@@ -4283,11 +4290,12 @@ export const concerns: Concern[] = [
     seoTitle: "Hair Loss Treatment & Assessment in Malaysia | Kaiteki",
     seoDescription:
       "Hair loss has several patterns and causes, and a doctor identifies yours before any treatment. Book a free hair loss consultation with Kaiteki today.",
-    // ── 01 · Pexels (pexels.com/photo/5468618), see config/concern-media.json.
+    // ── 01 · Pexels (pexels.com/photo/9755382), mirrored and faded into the
+    // page on the right; uploaded by hand (`manual` in config/concern-media.json).
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/hair-loss/hero.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/hair-loss/hero-mobile.jpg",
-      alt: "Illustrative photograph: a woman brushing her hair against a plain white wall",
+      src: "https://cdn.kaiteki.my/concerns/hair-loss/banner-skin.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/hair-loss/banner-skin-mobile.jpg",
+      alt: "Illustrative photograph: an open hand holding a clump of shed hair, with a comb in the background",
     },
 
     // ── 02 · process facts. Nothing about regrowth, which would be an outcome
@@ -4637,7 +4645,7 @@ export const concerns: Concern[] = [
     ctaAssesses: "your tattoo",
     name: "Tattoo Removal",
     group: "Skin",
-    image: "https://cdn.kaiteki.my/concerns/tattoo-removal/card.jpg",
+    image: "https://cdn.kaiteki.my/concerns/tattoo-removal/card-2.jpg",
     summary:
       "Ink colour, depth and skin tone all affect how removal works. A doctor assesses your tattoo before estimating what to expect.",
     leadAnswer:
@@ -5363,11 +5371,12 @@ export const concerns: Concern[] = [
     seoDescription:
       "Thread veins, spider veins and persistent redness have several causes. A doctor assesses the type before any treatment. Book a free consultation today.",
 
-    // ── 01 · licensed stock (StockSnap CC0), see config/concern-media.json.
+    // ── 01 · Pexels (pexels.com/photo/1138531), skin close-up faded into the
+    // page on the right; uploaded by hand (`manual` in config/concern-media.json).
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/vascular-lesions/hero.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/vascular-lesions/hero-mobile.jpg",
-      alt: "Illustrative photograph: a woman touching her cheek, looking at her skin",
+      src: "https://cdn.kaiteki.my/concerns/vascular-lesions/banner-skin.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/vascular-lesions/banner-skin-mobile.jpg",
+      alt: "Illustrative photograph: close-up of the lower face in profile with visible redness across the cheek",
     },
 
     // ── 02 · process facts. Nothing about clearance or how quickly anything
@@ -5712,11 +5721,13 @@ export const concerns: Concern[] = [
     seoDescription:
       "Hyperhidrosis goes beyond normal temperature regulation and has several possible causes. A consultation helps assess your situation. Book a free session today.",
 
-    // ── 01 · Pexels (pexels.com/photo/5000223), see config/concern-media.json.
+    // ── 01 · Pexels (pexels.com/photo/5000223), recropped with the wall
+    // extended right so the copy sits on plain white. Uploaded by hand
+    // (`manual` in config/concern-media.json).
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/excessive-sweating/hero.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/excessive-sweating/hero-mobile.jpg",
-      alt: "Illustrative photograph: a woman holding a towel to her cheek against a white wall",
+      src: "https://cdn.kaiteki.my/concerns/excessive-sweating/banner.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/excessive-sweating/banner-mobile.jpg",
+      alt: "Illustrative photograph: a woman in a sports top dabbing her face with a white towel, against a white brick wall",
     },
 
     // ── 02 · process facts. Nothing about how dry anyone will be, or for how

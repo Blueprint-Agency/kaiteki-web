@@ -3,7 +3,17 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { Container } from "@/components/Container";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
-import { ArrowRight, Check, X } from "@/components/icons";
+import { ArrowRight } from "@/components/icons";
+import {
+  Section,
+  SectionHead,
+  Note,
+  List,
+  Item,
+  Steps,
+  PhotoGrid,
+  IconGrid,
+} from "@/components/page-blocks";
 import type { Treatment } from "@/lib/types";
 
 /**
@@ -13,81 +23,24 @@ import type { Treatment } from "@/lib/types";
  * that data is absent — so a page turns a block off by omitting its field, and
  * TreatmentView stays a flat list of blocks with no per-page branching.
  *
- * Layout model. A 62–68ch prose measure, Fraunces display headings, and one
- * sticky contents rail (`ArticleToc`) running the whole scrollable body, so
- *
- *   · `Split`, the sticky 21rem *heading* gutter, is gone. A page cannot carry
- *     that and a 15rem contents rail; they are two left columns, and the
- *     prototype's first pass showed the second one arriving unannounced halfway
- *     down. Every block that used it flows its heading and intro inline at the
- *     top of its own section instead — same data, same wording, same compliance
- *     rules. This is the fork `concern-blocks.tsx` already performed;
- *   · sections render *inside* TreatmentView's reading column and carry no
- *     Container of their own;
- *   · **every section sits on page ground.** The 2026-07 spine gave the device
- *     comparison a tint panel and the safety notice a porcelain one; 2026-08
- *     removed both, so treatments match the concern page they are read
- *     alongside. One surface survives — the espresso mid-page CTA — because it
- *     is the conversion moment and the only thing allowed to be loudest on the
- *     page. It bleeds full width, as it does on `/concerns`, rather than
- *     floating as an inset panel under the rail.
- *
- * `JumpNav` retired with the gutter, for the reason docs/12 retired it on
- * concerns: two navigations doing one job.
+ * Layout comes from the shared kit in `page-blocks.tsx` (2026-10): every list
+ * is the same hairline `List`, every sequence the same `Steps` timeline, and
+ * every section sits on page ground. The one surface is the espresso mid-page
+ * CTA, which the concern page shares.
  */
 
-/* ── Primitives ─────────────────────────────────────────────────────────── */
+export { Section };
 
-/**
- * Clearance for the 68px sticky site header — the only sticky chrome left now
- * that the jump-nav bar has retired. Exported because the reading column's
- * sections and the prototype both anchor against it.
- */
-export const CLEAR_CHROME = "scroll-mt-24";
-
-/** A section of the reading column. No Container: the column supplies it. */
-export function Section({
-  id,
-  className = "",
-  children,
-}: {
-  id?: string;
-  className?: string;
-  children: ReactNode;
-}) {
+/** A text link with the trailing arrow, as used under list rows. */
+export function ArrowLink({ href, children }: { href: string; children: ReactNode }) {
   return (
-    <section id={id} className={`py-12 sm:py-14 ${id ? CLEAR_CHROME : ""} ${className}`}>
+    <Link
+      href={href}
+      className="group mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-espresso"
+    >
       {children}
-    </section>
-  );
-}
-
-/** The heading and optional intro that used to sit in `Split`'s gutter. */
-function Lede({ heading, intro }: { heading: ReactNode; intro?: ReactNode }) {
-  return (
-    <>
-      <h2 className="h-section">{heading}</h2>
-      {intro && <p className="mt-5 max-w-[62ch] leading-relaxed text-ink-700">{intro}</p>}
-    </>
-  );
-}
-
-/** One hairline record row: title in the left column, content in the right. */
-export function Row({ title, children }: { title: string; children: ReactNode }) {
-  return (
-    <div className="grid gap-2 py-6 sm:grid-cols-[13.5rem_1fr] sm:gap-10 sm:py-7">
-      <h3 className="h-sub">{title}</h3>
-      <div className="max-w-[62ch] leading-relaxed text-ink-700">{children}</div>
-    </div>
-  );
-}
-
-/** Wrapper for a stack of `Row`s. */
-export function Rows({ children, className = "" }: { children: ReactNode; className?: string }) {
-  return (
-    <div className={`divide-y divide-hairline border-y border-hairline ${className}`}>
-      {children}
-    </div>
+      <ArrowRight size={14} className="transition-transform group-hover:translate-x-0.5" />
+    </Link>
   );
 }
 
@@ -95,8 +48,8 @@ export function Rows({ children, className = "" }: { children: ReactNode; classN
 
 /**
  * T-02 · Fact rail. Authored process facts, else the derived session/downtime
- * tags. A full-width rule-divided rail rather than three tinted boxes — the
- * boxed stat row is the template tell, and these are record values, not metrics.
+ * tags. A full-width rule-divided rail rather than three tinted boxes — these
+ * are record values, not metrics.
  */
 export function FactRail({ facts }: { facts?: { value: string; label: string }[] }) {
   if (!facts?.length) return null;
@@ -106,9 +59,9 @@ export function FactRail({ facts }: { facts?: { value: string; label: string }[]
       <Container>
         <dl className="grid divide-y divide-hairline sm:grid-cols-3 sm:divide-x sm:divide-y-0">
           {facts.slice(0, 3).map((f) => (
-            <div key={f.label} className="py-6 sm:px-9 sm:py-8 sm:first:pl-0 sm:last:pr-0">
+            <div key={f.label} className="py-5 sm:px-9 sm:py-8 sm:first:pl-0 sm:last:pr-0">
               <dt className="h-sub">{f.value}</dt>
-              <dd className="mt-2 max-w-[34ch] text-sm leading-snug text-ink-500">{f.label}</dd>
+              <dd className="mt-1.5 max-w-[34ch] text-sm leading-snug text-ink-500">{f.label}</dd>
             </div>
           ))}
         </dl>
@@ -138,34 +91,22 @@ export function RoutingModule({
   if (!routes?.length) return null;
   return (
     <Section id="what-it-treats">
-      <Lede heading={title} />
-      <Rows className="mt-8">
+      <SectionHead heading={title} />
+      <List>
         {routes.map((r) => (
-          <Row key={r.title} title={r.title}>
+          <Item key={r.title} title={r.title}>
             <p>{r.body}</p>
-            <div className="mt-3 flex flex-wrap gap-x-5 gap-y-1">
+            <div className="flex flex-wrap gap-x-5">
               {r.links.map((l) => (
-                <Link
-                  key={l.href}
-                  href={l.href}
-                  className="group inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-espresso"
-                >
+                <ArrowLink key={l.href} href={l.href}>
                   {l.label}
-                  <ArrowRight
-                    size={14}
-                    className="transition-transform group-hover:translate-x-0.5"
-                  />
-                </Link>
+                </ArrowLink>
               ))}
             </div>
-          </Row>
+          </Item>
         ))}
-      </Rows>
-      {note && (
-        <p className="mt-8 max-w-[62ch] rounded-xl bg-tint px-6 py-5 leading-relaxed text-ink-700">
-          {note}
-        </p>
-      )}
+      </List>
+      {note && <Note>{note}</Note>}
       {children}
     </Section>
   );
@@ -174,59 +115,32 @@ export function RoutingModule({
 /**
  * T-07 · Archetype variant module (Full depth only). On energy/device
  * treatments this is the wavelength comparison; the copy must read as a
- * factual difference in delivery, never as a ranking (rule R-02). Two genuinely
- * equivalent columns, so an equal two-up is honest here. Text only: each
- * device's photograph already appears once in the "devices used" row below.
+ * factual difference in delivery, never as a ranking (rule R-02).
  */
 export function VariantModule({ m }: { m?: Treatment["variantModule"] }) {
   if (!m) return null;
   return (
     <Section id="which-device">
-      <Lede heading={m.heading} intro={m.intro} />
-      <div className="mt-10 grid gap-10 sm:grid-cols-2 sm:gap-12">
-        {m.items.map((i) => {
-          return (
-            <div key={i.title}>
-              <p className="ledger text-[0.6875rem] uppercase tracking-[0.14em]">{i.eyebrow}</p>
-              <h3 className="h-sub mt-1.5">{i.title}</h3>
-              <p className="mt-3 max-w-[46ch] leading-relaxed text-ink-700">{i.body}</p>
-              {i.href && (
-                <Link
-                  href={i.href}
-                  className="group mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-espresso"
-                >
-                  {i.hrefLabel ?? "Learn more"}
-                  <ArrowRight
-                    size={14}
-                    className="transition-transform group-hover:translate-x-0.5"
-                  />
-                </Link>
-              )}
-            </div>
-          );
-        })}
-      </div>
-      {m.note && (
-        <p className="mt-12 max-w-[64ch] border-t border-hairline pt-6 leading-relaxed text-ink-700">
-          {m.note}
-        </p>
-      )}
+      <SectionHead heading={m.heading} intro={m.intro} />
+      <List>
+        {m.items.map((i) => (
+          <Item key={i.title} title={i.title}>
+            {i.eyebrow && <p className="text-sm text-ink-500">{i.eyebrow}</p>}
+            <p className={i.eyebrow ? "mt-2" : undefined}>{i.body}</p>
+            {i.href && <ArrowLink href={i.href}>{i.hrefLabel ?? "Learn more"}</ArrowLink>}
+          </Item>
+        ))}
+      </List>
+      {m.note && <Note>{m.note}</Note>}
     </Section>
   );
 }
 
 /**
  * T-08 · Mid-page CTA — the primary of the three permitted CTAs (rule R-06),
- * placed right after T-06/T-07 where the visitor has a question they cannot
- * answer alone. The one espresso surface on the page: it gives the eye
- * somewhere to land mid-scroll, and it is the only place the conversion is
- * allowed to be the loudest thing on screen. The green pill carries a
- * warm-white ring because green on espresso is only 2.1:1 — the ring is what
- * identifies the control.
- *
- * One shape for both page types: a full-bleed espresso band. Treatments used to
- * render it as an inset panel; matching concerns means a visitor who reads a
- * concern and a treatment back to back meets the same CTA twice, not two.
+ * placed where the visitor has a question they cannot answer alone. The one
+ * espresso surface on the page, shared with the concern page. The green pill
+ * carries a warm-white ring because green on espresso is only 2.1:1.
  */
 export function CtaMid({
   cta,
@@ -238,66 +152,20 @@ export function CtaMid({
   position?: string;
 }) {
   if (!cta) return null;
-  // The action sits under the copy it answers, not across an empty gutter, and
-  // the right column says what happens after the tap: a cautious visitor is
-  // more likely to message when the next three steps are known. Every step is
-  // copy the site already states elsewhere (hero CTA line, the "Assessment
-  // first" fact), so the band adds no claim of its own.
-  const steps = [
-    { title: "Message us", body: "Send a question, or a photo, on WhatsApp." },
-    {
-      title: "Free consultation",
-      body: "About 20 to 30 minutes, with no obligation to book treatment.",
-    },
-    {
-      title: "Assessment first",
-      body: "A doctor examines your skin and explains the options and risks before any treatment.",
-    },
-  ];
   return (
-    <section className="on-dark relative isolate my-6 overflow-hidden rounded-[1.5rem] bg-espresso py-14 text-ink-on-dark sm:rounded-[2rem] sm:py-20">
-      {/* Warmth, not decoration: a low mocha glow behind the steps keeps the
-          band from reading as a flat slab, and a hairline frame gives it an edge. */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -right-24 -top-32 -z-10 h-[30rem] w-[30rem] rounded-full bg-mocha/25 blur-3xl"
+    <section className="on-dark my-6 rounded-2xl bg-espresso px-6 py-10 text-ink-on-dark sm:rounded-3xl sm:px-12 sm:py-14">
+      <h2 className="h-section max-w-[20ch]">{cta.heading}</h2>
+      <p className="mt-4 max-w-[54ch] leading-relaxed text-ink-on-dark/85">{cta.body}</p>
+      <WhatsAppButton
+        href={href}
+        size="lg"
+        position={position}
+        label="Ask about this on WhatsApp"
+        className="mt-7 w-full sm:w-auto"
       />
-      <div aria-hidden className="pointer-events-none absolute inset-3 -z-10 rounded-[1.125rem] border border-ink-on-dark/10 sm:inset-4 sm:rounded-[1.5rem]" />
-      <Container>
-        <div className="grid gap-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:items-center lg:gap-20">
-          <div>
-            <h2 className="h-section max-w-[18ch]">{cta.heading}</h2>
-            <p className="mt-5 max-w-[50ch] leading-relaxed text-ink-on-dark/85">{cta.body}</p>
-            <div className="mt-8 flex flex-col items-start gap-3">
-              <WhatsAppButton
-                href={href}
-                size="lg"
-                position={position}
-                label="Ask about this on WhatsApp"
-                className="w-full shadow-[0_10px_28px_-8px_rgb(0_0_0/0.45)] sm:w-auto"
-              />
-              <p className="text-sm text-ink-on-dark/75">Free consultation, no obligation.</p>
-            </div>
-          </div>
-
-          <ol className="relative border-l border-ink-on-dark/15 pl-8">
-            {steps.map((s, i) => (
-              <li key={s.title} className={`relative ${i < steps.length - 1 ? "pb-8" : ""}`}>
-                <span
-                  aria-hidden
-                  className="absolute -left-[2.95rem] top-0 flex h-[1.875rem] w-[1.875rem] items-center justify-center rounded-full border border-ink-on-dark/35 bg-espresso font-display text-sm text-ink-on-dark"
-                >
-                  {i + 1}
-                </span>
-                <p className="font-display text-lg leading-snug text-ink-on-dark">{s.title}</p>
-                <p className="mt-1.5 max-w-[40ch] text-[0.9375rem] leading-relaxed text-ink-on-dark/75">
-                  {s.body}
-                </p>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </Container>
+      <p className="mt-3 text-sm text-ink-on-dark/75">
+        Free consultation, about 20 to 30 minutes, no obligation.
+      </p>
     </section>
   );
 }
@@ -310,48 +178,37 @@ export function SuitabilityBlock({ t }: { t: Treatment }) {
   if (t.avoidIf?.length) {
     return (
       <Section id="suitability">
-        <Lede heading="Who should postpone or avoid it" intro={t.bringToConsult} />
-        <ul className="mt-8 divide-y divide-hairline border-y border-hairline">
+        <SectionHead heading="Who should postpone or avoid it" intro={t.bringToConsult} />
+        <List>
           {t.avoidIf.map((i) => (
-            <li key={i.lead} className="max-w-[68ch] py-4 leading-relaxed text-ink-700">
-              <strong className="font-semibold text-espresso">{i.lead}</strong> {i.body}
-            </li>
+            <Item key={i.lead} lead={i.lead}>
+              {i.body}
+            </Item>
           ))}
-        </ul>
+        </List>
       </Section>
     );
   }
 
-  const suitable = t.suitableFor ?? [];
-  const notSuitable = t.notSuitableFor ?? [];
-  if (!suitable.length && !notSuitable.length) return null;
+  const groups = [
+    { label: "Often considered for", items: t.suitableFor ?? [] },
+    { label: "Usually not suitable for", items: t.notSuitableFor ?? [] },
+  ].filter((g) => g.items.length > 0);
+  if (!groups.length) return null;
 
   return (
     <Section id="suitability">
-      <Lede heading="Is this right for you?" />
-      <div className="mt-8 grid gap-x-12 gap-y-8 sm:grid-cols-2">
-        {[
-          { items: suitable, Icon: Check, tone: "text-success", label: "Often considered for" },
-          { items: notSuitable, Icon: X, tone: "text-warn", label: "Usually not suitable for" },
-        ]
-          .filter((c) => c.items.length > 0)
-          .map(({ items, Icon, tone, label }) => (
-            <div key={label}>
-              <h3 className="text-sm font-semibold text-espresso">{label}</h3>
-              <ul className="mt-3 space-y-3 border-t border-hairline pt-3">
-                {items.map((li) => (
-                  <li
-                    key={li}
-                    className="flex gap-2.5 text-[0.9375rem] leading-relaxed text-ink-700"
-                  >
-                    <Icon size={17} className={`mt-1 shrink-0 ${tone}`} />
-                    <span>{li}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-      </div>
+      <SectionHead heading="Is this right for you?" />
+      {groups.map((g) => (
+        <div key={g.label} className="mt-8">
+          <h3 className="h-sub">{g.label}</h3>
+          <List className="mt-4">
+            {g.items.map((li) => (
+              <Item key={li}>{li}</Item>
+            ))}
+          </List>
+        </div>
+      ))}
     </Section>
   );
 }
@@ -359,98 +216,60 @@ export function SuitabilityBlock({ t }: { t: Treatment }) {
 /**
  * T-10 · What a session involves. Numbered because it is genuinely a sequence;
  * step 1 states that the first visit is a consultation, not a treatment.
- *
- * The generated motif that used to sit beside it is gone. It was decoration
- * standing in for a photograph nobody has taken — the same placeholder
- * furniture `/concerns` refuses — and the numbered ladder is identical to
- * `FirstVisitBlock`'s, which never had one.
  */
 export function SessionBlock({ t }: { t: Treatment }) {
   if (!t.sessionSteps?.length) return null;
   return (
     <Section id="your-session">
-      <Lede heading="What a session involves" />
-      <ol className="mt-8 space-y-8 border-l border-hairline pl-8">
-        {t.sessionSteps.map((s, i) => (
-          <li key={s.title} className="relative">
-            <span
-              aria-hidden
-              className="absolute -left-[2.0625rem] top-0.5 flex size-[2.125rem] items-center justify-center rounded-full border border-hairline bg-page text-[0.8125rem] font-semibold text-accent"
-            >
-              {i + 1}
-            </span>
-            <h3 className="h-sub">{s.title}</h3>
-            <p className="mt-2 max-w-[54ch] leading-relaxed text-ink-700">{s.body}</p>
-          </li>
-        ))}
-      </ol>
+      <SectionHead heading="What a session involves" />
+      <Steps steps={t.sessionSteps} />
     </Section>
   );
 }
 
 /**
- * Kaiteki's own photos of the treatment in progress — same 1:1 grid as the
- * concern page's first-visit photos. A device in use is not an outcome, so the
- * caption carries the meaning and there is no results framing.
+ * Kaiteki's own photos of the treatment in progress — the same large grid as
+ * the concern page's first-visit photos. A device in use is not an outcome, so
+ * the caption carries the meaning and there is no results framing.
  */
 export function ProcedurePhotos({ images }: { images?: Treatment["procedureImages"] }) {
   if (!images?.length) return null;
   return (
     <Section id="in-the-treatment-room">
-      <Lede heading="In the treatment room" />
-      <ul className="mt-8 grid gap-6 sm:grid-cols-3">
-        {images.map((v) => (
-          <li key={v.src}>
-            <div className="relative aspect-square overflow-hidden rounded-lg bg-tint">
-              <Image
-                src={v.src}
-                alt=""
-                fill
-                sizes="(max-width: 640px) 100vw, 240px"
-                className="object-cover"
-              />
-            </div>
-            <p className="mt-2.5 text-sm leading-snug text-ink-500">{v.caption}</p>
-          </li>
-        ))}
-      </ul>
+      <SectionHead heading="In the treatment room" />
+      <PhotoGrid images={images} />
     </Section>
   );
 }
 
 /**
  * The illustrated procedure sequence (`steps`). Numbered because the order is
- * the information, not decoration.
- *
- * **The 156px cap is the point.** The sources are 156×156 icons; rendered at
- * 300px they are visibly soft, so the cell is capped at native width and the
- * grid distributes the slack rather than stretching the image. Q-19 enforces
- * the same ceiling on the data.
+ * the information. The sources are 156×156 icons, so the image stays under its
+ * native width (Q-19) and sits beside its text.
  */
 export function StepsBlock({ steps }: { steps?: Treatment["steps"] }) {
   if (!steps?.length) return null;
   return (
     <Section id="steps">
-      <Lede heading="The procedure, step by step" />
-      <ol className="mt-8 grid gap-x-8 gap-y-10 sm:grid-cols-2">
+      <SectionHead heading="The procedure, step by step" />
+      <ol className="mt-8 grid gap-8 sm:grid-cols-2">
         {steps.map((s, i) => (
-          <li key={s.label} className="flex gap-5">
-            <div className="w-[156px] max-w-[156px] flex-none">
-              <div className="relative aspect-square">
-                <Image
-                  src={s.src}
-                  alt=""
-                  fill
-                  loading="lazy"
-                  sizes="156px"
-                  className="object-contain"
-                />
-              </div>
+          <li key={s.label} className="flex items-start gap-4">
+            <div className="relative aspect-square w-24 flex-none sm:w-[120px]">
+              <Image
+                src={s.src}
+                alt=""
+                fill
+                loading="lazy"
+                sizes="120px"
+                className="object-contain"
+              />
             </div>
             <div className="min-w-0">
-              <p className="ledger text-[0.6875rem] uppercase tracking-[0.14em]">Step {i + 1}</p>
-              <h3 className="h-sub mt-1.5">{s.label}</h3>
-              <p className="mt-2 max-w-[46ch] leading-relaxed text-ink-700">{s.body}</p>
+              <h3 className="h-sub">
+                {i + 1}. {s.label}
+              </h3>
+              <p className="mt-2 leading-relaxed text-ink-700">{s.body}</p>
             </div>
           </li>
         ))}
@@ -467,47 +286,43 @@ export function AfterSession({ a }: { a?: Treatment["afterSession"] }) {
   if (!a) return null;
   return (
     <Section id="after-a-session">
-      <Lede heading="After a session" intro={a.intro} />
-      <Rows className="mt-8">
+      <SectionHead heading="After a session" intro={a.intro} />
+      <List>
         {a.bands.map((b) => (
-          <Row key={b.title} title={b.title}>
+          <Item key={b.title} title={b.title}>
             {b.body}
-          </Row>
+          </Item>
         ))}
-      </Rows>
-      <p className="mt-8 max-w-[62ch] leading-relaxed text-ink-700">{a.aftercare}</p>
+      </List>
+      <Note>{a.aftercare}</Note>
     </Section>
   );
 }
 
 /**
- * T-12 · Risks and what it cannot do. A formal clinical notice rather than an
- * alert card, and on page ground like the rest of the reading column — the
- * twin of `ConcernRisksBlock`, which never carried a surface. `cannotDo`
- * carries at least three real limits and the pigment-change note is mandatory
- * on energy-based treatments (rule R-05).
+ * T-12 · Risks and what it cannot do. A formal clinical notice on page ground,
+ * the twin of `ConcernRisksBlock`. `cannotDo` carries at least three real
+ * limits and the pigment-change note is mandatory on energy-based treatments
+ * (rule R-05).
  */
 export function RisksBlock({ r, name }: { r?: Treatment["risks"]; name: string }) {
   if (!r) return null;
   return (
     <Section id="risks">
-      <Lede heading={`Risks, side effects, and what ${name} cannot do`} intro={r.intro} />
-      <div className="mt-8 divide-y divide-espresso/15 border-y border-espresso/15">
-        <Row title="Common and temporary">{r.common}</Row>
-        <Row title="Less common">{r.lessCommon}</Row>
-        {r.pigmentNote && <Row title="Pigment change and Malaysian skin">{r.pigmentNote}</Row>}
-        <Row title="What it cannot do">
-          <ul className="space-y-3">
+      <SectionHead heading={`Risks, side effects, and what ${name} cannot do`} intro={r.intro} />
+      <List>
+        <Item title="Common and temporary">{r.common}</Item>
+        <Item title="Less common">{r.lessCommon}</Item>
+        {r.pigmentNote && <Item title="Pigment change and Malaysian skin">{r.pigmentNote}</Item>}
+        <Item title="What it cannot do">
+          <ul className="list-disc space-y-2 pl-5 marker:text-ink-500">
             {r.cannotDo.map((c) => (
-              <li key={c} className="flex gap-3">
-                <span aria-hidden className="mt-2 h-px w-4 shrink-0 bg-warn" />
-                <span>{c}</span>
-              </li>
+              <li key={c}>{c}</li>
             ))}
           </ul>
-        </Row>
-      </div>
-      <p className="mt-8 max-w-[62ch] leading-relaxed text-ink-700">{r.disclose}</p>
+        </Item>
+      </List>
+      <Note>{r.disclose}</Note>
     </Section>
   );
 }
@@ -521,15 +336,13 @@ export function CostFactors({ c, href }: { c?: Treatment["costFactors"]; href: s
   if (!c) return null;
   return (
     <Section id="sessions-cost">
-      <Lede heading="What affects the number of sessions, and the cost" intro={c.intro} />
-      <ul className="mt-8 divide-y divide-hairline border-y border-hairline">
+      <SectionHead heading="What affects the number of sessions, and the cost" intro={c.intro} />
+      <List>
         {c.factors.map((f) => (
-          <li key={f} className="max-w-[62ch] py-4 leading-relaxed text-ink-700">
-            {f}
-          </li>
+          <Item key={f}>{f}</Item>
         ))}
-      </ul>
-      {c.outro && <p className="mt-8 max-w-[62ch] leading-relaxed text-ink-700">{c.outro}</p>}
+      </List>
+      {c.outro && <Note>{c.outro}</Note>}
       <WhatsAppButton
         href={href}
         variant="outline"
@@ -545,22 +358,17 @@ export function CostFactors({ c, href }: { c?: Treatment["costFactors"]; href: s
  * T-14 · What these treatments do. Manufacturer imagery only, labelled in all
  * four required places (heading paragraph, every caption, every alt text,
  * closing disclaimer). Omitted entirely rather than shipped half-labelled.
- *
- * **The container is `object-contain` on page ground**, not `object-cover` in a
- * 4:3 tint box. Every manufacturer mark is a 1.25:1 transparent PNG: cover
- * crops it, and a warm tint panel behind a transparent logo puts a background
- * where the artwork assumes the page. Same class of defect as the concern
- * image-fit bug (docs/11), fixed before anything authors into it.
+ * Transparent marks, so `object-contain` on page ground.
  */
 export function ManufacturerImages({ images }: { images?: Treatment["manufacturerImages"] }) {
   if (!images?.length) return null;
   return (
     <Section id="manufacturer">
-      <Lede
+      <SectionHead
         heading="What these treatments do"
         intro="The images below are supplied by the device manufacturers. They are not Kaiteki patients, and they illustrate what this category of treatment is designed to act on."
       />
-      <div className="mt-10 grid gap-6 sm:grid-cols-3">
+      <div className="mt-8 grid gap-6 sm:grid-cols-2">
         {images.map((img) => (
           <figure key={img.src}>
             <div className="relative aspect-[5/4] rounded-xl border border-hairline bg-page">
@@ -569,17 +377,15 @@ export function ManufacturerImages({ images }: { images?: Treatment["manufacture
                 alt={img.alt}
                 fill
                 loading="lazy"
-                sizes="(max-width: 640px) 100vw, 30vw"
+                sizes="(max-width: 640px) 100vw, 380px"
                 className="object-contain p-4"
               />
             </div>
-            <figcaption className="mt-3 text-[0.8125rem] leading-snug text-ink-500">
-              {img.caption}
-            </figcaption>
+            <figcaption className="mt-3 text-sm leading-snug text-ink-500">{img.caption}</figcaption>
           </figure>
         ))}
       </div>
-      <p className="mt-8 max-w-[62ch] text-sm leading-relaxed text-ink-500">
+      <p className="mt-8 max-w-[65ch] text-sm leading-relaxed text-ink-500">
         Images supplied by device manufacturers. Not Kaiteki patients. Individual results vary and
         a doctor assesses suitability before treatment.
       </p>
@@ -588,10 +394,9 @@ export function ManufacturerImages({ images }: { images?: Treatment["manufacture
 }
 
 /**
- * T-15 · Treatment areas. One field, two shapes: a string is a text chip, an
- * object is a die-cut zone photograph with its label beneath (docs/14). The
- * die-cuts are transparent PNGs, so they sit on page ground — never on a tint
- * or espresso surface. Q-20 fails an array that mixes the two.
+ * T-15 · Treatment areas. One field, two shapes: a string is a text chip,
+ * an object is a die-cut zone photograph with its label beneath. Q-20 fails an
+ * array that mixes the two.
  */
 export function AreasBlock({ t }: { t: Treatment }) {
   if (!t.areas?.length) return null;
@@ -599,7 +404,7 @@ export function AreasBlock({ t }: { t: Treatment }) {
 
   return (
     <Section id="treatment-areas">
-      <Lede
+      <SectionHead
         heading="Treatment areas"
         intro={
           zones.length > 0
@@ -608,29 +413,15 @@ export function AreasBlock({ t }: { t: Treatment }) {
         }
       />
       {zones.length > 0 ? (
-        <div className="mt-10 grid grid-cols-2 gap-x-5 gap-y-8 sm:grid-cols-4">
-          {zones.map((z) => (
-            <figure key={z.src} className="text-center">
-              <div className="relative aspect-square">
-                <Image
-                  src={z.src}
-                  alt=""
-                  fill
-                  loading="lazy"
-                  sizes="(max-width: 640px) 45vw, 190px"
-                  className="object-contain"
-                />
-              </div>
-              <figcaption className="mt-1 text-sm text-ink-700">{z.label}</figcaption>
-            </figure>
-          ))}
-        </div>
+        <IconGrid items={zones} />
       ) : (
-        <ul className="mt-8 flex flex-wrap gap-2">
+        // Short labels, not sentences: a compact chip row reads at a glance
+        // where a full-width row per word would just be scroll.
+        <ul className="mt-6 flex flex-wrap gap-2">
           {t.areas.map((a) => (
             <li
               key={String(a)}
-              className="inline-flex rounded-full border border-hairline bg-surface px-3.5 py-1.5 text-sm text-ink-700"
+              className="rounded-full border border-hairline bg-surface px-3.5 py-1.5 text-sm text-ink-700"
             >
               {String(a)}
             </li>
@@ -641,8 +432,5 @@ export function AreasBlock({ t }: { t: Treatment }) {
   );
 }
 
-/* T-18 · Locations ("Available at") was removed in 2026-08. No treatment ever
- * authored `availableAt`, so every page listed all nine branches identically —
- * nine outbound links repeated nineteen times, saying nothing about the
- * treatment. The branch list belongs to /locations and the footer, which is
- * where it stays. */
+/* T-18 · Locations ("Available at") was removed in 2026-08. The branch list
+ * belongs to /locations and the footer. */

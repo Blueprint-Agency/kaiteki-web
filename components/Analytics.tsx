@@ -22,7 +22,8 @@ function clickText(a: HTMLAnchorElement): string {
 
 /**
  * The events the concern/treatment templates are measured by (rule R-14):
- * whatsapp_click, jump_nav_click, scroll_depth, faq_open, variant_tab_open.
+ * whatsapp_click, jump_nav_click, scroll_depth, faq_open. (`variant_tab_open`
+ * retired 2026-10 with the type tabs — every type now renders open.)
  *
  * `whatsapp_click` is the site's one conversion event. It fires for EVERY
  * WhatsApp link on the page, marked up or not, with:
