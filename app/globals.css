@@ -212,6 +212,16 @@ body {
 }
 .mega-in { animation: kaiteki-panel-in 180ms var(--ease-out-quart, ease-out) both; }
 
+/* Promo <dialog> entrance: card and backdrop fade in each time it opens. */
+@keyframes kaiteki-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .promo-dialog[open] { animation: kaiteki-panel-in 500ms var(--ease-out-quart, ease-out) both; }
+  .promo-dialog[open]::backdrop { animation: kaiteki-fade-in 500ms ease-out both; }
+}
+
 /* Only animate when JS is present (avoids blank content for crawlers/no-JS)
    and only when the user hasn't asked for reduced motion. */
 @media (prefers-reduced-motion: no-preference) {

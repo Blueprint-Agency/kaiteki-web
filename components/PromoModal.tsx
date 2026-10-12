@@ -6,28 +6,47 @@ import Link from "next/link";
 import { WhatsAppButton } from "./WhatsAppCTA";
 import { waLink } from "@/lib/wa";
 
-/** Promo banner in a native <dialog>. Auto-opens on every page load (homepage);
- *  pass `trigger` to render a button that opens it on demand instead. */
+const SEEN_KEY = "kaiteki-promo-seen";
+/** Settle time after `load` before the promo fades in, so the hero paints first. */
+const AUTO_OPEN_DELAY_MS = 1200;
+
+/** Promo banner in a native <dialog>. Auto-opens (fading in) once per browser
+ *  session on the homepage; pass `trigger` to render a button that opens it on
+ *  demand instead. */
 export function PromoModal({ trigger }: { trigger?: string }) {
   const ref = useRef<HTMLDialogElement>(null);
 
   useEffect(() => {
     if (trigger) return;
-    // Opening on mount made this popup the page's LCP element (it is the biggest
-    // thing on screen) and forced a whole-document reflow mid-load. A plain
-    // delay does not help — LCP keeps updating until the first user input, so a
-    // timer just moves the same bad number later. Waiting for that first input
-    // is what actually hands LCP back to the hero, and it keeps the promo for
-    // every real visitor: nobody reads a page without scrolling or tapping.
+    try {
+      if (sessionStorage.getItem(SEEN_KEY)) return;
+    } catch {
+      // Storage blocked (private mode etc.) — just show it.
+    }
+    // Opening on mount made this popup the page's LCP element and forced a
+    // reflow mid-load, so wait for the page to finish loading plus a beat. The
+    // first user input opens it sooner if it comes before the timer.
     const events = ["pointerdown", "keydown", "scroll", "touchstart"] as const;
-    const stop = () => events.forEach((e) => removeEventListener(e, open));
-    // Drop all four on the first one to fire — showModal() throws on an
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    const schedule = () => (timer = setTimeout(open, AUTO_OPEN_DELAY_MS));
+    const stop = () => {
+      clearTimeout(timer);
+      removeEventListener("load", schedule);
+      events.forEach((e) => removeEventListener(e, open));
+    };
+    // Tear everything down on the first trigger — showModal() throws on an
     // already-open dialog, so `once` per listener is not enough.
     function open() {
       stop();
+      if (ref.current?.open) return;
       ref.current?.showModal();
+      try {
+        sessionStorage.setItem(SEEN_KEY, "1");
+      } catch {}
     }
     for (const e of events) addEventListener(e, open, { passive: true });
+    if (document.readyState === "complete") schedule();
+    else addEventListener("load", schedule, { once: true });
     return stop;
   }, [trigger]);
 
@@ -49,7 +68,7 @@ export function PromoModal({ trigger }: { trigger?: string }) {
       // dvh, not vh: on mobile the URL bar makes 100vh taller than what's
       // actually visible, which is what pushed the CTAs below the fold and made
       // the dialog scroll. overflow-hidden keeps it a fixed, fit-to-screen card.
-      className="m-auto w-fit max-h-[100dvh] max-w-[94vw] overflow-hidden rounded-2xl bg-transparent p-0 backdrop:bg-black/60"
+      className="promo-dialog m-auto w-fit max-h-[100dvh] max-w-[94vw] overflow-hidden rounded-2xl bg-transparent p-0 backdrop:bg-black/60"
       onClick={(e) => {
         if (e.target === ref.current) ref.current?.close();
       }}
