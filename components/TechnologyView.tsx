@@ -159,7 +159,7 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
               <div className="relative aspect-[3/2] overflow-hidden rounded-2xl rounded-t-[4rem] bg-tint ring-1 ring-hairline lg:aspect-[5/4]">
                 <Image
                   src={x.image}
-                  alt={`${x.name}${x.device ? ` (${x.device})` : ""} at Kaiteki Skin Aesthetic Clinic Malaysia`}
+                  alt={x.imageAlt ?? `${x.name}${x.device ? ` (${x.device})` : ""} at Kaiteki Skin Aesthetic Clinic Malaysia`}
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 420px"

@@ -188,7 +188,7 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
               <div className="relative aspect-[3/2] overflow-hidden rounded-2xl rounded-t-[4rem] bg-tint ring-1 ring-hairline lg:aspect-[5/4]">
                 <Image
                   src={t.image}
-                  alt={`${t.name} treatment at Kaiteki Skin Aesthetic Clinic Malaysia`}
+                  alt={t.imageAlt ?? `${t.name} treatment at Kaiteki Skin Aesthetic Clinic Malaysia`}
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 420px"

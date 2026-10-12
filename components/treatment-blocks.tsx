@@ -4,7 +4,6 @@ import type { ReactNode } from "react";
 import { Container } from "@/components/Container";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { ArrowRight, Check, X } from "@/components/icons";
-import { technologyBySlug } from "@/content/data/technology";
 import type { Treatment } from "@/lib/types";
 
 /**
@@ -176,14 +175,9 @@ export function RoutingModule({
  * T-07 · Archetype variant module (Full depth only). On energy/device
  * treatments this is the wavelength comparison; the copy must read as a
  * factual difference in delivery, never as a ranking (rule R-02). Two genuinely
- * equivalent columns, so an equal two-up is honest here — and it is the one
- * place on the page where imagery does real work.
+ * equivalent columns, so an equal two-up is honest here. Text only: each
+ * device's photograph already appears once in the "devices used" row below.
  */
-/** The variant's own `/technology/[slug]` link already names the platform, so
- *  the cover shot is derived from it rather than authored a second time. */
-const deviceImage = (href?: string) =>
-  href?.startsWith("/technology/") ? technologyBySlug(href.split("/").pop()!)?.image : undefined;
-
 export function VariantModule({ m }: { m?: Treatment["variantModule"] }) {
   if (!m) return null;
   return (
@@ -191,23 +185,8 @@ export function VariantModule({ m }: { m?: Treatment["variantModule"] }) {
       <Lede heading={m.heading} intro={m.intro} />
       <div className="mt-10 grid gap-10 sm:grid-cols-2 sm:gap-12">
         {m.items.map((i) => {
-          const cover = deviceImage(i.href);
           return (
             <div key={i.title}>
-              {/* No frame where there is no photograph — an empty tinted box is
-                  the placeholder furniture this page type does not carry. */}
-              {cover && (
-                <div className="relative mb-6 aspect-[4/3] overflow-hidden rounded-2xl rounded-t-[2.5rem] bg-tint ring-1 ring-hairline">
-                  <Image
-                    src={cover}
-                    alt={`${i.title}: aesthetic technology at Kaiteki Skin Aesthetic Clinic`}
-                    fill
-                    loading="lazy"
-                    sizes="(max-width: 640px) 100vw, 45vw"
-                    className="object-cover"
-                  />
-                </div>
-              )}
               <p className="ledger text-[0.6875rem] uppercase tracking-[0.14em]">{i.eyebrow}</p>
               <h3 className="h-sub mt-1.5">{i.title}</h3>
               <p className="mt-3 max-w-[46ch] leading-relaxed text-ink-700">{i.body}</p>

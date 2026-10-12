@@ -38,12 +38,12 @@ export const treatments: Treatment[] = [
     // T-01 "In brief" — leads with the page's key distinction inside 60 words
     // (pico is a category, wavelength decides suitability), not a definition.
     leadAnswer:
-      "Pico laser is a category of laser rather than a single machine. Every pico device fires pulses measured in trillionths of a second, but they differ in wavelength, and wavelength is what determines which pigment, which ink colours and which skin tones a device is appropriate for. Kaiteki uses more than one pico platform for that reason. A doctor examines your skin and decides which, if any, is suitable before anything is booked.",
+      "Pico laser is a category of laser, not a single machine. Every pico device fires pulses lasting trillionths of a second, but they differ in wavelength, which decides which pigment, ink colours and skin tones a device suits. Kaiteki runs more than one pico platform for that reason, and a doctor decides which, if any, fits your skin.",
 
     // T-02 — process facts only. A time-to-result here would be an outcome
     // claim (R-01) and is medically wrong for melasma regardless.
     facts: [
-      { value: "2 pico platforms", label: "Matched to your skin type and pigment at consultation" },
+      { value: "2 pico platforms", label: "Matched to your skin type and pigment" },
       { value: "20–40 minutes", label: "Typical facial pigment appointment, including preparation" },
       { value: "Assessment first", label: "Your first visit is a doctor consultation, not a treatment" },
     ],
@@ -87,13 +87,13 @@ export const treatments: Treatment[] = [
       },
     ],
     routesNote:
-      "An honest note on acne. Pico laser addresses the marks acne leaves behind, not acne itself. If you have active inflammatory spots, those are usually managed medically first, and pigment work follows once the skin has settled. A doctor will tell you if that is the sequence in your case.",
+      "Pico laser treats the marks acne leaves, not acne itself. Active inflammatory spots are usually managed medically first, with pigment work once the skin has settled.",
 
     // T-07 — a factual difference in energy delivery, never a ranking (R-02).
     variantModule: {
       heading: "Which pico device, and why it matters",
       intro:
-        "Both platforms below fire picosecond pulses, but their primary wavelengths differ, and wavelength changes how strongly the pulse is absorbed by melanin. That is a factual difference in how each device delivers energy, not a ranking. Which one suits you, if any, is decided by your doctor after examining your skin.",
+        "Both platforms fire picosecond pulses, but their primary wavelengths differ, and wavelength changes how strongly melanin absorbs the pulse. That is a difference in energy delivery, not a ranking.",
       items: [
         {
           eyebrow: "755nm · Cynosure",
@@ -105,12 +105,12 @@ export const treatments: Treatment[] = [
         {
           eyebrow: "1064nm · Fotona",
           title: "Fotona PQX (StarWalker)",
-          body: "Built around the longer 1064nm Nd:YAG wavelength, which interacts less with surface melanin and travels deeper. Often the platform of choice where skin tone or depth of pigment makes a 755nm pass less appropriate.",
+          body: "Built around the longer 1064nm Nd:YAG wavelength, which interacts less with surface melanin and travels deeper. Often chosen where skin tone or pigment depth makes a 755nm pass less appropriate.",
           href: "/technology/fotona-pqx",
           hrefLabel: "About Fotona PQX",
         },
       ],
-      note: "This is the reason Kaiteki runs more than one pico platform. A clinic with a single device can only offer that device's wavelength; having more than one means the device is matched to your skin rather than your skin being matched to the device.",
+      note: "A single-device clinic can offer only that device's wavelength. Running two lets the device be matched to your skin, not the other way round.",
     },
 
     // T-08 — placed at the point of maximum unanswered question.
@@ -133,12 +133,12 @@ export const treatments: Treatment[] = [
       { lead: "A history of keloid or hypertrophic scarring.", body: "" },
       {
         lead: "Medications that increase light sensitivity,",
-        body: "including oral isotretinoin. Bring your current list rather than trying to recall it.",
+        body: "including oral isotretinoin.",
       },
       { lead: "Recent lasers, peels or other procedures", body: "on the same area." },
     ],
     bringToConsult:
-      "Bring your full medical, medication and skincare history to the consultation, including any previous laser or peel treatments and any tendency to darken after a spot or a scratch. That last detail changes the settings a doctor will choose.",
+      "Bring your medical, medication and skincare history, including previous lasers or peels and any tendency to darken after a spot or scratch. That last detail changes the settings chosen.",
 
     // T-10 — step 1 states the first visit is not a treatment.
     sessionSteps: [
@@ -160,14 +160,14 @@ export const treatments: Treatment[] = [
       },
       {
         title: "Afterwards",
-        body: "A cooling or soothing step, sunscreen, and aftercare instructions specific to the area treated. A facial pigment appointment is usually around 20 to 40 minutes including preparation; tattoo work depends on size.",
+        body: "A cooling or soothing step, sunscreen, and aftercare instructions for the area treated. Tattoo appointments vary with size.",
       },
     ],
 
     // T-11 — physical healing timeframes only, never a timeframe to a result.
     afterSession: {
       intro:
-        "Downtime after a pico laser is usually short, but “short” is not “none”, and what you see in the first fortnight is part of the process rather than a problem. This varies with the intensity used and between individuals.",
+        "Downtime is usually short, but short is not none, and what you see in the first fortnight is part of the process rather than a problem.",
       bands: [
         {
           title: "The first few hours",
@@ -187,34 +187,34 @@ export const treatments: Treatment[] = [
         },
       ],
       aftercare:
-        "Aftercare that actually matters: daily broad-spectrum sunscreen and genuine sun avoidance, because sun exposure between sessions is one of the main reasons pigment returns; gentle cleansing and moisturising; and pausing actives such as retinoids and acids until your doctor confirms it is fine to resume.",
+        "Daily broad-spectrum sunscreen and real sun avoidance, since sun exposure between sessions is a main reason pigment returns; gentle cleansing and moisturising; and no retinoids or acids until your doctor says to resume.",
     },
 
     // T-12 — the pigment-change note is mandatory on energy-based treatments (R-05).
     risks: {
       intro:
-        "As with any medical laser procedure, a pico laser carries risks. These are explained to you in full at consultation, before anything is booked.",
+        "Each is explained at consultation, before anything is booked.",
       common:
         "Redness, warmth, mild swelling, pinpoint bruising and small crusts that flake away over one to two weeks.",
       lessCommon:
         "Darkening of the treated skin after treatment (post-inflammatory hyperpigmentation), lightening of the treated skin, blistering and, rarely, scarring.",
       pigmentNote:
-        "Post-inflammatory hyperpigmentation is the risk that matters most in the skin tones common here. Skin with more melanin responds to injury by producing more pigment, which means an over-aggressive laser setting can leave a darker mark than the one it was aimed at. This is why a doctor may choose lower energy, a longer interval between sessions, a test patch, or a different wavelength than you were expecting, and why a plan that looks slower is often the safer one. It is a deliberate trade-off, not caution for its own sake.",
+        "Post-inflammatory hyperpigmentation is the risk that matters most in the skin tones common here: skin with more melanin answers injury with more pigment, so an over-aggressive setting can leave a darker mark than the one it targeted. That is why a doctor may choose lower energy, longer intervals, a test patch or a different wavelength. A slower plan is often the safer one.",
       cannotDo: [
         "It does not stop new pigment forming. Without daily sun protection, sun-related marks return, and melasma in particular fluctuates with sun exposure and hormones, so it is managed long-term rather than finished in a fixed course.",
         "It does not treat active acne. Marks left behind, yes; the inflammatory condition itself is managed medically.",
-        "It cannot guarantee complete clearance of a tattoo. Ink composition is rarely known with certainty, and some colours respond poorly.",
-        "It does not lift or tighten skin. That is a different category of treatment entirely.",
+        "It cannot promise complete clearance of a tattoo. Ink composition is rarely known with certainty, and some colours respond poorly.",
+        "It does not lift or tighten skin.",
       ],
       disclose:
-        "Tell your doctor if you are or may be pregnant or breastfeeding, are taking any medication, have a history of cold sores or keloid scarring, have had recent procedures on the area, or have been in strong sun recently.",
+        "Tell your doctor about anything listed under who should postpone it, and any history of cold sores.",
     },
 
     // T-13 — factors only, no figures (R-03). A list so it can become a price
     // table later without a rebuild.
     costFactors: {
       intro:
-        "There is no single course length that fits everyone, and Kaiteki does not quote prices online. The figure you are given at consultation reflects the plan actually assessed for you rather than an average. What moves it:",
+        "Kaiteki does not quote prices online; the figure you get at consultation reflects your assessed plan. What moves it:",
       factors: [
         "Type and depth of pigment. Surface sun spots generally need fewer visits than deeper dermal pigment.",
         "Size of the area treated, whether a few spots, a full face, or a body area.",
@@ -224,7 +224,7 @@ export const treatments: Treatment[] = [
         "Whether pico work is combined with other steps in a wider plan.",
       ],
       outro:
-        "Facial pigment is commonly planned as a course of several sessions spaced a few weeks apart, with the plan reviewed as it goes. Some conditions, melasma among them, are managed on an ongoing basis rather than completed in a fixed number of visits.",
+        "Facial pigment is commonly planned as several sessions a few weeks apart, reviewed as it goes; melasma is managed on an ongoing basis.",
     },
 
     // T-17 — each reason is specific to what pico laser does NOT do.
@@ -244,82 +244,67 @@ export const treatments: Treatment[] = [
     seoTitle: "Pico Laser Treatment Malaysia | Pigmentation | Kaiteki",
     seoDescription:
       "Pico laser at Kaiteki uses picosecond pulses for pigmentation, uneven tone and tattoo ink. A doctor assesses which device and settings suit your skin.",
-    // Four figure candidates, one slot: this page carries two prose sections,
-    // so Q-23 allows floor(2 / 2) = 1. The device photograph is the one kept —
-    // `lasers`, `pro-yellow-laser-2` and `premium-laser` are generic handpiece
-    // stock and none of them names the platform. They re-enter when the body
-    // grows; this is a section-count problem, not a media one.
-    figures: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/pico-laser/image-picosure.jpg",
-        caption: "A PicoSure handpiece held against the cheek during a session.",
-      },
-      // `lasers.jpg` is a second usable session photograph, held out rather
-      // than authored: pico-laser runs only two prose sections, and Variant A
-      // renders floor(sections / 2) = 1 figure. A second one would be dropped
-      // silently (Q-23). It lands the moment a third section is written.
-    ],
     sections: [
       {
         // T-04 — para 2 is what earns the snippet / AI-answer citation.
         heading: "What is Pico laser?",
         body: [
           "“Pico” refers to the length of the laser pulse, not to a brand. A picosecond is a trillionth of a second, and pulses that short deliver their energy faster than the surrounding skin can heat up. The effect on pigment is therefore largely photomechanical (a rapid shockwave that fractures pigment clusters) rather than thermal.",
-          "That matters because heat is what tends to provoke pigment problems in the skin tones common in Malaysia. It is the reason picosecond devices are widely used here for pigment work. It is not, however, a guarantee of suitability: what actually determines whether a pico laser is appropriate for you is the type and depth of your pigment, your skin type, and your history of marking after inflammation. A doctor assesses all three before recommending anything.",
+          "That matters because heat tends to provoke pigment problems in the skin tones common in Malaysia, which is why picosecond devices are widely used here for pigment work. Suitability still turns on three things a doctor checks: the type and depth of your pigment, your skin type, and whether you mark after inflammation.",
         ],
       },
       {
         // T-05
-        heading: "How it works",
+        heading: "How does a picosecond pulse break up pigment?",
         body: [
           "The pulse is absorbed by pigment far more strongly than by the surrounding skin. Because it arrives and ends in trillionths of a second, the pigment particle takes the energy as a mechanical shock and breaks into smaller fragments. Those fragments are then cleared gradually by the body's own immune cells over the weeks that follow, which is why the visible change after a pico session develops over time rather than appearing on the day.",
-          "Delivered at lower energy with a diffractive lens, the same pulse creates small zones of controlled injury in the upper skin without breaking the surface, which is used as a skin-renewal pass for texture and tone rather than for a specific mark. Wavelength, energy, spot size and lens are all selected by the treating doctor for your skin and your concern; they are not fixed settings.",
+          "Delivered at lower energy with a diffractive lens, the same pulse creates small zones of controlled injury in the upper skin without breaking the surface, which is used as a skin-renewal pass for texture and tone rather than for a specific mark. Wavelength, energy, spot size and lens are set per patient, not fixed.",
         ],
       },
     ],
-    // T-16 — 10 at Full depth, 60–90 words each. Required mix: device
+    // T-16 — 10 at Full depth, 40–55 words each, no restating a block above. Required mix: device
     // comparison, pain, session count, post-session timeline, expectations,
     // local skin tones, cost-without-a-price, then practical.
     faqs: [
       {
         q: "What is the difference between PicoSure and Fotona PQX?",
-        a: "Both are picosecond lasers, but their primary wavelengths differ. PicoSure's main wavelength is 755nm, which is absorbed strongly by melanin and is useful for certain pigment and ink colours, though it makes skin tone a bigger factor in the settings chosen. Fotona PQX is built around the longer 1064nm wavelength, which interacts less with surface melanin and travels deeper. Your doctor may use one, the other, or both across a plan, decided after examining your skin.",
+        a: "Both are picosecond lasers with different primary wavelengths. PicoSure's 755nm is absorbed strongly by melanin, which is useful for certain pigment and ink colours but makes skin tone a bigger factor in the settings. Fotona PQX's 1064nm interacts less with surface melanin and travels deeper. A plan may use one, the other, or both.",
       },
       {
         q: "Does Pico laser hurt?",
-        a: "Most people describe brief snapping or hot-pinprick sensations during the pulses rather than sustained pain, and picosecond pulses are generally reported as more tolerable than older longer-pulse lasers. Comfort varies between individuals and with the area treated. Topical numbing can be applied where your doctor considers it appropriate, particularly for sensitive areas and tattoo work. Tell the team during the session if anything is uncomfortable, as settings and pacing can be adjusted.",
+        a: "Most people describe brief snapping or hot-pinprick sensations rather than sustained pain, and picosecond pulses are generally reported as more tolerable than older longer-pulse lasers. Numbing cream can be used for sensitive areas and tattoo work, and settings can be adjusted during the session.",
       },
       {
         q: "How many sessions will I need?",
-        a: "It depends on the type and depth of pigment, the size of the area, and how your skin responds between visits. Surface sun spots generally need fewer sessions than deeper dermal pigment or a dense tattoo. Facial pigment is commonly planned as a course of several sessions spaced a few weeks apart, reviewed as it goes. Some conditions, melasma among them, are managed on an ongoing basis rather than completed in a fixed number of visits.",
+        a: "It depends on pigment type and depth, area size, and how your skin responds between visits. Surface sun spots generally need fewer sessions than dermal pigment or a dense tattoo. Facial pigment is commonly planned as several sessions a few weeks apart; melasma is managed on an ongoing basis.",
       },
       {
         q: "What happens in the days after a session?",
-        a: "Expect mild redness and warmth for a few hours, sometimes with slight swelling. Where pigment was targeted directly, the treated spots often look darker over the first day or two, which is expected. Small darkened flecks or fine crusting may then appear and flake away on their own over roughly one to two weeks. Leave them alone rather than picking, keep skincare gentle, and use sunscreen daily.",
+        a: "Mild redness and warmth for a few hours, sometimes slight swelling. Treated spots often look darker for a day or two, then small flecks or fine crusting flake away on their own over one to two weeks. Don't pick, keep skincare gentle, and use sunscreen daily.",
       },
       {
         q: "Will I see a difference after one session?",
-        a: "It varies, and a single session is not a reliable guide to how a course will go. Because the fragmented pigment is cleared gradually by your own body, change develops over the weeks after each session rather than on the day. Deeper pigment typically needs more sessions than surface marks. Your doctor will tell you what is realistic for your particular pigment before you commit to anything, and will review progress at each visit.",
+        a: "Not reliably. Your body clears fragmented pigment gradually, so change develops over the weeks after each session, and deeper pigment typically needs more sessions than surface marks. Progress is reviewed at each visit.",
       },
       {
         q: "Is Pico laser suitable for darker Malaysian skin tones?",
-        a: "Picosecond lasers are used across a wide range of skin tones, but skin with more melanin carries a higher risk of darkening after treatment, so settings, wavelength and intervals are chosen more conservatively and a test patch is often used. A 755nm wavelength interacts more with melanin than a 1064nm one, which is one reason Kaiteki runs more than one platform. Your doctor assesses your skin type and marking history and will say honestly if another approach suits you better.",
+        a: "Picosecond lasers are used across a wide range of skin tones, but skin with more melanin is more likely to darken after treatment, so settings, wavelength and intervals are chosen more conservatively and a test patch is often used. 755nm interacts more with melanin than 1064nm, which is one reason Kaiteki runs both.",
       },
       {
         q: "Can Pico laser treat melasma?",
-        a: "Melasma is sometimes addressed with picosecond lasers, but it needs particular caution. It is a chronic condition influenced by sun exposure and hormones, it can recur, and over-aggressive treatment can make it worse rather than better. That is why melasma is usually managed as an ongoing plan combining sun protection, topical care and conservative in-clinic settings rather than treated as a fixed course. A doctor assesses whether any laser is appropriate for your melasma at all.",
+        a: "Sometimes, with caution. Melasma is chronic, driven by sun and hormones, and can recur, and over-aggressive treatment can worsen it. It is usually managed as an ongoing plan of sun protection, topical care and conservative in-clinic settings, and a doctor decides whether any laser suits your melasma at all.",
       },
       {
         q: "Can a tattoo be completely removed?",
-        a: "It cannot be predicted before assessment. Black and dark blue inks generally respond most predictably, while light colours, white, and some cosmetic or permanent-makeup pigments can be resistant or behave unpredictably. Ink composition is rarely known with certainty, so a doctor assesses the tattoo directly and may treat a small test area first. Size, depth, age and body location all affect how a tattoo responds and how many sessions it needs.",
+        a: "That cannot be predicted before assessment. Black and dark blue inks respond most predictably; light colours, white and some cosmetic pigments can resist or behave unpredictably. Because ink composition is rarely known, a small test area may be treated first. Size, depth, age and location affect the number of sessions.",
       },
       {
         q: "How much does Pico laser cost in Malaysia?",
-        a: "Kaiteki does not quote prices online, because the cost depends on what is actually being treated: the type and depth of pigment, the size of the area, the device and settings chosen, the number of sessions, and whether pico work forms part of a wider plan. For tattoos, ink colours and density matter too. Pricing is discussed at consultation so the figure reflects your assessed plan rather than an average.",
+        a: "Kaiteki does not quote prices online. Cost depends on pigment type and depth, area size, device and settings, number of sessions and any combined treatment, and for tattoos on ink colours and density too. Pricing is given at consultation for your assessed plan.",
       },
       {
         q: "Can I wear makeup or go back to work afterwards?",
-        a: "Most people return to their usual day straight after a facial pigment session. Redness typically settles within a few hours to a day or two. Your doctor will advise when makeup can be reapplied, which is usually once any redness has settled and always over intact skin, so avoid applying it over crusting. Daily sunscreen matters more than makeup timing, since sun exposure between sessions is a common reason pigment returns.",
+        a: "Most people return to their day straight after a facial pigment session, and redness usually settles within hours to a day or two. Makeup can go back on once redness settles, over intact skin only and never over crusting. Daily sunscreen matters more than makeup timing.",
       },
     ],
   },
@@ -377,14 +362,14 @@ export const treatments: Treatment[] = [
       },
     ],
     routesNote:
-      "Laxity, volume loss and skin quality look alike in the mirror and are treated differently. Focused ultrasound addresses laxity. It does not replace lost volume, relax movement lines or improve skin quality, so plans often combine it with other treatments.",
+      "Focused ultrasound addresses laxity. It does not replace lost volume, relax movement lines or improve skin quality, so plans often combine it with other treatments.",
 
     // T-07 — the two HIFU platforms Kaiteki runs, told apart by how each
     // delivers energy. A factual difference, never a ranking (R-02).
     variantModule: {
       heading: "Ultracel Q or Lifthera: which HIFU device, and why",
       intro:
-        "Both devices focus ultrasound to a depth beneath the skin surface so that heating happens in a chosen deeper layer while the surface is largely spared. They differ in how that energy is shaped, which is why a doctor chooses between them for your face rather than using one for everyone.",
+        "Both devices focus ultrasound beneath the surface, so heating happens in a chosen deeper layer while the surface is largely spared. They differ in how that energy is shaped.",
       items: [
         {
           eyebrow: "Cartridge-based · Jeisys Medical",
@@ -406,7 +391,7 @@ export const treatments: Treatment[] = [
 
     ctaMid: {
       heading: "Not sure whether lifting is what your face needs?",
-      body: "Laxity, volume loss and skin quality look similar in the mirror and are treated differently. A doctor can tell you which one you are actually seeing, and whether HIFU addresses it.",
+      body: "A doctor can tell whether what you see is laxity, volume loss or skin quality, and whether HIFU addresses it.",
     },
 
     // T-09
@@ -422,18 +407,18 @@ export const treatments: Treatment[] = [
       },
       { lead: "A tendency to keloid scarring.", body: "" },
       {
-        lead: "Certain medications and medical conditions,",
-        body: "which your doctor goes through with you at consultation.",
+        lead: "Certain medications and medical conditions.",
+        body: "",
       },
     ],
     bringToConsult:
-      "Bring your full medical history, a list of your medications and every previous aesthetic treatment. Implants and devices in the treatment field are the ones people most often forget to mention, and they matter here.",
+      "Bring your medical history, medications and every previous aesthetic treatment, including energy-based ones. Implants and devices in the treatment field are the items most often forgotten, and they matter here.",
 
     // T-10 — step 1 states the first visit is not a treatment.
     sessionSteps: [
       {
         title: "Consultation and assessment",
-        body: "Your first visit is a consultation, not a treatment. The doctor examines where your laxity actually sits and decides whether there is enough of it for focused ultrasound to be worth doing, and which device suits the areas involved.",
+        body: "Your first visit is a consultation, not a treatment. The doctor examines where your laxity sits, whether there is enough for focused ultrasound to be worth doing, and which device suits each area.",
       },
       {
         title: "Mapping and preparation",
@@ -452,7 +437,7 @@ export const treatments: Treatment[] = [
     // T-11 — physical recovery only, never a timeframe to a result.
     afterSession: {
       intro:
-        "HIFU is usually associated with little to no downtime, though this varies between individuals. Nothing needs to heal on the surface, because the energy is placed beneath it.",
+        "There is usually little to no downtime: nothing needs to heal on the surface, because the energy is placed beneath it.",
       bands: [
         {
           title: "Straight afterwards",
@@ -464,36 +449,36 @@ export const treatments: Treatment[] = [
         },
         {
           title: "The following weeks and months",
-          body: "The collagen response continues gradually, so any change develops over weeks to a few months rather than on the day, and it varies considerably between individuals. Plans often include a review once enough time has passed to judge it.",
+          body: "The collagen response is gradual, so nothing is judged on the day. Plans often include a review once enough time has passed.",
         },
       ],
       aftercare:
-        "Gentle skincare and daily sun protection afterwards. Your doctor may ask you to avoid intense heat such as saunas or hot yoga for a short period, and will give aftercare guidance specific to your plan.",
+        "Gentle skincare and daily sun protection. You may be asked to avoid intense heat, such as saunas or hot yoga, for a short period.",
     },
 
     // T-12
     risks: {
       intro:
-        "As with any medical procedure, HIFU carries risks. These are explained to you in full at consultation, before anything is booked.",
+        "Each is explained at consultation, before anything is booked.",
       common:
         "Redness, swelling, tenderness, small areas of bruising, and transient numbness or tingling in the treated area.",
       lessCommon:
         "Welts, and temporary nerve-related effects such as localised muscle weakness, have been reported with focused-ultrasound treatments. Serious effects are uncommon when the treatment is appropriately selected, correctly mapped and performed by a trained doctor.",
       pigmentNote:
-        "Focused ultrasound is absorbed by tissue rather than by melanin, so HIFU is generally used across a wide range of skin tones, including deeper Asian skin, without the pigment considerations that apply to some lasers. The risk that matters here is a different one: energy delivered deep into tissue by a poorly calibrated device or an untrained operator can cause burns, unwanted fat loss or nerve injury. That is why the specific named device, and a doctor delivering it, matter more than the word HIFU on a price list.",
+        "Focused ultrasound is absorbed by tissue rather than by melanin, so HIFU is generally used across a wide range of skin tones, including deeper Asian skin, without the pigment considerations that apply to some lasers. The bigger risk here is the device and the operator. See “Is cheap HIFU safe?” below.",
       cannotDo: [
-        "It is not a facelift. It does not cut, lift or remove skin, and the degree of change is not comparable to surgery. Significant, heavy sagging is often better discussed as a surgical question, and your doctor will say so honestly.",
+        "It is not a facelift. It does not cut, lift or remove skin, and the change is not comparable to surgery. Heavy sagging is often better discussed as a surgical question.",
         "It does not replace lost volume, relax lines caused by muscle movement, or treat surface texture and pigment.",
         "It is not permanent. Skin continues to age after any tightening treatment, which is why plans include review and occasional maintenance.",
       ],
       disclose:
-        "Tell your doctor if you are or may be pregnant or breastfeeding, have implants, metallic or cardiac devices or recent dermal fillers in the treatment area, have a tendency to keloid scarring, take any medication, or have had previous energy-based treatments.",
+        "Tell your doctor about anything listed under who should postpone it.",
     },
 
     // T-13 — factors only, no figures (settled 2026-09-20).
     costFactors: {
       intro:
-        "Kaiteki does not quote prices online, because what a HIFU plan involves is decided by examining your face. What moves it:",
+        "Kaiteki does not quote HIFU prices online; the plan is set by examining your face. What moves it:",
       factors: [
         "The areas treated. A jawline-and-neck plan is a different amount of work from a full face and neck.",
         "The number of shots or lines delivered across those areas.",
@@ -502,7 +487,7 @@ export const treatments: Treatment[] = [
         "Whether HIFU is combined with another treatment in a wider plan.",
       ],
       outro:
-        "HIFU is often planned as a single session with a review some months later, or as a small number of sessions spaced over time, with occasional maintenance afterwards. Your doctor sets out what is realistic for your face.",
+        "Often planned as one session with a review some months later, or a small spaced course, with occasional maintenance.",
     },
 
     // Factual rows only. Downtime is each treatment's own `durationDowntime`.
@@ -548,52 +533,45 @@ export const treatments: Treatment[] = [
     seoTitle: "HIFU Malaysia | Non-Surgical Lifting Treatment | Kaiteki",
     seoDescription:
       "HIFU treatment in Malaysia for non-surgical skin lifting and tightening concerns. Book a free consultation with a Kaiteki doctor to check suitability.",
-    figures: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/hifu/image-hifu.jpg",
-        caption: "An ultrasound handpiece held along the jaw and under the chin during a session.",
-      },
-    ],
     sections: [
       {
         heading: "What is HIFU?",
         body: [
-          "HIFU stands for high-intensity focused ultrasound. It is a non-surgical, energy-based treatment that directs focused ultrasound to targeted depths beneath the skin's surface, without cutting or incisions.",
-          "At Kaiteki, HIFU is commonly considered for skin-lifting and tightening concerns on the face and neck. Whether it suits you depends on your concern, skin and medical history, which a doctor assesses during consultation.",
+          "HIFU stands for high-intensity focused ultrasound: a non-surgical, energy-based treatment that directs ultrasound to set depths beneath the skin, without incisions. At Kaiteki it is considered for lifting and tightening concerns on the face and neck.",
         ],
       },
       {
         heading: "How does HIFU reach the layer a facelift works on?",
         body: [
           "HIFU concentrates ultrasound energy at set depths beneath the surface, including the deeper support layer sometimes called the SMAS (superficial muscular aponeurotic system). That is the same layer a surgical facelift addresses, though focused ultrasound reaches it without incisions. The energy creates small, controlled points of heat at those depths while the skin surface is largely spared, which is why there is no wound to heal.",
-          "That controlled heating is what prompts the body's repair response, and over the following weeks the skin produces fresh collagen in the treated zones. Because the mechanism is a collagen response rather than a mechanical tightening, any change develops gradually and varies between individuals. The treating doctor selects the device, depth and settings for your face and the area being addressed.",
+          "That controlled heating prompts the body's repair response, and the skin produces fresh collagen in the treated zones. Because this is a collagen response rather than mechanical tightening, any change is gradual and differs from person to person. The doctor selects the device, depth and settings for each area.",
         ],
       },
     ],
     faqs: [
       {
         q: "Is HIFU surgery?",
-        a: "No. HIFU is a non-surgical treatment that uses focused ultrasound energy beneath the skin, with no incisions. Whether it is appropriate for your concern is assessed by a doctor at consultation.",
+        a: "No. HIFU uses focused ultrasound beneath the skin, with no incisions. It is not a facelift and does not remove skin.",
       },
       {
         q: "What is the difference between HIFU and Ultherapy?",
-        a: "Both use focused ultrasound but are different treatments. HIFU at Kaiteki uses devices such as Lifthera and Ultracel Q and is often considered for deeper areas like the jaw and jowls, while Ultherapy is a separate micro-focused-ultrasound platform sometimes considered for more precise areas such as the brow and neck. Which one suits you, if any, is decided with your doctor.",
+        a: "Both use focused ultrasound. HIFU at Kaiteki runs on Lifthera and Ultracel Q and is often considered for the jaw and jowls. Ultherapy is a separate platform that shows the tissue layers on screen before treating, and is sometimes considered for more precise areas such as the brow and neck.",
       },
       {
         q: "Is there any downtime after HIFU?",
-        a: "HIFU is usually associated with little to no downtime, though this varies between individuals. Temporary redness, mild swelling or tenderness can occur and typically settles. Your doctor will explain what to expect and provide aftercare advice.",
+        a: "Usually little to none. Temporary redness, mild swelling or tenderness can occur and typically settles within a few days.",
       },
       {
         q: "How many HIFU sessions will I need?",
-        a: "This varies with the area treated and your individual plan; HIFU is often planned as a small number of sessions across the year rather than a single fixed course. Your doctor will recommend a suitable cadence at consultation. Results vary between individuals.",
+        a: "It depends on the area and your plan. HIFU is often planned as one session with a review, or a small number of sessions across the year, rather than a fixed course.",
       },
       {
         q: "Does HIFU hurt?",
-        a: "Most people describe brief warmth, prickling or a deep tapping with each pulse rather than sustained pain, and it is usually felt more over bony areas such as the jaw and forehead. Topical numbing and adjusted settings can be used to keep it tolerable. Tell your doctor how you are finding it during the session so the settings can be adapted.",
+        a: "Most people feel brief warmth, prickling or a deep tapping with each pulse rather than sustained pain, more over bony areas such as the jaw and forehead. Numbing cream and adjusted settings keep it tolerable, so say if it is uncomfortable.",
       },
       {
         q: "Are HIFU results permanent?",
-        a: "No. Skin continues to age after any tightening treatment, so any change is not permanent and varies between individuals. Many plans include a review some months later and occasional maintenance rather than a single one-off treatment. Your doctor will explain a realistic timeline for your skin at consultation.",
+        a: "No. Skin keeps ageing after any tightening treatment, so plans usually include a review and occasional maintenance.",
       },
       {
         q: "Is cheap HIFU safe?",
@@ -614,7 +592,7 @@ export const treatments: Treatment[] = [
     ],
     device: "Ultherapy",
     summary: "A focused-ultrasound platform used for lifting and tightening of the face and neck.",
-    leadAnswer: "Ultherapy is a focused-ultrasound treatment used for non-surgical lifting and tightening of areas such as the brow, chin and neck. It works at set depths within the skin, and the platform's own ultrasound imaging lets the doctor see those depths before energy is delivered — the practical difference from other focused-ultrasound devices. Whether it suits you is still decided at consultation.",
+    leadAnswer: "Ultherapy is a focused-ultrasound treatment used for non-surgical lifting and tightening of the brow, chin and neck. It heats set depths beneath the skin, and its built-in ultrasound imaging lets the doctor see those layers before delivering energy — the practical difference from other focused-ultrasound devices. A doctor confirms suitability first.",
     related: ["hifu", "fotona-4d"],
     seoTitle: "Ultherapy Malaysia | Non-Surgical Face Lifting | Kaiteki",
     seoDescription:
@@ -637,7 +615,7 @@ export const treatments: Treatment[] = [
     routes: [
       {
         title: "Lifting where laxity leads the picture",
-        body: "The same principle as HIFU, with real-time imaging so the doctor can see the tissue layers as energy is delivered. Relevant where precision at depth matters, or where anatomy makes blind delivery less appropriate.",
+        body: "Mild to moderate laxity of the lower face and neck, where precision at depth matters or anatomy makes treating without imaging less appropriate.",
         links: [
           { href: "/concerns/face-lifting", label: "Read about face lifting" },
           { href: "/concerns/aging", label: "Ageing skin" },
@@ -645,18 +623,18 @@ export const treatments: Treatment[] = [
       },
       {
         title: "Lifting that softens the fold above it",
-        body: "Relevant where the doctor wants to see the tissue planes while treating, particularly around the brow and lower face.",
+        body: "Laxity around the brow and lower face.",
         links: [{ href: "/concerns/fine-lines-wrinkles", label: "Fine lines & wrinkles" }],
       },
     ],
     routesNote:
-      "Laxity, volume loss and skin quality look alike in the mirror and are treated differently. Focused ultrasound addresses laxity. It does not replace lost volume, relax movement lines or improve skin quality, so plans often combine it with other treatments.",
+      "Ultherapy treats laxity only. Lost volume, movement lines and skin quality need other treatments, so plans often combine them.",
 
     // T-07 — imaging is the one factual difference; never a ranking (R-02).
     variantModule: {
       heading: "Ultherapy or HIFU: what the imaging changes",
       intro:
-        "Both focus ultrasound energy at a depth beneath the skin, so mechanically they belong to the same family. The distinction is whether the doctor sees the tissue layers on screen before delivering energy, or selects the depth from assessment alone.",
+        "Both focus ultrasound at a depth beneath the skin. The difference is whether the doctor sees the tissue layers on screen before treating, or sets the depth from assessment alone.",
       items: [
         {
           eyebrow: "Imaging-guided · Merz Aesthetics",
@@ -668,17 +646,17 @@ export const treatments: Treatment[] = [
         {
           eyebrow: "Depth set by cartridge · Ultracel Q, Lifthera",
           title: "HIFU",
-          body: "Energy is delivered at depths set by the cartridge and the doctor's assessment, without the on-screen view. Depth is chosen per area from the available cartridge depths.",
+          body: "Energy is delivered at depths set by the chosen cartridge and the doctor's assessment, without an on-screen view.",
           href: "/treatments/hifu",
           hrefLabel: "About HIFU",
         },
       ],
-      note: "Imaging-free HIFU devices remain widely and appropriately used. Which suits you depends on your anatomy and goals, and your doctor will explain the reasoning at consultation.",
+      note: "Imaging-free HIFU devices remain widely and appropriately used; which suits you depends on your anatomy.",
     },
 
     ctaMid: {
       heading: "Not sure whether Ultherapy or HIFU fits your face?",
-      body: "Both address laxity, and they differ in whether the doctor sees the tissue layers while treating. A doctor can tell you whether your laxity is the kind focused ultrasound addresses, and which approach suits your anatomy.",
+      body: "A doctor can tell you whether your laxity is the kind focused ultrasound addresses, and which device suits your anatomy.",
     },
 
     // T-09 — this page's suitability copy plus the Ultherapy System page.
@@ -694,17 +672,17 @@ export const treatments: Treatment[] = [
       },
       {
         lead: "Keloid tendency, bleeding disorders, certain medications and some autoimmune conditions,",
-        body: "which your doctor weighs with you at consultation.",
+        body: "which are reviewed before treatment.",
       },
     ],
     bringToConsult:
-      "Tell your doctor about your medical history, medications and any implants during the consultation so suitability can be assessed properly, along with any previous aesthetic treatments.",
+      "Bring your medical history, a list of medications, and details of any implants and previous aesthetic treatments.",
 
     // T-10 — step 1 states the first visit is not a treatment.
     sessionSteps: [
       {
         title: "Consultation and assessment",
-        body: "Your first visit is a consultation, not a treatment. A Kaiteki doctor discusses your concerns, assesses how your laxity is distributed and confirms whether Ultherapy is appropriate.",
+        body: "Your first visit is a consultation, not a treatment. The doctor assesses where your laxity sits and whether Ultherapy is appropriate.",
       },
       {
         title: "Mapping with imaging",
@@ -712,11 +690,11 @@ export const treatments: Treatment[] = [
       },
       {
         title: "The treatment lines",
-        body: "The doctor places the transducer, checks the tissue image on screen to confirm the plane, and delivers a line of focused pulses, repeated line by line across the mapped area. Most people feel warmth and a tingling or prickling sensation, felt more strongly over bony areas, and comfort measures can be discussed beforehand.",
+        body: "The doctor confirms the plane on screen and delivers a line of focused pulses, repeated across the mapped area. Most people feel warmth and prickling, stronger over bony areas; comfort measures can be discussed beforehand.",
       },
       {
         title: "Afterwards",
-        body: "The doctor finishes with aftercare advice and, where relevant, a follow-up plan. Ultherapy is often planned as a single session with a review a few months later, with maintenance considered periodically rather than on a fixed schedule.",
+        body: "You leave with aftercare advice and, where relevant, a review date.",
       },
     ],
 
@@ -731,45 +709,45 @@ export const treatments: Treatment[] = [
         },
         {
           title: "Days to a few weeks",
-          body: "Tenderness to touch, or a temporary firm or lumpy feeling under the skin, can occur and generally settles over days to a few weeks, though this varies between individuals.",
+          body: "Tenderness to touch, or a temporary firm or lumpy feeling under the skin, can occur and generally settles over days to a few weeks.",
         },
         {
           title: "Weeks to months",
-          body: "Ultherapy works by prompting the skin's own gradual collagen-renewal response, so any change tends to develop over weeks to months rather than immediately, and it varies between individuals.",
+          body: "Any change comes from a gradual collagen response, so it develops over weeks to months rather than on the day, and varies between people.",
         },
       ],
       aftercare:
-        "The aftercare is short and unglamorous: sun protection, and nothing abrasive on the treated skin for a few days. Your doctor will set out the version that applies to your skin, and the clinic is the right place to take anything that does not settle.",
+        "Sun protection, and nothing abrasive on the treated skin for a few days. Contact the clinic about anything that does not settle.",
     },
 
     // T-12
     risks: {
       intro:
-        "As with any energy-based treatment, Ultherapy carries potential side effects. These are explained to you at consultation, before anything is booked.",
+        "Side effects are explained before anything is booked.",
       common:
         "Redness, swelling, tenderness, and small areas of numbness or tingling in the treated area, which typically settle over time.",
       lessCommon:
-        "Because the energy is delivered at fixed depths, the less common effects are the ones that follow from placing it wrongly: temporary weakness or altered sensation where a nerve runs close to the treatment plane. The imaging step exists to make that less likely, and the doctor will go through it with you before treating.",
+        "Temporary muscle weakness or altered sensation where a nerve runs close to the treatment plane. Imaging the layers before each line is intended to make this less likely.",
       pigmentNote:
         "Micro-focused ultrasound is absorbed by tissue rather than by melanin, so it is generally used across the full range of skin tones, including deeper Asian skin, without the pigment-related risk profile of some lasers.",
       cannotDo: [
-        "It is not a facelift. It does not cut or remove skin. It reaches some of the same deeper tissue a surgical facelift addresses, but where surgery would be more appropriate for your concern, your doctor will tell you.",
+        "It is not a facelift and does not cut or remove skin. Where surgery would suit your concern better, your doctor will say so.",
         "It is generally considered for mild to moderate laxity rather than very advanced sagging.",
         "It addresses laxity and loss of definition, not surface texture or pigment.",
         "It is not permanent. Skin continues to age, so plans often include a review and periodic maintenance.",
       ],
       disclose:
-        "Tell your doctor if you are or may be pregnant or breastfeeding, have implants, electronic devices, fillers or threads in the treatment area, have a keloid tendency or bleeding disorder, or take any medication.",
+        "Mention anything on the avoid list above, even if it seems minor — implants, fillers and threads in the treatment area are the ones most often forgotten.",
     },
 
     // T-13 — factors only, no figures (settled 2026-09-20).
     costFactors: {
       intro:
-        "Kaiteki does not quote prices online, because cost is set by the lines of energy delivered and over which areas, and those are decided at consultation. What moves it:",
+        "Kaiteki does not quote prices online; the plan is set at consultation. What moves the cost:",
       factors: [
         "The number of lines of energy delivered.",
-        "Which areas are treated. A brow-and-jawline plan, a full face and neck, and a décolletage each represent a different amount of energy delivered.",
-        "The number of sessions and any maintenance cadence, planned with your doctor rather than set in advance.",
+        "The areas treated — brow and jawline, full face and neck, or décolletage.",
+        "The number of sessions and any maintenance plan.",
         "Whether Ultherapy is combined with other treatments as part of a wider plan.",
       ],
     },
@@ -808,54 +786,39 @@ export const treatments: Treatment[] = [
       {
         heading: "What is Ultherapy?",
         body: [
-          "Ultherapy is a non-surgical treatment that uses focused ultrasound energy to reach set depths within the skin and the tissue beneath it. It is one of the platforms Kaiteki uses for lifting and tightening concerns on the face and neck, and is carried out by a doctor.",
-          "A distinguishing feature of the Ultherapy platform is that it pairs ultrasound imaging with the treatment, so the doctor can view the layers of tissue on screen before energy is delivered. It is a treatment, not a surgical facelift, and it does not remove or cut skin.",
+          "Ultherapy is a non-surgical, doctor-delivered treatment that focuses ultrasound energy at set depths beneath the skin. At Kaiteki it is one of two focused-ultrasound options for lifting and tightening the face and neck; the other is HIFU, and the comparison below sets out how they differ.",
         ],
       },
       {
         heading: "How does Ultherapy see the layer it treats?",
         body: [
-          "Ultherapy delivers focused ultrasound energy to specific depths, including the deeper support layer of the face sometimes referred to as the SMAS layer. This is the same layer that a surgical facelift addresses, though Ultherapy reaches it non-surgically rather than through incisions.",
-          "The energy creates controlled points of heat at those depths, which is intended to prompt the skin's own gradual collagen-renewal response. Because this response builds over time, any change tends to develop gradually over weeks to months and varies between individuals.",
-          "Before energy is delivered, the doctor uses the built-in ultrasound imaging to map the tissue layers and choose the depth and settings for each area.",
+          "The transducer that delivers the energy also produces a live ultrasound image, so the doctor sees the tissue layers, including the deeper support layer called the SMAS, before choosing the depth and settings for each area. The SMAS is the layer a surgical facelift addresses; Ultherapy reaches it without incisions.",
+          "At the chosen depth, the energy creates controlled points of heat, which is intended to prompt the skin's own gradual collagen-renewal response.",
         ],
       },
     ],
     faqs: [
       {
         q: "How is Ultherapy different from HIFU?",
-        a: "Both use focused ultrasound energy to reach deeper layers of the skin. The main factual difference is that the Ultherapy platform includes ultrasound imaging, so the doctor can view the tissue layers on screen and target a chosen depth before delivering energy. HIFU is a broader category of focused-ultrasound devices, which generally do not include this imaging step. Your doctor can explain which approach suits your concern during a consultation.",
+        a: "Both use focused ultrasound to reach deeper layers of the skin. Ultherapy includes ultrasound imaging, so the doctor views the tissue layers on screen before delivering energy; HIFU devices generally do not include this step.",
       },
       {
         q: "Is Ultherapy a facelift?",
-        a: "No. Ultherapy is a non-surgical treatment; it does not cut or remove skin. It reaches some of the same deeper tissue that a surgical facelift addresses, but through focused ultrasound rather than surgery. Where surgery would be more appropriate for your concern, your doctor will tell you.",
+        a: "No. It does not cut or remove skin. It reaches some of the same deeper tissue a facelift addresses, but with focused ultrasound, and the degree of change is not comparable to surgery.",
       },
       {
         q: "When will I see results?",
-        a: "Ultherapy works by prompting the skin's own gradual collagen-renewal response, so any change tends to develop over weeks to months rather than immediately, and it varies between individuals. Anyone promising you a visible lift on the day is describing a different treatment.",
+        a: "Any change develops gradually over weeks to months, because it depends on your own collagen response, and it varies between people. A visible lift on the day is not what this treatment does.",
       },
       {
         q: "Is there any downtime?",
-        a: "For most people Ultherapy involves little to no set downtime. Some notice mild redness, swelling or tenderness for a short period afterwards. Your doctor will give you aftercare advice, including sun protection, tailored to your skin.",
+        a: "Little to none for most people. Mild redness, swelling or tenderness can last a short time afterwards.",
       },
     ],
     reviewedBy: "dr-jamie-gan",
     lastReviewed: "2026-06-18",
   },
-  { slug: "fotona-4d", durationDowntime: "30-60 min · No downtime", name: "Fotona Laser", category: "Lasers", image: "https://cdn.kaiteki.my/treatments/fotona-4d/hero.jpg", procedureImages: [{ src: "https://cdn.kaiteki.my/treatments/fotona-4d/procedure-01.jpg", caption: "A doctor holds the laser handpiece above the patient's cheek during a session." }, { src: "https://cdn.kaiteki.my/treatments/fotona-4d/procedure-02.jpg", caption: "A doctor steadies the patient's face while guiding the laser handpiece." }, { src: "https://cdn.kaiteki.my/treatments/fotona-4d/procedure-03.jpg", caption: "A practitioner works inside the mouth area with a laser handpiece." }], device: "Fotona", summary: "A multi-application Nd:YAG/Er:YAG laser platform, most often used at Kaiteki for its Fotona 4D facial-firming protocol.", leadAnswer: "Fotona Laser refers to Kaiteki's Fotona SP Dynamis / TimeWalker platform, an Nd:YAG and Er:YAG laser system offered in several application modes. Its best-known protocol, Fotona 4D, combines four modes to address facial firmness and skin-quality concerns. Which modes are used, and whether any application of the platform fits, is decided by a doctor at consultation.", related: ["hifu", "ultherapy"], reviewedBy: "dr-jen-meng", lastReviewed: "2026-06-15", seoTitle: "Fotona 4D Laser Skin Tightening Malaysia | Kaiteki", seoDescription: "Fotona 4D is a multi-mode laser used for facial firming and skin quality, doctor-assessed at Kaiteki clinics in Malaysia. Book a free consultation on WhatsApp.",
-    // The third candidate, `fotona-4d.jpg`, is held: it is a manufacturer
-    // infographic with outcome copy burned into the artwork ("restore youthful
-    // texture", "tighten and lift"), which no caption can walk back (R-01).
-    // docs/13 §8 also names it as the duplicate of the file kept here.
-    // `fotona-laser.jpg` (the external pass) is held since 3.6: two prose
-    // sections render at most floor(2/2) = 1 figure (Q-23).
-    figures: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/fotona-4d/image-fotona-4d-2.jpg",
-        caption: "A Fotona handpiece being worked over the cheek and jaw during a session at Kaiteki.",
-      },
-    ],
-
+  { slug: "fotona-4d", durationDowntime: "30-60 min · No downtime", name: "Fotona Laser", category: "Lasers", image: "https://cdn.kaiteki.my/treatments/fotona-4d/hero.jpg", procedureImages: [{ src: "https://cdn.kaiteki.my/treatments/fotona-4d/procedure-01.jpg", caption: "A doctor holds the laser handpiece above the patient's cheek during a session." }, { src: "https://cdn.kaiteki.my/treatments/fotona-4d/procedure-02.jpg", caption: "A doctor steadies the patient's face while guiding the laser handpiece." }, { src: "https://cdn.kaiteki.my/treatments/fotona-4d/procedure-03.jpg", caption: "A practitioner works inside the mouth area with a laser handpiece." }], device: "Fotona", summary: "A multi-application Nd:YAG/Er:YAG laser platform, most often used at Kaiteki for its Fotona 4D facial-firming protocol.", leadAnswer: "Fotona Laser is Kaiteki's Fotona SP Dynamis / TimeWalker platform, an Nd:YAG and Er:YAG laser system with several application modes. Its main facial protocol, Fotona 4D, combines four modes — one delivered from inside the mouth — for facial firmness and skin-quality concerns. A doctor decides which modes, if any, suit you.", related: ["hifu", "ultherapy"], reviewedBy: "dr-jen-meng", lastReviewed: "2026-06-15", seoTitle: "Fotona 4D Laser Skin Tightening Malaysia | Kaiteki", seoDescription: "Fotona 4D is a multi-mode laser used for facial firming and skin quality, doctor-assessed at Kaiteki clinics in Malaysia. Book a free consultation on WhatsApp.",
     // docs/15 item 3.6 (2026-10-11): the v2 block set, applied under docs/16 R1.
     // Two prose sections kept; the rest became typed blocks and were deleted.
     // Block copy is restructured from reviewed text only: this page, the Fotona SP Dynamis page,
@@ -873,28 +836,28 @@ export const treatments: Treatment[] = [
     routes: [
       {
         title: "Laxity treated from inside the mouth outwards",
-        body: "A laser protocol that works in several passes, one of them delivered through the inside of the cheek. Considered where firmness and skin quality are both part of the picture rather than descent alone.",
+        body: "Early to moderate laxity of the lower face, where firmness and skin quality are both part of the picture rather than descent alone.",
         links: [{ href: "/concerns/face-lifting", label: "Read about face lifting" }],
       },
       {
         title: "Firmness and surface quality in the same course",
-        body: "A laser protocol working in several passes at different depths, including one delivered from inside the mouth. Considered where firmness and surface quality both need attention in the same course.",
+        body: "Loss of firmness alongside surface texture and fine lines, addressed in the same course.",
         links: [{ href: "/concerns/aging", label: "Ageing skin" }],
       },
     ],
     routesNote:
-      "The treatment is aimed at people with early to moderate laxity rather than significant sagging, where a doctor may tell you a laser is not the right tool, and saying so honestly is part of the consultation.",
+      "Significant sagging is usually not a laser question, and a doctor will say so.",
 
     // T-07 — the former "four modes" section, as the variant module (R1).
     variantModule: {
       heading: "The four modes, and what each one does",
       intro:
-        "A Fotona 4D session combines four laser modes in a set sequence. Each mode targets the skin at a different level, and a doctor decides which modes and settings are used based on your assessment.",
+        "Fotona 4D runs four laser modes in a set sequence, each working at a different level of the skin.",
       items: [
         {
           eyebrow: "Er:YAG · intraoral",
           title: "SMOOTH",
-          body: "Laser energy is delivered to the tissue inside the mouth, working on the areas behind the cheeks and around the nasolabial region from within.",
+          body: "Delivered from inside the mouth, to the tissue behind the cheeks and around the nasolabial region.",
         },
         {
           eyebrow: "Nd:YAG · fractional",
@@ -919,7 +882,7 @@ export const treatments: Treatment[] = [
 
     ctaMid: {
       heading: "Not sure whether a laser or another energy suits your laxity?",
-      body: "Fotona 4D, focused ultrasound and radiofrequency reach tissue in different ways, and one is not automatically better than the other. A doctor will compare the realistic options for your face.",
+      body: "Fotona 4D, focused ultrasound and radiofrequency reach tissue in different ways. A doctor can compare them for your face.",
     },
 
     // T-09 — the SP Dynamis page.
@@ -934,13 +897,13 @@ export const treatments: Treatment[] = [
         body: "because one step is delivered from inside the mouth.",
       },
     ],
-    bringToConsult: "Please bring your full medical, dental and medication history to consultation.",
+    bringToConsult: "Bring your medical, dental and medication history.",
 
     // T-10 — step 1 states the first visit is not a treatment.
     sessionSteps: [
       {
         title: "Consultation and assessment",
-        body: "Your first visit is a consultation, not a treatment. The doctor assesses your face and decides which of the modes are appropriate for you, and in what sequence.",
+        body: "Your first visit is a consultation, not a treatment. The doctor decides which modes suit your face, and in what order.",
       },
       {
         title: "Preparation",
@@ -948,18 +911,18 @@ export const treatments: Treatment[] = [
       },
       {
         title: "The protocol",
-        body: "The modes are performed in sequence. Most patients describe spreading warmth rather than sharp pain, with the intraoral step feeling warm against the inner cheek. A full protocol is generally around 45 to 60 minutes.",
+        body: "The modes are performed in sequence. Most patients describe spreading warmth rather than sharp pain, including against the inner cheek during the intraoral step.",
       },
       {
         title: "Afterwards",
-        body: "Your doctor explains aftercare and when to follow up. A course of several sessions spaced a few weeks apart is common, followed by occasional maintenance.",
+        body: "You leave with aftercare advice. Sessions in a course are usually spaced a few weeks apart.",
       },
     ],
 
     // T-11 — physical recovery only.
     afterSession: {
       intro:
-        "Downtime is usually limited, which is much of the appeal of a non-ablative protocol, but it varies between individuals.",
+        "Downtime is usually limited, because the protocol is non-ablative.",
       bands: [
         {
           title: "The same day",
@@ -969,10 +932,6 @@ export const treatments: Treatment[] = [
           title: "The first few days",
           body: "Keep skincare gentle and well moisturised, and pause retinoids and acids until your doctor says otherwise.",
         },
-        {
-          title: "Between sessions",
-          body: "The effect relies on gradual tissue remodelling, so plans are usually built as a short course followed by maintenance rather than a single visit.",
-        },
       ],
       aftercare:
         "Use daily broad-spectrum sunscreen, as skin can be more sensitive to sunlight after laser treatment, and avoid heat such as saunas and hot yoga for the period your doctor specifies.",
@@ -981,20 +940,20 @@ export const treatments: Treatment[] = [
     // T-12
     risks: {
       intro:
-        "As with any laser treatment, Fotona 4D carries potential side effects. These are explained to you during consultation so you can make an informed decision.",
+        "Side effects are explained before anything is booked.",
       common:
         "Redness, warmth, mild swelling, transient dryness or flaking, and temporary sensitivity of the inner cheek or lips after the intraoral step.",
       lessCommon:
         "Cold sores can be reactivated in people prone to them. Burns, blistering, changes in pigmentation and scarring are uncommon.",
       pigmentNote:
-        "Fotona notes that the Nd:YAG wavelength's low absorption in melanin allows it to be used across skin types, which is relevant for Malaysian patients, and the Er:YAG surface pass is typically kept light in a 4D protocol. Suitability is still individual and depends on your skin's history of pigment change.",
+        "Fotona notes that the Nd:YAG wavelength's low absorption in melanin allows use across skin types, and the Er:YAG surface pass is kept light in a 4D protocol. A history of pigment change after heat, lasers or inflammation still needs raising before treatment.",
       cannotDo: [
         "It is aimed at early to moderate laxity rather than significant sagging, where a doctor may tell you a laser is not the right tool.",
         "It is not a single visit: the effect relies on gradual tissue remodelling across a course.",
-        "It is not automatically better than focused ultrasound or radiofrequency. They are different energy types reaching tissue in different ways.",
+        "It is not a substitute for focused ultrasound or radiofrequency; they are different energy types reaching tissue differently.",
       ],
       disclose:
-        "Tell your doctor if you are or may be pregnant or breastfeeding, are prone to cold sores, have had recent sun exposure, dental work or an oral condition, have a keloid tendency, or take photosensitising medication including oral isotretinoin.",
+        "Tell your doctor about anything on the avoid list above, and especially if you are prone to cold sores — the intraoral step can reactivate them.",
     },
 
     // T-13 — factors only, no figures (settled 2026-09-20).
@@ -1002,7 +961,7 @@ export const treatments: Treatment[] = [
       intro:
         "Kaiteki does not quote prices online, because cost depends on the plan agreed at consultation. What moves it:",
       factors: [
-        "How many of the platform's modes your plan uses. A two-step protocol is not the same appointment as a full four-step one.",
+        "How many of the four modes your plan uses.",
         "How many areas are covered.",
         "The number of sessions in the course, and any maintenance.",
         "Whether the protocol is combined with other treatments in your plan.",
@@ -1019,34 +978,34 @@ export const treatments: Treatment[] = [
       {
         heading: "What is Fotona Laser?",
         body: [
-          "Fotona Laser refers to Kaiteki's Fotona SP Dynamis / TimeWalker platform, a dual-wavelength (Nd:YAG and Er:YAG) laser system offered in several distinct applications, including NightLase (for snoring-related concerns), LipLase, SmoothEye and TightSculpting, alongside its flagship facial protocol, Fotona 4D.",
-          "Fotona 4D is a non-surgical protocol that uses the platform's Nd:YAG and Er:YAG modes together to deliver energy to the face through a combination of steps. It is called \"4D\" because it works across four steps, treating both the skin surface and the tissue inside the mouth. It is generally considered for firmness, skin-quality and volume-related concerns of the face. Whether it, or another application of the platform, is appropriate for you is something a doctor assesses during consultation, as suitability and outcomes vary between individuals.",
+          "The Fotona SP Dynamis / TimeWalker platform combines two lasers, Nd:YAG and Er:YAG, and runs several distinct applications: NightLase (for snoring-related concerns), LipLase, SmoothEye, TightSculpting and the facial protocol Fotona 4D.",
+          "Fotona 4D is non-surgical. It is called \"4D\" because it works in four steps, treating both the skin surface and the tissue inside the mouth, and is generally considered for facial firmness and skin-quality concerns.",
         ],
       },
       {
         heading: "Why does Fotona 4D work from inside the mouth?",
         body: [
-          "Fotona describes the Nd:YAG wavelength as reaching the deepest layers of the skin, and the Er:YAG wavelength as suited to working on the surface. That dual-source design is what makes a multi-step protocol possible at all: a single-wavelength device cannot work intraorally, deep in the dermis and on the skin surface within one appointment.",
-          "In the step Fotona calls SmoothLiftin™, the Er:YAG laser is applied in SMOOTH® mode from inside the mouth rather than through the outer skin. Fotona describes SMOOTH® mode as a rapid sequence of low-fluence pulses within a much longer pulse, producing gentle coagulative heating rather than ablation.",
+          "In the step Fotona calls SmoothLiftin™, the Er:YAG laser is applied in SMOOTH® mode to the inner cheek, working on the tissue behind the cheeks and around the nasolabial region from within rather than through the outer skin. Fotona describes SMOOTH® mode as a rapid sequence of low-fluence pulses inside a longer pulse, producing gentle coagulative heating rather than ablation.",
+          "That step is possible because the platform carries two wavelengths: Fotona describes Nd:YAG as reaching the deepest layers of the skin and Er:YAG as suited to the surface, so one appointment can work intraorally, deep in the dermis and on the surface.",
         ],
       },
     ],
     faqs: [
       {
         q: "How many Fotona 4D sessions will I need?",
-        a: "This varies between individuals. Fotona 4D is usually done as a course of sessions, and your doctor will recommend a suitable number and spacing after assessing your skin and concern at consultation.",
+        a: "Usually a course of several sessions spaced a few weeks apart, then occasional maintenance. The number is set for your skin and concern.",
       },
       {
-        q: "Is Fotona 4D suitable for my skin?",
-        a: "Suitability is assessed on an individual basis. A doctor reviews your skin, medical history and current medications during consultation to decide whether Fotona 4D is appropriate for you, and explains the risks and side effects before any treatment.",
+        q: "Is Fotona 4D suitable for darker or Asian skin?",
+        a: "It can be. The Nd:YAG wavelength has low absorption in melanin, and the surface pass is kept light, so the protocol is used across skin types. A history of pigment change should be raised first.",
       },
       {
         q: "Does Fotona 4D involve needles or injections?",
-        a: "No. Fotona 4D uses laser energy delivered to the skin surface and to the tissue inside the mouth, rather than injectables. Your doctor will explain each step of the treatment during consultation.",
+        a: "No. It uses laser energy only, on the skin surface and inside the mouth.",
       },
       {
         q: "How much does Fotona 4D cost?",
-        a: "Cost depends on which of the platform's modes your plan uses and how many areas are covered, so it is confirmed at consultation once your skin has been assessed rather than quoted from a list. You can message us on WhatsApp to arrange that assessment.",
+        a: "It depends on how many modes and areas your plan includes, so it is confirmed at consultation rather than quoted online.",
       },
     ],
   },
@@ -1063,29 +1022,13 @@ export const treatments: Treatment[] = [
     ],
     summary: "Radiofrequency energy used to support skin-firmness and texture concerns.",
     leadAnswer:
-      "Radiofrequency treatments use controlled energy to warm deeper skin layers, which may support firmness and texture concerns over a course of sessions. How many sessions, and whether radiofrequency is the right energy for your skin at all, follows a doctor's examination rather than the concern name.",
+      "Radiofrequency (RF) treatments use controlled energy, delivered from the skin surface with no needles, to warm the deeper layers of the skin. They may support firmness and texture concerns over a course of sessions. Kaiteki runs four RF platforms, and a doctor examines your skin before choosing one.",
     related: ["microneedling", "hifu"],
     reviewedBy: "dr-chloe-wan",
     lastReviewed: "2026-06-12",
     seoTitle: "Radiofrequency Treatment Malaysia | Skin Firmness | Kaiteki",
     seoDescription:
       "Radiofrequency (RF) treatment in Malaysia to support skin firmness and texture concerns. Book a free consultation with a Kaiteki doctor to assess suitability.",
-    // `wonderface-1` and `-2` are held: both are 1544×2000 portraits and the
-    // figure frame is 2:1, so placing them means a 2.6× crop that loses the
-    // subject. They wait for a container that can carry a portrait.
-    figures: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/radiofrequency/image-oligio.jpg",
-        caption: "An Oligio session in progress, with the device console and its handpiece alongside.",
-      },
-    ],
-    manufacturerImages: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/radiofrequency/logo-oligio.png",
-        alt: "Oligio manufacturer logo",
-        caption: "Oligio — the manufacturer's mark for the monopolar radiofrequency platform.",
-      },
-    ],
     // docs/15 item 3.6 (2026-10-11): the v2 block set, applied under docs/16 R1.
     // Two prose sections kept; the rest became typed blocks and were deleted.
     // Block copy is restructured from reviewed text only: this page, the BTL Exilis, Wonderface and XERF pages,
@@ -1112,14 +1055,12 @@ export const treatments: Treatment[] = [
         links: [{ href: "/concerns/dark-eye-circles", label: "Dark eye circles" }],
       },
     ],
-    routesNote:
-      "Skin thickness, how much laxity there is and what has already been tried all change the answer, so a doctor decides after examining you rather than from the concern name alone.",
 
     // T-07 — the devices paragraph of "How it works", as the variant module (R1).
     variantModule: {
       heading: "BTL Exilis, Oligio, Wonderface or XERF: which RF platform, and why",
       intro:
-        "Different RF devices allow the treating doctor to adjust treatment depth and intensity for your skin condition and goals.",
+        "The four platforms differ in how deep the energy reaches and how the surface is cooled.",
       items: [
         {
           eyebrow: "Monopolar · embedded cooling",
@@ -1150,12 +1091,11 @@ export const treatments: Treatment[] = [
           hrefLabel: "About XERF",
         },
       ],
-      note: "The doctor selects the device and settings for your skin and the area being treated.",
     },
 
     ctaMid: {
       heading: "Not sure whether radiofrequency or another energy fits your skin?",
-      body: "Surface radiofrequency, focused ultrasound and RF microneedling reach tissue in different ways. A doctor can tell you which one your laxity actually calls for.",
+      body: "Surface RF, focused ultrasound and RF microneedling reach tissue differently. A doctor can tell you which your skin calls for.",
     },
 
     // T-09 — this page and the three device pages.
@@ -1167,7 +1107,7 @@ export const treatments: Treatment[] = [
       },
       { lead: "Active skin infection or inflamed areas", body: "where the treatment would be applied." },
       { lead: "A history of keloid scarring.", body: "" },
-      { lead: "Some skin conditions or medications,", body: "which your doctor goes through with you." },
+      { lead: "Some skin conditions or medications,", body: "reviewed before treatment." },
     ],
     bringToConsult:
       "Tell the doctor what you are already using on your skin as well as what you take: retinoids and recent peels change what the skin will tolerate on the day.",
@@ -1176,11 +1116,7 @@ export const treatments: Treatment[] = [
     sessionSteps: [
       {
         title: "Consultation and assessment",
-        body: "Your first visit is a consultation, not a treatment. The doctor assesses your skin's thickness and how it sits, because both change the settings.",
-      },
-      {
-        title: "Device and settings",
-        body: "If RF is appropriate, the doctor selects a suitable device and settings for your skin and the area being treated.",
+        body: "Your first visit is a consultation, not a treatment. The doctor assesses your skin's thickness and laxity, which decide the device and settings.",
       },
       {
         title: "The treatment",
@@ -1188,13 +1124,13 @@ export const treatments: Treatment[] = [
       },
       {
         title: "Afterwards",
-        body: "A course of about 2 to 3 sessions spaced roughly 4 to 6 weeks apart is common, but the plan is individual and your doctor will explain what to expect for your skin.",
+        body: "Sessions in a course are usually spaced about 4 to 6 weeks apart.",
       },
     ],
 
     // T-11 — physical recovery only.
     afterSession: {
-      intro: "Downtime is usually minimal but varies between individuals.",
+      intro: "Downtime is usually minimal: there is no wound, because the energy works beneath the surface.",
       bands: [
         {
           title: "Straight afterwards",
@@ -1210,36 +1146,36 @@ export const treatments: Treatment[] = [
         },
       ],
       aftercare:
-        "Gentle skincare and sun protection are advised afterwards. Your doctor will give aftercare guidance specific to you, which may include maintenance care to support ongoing results.",
+        "Gentle skincare and daily sun protection afterwards.",
     },
 
     // T-12
     risks: {
       intro:
-        "As with any medical procedure, RF treatment carries risks, which are explained during consultation.",
+        "Risks are explained before anything is booked.",
       common: "Redness, warmth or mild swelling that usually settles.",
       lessCommon:
-        "Burns and lasting pigment change are the effects that matter here, and both trace back to energy settings. That is why the settings are chosen for your skin by a doctor rather than fixed at the machine.",
+        "Burns and lasting pigment change. Both trace back to energy settings, which is why a doctor sets them for your skin.",
       pigmentNote:
-        "Because RF heats tissue rather than targeting pigment, it does not rely on colour contrast in the skin, which is why RF platforms are used across a wide range of skin tones including Asian skin. That does not make it appropriate for everyone.",
+        "RF heats tissue rather than targeting pigment, so it does not rely on colour contrast and is used across a wide range of skin tones, including Asian skin. Over-heating can still cause pigment change, which is why settings matter.",
       cannotDo: [
         "It is not a substitute for surgery where there is significant excess skin.",
         "Marked sagging may be better served by other approaches your doctor can discuss.",
-        "There is nothing to see immediately after a session: radiofrequency works by warming tissue and letting it remodel afterwards.",
+        "It does not change the skin on the day; any change depends on slow tissue remodelling.",
       ],
       disclose:
-        "Tell your doctor if you are or may be pregnant, have a pacemaker, metal implant or other implanted device, have a keloid tendency, or use retinoids or have had a recent peel.",
+        "Tell your doctor about anything on the avoid list above, including implanted devices anywhere near the treatment area.",
     },
 
     // T-13 — factors only, no figures (settled 2026-09-20).
     costFactors: {
       intro:
-        "Kaiteki does not quote prices online. The course length is set by what the assessment finds rather than by the device, so a figure quoted before that assessment would be a guess. What moves it:",
+        "Kaiteki does not quote prices online, because the course is set by what the assessment finds. What moves the cost:",
       factors: [
         "Your skin condition.",
         "The area treated. Face-only plans differ from face-and-neck or body plans.",
         "The number of sessions in the course.",
-        "Maintenance sessions, often every 6 to 12 months, decided with your doctor.",
+        "Any maintenance sessions, often every 6 to 12 months.",
       ],
     },
 
@@ -1253,34 +1189,33 @@ export const treatments: Treatment[] = [
       {
         heading: "What is radiofrequency (RF) treatment?",
         body: [
-          "Radiofrequency (RF) treatment is a non-surgical approach that uses controlled energy to warm the deeper layers of the skin. Unlike topical skincare, which acts on the surface, RF energy is delivered beneath the skin to work on its underlying structure.",
-          "At Kaiteki, RF is used chiefly for skin-firmness, laxity and contour concerns, without surgery or injections. Whether it suits your skin depends on your concern, skin condition and history, which a doctor assesses during consultation.",
+          "Radiofrequency (RF) treatment is a non-surgical approach that uses controlled energy to warm the deeper layers of the skin, rather than acting on the surface as skincare does. At Kaiteki it is used chiefly for skin-firmness, laxity and contour concerns, without surgery, needles or injections.",
         ],
       },
       {
         heading: "How does radiofrequency warm the skin without needles?",
         body: [
           "RF devices deliver controlled thermal energy into the dermis, gently heating the tissue. This warming is intended to act on existing collagen fibres and to prompt the skin's own gradual collagen-renewal response over time.",
-          "A contact-cooling step is used during treatment to help keep each session comfortable. Any changes develop gradually over weeks to months and vary between individuals.",
+          "A contact-cooling step is used during treatment to help keep each session comfortable.",
         ],
       },
     ],
     faqs: [
       {
         q: "Are radiofrequency treatments suitable for sensitive skin?",
-        a: "They may be. RF treatments are non-invasive and generally well tolerated, and your doctor adjusts the settings to your skin condition. Suitability is assessed individually at consultation, where any risks are explained.",
+        a: "Often, yes. Surface RF is non-invasive and generally well tolerated, and settings are adjusted to your skin. Mention any retinoids or recent peels, which change what the skin will tolerate.",
       },
       {
         q: "Is there any downtime after RF treatment?",
-        a: "Downtime is usually minimal, though it varies between individuals. Mild redness or warmth may occur and typically settles within a few hours. Your doctor will give you aftercare guidance specific to your skin.",
+        a: "Usually minimal. Mild redness or warmth typically settles within a few hours, and most people go straight back to normal activities.",
       },
       {
         q: "How many radiofrequency sessions will I need?",
-        a: "It varies. A course of about 2 to 3 sessions is common, sometimes followed by maintenance every 6 to 12 months, depending on your skin condition and goals. Collagen turnover is slow, so a plan here is written in months rather than weeks.",
+        a: "A course of about 2 to 3 sessions, spaced 4 to 6 weeks apart, is common, sometimes followed by maintenance every 6 to 12 months.",
       },
       {
         q: "When will I see results?",
-        a: "Any changes develop gradually over weeks to months as the skin responds, and they vary between individuals. Radiofrequency works by warming tissue and letting it remodel afterwards, so there is nothing to see immediately after a session.",
+        a: "Not on the day. RF works by warming tissue and letting it remodel, so any change develops gradually over weeks to months and varies between people.",
       },
     ],
   },
@@ -1289,34 +1224,22 @@ export const treatments: Treatment[] = [
     durationDowntime: "30-60 min · 2-3 days recovery",
     name: "RF Microneedling",
     category: "Lifting & Tightening",
-    image: "https://cdn.kaiteki.my/treatments/microneedling/hero.jpg",
+    image: "https://cdn.kaiteki.my/treatments/microneedling/hero-v2.jpg",
+    imageAlt: "A practitioner holds the Sylfirm X RF-microneedling handpiece to a patient's forehead, the console beside her",
+    // procedure-01 is the hero now, so the gallery starts at -02.
     procedureImages: [
-      { src: "https://cdn.kaiteki.my/treatments/microneedling/procedure-01.jpg", caption: "A practitioner presses the microneedling handpiece to the patient's forehead." },
       { src: "https://cdn.kaiteki.my/treatments/microneedling/procedure-02.jpg", caption: "A doctor moves the microneedling handpiece along the patient's face." },
     ],
     device: "Potenza",
     summary: "A radiofrequency (RF) microneedling treatment used for texture, scarring and pore concerns.",
     leadAnswer:
-      "Microneedling at Kaiteki is most often performed as radiofrequency (RF) microneedling, combining fine needles with radiofrequency energy to prompt a controlled skin-renewal response at multiple depths. It is commonly considered for texture, acne-scarring and pore concerns. Needle depth and energy are set per area by the treating doctor, and suitability is assessed before the first pass.",
+      "Microneedling at Kaiteki is usually radiofrequency (RF) microneedling: fine needles deliver radiofrequency energy at set depths to prompt a controlled skin-renewal response. It is commonly considered for texture, acne scarring and enlarged pores. The doctor chooses one of three devices and sets needle depth and energy for each area after assessing your skin.",
     related: ["pico-laser", "skin-booster"],
     reviewedBy: "dr-say-wei-xian",
     lastReviewed: "2026-06-12",
     seoTitle: "RF Microneedling Malaysia | Potenza, Morpheus8 | Kaiteki",
     seoDescription:
       "RF microneedling in Malaysia for texture, acne scarring and pore concerns using Potenza, Morpheus8 or Sylfirm X. Book a free consultation at Kaiteki.",
-    figures: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/microneedling/image-sylfirm.jpg",
-        caption: "A microneedling handpiece stamped along the jaw, one pass at a time.",
-      },
-    ],
-    manufacturerImages: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/microneedling/logo-sylfirm.png",
-        alt: "Sylfirm manufacturer logo",
-        caption: "Sylfirm — the manufacturer's mark for the radiofrequency microneedling device.",
-      },
-    ],
     // docs/15 item 2.3 (2026-09-28): the v2 block set, applied under docs/16 R1.
     // Two prose sections kept. "Devices & technology" became the variant
     // module, and the shared sections became typed blocks and were deleted.
@@ -1349,42 +1272,41 @@ export const treatments: Treatment[] = [
       },
     ],
     routesNote:
-      "Scar work is a staged process: different scar types respond differently, and some benefit from being combined with other treatments. A doctor sets realistic expectations at consultation rather than promising a single fix.",
+      "Different scar types respond differently, and some are combined with other treatments rather than treated with RF microneedling alone.",
 
     // T-07 — the "Devices & technology" section, as the variant module (R1).
     variantModule: {
       heading: "Morpheus8, Sylfirm X or Potenza: which device, and why",
       intro:
-        "Kaiteki offers three RF microneedling devices. Each has different technical characteristics, and a doctor matches the device and settings to your concern and skin during consultation.",
+        "Kaiteki offers three RF microneedling devices with different reach and RF modes. The doctor matches the device and settings to your concern and skin.",
       items: [
         {
           eyebrow: "Subdermal reach · InMode",
           title: "Morpheus8",
-          body: "Designed for deeper RF penetration. It is generally discussed in the context of skin-tightening and deeper concerns such as sagging, the jaw and neck area.",
+          body: "Designed for deeper RF penetration, and generally considered for skin tightening along the jaw and neck.",
           href: "/technology/morpheus8",
           hrefLabel: "About Morpheus8",
         },
         {
           eyebrow: "Pulsed and continuous wave · Viol",
           title: "Sylfirm X",
-          body: "A dual-wave device that can deliver RF in both pulsed and continuous modes. It is generally discussed in the context of pigment-related and vascular concerns such as melasma, post-inflammatory hyperpigmentation and redness.",
+          body: "Delivers RF in pulsed and continuous modes, and is generally considered for melasma, post-inflammatory hyperpigmentation and redness.",
           href: "/technology/sylfirm-x",
           hrefLabel: "About Sylfirm X",
         },
         {
           eyebrow: "Monopolar and bipolar · Cynosure Lutronic",
           title: "Potenza",
-          body: "Offers adjustable needle depth with both monopolar and bipolar RF modes. It is generally discussed in the context of acne scarring, enlarged pores and oil-related texture concerns.",
+          body: "Adjustable needle depth with monopolar and bipolar RF modes, generally considered for acne scarring, enlarged pores and oily texture.",
           href: "/technology/potenza",
           hrefLabel: "About Potenza",
         },
       ],
-      note: "The right choice for you is decided by a doctor during consultation.",
     },
 
     ctaMid: {
       heading: "Not sure which of the three devices suits your skin?",
-      body: "Scarring, pores, pigment and firmness point to different devices and different depths. A doctor can tell you which one you are actually dealing with.",
+      body: "Scarring, pores, pigment and firmness call for different devices and depths. A doctor can tell you which you are dealing with.",
     },
 
     // T-09 — this page's suitability copy plus the three device pages.
@@ -1403,17 +1325,17 @@ export const treatments: Treatment[] = [
       { lead: "Clotting disorders or blood thinners.", body: "" },
     ],
     bringToConsult:
-      "Please share your full medical, medication and skincare history at consultation. Recently tanned or sunburnt skin may also mean postponing.",
+      "Bring your medical, medication and skincare history. Recently tanned or sunburnt skin may mean postponing.",
 
     // T-10 — step 1 states the first visit is not a treatment.
     sessionSteps: [
       {
         title: "Consultation and assessment",
-        body: "Your first visit is a consultation, not a treatment. A doctor reviews your skin, medical history and any current skin conditions, and matches the device and settings to your concern.",
+        body: "Your first visit is a consultation, not a treatment. A doctor reviews your skin and medical history and chooses the device and settings.",
       },
       {
         title: "Numbing",
-        body: "A topical numbing cream is applied for around 30 to 45 minutes to help with comfort. This usually accounts for much of the appointment.",
+        body: "Numbing cream is applied for around 30 to 45 minutes, which is much of the appointment.",
       },
       {
         title: "The treatment",
@@ -1421,7 +1343,7 @@ export const treatments: Treatment[] = [
       },
       {
         title: "Afterwards",
-        body: "The treated area is cooled and soothed, and you are given aftercare guidance. RF microneedling is usually approached as a course of sessions spaced a few weeks apart, planned with your clinician.",
+        body: "The skin is cooled and soothed, and you are given aftercare guidance. Sessions are usually spaced a few weeks apart.",
       },
     ],
 
@@ -1443,38 +1365,38 @@ export const treatments: Treatment[] = [
         },
       ],
       aftercare:
-        "Sun protection and gentle skincare while the skin settles, with actives such as retinoids or acids usually paused for a short period. Follow the specific instructions given to you at your appointment.",
+        "Sun protection and gentle skincare while the skin settles, with retinoids and acids usually paused for a short period.",
     },
 
     // T-12
     risks: {
       intro:
-        "As with any procedure that penetrates the skin, RF microneedling carries potential risks and side effects. The relevant risks for your skin and history are explained during consultation so you can make an informed decision.",
+        "Because the needles penetrate the skin, RF microneedling carries risks, which the doctor goes through before anything is booked.",
       common:
         "Redness, swelling, sensitivity, dryness, pinpoint bruising or scabbing, and temporary changes in skin appearance.",
       lessCommon:
         "Infection, prolonged pigment change or scarring. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor.",
       pigmentNote:
-        "Radiofrequency energy is not absorbed by melanin the way laser light is, so RF microneedling is used across a broad range of skin tones, including deeper Asian skin, and is generally considered a lower pigmentation-risk option for medium and deeper skin tones. Temporary pigment changes are still possible, particularly with deeper settings or without good sun protection afterwards.",
+        "Radiofrequency is not absorbed by melanin the way laser light is, so RF microneedling is used across a broad range of skin tones, including deeper Asian skin. Temporary pigment change is still possible, particularly with deeper settings or poor sun protection afterwards.",
       cannotDo: [
         "It is not a substitute for surgery where there is significant sagging or excess skin.",
         "Scar work is staged. Different scar types respond differently, and no single session is a fix.",
         "It does not settle melasma for good. Melasma is chronic and relapsing, and needs ongoing topical care and sun protection alongside any procedure.",
       ],
       disclose:
-        "Tell your doctor if you are or may be pregnant or breastfeeding, have taken oral isotretinoin recently, have a keloid history, a clotting disorder or take blood thinners, or have a pacemaker, metal implants or permanent fillers.",
+        "Tell your doctor about anything in the list under who should postpone or avoid it, even if it seems minor.",
     },
 
     // T-13 — factors only, no figures (settled 2026-09-20).
     costFactors: {
       intro:
-        "Kaiteki does not quote prices online, because the device, the area and the plan are decided at consultation. What moves it:",
+        "Kaiteki does not quote prices online, because the device, area and plan are set at consultation. What moves it:",
       factors: [
         "Which device your doctor selects for your concern.",
         "The size of the area treated.",
         "The depths and modes used.",
         "The number of sessions in the course.",
-        "Single-use consumable needle tips, which are part of what shapes the cost of any RF microneedling session.",
+        "Single-use consumable needle tips.",
       ],
     },
 
@@ -1490,33 +1412,31 @@ export const treatments: Treatment[] = [
         heading: "What is RF microneedling?",
         body: [
           "RF microneedling refers to a group of treatments that combine traditional microneedling with radiofrequency (RF) energy. Fine needles create controlled micro-channels in the skin while RF energy is delivered through those needles at set depths.",
-          "At Kaiteki, microneedling is most often performed as RF microneedling rather than needling alone. Whether it is appropriate for you, and which settings are used, is something a doctor assesses during consultation.",
         ],
       },
       {
         heading: "How does RF microneedling treat several depths in one session?",
         body: [
-          "The device passes fine needles into the skin to create controlled micro-injuries, then delivers radiofrequency energy from the needle tips as thermal energy within the skin.",
-          "Because the needle depth and energy can be adjusted, the treatment can be targeted at multiple skin depths in one session. This combination is intended to prompt the skin's natural repair and collagen-remodelling response over time. The extent of any change varies between individuals.",
+          "The needles create controlled micro-injuries, then release radiofrequency energy as heat from their tips. Because needle depth and energy are adjustable, several skin depths can be treated in one session. The combination is intended to prompt the skin's repair and collagen-remodelling response over time, and the extent of any change varies between individuals.",
         ],
       },
     ],
     faqs: [
       {
         q: "Which device is right for me: Morpheus8, Sylfirm X or Potenza?",
-        a: "It depends on your concern and skin. As a general guide, Morpheus8 is associated with deeper, skin-tightening treatment, Sylfirm X with pigment and redness concerns, and Potenza with scarring and pore concerns. The right choice for you is decided by a doctor during consultation.",
+        a: "As a general guide, Morpheus8 is associated with deeper skin tightening, Sylfirm X with pigment and redness, and Potenza with scarring and pores. The doctor chooses after examining your skin.",
       },
       {
         q: "Is RF microneedling painful?",
-        a: "A topical numbing cream is applied beforehand to help with comfort, and many people describe the sensation as mild heat and pressure. Comfort varies between individuals, and what to expect is explained on the day.",
+        a: "Numbing cream is applied first, and many people describe the sensation as mild heat and pressure.",
       },
       {
         q: "Is there any downtime?",
-        a: "Downtime varies between individuals. Some redness for one to two days is common, and mild dryness or flaking can follow. Your clinician will give you aftercare guidance for your situation.",
+        a: "Some redness for one to two days is common, and mild dryness or flaking can follow. Deeper settings can mean slightly longer.",
       },
       {
         q: "How many sessions will I need?",
-        a: "RF microneedling is usually planned as a course of sessions spaced a few weeks apart. The number and spacing vary between individuals and are decided with your clinician at consultation.",
+        a: "Usually a course of sessions spaced a few weeks apart. The number is set for your concern after assessment and reviewed as the course goes.",
       },
     ],
   },
@@ -1540,14 +1460,6 @@ export const treatments: Treatment[] = [
     seoTitle: "Fat Freezing Malaysia | Cryolipolysis Treatment | Kaiteki",
     seoDescription:
       "Fat freezing (cryolipolysis) in Malaysia for localised fat pockets, not weight loss. Book a free consultation with a Kaiteki doctor to check suitability.",
-    // `body-slimming.jpg` is held: a tape measure drawn round a waist is an
-    // outcome picture, and the caption cannot undo what the image says (R-01).
-    figures: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/fat-freezing/image-coolsculpting.jpg",
-        caption: "An applicator clamped over the abdomen with its gel membrane in place, partway through a cycle.",
-      },
-    ],
     // docs/15 item 3.6 (2026-10-11): the v2 block set, applied under docs/16 R1.
     // Two prose sections kept; the rest became typed blocks and were deleted.
     // Block copy is restructured from reviewed text only: this page, the Cooltech and CoolSculpting pages,
@@ -1565,45 +1477,44 @@ export const treatments: Treatment[] = [
     routes: [
       {
         title: "A pinchable pocket that diet has not shifted",
-        body: "Controlled cooling applied to a defined pocket of fat, which the body then clears over the following weeks. Suitable where the fat can be drawn into an applicator, which is why the pinch test at assessment decides whether it applies at all.",
+        body: "Controlled cooling applied to a defined pocket of fat that can be pinched and drawn into an applicator.",
         links: [{ href: "/concerns/body-slimming", label: "Read about body slimming" }],
       },
       {
         title: "A defined pocket of fat under the chin",
-        body: "Controlled cooling applied to the submental area to reduce a localised fat pocket. Relevant only where fat is genuinely what is there, which is why the pinch test at assessment matters.",
+        body: "Controlled cooling applied to a localised fat pocket under the chin, relevant only where the fullness is genuinely fat.",
         links: [{ href: "/concerns/face-contouring", label: "Face contouring" }],
       },
     ],
     routesNote:
-      "Fat freezing is not a weight-loss treatment and is not a substitute for a healthy diet and exercise. It is intended for people at or near a stable weight who have specific, pinchable pockets of fat rather than generalised weight to lose.",
+      "It is intended for people at or near a stable weight with specific pockets of fat, not generalised weight to lose.",
 
     // T-07 — the former "Devices we use" section, as the variant module (R1).
     variantModule: {
       heading: "Cooltech or CoolSculpting: which device, and why",
       intro:
-        "Both are cryolipolysis devices working on the same principle. They differ in applicator design, and the treating doctor selects the device and applicator suited to your treatment area and goals at consultation.",
+        "Both are cryolipolysis devices working on the same principle. They differ in applicator design, and the doctor chooses the device and applicator for your area.",
       items: [
         {
           eyebrow: "360° cooling · Cocoon Medical",
           title: "Cooltech",
-          body: "The manufacturer describes 360° cooling plates, cooling delivered around the drawn-in tissue rather than from a single contact plate, and the ability to run more than one applicator at the same time, so two areas or both flanks may be addressed within one appointment.",
+          body: "The manufacturer describes 360° cooling around the drawn-in tissue rather than from one contact plate, and more than one applicator can run at once, so two areas or both flanks may be treated in one appointment.",
           href: "/technology/cooltech",
           hrefLabel: "About Cooltech",
         },
         {
           eyebrow: "Cryolipolysis · CoolSculpting",
           title: "CoolSculpting",
-          body: "A device applicator draws the target area against a cooling plate. Each applicator cycle typically runs for around 35 to 60 minutes, and the number of areas and applicators is individual.",
+          body: "An applicator draws the target area against a cooling plate, with each cycle typically running around 35 to 60 minutes.",
           href: "/technology/coolsculpting",
           hrefLabel: "About CoolSculpting",
         },
       ],
-      note: "Naming a device is a factual description, not a claim that one performs better than another.",
     },
 
     ctaMid: {
       heading: "Not sure whether your area is one an applicator can hold?",
-      body: "Not every pocket of fat is one an applicator can draw and hold, and that is something a doctor checks in person.",
+      body: "A doctor can check in person, with a pinch test, whether the area is fat an applicator can treat.",
     },
 
     // T-09 — this page and the Cooltech page.
@@ -1618,13 +1529,13 @@ export const treatments: Treatment[] = [
       { lead: "Certain circulatory, nerve or liver conditions,", body: "which your doctor goes through with you." },
     ],
     bringToConsult:
-      "Please share your full medical history, current medications, any implants or devices, and any previous body-contouring procedures at consultation so the doctor can advise safely.",
+      "Bring your medical history, medications, any implants or devices, and details of previous body-contouring procedures.",
 
     // T-10 — step 1 states the first visit is not a treatment.
     sessionSteps: [
       {
         title: "Consultation and assessment",
-        body: "Your first visit is a consultation, not a treatment. The doctor assesses the area, including whether the fat can be drawn into an applicator, and discusses what is realistic for your body.",
+        body: "Your first visit is a consultation, not a treatment. The doctor checks whether the fat in the area can be drawn into an applicator.",
       },
       {
         title: "Preparation",
@@ -1636,14 +1547,14 @@ export const treatments: Treatment[] = [
       },
       {
         title: "Afterwards",
-        body: "The applicator is removed and the area is massaged. More than one area or session may be discussed depending on your goals, but the plan is individual.",
+        body: "The applicator is removed and the area is massaged.",
       },
     ],
 
     // T-11 — physical recovery only, never a timeframe to a result.
     afterSession: {
       intro:
-        "Downtime is usually limited but varies between individuals, and most people return to everyday activities after a session.",
+        "Downtime is usually limited, and most people return to everyday activities after a session.",
       bands: [
         {
           title: "Straight afterwards",
@@ -1659,26 +1570,26 @@ export const treatments: Treatment[] = [
         },
       ],
       aftercare:
-        "Maintaining a stable weight with your usual diet and activity supports the contour you are working towards. Your doctor will give aftercare guidance specific to you.",
+        "Keep to a stable weight with your usual diet and activity.",
     },
 
     // T-12
     risks: {
       intro:
-        "As with any medical procedure, cryolipolysis carries risks, which are explained during consultation.",
+        "Cryolipolysis carries risks, which the doctor explains before anything is booked.",
       common:
         "Redness, swelling, bruising, firmness, numbness, tingling, itching or cramping in the treated area, and altered skin sensation that may take some weeks to normalise.",
       lessCommon:
         "Lingering pain in the treated area, and paradoxical adipose hyperplasia, in which the treated fat pocket firms and enlarges rather than reduces. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor.",
       pigmentNote:
-        "Because it acts on fat below the skin rather than on pigment, skin tone is not the primary consideration it is with lasers, but the thickness and distribution of fat in the area very much are.",
+        "It acts on fat below the skin, not on pigment, so skin tone matters less than it does with lasers. The thickness and distribution of fat in the area matter more.",
       cannotDo: [
         "It is not a weight-loss treatment, not a treatment for obesity, and not a substitute for diet, exercise or medical weight management.",
         "Not every pocket of fat is one an applicator can draw and hold.",
         "It does not stop remaining fat cells enlarging with weight gain, which is why a stable weight matters.",
       ],
       disclose:
-        "Tell your doctor if you are or may be pregnant or breastfeeding, have a cold-related condition, a hernia, or any implant or device, take any medication, or have had previous body-contouring procedures.",
+        "Tell your doctor about anything in the list under who should postpone or avoid it, and about any implant, device or medication.",
     },
 
     // T-13 — factors only, no figures (settled 2026-09-20).
@@ -1688,8 +1599,7 @@ export const treatments: Treatment[] = [
       factors: [
         "The areas being addressed.",
         "The size of the fat pocket, and how many applicator placements it needs to cover.",
-        "The number of cycles each area requires.",
-        "Your individual response.",
+        "The number of cycles each area requires, and whether a further session is planned after review.",
       ],
     },
 
@@ -1703,33 +1613,33 @@ export const treatments: Treatment[] = [
         heading: "What is fat freezing?",
         body: [
           "Fat freezing is the everyday name for cryolipolysis, a non-surgical approach that uses controlled cooling to target pockets of fat in specific areas of the body. \"Fat freezing\" describes the method rather than any single machine, and several devices work on the same cryolipolysis principle.",
-          "It is intended for localised, stubborn fat in defined areas rather than overall weight reduction. Whether it suits you depends on your concern, the area involved and your medical history, which a doctor assesses during consultation.",
+          "It is intended for localised, stubborn fat in defined areas rather than overall weight reduction.",
         ],
       },
       {
         heading: "Why does cooling affect fat and not the skin around it?",
         body: [
           "Cryolipolysis is based on the idea that fat cells are more sensitive to cold than the surrounding skin, nerves and muscle. During a session, an applicator cools a defined area to a controlled low temperature for a set period.",
-          "The aim is to affect fat cells within the treated pocket while limiting effect on nearby tissue. Any change develops gradually over the following weeks as the body processes the treated area. Settings and applicators are selected by the treating doctor, and results vary between individuals.",
+          "The aim is to affect fat cells within the treated pocket while limiting the effect on nearby tissue. The body then clears the affected cells gradually over the following weeks.",
         ],
       },
     ],
     faqs: [
       {
         q: "Is fat freezing a weight-loss treatment?",
-        a: "No. Fat freezing (cryolipolysis) is intended to target localised, stubborn pockets of fat in specific areas, not to reduce overall body weight. It works best alongside a stable weight and healthy habits, and a doctor assesses at consultation whether it is appropriate for you.",
+        a: "No. It targets localised pockets of fat in specific areas, not overall body weight, and is intended for people at or near a stable weight.",
       },
       {
         q: "Does fat freezing hurt?",
-        a: "Most people describe an intense cold and some numbness when a session begins, which often eases as the area becomes numb. Comfort varies between individuals, and your doctor can talk through what to expect and how the session is managed.",
+        a: "Most people feel intense cold and a firm pulling from the suction at the start, which usually eases as the area goes numb.",
       },
       {
         q: "How many sessions will I need?",
-        a: "It varies. The number of sessions depends on the area, the amount of localised fat and how your body responds. Your doctor will outline a realistic plan at consultation rather than promising a set outcome.",
+        a: "It depends on the area, the amount of localised fat and how you respond, which is reviewed a couple of months after each session.",
       },
       {
         q: "When might I notice a change?",
-        a: "Any change develops gradually over several weeks as the body processes the treated area, and it varies between individuals. Your doctor will explain what is realistic for your situation at consultation.",
+        a: "Any change is gradual, because the body clears the treated cells over several weeks, so it is usually assessed a couple of months after the session.",
       },
     ],
   },
@@ -1772,7 +1682,7 @@ export const treatments: Treatment[] = [
       },
       {
         title: "Texture, pores and the under-eye area",
-        body: "Uneven texture and the look of enlarged pores, where a collagen-stimulating booster such as Juvelook is one option, and the under-eye area, which some products are specifically used for.",
+        body: "Uneven texture and enlarged-looking pores, where a collagen-stimulating booster such as Juvelook is one option, and the under-eye area.",
         links: [
           { href: "/concerns/enlarged-pores", label: "Enlarged pores" },
           { href: "/concerns/dark-eye-circles", label: "Dark eye circles" },
@@ -1780,14 +1690,14 @@ export const treatments: Treatment[] = [
       },
     ],
     routesNote:
-      "If what you want is a change in contour, such as a fuller cheek, a defined chin or a corrected hollow, a skin booster is the wrong category. Your doctor will say so rather than substituting one for the other.",
+      "If what you want is a change in contour, a skin booster is the wrong category, and dermal fillers are the relevant page.",
 
     // T-07 — the five products, told apart by what is in them. Material and
     // manufacturer are the facts already on each product page (docs/15 2.0).
     variantModule: {
       heading: "Which skin booster, and what is in it",
       intro:
-        "Skin booster is an umbrella term, and the products under it are not interchangeable. They differ in their active ingredient, and the ingredient is what decides which skin a doctor considers them for. Which one suits you, if any, is decided after examining your skin.",
+        "Skin booster is an umbrella term, and the products under it are not interchangeable. They differ in their active ingredient, and the ingredient decides which skin a doctor considers them for.",
       items: [
         {
           eyebrow: "Salmon polynucleotide · Pharma Research, Korea",
@@ -1806,7 +1716,7 @@ export const treatments: Treatment[] = [
         {
           eyebrow: "Hyaluronic acid · IBSA, Italy",
           title: "Profhilo",
-          body: "A high-concentration hyaluronic acid used for deep hydration and skin remodelling, and to support firmness. It is not a contour filler.",
+          body: "A high-concentration hyaluronic acid used for deep hydration and skin remodelling, and to support firmness.",
           href: "/technology/profhilo",
           hrefLabel: "About Profhilo",
         },
@@ -1820,12 +1730,12 @@ export const treatments: Treatment[] = [
         {
           eyebrow: "PDLLA + HA · VAIM, South Korea",
           title: "Juvelook",
-          body: "A collagen-stimulating booster used for pores, texture and fine lines. The change builds over months rather than days, so it suits someone willing to wait for a gradual one.",
+          body: "A collagen-stimulating booster used for pores, texture and fine lines, where any change builds over months rather than days.",
           href: "/technology/juvelook",
           hrefLabel: "About Juvelook",
         },
       ],
-      note: "This is why the consultation comes first. A doctor may decide a hydrating or polynucleotide booster is the sensible starting point before a collagen-stimulating one, or that a skin booster is not the right category at all.",
+      note: "A doctor may start with a hydrating or polynucleotide booster before a collagen-stimulating one, or decide a skin booster is not the right category at all.",
     },
 
     // T-09 — the union of the five product pages' contraindications, each
@@ -1838,7 +1748,7 @@ export const treatments: Treatment[] = [
       },
       {
         lead: "A fish or seafood allergy",
-        body: "for the polynucleotide products, Rejuran and Plinest, which are fish-derived. Any known hypersensitivity to hyaluronic acid or another ingredient matters for the others.",
+        body: "for Rejuran and Plinest, which are fish-derived, or a known hypersensitivity to hyaluronic acid or another ingredient.",
       },
       {
         lead: "A bleeding disorder or blood-thinning medication.",
@@ -1854,13 +1764,13 @@ export const treatments: Treatment[] = [
       },
     ],
     bringToConsult:
-      "Bring your full medical history, allergies and medications, and a list of every injectable you have had before, including fillers. Which product is appropriate, if any, depends on all of it.",
+      "Bring your medical history, allergies and medications, and a list of every injectable you have had before, including fillers.",
 
     // T-10 — step 1 states the first visit is not a treatment.
     sessionSteps: [
       {
         title: "Consultation and skin assessment",
-        body: "A doctor examines your skin and decides whether a skin booster is the right category for your concern and, if so, which one: hydrating, polynucleotide or collagen-stimulating.",
+        body: "Your first visit is a consultation, not a treatment. A doctor examines your skin and decides whether a skin booster suits your concern and, if so, which type: hydrating, polynucleotide or collagen-stimulating.",
       },
       {
         title: "Preparation",
@@ -1868,11 +1778,11 @@ export const treatments: Treatment[] = [
       },
       {
         title: "The injections",
-        body: "The doctor places the product as a series of small injections across the assessed area, using the technique and points they judge suitable for you. Because this is an injectable treatment, it is carried out by a doctor throughout.",
+        body: "The doctor places the product as a series of small injections across the assessed area.",
       },
       {
         title: "Afterwards",
-        body: "Soothing care and aftercare advice. The number of sessions and the interval between them are set for your skin and your response, not by a standard schedule.",
+        body: "Soothing care and aftercare advice. The next session is spaced for your skin and response.",
       },
     ],
 
@@ -1880,7 +1790,7 @@ export const treatments: Treatment[] = [
     // hyaluronic acid disperses faster than polynucleotide.
     afterSession: {
       intro:
-        "Downtime after a skin booster is usually short but genuinely visible for a period, and it varies between products and between individuals.",
+        "Downtime is usually short but visible for a period, and it differs between products.",
       bands: [
         {
           title: "Straight afterwards",
@@ -1896,29 +1806,29 @@ export const treatments: Treatment[] = [
         },
         {
           title: "Across the course",
-          body: "Sessions are spaced some weeks apart. Any change develops gradually, and for a collagen-stimulating booster it appears over months rather than days.",
+          body: "Sessions are spaced some weeks apart, and any change develops gradually.",
         },
       ],
       aftercare:
-        "Gentle skincare and consistent sun protection afterwards, and temporarily avoiding heat, strenuous exercise and pressure on the treated area. Your doctor will tell you when to resume active skincare, makeup and exercise.",
+        "Gentle skincare and sun protection, and a short break from heat, strenuous exercise and pressure on the treated area before resuming actives and makeup.",
     },
 
     // T-12 — not energy-based, so no pigment note: skin tone is not a
     // limiting factor the way it is with lasers (every product page says so).
     risks: {
       intro:
-        "As with any injectable treatment, skin boosters carry risks. These are explained to you in full at consultation, before anything is booked.",
+        "Skin boosters carry the risks of any facial injection, explained in full before anything is booked.",
       common:
         "Bumps at the injection points, swelling, redness, bruising, tenderness and small palpable lumps, which typically settle over a short period.",
       lessCommon:
         "Infection, prolonged swelling, nodules and hypersensitivity reactions. Persistent nodules or granuloma formation are a recognised consideration with collagen-stimulating products. Vascular complications are rare but recognised with any facial injection. Serious effects are uncommon when the product is appropriately selected and administered by a trained doctor.",
       cannotDo: [
-        "It does not add volume or change the shape of the face. Skin boosters are not fillers, and a concern about contour needs a different treatment.",
+        "It does not add volume or change the shape of the face.",
         "It does not work in a single session. Skin boosters are used as a course, and any change develops gradually.",
         "It is not permanent. Courses are commonly followed by periodic maintenance.",
       ],
       disclose:
-        "Tell your doctor if you are or may be pregnant or breastfeeding, have a fish, seafood or other allergy, take blood-thinning or other medication, have a tendency to keloid scarring or an autoimmune condition, or have had any previous filler or biostimulator treatment.",
+        "Tell your doctor about anything in the list under who should postpone or avoid it, and about every previous filler or biostimulator.",
     },
 
     // T-13 — factors only, no figures (settled 2026-09-20).
@@ -1930,10 +1840,7 @@ export const treatments: Treatment[] = [
         "The number and size of areas: a full face, the under-eye area, the neck, hands or décolletage all differ.",
         "The quantity of product your doctor judges appropriate.",
         "How many sessions the course needs, and whether maintenance visits form part of the plan.",
-        "How your skin responds across the course, which is reviewed between sessions.",
       ],
-      outro:
-        "Skin boosters are typically planned as a short course with maintenance afterwards, but the number of sessions and their spacing are set by your doctor rather than fixed in advance.",
     },
 
     // Factual rows only. Downtime is each treatment's own `durationDowntime`.
@@ -1974,66 +1881,42 @@ export const treatments: Treatment[] = [
     seoTitle: "Skin Booster Malaysia | Rejuran, Profhilo & Juvelook",
     seoDescription:
       "Injectable skin boosters in Malaysia, including Rejuran, Profhilo and Juvelook, for skin hydration and quality. Book a free consultation at Kaiteki.",
-    // Two prose sections, so Q-23 allows floor(2 / 2) = 1 figure. The general
-    // session photograph is the one kept. Held out rather than authored until
-    // the body grows, as pico-laser does:
-    //   treatments/skin-booster/profhilo.jpg        "An injection placed along the lower cheek — one of the points used in a Profhilo protocol."
-    //   treatments/skin-booster/rejuran-healer.jpg  "Injection points marked out on the cheek before a Rejuran Healer session."
-    //   treatments/skin-booster/skin-booster-2.jpg  "The doctor steadies the jawline while positioning the needle at the cheek."
-    // `rejuran.jpg` stays out for the reason it always did: a packaging shot.
-    figures: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/skin-booster/image-skin-booster.jpg",
-        caption: "A fine needle positioned at the cheek under a treatment lamp during a skin-booster session.",
-      },
-    ],
-    manufacturerImages: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/skin-booster/logo-plinest.png",
-        alt: "Plinest manufacturer logo",
-        caption: "Plinest — the manufacturer's mark for the polynucleotide skin booster.",
-      },
-    ],
     sections: [
       {
         heading: "What is a skin booster?",
         body: [
           "A skin booster is an injectable treatment that places hydrating and skin-conditioning ingredients into the skin to support its overall quality, rather than to add volume or change the shape of the face. Because it is an injectable, it is performed by a doctor.",
-          "Skin booster is an umbrella term for several different injectable formulations. The right one for you, and whether a skin booster is appropriate at all, is assessed by a doctor during a consultation.",
+          "Skin booster is an umbrella term covering hydrating, polynucleotide and collagen-stimulating products, compared below.",
         ],
       },
       {
         heading: "How is a skin booster different from a filler?",
         body: [
           "A filler is placed to add volume or change contour: a fuller cheek, a defined chin, a corrected hollow. A skin booster is not. It is delivered as small amounts through a series of fine micro-injections spread across the treatment area, and the ingredients are intended to work within the skin itself to support hydration and skin quality over time.",
-          "That is also why the two are planned differently. A skin booster is generally used as a course rather than a single treatment, and any change tends to develop gradually and varies between individuals. It is worth being clear about which of the two you are after before the first session, because a doctor will not substitute one for the other.",
+          "That is also why the two are planned differently: a skin booster is used as a course rather than a single treatment, and any change develops gradually.",
         ],
       },
     ],
     faqs: [
       {
         q: "Are skin boosters suitable for sensitive or acne-prone skin?",
-        a: "They may be. Some formulations, such as Rejuran and Plinest, are often considered for sensitive or damaged skin, but suitability depends on your individual skin and is assessed by a doctor during consultation. The doctor will also explain the risks before any treatment.",
-      },
-      {
-        q: "Do skin boosters change the shape of my face?",
-        a: "No. Skin boosters are intended to support skin quality and hydration rather than to add volume or alter facial features. If your concern is better addressed by a different type of treatment, your doctor will discuss that with you at consultation.",
+        a: "They may be. The polynucleotide boosters, Rejuran and Plinest, are often considered for sensitive or damaged skin, once any active acne flare has settled.",
       },
       {
         q: "Is there any downtime?",
-        a: "Downtime is usually minimal. Mild redness or small injection marks may occur and commonly subside within a day or two, though this varies between individuals. Your doctor will give aftercare advice tailored to your skin.",
+        a: "Small bumps at each injection point are expected and settle within hours to about a day for hyaluronic acid boosters, and over one to two days for polynucleotides. Redness and pinpoint bruising can also occur.",
       },
       {
         q: "How many sessions will I need?",
-        a: "Skin boosters are generally planned as a course, and the number of sessions and any maintenance vary between individuals depending on your skin and goals. Your doctor will plan this with you rather than set it in advance.",
+        a: "Usually a short course spaced some weeks apart, then periodic maintenance. The number depends on the product and your skin.",
       },
       {
         q: "What is the difference between Rejuran and Profhilo?",
-        a: "They are built on different ingredients. Rejuran is a salmon-derived polynucleotide, used to support the skin barrier and healing and often considered for sensitive or damaged skin. Profhilo is a high-concentration hyaluronic acid, used for deep hydration and skin remodelling. Neither is a contour filler. Which suits you, if either, depends on your skin and is decided by a doctor at consultation.",
+        a: "They are built on different ingredients. Rejuran is a salmon-derived polynucleotide used to support the skin barrier and healing, often considered for sensitive or damaged skin. Profhilo is a high-concentration hyaluronic acid used for deep hydration and skin remodelling.",
       },
       {
         q: "Can I have a skin booster if I am allergic to fish?",
-        a: "Tell your doctor before anything else. Rejuran and Plinest are polynucleotide products derived from fish, so a fish or seafood allergy matters for those two. The hyaluronic acid boosters are built on a different ingredient, and your doctor will go through your allergies and history before recommending any product.",
+        a: "Tell your doctor first. Rejuran and Plinest are fish-derived polynucleotides, so a fish or seafood allergy matters for those two. The hyaluronic acid boosters, such as Profhilo and Hydrodeluxe, are built on a different ingredient.",
       },
     ],
   },
@@ -2066,7 +1949,7 @@ export const treatments: Treatment[] = [
       "Known neuromuscular conditions such as myasthenia gravis or Lambert-Eaton syndrome",
       "Known allergy to botulinum toxin or any component of the preparation",
       "Active skin infection or inflammation at the intended injection site",
-      "Certain medications, including some antibiotics and muscle relaxants: tell your doctor everything you take",
+      "Certain medications, including some antibiotics and muscle relaxants: bring a full list",
     ],
     comparisons: [
       {
@@ -2109,98 +1992,64 @@ export const treatments: Treatment[] = [
     seoTitle: "Botulinum Toxin Injections in Malaysia | Kaiteki",
     seoDescription:
       "Botulinum toxin is a prescription injectable used for expression lines, jaw or calf muscle bulk and excessive sweating. Doctor-assessed at Kaiteki Malaysia.",
-    figures: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/botulinum-toxin/image-face-muscle-relax.png",
-        caption:
-          "A fine needle positioned at the outer eye — one of the sites treated for lines that appear on movement.",
-      },
-    ],
     sections: [
       {
         heading: "What is botulinum toxin?",
         body: [
           "Botulinum toxin is a purified protein produced by the bacterium Clostridium botulinum. In very small, controlled doses it is used in medicine to temporarily reduce the activity of a specific muscle or gland. It has been used clinically for decades, originally in neurology and ophthalmology, and later in aesthetic medicine.",
-          "In Malaysia it is a prescription medicine. That means it can only be supplied and administered by a registered doctor after an in-person assessment, and it cannot be bought, requested or self-administered like a cosmetic product.",
-          "Several brands of botulinum toxin type A are registered in Malaysia, of which Botox is the best known: the name is widely used to mean the treatment itself, though it is one product among several. Which one your doctor recommends depends on the area being treated and your assessment.",
+          "In Malaysia it is a prescription medicine: only a registered doctor can supply and administer it, after an in-person assessment.",
+          "Several brands of botulinum toxin type A are registered in Malaysia. \"Botox\" is one of them, though the name is often used for the treatment itself.",
         ],
       },
       {
-        heading: "How it works",
+        heading: "How does botulinum toxin relax a muscle or sweat gland?",
         body: [
           "Muscles contract when a nerve releases a chemical messenger called acetylcholine at the junction between the nerve and the muscle. Botulinum toxin temporarily blocks that release, so the treated muscle contracts less strongly. The same mechanism applies to the nerves that switch on sweat glands, which is why it is also used for excessive sweating.",
-          "The effect is confined to the small area injected and is temporary: nerve signalling gradually returns and the muscle or gland resumes its usual activity. How long that takes, and how noticeable any change is, varies considerably between individuals. Because the effect wears off, this is a treatment that is repeated rather than a one-off procedure.",
+          "The effect is confined to the small area injected and is temporary: nerve signalling gradually returns and the muscle or gland resumes its usual activity, at a pace that varies between people. Certain medical uses, such as chronic migraine or muscle spasm, are assessed separately.",
         ],
       },
       {
-        heading: "What it may be used for",
+        heading: "What happens at a botulinum toxin appointment?",
         body: [
-          "A doctor considers botulinum toxin for concerns driven by muscle movement or gland activity, rather than by volume loss or skin quality. If your concern is not movement-related, another approach may be more appropriate, and your doctor will say so.",
-        ],
-        list: [
-          "Dynamic expression lines: forehead lines, frown lines between the brows, and lines at the outer eye",
-          "Excessive sweating (hyperhidrosis) of the underarms, palms or soles",
-          "Jawline width associated with masseter muscle bulk",
-          "Calf shape associated with muscle bulk",
-          "Certain medical uses, such as chronic migraine or muscle spasm, assessed separately",
+          "It starts with a consultation. The doctor watches the area at rest and in movement, explains what is and is not achievable, and goes through the risks. Only then is a dose decided. Dosing is individual, not set from a price list.",
+          "The area is cleansed and the doctor gives a series of small injections with a fine needle at planned points, usually over ten to twenty minutes. Most people describe brief stinging, and numbing or cooling can be used. Small bumps, redness or bruising, particularly around the eyes, usually settle quickly. Any change develops over the following days, and a review appointment checks it before anything further is decided.",
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
-        body: [
-          "Botulinum toxin is not suitable for everyone, and being interested in it is not the same as being a candidate for it. Your doctor examines the area, watches how the muscles move, reviews your medical history and medications, and then advises whether treatment is reasonable, including advising against it.",
-          "It is generally avoided in pregnancy and breastfeeding, where there is a neuromuscular disorder such as myasthenia gravis, where there is a known allergy to the preparation, and over active infection or inflammation at the injection site. Some medications, including certain antibiotics and muscle relaxants, can interact with it, so bring a full list to your consultation.",
-        ],
-      },
-      {
-        heading: "The session at Kaiteki",
-        body: [
-          "Your appointment starts with a consultation. The doctor assesses the area at rest and in movement, discusses what you are hoping to change, explains what is and is not achievable, and goes through the risks. Only then is a treatment plan and dose decided: dosing is individual and is not set from a price list.",
-          "If you proceed, the area is cleansed and the doctor administers a series of small injections with a fine needle at planned points. Most sessions take ten to twenty minutes. Discomfort is usually described as brief stinging; the doctor can discuss numbing or cooling beforehand if you are concerned. You are given written aftercare before you leave.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
-          "There is normally no downtime and most people return to their day straight away. Small raised bumps, minor redness or a mild headache can occur and usually settle quickly; bruising is possible, particularly around the eyes.",
-          "For the first day, stay upright for around four hours, do not rub or massage the treated area, and avoid strenuous exercise, saunas, steam rooms and facials. Any change develops gradually over the following days rather than immediately, and your doctor will usually offer a review appointment to assess the result before deciding anything further.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
+        heading: "What are the side effects of botulinum toxin?",
         body: [
           "Commonly reported temporary effects include tenderness, redness or small bruises at the injection points, and headache. These are usually mild and short-lived.",
-          "Less commonly, the effect can extend slightly beyond the intended muscle, which may cause temporary asymmetry, a heavy-feeling brow or eyelid drooping. These are temporary but can take weeks to resolve. Rarely, more serious effects associated with spread of the toxin, including difficulty swallowing, speaking or breathing, or muscle weakness away from the injection site, have been reported and require urgent medical attention. Your doctor will explain the full risk profile as it applies to you before you consent, and Kaiteki asks you to contact the clinic about any effect that concerns you.",
+          "Less commonly, the effect extends slightly beyond the intended muscle, causing temporary asymmetry, a heavy-feeling brow or eyelid drooping, which can take weeks to resolve. Rarely, spread of the toxin has been reported to cause difficulty swallowing, speaking or breathing, or weakness away from the injection site. These need urgent medical attention. It is not permanent and does not add volume: lines caused by lost volume or laxity need a different treatment. Contact the clinic about any effect that concerns you.",
         ],
       },
       {
-        heading: "Sessions & cost factors",
+        heading: "How often is botulinum toxin repeated, and what affects the cost?",
         body: [
-          "Because the effect is temporary, treatment is planned as a repeating cycle rather than a course with an endpoint. How often that is appropriate depends on the area, the dose used and how your body responds, and is decided with your doctor at review rather than fixed in advance.",
-          "Cost depends on the area, the dose your doctor determines and your individual plan, so it is confirmed at consultation. As a prescription medicine, it cannot be quoted or promoted as a package before assessment. To arrange an assessment, message Kaiteki on WhatsApp.",
+          "Because the effect wears off, treatment is a repeating cycle, not a course with an endpoint. How often depends on the area, the dose and how you respond, and is decided at review.",
+          "Cost depends on the area and the dose. As a prescription medicine it cannot be quoted or sold as a package before assessment.",
         ],
       },
     ],
     faqs: [
       {
         q: "Is botulinum toxin permanent?",
-        a: "No. The effect is temporary because nerve signalling gradually returns, so the treated muscle or gland resumes its usual activity. How long that takes varies between individuals, which is why treatment is planned as a repeating cycle and reviewed by your doctor rather than set to a fixed schedule.",
+        a: "No. Nerve signalling gradually returns and the treated muscle or gland resumes its usual activity, at a pace that varies between people. Treatment is therefore a repeating cycle, timed at review rather than on a fixed schedule.",
       },
       {
         q: "Can it help with excessive sweating?",
-        a: "It is one option a doctor may consider for excessive sweating of the underarms, palms or soles, usually where antiperspirants have not been enough. It works on the nerves that activate sweat glands. Whether it is appropriate for you depends on assessment, including ruling out underlying causes of the sweating.",
+        a: "It is one option for excessive sweating of the underarms, palms or soles, usually where antiperspirants have not been enough. It acts on the nerves that switch on sweat glands. Underlying causes of the sweating are ruled out first.",
       },
       {
         q: "Will my face look frozen or expressionless?",
-        a: "That outcome relates to dose and placement, which is why the doctor assesses how your muscles move before deciding anything. Tell your doctor at consultation how much movement you want to keep, and ask what is realistic. A review appointment lets the doctor assess the result before considering any further treatment.",
+        a: "That look comes from dose and placement, which is why the doctor watches how your muscles move first. Say how much movement you want to keep. The review appointment checks the effect before anything more is added.",
       },
       {
         q: "Is this the same as Botox?",
-        a: "Botox is one registered brand of botulinum toxin type A, and it is the brand most people mean when they say the word. It is a product, not a separate treatment. Several brands are registered in Malaysia and they differ in formulation and unit potency, so your doctor will explain which one they are recommending for you and why.",
+        a: "Botox is one registered brand of botulinum toxin type A: a product, not a separate treatment. Several brands are registered in Malaysia and differ in formulation and unit potency, so the doctor will explain which one is recommended for you and why.",
       },
       {
         q: "Is it the same as dermal filler?",
-        a: "No. Botulinum toxin relaxes muscle activity, so it addresses lines caused by movement. Dermal fillers add volume or structure, so they address hollowing and lines caused by lost volume. They work differently and are sometimes considered together. Your doctor will explain which, if either, fits your concern.",
+        a: "No. Botulinum toxin relaxes muscle activity, so it addresses lines caused by movement. Dermal fillers add volume or structure, for hollowing and lines caused by lost volume. The two are sometimes used together.",
       },
     ],
   },
@@ -2213,31 +2062,13 @@ export const treatments: Treatment[] = [
     device: "Sculptra",
     summary: "Injectable treatments used to support the skin's own structural renewal.",
     leadAnswer:
-      "Bio-stimulator treatments are injectables intended to support the skin's own gradual structural renewal over time. Because any change is cumulative rather than immediate, the plan is set across months by a doctor rather than booked as a single visit.",
+      "Bio-stimulators, such as Sculptra, Radiesse and Ellansé, are injectables intended to prompt the skin's own collagen rather than add volume on the day, as a dermal filler does. Any change is gradual, and unlike a hyaluronic acid filler they cannot be dissolved, so a doctor plans the course across months after assessment.",
     related: ["skin-booster"],
     reviewedBy: "dr-yeong-bin",
     lastReviewed: "2026-06-08",
     seoTitle: "Bio-Stimulator Malaysia | Sculptra, Ellanse | Kaiteki",
     seoDescription:
       "Bio-stimulator injectables in Malaysia, including Sculptra and Ellanse, to support the skin's structural renewal. Book a free consultation at Kaiteki.",
-    figures: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/bio-stimulator/image-radiesse.jpg",
-        caption: "A syringe held at the mid-cheek, one of the planes a collagen stimulator is placed in.",
-      },
-    ],
-    manufacturerImages: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/bio-stimulator/logo-radiesse.png",
-        alt: "Radiesse manufacturer logo",
-        caption: "Radiesse — the manufacturer's mark for the calcium hydroxylapatite stimulator.",
-      },
-      {
-        src: "https://cdn.kaiteki.my/treatments/bio-stimulator/logo-ellanse.png",
-        alt: "Ellansé manufacturer logo",
-        caption: "Ellansé — the manufacturer's mark for the polycaprolactone stimulator.",
-      },
-    ],
     // docs/15 item 3.6 (2026-10-11): the v2 block set, applied under docs/16 R1.
     // Two prose sections kept; the rest became typed blocks and were deleted.
     // Block copy is restructured from reviewed text only: this page, the Sculptra, Radiesse and Ellansé pages,
@@ -2255,23 +2086,19 @@ export const treatments: Treatment[] = [
     routes: [
       {
         title: "Gradual collagen rebuilding over months",
-        body: "An injectable that prompts the skin to produce its own collagen rather than adding volume directly. Change is deliberately slow, which some people prefer and others find frustrating.",
-        links: [{ href: "/concerns/face-lifting", label: "Read about face lifting" }],
-      },
-      {
-        title: "Rebuilding structure rather than filling",
-        body: "An injectable that prompts your own collagen production over months instead of adding volume immediately. Suits people who want change to arrive slowly and are willing to wait for it.",
-        links: [{ href: "/concerns/aging", label: "Ageing skin" }],
+        body: "Prompts your own collagen production over months instead of adding volume immediately. Change is deliberately slow, which some people prefer and others find frustrating.",
+        links: [
+          { href: "/concerns/face-lifting", label: "Read about face lifting" },
+          { href: "/concerns/aging", label: "Ageing skin" },
+        ],
       },
     ],
-    routesNote:
-      "Some injectables sit within the tissue to provide structural fill; bio-stimulators are formulated to work more gradually. Which approach is appropriate depends on the individual.",
 
     // T-07 — the former "Types of bio-stimulator" section (R1).
     variantModule: {
       heading: "Sculptra, Radiesse or Ellansé: which material, and why",
       intro:
-        "Several bio-stimulator products may be used, each with a different base material and characteristics. Product selection is made by the doctor based on the individual assessment.",
+        "Each product uses a different base material, which changes how it behaves and how long it takes to resorb.",
       items: [
         {
           eyebrow: "Poly-L-lactic acid · Galderma",
@@ -2305,7 +2132,7 @@ export const treatments: Treatment[] = [
 
     ctaMid: {
       heading: "Not sure whether you need a filler or a bio-stimulator?",
-      body: "Both are injectables, but one adds volume directly and the other supports your own gradual renewal. A doctor can tell you which your concern calls for.",
+      body: "A doctor can tell you which your concern calls for, or whether it needs neither.",
     },
 
     // T-09 — this page and the three product pages.
@@ -2321,7 +2148,7 @@ export const treatments: Treatment[] = [
       },
     ],
     bringToConsult:
-      "Please share your full medical history, any allergies, your medication list and any past injectable or surgical treatments at consultation so the doctor can determine whether the treatment is appropriate for you.",
+      "Bring your medical history, allergies, medication list and every past injectable, implant or surgery in the area.",
 
     // T-10 — step 1 states the first visit is not a treatment.
     sessionSteps: [
@@ -2335,17 +2162,17 @@ export const treatments: Treatment[] = [
       },
       {
         title: "The injections",
-        body: "The doctor administers the injections into the assessed areas. The injecting itself usually takes a relatively short time: most of the appointment is assessment, preparation and aftercare.",
+        body: "The doctor injects the assessed areas. The injecting is quick; most of the appointment is assessment and preparation.",
       },
       {
         title: "Afterwards",
-        body: "The doctor may massage the treated area and will explain aftercare. A common approach is a short course of sessions spaced several weeks apart, with the specifics determined at consultation.",
+        body: "The doctor may massage the treated area and explains aftercare, including any massage to do at home.",
       },
     ],
 
     // T-11 — injection site, the first days, review.
     afterSession: {
-      intro: "Downtime is generally minimal, though this varies between individuals.",
+      intro: "Downtime is generally minimal.",
       bands: [
         {
           title: "At the injection sites",
@@ -2361,13 +2188,13 @@ export const treatments: Treatment[] = [
         },
       ],
       aftercare:
-        "The doctor will provide aftercare guidance specific to your treatment. Follow any instructions given, and contact the clinic if you have concerns.",
+        "Follow the massage and aftercare instructions you are given for your product.",
     },
 
     // T-12
     risks: {
       intro:
-        "As with any injectable treatment, bio-stimulators carry potential risks and side effects, which the doctor explains before any treatment proceeds.",
+        "The doctor goes through these before anything is injected.",
       common: "Temporary redness, swelling, bruising or tenderness at the injection sites.",
       lessCommon:
         "Delayed-onset lumps or nodules have been reported with collagen-stimulating products, sometimes months after treatment, and rare but serious vascular complications are recognised for facial injectables in general.",
@@ -2377,7 +2204,7 @@ export const treatments: Treatment[] = [
         "It is not permanent. The material is resorbed, and your own tissue continues to age.",
       ],
       disclose:
-        "Tell your doctor about any allergy, keloid or hypertrophic scarring, bleeding disorder or blood-thinning medication, autoimmune condition, and any previous injectable, implant or surgery in the area.",
+        "Raise any delayed lump, swelling or skin change with the clinic straight away, even months after treatment.",
     },
 
     // T-13 — factors only, no figures (settled 2026-09-20).
@@ -2402,33 +2229,33 @@ export const treatments: Treatment[] = [
         heading: "What is a bio-stimulator?",
         body: [
           "A bio-stimulator is a type of injectable treatment given by a doctor that is intended to support the skin's own collagen framework, rather than to add immediate volume the way a conventional dermal filler does.",
-          "This distinction matters. Some injectables sit within the tissue to provide structural fill; bio-stimulators are formulated to work more gradually, with the aim of prompting the skin's natural renewal processes over a period of weeks. Which approach is appropriate depends on the individual, and this is something a doctor assesses during consultation.",
+          "A filler provides structural fill on the day. A bio-stimulator is formulated to work gradually, prompting the skin's own renewal over weeks to months, and unlike a hyaluronic acid filler it cannot be dissolved.",
         ],
       },
       {
         heading: "How does a bio-stimulator work with your own collagen?",
         body: [
           "Bio-stimulators are delivered by injection into targeted layers of the skin. The formulation acts as a scaffold within the tissue, and the body is intended to respond by gradually renewing its own supporting structures around it.",
-          "Because the process is gradual, bio-stimulators are typically approached as a course of sessions rather than a single treatment. How an individual responds, and how many sessions may be considered, varies between people and is assessed by the doctor.",
+          "Because the response builds gradually and varies between people, review appointments are how change is judged.",
         ],
       },
     ],
     faqs: [
       {
         q: "Is a bio-stimulator the same as a dermal filler?",
-        a: "Not exactly. Both are injectables, but a conventional dermal filler is generally used to add volume directly, whereas a bio-stimulator is intended to support the skin's own gradual structural renewal. Which is appropriate for you is assessed by the doctor at consultation.",
+        a: "No. A dermal filler adds volume directly and, if hyaluronic acid, can be dissolved. A bio-stimulator prompts your own collagen gradually and cannot be dissolved.",
       },
       {
         q: "Are bio-stimulator treatments suitable for sensitive skin?",
-        a: "They may be suitable for some people with sensitive skin, but this cannot be assumed. The doctor assesses your skin condition and medical history at consultation to determine whether the treatment is appropriate for you.",
+        a: "Sometimes, but it cannot be assumed. Active inflammation, keloid scarring and autoimmune conditions are the factors the doctor checks first.",
       },
       {
         q: "Is there any downtime?",
-        a: "Downtime is generally minimal. Mild swelling, redness or tenderness may occur at the injection sites and usually settles within a few days, though this varies between individuals.",
+        a: "Usually minimal: mild swelling, redness or tenderness at the injection sites that settles within a few days. Bruising can take longer.",
       },
       {
         q: "How many sessions will I need?",
-        a: "Bio-stimulators are typically approached as a short course of sessions rather than a single treatment, and some people consider periodic maintenance afterwards. The number and spacing vary between individuals and are determined by the doctor at consultation.",
+        a: "Usually a short course spaced several weeks apart, sometimes with periodic maintenance afterwards. The number depends on the product and the area.",
       },
     ],
   },
@@ -2437,33 +2264,23 @@ export const treatments: Treatment[] = [
     durationDowntime: "Consult required · Recovery varies",
     name: "Exosome Therapy",
     category: "Regenerative",
-    image: "https://cdn.kaiteki.my/treatments/exosome-therapy/hero.jpg",
+    image: "https://cdn.kaiteki.my/treatments/exosome-therapy/hero-v2.jpg",
+    imageAlt: "A doctor injects along a patient's scalp hairline while an assistant steadies the area",
+    // procedure-01 is the hero now, so the gallery starts at -02.
     procedureImages: [
-      { src: "https://cdn.kaiteki.my/treatments/exosome-therapy/procedure-01.jpg", caption: "A doctor works along the scalp hairline while an assistant steadies the area." },
       { src: "https://cdn.kaiteki.my/treatments/exosome-therapy/procedure-02.jpg", caption: "A doctor moves a handheld device over the patient's scalp as an assistant helps." },
       { src: "https://cdn.kaiteki.my/treatments/exosome-therapy/procedure-03.jpg", caption: "A handheld device is applied to the scalp during a session." },
     ],
     summary:
       "A regenerative approach used alongside other treatments for skin and scalp concerns.",
     leadAnswer:
-      "Exosome therapy is a regenerative approach sometimes used alongside other treatments for skin and scalp concerns. The evidence base continues to develop; a consultation is required to assess whether it is appropriate for you.",
+      "Exosome therapy applies preparations of exosomes, tiny cell-derived vesicles that carry signalling molecules, to the skin or scalp. At Kaiteki it is usually used alongside another procedure such as microneedling, a laser or PRP, not on its own. The evidence base is still developing, so a doctor assesses whether it suits your plan.",
     related: ["skin-booster"],
     reviewedBy: "dr-william-yap",
     lastReviewed: "2026-06-05",
     seoTitle: "Exosome Therapy Malaysia | Regenerative Treatment | Kaiteki",
     seoDescription:
       "Exosome therapy in Malaysia, a regenerative approach for skin and scalp concerns. Book a free consultation with a Kaiteki doctor to assess suitability.",
-    // The caption names PRP rather than exosomes, because that is what the
-    // photograph shows. The page says exosome therapy is often paired with a
-    // PRP procedure, so the image belongs here — but captioning it as exosomes
-    // would be labelling one treatment with another's picture.
-    figures: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/exosome-therapy/image-prp.jpg",
-        caption:
-          "A PRP preparation drawn up at the couch — one of the procedures exosome therapy is combined with.",
-      },
-    ],
     // docs/15 item 2.3 (2026-09-28): the v2 block set, applied under docs/16 R1.
     // Two prose sections kept; the rest became typed blocks and were deleted.
     // Block copy is restructured from reviewed text only: this page and the
@@ -2492,11 +2309,11 @@ export const treatments: Treatment[] = [
       },
     ],
     routesNote:
-      "Exosome therapy is used alongside other treatments, not instead of them. The evidence base is still developing, so a doctor will be explicit at consultation about what is established and what is not before suggesting it to anyone.",
+      "Exosome therapy is used alongside other treatments, not instead of them.",
 
     ctaMid: {
       heading: "Wondering whether exosome therapy adds anything to your plan?",
-      body: "It is an adjunct, so whether it belongs in your plan depends on what it would accompany. A doctor will explain what the current evidence does and does not support.",
+      body: "It is an adjunct, so whether it belongs in your plan depends on what it would accompany.",
     },
 
     // T-09
@@ -2509,7 +2326,7 @@ export const treatments: Treatment[] = [
       },
     ],
     bringToConsult:
-      "Please share your full medical, skincare and hair history at consultation so the doctor can advise you safely. Because this is an emerging treatment, your doctor will also discuss what is and is not known before you decide.",
+      "Bring your full medical, skincare and hair history, including any skin or scalp condition and medication.",
 
     // T-10 — step 1 states the first visit is not a treatment.
     sessionSteps: [
@@ -2519,7 +2336,7 @@ export const treatments: Treatment[] = [
       },
       {
         title: "The accompanying procedure",
-        body: "Exosome therapy is often combined with another treatment, for example microneedling, a laser, or a PRP (platelet-rich plasma) procedure, so the session is planned around that combination. Because exosomes are small, they are commonly applied after a procedure that briefly opens channels in the skin.",
+        body: "The session is built around the procedure exosome therapy accompanies: microneedling, a laser, or PRP (platelet-rich plasma).",
       },
       {
         title: "Application",
@@ -2527,26 +2344,22 @@ export const treatments: Treatment[] = [
       },
       {
         title: "Afterwards",
-        body: "You are given aftercare guidance specific to your treatment. The number of sessions is individual: a short course spaced a few weeks apart is common for regenerative treatments, but your doctor will outline a plan suited to you rather than a fixed package.",
+        body: "You are given aftercare for the combined procedure. A short course spaced a few weeks apart is common, planned for you rather than sold as a package.",
       },
     ],
 
     // T-11 — RG archetype: same day, the first week, cadence.
     afterSession: {
       intro:
-        "Downtime depends largely on any procedure exosome therapy is combined with, and varies between individuals.",
+        "Downtime is set mostly by the procedure exosome therapy is combined with.",
       bands: [
         {
-          title: "The same day",
-          body: "When paired with microneedling or a laser, temporary redness, mild swelling or sensitivity can occur.",
-        },
-        {
-          title: "The first week",
-          body: "These typically settle over the following days.",
+          title: "The first few days",
+          body: "When paired with microneedling or a laser, temporary redness, mild swelling or sensitivity can occur, and typically settles over the following days.",
         },
         {
           title: "Across a course",
-          body: "Any change tends to develop gradually over the weeks after treatment rather than immediately, and the extent varies between individuals.",
+          body: "Any change develops gradually across the course, not on the day.",
         },
       ],
       aftercare:
@@ -2556,23 +2369,23 @@ export const treatments: Treatment[] = [
     // T-12
     risks: {
       intro:
-        "As with any medical procedure, exosome therapy carries risks, which are explained during consultation.",
+        "The doctor explains these, and those of the procedure it accompanies, before you decide.",
       common: "Redness, swelling, sensitivity or irritation at the treated area.",
       lessCommon:
         "Any procedure it is combined with, such as microneedling, a laser or PRP, carries its own considerations, which are explained alongside it.",
       cannotDo: [
-        "It is not a standalone acne treatment. It is offered as an adjunct, applied after energy-based treatment to support skin recovery.",
+        "It is not a standalone acne treatment, only an adjunct after energy-based treatment.",
         "It is not a treatment for hair loss in its own right, and it is not a substitute for finding the cause.",
-        "It is not an established treatment in the way the procedures it accompanies are. The evidence base continues to develop, and your doctor will discuss its current limits so you can make an informed decision.",
+        "It is not established in the way the procedures it accompanies are. The evidence base is still developing.",
       ],
       disclose:
-        "Tell your doctor if you are or may be pregnant or breastfeeding, and share your full medical, skincare and hair history, including any skin or scalp condition and any medication.",
+        "Tell your doctor if you are or may be pregnant or breastfeeding.",
     },
 
     // T-13 — factors only, no figures (settled 2026-09-20).
     costFactors: {
       intro:
-        "Kaiteki does not quote prices online. Exosome therapy is almost always planned as part of a combination rather than on its own, so the figure only means anything once that combination is decided. What moves it:",
+        "Kaiteki does not quote prices online: exosome therapy is priced as part of a combination, so the cost only exists once that is decided. What moves it:",
       factors: [
         "The concern being addressed.",
         "The area treated, skin or scalp.",
@@ -2591,33 +2404,33 @@ export const treatments: Treatment[] = [
         heading: "What is exosome therapy?",
         body: [
           "Exosomes are tiny cell-derived vesicles that carry signalling molecules such as proteins, lipids and RNA. In the body they act as messengers between cells, and this signalling role is why they are being explored in regenerative aesthetics.",
-          "Exosome therapy applies preparations of these vesicles to the skin or scalp, usually as part of a wider treatment plan rather than on its own. It is an emerging area, and the evidence base continues to develop, so a doctor assesses whether it is appropriate for you during consultation.",
+          "Exosome therapy applies preparations of these vesicles to the skin or scalp, usually as part of a wider treatment plan rather than on its own. It is an emerging area of aesthetic medicine.",
         ],
       },
       {
         heading: "Why is exosome therapy applied after another procedure?",
         body: [
           "The aim of exosome therapy is to support the skin's or scalp's own repair and renewal processes by delivering exosome-based signalling molecules to the treated area. Because exosomes are small, they are commonly applied after a procedure that briefly opens channels in the skin, such as microneedling or certain lasers.",
-          "How an individual responds varies, and any change tends to develop gradually rather than immediately. Your doctor will explain what is realistic for your skin or scalp and how exosome therapy fits your overall plan.",
+          "That is why its role, and its downtime, depend on the procedure it follows.",
         ],
       },
     ],
     faqs: [
       {
         q: "Is exosome therapy safe?",
-        a: "Exosome therapy is a medical procedure and, like any procedure, carries risks that are explained during consultation. It is an emerging treatment whose evidence base continues to develop, so a doctor will discuss what is currently known, assess your history and confirm whether it is appropriate for you before proceeding.",
+        a: "Common effects are temporary redness, swelling, sensitivity or irritation, and the accompanying procedure carries its own risks. It is an emerging treatment with a developing evidence base, so the doctor sets out what is and is not known before you decide.",
       },
       {
         q: "Can exosome therapy be combined with other treatments?",
-        a: "It is often used alongside other treatments, such as microneedling, certain lasers or PRP, as part of a wider plan. Whether combining is appropriate for you depends on your concern and history, which your doctor assesses at consultation.",
+        a: "Yes, and it usually is: it is commonly applied after microneedling or certain lasers, which briefly open channels in the skin, or alongside PRP.",
       },
       {
         q: "Who is a suitable candidate for exosome therapy?",
-        a: "Suitability is individual and determined at consultation. People considering it for skin quality, signs of ageing or scalp and hair concerns may be assessed, but it is not appropriate for everyone. Your doctor will review your medical, skincare and hair history before advising.",
+        a: "People already planning microneedling, a laser or PRP for skin recovery or scalp concerns may be assessed for it. It is deferred in pregnancy and breastfeeding, and certain skin or scalp conditions can rule it out.",
       },
       {
         q: "When might I notice a change?",
-        a: "Any change tends to develop gradually over the weeks after treatment rather than immediately, and the extent varies between individuals. As this is an emerging area, your doctor will explain what is realistic for you and what the current evidence does and does not support.",
+        a: "Any change develops gradually over the weeks after treatment, not immediately, and the extent varies between people.",
       },
     ],
   },
@@ -2626,10 +2439,11 @@ export const treatments: Treatment[] = [
     durationDowntime: "Consult required · Recovery varies",
     name: "Double Eyelid",
     category: "Eyes",
-    image: "https://cdn.kaiteki.my/treatments/double-eyelid/hero.jpg",
+    image: "https://cdn.kaiteki.my/treatments/double-eyelid/hero-v2.jpg",
+    imageAlt: "Illustrative photograph: a woman with her hands framing her face, looking at the camera",
     summary: "A procedure to create or refine an upper-eyelid crease, assessed individually.",
     leadAnswer:
-      "Double-eyelid treatment creates or refines an upper-eyelid crease and is assessed individually within the clinic's scope of practice. Eyelid anatomy decides which method applies, and whether either of them does, so it is examined in person before anything is arranged.",
+      "Double-eyelid treatment is a surgical procedure that creates or refines an upper-eyelid crease, using either a suture (embedding) method or an incisional method. Eyelid anatomy decides which method applies, and whether either does, so the eyelid is examined in person before anything is arranged.",
     related: [],
     reviewedBy: "dr-lim-xiao-chien",
     lastReviewed: "2026-06-01",
@@ -2652,7 +2466,7 @@ export const treatments: Treatment[] = [
       {
         label: "The procedure begins",
         src: "https://cdn.kaiteki.my/treatments/double-eyelid/step-3-start-process.png",
-        body: "The doctor works along the marked line, using the suture or incisional method agreed at your consultation.",
+        body: "The doctor works along the marked line using the suture or incisional method agreed at your consultation, addressing excess fat if needed.",
       },
       {
         label: "Suturing",
@@ -2669,32 +2483,26 @@ export const treatments: Treatment[] = [
       {
         heading: "What is double-eyelid treatment?",
         body: [
-          "A double eyelid refers to the crease that forms across the upper eyelid. Many people of Asian descent naturally have a single eyelid without this crease, and some wish to create or refine one. Double-eyelid treatment is a minor procedure that aims to form or adjust this upper-eyelid crease.",
-          "It is a surgical procedure and is assessed individually within the clinic's scope of practice. Whether it suits you depends on your eyelid anatomy, skin and medical history, which a doctor evaluates during consultation.",
+          "A double eyelid is the crease across the upper eyelid. Many people of Asian descent naturally have a single eyelid without one. Double-eyelid treatment is a surgical procedure that forms or adjusts that crease.",
+          "Whether it suits you depends on your eyelid anatomy, skin and medical history, examined in person.",
+        ],
+        list: [
+          "Creating an upper-eyelid crease where there is a single eyelid",
+          "Refining a faint or uneven crease",
+          "Reducing the effort of achieving a crease with eye make-up",
         ],
       },
       {
         heading: "Methods: suture and incisional",
         body: [
           "There are two broad approaches. The suture (embedding) method uses small access points through which fine sutures are placed to form the crease, without a continuous incision. The incisional method uses an incision along the intended crease line and is sometimes considered where there is excess skin or fat, or where a suture approach is less suitable.",
-          "The two methods differ in recovery and how long the crease tends to hold. Which approach is appropriate, if any, is decided by the treating doctor based on your eyelids and goals, and discussed at consultation.",
+          "The suture method generally involves shorter swelling; the incisional method tends to hold longer. Which applies, if either, depends on your eyelids.",
         ],
       },
       {
-        heading: "What it may help with",
+        heading: "Who should not have a double-eyelid procedure?",
         body: [
-          "Double-eyelid treatment is commonly considered by people who wish to change the appearance of the upper eyelid. Eyelid anatomy varies a great deal between individuals, and a doctor examines the lid, its skin and its fat before saying whether a suture approach, an incision approach, or neither, fits.",
-        ],
-        list: [
-          "Creating an upper-eyelid crease where there is a single eyelid",
-          "Refining or defining an existing but faint or uneven crease",
-          "Reducing the effort of achieving a crease with eye make-up",
-        ],
-      },
-      {
-        heading: "Suitability & who should avoid it",
-        body: [
-          "Suitability is assessed individually. This is a procedure around the eye, so certain conditions make it unsuitable or higher-risk, and the doctor will explain this at consultation. It may not be appropriate for people with the following:",
+          "Because the procedure is around the eye, these conditions can make it unsuitable or higher-risk:",
         ],
         list: [
           "Chronic or dry-eye conditions, which upper-eyelid procedures can aggravate",
@@ -2707,48 +2515,40 @@ export const treatments: Treatment[] = [
         ],
       },
       {
-        heading: "The procedure at Kaiteki",
+        heading: "How long is recovery after double-eyelid surgery?",
         body: [
-          "A visit begins with a doctor consultation and assessment of your eyelids. If the procedure is appropriate, the doctor first designs and marks the intended crease height and shape on the eyelid.",
-          "Local anaesthesia is used for comfort. Depending on the method chosen, fine sutures are embedded through small access points, or a small incision is made along the marked line; excess fat may be addressed if the doctor considers it necessary. The doctor will explain the specific steps planned for you and answer your questions beforehand.",
+          "Swelling and bruising of the eyelids are expected and settle over time, generally sooner with the suture method. Many people return to everyday activities within around ten to fourteen days. The eyelids continue to settle over the following weeks to months, so the early crease is not the final one.",
         ],
       },
       {
-        heading: "Recovery & aftercare",
+        heading: "What are the risks of a double-eyelid procedure?",
         body: [
-          "Some swelling and bruising of the eyelids is expected afterwards and settles over time. Recovery varies with the method and the individual: the suture approach generally involves a shorter period of swelling than the incisional approach.",
-          "Many people return to everyday activities within around ten to fourteen days, though this varies. The eyelids' appearance continues to settle over the following weeks to months. Your doctor will give aftercare guidance specific to you.",
+          "Temporary effects include swelling, bruising, tightness and asymmetry while healing. How long the crease holds depends on the method and how you heal, and no duration can be promised. The doctor goes through the specific risks around the eye before you consent.",
         ],
       },
       {
-        heading: "Risks & side effects",
+        heading: "What affects the cost of double-eyelid surgery?",
         body: [
-          "As with any medical procedure, double-eyelid treatment carries risks, which are explained during consultation. Temporary effects can include swelling, bruising, tightness or asymmetry while healing. Because the procedure is around the eye, the doctor will discuss the specific risks and contraindications with you before proceeding.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The approach, and the overall cost, depend on your eyelid anatomy, the method chosen and your individual assessment. A suture method and an incision method are different procedures with different costs, and which one applies is not something that can be settled before the lid is examined. Message us on WhatsApp to book that examination.",
+          "Cost depends mainly on the method. Suture and incisional are different procedures with different costs, and which one applies cannot be settled before the eyelid is examined.",
         ],
       },
     ],
     faqs: [
       {
         q: "How long does recovery take after double-eyelid treatment?",
-        a: "It varies between individuals and by method. Swelling and bruising are expected early on, and many people return to everyday activities within around ten to fourteen days. The eyelids continue to settle over the following weeks to months, and the crease you see in the first fortnight is not the crease you keep. Your surgeon will tell you what the recovery looks like for the method used.",
+        a: "Many people return to everyday activities within around ten to fourteen days, usually sooner after the suture method. The eyelids keep settling for weeks to months, so the crease in the first fortnight is not the one you keep.",
       },
       {
         q: "How long do the results last?",
-        a: "This varies between individuals and depends on the method used and how your eyelids heal. The incisional approach tends to hold longer than the suture approach, but no specific duration can be promised. Your doctor will discuss realistic expectations at consultation.",
+        a: "It depends on the method and how your eyelids heal. The incisional approach tends to hold longer than the suture approach, but no specific duration can be promised.",
       },
       {
         q: "Am I suitable for double-eyelid treatment?",
-        a: "Suitability is assessed individually. It may not be appropriate for people with conditions such as dry-eye disease, uncontrolled high blood pressure, circulation disorders, thyroid disease, diabetes, glaucoma or heart disease. Please share your full medical history so the doctor can advise safely.",
+        a: "It depends on your eyelid anatomy and health. Dry-eye disease, uncontrolled high blood pressure, circulation disorders, thyroid disease, diabetes, glaucoma and heart disease can rule it out, so bring your full medical history.",
       },
       {
         q: "Does the procedure hurt?",
-        a: "Local anaesthesia is used for comfort during the procedure. Some tightness, swelling or tenderness is common while healing and typically settles. Your doctor will discuss comfort and aftercare with you at consultation.",
+        a: "The eyelid is numbed with local anaesthetic, and you stay awake. Tightness, swelling or tenderness while healing is common and typically settles.",
       },
     ],
   },
@@ -2769,7 +2569,7 @@ export const treatments: Treatment[] = [
     summary:
       "Laser and light-based devices used for visible blood vessels, redness and pigment concerns.",
     leadAnswer:
-      "Vascular / Pigment Laser refers to devices used to address visible blood vessels, facial redness and pigment concerns using targeted wavelengths of light. At Kaiteki this includes Pro Yellow and M22 IPL, alongside the dedicated DermaV platform. Which of the three a doctor reaches for turns on whether the target is a vessel or a pigment, and how deep it sits — a distinction made at examination.",
+      "Vascular / Pigment Laser covers the light-based devices Kaiteki uses on visible blood vessels, facial redness and pigment: Pro Yellow, M22 IPL and the dedicated DermaV platform. Which one a doctor uses depends on whether the target is a vessel or a pigment, and how deep it sits, which is decided at examination.",
     related: ["pico-laser"],
     reviewedBy: "dr-jeremy-low",
     lastReviewed: "2026-07-13",
@@ -2778,98 +2578,64 @@ export const treatments: Treatment[] = [
       "Laser treatment in Malaysia for pigmentation, redness and visible vessels using M22 IPL, Pro Yellow and DermaV. Book a free consultation at Kaiteki.",
     // `vascular-lesions.png` stays out: it is a magnified side-by-side of a
     // treated and an untreated leg — a before/after in all but name, and the
-    // treatment revamp ships none (docs/13 §3.3, ADR-0001). The Pro Yellow
-    // session photograph below was mis-filed under pico-laser by the first
-    // media pass; Pro Yellow is the QuadroStar 577nm, which belongs here.
-    figures: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/vascular-pigment-laser/image-pro-yellow-laser.jpg",
-        caption:
-          "A Pro Yellow pass across the cheek, with the patient's eyes shielded for the wavelength.",
-      },
-    ],
-    manufacturerImages: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/vascular-pigment-laser/logo-quadrostar.png",
-        alt: "QuadroStar manufacturer logo",
-        caption: "QuadroStar — the manufacturer's mark for the vascular and pigment laser platform.",
-      },
-    ],
+    // treatment revamp ships none (docs/13 §3.3, ADR-0001).
     sections: [
       {
         heading: "What is Vascular / Pigment Laser treatment?",
         body: [
-          "Vascular / Pigment Laser is a category of light-based devices selected for their ability to target either visible blood vessels or pigment in the skin, depending on the wavelength used. It is not a single machine but a group of technologies matched to the concern being addressed.",
-          "At Kaiteki this category includes Pro Yellow (a Quadrostar 577nm yellow-light laser) and M22 IPL (intense pulsed light), used alongside the dedicated DermaV vascular-pigment platform. Whether any of these suits your skin depends on your concern, skin type and history, which a doctor assesses during consultation.",
+          "Vascular / Pigment Laser is a group of light-based devices, not a single machine. Each wavelength is chosen to target either visible blood vessels or pigment in the skin. The group is commonly considered for facial redness and thread veins, sun spots and other pigment marks, and rosacea-associated flushing as part of a wider plan.",
+          "At Kaiteki the group is Pro Yellow (a QuadroStar 577nm yellow-light laser), M22 IPL (intense pulsed light) and the dedicated DermaV vascular-pigment platform.",
         ],
       },
       {
-        heading: "How it works",
+        heading: "How does one wavelength target a vessel and another a pigment?",
         body: [
           "Pro Yellow delivers 577nm yellow-light energy, a wavelength associated with absorption by blood vessels, and is generally considered for vascular concerns such as redness and visible vessels. M22 IPL delivers broad-spectrum light that can be filtered for either vascular or pigment targets, offering flexibility across different skin concerns in one platform.",
-          "The treating doctor selects the device, wavelength and settings appropriate to your concern and skin tone. Energy is absorbed by the target (vessel or pigment particle), which may gradually reduce its visibility or prompt the body to clear it over time. Results develop gradually and vary between individuals.",
+          "The doctor selects the device, wavelength and settings for your concern and skin tone. The target, a vessel or a pigment particle, absorbs the energy, which may gradually reduce its visibility or prompt the body to clear it over time.",
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "Who should not have vascular or pigment laser?",
         body: [
-          "This category is commonly considered for the following concerns. Which of the three devices fits, if any of them does, turns on whether the target is a vessel or a pigment and how deep it sits — a distinction a doctor makes at examination, not one you can make from a mirror.",
-        ],
-        list: [
-          "Facial redness and visible thread veins",
-          "Sun spots and other pigment-related marks",
-          "Rosacea-associated flushing (as part of a wider plan)",
-          "General skin-tone refinement alongside other treatments",
+          "Treatment may not be appropriate during pregnancy, with certain skin conditions or medications, or on recently tanned skin. Suitability also depends on which of the three devices is being considered, so bring your full medical and skincare history.",
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "What happens at a session, and how long does the redness last?",
         body: [
-          "Suitability is assessed individually and depends on the specific device being considered. These treatments may not be appropriate during pregnancy, with certain skin conditions or medications, or on recently tanned skin. Please share your full medical and skincare history at consultation so the doctor can advise safely and select the appropriate device, if any.",
+          "The doctor first works out whether the target is a vessel, a pigment or both, because that decides the device and settings. A patch or test area may be done before treatment goes ahead.",
+          "Downtime is usually limited. Temporary redness or mild sensitivity typically settles. Use sun protection and gentle skincare afterwards.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What are the risks of vascular and pigment laser?",
         body: [
-          "The visit starts with the doctor working out what is actually being looked at — a vessel, a pigment, or both — because that determines everything after it. If a vascular or pigment laser is appropriate, the doctor selects the device and settings suited to your concern, and a patch or test area may be considered before proceeding.",
-          "A course of several sessions spaced a few weeks apart is common, but the plan is individual. Your doctor will explain what to expect for your skin.",
+          "Temporary effects can include redness, swelling or changes in pigmentation. Treating a vessel with a wavelength meant for pigment, or the reverse, is the mistake that causes the rest, and it is what the assessment and any test patch exist to prevent.",
         ],
       },
       {
-        heading: "Downtime & aftercare",
+        heading: "Why does the cost depend on which device is used?",
         body: [
-          "Downtime is usually limited but varies. Temporary redness or mild sensitivity can occur and typically settles. Sun protection and gentle skincare are advised afterwards; your doctor will give aftercare guidance specific to you.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
-        body: [
-          "As with any medical procedure, these treatments carry risks, which are explained during consultation. Temporary effects can include redness, swelling or changes in pigmentation. Treating a vessel with a wavelength meant for pigment, or the reverse, is the mistake that causes the rest — which is what the pre-treatment assessment and any test patch exist to prevent.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The number of sessions and overall cost depend on the device used, the concern being addressed and your individual response. Three platforms sit in this category and they are not priced alike, so the figure follows the doctor's choice of device rather than preceding it. Message us on WhatsApp to have your skin looked at first.",
+          "Sessions and cost depend on the device, the concern and how your skin responds. The three platforms are not priced alike, so the cost follows the doctor's choice of device rather than preceding it.",
         ],
       },
     ],
     faqs: [
       {
         q: "What is the difference between Pro Yellow and M22 IPL?",
-        a: "Pro Yellow delivers a specific 577nm yellow-light wavelength generally considered for vascular concerns, while M22 IPL delivers broad-spectrum light that can be filtered for either vascular or pigment targets. Which device suits your concern is decided by your doctor at consultation.",
+        a: "Pro Yellow delivers a single 577nm yellow-light wavelength, generally considered for vascular concerns. M22 IPL delivers broad-spectrum light that can be filtered for either vascular or pigment targets.",
       },
       {
         q: "How is this different from DermaV?",
-        a: "DermaV is a dedicated dual-wavelength vascular-pigment device offered at Kaiteki alongside Pro Yellow and M22 IPL within this category. All three address related concerns using different technologies; your doctor selects the one suited to your skin and concern.",
+        a: "DermaV is a dedicated dual-wavelength vascular-pigment device, used alongside Pro Yellow and M22 IPL. All three address related concerns with different technology, and the doctor selects one for your skin and concern.",
       },
       {
         q: "Is this suitable for darker Asian skin tones?",
-        a: "These devices are used across a range of skin tones, but suitability is individual. A doctor assesses your skin type and history first, as some concerns and skin types need particular care to reduce the risk of pigment changes.",
+        a: "These devices are used across a range of skin tones, but some skin types and concerns need particular care to reduce the risk of pigment change, so your skin type and history are assessed first.",
       },
       {
         q: "How many sessions will I need?",
-        a: "It varies. A course of several sessions spaced a few weeks apart is common, but the plan depends on your concern and how your skin responds. Vessels in particular can recur because the tendency behind them remains, so the doctor will be clear about whether you are looking at a course or an ongoing arrangement.",
+        a: "A course of several sessions spaced a few weeks apart is common. Vessels can recur because the tendency behind them remains, so the doctor will say whether you are looking at a course or an ongoing arrangement.",
       },
     ],
   },
@@ -2893,90 +2659,63 @@ export const treatments: Treatment[] = [
     seoTitle: "CO2 Resurfacing Laser Malaysia | Kaiteki",
     seoDescription:
       "Fractional CO2 resurfacing laser in Malaysia for skin texture, acne scarring and pores. Book a free consultation with a Kaiteki doctor to assess suitability.",
-    // `retinopeel.jpg` is held on two counts: it is an opaque packaging JPEG,
-    // which `manufacturerImages` renders as a white rectangle on page ground,
-    // and NeoStrata makes a peel kit rather than the laser this page describes.
-    figures: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/resurfacing-laser/image-chemical-peel.jpg",
-        caption: "Product applied to the face in sections, with a handpiece held above the treated area.",
-      },
-    ],
     sections: [
       {
         heading: "What is Resurfacing Laser treatment?",
         body: [
           "Resurfacing Laser refers to ablative and fractional laser technology (at Kaiteki, a fractional CO2 laser) that works by creating a controlled pattern of micro-injury columns across the treated skin, leaving surrounding tissue intact to support recovery.",
-          "This differs from non-ablative lasers such as Pico laser, which do not remove tissue at the surface. Whether fractional CO2 resurfacing suits your skin depends on your concern, skin type and history, which a doctor assesses during consultation.",
+          "This differs from non-ablative lasers such as Pico laser, which do not remove tissue at the surface. It is commonly considered for acne scarring and uneven texture, enlarged pores, and fine lines or other textural irregularity.",
         ],
       },
       {
-        heading: "How it works",
+        heading: "Why does a fractional CO2 laser heal faster than full resurfacing?",
         body: [
           "The fractional CO2 laser delivers energy in a grid-like pattern of microscopic columns, each surrounded by untreated skin. This fractional approach is intended to prompt a controlled skin-renewal and collagen-remodelling response while allowing faster recovery than treating the entire surface at once.",
-          "Settings, depth and density are selected by the treating doctor for your skin type and concern. Results develop gradually over the following weeks and vary between individuals.",
+          "The doctor sets depth and density for your skin type and concern.",
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "Who should not have CO2 resurfacing?",
         body: [
-          "Resurfacing Laser is commonly considered for the following concerns. It asks more of both recovery and skin type than anything else in this category, so a doctor is correspondingly careful about who it is offered to, and will say when it is not the right tool.",
-        ],
-        list: [
-          "Acne scarring and uneven skin texture",
-          "Enlarged or visible pores",
-          "Fine lines and areas of textural irregularity",
-          "Overall skin-tone and texture refinement as part of a plan",
+          "Fractional CO2 may not be appropriate during pregnancy, with active infection or certain skin conditions, a history of keloid scarring, or on recently tanned skin. Raise any history of cold sores, or of scarring badly, without being asked: both change whether, and how, it is done.",
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "What does the week after CO2 resurfacing look like?",
         body: [
-          "Suitability is assessed individually. Fractional CO2 resurfacing may not be appropriate during pregnancy, with certain skin conditions, active infection or a history of keloid scarring, or on recently tanned skin. A history of cold sores and any tendency to scar badly are the two things worth raising unprompted at consultation — both change whether, and how, this is done.",
+          "The doctor first assesses your skin type and scarring history, which carry more weight here than on any other laser at the clinic. Topical numbing is applied, then the laser is passed across the area at settings chosen for your skin.",
+          "Expect more downtime than with non-ablative lasers. Redness, swelling and flaking or peeling over several days to about a week are common and typically settle. Diligent sun protection and gentle skincare follow.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "Can CO2 resurfacing scar or darken the skin?",
         body: [
-          "The visit begins with the doctor assessing your skin type and scarring history, both of which carry more weight here than on any other laser at the clinic. Topical numbing is usually applied beforehand to help with comfort. If resurfacing is appropriate, the laser is passed across the treatment area at settings chosen for your skin.",
-          "The number and spacing of sessions is individual and depends on the concern and depth of treatment. Your doctor will explain what to expect for your skin.",
+          "Temporary effects include redness, swelling, peeling and changes in pigmentation. Because the laser is ablative, the skin is genuinely wounded and then heals, so infection and scarring are real if uncommon possibilities. That is why aftercare here is instruction rather than advice.",
         ],
       },
       {
-        heading: "Downtime & aftercare",
+        heading: "Why is CO2 resurfacing priced at consultation?",
         body: [
-          "Downtime is generally more noticeable than with non-ablative lasers and varies with the settings used. Redness, swelling and skin flaking or peeling over several days to about a week are common and typically settle. Diligent sun protection and gentle skincare are advised afterwards; your doctor will give aftercare guidance specific to you.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
-        body: [
-          "As with any medical procedure, Resurfacing Laser carries risks, which are explained during consultation. Temporary effects can include redness, swelling, peeling and changes in pigmentation. Because this is an ablative laser, the skin is genuinely wounded and then heals, so infection and scarring are real if uncommon possibilities — which is why aftercare here is instruction rather than advice.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The number of sessions and overall cost depend on the concern being addressed, the treatment depth and your individual response. Depth and density are set for your skin type, and they are what the cost tracks — which is why it is confirmed at consultation rather than published as a rate. Message us on WhatsApp to arrange one.",
+          "Sessions and cost depend on the concern, the treatment depth and how your skin responds. Depth and density are set for your skin type, and they are what the cost tracks, so it is confirmed at consultation rather than published as a rate.",
         ],
       },
     ],
     faqs: [
       {
         q: "Is Resurfacing Laser the same as Pico laser?",
-        a: "No. Resurfacing Laser uses a fractional CO2 laser that creates controlled micro-injury columns in the skin, while Pico laser is non-ablative and does not remove tissue at the surface. Your doctor can explain which is more appropriate for your concern.",
+        a: "No. Resurfacing Laser is a fractional CO2 laser that creates controlled micro-injury columns in the skin. Pico laser is non-ablative and removes no tissue at the surface.",
       },
       {
         q: "How much downtime should I expect?",
-        a: "Downtime is generally more noticeable than with non-ablative treatments. Redness, swelling and flaking over several days to about a week are common and typically settle, though this varies between individuals. Your doctor will explain what to expect for your settings.",
+        a: "More than with non-ablative lasers. Redness, swelling and flaking over several days to about a week are common and typically settle; how much depends on the settings used.",
       },
       {
         q: "Is it painful?",
-        a: "Topical numbing is usually applied beforehand to help with comfort. Many people describe a warm or prickling sensation during treatment. Comfort varies between individuals, and your doctor can discuss options beforehand.",
+        a: "Topical numbing is usually applied beforehand. Many people describe a warm or prickling sensation during treatment.",
       },
       {
         q: "How many sessions will I need?",
-        a: "It varies with the concern and treatment depth. Your doctor will outline a realistic plan and spacing between sessions at consultation, based on your skin and how it responds.",
+        a: "It depends on the concern and the treatment depth. The doctor sets the number and spacing of sessions once your skin has been assessed.",
       },
     ],
   },
@@ -3000,109 +2739,80 @@ export const treatments: Treatment[] = [
     seoTitle: "Onda Microwave Contouring Malaysia | Kaiteki",
     seoDescription:
       "Onda microwave contouring in Malaysia for localised fat, cellulite appearance and firmness. Book a free consultation with a Kaiteki doctor to check suitability.",
-    // The zone gallery (docs/13 §6) — 15 die-cut files, 11 subjects. The four
-    // `*-2` files are the same photographs cut to a circle instead of the
-    // scalloped shape, so shipping both would show one body area twice.
-    figures: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/microwave-contouring/image-onda-coolwave-therapy.png",
-        caption:
-          "The Onda handpiece being moved across the abdomen during a session, with the console beside the couch.",
-      },
-    ],
-    // Labels name the body area, not the concern. The source filenames are
-    // concern-shaped ("heavyjowl", "dullskin", "skinlaxity") and each photograph
-    // is simply that part of the body — a captioned grid of named defects reads
-    // as an indication list on an advertisement page (docs/02 §8).
+    // Text chips (the die-cut zone photographs were stock and some were
+    // mislabelled; dropped 2026-10-12). Labels name the body area, not the
+    // concern: a list of named defects reads as an indication list on an
+    // advertisement page (docs/02 §8).
     areas: [
-      { label: "Forehead and brow", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-skin-laxity.png" },
-      { label: "Cheeks", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-dull-skin.png" },
-      { label: "Nasolabial folds", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-nasolabial.png" },
-      { label: "Jowls", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-heavy-jowl.png" },
-      { label: "Jawline", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-sagging-jawline.png" },
-      { label: "Under the chin", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-double-chin.png" },
-      { label: "Upper arms", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-upper-arms.png" },
-      { label: "Back and bra line", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-bra-fat.png" },
-      { label: "Flanks and waist", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-love-handles.png" },
-      { label: "Thighs", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-thigh.png" },
-      { label: "Knees", src: "https://cdn.kaiteki.my/treatments/microwave-contouring/area-knees.png" },
+      "Forehead and brow",
+      "Cheeks",
+      "Nasolabial folds",
+      "Jowls",
+      "Jawline",
+      "Under the chin",
+      "Upper arms",
+      "Back and bra line",
+      "Flanks and waist",
+      "Thighs",
+      "Knees",
     ],
     sections: [
       {
         heading: "What is Microwave Contouring?",
         body: [
           "Microwave Contouring is a category of non-invasive body- and face-contouring technology that uses microwave-based energy to act on tissue beneath the skin's surface. At Kaiteki this is delivered using the Onda platform, which the manufacturer refers to as Coolwaves® technology.",
-          "It is used to address localised fat, the appearance of cellulite, and skin firmness. Whether it suits you depends on your concern, body area, skin and medical history, which a doctor assesses during consultation.",
+          "It is used on localised fat on areas such as the abdomen, flanks, thighs and arms, on the dimpled appearance of cellulite, and on skin firmness, including the face and jawline. It is not a weight-loss treatment: it treats localised areas, not overall body weight.",
         ],
       },
       {
-        heading: "How it works",
+        heading: "How can microwave energy reach fat without burning the skin?",
         body: [
           "Microwave energy is delivered beneath the skin's surface while built-in cooling helps keep the surface protected during treatment. The energy is intended to act on the targeted tissue, for example localised fat cells or the fibrous bands associated with cellulite, and may also prompt a gradual collagen-remodelling response supporting firmness.",
-          "Settings and applicator are selected by the treating doctor for the area and your skin. Results develop over time and vary between individuals.",
+          "The doctor selects the applicator and settings for the area and your skin.",
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "Who should not have Onda microwave contouring?",
         body: [
-          "Microwave Contouring is commonly considered for the concerns below. Which areas are worth treating — and whether any of them are — is settled by examining the area itself, because the same concern name covers very different tissue from one person to the next.",
-        ],
-        list: [
-          "Localised fat on areas such as the abdomen, flanks, thighs and arms",
-          "The dimpled appearance associated with cellulite",
-          "Skin firmness and tone over treated areas",
-          "Firmness concerns of the face and jawline as part of a plan",
+          "It may not be appropriate during pregnancy, with implants or medical devices in the treatment area, or with some skin or health conditions. Mention every device or implant at consultation.",
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "What does an Onda session feel like, and is there downtime?",
         body: [
-          "Suitability is assessed individually. Microwave Contouring is not a weight-loss treatment; it addresses localised areas rather than overall body weight. It may not be appropriate during pregnancy, with certain implants or medical devices in the treatment area, or with some skin or health conditions.",
-          "Please share your full medical history and any devices or implants at consultation so the doctor can advise safely.",
+          "After the area is examined, a handpiece is moved over it to deliver the energy while the surface is cooled. Most people describe a warming sensation.",
+          "Downtime is usually limited. Temporary warmth, redness or mild tenderness over the area typically settles, and most people return to usual activities.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What are the risks of microwave contouring?",
         body: [
-          "A typical visit begins with a doctor consultation and assessment of the area of concern. If Microwave Contouring is appropriate, a handpiece is moved over the treatment area to deliver the energy while the surface is cooled.",
-          "A course of several sessions spaced a few weeks apart is common, but the plan is individual, and how many areas you are treating changes it as much as how many sessions.",
+          "Temporary effects include redness, swelling, warmth or tenderness in the treated area. The energy is thermal, so the risk that matters is overheating one spot. It is managed by keeping the handpiece moving and by treating within what the doctor judges the tissue can take.",
         ],
       },
       {
-        heading: "Downtime & aftercare",
+        heading: "Why do face and body areas cost differently?",
         body: [
-          "Downtime is usually limited, though this varies between individuals. Temporary warmth, redness or mild tenderness over the treated area can occur and typically settles. Most people are able to return to usual activities, and your doctor will give aftercare guidance specific to you.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
-        body: [
-          "As with any medical procedure, Microwave Contouring carries risks, which are explained during consultation. Temporary effects can include redness, swelling, warmth or tenderness in the treated area. The energy is thermal, so the risk that matters is over-heating a spot; it is managed by keeping the handpiece moving and by treating within the doctor's assessment of what the tissue can take.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The number of sessions and overall cost depend on the area being treated, the concern being addressed and your individual response. A facial area and a body area take very different amounts of time on the handpiece, so cost follows the areas agreed at consultation. Message us on WhatsApp to arrange one.",
+          "Sessions and cost depend on the areas treated and how you respond. A facial area and a body area take very different amounts of time on the handpiece, so cost follows the areas agreed at consultation.",
         ],
       },
     ],
     faqs: [
       {
         q: "Is Microwave Contouring a weight-loss treatment?",
-        a: "No. It addresses localised areas of fat, cellulite appearance and skin firmness rather than overall body weight. It is not a substitute for weight management, and a doctor assesses at consultation whether it suits your goals.",
+        a: "No. It treats localised fat, cellulite appearance and skin firmness, not overall body weight, and it is not a substitute for weight management.",
       },
       {
         q: "What device is used at Kaiteki?",
-        a: "Kaiteki delivers Microwave Contouring using the Onda platform (Coolwaves® technology). Your doctor can explain how it is applied to your specific area of concern.",
+        a: "The Onda platform, which its manufacturer calls Coolwaves® technology.",
       },
       {
         q: "Is it painful, and is there downtime?",
-        a: "Comfort varies between individuals; built-in cooling is intended to keep the session comfortable, and most people describe a warming sensation. Downtime is usually limited, but any temporary effects are explained at consultation.",
+        a: "Built-in cooling protects the surface, and most people describe a warming sensation. Downtime is usually limited.",
       },
       {
         q: "How many sessions will I need?",
-        a: "It varies. A course of several sessions spaced a few weeks apart is common, but the plan depends on the area treated and how you respond. A body area generally takes more sessions than a facial one, simply because there is more of it.",
+        a: "A course of several sessions spaced a few weeks apart is common. A body area generally takes more sessions than a facial one, simply because there is more of it.",
       },
     ],
   },
@@ -3111,10 +2821,11 @@ export const treatments: Treatment[] = [
     durationDowntime: "20-30 min · No downtime",
     name: "Muscle Stimulation",
     category: "Body & Slimming",
-    image: "https://cdn.kaiteki.my/treatments/muscle-stimulation/hero.jpg",
+    image: "https://cdn.kaiteki.my/treatments/muscle-stimulation/hero-v2.jpg",
+    imageAlt: "The DEKA Schwarzy body-contouring device on a plain background",
     summary: "Electromagnetic muscle-stimulation technology used for body-toning concerns.",
     leadAnswer:
-      "Muscle Stimulation at Kaiteki uses the Schwarzy (Em-Fit) platform, which delivers electromagnetic energy intended to induce muscle contractions that can be difficult to achieve through voluntary exercise alone. It is considered for body-toning concerns as part of an individual plan. It acts on muscle rather than on fat or body weight, and a doctor will confirm that is actually what you are after before a block of sessions is planned.",
+      "Muscle Stimulation at Kaiteki uses the Schwarzy (Em-Fit) platform, which delivers electromagnetic energy to induce muscle contractions that are difficult to achieve through voluntary exercise alone. It is considered for body-toning concerns. It acts on muscle, not on fat or body weight, and a doctor confirms that is what you are after before sessions are planned.",
     related: ["fat-freezing", "microwave-contouring"],
     reviewedBy: "dr-joaan-kong",
     lastReviewed: "2026-07-13",
@@ -3127,88 +2838,57 @@ export const treatments: Treatment[] = [
         caption: "A Schwarzy applicator and its strap, positioned before the belt is fastened over the area.",
       },
     ],
-    manufacturerImages: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/muscle-stimulation/logo-schwazy.png",
-        alt: "Schwarzy manufacturer logo",
-        caption: "Schwarzy — the manufacturer's mark for the electromagnetic muscle-stimulation device.",
-      },
-    ],
     sections: [
       {
         heading: "What is Muscle Stimulation?",
         body: [
           "Muscle Stimulation is a non-invasive treatment category that uses electromagnetic energy to induce repeated muscle contractions in a targeted area. At Kaiteki this is delivered using the Schwarzy (Em-Fit) platform.",
-          "It is generally considered for body-toning concerns in areas such as the abdomen, thighs or buttocks, rather than for fat reduction or weight loss. Whether it suits you depends on your goals, body area and medical history, which a doctor assesses during consultation.",
+          "It is generally considered for muscle tone in areas such as the abdomen, thighs or buttocks, alongside a fitness routine rather than instead of one.",
         ],
       },
       {
-        heading: "How it works",
+        heading: "What is a supramaximal contraction?",
         body: [
           "The device delivers electromagnetic energy through an applicator placed over the target muscle group, inducing supramaximal contractions, a level of contraction that is difficult to achieve through voluntary exercise alone.",
-          "Repeated contractions during a session are intended to work the muscle in a concentrated way. Any change in muscle tone develops gradually over a course of sessions and varies between individuals; it is not a substitute for regular exercise.",
+          "Repeated contractions work the muscle in a concentrated way. Any change in tone develops gradually over a course of sessions.",
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "Who cannot have electromagnetic muscle stimulation?",
         body: [
-          "Muscle Stimulation is commonly considered for the following concerns. It acts on muscle, not on fat and not on body weight, and a doctor will say so plainly at consultation if what you are hoping for is something this treatment does not do.",
-        ],
-        list: [
-          "Muscle tone and definition in targeted areas such as the abdomen",
-          "Firmness of the thighs or buttocks as part of a wider plan",
-          "Support alongside a fitness routine, rather than as a replacement for it",
+          "Metal implants, pacemakers and copper IUDs in or near the treatment field rule it out, which is why the medical history is taken before the belt goes on. It may also not be appropriate during pregnancy or with some medical conditions affecting the treatment area.",
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "What does a Schwarzy session feel like, and what are the side effects?",
         body: [
-          "Suitability is assessed individually. Muscle Stimulation is not a weight-loss or fat-reduction treatment, and it is not a substitute for exercise. It may not be appropriate for people with certain implanted electronic devices, during pregnancy, or with some medical conditions affecting the treatment area.",
-          "Please share your full medical history at consultation so the doctor can advise safely.",
+          "After the area and your goals are assessed, the applicator is strapped over the target muscle group and the device runs a programme of contractions for a set period.",
+          "There is no set downtime. Soreness like that after exercise, mild redness or tenderness at the treated area can follow and typically settles within a few days.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "Why is muscle stimulation booked as a block?",
         body: [
-          "A typical visit begins with a doctor consultation and assessment of the area and your goals. If appropriate, the applicator is positioned over the target muscle group and the device delivers a programme of contractions for a set period.",
-          "A course of several sessions spaced across a few weeks is common, but the plan is individual, and it is usually written as a block rather than as visits booked one at a time.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
-          "There is generally no set downtime, though muscle soreness similar to that after exercise can occur following a session and typically settles within a few days. Most people return to usual activities immediately; your doctor will give guidance specific to you.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
-        body: [
-          "As with any medical procedure, Muscle Stimulation carries risks, which are explained during consultation. Temporary effects can include muscle soreness, mild redness or tenderness at the treated area. The more important limits are absolute rather than statistical: metal implants, pacemakers and copper IUDs in or near the treatment field rule the treatment out, which is why the medical history is taken before the belt goes on.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The number of sessions and overall cost depend on the area treated, your goals and your individual response. Sessions here are usually booked as a short block rather than singly, so the figure that matters is the block's, and it is set at consultation. Message us on WhatsApp to arrange one.",
+          "Sessions are usually booked as a short block spaced across a few weeks rather than singly, so the cost is set for the block at consultation. It depends on the area treated, your goals and how you respond.",
         ],
       },
     ],
     faqs: [
       {
         q: "Is Muscle Stimulation a substitute for exercise?",
-        a: "No. It is generally considered as a complement to, rather than a replacement for, regular exercise and a healthy lifestyle. A doctor assesses at consultation whether it is a reasonable addition to your routine.",
+        a: "No. It is a complement to regular exercise and a healthy lifestyle, not a replacement for them.",
       },
       {
         q: "Does it reduce fat?",
-        a: "Muscle Stimulation is aimed at muscle tone and contraction rather than fat reduction. If fat reduction is your goal, your doctor may discuss other options such as fat-freezing or microwave contouring as part of a wider plan.",
+        a: "No. It works on muscle tone, not fat. If fat reduction is the goal, the doctor may discuss fat freezing or microwave contouring instead.",
       },
       {
         q: "Is there any downtime?",
-        a: "There is generally no set downtime. Muscle soreness similar to that after exercise can occur and typically settles within a few days; people who have not trained the area recently tend to notice it more.",
+        a: "No set downtime. Exercise-like soreness can follow for a few days, more so if you have not trained the area recently.",
       },
       {
         q: "How many sessions will I need?",
-        a: "It varies. A course of several sessions spaced across a few weeks is common, but the plan depends on your goals and how you respond. Like any muscle work, what it holds depends on what you do between and after the sessions, and the doctor will say so.",
+        a: "A short block spaced across a few weeks is common. As with any muscle work, what it holds depends on what you do between and after the sessions.",
       },
     ],
   },
@@ -3227,103 +2907,65 @@ export const treatments: Treatment[] = [
     seoTitle: "Dermal Fillers Malaysia | Juvederm, Restylane | Kaiteki",
     seoDescription:
       "Dermal filler treatment in Malaysia using Juvederm, Restylane, Belotero and Art Filler to support facial volume and contour. Book a free consultation at Kaiteki.",
-    figures: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/dermal-fillers/image-dermal-fillers.jpg",
-        caption: "Syringes positioned at the temple and the cheek — two of the planes filler is placed in.",
-      },
-    ],
-    manufacturerImages: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/dermal-fillers/logo-juvaderm.png",
-        alt: "Juvéderm manufacturer logo",
-        caption: "Juvéderm — the manufacturer's mark for its hyaluronic acid filler range.",
-      },
-      {
-        src: "https://cdn.kaiteki.my/treatments/dermal-fillers/logo-restylane.png",
-        alt: "Restylane manufacturer logo",
-        caption: "Restylane — the manufacturer's mark for its hyaluronic acid filler range.",
-      },
-    ],
     sections: [
       {
         heading: "What are dermal fillers?",
         body: [
-          "Dermal fillers are injectable gels based on hyaluronic acid (HA), a substance naturally present in skin. Unlike bio-stimulators, which work gradually by supporting the skin's own structural renewal, HA fillers are formulated to sit within the tissue and provide volume or support more directly once injected.",
-          "At Kaiteki this includes Juvederm, Restylane, Belotero and Art Filler, established HA filler ranges that differ in gel formulation and are used across different facial areas.",
-          "Art Filler, from Laboratoires Fillmed, is one of the ranges available here; like the others, it is selected by the doctor for a specific area rather than chosen from a menu. Because it is an injectable, it is performed by a doctor, who assesses whether filler is appropriate for you at consultation.",
+          "Dermal fillers are injectable gels based on hyaluronic acid (HA), a substance naturally present in skin. They are formulated to sit within the tissue and provide volume or support directly once injected.",
+          "At Kaiteki the ranges are Juvederm, Restylane, Belotero and Art Filler (Laboratoires Fillmed). They differ in gel formulation, and the doctor selects one for a specific area rather than from a menu.",
+          "Fillers are commonly considered for volume loss in the cheeks or temples, definition of the chin, jawline or nose bridge, static lines such as nasolabial folds and marionette lines, and lip volume and shape.",
         ],
       },
       {
-        heading: "How it works",
+        heading: "How does a hyaluronic acid gel add volume?",
         body: [
           "HA fillers are injected into targeted layers of the skin or the tissue beneath it, where the gel is intended to provide volume or structural support at the treated site. HA is also naturally water-binding, so filler placed in the skin may contribute a degree of hydration.",
-          "Different formulations vary in thickness and how they behave in tissue, which is why the doctor selects a specific filler and technique for the area and outcome being considered. Any effect is present from the point of injection but continues to settle over the following days, and varies between individuals.",
+          "Formulations differ in thickness and in how they behave in tissue, which is why the doctor matches the product and technique to the area. The effect is present from injection and continues to settle over the following days.",
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "Who should not have dermal fillers?",
         body: [
-          "Dermal fillers are commonly considered for the following concerns. Filler is a medical device placed into the face by a doctor, so the assessment covers facial structure and your medical history before any decision about whether, and where, it is appropriate.",
-        ],
-        list: [
-          "Volume loss in areas such as the cheeks or temples",
-          "Definition of the chin, jawline or nose bridge as part of facial contouring",
-          "Static lines such as nasolabial folds and marionette lines",
-          "Lip volume and shape, assessed individually",
+          "Filler is usually avoided during pregnancy or breastfeeding, over active skin infection or open lesions in the area, and with a known allergy to a formulation's ingredients. Bring your medical history, medications and allergies to the consultation.",
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "What happens at a filler appointment, and how long does swelling last?",
         body: [
-          "Dermal fillers are not suitable for everyone. As a general precaution, injectable treatments are usually avoided during pregnancy or breastfeeding, over active skin infection or open lesions in the treatment area, and where there is a known allergy to a formulation's ingredients.",
-          "Please share your full medical history, medications and any allergies at consultation so the doctor can advise safely and confirm whether filler, or another option, is appropriate for you.",
+          "After a facial assessment, the doctor selects a product for the area, cleanses the skin and, where relevant, applies topical numbing before injecting. A doctor performs every step.",
+          "Mild swelling, redness, bruising or tenderness at the injection sites commonly settles within a few days to about a week. Follow the aftercare you are given, which may include avoiding certain activities for a few days, and contact the clinic with any concern.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "What are the risks of dermal fillers?",
         body: [
-          "A session begins with a consultation and facial assessment by a Kaiteki doctor, who discusses your goals and, if filler is appropriate, selects a suitable product for the area. The skin is cleansed and, where relevant, a topical numbing step is used for comfort.",
-          "The doctor then administers the injections into the assessed areas. Because this is an injectable treatment, it is carried out by a doctor throughout, and comfort measures can be discussed beforehand.",
+          "Common temporary effects are swelling, redness, bruising, tenderness or lumpiness at the injection site, which typically settle.",
+          "Less common but more serious effects can occur with any filler injection. The doctor explains the ones relevant to you before treatment goes ahead.",
         ],
       },
       {
-        heading: "Downtime & aftercare",
+        heading: "What decides how much filler you need, and the cost?",
         body: [
-          "Downtime is generally minimal for most people. Mild swelling, redness, bruising or tenderness at the injection sites can occur and commonly settles within a few days to about a week; this varies between individuals.",
-          "Your doctor will give aftercare guidance specific to your treatment, which may include avoiding certain activities in the days afterwards. Follow the specific advice given and contact the clinic with any concerns.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
-        body: [
-          "As with any injectable treatment, dermal fillers carry potential risks and side effects. Commonly reported temporary effects include swelling, redness, bruising, tenderness or lumpiness at the injection site, which typically settle over time.",
-          "Less common but more serious effects can occur with any filler injection, and the full range of risks relevant to you is explained by the doctor during consultation before proceeding, so you can make an informed decision.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "The amount of filler, the product used and overall cost depend on the area treated and your individual assessment. Cost is confirmed at consultation once a plan has been discussed, so it is not quoted online. To ask about a consultation, message us on WhatsApp.",
+          "The amount and the product used, and so the cost, depend on the areas treated and your assessment. Cost is confirmed once a plan is agreed, not quoted online.",
         ],
       },
     ],
     faqs: [
       {
         q: "What is the difference between dermal fillers and bio-stimulators?",
-        a: "Dermal fillers are HA-based gels that provide volume or support once injected, while bio-stimulators are intended to work more gradually by supporting the skin's own structural renewal. Which is appropriate for you is assessed by the doctor at consultation.",
+        a: "Dermal fillers are HA gels that provide volume or support once injected. Bio-stimulators work gradually, by supporting the skin's own structural renewal.",
       },
       {
         q: "How long do dermal fillers last?",
-        a: "This varies between individuals and depends on the product, the area treated and how your body processes it. Your doctor can discuss what is realistic for the specific filler and area being considered.",
+        a: "It depends on the product, the area treated and how your body breaks it down. The doctor can say what is realistic for the filler and area being considered.",
       },
       {
         q: "Is there any downtime?",
-        a: "Downtime is generally minimal. Mild swelling, bruising or tenderness may occur at the injection sites and usually settles within a few days to about a week, though this varies between individuals.",
+        a: "Usually minimal. Swelling, bruising or tenderness at the injection sites typically settles within a few days to about a week.",
       },
       {
         q: "Are dermal fillers reversible?",
-        a: "Some HA fillers can, in certain circumstances, be managed with a dissolving agent, which your doctor can discuss if relevant. This is not guaranteed in every situation and is assessed individually.",
+        a: "Some HA fillers can, in certain circumstances, be broken down with a dissolving agent. Whether that applies to your product and situation is assessed individually.",
       },
     ],
   },
@@ -3340,106 +2982,64 @@ export const treatments: Treatment[] = [
     ],
     summary: "Clinic facials used to support skin cleansing, exfoliation and general skin quality.",
     leadAnswer:
-      "Facial Treatments at Kaiteki are clinic-based facials, including Hydrafacial and Silkpeel, that combine cleansing, exfoliation and skin-conditioning steps to support general skin quality. Suitability and results vary between individuals; a consultation helps determine which option, if any, is appropriate for you.",
+      "Facial Treatments at Kaiteki are clinic-based facials, including Hydrafacial and Silkpeel, that combine cleansing, exfoliation and skin-conditioning steps to support general skin quality. They work at the surface rather than on deeper structural concerns, and a skin assessment decides which one suits you, or whether your skin needs medical treatment instead.",
     related: ["pico-laser", "skin-booster"],
     reviewedBy: "dr-calvin-tan",
     lastReviewed: "2026-07-13",
     seoTitle: "Facial Treatments Malaysia | Hydrafacial, Silkpeel | Kaiteki",
     seoDescription:
       "Clinic facial treatments in Malaysia, including Hydrafacial and Silkpeel, to support skin cleansing and quality. Book a free consultation at Kaiteki.",
-    figures: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/facial-treatments/image-hydroglow.jpg",
-        caption: "The cleansing and extraction stage of a facial, worked over with pads before the device passes.",
-      },
-    ],
-    manufacturerImages: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/facial-treatments/logo-hydrafacial.png",
-        alt: "HydraFacial manufacturer logo",
-        caption: "HydraFacial — the manufacturer's mark for the hydradermabrasion system.",
-      },
-      {
-        src: "https://cdn.kaiteki.my/treatments/facial-treatments/logo-silkpeel.png",
-        alt: "SilkPeel manufacturer logo",
-        caption: "SilkPeel — the manufacturer's mark for the dermalinfusion system.",
-      },
-    ],
     sections: [
       {
         heading: "What are Facial Treatments?",
         body: [
           "Facial Treatments are clinic-based procedures that combine cleansing, exfoliation and skin-conditioning steps in a single session, generally with gentler technology than laser or energy-based devices. At Kaiteki this category includes Hydrafacial and Silkpeel.",
-          "They are typically considered for general skin maintenance and quality, and can be used alongside other treatments as part of a wider plan. Whether a facial is appropriate for you, and which one, is assessed by a doctor or trained clinician during consultation.",
+          "They are typically considered for congested pores, dull or uneven-looking tone and general hydration, as routine maintenance or between other treatments. They do not replace medical treatment where a skin condition needs it.",
         ],
       },
       {
-        heading: "How it works",
+        heading: "How do Hydrafacial and Silkpeel work?",
         body: [
           "Hydrafacial uses a device-based process that cleanses, exfoliates and extracts debris from pores before infusing serums suited to the skin. Silkpeel combines exfoliation with simultaneous infusion of topical solutions.",
-          "Across these options, the aim is to clear surface build-up, refine texture and support skin hydration, rather than to address deeper structural concerns. The clinician selects the treatment and any add-on serums for your skin type. Results are generally supportive rather than corrective and vary between individuals.",
+          "Both aim to clear surface build-up, refine texture and support hydration rather than treat deeper structural concerns. The clinician selects the treatment and any add-on serums for your skin type.",
         ],
       },
       {
-        heading: "What it may help address",
+        heading: "When should you not have a facial?",
         body: [
-          "Facial Treatments are commonly considered for the following concerns, generally as gentle, ongoing skin support. They do not replace medical treatment where a skin condition needs it, and a doctor will tell you at consultation if that is what your skin actually calls for.",
-        ],
-        list: [
-          "Congested pores and surface-level acne-prone skin",
-          "Dull or uneven-looking skin tone",
-          "Enlarged-pore appearance as part of routine skin maintenance",
-          "General hydration and skin-quality support between other treatments",
+          "A facial may not be appropriate over active skin infection or significant inflammation, or immediately after certain other procedures. Mention your skincare and medical history, especially any known sensitivity to skincare products.",
         ],
       },
       {
-        heading: "Suitability & who should avoid it",
+        heading: "What happens during a clinic facial, and is there redness afterwards?",
         body: [
-          "Facial Treatments are generally gentle, but suitability is still assessed individually. They may not be appropriate over active skin infection, significant inflammation, or immediately after certain other procedures. Please share your skincare and medical history at consultation so the clinician can advise on a suitable option.",
+          "A brief skin assessment confirms which facial suits you. The skin is then cleansed, exfoliated and, depending on the option, given device-based extraction and serum infusion. Sessions are generally comfortable, and most people return to normal activities straight away.",
+          "Mild, temporary redness can follow some facials and usually settles within a few hours. Uncommonly, a serum causes an irritation reaction. Use sun protection and gentle skincare afterwards.",
         ],
       },
       {
-        heading: "The session at Kaiteki",
+        heading: "How often are clinic facials booked, and what changes the cost?",
         body: [
-          "A session begins with a brief skin assessment to confirm which facial is appropriate. The skin is then cleansed, exfoliated and, depending on the option chosen, treated with a device-based extraction and serum-infusion step.",
-          "Sessions are generally comfortable, and most people can return to normal activities immediately afterwards. Your clinician will explain what to expect for the specific facial chosen.",
-        ],
-      },
-      {
-        heading: "Downtime & aftercare",
-        body: [
-          "Downtime is minimal to none for most people. Mild, temporary redness can occur immediately after some facials and usually settles within a few hours. Sun protection and gentle skincare are advised afterwards; your clinician will give guidance specific to your skin.",
-        ],
-      },
-      {
-        heading: "Risks & side effects",
-        body: [
-          "Facial Treatments are generally low-risk, but as with any procedure, mild temporary redness, sensitivity or, uncommonly, an irritation reaction to a serum can occur. These are discussed at consultation, particularly if you have known sensitivities.",
-        ],
-      },
-      {
-        heading: "Sessions & cost factors",
-        body: [
-          "Facial Treatments are often booked periodically as part of ongoing skin maintenance, though the suitable frequency depends on your skin and goals. Cost depends on which of the facial options is chosen and on what is added to it, so it is confirmed once that is settled rather than quoted online. Message us on WhatsApp to arrange an assessment.",
+          "Facials are usually booked periodically as maintenance, at a frequency set by your skin and goals. Cost depends on which facial is chosen and what is added to it, so it is confirmed once that is settled.",
         ],
       },
     ],
     faqs: [
       {
         q: "What is the difference between Hydrafacial and Silkpeel?",
-        a: "Both combine exfoliation with serum infusion, but they use different device technology and formulations. Your clinician can advise which suits your skin type and concern at consultation.",
+        a: "Both combine exfoliation with serum infusion, but they use different device technology and formulations. The clinician advises which suits your skin.",
       },
       {
         q: "Can facials replace treatments like Pico laser or skin boosters?",
-        a: "No. Facial Treatments are generally supportive and address surface-level skin quality, while lasers and injectables work at a different level and are used for more specific concerns. A doctor can advise how a facial fits into a wider plan, if at all.",
+        a: "No. Facials address surface skin quality; lasers and injectables work at a different level, for more specific concerns. A facial can sit alongside them in a wider plan.",
       },
       {
         q: "Is there any downtime?",
-        a: "Downtime is minimal to none for most people. Mild, temporary redness can occur and usually settles within a few hours. Your clinician will give aftercare guidance for the option chosen.",
+        a: "Minimal to none. Mild redness can occur and usually settles within a few hours.",
       },
       {
         q: "How often should I get a facial?",
-        a: "This depends on your skin and goals, and is best discussed with your clinician, as there is no single frequency that suits everyone.",
+        a: "There is no single frequency that suits everyone. Facials are booked periodically as maintenance, at an interval set by your skin and goals.",
       },
     ],
   },
@@ -3451,27 +3051,16 @@ export const treatments: Treatment[] = [
     image: "https://cdn.kaiteki.my/treatments/laser-hair-removal/hero.jpg",
     procedureImages: [
       { src: "https://cdn.kaiteki.my/treatments/laser-hair-removal/procedure-01.jpg", caption: "A practitioner glides the laser handpiece along the patient's forearm." },
-      { src: "https://cdn.kaiteki.my/treatments/laser-hair-removal/procedure-02.jpg", caption: "The laser handpiece is applied to the lower leg near the ankle." },
     ],
     summary: "IPL and radiofrequency technology used to reduce unwanted hair over a course of sessions.",
     leadAnswer:
-      "Laser Hair Removal at Kaiteki uses the Alma platform, which combines IPL (intense pulsed light) and radiofrequency energy, to target hair follicles over a course of sessions. Suitability and results vary between individuals and hair type; a consultation is required to assess whether it is appropriate for you.",
+      "Laser Hair Removal at Kaiteki uses the Alma platform, which combines IPL (intense pulsed light) with radiofrequency, to target hair follicles over a course of sessions. Hair colour, skin tone and the cause of the growth decide what a course can reasonably do, so suitability is assessed before any treatment.",
     related: ["exosome-therapy"],
     reviewedBy: "dr-lucas-chew",
     lastReviewed: "2026-07-13",
     seoTitle: "Laser Hair Removal Malaysia | IPL & RF Treatment | Kaiteki",
     seoDescription:
       "Laser hair removal in Malaysia using IPL and radiofrequency over a course of sessions. Book a free consultation with a Kaiteki doctor to assess suitability.",
-    // No net-new photography exists for this page (docs/13 §3, the one
-    // EXCLUDE). What does exist is the mark of the platform the copy names in
-    // its own lead answer, which is worth more than a generated motif was.
-    manufacturerImages: [
-      {
-        src: "https://cdn.kaiteki.my/treatments/laser-hair-removal/logo-alma-lasers.png",
-        alt: "Alma Lasers manufacturer logo",
-        caption: "Alma Lasers — the manufacturer's mark for the IPL and radiofrequency platform.",
-      },
-    ],
     // docs/15 item 3.6 (2026-10-11): the v2 block set, applied under docs/16 R1.
     // Two prose sections kept; the rest became typed blocks and were deleted.
     // Block copy is restructured from reviewed text only: this page, the Alma page,
@@ -3487,7 +3076,7 @@ export const treatments: Treatment[] = [
 
     ctaMid: {
       heading: "Not sure whether your hair and skin suit light-based removal?",
-      body: "Hair colour, skin tone and the reason for the growth all change what a course can reasonably do. A doctor can tell you what is realistic before you commit.",
+      body: "A doctor can tell you what a course can realistically do for your hair and skin before you commit.",
     },
 
     // T-09 — this page and the Alma page.
@@ -3502,7 +3091,7 @@ export const treatments: Treatment[] = [
       },
     ],
     bringToConsult:
-      "Please share your full medical, medication and hair-removal history at consultation, including recent waxing, plucking or threading. Hormonal causes of excess hair growth may need investigating alongside treatment.",
+      "Bring your medical and medication history, and say when you last waxed, plucked or threaded. Hormonal causes of excess hair may need investigating alongside treatment.",
 
     // T-10 — step 1 states the first visit is not a treatment.
     sessionSteps: [
@@ -3520,7 +3109,7 @@ export const treatments: Treatment[] = [
       },
       {
         title: "Afterwards",
-        body: "A course of several sessions spaced a few weeks apart is common, reflecting the hair-growth cycle, but the plan is individual.",
+        body: "Most people return to their day straight away. The next session is timed to the growth cycle.",
       },
     ],
 
@@ -3542,13 +3131,13 @@ export const treatments: Treatment[] = [
         },
       ],
       aftercare:
-        "Sun protection is advised on treated areas between sessions; your clinician will give aftercare guidance specific to you.",
+        "Protect treated areas from the sun between sessions.",
     },
 
     // T-12
     risks: {
       intro:
-        "As with any energy-based procedure, Laser Hair Removal carries risks, which are explained during consultation.",
+        "Like any energy-based treatment, it carries risks, which are explained before a course is booked.",
       common: "Redness, swelling or changes in pigmentation.",
       lessCommon:
         "Blistering, burns, folliculitis and, rarely, paradoxical stimulation of fine hair in some areas. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained clinician.",
@@ -3560,17 +3149,17 @@ export const treatments: Treatment[] = [
         "Very light, grey or white hair contains little pigment for light to target on any platform.",
       ],
       disclose:
-        "Tell your clinician if you are pregnant, have recent tanning, tattoos or permanent makeup in the area, a light-sensitive condition or keloid tendency, or take photosensitising medication.",
+        "Tell your clinician about anything on the postpone-or-avoid list above, and about every medication you take.",
     },
 
     // T-13 — factors only, no figures (settled 2026-09-20).
     costFactors: {
       intro:
-        "Kaiteki does not quote prices online. Courses are priced by area across a series rather than per visit, and the series is set at consultation. What moves it:",
+        "Courses are priced by area across a series, not per visit, and the series is set at consultation. What moves it:",
       factors: [
         "The area treated.",
         "Your hair type: colour, thickness and density.",
-        "Your individual response across the course.",
+        "How your hair responds across the course.",
         "Whether maintenance sessions are needed afterwards.",
       ],
     },
@@ -3585,33 +3174,33 @@ export const treatments: Treatment[] = [
         heading: "What is Laser Hair Removal?",
         body: [
           "Laser Hair Removal is a treatment intended to reduce unwanted hair by targeting the hair follicle with light or energy-based technology. At Kaiteki this is delivered using the Alma platform, which combines IPL (intense pulsed light) with radiofrequency energy.",
-          "It is generally considered for areas such as the underarms, legs, arms or face. Whether it suits you depends on your hair type, skin tone and medical history, which a doctor or trained clinician assesses during consultation.",
+          "It is generally considered for areas such as the underarms, legs, arms or face.",
         ],
       },
       {
         heading: "Why does hair removal need a course of sessions?",
         body: [
-          "The device delivers IPL energy combined with radiofrequency to the treatment area. The light energy is intended to be absorbed by pigment in the hair follicle, while the radiofrequency component adds a further energy pathway to the follicle, which may support the treatment's effect on the hair-growth cycle.",
-          "Because hair follicles cycle through active and resting phases, a single session only affects follicles that are in an active growth phase at the time. A course of sessions over time is intended to address more of the follicles across their cycle. Results vary between individuals and hair and skin type.",
+          "Alma delivers IPL and radiofrequency together. The light is intended to be absorbed by pigment in the hair follicle, and the radiofrequency adds a second energy pathway to the follicle.",
+          "Follicles cycle through active and resting phases, and a session only affects those in an active growth phase at the time. A course spaced with that cycle is intended to reach more of them.",
         ],
       },
     ],
     faqs: [
       {
         q: "How many sessions will I need?",
-        a: "It varies with hair type, area and the hair-growth cycle. A course of several sessions spaced a few weeks apart is common, since a single session only affects hairs in an active growth phase. Your clinician will outline a realistic plan at consultation.",
+        a: "A course of several sessions spaced a few weeks apart is common, because one session only affects hairs in an active growth phase. The number depends on your hair type and the area.",
       },
       {
         q: "Is Laser Hair Removal permanent?",
-        a: "It is intended to reduce hair over a course of sessions rather than guarantee permanent removal, and some regrowth or maintenance sessions may be needed over time. Your clinician will explain what is realistic for your hair and skin type.",
+        a: "No. It reduces hair over a course of sessions, and some regrowth or maintenance sessions may be needed over time.",
       },
       {
         q: "Is it suitable for all skin tones and hair colours?",
-        a: "Suitability depends partly on hair colour and skin tone, as light-based hair removal generally works best where there is more contrast between hair and skin pigment. A consultation assesses whether it suits your specific hair and skin type.",
+        a: "Not all. Light-based removal generally works best where there is more contrast between hair and skin pigment. Very light, grey or white hair has little pigment to target, and recently tanned skin is generally not treated.",
       },
       {
         q: "Is there any downtime?",
-        a: "Downtime is usually minimal. Temporary redness or warmth can occur and typically settles within a few hours to a day. Your clinician will give aftercare guidance specific to you.",
+        a: "Usually minimal. Temporary redness or warmth typically settles within a few hours to a day.",
       },
     ],
   },

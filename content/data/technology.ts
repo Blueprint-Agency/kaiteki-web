@@ -786,7 +786,8 @@ export const technology: Technology[] = [
       group: "Lifting & Tightening",
       type: "device",
       treatments: ["hifu"],
-      image: "https://cdn.kaiteki.my/images/technology/ultracel-q.jpg",
+      image: "https://cdn.kaiteki.my/images/technology/ultracel-q-v2.jpg",
+      imageAlt: "The Jeisys Ultracel Q+ device",
       summary:
         "A multi-cartridge HIFU platform from Jeisys Medical, used within Kaiteki's HIFU treatment for non-surgical lifting and tightening concerns.",
       leadAnswer:
