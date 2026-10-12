@@ -2,7 +2,6 @@ import { Container } from "@/components/Container";
 import { PageHeader } from "@/components/PageHeader";
 import { SkincareExplorer } from "@/components/SkincareExplorer";
 import { PromoModal } from "@/components/PromoModal";
-import { Disclaimer } from "@/components/Disclaimer";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { products } from "@/content/data/products";
 import { pageMeta } from "@/lib/seo";
@@ -94,16 +93,11 @@ export default function ProductsHub() {
         <SkincareExplorer />
       </div>
 
-      <div className="mt-14 max-w-2xl space-y-4">
-        <p className="text-sm text-ink-500">
-          Prices in Ringgit (RM) may change. Confirm on WhatsApp when you order. Skincare supports,
-          but does not replace, a doctor&rsquo;s assessment. Medicated or prescription-only products
-          may require a consultation.
-        </p>
-        <Disclaimer />
-      </div>
+      <p className="mt-14 text-sm text-ink-500">
+        Prices may change, confirm on WhatsApp.
+      </p>
 
-      <div className="mt-14 flex flex-wrap items-center justify-between gap-4 rounded-2xl bg-tint px-6 py-5 sm:px-8">
+      <div className="mt-6 flex flex-wrap items-center justify-between gap-4 rounded-2xl bg-tint px-6 py-5 sm:px-8">
         <p className="max-w-xl text-sm leading-relaxed text-ink-700 sm:text-base">
           Not sure which products suit your skin? Message us on WhatsApp and a doctor&rsquo;s team
           will help you choose the right products for your concern and skin type.
