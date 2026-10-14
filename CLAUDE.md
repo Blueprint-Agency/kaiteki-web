@@ -92,10 +92,7 @@ pnpm blog:manifest / blog:import / blog:redirects  # legacy WordPress migration
 ## Git
 
 - Branch off before substantial work; commit when the user asks.
-- Commit message trailer:
-  ```
-  Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
-  ```
+- No AI co-author trailers (`Co-Authored-By: Claude …`) or `Claude-Session:` lines in commit messages or PR bodies.
 
 ## Agent skills
 

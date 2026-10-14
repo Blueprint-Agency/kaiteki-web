@@ -93,3 +93,31 @@
 5. **Clinical terms:** 脂溢性皮炎 / *dermatitis seboreik*, 银屑病 / *psoriasis*, 休止期 / *fasa rehat*, 自身免疫疾病 / *penyakit autoimun*, Norwood 分级 / *skala Norwood*.
 6. **"Permanent" wording.** It was rendered as 无法恢复 / 无法逆转 and *tidak dapat dipulihkan*, and "maintained rather than permanent" as 需要维持，并不是一劳永逸 / *perlu diselenggara, bukan berkekalan*. Please confirm the nuance.
 7. **Before/after captions** follow the pilot: 在 Kaiteki 完成一个疗程之前与之后 / *sebelum dan selepas satu kursus rawatan*.
+
+## Re-sync 2026-10-14 (English rewrite)
+
+The English page was rewritten and the sync tool blanked 31 strings per locale. Only one is search-relevant: `sections[0].heading`, which changed from "Understanding hair loss" to "What counts as hair loss?". All earlier keyword decisions above still stand unchanged.
+
+### Chinese (`/zh`, `hl=zh-CN&gl=my`)
+
+| English string | Probes | Evidence | Decision |
+|---|---|---|---|
+| sections[0].heading "What counts as hair loss?" | 怎样才算脱发, 怎么才算脱发, 怎样算脱发, 掉多少头发算脱发, 怎么判断脱发, 什么是脱发, 脱发的定义, 脱发 标准 | all empty; `脱发 标准` returns only itself | DIRECT: **怎样才算脱发？** |
+
+**Body blanks translated directly:** 30.
+
+### Malay (`/ms`, `hl=ms&gl=my`)
+
+| English string | Probes | Evidence | Decision |
+|---|---|---|---|
+| sections[0].heading "What counts as hair loss?" | apa itu rambut gugur, rambut gugur normal, rambut gugur yang normal, tanda rambut gugur, bagaimana/macam mana nak tahu rambut gugur | `rambut gugur normal` → **rambut gugur normal atau tidak**, normal ke, normal berapa helai; `rambut gugur yang normal` → jumlah rambut gugur yang normal; `tanda rambut gugur` → banyak, teruk, tanda penyakit apa; "apa itu" and "nak tahu" forms empty | KEYWORD: **Rambut gugur: normal atau tidak?** (keeps the EN meaning, i.e. where normal shedding ends and hair loss begins) |
+
+**Body blanks translated directly:** 30.
+
+### Reviewer notes
+
+1. Most blanks are trimmed versions of sentences that were already translated. The earlier wording is kept and only the removed clauses are dropped. Nothing was added or strengthened.
+2. **"Permanent loss"** in seeDoctor.outro and FAQ 2 follows this page's earlier decision: 无法恢复的脱发 / *keguguran yang tidak dapat dipulihkan*. Neither 永久 nor *kekal* is used. Risks item 3 keeps 需要维持，并不是一劳永逸 / *perlu diselenggara, bukan berkekalan*.
+3. **treatmentsNote** "Prescription options are discussed individually, not advertised" is 处方药物的选择会和你个别讨论，而不会在这里宣传 / *Pilihan rawatan preskripsi dibincangkan secara individu, bukan diiklankan*. No drug is named.
+4. **Round patches** (cards[3]) are still not named as alopecia areata, as in reviewer note 1 above.
+5. **banner.alt** describes the new hero image: 一只摊开的手，拿着一撮掉下来的头发 / *tangan terbuka memegang segumpal rambut yang gugur*.

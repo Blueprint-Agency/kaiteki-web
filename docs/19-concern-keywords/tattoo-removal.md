@@ -93,3 +93,29 @@
 6. **"Cover-up"** is 覆盖旧纹身 / *tatu tutup (cover-up)*.
 7. **Ink darkening** (white and flesh-tone pigment oxidising) is described in both languages as 变深 / *menjadi gelap*, as in EN.
 8. **Appointments** in ms are *lawatan* (visits), not *temujanji* or *temu janji* (docs/18 §7.2).
+
+## Re-sync 2026-10-14 (English rewrite)
+
+The English rewrite left 23 blanks per language. None is a search-relevant field (no seoTitle, seoDescription, name, heading, tab title, compare column, FAQ question or jumpNav label), so no Autocomplete probes were run and both keyword tables are empty.
+
+### Chinese (zh)
+
+| English | probes | evidence | KEYWORD/DIRECT |
+|---|---|---|---|
+| (none: no search-relevant blanks) | n/a | n/a | n/a |
+
+**Body blanks translated directly:** 23 (leadAnswer, drivers.intro, drivers.items[3].body, variant.intro, locationBlock.cards[0] and [3] bodies, seeDoctor.outro, ctaMid.body, treatmentsNote, firstVisit.intro, firstVisit.steps[3].body, visitImages[0].caption, risks.items[1..3] bodies, costFactors.intro, technologyIntro, faqs[0,1,2,3,5,7].a).
+
+### Malay (ms)
+
+| English | probes | evidence | KEYWORD/DIRECT |
+|---|---|---|---|
+| (none: no search-relevant blanks) | n/a | n/a | n/a |
+
+**Body blanks translated directly:** 23 (same paths as zh).
+
+### Reviewer notes
+
+1. Most blanks are the old sentence with its closing clause cut in English; the existing translation was trimmed to match, keeping the established terms (测试 / *ujian tampalan*, 美容色料 / *pigmen kosmetik*, 色素减退 / *hipopigmentasi*, 皮秒激光 / *laser pikosaat*, *lawatan* for visits).
+2. **costFactors.intro** is new: 价钱要在评估纹身之后才决定，取决于： / *Harga ditetapkan selepas tatu dinilai. Ia bergantung pada:*.
+3. L-03r: 保证 in risks.items[3].body and faqs[0].a stays negated (无法保证); the 永久 / *kekal* hit is the pre-existing "permanent makeup" row, unchanged.

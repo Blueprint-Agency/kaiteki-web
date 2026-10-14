@@ -92,3 +92,29 @@ Same as the pilot (`acne.md`): Google Autocomplete as the volume proxy (`client=
 5. **Pico fractional lens claim:** kept as 制造商标示 / *ditetapkan oleh pengeluar*, the manufacturer's indication only, for skin types I to IV, as in EN.
 6. **Exosome therapy** stays 再生疗法 / *pendekatan regeneratif* (no 外泌体), as in the pilot. Same regulatory check applies.
 7. **FAQ 12 (ms)** is phrased around *jerawat berulang* ("can acne recur and leave new scars"), slightly broader than EN "can new acne still scar". The answer is unchanged.
+
+## Re-sync 2026-10-14 (English rewrite)
+
+The English page was rewritten upstream; the sync tool kept every unchanged translation and blanked 27 strings per locale. **None is search-relevant** (no seoTitle, seoDescription, name, heading, tab title, compare column, FAQ question or jumpNav blank), so no probes were needed and all are DIRECT.
+
+### Chinese
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| (no search-relevant blanks) | n/a | n/a | n/a |
+
+**Body blanks translated directly:** 27 (banner alt, fact 3, section 1 body, driver 2 lead and body, depressed and marks tab bodies, seeDoctor intro, treatments intro and note, compare intro, first-visit intro and step 3, risks 2 and 4, cost intro, 9 FAQ answers).
+
+### Malay
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| (no search-relevant blanks) | n/a | n/a | n/a |
+
+**Body blanks translated directly:** 27 (same set as Chinese).
+
+### Reviewer notes
+
+1. Driver 2 "permanent change" is 难以逆转的改变 / *perubahan yang sukar dipulihkan*, as in the pilot.
+2. Risk 4 keeps "rarely erased" and "ice pick scars rarely resolve with energy devices alone" as negated forms: 很少能完全抹去 / 很少能完全改善, *jarang dapat dipadam sama sekali* / *jarang pulih sepenuhnya*.
+3. Step 3 "with no obligation to proceed" is 你没有义务一定要进行疗程 / *tanpa sebarang kewajipan untuk meneruskan*, matching acne.

@@ -1,0 +1,295 @@
+{
+  "slug": "body-slimming",
+  "ctaHeading": "Not sure where to start?",
+  "ctaAssesses": "the areas you’re concerned about",
+  "name": "Body Slimming",
+  "group": "Hair & Body",
+  "image": "https://cdn.kaiteki.my/concerns/body-slimming/card.jpg",
+  "summary": "Stubborn fat in specific areas can be targeted without surgery. These are body-contouring treatments, not weight-loss solutions.",
+  "leadAnswer": "Body contouring targets localised pockets of fat (the lower abdomen, flanks, bra line) that persist at a stable weight, using fat freezing, microwave energy or muscle stimulation. It is not a weight-loss treatment: it does not change overall weight or treat obesity, and is generally considered for people near a weight they can maintain.",
+  "treatments": [
+    "fat-freezing",
+    "microwave-contouring",
+    "muscle-stimulation"
+  ],
+  "reviewedBy": "dr-joaan-kong",
+  "lastReviewed": "2026-06-08",
+  "seoTitle": "Body Slimming Treatment & Assessment in Malaysia | Kaiteki",
+  "seoDescription": "Localised fat pockets are assessed individually. Body slimming is not a weight-loss treatment. Book a free consultation to discuss suitable options today.",
+  "banner": {
+    "src": "https://cdn.kaiteki.my/concerns/body-slimming/hero.jpg",
+    "sm": "https://cdn.kaiteki.my/concerns/body-slimming/hero-mobile.jpg",
+    "alt": "Illustrative photograph: a person measuring their waist with a tape measure"
+  },
+  "facts": [
+    {
+      "value": "Not weight loss",
+      "label": "Contouring addresses a specific area. It does not change the number on the scales."
+    },
+    {
+      "value": "For a stable weight",
+      "label": "It is generally considered for people already near a weight they can maintain."
+    },
+    {
+      "value": "Pinch test",
+      "label": "Whether the fat can be drawn into an applicator decides whether cooling applies."
+    }
+  ],
+  "jumpNav": [
+    {
+      "id": "causes",
+      "label": "What it addresses"
+    },
+    {
+      "id": "which-type",
+      "label": "What it does and doesn't do"
+    },
+    {
+      "id": "treatments",
+      "label": "Treatments"
+    },
+    {
+      "id": "risks",
+      "label": "Risks"
+    },
+    {
+      "id": "cost",
+      "label": "Cost"
+    },
+    {
+      "id": "faq",
+      "label": "FAQ"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is body contouring?",
+      "body": [
+        "Body contouring, often called body slimming, describes in-clinic treatments aimed at the shape of a specific area (a fat pocket, muscle tone or skin firmness) rather than body weight. It sits alongside diet and exercise, never in place of them."
+      ]
+    }
+  ],
+  "drivers": {
+    "heading": "What contouring actually addresses",
+    "intro": "Where your body stores fat is largely genetic. The areas that most often persist:",
+    "items": [
+      {
+        "lead": "The lower abdominal pouch:",
+        "body": "a pocket below the navel that persists at a stable weight, common after pregnancy."
+      },
+      {
+        "lead": "Flanks and love handles:",
+        "body": "fat over the sides of the waist above the belt line. Spot exercise does not reduce it."
+      },
+      {
+        "lead": "Bra line and upper back:",
+        "body": "folds across the back and under the arm that show through fitted clothing."
+      },
+      {
+        "lead": "Skin texture and cellulite:",
+        "body": "dimpling caused by fibrous bands tethering skin to deeper tissue while fat pushes between them. It is a structural feature of skin, present at every body size, and it is not a sign of excess weight."
+      }
+    ]
+  },
+  "variant": {
+    "kind": "pairs",
+    "heading": "What it does and doesn't do",
+    "intro": "Five common beliefs, and what is actually true:",
+    "pairs": [
+      {
+        "claim": "It will help me lose weight.",
+        "reality": "It will not. Contouring reduces or reshapes fat in one area; it does not lower your overall weight and it is not a treatment for obesity."
+      },
+      {
+        "claim": "The fat comes back somewhere else.",
+        "reality": "Fat cells removed from a treated area do not relocate. What happens is that if you gain weight afterwards, the fat cells you still have everywhere else enlarge, and the treated area can look proportionally different. The outcome depends on your weight staying reasonably stable."
+      },
+      {
+        "claim": "One session and it's done.",
+        "reality": "Most areas are planned as a course with review points, and change from fat-reduction treatment builds over weeks to months as the body clears treated cells. A single session may be appropriate for a small area, but it is decided after assessment rather than sold in advance."
+      },
+      {
+        "claim": "It will tighten loose skin too.",
+        "reality": "Fat reduction and skin firmness are different problems. Reducing fat under loose skin can make the looseness more visible rather than less. Where skin laxity is the leading issue, it is assessed on its own terms and may call for a different treatment entirely, or none."
+      },
+      {
+        "claim": "Cellulite can be removed.",
+        "reality": "It can sometimes be made less obvious, but it is a structural feature of how skin attaches to the tissue beneath, present in people of every size and fitness level. Any treatment aimed at it should be discussed as improvement in appearance rather than removal."
+      }
+    ]
+  },
+  "seeDoctor": {
+    "intro": "Have an area assessed if:",
+    "triggers": [
+      "A specific area has not changed despite a stable weight and consistent exercise.",
+      "You are unsure whether what you are looking at is fat, loose skin or muscle tone.",
+      "You have been offered a treatment elsewhere and want a second opinion on whether it matches the concern.",
+      "Your weight is still changing, in which case timing is part of the advice."
+    ],
+    "outro": "If your weight is not yet stable, the advice is usually to wait."
+  },
+  "ctaMid": {
+    "heading": "Not sure if it's fat or loose skin?",
+    "body": "Send us a photo on WhatsApp and a doctor can tell you which it is."
+  },
+  "treatmentsIntro": "Which fits depends on whether the area shows fat, looseness or low muscle tone:",
+  "treatmentWhy": {
+    "fat-freezing": {
+      "why": "For a pinchable pocket that diet has not shifted",
+      "body": "Controlled cooling applied to a defined pocket of fat, which the body then clears over the following weeks. Suitable where the fat can be drawn into an applicator, which is why the pinch test at assessment decides whether it applies at all."
+    },
+    "microwave-contouring": {
+      "why": "For fat and skin firmness in one pass",
+      "body": "Delivers energy that addresses fat volume and skin quality in the same treatment. Considered where an area shows both a pocket and some looseness, rather than one or the other cleanly."
+    },
+    "muscle-stimulation": {
+      "why": "For muscle tone under the fat layer",
+      "body": "Prompts intense muscle contraction to build tone in the underlying muscle rather than to reduce fat. Considered where definition rather than volume is the concern, and often discussed alongside, not instead of, exercise."
+    }
+  },
+  "treatmentsNote": "Sequence matters where more than one applies: reducing a fat pocket first shows how much of what you were seeing was actually skin looseness underneath.",
+  "results": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/body-slimming/before-after-01.jpg",
+      "nativeWidth": 600,
+      "ratio": "1/1",
+      "caption": "Body contour, before and after a course of treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/body-slimming/before-after-02.jpg",
+      "nativeWidth": 600,
+      "ratio": "1/1",
+      "caption": "Abdominal contour, before and after a course of treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/body-slimming/before-after-03.jpg",
+      "nativeWidth": 600,
+      "ratio": "1/1",
+      "caption": "Abdominal contour, before and after a course of treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/body-slimming/before-after-04.jpg",
+      "nativeWidth": 600,
+      "ratio": "1/1",
+      "caption": "Localised fat pocket, before and after a course of treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/body-slimming/before-after-05.jpg",
+      "nativeWidth": 600,
+      "ratio": "1/1",
+      "caption": "Body contour, before and after a course of treatment at Kaiteki"
+    }
+  ],
+  "firstVisit": {
+    "intro": "The area is examined standing and seated, with a pinch test to separate fat from loose skin.",
+    "steps": [
+      {
+        "title": "History",
+        "body": "Your weight over the past year or two, whether it is stable, what you have already tried, any pregnancies or significant weight change, your general health and any medication."
+      },
+      {
+        "title": "Examination",
+        "body": "The doctor judges whether the pocket suits the treatments available."
+      },
+      {
+        "title": "Discussion and plan",
+        "body": "What each option does, how long change takes to appear, downtime and risks, and what is realistic, including waiting until your weight settles. No obligation to proceed."
+      }
+    ],
+    "outro": "Wear or bring clothing that lets the area be examined comfortably. If you have photographs from a period when your weight was different, they help the doctor judge what has actually changed."
+  },
+  "visitImages": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/body-slimming/procedure-02.png",
+      "caption": "A microwave-based body treatment on the lower abdomen. The handpiece keeps moving over the marked area."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/body-slimming/procedure-03.png",
+      "caption": "A cooling applicator in place on the upper arm. The area is assessed and marked before the applicator goes on."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/body-slimming/procedure-04.png",
+      "caption": "Smaller areas such as the upper arm are assessed separately, because what suits the abdomen may not suit them."
+    }
+  ],
+  "risks": {
+    "items": [
+      {
+        "lead": "Common and usually temporary",
+        "body": "Redness, swelling, firmness, tenderness, bruising, tingling and numbness over the treated area, sometimes for several weeks. Muscle-stimulation treatment commonly leaves aching similar to a hard workout."
+      },
+      {
+        "lead": "Uncommon but important",
+        "body": "Cooling-based fat reduction carries a rare risk of paradoxical adipose hyperplasia, where the treated area enlarges rather than reduces and typically requires surgical correction. Prolonged numbness and, rarely, changes in skin sensation can also occur."
+      },
+      {
+        "lead": "Pigment change and Malaysian skin",
+        "body": "Where energy-based devices are used, medium and deeper skin tones carry a higher chance of post-inflammatory pigment change in the treated area. Body skin also heals more slowly than the face, so settings are conservative and the area is kept covered or protected afterwards."
+      },
+      {
+        "lead": "What treatment cannot do",
+        "body": "It brings no metabolic health benefit, and it cannot reduce overall weight, treat obesity or tighten loose skin. Cellulite is not removed. Change builds over weeks to months."
+      }
+    ],
+    "disclose": "Tell your doctor if you are pregnant, breastfeeding or planning pregnancy, have a hernia in or near the area, have a pacemaker or metal implant, take blood thinners, have a cold-sensitivity condition such as cryoglobulinaemia or cold urticaria, or have had surgery in the area."
+  },
+  "costFactors": {
+    "intro": "Pricing is set after assessment. It depends on:",
+    "factors": [
+      "Which area, and how many areas are being treated in a plan.",
+      "The size of the pocket, since larger areas take more applications to cover.",
+      "Which treatment applies, because fat reduction, firmness and muscle tone are different treatments.",
+      "How many sessions, which is set after assessment and reviewed as the area responds.",
+      "Whether treatments are combined, which is common where fat and firmness both feature."
+    ]
+  },
+  "technologyIntro": "Fat volume, skin firmness and muscle tone are three different problems, and no single device addresses all three.",
+  "faqs": [
+    {
+      "q": "Is body contouring a way to lose weight?",
+      "a": "No. It reduces or reshapes fat in one specific area and does not change your overall weight, body mass index or metabolic health. It is not a treatment for obesity and it is not a substitute for diet and exercise. It is generally considered for people already near a weight they can maintain who have a localised area that has not responded."
+    },
+    {
+      "q": "Will the fat come back?",
+      "a": "Fat cells removed from a treated area do not return or move elsewhere. What can happen is that if you gain weight afterwards, the fat cells you still have throughout your body enlarge, including any remaining in the treated area, so the shape changes again. The result depends on your weight staying reasonably stable."
+    },
+    {
+      "q": "How soon will I see a difference?",
+      "a": "Gradually. Fat-reduction treatment works by causing treated cells to be cleared by the body over the following weeks and months, so there is nothing to see immediately and the area may in fact look swollen at first. Muscle-stimulation treatment builds tone over a course."
+    },
+    {
+      "q": "Does it hurt?",
+      "a": "Cooling-based treatment is uncomfortable at first as the area numbs, then usually tolerable, with pulling and tugging sensations from the applicator. Afterwards the area is often tender, swollen and numb for some time, and a deep ache in the first days is common. Muscle stimulation feels like intense involuntary contractions and leaves aching similar to a hard workout. None of it requires anaesthetic."
+    },
+    {
+      "q": "Can it treat cellulite?",
+      "a": "The appearance can sometimes be improved, but cellulite is not removed by any treatment on this page. It is caused by fibrous bands tethering the skin to deeper tissue while fat pushes up between them, and it is present in people of every size and fitness level."
+    },
+    {
+      "q": "Will it tighten loose skin?",
+      "a": "Not on its own, and reducing the fat beneath loose skin can make the looseness more obvious. Skin firmness is a separate problem from fat volume, assessed separately, and after significant weight loss or pregnancy it is often the leading issue."
+    },
+    {
+      "q": "Can I have this after pregnancy?",
+      "a": "It is generally deferred until you have finished breastfeeding and your weight and body have settled, which usually takes several months at least. Abdominal separation is also assessed first, because a gap between the abdominal muscles produces a shape no contouring treatment addresses and is managed with physiotherapy."
+    },
+    {
+      "q": "How do I know if I'm a suitable candidate?",
+      "a": "The usual picture is someone at or near a stable weight, in reasonable health, with a defined area that has not responded to diet and exercise, and with realistic expectations about the scale of change. The pinch test at assessment decides whether the fat can be treated with the equipment available. If your weight is still moving, or if the concern is overall size, the honest answer is often no."
+    }
+  ],
+  "relatedConcerns": [
+    {
+      "slug": "face-contouring",
+      "reason": "Fullness under the chin is the same principle applied to a smaller area."
+    },
+    {
+      "slug": "face-lifting",
+      "reason": "Skin firmness after fat reduction is assessed the same way."
+    },
+    {
+      "slug": "aging",
+      "reason": "Skin quality and laxity change on the body as well as the face."
+    }
+  ]
+}

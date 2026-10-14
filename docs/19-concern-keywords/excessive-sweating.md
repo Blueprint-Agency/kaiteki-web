@@ -97,3 +97,29 @@ Same as `acne.md`: Google Autocomplete (`client=firefox&gl=my`, `hl=zh-CN` / `hl
 5. **GP** → 家庭医生 (zh) and *doktor am* (ms).
 6. **Cure wording.** Only negated: 本页没有任何一项能治愈原发性多汗症 / 原发性多汗症无法治愈; *tidak dapat disembuhkan* / *Tiada apa-apa … yang menyembuhkan*. The validator raised no L-03r on either file.
 7. **Illustration caption** keeps "示意图，并非患者的真实效果" / "Ilustrasi, bukan hasil pesakit", as EN does.
+
+## Re-sync 2026-10-14 (English rewrite)
+
+The sync tool kept every translation whose English was unchanged and blanked 28 strings per locale. **None of the 28 is search-relevant** (no seoTitle, seoDescription, name, headings, tab titles, location/seeDoctor headings, FAQ questions or jumpNav labels were reworded), so no Autocomplete probes were run and every decision above still stands.
+
+### Chinese (`/zh`)
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| (none) | n/a | n/a | n/a |
+
+### Malay (`/ms`)
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| (none) | n/a | n/a | n/a |
+
+**Body blanks translated directly:** 28 zh, 28 ms (leadAnswer, banner alt, sections[0] body[1], drivers intro/items/outro, secondary tab body, location intro and underarm card, seeDoctor intro and outro, ctaMid body, treatments intro and note, first-visit intro and step 4, risks[1] and [3], cost intro, six FAQ answers). Most are the old translation trimmed to the shorter English; nothing was added or strengthened.
+
+**Reviewer notes**
+
+1. New `seeDoctor.outro` routes night sweats, weight loss, fever or one-sided sweating to the GP first: 家庭医生 / *doktor am* (as in note 5 above).
+2. New `leadAnswer` and `treatmentsNote` name clinical-strength antiperspirant as the first step: 医学级止汗剂 / *antiperspirant gred klinikal*, same terms as before.
+3. Cure wording stays negated only (本页没有任何一项能治愈原发性多汗症 / *Tiada apa-apa … yang menyembuhkan*; FAQ 3 无法治愈 / *tidak dapat disembuhkan*). The validator raised no L-03r on either file.
+4. FAQ 4 answer gained a sentence on irritation and fungal infection from constant moisture: 真菌感染 / *jangkitan kulat*, matching the soles card.
+5. Banner alt rewritten for the new photo (sports top, towel, white brick wall).

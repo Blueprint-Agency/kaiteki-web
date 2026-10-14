@@ -6,7 +6,7 @@
   "group": "Hair & Body",
   "image": "https://cdn.kaiteki.my/concerns/hair-loss/card.jpg",
   "summary": "Rambut menipis, garis rambut yang makin ke belakang dan botak bertompok masing-masing mempunyai punca yang berbeza. Doktor menilai corak rambut gugur anda sebelum mencadangkan sama ada rawatan boleh membantu.",
-  "leadAnswer": "Rambut gugur mempunyai beberapa corak dan punca, dan sedikit keguguran rambut adalah normal. Mengenal pasti punca yang mungkin adalah penting sebelum mempertimbangkan rawatan. Konsultasi membantu menentukan pendekatan mana, jika ada, yang sesuai untuk anda.",
+  "leadAnswer": "Sedikit keguguran rambut setiap hari adalah normal. Rambut gugur ialah perubahan daripada corak biasa anda: rambut menipis keturunan yang beransur-ansur, keguguran tiba-tiba selepas sakit, bersalin atau tekanan, rambut gugur bertompok, atau rambut gugur akibat masalah kulit kepala atau masalah kesihatan seperti penyakit tiroid atau kekurangan zat besi. Punca menentukan pelan, dan rambut gugur diuruskan secara perubatan dahulu.",
   "treatments": [
     "exosome-therapy"
   ],
@@ -15,9 +15,9 @@
   "seoTitle": "Rawatan & Penilaian Rambut Gugur di Malaysia | Kaiteki",
   "seoDescription": "Rambut gugur ada beberapa corak dan punca, dan doktor mengenal pasti punca anda sebelum sebarang rawatan. Tempah konsultasi rambut gugur percuma di Kaiteki.",
   "banner": {
-    "src": "https://cdn.kaiteki.my/concerns/hair-loss/hero.jpg",
-    "sm": "https://cdn.kaiteki.my/concerns/hair-loss/hero-mobile.jpg",
-    "alt": "Gambar ilustrasi: seorang wanita menyikat rambutnya di depan dinding putih"
+    "src": "https://cdn.kaiteki.my/concerns/hair-loss/banner-skin.jpg",
+    "sm": "https://cdn.kaiteki.my/concerns/hair-loss/banner-skin-mobile.jpg",
+    "alt": "Gambar ilustrasi: tangan terbuka memegang segumpal rambut yang gugur, dengan sikat di latar belakang"
   },
   "facts": [
     {
@@ -65,16 +65,15 @@
   ],
   "sections": [
     {
-      "heading": "Memahami masalah rambut gugur",
+      "heading": "Rambut gugur: normal atau tidak?",
       "body": [
-        "Rambut gugur dan rambut menipis adalah perkara biasa dan dialami oleh lelaki dan perempuan. Apabila kita meningkat usia, folikel rambut boleh berubah dari semasa ke semasa, sama seperti bahagian badan yang lain, dan sedikit keguguran setiap hari ialah sebahagian normal daripada kitaran semula jadi rambut.",
         "Setiap folikel melalui kitaran yang berulang: fasa pertumbuhan aktif yang berlangsung bertahun-tahun, fasa peralihan yang singkat, dan fasa rehat, selepas itu rambut gugur dan folikel boleh bermula semula. Rambut di seluruh kulit kepala berada pada peringkat kitaran yang berbeza pada bila-bila masa, sebab itu menjumpai rambut di atas bantal atau di lubang air biasanya normal. Rambut gugur menjadi masalah apabila keseimbangan ini berubah, dan sebab ia berubah lebih penting daripada keguguran itu sendiri."
       ]
     }
   ],
   "drivers": {
-    "heading": "Punca rambut gugur yang biasa",
-    "intro": "Kajian tentang rambut gugur masih berjalan, dan biasanya beberapa faktor yang diketahui terlibat serentak. Senarai ini ialah apa yang doktor teliti satu per satu semasa penilaian.",
+    "heading": "Punca rambut gugur",
+    "intro": "Biasanya lebih daripada satu punca berlaku serentak:",
     "items": [
       {
         "lead": "Genetik dan sejarah keluarga:",
@@ -82,11 +81,11 @@
       },
       {
         "lead": "Perubahan hormon:",
-        "body": "bersalin, berhenti mengambil kontraseptif hormon, menopaus dan gangguan tiroid semuanya mempengaruhi kitaran pertumbuhan. Rambut gugur selepas perubahan hormon selalunya sementara, dan ini salah satu sebab untuk tidak tergesa-gesa memulakan rawatan."
+        "body": "bersalin, berhenti mengambil kontraseptif hormon, menopaus dan gangguan tiroid semuanya mempengaruhi kitaran pertumbuhan, dan keguguran ini selalunya sementara."
       },
       {
         "lead": "Tekanan fizikal atau emosi:",
-        "body": "pembedahan, penyakit serius, berat badan turun dengan cepat atau tempoh tekanan yang teruk boleh menolak banyak folikel ke fasa rehat serentak. Keguguran biasanya muncul dua hingga tiga bulan selepas kejadian itu, cukup lama sehingga ramai orang tidak perasan kaitannya."
+        "body": "pembedahan, penyakit serius, berat badan turun dengan cepat atau tempoh tekanan yang teruk boleh menolak banyak folikel ke fasa rehat serentak."
       },
       {
         "lead": "Masalah kulit kepala:",
@@ -94,22 +93,22 @@
       },
       {
         "lead": "Masalah kesihatan yang mendasari:",
-        "body": "penyakit tiroid, kekurangan zat besi, penyakit autoimun dan sesetengah penyakit kronik semuanya boleh dilihat pada rambut. Sebab itu ujian darah selalunya sebahagian daripada penilaian, bukan jualan tambahan."
+        "body": "penyakit tiroid, kekurangan zat besi, penyakit autoimun dan sesetengah penyakit kronik semuanya boleh dilihat pada rambut."
       },
       {
         "lead": "Pemakanan dan ubat-ubatan:",
-        "body": "diet yang terlalu ketat, kekurangan zat besi atau protein, dan ubat-ubatan tertentu semuanya boleh menyumbang. Suplemen berlebihan juga bukan tanpa kesan: terlalu banyak sesetengah nutrien sendiri boleh menyebabkan rambut gugur."
+        "body": "diet yang terlalu ketat, kekurangan zat besi atau protein, dan ubat-ubatan tertentu semuanya boleh menyumbang."
       },
       {
         "lead": "Tarikan dan gaya rambut:",
         "body": "tocang, ikatan ekor kuda atau sambungan rambut yang ketat secara berterusan menarik folikel selama bertahun-tahun. Jika dikesan awal, ia boleh dipulihkan; jika dibiarkan terlalu lama, folikel menjadi parut dan tidak boleh dipulihkan lagi."
       }
     ],
-    "outro": "Biasanya lebih daripada satu punca terlibat. Rambut menipis keturunan yang terserlah selepas setahun yang penuh tekanan jauh lebih biasa daripada mana-mana punca yang bertindak sendirian, sebab itu satu penjelasan jarang memberi jawapan yang lengkap."
+    "outro": "Rambut menipis keturunan yang terserlah selepas setahun yang penuh tekanan lebih biasa daripada mana-mana punca yang bertindak sendirian."
   },
   "variant": {
     "kind": "tabs",
-    "heading": "Jenis rambut gugur: yang mana satu anda alami?",
+    "heading": "Jenis rambut gugur",
     "intro": "Perkara paling berguna yang dilakukan oleh penilaian di sini ialah membezakan rambut gugur yang merupakan masalah itu sendiri daripada rambut gugur yang merupakan tanda masalah lain. Yang kedua perlu disiasat dahulu, bukan terus dirawat.",
     "tabs": [
       {
@@ -119,12 +118,8 @@
         "body": "Rambut menipis secara beransur-ansur dengan taburan yang boleh dijangka: garis rambut di pelipis yang makin ke belakang dan bahagian atas kepala (ubun-ubun) bagi lelaki, dan belahan rambut di tengah yang makin luas dengan garis rambut depan yang masih di tempatnya bagi perempuan. Ia berlaku selama bertahun-tahun, tanpa keradangan, gatal atau keguguran yang tiba-tiba bertambah.",
         "items": [
           {
-            "lead": "Cara kenal pasti:",
+            "lead": "Tandanya:",
             "body": "rambut menjadi lebih halus dan pendek dari semasa ke semasa, bukan gugur dalam jumlah yang banyak, dan coraknya biasa dilihat pada ahli keluarga."
-          },
-          {
-            "lead": "Maksudnya:",
-            "body": "ia keadaan jangka panjang yang perlu diuruskan, bukan kejadian yang boleh dibaiki sekali, dan tindakan lebih awal biasanya meninggalkan lebih banyak rambut untuk diusahakan."
           }
         ],
         "routing": "dinilai untuk pengurusan perubatan jangka panjang, dengan rawatan sokongan di klinik dibincangkan bersama."
@@ -133,15 +128,11 @@
         "label": "Punca lain",
         "sub": "Tiba-tiba, bertompok atau bersama simptom",
         "title": "Rambut gugur sebagai tanda masalah lain",
-        "body": "Rambut gugur yang berlaku secara tiba-tiba, muncul dalam tompok yang jelas, berlaku selepas sakit atau perubahan hormon, atau disertai kulit kepala yang gatal, bersisik, pedih atau berparut. Di sini rambut ialah isyarat, dan merawatnya secara kosmetik tanpa mencari punca hanya membuang masa.",
+        "body": "Rambut gugur yang berlaku secara tiba-tiba, muncul dalam tompok yang jelas, berlaku selepas sakit atau perubahan hormon, atau disertai kulit kepala yang gatal, bersisik, pedih atau berparut. Di sini rambut ialah isyarat.",
         "items": [
           {
-            "lead": "Cara kenal pasti:",
+            "lead": "Tandanya:",
             "body": "perubahan yang jelas dalam beberapa minggu, bukan bertahun-tahun, tompok botak yang nyata, atau simptom kulit kepala bersama keguguran rambut."
-          },
-          {
-            "lead": "Maksudnya:",
-            "body": "siasat dahulu. Ujian darah, pemeriksaan kulit kepala dan kadangkala rujukan, kerana beberapa punca di sini boleh dirawat dan ada yang perlu ditangani segera."
           }
         ],
         "routing": "dinilai melalui pemeriksaan dan, jika perlu, ujian darah, sebelum sebarang rawatan kosmetik dibincangkan."
@@ -149,8 +140,8 @@
     ]
   },
   "locationBlock": {
-    "heading": "Corak rambut gugur di kulit kepala",
-    "intro": "Di mana rambut menipis ialah antara perkara paling bermaklumat yang doktor perhatikan, dan inilah yang jarang dapat dirakam dengan baik oleh gambar.",
+    "heading": "Corak di kulit kepala",
+    "intro": "Di mana rambut menipis ialah antara perkara paling bermaklumat yang doktor perhatikan.",
     "cards": [
       {
         "title": "Pelipis dan garis rambut yang makin ke belakang",
@@ -158,15 +149,15 @@
       },
       {
         "title": "Botak di bahagian atas kepala (ubun-ubun)",
-        "body": "Rambut menipis di bahagian belakang atas kepala selalunya tidak disedari sehingga orang lain menegurnya atau ia kelihatan dalam gambar. Ia lokasi corak yang biasa, dan ramai orang memantaunya dengan cermin selama beberapa bulan."
+        "body": "Rambut menipis di bahagian belakang atas kepala selalunya tidak disedari sehingga orang lain menegurnya atau ia kelihatan dalam gambar."
       },
       {
         "title": "Belahan rambut di tengah yang makin luas",
-        "body": "Corak perempuan yang paling biasa: belahan rambut semakin luas sementara garis rambut depan masih utuh. Membandingkan belahan rambut dengan gambar beberapa tahun lalu selalunya lebih bermaklumat daripada mengira helai rambut yang gugur."
+        "body": "Corak perempuan yang paling biasa: belahan rambut semakin luas sementara garis rambut depan masih utuh."
       },
       {
         "title": "Botak bulat bertompok",
-        "body": "Tompok botak yang licin dan jelas bentuknya, yang muncul dalam beberapa minggu, ialah keadaan yang sama sekali berbeza daripada rambut gugur berpola, dan ia memerlukan penilaian perubatan, bukan pelan kosmetik."
+        "body": "Tompok botak yang licin dan jelas bentuknya, yang muncul dalam beberapa minggu: keadaan yang berbeza daripada rambut gugur berpola, dan memerlukan penilaian perubatan."
       },
       {
         "title": "Rambut menipis di seluruh kepala",
@@ -186,23 +177,22 @@
       "Ia muncul dalam tompok yang jelas, bukan menipis secara sekata.",
       "Kulit kepala gatal, pedih, bersisik, merah, atau licin berkilat di tempat rambut sudah hilang.",
       "Ia berlaku selepas bersalin, sakit, pembedahan, berat badan turun dengan cepat atau pertukaran ubat.",
-      "Anda juga perasan keletihan, perubahan berat badan, atau perubahan pada kuku atau kulit.",
-      "Ia berlaku secara beransur-ansur, menjejaskan keyakinan diri anda, dan anda mahu memahami pilihan anda selagi masih ada rambut untuk diusahakan."
+      "Anda juga perasan keletihan, perubahan berat badan, atau perubahan pada kuku atau kulit."
     ],
-    "outro": "Masa benar-benar penting di sini, lebih daripada kebanyakan masalah kosmetik. Folikel yang sudah tidak aktif bertahun-tahun berkelakuan berbeza daripada folikel yang masih menghasilkan rambut halus, dan penyakit berparut menyebabkan keguguran yang tidak dapat dipulihkan jika dibiarkan. Penilaian awal bukan ayat jualan di halaman ini; ia nasihat yang jujur."
+    "outro": "Masa lebih penting di sini berbanding kebanyakan masalah lain: penyakit berparut menyebabkan keguguran yang tidak dapat dipulihkan jika dibiarkan."
   },
   "ctaMid": {
     "heading": "Tak pasti jenis rambut gugur yang anda alami?",
-    "body": "Rambut menipis berpola yang beransur-ansur dan rambut gugur yang menandakan masalah lain memerlukan tindakan yang sama sekali berbeza. Hantar gambar kepada kami di WhatsApp dan doktor boleh beritahu anda yang mana perlu diperiksa dahulu."
+    "body": "Hantar gambar kepada kami di WhatsApp dan doktor boleh beritahu anda yang mana perlu diperiksa dahulu."
   },
   "treatmentsIntro": "Rambut gugur diuruskan secara perubatan dahulu. Apa yang kami tawarkan di klinik melengkapkannya, bukan menggantikannya, dan sama ada ia sesuai bergantung sepenuhnya pada hasil penilaian.",
   "treatmentWhy": {
     "exosome-therapy": {
       "why": "Untuk menyokong kulit kepala bersama rawatan perubatan",
-      "body": "Persediaan regeneratif yang dikenakan pada kulit kepala untuk menyokong persekitaran folikel. Asas bukti masih berkembang, dan ia ditawarkan sebagai tambahan kepada pengurusan perubatan, bukan sebagai rawatan rambut gugur yang tersendiri. Ia bukan pengganti untuk mencari punca."
+      "body": "Persediaan regeneratif yang dikenakan pada kulit kepala untuk menyokong persekitaran folikel. Asas bukti masih berkembang, dan ia ditawarkan sebagai tambahan kepada pengurusan perubatan, bukan sebagai rawatan rambut gugur yang tersendiri."
     }
   },
-  "treatmentsNote": "Jika penilaian menunjukkan masalah kulit kepala, kekurangan nutrien atau punca perubatan yang mendasari, itu dirawat dahulu: rambut jarang bertambah baik selagi sebab ia gugur tidak ditangani. Sesetengah punca diuruskan dengan rawatan perubatan yang dipreskripsi, yang akan dibincangkan oleh doktor dengan anda secara individu, bukan diiklankan di sini.",
+  "treatmentsNote": "Jika penilaian menemui masalah kulit kepala, kekurangan nutrien atau punca perubatan, itu dirawat dahulu. Pilihan rawatan preskripsi dibincangkan secara individu, bukan diiklankan.",
   "results": [
     {
       "src": "https://cdn.kaiteki.my/concerns/hair-loss/before-after-01.jpg",
@@ -236,7 +226,7 @@
     }
   ],
   "firstVisit": {
-    "intro": "Konsultasi adalah percuma dan tiada paksaan untuk menempah rawatan selepas itu. Ia biasanya mengambil masa 20 hingga 30 minit.",
+    "intro": "Kulit kepala diperiksa selain rambut, dan ujian darah selalunya sebahagian daripadanya.",
     "steps": [
       {
         "title": "Sejarah",
@@ -252,10 +242,10 @@
       },
       {
         "title": "Perbincangan dan pelan",
-        "body": "Apa punca yang mungkin, apa yang terlibat dalam pengurusan perubatan, di mana rawatan klinik sesuai, dan apa yang realistik. Anda boleh bawa pelan itu pulang dan fikir dahulu."
+        "body": "Apa punca yang mungkin, apa yang terlibat dalam pengurusan perubatan, di mana rawatan klinik sesuai, dan apa yang realistik."
       }
     ],
-    "outro": "Bawa gambar rambut anda dari satu, tiga dan lima tahun lalu jika ada. Itulah perkara paling berguna yang boleh anda bawa, kerana perubahan yang beransur-ansur hampir mustahil dinilai daripada ingatan."
+    "outro": "Bawa gambar rambut anda dari satu, tiga dan lima tahun lalu jika ada."
   },
   "figures": [
     {
@@ -266,17 +256,11 @@
       "src": "https://cdn.kaiteki.my/concerns/hair-loss/image-widening-parting.jpg",
       "caption": "Bagi perempuan, rambut gugur akibat hormon dan genetik lebih kerap kelihatan sebagai belahan rambut yang makin luas berbanding tompok botak."
     },
-    {
-      "src": "https://cdn.kaiteki.my/concerns/hair-loss/image-stress.jpg",
-      "caption": "Rambut gugur akibat tekanan fizikal atau emosi biasanya muncul dua hingga tiga bulan selepas kejadian itu."
-    },
     null,
     null,
     null,
-    {
-      "src": "https://cdn.kaiteki.my/concerns/hair-loss/image-traction-styling.jpg",
-      "caption": "Ikatan ekor kuda, tocang dan sambungan rambut yang ketat menarik rambut pada akarnya, dan lama-kelamaan ini boleh menipiskan garis rambut."
-    }
+    null,
+    null
   ],
   "visitImages": [
     {
@@ -289,11 +273,10 @@
     },
     {
       "src": "https://cdn.kaiteki.my/concerns/hair-loss/procedure-04.png",
-      "caption": "Sesetengah rawatan kulit kepala menggunakan mesin, bukan jarum. Yang mana sesuai untuk anda bergantung pada punca rambut gugur."
+      "caption": "Sesetengah rawatan kulit kepala menggunakan mesin, bukan jarum."
     }
   ],
   "risks": {
-    "intro": "Setiap rawatan yang dibincangkan di halaman ini membawa sedikit risiko.",
     "items": [
       {
         "lead": "Biasa dan selalunya sementara",
@@ -301,38 +284,37 @@
       },
       {
         "lead": "Asas bukti masih berkembang",
-        "body": "Rawatan regeneratif untuk rambut ialah bidang kajian yang aktif, bukan amalan yang sudah mantap. Itu bukan sebab untuk mengelaknya, tetapi ia sebab untuk anda diberitahu dengan jujur di mana kedudukan bukti sebelum membayar untuk satu kursus, dan untuk berwaspada dengan sesiapa yang menggambarkannya sebagai sudah terbukti."
+        "body": "Rawatan regeneratif untuk rambut ialah bidang kajian yang aktif, bukan amalan yang sudah mantap. Itu bukan sebab untuk mengelaknya, tetapi ia sebab untuk anda diberitahu dengan jujur di mana kedudukan bukti sebelum membayar untuk satu kursus."
       },
       {
         "lead": "Merawat masalah yang salah",
-        "body": "Risiko yang paling besar akibatnya di halaman ini bukan kesan sampingan. Ia ialah menghabiskan berbulan-bulan untuk rawatan kosmetik sementara gangguan tiroid, kekurangan zat besi atau penyakit kulit kepala berparut tidak didiagnosis. Sebab itu di sini penilaian dibuat sebelum rawatan, bukan serentak dengannya."
+        "body": "Risiko yang paling besar akibatnya di halaman ini bukan kesan sampingan. Ia ialah menghabiskan berbulan-bulan untuk rawatan kosmetik sementara gangguan tiroid, kekurangan zat besi atau penyakit kulit kepala berparut tidak didiagnosis."
       },
       {
-        "lead": "Apa yang rawatan tidak boleh lakukan",
-        "body": "Tiada rawatan yang dapat memulihkan folikel yang sudah berparut atau tidak aktif bertahun-tahun, dan tiada apa di sini yang mengubah kecenderungan keturunan di sebalik rambut gugur berpola. Perubahan biasanya perlahan, diukur dalam tempoh berbulan-bulan, dan perlu diselenggara, bukan berkekalan. Sesiapa yang menjanjikan rambut tumbuh semula mengikut jadual tidak bercakap benar dengan anda."
+        "lead": "Apa yang rawatan tidak dapat lakukan",
+        "body": "Tiada rawatan yang dapat memulihkan folikel yang sudah berparut atau tidak aktif bertahun-tahun, dan tiada apa di sini yang mengubah kecenderungan keturunan di sebalik rambut gugur berpola. Perubahan biasanya perlahan, diukur dalam tempoh berbulan-bulan, dan perlu diselenggara, bukan berkekalan."
       }
     ],
     "disclose": "Beritahu doktor anda jika anda hamil, menyusu atau merancang kehamilan, mengambil ubat pencair darah, mempunyai penyakit autoimun atau gangguan tiroid, mengambil sebarang ubat atau suplemen secara tetap, atau pernah mengalami masalah kulit kepala, pembedahan kulit kepala atau pemindahan rambut."
   },
   "costFactors": {
-    "intro": "Kos tidak dipaparkan kerana ia bergantung pada penilaian. Tetapi elok anda tahu apa yang mempengaruhinya sebelum datang:",
+    "intro": "Harga ditetapkan selepas penilaian. Ia bergantung pada:",
     "factors": [
       "Sama ada siasatan seperti ujian darah diperlukan sebelum apa-apa dirancang.",
       "Kawasan yang dirawat, kerana garis rambut yang makin ke belakang dan kulit kepala yang menipis menyeluruh berbeza skalanya.",
       "Berapa banyak sesi, yang ditetapkan selepas penilaian dan dinilai semula mengikut tindak balas kulit kepala.",
       "Sama ada pengurusan perubatan berterusan menjadi sebahagian daripada pelan bersama rawatan di klinik.",
       "Berapa lama pelan itu berjalan, kerana perubahan rambut dinilai dalam tempoh berbulan-bulan, bukan berminggu-minggu."
-    ],
-    "outro": "Doktor akan menerangkan butirannya kepada anda semasa konsultasi, termasuk apa yang akan dinilai semula dan bila, sebelum anda bersetuju dengan apa-apa."
+    ]
   },
   "faqs": [
     {
       "q": "Rambut gugur berapa helai sehari yang masih normal?",
-      "a": "Menjumpai rambut di atas bantal, semasa mandi atau pada sikat ialah sebahagian normal daripada kitaran pertumbuhan, dan kebanyakan orang kehilangan jumlah yang ketara setiap hari tanpa rambut mereka menipis langsung. Yang penting ialah perubahan: keguguran yang lebih banyak daripada biasa bagi anda, berterusan selama beberapa minggu, atau belahan rambut atau garis rambut yang nampak berbeza daripada gambar setahun dua lalu. Ketika itulah ia berbaloi dinilai."
+      "a": "Menjumpai rambut di atas bantal, semasa mandi atau pada sikat ialah sebahagian normal daripada kitaran pertumbuhan, dan kebanyakan orang kehilangan jumlah yang ketara setiap hari tanpa rambut mereka menipis langsung. Yang penting ialah perubahan: keguguran yang lebih banyak daripada biasa bagi anda, berterusan selama beberapa minggu, atau belahan rambut atau garis rambut yang nampak berbeza daripada gambar setahun dua lalu."
     },
     {
       "q": "Rambut gugur boleh dirawat ke?",
-      "a": "Ia bergantung sepenuhnya pada punca, sebab itu penilaian lebih penting di sini daripada rawatan. Rambut gugur akibat gangguan tiroid, kekurangan zat besi, jangkitan kulit kepala atau peristiwa yang menekan selalunya bertambah baik apabila punca itu ditangani. Rambut gugur berpola keturunan diuruskan untuk jangka panjang, bukan disembuhkan. Penyakit berparut menyebabkan keguguran yang tidak dapat dipulihkan, dan di situ matlamatnya ialah menghentikan kerosakan lanjut, bukan mendapatkan semula apa yang sudah hilang."
+      "a": "Ia bergantung sepenuhnya pada punca. Rambut gugur akibat gangguan tiroid, kekurangan zat besi, jangkitan kulit kepala atau peristiwa yang menekan selalunya bertambah baik apabila punca itu ditangani. Rambut gugur berpola keturunan diuruskan untuk jangka panjang, bukan disembuhkan. Penyakit berparut menyebabkan keguguran yang tidak dapat dipulihkan, dan di situ matlamatnya ialah menghentikan kerosakan lanjut, bukan mendapatkan semula apa yang sudah hilang."
     },
     {
       "q": "Kenapa masa sangat penting?",
@@ -340,7 +322,7 @@
     },
     {
       "q": "Perlu buat ujian darah ke?",
-      "a": "Selalunya ya, terutamanya jika rambut gugur secara menyeluruh, tiba-tiba atau disertai simptom lain. Fungsi tiroid dan tahap zat besi ialah faktor yang biasa dan boleh dirawat, yang tidak dapat ditangani oleh sebarang syampu atau rawatan di klinik, dan menemui salah satunya mengubah pelan sepenuhnya. Jika sesebuah klinik mencadangkan satu kursus rawatan untuk rambut gugur menyeluruh tanpa menyiasat apa-apa, itu patut dipersoalkan."
+      "a": "Selalunya ya, terutamanya jika rambut gugur secara menyeluruh, tiba-tiba atau disertai simptom lain. Fungsi tiroid dan tahap zat besi ialah faktor yang biasa dan boleh dirawat, yang tidak dapat ditangani oleh sebarang syampu atau rawatan di klinik, dan menemui salah satunya mengubah pelan sepenuhnya."
     },
     {
       "q": "Rambut gugur selepas bersalin akan pulih ke?",
@@ -348,7 +330,7 @@
     },
     {
       "q": "Suplemen atau vitamin membantu rambut gugur ke?",
-      "a": "Hanya jika anda benar-benar kekurangan, dan dalam keadaan itu membetulkan kekurangan tersebut boleh membawa perbezaan yang nyata. Mengambil suplemen rambut tanpa mengetahui tahap anda hanyalah tekaan, dan ia bukan tanpa risiko: terlalu banyak sesetengah nutrien, termasuk selenium dan vitamin A, sendiri boleh menyebabkan rambut gugur. Bawa apa sahaja yang anda ambil ke konsultasi supaya ia boleh disemak dengan betul."
+      "a": "Hanya jika anda benar-benar kekurangan, dan dalam keadaan itu membetulkan kekurangan tersebut boleh membawa perbezaan yang nyata. Mengambil suplemen rambut tanpa mengetahui tahap anda hanyalah tekaan, dan ia bukan tanpa risiko: terlalu banyak sesetengah nutrien, termasuk selenium dan vitamin A, sendiri boleh menyebabkan rambut gugur."
     },
     {
       "q": "Stress boleh menyebabkan rambut gugur ke?",
@@ -356,7 +338,7 @@
     },
     {
       "q": "Perempuan pun boleh alami rambut gugur ke?",
-      "a": "Ya, dan ia jauh lebih biasa daripada yang digambarkan dalam perbincangan umum. Coraknya berbeza: perempuan lebih kerap perasan belahan rambut di tengah yang makin luas dengan garis rambut depan yang masih di tempatnya, bukan garis rambut yang makin ke belakang. Perubahan hormon, tahap zat besi dan fungsi tiroid semuanya penyumbang yang kerap dan diperiksa secara rutin. Ia dinilai dengan cara yang sama, iaitu memeriksa kulit kepala dan mencari puncanya."
+      "a": "Ya, dan ia jauh lebih biasa daripada yang digambarkan dalam perbincangan umum. Coraknya berbeza: perempuan lebih kerap perasan belahan rambut di tengah yang makin luas dengan garis rambut depan yang masih di tempatnya, bukan garis rambut yang makin ke belakang. Perubahan hormon, tahap zat besi dan fungsi tiroid semuanya penyumbang yang kerap dan diperiksa secara rutin."
     }
   ],
   "relatedConcerns": [

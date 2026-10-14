@@ -1,0 +1,335 @@
+{
+  "slug": "birthmark",
+  "ctaHeading": "Not sure which type you have?",
+  "ctaAssesses": "your birthmark",
+  "name": "Birthmark",
+  "group": "Skin",
+  "image": "https://cdn.kaiteki.my/concerns/birthmark/card.jpg",
+  "summary": "Not all birthmarks respond to treatment the same way. A doctor evaluates the type, depth and location before discussing options.",
+  "leadAnswer": "Birthmarks are marks present at or soon after birth, made either of clustered pigment cells (café-au-lait patches, naevus of Ota, Mongolian spots) or of blood vessels (port-wine stains, salmon patches, haemangiomas). Most are harmless, many fade on their own, and the two families are treated with different lasers, or not at all.",
+  "treatments": [
+    "pico-laser",
+    "vascular-pigment-laser"
+  ],
+  "reviewedBy": "dr-lucas-chew",
+  "lastReviewed": "2026-07-13",
+  "seoTitle": "Birthmark Removal Assessment in Malaysia | Kaiteki",
+  "seoDescription": "Birthmarks vary widely in type and cause, and most are harmless. A doctor examines yours before discussing birthmark removal. Book a free consultation.",
+  "banner": {
+    "src": "https://cdn.kaiteki.my/concerns/birthmark/hero.jpg",
+    "sm": "https://cdn.kaiteki.my/concerns/birthmark/hero-mobile.jpg",
+    "alt": "Illustrative photograph: a woman with a brown birthmark on her cheek"
+  },
+  "facts": [
+    {
+      "value": "Type before treatment",
+      "label": "Pigment birthmarks and blood-vessel birthmarks respond to different laser energy."
+    },
+    {
+      "value": "Some are left alone",
+      "label": "Several common birthmarks fade on their own or are better monitored than treated."
+    },
+    {
+      "value": "Change is the signal",
+      "label": "A birthmark that grows, darkens, bleeds or becomes raised should be examined."
+    }
+  ],
+  "jumpNav": [
+    {
+      "id": "which-type",
+      "label": "Which type is it?"
+    },
+    {
+      "id": "where",
+      "label": "Where it appears"
+    },
+    {
+      "id": "see-a-doctor",
+      "label": "When to see a doctor"
+    },
+    {
+      "id": "treatments",
+      "label": "Treatment"
+    },
+    {
+      "id": "risks",
+      "label": "Risks"
+    },
+    {
+      "id": "cost",
+      "label": "Cost"
+    },
+    {
+      "id": "faq",
+      "label": "FAQ"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is a birthmark?",
+      "body": [
+        "A birthmark is an area of skin that is discoloured from birth or appears in the first weeks of life. Birthmarks are common and most are benign, but they differ widely in cause, colour and depth, which is why they are assessed individually rather than treated as one thing.",
+        "Nothing a parent did or did not do during pregnancy causes a birthmark."
+      ]
+    }
+  ],
+  "drivers": {
+    "heading": "What a doctor looks at first",
+    "intro": "Three things decide whether a birthmark is a candidate for treatment at all, and which laser would even be relevant.",
+    "items": [
+      {
+        "lead": "Which structure it is made of.",
+        "body": "Pigmented birthmarks come from clusters of melanocytes, the pigment cells in the upper layer of skin. Vascular birthmarks come from blood vessels in the dermis below. Each absorbs a different wavelength of light."
+      },
+      {
+        "lead": "How deep the colour sits.",
+        "body": "Pigment near the surface looks brown; pigment deeper in the dermis looks blue or grey. A slate-grey patch over an infant's lower back is usually a Mongolian spot, which is common in Asian babies and normally fades during childhood without treatment."
+      },
+      {
+        "lead": "Whether it is changing.",
+        "body": "A mole or mark that is growing, darkening or becoming raised is examined and monitored rather than lasered, because laser can hide the changes a doctor needs to see."
+      }
+    ]
+  },
+  "figures": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/birthmark/image-how-birthmarks-form.jpg",
+      "caption": "Cross-section of skin: pigment cells (melanocytes) sit in the upper layer, blood vessels deeper in the dermis. Diagram: National Cancer Institute, public domain."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/birthmark/image-slate-grey-patch.jpg",
+      "caption": "A slate-grey Mongolian spot on an infant's lower back. Photo: abby lu, CC BY 2.0, via Wikimedia Commons."
+    },
+    null
+  ],
+  "variant": {
+    "kind": "tabs",
+    "heading": "Which type is it?",
+    "intro": "Some marks belong to neither treatment route.",
+    "tabs": [
+      {
+        "label": "Pigmented",
+        "sub": "Brown, blue or grey",
+        "title": "Pigmented birthmarks",
+        "body": "Flat patches that are light to dark brown, or blue-grey where the pigment sits deeper. Café-au-lait patches, naevus of Ota around the eye and temple, and Mongolian spots that persist past childhood all belong here.",
+        "items": [
+          {
+            "lead": "The tell:",
+            "body": "the colour does not blanch when pressed, and the surface is usually flat and smooth."
+          }
+        ],
+        "routing": "assessed for pigment laser, with a test area often discussed first."
+      },
+      {
+        "label": "Vascular",
+        "sub": "Pink, red or purple",
+        "title": "Vascular birthmarks",
+        "body": "Marks made of blood vessels: flat pink-to-purple port-wine stains, paler salmon patches, and raised haemangiomas in infancy. Port-wine stains persist and can darken or thicken with age, which is one reason adults seek treatment for them.",
+        "items": [
+          {
+            "lead": "The tell:",
+            "body": "the colour often fades briefly when pressed, and may look darker when warm, crying or exercising."
+          }
+        ],
+        "routing": "assessed for vascular laser, or referred to a paediatric specialist where an infant haemangioma is involved."
+      },
+      {
+        "label": "Monitor",
+        "sub": "Moles and changing marks",
+        "title": "Marks to watch, not laser",
+        "body": "Congenital moles, and any birthmark that has started to change, sit outside the cosmetic route. Lasering a mole can mask changes that matter, so these are examined, monitored and, where needed, referred for dermatological assessment.",
+        "items": [
+          {
+            "lead": "The tell:",
+            "body": "a raised or textured mark, hair growing from it, or any recent change in size, shape or colour."
+          }
+        ],
+        "routing": "assessed and photographed for monitoring, with referral where anything looks atypical."
+      }
+    ]
+  },
+  "locationBlock": {
+    "heading": "Where it appears",
+    "intro": "Where a birthmark sits affects both what it is likely to be and how it is approached.",
+    "cards": [
+      {
+        "title": "Around the eye and temple",
+        "body": "A blue-grey or brown patch here in an adult is often naevus of Ota. Treatment near the eye uses protective eye shields and extra care, and the eye itself is sometimes checked as part of the assessment."
+      },
+      {
+        "title": "Cheek and side of the face",
+        "body": "Port-wine stains and café-au-lait patches are common here. On the face, colour matching to the surrounding skin is the main consideration, so test areas and conservative settings are usual."
+      },
+      {
+        "title": "Forehead, eyelids and nape",
+        "body": "Salmon patches in babies: those on the face commonly fade; those on the nape more often persist."
+      },
+      {
+        "title": "Lower back and buttocks",
+        "body": "The usual site for Mongolian spots, which normally fade in childhood."
+      },
+      {
+        "title": "Trunk and limbs",
+        "body": "Café-au-lait patches and congenital moles are frequently found here. The number of café-au-lait patches matters as much as their appearance, which is why they are counted at assessment."
+      }
+    ],
+    "note": {
+      "title": "Several patches, or a mark across the forehead and eyelid?",
+      "body": "Six or more café-au-lait patches, or a port-wine stain over the forehead and upper eyelid, can occasionally be linked to conditions affecting other parts of the body. These are referred for medical assessment before any cosmetic treatment is discussed."
+    }
+  },
+  "seeDoctor": {
+    "heading": "When to see a doctor",
+    "intro": "Most birthmarks are harmless and stay that way. These are the reasons to have one examined:",
+    "triggers": [
+      "It is growing, changing shape, or developing an irregular or blurred edge.",
+      "The colour has changed, darkened unevenly, or now has several shades in it.",
+      "It has become raised, lumpy, itchy, crusted, or bleeds without an obvious injury.",
+      "A new pigmented mark has appeared in adulthood that you did not have before.",
+      "An infant's haemangioma is growing quickly, is near the eye, nose, lip or nappy area, or has broken down into a sore.",
+      "A child has several café-au-lait patches, or a port-wine stain across the forehead and eyelid."
+    ],
+    "outro": "Photographing a birthmark against a ruler every few months is the simplest way to track it. Change is what matters, and change is almost impossible to judge from memory."
+  },
+  "ctaMid": {
+    "heading": "Not sure whether yours is pigment or blood vessels?",
+    "body": "Send us a photo on WhatsApp and a doctor can tell you what it looks like and whether it is worth an in-person assessment."
+  },
+  "treatmentsIntro": "Birthmark treatment depends on which structure the mark is made of. Pigmented and vascular birthmarks are treated with different lasers, and some birthmarks are not treated at all.",
+  "treatmentWhy": {
+    "pico-laser": {
+      "why": "For pigment birthmarks such as naevus of Ota",
+      "body": "Very short laser pulses break up pigment in the skin so the body can gradually clear it. It is used for pigmented birthmarks, particularly deeper blue-grey marks such as naevus of Ota, and usually over several sessions. Café-au-lait patches respond less predictably and can recur."
+    },
+    "vascular-pigment-laser": {
+      "why": "For port-wine stains and other vessel birthmarks",
+      "body": "Laser energy absorbed by the blood in the vessels heats and closes them, lightening the colour of a vascular birthmark. Port-wine stains generally need a series of sessions, and the aim is usually lightening rather than complete clearance."
+    }
+  },
+  "treatmentsNote": "Congenital moles, changing marks and infant haemangiomas are not part of this route. Moles are monitored and referred where needed, and haemangiomas that need treatment are managed medically under a paediatric specialist rather than with cosmetic laser.",
+  "results": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/birthmark/before-after-01.png",
+      "nativeWidth": 1080,
+      "ratio": "1/1",
+      "caption": "Pigmented birthmark around the mouth, before and after laser treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/birthmark/before-after-02.png",
+      "nativeWidth": 1080,
+      "ratio": "1/1",
+      "caption": "Port-wine stain on the back of the neck, before and after vascular laser at Kaiteki"
+    }
+  ],
+  "firstVisit": {
+    "intro": "The doctor checks whether the colour blanches under pressure, which tells pigment from blood vessels.",
+    "steps": [
+      {
+        "title": "History",
+        "body": "When the mark first appeared, whether it has changed, any previous treatment, other similar marks on the body, and your skin's history with sun, pigmentation and scarring."
+      },
+      {
+        "title": "Examination",
+        "body": "Colour, depth, texture and edge, often under magnification."
+      },
+      {
+        "title": "Photographs",
+        "body": "Standardised photographs are taken so that any change, whether from treatment or over time, can be judged against a fixed record rather than memory."
+      },
+      {
+        "title": "Discussion and plan",
+        "body": "What the mark most likely is, whether treatment is appropriate, which laser if any, what a test area would involve, and what is realistic for that type. Referral is discussed here if anything needs it."
+      }
+    ],
+    "outro": "Bring any earlier photographs of the birthmark, especially from childhood. They are the most reliable way to show whether it has changed."
+  },
+  "visitImages": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/birthmark/procedure-02.png",
+      "caption": "A vascular laser in use. Its wavelength targets blood vessels, which is why it is used for red and purple marks."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/birthmark/procedure-03.png",
+      "caption": "Some small marks are treated with a fine laser handpiece that works on a very small area at a time."
+    }
+  ],
+  "risks": {
+    "items": [
+      {
+        "lead": "Common and usually temporary",
+        "body": "Redness, swelling and stinging after a session, and with vascular laser, purple-grey bruising over the treated area that can last one to two weeks. Small crusts or blisters can form and should be left to heal on their own."
+      },
+      {
+        "lead": "Pigment change",
+        "body": "Darkening (post-inflammatory hyperpigmentation) or lightening of the treated skin is possible with any laser, and is more likely in darker skin types and with sun exposure around treatment. It usually fades over months but can occasionally persist."
+      },
+      {
+        "lead": "Uncommon",
+        "body": "Scarring, a change in skin texture, and patchy or uneven lightening that leaves the mark looking mottled. A test area is used partly to show how your skin reacts before a larger area is treated."
+      },
+      {
+        "lead": "What treatment cannot do",
+        "body": "Laser cannot promise complete removal of any birthmark. Some types, café-au-lait patches in particular, can return after lightening, and port-wine stains are usually lightened rather than cleared. Laser is not used to remove congenital moles for appearance, and it does not change the underlying tendency that formed the mark."
+      }
+    ],
+    "disclose": "Tell your doctor if you are pregnant, take medication that makes skin sensitive to light, have a tendency to keloid or raised scars, have had recent sun exposure or a tan, or have had previous treatment on the birthmark."
+  },
+  "costFactors": {
+    "intro": "Pricing is set after assessment. It depends on:",
+    "factors": [
+      "The type of birthmark, since pigmented and vascular marks are treated with different lasers.",
+      "The size of the area and where it sits, because marks near the eye take more time and care.",
+      "Whether a test area is done first, which is common on the face and on darker skin.",
+      "How many sessions are planned, which varies widely between types and is reviewed as the mark responds.",
+      "The spacing between sessions, as some types need longer gaps for the skin to settle."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Can birthmarks be removed?",
+      "a": "It depends on the type, and outcomes vary between individuals. Some pigmented birthmarks, such as naevus of Ota, often lighten with a course of pigment laser, and port-wine stains are commonly lightened with vascular laser. Others, including congenital moles and many birthmarks in young children, are better monitored or left alone."
+    },
+    {
+      "q": "Are birthmarks dangerous?",
+      "a": "Most are harmless. The ones worth examining are marks that change: growing, darkening unevenly, becoming raised, bleeding or itching. Large congenital moles are monitored over time, and some birthmark patterns in children are checked for links to other conditions."
+    },
+    {
+      "q": "Why do different birthmarks need different treatments?",
+      "a": "Pigmented and vascular birthmarks arise from different structures in the skin, pigment cells versus blood vessels, and each absorbs a different wavelength of laser light. Using the wrong one does little to the mark and still carries the risks of treatment."
+    },
+    {
+      "q": "Will my child's birthmark fade on its own?",
+      "a": "Many do. Mongolian spots usually fade during childhood, salmon patches on the face often fade in the first years, and infant haemangiomas typically grow for several months before slowly shrinking. Port-wine stains and café-au-lait patches generally persist. A paediatric opinion is the right first step for a birthmark in a baby, particularly one that is growing quickly or sits near the eye, nose or mouth."
+    },
+    {
+      "q": "How many sessions does birthmark laser take?",
+      "a": "There is no standard number, because it depends on the type, depth, size and location of the mark and on how your skin responds. Pigment and vascular birthmarks usually need a series of sessions spaced weeks apart, and the plan is reviewed after each one."
+    },
+    {
+      "q": "Does birthmark laser hurt?",
+      "a": "Most people describe a snapping or stinging sensation, like a rubber band flicked against the skin. Numbing cream and skin cooling are commonly used to make sessions more comfortable. Sensitivity varies with the area treated, and skin near the eye or upper lip tends to feel more."
+    },
+    {
+      "q": "Can a birthmark come back after laser?",
+      "a": "Some can. Café-au-lait patches in particular may darken again after initial lightening, and port-wine stains can slowly re-darken over years. Sun exposure makes both more likely."
+    },
+    {
+      "q": "Can a mole I was born with be lasered off?",
+      "a": "Laser is not used to remove congenital moles for appearance. It can lighten the surface while leaving cells deeper down, which makes future changes harder to spot. Moles are examined, photographed and monitored, and where removal is appropriate the doctor will refer you for dermatological assessment rather than offer laser."
+    }
+  ],
+  "relatedConcerns": [
+    {
+      "slug": "pigmentation",
+      "reason": "Pigment birthmarks and acquired pigmentation are told apart at the same assessment."
+    },
+    {
+      "slug": "vascular-lesions",
+      "reason": "Port-wine stains share their treatment approach with visible facial vessels."
+    },
+    {
+      "slug": "tattoo-removal",
+      "reason": "Pico laser targets birthmark pigment and tattoo ink by a similar mechanism."
+    }
+  ]
+}

@@ -52,8 +52,8 @@ import { localePath, type Locale } from "@/lib/i18n";
  *   · one reading column beside the blog's sticky contents rail, replacing the
  *     sticky 21rem heading gutter (`Split`) and the horizontal jump bar. Both
  *     stay on /treatments, which this file no longer shares a layout with;
- *   · exactly three surfaced bands, each used once: espresso is the conversion
- *     moment, tint the technology comparison, porcelain the safety notice.
+ *   · sections drawn from the shared kit in `page-blocks.tsx` (2026-10), with
+ *     one surface: the espresso mid-page CTA.
  *
  * A concern with no banner and no media renders the same page as clean text —
  * there is no placeholder furniture to advertise what is missing.
@@ -136,17 +136,6 @@ function Reading({
       </div>
     </Container>
   );
-}
-
-/**
- * A band inside the reading column. Bands carry their own full-width section
- * and Container, so below lg — where there is no rail and the column is the
- * page — the wrapper cancels the column's gutter and the band bleeds to the
- * screen edge as before. From lg the band stops at the column, leaving the
- * contents rail an unbroken gutter all the way down the article.
- */
-function Bleed({ children }: { children: ReactNode }) {
-  return <div className="-mx-5 sm:-mx-6 lg:mx-0">{children}</div>;
 }
 
 /**
@@ -295,8 +284,8 @@ export function ConcernView({
         rail={hasRail ? <ArticleToc headings={headings} variant="sidebar" label={ui.onThisPage} /> : undefined}
       >
         {hasRail && (
-          <div className="pt-10 lg:hidden">
-            <ArticleToc headings={headings} label={ui.onThisPage} />
+          <div className="pt-8 lg:hidden">
+            <ArticleToc headings={headings} variant="collapsed" label={ui.onThisPage} />
           </div>
         )}
 
@@ -360,12 +349,10 @@ export function ConcernView({
         {/* A rounded card inside the column at every width, so it does not bleed. */}
         <CtaMid cta={c.ctaMid} href={wa} position="mid" copy={en ? undefined : ui.ctaMid} />
 
-        {/* Results — breaks the prose measure but stays in the column, so the
+        {/* Results — large before/after pairs in the reading column, so the
             contents rail keeps running beside it. It renders its own disclaimer
             (ADR-0001 §2). */}
-        <Bleed>
-          <ResultsBlock items={c.results} ui={ui} locale={locale} />
-        </Bleed>
+        <ResultsBlock items={c.results} ui={ui} locale={locale} />
 
         {/* 15 · technology. The lead sentence is the point — a bare logo wall
             says nothing, "the device is matched to you" is a reason to choose

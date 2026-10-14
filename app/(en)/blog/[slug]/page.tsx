@@ -90,7 +90,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           datePublished: post.publishedAt,
           dateModified: post.updatedAt,
           section: post.category,
-          author: author!,
+          // A legacy author with no profile here is still named, just unlinked.
+          author: author ?? { fullName: post.authorName ?? "Kaiteki" },
           reviewer: reviewer,
         })}
       />
@@ -121,6 +122,9 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             <h1 className="mt-4 font-display text-[2.1rem] font-medium leading-[1.12] tracking-tight text-espresso sm:text-[2.75rem]">
               {post.title}
             </h1>
+            {!author && post.authorName && (
+              <p className="ledger mt-6">By {post.authorName}</p>
+            )}
             {reviewer && (
               <div className="mt-6 max-w-md">
                 <ReviewByline
@@ -159,9 +163,11 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           {/* Answer-first capsule: the 40–60 word direct answer, above the fold,
               so a reader (or an AI answer engine) gets the conclusion before the
               article earns it (docs/05 §1.3). */}
-          <p className="prose mt-8 border-l-2 border-sand bg-tint/60 py-4 pl-6 pr-5 text-lg leading-relaxed text-ink-700">
-            {post.leadAnswer}
-          </p>
+          {post.leadAnswer && (
+            <p className="prose mt-8 border-l-2 border-sand bg-tint/60 py-4 pl-6 pr-5 text-lg leading-relaxed text-ink-700">
+              {post.leadAnswer}
+            </p>
+          )}
 
           <div className="mt-8 lg:hidden">
             <ArticleToc headings={headings} />
@@ -227,11 +233,16 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             <div className="space-y-6 px-2">
               <Ledger
                 rows={[
-                  ...(author ? [{ label: "Written by", value: reviewerByline(author) }] : []),
+                  ...(author
+                    ? [{ label: "Written by", value: reviewerByline(author) }]
+                    : post.authorName
+                      ? [{ label: "Written by", value: post.authorName }]
+                      : []),
                   ...(reviewer && reviewer.slug !== author?.slug
                     ? [{ label: "Reviewed by", value: reviewerByline(reviewer) }]
                     : []),
                   { label: "Published", value: formatPostDate(post.publishedAt) },
+                  ...(post.tags?.length ? [{ label: "Topics", value: post.tags.join(", ") }] : []),
                   ...(post.updatedAt
                     ? [{ label: "Last reviewed", value: formatPostDate(post.updatedAt) }]
                     : []),

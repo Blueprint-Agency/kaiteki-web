@@ -4,7 +4,7 @@
   "group": "Face",
   "image": "https://cdn.kaiteki.my/concerns/face-contouring/card.jpg",
   "summary": "Garis rahang, isi pipi dan perkadaran muka boleh diperhalusi tanpa pembedahan. Doktor merancang pendekatan berdasarkan struktur muka anda.",
-  "leadAnswer": "Masalah kontur muka berkaitan dengan bentuk dan ketajaman bahagian seperti garis rahang dan dagu. Beberapa rawatan boleh dipertimbangkan, bergantung pada masalah dan anatomi anda. Konsultasi membantu menentukan pendekatan mana, jika ada, yang sesuai.",
+  "leadAnswer": "Kontur muka menangani bentuk dan ketajaman garis rahang, dagu dan pipi. Masalah yang sama boleh berpunca daripada lemak bawah dagu, otot rahang yang besar, kulit kendur atau dagu yang kurang unjuran, dan setiap satu dirawat secara berbeza. Rawatan tanpa pembedahan bertindak pada lapisan tisu lembut ini; ia tidak mengubah tulang.",
   "treatments": [
     "hifu",
     "fat-freezing",
@@ -19,7 +19,7 @@
   "banner": {
     "src": "https://cdn.kaiteki.my/concerns/face-contouring/hero.jpg",
     "sm": "https://cdn.kaiteki.my/concerns/face-contouring/hero-mobile.jpg",
-    "alt": "Gambar ilustrasi: profil sisi seseorang dengan cahaya jatuh di sepanjang garis rahang dan dagu"
+    "alt": "Gambar ilustrasi: seorang wanita muda yang tersenyum, menghadap kamera, dengan sebelah tangan diletakkan di pipinya"
   },
   "facts": [
     {
@@ -31,8 +31,8 @@
       "label": "Tulang, lemak, otot dan kulit semuanya membentuk garis rahang, dan setiap satu dirawat dengan cara berbeza."
     },
     {
-      "value": "Tulang tidak berubah",
-      "label": "Doktor mengenal pasti lapisan tisu lembut mana yang menjadi punca sebelum apa-apa dibincangkan."
+      "value": "Lapisan menentukan rawatan",
+      "label": "Lemak, otot, kulit dan unjuran masing-masing ada jawapan yang berbeza."
     }
   ],
   "jumpNav": [
@@ -70,13 +70,13 @@
       "heading": "Apa itu kontur muka?",
       "body": [
         "Kontur muka merujuk kepada bentuk, ketajaman dan perkadaran bahagian muka seperti garis rahang, dagu dan pipi. Ia tentang bagaimana bahagian-bahagian ini saling berkait, bukan satu bahagian sahaja secara berasingan.",
-        "Kontur yang nampak seimbang berbeza bagi setiap orang, dan ia dibentuk oleh tulang sama banyak seperti oleh apa-apa yang boleh diubah oleh klinik. Memahami struktur muka anda sendiri ialah langkah pertama untuk menilai sama ada rawatan relevan atau tidak."
+        "Kontur yang nampak seimbang berbeza bagi setiap orang, dan ia dibentuk oleh tulang sama banyak seperti oleh apa-apa yang boleh diubah oleh klinik."
       ]
     }
   ],
   "drivers": {
     "heading": "Apa yang mempengaruhi kontur muka",
-    "intro": "Tulang di bawah menentukan garis luar muka, dan tiada rawatan tanpa pembedahan yang boleh mengubahnya. Dalam garis luar itu, dua perubahan tisu lembut menjadi punca kebanyakan perkara yang orang perasan apabila mereka kata garis rahang sudah tidak tajam.",
+    "intro": "Dalam garis luar yang ditentukan oleh tulang, dua perubahan tisu lembut menjadi punca kebanyakan garis rahang yang hilang ketajaman:",
     "items": [
       {
         "lead": "Tisu lembut turun di sepanjang garis rahang:",
@@ -84,34 +84,33 @@
       },
       {
         "lead": "Lemak bawah dagu (dagu berlapis):",
-        "body": "satu poket lemak di kawasan submental, antara dagu dan leher, mengaburkan sudut antara keduanya. Ia boleh ada pada sebarang berat badan, dan selalunya degil walaupun dengan diet dan senaman."
+        "body": "satu poket lemak di kawasan submental, antara dagu dan leher, mengaburkan sudut antara keduanya. Ia boleh ada pada sebarang berat badan."
       }
-    ],
-    "outro": "Kehilangan isi di bahagian tengah muka juga mengubah perkadaran: apabila pipi menjadi leper, bahagian bawah muka nampak lebih berat secara perbandingan walaupun tiada apa yang berubah di situ. Saiz otot mengunyah, postur dan berat badan keseluruhan juga menyumbang, dan doktor mengasingkan faktor-faktor ini semasa penilaian kerana cara rawatannya sangat berbeza."
+    ]
   },
   "figures": [
     {
       "src": "https://cdn.kaiteki.my/concerns/face-contouring/image-sagging-jawline.jpg",
-      "caption": "Apabila tisu jatuh ke bawah, rahang nampak seperti dua garis, bukan satu. Inilah maksud kebanyakan orang apabila mereka kata garis rahang sudah hilang."
+      "caption": "Tisu yang turun memecahkan garis rahang menjadi dua garis."
     },
     {
       "src": "https://cdn.kaiteki.my/concerns/face-contouring/image-doublechin.jpg",
-      "caption": "Poket lemak di bawah dagu mengaburkan sudut antara rahang dan leher, dan ia boleh ada pada sebarang berat badan."
+      "caption": "Poket lemak bawah dagu mengaburkan sudut antara rahang dan leher."
     }
   ],
   "variant": {
     "kind": "tabs",
-    "heading": "Apa yang membentuk muka anda?",
-    "intro": "Garis rahang dibentuk oleh tulang, lemak, otot dan kulit. Ramai orang datang dengan gambaran masalah yang sama tetapi pulang dengan pelan yang sangat berbeza, kerana lapisan yang menjadi punca menentukan rawatannya. Kebanyakan muka melibatkan lebih daripada satu.",
+    "heading": "Punca bentuk muka anda",
+    "intro": "Garis rahang dibentuk oleh tulang, lemak, otot dan kulit, dan lapisan yang menjadi punca menentukan rawatannya. Kebanyakan muka melibatkan lebih daripada satu.",
     "tabs": [
       {
         "label": "Lemak",
         "sub": "Dagu berlapis (double chin)",
         "title": "Lemak bawah dagu atau di sepanjang rahang",
-        "body": "Poket lembut yang boleh dicubit, terletak antara dagu dan leher atau sedikit melimpah di atas garis rahang. Ia selalunya keturunan, kerap ada pada berat badan yang stabil dan sihat, dan jarang mengecil seiring dengan bahagian badan lain apabila berat badan turun.",
+        "body": "Poket lembut yang boleh dicubit, terletak antara dagu dan leher atau sedikit melimpah di atas garis rahang. Ia selalunya keturunan, dan kerap ada pada berat badan yang stabil dan sihat.",
         "items": [
           {
-            "lead": "Cara kenal pasti:",
+            "lead": "Tandanya:",
             "body": "anda boleh memegangnya antara ibu jari dan jari telunjuk, dan ia menjadi lembut atau beralih apabila anda mendongak."
           },
           {
@@ -128,12 +127,8 @@
         "body": "Otot masseter di belakang rahang mungkin memang kuat secara semula jadi, atau membesar akibat mengetap dan mengerot gigi, menjadikan bahagian bawah muka nampak lebar dari depan. Selalunya disertai rahang tegang, sakit rahang pada waktu pagi atau gigi yang haus.",
         "items": [
           {
-            "lead": "Cara kenal pasti:",
+            "lead": "Tandanya:",
             "body": "ketap gigi anda dan rasa sedikit di atas sudut rahang. Jika ada bonjolan pejal yang menolak di bawah jari, otot ialah sebahagian daripada puncanya."
-          },
-          {
-            "lead": "Perlu dimaklumkan:",
-            "body": "jika anda mengerot gigi semasa tidur atau bangun dengan rahang yang tegang, beritahu doktor. Ia mengubah penilaian dan juga sebab untuk merawat."
           }
         ],
         "routing": "dinilai untuk suntikan pelemas otot, dengan sebarang punca pergigian bagi tabiat mengerot gigi ditangani bersama."
@@ -145,12 +140,8 @@
         "body": "Garis luar rahang masih ada tetapi tepinya tidak lagi tajam, dengan sedikit gelambir di kedua-dua sisi dagu. Menarik kulit perlahan-lahan ke arah telinga mengembalikan garis itu, dan ini tanda paling jelas bahawa puncanya kulit kendur, bukan isi.",
         "items": [
           {
-            "lead": "Cara kenal pasti:",
+            "lead": "Tandanya:",
             "body": "ia nampak jauh lebih baik apabila berbaring, dan tarikan perlahan ke belakang dengan hujung jari mengembalikan garis luarnya."
-          },
-          {
-            "lead": "Biasa berlaku bersama:",
-            "body": "kulit kendur di bawah rahang dan di bahagian atas leher, yang biasanya dinilai pada masa yang sama."
           }
         ],
         "routing": "dinilai untuk rawatan tegang berasaskan tenaga; lihat halaman tegang & angkat muka kami untuk penjelasan lebih mendalam tentang cara kulit kendur dirawat."
@@ -162,12 +153,8 @@
         "body": "Dagu yang ke dalam, bahagian tengah muka yang leper atau bahagian bawah muka yang pendek mengubah ketajaman garis rahang tanpa ada apa-apa yang mengendur. Ini soal perkadaran, dan selalunya sudah ada sejak muda, bukan sesuatu yang berlaku kemudian.",
         "items": [
           {
-            "lead": "Cara kenal pasti:",
+            "lead": "Tandanya:",
             "body": "dari sisi, dagu terletak jauh di belakang bibir bawah, atau bahagian tengah muka nampak leper sedangkan rahang tidak berubah."
-          },
-          {
-            "lead": "Terus terang:",
-            "body": "tiada rawatan di halaman ini yang mengubah tulang. Yang boleh diubah ialah berapa banyak sokongan di atasnya."
           }
         ],
         "routing": "dinilai untuk sokongan isi yang diletakkan bagi membina unjuran, dengan perbincangan jujur tentang apa yang perkadaran anda benarkan."
@@ -176,7 +163,7 @@
   },
   "locationBlock": {
     "heading": "Tanpa pembedahan berbanding pembedahan",
-    "intro": "Permintaan kontur muka berada dalam satu spektrum, dan sebahagian daripada konsultasi yang jujur ialah menyatakan bila pilihan tanpa pembedahan bukan lagi alat yang sesuai.",
+    "intro": "Bila rawatan tanpa pembedahan bukan lagi alat yang sesuai:",
     "cards": [
       {
         "title": "Apa yang dilakukan pilihan tanpa pembedahan",
@@ -189,38 +176,33 @@
       {
         "title": "Di mana garisnya biasanya",
         "body": "Tulang ialah sempadan yang paling jelas: jika garis luar yang anda mahu memerlukan rahang atau dagu yang berbeza, tiada suntikan atau mesin yang boleh menghasilkannya, dan lebih adil untuk berterus terang daripada mengatur satu kursus rawatan ke arah itu."
-      },
-      {
-        "title": "Gabungan rawatan adalah biasa",
-        "body": "Oleh sebab beberapa lapisan biasanya menyumbang, pelan selalunya menangani lebih daripada satu, secara berperingkat dengan penilaian semula antara setiap peringkat, bukan dibuat dalam satu lawatan."
       }
     ],
     "note": {
       "title": "Bila kami akan berterus terang",
-      "body": "Jika apa yang anda gambarkan ialah perubahan struktur tulang, atau jika gambar rujukan yang anda bawa tidak dapat dicapai pada muka anda, doktor akan memberitahu anda dengan jelas. Rujukan untuk mendapatkan pendapat pakar bedah ialah hasil konsultasi yang sah di sini."
+      "body": "Jika perubahan yang anda mahu memerlukan kerja pada tulang, doktor akan memberitahu anda. Rujukan untuk mendapatkan pendapat pakar bedah ialah hasil yang sah."
     }
   },
   "seeDoctor": {
     "heading": "Bila patut buat penilaian",
-    "intro": "Bentuk muka bukan masalah perubatan, jadi tiada had klinikal. Ia berbaloi dinilai jika:",
+    "intro": "Tiada had klinikal. Ia berbaloi dinilai jika:",
     "triggers": [
       "Anda tidak pasti sama ada yang di bawah dagu anda itu lemak, kulit kendur atau sesuatu yang lain.",
       "Bahagian bawah muka semakin lebar, atau anda mengetap dan mengerot gigi dan bangun dengan rahang yang tegang.",
       "Garis rahang hilang ketajaman dari semasa ke semasa, bukan memang begitu sejak dahulu.",
-      "Anda ada gambar rujukan dan mahukan jawapan jujur sama ada ia boleh dicapai pada muka anda.",
       "Anda telah ditawarkan rawatan di tempat lain dan mahukan pendapat kedua sama ada ia sepadan dengan puncanya."
     ],
     "outro": "Rahang tegang, mengerot gigi dan tidur terganggu patut dibincangkan dengan doktor atau doktor gigi tanpa mengira soal kosmetik, kerana ia memberi kesan kepada gigi anda."
   },
   "ctaMid": {
     "heading": "Lemak, otot atau kulit?",
-    "body": "Ketiga-tiganya nampak hampir sama di cermin tetapi dirawat dengan cara yang sangat berbeza. Hantar gambar kepada kami di WhatsApp dan doktor boleh beritahu anda yang mana satu perlu dibincangkan."
+    "body": "Hantar gambar kepada kami di WhatsApp dan doktor boleh beritahu anda yang mana satu."
   },
-  "treatmentsIntro": "Ini ialah rawatan yang paling kerap dipertimbangkan untuk kontur muka di klinik kami. Yang mana sesuai, dan sama ada mana-mana daripadanya sesuai, bergantung pada lapisan yang dikenal pasti sebagai punca semasa penilaian.",
+  "treatmentsIntro": "Rawatan yang sesuai bergantung pada lapisan yang menjadi punca:",
   "treatmentWhy": {
     "fat-freezing": {
       "why": "Untuk poket lemak yang jelas di bawah dagu",
-      "body": "Penyejukan terkawal pada kawasan bawah dagu untuk mengurangkan poket lemak setempat. Hanya relevan jika memang lemak yang ada di situ, sebab itu ujian cubit semasa penilaian penting."
+      "body": "Penyejukan terkawal pada kawasan bawah dagu untuk mengurangkan poket lemak setempat. Hanya relevan jika memang lemak yang ada di situ."
     },
     "botulinum-toxin": {
       "why": "Untuk rahang lebar akibat otot mengunyah",
@@ -239,9 +221,9 @@
       "body": "Diletakkan di atas tulang untuk membina struktur di tempat yang kurang unjuran atau perkadaran, bukan untuk mengisi garis. Isipadu kecil mengubah rupa profil sisi. Kedudukan yang salah menambah berat, jadi pengetahuan anatomi penting."
     }
   },
-  "treatmentsNote": "Gabungan rawatan adalah biasa, dan susunannya penting: mengurangkan lemak bawah dagu sebelum menangani kulit kendur memberi gambaran lebih jelas tentang berapa banyak kendur yang sebenarnya ada. Tiada rawatan dalam senarai ini yang mengubah tulang di bawahnya.",
+  "treatmentsNote": "Gabungan rawatan adalah biasa, dan susunannya penting: mengurangkan lemak bawah dagu sebelum menangani kulit kendur memberi gambaran lebih jelas tentang berapa banyak kendur yang sebenarnya ada.",
   "compare": {
-    "intro": "Panduan umum sahaja. Kebanyakan muka melibatkan lebih daripada satu lapisan, dan doktor mungkin mencadangkan sesuatu yang berbeza selepas memeriksa anda.",
+    "intro": "Panduan umum. Kebanyakan muka melibatkan lebih daripada satu lapisan, dan pelan berperingkat dinilai semula antara peringkat.",
     "columns": [
       "Masalah anda",
       "Biasa dipertimbangkan",
@@ -263,7 +245,7 @@
       ],
       [
         "Garis rahang kabur akibat kulit kendur",
-        "Ultrabunyi terfokus",
+        "Ultrabunyi berfokus",
         "Satu sesi, kemudian dinilai semula",
         "Tiada hingga minimum"
       ],
@@ -283,16 +265,9 @@
         "Lemak dan kulit kendur bersama",
         "Mengikut susunan: lemak dahulu, kemudian ketegangan",
         "Dinilai secara individu",
-        "Berbeza mengikut individu"
-      ],
-      [
-        "Perubahan struktur tulang",
-        "Pendapat pakar bedah dibincangkan",
-        "Berbeza mengikut individu",
-        "Berbeza mengikut individu"
+        "Individu"
       ]
-    ],
-    "note": "Bilangan sesi dan jarak antara sesi ditetapkan oleh doktor selepas penilaian. Apabila rawatan dibuat mengikut susunan, setiap peringkat dinilai semula sebelum peringkat seterusnya dirancang."
+    ]
   },
   "results": [
     {
@@ -354,28 +329,10 @@
       "nativeWidth": 1415,
       "ratio": "1/1",
       "caption": "Kontur rahang dan leher, sebelum dan selepas rawatan di Kaiteki"
-    },
-    {
-      "src": "https://cdn.kaiteki.my/concerns/face-contouring/before-after-11.jpg",
-      "nativeWidth": 1415,
-      "ratio": "1/1",
-      "caption": "Unjuran dagu, sebelum dan selepas rawatan di Kaiteki"
-    },
-    {
-      "src": "https://cdn.kaiteki.my/concerns/face-contouring/before-after-12.jpg",
-      "nativeWidth": 1415,
-      "ratio": "1/1",
-      "caption": "Unjuran dagu, sebelum dan selepas rawatan di Kaiteki"
-    },
-    {
-      "src": "https://cdn.kaiteki.my/concerns/face-contouring/before-after-13.jpg",
-      "nativeWidth": 1415,
-      "ratio": "1/1",
-      "caption": "Unjuran dagu, sebelum dan selepas rawatan di Kaiteki"
     }
   ],
   "firstVisit": {
-    "intro": "Konsultasi adalah percuma dan tiada paksaan untuk menempah rawatan selepas itu. Ia biasanya mengambil masa 20 hingga 30 minit.",
+    "intro": "Lemak, otot, kulit dan struktur dinilai secara berasingan, dari depan dan dari sisi.",
     "steps": [
       {
         "title": "Sejarah",
@@ -383,15 +340,11 @@
       },
       {
         "title": "Pemeriksaan",
-        "body": "Doktor menilai lemak, otot, kulit dan struktur secara berasingan, dari depan dan dari sisi, termasuk ujian cubit di bawah dagu dan ujian ketap gigi di sudut rahang."
+        "body": "Termasuk ujian cubit di bawah dagu dan ujian ketap gigi di sudut rahang."
       },
       {
-        "title": "Perbincangan",
-        "body": "Lapisan mana yang menjadi punca, apa yang diubah oleh setiap pilihan, apa yang tidak akan berubah, downtime dan risiko, dan sama ada hasil yang anda bayangkan boleh dicapai dengan anatomi anda."
-      },
-      {
-        "title": "Pelan",
-        "body": "Jika anda memilih untuk meneruskan, susunan rawatan dan satu titik penilaian semula. Anda boleh bawa pelan itu pulang dan fikir dahulu."
+        "title": "Perbincangan dan pelan",
+        "body": "Lapisan mana yang menjadi punca, apa yang diubah dan tidak diubah oleh setiap pilihan, downtime dan risiko, dan sama ada hasil yang anda bayangkan boleh dicapai, tanpa sebarang kewajipan untuk meneruskan."
       }
     ],
     "outro": "Bawa gambar rupa yang anda bayangkan jika ada. Ia jauh lebih berguna daripada penerangan, dan membolehkan doktor menyatakan dengan khusus apa yang boleh dan tidak boleh dicapai pada muka anda."
@@ -403,7 +356,6 @@
     }
   ],
   "risks": {
-    "intro": "Setiap rawatan di halaman ini membawa sedikit risiko.",
     "items": [
       {
         "lead": "Biasa dan selalunya sementara",
@@ -415,35 +367,34 @@
       },
       {
         "lead": "Muka tidak simetri adalah normal, dan elok diketahui",
-        "body": "Hampir setiap muka tidak simetri sebelum rawatan. Ia menjadi lebih ketara apabila anda mula memerhatikannya. Doktor patut menunjukkan ketidaksimetrian yang sedia ada semasa penilaian supaya ia tidak disangka kesan rawatan kemudian."
+        "body": "Hampir setiap muka tidak simetri sebelum rawatan. Doktor patut menunjukkannya semasa penilaian supaya ia tidak disangka kesan rawatan kemudian."
       },
       {
         "lead": "Perubahan pigmen dan kulit rakyat Malaysia",
-        "body": "Apabila mesin berasaskan tenaga digunakan di sepanjang garis rahang, warna kulit sederhana dan lebih gelap mempunyai risiko lebih tinggi untuk hiperpigmentasi pasca-radang. Atas sebab ini tetapan dipilih secara konservatif, dan perlindungan matahari selepas itu ialah sebahagian daripada pelan, bukan perkara sampingan."
+        "body": "Apabila mesin berasaskan tenaga digunakan di sepanjang garis rahang, warna kulit sederhana dan lebih gelap mempunyai risiko lebih tinggi untuk hiperpigmentasi pasca-radang. Atas sebab ini tetapan dipilih secara konservatif."
       },
       {
-        "lead": "Apa yang rawatan tidak boleh lakukan",
-        "body": "Tiada rawatan di halaman ini yang mengubah tulang, jadi garis luar rahang atau dagu yang ditentukan oleh struktur tidak akan terhasil dengan suntikan atau mesin. Pengurangan lemak tidak menegangkan kulit kendur, dan suntikan pelemas otot tidak membuang lemak. Kesannya tidak berkekalan dan perlu diselenggara, bukan sekali buat terus selesai. Gambar muka orang lain bukan pelan untuk muka anda."
+        "lead": "Apa yang rawatan tidak dapat lakukan",
+        "body": "Tiada rawatan di halaman ini yang mengubah tulang, jadi garis luar rahang atau dagu yang ditentukan oleh struktur tidak akan terhasil dengan suntikan atau mesin. Pengurangan lemak tidak menegangkan kulit kendur, dan suntikan pelemas otot tidak membuang lemak. Kesannya tidak berkekalan dan perlu diselenggara, bukan sekali buat terus selesai."
       }
     ],
     "disclose": "Beritahu doktor anda jika anda hamil atau menyusu, mengambil ubat pencair darah, mempunyai penyakit neuromuskular, mempunyai hernia atau penyakit sensitif sejuk yang berkaitan dengan rawatan penyejukan, pernah menjalani pembedahan muka, benang atau suntikan sebelum ini, atau mempunyai sejarah herpes bibir (cold sore) atau parut keloid."
   },
   "costFactors": {
-    "intro": "Kos tidak dipaparkan kerana ia bergantung pada penilaian. Tetapi elok anda tahu apa yang mempengaruhinya sebelum datang:",
+    "intro": "Harga ditetapkan selepas penilaian. Ia bergantung pada:",
     "factors": [
       "Lapisan mana yang dirawat: lemak, otot, kulit dan struktur ialah rawatan yang sama sekali berbeza.",
       "Kawasan dan keluasannya: bawah dagu sahaja, garis rahang, atau seluruh bahagian bawah muka.",
       "Produk atau mesin yang dipilih, dan berapa banyak yang diperlukan oleh anatomi anda.",
       "Berapa banyak peringkat, kerana kontur muka selalunya dibuat mengikut susunan dengan penilaian semula antara peringkat.",
       "Berapa kerap penyelenggaraan mungkin diperlukan, kerana rawatan pelemas otot dan isi diulang dari semasa ke semasa."
-    ],
-    "outro": "Doktor akan menerangkan butirannya kepada anda semasa konsultasi, termasuk susunan yang dijangka dan berapa kerap apa-apa perlu diulang, sebelum anda bersetuju dengan sesi pertama."
+    ]
   },
-  "technologyIntro": "Kontur muka menggunakan penyejukan, ultrabunyi, radiofrekuensi dan suntikan, kerana empat perkara yang membentuk garis rahang memerlukan empat alat yang berbeza. Dengan semuanya di bawah satu bumbung, doktor boleh memilih mengikut punca, bukan mengikut apa yang kebetulan ada.",
+  "technologyIntro": "Kontur muka menggunakan penyejukan, ultrabunyi, radiofrekuensi dan suntikan, kerana empat perkara yang membentuk garis rahang memerlukan empat alat yang berbeza.",
   "faqs": [
     {
       "q": "Rawatan kontur muka boleh ubah struktur tulang ke?",
-      "a": "Tidak. Setiap rawatan yang dibincangkan di halaman ini bertindak pada tisu lembut: lemak, otot, kulit atau isi tambahan. Tulang menentukan garis luar muka anda, dan mengubahnya ialah prosedur pembedahan yang dijalankan oleh pakar bedah yang bertauliah. Apa yang boleh dilakukan oleh rawatan tanpa pembedahan ialah mengubah berapa banyak sokongan di atas struktur itu dan betapa tajam tepinya kelihatan, dan pada banyak muka, inilah perbezaan yang sebenarnya orang perasan."
+      "a": "Tidak. Setiap rawatan yang dibincangkan di halaman ini bertindak pada tisu lembut: lemak, otot, kulit atau isi tambahan. Tulang menentukan garis luar muka anda, dan mengubahnya ialah prosedur pembedahan yang dijalankan oleh pakar bedah yang bertauliah. Apa yang boleh dilakukan oleh rawatan tanpa pembedahan ialah mengubah berapa banyak sokongan di atas struktur itu dan betapa tajam tepinya kelihatan."
     },
     {
       "q": "Lemak bawah dagu atau kulit kendur: macam mana nak tahu?",
@@ -451,27 +402,27 @@
     },
     {
       "q": "Rawatan otot rahang (masseter) boleh ubah bentuk muka ke?",
-      "a": "Boleh, jika otot itu memang menyumbang kepada kelebaran di belakang rahang. Selepas rawatan, otot bekerja kurang kuat dan saiznya mengecil secara beransur-ansur dalam beberapa minggu, yang melembutkan garis luar apabila dilihat dari depan. Kesannya sementara dan diulang secara berkala untuk dikekalkan. Jika anda mengetap atau mengerot gigi, ia juga mungkin melegakan sakit rahang, yang selalunya sama bernilai dengan kesan kosmetiknya."
+      "a": "Boleh, jika otot itu memang menyumbang kepada kelebaran di belakang rahang. Selepas rawatan, otot bekerja kurang kuat dan saiznya mengecil secara beransur-ansur dalam beberapa minggu, yang melembutkan garis luar apabila dilihat dari depan. Kesannya sementara dan diulang secara berkala untuk dikekalkan. Jika anda mengetap atau mengerot gigi, ia juga mungkin melegakan sakit rahang."
     },
     {
       "q": "Filler dagu selamat ke?",
-      "a": "Di tangan doktor yang terlatih dan dengan produk yang sesuai, ia rawatan yang sudah mantap, tetapi bukan perkara remeh. Kawasan dagu dan rahang mengandungi arteri, dan risiko serius bagi mana-mana filler ialah tersuntik ke dalam saluran darah secara tidak sengaja. Sebab itu ia patut dilakukan oleh doktor yang arif tentang anatomi, dengan kelengkapan untuk menangani komplikasi. Tanya siapa yang merawat anda dan apa pengalaman mereka."
+      "a": "Di tangan doktor yang terlatih dan dengan produk yang sesuai, ia rawatan yang sudah mantap, tetapi bukan perkara remeh. Kawasan dagu dan rahang mengandungi arteri, dan risiko serius bagi mana-mana filler ialah tersuntik ke dalam saluran darah secara tidak sengaja. Sebab itu ia patut dilakukan oleh doktor yang arif tentang anatomi, dengan kelengkapan untuk menangani komplikasi."
     },
     {
       "q": "Fat freezing untuk double chin boleh bantu turunkan berat badan ke?",
-      "a": "Tidak. Ia menyasarkan poket lemak setempat di kawasan tertentu dan tidak mengubah berat badan keseluruhan atau merawat obesiti. Ia biasanya dipertimbangkan untuk orang yang berat badannya hampir stabil dan mempunyai poket lemak yang jelas yang tidak berubah dengan diet dan senaman. Jika berat badan keseluruhan yang menjadi kebimbangan, itu perbincangan yang lain, dan ia patut dibuat dengan doktor, bukan dengan mesin kontur."
+      "a": "Tidak. Ia menyasarkan poket lemak setempat di kawasan tertentu dan tidak mengubah berat badan keseluruhan atau merawat obesiti. Ia biasanya dipertimbangkan untuk orang yang berat badannya hampir stabil dan mempunyai poket lemak yang jelas yang tidak berubah dengan diet dan senaman. Jika berat badan keseluruhan yang menjadi kebimbangan, itu perbincangan yang lain."
     },
     {
       "q": "Kesannya tahan berapa lama?",
-      "a": "Ia berbeza mengikut rawatan. Suntikan pelemas otot hilang kesannya dalam tempoh beberapa bulan dan perlu diulang. Sokongan isi tahan lebih lama tetapi dipecahkan oleh badan secara beransur-ansur. Pengurangan lemak membuang sel lemak dari poket yang dirawat, tetapi sel yang tinggal masih bertindak balas terhadap perubahan berat badan, jadi hasilnya bergantung pada berat badan anda tetap agak stabil. Doktor anda patut menerangkannya dengan khusus semasa konsultasi."
+      "a": "Ia berbeza mengikut rawatan. Suntikan pelemas otot hilang kesannya dalam tempoh beberapa bulan dan perlu diulang. Sokongan isi tahan lebih lama tetapi dipecahkan oleh badan secara beransur-ansur. Pengurangan lemak membuang sel lemak dari poket yang dirawat, tetapi sel yang tinggal masih bertindak balas terhadap perubahan berat badan, jadi hasilnya bergantung pada berat badan anda tetap agak stabil."
     },
     {
       "q": "Nanti muka nampak tak semula jadi ke?",
-      "a": "Risiko itu hampir sepenuhnya datang daripada terlalu banyak produk yang diletakkan untuk mengejar bentuk yang tidak dapat dipegang oleh muka secara semula jadi. Ia dielakkan dengan rawatan secara konservatif, berperingkat dalam beberapa sesi dengan penilaian semula di antaranya, dan doktor yang sanggup berkata bahawa sesuatu permintaan itu tidak seimbang. Memang wajar untuk memberitahu semasa konsultasi bahawa anda mahukan perubahan yang halus, dan bertanya apa pelannya jika anda tidak suka hasilnya."
+      "a": "Risiko itu hampir sepenuhnya datang daripada terlalu banyak produk yang diletakkan untuk mengejar bentuk yang tidak dapat dipegang oleh muka secara semula jadi. Ia dielakkan dengan rawatan secara konservatif, berperingkat dalam beberapa sesi dengan penilaian semula di antaranya, dan doktor yang sanggup berkata bahawa sesuatu permintaan itu tidak seimbang. Memang wajar untuk memberitahu semasa konsultasi bahawa anda mahukan perubahan yang halus."
     },
     {
       "q": "Ada downtime ke?",
-      "a": "Suntikan pelemas otot biasanya tiada downtime. Suntikan pengisi boleh menyebabkan lebam dan bengkak selama beberapa hari, jadi rancang mengikut acara anda. Rawatan pengurangan lemak meninggalkan kawasan itu bengkak, keras dan sakit disentuh, kadangkala selama seminggu dua, dan kebas boleh berlarutan lebih lama. Rawatan tegang berasaskan tenaga biasanya membolehkan anda kembali ke rutin pada hari yang sama dengan sedikit kemerahan. Doktor akan memberi anda tempoh yang khusus untuk rawatan yang anda jalani dan bila sesuai untuk bergambar."
+      "a": "Suntikan pelemas otot biasanya tiada downtime. Suntikan pengisi boleh menyebabkan lebam dan bengkak selama beberapa hari, jadi rancang mengikut acara anda. Rawatan pengurangan lemak meninggalkan kawasan itu bengkak, keras dan sakit disentuh, kadangkala selama seminggu dua, dan kebas boleh berlarutan lebih lama. Rawatan tegang berasaskan tenaga biasanya membolehkan anda kembali ke rutin pada hari yang sama dengan sedikit kemerahan."
     },
     {
       "q": "Lelaki boleh buat rawatan kontur muka ke?",
@@ -479,7 +430,7 @@
     },
     {
       "q": "Berapa lama baru nampak perubahan?",
-      "a": "Ia bergantung pada rawatan. Sokongan isi nampak serta-merta, walaupun bengkak menjadikan beberapa hari pertama mengelirukan. Suntikan pelemas otot mengambil masa kira-kira dua minggu untuk mula nampak dan terus berkembang dalam beberapa bulan berikutnya. Pengurangan lemak dan rawatan tegang berasaskan tenaga terbina secara beransur-ansur dalam beberapa minggu hingga bulan. Gambar yang konsisten pada sudut dan pencahayaan yang sama jauh lebih boleh dipercayai daripada melihat cermin setiap hari."
+      "a": "Ia bergantung pada rawatan. Sokongan isi nampak serta-merta, walaupun bengkak menjadikan beberapa hari pertama mengelirukan. Suntikan pelemas otot mengambil masa kira-kira dua minggu untuk mula nampak dan terus berkembang dalam beberapa bulan berikutnya. Pengurangan lemak dan rawatan tegang berasaskan tenaga terbina secara beransur-ansur dalam beberapa minggu hingga bulan."
     },
     {
       "q": "Boleh ke saya bawa gambar rupa yang saya mahu?",
@@ -487,7 +438,7 @@
     },
     {
       "q": "Kalau tiada rawatan di sini yang sesuai dengan saya?",
-      "a": "Maka itulah yang patut diberitahu oleh konsultasi. Jika perubahan yang anda mahu memerlukan pembedahan, atau jika penilaian tidak menemui apa-apa yang dapat diperbaiki dengan ketara oleh rawatan, doktor kami akan berterus terang dan, jika sesuai, mencadangkan pendapat pakar bedah. Diberitahu bahawa rawatan tidak diperlukan ialah hasil yang sah, dan konsultasi itu tidak dikenakan sebarang bayaran."
+      "a": "Maka itulah yang patut diberitahu oleh konsultasi. Jika perubahan yang anda mahu memerlukan pembedahan, atau jika penilaian tidak menemui apa-apa yang dapat diperbaiki dengan ketara oleh rawatan, doktor kami akan berterus terang dan, jika sesuai, mencadangkan pendapat pakar bedah. Diberitahu bahawa rawatan tidak diperlukan ialah hasil yang sah."
     }
   ],
   "relatedConcerns": [

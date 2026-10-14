@@ -30,7 +30,9 @@ export function headingId(text: string): string {
 function plainText(md: string): string {
   return md
     .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
-    .replace(/[*_`]/g, "")
+    .replace(/(?<!\\)[*_`]/g, "")
+    // Backslash escapes (the legacy import escapes { } < for MDX).
+    .replace(/\\([\\`*_{}[\]()<>#+\-.!|])/g, "$1")
     .trim();
 }
 
@@ -50,6 +52,9 @@ export async function postHeadings(slug: string): Promise<Heading[]> {
   }
 
   const headings: Heading[] = [];
+  // github-slugger suffixes repeats ("faq", "faq-1", …) across every heading
+  // level, so count all of them, including the ones the contents leaves out.
+  const seen = new Map<string, number>();
   let inFence = false;
 
   for (const line of raw.split(/\r?\n/)) {
@@ -59,30 +64,20 @@ export async function postHeadings(slug: string): Promise<Heading[]> {
     }
     if (inFence) continue;
 
-    const m = /^(#{2,3})\s+(.+?)\s*#*\s*$/.exec(line);
+    const m = /^(#{2,6})\s+(.+?)\s*#*\s*$/.exec(line);
     if (!m) continue;
 
     const text = plainText(m[2]);
-    headings.push({ id: headingId(text), text, level: m[1].length as 2 | 3 });
+    const base = headingId(text);
+    const n = seen.get(base) ?? 0;
+    seen.set(base, n + 1);
+    if (m[1].length > 3) continue;
+    headings.push({ id: n ? `${base}-${n}` : base, text, level: m[1].length as 2 | 3 });
   }
 
   return headings;
 }
 
-/** Long-form dates in one place so cards, bylines and archives never diverge. */
-export function formatPostDate(iso: string): string {
-  return new Date(iso).toLocaleDateString("en-GB", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
-}
-
-/** Compact variant for cards, where the byline row is tight. */
-export function formatPostDateShort(iso: string): string {
-  return new Date(iso).toLocaleDateString("en-GB", {
-    day: "numeric",
-    month: "short",
-    year: "numeric",
-  });
-}
+// Date formatting lives in lib/post-date.ts so client components (the blog
+// search) can use it without pulling node:fs into the browser bundle.
+export { formatPostDate, formatPostDateShort } from "./post-date";

@@ -1,0 +1,313 @@
+{
+  "slug": "excessive-sweating",
+  "ctaHeading": "Not sure which areas are affected?",
+  "ctaAssesses": "the affected areas",
+  "name": "Excessive Sweating",
+  "group": "Skin",
+  "image": "https://cdn.kaiteki.my/concerns/excessive-sweating/card.jpg",
+  "summary": "Sweating that disrupts daily life can often be managed. A doctor assesses your pattern and severity to determine which approach fits.",
+  "leadAnswer": "Excessive sweating (hyperhidrosis) is sweating beyond what the body needs to regulate temperature, most often in the underarms, palms, soles or face. Primary hyperhidrosis starts young, runs in families and is managed in steps, starting with clinical-strength antiperspirant. Sweating that is generalised, new in adulthood or at night is investigated first.",
+  "treatments": [
+    "botulinum-toxin"
+  ],
+  "reviewedBy": "dr-teresa-tan",
+  "lastReviewed": "2026-07-13",
+  "seoTitle": "Excessive Sweating Treatment & Assessment | Kaiteki",
+  "seoDescription": "Hyperhidrosis goes beyond normal temperature regulation and has several possible causes. A consultation helps assess your situation. Book a free session today.",
+  "banner": {
+    "src": "https://cdn.kaiteki.my/concerns/excessive-sweating/banner.jpg",
+    "sm": "https://cdn.kaiteki.my/concerns/excessive-sweating/banner-mobile.jpg",
+    "alt": "Illustrative photograph: a woman in a sports top dabbing her face with a white towel, against a white brick wall"
+  },
+  "facts": [
+    {
+      "value": "Pattern first",
+      "label": "Which areas sweat, and when it started, decide what the assessment looks for."
+    },
+    {
+      "value": "Primary or secondary",
+      "label": "Sweating on its own and sweating caused by something else are handled differently."
+    },
+    {
+      "value": "Stepped approach",
+      "label": "Simpler measures are usually tried before anything is injected."
+    }
+  ],
+  "jumpNav": [
+    {
+      "id": "causes",
+      "label": "Common causes"
+    },
+    {
+      "id": "which-type",
+      "label": "Which kind is it?"
+    },
+    {
+      "id": "where",
+      "label": "Where it happens"
+    },
+    {
+      "id": "see-a-doctor",
+      "label": "When to see a doctor"
+    },
+    {
+      "id": "treatments",
+      "label": "Treatment"
+    },
+    {
+      "id": "risks",
+      "label": "Risks"
+    },
+    {
+      "id": "faq",
+      "label": "FAQ"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is excessive sweating?",
+      "body": [
+        "Sweating is a normal bodily function that helps regulate temperature. Excessive sweating, medically known as hyperhidrosis, describes sweating that is noticeably more than what is needed for temperature regulation, and can affect daily activities and confidence.",
+        "It most commonly affects the underarms, palms, soles of the feet and, less often, the face and scalp."
+      ]
+    },
+    {
+      "heading": "How sweating is controlled",
+      "body": [
+        "The skin carries millions of eccrine sweat glands, which release a watery sweat to cool the body, and a smaller number of apocrine glands concentrated in the underarms and groin. Eccrine glands are switched on by nerve signals from the sympathetic nervous system, the same system that responds to heat, exercise and stress.",
+        "In primary hyperhidrosis the glands themselves are normal; the signal reaching them is stronger or more frequent than the body needs. That is why the condition is not a hygiene problem, and why treatments that work on the signal, rather than on the skin surface, are part of the discussion."
+      ]
+    }
+  ],
+  "drivers": {
+    "heading": "Common causes",
+    "intro": "Sweating can be the condition itself or a sign of something else. The main contributors:",
+    "items": [
+      {
+        "lead": "Primary focal hyperhidrosis:",
+        "body": "the most common form, usually starting in childhood or adolescence and often running in families."
+      },
+      {
+        "lead": "Hormonal change:",
+        "body": "puberty, pregnancy, menopause and thyroid disorders can all increase sweating."
+      },
+      {
+        "lead": "Stress and anxiety:",
+        "body": "emotional triggers activate the same nerve pathway that drives sweating. For someone with primary hyperhidrosis, stressful situations can make it noticeably worse, and the worry about sweating can become a trigger of its own."
+      },
+      {
+        "lead": "Medication:",
+        "body": "some antidepressants, diabetes medicines, hormone therapies and other drugs list increased sweating as a side effect."
+      },
+      {
+        "lead": "Underlying medical conditions:",
+        "body": "an overactive thyroid, diabetes, infections and, rarely, more serious conditions can cause sweating."
+      }
+    ],
+    "outro": "Diet, caffeine, alcohol and tight synthetic clothing can make sweating worse, but they are aggravating factors rather than causes."
+  },
+  "variant": {
+    "kind": "tabs",
+    "heading": "Which kind is it?",
+    "intro": "The most important thing an assessment does here is decide whether the sweating is the condition itself, or a sign of something else. The second needs investigating rather than treating.",
+    "tabs": [
+      {
+        "label": "Primary",
+        "sub": "Focal, since your teens",
+        "title": "Primary focal hyperhidrosis",
+        "body": "Sweating in specific areas, typically the underarms, palms, soles or face, affecting both sides evenly. It usually began in childhood or adolescence, often runs in the family, and tends to ease during sleep.",
+        "items": [
+          {
+            "lead": "The tell:",
+            "body": "the same areas, on both sides, for years, often with relatives who describe the same thing."
+          }
+        ],
+        "routing": "assessed for a stepped management plan, starting with topical measures and moving on only if they are not enough."
+      },
+      {
+        "label": "Secondary",
+        "sub": "Generalised or new in adulthood",
+        "title": "Sweating as a symptom",
+        "body": "Sweating across large areas of the body, sweating that started in adulthood without an obvious reason, sweating on one side only, or sweating at night that soaks the bedding. Here the sweating is a signal.",
+        "items": [
+          {
+            "lead": "The tell:",
+            "body": "a clear change from what is normal for you, night sweats, or other symptoms such as weight loss, fever or a racing heart."
+          }
+        ],
+        "routing": "assessed with history, examination and, where indicated, investigation or referral before any cosmetic treatment is discussed."
+      }
+    ]
+  },
+  "locationBlock": {
+    "heading": "Where it happens",
+    "intro": "Each area is managed differently:",
+    "cards": [
+      {
+        "title": "Underarms",
+        "body": "The most common site."
+      },
+      {
+        "title": "Palms",
+        "body": "Sweaty hands affect handshakes, writing, gripping and using phones or keyboards. Treatment options for the palms differ from the underarms because the skin and the hand's function are different."
+      },
+      {
+        "title": "Soles of the feet",
+        "body": "Often accompanies sweaty palms. Constant moisture can lead to slipping in footwear, odour and fungal infection between the toes, which may need treating in their own right."
+      },
+      {
+        "title": "Face and scalp",
+        "body": "Sweating from the forehead, scalp or upper lip, often triggered by heat, food or stress. It is particularly noticeable and is assessed carefully, as the face is a delicate area to treat."
+      },
+      {
+        "title": "Across the whole body",
+        "body": "Generalised sweating, rather than sweating in a few defined areas, is more often secondary to another cause and is investigated before treatment is considered."
+      }
+    ],
+    "note": {
+      "title": "Sweating on one side only?",
+      "body": "Sweating that affects only one side of the body or face, or a single small patch, is not the usual pattern of primary hyperhidrosis and should be examined by a doctor promptly."
+    }
+  },
+  "seeDoctor": {
+    "heading": "When to see a doctor",
+    "intro": "Any of these is a reason to see a doctor:",
+    "triggers": [
+      "Sweating that soaks through clothing, drips, or interferes with work, gripping or daily tasks.",
+      "Night sweats that soak your sleepwear or bedding.",
+      "Generalised sweating that started in adulthood without an obvious reason.",
+      "Unexplained weight loss, fever, a racing or irregular heartbeat, or feeling unusually tired alongside the sweating.",
+      "Sweating on one side of the body or face only.",
+      "Sweating that began or increased after starting a new medication.",
+      "Clinical-strength antiperspirant, used correctly for a few weeks, has not made enough difference."
+    ],
+    "outro": "With night sweats, weight loss, fever or one-sided sweating, the first step may be your GP rather than an aesthetic treatment."
+  },
+  "ctaMid": {
+    "heading": "Not sure whether your sweating needs investigating?",
+    "body": "Message us on WhatsApp and a doctor can tell you which you are likely dealing with."
+  },
+  "treatmentsIntro": "Excessive sweating is managed in steps, starting with the simplest measures; in-clinic treatment is one step in that sequence.",
+  "treatmentWhy": {
+    "botulinum-toxin": {
+      "why": "For focal sweating that topical measures have not controlled",
+      "body": "A prescription injectable the doctor may discuss when primary sweating is confined to defined areas such as the underarms. Small amounts are placed in the skin to interrupt the nerve signal that switches the sweat glands on in that area. It is temporary, needs repeating, and is only considered once secondary causes have been ruled out."
+    }
+  },
+  "treatmentsNote": "Clinical-strength antiperspirant applied to dry skin at night is a reasonable first step. Prescription topicals, oral medication and iontophoresis for hands and feet are discussed individually. Secondary sweating is addressed at its cause first.",
+  "firstVisit": {
+    "intro": "The first question is whether the pattern fits primary focal sweating.",
+    "steps": [
+      {
+        "title": "History",
+        "body": "When the sweating started, which areas are affected, whether it happens at rest or during sleep, family history, any other symptoms, your medications, and what you have already tried."
+      },
+      {
+        "title": "Examination",
+        "body": "The doctor looks at the affected areas and the skin around them, checking for irritation or infection and whether the pattern fits primary focal sweating."
+      },
+      {
+        "title": "Ruling out other causes",
+        "body": "Where the history or pattern suggests something else may be driving it, the doctor will discuss investigation, such as blood tests, or a referral before planning any treatment."
+      },
+      {
+        "title": "Discussion and plan",
+        "body": "Which step makes sense for you now, what it involves, its risks and limits, and what would come next if it is not enough."
+      }
+    ],
+    "outro": "It helps to bring a list of your medications and to note when the sweating is worst. A few days of notes is more useful than trying to remember."
+  },
+  "visitImages": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/excessive-sweating/procedure-01.jpg",
+      "caption": "The first visit is a conversation with the doctor about where and when the sweating happens, before anything is recommended."
+    }
+  ],
+  "results": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/excessive-sweating/before-after-01.png",
+      "nativeWidth": 1200,
+      "ratio": "1.71/1",
+      "illustration": true,
+      "caption": "Illustration, not a patient result: a prescription injectable reduces the nerve signal to sweat glands in the treated area, for a limited time"
+    }
+  ],
+  "risks": {
+    "items": [
+      {
+        "lead": "Common and usually temporary",
+        "body": "Discomfort, small bruises, redness or tenderness at the injection points, usually settling within days. In the palms, temporary weakness of grip can occur, which is one reason hands are assessed carefully."
+      },
+      {
+        "lead": "Less common",
+        "body": "Some people notice more sweating in untreated areas, or skin irritation from topical treatments. Allergic reactions are rare."
+      },
+      {
+        "lead": "Treating the wrong thing",
+        "body": "The most consequential risk here is managing the sweating while an overactive thyroid, an infection or another underlying cause goes unnoticed. This is why secondary causes are ruled out first."
+      },
+      {
+        "lead": "What treatment cannot do",
+        "body": "Nothing on this page cures primary hyperhidrosis. In-clinic treatment is temporary and needs repeating, it does not change the tendency behind the sweating, and it does not address sweating caused by another condition."
+      }
+    ],
+    "disclose": "Tell your doctor if you are pregnant, breastfeeding or planning pregnancy, have a neuromuscular condition, take blood thinners or any regular medication, have had a reaction to an injectable before, or have a thyroid condition, diabetes or any recent unexplained symptoms."
+  },
+  "costFactors": {
+    "intro": "Pricing is set after assessment. It depends on:",
+    "factors": [
+      "Which areas are being treated, and how many.",
+      "The size of each area, since underarms, palms and the scalp differ considerably.",
+      "Whether investigation or a referral is needed before anything is planned.",
+      "How often treatment would need repeating, which varies between individuals."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Is excessive sweating a medical condition?",
+      "a": "Yes. When sweating is noticeably beyond what is needed to regulate temperature, it is recognised as a condition called hyperhidrosis. It is not a hygiene problem: the sweat glands receive a stronger signal than the body needs."
+    },
+    {
+      "q": "What causes excessive sweating?",
+      "a": "Most often it occurs on its own, usually starting in childhood or adolescence and often running in families. It can also be caused or worsened by hormonal changes, stress, certain medications and some medical conditions."
+    },
+    {
+      "q": "Is excessive sweating treatable?",
+      "a": "It can usually be managed, though primary hyperhidrosis is not cured. Options range from clinical-strength antiperspirants to prescription treatments and in-clinic procedures, tried in steps. Where sweating is caused by another condition, treating that condition comes first."
+    },
+    {
+      "q": "How is it different from normal sweating in hot weather?",
+      "a": "Everyone sweats more in Malaysia's heat and humidity. Hyperhidrosis is suggested when you sweat heavily in a cool or air-conditioned room, at rest, or in specific areas such as the palms or underarms regardless of the temperature, and when it interferes with daily life. Constant moisture also makes skin irritation and fungal infection more likely."
+    },
+    {
+      "q": "What is the difference between deodorant and antiperspirant?",
+      "a": "A deodorant masks or reduces odour but does not reduce sweat. An antiperspirant contains aluminium salts that temporarily plug the sweat ducts, reducing how much sweat reaches the skin. Clinical-strength antiperspirants are applied to dry skin at night, when the glands are less active, and are a reasonable first step before considering anything else."
+    },
+    {
+      "q": "Why do night sweats matter?",
+      "a": "Primary hyperhidrosis usually eases during sleep. Sweating at night that soaks your sleepwear or bedding is more likely to have another cause, such as a hormonal change, an infection, a medication side effect or another medical condition, and is worth having investigated rather than simply treated."
+    },
+    {
+      "q": "Will treating one area make me sweat more elsewhere?",
+      "a": "Some people notice more sweating in untreated areas after treatment, which is called compensatory sweating. It is most strongly associated with surgical approaches, which are not offered here. The body has many sweat glands outside any treated area, so temperature regulation continues."
+    },
+    {
+      "q": "Does excessive sweating cause body odour?",
+      "a": "Sweat itself has very little smell. Odour develops when bacteria on the skin break down secretions, mostly from the apocrine glands in the underarms and groin. Constant moisture makes this more likely, so sweating and odour often come together, but they are separate problems."
+    }
+  ],
+  "relatedConcerns": [
+    {
+      "slug": "acne",
+      "reason": "Heat, sweat and friction can aggravate breakouts on the face, chest and back."
+    },
+    {
+      "slug": "hair-loss",
+      "reason": "Scalp sweating and scalp conditions are often assessed in the same visit."
+    },
+    {
+      "slug": "pigmentation",
+      "reason": "Underarm darkening from friction and constant moisture is assessed alongside the sweating."
+    }
+  ]
+}

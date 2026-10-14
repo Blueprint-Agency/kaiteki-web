@@ -40,7 +40,9 @@ export function ResultsGallery({
 
   return (
     <>
-      <ul className="mt-10 grid grid-cols-2 gap-x-6 gap-y-9 sm:grid-cols-3 lg:grid-cols-4">
+      {/* Composited before/after pairs: one per row on a phone, two-up from
+          sm. Any smaller and each half of the pair is too small to read. */}
+      <ul className="mt-10 grid gap-x-6 gap-y-9 sm:grid-cols-2">
         {items.map((r, i) => (
           <li key={r.src}>
             <button
@@ -61,12 +63,12 @@ export function ResultsGallery({
                   src={r.src}
                   alt=""
                   fill
-                  sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 260px"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 440px"
                   className="object-contain"
                 />
               </div>
             </button>
-            <p className="mt-2.5 max-w-[34ch] text-sm leading-snug text-ink-500">{r.caption}</p>
+            <p className="mt-2.5 max-w-[48ch] text-sm leading-snug text-ink-500">{r.caption}</p>
           </li>
         ))}
       </ul>

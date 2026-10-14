@@ -6,7 +6,7 @@
   "group": "Skin",
   "image": "https://cdn.kaiteki.my/concerns/birthmark/card.jpg",
   "summary": "Tidak semua tanda lahir bertindak balas terhadap rawatan dengan cara yang sama. Doktor menilai jenis, kedalaman dan kedudukannya sebelum membincangkan pilihan.",
-  "leadAnswer": "Tanda lahir ialah tanda yang ada semasa lahir atau tidak lama selepas itu, disebabkan oleh kelompok sel pigmen atau saluran darah dalam kulit. Ia berbeza dari segi warna, saiz dan jenis, dan kebanyakannya tidak berbahaya. Konsultasi membantu menentukan sama ada sebarang rawatan sesuai, dan pendekatan mana yang mungkin sesuai untuk kulit anda.",
+  "leadAnswer": "Tanda lahir ialah tanda yang ada semasa lahir atau tidak lama selepas itu, terbentuk sama ada daripada kelompok sel pigmen (tompok café-au-lait, nevus Ota, tompok Mongolia) atau daripada saluran darah (tanda port-wine, tompok salmon, hemangioma). Kebanyakannya tidak berbahaya, banyak yang pudar sendiri, dan kedua-dua kumpulan ini dirawat dengan laser yang berbeza, atau tidak dirawat langsung.",
   "treatments": [
     "pico-laser",
     "vascular-pigment-laser"
@@ -69,37 +69,7 @@
       "heading": "Apa itu tanda lahir?",
       "body": [
         "Tanda lahir ialah kawasan kulit yang berubah warna sejak lahir atau muncul dalam beberapa minggu pertama kehidupan. Tanda lahir adalah biasa dan kebanyakannya tidak berbahaya, tetapi ia sangat berbeza dari segi punca, warna dan kedalaman, sebab itu ia dinilai secara individu dan bukan dianggap satu perkara yang sama.",
-        "Tiada apa yang ibu bapa lakukan atau tidak lakukan semasa mengandung yang menyebabkan tanda lahir. Ia terhasil daripada cara sel pigmen atau saluran darah berkembang di kawasan kulit itu, dan memahami yang mana satu terlibat ialah langkah pertama untuk menilai sama ada rawatan relevan langsung."
-      ]
-    },
-    {
-      "heading": "Punca tanda lahir: bagaimana ia terbentuk",
-      "body": [
-        "Tanda lahir terbahagi kepada dua kumpulan besar, dan perbezaan antara keduanya menentukan hampir semua perkara seterusnya. Tanda lahir berpigmen datang daripada melanosit, iaitu sel yang menghasilkan pigmen kulit, yang berlebihan atau berkelompok. Tanda lahir vaskular datang daripada saluran darah yang terbentuk lebih banyak, atau lebih lebar, daripada biasa.",
-        "Kedalaman sama penting dengan jenis. Pigmen yang dekat dengan permukaan cenderung nampak coklat cerah, manakala pigmen yang lebih dalam di dermis menyerakkan cahaya secara berbeza dan nampak biru atau kelabu. Tanda vaskular boleh jadi tompok merah jambu yang rata atau ketulan timbul yang lembut, bergantung pada saluran darah yang terlibat."
-      ],
-      "list": [
-        "Berpigmen: tompok café-au-lait, nevus Ota (naevus of Ota), tompok Mongolia (melanositosis dermal kongenital), tahi lalat sejak lahir (kongenital)",
-        "Vaskular: tompok salmon (stork bite), tanda port-wine (port-wine stain), hemangioma bayi"
-      ]
-    },
-    {
-      "heading": "Tanda lahir yang biasanya dibiarkan sahaja",
-      "body": [
-        "Penilaian yang baik lebih kerap berakhir dengan \"tidak perlu rawatan\" daripada yang disangka ramai orang. Banyak tanda lahir berubah dengan sendirinya, dan sesetengahnya lebih baik diperhatikan daripada dilaser."
-      ],
-      "list": [
-        "Tompok Mongolia: tompok biru kelabu di bahagian bawah belakang, biasa pada bayi Asia, yang biasanya pudar semasa zaman kanak-kanak",
-        "Tompok salmon pada kelopak mata atau dahi, yang lazimnya pudar dalam beberapa tahun pertama kehidupan",
-        "Hemangioma bayi, yang biasanya membesar dalam beberapa bulan pertama kemudian mengecut perlahan-lahan; jika rawatan diperlukan, ia rawatan perubatan yang dikendalikan oleh pakar pediatrik",
-        "Tahi lalat sejak lahir, yang dipantau untuk sebarang perubahan dan, jika pembuangan dipertimbangkan, dinilai oleh pakar dermatologi dan bukan dilaser untuk penampilan"
-      ]
-    },
-    {
-      "heading": "Tanda lahir pada bayi, kanak-kanak dan orang dewasa",
-      "body": [
-        "Bagi bayi dan kanak-kanak kecil, keutamaannya ialah diagnosis dan, selalunya, menunggu. Ada tanda yang pudar, ada yang memerlukan pendapat doktor kanak-kanak, dan sebilangan kecil dikaitkan dengan keadaan di bahagian lain badan, seperti beberapa tompok café-au-lait bersama atau tanda port-wine yang merentasi dahi dan kelopak mata. Kes ini dirujuk untuk penilaian sebelum apa-apa rawatan kosmetik dibincangkan.",
-        "Bagi orang dewasa, persoalannya biasanya berbeza: tanda itu sudah stabil bertahun-tahun dan orang itu mahu ia lebih cerah atau kurang ketara. Di sini doktor mengesahkan jenisnya, memeriksa bahawa ia tidak berubah, dan menerangkan dengan jujur bagaimana jenis itu lazimnya bertindak balas, termasuk apabila jawapannya ialah ia kurang bertindak balas."
+        "Tanda lahir tidak disebabkan oleh apa-apa yang ibu bapa lakukan atau tidak lakukan semasa mengandung."
       ]
     }
   ],
@@ -109,7 +79,7 @@
     "items": [
       {
         "lead": "Struktur apa yang membentuknya.",
-        "body": "Tanda lahir berpigmen datang daripada kelompok melanosit, sel pigmen di lapisan atas kulit. Tanda lahir vaskular datang daripada saluran darah dalam dermis di bawahnya. Setiap satu menyerap panjang gelombang cahaya yang berbeza, sebab itu jenisnya disahkan sebelum perkara lain."
+        "body": "Tanda lahir berpigmen datang daripada kelompok melanosit, sel pigmen di lapisan atas kulit. Tanda lahir vaskular datang daripada saluran darah dalam dermis di bawahnya. Setiap satu menyerap panjang gelombang cahaya yang berbeza."
       },
       {
         "lead": "Sejauh mana dalam warnanya berada.",
@@ -130,15 +100,12 @@
       "src": "https://cdn.kaiteki.my/concerns/birthmark/image-slate-grey-patch.jpg",
       "caption": "Tompok Mongolia berwarna kelabu kebiruan di bahagian bawah belakang bayi. Foto: abby lu, CC BY 2.0, melalui Wikimedia Commons."
     },
-    {
-      "src": "https://cdn.kaiteki.my/concerns/birthmark/image-marks-to-watch.jpg",
-      "caption": "Tahi lalat sedang diperiksa. Tahi lalat dipantau untuk perubahan, bukan dirawat untuk penampilan."
-    }
+    null
   ],
   "variant": {
     "kind": "tabs",
-    "heading": "Jenis tanda lahir: yang mana satu?",
-    "intro": "Pigmen dan saluran darah menyerap panjang gelombang cahaya yang berbeza, jadi perkara pertama yang doktor pastikan ialah tanda lahir itu terdiri daripada yang mana. Sesetengah tanda tidak sesuai untuk kedua-dua laluan rawatan.",
+    "heading": "Jenis tanda lahir",
+    "intro": "Sesetengah tanda tidak termasuk dalam mana-mana laluan rawatan.",
     "tabs": [
       {
         "label": "Berpigmen",
@@ -147,12 +114,8 @@
         "body": "Tompok rata berwarna coklat cerah hingga coklat gelap, atau biru kelabu apabila pigmennya lebih dalam. Tompok café-au-lait, nevus Ota di sekitar mata dan pelipis, dan tompok Mongolia yang masih ada selepas zaman kanak-kanak semuanya termasuk dalam kumpulan ini.",
         "items": [
           {
-            "lead": "Cara mengenalnya:",
+            "lead": "Tandanya:",
             "body": "warnanya tidak memutih apabila ditekan, dan permukaannya biasanya rata dan licin."
-          },
-          {
-            "lead": "Maksudnya:",
-            "body": "tindak balas berbeza mengikut jenis. Nevus Ota selalunya menjadi lebih cerah selepas satu kursus sesi; tompok café-au-lait kurang boleh dijangka dan boleh kembali."
           }
         ],
         "routing": "dinilai untuk laser pigmen, dengan kawasan ujian selalunya dibincangkan dahulu."
@@ -164,12 +127,8 @@
         "body": "Tanda yang terdiri daripada saluran darah: tanda port-wine yang rata berwarna merah jambu hingga ungu, tompok salmon yang lebih pucat, dan hemangioma timbul semasa bayi. Tanda port-wine berterusan dan boleh menjadi lebih gelap atau tebal dengan usia, dan ini antara sebab orang dewasa mendapatkan rawatan untuknya.",
         "items": [
           {
-            "lead": "Cara mengenalnya:",
+            "lead": "Tandanya:",
             "body": "warnanya selalunya pudar seketika apabila ditekan, dan mungkin nampak lebih gelap apabila badan panas, menangis atau bersenam."
-          },
-          {
-            "lead": "Maksudnya:",
-            "body": "laser vaskular menyasarkan saluran darah, bukan pigmen. Tanda port-wine biasanya memerlukan beberapa sesi, dan matlamat biasa ialah menjadikannya lebih cerah, bukan menghilangkannya sama sekali."
           }
         ],
         "routing": "dinilai untuk laser vaskular, atau dirujuk kepada pakar pediatrik jika melibatkan hemangioma bayi."
@@ -181,12 +140,8 @@
         "body": "Tahi lalat sejak lahir, dan mana-mana tanda lahir yang sudah mula berubah, berada di luar laluan kosmetik. Melaser tahi lalat boleh menyembunyikan perubahan yang penting, jadi ia diperiksa, dipantau dan, jika perlu, dirujuk untuk penilaian dermatologi.",
         "items": [
           {
-            "lead": "Cara mengenalnya:",
+            "lead": "Tandanya:",
             "body": "tanda yang timbul atau bertekstur, ada bulu tumbuh daripadanya, atau sebarang perubahan baru-baru ini pada saiz, bentuk atau warna."
-          },
-          {
-            "lead": "Maksudnya:",
-            "body": "pelannya ialah dokumentasi dan semakan, bukan rawatan untuk penampilan."
           }
         ],
         "routing": "dinilai dan diambil gambar untuk pemantauan, dengan rujukan jika ada apa-apa yang nampak luar biasa."
@@ -194,7 +149,7 @@
     ]
   },
   "locationBlock": {
-    "heading": "Di mana tanda lahir muncul",
+    "heading": "Di mana ia muncul",
     "intro": "Kedudukan tanda lahir mempengaruhi apa kemungkinan jenisnya dan bagaimana ia didekati.",
     "cards": [
       {
@@ -207,11 +162,11 @@
       },
       {
         "title": "Dahi, kelopak mata dan tengkuk",
-        "body": "Tompok salmon berkumpul di sini pada bayi. Yang di muka lazimnya pudar; yang di belakang leher lebih kerap berterusan tetapi biasanya terlindung oleh rambut."
+        "body": "Tompok salmon pada bayi: yang di muka lazimnya pudar; yang di tengkuk lebih kerap berterusan."
       },
       {
         "title": "Bahagian bawah belakang dan punggung",
-        "body": "Tempat biasa bagi tompok Mongolia, yang sangat biasa pada bayi Asia dan lazimnya pudar semasa zaman kanak-kanak tanpa sebarang rawatan."
+        "body": "Tempat biasa bagi tompok Mongolia, yang lazimnya pudar semasa zaman kanak-kanak."
       },
       {
         "title": "Badan dan anggota",
@@ -224,7 +179,7 @@
     }
   },
   "seeDoctor": {
-    "heading": "Bila perlu berjumpa doktor",
+    "heading": "Bila perlu jumpa doktor",
     "intro": "Kebanyakan tanda lahir tidak berbahaya dan tetap begitu. Ini sebab-sebab untuk memeriksanya:",
     "triggers": [
       "Ia membesar, berubah bentuk, atau tepinya menjadi tidak sekata atau kabur.",
@@ -232,24 +187,23 @@
       "Ia menjadi timbul, berketul, gatal, berkerak, atau berdarah tanpa kecederaan yang jelas.",
       "Tanda berpigmen baharu muncul semasa dewasa yang tidak pernah ada sebelum ini.",
       "Hemangioma bayi membesar dengan cepat, berada dekat mata, hidung, bibir atau kawasan lampin, atau sudah pecah menjadi luka.",
-      "Anak mempunyai beberapa tompok café-au-lait, atau tanda port-wine yang merentasi dahi dan kelopak mata.",
-      "Ia stabil tetapi menjejaskan perasaan anda tentang penampilan, dan anda mahu tahu sama ada rawatan realistik."
+      "Anak mempunyai beberapa tompok café-au-lait, atau tanda port-wine yang merentasi dahi dan kelopak mata."
     ],
     "outro": "Mengambil gambar tanda lahir bersama pembaris setiap beberapa bulan ialah cara paling mudah untuk memantaunya. Perubahan ialah perkara yang penting, dan perubahan hampir mustahil dinilai daripada ingatan."
   },
   "ctaMid": {
     "heading": "Tak pasti sama ada tanda lahir anda jenis pigmen atau saluran darah?",
-    "body": "Ia menentukan laser mana yang relevan, dan sama ada laser relevan langsung. Hantar gambar kepada kami di WhatsApp dan doktor boleh beritahu apa rupanya dan sama ada ia berbaloi dinilai secara bersemuka."
+    "body": "Hantar gambar kepada kami di WhatsApp dan doktor boleh beritahu apa rupanya dan sama ada ia berbaloi dinilai secara bersemuka."
   },
   "treatmentsIntro": "Rawatan tanda lahir bergantung pada struktur yang membentuknya. Tanda lahir berpigmen dan vaskular dirawat dengan laser yang berbeza, dan sesetengah tanda lahir tidak dirawat langsung.",
   "treatmentWhy": {
     "pico-laser": {
       "why": "Untuk tanda lahir berpigmen seperti nevus Ota",
-      "body": "Denyutan laser yang sangat singkat memecahkan pigmen dalam kulit supaya badan dapat menyingkirkannya secara beransur-ansur. Ia digunakan untuk tanda lahir berpigmen, terutamanya tanda biru kelabu yang lebih dalam seperti nevus Ota, dan biasanya dalam beberapa sesi. Tompok café-au-lait bertindak balas dengan kurang boleh dijangka dan boleh kembali, dan doktor akan membincangkannya sebelum kawasan ujian."
+      "body": "Denyutan laser yang sangat singkat memecahkan pigmen dalam kulit supaya badan dapat menyingkirkannya secara beransur-ansur. Ia digunakan untuk tanda lahir berpigmen, terutamanya tanda biru kelabu yang lebih dalam seperti nevus Ota, dan biasanya dalam beberapa sesi. Tompok café-au-lait bertindak balas dengan kurang boleh dijangka dan boleh kembali."
     },
     "vascular-pigment-laser": {
       "why": "Untuk tanda port-wine dan tanda lahir saluran darah lain",
-      "body": "Tenaga laser yang diserap oleh darah dalam saluran darah memanaskan dan menutup saluran itu, menjadikan warna tanda lahir vaskular lebih cerah. Tanda port-wine biasanya memerlukan satu siri sesi, dan matlamatnya lazimnya menjadikannya lebih cerah, bukan menghilangkannya sama sekali. Tindak balas berbeza mengikut kedalaman saluran darah dan usia tanda itu."
+      "body": "Tenaga laser yang diserap oleh darah dalam saluran darah memanaskan dan menutup saluran itu, menjadikan warna tanda lahir vaskular lebih cerah. Tanda port-wine biasanya memerlukan satu siri sesi, dan matlamatnya lazimnya menjadikannya lebih cerah, bukan menghilangkannya sama sekali."
     }
   },
   "treatmentsNote": "Tahi lalat sejak lahir, tanda yang sedang berubah dan hemangioma bayi tidak termasuk dalam laluan ini. Tahi lalat dipantau dan dirujuk jika perlu, dan hemangioma yang memerlukan rawatan diuruskan secara perubatan di bawah pakar pediatrik, bukan dengan laser kosmetik.",
@@ -268,7 +222,7 @@
     }
   ],
   "firstVisit": {
-    "intro": "Konsultasi adalah percuma dan tiada paksaan untuk menempah rawatan selepas itu. Ia biasanya mengambil masa 20 hingga 30 minit.",
+    "intro": "Doktor memeriksa sama ada warnanya memutih apabila ditekan, yang membezakan pigmen daripada saluran darah.",
     "steps": [
       {
         "title": "Sejarah",
@@ -276,7 +230,7 @@
       },
       {
         "title": "Pemeriksaan",
-        "body": "Doktor melihat warna, kedalaman, tekstur dan tepi tanda itu, selalunya dengan pembesaran, dan memeriksa sama ada warnanya memutih apabila ditekan untuk membezakan pigmen daripada saluran darah."
+        "body": "Warna, kedalaman, tekstur dan tepi, selalunya dengan pembesaran."
       },
       {
         "title": "Gambar",
@@ -300,7 +254,6 @@
     }
   ],
   "risks": {
-    "intro": "Setiap rawatan laser yang dibincangkan di halaman ini membawa sedikit risiko.",
     "items": [
       {
         "lead": "Biasa dan selalunya sementara",
@@ -308,7 +261,7 @@
       },
       {
         "lead": "Perubahan pigmen",
-        "body": "Kulit yang dirawat boleh menjadi lebih gelap (hiperpigmentasi pasca-radang) atau lebih cerah dengan mana-mana laser, dan ini lebih mungkin pada jenis kulit yang lebih gelap dan dengan pendedahan matahari sekitar tempoh rawatan. Ia biasanya pudar dalam beberapa bulan tetapi kadangkala boleh berterusan. Perlindungan matahari yang ketat sebelum dan selepas sesi mengurangkan risiko ini."
+        "body": "Kulit yang dirawat boleh menjadi lebih gelap (hiperpigmentasi pasca-radang) atau lebih cerah dengan mana-mana laser, dan ini lebih mungkin pada jenis kulit yang lebih gelap dan dengan pendedahan matahari sekitar tempoh rawatan. Ia biasanya pudar dalam beberapa bulan tetapi kadangkala boleh berterusan."
       },
       {
         "lead": "Kurang biasa",
@@ -322,28 +275,27 @@
     "disclose": "Beritahu doktor jika anda hamil, mengambil ubat yang menjadikan kulit sensitif kepada cahaya, mudah mendapat keloid atau parut timbul, baru-baru ini terdedah kepada matahari atau kulit menjadi gelap, atau pernah menjalani rawatan sebelum ini pada tanda lahir itu."
   },
   "costFactors": {
-    "intro": "Kos tidak diterbitkan kerana ia bergantung pada penilaian. Faktor yang mempengaruhinya berguna untuk diketahui sebelum anda datang:",
+    "intro": "Harga ditetapkan selepas penilaian. Ia bergantung pada:",
     "factors": [
       "Jenis tanda lahir, kerana tanda berpigmen dan vaskular dirawat dengan laser yang berbeza.",
       "Saiz kawasan dan kedudukannya, kerana tanda dekat mata mengambil lebih banyak masa dan penjagaan.",
       "Sama ada kawasan ujian dibuat dahulu, yang biasa dilakukan pada muka dan pada kulit yang lebih gelap.",
       "Bilangan sesi yang dirancang, yang sangat berbeza antara jenis dan disemak mengikut tindak balas tanda itu.",
       "Jarak antara sesi, kerana sesetengah jenis memerlukan jarak lebih lama untuk kulit pulih."
-    ],
-    "outro": "Doktor akan menerangkan butirannya semasa konsultasi, termasuk apa yang akan disemak selepas kawasan ujian, sebelum anda membuat sebarang keputusan."
+    ]
   },
   "faqs": [
     {
       "q": "Tanda lahir boleh hilang ke? Boleh dibuang?",
-      "a": "Ia bergantung pada jenisnya, dan hasilnya berbeza antara individu. Sesetengah tanda lahir berpigmen, seperti nevus Ota, selalunya menjadi lebih cerah dengan satu kursus laser pigmen, dan tanda port-wine lazimnya dicerahkan dengan laser vaskular. Yang lain, termasuk tahi lalat sejak lahir dan banyak tanda lahir pada kanak-kanak kecil, lebih baik dipantau atau dibiarkan. Doktor mengenal pasti jenisnya dahulu sebelum menerangkan apa yang realistik."
+      "a": "Ia bergantung pada jenisnya, dan hasilnya berbeza antara individu. Sesetengah tanda lahir berpigmen, seperti nevus Ota, selalunya menjadi lebih cerah dengan satu kursus laser pigmen, dan tanda port-wine lazimnya dicerahkan dengan laser vaskular. Yang lain, termasuk tahi lalat sejak lahir dan banyak tanda lahir pada kanak-kanak kecil, lebih baik dipantau atau dibiarkan."
     },
     {
       "q": "Tanda lahir bahaya ke?",
-      "a": "Kebanyakannya tidak berbahaya. Yang patut diperiksa ialah tanda yang berubah: membesar, menjadi gelap secara tidak sekata, timbul, berdarah atau gatal. Tahi lalat sejak lahir yang besar dipantau dari semasa ke semasa, dan sesetengah corak tanda lahir pada kanak-kanak diperiksa untuk kaitan dengan keadaan lain. Ini langkah berjaga-jaga umum dan tidak bermaksud tanda lahir itu sendiri satu masalah."
+      "a": "Kebanyakannya tidak berbahaya. Yang patut diperiksa ialah tanda yang berubah: membesar, menjadi gelap secara tidak sekata, timbul, berdarah atau gatal. Tahi lalat sejak lahir yang besar dipantau dari semasa ke semasa, dan sesetengah corak tanda lahir pada kanak-kanak diperiksa untuk kaitan dengan keadaan lain."
     },
     {
       "q": "Kenapa tanda lahir yang berbeza memerlukan rawatan yang berbeza?",
-      "a": "Tanda lahir berpigmen dan vaskular terhasil daripada struktur kulit yang berbeza, iaitu sel pigmen berbanding saluran darah, dan setiap satu menyerap panjang gelombang cahaya laser yang berbeza. Menggunakan yang salah hampir tidak memberi kesan pada tanda itu tetapi masih membawa risiko rawatan. Doktor memastikan struktur mana yang terlibat sebelum perkara lain dibincangkan."
+      "a": "Tanda lahir berpigmen dan vaskular terhasil daripada struktur kulit yang berbeza, iaitu sel pigmen berbanding saluran darah, dan setiap satu menyerap panjang gelombang cahaya laser yang berbeza. Menggunakan yang salah hampir tidak memberi kesan pada tanda itu tetapi masih membawa risiko rawatan."
     },
     {
       "q": "Tanda lahir anak saya akan hilang sendiri ke?",
@@ -351,7 +303,7 @@
     },
     {
       "q": "Laser tanda lahir perlu berapa kali?",
-      "a": "Tiada bilangan standard, kerana ia bergantung pada jenis, kedalaman, saiz dan kedudukan tanda itu dan bagaimana kulit anda bertindak balas. Tanda lahir berpigmen dan vaskular biasanya memerlukan satu siri sesi yang dijarakkan beberapa minggu, dan pelan disemak selepas setiap sesi. Doktor akan memberi julat yang realistik selepas memeriksa tanda itu dan, selalunya, selepas kawasan ujian."
+      "a": "Tiada bilangan standard, kerana ia bergantung pada jenis, kedalaman, saiz dan kedudukan tanda itu dan bagaimana kulit anda bertindak balas. Tanda lahir berpigmen dan vaskular biasanya memerlukan satu siri sesi yang dijarakkan beberapa minggu, dan pelan disemak selepas setiap sesi."
     },
     {
       "q": "Laser tanda lahir sakit ke?",
@@ -359,7 +311,7 @@
     },
     {
       "q": "Tanda lahir boleh datang balik selepas laser?",
-      "a": "Sesetengahnya boleh. Tompok café-au-lait khususnya boleh menjadi gelap semula selepas cerah pada mulanya, dan tanda port-wine boleh menjadi gelap semula perlahan-lahan selama bertahun-tahun. Pendedahan matahari menjadikan kedua-duanya lebih mungkin. Perkara ini dibincangkan sebelum rawatan supaya jangkaan realistik dari awal."
+      "a": "Sesetengahnya boleh. Tompok café-au-lait khususnya boleh menjadi gelap semula selepas cerah pada mulanya, dan tanda port-wine boleh menjadi gelap semula perlahan-lahan selama bertahun-tahun. Pendedahan matahari menjadikan kedua-duanya lebih mungkin."
     },
     {
       "q": "Tahi lalat sejak lahir boleh dibuang dengan laser?",

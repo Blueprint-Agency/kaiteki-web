@@ -111,3 +111,29 @@ Same as the pilot (`acne.md` § Method): Google Autocomplete with `gl=my` (`hl=z
 8. **"Vascular occlusion"** is 血管栓塞 / *oklusi vaskular (saluran darah tersumbat)*.
 9. **Sunscreen evidence line (FAQ 1).** "By a distance the most evidenced thing" is rendered as 证据最充分 … 远远超过其他方法 / *bukti paling kukuh, jauh mengatasi yang lain*. It's a statement about sunscreen, not about Kaiteki, and it's faithful to the EN, but please confirm it's acceptable under the superlative rule.
 10. **Location card glosses (zh).** 法令纹 and 木偶纹 are added in brackets to name the EN "folds". They are strong AC terms and don't change the meaning.
+
+## Re-sync 2026-10-14 (English rewrite)
+
+34 blanks per language. None of them is a search-relevant field (no seoTitle, seoDescription, name, heading, tab title, compare column, FAQ question or jumpNav label was reworded), so no Autocomplete probes were run. The keyword decisions above stand unchanged.
+
+### Chinese (zh)
+
+| English | probes | evidence | KEYWORD/DIRECT |
+|---|---|---|---|
+| (no search-relevant blanks) | n/a | n/a | n/a |
+
+Body blanks translated directly: **34** (leadAnswer, banner.alt, facts[2], sections body, drivers intro and two items, variant intro, two location cards, ctaMid body, treatmentsIntro, two treatmentWhy bodies, compare intro, firstVisit intro/steps/outro, two risk bodies, costFactors intro, ten FAQ answers). Most are the previous translation trimmed to the shortened English; terms kept: 内源性/外源性老化, 水光针, 点阵激光, 血管栓塞, 炎症后色素沉着（反黑）, 法令纹 gloss on the mid-face card, 价钱.
+
+### Malay (ms)
+
+| English | probes | evidence | KEYWORD/DIRECT |
+|---|---|---|---|
+| (no search-relevant blanks) | n/a | n/a | n/a |
+
+Body blanks translated directly: **34** (same paths as zh). Terms kept: penuaan intrinsik/ekstrinsik, isi padu, ketegangan, Skin booster, Laser fraksional, oklusi vaskular (saluran darah tersumbat), downtime, garis senyum gloss, Harga.
+
+### Reviewer notes
+
+1. **Permanence (risks[3], FAQ 7).** Same wording as before: 效果需要定期维持，不会一直保持 / *hasil perlu dikekalkan dengan penjagaan berkala serta tidak bertahan selama-lamanya*. No 永久 / *kekal* (as an adjective).
+2. **firstVisit step 3** adds "with no obligation to proceed": 你没有义务继续进行 / *tanpa sebarang kewajipan untuk meneruskan*.
+3. **banner.alt** describes the new photo (mature woman, short greying hair, light scarf, profile, light grey background).

@@ -15,12 +15,14 @@
 //   L-07 fail  a ledger entry (content/i18n/pages.ts) with no translation file
 //   L-08 warn  a translation file with no ledger entry (it has no URL yet)
 //   L-09 fail  a translation file missing from the static index (pnpm i18n:index)
+//   L-10 fail  the English copy changed since the translation's snapshot
+//              (content/i18n/concerns/_en/); pnpm i18n:sync re-aligns by text
 
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { concernBySlug } from "../content/data/concerns.ts";
 import { localePages } from "../content/i18n/pages.ts";
-import { overlay } from "../lib/i18n-overlay.ts";
+import { copyStrings, overlay } from "../lib/i18n-overlay.ts";
 
 const root = process.cwd();
 let failures = 0;
@@ -109,6 +111,21 @@ for (const locale of ["zh", "ms"] as const) {
       fail(where, "L-01", `invalid JSON: ${(e as Error).message}`);
       continue;
     }
+    // L-10: the translation was made from content/i18n/concerns/_en/<slug>.json.
+    // If the English copy has moved on since, positions can shift and a
+    // translated sentence would land in the wrong slot, so re-align first.
+    const snapFile = join(root, "content", "i18n", "concerns", "_en", `${slug}.json`);
+    if (!existsSync(snapFile)) {
+      fail(where, "L-10", "no English snapshot in content/i18n/concerns/_en/");
+    } else {
+      const record: Record<string, unknown> = { ...en };
+      delete record.archetype;
+      delete record.depth;
+      const now = JSON.stringify(copyStrings(JSON.parse(JSON.stringify(record))));
+      const then = JSON.stringify(copyStrings(JSON.parse(readFileSync(snapFile, "utf8"))));
+      if (now !== then) fail(where, "L-10", "English changed since this was translated: run pnpm i18n:sync, then translate the blanks");
+    }
+
     const { missing } = overlay(en, tr);
     if (missing.length) fail(where, "L-01", `${missing.length} untranslated: ${missing.slice(0, 5).join(", ")}${missing.length > 5 ? " …" : ""}`);
 

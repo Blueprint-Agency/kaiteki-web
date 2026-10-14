@@ -88,3 +88,29 @@ Same as the pilot. Google Autocomplete (free) at `https://suggestqueries.google.
 7. **ms "selulit" vs "selulitis".** Malay AC mixes cellulite with *selulitis* (a skin infection). The copy only ever says *selulit*. Worth one glance to make sure readers won't confuse the two.
 
 No L-03r warnings were raised on these files.
+
+## Re-sync 2026-10-14 (English rewrite)
+
+The English page was rewritten upstream; the sync tool kept every unchanged translation and blanked 30 strings per locale. Only one blank is search-relevant: `sections[0].heading`, which changed from "What is body slimming / contouring?" to "What is body contouring?". The earlier decision for that heading was reused (no new probe needed for zh; one ms re-check).
+
+### Chinese (`/zh`)
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| sections[0].heading "What is body contouring?" | reused: 什么是身体塑形, 身体塑形是什么, 塑身是什么, 身体塑形, 身体雕塑 (logged above) | question forms empty; `身体塑形` returns itself | KEYWORD (weak, reused): **什么是身体塑形（瘦身塑形）？** Order flipped to follow EN, which now leads with "body contouring"; 瘦身塑形 (the locked name) kept as the gloss. |
+
+### Malay (`/ms`)
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| sections[0].heading "What is body contouring?" | apa itu body contouring (re-checked 2026-10-14) + earlier log | `apa itu body contouring` returns itself; Malay form empty | KEYWORD (reused): **Apa itu body contouring (pelangsingan badan)?** Order flipped to follow EN. |
+
+**Body blanks translated directly:** 29 zh, 29 ms (leadAnswer, facts[2], section body, drivers intro and three item bodies, variant intro and pairs[0].reality, seeDoctor intro/outro, ctaMid.body, treatments intro/note, firstVisit intro and steps[1]/[2], risks items[1]/[3], costFactors.intro, technologyIntro, FAQ answers 1, 2, 3, 5, 6, 7). Most are the old translation trimmed to the shorter English; no claims added.
+
+**Reviewer notes**
+
+1. ms `drivers.intro` was first drafted with *kekal* ("persist") and raised L-03r; reworded to *masih tinggal* so it can't be read as "permanent".
+2. zh `facts[2].label` renders "whether cooling applies" as 冷冻溶脂是否适用, naming the treatment as the body copy already does. ms keeps the generic *rawatan penyejukan*.
+3. "No obligation to proceed" is 你没有义务一定要进行疗程 / *Tiada sebarang kewajipan untuk meneruskan rawatan*, matching the homepage FAQ wording.
+
+No L-03r warnings remain on these files.

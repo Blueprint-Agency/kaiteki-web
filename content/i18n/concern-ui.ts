@@ -7,16 +7,25 @@
 
 import type { Locale } from "@/lib/i18n";
 import type { SkinDiagramLabels } from "@/components/SkinDepthDiagram";
+import type { UnderEyeLabels } from "@/components/UnderEyeDiagram";
+import type { FaceLayersLabels } from "@/components/FaceLayersDiagram";
 
 export type ConcernUi = {
   /** Intl locale for review dates. */
   intl: string;
   home: string;
   inBrief: string;
+  swipeHint: string;
   learnMore: string;
   routing: string;
+  /** Quote marks around a myth in the claim/reality pairs. */
+  quoteOpen: string;
+  quoteClose: string;
   /** Melasma's skin cross-section; undefined keeps the English default. */
   skinDiagram?: SkinDiagramLabels;
+  /** Dark circles' under-eye drawing and the face-layers cross-section. */
+  underEye?: UnderEyeLabels;
+  faceLayers?: FaceLayersLabels;
   concerns: string;
   kicker: string; // "{group}"
   heroCta: string;
@@ -56,7 +65,6 @@ export type ConcernUi = {
   ctaMid: {
     button: string;
     note: string;
-    steps: { title: string; body: string }[];
   };
   /** Technology card type badges, by Technology["type"]. */
   techType: Record<string, string>;
@@ -66,8 +74,11 @@ const en: ConcernUi = {
   intl: "en-GB",
   home: "Home",
   inBrief: "In brief",
+  swipeHint: "Swipe the table sideways to see every column.",
   learnMore: "Learn more",
   routing: "Usually assessed for:",
+  quoteOpen: "“",
+  quoteClose: "”",
   concerns: "Concerns",
   kicker: "Concern · {group}",
   heroCta: "Book a free consultation",
@@ -110,15 +121,7 @@ const en: ConcernUi = {
   viewLarger: "View larger: {caption}",
   ctaMid: {
     button: "Ask about this on WhatsApp",
-    note: "Free consultation, no obligation.",
-    steps: [
-      { title: "Message us", body: "Send a question, or a photo, on WhatsApp." },
-      { title: "Free consultation", body: "About 20 to 30 minutes, with no obligation to book treatment." },
-      {
-        title: "Assessment first",
-        body: "A doctor examines your skin and explains the options and risks before any treatment.",
-      },
-    ],
+    note: "Free consultation, about 20 to 30 minutes, no obligation.",
   },
   techType: { device: "Device", injectable: "Injectable" },
 };
@@ -127,8 +130,11 @@ const zh: ConcernUi = {
   intl: "zh-CN",
   home: "首页",
   inBrief: "重点摘要",
+  swipeHint: "左右滑动表格，查看所有栏目。",
   learnMore: "了解更多",
   routing: "通常会评估：",
+  quoteOpen: "“",
+  quoteClose: "”",
   skinDiagram: {
     aria: "皮肤分层示意图，显示{depth}。",
     depth: {
@@ -141,6 +147,35 @@ const zh: ConcernUi = {
     dermis: "真皮",
     fat: "脂肪层",
     caption: "仅为示意图。色素位于哪一层，由医生检查时判断。",
+  },
+  underEye: {
+    aria: "眼下区域示意图，显示{focus}。",
+    focus: {
+      pigment: "眼下皮肤里的褐色色素",
+      vascular: "透过较薄的眼下皮肤看到的青紫色血管",
+      structural: "下眼睑与脸颊之间凹陷形成的阴影",
+      mixed: "色素、可见血管和凹陷阴影同时存在",
+    },
+    pigment: "色素",
+    vessels: "血管",
+    hollow: "凹陷",
+    cheek: "脸颊",
+    caption: "仅为示意图。属于哪一种成因，由医生检查时判断。",
+  },
+  faceLayers: {
+    aria: "脸部分层剖面示意图，突出显示{focus}。",
+    focus: {
+      skin: "皮肤，也就是最外层",
+      volume: "皮肤下方的脂肪垫",
+      structure: "更深层的支撑结构：筋膜层（SMAS）和肌肉",
+    },
+    surface: "皮肤表面",
+    skin: "皮肤",
+    fat: "脂肪垫",
+    smas: "SMAS 筋膜层",
+    muscle: "与肌肉",
+    bone: "骨骼",
+    caption: "仅为示意图。虚线代表支撑韧带。涉及哪些层次，由医生检查时判断。",
   },
   concerns: "皮肤问题",
   kicker: "皮肤问题 · {group}",
@@ -181,12 +216,7 @@ const zh: ConcernUi = {
   viewLarger: "放大查看：{caption}",
   ctaMid: {
     button: "WhatsApp 询问",
-    note: "免费咨询，没有购买压力。",
-    steps: [
-      { title: "发信息给我们", body: "在 WhatsApp 发问题或照片给我们。" },
-      { title: "免费咨询", body: "约20至30分钟，不必当场决定做疗程。" },
-      { title: "先评估", body: "医生会先检查你的皮肤，在任何疗程之前说明选择与风险。" },
-    ],
+    note: "免费咨询，约20至30分钟，没有购买压力。",
   },
   techType: { device: "仪器", injectable: "针剂" },
 };
@@ -195,8 +225,11 @@ const ms: ConcernUi = {
   intl: "ms-MY",
   home: "Laman Utama",
   inBrief: "Ringkasan",
+  swipeHint: "Leret jadual ke tepi untuk melihat semua lajur.",
   learnMore: "Ketahui lebih lanjut",
   routing: "Biasanya dinilai untuk:",
+  quoteOpen: "“",
+  quoteClose: "”",
   skinDiagram: {
     aria: "Rajah ilustrasi lapisan kulit, menunjukkan {depth}.",
     depth: {
@@ -209,6 +242,35 @@ const ms: ConcernUi = {
     dermis: "Dermis",
     fat: "Lapisan lemak",
     caption: "Ilustrasi sahaja. Kedudukan pigmen dianggarkan oleh doktor semasa pemeriksaan.",
+  },
+  underEye: {
+    aria: "Lukisan ilustrasi kawasan bawah mata, menunjukkan {focus}.",
+    focus: {
+      pigment: "pigmen coklat pada kulit di bawah mata",
+      vascular: "saluran darah biru keunguan yang kelihatan melalui kulit bawah mata yang nipis",
+      structural: "bayang yang terhasil daripada lekuk antara kelopak bawah dan pipi",
+      mixed: "pigmen, saluran darah yang kelihatan dan bayang lekuk serentak",
+    },
+    pigment: "Pigmen",
+    vessels: "Saluran darah",
+    hollow: "Lekuk",
+    cheek: "Pipi",
+    caption: "Ilustrasi sahaja. Punca yang berkaitan dinilai oleh doktor semasa pemeriksaan.",
+  },
+  faceLayers: {
+    aria: "Keratan rentas ilustrasi lapisan muka, menonjolkan {focus}.",
+    focus: {
+      skin: "kulit, lapisan paling luar",
+      volume: "pad lemak di bawah kulit",
+      structure: "lapisan sokongan yang lebih dalam, iaitu fasia (SMAS) dan otot",
+    },
+    surface: "Permukaan kulit",
+    skin: "Kulit",
+    fat: "Pad lemak",
+    smas: "SMAS",
+    muscle: "& otot",
+    bone: "Tulang",
+    caption: "Ilustrasi sahaja. Garis putus-putus ialah ligamen penyokong. Lapisan yang terlibat dinilai oleh doktor semasa pemeriksaan.",
   },
   concerns: "Masalah Kulit",
   kicker: "Masalah Kulit · {group}",
@@ -252,15 +314,7 @@ const ms: ConcernUi = {
   viewLarger: "Lihat lebih besar: {caption}",
   ctaMid: {
     button: "Tanya di WhatsApp",
-    note: "Konsultasi percuma, tiada paksaan.",
-    steps: [
-      { title: "Hantar mesej", body: "Hantar soalan atau gambar melalui WhatsApp." },
-      { title: "Konsultasi percuma", body: "Kira-kira 20 hingga 30 minit, tiada paksaan untuk membuat rawatan." },
-      {
-        title: "Penilaian dahulu",
-        body: "Doktor memeriksa kulit anda dan menerangkan pilihan serta risiko sebelum sebarang rawatan.",
-      },
-    ],
+    note: "Konsultasi percuma, kira-kira 20 hingga 30 minit, tiada paksaan.",
   },
   techType: { device: "Mesin", injectable: "Suntikan" },
 };

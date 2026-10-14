@@ -110,3 +110,30 @@ Same as the pilot (`acne.md` §Method): Google Autocomplete as the volume proxy 
 6. **"Laser does not cure rosacea"** is 激光不能根除玫瑰痤疮 (根除 is negated; 根治 avoided because it's on the banned list) and *Laser tidak menyembuhkan rosacea*.
 7. **FAQ 8 zh adds 会反黑吗.** The answer was widened to "色素改变（变深或变浅）", which is the faithful EN meaning, so it doesn't imply darkening only.
 8. **Rosacea** is 玫瑰痤疮（酒糟） (pilot note 1 applies). Malay keeps *rosacea* (no usable Malay term in AC).
+
+## Re-sync 2026-10-14 (English rewrite)
+
+The English rewrite left 19 blanks per language. None is a search-relevant field (the three intros are body lead-ins, not headings), so no Autocomplete probes were run and both keyword tables are empty.
+
+### Chinese (zh)
+
+| English | probes | evidence | KEYWORD/DIRECT |
+|---|---|---|---|
+| (none: no search-relevant blanks) | n/a | n/a | n/a |
+
+**Body blanks translated directly:** 19 (leadAnswer, banner.alt, sections[0].body[1], drivers.intro, drivers.items[3].body, variant.intro, locationBlock.intro, seeDoctor.outro, ctaMid.body, treatmentsNote, firstVisit.intro, firstVisit.steps[1] and [3] bodies, visitImages[2].caption, costFactors.intro, faqs[0,1,2,7].a).
+
+### Malay (ms)
+
+| English | probes | evidence | KEYWORD/DIRECT |
+|---|---|---|---|
+| (none: no search-relevant blanks) | n/a | n/a | n/a |
+
+**Body blanks translated directly:** 19 (same paths as zh).
+
+### Reviewer notes
+
+1. The new leadAnswer and FAQ 1 name the vessel types with the terms already approved for review on this page: 红血丝 / 蜘蛛痣 / 樱桃状血管瘤（红痣） / 静脉曲张 and *urat merah halus* / *spider angioma* / *cherry angioma* / *urat varikos*.
+2. "The vessels are dilated, not broken" is 这些血管是扩张了，而不是破裂 / *Saluran darah itu mengembang, bukan pecah*, matching the existing broken-capillaries FAQ.
+3. "Results vary between individuals" (FAQ 1) is 效果因人而异 / *hasilnya berbeza antara individu*.
+4. banner.alt describes the new banner image (lower face in profile with cheek redness), not the old hero.

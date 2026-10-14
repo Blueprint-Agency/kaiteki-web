@@ -103,3 +103,29 @@ Same as the pilot (`acne.md` §Method): Google Autocomplete as the volume proxy 
 6. **A酸类（维A酸）** used for retinoids in zh (pilot precedent); Malay uses *retinoid*.
 7. **"Skincare" is used as a Malay word** in FAQ 3 (AC `skincare untuk liang pori besar`); *penjagaan kulit* is used everywhere else.
 8. **Compare row "Single large pore or new bumps"** is rendered 单个特别大的毛孔或新出现的小颗粒 / *Satu liang pori besar atau bintil baharu*.
+
+## Re-sync 2026-10-14 (English rewrite)
+
+The sync tool kept every translation whose English was unchanged and blanked 28 strings per locale. **None of the 28 is search-relevant** (no seoTitle, seoDescription, name, headings, tab titles, compare columns, FAQ questions or jumpNav labels were reworded), so no Autocomplete probes were run and every decision above still stands.
+
+### Chinese (`/zh`)
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| (none) | n/a | n/a | n/a |
+
+### Malay (`/ms`)
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| (none) | n/a | n/a | n/a |
+
+**Body blanks translated directly:** 28 zh, 28 ms (leadAnswer, banner alt, facts[2], sections[0] body, drivers/variant/seeDoctor intros, ctaMid body, treatments intro and note, two treatmentWhy bodies, compare intro, first-visit intro and steps, risks[1], cost intro, nine FAQ answers). Most are the old translation trimmed to the shorter English; nothing was added or strengthened.
+
+**Reviewer notes**
+
+1. `firstVisit.steps[2].title` "Discussion and plan" reuses the wording already used on other concern pages: 讨论与计划 / *Perbincangan dan pelan*.
+2. New EN step body ends "No obligation to proceed": 你没有义务继续进行疗程 / *Tiada kewajipan untuk meneruskan*.
+3. New `treatmentsNote` (active acne settled first): 活跃的暗疮 / *jerawat aktif*.
+4. "T-zone" rendered T字部位 / *zon T*.
+5. The four zh and four ms L-03r warnings (永久 / *kekal*) are the existing negations in myth 3 and FAQ 1; FAQ 1's answer still opens with the denial. One new *kekal* in the ms sections body was reworded to *tetap tegang* to avoid a false flag.

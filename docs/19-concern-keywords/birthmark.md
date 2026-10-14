@@ -105,3 +105,29 @@
 7. **Malay FAQ 1** leads with *boleh hilang ke?* (the AC form) before *Boleh dibuang?*. The answer is unchanged and hedged.
 8. **Pain FAQ:** "snapping" = 弹跳或刺痛 / *rasa seperti dipetik atau pedih*. No 无痛 / *tanpa sakit*.
 9. **Before/after captions** follow the pilot: 之前与之后 / *sebelum dan selepas*.
+
+## Re-sync 2026-10-14 (English rewrite)
+
+18 blanks per language. None of them is a search-relevant field (no seoTitle, seoDescription, name, heading, tab title, compare column, FAQ question or jumpNav label was reworded), so no Autocomplete probes were run. The keyword decisions above stand unchanged.
+
+### Chinese (zh)
+
+| English | probes | evidence | KEYWORD/DIRECT |
+|---|---|---|---|
+| (no search-relevant blanks) | n/a | n/a | n/a |
+
+Body blanks translated directly: **18** (leadAnswer, sections body[1], drivers item 1, variant intro, two location cards, ctaMid body, pico and vascular treatmentWhy bodies, firstVisit intro and step 2, risks[1], costFactors intro, FAQ answers 1, 2, 3, 5, 7). Terms kept: 咖啡牛奶斑, 太田痣, 蒙古斑, 鲜红斑痣, 鲑鱼斑, 血管瘤, 色素型/血管型, 炎症后色素沉着, 价钱.
+
+### Malay (ms)
+
+| English | probes | evidence | KEYWORD/DIRECT |
+|---|---|---|---|
+| (no search-relevant blanks) | n/a | n/a | n/a |
+
+Body blanks translated directly: **18** (same paths as zh). Terms kept: tompok café-au-lait, nevus Ota, tompok Mongolia, tanda port-wine, tompok salmon, hemangioma, berpigmen/vaskular, hiperpigmentasi pasca-radang, tengkuk, Harga.
+
+### Reviewer notes
+
+1. **New pregnancy line (sections body[1]):** 胎记不是父母在怀孕期间做了或没做什么而造成的 / *Tanda lahir tidak disebabkan oleh apa-apa yang ibu bapa lakukan atau tidak lakukan semasa mengandung.* Faithful to the EN; please confirm it reads as reassurance, not a medical claim.
+2. **leadAnswer** now lists the subtypes in brackets, using the page's existing names for each.
+3. The two L-03r warnings on zh/birthmark (皮肤科 in variant tab 3 and FAQ 8) are on unchanged strings and are dermatologist referrals, which are allowed.

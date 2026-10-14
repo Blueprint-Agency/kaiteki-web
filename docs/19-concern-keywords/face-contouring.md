@@ -108,3 +108,28 @@
 6. **Surgeons:** 合格的外科医生 / *pakar bedah yang bertauliah*. *Pakar* here refers to the surgeon a patient may be referred to, never to Kaiteki's doctors.
 7. **Malay "mengerot gigi" / "mengetap gigi"** for grinding / clenching (AC: `mengetap gigi semasa tidur`, `kerot gigi`). Please confirm both read naturally.
 8. **Before/after captions** follow the pilot: 疗程之前与之后 / *sebelum dan selepas*.
+
+## Re-sync 2026-10-14 (English rewrite)
+
+The English page was rewritten upstream and the sync tool blanked 37 strings per locale. **None of the 37 is search-relevant**: no seoTitle, seoDescription, name, heading, tab title, compare column, FAQ question or jumpNav label changed. Every keyword decision above still stands unchanged.
+
+### Chinese (`/zh`)
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| (no search-relevant blanks) | n/a | n/a | n/a |
+
+### Malay (`/ms`)
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| (no search-relevant blanks) | n/a | n/a | n/a |
+
+**Body blanks translated directly:** 37 zh, 37 ms (leadAnswer, banner.alt, facts[2], sections[0].body[1], drivers intro and fat body, both figure captions, variant intro and fat tab body, locationBlock intro and note, seeDoctor intro, ctaMid body, treatments intro/fat-freezing/note, compare intro, firstVisit intro and steps 2 to 3, risks 3 to 5, costFactors intro, technologyIntro, FAQ answers 1, 3 to 8, 10 and 12). Most are shortened EN sentences, so the earlier translation was trimmed to match rather than re-worded, which keeps terminology identical (下颚线, 咬肌, 放松肌肉的注射, 恢复期, 价钱 / *garis rahang, suntikan pelemas otot, downtime, kos/harga, pakar bedah*).
+
+**Reviewer notes**
+
+1. "Discussion and plan" uses the wording already on other concern pages: 讨论与计划 / *Perbincangan dan pelan*. "with no obligation to proceed" is 你没有义务一定要做疗程 / *tanpa sebarang kewajipan untuk meneruskan*.
+2. "Pricing is set after assessment" uses 价钱 (zh, per the jumpNav decision above) and *Harga* (ms; it is body copy, not a title, so the bare-*harga* title rule in docs/18 §7 doesn't apply).
+3. "Effects are not permanent" keeps the earlier rendering (不是一劳永逸的 / *tidak berkekalan*); FAQ 3 keeps *untuk dikekalkan* ("to maintain"). The L-03r lint raises nothing on these files.
+4. "A lack of projection" is 突出度不足 / *dagu yang kurang unjuran*, matching the existing locationBlock card wording.

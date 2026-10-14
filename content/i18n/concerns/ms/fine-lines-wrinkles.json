@@ -4,7 +4,7 @@
   "group": "Face",
   "image": "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/card.jpg",
   "summary": "Garis yang muncul apabila muka bergerak dan garis yang tetap ada semasa muka rehat memerlukan pendekatan berbeza. Doktor menilai jenis yang anda alami sebelum mencadangkan rawatan.",
-  "leadAnswer": "Garis halus dan kedutan muka terbentuk akibat pergerakan muka, usia dan kualiti kulit. Garis ekspresi dan garis statik dirawat secara berbeza, jadi doktor akan menilai jenis yang anda alami. Konsultasi membantu menentukan pendekatan mana, jika ada, yang sesuai untuk kulit anda.",
+  "leadAnswer": "Garis halus dan kedutan datang daripada tiga sumber: pergerakan otot yang melipat kulit (garis dinamik), kulit itu sendiri yang semakin nipis akibat usia dan matahari (garis statik), dan kehilangan isi muka yang membentuk lipatan. Setiap satu ditangani secara berbeza: suntikan pelega otot untuk garis dinamik, rawatan yang merangsang kolagen untuk garis statik, dan sokongan di atas lipatan untuk kehilangan isi muka.",
   "treatments": [
     "hifu",
     "ultherapy",
@@ -33,8 +33,8 @@
       "label": "Lipatan yang sama boleh datang daripada otot, kehilangan isi muka, atau kulit itu sendiri."
     },
     {
-      "value": "Penilaian dahulu",
-      "label": "Doktor memeriksa muka anda semasa rehat dan semasa bergerak sebelum sebarang rawatan."
+      "value": "Semasa rehat dan bergerak",
+      "label": "Muka diperiksa semasa tidak bergerak dan semasa membuat ekspresi, kerana itulah yang menentukan jenis garis."
     }
   ],
   "jumpNav": [
@@ -45,10 +45,6 @@
     {
       "id": "which-type",
       "label": "Jenis kedutan"
-    },
-    {
-      "id": "where",
-      "label": "Di mana ia muncul"
     },
     {
       "id": "treatments",
@@ -72,17 +68,17 @@
       "heading": "Apa itu garis halus dan kedutan muka?",
       "body": [
         "Garis halus dan kedutan ialah lipatan yang terbentuk pada kulit dari semasa ke semasa. Garis ekspresi muncul apabila muka bergerak, seperti senyum, mengecilkan mata atau berkerut dahi, dan berkait dengan cara muka bergerak. Ia sering kelihatan di sekitar mata, dahi dan mulut.",
-        "Kedutan statik ialah garis yang masih kelihatan walaupun muka sedang rehat. Ia biasanya terbentuk secara beransur-ansur apabila kolagen dan elastin kulit berubah akibat usia dan pendedahan matahari. Oleh kerana garis ekspresi dan garis statik berkelakuan berbeza, memahami jenis yang anda alami ialah langkah pertama untuk menilai sama ada rawatan mungkin membantu."
+        "Kedutan statik ialah garis yang masih kelihatan walaupun muka sedang rehat. Ia biasanya terbentuk secara beransur-ansur apabila kolagen dan elastin kulit berubah akibat usia dan pendedahan matahari."
       ]
     }
   ],
   "drivers": {
-    "heading": "Punca garis halus dan kedutan di muka",
-    "intro": "Hampir setiap garis ada punca tertentu, dan mengenal pasti punca itulah yang menentukan rawatannya. Ini garis yang paling kerap ditunjukkan orang, dan apa sebenarnya yang menghasilkan setiap satu.",
+    "heading": "Punca kedutan",
+    "intro": "Kebanyakan garis ada punca tertentu, dan punca itulah yang menentukan rawatannya:",
     "items": [
       {
         "lead": "Ekspresi berulang:",
-        "body": "senyum, mengecilkan mata dan mengangkat kening melipat kulit di tempat yang sama beribu-ribu kali. Garis tepi mata (crow's feet) dan garis dahi bermula di sini, mula-mula hanya muncul semasa bergerak sebelum mula menetap."
+        "body": "senyum, mengecilkan mata dan mengangkat kening melipat kulit di tempat yang sama beribu-ribu kali. Garis tepi mata (crow's feet) dan garis dahi bermula di sini; kulit di sekitar mata ialah kulit yang paling nipis di muka, jadi kesannya paling awal kelihatan di situ."
       },
       {
         "lead": "Berkerut dan menumpukan perhatian:",
@@ -109,41 +105,11 @@
         "body": "garis melintang di leher dibentuk oleh pergerakan, postur dan kerap tunduk ke bawah. Kulit leher lebih nipis, dan leher juga kawasan yang paling kerap terlepas daripada rutin pelindung matahari."
       }
     ],
-    "outro": "Kekurangan air, merokok, tidur yang terganggu dan faktor genetik mendasari semua ini. Tiada satu pun yang menghasilkan garis dengan sendirinya, tetapi setiap satu mengubah kelajuan faktor lain bertindak."
+    "outro": "Kekurangan air, merokok, tidur yang tidak cukup dan faktor genetik mempercepatkan semua ini."
   },
-  "figures": [
-    {
-      "src": "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/image-line-expression.jpg",
-      "caption": "Garis ekspresi mengikut cara muka bergerak, mula-mula hanya muncul semasa bergerak sebelum mula menetap semasa rehat."
-    },
-    {
-      "src": "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/image-line-glabellar.jpg",
-      "caption": "Garis glabela ialah lipatan menegak di antara kening, terhasil daripada otot yang menarik kening ke tengah."
-    },
-    {
-      "src": "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/image-line-perioral.jpg",
-      "caption": "Garis perioral ialah lipatan menegak halus di sekitar mulut, didorong oleh otot bulat pada bibir."
-    },
-    {
-      "src": "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/image-line-marionette.jpg",
-      "caption": "Garis marionette menurun dari hujung mulut ke arah dagu, dan menjadi lebih dalam apabila sokongan di bahagian tengah muka berkurang."
-    },
-    {
-      "src": "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/image-line-static.jpg",
-      "caption": "Kedutan statik kelihatan semasa rehat dan mencerminkan struktur kulit itu sendiri, dengan pendedahan matahari sebagai faktor pemecut yang terbesar."
-    },
-    {
-      "src": "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/image-line-sleep.jpg",
-      "caption": "Garis tidur terhasil daripada tekanan bantal selama berjam-jam, dan biasanya menyerong serta tidak simetri."
-    },
-    {
-      "src": "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/image-line-neck.jpg",
-      "caption": "Garis leher dibentuk oleh postur dan pergerakan, pada kulit yang lebih nipis dan paling kerap terlepas daripada rutin pelindung matahari."
-    }
-  ],
   "variant": {
     "kind": "tabs",
-    "heading": "Jenis kedutan: yang mana satu anda alami?",
+    "heading": "Jenis kedutan",
     "intro": "Satu ujian mudah boleh membezakan kebanyakannya. Lihat cermin dengan muka yang betul-betul rehat, kemudian buat ekspresi yang menghasilkan garis itu. Apa yang berlaku pada garis itu antara kedua-dua keadaan inilah yang menentukan cara ia dirawat.",
     "tabs": [
       {
@@ -155,10 +121,6 @@
           {
             "lead": "Tandanya:",
             "body": "tiada langsung semasa rehat, jelas semasa bergerak. Garis tepi mata, garis dahi dan garis kerutan kening biasanya bermula di sini."
-          },
-          {
-            "lead": "Kenapa ia penting:",
-            "body": "rawatan pada peringkat ini menangani lipatan itu, sebelum kulit dilipat cukup kerap sehingga garis itu menetap."
           }
         ],
         "routing": "biasanya dinilai untuk suntikan pelega otot, dengan perhatian kepada kualiti kulit sekali."
@@ -199,52 +161,22 @@
       }
     ]
   },
-  "locationBlock": {
-    "heading": "Garis halus di muka: di mana ia muncul",
-    "intro": "Setiap kawasan muka bergerak dan menua secara berbeza, dan rawatannya juga berbeza.",
-    "cards": [
-      {
-        "title": "Dahi dan antara kening",
-        "body": "Garis melintang di dahi datang daripada mengangkat kening; garis menegak glabela datang daripada berkerut. Kedua-duanya bermula sebagai garis dinamik. Ini juga kawasan di mana rawatan berlebihan paling jelas kelihatan, jadi dos yang konservatif penting."
-      },
-      {
-        "title": "Sekitar mata",
-        "body": "Garis tepi mata (crow's feet), dan garis halus berkerepot di bawah kelopak mata bawah. Kulit di sini paling nipis di muka, jadi perubahan paling awal kelihatan di sini dan ia paling kurang tahan dengan rawatan yang agresif."
-      },
-      {
-        "title": "Sekitar mulut",
-        "body": "Garis menegak halus pada bibir dan lipatan yang menurun dari hujung mulut. Dua masalah berbeza dalam satu kawasan: satu melibatkan kulit dan otot, satu lagi kehilangan sokongan di atasnya."
-      },
-      {
-        "title": "Pipi dan bahagian tengah muka",
-        "body": "Tempat perubahan isi muka paling jelas kelihatan. Garis di sini selalunya akibat kawasan di atasnya menjadi rata, bukan lipatan pada kulit, sebab itu ia kurang bertindak balas kepada rawatan permukaan sahaja."
-      },
-      {
-        "title": "Leher dan dada atas",
-        "body": "Kulit lebih nipis, kelenjar minyak lebih sedikit, sentiasa bergerak dan, bagi kebanyakan orang, berpuluh tahun tanpa pelindung matahari. Dirawat dengan lebih konservatif berbanding muka, dan selalunya kawasan terakhir yang orang terfikir untuk dirawat sekali."
-      }
-    ],
-    "note": {
-      "title": "Bukan sekadar garis?",
-      "body": "Lipatan yang merah, bersisik, gatal atau berdarah, atau kawasan kulit yang teksturnya berubah dan bukan sekadar berlipat, perlu diperiksa oleh doktor, bukan dirawat secara kosmetik."
-    }
-  },
   "seeDoctor": {
     "intro": "Tiada tahap tertentu yang menandakan garis perlu dirawat. Ada baiknya anda dapatkan penilaian jika:",
     "triggers": [
       "Garis yang dahulu hanya muncul semasa bergerak kini kelihatan walaupun muka anda rehat.",
       "Anda tidak pasti sama ada yang anda lihat itu kedutan atau lipatan akibat kehilangan isi muka.",
-      "Skincare anda sudah tidak memberi perubahan dan anda mahu tahu apa, jika ada, yang boleh menambah baik.",
       "Anda baru pertama kali mempertimbangkan rawatan dan mahukan pelan yang konservatif dan berperingkat, bukan pakej.",
-      "Anda pernah menjalani rawatan di tempat lain dan tidak berpuas hati dengan rupanya."
+      "Anda pernah menjalani rawatan di tempat lain dan tidak berpuas hati dengan rupanya.",
+      "Lipatan yang merah, bersisik, gatal atau berdarah, atau kulit yang teksturnya berubah dan bukan sekadar berlipat: ini perlu diperiksa oleh doktor, bukan dirawat secara kosmetik."
     ],
-    "outro": "Penilaian awal berguna terutamanya kerana garis dinamik lebih mudah ditangani berbanding garis yang sudah menjadi statik. Itu sebab untuk memahami pilihan anda, bukan sebab untuk memulakan rawatan sebelum anda bersedia."
+    "outro": "Garis dinamik lebih mudah ditangani berbanding garis statik. Itu sebab untuk memahami pilihan anda, bukan sebab untuk bermula sebelum anda bersedia."
   },
   "ctaMid": {
     "heading": "Kedutan atau lipatan?",
-    "body": "Rupanya serupa tetapi cara rawatannya bertentangan: satu melegakan otot, satu lagi memulihkan sokongan. Hantar gambar kepada kami di WhatsApp dan doktor boleh beritahu yang mana satu anda alami."
+    "body": "Hantar gambar kepada kami di WhatsApp dan doktor boleh beritahu yang mana satu anda alami."
   },
-  "treatmentsIntro": "Ini rawatan yang paling kerap dipertimbangkan untuk garis halus dan kedutan di klinik kami. Rawatan mana yang sesuai, atau sama ada mana-mana satu sesuai, bergantung pada sama ada garis itu datang daripada otot, kehilangan sokongan, atau kulit itu sendiri.",
+  "treatmentsIntro": "Rawatan yang sesuai bergantung pada sama ada garis itu datang daripada otot, sokongan yang berkurang atau kulit itu sendiri.",
   "treatmentWhy": {
     "botulinum-toxin": {
       "why": "Untuk garis yang muncul semasa bergerak",
@@ -252,7 +184,7 @@
     },
     "dermal-fillers": {
       "why": "Untuk lipatan yang terbuka akibat kehilangan isi muka",
-      "body": "Diletakkan untuk memulihkan sokongan di tempat muka menjadi rata, bukan ke dalam lipatan itu sendiri. Paling relevan untuk lipatan nasolabial dan garis marionette, yang merupakan bayang akibat tisu turun, bukan lipatan pada kulit."
+      "body": "Diletakkan untuk memulihkan sokongan di tempat muka menjadi rata, bukan ke dalam lipatan itu sendiri. Paling relevan untuk lipatan nasolabial dan garis marionette."
     },
     "skin-booster": {
       "why": "Untuk garis halus berkerepot dan kulit permukaan yang kering",
@@ -264,7 +196,7 @@
     },
     "resurfacing-laser": {
       "why": "Untuk garis statik yang lebih dalam di sekitar mulut",
-      "body": "Laser fraksional yang digunakan apabila garis sudah terukir dalam kulit dan tekstur sudah berubah. Downtime lebih panjang berbanding pilihan di atas, dan mengelak matahari dengan ketat selepas itu ialah sebahagian daripada rawatan."
+      "body": "Laser fraksional yang digunakan apabila garis sudah terukir dalam kulit dan tekstur sudah berubah. Downtime lebih panjang berbanding pilihan di atas."
     },
     "hifu": {
       "why": "Untuk kulit kendur yang mendalamkan lipatan",
@@ -277,7 +209,7 @@
   },
   "treatmentsNote": "Gabungan rawatan adalah kebiasaan, bukan pengecualian, kerana kebanyakan muka mempunyai garis dinamik, garis statik dan lipatan sekali gus. Urutan penting: melegakan otot dahulu selalunya menunjukkan berapa banyak sebenarnya garis itu yang sudah terukir dalam kulit.",
   "compare": {
-    "intro": "Panduan umum sahaja. Kebanyakan pelan menggabungkan lebih daripada satu pendekatan, dan doktor mungkin mencadangkan sesuatu yang berbeza selepas memeriksa muka anda.",
+    "intro": "Panduan umum. Kebanyakan pelan menggabungkan beberapa pendekatan; bilangan sesi ditetapkan selepas penilaian.",
     "columns": [
       "Masalah anda",
       "Biasa dipertimbangkan",
@@ -306,7 +238,7 @@
       [
         "Garis terukir dan tekstur",
         "RF microneedling",
-        "Beberapa sesi, berjarak",
+        "Beberapa sesi, berselang",
         "Kemerahan 2 hingga 3 hari"
       ],
       [
@@ -327,8 +259,7 @@
         "Individu",
         "Individu"
       ]
-    ],
-    "note": "Bilangan sesi dan jarak antara sesi ditetapkan oleh doktor selepas penilaian. Perubahan berasaskan kolagen berterusan selama beberapa bulan selepas sesi, jadi pelan merangkumi titik semakan, bukan tarikh tamat yang tetap."
+    ]
   },
   "results": [
     {
@@ -351,7 +282,7 @@
     }
   ],
   "firstVisit": {
-    "intro": "Konsultasi adalah percuma dan tiada paksaan untuk menempah rawatan selepas itu. Ia biasanya mengambil masa 20 hingga 30 minit.",
+    "intro": "Doktor melihat muka anda semasa rehat dan semasa membuat ekspresi.",
     "steps": [
       {
         "title": "Sejarah",
@@ -359,15 +290,11 @@
       },
       {
         "title": "Pemeriksaan",
-        "body": "Doktor melihat muka anda semasa rehat dan semasa membuat beberapa ekspresi, kerana garis yang hilang apabila muka rehat ialah masalah yang berbeza daripada garis yang tidak hilang."
+        "body": "Garis mana yang hilang apabila muka anda rehat dan mana yang tidak."
       },
       {
-        "title": "Perbincangan",
-        "body": "Garis mana yang dinamik, mana yang statik, mana yang lipatan, apa yang diubah oleh setiap pilihan, downtime, risiko, dan bagaimana rupa langkah pertama yang konservatif."
-      },
-      {
-        "title": "Pelan",
-        "body": "Jika anda memilih untuk meneruskan, anda akan diberi urutan rawatan dan titik semakan. Anda boleh bawa pulang pelan itu dan fikirkan dahulu."
+        "title": "Perbincangan dan pelan",
+        "body": "Garis mana yang dinamik, statik atau lipatan, apa yang diubah oleh setiap pilihan, downtime dan risiko, serta langkah pertama yang konservatif, tanpa sebarang kewajipan untuk meneruskan."
       }
     ],
     "outro": "Bawa butiran sebarang rawatan suntikan sebelum ini, termasuk produk dan anggaran bila ia dibuat. Ini mengubah penilaian dan juga masa yang sesuai untuk rawatan baharu."
@@ -379,7 +306,6 @@
     }
   ],
   "risks": {
-    "intro": "Setiap rawatan di halaman ini membawa sedikit risiko.",
     "items": [
       {
         "lead": "Biasa dan selalunya sementara",
@@ -395,27 +321,26 @@
       },
       {
         "lead": "Apa yang rawatan tidak dapat lakukan",
-        "body": "Tiada apa-apa di sini yang menghentikan muka anda daripada menua, dan tiada rawatan yang menghilangkan garis statik yang dalam sepenuhnya. Melegakan otot tidak akan memadam lipatan yang sudah terukir dalam kulit, dan mengisi lipatan tidak menangani tisu turun yang menyebabkannya. Kesannya sementara dan perlu diulang untuk dikekalkan, dan muka yang tidak boleh bergerak ialah tanda rawatan yang berlebihan, bukan hasil yang baik."
+        "body": "Tiada apa-apa di sini yang menghentikan muka anda daripada menua, dan tiada rawatan yang menghilangkan garis statik yang dalam sepenuhnya. Melegakan otot tidak akan memadam lipatan yang sudah terukir dalam kulit, dan mengisi lipatan tidak menangani tisu turun yang menyebabkannya. Kesannya sementara dan perlu diulang untuk dikekalkan, bukan berkekalan."
       }
     ],
     "disclose": "Beritahu doktor anda jika anda hamil atau menyusu, mengambil ubat pencair darah, ada masalah neuromuskular, menggunakan retinoid atau asid, ada sejarah herpes bibir (cold sore) atau parut keloid, baru-baru ini menjalani sebarang rawatan suntikan atau laser, atau kulit anda digelapkan oleh matahari dalam beberapa minggu lepas."
   },
   "costFactors": {
-    "intro": "Kos tidak dipaparkan kerana ia bergantung pada penilaian. Tetapi elok anda tahu apa yang mempengaruhinya sebelum datang:",
+    "intro": "Harga ditetapkan selepas penilaian. Ia bergantung pada:",
     "factors": [
       "Jenis garis yang dirawat, kerana otot, kulit dan isi muka memerlukan rawatan yang berbeza.",
       "Berapa banyak kawasan: satu bahagian muka, bahagian atas muka, atau pelan seluruh muka.",
       "Produk atau mesin, dan berapa banyak yang diperlukan mengikut anatomi dan corak pergerakan muka anda.",
       "Bilangan sesi, yang ditetapkan selepas penilaian dan disemak mengikut tindak balas kulit anda.",
       "Berapa kerap penjagaan susulan mungkin diperlukan, kerana rawatan pelega otot diulang dari semasa ke semasa."
-    ],
-    "outro": "Doktor akan menerangkan butirannya semasa konsultasi, termasuk langkah pertama yang konservatif dan bagaimana ia akan disemak, sebelum anda membuat sebarang keputusan."
+    ]
   },
-  "technologyIntro": "Garis datang daripada tiga sumber berbeza, jadi tiada satu mesin atau produk yang dapat menangani kesemuanya. Dengan beberapa platform, doktor boleh merawat punca setiap garis, bukan menggunakan satu alat untuk setiap lipatan.",
+  "technologyIntro": "Garis datang daripada tiga sumber berbeza, jadi tiada satu mesin atau produk yang dapat menangani kesemuanya.",
   "faqs": [
     {
       "q": "Apa beza garis halus dan kedutan?",
-      "a": "Garis halus ialah lipatan cetek pada permukaan kulit, selalunya perkara pertama yang orang perasan di sekitar mata dan pada bibir. Kedutan lebih dalam dan sudah lebih menetap. Namun, yang lebih berguna daripada kedalaman ialah sama ada garis itu ada semasa muka anda rehat. Garis yang hanya muncul semasa bergerak dirawat secara berbeza daripada garis yang kelihatan semasa rehat, dan perbezaan itu jauh lebih mempengaruhi pelan rawatan berbanding namanya."
+      "a": "Garis halus ialah lipatan cetek pada permukaan kulit, selalunya perkara pertama yang orang perasan di sekitar mata dan pada bibir. Kedutan lebih dalam dan sudah lebih menetap. Namun, yang lebih berguna daripada kedalaman ialah sama ada garis itu ada semasa muka anda rehat. Garis yang hanya muncul semasa bergerak dirawat secara berbeza daripada garis yang kelihatan semasa rehat."
     },
     {
       "q": "Boleh ke cegah kedutan muka?",
@@ -435,11 +360,11 @@
     },
     {
       "q": "Kesannya tahan berapa lama?",
-      "a": "Ia bergantung sepenuhnya pada rawatan. Suntikan pelega otot hilang dalam tempoh beberapa bulan dan perlu diulang. Sokongan isi muka diuraikan oleh badan secara beransur-ansur dalam tempoh yang lebih panjang. Perubahan berasaskan kolagen berkembang dan kemudian berkurang apabila proses penuaan berterusan. Tiada satu pun yang kekal, dan setiap pelan patut termasuk perbincangan yang jujur tentang berapa kerap anda perlu datang semula."
+      "a": "Ia bergantung sepenuhnya pada rawatan. Suntikan pelega otot hilang dalam tempoh beberapa bulan dan perlu diulang. Sokongan isi muka diuraikan oleh badan secara beransur-ansur dalam tempoh yang lebih panjang. Perubahan berasaskan kolagen berkembang dan kemudian berkurang apabila proses penuaan berterusan. Tiada satu pun yang kekal."
     },
     {
       "q": "Rawatan ini sakit ke?",
-      "a": "Suntikan biasanya digambarkan seperti cubitan tajam yang sekejap, dan kebanyakan orang mendapati rawatan pelega otot mudah ditahan tanpa ubat bius. Filler biasanya mengandungi ubat bius setempat. RF microneedling dan laser resurfacing lebih tidak selesa dan dilakukan dengan krim kebas serta penyejukan. Jika rasa tidak selesa sangat merisaukan anda, beritahu semasa konsultasi, kerana persediaan dan tetapan boleh diubah suai."
+      "a": "Suntikan biasanya digambarkan seperti cubitan tajam yang sekejap, dan kebanyakan orang mendapati rawatan pelega otot mudah ditahan tanpa ubat bius. Filler biasanya mengandungi ubat bius setempat. RF microneedling dan laser resurfacing lebih tidak selesa dan dilakukan dengan krim kebas serta penyejukan."
     },
     {
       "q": "Boleh ke mula rawatan pada umur 20-an atau 30-an?",
@@ -451,7 +376,7 @@
     },
     {
       "q": "Boleh ke garis di leher dirawat?",
-      "a": "Leher biasanya dinilai bersama muka, dan selalunya di situlah orang mula-mula perasan perubahan. Tetapi ia berkelakuan berbeza: kulitnya lebih nipis, kelenjar minyaknya lebih sedikit dan ia pulih lebih perlahan, jadi rawatan di sini sengaja lebih konservatif dan jangkaan patut sederhana. Lipatan melintang yang dibentuk oleh postur dan pergerakan bertindak balas dengan kurang dapat dijangka berbanding garis di muka."
+      "a": "Leher biasanya dinilai bersama muka. Tetapi ia berkelakuan berbeza: kulitnya lebih nipis, kelenjar minyaknya lebih sedikit dan ia pulih lebih perlahan, jadi rawatan di sini sengaja lebih konservatif dan jangkaan patut sederhana. Lipatan melintang yang dibentuk oleh postur dan pergerakan bertindak balas dengan kurang dapat dijangka berbanding garis di muka."
     },
     {
       "q": "Bagaimana jika saya tidak suka hasilnya?",
@@ -459,7 +384,7 @@
     },
     {
       "q": "Perlu ke rawat setiap garis yang ada?",
-      "a": "Biasanya tidak, dan konsultasi yang baik akan berterus terang tentang itu. Merawat semuanya sekali gus menghilangkan maklumat yang anda perlukan untuk menilai apa yang benar-benar membantu, lebih mahal, dan meningkatkan kemungkinan muka nampak seperti sudah dirawat. Menangani satu atau dua perkara yang paling mengganggu anda, kemudian menyemaknya, memberi hasil yang lebih baik dan membolehkan anda berhenti pada bila-bila masa."
+      "a": "Biasanya tidak. Merawat semuanya sekali gus menghilangkan maklumat yang anda perlukan untuk menilai apa yang benar-benar membantu, lebih mahal, dan meningkatkan kemungkinan muka nampak seperti sudah dirawat. Menangani satu atau dua perkara yang paling mengganggu anda, kemudian menyemaknya, memberi hasil yang lebih baik dan membolehkan anda berhenti pada bila-bila masa."
     }
   ],
   "relatedConcerns": [

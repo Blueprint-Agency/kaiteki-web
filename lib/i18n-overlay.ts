@@ -6,7 +6,7 @@
 // what a page says but never what it links to or how it renders.
 
 /** Keys whose string values are identifiers or enums, never reader-facing copy. */
-const FIXED_KEYS = new Set([
+export const FIXED_KEYS = new Set([
   "slug",
   "image",
   "src",
@@ -16,6 +16,7 @@ const FIXED_KEYS = new Set([
   "kind",
   "diagram",
   "depth",
+  "focus",
   "ratio",
   "nativeWidth",
   "illustration",
@@ -25,7 +26,25 @@ const FIXED_KEYS = new Set([
 ]);
 
 /** Top-level keys that are fixed only at the root (nested ones are copy). */
-const FIXED_ROOT_KEYS = new Set(["group"]);
+export const FIXED_ROOT_KEYS = new Set(["group"]);
+
+/** Every piece of copy in `x` as [path, text], in the same walk order and with
+ *  the same fixed-key rules the overlay uses. */
+export function copyStrings(x: unknown): [string, string][] {
+  const out: [string, string][] = [];
+  const walk = (v: unknown, path: string, key: string, depth: number) => {
+    const fixed = FIXED_KEYS.has(key) || (depth === 1 && FIXED_ROOT_KEYS.has(key));
+    if (typeof v === "string") {
+      if (!fixed) out.push([path, v]);
+    } else if (Array.isArray(v)) {
+      v.forEach((it, i) => walk(it, `${path}[${i}]`, key, depth + 1));
+    } else if (v && typeof v === "object") {
+      for (const [k, w] of Object.entries(v)) walk(w, path ? `${path}.${k}` : k, k, depth + 1);
+    }
+  };
+  walk(x, "", "", 0);
+  return out;
+}
 
 export type OverlayResult<T> = {
   value: T;

@@ -18,6 +18,7 @@
     "test:redirects": "node --experimental-strip-types scripts/test-redirects.mts",
     "check:blog": "node --experimental-strip-types scripts/check-blog.mts",
     "validate:locale": "node --experimental-strip-types scripts/validate-locale.mts",
+    "i18n:sync": "node --experimental-strip-types scripts/i18n-sync-concerns.mts",
     "i18n:index": "node --experimental-strip-types scripts/i18n-index-concerns.mts",
     "i18n:export-concerns": "node --experimental-strip-types scripts/i18n-export-concerns.mts",
     "check:sameness": "node --experimental-strip-types scripts/check-sameness.mts",
@@ -28,7 +29,8 @@
     "sync:treatment-media": "node --env-file-if-exists=.env.local scripts/sync-media.mjs treatments",
     "blog:manifest": "node scripts/blog-import.mjs --manifest",
     "blog:import": "node scripts/blog-import.mjs",
-    "blog:redirects": "node scripts/blog-redirects.mjs"
+    "blog:migrate-legacy": "node scripts/blog-migrate-legacy.mjs",
+    "blog:redirects": "node --experimental-strip-types --no-warnings scripts/blog-redirects.mts"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.1",

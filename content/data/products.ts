@@ -253,6 +253,57 @@ export const products: Product[] = [
     bestFor: "Uneven tone & hyperpigmentation",
     concerns: ["pigmentation"],
   },
+  // Lione oral supplements, added 2026-10 at the client's request (prices from
+  // Dr Chew). Copy is drawn from the manufacturer's patient leaflets with the
+  // percentage/outcome claims left out (docs/02 §8).
+  {
+    slug: "lucent-prime",
+    image: "https://cdn.kaiteki.my/images/skincare/lucent-prime-centered.jpg",
+    name: "Lucent® Prime Oral Skinbooster",
+    brand: "Lione",
+    group: "Partner Brands",
+    category: "Oral Supplement",
+    price: 550,
+    summary:
+      "A daily berry-flavoured botanical powder combining skin-focused antioxidants, ceramides and a probiotic, designed to be taken alongside your in-clinic treatments as part of a skin-health routine from within.",
+    ingredients: [
+      "Golden tomato extract (Lumenato™)",
+      "Astaxanthin (AstaReal®)",
+      "Pycnogenol®",
+      "Ceramide (CornCera™)",
+      "L-cysteine",
+      "Probiotic B. lactis Bl-04",
+    ],
+    bestFor: "Radiance, hydration & skin barrier support",
+    highlights: ["30 sachets × 4 g", "One sachet daily", "Pairs with in-clinic treatments"],
+    concerns: ["pigmentation"],
+  },
+  {
+    slug: "stanmna",
+    image: "https://cdn.kaiteki.my/images/skincare/stanmna.jpg",
+    name: "STANMNA™",
+    brand: "Lione",
+    group: "Partner Brands",
+    category: "Performance Supplement",
+    price: 480,
+    summary:
+      "A plant-based drink-mix sachet built around NMN, CoQ10 and PQQ, formulated to support cellular energy, endurance and recovery for people who train regularly.",
+    ingredients: [
+      "NMN (Uthever®)",
+      "CoQ10",
+      "Alpha lipoic acid",
+      "PQQ",
+      "Tart cherry",
+      "Citrus flavonoids (Watt'sUp®)",
+    ],
+    bestFor: "Active adults & regular training",
+    highlights: [
+      "Mix one sachet into 250 ml water, or take directly",
+      "Take 30 min before training, or each morning",
+      "100% vegan, non-GMO",
+      "No added preservatives or artificial colours",
+    ],
+  },
 ];
 
 export const productGroups: ProductGroup[] = [

@@ -1,4 +1,6 @@
 import type { Post, PostCategory } from "@/lib/types";
+// Explicit extension: scripts/check-blog.mts loads this file in plain Node.
+import { legacyPosts } from "./blog-legacy.ts";
 
 /**
  * /blog index. Metadata only — each post's body is `content/blog/<slug>.mdx`.
@@ -9,9 +11,11 @@ import type { Post, PostCategory } from "@/lib/types";
  *
  * Compliance: descriptions and lead answers are advertising copy under the MAB
  * rules, so they stay factual — no outcome guarantees, no superlatives, no
- * before/after or testimonial framing (docs/02 §8).
+ * before/after or testimonial framing (docs/02 §8). That applies to posts
+ * written here; the archive moved verbatim from blog.kaiteki.my is
+ * `legacyPosts` (content/data/blog-legacy.ts), appended below.
  */
-export const posts: Post[] = [
+const authored: Post[] = [
   {
     slug: "ultherapy-vs-hifu-difference-which-suits-you",
     title: "Ultherapy vs HIFU: what’s the difference and which suits you?",
@@ -473,6 +477,8 @@ export const posts: Post[] = [
   },
 ];
 
+export const posts: Post[] = [...authored, ...legacyPosts];
+
 /** Display order everywhere — newest first. */
 export function postsNewestFirst(): Post[] {
   return [...posts].sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1));
@@ -516,6 +522,31 @@ export function postsInCategory(category: PostCategory): Post[] {
 /** The post shown large at the top of the hub — the flagged one, else the newest. */
 export function featuredPost(): Post {
   return posts.find((p) => p.featured) ?? postsNewestFirst()[0];
+}
+
+/** The hub's list under the featured card: every post except that one. */
+export function hubPosts(): Post[] {
+  const featured = featuredPost();
+  return postsNewestFirst().filter((p) => p.slug !== featured.slug);
+}
+
+/** Cards per listing page, on the hub and every category archive. A multiple
+ *  of 3 and 2 so the last row of a full page is never ragged. */
+export const PAGE_SIZE = 12;
+
+export function pageCount(total: number): number {
+  return Math.max(1, Math.ceil(total / PAGE_SIZE));
+}
+
+/** One page of a listing, 1-based. */
+export function pageOf<T>(list: T[], page: number): T[] {
+  return list.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+}
+
+/** generateStaticParams for /page/[page] routes: page 1 is the base URL itself
+ *  (next.config.ts 301s /page/1 there), so only 2..n are built. */
+export function laterPages(total: number): { page: string }[] {
+  return Array.from({ length: pageCount(total) - 1 }, (_, i) => ({ page: String(i + 2) }));
 }
 
 type PostTag = "concerns" | "treatments" | "technology";

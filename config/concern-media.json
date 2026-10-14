@@ -964,6 +964,276 @@
       "height": 900
     },
     {
+      "source": "concerns/dark-eye-circles/banner-skin.jpg",
+      "key": "concerns/dark-eye-circles/banner-skin.jpg",
+      "concern": "dark-eye-circles",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/dark-eye-circles/banner-skin-mobile.jpg",
+      "key": "concerns/dark-eye-circles/banner-skin-mobile.jpg",
+      "concern": "dark-eye-circles",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/enlarged-pores/banner-skin.jpg",
+      "key": "concerns/enlarged-pores/banner-skin.jpg",
+      "concern": "enlarged-pores",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/enlarged-pores/banner-skin-mobile.jpg",
+      "key": "concerns/enlarged-pores/banner-skin-mobile.jpg",
+      "concern": "enlarged-pores",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/hair-loss/banner-skin.jpg",
+      "key": "concerns/hair-loss/banner-skin.jpg",
+      "concern": "hair-loss",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/hair-loss/banner-skin-mobile.jpg",
+      "key": "concerns/hair-loss/banner-skin-mobile.jpg",
+      "concern": "hair-loss",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/acne-scars/banner-skin.jpg",
+      "key": "concerns/acne-scars/banner-skin.jpg",
+      "concern": "acne-scars",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/acne-scars/banner-skin-mobile.jpg",
+      "key": "concerns/acne-scars/banner-skin-mobile.jpg",
+      "concern": "acne-scars",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/acne-scars/banner-mobile.jpg",
+      "key": "concerns/acne-scars/banner-mobile.jpg",
+      "concern": "acne-scars",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/acne-scars/banner.jpg",
+      "key": "concerns/acne-scars/banner.jpg",
+      "concern": "acne-scars",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/acne-scars/card-2.jpg",
+      "key": "concerns/acne-scars/card-2.jpg",
+      "concern": "acne-scars",
+      "family": "card",
+      "width": 1067,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/acne/banner-mobile.jpg",
+      "key": "concerns/acne/banner-mobile.jpg",
+      "concern": "acne",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/acne/banner.jpg",
+      "key": "concerns/acne/banner.jpg",
+      "concern": "acne",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/aging/banner-mobile.jpg",
+      "key": "concerns/aging/banner-mobile.jpg",
+      "concern": "aging",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/aging/banner.jpg",
+      "key": "concerns/aging/banner.jpg",
+      "concern": "aging",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/dark-eye-circles/banner-mobile.jpg",
+      "key": "concerns/dark-eye-circles/banner-mobile.jpg",
+      "concern": "dark-eye-circles",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/dark-eye-circles/banner.jpg",
+      "key": "concerns/dark-eye-circles/banner.jpg",
+      "concern": "dark-eye-circles",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/enlarged-pores/banner-mobile.jpg",
+      "key": "concerns/enlarged-pores/banner-mobile.jpg",
+      "concern": "enlarged-pores",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/enlarged-pores/banner.jpg",
+      "key": "concerns/enlarged-pores/banner.jpg",
+      "concern": "enlarged-pores",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/excessive-sweating/banner-mobile.jpg",
+      "key": "concerns/excessive-sweating/banner-mobile.jpg",
+      "concern": "excessive-sweating",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/excessive-sweating/banner.jpg",
+      "key": "concerns/excessive-sweating/banner.jpg",
+      "concern": "excessive-sweating",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/pigmentation/banner-skin.jpg",
+      "key": "concerns/pigmentation/banner-skin.jpg",
+      "concern": "pigmentation",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/pigmentation/banner-skin-mobile.jpg",
+      "key": "concerns/pigmentation/banner-skin-mobile.jpg",
+      "concern": "pigmentation",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/pigmentation/banner-mobile.jpg",
+      "key": "concerns/pigmentation/banner-mobile.jpg",
+      "concern": "pigmentation",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/pigmentation/banner.jpg",
+      "key": "concerns/pigmentation/banner.jpg",
+      "concern": "pigmentation",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/tattoo-removal/card-2.jpg",
+      "key": "concerns/tattoo-removal/card-2.jpg",
+      "concern": "tattoo-removal",
+      "family": "card",
+      "width": 1440,
+      "height": 900,
+      "manual": true
+    },
+    {
+      "source": "concerns/vascular-lesions/banner-skin.jpg",
+      "key": "concerns/vascular-lesions/banner-skin.jpg",
+      "concern": "vascular-lesions",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/vascular-lesions/banner-skin-mobile.jpg",
+      "key": "concerns/vascular-lesions/banner-skin-mobile.jpg",
+      "concern": "vascular-lesions",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/vascular-lesions/banner-mobile.jpg",
+      "key": "concerns/vascular-lesions/banner-mobile.jpg",
+      "concern": "vascular-lesions",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/vascular-lesions/banner.jpg",
+      "key": "concerns/vascular-lesions/banner.jpg",
+      "concern": "vascular-lesions",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
       "source": "concerns/excessive-sweating/hero-mobile.jpg",
       "key": "concerns/excessive-sweating/hero-mobile.jpg",
       "concern": "excessive-sweating",

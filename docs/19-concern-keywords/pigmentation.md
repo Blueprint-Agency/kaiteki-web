@@ -110,3 +110,29 @@
 9. **FAQ 5 (zh):** "the single most consistent thing you can do" = 在你能做的事情里，防晒是效果最稳定的一项. The 最 is about sunscreen, not about the clinic. Please confirm it reads as advice, not as a claim.
 10. **The FAQ 4 answer** starts 可以，前提是… / *Ya, jika…*, like the pilot. Neither locale says "safe" without the condition.
 11. **Before/after captions** follow the pilot: 疗程之前与之后 / *sebelum dan selepas*.
+
+## Re-sync 2026-10-14 (English rewrite)
+
+The English page was rewritten and the sync tool blanked 29 strings per locale. Every blank was filled; nothing else was changed.
+
+### Chinese (`/zh`)
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| (none) | none run | No blank fell in the search-relevant scope: seoTitle, seoDescription, name, jumpNav, all headings, tab labels/titles, compare columns, FAQ questions and CTA headings were unchanged and kept. The blanks are leadAnswer, banner alt, intros, body text and FAQ answers. `firstVisit.steps[2].title` "Discussion and plan" is a step label, not a heading or query. | n/a |
+
+### Malay (`/ms`)
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| (none) | none run | Same as Chinese: no search-relevant blank. | n/a |
+
+**Body blanks translated directly:** 29 zh, 29 ms (leadAnswer, banner.alt, sections[0].body[0], drivers/variant/seeDoctor/costFactors/compare/treatments intros, melasma tab routing, PIH tab body, ctaMid.body, vascular-pigment and facial-treatments bodies, firstVisit intro and steps, risks 2, technologyIntro, FAQ answers 1, 2, 3, 6, 7, 8, 9, 10, 12). Where the new English is a shortened form of the old sentence, the old approved wording was kept and the dropped clauses removed, so no claim was added.
+
+**Reviewer notes**
+
+1. **leadAnswer** uses the existing display terms: 晒斑 / 黄褐斑 / 炎症后留下的痕迹 and *sun spot* / *jeragat (melasma)* / *tanda pasca-radang*. "sun spots are often treated with pico laser" = 晒斑常用皮秒激光处理 / *sun spot sering dirawat dengan pico laser* (a description of practice, not an outcome).
+2. **FAQ 2 answer:** "Melasma is managed rather than resolved" = 黄褐斑以控制为主，难以消除 / *Jeragat dikawal, bukan dihapuskan* (old approved wording kept).
+3. **Melasma tab routing** now points readers to the melasma page: 完整说明请看黄褐斑页面 / *Lihat halaman jeragat untuk gambaran penuh*.
+4. **"Discussion and plan"** = 讨论与计划 / *Perbincangan dan pelan*; "no obligation to proceed" as on the melasma page.
+5. **technologyIntro (zh)** keeps 最为关键 from the old approved text; the 最 describes device choice, not the clinic.

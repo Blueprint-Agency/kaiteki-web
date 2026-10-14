@@ -107,3 +107,31 @@ Same as `acne.md`: Google Autocomplete (`client=firefox&gl=my`, `hl=zh-CN` / `hl
 5. **Permanence words.** 永久 appears twice in zh: "没有一种是永久的" (negated) and "永久性产品" (factual, non-dissolvable fillers vs HA). *kekal* appears once in ms, negated ("Tiada satu pun yang kekal"). Where EN says lines "persist", ms uses *menetap*, so *kekal* doesn't read as a claim.
 6. **FAQ 8 zh** adds 去皱 to the question (二三十岁就可以开始做去皱疗程吗？) for the AC pattern. The answer is unchanged and still says no age is medically correct.
 7. **Before/after captions** are kept as 疗程之前与之后 / *sebelum dan selepas rawatan*, as in the pilot (ADR-0001).
+
+## Re-sync 2026-10-14 (English rewrite)
+
+The English page was rewritten and the sync tool blanked 26 strings per locale. Only one blank is a heading-type string, and none is in the client rule's search-relevant set (seoTitle, seoDescription, name, section/drivers/variant/location/seeDoctor headings, tabs, compare columns, FAQ q, jumpNav). All earlier keyword decisions above still stand unchanged.
+
+### Chinese (`/zh`)
+
+| English string | Probes | Evidence | Decision |
+|---|---|---|---|
+| firstVisit.steps[2].title "Discussion and plan" | none (a first-visit step title, not a query) | n/a | DIRECT: **讨论与方案** (same wording as the hair-loss page) |
+
+**Body blanks translated directly:** 25 (leadAnswer, facts[2], sections[0].body[1], drivers intro/item 0/outro, seeDoctor trigger 4 and outro, ctaMid.body, treatmentsIntro, two treatmentWhy bodies, compare.intro, firstVisit intro/steps, risks item 3, costFactors.intro, technologyIntro, FAQ answers 1, 6, 7, 10, 12).
+
+### Malay (`/ms`)
+
+| English string | Probes | Evidence | Decision |
+|---|---|---|---|
+| firstVisit.steps[2].title "Discussion and plan" | none (a first-visit step title) | n/a | DIRECT: **Perbincangan dan pelan** (same wording as the hair-loss page) |
+
+**Body blanks translated directly:** 25 (same paths as zh).
+
+### Reviewer notes
+
+1. Most blanks are trimmed versions of sentences that were already translated, so the earlier wording is kept and only the removed clauses are dropped. Nothing was added or strengthened.
+2. **leadAnswer** names the three approaches. zh uses 考虑 ("considered") for the first two, a slight softening of EN "muscle-relaxing injection for dynamic lines". ms follows EN directly. The drug is still never named (放松肌肉的注射 / *suntikan pelega otot*).
+3. **Permanence:** zh FAQ 6 keeps "没有一种是永久的" (negated) and risks item 3 uses 一劳永逸. ms FAQ 6 keeps "Tiada satu pun yang kekal" (negated), and risks item 3 now ends "bukan berkekalan", matching the hair-loss page.
+4. **costFactors.intro** "Pricing is set after assessment" is 价钱在评估后才决定 / *Harga ditetapkan selepas penilaian*. Other pages share the same EN string, so this wording is worth aligning across them.
+5. FAQ 12 keeps the EN comparative "gives a better result" (效果更好 / *hasil yang lebih baik*), translated faithfully. It compares staged treatment with doing everything at once, not with other clinics.

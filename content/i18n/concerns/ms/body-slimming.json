@@ -6,7 +6,7 @@
   "group": "Hair & Body",
   "image": "https://cdn.kaiteki.my/concerns/body-slimming/card.jpg",
   "summary": "Lemak degil di kawasan tertentu boleh disasarkan tanpa pembedahan. Ini rawatan membentuk badan (body contouring), bukan penyelesaian untuk menurunkan berat badan.",
-  "leadAnswer": "Masalah bentuk badan berkaitan dengan lemak setempat di kawasan tertentu, bukan berat badan keseluruhan. Rawatan di klinik bukan pengganti untuk menurunkan berat badan. Konsultasi membantu menentukan pendekatan mana, jika ada, yang sesuai untuk anda.",
+  "leadAnswer": "Rawatan membentuk badan (body contouring) menyasarkan lemak setempat (perut bawah, tepi pinggang, garisan bra) yang masih ada walaupun berat badan stabil, menggunakan fat freezing, tenaga gelombang mikro atau rangsangan otot. Ia bukan rawatan menurunkan berat badan: ia tidak mengubah berat badan keseluruhan atau merawat obesiti, dan biasanya dipertimbangkan untuk orang yang sudah hampir dengan berat badan yang boleh dikekalkan.",
   "treatments": [
     "fat-freezing",
     "microwave-contouring",
@@ -31,8 +31,8 @@
       "label": "Ia biasanya dipertimbangkan untuk orang yang sudah hampir dengan berat badan yang boleh dikekalkan."
     },
     {
-      "value": "Penilaian dahulu",
-      "label": "Doktor memeriksa kawasan itu dan menerangkan apa yang realistik sebelum sebarang rawatan."
+      "value": "Ujian cubit",
+      "label": "Sama ada lemak itu boleh ditarik masuk ke dalam aplikator menentukan sama ada rawatan penyejukan sesuai."
     }
   ],
   "jumpNav": [
@@ -63,62 +63,42 @@
   ],
   "sections": [
     {
-      "heading": "Apa itu pelangsingan badan (body contouring)?",
+      "heading": "Apa itu body contouring (pelangsingan badan)?",
       "body": [
-        "Pelangsingan badan, yang lebih tepat dipanggil body contouring atau membentuk badan, merujuk kepada pendekatan di klinik yang menyasarkan bentuk dan definisi sesuatu kawasan tertentu, seperti lemak degil setempat, tona otot atau ketegangan kulit, dan bukan mengurangkan berat badan keseluruhan.",
-        "Ia bukan rawatan untuk menurunkan berat badan. Rawatan membentuk badan berkaitan dengan rupa sesuatu kawasan, bukan angka pada penimbang, jadi ia dipertimbangkan bersama, dan tidak sekali-kali menggantikan, pemakanan sihat dan senaman yang kerap. Jika berat badan keseluruhan yang menjadi kebimbangan, itu perbincangan perubatan, dan perbincangan yang berbeza."
+        "Body contouring, yang sering dipanggil pelangsingan badan, merujuk kepada rawatan di klinik yang menyasarkan bentuk sesuatu kawasan tertentu (lemak setempat, tona otot atau ketegangan kulit), bukan berat badan. Ia berjalan seiring dengan pemakanan dan senaman, dan tidak sesekali menggantikannya."
       ]
     }
   ],
   "drivers": {
     "heading": "Lemak degil: apa yang sebenarnya dirawat",
-    "intro": "Lemak tidak tersebar sama rata, dan di mana badan anda menyimpannya sebahagian besarnya ditentukan oleh genetik. Inilah kawasan yang paling kerap digambarkan orang sebagai tidak berubah walau apa pun yang berlaku pada bahagian badan yang lain.",
+    "intro": "Di mana badan anda menyimpan lemak sebahagian besarnya ditentukan oleh genetik. Kawasan lemak yang paling kerap masih tinggal:",
     "items": [
       {
         "lead": "Lemak perut bawah:",
-        "body": "lemak di bawah pusat yang masih ada walaupun berat badan stabil. Biasa selepas bersalin dan pada orang yang perutnya rata di bahagian lain, dan antara sebab yang lebih kerap orang datang untuk penilaian."
+        "body": "lemak di bawah pusat yang masih ada walaupun berat badan stabil, biasa berlaku selepas bersalin."
       },
       {
         "lead": "Lemak tepi pinggang (love handles):",
-        "body": "lemak di sisi pinggang yang terletak di atas garisan tali pinggang. Ditentukan oleh genetik bagi kebanyakan orang, dan terkenal tidak bertindak balas terhadap senaman bersasar, kerana mengurangkan lemak di satu tempat melalui senaman tidak berkesan."
+        "body": "lemak di sisi pinggang, di atas garisan tali pinggang. Senaman bersasar tidak mengurangkannya."
       },
       {
         "lead": "Garisan bra dan belakang atas:",
-        "body": "lipatan yang kelihatan melalui pakaian ketat di belakang badan dan di bawah ketiak. Selalunya disebut sebagai masalah pakaian, bukan masalah imej badan, dan sering terlepas pandang dalam penurunan berat badan secara umum."
+        "body": "lipatan di belakang badan dan bawah ketiak yang kelihatan melalui pakaian ketat."
       },
       {
         "lead": "Tekstur kulit dan selulit:",
         "body": "kulit beralun yang disebabkan oleh jalur berserat yang menambat kulit pada tisu yang lebih dalam sementara lemak menolak di antaranya. Ia ciri struktur kulit, ada pada semua saiz badan, dan bukan tanda berat badan berlebihan."
       }
-    ],
-    "outro": "Tona otot di bawah semua ini mengubah rupa sesuatu kawasan, sebab itu definisi badan boleh nampak berbeza pada berat badan dan tahap lemak badan yang sama. Jika kulit sudah kendur selepas perubahan berat badan yang besar atau selepas mengandung, itu dinilai berasingan pula, kerana ketegangan kulit dan lemak ialah dua masalah yang berbeza."
+    ]
   },
-  "figures": [
-    {
-      "src": "https://cdn.kaiteki.my/concerns/body-slimming/image-lowerbellypouch.jpg",
-      "caption": "Lemak di bawah pusat yang masih ada walaupun berat badan stabil, selalunya pada perut yang rata di bahagian lain."
-    },
-    {
-      "src": "https://cdn.kaiteki.my/concerns/body-slimming/image-lovehandles.jpg",
-      "caption": "Lemak di sisi pinggang. Di mana badan anda menyimpannya sebahagian besarnya ditentukan oleh genetik, dan senaman bersasar tidak mengurangkannya."
-    },
-    {
-      "src": "https://cdn.kaiteki.my/concerns/body-slimming/image-brabunglesbackfat.jpg",
-      "caption": "Lipatan di belakang badan dan bawah ketiak yang kelihatan melalui pakaian ketat, dan sering terlepas dalam penurunan berat badan secara umum."
-    },
-    {
-      "src": "https://cdn.kaiteki.my/concerns/body-slimming/image-cellulite-smoothing.jpg",
-      "caption": "Kulit beralun akibat jalur berserat yang menambat kulit pada tisu yang lebih dalam. Ia ciri struktur kulit pada semua saiz badan."
-    }
-  ],
   "variant": {
     "kind": "pairs",
-    "heading": "Apa yang ia boleh dan tidak boleh buat",
-    "intro": "Inilah bahagian estetik yang paling banyak bising pemasarannya. Berikut ialah enam perkara yang paling kerap dipercayai orang sebelum datang, dan apa yang sebenarnya benar.",
+    "heading": "Boleh dan tidak boleh",
+    "intro": "Lima kepercayaan biasa, dan apa yang sebenarnya benar:",
     "pairs": [
       {
         "claim": "Ia akan bantu saya turunkan berat badan.",
-        "reality": "Tidak. Rawatan membentuk badan mengurangkan atau membentuk semula lemak di satu kawasan; ia tidak menurunkan berat badan keseluruhan anda dan bukan rawatan untuk obesiti. Jika berat badan yang menjadi kebimbangan, itu perlu dibawa kepada doktor dengan pelan yang melibatkan pemakanan, aktiviti fizikal dan, jika sesuai, pengurusan perubatan."
+        "reality": "Tidak. Rawatan membentuk badan mengurangkan atau membentuk semula lemak di satu kawasan; ia tidak menurunkan berat badan keseluruhan anda dan bukan rawatan untuk obesiti."
       },
       {
         "claim": "Lemak itu akan muncul di tempat lain.",
@@ -135,29 +115,24 @@
       {
         "claim": "Selulit boleh dibuang.",
         "reality": "Kadangkala ia boleh dijadikan kurang ketara, tetapi ia ciri struktur cara kulit melekat pada tisu di bawahnya, ada pada orang daripada semua saiz badan dan tahap kecergasan. Sebarang rawatan untuknya patut dibincangkan sebagai memperbaiki rupa, bukan membuangnya."
-      },
-      {
-        "claim": "Ia menggantikan pemakanan dan senaman.",
-        "reality": "Ia dibuat bersama pemakanan dan senaman, dan bergantung padanya. Rawatan membentuk badan biasanya dipertimbangkan untuk orang yang sudah hampir dengan berat badan yang boleh dikekalkan, kerana dalam keadaan itulah perubahan setempat boleh bertahan. Tanpanya, rawatan diminta melakukan tugas yang memang tidak direka untuknya."
       }
     ]
   },
   "seeDoctor": {
-    "intro": "Ada baiknya anda dapatkan penilaian untuk sesuatu kawasan jika mana-mana yang berikut berlaku:",
+    "intro": "Dapatkan penilaian untuk sesuatu kawasan jika:",
     "triggers": [
       "Satu kawasan tertentu tidak berubah walaupun berat badan stabil dan anda bersenam secara konsisten.",
       "Anda tidak pasti sama ada apa yang anda lihat ialah lemak, kulit kendur atau tona otot.",
-      "Pakaian muat di semua tempat kecuali satu, dan ia cukup mengganggu anda sehingga berbaloi untuk dibincangkan.",
       "Anda telah ditawarkan rawatan di tempat lain dan mahukan pendapat kedua sama ada ia sepadan dengan masalah anda.",
       "Berat badan anda masih berubah, dan dalam keadaan ini, masa yang sesuai ialah sebahagian daripada nasihat."
     ],
-    "outro": "Jika berat badan anda belum stabil, jawapan yang jujur biasanya ialah tunggu dahulu, kerana merawat sasaran yang masih bergerak jarang memberi hasil yang bertahan. Doktor yang memberitahu anda begitu memberi nilai yang lebih baik berbanding doktor yang tetap menempah rawatan untuk anda."
+    "outro": "Jika berat badan anda belum stabil, nasihatnya biasanya ialah tunggu dahulu."
   },
   "ctaMid": {
     "heading": "Tak pasti sama ada lemak atau kulit kendur?",
-    "body": "Kedua-duanya nampak serupa tetapi dirawat dengan cara yang sama sekali berbeza. Hantar gambar kepada kami di WhatsApp dan doktor boleh beritahu anda yang mana satu yang anda hadapi sebelum anda menempah apa-apa."
+    "body": "Hantar gambar kepada kami di WhatsApp dan doktor boleh beritahu anda yang mana satu."
   },
-  "treatmentsIntro": "Ini ialah rawatan yang paling kerap dipertimbangkan untuk membentuk badan di klinik kami. Tiada satu pun ialah rawatan untuk menurunkan berat badan, dan rawatan mana yang sesuai, jika ada, bergantung pada apa yang ditemui semasa penilaian kawasan itu.",
+  "treatmentsIntro": "Rawatan yang sesuai bergantung pada sama ada kawasan itu menunjukkan lemak, kekenduran atau tona otot yang lemah:",
   "treatmentWhy": {
     "fat-freezing": {
       "why": "Untuk lemak yang boleh dicubit dan tidak berubah dengan diet",
@@ -172,7 +147,7 @@
       "body": "Mencetuskan pengecutan otot yang kuat untuk membina tona pada otot di bawahnya, bukan untuk mengurangkan lemak. Dipertimbangkan apabila definisi, bukan isi padu, yang menjadi kebimbangan, dan selalunya dibincangkan bersama senaman, bukan sebagai pengganti senaman."
     }
   },
-  "treatmentsNote": "Urutan rawatan penting jika lebih daripada satu yang sesuai: mengurangkan lemak setempat dahulu menunjukkan berapa banyak daripada apa yang anda lihat sebenarnya ialah kulit kendur di bawahnya. Tiada satu pun daripada rawatan ini merawat obesiti, dan tiada satu pun menggantikan pemakanan dan senaman.",
+  "treatmentsNote": "Urutan rawatan penting jika lebih daripada satu yang sesuai: mengurangkan lemak setempat dahulu menunjukkan berapa banyak daripada apa yang anda lihat sebenarnya ialah kulit kendur di bawahnya.",
   "results": [
     {
       "src": "https://cdn.kaiteki.my/concerns/body-slimming/before-after-01.jpg",
@@ -206,7 +181,7 @@
     }
   ],
   "firstVisit": {
-    "intro": "Konsultasi adalah percuma dan tiada paksaan untuk menempah rawatan selepas itu. Ia biasanya mengambil masa 20 hingga 30 minit.",
+    "intro": "Kawasan itu diperiksa semasa anda berdiri dan duduk, dengan ujian cubit untuk membezakan lemak daripada kulit kendur.",
     "steps": [
       {
         "title": "Sejarah",
@@ -214,15 +189,11 @@
       },
       {
         "title": "Pemeriksaan",
-        "body": "Doktor memeriksa kawasan itu semasa anda berdiri dan duduk, termasuk ujian cubit, untuk membezakan lemak daripada kulit kendur dan menilai sama ada lemak setempat itu sesuai untuk rawatan yang ada."
+        "body": "Doktor menilai sama ada lemak setempat itu sesuai untuk rawatan yang ada."
       },
       {
-        "title": "Perbincangan",
-        "body": "Apa yang dilakukan oleh setiap pilihan, berapa lama perubahan mengambil masa untuk kelihatan, downtime, risiko, dan apa yang realistik. Termasuk apabila jawapan yang jujur ialah tunggu sehingga berat badan anda stabil."
-      },
-      {
-        "title": "Pelan",
-        "body": "Jika anda memilih untuk meneruskan, satu urutan rawatan dan tarikh semakan. Anda boleh bawa pulang pelan itu dan fikirkan dahulu."
+        "title": "Perbincangan dan pelan",
+        "body": "Apa yang dilakukan oleh setiap pilihan, berapa lama perubahan mengambil masa untuk kelihatan, downtime dan risiko, dan apa yang realistik, termasuk menunggu sehingga berat badan anda stabil. Tiada sebarang kewajipan untuk meneruskan rawatan."
       }
     ],
     "outro": "Pakai atau bawa pakaian yang membolehkan kawasan itu diperiksa dengan selesa. Jika anda ada gambar dari tempoh berat badan anda berbeza, ia membantu doktor menilai apa yang sebenarnya telah berubah."
@@ -242,7 +213,6 @@
     }
   ],
   "risks": {
-    "intro": "Setiap rawatan di halaman ini membawa sedikit risiko.",
     "items": [
       {
         "lead": "Biasa dan selalunya sementara",
@@ -250,47 +220,42 @@
       },
       {
         "lead": "Jarang tetapi penting",
-        "body": "Pengurangan lemak berasaskan penyejukan membawa risiko yang jarang berlaku, iaitu hiperplasia adipos paradoks (PAH), di mana kawasan yang dirawat membesar dan bukannya mengecil, dan biasanya memerlukan pembedahan untuk membetulkannya. Kebas yang berpanjangan dan, walaupun jarang, perubahan deria pada kulit juga boleh berlaku. Perkara ini patut diterangkan sebelum anda memberi persetujuan, bukan selepas itu."
-      },
-      {
-        "lead": "Ia bukan rawatan kesihatan",
-        "body": "Mengurangkan lemak setempat tidak memperbaiki risiko metabolik yang berkaitan dengan berat badan berlebihan. Sesiapa yang menggunakan rawatan membentuk badan sebagai pengganti untuk mengurus berat badan sedang membeli perubahan kosmetik, tanpa sebarang faedah kesihatan."
+        "body": "Pengurangan lemak berasaskan penyejukan membawa risiko yang jarang berlaku, iaitu hiperplasia adipos paradoks (PAH), di mana kawasan yang dirawat membesar dan bukannya mengecil, dan biasanya memerlukan pembedahan untuk membetulkannya. Kebas yang berpanjangan dan, walaupun jarang, perubahan deria pada kulit juga boleh berlaku."
       },
       {
         "lead": "Perubahan pigmen dan kulit rakyat Malaysia",
         "body": "Apabila mesin berasaskan tenaga digunakan, warna kulit sederhana dan lebih gelap mempunyai risiko lebih tinggi mengalami perubahan pigmen pasca-radang di kawasan yang dirawat. Kulit badan juga sembuh lebih perlahan berbanding muka, jadi tetapan dibuat secara konservatif dan kawasan itu ditutup atau dilindungi selepas rawatan."
       },
       {
-        "lead": "Apa yang rawatan tidak boleh buat",
-        "body": "Ia tidak boleh mengurangkan berat badan keseluruhan anda, merawat obesiti, atau menegangkan kulit yang kendur. Ia tidak akan menghalang lemak daripada kembali jika berat badan anda naik, kerana sel yang masih ada di tempat lain akan membesar. Selulit tidak dibuang oleh mana-mana rawatan ini, dan perubahan terbina dalam beberapa minggu hingga bulan, bukan muncul sebaik sahaja sesi selesai."
+        "lead": "Apa yang rawatan tidak dapat lakukan",
+        "body": "Ia tidak membawa manfaat kesihatan metabolik, dan ia tidak boleh mengurangkan berat badan keseluruhan, merawat obesiti atau menegangkan kulit yang kendur. Selulit tidak dibuang. Perubahan terbina dalam beberapa minggu hingga bulan."
       }
     ],
     "disclose": "Beritahu doktor jika anda hamil, menyusukan anak atau merancang untuk hamil, mempunyai hernia di dalam atau berhampiran kawasan itu, memakai perentak jantung (pacemaker) atau implan logam, mengambil ubat pencair darah, mempunyai keadaan sensitif sejuk seperti krioglobulinemia atau urtikaria sejuk, atau pernah menjalani pembedahan di kawasan itu."
   },
   "costFactors": {
-    "intro": "Kos tidak dipaparkan kerana ia bergantung pada penilaian. Tetapi elok anda tahu apa yang mempengaruhinya sebelum datang:",
+    "intro": "Harga ditetapkan selepas penilaian. Ia bergantung pada:",
     "factors": [
       "Kawasan mana, dan berapa banyak kawasan yang dirawat dalam satu pelan.",
       "Saiz lemak setempat itu, kerana kawasan yang lebih besar memerlukan lebih banyak aplikasi untuk diliputi.",
       "Rawatan mana yang sesuai, kerana pengurangan lemak, ketegangan kulit dan tona otot ialah rawatan yang berbeza.",
       "Berapa sesi, yang ditetapkan selepas penilaian dan disemak mengikut tindak balas kawasan itu.",
       "Sama ada rawatan digabungkan, yang biasa berlaku apabila ada kedua-dua lemak dan kulit kendur."
-    ],
-    "outro": "Doktor akan menerangkan butirannya semasa konsultasi, termasuk berapa lama perubahan mengambil masa untuk kelihatan dan bila ia disemak, sebelum anda membuat sebarang keputusan."
+    ]
   },
-  "technologyIntro": "Isi padu lemak, ketegangan kulit dan tona otot ialah tiga masalah berbeza, dan tiada satu mesin yang menangani ketiga-tiganya dengan baik. Dengan lebih daripada satu platform, doktor boleh memadankan rawatan dengan apa yang sebenarnya ditunjukkan oleh kawasan itu.",
+  "technologyIntro": "Isi padu lemak, ketegangan kulit dan tona otot ialah tiga masalah berbeza, dan tiada satu mesin yang menangani ketiga-tiganya.",
   "faqs": [
     {
       "q": "Adakah body contouring satu cara untuk turunkan berat badan?",
-      "a": "Tidak. Ia mengurangkan atau membentuk semula lemak di satu kawasan tertentu dan tidak mengubah berat badan keseluruhan, indeks jisim badan (BMI) atau kesihatan metabolik anda. Ia bukan rawatan untuk obesiti dan bukan pengganti pemakanan dan senaman. Ia biasanya dipertimbangkan untuk orang yang sudah hampir dengan berat badan yang boleh dikekalkan dan ada satu kawasan setempat yang tidak berubah. Jika berat badan itu sendiri yang menjadi kebimbangan, itu perbincangan yang berbeza."
+      "a": "Tidak. Ia mengurangkan atau membentuk semula lemak di satu kawasan tertentu dan tidak mengubah berat badan keseluruhan, indeks jisim badan (BMI) atau kesihatan metabolik anda. Ia bukan rawatan untuk obesiti dan bukan pengganti pemakanan dan senaman. Ia biasanya dipertimbangkan untuk orang yang sudah hampir dengan berat badan yang boleh dikekalkan dan ada satu kawasan setempat yang tidak berubah."
     },
     {
       "q": "Lemak akan datang balik ke?",
-      "a": "Sel lemak yang dibuang dari kawasan yang dirawat tidak kembali atau berpindah ke tempat lain. Apa yang boleh berlaku ialah jika berat badan anda naik selepas itu, sel lemak yang masih ada di seluruh badan akan membesar, termasuk yang masih tinggal di kawasan yang dirawat, jadi bentuknya berubah semula. Hasilnya bergantung pada berat badan anda tetap agak stabil, sebab itu masa rawatan berbanding perubahan berat badan sangat penting."
+      "a": "Sel lemak yang dibuang dari kawasan yang dirawat tidak kembali atau berpindah ke tempat lain. Apa yang boleh berlaku ialah jika berat badan anda naik selepas itu, sel lemak yang masih ada di seluruh badan akan membesar, termasuk yang masih tinggal di kawasan yang dirawat, jadi bentuknya berubah semula. Hasilnya bergantung pada berat badan anda tetap agak stabil."
     },
     {
       "q": "Berapa lama baru nampak perubahan?",
-      "a": "Secara beransur-ansur. Rawatan pengurangan lemak berfungsi dengan menyebabkan sel yang dirawat disingkirkan oleh badan dalam beberapa minggu dan bulan berikutnya, jadi tiada apa yang dapat dilihat serta-merta, malah kawasan itu mungkin nampak bengkak pada mulanya. Rawatan rangsangan otot membina tona sepanjang satu kursus. Gambar yang diambil dalam pencahayaan dan postur yang konsisten jauh lebih boleh dipercayai berbanding cermin atau penimbang."
+      "a": "Secara beransur-ansur. Rawatan pengurangan lemak berfungsi dengan menyebabkan sel yang dirawat disingkirkan oleh badan dalam beberapa minggu dan bulan berikutnya, jadi tiada apa yang dapat dilihat serta-merta, malah kawasan itu mungkin nampak bengkak pada mulanya. Rawatan rangsangan otot membina tona sepanjang satu kursus."
     },
     {
       "q": "Rawatan ini sakit ke?",
@@ -298,15 +263,15 @@
     },
     {
       "q": "Selulit boleh dirawat ke?",
-      "a": "Rupanya kadangkala boleh diperbaiki, tetapi selulit tidak dibuang oleh mana-mana rawatan di halaman ini. Ia disebabkan oleh jalur berserat yang menambat kulit pada tisu yang lebih dalam sementara lemak menolak ke atas di antaranya, dan ia ada pada orang daripada semua saiz badan dan tahap kecergasan. Sebarang perbincangan mengenainya patut dirangka sebagai menjadikannya kurang ketara, bukan menghilangkannya."
+      "a": "Rupanya kadangkala boleh diperbaiki, tetapi selulit tidak dibuang oleh mana-mana rawatan di halaman ini. Ia disebabkan oleh jalur berserat yang menambat kulit pada tisu yang lebih dalam sementara lemak menolak ke atas di antaranya, dan ia ada pada orang daripada semua saiz badan dan tahap kecergasan."
     },
     {
       "q": "Adakah ia akan menegangkan kulit yang kendur?",
-      "a": "Tidak dengan sendirinya, dan mengurangkan lemak di bawah kulit yang kendur boleh menjadikan kekenduran itu lebih ketara. Ketegangan kulit ialah masalah yang berbeza daripada isi padu lemak, dinilai berasingan, dan selepas penurunan berat badan yang besar atau selepas mengandung, ia selalunya masalah utama. Dalam keadaan itu doktor patut berterus terang, kerana merawat lemak dahulu akan membawa anda ke arah yang salah."
+      "a": "Tidak dengan sendirinya, dan mengurangkan lemak di bawah kulit yang kendur boleh menjadikan kekenduran itu lebih ketara. Ketegangan kulit ialah masalah yang berbeza daripada isi padu lemak, dinilai berasingan, dan selepas penurunan berat badan yang besar atau selepas mengandung, ia selalunya masalah utama."
     },
     {
       "q": "Boleh buat rawatan ini selepas bersalin?",
-      "a": "Ia biasanya ditangguhkan sehingga anda selesai menyusukan anak dan berat serta badan anda sudah stabil, yang biasanya mengambil masa sekurang-kurangnya beberapa bulan. Pemisahan otot perut (diastasis recti) juga dinilai dahulu, kerana jurang antara otot perut menghasilkan bentuk yang tidak dapat ditangani oleh mana-mana rawatan membentuk badan, dan ia diurus dengan fisioterapi. Beritahu doktor semasa konsultasi di peringkat mana anda berada sekarang."
+      "a": "Ia biasanya ditangguhkan sehingga anda selesai menyusukan anak dan berat serta badan anda sudah stabil, yang biasanya mengambil masa sekurang-kurangnya beberapa bulan. Pemisahan otot perut (diastasis recti) juga dinilai dahulu, kerana jurang antara otot perut menghasilkan bentuk yang tidak dapat ditangani oleh mana-mana rawatan membentuk badan, dan ia diurus dengan fisioterapi."
     },
     {
       "q": "Macam mana nak tahu saya sesuai atau tidak?",

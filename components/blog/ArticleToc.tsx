@@ -19,7 +19,7 @@ export function ArticleToc({
   label = "On this page",
 }: {
   headings: Heading[];
-  variant?: "inline" | "sidebar";
+  variant?: "inline" | "sidebar" | "collapsed";
   label?: string;
 }) {
   // On a long article, listing every H3 (each FAQ question, each ingredient)
@@ -34,6 +34,35 @@ export function ArticleToc({
   if (headings.length < TOC_MIN_HEADINGS) return null;
 
   const sidebar = variant === "sidebar";
+
+  // Closed by default on narrow screens: a long page's full contents list
+  // would otherwise push the article itself below the fold.
+  if (variant === "collapsed") {
+    return (
+      <details className="group rounded-xl border border-hairline">
+        <summary className="flex cursor-pointer list-none items-center justify-between px-5 py-3.5 text-sm font-semibold text-espresso [&::-webkit-details-marker]:hidden">
+          {label}
+          <span aria-hidden className="text-lg leading-none text-mocha group-open:rotate-45">
+            +
+          </span>
+        </summary>
+        <nav aria-label={label} className="border-t border-hairline px-5 py-4">
+          <ol className="space-y-2.5">
+            {list.map((h) => (
+              <li key={h.id} className={h.level === 3 ? "pl-4" : ""}>
+                <a
+                  href={`#${h.id}`}
+                  className="block py-0.5 text-sm leading-snug text-ink-700 hover:text-espresso"
+                >
+                  {h.text}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+      </details>
+    );
+  }
 
   return (
     <nav

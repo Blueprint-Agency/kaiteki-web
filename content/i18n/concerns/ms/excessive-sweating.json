@@ -6,7 +6,7 @@
   "group": "Skin",
   "image": "https://cdn.kaiteki.my/concerns/excessive-sweating/card.jpg",
   "summary": "Peluh yang mengganggu kehidupan harian selalunya boleh dikawal. Doktor menilai corak dan tahap peluh anda untuk menentukan pendekatan yang sesuai.",
-  "leadAnswer": "Peluh berlebihan (hiperhidrosis) ialah peluh yang melebihi keperluan badan untuk mengawal suhu, dan paling kerap berlaku di ketiak, tapak tangan, tapak kaki atau muka. Ia boleh berpunca daripada beberapa perkara. Konsultasi membantu menilai keadaan anda dan membincangkan sama ada mana-mana pendekatan mungkin sesuai untuk anda.",
+  "leadAnswer": "Peluh berlebihan (hiperhidrosis) ialah peluh yang melebihi keperluan badan untuk mengawal suhu, dan paling kerap berlaku di ketiak, tapak tangan, tapak kaki atau muka. Hiperhidrosis primer bermula pada usia muda, sering diwarisi dalam keluarga dan dikendalikan secara berperingkat, bermula dengan antiperspirant gred klinikal. Peluh di seluruh badan, peluh yang baru bermula semasa dewasa atau peluh pada waktu malam disiasat dahulu.",
   "treatments": [
     "botulinum-toxin"
   ],
@@ -15,9 +15,9 @@
   "seoTitle": "Rawatan & Penilaian Peluh Berlebihan | Kaiteki",
   "seoDescription": "Peluh berlebihan (hiperhidrosis) melebihi keperluan badan mengawal suhu dan ada beberapa punca. Doktor menilai keadaan anda. Tempah konsultasi percuma.",
   "banner": {
-    "src": "https://cdn.kaiteki.my/concerns/excessive-sweating/hero.jpg",
-    "sm": "https://cdn.kaiteki.my/concerns/excessive-sweating/hero-mobile.jpg",
-    "alt": "Gambar ilustrasi: seorang wanita menekap tuala ke pipinya di depan dinding putih"
+    "src": "https://cdn.kaiteki.my/concerns/excessive-sweating/banner.jpg",
+    "sm": "https://cdn.kaiteki.my/concerns/excessive-sweating/banner-mobile.jpg",
+    "alt": "Gambar ilustrasi: seorang wanita berbaju sukan menekap mukanya dengan tuala putih, di depan dinding bata putih"
   },
   "facts": [
     {
@@ -68,7 +68,7 @@
       "heading": "Apa itu peluh berlebihan (hiperhidrosis)?",
       "body": [
         "Berpeluh ialah fungsi badan yang normal untuk membantu mengawal suhu. Peluh berlebihan, atau dari segi perubatan dipanggil hiperhidrosis, ialah peluh yang jelas lebih banyak daripada yang diperlukan untuk mengawal suhu, dan boleh menjejaskan aktiviti harian serta keyakinan diri.",
-        "Ia paling kerap berlaku di ketiak, tapak tangan, tapak kaki dan, kurang kerap, muka dan kulit kepala. Memahami corak dan kemungkinan puncanya ialah langkah pertama untuk menilai sama ada mana-mana pendekatan mungkin membantu."
+        "Ia paling kerap berlaku di ketiak, tapak tangan, tapak kaki dan, kurang kerap, muka dan kulit kepala."
       ]
     },
     {
@@ -77,26 +77,19 @@
         "Kulit mempunyai berjuta-juta kelenjar peluh ekrin, yang mengeluarkan peluh berair untuk menyejukkan badan, dan sebilangan kecil kelenjar apokrin yang tertumpu di ketiak dan celah kelangkang. Kelenjar ekrin diaktifkan oleh isyarat saraf daripada sistem saraf simpatetik, iaitu sistem yang sama yang bertindak balas terhadap panas, senaman dan tekanan.",
         "Dalam hiperhidrosis primer, kelenjar itu sendiri normal; isyarat yang sampai kepadanya lebih kuat atau lebih kerap daripada yang diperlukan badan. Sebab itu masalah ini bukan soal kebersihan, dan sebab itu rawatan yang bertindak pada isyarat itu, bukan pada permukaan kulit, turut dibincangkan."
       ]
-    },
-    {
-      "heading": "Berpeluh dalam cuaca panas dan lembap",
-      "body": [
-        "Dalam cuaca Malaysia yang panas dan lembap sepanjang tahun, semua orang berpeluh lebih banyak berbanding di negara beriklim sederhana, dan sukar untuk tahu apa yang normal. Perbezaan yang berguna bukan berapa banyak anda berpeluh pada waktu petang yang panas, tetapi sama ada anda berpeluh dengan banyak dalam bilik beraircond, semasa berehat, atau di bahagian tertentu tanpa mengira suhu.",
-        "Cuaca ini juga menyukarkan penjagaan harian: pakaian lebih lama kering, dan kulit di kawasan yang sentiasa lembap lebih mudah mengalami kerengsaan dan jangkitan kulat. Perkara ini wajar dibangkitkan semasa penilaian, bersama masalah peluh itu sendiri."
-      ]
     }
   ],
   "drivers": {
     "heading": "Punca peluh berlebihan",
-    "intro": "Peluh berlebihan boleh berlaku dengan sendirinya (hiperhidrosis primer) atau bersama masalah kesihatan lain (hiperhidrosis sekunder). Doktor mempertimbangkan kedua-dua kemungkinan semasa menilai anda.",
+    "intro": "Peluh boleh jadi masalah itu sendiri atau tanda kepada masalah lain. Faktor penyumbang utama:",
     "items": [
       {
         "lead": "Hiperhidrosis fokal primer:",
-        "body": "jenis yang paling biasa, selalunya bermula semasa kanak-kanak atau remaja, dan sering tiada punca yang dapat dikenal pasti. Ia cenderung berlaku di bahagian yang sama pada kedua-dua belah badan dan kerap diwarisi dalam keluarga."
+        "body": "jenis yang paling biasa, selalunya bermula semasa kanak-kanak atau remaja dan sering diwarisi dalam keluarga."
       },
       {
         "lead": "Perubahan hormon:",
-        "body": "akil baligh, kehamilan, menopaus dan masalah tiroid semuanya boleh meningkatkan peluh. Peluh yang muncul bersama perubahan hormon dinilai secara berbeza daripada peluh yang sudah ada sejak remaja."
+        "body": "akil baligh, kehamilan, menopaus dan masalah tiroid semuanya boleh meningkatkan peluh."
       },
       {
         "lead": "Tekanan dan kebimbangan:",
@@ -104,18 +97,18 @@
       },
       {
         "lead": "Ubat-ubatan:",
-        "body": "sesetengah ubat antidepresan, ubat diabetes, terapi hormon dan ubat lain menyenaraikan peluh yang bertambah sebagai kesan sampingan. Bawa senarai semua yang anda ambil, termasuk suplemen, semasa konsultasi."
+        "body": "sesetengah ubat antidepresan, ubat diabetes, terapi hormon dan ubat lain menyenaraikan peluh yang bertambah sebagai kesan sampingan."
       },
       {
         "lead": "Masalah kesihatan yang mendasari:",
-        "body": "tiroid yang terlalu aktif, diabetes, jangkitan dan, jarang sekali, penyakit yang lebih serius boleh menyebabkan peluh. Sebab itu peluh di seluruh badan atau peluh yang bermula semasa dewasa disiasat dahulu sebelum apa-apa dirancang."
+        "body": "tiroid yang terlalu aktif, diabetes, jangkitan dan, jarang sekali, penyakit yang lebih serius boleh menyebabkan peluh."
       }
     ],
-    "outro": "Makanan, kafein, alkohol dan pakaian sintetik yang ketat boleh memburukkan peluh, tetapi ia faktor yang memburukkan, bukan punca. Mengurangkannya memang wajar, tetapi jarang menyelesaikan masalah sepenuhnya."
+    "outro": "Makanan, kafein, alkohol dan pakaian sintetik yang ketat boleh memburukkan peluh, tetapi ia faktor yang memburukkan, bukan punca."
   },
   "variant": {
     "kind": "tabs",
-    "heading": "Jenis hiperhidrosis: primer atau sekunder?",
+    "heading": "Jenis hiperhidrosis",
     "intro": "Perkara paling penting yang dilakukan oleh penilaian di sini ialah menentukan sama ada peluh itu sendiri masalahnya, atau tanda kepada masalah lain. Yang kedua perlu disiasat, bukan dirawat.",
     "tabs": [
       {
@@ -127,10 +120,6 @@
           {
             "lead": "Tandanya:",
             "body": "bahagian yang sama, di kedua-dua belah, bertahun-tahun, selalunya dengan ahli keluarga yang mengalami perkara yang sama."
-          },
-          {
-            "lead": "Maksudnya:",
-            "body": "keadaan jangka panjang yang perlu dikawal, bukan simptom yang perlu disiasat, dengan pilihan dibincangkan secara berperingkat daripada yang paling mudah kepada yang lebih terlibat."
           }
         ],
         "routing": "dinilai untuk pelan pengurusan berperingkat, bermula dengan langkah sapuan dan beralih ke langkah seterusnya hanya jika ia tidak mencukupi."
@@ -139,15 +128,11 @@
         "label": "Sekunder",
         "sub": "Seluruh badan atau baru bermula semasa dewasa",
         "title": "Peluh sebagai simptom",
-        "body": "Peluh di kawasan badan yang luas, peluh yang bermula semasa dewasa tanpa sebab yang jelas, peluh di sebelah badan sahaja, atau berpeluh waktu malam sehingga cadar basah. Di sini peluh ialah isyarat, dan merawatnya secara kosmetik tanpa mencari puncanya terlepas perkara yang sebenar.",
+        "body": "Peluh di kawasan badan yang luas, peluh yang bermula semasa dewasa tanpa sebab yang jelas, peluh di sebelah badan sahaja, atau berpeluh waktu malam sehingga cadar basah. Di sini peluh ialah isyarat.",
         "items": [
           {
             "lead": "Tandanya:",
             "body": "perubahan yang jelas daripada kebiasaan anda, berpeluh waktu malam, atau simptom lain seperti berat badan turun, demam atau jantung berdebar laju."
-          },
-          {
-            "lead": "Maksudnya:",
-            "body": "siasatan dahulu, yang mungkin termasuk ujian darah atau rujukan, kerana beberapa punca di sini boleh dirawat dan sesetengahnya perlu ditangani segera."
           }
         ],
         "routing": "dinilai melalui sejarah, pemeriksaan dan, jika perlu, siasatan atau rujukan sebelum sebarang rawatan kosmetik dibincangkan."
@@ -155,12 +140,12 @@
     ]
   },
   "locationBlock": {
-    "heading": "Bahagian badan yang berpeluh berlebihan",
-    "intro": "Bahagian mana yang berpeluh ialah antara maklumat paling berguna yang doktor dapat semasa penilaian, kerana setiap bahagian dikendalikan secara berbeza.",
+    "heading": "Bahagian yang berpeluh",
+    "intro": "Setiap bahagian dikendalikan secara berbeza:",
     "cards": [
       {
         "title": "Ketiak",
-        "body": "Bahagian yang paling biasa, dan yang paling kerap membuatkan orang datang berjumpa doktor. Kesan peluh yang jelas pada baju dan perlu menukar baju pada siang hari selalunya menjadi sebab mereka datang."
+        "body": "Bahagian yang paling biasa."
       },
       {
         "title": "Tapak tangan",
@@ -185,8 +170,8 @@
     }
   },
   "seeDoctor": {
-    "heading": "Bila perlu berjumpa doktor",
-    "intro": "Berpeluh lebih daripada orang lain tidak semestinya masalah perubatan, jadi persoalannya ialah apa yang menjadikannya wajar untuk berjumpa doktor. Mana-mana yang berikut ialah sebabnya:",
+    "heading": "Bila perlu jumpa doktor",
+    "intro": "Mana-mana yang berikut ialah sebab untuk berjumpa doktor:",
     "triggers": [
       "Peluh yang membasahi pakaian, menitis, atau mengganggu kerja, genggaman atau tugas harian.",
       "Berpeluh waktu malam sehingga baju tidur atau cadar basah.",
@@ -196,22 +181,22 @@
       "Peluh yang bermula atau bertambah selepas mula mengambil ubat baharu.",
       "Antiperspirant gred klinikal, yang digunakan dengan betul selama beberapa minggu, tidak membawa perbezaan yang mencukupi."
     ],
-    "outro": "Jika mana-mana simptom di bahagian tengah senarai ini berkaitan dengan anda, langkah pertama yang betul mungkin siasatan oleh doktor am anda atau rujukan, bukan rawatan estetik, dan doktor di sini akan memberitahu anda begitu. Hiperhidrosis primer yang hanya menjejaskan keyakinan diri anda juga sebab yang wajar untuk datang."
+    "outro": "Jika berpeluh waktu malam, berat badan turun, demam atau berpeluh di sebelah badan sahaja, langkah pertama mungkin berjumpa doktor am anda, bukan rawatan estetik."
   },
   "ctaMid": {
     "heading": "Tak pasti sama ada peluh anda perlu disiasat?",
-    "body": "Peluh yang sudah ada sejak remaja dan peluh yang baru bermula dikendalikan dengan sangat berbeza. Hantar mesej kepada kami di WhatsApp dan doktor boleh beritahu jenis yang mungkin anda alami dan apa yang perlu dibuat dahulu."
+    "body": "Hantar mesej kepada kami di WhatsApp dan doktor boleh beritahu jenis yang mungkin anda alami."
   },
-  "treatmentsIntro": "Peluh berlebihan dikendalikan secara berperingkat, bermula dengan langkah yang paling mudah. Rawatan yang ditawarkan di klinik ialah satu langkah dalam urutan itu, dan sama ada ia sesuai bergantung pada hasil penilaian.",
+  "treatmentsIntro": "Peluh berlebihan dikendalikan secara berperingkat, bermula dengan langkah yang paling mudah; rawatan di klinik ialah satu langkah dalam urutan itu.",
   "treatmentWhy": {
     "botulinum-toxin": {
       "why": "Untuk peluh setempat yang tidak terkawal dengan langkah sapuan",
       "body": "Suntikan preskripsi yang mungkin dibincangkan oleh doktor apabila peluh primer terhad pada bahagian tertentu seperti ketiak. Sedikit kuantiti dimasukkan ke dalam kulit untuk menyekat isyarat saraf yang mengaktifkan kelenjar peluh di kawasan itu. Kesannya sementara, perlu diulang, dan hanya dipertimbangkan selepas punca sekunder disingkirkan."
     }
   },
-  "treatmentsNote": "Antiperspirant gred klinikal, yang disapu pada kulit kering pada waktu malam, ialah langkah pertama yang munasabah bagi ramai orang dan wajar dicuba dengan betul sebelum apa-apa yang lain. Pilihan perubatan lain, termasuk ubat sapu preskripsi, ubat makan dan iontoforesis untuk tangan dan kaki, memang ada dan dibincangkan secara individu oleh doktor, bukan diiklankan di sini. Jika peluh berpunca daripada masalah kesihatan lain, masalah itu ditangani dahulu.",
+  "treatmentsNote": "Antiperspirant gred klinikal yang disapu pada kulit kering pada waktu malam ialah langkah pertama yang munasabah. Ubat sapu preskripsi, ubat makan dan iontoforesis untuk tangan dan kaki dibincangkan secara individu. Peluh sekunder ditangani pada puncanya dahulu.",
   "firstVisit": {
-    "intro": "Konsultasi adalah percuma dan tiada paksaan untuk menempah rawatan selepas itu. Ia biasanya mengambil masa 20 hingga 30 minit.",
+    "intro": "Soalan pertama ialah sama ada coraknya sepadan dengan peluh fokal primer.",
     "steps": [
       {
         "title": "Sejarah",
@@ -227,27 +212,11 @@
       },
       {
         "title": "Perbincangan dan pelan",
-        "body": "Langkah mana yang sesuai untuk anda sekarang, apa yang terlibat, risiko dan hadnya, dan apa langkah seterusnya jika ia tidak mencukupi. Anda boleh bawa pulang pelan itu dan fikirkan dahulu."
+        "body": "Langkah mana yang sesuai untuk anda sekarang, apa yang terlibat, risiko dan hadnya, dan apa langkah seterusnya jika ia tidak mencukupi."
       }
     ],
     "outro": "Elok bawa senarai ubat anda dan catat bila peluh paling teruk. Catatan selama beberapa hari lebih berguna daripada cuba mengingat semula."
   },
-  "figures": [
-    {
-      "src": "https://cdn.kaiteki.my/concerns/excessive-sweating/image-underarms.jpg",
-      "caption": "Ketiak ialah antara tempat paling biasa untuk peluh setempat, yang biasanya berlaku di kedua-dua belah."
-    },
-    null,
-    {
-      "src": "https://cdn.kaiteki.my/concerns/excessive-sweating/image-face-scalp.jpg",
-      "caption": "Tekanan dan kebimbangan boleh mencetuskan peluh, selalunya di muka, kulit kepala dan tangan."
-    },
-    null,
-    {
-      "src": "https://cdn.kaiteki.my/concerns/excessive-sweating/image-whole-body.jpg",
-      "caption": "Peluh di seluruh badan, bukan di satu bahagian, lebih kerap berkait dengan punca yang mendasari dan wajar diperiksa oleh doktor."
-    }
-  ],
   "visitImages": [
     {
       "src": "https://cdn.kaiteki.my/concerns/excessive-sweating/procedure-01.jpg",
@@ -264,7 +233,6 @@
     }
   ],
   "risks": {
-    "intro": "Setiap rawatan yang dibincangkan di halaman ini membawa sedikit risiko.",
     "items": [
       {
         "lead": "Biasa dan selalunya sementara",
@@ -272,7 +240,7 @@
       },
       {
         "lead": "Kurang biasa",
-        "body": "Sesetengah orang perasan peluh bertambah di bahagian yang tidak dirawat, atau kerengsaan kulit akibat rawatan sapuan. Reaksi alahan jarang berlaku. Doktor anda akan menerangkan apa yang berkaitan dengan kawasan rawatan anda sebelum apa-apa dilakukan."
+        "body": "Sesetengah orang perasan peluh bertambah di bahagian yang tidak dirawat, atau kerengsaan kulit akibat rawatan sapuan. Reaksi alahan jarang berlaku."
       },
       {
         "lead": "Merawat perkara yang salah",
@@ -280,37 +248,36 @@
       },
       {
         "lead": "Apa yang rawatan tidak dapat lakukan",
-        "body": "Tiada apa-apa di halaman ini yang menyembuhkan hiperhidrosis primer. Rawatan di klinik bersifat sementara dan perlu diulang, ia tidak mengubah kecenderungan badan untuk berpeluh, dan ia tidak menangani peluh yang disebabkan oleh masalah kesihatan lain. Sejauh mana perbezaannya berbeza antara individu."
+        "body": "Tiada apa-apa di halaman ini yang menyembuhkan hiperhidrosis primer. Rawatan di klinik bersifat sementara dan perlu diulang, ia tidak mengubah kecenderungan badan untuk berpeluh, dan ia tidak menangani peluh yang disebabkan oleh masalah kesihatan lain."
       }
     ],
     "disclose": "Beritahu doktor anda jika anda hamil, menyusu atau merancang untuk hamil, ada masalah neuromuskular, mengambil ubat pencair darah atau sebarang ubat secara tetap, pernah mengalami reaksi terhadap suntikan sebelum ini, atau ada masalah tiroid, diabetes atau sebarang simptom baru-baru ini yang tidak dapat dijelaskan."
   },
   "costFactors": {
-    "intro": "Kos tidak dipaparkan kerana ia bergantung pada penilaian. Tetapi elok anda tahu apa yang mempengaruhinya sebelum datang:",
+    "intro": "Harga ditetapkan selepas penilaian. Ia bergantung pada:",
     "factors": [
       "Bahagian mana yang dirawat, dan berapa banyak.",
       "Saiz setiap kawasan, kerana ketiak, tapak tangan dan kulit kepala sangat berbeza.",
       "Sama ada siasatan atau rujukan diperlukan sebelum apa-apa dirancang.",
       "Berapa kerap rawatan perlu diulang, yang berbeza antara individu."
-    ],
-    "outro": "Doktor akan menerangkan butirannya semasa konsultasi, termasuk apa yang terlibat dalam jangka masa panjang, sebelum anda membuat sebarang keputusan."
+    ]
   },
   "faqs": [
     {
       "q": "Adakah peluh berlebihan satu penyakit?",
-      "a": "Ya. Apabila peluh jelas melebihi keperluan untuk mengawal suhu, ia diiktiraf sebagai satu keadaan perubatan yang dipanggil hiperhidrosis. Ia bukan masalah kebersihan: kelenjar peluh menerima isyarat yang lebih kuat daripada yang diperlukan badan. Doktor boleh menilai sama ada ini berkaitan dengan anda dan membincangkannya dengan sewajarnya."
+      "a": "Ya. Apabila peluh jelas melebihi keperluan untuk mengawal suhu, ia diiktiraf sebagai satu keadaan perubatan yang dipanggil hiperhidrosis. Ia bukan masalah kebersihan: kelenjar peluh menerima isyarat yang lebih kuat daripada yang diperlukan badan."
     },
     {
       "q": "Apa punca peluh berlebihan?",
-      "a": "Selalunya ia berlaku dengan sendirinya, biasanya bermula semasa kanak-kanak atau remaja dan kerap diwarisi dalam keluarga. Ia juga boleh disebabkan atau diburukkan oleh perubahan hormon, tekanan, ubat-ubatan tertentu dan sesetengah masalah kesihatan. Konsultasi membantu mengenal pasti faktor penyumbang yang mungkin bagi anda sebelum apa-apa dipertimbangkan."
+      "a": "Selalunya ia berlaku dengan sendirinya, biasanya bermula semasa kanak-kanak atau remaja dan kerap diwarisi dalam keluarga. Ia juga boleh disebabkan atau diburukkan oleh perubahan hormon, tekanan, ubat-ubatan tertentu dan sesetengah masalah kesihatan."
     },
     {
       "q": "Boleh ke peluh berlebihan dirawat?",
-      "a": "Ia biasanya boleh dikawal, walaupun hiperhidrosis primer tidak dapat disembuhkan. Pilihannya bermula daripada antiperspirant gred klinikal hingga rawatan preskripsi dan prosedur di klinik, dicuba secara berperingkat. Jika peluh disebabkan oleh masalah kesihatan lain, masalah itu dirawat dahulu. Hasil berbeza antara individu, dan doktor menerangkan apa yang mungkin sesuai sebelum mencadangkan apa-apa."
+      "a": "Ia biasanya boleh dikawal, walaupun hiperhidrosis primer tidak dapat disembuhkan. Pilihannya bermula daripada antiperspirant gred klinikal hingga rawatan preskripsi dan prosedur di klinik, dicuba secara berperingkat. Jika peluh disebabkan oleh masalah kesihatan lain, masalah itu dirawat dahulu."
     },
     {
       "q": "Apa bezanya dengan berpeluh biasa dalam cuaca panas, atau berpeluh dalam aircond?",
-      "a": "Semua orang berpeluh lebih banyak dalam cuaca Malaysia yang panas dan lembap. Hiperhidrosis disyaki apabila anda berpeluh dengan banyak dalam bilik yang sejuk atau beraircond, semasa berehat, atau di bahagian tertentu seperti tapak tangan atau ketiak tanpa mengira suhu, dan apabila ia mengganggu kehidupan harian."
+      "a": "Semua orang berpeluh lebih banyak dalam cuaca Malaysia yang panas dan lembap. Hiperhidrosis disyaki apabila anda berpeluh dengan banyak dalam bilik yang sejuk atau beraircond, semasa berehat, atau di bahagian tertentu seperti tapak tangan atau ketiak tanpa mengira suhu, dan apabila ia mengganggu kehidupan harian. Kelembapan yang berterusan juga menjadikan kerengsaan kulit dan jangkitan kulat lebih mungkin berlaku."
     },
     {
       "q": "Apa beza deodorant dan antiperspirant?",
@@ -322,11 +289,11 @@
     },
     {
       "q": "Adakah merawat satu bahagian akan membuatkan saya lebih berpeluh di tempat lain?",
-      "a": "Sesetengah orang perasan peluh bertambah di bahagian yang tidak dirawat selepas rawatan, yang dipanggil peluh pampasan (compensatory sweating). Ia paling kuat dikaitkan dengan kaedah pembedahan, yang tidak ditawarkan di sini, tetapi masih wajar dibincangkan dengan doktor anda. Badan mempunyai banyak kelenjar peluh di luar kawasan yang dirawat, jadi kawalan suhu badan tetap berterusan."
+      "a": "Sesetengah orang perasan peluh bertambah di bahagian yang tidak dirawat selepas rawatan, yang dipanggil peluh pampasan (compensatory sweating). Ia paling kuat dikaitkan dengan kaedah pembedahan, yang tidak ditawarkan di sini. Badan mempunyai banyak kelenjar peluh di luar kawasan yang dirawat, jadi kawalan suhu badan tetap berterusan."
     },
     {
       "q": "Adakah peluh berlebihan menyebabkan bau badan?",
-      "a": "Peluh itu sendiri hampir tidak berbau. Bau terhasil apabila bakteria pada kulit menguraikan rembesan, kebanyakannya daripada kelenjar apokrin di ketiak dan celah kelangkang. Kelembapan yang berterusan menjadikan ini lebih mungkin berlaku, jadi peluh dan bau selalunya datang bersama, tetapi kedua-duanya masalah yang berasingan dan doktor akan mempertimbangkan kedua-duanya."
+      "a": "Peluh itu sendiri hampir tidak berbau. Bau terhasil apabila bakteria pada kulit menguraikan rembesan, kebanyakannya daripada kelenjar apokrin di ketiak dan celah kelangkang. Kelembapan yang berterusan menjadikan ini lebih mungkin berlaku, jadi peluh dan bau selalunya datang bersama, tetapi kedua-duanya masalah yang berasingan."
     }
   ],
   "relatedConcerns": [

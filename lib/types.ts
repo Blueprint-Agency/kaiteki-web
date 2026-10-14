@@ -50,6 +50,9 @@ export interface Treatment {
   /** Hero + card photo, https://cdn.kaiteki.my/treatments/<slug>/hero.jpg (Media Sync).
    *  Optional — treatments without one fall back to the generated motif. */
   image?: string;
+  /** Describes what the hero photograph shows. Falls back to a generic
+   *  "<name> treatment at Kaiteki" alt when unset. */
+  imageAlt?: string;
   /** One compliant sentence — used on cards, hubs and meta. */
   summary: string;
   /** Short duration/downtime tag shown on hub cards, e.g. "15-30 min · Minimal downtime (1-2 days)". */
@@ -175,6 +178,8 @@ export interface Technology {
   /** Photo under https://cdn.kaiteki.my/images/technology/. Optional — items without one fall
    *  back to the generated motif until real product photography lands. */
   image?: string;
+  /** Describes what the photograph shows. Falls back to a generic alt when unset. */
+  imageAlt?: string;
   /** One compliant, factual sentence. */
   summary: string;
   /** Optional rich body — carried over for the 3 converted pages. */
@@ -229,11 +234,14 @@ export type ConcernVariant =
       heading: string;
       intro: string;
       /** An illustrative diagram drawn beside the tabs, reacting to the active
-       *  tab. `skin-depth` is the skin cross-section (melasma's depth types). */
-      diagram?: "skin-depth";
+       *  tab. `skin-depth` is the skin cross-section (pigment depth types),
+       *  `under-eye` the dark-circle causes, `face-layers` the face's layers. */
+      diagram?: "skin-depth" | "under-eye" | "face-layers";
       tabs: {
         /** Where the pigment sits, for the `skin-depth` diagram. */
         depth?: "epidermis" | "dermis" | "both";
+        /** What the `under-eye` / `face-layers` diagram brings forward. */
+        focus?: "pigment" | "vascular" | "structural" | "mixed" | "skin" | "volume" | "structure";
         /** Tab button text — short enough to sit three-across on mobile. */
         label: string;
         /** Second line inside the tab button, e.g. "Texture you can feel". */
@@ -555,8 +563,12 @@ export interface Post {
   image?: string;
   /** Descriptive alt for the hero image. Required whenever `image` is set. */
   imageAlt?: string;
-  /** Doctor slug — the byline. */
+  /** Doctor slug — the byline. Empty only on a legacy post whose author has no
+   *  profile on this site, which carries `authorName` instead. */
   author: string;
+  /** Byline for a legacy author with no doctor profile (e.g. "Dr Lee Jin").
+   *  Shown as plain text: no profile link, photo or MMC number to show. */
+  authorName?: string;
   /** Doctor slug of the medical reviewer. Defaults to the author when unset. */
   reviewedBy?: string;
   /** ISO date first published. */
@@ -565,8 +577,9 @@ export interface Post {
   updatedAt?: string;
   /** Estimated read time in minutes (shown on cards and the byline). */
   readingMinutes: number;
-  /** 40–60 word answer-first capsule, mirrors treatment/concern pages (docs/05 §1.3). */
-  leadAnswer: string;
+  /** 40–60 word answer-first capsule, mirrors treatment/concern pages (docs/05 §1.3).
+   *  Required on every new post (`pnpm check:blog`); legacy posts never had one. */
+  leadAnswer?: string;
   /** Concern slugs this post relates to — drives blog → /concerns internal links. */
   concerns?: string[];
   /** Treatment slugs this post relates to — drives blog → /treatments links. */
@@ -583,6 +596,13 @@ export interface Post {
   /** Legacy blog.kaiteki.my path this post replaces, e.g. "/discovery-pico-vs-picosure/".
    *  Collected here so the subdomain-level 301 map can be generated from the data. */
   legacyPath?: string;
+  /** Moved verbatim from blog.kaiteki.my by scripts/blog-migrate-legacy.mjs.
+   *  Published copy, moved rather than re-edited, so `pnpm check:blog` skips its
+   *  house-style rules (em-dashes, meta lengths, lead answer, section count). */
+  legacy?: boolean;
+  /** The post's original WordPress category names, kept when it moved into one
+   *  of our five categories. Shown on the article; no archive pages. */
+  tags?: string[];
 }
 
 /** Device/brand-partner performance award — substantiated by the naming

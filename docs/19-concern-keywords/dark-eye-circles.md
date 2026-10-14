@@ -111,3 +111,29 @@ Same as the pilot. Google Autocomplete (free) at `https://suggestqueries.google.
 8. **FAQ 4 (filler safety)** keeps the EN conditional ("in experienced hands"). Neither locale says safe flatly.
 
 No L-03r warnings were raised on these files.
+
+## Re-sync 2026-10-14 (English rewrite)
+
+The English page was rewritten upstream; the sync tool kept every unchanged translation and blanked 29 strings per locale. Only one blank is search-relevant: `sections[0].heading`, now "What are dark eye circles?". The old "What causes…" wording moved to `drivers.heading`, whose existing KEYWORD translation (黑眼圈的原因… / *Apa punca…*) was kept by the sync, so the new heading targets the definitional query instead.
+
+### Chinese (`/zh`, `hl=zh-CN&gl=my`)
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| sections[0].heading "What are dark eye circles?" | 黑眼圈是什么, 什么是黑眼圈, 黑眼圈是, 黑眼圈 是什么原因 | `黑眼圈是什么` returns itself and sits in the `黑眼圈是` list (→ 怎么形成的, 怎么回事, 黑色素吗, 天生的吗); `什么是黑眼圈` and `黑眼圈 是什么原因` empty | KEYWORD: **黑眼圈是什么？** |
+
+### Malay (`/ms`, `hl=ms&gl=my`)
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| sections[0].heading "What are dark eye circles?" | apa itu lingkaran gelap bawah mata, apa itu lingkaran gelap, lingkaran gelap bawah mata adalah, apa itu mata panda | all lingkaran forms empty; `apa itu mata panda` returns itself, but the rest of that list is drawing-perspective noise (*sudut pandang mata burung*), and *mata panda* is Indonesian-skewed (see above) | DIRECT: **Apa itu lingkaran gelap bawah mata?** (keeps the locked head term) |
+
+**Body blanks translated directly:** 28 zh, 28 ms (leadAnswer, banner.alt, section body, drivers.outro, variant intro and tabs[2].body, locationBlock.intro, seeDoctor intro/outro, ctaMid.body, treatmentsIntro, compare.intro, firstVisit intro and steps[1]/[2], risks intro and items[3], costFactors.intro, technologyIntro, FAQ answers 3, 4, 5, 6, 7, 9, 11, 12). Most are the old translation trimmed to the shorter English; no claims added.
+
+**Reviewer notes**
+
+1. FAQ 5 answer opens 很少能 / *Jarang sekali*. The old caution clause ("anyone promising that should be treated with caution") was dropped upstream and is not carried over.
+2. leadAnswer renders "volume support" as 填充支撑 / *sokongan isi padu*, matching the tabs and compare table; 玻尿酸 is still not used.
+3. risks.items[3] keeps 睡眠不能让黑眼圈消失 (not 根治) and *tidak menyembuhkan* (negated), as before.
+
+No L-03r warnings were raised on these files.

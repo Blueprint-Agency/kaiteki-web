@@ -106,3 +106,31 @@
 6. **"Maintained rather than permanent"** became 需要维持，并非一劳永逸 / *perlu dijaga dengan rawatan susulan, bukan sesuatu yang bertahan selama-lamanya*, to keep 永久 / *kekal* out of the copy. Meaning unchanged.
 7. **"Specialists"** (who perform surgery) is 相关的专科医生 / *doktor pakar yang berkaitan*. This refers to surgeons elsewhere, never to Kaiteki's doctors.
 8. **FAQ 2** in both languages is phrased as an age question (几岁适合 / *umur berapa sesuai*) because that's how people search. The answer opens by saying there is no fixed age, so the EN stance is kept.
+
+## Re-sync 2026-10-14 (English rewrite)
+
+The English page was rewritten upstream and the sync tool blanked 35 strings per locale. One is search-relevant: `sections[0].heading` changed from "What is face lifting (as a concern)?" to "What is non-surgical face lifting?". All other keyword decisions above still stand unchanged.
+
+### Chinese (`/zh`, `hl=zh-CN&gl=my`)
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| sections[0].heading "What is non-surgical face lifting?" | 非手术提拉, 非手术提拉紧致, 非手术 脸部提拉, 提拉紧致是什么, 什么是提拉紧致, 脸部提拉 医美 | every non-surgical and "是什么" form came back empty; only `脸部提拉 医美` returns (itself) | DIRECT: **什么是非手术脸部提拉紧致？** (reuses the seoTitle term 脸部提拉紧致 for consistency) |
+
+### Malay (`/ms`, `hl=ms&gl=my`)
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| sections[0].heading "What is non-surgical face lifting?" | rawatan tegang muka tanpa pembedahan, tegang muka tanpa pembedahan, face lift tanpa pembedahan, apa itu rawatan tegang muka, apa itu face lift, rawatan tegang muka | `apa itu face lift` → *apa itu face lifting, facelift mobil, operasi face lifting, treatment face lift* (Indonesian-leaning: *mobil, operasi*); `rawatan tegang muka` returns itself; all *tanpa pembedahan* forms empty | DIRECT: **Apa itu rawatan tegang muka tanpa pembedahan?** (page's existing term kept; the Indonesian-skewed "face lifting" form not adopted) |
+
+**Tally:** zh 0 KEYWORD / 1 DIRECT; ms 0 KEYWORD / 1 DIRECT.
+
+**Body blanks translated directly:** 34 zh, 34 ms (leadAnswer, facts[2], sections[0].body[0], drivers intro, gravity body and outro, variant intro, locationBlock intro, both cards and note, treatments intro/HIFU/fillers/note, compare intro, firstVisit intro and steps 2 to 3, risks 4, costFactors intro, technologyIntro, FAQ answers 1 to 7 and 9 to 11). Most are shortened EN sentences, so the earlier translation was trimmed to match, which keeps terminology identical (拉皮手术, SMAS, 刺激胶原蛋白, 恢复期 / *pembedahan face lift, kekenduran, rawatan susulan, downtime*).
+
+**Reviewer notes**
+
+1. sections[0].body[0] "As a concern, face lifting means..." is 作为一种皮肤问题，提拉紧致指的是… / *Sebagai satu masalah, tegang dan angkat muka bermaksud…* (*angkat muka* stays paired with *tegang*, per docs/18 §7).
+2. "Sitting upright" (facts value) is 坐直检查 / *Duduk tegak*.
+3. "Advanced descent is a question for a surgeon" became 明显的下垂，需要咨询外科医生 / *kekenduran yang teruk perlu dibincangkan dengan pakar bedah*; *pakar bedah* refers to an outside surgeon, never Kaiteki's doctors.
+4. "Maintained, not permanent" keeps the earlier wording (并非一劳永逸 / *bukan sesuatu yang bertahan selama-lamanya*); no 永久 / *kekal*. The L-03r lint raises nothing on these files.
+5. "Discussion and plan" is 讨论与计划 / *Perbincangan dan pelan*, as on other concern pages.

@@ -1,0 +1,387 @@
+{
+  "slug": "aging",
+  "name": "Aging",
+  "group": "Skin",
+  "image": "https://cdn.kaiteki.my/concerns/aging/card.jpg",
+  "summary": "Firmness, texture and volume change at different rates. A doctor maps what's happening with your skin before building a plan.",
+  "leadAnswer": "Skin ageing is gradual change in firmness, texture, hydration and volume, driven by genetics and time (intrinsic ageing) and, to a large extent, by cumulative sun exposure and habits (extrinsic ageing). The four change at different rates, so plans are usually staged, starting with whichever change bothers you most.",
+  "treatments": [
+    "hifu",
+    "ultherapy",
+    "skin-booster",
+    "bio-stimulator",
+    "dermal-fillers",
+    "resurfacing-laser",
+    "fotona-4d"
+  ],
+  "reviewedBy": "dr-jacqueline-tan",
+  "lastReviewed": "2026-06-10",
+  "seoTitle": "Skin Ageing & Anti-Ageing Treatment in Malaysia | Kaiteki",
+  "seoDescription": "Skin ageing involves firmness, texture and volume changes over time. A consultation helps map an anti-ageing treatment plan. Book a free session with Kaiteki.",
+  "banner": {
+    "src": "https://cdn.kaiteki.my/concerns/aging/banner.jpg",
+    "sm": "https://cdn.kaiteki.my/concerns/aging/banner-mobile.jpg",
+    "alt": "Illustrative photograph: a mature woman with short greying hair and a light scarf, in profile, against a plain light grey background"
+  },
+  "facts": [
+    {
+      "value": "Four things at once",
+      "label": "Firmness, texture, hydration and volume change at different rates on the same face."
+    },
+    {
+      "value": "Most of it is sun",
+      "label": "A large share of visible skin ageing is cumulative UV exposure rather than years alone."
+    },
+    {
+      "value": "Staged, not all at once",
+      "label": "Plans address the leading change first and review before adding more."
+    }
+  ],
+  "jumpNav": [
+    {
+      "id": "causes",
+      "label": "What causes it"
+    },
+    {
+      "id": "which-type",
+      "label": "Where you are on it"
+    },
+    {
+      "id": "where",
+      "label": "Where it shows"
+    },
+    {
+      "id": "treatments",
+      "label": "Treatments"
+    },
+    {
+      "id": "risks",
+      "label": "Risks"
+    },
+    {
+      "id": "cost",
+      "label": "Cost"
+    },
+    {
+      "id": "faq",
+      "label": "FAQ"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is skin ageing?",
+      "body": [
+        "Skin ageing is the gradual loss of collagen, elasticity, hydration and volume. Part of it is intrinsic, set by genes and time; part is extrinsic, driven mainly by sun exposure and habits. The extrinsic part is the part anything can be done about."
+      ]
+    }
+  ],
+  "drivers": {
+    "heading": "What causes it",
+    "intro": "Several processes run in parallel, at different speeds:",
+    "items": [
+      {
+        "lead": "Collagen and elastin decline:",
+        "body": "production slows from the mid-twenties and the existing framework degrades, so skin becomes thinner, less firm and slower to spring back."
+      },
+      {
+        "lead": "Cumulative UV exposure:",
+        "body": "the single largest external contributor, and the one most within your control. Compare the skin on your inner arm with the back of your hand: the difference is largely sun rather than years."
+      },
+      {
+        "lead": "Volume loss and redistribution:",
+        "body": "fat pads in the mid-face shrink and descend, and bone itself remodels over decades. Much of what reads as sagging is actually deflation, and it changes proportion as well as firmness."
+      },
+      {
+        "lead": "Reduced hydration and barrier function:",
+        "body": "skin holds less water and produces less oil over time, which makes it drier, duller and more easily irritated, and makes fine lines read more sharply than they otherwise would."
+      },
+      {
+        "lead": "Lifestyle and health:",
+        "body": "smoking, heavy alcohol use, disturbed sleep, a diet high in sugar and chronic stress all accelerate the same processes."
+      }
+    ]
+  },
+  "variant": {
+    "kind": "tabs",
+    "heading": "Where you are on it",
+    "intro": "These stages overlap, but they change what a sensible plan looks like.",
+    "tabs": [
+      {
+        "label": "Early",
+        "sub": "Quality and prevention",
+        "title": "Early change",
+        "body": "The face still holds its shape. What has changed is skin quality: a little less bounce, fine lines appearing on movement, tone less even, and skin that looks tired earlier in the day than it used to. Volume and firmness are broadly intact.",
+        "routing": "commonly assessed for skin-quality treatment and a sensible daily routine rather than anything structural."
+      },
+      {
+        "label": "Established",
+        "sub": "Lines at rest, early laxity",
+        "title": "Established change",
+        "body": "Lines are now visible when the face is relaxed, the mid-face has begun to flatten, and the jawline is a little less crisp than it was. Several things are changing at once, which is what makes this stage the one where sequencing matters most.",
+        "routing": "assessed as a sequence across skin quality, volume and firmness, with review points between stages."
+      },
+      {
+        "label": "Advanced",
+        "sub": "Laxity, folds and texture",
+        "title": "Advanced change",
+        "body": "Laxity along the jawline and neck, deeper folds, significant volume loss and accumulated sun damage in the skin surface. Non-surgical treatment still has a role here, but it is important to be clear about its reach.",
+        "routing": "assessed individually, with a frank discussion about what non-surgical treatment can and cannot reach."
+      }
+    ]
+  },
+  "locationBlock": {
+    "heading": "Where ageing shows first",
+    "intro": "Different areas change at different rates, largely according to how thin the skin is, how much it moves and how much sun it has taken.",
+    "cards": [
+      {
+        "title": "Around the eyes",
+        "body": "The thinnest skin on the face, in near-constant movement. Usually the first area to show fine lines, crepiness and hollowing, often a decade before anywhere else."
+      },
+      {
+        "title": "Mid-face and cheeks",
+        "body": "Where volume loss shows most clearly, and what deepens the folds below."
+      },
+      {
+        "title": "Around the mouth",
+        "body": "Fine vertical lines on the lip and folds running from the mouth corners. Movement, sun and volume change all contribute, and smoking accelerates all three."
+      },
+      {
+        "title": "Jawline and lower face",
+        "body": "Where descent becomes visible: the jaw stops reading as one clean line and the neck angle softens."
+      },
+      {
+        "title": "Neck, chest and hands",
+        "body": "Thin skin, few oil glands and decades of missed sunscreen. Often noticeably older than the face, and treated more conservatively because they heal more slowly."
+      }
+    ],
+    "note": {
+      "title": "Not ageing?",
+      "body": "A new or changing mark, a patch that is scaly, crusting or bleeding, or a lesion that will not heal is not a sign of ageing and should be examined promptly. Years of sun exposure make that check more important, not less."
+    }
+  },
+  "seeDoctor": {
+    "intro": "There is no age at which an assessment becomes necessary. It is worth having one if:",
+    "triggers": [
+      "Change seems to have accelerated over a short period, which is worth examining on its own.",
+      "You are considering treatment and want a staged, conservative plan rather than a package."
+    ]
+  },
+  "ctaMid": {
+    "heading": "Not sure what's actually changing?",
+    "body": "Send us a photo on WhatsApp and a doctor can map it with you."
+  },
+  "treatmentsIntro": "Plans are usually sequenced rather than chosen one from a list:",
+  "treatmentWhy": {
+    "skin-booster": {
+      "why": "For hydration and skin quality overall",
+      "body": "Injectable hydration distributed across an area to improve how the skin holds water and reflects light. Considered where dullness, dryness and fine crepiness are what you are noticing rather than shape."
+    },
+    "resurfacing-laser": {
+      "why": "For sun damage, texture and tone together",
+      "body": "A fractional laser used where accumulated UV damage shows as roughness, uneven tone and etched lines at the same time."
+    },
+    "fotona-4d": {
+      "why": "For a layered approach across several depths",
+      "body": "A laser protocol working in several passes at different depths, including one delivered from inside the mouth. Considered where firmness and surface quality both need attention in the same course."
+    },
+    "hifu": {
+      "why": "For firmness in the lower third of the face",
+      "body": "Focused ultrasound delivered beneath the skin to prompt collagen change at depth. Considered where the jawline and lower face are leading the picture rather than skin surface or volume."
+    },
+    "ultherapy": {
+      "why": "For a targeted lift where laxity leads the picture",
+      "body": "The same principle with ultrasound imaging so the doctor can see the tissue layers while treating. Relevant where precision at depth matters more than breadth of coverage."
+    },
+    "bio-stimulator": {
+      "why": "For rebuilding structure gradually rather than filling",
+      "body": "An injectable that prompts your own collagen production over months instead of adding volume immediately."
+    },
+    "dermal-fillers": {
+      "why": "For restoring volume where the face has flattened",
+      "body": "Placed to rebuild support in a deflated mid-face rather than to fill individual lines. Conservative, staged placement is what separates a rested look from an overfilled one."
+    }
+  },
+  "treatmentsNote": "Almost nobody needs all of these, and treating everything at once removes the information needed to judge what actually helped. A sensible plan addresses the change that bothers you most, reviews it, and stops when you are satisfied.",
+  "compare": {
+    "intro": "A general guide. Most faces show several changes; collagen-based plans include review points.",
+    "columns": [
+      "What you have",
+      "Commonly considered",
+      "Typical course",
+      "Downtime"
+    ],
+    "rows": [
+      [
+        "Dullness and dehydration",
+        "Skin boosters",
+        "Short course, then maintenance",
+        "1–2 days swelling"
+      ],
+      [
+        "Sun damage, texture and uneven tone",
+        "Resurfacing laser",
+        "Assessed individually",
+        "5–7 days"
+      ],
+      [
+        "Fine lines with good firmness",
+        "Skin-quality treatment",
+        "Course, spaced",
+        "Minimal"
+      ],
+      [
+        "Flattened mid-face",
+        "Volume support or bio-stimulator",
+        "Staged over sessions",
+        "1–2 days swelling"
+      ],
+      [
+        "Softening jawline",
+        "Focused ultrasound",
+        "Single session, reviewed",
+        "None to minimal"
+      ],
+      [
+        "Firmness and surface quality together",
+        "Laser protocol across depths",
+        "Course, spaced",
+        "1–3 days redness"
+      ]
+    ]
+  },
+  "results": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/aging/before-after-01.jpg",
+      "nativeWidth": 564,
+      "ratio": "1.71/1",
+      "caption": "Skin tone and texture, before and after a course of treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/aging/before-after-02.jpg",
+      "nativeWidth": 1410,
+      "ratio": "1/1",
+      "caption": "Overall skin quality, before and after a course of treatment at Kaiteki"
+    }
+  ],
+  "firstVisit": {
+    "intro": "Skin quality, tone, volume and firmness are assessed separately.",
+    "steps": [
+      {
+        "title": "History",
+        "body": "What you have noticed and over what period, your sun habits, whether you smoke, your current skincare, any previous treatments, and your general health and medication."
+      },
+      {
+        "title": "Examination",
+        "body": "Sitting upright, sometimes under magnification."
+      },
+      {
+        "title": "Discussion and plan",
+        "body": "Which change is leading, what each option addresses and will not address, downtime and risks, and a conservative first step, with no obligation to proceed."
+      }
+    ],
+    "outro": "Bring photographs of yourself from five or ten years ago: gradual change is hard to judge from a mirror."
+  },
+  "visitImages": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/aging/procedure-02.jpg",
+      "caption": "A laser session for skin ageing in progress. Settings are matched to your skin type, and gentler settings are often chosen for deeper skin tones."
+    }
+  ],
+  "risks": {
+    "items": [
+      {
+        "lead": "Common and usually temporary",
+        "body": "Redness, swelling, bruising, dryness, flaking and tenderness for a few days depending on the treatment. Laser-based treatment leaves the skin sensitive and requires careful aftercare while it recovers."
+      },
+      {
+        "lead": "Uncommon but important",
+        "body": "Injectables carry a rare but serious risk of vascular occlusion, and collagen-stimulating products can occasionally form nodules under the skin. Energy-based treatment can, rarely, cause a burn or a small area of fat loss."
+      },
+      {
+        "lead": "Pigment change and Malaysian skin",
+        "body": "Medium and deeper skin tones carry a higher chance of post-inflammatory hyperpigmentation after laser or energy-based treatment. Settings are chosen conservatively, sessions are spaced further apart, and daily sun protection is a condition of the plan rather than a suggestion."
+      },
+      {
+        "lead": "What treatment cannot do",
+        "body": "Nothing here stops or reverses ageing. Treatment addresses some of the visible change, gradually and partially, and the process continues underneath it. No device removes excess skin, and results are maintained rather than permanent."
+      }
+    ],
+    "disclose": "Tell your doctor if you are pregnant or breastfeeding, take blood thinners, have an autoimmune or connective-tissue condition, use retinoids or acids, have a history of cold sores or keloid scarring, have had injectables, threads or facial surgery before, or have tanned recently."
+  },
+  "costFactors": {
+    "intro": "Pricing is set after assessment. It depends on:",
+    "factors": [
+      "Which change is being treated, since skin quality, tone, volume and firmness are separate treatments.",
+      "How many areas: face only, or including the neck, chest and hands.",
+      "The device or product chosen, and how much of it your assessment calls for.",
+      "How many sessions and over what period, which is set after assessment and adjusted at review.",
+      "Whether the plan is staged across several treatments, which is common at this concern."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Can skin ageing be prevented?",
+      "a": "Not the intrinsic part, which is driven by genetics and time and happens to everyone. The extrinsic part is a different matter: cumulative UV exposure accounts for a large share of what people describe as ageing skin, and daily broad-spectrum sunscreen is by a distance the most evidenced thing you can do about it. Not smoking, sleeping properly and a sensible diet all support the same outcome without stopping the underlying process."
+    },
+    {
+      "q": "What actually changes as skin ages?",
+      "a": "Four things, at different speeds. Collagen and elastin decline, so firmness and recoil reduce. Volume is lost and redistributed as fat pads shrink and descend. Hydration and barrier function fall, making skin drier and duller. And accumulated sun damage shows as uneven tone and rough texture. Two people the same age can be dominated by entirely different ones."
+    },
+    {
+      "q": "At what age should I start treatment?",
+      "a": "There is no medically correct age. What is true is that skin quality and sun protection matter at every age, and that a change addressed early is generally simpler than one addressed late. Plenty of people are assessed, told that their routine is doing the job, and leave without booking anything."
+    },
+    {
+      "q": "Does skincare make a real difference?",
+      "a": "For skin quality, yes: sunscreen, well-formulated retinoids and antioxidants have reasonable evidence behind them and support any in-clinic plan. What skincare cannot do is restore lost volume, lift descended tissue or rebuild collagen at depth, so expectations should match the mechanism."
+    },
+    {
+      "q": "How soon will I see a difference?",
+      "a": "It depends on the treatment. Volume support is visible immediately, though swelling makes the first days unreliable. Skin boosters show over a few weeks. Collagen-stimulating and energy-based treatments build gradually over several months, and are often more noticeable to other people than to you."
+    },
+    {
+      "q": "Will treatment make me look unnatural?",
+      "a": "That risk comes almost entirely from doing too much at once, particularly with volume. Conservative, staged treatment with a review point between stages is how it is avoided, along with a doctor willing to say that a request is not proportionate. It is entirely reasonable to state at the consultation that you would rather look rested than different."
+    },
+    {
+      "q": "How long do the effects last?",
+      "a": "None of it is permanent, and ageing continues underneath whatever is done. Volume support is gradually broken down by the body over a period of months to years depending on the product and placement. Collagen-based change builds and then recedes. Most people who are pleased with a result return periodically."
+    },
+    {
+      "q": "Is laser treatment safe for Asian skin?",
+      "a": "Yes, when the device and settings are chosen by a doctor experienced with your skin type. The specific consideration in medium and deeper tones is post-inflammatory hyperpigmentation, where the skin responds to treatment by producing extra pigment. It is managed by choosing suitable wavelengths, using conservative settings, spacing sessions further apart and being strict about sun protection afterwards."
+    },
+    {
+      "q": "Should I treat my neck and hands as well?",
+      "a": "They are worth assessing, and they are often noticeably more sun-damaged than the face because they are protected least. They also behave differently: thinner skin, fewer oil glands and slower recovery mean treatment is more conservative and expectations more modest. A face treated in isolation while the neck and hands are left can end up looking mismatched."
+    },
+    {
+      "q": "What is the difference between intrinsic and extrinsic ageing?",
+      "a": "Intrinsic ageing is what your genes and the passage of time do regardless of how you live: gradual collagen decline, thinning skin, volume change. Extrinsic ageing is what environment and habits add on top, and it is dominated by UV exposure, with smoking, pollution and diet contributing. The useful part of the distinction is that the second is largely within your control, and it is the larger share of what most people see."
+    },
+    {
+      "q": "Do I need to do all of this at once?",
+      "a": "No, and it is usually a poor idea. Treating everything simultaneously costs more, increases the chance of an overdone look, and removes the information you need to judge what actually worked. Addressing the one thing that bothers you most, reviewing it, then deciding whether to continue is both cheaper and more likely to leave you satisfied."
+    },
+    {
+      "q": "Is there a point where non-surgical treatment isn't enough?",
+      "a": "Yes, and an honest consultation will say so. Where laxity is advanced and skin has genuinely descended, no device removes excess skin, and a course of treatment sold into that situation delivers disappointment. Our doctors will tell you when that is the case and, where appropriate, suggest a surgical opinion."
+    }
+  ],
+  "relatedConcerns": [
+    {
+      "slug": "fine-lines-wrinkles",
+      "reason": "Lines are usually the first change people notice and name."
+    },
+    {
+      "slug": "face-lifting",
+      "reason": "Firmness and laxity are assessed in more depth there."
+    },
+    {
+      "slug": "pigmentation",
+      "reason": "Sun damage drives tone change alongside everything else."
+    }
+  ],
+  "ctaHeading": "Map what's actually changing",
+  "ctaAssesses": "your skin"
+}

@@ -14,11 +14,14 @@ import type { NonDefaultLocale } from "@/lib/i18n";
 
 const pathOf = (slug: string) => `/concerns/${slug}`;
 
-/** Slugs with a translation that is live in this locale. */
+/**
+ * Every slug with a translation file, live or not. Unsigned ones prerender as
+ * a static 404 (the page returns notFound()). Filtering them out here instead
+ * leaves production with an empty param list, and with dynamicParams = false
+ * Next answers every slug with a 500 (NoFallbackError) rather than a 404.
+ */
 export function concernLocaleParams(locale: NonDefaultLocale) {
-  return translatedConcernSlugs(locale)
-    .filter((slug) => isLive(locale, pathOf(slug)))
-    .map((slug) => ({ slug }));
+  return translatedConcernSlugs(locale).map((slug) => ({ slug }));
 }
 
 export function concernLocaleMeta(locale: NonDefaultLocale, slug: string): Metadata {

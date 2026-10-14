@@ -76,3 +76,29 @@ Same as the pilot (`acne.md`): Google Autocomplete as the volume proxy (`client=
 5. **Sylfirm X manufacturer positioning** is kept as the manufacturer's indication only (制造商…开发 / *dibangunkan oleh pengeluar*), as in EN.
 6. **"Rebound"** is 反弹 (zh) and *melantun semula* (ms). Confirm *melantun semula* reads naturally to Malay patients, or prefer *menjadi lebih gelap semula*.
 7. **ctaAssesses** is 你的色斑 / *pigmentasi anda* (EN "your pigmentation").
+
+## Re-sync 2026-10-14 (English rewrite)
+
+The English page was rewritten and the sync tool blanked 24 strings per locale. Every blank was filled; nothing else was changed.
+
+### Chinese (`/zh`)
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| (none) | none run | No blank fell in the search-relevant scope: seoTitle, seoDescription, name, all headings, tab labels/titles, FAQ questions and CTA headings were unchanged and kept. The blanks are intros, step text and FAQ answers. `firstVisit.steps[2].title` "Discussion and plan" is a step label, not a heading or query. | n/a |
+
+### Malay (`/ms`)
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| (none) | none run | Same as Chinese: no search-relevant blank. | n/a |
+
+**Body blanks translated directly:** 24 zh, 24 ms (facts[2] value and label, sections[0].body[1], drivers/variant/seeDoctor/costFactors intros, locationBlock.note.body, facial-treatments body, treatmentsNote, firstVisit intro and steps, visit image caption, risks 0 and 1, technologyIntro, FAQ answers 1, 2, 3, 5, 6, 7). Where the new English is a shortened form of the old sentence, the old approved wording was kept and the dropped clauses removed, so no claim was added.
+
+**Reviewer notes**
+
+1. **"Discussion and plan"** = 讨论与计划 / *Perbincangan dan pelan* (was 讨论 / *Perbincangan*).
+2. **"with no obligation to proceed"** = 你没有义务一定要进行疗程 / *tanpa sebarang kewajipan untuk meneruskan*.
+3. **FAQ 5 answer:** "gentle skincare your doctor has cleared" = 医生认可的温和护肤品 / *penjagaan kulit lembut yang telah dibenarkan oleh doktor anda*.
+4. **FAQ 3 answer** keeps *tompok matahari* for sun spots in Malay, matching the rest of this page (the pigmentation page uses English "sun spot").
+5. **"Pricing"** = 价钱 / *Harga* (docs/18: MY Chinese writes 价钱).

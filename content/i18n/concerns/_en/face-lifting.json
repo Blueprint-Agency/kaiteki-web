@@ -1,0 +1,463 @@
+{
+  "slug": "face-lifting",
+  "name": "Face Lifting",
+  "group": "Face",
+  "image": "https://cdn.kaiteki.my/concerns/face-lifting/card.jpg",
+  "summary": "Sagging along the jawline, neck or mid-face can be addressed with non-surgical lifting options. A doctor assesses the degree of laxity first.",
+  "leadAnswer": "Sagging comes from three layers: the skin loosening, the face losing volume, and the deeper tissue under the skin descending. Non-surgical options such as focused ultrasound, laser protocols and collagen-stimulating injectables work gradually, in degrees of firmness rather than lift. They do not remove excess skin, and advanced descent is a question for a surgeon.",
+  "treatments": [
+    "hifu",
+    "ultherapy",
+    "fotona-4d",
+    "microwave-contouring",
+    "bio-stimulator",
+    "dermal-fillers"
+  ],
+  "reviewedBy": "dr-hong-peiyi",
+  "lastReviewed": "2026-06-12",
+  "seoTitle": "Non-Surgical Face Lifting Treatment in Malaysia | Kaiteki",
+  "seoDescription": "Firmness and skin laxity are assessed before any non-surgical face lifting treatment is discussed. Book a free consultation to find what may suit you.",
+  "banner": {
+    "src": "https://cdn.kaiteki.my/concerns/face-lifting/hero.jpg",
+    "sm": "https://cdn.kaiteki.my/concerns/face-lifting/hero-mobile.jpg",
+    "alt": "Illustrative photograph: a person resting a hand along their jawline in front of a mirror"
+  },
+  "facts": [
+    {
+      "value": "Not a surgical face-lift",
+      "label": "These are energy-based and injectable options, a different category from surgery."
+    },
+    {
+      "value": "Laxity has layers",
+      "label": "Skin, fat and the layer beneath them each change, and each is treated differently."
+    },
+    {
+      "value": "Sitting upright",
+      "label": "Laxity is examined upright, because it looks different lying down."
+    }
+  ],
+  "jumpNav": [
+    {
+      "id": "causes",
+      "label": "What influences it"
+    },
+    {
+      "id": "which-type",
+      "label": "Which layer is it?"
+    },
+    {
+      "id": "where",
+      "label": "Surgical or not"
+    },
+    {
+      "id": "treatments",
+      "label": "Treatments"
+    },
+    {
+      "id": "risks",
+      "label": "Risks"
+    },
+    {
+      "id": "cost",
+      "label": "Cost"
+    },
+    {
+      "id": "faq",
+      "label": "FAQ"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is non-surgical face lifting?",
+      "body": [
+        "As a concern, face lifting means wanting firmer skin that sits higher, mainly along the cheeks, jawline and neck. The options discussed here are non-surgical, energy-based and injectable; a surgical face-lift is a separate procedure carried out by a surgeon."
+      ]
+    }
+  ],
+  "drivers": {
+    "heading": "What influences facial firmness",
+    "intro": "Several of these at once, and which one leads decides the treatment:",
+    "items": [
+      {
+        "lead": "Collagen and elastin decline:",
+        "body": "the scaffolding that holds skin taut is renewed more slowly from the mid-twenties onward, so the skin recovers its shape less readily after it is stretched."
+      },
+      {
+        "lead": "Skin laxity:",
+        "body": "as that scaffolding thins, skin has more surface area than the structure beneath it needs, and the excess settles downward along the jaw and neck."
+      },
+      {
+        "lead": "Changes in muscle and the layer beneath:",
+        "body": "the sheet of muscle and connective tissue under the skin, the SMAS, loosens with age, and the ligaments that anchor it to bone stretch. Much of what reads as sagging happens at this depth rather than at the surface."
+      },
+      {
+        "lead": "Gravity and time:",
+        "body": "constant downward load on tissue that resists it less each year, so change shows first along the jawline and under the chin."
+      }
+    ],
+    "outro": "Sun exposure, smoking and rapid weight loss accelerate all of it."
+  },
+  "variant": {
+    "kind": "tabs",
+    "heading": "Which layer is it?",
+    "diagram": "face-layers",
+    "intro": "Non-surgical lifting is three different conversations, and most faces involve more than one.",
+    "tabs": [
+      {
+        "focus": "skin",
+        "label": "Skin",
+        "sub": "Surface laxity and texture",
+        "title": "Skin-level laxity",
+        "body": "The skin itself has thinned and lost elasticity. Pinch it gently on the cheek and it returns to place slowly. Surface texture, fine crepe lines and a general looseness dominate, while the underlying shape of the face still looks broadly intact.",
+        "items": [
+          {
+            "lead": "What it is not:",
+            "body": "not a shape problem. Adding volume to skin-level laxity usually makes a face look fuller rather than firmer."
+          }
+        ],
+        "routing": "commonly assessed for energy-based tightening or collagen-stimulating treatments aimed at skin quality."
+      },
+      {
+        "focus": "volume",
+        "label": "Volume",
+        "sub": "Flattening and hollowing",
+        "title": "Volume-related change",
+        "body": "The face has deflated rather than descended. Cheeks flatten, the temples and under-eye area hollow, and the folds either side of the mouth deepen because the support above them has gone, not because the skin below has slipped.",
+        "items": [
+          {
+            "lead": "The tell:",
+            "body": "lying down, or lifting the cheek gently with a fingertip, restores much of the shape."
+          }
+        ],
+        "routing": "assessed for volume support or collagen-stimulating injectables, placed to rebuild structure rather than to fill a line."
+      },
+      {
+        "focus": "structure",
+        "label": "Deeper structure",
+        "sub": "Jowls, jawline and neck",
+        "title": "Structural descent",
+        "body": "The layer beneath the skin has loosened, and tissue has genuinely moved downward. Jowls break the jawline, the neck angle softens, and pulling the skin taut with a hand makes an obvious difference to the outline of the face.",
+        "routing": "assessed for deeper energy-based treatment, with a frank discussion about where non-surgical options stop."
+      }
+    ]
+  },
+  "locationBlock": {
+    "heading": "Non-surgical versus surgical",
+    "intro": "Different categories of intervention, not two strengths of one.",
+    "cards": [
+      {
+        "title": "What non-surgical options do",
+        "body": "Heat or stimulate tissue to build collagen, or support structure with injectables. Change is gradual and measured in firmness, not centimetres."
+      },
+      {
+        "title": "What surgery does",
+        "body": "Repositions and removes tissue under anaesthetic. Reaches descent no device does, with recovery, scars and surgical risk."
+      },
+      {
+        "title": "Downtime and commitment",
+        "body": "Non-surgical treatments are typically same-day, with little or no time away from work. Surgery involves weeks of recovery. That difference is often the deciding factor rather than the result itself."
+      }
+    ],
+    "note": {
+      "title": "When we will say so",
+      "body": "If the laxity is beyond what a device can address, the doctor will say so. A referral for a surgical opinion is a legitimate outcome."
+    }
+  },
+  "seeDoctor": {
+    "heading": "When it is worth an assessment",
+    "intro": "There is no age or threshold at which lifting treatment becomes appropriate. It is worth an assessment if:",
+    "triggers": [
+      "You are noticing the jawline losing definition, or jowls forming either side of the chin.",
+      "Skin along the neck feels looser, or the angle under the jaw has softened.",
+      "You are considering treatment and want to know whether non-surgical options can realistically address what you have.",
+      "You have been recommended a treatment elsewhere and want a second opinion on whether it fits the problem."
+    ]
+  },
+  "ctaMid": {
+    "heading": "Not sure if it's skin, volume or structure?",
+    "body": "Send us a photo on WhatsApp and a doctor can tell you which layer is driving what you're seeing, and whether a non-surgical option can reach it."
+  },
+  "treatmentsIntro": "Which fits depends on the layer responsible:",
+  "treatmentWhy": {
+    "hifu": {
+      "why": "For laxity along the jawline and neck",
+      "body": "Focused ultrasound delivered to set depths beneath the skin, including the layer surgeons address. Considered where mild to moderate descent is the concern rather than skin quality."
+    },
+    "ultherapy": {
+      "why": "For lifting with ultrasound imaging to guide it",
+      "body": "The same principle as HIFU, with real-time imaging so the doctor can see the tissue layers as energy is delivered. Relevant where precision at depth matters, or where anatomy makes blind delivery less appropriate."
+    },
+    "fotona-4d": {
+      "why": "For laxity treated from inside the mouth outwards",
+      "body": "A laser protocol that works in several passes, one of them delivered through the inside of the cheek. Considered where firmness and skin quality are both part of the picture rather than descent alone."
+    },
+    "microwave-contouring": {
+      "why": "For fullness under the chin that blurs the jawline",
+      "body": "Targets fat and skin firmness in the submental area. Considered where what obscures the jawline is tissue volume under the chin rather than laxity along it."
+    },
+    "bio-stimulator": {
+      "why": "For gradual collagen rebuilding over months",
+      "body": "An injectable that prompts the skin to produce its own collagen rather than adding volume directly. Change is deliberately slow, which some people prefer and others find frustrating."
+    },
+    "dermal-fillers": {
+      "why": "For support where volume loss is doing the sagging",
+      "body": "Placed to rebuild structure in a flattened mid-face rather than to fill a line. Most relevant where the face has deflated rather than descended."
+    }
+  },
+  "treatmentsNote": "Combinations are common, because most faces involve more than one layer.",
+  "compare": {
+    "intro": "A general guide. Most plans combine approaches, and collagen-based plans include review points.",
+    "columns": [
+      "What you have",
+      "Commonly considered",
+      "Typical course",
+      "Downtime"
+    ],
+    "rows": [
+      [
+        "Skin looseness and crepe texture",
+        "Collagen-stimulating treatment",
+        "Course, then maintenance",
+        "Minimal"
+      ],
+      [
+        "Mild jawline softening",
+        "Focused ultrasound",
+        "Single session, reviewed",
+        "None to minimal"
+      ],
+      [
+        "Jowls with a clear jawline break",
+        "Focused ultrasound, assessed individually",
+        "Assessed individually",
+        "None to minimal"
+      ],
+      [
+        "Flattened mid-face",
+        "Volume support or bio-stimulator",
+        "Staged over sessions",
+        "1–2 days swelling"
+      ],
+      [
+        "Fullness under the chin",
+        "Microwave contouring",
+        "Assessed individually",
+        "Several days tenderness"
+      ],
+      [
+        "Firmness plus skin quality",
+        "Laser protocol across depths",
+        "Course, spaced",
+        "1–3 days redness"
+      ]
+    ]
+  },
+  "results": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/face-lifting/before-after-01.jpg",
+      "nativeWidth": 1080,
+      "ratio": "1/1",
+      "caption": "Facial firmness, before and after a course of treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/face-lifting/before-after-02.jpg",
+      "nativeWidth": 1080,
+      "ratio": "1/1",
+      "caption": "Facial firmness, before and after a course of treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/face-lifting/before-after-03.jpg",
+      "nativeWidth": 1080,
+      "ratio": "1/1",
+      "caption": "Jawline definition, before and after a course of treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/face-lifting/before-after-04.jpg",
+      "nativeWidth": 1080,
+      "ratio": "1/1",
+      "caption": "Jawline definition, before and after a course of treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/face-lifting/before-after-05.jpg",
+      "nativeWidth": 1080,
+      "ratio": "1/1",
+      "caption": "Jawline definition, before and after a course of treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/face-lifting/before-after-06.jpg",
+      "nativeWidth": 1080,
+      "ratio": "1/1",
+      "caption": "Lower-face firmness, before and after a course of treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/face-lifting/before-after-07.jpg",
+      "nativeWidth": 1080,
+      "ratio": "1/1",
+      "caption": "Lower-face firmness, before and after a course of treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/face-lifting/before-after-08.jpg",
+      "nativeWidth": 1080,
+      "ratio": "1/1",
+      "caption": "Mid-face and cheek support, before and after a course of treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/face-lifting/before-after-09.jpg",
+      "nativeWidth": 1080,
+      "ratio": "1/1",
+      "caption": "Mid-face and cheek support, before and after a course of treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/face-lifting/before-after-10.jpg",
+      "nativeWidth": 1080,
+      "ratio": "1/1",
+      "caption": "Facial firmness, before and after a course of treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/face-lifting/before-after-12.jpg",
+      "nativeWidth": 1080,
+      "ratio": "1/1",
+      "caption": "Facial firmness, before and after a course of treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/face-lifting/before-after-13.jpg",
+      "nativeWidth": 1080,
+      "ratio": "1/1",
+      "caption": "Facial firmness, before and after a course of treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/face-lifting/before-after-16.jpg",
+      "nativeWidth": 600,
+      "ratio": "1/1",
+      "caption": "Facial firmness, before and after a course of treatment at Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/face-lifting/before-after-17.jpg",
+      "nativeWidth": 1415,
+      "ratio": "1/1",
+      "caption": "Jawline and neck contour, before and after a course of treatment at Kaiteki"
+    }
+  ],
+  "firstVisit": {
+    "intro": "Skin quality, volume and descent are assessed separately, sitting upright.",
+    "steps": [
+      {
+        "title": "History",
+        "body": "What you have noticed and over what period, any previous treatments or surgery, your medical history, and any medication or injectables you have had."
+      },
+      {
+        "title": "Examination",
+        "body": "Laxity looks different lying down, so the examination is done upright."
+      },
+      {
+        "title": "Discussion and plan",
+        "body": "Which layer is leading, what each option can and cannot reach, downtime and risks, and whether a surgical opinion would serve you better, with no obligation to proceed."
+      }
+    ],
+    "outro": "Bring photographs of yourself from five or ten years ago if you have them. They are far more useful than a description for judging what has actually changed and how quickly."
+  },
+  "visitImages": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/face-lifting/procedure-02.png",
+      "caption": "Microfocused ultrasound with on-screen imaging, which lets the doctor see the layers beneath the skin before energy is delivered."
+    }
+  ],
+  "risks": {
+    "items": [
+      {
+        "lead": "Common and usually temporary",
+        "body": "Redness, swelling, tenderness and a tingling or numb sensation over the treated area for a few days. Bruising is common with injectables. Less common effects include prolonged swelling, lumps under the skin, or a temporary change in sensation."
+      },
+      {
+        "lead": "Uncommon but important",
+        "body": "Energy-based lifting can, rarely, cause a temporary weakness in a facial nerve branch or a small area of fat loss. Injectables carry a rare but serious risk of vascular occlusion. Both are reasons treatment should be carried out by a doctor who knows the anatomy at depth."
+      },
+      {
+        "lead": "Pigment change and Malaysian skin",
+        "body": "Where laser or energy is used, medium and deeper skin tones carry a higher chance of post-inflammatory pigment change. Settings are chosen conservatively for this reason, and sun protection afterwards is part of the plan."
+      },
+      {
+        "lead": "What treatment cannot do",
+        "body": "No non-surgical treatment removes excess skin or stops ageing, and advanced descent is beyond these options. Collagen-based change builds over months and is maintained, not permanent."
+      }
+    ],
+    "disclose": "Tell your doctor if you are pregnant or breastfeeding, take blood thinners, have an autoimmune or connective-tissue condition, have a pacemaker or metal implants in the treatment area, have had facial surgery, threads or injectables before, or have a history of cold sores or keloid scarring."
+  },
+  "costFactors": {
+    "intro": "Pricing is set after assessment. It depends on:",
+    "factors": [
+      "Which layer is being treated: skin quality, volume support and deeper lifting are different treatments with different structures.",
+      "The area: lower face and jawline only, full face, or including the neck.",
+      "The device or product chosen, and how much of it your assessment calls for.",
+      "How many sessions, and over what period, which is set after assessment.",
+      "Whether more than one approach is combined, which is common where several layers are involved."
+    ]
+  },
+  "technologyIntro": "Lifting treatments differ mainly in the depth they reach and how they deliver energy there.",
+  "faqs": [
+    {
+      "q": "What is the difference between non-surgical and surgical face lifting?",
+      "a": "A surgical face-lift repositions and removes tissue directly under anaesthetic, performed by a qualified surgeon, and it reaches a degree of descent no device can. Non-surgical options work by stimulating the skin to build collagen, or by supporting structure with injectables, and the change is gradual and partial. They are different categories rather than two strengths of the same thing."
+    },
+    {
+      "q": "When should I consider a lifting treatment?",
+      "a": "There is no fixed age. What matters is what is actually changing: skin quality, volume, or the position of deeper tissue. Many people are assessed in their thirties and forties for skin-level laxity and volume, and treated more conservatively than they expected. Others arrive with descent that has passed what a device can reach."
+    },
+    {
+      "q": "How long does the effect last?",
+      "a": "It varies with the treatment, your skin and how quickly you age, and no one can put a reliable number on it in advance. Collagen-based treatments build change over several months and then that change gradually recedes as ageing continues, so they are typically repeated periodically rather than done once. Volume support behaves differently again."
+    },
+    {
+      "q": "Is it painful?",
+      "a": "Most people describe energy-based lifting as uncomfortable rather than painful, with a deep warm or prickling sensation that comes in pulses. Treatment at deeper settings is felt more. Numbing cream, cooling and, where appropriate, oral pain relief are used. Injectables are generally more comfortable, often with local anaesthetic in the product."
+    },
+    {
+      "q": "How soon will I see a difference?",
+      "a": "With collagen-stimulating treatments, gradually. A degree of immediate tightening is sometimes noticeable from tissue contraction, but the meaningful change comes as new collagen forms over the following months, and it is often more obvious to other people than to you. Volume support shows immediately, though swelling in the first days makes early judgement unreliable."
+    },
+    {
+      "q": "Will it make my face look done or unnatural?",
+      "a": "Energy-based lifting does not add anything to the face, so it does not carry that risk in the way injectables can. With volume support, an overdone look almost always comes from too much product placed to fill lines rather than to rebuild structure. Conservative, staged treatment with a review point between sessions is how that is avoided."
+    },
+    {
+      "q": "Is there any downtime?",
+      "a": "For most energy-based lifting, little to none: some redness, warmth and tenderness for a day or two, and you can generally go back to work the same day. Injectables can leave bruising and swelling for several days, which is worth planning around if you have an event. Laser-based protocols can leave redness for longer."
+    },
+    {
+      "q": "Can I have this if I have had fillers or threads before?",
+      "a": "Usually yes, but the doctor needs to know exactly what you have had and when, because it changes the assessment and sometimes the technique. Energy delivered over existing product may affect it, and previous threads alter the tissue planes. Bring records if you have them, including product names and dates. Withholding this makes the treatment less safe, not more discreet."
+    },
+    {
+      "q": "Can non-surgical lifting treat the neck?",
+      "a": "The neck is commonly assessed alongside the lower face. It also behaves differently: skin there is thinner, has less support beneath it and recovers more slowly, so treatment is typically more conservative. Where the concern is loose skin rather than firmness, expectations should be modest, and a surgical opinion is sometimes the more honest recommendation."
+    },
+    {
+      "q": "Do I need several sessions or just one?",
+      "a": "That depends on the treatment. Some focused-ultrasound protocols are planned as a single session with a review months later, while collagen-stimulating injectables and laser protocols are typically staged across several visits weeks apart. What is common to all of them is that the plan is set after assessment and adjusted at review."
+    },
+    {
+      "q": "Will I need to keep having treatment?",
+      "a": "If you want to hold the change, generally yes. These treatments work with your own collagen, and ageing continues around them. Most people who are pleased with the result return periodically rather than once."
+    },
+    {
+      "q": "What if a doctor tells me nothing here will work?",
+      "a": "That is a useful consultation, not a wasted one. Where descent is advanced, no non-surgical device reaches what surgery does, and a course of treatment sold into that situation costs money and delivers disappointment. Our doctors will say so and, where appropriate, suggest a surgical opinion. You are also free to have the assessment and decide to do nothing at all."
+    }
+  ],
+  "relatedConcerns": [
+    {
+      "slug": "aging",
+      "reason": "Firmness is one part of a broader picture that includes texture and volume."
+    },
+    {
+      "slug": "face-contouring",
+      "reason": "A softened jawline is often a shape question as much as a firmness one."
+    },
+    {
+      "slug": "fine-lines-wrinkles",
+      "reason": "Laxity deepens folds, so the two are frequently assessed together."
+    }
+  ],
+  "ctaHeading": "Find out what's actually loosening",
+  "ctaAssesses": "your skin and facial structure"
+}

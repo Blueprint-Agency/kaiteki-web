@@ -103,6 +103,43 @@ function wordCount(md: string): number {
 const today = new Date().toISOString().slice(0, 10);
 const isIsoDate = (s: string) => /^\d{4}-\d{2}-\d{2}$/.test(s) && !Number.isNaN(Date.parse(s));
 
+/** Internal markdown links in a body that do not resolve to a page. */
+function brokenLinks(body: string): string[] {
+  return [...body.matchAll(/\]\((\/[^)\s]*)\)/g)]
+    .map((m) => m[1].split(/[#?]/)[0].replace(/\/$/, "") || "/")
+    .filter((l) => (l.startsWith("/blog/category/") ? !categoryPaths.has(l) : !validPath(l)));
+}
+
+/** The checks a verbatim legacy post still has to pass. */
+function checkLegacy(p: (typeof posts)[number], at: string): void {
+  if (!p.author && !p.authorName) err(`${at}: needs an author or an authorName`);
+  if (p.author && !doctorBySlug(p.author)) err(`${at}: author '${p.author}' is not a doctor slug`);
+  if (!isIsoDate(p.publishedAt)) err(`${at}: publishedAt '${p.publishedAt}' is not YYYY-MM-DD`);
+  if (p.updatedAt && !isIsoDate(p.updatedAt)) err(`${at}: updatedAt '${p.updatedAt}' is not YYYY-MM-DD`);
+  if (!p.legacyPath || !/^\/.*\/$/.test(p.legacyPath))
+    err(`${at}: legacy post needs a legacyPath starting and ending with '/'`);
+  if (!p.description) err(`${at}: description missing`);
+  if (p.image) {
+    checkMedia(at, p.image, "image");
+    if (!p.imageAlt) err(`${at}: image set but imageAlt missing`);
+  }
+  const file = join(BLOG_DIR, `${p.slug}.mdx`);
+  if (!existsSync(file)) {
+    err(`${at}: body missing at content/blog/${p.slug}.mdx`);
+    return;
+  }
+  const body = readFileSync(file, "utf8");
+  if (/^#\s/m.test(body)) err(`${at}: body must not set an H1 (the title is the H1)`);
+  for (const l of brokenLinks(body)) err(`${at}: internal link ${l} does not resolve to a page`);
+  if (/\]\(https?:\/\/(www\.)?blog\.kaiteki\.my/.test(body))
+    err(`${at}: still links to blog.kaiteki.my, which is being retired`);
+  for (const tag of body.match(/<Figure[^>]*>/g) ?? []) {
+    const src = tag.match(/\ssrc="([^"]*)"/)?.[1];
+    if (!src) err(`${at}: <Figure> without src`);
+    else checkMedia(at, src, `<Figure> src ${src}`);
+  }
+}
+
 // ── Per-post checks ─────────────────────────────────────────────────────────
 const seen = new Set<string>();
 
@@ -112,6 +149,15 @@ for (const p of posts) {
   if (seen.has(p.slug)) err(`${at}: duplicate slug`);
   seen.add(p.slug);
   if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(p.slug)) err(`${at}: slug must be lowercase-kebab-case`);
+
+  // A legacy post was moved verbatim from blog.kaiteki.my (its slug, title,
+  // meta and words are what Google already indexed), so the house-style rules
+  // below do not apply. Everything that would ship broken still does: media,
+  // links, dates, attribution.
+  if (p.legacy) {
+    checkLegacy(p, at);
+    continue;
+  }
 
   // Metadata within the limits the SERP actually renders (docs/02 §3).
   const metaTitle = p.seoTitle ?? p.title;
@@ -123,7 +169,7 @@ for (const p of posts) {
     warn(`${at}: description ${p.description.length} chars (aim 140-160)`);
 
   // Answer-first capsule: 40-60 words is what stays extractable (docs/05 §1.3).
-  const leadWords = p.leadAnswer.split(/\s+/).filter(Boolean).length;
+  const leadWords = (p.leadAnswer ?? "").split(/\s+/).filter(Boolean).length;
   if (leadWords < 25 || leadWords > 90) err(`${at}: leadAnswer ${leadWords} words (must be 25-90)`);
   else if (leadWords < 40 || leadWords > 60) warn(`${at}: leadAnswer ${leadWords} words (aim 40-60)`);
 
@@ -262,7 +308,8 @@ const walk = (dir: string) => {
       });
   }
 };
-walk(join(ROOT, "app", "blog"));
+// English routes live in the pathless (en) group since the zh/ms root layouts (docs/07 §11).
+walk(join(ROOT, "app", "(en)", "blog"));
 walk(join(ROOT, "components", "blog"));
 
 // ── Report ──────────────────────────────────────────────────────────────────

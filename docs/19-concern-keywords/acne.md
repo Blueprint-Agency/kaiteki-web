@@ -118,3 +118,30 @@
 10. **FAQ 7 (safety for darker skin)** begins 可以，前提是… / *Ya, jika…*. This mirrors the conditional EN. Neither locale says "safe" without the condition.
 11. **The FAQ 1 zh question is broader than EN.** It adds 痘印 (marks), because `痘印和痘疤的区别` is the only form with AC demand. The answer already covers all three.
 12. **Exosome therapy** (外泌体 is not used in the copy; the treatment is described as 再生疗法 / *pendekatan regeneratif*, as EN does). Its MY regulatory status should be checked before the treatment page is localised.
+
+## Re-sync 2026-10-14 (English rewrite)
+
+The English page was rewritten upstream; the sync tool kept every unchanged translation and blanked 33 strings per locale. Only one blank is search-relevant (`seoTitle`); the rest are body copy.
+
+### Chinese
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| **seoTitle** "Acne Treatment in Malaysia: Types & Causes \| Kaiteki" | 暗疮治疗, 暗疮种类, 暗疮成因, 暗疮种类和成因 | `暗疮治疗` → 暗疮治疗方法, 暗疮 治疗 (plus facial / 香港 / 中医 noise); `暗疮种类` and `暗疮成因` return themselves (same as the earlier variant and drivers rows); the combined form is empty | KEYWORD: **马来西亚暗疮痘痘治疗：种类与成因 \| Kaiteki** (26 chars). Reuses the 暗疮种类 / 暗疮的成因 decisions above and keeps the 暗疮痘痘 display name. |
+
+**Body blanks translated directly:** 32 (leadAnswer, banner alt, fact 3, drivers intro, tab bodies, location cards, seeDoctor intro/outro, treatments intro and two treatment notes, compare intro, first-visit intro and step 3, risk 2, cost intro, 11 FAQ answers). Most are shortened EN sentences, so the existing translations were trimmed to match rather than rewritten.
+
+### Malay
+
+| English | Probes | Evidence | Decision |
+|---|---|---|---|
+| **seoTitle** | rawatan jerawat, jenis jerawat dan punca, punca jerawat | `rawatan jerawat` → batu, muka, hormon, near me; `jenis jerawat dan punca` returns itself (+ "di muka dan punca"); `punca jerawat` → di dagu, di dahi, batu (MY) | KEYWORD: **Rawatan Jerawat di Malaysia: Jenis & Punca \| Kaiteki** (52 chars) |
+
+**Body blanks translated directly:** 32 (same set as Chinese).
+
+### Reviewer notes
+
+1. "Permanent change" (seeDoctor outro) stays 难以逆转的改变 / *perubahan yang sukar dipulihkan*, as in the pilot.
+2. Fact 3 "Medical first" is 先做医学治疗 / *Rawatan perubatan dahulu*; the label names topical or oral treatment generically, no drug named.
+3. FAQ answers dropped their EN closing lines (e.g. "anyone who predicts the full course should be treated with caution"); the translations follow, so nothing extra remains in zh/ms.
+4. Step 3 "with no obligation to proceed" is 你没有义务一定要进行疗程 / *tanpa sebarang kewajipan untuk meneruskan*.
