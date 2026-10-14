@@ -8,7 +8,7 @@
 // and nothing touches the filesystem when a page renders.
 
 import { concernBySlug } from "@/content/data/concerns";
-import { concernTranslations } from "@/content/i18n/concerns";
+import { translations as concernTranslations } from "@/content/i18n/concerns";
 import { overlay } from "@/lib/i18n-overlay";
 import type { NonDefaultLocale } from "@/lib/i18n";
 import type { Concern } from "@/lib/types";

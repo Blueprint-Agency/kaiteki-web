@@ -1,9 +1,9 @@
-// Re-align concern translations with the current English after an English edit.
+// Re-align translations of a kind with the current English after an English edit.
 //
-//   node --experimental-strip-types scripts/i18n-sync-concerns.mts [--todo <dir>]
+//   node --experimental-strip-types scripts/i18n-sync.mts <kind> [--todo <dir>]
 //
 // Each translation was made from a snapshot of the English record, kept in
-// content/i18n/concerns/_en/<slug>.json. This pairs every English string in the
+// content/i18n/<kind>/_en/<slug>.json. This pairs every English string in the
 // snapshot with its translation, then rebuilds the translation on the CURRENT
 // English structure, matching by English TEXT rather than position: a sentence
 // that survived the edit keeps its translation wherever it moved, and a new or
@@ -15,23 +15,16 @@
 
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { concernBySlug } from "../content/data/concerns.ts";
 import { copyStrings, FIXED_KEYS, FIXED_ROOT_KEYS } from "../lib/i18n-overlay.ts";
+import { englishRecord as record, parseKind } from "./i18n-kinds.mts";
 
-const root = join(process.cwd(), "content", "i18n", "concerns");
+const kind = parseKind(process.argv[2]);
+const root = join(process.cwd(), "content", "i18n", kind);
 const todoArg = process.argv.indexOf("--todo");
 const todoDir = todoArg > 0 ? process.argv[todoArg + 1] : undefined;
 if (todoDir) mkdirSync(todoDir, { recursive: true });
 
-/** The English record exactly as a translator sees it (injected fields dropped). */
-export function englishRecord(slug: string) {
-  const c = concernBySlug(slug);
-  if (!c) return undefined;
-  const record: Record<string, unknown> = { ...c };
-  delete record.archetype;
-  delete record.depth;
-  return JSON.parse(JSON.stringify(record));
-}
+const englishRecord = (slug: string) => record(kind, slug);
 
 // Character-bigram similarity, for the hint only (never used to fill a blank).
 function similarity(a: string, b: string) {

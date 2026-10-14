@@ -8,6 +8,8 @@
 /** Keys whose string values are identifiers or enums, never reader-facing copy. */
 export const FIXED_KEYS = new Set([
   "slug",
+  "href",
+  "related",
   "image",
   "src",
   "sm",
@@ -26,7 +28,7 @@ export const FIXED_KEYS = new Set([
 ]);
 
 /** Top-level keys that are fixed only at the root (nested ones are copy). */
-export const FIXED_ROOT_KEYS = new Set(["group"]);
+export const FIXED_ROOT_KEYS = new Set(["group", "category"]);
 
 /** Every piece of copy in `x` as [path, text], in the same walk order and with
  *  the same fixed-key rules the overlay uses. */

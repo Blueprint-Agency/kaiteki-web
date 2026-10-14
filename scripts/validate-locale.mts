@@ -2,7 +2,7 @@
 //
 //   node --experimental-strip-types scripts/validate-locale.mts
 //
-// For every content/i18n/concerns/<locale>/<slug>.json:
+// For every content/i18n/<kind>/<locale>/<slug>.json (kinds: scripts/i18n-kinds.mts):
 //   L-01 fail  parses, and supplies every piece of copy the English record has
 //   L-02 fail  no em-dashes (house voice)
 //   L-03 fail  no banned terms: superlatives, guarantees, specialist titles,
@@ -16,11 +16,11 @@
 //   L-08 warn  a translation file with no ledger entry (it has no URL yet)
 //   L-09 fail  a translation file missing from the static index (pnpm i18n:index)
 //   L-10 fail  the English copy changed since the translation's snapshot
-//              (content/i18n/concerns/_en/); pnpm i18n:sync re-aligns by text
+//              (content/i18n/<kind>/_en/); pnpm i18n:sync <kind> re-aligns by text
 
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import { concernBySlug } from "../content/data/concerns.ts";
+import { englishRecord, KINDS, LOCALES, type Kind } from "./i18n-kinds.mts";
 import { localePages } from "../content/i18n/pages.ts";
 import { copyStrings, overlay } from "../lib/i18n-overlay.ts";
 
@@ -91,17 +91,19 @@ function lengths(x: unknown, path = ""): Map<string, number> {
   return m;
 }
 
-for (const locale of ["zh", "ms"] as const) {
-  const dir = join(root, "content", "i18n", "concerns", locale);
+for (const kind of Object.keys(KINDS) as Kind[]) {
+for (const locale of LOCALES) {
+  const kroot = join(root, "content", "i18n", kind);
+  const dir = join(kroot, locale);
   const files = existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith(".json")) : [];
   const ledger = localePages[locale];
 
   for (const f of files) {
     const slug = f.slice(0, -5);
-    const where = `${locale}/${slug}`;
-    const en = concernBySlug(slug);
+    const where = `${kind}/${locale}/${slug}`;
+    const en = englishRecord(kind, slug);
     if (!en) {
-      fail(where, "L-01", "no English concern with this slug");
+      fail(where, "L-01", `no English ${kind} record with this slug`);
       continue;
     }
     let tr: unknown;
@@ -111,19 +113,16 @@ for (const locale of ["zh", "ms"] as const) {
       fail(where, "L-01", `invalid JSON: ${(e as Error).message}`);
       continue;
     }
-    // L-10: the translation was made from content/i18n/concerns/_en/<slug>.json.
+    // L-10: the translation was made from content/i18n/<kind>/_en/<slug>.json.
     // If the English copy has moved on since, positions can shift and a
     // translated sentence would land in the wrong slot, so re-align first.
-    const snapFile = join(root, "content", "i18n", "concerns", "_en", `${slug}.json`);
+    const snapFile = join(kroot, "_en", `${slug}.json`);
     if (!existsSync(snapFile)) {
-      fail(where, "L-10", "no English snapshot in content/i18n/concerns/_en/");
+      fail(where, "L-10", `no English snapshot in content/i18n/${kind}/_en/`);
     } else {
-      const record: Record<string, unknown> = { ...en };
-      delete record.archetype;
-      delete record.depth;
-      const now = JSON.stringify(copyStrings(JSON.parse(JSON.stringify(record))));
+      const now = JSON.stringify(copyStrings(en));
       const then = JSON.stringify(copyStrings(JSON.parse(readFileSync(snapFile, "utf8"))));
-      if (now !== then) fail(where, "L-10", "English changed since this was translated: run pnpm i18n:sync, then translate the blanks");
+      if (now !== then) fail(where, "L-10", `English changed since this was translated: run pnpm i18n:sync ${kind}, then translate the blanks`);
     }
 
     const { missing } = overlay(en, tr);
@@ -154,19 +153,20 @@ for (const locale of ["zh", "ms"] as const) {
       if (n < dMin || n > dMax) warn(where, "L-05", `seoDescription ${n} chars (want ${dMin}–${dMax})`);
     }
 
-    if (!ledger[`/concerns/${slug}`]) warn(where, "L-08", "no ledger entry in content/i18n/pages.ts, so no URL");
+    if (!ledger[KINDS[kind].path(slug)]) warn(where, "L-08", "no ledger entry in content/i18n/pages.ts, so no URL");
   }
 
-  const index = readFileSync(join(root, "content", "i18n", "concerns", "index.ts"), "utf8");
+  const index = existsSync(join(kroot, "index.ts")) ? readFileSync(join(kroot, "index.ts"), "utf8") : "";
   for (const f of files) {
-    if (!index.includes(`"./${locale}/${f}"`)) fail(`${locale}/${f.slice(0, -5)}`, "L-09", "not in content/i18n/concerns/index.ts: run pnpm i18n:index");
+    if (!index.includes(`"./${locale}/${f}"`)) fail(`${kind}/${locale}/${f.slice(0, -5)}`, "L-09", `not in content/i18n/${kind}/index.ts: run pnpm i18n:index`);
   }
 
   for (const path of Object.keys(ledger)) {
-    const m = path.match(/^\/concerns\/([^/]+)$/);
+    const m = path.match(new RegExp(`^/${kind}/([^/]+)$`));
     if (m && !files.includes(`${m[1]}.json`)) fail(`${locale}${path}`, "L-07", "ledger entry with no translation file");
   }
-  console.log(`${locale}: ${files.length} concern translation(s) checked`);
+  console.log(`${kind}/${locale}: ${files.length} translation(s) checked`);
+}
 }
 
 console.log(`\n${failures} failure(s) · ${warnings} warning(s)`);
