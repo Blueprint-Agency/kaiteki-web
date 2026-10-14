@@ -438,10 +438,14 @@ export function TechnologyCard({
   summary = x.summary,
   href = `/technology/${x.slug}`,
   learnMore = "Learn more",
+  usedIn,
   className = "",
   style,
 }: {
   learnMore?: string;
+  /** Localized "Used in" line: label, separator and resolved treatment links.
+   *  Defaults to the English label and the treatment data's own names. */
+  usedIn?: { label: string; sep: string; end: string; links: { slug: string; href: string; name: string }[] };
   x: Technology;
   showUsedIn?: boolean;
   /** Localized badge; defaults to the English type label. */
@@ -487,19 +491,21 @@ export function TechnologyCard({
       <div className="p-5 pt-3">
         {showUsedIn && powers.length > 0 && (
           <p className="text-sm leading-relaxed text-ink-700">
-            Used in{" "}
-            {powers.map((t, i) => (
-              <span key={t.slug}>
-                {i > 0 ? ", " : ""}
-                <Link
-                  href={treatmentHref(t)}
-                  className="underline decoration-mocha/40 underline-offset-2 hover:text-accent"
-                >
-                  {t.name}
-                </Link>
-              </span>
-            ))}
-            .
+            {usedIn ? usedIn.label : "Used in "}
+            {(usedIn?.links ?? powers.map((t) => ({ slug: t.slug, href: treatmentHref(t), name: t.name }))).map(
+              (t, i) => (
+                <span key={t.slug}>
+                  {i > 0 ? (usedIn?.sep ?? ", ") : ""}
+                  <Link
+                    href={t.href}
+                    className="underline decoration-mocha/40 underline-offset-2 hover:text-accent"
+                  >
+                    {t.name}
+                  </Link>
+                </span>
+              ),
+            )}
+            {usedIn?.end ?? "."}
           </p>
         )}
         <Link

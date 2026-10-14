@@ -11,6 +11,9 @@ import { concernUi } from "@/content/i18n/concern-ui";
 import { isLive, lhref } from "@/lib/locale-pages";
 import type { Locale } from "@/lib/i18n";
 import type { Technology } from "@/lib/types";
+import { treatmentsOfTechnology } from "@/content/data/relations";
+import { localizedTreatment } from "@/content/i18n/treatment-locale";
+import { term } from "@/content/i18n/terms";
 
 export type TechCardProps = {
   name?: string;
@@ -18,7 +21,13 @@ export type TechCardProps = {
   typeLabel?: string;
   learnMore?: string;
   href?: string;
+  usedIn?: { label: string; sep: string; end: string; links: { slug: string; href: string; name: string }[] };
 };
+
+const USED_IN = {
+  zh: { label: "用于：", sep: "、", end: "。" },
+  ms: { label: "Digunakan dalam ", sep: ", ", end: "." },
+} as const;
 
 export function techCardProps(locale: Locale, x: Technology): TechCardProps {
   if (locale === "en") return {};
@@ -31,5 +40,16 @@ export function techCardProps(locale: Locale, x: Technology): TechCardProps {
     typeLabel: technologyUi[locale].type[x.type],
     learnMore: concernUi[locale].learnMore,
     href: lhref(locale, path),
+    // The hub card lists the treatments the device powers: names and links in
+    // this locale (a live translation's own name, else the researched one).
+    usedIn: {
+      ...USED_IN[locale],
+      links: treatmentsOfTechnology(x.slug).map((t) => {
+        const tp = `/treatments/${t.slug}`;
+        const tl = localizedTreatment(locale, t.slug);
+        const name = tl && isLive(locale, tp) ? tl.t.name : term(locale, "treatment", t.slug, t.name);
+        return { slug: t.slug, href: lhref(locale, tp), name };
+      }),
+    },
   };
 }

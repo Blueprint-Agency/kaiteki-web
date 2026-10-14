@@ -1,0 +1,114 @@
+{
+  "slug": "onda-coolwaves",
+  "name": "Onda Coolwaves",
+  "group": "Body & Slimming",
+  "type": "device",
+  "treatments": [
+    "microwave-contouring"
+  ],
+  "image": "https://cdn.kaiteki.my/images/technology/onda-coolwaves.jpg",
+  "device": "Onda",
+  "summary": "A microwave-based (Coolwaves) device used for localised fat, cellulite appearance and skin firmness.",
+  "leadAnswer": "Onda uses a microwave-based technology the manufacturer calls Coolwaves, which distinguishes it from the cooling and radiofrequency devices it is usually compared against. At Kaiteki it is offered in two forms, Onda for Body and Onda for Face, using the same platform with different handpieces.",
+  "facts": [
+    {
+      "value": "Microwave (Coolwaves)",
+      "label": "Energy"
+    },
+    {
+      "value": "Body and Face",
+      "label": "Two forms"
+    },
+    {
+      "value": "Microwave contouring",
+      "label": "Used within"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is Onda?",
+      "body": [
+        "Onda is a non-invasive body- and face-contouring device that uses a microwave-based technology the manufacturer calls Coolwaves®. It is used to address localised fat, skin firmness and the appearance of cellulite on the body, and firmness of the face."
+      ]
+    },
+    {
+      "heading": "How Coolwaves technology works",
+      "body": [
+        "Coolwaves® are a specific range of microwaves delivered beneath the skin's surface. The energy is intended to act on the targeted tissue, for example, localised fat cells or the fibrous bands associated with cellulite, while the built-in cooling helps keep the surface of the skin protected during treatment.",
+        "The same energy may also prompt a gradual collagen-remodelling response, which is why the device is used for firmness as well as contouring. Settings are selected by the treating doctor for the area and your skin. Results develop over time and vary between individuals."
+      ]
+    },
+    {
+      "heading": "Fat, cellulite or firmness: what does Onda act on?",
+      "body": [
+        "Onda is commonly considered for the concerns below. It is not suitable for everyone, and a consultation determines whether it is appropriate for you."
+      ],
+      "list": [
+        "Body: localised fat on areas such as the abdomen and flanks (love handles), thighs and buttocks, upper arms, and the bra-line and back",
+        "Body: the dimpled appearance associated with cellulite",
+        "Body: skin firmness and tone over treated areas",
+        "Face: firmness of the jawline and cheeks, and areas such as jowls, nasolabial folds and under the chin",
+        "Face: fine lines and overall skin quality as part of a plan"
+      ]
+    },
+    {
+      "heading": "Onda for Body or Onda for Face, and is either for weight loss?",
+      "body": [
+        "At Kaiteki, Onda is offered in two forms, Onda for Body and Onda for Face, using the same underlying technology at settings suited to each area. Whether it suits you depends on your concern, body area, skin and medical history, which a doctor assesses during consultation.",
+        "Onda for Body is used for localised fat and skin firmness, while Onda for Face uses a gentler approach for the face and jawline.",
+        "Onda is not a weight-loss treatment; it addresses localised areas rather than overall body weight."
+      ]
+    },
+    {
+      "heading": "Why do implants and medical devices matter before Onda?",
+      "body": [
+        "Suitability is assessed individually. It may not be appropriate during pregnancy, with certain implants or medical devices in the treatment area, or with some skin or health conditions.",
+        "Please share your full medical history and any devices or implants at consultation so the doctor can advise safely and confirm whether Onda, or another option, is right for you."
+      ]
+    },
+    {
+      "heading": "What does an Onda session involve, and is there downtime?",
+      "body": [
+        "A typical visit begins with a doctor consultation and assessment of the area of concern. If Onda is appropriate, a handpiece is moved over the treatment area to deliver the energy while the surface is cooled.",
+        "A course of several sessions spaced a few weeks apart is common, but the plan is individual and depends on the area and your response. Your doctor will explain what to expect for you.",
+        "Downtime is usually limited, though this varies between individuals. Temporary warmth, redness or mild tenderness over the treated area can occur and typically settles. Most people are able to return to usual activities, and your doctor will give aftercare guidance specific to you."
+      ]
+    },
+    {
+      "heading": "What side effects can Onda's microwave energy cause?",
+      "body": [
+        "As with any medical procedure, Onda carries risks, which are explained during consultation. Temporary effects can include redness, swelling, warmth or tenderness in the treated area. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor."
+      ]
+    }
+  ],
+  "costFactors": {
+    "intro": "Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. What moves it:",
+    "factors": [
+      "The area being treated, body or face.",
+      "The concern being addressed.",
+      "Your individual response, which sets how many sessions the course needs."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Is Onda a weight-loss treatment?",
+      "a": "No. Onda addresses localised areas of fat and skin firmness rather than overall body weight. It is not a substitute for weight management, and a doctor assesses at consultation whether it suits your goals."
+    },
+    {
+      "q": "What is the difference between Onda for Body and Onda for Face?",
+      "a": "Both use the same Coolwaves® microwave technology. Onda for Body targets localised fat, cellulite and firmness on areas such as the abdomen, thighs and arms, while Onda for Face uses a gentler approach for firmness of the face and jawline. Your doctor will advise which is appropriate."
+    },
+    {
+      "q": "Is Onda painful, and is there downtime?",
+      "a": "Comfort varies between individuals; the built-in cooling is intended to keep the session comfortable, and most people describe a warming sensation. Downtime is usually limited, but any temporary effects and what to expect are explained at consultation."
+    },
+    {
+      "q": "How many Onda sessions will I need?",
+      "a": "It varies. A course of several sessions spaced a few weeks apart is common, but the plan depends on the area treated and how you respond. Your doctor will outline a realistic plan at consultation."
+    }
+  ],
+  "reviewedBy": "dr-tim-chua",
+  "lastReviewed": "2026-07-18",
+  "seoTitle": "Onda Coolwaves Body & Face Treatment Malaysia | Kaiteki",
+  "seoDescription": "Onda uses microwave-based Coolwaves technology at Kaiteki for localised fat, cellulite appearance and facial firmness. Book a free consultation to learn more."
+}
