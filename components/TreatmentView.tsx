@@ -33,10 +33,17 @@ import { treatmentBySlug } from "@/content/data/treatments";
 import { postsFor } from "@/content/data/blog";
 import { technologyOfTreatment, concernsOfTreatment } from "@/content/data/relations";
 import { doctorBySlug, reviewerByline } from "@/content/data/doctors";
-import { waForTreatment } from "@/lib/wa";
-import { treatmentToc, headingAnchor } from "@/lib/treatment-toc";
+import { waForTreatment, waLink } from "@/lib/wa";
+import { treatmentToc, treatmentSectionAnchors } from "@/lib/treatment-toc";
 import { TOC_MIN_HEADINGS } from "@/lib/toc";
 import type { Treatment } from "@/lib/types";
+import { treatmentUi, type TreatmentUi } from "@/content/i18n/treatment-ui";
+import { concernUi } from "@/content/i18n/concern-ui";
+import { chrome, fmt } from "@/content/i18n/chrome";
+import { term } from "@/content/i18n/terms";
+import { localizedConcern } from "@/content/i18n/concern-locale";
+import { isLive, lhref, localeReviewer } from "@/lib/locale-pages";
+import { localePath, type Locale } from "@/lib/i18n";
 
 /**
  * Treatment-page template v2 (docs/14).
@@ -66,23 +73,23 @@ import type { Treatment } from "@/lib/types";
  *     treatment with no media renders as clean text instead.
  */
 
-const dmy = (iso: string) =>
-  new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+const dmy = (iso: string, intl = "en-GB") =>
+  new Date(iso).toLocaleDateString(intl, { day: "numeric", month: "short", year: "numeric" });
 
 /** T-19 — next review is always 12 months after the last one, so it's derived. */
-function nextReview(iso: string) {
+function nextReview(iso: string, intl = "en-GB") {
   const d = new Date(iso);
   d.setFullYear(d.getFullYear() + 1);
-  return dmy(d.toISOString());
+  return dmy(d.toISOString(), intl);
 }
 
 /** T-02 fallback for treatments whose fact strip has not been authored yet. */
-function derivedFacts(t: Treatment) {
+function derivedFacts(t: Treatment, ui: TreatmentUi = treatmentUi.en) {
   const [sessionTime, downtime] = (t.durationDowntime ?? "").split("·").map((s) => s.trim());
   return [
-    sessionTime && { value: sessionTime, label: "Typical session time" },
-    t.typicalSessions && { value: t.typicalSessions, label: "Typical sessions" },
-    downtime && { value: downtime, label: "Downtime" },
+    sessionTime && { value: sessionTime, label: ui.factSession },
+    t.typicalSessions && { value: t.typicalSessions, label: ui.factSessions },
+    downtime && { value: downtime, label: ui.factDowntime },
   ].filter(Boolean) as { value: string; label: string }[];
 }
 
@@ -108,22 +115,63 @@ function Reading({ rail, children }: { rail?: ReactNode; children: ReactNode }) 
   );
 }
 
-export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
-  const doctor = doctorBySlug(t.reviewedBy);
+/**
+ * `t` is the record to render: English, or a locale overlay of it
+ * (content/i18n/treatment-locale.ts). `source` is the English record, which a
+ * locale page passes so section and FAQ anchors stay the English slugs.
+ */
+export function TreatmentView({
+  t,
+  trail,
+  locale = "en",
+  source = t,
+}: {
+  t: Treatment;
+  trail: Crumb[];
+  locale?: Locale;
+  source?: Treatment;
+}) {
+  const en = locale === "en";
+  const ui = treatmentUi[locale];
+  const cu = concernUi[locale];
+  const n = (tmpl: string) => tmpl.replace("{name}", t.name);
+  const link = (href: string) => lhref(locale, href);
+  // English pages name the authoring reviewer as before; a translation names
+  // only the doctor who signed it in the locale ledger (content/i18n/pages.ts).
+  const signed = en ? undefined : localeReviewer(locale, `/treatments/${t.slug}`);
+  const doctor = en ? doctorBySlug(t.reviewedBy) : signed?.doctor;
+  const reviewIso = en ? t.lastReviewed : signed?.date;
   const related = t.related.map((r) => treatmentBySlug(r)).filter(Boolean);
   const techItems = technologyOfTreatment(t.slug);
   const relatedConcerns = concernsOfTreatment(t.slug);
-  const posts = postsFor("treatments", t.slug);
-  const wa = waForTreatment(t.name);
-  const reviewedDate = dmy(t.lastReviewed);
+  // The blog is English-only, so a locale page lists no "read next" posts.
+  const posts = en ? postsFor("treatments", t.slug) : [];
+  const wa = en ? waForTreatment(t.name) : waLink(fmt(chrome[locale].wa.about, { name: t.name }));
   const sections = t.sections ?? [];
+  const anchors = treatmentSectionAnchors(t, source);
+
+  /** Concern card fields in this locale: its own translation once live, else
+   *  the researched name and no English summary under a translated heading. */
+  const concernCard = (slug: string, name: string) => {
+    if (en) return {};
+    const page = localizedConcern(locale, slug);
+    const live = page && isLive(locale, `/concerns/${slug}`);
+    const label = live ? page.c.name : term(locale, "concern", slug, name);
+    return {
+      href: link(`/concerns/${slug}`),
+      name: label,
+      summary: live ? page.c.summary : null,
+      explore: cu.learnMore,
+      alt: fmt(cu.cardAltConcern, { name: label }),
+    };
+  };
 
   // The rail reads the same derived list Q-24 checks against the page's own
   // anchors, so a rail entry can never point at a section that is not rendered.
-  const headings = treatmentToc(t, techItems.length > 0, relatedConcerns.length > 0);
+  const headings = treatmentToc(t, techItems.length > 0, relatedConcerns.length > 0, ui, source);
   const rail =
     headings.length >= TOC_MIN_HEADINGS ? (
-      <ArticleToc headings={headings} variant="sidebar" />
+      <ArticleToc headings={headings} variant="sidebar" label={cu.onThisPage} />
     ) : undefined;
 
   return (
@@ -133,12 +181,12 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
           strip above the text. ─────────────────────────────────────────── */}
       <header className="border-b border-hairline">
         <Container className="pt-8 pb-10 sm:pb-12">
-          <Breadcrumbs items={trail} />
+          <Breadcrumbs items={trail} home={en ? undefined : { label: cu.home, href: localePath(locale, "/") }} />
           <div
             className={`mt-8 grid gap-10 lg:gap-16 ${t.image ? "lg:grid-cols-[1fr_0.78fr] lg:items-center" : ""}`}
           >
             <div>
-              <p className="kicker">{t.category}</p>
+              <p className="kicker">{term(locale, "category", t.category, t.category)}</p>
               <h1 className="h-hero mt-5">{t.name}</h1>
               <p className="mt-6 max-w-[48ch] text-lg leading-relaxed text-ink-700">{t.summary}</p>
               {/* Ghost CTA, as the concern hero renders it: the visitor who
@@ -149,9 +197,9 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
                   href={wa}
                   variant="outline"
                   position="hero"
-                  label="Ask if it suits your skin"
+                  label={ui.heroCta}
                 />
-                <p className="text-sm text-ink-500">Free consultation, no obligation.</p>
+                <p className="text-sm text-ink-500">{ui.heroNote}</p>
               </div>
             </div>
             {/* No frame without a photograph: all 19 treatments carry a hero
@@ -161,7 +209,7 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
               <div className="relative aspect-[3/2] overflow-hidden rounded-2xl bg-tint ring-1 ring-hairline lg:aspect-[5/4]">
                 <Image
                   src={t.image}
-                  alt={t.imageAlt ?? `${t.name} treatment at Kaiteki Skin Aesthetic Clinic Malaysia`}
+                  alt={t.imageAlt ?? n(ui.imageAlt)}
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 420px"
@@ -174,12 +222,12 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
       </header>
 
       {/* T-02 — authored process facts, else the derived session/downtime tags. */}
-      <FactRail facts={t.facts ?? derivedFacts(t)} />
+      <FactRail facts={t.facts ?? derivedFacts(t, ui)} />
 
       <Reading rail={rail}>
         {rail && (
           <div className="pt-8 lg:hidden">
-            <ArticleToc headings={headings} variant="collapsed" />
+            <ArticleToc headings={headings} variant="collapsed" label={cu.onThisPage} />
           </div>
         )}
 
@@ -188,7 +236,7 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
             concern page places it. */}
         <Section>
           <div className="max-w-[68ch]">
-            <LeadAnswer>{t.leadAnswer}</LeadAnswer>
+            <LeadAnswer label={cu.inBrief}>{t.leadAnswer}</LeadAnswer>
           </div>
         </Section>
 
@@ -200,7 +248,7 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
         {sections.map((s, i) => {
           const figure = i % 2 === 1 ? t.figures?.[Math.floor(i / 2)] : undefined;
           return (
-            <Section key={s.heading} id={headingAnchor(s.heading)}>
+            <Section key={anchors[i] || s.heading} id={anchors[i]}>
               <h2 className="h-section">{s.heading}</h2>
               <div className="prose mt-6 max-w-[68ch] space-y-5 leading-[1.75] text-ink-700">
                 {s.body.map((p, j) => (
@@ -225,8 +273,7 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
         {sections.length === 0 && (
           <Section>
             <p className="prose max-w-[68ch] text-lg leading-relaxed text-ink-700">
-              {t.summary} A full, doctor-reviewed guide to {t.name} is being finalised. Our doctors
-              can explain whether it is suitable for you at a free consultation.
+              {fmt(ui.pending, { summary: t.summary, name: t.name })}
             </p>
           </Section>
         )}
@@ -235,14 +282,15 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
             authored routes add the why above it. */}
         {t.routes ? (
           <RoutingModule
-            title={`What ${t.name} is used for at Kaiteki`}
+            title={n(ui.routesTitle)}
             routes={t.routes}
             note={t.routesNote}
+            link={link}
           >
             {relatedConcerns.length > 0 && (
               <CardRow className="mt-10">
                 {relatedConcerns.map((concern) => (
-                  <ConcernCard key={concern.slug} c={concern} />
+                  <ConcernCard key={concern.slug} c={concern} {...concernCard(concern.slug, concern.name)} />
                 ))}
               </CardRow>
             )}
@@ -256,14 +304,11 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
                a treatment authors one, is still the better version of this
                block, because it explains *why* each concern is on the list. */
             <Section id="concerns-addressed">
-              <h2 className="h-section">Concerns this treatment addresses</h2>
-              <p className="mt-5 max-w-[52ch] leading-relaxed text-ink-700">
-                Each of these pages covers what the concern is and every option considered for
-                it, not only {t.name}.
-              </p>
+              <h2 className="h-section">{ui.concernsHeading}</h2>
+              <p className="mt-5 max-w-[52ch] leading-relaxed text-ink-700">{n(ui.concernsIntro)}</p>
               <CardRow className="mt-10">
                 {relatedConcerns.map((concern) => (
-                  <ConcernCard key={concern.slug} c={concern} />
+                  <ConcernCard key={concern.slug} c={concern} {...concernCard(concern.slug, concern.name)} />
                 ))}
               </CardRow>
             </Section>
@@ -271,46 +316,47 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
         )}
 
         {/* T-07 — the device comparison, on page ground like every section. */}
-        <VariantModule m={t.variantModule} />
+        <VariantModule m={t.variantModule} link={link} learnMore={cu.learnMore} />
 
         {/* T-08 — the one surfaced band on the page: the conversion moment,
             placed where the visitor has just read the device comparison and
             cannot pick between the options alone. Same espresso bleed the
             concern page uses. */}
-        <CtaMid cta={t.ctaMid} href={wa} />
+        <CtaMid cta={t.ctaMid} href={wa} copy={en ? undefined : cu.ctaMid} />
 
         {/* T-09 */}
-        <SuitabilityBlock t={t} />
+        <SuitabilityBlock t={t} ui={ui} />
 
         {/* T-10 */}
-        <SessionBlock t={t} />
+        <SessionBlock t={t} ui={ui} />
 
         {/* The illustrated procedure sequence, where one is authored. */}
-        <StepsBlock steps={t.steps} />
+        <StepsBlock steps={t.steps} ui={ui} />
 
         {/* Kaiteki's own procedure photos. */}
-        <ProcedurePhotos images={t.procedureImages} />
+        <ProcedurePhotos images={t.procedureImages} ui={ui} />
 
         {/* T-11 */}
-        <AfterSession a={t.afterSession} />
+        <AfterSession a={t.afterSession} ui={ui} />
 
         {/* T-12 — the safety notice, on page ground. */}
-        <RisksBlock r={t.risks} name={t.name} />
+        <RisksBlock r={t.risks} name={t.name} ui={ui} />
 
         {/* T-13 */}
-        <CostFactors c={t.costFactors} href={wa} />
+        <CostFactors c={t.costFactors} href={wa} ui={ui} />
 
         {/* T-14 */}
-        <ManufacturerImages images={t.manufacturerImages} />
+        <ManufacturerImages images={t.manufacturerImages} ui={ui} />
 
         {/* T-15 — chips, or die-cut zone photographs where they are authored. */}
-        <AreasBlock t={t} />
+        <AreasBlock t={t} ui={ui} />
 
         {t.comparisons && t.comparisons.length > 0 && (
           <Section id="comparisons">
-            <h2 className="h-section">{t.name} vs other options</h2>
+            <h2 className="h-section">{n(ui.comparisonsHeading)}</h2>
             <ScrollTable
-              columns={["Treatment", "Best for", "Downtime"]}
+              columns={ui.comparisonColumns}
+              swipeHint={cu.swipeHint}
               rows={t.comparisons.map((row) => [row.name, row.bestFor, row.downtime])}
               minWidth="34rem"
             />
@@ -319,11 +365,11 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
 
         {(t.preCare?.length || t.postCare?.length) && (
           <Section id="care">
-            <h2 className="h-section">Pre and post treatment care</h2>
+            <h2 className="h-section">{ui.careHeading}</h2>
             <List>
               {[
-                { title: "Before treatment", items: t.preCare ?? [] },
-                { title: "After treatment", items: t.postCare ?? [] },
+                { title: ui.careBefore, items: t.preCare ?? [] },
+                { title: ui.careAfter, items: t.postCare ?? [] },
               ]
                 .filter((g) => g.items.length > 0)
                 .map((g) => (
@@ -344,13 +390,25 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
             this treatment gets a card and an internal link. */}
         {techItems.length > 0 && (
           <Section id="devices">
-            <h2 className="h-section">Devices used at Kaiteki</h2>
-            <p className="mt-5 max-w-[52ch] leading-relaxed text-ink-700">
-              Which platform is used depends on your individual assessment.
-            </p>
+            <h2 className="h-section">{ui.devicesHeading}</h2>
+            <p className="mt-5 max-w-[52ch] leading-relaxed text-ink-700">{ui.devicesIntro}</p>
             <CardRow className="mt-10">
               {techItems.map((x) => (
-                <TechnologyCard key={x.slug} x={x} showUsedIn={false} />
+                <TechnologyCard
+                  key={x.slug}
+                  x={x}
+                  showUsedIn={false}
+                  // Device summaries are English-only data until the technology
+                  // pages get their own locale round.
+                  {...(en
+                    ? {}
+                    : {
+                        summary: null,
+                        typeLabel: cu.techType[x.type],
+                        learnMore: cu.learnMore,
+                        href: link(`/technology/${x.slug}`),
+                      })}
+                />
               ))}
             </CardRow>
           </Section>
@@ -359,9 +417,9 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
         {/* T-16 — native <details>, answers always in the DOM. */}
         {t.faqs && (
           <Section id="faq">
-            <h2 className="h-section">Common questions</h2>
+            <h2 className="h-section">{ui.faqHeading}</h2>
             <div className="mt-8 max-w-[68ch]">
-              <Faq items={t.faqs} />
+              <Faq items={t.faqs} anchorFrom={source.faqs} />
             </div>
           </Section>
         )}
@@ -376,11 +434,27 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
             treatment's own summary, which still beats a bare name. */}
         {related.length > 0 && (
           <Section>
-            <h2 className="h-section">Where to go next</h2>
+            <h2 className="h-section">{ui.nextHeading}</h2>
             <CardRow className="mt-10">
-              {related.map((r) => (
-                <TreatmentCard key={r!.slug} t={r!} reason={t.relatedReasons?.[r!.slug]} />
-              ))}
+              {related.map((r) => {
+                const name = term(locale, "treatment", r!.slug, r!.name);
+                return (
+                  <TreatmentCard
+                    key={r!.slug}
+                    t={r!}
+                    reason={t.relatedReasons?.[r!.slug]}
+                    {...(en
+                      ? {}
+                      : {
+                          href: link(`/treatments/${r!.slug}`),
+                          name,
+                          summary: null,
+                          learnMore: cu.learnMore,
+                          alt: fmt(ui.cardAlt, { name }),
+                        })}
+                  />
+                );
+              })}
             </CardRow>
             {/* Treatments only. The concern chips that used to sit under this
                 row are gone: a `routes` page already routes to its concerns in
@@ -388,10 +462,10 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
                 them as cards further up. A pill row repeating either was a
                 third presentation of a list the page had already made. */}
             <Link
-              href="/treatments"
+              href={link("/treatments")}
               className="mt-9 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-espresso"
             >
-              Back to all treatments
+              {ui.backToAll}
             </Link>
           </Section>
         )}
@@ -401,17 +475,13 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
           on the mid-page CTA. Centred, as the concern page closes. */}
       <Container className="border-t border-hairline py-14 sm:py-20">
         <div className="mx-auto max-w-[62ch] text-center">
-          <h2 className="h-section mx-auto max-w-[18ch]">Book a free consultation</h2>
-          <p className="mx-auto mt-5 max-w-[52ch] leading-relaxed text-ink-700">
-            The consultation is free, takes about 20 to 30 minutes, and there is no obligation to
-            book treatment afterwards. A doctor will examine your skin and tell you whether{" "}
-            {t.name} is appropriate, and if it isn&rsquo;t, what would be.
-          </p>
+          <h2 className="h-section mx-auto max-w-[18ch]">{ui.bottomHeading}</h2>
+          <p className="mx-auto mt-5 max-w-[52ch] leading-relaxed text-ink-700">{n(ui.bottomBody)}</p>
           <WhatsAppButton
             href={wa}
             size="lg"
             position="bottom"
-            label="Ask about this treatment"
+            label={ui.bottomCta}
             className="mt-8"
           />
         </div>
@@ -420,15 +490,15 @@ export function TreatmentView({ t, trail }: { t: Treatment; trail: Crumb[] }) {
       {/* T-19 — the reviewer as the blog and the concern page render one: a
           named, MMC-registered doctor with a photo and a link to the profile
           (docs/02 §5), above the ledger's review dates. */}
-      {doctor && (
+      {doctor && reviewIso && (
         <Container className="py-12 sm:py-14">
           <div className="max-w-[62ch] space-y-8">
-            <AuthorCard doctor={doctor} label="Medically reviewed by" />
+            <AuthorCard doctor={doctor} label={cu.reviewedByCard} viewProfile={cu.viewProfile} compact={!en} />
             <Ledger
               rows={[
-                { label: "Reviewed by", value: reviewerByline(doctor) },
-                { label: "Last reviewed", value: reviewedDate },
-                { label: "Next review due", value: nextReview(t.lastReviewed) },
+                { label: cu.ledgerReviewedBy, value: reviewerByline(doctor) },
+                { label: cu.ledgerLast, value: dmy(reviewIso, cu.intl) },
+                { label: cu.ledgerNext, value: nextReview(reviewIso, cu.intl) },
               ]}
             />
           </div>

@@ -77,10 +77,21 @@ export function TreatmentMotif({
 export function TreatmentCard({
   t,
   reason,
+  href = treatmentHref(t),
+  name = t.name,
+  summary = t.summary,
+  learnMore = "Learn more",
+  alt = `${name} treatment at Kaiteki Skin Aesthetic Clinic`,
   className = "",
   style,
 }: {
   t: Treatment;
+  /** Locale overrides. `summary: null` hides it (English-only data). */
+  href?: string;
+  name?: string;
+  summary?: string | null;
+  learnMore?: string;
+  alt?: string;
   /** T-17. On a treatment page's "Where to go next", the card carries the
    *  authored reason for the link — framed around what the *current* treatment
    *  does not do — in place of the generic summary. That sentence is the whole
@@ -88,12 +99,12 @@ export function TreatmentCard({
   reason?: string;
 } & Extra) {
   return (
-    <Link href={treatmentHref(t)} style={style} className={`${cardBase} overflow-hidden ${className}`}>
+    <Link href={href} style={style} className={`${cardBase} overflow-hidden ${className}`}>
       {t.image ? (
         <div className="relative aspect-[16/10] overflow-hidden bg-tint">
           <Image
             src={t.image}
-            alt={`${t.name} treatment at Kaiteki Skin Aesthetic Clinic`}
+            alt={alt}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -104,11 +115,15 @@ export function TreatmentCard({
       )}
       <div className="flex flex-1 flex-col p-5">
         <h3 className="font-display text-xl font-medium text-espresso decoration-mocha/50 underline-offset-[5px] group-hover:underline">
-          {t.name}
+          {name}
         </h3>
-        <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-700">{reason ?? t.summary}</p>
+        {(reason ?? summary) ? (
+          <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-700">{reason ?? summary}</p>
+        ) : (
+          <span className="flex-1" />
+        )}
         <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-accent">
-          Learn more <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
+          {learnMore} <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
         </span>
       </div>
     </Link>

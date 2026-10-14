@@ -25,7 +25,23 @@ const inFilter = (t: Treatment, f: Filter) =>
 /** Filterable treatment grid for the /treatments hub — mirrors ConcernsExplorer.
  *  Defaults to "All" so crawlers and no-JS visitors get the whole menu; the tabs
  *  are a progressive-enhancement filter. */
-export function TreatmentsExplorer() {
+export type TreatmentCardOverride = {
+  href: string;
+  name: string;
+  summary: string | null;
+  learnMore: string;
+  alt: string;
+};
+
+export function TreatmentsExplorer({
+  labels,
+  cards,
+}: {
+  /** Localized tab labels; English by default. */
+  labels?: { all: string; tabs: Record<keyof typeof FILTER_GROUPS, string> };
+  /** Localized card fields per treatment slug, resolved on the server. */
+  cards?: Record<string, TreatmentCardOverride>;
+} = {}) {
   const [filter, setFilter] = useState<Filter>("All");
   const tabs: Filter[] = ["All", ...(Object.keys(FILTER_GROUPS) as (keyof typeof FILTER_GROUPS)[])];
 
@@ -37,7 +53,7 @@ export function TreatmentsExplorer() {
         onSelect={setFilter}
         tabs={tabs.map((value) => ({
           value,
-          label: value === "All" ? "All treatments" : value,
+          label: value === "All" ? (labels?.all ?? "All treatments") : (labels?.tabs[value] ?? value),
           count: treatments.filter((t) => inFilter(t, value)).length,
         }))}
       />
@@ -45,7 +61,7 @@ export function TreatmentsExplorer() {
         {treatments
           .filter((t) => inFilter(t, filter))
           .map((t) => (
-            <TreatmentCard key={t.slug} t={t} />
+            <TreatmentCard key={t.slug} t={t} {...(cards?.[t.slug] ?? {})} />
           ))}
       </CardRow>
     </div>

@@ -17,6 +17,8 @@ export type ConcernUi = {
   inBrief: string;
   swipeHint: string;
   learnMore: string;
+  /** Concern card image alt, "{name}". */
+  cardAltConcern: string;
   routing: string;
   /** Quote marks around a myth in the claim/reality pairs. */
   quoteOpen: string;
@@ -76,6 +78,7 @@ const en: ConcernUi = {
   inBrief: "In brief",
   swipeHint: "Swipe the table sideways to see every column.",
   learnMore: "Learn more",
+  cardAltConcern: "{name}, skin concern treated at Kaiteki Skin Aesthetic Clinic",
   routing: "Usually assessed for:",
   quoteOpen: "“",
   quoteClose: "”",
@@ -132,6 +135,7 @@ const zh: ConcernUi = {
   inBrief: "重点摘要",
   swipeHint: "左右滑动表格，查看所有栏目。",
   learnMore: "了解更多",
+  cardAltConcern: "{name}，Kaiteki 皮肤医美诊所处理的皮肤问题",
   routing: "通常会评估：",
   quoteOpen: "“",
   quoteClose: "”",
@@ -227,6 +231,7 @@ const ms: ConcernUi = {
   inBrief: "Ringkasan",
   swipeHint: "Leret jadual ke tepi untuk melihat semua lajur.",
   learnMore: "Ketahui lebih lanjut",
+  cardAltConcern: "{name}, masalah kulit yang dirawat di Kaiteki Skin Aesthetic Clinic",
   routing: "Biasanya dinilai untuk:",
   quoteOpen: "“",
   quoteClose: "”",

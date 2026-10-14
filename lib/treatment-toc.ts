@@ -26,35 +26,84 @@ import type { Heading } from "@/lib/blog";
 export const headingAnchor = (h: string) =>
   h.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
+/** The template's fixed section titles; "{name}" is the treatment name. English
+ *  by default, a locale page passes its own (content/i18n/treatment-ui.ts). */
+export type TreatmentTocLabels = {
+  routesTitle: string;
+  concernsHeading: string;
+  avoidHeading: string;
+  suitableHeading: string;
+  sessionHeading: string;
+  stepsHeading: string;
+  roomHeading: string;
+  afterHeading: string;
+  risksHeading: string;
+  costHeading: string;
+  manufacturerHeading: string;
+  areasHeading: string;
+  comparisonsHeading: string;
+  careHeading: string;
+  devicesHeading: string;
+  faqHeading: string;
+};
+
+const EN_LABELS: TreatmentTocLabels = {
+  routesTitle: "What {name} is used for at Kaiteki",
+  concernsHeading: "Concerns this treatment addresses",
+  avoidHeading: "Who should postpone or avoid it",
+  suitableHeading: "Is this right for you?",
+  sessionHeading: "What a session involves",
+  stepsHeading: "The procedure, step by step",
+  roomHeading: "In the treatment room",
+  afterHeading: "After a session",
+  risksHeading: "Risks, side effects, and what {name} cannot do",
+  costHeading: "What affects the number of sessions, and the cost",
+  manufacturerHeading: "What these treatments do",
+  areasHeading: "Treatment areas",
+  comparisonsHeading: "{name} vs other options",
+  careHeading: "Pre and post treatment care",
+  devicesHeading: "Devices used at Kaiteki",
+  faqHeading: "Common questions",
+};
+
+/** Section anchors from the English headings (anchorSource), so a translated
+ *  page keeps the English ids: headingAnchor keeps only [a-z0-9]. */
+export const treatmentSectionAnchors = (t: Treatment, anchorSource: Treatment = t) =>
+  (t.sections ?? []).map((_, i) => headingAnchor(anchorSource.sections?.[i]?.heading ?? ""));
+
 export function treatmentToc(
   t: Treatment,
   hasTechnology: boolean,
   hasRelatedConcerns = false,
+  labels: TreatmentTocLabels = EN_LABELS,
+  anchorSource: Treatment = t,
 ): Heading[] {
   const h = (id: string, text: string): Heading => ({ id, text, level: 2 });
+  const L = labels;
+  const n = (s: string) => s.replace("{name}", t.name);
+  const anchors = treatmentSectionAnchors(t, anchorSource);
 
   const entries: (Heading | false | undefined | 0)[] = [
-    ...(t.sections ?? []).map((s) => h(headingAnchor(s.heading), s.heading)),
+    ...(t.sections ?? []).map((s, i) => h(anchors[i], s.heading)),
     t.routes?.length
-      ? h("what-it-treats", `What ${t.name} is used for at Kaiteki`)
-      : hasRelatedConcerns && h("concerns-addressed", "Concerns this treatment addresses"),
+      ? h("what-it-treats", n(L.routesTitle))
+      : hasRelatedConcerns && h("concerns-addressed", L.concernsHeading),
     !!t.variantModule && h("which-device", t.variantModule.heading),
     !!t.avoidIf?.length
-      ? h("suitability", "Who should postpone or avoid it")
-      : !!(t.suitableFor?.length || t.notSuitableFor?.length) &&
-        h("suitability", "Is this right for you?"),
-    !!t.sessionSteps?.length && h("your-session", "What a session involves"),
-    !!t.steps?.length && h("steps", "The procedure, step by step"),
-    !!t.procedureImages?.length && h("in-the-treatment-room", "In the treatment room"),
-    !!t.afterSession && h("after-a-session", "After a session"),
-    !!t.risks && h("risks", `Risks, side effects, and what ${t.name} cannot do`),
-    !!t.costFactors && h("sessions-cost", "What affects the number of sessions, and the cost"),
-    !!t.manufacturerImages?.length && h("manufacturer", "What these treatments do"),
-    !!t.areas?.length && h("treatment-areas", "Treatment areas"),
-    !!t.comparisons?.length && h("comparisons", `${t.name} vs other options`),
-    !!(t.preCare?.length || t.postCare?.length) && h("care", "Pre and post treatment care"),
-    hasTechnology && h("devices", "Devices used at Kaiteki"),
-    !!t.faqs?.length && h("faq", "Common questions"),
+      ? h("suitability", L.avoidHeading)
+      : !!(t.suitableFor?.length || t.notSuitableFor?.length) && h("suitability", L.suitableHeading),
+    !!t.sessionSteps?.length && h("your-session", L.sessionHeading),
+    !!t.steps?.length && h("steps", L.stepsHeading),
+    !!t.procedureImages?.length && h("in-the-treatment-room", L.roomHeading),
+    !!t.afterSession && h("after-a-session", L.afterHeading),
+    !!t.risks && h("risks", n(L.risksHeading)),
+    !!t.costFactors && h("sessions-cost", L.costHeading),
+    !!t.manufacturerImages?.length && h("manufacturer", L.manufacturerHeading),
+    !!t.areas?.length && h("treatment-areas", L.areasHeading),
+    !!t.comparisons?.length && h("comparisons", n(L.comparisonsHeading)),
+    !!(t.preCare?.length || t.postCare?.length) && h("care", L.careHeading),
+    hasTechnology && h("devices", L.devicesHeading),
+    !!t.faqs?.length && h("faq", L.faqHeading),
   ];
 
   // An authored section can already carry one of the derived headings, and the

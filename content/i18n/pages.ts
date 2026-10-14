@@ -21,6 +21,7 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
   zh: {
     "/": { status: "draft" },
     "/concerns": { status: "draft" },
+    "/treatments": { status: "draft" },
     "/concerns/acne": { status: "draft" },
     "/concerns/acne-scars": { status: "draft" },
     "/concerns/aging": { status: "draft" },
@@ -41,6 +42,7 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
   ms: {
     "/": { status: "draft" },
     "/concerns": { status: "draft" },
+    "/treatments": { status: "draft" },
     "/concerns/acne": { status: "draft" },
     "/concerns/acne-scars": { status: "draft" },
     "/concerns/aging": { status: "draft" },

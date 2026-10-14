@@ -15,13 +15,15 @@ import type { NonDefaultLocale } from "@/lib/i18n";
 const pathOf = (slug: string) => `/concerns/${slug}`;
 
 /**
- * Every slug with a translation file, live or not. Unsigned ones prerender as
- * a static 404 (the page returns notFound()). Filtering them out here instead
- * leaves production with an empty param list, and with dynamicParams = false
- * Next answers every slug with a 500 (NoFallbackError) rather than a 404.
+ * Every slug with a translation file, live or not: unsigned ones prerender as
+ * a static 404 (the page returns notFound()), so signing a page changes what it
+ * renders, not which routes exist. Never an empty list, which some Next setups
+ * handle badly with dynamicParams = false (`next start` on this standalone
+ * build answers 500; the real standalone server 404s either way, 2026-10-14).
  */
 export function concernLocaleParams(locale: NonDefaultLocale) {
-  return translatedConcernSlugs(locale).map((slug) => ({ slug }));
+  const slugs = translatedConcernSlugs(locale);
+  return (slugs.length ? slugs : ["_none"]).map((slug) => ({ slug }));
 }
 
 export function concernLocaleMeta(locale: NonDefaultLocale, slug: string): Metadata {
