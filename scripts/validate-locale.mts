@@ -14,6 +14,7 @@
 //   L-06 warn  array lengths differ from English (extra items are ignored)
 //   L-07 fail  a ledger entry (content/i18n/pages.ts) with no translation file
 //   L-08 warn  a translation file with no ledger entry (it has no URL yet)
+//   L-09 fail  a translation file missing from the static index (pnpm i18n:index)
 
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
@@ -137,6 +138,11 @@ for (const locale of ["zh", "ms"] as const) {
     }
 
     if (!ledger[`/concerns/${slug}`]) warn(where, "L-08", "no ledger entry in content/i18n/pages.ts, so no URL");
+  }
+
+  const index = readFileSync(join(root, "content", "i18n", "concerns", "index.ts"), "utf8");
+  for (const f of files) {
+    if (!index.includes(`"./${locale}/${f}"`)) fail(`${locale}/${f.slice(0, -5)}`, "L-09", "not in content/i18n/concerns/index.ts: run pnpm i18n:index");
   }
 
   for (const path of Object.keys(ledger)) {
