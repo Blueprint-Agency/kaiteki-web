@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import { track } from "@/components/Analytics";
-import { SkinDepthDiagram } from "@/components/SkinDepthDiagram";
+import { SkinDepthDiagram, type SkinDiagramLabels } from "@/components/SkinDepthDiagram";
 import type { ConcernVariant } from "@/lib/types";
 
 type TabSet = Extract<ConcernVariant, { kind: "tabs" }>;
@@ -24,9 +24,15 @@ type Tabs = TabSet["tabs"];
 export function VariantTabs({
   tabs,
   diagram,
+  label = "Which type",
+  routingLabel = "Usually assessed for:",
+  diagramLabels,
 }: {
+  diagramLabels?: SkinDiagramLabels;
+  routingLabel?: string;
   tabs: Tabs;
   diagram?: TabSet["diagram"];
+  label?: string;
 }) {
   const [active, setActive] = useState(0);
   const refs = useRef<(HTMLButtonElement | null)[]>([]);
@@ -56,7 +62,7 @@ export function VariantTabs({
     <div className="mt-10">
       <div
         role="tablist"
-        aria-label="Which type"
+        aria-label={label}
         onKeyDown={onKeyDown}
         className="flex flex-wrap gap-3"
       >
@@ -100,7 +106,7 @@ export function VariantTabs({
       >
         {diagram === "skin-depth" && (
           <div className="mt-9 lg:order-2">
-            <SkinDepthDiagram depth={tabs[active].depth ?? "both"} />
+            <SkinDepthDiagram depth={tabs[active].depth ?? "both"} labels={diagramLabels} />
           </div>
         )}
         <div className="lg:order-1">
@@ -135,7 +141,7 @@ export function VariantTabs({
               {t.routing && (
                 <p className="mt-6 max-w-[62ch] leading-relaxed text-ink-700">
                   <strong className="font-semibold text-espresso">
-                    Usually assessed for:
+                    {routingLabel}
                   </strong>{" "}
                   {t.routing}
                 </p>

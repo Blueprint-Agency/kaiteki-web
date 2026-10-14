@@ -11,10 +11,16 @@ import type { Doctor } from "@/lib/types";
 export function AuthorCard({
   doctor,
   label = "About the author",
+  viewProfile = "View full profile",
+  compact = false,
 }: {
   doctor: Doctor;
   /** Concern and treatment pages reuse the card for the medical reviewer. */
   label?: string;
+  viewProfile?: string;
+  /** Name, credentials and MMC only: role and bio are English-only data, so
+   *  locale pages leave them out rather than show English under a prefix. */
+  compact?: boolean;
 }) {
   return (
     <section className="rounded-2xl border border-hairline bg-surface p-6 sm:p-8">
@@ -41,19 +47,19 @@ export function AuthorCard({
               {doctor.fullName}
             </Link>
           </h2>
-          {doctor.role && <p className="mt-1 text-sm font-medium text-accent">{doctor.role}</p>}
+          {!compact && doctor.role && <p className="mt-1 text-sm font-medium text-accent">{doctor.role}</p>}
           <p className="ledger mt-2">
             {doctor.credentials}
             {doctor.mmc ? ` · ${doctor.mmc}` : ""}
           </p>
-          {doctor.bio?.[0] && (
+          {!compact && doctor.bio?.[0] && (
             <p className="mt-3 text-sm leading-relaxed text-ink-700">{doctor.bio[0]}</p>
           )}
           <Link
             href={`/doctors/${doctor.slug}`}
             className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-espresso"
           >
-            View full profile <ArrowRight size={16} />
+            {viewProfile} <ArrowRight size={16} />
           </Link>
         </div>
       </div>

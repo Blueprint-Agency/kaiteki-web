@@ -5,12 +5,22 @@ import { GoogleG, Star } from "./icons";
 import { branches, GOOGLE_REVIEWS_READ_ON } from "@/content/data/branches";
 import { reviewsFor, reviewsAcrossBranches } from "@/content/data/reviews";
 import type { Branch, GoogleReview } from "@/lib/types";
+import type { HomeCopy } from "@/content/i18n/home";
 
-// Formatted once — every page using this block is statically rendered.
-const readOn = new Date(GOOGLE_REVIEWS_READ_ON).toLocaleDateString("en-GB", {
-  month: "short",
-  year: "numeric",
-});
+// Formatted per render, but every page using this block is statically rendered.
+const readOnIn = (intl: string) =>
+  new Date(GOOGLE_REVIEWS_READ_ON).toLocaleDateString(intl, { month: "short", year: "numeric" });
+
+/** English strings; the homepage passes its locale's copy (content/i18n/home.ts). */
+const EN_COPY: HomeCopy["reviews"] = {
+  heading: "What our patients say",
+  count: "{n} Google reviews",
+  countAll: "{n} Google reviews across 9 branches",
+  byBranch: "Reviews by branch",
+  note: "Reviews are shown as written, as of {date}. Open the Google profile for the full, unfiltered list.",
+  viewOnGoogle: "View on Google",
+  intl: "en-GB",
+};
 
 /** Five stars, filled to `rating`. The row is decorative — the adjacent number
  *  is the accessible value — so it carries no label of its own. */
@@ -24,7 +34,15 @@ function Stars({ rating, size = 15 }: { rating: number; size?: number }) {
   );
 }
 
-function ReviewCard({ review, profileUrl }: { review: GoogleReview; profileUrl: string }) {
+function ReviewCard({
+  review,
+  profileUrl,
+  viewOnGoogle,
+}: {
+  review: GoogleReview;
+  profileUrl: string;
+  viewOnGoogle: string;
+}) {
   return (
     <figure className="flex h-full flex-col rounded-2xl border border-hairline bg-surface p-5">
       <figcaption className="flex items-start justify-between gap-3">
@@ -61,7 +79,7 @@ function ReviewCard({ review, profileUrl }: { review: GoogleReview; profileUrl: 
         rel="noopener noreferrer"
         className="mt-auto pt-4 text-xs text-ink-500 underline-offset-4 hover:text-espresso hover:underline"
       >
-        View on Google
+        {viewOnGoogle}
       </a>
     </figure>
   );
@@ -87,9 +105,12 @@ function ReviewCard({ review, profileUrl }: { review: GoogleReview; profileUrl: 
 export function GoogleReviews({
   branch,
   className = "",
+  copy = EN_COPY,
 }: {
   branch?: Branch;
   className?: string;
+  /** Chain-wide strings for a non-English homepage. Reviews stay as written. */
+  copy?: HomeCopy["reviews"];
 }) {
   const reviews = branch ? reviewsFor(branch.slug) : reviewsAcrossBranches();
   if (reviews.length === 0) return null;
@@ -107,7 +128,7 @@ export function GoogleReviews({
     : rated.reduce((n, b) => n + b.googleRating! * b.googleReviewCount!, 0) / totalCount;
 
   const profileUrl = branch?.mapUrl ?? "/locations";
-  const heading = branch ? `What patients say about ${branch.name}` : "What our patients say";
+  const heading = branch ? `What patients say about ${branch.name}` : copy.heading;
 
   return (
     <section className={`relative overflow-hidden ${className}`}>
@@ -135,8 +156,7 @@ export function GoogleReviews({
                   <Stars rating={rating} size={16} />
                 </div>
                 <p className="mt-0.5 text-sm text-ink-500">
-                  {totalCount.toLocaleString("en-GB")} Google reviews
-                  {branch ? "" : " across 9 branches"}
+                  {(branch ? copy.count : copy.countAll).replace("{n}", totalCount.toLocaleString(copy.intl))}
                 </p>
               </div>
             </div>
@@ -147,12 +167,11 @@ export function GoogleReviews({
               className="mt-5 inline-flex items-center gap-2 rounded-full border border-hairline bg-surface px-4 py-2 text-sm font-medium text-ink-700 transition-colors hover:border-mocha hover:text-espresso"
             >
               <GoogleG size={16} />
-              {branch ? "Read all reviews on Google" : "Reviews by branch"}
+              {branch ? "Read all reviews on Google" : copy.byBranch}
             </a>
 
             <p className="mt-4 max-w-[34ch] text-xs leading-relaxed text-ink-500">
-              Reviews are shown as written, as of {readOn}. Open the Google profile for
-              the full, unfiltered list.
+              {copy.note.replace("{date}", readOnIn(copy.intl))}
             </p>
           </div>
 
@@ -168,7 +187,7 @@ export function GoogleReviews({
                 key={`${r.author}-${r.posted}`}
                 className="w-[80%] shrink-0 snap-start sm:w-[18rem] [&>*]:h-full"
               >
-                <ReviewCard review={r} profileUrl={profileUrl} />
+                <ReviewCard review={r} profileUrl={profileUrl} viewOnGoogle={copy.viewOnGoogle} />
               </div>
             ))}
           </div>

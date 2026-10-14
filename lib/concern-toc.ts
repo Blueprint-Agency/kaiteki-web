@@ -29,28 +29,74 @@ export const headingAnchor = (h: string) =>
 
 /** The results section's h2. A section holding only illustrations must not be
  *  headed as patient results — that is the claim the illustration avoids. */
-export const resultsHeading = (results: NonNullable<Concern["results"]>) =>
-  results.every((r) => r.illustration) ? "How treatment works, illustrated" : "Results from Kaiteki patients";
+export const resultsHeading = (
+  results: NonNullable<Concern["results"]>,
+  labels: { illustrated: string; patients: string } = {
+    illustrated: "How treatment works, illustrated",
+    patients: "Results from Kaiteki patients",
+  },
+) => (results.every((r) => r.illustration) ? labels.illustrated : labels.patients);
 
-export function concernToc(c: Concern, hasTechnology: boolean): Heading[] {
+/** The template's fixed section titles. English by default; a locale page
+ *  passes its own (content/i18n/concern-ui.ts). */
+export type TocLabels = {
+  seeDoctor: string;
+  treatments: string;
+  compare: string;
+  results: { illustrated: string; patients: string };
+  technology: string;
+  risks: string;
+  firstVisit: string;
+  cost: string;
+  faq: string;
+};
+
+const EN_LABELS: TocLabels = {
+  seeDoctor: "When to see a doctor",
+  treatments: "Treatment options at Kaiteki",
+  compare: "Which treatment suits which type?",
+  results: { illustrated: "How treatment works, illustrated", patients: "Results from Kaiteki patients" },
+  technology: "Technology used",
+  risks: "Risks and what to expect",
+  firstVisit: "What your first visit involves",
+  cost: "What affects the cost",
+  faq: "Common questions",
+};
+
+/**
+ * Section anchors for `c`. Ids come from `anchorSource`'s headings: on a
+ * locale page that is the English record, because headingAnchor keeps only
+ * [a-z0-9] and a Chinese heading would slug to nothing. Same ids in every
+ * language also keeps deep links stable across the switcher.
+ */
+export const sectionAnchors = (c: Concern, anchorSource: Concern = c) =>
+  (c.sections ?? []).map((_, i) => headingAnchor(anchorSource.sections?.[i]?.heading ?? ""));
+
+export function concernToc(
+  c: Concern,
+  hasTechnology: boolean,
+  labels: TocLabels = EN_LABELS,
+  anchorSource: Concern = c,
+): Heading[] {
+  const anchors = sectionAnchors(c, anchorSource);
   const entries: (Heading | false | undefined | 0)[] = [
-    ...(c.sections ?? []).map((s) => ({ id: headingAnchor(s.heading), text: s.heading, level: 2 as const })),
+    ...(c.sections ?? []).map((s, i) => ({ id: anchors[i], text: s.heading, level: 2 as const })),
     !!c.drivers?.items.length && { id: "causes", text: c.drivers.heading, level: 2 as const },
     !!c.variant && { id: "which-type", text: c.variant.heading, level: 2 as const },
     !!c.locationBlock?.cards.length && { id: "where", text: c.locationBlock.heading, level: 2 as const },
     !!c.seeDoctor?.triggers.length && {
       id: "see-a-doctor",
-      text: c.seeDoctor.heading ?? "When to see a doctor",
+      text: c.seeDoctor.heading ?? labels.seeDoctor,
       level: 2 as const,
     },
-    c.treatments.length > 0 && { id: "treatments", text: "Treatment options at Kaiteki", level: 2 as const },
-    !!c.compare?.rows.length && { id: "compare", text: "Which treatment suits which type?", level: 2 as const },
-    !!c.results?.length && { id: "results", text: resultsHeading(c.results), level: 2 as const },
-    hasTechnology && { id: "technology", text: "Technology used", level: 2 as const },
-    !!c.risks?.items.length && { id: "risks", text: "Risks and what to expect", level: 2 as const },
-    !!c.firstVisit?.steps.length && { id: "first-visit", text: "What your first visit involves", level: 2 as const },
-    !!c.costFactors?.factors.length && { id: "cost", text: "What affects the cost", level: 2 as const },
-    !!c.faqs?.length && { id: "faq", text: "Common questions", level: 2 as const },
+    c.treatments.length > 0 && { id: "treatments", text: labels.treatments, level: 2 as const },
+    !!c.compare?.rows.length && { id: "compare", text: labels.compare, level: 2 as const },
+    !!c.results?.length && { id: "results", text: resultsHeading(c.results, labels.results), level: 2 as const },
+    hasTechnology && { id: "technology", text: labels.technology, level: 2 as const },
+    !!c.risks?.items.length && { id: "risks", text: labels.risks, level: 2 as const },
+    !!c.firstVisit?.steps.length && { id: "first-visit", text: labels.firstVisit, level: 2 as const },
+    !!c.costFactors?.factors.length && { id: "cost", text: labels.cost, level: 2 as const },
+    !!c.faqs?.length && { id: "faq", text: labels.faq, level: 2 as const },
   ];
   return entries.filter((e): e is Heading => Boolean(e));
 }

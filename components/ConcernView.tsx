@@ -30,10 +30,15 @@ import { postsFor } from "@/content/data/blog";
 import { technologyOfConcern, treatmentsOfConcern } from "@/content/data/relations";
 import { reviewerByline } from "@/content/data/doctors";
 import { concernReviewer } from "@/lib/signoff";
-import { concernToc, headingAnchor } from "@/lib/concern-toc";
+import { concernToc, sectionAnchors } from "@/lib/concern-toc";
 import { TOC_MIN_HEADINGS } from "@/lib/toc";
-import { waForConcern } from "@/lib/wa";
+import { waForConcern, waLink } from "@/lib/wa";
 import type { Concern } from "@/lib/types";
+import { concernUi } from "@/content/i18n/concern-ui";
+import { chrome, fmt } from "@/content/i18n/chrome";
+import { term } from "@/content/i18n/terms";
+import { lhref, localeReviewer } from "@/lib/locale-pages";
+import { localePath, type Locale } from "@/lib/i18n";
 
 /**
  * Concern-page template v2 — the editorial banner layout (docs/12).
@@ -54,14 +59,14 @@ import type { Concern } from "@/lib/types";
  * there is no placeholder furniture to advertise what is missing.
  */
 
-const dmy = (iso: string) =>
-  new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+const dmy = (iso: string, intl = "en-GB") =>
+  new Date(iso).toLocaleDateString(intl, { day: "numeric", month: "short", year: "numeric" });
 
 /** Rule R-08 — the next review is always 12 months on, so it is derived. */
-function nextReview(iso: string) {
+function nextReview(iso: string, intl = "en-GB") {
   const d = new Date(iso);
   d.setFullYear(d.getFullYear() + 1);
-  return dmy(d.toISOString());
+  return dmy(d.toISOString(), intl);
 }
 
 /**
@@ -144,37 +149,77 @@ function Bleed({ children }: { children: ReactNode }) {
   return <div className="-mx-5 sm:-mx-6 lg:mx-0">{children}</div>;
 }
 
-export function ConcernView({ c }: { c: Concern }) {
-  // A reviewer byline is only shown for a page a doctor has actually signed off
-  // (config/concern-signoff.json). Unsigned pages show no byline.
-  const review = concernReviewer(c.slug);
+/**
+ * `c` is the record to render: English, or a locale overlay of it
+ * (content/i18n/concern-locale.ts). `source` is the English record, which a
+ * locale page passes so section anchors stay the English slugs.
+ */
+export function ConcernView({
+  c,
+  locale = "en",
+  source = c,
+}: {
+  c: Concern;
+  locale?: Locale;
+  source?: Concern;
+}) {
+  const en = locale === "en";
+  const ui = concernUi[locale];
+  const path = `/concerns/${c.slug}`;
+  // A reviewer byline is only shown for a page a doctor has actually signed off:
+  // config/concern-signoff.json for English, the locale ledger
+  // (content/i18n/pages.ts) for a translation, which needs its own reader.
+  const review = en ? concernReviewer(c.slug) : localeReviewer(locale, path);
   const options = treatmentsOfConcern(c.slug);
   const techItems = technologyOfConcern(c.slug);
-  const posts = postsFor("concerns", c.slug);
-  const wa = waForConcern(c.name);
+  // The blog is English-only, so a locale page lists no "read next" posts.
+  const posts = en ? postsFor("concerns", c.slug) : [];
+  const wa = en ? waForConcern(c.name) : waLink(fmt(chrome[locale].wa.about, { name: c.name }));
+  const date = (iso: string) => dmy(iso, ui.intl);
 
   const related = (c.relatedConcerns ?? [])
     .map((r) => {
       const target = concernBySlug(r.slug);
-      return target ? { slug: r.slug, name: target.name, reason: r.reason } : null;
+      return target
+        ? {
+            slug: r.slug,
+            name: term(locale, "concern", r.slug, target.name),
+            reason: r.reason,
+            href: lhref(locale, `/concerns/${r.slug}`),
+          }
+        : null;
     })
-    .filter((r): r is { slug: string; name: string; reason: string } => Boolean(r));
+    .filter((r): r is { slug: string; name: string; reason: string; href: string } => Boolean(r));
+  const anchors = sectionAnchors(c, source);
 
   // The rail is fed from the same list the QA gate checks jump-nav anchors
   // against, so every entry scrolls to a section this page actually renders.
   // Below ArticleToc's own 3-heading threshold there is no contents at all, and
   // the rail column is not reserved either — an empty 15rem gutter is the thing
   // this layout exists to remove.
-  const headings = concernToc(c, techItems.length > 0);
+  const headings = concernToc(
+    c,
+    techItems.length > 0,
+    {
+      seeDoctor: ui.seeDoctor,
+      treatments: ui.treatmentsHeading,
+      compare: ui.compareHeading,
+      results: { illustrated: ui.resultsIllustrated, patients: ui.resultsPatients },
+      technology: ui.technologyHeading,
+      risks: ui.risksHeading,
+      firstVisit: ui.firstVisitHeading,
+      cost: ui.costHeading,
+      faq: ui.faqHeading,
+    },
+    source,
+  );
   const hasRail = headings.length >= TOC_MIN_HEADINGS;
 
   // Ghost CTA — sits in the hero next to the summary, on both hero variants.
   const cta = (
     <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
-      <WhatsAppButton href={wa} variant="outline" position="hero" label="Book a free consultation" />
-      <p className="text-sm text-ink-500">
-        Free, about 20–30 minutes, no obligation to book treatment.
-      </p>
+      <WhatsAppButton href={wa} variant="outline" position="hero" label={ui.heroCta} />
+      <p className="text-sm text-ink-500">{ui.heroNote}</p>
     </div>
   );
 
@@ -187,7 +232,10 @@ export function ConcernView({ c }: { c: Concern }) {
         {/* Breadcrumbs stay above the H1 (docs/04 §5, docs/06 §4.9), which on a
             banner page means above the banner rather than under it. */}
         <Container className="pt-6">
-          <Breadcrumbs items={[{ label: "Concerns", href: "/concerns" }, { label: c.name }]} />
+          <Breadcrumbs
+            home={{ label: ui.home, href: localePath(locale, "/") }}
+            items={[{ label: ui.concerns, href: lhref(locale, "/concerns") }, { label: c.name }]}
+          />
         </Container>
 
         {c.banner ? (
@@ -198,7 +246,7 @@ export function ConcernView({ c }: { c: Concern }) {
                 below the image instead of over a face. */}
             <Container className="sm:absolute sm:inset-0 sm:flex sm:items-center">
               <div className="pt-8 sm:ml-auto sm:w-1/2 sm:pt-0">
-                <p className="kicker">Concern · {c.group}</p>
+                <p className="kicker">{fmt(ui.kicker, { group: term(locale, "group", c.group, c.group) })}</p>
                 <h1 className="h-hero mt-4">{c.name}</h1>
                 <p className="mt-5 max-w-[46ch] text-lg leading-relaxed text-ink-700">
                   {c.summary}
@@ -213,7 +261,7 @@ export function ConcernView({ c }: { c: Concern }) {
           // byline's own padding is what normally separates them.
           <Container className={review ? "pt-6" : "pt-6 pb-10 sm:pb-12"}>
             <div className="max-w-[52ch]">
-              <p className="kicker">Concern · {c.group}</p>
+              <p className="kicker">{fmt(ui.kicker, { group: term(locale, "group", c.group, c.group) })}</p>
               <h1 className="h-hero mt-4">{c.name}</h1>
               <p className="mt-5 text-lg leading-relaxed text-ink-700">{c.summary}</p>
               {cta}
@@ -227,9 +275,10 @@ export function ConcernView({ c }: { c: Concern }) {
               <ReviewByline
                 doctorName={review.doctor.fullName}
                 mmc={review.doctor.mmc}
-                date={dmy(review.date)}
+                date={date(review.date)}
                 photo={review.doctor.photo}
-                href={`/doctors/${review.doctor.slug}`}
+                href={lhref(locale, `/doctors/${review.doctor.slug}`)}
+                label={ui.bylineLabel}
               />
             </div>
           </Container>
@@ -243,24 +292,24 @@ export function ConcernView({ c }: { c: Concern }) {
           take the column's full width. ─────────────────────────────────────── */}
       <Reading
         hasRail={hasRail}
-        rail={hasRail ? <ArticleToc headings={headings} variant="sidebar" /> : undefined}
+        rail={hasRail ? <ArticleToc headings={headings} variant="sidebar" label={ui.onThisPage} /> : undefined}
       >
         {hasRail && (
           <div className="pt-10 lg:hidden">
-            <ArticleToc headings={headings} />
+            <ArticleToc headings={headings} label={ui.onThisPage} />
           </div>
         )}
 
         <Section>
           <div className="max-w-[68ch]">
-            <LeadAnswer>{c.leadAnswer}</LeadAnswer>
+            <LeadAnswer label={ui.inBrief}>{c.leadAnswer}</LeadAnswer>
           </div>
         </Section>
 
         {/* 03 · What is X — anchor ids derive from the heading, so the rail
             addresses any section without a second authored field. */}
-        {c.sections?.map((s) => (
-          <Section key={s.heading} id={headingAnchor(s.heading)}>
+        {c.sections?.map((s, i) => (
+          <Section key={anchors[i] || s.heading} id={anchors[i]}>
             <h2 className="h-section">{s.heading}</h2>
             <div className="prose mt-6 max-w-[68ch] space-y-5 leading-[1.75] text-ink-700">
               {s.body.map((p, i) => (
@@ -282,34 +331,40 @@ export function ConcernView({ c }: { c: Concern }) {
         )) ?? (
           <Section>
             <p className="prose max-w-[68ch] text-lg leading-relaxed text-ink-700">
-              {c.summary} A full, doctor-reviewed guide to {c.name.toLowerCase()} is being
-              finalised. Our doctors can talk you through the options at a free consultation.
+              {fmt(ui.pending, { summary: c.summary, name: en ? c.name.toLowerCase() : c.name })}
             </p>
           </Section>
         )}
 
         {/* 04 · 05 · 06 — the three archetype-variant blocks. */}
         <DriversBlock d={c.drivers} figures={c.figures} />
-        <VariantBlock v={c.variant} illustrations={c.illustrations} slides={c.slides} />
+        {/* Slides carry English copy burned into the artwork, so a locale page
+            leaves them out until there is artwork in its language. */}
+        <VariantBlock
+          v={c.variant}
+          illustrations={c.illustrations}
+          slides={en ? c.slides : undefined}
+          ui={ui}
+        />
         <LocationBlock l={c.locationBlock} />
 
         {/* 07 */}
-        <SeeDoctorBlock s={c.seeDoctor} />
+        <SeeDoctorBlock s={c.seeDoctor} ui={ui} />
 
         {/* 09 · 10 */}
-        <TreatmentsBlock c={c} options={options} />
-        <CompareBlock c={c.compare} />
+        <TreatmentsBlock c={c} options={options} ui={ui} locale={locale} />
+        <CompareBlock c={c.compare} ui={ui} />
 
         {/* 08 — band 1 of 3, espresso: the conversion moment, placed where the
             visitor has just read the options and cannot pick between them alone. */}
         {/* A rounded card inside the column at every width, so it does not bleed. */}
-        <CtaMid cta={c.ctaMid} href={wa} position="mid" />
+        <CtaMid cta={c.ctaMid} href={wa} position="mid" copy={en ? undefined : ui.ctaMid} />
 
         {/* Results — breaks the prose measure but stays in the column, so the
             contents rail keeps running beside it. It renders its own disclaimer
             (ADR-0001 §2). */}
         <Bleed>
-          <ResultsBlock items={c.results} />
+          <ResultsBlock items={c.results} ui={ui} locale={locale} />
         </Bleed>
 
         {/* 15 · technology. The lead sentence is the point — a bare logo wall
@@ -319,15 +374,28 @@ export function ConcernView({ c }: { c: Concern }) {
             the sections after it. */}
         {techItems.length > 0 && (
           <Section id="technology">
-            <h2 className="h-section">Technology used</h2>
+            <h2 className="h-section">{ui.technologyHeading}</h2>
             <p className="mt-6 max-w-[62ch] leading-relaxed text-ink-700">
-              {c.technologyIntro ??
-                "Having more than one platform means the doctor can match the device to your skin type and to what is being treated, rather than fitting your skin to a single machine."}
+              {c.technologyIntro ?? ui.technologyIntro}
             </p>
             <ul className="mt-8 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4">
               {techItems.map((x) => (
                 <li key={x.slug} className="w-[17rem] shrink-0 snap-start">
-                  <TechnologyCard x={x} showUsedIn={false} className="h-full" />
+                  <TechnologyCard
+                    x={x}
+                    showUsedIn={false}
+                    className="h-full"
+                    // Device summaries are English-only data until the
+                    // technology pages get their own locale round.
+                    {...(en
+                      ? {}
+                      : {
+                          summary: null,
+                          typeLabel: ui.techType[x.type],
+                          learnMore: ui.learnMore,
+                          href: lhref(locale, `/technology/${x.slug}`),
+                        })}
+                  />
                 </li>
               ))}
             </ul>
@@ -335,25 +403,25 @@ export function ConcernView({ c }: { c: Concern }) {
         )}
 
         {/* 13 · the safety notice. */}
-        <ConcernRisksBlock r={c.risks} />
+        <ConcernRisksBlock r={c.risks} ui={ui} />
 
         {/* 12 · 14 · 16 · 17 — the tail, past the three bands. */}
-        <FirstVisitBlock f={c.firstVisit} images={c.visitImages} />
-        <ConcernCostBlock c={c.costFactors} href={wa} />
+        <FirstVisitBlock f={c.firstVisit} images={c.visitImages} ui={ui} />
+        <ConcernCostBlock c={c.costFactors} href={wa} ui={ui} />
 
         {/* 16 — native <details>, answers always in the DOM (R-10). */}
         {c.faqs && c.faqs.length > 0 && (
           <Section id="faq">
-            <h2 className="h-section">Common questions</h2>
+            <h2 className="h-section">{ui.faqHeading}</h2>
             <div className="mt-6">
-              <Faq items={c.faqs} />
+              <Faq items={c.faqs} anchorFrom={source.faqs} />
             </div>
           </Section>
         )}
 
         <ReadNext posts={posts} />
 
-        <RelatedConcernsBlock items={related} />
+        <RelatedConcernsBlock items={related} ui={ui} allHref={lhref(locale, "/concerns")} />
       </Reading>
 
 
@@ -364,18 +432,16 @@ export function ConcernView({ c }: { c: Concern }) {
       <Container className="border-t border-hairline py-14 sm:py-20">
         <div className="mx-auto max-w-[62ch] text-center">
           <h2 className="h-section mx-auto max-w-[18ch]">
-            {c.ctaHeading ?? "Have a doctor look at it"}
+            {c.ctaHeading ?? ui.bottomHeading}
           </h2>
           <p className="mx-auto mt-5 max-w-[52ch] leading-relaxed text-ink-700">
-            The consultation is free, takes about 20 to 30 minutes, and there is no obligation to
-            book treatment afterwards. A doctor will examine {c.ctaAssesses ?? "your skin"} and
-            talk you through what is, and is not, worth doing.
+            {fmt(ui.bottomBody, { assesses: c.ctaAssesses ?? ui.bottomAssesses })}
           </p>
           <WhatsAppButton
             href={wa}
             size="lg"
             position="bottom"
-            label="Book a free consultation"
+            label={ui.bottomCta}
             className="mt-8"
           />
         </div>
@@ -387,12 +453,17 @@ export function ConcernView({ c }: { c: Concern }) {
       {review && (
         <Container className="py-12 sm:py-14">
           <div className="max-w-[62ch] space-y-8">
-            <AuthorCard doctor={review.doctor} label="Medically reviewed by" />
+            <AuthorCard
+              doctor={review.doctor}
+              label={ui.reviewedByCard}
+              viewProfile={ui.viewProfile}
+              compact={!en}
+            />
             <Ledger
               rows={[
-                { label: "Reviewed by", value: reviewerByline(review.doctor) },
-                { label: "Last reviewed", value: dmy(review.date) },
-                { label: "Next review due", value: nextReview(review.date) },
+                { label: ui.ledgerReviewedBy, value: reviewerByline(review.doctor) },
+                { label: ui.ledgerLast, value: date(review.date) },
+                { label: ui.ledgerNext, value: nextReview(review.date, ui.intl) },
               ]}
             />
           </div>

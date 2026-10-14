@@ -17,6 +17,8 @@
     "validate:concerns": "node --experimental-strip-types scripts/validate-concerns.mts",
     "test:redirects": "node --experimental-strip-types scripts/test-redirects.mts",
     "check:blog": "node --experimental-strip-types scripts/check-blog.mts",
+    "validate:locale": "node --experimental-strip-types scripts/validate-locale.mts",
+    "i18n:export-concerns": "node --experimental-strip-types scripts/i18n-export-concerns.mts",
     "check:sameness": "node --experimental-strip-types scripts/check-sameness.mts",
     "check:cost": "node --experimental-strip-types scripts/check-cost-factors.mts",
     "audit:concern-media": "node --env-file-if-exists=.env.local scripts/media-audit.mjs concerns",

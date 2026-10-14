@@ -4,6 +4,7 @@
 import { site } from "@/lib/site";
 import { WHATSAPP_NUMBER } from "@/lib/wa";
 import type { Branch, Doctor } from "@/lib/types";
+import { defaultLocale, localeMeta, localePath, type Locale } from "@/lib/i18n";
 
 // Stable identity anchors other nodes reference by @id.
 export const orgId = `${site.url}/#organization`;
@@ -169,11 +170,14 @@ export function collectionPageNode({
   name,
   description,
   items,
+  locale = defaultLocale,
 }: {
+  /** Already locale-prefixed by the caller (items' paths are too). */
   path: string;
   name: string;
   description: string;
   items: ListItemInput[];
+  locale?: Locale;
 }) {
   const url = abs(path);
   return {
@@ -183,7 +187,7 @@ export function collectionPageNode({
     url,
     name,
     description,
-    inLanguage: "en-MY",
+    inLanguage: localeMeta[locale].bcp47,
     isPartOf: { "@id": websiteId },
     mainEntity: {
       "@type": "ItemList",
@@ -217,14 +221,17 @@ export function webPageNode({
   description,
   type = "WebPage",
   image,
+  locale = defaultLocale,
 }: {
   path: string;
   name: string;
   description: string;
   type?: "WebPage" | "AboutPage" | "ContactPage";
   image?: string;
+  /** Locale of this render; `path` stays locale-neutral. */
+  locale?: Locale;
 }) {
-  const url = abs(path);
+  const url = abs(localePath(locale, path));
   return {
     "@context": "https://schema.org",
     "@type": type,
@@ -232,7 +239,7 @@ export function webPageNode({
     url,
     name,
     description,
-    inLanguage: "en-MY",
+    inLanguage: localeMeta[locale].bcp47,
     isPartOf: { "@id": websiteId },
     about: { "@id": orgId },
     ...(image ? { primaryImageOfPage: abs(image) } : {}),
@@ -386,8 +393,9 @@ export function medicalWebPageNode({
   dateModified,
   image,
   reviewer,
-}: MedicalPageInput) {
-  const url = abs(path);
+  locale = defaultLocale,
+}: MedicalPageInput & { locale?: Locale }) {
+  const url = abs(localePath(locale, path));
   return {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
@@ -395,7 +403,7 @@ export function medicalWebPageNode({
     url,
     name,
     description,
-    inLanguage: "en-MY",
+    inLanguage: localeMeta[locale].bcp47,
     isPartOf: { "@id": websiteId },
     ...(about
       ? {

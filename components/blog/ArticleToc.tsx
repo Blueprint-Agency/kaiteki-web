@@ -16,9 +16,11 @@ import { TOC_MIN_HEADINGS } from "@/lib/toc";
 export function ArticleToc({
   headings,
   variant = "inline",
+  label = "On this page",
 }: {
   headings: Heading[];
   variant?: "inline" | "sidebar";
+  label?: string;
 }) {
   // On a long article, listing every H3 (each FAQ question, each ingredient)
   // turns the contents into a wall taller than the opening section and pushes
@@ -35,10 +37,10 @@ export function ArticleToc({
 
   return (
     <nav
-      aria-label="On this page"
+      aria-label={label}
       className={sidebar ? "" : "rounded-2xl border border-hairline bg-tint/70 p-5 sm:p-6"}
     >
-      <p className="text-xs font-semibold uppercase tracking-[0.14em] text-mocha">On this page</p>
+      <p className="text-xs font-semibold uppercase tracking-[0.14em] text-mocha">{label}</p>
       <ol className={sidebar ? "mt-4 border-t border-hairline pt-4" : "mt-4 space-y-2.5"}>
         {list.map((h) => (
           <li key={h.id} className={sidebar ? "" : h.level === 3 ? "pl-4" : ""}>

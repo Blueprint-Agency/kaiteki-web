@@ -6,6 +6,8 @@ import { concerns } from "@/content/data/concerns";
 import { branches } from "@/content/data/branches";
 import { technology } from "@/content/data/technology";
 import { posts, activeCategories, categorySlug } from "@/content/data/blog";
+import { localePath } from "@/lib/i18n";
+import { hreflangFor, liveLocaleEntries } from "@/lib/locale-pages";
 
 // Native Next.js sitemap — served at /sitemap.xml, regenerated on each build
 // from the same data the pages render, so it never drifts out of sync.
@@ -40,11 +42,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...activeCategories().map((c) => ({ path: `/blog/category/${categorySlug(c)}` })),
   ];
 
-  return [
+  const english = [
     ...staticPaths.map((path) => ({ path } as { path: string; lastmod?: string })),
     ...dynamicEntries,
-  ].map(({ path, lastmod }) => ({
-    url: url(path),
-    ...(lastmod ? { lastModified: lastmod } : {}),
+  ];
+  // Chinese and Malay pages exist only once signed (lib/locale-pages.ts). Each
+  // member of a language set carries the full reciprocal hreflang set, the
+  // sitemap form of the <link rel="alternate"> tags pageMeta() emits. Their
+  // lastmod is the sign-off date: that is when the locale copy last changed.
+  const localized = liveLocaleEntries().map(({ locale, path, signed }) => ({
+    loc: localePath(locale, path),
+    path,
+    lastmod: signed,
   }));
+
+  return [...english.map((e) => ({ ...e, loc: e.path })), ...localized].map(({ loc, path, lastmod }) => {
+    const languages = hreflangFor(path);
+    return {
+      url: url(loc),
+      ...(lastmod ? { lastModified: lastmod } : {}),
+      ...(languages
+        ? { alternates: { languages: Object.fromEntries(Object.entries(languages).map(([k, v]) => [k, url(v)])) } }
+        : {}),
+    };
+  });
 }

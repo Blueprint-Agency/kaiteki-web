@@ -1,0 +1,367 @@
+{
+  "slug": "acne-scars",
+  "name": "Parut Jerawat",
+  "group": "Skin",
+  "image": "https://cdn.kaiteki.my/concerns/acne-scars/card.jpg",
+  "summary": "Parut jerawat ialah perubahan pada struktur kulit, bukan warnanya, dan jenis parut menentukan apa yang mungkin membantu. Doktor akan menilai jenis parut yang anda ada.",
+  "leadAnswer": "Parut jerawat ialah perubahan pada struktur kulit, terasa sebagai lekuk atau permukaan tidak rata selepas keradangan reda. Parut tidak pudar dengan sendirinya; ia dibentuk semula secara beransur-ansur dalam beberapa bulan. Pico laser lebih sesuai untuk kesan jerawat yang rata berbanding tekstur, jadi parut berlubang biasanya dimulakan dengan RF microneedling atau laser resurfacing.",
+  "treatments": [
+    "microneedling",
+    "resurfacing-laser",
+    "pico-laser",
+    "exosome-therapy"
+  ],
+  "reviewedBy": "dr-hong-peiyi",
+  "lastReviewed": "2026-10-11",
+  "seoTitle": "Rawatan Parut Jerawat di Malaysia | Kaiteki",
+  "seoDescription": "Parut jerawat ice pick, boxcar, rolling dan timbul memerlukan rawatan berbeza. Doktor menilai jenis parut anda dahulu. Tempah konsultasi percuma di Kaiteki.",
+  "banner": {
+    "src": "https://cdn.kaiteki.my/concerns/acne-scars/hero.jpg",
+    "sm": "https://cdn.kaiteki.my/concerns/acne-scars/hero-mobile.jpg",
+    "alt": "Gambar ilustrasi: seseorang dengan kesan jerawat di pipi, memegang muka dengan kedua-dua tangan"
+  },
+  "facts": [
+    {
+      "value": "Tekstur, bukan warna",
+      "label": "Parut ialah perubahan pada struktur kulit yang boleh dirasa, bukan sekadar tanda yang kelihatan."
+    },
+    {
+      "value": "Jenis menentukan pelan",
+      "label": "Parut ice pick, boxcar, rolling dan timbul memerlukan pendekatan yang berbeza."
+    },
+    {
+      "value": "Penilaian dahulu",
+      "label": "Doktor memeriksa kulit anda dan menerangkan pilihan serta risiko sebelum sebarang rawatan."
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Apa itu parut jerawat?",
+      "body": [
+        "Parut jerawat ialah perubahan struktur yang tinggal selepas keradangan reda. Ia mengubah struktur kulit, bukan sekadar warnanya: jika anda raba dengan jari, anda boleh rasa lekuk atau permukaan yang tidak rata.",
+        "Itulah yang membezakan parut daripada kesan jerawat. Perubahan warna merah atau coklat yang rata selepas jerawat meninggalkan kulit yang licin, cuma warnanya berbeza, dan kesan ini selalunya pudar sendiri dalam beberapa bulan. Parut tidak pudar dengan sendirinya. Ia dibentuk semula, secara beransur-ansur, dalam beberapa bulan."
+      ]
+    }
+  ],
+  "drivers": {
+    "heading": "Punca parut jerawat: apa yang meningkatkan risikonya",
+    "intro": "Parut terbentuk selepas keradangan. Antara yang meningkatkan risikonya:",
+    "items": [
+      {
+        "lead": "Jerawat dalam dan kistik:",
+        "body": "ketulan dalam, keras dan sakit di bawah kulit yang tidak bermata paling berisiko meninggalkan parut yang sukar dipulihkan."
+      },
+      {
+        "lead": "Menangguhkan rawatan:",
+        "body": "penilaian awal paling penting bagi jerawat yang dalam atau meninggalkan parut, kerana tujuannya ialah meredakan keradangan sebelum ia meninggalkan perubahan yang sukar dipulihkan."
+      },
+      {
+        "lead": "Kedudukan jerawat:",
+        "body": "pipi mudah meninggalkan kesan dan parut, manakala jerawat di belakang badan, dada dan bahu lebih cenderung meninggalkan parut timbul berbanding parut berlubang."
+      }
+    ]
+  },
+  "variant": {
+    "kind": "tabs",
+    "heading": "Jenis parut jerawat: yang mana satu anda alami?",
+    "intro": "Kebanyakan orang ada lebih daripada satu jenis. Mengetahui gabungannya penting, kerana setiap jenis memerlukan pendekatan yang berbeza, dan sesetengah tanda yang rata sebenarnya bukan parut.",
+    "tabs": [
+      {
+        "label": "Berlubang",
+        "sub": "Lekuk yang boleh dirasa",
+        "title": "Parut jerawat berlubang",
+        "body": "Parut berlubang selalunya boleh diperbaiki, tetapi jarang dapat dipadam sama sekali. Sejauh mana perubahan yang realistik sangat bergantung pada jenis parut.",
+        "items": [
+          {
+            "lead": "Ice pick:",
+            "body": "lubang yang sempit, dalam dan bertepi tajam. Jenis paling sukar dirawat dengan mesin tenaga sahaja."
+          },
+          {
+            "lead": "Boxcar:",
+            "body": "lekuk yang lebih lebar dengan tepi yang jelas, seperti kawah cetek."
+          },
+          {
+            "lead": "Rolling:",
+            "body": "permukaan beralun yang lembut, disebabkan tarikan tisu di bawah kulit."
+          }
+        ],
+        "routing": "RF microneedling atau laser resurfacing, selalunya dalam beberapa sesi, dengan gabungan yang dipilih mengikut jenis parut."
+      },
+      {
+        "label": "Timbul",
+        "sub": "Keras, di atas kulit",
+        "title": "Parut timbul (hipertrofik atau keloid)",
+        "body": "Tisu yang keras dan menebal, timbul di atas permukaan kulit. Lebih biasa di dada, bahu dan belakang badan, dan dirawat dengan cara yang sangat berbeza daripada parut berlubang.",
+        "routing": "penilaian berasingan, kerana pendekatannya berbeza daripada parut berlubang."
+      },
+      {
+        "label": "Kesan jerawat",
+        "sub": "Rata, merah atau coklat",
+        "title": "Kesan jerawat, bukan parut",
+        "body": "Perubahan warna yang rata, tinggal selepas jerawat sembuh. Kulit terasa licin apabila disentuh. Hanya warnanya yang berbeza. Kesan ini selalunya pudar sendiri dalam beberapa bulan, tetapi rawatan boleh memendekkan tempoh itu.",
+        "items": [
+          {
+            "lead": "Kesan merah atau ungu",
+            "body": "(eritema pasca-radang), daripada salur darah yang mengembang berhampiran permukaan kulit. Lebih ketara pada kulit yang lebih cerah."
+          },
+          {
+            "lead": "Kesan coklat",
+            "body": "(hiperpigmentasi pasca-radang), daripada pigmen berlebihan yang terhasil semasa keradangan. Sangat biasa pada warna kulit sederhana dan lebih gelap yang lazim di Malaysia, dan menjadi lebih teruk dengan pendedahan matahari."
+          }
+        ],
+        "routing": "pico laser, dengan pelindung matahari setiap hari sebagai bahagian pelan yang wajib."
+      }
+    ]
+  },
+  "illustrations": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/acne-scars/image-ice-pick-scars.png",
+      "label": "Parut ice pick",
+      "sub": "Sempit, dalam dan bertepi tajam",
+      "group": "Jenis parut jerawat"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/acne-scars/image-boxcar-scars.png",
+      "label": "Parut boxcar",
+      "sub": "Lekuk lebih lebar dengan tepi yang jelas",
+      "group": "Jenis parut jerawat"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/acne-scars/image-rolling-scars.png",
+      "label": "Parut rolling",
+      "sub": "Alunan luas dengan tepi yang lembut",
+      "group": "Jenis parut jerawat"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/acne-scars/image-hypertrophic-and-keloid-scars.png",
+      "label": "Parut timbul",
+      "sub": "Hipertrofik dan keloid",
+      "group": "Jenis parut jerawat"
+    }
+  ],
+  "seeDoctor": {
+    "intro": "Ada baiknya anda dapatkan penilaian kulit jika mana-mana yang berikut berlaku:",
+    "triggers": [
+      "Anda sudah nampak lekuk atau perubahan tekstur kulit.",
+      "Jerawat dalam, sakit atau meninggalkan kesan.",
+      "Anda masih ada jerawat aktif. Merawat parut semasa jerawat masih aktif biasanya kurang berkesan, jadi jerawat diredakan dahulu.",
+      "Parut timbul dan keras, yang dirawat dengan cara yang sangat berbeza daripada parut berlubang."
+    ],
+    "outro": "Penilaian awal paling penting bagi jerawat yang dalam atau meninggalkan parut, kerana tujuannya ialah meredakan keradangan sebelum ia meninggalkan perubahan yang sukar dipulihkan. Tiada faedahnya menunggu untuk melihat sama ada ia akan sembuh sendiri."
+  },
+  "ctaMid": {
+    "heading": "Tak pasti sama ada itu parut atau kesan jerawat?",
+    "body": "Hantar gambar kepada kami di WhatsApp dan doktor boleh beritahu sama ada anda sedang berdepan dengan parut, kesan jerawat yang rata, atau gabungan kedua-duanya."
+  },
+  "treatmentsIntro": "Ini rawatan yang paling kerap dipertimbangkan untuk parut jerawat di klinik kami. Tiada satu pun yang menjadi pilihan lalai. Rawatan mana yang sesuai bergantung pada jenis parut, warna kulit anda, dan berapa lama masa pemulihan yang boleh anda rancang.",
+  "treatmentWhy": {
+    "microneedling": {
+      "why": "Untuk parut rolling dan boxcar, termasuk pada kulit yang lebih gelap",
+      "body": "Jarum halus menyalurkan tenaga radiofrekuensi ke lapisan kulit yang lebih dalam untuk merangsang kolagen. Selalunya menjadi titik permulaan untuk parut rolling dan boxcar, dan secara umumnya dianggap pilihan dengan risiko pigmentasi yang lebih rendah bagi warna kulit sederhana dan lebih gelap."
+    },
+    "resurfacing-laser": {
+      "why": "Untuk parut yang sudah mantap, jika masa pemulihannya sesuai dengan anda",
+      "body": "Laser CO₂ fraksional yang digunakan apabila parut sudah lebih mantap. Downtime lebih lama berbanding RF microneedling, dan perlu mengelak matahari dengan teliti selepas itu. Pada kulit Asia, ia digunakan dengan lebih berhati-hati, selalunya pada intensiti lebih rendah dalam lebih banyak sesi."
+    },
+    "pico-laser": {
+      "why": "Untuk kesan rata di sekeliling parut, bukan lekuk parut itu sendiri",
+      "body": "Laser pikosaat yang menyasarkan pigmen dengan denyutan yang sangat singkat dan pantas. Paling relevan apabila yang tinggal ialah perubahan warna, bukan tekstur. Sesetengah mesin pico mempunyai kanta fraksional yang ditetapkan oleh pengeluar untuk parut jerawat pada jenis kulit I hingga IV, dan doktor anda akan beritahu sama ada ia sesuai untuk anda."
+    },
+    "exosome-therapy": {
+      "why": "Untuk menyokong kulit selepas rawatan parut, sebagai rawatan tambahan",
+      "body": "Pendekatan regeneratif yang digunakan selepas rawatan berasaskan tenaga untuk menyokong pemulihan kulit. Bukti saintifiknya masih berkembang, dan ia ditawarkan bersama rawatan parut, bukan sebagai rawatan parut yang berdiri sendiri."
+    }
+  },
+  "treatmentsNote": "Jerawat meradang yang aktif biasanya dirawat secara perubatan dahulu. Rawatan parut berasaskan tenaga lazimnya dipertimbangkan selepas jerawat terkawal, atau bersama rawatan perubatan jika doktor menilai ia sesuai.",
+  "compare": {
+    "intro": "Panduan umum sahaja. Gabungan rawatan adalah biasa, dan doktor mungkin mencadangkan sesuatu yang berbeza selepas memeriksa kulit anda.",
+    "columns": [
+      "Masalah anda",
+      "Biasa dipertimbangkan",
+      "Kursus biasa",
+      "Downtime"
+    ],
+    "rows": [
+      [
+        "Parut rolling & boxcar",
+        "RF microneedling",
+        "Beberapa sesi, kira-kira 4 minggu sekali",
+        "Kemerahan 2 hingga 3 hari"
+      ],
+      [
+        "Parut lebih dalam atau bercampur",
+        "Laser resurfacing, atau gabungan rawatan",
+        "Dinilai secara individu",
+        "5 hingga 7 hari"
+      ],
+      [
+        "Parut ice pick",
+        "Dinilai secara individu",
+        "Individu",
+        "Individu"
+      ],
+      [
+        "Parut timbul atau keloid",
+        "Dinilai berasingan: pendekatan berbeza",
+        "Individu",
+        "Individu"
+      ],
+      [
+        "Kesan merah atau coklat yang rata",
+        "Pico laser + pelindung matahari setiap hari",
+        "Beberapa sesi, berjarak",
+        "Minimum"
+      ]
+    ],
+    "note": "Bilangan sesi dan jarak antara sesi ditetapkan oleh doktor selepas penilaian. Kulit bertindak balas pada kadar yang berbeza, dan pelan diubah suai mengikut perkembangan."
+  },
+  "firstVisit": {
+    "intro": "Konsultasi adalah percuma dan tiada paksaan untuk menempah rawatan selepas itu. Ia biasanya mengambil masa 20 hingga 30 minit.",
+    "steps": [
+      {
+        "title": "Sejarah",
+        "body": "Sudah berapa lama parut itu ada, sama ada anda masih berjerawat, sejarah perubatan anda, dan sebarang ubat atau produk penjagaan kulit yang sedang anda gunakan."
+      },
+      {
+        "title": "Pemeriksaan",
+        "body": "Doktor memeriksa kulit anda, kadangkala dengan pembesaran, untuk mengenal pasti jenis parut yang anda ada dan yang mana sebenarnya kesan rata, bukan parut."
+      },
+      {
+        "title": "Perbincangan",
+        "body": "Apa pilihan yang ada, apa yang terlibat dalam setiap satu, apa risiko dan downtime, dan apa yang realistik untuk kulit anda. Termasuk apabila jawapan yang jujur ialah menunggu dahulu."
+      },
+      {
+        "title": "Pelan",
+        "body": "Jika anda memilih untuk meneruskan, anda akan diberi urutan rawatan dan titik semakan. Anda boleh bawa pulang pelan itu dan fikirkan dahulu."
+      }
+    ],
+    "outro": "Bawa senarai semua produk yang sedang anda sapu atau ambil, termasuk ubat jerawat oral, dan beritahu doktor tentang sebarang rawatan parut yang pernah anda buat."
+  },
+  "visitImages": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/acne-scars/procedure-01.jpg",
+      "caption": "Doktor memeriksa kulit, kadangkala dengan pembesaran, sebelum mencadangkan apa-apa."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/acne-scars/procedure-02.jpg",
+      "caption": "Mesin dan tetapan dipadankan dengan jenis kulit anda, bukan mengikut protokol yang tetap."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/acne-scars/procedure-03.png",
+      "caption": "Rawatan laser resurfacing untuk parut sedang dijalankan. Kedalamannya ditetapkan mengikut jenis parut dan warna kulit anda."
+    }
+  ],
+  "results": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/acne-scars/before-after-01.png",
+      "nativeWidth": 1200,
+      "ratio": "1.71/1",
+      "illustration": true,
+      "caption": "Ilustrasi, bukan hasil pesakit: pembentukan semula kolagen boleh menjadikan tepi sesetengah parut berlubang lebih cetek"
+    }
+  ],
+  "risks": {
+    "intro": "Setiap rawatan di halaman ini membawa sedikit risiko.",
+    "items": [
+      {
+        "lead": "Biasa dan selalunya sementara",
+        "body": "Kemerahan, bengkak, kulit kering, mengelupas dan rasa panas atau kasar selama beberapa hari. Kesan yang kurang biasa termasuk kemerahan yang berpanjangan, melepuh, jangkitan, atau perubahan pigmen kulit."
+      },
+      {
+        "lead": "Perubahan pigmen dan kulit rakyat Malaysia",
+        "body": "Warna kulit sederhana dan lebih gelap, yang lazim di Malaysia, lebih berisiko mengalami hiperpigmentasi pasca-radang selepas rawatan berasaskan tenaga. Sebab itu doktor di sini sering memilih tetapan yang lebih lembut dan jarak yang lebih panjang antara sesi. Ini boleh memanjangkan tempoh rawatan, dan ia ialah pertukaran yang disengajakan demi keselamatan."
+      },
+      {
+        "lead": "Pelindung matahari bukan pilihan",
+        "body": "Pelindung matahari spektrum luas setiap hari ialah sebahagian daripada pelan bagi setiap rawatan di atas, sebelum dan selepas."
+      },
+      {
+        "lead": "Apa yang rawatan tidak dapat lakukan",
+        "body": "Parut berlubang selalunya boleh diperbaiki, tetapi jarang dapat dipadam sama sekali. Parut ice pick jarang pulih sepenuhnya dengan mesin tenaga sahaja. Merawat parut tidak mengubah kecenderungan kulit untuk berjerawat, jadi jerawat boleh berulang. Perubahan berlaku secara beransur-ansur dalam beberapa bulan semasa kolagen dibentuk semula. Ia tidak kelihatan pada minggu berikutnya."
+      }
+    ],
+    "disclose": "Beritahu doktor anda jika anda hamil atau menyusu, sedang atau baru-baru ini mengambil ubat jerawat oral, pernah mengalami herpes bibir (cold sore), parut keloid atau kulit yang baru terbakar matahari, atau pernah menjalani sebarang prosedur kulit dalam beberapa minggu kebelakangan ini. Mana-mana perkara ini boleh mengubah rawatan yang sesuai atau masa yang sesuai untuknya."
+  },
+  "costFactors": {
+    "intro": "Kos tidak dipaparkan kerana ia bergantung pada penilaian. Tetapi elok anda tahu apa yang mempengaruhinya sebelum datang:",
+    "factors": [
+      "Jenis parut: parut rolling dan boxcar, parut ice pick dan parut timbul dirawat dengan pendekatan yang berbeza.",
+      "Kawasan: seluruh muka, zon tertentu, atau belakang badan dan dada.",
+      "Rawatan dan mesin: platform yang berbeza mempunyai struktur sesi yang berbeza.",
+      "Bilangan sesi: ditetapkan selepas penilaian, dan diubah suai semasa semakan mengikut tindak balas kulit anda.",
+      "Sama ada rawatan digabungkan: parut bercampur kadangkala bertindak balas lebih baik dengan lebih daripada satu kaedah."
+    ],
+    "outro": "Doktor akan menerangkan butirannya semasa konsultasi, termasuk berapa sesi yang dijangka dan dalam tempoh berapa lama, sebelum anda membuat sebarang keputusan."
+  },
+  "technologyIntro": "Dengan lebih daripada satu platform, doktor boleh memadankan mesin dengan jenis kulit dan jenis parut anda, bukan memaksa kulit anda mengikut satu mesin sahaja.",
+  "faqs": [
+    {
+      "q": "Parut jerawat boleh hilang ke sama sekali?",
+      "a": "Parut berlubang selalunya boleh diperbaiki, tetapi jarang dapat dipadam sama sekali. Rawatan seperti RF microneedling dan laser resurfacing berfungsi dengan merangsang kulit membentuk semula kolagennya sendiri, dan proses ini berlaku secara beransur-ansur dalam beberapa bulan, bukan serta-merta. Sejauh mana perubahan yang realistik sangat bergantung pada jenis parut: parut rolling dan boxcar biasanya bertindak balas lebih baik berbanding parut ice pick, yang sempit dan dalam. Doktor akan melihat apa yang sebenarnya anda alami dan memberitahu apa yang boleh dicapai sebelum mencadangkan apa-apa."
+    },
+    {
+      "q": "Apa beza parut jerawat dan kesan jerawat?",
+      "a": "Parut ialah perubahan struktur yang tinggal selepas keradangan reda, dan biasanya boleh dirasa sebagai lekuk atau permukaan tidak rata. Kesan jerawat pula rata: perubahan warna merah atau coklat, dengan kulit yang licin tetapi warnanya belum kembali normal. Kesan jerawat selalunya pudar sendiri dalam beberapa bulan; parut tidak pudar dengan sendirinya. Kedua-duanya biasa berlaku serentak, dan setiap satu dirawat secara berbeza, sebab itu penilaian dibuat dahulu."
+    },
+    {
+      "q": "Adakah pico laser digunakan untuk parut jerawat?",
+      "a": "Pico laser paling relevan untuk kesan rata dan perubahan warna yang ditinggalkan jerawat, bukan untuk tekstur parut. Sesetengah mesin pico mempunyai susunan kanta fraksional yang ditetapkan oleh pengeluar untuk parut jerawat pada jenis kulit I hingga IV. Untuk parut rolling dan boxcar, RF microneedling selalunya menjadi titik permulaan, dan laser resurfacing apabila parut sudah lebih mantap. Doktor akan beritahu yang mana sesuai untuk kulit anda."
+    },
+    {
+      "q": "Parut jerawat ice pick boleh dirawat ke?",
+      "a": "Parut ice pick ialah lubang yang sempit, dalam dan bertepi tajam, dan ia jenis paling sukar dirawat dengan mesin tenaga sahaja. Parut ice pick jarang pulih sepenuhnya dengan mesin tenaga sahaja, dan parut rolling serta boxcar biasanya bertindak balas lebih baik. Doktor akan melihat apa yang sebenarnya anda alami dan memberitahu apa yang boleh dicapai sebelum mencadangkan apa-apa."
+    },
+    {
+      "q": "Boleh ke rawat parut semasa masih ada jerawat aktif?",
+      "a": "Biasanya belum lagi. Merawat parut semasa jerawat masih aktif biasanya kurang berkesan, dan merawat jerawat aktif tidak akan menghilangkan parut yang sedia ada. Jerawat meradang yang aktif biasanya dirawat secara perubatan dahulu, dan rawatan berasaskan tenaga lazimnya dipertimbangkan selepas jerawat terkawal, atau bersama rawatan perubatan jika doktor menilai ia sesuai."
+    },
+    {
+      "q": "Parut jerawat perlu berapa sesi rawatan?",
+      "a": "Ini ditetapkan selepas doktor memeriksa kulit anda, kerana ia bergantung pada apa yang dirawat dan tahap keterukannya. Rawatan berasaskan tenaga untuk parut biasanya dirancang sebagai satu kursus beberapa sesi, kira-kira empat minggu sekali, dengan titik semakan untuk melihat tindak balas kulit anda. Pelan diubah suai mengikut perkembangan. Tiada siapa yang dapat meramal keseluruhan kursus dengan tepat pada lawatan pertama, dan jika ada yang berbuat begitu, anda patut berhati-hati."
+    },
+    {
+      "q": "Berapa lama baru nampak perubahan pada parut?",
+      "a": "Rawatan parut berfungsi dengan merangsang pembentukan semula kolagen, dan proses itu berterusan selama beberapa bulan di bawah permukaan walaupun kulit sudah kelihatan pulih. Parut yang lebih dalam selalunya dinilai semula secara rasmi enam hingga dua belas bulan selepas satu kursus. Perubahannya memang beransur-ansur. Mengambil gambar sendiri dalam pencahayaan yang sama membantu, kerana perubahan harian sangat sukar dilihat di cermin."
+    },
+    {
+      "q": "Rawatan laser parut jerawat selamat ke untuk kulit Asia atau sawo matang?",
+      "a": "Ya, jika mesin dan tetapan dipilih dengan sesuai oleh doktor yang berpengalaman dengan jenis kulit anda. Kebimbangan khusus bagi warna kulit sederhana dan lebih gelap ialah hiperpigmentasi pasca-radang, iaitu kulit bertindak balas terhadap rawatan dengan menghasilkan pigmen tambahan. Ini dikawal dengan memilih mesin yang sesuai, menggunakan tetapan yang konservatif, menjarakkan sesi lebih lama, dan tegas dengan perlindungan matahari. Ia pertimbangan yang nyata, bukan alasan untuk mengelak rawatan, dan ia sebahagian besar tujuan penilaian."
+    },
+    {
+      "q": "Berapa lama downtime selepas rawatan parut jerawat?",
+      "a": "Ia bergantung pada rawatan. Selepas RF microneedling, kebanyakan orang menunggu sehingga kemerahan reda, biasanya dua hingga tiga hari. Selepas laser resurfacing CO2 fraksional, jangkakan kemerahan, bengkak dan rasa panas serta tegang untuk sehari dua pertama, diikuti beberapa hari kulit menjadi gelap dan mengelupas; sesi yang lebih ringan biasanya reda dalam kira-kira seminggu, dan tetapan yang lebih dalam mengambil masa lebih lama. Doktor anda akan memberi anggaran masa yang khusus bagi rawatan yang anda jalani."
+    },
+    {
+      "q": "Rawatan parut jerawat sakit ke?",
+      "a": "Kebanyakan orang menggambarkan rawatan berasaskan tenaga sebagai tidak selesa, bukan sakit. Krim kebas disapu terlebih dahulu jika sesuai, dan penyejukan digunakan semasa dan selepas rawatan. Laser resurfacing ablatif lebih tidak selesa berbanding rawatan bukan ablatif, dan RF microneedling biasanya lebih terasa berbanding pico laser. Jika rasa tidak selesa amat membimbangkan anda, bangkitkan semasa konsultasi. Tetapan dan masa krim kebas boleh diubah suai."
+    },
+    {
+      "q": "Parut jerawat di belakang badan atau dada boleh dirawat ke?",
+      "a": "Boleh, tetapi kawasan ini berbeza daripada muka. Kulit di belakang badan dan dada lebih tebal, jerawat di situ cenderung lebih besar, dan parutnya lebih cenderung timbul berbanding berlubang, yang memerlukan pendekatan yang berbeza sama sekali. Setiap sesi rawatan juga meliputi kawasan yang lebih luas. Penilaiannya sama: doktor melihat yang mana jerawat aktif dan yang mana parut sebelum mencadangkan apa-apa."
+    },
+    {
+      "q": "Jerawat boleh berulang dan meninggalkan parut baru selepas rawatan?",
+      "a": "Ya. Merawat parut menangani apa yang ditinggalkan oleh jerawat sebelum ini. Ia tidak mengubah kecenderungan asas kulit anda untuk berjerawat, jadi jerawat boleh berulang. Sebab itu pelan biasanya merangkumi penjagaan berterusan: penjagaan kulit harian yang sesuai, perlindungan matahari, dan rawatan perubatan berterusan jika perlu. Kawalan jangka panjang ialah matlamat yang realistik; tiada siapa boleh berjanji jerawat akan sembuh selama-lamanya."
+    }
+  ],
+  "relatedConcerns": [
+    {
+      "slug": "melasma",
+      "reason": "Jeragat (melasma) secara khusus: kenapa laser perlu berhati-hati, kedalaman, dan apa yang terlibat dalam mengawalnya."
+    },
+    {
+      "slug": "acne",
+      "reason": "Jerawat aktif didahulukan: parut biasanya dirawat selepas jerawat terkawal."
+    },
+    {
+      "slug": "pigmentation",
+      "reason": "Kesan coklat selepas jerawat bertindih dengan warna kulit tidak sekata dan pigmentasi."
+    },
+    {
+      "slug": "enlarged-pores",
+      "reason": "Tekstur dan liang pori selalunya dirawat dengan mesin yang sama seperti parut."
+    }
+  ],
+  "ctaHeading": "Ketahui jenis parut yang anda ada",
+  "ctaAssesses": "parut anda"
+}

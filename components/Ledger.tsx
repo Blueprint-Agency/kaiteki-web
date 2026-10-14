@@ -43,12 +43,14 @@ export function ReviewByline({
   date,
   photo,
   href,
+  label = "Medically reviewed",
 }: {
   doctorName: string;
   mmc?: string;
   date: string;
   photo?: string;
   href?: string;
+  label?: string;
 }) {
   const avatar = photo ? (
     <span className="relative size-11 shrink-0 overflow-hidden rounded-full bg-tint">
@@ -65,7 +67,7 @@ export function ReviewByline({
       {avatar}
       <p className="ledger leading-snug !text-ink-700">
         <span className="text-[0.625rem] uppercase tracking-[0.12em] text-accent">
-          Medically reviewed
+          {label}
         </span>
         <br />
         <span className={href ? "decoration-mocha/50 underline-offset-2 group-hover:underline" : ""}>

@@ -5,6 +5,11 @@ import { Container } from "./Container";
 import { FlipCard } from "./FlipCard";
 import { ArrowRight } from "./icons";
 import { concernBySlug } from "@/content/data/concerns";
+import { homeCopy } from "@/content/i18n/home";
+import { fmt } from "@/content/i18n/chrome";
+import { term } from "@/content/i18n/terms";
+import { lhref } from "@/lib/locale-pages";
+import type { Locale } from "@/lib/i18n";
 
 const si = (i: number): CSSProperties => ({ "--i": Math.min(i, 8) } as CSSProperties);
 
@@ -19,25 +24,31 @@ const FEATURED = [
 
 /** "What brings you in?" — a 3×2 grid of photo tiles that flip to reveal what a
  *  doctor may consider, then link through to the concern guide. */
-export function ConcernsMosaic() {
-  const six = FEATURED.map(concernBySlug).filter((c) => c !== undefined);
+export function ConcernsMosaic({ locale = "en" }: { locale?: Locale }) {
+  const k = homeCopy[locale].concerns;
+  const six = FEATURED.map(concernBySlug)
+    .filter((c) => c !== undefined)
+    .map((c) => ({
+      ...c,
+      name: term(locale, "concern", c.slug, c.name),
+      summary: k.summaries?.[c.slug] ?? c.summary,
+    }));
 
   return (
     <section id="concerns" className="relative overflow-hidden bg-page">
       <Container className="reveal py-16 sm:py-24">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="max-w-2xl">
-            <h2 className="h-section">What brings you in?</h2>
+            <h2 className="h-section">{k.h2}</h2>
             <p className="mt-4 max-w-md text-lg leading-relaxed text-ink-700">
-              Tell us the concern. A doctor will assess it before recommending any
-              treatment.
+              {k.sub}
             </p>
           </div>
           <Link
-            href="/concerns"
+            href={lhref(locale, "/concerns")}
             className="group inline-flex items-center gap-1.5 py-1.5 text-sm font-medium text-accent hover:text-espresso"
           >
-            View all concerns{" "}
+            {k.viewAll}{" "}
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
           </Link>
         </div>
@@ -49,15 +60,15 @@ export function ConcernsMosaic() {
           {six.map((c, i) => (
             <FlipCard
               key={c.slug}
-              href={`/concerns/${c.slug}`}
-              ariaLabel={`${c.name}, read the concern guide`}
+              href={lhref(locale, `/concerns/${c.slug}`)}
+              ariaLabel={fmt(k.cardAria, { name: c.name })}
               className="reveal w-[78%] shrink-0 snap-start sm:w-auto"
               style={si(i)}
               front={
                 <>
                   <Image
                     src={c.image}
-                    alt={`${c.name}, skin concern treated at Kaiteki Skin Aesthetic Clinic`}
+                    alt={fmt(k.imageAlt, { name: c.name })}
                     fill
                     sizes="(max-width: 640px) 50vw, 33vw"
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -81,7 +92,7 @@ export function ConcernsMosaic() {
                     <p className="mt-2 text-sm leading-relaxed text-ink-700">{c.summary}</p>
                   </div>
                   <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent">
-                    Explore options <ArrowRight size={15} />
+                    {k.explore} <ArrowRight size={15} />
                   </span>
                 </div>
               }

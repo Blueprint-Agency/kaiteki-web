@@ -12,6 +12,12 @@ import { treatmentHref } from "@/content/data/treatments";
 import { resultsHeading } from "@/lib/concern-toc";
 import type { Concern, LeadIn } from "@/lib/types";
 import type { Treatment } from "@/lib/types";
+import { concernUi, type ConcernUi } from "@/content/i18n/concern-ui";
+import { term } from "@/content/i18n/terms";
+import { lhref } from "@/lib/locale-pages";
+import type { Locale } from "@/lib/i18n";
+
+const EN_UI = concernUi.en;
 
 /**
  * Concern-page template v1 blocks (config/concerns.json, 01…18).
@@ -189,15 +195,28 @@ function IllustrationGrid({ items }: { items: NonNullable<Concern["illustrations
  * furniture — it renders from its single shared source with every gallery
  * (ADR-0001 §2, gate rule Q-18).
  */
-export function ResultsBlock({ items }: { items?: Concern["results"] }) {
+export function ResultsBlock({
+  items,
+  ui = EN_UI,
+  locale = "en",
+}: {
+  items?: Concern["results"];
+  ui?: ConcernUi;
+  locale?: Locale;
+}) {
   if (!items?.length) return null;
   return (
     <section id="results" className={`py-14 sm:py-20 ${CLEAR_HEADER}`}>
       <Container>
-        <h2 className="h-section">{resultsHeading(items)}</h2>
-        <ResultsGallery items={items} />
+        <h2 className="h-section">
+          {resultsHeading(items, { illustrated: ui.resultsIllustrated, patients: ui.resultsPatients })}
+        </h2>
+        <ResultsGallery
+          items={items}
+          labels={{ prev: ui.prevImage, next: ui.nextImage, larger: ui.viewLarger }}
+        />
         <div className="mt-10 max-w-[70ch]">
-          <ResultsDisclaimer />
+          <ResultsDisclaimer locale={locale} />
         </div>
       </Container>
     </section>
@@ -258,10 +277,12 @@ export function VariantBlock({
   v,
   illustrations,
   slides,
+  ui = EN_UI,
 }: {
   v?: Concern["variant"];
   illustrations?: Concern["illustrations"];
   slides?: Concern["slides"];
+  ui?: ConcernUi;
 }) {
   if (!v) return null;
 
@@ -272,7 +293,7 @@ export function VariantBlock({
 
       {!!illustrations?.length && <IllustrationGrid items={illustrations} />}
 
-      {v.kind === "tabs" && <VariantTabs tabs={v.tabs} diagram={v.diagram} />}
+      {v.kind === "tabs" && <VariantTabs tabs={v.tabs} diagram={v.diagram} label={ui.whichType} routingLabel={ui.routing} diagramLabels={ui.skinDiagram} />}
 
       {/* No heading above the slides: each one already carries its own
           headline in the artwork, and a hardcoded one here would be the
@@ -352,11 +373,11 @@ export function LocationBlock({ l }: { l?: Concern["locationBlock"] }) {
  * honest counterweight to a page that otherwise lists treatments — which is
  * why it is never trimmed, and is expanded on archetype D.
  */
-export function SeeDoctorBlock({ s }: { s?: Concern["seeDoctor"] }) {
+export function SeeDoctorBlock({ s, ui = EN_UI }: { s?: Concern["seeDoctor"]; ui?: ConcernUi }) {
   if (!s?.triggers.length) return null;
   return (
     <Section id="see-a-doctor">
-      <h2 className="h-section">{s.heading ?? "When to see a doctor"}</h2>
+      <h2 className="h-section">{s.heading ?? ui.seeDoctor}</h2>
       <p className="mt-6 max-w-[62ch] text-lg leading-relaxed text-ink-900">{s.intro}</p>
       <ul className="mt-7 divide-y divide-hairline border-y border-hairline">
         {s.triggers.map((t) => (
@@ -380,36 +401,45 @@ export function SeeDoctorBlock({ s }: { s?: Concern["seeDoctor"] }) {
 export function TreatmentsBlock({
   c,
   options,
+  ui = EN_UI,
+  locale = "en",
 }: {
   c: Concern;
   options: Treatment[];
+  ui?: ConcernUi;
+  locale?: Locale;
 }) {
   if (!options.length) return null;
+  const en = locale === "en";
   return (
     <Section id="treatments">
-      <h2 className="h-section max-w-[22ch]">Treatment options at Kaiteki</h2>
+      <h2 className="h-section max-w-[22ch]">{ui.treatmentsHeading}</h2>
       <p className="mt-6 max-w-[64ch] leading-relaxed text-ink-700">
         {c.treatmentsIntro ??
-          `These are the treatments most often considered at our clinics for ${c.name.toLowerCase()}. None of them is a default. Which one is appropriate, and whether any of them is, depends on what the assessment finds.`}
+          ui.treatmentsIntro.replace("{name}", en ? c.name.toLowerCase() : c.name)}
       </p>
       <div className="mt-12 grid gap-x-12 gap-y-10 sm:grid-cols-2">
         {options.map((t) => {
           const w = c.treatmentWhy?.[t.slug];
+          const name = term(locale, "treatment", t.slug, t.name);
+          // The treatment's own summary is English-only data; a locale page
+          // shows the concern's translated body or nothing.
+          const body = w?.body ?? (en ? t.summary : undefined);
           return (
             <div key={t.slug} className="border-t border-espresso/20 pt-5">
-              <p className="ledger text-[0.6875rem] uppercase tracking-[0.14em]">{t.category}</p>
-              <h3 className="h-sub mt-1.5">{t.name}</h3>
+              <p className="ledger text-[0.6875rem] uppercase tracking-[0.14em]">
+                {term(locale, "category", t.category, t.category)}
+              </p>
+              <h3 className="h-sub mt-1.5">{name}</h3>
               <p className="mt-2 max-w-[38ch] font-medium leading-snug text-accent">
-                {w?.why ?? "Considered case by case at consultation"}
+                {w?.why ?? ui.whyFallback}
               </p>
-              <p className="mt-3 max-w-[42ch] leading-relaxed text-ink-700">
-                {w?.body ?? t.summary}
-              </p>
+              {body && <p className="mt-3 max-w-[42ch] leading-relaxed text-ink-700">{body}</p>}
               <Link
-                href={treatmentHref(t)}
+                href={lhref(locale, treatmentHref(t))}
                 className="group mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-espresso"
               >
-                {t.name}
+                {name}
                 <ArrowRight size={14} className="transition-transform group-hover:translate-x-0.5" />
               </Link>
             </div>
@@ -480,11 +510,11 @@ function ScrollTable({
  * needs at least four things to compare, and on a one-treatment concern it
  * reads as padding. Column headers describe, never rank (rule R-02).
  */
-export function CompareBlock({ c }: { c?: Concern["compare"] }) {
+export function CompareBlock({ c, ui = EN_UI }: { c?: Concern["compare"]; ui?: ConcernUi }) {
   if (!c?.rows.length) return null;
   return (
     <Section id="compare">
-      <h2 className="h-section max-w-[24ch]">Which treatment suits which type?</h2>
+      <h2 className="h-section max-w-[24ch]">{ui.compareHeading}</h2>
       <p className="mt-6 max-w-[64ch] leading-relaxed text-ink-700">{c.intro}</p>
       <ScrollTable columns={c.columns} rows={c.rows} className="mt-10" />
       {c.note && <p className="mt-8 max-w-[62ch] leading-relaxed text-ink-700">{c.note}</p>}
@@ -500,14 +530,16 @@ export function CompareBlock({ c }: { c?: Concern["compare"] }) {
 export function FirstVisitBlock({
   f,
   images,
+  ui = EN_UI,
 }: {
   f?: Concern["firstVisit"];
   images?: Concern["visitImages"];
+  ui?: ConcernUi;
 }) {
   if (!f?.steps.length) return null;
   return (
     <Section id="first-visit">
-      <h2 className="h-section">What your first visit involves</h2>
+      <h2 className="h-section">{ui.firstVisitHeading}</h2>
       <p className="mt-6 max-w-[62ch] leading-relaxed text-ink-700">{f.intro}</p>
       <ol className="mt-10 space-y-8 border-l border-hairline pl-8">
         {f.steps.map((s, i) => (
@@ -556,11 +588,11 @@ export function FirstVisitBlock({
  * required wherever energy devices are listed (rule R-05); both are enforced by
  * scripts/validate-concerns.mjs.
  */
-export function ConcernRisksBlock({ r }: { r?: Concern["risks"] }) {
+export function ConcernRisksBlock({ r, ui = EN_UI }: { r?: Concern["risks"]; ui?: ConcernUi }) {
   if (!r?.items.length) return null;
   return (
     <Section id="risks">
-      <h2 className="h-section">Risks and what to expect</h2>
+      <h2 className="h-section">{ui.risksHeading}</h2>
       {r.intro && <p className="mt-6 max-w-[62ch] leading-relaxed text-ink-700">{r.intro}</p>}
       <div className="mt-10 divide-y divide-espresso/15 border-y border-espresso/15">
         {r.items.map((i) => (
@@ -583,14 +615,16 @@ export function ConcernRisksBlock({ r }: { r?: Concern["risks"] }) {
 export function ConcernCostBlock({
   c,
   href,
+  ui = EN_UI,
 }: {
   c?: Concern["costFactors"];
   href: string;
+  ui?: ConcernUi;
 }) {
   if (!c?.factors.length) return null;
   return (
     <Section id="cost">
-      <h2 className="h-section">What affects the cost</h2>
+      <h2 className="h-section">{ui.costHeading}</h2>
       <p className="mt-6 max-w-[62ch] leading-relaxed text-ink-700">{c.intro}</p>
       <ul className="mt-8 divide-y divide-hairline border-y border-hairline">
         {c.factors.map((f) => (
@@ -604,7 +638,7 @@ export function ConcernCostBlock({
         href={href}
         variant="outline"
         position="cost"
-        label="Ask about pricing for your case"
+        label={ui.costCta}
         className="mt-8"
       />
     </Section>
@@ -619,18 +653,23 @@ export function ConcernCostBlock({
  */
 export function RelatedConcernsBlock({
   items,
+  ui = EN_UI,
+  allHref = "/concerns",
 }: {
-  items: { slug: string; name: string; reason: string }[];
+  /** `href` is resolved by the caller (the locale page when live). */
+  items: { slug: string; name: string; reason: string; href?: string }[];
+  ui?: ConcernUi;
+  allHref?: string;
 }) {
   if (!items.length) return null;
   return (
     <Section>
-      <h2 className="h-section">Related concerns</h2>
+      <h2 className="h-section">{ui.relatedHeading}</h2>
       <ul className="mt-8 divide-y divide-hairline border-y border-hairline">
         {items.map((i) => (
           <li key={i.slug} className="py-5">
             <Link
-              href={`/concerns/${i.slug}`}
+              href={i.href ?? `/concerns/${i.slug}`}
               className="group inline-flex items-center gap-1.5 font-display text-lg font-medium text-espresso decoration-mocha/50 underline-offset-4 hover:underline"
             >
               {i.name}
@@ -644,10 +683,10 @@ export function RelatedConcernsBlock({
         ))}
       </ul>
       <Link
-        href="/concerns"
+        href={allHref}
         className="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-espresso"
       >
-        Back to all concerns
+        {ui.backToAll}
       </Link>
     </Section>
   );

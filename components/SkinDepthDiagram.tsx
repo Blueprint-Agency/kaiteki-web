@@ -28,13 +28,33 @@ const DERM_DOTS: [number, number, number][] = [
   [256, 148, 3.6],
 ];
 
-const LABEL: Record<Depth, string> = {
-  epidermis: "pigment concentrated in the epidermis, the outer layer of the skin",
-  dermis: "pigment concentrated in the dermis, the deeper layer below it",
-  both: "pigment in both the epidermis and the dermis",
+export type SkinDiagramLabels = {
+  /** Accessible name, "{depth}" filled from `depth`. */
+  aria: string;
+  depth: Record<Depth, string>;
+  surface: string;
+  epidermis: string;
+  dermis: string;
+  fat: string;
+  caption: string;
 };
 
-export function SkinDepthDiagram({ depth }: { depth: Depth }) {
+const EN_LABELS: SkinDiagramLabels = {
+  aria: "Illustrative diagram of the skin's layers, showing {depth}.",
+  depth: {
+    epidermis: "pigment concentrated in the epidermis, the outer layer of the skin",
+    dermis: "pigment concentrated in the dermis, the deeper layer below it",
+    both: "pigment in both the epidermis and the dermis",
+  },
+  surface: "Skin surface",
+  epidermis: "Epidermis",
+  dermis: "Dermis",
+  fat: "Fat layer",
+  caption: "Illustrative only. Where the pigment sits is estimated by a doctor at examination.",
+};
+
+export function SkinDepthDiagram({ depth, labels = EN_LABELS }: { depth: Depth; labels?: SkinDiagramLabels }) {
+  const L = labels;
   const epiOn = depth !== "dermis";
   const dermOn = depth !== "epidermis";
 
@@ -43,7 +63,7 @@ export function SkinDepthDiagram({ depth }: { depth: Depth }) {
       <svg
         viewBox="0 0 480 340"
         role="img"
-        aria-label={`Illustrative diagram of the skin's layers, showing ${LABEL[depth]}.`}
+        aria-label={L.aria.replace("{depth}", L.depth[depth])}
         className="h-auto w-full"
       >
         {/* Layers, top to bottom. The undulating epidermis/dermis border is the
@@ -102,20 +122,20 @@ export function SkinDepthDiagram({ depth }: { depth: Depth }) {
 
         {/* Layer names, set in the UI face at a size that holds AA. */}
         <g className="font-sans" fontSize={13} fill="#5B4636">
-          <text x={40} y={56}>Skin surface</text>
+          <text x={40} y={56}>{L.surface}</text>
           <text x={392} y={100} className={`sd-label ${epiOn ? "is-on" : ""}`}>
-            Epidermis
+            {L.epidermis}
           </text>
           <text x={392} y={196} className={`sd-label ${dermOn ? "is-on" : ""}`}>
-            Dermis
+            {L.dermis}
           </text>
           <text x={392} y={294}>
-            Fat layer
+            {L.fat}
           </text>
         </g>
       </svg>
       <figcaption className="mt-3 text-sm leading-relaxed text-ink-500">
-        Illustrative only. Where the pigment sits is estimated by a doctor at examination.
+        {L.caption}
       </figcaption>
     </figure>
   );

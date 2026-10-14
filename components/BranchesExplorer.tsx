@@ -11,7 +11,17 @@ type Filter = "All" | Region;
 /** Region-filtered branch grid (docs/06 homepage refresh). Renders all
  *  branches server-side by default (Filter = "All") so crawlers and no-JS
  *  visitors see the full list; the tabs are a progressive-enhancement filter. */
-export function BranchesExplorer() {
+export function BranchesExplorer({
+  allLabel = "All branches",
+  regionLabels,
+  cards,
+}: {
+  allLabel?: string;
+  /** Localized region tab labels, keyed by the English region. */
+  regionLabels?: Partial<Record<Region, string>>;
+  /** Localized href + name per branch slug (the locale page when live). */
+  cards?: Record<string, { href: string; name: string }>;
+}) {
   const [region, setRegion] = useState<Filter>("All");
   const tabs: Filter[] = ["All", ...regionOrder];
   const shown = region === "All" ? branches : branches.filter((b) => b.region === region);
@@ -33,7 +43,7 @@ export function BranchesExplorer() {
                   : "border-hairline bg-surface text-ink-700 hover:border-mocha"
               }`}
             >
-              {tab === "All" ? "All branches" : tab}
+              {tab === "All" ? allLabel : (regionLabels?.[tab] ?? tab)}
               <span className={active ? "opacity-60" : "text-ink-500"}>{count}</span>
             </button>
           );
@@ -41,7 +51,7 @@ export function BranchesExplorer() {
       </div>
       <CardRow>
         {shown.map((b) => (
-          <BranchCard key={b.slug} b={b} />
+          <BranchCard key={b.slug} b={b} href={cards?.[b.slug]?.href} name={cards?.[b.slug]?.name} />
         ))}
       </CardRow>
     </div>

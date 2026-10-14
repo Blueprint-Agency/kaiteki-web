@@ -16,68 +16,81 @@ import { ClosingCta } from "@/components/ClosingCta";
 import { HomeFaq } from "@/components/HomeFaq";
 import { PromoModal } from "@/components/PromoModal";
 import { ArrowRight, MapPin } from "@/components/icons";
-import { site } from "@/lib/site";
 import { doctors } from "@/content/data/doctors";
 import { pageMeta } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { webPageNode } from "@/lib/schema";
+import { homeCopy } from "@/content/i18n/home";
+import { chrome, fmt } from "@/content/i18n/chrome";
+import { lhref } from "@/lib/locale-pages";
+import { waLink } from "@/lib/wa";
+import type { Locale } from "@/lib/i18n";
 
-const TITLE = "Kaiteki: Japanese-Inspired Aesthetic Clinic in Malaysia";
-const DESCRIPTION = `9 branches, ${doctors.length} doctors, one standard of aesthetic care across KL, Selangor, Johor and Sabah. Your concern is assessed first, then the right treatment follows.`;
+// The homepage, rendered by app/(en)/page.tsx, app/zh/page.tsx and app/ms/page.tsx.
+// Copy lives in content/i18n/home.ts; this file is layout only.
 
-export const metadata = pageMeta({
-  title: TITLE,
-  description: DESCRIPTION,
-  path: "/",
-});
+const n = String(doctors.length);
+
+export function homeMeta(locale: Locale) {
+  const m = homeCopy[locale].meta;
+  return pageMeta({
+    title: m.title,
+    description: fmt(m.description, { n }),
+    path: "/",
+    locale,
+  });
+}
 
 // stagger index helper (typed CSS custom property)
 const si = (i: number): CSSProperties => ({ "--i": Math.min(i, 8) } as CSSProperties);
 
-export default function Home() {
+export function HomePage({ locale }: { locale: Locale }) {
+  const copy = homeCopy[locale];
   return (
     <>
       <JsonLd
         data={webPageNode({
           path: "/",
-          name: TITLE,
-          description: DESCRIPTION,
+          name: copy.meta.title,
+          description: fmt(copy.meta.description, { n }),
           image: "/images/hero/hero-subject.png",
+          locale,
         })}
       />
-      <PromoModal />
+      <PromoModal copy={copy.promo} productsHref={lhref(locale, "/products")} />
       {/* HERO — warm-sanctuary fold: subject photo with interactive concern
           hotspots (see HeroFace). Pulled under the transparent header. When a
           campaign banner is running, wrap this in components/HeroSlider. */}
       <section className="hero-warm relative -mt-[68px] overflow-hidden">
-        <WarmSlide />
+        <WarmSlide locale={locale} />
       </section>
 
       {/* Post-hero narrative: concerns → treatments → the doctors who stand
           behind them → why (E-E-A-T) → recognition → branches → invitation. */}
       {/* Device-fleet records, straight under the fold: the first thing after
           the hero, before the site starts explaining itself. */}
-      <LeaderBadges />
-      <ConcernsMosaic />
-      <TreatmentsMenu />
-      <HowItWorks />
-      <DoctorsFeature />
-      <WhyKaiteki />
-      <RecognitionCabinet />
+      <LeaderBadges locale={locale} />
+      <ConcernsMosaic locale={locale} />
+      <TreatmentsMenu locale={locale} />
+      <HowItWorks locale={locale} />
+      <DoctorsFeature locale={locale} />
+      <WhyKaiteki locale={locale} />
+      <RecognitionCabinet locale={locale} />
       {/* Compliance: patient testimonials are restricted under MAB 1/2023 &
           3/2023 — see the note in content/data/reviews.ts. Delete this line to
           remove the block. */}
-      <GoogleReviews />
-      <BranchStrip />
-      <ClosingCta />
-      <HomeFaq />
+      <GoogleReviews copy={copy.reviews} />
+      <BranchStrip locale={locale} />
+      <ClosingCta locale={locale} />
+      <HomeFaq locale={locale} />
     </>
   );
 }
 
 /* ── Hero — the "Warm Sanctuary" fold ─────────────────────────────────────────
    Subject photo with interactive concern hotspots (see HeroFace). */
-function WarmSlide() {
+function WarmSlide({ locale }: { locale: Locale }) {
+  const h = homeCopy[locale].hero;
   return (
     <Container className="relative">
       {/* pt-[68px] offsets the -mt on the section so content clears the
@@ -86,25 +99,24 @@ function WarmSlide() {
         {/* Copy column — centred on mobile, left-aligned from lg up */}
         <div className="pb-10 pt-10 text-center sm:pt-14 lg:self-center lg:pb-24 lg:pt-16 lg:text-left">
           <p className="rise kicker" style={si(0)}>
-            {site.tagline}
+            {h.kicker}
           </p>
           <h1 className="mask-clip mt-4 block h-hero">
             <span className="mask-line" style={si(0)}>
-              Japanese-inspired skin &amp; <span className="h-em">aesthetic care</span>.
+              {h.h1.pre}<span className="h-em">{h.h1.em}</span>{h.h1.post}
             </span>
           </h1>
           <p className="rise prose mt-5 max-w-[46ch] text-lg leading-relaxed text-ink-700 mx-auto lg:mx-0" style={si(1)}>
-            A calm, considered approach to your skin. Nine branches across
-            Malaysia, {doctors.length} doctors, and every treatment starts with an assessment.
+            {fmt(h.sub, { n })}
           </p>
           <div className="rise mt-7 flex flex-col items-center gap-5 lg:items-start" style={si(2)}>
-            <WhatsAppButton size="lg" label="Book a Free Consultation" />
+            <WhatsAppButton size="lg" label={h.cta} href={waLink(chrome[locale].wa.generic)} />
             <Link
-              href="/treatments"
+              href={lhref(locale, "/treatments")}
               className="group inline-flex items-center gap-1.5 text-base font-medium text-espresso"
             >
               <span className="border-b border-espresso/30 pb-0.5 transition-colors group-hover:border-espresso">
-                Explore treatments
+                {h.explore}
               </span>
               <ArrowRight size={18} className="text-accent transition-transform group-hover:translate-x-0.5" />
             </Link>
@@ -114,19 +126,19 @@ function WarmSlide() {
           <p className="rise mt-10 hidden items-center justify-center gap-2.5 text-sm text-ink-500 sm:flex lg:justify-start" style={si(3)}>
             <MapPin size={16} className="shrink-0 text-accent" />
             <span>
-              9 branches across KL, Selangor, Johor &amp; Sabah:{" "}
+              {h.branchesLine}{" "}
               <Link
-                href="/locations"
+                href={lhref(locale, "/locations")}
                 className="font-medium text-accent underline decoration-mocha/50 underline-offset-4 transition-colors hover:text-espresso"
               >
-                find your nearest
+                {h.findNearest}
               </Link>
             </span>
           </p>
         </div>
 
         {/* Subject column — bottom-flush, hotspots on the face */}
-        <HeroFace />
+        <HeroFace locale={locale} />
       </div>
     </Container>
   );

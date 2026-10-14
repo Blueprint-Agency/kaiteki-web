@@ -4,6 +4,10 @@ import { site } from "@/lib/site";
 import { categoryTreatments, treatmentHref } from "@/content/data/treatments";
 import { concerns } from "@/content/data/concerns";
 import { branches } from "@/content/data/branches";
+import { chrome } from "@/content/i18n/chrome";
+import { term } from "@/content/i18n/terms";
+import { lhref } from "@/lib/locale-pages";
+import type { Locale } from "@/lib/i18n";
 
 function Col({
   title,
@@ -34,14 +38,16 @@ function Col({
   );
 }
 
-export function SiteFooter() {
+export function SiteFooter({ locale = "en" }: { locale?: Locale }) {
+  const f = chrome[locale].footer;
+  const href = (path: string) => lhref(locale, path);
   const topTreatments = categoryTreatments().slice(0, 8).map((t) => ({
-    href: treatmentHref(t),
-    label: t.name,
+    href: href(treatmentHref(t)),
+    label: term(locale, "treatment", t.slug, t.name),
   }));
   const topConcerns = concerns.slice(0, 8).map((c) => ({
-    href: `/concerns/${c.slug}`,
-    label: c.name,
+    href: href(`/concerns/${c.slug}`),
+    label: term(locale, "concern", c.slug, c.name),
   }));
 
   return (
@@ -53,31 +59,34 @@ export function SiteFooter() {
               Kaiteki
             </p>
             <p className="mt-1 text-xs uppercase tracking-[0.2em] text-ink-on-dark/70">
-              Skin · Aesthetic · Laser
+              {f.tagline}
             </p>
             <p className="mt-4 max-w-[24ch] text-sm leading-relaxed text-ink-on-dark/70">
-              {site.positioning}
+              {f.positioning}
             </p>
           </div>
 
-          <Col title="Treatments" links={[...topTreatments, { href: "/treatments", label: "All treatments" }]} />
-          <Col title="Concerns" links={[...topConcerns, { href: "/concerns", label: "All concerns" }]} />
+          <Col title={f.treatments} links={[...topTreatments, { href: href("/treatments"), label: f.allTreatments }]} />
+          <Col title={f.concerns} links={[...topConcerns, { href: href("/concerns"), label: f.allConcerns }]} />
           <Col
-            title="Locations"
+            title={f.locations}
             links={[
-              ...branches.map((b) => ({ href: `/locations/${b.slug}`, label: b.name })),
-              { href: "/locations", label: "All locations" },
+              ...branches.map((b) => ({
+                href: href(`/locations/${b.slug}`),
+                label: term(locale, "branch", b.slug, b.name),
+              })),
+              { href: href("/locations"), label: f.allLocations },
             ]}
           />
           <Col
-            title="Company"
+            title={f.company}
             links={[
-              { href: "/our-story", label: "About us" },
-              { href: "/doctors", label: "Doctors" },
-              { href: "/technology", label: "Device & Injectables" },
-              { href: "/products", label: "Products" },
-              { href: "/blog", label: "Blog" },
-              { href: "/privacy", label: "Privacy" },
+              { href: href("/our-story"), label: f.aboutUs },
+              { href: href("/doctors"), label: f.doctors },
+              { href: href("/technology"), label: f.technology },
+              { href: href("/products"), label: f.products },
+              { href: href("/blog"), label: f.blog },
+              { href: href("/privacy"), label: f.privacy },
             ]}
           />
         </div>
@@ -85,12 +94,12 @@ export function SiteFooter() {
         {/* Compliance band — the ledger, as brand furniture (docs/04 §4.2) */}
         <div className="flex flex-col gap-3 border-t border-white/10 py-6 text-xs leading-relaxed text-ink-on-dark/70 md:flex-row md:items-center md:justify-between">
           <p className="ledger !text-ink-on-dark/70">
-            {site.entity} · {site.mmcNote}
+            {site.entity} · {f.mmcNote}
           </p>
           <div className="flex items-center gap-4">
             <a href={site.instagram} className="hover:text-ink-on-dark">Instagram</a>
             <a href={site.facebook} className="hover:text-ink-on-dark">Facebook</a>
-            <Link href="/privacy" className="hover:text-ink-on-dark">Privacy (PDPA)</Link>
+            <Link href={href("/privacy")} className="hover:text-ink-on-dark">{f.privacyPdpa}</Link>
           </div>
         </div>
       </Container>

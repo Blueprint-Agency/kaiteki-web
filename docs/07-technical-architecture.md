@@ -201,6 +201,17 @@ Emits the `docs/04 §7.2` policy (2026-07 token matrix): allow-all baseline with
 
 All routing/data is locale-neutral now: shared slug constants, `locale`-parameterized copy loaders, `alternates.languages` helper stubbed to emit nothing until `/zh` exists (partial hreflang sets are worse than none). `/cn/*` interim redirects live in proxy (§6.3) and re-point 1:1 at `/zh` launch.
 
+**As built (2026-10-13, branch `feat/i18n-zh-ms`).**
+
+- **Three root layouts, one per `<html lang>`:** `app/(en)/` (pathless group, so English URLs are unchanged), `app/zh/`, `app/ms/`. All three render `components/RootDocument.tsx`. Unmatched URLs fall to `app/global-not-found.tsx` (`experimental.globalNotFound`), because there is no single root layout to compose a 404 from.
+- **Same slugs under each prefix.** `lib/i18n.ts` holds `localePath()` / `splitLocale()` and the per-locale `lang`, hreflang (`en-MY`, `zh-MY`, `ms-MY`), `og:locale` and schema `inLanguage`.
+- **The gate:** `content/i18n/pages.ts` is the locale ledger. Each path is either `draft` or `signed` (doctor slug and date). `lib/locale-pages.ts` `isLive()` is the only question every surface asks. In production a page resolves only when it is signed. Drafts render in dev and on the noindexed staging host, so the reviewing doctor can read them in place. Hreflang (`pageMeta({ locale })`), the sitemap (with `alternates.languages`), the header switcher and in-page links (`lhref()`) all follow it.
+- **Copy:** chrome in `content/i18n/chrome.ts`, taxonomy names in `content/i18n/terms.ts` (English fallback), page copy per page (`content/i18n/home*.ts`). Locale copy is written from the keyword map in `docs/18`, not translated.
+- **Switcher:** `components/LanguageSwitcher.tsx` renders plain `<a hreflang lang>` links, with no auto-redirect and no cookie. Each option goes to the same page in that language if it's live, else to that language's home page. The switcher hides itself until a second language has a live page.
+- **Chinese typography:** system CJK stacks under `:lang(zh)` in `globals.css`. There is no CJK web font.
+- **Structured pages (concerns, 2026-10-14):** a translation is `content/i18n/concerns/<locale>/<slug>.json`, mirroring the English record. `lib/i18n-overlay.ts` takes only copy from it; ids, URLs and enums always come from English. Section and FAQ anchors are derived from the English headings and questions, because `headingAnchor` keeps only `[a-z0-9]`. Template labels live in `content/i18n/concern-ui.ts`. English-only data (blog posts, device summaries, reviewer bios, slides with burned-in English) is hidden on locale pages rather than shown untranslated. `pnpm validate:locale` gates the files.
+- **Adding a localized page:** add its copy, a thin `app/<locale>/.../page.tsx` that calls `notFound()` unless `isLive()`, and a `draft` entry in the ledger. Flip it to `signed` once the doctor has read it.
+
 ---
 
 ## 12. CI/CD quality gates (`.github/workflows/ci.yml`)

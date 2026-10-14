@@ -1,0 +1,525 @@
+{
+  "slug": "pigmentation",
+  "name": "Pigmentasi",
+  "group": "Skin",
+  "image": "https://cdn.kaiteki.my/concerns/pigmentation/card.jpg",
+  "summary": "Jeragat (melasma), sun spot dan tanda selepas keradangan masing-masing berkelakuan berbeza. Laser atau rawatan yang sesuai bergantung pada jenis yang anda alami.",
+  "leadAnswer": "Pigmentasi ialah kawasan kulit yang lebih gelap seperti jeragat (melasma), tompok akibat matahari atau tanda yang tinggal selepas keradangan. Jenisnya penting, kerana setiap satu bertindak balas secara berbeza dan sesetengahnya memerlukan penjagaan khusus. Konsultasi membantu menentukan pendekatan mana, jika ada, yang sesuai untuk kulit anda.",
+  "treatments": [
+    "pico-laser",
+    "skin-booster",
+    "vascular-pigment-laser",
+    "resurfacing-laser",
+    "facial-treatments"
+  ],
+  "reviewedBy": "dr-hong-peiyi",
+  "lastReviewed": "2026-06-20",
+  "seoTitle": "Pilihan Rawatan Pigmentasi Muka di Malaysia | Kaiteki",
+  "seoDescription": "Jeragat, sun spot dan hiperpigmentasi pasca-radang memerlukan rawatan berbeza. Doktor menilai pigmentasi muka anda dahulu. Tempah konsultasi percuma.",
+  "banner": {
+    "src": "https://cdn.kaiteki.my/concerns/pigmentation/hero.jpg",
+    "sm": "https://cdn.kaiteki.my/concerns/pigmentation/hero-mobile.jpg",
+    "alt": "Gambar ilustrasi: seseorang memeriksa kawasan warna kulit yang tidak sekata pada pipinya di cermin"
+  },
+  "facts": [
+    {
+      "value": "Beberapa keadaan",
+      "label": "Jeragat, sun spot dan tanda selepas keradangan nampak serupa tetapi berkelakuan berbeza."
+    },
+    {
+      "value": "Jenis dahulu, rawatan kemudian",
+      "label": "Laser yang sesuai untuk sun spot boleh memburukkan jeragat, jadi jenisnya dikenal pasti dahulu."
+    },
+    {
+      "value": "Perlindungan matahari sebahagian daripadanya",
+      "label": "Pelindung matahari spektrum luas setiap hari termasuk dalam setiap pelan yang dibincangkan di sini."
+    }
+  ],
+  "jumpNav": [
+    {
+      "id": "causes",
+      "label": "Punca pigmentasi"
+    },
+    {
+      "id": "which-type",
+      "label": "Jenis pigmentasi"
+    },
+    {
+      "id": "where",
+      "label": "Di mana ia muncul"
+    },
+    {
+      "id": "treatments",
+      "label": "Rawatan"
+    },
+    {
+      "id": "risks",
+      "label": "Risiko"
+    },
+    {
+      "id": "cost",
+      "label": "Kos"
+    },
+    {
+      "id": "faq",
+      "label": "Soalan lazim"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Apa itu pigmentasi?",
+      "body": [
+        "Warna kulit datang daripada melanin, pigmen yang dihasilkan oleh sel khusus yang dipanggil melanosit. Melanin wujud dalam dua bentuk utama: eumelanin yang berwarna coklat hingga hitam, dan feomelanin yang berwarna kuning hingga merah. Jumlah dan jenis melanin yang ada membantu menentukan warna kulit semula jadi setiap orang.",
+        "Pigmentasi menjadi masalah apabila melanin tertabur tidak sekata, meninggalkan tompok yang lebih gelap atau lebih cerah daripada kulit di sekelilingnya. Oleh sebab beberapa keadaan berbeza boleh menyebabkannya, memahami jenis yang anda alami ialah langkah pertama untuk menilai sama ada rawatan mungkin membantu."
+      ]
+    }
+  ],
+  "drivers": {
+    "heading": "Punca biasa pigmentasi di muka",
+    "intro": "Pigmentasi yang tidak sekata biasanya menunjukkan perubahan dalam cara melanin dihasilkan, dan lazimnya lebih daripada satu faktor terlibat serentak.",
+    "items": [
+      {
+        "lead": "Pendedahan matahari dan UV:",
+        "body": "penyumbang yang paling konsisten di negara yang menerima UV khatulistiwa sepanjang tahun. Ia mencetuskan pigmen baharu dan menggelapkan pigmen yang sedia ada, termasuk melalui awan dan kaca tingkap."
+      },
+      {
+        "lead": "Perubahan hormon:",
+        "body": "kehamilan, kontraseptif hormon dan masalah tiroid semuanya dikaitkan dengan jeragat (melasma), sebab itu ia kadangkala dipanggil topeng kehamilan."
+      },
+      {
+        "lead": "Keradangan atau kecederaan pada kulit:",
+        "body": "jerawat, ekzema, melecur, luka atau prosedur kosmetik yang terlalu agresif boleh meninggalkan tanda coklat yang rata semasa kulit pulih. Ini ialah hiperpigmentasi pasca-radang."
+      },
+      {
+        "lead": "Jenis kulit dan sejarah keluarga:",
+        "body": "warna kulit sederhana dan lebih gelap lebih mudah menghasilkan pigmen apabila tercedera, dan jeragat khususnya cenderung berlaku dalam keluarga."
+      }
+    ],
+    "outro": "Haba juga memainkan peranan, berasingan daripada UV. Memasak, hot yoga dan berada lama di luar rumah boleh memburukkan jeragat walaupun pelindung matahari digunakan dengan betul."
+  },
+  "variant": {
+    "kind": "tabs",
+    "heading": "Jenis pigmentasi: yang mana satu anda alami?",
+    "intro": "Tiga jenis ini merangkumi kebanyakan kes yang datang ke klinik di Malaysia. Ia boleh nampak serupa di cermin tetapi dirawat dengan cara yang sangat berbeza, sebab itu doktor memeriksa kulit dahulu, kadangkala dengan lampu Wood, sebelum mencadangkan apa-apa.",
+    "tabs": [
+      {
+        "label": "Sun spot",
+        "sub": "Tompok coklat yang jelas",
+        "title": "Pigmentasi akibat matahari (sun spot)",
+        "body": "Tompok coklat yang berasingan dan agak jelas sempadannya, di kawasan yang paling banyak terkena cahaya: tulang pipi, batang hidung, dahi dan belakang tangan. Ia terkumpul perlahan-lahan selama bertahun-tahun dan tidak pudar seperti kulit yang terbakar matahari.",
+        "items": [
+          {
+            "lead": "Lentigo solar:",
+            "body": "bintik coklat yang rata dan sekata warnanya dengan sempadan yang jelas, sering dipanggil tompok usia atau sun spot."
+          },
+          {
+            "lead": "Freckles:",
+            "body": "lebih kecil, lebih cerah dan lebih banyak, biasanya muncul sejak kecil dan menjadi lebih gelap apabila terdedah kepada matahari."
+          }
+        ],
+        "routing": "lazimnya dinilai untuk pico laser, dengan perlindungan matahari setiap hari sebagai sebahagian daripada pelan."
+      },
+      {
+        "label": "Jeragat (melasma)",
+        "sub": "Simetri, tepi kabur",
+        "title": "Jeragat (melasma)",
+        "body": "Tompok yang lebih besar dan simetri dengan tepi yang lembut dan kabur, biasanya di pipi, atas bibir, dahi dan rahang. Ia dipengaruhi hormon dan sensitif kepada haba, dan inilah satu-satunya jenis yang cenderung menjadi lebih teruk, bukan lebih baik, apabila dirawat secara agresif.",
+        "items": [
+          {
+            "lead": "Simetri ialah petunjuk:",
+            "body": "jeragat biasanya muncul dalam corak seperti cermin di kedua-dua belah muka."
+          },
+          {
+            "lead": "Ia turun naik:",
+            "body": "ia menjadi gelap dengan matahari, haba dan perubahan hormon, dan cerah semula dalam tempoh yang lebih tenang. Kitaran itu berterusan sama ada ia dirawat atau tidak."
+          }
+        ],
+        "routing": "dinilai dengan berhati-hati, dengan tetapan konservatif, jarak sesi yang lebih panjang dan penekanan kuat pada perlindungan harian, bukan kursus yang cepat."
+      },
+      {
+        "label": "Pasca-radang",
+        "sub": "Tanda selepas jerawat sembuh",
+        "title": "Hiperpigmentasi pasca-radang (PIH)",
+        "body": "Tanda coklat atau coklat kelabu yang rata, tepat di tempat sesuatu pernah berlaku: jerawat, calar, tompok ekzema atau gigitan serangga. Permukaan kulit licin, hanya warnanya yang berubah. Sangat biasa pada warna kulit sederhana dan lebih gelap.",
+        "items": [
+          {
+            "lead": "Ia mengikut kecederaan:",
+            "body": "bentuk tanda itu sepadan dengan apa yang menyebabkannya, dan inilah biasanya cara paling jelas untuk membezakannya daripada jeragat."
+          },
+          {
+            "lead": "Ia selalunya pudar sendiri:",
+            "body": "tetapi perlahan-lahan, dalam beberapa bulan, dan pendedahan matahari memanjangkannya. Merawat punca asalnya lebih penting daripada merawat tanda itu."
+          }
+        ],
+        "routing": "redakan punca asalnya dahulu, kemudian pico laser atau rawatan sokongan jika tanda itu masih berterusan."
+      }
+    ]
+  },
+  "slides": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/image-stage-1.jpg",
+      "alt": "Peringkat 1: pendedahan UV mendorong melanosit di bahagian bawah epidermis menghasilkan melanin tambahan."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/image-stage-2.jpg",
+      "alt": "Peringkat 2: melanin tambahan dipindahkan ke sel kulit di sekeliling, dan warna kulit yang sekata mula terganggu."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/image-stage-3.jpg",
+      "alt": "Peringkat 3: pigmen berkumpul dalam tompok, dan bintik yang jelas mula kelihatan di permukaan."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/image-stage-4.jpg",
+      "alt": "Peringkat 4: dengan pendedahan berterusan, tompok menjadi lebih gelap dan merebak di kawasan yang terdedah kepada matahari."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/image-stage-5.jpg",
+      "alt": "Peringkat 5: pigmen sampai ke lapisan kulit yang lebih dalam, yang lebih sukar dicapai dan lebih lambat berubah."
+    }
+  ],
+  "locationBlock": {
+    "heading": "Di mana pigmentasi muncul",
+    "intro": "Kedudukan ialah petunjuk, bukan diagnosis, tetapi coraknya selalunya perkara pertama yang doktor perhatikan.",
+    "cards": [
+      {
+        "title": "Pipi dan tulang pipi",
+        "body": "Bahagian muka yang paling banyak terdedah kepada matahari dan tempat biasa bagi sun spot dan jeragat. Corak yang simetri di kedua-dua pipi menunjukkan jeragat; bintik yang berselerak dan berasingan menunjukkan sebaliknya."
+      },
+      {
+        "title": "Atas bibir dan rahang",
+        "body": "Bayang yang simetri di atas bibir atau di sepanjang rahang ialah corak jeragat yang biasa, dan sering disangka bulu muka atau kesan bercukur."
+      },
+      {
+        "title": "Dahi dan pelipis",
+        "body": "Pendedahan matahari paling berpengaruh di sini, dan produk rambut atau rambut depan juga boleh menyumbang dengan memerangkap haba dan iritasi pada kulit."
+      },
+      {
+        "title": "Hidung dan batang hidung",
+        "body": "Terkena cahaya terus sepanjang hari, jadi freckles dan lentigo solar berkumpul di sini. Ini juga kawasan yang paling mudah tertinggal apabila pelindung matahari disapu dengan tergesa-gesa."
+      },
+      {
+        "title": "Leher, dada dan tangan",
+        "body": "Kerap dilupakan dan kerap paling rosak akibat matahari. Kulit di sini lebih nipis, lebih lambat sembuh dan dirawat dengan lebih konservatif berbanding muka."
+      }
+    ],
+    "note": {
+      "title": "Bukan pigmentasi biasa?",
+      "body": "Tanda yang berubah saiz, bentuk atau warna, bersempadan tidak sekata, gatal atau berdarah patut diperiksa segera. Itu penilaian yang lain sama sekali, dan ia bukan soal kosmetik."
+    }
+  },
+  "seeDoctor": {
+    "intro": "Ada baiknya anda dapatkan pemeriksaan pigmentasi jika mana-mana yang berikut berlaku:",
+    "triggers": [
+      "Produk pencerah yang dibeli tanpa preskripsi tidak membantu selepas beberapa bulan digunakan secara konsisten.",
+      "Tompok itu merebak, atau muncul semula setiap kali ia pudar.",
+      "Anda tidak pasti sama ada ia jeragat atau kerosakan matahari, dan produk yang anda gunakan hanya ditujukan untuk salah satu daripadanya.",
+      "Pigmentasi muncul selepas jerawat, ekzema atau prosedur kosmetik.",
+      "Mana-mana tanda sedang berubah saiz, bentuk, warna atau tekstur, yang perlu dinilai tanpa mengira soal kosmetik."
+    ],
+    "outro": "Mengenal pasti jenis yang betul sejak awal lebih penting di sini berbanding kebanyakan masalah kulit lain, kerana rawatan yang salah bukan sekadar tidak berkesan. Laser yang agresif pada jeragat boleh menggelapkannya, dan kemunduran itu mengambil masa berbulan-bulan untuk pulih."
+  },
+  "ctaMid": {
+    "heading": "Sun spot atau jeragat?",
+    "body": "Kedua-duanya dirawat dengan cara yang hampir bertentangan, dan memang sukar dibezakan di cermin. Hantar gambar kepada kami di WhatsApp dan doktor boleh beritahu yang mana satu yang anda alami."
+  },
+  "treatmentsIntro": "Ini rawatan yang paling kerap dipertimbangkan untuk pigmentasi di klinik kami. Rawatan mana yang sesuai, dan sama ada mana-mana satu sesuai, bergantung sepenuhnya pada jenis yang ditemui semasa penilaian.",
+  "treatmentWhy": {
+    "pico-laser": {
+      "why": "Untuk sun spot, freckles dan pigmen yang degil",
+      "body": "Laser pikosaat yang memecahkan pigmen dengan denyutan yang sangat singkat, bukan dengan memanaskan kulit di sekeliling. Paling boleh dijangka pada bintik akibat matahari yang berasingan dan jelas sempadannya. Digunakan dengan jauh lebih berhati-hati apabila jeragat terlibat."
+    },
+    "vascular-pigment-laser": {
+      "why": "Untuk kemerahan di bawah warna coklat",
+      "body": "Menyasarkan pigmen dan juga saluran darah halus di permukaan, yang penting apabila sesuatu tompok mempunyai komponen merah atau kemerahan selain warna coklat. Doktor menentukan sama ada unsur vaskular itu yang menyebabkan apa yang anda nampak."
+    },
+    "resurfacing-laser": {
+      "why": "Untuk pigmen yang disertai perubahan tekstur",
+      "body": "Laser fraksional yang digunakan apabila warna kulit tidak sekata wujud bersama kekasaran, kerosakan matahari atau parut, bukan secara bersendirian. Downtime lebih panjang, dan mengelak matahari dengan ketat selepas rawatan adalah wajib."
+    },
+    "skin-booster": {
+      "why": "Untuk kulit kusam dan kering di sekitar tompok",
+      "body": "Penghidratan secara suntikan yang menangani kualiti keseluruhan kulit, bukan pigmen itu sendiri. Dipertimbangkan sebagai sokongan, terutamanya apabila kulit kering membuatkan warna kulit nampak lebih tidak sekata daripada yang sebenarnya."
+    },
+    "facial-treatments": {
+      "why": "Untuk pengelupasan lembut antara sesi laser",
+      "body": "Hydrafacial dan Silkpeel menyokong pembaharuan sel di permukaan tanpa haba atau tindakan agresif yang memburukkan jeragat. Ini penjagaan susulan, bukan pengganti untuk mengenal pasti jenis pigmentasi."
+    }
+  },
+  "treatmentsNote": "Jeragat dikawal, bukan disembuhkan. Jika itu diagnosisnya, pelan biasanya konservatif dan jangka panjang, dan doktor mungkin mengesyorkan rawatan perubatan dan perlindungan matahari dahulu sebelum mempertimbangkan sebarang mesin.",
+  "compare": {
+    "intro": "Panduan umum sahaja. Pigmentasi bercampur adalah biasa, dan doktor mungkin mencadangkan sesuatu yang berbeza selepas memeriksa kulit anda.",
+    "columns": [
+      "Masalah anda",
+      "Biasa dipertimbangkan",
+      "Kursus biasa",
+      "Downtime"
+    ],
+    "rows": [
+      [
+        "Sun spot dan freckles",
+        "Pico laser",
+        "Beberapa sesi, berjarak",
+        "Minimum"
+      ],
+      [
+        "Jeragat (melasma)",
+        "Rawatan perubatan yang konservatif dahulu",
+        "Jangka panjang, disemak secara berkala",
+        "Tiada hingga minimum"
+      ],
+      [
+        "Tanda selepas jerawat atau ekzema",
+        "Rawat punca dahulu, kemudian pico laser",
+        "Disemak selepas punca reda",
+        "Minimum"
+      ],
+      [
+        "Pigmen dengan kekasaran atau perubahan tekstur",
+        "Laser resurfacing",
+        "Dinilai secara individu",
+        "5 hingga 7 hari"
+      ],
+      [
+        "Coklat dengan komponen merah",
+        "Laser vaskular dan pigmen",
+        "Beberapa sesi",
+        "Minimum"
+      ],
+      [
+        "Kulit kusam, kering, warna tidak sekata",
+        "Skin booster, rawatan muka di klinik",
+        "Penjagaan berterusan",
+        "Tiada"
+      ],
+      [
+        "Tanda yang sedang berubah",
+        "Dinilai berasingan: bukan soal kosmetik",
+        "Individu",
+        "Individu"
+      ]
+    ],
+    "note": "Bilangan sesi dan jarak antara sesi ditetapkan oleh doktor selepas penilaian, dan diubah suai semasa semakan mengikut tindak balas kulit."
+  },
+  "results": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/before-after-01.jpg",
+      "nativeWidth": 564,
+      "ratio": "1.71/1",
+      "caption": "Pigmentasi muka, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/before-after-02.jpg",
+      "nativeWidth": 564,
+      "ratio": "1.71/1",
+      "caption": "Pigmentasi muka, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/before-after-03.jpg",
+      "nativeWidth": 564,
+      "ratio": "1.71/1",
+      "caption": "Warna kulit tidak sekata di pipi, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/before-after-04.jpg",
+      "nativeWidth": 564,
+      "ratio": "1.71/1",
+      "caption": "Warna kulit tidak sekata di pipi, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/before-after-05.jpg",
+      "nativeWidth": 564,
+      "ratio": "1.71/1",
+      "caption": "Pigmentasi akibat matahari, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/before-after-06.jpg",
+      "nativeWidth": 564,
+      "ratio": "1.71/1",
+      "caption": "Pigmentasi akibat matahari, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/before-after-07.jpg",
+      "nativeWidth": 564,
+      "ratio": "1.71/1",
+      "caption": "Pigmentasi muka, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/before-after-08.jpg",
+      "nativeWidth": 600,
+      "ratio": "1/1",
+      "caption": "Warna dan kejernihan kulit, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/before-after-09.jpg",
+      "nativeWidth": 600,
+      "ratio": "1/1",
+      "caption": "Warna dan kejernihan kulit, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/before-after-10.jpg",
+      "nativeWidth": 600,
+      "ratio": "1/1",
+      "caption": "Pigmentasi muka, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/before-after-11.jpg",
+      "nativeWidth": 600,
+      "ratio": "1/1",
+      "caption": "Pigmentasi muka, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/before-after-12.jpg",
+      "nativeWidth": 600,
+      "ratio": "1/1",
+      "caption": "Pigmentasi muka, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/before-after-13.jpg",
+      "nativeWidth": 600,
+      "ratio": "1/1",
+      "caption": "Pigmentasi muka, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/before-after-14.jpg",
+      "nativeWidth": 1735,
+      "ratio": "5/4",
+      "caption": "Warna kulit tidak sekata di kedua-dua pipi, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    }
+  ],
+  "firstVisit": {
+    "intro": "Konsultasi adalah percuma dan tiada paksaan untuk menempah rawatan selepas itu. Ia biasanya mengambil masa 20 hingga 30 minit.",
+    "steps": [
+      {
+        "title": "Sejarah",
+        "body": "Sudah berapa lama pigmentasi itu ada, sama ada ia muncul selepas kehamilan, kontraseptif, jerawat atau sesuatu prosedur, apa yang pernah anda cuba, dan sebarang ubat yang sedang anda ambil."
+      },
+      {
+        "title": "Pemeriksaan",
+        "body": "Doktor memeriksa kulit anda, kadangkala dengan pembesaran atau lampu Wood, untuk menilai coraknya dan sejauh mana dalam pigmen itu kelihatan berada."
+      },
+      {
+        "title": "Perbincangan",
+        "body": "Jenis apa yang kelihatannya, apa yang terlibat dalam setiap pilihan, apa risikonya bagi warna kulit anda, dan apa yang realistik. Termasuk apabila jawapan yang jujur ialah melindungi kulit dan menunggu."
+      },
+      {
+        "title": "Pelan",
+        "body": "Jika anda memilih untuk meneruskan, anda akan diberi urutan rawatan dan titik semakan. Anda boleh bawa pulang pelan itu dan fikirkan dahulu."
+      }
+    ],
+    "outro": "Bawa produk yang sedang anda gunakan, atau gambar labelnya. Bawa juga gambar lama muka anda jika ada: ia menunjukkan sama ada coraknya merebak atau tetap stabil."
+  },
+  "visitImages": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/procedure-02.png",
+      "caption": "Sesi laser pikosaat sedang dijalankan. Pelindung mata dipakai sepanjang setiap rawatan laser pada muka."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/procedure-03.png",
+      "caption": "Doktor merawat kawasan itu secara berperingkat, sambil melaraskan tetapan mengikut jenis pigmen yang dirawat."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/pigmentation/procedure-04.png",
+      "caption": "Rawatan pigmen dijalankan di klinik, dan pelan disemak pada setiap lawatan."
+    }
+  ],
+  "risks": {
+    "intro": "Setiap rawatan di halaman ini membawa sedikit risiko.",
+    "items": [
+      {
+        "lead": "Biasa dan selalunya sementara",
+        "body": "Kemerahan, bengkak ringan, kulit kering dan rasa kasar atau panas selama beberapa hari. Bintik yang dirawat mungkin menjadi gelap dan mengelupas sebelum tertanggal. Kesan yang kurang biasa termasuk melepuh, kemerahan yang berpanjangan atau jangkitan."
+      },
+      {
+        "lead": "Perubahan pigmen dan kulit rakyat Malaysia",
+        "body": "Warna kulit sederhana dan lebih gelap lebih berisiko mengalami hiperpigmentasi pasca-radang selepas rawatan berasaskan tenaga: masalah yang sedang dirawat itu sendiri, menjadi lebih teruk. Sebab itu doktor di sini memilih tetapan konservatif dan jarak sesi yang lebih panjang, dan kursus rawatan mungkin lebih lama daripada yang anda jangka."
+      },
+      {
+        "lead": "Jeragat boleh berbalik",
+        "body": "Jika dirawat terlalu agresif, jeragat boleh menjadi lebih gelap, bukan lebih cerah, dan kemunduran itu boleh mengambil masa berbulan-bulan untuk reda. Berhati-hati di sini ialah keputusan klinikal, bukan kerana kurang bercita-cita."
+      },
+      {
+        "lead": "Apa yang rawatan tidak dapat lakukan",
+        "body": "Tiada rawatan yang mengubah kecenderungan kulit untuk menghasilkan pigmen. Jeragat dikawal, bukan disembuhkan, dan lazimnya kembali dengan matahari, haba atau perubahan hormon. Tanpa perlindungan matahari setiap hari, bintik yang dirawat akan muncul semula."
+      }
+    ],
+    "disclose": "Beritahu doktor jika anda hamil atau menyusu, mengambil kontraseptif hormon atau terapi hormon, menggunakan retinoid atau asid, pernah mengalami herpes bibir (cold sore) atau parut keloid, baru-baru ini kulit menjadi gelap akibat matahari, atau pernah menjalani sebarang prosedur kulit dalam beberapa minggu kebelakangan ini."
+  },
+  "costFactors": {
+    "intro": "Kos tidak diterbitkan kerana ia bergantung pada penilaian. Faktor yang mempengaruhinya berguna untuk diketahui sebelum anda datang:",
+    "factors": [
+      "Jenis pigmentasi: jeragat dikawal dalam tempoh yang lebih lama berbanding beberapa sun spot.",
+      "Kawasan yang dirawat: beberapa bintik berasingan, seluruh muka, atau leher, dada dan tangan sekali.",
+      "Mesin yang dipilih, kerana platform yang berbeza mempunyai struktur sesi yang berbeza.",
+      "Bilangan sesi, yang ditetapkan selepas penilaian dan diubah suai semasa semakan.",
+      "Sama ada rawatan perubatan atau ubat sapu preskripsi menjadi sebahagian daripada pelan bersama mana-mana mesin."
+    ],
+    "outro": "Doktor akan menerangkan butirannya semasa konsultasi, termasuk berapa sesi yang dijangka dan dalam tempoh berapa lama, sebelum anda membuat sebarang keputusan."
+  },
+  "technologyIntro": "Pigmentasi ialah masalah di mana pilihan mesin paling penting, kerana panjang gelombang dan tempoh denyutan yang sesuai untuk sun spot bukan yang sesuai untuk jeragat. Dengan beberapa platform, doktor boleh memilih mengikut kulit anda, bukan mengikut mesin.",
+  "faqs": [
+    {
+      "q": "Apa beza jeragat (melasma) dan sun spot?",
+      "a": "Sun spot ialah tompok coklat yang berasingan dengan sempadan yang agak jelas, berselerak di kawasan yang paling banyak terkena cahaya, dan terkumpul perlahan-lahan selama bertahun-tahun. Jeragat lebih besar, simetri dan bertepi lembut, biasanya di kedua-dua pipi, atas bibir atau dahi, dan dipengaruhi hormon dan haba selain matahari. Kedua-duanya boleh nampak serupa di cermin tetapi dirawat dengan cara yang hampir bertentangan, sebab itu penilaian dibuat dahulu."
+    },
+    {
+      "q": "Pigmentasi boleh dirawat ke?",
+      "a": "Sesetengah jenis bertindak balas dengan baik dan yang lain memerlukan sikap berhati-hati, jadi ia bergantung sepenuhnya pada jenis yang anda alami. Bintik akibat matahari yang berasingan biasanya paling boleh dijangka. Jeragat dikawal, bukan dihapuskan, dan hiperpigmentasi pasca-radang selalunya pudar sendiri apabila punca asalnya reda. Doktor memeriksa kulit anda dan menerangkan apa yang realistik untuk jenis anda sebelum mencadangkan apa-apa."
+    },
+    {
+      "q": "Kenapa pigmentasi datang balik?",
+      "a": "Kerana rawatan menangani pigmen yang sedia ada, bukan kecenderungan kulit untuk menghasilkannya. Melanosit bertindak balas terhadap UV, haba, keradangan dan perubahan hormon sama seperti sebelumnya. Jeragat khususnya turun naik selama bertahun-tahun. Perlindungan matahari setiap hari dan, jika berkaitan, rawatan perubatan berterusan ialah apa yang memastikan kulit yang dirawat terus stabil, sebab itu kedua-duanya sebahagian daripada setiap pelan, bukan perkara sampingan."
+    },
+    {
+      "q": "Rawatan laser selamat ke untuk kulit gelap, sawo matang atau kulit Asia?",
+      "a": "Ya, jika mesin dan tetapannya dipilih oleh doktor yang berpengalaman dengan jenis kulit anda. Risiko khusus bagi warna kulit sederhana dan lebih gelap ialah hiperpigmentasi pasca-radang, iaitu kulit bertindak balas terhadap rawatan dengan menghasilkan lebih banyak pigmen. Ini dikawal dengan memilih panjang gelombang yang sesuai, menggunakan tetapan konservatif, menjarakkan sesi dengan lebih lama dan tegas tentang perlindungan matahari. Ia pertimbangan yang nyata, bukan alasan untuk mengelak rawatan."
+    },
+    {
+      "q": "Sunscreen betul-betul membantu pigmentasi ke?",
+      "a": "Ia perkara paling konsisten yang boleh anda lakukan, untuk mencegah pigmentasi baharu dan untuk mengekalkan sebarang perubahan yang dicapai. Malaysia terletak dekat dengan khatulistiwa, jadi UV tinggi sepanjang tahun dan menembusi awan dan kaca tingkap. Pelindung matahari spektrum luas yang disapu setiap pagi dan disapu semula sepanjang hari ialah nasihat standard, dan formula berwarna (tinted) memberi sedikit perlindungan tambahan terhadap cahaya nampak, yang berkaitan dengan jeragat."
+    },
+    {
+      "q": "Boleh ke rawat pigmentasi semasa mengandung?",
+      "a": "Rawatan pilihan biasanya ditangguhkan sehingga selepas kehamilan dan tempoh menyusu. Jeragat sering muncul atau bertambah teruk semasa hamil kerana perubahan hormon, dan lazimnya reda sedikit sebanyak selepas itu, jadi merawatnya di tengah-tengah tempoh itu jarang wajar. Perlindungan matahari dan penjagaan kulit yang lembut biasanya dinasihatkan sementara itu. Beritahu doktor semasa konsultasi jika anda hamil, menyusu atau merancang untuk hamil."
+    },
+    {
+      "q": "Krim pencerah atau krim pigmentasi yang dijual di kedai berkesan ke?",
+      "a": "Ia boleh membantu pigmentasi permukaan yang ringan dan menyokong pelan rawatan di klinik, tetapi jangkaan patut sederhana. Kebanyakannya bertindak perlahan dan kesannya bergantung pada penggunaan yang konsisten selama berbulan-bulan. Apabila pigmen berada lebih dalam, produk sapu sahaja selalunya sampai ke had. Doktor boleh beritahu sama ada produk yang anda gunakan sesuai untuk jenis anda, dan sama ada ada bahan di dalamnya yang berisiko merengsakan kulit anda lagi."
+    },
+    {
+      "q": "Perlu buat berapa sesi?",
+      "a": "Itu ditetapkan selepas doktor memeriksa kulit anda, kerana ia bergantung pada jenis, kedalaman dan kawasan. Kursus laser untuk pigmentasi akibat matahari biasanya dirancang sebagai beberapa sesi yang dijarakkan beberapa minggu, dengan titik semakan. Jeragat dirancang sebagai pengurusan berterusan, bukan kursus dengan bilangan tetap. Sesiapa yang memberi angka tepat sebelum memeriksa kulit anda patut dilayan dengan berhati-hati."
+    },
+    {
+      "q": "Adakah pigmentasi jadi lebih gelap dahulu sebelum pudar?",
+      "a": "Dengan sesetengah rawatan laser, ya. Bintik yang dirawat boleh nampak lebih gelap selama beberapa hari, kemudian mengelupas atau tertanggal apabila kulit memperbaharui diri. Ini sebahagian yang dijangka daripada cara rawatan berfungsi, bukan tanda ada yang tidak kena, dan doktor akan memberitahu anda lebih awal jika ia berlaku bagi rawatan anda. Jika kawasan yang dirawat berkelakuan berbeza daripada yang dimaklumkan, hubungi klinik."
+    },
+    {
+      "q": "Masih boleh guna produk retinol atau asid saya?",
+      "a": "Jangan berhenti atau mula menggunakan apa-apa tanpa memberitahu doktor. Retinoid dan asid pengelupas biasanya dihentikan untuk satu tempoh sebelum dan selepas rawatan berasaskan tenaga, kerana ia menipiskan permukaan kulit dan meningkatkan kepekaan. Sesetengahnya berguna antara sesi. Bawa produk sebenar atau gambar labelnya semasa konsultasi, kerana kekuatannya berbeza-beza dan nama sahaja selalunya tidak cukup untuk menilai."
+    },
+    {
+      "q": "Apa itu hiperpigmentasi pasca-radang (PIH)?",
+      "a": "Ia tanda coklat atau coklat kelabu yang rata, tinggal di tempat kulit pernah meradang atau tercedera: selepas jerawat, calar, ekzema, melecur atau sesuatu prosedur. Permukaan kulit licin dan hanya warnanya yang berubah. Ia sangat biasa pada warna kulit sederhana dan lebih gelap. Ia biasanya pudar sendiri dalam beberapa bulan, lebih cepat jika punca asalnya dikawal dan kawasan itu dilindungi daripada matahari."
+    },
+    {
+      "q": "Pigmentasi di tangan, leher atau dada boleh dirawat ke?",
+      "a": "Ya, walaupun kawasan ini berkelakuan berbeza daripada muka. Kulit di situ lebih nipis, kurang kelenjar minyak dan lebih lambat pulih, jadi rawatan biasanya lebih konservatif dan dijarakkan lebih lama. Kawasan ini juga paling kurang dilindungi, sebab itu pigmentasi di situ selalunya lebih ketara berbanding di muka. Ia dinilai dengan cara yang sama, dengan melihat apa yang sebenarnya ada."
+    }
+  ],
+  "relatedConcerns": [
+    {
+      "slug": "acne",
+      "reason": "Kesan jerawat ialah bentuk pigmentasi yang paling biasa kami lihat."
+    },
+    {
+      "slug": "aging",
+      "reason": "Kerosakan matahari mengubah warna dan tekstur kulit pada masa yang sama."
+    },
+    {
+      "slug": "vascular-lesions",
+      "reason": "Kemerahan boleh wujud bersama tompok coklat dan memerlukan mesin yang berbeza."
+    }
+  ],
+  "ctaHeading": "Ketahui jenis pigmentasi anda",
+  "ctaAssesses": "kulit anda"
+}

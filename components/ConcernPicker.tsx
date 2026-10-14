@@ -10,18 +10,37 @@ import { waForConcerns, waLink } from "@/lib/wa";
  *
  *  Pass `branch` on a location page so the prefilled message names the branch
  *  the visitor is actually looking at. */
+export type ConcernPickerCopy = {
+  heading: string;
+  body: string;
+  button: string;
+  /** Pre-filled message with nothing picked, and with "{names}" picked. */
+  waNone: string;
+  waSome: string;
+  /** Joins picked names in the message, e.g. ", " or "、". */
+  join: string;
+  /** Localized chip label per concern slug. */
+  names: Record<string, string>;
+};
+
 export function ConcernPicker({
   branch,
   className = "",
-}: { branch?: string; className?: string } = {}) {
+  copy,
+}: { branch?: string; className?: string; copy?: ConcernPickerCopy } = {}) {
   const [selected, setSelected] = useState<string[]>([]);
 
   function toggle(name: string) {
     setSelected((prev) => (prev.includes(name) ? prev.filter((n) => n !== name) : [...prev, name]));
   }
 
-  const href =
-    selected.length === 0
+  const href = copy
+    ? waLink(
+        selected.length === 0
+          ? copy.waNone
+          : copy.waSome.replace("{names}", selected.join(copy.join)),
+      )
+    : selected.length === 0
       ? branch
         ? waLink(`Hi Kaiteki ${branch}, I'd like to book a free consultation.`)
         : waForConcerns([])
@@ -35,20 +54,27 @@ export function ConcernPicker({
     <div
       className={`rounded-2xl border border-hairline bg-surface p-6 sm:p-8 ${className}`}
     >
-      <h3 className="h-sub sm:text-2xl">What&rsquo;s your top skin concern?</h3>
+      <h3 className="h-sub sm:text-2xl">{copy ? copy.heading : <>What&rsquo;s your top skin concern?</>}</h3>
       <p className="mt-1.5 text-sm text-ink-700">
-        Pick as many as apply. We&rsquo;ll carry them straight into your WhatsApp message
-        {branch ? ` to Kaiteki ${branch}` : ""}.
+        {copy ? (
+          copy.body
+        ) : (
+          <>
+            Pick as many as apply. We&rsquo;ll carry them straight into your WhatsApp message
+            {branch ? ` to Kaiteki ${branch}` : ""}.
+          </>
+        )}
       </p>
       <div className="mt-5 flex flex-wrap gap-2">
         {concerns.map((c) => {
-          const active = selected.includes(c.name);
+          const label = copy?.names[c.slug] ?? c.name;
+          const active = selected.includes(label);
           return (
             <button
               key={c.slug}
               type="button"
               aria-pressed={active}
-              onClick={() => toggle(c.name)}
+              onClick={() => toggle(label)}
               className={`inline-flex items-center gap-1.5 rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
                 active
                   ? "border-espresso bg-espresso text-ink-on-dark"
@@ -56,7 +82,7 @@ export function ConcernPicker({
               }`}
             >
               {active && <Check size={14} />}
-              {c.name}
+              {label}
             </button>
           );
         })}
@@ -69,7 +95,7 @@ export function ConcernPicker({
         className="mt-6 inline-flex items-center justify-center gap-2.5 rounded-full bg-cta px-6 py-3 text-sm font-semibold text-white shadow-sm transition-[transform,background-color] duration-150 hover:bg-cta-hover active:scale-[0.98]"
       >
         <WhatsApp size={18} />
-        Continue on WhatsApp
+        {copy?.button ?? "Continue on WhatsApp"}
       </a>
     </div>
   );

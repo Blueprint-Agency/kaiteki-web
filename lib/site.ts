@@ -1,5 +1,11 @@
 // Brand constants + primary navigation (docs/04 §4).
 import { branches } from "@/content/data/branches";
+import { treatmentCategories, treatmentsByCategory, treatmentHref } from "@/content/data/treatments";
+import { concernGroups, concernsByGroup } from "@/content/data/concerns";
+import { chrome } from "@/content/i18n/chrome";
+import { term } from "@/content/i18n/terms";
+import { lhref } from "@/lib/locale-pages";
+import type { Locale } from "@/lib/i18n";
 
 export const site = {
   name: "Kaiteki Skin Aesthetic Clinic",
@@ -27,26 +33,60 @@ export type NavItem = {
   external?: boolean;
 };
 
-export const primaryNav: NavItem[] = [
-  { label: "Concerns", href: "/concerns", mega: "concerns" },
-  { label: "Treatments", href: "/treatments", mega: "treatments" },
-  { label: "Device & Injectables", href: "/technology" },
-  { label: "Products", href: "/products" },
-  {
-    label: "Locations",
-    href: "/locations",
-    dropdown: [
-      ...branches.map((b) => ({ href: `/locations/${b.slug}`, label: b.name })),
-      { href: "/locations", label: "All locations" },
-    ],
-  },
-  {
-    label: "About",
-    href: "/our-story",
-    dropdown: [
-      { href: "/our-story", label: "Our story" },
-      { href: "/doctors", label: "Our doctors" },
-    ],
-  },
-  { label: "Blog", href: "/blog" },
-];
+export type MenuColumn = { title: string; links: { href: string; label: string }[] };
+
+/** Everything the header renders, resolved for one locale on the server: labels
+ *  from the chrome dictionary, names from the terms map, and every href pointing
+ *  at the locale page when it is live, else the English one. */
+export function headerModel(locale: Locale) {
+  const n = chrome[locale].nav;
+  const href = (path: string) => lhref(locale, path);
+  const nav: NavItem[] = [
+    { label: n.concerns, href: href("/concerns"), mega: "concerns" },
+    { label: n.treatments, href: href("/treatments"), mega: "treatments" },
+    { label: n.technology, href: href("/technology") },
+    { label: n.products, href: href("/products") },
+    {
+      label: n.locations,
+      href: href("/locations"),
+      dropdown: [
+        ...branches.map((b) => ({
+          href: href(`/locations/${b.slug}`),
+          label: term(locale, "branch", b.slug, b.name),
+        })),
+        { href: href("/locations"), label: n.allLocations },
+      ],
+    },
+    {
+      label: n.about,
+      href: href("/our-story"),
+      dropdown: [
+        { href: href("/our-story"), label: n.ourStory },
+        { href: href("/doctors"), label: n.ourDoctors },
+      ],
+    },
+    { label: n.blog, href: href("/blog") },
+  ];
+  const treatments: MenuColumn[] = treatmentCategories.map((cat) => ({
+    title: term(locale, "category", cat, cat),
+    links: treatmentsByCategory(cat).map((t) => ({
+      href: href(treatmentHref(t)),
+      label: term(locale, "treatment", t.slug, t.name),
+    })),
+  }));
+  const concerns: MenuColumn[] = concernGroups.map((g) => ({
+    title: term(locale, "group", g, g),
+    links: concernsByGroup(g).map((c) => ({
+      href: href(`/concerns/${c.slug}`),
+      label: term(locale, "concern", c.slug, c.name),
+    })),
+  }));
+  return {
+    nav,
+    mega: { treatments, concerns },
+    allHref: { treatments: href("/treatments"), concerns: href("/concerns") },
+    homeHref: href("/"),
+  };
+}
+
+export type HeaderModel = ReturnType<typeof headerModel>;

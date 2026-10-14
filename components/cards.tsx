@@ -157,13 +157,32 @@ export function ConcernTile({
   );
 }
 
-export function ConcernCard({ c, priority = false, className = "", style }: { c: Concern; priority?: boolean } & Extra) {
+export function ConcernCard({
+  c,
+  priority = false,
+  href = `/concerns/${c.slug}`,
+  name = c.name,
+  summary = c.summary,
+  explore = "Explore options",
+  alt = `${name}, skin concern treated at Kaiteki Skin Aesthetic Clinic`,
+  className = "",
+  style,
+}: {
+  c: Concern;
+  priority?: boolean;
+  /** Locale overrides. `summary: null` hides it (no translation yet). */
+  href?: string;
+  name?: string;
+  summary?: string | null;
+  explore?: string;
+  alt?: string;
+} & Extra) {
   return (
-    <Link href={`/concerns/${c.slug}`} style={style} className={`${cardBase} overflow-hidden ${className}`}>
+    <Link href={href} style={style} className={`${cardBase} overflow-hidden ${className}`}>
       <div className="relative aspect-[16/10] overflow-hidden bg-tint">
         <Image
           src={c.image}
-          alt={`${c.name}, skin concern treated at Kaiteki Skin Aesthetic Clinic`}
+          alt={alt}
           fill
           priority={priority}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -172,11 +191,15 @@ export function ConcernCard({ c, priority = false, className = "", style }: { c:
       </div>
       <div className="flex flex-1 flex-col p-5">
         <h3 className="font-display text-xl font-medium text-espresso decoration-mocha/50 underline-offset-[5px] group-hover:underline">
-          {c.name}
+          {name}
         </h3>
-        <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-700">{c.summary}</p>
+        {summary ? (
+          <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-700">{summary}</p>
+        ) : (
+          <span className="flex-1" />
+        )}
         <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-accent">
-          Explore options <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
+          {explore} <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
         </span>
       </div>
     </Link>
@@ -189,13 +212,19 @@ function formatLocation(city: string, state: string) {
   return state.includes(city) ? city : `${city}, ${state}`;
 }
 
-export function BranchCard({ b, className = "", style }: { b: Branch } & Extra) {
+export function BranchCard({
+  b,
+  href = `/locations/${b.slug}`,
+  name = b.name,
+  className = "",
+  style,
+}: { b: Branch; href?: string; name?: string } & Extra) {
   return (
-    <Link href={`/locations/${b.slug}`} style={style} className={`${cardBase} overflow-hidden ${className}`}>
+    <Link href={href} style={style} className={`${cardBase} overflow-hidden ${className}`}>
       <div className="relative aspect-[3/2] overflow-hidden bg-tint">
         <Image
           src={b.photo}
-          alt={`Kaiteki Skin Aesthetic Clinic ${b.name}, ${formatLocation(b.city, b.state)}`}
+          alt={`Kaiteki Skin Aesthetic Clinic ${name}, ${formatLocation(b.city, b.state)}`}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -203,7 +232,7 @@ export function BranchCard({ b, className = "", style }: { b: Branch } & Extra) 
       </div>
       <div className="flex flex-1 items-center justify-between gap-3 p-4">
         <div>
-          <h3 className="font-display text-lg font-medium text-espresso">{b.name}</h3>
+          <h3 className="font-display text-lg font-medium text-espresso">{name}</h3>
           <p className="mt-0.5 flex items-center gap-1 text-sm text-ink-500">
             <MapPin size={14} className="text-mocha" /> {formatLocation(b.city, b.state)}
           </p>
@@ -389,13 +418,26 @@ const TECH_TYPE_LABEL: Record<Technology["type"], string> = {
 export function TechnologyCard({
   x,
   showUsedIn = true,
+  typeLabel,
+  summary = x.summary,
+  href = `/technology/${x.slug}`,
+  learnMore = "Learn more",
   className = "",
   style,
-}: { x: Technology; showUsedIn?: boolean } & Extra) {
+}: {
+  learnMore?: string;
+  x: Technology;
+  showUsedIn?: boolean;
+  /** Localized badge; defaults to the English type label. */
+  typeLabel?: string;
+  /** null hides it (locale pages: the summary is English-only data). */
+  summary?: string | null;
+  href?: string;
+} & Extra) {
   const powers = treatmentsOfTechnology(x.slug);
   return (
     <div style={style} className={`${cardBase} overflow-hidden ${className}`}>
-      <Link href={`/technology/${x.slug}`} className="flex flex-1 flex-col">
+      <Link href={href} className="flex flex-1 flex-col">
         {x.image ? (
           <div className="relative aspect-[16/10] overflow-hidden bg-tint">
             <Image
@@ -412,13 +454,17 @@ export function TechnologyCard({
         <div className="flex flex-1 flex-col p-5 pb-0">
           <div className="flex items-center gap-2">
             <span className="rounded-full bg-tint px-2.5 py-1 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-mocha">
-              {TECH_TYPE_LABEL[x.type]}
+              {typeLabel ?? TECH_TYPE_LABEL[x.type]}
             </span>
           </div>
           <h3 className="mt-3 font-display text-xl font-medium text-espresso decoration-mocha/50 underline-offset-[5px] group-hover:underline">
             {x.name}
           </h3>
-          <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-700">{x.summary}</p>
+          {summary ? (
+            <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-700">{summary}</p>
+          ) : (
+            <span className="flex-1" />
+          )}
         </div>
       </Link>
       <div className="p-5 pt-3">
@@ -440,10 +486,10 @@ export function TechnologyCard({
           </p>
         )}
         <Link
-          href={`/technology/${x.slug}`}
+          href={href}
           className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-accent"
         >
-          Learn more <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
+          {learnMore} <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
         </Link>
       </div>
     </div>

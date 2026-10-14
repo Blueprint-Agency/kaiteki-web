@@ -5,16 +5,33 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown, WhatsApp } from "./icons";
 import { Container } from "./Container";
-import { primaryNav } from "@/lib/site";
-import { waGeneric } from "@/lib/wa";
-import {
-  treatmentCategories,
-  treatmentsByCategory,
-  treatmentHref,
-} from "@/content/data/treatments";
-import { concernGroups, concernsByGroup } from "@/content/data/concerns";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import type { HeaderModel } from "@/lib/site";
+import { fmt, type Chrome } from "@/content/i18n/chrome";
+import type { Locale, NonDefaultLocale } from "@/lib/i18n";
 
-export function SiteHeader() {
+/** The menus arrive fully resolved for the locale (lib/site.ts headerModel), so
+ *  this client component ships labels and hrefs, not the treatment/concern data. */
+export function SiteHeader({
+  locale,
+  chrome,
+  model,
+  live,
+  waHref,
+}: {
+  locale: Locale;
+  chrome: Chrome;
+  model: HeaderModel;
+  live: Record<NonDefaultLocale, string[]>;
+  waHref: string;
+}) {
+  const primaryNav = model.nav;
+  const h = chrome.header;
+  // Malay labels run about twice the English length ("Teknologi & Suntikan");
+  // locales other than English get tighter padding so the bar stays on one line.
+  const dense = locale !== "en";
+  const padL = dense ? "pl-2" : "pl-3";
+  const padR = dense ? "pr-2" : "pr-3";
   // One piece of state drives every desktop dropdown (mega + compact), keyed by
   // the nav item's label. null = all closed. Same open/close model everywhere so
   // selecting any option (or leaving the header) closes whatever is open.
@@ -64,10 +81,10 @@ export function SiteHeader() {
     >
       <Container>
         <div className="flex h-[68px] items-center justify-between gap-6">
-          <Link href="/" className="shrink-0" aria-label="Kaiteki home">
+          <Link href={model.homeHref} className="shrink-0" aria-label={h.homeLabel}>
             <Image
               src="/brand/kaiteki-logo.png"
-              alt="Kaiteki Skin Aesthetic Clinic"
+              alt={h.logoAlt}
               width={400}
               height={139}
               priority
@@ -89,7 +106,7 @@ export function SiteHeader() {
                 >
                   <Link
                     href={item.href}
-                    className={`rounded-md py-2 pl-3 pr-1 text-sm font-medium transition-colors ${
+                    className={`whitespace-nowrap rounded-md py-2 ${padL} pr-1 text-sm font-medium transition-colors ${
                       open === item.label ? "text-espresso" : "text-ink-700 hover:text-espresso"
                     }`}
                     onFocus={() => setOpen(item.label)}
@@ -99,10 +116,10 @@ export function SiteHeader() {
                   </Link>
                   <button
                     type="button"
-                    className={`rounded-md py-2 pl-1 pr-3 transition-colors ${
+                    className={`rounded-md py-2 pl-1 ${padR} transition-colors ${
                       open === item.label ? "text-espresso" : "text-ink-700 hover:text-espresso"
                     }`}
-                    aria-label={`${item.label} menu`}
+                    aria-label={fmt(h.menuFor, { label: item.label })}
                     aria-expanded={open === item.label}
                     onClick={() =>
                       setOpen((o) => (o === item.label ? null : item.label))
@@ -126,7 +143,7 @@ export function SiteHeader() {
                 >
                   <Link
                     href={item.href}
-                    className={`rounded-md py-2 pl-3 pr-1 text-sm font-medium transition-colors ${
+                    className={`whitespace-nowrap rounded-md py-2 ${padL} pr-1 text-sm font-medium transition-colors ${
                       open === item.label ? "text-espresso" : "text-ink-700 hover:text-espresso"
                     }`}
                     onFocus={() => setOpen(item.label)}
@@ -136,10 +153,10 @@ export function SiteHeader() {
                   </Link>
                   <button
                     type="button"
-                    className={`rounded-md py-2 pl-1 pr-3 transition-colors ${
+                    className={`rounded-md py-2 pl-1 ${padR} transition-colors ${
                       open === item.label ? "text-espresso" : "text-ink-700 hover:text-espresso"
                     }`}
-                    aria-label={`${item.label} menu`}
+                    aria-label={fmt(h.menuFor, { label: item.label })}
                     aria-expanded={open === item.label}
                     onClick={() =>
                       setOpen((o) => (o === item.label ? null : item.label))
@@ -175,7 +192,7 @@ export function SiteHeader() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="rounded-md px-3 py-2 text-sm font-medium text-ink-700 transition-colors hover:text-espresso"
+                  className={`whitespace-nowrap rounded-md ${padL} ${padR} py-2 text-sm font-medium text-ink-700 transition-colors hover:text-espresso`}
                   onMouseEnter={() => setOpen(null)}
                   {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 >
@@ -186,12 +203,17 @@ export function SiteHeader() {
           </nav>
 
           <div className="flex items-center gap-2">
+            <LanguageSwitcher locale={locale} live={live} label={h.language} />
             <a
-              href={waGeneric}
+              href={waHref}
               target="_blank"
               rel="noopener"
               data-ga-cta_position="header"
-              className="hidden items-center gap-2 rounded-full bg-cta px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-cta-hover sm:inline-flex"
+              // Between lg and xl the longer locales' nav needs this room; the sticky
+              // WhatsApp button still carries the conversion there.
+              className={`hidden items-center gap-2 rounded-full bg-cta px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-cta-hover sm:inline-flex ${
+                dense ? "lg:hidden xl:inline-flex" : ""
+              }`}
             >
               <WhatsApp size={16} /> WhatsApp
             </a>
@@ -199,7 +221,7 @@ export function SiteHeader() {
             <button
               type="button"
               className="inline-flex size-10 items-center justify-center rounded-md text-espresso lg:hidden"
-              aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              aria-label={mobileOpen ? h.closeMenu : h.openMenu}
               aria-expanded={mobileOpen}
               onClick={() => setMobileOpen((o) => !o)}
             >
@@ -233,60 +255,35 @@ export function SiteHeader() {
         >
           <Container>
             <div className="py-8">
-              {openItem.mega === "treatments" ? (
-                <div className="grid grid-cols-2 gap-x-8 gap-y-5 md:grid-cols-3 lg:grid-cols-5">
-                  {treatmentCategories.map((cat) => (
-                    <div key={cat}>
-                      <p className="mb-2.5 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-accent">
-                        {cat}
-                      </p>
-                      <ul className="space-y-1.5">
-                        {treatmentsByCategory(cat).map((t) => (
-                          <li key={t.slug}>
-                            <Link
-                              href={treatmentHref(t)}
-                              onClick={() => setOpen(null)}
-                              className="text-sm text-ink-700 transition-colors hover:text-espresso"
-                            >
-                              {t.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              ) : (
-                <div className="grid grid-cols-2 gap-x-8 gap-y-5 md:grid-cols-3 lg:grid-cols-5">
-                  {concernGroups.map((g) => (
-                    <div key={g}>
-                      <p className="mb-2.5 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-accent">
-                        {g}
-                      </p>
-                      <ul className="space-y-1.5">
-                        {concernsByGroup(g).map((c) => (
-                          <li key={c.slug}>
-                            <Link
-                              href={`/concerns/${c.slug}`}
-                              onClick={() => setOpen(null)}
-                              className="text-sm text-ink-700 transition-colors hover:text-espresso"
-                            >
-                              {c.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              )}
+              <div className="grid grid-cols-2 gap-x-8 gap-y-5 md:grid-cols-3 lg:grid-cols-5">
+                {model.mega[openItem.mega].map((col) => (
+                  <div key={col.title}>
+                    <p className="mb-2.5 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-accent">
+                      {col.title}
+                    </p>
+                    <ul className="space-y-1.5">
+                      {col.links.map((l) => (
+                        <li key={l.href}>
+                          <Link
+                            href={l.href}
+                            onClick={() => setOpen(null)}
+                            className="text-sm text-ink-700 transition-colors hover:text-espresso"
+                          >
+                            {l.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
               <div className="mt-6 border-t border-hairline pt-4">
                 <Link
-                  href={openItem.mega === "treatments" ? "/treatments" : "/concerns"}
+                  href={model.allHref[openItem.mega]}
                   onClick={() => setOpen(null)}
                   className="text-sm font-medium text-accent hover:text-espresso"
                 >
-                  View all {openItem.mega} →
+                  {openItem.mega === "treatments" ? h.viewAllTreatments : h.viewAllConcerns}
                 </Link>
               </div>
             </div>
@@ -305,19 +302,17 @@ export function SiteHeader() {
         <div className="fixed inset-0 top-[68px] z-40 overflow-y-auto bg-page lg:hidden">
           <Container>
             <nav className="flex flex-col py-4" aria-label="Mobile">
-              <MobileGroup title="Treatments" seeAll="/treatments" onNavigate={() => setMobileOpen(false)}>
-                {treatmentCategories.flatMap((cat) =>
-                  treatmentsByCategory(cat).map((t) => ({ href: treatmentHref(t), label: t.name }))
-                )}
-              </MobileGroup>
-              <MobileGroup title="Concerns" seeAll="/concerns" onNavigate={() => setMobileOpen(false)}>
-                {concernGroups.flatMap((g) =>
-                  concernsByGroup(g).map((c) => ({
-                    href: `/concerns/${c.slug}`,
-                    label: c.name,
-                  }))
-                )}
-              </MobileGroup>
+              {(["treatments", "concerns"] as const).map((key) => (
+                <MobileGroup
+                  key={key}
+                  title={primaryNav.find((i) => i.mega === key)?.label ?? key}
+                  seeAll={model.allHref[key]}
+                  seeAllLabel={key === "treatments" ? h.viewAllTreatments : h.viewAllConcerns}
+                  onNavigate={() => setMobileOpen(false)}
+                >
+                  {model.mega[key].flatMap((col) => col.links)}
+                </MobileGroup>
+              ))}
               {primaryNav
                 .filter((i) => !i.mega)
                 .map((i) =>
@@ -369,11 +364,13 @@ export function SiteHeader() {
 function MobileGroup({
   title,
   seeAll,
+  seeAllLabel,
   children,
   onNavigate,
 }: {
   title: string;
   seeAll: string;
+  seeAllLabel: string;
   children: { href: string; label: string }[];
   onNavigate: () => void;
 }) {
@@ -393,7 +390,7 @@ function MobileGroup({
         ))}
         <li className="col-span-2">
           <Link href={seeAll} onClick={onNavigate} className="text-sm font-medium text-accent">
-            View all {title.toLowerCase()} →
+            {seeAllLabel}
           </Link>
         </li>
       </ul>

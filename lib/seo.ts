@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { defaultLocale, localeMeta, localePath, type Locale } from "@/lib/i18n";
+import { hreflangFor } from "@/lib/locale-pages";
 
 // Brand OG fallback. ponytail: reusing the hero photo; swap for a purpose-built
 // 1200×630 branded share card (e.g. public/brand/og-default.jpg) before launch.
@@ -35,6 +37,12 @@ export interface PageMetaInput {
    * medically reviewed page as a website understates what it is.
    */
   ogType?: "website" | "article";
+  /**
+   * The language this render is in. `path` stays locale-neutral ("/", never
+   * "/zh"); the canonical and og:url are prefixed from it, and hreflang lists
+   * whichever locale siblings of `path` are live (lib/locale-pages.ts).
+   */
+  locale?: Locale;
 }
 
 /** Single source of truth for per-page metadata. Guarantees a self-referencing
@@ -46,17 +54,21 @@ export function pageMeta({
   image,
   noindex,
   ogType = "website",
+  locale = defaultLocale,
 }: PageMetaInput): Metadata {
   const ogImage = image ?? DEFAULT_OG_IMAGE;
+  const url = localePath(locale, path);
+  const languages = hreflangFor(path);
   return {
     title: { absolute: title },
     description,
-    alternates: { canonical: path },
+    alternates: { canonical: url, ...(languages ? { languages } : {}) },
     openGraph: {
       title,
       description,
-      url: path,
+      url,
       type: ogType,
+      locale: localeMeta[locale].og,
       images: [{ url: ogImage }],
     },
     twitter: {

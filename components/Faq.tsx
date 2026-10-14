@@ -22,12 +22,23 @@ const faqAnchor = (q: string) =>
  * single answer is what an answer engine wants to quote; with one, a specific
  * question is linkable and `scroll-mt` clears the sticky header.
  */
-export function Faq({ items }: { items: FaqItem[] }) {
+export function Faq({
+  items,
+  anchorFrom,
+}: {
+  items: FaqItem[];
+  /** The English questions, for a translated list: ids keep only [a-z0-9], so
+   *  a Chinese question would slug to "faq-". Same ids in every language. */
+  anchorFrom?: FaqItem[];
+}) {
   return (
     <div className="divide-y divide-hairline border-y border-hairline">
       {items.map((item, i) => (
         // First item open so the section doesn't read as an empty list (T-16).
-        <details key={item.q} id={faqAnchor(item.q)} open={i === 0} className="group scroll-mt-24">
+        <details
+          key={item.q}
+          id={faqAnchor(anchorFrom?.[i]?.q ?? item.q).replace(/^faq-$/, `faq-${i + 1}`)}
+          open={i === 0} className="group scroll-mt-24">
           <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 text-left font-medium text-espresso [&::-webkit-details-marker]:hidden">
             <h3 className="text-base">{item.q}</h3>
             <ChevronDown

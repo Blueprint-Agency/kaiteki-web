@@ -1,0 +1,391 @@
+{
+  "slug": "tattoo-removal",
+  "ctaHeading": "Tak pasti sama ada tatu anda boleh dirawat?",
+  "ctaAssesses": "tatu anda",
+  "name": "Buang Tatu",
+  "group": "Skin",
+  "image": "https://cdn.kaiteki.my/concerns/tattoo-removal/card.jpg",
+  "summary": "Warna dakwat, kedalaman dan warna kulit semuanya mempengaruhi proses buang tatu. Doktor menilai tatu anda sebelum menganggarkan apa yang boleh dijangka.",
+  "leadAnswer": "Buang tatu ialah proses memudarkan dakwat tatu secara beransur-ansur menggunakan tenaga laser, yang memecahkan pigmen kepada zarah yang lebih kecil supaya badan mungkin dapat menyingkirkannya dari semasa ke semasa. Jenis dakwat, warna, kedalaman dan jenis kulit semuanya mempengaruhi kesesuaian dan bilangan sesi, dan perkara ini dinilai oleh doktor semasa konsultasi.",
+  "treatments": [
+    "pico-laser"
+  ],
+  "reviewedBy": "dr-calvin-tan",
+  "lastReviewed": "2026-07-13",
+  "seoTitle": "Penilaian Laser Buang Tatu di Malaysia | Kaiteki",
+  "seoDescription": "Jenis dakwat, warna, kedalaman dan jenis kulit mempengaruhi kesesuaian buang tatu dan bilangan sesi. Doktor menilai tatu anda. Tempah konsultasi percuma.",
+  "banner": {
+    "src": "https://cdn.kaiteki.my/concerns/tattoo-removal/hero.jpg",
+    "sm": "https://cdn.kaiteki.my/concerns/tattoo-removal/hero-mobile.jpg",
+    "alt": "Gambar ilustrasi: lengan bawah bertatu diletakkan di atas permukaan rawatan klinik"
+  },
+  "facts": [
+    {
+      "value": "Satu kursus, bukan satu sesi",
+      "label": "Dakwat disingkirkan oleh badan secara beransur-ansur antara lawatan, dalam beberapa siri lawatan."
+    },
+    {
+      "value": "Warna banyak menentukan",
+      "label": "Hitam dan biru gelap lebih mudah dijangka; sesetengah warna dan pigmen kosmetik tidak."
+    },
+    {
+      "value": "Dinilai secara bersemuka",
+      "label": "Komposisi dakwat jarang diketahui, jadi tatu perlu diperiksa, bukan sekadar diterangkan."
+    }
+  ],
+  "jumpNav": [
+    {
+      "id": "causes",
+      "label": "Faktor bilangan sesi"
+    },
+    {
+      "id": "which-type",
+      "label": "Tindak balas dakwat"
+    },
+    {
+      "id": "where",
+      "label": "Lokasi di badan"
+    },
+    {
+      "id": "treatments",
+      "label": "Rawatan"
+    },
+    {
+      "id": "risks",
+      "label": "Risiko"
+    },
+    {
+      "id": "cost",
+      "label": "Kos"
+    },
+    {
+      "id": "faq",
+      "label": "Soalan lazim"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Apa itu laser buang tatu?",
+      "body": [
+        "Laser buang tatu menggunakan tenaga laser berfokus untuk memecahkan dakwat di dalam kulit kepada serpihan yang cukup kecil untuk dibawa pergi oleh sistem imun badan sendiri. Laser tidak membuang dakwat secara langsung; ia menjadikan zarah itu cukup kecil untuk disingkirkan oleh badan dalam beberapa minggu berikutnya. Sebab itu jarak antara sesi sama pentingnya dengan sesi itu sendiri.",
+        "Orang mempertimbangkannya atas pelbagai sebab, termasuk citarasa peribadi yang berubah, nama yang sudah tidak lagi bermakna, atau tatu yang tidak lagi sesuai dengan pekerjaan mereka. Ia proses beransur-ansur yang dilakukan dalam satu kursus beberapa lawatan, dan tindak balas setiap tatu sangat berbeza. Doktor menilai tatu anda semasa konsultasi sebelum sebarang rawatan dicadangkan."
+      ]
+    }
+  ],
+  "drivers": {
+    "heading": "Apa yang mempengaruhi bilangan sesi anda",
+    "intro": "Tiada bilangan sesi tetap yang sesuai untuk setiap tatu, dan sesiapa yang memberi angka sebelum melihatnya hanya meneka. Tatu disemak pada setiap lawatan dan pelan diubah suai apabila ia semakin pudar. Inilah faktor yang paling banyak mempengaruhinya.",
+    "items": [
+      {
+        "lead": "Warna dakwat:",
+        "body": "pigmen yang berbeza menyerap panjang gelombang yang berbeza. Hitam dan biru gelap menyerap secara meluas dan bertindak balas dengan lebih mudah dijangka. Hijau, biru muda, kuning dan sesetengah merah memerlukan panjang gelombang tertentu dan kurang konsisten."
+      },
+      {
+        "lead": "Sedalam mana dakwat berada:",
+        "body": "tatu profesional meletakkan dakwat lebih dalam dan lebih padat berbanding tatu amatur. Dakwat yang lebih dalam memerlukan lebih banyak sesi untuk dicapai dan disingkirkan, dan tatu berlapis atau tatu tutup (cover-up) boleh mempunyai beberapa kedalaman sekali gus."
+      },
+      {
+        "lead": "Saiz dan kepadatan:",
+        "body": "tatu yang lebih besar atau berwarna pekat mengandungi lebih banyak pigmen. Isian hitam penuh bertindak balas secara berbeza berbanding reka bentuk garisan halus yang sama saiz."
+      },
+      {
+        "lead": "Lokasi tatu di badan:",
+        "body": "kawasan dengan peredaran darah yang baik, lebih dekat dengan jantung, biasanya lebih mudah menyingkirkan serpihan berbanding tangan, buku lali dan kaki, di mana aliran limfa lebih perlahan."
+      },
+      {
+        "lead": "Usia tatu dan kesihatan anda:",
+        "body": "tatu yang lebih lama biasanya sudah sedikit pudar. Merokok, peredaran darah yang lemah dan apa-apa yang melemahkan fungsi imun memperlahankan proses penyingkiran yang menjadi asas rawatan ini."
+      }
+    ],
+    "outro": "Warna kulit juga dinilai bersama semua faktor ini. Warna kulit sederhana dan lebih gelap mengandungi lebih banyak melanin, yang bersaing dengan dakwat untuk menyerap tenaga laser, jadi tetapan dipilih dengan lebih konservatif dan jarak antara sesi dipanjangkan."
+  },
+  "variant": {
+    "kind": "table",
+    "heading": "Bagaimana dakwat berlainan warna bertindak balas",
+    "intro": "Komposisi dakwat tidak seragam dan jarang direkodkan, jadi jadual ini menerangkan tindak balas secara umum, bukan apa yang akan berlaku pada tatu anda. Ia panduan untuk perbincangan, bukan ramalan.",
+    "columns": [
+      "Dakwat",
+      "Bagaimana ia bertindak balas",
+      "Maksudnya secara praktikal"
+    ],
+    "rows": [
+      [
+        "Hitam dan biru gelap",
+        "Menyerap julat panjang gelombang yang luas",
+        "Paling mudah dijangka untuk dirawat, dan biasanya menjadi titik rujukan semasa merancang kursus"
+      ],
+      [
+        "Hijau dan biru kehijauan",
+        "Menyerap dalam julat yang sempit sahaja",
+        "Memerlukan panjang gelombang tertentu; biasanya dinilai sama ada platform klinik boleh mencapainya"
+      ],
+      [
+        "Merah dan oren",
+        "Bertindak balas pada panjang gelombang yang lebih pendek",
+        "Secara amnya boleh dirawat, tetapi kulit di sekelilingnya lebih mudah mengalami reaksi sementara"
+      ],
+      [
+        "Kuning dan warna pastel lembut",
+        "Kurang menyerap pada kebanyakan panjang gelombang",
+        "Selalunya warna terakhir yang masih kelihatan, dan kadangkala sebab kursus dihentikan sebelum tatu bersih"
+      ],
+      [
+        "Pigmen putih dan warna kulit",
+        "Boleh menjadi gelap apabila terkena tenaga laser",
+        "Diuji pada kawasan kecil dahulu, kerana sesetengah formulasi teroksida menjadi kelabu atau hitam"
+      ],
+      [
+        "Tatu kosmetik dan solekan separa kekal",
+        "Komposisinya sangat berbeza dan jarang diketahui",
+        "Sentiasa diuji dahulu; pigmen kening dan bibir antara yang paling sukar dijangka"
+      ],
+      [
+        "Tatu amatur atau tatu cucuk tangan",
+        "Lebih cetek dan kurang padat",
+        "Selalunya bertindak balas lebih cepat berbanding tatu profesional yang sama saiz"
+      ]
+    ],
+    "note": "Ujian tampalan pada kawasan kecil yang tidak ketara ialah amalan standard apabila tindak balas warna tidak pasti. Ia hanya memerlukan satu lawatan dan mengelakkan kejutan pada keseluruhan tatu."
+  },
+  "locationBlock": {
+    "heading": "Di mana tatu itu berada",
+    "intro": "Badan menyingkirkan serpihan dakwat melalui sistem limfa, jadi seberapa baik aliran di sesuatu kawasan mengubah tindak balas tatu antara sesi.",
+    "cards": [
+      {
+        "title": "Lengan atas, dada dan belakang badan",
+        "body": "Peredaran darah yang baik dan aliran limfa yang baik. Kawasan ini secara amnya lebih mudah menyingkirkan serpihan antara lawatan, sebab itu ia sering dijadikan rujukan semasa merancang."
+      },
+      {
+        "title": "Lengan bawah dan betis",
+        "body": "Pertengahan. Kawasan ini juga kerap terdedah kepada matahari, yang penting dari segi risiko perubahan pigmen dan sejauh mana kawasan itu perlu dilindungi antara sesi."
+      },
+      {
+        "title": "Tangan, jari, buku lali dan kaki",
+        "body": "Aliran lebih perlahan dan kulit lebih nipis di atas tulang. Kawasan ini biasanya memerlukan jarak sesi yang lebih panjang dan lebih kesabaran, dan di sinilah jangkaan paling kerap perlu diselaraskan."
+      },
+      {
+        "title": "Muka, leher dan kening",
+        "body": "Dirawat dengan sangat berhati-hati. Pigmen kosmetik sukar dijangka, kulitnya nipis, dan sebarang perubahan pigmen di sini sangat ketara. Ujian tampalan ialah langkah standard, bukan pilihan."
+      }
+    ],
+    "note": {
+      "title": "Tatu di atas parut atau tatu yang timbul?",
+      "body": "Tatu yang dibuat di atas tisu parut, atau tatu yang timbul atau gatal, dinilai secara berasingan. Begitu juga tatu yang mengandungi tahi lalat atau tanda yang berubah, yang mesti diperiksa sebelum laser digunakan berhampirannya."
+    }
+  },
+  "seeDoctor": {
+    "heading": "Apa yang doktor periksa dahulu",
+    "intro": "Sebelum sebarang laser digunakan, penilaian meliputi beberapa perkara yang menentukan sama ada rawatan sesuai atau tidak:",
+    "triggers": [
+      "Warna yang ada, dan sama ada platform klinik mempunyai panjang gelombang untuk setiap satu.",
+      "Sama ada tatu itu tatu tutup, telah diubah suai, atau pernah dirawat di tempat lain.",
+      "Warna kulit anda, kerana ia menentukan sejauh mana tetapan perlu konservatif.",
+      "Sebarang tahi lalat, tanda yang berubah atau parut di dalam atau di sebelah tatu, yang diperiksa secara berasingan.",
+      "Sejarah perubatan anda, termasuk apa-apa yang menjejaskan fungsi imun, penyembuhan atau kepekaan terhadap cahaya."
+    ],
+    "outro": "Ujian tampalan selalunya dilakukan semasa atau tidak lama selepas lawatan ini, terutamanya bagi tatu berwarna, pigmen kosmetik atau warna kulit yang lebih gelap. Ia cara paling murah untuk mengetahui tindak balas tatu anda sebelum memulakan satu kursus."
+  },
+  "ctaMid": {
+    "heading": "Tertanya-tanya sama ada tatu anda boleh dibuang?",
+    "body": "Warna, kedalaman dan warna kulit menentukan sebahagian besarnya, dan tiada satu pun boleh dinilai melalui penerangan sahaja. Hantar gambar kepada kami di WhatsApp dan doktor boleh beritahu apa yang boleh dijangka daripada penilaian."
+  },
+  "treatmentsIntro": "Buang tatu di klinik kami ialah satu rawatan yang dilakukan dalam satu kursus beberapa lawatan. Yang berbeza ialah panjang gelombang yang digunakan, tetapan yang dipilih untuk kulit anda, dan berapa jauh jarak antara sesi.",
+  "treatmentWhy": {
+    "pico-laser": {
+      "why": "Untuk memecahkan dakwat kepada zarah yang boleh disingkirkan badan",
+      "body": "Laser pikosaat menghantar tenaga dalam denyutan yang cukup singkat untuk memecahkan pigmen secara mekanikal, bukan dengan memanaskannya, dan ini mengurangkan haba yang sampai ke kulit sekeliling. Beberapa panjang gelombang tersedia supaya warna dakwat yang berbeza boleh disasarkan, dan tetapan dipilih mengikut warna kulit anda."
+    }
+  },
+  "treatmentsNote": "Sesi sengaja dijarakkan beberapa minggu: tempoh itulah badan anda menyingkirkan dakwat yang telah dipecahkan, jadi merawat lebih awal menambah risiko tanpa menambah manfaat. Tatu disemak pada setiap lawatan, dan kursus diteruskan, diubah suai, atau dihentikan atas persetujuan bersama.",
+  "results": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/tattoo-removal/before-after-01.jpg",
+      "nativeWidth": 564,
+      "ratio": "1.71/1",
+      "caption": "Tatu, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/tattoo-removal/before-after-02.jpg",
+      "nativeWidth": 564,
+      "ratio": "1.71/1",
+      "caption": "Tatu, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/tattoo-removal/before-after-03.jpg",
+      "nativeWidth": 564,
+      "ratio": "1.71/1",
+      "caption": "Tatu, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/tattoo-removal/before-after-04.jpg",
+      "nativeWidth": 564,
+      "ratio": "1.71/1",
+      "caption": "Tatu, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/tattoo-removal/before-after-05.jpg",
+      "nativeWidth": 564,
+      "ratio": "1.71/1",
+      "caption": "Tatu, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/tattoo-removal/before-after-06.jpg",
+      "nativeWidth": 564,
+      "ratio": "1.71/1",
+      "caption": "Tatu, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/tattoo-removal/before-after-07.jpg",
+      "nativeWidth": 600,
+      "ratio": "1/1",
+      "caption": "Tatu, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/tattoo-removal/before-after-08.jpg",
+      "nativeWidth": 600,
+      "ratio": "1/1",
+      "caption": "Tatu, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/tattoo-removal/before-after-09.jpg",
+      "nativeWidth": 600,
+      "ratio": "1/1",
+      "caption": "Tatu, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/tattoo-removal/before-after-10.jpg",
+      "nativeWidth": 600,
+      "ratio": "1/1",
+      "caption": "Tatu, sebelum dan selepas satu kursus rawatan di Kaiteki"
+    }
+  ],
+  "firstVisit": {
+    "intro": "Konsultasi adalah percuma dan tiada paksaan untuk menempah rawatan selepas itu. Ia biasanya mengambil masa 20 hingga 30 minit.",
+    "steps": [
+      {
+        "title": "Sejarah",
+        "body": "Bila dan di mana tatu itu dibuat, sama ada ia tatu tutup atau pernah dirawat sebelum ini, sejarah perubatan anda, ubat-ubatan, dan bagaimana kulit anda biasanya sembuh."
+      },
+      {
+        "title": "Pemeriksaan",
+        "body": "Doktor memeriksa tatu secara langsung: warna, kepadatan, kedalaman, keadaan kulit di sekeliling, dan apa-apa di dalamnya yang perlu dinilai secara berasingan."
+      },
+      {
+        "title": "Perbincangan",
+        "body": "Warna mana yang mungkin bertindak balas, bagaimana jarak sesi ditetapkan dan mengapa, penjagaan selepas rawatan, risiko termasuk perubahan pigmen dan parut, dan bagaimana rupa kursus yang realistik bagi tatu seperti tatu anda."
+      },
+      {
+        "title": "Ujian tampalan dan pelan",
+        "body": "Jika tindak balas warna tidak pasti, kawasan ujian yang kecil dirawat dahulu. Jika anda memilih untuk meneruskan, anda akan diberi urutan rawatan dan titik semakan. Anda boleh bawa pulang pelan itu dan fikirkan dahulu."
+      }
+    ],
+    "outro": "Bawa apa-apa maklumat yang anda ada tentang tatu itu: siapa yang membuatnya, bila, dan sama ada ia menutup tatu lama. Gambar semasa tatu itu masih baharu juga berguna, kerana ia menunjukkan sejauh mana tatu itu sudah pudar."
+  },
+  "visitImages": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/tattoo-removal/procedure-02.jpg",
+      "caption": "Rawatan laser pikosaat sedang dijalankan. Sesi dijarakkan beberapa minggu supaya kulit sempat pulih antara sesi."
+    }
+  ],
+  "figures": [
+    {
+      "src": "https://cdn.kaiteki.my/concerns/tattoo-removal/image-ink-colour.jpg",
+      "caption": "Tatu yang mempunyai beberapa warna biasanya memerlukan lebih daripada satu panjang gelombang, kerana setiap warna menyerap cahaya secara berbeza."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/tattoo-removal/image-ink-depth.jpg",
+      "caption": "Dakwat tatu berada di dermis, iaitu lapisan di bawah permukaan kulit. Ilustrasi: National Cancer Institute."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/tattoo-removal/image-size-density.jpg",
+      "caption": "Tatu besar yang berlorek padat mengandungi lebih banyak dakwat berbanding reka bentuk garisan halus, dan biasanya memerlukan lebih banyak sesi."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/concerns/tattoo-removal/image-upper-back.jpg",
+      "caption": "Aliran darah dan limfa berbeza di seluruh badan, dan ini mempengaruhi seberapa cepat dakwat yang telah dipecahkan disingkirkan dari setiap kawasan."
+    },
+    null
+  ],
+  "risks": {
+    "intro": "Laser buang tatu membawa risiko yang sebenar, dan ia wajar dibaca sebelum anda menempah.",
+    "items": [
+      {
+        "lead": "Biasa dan dijangka",
+        "body": "Kawasan yang dirawat menjadi putih serta-merta, kemudian kemerahan, bengkak, rasa sengal dan selalunya melepuh atau berkuping dalam beberapa hari berikutnya. Kawasan itu mungkin mengeluarkan cecair untuk seketika. Arahan penjagaan lengkap akan diberikan, dan mematuhinya ialah perkara utama yang melindungi hasil rawatan."
+      },
+      {
+        "lead": "Perubahan pigmen dan kulit rakyat Malaysia",
+        "body": "Warna kulit sederhana dan lebih gelap lebih berisiko mengalami hipopigmentasi, iaitu kulit yang dirawat menjadi lebih cerah daripada kawasan sekeliling, dan hiperpigmentasi pasca-radang. Kedua-duanya ialah sebab tetapan yang konservatif dan jarak sesi yang panjang digunakan di sini, dan sebab ujian tampalan penting."
+      },
+      {
+        "lead": "Parut dan dakwat menjadi gelap",
+        "body": "Parut jarang berlaku tetapi boleh terjadi, terutamanya jika kuping dikopek atau jika sesi terlalu rapat. Sesetengah pigmen, terutamanya dakwat kosmetik berwarna putih dan warna kulit, boleh menjadi gelap apabila terkena tenaga laser. Ujian tampalan ialah cara untuk mengetahuinya pada kawasan kecil, bukan pada kawasan yang besar."
+      },
+      {
+        "lead": "Apa yang rawatan tidak dapat lakukan",
+        "body": "Tiada tatu yang boleh dijanjikan akan bersih sepenuhnya. Dakwat kuning dan pastel selalunya masih kelihatan selepas warna lain hilang, dan bayang samar atau perubahan tekstur kulit di tempat tatu ialah hasil akhir yang biasa. Buang tatu tidak mengembalikan kulit kepada rupa sebelum ditatu, dan tiada sesiapa boleh memberitahu anda lebih awal dengan tepat berapa sesi yang diperlukan untuk tatu anda."
+      }
+    ],
+    "disclose": "Beritahu doktor anda jika anda hamil atau menyusu, mengambil ubat yang meningkatkan kepekaan terhadap cahaya atau ubat jerawat oral, ada sejarah parut keloid atau herpes bibir (cold sore), ada penyakit yang menjejaskan fungsi imun atau penyembuhan, kulit anda baru digelapkan oleh matahari, atau tatu itu pernah dirawat di tempat lain sebelum ini."
+  },
+  "costFactors": {
+    "intro": "Kos tidak dipaparkan kerana ia bergantung pada tatu itu sendiri. Tetapi elok anda tahu apa yang mempengaruhinya sebelum datang:",
+    "factors": [
+      "Saiz tatu, dan sepadat mana dakwat di dalamnya.",
+      "Berapa banyak warna yang ada, kerana sesetengahnya memerlukan panjang gelombang yang berbeza daripada yang lain.",
+      "Lokasi tatu di badan, yang mempengaruhi teknik dan bagaimana kawasan itu dijangka menyingkirkan dakwat.",
+      "Bilangan sesi, yang disemak pada setiap lawatan, bukan ditetapkan lebih awal.",
+      "Sama ada ujian tampalan dilakukan dahulu, yang menjadi amalan standard bagi tatu berwarna dan pigmen kosmetik."
+    ],
+    "outro": "Doktor akan menerangkan butirannya semasa konsultasi, termasuk bagaimana jarak sesi ditetapkan dan bagaimana pelan disemak semasa tatu semakin pudar, sebelum anda membuat sebarang keputusan."
+  },
+  "technologyIntro": "Dakwat yang berlainan warna menyerap panjang gelombang yang berbeza, jadi platform dengan satu panjang gelombang sahaja hanya boleh mencapai sebahagian daripada tatu. Dengan lebih daripada satu, doktor boleh memadankan panjang gelombang dengan warna yang ada di hadapannya, bukan bergantung pada apa yang kebetulan ditawarkan oleh mesin.",
+  "faqs": [
+    {
+      "q": "Boleh ke tatu dibuang sampai bersih sepenuhnya?",
+      "a": "Kadangkala boleh, tetapi ia tidak boleh dijanjikan untuk mana-mana tatu sebelum dirawat. Hitam dan biru gelap secara amnya paling mudah dijangka, manakala kuning, pastel dan sesetengah pigmen kosmetik selalunya masih kelihatan selepas warna lain hilang. Bayang samar atau sedikit perubahan tekstur kulit di tempat tatu ialah hasil akhir yang biasa. Doktor sepatutnya memberitahu anda apa yang realistik untuk tatu anda sebelum anda bermula."
+    },
+    {
+      "q": "Buang tatu perlu berapa sesi?",
+      "a": "Tiada bilangan yang tetap, dan sesiapa yang memberi anda angka sebelum memeriksa tatu itu hanya meneka. Ia bergantung pada warna, sedalam dan sepadat mana dakwat dimasukkan, saiz, lokasinya di badan, warna kulit anda dan seberapa baik kulit anda sembuh. Tatu disemak pada setiap lawatan dan pelan diubah suai apabila ia semakin pudar, dan ini lebih jujur daripada menjual pakej dari awal."
+    },
+    {
+      "q": "Kenapa jarak antara sesi perlu begitu lama?",
+      "a": "Kerana laser tidak membuang dakwat. Ia memecahkannya, dan sistem imun anda sendiri membawa serpihan itu pergi dalam beberapa minggu berikutnya. Tempoh antara sesi itulah masa dakwat sebenarnya disingkirkan. Merawat lebih awal menambah haba dan risiko pada kulit yang belum pulih sepenuhnya, tanpa memberi masa kepada badan untuk melakukan bahagiannya. Kesabaran antara sesi memang mempengaruhi hasilnya."
+    },
+    {
+      "q": "Buang tatu sakit ke?",
+      "a": "Ia biasanya digambarkan lebih tidak selesa berbanding semasa membuat tatu, walaupun ia selesai jauh lebih cepat. Ramai orang menyamakannya dengan getah panas yang dipetik pada kulit. Krim kebas disapu sebelum rawatan dan penyejukan digunakan semasa dan selepasnya. Kawasan bertulang seperti rusuk, buku lali dan tangan lebih terasa. Nyatakan semasa konsultasi jika rasa sakit sangat merisaukan anda."
+    },
+    {
+      "q": "Adakah buang tatu meninggalkan parut?",
+      "a": "Parut jarang berlaku jika jarak sesi betul dan penjagaan selepas rawatan dipatuhi, tetapi ia risiko yang sebenar, bukan sekadar teori. Mengopek kuping atau lepuh ialah punca yang paling boleh dielakkan. Parut sedia ada akibat proses membuat tatu dahulu juga mungkin menjadi lebih ketara apabila dakwat yang menutupinya sudah tiada, dan doktor sepatutnya menunjukkannya semasa penilaian."
+    },
+    {
+      "q": "Laser buang tatu selamat ke untuk kulit gelap atau sawo matang?",
+      "a": "Ya, dengan panjang gelombang yang betul, tetapan yang konservatif dan jarak sesi yang lebih panjang. Isu khususnya ialah melanin dalam kulit bersaing dengan dakwat untuk menyerap tenaga laser, dan ini meningkatkan kemungkinan kawasan yang dirawat menjadi lebih cerah atau lebih gelap daripada kulit di sekelilingnya. Inilah tujuan ujian tampalan, dan sebab rawatan di sini sengaja lebih perlahan berbanding yang mungkin anda lihat di tempat lain."
+    },
+    {
+      "q": "Boleh ke buang tatu kening atau bibir (sulam kening, sulam bibir)?",
+      "a": "Ia boleh dinilai, tetapi ia antara pigmen yang paling sukar dijangka untuk dirawat. Formulasi kosmetik sangat berbeza, jarang direkodkan, dan sesetengahnya mengandungi bahan yang menjadi gelap apabila terkena tenaga laser, bukannya pudar. Ujian tampalan pada kawasan kecil yang tidak ketara ialah amalan standard sebelum merawat apa-apa di muka, dan penilaian mungkin membuat kesimpulan bahawa rawatan tidak dinasihatkan."
+    },
+    {
+      "q": "Apa pantang dan penjagaan selepas buang tatu?",
+      "a": "Pastikan kawasan itu bersih, kering dan bertutup seperti yang diarahkan, jangan kopek lepuh atau kuping, elakkan kolam renang, sauna dan senaman berat sehingga ia pulih, dan jauhkan sepenuhnya daripada matahari. Pendedahan matahari pada kulit yang dirawat ialah punca paling biasa perubahan pigmen selepas itu. Doktor anda akan memberi arahan bertulis yang khusus untuk kawasan yang dirawat."
+    }
+  ],
+  "relatedConcerns": [
+    {
+      "slug": "pigmentation",
+      "reason": "Perubahan pigmen selepas buang tatu dinilai dengan cara yang sama seperti pigmentasi lain."
+    },
+    {
+      "slug": "birthmark",
+      "reason": "Tanda lahir berpigmen dirawat menggunakan prinsip laser yang berkaitan."
+    },
+    {
+      "slug": "acne",
+      "reason": "Perubahan tekstur yang ditinggalkan dinilai bersama parut daripada apa-apa punca."
+    }
+  ]
+}

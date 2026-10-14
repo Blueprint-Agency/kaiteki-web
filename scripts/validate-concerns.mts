@@ -447,7 +447,7 @@ if (treatments.some((t) => t.manufacturerImages?.length)) {
 // the concern data so it cannot be edited away one page at a time.
 if (concerns.some((c) => c.results?.length)) {
   const root = join(import.meta.dirname, "..");
-  const renderers = ["components", "app/concerns"]
+  const renderers = ["components", "app/(en)/concerns"]
     .flatMap((dir) =>
       readdirSync(join(root, dir), { recursive: true, encoding: "utf8" }).map((f) => `${dir}/${f}`),
     )

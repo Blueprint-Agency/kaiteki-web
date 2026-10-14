@@ -253,10 +253,13 @@ export function CtaMid({
   cta,
   href,
   position = "mid",
+  copy,
 }: {
   cta?: Treatment["ctaMid"];
   href: string;
   position?: string;
+  /** Localized button, note and steps (content/i18n/concern-ui.ts). */
+  copy?: { button: string; note: string; steps: { title: string; body: string }[] };
 }) {
   if (!cta) return null;
   // The action sits under the copy it answers, not across an empty gutter, and
@@ -264,7 +267,7 @@ export function CtaMid({
   // more likely to message when the next three steps are known. Every step is
   // copy the site already states elsewhere (hero CTA line, the "Assessment
   // first" fact), so the band adds no claim of its own.
-  const steps = [
+  const steps = copy?.steps ?? [
     { title: "Message us", body: "Send a question, or a photo, on WhatsApp." },
     {
       title: "Free consultation",
@@ -294,10 +297,10 @@ export function CtaMid({
                 href={href}
                 size="lg"
                 position={position}
-                label="Ask about this on WhatsApp"
+                label={copy?.button ?? "Ask about this on WhatsApp"}
                 className="w-full shadow-[0_10px_28px_-8px_rgb(0_0_0/0.45)] sm:w-auto"
               />
-              <p className="text-sm text-ink-on-dark/75">Free consultation, no obligation.</p>
+              <p className="text-sm text-ink-on-dark/75">{copy?.note ?? "Free consultation, no obligation."}</p>
             </div>
           </div>
 

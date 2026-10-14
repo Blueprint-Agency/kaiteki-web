@@ -13,7 +13,10 @@ export function PageHeader({
   title,
   description,
   children,
+  home,
 }: {
+  /** Localized first crumb; English "Home" → "/" by default. */
+  home?: { label: string; href: string };
   crumbs: Crumb[];
   eyebrow?: ReactNode;
   title: ReactNode;
@@ -22,7 +25,7 @@ export function PageHeader({
 }) {
   return (
     <header className="border-b border-hairline pb-8 sm:pb-10">
-      <Breadcrumbs items={crumbs} />
+      <Breadcrumbs items={crumbs} home={home} />
       <div className="mt-7 max-w-2xl">
         {eyebrow && (
           <p className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.16em] text-mocha">

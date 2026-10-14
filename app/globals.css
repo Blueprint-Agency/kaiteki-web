@@ -74,6 +74,52 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* Simplified Chinese (/zh). The brand faces are Latin-only, so Latin runs
+   (Pico, HIFU, RM699) keep them and CJK falls through to the visitor's own
+   system fonts: sans for UI, Song/Ming serif for display, echoing Fraunces.
+   No CJK web font: megabytes per weight, and English pages must never pay for
+   it (docs/02 §2). Tight negative tracking and synthetic italics both damage
+   Hanzi, so the display scale loosens and the flourish word turns upright. */
+/* @theme is `inline`, so the font-* utilities carry literal stacks rather than
+   reading --font-*; each family is therefore restated per selector here. */
+:lang(zh) body,
+:lang(zh) .font-sans,
+:lang(zh) .kicker,
+:lang(zh) .ledger {
+  font-family: var(--font-sans-face), "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    "Noto Sans SC", "Noto Sans CJK SC", system-ui, sans-serif;
+}
+:lang(zh) .font-display,
+:lang(zh) .h-hero,
+:lang(zh) .h-section,
+:lang(zh) .h-sub {
+  font-family: var(--font-display-face), "Songti SC", "STSong", "Noto Serif SC",
+    "Noto Serif CJK SC", "SimSun", serif;
+}
+:lang(zh) .prose,
+:lang(zh) .font-serif {
+  font-family: var(--font-serif-face), "Songti SC", "STSong", "Noto Serif SC",
+    "Noto Serif CJK SC", "SimSun", serif;
+}
+:lang(zh) body {
+  line-height: 1.7;
+}
+:lang(zh) .h-hero,
+:lang(zh) .h-section,
+:lang(zh) .h-sub {
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+}
+:lang(zh) .h-em {
+  font-style: normal;
+  /* Hanzi wrap between any two characters; keep the flourish phrase whole
+     (日式细致的 / 皮肤医美护理) instead of splitting a word across lines. */
+  display: inline-block;
+}
+:lang(zh) .kicker {
+  letter-spacing: 0.08em;
+}
+
 /* Long-form article prose opts into the serif (docs/06 §2.2) */
 .prose {
   font-family: var(--font-serif);

@@ -48,7 +48,20 @@ export function WhatsAppButton({
 }
 
 /** Persistent conversion CTA — desktop floating pill, mobile full-width bar (docs/06 §4.5). */
-export function StickyWhatsApp({ href = waGeneric }: { href?: string }) {
+export function StickyWhatsApp({
+  href = waGeneric,
+  label = "Book a free consultation",
+  hoverLabel = "Free consultation",
+  ariaLabel = "Book a free consultation on WhatsApp",
+}: {
+  href?: string;
+  /** Mobile bar text (also the desktop pill's accessible name). */
+  label?: string;
+  /** Desktop pill text revealed on hover. */
+  hoverLabel?: string;
+  /** Desktop pill's accessible name (it shows only an icon at rest). */
+  ariaLabel?: string;
+}) {
   return (
     <>
       {/* Desktop floating FAB — icon at rest, expands on hover (no rail collision) */}
@@ -57,12 +70,12 @@ export function StickyWhatsApp({ href = waGeneric }: { href?: string }) {
         target="_blank"
         rel="noopener"
         data-ga-cta_position="sticky"
-        aria-label="Book a free consultation on WhatsApp"
+        aria-label={ariaLabel}
         className="cta-glow group fixed bottom-6 right-6 z-40 hidden items-center rounded-full bg-cta p-3.5 font-semibold text-white ring-1 ring-black/5 transition-colors hover:bg-cta-hover md:inline-flex"
       >
         <WhatsApp size={24} />
         <span className="max-w-0 overflow-hidden whitespace-nowrap text-sm opacity-0 transition-all duration-200 group-hover:ml-2.5 group-hover:max-w-[14rem] group-hover:opacity-100">
-          Free consultation
+          {hoverLabel}
         </span>
       </a>
       {/* Mobile bottom bar */}
@@ -75,7 +88,7 @@ export function StickyWhatsApp({ href = waGeneric }: { href?: string }) {
           className="flex w-full items-center justify-center gap-2.5 rounded-full bg-cta px-5 py-3.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-cta-hover"
         >
           <WhatsApp size={20} />
-          <span>Book a free consultation</span>
+          <span>{label}</span>
         </a>
       </div>
     </>

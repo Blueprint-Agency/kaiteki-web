@@ -7,8 +7,15 @@ export interface Crumb {
 }
 
 /** Visible breadcrumbs + matching BreadcrumbList JSON-LD (docs/04 §5). */
-export function Breadcrumbs({ items }: { items: Crumb[] }) {
-  const trail: Crumb[] = [{ label: "Home", href: "/" }, ...items];
+export function Breadcrumbs({
+  items,
+  home = { label: "Home", href: "/" },
+}: {
+  items: Crumb[];
+  /** Localized first crumb (e.g. { label: "首页", href: "/zh" }). */
+  home?: { label: string; href: string };
+}) {
+  const trail: Crumb[] = [home, ...items];
 
   const jsonLd = {
     "@context": "https://schema.org",

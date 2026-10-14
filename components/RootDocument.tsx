@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Schibsted_Grotesk, Source_Serif_4, Fraunces } from "next/font/google";
-import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { StickyWhatsApp } from "@/components/WhatsAppCTA";
@@ -9,6 +8,15 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { JsonLd } from "@/components/JsonLd";
 import { Analytics } from "@/components/Analytics";
 import { siteGraph } from "@/lib/schema";
+import { headerModel } from "@/lib/site";
+import { chrome } from "@/content/i18n/chrome";
+import { localeMeta, type Locale } from "@/lib/i18n";
+import { liveLocalePaths } from "@/lib/locale-pages";
+import { waLink } from "@/lib/wa";
+
+// The <html> shell shared by the three root layouts — app/(en), app/zh, app/ms.
+// Each language needs its own root layout because <html lang> lives here, and
+// Next only lets a root layout set it (docs/07 §11). Everything else is shared.
 
 // UI, nav, labels, tables, the "ledger" — a clean grotesk (docs/06 §2.2).
 // No longer carries display headings: those moved to Fraunces (2026-07 redesign).
@@ -38,35 +46,38 @@ const serif = Source_Serif_4({
   style: ["normal", "italic"],
   display: "swap",
 });
+// Chinese glyphs come from the visitor's system CJK fonts (globals.css, :lang(zh)),
+// not a web font: a CJK face is megabytes, and docs/02 §2 keeps English pages
+// from ever shipping CJK glyphs.
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://kaiteki.my"),
-  title: {
-    default: "Kaiteki Skin Aesthetic Clinic",
-    template: "%s | Kaiteki Skin Aesthetic Clinic",
-  },
-  description:
-    "MOH-licensed skin & aesthetic clinic with 9 branches across Malaysia. Book a free consultation on WhatsApp.",
-  // Site-wide social-share defaults; per-page pageMeta() overrides title/description/image.
-  openGraph: {
-    type: "website",
-    siteName: "Kaiteki Skin Aesthetic Clinic",
-    locale: "en_MY",
-    images: [{ url: "/images/hero/hero-subject.png", alt: "Kaiteki Skin Aesthetic Clinic" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-  },
-};
+/** Root-layout metadata for a locale. Per-page pageMeta() overrides most of it. */
+export function rootMetadata(locale: Locale, description: string): Metadata {
+  return {
+    metadataBase: new URL("https://kaiteki.my"),
+    title: {
+      default: "Kaiteki Skin Aesthetic Clinic",
+      template: "%s | Kaiteki Skin Aesthetic Clinic",
+    },
+    description,
+    // Site-wide social-share defaults; per-page pageMeta() overrides title/description/image.
+    openGraph: {
+      type: "website",
+      siteName: "Kaiteki Skin Aesthetic Clinic",
+      locale: localeMeta[locale].og,
+      images: [{ url: "/images/hero/hero-subject.png", alt: "Kaiteki Skin Aesthetic Clinic" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+    },
+  };
+}
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export function RootDocument({ locale, children }: { locale: Locale; children: React.ReactNode }) {
+  const c = chrome[locale];
+  const wa = waLink(c.wa.generic);
   return (
     <html
-      lang="en-MY"
+      lang={localeMeta[locale].htmlLang}
       // the reveal-ready class is added by an inline script before hydration
       // (motion gating); scope-suppress the resulting html attribute mismatch.
       suppressHydrationWarning
@@ -97,12 +108,18 @@ export default function RootLayout({
             __html: "document.documentElement.classList.add('reveal-ready')",
           }}
         />
-        <SiteHeader />
+        <SiteHeader
+          locale={locale}
+          chrome={c}
+          model={headerModel(locale)}
+          live={liveLocalePaths()}
+          waHref={wa}
+        />
         <div className="flex-1">{children}</div>
-        <SiteFooter />
+        <SiteFooter locale={locale} />
         {/* spacer so the mobile sticky CTA never covers footer content */}
         <div className="h-16 md:hidden" aria-hidden />
-        <StickyWhatsApp />
+        <StickyWhatsApp href={wa} label={c.cta.bookShort} hoverLabel={c.cta.sticky} ariaLabel={c.cta.book} />
         <ScrollReveal />
       </body>
     </html>

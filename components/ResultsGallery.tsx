@@ -14,7 +14,13 @@ type Item = NonNullable<Concern["results"]>[number];
  * with left/right paging. Keyboard: arrows page, Escape closes (free with
  * <dialog>).
  */
-export function ResultsGallery({ items }: { items: Item[] }) {
+export function ResultsGallery({
+  items,
+  labels = { prev: "Previous image", next: "Next image", larger: "View larger: {caption}" },
+}: {
+  items: Item[];
+  labels?: { prev: string; next: string; larger: string };
+}) {
   const [open, setOpen] = useState<number | null>(null);
   const ref = useRef<HTMLDialogElement>(null);
 
@@ -40,7 +46,7 @@ export function ResultsGallery({ items }: { items: Item[] }) {
             <button
               type="button"
               onClick={() => setOpen(i)}
-              aria-label={`View larger: ${r.caption}`}
+              aria-label={labels.larger.replace("{caption}", r.caption)}
               className="group block w-full cursor-zoom-in"
             >
               <div
@@ -92,11 +98,11 @@ export function ResultsGallery({ items }: { items: Item[] }) {
               {current.caption}
             </p>
             <div className="flex items-center gap-4">
-              <Pager label="Previous image" onClick={() => step(-1)} back />
+              <Pager label={labels.prev} onClick={() => step(-1)} back />
               <span className="ledger text-sm !text-ink-on-dark/70">
                 {open! + 1} / {items.length}
               </span>
-              <Pager label="Next image" onClick={() => step(1)} />
+              <Pager label={labels.next} onClick={() => step(1)} />
               <button
                 type="button"
                 onClick={() => setOpen(null)}

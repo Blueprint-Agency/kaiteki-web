@@ -3,6 +3,11 @@ import type { CSSProperties, ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Contour, Droplet, Eye, Sparkle, Sun } from "./icons";
+import { homeCopy } from "@/content/i18n/home";
+import { fmt } from "@/content/i18n/chrome";
+import { term } from "@/content/i18n/terms";
+import { lhref } from "@/lib/locale-pages";
+import type { Locale } from "@/lib/i18n";
 
 /* Face hotspots — anchored as % of the subject image (873×1091). Each spot is
    a server-rendered <a> to a concern page (crawlable); its result card is the
@@ -81,7 +86,11 @@ const spots: Spot[] = [
 
 const spotStyle = (s: Spot): CSSProperties => ({ left: `${s.x}%`, top: `${s.y}%` });
 
-export function HeroFace() {
+export function HeroFace({ locale = "en" }: { locale?: Locale }) {
+  const h = homeCopy[locale].hero;
+  // English keeps its sentence-case hotspot names; other locales use the
+  // researched concern names so the label matches the page it opens.
+  const nameOf = (s: Spot) => (locale === "en" ? s.name : term(locale, "concern", s.slug, s.name));
   /* lg: width-driven — the figure fills the column up to the width whose
      natural height (873:1091 image) fits the fold: (100vh - header) × 873/1091.
      The image's intrinsic ratio sets the wrapper height (no aspect-ratio /
@@ -101,7 +110,7 @@ export function HeroFace() {
 
       <Image
         src="/images/hero/hero-subject.png"
-        alt="A smiling woman with calm, healthy-looking skin, resting her hands beneath her chin"
+        alt={h.imageAlt}
         width={873}
         height={1091}
         priority
@@ -112,8 +121,8 @@ export function HeroFace() {
       {spots.map((s) => (
         <Fragment key={s.slug}>
           <Link
-            href={`/concerns/${s.slug}`}
-            aria-label={`${s.name}, read the concern guide`}
+            href={lhref(locale, `/concerns/${s.slug}`)}
+            aria-label={fmt(h.spotAria, { name: nameOf(s) })}
             style={spotStyle(s)}
             className="hero-spot group absolute z-20 -ml-3 -mt-3 flex size-6 items-center justify-center rounded-full"
           >
@@ -146,10 +155,10 @@ export function HeroFace() {
               <span className="flex size-9 items-center justify-center rounded-full bg-tint text-accent">
                 {s.icon}
               </span>
-              <span className="mt-2.5 block text-sm font-semibold text-espresso">{s.name}</span>
-              <span className="mt-1 block text-xs leading-relaxed text-ink-500">{s.note}</span>
+              <span className="mt-2.5 block text-sm font-semibold text-espresso">{nameOf(s)}</span>
+              <span className="mt-1 block text-xs leading-relaxed text-ink-500">{h.spots[s.slug] ?? s.note}</span>
               <span className="mt-2.5 inline-flex items-center gap-1 text-xs font-semibold text-accent">
-                Doctor-assessed options <ArrowRight size={12} />
+                {h.spotCta} <ArrowRight size={12} />
               </span>
             </span>
           </span>

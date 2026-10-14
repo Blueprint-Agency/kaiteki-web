@@ -1,17 +1,15 @@
 import type { CSSProperties } from "react";
 import { Container } from "./Container";
+import { homeCopy } from "@/content/i18n/home";
+import type { Locale } from "@/lib/i18n";
 
 // Stagger index for the scroll reveal (typed CSS custom property).
 const si = (i: number): CSSProperties => ({ "--i": Math.min(i, 8) } as CSSProperties);
 
 // Device-fleet claims. These are counts of machines owned, not efficacy or
 // outcome claims — MAB-safe as long as the wording stays about equipment
-// (docs/02 §8). "In Malaysia" is the qualifier; keep it on every seal.
-const SEALS = [
-  ["Onda", "machines"],
-  ["Oligio X", "machines"],
-  ["lifting", "devices"],
-];
+// (docs/02 §8). "In Malaysia" is the qualifier; keep it on every seal, in every
+// locale (content/i18n/home.ts → badges).
 
 /* ── The laurel ─────────────────────────────────────────────────────────────
    240×240 box, wreath centred at (120,120) on a radius-76 stem. One row of
@@ -61,7 +59,7 @@ function LaurelHalf() {
   );
 }
 
-function Seal({ subject, noun }: { subject: string; noun: string }) {
+function Seal({ subject, noun, most, where }: { subject: string; noun: string; most: string; where: string }) {
   return (
     <div className="relative mx-auto w-full max-w-[12.5rem] sm:max-w-[13.5rem]">
       <svg viewBox="0 0 240 240" className="w-full" aria-hidden>
@@ -82,7 +80,7 @@ function Seal({ subject, noun }: { subject: string; noun: string }) {
           condensed sans every stock award seal uses. */}
       <div className="absolute inset-0 flex flex-col items-center justify-center px-[21%] pt-[9%] text-center">
         <span className="font-display text-[0.9rem] font-normal italic leading-none text-mocha">
-          The most
+          {most}
         </span>
         <span className="font-display mt-1.5 text-[1.28rem] font-medium leading-[1.1] tracking-[-0.01em] text-espresso">
           {subject}
@@ -90,7 +88,7 @@ function Seal({ subject, noun }: { subject: string; noun: string }) {
           {noun}
         </span>
         <span className="mt-2.5 rounded-[3px] bg-espresso px-2 py-[3px] text-[0.5rem] font-semibold uppercase tracking-[0.16em] text-ink-on-dark">
-          in Malaysia
+          {where}
         </span>
       </div>
     </div>
@@ -106,9 +104,11 @@ function Seal({ subject, noun }: { subject: string; noun: string }) {
  * the separation, so no rule is needed either.
  * Pure server component; the wreath is inline SVG, so nothing loads.
  */
-export function LeaderBadges() {
+export function LeaderBadges({ locale = "en" }: { locale?: Locale }) {
+  const b = homeCopy[locale].badges;
+  if (!b) return null;
   return (
-    <section aria-label="Device fleet records" className="bg-page">
+    <section aria-label={b.aria} className="bg-page">
       <Container className="reveal pb-4 pt-12 sm:pb-6 sm:pt-14">
         {/* One shared gradient for all three seals — an id may appear once. */}
         <svg width="0" height="0" aria-hidden className="absolute">
@@ -120,9 +120,9 @@ export function LeaderBadges() {
         </svg>
 
         <ul className="mx-auto grid max-w-3xl grid-cols-1 gap-y-7 sm:grid-cols-3 sm:gap-x-6">
-          {SEALS.map(([subject, noun], i) => (
+          {b.seals.map(([subject, noun], i) => (
             <li key={subject} className="reveal" style={si(i)}>
-              <Seal subject={subject} noun={noun} />
+              <Seal subject={subject} noun={noun} most={b.most} where={b.where} />
             </li>
           ))}
         </ul>

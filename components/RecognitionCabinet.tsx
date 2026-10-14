@@ -4,6 +4,10 @@ import Link from "next/link";
 import { Container } from "./Container";
 import { ArrowRight } from "./icons";
 import { awards, furtherAwards } from "@/content/data/awards";
+import { homeCopy } from "@/content/i18n/home";
+import { fmt } from "@/content/i18n/chrome";
+import { lhref } from "@/lib/locale-pages";
+import type { Locale } from "@/lib/i18n";
 
 // Stagger index for the scroll reveal (typed CSS custom property).
 const si = (i: number): CSSProperties => ({ "--i": Math.min(i, 8) } as CSSProperties);
@@ -19,7 +23,9 @@ const PARTNERS = "Merz · Allergan · Neauvia · Galderma · Neoasia · Elogio";
  * performance awards, not patient-outcome or "best clinic" claims (docs/02 §5).
  * Pure server component — every hover is CSS, so the record renders without JS.
  */
-export function RecognitionCabinet() {
+export function RecognitionCabinet({ locale = "en" }: { locale?: Locale }) {
+  // Award titles and issuers stay as the issuing brand wrote them.
+  const k = homeCopy[locale].recognition;
   return (
     <section id="recognition" className="relative overflow-hidden bg-page">
       {/* A soft porcelain arch rising behind the wall, echoing the hero silhouette */}
@@ -31,20 +37,15 @@ export function RecognitionCabinet() {
         <div className="grid gap-x-14 gap-y-12 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.55fr)] lg:items-start">
           {/* Editorial column — the story + the ledger of record */}
           <div className="lg:sticky lg:top-28">
-            <h2 className="h-section">Recognised by the brands behind your care</h2>
-            <p className="mt-4 max-w-md text-lg leading-relaxed text-ink-700">
-              The manufacturers behind our devices and injectables audit the
-              clinics that use them — on training, on volume, and on sourcing
-              every product through authorised supply. These are the awards that
-              audit produces: a record of how we practise, kept here in full.
-            </p>
+            <h2 className="h-section">{k.h2}</h2>
+            <p className="mt-4 max-w-md text-lg leading-relaxed text-ink-700">{k.body}</p>
 
             {/* The clinical ledger — the signature trust element (docs/06 §4.6) */}
             <dl className="mt-9 max-w-md border-t border-hairline">
               {[
-                ["Partners", PARTNERS],
-                ["On record", `${awards.length + furtherAwards.length} partner awards`],
-                ["Years", "2023 — 2026"],
+                [k.partnersLabel, PARTNERS],
+                [k.onRecordLabel, fmt(k.onRecordValue, { n: String(awards.length + furtherAwards.length) })],
+                [k.yearsLabel, "2023 — 2026"],
               ].map(([label, value]) => (
                 <div
                   key={label}
@@ -59,11 +60,11 @@ export function RecognitionCabinet() {
             </dl>
 
             <Link
-              href="/doctors"
+              href={lhref(locale, "/doctors")}
               className="group mt-7 inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors hover:text-espresso"
             >
               <span className="border-b border-mocha/40 pb-0.5 transition-colors group-hover:border-espresso">
-                Meet the doctors who earned them
+                {k.link}
               </span>
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
             </Link>
@@ -112,7 +113,7 @@ export function RecognitionCabinet() {
             Rows echo the "In the press" ledger: name left, year right. */}
         <div className="reveal mt-16 border-t border-hairline pt-10 sm:mt-20">
           <h3 className="text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-accent">
-            Also on record
+            {k.alsoOnRecord}
           </h3>
           <ul className="mt-5 grid sm:grid-cols-2 sm:gap-x-14">
             {furtherAwards.map((a) => (
