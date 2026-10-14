@@ -7,14 +7,17 @@
 // renders in dev and on the noindexed staging host (NEXT_PUBLIC_NOINDEX=1) so
 // the reviewer can read it in place, and 404s everywhere else.
 //
-// To publish a page: put the reviewing doctor's slug (content/data/doctors.ts)
-// and the date they read it into its entry and set status to "signed".
+// Who signs: the same doctor who reviews the English page (client decision,
+// 2026-10-14), so a signed entry needs only the date they read the translation.
+// To publish a page: set its status to "signed" with that date. Add `doctor`
+// (a slug from content/data/doctors.ts) only to name someone else, and always
+// for pages with no English reviewer: the homepage and the three hubs.
 
 import type { NonDefaultLocale } from "@/lib/i18n";
 
 export type LocalePageEntry =
   | { status: "draft" }
-  | { status: "signed"; doctor: string; date: string };
+  | { status: "signed"; date: string; doctor?: string };
 
 /** Keyed by the locale-neutral path, exactly as the English page's URL. */
 export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntry>> = {

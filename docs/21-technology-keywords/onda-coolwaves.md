@@ -99,3 +99,15 @@
 7. **"So the doctor can advise safely"** is 让医生能安全地给你建议 / *supaya doktor boleh memberi nasihat dengan selamat*. It describes the advice, not the treatment; neither locale says the treatment is safe.
 8. **zh FAQ 4 adds 多久做一次**, covered by the existing answer ("每次相隔几个星期"), following the pico-laser FAQ 3 precedent.
 9. **seoTitle (zh) drops "Coolwaves"** to stay within 30 characters; the description and H1 keep it.
+
+## Update 2026-10-14: Onda Pro
+
+The client confirmed Kaiteki has **both Onda and Onda Pro**. Probes (`gl=my`): `onda pro` returns onda pro是什么, 效果, 价格, malaysia price, kl, near me in zh; onda pro harga, malaysia in ms; `onda vs onda pro` returns itself in zh and en, plus "onda coolwaves vs onda pro". That is demand, so this is a KEYWORD change in all three languages:
+
+| String | EN | ZH | MS |
+|---|---|---|---|
+| seoTitle | Onda & Onda Pro Coolwaves Treatment Malaysia \| Kaiteki | 马来西亚 Onda、Onda Pro 疗程 \| Kaiteki | Rawatan Onda & Onda Pro Coolwaves di Malaysia \| Kaiteki |
+| seoDescription | names both devices | names both devices | names both devices |
+| New FAQ (3rd) | What is the difference between Onda and Onda Pro? | Onda 和 Onda Pro 有什么区别？ | Apa beza Onda dan Onda Pro? |
+
+The "Onda for Body or Onda for Face" section also gains one sentence saying Kaiteki has both. The FAQ answer uses only what DEKA states (newer generation, same 2.45 GHz Coolwaves, dedicated face and body handpieces). It makes no performance comparison.

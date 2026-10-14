@@ -68,7 +68,7 @@
   ],
   "routesNote": "聚焦超声波处理的是松弛。它不能补回流失的容量，不能放松动态纹，也不能改善肤质，所以计划常会配合其他疗程。",
   "variantModule": {
-    "heading": "Ultracel Q 还是 Lifthera：用哪一台 HIFU 机器，为什么",
+    "heading": "Ultracel Q 还是 Liftera：用哪一台 HIFU 机器，为什么",
     "intro": "两台仪器都把超声波聚焦在皮肤表面以下，让加热发生在选定的较深层次，表面则大致不受影响。它们的分别，在于能量的形状。",
     "items": [
       {
@@ -80,10 +80,10 @@
       },
       {
         "eyebrow": "线性聚焦 · Asterasys",
-        "title": "Lifthera",
+        "title": "Liftera",
         "body": "沿着一条连续的线聚焦，而不是一排分开的点，制造商认为这和不适感较少有关。笔型探头可以处理较小、有弧度的位置，例如眼周、法令纹一带和下颚线。",
         "href": "/technology/lifthera",
-        "hrefLabel": "了解 Lifthera"
+        "hrefLabel": "了解 Liftera"
       }
     ],
     "note": "这两台仪器都没有显示组织层次的屏幕影像。如果医生想在输出能量之前先看到这些层次，就会使用另一个平台 Ultherapy。"
@@ -237,7 +237,7 @@
     },
     {
       "q": "HIFU 和 Ultherapy 的区别是什么？",
-      "a": "两者都使用聚焦超声波。Kaiteki 的 HIFU 使用 Lifthera 和 Ultracel Q，常用于考虑处理下颚线和两颊下垂。Ultherapy 是另一个平台，治疗前会在屏幕上显示组织层次，有时用于需要更精准的部位，例如眉部和颈部。"
+      "a": "两者都使用聚焦超声波。Kaiteki 的 HIFU 使用 Liftera 和 Ultracel Q，常用于考虑处理下颚线和两颊下垂。Ultherapy 是另一个平台，治疗前会在屏幕上显示组织层次，有时用于需要更精准的部位，例如眉部和颈部。"
     },
     {
       "q": "做完 HIFU 有恢复期吗？",

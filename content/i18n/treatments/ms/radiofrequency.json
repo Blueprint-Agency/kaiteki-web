@@ -32,7 +32,7 @@
   "facts": [
     {
       "value": "4 platform RF",
-      "label": "BTL Exilis, Oligio, Wonderface dan XERF, dipadankan dengan kulit anda"
+      "label": "BTL Exilis, Oligio X, Wonderface dan XERF, dipadankan dengan kulit anda"
     },
     {
       "value": "30–60 minit",
@@ -66,7 +66,7 @@
     }
   ],
   "variantModule": {
-    "heading": "BTL Exilis, Oligio, Wonderface atau XERF: platform RF yang mana, dan kenapa",
+    "heading": "BTL Exilis, Oligio X, Wonderface atau XERF: platform RF yang mana, dan kenapa",
     "intro": "Keempat-empat platform ini berbeza dari segi sejauh mana tenaga sampai ke dalam kulit dan cara permukaan kulit disejukkan.",
     "items": [
       {
@@ -78,10 +78,10 @@
       },
       {
         "eyebrow": "Monopolar 6.78 MHz · penyejukan sentuhan",
-        "title": "Oligio",
+        "title": "Oligio X",
         "body": "Platform monopolar dari Korea yang dihantar satu tembakan demi satu tembakan melalui hujung sejuk yang memantau sentuhan dengan kulit, dan dikaji terutamanya untuk kekenduran ringan hingga sederhana di bahagian bawah muka.",
         "href": "/technology/oligio",
-        "hrefLabel": "Tentang Oligio"
+        "hrefLabel": "Tentang Oligio X"
       },
       {
         "eyebrow": "RF bipolar + neuromuskular",

@@ -68,7 +68,7 @@
   ],
   "routesNote": "Focused ultrasound addresses laxity. It does not replace lost volume, relax movement lines or improve skin quality, so plans often combine it with other treatments.",
   "variantModule": {
-    "heading": "Ultracel Q or Lifthera: which HIFU device, and why",
+    "heading": "Ultracel Q or Liftera: which HIFU device, and why",
     "intro": "Both devices focus ultrasound beneath the surface, so heating happens in a chosen deeper layer while the surface is largely spared. They differ in how that energy is shaped.",
     "items": [
       {
@@ -80,10 +80,10 @@
       },
       {
         "eyebrow": "Line-focused · Asterasys",
-        "title": "Lifthera",
+        "title": "Liftera",
         "body": "Draws the focus along a continuous line rather than a row of separate dots, which the manufacturer links to reduced discomfort. A pen-type applicator reaches smaller, curved areas such as around the eyes, the nasolabial region and along the jaw.",
         "href": "/technology/lifthera",
-        "hrefLabel": "About Lifthera"
+        "hrefLabel": "About Liftera"
       }
     ],
     "note": "Neither device includes on-screen imaging of the tissue layers. Where the doctor wants to see those layers before placing energy, the separate Ultherapy platform is the one used."
@@ -237,7 +237,7 @@
     },
     {
       "q": "What is the difference between HIFU and Ultherapy?",
-      "a": "Both use focused ultrasound. HIFU at Kaiteki runs on Lifthera and Ultracel Q and is often considered for the jaw and jowls. Ultherapy is a separate platform that shows the tissue layers on screen before treating, and is sometimes considered for more precise areas such as the brow and neck."
+      "a": "Both use focused ultrasound. HIFU at Kaiteki runs on Liftera and Ultracel Q and is often considered for the jaw and jowls. Ultherapy is a separate platform that shows the tissue layers on screen before treating, and is sometimes considered for more precise areas such as the brow and neck."
     },
     {
       "q": "Is there any downtime after HIFU?",

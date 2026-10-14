@@ -331,7 +331,7 @@ export const treatments: Treatment[] = [
     // docs/15 item 1.4 (2026-09-24): the v2 block set, applied under docs/16 R1.
     // Seven shared prose sections became typed blocks and were deleted. Every
     // clinical line below is restructured from copy that already carries a
-    // named reviewer: this page's own sections, the Ultracel Q and Lifthera
+    // named reviewer: this page's own sections, the Ultracel Q and Liftera
     // device pages, and the Ultherapy vs HIFU guide. No new claim, no figure.
     // The re-arrangement goes to Dr Chuah in the offline review round, which is
     // why `lastReviewed` is unchanged.
@@ -367,7 +367,7 @@ export const treatments: Treatment[] = [
     // T-07 — the two HIFU platforms Kaiteki runs, told apart by how each
     // delivers energy. A factual difference, never a ranking (R-02).
     variantModule: {
-      heading: "Ultracel Q or Lifthera: which HIFU device, and why",
+      heading: "Ultracel Q or Liftera: which HIFU device, and why",
       intro:
         "Both devices focus ultrasound beneath the surface, so heating happens in a chosen deeper layer while the surface is largely spared. They differ in how that energy is shaped.",
       items: [
@@ -380,10 +380,10 @@ export const treatments: Treatment[] = [
         },
         {
           eyebrow: "Line-focused · Asterasys",
-          title: "Lifthera",
+          title: "Liftera",
           body: "Draws the focus along a continuous line rather than a row of separate dots, which the manufacturer links to reduced discomfort. A pen-type applicator reaches smaller, curved areas such as around the eyes, the nasolabial region and along the jaw.",
           href: "/technology/lifthera",
-          hrefLabel: "About Lifthera",
+          hrefLabel: "About Liftera",
         },
       ],
       note: "Neither device includes on-screen imaging of the tissue layers. Where the doctor wants to see those layers before placing energy, the separate Ultherapy platform is the one used.",
@@ -555,7 +555,7 @@ export const treatments: Treatment[] = [
       },
       {
         q: "What is the difference between HIFU and Ultherapy?",
-        a: "Both use focused ultrasound. HIFU at Kaiteki runs on Lifthera and Ultracel Q and is often considered for the jaw and jowls. Ultherapy is a separate platform that shows the tissue layers on screen before treating, and is sometimes considered for more precise areas such as the brow and neck.",
+        a: "Both use focused ultrasound. HIFU at Kaiteki runs on Liftera and Ultracel Q and is often considered for the jaw and jowls. Ultherapy is a separate platform that shows the tissue layers on screen before treating, and is sometimes considered for more precise areas such as the brow and neck.",
       },
       {
         q: "Is there any downtime after HIFU?",
@@ -644,7 +644,7 @@ export const treatments: Treatment[] = [
           hrefLabel: "About the Ultherapy System",
         },
         {
-          eyebrow: "Depth set by cartridge · Ultracel Q, Lifthera",
+          eyebrow: "Depth set by cartridge · Ultracel Q, Liftera",
           title: "HIFU",
           body: "Energy is delivered at depths set by the chosen cartridge and the doctor's assessment, without an on-screen view.",
           href: "/treatments/hifu",
@@ -1037,7 +1037,7 @@ export const treatments: Treatment[] = [
     // `lastReviewed` is unchanged.
     typicalSessions: "About 2 to 3, then maintenance",
     facts: [
-      { value: "4 RF platforms", label: "BTL Exilis, Oligio, Wonderface and XERF, matched to your skin" },
+      { value: "4 RF platforms", label: "BTL Exilis, Oligio X, Wonderface and XERF, matched to your skin" },
       { value: "30–60 minutes", label: "Typical session, depending on the areas treated" },
       { value: "Assessment first", label: "Your first visit is a doctor consultation, not a treatment" },
     ],
@@ -1058,7 +1058,7 @@ export const treatments: Treatment[] = [
 
     // T-07 — the devices paragraph of "How it works", as the variant module (R1).
     variantModule: {
-      heading: "BTL Exilis, Oligio, Wonderface or XERF: which RF platform, and why",
+      heading: "BTL Exilis, Oligio X, Wonderface or XERF: which RF platform, and why",
       intro:
         "The four platforms differ in how deep the energy reaches and how the surface is cooled.",
       items: [
@@ -1071,10 +1071,10 @@ export const treatments: Treatment[] = [
         },
         {
           eyebrow: "Monopolar 6.78 MHz · contact cooling",
-          title: "Oligio",
+          title: "Oligio X",
           body: "A Korean monopolar platform delivered shot by shot through a cooled tip that monitors contact, studied mainly for mild to moderate laxity of the lower face.",
           href: "/technology/oligio",
-          hrefLabel: "About Oligio",
+          hrefLabel: "About Oligio X",
         },
         {
           eyebrow: "Bipolar RF + neuromuscular",

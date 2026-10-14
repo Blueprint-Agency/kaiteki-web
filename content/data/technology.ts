@@ -787,7 +787,7 @@ export const technology: Technology[] = [
       type: "device",
       treatments: ["hifu"],
       image: "https://cdn.kaiteki.my/images/technology/ultracel-q-v2.jpg",
-      imageAlt: "The Jeisys Ultracel Q+ device",
+      imageAlt: "The Jeisys Ultracel Q device",
       summary:
         "A multi-cartridge HIFU platform from Jeisys Medical, used within Kaiteki's HIFU treatment for non-surgical lifting and tightening concerns.",
       leadAnswer:
@@ -892,7 +892,7 @@ export const technology: Technology[] = [
     },
   {
       slug: "lifthera",
-      name: "Lifthera",
+      name: "Liftera",
       group: "Lifting & Tightening",
       type: "device",
       treatments: ["hifu"],
@@ -900,7 +900,7 @@ export const technology: Technology[] = [
       summary:
         "A line-focused ultrasound lifting device from Korean manufacturer Asterasys, used within Kaiteki's HIFU treatment for lifting and tightening concerns.",
       leadAnswer:
-        "Lifthera, also written Liftera, is a focused-ultrasound lifting device from Asterasys in Korea, used at Kaiteki within our HIFU treatment. It delivers energy along a line rather than as separate points, and the areas are mapped at consultation rather than treated uniformly.",
+        "Liftera, also written Lifthera, is a focused-ultrasound lifting device from Asterasys in Korea, used at Kaiteki within our HIFU treatment. It delivers energy along a line rather than as separate points, and the areas are mapped at consultation rather than treated uniformly.",
       facts: [
         { value: "Line-focused ultrasound", label: "Energy" },
         { value: "Asterasys, Korea", label: "Manufacturer" },
@@ -908,9 +908,9 @@ export const technology: Technology[] = [
       ],
       sections: [
         {
-          heading: "What is Lifthera?",
+          heading: "What is Liftera?",
           body: [
-            "Lifthera (also written Liftera) is a focused-ultrasound lifting device from Asterasys, a Korean medical aesthetic device manufacturer. It belongs to the same broad category as other HIFU devices: ultrasound energy is focused to a point beneath the skin surface so that heating happens in a chosen deeper layer while the surface is largely spared. At Kaiteki it is one of the devices used within the HIFU treatment, and it is often chosen for facial contour work rather than as a whole-face blanket treatment.",
+            "Liftera (also written Lifthera) is a focused-ultrasound lifting device from Asterasys, a Korean medical aesthetic device manufacturer. It belongs to the same broad category as other HIFU devices: ultrasound energy is focused to a point beneath the skin surface so that heating happens in a chosen deeper layer while the surface is largely spared. At Kaiteki it is one of the devices used within the HIFU treatment, and it is often chosen for facial contour work rather than as a whole-face blanket treatment.",
           ],
         },
         {
@@ -921,16 +921,16 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "Line-focused, dot-based or imaging-guided: where does Lifthera sit?",
+          heading: "Line-focused, dot-based or imaging-guided: where does Liftera sit?",
           body: [
             "Where it sits in the category is worth understanding if you are comparing quotes. It is a line-focused HIFU platform, not an imaging-guided system, and it is generally positioned as a comfort-oriented, contour-focused option rather than a deep single-session lift. Whether it is the right device for your particular pattern of laxity is a clinical judgement your doctor makes at an in-person consultation.",
-            "Conventional HIFU deposits energy as a row of separate focal dots, whereas Asterasys describes Lifthera as drawing the focus along a continuous line. Neither approach is automatically better for every face. They suit different patterns of laxity and different areas.",
+            "Conventional HIFU deposits energy as a row of separate focal dots, whereas Asterasys describes Liftera as drawing the focus along a continuous line. Neither approach is automatically better for every face. They suit different patterns of laxity and different areas.",
           ],
         },
         {
-          heading: "When is a device like Lifthera not the right answer?",
+          heading: "When is a device like Liftera not the right answer?",
           body: [
-            "Lifthera is commonly considered where the concern is contour and firmness rather than surface texture or pigment. It is usually aimed at people with early to moderate laxity. If your laxity is advanced, your doctor may tell you plainly that a non-surgical tightening device is unlikely to be the right answer.",
+            "Liftera is commonly considered where the concern is contour and firmness rather than surface texture or pigment. It is usually aimed at people with early to moderate laxity. If your laxity is advanced, your doctor may tell you plainly that a non-surgical tightening device is unlikely to be the right answer.",
             "It is not suitable for everyone, and a consultation determines whether it is appropriate for you. Concerns it is typically considered for include:",
           ],
           list: [
@@ -942,25 +942,25 @@ export const technology: Technology[] = [
           ],
         },
         {
-          heading: "What would rule out Lifthera for you?",
+          heading: "What would rule out Liftera for you?",
           body: [
             "Focused ultrasound is absorbed by tissue rather than by melanin, so it is generally used across a wide range of skin tones, including deeper Asian skin, without the pigment considerations that apply to some light-based treatments.",
             "It may not be suitable during pregnancy or breastfeeding, over active infection, inflamed acne or open wounds in the treatment area, or where implants, metallic or cardiac devices, or recently placed dermal fillers lie in the intended path. Keloid tendency, certain medications and some medical conditions also need to be considered. Please bring your full medical history and a list of previous aesthetic treatments to consultation.",
           ],
         },
         {
-          heading: "Why is a Lifthera session mapped area by area, and what is recovery like?",
+          heading: "Why is a Liftera session mapped area by area, and what is recovery like?",
           body: [
-            "A visit begins with a doctor consultation and an assessment of where your laxity actually sits, so that the treatment is mapped rather than applied uniformly. If Lifthera is appropriate, the skin is cleansed, the areas are marked and ultrasound coupling gel is applied. Topical numbing may be offered depending on the area. The doctor then delivers passes with the selected cartridges, using the pen-type applicator for smaller or curved regions where a large cartridge does not sit well.",
+            "A visit begins with a doctor consultation and an assessment of where your laxity actually sits, so that the treatment is mapped rather than applied uniformly. If Liftera is appropriate, the skin is cleansed, the areas are marked and ultrasound coupling gel is applied. Topical numbing may be offered depending on the area. The doctor then delivers passes with the selected cartridges, using the pen-type applicator for smaller or curved regions where a large cartridge does not sit well.",
             "A face and neck session commonly takes in the region of 45 to 75 minutes including preparation, depending on the areas covered. Plans vary: some are structured as a single session with a review a few months later, others as a small number of sessions spaced weeks apart, sometimes combined with other devices. Your doctor will set out what is realistic for you.",
             "Downtime is usually minimal and most people carry on with their day afterwards. Mild redness, slight swelling or tenderness in the treated area can occur and generally settles within a few days, though this varies between individuals.",
             "Gentle skincare and daily sun protection are advised afterwards, and your doctor may ask you to avoid intense heat such as saunas or hot yoga for a short period. Specific aftercare guidance is given for your plan.",
           ],
         },
         {
-          heading: "What are the risks of Lifthera's line-focused ultrasound?",
+          heading: "What are the risks of Liftera's line-focused ultrasound?",
           body: [
-            "As with any medical procedure, focused-ultrasound treatment with Lifthera carries risks, which are explained during consultation. Temporary effects can include redness, swelling, tenderness, small bruises, or transient numbness or tingling; less commonly, welts or temporary nerve-related effects such as localised muscle weakness have been reported with focused-ultrasound treatments generally. Serious effects are uncommon when the treatment is appropriately selected, carefully mapped and performed by a trained doctor.",
+            "As with any medical procedure, focused-ultrasound treatment with Liftera carries risks, which are explained during consultation. Temporary effects can include redness, swelling, tenderness, small bruises, or transient numbness or tingling; less commonly, welts or temporary nerve-related effects such as localised muscle weakness have been reported with focused-ultrasound treatments generally. Serious effects are uncommon when the treatment is appropriately selected, carefully mapped and performed by a trained doctor.",
           ],
         },
       ],
@@ -976,15 +976,15 @@ export const technology: Technology[] = [
       },
       faqs: [
         {
-          q: "What is Lifthera and who makes it?",
-          a: "Lifthera, also written Liftera, is a focused-ultrasound lifting device made by Asterasys, a Korean aesthetic device manufacturer. It delivers ultrasound energy focused along a line at a set depth beneath the skin, using what the manufacturer calls Thermal Diffusion Treatment technology. Your doctor can explain at consultation why this device might be chosen for your face rather than another in the same category.",
+          q: "What is Liftera and who makes it?",
+          a: "Liftera, also written Lifthera, is a focused-ultrasound lifting device made by Asterasys, a Korean aesthetic device manufacturer. It delivers ultrasound energy focused along a line at a set depth beneath the skin, using what the manufacturer calls Thermal Diffusion Treatment technology. Your doctor can explain at consultation why this device might be chosen for your face rather than another in the same category.",
         },
         {
-          q: "How does Lifthera differ from dot-based HIFU devices?",
-          a: "Conventional HIFU deposits energy as a row of separate focal dots, whereas Asterasys describes Lifthera as drawing the focus along a continuous line, which it says creates larger and more continuous heated zones at the same depth and is more comfortable. Neither approach is automatically better for every face. They suit different patterns of laxity and different areas. Your doctor selects the device and settings after assessing your skin.",
+          q: "How does Liftera differ from dot-based HIFU devices?",
+          a: "Conventional HIFU deposits energy as a row of separate focal dots, whereas Asterasys describes Liftera as drawing the focus along a continuous line, which it says creates larger and more continuous heated zones at the same depth and is more comfortable. Neither approach is automatically better for every face. They suit different patterns of laxity and different areas. Your doctor selects the device and settings after assessing your skin.",
         },
         {
-          q: "Can Lifthera be used around the eyes and other small areas?",
+          q: "Can Liftera be used around the eyes and other small areas?",
           a: "Asterasys supplies a pen-type applicator intended for curved and delicate regions such as the periorbital area, the nasolabial folds and along the jaw, where a full-size cartridge does not make good contact. Whether these areas are treated in your case depends on your anatomy and what you are trying to address. Your doctor decides which areas are appropriate at consultation.",
         },
         {
@@ -994,9 +994,9 @@ export const technology: Technology[] = [
       ],
       reviewedBy: "dr-jessie-lim",
       lastReviewed: "2026-07-18",
-      seoTitle: "Lifthera HIFU Lifting & Tightening Malaysia | Kaiteki",
+      seoTitle: "Liftera HIFU Lifting & Tightening Malaysia | Kaiteki",
       seoDescription:
-        "Lifthera is a line-focused ultrasound device from Asterasys, used within Kaiteki's HIFU treatment for lifting and firmness concerns. Book a free consultation.",
+        "Liftera is a line-focused ultrasound device from Asterasys, used within Kaiteki's HIFU treatment for lifting and firmness concerns. Book a free consultation.",
     },
   {
       slug: "ultherapy-system",
@@ -1218,7 +1218,7 @@ export const technology: Technology[] = [
     },
   {
     slug: "oligio",
-    name: "Oligio",
+    name: "Oligio X",
     group: "Lifting & Tightening",
     type: "device",
     treatments: ["radiofrequency"],
@@ -1226,7 +1226,7 @@ export const technology: Technology[] = [
     summary:
       "A Korean 6.78 MHz monopolar radiofrequency platform with contact cooling of the skin surface, used within RF treatment for mild to moderate facial laxity.",
     leadAnswer:
-      "Oligio is a monopolar radiofrequency platform from Wontech, a South Korean manufacturer, used at Kaiteki within our radiofrequency treatment. It runs at 6.78 MHz through a disposable tip that cools the surface while heating the dermis, and its published studies focus on mild to moderate laxity of the lower face.",
+      "Oligio X is a monopolar radiofrequency platform from Wontech, a South Korean manufacturer, used at Kaiteki within our radiofrequency treatment. It runs at 6.78 MHz through a disposable tip that cools the surface while heating the dermis, and the published studies on the Oligio platform it builds on focus on mild to moderate laxity of the lower face.",
     facts: [
       { value: "6.78 MHz monopolar RF", label: "Energy" },
       { value: "Wontech, South Korea", label: "Manufacturer" },
@@ -1234,29 +1234,29 @@ export const technology: Technology[] = [
     ],
     sections: [
       {
-        heading: "What is Oligio?",
+        heading: "What is Oligio X?",
         body: [
-          "Oligio is a monopolar radiofrequency (RF) device developed by Wontech in South Korea, and at Kaiteki it is one of the platforms used within our radiofrequency treatment. It belongs to the same energy category as other monopolar RF systems: current flows from a single treatment tip through the tissue, which lets the heat reach the dermis rather than staying near the surface. Oligio devices have US FDA 510(k) clearance, which is a regulatory clearance rather than an approval of any cosmetic outcome.",
+          "Oligio X is a monopolar radiofrequency (RF) device developed by Wontech in South Korea, and at Kaiteki it is one of the platforms used within our radiofrequency treatment. It belongs to the same energy category as other monopolar RF systems: current flows from a single treatment tip through the tissue, which lets the heat reach the dermis rather than staying near the surface. Oligio devices have US FDA 510(k) clearance, which is a regulatory clearance rather than an approval of any cosmetic outcome.",
         ],
       },
       {
-        heading: "How Oligio heats the skin from the inside",
+        heading: "How Oligio X heats the skin from the inside",
         body: [
-          "Oligio delivers RF energy at 6.78 MHz through a disposable tip placed on the skin. As the current meets the natural resistance of the tissue, it is converted to heat in the dermis. That controlled warmth makes existing collagen contract slightly and then prompts a slower remodelling response over the following months, which is where any gradual firming comes from.",
+          "Oligio X delivers RF energy at 6.78 MHz through a disposable tip placed on the skin. As the current meets the natural resistance of the tissue, it is converted to heat in the dermis. That controlled warmth makes existing collagen contract slightly and then prompts a slower remodelling response over the following months, which is where any gradual firming comes from.",
           "The tip cools the skin surface on contact while the heat builds beneath it, so the epidermis is protected and the dermis can reach a useful temperature. The device also monitors contact and tissue impedance through the tip, which helps the energy go in evenly from shot to shot. Energy level, the number of shots and the passes over each area are chosen by the treating doctor for your skin.",
         ],
       },
       {
         heading: "What the published Oligio studies looked at",
         body: [
-          "Oligio has device-specific clinical data, not only general RF theory. A 2022 study in Dermatology and Therapy treated 30 Thai patients with skin types III to V and mild to moderate lower-face laxity with a single Oligio session, and blinded dermatologists graded progressive improvement at one, three and six months, with no serious adverse events reported. A 2024 Korean study of 20 women reported improvement in jawline and nasolabial sagging after one session that remained through 24 weeks.",
+          "Oligio X builds on the original Oligio, which has device-specific clinical data, not only general RF theory. A 2022 study in Dermatology and Therapy treated 30 Thai patients with skin types III to V and mild to moderate lower-face laxity with a single Oligio session, and blinded dermatologists graded progressive improvement at one, three and six months, with no serious adverse events reported. A 2024 Korean study of 20 women reported improvement in jawline and nasolabial sagging after one session that remained through 24 weeks.",
           "These are small studies in carefully selected patients, and they describe mild to moderate laxity rather than marked sagging. They are useful for knowing what the device was tested on, not a prediction of what any one person will see.",
         ],
       },
       {
-        heading: "Which concerns is Oligio considered for?",
+        heading: "Which concerns is Oligio X considered for?",
         body: [
-          "Oligio is mainly used on the face and upper neck for people with early to moderate loss of firmness who prefer a non-needling option with little downtime. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
+          "Oligio X is mainly used on the face and upper neck for people with early to moderate loss of firmness who prefer a non-needling option with little downtime. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
         ],
         list: [
           "Early jowling and a softening jawline",
@@ -1267,21 +1267,21 @@ export const technology: Technology[] = [
         ],
       },
       {
-        heading: "When Oligio is not the right tool",
+        heading: "When Oligio X is not the right tool",
         body: [
           "A less defined jawline is not always a skin problem. Fat under the chin, volume loss, chin projection and bone structure can all blur the contour, and RF tightens skin rather than removing fat or replacing volume. Where those dominate, another treatment, or a combination, is usually the better plan. Marked sagging is generally beyond what any surface RF device can address.",
-          "Like other RF devices, Oligio is avoided during pregnancy, with a pacemaker or other implanted electronic or metal device near the area, over active infection or inflamed skin, and with a history of keloid scarring. Tell the doctor about recent injectables, retinoids or peels, because they affect timing and settings.",
+          "Like other RF devices, Oligio X is avoided during pregnancy, with a pacemaker or other implanted electronic or metal device near the area, over active infection or inflamed skin, and with a history of keloid scarring. Tell the doctor about recent injectables, retinoids or peels, because they affect timing and settings.",
         ],
       },
       {
-        heading: "What an Oligio session feels like, and the recovery",
+        heading: "What an Oligio X session feels like, and the recovery",
         body: [
-          "The first visit is a consultation, not a treatment. If Oligio is appropriate, the skin is cleansed, the areas are mapped, and the doctor works across them shot by shot, with the tip cooling each spot as it heats. Most people describe short bursts of warmth rather than pain; numbing cream can be applied beforehand where comfort is a concern, and settings can be adjusted during the session.",
+          "The first visit is a consultation, not a treatment. If Oligio X is appropriate, the skin is cleansed, the areas are mapped, and the doctor works across them shot by shot, with the tip cooling each spot as it heats. Most people describe short bursts of warmth rather than pain; numbing cream can be applied beforehand where comfort is a concern, and settings can be adjusted during the session.",
           "Mild redness or warmth is common and usually settles within hours, and most people go back to normal activities the same day. A course of about two to three RF sessions spaced four to six weeks apart is common, followed by maintenance, though your doctor sets the plan for your skin. Daily sun protection afterwards helps protect the collagen the treatment is building.",
         ],
       },
       {
-        heading: "Can Oligio burn or mark the skin?",
+        heading: "Can Oligio X burn or mark the skin?",
         body: [
           "Redness, warmth and mild swelling are the usual short-lived effects. Less commonly, RF can cause blistering, burns or a change in pigmentation, which is why cooling, contact monitoring and energy settings matter, and why the treatment is performed by a trained doctor who matches the settings to your skin.",
         ],
@@ -1293,33 +1293,33 @@ export const technology: Technology[] = [
       factors: [
         "Which areas are treated, and how many shots they need.",
         "How much laxity there is.",
-        "Whether Oligio is used on its own or as part of a combined plan.",
+        "Whether Oligio X is used on its own or as part of a combined plan.",
         "Whether maintenance sessions form part of the plan.",
       ],
     },
     faqs: [
       {
-        q: "Is Oligio the same as Thermage?",
-        a: "No. Both are 6.78 MHz monopolar RF devices with surface cooling, so they sit in the same category, but they are separate devices from different manufacturers with their own tips, protocols and clinical histories. Oligio is made by Wontech in South Korea. Your doctor chooses a platform for your skin rather than by brand.",
+        q: "Is Oligio X the same as Thermage?",
+        a: "No. Both are 6.78 MHz monopolar RF devices with surface cooling, so they sit in the same category, but they are separate devices from different manufacturers with their own tips, protocols and clinical histories. Oligio X is made by Wontech in South Korea. Your doctor chooses a platform for your skin rather than by brand.",
       },
       {
-        q: "How is Oligio different from XERF at Kaiteki?",
-        a: "Both are surface monopolar RF platforms without needles. Oligio runs at a single 6.78 MHz frequency and is delivered shot by shot through a cooled tip, while XERF combines two frequencies so energy can be biased towards shallower or deeper tissue. Which suits you is decided at consultation from your skin and the area being treated.",
+        q: "How is Oligio X different from XERF at Kaiteki?",
+        a: "Both are surface monopolar RF platforms without needles. Oligio X runs at a single 6.78 MHz frequency and is delivered shot by shot through a cooled tip, while XERF combines two frequencies so energy can be biased towards shallower or deeper tissue. Which suits you is decided at consultation from your skin and the area being treated.",
       },
       {
-        q: "Does Oligio help a double chin?",
-        a: "Only where loose skin is part of the problem. Oligio tightens skin rather than removing fat, so if the fullness under the chin is mainly fat, a treatment aimed at fat is usually more appropriate. A doctor can tell you which you are looking at.",
+        q: "Does Oligio X help a double chin?",
+        a: "Only where loose skin is part of the problem. Oligio X tightens skin rather than removing fat, so if the fullness under the chin is mainly fat, a treatment aimed at fat is usually more appropriate. A doctor can tell you which you are looking at.",
       },
       {
-        q: "How long do Oligio results last?",
+        q: "How long do Oligio X results last?",
         a: "It varies with age, skin quality, sun exposure and lifestyle. Change develops over months as collagen remodels, and the published Oligio studies followed patients for up to six months. Maintenance sessions are usually part of the plan to help the effect hold.",
       },
     ],
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-10-11",
-    seoTitle: "Oligio Monopolar RF Skin Tightening Malaysia | Kaiteki",
+    seoTitle: "Oligio X Monopolar RF Skin Tightening Malaysia | Kaiteki",
     seoDescription:
-      "Oligio is a Korean 6.78 MHz monopolar RF platform used at Kaiteki for mild to moderate facial laxity, with surface cooling and no needles. Book a consultation.",
+      "Oligio X is a Korean 6.78 MHz monopolar RF platform used at Kaiteki for mild to moderate facial laxity, with surface cooling and no needles. Book a consultation.",
   },
   {
     slug: "sylfirm-x",
@@ -2141,7 +2141,7 @@ export const technology: Technology[] = [
       {
         heading: "Onda for Body or Onda for Face, and is either for weight loss?",
         body: [
-          "At Kaiteki, Onda is offered in two forms, Onda for Body and Onda for Face, using the same underlying technology at settings suited to each area. Whether it suits you depends on your concern, body area, skin and medical history, which a doctor assesses during consultation.",
+          "At Kaiteki, Onda is offered in two forms, Onda for Body and Onda for Face, using the same underlying technology at settings suited to each area. Whether it suits you depends on your concern, body area, skin and medical history, which a doctor assesses during consultation. Kaiteki has both the original Onda and the newer Onda Pro.",
           "Onda for Body is used for localised fat and skin firmness, while Onda for Face uses a gentler approach for the face and jawline.",
           "Onda is not a weight-loss treatment; it addresses localised areas rather than overall body weight.",
         ],
@@ -2187,6 +2187,11 @@ export const technology: Technology[] = [
         a: "Both use the same Coolwaves® microwave technology. Onda for Body targets localised fat, cellulite and firmness on areas such as the abdomen, thighs and arms, while Onda for Face uses a gentler approach for firmness of the face and jawline. Your doctor will advise which is appropriate.",
       },
       {
+        q: "What is the difference between Onda and Onda Pro?",
+        a:
+          "Onda Pro is DEKA's newer generation of Onda. Both use the same 2.45 GHz Coolwaves® microwave technology, and Onda Pro comes with dedicated handpieces for face and body areas. Kaiteki has both, and the doctor chooses the device and handpiece for the area being treated. Which one is used does not change what the consultation assesses, or whether the treatment suits you.",
+      },
+      {
         q: "Is Onda painful, and is there downtime?",
         a: "Comfort varies between individuals; the built-in cooling is intended to keep the session comfortable, and most people describe a warming sensation. Downtime is usually limited, but any temporary effects and what to expect are explained at consultation.",
       },
@@ -2197,9 +2202,9 @@ export const technology: Technology[] = [
     ],
     reviewedBy: "dr-tim-chua",
     lastReviewed: "2026-07-18",
-    seoTitle: "Onda Coolwaves Body & Face Treatment Malaysia | Kaiteki",
+    seoTitle: "Onda & Onda Pro Coolwaves Treatment Malaysia | Kaiteki",
     seoDescription:
-      "Onda uses microwave-based Coolwaves technology at Kaiteki for localised fat, cellulite appearance and facial firmness. Book a free consultation to learn more.",
+      "Kaiteki has Onda and Onda Pro, microwave-based Coolwaves devices for localised fat, cellulite appearance and facial firmness. Book a free consultation.",
   },
   {
     slug: "schwarzy",

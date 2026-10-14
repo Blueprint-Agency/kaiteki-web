@@ -32,7 +32,7 @@
   "facts": [
     {
       "value": "4 个 RF 射频平台",
-      "label": "BTL Exilis、Oligio、Wonderface 和 XERF，按你的皮肤选择"
+      "label": "BTL Exilis、Oligio X、Wonderface 和 XERF，按你的皮肤选择"
     },
     {
       "value": "30–60 分钟",
@@ -66,7 +66,7 @@
     }
   ],
   "variantModule": {
-    "heading": "BTL Exilis、Oligio、Wonderface 还是 XERF：用哪一个 RF 射频平台，为什么",
+    "heading": "BTL Exilis、Oligio X、Wonderface 还是 XERF：用哪一个 RF 射频平台，为什么",
     "intro": "这四个平台的差别，在于能量到达的深度，以及皮肤表面的冷却方式。",
     "items": [
       {
@@ -78,10 +78,10 @@
       },
       {
         "eyebrow": "单极 6.78 MHz · 接触式冷却",
-        "title": "Oligio",
+        "title": "Oligio X",
         "body": "韩国的单极平台，通过会监测接触状况的冷却探头逐发输出，主要研究用于下半脸的轻度至中度松弛。",
         "href": "/technology/oligio",
-        "hrefLabel": "了解 Oligio"
+        "hrefLabel": "了解 Oligio X"
       },
       {
         "eyebrow": "双极 RF + 神经肌肉刺激",

@@ -2,8 +2,11 @@
 // (hreflang, the sitemap, the header switcher, in-page links) asks here, so a
 // page cannot be linked in one place and missing in another.
 
-import { localePages } from "@/content/i18n/pages";
+import { localePages, type LocalePageEntry } from "@/content/i18n/pages";
 import { doctorBySlug } from "@/content/data/doctors";
+import { technologyBySlug } from "@/content/data/technology";
+import { treatmentBySlug } from "@/content/data/treatments";
+import { concernSignoff } from "@/lib/signoff";
 import {
   defaultLocale,
   localeMeta,
@@ -19,12 +22,28 @@ import {
 export const LOCALE_PREVIEW =
   process.env.NODE_ENV !== "production" || process.env.NEXT_PUBLIC_NOINDEX === "1";
 
+/** The doctor who reviews the English page at `path`, who also signs its
+ *  translations unless the ledger entry names someone else. */
+function englishReviewer(path: string): string | undefined {
+  const [, kind, slug] = path.split("/");
+  if (kind === "concerns" && slug) return concernSignoff(slug)?.doctor;
+  if (kind === "treatments" && slug) return treatmentBySlug(slug)?.reviewedBy;
+  if (kind === "technology" && slug) return technologyBySlug(slug)?.reviewedBy;
+  return undefined;
+}
+
+function signer(path: string, entry: LocalePageEntry | undefined) {
+  if (entry?.status !== "signed") return undefined;
+  const slug = entry.doctor ?? englishReviewer(path);
+  return slug ? doctorBySlug(slug) : undefined;
+}
+
 /** Is `path` live in `locale`? English is the source tree and always is. */
 export function isLive(locale: Locale, path: string): boolean {
   if (locale === defaultLocale) return true;
   const entry = localePages[locale][path];
   if (!entry) return false;
-  if (entry.status === "signed") return doctorBySlug(entry.doctor) !== undefined;
+  if (entry.status === "signed") return signer(path, entry) !== undefined;
   return LOCALE_PREVIEW;
 }
 
@@ -64,7 +83,7 @@ export function hreflangFor(path: string): Record<string, string> | undefined {
 export function localeReviewer(locale: NonDefaultLocale, path: string) {
   const entry = localePages[locale][path];
   if (entry?.status !== "signed") return undefined;
-  const doctor = doctorBySlug(entry.doctor);
+  const doctor = signer(path, entry);
   return doctor ? { doctor, date: entry.date } : undefined;
 }
 

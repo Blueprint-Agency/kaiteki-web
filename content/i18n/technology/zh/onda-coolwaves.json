@@ -54,7 +54,7 @@
     {
       "heading": "Onda 身体还是 Onda 脸部？两者是减重疗程吗？",
       "body": [
-        "在 Kaiteki，Onda 有两种形式：Onda 身体（Onda for Body）和 Onda 脸部（Onda for Face），使用同一种底层技术，按各个部位调到合适的参数。是否适合你，取决于你的问题、身体部位、皮肤和病史，医生会在咨询时评估。",
+        "在 Kaiteki，Onda 有两种形式：Onda 身体（Onda for Body）和 Onda 脸部（Onda for Face），使用同一种底层技术，按各个部位调到合适的参数。是否适合你，取决于你的问题、身体部位、皮肤和病史，医生会在咨询时评估。Kaiteki 同时有原版 Onda 和较新的 Onda Pro。",
         "Onda 身体用于局部脂肪和皮肤紧致度，而 Onda 脸部用较温和的方式处理脸部和下颚线。",
         "Onda 不是减重疗程；它处理的是局部部位，而不是整体体重。"
       ]
@@ -99,6 +99,10 @@
       "a": "两者都使用同一种 Coolwaves® 微波技术。Onda 身体针对腹部、大腿和手臂等部位的局部脂肪、橘皮组织和紧致度，而 Onda 脸部用较温和的方式处理脸部和下颚线的紧致度。医生会建议哪一种适合你。"
     },
     {
+      "q": "Onda 和 Onda Pro 有什么区别？",
+      "a": "Onda Pro 是 DEKA 较新一代的 Onda。两者都采用同样的 2.45 GHz Coolwaves® 微波技术，Onda Pro 配有针对脸部和身体部位的专用探头。Kaiteki 两台都有，由医生按治疗部位选择仪器和探头。用哪一台，不会改变咨询时评估的内容，也不会改变这个疗程是否适合你。"
+    },
+    {
       "q": "Onda 痛吗？有恢复期吗？",
       "a": "舒适程度因人而异；内置的冷却系统是为了让过程保持舒适，大多数人形容是一种温热的感觉。恢复期通常很有限，任何暂时的反应以及可以预期的情况，都会在咨询时说明。"
     },
@@ -109,6 +113,6 @@
   ],
   "reviewedBy": "dr-tim-chua",
   "lastReviewed": "2026-07-18",
-  "seoTitle": "马来西亚 Onda 身体与脸部疗程 | Kaiteki",
-  "seoDescription": "Kaiteki 的 Onda 采用以微波为基础的 Coolwaves 技术，用于处理局部脂肪、橘皮组织外观和脸部紧致度。欢迎预约免费咨询，了解更多详情。"
+  "seoTitle": "马来西亚 Onda、Onda Pro 疗程 | Kaiteki",
+  "seoDescription": "Kaiteki 有 Onda 和 Onda Pro，采用以微波为基础的 Coolwaves 技术，用于处理局部脂肪、橘皮组织外观和脸部紧致度。欢迎预约免费咨询。"
 }
