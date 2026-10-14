@@ -97,7 +97,7 @@ function Banner({ c }: { c: Concern }) {
           the image and a scrim would wash out half the shot for nothing. */}
       <div
         aria-hidden
-        className="absolute inset-0 hidden bg-gradient-to-r from-transparent via-page/25 to-page/92 sm:block"
+        className="absolute inset-0 hidden bg-gradient-to-r from-transparent from-30% via-page/70 via-55% to-page/95 sm:block"
       />
     </div>
   );

@@ -11,6 +11,11 @@ type Size = "md" | "lg";
  * and cost-section CTAs: a medical page must not open as a sales page, and the
  * cost CTA is a secondary variant of the same destination rather than a fourth
  * CTA (spec rule R-06).
+ *
+ * The ghost carries a solid surface fill and a soft shadow rather than a
+ * transparent one: on a concern banner the photograph runs behind it (an arm,
+ * a shoulder), and a see-through button disappeared into the image. On page
+ * ground it still reads as an outline, the surface being one step lighter.
  */
 export function WhatsAppButton({
   href = waGeneric,
@@ -31,7 +36,7 @@ export function WhatsAppButton({
   const sizing = size === "lg" ? "px-7 py-3.5 text-base" : "px-5 py-3 text-sm";
   const skin =
     variant === "outline"
-      ? "border border-cta bg-transparent text-cta hover:bg-cta/5"
+      ? "border border-cta bg-surface text-cta shadow-[0_6px_18px_-8px_rgb(73_54_40/0.35)] hover:bg-tint"
       : "bg-cta text-white shadow-sm hover:bg-cta-hover";
   return (
     <a
