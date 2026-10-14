@@ -41,6 +41,7 @@ import { treatmentUi, type TreatmentUi } from "@/content/i18n/treatment-ui";
 import { concernUi } from "@/content/i18n/concern-ui";
 import { chrome, fmt } from "@/content/i18n/chrome";
 import { term } from "@/content/i18n/terms";
+import { techCardProps } from "@/content/i18n/tech-cards";
 import { localizedConcern } from "@/content/i18n/concern-locale";
 import { isLive, lhref, localeReviewer } from "@/lib/locale-pages";
 import { localePath, type Locale } from "@/lib/i18n";
@@ -398,16 +399,7 @@ export function TreatmentView({
                   key={x.slug}
                   x={x}
                   showUsedIn={false}
-                  // Device summaries are English-only data until the technology
-                  // pages get their own locale round.
-                  {...(en
-                    ? {}
-                    : {
-                        summary: null,
-                        typeLabel: cu.techType[x.type],
-                        learnMore: cu.learnMore,
-                        href: link(`/technology/${x.slug}`),
-                      })}
+                  {...techCardProps(locale, x)}
                 />
               ))}
             </CardRow>

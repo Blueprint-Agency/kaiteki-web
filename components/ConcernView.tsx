@@ -37,6 +37,7 @@ import type { Concern } from "@/lib/types";
 import { concernUi } from "@/content/i18n/concern-ui";
 import { chrome, fmt } from "@/content/i18n/chrome";
 import { term } from "@/content/i18n/terms";
+import { techCardProps } from "@/content/i18n/tech-cards";
 import { lhref, localeReviewer } from "@/lib/locale-pages";
 import { localePath, type Locale } from "@/lib/i18n";
 
@@ -379,16 +380,7 @@ export function ConcernView({
                     x={x}
                     showUsedIn={false}
                     className="h-full"
-                    // Device summaries are English-only data until the
-                    // technology pages get their own locale round.
-                    {...(en
-                      ? {}
-                      : {
-                          summary: null,
-                          typeLabel: ui.techType[x.type],
-                          learnMore: ui.learnMore,
-                          href: lhref(locale, `/technology/${x.slug}`),
-                        })}
+                    {...techCardProps(locale, x)}
                   />
                 </li>
               ))}

@@ -18,14 +18,17 @@ export function ResultsDisclaimer({ locale = "en" }: { locale?: keyof typeof RES
   );
 }
 
+const STANDING_DISCLAIMER = {
+  en: "This page is general information about aesthetic treatments and is not medical advice. Treatments carry risks that are explained during consultation, and individual results vary. A doctor will assess whether a treatment is suitable for you before it is carried out.",
+  zh: "本页内容为医美疗程的一般资讯，并非医疗建议。疗程有一定风险，会在咨询时说明，效果因人而异。进行任何疗程之前，医生会先评估它是否适合你。",
+  ms: "Halaman ini ialah maklumat umum tentang rawatan estetik dan bukan nasihat perubatan. Rawatan mempunyai risiko yang akan diterangkan semasa konsultasi, dan hasil berbeza bagi setiap individu. Doktor akan menilai sama ada sesuatu rawatan sesuai untuk anda sebelum ia dijalankan.",
+} as const;
+
 /** Standing medical disclaimer on every YMYL page (docs/05 §4.2). */
-export function Disclaimer() {
+export function Disclaimer({ locale = "en" }: { locale?: keyof typeof STANDING_DISCLAIMER }) {
   return (
     <p className="border-t border-hairline pt-5 text-sm leading-relaxed text-ink-500">
-      This page is general information about aesthetic treatments and is not medical
-      advice. Treatments carry risks that are explained during consultation, and
-      individual results vary. A doctor will assess whether a treatment is suitable
-      for you before it is carried out.
+      {STANDING_DISCLAIMER[locale]}
     </p>
   );
 }

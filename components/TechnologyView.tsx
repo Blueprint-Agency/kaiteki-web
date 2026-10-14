@@ -21,11 +21,20 @@ import {
 } from "@/content/data/relations";
 import { doctorBySlug, reviewerByline } from "@/content/data/doctors";
 import { postsFor } from "@/content/data/blog";
-import { technologyToc, alternativesHeading } from "@/lib/technology-toc";
-import { headingAnchor } from "@/lib/treatment-toc";
+import { technologyToc, alternativesHeading, technologySectionAnchors } from "@/lib/technology-toc";
 import { TOC_MIN_HEADINGS } from "@/lib/toc";
-import { waForTreatment } from "@/lib/wa";
+import { waForTreatment, waLink } from "@/lib/wa";
 import type { Technology } from "@/lib/types";
+import { technologyUi } from "@/content/i18n/technology-ui";
+import { treatmentUi } from "@/content/i18n/treatment-ui";
+import { concernUi } from "@/content/i18n/concern-ui";
+import { chrome, fmt } from "@/content/i18n/chrome";
+import { term } from "@/content/i18n/terms";
+import { techCardProps } from "@/content/i18n/tech-cards";
+import { localizedConcern } from "@/content/i18n/concern-locale";
+import { localizedTreatment } from "@/content/i18n/treatment-locale";
+import { isLive, lhref, localeReviewer } from "@/lib/locale-pages";
+import { localePath, type Locale } from "@/lib/i18n";
 
 /**
  * `/technology/[slug]` — the device and injectable page, rebuilt 2026-09-21
@@ -67,15 +76,15 @@ const deviceLogo: Record<string, string> = {
   Potenza: "logob_potenza.png",
 };
 
-const dmy = (iso: string) =>
-  new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+const dmy = (iso: string, intl = "en-GB") =>
+  new Date(iso).toLocaleDateString(intl, { day: "numeric", month: "short", year: "numeric" });
 
 /** Next review is always 12 months after the last one, so it's derived — the
  *  same rule the treatment and concern ledgers use. */
-function nextReview(iso: string) {
+function nextReview(iso: string, intl = "en-GB") {
   const d = new Date(iso);
   d.setFullYear(d.getFullYear() + 1);
-  return dmy(d.toISOString());
+  return dmy(d.toISOString(), intl);
 }
 
 /** The reading column with its sticky rail, as `TreatmentView` lays one out:
@@ -92,25 +101,82 @@ function Reading({ rail, children }: { rail?: ReactNode; children: ReactNode }) 
   );
 }
 
-export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) {
+/**
+ * `x` is the record to render: English, or a locale overlay of it
+ * (content/i18n/technology-locale.ts). `source` is the English record, which a
+ * locale page passes so section and FAQ anchors stay the English slugs.
+ */
+export function TechnologyView({
+  x,
+  trail,
+  locale = "en",
+  source = x,
+}: {
+  x: Technology;
+  trail: Crumb[];
+  locale?: Locale;
+  source?: Technology;
+}) {
+  const en = locale === "en";
+  const ui = technologyUi[locale];
+  const cu = concernUi[locale];
+  const link = (href: string) => lhref(locale, href);
   const treatments = treatmentsOfTechnology(x.slug);
   const relatedConcerns = concernsOfTechnology(x.slug);
   const siblings = relatedTechnology(x.slug);
   // Falls back to the treatments this device delivers: 11 of 36 devices are
   // tagged by a post directly, and the hop lifts that to 22 without leaving topic.
-  const posts = postsFor("technology", x.slug, { tag: "treatments", slugs: x.treatments });
-  const doctor = x.reviewedBy ? doctorBySlug(x.reviewedBy) : undefined;
+  // The blog is English-only, so a locale page lists no "read next" posts.
+  const posts = en ? postsFor("technology", x.slug, { tag: "treatments", slugs: x.treatments }) : [];
+  // English names the authoring reviewer; a translation only the doctor who
+  // signed it in the locale ledger (content/i18n/pages.ts).
+  const signed = en ? undefined : localeReviewer(locale, `/technology/${x.slug}`);
+  const doctor = en ? (x.reviewedBy ? doctorBySlug(x.reviewedBy) : undefined) : signed?.doctor;
+  const reviewIso = en ? x.lastReviewed : signed?.date;
   const logo = x.device ? deviceLogo[x.device] : undefined;
-  const reviewedDate = x.lastReviewed ? dmy(x.lastReviewed) : undefined;
-  const wa = waForTreatment(x.name);
+  const reviewedDate = reviewIso ? dmy(reviewIso, cu.intl) : undefined;
+  const wa = en ? waForTreatment(x.name) : waLink(fmt(chrome[locale].wa.about, { name: x.name }));
   const sections = x.sections ?? [];
+  const anchors = technologySectionAnchors(x, source);
 
   // "Injectables · Injectable" is a stutter. Where the group already names the
   // type, the group says it once.
-  const typeLabel = TYPE_LABEL[x.type];
-  const kicker = x.group.toLowerCase().startsWith(typeLabel.toLowerCase())
+  const typeLabel = en ? TYPE_LABEL[x.type] : ui.type[x.type];
+  const typeWord = ui.typeWord[x.type];
+  const group = term(locale, "category", x.group, x.group);
+  const kicker = en && x.group.toLowerCase().startsWith(typeLabel.toLowerCase())
     ? x.group
-    : `${x.group} · ${typeLabel}`;
+    : `${group} · ${typeLabel}`;
+  const alternatives = en ? alternativesHeading(x) : (ui.alternatives[x.group] ?? ui.alternatives.other);
+
+  /** Concern / treatment card fields in this locale: their own translation
+   *  once live, else the researched name and no English summary. */
+  const concernCard = (slug: string, name: string) => {
+    if (en) return {};
+    const page = localizedConcern(locale, slug);
+    const live = page && isLive(locale, `/concerns/${slug}`);
+    const label = live ? page.c.name : term(locale, "concern", slug, name);
+    return {
+      href: link(`/concerns/${slug}`),
+      name: label,
+      summary: live ? page.c.summary : null,
+      explore: cu.learnMore,
+      alt: fmt(cu.cardAltConcern, { name: label }),
+    };
+  };
+  const treatmentCard = (slug: string, name: string) => {
+    if (en) return {};
+    const page = localizedTreatment(locale, slug);
+    const live = page && isLive(locale, `/treatments/${slug}`);
+    const label = live ? page.t.name : term(locale, "treatment", slug, name);
+    return {
+      href: link(`/treatments/${slug}`),
+      name: label,
+      summary: live ? page.t.summary : null,
+      learnMore: cu.learnMore,
+      alt: fmt(treatmentUi[locale].cardAlt, { name: label }),
+    };
+  };
 
   // The rail reads the same derived list the page renders from, so an entry
   // can never point at a section that is not on the page.
@@ -119,19 +185,27 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
     relatedConcerns.length > 0,
     treatments.length > 0,
     siblings.length > 0,
+    {
+      concernsHeading: ui.concernsHeading,
+      usedInHeading: ui.usedInHeading,
+      costHeading: treatmentUi[locale].costHeading,
+      faqHeading: cu.faqHeading,
+      typeWord: ui.typeWord,
+      alternatives,
+    },
+    source,
   );
   const rail =
     headings.length >= TOC_MIN_HEADINGS ? (
-      <ArticleToc headings={headings} variant="sidebar" />
+      <ArticleToc headings={headings} variant="sidebar" label={cu.onThisPage} />
     ) : undefined;
-
   return (
     <article>
       {/* Fold. The treatment page's asymmetry: the name claims the left, the
           product photograph is an arched object on the right. */}
       <header className="border-b border-hairline">
         <Container className="pt-8 pb-10 sm:pb-12">
-          <Breadcrumbs items={trail} />
+          <Breadcrumbs items={trail} home={en ? undefined : { label: cu.home, href: localePath(locale, "/") }} />
           <div
             className={`mt-8 grid gap-10 lg:gap-16 ${x.image ? "lg:grid-cols-[1fr_0.78fr] lg:items-center" : ""}`}
           >
@@ -147,9 +221,9 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
                   href={wa}
                   variant="outline"
                   position="hero"
-                  label="Ask if it suits your skin"
+                  label={ui.heroCta}
                 />
-                <p className="text-sm text-ink-500">Free consultation, no obligation.</p>
+                <p className="text-sm text-ink-500">{ui.heroNote}</p>
               </div>
             </div>
             {/* No frame without a photograph. A device without product
@@ -159,7 +233,7 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
               <div className="relative aspect-[3/2] overflow-hidden rounded-2xl rounded-t-[4rem] bg-tint ring-1 ring-hairline lg:aspect-[5/4]">
                 <Image
                   src={x.image}
-                  alt={x.imageAlt ?? `${x.name}${x.device ? ` (${x.device})` : ""} at Kaiteki Skin Aesthetic Clinic Malaysia`}
+                  alt={x.imageAlt ?? fmt(ui.imageAlt, { name: x.name, device: x.device ? ` (${x.device})` : "" })}
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 420px"
@@ -178,7 +252,7 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
       {x.leadAnswer && (
         <Container className="py-12 sm:py-14">
           <div className="mx-auto max-w-[68ch]">
-            <LeadAnswer>{x.leadAnswer}</LeadAnswer>
+            <LeadAnswer label={cu.inBrief}>{x.leadAnswer}</LeadAnswer>
           </div>
         </Container>
       )}
@@ -186,15 +260,15 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
       <Reading rail={rail}>
         {rail && (
           <div className="pt-4 lg:hidden">
-            <ArticleToc headings={headings} />
+            <ArticleToc headings={headings} label={cu.onThisPage} />
           </div>
         )}
 
         {/* The reading spine. Anchor ids derive from the heading, so every
             section is addressable without a second data field — which is what
             lets an answer engine cite one section rather than the page. */}
-        {sections.map((s) => (
-          <Section key={s.heading} id={headingAnchor(s.heading)}>
+        {sections.map((s, i) => (
+          <Section key={anchors[i] || s.heading} id={anchors[i]}>
             <h2 className="h-section">{s.heading}</h2>
             <div className="prose mt-6 max-w-[68ch] space-y-5 leading-[1.75] text-ink-700">
               {s.body.map((p, j) => (
@@ -218,8 +292,7 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
         {sections.length === 0 && (
           <Section>
             <p className="max-w-[68ch] text-lg leading-relaxed text-ink-700">
-              {x.summary} A fuller, doctor-reviewed guide to {x.name} is being prepared. Our doctors
-              can tell you whether it suits your skin at a free consultation.
+              {fmt(ui.pending, { summary: x.summary, name: x.name })}
             </p>
           </Section>
         )}
@@ -229,14 +302,11 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
             a reader crossing between page types meets one vocabulary. */}
         {relatedConcerns.length > 0 && (
           <Section id="may-help-with">
-            <h2 className="h-section">Concerns this {typeLabel.toLowerCase()} addresses</h2>
-            <p className="mt-5 max-w-[62ch] leading-relaxed text-ink-700">
-              Whether it is the right choice for any of these is a decision for a doctor who has
-              examined your skin.
-            </p>
+            <h2 className="h-section">{ui.concernsHeading.replace("{type}", typeWord)}</h2>
+            <p className="mt-5 max-w-[62ch] leading-relaxed text-ink-700">{ui.concernsIntro}</p>
             <CardRow className="mt-10">
               {relatedConcerns.map((c) => (
-                <ConcernCard key={c.slug} c={c} />
+                <ConcernCard key={c.slug} c={c} {...concernCard(c.slug, c.name)} />
               ))}
             </CardRow>
           </Section>
@@ -244,24 +314,24 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
 
         {treatments.length > 0 && (
           <Section id="used-in">
-            <h2 className="h-section">Treatments that use {x.name}</h2>
+            <h2 className="h-section">{ui.usedInHeading.replace("{name}", x.name)}</h2>
             <CardRow className="mt-10">
               {treatments.map((t) => (
-                <TreatmentCard key={t.slug} t={t} />
+                <TreatmentCard key={t.slug} t={t} {...treatmentCard(t.slug, t.name)} />
               ))}
             </CardRow>
             <Link
-              href="/technology"
+              href={link("/technology")}
               className="mt-9 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-espresso"
             >
-              Back to all devices and injectables
+              {ui.backToAll}
             </Link>
           </Section>
         )}
 
         {/* Factors only. No figure, no range, no Offer schema — settled
             2026-09-20 and linted in CI. */}
-        <CostFactors c={x.costFactors} href={wa} />
+        <CostFactors c={x.costFactors} href={wa} ui={treatmentUi[locale]} />
 
         {/* docs/17 finding 1. Until now no technology page linked to another,
             so equity arrived in the cluster and never circulated. The heading
@@ -271,14 +341,11 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
             data file. */}
         {siblings.length > 0 && (
           <Section id="alternatives">
-            <h2 className="h-section">{alternativesHeading(x)}</h2>
-            <p className="mt-5 max-w-[62ch] leading-relaxed text-ink-700">
-              These address overlapping concerns. Which one suits you is a decision for a doctor who
-              has examined your skin, not a choice to make from a page.
-            </p>
+            <h2 className="h-section">{alternatives}</h2>
+            <p className="mt-5 max-w-[62ch] leading-relaxed text-ink-700">{ui.alternativesIntro}</p>
             <CardRow className="mt-10">
               {siblings.map((s) => (
-                <TechnologyCard key={s.slug} x={s} showUsedIn={false} />
+                <TechnologyCard key={s.slug} x={s} showUsedIn={false} {...techCardProps(locale, s)} />
               ))}
             </CardRow>
           </Section>
@@ -286,10 +353,10 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
 
         {logo && (
           <Section>
-            <p className="kicker">Manufacturer</p>
+            <p className="kicker">{ui.manufacturer}</p>
             <Image
               src={`https://cdn.kaiteki.my/images/tech/${logo}`}
-              alt={`${x.device!} logo`}
+              alt={fmt(ui.logoAlt, { device: x.device! })}
               width={140}
               height={44}
               className="mt-5 h-8 w-auto object-contain opacity-80"
@@ -299,9 +366,9 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
 
         {x.faqs && x.faqs.length > 0 && (
           <Section id="faq">
-            <h2 className="h-section">Common questions</h2>
+            <h2 className="h-section">{cu.faqHeading}</h2>
             <div className="mt-8 max-w-[68ch]">
-              <Faq items={x.faqs} />
+              <Faq items={x.faqs} anchorFrom={source.faqs} />
             </div>
           </Section>
         )}
@@ -313,17 +380,15 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
           pages close. */}
       <Container className="border-t border-hairline py-14 sm:py-20">
         <div className="mx-auto max-w-[62ch] text-center">
-          <h2 className="h-section mx-auto max-w-[18ch]">Book a free consultation</h2>
+          <h2 className="h-section mx-auto max-w-[18ch]">{ui.bottomHeading}</h2>
           <p className="mx-auto mt-5 max-w-[52ch] leading-relaxed text-ink-700">
-            The consultation is free, takes about 20 to 30 minutes, and there is no obligation to
-            book treatment afterwards. A doctor will examine your skin and tell you whether {x.name}{" "}
-            is appropriate, and if it isn&rsquo;t, what would be.
+            {ui.bottomBody.replace("{name}", x.name)}
           </p>
           <WhatsAppButton
             href={wa}
             size="lg"
             position="bottom"
-            label="Ask about this"
+            label={ui.bottomCta}
             className="mt-8"
           />
         </div>
@@ -332,15 +397,15 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
       {/* The reviewer as every other page type renders one: a named,
           MMC-registered doctor with a photo and a link to the profile
           (docs/02 §5), above the ledger's review dates. */}
-      {doctor && reviewedDate && x.lastReviewed && (
+      {doctor && reviewedDate && reviewIso && (
         <Container className="py-12 sm:py-14">
           <div className="max-w-[62ch] space-y-8">
-            <AuthorCard doctor={doctor} label="Medically reviewed by" />
+            <AuthorCard doctor={doctor} label={cu.reviewedByCard} viewProfile={cu.viewProfile} compact={!en} />
             <Ledger
               rows={[
-                { label: "Reviewed by", value: reviewerByline(doctor) },
-                { label: "Last reviewed", value: reviewedDate },
-                { label: "Next review due", value: nextReview(x.lastReviewed) },
+                { label: cu.ledgerReviewedBy, value: reviewerByline(doctor) },
+                { label: cu.ledgerLast, value: reviewedDate },
+                { label: cu.ledgerNext, value: nextReview(reviewIso, cu.intl) },
               ]}
             />
           </div>
@@ -349,7 +414,7 @@ export function TechnologyView({ x, trail }: { x: Technology; trail: Crumb[] }) 
 
       <Container className="pb-14">
         <div className="max-w-[62ch]">
-          <Disclaimer />
+          <Disclaimer locale={locale} />
         </div>
       </Container>
     </article>

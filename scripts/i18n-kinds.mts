@@ -8,8 +8,9 @@
 
 import { concerns } from "../content/data/concerns.ts";
 import { treatments } from "../content/data/treatments.ts";
+import { technology } from "../content/data/technology.ts";
 
-export type Kind = "concerns" | "treatments";
+export type Kind = "concerns" | "treatments" | "technology";
 
 export const KINDS: Record<
   Kind,
@@ -23,6 +24,7 @@ export const KINDS: Record<
 > = {
   concerns: { records: concerns, path: (s) => `/concerns/${s}`, drop: ["archetype", "depth"] },
   treatments: { records: treatments, path: (s) => `/treatments/${s}`, drop: [] },
+  technology: { records: technology, path: (s) => `/technology/${s}`, drop: [] },
 };
 
 export const LOCALES = ["zh", "ms"] as const;
@@ -37,6 +39,6 @@ export function englishRecord(kind: Kind, slug: string): Record<string, unknown>
 }
 
 export function parseKind(arg: string | undefined): Kind {
-  if (arg === "concerns" || arg === "treatments") return arg;
-  throw new Error(`kind must be "concerns" or "treatments", got ${JSON.stringify(arg)}`);
+  if (arg === "concerns" || arg === "treatments" || arg === "technology") return arg;
+  throw new Error(`kind must be "concerns", "treatments" or "technology", got ${JSON.stringify(arg)}`);
 }

@@ -434,6 +434,7 @@ export function TechnologyCard({
   x,
   showUsedIn = true,
   typeLabel,
+  name = x.name,
   summary = x.summary,
   href = `/technology/${x.slug}`,
   learnMore = "Learn more",
@@ -445,6 +446,7 @@ export function TechnologyCard({
   showUsedIn?: boolean;
   /** Localized badge; defaults to the English type label. */
   typeLabel?: string;
+  name?: string;
   /** null hides it (locale pages: the summary is English-only data). */
   summary?: string | null;
   href?: string;
@@ -457,7 +459,7 @@ export function TechnologyCard({
           <div className="relative aspect-[16/10] overflow-hidden bg-tint">
             <Image
               src={x.image}
-              alt={`${x.name}${x.device ? ` (${x.device})` : ""}, aesthetic technology at Kaiteki Skin Aesthetic Clinic`}
+              alt={`${name}${x.device ? ` (${x.device})` : ""}, aesthetic technology at Kaiteki Skin Aesthetic Clinic`}
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -473,7 +475,7 @@ export function TechnologyCard({
             </span>
           </div>
           <h3 className="mt-3 font-display text-xl font-medium text-espresso decoration-mocha/50 underline-offset-[5px] group-hover:underline">
-            {x.name}
+            {name}
           </h3>
           {summary ? (
             <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-700">{summary}</p>

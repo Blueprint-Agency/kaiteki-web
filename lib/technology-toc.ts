@@ -44,26 +44,53 @@ export function alternativesHeading(x: Technology): string {
   }
 }
 
+/** Fixed section titles; English by default, a locale page passes its own
+ *  ("{type}" the type word, "{name}" the device name). */
+export type TechnologyTocLabels = {
+  concernsHeading: string;
+  usedInHeading: string;
+  costHeading: string;
+  faqHeading: string;
+  typeWord: { device: string; injectable: string };
+  alternatives?: string;
+};
+
+const EN_LABELS: TechnologyTocLabels = {
+  concernsHeading: "Concerns this {type} addresses",
+  usedInHeading: "Treatments that use {name}",
+  costHeading: "What affects the number of sessions, and the cost",
+  faqHeading: "Common questions",
+  typeWord: { device: "device", injectable: "injectable" },
+};
+
+/** Section anchors from the English headings (anchorSource): headingAnchor
+ *  keeps only [a-z0-9], so a translated heading would slug to nothing. */
+export const technologySectionAnchors = (x: Technology, anchorSource: Technology = x) =>
+  (x.sections ?? []).map((_, i) => headingAnchor(anchorSource.sections?.[i]?.heading ?? ""));
+
 export function technologyToc(
   x: Technology,
   hasConcerns: boolean,
   hasTreatments: boolean,
   hasSiblings = false,
+  labels: TechnologyTocLabels = EN_LABELS,
+  anchorSource: Technology = x,
 ): Heading[] {
   const h = (id: string, text: string): Heading => ({ id, text, level: 2 });
-
+  const L = labels;
   // Most pages already carry an authored "what it may help address" section, so
   // the derived card shelf is named for what it actually is — a route into the
   // concern pages — rather than paraphrasing the section above it.
-  const typeWord = x.type === "injectable" ? "injectable" : "device";
+  const typeWord = L.typeWord[x.type === "injectable" ? "injectable" : "device"];
+  const anchors = technologySectionAnchors(x, anchorSource);
 
   const entries: (Heading | false | undefined)[] = [
-    ...(x.sections ?? []).map((s) => h(headingAnchor(s.heading), s.heading)),
-    hasConcerns && h("may-help-with", `Concerns this ${typeWord} addresses`),
-    hasTreatments && h("used-in", `Treatments that use ${x.name}`),
-    !!x.costFactors && h("sessions-cost", "What affects the number of sessions, and the cost"),
-    hasSiblings && h("alternatives", alternativesHeading(x)),
-    !!x.faqs?.length && h("faq", "Common questions"),
+    ...(x.sections ?? []).map((s, i) => h(anchors[i], s.heading)),
+    hasConcerns && h("may-help-with", L.concernsHeading.replace("{type}", typeWord)),
+    hasTreatments && h("used-in", L.usedInHeading.replace("{name}", x.name)),
+    !!x.costFactors && h("sessions-cost", L.costHeading),
+    hasSiblings && h("alternatives", L.alternatives ?? alternativesHeading(x)),
+    !!x.faqs?.length && h("faq", L.faqHeading),
   ];
 
   // An authored section can already carry one of the derived headings, and the

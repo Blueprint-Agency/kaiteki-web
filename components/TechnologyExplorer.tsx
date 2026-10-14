@@ -7,6 +7,8 @@ import { alignFilterRow } from "./FilterTabs";
 import { Search, X } from "./icons";
 import { technology } from "@/content/data/technology";
 import type { Technology, TechType } from "@/lib/types";
+import type { TechnologyUi } from "@/content/i18n/technology-ui";
+import type { TechCardProps } from "@/content/i18n/tech-cards";
 
 const TYPE_LABEL: Record<TechType, string> = { device: "Devices", injectable: "Injectables" };
 
@@ -58,7 +60,17 @@ const types: TechType[] = ["device", "injectable"];
 /** Search + filter over the Device & Injectables catalog, grouped under
  *  visible section headings so the page carries real H2 structure for crawlers
  *  even though the filters can hide/show individual sections. */
-export function TechnologyExplorer() {
+export function TechnologyExplorer({
+  ui,
+  cards,
+}: {
+  /** Localized labels and section names; English by default. Filtering still
+   *  keys on the English section names, so only the display text changes. */
+  ui?: TechnologyUi;
+  /** Localized card fields per device slug, resolved on the server. */
+  cards?: Record<string, TechCardProps>;
+} = {}) {
+  const sectionLabel = (s: string) => ui?.sections[s] ?? s;
   const [query, setQuery] = useState("");
   const [section, setSection] = useState<string | "All">("All");
   const [type, setType] = useState<TechType | "All">("All");
@@ -92,9 +104,11 @@ export function TechnologyExplorer() {
       (x) =>
         (section === "All" || sectionOf(x) === section) &&
         (type === "All" || x.type === type) &&
-        (q === "" || x.name.toLowerCase().includes(q)),
+        (q === "" ||
+          x.name.toLowerCase().includes(q) ||
+          (cards?.[x.slug]?.name ?? "").toLowerCase().includes(q)),
     );
-  }, [query, section, type]);
+  }, [query, section, type, cards]);
 
   const grouped = useMemo(() => {
     const bySection = new Map<string, Technology[]>();
@@ -130,15 +144,15 @@ export function TechnologyExplorer() {
               type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search devices & injectables…"
-              aria-label="Search technology by name"
+              placeholder={ui?.searchPlaceholder ?? "Search devices & injectables…"}
+              aria-label={ui?.searchAria ?? "Search technology by name"}
               className="w-full appearance-none rounded-full border border-hairline bg-surface py-2.5 pl-11 pr-10 text-sm text-espresso outline-none transition-colors placeholder:text-ink-500 focus:border-mocha [&::-webkit-search-cancel-button]:hidden"
             />
             {query && (
               <button
                 type="button"
                 onClick={() => setQuery("")}
-                aria-label="Clear search"
+                aria-label={ui?.clearSearch ?? "Clear search"}
                 className="absolute right-3 top-1/2 -translate-y-1/2 text-ink-500 hover:text-espresso"
               >
                 <X size={16} />
@@ -148,11 +162,11 @@ export function TechnologyExplorer() {
 
           <div className="flex w-full gap-1 rounded-full border border-hairline bg-surface p-1 sm:w-auto">
             <button type="button" onClick={() => selectType("All")} className={segment(type === "All")}>
-              All
+              {ui?.all ?? "All"}
             </button>
             {types.map((t) => (
               <button key={t} type="button" onClick={() => selectType(t)} className={segment(type === t)}>
-                {TYPE_LABEL[t]}
+                {ui?.typePlural[t] ?? TYPE_LABEL[t]}
               </button>
             ))}
           </div>
@@ -164,11 +178,11 @@ export function TechnologyExplorer() {
             onClick={() => selectSection("All")}
             className={categoryChip(section === "All")}
           >
-            All categories
+            {ui?.allCategories ?? "All categories"}
           </button>
           {sections.map((s) => (
             <button key={s} type="button" onClick={() => selectSection(s)} className={categoryChip(section === s)}>
-              {s}
+              {sectionLabel(s)}
             </button>
           ))}
         </div>
@@ -178,17 +192,17 @@ export function TechnologyExplorer() {
         <div className="mt-10 space-y-12">
           {grouped.map(([s, items]) => (
             <section key={s}>
-              <h2 className="font-serif text-2xl font-semibold text-espresso">{s}</h2>
+              <h2 className="font-serif text-2xl font-semibold text-espresso">{sectionLabel(s)}</h2>
               <CardRow className="mt-5">
                 {items.map((x) => (
-                  <TechnologyCard key={x.slug} x={x} />
+                  <TechnologyCard key={x.slug} x={x} {...(cards?.[x.slug] ?? {})} />
                 ))}
               </CardRow>
             </section>
           ))}
         </div>
       ) : (
-        <p className="mt-10 text-ink-500">No matching devices or injectables.</p>
+        <p className="mt-10 text-ink-500">{ui?.empty ?? "No matching devices or injectables."}</p>
       )}
     </div>
   );
