@@ -1,0 +1,263 @@
+{
+  "slug": "hifu",
+  "durationDowntime": "30-60 min · No downtime",
+  "name": "HIFU",
+  "category": "Lifting & Tightening",
+  "image": "https://cdn.kaiteki.my/treatments/hifu/hero.jpg",
+  "procedureImages": [
+    {
+      "src": "https://cdn.kaiteki.my/treatments/hifu/procedure-01.jpg",
+      "caption": "The ultrasound handpiece on a gel-coated cheek, with eye shields in place."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/hifu/procedure-02.jpg",
+      "caption": "A gloved practitioner holds the ultrasound handpiece along the patient's jawline."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/hifu/procedure-03.jpg",
+      "caption": "A practitioner works on the patient's cheek with the handpiece; eye pads cover the eyes."
+    }
+  ],
+  "device": "HIFU",
+  "typicalSessions": "1 to a few, with review",
+  "summary": "Focused ultrasound used for non-surgical skin-lifting and tightening concerns.",
+  "leadAnswer": "HIFU (high-intensity focused ultrasound) is a non-surgical treatment that delivers focused ultrasound energy to deeper skin layers. It is commonly used for skin-lifting and tightening concerns. How much laxity there is, and how deep it sits, is what decides whether it applies to you at all — so a doctor examines your face before any plan is made.",
+  "facts": [
+    {
+      "value": "2 ultrasound platforms",
+      "label": "Selected for your face and the depth being treated"
+    },
+    {
+      "value": "30–60 minutes",
+      "label": "Typical face and neck appointment, including preparation"
+    },
+    {
+      "value": "Assessment first",
+      "label": "Your first visit is a doctor consultation, not a treatment"
+    }
+  ],
+  "routes": [
+    {
+      "title": "Sagging along the jaw and jowls",
+      "body": "Early to moderate laxity in the lower face and along the jawline, and loss of definition under the chin. This is the pattern focused ultrasound is most often considered for.",
+      "links": [
+        {
+          "href": "/concerns/face-lifting",
+          "label": "Read about face lifting"
+        },
+        {
+          "href": "/concerns/face-contouring",
+          "label": "Face contouring"
+        }
+      ]
+    },
+    {
+      "title": "Firmness and fine lines with age",
+      "body": "Loss of firmness associated with reduced collagen, crepey or loose-feeling skin on the neck, and an overall loss of tone. Usually part of a longer-term maintenance plan rather than a single fix.",
+      "links": [
+        {
+          "href": "/concerns/aging",
+          "label": "Read about ageing skin"
+        },
+        {
+          "href": "/concerns/fine-lines-wrinkles",
+          "label": "Fine lines & wrinkles"
+        }
+      ]
+    }
+  ],
+  "routesNote": "Focused ultrasound addresses laxity. It does not replace lost volume, relax movement lines or improve skin quality, so plans often combine it with other treatments.",
+  "variantModule": {
+    "heading": "Ultracel Q or Lifthera: which HIFU device, and why",
+    "intro": "Both devices focus ultrasound beneath the surface, so heating happens in a chosen deeper layer while the surface is largely spared. They differ in how that energy is shaped.",
+    "items": [
+      {
+        "eyebrow": "Cartridge-based · Jeisys Medical",
+        "title": "Ultracel Q",
+        "body": "The doctor changes cartridges to change the focal depth, so the same platform can be aimed at the dermis, the deeper SMAS layer or the fat layer, with the energy focused either as a dot or along a line. The compact tip is designed to reach contours such as the jawline and under the chin.",
+        "href": "/technology/ultracel-q",
+        "hrefLabel": "About Ultracel Q"
+      },
+      {
+        "eyebrow": "Line-focused · Asterasys",
+        "title": "Lifthera",
+        "body": "Draws the focus along a continuous line rather than a row of separate dots, which the manufacturer links to reduced discomfort. A pen-type applicator reaches smaller, curved areas such as around the eyes, the nasolabial region and along the jaw.",
+        "href": "/technology/lifthera",
+        "hrefLabel": "About Lifthera"
+      }
+    ],
+    "note": "Neither device includes on-screen imaging of the tissue layers. Where the doctor wants to see those layers before placing energy, the separate Ultherapy platform is the one used."
+  },
+  "ctaMid": {
+    "heading": "Not sure whether lifting is what your face needs?",
+    "body": "A doctor can tell whether what you see is laxity, volume loss or skin quality, and whether HIFU addresses it."
+  },
+  "avoidIf": [
+    {
+      "lead": "Pregnancy or breastfeeding.",
+      "body": "Treatment is deferred."
+    },
+    {
+      "lead": "Active infection, inflamed acne or open wounds",
+      "body": "in the area to be treated."
+    },
+    {
+      "lead": "Implants, metallic or cardiac devices, or recently placed dermal fillers",
+      "body": "lying in the path of the energy."
+    },
+    {
+      "lead": "A tendency to keloid scarring.",
+      "body": ""
+    },
+    {
+      "lead": "Certain medications and medical conditions.",
+      "body": ""
+    }
+  ],
+  "bringToConsult": "Bring your medical history, medications and every previous aesthetic treatment, including energy-based ones. Implants and devices in the treatment field are the items most often forgotten, and they matter here.",
+  "sessionSteps": [
+    {
+      "title": "Consultation and assessment",
+      "body": "Your first visit is a consultation, not a treatment. The doctor examines where your laxity sits, whether there is enough for focused ultrasound to be worth doing, and which device suits each area."
+    },
+    {
+      "title": "Mapping and preparation",
+      "body": "The skin is cleansed, the treatment areas are marked so the energy is mapped rather than applied uniformly, and ultrasound coupling gel is applied. Topical numbing may be used depending on the area."
+    },
+    {
+      "title": "The treatment lines",
+      "body": "The doctor delivers the energy line by line with the selected cartridges. Most people describe brief warmth, prickling or a deep tapping with each pulse rather than continuous pain, felt more over bony areas such as the jaw and forehead. Settings can be adjusted if it is uncomfortable."
+    },
+    {
+      "title": "Afterwards",
+      "body": "The gel is removed and you are given aftercare advice. Most people return to normal activities the same day."
+    }
+  ],
+  "afterSession": {
+    "intro": "There is usually little to no downtime: nothing needs to heal on the surface, because the energy is placed beneath it.",
+    "bands": [
+      {
+        "title": "Straight afterwards",
+        "body": "Mild redness and slight swelling in the treated area can occur. Most people carry on with their day."
+      },
+      {
+        "title": "The first few days",
+        "body": "Tenderness to touch, or a temporary feeling of firmness in the treated area, generally settles on its own over a few days."
+      },
+      {
+        "title": "The following weeks and months",
+        "body": "The collagen response is gradual, so nothing is judged on the day. Plans often include a review once enough time has passed."
+      }
+    ],
+    "aftercare": "Gentle skincare and daily sun protection. You may be asked to avoid intense heat, such as saunas or hot yoga, for a short period."
+  },
+  "risks": {
+    "intro": "Each is explained at consultation, before anything is booked.",
+    "common": "Redness, swelling, tenderness, small areas of bruising, and transient numbness or tingling in the treated area.",
+    "lessCommon": "Welts, and temporary nerve-related effects such as localised muscle weakness, have been reported with focused-ultrasound treatments. Serious effects are uncommon when the treatment is appropriately selected, correctly mapped and performed by a trained doctor.",
+    "pigmentNote": "Focused ultrasound is absorbed by tissue rather than by melanin, so HIFU is generally used across a wide range of skin tones, including deeper Asian skin, without the pigment considerations that apply to some lasers. The bigger risk here is the device and the operator. See “Is cheap HIFU safe?” below.",
+    "cannotDo": [
+      "It is not a facelift. It does not cut, lift or remove skin, and the change is not comparable to surgery. Heavy sagging is often better discussed as a surgical question.",
+      "It does not replace lost volume, relax lines caused by muscle movement, or treat surface texture and pigment.",
+      "It is not permanent. Skin continues to age after any tightening treatment, which is why plans include review and occasional maintenance."
+    ],
+    "disclose": "Tell your doctor about anything listed under who should postpone it."
+  },
+  "costFactors": {
+    "intro": "Kaiteki does not quote HIFU prices online; the plan is set by examining your face. What moves it:",
+    "factors": [
+      "The areas treated. A jawline-and-neck plan is a different amount of work from a full face and neck.",
+      "The number of shots or lines delivered across those areas.",
+      "Which device and cartridges your plan needs.",
+      "Whether the plan is a single session with a review, or a short course.",
+      "Whether HIFU is combined with another treatment in a wider plan."
+    ],
+    "outro": "Often planned as one session with a review some months later, or a small spaced course, with occasional maintenance."
+  },
+  "comparisons": [
+    {
+      "name": "HIFU",
+      "bestFor": "Early to moderate laxity along the jaw, lower face and neck",
+      "downtime": "None for most people"
+    },
+    {
+      "name": "Ultherapy",
+      "bestFor": "Laxity where the doctor views the tissue layers on screen before treating",
+      "downtime": "None for most people"
+    },
+    {
+      "name": "Dermal fillers",
+      "bestFor": "Lines and hollows caused by lost volume or structure",
+      "downtime": "1-3 days"
+    },
+    {
+      "name": "Botulinum toxin",
+      "bestFor": "Lines caused by muscle movement",
+      "downtime": "None"
+    },
+    {
+      "name": "Skin booster",
+      "bestFor": "Skin quality and hydration rather than laxity",
+      "downtime": "1-2 days"
+    }
+  ],
+  "related": [
+    "ultherapy",
+    "skin-booster",
+    "botulinum-toxin"
+  ],
+  "relatedReasons": {
+    "ultherapy": "Focused ultrasound with on-screen imaging, used where the doctor wants to see the tissue layers before placing energy.",
+    "skin-booster": "Considered where the concern is skin quality and hydration rather than laxity, which HIFU does not address.",
+    "botulinum-toxin": "Used for lines caused by muscle movement, which focused ultrasound does not treat."
+  },
+  "reviewedBy": "dr-yvonne-chuah",
+  "lastReviewed": "2026-06-18",
+  "seoTitle": "HIFU Malaysia | Non-Surgical Lifting Treatment | Kaiteki",
+  "seoDescription": "HIFU treatment in Malaysia for non-surgical skin lifting and tightening concerns. Book a free consultation with a Kaiteki doctor to check suitability.",
+  "sections": [
+    {
+      "heading": "What is HIFU?",
+      "body": [
+        "HIFU stands for high-intensity focused ultrasound: a non-surgical, energy-based treatment that directs ultrasound to set depths beneath the skin, without incisions. At Kaiteki it is considered for lifting and tightening concerns on the face and neck."
+      ]
+    },
+    {
+      "heading": "How does HIFU reach the layer a facelift works on?",
+      "body": [
+        "HIFU concentrates ultrasound energy at set depths beneath the surface, including the deeper support layer sometimes called the SMAS (superficial muscular aponeurotic system). That is the same layer a surgical facelift addresses, though focused ultrasound reaches it without incisions. The energy creates small, controlled points of heat at those depths while the skin surface is largely spared, which is why there is no wound to heal.",
+        "That controlled heating prompts the body's repair response, and the skin produces fresh collagen in the treated zones. Because this is a collagen response rather than mechanical tightening, any change is gradual and differs from person to person. The doctor selects the device, depth and settings for each area."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is HIFU surgery?",
+      "a": "No. HIFU uses focused ultrasound beneath the skin, with no incisions. It is not a facelift and does not remove skin."
+    },
+    {
+      "q": "What is the difference between HIFU and Ultherapy?",
+      "a": "Both use focused ultrasound. HIFU at Kaiteki runs on Lifthera and Ultracel Q and is often considered for the jaw and jowls. Ultherapy is a separate platform that shows the tissue layers on screen before treating, and is sometimes considered for more precise areas such as the brow and neck."
+    },
+    {
+      "q": "Is there any downtime after HIFU?",
+      "a": "Usually little to none. Temporary redness, mild swelling or tenderness can occur and typically settles within a few days."
+    },
+    {
+      "q": "How many HIFU sessions will I need?",
+      "a": "It depends on the area and your plan. HIFU is often planned as one session with a review, or a small number of sessions across the year, rather than a fixed course."
+    },
+    {
+      "q": "Does HIFU hurt?",
+      "a": "Most people feel brief warmth, prickling or a deep tapping with each pulse rather than sustained pain, more over bony areas such as the jaw and forehead. Numbing cream and adjusted settings keep it tolerable, so say if it is uncomfortable."
+    },
+    {
+      "q": "Are HIFU results permanent?",
+      "a": "No. Skin keeps ageing after any tightening treatment, so plans usually include a review and occasional maintenance."
+    },
+    {
+      "q": "Is cheap HIFU safe?",
+      "a": "Very low-priced HIFU, particularly in non-medical settings, is where the real risk sits. Focused ultrasound delivers energy deep into tissue, and a poorly calibrated device or an untrained operator can cause burns, unwanted fat loss or nerve injury. Choose a clinic that names its device, uses one registered with Malaysia's Medical Device Authority, and has a registered doctor delivering the treatment."
+    }
+  ]
+}

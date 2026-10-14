@@ -1,0 +1,173 @@
+{
+  "slug": "exosome-therapy",
+  "durationDowntime": "Perlu konsultasi · Tempoh pemulihan berbeza",
+  "name": "Rawatan Exosome",
+  "category": "Regenerative",
+  "image": "https://cdn.kaiteki.my/treatments/exosome-therapy/hero-v2.jpg",
+  "imageAlt": "Doktor menyuntik di sepanjang garis rambut pada kulit kepala pesakit sementara pembantu memegang kawasan itu dengan stabil",
+  "procedureImages": [
+    {
+      "src": "https://cdn.kaiteki.my/treatments/exosome-therapy/procedure-02.jpg",
+      "caption": "Doktor menggerakkan alat pegang tangan di atas kulit kepala pesakit dengan bantuan pembantu."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/exosome-therapy/procedure-03.jpg",
+      "caption": "Alat pegang tangan digunakan pada kulit kepala semasa sesi."
+    }
+  ],
+  "summary": "Pendekatan regeneratif yang digunakan bersama rawatan lain untuk masalah kulit dan kulit kepala.",
+  "leadAnswer": "Rawatan exosome mengenakan persediaan exosome, iaitu vesikel kecil yang berasal daripada sel dan membawa molekul isyarat, pada kulit atau kulit kepala. Di Kaiteki, ia biasanya digunakan bersama prosedur lain seperti microneedling, laser atau PRP, bukan secara sendirian. Asas buktinya masih berkembang, jadi doktor menilai sama ada ia sesuai dengan pelan anda.",
+  "related": [
+    "skin-booster"
+  ],
+  "reviewedBy": "dr-william-yap",
+  "lastReviewed": "2026-06-05",
+  "seoTitle": "Rawatan Exosome di Malaysia | Rawatan Regeneratif | Kaiteki",
+  "seoDescription": "Rawatan exosome di Malaysia, pendekatan regeneratif untuk masalah kulit dan kulit kepala. Tempah konsultasi percuma; doktor Kaiteki akan menilai kesesuaiannya.",
+  "typicalSessions": "Satu kursus pendek, mengikut individu",
+  "facts": [
+    {
+      "value": "Digunakan bersama rawatan lain",
+      "label": "Microneedling, laser atau PRP, dirancang bersama"
+    },
+    {
+      "value": "Kulit atau kulit kepala",
+      "label": "Dua kawasan yang dirawat dengannya"
+    },
+    {
+      "value": "Penilaian dahulu",
+      "label": "Lawatan pertama anda ialah konsultasi doktor, bukan rawatan"
+    }
+  ],
+  "routes": [
+    {
+      "title": "Pemulihan kulit selepas rawatan jerawat berasaskan tenaga",
+      "body": "Pendekatan regeneratif yang digunakan selepas rawatan berasaskan tenaga untuk menyokong pemulihan kulit. Ia ditawarkan sebagai rawatan tambahan, bukan rawatan jerawat yang berdiri sendiri.",
+      "links": [
+        {
+          "href": "/concerns/acne",
+          "label": "Baca tentang jerawat"
+        }
+      ]
+    },
+    {
+      "title": "Kulit kepala, bersama rawatan perubatan rambut gugur",
+      "body": "Persediaan regeneratif yang dikenakan pada kulit kepala untuk menyokong persekitaran folikel, ditawarkan sebagai tambahan kepada pengurusan perubatan. Ia bukan pengganti untuk mencari puncanya.",
+      "links": [
+        {
+          "href": "/concerns/hair-loss",
+          "label": "Baca tentang rambut gugur"
+        }
+      ]
+    }
+  ],
+  "routesNote": "Rawatan exosome digunakan bersama rawatan lain, bukan sebagai pengganti.",
+  "ctaMid": {
+    "heading": "Tertanya-tanya sama ada rawatan exosome menambah apa-apa pada pelan anda?",
+    "body": "Ia rawatan tambahan, jadi sama ada ia sesuai dimasukkan dalam pelan anda bergantung pada rawatan yang akan diiringinya."
+  },
+  "avoidIf": [
+    {
+      "lead": "Hamil atau menyusukan anak.",
+      "body": "Rawatan ditangguhkan."
+    },
+    {
+      "lead": "Keadaan kulit atau kulit kepala tertentu",
+      "body": "di kawasan yang akan dirawat."
+    },
+    {
+      "lead": "Sesetengah keadaan perubatan atau ubat,",
+      "body": "yang akan diteliti bersama anda oleh doktor semasa konsultasi."
+    }
+  ],
+  "bringToConsult": "Bawa sejarah perubatan, penjagaan kulit dan rambut anda yang lengkap, termasuk sebarang keadaan kulit atau kulit kepala dan ubat yang diambil.",
+  "sessionSteps": [
+    {
+      "title": "Konsultasi dan penilaian",
+      "body": "Lawatan pertama anda ialah konsultasi, bukan rawatan. Doktor menilai kulit atau kulit kepala anda dan menentukan sama ada rawatan exosome sesuai, dan apa yang akan digabungkan dengannya."
+    },
+    {
+      "title": "Prosedur yang diiringi",
+      "body": "Sesi dibina di sekitar prosedur yang diiringi oleh rawatan exosome: microneedling, laser atau PRP (plasma kaya platelet)."
+    },
+    {
+      "title": "Penggunaan",
+      "body": "Persediaan exosome dikenakan pada kulit atau kulit kepala yang telah dirawat."
+    },
+    {
+      "title": "Selepas itu",
+      "body": "Anda diberi panduan penjagaan selepas rawatan untuk prosedur gabungan itu. Satu kursus pendek yang dijarakkan beberapa minggu adalah biasa, dirancang untuk anda, bukan dijual sebagai pakej."
+    }
+  ],
+  "afterSession": {
+    "intro": "Downtime kebanyakannya ditentukan oleh prosedur yang digabungkan dengan rawatan exosome.",
+    "bands": [
+      {
+        "title": "Beberapa hari pertama",
+        "body": "Apabila digabungkan dengan microneedling atau laser, kemerahan sementara, bengkak ringan atau kulit sensitif boleh berlaku, dan biasanya reda dalam beberapa hari berikutnya."
+      },
+      {
+        "title": "Sepanjang kursus",
+        "body": "Sebarang perubahan berlaku secara beransur-ansur sepanjang kursus, bukan pada hari yang sama."
+      }
+    ],
+    "aftercare": "Penjagaan kulit yang lembut dan perlindungan matahari biasanya dinasihatkan selepas itu. Doktor anda akan memberi panduan penjagaan yang khusus untuk rawatan anda."
+  },
+  "risks": {
+    "intro": "Doktor menerangkan perkara ini, serta risiko prosedur yang diiringinya, sebelum anda membuat keputusan.",
+    "common": "Kemerahan, bengkak, kulit sensitif atau kerengsaan di kawasan yang dirawat.",
+    "lessCommon": "Mana-mana prosedur yang digabungkan dengannya, seperti microneedling, laser atau PRP, mempunyai pertimbangannya sendiri, yang diterangkan bersama.",
+    "cannotDo": [
+      "Ia bukan rawatan jerawat yang berdiri sendiri, hanya rawatan tambahan selepas rawatan berasaskan tenaga.",
+      "Ia bukan rawatan rambut gugur dengan sendirinya, dan bukan pengganti untuk mencari puncanya.",
+      "Ia belum mantap seperti prosedur yang diiringinya. Asas buktinya masih berkembang."
+    ],
+    "disclose": "Beritahu doktor jika anda hamil, mungkin hamil atau sedang menyusu."
+  },
+  "costFactors": {
+    "intro": "Kaiteki tidak memaparkan harga dalam talian: rawatan exosome dikenakan harga sebagai sebahagian daripada gabungan rawatan, jadi kosnya hanya wujud selepas gabungan itu diputuskan. Faktor yang mempengaruhinya:",
+    "factors": [
+      "Masalah yang dirawat.",
+      "Kawasan yang dirawat, kulit atau kulit kepala.",
+      "Sebarang rawatan yang digabungkan dengannya.",
+      "Bilangan sesi, dan tindak balas individu anda sepanjang kursus."
+    ]
+  },
+  "relatedReasons": {
+    "skin-booster": "Rawatan suntikan penghidratan yang digunakan untuk menyokong kualiti dan kelembapan kulit, dengan peranannya sendiri yang sudah mantap, bukan sebagai rawatan tambahan."
+  },
+  "sections": [
+    {
+      "heading": "Apa itu rawatan exosome?",
+      "body": [
+        "Exosome ialah vesikel kecil yang berasal daripada sel dan membawa molekul isyarat seperti protein, lipid dan RNA. Dalam badan, ia bertindak sebagai pembawa mesej antara sel, dan peranan isyarat inilah sebabnya ia sedang dikaji dalam estetik regeneratif.",
+        "Rawatan exosome mengenakan persediaan vesikel ini pada kulit atau kulit kepala, biasanya sebagai sebahagian daripada pelan rawatan yang lebih luas, bukan secara sendirian. Ia bidang yang baru muncul dalam perubatan estetik."
+      ]
+    },
+    {
+      "heading": "Kenapa rawatan exosome digunakan selepas prosedur lain?",
+      "body": [
+        "Tujuan rawatan exosome ialah menyokong proses pembaikan dan pembaharuan kulit atau kulit kepala itu sendiri dengan menghantar molekul isyarat berasaskan exosome ke kawasan yang dirawat. Kerana exosome bersaiz kecil, ia lazimnya dikenakan selepas prosedur yang membuka saluran pada kulit untuk seketika, seperti microneedling atau laser tertentu.",
+        "Itulah sebabnya peranannya, dan downtime-nya, bergantung pada prosedur yang dibuat sebelumnya."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Rawatan exosome selamat ke?",
+      "a": "Kesan biasa ialah kemerahan sementara, bengkak, kulit sensitif atau kerengsaan, dan prosedur yang diiringinya mempunyai risikonya sendiri. Ia rawatan yang baru muncul dengan asas bukti yang masih berkembang, jadi doktor menerangkan apa yang diketahui dan apa yang belum diketahui sebelum anda membuat keputusan."
+    },
+    {
+      "q": "Boleh ke rawatan exosome digabungkan dengan rawatan lain?",
+      "a": "Boleh, dan biasanya memang begitu: ia lazimnya dikenakan selepas microneedling atau laser tertentu, yang membuka saluran pada kulit untuk seketika, atau bersama PRP."
+    },
+    {
+      "q": "Siapa yang sesuai untuk rawatan exosome?",
+      "a": "Mereka yang sudah merancang microneedling, laser atau PRP untuk pemulihan kulit atau masalah kulit kepala boleh dinilai untuknya. Ia ditangguhkan semasa hamil dan menyusu, dan keadaan kulit atau kulit kepala tertentu boleh menjadikannya tidak sesuai."
+    },
+    {
+      "q": "Bila saya mungkin nampak perubahan?",
+      "a": "Sebarang perubahan berlaku secara beransur-ansur dalam beberapa minggu selepas rawatan, bukan serta-merta, dan tahapnya berbeza antara individu."
+    }
+  ]
+}

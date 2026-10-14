@@ -1,0 +1,235 @@
+{
+  "slug": "ultherapy",
+  "durationDowntime": "60-90 minit · Tiada downtime",
+  "name": "Ultherapy",
+  "category": "Lifting & Tightening",
+  "image": "https://cdn.kaiteki.my/treatments/ultherapy/hero-2.jpg",
+  "procedureImages": [
+    {
+      "src": "https://cdn.kaiteki.my/treatments/ultherapy/procedure-01.jpg",
+      "caption": "Pengamal menggerakkan transduser ultrabunyi di sepanjang rahang dan leher pesakit."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/ultherapy/procedure-02.jpg",
+      "caption": "Pengamal meletakkan transduser ultrabunyi di bawah rahang pesakit."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/ultherapy/procedure-03.jpg",
+      "caption": "Doktor meletakkan transduser ultrabunyi pada pipi pesakit, di sebelah skrin imej."
+    }
+  ],
+  "device": "Ultherapy",
+  "summary": "Platform ultrabunyi berfokus yang digunakan untuk tegang dan angkat muka serta leher.",
+  "leadAnswer": "Ultherapy ialah rawatan ultrabunyi berfokus yang digunakan untuk tegang dan angkat kening, dagu dan leher tanpa pembedahan. Ia memanaskan kedalaman tertentu di bawah kulit, dan imej ultrabunyi terbina dalamnya membolehkan doktor melihat lapisan itu sebelum menghantar tenaga. Itulah perbezaan praktikalnya berbanding mesin ultrabunyi berfokus yang lain. Doktor mengesahkan kesesuaian anda terlebih dahulu.",
+  "related": [
+    "hifu",
+    "fotona-4d"
+  ],
+  "seoTitle": "Ultherapy Malaysia | Tegang Muka Tanpa Pembedahan | Kaiteki",
+  "seoDescription": "Rawatan Ultherapy di Malaysia dengan ultrabunyi berfokus untuk tegang muka tanpa pembedahan. Tempah konsultasi percuma di Kaiteki untuk menilai kesesuaian anda.",
+  "typicalSessions": "Selalunya 1 sesi, dengan semakan",
+  "facts": [
+    {
+      "value": "Imej pada skrin",
+      "label": "Doktor melihat lapisan tisu sebelum setiap garisan"
+    },
+    {
+      "value": "60–90 minit",
+      "label": "Tempoh biasa sesi muka dan leher"
+    },
+    {
+      "value": "Penilaian dahulu",
+      "label": "Lawatan pertama anda ialah konsultasi doktor, bukan rawatan"
+    }
+  ],
+  "routes": [
+    {
+      "title": "Tegang muka apabila kekenduran menjadi masalah utama",
+      "body": "Kekenduran ringan hingga sederhana di bahagian bawah muka dan leher, apabila ketepatan pada kedalaman penting atau struktur muka menjadikan rawatan tanpa imej kurang sesuai.",
+      "links": [
+        {
+          "href": "/concerns/face-lifting",
+          "label": "Baca tentang tegang & angkat muka"
+        },
+        {
+          "href": "/concerns/aging",
+          "label": "Penuaan kulit"
+        }
+      ]
+    },
+    {
+      "title": "Tegang kulit yang melembutkan lipatan di atasnya",
+      "body": "Kekenduran di sekitar kening dan bahagian bawah muka.",
+      "links": [
+        {
+          "href": "/concerns/fine-lines-wrinkles",
+          "label": "Garis Halus & Kedutan"
+        }
+      ]
+    }
+  ],
+  "routesNote": "Ultherapy hanya merawat kekenduran. Volum yang hilang, garis akibat pergerakan otot dan kualiti kulit memerlukan rawatan lain, jadi pelan rawatan selalunya menggabungkannya.",
+  "variantModule": {
+    "heading": "Ultherapy atau HIFU: apa bezanya apabila ada imej ultrabunyi",
+    "intro": "Kedua-duanya memfokuskan ultrabunyi pada satu kedalaman di bawah kulit. Bezanya ialah sama ada doktor melihat lapisan tisu pada skrin sebelum merawat, atau menetapkan kedalaman berdasarkan penilaian sahaja.",
+    "items": [
+      {
+        "eyebrow": "Dipandu imej · Merz Aesthetics",
+        "title": "Ultherapy",
+        "body": "Transduser yang sama yang menghantar tenaga turut menghasilkan imej ultrabunyi secara langsung bagi tisu di bawahnya, yang dipanggil pengeluar sebagai imej DeepSEE. Transduser merawat pada tiga kedalaman, kira-kira 1.5 mm, 3.0 mm dan 4.5 mm pada paras fasia SMAS, dipilih bagi setiap kawasan selepas struktur di bawah kulit dilihat.",
+        "href": "/technology/ultherapy-system",
+        "hrefLabel": "Tentang Sistem Ultherapy"
+      },
+      {
+        "eyebrow": "Kedalaman ditetapkan oleh kartrij · Ultracel Q, Lifthera",
+        "title": "HIFU",
+        "body": "Tenaga dihantar pada kedalaman yang ditetapkan oleh kartrij yang dipilih dan penilaian doktor, tanpa paparan pada skrin.",
+        "href": "/treatments/hifu",
+        "hrefLabel": "Tentang HIFU"
+      }
+    ],
+    "note": "Mesin HIFU tanpa imej masih digunakan secara meluas dan wajar; yang mana sesuai untuk anda bergantung pada struktur muka anda."
+  },
+  "ctaMid": {
+    "heading": "Tak pasti sama ada Ultherapy atau HIFU sesuai untuk muka anda?",
+    "body": "Doktor boleh memberitahu sama ada kekenduran anda jenis yang dirawat oleh ultrabunyi berfokus, dan mesin mana yang sesuai dengan struktur muka anda."
+  },
+  "avoidIf": [
+    {
+      "lead": "Hamil atau menyusukan anak.",
+      "body": "Rawatan ditangguhkan."
+    },
+    {
+      "lead": "Jangkitan kulit aktif, luka terbuka atau jerawat meradang yang ketara",
+      "body": "di kawasan rawatan."
+    },
+    {
+      "lead": "Implan, peranti logam atau elektronik seperti perentak jantung, atau filler atau benang yang baru dipasang",
+      "body": "yang terletak di laluan yang dirancang."
+    },
+    {
+      "lead": "Kecenderungan parut keloid, masalah pembekuan darah, ubat-ubatan tertentu dan sesetengah penyakit autoimun,",
+      "body": "yang dinilai sebelum rawatan."
+    }
+  ],
+  "bringToConsult": "Bawa sejarah perubatan anda, senarai ubat-ubatan, dan butiran sebarang implan serta rawatan estetik yang pernah dibuat.",
+  "sessionSteps": [
+    {
+      "title": "Konsultasi dan penilaian",
+      "body": "Lawatan pertama anda ialah konsultasi, bukan rawatan. Doktor menilai di mana kekenduran anda berlaku dan sama ada Ultherapy sesuai."
+    },
+    {
+      "title": "Pemetaan dengan imej",
+      "body": "Kulit dibersihkan, zon rawatan ditanda pada grid dan gel pengantara disapu. Doktor kemudian menggunakan imej ultrabunyi untuk memetakan lapisan tisu dan memilih kedalaman serta tetapan bagi setiap kawasan."
+    },
+    {
+      "title": "Garisan rawatan",
+      "body": "Doktor mengesahkan lapisan pada skrin dan menghantar satu garisan denyutan berfokus, diulang di seluruh kawasan yang dipetakan. Kebanyakan orang merasa hangat dan mencucuk, lebih kuat di kawasan bertulang; langkah untuk mengurangkan rasa tidak selesa boleh dibincangkan lebih awal."
+    },
+    {
+      "title": "Selepas itu",
+      "body": "Anda pulang dengan nasihat penjagaan selepas rawatan dan, jika berkaitan, tarikh semakan."
+    }
+  ],
+  "afterSession": {
+    "intro": "Bagi kebanyakan orang, Ultherapy lazimnya rawatan yang boleh terus pulang selepas selesai, dengan downtime yang sangat sedikit atau tiada. Biasanya tiada luka dan tiada balutan.",
+    "bands": [
+      {
+        "title": "Sejurus selepas rawatan",
+        "body": "Sesetengah orang perasan kemerahan ringan atau sedikit bengkak di kawasan yang dirawat untuk tempoh yang singkat. Kebanyakan orang kembali kepada aktiviti biasa pada hari yang sama."
+      },
+      {
+        "title": "Beberapa hari hingga beberapa minggu",
+        "body": "Rasa sengal apabila disentuh, atau rasa tegang atau berketul sementara di bawah kulit, boleh berlaku dan biasanya reda dalam beberapa hari hingga beberapa minggu."
+      },
+      {
+        "title": "Beberapa minggu hingga beberapa bulan",
+        "body": "Sebarang perubahan datang daripada tindak balas kolagen yang beransur-ansur, jadi ia berlaku dalam beberapa minggu hingga beberapa bulan, bukan pada hari rawatan, dan berbeza bagi setiap orang."
+      }
+    ],
+    "aftercare": "Pelindung matahari, dan jangan guna apa-apa yang kasar pada kulit yang dirawat selama beberapa hari. Hubungi klinik tentang apa-apa yang tidak reda."
+  },
+  "risks": {
+    "intro": "Kesan sampingan diterangkan sebelum apa-apa ditempah.",
+    "common": "Kemerahan, bengkak, rasa sengal, dan kebas atau rasa kesemutan di kawasan kecil yang dirawat, yang biasanya reda dengan masa.",
+    "lessCommon": "Otot lemah atau deria rasa berubah buat sementara di tempat saraf berada dekat dengan lapisan rawatan. Melihat lapisan melalui imej sebelum setiap garisan bertujuan mengurangkan kemungkinan ini.",
+    "pigmentNote": "Ultrabunyi mikro-berfokus diserap oleh tisu, bukan oleh melanin, jadi ia lazimnya digunakan untuk semua warna kulit, termasuk kulit Asia yang lebih gelap, tanpa profil risiko berkaitan pigmen seperti sesetengah laser.",
+    "cannotDo": [
+      "Ia bukan pembedahan face lift dan tidak memotong atau membuang kulit. Jika pembedahan lebih sesuai untuk masalah anda, doktor akan memberitahu anda.",
+      "Ia lazimnya dipertimbangkan untuk kekenduran ringan hingga sederhana, bukan muka yang sudah sangat kendur.",
+      "Ia merawat kekenduran dan bentuk muka yang kurang jelas, bukan tekstur permukaan atau pigmen.",
+      "Ia tidak kekal. Kulit terus menua, jadi pelan rawatan selalunya termasuk semakan dan penjagaan susulan berkala."
+    ],
+    "disclose": "Beritahu apa-apa dalam senarai yang perlu dielakkan di atas, walaupun nampak kecil. Implan, filler dan benang di kawasan rawatan paling kerap terlupa."
+  },
+  "costFactors": {
+    "intro": "Kaiteki tidak memberikan harga dalam talian; pelan ditetapkan semasa konsultasi. Faktor yang mempengaruhi kos:",
+    "factors": [
+      "Bilangan garisan tenaga yang dihantar.",
+      "Kawasan yang dirawat: kening dan garis rahang, seluruh muka dan leher, atau bahagian dada atas.",
+      "Bilangan sesi dan sebarang pelan penjagaan susulan.",
+      "Sama ada Ultherapy digabungkan dengan rawatan lain sebagai sebahagian daripada pelan yang lebih luas."
+    ]
+  },
+  "comparisons": [
+    {
+      "name": "Ultherapy",
+      "bestFor": "Kekenduran apabila doktor melihat lapisan tisu pada skrin sebelum merawat",
+      "downtime": "Tiada bagi kebanyakan orang"
+    },
+    {
+      "name": "HIFU",
+      "bestFor": "Kekenduran peringkat awal hingga sederhana di rahang, bahagian bawah muka dan leher",
+      "downtime": "Tiada bagi kebanyakan orang"
+    },
+    {
+      "name": "Dermal Filler",
+      "bestFor": "Garis dan lekuk akibat kehilangan volum atau struktur",
+      "downtime": "1-3 hari"
+    },
+    {
+      "name": "Toksin Botulinum",
+      "bestFor": "Garis akibat pergerakan otot",
+      "downtime": "Tiada"
+    }
+  ],
+  "relatedReasons": {
+    "hifu": "Prinsip ultrabunyi berfokus yang sama pada mesin tanpa imej pada skrin, dengan kedalaman ditetapkan oleh kartrij dan penilaian.",
+    "fotona-4d": "Protokol laser pelbagai mod yang lazimnya dipertimbangkan untuk masalah ketegangan dan kualiti kulit, mekanisme yang berbeza daripada ultrabunyi berfokus."
+  },
+  "sections": [
+    {
+      "heading": "Apa itu Ultherapy?",
+      "body": [
+        "Ultherapy ialah rawatan tanpa pembedahan yang dilakukan oleh doktor, yang memfokuskan tenaga ultrabunyi pada kedalaman tertentu di bawah kulit. Di Kaiteki, ia salah satu daripada dua pilihan ultrabunyi berfokus untuk tegang dan angkat muka serta leher; satu lagi ialah HIFU, dan perbandingan di bawah menerangkan bezanya."
+      ]
+    },
+    {
+      "heading": "Bagaimana Ultherapy melihat lapisan yang dirawatnya?",
+      "body": [
+        "Transduser yang menghantar tenaga turut menghasilkan imej ultrabunyi secara langsung, jadi doktor dapat melihat lapisan tisu, termasuk lapisan sokongan yang lebih dalam yang dipanggil SMAS, sebelum memilih kedalaman dan tetapan bagi setiap kawasan. SMAS ialah lapisan yang dirawat dalam pembedahan face lift; Ultherapy mencapainya tanpa hirisan.",
+        "Pada kedalaman yang dipilih, tenaga menghasilkan titik haba yang terkawal, yang bertujuan mencetuskan tindak balas pembaharuan kolagen kulit itu sendiri secara beransur-ansur."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Apa beza Ultherapy dan HIFU?",
+      "a": "Kedua-duanya menggunakan ultrabunyi berfokus untuk sampai ke lapisan kulit yang lebih dalam. Ultherapy ada imej ultrabunyi, jadi doktor melihat lapisan tisu pada skrin sebelum menghantar tenaga; mesin HIFU lazimnya tiada langkah ini."
+    },
+    {
+      "q": "Adakah Ultherapy sejenis face lift?",
+      "a": "Tidak. Ia tidak memotong atau membuang kulit. Ia sampai ke sebahagian tisu dalam yang sama dirawat dalam face lift, tetapi dengan ultrabunyi berfokus, dan tahap perubahannya tidak setanding dengan pembedahan."
+    },
+    {
+      "q": "Bila boleh nampak hasil Ultherapy?",
+      "a": "Sebarang perubahan berlaku secara beransur-ansur dalam beberapa minggu hingga beberapa bulan, kerana ia bergantung pada tindak balas kolagen anda sendiri, dan berbeza bagi setiap orang. Rawatan ini tidak memberikan kesan angkat yang ketara pada hari yang sama."
+    },
+    {
+      "q": "Ultherapy ada downtime ke?",
+      "a": "Sangat sedikit atau tiada bagi kebanyakan orang. Kemerahan ringan, bengkak atau rasa sengal boleh berlaku untuk tempoh yang singkat selepas itu."
+    }
+  ],
+  "reviewedBy": "dr-jamie-gan",
+  "lastReviewed": "2026-06-18"
+}

@@ -1,0 +1,221 @@
+{
+  "slug": "fotona-4d",
+  "durationDowntime": "30-60 minit · Tiada downtime",
+  "name": "Laser Fotona",
+  "category": "Lasers",
+  "image": "https://cdn.kaiteki.my/treatments/fotona-4d/hero.jpg",
+  "procedureImages": [
+    {
+      "src": "https://cdn.kaiteki.my/treatments/fotona-4d/procedure-01.jpg",
+      "caption": "Doktor memegang alat laser di atas pipi pesakit semasa sesi."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/fotona-4d/procedure-02.jpg",
+      "caption": "Doktor menstabilkan muka pesakit sambil menggerakkan alat laser."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/fotona-4d/procedure-03.jpg",
+      "caption": "Pengamal merawat bahagian dalam mulut dengan alat laser."
+    }
+  ],
+  "device": "Fotona",
+  "summary": "Platform laser Nd:YAG/Er:YAG pelbagai guna, yang paling kerap digunakan di Kaiteki untuk protokol tegang muka Fotona 4D.",
+  "leadAnswer": "Laser Fotona ialah platform Fotona SP Dynamis / TimeWalker di Kaiteki, iaitu sistem laser Nd:YAG dan Er:YAG dengan beberapa mod aplikasi. Protokol muka utamanya, Fotona 4D, menggabungkan empat mod, dengan satu daripadanya dilakukan dari dalam mulut, untuk masalah ketegangan muka dan kualiti kulit. Doktor yang menentukan mod mana, jika ada, yang sesuai untuk anda.",
+  "related": [
+    "hifu",
+    "ultherapy"
+  ],
+  "reviewedBy": "dr-jen-meng",
+  "lastReviewed": "2026-06-15",
+  "seoTitle": "Laser Fotona 4D Tegang Kulit Muka di Malaysia | Kaiteki",
+  "seoDescription": "Fotona 4D ialah laser pelbagai mod untuk tegang kulit muka dan kualiti kulit, dinilai doktor di klinik Kaiteki Malaysia. Tempah konsultasi percuma di WhatsApp.",
+  "typicalSessions": "Satu kursus, kemudian rawatan penyelenggaraan",
+  "facts": [
+    {
+      "value": "Dua laser, empat mod",
+      "label": "Nd:YAG dan Er:YAG, digabungkan dalam satu protokol"
+    },
+    {
+      "value": "45–60 minit",
+      "label": "Satu protokol penuh, bergantung pada berapa banyak mod yang digunakan"
+    },
+    {
+      "value": "Penilaian dahulu",
+      "label": "Lawatan pertama anda ialah konsultasi doktor, bukan rawatan"
+    }
+  ],
+  "routes": [
+    {
+      "title": "Kekenduran muka yang dirawat dari dalam mulut ke luar",
+      "body": "Kekenduran peringkat awal hingga sederhana di bahagian bawah muka, apabila ketegangan dan kualiti kulit kedua-duanya terlibat, bukan sekadar muka yang turun.",
+      "links": [
+        {
+          "href": "/concerns/face-lifting",
+          "label": "Baca tentang tegang & angkat muka"
+        }
+      ]
+    },
+    {
+      "title": "Ketegangan dan kualiti permukaan kulit dalam kursus yang sama",
+      "body": "Kulit yang kurang tegang bersama tekstur permukaan dan garis halus, dirawat dalam kursus yang sama.",
+      "links": [
+        {
+          "href": "/concerns/aging",
+          "label": "Penuaan kulit"
+        }
+      ]
+    }
+  ],
+  "routesNote": "Kulit yang sangat kendur biasanya bukan masalah untuk laser, dan doktor akan memberitahu anda.",
+  "variantModule": {
+    "heading": "Empat mod, dan fungsi setiap satu",
+    "intro": "Fotona 4D menjalankan empat mod laser mengikut urutan yang ditetapkan, setiap satu bertindak pada lapisan kulit yang berbeza.",
+    "items": [
+      {
+        "eyebrow": "Er:YAG · dalam mulut",
+        "title": "SMOOTH",
+        "body": "Dilakukan dari dalam mulut, pada tisu di belakang pipi dan di sekitar kawasan lipatan nasolabial."
+      },
+      {
+        "eyebrow": "Nd:YAG · fraksional",
+        "title": "FRAC3",
+        "body": "Mod fraksional yang sampai ke lapisan kulit yang lebih dalam untuk menyasarkan ketidaksempurnaan seperti pigmentasi dan garis."
+      },
+      {
+        "eyebrow": "Nd:YAG · pemanasan pukal",
+        "title": "PIANO",
+        "body": "Mod pemanasan pukal yang memanaskan tisu lebih dalam secara beransur-ansur dan terkawal, di bawah permukaan kulit."
+      },
+      {
+        "eyebrow": "Er:YAG · permukaan",
+        "title": "Peel permukaan (Superficial peel)",
+        "body": "Laluan resurfacing ringan di atas permukaan kulit untuk melicinkan tekstur.",
+        "href": "/technology/fotona-sp-dynamis",
+        "hrefLabel": "Tentang platform Fotona"
+      }
+    ],
+    "note": "Keempat-empat mod dijalankan pada platform Fotona SP Dynamis / TimeWalker. Tidak semua pelan menggunakan setiap mod."
+  },
+  "ctaMid": {
+    "heading": "Tak pasti sama ada laser atau tenaga lain sesuai untuk kekenduran anda?",
+    "body": "Fotona 4D, ultrabunyi terfokus dan radiofrekuensi (RF) sampai ke tisu dengan cara berbeza. Doktor boleh membandingkannya untuk muka anda."
+  },
+  "avoidIf": [
+    {
+      "lead": "Hamil atau menyusukan anak.",
+      "body": "Rawatan ditangguhkan."
+    },
+    {
+      "lead": "Jangkitan aktif, herpes bibir (cold sore) atau kulit yang meradang",
+      "body": "di kawasan yang akan dirawat."
+    },
+    {
+      "lead": "Kulit yang baru terbakar matahari atau baru digelapkan (tan).",
+      "body": ""
+    },
+    {
+      "lead": "Sejarah parut keloid.",
+      "body": ""
+    },
+    {
+      "lead": "Ubat yang menyebabkan kepekaan cahaya,",
+      "body": "termasuk isotretinoin oral."
+    },
+    {
+      "lead": "Masalah mulut atau gigi, rawatan gigi baru-baru ini atau alat dalam mulut,",
+      "body": "kerana satu langkah dilakukan dari dalam mulut."
+    }
+  ],
+  "bringToConsult": "Bawa sejarah perubatan, pergigian dan ubat-ubatan anda.",
+  "sessionSteps": [
+    {
+      "title": "Konsultasi dan penilaian",
+      "body": "Lawatan pertama anda ialah konsultasi, bukan rawatan. Doktor menentukan mod mana yang sesuai untuk muka anda, dan mengikut urutan apa."
+    },
+    {
+      "title": "Persediaan",
+      "body": "Kulit dibersihkan dan makeup ditanggalkan, pelindung mata dipakaikan, dan anda diposisikan serta disediakan secara berasingan untuk langkah dalam mulut."
+    },
+    {
+      "title": "Protokol",
+      "body": "Mod-mod dijalankan mengikut urutan. Kebanyakan pesakit menggambarkan rasa hangat yang merebak, bukan sakit yang tajam, termasuk pada bahagian dalam pipi semasa langkah dalam mulut."
+    },
+    {
+      "title": "Selepas itu",
+      "body": "Anda pulang dengan nasihat penjagaan selepas rawatan. Sesi dalam satu kursus biasanya dijarakkan beberapa minggu."
+    }
+  ],
+  "afterSession": {
+    "intro": "Downtime biasanya terhad, kerana protokol ini bukan ablatif.",
+    "bands": [
+      {
+        "title": "Hari yang sama",
+        "body": "Kemerahan, rasa panas dan rasa sedikit tegang selama beberapa jam hingga sehari adalah biasa, dan kulit mungkin kelihatan sedikit merah jambu selepas laluan permukaan. Kebanyakan orang kembali ke aktiviti biasa pada hari yang sama."
+      },
+      {
+        "title": "Beberapa hari pertama",
+        "body": "Kekalkan penjagaan kulit yang lembut dan lembapkan kulit dengan baik, dan hentikan retinoid serta asid sehingga doktor membenarkan."
+      }
+    ],
+    "aftercare": "Gunakan pelindung matahari spektrum luas setiap hari, kerana kulit boleh menjadi lebih sensitif terhadap cahaya matahari selepas rawatan laser, dan elakkan haba seperti sauna dan hot yoga untuk tempoh yang ditetapkan oleh doktor."
+  },
+  "risks": {
+    "intro": "Kesan sampingan diterangkan sebelum apa-apa rawatan ditempah.",
+    "common": "Kemerahan, rasa panas, bengkak ringan, kulit kering atau mengelupas buat sementara, dan bahagian dalam pipi atau bibir yang sensitif buat sementara selepas langkah dalam mulut.",
+    "lessCommon": "Herpes bibir boleh muncul semula pada orang yang mudah mendapatnya. Melecur, melepuh, perubahan pigmentasi dan parut jarang berlaku.",
+    "pigmentNote": "Fotona menyatakan bahawa panjang gelombang Nd:YAG kurang diserap oleh melanin, jadi ia boleh digunakan pada pelbagai jenis kulit, dan laluan permukaan Er:YAG dikekalkan ringan dalam protokol 4D. Jika kulit anda pernah berubah warna selepas haba, laser atau keradangan, anda tetap perlu memberitahu doktor sebelum rawatan.",
+    "cannotDo": [
+      "Ia ditujukan untuk kekenduran peringkat awal hingga sederhana, bukan kulit yang sangat kendur; dalam keadaan itu doktor mungkin memberitahu anda laser bukan pilihan yang sesuai.",
+      "Ia bukan sekali lawatan sahaja: kesannya bergantung pada pembentukan semula tisu secara beransur-ansur sepanjang satu kursus.",
+      "Ia bukan pengganti ultrabunyi terfokus atau radiofrekuensi; itu jenis tenaga yang berbeza dan sampai ke tisu dengan cara berbeza."
+    ],
+    "disclose": "Beritahu doktor tentang apa-apa dalam senarai elak di atas, terutamanya jika anda mudah mendapat herpes bibir, kerana langkah dalam mulut boleh mencetuskannya semula."
+  },
+  "costFactors": {
+    "intro": "Kaiteki tidak menyiarkan harga dalam talian, kerana kos bergantung pada pelan yang dipersetujui semasa konsultasi. Perkara yang mempengaruhinya:",
+    "factors": [
+      "Berapa banyak daripada empat mod yang digunakan dalam pelan anda.",
+      "Berapa banyak kawasan yang dirawat.",
+      "Bilangan sesi dalam kursus, dan apa-apa rawatan penyelenggaraan.",
+      "Sama ada protokol ini digabungkan dengan rawatan lain dalam pelan anda."
+    ]
+  },
+  "relatedReasons": {
+    "hifu": "Ultrabunyi terfokus untuk kekenduran pada kedalaman yang dipilih, jenis tenaga yang berbeza daripada laser.",
+    "ultherapy": "Ultrabunyi terfokus dengan imej lapisan tisu pada skrin, jenis tenaga yang berbeza daripada laser."
+  },
+  "sections": [
+    {
+      "heading": "Apa itu laser Fotona?",
+      "body": [
+        "Platform Fotona SP Dynamis / TimeWalker menggabungkan dua laser, Nd:YAG dan Er:YAG, dan menjalankan beberapa aplikasi berbeza: NightLase (untuk masalah berkaitan dengkur), LipLase, SmoothEye, TightSculpting dan protokol muka Fotona 4D.",
+        "Fotona 4D ialah rawatan tanpa pembedahan. Ia dipanggil \"4D\" kerana ia dilakukan dalam empat langkah, merawat permukaan kulit dan juga tisu di dalam mulut, dan biasanya dipertimbangkan untuk masalah ketegangan muka dan kualiti kulit."
+      ]
+    },
+    {
+      "heading": "Kenapa Fotona 4D dilakukan dari dalam mulut?",
+      "body": [
+        "Dalam langkah yang Fotona namakan SmoothLiftin™, laser Er:YAG digunakan dalam mod SMOOTH® pada bahagian dalam pipi, merawat tisu di belakang pipi dan di sekitar kawasan lipatan nasolabial dari dalam, bukan melalui kulit luar. Fotona menggambarkan mod SMOOTH® sebagai rentetan pantas denyutan fluens rendah di dalam satu denyutan yang lebih panjang, yang menghasilkan pemanasan koagulatif yang lembut, bukan ablasi.",
+        "Langkah itu boleh dilakukan kerana platform ini mempunyai dua panjang gelombang: Fotona menggambarkan Nd:YAG sebagai sampai ke lapisan kulit yang paling dalam dan Er:YAG sebagai sesuai untuk permukaan, jadi dalam satu sesi rawatan boleh dibuat dari dalam mulut, jauh di dalam dermis dan di permukaan kulit."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Perlu berapa sesi Fotona 4D?",
+      "a": "Biasanya satu kursus beberapa sesi yang dijarakkan beberapa minggu, kemudian rawatan penyelenggaraan sekali-sekala. Bilangannya ditetapkan mengikut kulit dan masalah anda."
+    },
+    {
+      "q": "Fotona 4D sesuai ke untuk kulit gelap atau kulit Asia?",
+      "a": "Boleh sesuai. Panjang gelombang Nd:YAG kurang diserap oleh melanin, dan laluan permukaan dikekalkan ringan, jadi protokol ini digunakan pada pelbagai jenis kulit. Sejarah perubahan pigmen perlu dimaklumkan dahulu."
+    },
+    {
+      "q": "Adakah Fotona 4D melibatkan jarum atau suntikan?",
+      "a": "Tidak. Ia hanya menggunakan tenaga laser, pada permukaan kulit dan di dalam mulut."
+    },
+    {
+      "q": "Berapa kos Fotona 4D di Malaysia?",
+      "a": "Ia bergantung pada berapa banyak mod dan kawasan dalam pelan anda, jadi kos disahkan semasa konsultasi, bukan disiarkan dalam talian."
+    }
+  ]
+}

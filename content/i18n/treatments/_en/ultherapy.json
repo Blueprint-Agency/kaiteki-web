@@ -1,0 +1,235 @@
+{
+  "slug": "ultherapy",
+  "durationDowntime": "60-90 min · No downtime",
+  "name": "Ultherapy",
+  "category": "Lifting & Tightening",
+  "image": "https://cdn.kaiteki.my/treatments/ultherapy/hero-2.jpg",
+  "procedureImages": [
+    {
+      "src": "https://cdn.kaiteki.my/treatments/ultherapy/procedure-01.jpg",
+      "caption": "A practitioner moves the ultrasound transducer along the patient's jaw and neck."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/ultherapy/procedure-02.jpg",
+      "caption": "A practitioner positions the ultrasound transducer under the patient's jaw."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/ultherapy/procedure-03.jpg",
+      "caption": "A doctor applies the ultrasound transducer to the patient's cheek beside the imaging screen."
+    }
+  ],
+  "device": "Ultherapy",
+  "summary": "A focused-ultrasound platform used for lifting and tightening of the face and neck.",
+  "leadAnswer": "Ultherapy is a focused-ultrasound treatment used for non-surgical lifting and tightening of the brow, chin and neck. It heats set depths beneath the skin, and its built-in ultrasound imaging lets the doctor see those layers before delivering energy — the practical difference from other focused-ultrasound devices. A doctor confirms suitability first.",
+  "related": [
+    "hifu",
+    "fotona-4d"
+  ],
+  "seoTitle": "Ultherapy Malaysia | Non-Surgical Face Lifting | Kaiteki",
+  "seoDescription": "Ultherapy treatment in Malaysia using focused ultrasound for non-surgical lifting and tightening. Book a free consultation to assess suitability at Kaiteki.",
+  "typicalSessions": "Often 1, with a review",
+  "facts": [
+    {
+      "value": "On-screen imaging",
+      "label": "The doctor sees the tissue layers before each line"
+    },
+    {
+      "value": "60–90 minutes",
+      "label": "Typical face and neck session"
+    },
+    {
+      "value": "Assessment first",
+      "label": "Your first visit is a doctor consultation, not a treatment"
+    }
+  ],
+  "routes": [
+    {
+      "title": "Lifting where laxity leads the picture",
+      "body": "Mild to moderate laxity of the lower face and neck, where precision at depth matters or anatomy makes treating without imaging less appropriate.",
+      "links": [
+        {
+          "href": "/concerns/face-lifting",
+          "label": "Read about face lifting"
+        },
+        {
+          "href": "/concerns/aging",
+          "label": "Ageing skin"
+        }
+      ]
+    },
+    {
+      "title": "Lifting that softens the fold above it",
+      "body": "Laxity around the brow and lower face.",
+      "links": [
+        {
+          "href": "/concerns/fine-lines-wrinkles",
+          "label": "Fine lines & wrinkles"
+        }
+      ]
+    }
+  ],
+  "routesNote": "Ultherapy treats laxity only. Lost volume, movement lines and skin quality need other treatments, so plans often combine them.",
+  "variantModule": {
+    "heading": "Ultherapy or HIFU: what the imaging changes",
+    "intro": "Both focus ultrasound at a depth beneath the skin. The difference is whether the doctor sees the tissue layers on screen before treating, or sets the depth from assessment alone.",
+    "items": [
+      {
+        "eyebrow": "Imaging-guided · Merz Aesthetics",
+        "title": "Ultherapy",
+        "body": "The same transducer that delivers energy also produces a live ultrasound image of the tissue beneath it, which the manufacturer calls DeepSEE imaging. Transducers treat at three depths, approximately 1.5 mm, 3.0 mm and 4.5 mm at the level of the SMAS fascia, chosen per area after viewing the anatomy.",
+        "href": "/technology/ultherapy-system",
+        "hrefLabel": "About the Ultherapy System"
+      },
+      {
+        "eyebrow": "Depth set by cartridge · Ultracel Q, Lifthera",
+        "title": "HIFU",
+        "body": "Energy is delivered at depths set by the chosen cartridge and the doctor's assessment, without an on-screen view.",
+        "href": "/treatments/hifu",
+        "hrefLabel": "About HIFU"
+      }
+    ],
+    "note": "Imaging-free HIFU devices remain widely and appropriately used; which suits you depends on your anatomy."
+  },
+  "ctaMid": {
+    "heading": "Not sure whether Ultherapy or HIFU fits your face?",
+    "body": "A doctor can tell you whether your laxity is the kind focused ultrasound addresses, and which device suits your anatomy."
+  },
+  "avoidIf": [
+    {
+      "lead": "Pregnancy or breastfeeding.",
+      "body": "Treatment is deferred."
+    },
+    {
+      "lead": "Active skin infection, open lesions or significant inflammatory acne",
+      "body": "in the treatment area."
+    },
+    {
+      "lead": "Implants, metallic or electronic devices such as pacemakers, or recently placed fillers or threads",
+      "body": "lying in the intended path."
+    },
+    {
+      "lead": "Keloid tendency, bleeding disorders, certain medications and some autoimmune conditions,",
+      "body": "which are reviewed before treatment."
+    }
+  ],
+  "bringToConsult": "Bring your medical history, a list of medications, and details of any implants and previous aesthetic treatments.",
+  "sessionSteps": [
+    {
+      "title": "Consultation and assessment",
+      "body": "Your first visit is a consultation, not a treatment. The doctor assesses where your laxity sits and whether Ultherapy is appropriate."
+    },
+    {
+      "title": "Mapping with imaging",
+      "body": "The skin is cleansed, treatment zones are marked on a grid and coupling gel is applied. The doctor then uses the ultrasound imaging to map the tissue layers and choose the depth and settings for each area."
+    },
+    {
+      "title": "The treatment lines",
+      "body": "The doctor confirms the plane on screen and delivers a line of focused pulses, repeated across the mapped area. Most people feel warmth and prickling, stronger over bony areas; comfort measures can be discussed beforehand."
+    },
+    {
+      "title": "Afterwards",
+      "body": "You leave with aftercare advice and, where relevant, a review date."
+    }
+  ],
+  "afterSession": {
+    "intro": "Ultherapy is generally a walk-in, walk-out treatment with little to no set downtime for most people. There is usually no wound and no dressing.",
+    "bands": [
+      {
+        "title": "Straight afterwards",
+        "body": "Some people notice mild redness or slight swelling in the treated area for a short period. Most return to normal activities the same day."
+      },
+      {
+        "title": "Days to a few weeks",
+        "body": "Tenderness to touch, or a temporary firm or lumpy feeling under the skin, can occur and generally settles over days to a few weeks."
+      },
+      {
+        "title": "Weeks to months",
+        "body": "Any change comes from a gradual collagen response, so it develops over weeks to months rather than on the day, and varies between people."
+      }
+    ],
+    "aftercare": "Sun protection, and nothing abrasive on the treated skin for a few days. Contact the clinic about anything that does not settle."
+  },
+  "risks": {
+    "intro": "Side effects are explained before anything is booked.",
+    "common": "Redness, swelling, tenderness, and small areas of numbness or tingling in the treated area, which typically settle over time.",
+    "lessCommon": "Temporary muscle weakness or altered sensation where a nerve runs close to the treatment plane. Imaging the layers before each line is intended to make this less likely.",
+    "pigmentNote": "Micro-focused ultrasound is absorbed by tissue rather than by melanin, so it is generally used across the full range of skin tones, including deeper Asian skin, without the pigment-related risk profile of some lasers.",
+    "cannotDo": [
+      "It is not a facelift and does not cut or remove skin. Where surgery would suit your concern better, your doctor will say so.",
+      "It is generally considered for mild to moderate laxity rather than very advanced sagging.",
+      "It addresses laxity and loss of definition, not surface texture or pigment.",
+      "It is not permanent. Skin continues to age, so plans often include a review and periodic maintenance."
+    ],
+    "disclose": "Mention anything on the avoid list above, even if it seems minor — implants, fillers and threads in the treatment area are the ones most often forgotten."
+  },
+  "costFactors": {
+    "intro": "Kaiteki does not quote prices online; the plan is set at consultation. What moves the cost:",
+    "factors": [
+      "The number of lines of energy delivered.",
+      "The areas treated — brow and jawline, full face and neck, or décolletage.",
+      "The number of sessions and any maintenance plan.",
+      "Whether Ultherapy is combined with other treatments as part of a wider plan."
+    ]
+  },
+  "comparisons": [
+    {
+      "name": "Ultherapy",
+      "bestFor": "Laxity where the doctor views the tissue layers on screen before treating",
+      "downtime": "None for most people"
+    },
+    {
+      "name": "HIFU",
+      "bestFor": "Early to moderate laxity along the jaw, lower face and neck",
+      "downtime": "None for most people"
+    },
+    {
+      "name": "Dermal fillers",
+      "bestFor": "Lines and hollows caused by lost volume or structure",
+      "downtime": "1-3 days"
+    },
+    {
+      "name": "Botulinum toxin",
+      "bestFor": "Lines caused by muscle movement",
+      "downtime": "None"
+    }
+  ],
+  "relatedReasons": {
+    "hifu": "The same focused-ultrasound principle on devices without on-screen imaging, with the depth set by cartridge and assessment.",
+    "fotona-4d": "A multi-mode laser protocol generally considered for firmness and skin-quality concerns, a different mechanism from focused ultrasound."
+  },
+  "sections": [
+    {
+      "heading": "What is Ultherapy?",
+      "body": [
+        "Ultherapy is a non-surgical, doctor-delivered treatment that focuses ultrasound energy at set depths beneath the skin. At Kaiteki it is one of two focused-ultrasound options for lifting and tightening the face and neck; the other is HIFU, and the comparison below sets out how they differ."
+      ]
+    },
+    {
+      "heading": "How does Ultherapy see the layer it treats?",
+      "body": [
+        "The transducer that delivers the energy also produces a live ultrasound image, so the doctor sees the tissue layers, including the deeper support layer called the SMAS, before choosing the depth and settings for each area. The SMAS is the layer a surgical facelift addresses; Ultherapy reaches it without incisions.",
+        "At the chosen depth, the energy creates controlled points of heat, which is intended to prompt the skin's own gradual collagen-renewal response."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How is Ultherapy different from HIFU?",
+      "a": "Both use focused ultrasound to reach deeper layers of the skin. Ultherapy includes ultrasound imaging, so the doctor views the tissue layers on screen before delivering energy; HIFU devices generally do not include this step."
+    },
+    {
+      "q": "Is Ultherapy a facelift?",
+      "a": "No. It does not cut or remove skin. It reaches some of the same deeper tissue a facelift addresses, but with focused ultrasound, and the degree of change is not comparable to surgery."
+    },
+    {
+      "q": "When will I see results?",
+      "a": "Any change develops gradually over weeks to months, because it depends on your own collagen response, and it varies between people. A visible lift on the day is not what this treatment does."
+    },
+    {
+      "q": "Is there any downtime?",
+      "a": "Little to none for most people. Mild redness, swelling or tenderness can last a short time afterwards."
+    }
+  ],
+  "reviewedBy": "dr-jamie-gan",
+  "lastReviewed": "2026-06-18"
+}

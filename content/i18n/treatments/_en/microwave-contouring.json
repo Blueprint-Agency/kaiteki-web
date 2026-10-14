@@ -1,0 +1,103 @@
+{
+  "slug": "microwave-contouring",
+  "durationDowntime": "20-30 min · No downtime",
+  "name": "Microwave Contouring",
+  "category": "Body & Slimming",
+  "image": "https://cdn.kaiteki.my/treatments/microwave-contouring/hero.jpg",
+  "procedureImages": [
+    {
+      "src": "https://cdn.kaiteki.my/treatments/microwave-contouring/procedure-01.jpg",
+      "caption": "A practitioner moves the handpiece across the patient's abdomen."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/microwave-contouring/procedure-02.jpg",
+      "caption": "A gloved practitioner applies the handpiece to the upper arm area."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/microwave-contouring/procedure-03.jpg",
+      "caption": "A practitioner works under the jaw with the handpiece."
+    }
+  ],
+  "summary": "Microwave-based technology used for body-contouring, cellulite and firmness concerns.",
+  "leadAnswer": "Microwave Contouring uses microwave-based energy, delivered at Kaiteki through the Onda platform, to address localised fat, cellulite appearance and skin firmness. Which areas are treatable, and whether any of yours are, is settled by examining the area rather than by naming the concern.",
+  "related": [
+    "fat-freezing",
+    "muscle-stimulation"
+  ],
+  "reviewedBy": "dr-jacqueline-tan",
+  "lastReviewed": "2026-07-13",
+  "seoTitle": "Onda Microwave Contouring Malaysia | Kaiteki",
+  "seoDescription": "Onda microwave contouring in Malaysia for localised fat, cellulite appearance and firmness. Book a free consultation with a Kaiteki doctor to check suitability.",
+  "areas": [
+    "Forehead and brow",
+    "Cheeks",
+    "Nasolabial folds",
+    "Jowls",
+    "Jawline",
+    "Under the chin",
+    "Upper arms",
+    "Back and bra line",
+    "Flanks and waist",
+    "Thighs",
+    "Knees"
+  ],
+  "sections": [
+    {
+      "heading": "What is Microwave Contouring?",
+      "body": [
+        "Microwave Contouring is a category of non-invasive body- and face-contouring technology that uses microwave-based energy to act on tissue beneath the skin's surface. At Kaiteki this is delivered using the Onda platform, which the manufacturer refers to as Coolwaves® technology.",
+        "It is used on localised fat on areas such as the abdomen, flanks, thighs and arms, on the dimpled appearance of cellulite, and on skin firmness, including the face and jawline. It is not a weight-loss treatment: it treats localised areas, not overall body weight."
+      ]
+    },
+    {
+      "heading": "How can microwave energy reach fat without burning the skin?",
+      "body": [
+        "Microwave energy is delivered beneath the skin's surface while built-in cooling helps keep the surface protected during treatment. The energy is intended to act on the targeted tissue, for example localised fat cells or the fibrous bands associated with cellulite, and may also prompt a gradual collagen-remodelling response supporting firmness.",
+        "The doctor selects the applicator and settings for the area and your skin."
+      ]
+    },
+    {
+      "heading": "Who should not have Onda microwave contouring?",
+      "body": [
+        "It may not be appropriate during pregnancy, with implants or medical devices in the treatment area, or with some skin or health conditions. Mention every device or implant at consultation."
+      ]
+    },
+    {
+      "heading": "What does an Onda session feel like, and is there downtime?",
+      "body": [
+        "After the area is examined, a handpiece is moved over it to deliver the energy while the surface is cooled. Most people describe a warming sensation.",
+        "Downtime is usually limited. Temporary warmth, redness or mild tenderness over the area typically settles, and most people return to usual activities."
+      ]
+    },
+    {
+      "heading": "What are the risks of microwave contouring?",
+      "body": [
+        "Temporary effects include redness, swelling, warmth or tenderness in the treated area. The energy is thermal, so the risk that matters is overheating one spot. It is managed by keeping the handpiece moving and by treating within what the doctor judges the tissue can take."
+      ]
+    },
+    {
+      "heading": "Why do face and body areas cost differently?",
+      "body": [
+        "Sessions and cost depend on the areas treated and how you respond. A facial area and a body area take very different amounts of time on the handpiece, so cost follows the areas agreed at consultation."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Microwave Contouring a weight-loss treatment?",
+      "a": "No. It treats localised fat, cellulite appearance and skin firmness, not overall body weight, and it is not a substitute for weight management."
+    },
+    {
+      "q": "What device is used at Kaiteki?",
+      "a": "The Onda platform, which its manufacturer calls Coolwaves® technology."
+    },
+    {
+      "q": "Is it painful, and is there downtime?",
+      "a": "Built-in cooling protects the surface, and most people describe a warming sensation. Downtime is usually limited."
+    },
+    {
+      "q": "How many sessions will I need?",
+      "a": "A course of several sessions spaced a few weeks apart is common. A body area generally takes more sessions than a facial one, simply because there is more of it."
+    }
+  ]
+}

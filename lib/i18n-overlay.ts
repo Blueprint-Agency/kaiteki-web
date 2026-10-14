@@ -37,7 +37,7 @@ export function copyStrings(x: unknown): [string, string][] {
   const walk = (v: unknown, path: string, key: string, depth: number) => {
     const fixed = FIXED_KEYS.has(key) || (depth === 1 && FIXED_ROOT_KEYS.has(key));
     if (typeof v === "string") {
-      if (!fixed) out.push([path, v]);
+      if (!fixed && v.trim() !== "") out.push([path, v]);
     } else if (Array.isArray(v)) {
       v.forEach((it, i) => walk(it, `${path}[${i}]`, key, depth + 1));
     } else if (v && typeof v === "object") {
@@ -60,7 +60,8 @@ export function overlay<T>(en: T, tr: unknown): OverlayResult<T> {
   function walk(e: unknown, t: unknown, path: string, key: string, depth: number): unknown {
     const fixed = FIXED_KEYS.has(key) || (depth === 1 && FIXED_ROOT_KEYS.has(key));
     if (typeof e === "string") {
-      if (fixed) return e;
+      // An empty English string is no copy at all (e.g. a lead with no body).
+      if (fixed || e.trim() === "") return e;
       if (typeof t === "string" && t.trim() !== "") return t;
       missing.push(path);
       return e;

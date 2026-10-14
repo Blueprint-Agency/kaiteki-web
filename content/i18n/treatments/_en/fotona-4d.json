@@ -1,0 +1,221 @@
+{
+  "slug": "fotona-4d",
+  "durationDowntime": "30-60 min · No downtime",
+  "name": "Fotona Laser",
+  "category": "Lasers",
+  "image": "https://cdn.kaiteki.my/treatments/fotona-4d/hero.jpg",
+  "procedureImages": [
+    {
+      "src": "https://cdn.kaiteki.my/treatments/fotona-4d/procedure-01.jpg",
+      "caption": "A doctor holds the laser handpiece above the patient's cheek during a session."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/fotona-4d/procedure-02.jpg",
+      "caption": "A doctor steadies the patient's face while guiding the laser handpiece."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/fotona-4d/procedure-03.jpg",
+      "caption": "A practitioner works inside the mouth area with a laser handpiece."
+    }
+  ],
+  "device": "Fotona",
+  "summary": "A multi-application Nd:YAG/Er:YAG laser platform, most often used at Kaiteki for its Fotona 4D facial-firming protocol.",
+  "leadAnswer": "Fotona Laser is Kaiteki's Fotona SP Dynamis / TimeWalker platform, an Nd:YAG and Er:YAG laser system with several application modes. Its main facial protocol, Fotona 4D, combines four modes — one delivered from inside the mouth — for facial firmness and skin-quality concerns. A doctor decides which modes, if any, suit you.",
+  "related": [
+    "hifu",
+    "ultherapy"
+  ],
+  "reviewedBy": "dr-jen-meng",
+  "lastReviewed": "2026-06-15",
+  "seoTitle": "Fotona 4D Laser Skin Tightening Malaysia | Kaiteki",
+  "seoDescription": "Fotona 4D is a multi-mode laser used for facial firming and skin quality, doctor-assessed at Kaiteki clinics in Malaysia. Book a free consultation on WhatsApp.",
+  "typicalSessions": "A course, then maintenance",
+  "facts": [
+    {
+      "value": "Two lasers, four modes",
+      "label": "Nd:YAG and Er:YAG, combined in one protocol"
+    },
+    {
+      "value": "45–60 minutes",
+      "label": "A full protocol, depending on how many modes are included"
+    },
+    {
+      "value": "Assessment first",
+      "label": "Your first visit is a doctor consultation, not a treatment"
+    }
+  ],
+  "routes": [
+    {
+      "title": "Laxity treated from inside the mouth outwards",
+      "body": "Early to moderate laxity of the lower face, where firmness and skin quality are both part of the picture rather than descent alone.",
+      "links": [
+        {
+          "href": "/concerns/face-lifting",
+          "label": "Read about face lifting"
+        }
+      ]
+    },
+    {
+      "title": "Firmness and surface quality in the same course",
+      "body": "Loss of firmness alongside surface texture and fine lines, addressed in the same course.",
+      "links": [
+        {
+          "href": "/concerns/aging",
+          "label": "Ageing skin"
+        }
+      ]
+    }
+  ],
+  "routesNote": "Significant sagging is usually not a laser question, and a doctor will say so.",
+  "variantModule": {
+    "heading": "The four modes, and what each one does",
+    "intro": "Fotona 4D runs four laser modes in a set sequence, each working at a different level of the skin.",
+    "items": [
+      {
+        "eyebrow": "Er:YAG · intraoral",
+        "title": "SMOOTH",
+        "body": "Delivered from inside the mouth, to the tissue behind the cheeks and around the nasolabial region."
+      },
+      {
+        "eyebrow": "Nd:YAG · fractional",
+        "title": "FRAC3",
+        "body": "A fractional mode that reaches deeper layers of the skin to target imperfections such as pigmentation and lines."
+      },
+      {
+        "eyebrow": "Nd:YAG · bulk heating",
+        "title": "PIANO",
+        "body": "A bulk-heating mode that warms deeper tissue in a gradual, controlled way, working below the skin surface."
+      },
+      {
+        "eyebrow": "Er:YAG · surface",
+        "title": "Superficial peel",
+        "body": "A light resurfacing pass over the skin surface intended to smooth texture.",
+        "href": "/technology/fotona-sp-dynamis",
+        "hrefLabel": "About the Fotona platform"
+      }
+    ],
+    "note": "All four run on the Fotona SP Dynamis / TimeWalker platform. Not every plan includes every mode."
+  },
+  "ctaMid": {
+    "heading": "Not sure whether a laser or another energy suits your laxity?",
+    "body": "Fotona 4D, focused ultrasound and radiofrequency reach tissue in different ways. A doctor can compare them for your face."
+  },
+  "avoidIf": [
+    {
+      "lead": "Pregnancy or breastfeeding.",
+      "body": "Treatment is deferred."
+    },
+    {
+      "lead": "Active infection, cold sores or inflamed skin",
+      "body": "in the area to be treated."
+    },
+    {
+      "lead": "Recent sunburn or tanning.",
+      "body": ""
+    },
+    {
+      "lead": "A history of keloid scarring.",
+      "body": ""
+    },
+    {
+      "lead": "Photosensitising medication,",
+      "body": "including oral isotretinoin."
+    },
+    {
+      "lead": "Oral or dental conditions, recent dental work or oral appliances,",
+      "body": "because one step is delivered from inside the mouth."
+    }
+  ],
+  "bringToConsult": "Bring your medical, dental and medication history.",
+  "sessionSteps": [
+    {
+      "title": "Consultation and assessment",
+      "body": "Your first visit is a consultation, not a treatment. The doctor decides which modes suit your face, and in what order."
+    },
+    {
+      "title": "Preparation",
+      "body": "The skin is cleansed and make-up removed, eye protection is fitted, and you are positioned and prepared separately for the intraoral step."
+    },
+    {
+      "title": "The protocol",
+      "body": "The modes are performed in sequence. Most patients describe spreading warmth rather than sharp pain, including against the inner cheek during the intraoral step."
+    },
+    {
+      "title": "Afterwards",
+      "body": "You leave with aftercare advice. Sessions in a course are usually spaced a few weeks apart."
+    }
+  ],
+  "afterSession": {
+    "intro": "Downtime is usually limited, because the protocol is non-ablative.",
+    "bands": [
+      {
+        "title": "The same day",
+        "body": "Flushing, warmth and a mild tight feeling for a few hours to a day are common, and the skin can look slightly pink after the surface pass. Most people return to normal activities the same day."
+      },
+      {
+        "title": "The first few days",
+        "body": "Keep skincare gentle and well moisturised, and pause retinoids and acids until your doctor says otherwise."
+      }
+    ],
+    "aftercare": "Use daily broad-spectrum sunscreen, as skin can be more sensitive to sunlight after laser treatment, and avoid heat such as saunas and hot yoga for the period your doctor specifies."
+  },
+  "risks": {
+    "intro": "Side effects are explained before anything is booked.",
+    "common": "Redness, warmth, mild swelling, transient dryness or flaking, and temporary sensitivity of the inner cheek or lips after the intraoral step.",
+    "lessCommon": "Cold sores can be reactivated in people prone to them. Burns, blistering, changes in pigmentation and scarring are uncommon.",
+    "pigmentNote": "Fotona notes that the Nd:YAG wavelength's low absorption in melanin allows use across skin types, and the Er:YAG surface pass is kept light in a 4D protocol. A history of pigment change after heat, lasers or inflammation still needs raising before treatment.",
+    "cannotDo": [
+      "It is aimed at early to moderate laxity rather than significant sagging, where a doctor may tell you a laser is not the right tool.",
+      "It is not a single visit: the effect relies on gradual tissue remodelling across a course.",
+      "It is not a substitute for focused ultrasound or radiofrequency; they are different energy types reaching tissue differently."
+    ],
+    "disclose": "Tell your doctor about anything on the avoid list above, and especially if you are prone to cold sores — the intraoral step can reactivate them."
+  },
+  "costFactors": {
+    "intro": "Kaiteki does not quote prices online, because cost depends on the plan agreed at consultation. What moves it:",
+    "factors": [
+      "How many of the four modes your plan uses.",
+      "How many areas are covered.",
+      "The number of sessions in the course, and any maintenance.",
+      "Whether the protocol is combined with other treatments in your plan."
+    ]
+  },
+  "relatedReasons": {
+    "hifu": "Focused ultrasound for laxity at a chosen depth, a different energy type from laser.",
+    "ultherapy": "Focused ultrasound with on-screen imaging of the tissue layers, a different energy type from laser."
+  },
+  "sections": [
+    {
+      "heading": "What is Fotona Laser?",
+      "body": [
+        "The Fotona SP Dynamis / TimeWalker platform combines two lasers, Nd:YAG and Er:YAG, and runs several distinct applications: NightLase (for snoring-related concerns), LipLase, SmoothEye, TightSculpting and the facial protocol Fotona 4D.",
+        "Fotona 4D is non-surgical. It is called \"4D\" because it works in four steps, treating both the skin surface and the tissue inside the mouth, and is generally considered for facial firmness and skin-quality concerns."
+      ]
+    },
+    {
+      "heading": "Why does Fotona 4D work from inside the mouth?",
+      "body": [
+        "In the step Fotona calls SmoothLiftin™, the Er:YAG laser is applied in SMOOTH® mode to the inner cheek, working on the tissue behind the cheeks and around the nasolabial region from within rather than through the outer skin. Fotona describes SMOOTH® mode as a rapid sequence of low-fluence pulses inside a longer pulse, producing gentle coagulative heating rather than ablation.",
+        "That step is possible because the platform carries two wavelengths: Fotona describes Nd:YAG as reaching the deepest layers of the skin and Er:YAG as suited to the surface, so one appointment can work intraorally, deep in the dermis and on the surface."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many Fotona 4D sessions will I need?",
+      "a": "Usually a course of several sessions spaced a few weeks apart, then occasional maintenance. The number is set for your skin and concern."
+    },
+    {
+      "q": "Is Fotona 4D suitable for darker or Asian skin?",
+      "a": "It can be. The Nd:YAG wavelength has low absorption in melanin, and the surface pass is kept light, so the protocol is used across skin types. A history of pigment change should be raised first."
+    },
+    {
+      "q": "Does Fotona 4D involve needles or injections?",
+      "a": "No. It uses laser energy only, on the skin surface and inside the mouth."
+    },
+    {
+      "q": "How much does Fotona 4D cost?",
+      "a": "It depends on how many modes and areas your plan includes, so it is confirmed at consultation rather than quoted online."
+    }
+  ]
+}

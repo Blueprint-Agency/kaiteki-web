@@ -1,0 +1,208 @@
+{
+  "slug": "fat-freezing",
+  "durationDowntime": "35-60 min per area · No downtime",
+  "name": "Fat Freezing",
+  "category": "Body & Slimming",
+  "image": "https://cdn.kaiteki.my/treatments/fat-freezing/hero.jpg",
+  "procedureImages": [
+    {
+      "src": "https://cdn.kaiteki.my/treatments/fat-freezing/procedure-01.jpg",
+      "caption": "A cooling applicator sits on the patient's flank, connected to the treatment machine."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/fat-freezing/procedure-02.jpg",
+      "caption": "The patient reclines while a cooling applicator works on the abdomen."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/fat-freezing/procedure-03.jpg",
+      "caption": "A patient relaxes with their phone while the cooling applicator works."
+    }
+  ],
+  "summary": "The general term for cryolipolysis for localised fat concerns.",
+  "leadAnswer": "Fat freezing (cryolipolysis) uses controlled cooling to target localised fat in specific areas, and is not a weight-loss treatment. Whether a given area can be treated at all depends on whether an applicator can draw and hold it, which is something a doctor checks in person.",
+  "related": [
+    "microwave-contouring"
+  ],
+  "reviewedBy": "dr-jessie-lim",
+  "lastReviewed": "2026-06-10",
+  "seoTitle": "Fat Freezing Malaysia | Cryolipolysis Treatment | Kaiteki",
+  "seoDescription": "Fat freezing (cryolipolysis) in Malaysia for localised fat pockets, not weight loss. Book a free consultation with a Kaiteki doctor to check suitability.",
+  "typicalSessions": "Individual, per area",
+  "facts": [
+    {
+      "value": "Controlled cooling",
+      "label": "Applied to a pocket of fat an applicator can draw and hold"
+    },
+    {
+      "value": "35–60 minutes",
+      "label": "Typical applicator cycle, per area"
+    },
+    {
+      "value": "Assessment first",
+      "label": "Your first visit is a doctor consultation, not a treatment"
+    }
+  ],
+  "routes": [
+    {
+      "title": "A pinchable pocket that diet has not shifted",
+      "body": "Controlled cooling applied to a defined pocket of fat that can be pinched and drawn into an applicator.",
+      "links": [
+        {
+          "href": "/concerns/body-slimming",
+          "label": "Read about body slimming"
+        }
+      ]
+    },
+    {
+      "title": "A defined pocket of fat under the chin",
+      "body": "Controlled cooling applied to a localised fat pocket under the chin, relevant only where the fullness is genuinely fat.",
+      "links": [
+        {
+          "href": "/concerns/face-contouring",
+          "label": "Face contouring"
+        }
+      ]
+    }
+  ],
+  "routesNote": "It is intended for people at or near a stable weight with specific pockets of fat, not generalised weight to lose.",
+  "variantModule": {
+    "heading": "Cooltech or CoolSculpting: which device, and why",
+    "intro": "Both are cryolipolysis devices working on the same principle. They differ in applicator design, and the doctor chooses the device and applicator for your area.",
+    "items": [
+      {
+        "eyebrow": "360° cooling · Cocoon Medical",
+        "title": "Cooltech",
+        "body": "The manufacturer describes 360° cooling around the drawn-in tissue rather than from one contact plate, and more than one applicator can run at once, so two areas or both flanks may be treated in one appointment.",
+        "href": "/technology/cooltech",
+        "hrefLabel": "About Cooltech"
+      },
+      {
+        "eyebrow": "Cryolipolysis · CoolSculpting",
+        "title": "CoolSculpting",
+        "body": "An applicator draws the target area against a cooling plate, with each cycle typically running around 35 to 60 minutes.",
+        "href": "/technology/coolsculpting",
+        "hrefLabel": "About CoolSculpting"
+      }
+    ]
+  },
+  "ctaMid": {
+    "heading": "Not sure whether your area is one an applicator can hold?",
+    "body": "A doctor can check in person, with a pinch test, whether the area is fat an applicator can treat."
+  },
+  "avoidIf": [
+    {
+      "lead": "Pregnancy or breastfeeding.",
+      "body": "Treatment is deferred."
+    },
+    {
+      "lead": "Cold-related conditions",
+      "body": "such as cryoglobulinaemia, cold urticaria or paroxysmal cold haemoglobinuria."
+    },
+    {
+      "lead": "A hernia",
+      "body": "in or near the treatment area."
+    },
+    {
+      "lead": "Broken or infected skin",
+      "body": "over the area to be treated."
+    },
+    {
+      "lead": "Certain circulatory, nerve or liver conditions,",
+      "body": "which your doctor goes through with you."
+    }
+  ],
+  "bringToConsult": "Bring your medical history, medications, any implants or devices, and details of previous body-contouring procedures.",
+  "sessionSteps": [
+    {
+      "title": "Consultation and assessment",
+      "body": "Your first visit is a consultation, not a treatment. The doctor checks whether the fat in the area can be drawn into an applicator."
+    },
+    {
+      "title": "Preparation",
+      "body": "The treatment area is marked, and a protective gel pad and applicator are positioned over the pocket of fat."
+    },
+    {
+      "title": "The cooling cycle",
+      "body": "The area is cooled for a set period. There is an initial period of intense cold and a firm pulling sensation from the suction, which commonly eases as the area becomes numb."
+    },
+    {
+      "title": "Afterwards",
+      "body": "The applicator is removed and the area is massaged."
+    }
+  ],
+  "afterSession": {
+    "intro": "Downtime is usually limited, and most people return to everyday activities after a session.",
+    "bands": [
+      {
+        "title": "Straight afterwards",
+        "body": "The area often looks red and feels firm, cold or oddly numb, and this typically settles over the following hours to days."
+      },
+      {
+        "title": "The first weeks",
+        "body": "Temporary tenderness, swelling, tingling or a dull ache in the treated area can persist for a few days to a couple of weeks, and some people find loose clothing or a compression garment more comfortable during that period."
+      },
+      {
+        "title": "Weeks to months",
+        "body": "Any change is gradual, because the body clears the treated cells over the following weeks rather than at the appointment, so it is typically assessed a couple of months later rather than immediately."
+      }
+    ],
+    "aftercare": "Keep to a stable weight with your usual diet and activity."
+  },
+  "risks": {
+    "intro": "Cryolipolysis carries risks, which the doctor explains before anything is booked.",
+    "common": "Redness, swelling, bruising, firmness, numbness, tingling, itching or cramping in the treated area, and altered skin sensation that may take some weeks to normalise.",
+    "lessCommon": "Lingering pain in the treated area, and paradoxical adipose hyperplasia, in which the treated fat pocket firms and enlarges rather than reduces. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor.",
+    "pigmentNote": "It acts on fat below the skin, not on pigment, so skin tone matters less than it does with lasers. The thickness and distribution of fat in the area matter more.",
+    "cannotDo": [
+      "It is not a weight-loss treatment, not a treatment for obesity, and not a substitute for diet, exercise or medical weight management.",
+      "Not every pocket of fat is one an applicator can draw and hold.",
+      "It does not stop remaining fat cells enlarging with weight gain, which is why a stable weight matters."
+    ],
+    "disclose": "Tell your doctor about anything in the list under who should postpone or avoid it, and about any implant, device or medication."
+  },
+  "costFactors": {
+    "intro": "Kaiteki does not quote prices online. Cost is quoted per applicator cycle once the doctor has seen which areas can actually be treated. What moves it:",
+    "factors": [
+      "The areas being addressed.",
+      "The size of the fat pocket, and how many applicator placements it needs to cover.",
+      "The number of cycles each area requires, and whether a further session is planned after review."
+    ]
+  },
+  "relatedReasons": {
+    "microwave-contouring": "A microwave-based approach for localised fat, cellulite appearance and firmness, where cooling is not the method."
+  },
+  "sections": [
+    {
+      "heading": "What is fat freezing?",
+      "body": [
+        "Fat freezing is the everyday name for cryolipolysis, a non-surgical approach that uses controlled cooling to target pockets of fat in specific areas of the body. \"Fat freezing\" describes the method rather than any single machine, and several devices work on the same cryolipolysis principle.",
+        "It is intended for localised, stubborn fat in defined areas rather than overall weight reduction."
+      ]
+    },
+    {
+      "heading": "Why does cooling affect fat and not the skin around it?",
+      "body": [
+        "Cryolipolysis is based on the idea that fat cells are more sensitive to cold than the surrounding skin, nerves and muscle. During a session, an applicator cools a defined area to a controlled low temperature for a set period.",
+        "The aim is to affect fat cells within the treated pocket while limiting the effect on nearby tissue. The body then clears the affected cells gradually over the following weeks."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is fat freezing a weight-loss treatment?",
+      "a": "No. It targets localised pockets of fat in specific areas, not overall body weight, and is intended for people at or near a stable weight."
+    },
+    {
+      "q": "Does fat freezing hurt?",
+      "a": "Most people feel intense cold and a firm pulling from the suction at the start, which usually eases as the area goes numb."
+    },
+    {
+      "q": "How many sessions will I need?",
+      "a": "It depends on the area, the amount of localised fat and how you respond, which is reviewed a couple of months after each session."
+    },
+    {
+      "q": "When might I notice a change?",
+      "a": "Any change is gradual, because the body clears the treated cells over several weeks, so it is usually assessed a couple of months after the session."
+    }
+  ]
+}

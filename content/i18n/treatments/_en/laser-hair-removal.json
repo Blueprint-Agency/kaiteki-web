@@ -1,0 +1,158 @@
+{
+  "slug": "laser-hair-removal",
+  "durationDowntime": "15-45 min · No downtime",
+  "name": "Laser Hair Removal",
+  "category": "Hair Removal",
+  "image": "https://cdn.kaiteki.my/treatments/laser-hair-removal/hero.jpg",
+  "procedureImages": [
+    {
+      "src": "https://cdn.kaiteki.my/treatments/laser-hair-removal/procedure-01.jpg",
+      "caption": "A practitioner glides the laser handpiece along the patient's forearm."
+    }
+  ],
+  "summary": "IPL and radiofrequency technology used to reduce unwanted hair over a course of sessions.",
+  "leadAnswer": "Laser Hair Removal at Kaiteki uses the Alma platform, which combines IPL (intense pulsed light) with radiofrequency, to target hair follicles over a course of sessions. Hair colour, skin tone and the cause of the growth decide what a course can reasonably do, so suitability is assessed before any treatment.",
+  "related": [
+    "exosome-therapy"
+  ],
+  "reviewedBy": "dr-lucas-chew",
+  "lastReviewed": "2026-07-13",
+  "seoTitle": "Laser Hair Removal Malaysia | IPL & RF Treatment | Kaiteki",
+  "seoDescription": "Laser hair removal in Malaysia using IPL and radiofrequency over a course of sessions. Book a free consultation with a Kaiteki doctor to assess suitability.",
+  "typicalSessions": "A course, spaced with the growth cycle",
+  "facts": [
+    {
+      "value": "IPL and radiofrequency",
+      "label": "Two energies on the Alma platform"
+    },
+    {
+      "value": "15–45 minutes",
+      "label": "Typical session, depending on the area"
+    },
+    {
+      "value": "Assessment first",
+      "label": "Your first visit is a consultation, not a treatment"
+    }
+  ],
+  "ctaMid": {
+    "heading": "Not sure whether your hair and skin suit light-based removal?",
+    "body": "A doctor can tell you what a course can realistically do for your hair and skin before you commit."
+  },
+  "avoidIf": [
+    {
+      "lead": "Pregnancy.",
+      "body": "Treatment is deferred."
+    },
+    {
+      "lead": "Recently tanned or sunburnt skin.",
+      "body": ""
+    },
+    {
+      "lead": "Tattoos or permanent makeup",
+      "body": "in the area to be treated."
+    },
+    {
+      "lead": "Active infection, inflammation or open skin",
+      "body": "in the area."
+    },
+    {
+      "lead": "Light-sensitive conditions, keloid scarring, or photosensitising medication,",
+      "body": "which your clinician goes through with you."
+    }
+  ],
+  "bringToConsult": "Bring your medical and medication history, and say when you last waxed, plucked or threaded. Hormonal causes of excess hair may need investigating alongside treatment.",
+  "sessionSteps": [
+    {
+      "title": "Consultation and assessment",
+      "body": "Your first visit is a consultation, not a treatment. The treatment area, hair type and skin tone are assessed, and a test area may be considered first."
+    },
+    {
+      "title": "Before the session",
+      "body": "You will usually be asked to shave shortly beforehand rather than wax or pluck, because the hair above the skin should be short while the follicle below stays intact."
+    },
+    {
+      "title": "The treatment",
+      "body": "The area is cleansed and the cooled applicator is moved over it in repeated passes, building warmth gradually. Most people describe spreading warmth rather than the snap of a stamping device."
+    },
+    {
+      "title": "Afterwards",
+      "body": "Most people return to their day straight away. The next session is timed to the growth cycle."
+    }
+  ],
+  "afterSession": {
+    "intro": "Downtime is usually minimal.",
+    "bands": [
+      {
+        "title": "Straight afterwards",
+        "body": "Temporary redness, warmth or mild sensitivity in the treated area can occur and typically settles within a few hours to a day."
+      },
+      {
+        "title": "The following weeks",
+        "body": "Treated hairs may appear to grow out for a week or two before shedding."
+      },
+      {
+        "title": "Between sessions",
+        "body": "You can shave, but waxing, plucking, threading and depilatory creams are normally avoided because they remove the follicle contents the light needs to target."
+      }
+    ],
+    "aftercare": "Protect treated areas from the sun between sessions."
+  },
+  "risks": {
+    "intro": "Like any energy-based treatment, it carries risks, which are explained before a course is booked.",
+    "common": "Redness, swelling or changes in pigmentation.",
+    "lessCommon": "Blistering, burns, folliculitis and, rarely, paradoxical stimulation of fine hair in some areas. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained clinician.",
+    "pigmentNote": "Light-based hair removal generally works best where there is more contrast between hair and skin pigment. Alma describes its low-fluence, high-repetition delivery with a cooled applicator tip as usable on darker skin, but recently tanned skin is generally not treated.",
+    "cannotDo": [
+      "It is not permanent removal. It reduces hair over a course of sessions, and some regrowth or maintenance sessions may be needed over time.",
+      "One session cannot do it, because only follicles in their active growth phase respond to any one session.",
+      "Very light, grey or white hair contains little pigment for light to target on any platform."
+    ],
+    "disclose": "Tell your clinician about anything on the postpone-or-avoid list above, and about every medication you take."
+  },
+  "costFactors": {
+    "intro": "Courses are priced by area across a series, not per visit, and the series is set at consultation. What moves it:",
+    "factors": [
+      "The area treated.",
+      "Your hair type: colour, thickness and density.",
+      "How your hair responds across the course.",
+      "Whether maintenance sessions are needed afterwards."
+    ]
+  },
+  "relatedReasons": {
+    "exosome-therapy": "A regenerative preparation applied to the scalp alongside medical hair-loss treatment: for hair loss, not unwanted hair."
+  },
+  "sections": [
+    {
+      "heading": "What is Laser Hair Removal?",
+      "body": [
+        "Laser Hair Removal is a treatment intended to reduce unwanted hair by targeting the hair follicle with light or energy-based technology. At Kaiteki this is delivered using the Alma platform, which combines IPL (intense pulsed light) with radiofrequency energy.",
+        "It is generally considered for areas such as the underarms, legs, arms or face."
+      ]
+    },
+    {
+      "heading": "Why does hair removal need a course of sessions?",
+      "body": [
+        "Alma delivers IPL and radiofrequency together. The light is intended to be absorbed by pigment in the hair follicle, and the radiofrequency adds a second energy pathway to the follicle.",
+        "Follicles cycle through active and resting phases, and a session only affects those in an active growth phase at the time. A course spaced with that cycle is intended to reach more of them."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many sessions will I need?",
+      "a": "A course of several sessions spaced a few weeks apart is common, because one session only affects hairs in an active growth phase. The number depends on your hair type and the area."
+    },
+    {
+      "q": "Is Laser Hair Removal permanent?",
+      "a": "No. It reduces hair over a course of sessions, and some regrowth or maintenance sessions may be needed over time."
+    },
+    {
+      "q": "Is it suitable for all skin tones and hair colours?",
+      "a": "Not all. Light-based removal generally works best where there is more contrast between hair and skin pigment. Very light, grey or white hair has little pigment to target, and recently tanned skin is generally not treated."
+    },
+    {
+      "q": "Is there any downtime?",
+      "a": "Usually minimal. Temporary redness or warmth typically settles within a few hours to a day."
+    }
+  ]
+}

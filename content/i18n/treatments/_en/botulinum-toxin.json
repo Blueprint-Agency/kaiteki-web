@@ -1,0 +1,136 @@
+{
+  "slug": "botulinum-toxin",
+  "durationDowntime": "10-20 min · No downtime",
+  "name": "Botulinum Toxin",
+  "category": "Injectables",
+  "image": "https://cdn.kaiteki.my/treatments/botulinum-toxin/hero.jpg",
+  "typicalSessions": "1 per cycle",
+  "summary": "A doctor-administered prescription injectable used to relax targeted muscles or reduce sweat-gland activity.",
+  "leadAnswer": "Botulinum toxin is a prescription injectable that temporarily reduces the signal between nerves and the muscle or sweat gland it acts on. In aesthetic medicine it is used for expression lines, jaw and calf muscle bulk, and excessive sweating. It is a medicine, so a doctor must assess suitability before it can be prescribed or given.",
+  "areas": [
+    "Forehead",
+    "Frown lines",
+    "Crow's feet",
+    "Jawline",
+    "Underarms",
+    "Palms",
+    "Calves"
+  ],
+  "suitableFor": [
+    "Adults in general good health seeking assessment for dynamic expression lines",
+    "People bothered by excessive underarm, palm or sole sweating that has not responded to antiperspirants",
+    "People interested in assessment for jaw or calf muscle bulk",
+    "People comfortable with a treatment that wears off and needs repeating"
+  ],
+  "notSuitableFor": [
+    "Pregnancy or breastfeeding",
+    "Known neuromuscular conditions such as myasthenia gravis or Lambert-Eaton syndrome",
+    "Known allergy to botulinum toxin or any component of the preparation",
+    "Active skin infection or inflammation at the intended injection site",
+    "Certain medications, including some antibiotics and muscle relaxants: bring a full list"
+  ],
+  "comparisons": [
+    {
+      "name": "Botulinum toxin",
+      "bestFor": "Lines caused by muscle movement; sweating; muscle bulk",
+      "downtime": "None"
+    },
+    {
+      "name": "Dermal fillers",
+      "bestFor": "Lines and hollows caused by lost volume or structure",
+      "downtime": "1-3 days"
+    },
+    {
+      "name": "Skin booster",
+      "bestFor": "Fine lines linked to skin dryness and skin quality",
+      "downtime": "1-2 days"
+    },
+    {
+      "name": "HIFU / Ultherapy",
+      "bestFor": "Laxity and firmness rather than movement lines",
+      "downtime": "None to minimal"
+    }
+  ],
+  "preCare": [
+    "Tell your doctor about all medicines and supplements, especially blood thinners, and any neuromuscular condition",
+    "Avoid alcohol for around 24 hours beforehand to reduce bruising",
+    "Come with the treatment area clean and free of make-up where possible",
+    "Reschedule if you have an active infection, rash or cold sore in the area"
+  ],
+  "postCare": [
+    "Stay upright for about four hours and avoid pressing, rubbing or massaging the area",
+    "Skip strenuous exercise, saunas, steam and hot yoga for the rest of the day",
+    "Avoid facials, facial massage and lying face-down for around 24 hours",
+    "Small raised bumps at the injection points usually settle within an hour",
+    "Contact the clinic if you notice drooping, double vision, swallowing or breathing difficulty"
+  ],
+  "related": [
+    "dermal-fillers",
+    "skin-booster",
+    "hifu"
+  ],
+  "reviewedBy": "dr-jeremy-low",
+  "lastReviewed": "2026-07-24",
+  "seoTitle": "Botulinum Toxin Injections in Malaysia | Kaiteki",
+  "seoDescription": "Botulinum toxin is a prescription injectable used for expression lines, jaw or calf muscle bulk and excessive sweating. Doctor-assessed at Kaiteki Malaysia.",
+  "sections": [
+    {
+      "heading": "What is botulinum toxin?",
+      "body": [
+        "Botulinum toxin is a purified protein produced by the bacterium Clostridium botulinum. In very small, controlled doses it is used in medicine to temporarily reduce the activity of a specific muscle or gland. It has been used clinically for decades, originally in neurology and ophthalmology, and later in aesthetic medicine.",
+        "In Malaysia it is a prescription medicine: only a registered doctor can supply and administer it, after an in-person assessment.",
+        "Several brands of botulinum toxin type A are registered in Malaysia. \"Botox\" is one of them, though the name is often used for the treatment itself."
+      ]
+    },
+    {
+      "heading": "How does botulinum toxin relax a muscle or sweat gland?",
+      "body": [
+        "Muscles contract when a nerve releases a chemical messenger called acetylcholine at the junction between the nerve and the muscle. Botulinum toxin temporarily blocks that release, so the treated muscle contracts less strongly. The same mechanism applies to the nerves that switch on sweat glands, which is why it is also used for excessive sweating.",
+        "The effect is confined to the small area injected and is temporary: nerve signalling gradually returns and the muscle or gland resumes its usual activity, at a pace that varies between people. Certain medical uses, such as chronic migraine or muscle spasm, are assessed separately."
+      ]
+    },
+    {
+      "heading": "What happens at a botulinum toxin appointment?",
+      "body": [
+        "It starts with a consultation. The doctor watches the area at rest and in movement, explains what is and is not achievable, and goes through the risks. Only then is a dose decided. Dosing is individual, not set from a price list.",
+        "The area is cleansed and the doctor gives a series of small injections with a fine needle at planned points, usually over ten to twenty minutes. Most people describe brief stinging, and numbing or cooling can be used. Small bumps, redness or bruising, particularly around the eyes, usually settle quickly. Any change develops over the following days, and a review appointment checks it before anything further is decided."
+      ]
+    },
+    {
+      "heading": "What are the side effects of botulinum toxin?",
+      "body": [
+        "Commonly reported temporary effects include tenderness, redness or small bruises at the injection points, and headache. These are usually mild and short-lived.",
+        "Less commonly, the effect extends slightly beyond the intended muscle, causing temporary asymmetry, a heavy-feeling brow or eyelid drooping, which can take weeks to resolve. Rarely, spread of the toxin has been reported to cause difficulty swallowing, speaking or breathing, or weakness away from the injection site. These need urgent medical attention. It is not permanent and does not add volume: lines caused by lost volume or laxity need a different treatment. Contact the clinic about any effect that concerns you."
+      ]
+    },
+    {
+      "heading": "How often is botulinum toxin repeated, and what affects the cost?",
+      "body": [
+        "Because the effect wears off, treatment is a repeating cycle, not a course with an endpoint. How often depends on the area, the dose and how you respond, and is decided at review.",
+        "Cost depends on the area and the dose. As a prescription medicine it cannot be quoted or sold as a package before assessment."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is botulinum toxin permanent?",
+      "a": "No. Nerve signalling gradually returns and the treated muscle or gland resumes its usual activity, at a pace that varies between people. Treatment is therefore a repeating cycle, timed at review rather than on a fixed schedule."
+    },
+    {
+      "q": "Can it help with excessive sweating?",
+      "a": "It is one option for excessive sweating of the underarms, palms or soles, usually where antiperspirants have not been enough. It acts on the nerves that switch on sweat glands. Underlying causes of the sweating are ruled out first."
+    },
+    {
+      "q": "Will my face look frozen or expressionless?",
+      "a": "That look comes from dose and placement, which is why the doctor watches how your muscles move first. Say how much movement you want to keep. The review appointment checks the effect before anything more is added."
+    },
+    {
+      "q": "Is this the same as Botox?",
+      "a": "Botox is one registered brand of botulinum toxin type A: a product, not a separate treatment. Several brands are registered in Malaysia and differ in formulation and unit potency, so the doctor will explain which one is recommended for you and why."
+    },
+    {
+      "q": "Is it the same as dermal filler?",
+      "a": "No. Botulinum toxin relaxes muscle activity, so it addresses lines caused by movement. Dermal fillers add volume or structure, for hollowing and lines caused by lost volume. The two are sometimes used together."
+    }
+  ]
+}

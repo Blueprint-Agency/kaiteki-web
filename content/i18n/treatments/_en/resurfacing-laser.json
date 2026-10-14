@@ -1,0 +1,90 @@
+{
+  "slug": "resurfacing-laser",
+  "durationDowntime": "30-60 min · 5-7 days recovery",
+  "name": "Resurfacing Laser",
+  "category": "Lasers",
+  "image": "https://cdn.kaiteki.my/treatments/resurfacing-laser/hero.jpg",
+  "procedureImages": [
+    {
+      "src": "https://cdn.kaiteki.my/treatments/resurfacing-laser/procedure-01.jpg",
+      "caption": "A doctor guides the laser handpiece close to the patient's skin."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/resurfacing-laser/procedure-02.jpg",
+      "caption": "A doctor holds the patient's face steady while applying the laser handpiece."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/resurfacing-laser/procedure-03.jpg",
+      "caption": "A practitioner moves the laser handpiece along the patient's jawline."
+    }
+  ],
+  "summary": "A fractional CO2 laser used for skin texture, scarring and pore concerns.",
+  "leadAnswer": "Resurfacing Laser at Kaiteki uses fractional CO2 laser technology to create controlled micro-injury columns in the skin, prompting a renewal response. It is commonly considered for texture, scarring and enlarged-pore concerns. It asks more of both recovery and skin type than the non-ablative lasers do, so a doctor is deliberate about who it is offered to.",
+  "related": [
+    "pico-laser",
+    "microneedling"
+  ],
+  "reviewedBy": "dr-chang-chee-seong",
+  "lastReviewed": "2026-07-13",
+  "seoTitle": "CO2 Resurfacing Laser Malaysia | Kaiteki",
+  "seoDescription": "Fractional CO2 resurfacing laser in Malaysia for skin texture, acne scarring and pores. Book a free consultation with a Kaiteki doctor to assess suitability.",
+  "sections": [
+    {
+      "heading": "What is Resurfacing Laser treatment?",
+      "body": [
+        "Resurfacing Laser refers to ablative and fractional laser technology (at Kaiteki, a fractional CO2 laser) that works by creating a controlled pattern of micro-injury columns across the treated skin, leaving surrounding tissue intact to support recovery.",
+        "This differs from non-ablative lasers such as Pico laser, which do not remove tissue at the surface. It is commonly considered for acne scarring and uneven texture, enlarged pores, and fine lines or other textural irregularity."
+      ]
+    },
+    {
+      "heading": "Why does a fractional CO2 laser heal faster than full resurfacing?",
+      "body": [
+        "The fractional CO2 laser delivers energy in a grid-like pattern of microscopic columns, each surrounded by untreated skin. This fractional approach is intended to prompt a controlled skin-renewal and collagen-remodelling response while allowing faster recovery than treating the entire surface at once.",
+        "The doctor sets depth and density for your skin type and concern."
+      ]
+    },
+    {
+      "heading": "Who should not have CO2 resurfacing?",
+      "body": [
+        "Fractional CO2 may not be appropriate during pregnancy, with active infection or certain skin conditions, a history of keloid scarring, or on recently tanned skin. Raise any history of cold sores, or of scarring badly, without being asked: both change whether, and how, it is done."
+      ]
+    },
+    {
+      "heading": "What does the week after CO2 resurfacing look like?",
+      "body": [
+        "The doctor first assesses your skin type and scarring history, which carry more weight here than on any other laser at the clinic. Topical numbing is applied, then the laser is passed across the area at settings chosen for your skin.",
+        "Expect more downtime than with non-ablative lasers. Redness, swelling and flaking or peeling over several days to about a week are common and typically settle. Diligent sun protection and gentle skincare follow."
+      ]
+    },
+    {
+      "heading": "Can CO2 resurfacing scar or darken the skin?",
+      "body": [
+        "Temporary effects include redness, swelling, peeling and changes in pigmentation. Because the laser is ablative, the skin is genuinely wounded and then heals, so infection and scarring are real if uncommon possibilities. That is why aftercare here is instruction rather than advice."
+      ]
+    },
+    {
+      "heading": "Why is CO2 resurfacing priced at consultation?",
+      "body": [
+        "Sessions and cost depend on the concern, the treatment depth and how your skin responds. Depth and density are set for your skin type, and they are what the cost tracks, so it is confirmed at consultation rather than published as a rate."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Resurfacing Laser the same as Pico laser?",
+      "a": "No. Resurfacing Laser is a fractional CO2 laser that creates controlled micro-injury columns in the skin. Pico laser is non-ablative and removes no tissue at the surface."
+    },
+    {
+      "q": "How much downtime should I expect?",
+      "a": "More than with non-ablative lasers. Redness, swelling and flaking over several days to about a week are common and typically settle; how much depends on the settings used."
+    },
+    {
+      "q": "Is it painful?",
+      "a": "Topical numbing is usually applied beforehand. Many people describe a warm or prickling sensation during treatment."
+    },
+    {
+      "q": "How many sessions will I need?",
+      "a": "It depends on the concern and the treatment depth. The doctor sets the number and spacing of sessions once your skin has been assessed."
+    }
+  ]
+}

@@ -83,7 +83,7 @@ for (const slug of [...slugs].sort()) {
     const build = (v: unknown, path: string, key: string, depth: number): unknown => {
       const fixed = FIXED_KEYS.has(key) || (depth === 1 && FIXED_ROOT_KEYS.has(key));
       if (typeof v === "string") {
-        if (fixed) return v;
+        if (fixed || v.trim() === "") return v;
         const t = dict.get(v);
         if (t) {
           kept++;

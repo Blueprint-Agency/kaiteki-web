@@ -1,0 +1,205 @@
+{
+  "slug": "bio-stimulator",
+  "durationDowntime": "15-30 minit · 1-2 hari",
+  "name": "Bio-stimulator (Perangsang Kolagen)",
+  "category": "Injectables",
+  "image": "https://cdn.kaiteki.my/treatments/bio-stimulator/hero-2.jpg",
+  "device": "Sculptra",
+  "summary": "Rawatan suntikan untuk menyokong pembaharuan struktur kulit anda sendiri.",
+  "leadAnswer": "Bio-stimulator, seperti Sculptra, Radiesse dan Ellansé, ialah suntikan yang bertujuan merangsang kolagen kulit anda sendiri, bukan menambah volum pada hari yang sama seperti dermal filler. Sebarang perubahan berlaku secara beransur-ansur, dan tidak seperti filler asid hialuronik, ia tidak boleh dilarutkan, jadi doktor merancang kursus rawatan selama beberapa bulan selepas penilaian.",
+  "related": [
+    "skin-booster"
+  ],
+  "reviewedBy": "dr-yeong-bin",
+  "lastReviewed": "2026-06-08",
+  "seoTitle": "Bio-stimulator di Malaysia | Sculptra, Ellanse | Kaiteki",
+  "seoDescription": "Suntikan bio-stimulator di Malaysia, termasuk Sculptra dan Ellanse, untuk menyokong pembaharuan struktur kulit anda. Tempah konsultasi percuma di Kaiteki.",
+  "typicalSessions": "Satu kursus pendek, dengan jarak beberapa minggu antara sesi",
+  "facts": [
+    {
+      "value": "Beransur-ansur, memang begitu",
+      "label": "Menyokong kolagen anda sendiri, bukan menambah volum pada hari yang sama"
+    },
+    {
+      "value": "15–30 minit",
+      "label": "Tempoh biasa sesi suntikan"
+    },
+    {
+      "value": "Penilaian dahulu",
+      "label": "Lawatan pertama anda ialah konsultasi doktor, bukan rawatan"
+    }
+  ],
+  "routes": [
+    {
+      "title": "Pembinaan semula kolagen secara beransur-ansur dalam beberapa bulan",
+      "body": "Merangsang penghasilan kolagen anda sendiri dalam tempoh beberapa bulan, bukan menambah volum serta-merta. Perubahan sengaja berlaku perlahan; sesetengah orang lebih suka begini, dan ada yang rasa kecewa kerana lambat.",
+      "links": [
+        {
+          "href": "/concerns/face-lifting",
+          "label": "Baca tentang tegang & angkat muka"
+        },
+        {
+          "href": "/concerns/aging",
+          "label": "Penuaan kulit"
+        }
+      ]
+    }
+  ],
+  "variantModule": {
+    "heading": "Sculptra, Radiesse atau Ellansé: bahan yang mana, dan kenapa",
+    "intro": "Setiap produk menggunakan bahan asas yang berbeza, dan ini mengubah cara ia bertindak serta berapa lama ia diserap semula oleh badan.",
+    "items": [
+      {
+        "eyebrow": "Asid poli-L-laktik · Galderma",
+        "title": "Sculptra",
+        "body": "Dicampurkan dengan cecair sebelum digunakan, dan bertujuan bertindak sebagai rangsangan kolagen secara beransur-ansur sepanjang beberapa sesi. Cecair campuran itu diserap dalam beberapa hari, jadi rupa awal bukanlah kesan rawatan.",
+        "href": "/technology/sculptra",
+        "hrefLabel": "Tentang Sculptra"
+      },
+      {
+        "eyebrow": "Kalsium hidroksilapatit · Merz",
+        "title": "Radiesse",
+        "body": "Sokongan daripada gel pembawa sebaik sahaja ia diletakkan, kemudian tindak balas kolagen dan elastin apabila mikrosfera diserap semula, dengan penggunaan yang diluluskan pengeluar pada tangan dan dada atas (décolletage) selain muka.",
+        "href": "/technology/radiesse",
+        "hrefLabel": "Tentang Radiesse"
+      },
+      {
+        "eyebrow": "Polikaprolakton · Sinclair",
+        "title": "Ellansé",
+        "body": "Sokongan daripada gel pembawa sebaik sahaja ia diletakkan, serta tindak balas kolagen apabila mikrosfera PCL diserap semula, dibekalkan dalam varian yang berbeza dari segi berapa lama mikrosfera itu mengambil masa untuk dikeluarkan oleh badan.",
+        "href": "/technology/ellanse",
+        "hrefLabel": "Tentang Ellansé"
+      },
+      {
+        "eyebrow": "Berasaskan kolagen",
+        "title": "Deusaderm",
+        "body": "Suntikan berasaskan kolagen yang bertujuan menyokong kualiti, struktur dan keanjalan kulit."
+      }
+    ],
+    "note": "Tiada satu pun daripada produk ini boleh dilarutkan seperti filler asid hialuronik, sebab itu penilaian terlebih dahulu penting."
+  },
+  "ctaMid": {
+    "heading": "Tak pasti sama ada anda perlukan filler atau bio-stimulator?",
+    "body": "Doktor boleh beritahu yang mana diperlukan untuk masalah anda, atau sama ada anda tidak memerlukan kedua-duanya."
+  },
+  "avoidIf": [
+    {
+      "lead": "Hamil atau menyusukan anak.",
+      "body": "Rawatan ditangguhkan."
+    },
+    {
+      "lead": "Jangkitan atau keradangan aktif",
+      "body": "di kawasan rawatan."
+    },
+    {
+      "lead": "Sejarah parut keloid atau hipertrofik.",
+      "body": ""
+    },
+    {
+      "lead": "Masalah pembekuan darah atau mengambil ubat pencair darah.",
+      "body": ""
+    },
+    {
+      "lead": "Penyakit autoimun atau penyakit tisu penghubung.",
+      "body": ""
+    },
+    {
+      "lead": "Implan kekal atau separa kekal sebelum ini",
+      "body": "di kawasan yang sama."
+    }
+  ],
+  "bringToConsult": "Bawa sejarah perubatan, alahan, senarai ubat dan setiap suntikan, implan atau pembedahan yang pernah dibuat di kawasan itu.",
+  "sessionSteps": [
+    {
+      "title": "Konsultasi dan penilaian",
+      "body": "Lawatan pertama anda ialah konsultasi, bukan rawatan. Doktor menilai kulit anda, mengesahkan kesesuaian, menerangkan jangka masa perubahan yang realistik dan memilih produk."
+    },
+    {
+      "title": "Persediaan",
+      "body": "Kulit dibersihkan dan disediakan, dan ubat bius topikal atau setempat digunakan untuk keselesaan."
+    },
+    {
+      "title": "Suntikan",
+      "body": "Doktor menyuntik kawasan yang telah dinilai. Suntikan itu sendiri cepat; kebanyakan masa sesi digunakan untuk penilaian dan persediaan."
+    },
+    {
+      "title": "Selepas itu",
+      "body": "Doktor mungkin mengurut kawasan yang dirawat dan menerangkan penjagaan selepas rawatan, termasuk urutan yang perlu dibuat di rumah."
+    }
+  ],
+  "afterSession": {
+    "intro": "Downtime biasanya minimum.",
+    "bands": [
+      {
+        "title": "Di tempat suntikan",
+        "body": "Bengkak, kemerahan atau rasa sengal yang ringan mungkin berlaku dan biasanya reda dalam beberapa hari. Lebam kadangkala mengambil masa lebih lama untuk pudar, jadi rancang lebih awal jika anda ada majlis atau acara tidak lama lagi."
+      },
+      {
+        "title": "Hari-hari pertama",
+        "body": "Elakkan tekanan atau rawatan muka yang agresif pada kawasan itu untuk tempoh yang singkat, dan ikut sebarang arahan urutan yang diberikan."
+      },
+      {
+        "title": "Semakan",
+        "body": "Oleh kerana perubahan berkembang dalam beberapa bulan, sesi semakan lebih penting di sini berbanding rawatan yang memberi hasil serta-merta. Hadirlah, dan maklumkan apa-apa yang di luar jangkaan kepada klinik dengan segera, jangan tunggu."
+      }
+    ],
+    "aftercare": "Ikut arahan urutan dan penjagaan selepas rawatan yang diberikan untuk produk anda."
+  },
+  "risks": {
+    "intro": "Doktor akan menerangkan semua ini sebelum apa-apa disuntik.",
+    "common": "Kemerahan, bengkak, lebam atau rasa sengal sementara di tempat suntikan.",
+    "lessCommon": "Ketulan atau nodul yang muncul lewat pernah dilaporkan dengan produk perangsang kolagen, kadangkala beberapa bulan selepas rawatan, dan komplikasi saluran darah yang jarang berlaku tetapi serius diketahui boleh berlaku bagi suntikan muka secara umum.",
+    "cannotDo": [
+      "Ia tidak menambah volum pada hari yang sama: perubahan berkembang secara beransur-ansur dalam beberapa bulan.",
+      "Ia tidak boleh dilarutkan seperti filler asid hialuronik.",
+      "Ia tidak kekal. Bahan itu diserap semula oleh badan, dan tisu anda sendiri terus menua."
+    ],
+    "disclose": "Maklumkan kepada klinik dengan segera sebarang ketulan, bengkak atau perubahan kulit yang muncul lewat, walaupun beberapa bulan selepas rawatan."
+  },
+  "costFactors": {
+    "intro": "Kaiteki tidak memaparkan harga dalam talian, kerana produk dan pelan diputuskan semasa konsultasi. Faktor yang mempengaruhinya:",
+    "factors": [
+      "Produk yang dipilih doktor berdasarkan penilaian anda.",
+      "Kawasan yang dirawat, dan sejauh mana sokongan struktur telah berkurang.",
+      "Bilangan sesi dalam kursus.",
+      "Sama ada penjagaan berkala termasuk dalam pelan."
+    ]
+  },
+  "relatedReasons": {
+    "skin-booster": "Rawatan suntikan yang melembapkan untuk kualiti kulit, apabila masalahnya ialah kelembapan, bukan struktur."
+  },
+  "sections": [
+    {
+      "heading": "Apa itu bio-stimulator?",
+      "body": [
+        "Bio-stimulator ialah sejenis rawatan suntikan yang diberikan oleh doktor dan bertujuan menyokong rangka kolagen kulit anda sendiri, bukan menambah volum serta-merta seperti dermal filler biasa.",
+        "Filler memberikan isian struktur pada hari yang sama. Bio-stimulator diformulasikan untuk bertindak secara beransur-ansur, merangsang pembaharuan kulit dalam tempoh beberapa minggu hingga beberapa bulan, dan tidak seperti filler asid hialuronik, ia tidak boleh dilarutkan."
+      ]
+    },
+    {
+      "heading": "Bagaimana bio-stimulator berfungsi dengan kolagen anda sendiri?",
+      "body": [
+        "Bio-stimulator disuntik ke lapisan kulit yang disasarkan. Formulasinya bertindak sebagai perancah di dalam tisu, dan badan dijangka bertindak balas dengan memperbaharui struktur sokongannya sendiri di sekelilingnya secara beransur-ansur.",
+        "Oleh kerana tindak balas ini terbina secara beransur-ansur dan berbeza antara individu, perubahan dinilai melalui sesi semakan."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Bio-stimulator vs dermal filler: sama ke?",
+      "a": "Tidak. Dermal filler menambah volum secara langsung dan, jika ia asid hialuronik, boleh dilarutkan. Bio-stimulator merangsang kolagen anda sendiri secara beransur-ansur dan tidak boleh dilarutkan."
+    },
+    {
+      "q": "Rawatan bio-stimulator sesuai ke untuk kulit sensitif?",
+      "a": "Kadangkala, tetapi tidak boleh diandaikan. Keradangan aktif, parut keloid dan penyakit autoimun ialah faktor yang doktor periksa dahulu."
+    },
+    {
+      "q": "Bio-stimulator ada downtime ke?",
+      "a": "Biasanya minimum: bengkak, kemerahan atau rasa sengal yang ringan di tempat suntikan, yang reda dalam beberapa hari. Lebam mungkin mengambil masa lebih lama."
+    },
+    {
+      "q": "Perlu berapa sesi bio-stimulator?",
+      "a": "Biasanya satu kursus pendek dengan jarak beberapa minggu, kadangkala diikuti penjagaan berkala selepas itu. Bilangannya bergantung pada produk dan kawasan."
+    }
+  ]
+}

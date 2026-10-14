@@ -47,7 +47,7 @@ const BANNED: Record<"zh" | "ms", (string | RegExp)[]> = {
   ],
   ms: [
     /\bterbaik\b/i, /\bpaling bagus\b/i, /\bnombor 1\b/i, /\bno\.? ?1\b/i, /\bterkemuka\b/i,
-    /\btermurah\b/i, /\bhilang terus\b/i, /\bhilang sepenuhnya\b/i,
+    /\btermurah\b/i,
     /\bberkesan 100%/i, /\btanpa sakit\b/i, /\btiada kesan sampingan\b/i, /\bselamat 100%/i,
     /\bbotox\b/i, /\bsuntikan putih\b/i, /\btemujanji\b/i,
   ],
@@ -60,7 +60,15 @@ const REVIEW: Record<"zh" | "ms", RegExp[]> = {
   // Also referral words: a page may send someone to a dermatologist or contrast
   // with surgery, but must never describe Kaiteki as either.
   zh: [/保证/, /永久/, /皮肤科/, /皮肤专科/, /整形/, /整容/],
-  ms: [/dijamin/i, /jaminan/i, /\bkekal\b/i, /\bpakar kulit\b/i, /\bklinik pakar\b/i],
+  ms: [
+    /dijamin/i,
+    /jaminan/i,
+    /\bkekal\b/i,
+    /\bhilang terus\b/i,
+    /\bhilang sepenuhnya\b/i,
+    /\bpakar kulit\b/i,
+    /\bklinik pakar\b/i,
+  ],
 };
 
 const INDONESIAN = [

@@ -1,0 +1,221 @@
+{
+  "slug": "fotona-4d",
+  "durationDowntime": "30至60分钟 · 无需恢复期",
+  "name": "Fotona 激光",
+  "category": "Lasers",
+  "image": "https://cdn.kaiteki.my/treatments/fotona-4d/hero.jpg",
+  "procedureImages": [
+    {
+      "src": "https://cdn.kaiteki.my/treatments/fotona-4d/procedure-01.jpg",
+      "caption": "疗程中，医生把激光手柄放在患者的脸颊上方。"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/fotona-4d/procedure-02.jpg",
+      "caption": "医生一边扶稳患者的脸，一边移动激光手柄。"
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/fotona-4d/procedure-03.jpg",
+      "caption": "医护人员用激光手柄处理口腔内的部位。"
+    }
+  ],
+  "device": "Fotona",
+  "summary": "一个多用途的 Nd:YAG/Er:YAG 激光平台，在 Kaiteki 最常用于 Fotona 4D 面部紧致疗程。",
+  "leadAnswer": "Fotona 激光是 Kaiteki 的 Fotona SP Dynamis / TimeWalker 平台，一套结合 Nd:YAG 和 Er:YAG 的激光系统，有几种不同的应用模式。它主要的面部疗程 Fotona 4D 结合四种模式，其中一种是从口腔内进行的，用于面部紧致度和肤质方面的问题。哪些模式适合你，或者都不适合，由医生决定。",
+  "related": [
+    "hifu",
+    "ultherapy"
+  ],
+  "reviewedBy": "dr-jen-meng",
+  "lastReviewed": "2026-06-15",
+  "seoTitle": "马来西亚 Fotona 4D 皮肤紧致 | Kaiteki",
+  "seoDescription": "Fotona 4D 是一种多模式激光，用于面部紧致和改善肤质，在 Kaiteki 马来西亚各分行由医生先做评估。WhatsApp 预约 Kaiteki 免费咨询。",
+  "typicalSessions": "一个疗程，之后定期维持",
+  "facts": [
+    {
+      "value": "两种激光，四种模式",
+      "label": "Nd:YAG 和 Er:YAG，结合在同一个疗程里"
+    },
+    {
+      "value": "45–60 分钟",
+      "label": "完整疗程所需的时间，视包括几种模式而定"
+    },
+    {
+      "value": "先做评估",
+      "label": "第一次就诊是医生咨询，不是直接做疗程"
+    }
+  ],
+  "routes": [
+    {
+      "title": "从口腔内部向外处理脸部松弛",
+      "body": "下半脸早期至中度的松弛，问题不只是下垂，紧致度和肤质也同时有关。",
+      "links": [
+        {
+          "href": "/concerns/face-lifting",
+          "label": "了解提拉紧致"
+        }
+      ]
+    },
+    {
+      "title": "皮肤紧致与表面肤质，在同一个疗程里处理",
+      "body": "紧致度下降，同时有表面纹理和细纹的问题，在同一个疗程里一起处理。",
+      "links": [
+        {
+          "href": "/concerns/aging",
+          "label": "皮肤老化"
+        }
+      ]
+    }
+  ],
+  "routesNote": "明显的下垂通常不是激光能处理的问题，医生会直接告诉你。",
+  "variantModule": {
+    "heading": "四种模式，以及各自的作用",
+    "intro": "Fotona 4D 按固定的顺序进行四种激光模式，每一种作用在皮肤的不同层次。",
+    "items": [
+      {
+        "eyebrow": "Er:YAG · 口腔内",
+        "title": "SMOOTH",
+        "body": "从口腔内进行，作用于脸颊后方和法令纹周围的组织。"
+      },
+      {
+        "eyebrow": "Nd:YAG · 点阵",
+        "title": "FRAC3",
+        "body": "一种点阵模式，可到达皮肤较深的层次，针对色斑和纹路等瑕疵。"
+      },
+      {
+        "eyebrow": "Nd:YAG · 整体加热",
+        "title": "PIANO",
+        "body": "一种整体加热模式，以渐进、受控的方式加热较深层的组织，作用在皮肤表面以下。"
+      },
+      {
+        "eyebrow": "Er:YAG · 表层",
+        "title": "表层焕肤（Superficial peel）",
+        "body": "在皮肤表面进行的轻度焕肤，目的是让纹理更平滑。",
+        "href": "/technology/fotona-sp-dynamis",
+        "hrefLabel": "了解 Fotona 平台"
+      }
+    ],
+    "note": "四种模式都在 Fotona SP Dynamis / TimeWalker 平台上进行。不是每个计划都包括全部四种模式。"
+  },
+  "ctaMid": {
+    "heading": "不确定激光还是其他能量更适合你的松弛问题？",
+    "body": "Fotona 4D、聚焦超声波和射频（RF）作用于组织的方式各不相同。医生可以按你的脸为你比较。"
+  },
+  "avoidIf": [
+    {
+      "lead": "怀孕或哺乳期间。",
+      "body": "一般会延后治疗。"
+    },
+    {
+      "lead": "有活跃的感染、唇疱疹或皮肤发炎，",
+      "body": "而且就在要治疗的部位。"
+    },
+    {
+      "lead": "皮肤最近晒伤或晒黑。",
+      "body": ""
+    },
+    {
+      "lead": "有蟹足肿的病史。",
+      "body": ""
+    },
+    {
+      "lead": "正在服用会增加光敏感的药物，",
+      "body": "包括口服异维A酸（isotretinoin）。"
+    },
+    {
+      "lead": "有口腔或牙齿问题、最近做过牙科治疗，或戴着口腔矫正器具，",
+      "body": "因为其中一个步骤是从口腔内进行的。"
+    }
+  ],
+  "bringToConsult": "请带上你的病史、牙科记录和用药记录。",
+  "sessionSteps": [
+    {
+      "title": "咨询与评估",
+      "body": "第一次就诊是咨询，不是直接做疗程。医生会决定哪些模式适合你的脸，以及进行的顺序。"
+    },
+    {
+      "title": "准备",
+      "body": "先清洁皮肤、卸妆，再戴上护眼罩；口腔内的步骤会另外调整姿势和做准备。"
+    },
+    {
+      "title": "疗程进行",
+      "body": "各种模式按顺序进行。大多数患者形容是一阵扩散开来的温热感，而不是刺痛，口腔内步骤时脸颊内侧的感觉也是如此。"
+    },
+    {
+      "title": "疗程之后",
+      "body": "离开前会得到术后护理建议。同一个疗程里的每次治疗，通常相隔几个星期。"
+    }
+  ],
+  "afterSession": {
+    "intro": "由于这是非剥脱式的疗程，恢复期通常很有限。",
+    "bands": [
+      {
+        "title": "当天",
+        "body": "几个小时到一天内出现泛红、发热和轻微的紧绷感是常见的，表层处理之后皮肤也可能看起来有点粉红。大多数人当天就可以照常活动。"
+      },
+      {
+        "title": "最初几天",
+        "body": "护肤保持温和、做好保湿，在医生说可以之前，暂停使用A酸类和酸类产品。"
+      }
+    ],
+    "aftercare": "每天使用广谱防晒，因为激光疗程后皮肤可能对阳光更敏感；在医生指定的期间内，避免桑拿和热瑜伽等高温环境。"
+  },
+  "risks": {
+    "intro": "安排任何疗程之前，都会先向你说明副作用。",
+    "common": "泛红、发热、轻微肿胀、短暂的干燥或脱皮，以及口腔内步骤后脸颊内侧或嘴唇暂时比较敏感。",
+    "lessCommon": "容易长唇疱疹的人，唇疱疹可能会再次发作。灼伤、起水泡、色素变化和留疤并不常见。",
+    "pigmentNote": "Fotona 指出，Nd:YAG 波长较少被黑色素吸收，所以可用于不同肤色；而在 4D 疗程中，Er:YAG 的表层处理也会保持轻度。不过，如果你曾在受热、做激光或发炎后出现色素变化，治疗前仍然要提出来。",
+    "cannotDo": [
+      "它针对的是早期至中度的松弛，而不是明显的下垂；遇到明显下垂，医生可能会告诉你激光不是合适的方法。",
+      "它不是做一次就完成的：效果要靠整个疗程中组织逐渐重塑。",
+      "它不能取代聚焦超声波或射频；这些是不同类型的能量，作用于组织的方式也不同。"
+    ],
+    "disclose": "请告诉医生上面列出、应该避免的任何情况，特别是如果你容易长唇疱疹，因为口腔内的步骤可能会让它再次发作。"
+  },
+  "costFactors": {
+    "intro": "Kaiteki 不在网上公开价钱，因为费用取决于咨询时商定的计划。影响价钱的因素：",
+    "factors": [
+      "你的计划用到四种模式中的几种。",
+      "治疗多少个部位。",
+      "疗程的次数，以及是否需要定期维持。",
+      "这个疗程是否和你计划中的其他疗程结合进行。"
+    ]
+  },
+  "relatedReasons": {
+    "hifu": "以聚焦超声波在选定的深度处理松弛，和激光是不同类型的能量。",
+    "ultherapy": "聚焦超声波，配合屏幕影像显示组织层次，和激光是不同类型的能量。"
+  },
+  "sections": [
+    {
+      "heading": "Fotona 激光是什么？",
+      "body": [
+        "Fotona SP Dynamis / TimeWalker 平台结合了 Nd:YAG 和 Er:YAG 两种激光，可进行几种不同的应用：NightLase（处理与鼻鼾相关的问题）、LipLase、SmoothEye、TightSculpting，以及面部疗程 Fotona 4D。",
+        "Fotona 4D 是非手术的疗程。之所以叫“4D”，是因为它分四个步骤进行，同时处理皮肤表面和口腔内的组织，一般用于面部紧致度和肤质方面的问题。"
+      ]
+    },
+    {
+      "heading": "Fotona 4D 原理：为什么要从口腔内进行？",
+      "body": [
+        "在 Fotona 称为 SmoothLiftin™ 的步骤中，Er:YAG 激光以 SMOOTH® 模式作用于脸颊内侧，从里面处理脸颊后方和法令纹周围的组织，而不是穿过外层皮肤。Fotona 形容 SMOOTH® 模式是在一个较长的脉冲里，快速连续发出多个低能量密度的脉冲，产生温和的凝固性加热，而不是剥脱。",
+        "这个步骤之所以可行，是因为平台有两种波长：Fotona 形容 Nd:YAG 可到达皮肤最深的层次，而 Er:YAG 适合处理表层，所以同一次疗程可以在口腔内、真皮深层和皮肤表面进行。"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Fotona 4D 要做几次？多久做一次？",
+      "a": "通常是一个包括几次治疗的疗程，每次相隔几个星期，之后偶尔做维持。次数会按你的皮肤和问题来定。"
+    },
+    {
+      "q": "Fotona 4D 适合肤色较深或亚洲人的皮肤吗？",
+      "a": "可以适合。Nd:YAG 波长较少被黑色素吸收，表层处理也保持轻度，所以这个疗程可用于不同肤色。如果曾有色素变化，应先提出来。"
+    },
+    {
+      "q": "Fotona 4D 需要用针或打针吗？",
+      "a": "不需要。它只用激光能量，作用于皮肤表面和口腔内。"
+    },
+    {
+      "q": "Fotona 4D 价钱是多少？",
+      "a": "要看你的计划包括几种模式和几个部位，所以价钱会在咨询时确认，而不是在网上报价。"
+    }
+  ]
+}

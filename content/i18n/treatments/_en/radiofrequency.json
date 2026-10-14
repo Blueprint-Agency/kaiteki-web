@@ -1,0 +1,219 @@
+{
+  "slug": "radiofrequency",
+  "durationDowntime": "30-60 min · No downtime",
+  "name": "Radiofrequency",
+  "category": "Lifting & Tightening",
+  "image": "https://cdn.kaiteki.my/treatments/radiofrequency/hero.jpg",
+  "procedureImages": [
+    {
+      "src": "https://cdn.kaiteki.my/treatments/radiofrequency/procedure-01.jpg",
+      "caption": "The radiofrequency handpiece is glided along the patient's jaw."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/radiofrequency/procedure-02.jpg",
+      "caption": "A practitioner works near the eye area while cotton pads shield the eyes."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/radiofrequency/procedure-03.jpg",
+      "caption": "A practitioner moves the radiofrequency handpiece across the patient's forehead."
+    }
+  ],
+  "summary": "Radiofrequency energy used to support skin-firmness and texture concerns.",
+  "leadAnswer": "Radiofrequency (RF) treatments use controlled energy, delivered from the skin surface with no needles, to warm the deeper layers of the skin. They may support firmness and texture concerns over a course of sessions. Kaiteki runs four RF platforms, and a doctor examines your skin before choosing one.",
+  "related": [
+    "microneedling",
+    "hifu"
+  ],
+  "reviewedBy": "dr-chloe-wan",
+  "lastReviewed": "2026-06-12",
+  "seoTitle": "Radiofrequency Treatment Malaysia | Skin Firmness | Kaiteki",
+  "seoDescription": "Radiofrequency (RF) treatment in Malaysia to support skin firmness and texture concerns. Book a free consultation with a Kaiteki doctor to assess suitability.",
+  "typicalSessions": "About 2 to 3, then maintenance",
+  "facts": [
+    {
+      "value": "4 RF platforms",
+      "label": "BTL Exilis, Oligio, Wonderface and XERF, matched to your skin"
+    },
+    {
+      "value": "30–60 minutes",
+      "label": "Typical session, depending on the areas treated"
+    },
+    {
+      "value": "Assessment first",
+      "label": "Your first visit is a doctor consultation, not a treatment"
+    }
+  ],
+  "routes": [
+    {
+      "title": "Skin firmness across the lower face",
+      "body": "Heats the dermis to prompt collagen change across a broader area than a focused device. Considered where general firmness rather than a single line is the concern.",
+      "links": [
+        {
+          "href": "/concerns/face-contouring",
+          "label": "Read about face contouring"
+        }
+      ]
+    },
+    {
+      "title": "Laxity in the lower lid",
+      "body": "Gentle heating to prompt collagen change where the lower lid skin has loosened and creased. Considered where crepiness accompanies the darkness rather than where a hollow dominates.",
+      "links": [
+        {
+          "href": "/concerns/dark-eye-circles",
+          "label": "Dark eye circles"
+        }
+      ]
+    }
+  ],
+  "variantModule": {
+    "heading": "BTL Exilis, Oligio, Wonderface or XERF: which RF platform, and why",
+    "intro": "The four platforms differ in how deep the energy reaches and how the surface is cooled.",
+    "items": [
+      {
+        "eyebrow": "Monopolar · embedded cooling",
+        "title": "BTL Exilis",
+        "body": "Monopolar delivery with embedded surface cooling lets the device keep working at a depth that reaches subcutaneous fat, which is why it is used for body-contour concerns as well as facial firmness.",
+        "href": "/technology/btl-exilis",
+        "hrefLabel": "About BTL Exilis"
+      },
+      {
+        "eyebrow": "Monopolar 6.78 MHz · contact cooling",
+        "title": "Oligio",
+        "body": "A Korean monopolar platform delivered shot by shot through a cooled tip that monitors contact, studied mainly for mild to moderate laxity of the lower face.",
+        "href": "/technology/oligio",
+        "hrefLabel": "About Oligio"
+      },
+      {
+        "eyebrow": "Bipolar RF + neuromuscular",
+        "title": "Wonderface",
+        "body": "A face-specific platform pairing bipolar radiofrequency, more contained and comparatively superficial, with a separate neuromuscular stimulation mode that works on muscle tone.",
+        "href": "/technology/wonderface",
+        "hrefLabel": "About Wonderface"
+      },
+      {
+        "eyebrow": "Multifrequency monopolar · cryogen cooling",
+        "title": "XERF",
+        "body": "Combines 6.78 MHz and 2 MHz so energy can be biased towards shallower or deeper tissue, with integrated cryogen cooling, and works entirely from the skin surface with no needles.",
+        "href": "/technology/xerf",
+        "hrefLabel": "About XERF"
+      }
+    ]
+  },
+  "ctaMid": {
+    "heading": "Not sure whether radiofrequency or another energy fits your skin?",
+    "body": "Surface RF, focused ultrasound and RF microneedling reach tissue differently. A doctor can tell you which your skin calls for."
+  },
+  "avoidIf": [
+    {
+      "lead": "Pregnancy.",
+      "body": "Treatment is deferred."
+    },
+    {
+      "lead": "Implanted electronic or metal devices,",
+      "body": "such as a pacemaker, in or near the treatment area."
+    },
+    {
+      "lead": "Active skin infection or inflamed areas",
+      "body": "where the treatment would be applied."
+    },
+    {
+      "lead": "A history of keloid scarring.",
+      "body": ""
+    },
+    {
+      "lead": "Some skin conditions or medications,",
+      "body": "reviewed before treatment."
+    }
+  ],
+  "bringToConsult": "Tell the doctor what you are already using on your skin as well as what you take: retinoids and recent peels change what the skin will tolerate on the day.",
+  "sessionSteps": [
+    {
+      "title": "Consultation and assessment",
+      "body": "Your first visit is a consultation, not a treatment. The doctor assesses your skin's thickness and laxity, which decide the device and settings."
+    },
+    {
+      "title": "The treatment",
+      "body": "Controlled RF energy is delivered to the target areas, with contact cooling for comfort. Most people describe a warm, deep, massage-like sensation that builds and eases as the handpiece moves."
+    },
+    {
+      "title": "Afterwards",
+      "body": "Sessions in a course are usually spaced about 4 to 6 weeks apart."
+    }
+  ],
+  "afterSession": {
+    "intro": "Downtime is usually minimal: there is no wound, because the energy works beneath the surface.",
+    "bands": [
+      {
+        "title": "Straight afterwards",
+        "body": "Mild redness or a feeling of warmth may occur and typically settles within a few hours."
+      },
+      {
+        "title": "The same day",
+        "body": "Most people return to normal activities, and makeup can generally be worn straight after a facial session."
+      },
+      {
+        "title": "Over the following months",
+        "body": "Collagen turnover is slow, so any change develops gradually over weeks to months, and a plan here is written in months rather than weeks."
+      }
+    ],
+    "aftercare": "Gentle skincare and daily sun protection afterwards."
+  },
+  "risks": {
+    "intro": "Risks are explained before anything is booked.",
+    "common": "Redness, warmth or mild swelling that usually settles.",
+    "lessCommon": "Burns and lasting pigment change. Both trace back to energy settings, which is why a doctor sets them for your skin.",
+    "pigmentNote": "RF heats tissue rather than targeting pigment, so it does not rely on colour contrast and is used across a wide range of skin tones, including Asian skin. Over-heating can still cause pigment change, which is why settings matter.",
+    "cannotDo": [
+      "It is not a substitute for surgery where there is significant excess skin.",
+      "Marked sagging may be better served by other approaches your doctor can discuss.",
+      "It does not change the skin on the day; any change depends on slow tissue remodelling."
+    ],
+    "disclose": "Tell your doctor about anything on the avoid list above, including implanted devices anywhere near the treatment area."
+  },
+  "costFactors": {
+    "intro": "Kaiteki does not quote prices online, because the course is set by what the assessment finds. What moves the cost:",
+    "factors": [
+      "Your skin condition.",
+      "The area treated. Face-only plans differ from face-and-neck or body plans.",
+      "The number of sessions in the course.",
+      "Any maintenance sessions, often every 6 to 12 months."
+    ]
+  },
+  "relatedReasons": {
+    "microneedling": "Radiofrequency delivered through fine needles, used for texture and scarring, with more recovery time.",
+    "hifu": "Focused ultrasound for laxity at a chosen depth, a different energy type from radiofrequency."
+  },
+  "sections": [
+    {
+      "heading": "What is radiofrequency (RF) treatment?",
+      "body": [
+        "Radiofrequency (RF) treatment is a non-surgical approach that uses controlled energy to warm the deeper layers of the skin, rather than acting on the surface as skincare does. At Kaiteki it is used chiefly for skin-firmness, laxity and contour concerns, without surgery, needles or injections."
+      ]
+    },
+    {
+      "heading": "How does radiofrequency warm the skin without needles?",
+      "body": [
+        "RF devices deliver controlled thermal energy into the dermis, gently heating the tissue. This warming is intended to act on existing collagen fibres and to prompt the skin's own gradual collagen-renewal response over time.",
+        "A contact-cooling step is used during treatment to help keep each session comfortable."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are radiofrequency treatments suitable for sensitive skin?",
+      "a": "Often, yes. Surface RF is non-invasive and generally well tolerated, and settings are adjusted to your skin. Mention any retinoids or recent peels, which change what the skin will tolerate."
+    },
+    {
+      "q": "Is there any downtime after RF treatment?",
+      "a": "Usually minimal. Mild redness or warmth typically settles within a few hours, and most people go straight back to normal activities."
+    },
+    {
+      "q": "How many radiofrequency sessions will I need?",
+      "a": "A course of about 2 to 3 sessions, spaced 4 to 6 weeks apart, is common, sometimes followed by maintenance every 6 to 12 months."
+    },
+    {
+      "q": "When will I see results?",
+      "a": "Not on the day. RF works by warming tissue and letting it remodel, so any change develops gradually over weeks to months and varies between people."
+    }
+  ]
+}

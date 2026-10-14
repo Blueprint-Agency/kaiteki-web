@@ -1,0 +1,84 @@
+{
+  "slug": "facial-treatments",
+  "durationDowntime": "30-60 minit · Tiada downtime",
+  "name": "Rawatan Facial",
+  "category": "Facials",
+  "image": "https://cdn.kaiteki.my/treatments/facial-treatments/hero.jpg",
+  "procedureImages": [
+    {
+      "src": "https://cdn.kaiteki.my/treatments/facial-treatments/procedure-01.jpg",
+      "caption": "Terapis menggerakkan alat sedutan di atas pipi pesakit semasa facial."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/facial-treatments/procedure-02.jpg",
+      "caption": "Terapis menggerakkan alat facial di sepanjang garis rahang."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/facial-treatments/procedure-03.jpg",
+      "caption": "Terapis menggerakkan peranti facial di atas kawasan bibir atas pesakit."
+    }
+  ],
+  "summary": "Facial di klinik untuk menyokong pembersihan kulit, eksfoliasi dan kualiti kulit secara umum.",
+  "leadAnswer": "Rawatan Facial di Kaiteki ialah facial yang dibuat di klinik, termasuk Hydrafacial dan Silkpeel, yang menggabungkan langkah pembersihan, eksfoliasi dan rawatan kulit untuk menyokong kualiti kulit secara umum. Ia bekerja di permukaan kulit, bukan pada masalah struktur yang lebih dalam, dan penilaian kulit menentukan yang mana sesuai untuk anda, atau sama ada kulit anda sebenarnya memerlukan rawatan perubatan.",
+  "related": [
+    "pico-laser",
+    "skin-booster"
+  ],
+  "reviewedBy": "dr-calvin-tan",
+  "lastReviewed": "2026-07-13",
+  "seoTitle": "Rawatan Facial di Malaysia | Hydrafacial, Silkpeel | Kaiteki",
+  "seoDescription": "Rawatan facial di klinik di Malaysia, termasuk Hydrafacial dan Silkpeel, untuk menyokong pembersihan dan kualiti kulit. Tempah konsultasi percuma di Kaiteki.",
+  "sections": [
+    {
+      "heading": "Apa itu rawatan facial?",
+      "body": [
+        "Rawatan facial ialah prosedur di klinik yang menggabungkan langkah pembersihan, eksfoliasi dan rawatan kulit dalam satu sesi, biasanya dengan teknologi yang lebih lembut berbanding laser atau peranti berasaskan tenaga. Di Kaiteki, kategori ini termasuk Hydrafacial dan Silkpeel.",
+        "Ia biasanya dipertimbangkan untuk liang pori tersumbat, warna kulit yang kusam atau nampak tidak sekata, dan kelembapan kulit secara umum, sebagai penjagaan rutin atau di antara rawatan lain. Ia tidak menggantikan rawatan perubatan apabila keadaan kulit memerlukannya."
+      ]
+    },
+    {
+      "heading": "Bagaimana Hydrafacial dan Silkpeel berfungsi?",
+      "body": [
+        "Hydrafacial menggunakan proses berasaskan peranti yang membersihkan, mengeksfoliasi dan mengeluarkan kotoran dari liang pori, sebelum memasukkan serum yang sesuai dengan kulit. Silkpeel pula menggabungkan eksfoliasi dengan penyerapan larutan topikal pada masa yang sama.",
+        "Kedua-duanya bertujuan membuang kotoran yang terkumpul di permukaan, menghaluskan tekstur dan menyokong kelembapan kulit, bukan merawat masalah struktur yang lebih dalam. Pengamal klinik memilih rawatan dan sebarang serum tambahan mengikut jenis kulit anda."
+      ]
+    },
+    {
+      "heading": "Bila anda tidak patut buat facial?",
+      "body": [
+        "Facial mungkin tidak sesuai jika ada jangkitan kulit yang aktif atau keradangan yang ketara, atau sejurus selepas prosedur tertentu yang lain. Beritahu tentang penjagaan kulit dan sejarah perubatan anda, terutamanya sebarang kepekaan terhadap produk penjagaan kulit yang anda tahu."
+      ]
+    },
+    {
+      "heading": "Apa yang berlaku semasa facial di klinik, dan adakah muka jadi merah selepasnya?",
+      "body": [
+        "Penilaian kulit yang ringkas mengesahkan facial mana yang sesuai untuk anda. Kulit kemudian dibersihkan, dieksfoliasi dan, bergantung pada pilihan, melalui pengekstrakan menggunakan peranti dan penyerapan serum. Sesi biasanya selesa, dan kebanyakan orang boleh terus kembali ke aktiviti biasa.",
+        "Kemerahan ringan dan sementara boleh berlaku selepas sesetengah facial, dan biasanya reda dalam beberapa jam. Dalam kes yang jarang berlaku, serum boleh menyebabkan reaksi kerengsaan. Gunakan pelindung matahari dan penjagaan kulit yang lembut selepas itu."
+      ]
+    },
+    {
+      "heading": "Berapa kerap buat facial di klinik, dan apa yang mempengaruhi kosnya?",
+      "body": [
+        "Facial biasanya ditempah secara berkala sebagai penjagaan, pada kekerapan yang ditentukan oleh keadaan kulit dan matlamat anda. Kos bergantung pada facial yang dipilih dan apa yang ditambah kepadanya, jadi ia disahkan selepas perkara itu diputuskan."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Apa beza Hydrafacial dan Silkpeel?",
+      "a": "Kedua-duanya menggabungkan eksfoliasi dengan penyerapan serum, tetapi menggunakan teknologi peranti dan formulasi yang berbeza. Pengamal klinik akan menasihati yang mana sesuai dengan kulit anda."
+    },
+    {
+      "q": "Boleh ke facial menggantikan rawatan seperti pico laser atau skin booster?",
+      "a": "Tidak. Facial menangani kualiti kulit di permukaan; laser dan rawatan suntikan bekerja pada tahap yang berbeza, untuk masalah yang lebih spesifik. Facial boleh menjadi sebahagian daripada pelan yang lebih luas bersama rawatan tersebut."
+    },
+    {
+      "q": "Facial ada downtime ke?",
+      "a": "Sangat minimum atau tiada langsung. Kemerahan ringan boleh berlaku dan biasanya reda dalam beberapa jam."
+    },
+    {
+      "q": "Berapa kerap boleh buat facial?",
+      "a": "Tiada satu kekerapan yang sesuai untuk semua orang. Facial ditempah secara berkala sebagai penjagaan, pada selang masa yang ditentukan oleh keadaan kulit dan matlamat anda."
+    }
+  ]
+}

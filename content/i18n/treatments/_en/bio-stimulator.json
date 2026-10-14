@@ -1,0 +1,205 @@
+{
+  "slug": "bio-stimulator",
+  "durationDowntime": "15-30 min · 1-2 days",
+  "name": "Bio-stimulator",
+  "category": "Injectables",
+  "image": "https://cdn.kaiteki.my/treatments/bio-stimulator/hero-2.jpg",
+  "device": "Sculptra",
+  "summary": "Injectable treatments used to support the skin's own structural renewal.",
+  "leadAnswer": "Bio-stimulators, such as Sculptra, Radiesse and Ellansé, are injectables intended to prompt the skin's own collagen rather than add volume on the day, as a dermal filler does. Any change is gradual, and unlike a hyaluronic acid filler they cannot be dissolved, so a doctor plans the course across months after assessment.",
+  "related": [
+    "skin-booster"
+  ],
+  "reviewedBy": "dr-yeong-bin",
+  "lastReviewed": "2026-06-08",
+  "seoTitle": "Bio-Stimulator Malaysia | Sculptra, Ellanse | Kaiteki",
+  "seoDescription": "Bio-stimulator injectables in Malaysia, including Sculptra and Ellanse, to support the skin's structural renewal. Book a free consultation at Kaiteki.",
+  "typicalSessions": "A short course, spaced several weeks apart",
+  "facts": [
+    {
+      "value": "Gradual by design",
+      "label": "Supports your own collagen rather than adding volume on the day"
+    },
+    {
+      "value": "15–30 minutes",
+      "label": "Typical injecting appointment"
+    },
+    {
+      "value": "Assessment first",
+      "label": "Your first visit is a doctor consultation, not a treatment"
+    }
+  ],
+  "routes": [
+    {
+      "title": "Gradual collagen rebuilding over months",
+      "body": "Prompts your own collagen production over months instead of adding volume immediately. Change is deliberately slow, which some people prefer and others find frustrating.",
+      "links": [
+        {
+          "href": "/concerns/face-lifting",
+          "label": "Read about face lifting"
+        },
+        {
+          "href": "/concerns/aging",
+          "label": "Ageing skin"
+        }
+      ]
+    }
+  ],
+  "variantModule": {
+    "heading": "Sculptra, Radiesse or Ellansé: which material, and why",
+    "intro": "Each product uses a different base material, which changes how it behaves and how long it takes to resorb.",
+    "items": [
+      {
+        "eyebrow": "Poly-L-lactic acid · Galderma",
+        "title": "Sculptra",
+        "body": "Reconstituted before use and intended to act as a gradual collagen stimulus over a course of sessions. The reconstituting fluid is absorbed within days, so early appearance is not the treatment effect.",
+        "href": "/technology/sculptra",
+        "hrefLabel": "About Sculptra"
+      },
+      {
+        "eyebrow": "Calcium hydroxylapatite · Merz",
+        "title": "Radiesse",
+        "body": "Support from the gel carrier when it is placed, then a collagen and elastin response as the microspheres are resorbed, with manufacturer-cleared use on the hands and décolletage as well as the face.",
+        "href": "/technology/radiesse",
+        "hrefLabel": "About Radiesse"
+      },
+      {
+        "eyebrow": "Polycaprolactone · Sinclair",
+        "title": "Ellansé",
+        "body": "Support from the carrier gel when it is placed, plus a collagen response as the PCL microspheres are resorbed, supplied in variants that differ in how long the microspheres take to clear.",
+        "href": "/technology/ellanse",
+        "hrefLabel": "About Ellansé"
+      },
+      {
+        "eyebrow": "Collagen-based",
+        "title": "Deusaderm",
+        "body": "A collagen-based injectable intended to support skin quality, structure and elasticity."
+      }
+    ],
+    "note": "None of these can be dissolved the way a hyaluronic acid filler can, which is why assessment beforehand matters."
+  },
+  "ctaMid": {
+    "heading": "Not sure whether you need a filler or a bio-stimulator?",
+    "body": "A doctor can tell you which your concern calls for, or whether it needs neither."
+  },
+  "avoidIf": [
+    {
+      "lead": "Pregnancy or breastfeeding.",
+      "body": "Treatment is deferred."
+    },
+    {
+      "lead": "Active infection or inflammation",
+      "body": "in the treatment area."
+    },
+    {
+      "lead": "A history of keloid or hypertrophic scarring.",
+      "body": ""
+    },
+    {
+      "lead": "Bleeding disorders or blood-thinning medication.",
+      "body": ""
+    },
+    {
+      "lead": "Autoimmune or connective-tissue conditions.",
+      "body": ""
+    },
+    {
+      "lead": "Previous permanent or semi-permanent implants",
+      "body": "in the same area."
+    }
+  ],
+  "bringToConsult": "Bring your medical history, allergies, medication list and every past injectable, implant or surgery in the area.",
+  "sessionSteps": [
+    {
+      "title": "Consultation and assessment",
+      "body": "Your first visit is a consultation, not a treatment. The doctor assesses your skin, confirms suitability, discusses the realistic time course and selects the product."
+    },
+    {
+      "title": "Preparation",
+      "body": "The skin is cleansed and prepared, and topical or local anaesthetic is used for comfort."
+    },
+    {
+      "title": "The injections",
+      "body": "The doctor injects the assessed areas. The injecting is quick; most of the appointment is assessment and preparation."
+    },
+    {
+      "title": "Afterwards",
+      "body": "The doctor may massage the treated area and explains aftercare, including any massage to do at home."
+    }
+  ],
+  "afterSession": {
+    "intro": "Downtime is generally minimal.",
+    "bands": [
+      {
+        "title": "At the injection sites",
+        "body": "Mild swelling, redness or tenderness may occur and usually settles within a few days. Bruising can occasionally take longer to fade, which is worth planning around if you have an event coming up."
+      },
+      {
+        "title": "The first days",
+        "body": "Avoid pressure or vigorous facial treatments on the area for a short period, and follow any massage instructions given."
+      },
+      {
+        "title": "Review",
+        "body": "Because change develops over months, review appointments matter more here than with an immediate-result treatment. Keep them, and raise anything unexpected with the clinic rather than waiting."
+      }
+    ],
+    "aftercare": "Follow the massage and aftercare instructions you are given for your product."
+  },
+  "risks": {
+    "intro": "The doctor goes through these before anything is injected.",
+    "common": "Temporary redness, swelling, bruising or tenderness at the injection sites.",
+    "lessCommon": "Delayed-onset lumps or nodules have been reported with collagen-stimulating products, sometimes months after treatment, and rare but serious vascular complications are recognised for facial injectables in general.",
+    "cannotDo": [
+      "It does not add volume on the day: change develops gradually over months.",
+      "It cannot be dissolved the way a hyaluronic acid filler can.",
+      "It is not permanent. The material is resorbed, and your own tissue continues to age."
+    ],
+    "disclose": "Raise any delayed lump, swelling or skin change with the clinic straight away, even months after treatment."
+  },
+  "costFactors": {
+    "intro": "Kaiteki does not quote prices online, because the product and the plan are decided at consultation. What moves it:",
+    "factors": [
+      "Which product the doctor selects for your assessment.",
+      "The area being addressed, and how much structural support has been lost.",
+      "The number of sessions in the course.",
+      "Whether periodic maintenance is part of the plan."
+    ]
+  },
+  "relatedReasons": {
+    "skin-booster": "Injectable hydrating treatments for skin quality, where the concern is hydration rather than structure."
+  },
+  "sections": [
+    {
+      "heading": "What is a bio-stimulator?",
+      "body": [
+        "A bio-stimulator is a type of injectable treatment given by a doctor that is intended to support the skin's own collagen framework, rather than to add immediate volume the way a conventional dermal filler does.",
+        "A filler provides structural fill on the day. A bio-stimulator is formulated to work gradually, prompting the skin's own renewal over weeks to months, and unlike a hyaluronic acid filler it cannot be dissolved."
+      ]
+    },
+    {
+      "heading": "How does a bio-stimulator work with your own collagen?",
+      "body": [
+        "Bio-stimulators are delivered by injection into targeted layers of the skin. The formulation acts as a scaffold within the tissue, and the body is intended to respond by gradually renewing its own supporting structures around it.",
+        "Because the response builds gradually and varies between people, review appointments are how change is judged."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is a bio-stimulator the same as a dermal filler?",
+      "a": "No. A dermal filler adds volume directly and, if hyaluronic acid, can be dissolved. A bio-stimulator prompts your own collagen gradually and cannot be dissolved."
+    },
+    {
+      "q": "Are bio-stimulator treatments suitable for sensitive skin?",
+      "a": "Sometimes, but it cannot be assumed. Active inflammation, keloid scarring and autoimmune conditions are the factors the doctor checks first."
+    },
+    {
+      "q": "Is there any downtime?",
+      "a": "Usually minimal: mild swelling, redness or tenderness at the injection sites that settles within a few days. Bruising can take longer."
+    },
+    {
+      "q": "How many sessions will I need?",
+      "a": "Usually a short course spaced several weeks apart, sometimes with periodic maintenance afterwards. The number depends on the product and the area."
+    }
+  ]
+}

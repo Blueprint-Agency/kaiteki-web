@@ -1,0 +1,255 @@
+{
+  "slug": "skin-booster",
+  "durationDowntime": "15-30 min · 1-2 days",
+  "name": "Skin Booster",
+  "category": "Injectables",
+  "image": "https://cdn.kaiteki.my/treatments/skin-booster/hero-2.jpg",
+  "device": "Profhilo",
+  "typicalSessions": "A short course, then maintenance",
+  "summary": "Injectable hydrating treatments used to support skin quality and hydration.",
+  "leadAnswer": "Skin boosters are injectable treatments that deliver hydrating ingredients into the skin to support skin quality and hydration over a course of sessions. Which product suits your skin, and whether an injectable is the right route for what is bothering you, is decided by a doctor at consultation.",
+  "routes": [
+    {
+      "title": "Dull, dry or dehydrated-looking skin",
+      "body": "Hydration and overall skin quality, and fine lines associated with dryness. Profhilo and Hydrodeluxe are the hyaluronic acid products in the range, built for hydration.",
+      "links": [
+        {
+          "href": "/concerns/aging",
+          "label": "Read about ageing skin"
+        },
+        {
+          "href": "/concerns/fine-lines-wrinkles",
+          "label": "Fine lines & wrinkles"
+        }
+      ]
+    },
+    {
+      "title": "Sensitised, acne-affected or post-treatment skin",
+      "body": "Skin that needs support rather than hydration alone. The polynucleotide boosters, Rejuran and Plinest, are often considered here, once any active acne flare has settled.",
+      "links": [
+        {
+          "href": "/concerns/acne",
+          "label": "Read about acne"
+        }
+      ]
+    },
+    {
+      "title": "Texture, pores and the under-eye area",
+      "body": "Uneven texture and enlarged-looking pores, where a collagen-stimulating booster such as Juvelook is one option, and the under-eye area.",
+      "links": [
+        {
+          "href": "/concerns/enlarged-pores",
+          "label": "Enlarged pores"
+        },
+        {
+          "href": "/concerns/dark-eye-circles",
+          "label": "Dark eye circles"
+        }
+      ]
+    }
+  ],
+  "routesNote": "If what you want is a change in contour, a skin booster is the wrong category, and dermal fillers are the relevant page.",
+  "variantModule": {
+    "heading": "Which skin booster, and what is in it",
+    "intro": "Skin booster is an umbrella term, and the products under it are not interchangeable. They differ in their active ingredient, and the ingredient decides which skin a doctor considers them for.",
+    "items": [
+      {
+        "eyebrow": "Salmon polynucleotide · Pharma Research, Korea",
+        "title": "Rejuran",
+        "body": "Used to support the skin barrier and skin healing, and often considered for sensitive, acne-prone or damaged skin. Because it is salmon-derived, any fish or seafood allergy must be declared.",
+        "href": "/technology/rejuran",
+        "hrefLabel": "About Rejuran"
+      },
+      {
+        "eyebrow": "Trout polynucleotide · Mastelli, Italy",
+        "title": "Plinest / Newest",
+        "body": "A polynucleotide range used to support skin regeneration and elasticity, often considered for stressed, ageing or post-treatment skin. Also fish-derived.",
+        "href": "/technology/plinest",
+        "hrefLabel": "About Plinest"
+      },
+      {
+        "eyebrow": "Hyaluronic acid · IBSA, Italy",
+        "title": "Profhilo",
+        "body": "A high-concentration hyaluronic acid used for deep hydration and skin remodelling, and to support firmness.",
+        "href": "/technology/profhilo",
+        "hrefLabel": "About Profhilo"
+      },
+      {
+        "eyebrow": "Non-crosslinked HA · Matex Lab, Italy",
+        "title": "Hydrodeluxe",
+        "body": "A hyaluronic acid hydrogel enriched with calcium hydroxyapatite and amino acids, used to support skin moisture and overall skin quality.",
+        "href": "/technology/hydrodeluxe",
+        "hrefLabel": "About Hydrodeluxe"
+      },
+      {
+        "eyebrow": "PDLLA + HA · VAIM, South Korea",
+        "title": "Juvelook",
+        "body": "A collagen-stimulating booster used for pores, texture and fine lines, where any change builds over months rather than days.",
+        "href": "/technology/juvelook",
+        "hrefLabel": "About Juvelook"
+      }
+    ],
+    "note": "A doctor may start with a hydrating or polynucleotide booster before a collagen-stimulating one, or decide a skin booster is not the right category at all."
+  },
+  "avoidIf": [
+    {
+      "lead": "Pregnancy or breastfeeding.",
+      "body": "Treatment is deferred."
+    },
+    {
+      "lead": "Active infection, an acne flare or inflammation",
+      "body": "at the intended injection site."
+    },
+    {
+      "lead": "A fish or seafood allergy",
+      "body": "for Rejuran and Plinest, which are fish-derived, or a known hypersensitivity to hyaluronic acid or another ingredient."
+    },
+    {
+      "lead": "A bleeding disorder or blood-thinning medication.",
+      "body": ""
+    },
+    {
+      "lead": "A tendency to keloid or hypertrophic scarring,",
+      "body": "or certain autoimmune conditions."
+    },
+    {
+      "lead": "Nodules or granulomatous reactions to a previous filler or biostimulator,",
+      "body": "which is a consideration for collagen-stimulating products such as Juvelook."
+    }
+  ],
+  "bringToConsult": "Bring your medical history, allergies and medications, and a list of every injectable you have had before, including fillers.",
+  "sessionSteps": [
+    {
+      "title": "Consultation and skin assessment",
+      "body": "Your first visit is a consultation, not a treatment. A doctor examines your skin and decides whether a skin booster suits your concern and, if so, which type: hydrating, polynucleotide or collagen-stimulating."
+    },
+    {
+      "title": "Preparation",
+      "body": "The skin is cleansed and a topical anaesthetic is usually applied and left to take effect, which accounts for much of the appointment time."
+    },
+    {
+      "title": "The injections",
+      "body": "The doctor places the product as a series of small injections across the assessed area."
+    },
+    {
+      "title": "Afterwards",
+      "body": "Soothing care and aftercare advice. The next session is spaced for your skin and response."
+    }
+  ],
+  "afterSession": {
+    "intro": "Downtime is usually short but visible for a period, and it differs between products.",
+    "bands": [
+      {
+        "title": "Straight afterwards",
+        "body": "Small raised bumps at each injection point are expected. Redness, mild swelling and pinpoint bruising can also occur."
+      },
+      {
+        "title": "The first day or two",
+        "body": "The bumps settle as the product disperses: within hours to about a day for hyaluronic acid boosters such as Profhilo, and over roughly one to two days for polynucleotides such as Rejuran and Plinest."
+      },
+      {
+        "title": "The following few days",
+        "body": "Some tenderness and any bruising fade. After a collagen-stimulating booster such as Juvelook, redness and bumps can take a few days to settle."
+      },
+      {
+        "title": "Across the course",
+        "body": "Sessions are spaced some weeks apart, and any change develops gradually."
+      }
+    ],
+    "aftercare": "Gentle skincare and sun protection, and a short break from heat, strenuous exercise and pressure on the treated area before resuming actives and makeup."
+  },
+  "risks": {
+    "intro": "Skin boosters carry the risks of any facial injection, explained in full before anything is booked.",
+    "common": "Bumps at the injection points, swelling, redness, bruising, tenderness and small palpable lumps, which typically settle over a short period.",
+    "lessCommon": "Infection, prolonged swelling, nodules and hypersensitivity reactions. Persistent nodules or granuloma formation are a recognised consideration with collagen-stimulating products. Vascular complications are rare but recognised with any facial injection. Serious effects are uncommon when the product is appropriately selected and administered by a trained doctor.",
+    "cannotDo": [
+      "It does not add volume or change the shape of the face.",
+      "It does not work in a single session. Skin boosters are used as a course, and any change develops gradually.",
+      "It is not permanent. Courses are commonly followed by periodic maintenance."
+    ],
+    "disclose": "Tell your doctor about anything in the list under who should postpone or avoid it, and about every previous filler or biostimulator."
+  },
+  "costFactors": {
+    "intro": "Kaiteki does not quote prices online, because the product and the amount of it are decided after examining your skin. What moves it:",
+    "factors": [
+      "Which product your doctor selects, and for Juvelook which concentration.",
+      "The number and size of areas: a full face, the under-eye area, the neck, hands or décolletage all differ.",
+      "The quantity of product your doctor judges appropriate.",
+      "How many sessions the course needs, and whether maintenance visits form part of the plan."
+    ]
+  },
+  "comparisons": [
+    {
+      "name": "Skin booster",
+      "bestFor": "Skin quality, hydration and fine lines linked to dryness",
+      "downtime": "1-2 days"
+    },
+    {
+      "name": "Dermal fillers",
+      "bestFor": "Lines and hollows caused by lost volume or structure",
+      "downtime": "1-3 days"
+    },
+    {
+      "name": "Botulinum toxin",
+      "bestFor": "Lines caused by muscle movement",
+      "downtime": "None"
+    },
+    {
+      "name": "HIFU / Ultherapy",
+      "bestFor": "Laxity and firmness rather than skin quality",
+      "downtime": "None for most people"
+    }
+  ],
+  "related": [
+    "microneedling",
+    "bio-stimulator",
+    "botulinum-toxin"
+  ],
+  "relatedReasons": {
+    "microneedling": "Radiofrequency microneedling, considered for texture, acne-scarring and pore concerns where a device rather than an injectable is the route.",
+    "bio-stimulator": "Injectables intended to support the skin's own structural renewal, planned across months, where the concern is structure rather than hydration.",
+    "botulinum-toxin": "Used for lines caused by muscle movement, which a skin booster does not treat."
+  },
+  "reviewedBy": "dr-chew-yuhhui",
+  "lastReviewed": "2026-06-08",
+  "seoTitle": "Skin Booster Malaysia | Rejuran, Profhilo & Juvelook",
+  "seoDescription": "Injectable skin boosters in Malaysia, including Rejuran, Profhilo and Juvelook, for skin hydration and quality. Book a free consultation at Kaiteki.",
+  "sections": [
+    {
+      "heading": "What is a skin booster?",
+      "body": [
+        "A skin booster is an injectable treatment that places hydrating and skin-conditioning ingredients into the skin to support its overall quality, rather than to add volume or change the shape of the face. Because it is an injectable, it is performed by a doctor.",
+        "Skin booster is an umbrella term covering hydrating, polynucleotide and collagen-stimulating products, compared below."
+      ]
+    },
+    {
+      "heading": "How is a skin booster different from a filler?",
+      "body": [
+        "A filler is placed to add volume or change contour: a fuller cheek, a defined chin, a corrected hollow. A skin booster is not. It is delivered as small amounts through a series of fine micro-injections spread across the treatment area, and the ingredients are intended to work within the skin itself to support hydration and skin quality over time.",
+        "That is also why the two are planned differently: a skin booster is used as a course rather than a single treatment, and any change develops gradually."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are skin boosters suitable for sensitive or acne-prone skin?",
+      "a": "They may be. The polynucleotide boosters, Rejuran and Plinest, are often considered for sensitive or damaged skin, once any active acne flare has settled."
+    },
+    {
+      "q": "Is there any downtime?",
+      "a": "Small bumps at each injection point are expected and settle within hours to about a day for hyaluronic acid boosters, and over one to two days for polynucleotides. Redness and pinpoint bruising can also occur."
+    },
+    {
+      "q": "How many sessions will I need?",
+      "a": "Usually a short course spaced some weeks apart, then periodic maintenance. The number depends on the product and your skin."
+    },
+    {
+      "q": "What is the difference between Rejuran and Profhilo?",
+      "a": "They are built on different ingredients. Rejuran is a salmon-derived polynucleotide used to support the skin barrier and healing, often considered for sensitive or damaged skin. Profhilo is a high-concentration hyaluronic acid used for deep hydration and skin remodelling."
+    },
+    {
+      "q": "Can I have a skin booster if I am allergic to fish?",
+      "a": "Tell your doctor first. Rejuran and Plinest are fish-derived polynucleotides, so a fish or seafood allergy matters for those two. The hyaluronic acid boosters, such as Profhilo and Hydrodeluxe, are built on a different ingredient."
+    }
+  ]
+}

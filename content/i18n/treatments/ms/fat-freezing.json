@@ -1,0 +1,208 @@
+{
+  "slug": "fat-freezing",
+  "durationDowntime": "35-60 minit setiap kawasan · Tiada downtime",
+  "name": "Fat Freezing (Kriolipolisis)",
+  "category": "Body & Slimming",
+  "image": "https://cdn.kaiteki.my/treatments/fat-freezing/hero.jpg",
+  "procedureImages": [
+    {
+      "src": "https://cdn.kaiteki.my/treatments/fat-freezing/procedure-01.jpg",
+      "caption": "Aplikator penyejuk dipasang pada tepi pinggang pesakit, disambungkan ke mesin rawatan."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/fat-freezing/procedure-02.jpg",
+      "caption": "Pesakit berbaring bersandar sementara aplikator penyejuk bekerja pada bahagian perut."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/fat-freezing/procedure-03.jpg",
+      "caption": "Pesakit berehat sambil melihat telefon semasa aplikator penyejuk bekerja."
+    }
+  ],
+  "summary": "Istilah umum untuk kriolipolisis, bagi masalah lemak setempat.",
+  "leadAnswer": "Fat freezing (kriolipolisis) menggunakan penyejukan terkawal untuk menyasarkan lemak setempat di kawasan tertentu, dan ia bukan rawatan menurunkan berat badan. Sama ada sesuatu kawasan boleh dirawat atau tidak bergantung pada sama ada aplikator boleh menarik dan memegangnya, dan ini perlu diperiksa sendiri oleh doktor.",
+  "related": [
+    "microwave-contouring"
+  ],
+  "reviewedBy": "dr-jessie-lim",
+  "lastReviewed": "2026-06-10",
+  "seoTitle": "Fat Freezing di Malaysia | Rawatan Cryolipolysis | Kaiteki",
+  "seoDescription": "Fat freezing (kriolipolisis) di Malaysia untuk lemak setempat, bukan turun berat badan. Tempah konsultasi percuma dengan doktor Kaiteki untuk semak kesesuaian.",
+  "typicalSessions": "Ditentukan secara individu, ikut kawasan",
+  "facts": [
+    {
+      "value": "Penyejukan terkawal",
+      "label": "Dikenakan pada lemak setempat yang boleh ditarik dan dipegang oleh aplikator"
+    },
+    {
+      "value": "35–60 minit",
+      "label": "Tempoh biasa satu kitaran aplikator, setiap kawasan"
+    },
+    {
+      "value": "Penilaian dahulu",
+      "label": "Lawatan pertama anda ialah konsultasi doktor, bukan rawatan"
+    }
+  ],
+  "routes": [
+    {
+      "title": "Lemak degil yang boleh dicubit dan tidak berubah dengan diet",
+      "body": "Penyejukan terkawal pada lemak setempat yang jelas sempadannya, yang boleh dicubit dan ditarik masuk ke dalam aplikator.",
+      "links": [
+        {
+          "href": "/concerns/body-slimming",
+          "label": "Baca tentang pelangsingan badan"
+        }
+      ]
+    },
+    {
+      "title": "Lemak setempat di bawah dagu (dagu berlapis)",
+      "body": "Penyejukan terkawal pada lemak setempat di bawah dagu, hanya relevan jika kepenuhan itu memang lemak.",
+      "links": [
+        {
+          "href": "/concerns/face-contouring",
+          "label": "Kontur muka"
+        }
+      ]
+    }
+  ],
+  "routesNote": "Ia ditujukan untuk orang yang berada pada atau hampir dengan berat badan yang stabil, dengan lemak setempat di kawasan tertentu, bukan untuk berat badan keseluruhan yang perlu diturunkan.",
+  "variantModule": {
+    "heading": "Cooltech atau CoolSculpting: mesin mana, dan kenapa",
+    "intro": "Kedua-duanya mesin kriolipolisis yang berfungsi dengan prinsip yang sama. Perbezaannya pada reka bentuk aplikator, dan doktor yang memilih mesin serta aplikator untuk kawasan anda.",
+    "items": [
+      {
+        "eyebrow": "Penyejukan 360° · Cocoon Medical",
+        "title": "Cooltech",
+        "body": "Pengeluar menggambarkan penyejukan 360° di sekeliling tisu yang ditarik masuk, bukan dari satu plat sentuhan sahaja, dan lebih daripada satu aplikator boleh digunakan serentak, jadi dua kawasan atau kedua-dua tepi pinggang mungkin boleh dirawat dalam satu temu janji.",
+        "href": "/technology/cooltech",
+        "hrefLabel": "Tentang Cooltech"
+      },
+      {
+        "eyebrow": "Kriolipolisis · CoolSculpting",
+        "title": "CoolSculpting",
+        "body": "Aplikator menarik kawasan sasaran rapat pada plat penyejuk, dan setiap kitaran biasanya mengambil masa kira-kira 35 hingga 60 minit.",
+        "href": "/technology/coolsculpting",
+        "hrefLabel": "Tentang CoolSculpting"
+      }
+    ]
+  },
+  "ctaMid": {
+    "heading": "Tak pasti sama ada kawasan anda boleh ditarik dan dipegang oleh aplikator?",
+    "body": "Doktor boleh periksa sendiri dengan ujian cubit sama ada kawasan itu ialah lemak yang boleh dirawat oleh aplikator."
+  },
+  "avoidIf": [
+    {
+      "lead": "Hamil atau menyusukan anak.",
+      "body": "Rawatan ditangguhkan."
+    },
+    {
+      "lead": "Keadaan berkaitan sejuk",
+      "body": "seperti krioglobulinemia, urtikaria sejuk atau hemoglobinuria sejuk paroksismal."
+    },
+    {
+      "lead": "Hernia",
+      "body": "di dalam atau berhampiran kawasan rawatan."
+    },
+    {
+      "lead": "Kulit yang luka atau dijangkiti",
+      "body": "di atas kawasan yang hendak dirawat."
+    },
+    {
+      "lead": "Keadaan tertentu berkaitan peredaran darah, saraf atau hati,",
+      "body": "yang akan diterangkan oleh doktor kepada anda."
+    }
+  ],
+  "bringToConsult": "Bawa sejarah perubatan anda, senarai ubat, sebarang implan atau peranti, dan butiran prosedur membentuk badan yang pernah dibuat sebelum ini.",
+  "sessionSteps": [
+    {
+      "title": "Konsultasi dan penilaian",
+      "body": "Lawatan pertama anda ialah konsultasi, bukan rawatan. Doktor memeriksa sama ada lemak di kawasan itu boleh ditarik masuk ke dalam aplikator."
+    },
+    {
+      "title": "Persediaan",
+      "body": "Kawasan rawatan ditanda, kemudian pad gel pelindung dan aplikator diletakkan di atas lemak setempat itu."
+    },
+    {
+      "title": "Kitaran penyejukan",
+      "body": "Kawasan itu disejukkan untuk tempoh yang ditetapkan. Pada mulanya terasa sejuk yang kuat dan tarikan yang ketat daripada sedutan, yang biasanya berkurang apabila kawasan itu menjadi kebas."
+    },
+    {
+      "title": "Selepas itu",
+      "body": "Aplikator ditanggalkan dan kawasan itu diurut."
+    }
+  ],
+  "afterSession": {
+    "intro": "Downtime biasanya terhad, dan kebanyakan orang kembali kepada aktiviti harian selepas sesi.",
+    "bands": [
+      {
+        "title": "Sejurus selepas rawatan",
+        "body": "Kawasan itu selalunya kelihatan merah dan terasa keras, sejuk atau kebas yang luar biasa, dan ini biasanya reda dalam beberapa jam hingga beberapa hari berikutnya."
+      },
+      {
+        "title": "Minggu-minggu pertama",
+        "body": "Rasa sengal, bengkak, kesemutan atau sakit tumpul sementara di kawasan yang dirawat boleh berlarutan beberapa hari hingga satu atau dua minggu, dan sesetengah orang lebih selesa memakai pakaian longgar atau pakaian mampatan dalam tempoh itu."
+      },
+      {
+        "title": "Beberapa minggu hingga bulan",
+        "body": "Sebarang perubahan berlaku secara beransur-ansur, kerana badan menyingkirkan sel yang dirawat dalam beberapa minggu berikutnya dan bukan semasa temu janji, jadi ia biasanya dinilai kira-kira dua bulan kemudian, bukan serta-merta."
+      }
+    ],
+    "aftercare": "Kekalkan berat badan yang stabil dengan pemakanan dan aktiviti biasa anda."
+  },
+  "risks": {
+    "intro": "Kriolipolisis ada risikonya, dan doktor akan menerangkannya sebelum apa-apa rawatan ditempah.",
+    "common": "Kemerahan, bengkak, lebam, rasa keras, kebas, kesemutan, gatal atau kejang di kawasan yang dirawat, serta perubahan deria pada kulit yang mungkin mengambil masa beberapa minggu untuk kembali normal.",
+    "lessCommon": "Sakit yang berlarutan di kawasan yang dirawat, dan hiperplasia adipos paradoks, di mana lemak setempat yang dirawat menjadi keras dan membesar dan bukannya mengecil. Kesan serius jarang berlaku apabila rawatan dipilih dengan betul dan dijalankan oleh doktor yang terlatih.",
+    "pigmentNote": "Ia bertindak pada lemak di bawah kulit, bukan pada pigmen, jadi warna kulit kurang penting berbanding rawatan laser. Ketebalan dan taburan lemak di kawasan itu lebih penting.",
+    "cannotDo": [
+      "Ia bukan rawatan menurunkan berat badan, bukan rawatan obesiti, dan tidak menggantikan pemakanan, senaman atau pengurusan berat badan secara perubatan.",
+      "Bukan setiap lemak setempat boleh ditarik dan dipegang oleh aplikator.",
+      "Ia tidak menghalang sel lemak yang tinggal daripada membesar apabila berat badan naik, sebab itu berat badan yang stabil penting."
+    ],
+    "disclose": "Beritahu doktor tentang apa-apa dalam senarai siapa yang patut menangguhkan atau mengelak rawatan ini, dan tentang sebarang implan, peranti atau ubat."
+  },
+  "costFactors": {
+    "intro": "Kaiteki tidak menyiarkan harga dalam talian. Sebut harga diberi mengikut kitaran aplikator selepas doktor melihat kawasan mana yang benar-benar boleh dirawat. Perkara yang mempengaruhinya:",
+    "factors": [
+      "Kawasan yang hendak dirawat.",
+      "Saiz lemak setempat itu, dan berapa kali aplikator perlu diletakkan untuk meliputinya.",
+      "Bilangan kitaran yang diperlukan untuk setiap kawasan, dan sama ada sesi seterusnya dirancang selepas penilaian semula."
+    ]
+  },
+  "relatedReasons": {
+    "microwave-contouring": "Pendekatan berasaskan gelombang mikro untuk lemak setempat, rupa selulit dan ketegangan kulit, apabila penyejukan bukan kaedahnya."
+  },
+  "sections": [
+    {
+      "heading": "Apa itu fat freezing?",
+      "body": [
+        "Fat freezing ialah nama harian untuk kriolipolisis, iaitu pendekatan tanpa pembedahan yang menggunakan penyejukan terkawal untuk menyasarkan lemak setempat di kawasan tertentu pada badan. \"Fat freezing\" menggambarkan kaedahnya, bukan satu mesin tertentu, dan beberapa mesin berfungsi dengan prinsip kriolipolisis yang sama.",
+        "Ia ditujukan untuk lemak degil setempat di kawasan yang jelas, bukan untuk menurunkan berat badan secara keseluruhan."
+      ]
+    },
+    {
+      "heading": "Kenapa penyejukan memberi kesan pada lemak dan bukan pada kulit di sekelilingnya?",
+      "body": [
+        "Kriolipolisis berdasarkan idea bahawa sel lemak lebih sensitif terhadap sejuk berbanding kulit, saraf dan otot di sekelilingnya. Semasa sesi, aplikator menyejukkan kawasan yang ditetapkan pada suhu rendah yang terkawal untuk tempoh tertentu.",
+        "Tujuannya ialah memberi kesan pada sel lemak dalam lemak setempat yang dirawat sambil mengehadkan kesan pada tisu berdekatan. Badan kemudian menyingkirkan sel yang terjejas secara beransur-ansur dalam beberapa minggu berikutnya."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Fat freezing ialah rawatan turun berat badan ke?",
+      "a": "Bukan. Ia menyasarkan lemak setempat di kawasan tertentu, bukan berat badan keseluruhan, dan ditujukan untuk orang yang berada pada atau hampir dengan berat badan yang stabil."
+    },
+    {
+      "q": "Fat freezing sakit tak?",
+      "a": "Kebanyakan orang merasa sejuk yang kuat dan tarikan yang ketat daripada sedutan pada mulanya, yang biasanya berkurang apabila kawasan itu menjadi kebas."
+    },
+    {
+      "q": "Perlu buat fat freezing berapa sesi?",
+      "a": "Ia bergantung pada kawasan, jumlah lemak setempat dan tindak balas anda, yang dinilai semula kira-kira dua bulan selepas setiap sesi."
+    },
+    {
+      "q": "Bila saya mungkin mula nampak perubahan?",
+      "a": "Sebarang perubahan berlaku secara beransur-ansur, kerana badan menyingkirkan sel yang dirawat dalam beberapa minggu, jadi ia biasanya dinilai kira-kira dua bulan selepas sesi."
+    }
+  ]
+}

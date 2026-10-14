@@ -1,0 +1,89 @@
+{
+  "slug": "vascular-pigment-laser",
+  "durationDowntime": "15-30 min · Minimal downtime (1-3 days)",
+  "name": "Vascular / Pigment Laser",
+  "category": "Lasers",
+  "image": "https://cdn.kaiteki.my/treatments/vascular-pigment-laser/hero.jpg",
+  "procedureImages": [
+    {
+      "src": "https://cdn.kaiteki.my/treatments/vascular-pigment-laser/procedure-01.jpg",
+      "caption": "A practitioner in protective eyewear works on the patient's face with a fine laser handpiece."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/vascular-pigment-laser/procedure-02.jpg",
+      "caption": "A practitioner applies the light-based handpiece to the patient's cheek."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/vascular-pigment-laser/procedure-03.jpg",
+      "caption": "A practitioner directs a laser at the patient's forehead; the patient wears eye shields."
+    }
+  ],
+  "summary": "Laser and light-based devices used for visible blood vessels, redness and pigment concerns.",
+  "leadAnswer": "Vascular / Pigment Laser covers the light-based devices Kaiteki uses on visible blood vessels, facial redness and pigment: Pro Yellow, M22 IPL and the dedicated DermaV platform. Which one a doctor uses depends on whether the target is a vessel or a pigment, and how deep it sits, which is decided at examination.",
+  "related": [
+    "pico-laser"
+  ],
+  "reviewedBy": "dr-jeremy-low",
+  "lastReviewed": "2026-07-13",
+  "seoTitle": "Pigmentation & Vascular Laser Malaysia | Kaiteki",
+  "seoDescription": "Laser treatment in Malaysia for pigmentation, redness and visible vessels using M22 IPL, Pro Yellow and DermaV. Book a free consultation at Kaiteki.",
+  "sections": [
+    {
+      "heading": "What is Vascular / Pigment Laser treatment?",
+      "body": [
+        "Vascular / Pigment Laser is a group of light-based devices, not a single machine. Each wavelength is chosen to target either visible blood vessels or pigment in the skin. The group is commonly considered for facial redness and thread veins, sun spots and other pigment marks, and rosacea-associated flushing as part of a wider plan.",
+        "At Kaiteki the group is Pro Yellow (a QuadroStar 577nm yellow-light laser), M22 IPL (intense pulsed light) and the dedicated DermaV vascular-pigment platform."
+      ]
+    },
+    {
+      "heading": "How does one wavelength target a vessel and another a pigment?",
+      "body": [
+        "Pro Yellow delivers 577nm yellow-light energy, a wavelength associated with absorption by blood vessels, and is generally considered for vascular concerns such as redness and visible vessels. M22 IPL delivers broad-spectrum light that can be filtered for either vascular or pigment targets, offering flexibility across different skin concerns in one platform.",
+        "The doctor selects the device, wavelength and settings for your concern and skin tone. The target, a vessel or a pigment particle, absorbs the energy, which may gradually reduce its visibility or prompt the body to clear it over time."
+      ]
+    },
+    {
+      "heading": "Who should not have vascular or pigment laser?",
+      "body": [
+        "Treatment may not be appropriate during pregnancy, with certain skin conditions or medications, or on recently tanned skin. Suitability also depends on which of the three devices is being considered, so bring your full medical and skincare history."
+      ]
+    },
+    {
+      "heading": "What happens at a session, and how long does the redness last?",
+      "body": [
+        "The doctor first works out whether the target is a vessel, a pigment or both, because that decides the device and settings. A patch or test area may be done before treatment goes ahead.",
+        "Downtime is usually limited. Temporary redness or mild sensitivity typically settles. Use sun protection and gentle skincare afterwards."
+      ]
+    },
+    {
+      "heading": "What are the risks of vascular and pigment laser?",
+      "body": [
+        "Temporary effects can include redness, swelling or changes in pigmentation. Treating a vessel with a wavelength meant for pigment, or the reverse, is the mistake that causes the rest, and it is what the assessment and any test patch exist to prevent."
+      ]
+    },
+    {
+      "heading": "Why does the cost depend on which device is used?",
+      "body": [
+        "Sessions and cost depend on the device, the concern and how your skin responds. The three platforms are not priced alike, so the cost follows the doctor's choice of device rather than preceding it."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the difference between Pro Yellow and M22 IPL?",
+      "a": "Pro Yellow delivers a single 577nm yellow-light wavelength, generally considered for vascular concerns. M22 IPL delivers broad-spectrum light that can be filtered for either vascular or pigment targets."
+    },
+    {
+      "q": "How is this different from DermaV?",
+      "a": "DermaV is a dedicated dual-wavelength vascular-pigment device, used alongside Pro Yellow and M22 IPL. All three address related concerns with different technology, and the doctor selects one for your skin and concern."
+    },
+    {
+      "q": "Is this suitable for darker Asian skin tones?",
+      "a": "These devices are used across a range of skin tones, but some skin types and concerns need particular care to reduce the risk of pigment change, so your skin type and history are assessed first."
+    },
+    {
+      "q": "How many sessions will I need?",
+      "a": "A course of several sessions spaced a few weeks apart is common. Vessels can recur because the tendency behind them remains, so the doctor will say whether you are looking at a course or an ongoing arrangement."
+    }
+  ]
+}

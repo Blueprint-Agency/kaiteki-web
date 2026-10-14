@@ -120,7 +120,7 @@ const terms: Record<NonDefaultLocale, Record<Kind, Names>> = {
       "exosome-therapy": "Rawatan Exosome",
       "vascular-pigment-laser": "Laser Vaskular & Pigmentasi",
       "resurfacing-laser": "Laser Resurfacing",
-      "microwave-contouring": "Kontur Badan Gelombang Mikro",
+      "microwave-contouring": "Kontur Gelombang Mikro",
       "muscle-stimulation": "Rangsangan Otot",
       "dermal-fillers": "Dermal Filler",
       "facial-treatments": "Rawatan Facial",

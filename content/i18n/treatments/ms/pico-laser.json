@@ -1,0 +1,308 @@
+{
+  "slug": "pico-laser",
+  "durationDowntime": "20-40 minit · Downtime minimum (1-2 hari)",
+  "name": "Pico Laser",
+  "category": "Lasers",
+  "image": "https://cdn.kaiteki.my/treatments/pico-laser/hero-2.jpg",
+  "procedureImages": [
+    {
+      "src": "https://cdn.kaiteki.my/treatments/pico-laser/procedure-01.jpg",
+      "caption": "Pengamal menggerakkan alat laser di atas pipi pesakit semasa sesi di Kaiteki."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/pico-laser/procedure-02.jpg",
+      "caption": "Pengamal yang memakai pelindung mata menggerakkan alat laser di seluruh muka pesakit."
+    },
+    {
+      "src": "https://cdn.kaiteki.my/treatments/pico-laser/procedure-03.jpg",
+      "caption": "Pengamal meletakkan lengan laser di sebelah pesakit yang memakai pelindung mata."
+    }
+  ],
+  "device": "PicoSure",
+  "summary": "Laser pikosaat yang digunakan untuk pigmentasi, warna kulit kusam dan buang tatu, sesuai untuk pelbagai warna kulit Asia.",
+  "leadAnswer": "Pico laser ialah satu kategori laser, bukan satu mesin. Setiap mesin pico memancarkan denyutan yang berlangsung dalam ukuran sepertrilion saat, tetapi panjang gelombangnya berbeza, dan panjang gelombang itulah yang menentukan pigmen, warna dakwat dan warna kulit yang sesuai untuk sesuatu mesin. Atas sebab itu Kaiteki menggunakan lebih daripada satu platform pico, dan doktor yang menentukan platform mana, jika ada, yang sesuai dengan kulit anda.",
+  "facts": [
+    {
+      "value": "2 platform pico",
+      "label": "Dipadankan dengan jenis kulit dan pigmen anda"
+    },
+    {
+      "value": "20–40 minit",
+      "label": "Tempoh biasa sesi pigmentasi muka, termasuk persediaan"
+    },
+    {
+      "value": "Penilaian dahulu",
+      "label": "Lawatan pertama anda ialah konsultasi doktor, bukan rawatan"
+    }
+  ],
+  "jumpNav": [
+    {
+      "id": "what-is-pico-laser",
+      "label": "Apa itu pico laser"
+    },
+    {
+      "id": "what-it-treats",
+      "label": "Pico laser untuk apa"
+    },
+    {
+      "id": "which-device",
+      "label": "Jenis mesin"
+    },
+    {
+      "id": "suitability",
+      "label": "Kesesuaian"
+    },
+    {
+      "id": "after-a-session",
+      "label": "Selepas pico laser"
+    },
+    {
+      "id": "risks",
+      "label": "Risiko, kesan sampingan & had"
+    },
+    {
+      "id": "sessions-cost",
+      "label": "Sesi & kos"
+    }
+  ],
+  "routes": [
+    {
+      "title": "Pigmen permukaan (sun spot)",
+      "body": "Sun spot, freckles dan tanda pigmen benigna lain yang terletak di lapisan atas kulit. Ini biasanya pigmen yang paling boleh dijangka untuk dirawat dan lazimnya memerlukan paling sedikit sesi.",
+      "links": [
+        {
+          "href": "/concerns/pigmentation",
+          "label": "Baca tentang pigmentasi"
+        }
+      ]
+    },
+    {
+      "title": "Pigmen lebih dalam dan berkaitan hormon (jeragat)",
+      "body": "Jeragat (melasma), dan keadaan pigmen dermis seperti nevus Ota atau nevus Hori. Pigmen ini terletak lebih dalam, tindak balasnya kurang boleh dijangka, dan jeragat khususnya ialah keadaan jangka panjang yang dikawal, bukan diselesaikan.",
+      "links": [
+        {
+          "href": "/concerns/pigmentation",
+          "label": "Baca tentang pigmentasi"
+        }
+      ]
+    },
+    {
+      "title": "Kesan jerawat dan warna kulit",
+      "body": "Tanda coklat yang tinggal selepas jerawat reda, serta warna kulit keseluruhan yang kusam atau tidak sekata dan rupa liang pori yang besar. Jerawat aktif dirawat secara perubatan dahulu; lihat di bawah.",
+      "links": [
+        {
+          "href": "/concerns/acne",
+          "label": "Baca tentang jerawat"
+        },
+        {
+          "href": "/concerns/enlarged-pores",
+          "label": "Liang pori besar"
+        }
+      ]
+    },
+    {
+      "title": "Dakwat tatu (buang tatu)",
+      "body": "Dakwat hitam dan biru gelap memberi tindak balas yang paling boleh dijangka. Warna cerah, putih dan sesetengah pigmen kosmetik atau solekan separa kekal boleh sukar dirawat atau berkelakuan tidak dijangka, jadi setiap tatu dinilai secara individu.",
+      "links": [
+        {
+          "href": "/concerns/tattoo-removal",
+          "label": "Baca tentang buang tatu"
+        }
+      ]
+    }
+  ],
+  "routesNote": "Pico laser merawat kesan yang ditinggalkan jerawat, bukan jerawat itu sendiri. Jerawat aktif yang meradang biasanya dirawat secara perubatan dahulu, dan rawatan pigmen dibuat selepas kulit reda.",
+  "variantModule": {
+    "heading": "Jenis mesin pico laser, dan kenapa ia penting",
+    "intro": "Kedua-dua platform memancarkan denyutan pikosaat, tetapi panjang gelombang utamanya berbeza, dan panjang gelombang mengubah sejauh mana melanin menyerap denyutan itu. Itu perbezaan dalam cara tenaga dihantar, bukan penarafan.",
+    "items": [
+      {
+        "eyebrow": "755nm · Cynosure",
+        "title": "PicoSure",
+        "body": "Platform dengan panjang gelombang alexandrite. 755nm diserap dengan kuat oleh melanin, yang berguna untuk pigmen dan warna dakwat tertentu, tetapi menjadikan warna kulit faktor yang lebih besar dalam tetapan yang dipilih. Pengeluar mengehadkan sesetengah indikasi mengikut jenis kulit Fitzpatrick.",
+        "href": "/technology/picosure",
+        "hrefLabel": "Tentang PicoSure"
+      },
+      {
+        "eyebrow": "1064nm · Fotona",
+        "title": "Fotona PQX (StarWalker)",
+        "body": "Dibina di sekitar panjang gelombang Nd:YAG 1064nm yang lebih panjang, yang kurang berinteraksi dengan melanin di permukaan dan menembusi lebih dalam. Sering dipilih apabila warna kulit atau kedalaman pigmen menjadikan 755nm kurang sesuai.",
+        "href": "/technology/fotona-pqx",
+        "hrefLabel": "Tentang Fotona PQX"
+      }
+    ],
+    "note": "Klinik yang hanya ada satu mesin hanya boleh menawarkan panjang gelombang mesin itu. Dengan dua mesin, mesin boleh dipadankan dengan kulit anda, bukan sebaliknya."
+  },
+  "ctaMid": {
+    "heading": "Tak pasti yang mana satu berkaitan dengan anda?",
+    "body": "Doktor boleh memeriksa kulit anda, memberitahu jenis pigmen yang anda alami, dan menyatakan dengan jujur sama ada pico laser alat yang sesuai untuknya."
+  },
+  "avoidIf": [
+    {
+      "lead": "Hamil atau menyusukan anak.",
+      "body": "Rawatan biasanya ditangguhkan."
+    },
+    {
+      "lead": "Kulit yang baru digelapkan atau terbakar matahari.",
+      "body": "Ini meningkatkan risiko tindak balas yang tidak sekata dan perubahan pigmen selepas itu."
+    },
+    {
+      "lead": "Jangkitan, keradangan atau luka terbuka yang aktif",
+      "body": "di kawasan yang akan dirawat."
+    },
+    {
+      "lead": "Sejarah parut keloid atau hipertrofik.",
+      "body": ""
+    },
+    {
+      "lead": "Ubat yang meningkatkan kepekaan terhadap cahaya,",
+      "body": "termasuk isotretinoin oral."
+    },
+    {
+      "lead": "Laser, peel kimia atau prosedur lain baru-baru ini",
+      "body": "di kawasan yang sama."
+    }
+  ],
+  "bringToConsult": "Bawa sejarah perubatan, ubat dan penjagaan kulit anda, termasuk laser atau peel sebelum ini dan sebarang kecenderungan kulit menjadi gelap selepas jerawat atau calar. Butiran terakhir itu mengubah tetapan yang dipilih.",
+  "sessionSteps": [
+    {
+      "title": "Konsultasi dan penilaian kulit",
+      "body": "Lawatan pertama anda ialah konsultasi doktor, bukan rawatan. Doktor memeriksa kawasan itu, mengambil sejarah anda, dan menerangkan sama ada pico laser sesuai. Kadangkala jawapannya ialah rawatan lain, atau menunggu dahulu."
+    },
+    {
+      "title": "Kawasan ujian jika sesuai",
+      "body": "Satu kawasan kecil mungkin dirawat dahulu, terutamanya bagi pigmen yang lebih dalam atau dakwat tatu yang komposisinya tidak diketahui, dan disemak sebelum sesi penuh ditempah."
+    },
+    {
+      "title": "Persediaan",
+      "body": "Kulit dibersihkan dan pelindung mata dipakaikan. Krim kebas mungkin disapu jika pelan memerlukannya, paling kerap untuk kawasan sensitif dan buang tatu."
+    },
+    {
+      "title": "Rawatan laser",
+      "body": "Alat laser digerakkan di atas kawasan itu dalam laluan yang bertindih. Kebanyakan orang menggambarkan rasa seperti petikan getah atau cucukan jarum panas yang singkat, bukan sakit yang berterusan. Pigmen yang dirawat mungkin nampak lebih gelap atau kelabu buat sementara sejurus selepas itu, dan ini dijangka."
+    },
+    {
+      "title": "Selepas itu",
+      "body": "Langkah menyejukkan atau menenangkan kulit, pelindung matahari, dan arahan penjagaan untuk kawasan yang dirawat. Tempoh sesi tatu bergantung pada saiznya."
+    }
+  ],
+  "afterSession": {
+    "intro": "Downtime biasanya singkat, tetapi singkat bukan bermakna tiada, dan apa yang anda lihat dalam dua minggu pertama ialah sebahagian daripada proses, bukan masalah.",
+    "bands": [
+      {
+        "title": "Beberapa jam pertama",
+        "body": "Kemerahan ringan, rasa panas dan kadangkala sedikit bengkak. Kebanyakan orang boleh meneruskan aktiviti harian."
+      },
+      {
+        "title": "Hari pertama hingga kedua",
+        "body": "Kemerahan lazimnya reda. Jika pigmen disasarkan secara terus, bintik yang dirawat sering nampak lebih gelap daripada sebelumnya. Ini dijangka dan bukan tanda rawatan tidak menjadi."
+      },
+      {
+        "title": "Hari ketiga hingga lebih kurang dua minggu",
+        "body": "Serpihan kecil yang gelap atau kuping halus mungkin muncul, kemudian tertanggal sendiri. Biarkan sahaja; mengopek ialah punca paling biasa tanda yang bertahan lebih lama daripada rawatan itu sendiri."
+      },
+      {
+        "title": "Antara sesi",
+        "body": "Sesi dijarakkan beberapa minggu supaya kulit sempat membersihkan pigmen yang dirawat sebelum laluan seterusnya."
+      }
+    ],
+    "aftercare": "Pelindung matahari spektrum luas setiap hari dan benar-benar mengelak matahari, kerana pendedahan matahari antara sesi ialah sebab utama pigmen kembali; pembersihan dan pelembap yang lembut; dan tiada retinoid atau asid sehingga doktor membenarkan anda menyambungnya semula."
+  },
+  "risks": {
+    "intro": "Setiap satu diterangkan semasa konsultasi, sebelum apa-apa ditempah.",
+    "common": "Kemerahan, rasa panas, bengkak ringan, lebam titik halus dan kuping kecil yang tertanggal dalam satu hingga dua minggu.",
+    "lessCommon": "Kulit yang dirawat menjadi lebih gelap selepas rawatan (hiperpigmentasi pasca-radang), kulit yang dirawat menjadi lebih cerah, melepuh dan, jarang sekali, parut.",
+    "pigmentNote": "Hiperpigmentasi pasca-radang ialah risiko yang paling penting bagi warna kulit yang biasa di sini: kulit yang mempunyai lebih banyak melanin bertindak balas terhadap kecederaan dengan menghasilkan lebih banyak pigmen, jadi tetapan yang terlalu agresif boleh meninggalkan tanda yang lebih gelap daripada tanda asal yang dirawat. Sebab itu doktor mungkin memilih tenaga yang lebih rendah, jarak sesi yang lebih panjang, ujian tampalan atau panjang gelombang yang lain. Pelan yang lebih perlahan selalunya pelan yang lebih selamat.",
+    "cannotDo": [
+      "Ia tidak menghentikan pembentukan pigmen baharu. Tanpa perlindungan matahari setiap hari, tanda berkaitan matahari akan kembali, dan jeragat khususnya turun naik mengikut pendedahan matahari dan hormon, jadi ia dikawal secara jangka panjang, bukan selesai dalam kursus yang tetap.",
+      "Ia tidak merawat jerawat aktif. Kesan yang ditinggalkan, ya; keadaan radang itu sendiri dirawat secara perubatan.",
+      "Ia tidak dapat menjanjikan tatu hilang sepenuhnya. Komposisi dakwat jarang diketahui dengan pasti, dan sesetengah warna tidak bertindak balas dengan baik.",
+      "Ia tidak mengangkat atau menegangkan kulit."
+    ],
+    "disclose": "Beritahu doktor tentang apa-apa yang disenaraikan di bawah siapa yang patut menangguhkan rawatan, dan sebarang sejarah herpes bibir (cold sore)."
+  },
+  "costFactors": {
+    "intro": "Kaiteki tidak memaparkan harga dalam talian; angka yang anda terima semasa konsultasi mencerminkan pelan anda selepas dinilai. Faktor yang mempengaruhinya:",
+    "factors": [
+      "Jenis dan kedalaman pigmen. Sun spot di permukaan biasanya memerlukan lebih sedikit lawatan berbanding pigmen dermis yang lebih dalam.",
+      "Saiz kawasan yang dirawat, sama ada beberapa bintik, seluruh muka atau satu bahagian badan.",
+      "Mesin dan tetapan yang dipilih doktor untuk jenis kulit anda.",
+      "Bagi tatu: warna dakwat, ketumpatan, berapa lapisan yang dibuat, usia tatu dan kedudukannya di badan.",
+      "Tindak balas kulit anda antara sesi, yang disemak pada setiap lawatan.",
+      "Sama ada rawatan pico digabungkan dengan langkah lain dalam pelan yang lebih luas."
+    ],
+    "outro": "Pigmentasi muka lazimnya dirancang sebagai beberapa sesi yang dijarakkan beberapa minggu, dan disemak dari semasa ke semasa; jeragat diurus secara berterusan."
+  },
+  "related": [
+    "microneedling",
+    "vascular-pigment-laser",
+    "resurfacing-laser"
+  ],
+  "relatedReasons": {
+    "microneedling": "Dipertimbangkan apabila masalahnya ialah parut jerawat berlubang atau tekstur kulit, bukan pigmen.",
+    "vascular-pigment-laser": "Digunakan apabila kemerahan dan saluran darah yang ketara wujud bersama pigmen, sesuatu yang tidak dirawat oleh pico laser.",
+    "resurfacing-laser": "Pendekatan laser CO2 fraksional, dipertimbangkan untuk parut yang lebih dalam dan perubahan tekstur yang ketara."
+  },
+  "reviewedBy": "dr-chew-yuhhui",
+  "lastReviewed": "2026-06-20",
+  "seoTitle": "Rawatan Pico Laser di Malaysia | Pigmentasi | Kaiteki",
+  "seoDescription": "Pico laser Kaiteki guna denyutan pikosaat untuk pigmentasi, kulit tidak sekata dan dakwat tatu. Doktor menilai mesin dan tetapan yang sesuai untuk kulit anda.",
+  "sections": [
+    {
+      "heading": "Apa itu pico laser?",
+      "body": [
+        "“Pico” merujuk kepada tempoh denyutan laser, bukan jenama. Satu pikosaat ialah sepertrilion saat, dan denyutan sesingkat itu menghantar tenaganya lebih cepat daripada kulit di sekeliling sempat menjadi panas. Oleh itu kesannya pada pigmen sebahagian besarnya bersifat fotomekanikal (gelombang kejutan pantas yang memecahkan gugusan pigmen), bukan haba.",
+        "Ini penting kerana haba cenderung mencetuskan masalah pigmen pada warna kulit yang biasa di Malaysia, dan sebab itu mesin pikosaat digunakan secara meluas di sini untuk rawatan pigmen. Kesesuaian masih bergantung pada tiga perkara yang diperiksa doktor: jenis dan kedalaman pigmen anda, jenis kulit anda, dan sama ada kulit anda cenderung meninggalkan tanda selepas keradangan."
+      ]
+    },
+    {
+      "heading": "Bagaimana denyutan pikosaat memecahkan pigmen?",
+      "body": [
+        "Denyutan ini diserap oleh pigmen jauh lebih kuat berbanding kulit di sekelilingnya. Kerana ia bermula dan berakhir dalam ukuran sepertrilion saat, zarah pigmen menerima tenaga itu sebagai kejutan mekanikal dan pecah menjadi serpihan yang lebih kecil. Serpihan itu kemudian dibersihkan secara beransur-ansur oleh sel imun badan sendiri dalam beberapa minggu berikutnya, dan sebab itu perubahan yang nampak selepas sesi pico berkembang dari semasa ke semasa, bukan muncul pada hari yang sama.",
+        "Apabila dihantar pada tenaga yang lebih rendah dengan kanta difraktif, denyutan yang sama menghasilkan zon kecil kecederaan terkawal di lapisan atas kulit tanpa memecahkan permukaan. Ini digunakan sebagai laluan pembaharuan kulit untuk tekstur dan warna kulit, bukan untuk tanda tertentu. Panjang gelombang, tenaga, saiz titik dan kanta ditetapkan bagi setiap pesakit, bukan tetap."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Apa beza PicoSure dan Fotona PQX?",
+      "a": "Kedua-duanya laser pikosaat dengan panjang gelombang utama yang berbeza. 755nm PicoSure diserap dengan kuat oleh melanin, yang berguna untuk pigmen dan warna dakwat tertentu, tetapi menjadikan warna kulit faktor yang lebih besar dalam tetapan. 1064nm Fotona PQX kurang berinteraksi dengan melanin di permukaan dan menembusi lebih dalam. Sesuatu pelan mungkin menggunakan salah satu, yang satu lagi, atau kedua-duanya."
+    },
+    {
+      "q": "Pico laser sakit tak?",
+      "a": "Kebanyakan orang menggambarkan rasa seperti petikan getah atau cucukan jarum panas yang singkat, bukan sakit yang berterusan, dan denyutan pikosaat secara amnya dilaporkan lebih mudah ditahan berbanding laser denyutan panjang yang lebih lama. Krim kebas boleh digunakan untuk kawasan sensitif dan buang tatu, dan tetapan boleh dilaraskan semasa sesi."
+    },
+    {
+      "q": "Perlu buat pico laser berapa kali?",
+      "a": "Bergantung pada jenis dan kedalaman pigmen, saiz kawasan, dan tindak balas kulit anda antara lawatan. Sun spot di permukaan biasanya memerlukan lebih sedikit sesi berbanding pigmen dermis atau tatu yang padat. Pigmentasi muka lazimnya dirancang sebagai beberapa sesi yang dijarakkan beberapa minggu; jeragat diurus secara berterusan."
+    },
+    {
+      "q": "Apa kesan selepas pico laser, dan downtime berapa lama?",
+      "a": "Kemerahan ringan dan rasa panas selama beberapa jam, kadangkala sedikit bengkak. Bintik yang dirawat sering nampak lebih gelap selama sehari dua, kemudian serpihan kecil atau kuping halus tertanggal sendiri dalam satu hingga dua minggu. Jangan kopek, gunakan penjagaan kulit yang lembut, dan pakai pelindung matahari setiap hari."
+    },
+    {
+      "q": "Boleh nampak perubahan selepas satu sesi ke?",
+      "a": "Tidak semestinya. Badan anda membersihkan pigmen yang telah pecah secara beransur-ansur, jadi perubahan berlaku dalam beberapa minggu selepas setiap sesi, dan pigmen yang lebih dalam biasanya memerlukan lebih banyak sesi berbanding tanda di permukaan. Kemajuan disemak pada setiap lawatan."
+    },
+    {
+      "q": "Pico laser sesuai ke untuk kulit gelap atau sawo matang orang Malaysia?",
+      "a": "Laser pikosaat digunakan pada pelbagai warna kulit, tetapi kulit yang mempunyai lebih banyak melanin lebih cenderung menjadi gelap selepas rawatan, jadi tetapan, panjang gelombang dan jarak sesi dipilih dengan lebih konservatif, dan ujian tampalan sering digunakan. 755nm lebih banyak berinteraksi dengan melanin berbanding 1064nm, dan itu salah satu sebab Kaiteki menggunakan kedua-duanya."
+    },
+    {
+      "q": "Pico laser boleh rawat jeragat (melasma) ke?",
+      "a": "Kadangkala, dengan berhati-hati. Jeragat ialah keadaan kronik yang dipengaruhi matahari dan hormon, dan boleh berulang, dan rawatan yang terlalu agresif boleh memburukkannya. Ia biasanya diurus sebagai pelan berterusan yang merangkumi perlindungan matahari, penjagaan topikal dan tetapan klinik yang konservatif, dan doktor menentukan sama ada sebarang laser sesuai untuk jeragat anda sama sekali."
+    },
+    {
+      "q": "Boleh ke buang tatu sepenuhnya?",
+      "a": "Itu tidak dapat diramal sebelum penilaian. Dakwat hitam dan biru gelap memberi tindak balas yang paling boleh dijangka; warna cerah, putih dan sesetengah pigmen kosmetik boleh sukar dirawat atau berkelakuan tidak dijangka. Kerana komposisi dakwat jarang diketahui, kawasan ujian yang kecil mungkin dirawat dahulu. Saiz, kedalaman, usia dan lokasi tatu mempengaruhi bilangan sesi."
+    },
+    {
+      "q": "Berapa harga atau kos pico laser di Malaysia?",
+      "a": "Kaiteki tidak memaparkan harga dalam talian. Kos bergantung pada jenis dan kedalaman pigmen, saiz kawasan, mesin dan tetapan, bilangan sesi dan sebarang rawatan gabungan, dan bagi tatu, warna dan ketumpatan dakwat juga. Harga dimaklumkan semasa konsultasi berdasarkan pelan anda selepas dinilai."
+    },
+    {
+      "q": "Boleh pakai makeup atau terus kembali bekerja selepas pico laser?",
+      "a": "Kebanyakan orang meneruskan aktiviti harian sejurus selepas sesi pigmentasi muka, dan kemerahan biasanya reda dalam beberapa jam hingga sehari dua. Makeup boleh dipakai semula apabila kemerahan reda, hanya di atas kulit yang tidak luka dan tidak sekali-kali di atas kuping. Pelindung matahari setiap hari lebih penting daripada masa memakai makeup."
+    }
+  ]
+}
