@@ -85,7 +85,7 @@ function Banner({ c }: { c: Concern }) {
   const { srcSet: mobileSrcSet, ...img } = getImageProps({ ...common, src: c.banner.sm }).props;
 
   return (
-    <div className="relative aspect-[16/9] w-full bg-tint sm:aspect-[2.88/1]">
+    <div className="relative aspect-[16/9] w-full bg-tint sm:absolute sm:inset-0 sm:aspect-auto">
       <picture>
         <source media="(min-width: 640px)" srcSet={desktop.srcSet} sizes={desktop.sizes} />
         <source srcSet={mobileSrcSet} sizes={img.sizes} />
@@ -228,12 +228,19 @@ export function ConcernView({
         </Container>
 
         {c.banner ? (
-          <div className="relative mt-6">
+          // The box keeps the banner's 2.88:1 shape as a minimum: with the copy in
+          // normal flow, a headline taller than the artwork (a long Malay or
+          // Chinese summary at tablet widths) grows the box instead of spilling
+          // over the breadcrumb and the fact rail, which the absolutely
+          // positioned copy did. On wide screens the copy fits and nothing moves.
+          <div className="relative mt-6 sm:flex sm:aspect-[2.88/1] sm:items-center">
             <Banner c={c} />
             {/* On sm+ the headline sits in the banner's empty right half; on
                 narrow screens the artwork is too tight for it, so it falls
-                below the image instead of over a face. */}
-            <Container className="sm:absolute sm:inset-0 sm:flex sm:items-center">
+                below the image instead of over a face. With no reviewer byline
+                under it (an unsigned page) the CTA note would sit on the
+                divider, so the copy carries its own bottom space. */}
+            <Container className={`relative sm:w-full sm:py-8 ${review ? "" : "pb-10 sm:pb-8"}`}>
               <div className="pt-8 sm:ml-auto sm:w-1/2 sm:pt-0">
                 <p className="kicker">{fmt(ui.kicker, { group: term(locale, "group", c.group, c.group) })}</p>
                 <h1 className="h-hero mt-4">{c.name}</h1>
