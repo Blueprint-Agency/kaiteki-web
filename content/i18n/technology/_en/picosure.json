@@ -1,0 +1,118 @@
+{
+  "slug": "picosure",
+  "name": "PicoSure",
+  "group": "Lasers",
+  "type": "device",
+  "treatments": [
+    "pico-laser"
+  ],
+  "image": "https://cdn.kaiteki.my/images/technology/picosure.jpg",
+  "device": "PicoSure",
+  "summary": "A 755nm picosecond aesthetic laser used within Pico laser treatment for pigmentation, uneven tone and tattoo ink.",
+  "leadAnswer": "PicoSure is a 755nm picosecond aesthetic laser made by Cynosure, used at Kaiteki as one of the devices within our Pico laser treatment. Its pulses are short enough to act on pigment largely through a photomechanical shockwave rather than by heating surrounding tissue. Whether it suits your pigment, and at what settings, is decided at consultation.",
+  "facts": [
+    {
+      "value": "755nm",
+      "label": "Wavelength"
+    },
+    {
+      "value": "Cynosure, United States",
+      "label": "Manufacturer"
+    },
+    {
+      "value": "Pico laser",
+      "label": "Used within"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is PicoSure?",
+      "body": [
+        "PicoSure is a picosecond aesthetic laser made by Cynosure (United States), used at Kaiteki as one of the devices within our Pico laser treatment. Picosecond lasers fire pulses measured in trillionths of a second, which is short enough that the energy acts on pigment largely through a photomechanical shockwave rather than by heating the surrounding skin.",
+        "What separates PicoSure from most other picosecond platforms is its primary wavelength. Cynosure describes it as a 755nm picosecond laser (755nm is the alexandrite wavelength), whereas the majority of pico devices are built around a 1064nm/532nm Nd:YAG source. The manufacturer also offers optional 532nm and 1064nm delivery systems for tattoo work. Which wavelength, and whether a pico laser suits you at all, is something a doctor decides after examining your skin at consultation."
+      ]
+    },
+    {
+      "heading": "How the 755nm picosecond platform works",
+      "body": [
+        "At 755nm, absorption by melanin is comparatively high relative to longer wavelengths, so the pulse can be aimed at pigment clusters with less energy spilling into surrounding tissue.",
+        "Delivery is adjustable rather than one-size-fits-all: Cynosure lists a zoom handpiece covering 2–6mm and fixed handpieces at 5, 6, 8 and 10mm, a flat lens for pigment work, and the focus lens array, which concentrates energy into microscopic points in the epidermis for skin revitalisation passes. A shortened-pulse turbo mode is offered for stubborn tattoo ink. Fluence, spot size and lens are selected by the treating doctor for your skin type and concern; changes develop gradually over a course and vary between individuals."
+      ]
+    },
+    {
+      "heading": "Which pigment and ink does each PicoSure wavelength suit?",
+      "body": [
+        "Cynosure states that the 755nm system is indicated for tattoo and benign pigmented lesion removal, and, with the Platinum Focus™ lens array, for acne scars and wrinkles in skin types I to IV. The optional 532nm delivery is indicated by the manufacturer for tattoo removal in skin types I to III, and the optional 1064nm delivery for tattoo and benign pigmented lesions, including black ink in darker skin types.",
+        "Within Kaiteki's Pico laser treatment, PicoSure is commonly considered for the concerns below. It is not appropriate for everyone, and a consultation determines whether it is suitable for you and whether a different wavelength or device would be a better fit."
+      ],
+      "list": [
+        "Sun spots, freckles and other benign pigmented lesions",
+        "Melasma and stubborn dermal pigmentation, as assessed by your doctor",
+        "Dermal pigment conditions such as naevus of Ota and Hori's naevus",
+        "Unwanted tattoo ink, including darker blue, green and black pigments",
+        "Uneven skin tone, enlarged-looking pores and dull texture",
+        "Acne scarring and fine lines, using the focus lens array"
+      ]
+    },
+    {
+      "heading": "Why does skin tone matter more with PicoSure's 755nm?",
+      "body": [
+        "Because 755nm is well absorbed by melanin, skin tone matters more with this wavelength than with a 1064nm pico laser. That is precisely why your doctor may recommend PicoSure for one patient and a 1064nm platform such as Fotona PQX for another, and why the manufacturer's own indications are limited by skin type for certain wavelengths. A doctor assesses your Fitzpatrick skin type, pigment pattern and tendency to pigment after inflammation before proposing settings."
+      ]
+    },
+    {
+      "heading": "When should PicoSure be postponed, and who should avoid it?",
+      "body": [
+        "A pico laser may not be suitable during pregnancy or breastfeeding, on recently tanned or sunburnt skin, with active skin infection or inflammation in the treatment area, with a history of keloid scarring, or while you are taking medications that increase light sensitivity, oral isotretinoin among them. Please bring your full medical, medication and skincare history to consultation, including any previous laser or peel treatments, so the doctor can advise safely."
+      ]
+    },
+    {
+      "heading": "What happens at a PicoSure session, and why does pigment darken first?",
+      "body": [
+        "Your first visit is a doctor consultation and skin assessment rather than a treatment. If PicoSure is appropriate, the doctor may treat a small test area first, particularly for dermal pigment or for tattoo ink of unknown composition. On a treatment day the skin is cleansed, eye shields are fitted, and topical numbing may be applied where the plan calls for it.",
+        "The handpiece is then passed over the area in overlapping passes. Most patients describe brief snapping or prickling sensations rather than sustained pain, and pigment lesions may look temporarily darker or greyish immediately afterwards. A facial pigment session is usually a short appointment, often around 20 to 40 minutes including preparation, while tattoo work depends on size. Courses are typically several sessions spaced a few weeks apart to allow the skin to clear treated pigment between visits; your doctor will set the interval for your case.",
+        "Downtime is usually short but varies between individuals and with the intensity used. Mild redness, a warm sensation and slight swelling are common for a few hours to a day or two. Where pigment has been targeted directly, small darkened flecks or fine crusting may appear and then flake away over roughly one to two weeks. These should be left alone rather than picked.",
+        "Daily broad-spectrum sunscreen and strict sun avoidance are important afterwards, because sun exposure between sessions is one of the main reasons pigment concerns return. Keep skincare gentle and pause actives such as retinoids and acids until your doctor confirms it is fine to resume. You will be given aftercare instructions specific to the area treated."
+      ]
+    },
+    {
+      "heading": "Can PicoSure darken or lighten the skin?",
+      "body": [
+        "As with any medical laser procedure, PicoSure carries risks, and these are explained to you at consultation before anything is booked. Temporary effects can include redness, swelling, pinpoint bruising, crusting, and either darkening (post-inflammatory hyperpigmentation) or lightening of the treated skin, which is a particular consideration for melasma and for deeper skin tones. Blistering and scarring are uncommon. Risk is reduced, though never removed, when the device and settings are appropriately selected and the treatment is performed by a trained doctor."
+      ]
+    }
+  ],
+  "costFactors": {
+    "intro": "Pricing is discussed at consultation rather than quoted online, so the figure you are given reflects your actual assessed plan. What moves it:",
+    "factors": [
+      "The depth and type of pigment. Superficial sun spots generally need fewer visits than dermal pigment or a dense multicolour tattoo.",
+      "The size of the area.",
+      "For tattoos, the ink colours and how many layers were applied.",
+      "Your skin's response between visits.",
+      "Whether pico work is combined with other steps in your plan."
+    ],
+    "outro": "Some pigment conditions such as melasma are managed on an ongoing basis rather than finished in a fixed number of sessions."
+  },
+  "faqs": [
+    {
+      "q": "How is PicoSure different from a 1064nm pico laser?",
+      "a": "PicoSure's main wavelength is 755nm, while most picosecond platforms are built around a 1064nm/532nm Nd:YAG source. The shorter 755nm wavelength is absorbed more strongly by melanin, which is useful for some pigment and tattoo colours but makes skin tone a bigger factor in the settings chosen. Your doctor may recommend one over the other, or a combination across a plan, after assessing your skin at consultation."
+    },
+    {
+      "q": "Is PicoSure safe for Malaysian and other Asian skin tones?",
+      "a": "Pico lasers are used across a wide range of skin tones, but a 755nm wavelength interacts more with melanin than a 1064nm one, so conservative settings and a test area are often used on deeper skin. Cynosure itself limits some of the device's indications by Fitzpatrick skin type. A doctor assesses your skin type and pigment history at consultation and will tell you honestly if another device suits you better."
+    },
+    {
+      "q": "Does PicoSure hurt, and is numbing cream used?",
+      "a": "Most people describe brief snapping or hot-pinprick sensations rather than continuous pain, and picosecond pulses are generally reported as more tolerable than older longer-pulse lasers. Topical numbing can be applied for sensitive areas or tattoo work when your doctor considers it appropriate. Comfort varies between individuals, so raise your concerns at consultation and during the session."
+    },
+    {
+      "q": "Will the pigment come back after a course of PicoSure?",
+      "a": "Some pigment concerns are one-off lesions and others, such as melasma, are chronic conditions that fluctuate with sun exposure, hormones and skincare. That means maintenance sessions and daily sun protection are often part of a realistic plan rather than an optional extra. Your doctor will explain what to expect for your particular pigment pattern at consultation."
+    }
+  ],
+  "reviewedBy": "dr-jade",
+  "lastReviewed": "2026-07-18",
+  "seoTitle": "PicoSure 755nm Picosecond Laser Malaysia | Kaiteki",
+  "seoDescription": "PicoSure is a 755nm picosecond laser used at Kaiteki within Pico laser treatment for pigmentation, uneven tone and tattoo ink. Book a free consultation today."
+}

@@ -1,0 +1,116 @@
+{
+  "slug": "ultherapy-system",
+  "name": "Ultherapy System",
+  "group": "Lifting & Tightening",
+  "type": "device",
+  "treatments": [
+    "ultherapy"
+  ],
+  "image": "https://cdn.kaiteki.my/images/technology/ultherapy-system.jpg",
+  "device": "Ultherapy",
+  "summary": "A micro-focused ultrasound platform from Merz Aesthetics with built-in DeepSEE ultrasound imaging, used for non-surgical lifting of the face and neck.",
+  "leadAnswer": "The Ultherapy System is a micro-focused ultrasound platform from Merz Aesthetics. What separates it from other focused-ultrasound devices is DeepSEE imaging, which lets the doctor see the tissue layers on screen while planning where energy is placed, rather than working to a standard grid alone.",
+  "facts": [
+    {
+      "value": "Micro-focused ultrasound",
+      "label": "Energy"
+    },
+    {
+      "value": "DeepSEE imaging",
+      "label": "Distinguishing feature"
+    },
+    {
+      "value": "Ultherapy",
+      "label": "Used within"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is the Ultherapy System?",
+      "body": [
+        "The Ultherapy System is a micro-focused ultrasound platform developed by Ulthera and now part of Merz Aesthetics. It is used within Kaiteki's Ultherapy treatment for non-surgical lifting of the brow, lower face and neck, and for lines on the décolletage. Like other focused-ultrasound devices, it passes energy through the skin surface and concentrates it at a chosen depth beneath, so the layer being heated is deeper than the layer the transducer touches.",
+        "The feature that separates it from the rest of the category is imaging. Merz refers to the technology as micro-focused ultrasound with visualisation (MFU-V), because the same transducer that delivers energy also produces a live ultrasound image of the tissue beneath it, through what the manufacturer calls DeepSEE® imaging. That means the doctor can see the tissue planes on screen before energy is delivered rather than working from external landmarks alone. Whether it is appropriate for your face, and where the energy should go, is determined by a doctor at an in-person consultation."
+      ]
+    },
+    {
+      "heading": "How micro-focused ultrasound with visualisation works",
+      "body": [
+        "Energy is focused to very small points at set depths, producing discrete zones of controlled heating that prompt a tissue-repair and collagen-remodelling response over the following months. The intervening tissue and the skin surface are not the target, which is why there is no wound to heal afterwards.",
+        "The imaging is the practical difference during the session. The current Ultherapy PRIME generation adds a larger screen and a faster image refresh, and Merz lists the face, neck, décolletage, abdomen and arms among the areas it is indicated for. This does not make imaging-free HIFU devices unsuitable (they are well established and are chosen for good reasons), but visualisation does let the doctor confirm depth and avoid structures such as bone and dense fascia before each line. Transducer choice, depth and line count are decided by the treating doctor, and any change develops gradually and varies between individuals."
+      ]
+    },
+    {
+      "heading": "Which layers does Ultherapy treat, and at what depths?",
+      "body": [
+        "Merz describes DeepSEE transducers that treat at three depths (approximately 1.5 mm in the superficial dermis, 3.0 mm in the deeper dermis and 4.5 mm at the level of the SMAS fascia), so the doctor can choose the layer rather than treating one fixed plane. The SMAS (superficial muscular aponeurotic system) is the deeper support layer of the face: the same layer a surgical facelift addresses, though focused ultrasound reaches it without incisions.",
+        "The manufacturer states that the system visualises tissue to a depth of around 8 mm, which is what lets the doctor confirm the plane on screen before each line is delivered."
+      ]
+    },
+    {
+      "heading": "Is Ultherapy a non-surgical facelift?",
+      "body": [
+        "No. It reaches some of the same deeper tissue a surgical facelift addresses, but it does not cut, lift or remove skin, and the degree of change is not comparable to surgery. If your laxity is advanced or there is significant excess skin, your doctor may say honestly that a non-surgical option is unlikely to achieve what you have in mind.",
+        "Ultherapy is commonly considered where the concern is laxity and loss of definition rather than surface texture or pigment. It is not suitable for everyone, and a consultation determines whether it is appropriate for you."
+      ],
+      "list": [
+        "Sagging along the jawline, jowls and lower face",
+        "Loose or crepey skin on the neck and under the chin",
+        "A heavy or descending brow line",
+        "Lines and laxity on the chest and décolletage",
+        "Laxity on the abdomen or upper arms, where clinically appropriate"
+      ]
+    },
+    {
+      "heading": "Does Ultherapy suit every skin tone, and who should avoid it?",
+      "body": [
+        "Micro-focused ultrasound is absorbed by tissue rather than by melanin, so it is generally used across the full range of skin tones, including deeper Asian skin, without the pigment-related risk profile of some lasers. It tends to suit people with mild to moderate laxity who still have reasonable skin quality.",
+        "It may not be suitable during pregnancy or breastfeeding, over active infection, open wounds or significant inflammatory acne in the treatment area, or where implants, metallic or electronic devices such as pacemakers, or recently placed fillers or threads lie in the intended path. Keloid tendency, bleeding disorders, certain medications and some autoimmune conditions also need to be weighed. Please share your full medical history and previous aesthetic treatments at consultation."
+      ]
+    },
+    {
+      "heading": "What happens during an Ultherapy session, from mapping to aftercare?",
+      "body": [
+        "A visit begins with a doctor consultation and an assessment of how your laxity is distributed, since this treatment is planned area by area rather than applied uniformly. If Ultherapy is appropriate, the skin is cleansed, treatment zones are marked on a grid, and coupling gel is applied. The doctor then places the transducer, checks the tissue image on screen to confirm the plane, and delivers a line of micro-focused pulses; this is repeated line by line across the mapped area.",
+        "Most people describe brief deep prickling, heat or tingling with each line, felt more strongly over bony areas, with the sensation ending as soon as the pulse does. Comfort measures can be discussed beforehand. A face and neck session commonly takes in the region of 60 to 90 minutes. It is often planned as a single session with a review a few months later once the tissue response has had time to develop, with maintenance considered periodically rather than on a fixed schedule.",
+        "There is usually no wound and no dressing, and most people return to normal activities the same day. Mild redness, slight swelling, tenderness to touch, or a temporary firm or lumpy feeling under the skin can occur and generally settle over days to a few weeks, though this varies between individuals.",
+        "Gentle skincare and daily sun protection are advised, and your doctor may ask you to avoid strenuous heat exposure for a short period. Aftercare guidance is given specific to the areas treated."
+      ]
+    },
+    {
+      "heading": "What are the risks of Ultherapy, including temporary nerve effects?",
+      "body": [
+        "As with any medical procedure, Ultherapy carries risks, which are explained during consultation. Temporary effects can include redness, swelling, tenderness, bruising, welts, or transient numbness or tingling in the treated area; less commonly, temporary nerve-related effects such as localised muscle weakness or altered sensation have been reported with focused-ultrasound treatments. Serious effects are uncommon when the treatment is appropriately selected, carefully mapped and performed by a trained doctor."
+      ]
+    }
+  ],
+  "costFactors": {
+    "intro": "Pricing is discussed at consultation rather than quoted online, so that any figure reflects the plan actually recommended for you. What moves it:",
+    "factors": [
+      "The number of ultrasound lines delivered, rather than how long you are in the room.",
+      "The areas covered. A brow-and-jawline plan, a full face and neck, and a décolletage or body area each represent a different amount of energy delivered.",
+      "How your tissue responds, which decides whether a review or a later maintenance session is worthwhile."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What is the difference between Ultherapy and HIFU?",
+      "a": "Both focus ultrasound energy at a depth beneath the skin, so mechanically they belong to the same family. The distinction is that the Ultherapy System includes built-in real-time ultrasound imaging, so the doctor can see the tissue plane on screen before delivering energy, whereas most HIFU platforms treat at a preset depth without visualisation. Imaging-free HIFU devices remain widely and appropriately used; which is better for you depends on your anatomy and goals, and your doctor will explain the reasoning at consultation."
+    },
+    {
+      "q": "Why does the built-in imaging matter for me as a patient?",
+      "a": "Visualisation lets the doctor confirm that the focal point is landing in the intended layer for your particular tissue thickness, and to see structures such as bone or dense fascia before each line is delivered. It supports precision in planning rather than guaranteeing any specific outcome. Your doctor can show you what the imaging is being used for during your session."
+    },
+    {
+      "q": "Is Ultherapy suitable for Asian skin tones?",
+      "a": "Micro-focused ultrasound is absorbed by tissue rather than by melanin, so it is generally used across all skin tones, including deeper Asian skin, without the pigmentary considerations that apply to some light-based devices. Suitability still depends on your degree of laxity, tissue thickness and medical history. A doctor assesses this in person before recommending treatment."
+    },
+    {
+      "q": "How long before I see anything, and how long does it last?",
+      "a": "The tissue response is gradual, so any change typically develops over roughly two to six months rather than immediately, and it varies considerably between individuals. It is not permanent (skin continues to age), so plans often include a review and periodic maintenance. Your doctor will give you a realistic timeline for your own skin at consultation."
+    }
+  ],
+  "reviewedBy": "dr-chew-yuhhui",
+  "lastReviewed": "2026-07-18",
+  "seoTitle": "Ultherapy System Non-Surgical Lifting Malaysia | Kaiteki",
+  "seoDescription": "The Ultherapy System uses micro-focused ultrasound with built-in DeepSEE imaging for non-surgical face and neck lifting. Book a free consultation at Kaiteki."
+}

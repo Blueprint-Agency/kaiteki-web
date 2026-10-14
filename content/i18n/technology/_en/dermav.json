@@ -1,0 +1,114 @@
+{
+  "slug": "dermav",
+  "name": "DermaV",
+  "group": "Lasers",
+  "type": "device",
+  "treatments": [
+    "vascular-pigment-laser"
+  ],
+  "image": "https://cdn.kaiteki.my/images/technology/dermav.jpg",
+  "summary": "A dual-wavelength (595nm/1064nm) vascular and pigment laser used for facial redness, visible vessels and pigment concerns.",
+  "leadAnswer": "DermaV is a dual-wavelength laser that can be directed at both red and brown concerns in one treatment plan. It combines 595nm for vascular targets such as facial redness and visible vessels with 1064nm, and at Kaiteki it is used within our vascular and pigment laser treatment.",
+  "facts": [
+    {
+      "value": "595nm and 1064nm",
+      "label": "Wavelengths"
+    },
+    {
+      "value": "Vascular and pigment",
+      "label": "Targets"
+    },
+    {
+      "value": "Vascular / pigment laser",
+      "label": "Used within"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is DermaV?",
+      "body": [
+        "DermaV is a dual-wavelength aesthetic laser used to address both vascular (redness-related) and pigment concerns in the skin. Although it is often described as a vascular laser, the device combines two laser wavelengths in one platform, so it can be directed at red and brown concerns within a single treatment plan.",
+        "At Kaiteki, DermaV is used as part of an individually assessed plan. Whether it suits your skin depends on your concern, skin type and medical history, which a doctor evaluates during consultation."
+      ]
+    },
+    {
+      "heading": "How it works: dual wavelengths",
+      "body": [
+        "DermaV delivers two laser wavelengths that target different concerns. A 595nm wavelength is directed at vascular concerns such as visible vessels and facial redness, while a 1064nm wavelength reaches deeper and is used for certain pigment concerns.",
+        "An integrated contact-cooling system helps protect and soothe the skin surface during treatment, which is intended to support comfort and reduce the risk of heat-related effects. The treating doctor selects the wavelength, settings and combination for your skin tone and concern. Results develop gradually and vary between individuals."
+      ]
+    },
+    {
+      "heading": "Can DermaV treat redness and pigment in the same plan?",
+      "body": [
+        "DermaV combines a vascular (595nm) and a pigment (1064nm) wavelength in one device, so it may be directed at both red and brown concerns within a plan.",
+        "DermaV is commonly considered for the following concerns. It is not suitable for everyone, and a consultation determines whether it is appropriate for you."
+      ],
+      "list": [
+        "Facial redness and rosacea-type flushing",
+        "Broken capillaries and spider veins around the nose or cheeks",
+        "Brown spots, sun spots and sun-related pigmentation",
+        "Post-inflammatory hyperpigmentation (PIH)",
+        "Lingering post-acne redness"
+      ]
+    },
+    {
+      "heading": "Why is DermaV used on Asian and sensitive skin?",
+      "body": [
+        "Suitability is assessed individually. The dual wavelengths and integrated cooling mean DermaV is used across a range of skin tones, including Asian and more sensitive skin, but this does not make it appropriate for everyone. If DermaV is appropriate, a patch or test area may be considered before proceeding."
+      ]
+    },
+    {
+      "heading": "When should DermaV be postponed?",
+      "body": [
+        "DermaV may not be suitable during pregnancy, with certain skin conditions or medications, or on recently tanned skin. Please share your full medical and skincare history at consultation so the doctor can advise safely."
+      ]
+    },
+    {
+      "heading": "What happens at a DermaV session, and how red is the skin afterwards?",
+      "body": [
+        "A typical visit begins with a doctor consultation and skin assessment. The skin is cleansed and a cooling gel applied, then the laser is delivered using the 595nm and 1064nm wavelengths as needed for your concern.",
+        "A cooling and soothing step follows, and the doctor will advise on aftercare and sun protection. A course of several sessions spaced a few weeks apart is common, but the plan is individual and your doctor will explain what to expect for your skin.",
+        "Downtime is usually limited but varies between individuals. Temporary redness or mild sensitivity can occur after a session and typically settles within a short period.",
+        "Sun protection and gentle skincare are advised afterwards. Your doctor will give aftercare guidance specific to your skin and concern."
+      ]
+    },
+    {
+      "heading": "What are DermaV's risks, including pigment change?",
+      "body": [
+        "As with any medical procedure, DermaV carries risks, which are explained during consultation. Temporary effects can include redness, swelling or changes in pigmentation. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor."
+      ]
+    }
+  ],
+  "costFactors": {
+    "intro": "Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. What moves it:",
+    "factors": [
+      "The concern being addressed.",
+      "The area treated.",
+      "Your individual response.",
+      "Whether occasional maintenance sessions form part of the plan over time."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Is DermaV suitable for darker or sensitive Asian skin tones?",
+      "a": "DermaV is used across a range of skin tones, and its dual wavelengths and contact cooling are designed with sensitive and Asian skin in mind. Suitability is still individual, so a doctor assesses your skin type and history at consultation before recommending it."
+    },
+    {
+      "q": "Can DermaV treat both redness and pigmentation?",
+      "a": "DermaV combines a vascular (595nm) and a pigment (1064nm) wavelength in one device, so it may be directed at both red and brown concerns within a plan. Which wavelengths are used, and whether the treatment suits you, is decided by your doctor at consultation."
+    },
+    {
+      "q": "Is there any downtime after DermaV?",
+      "a": "Downtime is usually limited. Some slight redness can occur for a few hours after a session and typically settles quickly, though this varies between individuals. Your doctor will explain what to expect and give you aftercare guidance."
+    },
+    {
+      "q": "How many DermaV sessions will I need?",
+      "a": "It varies. A course of several sessions spaced a few weeks apart is common, sometimes with occasional maintenance afterwards, but the plan depends on your concern and how your skin responds. Your doctor will outline a realistic plan at consultation."
+    }
+  ],
+  "reviewedBy": "dr-yvonne-chuah",
+  "lastReviewed": "2026-07-18",
+  "seoTitle": "DermaV Vascular & Pigment Laser Treatment Malaysia | Kaiteki",
+  "seoDescription": "DermaV is a dual-wavelength laser used at Kaiteki for facial redness, visible vessels and pigment concerns. Book a free consultation to check your suitability."
+}

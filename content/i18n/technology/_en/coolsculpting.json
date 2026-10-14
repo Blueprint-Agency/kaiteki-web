@@ -1,0 +1,115 @@
+{
+  "slug": "coolsculpting",
+  "name": "CoolSculpting",
+  "group": "Body & Slimming",
+  "type": "device",
+  "treatments": [
+    "fat-freezing"
+  ],
+  "image": "https://cdn.kaiteki.my/images/technology/coolsculpting.jpg",
+  "device": "CoolSculpting",
+  "summary": "A cryolipolysis (fat-freezing) device that uses controlled cooling to target pockets of localised fat.",
+  "leadAnswer": "CoolSculpting is a brand of cryolipolysis device that uses controlled cooling, applied through applicators placed on the skin, to target pockets of localised fat that persist despite diet and exercise. It is not a weight-loss treatment, and whether it suits your concern is assessed by a doctor.",
+  "facts": [
+    {
+      "value": "Controlled cooling",
+      "label": "Method"
+    },
+    {
+      "value": "35 to 60 minutes",
+      "label": "Typical applicator cycle"
+    },
+    {
+      "value": "Fat freezing",
+      "label": "Used within"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is CoolSculpting?",
+      "body": [
+        "CoolSculpting is a brand of cryolipolysis (\"fat freezing\") device that uses controlled cooling to target areas of localised fat. It is a non-surgical, non-injectable approach that works through applicators placed on the skin over the treatment area.",
+        "It is used to address specific pockets of fat that persist despite diet and exercise, rather than to reduce overall body weight. Whether it suits you depends on your concern, the area involved and your medical history, which a doctor assesses during consultation."
+      ]
+    },
+    {
+      "heading": "How it works",
+      "body": [
+        "During treatment, a device applicator draws the target area against a cooling plate. The controlled cooling is intended to affect fat cells beneath the skin while aiming to leave the overlying skin unharmed.",
+        "Affected fat cells are gradually processed and cleared by the body over the following weeks. Any change develops slowly rather than immediately, and the extent varies between individuals."
+      ]
+    },
+    {
+      "heading": "What will CoolSculpting not do?",
+      "body": [
+        "CoolSculpting is not a weight-loss treatment and is not a substitute for diet, exercise or medical management of weight. It is intended for people close to their target weight who have specific, pinchable pockets of fat."
+      ]
+    },
+    {
+      "heading": "Which areas can a CoolSculpting applicator fit?",
+      "body": [
+        "CoolSculpting is commonly considered for localised fat in areas where a suitable applicator can be fitted. It is not suitable for everyone, and a consultation determines whether it is appropriate for you."
+      ],
+      "list": [
+        "Lower-abdomen and \"muffin top\" area",
+        "Flanks (love handles) and back or bra-line fat",
+        "Inner and outer thighs",
+        "Upper arms",
+        "Under-chin (submental) fullness"
+      ]
+    },
+    {
+      "heading": "Which conditions rule out CoolSculpting?",
+      "body": [
+        "It may not be appropriate during pregnancy, with certain cold-related conditions, or with some medical histories. Please share your full medical history at consultation so the doctor can assess suitability and explain the risks before any treatment is planned."
+      ]
+    },
+    {
+      "heading": "What does a CoolSculpting cycle feel like, and is there downtime?",
+      "body": [
+        "A visit begins with a doctor assessment of the area and your goals. If treatment is appropriate, the area is marked, a gel pad is applied to protect the skin, and the applicator is positioned.",
+        "Each applicator cycle typically runs for around 35 to 60 minutes, during which you may feel cold and some pulling or pressure that usually eases. A short massage of the treated area may follow. The number of areas and applicators is individual, so overall visit time varies.",
+        "Downtime is usually limited, and many people return to daily activities the same day, though this varies. Temporary redness, swelling, firmness, tenderness or altered sensation in the treated area can occur and typically settles over days to weeks.",
+        "Your doctor will give aftercare guidance specific to you. Any change to the area develops gradually over the weeks and months that follow."
+      ]
+    },
+    {
+      "heading": "What are the risks of freezing fat with CoolSculpting?",
+      "body": [
+        "As with any medical procedure, cryolipolysis carries risks, which are explained during consultation. Common temporary effects include redness, swelling, bruising, firmness, tingling or numbness in the treated area.",
+        "Less common effects exist and are discussed individually. Serious effects are uncommon when the treatment is appropriately selected and performed under a trained doctor's care."
+      ]
+    }
+  ],
+  "costFactors": {
+    "intro": "Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. What moves it:",
+    "factors": [
+      "The number of areas.",
+      "The number of applicators each area needs.",
+      "The number of sessions.",
+      "How your body responds."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Is CoolSculpting a weight-loss treatment?",
+      "a": "No. CoolSculpting is a cryolipolysis treatment aimed at specific pockets of localised fat, not overall weight reduction. It is not a substitute for diet, exercise or medical weight management. A consultation assesses whether it is appropriate for you."
+    },
+    {
+      "q": "How long does a CoolSculpting session take?",
+      "a": "Each applicator cycle usually runs for around 35 to 60 minutes. The overall visit depends on how many areas and applicators are involved, which varies between individuals and is planned by your doctor at consultation."
+    },
+    {
+      "q": "When might I notice a change?",
+      "a": "Any change develops gradually over the weeks and months after treatment as the body processes the affected fat cells, rather than immediately. The extent varies between individuals, and your doctor will explain what is realistic for you."
+    },
+    {
+      "q": "Does CoolSculpting have downtime?",
+      "a": "Downtime is usually limited and many people resume daily activities the same day, though this varies. Temporary redness, swelling, firmness or altered sensation can occur and typically settles. Your doctor will give aftercare guidance specific to you."
+    }
+  ],
+  "reviewedBy": "dr-jacqueline-tan",
+  "lastReviewed": "2026-07-18",
+  "seoTitle": "CoolSculpting Fat-Freezing Treatment Malaysia | Kaiteki",
+  "seoDescription": "CoolSculpting is a cryolipolysis device using controlled cooling to target pockets of localised fat. Book a free consultation at Kaiteki to check suitability."
+}

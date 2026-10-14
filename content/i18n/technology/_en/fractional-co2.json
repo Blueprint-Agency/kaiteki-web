@@ -1,0 +1,116 @@
+{
+  "slug": "fractional-co2",
+  "name": "Fractional CO2",
+  "group": "Lasers",
+  "type": "device",
+  "treatments": [
+    "resurfacing-laser"
+  ],
+  "image": "https://cdn.kaiteki.my/images/technology/fractional-co2.jpg",
+  "summary": "A fractional ablative CO2 resurfacing laser that creates controlled columns of micro-injury, used within resurfacing-laser treatment for texture and scarring.",
+  "leadAnswer": "Fractional CO2 is a category of resurfacing laser rather than a single brand. A carbon dioxide laser emits infrared light at 10,600nm, a wavelength absorbed by water, which makes it ablative: it vaporises a thin amount of tissue in controlled columns rather than heating through an intact surface.",
+  "facts": [
+    {
+      "value": "10,600nm",
+      "label": "Wavelength"
+    },
+    {
+      "value": "Ablative",
+      "label": "Laser class"
+    },
+    {
+      "value": "Resurfacing laser",
+      "label": "Used within"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is fractional CO2 laser resurfacing?",
+      "body": [
+        "Fractional CO2 is a category of resurfacing laser rather than a single brand. A carbon dioxide laser emits infrared light at 10,600nm, a wavelength strongly absorbed by water in the skin, which makes it ablative: rather than heating tissue through an intact surface, it vaporises a thin amount of tissue where the beam lands. That places it at the more assertive end of the laser spectrum, which is why it is generally considered for textural concerns and scarring rather than surface tone alone.",
+        "The word fractional describes how the energy is delivered. Instead of treating the whole surface at once, the beam is split into a grid of very fine columns, commonly called microthermal treatment zones, so each treated column is surrounded by untreated skin. That untreated skin is what separates fractional delivery from the fully ablative resurfacing that preceded it: it shortens recovery considerably, at the cost of treating less surface per pass, which is why a small course is usual. At Kaiteki, fractional CO2 is used within our resurfacing laser treatment. Whether it suits your skin, or whether a gentler non-ablative option would be more appropriate, is assessed by a doctor at an in-person consultation."
+      ]
+    },
+    {
+      "heading": "How fractional CO2 works",
+      "body": [
+        "Each ablated column is surrounded by a narrow zone of coagulated tissue, and the intact skin between columns acts as a reservoir for healing. Remodelling depends on the skin's repair response to those columns, so the effect develops over weeks rather than appearing on the treatment table. Three variables determine how a session behaves: how deep the columns go, how densely they are placed, and how much total area is covered.",
+        "Comfort is managed rather than eliminated. A topical anaesthetic cream is normally applied and given time to work beforehand, and cool air or cooling packs may be used during and after the pass. All settings are selected by the treating doctor, and results develop gradually and vary between individuals."
+      ]
+    },
+    {
+      "heading": "What is fractional CO2 used for, and what does it mean for your week?",
+      "body": [
+        "This is not a lunchtime treatment and it is worth planning for. Expect treated skin to look red, feel hot and tight and be visibly swollen for the first day or two, followed by bronzing, roughness and flaking as the treated columns work their way out. Recovery commonly spans several days to around a week for a lighter session, longer for deeper settings, and varies between individuals.",
+        "Fewer, shallower columns mean a lighter session and quicker recovery; deeper or denser settings reach more tissue but ask more of your recovery time.",
+        "Fractional CO2 resurfacing is commonly considered for concerns that involve the texture or structure of the skin rather than its colour alone. It is not suitable for everyone, and a consultation determines whether it is appropriate for you. Concerns it is commonly considered for include:"
+      ],
+      "list": [
+        "Atrophic acne scarring, including boxcar and rolling scars",
+        "Uneven or rough skin texture and enlarged-looking pores",
+        "Fine lines, including around the eyes and mouth",
+        "Certain surgical or traumatic scars, where assessed as suitable",
+        "Sun-related textural change and general photoageing of the skin surface"
+      ]
+    },
+    {
+      "heading": "Why is fractional CO2 used more conservatively on Asian skin?",
+      "body": [
+        "Skin tone is a real factor: deeper and Asian skin tones carry a higher risk of post-inflammatory hyperpigmentation after ablative resurfacing, so settings are typically conservative, priming skincare may be advised, and more sessions at lower intensity may be preferred over one aggressive session.",
+        "Because pigmentation risk is higher on Asian skin, your doctor may advise specific products before and after treatment, and will give instructions specific to your skin."
+      ]
+    },
+    {
+      "heading": "Why is fractional CO2 often tried after gentler options, and who should avoid it?",
+      "body": [
+        "Fractional CO2 is aimed at people willing to accept a genuine recovery period in exchange for addressing deeper textural concerns, and is often considered after gentler resurfacing options.",
+        "It may not be suitable during pregnancy or breastfeeding, with active infection or inflammation in the area including acne or cold sores, with a history of keloid or hypertrophic scarring, with certain autoimmune or connective-tissue conditions, on recently tanned skin, or after recent isotretinoin. Please share your full medical, medication and skincare history at consultation, including any history of scarring or pigmentation problems, so the doctor can advise safely."
+      ]
+    },
+    {
+      "heading": "What happens on the day of a fractional CO2 session, and how is the skin cared for after?",
+      "body": [
+        "A visit begins with a doctor consultation and skin assessment, and for ablative resurfacing that includes planning your recovery around work or events before anything is booked. On the day the skin is cleansed, topical anaesthetic is applied and left to take effect, and eye protection is fitted. The doctor then passes the handpiece across the area, and individual scars may be treated at different settings from the surrounding skin.",
+        "The laser pass itself is often quick, commonly in the region of 15 to 30 minutes for a full face, but the appointment is longer because of numbing and cooling. A small course spaced several weeks to a few months apart is usual, to allow full healing and remodelling between visits, and for scarring it may be combined with other modalities within a plan. Your doctor will explain the course they consider realistic for your skin.",
+        "Aftercare matters as much as the session. Gentle cleansing, a bland emollient or occlusive ointment as directed, no picking or exfoliating, and strict daily sun protection are usually advised, while heat, saunas, swimming, makeup and active skincare are paused for a defined period. Your doctor will give instructions specific to your skin."
+      ]
+    },
+    {
+      "heading": "What are the risks of fractional CO2 compared with non-ablative lasers?",
+      "body": [
+        "As an ablative procedure, fractional CO2 carries more risk than non-ablative resurfacing, and these risks are explained during consultation. Expected temporary effects include redness, swelling, heat, crusting and peeling, and lingering pinkness that can persist for weeks. Less common effects include post-inflammatory hyperpigmentation, prolonged redness, reactivation of cold sores, infection, and scarring or textural change. Serious effects are uncommon when settings are appropriately selected for your skin tone and the treatment is performed by a trained doctor with proper aftercare."
+      ]
+    }
+  ],
+  "costFactors": {
+    "intro": "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan and the recovery it involves. What moves it:",
+    "factors": [
+      "The size of the area.",
+      "The depth and density of settings your concern calls for.",
+      "How many sessions the plan involves. Established acne scarring generally needs a course rather than one visit, spaced widely enough for healing.",
+      "Whether fractional CO2 is combined with other treatments in a scar or resurfacing programme."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What is the difference between fractional and fully ablative CO2 resurfacing?",
+      "a": "Fully ablative resurfacing treats the entire surface of the skin in a pass, which means an extended and demanding recovery. Fractional delivery splits the beam into microscopic columns and deliberately leaves untreated skin between them, which shortens recovery substantially because healing draws on the surrounding intact skin. The trade-off is that less surface is treated per session, so a course is usually planned. Your doctor will explain which approach is appropriate for your concern at consultation."
+    },
+    {
+      "q": "How much downtime should I plan for after fractional CO2?",
+      "a": "Realistically, expect redness, swelling and a hot, tight feeling for the first day or two, then several days of bronzing and flaking, with lingering pinkness possible for longer. A lighter session commonly settles within about a week, while deeper settings take longer, and it varies between individuals. Plan the session around your commitments and follow the aftercare your doctor gives you."
+    },
+    {
+      "q": "Is fractional CO2 suitable for Asian skin and acne scarring?",
+      "a": "It is used on Asian skin, but more conservatively, because deeper skin tones carry a higher risk of post-inflammatory hyperpigmentation after ablative resurfacing. That often means lower-intensity settings across more sessions, priming skincare beforehand and strict sun protection afterwards. Whether your particular scarring is suited to fractional CO2, or better addressed by another modality or a combination, is assessed by a doctor at consultation."
+    },
+    {
+      "q": "How painful is fractional CO2, and what is done about it?",
+      "a": "Ablative resurfacing is more uncomfortable than non-ablative treatments, typically described as intense heat with a prickling sensation. A topical anaesthetic is normally applied and given time to work beforehand, and cool air or cooling packs are used during and after the pass. Most of the discomfort afterwards is heat and tightness rather than sharp pain, and your doctor will discuss comfort measures with you before the session."
+    }
+  ],
+  "reviewedBy": "dr-chloe-wan",
+  "lastReviewed": "2026-07-18",
+  "seoTitle": "Fractional CO2 Laser Resurfacing Malaysia | Kaiteki",
+  "seoDescription": "Fractional CO2 is an ablative resurfacing laser used at Kaiteki for texture, pores and acne scarring. Book a free consultation to check your suitability."
+}

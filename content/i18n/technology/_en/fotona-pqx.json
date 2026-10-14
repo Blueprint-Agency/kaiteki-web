@@ -1,0 +1,118 @@
+{
+  "slug": "fotona-pqx",
+  "name": "Fotona PQX (StarWalker)",
+  "group": "Lasers",
+  "type": "device",
+  "treatments": [
+    "pico-laser"
+  ],
+  "image": "https://cdn.kaiteki.my/images/technology/fotona-pqx.jpg",
+  "device": "Fotona",
+  "summary": "A 1064nm/532nm picosecond and Q-switched laser platform, also known as StarWalker PQX, used within Pico laser treatment for pigment and tattoo concerns.",
+  "leadAnswer": "StarWalker PQX is a picosecond and Q-switched laser platform from Fotona, used at Kaiteki within our Pico laser treatment. It generates Nd:YAG energy at 1064nm and, through a KTP crystal, at 532nm, so the doctor selects the wavelength to match the pigment or tattoo ink being treated.",
+  "facts": [
+    {
+      "value": "1064nm and 532nm",
+      "label": "Wavelengths"
+    },
+    {
+      "value": "Fotona, Slovenia",
+      "label": "Manufacturer"
+    },
+    {
+      "value": "Pico laser",
+      "label": "Used within"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is Fotona StarWalker PQX?",
+      "body": [
+        "StarWalker® PQX is a picosecond laser platform built by Fotona (Slovenia) and used at Kaiteki as one of the devices within our Pico laser treatment. Fotona describes it as an ultra-performance pico laser: the system generates Q-switched Nd:YAG energy at 1064nm and, via a KTP crystal, at 532nm, and delivers it in pulses short enough that pigment is broken up photoacoustically rather than by sustained heating. The manufacturer describes this as a non-thermal mechanism, which is one reason picosecond platforms are used across a wide range of skin types.",
+        "Its buyer-relevant distinction is breadth of pulse control and delivery options rather than a single headline wavelength. Fotona highlights the platform's high pulse energy and peak power together with its ASP (Adaptive Structured Pulse) technology, plus a range of both full-beam and fractional handpieces on an OPTOflex® articulated arm. Whether a picosecond laser is right for your concern, and which device and settings within it, is decided by a doctor after examining your skin at consultation."
+      ]
+    },
+    {
+      "heading": "How it works: 1064nm, 532nm and structured pulses",
+      "body": [
+        "Both wavelengths are delivered as very short pulses, and Fotona's ASP technology governs the structure of each pulse so the doctor can vary how the energy is packaged for the target. Fotona also builds in EFC (Energy Feedback Control), which monitors the energy of each individual pulse against the setting the practitioner selected.",
+        "Delivery matters as much as the source. Alongside conventional full-beam handpieces, Fotona offers fractional handpieces for its patented FracTAT® method, in which micro-holes are first created with a fractional handpiece before a full-beam pass; Fotona explains that these micro-holes reduce frosting and act as pressure-relief ducts so gases formed during tattoo clearance can escape. A related two-step protocol, FracRevive®, combines full-spot brushing with fractional stamping for photorejuvenation. Wavelength, handpiece, spot size and energy are all selected by the treating doctor, and changes develop gradually across a course and vary between individuals."
+      ]
+    },
+    {
+      "heading": "1064nm or 532nm: which wavelength for which pigment?",
+      "body": [
+        "The 1064nm Nd:YAG wavelength penetrates more deeply and is absorbed relatively little by melanin in the epidermis, which is why it is the wavelength usually chosen for deeper pigment and for darker skin types. The frequency-doubled 532nm output is more strongly absorbed by superficial pigment and by red-family tattoo inks.",
+        "Within Kaiteki's Pico laser treatment, StarWalker PQX is commonly considered for the concerns listed below. It is not suitable for everyone, and a consultation establishes whether it is appropriate for you and which wavelength is the sensible starting point."
+      ],
+      "list": [
+        "Sun spots, freckles and other benign pigmented lesions",
+        "Dermal pigment concerns such as naevus of Ota and Hori's naevus, as assessed by your doctor",
+        "Melasma, managed conservatively as part of a longer-term plan",
+        "Black and multicolour tattoo ink, including the fractional FracTAT® approach",
+        "Uneven tone, dullness and enlarged-looking pores",
+        "Acne scarring and skin texture, using fractional handpieces"
+      ]
+    },
+    {
+      "heading": "Why is a test patch used before PQX on melasma or deeper skin?",
+      "body": [
+        "The 1064nm wavelength's low melanin absorption is the practical reason a doctor may prefer this platform for deeper Fitzpatrick skin types or for pigment that sits deeper in the skin. That does not make it universally safe: settings still have to be matched to your skin, and a test patch is often used first for dermal pigment, melasma or a tattoo whose ink composition is unknown."
+      ]
+    },
+    {
+      "heading": "What would delay or rule out a PQX session?",
+      "body": [
+        "A picosecond laser may not be suitable during pregnancy or breastfeeding, on recently tanned or sunburnt skin, over active infection, eczema or open wounds in the area, where you have a history of keloid scarring, or while you are taking photosensitising medication including oral isotretinoin. Please share your full medical, medication and treatment history at consultation, including previous lasers, peels or injectables in the area, so the doctor can advise safely."
+      ]
+    },
+    {
+      "heading": "What happens during a PQX session, and why does tattoo ink frost?",
+      "body": [
+        "Every plan starts with a doctor consultation and skin assessment, not a treatment. If StarWalker PQX is appropriate, the doctor decides which wavelength and handpiece to use and may treat a small test area before committing to a full session. On the day, the skin is cleansed, eye protection is fitted, and topical numbing may be used where the doctor considers it appropriate, more often for tattoo work than for a light toning pass.",
+        "During the pass you will hear rapid clicking and feel brief snapping or hot-pinprick sensations. Superficial pigment may whiten or grey momentarily, and treated tattoo areas commonly frost. A facial session is usually a short appointment, often in the region of 20 to 40 minutes including preparation, while tattoo sessions scale with size and the number of steps in a FracTAT® protocol. Courses are typically several sessions a few weeks apart so the skin can clear treated pigment in between; tattoo courses are usually spaced further apart. Your doctor sets the interval.",
+        "Downtime is generally short but varies with the intensity used and between individuals. Expect the possibility of redness, warmth and mild swelling for a few hours to a couple of days. Where pigment or ink was targeted directly, pinpoint darkening, fine crusting or small scabs can appear and then flake off over roughly one to two weeks; fractional passes may leave a sandpaper-like texture briefly. Let all of it shed naturally.",
+        "Daily broad-spectrum sunscreen and genuine sun avoidance between sessions are essential, and gentle cleansing with actives paused until your doctor clears you. Tattoo areas may need a dressing and specific wound-care instructions. Your doctor will give aftercare guidance matched to the area and the protocol used."
+      ]
+    },
+    {
+      "heading": "What are the risks of PQX, and why is melasma approached cautiously?",
+      "body": [
+        "As with any medical laser, StarWalker PQX carries risks, which are explained at consultation before treatment is arranged. Temporary effects can include redness, swelling, pinpoint bleeding or bruising, crusting, and either darkening or lightening of the treated skin; melasma in particular can behave unpredictably and is approached cautiously. Blistering, infection of a crusted area and scarring are uncommon. Risk is reduced, but never eliminated, when the wavelength and settings are appropriately selected and the treatment is performed by a trained doctor."
+      ]
+    }
+  ],
+  "costFactors": {
+    "intro": "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. What moves it:",
+    "factors": [
+      "How deep the pigment sits.",
+      "The size of the area.",
+      "How your skin clears pigment between visits.",
+      "For tattoos, the ink colours, density and layering. A small black amateur tattoo behaves very differently from a dense multicolour piece.",
+      "Fractional protocols, which add steps to a session and affect appointment length.",
+      "Whether pico work is combined with other steps in your plan."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What is the difference between Fotona PQX and PicoSure?",
+      "a": "Both are picosecond lasers, but PQX is a 1064nm/532nm Nd:YAG platform while PicoSure's primary wavelength is 755nm. The 1064nm output is absorbed less by melanin and reaches deeper, which is often why it is chosen for deeper pigment or deeper skin tones, whereas 755nm interacts more strongly with melanin. Your doctor will explain which is better matched to your pigment pattern at consultation."
+    },
+    {
+      "q": "What is FracTAT® and why would my doctor use it for a tattoo?",
+      "a": "FracTAT® is Fotona's patented two-step method in which a fractional handpiece first creates micro-holes in the skin, followed by a full-beam pass. Fotona describes these micro-holes as pressure-relief ducts that reduce frosting and let gases formed during the process escape. Whether this approach is used on your tattoo depends on the ink, the site and your skin, and is a decision for the treating doctor."
+    },
+    {
+      "q": "Can StarWalker PQX be used on tanned skin?",
+      "a": "Recent tanning or sunburn is normally a reason to postpone, because pigment in the epidermis changes how the energy is absorbed and raises the risk of unwanted pigment change. Doctors generally ask you to avoid deliberate sun exposure and tanning products for a period before and throughout a course. Tell your doctor at consultation about any recent sun exposure or holidays you have planned."
+    },
+    {
+      "q": "How long should I wait between PQX sessions?",
+      "a": "Intervals are set by your doctor rather than by a fixed rule, because the skin needs time to clear the pigment fragments broken up in the previous session. Facial pigment courses are commonly spaced a few weeks apart, while tattoo sessions are usually spaced further apart to allow full healing. Your doctor will confirm the schedule that suits your skin and concern."
+    }
+  ],
+  "reviewedBy": "dr-teresa-tan",
+  "lastReviewed": "2026-07-18",
+  "seoTitle": "Fotona PQX StarWalker Pico Laser Malaysia | Kaiteki",
+  "seoDescription": "Fotona StarWalker PQX is a 1064nm/532nm picosecond laser used at Kaiteki for pigment and tattoo concerns. Book a free consultation to check your suitability."
+}

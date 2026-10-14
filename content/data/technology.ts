@@ -14,7 +14,7 @@ export const technology: Technology[] = [
   // ── Lasers ──────────────────────────────────────────────────────────────
   {
     slug: "picosure",
-    name: "Picosure",
+    name: "PicoSure",
     group: "Lasers",
     type: "device",
     treatments: ["pico-laser"],

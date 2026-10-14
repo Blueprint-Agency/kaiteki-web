@@ -1,0 +1,116 @@
+{
+  "slug": "xerf",
+  "name": "XERF",
+  "group": "Lifting & Tightening",
+  "type": "device",
+  "treatments": [
+    "radiofrequency"
+  ],
+  "image": "https://cdn.kaiteki.my/images/technology/xerf.png",
+  "summary": "A multifrequency monopolar radiofrequency platform with integrated cryogen cooling, used within RF treatment for skin-firmness and laxity concerns.",
+  "leadAnswer": "XERF is a monopolar radiofrequency platform from Cynosure Lutronic, used at Kaiteki within our radiofrequency treatment. Unlike single-frequency RF it is multifrequency, so the operating frequency can be matched to the tissue being treated, and integrated cryogen cooling protects the surface.",
+  "facts": [
+    {
+      "value": "Multifrequency monopolar RF",
+      "label": "Energy"
+    },
+    {
+      "value": "Cryogen cooling",
+      "label": "Surface protection"
+    },
+    {
+      "value": "Radiofrequency",
+      "label": "Used within"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is XERF?",
+      "body": [
+        "XERF is a monopolar radiofrequency (RF) platform from Cynosure Lutronic, used at Kaiteki within our radiofrequency treatment for skin-firmness and laxity concerns. The manufacturer markets it under the term Structural Skin Tightening. What sets it apart in the RF category is that it is multifrequency: rather than running at a single fixed frequency, it combines 6.78 MHz and 2 MHz simultaneously, so energy can be biased towards shallower or deeper tissue depending on what the doctor is treating."
+      ]
+    },
+    {
+      "heading": "How multifrequency monopolar RF works",
+      "body": [
+        "Monopolar RF sends current from a single treatment electrode through the tissue towards a return path, which is what allows it to reach deeper than bipolar or multipolar RF, where the current simply arcs between two or more closely spaced electrodes and stays comparatively superficial. Depth is also a function of frequency: higher frequencies deposit energy more superficially, lower frequencies travel further. By combining 6.78 MHz and 2 MHz, XERF is intended to deposit energy across the shallow, middle and deeper layers within one pass rather than forcing a single-depth compromise. Controlled heating in the dermis is what RF uses to prompt collagen remodelling over time.",
+        "Comfort is handled by two manufacturer technologies: the pulse-shaping the manufacturer calls Wave Fit™, and an Advanced Integrated Cryogen Delivery cooling system that keeps the skin surface cool while heat builds underneath. Surface cooling matters more than it sounds: it is what lets a device heat the dermis to a useful temperature without the epidermis becoming the limiting factor, and it is the reason the manufacturer describes XERF as a Never-Numb™ treatment that does not require numbing cream beforehand. Frequency balance, energy level and number of passes are all selected by the treating doctor for your skin. Any change develops gradually and varies between individuals."
+      ]
+    },
+    {
+      "heading": "XERF or RF microneedling: which kind of radiofrequency is this?",
+      "body": [
+        "If you are comparing options, the practical distinction is that XERF is a bulk-heating, non-needling device. It works entirely from the skin surface with no needles, no incisions and no topical anaesthetic, different from RF microneedling platforms such as Sylfirm X or Morpheus8, which create fractional channels in the skin and are covered on their own pages. Whether XERF, a needling device, or something else fits your concern is decided by a doctor at an in-person consultation.",
+        "RF microneedling delivers energy through fine needles into the skin, which suits some texture and scarring concerns but involves recovery time. XERF's handpiece glides over intact skin, so there are no pinpoint marks. They are different tools rather than better and worse ones."
+      ]
+    },
+    {
+      "heading": "What can XERF firm, and when does sagging need another approach?",
+      "body": [
+        "XERF is generally aimed at people with early to moderate laxity who want a non-needling, no-downtime option and are not looking for surgery. Marked sagging may be better served by other approaches your doctor can discuss.",
+        "XERF is commonly considered for concerns related to skin laxity and firmness, on the face and on selected body areas. It is not suitable for everyone, and a consultation determines whether it is appropriate for you."
+      ],
+      "list": [
+        "Mild to moderate skin laxity along the jawline and lower face",
+        "Loose or crepey skin on the neck and under the chin",
+        "Softening facial contour and a less defined jaw outline",
+        "Fine lines and general loss of skin firmness",
+        "Laxity on body areas such as the abdomen, arms or inner thighs",
+        "Overall skin quality and texture as part of a broader plan"
+      ]
+    },
+    {
+      "heading": "Is XERF safe for darker skin, and what rules it out?",
+      "body": [
+        "Because RF heats tissue rather than targeting pigment, it does not rely on colour contrast in the skin, which is why RF platforms are used across a wide range of skin tones including Asian skin. That is a genuine advantage over some light-based devices, but it does not make XERF appropriate for everyone.",
+        "RF is generally avoided during pregnancy, over active skin infections or inflamed areas, and near metal implants or electronic implanted devices such as pacemakers. Recent injectables, certain medications, thyroid conditions in the neck area and a history of keloid scarring are also relevant. Please share your full medical history, current medications and any implanted devices at consultation so the doctor can advise safely."
+      ]
+    },
+    {
+      "heading": "Does XERF need numbing, and can you go straight back to work?",
+      "body": [
+        "A visit begins with a doctor consultation and skin assessment to confirm that RF is the right category for your concern and to map the areas to be treated. If XERF is appropriate, the skin is cleansed and a coupling gel applied. The handpiece is then moved over the treatment area in passes while the integrated cooling holds the surface temperature down; most people describe RF as a warm, deep massage-like sensation that builds and eases as the handpiece moves. No numbing cream is needed.",
+        "Session length depends on how many areas are being treated: a single facial area is typically shorter than a full face and neck, and body areas take longer again. A course of several sessions spaced a few weeks apart is common for RF, with occasional maintenance afterwards, but the plan is individual and your doctor will explain what to expect for your skin.",
+        "Downtime is usually minimal, which is much of the appeal of non-needling RF: most people return to normal activities and can wear makeup the same day. Mild warmth or pinkness in the treated area can occur and typically settles within a few hours, though this varies between individuals.",
+        "Gentle skincare, good hydration and daily sun protection are advised afterwards. Avoid very hot showers, saunas and vigorous heat exposure for the rest of the day. Your doctor will give aftercare guidance specific to your skin and the areas treated."
+      ]
+    },
+    {
+      "heading": "Can XERF burn or mark the skin?",
+      "body": [
+        "As with any medical procedure, XERF carries risks, which are explained during consultation. Temporary effects can include redness, warmth, mild swelling or short-lived tenderness in the treated area. Uncommon effects include blistering, burns or changes in pigmentation, and are less likely when the device is appropriately selected, cooling is used correctly and treatment is performed by a trained doctor."
+      ]
+    }
+  ],
+  "costFactors": {
+    "intro": "Pricing is discussed at consultation rather than quoted online, so any figure you are given reflects your actual plan rather than a generic package. What moves it:",
+    "factors": [
+      "How many areas you are treating, and their size. Face-only plans differ from face-and-neck or body plans.",
+      "The degree of laxity.",
+      "How your skin responds.",
+      "Whether occasional maintenance sessions form part of the plan over time."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How is XERF different from RF microneedling like Sylfirm X or Morpheus8?",
+      "a": "XERF is a surface-applied bulk-heating device: the handpiece glides over intact skin and no needles are involved, so there are no pinpoint marks and essentially no downtime. RF microneedling instead delivers energy through fine needles into the skin, which suits some texture and scarring concerns but involves recovery time. They are different tools rather than better and worse ones, and your doctor will advise at consultation which category fits your concern."
+    },
+    {
+      "q": "Why does XERF use two frequencies instead of one?",
+      "a": "Higher RF frequencies deposit energy more superficially and lower frequencies reach further into tissue, so a single-frequency device has to compromise on depth. XERF combines 6.78 MHz and 2 MHz so energy can be directed across shallow, middle and deeper layers. The frequency balance used on you is chosen by the treating doctor based on your skin and the area being treated."
+    },
+    {
+      "q": "Does XERF need numbing cream, and how does it feel?",
+      "a": "The manufacturer describes XERF as a Never-Numb™ treatment because its integrated cryogen cooling keeps the skin surface cool while heat builds beneath, so topical anaesthetic is generally not required. Most people describe the sensation as deep warmth moving across the skin. Comfort still varies between individuals, and you should tell your doctor during the session if anything feels too warm."
+    },
+    {
+      "q": "Is XERF safe for Asian or darker skin tones?",
+      "a": "Radiofrequency heats tissue rather than targeting pigment, so unlike some light-based devices it does not depend on contrast between skin and target colour, which is why RF is used across a wide range of skin tones. Suitability is still assessed individually, taking into account your skin history, medications and any implanted devices. A doctor confirms this at an in-person consultation before treatment."
+    }
+  ],
+  "reviewedBy": "dr-chloe-wan",
+  "lastReviewed": "2026-07-26",
+  "seoTitle": "XERF RF Skin Tightening Treatment Malaysia | Kaiteki",
+  "seoDescription": "XERF is a multifrequency monopolar RF platform used at Kaiteki for skin firmness and laxity, with no needles or numbing cream. Book a free consultation."
+}

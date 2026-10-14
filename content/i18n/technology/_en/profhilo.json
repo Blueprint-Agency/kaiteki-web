@@ -1,0 +1,117 @@
+{
+  "slug": "profhilo",
+  "name": "Profhilo",
+  "group": "Injectables",
+  "type": "injectable",
+  "treatments": [
+    "skin-booster"
+  ],
+  "image": "https://cdn.kaiteki.my/images/technology/profhilo.jpg",
+  "device": "Profhilo",
+  "summary": "A hyaluronic acid injectable made with IBSA's NAHYCO hybrid technology, used within skin-booster treatment for hydration and skin remodelling rather than contour.",
+  "leadAnswer": "Profhilo is an injectable hyaluronic acid from the Italian pharmaceutical group IBSA, made with its NAHYCO hybrid technology. It sits in the skin-booster category rather than the dermal-filler category: it is not designed to add contour or reshape a feature, but to distribute HA through the tissue.",
+  "facts": [
+    {
+      "value": "Hyaluronic acid (NAHYCO)",
+      "label": "Material"
+    },
+    {
+      "value": "IBSA, Italy",
+      "label": "Manufacturer"
+    },
+    {
+      "value": "Not a contour filler",
+      "label": "Category"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is Profhilo?",
+      "body": [
+        "Profhilo is an injectable hyaluronic acid (HA) product made by IBSA, an Italian pharmaceutical group. It sits in the skin-booster category rather than the dermal-filler category: it is not designed to add contour or reshape a feature, but to be placed into the skin so that HA is distributed through the tissue. The manufacturer describes this purpose as bio-remodelling.",
+        "What makes Profhilo mechanically distinct from other HA injectables is how the HA itself is prepared. IBSA describes its NAHYCO® Hybrid Technology as a patented thermal process in which high-molecular-weight and low-molecular-weight hyaluronic acid are bound into stable hybrid cooperative complexes by hydrogen bonds, without a chemical cross-linking agent such as BDDE. Whether Profhilo is an appropriate choice for you, and which product, quantity and technique are used, is a decision your doctor makes at an in-person consultation, not something that can be settled online."
+      ]
+    },
+    {
+      "heading": "How it works: NAHYCO hybrid complexes",
+      "body": [
+        "IBSA states the composition as 32 mg of high-molecular-weight and 32 mg of low-molecular-weight hyaluronic acid in a 2 ml presentation, giving 64 mg of HA in total. The manufacturer associates the long-chain fraction mainly with water-binding and the short-chain fraction with signalling to the skin's own cells, and describes the hybrid complexes as spreading within the tissue rather than staying as a shaped bolus. Because there is no chemical cross-linker holding a gel structure, it behaves very differently from a contouring filler.",
+        "The manufacturer also describes a standardised placement approach it calls Bio Aesthetic Points (BAP), a defined set of entry points chosen to sit in anatomically safer areas and to allow the product to distribute. How that is applied to your face, neck or body, the points used, the amount, the depth and the number of visits, is determined entirely by the treating doctor after assessing you. Changes develop gradually over weeks and vary between individuals."
+      ]
+    },
+    {
+      "heading": "Is Profhilo a filler?",
+      "body": [
+        "No. Profhilo is not designed to add contour or reshape a feature. If what you actually want is contour, a fuller cheek, a defined chin, a corrected hollow, a skin booster is the wrong category, and your doctor will say so rather than substituting one for the other.",
+        "Profhilo is commonly considered where the concern is skin quality and firmness rather than lost volume or a change in shape. It is not suitable for everyone, and a consultation determines whether it is appropriate for you. Concerns it is typically directed at include:"
+      ],
+      "list": [
+        "Dehydrated, dull-looking skin on the face",
+        "Mild skin laxity and loss of firmness or tone",
+        "Crepey skin texture on the neck and décolletage",
+        "Fine lines associated with dryness rather than muscle movement",
+        "Skin quality on the arms, hands or abdomen"
+      ]
+    },
+    {
+      "heading": "Why is Profhilo given as a course, with maintenance?",
+      "body": [
+        "The manufacturer describes an initial course of more than one visit spaced some weeks apart, followed by periodic maintenance. Hyaluronic acid is gradually broken down and resorbed by the body, so any change is temporary and not permanent. Some plans therefore include maintenance visits over time.",
+        "The number of sessions and their spacing is not a fixed schedule and will be set by your doctor based on your skin and your response. Nothing about quantity, depth or interval should be decided in advance of assessment."
+      ]
+    },
+    {
+      "heading": "When would a doctor advise against Profhilo?",
+      "body": [
+        "Profhilo is aimed at adults whose main concern is skin hydration, texture and firmness. Because Profhilo works through hyaluronic acid rather than light or heat, skin tone is not a limiting factor in the way it can be with laser treatment, though this does not make it appropriate for everyone.",
+        "It may not be suitable during pregnancy or breastfeeding, if you have a known hypersensitivity to hyaluronic acid products, if there is active infection, acne or inflammation at the intended site, if you have a bleeding disorder or take blood-thinning medication, or alongside certain autoimmune conditions. Please share your full medical history, medications, supplements and any previous injectable treatments at consultation so your doctor can advise safely."
+      ]
+    },
+    {
+      "heading": "What does a Profhilo visit involve, and how quickly do the bumps settle?",
+      "body": [
+        "Every Profhilo session at Kaiteki starts with a doctor consultation and skin assessment, since Profhilo is used within Kaiteki's skin-booster treatment and is only one of several products a doctor may consider. If it is appropriate, the skin is cleansed and a topical anaesthetic may be applied for comfort. The doctor then places the product using the technique and points they judge suitable for you.",
+        "The injecting itself is usually brief: the visit often takes well under an hour including preparation.",
+        "Downtime is usually limited but varies. Small raised bumps at the entry points are expected immediately afterwards and typically settle within hours to about a day as the product distributes. Mild redness, tenderness or pinpoint bruising can also occur.",
+        "Your doctor will give aftercare guidance specific to you, which commonly includes gentle skincare, sun protection and temporarily avoiding heat, strenuous exercise and pressure on the treated area. Follow their instructions rather than general advice found online."
+      ]
+    },
+    {
+      "heading": "What side effects can follow Profhilo?",
+      "body": [
+        "As with any injectable procedure, Profhilo carries risks, which are explained during consultation. Temporary effects can include injection-site swelling, redness, bruising, tenderness and small palpable lumps. Less common effects include infection, prolonged swelling, nodules or hypersensitivity reactions, and vascular complications are rare but recognised with any facial injection. Serious effects are uncommon when the product is appropriately selected and administered by a trained doctor."
+      ]
+    }
+  ],
+  "costFactors": {
+    "intro": "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. What moves it:",
+    "factors": [
+      "The area or areas being addressed: face, neck, décolletage, arms or abdomen all differ.",
+      "The quantity of product your doctor judges appropriate.",
+      "How many visits the initial course needs.",
+      "Whether maintenance visits form part of your plan over time."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How is Profhilo different from a dermal filler?",
+      "a": "Both are hyaluronic acid, but they are made and used for different purposes. Cross-linked fillers are formulated to hold a shape and are placed to change contour; Profhilo uses IBSA's NAHYCO hybrid complexes with no chemical cross-linker and is intended to distribute through the skin to address hydration and firmness. That means it is not a substitute for a filler, and your doctor will tell you at consultation which category actually fits your concern."
+    },
+    {
+      "q": "Is Profhilo suitable for Asian skin tones?",
+      "a": "Profhilo works through hyaluronic acid rather than light or heat, so the pigment-related considerations that apply to lasers do not apply in the same way, and it is used across a range of skin tones. Suitability is still individual and depends on your skin condition, medical history and what you want to change. A doctor assesses this in person before recommending it."
+    },
+    {
+      "q": "Does Profhilo hurt, and will the bumps be visible?",
+      "a": "Most people describe it as brief discomfort at the entry points, and a topical anaesthetic may be applied beforehand for comfort. Small raised bumps at those points are expected straight after and usually settle within hours to about a day, though this varies between individuals. Your doctor will explain what to expect for your skin and when to plan the visit around any commitments."
+    },
+    {
+      "q": "Is Profhilo permanent?",
+      "a": "No. Hyaluronic acid is gradually broken down and resorbed by the body, so any change is temporary and not permanent. Some plans therefore include maintenance visits over time. How often, if at all, is something your doctor will discuss with you at consultation based on your skin and response."
+    }
+  ],
+  "reviewedBy": "dr-lucas-chew",
+  "lastReviewed": "2026-07-18",
+  "seoTitle": "Profhilo Skin Booster Treatment in Malaysia | Kaiteki",
+  "seoDescription": "Profhilo is an IBSA hyaluronic acid injectable used within Kaiteki's skin-booster treatment for hydration and skin firmness. Book a free consultation."
+}

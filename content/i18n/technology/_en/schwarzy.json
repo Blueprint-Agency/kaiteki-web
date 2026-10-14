@@ -1,0 +1,115 @@
+{
+  "slug": "schwarzy",
+  "name": "Schwarzy (Em-Fit)",
+  "group": "Body & Slimming",
+  "type": "device",
+  "treatments": [
+    "muscle-stimulation"
+  ],
+  "image": "https://cdn.kaiteki.my/images/technology/schwarzy.jpg",
+  "summary": "An electromagnetic muscle-stimulation device that induces involuntary contractions, used for muscle tone rather than fat reduction.",
+  "leadAnswer": "Schwarzy is a muscle-stimulation platform from the Italian manufacturer DEKA, offered at Kaiteki under the Em-Fit name. It induces involuntary contractions through flat magnetic stimulation, so it addresses muscle tone rather than fat, and implant and medical history are the main gate on suitability.",
+  "facts": [
+    {
+      "value": "Flat magnetic stimulation",
+      "label": "Energy"
+    },
+    {
+      "value": "Muscle tone, not fat",
+      "label": "What it addresses"
+    },
+    {
+      "value": "Muscle stimulation",
+      "label": "Used within"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is Schwarzy?",
+      "body": [
+        "Schwarzy is a non-invasive muscle-stimulation platform made by DEKA, an Italian medical laser and aesthetic device manufacturer. It uses a technology the manufacturer calls TOP FMS (Flat Magnetic Stimulation) to induce involuntary muscle contractions in a targeted area. At Kaiteki it is offered under the Em-Fit name as part of the muscle stimulation treatment, and it is used for muscle tone and definition, not for fat reduction.",
+        "What distinguishes it mechanically from a simple electrical stimulator is that the stimulus is magnetic rather than electrical, so it does not have to cross the resistance of the skin, and the manufacturer describes the field as deliberately flat and evenly distributed, without the intensity peaks associated with discomfort. Whether it is appropriate for you is assessed by a doctor at an in-person consultation."
+      ]
+    },
+    {
+      "heading": "How flat magnetic stimulation works",
+      "body": [
+        "A coil inside the applicator generates a rapidly changing magnetic field. Rather than passing current through the skin the way electrode-based electrical stimulation does, the field passes through tissue and acts on the motor nerves supplying the muscle beneath, prompting it to contract. Because pain receptors in the skin are not being driven directly, the manufacturer describes the treatment as tolerable at intensities that would be difficult to reach with electrical stimulation, and no conductive gel or adhesive electrode is needed.",
+        "The contractions are involuntary and repeated many times over a session, at a rate and depth you could not produce by choice in the gym, which is the intended mechanism for a change in muscle tone. DEKA supplies three pad shapes so the applicator can sit properly against different areas: a FLAT pad chiefly for the thighs and buttocks, a CURVE pad for the lower legs and forearms, and an ELLIPSE pad for the abdomen. The manufacturer also describes selectable programmes graded by physical condition (Aerobic, Shaping and Strength) for people at different levels of conditioning. The programme, pad, intensity and progression are all selected by the treating doctor. Any change develops gradually over a course and varies between individuals."
+      ]
+    },
+    {
+      "heading": "Muscle, not fat: what does Schwarzy act on?",
+      "body": [
+        "Schwarzy works on muscle: it is a toning modality, it is not a fat-reduction device, it is not a weight-loss treatment, and it is not a substitute for diet, exercise or medical weight management. Where fat is the concern, it is used alongside a separate fat-reduction approach rather than in place of one.",
+        "Schwarzy is commonly considered for muscle tone and definition in the areas below, usually where someone is already reasonably close to their target shape and wants more definition. It does not reduce fat and it does not tighten loose skin, and it is not suitable for everyone. A consultation determines whether it is appropriate for you."
+      ],
+      "list": [
+        "Abdominal muscle tone and core definition",
+        "Buttock tone and shape",
+        "Thigh muscle tone, front and back",
+        "Upper arm tone",
+        "Calf and lower-leg tone",
+        "Core support as part of a wider strengthening plan, including after a period of inactivity"
+      ]
+    },
+    {
+      "heading": "Why does a layer of fat change what Schwarzy can do?",
+      "body": [
+        "It is aimed at people whose concern is definition and tone rather than volume of fat. If a layer of fat sits over the muscle, strengthening what is underneath will not change what is above it. Your doctor may discuss pairing it with a separate fat-reduction treatment, or addressing that first. It is likewise not appropriate as a way of avoiding exercise or managing weight; it is best thought of as something that sits alongside your own activity."
+      ]
+    },
+    {
+      "heading": "Why do implants matter so much with a magnetic device?",
+      "body": [
+        "Because the technology is magnetic, metal and electronic implants matter a great deal. Schwarzy is generally not used in people with a cardiac pacemaker, implanted defibrillator, neurostimulator, drug pump, metal implants, plates, screws, coils or an intrauterine device in or near the treatment area, and it may not be appropriate during pregnancy, with epilepsy or seizure history, with a hernia in the area, with active infection or malignancy, or with certain heart, kidney or bleeding conditions. Please declare every implant, device and medication along with your full medical history at consultation so the doctor can advise safely."
+      ]
+    },
+    {
+      "heading": "How does a Schwarzy session feel, and how sore are the muscles after?",
+      "body": [
+        "A visit starts with a doctor consultation, an assessment of the area and a review of your implant and medical history, since that is the main gate on suitability. If Schwarzy is appropriate you stay fully clothed or lightly draped, the pad is positioned and secured over the target muscle group, and the intensity is raised gradually. You will feel the muscle tense and release repeatedly in a way that feels strange at first but not painful; there are no needles and no anaesthetic.",
+        "A session commonly runs around half an hour per area, and treatment is typically planned as a course of several sessions over a few weeks, spaced so the muscle has time to recover between visits, much as you would space training. Occasional maintenance sessions afterwards are common, since muscle tone gained is not held indefinitely without ongoing stimulus or activity. Your doctor will set out a realistic schedule at consultation.",
+        "There is generally no downtime and most people return to usual activities immediately, though this varies between individuals. The most common after-effect is muscle soreness in the treated area over the following day or two, similar to the ache after unfamiliar exercise, sometimes with a brief sensation of tightness or fatigue in the muscle.",
+        "Staying hydrated, keeping up gentle movement and allowing the muscle a recovery day are usually advised, and your doctor will tell you how to space it around your own training. Aftercare guidance is given specific to you and the area treated."
+      ]
+    },
+    {
+      "heading": "What are the risks of Schwarzy's muscle stimulation?",
+      "body": [
+        "As with any medical procedure, Schwarzy carries risks, which are explained during consultation. Temporary effects can include muscle soreness, aching or cramping in the treated area, transient muscle fatigue, mild redness or warmth where the pad sat, and occasionally a temporary change in skin sensation. Serious effects are uncommon when the treatment is appropriately selected, particularly when implants, pregnancy and seizure history have been properly screened, and performed by a trained doctor, who will explain how any problem would be managed."
+      ]
+    }
+  ],
+  "costFactors": {
+    "intro": "Pricing is discussed at consultation rather than quoted online, so any estimate reflects your actual plan. What moves it:",
+    "factors": [
+      "How many muscle groups you want addressed.",
+      "How many sessions the plan calls for.",
+      "Whether maintenance sessions are included, since tone is not held indefinitely without ongoing stimulus.",
+      "Whether your goals involve both fat and tone, in which case the plan combines treatments."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Does Schwarzy reduce fat or help with weight loss?",
+      "a": "No. Schwarzy is a muscle-stimulation device: it acts on muscle tone and definition, not on fat, and it is not a weight-loss treatment or a substitute for diet, exercise or medical weight management. If fat is your concern, it pairs with a separate fat-reduction treatment rather than replacing one. Your doctor will explain at consultation which approach, or combination, actually fits your goal."
+    },
+    {
+      "q": "Can I have Schwarzy if I have metal implants, a pacemaker or an IUD?",
+      "a": "Generally no, or not in that area. Because the stimulus is a magnetic field, implanted electronic devices such as pacemakers, defibrillators, neurostimulators and drug pumps, as well as metal implants, plates, screws and intrauterine devices, are important contraindications. This is why you must declare every implant and device before treatment. The doctor screens for this at consultation and will tell you clearly whether it can proceed."
+    },
+    {
+      "q": "How is it different from doing the exercise myself?",
+      "a": "The contractions are involuntary and are repeated at a rate and depth you cannot produce voluntarily, which is the mechanism the manufacturer describes for changing muscle tone. It is intended to work alongside your own activity, not to replace it: general fitness, cardiovascular health and weight management still come from exercise and diet. Your doctor will discuss how to fit it around your training at consultation."
+    },
+    {
+      "q": "Is the effect permanent, and will I need top-ups?",
+      "a": "No muscle treatment is permanent. Tone gained through stimulation behaves like tone gained through training and gradually reduces without ongoing stimulus or activity, which is why occasional maintenance sessions are common after an initial course. Outcomes vary between individuals. Your doctor will outline a realistic maintenance plan at consultation."
+    }
+  ],
+  "reviewedBy": "dr-calvin-tan",
+  "lastReviewed": "2026-07-18",
+  "seoTitle": "Schwarzy Em-Fit Muscle Toning Treatment Malaysia | Kaiteki",
+  "seoDescription": "Schwarzy (Em-Fit) by DEKA uses flat magnetic stimulation for muscle tone, not fat reduction. Book a free consultation at Kaiteki to check your suitability."
+}

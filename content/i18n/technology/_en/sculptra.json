@@ -1,0 +1,118 @@
+{
+  "slug": "sculptra",
+  "name": "Sculptra",
+  "group": "Injectables",
+  "type": "injectable",
+  "treatments": [
+    "bio-stimulator"
+  ],
+  "image": "https://cdn.kaiteki.my/images/technology/sculptra.jpg",
+  "device": "Sculptra",
+  "summary": "A poly-L-lactic acid (PLLA) injectable used within bio-stimulator treatment to support gradual structural renewal.",
+  "leadAnswer": "Sculptra is an injectable collagen stimulator from Galderma whose active material is poly-L-lactic acid, supplied as a dry powder that the clinic reconstitutes before use. It sits in the bio-stimulator category rather than the dermal filler category, and works gradually over a staged course.",
+  "facts": [
+    {
+      "value": "Poly-L-lactic acid",
+      "label": "Material"
+    },
+    {
+      "value": "Galderma",
+      "label": "Manufacturer"
+    },
+    {
+      "value": "Bio-stimulator",
+      "label": "Used within"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is Sculptra?",
+      "body": [
+        "Sculptra is an injectable collagen stimulator made by Galderma. Its active material is poly-L-lactic acid (the manufacturer refers to its particle form as PLLA-SCA) supplied as a dry powder that the clinic reconstitutes with sterile water before use. It sits in the bio-stimulator category rather than the dermal filler category, and that distinction matters if you are comparing options: a hyaluronic acid filler adds volume the moment it is placed, whereas Sculptra is intended to work by prompting your own collagen response over a period of months.",
+        "Whether it is an appropriate choice for you, and whether a filler or a different bio-stimulator would suit your concern better, is a clinical decision your doctor makes at an in-person consultation."
+      ]
+    },
+    {
+      "heading": "How poly-L-lactic acid works",
+      "body": [
+        "Poly-L-lactic acid is a synthetic, bioresorbable material that has long been used in absorbable medical sutures. Once injected, the PLLA particles are gradually broken down and cleared by the body; while that happens, they act as a stimulus for the skin's own collagen-forming activity. The reconstituting fluid is absorbed relatively quickly, so any immediate change you see straight after a session is not the treatment effect: the intended change develops slowly as new collagen is laid down.",
+        "This is why Sculptra is planned as a short course rather than a single visit, and why the manufacturer's own materials describe change appearing over weeks to months rather than immediately. Product choice, the number of sessions, the depth and the amount used are all decided by the treating doctor after examining you. Kaiteki does not publish dose guidance, because it is not something a reader should self-prescribe. Results develop gradually and vary between individuals."
+      ]
+    },
+    {
+      "heading": "What is Sculptra used for, if not instant volume?",
+      "body": [
+        "Because of that mechanism, Sculptra is generally considered where the concern is overall firmness and skin quality across a region, the cheek area, for example, rather than reshaping a single line on the day.",
+        "Within Kaiteki's bio-stimulator treatment, Sculptra is commonly considered for concerns related to gradual loss of firmness and structural support. It is not suitable for everyone, and a consultation determines whether it is appropriate for you."
+      ],
+      "list": [
+        "Loss of firmness and definition across the cheek region",
+        "Nasolabial folds and other established facial folds",
+        "General laxity and thinning skin quality on the face",
+        "Softening of the jawline contour",
+        "Temple and mid-face hollowing associated with volume loss",
+        "Crepey texture on the face where a filler-based approach is not appropriate"
+      ]
+    },
+    {
+      "heading": "What happens to Sculptra in the skin over time?",
+      "body": [
+        "The poly-L-lactic acid itself is bioresorbable and is broken down and cleared by the body. Any change comes from your own collagen response, which continues to age normally afterwards, so the effect is not permanent and duration is not guaranteed: how long it holds differs between individuals.",
+        "Unlike a hyaluronic acid filler, which can often be dissolved if needed, Sculptra cannot be dissolved in the same way. That is why careful assessment beforehand matters, and why some people choose occasional maintenance later rather than a larger treatment up front. Your doctor will discuss review and any maintenance at consultation."
+      ]
+    },
+    {
+      "heading": "Who suits a staged treatment like Sculptra, and who should avoid it?",
+      "body": [
+        "Sculptra is aimed at adults who accept a gradual, staged approach and are not looking for an immediate change. It suits people who prefer to build support progressively, and it is used across a range of skin tones because the mechanism is biological rather than light-based, so skin tone is not the limiting factor it can be with lasers. Your existing facial structure, skin thickness and how much support has already been lost all influence whether it is the right category of product for you.",
+        "Sculptra is not appropriate for anyone with a known allergy to its components, and the manufacturer advises against use in people with a history of keloid or hypertrophic scarring. It is not used in pregnancy or while breastfeeding, or where there is active infection or inflammation in the intended treatment area. Bleeding disorders, blood-thinning medication, autoimmune conditions and previous injectable treatments in the same area are all relevant. Please share your full medical history, medication list and any past injectable or surgical work at consultation so the doctor can advise safely."
+      ]
+    },
+    {
+      "heading": "What happens across a Sculptra session and the days after it?",
+      "body": [
+        "A visit begins with a doctor consultation and facial assessment, where the concern, your history and the realistic time course are discussed. If Sculptra is appropriate, the product is reconstituted in advance per the manufacturer's instructions, the skin is cleansed and a topical anaesthetic or local anaesthetic is used for comfort. The injection itself typically takes a relatively short time: most of the appointment is assessment, preparation and aftercare discussion rather than the injecting.",
+        "The doctor may massage the treated area afterwards and will explain the aftercare routine, including whether any at-home massage is advised for you. Sculptra is normally planned as a small number of sessions spaced a few weeks apart, with the response reviewed between visits. The exact number and spacing depend on your assessment, and your doctor will set out what to expect for your case.",
+        "Most people return to normal activity the same day, though this varies. Injection-site swelling, redness, tenderness or bruising is common in the first few days and usually settles; bruising can occasionally take longer to fade, which is worth planning around if you have an event coming up.",
+        "Your doctor will advise on aftercare specific to you, which commonly includes avoiding pressure or vigorous facial treatments on the area for a short period, and following any massage instructions given. Because change develops over months, review appointments matter more here than with an immediate-result treatment: keep them, and raise anything unexpected with the clinic rather than waiting."
+      ]
+    },
+    {
+      "heading": "What are Sculptra's risks, including lumps that appear later?",
+      "body": [
+        "As with any injectable procedure, Sculptra carries risks, which are explained during consultation. Temporary effects can include swelling, redness, tenderness, bruising, bleeding at the injection site and small bumps under the skin. Delayed-onset lumps or nodules have been reported with poly-L-lactic acid products, sometimes months after treatment, and rare but serious vascular complications are recognised for facial injectables in general. These are uncommon when the treatment is appropriately selected and performed by a trained doctor using an assessed injection plan, and your doctor will explain the warning signs to report."
+      ]
+    }
+  ],
+  "costFactors": {
+    "intro": "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. What moves it:",
+    "factors": [
+      "The area being addressed.",
+      "How much structural support has been lost.",
+      "How many sessions your plan involves. Sculptra is a staged treatment, so the plan is best understood as a course rather than a single appointment.",
+      "How your skin responds between visits."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How is Sculptra different from a hyaluronic acid filler?",
+      "a": "A hyaluronic acid filler adds volume in the moment it is placed and can often be dissolved if needed. Sculptra instead works through poly-L-lactic acid, which is gradually resorbed while acting as a stimulus for your own collagen, so change is intended to appear over weeks to months and it cannot be dissolved in the same way. Neither category is better in the abstract: they answer different concerns, and your doctor will advise which fits yours at consultation."
+    },
+    {
+      "q": "How soon would I notice a change after Sculptra?",
+      "a": "Not immediately. The fluid used to reconstitute the product is absorbed within days, so early appearance is not the treatment effect. The intended change develops gradually over a period of months as the collagen response builds, and it varies considerably between individuals. Your doctor will set out a realistic time course for your own plan at consultation."
+    },
+    {
+      "q": "Does Sculptra hurt, and is anaesthetic used?",
+      "a": "It involves injections, so some discomfort is expected. Topical or local anaesthetic is commonly used to make the session more comfortable, and tenderness afterwards is normal for a few days. Your doctor will discuss comfort measures with you beforehand and can adjust the approach if you are needle-anxious."
+    },
+    {
+      "q": "Is Sculptra permanent?",
+      "a": "No. The poly-L-lactic acid itself is bioresorbable and is broken down and cleared by the body. Any change comes from your own collagen response, which continues to age normally afterwards, so the effect is not permanent and duration is not guaranteed: how long it holds differs between individuals. Your doctor will discuss review and any maintenance at consultation."
+    }
+  ],
+  "reviewedBy": "dr-jamie-gan",
+  "lastReviewed": "2026-07-18",
+  "seoTitle": "Sculptra PLLA Bio-Stimulator Treatment Malaysia | Kaiteki",
+  "seoDescription": "Sculptra is a poly-L-lactic acid collagen stimulator used within Kaiteki's bio-stimulator treatment for gradual structural support. Book a free consultation."
+}

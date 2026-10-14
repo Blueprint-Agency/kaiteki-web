@@ -1,0 +1,118 @@
+{
+  "slug": "potenza",
+  "name": "Potenza",
+  "group": "Lifting & Tightening",
+  "type": "device",
+  "treatments": [
+    "microneedling"
+  ],
+  "image": "https://cdn.kaiteki.my/images/technology/potenza.jpg",
+  "device": "Potenza",
+  "summary": "A radiofrequency microneedling device combining monopolar and bipolar modes at two frequencies, used for scarring, pore and texture concerns.",
+  "leadAnswer": "Potenza is a radiofrequency microneedling device from Cynosure Lutronic, and its distinguishing feature is configurability: it offers monopolar and bipolar modes at two frequencies, so scarred areas, pore-dense zones and finer skin can be treated at different settings within one session.",
+  "facts": [
+    {
+      "value": "Monopolar and bipolar",
+      "label": "RF modes"
+    },
+    {
+      "value": "Two frequencies",
+      "label": "Configurability"
+    },
+    {
+      "value": "RF microneedling",
+      "label": "Used within"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is Potenza?",
+      "body": [
+        "Potenza is a radiofrequency (RF) microneedling device from Cynosure Lutronic. Like other devices in this category it passes very fine needles through the skin surface and releases radiofrequency energy from them at a chosen depth, and at Kaiteki it is used within our microneedling treatment.",
+        "Its distinguishing feature is configurability. Most RF microneedling devices deliver one type of radiofrequency; Potenza offers four combinations (monopolar or bipolar radiofrequency, each delivered at 1MHz or 2MHz) in a single platform, alongside a range of interchangeable tips and adjustable needle depth. Whether it is the right device for you depends on your concern, skin type and medical history, which a doctor assesses at an in-person consultation."
+      ]
+    },
+    {
+      "heading": "How the four modes and depth control work",
+      "body": [
+        "Bipolar radiofrequency passes energy between the needles, keeping it relatively contained around the needle field; monopolar radiofrequency travels from the needles toward a return electrode, which spreads the energy more broadly and deeply. Frequency changes the character of the heating as well: the manufacturer pairs these two options with 1MHz and 2MHz settings, giving four modes that can be matched to shallow or deeper work.",
+        "Tips are interchangeable, with different pin counts and configurations for small precise areas versus broader coverage. The manufacturer also offers a Fusion Tip, which it describes as using a dual air-chamber design to release air toward the skin with each pulse in order to help topical products applied during the session penetrate; the manufacturer states this tip runs in monopolar mode at 1MHz. Topical numbing is applied first and the area cooled afterwards. Mode, frequency, tip, depth and energy are all chosen by the treating doctor. Changes develop gradually over weeks to months and vary between individuals."
+      ]
+    },
+    {
+      "heading": "Why does Potenza treat different parts of the face at different depths?",
+      "body": [
+        "That range of settings is usually why a doctor selects it when the plan involves working at several different depths across a face, which is common with scarring and pore concerns. Needle depth is set separately, so the doctor can treat superficially around fine surface texture and go deeper into a tethered scar in the same session."
+      ]
+    },
+    {
+      "heading": "Is Potenza mainly for scars and pores, or for tightening?",
+      "body": [
+        "Scar work in particular is a staged process: different scar types respond differently, some benefit from being released or combined with other treatments, and a doctor will set realistic expectations at consultation rather than promising a single fix.",
+        "Potenza is commonly considered for the concerns below. It is not suitable for everyone, and a consultation determines whether it is appropriate for you."
+      ],
+      "list": [
+        "Acne scarring, including boxcar and rolling scars",
+        "Enlarged pores and coarse skin texture",
+        "Uneven surface texture and fine lines",
+        "Active or oil-prone acne-affected skin, using shallower settings",
+        "Mild skin laxity and loss of firmness",
+        "Selected surgical or trauma scars, as assessed by a doctor"
+      ]
+    },
+    {
+      "heading": "Who should avoid Potenza, and why does monopolar mode matter for implants?",
+      "body": [
+        "Because radiofrequency is not absorbed by melanin the way laser light is, RF microneedling is used across a broad range of skin tones, including the deeper Asian skin tones common in Malaysia.",
+        "Potenza may not be suitable during pregnancy or breastfeeding, with active skin infection or inflamed dermatitis in the area, a history of keloid scarring, recent oral isotretinoin, clotting disorders or while taking blood thinners. Monopolar radiofrequency in particular means implanted electronic devices such as pacemakers, and metal implants in the treatment area, must be declared, as does any permanent filler. Please share your full medical, medication and skincare history at consultation so the doctor can advise safely."
+      ]
+    },
+    {
+      "heading": "What happens in a Potenza session, and how long does the skin take to settle?",
+      "body": [
+        "Your visit begins with a doctor consultation and a close look at your skin, mapping which areas need which depth: scarred areas, pore-dense zones and finer skin are often treated with different settings in the same session. The skin is then cleansed and topical anaesthetic applied and left to take effect, which usually takes up most of the appointment time.",
+        "The handpiece is passed over the mapped areas in overlapping stamps, with the doctor changing depth, mode or tip as they move between zones. Most people describe heat and a prickling or tapping sensation, felt more distinctly at deeper settings. Active treatment of a full face commonly takes around 30 to 45 minutes, with the full appointment closer to an hour and a half including numbing and aftercare. Scar-focused plans typically run to several sessions spaced roughly four to six weeks apart, with the number and spacing decided by your doctor.",
+        "Redness, warmth and mild swelling are usual straight afterwards, often with a visible pattern from the needle pins. This commonly settles over two to three days, though it varies between individuals and with the depths used. Deeper scar settings tend to leave the skin looking flushed and feeling tender for slightly longer, and pinpoint scabs can occur.",
+        "Gentle cleansing, a bland moisturiser and daily sunscreen are advised while the skin recovers, with retinoids, acids and other actives paused for a short period. Makeup is usually left off for the first day or so, and heat, sweat and sun exposure avoided for a few days. Your doctor will give aftercare guidance specific to your skin and the settings used."
+      ]
+    },
+    {
+      "heading": "Can Potenza trigger an acne flare or pigment change?",
+      "body": [
+        "As with any medical procedure, Potenza carries risks, which are explained during consultation. Temporary effects can include redness, swelling, pinpoint bruising or scabbing, tenderness, dryness and transient changes in pigmentation. Less commonly, infection, an acne flare, prolonged pigment change or scarring can occur. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor."
+      ]
+    }
+  ],
+  "costFactors": {
+    "intro": "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan. What moves it:",
+    "factors": [
+      "The concern and its severity. Scarring generally needs a longer course than pore or texture work.",
+      "The size of the area treated.",
+      "The number of modes and tips a session requires. Treatment tips are single-use consumables.",
+      "How your skin responds.",
+      "Whether Potenza is combined with other treatments, where the doctor judges that appropriate."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What do Potenza's monopolar and bipolar modes actually change for me?",
+      "a": "Bipolar radiofrequency keeps energy between the needles for more contained, superficial work, while monopolar spreads it more broadly and deeply. Combined with 1MHz and 2MHz settings and adjustable needle depth, that lets a doctor treat several depths across one face in a single session. Which combinations are used is a clinical decision made at consultation."
+    },
+    {
+      "q": "Is Potenza used for acne scars, and how many sessions does scar work take?",
+      "a": "Acne scarring and pore texture are among the concerns it is commonly considered for, and its depth control is part of why it is chosen for that work. Scar plans generally run to several sessions spaced roughly four to six weeks apart, and different scar types respond differently. Your doctor will assess your scar pattern and set out a realistic plan at consultation."
+    },
+    {
+      "q": "What is the Fusion Tip for?",
+      "a": "The manufacturer describes the Fusion Tip as using a dual air-chamber design that releases air toward the skin with each pulse, intended to help topical products applied during the session penetrate, and states it operates in monopolar mode at 1MHz. Whether a session includes it, and which topical is used, is decided by the treating doctor. Suitability is assessed at consultation."
+    },
+    {
+      "q": "Can I have Potenza if I have a pacemaker or metal implants?",
+      "a": "Monopolar radiofrequency passes energy through tissue toward a return electrode, so implanted electronic devices such as pacemakers, and metal implants in the treatment area, are important to declare and may make the treatment unsuitable. Permanent fillers should also be disclosed. Bring details of any implant or device to your consultation so your doctor can advise safely."
+    }
+  ],
+  "reviewedBy": "dr-lim-xiao-chien",
+  "lastReviewed": "2026-07-18",
+  "seoTitle": "Potenza RF Microneedling Treatment Malaysia | Kaiteki",
+  "seoDescription": "Potenza is an RF microneedling device with four modes and adjustable depth, used at Kaiteki for scars and pores. Book a free consultation to check suitability."
+}

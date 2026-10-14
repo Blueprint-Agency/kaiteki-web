@@ -1,0 +1,118 @@
+{
+  "slug": "fotona-pqx",
+  "name": "Fotona PQX (StarWalker)",
+  "group": "Lasers",
+  "type": "device",
+  "treatments": [
+    "pico-laser"
+  ],
+  "image": "https://cdn.kaiteki.my/images/technology/fotona-pqx.jpg",
+  "device": "Fotona",
+  "summary": "Platform laser pikosaat dan Q-switched 1064nm/532nm, juga dikenali sebagai StarWalker PQX, yang digunakan dalam rawatan Pico laser untuk masalah pigmen dan tatu.",
+  "leadAnswer": "StarWalker PQX ialah platform laser pikosaat dan Q-switched daripada Fotona, yang digunakan di Kaiteki dalam rawatan Pico laser kami. Ia menghasilkan tenaga Nd:YAG pada 1064nm dan, melalui kristal KTP, pada 532nm, jadi doktor memilih panjang gelombang mengikut pigmen atau dakwat tatu yang dirawat.",
+  "facts": [
+    {
+      "value": "1064nm dan 532nm",
+      "label": "Panjang gelombang"
+    },
+    {
+      "value": "Fotona, Slovenia",
+      "label": "Pengeluar"
+    },
+    {
+      "value": "Pico laser",
+      "label": "Digunakan dalam"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Apa itu Fotona StarWalker PQX?",
+      "body": [
+        "StarWalker® PQX ialah platform laser pikosaat buatan Fotona (Slovenia), dan di Kaiteki ia salah satu mesin yang digunakan dalam rawatan Pico laser kami. Fotona menggambarkannya sebagai pico laser berprestasi ultra: sistem ini menghasilkan tenaga Nd:YAG Q-switched pada 1064nm dan, melalui kristal KTP, pada 532nm, lalu menghantarnya dalam denyutan yang cukup singkat sehingga pigmen dipecahkan secara fotoakustik, bukan dengan haba yang berterusan. Pengeluar menggambarkannya sebagai mekanisme bukan terma, iaitu salah satu sebab platform pikosaat digunakan pada pelbagai jenis kulit.",
+        "Perbezaan yang penting bagi pesakit ialah keluasan kawalan denyutan dan pilihan penghantarannya, bukan satu panjang gelombang utama. Fotona menonjolkan tenaga denyutan dan kuasa puncak yang tinggi pada platform ini, bersama teknologi ASP (Adaptive Structured Pulse), serta pelbagai alat pegang tangan pancaran penuh dan fraksional pada lengan berengsel OPTOflex®. Sama ada laser pikosaat sesuai untuk masalah anda, dan mesin serta tetapan mana yang digunakan, ditentukan oleh doktor selepas memeriksa kulit anda semasa konsultasi."
+      ]
+    },
+    {
+      "heading": "Cara ia berfungsi: 1064nm, 532nm dan denyutan berstruktur",
+      "body": [
+        "Kedua-dua panjang gelombang dihantar sebagai denyutan yang sangat singkat, dan teknologi ASP Fotona mengawal struktur setiap denyutan supaya doktor boleh mengubah cara tenaga itu disusun mengikut sasaran. Fotona juga membina EFC (Energy Feedback Control) ke dalamnya, yang memantau tenaga setiap denyutan berbanding tetapan yang dipilih oleh pengamal.",
+        "Cara penghantaran sama penting dengan sumbernya. Selain alat pegang tangan pancaran penuh yang biasa, Fotona menawarkan alat pegang tangan fraksional untuk kaedah FracTAT® yang dipatenkannya, iaitu lubang mikro dibuat dahulu dengan alat pegang tangan fraksional sebelum laluan pancaran penuh; Fotona menerangkan bahawa lubang mikro ini mengurangkan frosting (kulit memutih) dan bertindak sebagai saluran pelepas tekanan supaya gas yang terbentuk semasa proses buang tatu boleh keluar. Protokol dua langkah yang berkaitan, FracRevive®, menggabungkan sapuan titik penuh dengan cap fraksional untuk peremajaan kulit dengan cahaya. Panjang gelombang, alat pegang tangan, saiz titik dan tenaga semuanya dipilih oleh doktor yang merawat, dan perubahan berkembang secara beransur-ansur sepanjang kursus dan berbeza antara individu."
+      ]
+    },
+    {
+      "heading": "1064nm atau 532nm: panjang gelombang mana untuk pigmen yang mana?",
+      "body": [
+        "Panjang gelombang Nd:YAG 1064nm menembusi lebih dalam dan agak kurang diserap oleh melanin dalam epidermis, sebab itu ia biasanya dipilih untuk pigmen yang lebih dalam dan jenis kulit yang lebih gelap. Output 532nm yang digandakan frekuensinya lebih kuat diserap oleh pigmen di permukaan dan oleh dakwat tatu keluarga merah.",
+        "Dalam rawatan Pico laser Kaiteki, StarWalker PQX biasanya dipertimbangkan untuk masalah yang disenaraikan di bawah. Ia tidak sesuai untuk semua orang, dan konsultasi akan menentukan sama ada ia sesuai untuk anda dan panjang gelombang mana yang wajar dimulakan."
+      ],
+      "list": [
+        "Sun spot, freckles dan lesi pigmen benigna yang lain",
+        "Masalah pigmen dermis seperti nevus Ota dan nevus Hori, mengikut penilaian doktor anda",
+        "Jeragat (melasma), diurus secara konservatif sebagai sebahagian daripada pelan jangka panjang",
+        "Dakwat tatu hitam dan pelbagai warna, termasuk pendekatan fraksional FracTAT®",
+        "Warna kulit tidak sekata, kulit kusam dan liang pori yang nampak besar",
+        "Parut jerawat dan tekstur kulit, menggunakan alat pegang tangan fraksional"
+      ]
+    },
+    {
+      "heading": "Kenapa ujian tampalan dibuat sebelum PQX pada jeragat atau kulit yang lebih gelap?",
+      "body": [
+        "Penyerapan melanin yang rendah pada panjang gelombang 1064nm ialah sebab praktikal doktor mungkin memilih platform ini untuk jenis kulit Fitzpatrick yang lebih gelap atau untuk pigmen yang terletak lebih dalam di kulit. Itu tidak menjadikannya selamat untuk semua orang: tetapan masih perlu dipadankan dengan kulit anda, dan ujian tampalan sering dibuat dahulu bagi pigmen dermis, jeragat atau tatu yang komposisi dakwatnya tidak diketahui."
+      ]
+    },
+    {
+      "heading": "Apa yang boleh menangguhkan atau menghalang sesi PQX?",
+      "body": [
+        "Laser pikosaat mungkin tidak sesuai semasa hamil atau menyusukan anak, pada kulit yang baru digelapkan atau terbakar matahari, di atas jangkitan aktif, ekzema atau luka terbuka di kawasan itu, jika anda ada sejarah parut keloid, atau semasa anda mengambil ubat fotosensitif termasuk isotretinoin oral. Sila kongsikan sejarah perubatan, ubat dan rawatan anda sepenuhnya semasa konsultasi, termasuk laser, peel atau suntikan sebelum ini di kawasan itu, supaya doktor boleh memberi nasihat dengan selamat."
+      ]
+    },
+    {
+      "heading": "Apa yang berlaku semasa sesi PQX, dan kenapa dakwat tatu jadi putih (frosting)?",
+      "body": [
+        "Setiap pelan bermula dengan konsultasi doktor dan penilaian kulit, bukan rawatan. Jika StarWalker PQX sesuai, doktor menentukan panjang gelombang dan alat pegang tangan yang akan digunakan dan mungkin merawat kawasan ujian yang kecil sebelum sesi penuh. Pada hari rawatan, kulit dibersihkan, pelindung mata dipakaikan, dan krim kebas mungkin digunakan jika doktor menganggapnya sesuai, lebih kerap untuk kerja tatu berbanding laluan toning yang ringan.",
+        "Semasa laluan laser, anda akan mendengar bunyi klik yang pantas dan merasa seperti petikan getah atau cucukan jarum panas yang singkat. Pigmen di permukaan mungkin menjadi putih atau kelabu seketika, dan kawasan tatu yang dirawat biasanya memutih (frosting). Sesi muka biasanya singkat, selalunya sekitar 20 hingga 40 minit termasuk persediaan, manakala sesi tatu bergantung pada saiz dan bilangan langkah dalam protokol FracTAT®. Kursus lazimnya beberapa sesi yang dijarakkan beberapa minggu supaya kulit sempat membersihkan pigmen yang dirawat; kursus tatu biasanya dijarakkan lebih jauh. Doktor anda menetapkan jaraknya.",
+        "Downtime secara amnya singkat tetapi berbeza mengikut intensiti yang digunakan dan antara individu. Kemerahan, rasa hangat dan bengkak ringan mungkin berlaku selama beberapa jam hingga sehari dua. Jika pigmen atau dakwat disasarkan secara terus, bintik gelap halus, kuping halus atau kudis kecil boleh muncul dan kemudian tertanggal dalam lebih kurang satu hingga dua minggu; laluan fraksional mungkin meninggalkan tekstur seperti kertas pasir buat seketika. Biarkan semuanya tertanggal sendiri.",
+        "Pelindung matahari spektrum luas setiap hari dan benar-benar mengelak matahari antara sesi adalah penting, bersama pembersihan yang lembut dan bahan aktif dihentikan sehingga doktor membenarkan. Kawasan tatu mungkin memerlukan pembalut dan arahan penjagaan luka yang khusus. Doktor anda akan memberi panduan penjagaan yang sepadan dengan kawasan dan protokol yang digunakan."
+      ]
+    },
+    {
+      "heading": "Apakah risiko PQX, dan kenapa jeragat dirawat dengan berhati-hati?",
+      "body": [
+        "Seperti mana-mana laser perubatan, StarWalker PQX mempunyai risiko, yang diterangkan semasa konsultasi sebelum rawatan diatur. Kesan sementara boleh termasuk kemerahan, bengkak, pendarahan titik halus atau lebam, kuping, dan kulit yang dirawat menjadi lebih gelap atau lebih cerah; jeragat khususnya boleh bertindak balas secara tidak dijangka dan dirawat dengan berhati-hati. Melepuh, jangkitan pada kawasan berkuping dan parut jarang berlaku. Risiko dikurangkan, tetapi tidak pernah dihapuskan, apabila panjang gelombang dan tetapan dipilih dengan sewajarnya dan rawatan dilakukan oleh doktor yang terlatih."
+      ]
+    }
+  ],
+  "costFactors": {
+    "intro": "Harga dibincangkan semasa konsultasi, bukan disebut dalam talian, jadi sebarang angka mencerminkan pelan anda selepas penilaian, bukan pakej umum. Perkara yang mempengaruhinya:",
+    "factors": [
+      "Sedalam mana pigmen itu berada.",
+      "Saiz kawasan.",
+      "Bagaimana kulit anda membersihkan pigmen antara lawatan.",
+      "Bagi tatu, warna, ketumpatan dan lapisan dakwat. Tatu amatur hitam yang kecil berkelakuan sangat berbeza daripada tatu pelbagai warna yang padat.",
+      "Protokol fraksional, yang menambah langkah dalam satu sesi dan mempengaruhi tempoh sesi.",
+      "Sama ada rawatan pico digabungkan dengan langkah lain dalam pelan anda."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Apa beza Fotona PQX dan PicoSure?",
+      "a": "Kedua-duanya laser pikosaat, tetapi PQX ialah platform Nd:YAG 1064nm/532nm manakala panjang gelombang utama PicoSure ialah 755nm. Output 1064nm kurang diserap oleh melanin dan sampai lebih dalam, dan sebab itu ia sering dipilih untuk pigmen yang lebih dalam atau warna kulit yang lebih gelap, manakala 755nm berinteraksi dengan lebih kuat dengan melanin. Doktor anda akan menerangkan yang mana lebih sepadan dengan corak pigmen anda semasa konsultasi."
+    },
+    {
+      "q": "Apa itu FracTAT®, dan kenapa doktor menggunakannya untuk tatu?",
+      "a": "FracTAT® ialah kaedah dua langkah Fotona yang dipatenkan, iaitu alat pegang tangan fraksional membuat lubang mikro pada kulit dahulu, diikuti laluan pancaran penuh. Fotona menggambarkan lubang mikro ini sebagai saluran pelepas tekanan yang mengurangkan frosting dan membolehkan gas yang terbentuk semasa proses itu keluar. Sama ada pendekatan ini digunakan pada tatu anda bergantung pada dakwat, lokasi dan kulit anda, dan keputusannya dibuat oleh doktor yang merawat."
+    },
+    {
+      "q": "Boleh ke StarWalker PQX digunakan pada kulit yang digelapkan matahari?",
+      "a": "Kulit yang baru digelapkan atau terbakar matahari biasanya menjadi sebab untuk menangguhkan rawatan, kerana pigmen dalam epidermis mengubah cara tenaga diserap dan meningkatkan risiko perubahan pigmen yang tidak diingini. Doktor biasanya meminta anda mengelak berjemur dengan sengaja dan produk tanning untuk satu tempoh sebelum dan sepanjang kursus. Beritahu doktor semasa konsultasi tentang pendedahan matahari baru-baru ini atau percutian yang anda rancang."
+    },
+    {
+      "q": "Berapa lama perlu tunggu antara sesi PQX?",
+      "a": "Jarak sesi ditetapkan oleh doktor, bukan oleh peraturan yang tetap, kerana kulit memerlukan masa untuk membersihkan serpihan pigmen yang dipecahkan pada sesi sebelumnya. Kursus pigmen muka lazimnya dijarakkan beberapa minggu, manakala sesi tatu biasanya dijarakkan lebih jauh supaya kulit sembuh sepenuhnya. Doktor anda akan mengesahkan jadual yang sesuai dengan kulit dan masalah anda."
+    }
+  ],
+  "reviewedBy": "dr-teresa-tan",
+  "lastReviewed": "2026-07-18",
+  "seoTitle": "Fotona PQX StarWalker Pico Laser di Malaysia | Kaiteki",
+  "seoDescription": "Fotona StarWalker PQX ialah laser pikosaat 1064nm/532nm di Kaiteki untuk masalah pigmen dan tatu. Tempah konsultasi percuma untuk semak kesesuaian anda."
+}

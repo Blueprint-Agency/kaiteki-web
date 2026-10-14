@@ -1,0 +1,118 @@
+{
+  "slug": "sylfirm-x",
+  "name": "Sylfirm X",
+  "group": "Lifting & Tightening",
+  "type": "device",
+  "treatments": [
+    "microneedling"
+  ],
+  "image": "https://cdn.kaiteki.my/images/technology/sylfirm-x.jpg",
+  "summary": "A dual-mode (pulsed and continuous wave) radiofrequency microneedling device used for pigment, vascular and texture concerns.",
+  "leadAnswer": "Sylfirm X is a radiofrequency microneedling device from Viol in South Korea. Fine needles carry RF energy to a chosen depth rather than heating the surface, and its distinguishing feature is dual mode: a pulsed wave and a continuous wave, selected for the concern being treated.",
+  "facts": [
+    {
+      "value": "Pulsed and continuous wave",
+      "label": "Dual mode"
+    },
+    {
+      "value": "Viol, South Korea",
+      "label": "Manufacturer"
+    },
+    {
+      "value": "RF microneedling",
+      "label": "Used within"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is Sylfirm X?",
+      "body": [
+        "Sylfirm X is a radiofrequency (RF) microneedling device made by Viol, a South Korean medical-aesthetic device manufacturer. Like other RF microneedling systems, it passes very fine needles through the skin surface and delivers radiofrequency energy from the needle tips, so the energy is placed at a chosen depth rather than heating the skin from the outside in. At Kaiteki it is used within our microneedling treatment.",
+        "What distinguishes it within the RF microneedling category is that it offers two energy delivery modes rather than one. Whether Sylfirm X suits your skin depends on your concern, skin type, medical history and what you want to address, and that is assessed by a doctor at an in-person consultation."
+      ]
+    },
+    {
+      "heading": "How pulsed and continuous wave modes work",
+      "body": [
+        "Sylfirm X uses non-insulated gold microneedles that the manufacturer describes as 300 microns in diameter, delivering bipolar radiofrequency at 2MHz. Because the needles are non-insulated, energy is released along the needle rather than only at the tip. In pulsed wave mode, the manufacturer describes the energy as producing selective coagulation around the basement membrane and small vessels near the epidermal-dermal junction and upper dermis, with the intention of limiting effect on surrounding tissue, the mechanism the manufacturer markets as Selective Regional Regeneration. Continuous wave mode delivers a steadier heating pattern used for deeper collagen-focused work.",
+        "The two waveforms are subdivided into several preset modes, and needle depth is adjustable so the doctor can work shallow for surface pigment and texture or deeper for dermal remodelling. Topical numbing cream is normally applied beforehand, and the treated area is cooled and soothed afterwards. The mode, depth, energy and number of passes are all selected by the treating doctor for your skin. Results develop gradually over weeks and vary between individuals."
+      ]
+    },
+    {
+      "heading": "Is Sylfirm X for tightening, or for pigment and redness?",
+      "body": [
+        "Alongside a continuous wave (CW) mode, which is the more familiar heating mode used for firmness and texture work, it has a pulsed wave (PW) mode that the manufacturer developed with pigment and vascular concerns in mind, which is often why a doctor reaches for this device rather than a purely tightening-focused one.",
+        "Sylfirm X is commonly considered for the concerns below. It is not suitable for everyone, and a consultation determines whether it is appropriate for you."
+      ],
+      "list": [
+        "Melasma and stubborn patchy pigmentation",
+        "Post-inflammatory hyperpigmentation (PIH)",
+        "Facial redness and small visible vessels",
+        "Enlarged pores and uneven skin texture",
+        "Acne scarring and rolling scars",
+        "Mild skin laxity and loss of firmness"
+      ]
+    },
+    {
+      "heading": "Why does melasma need a course of Sylfirm X, not one session?",
+      "body": [
+        "Pigment concerns such as melasma are chronic and relapsing, so any plan involving Sylfirm X is usually combined with topical care and strict sun protection rather than treated as a one-off procedure.",
+        "A course of several sessions spaced roughly a month apart is typical, with the exact plan and spacing decided by your doctor based on your concern and how your skin responds. Sun protection matters particularly when pigment is the concern being addressed."
+      ]
+    },
+    {
+      "heading": "Who should postpone or avoid Sylfirm X?",
+      "body": [
+        "Because radiofrequency energy is not absorbed by melanin the way laser light is, RF microneedling is used across a broad range of skin tones, including the deeper Asian skin tones common in Malaysia. That does not make it appropriate for everyone.",
+        "Sylfirm X may not be suitable during pregnancy or breastfeeding, with active skin infection, inflamed acne or eczema in the treatment area, a history of keloid scarring, certain medications including recent oral isotretinoin, blood-clotting disorders, or if you have a pacemaker or other implanted electronic device. Recently tanned or sunburnt skin may also mean postponing. Please share your full medical, medication and skincare history at consultation so the doctor can advise safely."
+      ]
+    },
+    {
+      "heading": "How long does a Sylfirm X session take, and how long does the redness last?",
+      "body": [
+        "Your visit begins with a doctor consultation and skin assessment to confirm whether RF microneedling is the right route for your concern, and whether Sylfirm X specifically is the appropriate device. If it is, the skin is cleansed and topical anaesthetic cream is applied and left to take effect, which usually accounts for most of the appointment time.",
+        "The handpiece is then passed over the treatment area, stamping the microneedles and delivering RF at the selected depth. Most people describe a warm prickling or tapping sensation. Active treatment of a full face commonly takes around 20 to 30 minutes, with the whole appointment nearer an hour once numbing and aftercare are included.",
+        "Expect the skin to look flushed and feel warm immediately afterwards, often with a faint grid pattern from the needle tips. This commonly settles within a day or two, though it varies between individuals and with the depth and energy used. Mild swelling, dryness or slight roughness for a few days is not unusual.",
+        "Gentle cleansing, a bland moisturiser and diligent daily sunscreen are advised while the skin settles, and actives such as retinoids or acids are usually paused for a short period. Your doctor will give aftercare guidance specific to your skin and the settings used."
+      ]
+    },
+    {
+      "heading": "Can Sylfirm X cause pigment change or scarring?",
+      "body": [
+        "As with any medical procedure, Sylfirm X carries risks, which are explained during consultation. Temporary effects can include redness, swelling, pinpoint bruising or scabbing, dryness and transient changes in pigmentation. Less commonly, infection, prolonged pigment change or scarring can occur. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor."
+      ]
+    }
+  ],
+  "costFactors": {
+    "intro": "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan rather than a generic package. What moves it:",
+    "factors": [
+      "The concern being treated, and the size of the area.",
+      "The depth and modes used.",
+      "Whether the plan combines Sylfirm X with topical or other treatments.",
+      "Single-use consumable needle tips, which are part of what shapes the cost of any RF microneedling session.",
+      "How your skin responds. Pigment-driven plans often include occasional maintenance sessions over time."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How is Sylfirm X different from other RF microneedling devices?",
+      "a": "Most RF microneedling devices deliver a continuous heating mode aimed at firmness and texture. Sylfirm X adds a pulsed wave mode that the manufacturer designed around pigment and vascular concerns, alongside its continuous mode. That dual capability is usually the reason a doctor selects it, but device choice depends on your concern and is decided at consultation."
+    },
+    {
+      "q": "Can Sylfirm X be used for melasma on Asian skin?",
+      "a": "Melasma is one of the concerns the manufacturer positions the pulsed wave mode for, and radiofrequency energy is not melanin-targeted, so RF microneedling is used across deeper skin tones. Melasma is still a chronic, relapsing condition that needs ongoing topical care and sun protection rather than a single procedure. A doctor will assess your pigment pattern at consultation before advising whether it is appropriate."
+    },
+    {
+      "q": "Does Sylfirm X hurt, and how long does the redness last?",
+      "a": "Topical numbing cream is applied first, and most people describe the treatment itself as a warm prickling or tapping sensation. Afterwards the skin usually looks flushed and feels warm for a day or two, sometimes with a faint needle-tip pattern. Comfort and recovery vary with the depth and energy used, which your doctor selects and will explain beforehand."
+    },
+    {
+      "q": "Is there anything that would rule me out of Sylfirm X?",
+      "a": "Pregnancy, active infection or inflamed skin in the treatment area, a keloid-scarring history, recent oral isotretinoin, clotting disorders and implanted electronic devices such as pacemakers are among the situations that may make it unsuitable or mean postponing. Recently tanned skin can also mean waiting. Share your full medical and medication history at consultation so your doctor can advise safely."
+    }
+  ],
+  "reviewedBy": "dr-yeong-bin",
+  "lastReviewed": "2026-07-18",
+  "seoTitle": "Sylfirm X RF Microneedling Treatment Malaysia | Kaiteki",
+  "seoDescription": "Sylfirm X is a dual-mode RF microneedling device used at Kaiteki for pigment, vascular and texture concerns. Book a free consultation to check your suitability."
+}

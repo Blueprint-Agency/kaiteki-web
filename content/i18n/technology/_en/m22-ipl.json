@@ -1,0 +1,116 @@
+{
+  "slug": "m22-ipl",
+  "name": "M22 IPL",
+  "group": "Lasers",
+  "type": "device",
+  "treatments": [
+    "vascular-pigment-laser",
+    "laser-hair-removal"
+  ],
+  "image": "https://cdn.kaiteki.my/images/technology/m22-ipl.jpg",
+  "summary": "An intense pulsed light (IPL) platform that can be filtered for vascular or pigment targets and used for hair reduction.",
+  "leadAnswer": "M22 IPL is the intense pulsed light module of Lumenis's M22 platform. The distinction that matters when comparing devices is that IPL is not a laser: it emits a broadband pulse of non-coherent light, which the doctor narrows with a filter chosen for a vascular, pigment or hair-reduction target.",
+  "facts": [
+    {
+      "value": "Broadband, filtered",
+      "label": "Light source"
+    },
+    {
+      "value": "Lumenis",
+      "label": "Manufacturer"
+    },
+    {
+      "value": "Not a laser",
+      "label": "Category"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is M22 IPL?",
+      "body": [
+        "M22 is a modular aesthetic light platform made by Lumenis, and the M22 IPL module is its intense pulsed light component.",
+        "What sets the M22 module apart within the IPL category is how that filtering is handled. Lumenis describes the Universal IPL handpiece as taking nine interchangeable ExpertFilters™ with computer-enabled filter recognition, so the doctor changes the light band in seconds rather than swapping handpieces. At Kaiteki, M22 IPL is used within our vascular and pigment laser treatment and our laser hair removal treatment. Whether IPL suits your concern, or whether a true laser would suit you better, is assessed by a doctor at an in-person consultation."
+      ]
+    },
+    {
+      "heading": "How M22 IPL works",
+      "body": [
+        "Each pulse of filtered light is absorbed preferentially by a target in the skin, haemoglobin in a visible vessel, melanin in a sun spot, or pigment in a hair follicle, and converted to heat. Changing the filter shifts which target absorbs most strongly. Lumenis calls the delivery method Optimal Pulse Technology (OPT™), which the manufacturer describes as allowing control of pulse shape and equalising energy distribution across the pulse or sequential sub-pulses, so higher peak power can be delivered in shorter pulses at lower effective fluence.",
+        "Comfort is managed at the skin surface: the manufacturer describes three SapphireCool™ lightguides in different sizes providing continuous contact cooling while the pulse is delivered, so the epidermis is cooled as the light passes through it. Because M22 is modular, the same console can carry laser modules such as ResurFX™ for non-ablative fractional resurfacing, so a plan may combine modules where appropriate. Filter choice, pulse settings and energy are selected by the treating doctor for your skin tone and concern, and results develop gradually and vary between individuals."
+      ]
+    },
+    {
+      "heading": "IPL or laser: what changes with broadband, filtered light?",
+      "body": [
+        "The distinction that matters when comparing devices is that IPL is not a laser: a laser emits a single coherent wavelength, while IPL emits a broadband pulse of non-coherent light which the manufacturer describes as spanning roughly 400nm to 1200nm, then filters it down to the band suited to the target. That is why one IPL handpiece can be directed at redness one week and brown pigment the next, whereas a laser is generally bought for a narrower job.",
+        "M22 IPL is commonly considered for the concerns below, usually across a course of sessions rather than a single visit. It is not suitable for everyone, and a consultation determines whether it is appropriate for you."
+      ],
+      "list": [
+        "Facial redness and flushing, and small visible vessels",
+        "Sun spots, freckling and other superficial brown pigmentation",
+        "Uneven skin tone and general photoageing on the face, neck, chest and hands",
+        "Post-acne redness that lingers after breakouts settle",
+        "Unwanted hair on suitable areas, as part of a hair-reduction course"
+      ]
+    },
+    {
+      "heading": "Why is IPL used more cautiously on deeper and tanned skin?",
+      "body": [
+        "Because IPL is absorbed by melanin, skin tone matters more with broadband light than with some longer-wavelength lasers. IPL is generally aimed at lighter and mid-range skin tones, and at hair that is dark against paler surrounding skin. On deeper skin tones, or where a tan is present, the surrounding skin competes for the light and your doctor may recommend a laser wavelength instead."
+      ]
+    },
+    {
+      "heading": "Which medications and conditions rule out M22 IPL?",
+      "body": [
+        "M22 IPL may not be suitable during pregnancy, on recently tanned or sunburnt skin, with active infection or inflammation in the area, with a history of light-sensitive conditions, or while taking photosensitising medication such as isotretinoin or certain antibiotics. Please share your full medical, medication and skincare history at consultation, including recent sun exposure and hair-removal methods, so the doctor can advise safely."
+      ]
+    },
+    {
+      "heading": "What does an IPL pulse feel like, and how many sessions are planned?",
+      "body": [
+        "A visit begins with a doctor consultation and skin assessment, and a test area may be considered first. The skin is cleansed, eye protection fitted and cooling gel applied. The doctor then fits the filter suited to your concern and places the cooled lightguide against the skin, working across the area pulse by pulse. Most people describe each pulse as a brief warm snap, eased by the cooled contact tip between pulses.",
+        "A facial session is often in the region of 20 to 40 minutes including preparation; larger body areas take longer. IPL is normally planned as a course of several sessions spaced a few weeks apart, with hair-reduction spacing following the growth cycle rather than the calendar. Your doctor will explain the course they consider realistic and review it as your skin responds.",
+        "Downtime is usually limited and most people return to normal activity the same day, though this varies between individuals. Mild redness or a warm, mildly sunburnt feeling for a few hours is common, and treated pigment may look temporarily darker or slightly crusted before flaking away over the following days.",
+        "Daily sun protection matters before and after an IPL course, since the light targets pigment and treated skin is more sun-reactive. Gentle cleansing, no scrubbing or active acids for a few days, and avoiding heat such as hot showers, saunas and vigorous exercise immediately afterwards are usually advised. Your doctor will give aftercare instructions specific to your skin."
+      ]
+    },
+    {
+      "heading": "Can IPL cause burns or pigment change, and when is that more likely?",
+      "body": [
+        "As with any medical procedure, IPL carries risks, which are explained during consultation. Temporary effects can include redness, swelling around treated vessels or follicles, mild crusting of treated pigment, and short-lived changes in pigmentation. Blistering, burns and longer-lasting pigment change are uncommon but possible, and are more likely where the device is used on unsuitable or recently tanned skin. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor."
+      ]
+    }
+  ],
+  "costFactors": {
+    "intro": "Pricing is discussed at consultation rather than quoted online, so any figure reflects your actual plan. What moves it:",
+    "factors": [
+      "The concern being treated.",
+      "The size and number of areas.",
+      "How your skin responds between visits.",
+      "For hair reduction, more sessions, because only follicles in the active growth phase respond at any one time."
+    ],
+    "outro": "Vascular and pigment concerns are usually planned as a short course with occasional maintenance."
+  },
+  "faqs": [
+    {
+      "q": "Is M22 IPL a laser, and does that matter when choosing a treatment?",
+      "a": "It is not a laser. IPL emits a broad band of light that is then filtered towards a target, while a laser emits one specific wavelength. In practice that makes IPL flexible across redness, pigment and hair with one handpiece, while a laser is often the better choice when a concern needs a single wavelength delivered precisely or at depth. Your doctor will explain which approach suits your concern at consultation."
+    },
+    {
+      "q": "Is M22 IPL safe for darker or tanned Asian skin?",
+      "a": "Broadband light is absorbed by melanin in the surrounding skin as well as the target, so IPL is generally aimed at lighter and mid-range skin tones and is not recommended on recently tanned skin. For deeper skin tones your doctor may suggest a longer-wavelength laser instead. Suitability is assessed individually by a doctor at an in-person consultation before any course is planned."
+    },
+    {
+      "q": "How does the M22 Universal IPL handpiece differ from a single-filter IPL?",
+      "a": "Lumenis describes the Universal IPL handpiece as accepting nine interchangeable ExpertFilters™ with automatic filter recognition, so the light band can be changed within a session rather than requiring a separate handpiece for each indication. The manufacturer also describes Optimal Pulse Technology (OPT™) for controlling pulse shape. Whether that flexibility is useful for your plan depends on your concern, which the doctor assesses at consultation."
+    },
+    {
+      "q": "Will M22 IPL stop hair growing back permanently?",
+      "a": "No light-based treatment should be described as permanent. IPL hair treatment is planned as hair reduction over a course of sessions, because only follicles in the active growth phase respond to any one session, and maintenance sessions are often part of a longer-term plan. Response varies with hair colour, thickness, hormones and skin tone, and your doctor will set out realistic expectations at consultation."
+    }
+  ],
+  "reviewedBy": "dr-jen-meng",
+  "lastReviewed": "2026-07-18",
+  "seoTitle": "M22 IPL Photorejuvenation Treatment Malaysia | Kaiteki",
+  "seoDescription": "M22 IPL is a filtered intense pulsed light system used at Kaiteki for redness, pigment and hair-reduction concerns. Book a free consultation today."
+}

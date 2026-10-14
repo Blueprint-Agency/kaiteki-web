@@ -1,0 +1,118 @@
+{
+  "slug": "fotona-sp-dynamis",
+  "name": "Fotona SP Dynamis / TimeWalker",
+  "group": "Lasers",
+  "type": "device",
+  "treatments": [
+    "fotona-4d"
+  ],
+  "image": "https://cdn.kaiteki.my/images/technology/fotona-sp-dynamis.jpg",
+  "device": "Fotona",
+  "summary": "A dual-wavelength Er:YAG (2940nm) and Nd:YAG (1064nm) laser platform used to deliver Kaiteki's Fotona 4D facial protocol.",
+  "leadAnswer": "SP Dynamis is the Fotona laser platform behind Kaiteki's Fotona 4D facial protocol. It houses two complementary sources in one system, an Er:YAG laser at 2940nm that works at the surface and an Nd:YAG at 1064nm that reaches deeper, and a plan may use some or all of the four modes.",
+  "facts": [
+    {
+      "value": "2940nm Er:YAG + 1064nm Nd:YAG",
+      "label": "Wavelengths"
+    },
+    {
+      "value": "Fotona, Slovenia",
+      "label": "Manufacturer"
+    },
+    {
+      "value": "Fotona 4D",
+      "label": "Used within"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is Fotona SP Dynamis?",
+      "body": [
+        "SP Dynamis is a multi-application aesthetic laser platform from Fotona (Slovenia), and it is the machine behind Kaiteki's Fotona 4D facial treatment. Its defining feature is that it houses two complementary laser sources in one system: an Er:YAG laser at 2940nm and an Nd:YAG laser at 1064nm. TimeWalker® is Fotona's related dual-wavelength system dedicated to facial aesthetics, and the manufacturer lists both as suitable platforms for the Fotona4D® protocol.",
+        "That dual-source design is what makes a multi-step protocol possible at all: a single-wavelength device cannot work intraorally, deep in the dermis and on the skin surface within one appointment. It does not, however, make the treatment right for everyone. Whether Fotona 4D suits your face, your skin and your medical history is assessed by a doctor at an in-person consultation."
+      ]
+    },
+    {
+      "heading": "How the dual-wavelength platform enables a 4D protocol",
+      "body": [
+        "Fotona describes Fotona4D® as applying its two wavelengths across four named modes. SmoothLiftin™ uses the Er:YAG laser in SMOOTH® mode from inside the mouth, working on the tissue behind the perioral area; FRAC3® is a non-ablative Nd:YAG mode that Fotona describes as a three-dimensional effect seeking out small age-related irregularities in the tissue; PIANO® is an ultra-long-pulse Nd:YAG bulk-heating mode; and SupErficial™ is a light Er:YAG pass over the skin surface. Fotona documents PIANO® pulse durations of 0.3 to 60 seconds, longer than the thermal relaxation time of the epidermis, which is why it can warm deeper tissue while keeping the surface comfortable. SMOOTH® mode is described as a rapid sequence of low-fluence pulses inside an overall super-long pulse of 200–350 milliseconds, producing gentle coagulative heating without significant ablation of the epidermis.",
+        "Underneath all of this sits Fotona's patented VSP (Variable Square Pulse) technology, which the manufacturer states allows pulse durations to be adjusted from 50 microseconds up to 1500 microseconds, plus EFC (Energy Feedback Control), which monitors each individual pulse's energy against the setting chosen. Energy is delivered through named scanners and handpieces: the S-11 Nd:YAG scanner and the L-Runner Pro with MatrixView® temperature sensing, and the T-Runner Er:YAG scanner among them. Which modes are included, in what order and at what settings is decided by the treating doctor; changes develop gradually over weeks and vary between individuals."
+      ]
+    },
+    {
+      "heading": "2940nm at the surface, 1064nm deeper: what does each wavelength do?",
+      "body": [
+        "Fotona describes the Nd:YAG wavelength as reaching the deepest layers of the skin, and the Er:YAG wavelength as suited to working on the surface. The Er:YAG laser at 2940nm is strongly absorbed by water and works at the surface and intraorally, while the Nd:YAG laser at 1064nm penetrates deeper to create thermal effects without ablating the skin surface.",
+        "As the platform for Kaiteki's Fotona 4D treatment, SP Dynamis is commonly considered for the concerns below. It is not appropriate for everyone, and a consultation determines whether it suits your face and your goals, including whether a different approach would serve you better."
+      ],
+      "list": [
+        "Early skin laxity along the jawline, cheeks and neck",
+        "Fine lines and wrinkles, including lines around the mouth",
+        "Loss of firmness where you would prefer not to use injectables",
+        "Dull or uneven skin surface and texture",
+        "Enlarged-looking pores and general tone",
+        "Overall facial rejuvenation as part of a maintenance plan"
+      ]
+    },
+    {
+      "heading": "Is Fotona 4D ablative, and what does that mean for your week?",
+      "body": [
+        "No. Fotona describes FRAC3® as a non-ablative Nd:YAG mode and SMOOTH® mode as producing gentle coagulative heating without significant ablation of the epidermis, and the Er:YAG surface pass is typically kept light in a 4D protocol.",
+        "Downtime is usually limited, which is much of the appeal of a non-ablative protocol, but it varies between individuals."
+      ]
+    },
+    {
+      "heading": "Who is Fotona 4D for, and why does your dental history matter?",
+      "body": [
+        "Fotona notes that the Nd:YAG wavelength's low absorption in melanin allows it to be used across skin types, which is relevant for Malaysian patients, and the Er:YAG surface pass is typically kept light in a 4D protocol. Even so, the treatment is aimed at people with early to moderate laxity rather than significant sagging, where a doctor may tell you a laser is not the right tool, and saying so honestly is part of the consultation.",
+        "The protocol may not be suitable during pregnancy or breastfeeding, with active infection, cold sores or inflamed skin in the area, with recent sunburn or tanning, with a history of keloid scarring, or while you are taking photosensitising medication including oral isotretinoin. Because one step is delivered intraorally, your doctor also needs to know about oral or dental conditions, recent dental work and any oral appliances. Please bring your full medical, dental and medication history to consultation."
+      ]
+    },
+    {
+      "heading": "What does the intraoral step feel like, and how long is a full protocol?",
+      "body": [
+        "The first appointment is a doctor consultation and facial assessment, where the doctor decides which of the modes are appropriate for you and in what sequence. On a treatment day the skin is cleansed and make-up removed, eye protection is fitted, and, because the intraoral step works through the inside of the mouth, you will be positioned and prepared for that part separately.",
+        "The steps are then performed in sequence, and most patients describe the sensation as spreading warmth rather than sharp pain, with the intraoral step feeling warm against the inner cheek. A full protocol is generally around 45 to 60 minutes depending on how many modes are included. A course of several sessions spaced a few weeks apart is common, followed by occasional maintenance, but the schedule is individual and your doctor will explain what is realistic for your skin.",
+        "Flushing, warmth and a mild tight feeling for a few hours to a day are common, and the skin can look slightly pink after the surface pass. Most people return to normal activities the same day.",
+        "Keep skincare gentle and well moisturised for a few days, pause retinoids and acids until your doctor says otherwise, and use daily broad-spectrum sunscreen. Avoid heat exposure such as saunas and hot yoga for the period your doctor specifies. You will be given aftercare instructions specific to the steps performed."
+      ]
+    },
+    {
+      "heading": "Can Fotona 4D reactivate cold sores, and what else can go wrong?",
+      "body": [
+        "As with any medical laser procedure, treatment on this platform carries risks, and these are explained at consultation before anything is arranged. Temporary effects can include redness, warmth, mild swelling, transient dryness or flaking, and temporary sensitivity of the inner cheek or lips after the intraoral step; cold sores can be reactivated in people prone to them. Burns, blistering, changes in pigmentation and scarring are uncommon. Risk is reduced, though never removed, when settings are appropriately selected and the treatment is performed by a trained doctor."
+      ]
+    }
+  ],
+  "costFactors": {
+    "intro": "Pricing is discussed at consultation rather than quoted online, so the figure you receive reflects your actual assessment. What moves it:",
+    "factors": [
+      "How much laxity and surface change you are starting with.",
+      "How many of the four modes your plan includes. A two-step protocol is not the same appointment as a full four-step one.",
+      "The number of sessions. Because the effect relies on gradual tissue remodelling, plans are usually a short course followed by maintenance.",
+      "Whether the protocol is combined with other treatments in your plan."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Why does Fotona 4D need two different lasers?",
+      "a": "The protocol works at different depths and from two directions, and no single wavelength does all of it. Fotona's Er:YAG laser at 2940nm is strongly absorbed by water and works at the surface and intraorally, while the Nd:YAG laser at 1064nm penetrates deeper to create thermal effects without ablating the skin surface. Which combination of modes applies to you is decided by the treating doctor at consultation."
+    },
+    {
+      "q": "What does the intraoral step of Fotona 4D actually involve?",
+      "a": "In the step Fotona calls SmoothLiftin™, the Er:YAG laser is applied in SMOOTH® mode from inside the mouth rather than through the outer skin. Fotona describes SMOOTH® mode as a rapid sequence of low-fluence pulses within a much longer pulse, producing gentle coagulative heating rather than ablation. Most people describe it as warm; tell your doctor about any dental work or oral conditions beforehand so suitability can be assessed."
+    },
+    {
+      "q": "How does Fotona 4D compare with HIFU or RF tightening?",
+      "a": "They are different energy types reaching tissue in different ways: Fotona 4D uses two laser wavelengths including an intraoral step, while HIFU uses focused ultrasound and RF devices use radiofrequency heating. One is not automatically better than the other; the sensible choice depends on your degree of laxity, your skin and what you want to avoid. A doctor will compare the realistic options for your face at consultation."
+    },
+    {
+      "q": "Can I have Fotona 4D if I have deeper skin tone?",
+      "a": "Fotona states that the Nd:YAG wavelength has low absorption in melanin, which is why it can be used across skin types, and the surface Er:YAG pass in a 4D protocol is typically light. Suitability is still individual and depends on your skin's history of pigment change and current condition. Your doctor assesses this and selects settings accordingly at consultation."
+    }
+  ],
+  "reviewedBy": "dr-chin-wei-horng",
+  "lastReviewed": "2026-07-18",
+  "seoTitle": "Fotona SP Dynamis 4D Laser Treatment Malaysia | Kaiteki",
+  "seoDescription": "Fotona SP Dynamis is the Er:YAG and Nd:YAG laser platform behind Kaiteki's Fotona 4D facial protocol. Book a free consultation to check if it suits your skin."
+}
