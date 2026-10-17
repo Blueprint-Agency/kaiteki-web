@@ -28,7 +28,7 @@ const terms: Record<NonDefaultLocale, Record<Kind, Names>> = {
       "face-contouring": "脸型轮廓（V脸）",
       "face-lifting": "提拉紧致",
       aging: "抗衰老",
-      "body-slimming": "瘦身塑形",
+      "body-slimming": "瘦身",
       "hair-loss": "脱发",
       "tattoo-removal": "洗纹身",
       "birthmark": "胎记",

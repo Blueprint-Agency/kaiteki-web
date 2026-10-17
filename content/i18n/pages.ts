@@ -11,21 +11,25 @@
 // 2026-10-14), so a signed entry needs only the date they read the translation.
 // To publish a page: set its status to "signed" with that date. Add `doctor`
 // (a slug from content/data/doctors.ts) only to name someone else, and always
-// for pages with no English reviewer: the homepage and the three hubs.
+// for pages with no English reviewer: the homepage and the three hubs, which
+// Dr Chew signs (client, 2026-10-17). Those four render no reviewer byline, so
+// the name is a record of who read them, not something the page shows. A
+// draft may carry `doctor` too, so the reading list (docs/15a Sheet C) names
+// the right person before the date comes back.
 
 import type { NonDefaultLocale } from "@/lib/i18n";
 
 export type LocalePageEntry =
-  | { status: "draft" }
+  | { status: "draft"; doctor?: string }
   | { status: "signed"; date: string; doctor?: string };
 
 /** Keyed by the locale-neutral path, exactly as the English page's URL. */
 export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntry>> = {
   zh: {
-    "/": { status: "draft" },
-    "/concerns": { status: "draft" },
-    "/treatments": { status: "draft" },
-    "/technology": { status: "draft" },
+    "/": { status: "draft", doctor: "dr-chew-yuhhui" },
+    "/concerns": { status: "draft", doctor: "dr-chew-yuhhui" },
+    "/treatments": { status: "draft", doctor: "dr-chew-yuhhui" },
+    "/technology": { status: "draft", doctor: "dr-chew-yuhhui" },
     "/technology/alma": { status: "draft" },
     "/technology/art-filler": { status: "draft" },
     "/technology/belotero": { status: "draft" },
@@ -99,10 +103,10 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/concerns/vascular-lesions": { status: "draft" },
   },
   ms: {
-    "/": { status: "draft" },
-    "/concerns": { status: "draft" },
-    "/treatments": { status: "draft" },
-    "/technology": { status: "draft" },
+    "/": { status: "draft", doctor: "dr-chew-yuhhui" },
+    "/concerns": { status: "draft", doctor: "dr-chew-yuhhui" },
+    "/treatments": { status: "draft", doctor: "dr-chew-yuhhui" },
+    "/technology": { status: "draft", doctor: "dr-chew-yuhhui" },
     "/technology/alma": { status: "draft" },
     "/technology/art-filler": { status: "draft" },
     "/technology/belotero": { status: "draft" },

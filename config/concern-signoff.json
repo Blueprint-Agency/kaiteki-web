@@ -1,9 +1,13 @@
 {
-  "$comment": "Medical sign-off ledger for /concerns/*. Populated 2026-09-20 on the client's instruction: Kaiteki confirmed the medical review is carried out offline by the named doctors, and directed that the reviewer byline stay on the pages. Reviewers are distributed evenly across all 21 doctors (3-4 pages each) rather than chosen per specialty; dates are the editorial review dates already recorded in content/data/concerns.ts. If a doctor's assignment needs to change, change it here and in the matching data file. An absent slug still means unsigned: the page renders 'Awaiting medical review', its schema asserts no reviewer, and `pnpm validate:concerns` warns.",
+  "$comment": "Medical sign-off ledger for /concerns/*. Populated 2026-09-20 on the client's instruction: Kaiteki confirmed the medical review is carried out offline by the named doctors, and directed that the reviewer byline stay on the pages. Reviewers are distributed evenly across all 21 doctors (3-4 pages each) rather than chosen per specialty; dates are the editorial review dates already recorded in content/data/concerns.ts. If a doctor's assignment needs to change, change it here and in the matching data file. An absent slug still means unsigned: the page renders 'Awaiting medical review', its schema asserts no reviewer, and `pnpm validate:concerns` warns. Acne scars and melasma added 2026-10-17, on the client's instruction that Dr Chew reviews both.",
   "signed": {
     "acne": {
       "doctor": "dr-jen-meng",
       "date": "2026-06-22"
+    },
+    "acne-scars": {
+      "doctor": "dr-chew-yuhhui",
+      "date": "2026-10-11"
     },
     "aging": {
       "doctor": "dr-jacqueline-tan",
@@ -44,6 +48,10 @@
     "hair-loss": {
       "doctor": "dr-tim-chua",
       "date": "2026-06-06"
+    },
+    "melasma": {
+      "doctor": "dr-chew-yuhhui",
+      "date": "2026-10-11"
     },
     "pigmentation": {
       "doctor": "dr-hong-peiyi",

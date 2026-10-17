@@ -114,3 +114,7 @@ The English page was rewritten upstream; the sync tool kept every unchanged tran
 3. "No obligation to proceed" is 你没有义务一定要进行疗程 / *Tiada sebarang kewajipan untuk meneruskan rawatan*, matching the homepage FAQ wording.
 
 No L-03r warnings remain on these files.
+
+## Update 2026-10-17: the Chinese name is 瘦身
+
+The client set the Chinese name to **瘦身**, replacing 瘦身塑形 as the page name, in `content/i18n/terms.ts` (so every card and link uses it), the H1, the seoTitle (**马来西亚瘦身疗程与评估 | Kaiteki**), the first section heading, one FAQ, and the fat-freezing page's link label. **局部瘦身迷思** stays: it translates "spot-reduction myths", a different idea with its own demand (`局部瘦身可行吗`), not the page name. 减肥 stays banned.

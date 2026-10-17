@@ -500,7 +500,7 @@ export const concerns: Concern[] = [
     leadAnswer:
       "Acne scarring is a change in the skin's structure, felt as a dip or an irregularity once inflammation has settled. Scars do not fade on their own; they are remodelled gradually, over months. Pico laser is mainly for flat marks rather than texture, so depressed scars usually start with RF microneedling or a resurfacing laser.",
     treatments: ["microneedling", "resurfacing-laser", "pico-laser", "exosome-therapy"],
-    reviewedBy: "dr-hong-peiyi",
+    reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-10-11",
     seoTitle: "Acne Scar Treatment in Malaysia | Kaiteki",
     seoDescription:
@@ -1326,7 +1326,7 @@ export const concerns: Concern[] = [
     leadAnswer:
       "Laser can make melasma worse if the wrong device or settings are used: high-heat lasers create inflammation, and inflammation tells pigment cells to darken. Melasma is a chronic pigmentation condition causing symmetrical brown or grey patches, driven by UV, hormones and genetics. It is managed rather than cured, and daily sun protection is the foundation.",
     treatments: ["pico-laser", "microneedling", "facial-treatments"],
-    reviewedBy: "dr-joaan-kong",
+    reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-10-11",
     seoTitle: "Melasma Treatment in Malaysia | Kaiteki",
     seoDescription:
