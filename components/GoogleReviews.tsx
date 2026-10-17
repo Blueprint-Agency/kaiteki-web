@@ -106,11 +106,14 @@ export function GoogleReviews({
   branch,
   className = "",
   copy = EN_COPY,
+  branchCopy,
 }: {
   branch?: Branch;
   className?: string;
   /** Chain-wide strings for a non-English homepage. Reviews stay as written. */
   copy?: HomeCopy["reviews"];
+  /** A non-English branch page's heading (already filled) and Google link label. */
+  branchCopy?: { heading: string; readAll: string };
 }) {
   const reviews = branch ? reviewsFor(branch.slug) : reviewsAcrossBranches();
   if (reviews.length === 0) return null;
@@ -128,7 +131,7 @@ export function GoogleReviews({
     : rated.reduce((n, b) => n + b.googleRating! * b.googleReviewCount!, 0) / totalCount;
 
   const profileUrl = branch?.mapUrl ?? "/locations";
-  const heading = branch ? `What patients say about ${branch.name}` : copy.heading;
+  const heading = branch ? (branchCopy?.heading ?? `What patients say about ${branch.name}`) : copy.heading;
 
   return (
     <section className={`relative overflow-hidden ${className}`}>
@@ -167,7 +170,7 @@ export function GoogleReviews({
               className="mt-5 inline-flex items-center gap-2 rounded-full border border-hairline bg-surface px-4 py-2 text-sm font-medium text-ink-700 transition-colors hover:border-mocha hover:text-espresso"
             >
               <GoogleG size={16} />
-              {branch ? "Read all reviews on Google" : copy.byBranch}
+              {branch ? (branchCopy?.readAll ?? "Read all reviews on Google") : copy.byBranch}
             </a>
 
             <p className="mt-4 max-w-[34ch] text-xs leading-relaxed text-ink-500">

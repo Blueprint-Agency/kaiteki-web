@@ -20,7 +20,7 @@ export function BranchesExplorer({
   /** Localized region tab labels, keyed by the English region. */
   regionLabels?: Partial<Record<Region, string>>;
   /** Localized href + name per branch slug (the locale page when live). */
-  cards?: Record<string, { href: string; name: string }>;
+  cards?: Record<string, { href: string; name: string; place?: string; alt?: string }>;
 }) {
   const [region, setRegion] = useState<Filter>("All");
   const tabs: Filter[] = ["All", ...regionOrder];
@@ -51,7 +51,7 @@ export function BranchesExplorer({
       </div>
       <CardRow>
         {shown.map((b) => (
-          <BranchCard key={b.slug} b={b} href={cards?.[b.slug]?.href} name={cards?.[b.slug]?.name} />
+          <BranchCard key={b.slug} b={b} {...cards?.[b.slug]} />
         ))}
       </CardRow>
     </div>

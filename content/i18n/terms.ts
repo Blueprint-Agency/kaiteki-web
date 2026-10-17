@@ -81,12 +81,14 @@ const terms: Record<NonDefaultLocale, Record<Kind, Names>> = {
     },
     branch: {
       cheras: "Cheras 蕉赖",
+      // `吉隆坡四季` is a real query (it returns the hotel), so the Chinese sits beside the Latin.
+      "four-seasons-kl": "Four Seasons KL 吉隆坡四季",
       "mont-kiara": "Mont Kiara 满家乐",
       "bukit-jalil": "Bukit Jalil 武吉加里尔",
       "petaling-jaya": "Petaling Jaya 八打灵再也",
       "kota-kemuning": "Kota Kemuning 哥打甘文宁",
-      "southkey-johor-bahru": "Southkey，新山",
-      "pelangi-johor-bahru": "Pelangi 彩虹花园，新山",
+      "southkey-johor-bahru": "Southkey 新山",
+      "pelangi-johor-bahru": "Pelangi 彩虹花园 新山",
       "kota-kinabalu": "Kota Kinabalu 亚庇",
     },
   },

@@ -231,15 +231,25 @@ export function BranchCard({
   b,
   href = `/locations/${b.slug}`,
   name = b.name,
+  place,
+  alt,
   className = "",
   style,
-}: { b: Branch; href?: string; name?: string } & Extra) {
+}: {
+  b: Branch;
+  href?: string;
+  name?: string;
+  /** Localized "city, state" and image alt; English derives both from `b`. */
+  place?: string;
+  alt?: string;
+} & Extra) {
+  const where = place ?? formatLocation(b.city, b.state);
   return (
     <Link href={href} style={style} className={`${cardBase} overflow-hidden ${className}`}>
       <div className="relative aspect-[3/2] overflow-hidden bg-tint">
         <Image
           src={b.photo}
-          alt={`Kaiteki Skin Aesthetic Clinic ${name}, ${formatLocation(b.city, b.state)}`}
+          alt={alt ?? `Kaiteki Skin Aesthetic Clinic ${name}, ${where}`}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -249,7 +259,7 @@ export function BranchCard({
         <div>
           <h3 className="font-display text-lg font-medium text-espresso">{name}</h3>
           <p className="mt-0.5 flex items-center gap-1 text-sm text-ink-500">
-            <MapPin size={14} className="text-mocha" /> {formatLocation(b.city, b.state)}
+            <MapPin size={14} className="text-mocha" /> {where}
           </p>
         </div>
         <ArrowRight size={18} className="shrink-0 text-accent transition-transform group-hover:translate-x-0.5" />

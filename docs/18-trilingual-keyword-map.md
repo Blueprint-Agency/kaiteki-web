@@ -69,7 +69,7 @@ Sources: `lib/site.ts` (`primaryNav`, `tagline`, `positioning`, `mmcNote`), `com
 | WA prefill (treatment/concern) | `你好 Kaiteki，我想咨询关于{name}的疗程。` | |
 | WA prefill (branch) | `你好 Kaiteki {branch}，我想预约免费咨询。` | |
 
-**Branch names (zh).** Malaysian Chinese mix scripts. AC returns `皮肤科诊所kepong`, `皮肤科诊所cheras`, and `kaiteki cheras` in Latin, but `新山` in Chinese. Show both scripts, e.g. **"Cheras 蕉赖"**, **"Mont Kiara 满家乐"**, **"Bukit Jalil 武吉加里尔"**, **"Petaling Jaya 八打灵再也 (SS2)"**, **"Kota Kemuning 哥打甘文宁"**, **"Southkey，新山"**, **"Pelangi 彩虹花园，新山"**, **"Kota Kinabalu 亚庇"**, **"Four Seasons KL"**. Region words: **吉隆坡 / 雪兰莪 / 柔佛（新山）/ 沙巴（亚庇）**. *The Chinese place-name renderings need a native reviewer. Malaysian Chinese renderings vary by newspaper.*
+**Branch names (zh).** Malaysian Chinese mix scripts. AC returns `皮肤科诊所kepong`, `皮肤科诊所cheras`, and `kaiteki cheras` in Latin, but `新山` in Chinese. Show both scripts, e.g. **"Cheras 蕉赖"**, **"Mont Kiara 满家乐"**, **"Bukit Jalil 武吉加里尔"**, **"Petaling Jaya 八打灵再也 (SS2)"**, **"Kota Kemuning 哥打甘文宁"**, **"Southkey 新山"**, **"Pelangi 彩虹花园 新山"**, **"Kota Kinabalu 亚庇"**, **"Four Seasons KL 吉隆坡四季"**. (Updated 2026-10-17 for the location pages: no comma inside a name that sits in headings, and 吉隆坡四季 is a real query.) Region words: **吉隆坡 / 雪兰莪 / 柔佛（新山）/ 沙巴（亚庇）**. *The Chinese place-name renderings need a native reviewer. Malaysian Chinese renderings vary by newspaper.*
 
 ### 2.2 Malay (`/ms`)
 

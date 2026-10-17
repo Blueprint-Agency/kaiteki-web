@@ -17,12 +17,16 @@
 //   L-09 fail  a translation file missing from the static index (pnpm i18n:index)
 //   L-10 fail  the English copy changed since the translation's snapshot
 //              (content/i18n/<kind>/_en/); pnpm i18n:sync <kind> re-aligns by text
+// And over content/i18n/locations.ts: L-02 to L-05 and L-06 as above, plus
+//   L-11 fail  a branch with a ledger entry but no copy in that file
 
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { englishRecord, KINDS, LOCALES, type Kind } from "./i18n-kinds.mts";
 import { localePages } from "../content/i18n/pages.ts";
 import { copyStrings, overlay } from "../lib/i18n-overlay.ts";
+import { branchCopy, locationsCopy } from "../content/i18n/locations.ts";
+import { branches } from "../content/data/branches.ts";
 
 const root = process.cwd();
 let failures = 0;
@@ -99,6 +103,35 @@ function lengths(x: unknown, path = ""): Map<string, number> {
   return m;
 }
 
+/** L-02, L-03, L-03r and L-04 over every string in `x`. */
+function checkCopy(where: string, locale: "zh" | "ms", x: unknown) {
+  for (const [p, s] of strings(x)) {
+    if (s.includes("—")) fail(where, "L-02", `em-dash in ${p}`);
+    for (const t of BANNED[locale]) {
+      const hit = typeof t === "string" ? s.includes(t) : t.test(s);
+      if (hit) fail(where, "L-03", `"${typeof t === "string" ? t : t.source}" in ${p}`);
+    }
+    for (const t of REVIEW[locale]) if (t.test(s)) warn(where, "L-03r", `check "${t.source}" is negated or factual in ${p}`);
+    if (locale === "ms") {
+      for (const t of INDONESIAN) if (t.test(s)) fail(where, "L-04", `Indonesian "${t.source}" in ${p}`);
+    }
+  }
+}
+
+type SeoFields = { seoTitle?: string; seoDescription?: string; title?: string; description?: string };
+
+/** L-05: title and description lengths for the locale's script. */
+function checkSeo(where: string, locale: "zh" | "ms", o: SeoFields) {
+  const title = o.seoTitle ?? o.title;
+  const description = o.seoDescription ?? o.description;
+  const [tMax, dMin, dMax] = locale === "zh" ? [32, 70, 90] : [60, 130, 165];
+  if (title && [...title].length > tMax) warn(where, "L-05", `seoTitle ${[...title].length} chars (max ${tMax})`);
+  if (description) {
+    const n = [...description].length;
+    if (n < dMin || n > dMax) warn(where, "L-05", `seoDescription ${n} chars (want ${dMin}–${dMax})`);
+  }
+}
+
 for (const kind of Object.keys(KINDS) as Kind[]) {
 for (const locale of LOCALES) {
   const kroot = join(root, "content", "i18n", kind);
@@ -141,25 +174,8 @@ for (const locale of LOCALES) {
       if (enLen.has(p) && enLen.get(p) !== n) warn(where, "L-06", `${p}: ${n} items vs ${enLen.get(p)} in English`);
     }
 
-    for (const [p, s] of strings(tr)) {
-      if (s.includes("—")) fail(where, "L-02", `em-dash in ${p}`);
-      for (const t of BANNED[locale]) {
-        const hit = typeof t === "string" ? s.includes(t) : t.test(s);
-        if (hit) fail(where, "L-03", `"${typeof t === "string" ? t : t.source}" in ${p}`);
-      }
-      for (const t of REVIEW[locale]) if (t.test(s)) warn(where, "L-03r", `check "${t.source}" is negated or factual in ${p}`);
-      if (locale === "ms") {
-        for (const t of INDONESIAN) if (t.test(s)) fail(where, "L-04", `Indonesian "${t.source}" in ${p}`);
-      }
-    }
-
-    const o = tr as { seoTitle?: string; seoDescription?: string };
-    const [tMax, dMin, dMax] = locale === "zh" ? [32, 70, 90] : [60, 130, 165];
-    if (o.seoTitle && [...o.seoTitle].length > tMax) warn(where, "L-05", `seoTitle ${[...o.seoTitle].length} chars (max ${tMax})`);
-    if (o.seoDescription) {
-      const n = [...o.seoDescription].length;
-      if (n < dMin || n > dMax) warn(where, "L-05", `seoDescription ${n} chars (want ${dMin}–${dMax})`);
-    }
+    checkCopy(where, locale, tr);
+    checkSeo(where, locale, tr as SeoFields);
 
     if (!ledger[KINDS[kind].path(slug)]) warn(where, "L-08", "no ledger entry in content/i18n/pages.ts, so no URL");
   }
@@ -175,6 +191,24 @@ for (const locale of LOCALES) {
   }
   console.log(`${kind}/${locale}: ${files.length} translation(s) checked`);
 }
+}
+
+// Copy that lives in a TypeScript dictionary rather than a JSON overlay. Only
+// modules with type-only imports load here (node resolves no "@/").
+for (const locale of LOCALES) {
+  checkCopy(`locations/${locale}`, locale, locationsCopy[locale]);
+  checkSeo(`locations/${locale}/hub`, locale, locationsCopy[locale].hub);
+  for (const b of branches) {
+    const c = branchCopy[locale][b.slug];
+    if (!c) {
+      if (localePages[locale][`/locations/${b.slug}`]) fail(`locations/${locale}/${b.slug}`, "L-11", "ledger entry with no branch copy in content/i18n/locations.ts");
+      continue;
+    }
+    checkCopy(`locations/${locale}/${b.slug}`, locale, c);
+    checkSeo(`locations/${locale}/${b.slug}`, locale, c);
+    if (c.hours.length !== b.hours.length) warn(`locations/${locale}/${b.slug}`, "L-06", `hours: ${c.hours.length} lines vs ${b.hours.length} in English`);
+  }
+  console.log(`locations/${locale}: hub + ${Object.keys(branchCopy[locale]).length} branch(es) checked`);
 }
 
 console.log(`\n${failures} failure(s) · ${warnings} warning(s)`);

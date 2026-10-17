@@ -9,6 +9,18 @@ import type { Branch } from "@/lib/types";
 
 type Filter = "All" | Branch["region"];
 
+/** A branch card's copy in a non-English locale (built by LocationsHub). */
+export type BranchCardCopy = { href: string; name: string; place: string; alt: string };
+
+/** The explorer's own strings in a non-English locale. */
+export type LocationsExplorerCopy = {
+  all: string;
+  countOne: string; // "{n}"
+  countMany: string;
+  mapTitle: string; // "{region}"
+  regions: Record<string, string>;
+};
+
 // One map per region, never one national map: Kota Kinabalu is ~1,600km from the
 // Klang Valley, so a frame that fits Sabah collapses the six KL/Selangor pins
 // into a single dot and a frame that reads in KL cuts Johor and Sabah off
@@ -26,7 +38,10 @@ const REGION_ZOOM: Record<Branch["region"], number> = {
 /** Filterable branch directory for the /locations hub — mirrors ConcernsExplorer.
  *  Defaults to "All", which renders every region section (each with its own map)
  *  so crawlers and no-JS visitors get all nine branches. */
-export function LocationsExplorer() {
+export function LocationsExplorer({
+  cards,
+  copy,
+}: { cards?: Record<string, BranchCardCopy>; copy?: LocationsExplorerCopy } = {}) {
   const [filter, setFilter] = useState<Filter>("All");
   const tabs: Filter[] = ["All", ...regionOrder];
   const shownRegions = filter === "All" ? regionOrder : [filter];
@@ -38,7 +53,7 @@ export function LocationsExplorer() {
         onSelect={setFilter}
         tabs={tabs.map((value) => ({
           value,
-          label: value === "All" ? "All branches" : value,
+          label: value === "All" ? (copy?.all ?? "All branches") : (copy?.regions[value] ?? value),
           count:
             value === "All"
               ? branches.length
@@ -53,15 +68,21 @@ export function LocationsExplorer() {
             <section key={region}>
               <div className="mb-5 flex items-baseline justify-between gap-4">
                 <h2 className="text-sm font-semibold uppercase tracking-[0.1em] text-mocha">
-                  {region}
+                  {copy?.regions[region] ?? region}
                 </h2>
                 <p className="text-sm text-ink-500">
-                  {inRegion.length} {inRegion.length === 1 ? "branch" : "branches"}
+                  {copy
+                    ? (inRegion.length === 1 ? copy.countOne : copy.countMany).replace("{n}", String(inRegion.length))
+                    : `${inRegion.length} ${inRegion.length === 1 ? "branch" : "branches"}`}
                 </p>
               </div>
               <div className="relative min-h-[280px] overflow-hidden rounded-2xl border border-hairline bg-tint">
                 <iframe
-                  title={`Map of Kaiteki Skin Aesthetic Clinic branches in ${region}`}
+                  title={
+                    copy
+                      ? copy.mapTitle.replace("{region}", copy.regions[region] ?? region)
+                      : `Map of Kaiteki Skin Aesthetic Clinic branches in ${region}`
+                  }
                   src={`https://maps.google.com/maps?q=${encodeURIComponent(
                     `Kaiteki Skin Aesthetic Clinic, ${region}, Malaysia`,
                   )}&z=${REGION_ZOOM[region]}&output=embed`}
@@ -72,7 +93,7 @@ export function LocationsExplorer() {
               </div>
               <CardRow className="mt-6">
                 {inRegion.map((b) => (
-                  <BranchCard key={b.slug} b={b} />
+                  <BranchCard key={b.slug} b={b} {...cards?.[b.slug]} />
                 ))}
               </CardRow>
             </section>

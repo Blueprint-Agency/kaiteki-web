@@ -6,6 +6,7 @@ import { homeCopy } from "@/content/i18n/home";
 import { term } from "@/content/i18n/terms";
 import { branches, regionOrder } from "@/content/data/branches";
 import { lhref } from "@/lib/locale-pages";
+import { branchCardsFor } from "./LocationsHub";
 import type { Locale } from "@/lib/i18n";
 
 /** Nine-branch locator section. */
@@ -31,12 +32,10 @@ export function BranchStrip({ locale = "en" }: { locale?: Locale }) {
           <BranchesExplorer
             allLabel={k.allTab}
             regionLabels={Object.fromEntries(regionOrder.map((r) => [r, term(locale, "region", r, r)]))}
-            cards={Object.fromEntries(
-              branches.map((b) => [
-                b.slug,
-                { href: lhref(locale, `/locations/${b.slug}`), name: term(locale, "branch", b.slug, b.name) },
-              ]),
-            )}
+            cards={
+              branchCardsFor(locale) ??
+              Object.fromEntries(branches.map((b) => [b.slug, { href: lhref(locale, `/locations/${b.slug}`), name: b.name }]))
+            }
           />
         </div>
       </Container>
