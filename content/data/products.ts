@@ -154,22 +154,6 @@ export const products: Product[] = [
   },
   // ── Partner brands (resold) ─────────────────────────────────────────
   {
-    slug: "nanomd",
-    image: "https://cdn.kaiteki.my/images/skincare/nanomd.jpg",
-    name: "NanoMD®",
-    brand: "NanoMD",
-    group: "Partner Brands",
-    category: "Oral Supplement",
-    price: 550,
-    priceNote: "or 3 for RM1,200",
-    summary:
-      "An oral skin supplement with Pycnogenol, tomato extract and L-cysteine, using nano-technology for high absorption, taken as one tablet a day.",
-    ingredients: ["Pycnogenol", "Tomato extract", "L-cysteine"],
-    bestFor: "Pigmentation, radiance & overall skin health",
-    highlights: ["One tablet daily", "Nano-tech for absorption"],
-    concerns: ["pigmentation"],
-  },
-  {
     slug: "heliocare-d-plus",
     image: "https://cdn.kaiteki.my/images/skincare/heliocare-d-plus.jpg",
     name: "Heliocare D Plus",
@@ -203,25 +187,6 @@ export const products: Product[] = [
     concerns: ["pigmentation"],
   },
   {
-    slug: "klenskin-shower-on-sunscreen",
-    image: "https://cdn.kaiteki.my/images/skincare/klenskin-shower-on-sunscreen.jpg",
-    name: "KLĒNSKIN SPA Shower On® Sunscreen",
-    brand: "KLĒNSKIN",
-    group: "Partner Brands",
-    category: "Sunscreen",
-    price: 198,
-    summary:
-      "A 3-in-1 shampoo, face and body wash with broad-spectrum SPF 30, a clinically studied 'shower-on' sunscreen that cleanses and leaves a protective barrier in a single step.",
-    bestFor: "Body & scalp sun protection in the shower",
-    highlights: [
-      "SPF 30, broad-spectrum UVA/UVB",
-      "QUANTASPHERE® encapsulated technology",
-      "80-minute water resistance",
-      "Paraben-free · sensitive-skin safe",
-    ],
-    concerns: ["pigmentation"],
-  },
-  {
     slug: "clinisept-skin",
     image: "https://cdn.kaiteki.my/images/skincare/clinisept-skin.jpg",
     name: "Clinisept+ Skin",
@@ -238,20 +203,6 @@ export const products: Product[] = [
       "Alcohol- & harsh-chemical free",
       "Dermatologically tested",
     ],
-  },
-  {
-    slug: "sente-cysteamine-corrector",
-    image: "https://cdn.kaiteki.my/images/skincare/sente-cysteamine-corrector.jpg",
-    name: "Sente Cysteamine HSA Pigment & Tone Corrector",
-    brand: "Sente",
-    group: "Partner Brands",
-    category: "Targeted Treatment",
-    price: 750,
-    summary:
-      "A targeted corrector with cysteamine and heparan sulfate analog (HSA) that helps reduce the oxidative stress linked to hyperpigmentation while supporting a healthy skin barrier, for a brighter, more even-looking tone.",
-    ingredients: ["Cysteamine", "Heparan sulfate analog (HSA)"],
-    bestFor: "Uneven tone & hyperpigmentation",
-    concerns: ["pigmentation"],
   },
   // Lione oral supplements, added 2026-10 at the client's request (prices from
   // Dr Chew). Copy is drawn from the manufacturer's patient leaflets with the
