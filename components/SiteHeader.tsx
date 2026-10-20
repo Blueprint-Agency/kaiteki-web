@@ -301,6 +301,14 @@ export function SiteHeader({
       {mobileOpen && (
         <div className="fixed inset-0 top-[68px] z-40 overflow-y-auto bg-page lg:hidden">
           <Container>
+            {/* Full names in the drawer: the header pill keeps only short codes. */}
+            <LanguageSwitcher
+              locale={locale}
+              live={live}
+              label={h.language}
+              variant="full"
+              className="border-b border-hairline py-5"
+            />
             <nav className="flex flex-col py-4" aria-label="Mobile">
               {(["treatments", "concerns"] as const).map((key) => (
                 <MobileGroup
