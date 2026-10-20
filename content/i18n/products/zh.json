@@ -1,0 +1,239 @@
+{
+  "hydroglow-masks": {
+    "name": "Kaiteki® HydroGlow Masks",
+    "brand": "Kaiteki",
+    "category": "面膜",
+    "summary": "保湿片状面膜，含高浓度透明质酸（玻尿酸）与维生素 C（L-抗坏血酸），在两次诊所疗程之间，为肌肤即时补水、提亮光泽。",
+    "bestFor": "所有肤质",
+    "ingredients": [
+      "透明质酸（玻尿酸）",
+      "维生素 C（L-抗坏血酸）"
+    ],
+    "highlights": [
+      "每盒5片",
+      "每周使用1至2次",
+      "含抗氧化维生素 C"
+    ],
+    "priceNote": null
+  },
+  "intense-hydration-cream": {
+    "name": "Kaiteki Intense Hydration Cream",
+    "brand": "Kaiteki",
+    "category": "面霜",
+    "summary": "质地丰润的保湿面霜，含神经酰胺、透明质酸（玻尿酸）与积雪草，提供持久保湿，专为敏感、缺水肌肤配制。",
+    "bestFor": "敏感、缺水肌肤",
+    "ingredients": [
+      "神经酰胺",
+      "透明质酸（玻尿酸）",
+      "积雪草"
+    ],
+    "highlights": null,
+    "priceNote": null
+  },
+  "acne-spot-serum": {
+    "name": "Kaiteki® Acne Spot Serum",
+    "brand": "Kaiteki",
+    "category": "局部精华",
+    "summary": "轻盈的局部精华，含水杨酸，可直接点涂在个别痘痘上，作为快速的局部护理。",
+    "bestFor": "易长痘肌肤",
+    "ingredients": [
+      "水杨酸"
+    ],
+    "highlights": null,
+    "priceNote": null
+  },
+  "ultra-soothing-face-mist": {
+    "name": "Kaiteki® Ultra Soothing Face Mist",
+    "brand": "Kaiteki",
+    "category": "喷雾",
+    "summary": "清爽的面部喷雾，含胶原蛋白、胜肽与芦荟，随时为肌肤补水、舒缓。",
+    "bestFor": null,
+    "ingredients": [
+      "胶原蛋白",
+      "胜肽",
+      "芦荟"
+    ],
+    "highlights": null,
+    "priceNote": null
+  },
+  "ultra-nourishing-body-lotion": {
+    "name": "Kaiteki® Ultra Nourishing Body Lotion",
+    "brand": "Kaiteki",
+    "category": "身体护理",
+    "summary": "日常使用的身体乳，含滋养植物油，从颈部到脚趾为肌肤保湿，帮助维护皮肤屏障。",
+    "bestFor": null,
+    "ingredients": [
+      "植物油"
+    ],
+    "highlights": null,
+    "priceNote": null
+  },
+  "ultra-soothing-cleansing-gel": {
+    "name": "Kaiteki® Ultra Soothing Cleansing Gel",
+    "brand": "Kaiteki",
+    "category": "洁面",
+    "summary": "温和的洁面啫喱，含洋甘菊与黄瓜萃取，能带走彩妆与污垢，又不会过度清洁，洗后肌肤柔软舒适。",
+    "bestFor": "所有肤质",
+    "ingredients": [
+      "洋甘菊",
+      "黄瓜萃取"
+    ],
+    "highlights": [
+      "不致粉刺",
+      "不刺激",
+      "清除彩妆与污垢"
+    ],
+    "priceNote": null
+  },
+  "ultra-hydrating-serum": {
+    "name": "Kaiteki® Ultra Hydrating Serum",
+    "brand": "Kaiteki",
+    "category": "精华",
+    "summary": "高浓度精华，结合纯透明质酸（玻尿酸）与维生素 B5，为肌肤大量补水；在简单的日常护肤程序中，叠擦于面霜之前使用。",
+    "bestFor": null,
+    "ingredients": [
+      "透明质酸（玻尿酸）",
+      "维生素 B5"
+    ],
+    "highlights": null,
+    "priceNote": null
+  },
+  "hydro-boost-moisturiser": {
+    "name": "Kaiteki® Hydro Boost Moisturiser",
+    "brand": "Kaiteki",
+    "category": "面霜",
+    "summary": "超轻盈、不致粉刺的啫喱面霜，含神经酰胺与茶树油。专为日常保湿配制，并帮助改善毛孔、细纹、肤色不均与泛红的外观。",
+    "bestFor": "所有肤质",
+    "ingredients": [
+      "神经酰胺",
+      "茶树油"
+    ],
+    "highlights": [
+      "不致粉刺",
+      "轻盈啫喱面霜质地"
+    ],
+    "priceNote": null
+  },
+  "pore-refining-essence": {
+    "name": "Kaiteki® Pore Refining Essence",
+    "brand": "Kaiteki",
+    "category": "精华水",
+    "summary": "温和去角质的精华水，含温和的乳酸与甘醇酸，帮助疏通毛孔、使肤质更平滑，让肤色看起来更明亮。",
+    "bestFor": "毛孔堵塞、黑头与肤质不平滑",
+    "ingredients": [
+      "乳酸",
+      "甘醇酸"
+    ],
+    "highlights": [
+      "温和的日常去角质",
+      "帮助清除油脂堆积"
+    ],
+    "priceNote": null
+  },
+  "doubleblock-uv-sunscreen": {
+    "name": "Kaiteki® DoubleBlock UV Sunscreen",
+    "brand": "Kaiteki",
+    "category": "防晒霜",
+    "summary": "SPF 50 广谱面部防晒霜，含奥克立林（octocrylene），抵御 UVA 与 UVB 紫外线，同时保持肌肤滋润，质地轻盈、哑光。",
+    "bestFor": null,
+    "ingredients": [
+      "奥克立林（octocrylene）"
+    ],
+    "highlights": [
+      "SPF 50，广谱防护 UVA/UVB",
+      "防水",
+      "无油哑光质地",
+      "无香料"
+    ],
+    "priceNote": null
+  },
+  "heliocare-d-plus": {
+    "name": "Heliocare D Plus",
+    "brand": "Heliocare",
+    "category": "口服防晒",
+    "summary": "口服胶囊，由内帮助支持肌肤的防晒能力；需与外用防晒霜一起使用，不能取代外用防晒霜。",
+    "bestFor": "日常额外的紫外线与蓝光防护",
+    "ingredients": [
+      "维生素 D",
+      "抗氧化成分"
+    ],
+    "highlights": [
+      "配合外用防晒霜使用（不能取代）",
+      "也有助于抵御屏幕蓝光",
+      "抗氧化"
+    ],
+    "priceNote": null
+  },
+  "heliocare-luminance": {
+    "name": "Heliocare Luminance",
+    "brand": "Heliocare",
+    "category": "口服补充品",
+    "summary": "每日口服补充品，含谷胱甘肽、迷迭香萃取与烟酰胺，帮助抵御紫外线、可见光与空气污染，让肤色看起来更均匀、更有光泽。",
+    "bestFor": "光泽与均匀肤色",
+    "ingredients": [
+      "谷胱甘肽",
+      "迷迭香萃取",
+      "烟酰胺"
+    ],
+    "highlights": null,
+    "priceNote": null
+  },
+  "clinisept-skin": {
+    "name": "Clinisept+ Skin",
+    "brand": "Clinisept+",
+    "category": "疗程前后护理",
+    "summary": "pH 值与肌肤相近的抗菌洁肤液，用于医美疗程前的肌肤准备，以及疗程后帮助肌肤恢复，舒缓敏感、受刺激肌肤的泛红。",
+    "bestFor": "疗程前准备与疗程后护理",
+    "ingredients": null,
+    "highlights": [
+      "抗菌洁肤",
+      "pH 值与肌肤相近",
+      "不含酒精及刺激性化学成分",
+      "经皮肤学测试"
+    ],
+    "priceNote": null
+  },
+  "lucent-prime": {
+    "name": "Lucent® Prime Oral Skinbooster",
+    "brand": "Lione",
+    "category": "口服补充品",
+    "summary": "每日饮用的莓果味植物粉末，结合护肤抗氧化成分、神经酰胺与益生菌，可配合诊所疗程，作为由内而外的肌肤健康保养。",
+    "bestFor": "光泽、保湿与皮肤屏障支持",
+    "ingredients": [
+      "金色番茄萃取（Lumenato™）",
+      "虾青素（AstaReal®）",
+      "Pycnogenol®",
+      "神经酰胺（CornCera™）",
+      "L-半胱氨酸",
+      "益生菌 B. lactis Bl-04"
+    ],
+    "highlights": [
+      "30包 × 4 g",
+      "每日一包",
+      "可配合诊所疗程"
+    ],
+    "priceNote": null
+  },
+  "stanmna": {
+    "name": "STANMNA™",
+    "brand": "Lione",
+    "category": "运动补充品",
+    "summary": "植物性冲泡饮品，以 NMN、辅酶 Q10 与 PQQ 为核心配方，为经常运动的人帮助支持细胞能量、耐力与运动后恢复。",
+    "bestFor": "活跃人士与规律运动者",
+    "ingredients": [
+      "NMN（Uthever®）",
+      "辅酶 Q10",
+      "α-硫辛酸",
+      "PQQ",
+      "酸樱桃",
+      "柑橘类黄酮（Watt'sUp®）"
+    ],
+    "highlights": [
+      "一包加入250 ml 清水饮用，或直接服用",
+      "运动前30分钟或每天早上服用",
+      "100%纯素、非基因改造",
+      "不添加防腐剂或人工色素"
+    ],
+    "priceNote": null
+  }
+}

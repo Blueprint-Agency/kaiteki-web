@@ -1,0 +1,148 @@
+{
+  "doctors": {
+    "hub": {
+      "title": "Doktor Estetik Berdaftar MMC di Malaysia | Kaiteki",
+      "description": "20 doktor estetik berdaftar MMC dan bertauliah LCP di 9 cawangan. Setiap pelan rawatan dinilai dan dilaksanakan oleh doktor perubatan berdaftar.",
+      "crumb": "Doktor",
+      "eyebrow": "Berdaftar MMC",
+      "h1": "Doktor kami",
+      "intro": "Setiap rawatan di Kaiteki dinilai dan dilaksanakan oleh doktor berdaftar MMC, dan setiap panduan rawatan menamakan doktor yang menyemaknya. Inilah asas cara kami bekerja, dan sebab kami tidak bergantung pada testimoni atau gambar sebelum dan selepas."
+    },
+    "card": {
+      "alt": "{name}, {credentials}, doktor estetik di Kaiteki Skin Aesthetic Clinic",
+      "viewProfile": "Lihat profil"
+    },
+    "page": {
+      "defaultRole": "Doktor Estetik",
+      "seoFallback": "{name}, {role} di Kaiteki Skin Aesthetic Clinic. Kelayakan: {credentials}. Tempah konsultasi percuma di WhatsApp.",
+      "photoAlt": "{name}, {credentials}, doktor estetik di Kaiteki Skin Aesthetic Clinic Malaysia",
+      "credentials": "Kelayakan",
+      "mmc": "Pendaftaran MMC",
+      "mmcTbc": "Akan disahkan",
+      "practisesAt": "Bertugas di",
+      "consult": "Konsultasi dengan {short}",
+      "waConsult": "Hai Kaiteki, saya nak tempah konsultasi percuma dengan {name}.",
+      "bioFallback": "{name} ialah {role} di Kaiteki Skin Aesthetic Clinic. Setiap rawatan di Kaiteki dinilai dan dilaksanakan oleh doktor berdaftar MMC.",
+      "reviewedHeading": "Panduan yang disemak oleh {short}",
+      "reviewedBody": "{short} ialah penyemak perubatan yang dinamakan bagi panduan rawatan dan masalah kulit di bawah. Setiap halaman klinikal di laman ini memaparkan nama doktor berdaftar MMC yang menyemaknya, supaya anda tahu siapa yang bertanggungjawab atas maklumat yang anda baca.",
+      "allDoctors": "Semua doktor"
+    },
+    "roles": {
+      "Aesthetic Physician": "Doktor Estetik",
+      "Co-Founder & Senior Medical Director": "Pengasas Bersama & Pengarah Perubatan Kanan",
+      "Founder & CEO, Aesthetic Physician": "Pengasas & Ketua Pegawai Eksekutif, Doktor Estetik",
+      "Partner, Aesthetic Physician": "Rakan Kongsi, Doktor Estetik",
+      "Wellness Physician": "Doktor Kesejahteraan"
+    }
+  },
+  "ourStory": {
+    "title": "Kisah Kami | Kaiteki Skin Aesthetic Clinic",
+    "description": "Kisah di sebalik Kaiteki. Klinik estetik berinspirasikan Jepun yang diasaskan oleh doktor, dibina atas penjagaan yang tenang dan teliti, kini di 9 cawangan.",
+    "crumb": "Tentang Kami",
+    "eyebrow": "Tentang Kaiteki",
+    "h1Lead": "Kaiteki bermaksud",
+    "h1Em": "selesa.",
+    "lede": "Ia perkataan Jepun, かいてき, yang bermaksud berasa selesa dari segi fizikal dan mental. Bukan sekadar santai, tetapi benar-benar tenang. Perasaan itulah satu-satunya janji di sebalik setiap klinik Kaiteki: penjagaan kulit dan estetik gred perubatan tanpa desakan jualan, tanpa tergesa-gesa dan tanpa perlu anda memberi alasan.",
+    "book": "Tempah konsultasi percuma",
+    "stats": {
+      "clinics": "Klinik kini",
+      "states": "Negeri",
+      "doctors": "Doktor"
+    },
+    "philosophy": {
+      "eyebrow": "Omotenashi",
+      "titleLead": "Penjagaan,",
+      "titleEm": "sebelum sebarang jualan",
+      "p1Lead": "Kaiteki mengamalkan",
+      "p1Em": "omotenashi",
+      "p1Rest": ", prinsip layanan Jepun yang ikhlas sepenuh hati dan teliti hingga ke butiran terkecil. Ia membentuk segala-galanya, daripada cara konsultasi disusun hingga cara rawatan dilaksanakan.",
+      "p2": "Setiap pelan rawatan di Kaiteki direka dan dilaksanakan oleh doktor berdaftar. Nasihat kami mengutamakan aspek klinikal, tidak sesekali komersial. Jika cadangan yang tepat ialah melakukan lebih sedikit, atau tidak melakukan apa-apa langsung, itulah yang akan anda dengar. Standard ini terpakai sama rata di setiap cawangan, dengan setiap doktor.",
+      "imageAlt": "Bilik rawatan di Kaiteki Skin Aesthetic Clinic Mont Kiara"
+    },
+    "founders": {
+      "eyebrow": "Pengasas",
+      "title": "Diasaskan oleh doktor, dikendalikan oleh doktor",
+      "intro": "Sebagai doktor, mereka mempunyai pengetahuan dan kemahiran untuk merangka protokol rawatan yang disesuaikan untuk setiap individu. Pasukan kami kini mempunyai {n} doktor di 9 cawangan.",
+      "photoAlt": "{name}, {credentials}, pengasas bersama Kaiteki Skin Aesthetic Clinic",
+      "readProfile": "Baca profil penuh →",
+      "readInterview": "Baca temu bual beliau ↗",
+      "teamLead": "Mereka kini sebahagian daripada pasukan {n} doktor berdaftar.",
+      "meetEvery": "Kenali setiap doktor →",
+      "blurbs": {
+        "dr-jessie-lim": "Dr Jessie Lim ialah doktor estetik bertauliah LCP yang memberi tumpuan kepada rawatan suntikan dan laser. Beliau menjalani latihan di Universiti Putra Malaysia dan American Academy of Aesthetic Medicine. Beliau mengasaskan Kaiteki dengan berpegang pada satu prinsip: penjagaan estetik harus bermula dengan penilaian yang jujur, bukan sasaran jualan.",
+        "dr-chew-yuhhui": "Dr Chew Yuhhui ialah doktor estetik bertauliah LCP yang lulus dari Melaka Manipal Medical College dengan ijazah MBBS. Beliau memberi tumpuan kepada masalah kulit seperti jerawat dan parut jerawat, rawatan suntikan seperti toksin botulinum dan filler, serta rawatan mengangkat kulit (lifting), dan juga merupakan jurulatih perubatan untuk Ellanse. Beliau mempunyai aura yang tenang dan stabil. Anda akan berasa selesa berkongsi kebimbangan anda dengan beliau."
+      }
+    },
+    "press": {
+      "eyebrow": "Dipaparkan dalam",
+      "titleLead": "Liputan",
+      "titleEm": "media",
+      "intro": "Kaiteki telah dipaparkan dalam penerbitan gaya hidup dan kecantikan Malaysia sejak 2020.",
+      "titles": {
+        "yum-2020": "Kenali pengasas: Dr Jessie Lim",
+        "kelly-2020": "Lawatan ke Kaiteki, The Hub SS2",
+        "emily-2021": "Pengalaman seorang pesakit menjalani rawatan jerawat",
+        "yum-2023": "Kaiteki dibuka di Mont Kiara",
+        "tpg-2024": "Ulasan bebas tentang klinik",
+        "yum-2025": "Dr Chew Yuhhui, Pengarah Perubatan"
+      }
+    },
+    "values": {
+      "title": "Prinsip yang kami pegang",
+      "comfort": {
+        "title": "Keselesaan diutamakan",
+        "body": "Nama kami sendiri membayangkannya. Bilik yang tenang, konsultasi yang tidak tergesa-gesa, dan ruang untuk bertanya apa sahaja sebelum anda membuat keputusan."
+      },
+      "assessment": {
+        "title": "Penilaian sebelum rawatan",
+        "body": "Setiap pelan rawatan dinilai oleh doktor berdaftar. Pelan itu bermula daripada masalah anda, bukan daripada menu rawatan atau perbualan jualan."
+      },
+      "honest": {
+        "title": "Jawapan yang jujur",
+        "body": "Kadangkala cadangan yang tepat ialah melakukan lebih sedikit, menunggu, atau mencuba sesuatu yang berbeza. Kami tetap memberikan jawapan itu walaupun ia bukan pilihan yang menguntungkan."
+      }
+    }
+  },
+  "products": {
+    "title": "Produk Penjagaan Kulit Kaiteki® Cosmeceuticals",
+    "description": "Produk penjagaan kulit berinspirasikan Jepun, diformulasikan oleh ahli dermatologi, untuk jerawat, penuaan dan kulit kusam. Bahan gred perubatan, diluluskan KKM.",
+    "crumb": "Produk",
+    "eyebrow": "Kaiteki® Cosmeceuticals",
+    "h1": "Produk",
+    "headerDescription": "Penjagaan kulit gred perubatan yang diformulasikan untuk menyokong kulit anda di antara rawatan klinik. Rangkaian kami sendiri, bersama jenama rakan kongsi yang dipercayai dan disyorkan oleh doktor kami.",
+    "promoBadge": "Promosi masa terhad",
+    "promoTitle": "Mix & Match Penjagaan Kulit: 5 produk dengan harga RM699",
+    "promoBody": "Bina rutin lima langkah daripada rangkaian Kaiteki® Cosmeceuticals. Harga biasa sehingga RM888.",
+    "promoTrigger": "Lihat promosi",
+    "pricesNote": "Harga mungkin berubah, sila sahkan di WhatsApp.",
+    "askBody": "Tidak pasti produk mana yang sesuai untuk kulit anda? Hantar mesej kepada kami di WhatsApp dan pasukan doktor kami akan membantu anda memilih produk yang sesuai dengan masalah dan jenis kulit anda.",
+    "askButton": "Tanya kami di WhatsApp",
+    "explorer": {
+      "all": "Semua produk",
+      "groups": {
+        "Kaiteki® Cosmeceuticals": "Kaiteki® Cosmeceuticals",
+        "Partner Brands": "Jenama Rakan Kongsi"
+      },
+      "intros": {
+        "Kaiteki® Cosmeceuticals": "Kaiteki Cosmeceuticals ialah rangkaian penjagaan kulit kami sendiri, diformulasikan dengan bahan gred perubatan untuk kegunaan harian. Setiap produk direka untuk melengkapi pelan rawatan anda atau digunakan sebagai rutin harian tersendiri.",
+        "Partner Brands": "Ini ialah produk rakan kongsi yang disyorkan oleh doktor kami bersama rawatan klinik. Setiap satu dipilih berdasarkan bukti klinikal dan kesesuaiannya untuk masalah kulit yang kami rawat."
+      }
+    },
+    "card": {
+      "alt": "{category} {brand} {name}, penjagaan kulit di Kaiteki Skin Aesthetic Clinic",
+      "order": "Pesan Sekarang",
+      "orderLabel": "Pesan {name} di WhatsApp",
+      "waOrder": "Hai Kaiteki, saya nak pesan {name}.",
+      "readMore": "Baca lagi",
+      "readLess": "Tutup"
+    }
+  },
+  "privacy": {
+    "title": "Dasar Privasi | Kaiteki Skin Aesthetic Clinic",
+    "description": "Cara Kaiteki Skin Aesthetic Clinic mengumpul, menggunakan dan melindungi data peribadi anda menurut Akta Perlindungan Data Peribadi (PDPA) Malaysia.",
+    "crumb": "Dasar Privasi",
+    "eyebrow": "Notis PDPA",
+    "h1": "Dasar Privasi",
+    "officialNote": "Notis ini dikeluarkan oleh KAITEKI dalam Bahasa Inggeris dan Bahasa Malaysia. Versi Bahasa Malaysia dipaparkan dahulu; sekiranya terdapat percanggahan, versi Bahasa Inggeris akan diguna pakai, seperti yang dinyatakan dalam notis ini."
+  }
+}

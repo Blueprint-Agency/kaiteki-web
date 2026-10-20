@@ -1,0 +1,148 @@
+{
+  "doctors": {
+    "hub": {
+      "title": "Kaiteki 医美医生团队｜MMC注册医生",
+      "description": "Kaiteki 在全马9间分店共有20位持有LCP认证、MMC注册的医美医生。每一个疗程方案，都由注册医生亲自评估与执行，每一篇疗程指南也注明审阅医生。",
+      "crumb": "医生团队",
+      "eyebrow": "MMC注册",
+      "h1": "我们的医生",
+      "intro": "在 Kaiteki，每一个疗程都由 MMC 注册医生评估并亲自执行，每一篇疗程指南也都注明审阅医生的名字。这是我们做事的根本，也是我们不依靠顾客见证或治疗前后对比照片的原因。"
+    },
+    "card": {
+      "alt": "{name}，{credentials}，Kaiteki 皮肤医美诊所医美医生",
+      "viewProfile": "查看简介"
+    },
+    "page": {
+      "defaultRole": "医美医生",
+      "seoFallback": "{name}，Kaiteki 皮肤医美诊所{role}。资历：{credentials}。通过 WhatsApp 预约免费咨询。",
+      "photoAlt": "{name}，{credentials}，马来西亚 Kaiteki 皮肤医美诊所医美医生",
+      "credentials": "资历",
+      "mmc": "MMC 注册",
+      "mmcTbc": "待确认",
+      "practisesAt": "执业分店",
+      "consult": "咨询 {short}",
+      "waConsult": "你好 Kaiteki，我想预约 {name} 的免费咨询。",
+      "bioFallback": "{name} 是 Kaiteki 皮肤医美诊所的{role}。在 Kaiteki，每一个疗程都由 MMC 注册医生评估并执行。",
+      "reviewedHeading": "{short} 审阅的指南",
+      "reviewedBody": "{short} 是以下疗程与皮肤问题指南的署名医学审阅人。本网站每一个临床页面都注明负责审核的 MMC 注册医生，让你清楚知道你所阅读的内容由谁把关。",
+      "allDoctors": "全部医生"
+    },
+    "roles": {
+      "Aesthetic Physician": "医美医生",
+      "Co-Founder & Senior Medical Director": "联合创办人兼资深医疗总监",
+      "Founder & CEO, Aesthetic Physician": "创办人兼首席执行官，医美医生",
+      "Partner, Aesthetic Physician": "合伙人，医美医生",
+      "Wellness Physician": "健康医学医生"
+    }
+  },
+  "ourStory": {
+    "title": "Kaiteki 是什么意思？我们的故事｜Kaiteki 医美诊所",
+    "description": "Kaiteki 是日文「快適」的意思，指身心都舒适自在。这是一家由医生创办、受日本文化启发的医美诊所，以平静、用心的照护为本，如今在马来西亚设有9间分店。",
+    "crumb": "关于我们",
+    "eyebrow": "关于 Kaiteki",
+    "h1Lead": "Kaiteki 的意思是",
+    "h1Em": "舒适。",
+    "lede": "Kaiteki 来自日语「快適」（かいてき），意思是身心都感到自在。不只是放松，而是真正安定下来的感觉。这份感觉，就是每一间 Kaiteki 诊所背后的承诺：提供医疗级的皮肤与医美护理，不推销、不催促，也不需要你为自己的决定多作解释。",
+    "book": "预约免费咨询",
+    "stats": {
+      "clinics": "现有诊所",
+      "states": "州属",
+      "doctors": "医生"
+    },
+    "philosophy": {
+      "eyebrow": "おもてなし（omotenashi）",
+      "titleLead": "照护，",
+      "titleEm": "先于一切销售",
+      "p1Lead": "Kaiteki 秉持",
+      "p1Em": "おもてなし（omotenashi）",
+      "p1Rest": "的精神，也就是日本全心全意、注重细节的待客之道。从咨询的安排方式，到疗程的执行过程，一切都以此为准则。",
+      "p2": "在 Kaiteki，每一个疗程方案都由注册医生设计并执行。我们的建议永远以临床为先，从不以生意为考量。如果合适的建议是少做一点，甚至什么都不做，你听到的就会是这样的答案。这个标准同样适用于每一间分店、每一位医生。",
+      "imageAlt": "Kaiteki 皮肤医美诊所 Mont Kiara 分店的疗程室"
+    },
+    "founders": {
+      "eyebrow": "创办人",
+      "title": "由医生创办，由医生经营",
+      "intro": "身为医生，她们具备为每个人量身设计疗程方案的知识与技术。团队目前在9间分店共有 {n} 位医生。",
+      "photoAlt": "{name}，{credentials}，Kaiteki 皮肤医美诊所联合创办人",
+      "readProfile": "阅读完整简介 →",
+      "readInterview": "阅读她的专访 ↗",
+      "teamLead": "如今，她们是 {n} 位注册医生团队中的一员。",
+      "meetEvery": "认识每一位医生 →",
+      "blurbs": {
+        "dr-jessie-lim": "Dr Jessie Lim 是持有 LCP 认证的医美医生，专注于注射类与激光疗程。她曾在 Universiti Putra Malaysia（博特拉大学）及 American Academy of Aesthetic Medicine 受训。她以一个原则创办 Kaiteki：医美护理应该从诚实的评估开始，而不是从销售目标开始。",
+        "dr-chew-yuhhui": "Dr Chew Yuhhui 是持有 LCP 认证的医美医生，毕业于 Melaka Manipal Medical College，获 MBBS 学位。她专注于暗疮与暗疮疤痕等皮肤问题，以及肉毒杆菌素、填充剂和提拉等疗程，同时也是 Ellanse 的医学培训师。她给人一种安静而沉稳的感觉，你会很自在地和她分享你的困扰。"
+      }
+    },
+    "press": {
+      "eyebrow": "媒体报道",
+      "titleLead": "媒体",
+      "titleEm": "报道",
+      "intro": "自2020年起，Kaiteki 陆续获得马来西亚生活与美容媒体的报道。",
+      "titles": {
+        "yum-2020": "认识创办人：Dr Jessie Lim",
+        "kelly-2020": "走访 Kaiteki The Hub SS2 分店",
+        "emily-2021": "一位患者的暗疮治疗经历",
+        "yum-2023": "Kaiteki Mont Kiara 分店开幕",
+        "tpg-2024": "一篇独立的诊所评测",
+        "yum-2025": "医疗总监 Dr Chew Yuhhui"
+      }
+    },
+    "values": {
+      "title": "我们坚持的原则",
+      "comfort": {
+        "title": "舒适为先",
+        "body": "名字已经说明一切。安静的诊室、不赶时间的咨询，让你在做决定之前，有足够的空间问任何问题。"
+      },
+      "assessment": {
+        "title": "先评估，后治疗",
+        "body": "每一个疗程方案都经过注册医生评估。方案根据你的皮肤问题制定，而不是来自疗程菜单或销售对话。"
+      },
+      "honest": {
+        "title": "诚实的答案",
+        "body": "有时候，合适的建议是少做一点、再等一等，或换个方式。即使这样的答案对我们来说利润不高，我们也会如实告诉你。"
+      }
+    }
+  },
+  "products": {
+    "title": "Kaiteki Cosmeceuticals｜日式灵感医美护肤品",
+    "description": "日式灵感、皮肤科医生参与配方的医美护肤品，针对暗疮、肌肤老化与暗沉。采用医疗级成分，获卫生部（MOH）批准，适合所有肤质，可在 WhatsApp 询问医生团队。",
+    "crumb": "产品",
+    "eyebrow": "Kaiteki® Cosmeceuticals",
+    "h1": "护肤产品",
+    "headerDescription": "医疗级护肤品，在诊所疗程之间帮助照顾你的肌肤。除了我们的自有系列，也有医生信任并推荐的合作品牌。",
+    "promoBadge": "限时优惠",
+    "promoTitle": "护肤品自由配：5件只需 RM699",
+    "promoBody": "从 Kaiteki® Cosmeceuticals 系列中搭配你的五步护肤程序。原价可达 RM888。",
+    "promoTrigger": "查看优惠",
+    "pricesNote": "价钱可能会有变动，请通过 WhatsApp 确认。",
+    "askBody": "不确定哪些产品适合你的肌肤？在 WhatsApp 联系我们，医生团队会根据你的皮肤问题和肤质，帮你挑选合适的产品。",
+    "askButton": "WhatsApp 咨询我们",
+    "explorer": {
+      "all": "全部产品",
+      "groups": {
+        "Kaiteki® Cosmeceuticals": "Kaiteki® Cosmeceuticals",
+        "Partner Brands": "合作品牌"
+      },
+      "intros": {
+        "Kaiteki® Cosmeceuticals": "Kaiteki Cosmeceuticals 是我们的自有护肤系列，采用医疗级成分，适合日常使用。每一款产品都可以配合你的疗程方案，也可以单独作为日常护肤程序。",
+        "Partner Brands": "这些是我们的医生在诊所疗程之外推荐的合作品牌产品。每一款都根据临床依据，以及是否适合我们所处理的皮肤问题来挑选。"
+      }
+    },
+    "card": {
+      "alt": "{brand} {name} {category}，Kaiteki 皮肤医美诊所护肤品",
+      "order": "立即订购",
+      "orderLabel": "通过 WhatsApp 订购 {name}",
+      "waOrder": "你好 Kaiteki，我想订购 {name}。",
+      "readMore": "展开阅读",
+      "readLess": "收起"
+    }
+  },
+  "privacy": {
+    "title": "隐私政策｜Kaiteki 皮肤医美诊所",
+    "description": "Kaiteki 皮肤医美诊所如何依照马来西亚《个人资料保护法令》（PDPA），收集、使用及保护你的个人资料，以及你可以怎样查阅或更正这些资料。",
+    "crumb": "隐私政策",
+    "eyebrow": "PDPA 通知",
+    "h1": "隐私政策",
+    "officialNote": "这份个人资料保护通知由 KAITEKI 以英文和马来文发出，没有中文版本。以下是官方英文和马来文全文；两者如有不一致，以英文版本为准。"
+  }
+}

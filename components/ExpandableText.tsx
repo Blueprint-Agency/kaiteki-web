@@ -14,9 +14,12 @@ export function ExpandableText({
   text,
   extra,
   lines = 2,
+  labels = { more: "Read more", less: "Read less" },
 }: {
   text: string;
   extra?: ReactNode;
+  /** Toggle labels in the page's language. */
+  labels?: { more: string; less: string };
   /** Collapsed height. Product cards want 2; review cards want 4. */
   lines?: keyof typeof CLAMP;
 }) {
@@ -44,7 +47,7 @@ export function ExpandableText({
           aria-expanded={open}
           className="mt-1.5 font-medium text-accent transition-colors hover:text-espresso"
         >
-          {open ? "Read less" : "Read more"}
+          {open ? labels.less : labels.more}
         </button>
       )}
     </div>

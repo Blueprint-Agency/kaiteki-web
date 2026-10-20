@@ -1,0 +1,239 @@
+{
+  "hydroglow-masks": {
+    "name": "Kaiteki® HydroGlow Masks",
+    "brand": "Kaiteki",
+    "category": "Sheet Mask",
+    "summary": "A hydrating sheet mask packed with concentrated hyaluronic acid and vitamin C (L-ascorbic acid) for an instant boost of moisture and radiance between clinic visits.",
+    "bestFor": "All skin types",
+    "ingredients": [
+      "Hyaluronic acid",
+      "Vitamin C (L-ascorbic acid)"
+    ],
+    "highlights": [
+      "5 masks per set",
+      "Use 1–2 times a week",
+      "Antioxidant vitamin C"
+    ],
+    "priceNote": null
+  },
+  "intense-hydration-cream": {
+    "name": "Kaiteki Intense Hydration Cream",
+    "brand": "Kaiteki",
+    "category": "Moisturiser",
+    "summary": "A rich moisturiser powered by ceramides, hyaluronic acid and centella for long-lasting hydration, formulated for sensitive, dehydrated skin.",
+    "bestFor": "Sensitive, dehydrated skin",
+    "ingredients": [
+      "Ceramides",
+      "Hyaluronic acid",
+      "Centella"
+    ],
+    "highlights": null,
+    "priceNote": null
+  },
+  "acne-spot-serum": {
+    "name": "Kaiteki® Acne Spot Serum",
+    "brand": "Kaiteki",
+    "category": "Targeted Serum",
+    "summary": "A lightweight targeted serum with salicylic acid, made for dabbing directly onto individual blemishes as a quick fix.",
+    "bestFor": "Blemish-prone skin",
+    "ingredients": [
+      "Salicylic acid"
+    ],
+    "highlights": null,
+    "priceNote": null
+  },
+  "ultra-soothing-face-mist": {
+    "name": "Kaiteki® Ultra Soothing Face Mist",
+    "brand": "Kaiteki",
+    "category": "Face Mist",
+    "summary": "A refreshing facial mist enriched with collagen, peptides and aloe vera to rehydrate and soothe skin any time of day.",
+    "bestFor": null,
+    "ingredients": [
+      "Collagen",
+      "Peptides",
+      "Aloe vera"
+    ],
+    "highlights": null,
+    "priceNote": null
+  },
+  "ultra-nourishing-body-lotion": {
+    "name": "Kaiteki® Ultra Nourishing Body Lotion",
+    "brand": "Kaiteki",
+    "category": "Body Care",
+    "summary": "An everyday body lotion infused with nourishing botanical oils to hydrate and support the skin barrier from neck to toe.",
+    "bestFor": null,
+    "ingredients": [
+      "Botanical oils"
+    ],
+    "highlights": null,
+    "priceNote": null
+  },
+  "ultra-soothing-cleansing-gel": {
+    "name": "Kaiteki® Ultra Soothing Cleansing Gel",
+    "brand": "Kaiteki",
+    "category": "Cleanser",
+    "summary": "A gentle gel cleanser with chamomile and cucumber extract that lifts make-up and impurities without stripping the skin, leaving it soft and comfortable.",
+    "bestFor": "All skin types",
+    "ingredients": [
+      "Chamomile",
+      "Cucumber extract"
+    ],
+    "highlights": [
+      "Non-comedogenic",
+      "Non-irritating",
+      "Removes make-up & impurities"
+    ],
+    "priceNote": null
+  },
+  "ultra-hydrating-serum": {
+    "name": "Kaiteki® Ultra Hydrating Serum",
+    "brand": "Kaiteki",
+    "category": "Serum",
+    "summary": "A concentrated serum pairing pure hyaluronic acid with vitamin B5 for a serious moisture boost, layered under your moisturiser as part of a simple daily routine.",
+    "bestFor": null,
+    "ingredients": [
+      "Hyaluronic acid",
+      "Vitamin B5"
+    ],
+    "highlights": null,
+    "priceNote": null
+  },
+  "hydro-boost-moisturiser": {
+    "name": "Kaiteki® Hydro Boost Moisturiser",
+    "brand": "Kaiteki",
+    "category": "Moisturiser",
+    "summary": "An ultra-light, non-comedogenic gel-cream with ceramides and tea tree oil. Formulated for daily hydration and to help with the look of pores, fine lines, uneven tone and redness.",
+    "bestFor": "All skin types",
+    "ingredients": [
+      "Ceramides",
+      "Tea tree oil"
+    ],
+    "highlights": [
+      "Non-comedogenic",
+      "Lightweight gel-cream"
+    ],
+    "priceNote": null
+  },
+  "pore-refining-essence": {
+    "name": "Kaiteki® Pore Refining Essence",
+    "brand": "Kaiteki",
+    "category": "Essence",
+    "summary": "A gentle exfoliating essence with mild lactic and glycolic acids that helps unclog pores and smooth texture for a brighter-looking complexion.",
+    "bestFor": "Congestion, blackheads & uneven texture",
+    "ingredients": [
+      "Lactic acid",
+      "Glycolic acid"
+    ],
+    "highlights": [
+      "Gentle daily exfoliation",
+      "Helps clear oil build-up"
+    ],
+    "priceNote": null
+  },
+  "doubleblock-uv-sunscreen": {
+    "name": "Kaiteki® DoubleBlock UV Sunscreen",
+    "brand": "Kaiteki",
+    "category": "Sunscreen",
+    "summary": "A broad-spectrum SPF 50 facial sunscreen with octocrylene that shields against UVA and UVB rays while keeping skin moisturised, finishing light and matte.",
+    "bestFor": null,
+    "ingredients": [
+      "Octocrylene"
+    ],
+    "highlights": [
+      "SPF 50, broad-spectrum UVA/UVB",
+      "Water-resistant",
+      "Oil-free matte finish",
+      "Fragrance-free"
+    ],
+    "priceNote": null
+  },
+  "heliocare-d-plus": {
+    "name": "Heliocare D Plus",
+    "brand": "Heliocare",
+    "category": "Oral Sun Protection",
+    "summary": "Oral capsules that support your skin's sun defence from within, designed to be used together with, not as a replacement for, a topical sunscreen.",
+    "bestFor": "Added daily UV & blue-light protection",
+    "ingredients": [
+      "Vitamin D",
+      "Antioxidants"
+    ],
+    "highlights": [
+      "Use alongside topical sunscreen (not a replacement)",
+      "Also helps against screen blue light",
+      "Antioxidant"
+    ],
+    "priceNote": null
+  },
+  "heliocare-luminance": {
+    "name": "Heliocare Luminance",
+    "brand": "Heliocare",
+    "category": "Oral Supplement",
+    "summary": "A daily oral supplement with glutathione, rosemary extract and nicotinamide, supporting protection against UV, visible light and pollution for a more even, radiant-looking complexion.",
+    "bestFor": "Radiance & even tone",
+    "ingredients": [
+      "Glutathione",
+      "Rosemary extract",
+      "Nicotinamide"
+    ],
+    "highlights": null,
+    "priceNote": null
+  },
+  "clinisept-skin": {
+    "name": "Clinisept+ Skin",
+    "brand": "Clinisept+",
+    "category": "Prep & Aftercare",
+    "summary": "A skin-neutral pH antimicrobial cleanser used to prepare skin and support recovery after aesthetic treatments, helping calm redness on sensitive, irritated skin.",
+    "bestFor": "Pre-treatment prep & post-procedure aftercare",
+    "ingredients": null,
+    "highlights": [
+      "Antimicrobial cleanser",
+      "Skin-neutral pH",
+      "Alcohol- & harsh-chemical free",
+      "Dermatologically tested"
+    ],
+    "priceNote": null
+  },
+  "lucent-prime": {
+    "name": "Lucent® Prime Oral Skinbooster",
+    "brand": "Lione",
+    "category": "Oral Supplement",
+    "summary": "A daily berry-flavoured botanical powder combining skin-focused antioxidants, ceramides and a probiotic, designed to be taken alongside your in-clinic treatments as part of a skin-health routine from within.",
+    "bestFor": "Radiance, hydration & skin barrier support",
+    "ingredients": [
+      "Golden tomato extract (Lumenato™)",
+      "Astaxanthin (AstaReal®)",
+      "Pycnogenol®",
+      "Ceramide (CornCera™)",
+      "L-cysteine",
+      "Probiotic B. lactis Bl-04"
+    ],
+    "highlights": [
+      "30 sachets × 4 g",
+      "One sachet daily",
+      "Pairs with in-clinic treatments"
+    ],
+    "priceNote": null
+  },
+  "stanmna": {
+    "name": "STANMNA™",
+    "brand": "Lione",
+    "category": "Performance Supplement",
+    "summary": "A plant-based drink-mix sachet built around NMN, CoQ10 and PQQ, formulated to support cellular energy, endurance and recovery for people who train regularly.",
+    "bestFor": "Active adults & regular training",
+    "ingredients": [
+      "NMN (Uthever®)",
+      "CoQ10",
+      "Alpha lipoic acid",
+      "PQQ",
+      "Tart cherry",
+      "Citrus flavonoids (Watt'sUp®)"
+    ],
+    "highlights": [
+      "Mix one sachet into 250 ml water, or take directly",
+      "Take 30 min before training, or each morning",
+      "100% vegan, non-GMO",
+      "No added preservatives or artificial colours"
+    ],
+    "priceNote": null
+  }
+}

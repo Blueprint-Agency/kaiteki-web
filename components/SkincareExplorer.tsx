@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ProductCard } from "./cards";
+import { ProductCard, type ProductCardCopy } from "./cards";
 import { CardRow } from "./CardRow";
 import { FilterTabs } from "./FilterTabs";
 import { products, productGroups } from "@/content/data/products";
@@ -20,7 +20,14 @@ const GROUP_INTRO: Record<ProductGroup, string> = {
 /** Filterable product grid for the /skincare hub — mirrors ConcernsExplorer.
  *  Defaults to "All" so crawlers and no-JS visitors get the whole catalogue.
  *  Picking a group also surfaces that group's intro copy. */
-export function SkincareExplorer() {
+export function SkincareExplorer({
+  copy,
+  cards,
+}: {
+  /** Tab labels and group intros in a non-English locale. */
+  copy?: { all: string; groups: Record<string, string>; intros: Record<string, string> };
+  cards?: Record<string, ProductCardCopy>;
+} = {}) {
   const [filter, setFilter] = useState<Filter>("All");
   const tabs: Filter[] = ["All", ...productGroups];
   const shown = filter === "All" ? products : products.filter((p) => p.group === filter);
@@ -32,16 +39,16 @@ export function SkincareExplorer() {
         onSelect={setFilter}
         tabs={tabs.map((value) => ({
           value,
-          label: value === "All" ? "All products" : value,
+          label: value === "All" ? (copy?.all ?? "All products") : (copy?.groups[value] ?? value),
           count: value === "All" ? products.length : products.filter((p) => p.group === value).length,
         }))}
       />
       {filter !== "All" && (
-        <p className="mt-6 max-w-2xl leading-relaxed text-ink-700">{GROUP_INTRO[filter]}</p>
+        <p className="mt-6 max-w-2xl leading-relaxed text-ink-700">{copy?.intros[filter] ?? GROUP_INTRO[filter]}</p>
       )}
       <CardRow className="mt-8">
         {shown.map((p) => (
-          <ProductCard key={p.slug} p={p} />
+          <ProductCard key={p.slug} p={p} copy={cards?.[p.slug]} />
         ))}
       </CardRow>
     </div>

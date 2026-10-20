@@ -110,6 +110,11 @@ body {
   letter-spacing: 0.01em;
   line-height: 1.3;
 }
+/* Same reason, for flourish spans and <em> outside .h-em (e.g. /our-story). */
+:lang(zh) .italic,
+:lang(zh) em {
+  font-style: normal;
+}
 :lang(zh) .h-em {
   font-style: normal;
   /* Hanzi wrap between any two characters; keep the flourish phrase whole

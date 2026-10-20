@@ -27,6 +27,11 @@ import { localePages } from "../content/i18n/pages.ts";
 import { copyStrings, overlay } from "../lib/i18n-overlay.ts";
 import { branchCopy, locationsCopy } from "../content/i18n/locations.ts";
 import { branches } from "../content/data/branches.ts";
+import { doctorCopy, productCopy, staticPages } from "../content/i18n/static-pages.ts";
+import { doctors } from "../content/data/doctors.ts";
+import { products } from "../content/data/products.ts";
+import doctorsSnapshotEn from "../content/i18n/doctors/_en.json" with { type: "json" };
+import productsSnapshotEn from "../content/i18n/products/_en.json" with { type: "json" };
 
 const root = process.cwd();
 let failures = 0;
@@ -118,7 +123,7 @@ function checkCopy(where: string, locale: "zh" | "ms", x: unknown) {
   }
 }
 
-type SeoFields = { seoTitle?: string; seoDescription?: string; title?: string; description?: string };
+type SeoFields = { seoTitle?: string | null; seoDescription?: string | null; title?: string | null; description?: string | null };
 
 /** L-05: title and description lengths for the locale's script. */
 function checkSeo(where: string, locale: "zh" | "ms", o: SeoFields) {
@@ -209,6 +214,59 @@ for (const locale of LOCALES) {
     if (c.hours.length !== b.hours.length) warn(`locations/${locale}/${b.slug}`, "L-06", `hours: ${c.hours.length} lines vs ${b.hours.length} in English`);
   }
   console.log(`locations/${locale}: hub + ${Object.keys(branchCopy[locale]).length} branch(es) checked`);
+}
+
+// content/i18n/static-pages.ts: doctors, our story, products, privacy.
+// L-01: every string the English has (non-empty) is present and non-empty;
+// L-06: arrays as long as the English; L-10: the per-doctor and per-product
+// English snapshots still match content/data.
+function missingVs(en: unknown, tr: unknown, path = ""): string[] {
+  if (typeof en === "string") return en.trim() && !(typeof tr === "string" && tr.trim()) ? [path] : [];
+  if (Array.isArray(en)) {
+    if (!Array.isArray(tr)) return [path];
+    if (tr.length !== en.length) warn("static-pages", "L-06", `${path}: ${tr.length} items vs ${en.length} in English`);
+    return en.flatMap((v, i) => missingVs(v, tr[i], `${path}[${i}]`));
+  }
+  if (en && typeof en === "object") {
+    const t = (tr && typeof tr === "object" ? tr : {}) as Record<string, unknown>;
+    return Object.entries(en).flatMap(([k, v]) => missingVs(v, t[k], path ? `${path}.${k}` : k));
+  }
+  return [];
+}
+const doctorSnapshot = (d: (typeof doctors)[number]) => ({ fullName: d.fullName, role: d.role ?? null, bio: d.bio ?? null, seoTitle: d.seoTitle ?? null, seoDescription: d.seoDescription ?? null });
+const productSnapshot = (p: (typeof products)[number]) => ({ name: p.name, brand: p.brand, category: p.category, summary: p.summary, bestFor: p.bestFor ?? null, ingredients: p.ingredients ?? null, highlights: p.highlights ?? null, priceNote: p.priceNote ?? null });
+for (const [what, snap, now] of [
+  ["doctors", doctorsSnapshotEn, Object.fromEntries(doctors.map((d) => [d.slug, doctorSnapshot(d)]))],
+  ["products", productsSnapshotEn, Object.fromEntries(products.map((p) => [p.slug, productSnapshot(p)]))],
+] as const) {
+  for (const slug of new Set([...Object.keys(snap), ...Object.keys(now)])) {
+    if (JSON.stringify((snap as Record<string, unknown>)[slug]) !== JSON.stringify((now as Record<string, unknown>)[slug])) {
+      fail(`${what}/${slug}`, "L-10", `English changed since this was translated: update content/i18n/${what}/_en.json and both translations`);
+    }
+  }
+}
+for (const locale of LOCALES) {
+  const t = staticPages[locale];
+  const miss = missingVs(staticPages.en, t);
+  if (miss.length) fail(`static-pages/${locale}`, "L-01", `${miss.length} untranslated: ${miss.slice(0, 5).join(", ")}`);
+  checkCopy(`static-pages/${locale}`, locale, t);
+  for (const page of [t.doctors.hub, t.ourStory, t.products, t.privacy]) checkSeo(`static-pages/${locale}`, locale, page);
+  for (const d of doctors) {
+    const c = doctorCopy[locale][d.slug];
+    const where = `doctors/${locale}/${d.slug}`;
+    const m = missingVs(doctorSnapshot(d), c);
+    if (m.length) fail(where, "L-01", `${m.length} untranslated: ${m.slice(0, 5).join(", ")}`);
+    checkCopy(where, locale, c);
+    checkSeo(where, locale, c ?? {});
+  }
+  for (const p of products) {
+    const c = productCopy[locale][p.slug];
+    const where = `products/${locale}/${p.slug}`;
+    const m = missingVs(productSnapshot(p), c);
+    if (m.length) fail(where, "L-01", `${m.length} untranslated: ${m.slice(0, 5).join(", ")}`);
+    checkCopy(where, locale, c);
+  }
+  console.log(`static-pages/${locale}: 4 pages, ${doctors.length} doctors, ${products.length} products checked`);
 }
 
 console.log(`\n${failures} failure(s) · ${warnings} warning(s)`);

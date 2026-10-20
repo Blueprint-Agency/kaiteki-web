@@ -305,7 +305,7 @@ not named by 12 Oct, the plumbing ships with no locale URLs live and the pilot m
 
 **Answered 2026-10-14: the same doctor signs each language as signs the English page.** The ledger
 (`content/i18n/pages.ts`) now defaults a signed translation to the English page's reviewer, so signing a page is
-its date and nothing else. **Sheet C** (`sheet-c-translation-signoff.csv`) is the reading list: every translated page (85 after the location round), grouped by
+its date and nothing else. **Sheet C** (`sheet-c-translation-signoff.csv`) is the reading list: every translated page (110 after round 6), grouped by
 doctor, each with its Chinese and Malay staging URLs and a date column per language. A page goes live the day its
 date comes back, not before.
 

@@ -1,0 +1,239 @@
+{
+  "hydroglow-masks": {
+    "name": "Kaiteki® HydroGlow Masks",
+    "brand": "Kaiteki",
+    "category": "Topeng Helaian",
+    "summary": "Topeng helaian yang melembapkan, kaya dengan asid hialuronik pekat dan vitamin C (asid L-askorbik) untuk meningkatkan kelembapan dan seri kulit dengan segera di antara lawatan klinik.",
+    "bestFor": "Semua jenis kulit",
+    "ingredients": [
+      "Asid hialuronik",
+      "Vitamin C (asid L-askorbik)"
+    ],
+    "highlights": [
+      "5 helai topeng setiap set",
+      "Guna 1–2 kali seminggu",
+      "Vitamin C antioksidan"
+    ],
+    "priceNote": null
+  },
+  "intense-hydration-cream": {
+    "name": "Kaiteki Intense Hydration Cream",
+    "brand": "Kaiteki",
+    "category": "Pelembap",
+    "summary": "Krim pelembap pekat dengan seramida, asid hialuronik dan centella (pegaga) untuk hidrasi yang tahan lama, diformulasikan untuk kulit sensitif dan dehidrasi.",
+    "bestFor": "Kulit sensitif dan dehidrasi",
+    "ingredients": [
+      "Seramida",
+      "Asid hialuronik",
+      "Centella (pegaga)"
+    ],
+    "highlights": null,
+    "priceNote": null
+  },
+  "acne-spot-serum": {
+    "name": "Kaiteki® Acne Spot Serum",
+    "brand": "Kaiteki",
+    "category": "Serum Setempat",
+    "summary": "Serum ringan dengan asid salisilik, dibuat untuk disapu terus pada jerawat secara setempat sebagai penyelesaian pantas.",
+    "bestFor": "Kulit mudah berjerawat",
+    "ingredients": [
+      "Asid salisilik"
+    ],
+    "highlights": null,
+    "priceNote": null
+  },
+  "ultra-soothing-face-mist": {
+    "name": "Kaiteki® Ultra Soothing Face Mist",
+    "brand": "Kaiteki",
+    "category": "Kabus Muka",
+    "summary": "Kabus muka yang menyegarkan, diperkaya dengan kolagen, peptida dan lidah buaya untuk melembapkan semula dan menenangkan kulit pada bila-bila masa.",
+    "bestFor": null,
+    "ingredients": [
+      "Kolagen",
+      "Peptida",
+      "Lidah buaya (aloe vera)"
+    ],
+    "highlights": null,
+    "priceNote": null
+  },
+  "ultra-nourishing-body-lotion": {
+    "name": "Kaiteki® Ultra Nourishing Body Lotion",
+    "brand": "Kaiteki",
+    "category": "Penjagaan Badan",
+    "summary": "Losyen badan harian yang diperkaya dengan minyak botani berkhasiat untuk melembapkan dan menyokong lapisan pelindung kulit dari leher hingga ke hujung kaki.",
+    "bestFor": null,
+    "ingredients": [
+      "Minyak botani"
+    ],
+    "highlights": null,
+    "priceNote": null
+  },
+  "ultra-soothing-cleansing-gel": {
+    "name": "Kaiteki® Ultra Soothing Cleansing Gel",
+    "brand": "Kaiteki",
+    "category": "Pencuci Muka",
+    "summary": "Gel pencuci muka yang lembut dengan ekstrak kamomil dan timun, membersihkan solekan dan kekotoran tanpa melucutkan kelembapan kulit, meninggalkan kulit lembut dan selesa.",
+    "bestFor": "Semua jenis kulit",
+    "ingredients": [
+      "Kamomil",
+      "Ekstrak timun"
+    ],
+    "highlights": [
+      "Tidak komedogenik",
+      "Tidak merengsakan",
+      "Membersihkan solekan & kekotoran"
+    ],
+    "priceNote": null
+  },
+  "ultra-hydrating-serum": {
+    "name": "Kaiteki® Ultra Hydrating Serum",
+    "brand": "Kaiteki",
+    "category": "Serum",
+    "summary": "Serum pekat yang menggabungkan asid hialuronik tulen dengan vitamin B5 untuk kelembapan yang lebih mendalam, disapu sebelum pelembap sebagai sebahagian daripada rutin harian yang ringkas.",
+    "bestFor": null,
+    "ingredients": [
+      "Asid hialuronik",
+      "Vitamin B5"
+    ],
+    "highlights": null,
+    "priceNote": null
+  },
+  "hydro-boost-moisturiser": {
+    "name": "Kaiteki® Hydro Boost Moisturiser",
+    "brand": "Kaiteki",
+    "category": "Pelembap",
+    "summary": "Gel-krim ultra ringan dan tidak komedogenik dengan seramida dan minyak pokok teh. Diformulasikan untuk hidrasi harian dan membantu memperbaik rupa liang pori, garis halus, tona kulit tidak sekata dan kemerahan.",
+    "bestFor": "Semua jenis kulit",
+    "ingredients": [
+      "Seramida",
+      "Minyak pokok teh"
+    ],
+    "highlights": [
+      "Tidak komedogenik",
+      "Gel-krim ringan"
+    ],
+    "priceNote": null
+  },
+  "pore-refining-essence": {
+    "name": "Kaiteki® Pore Refining Essence",
+    "brand": "Kaiteki",
+    "category": "Esen",
+    "summary": "Esen pengelupas lembut dengan asid laktik dan asid glikolik ringan yang membantu membuka liang pori tersumbat dan melicinkan tekstur kulit untuk kulit muka yang kelihatan lebih cerah.",
+    "bestFor": "Liang pori tersumbat, kepala hitam & tekstur tidak sekata",
+    "ingredients": [
+      "Asid laktik",
+      "Asid glikolik"
+    ],
+    "highlights": [
+      "Pengelupasan harian yang lembut",
+      "Membantu mengurangkan pengumpulan minyak"
+    ],
+    "priceNote": null
+  },
+  "doubleblock-uv-sunscreen": {
+    "name": "Kaiteki® DoubleBlock UV Sunscreen",
+    "brand": "Kaiteki",
+    "category": "Pelindung Matahari",
+    "summary": "Pelindung matahari (sunblock) muka spektrum luas SPF 50 dengan octocrylene yang melindungi daripada sinaran UVA dan UVB sambil memastikan kulit lembap, dengan kemasan ringan dan matte.",
+    "bestFor": null,
+    "ingredients": [
+      "Octocrylene"
+    ],
+    "highlights": [
+      "SPF 50, spektrum luas UVA/UVB",
+      "Kalis air",
+      "Kemasan matte bebas minyak",
+      "Bebas pewangi"
+    ],
+    "priceNote": null
+  },
+  "heliocare-d-plus": {
+    "name": "Heliocare D Plus",
+    "brand": "Heliocare",
+    "category": "Pelindung Matahari Oral",
+    "summary": "Kapsul oral, atau \"sunblock makan\", yang menyokong pertahanan kulit terhadap matahari dari dalam, direka untuk digunakan bersama pelindung matahari topikal, bukan sebagai penggantinya.",
+    "bestFor": "Perlindungan tambahan harian daripada UV & cahaya biru",
+    "ingredients": [
+      "Vitamin D",
+      "Antioksidan"
+    ],
+    "highlights": [
+      "Guna bersama pelindung matahari topikal (bukan pengganti)",
+      "Turut membantu melindungi daripada cahaya biru skrin",
+      "Antioksidan"
+    ],
+    "priceNote": null
+  },
+  "heliocare-luminance": {
+    "name": "Heliocare Luminance",
+    "brand": "Heliocare",
+    "category": "Suplemen Oral",
+    "summary": "Suplemen oral harian dengan glutation, ekstrak rosemary dan nikotinamida, menyokong perlindungan daripada UV, cahaya nampak dan pencemaran untuk kulit muka yang kelihatan lebih sekata dan berseri.",
+    "bestFor": "Seri & tona kulit sekata",
+    "ingredients": [
+      "Glutation",
+      "Ekstrak rosemary",
+      "Nikotinamida"
+    ],
+    "highlights": null,
+    "priceNote": null
+  },
+  "clinisept-skin": {
+    "name": "Clinisept+ Skin",
+    "brand": "Clinisept+",
+    "category": "Persediaan & Penjagaan Selepas Rawatan",
+    "summary": "Pencuci antimikrob dengan pH neutral kulit, digunakan untuk menyediakan kulit dan menyokong pemulihan selepas rawatan estetik, serta membantu menenangkan kemerahan pada kulit sensitif dan teriritasi.",
+    "bestFor": "Persediaan sebelum rawatan & penjagaan selepas prosedur",
+    "ingredients": null,
+    "highlights": [
+      "Pencuci antimikrob",
+      "pH neutral kulit",
+      "Bebas alkohol & bahan kimia keras",
+      "Diuji secara dermatologi"
+    ],
+    "priceNote": null
+  },
+  "lucent-prime": {
+    "name": "Lucent® Prime Oral Skinbooster",
+    "brand": "Lione",
+    "category": "Suplemen Oral",
+    "summary": "Serbuk botani harian berperisa beri yang menggabungkan antioksidan untuk kulit, seramida dan probiotik, direka untuk diambil bersama rawatan di klinik sebagai sebahagian daripada rutin kesihatan kulit dari dalam.",
+    "bestFor": "Seri, hidrasi & sokongan lapisan pelindung kulit",
+    "ingredients": [
+      "Ekstrak tomato emas (Lumenato™)",
+      "Astaxanthin (AstaReal®)",
+      "Pycnogenol®",
+      "Seramida (CornCera™)",
+      "L-sisteina",
+      "Probiotik B. lactis Bl-04"
+    ],
+    "highlights": [
+      "30 sachet × 4 g",
+      "Satu sachet sehari",
+      "Sesuai digandingkan dengan rawatan di klinik"
+    ],
+    "priceNote": null
+  },
+  "stanmna": {
+    "name": "STANMNA™",
+    "brand": "Lione",
+    "category": "Suplemen Prestasi",
+    "summary": "Sachet minuman berasaskan tumbuhan dengan NMN, CoQ10 dan PQQ, diformulasikan untuk menyokong tenaga sel, ketahanan dan pemulihan bagi mereka yang bersenam secara berkala.",
+    "bestFor": "Orang dewasa yang aktif & bersenam secara berkala",
+    "ingredients": [
+      "NMN (Uthever®)",
+      "CoQ10",
+      "Asid alfa lipoik",
+      "PQQ",
+      "Ceri masam (tart cherry)",
+      "Flavonoid sitrus (Watt'sUp®)"
+    ],
+    "highlights": [
+      "Campurkan satu sachet ke dalam 250 ml air, atau ambil terus",
+      "Ambil 30 minit sebelum bersenam, atau setiap pagi",
+      "100% vegan, bukan GMO",
+      "Tanpa pengawet atau pewarna tiruan tambahan"
+    ],
+    "priceNote": null
+  }
+}

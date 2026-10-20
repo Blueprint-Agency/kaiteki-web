@@ -1,0 +1,132 @@
+{
+  "doctors": {
+    "hub": {
+      "title": "Meet Our Doctors | Kaiteki Aesthetic Clinic",
+      "description": "20 LCP board-certified, MMC-registered aesthetic doctors across 9 branches. Every treatment plan is assessed and carried out by a registered physician.",
+      "crumb": "Doctors",
+      "eyebrow": "MMC-registered",
+      "h1": "Our doctors",
+      "intro": "Every treatment at Kaiteki is assessed and carried out by an MMC-registered doctor, and every treatment guide names the doctor who reviewed it. It is the foundation of how we work, and why we don’t rely on testimonials or before-and-after photos."
+    },
+    "card": {
+      "alt": "{name}, {credentials}, aesthetic doctor at Kaiteki Skin Aesthetic Clinic",
+      "viewProfile": "View profile"
+    },
+    "page": {
+      "defaultRole": "Aesthetic Physician",
+      "seoFallback": "{name}, {role} at Kaiteki Skin Aesthetic Clinic. Credentials: {credentials}. Book a free consultation on WhatsApp.",
+      "photoAlt": "{name}, {credentials}, aesthetic doctor at Kaiteki Skin Aesthetic Clinic Malaysia",
+      "credentials": "Credentials",
+      "mmc": "MMC registration",
+      "mmcTbc": "To be confirmed",
+      "practisesAt": "Practises at",
+      "consult": "Consult {short}",
+      "waConsult": "Hi Kaiteki, I'd like to book a free consultation with {name}.",
+      "bioFallback": "{name} is a {role} at Kaiteki Skin Aesthetic Clinic. Every treatment at Kaiteki is assessed and carried out by an MMC-registered doctor.",
+      "reviewedHeading": "Guides reviewed by {short}",
+      "reviewedBody": "{short} is the named medical reviewer for the treatment and concern guides below. Every clinical page on this site carries the name of the MMC-registered doctor who checked it, so you can see who stands behind what you are reading.",
+      "allDoctors": "All doctors"
+    },
+    "roles": {
+      "Aesthetic Physician": "Aesthetic Physician",
+      "Co-Founder & Senior Medical Director": "Co-Founder & Senior Medical Director",
+      "Founder & CEO, Aesthetic Physician": "Founder & CEO, Aesthetic Physician",
+      "Partner, Aesthetic Physician": "Partner, Aesthetic Physician",
+      "Wellness Physician": "Wellness Physician"
+    }
+  },
+  "ourStory": {
+    "title": "Our Story | Kaiteki Skin Aesthetic Clinic",
+    "description": "The story behind Kaiteki. A Japanese-inspired aesthetic clinic founded by doctors, built on calm and considered care, now across 9 Malaysian branches.",
+    "crumb": "About",
+    "eyebrow": "About Kaiteki",
+    "h1Lead": "Kaiteki means",
+    "h1Em": "comfortable.",
+    "lede": "It’s a Japanese word, かいてき, for being at ease, physically and mentally. Not just relaxed, but genuinely settled. That feeling is the single promise behind every Kaiteki clinic: medical-grade skin and aesthetic care where nothing is sold, rushed, or justified.",
+    "book": "Book a free consultation",
+    "stats": { "clinics": "Clinics today", "states": "States", "doctors": "Doctors" },
+    "philosophy": {
+      "eyebrow": "Omotenashi",
+      "titleLead": "Care,",
+      "titleEm": "before anything is sold",
+      "p1Lead": "Kaiteki practises",
+      "p1Em": "omotenashi",
+      "p1Rest": ", the Japanese principle of whole-hearted, detail-oriented hospitality. It shapes everything from the way a consultation is structured to the way a treatment is carried out.",
+      "p2": "Every treatment plan at Kaiteki is designed and carried out by a registered doctor. The advice is clinical first and commercial never. If the right recommendation is to do less, or nothing at all, that’s what you’ll hear. That standard applies equally at every branch, with every doctor.",
+      "imageAlt": "Treatment room inside Kaiteki Skin Aesthetic Clinic Mont Kiara"
+    },
+    "founders": {
+      "eyebrow": "The founders",
+      "title": "Founded by doctors, run by doctors",
+      "intro": "Being doctors, they have the knowledge and skills to design curated treatment protocols for each individual. The team now has {n} doctors across 9 branches.",
+      "photoAlt": "{name}, {credentials}, co-founder of Kaiteki Skin Aesthetic Clinic",
+      "readProfile": "Read full profile →",
+      "readInterview": "Read her interview ↗",
+      "teamLead": "They’re now part of a team of {n} registered doctors.",
+      "meetEvery": "Meet every doctor →",
+      "blurbs": {
+        "dr-jessie-lim": "Dr Jessie Lim is an LCP-certified aesthetic physician specialising in injectables and laser treatments. She trained at Universiti Putra Malaysia and the American Academy of Aesthetic Medicine. She founded Kaiteki around one principle: that aesthetic care should start with an honest assessment, not a sales target.",
+        "dr-chew-yuhhui": "Dr Chew Yuhhui is an LCP-certified aesthetic physician who graduated from Melaka Manipal Medical College with an MBBS. She specialises in skin problems like acne and acne scars, injectables like botox, fillers and lifting treatments, and is also a medical trainer for Ellanse. She has a quiet steady energy. You’ll feel comfortable sharing your concerns with her."
+      }
+    },
+    "press": {
+      "eyebrow": "Featured in",
+      "titleLead": "In the",
+      "titleEm": "press",
+      "intro": "Kaiteki has been covered by Malaysian lifestyle and beauty publications since 2020.",
+      "titles": {
+        "yum-2020": "Meet the founder: Dr Jessie Lim",
+        "kelly-2020": "A visit to Kaiteki, The Hub SS2",
+        "emily-2021": "A patient's acne-treatment experience",
+        "yum-2023": "Kaiteki opens in Mont Kiara",
+        "tpg-2024": "An independent clinic review",
+        "yum-2025": "Dr Chew Yuhhui, Medical Director"
+      }
+    },
+    "values": {
+      "title": "What we hold to",
+      "comfort": { "title": "Comfort first", "body": "The name says it. Calm rooms, unhurried consultations, and the space to ask anything before you decide." },
+      "assessment": { "title": "Assessment before treatment", "body": "Every treatment plan is assessed by a registered doctor. The plan comes from your concern, not from a treatment menu or a sales conversation." },
+      "honest": { "title": "The honest answer", "body": "Sometimes the right recommendation is to do less, wait, or try something different. We give you that answer even when it's not the profitable one." }
+    }
+  },
+  "products": {
+    "title": "Kaiteki Cosmeceuticals | Japanese-Inspired Skincare",
+    "description": "Japanese-inspired, dermatologist-formulated skincare for acne, ageing and dull skin. Medical-grade ingredients, MOH-approved. Suitable for all skin types.",
+    "crumb": "Products",
+    "eyebrow": "Kaiteki® Cosmeceuticals",
+    "h1": "Products",
+    "headerDescription": "Medical-grade skincare formulated to support your skin between clinic treatments. Our own range alongside the partner brands our doctors trust and recommend.",
+    "promoBadge": "Limited-time promotion",
+    "promoTitle": "Skincare Mix & Match: 5 products for RM699",
+    "promoBody": "Build a five-step routine from our Kaiteki® Cosmeceuticals range. Normally up to RM888.",
+    "promoTrigger": "View promotion",
+    "pricesNote": "Prices may change, confirm on WhatsApp.",
+    "askBody": "Not sure which products suit your skin? Message us on WhatsApp and a doctor’s team will help you choose the right products for your concern and skin type.",
+    "askButton": "Ask us on WhatsApp",
+    "explorer": {
+      "all": "All products",
+      "groups": { "Kaiteki® Cosmeceuticals": "Kaiteki® Cosmeceuticals", "Partner Brands": "Partner Brands" },
+      "intros": {
+        "Kaiteki® Cosmeceuticals": "Kaiteki Cosmeceuticals is our own skincare range, formulated with medical-grade ingredients for everyday use. Each product is designed to complement your treatment plan or work as a standalone daily routine.",
+        "Partner Brands": "These are the partner products our doctors recommend alongside clinic treatments. Each one is selected for clinical evidence and suitability for the concerns we treat."
+      }
+    },
+    "card": {
+      "alt": "{brand} {name} {category}, skincare at Kaiteki Skin Aesthetic Clinic",
+      "order": "Order Now",
+      "orderLabel": "Order {name} on WhatsApp",
+      "waOrder": "Hi Kaiteki, I'd like to order {name}.",
+      "readMore": "Read more",
+      "readLess": "Read less"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy | Kaiteki Skin Aesthetic Clinic",
+    "description": "How Kaiteki Skin Aesthetic Clinic collects, uses and protects your personal data in accordance with Malaysia's Personal Data Protection Act (PDPA).",
+    "crumb": "Privacy Policy",
+    "eyebrow": "PDPA notice",
+    "h1": "Privacy Policy",
+    "officialNote": ""
+  }
+}

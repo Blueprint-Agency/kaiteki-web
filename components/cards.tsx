@@ -294,13 +294,25 @@ export function DoctorCard({
   className = "",
   style,
   mediaClassName = "aspect-[2/3]",
-}: { d: Doctor; mediaClassName?: string } & Extra) {
+  href = `/doctors/${d.slug}`,
+  role = d.role,
+  alt,
+  viewProfile = "View profile",
+}: {
+  d: Doctor;
+  mediaClassName?: string;
+  /** Localized link, role, image alt and link label; English derives them from `d`. */
+  href?: string;
+  role?: string;
+  alt?: string;
+  viewProfile?: string;
+} & Extra) {
   return (
-    <Link href={`/doctors/${d.slug}`} style={style} className={`${cardBase} overflow-hidden ${className}`}>
+    <Link href={href} style={style} className={`${cardBase} overflow-hidden ${className}`}>
       <div className={`relative ${mediaClassName} overflow-hidden bg-tint`}>
         <Image
           src={d.photo}
-          alt={`${d.fullName}, ${d.credentials}, aesthetic doctor at Kaiteki Skin Aesthetic Clinic`}
+          alt={alt ?? `${d.fullName}, ${d.credentials}, aesthetic doctor at Kaiteki Skin Aesthetic Clinic`}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
@@ -310,13 +322,13 @@ export function DoctorCard({
         <h3 className="font-display text-xl font-medium text-espresso decoration-mocha/50 underline-offset-[5px] group-hover:underline">
           {d.fullName}
         </h3>
-        {d.role && <p className="mt-1 text-sm font-medium text-accent">{d.role}</p>}
+        {role && <p className="mt-1 text-sm font-medium text-accent">{role}</p>}
         <p className="ledger mt-3 border-t border-hairline pt-3 !text-ink-500">
           {d.credentials}
           {d.mmc ? ` · ${d.mmc}` : ""}
         </p>
         <span className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-medium text-accent">
-          View profile <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
+          {viewProfile} <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
         </span>
       </div>
     </Link>
@@ -350,12 +362,38 @@ export function ProductMotif({ slug, className = "" }: { slug: string; className
  *  ratings or units-sold — patient reviews of medical products are a YMYL /
  *  Malaysian-advertising risk (docs/02 §8). Price/CTA is pinned to the bottom so
  *  cards align regardless of copy length. */
-export function ProductCard({ p, className = "", style }: { p: Product } & Extra) {
-  const ingredientChips = p.ingredients?.slice(0, 2) ?? [];
+/** A product card's copy in a non-English locale (built by ProductsHub). The
+ *  product name, brand and price are never translated. */
+export type ProductCardCopy = {
+  category: string;
+  summary: string;
+  bestFor?: string;
+  ingredients?: string[];
+  highlights?: string[];
+  priceNote?: string;
+  alt: string;
+  order: string;
+  orderLabel: string;
+  waHref: string;
+  readMore: string;
+  readLess: string;
+};
+
+export function ProductCard({
+  p,
+  copy,
+  className = "",
+  style,
+}: { p: Product; copy?: ProductCardCopy } & Extra) {
+  const category = copy?.category ?? p.category;
+  const bestFor = copy ? copy.bestFor : p.bestFor;
+  const priceNote = copy ? copy.priceNote : p.priceNote;
+  const ingredientChips = (copy ? copy.ingredients : p.ingredients)?.slice(0, 2) ?? [];
+  const highlightList = copy ? copy.highlights : p.highlights;
   const highlights =
-    p.highlights && p.highlights.length > 0 ? (
+    highlightList && highlightList.length > 0 ? (
       <ul className="space-y-1.5">
-        {p.highlights.map((h) => (
+        {highlightList.map((h) => (
           <li key={h} className="flex gap-2 text-xs leading-relaxed text-ink-700">
             <span className="mt-1.5 size-1 shrink-0 rounded-full bg-mocha" />
             <span>{h}</span>
@@ -371,7 +409,7 @@ export function ProductCard({ p, className = "", style }: { p: Product } & Extra
         <div className="relative aspect-square overflow-hidden bg-tint">
           <Image
             src={p.image}
-            alt={`${p.brand} ${p.name} ${p.category.toLowerCase()}, skincare at Kaiteki Skin Aesthetic Clinic`}
+            alt={copy?.alt ?? `${p.brand} ${p.name} ${p.category.toLowerCase()}, skincare at Kaiteki Skin Aesthetic Clinic`}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -382,17 +420,17 @@ export function ProductCard({ p, className = "", style }: { p: Product } & Extra
       )}
       <div className="flex flex-1 flex-col p-5">
         <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-accent">
-          {p.category}
+          {category}
         </p>
         <h3 className="mt-1.5 line-clamp-2 font-semibold leading-snug text-espresso">{p.name}</h3>
 
-        {(p.bestFor || ingredientChips.length > 0) && (
+        {(bestFor || ingredientChips.length > 0) && (
           <ul className="mt-3 flex flex-wrap gap-1.5">
             {/* "Best for" — outline pill so "who it's for" reads apart from the
                 filled "what's in it" ingredient pills. */}
-            {p.bestFor && (
+            {bestFor && (
               <li className="rounded-full border border-mocha/40 px-2.5 py-1 text-xs font-medium text-mocha">
-                {p.bestFor}
+                {bestFor}
               </li>
             )}
             {ingredientChips.map((c) => (
@@ -407,23 +445,27 @@ export function ProductCard({ p, className = "", style }: { p: Product } & Extra
         )}
 
         <div className="mt-3">
-          <ExpandableText text={p.summary} extra={highlights} />
+          <ExpandableText
+            text={copy?.summary ?? p.summary}
+            extra={highlights}
+            {...(copy ? { labels: { more: copy.readMore, less: copy.readLess } } : {})}
+          />
         </div>
 
         <div className="mt-auto pt-5">
           <div className="flex items-baseline gap-2">
             <p className="text-lg font-bold text-espresso">RM{p.price}</p>
-            {p.priceNote && <p className="text-sm text-ink-500">{p.priceNote}</p>}
+            {priceNote && <p className="text-sm text-ink-500">{priceNote}</p>}
           </div>
           <a
-            href={waForProduct(p.name)}
+            href={copy?.waHref ?? waForProduct(p.name)}
             target="_blank"
             rel="noopener"
             data-ga-cta_position="product"
-            aria-label={`Order ${p.name} on WhatsApp`}
+            aria-label={copy?.orderLabel ?? `Order ${p.name} on WhatsApp`}
             className="mt-3 flex w-full items-center justify-center gap-2 rounded-full bg-cta px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-cta-hover"
           >
-            <WhatsApp size={16} /> Order Now
+            <WhatsApp size={16} /> {copy?.order ?? "Order Now"}
           </a>
         </div>
       </div>
