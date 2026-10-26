@@ -40,6 +40,12 @@ export type ConcernUi = {
   compareHeading: string;
   resultsPatients: string;
   resultsIllustrated: string;
+  /** Names whose photographs these are, where they are not the page's own. */
+  resultsFrom: string; // "{concerns}"
+  /** Treatment pages: no photo is filed by treatment, so none is credited to one. */
+  resultsMixed: string;
+  resultsHint: string; // "{n}"
+  close: string;
   technologyHeading: string;
   technologyIntro: string;
   risksHeading: string;
@@ -96,6 +102,10 @@ const en: ConcernUi = {
   compareHeading: "Which treatment suits which type?",
   resultsPatients: "Results from Kaiteki patients",
   resultsIllustrated: "How treatment works, illustrated",
+  resultsFrom: "Before and after photos of patients treated at Kaiteki for {concerns}.",
+  resultsMixed: "A plan may combine more than one treatment.",
+  resultsHint: "{n} photos · tap one to enlarge",
+  close: "Close",
   technologyHeading: "Technology used",
   technologyIntro:
     "Having more than one platform means the doctor can match the device to your skin type and to what is being treated, rather than fitting your skin to a single machine.",
@@ -194,6 +204,10 @@ const zh: ConcernUi = {
   compareHeading: "哪一种疗程适合哪一种类型？",
   resultsPatients: "Kaiteki 患者的疗程记录",
   resultsIllustrated: "图解：疗程如何进行",
+  resultsFrom: "以下是在 Kaiteki 接受{concerns}疗程的患者的前后对比照片。",
+  resultsMixed: "一个疗程方案可能结合多种疗法。",
+  resultsHint: "共 {n} 张照片 · 点按放大",
+  close: "关闭",
   technologyHeading: "使用的仪器",
   technologyIntro: "拥有不止一种仪器，医生就能按你的肤质和要处理的问题选择合适的仪器，而不是让你的皮肤去迁就单一机器。",
   risksHeading: "风险与注意事项",
@@ -291,6 +305,10 @@ const ms: ConcernUi = {
   compareHeading: "Rawatan mana sesuai untuk jenis mana?",
   resultsPatients: "Hasil pesakit Kaiteki",
   resultsIllustrated: "Bagaimana rawatan berfungsi, dalam ilustrasi",
+  resultsFrom: "Gambar sebelum dan selepas pesakit yang dirawat di Kaiteki untuk {concerns}.",
+  resultsMixed: "Satu pelan rawatan mungkin menggabungkan lebih daripada satu rawatan.",
+  resultsHint: "{n} gambar · ketik untuk besarkan",
+  close: "Tutup",
   technologyHeading: "Teknologi yang digunakan",
   technologyIntro:
     "Dengan lebih daripada satu platform, doktor boleh memadankan mesin dengan jenis kulit anda dan masalah yang dirawat, bukan memaksa kulit anda mengikut satu mesin sahaja.",

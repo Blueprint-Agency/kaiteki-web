@@ -5,8 +5,8 @@
   "name": "Tattoo Removal",
   "group": "Skin",
   "image": "https://cdn.kaiteki.my/concerns/tattoo-removal/card-2.jpg",
-  "summary": "Ink colour, depth and skin tone all affect how removal works. A doctor assesses your tattoo before estimating what to expect.",
-  "leadAnswer": "Tattoo removal is the gradual fading of tattoo ink using laser energy that breaks pigment into smaller particles the body may clear over time. Ink type, colour, depth and skin type all affect suitability and the number of sessions.",
+  "summary": "Ink colour, depth and skin tone all affect how removal works.",
+  "leadAnswer": "Tattoo removal is the gradual fading of tattoo ink using laser energy that breaks pigment into smaller particles the body may clear over time.",
   "treatments": [
     "pico-laser"
   ],
@@ -67,7 +67,7 @@
     {
       "heading": "What is laser tattoo removal?",
       "body": [
-        "Laser tattoo removal uses focused laser energy to break the ink held in the skin into fragments small enough for the body's own immune system to carry away. The laser does not remove ink directly; it makes the particles small enough for the body to clear over the weeks that follow. That is why the interval between sessions matters as much as the sessions themselves."
+        "Laser tattoo removal uses focused laser energy to break the ink held in the skin into fragments small enough for the body's own immune system to carry away. That is why the interval between sessions matters as much as the sessions themselves."
       ]
     }
   ],
@@ -77,7 +77,7 @@
     "items": [
       {
         "lead": "Ink colour:",
-        "body": "different pigments absorb different wavelengths. Black and dark blue absorb broadly and respond predictably. Greens, light blues, yellows and some reds need specific wavelengths and behave less consistently."
+        "body": "different pigments absorb different wavelengths."
       },
       {
         "lead": "How deep the ink sits:",
@@ -85,7 +85,7 @@
       },
       {
         "lead": "Size and density:",
-        "body": "a larger or heavily saturated piece simply contains more pigment. Solid black fill behaves differently from fine line work of the same dimensions."
+        "body": "a larger or heavily saturated piece simply contains more pigment."
       },
       {
         "lead": "Where it sits on the body:",
@@ -95,8 +95,7 @@
         "lead": "Age of the tattoo and your own health:",
         "body": "older tattoos have usually faded somewhat already. Smoking, poor circulation and anything that suppresses immune function slow the clearance the treatment depends on."
       }
-    ],
-    "outro": "Skin tone is assessed alongside all of this. Medium and deeper skin tones contain more melanin, which competes with the ink for laser energy, so settings are chosen more conservatively and sessions are spaced further apart."
+    ]
   },
   "variant": {
     "kind": "table",
@@ -132,19 +131,8 @@
         "White and flesh-tone pigment",
         "Can darken on contact with laser energy",
         "Tested on a small area first, because some formulations oxidise to grey or black"
-      ],
-      [
-        "Cosmetic and permanent makeup",
-        "Composition varies widely and is rarely known",
-        "Always patch-tested; brow and lip pigment are among the most unpredictable to treat"
-      ],
-      [
-        "Amateur or hand-poked",
-        "Shallower and less densely packed",
-        "Often responds sooner than professional work of the same size"
       ]
-    ],
-    "note": "A test patch on a small, discreet area is standard practice where colour behaviour is uncertain. It costs one appointment and prevents a surprise across the whole piece."
+    ]
   },
   "locationBlock": {
     "heading": "Where the tattoo sits",
@@ -152,11 +140,7 @@
     "cards": [
       {
         "title": "Upper arm, chest and back",
-        "body": "Strong circulation and good lymphatic drainage. These areas generally clear fragments more readily between appointments."
-      },
-      {
-        "title": "Forearm and lower leg",
-        "body": "Intermediate. Frequently exposed to sun as well, which matters both for the risk of pigment change and for how carefully the area has to be protected between sessions."
+        "body": "Strong circulation and good lymphatic drainage."
       },
       {
         "title": "Hands, fingers, ankles and feet",
@@ -178,24 +162,20 @@
     "triggers": [
       "The colours present, and whether the clinic's platform has a wavelength for each of them.",
       "Whether the tattoo is a cover-up, a rework, or has been treated elsewhere before.",
-      "Your skin tone, since it determines how conservative the settings need to be.",
-      "Any mole, changing mark or scar within or beside the tattoo, which is examined on its own terms.",
       "Your medical history, including anything affecting immune function, healing or photosensitivity."
-    ],
-    "outro": "A test patch often follows this visit, particularly with colours, cosmetic pigment or deeper skin tones."
+    ]
   },
   "ctaMid": {
     "heading": "Wondering if yours can be treated?",
     "body": "Send us a photo on WhatsApp and a doctor can tell you what to expect from an assessment."
   },
-  "treatmentsIntro": "Tattoo removal at our clinics is a single treatment carried out over a course of appointments. What varies is the wavelength used, the settings chosen for your skin, and how far apart the sessions are spaced.",
+  "treatmentsIntro": "Tattoo removal at our clinics is a single treatment carried out over a course of appointments.",
   "treatmentWhy": {
     "pico-laser": {
       "why": "For breaking ink into particles the body clears",
-      "body": "A picosecond laser delivers energy in pulses short enough to shatter pigment mechanically rather than by heating it, which reduces the heat delivered to surrounding skin. Several wavelengths are available so different ink colours can be targeted, and settings are chosen for your skin tone."
+      "body": "A picosecond laser delivers energy in pulses short enough to shatter pigment mechanically rather than by heating it, which reduces the heat delivered to surrounding skin."
     }
   },
-  "treatmentsNote": "The tattoo is reviewed at each visit, and the course continues, is adjusted or is stopped by agreement.",
   "results": [
     {
       "src": "https://cdn.kaiteki.my/concerns/tattoo-removal/before-after-01.jpg",
@@ -239,22 +219,21 @@
     "steps": [
       {
         "title": "History",
-        "body": "When and where the tattoo was done, whether it is a cover-up or has been treated before, your medical history, medication, and how your skin usually heals."
+        "body": "When the tattoo was done, whether it is a cover-up or has been treated before, and how your skin usually heals."
       },
       {
         "title": "Examination",
-        "body": "The doctor examines the tattoo directly: colours, density, depth, the state of the surrounding skin, and anything within it that needs assessing on its own terms."
+        "body": "Colours, density, depth and the surrounding skin."
       },
       {
         "title": "Discussion",
-        "body": "Which colours are likely to respond, how spacing works and why, aftercare, risks including pigment change and scarring, and what a realistic course looks like for a tattoo like yours."
+        "body": "Which colours are likely to respond, and how sessions are spaced."
       },
       {
         "title": "Test patch and plan",
         "body": "Where colour behaviour is uncertain, a small test area is treated first, then a sequence and a review point."
       }
-    ],
-    "outro": "Bring any information you have about the tattoo: who did it, when, and whether it covers earlier work. Photographs from when it was new are useful, since they show how much it has already faded."
+    ]
   },
   "visitImages": [
     {
@@ -276,11 +255,11 @@
     "items": [
       {
         "lead": "Common and expected",
-        "body": "Immediate whitening of the treated area, then redness, swelling, tenderness and often blistering or crusting over the following days. The area may weep briefly. Full aftercare instructions are given, and following them is the main thing that protects the outcome."
+        "body": "Immediate whitening of the treated area, then redness, swelling, tenderness and often blistering or crusting over the following days. The area may weep briefly."
       },
       {
         "lead": "Pigment change and Malaysian skin",
-        "body": "Medium and deeper skin tones carry a higher chance of hypopigmentation, where treated skin ends up lighter than the surrounding area, and of post-inflammatory hyperpigmentation. Both are why conservative settings and long intervals are used here."
+        "body": "Medium and deeper skin tones carry a higher chance of hypopigmentation, where treated skin ends up lighter than the surrounding area, and of post-inflammatory hyperpigmentation."
       },
       {
         "lead": "Scarring and ink darkening",
@@ -307,31 +286,23 @@
   "faqs": [
     {
       "q": "Can a tattoo be completely removed?",
-      "a": "Sometimes, but it cannot be promised for any tattoo before it has been treated. Black and dark blue generally clear most predictably, while yellow, pastel and some cosmetic pigments often persist after everything else has gone. A faint shadow or a subtle change in skin texture where the tattoo sat is a common end point."
+      "a": "Sometimes, but it cannot be promised for any tattoo before it has been treated. Black and dark blue generally clear most predictably, while yellow, pastel and some cosmetic pigments often persist after everything else has gone."
     },
     {
       "q": "How many sessions will it take?",
-      "a": "There is no fixed number. It depends on the colours, how deeply and densely the ink was placed, the size, where it sits on the body, your skin tone and how well you heal. The tattoo is reviewed at every visit and the plan is adjusted as it fades."
-    },
-    {
-      "q": "Why do sessions have to be spaced so far apart?",
-      "a": "Because the laser does not remove ink. It fragments it, and your own immune system carries the fragments away over the following weeks. The interval is when the actual clearing happens. Treating sooner adds heat and risk to skin that has not finished recovering, without giving the body time to do its part."
+      "a": "There is no fixed number. It depends on the colours, how deeply and densely the ink was placed, the size, where it sits on the body, your skin tone and how well you heal."
     },
     {
       "q": "Does it hurt?",
-      "a": "It is generally described as more uncomfortable than getting the tattoo, though it is over far more quickly. People often compare it to a hot elastic band snapping against the skin. Numbing cream is applied beforehand and cooling is used during and after. Bony areas such as the ribs, ankles and hands are felt more."
-    },
-    {
-      "q": "Will it leave a scar?",
-      "a": "Scarring is uncommon when treatment is spaced properly and aftercare is followed, but it is a real risk rather than a theoretical one. Picking at crusts or blisters is the most avoidable cause. Existing scarring from the original tattooing may also become more visible once the ink covering it is gone, which the doctor should point out at the assessment."
+      "a": "It is generally described as more uncomfortable than getting the tattoo, though it is over far more quickly. People often compare it to a hot elastic band snapping against the skin. Numbing cream is applied beforehand and cooling is used during and after."
     },
     {
       "q": "Is it safe on darker skin?",
-      "a": "Yes, with the right wavelength, conservative settings and longer intervals. The specific issue is that melanin in the skin competes with the ink for laser energy, which raises the chance of the treated area ending up lighter or darker than the surrounding skin. This is exactly what a test patch is for."
+      "a": "Yes, with the right wavelength, conservative settings and longer intervals. The specific issue is that melanin in the skin competes with the ink for laser energy, which raises the chance of the treated area ending up lighter or darker than the surrounding skin."
     },
     {
       "q": "Can eyebrow or lip tattoos be removed?",
-      "a": "They can be assessed, but they are among the least predictable pigments to treat. Cosmetic formulations vary widely, are rarely documented, and some contain compounds that darken on contact with laser energy rather than fading. A test patch on a small, discreet area is standard practice before treating anything on the face, and the assessment may conclude that treatment is not advisable."
+      "a": "They can be assessed, but they are among the least predictable pigments to treat. A test patch on a small, discreet area is standard practice before treating anything on the face, and the assessment may conclude that treatment is not advisable."
     },
     {
       "q": "What do I need to do afterwards?",

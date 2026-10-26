@@ -5,8 +5,8 @@
   "name": "Hair Loss",
   "group": "Hair & Body",
   "image": "https://cdn.kaiteki.my/concerns/hair-loss/card.jpg",
-  "summary": "Thinning, receding and patchy hair loss each have different causes. A doctor evaluates your pattern before recommending whether treatment can help.",
-  "leadAnswer": "Some daily shedding is normal. Hair loss is a change from your usual pattern: gradual hereditary thinning, sudden shedding after illness, childbirth or stress, patchy loss, or loss caused by a scalp or medical condition such as thyroid disease or low iron. The cause decides the plan, and hair loss is managed medically first.",
+  "summary": "Thinning, receding and patchy hair loss each have different causes.",
+  "leadAnswer": "Hair loss is a change from your usual pattern: gradual hereditary thinning, sudden shedding after illness, childbirth or stress, patchy loss, or loss caused by a scalp or medical condition such as thyroid disease or low iron.",
   "treatments": [
     "exosome-therapy"
   ],
@@ -67,7 +67,7 @@
     {
       "heading": "What counts as hair loss?",
       "body": [
-        "Each follicle moves through a repeating cycle: an active growing phase lasting years, a short transitional phase, and a resting phase after which the hair sheds and the follicle can begin again. Hairs across the scalp sit at different points of this cycle at any moment, which is why finding hair on a pillow or in a drain is usually normal. Hair loss becomes a concern when the balance shifts, and the reason it has shifted matters more than the shedding itself."
+        "Each follicle moves through a repeating cycle: an active growing phase lasting years, a short transitional phase, and a resting phase after which the hair sheds and the follicle can begin again. Hair loss becomes a concern when the balance shifts, and the reason it has shifted matters more than the shedding itself."
       ]
     }
   ],
@@ -77,7 +77,7 @@
     "items": [
       {
         "lead": "Genetics and family history:",
-        "body": "hereditary pattern loss is by a wide margin the most common cause in both men and women. Follicles gradually produce finer, shorter hairs until they stop, which is why it shows as thinning before it shows as a bare patch."
+        "body": "hereditary pattern loss is by a wide margin the most common cause in both men and women."
       },
       {
         "lead": "Hormonal change:",
@@ -89,7 +89,7 @@
       },
       {
         "lead": "Scalp conditions:",
-        "body": "fungal infection, seborrhoeic dermatitis and psoriasis inflame the scalp and disrupt the follicles in it. These are treated as scalp problems first, because the hair rarely improves while the scalp is inflamed."
+        "body": "fungal infection, seborrhoeic dermatitis and psoriasis inflame the scalp and disrupt the follicles in it."
       },
       {
         "lead": "Underlying medical conditions:",
@@ -103,13 +103,12 @@
         "lead": "Traction and styling:",
         "body": "consistently tight braids, ponytails or extensions pull on the follicle over years. Caught early this is reversible; left long enough, the follicle scars and it is not."
       }
-    ],
-    "outro": "Hereditary thinning uncovered by a stressful year is a more common story than either cause alone."
+    ]
   },
   "variant": {
     "kind": "tabs",
     "heading": "Which kind is it?",
-    "intro": "The most useful thing an assessment does here is separate hair loss that is the condition from hair loss that is a symptom of something else. The second needs investigating rather than treating.",
+    "intro": "The most useful thing an assessment does here is separate hair loss that is the condition from hair loss that is a symptom of something else.",
     "tabs": [
       {
         "label": "Pattern loss",
@@ -129,27 +128,16 @@
         "sub": "Sudden, patchy or with symptoms",
         "title": "Hair loss as a symptom",
         "body": "Loss that came on suddenly, appears in discrete patches, follows an illness or a hormonal event, or comes with an itchy, scaly, sore or scarred scalp. Here the hair is a signal.",
-        "items": [
-          {
-            "lead": "The tell:",
-            "body": "a clear change over weeks rather than years, distinct bald patches, or scalp symptoms alongside the loss."
-          }
-        ],
         "routing": "assessed with examination and, where indicated, blood tests, before any cosmetic treatment is discussed."
       }
     ]
   },
   "locationBlock": {
     "heading": "Pattern on the scalp",
-    "intro": "Where hair is thinning is one of the most informative things a doctor looks at.",
     "cards": [
       {
         "title": "Temples and receding hairline",
         "body": "A hairline moving back at the corners is the classic early male pattern. In women a receding frontal hairline is less typical and is worth assessing, as it points toward other causes."
-      },
-      {
-        "title": "Crown and vertex",
-        "body": "Thinning at the back of the crown often goes unnoticed until someone else mentions it or it appears in a photograph."
       },
       {
         "title": "Widening central parting",
@@ -174,12 +162,9 @@
     "intro": "Some shedding is normal, so the question is what makes it worth an appointment. Any of these is a reason:",
     "triggers": [
       "Hair loss came on suddenly, or shedding increased noticeably over a few weeks.",
-      "It is appearing in discrete patches rather than thinning evenly.",
-      "The scalp is itchy, sore, scaly, red, or smooth and shiny where hair has gone.",
       "It followed childbirth, illness, surgery, rapid weight loss or a change in medication.",
       "You are also noticing fatigue, weight change, or changes to your nails or skin."
-    ],
-    "outro": "Timing matters more here than in most concerns: scarring conditions cause permanent loss if left."
+    ]
   },
   "ctaMid": {
     "heading": "Not sure what kind of hair loss you have?",
@@ -192,7 +177,6 @@
       "body": "A regenerative preparation applied to the scalp to support the follicular environment. The evidence base is still developing, and it is offered as an adjunct to medical management rather than as a treatment for hair loss in its own right."
     }
   },
-  "treatmentsNote": "Where the assessment finds a scalp condition, a deficiency or a medical cause, that is treated first. Prescription options are discussed individually, not advertised.",
   "results": [
     {
       "src": "https://cdn.kaiteki.my/concerns/hair-loss/before-after-01.jpg",
@@ -230,22 +214,21 @@
     "steps": [
       {
         "title": "History",
-        "body": "When it started and how quickly, family history, any recent illness, childbirth, weight change or new medication, your diet, and how you style and treat your hair."
+        "body": "When it started, family history, recent illness, childbirth or new medication, and how you style your hair."
       },
       {
         "title": "Examination",
-        "body": "The doctor examines the scalp itself as well as the hair, sometimes under magnification, looking at the pattern, the calibre of the hairs and the condition of the skin beneath them."
+        "body": "The pattern, the calibre of the hairs and the scalp beneath, sometimes under magnification."
       },
       {
         "title": "Investigation where indicated",
-        "body": "Blood tests are often appropriate, particularly with diffuse or sudden loss, because thyroid function and iron are common and treatable contributors that no topical treatment addresses."
+        "body": "Blood tests for thyroid function and iron, particularly with diffuse or sudden loss."
       },
       {
         "title": "Discussion and plan",
-        "body": "What the likely cause is, what medical management would involve, where in-clinic treatment fits, and what is realistic."
+        "body": "The likely cause, and where in-clinic treatment fits alongside medical management."
       }
-    ],
-    "outro": "Bring photographs of your hair from one, three and five years ago if you have them."
+    ]
   },
   "figures": [
     {
@@ -284,7 +267,7 @@
       },
       {
         "lead": "The evidence base is still developing",
-        "body": "Regenerative treatments for hair are an active area of research rather than settled practice. That is not a reason to avoid them, but it is a reason to be told honestly where the evidence stands before paying for a course."
+        "body": "Regenerative treatments for hair are an active area of research rather than settled practice."
       },
       {
         "lead": "Treating the wrong thing",
@@ -303,30 +286,21 @@
       "Whether investigation such as blood testing is needed before anything is planned.",
       "The area being treated, since a receding hairline and a diffusely thinning scalp are different in scale.",
       "How many sessions, which is set after assessment and reviewed as the scalp responds.",
-      "Whether ongoing medical management forms part of the plan alongside in-clinic treatment.",
-      "How long the plan runs, because hair changes are judged over many months rather than weeks."
+      "Whether ongoing medical management forms part of the plan alongside in-clinic treatment."
     ]
   },
   "faqs": [
     {
       "q": "How much hair loss is normal?",
-      "a": "Finding hair on your pillow, in the shower or on a brush is a normal part of the growth cycle, and most people shed a noticeable amount every day without their hair thinning at all. What matters is change: more shedding than is usual for you, sustained over weeks, or a parting or hairline that looks different from photographs a year or two ago."
+      "a": "What matters is change: more shedding than is usual for you, sustained over weeks, or a parting or hairline that looks different from photographs a year or two ago."
     },
     {
       "q": "Is hair loss treatable?",
-      "a": "It depends entirely on the cause. Loss driven by a thyroid disorder, iron deficiency, a scalp infection or a stressful event often improves once that cause is addressed. Hereditary pattern loss is managed long-term rather than cured. Scarring conditions cause permanent loss, and there the goal is to stop further damage rather than to recover what has gone."
-    },
-    {
-      "q": "Why is timing so important?",
-      "a": "Because follicles change over time. A follicle still producing fine, short hair can often be supported; one that has been dormant for years, or that has scarred, cannot be brought back by any treatment. Scarring conditions in particular do permanent damage while they are active. This is the one cosmetic concern where waiting to see what happens genuinely costs you options."
-    },
-    {
-      "q": "Do I need blood tests?",
-      "a": "Often, particularly where the loss is diffuse, sudden or accompanied by other symptoms. Thyroid function and iron status are common, treatable contributors that no shampoo or in-clinic treatment addresses, and finding one changes the plan entirely."
+      "a": "It depends entirely on the cause. Loss driven by a thyroid disorder, iron deficiency, a scalp infection or a stressful event often improves once that cause is addressed. Hereditary pattern loss is managed long-term rather than cured."
     },
     {
       "q": "Is hair loss after childbirth permanent?",
-      "a": "Usually not. A large increase in shedding a few months after giving birth is a well-recognised pattern caused by many follicles entering the resting phase together as hormone levels change, and for most people it settles over the following months without treatment. It is still worth an assessment if it is prolonged or severe, since iron and thyroid changes are also common in the same period."
+      "a": "Usually not. A large increase in shedding a few months after giving birth is a well-recognised pattern caused by many follicles entering the resting phase together as hormone levels change, and for most people it settles over the following months without treatment."
     },
     {
       "q": "Do supplements help?",
@@ -334,11 +308,11 @@
     },
     {
       "q": "Does stress cause hair loss?",
-      "a": "It can, through a mechanism where a physical or emotional shock pushes many follicles into the resting phase at once. The shedding typically appears two to three months after the event, which is long enough afterwards that people often do not connect the two. It usually recovers once the trigger has passed, though it can also unmask hereditary thinning that was already underway."
+      "a": "It can, through a mechanism where a physical or emotional shock pushes many follicles into the resting phase at once. The shedding typically appears two to three months after the event, which is long enough afterwards that people often do not connect the two."
     },
     {
       "q": "Can women have hair loss too?",
-      "a": "Yes, and it is far more common than the way it is usually discussed suggests. The pattern differs: women more often notice a widening central parting with the front hairline preserved, rather than a receding hairline. Hormonal events, iron status and thyroid function are all frequent contributors and are routinely checked."
+      "a": "Yes, and it is far more common than the way it is usually discussed suggests. Hormonal events, iron status and thyroid function are all frequent contributors and are routinely checked."
     }
   ],
   "relatedConcerns": [

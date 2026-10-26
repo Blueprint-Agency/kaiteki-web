@@ -370,6 +370,10 @@ Two fields are **new to `Treatment`**: `steps` (above) and the `manufacturerImag
 
 ### No results gallery, and no compliance reversal
 
+> **Superseded 2026-10-26** by ADR-0001 §6: treatment pages now show the before/after set
+> of the concerns they are listed for, under the lead answer, without crediting any image to
+> the treatment. The paragraph below is the original position, kept for the record.
+
 `4. before after` is keyed by **concern**, not treatment. Neither source folder in this
 audit contains a single results image. **ADR-0001 does not extend to `/treatments`** and
 this spec creates no new before/after exposure. If results are ever re-cut by treatment,
@@ -474,8 +478,8 @@ verified by regenerating `docs/13` §3 and diffing against the committed table.
 - **The block order.** Media is added into the existing spine; no section moves.
 - **The four HOLD and one EXCLUDE treatments.** No media fields, no placeholders, no
   layout change.
-- **Any before/after or results gallery on treatments.** No source media exists; ADR-0001
-  does not extend here.
+- ~~**Any before/after or results gallery on treatments.** No source media exists; ADR-0001
+  does not extend here.~~ Superseded by ADR-0001 §6 (2026-10-26).
 - **Banner commissioning** for the 16 treatments without one.
 - **The `/technology` pages** (36 of them) and their 1440×900 composites. Untouched.
 - **The six device photos and three injectables with no `/technology` entry**

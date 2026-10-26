@@ -19,7 +19,7 @@
     }
   ],
   "summary": "Radiofrequency energy used to support skin-firmness and texture concerns.",
-  "leadAnswer": "Radiofrequency (RF) treatments use controlled energy, delivered from the skin surface with no needles, to warm the deeper layers of the skin. They may support firmness and texture concerns over a course of sessions. Kaiteki runs four RF platforms, and a doctor examines your skin before choosing one.",
+  "leadAnswer": "Radiofrequency (RF) treatments use controlled energy, delivered from the skin surface with no needles, to warm the deeper layers of the skin. Kaiteki runs four RF platforms, and a doctor examines your skin before choosing one.",
   "related": [
     "microneedling",
     "hifu"
@@ -46,7 +46,7 @@
   "routes": [
     {
       "title": "Skin firmness across the lower face",
-      "body": "Heats the dermis to prompt collagen change across a broader area than a focused device. Considered where general firmness rather than a single line is the concern.",
+      "body": "Heats the dermis to prompt collagen change across a broader area than a focused device.",
       "links": [
         {
           "href": "/concerns/face-contouring",
@@ -93,7 +93,7 @@
       {
         "eyebrow": "Multifrequency monopolar · cryogen cooling",
         "title": "XERF",
-        "body": "Combines 6.78 MHz and 2 MHz so energy can be biased towards shallower or deeper tissue, with integrated cryogen cooling, and works entirely from the skin surface with no needles.",
+        "body": "Combines 6.78 MHz and 2 MHz so energy can be biased towards shallower or deeper tissue, with integrated cryogen cooling.",
         "href": "/technology/xerf",
         "hrefLabel": "About XERF"
       }
@@ -125,11 +125,10 @@
       "body": "reviewed before treatment."
     }
   ],
-  "bringToConsult": "Tell the doctor what you are already using on your skin as well as what you take: retinoids and recent peels change what the skin will tolerate on the day.",
   "sessionSteps": [
     {
       "title": "Consultation and assessment",
-      "body": "Your first visit is a consultation, not a treatment. The doctor assesses your skin's thickness and laxity, which decide the device and settings."
+      "body": "The doctor assesses your skin's thickness and laxity, which decide the device and settings."
     },
     {
       "title": "The treatment",
@@ -141,7 +140,7 @@
     }
   ],
   "afterSession": {
-    "intro": "Downtime is usually minimal: there is no wound, because the energy works beneath the surface.",
+    "intro": "",
     "bands": [
       {
         "title": "Straight afterwards",
@@ -150,22 +149,17 @@
       {
         "title": "The same day",
         "body": "Most people return to normal activities, and makeup can generally be worn straight after a facial session."
-      },
-      {
-        "title": "Over the following months",
-        "body": "Collagen turnover is slow, so any change develops gradually over weeks to months, and a plan here is written in months rather than weeks."
       }
     ],
     "aftercare": "Gentle skincare and daily sun protection afterwards."
   },
   "risks": {
-    "intro": "Risks are explained before anything is booked.",
+    "intro": "",
     "common": "Redness, warmth or mild swelling that usually settles.",
-    "lessCommon": "Burns and lasting pigment change. Both trace back to energy settings, which is why a doctor sets them for your skin.",
-    "pigmentNote": "RF heats tissue rather than targeting pigment, so it does not rely on colour contrast and is used across a wide range of skin tones, including Asian skin. Over-heating can still cause pigment change, which is why settings matter.",
+    "lessCommon": "Burns and lasting pigment change.",
+    "pigmentNote": "RF heats tissue rather than targeting pigment, so it does not rely on colour contrast and is used across a wide range of skin tones, including Asian skin.",
     "cannotDo": [
       "It is not a substitute for surgery where there is significant excess skin.",
-      "Marked sagging may be better served by other approaches your doctor can discuss.",
       "It does not change the skin on the day; any change depends on slow tissue remodelling."
     ],
     "disclose": "Tell your doctor about anything on the avoid list above, including implanted devices anywhere near the treatment area."
@@ -176,7 +170,7 @@
       "Your skin condition.",
       "The area treated. Face-only plans differ from face-and-neck or body plans.",
       "The number of sessions in the course.",
-      "Any maintenance sessions, often every 6 to 12 months."
+      "Any maintenance sessions."
     ]
   },
   "relatedReasons": {
@@ -187,14 +181,13 @@
     {
       "heading": "What is radiofrequency (RF) treatment?",
       "body": [
-        "Radiofrequency (RF) treatment is a non-surgical approach that uses controlled energy to warm the deeper layers of the skin, rather than acting on the surface as skincare does. At Kaiteki it is used chiefly for skin-firmness, laxity and contour concerns, without surgery, needles or injections."
+        "Radiofrequency (RF) treatment is a non-surgical approach that uses controlled energy to warm the deeper layers of the skin, rather than acting on the surface as skincare does."
       ]
     },
     {
       "heading": "How does radiofrequency warm the skin without needles?",
       "body": [
-        "RF devices deliver controlled thermal energy into the dermis, gently heating the tissue. This warming is intended to act on existing collagen fibres and to prompt the skin's own gradual collagen-renewal response over time.",
-        "A contact-cooling step is used during treatment to help keep each session comfortable."
+        "RF devices deliver controlled thermal energy into the dermis, gently heating the tissue. This warming is intended to act on existing collagen fibres and to prompt the skin's own gradual collagen-renewal response over time."
       ]
     }
   ],
@@ -209,11 +202,11 @@
     },
     {
       "q": "How many radiofrequency sessions will I need?",
-      "a": "A course of about 2 to 3 sessions, spaced 4 to 6 weeks apart, is common, sometimes followed by maintenance every 6 to 12 months."
+      "a": "A course of about 2 to 3 sessions is common, sometimes followed by maintenance every 6 to 12 months."
     },
     {
       "q": "When will I see results?",
-      "a": "Not on the day. RF works by warming tissue and letting it remodel, so any change develops gradually over weeks to months and varies between people."
+      "a": "Any change develops gradually over weeks to months and varies between people."
     }
   ]
 }

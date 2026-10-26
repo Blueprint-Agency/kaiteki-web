@@ -3,14 +3,14 @@
   "name": "Melasma",
   "group": "Skin",
   "image": "https://cdn.kaiteki.my/concerns/melasma/card.jpg",
-  "summary": "Melasma is managed rather than cured, and the wrong laser can darken it. A doctor confirms it is melasma, and how deep it sits, before anything is used.",
-  "leadAnswer": "Laser can make melasma worse if the wrong device or settings are used: high-heat lasers create inflammation, and inflammation tells pigment cells to darken. Melasma is a chronic pigmentation condition causing symmetrical brown or grey patches, driven by UV, hormones and genetics. It is managed rather than cured, and daily sun protection is the foundation.",
+  "summary": "Melasma is managed rather than cured, and the wrong laser can darken it.",
+  "leadAnswer": "Laser can make melasma worse if the wrong device or settings are used: high-heat lasers create inflammation, and inflammation tells pigment cells to darken. Melasma is a chronic pigmentation condition causing symmetrical brown or grey patches, driven by UV, hormones and genetics.",
   "treatments": [
     "pico-laser",
     "microneedling",
     "facial-treatments"
   ],
-  "reviewedBy": "dr-joaan-kong",
+  "reviewedBy": "dr-chew-yuhhui",
   "lastReviewed": "2026-10-11",
   "seoTitle": "Melasma Treatment in Malaysia | Kaiteki",
   "seoDescription": "Melasma is managed, not cured, and the wrong laser can darken it. A doctor assesses its type and depth first. Book a free consultation at Kaiteki.",
@@ -37,7 +37,7 @@
     {
       "heading": "What is melasma?",
       "body": [
-        "Melasma is a chronic pigmentation disorder in which melanocytes, the pigment-producing cells in the skin, go into overdrive and produce excess melanin. The result is dark brown, light brown or grey patches on the face. The patches are flat and painless, and they usually appear symmetrically on both sides, which is why melasma in pregnancy is sometimes called the \"mask of pregnancy\".",
+        "Melasma is a chronic pigmentation disorder in which melanocytes, the pigment-producing cells in the skin, go into overdrive and produce excess melanin. The result is dark brown, light brown or grey patches on the face.",
         "It is not harmful or contagious, but it rarely clears on its own. It is far more common in women, and in medium to deep skin tones."
       ]
     }
@@ -48,7 +48,7 @@
     "items": [
       {
         "lead": "UV radiation:",
-        "body": "the primary trigger. Malaysia's equatorial position means intense UV exposure all year, so even brief unprotected time outdoors can darken existing patches or set off new ones."
+        "body": "the primary trigger. Malaysia's equatorial position means intense UV exposure all year."
       },
       {
         "lead": "Hormonal change:",
@@ -62,8 +62,7 @@
         "lead": "Heat and visible light:",
         "body": "infrared heat from cooking, saunas or direct sun warmth, and blue light from screens, can stimulate pigment pathways without classic UV exposure."
       }
-    ],
-    "outro": "Irritation matters too. Inflammation makes melasma worse, which is why aggressive skincare routines usually backfire."
+    ]
   },
   "variant": {
     "kind": "tabs",
@@ -99,7 +98,6 @@
   },
   "locationBlock": {
     "heading": "Where melasma appears",
-    "intro": "Melasma usually appears in a mirror-image pattern on both sides of the face.",
     "cards": [
       {
         "title": "Cheekbones",
@@ -107,7 +105,7 @@
       },
       {
         "title": "Upper lip, forehead, nose and chin",
-        "body": "The centre of the face. A symmetrical shadow above the lip is a common melasma pattern, and one that is often mistaken for facial hair or a shaving mark."
+        "body": "A symmetrical shadow above the lip is a common melasma pattern, and one that is often mistaken for facial hair or a shaving mark."
       },
       {
         "title": "Jawline",
@@ -123,9 +121,7 @@
     "intro": "Have it assessed if:",
     "triggers": [
       "A consistent home routine with daily sunscreen has not moved things far enough after 8 to 12 weeks.",
-      "You are unsure whether you are looking at melasma or sun damage, and the products you are using are aimed at one of them.",
-      "You have brown patches and persistent flushing on the same face.",
-      "You are considering a laser or other device, which should only follow an assessment of the depth and type of your melasma."
+      "You are considering a laser or other device."
     ]
   },
   "ctaMid": {
@@ -136,24 +132,23 @@
   "treatmentWhy": {
     "pico-laser": {
       "why": "For melasma at low energy, as part of a course",
-      "body": "Delivers ultra-short pulses that work largely through photoacoustic pressure rather than heat. That matters in melasma, because high-heat devices can provoke inflammation and a rebound. Planned as a course at low energy settings, and used far more cautiously than on sun spots."
+      "body": "Delivers ultra-short pulses that work largely through photoacoustic pressure rather than heat."
     },
     "microneedling": {
       "why": "For melasma, using a pulsed-wave mode",
-      "body": "Sylfirm X has a pulsed wave mode that the manufacturer developed with pigment and vascular concerns in mind. Melasma is still chronic and relapsing, so it is combined with topical care and strict sun protection rather than treated as a one-off procedure."
+      "body": "Sylfirm X has a pulsed wave mode that the manufacturer developed with pigment and vascular concerns in mind."
     },
     "facial-treatments": {
       "why": "For surface turnover without heat",
-      "body": "Hydrafacial and Silkpeel exfoliate gently without heat. Used between other treatments as maintenance."
+      "body": "Hydrafacial and Silkpeel exfoliate gently without heat."
     }
   },
-  "treatmentsNote": "With epidermal melasma, a topical routine and sun protection often come before any device.",
   "firstVisit": {
     "intro": "The examination confirms it is melasma, not sun spots or marks, and estimates its depth.",
     "steps": [
       {
         "title": "History",
-        "body": "When the patches appeared, whether they changed with pregnancy, contraception or sun exposure, your skincare, and any medication you take."
+        "body": "When the patches appeared, and whether they changed with pregnancy, contraception or sun exposure."
       },
       {
         "title": "Examination",
@@ -161,10 +156,9 @@
       },
       {
         "title": "Discussion and plan",
-        "body": "Options, risks and downtime for your type of melasma, and what is realistic, with no obligation to proceed."
+        "body": "Options, risks and downtime, with no obligation to proceed."
       }
-    ],
-    "outro": "Bring a list of everything you apply to your skin, including any brightening or prescription products, and tell the doctor if you are pregnant, breastfeeding or planning to be."
+    ]
   },
   "visitImages": [
     {
@@ -188,7 +182,7 @@
       },
       {
         "lead": "What treatment cannot do",
-        "body": "No treatment changes the tendency to produce pigment. Melasma is managed rather than cured and commonly returns with sun, heat or hormonal change. How much a given person improves varies, and nobody can promise a specific result in advance."
+        "body": "No treatment changes the tendency to produce pigment. How much a given person improves varies, and nobody can promise a specific result in advance."
       }
     ],
     "disclose": "Tell your doctor if you are pregnant or breastfeeding, take hormonal contraception or hormone therapy, have a history of clotting problems, take any medication, or have had recent sun exposure or a skin procedure."
@@ -200,10 +194,8 @@
       "Whether a device is part of the plan at all, or topical care and sun protection come first.",
       "The number of sessions in a device course, and any maintenance.",
       "Whether treatments are combined."
-    ],
-    "outro": "Melasma is planned as ongoing management rather than a fixed course."
+    ]
   },
-  "technologyIntro": "With melasma, the device and settings matter more than with almost any other concern, because heat can make it darker.",
   "faqs": [
     {
       "q": "Is melasma curable?",
@@ -211,15 +203,15 @@
     },
     {
       "q": "Can laser make melasma worse?",
-      "a": "Yes, if the wrong device or the wrong settings are used. High-heat lasers create inflammation, and inflammation tells pigment cells to rebound and darken. This is why melasma is treated with low-energy, photoacoustic settings and conservative spacing."
+      "a": "Yes, if the wrong device or the wrong settings are used. This is why melasma is treated with low-energy, photoacoustic settings and conservative spacing."
     },
     {
       "q": "What is the difference between melasma and sun spots?",
-      "a": "Sun spots are discrete, sharp-edged brown spots that build up over years on the most sun-exposed skin. Melasma forms larger, symmetrical, soft-edged patches across both cheeks, the upper lip or forehead, and it shifts with hormones and heat. Laser settings that suit sun spots can darken melasma."
+      "a": "Sun spots are discrete, sharp-edged brown spots that build up over years on the most sun-exposed skin. Melasma forms larger, symmetrical, soft-edged patches across both cheeks, the upper lip or forehead, and it shifts with hormones and heat."
     },
     {
       "q": "Does pregnancy melasma go away after childbirth?",
-      "a": "Often it lightens over the months after delivery, as hormones settle. Residual patches frequently remain, particularly in a high UV country like Malaysia. Gentle topical care, once you are no longer pregnant or breastfeeding and your doctor has cleared it, can help clear what is left."
+      "a": "Often it lightens over the months after delivery, as hormones settle. Residual patches frequently remain, particularly in a high UV country like Malaysia."
     },
     {
       "q": "Can I have melasma treatment while pregnant or breastfeeding?",
@@ -227,15 +219,7 @@
     },
     {
       "q": "Can Sylfirm X be used for melasma on Asian skin?",
-      "a": "Melasma is one of the concerns the manufacturer positions the pulsed wave mode for, and radiofrequency energy is not melanin-targeted, so RF microneedling is used across deeper skin tones. Melasma is still a chronic, relapsing condition that needs ongoing topical care and sun protection rather than a single procedure."
-    },
-    {
-      "q": "Why does melasma come back after treatment?",
-      "a": "Treatment lightens existing pigment; it does not change the pigment cells' tendency to reactivate with UV, heat, hormones or irritation. That is why daily sunscreen and periodic maintenance are part of the plan, and why stopping sunscreen is the most common reason patches return."
-    },
-    {
-      "q": "Can facial redness be a sign of melasma?",
-      "a": "No. Melasma causes brown or grey discolouration, not redness. The two can appear together on the same face, though. If you have dark patches and persistent flushing, get it assessed so the plan addresses both rather than treating one and aggravating the other."
+      "a": "Melasma is one of the concerns the manufacturer positions the pulsed wave mode for, and radiofrequency energy is not melanin-targeted, so RF microneedling is used across deeper skin tones."
     }
   ],
   "relatedConcerns": [

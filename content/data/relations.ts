@@ -19,6 +19,49 @@ export function treatmentsOfConcern(concernSlug: string): Treatment[] {
     .filter((t): t is Treatment => Boolean(t));
 }
 
+type Result = NonNullable<Concern["results"]>[number];
+
+/** Patient photographs only: an illustration is never borrowed onto another page. */
+const photos = (c: Concern | undefined) => (c?.results ?? []).filter((r) => !r.illustration);
+
+/**
+ * The before/after set a concern page shows: its own, else the first related
+ * concern that has photographs. `from` names that concern, so the page can say
+ * whose results they are rather than passing them off as its own. `pick`
+ * returns the record to read captions from (a locale overlay, on a locale page).
+ */
+export function resultsOfConcern(
+  c: Concern,
+  pick: (c: Concern) => Concern = (x) => x,
+): { items: Result[]; from?: Concern } {
+  if (c.results?.length) return { items: c.results };
+  for (const r of c.relatedConcerns ?? []) {
+    const target = concerns.find((x) => x.slug === r.slug);
+    if (photos(target).length) return { items: photos(pick(target!)), from: target };
+  }
+  return { items: [] };
+}
+
+/**
+ * The before/after set a treatment page shows. No result is filed by treatment
+ * (docs/13 §3.3), so these are the photographs of the concerns the treatment is
+ * listed for, dealt round-robin so the first screen shows each concern once,
+ * and `from` lists those concerns for the page to name.
+ */
+export function resultsOfTreatment(
+  treatmentSlug: string,
+  pick: (c: Concern) => Concern = (x) => x,
+  max = 10,
+): { items: Result[]; from: Concern[] } {
+  const from = concernsOfTreatment(treatmentSlug).filter((c) => photos(c).length);
+  const sets = from.map((c) => photos(pick(c)));
+  const items: Result[] = [];
+  for (let i = 0; items.length < max && sets.some((s) => i < s.length); i++) {
+    for (const s of sets) if (i < s.length && items.length < max) items.push(s[i]);
+  }
+  return { items, from };
+}
+
 /** Technology (devices/injectables) that power a given treatment. */
 export function technologyOfTreatment(treatmentSlug: string): Technology[] {
   return technology.filter((x) => x.treatments.includes(treatmentSlug));

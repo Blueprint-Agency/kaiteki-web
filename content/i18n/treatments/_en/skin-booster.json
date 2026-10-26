@@ -7,11 +7,11 @@
   "device": "Profhilo",
   "typicalSessions": "A short course, then maintenance",
   "summary": "Injectable hydrating treatments used to support skin quality and hydration.",
-  "leadAnswer": "Skin boosters are injectable treatments that deliver hydrating ingredients into the skin to support skin quality and hydration over a course of sessions. Which product suits your skin, and whether an injectable is the right route for what is bothering you, is decided by a doctor at consultation.",
+  "leadAnswer": "Skin boosters are injectable treatments that deliver hydrating ingredients into the skin. Which product suits your skin, and whether an injectable is the right route for what is bothering you, is decided by a doctor at consultation.",
   "routes": [
     {
       "title": "Dull, dry or dehydrated-looking skin",
-      "body": "Hydration and overall skin quality, and fine lines associated with dryness. Profhilo and Hydrodeluxe are the hyaluronic acid products in the range, built for hydration.",
+      "body": "Hydration and overall skin quality, and fine lines associated with dryness.",
       "links": [
         {
           "href": "/concerns/aging",
@@ -48,15 +48,14 @@
       ]
     }
   ],
-  "routesNote": "If what you want is a change in contour, a skin booster is the wrong category, and dermal fillers are the relevant page.",
   "variantModule": {
     "heading": "Which skin booster, and what is in it",
-    "intro": "Skin booster is an umbrella term, and the products under it are not interchangeable. They differ in their active ingredient, and the ingredient decides which skin a doctor considers them for.",
+    "intro": "Skin booster is an umbrella term, and the products under it are not interchangeable. They differ in their active ingredient.",
     "items": [
       {
         "eyebrow": "Salmon polynucleotide · Pharma Research, Korea",
         "title": "Rejuran",
-        "body": "Used to support the skin barrier and skin healing, and often considered for sensitive, acne-prone or damaged skin. Because it is salmon-derived, any fish or seafood allergy must be declared.",
+        "body": "Used to support the skin barrier and skin healing, and often considered for sensitive, acne-prone or damaged skin.",
         "href": "/technology/rejuran",
         "hrefLabel": "About Rejuran"
       },
@@ -84,12 +83,11 @@
       {
         "eyebrow": "PDLLA + HA · VAIM, South Korea",
         "title": "Juvelook",
-        "body": "A collagen-stimulating booster used for pores, texture and fine lines, where any change builds over months rather than days.",
+        "body": "A collagen-stimulating booster used for pores, texture and fine lines.",
         "href": "/technology/juvelook",
         "hrefLabel": "About Juvelook"
       }
-    ],
-    "note": "A doctor may start with a hydrating or polynucleotide booster before a collagen-stimulating one, or decide a skin booster is not the right category at all."
+    ]
   },
   "avoidIf": [
     {
@@ -117,11 +115,10 @@
       "body": "which is a consideration for collagen-stimulating products such as Juvelook."
     }
   ],
-  "bringToConsult": "Bring your medical history, allergies and medications, and a list of every injectable you have had before, including fillers.",
   "sessionSteps": [
     {
       "title": "Consultation and skin assessment",
-      "body": "Your first visit is a consultation, not a treatment. A doctor examines your skin and decides whether a skin booster suits your concern and, if so, which type: hydrating, polynucleotide or collagen-stimulating."
+      "body": "A doctor examines your skin and decides whether a skin booster suits your concern and, if so, which type: hydrating, polynucleotide or collagen-stimulating."
     },
     {
       "title": "Preparation",
@@ -133,11 +130,11 @@
     },
     {
       "title": "Afterwards",
-      "body": "Soothing care and aftercare advice. The next session is spaced for your skin and response."
+      "body": "Soothing care and aftercare advice."
     }
   ],
   "afterSession": {
-    "intro": "Downtime is usually short but visible for a period, and it differs between products.",
+    "intro": "",
     "bands": [
       {
         "title": "Straight afterwards",
@@ -150,18 +147,14 @@
       {
         "title": "The following few days",
         "body": "Some tenderness and any bruising fade. After a collagen-stimulating booster such as Juvelook, redness and bumps can take a few days to settle."
-      },
-      {
-        "title": "Across the course",
-        "body": "Sessions are spaced some weeks apart, and any change develops gradually."
       }
     ],
     "aftercare": "Gentle skincare and sun protection, and a short break from heat, strenuous exercise and pressure on the treated area before resuming actives and makeup."
   },
   "risks": {
-    "intro": "Skin boosters carry the risks of any facial injection, explained in full before anything is booked.",
+    "intro": "",
     "common": "Bumps at the injection points, swelling, redness, bruising, tenderness and small palpable lumps, which typically settle over a short period.",
-    "lessCommon": "Infection, prolonged swelling, nodules and hypersensitivity reactions. Persistent nodules or granuloma formation are a recognised consideration with collagen-stimulating products. Vascular complications are rare but recognised with any facial injection. Serious effects are uncommon when the product is appropriately selected and administered by a trained doctor.",
+    "lessCommon": "Infection, prolonged swelling, nodules and hypersensitivity reactions. Persistent nodules or granuloma formation are a recognised consideration with collagen-stimulating products. Vascular complications are rare but recognised with any facial injection.",
     "cannotDo": [
       "It does not add volume or change the shape of the face.",
       "It does not work in a single session. Skin boosters are used as a course, and any change develops gradually.",
@@ -190,11 +183,6 @@
       "downtime": "1-3 days"
     },
     {
-      "name": "Botulinum toxin",
-      "bestFor": "Lines caused by muscle movement",
-      "downtime": "None"
-    },
-    {
       "name": "HIFU / Ultherapy",
       "bestFor": "Laxity and firmness rather than skin quality",
       "downtime": "None for most people"
@@ -218,38 +206,36 @@
     {
       "heading": "What is a skin booster?",
       "body": [
-        "A skin booster is an injectable treatment that places hydrating and skin-conditioning ingredients into the skin to support its overall quality, rather than to add volume or change the shape of the face. Because it is an injectable, it is performed by a doctor.",
-        "Skin booster is an umbrella term covering hydrating, polynucleotide and collagen-stimulating products, compared below."
+        "A skin booster is an injectable treatment that places hydrating and skin-conditioning ingredients into the skin to support its overall quality. Because it is an injectable, it is performed by a doctor."
       ]
     },
     {
       "heading": "How is a skin booster different from a filler?",
       "body": [
-        "A filler is placed to add volume or change contour: a fuller cheek, a defined chin, a corrected hollow. A skin booster is not. It is delivered as small amounts through a series of fine micro-injections spread across the treatment area, and the ingredients are intended to work within the skin itself to support hydration and skin quality over time.",
-        "That is also why the two are planned differently: a skin booster is used as a course rather than a single treatment, and any change develops gradually."
+        "A filler is placed to add volume or change contour: a fuller cheek, a defined chin, a corrected hollow. A skin booster is not. It is delivered as small amounts through a series of fine micro-injections spread across the treatment area, and the ingredients are intended to work within the skin itself to support hydration and skin quality over time."
       ]
     }
   ],
   "faqs": [
     {
       "q": "Are skin boosters suitable for sensitive or acne-prone skin?",
-      "a": "They may be. The polynucleotide boosters, Rejuran and Plinest, are often considered for sensitive or damaged skin, once any active acne flare has settled."
+      "a": "They may be, once any active acne flare has settled."
     },
     {
       "q": "Is there any downtime?",
-      "a": "Small bumps at each injection point are expected and settle within hours to about a day for hyaluronic acid boosters, and over one to two days for polynucleotides. Redness and pinpoint bruising can also occur."
+      "a": "Small bumps at each injection point are expected and settle within hours to about a day for hyaluronic acid boosters, and over one to two days for polynucleotides."
     },
     {
       "q": "How many sessions will I need?",
-      "a": "Usually a short course spaced some weeks apart, then periodic maintenance. The number depends on the product and your skin."
+      "a": "Usually a short course spaced some weeks apart, then periodic maintenance."
     },
     {
       "q": "What is the difference between Rejuran and Profhilo?",
-      "a": "They are built on different ingredients. Rejuran is a salmon-derived polynucleotide used to support the skin barrier and healing, often considered for sensitive or damaged skin. Profhilo is a high-concentration hyaluronic acid used for deep hydration and skin remodelling."
+      "a": "They are built on different ingredients: Rejuran is a salmon-derived polynucleotide, Profhilo a high-concentration hyaluronic acid."
     },
     {
       "q": "Can I have a skin booster if I am allergic to fish?",
-      "a": "Tell your doctor first. Rejuran and Plinest are fish-derived polynucleotides, so a fish or seafood allergy matters for those two. The hyaluronic acid boosters, such as Profhilo and Hydrodeluxe, are built on a different ingredient."
+      "a": "Tell your doctor first. Rejuran and Plinest are fish-derived polynucleotides. The hyaluronic acid boosters, such as Profhilo and Hydrodeluxe, are built on a different ingredient."
     }
   ]
 }

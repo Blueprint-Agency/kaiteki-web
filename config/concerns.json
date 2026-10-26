@@ -25,12 +25,12 @@
   "depthRules": {
     "full": {
       "minTreatments": 4,
-      "faqCount": 12,
+      "faqCount": 8,
       "omitBlocks": []
     },
     "lite": {
       "maxTreatments": 3,
-      "faqCount": 8,
+      "faqCount": 6,
       "omitBlocks": [
         "10-compare"
       ]

@@ -32,7 +32,7 @@
   "routes": [
     {
       "title": "Gradual collagen rebuilding over months",
-      "body": "Prompts your own collagen production over months instead of adding volume immediately. Change is deliberately slow, which some people prefer and others find frustrating.",
+      "body": "Change is deliberately slow, which some people prefer and others find frustrating.",
       "links": [
         {
           "href": "/concerns/face-lifting",
@@ -75,8 +75,7 @@
         "title": "Deusaderm",
         "body": "A collagen-based injectable intended to support skin quality, structure and elasticity."
       }
-    ],
-    "note": "None of these can be dissolved the way a hyaluronic acid filler can, which is why assessment beforehand matters."
+    ]
   },
   "ctaMid": {
     "heading": "Not sure whether you need a filler or a bio-stimulator?",
@@ -108,11 +107,10 @@
       "body": "in the same area."
     }
   ],
-  "bringToConsult": "Bring your medical history, allergies, medication list and every past injectable, implant or surgery in the area.",
   "sessionSteps": [
     {
       "title": "Consultation and assessment",
-      "body": "Your first visit is a consultation, not a treatment. The doctor assesses your skin, confirms suitability, discusses the realistic time course and selects the product."
+      "body": "The doctor assesses your skin, confirms suitability, discusses the realistic time course and selects the product."
     },
     {
       "title": "Preparation",
@@ -120,7 +118,7 @@
     },
     {
       "title": "The injections",
-      "body": "The doctor injects the assessed areas. The injecting is quick; most of the appointment is assessment and preparation."
+      "body": "The doctor injects the assessed areas."
     },
     {
       "title": "Afterwards",
@@ -128,25 +126,21 @@
     }
   ],
   "afterSession": {
-    "intro": "Downtime is generally minimal.",
+    "intro": "",
     "bands": [
       {
         "title": "At the injection sites",
-        "body": "Mild swelling, redness or tenderness may occur and usually settles within a few days. Bruising can occasionally take longer to fade, which is worth planning around if you have an event coming up."
+        "body": "Mild swelling, redness or tenderness may occur and usually settles within a few days. Bruising can occasionally take longer to fade."
       },
       {
         "title": "The first days",
         "body": "Avoid pressure or vigorous facial treatments on the area for a short period, and follow any massage instructions given."
-      },
-      {
-        "title": "Review",
-        "body": "Because change develops over months, review appointments matter more here than with an immediate-result treatment. Keep them, and raise anything unexpected with the clinic rather than waiting."
       }
     ],
     "aftercare": "Follow the massage and aftercare instructions you are given for your product."
   },
   "risks": {
-    "intro": "The doctor goes through these before anything is injected.",
+    "intro": "",
     "common": "Temporary redness, swelling, bruising or tenderness at the injection sites.",
     "lessCommon": "Delayed-onset lumps or nodules have been reported with collagen-stimulating products, sometimes months after treatment, and rare but serious vascular complications are recognised for facial injectables in general.",
     "cannotDo": [
@@ -172,8 +166,7 @@
     {
       "heading": "What is a bio-stimulator?",
       "body": [
-        "A bio-stimulator is a type of injectable treatment given by a doctor that is intended to support the skin's own collagen framework, rather than to add immediate volume the way a conventional dermal filler does.",
-        "A filler provides structural fill on the day. A bio-stimulator is formulated to work gradually, prompting the skin's own renewal over weeks to months, and unlike a hyaluronic acid filler it cannot be dissolved."
+        "A bio-stimulator is a type of injectable treatment given by a doctor that is intended to support the skin's own collagen framework, rather than to add immediate volume the way a conventional dermal filler does."
       ]
     },
     {
@@ -199,7 +192,7 @@
     },
     {
       "q": "How many sessions will I need?",
-      "a": "Usually a short course spaced several weeks apart, sometimes with periodic maintenance afterwards. The number depends on the product and the area."
+      "a": "Usually a short course spaced several weeks apart, sometimes with periodic maintenance afterwards."
     }
   ]
 }

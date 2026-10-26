@@ -60,23 +60,15 @@
       "body": "which your clinician goes through with you."
     }
   ],
-  "bringToConsult": "Bring your medical and medication history, and say when you last waxed, plucked or threaded. Hormonal causes of excess hair may need investigating alongside treatment.",
+  "bringToConsult": "Hormonal causes of excess hair may need investigating alongside treatment.",
   "sessionSteps": [
     {
       "title": "Consultation and assessment",
       "body": "Your first visit is a consultation, not a treatment. The treatment area, hair type and skin tone are assessed, and a test area may be considered first."
     },
     {
-      "title": "Before the session",
-      "body": "You will usually be asked to shave shortly beforehand rather than wax or pluck, because the hair above the skin should be short while the follicle below stays intact."
-    },
-    {
       "title": "The treatment",
-      "body": "The area is cleansed and the cooled applicator is moved over it in repeated passes, building warmth gradually. Most people describe spreading warmth rather than the snap of a stamping device."
-    },
-    {
-      "title": "Afterwards",
-      "body": "Most people return to their day straight away. The next session is timed to the growth cycle."
+      "body": "The area is cleansed and the cooled applicator is moved over it in repeated passes, building warmth gradually."
     }
   ],
   "afterSession": {
@@ -100,19 +92,18 @@
   "risks": {
     "intro": "Like any energy-based treatment, it carries risks, which are explained before a course is booked.",
     "common": "Redness, swelling or changes in pigmentation.",
-    "lessCommon": "Blistering, burns, folliculitis and, rarely, paradoxical stimulation of fine hair in some areas. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained clinician.",
+    "lessCommon": "Blistering, burns, folliculitis and, rarely, paradoxical stimulation of fine hair in some areas.",
     "pigmentNote": "Light-based hair removal generally works best where there is more contrast between hair and skin pigment. Alma describes its low-fluence, high-repetition delivery with a cooled applicator tip as usable on darker skin, but recently tanned skin is generally not treated.",
     "cannotDo": [
-      "It is not permanent removal. It reduces hair over a course of sessions, and some regrowth or maintenance sessions may be needed over time.",
+      "It is not permanent removal.",
       "One session cannot do it, because only follicles in their active growth phase respond to any one session.",
       "Very light, grey or white hair contains little pigment for light to target on any platform."
     ],
-    "disclose": "Tell your clinician about anything on the postpone-or-avoid list above, and about every medication you take."
+    "disclose": "Tell your clinician about every medication you take."
   },
   "costFactors": {
     "intro": "Courses are priced by area across a series, not per visit, and the series is set at consultation. What moves it:",
     "factors": [
-      "The area treated.",
       "Your hair type: colour, thickness and density.",
       "How your hair responds across the course.",
       "Whether maintenance sessions are needed afterwards."
@@ -125,14 +116,14 @@
     {
       "heading": "What is Laser Hair Removal?",
       "body": [
-        "Laser Hair Removal is a treatment intended to reduce unwanted hair by targeting the hair follicle with light or energy-based technology. At Kaiteki this is delivered using the Alma platform, which combines IPL (intense pulsed light) with radiofrequency energy.",
+        "Laser Hair Removal is a treatment intended to reduce unwanted hair by targeting the hair follicle with light or energy-based technology.",
         "It is generally considered for areas such as the underarms, legs, arms or face."
       ]
     },
     {
       "heading": "Why does hair removal need a course of sessions?",
       "body": [
-        "Alma delivers IPL and radiofrequency together. The light is intended to be absorbed by pigment in the hair follicle, and the radiofrequency adds a second energy pathway to the follicle.",
+        "The light is intended to be absorbed by pigment in the hair follicle, and the radiofrequency adds a second energy pathway to the follicle.",
         "Follicles cycle through active and resting phases, and a session only affects those in an active growth phase at the time. A course spaced with that cycle is intended to reach more of them."
       ]
     }
@@ -140,7 +131,7 @@
   "faqs": [
     {
       "q": "How many sessions will I need?",
-      "a": "A course of several sessions spaced a few weeks apart is common, because one session only affects hairs in an active growth phase. The number depends on your hair type and the area."
+      "a": "A course of several sessions spaced a few weeks apart is common. The number depends on your hair type and the area."
     },
     {
       "q": "Is Laser Hair Removal permanent?",
@@ -148,11 +139,7 @@
     },
     {
       "q": "Is it suitable for all skin tones and hair colours?",
-      "a": "Not all. Light-based removal generally works best where there is more contrast between hair and skin pigment. Very light, grey or white hair has little pigment to target, and recently tanned skin is generally not treated."
-    },
-    {
-      "q": "Is there any downtime?",
-      "a": "Usually minimal. Temporary redness or warmth typically settles within a few hours to a day."
+      "a": "Not all. Very light, grey or white hair has little pigment to target, and recently tanned skin is generally not treated."
     }
   ]
 }

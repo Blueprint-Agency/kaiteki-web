@@ -19,8 +19,7 @@
   "suitableFor": [
     "Adults in general good health seeking assessment for dynamic expression lines",
     "People bothered by excessive underarm, palm or sole sweating that has not responded to antiperspirants",
-    "People interested in assessment for jaw or calf muscle bulk",
-    "People comfortable with a treatment that wears off and needs repeating"
+    "People interested in assessment for jaw or calf muscle bulk"
   ],
   "notSuitableFor": [
     "Pregnancy or breastfeeding",
@@ -39,16 +38,6 @@
       "name": "Dermal fillers",
       "bestFor": "Lines and hollows caused by lost volume or structure",
       "downtime": "1-3 days"
-    },
-    {
-      "name": "Skin booster",
-      "bestFor": "Fine lines linked to skin dryness and skin quality",
-      "downtime": "1-2 days"
-    },
-    {
-      "name": "HIFU / Ultherapy",
-      "bestFor": "Laxity and firmness rather than movement lines",
-      "downtime": "None to minimal"
     }
   ],
   "preCare": [
@@ -77,30 +66,29 @@
     {
       "heading": "What is botulinum toxin?",
       "body": [
-        "Botulinum toxin is a purified protein produced by the bacterium Clostridium botulinum. In very small, controlled doses it is used in medicine to temporarily reduce the activity of a specific muscle or gland. It has been used clinically for decades, originally in neurology and ophthalmology, and later in aesthetic medicine.",
-        "In Malaysia it is a prescription medicine: only a registered doctor can supply and administer it, after an in-person assessment.",
-        "Several brands of botulinum toxin type A are registered in Malaysia. \"Botox\" is one of them, though the name is often used for the treatment itself."
+        "Botulinum toxin is a purified protein produced by the bacterium Clostridium botulinum. In very small, controlled doses it is used in medicine to temporarily reduce the activity of a specific muscle or gland.",
+        "In Malaysia it is a prescription medicine: only a registered doctor can supply and administer it, after an in-person assessment."
       ]
     },
     {
       "heading": "How does botulinum toxin relax a muscle or sweat gland?",
       "body": [
         "Muscles contract when a nerve releases a chemical messenger called acetylcholine at the junction between the nerve and the muscle. Botulinum toxin temporarily blocks that release, so the treated muscle contracts less strongly. The same mechanism applies to the nerves that switch on sweat glands, which is why it is also used for excessive sweating.",
-        "The effect is confined to the small area injected and is temporary: nerve signalling gradually returns and the muscle or gland resumes its usual activity, at a pace that varies between people. Certain medical uses, such as chronic migraine or muscle spasm, are assessed separately."
+        "The effect is confined to the small area injected and is temporary: nerve signalling gradually returns and the muscle or gland resumes its usual activity, at a pace that varies between people."
       ]
     },
     {
       "heading": "What happens at a botulinum toxin appointment?",
       "body": [
-        "It starts with a consultation. The doctor watches the area at rest and in movement, explains what is and is not achievable, and goes through the risks. Only then is a dose decided. Dosing is individual, not set from a price list.",
-        "The area is cleansed and the doctor gives a series of small injections with a fine needle at planned points, usually over ten to twenty minutes. Most people describe brief stinging, and numbing or cooling can be used. Small bumps, redness or bruising, particularly around the eyes, usually settle quickly. Any change develops over the following days, and a review appointment checks it before anything further is decided."
+        "It starts with a consultation. The doctor watches the area at rest and in movement, explains what is and is not achievable, and goes through the risks. Only then is a dose decided.",
+        "The area is cleansed and the doctor gives a series of small injections with a fine needle at planned points. Most people describe brief stinging, and numbing or cooling can be used. Any change develops over the following days, and a review appointment checks it before anything further is decided."
       ]
     },
     {
       "heading": "What are the side effects of botulinum toxin?",
       "body": [
         "Commonly reported temporary effects include tenderness, redness or small bruises at the injection points, and headache. These are usually mild and short-lived.",
-        "Less commonly, the effect extends slightly beyond the intended muscle, causing temporary asymmetry, a heavy-feeling brow or eyelid drooping, which can take weeks to resolve. Rarely, spread of the toxin has been reported to cause difficulty swallowing, speaking or breathing, or weakness away from the injection site. These need urgent medical attention. It is not permanent and does not add volume: lines caused by lost volume or laxity need a different treatment. Contact the clinic about any effect that concerns you."
+        "Less commonly, the effect extends slightly beyond the intended muscle, causing temporary asymmetry, a heavy-feeling brow or eyelid drooping, which can take weeks to resolve. Rarely, spread of the toxin has been reported to cause difficulty swallowing, speaking or breathing, or weakness away from the injection site. These need urgent medical attention."
       ]
     },
     {
@@ -114,19 +102,19 @@
   "faqs": [
     {
       "q": "Is botulinum toxin permanent?",
-      "a": "No. Nerve signalling gradually returns and the treated muscle or gland resumes its usual activity, at a pace that varies between people. Treatment is therefore a repeating cycle, timed at review rather than on a fixed schedule."
+      "a": "No. Treatment is a repeating cycle, timed at review rather than on a fixed schedule."
     },
     {
       "q": "Can it help with excessive sweating?",
-      "a": "It is one option for excessive sweating of the underarms, palms or soles, usually where antiperspirants have not been enough. It acts on the nerves that switch on sweat glands. Underlying causes of the sweating are ruled out first."
+      "a": "It is one option for excessive sweating of the underarms, palms or soles, usually where antiperspirants have not been enough. Underlying causes of the sweating are ruled out first."
     },
     {
       "q": "Will my face look frozen or expressionless?",
-      "a": "That look comes from dose and placement, which is why the doctor watches how your muscles move first. Say how much movement you want to keep. The review appointment checks the effect before anything more is added."
+      "a": "That look comes from dose and placement, which is why the doctor watches how your muscles move first. Say how much movement you want to keep."
     },
     {
       "q": "Is this the same as Botox?",
-      "a": "Botox is one registered brand of botulinum toxin type A: a product, not a separate treatment. Several brands are registered in Malaysia and differ in formulation and unit potency, so the doctor will explain which one is recommended for you and why."
+      "a": "Botox is one registered brand of botulinum toxin type A: a product, not a separate treatment. Several brands are registered in Malaysia and differ in formulation and unit potency."
     },
     {
       "q": "Is it the same as dermal filler?",

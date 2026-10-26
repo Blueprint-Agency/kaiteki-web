@@ -31,7 +31,9 @@ import {
 } from "@/components/treatment-blocks";
 import { treatmentBySlug } from "@/content/data/treatments";
 import { postsFor } from "@/content/data/blog";
-import { technologyOfTreatment, concernsOfTreatment } from "@/content/data/relations";
+import { technologyOfTreatment, concernsOfTreatment, resultsOfTreatment } from "@/content/data/relations";
+import { ResultsBlock, resultsIntro } from "@/components/concern-blocks";
+import { resultsHeading } from "@/lib/concern-toc";
 import { doctorBySlug, reviewerByline } from "@/content/data/doctors";
 import { waForTreatment, waLink } from "@/lib/wa";
 import { treatmentToc, treatmentSectionAnchors } from "@/lib/treatment-toc";
@@ -150,6 +152,11 @@ export function TreatmentView({
   const wa = en ? waForTreatment(t.name) : waLink(fmt(chrome[locale].wa.about, { name: t.name }));
   const sections = t.sections ?? [];
   const anchors = treatmentSectionAnchors(t, source);
+  // Before/after photos of the concerns this treatment is listed for: none is
+  // filed by treatment, so the intro names the concerns and credits nothing to
+  // this one. Captions come from each concern's locale overlay.
+  const results = resultsOfTreatment(t.slug, (c) => (en ? c : (localizedConcern(locale, c.slug)?.c ?? c)));
+  const resultsLine = resultsIntro(results.from, { ui: cu, locale, mixed: true });
 
   /** Concern card fields in this locale: its own translation once live, else
    *  the researched name and no English summary under a translated heading. */
@@ -169,7 +176,14 @@ export function TreatmentView({
 
   // The rail reads the same derived list Q-24 checks against the page's own
   // anchors, so a rail entry can never point at a section that is not rendered.
-  const headings = treatmentToc(t, techItems.length > 0, relatedConcerns.length > 0, ui, source);
+  const headings = treatmentToc(
+    t,
+    techItems.length > 0,
+    relatedConcerns.length > 0,
+    ui,
+    source,
+    results.items.length ? resultsHeading(results.items, { illustrated: cu.resultsIllustrated, patients: cu.resultsPatients }) : undefined,
+  );
   const rail =
     headings.length >= TOC_MIN_HEADINGS ? (
       <ArticleToc headings={headings} variant="sidebar" label={cu.onThisPage} />
@@ -240,6 +254,10 @@ export function TreatmentView({
             <LeadAnswer label={cu.inBrief}>{t.leadAnswer}</LeadAnswer>
           </div>
         </Section>
+
+        {/* Results, straight under the answer, as the concern page places
+            them. Renders its own disclaimer (ADR-0001 §2, amended 2026-10). */}
+        <ResultsBlock items={results.items} intro={resultsLine} ui={cu} locale={locale} />
 
         {/* T-04 · T-05 — the reading spine. Prose holds a 68ch measure; anchor
             ids derive from the heading so any section is addressable without a

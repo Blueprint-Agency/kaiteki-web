@@ -3,8 +3,8 @@
   "name": "Jerawat",
   "group": "Skin",
   "image": "https://cdn.kaiteki.my/concerns/acne/card.jpg",
-  "summary": "Jerawat yang sedang aktif dan parut lama memerlukan rawatan yang berbeza. Doktor akan mengenal pasti jenis dan puncanya sebelum mencadangkan pelan rawatan.",
-  "leadAnswer": "Jerawat ialah masalah kulit yang biasa, apabila liang pori tersumbat oleh minyak dan sel kulit mati, lalu menyebabkan komedo hitam, jerawat meradang dan kadangkala parut. Jerawat aktif, kesan jerawat yang rata dan parut ialah tiga masalah berbeza: jerawat aktif biasanya dikawal secara perubatan dahulu, dan rawatan berasaskan tenaga dipertimbangkan untuk kesan dan parut yang ditinggalkannya.",
+  "summary": "Jerawat yang sedang aktif dan parut lama memerlukan rawatan yang berbeza.",
+  "leadAnswer": "Jerawat ialah masalah kulit yang biasa, apabila liang pori tersumbat oleh minyak dan sel kulit mati, lalu menyebabkan komedo hitam, jerawat meradang dan kadangkala parut. Jerawat aktif biasanya dikawal secara perubatan dahulu, dan rawatan berasaskan tenaga dipertimbangkan untuk kesan dan parut yang ditinggalkannya.",
   "treatments": [
     "pico-laser",
     "microneedling",
@@ -69,7 +69,7 @@
     {
       "heading": "Apa itu jerawat?",
       "body": [
-        "Jerawat berlaku apabila folikel rambut tersumbat dengan minyak dan sel kulit mati. Sumbatan itu boleh terus senyap sebagai komedo hitam (blackhead) atau komedo putih (whitehead), atau menjadi radang dan membentuk bintik merah yang sakit apabila disentuh. Jerawat paling kerap muncul di muka, tetapi belakang badan, dada dan bahu juga biasa."
+        "Jerawat berlaku apabila folikel rambut tersumbat dengan minyak dan sel kulit mati. Sumbatan itu boleh terus senyap sebagai komedo hitam (blackhead) atau komedo putih (whitehead), atau menjadi radang dan membentuk bintik merah yang sakit apabila disentuh."
       ]
     }
   ],
@@ -93,8 +93,7 @@
         "lead": "Faktor penyumbang lain:",
         "body": "sejarah keluarga, ubat-ubatan tertentu, produk penjagaan kulit atau solekan yang menyumbat liang pori, cuaca lembap dan peluh, serta geseran daripada topi keledar, tali beg atau pelitup muka."
       }
-    ],
-    "outro": "Pemakanan, tekanan dan tidur boleh mempengaruhi jerawat bagi sesetengah orang, tetapi jarang menjadi punca tunggal."
+    ]
   },
   "variant": {
     "kind": "tabs",
@@ -105,21 +104,7 @@
         "label": "Jerawat aktif",
         "sub": "Jerawat yang ada sekarang",
         "title": "Jerawat aktif",
-        "body": "Jerawat yang sedang terbentuk. Biasanya dirawat secara perubatan dahulu, dengan ubat sapu atau ubat makan, kerana meredakan keradangan melindungi kulit daripada lebih banyak kesan dan parut.",
-        "items": [
-          {
-            "lead": "Komedo:",
-            "body": "komedo hitam dan putih, tanpa kemerahan. Selalunya di dahi, hidung dan dagu."
-          },
-          {
-            "lead": "Meradang:",
-            "body": "papul dan pustul merah yang sakit apabila disentuh."
-          },
-          {
-            "lead": "Nodul dan kistik (jerawat batu):",
-            "body": "ketulan dalam, keras dan sakit di bawah kulit yang tidak bermata. Jenis yang paling mungkin meninggalkan parut."
-          }
-        ],
+        "body": "Jerawat yang sedang terbentuk.",
         "routing": "rawatan perubatan dahulu, dengan rawatan muka di klinik atau RF microneedling dipertimbangkan sebagai sokongan apabila doktor menasihatkannya."
       },
       {
@@ -137,13 +122,13 @@
             "body": "(hiperpigmentasi pasca-radang), disebabkan pigmen berlebihan yang terhasil semasa keradangan. Sangat biasa pada warna kulit sederhana dan lebih gelap yang lazim di Malaysia, dan bertambah teruk dengan pendedahan matahari."
           }
         ],
-        "routing": "pico laser, dengan pelindung matahari setiap hari sebagai bahagian pelan yang wajib."
+        "routing": "pico laser."
       },
       {
         "label": "Parut jerawat",
         "sub": "Tekstur yang boleh dirasa",
         "title": "Parut jerawat",
-        "body": "Perubahan pada struktur kulit yang boleh dirasa sebagai lekuk atau bahagian yang timbul. Parut tidak pudar sendiri. Jenis parut dan pendekatan bagi setiap satu diterangkan di halaman parut jerawat.",
+        "body": "Perubahan pada struktur kulit yang boleh dirasa sebagai lekuk atau bahagian yang timbul. Parut tidak pudar sendiri.",
         "routing": "RF microneedling atau laser resurfacing, selalunya dalam beberapa sesi, dengan gabungan dipilih mengikut jenis parut."
       }
     ]
@@ -176,7 +161,7 @@
   ],
   "locationBlock": {
     "heading": "Kedudukan jerawat: di mana ia muncul",
-    "intro": "Kedudukan ialah petunjuk, bukan diagnosis. Kepercayaan bahawa jerawat di satu tempat menunjukkan masalah pada organ tertentu tiada asas klinikal, tetapi sesetengah corak memang berguna untuk diperhatikan.",
+    "intro": "Kedudukan ialah petunjuk, bukan diagnosis.",
     "cards": [
       {
         "title": "Dagu dan rahang",
@@ -184,15 +169,15 @@
       },
       {
         "title": "Dahi",
-        "body": "Biasanya berkait dengan minyak, peluh, produk rambut dan geseran daripada topi, topi keledar atau rambut depan. Bintil kecil yang kasar di sini biasanya komedo tertutup."
+        "body": "Biasanya berkait dengan minyak, peluh, produk rambut dan geseran daripada topi, topi keledar atau rambut depan."
       },
       {
         "title": "Pipi",
-        "body": "Geseran dan sentuhan sering menjadi penyumbang: skrin telefon, sarung bantal, tepi pelitup muka. Pipi juga mudah meninggalkan kesan dan parut."
+        "body": "Geseran dan sentuhan sering menjadi penyumbang: skrin telefon, sarung bantal, tepi pelitup muka."
       },
       {
         "title": "Hidung",
-        "body": "Kelenjar minyak yang padat menyebabkan komedo hitam dan liang pori yang ketara biasa di sini. Memicit cenderung memburukkan kedua-duanya."
+        "body": "Kelenjar minyak yang padat menyebabkan komedo hitam dan liang pori yang ketara biasa di sini."
       },
       {
         "title": "Belakang badan, dada dan bahu",
@@ -201,7 +186,7 @@
     ],
     "note": {
       "title": "Bukan jerawat biasa?",
-      "body": "Bintil kecil yang seragam dan gatal, atau ruam yang tidak bertindak balas kepada rawatan jerawat, mungkin masalah lain sama sekali, seperti folikulitis atau rosacea. Doktor boleh membezakannya."
+      "body": "Bintil kecil yang seragam dan gatal, atau ruam yang tidak bertindak balas kepada rawatan jerawat, mungkin masalah lain sama sekali, seperti folikulitis atau rosacea."
     }
   },
   "seeDoctor": {
@@ -209,11 +194,9 @@
     "triggers": [
       "Produk yang dibeli tanpa preskripsi tidak membantu selepas kira-kira lapan hingga dua belas minggu digunakan secara konsisten.",
       "Jerawat dalam, sakit atau meninggalkan kesan.",
-      "Anda sudah nampak lekuk atau perubahan tekstur kulit.",
       "Jerawat mula muncul semasa dewasa, atau coraknya tiba-tiba berubah.",
       "Jerawat menjejaskan emosi, keyakinan diri atau kehidupan harian anda."
-    ],
-    "outro": "Bagi jerawat yang dalam atau meninggalkan parut, penilaian awal penting: tujuannya ialah meredakan keradangan sebelum ia meninggalkan perubahan yang sukar dipulihkan."
+    ]
   },
   "ctaMid": {
     "heading": "Tak pasti yang mana satu anda alami?",
@@ -223,7 +206,7 @@
   "treatmentWhy": {
     "pico-laser": {
       "why": "Untuk kesan jerawat dan warna kulit yang tidak sekata",
-      "body": "Laser pikosaat yang menyasarkan pigmen dengan denyutan yang sangat singkat dan pantas. Paling relevan apabila jerawat sudah reda dan yang tinggal ialah perubahan warna, bukan tekstur."
+      "body": "Laser pikosaat yang menyasarkan pigmen dengan denyutan yang sangat singkat dan pantas."
     },
     "microneedling": {
       "why": "Untuk parut berlubang, tekstur dan liang pori besar",
@@ -231,18 +214,17 @@
     },
     "resurfacing-laser": {
       "why": "Untuk parut yang lebih dalam dan perubahan tekstur yang ketara",
-      "body": "Laser CO₂ fraksional yang digunakan apabila parut sudah lebih mantap. Downtime lebih lama berbanding pilihan di atas, dan perlu mengelak matahari dengan teliti selepas itu."
+      "body": "Laser CO₂ fraksional yang digunakan apabila parut sudah lebih mantap. Downtime lebih lama berbanding pilihan di atas."
     },
     "exosome-therapy": {
       "why": "Digunakan bersama rawatan lain, bukan sebagai pengganti",
-      "body": "Pendekatan regeneratif yang digunakan selepas rawatan berasaskan tenaga untuk menyokong pemulihan kulit. Bukti saintifiknya masih berkembang, dan ia ditawarkan sebagai rawatan tambahan, bukan rawatan jerawat yang berdiri sendiri."
+      "body": "Pendekatan regeneratif yang digunakan selepas rawatan berasaskan tenaga untuk menyokong pemulihan kulit. Bukti saintifiknya masih berkembang."
     },
     "facial-treatments": {
       "why": "Untuk liang pori tersumbat, pembersihan dan penjagaan berterusan",
-      "body": "Hydrafacial dan Silkpeel digunakan untuk menyokong pembersihan dan pengelupasan, terutamanya untuk sumbatan jenis komedo. Ini penjagaan sokongan. Ia tidak menggantikan rawatan perubatan untuk jerawat meradang."
+      "body": "Hydrafacial dan Silkpeel digunakan untuk menyokong pembersihan dan pengelupasan, terutamanya untuk sumbatan jenis komedo. Ia tidak menggantikan rawatan perubatan untuk jerawat meradang."
     }
   },
-  "treatmentsNote": "Jerawat meradang yang aktif biasanya dirawat secara perubatan dahulu. Rawatan berasaskan tenaga lazimnya dipertimbangkan selepas jerawat terkawal, atau bersama rawatan perubatan jika doktor menilai ia sesuai.",
   "compare": {
     "intro": "Panduan umum sahaja. Gabungan rawatan adalah biasa, dan bilangan sesi ditetapkan selepas penilaian.",
     "columns": [
@@ -351,18 +333,17 @@
     "steps": [
       {
         "title": "Sejarah",
-        "body": "Apa yang pernah anda cuba, sudah berapa lama masalah ini berlaku, sejarah perubatan anda, dan sebarang ubat atau produk penjagaan kulit yang sedang anda gunakan."
+        "body": "Apa yang pernah anda cuba, dan sebarang ubat atau produk penjagaan kulit yang sedang anda gunakan."
       },
       {
         "title": "Pemeriksaan",
-        "body": "Doktor memeriksa kulit anda, kadangkala dengan pembesaran, untuk mengenal pasti yang mana jerawat aktif, yang mana kesan jerawat, dan yang mana parut."
+        "body": "Doktor memeriksa kulit anda, kadangkala dengan pembesaran."
       },
       {
         "title": "Perbincangan dan pelan",
-        "body": "Pilihan, risiko dan downtime untuk jerawat aktif, kesan jerawat dan parut, serta apa yang realistik, tanpa sebarang kewajipan untuk meneruskan."
+        "body": "Pilihan, risiko dan downtime, tanpa sebarang kewajipan untuk meneruskan."
       }
-    ],
-    "outro": "Bawa senarai semua produk yang sedang anda sapu atau ambil, termasuk suplemen dan ubat jerawat oral. Jika anda ada gambar kulit semasa jerawat sedang teruk, itu juga membantu."
+    ]
   },
   "risks": {
     "items": [
@@ -376,11 +357,11 @@
       },
       {
         "lead": "Pelindung matahari bukan pilihan",
-        "body": "Pelindung matahari spektrum luas setiap hari ialah sebahagian daripada pelan bagi setiap rawatan di atas, sebelum dan selepas. Tanpanya, kesan jerawat mungkin kembali atau menjadi lebih gelap."
+        "body": "Pelindung matahari spektrum luas setiap hari ialah sebahagian daripada pelan bagi setiap rawatan di atas, sebelum dan selepas."
       },
       {
         "lead": "Apa yang rawatan tidak dapat lakukan",
-        "body": "Parut ice pick jarang pulih sepenuhnya dengan mesin tenaga sahaja. Jerawat boleh berulang selepas rawatan, kerana merawat kesan atau parut tidak mengubah kecenderungan kulit untuk berjerawat. Perubahan berlaku secara beransur-ansur dalam beberapa bulan semasa kolagen dibentuk semula. Ia tidak kelihatan pada minggu berikutnya."
+        "body": "Parut ice pick jarang pulih sepenuhnya dengan mesin tenaga sahaja. Jerawat boleh berulang selepas rawatan, kerana merawat kesan atau parut tidak mengubah kecenderungan kulit untuk berjerawat. Perubahan berlaku secara beransur-ansur dalam beberapa bulan semasa kolagen dibentuk semula."
       }
     ],
     "disclose": "Beritahu doktor anda jika anda hamil atau menyusu, sedang atau baru-baru ini mengambil ubat jerawat oral, ada sejarah herpes bibir (cold sore), parut keloid atau kulit yang baru digelapkan oleh matahari, atau pernah menjalani sebarang prosedur kulit dalam beberapa minggu lepas. Mana-mana perkara ini boleh mengubah rawatan yang sesuai atau masanya."
@@ -397,52 +378,36 @@
   },
   "faqs": [
     {
-      "q": "Apa beza jerawat aktif dan parut jerawat?",
-      "a": "Jerawat aktif ialah yang sedang terbentuk sekarang: bintik jerawat, kemerahan, liang pori tersumbat. Parut ialah perubahan struktur yang tinggal selepas keradangan reda, dan biasanya anda boleh rasa ia sebagai lekuk atau permukaan tidak rata. Di antara kedua-duanya ialah kesan jerawat yang rata: perubahan warna merah atau coklat di mana kulit licin tetapi warnanya belum kembali normal. Ketiga-tiganya selalunya berlaku serentak dan dirawat secara berbeza."
-    },
-    {
       "q": "Parut jerawat boleh hilang ke? Boleh dirawat?",
-      "a": "Parut berlubang selalunya boleh diperbaiki, tetapi jarang dapat dipadam sama sekali. Rawatan seperti RF microneedling dan laser resurfacing berfungsi dengan merangsang kulit membentuk semula kolagennya sendiri, dan proses ini berlaku secara beransur-ansur dalam beberapa bulan, bukan serta-merta. Sejauh mana perubahan yang realistik sangat bergantung pada jenis parut: parut rolling dan boxcar biasanya bertindak balas lebih baik daripada parut ice pick yang sempit dan dalam. Lihat halaman parut jerawat untuk setiap jenis parut."
+      "a": "Parut berlubang selalunya boleh diperbaiki, tetapi jarang dapat dipadam sama sekali. Sejauh mana perubahan yang realistik sangat bergantung pada jenis parut: parut rolling dan boxcar biasanya bertindak balas lebih baik daripada parut ice pick yang sempit dan dalam. Lihat halaman parut jerawat untuk setiap jenis parut."
     },
     {
       "q": "Kenapa orang dewasa masih berjerawat?",
-      "a": "Jerawat dewasa biasanya disebabkan oleh pelbagai faktor. Perubahan hormon kerap menjadi penyumbang, terutamanya bagi wanita yang berjerawat di sekitar rahang dan dagu mengikut kitaran. Produk penjagaan kulit dan solekan yang menyumbat liang pori, ubat-ubatan tertentu, tekanan yang menjejaskan tidur dan fungsi lapisan pelindung kulit, serta kecenderungan genetik semuanya memainkan peranan. Jerawat dewasa juga sering kelihatan berbeza daripada jerawat remaja: bilangannya kurang, tetapi lebih dalam dan lebih lambat reda."
+      "a": "Jerawat dewasa biasanya disebabkan oleh pelbagai faktor. Perubahan hormon kerap menjadi penyumbang, terutamanya bagi wanita yang berjerawat di sekitar rahang dan dagu mengikut kitaran. Jerawat dewasa juga sering kelihatan berbeza daripada jerawat remaja: bilangannya kurang, tetapi lebih dalam dan lebih lambat reda."
     },
     {
       "q": "Adakah jerawat jadi lebih teruk dahulu (purging) selepas mula rawatan?",
-      "a": "Sesetengah rawatan perubatan jerawat melibatkan tempoh penyesuaian awal, di mana kulit kelihatan lebih teruk sebelum bertambah baik. Ini dijangka dengan ubat sapu tertentu, dan doktor akan memberitahu anda lebih awal jika ia berkaitan. Rawatan berasaskan tenaga biasanya tidak menyebabkan jerawat naik mendadak, tetapi boleh meninggalkan kemerahan atau kulit kering selama beberapa hari."
-    },
-    {
-      "q": "Perlu buat berapa sesi?",
-      "a": "Ini ditetapkan selepas doktor memeriksa kulit anda, kerana ia bergantung pada apa yang dirawat dan tahap keterukannya. Rawatan berasaskan tenaga untuk parut biasanya dirancang sebagai satu kursus beberapa sesi, kira-kira empat minggu sekali, dengan titik semakan untuk melihat tindak balas kulit anda."
-    },
-    {
-      "q": "Berapa lama baru nampak perubahan?",
-      "a": "Ia bergantung sepenuhnya pada apa yang dirawat. Kesan jerawat dan perubahan warna biasanya berubah lebih awal berbanding parut yang mengubah struktur kulit. Rawatan parut berfungsi dengan merangsang pembentukan semula kolagen, dan proses itu berterusan selama berbulan-bulan di bawah permukaan walaupun kulit sudah kelihatan pulih. Parut yang lebih dalam selalunya dinilai semula secara rasmi enam hingga dua belas bulan selepas satu kursus. Mengambil gambar sendiri dalam pencahayaan yang sama membantu, kerana perubahan harian sangat sukar dilihat di cermin."
+      "a": "Sesetengah rawatan perubatan jerawat melibatkan tempoh penyesuaian awal, di mana kulit kelihatan lebih teruk sebelum bertambah baik. Rawatan berasaskan tenaga biasanya tidak menyebabkan jerawat naik mendadak, tetapi boleh meninggalkan kemerahan atau kulit kering selama beberapa hari."
     },
     {
       "q": "Rawatan laser selamat ke untuk kulit gelap, sawo matang atau kulit Asia?",
-      "a": "Ya, jika mesin dan tetapannya dipilih dengan sesuai oleh doktor yang berpengalaman dengan jenis kulit anda. Kebimbangan khusus bagi warna kulit sederhana dan lebih gelap ialah hiperpigmentasi pasca-radang, iaitu kulit bertindak balas terhadap rawatan dengan menghasilkan pigmen berlebihan. Ini dikawal dengan memilih mesin yang sesuai, menggunakan tetapan yang konservatif, menjarakkan sesi dengan lebih lama, dan tegas tentang perlindungan matahari. Ia pertimbangan yang nyata, bukan alasan untuk mengelak rawatan."
+      "a": "Ya, jika mesin dan tetapannya dipilih dengan sesuai oleh doktor yang berpengalaman dengan jenis kulit anda. Kebimbangan khusus bagi warna kulit sederhana dan lebih gelap ialah hiperpigmentasi pasca-radang, iaitu kulit bertindak balas terhadap rawatan dengan menghasilkan pigmen berlebihan. Ia pertimbangan yang nyata, bukan alasan untuk mengelak rawatan."
     },
     {
       "q": "Boleh pakai makeup selepas rawatan?",
-      "a": "Bergantung pada rawatan. Selepas rawatan dengan downtime minimum, makeup biasanya boleh dipakai keesokan harinya. Selepas RF microneedling, kebanyakan orang menunggu sehingga kemerahan reda, biasanya dua hingga tiga hari. Selepas laser resurfacing, lebih lama: lapisan atas kulit perlu tumbuh semula dahulu. Doktor akan memberi masa yang tepat untuk rawatan yang anda jalani."
+      "a": "Selepas rawatan dengan downtime minimum, makeup biasanya boleh dipakai keesokan harinya. Selepas RF microneedling, kebanyakan orang menunggu sehingga kemerahan reda, biasanya dua hingga tiga hari. Selepas laser resurfacing, lebih lama: lapisan atas kulit perlu tumbuh semula dahulu."
     },
     {
       "q": "Jerawat akan datang balik atau berulang selepas rawatan?",
-      "a": "Mungkin. Merawat kesan atau parut menangani apa yang ditinggalkan oleh jerawat sebelum ini. Ia tidak mengubah kecenderungan asas kulit anda untuk berjerawat. Bagi ramai orang, jerawat ialah masalah kronik, dengan tempoh naik dan reda. Sebab itu pelan biasanya termasuk penjagaan berterusan: penjagaan kulit harian yang sesuai, perlindungan matahari, dan rawatan perubatan berterusan jika perlu. Kawalan jangka panjang ialah matlamat yang realistik; tiada siapa boleh berjanji jerawat tidak akan muncul lagi."
+      "a": "Mungkin. Bagi ramai orang, jerawat ialah masalah kronik, dengan tempoh naik dan reda. Sebab itu pelan biasanya termasuk penjagaan berterusan: penjagaan kulit harian yang sesuai, perlindungan matahari, dan rawatan perubatan berterusan jika perlu."
     },
     {
       "q": "Perlu ke berhenti guna produk penjagaan kulit atau ubat jerawat yang sedang saya ambil?",
-      "a": "Jangan hentikan apa-apa tanpa memberitahu doktor dahulu. Sesetengah produk, terutamanya retinoid dan asid pengelupas, biasanya dihentikan seketika sebelum dan selepas rawatan berasaskan tenaga. Ubat jerawat oral amat penting: jika anda sedang mengambilnya atau baru-baru ini mengambilnya, beritahu semasa konsultasi, kerana ia boleh menjejaskan masa yang sesuai untuk rawatan."
+      "a": "Jangan hentikan apa-apa tanpa memberitahu doktor dahulu. Sesetengah produk, terutamanya retinoid dan asid pengelupas, biasanya dihentikan seketika sebelum dan selepas rawatan berasaskan tenaga."
     },
     {
       "q": "Rawatan ini sakit ke?",
-      "a": "Kebanyakan orang menggambarkan rawatan berasaskan tenaga sebagai tidak selesa, bukan sakit. Krim kebas disapu terlebih dahulu jika sesuai, dan penyejukan digunakan semasa dan selepas rawatan. RF microneedling biasanya lebih terasa berbanding pico laser. Tetapan dan tempoh krim kebas boleh diubah."
-    },
-    {
-      "q": "Jerawat di belakang badan atau dada boleh dirawat ke?",
-      "a": "Boleh, walaupun kawasan ini berbeza daripada muka. Kulit di belakang badan dan dada lebih tebal, jerawat di situ cenderung lebih besar, dan parutnya lebih mungkin timbul berbanding berlubang, yang memerlukan pendekatan yang berbeza sama sekali. Setiap sesi rawatan juga meliputi kawasan yang lebih luas."
+      "a": "Kebanyakan orang menggambarkan rawatan berasaskan tenaga sebagai tidak selesa, bukan sakit. Krim kebas disapu terlebih dahulu jika sesuai, dan penyejukan digunakan semasa dan selepas rawatan. RF microneedling biasanya lebih terasa berbanding pico laser."
     }
   ],
   "relatedConcerns": [

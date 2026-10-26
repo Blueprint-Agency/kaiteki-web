@@ -3,7 +3,7 @@
   "name": "Face Contouring",
   "group": "Face",
   "image": "https://cdn.kaiteki.my/concerns/face-contouring/card.jpg",
-  "summary": "Jawline definition, cheek volume and facial proportions can be refined without surgery. A doctor plans the approach based on your facial structure.",
+  "summary": "Jawline definition, cheek volume and facial proportions can be refined without surgery.",
   "leadAnswer": "Face contouring addresses the shape and definition of the jawline, chin and cheeks. The same complaint can come from fat under the chin, chewing-muscle bulk, loose skin or a lack of projection, and each is treated differently. Non-surgical treatment works on those soft-tissue layers; it does not change bone.",
   "treatments": [
     "hifu",
@@ -69,8 +69,7 @@
     {
       "heading": "What is face contouring?",
       "body": [
-        "Face contouring refers to the shape, definition and proportion of facial areas such as the jawline, chin and cheeks. It is about how these features relate to one another rather than any single feature in isolation.",
-        "What reads as a balanced contour differs from person to person, and it is shaped as much by bone as by anything a clinic can change."
+        "Face contouring refers to the shape, definition and proportion of facial areas such as the jawline, chin and cheeks. It is about how these features relate to one another rather than any single feature in isolation."
       ]
     }
   ],
@@ -80,7 +79,7 @@
     "items": [
       {
         "lead": "Soft-tissue descent along the jawline:",
-        "body": "as skin and the layer beneath it loosen, tissue settles downward and breaks the jaw into two lines rather than one. This is the change most often described as the face losing its shape."
+        "body": "as skin and the layer beneath it loosen, tissue settles downward and breaks the jaw into two lines rather than one."
       },
       {
         "lead": "Fullness under the chin:",
@@ -101,21 +100,17 @@
   "variant": {
     "kind": "tabs",
     "heading": "What's shaping yours?",
-    "intro": "A jawline is made by bone, fat, muscle and skin, and the layer responsible decides the treatment. Most faces involve more than one.",
+    "intro": "Most faces involve more than one.",
     "tabs": [
       {
         "label": "Fat",
         "sub": "Fullness under the chin",
         "title": "Fat under the chin or along the jaw",
-        "body": "A soft pocket you can pinch, sitting between the chin and the neck or spilling slightly over the jawline. It is often familial, frequently present at a stable and healthy weight.",
+        "body": "A soft pocket you can pinch, sitting between the chin and the neck or spilling slightly over the jawline.",
         "items": [
           {
             "lead": "The tell:",
             "body": "you can hold it between finger and thumb, and it softens or shifts when you tip your head back."
-          },
-          {
-            "lead": "What it is not:",
-            "body": "not skin laxity. Tightening treatments aimed at loose skin will not remove a fat pocket."
           }
         ],
         "routing": "commonly assessed for fat-reduction treatment targeted at the submental area."
@@ -124,7 +119,7 @@
         "label": "Muscle",
         "sub": "Width at the back of the jaw",
         "title": "Chewing-muscle bulk",
-        "body": "The masseter muscle at the back of the jaw can be naturally strong or enlarged by clenching and grinding, widening the lower face when viewed from the front. Often accompanied by jaw tension, morning aching or worn teeth.",
+        "body": "The masseter muscle at the back of the jaw can be naturally strong or enlarged by clenching and grinding, widening the lower face when viewed from the front.",
         "items": [
           {
             "lead": "The tell:",
@@ -137,20 +132,20 @@
         "label": "Skin",
         "sub": "Laxity breaking the line",
         "title": "Skin and soft-tissue laxity",
-        "body": "The jaw outline is intact but the edge is no longer crisp, with small jowls either side of the chin. Pulling the skin gently back toward the ear restores the line, which is the clearest indication that laxity rather than volume is responsible.",
+        "body": "The jaw outline is intact but the edge is no longer crisp, with small jowls either side of the chin.",
         "items": [
           {
             "lead": "The tell:",
             "body": "lying down improves it noticeably, and gentle backward tension with a fingertip restores the outline."
           }
         ],
-        "routing": "assessed for energy-based tightening; see our face-lifting page for how laxity is approached in more depth."
+        "routing": "assessed for energy-based tightening."
       },
       {
         "label": "Structure",
         "sub": "Projection and proportion",
         "title": "Bone and volume proportion",
-        "body": "A recessed chin, a flat mid-face or a short lower third change how defined a jawline looks without anything having sagged. This is a proportion question, and it is often present from youth rather than something that developed.",
+        "body": "A recessed chin, a flat mid-face or a short lower third change how defined a jawline looks without anything having sagged.",
         "items": [
           {
             "lead": "The tell:",
@@ -171,23 +166,18 @@
       },
       {
         "title": "What surgery does",
-        "body": "Procedures such as jaw or chin surgery, or surgical removal of tissue, change structure directly. They are carried out by qualified surgeons under anaesthetic, with the recovery and risk that implies."
+        "body": "Procedures such as jaw or chin surgery, or surgical removal of tissue, change structure directly."
       },
       {
         "title": "Where the line usually falls",
-        "body": "Bone is the clearest boundary: if the outline you want requires a different jaw or chin, no injectable or device will produce it, and it is fairer to say so than to stage a course of treatment toward it."
+        "body": "Bone is the clearest boundary: if the outline you want requires a different jaw or chin, no injectable or device will produce it."
       }
-    ],
-    "note": {
-      "title": "When we will say so",
-      "body": "If the change you want needs bone work, the doctor will say so. A referral for a surgical opinion is a legitimate outcome."
-    }
+    ]
   },
   "seeDoctor": {
     "heading": "When it is worth an assessment",
     "intro": "There is no clinical threshold. It is worth an assessment if:",
     "triggers": [
-      "You are unsure whether what you see under your chin is fat, loose skin or something else.",
       "The lower face has widened, or you clench and grind your teeth and wake with a tight jaw.",
       "The jawline has lost definition over time rather than always having looked this way.",
       "You have been offered a treatment elsewhere and want a second opinion on whether it matches the cause."
@@ -202,26 +192,25 @@
   "treatmentWhy": {
     "fat-freezing": {
       "why": "For a defined pocket of fat under the chin",
-      "body": "Controlled cooling applied to the submental area to reduce a localised fat pocket. Relevant only where fat is what is there."
+      "body": "Controlled cooling applied to the submental area to reduce a localised fat pocket."
     },
     "botulinum-toxin": {
       "why": "For a wide jaw driven by chewing muscle",
-      "body": "A small dose placed into the masseter muscle so it works less forcefully and gradually reduces in bulk. Often relevant alongside clenching or grinding. The effect is temporary and repeated periodically."
+      "body": "A small dose placed into the masseter muscle so it works less forcefully and gradually reduces in bulk. The effect is temporary and repeated periodically."
     },
     "hifu": {
       "why": "For a softer jawline outline",
-      "body": "Focused ultrasound delivered beneath the skin to firm the tissue along the jaw. Considered where the outline has blurred through laxity rather than through volume under the chin."
+      "body": "Focused ultrasound delivered beneath the skin to firm the tissue along the jaw."
     },
     "radiofrequency": {
       "why": "For skin firmness across the lower face",
-      "body": "Heats the dermis to prompt collagen change across a broader area than a focused device. Considered where general firmness rather than a single line is the concern."
+      "body": "Heats the dermis to prompt collagen change across a broader area than a focused device."
     },
     "dermal-fillers": {
       "why": "For projection at the chin and cheek",
-      "body": "Placed on bone to build structure where projection or proportion is lacking, rather than to fill a line. Small volumes change how a profile reads. Poor placement adds weight, so anatomy knowledge matters."
+      "body": "Placed on bone to build structure where projection or proportion is lacking, rather than to fill a line."
     }
   },
-  "treatmentsNote": "Combinations are common, and sequence matters: reducing fullness under the chin before addressing laxity gives a clearer picture of what laxity is actually there.",
   "compare": {
     "intro": "A general guide. Most faces involve more than one layer, and sequenced plans are reviewed between stages.",
     "columns": [
@@ -336,7 +325,7 @@
     "steps": [
       {
         "title": "History",
-        "body": "What you would like to change and how long it has been that way, your weight history, whether you clench or grind, and any previous injectables, threads or surgery."
+        "body": "Your weight history, whether you clench or grind, and any previous injectables, threads or surgery."
       },
       {
         "title": "Examination",
@@ -344,10 +333,9 @@
       },
       {
         "title": "Discussion and plan",
-        "body": "Which layer is responsible, what each option changes and will not change, downtime and risks, and whether the outcome you have in mind is achievable, with no obligation to proceed."
+        "body": "Which layer is responsible, and whether the outcome you have in mind is achievable, with no obligation to proceed."
       }
-    ],
-    "outro": "Bring a photograph of what you have in mind if you have one. It is far more useful than a description, and it lets the doctor be specific about what is and is not achievable on your face."
+    ]
   },
   "visitImages": [
     {
@@ -363,7 +351,7 @@
       },
       {
         "lead": "Uncommon but important",
-        "body": "Injectables carry a rare but serious risk of vascular occlusion, and muscle-relaxing injection can, uncommonly, affect a neighbouring muscle and alter the smile temporarily. Both are reasons to be treated by a doctor familiar with facial anatomy."
+        "body": "Injectables carry a rare but serious risk of vascular occlusion, and muscle-relaxing injection can, uncommonly, affect a neighbouring muscle and alter the smile temporarily."
       },
       {
         "lead": "Asymmetry is normal, and worth knowing about",
@@ -393,52 +381,36 @@
   "technologyIntro": "Contouring draws on cooling, ultrasound, radiofrequency and injectables, because the four things that shape a jawline need four different tools.",
   "faqs": [
     {
-      "q": "Can face contouring change my bone structure?",
-      "a": "No. Every treatment discussed on this page works on soft tissue: fat, muscle, skin or added volume. Bone sets the outline your face works within, and changing it is a surgical procedure carried out by qualified surgeons. What non-surgical treatment can do is change how much support sits on that structure and how crisply the edges read."
-    },
-    {
       "q": "How do I know whether it is fat or loose skin under my chin?",
-      "a": "The pinch test is the usual starting point: if you can hold it between finger and thumb and it feels soft and substantial, fat is likely part of it. If gently drawing the skin back toward the ear restores the jaw outline, laxity is contributing. Many people have both, in which case sequence matters, because reducing fullness first shows how much laxity was really there."
+      "a": "The pinch test is the usual starting point: if you can hold it between finger and thumb and it feels soft and substantial, fat is likely part of it. If gently drawing the skin back toward the ear restores the jaw outline, laxity is contributing."
     },
     {
       "q": "Does treating the masseter muscle change my face shape?",
-      "a": "It can, where the muscle is genuinely contributing to width at the back of the jaw. The muscle works less forcefully after treatment and gradually reduces in bulk over weeks, which softens the outline viewed from the front. It is temporary and repeated periodically to maintain. If you clench or grind, it may also relieve jaw aching."
+      "a": "It can, where the muscle is genuinely contributing to width at the back of the jaw. The muscle works less forcefully after treatment and gradually reduces in bulk over weeks, which softens the outline viewed from the front."
     },
     {
       "q": "Is chin filler safe?",
-      "a": "In trained hands and with an appropriate product, it is a well-established treatment, but it is not trivial. The chin and jaw area contains arteries, and the serious risk with any filler is accidental placement into a vessel. This is why it should be performed by a doctor who knows the anatomy, with the means to manage a complication."
+      "a": "In trained hands and with an appropriate product, it is a well-established treatment, but it is not trivial. The chin and jaw area contains arteries, and the serious risk with any filler is accidental placement into a vessel."
     },
     {
       "q": "Will fat freezing under my chin help me lose weight?",
-      "a": "No. It targets a localised pocket in a specific area and does not change your overall weight or treat obesity. It is generally considered for people who are near a stable weight and have a defined pocket that has not responded to diet and exercise. If overall weight is the concern, that is a different conversation."
-    },
-    {
-      "q": "How long do the effects last?",
-      "a": "It varies by treatment. Muscle-relaxing injection wears off over a period of months and is repeated. Volume support lasts longer but is gradually broken down by the body. Fat reduction removes fat cells from the treated pocket, though remaining cells still respond to weight change, so the result depends on your weight staying reasonably stable."
+      "a": "No. It targets a localised pocket in a specific area and does not change your overall weight or treat obesity. It is generally considered for people who are near a stable weight and have a defined pocket that has not responded to diet and exercise."
     },
     {
       "q": "Will I look overdone?",
-      "a": "That risk comes almost entirely from too much product placed to chase a shape the face cannot naturally hold. It is avoided by treating conservatively, staging over sessions and reviewing between them, and by the doctor being willing to say that a request is not proportionate. It is entirely reasonable to state at consultation that you want the change to be subtle."
-    },
-    {
-      "q": "Is there downtime?",
-      "a": "Muscle-relaxing injection usually has none. Injectables can bruise and swell for several days, so plan around events. Fat-reduction treatment leaves the area swollen, firm and tender, sometimes for a week or two, and numbness can persist longer. Energy-based tightening is generally same-day with some redness."
+      "a": "That risk comes almost entirely from too much product placed to chase a shape the face cannot naturally hold. It is avoided by treating conservatively, staging over sessions and reviewing between them, and by the doctor being willing to say that a request is not proportionate."
     },
     {
       "q": "Can men have face contouring?",
-      "a": "Yes, and jaw and chin definition is one of the more common reasons men attend. The assessment differs, because a male jawline is typically wider and more angular and treatment aimed at a narrower outline would be the wrong goal. Masseter treatment in particular is considered carefully in men, since reducing width may not be desirable. The plan follows your anatomy and what you want, not a template."
-    },
-    {
-      "q": "How soon will I see a change?",
-      "a": "It depends on the treatment. Volume support is visible immediately, though swelling makes the first days misleading. Muscle-relaxing injection takes a couple of weeks to show and continues to develop over the following months. Fat reduction and energy-based tightening build gradually over weeks to months."
+      "a": "Yes, and jaw and chin definition is one of the more common reasons men attend. The assessment differs, because a male jawline is typically wider and more angular and treatment aimed at a narrower outline would be the wrong goal."
     },
     {
       "q": "Can I bring a photo of the look I want?",
-      "a": "Please do. It makes the consultation more useful, because it lets the doctor be specific rather than general about what your anatomy allows. Be prepared for an honest answer: reference images are often of faces with different bone structure, and sometimes the truthful response is that the outline in the picture is not reachable on your face by any non-surgical route."
+      "a": "Please do. Be prepared for an honest answer: reference images are often of faces with different bone structure, and sometimes the truthful response is that the outline in the picture is not reachable on your face by any non-surgical route."
     },
     {
       "q": "What if nothing here suits me?",
-      "a": "Then that is what the consultation should tell you. If the change you want requires surgery, or if the assessment finds nothing that treatment would meaningfully improve, our doctors will say so and, where appropriate, suggest a surgical opinion. Being told that no treatment is warranted is a legitimate outcome."
+      "a": "Then that is what the consultation should tell you. If the change you want requires surgery, or if the assessment finds nothing that treatment would meaningfully improve, our doctors will say so and, where appropriate, suggest a surgical opinion."
     }
   ],
   "relatedConcerns": [

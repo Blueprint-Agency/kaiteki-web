@@ -3,7 +3,7 @@
   "name": "Acne Scars",
   "group": "Skin",
   "image": "https://cdn.kaiteki.my/concerns/acne-scars/card-2.jpg",
-  "summary": "Acne scars are a change in the skin's structure, not its colour, and the type of scar decides what is likely to help. A doctor assesses which types you have.",
+  "summary": "Acne scars are a change in the skin's structure, not its colour, and the type of scar decides what is likely to help.",
   "leadAnswer": "Acne scarring is a change in the skin's structure, felt as a dip or an irregularity once inflammation has settled. Scars do not fade on their own; they are remodelled gradually, over months. Pico laser is mainly for flat marks rather than texture, so depressed scars usually start with RF microneedling or a resurfacing laser.",
   "treatments": [
     "microneedling",
@@ -11,7 +11,7 @@
     "pico-laser",
     "exosome-therapy"
   ],
-  "reviewedBy": "dr-hong-peiyi",
+  "reviewedBy": "dr-chew-yuhhui",
   "lastReviewed": "2026-10-11",
   "seoTitle": "Acne Scar Treatment in Malaysia | Kaiteki",
   "seoDescription": "Ice pick, boxcar, rolling and raised acne scars respond to different treatments. A doctor assesses which you have. Book a free consultation at Kaiteki.",
@@ -38,7 +38,7 @@
     {
       "heading": "What are acne scars?",
       "body": [
-        "A scar is a change in the skin's structure, felt as a dip or a raised area. A mark is flat: red or brown discolouration on smooth skin. Marks often fade on their own over months; scars do not, and are remodelled gradually instead."
+        "A scar is a change in the skin's structure, felt as a dip or a raised area. A mark is flat: red or brown discolouration on smooth skin."
       ]
     }
   ],
@@ -63,17 +63,17 @@
   "variant": {
     "kind": "tabs",
     "heading": "Which kind of scar do I have?",
-    "intro": "Most people have more than one type. Working out the mix matters, because each type responds to a different approach, and some flat marks are not scars at all.",
+    "intro": "Most people have more than one type.",
     "tabs": [
       {
         "label": "Depressed",
         "sub": "Dips you can feel",
         "title": "Depressed scars",
-        "body": "Dips below the skin surface. Rolling and boxcar scars usually respond better than ice pick scars.",
+        "body": "Dips below the skin surface.",
         "items": [
           {
             "lead": "Ice pick:",
-            "body": "narrow, deep, sharply defined pits. The hardest type to treat with energy devices alone."
+            "body": "narrow, deep, sharply defined pits."
           },
           {
             "lead": "Boxcar:",
@@ -90,7 +90,7 @@
         "label": "Raised",
         "sub": "Firm, above the skin",
         "title": "Raised scars (hypertrophic or keloid)",
-        "body": "Firm, thickened tissue sitting above skin level. More common on the chest, shoulders and back, and treated very differently from depressed scars.",
+        "body": "Firm, thickened tissue sitting above skin level. More common on the chest, shoulders and back.",
         "routing": "a separate assessment, because the approach differs from depressed scarring."
       },
       {
@@ -108,7 +108,7 @@
             "body": "(post-inflammatory hyperpigmentation), from excess pigment produced during inflammation. Very common in the medium and deeper skin tones seen across Malaysia, and worsened by sun exposure."
           }
         ],
-        "routing": "pico laser, with daily sunscreen as a non-negotiable part of the plan."
+        "routing": "pico laser."
       }
     ]
   },
@@ -142,8 +142,8 @@
     "intro": "Have it assessed if:",
     "triggers": [
       "You are already seeing indentations or texture change.",
-      "You still have active breakouts. Treating scarring while acne is still active usually does not work well, so the acne is settled first.",
-      "A scar is raised and firm, which is treated very differently from depressed scarring."
+      "You still have active breakouts.",
+      "A scar is raised and firm."
     ]
   },
   "ctaMid": {
@@ -154,22 +154,21 @@
   "treatmentWhy": {
     "microneedling": {
       "why": "For rolling and boxcar scars, including on deeper skin tones",
-      "body": "Fine needles deliver radiofrequency energy into the deeper layer of the skin to stimulate collagen. Often the starting point for rolling and boxcar scarring, and generally considered a lower pigmentation-risk option for medium and deeper skin tones."
+      "body": "Fine needles deliver radiofrequency energy into the deeper layer of the skin to stimulate collagen."
     },
     "resurfacing-laser": {
       "why": "For established scarring, where the recovery time works for you",
-      "body": "A fractional CO₂ laser used where scarring is more established. More downtime than RF microneedling, and requires careful sun avoidance afterwards. On Asian skin it is used more conservatively, often at lower intensity across more sessions."
+      "body": "A fractional CO₂ laser used where scarring is more established."
     },
     "pico-laser": {
       "why": "For the flat marks around scars, rather than the dips themselves",
-      "body": "A picosecond laser that targets pigment in short, high-speed pulses. Most relevant where what remains is discolouration rather than texture. Some pico devices carry a fractional lens the manufacturer indicates for acne scars in skin types I to IV, and your doctor will say whether that applies to you."
+      "body": "A picosecond laser that targets pigment in short, high-speed pulses."
     },
     "exosome-therapy": {
       "why": "To support the skin after scar treatment, as an adjunct",
-      "body": "A regenerative approach applied after energy-based treatment to support skin recovery. The evidence base is still developing, and it is offered alongside scar treatment rather than as a treatment for scars in its own right."
+      "body": "A regenerative approach applied after energy-based treatment to support skin recovery. The evidence base is still developing."
     }
   },
-  "treatmentsNote": "Scar treatment usually waits until active acne is under control.",
   "compare": {
     "intro": "A general guide. Combinations are common, and sessions are set after assessment.",
     "columns": [
@@ -216,18 +215,17 @@
     "steps": [
       {
         "title": "History",
-        "body": "How long the scarring has been there, whether you still break out, your medical history, and any medication or skincare you're currently using."
+        "body": "How long the scarring has been there, and whether you still break out."
       },
       {
         "title": "Examination",
-        "body": "The doctor examines your skin, sometimes under magnification, to identify which types of scar you have and what is a flat mark rather than a scar."
+        "body": "The doctor examines your skin, sometimes under magnification."
       },
       {
         "title": "Discussion and plan",
-        "body": "Options, risks and downtime for your scar types, and what is realistic, with no obligation to proceed."
+        "body": "Options, risks and downtime, with no obligation to proceed."
       }
-    ],
-    "outro": "Bring a list of anything you're currently applying or taking, including oral acne medication, and tell the doctor about any scar treatment you have had before."
+    ]
   },
   "visitImages": [
     {
@@ -260,7 +258,7 @@
       },
       {
         "lead": "What treatment cannot do",
-        "body": "Scars are improved, rarely erased, and ice pick scars rarely resolve with energy devices alone. Treating scars does not stop new breakouts. Collagen remodels over months, so change is not visible the following week."
+        "body": "Scars are improved, rarely erased, and ice pick scars rarely resolve with energy devices alone. Treating scars does not stop new breakouts. Collagen remodels over months."
       }
     ],
     "disclose": "Tell your doctor if you are pregnant or breastfeeding, take or recently took oral acne medication, have a history of cold sores, keloid scarring or recent tanning, or have had any skin procedure in the past few weeks. Any of these may change what is appropriate or when."
@@ -275,55 +273,38 @@
       "Whether treatments are combined: mixed scarring sometimes responds better to more than one modality."
     ]
   },
-  "technologyIntro": "Having more than one platform means the doctor can match the device to your skin type and to the type of scar, rather than fitting your skin to a single machine.",
   "faqs": [
     {
       "q": "Can acne scars be removed completely?",
-      "a": "Depressed scarring can often be improved, though rarely erased. Treatments like RF microneedling and resurfacing lasers work by stimulating the skin to remodel its own collagen, which takes place gradually over months rather than immediately. How much improvement is realistic depends heavily on scar type: rolling and boxcar scars usually respond better than ice-pick scars, which are narrow and deep."
-    },
-    {
-      "q": "What's the difference between acne scars and acne marks?",
-      "a": "Scarring is the structural change left behind after inflammation has settled, and you can usually feel it as a dip or an irregularity. Marks are flat: red or brown discolouration where the skin is smooth but the colour hasn't returned to normal. Marks often fade on their own over months; scars do not fade on their own."
+      "a": "Depressed scarring can often be improved, though rarely erased. Treatments like RF microneedling and resurfacing lasers work by stimulating the skin to remodel its own collagen, which takes place gradually over months rather than immediately."
     },
     {
       "q": "Is pico laser used for acne scars?",
-      "a": "Pico laser is most relevant to the flat marks and discolouration acne leaves, rather than to the texture of a scar. Some pico devices carry a fractional lens array that the manufacturer indicates for acne scars in skin types I to IV. For rolling and boxcar scars, RF microneedling is often the starting point, and a resurfacing laser where scarring is more established."
+      "a": "Pico laser is most relevant to the flat marks and discolouration acne leaves, rather than to the texture of a scar. Some pico devices carry a fractional lens array that the manufacturer indicates for acne scars in skin types I to IV."
     },
     {
       "q": "Can ice pick scars be treated?",
-      "a": "Ice pick scars are narrow, deep pits and the hardest type to treat with energy devices alone; they rarely resolve fully that way. Rolling and boxcar scars usually respond better. The doctor will say what is realistic for yours."
+      "a": "Ice pick scars are narrow, deep pits and the hardest type to treat with energy devices alone; they rarely resolve fully that way. Rolling and boxcar scars usually respond better."
     },
     {
       "q": "Can I treat my scars while I still have active acne?",
-      "a": "Usually not yet. Treating scarring while acne is still active usually does not work well, and treating active acne will not remove existing scars. Active inflammatory acne is usually managed medically first, and energy-based treatments are generally considered once breakouts are under control, or alongside medical treatment where the doctor judges it appropriate."
-    },
-    {
-      "q": "How many sessions do acne scars need?",
-      "a": "This is set after the doctor examines your skin, because it depends on what's being treated and how severe it is. Energy-based treatments for scarring are typically planned as a course of several sessions spaced around four weeks apart, with a review point built in to check how your skin is responding."
-    },
-    {
-      "q": "How soon will I see a difference in my scars?",
-      "a": "Scar treatment works by stimulating collagen remodelling, and that process continues for months beneath the surface after the skin looks recovered. Deeper scars are often formally reassessed six to twelve months after a course. Taking your own photographs in consistent lighting helps, because daily change is very hard to notice in the mirror."
+      "a": "Usually not yet. Treating scarring while acne is still active usually does not work well, and treating active acne will not remove existing scars."
     },
     {
       "q": "Is laser treatment for acne scars safe on Asian skin?",
-      "a": "Yes, when the device and settings are chosen appropriately by a doctor who is experienced with your skin type. The specific concern with medium and deeper skin tones is post-inflammatory hyperpigmentation, the skin responding to treatment by producing extra pigment. This is managed by selecting suitable devices, using conservative settings, spacing sessions further apart, and being strict about sun protection. It's a real consideration, not a reason to avoid treatment."
+      "a": "Yes, when the device and settings are chosen appropriately by a doctor who is experienced with your skin type. The specific concern with medium and deeper skin tones is post-inflammatory hyperpigmentation, the skin responding to treatment by producing extra pigment. It's a real consideration, not a reason to avoid treatment."
     },
     {
       "q": "What is the downtime after acne scar treatment?",
-      "a": "It depends on the treatment. After RF microneedling, most people wait until the redness settles, typically two to three days. After fractional CO2 resurfacing, expect redness, swelling and a hot, tight feeling for the first day or two, then several days of bronzing and flaking; a lighter session commonly settles within about a week, and deeper settings take longer. Your doctor will give you specific timing for what you've had."
+      "a": "After RF microneedling, most people wait until the redness settles, typically two to three days. After fractional CO2 resurfacing, expect redness, swelling and a hot, tight feeling for the first day or two, then several days of bronzing and flaking; a lighter session commonly settles within about a week, and deeper settings take longer."
     },
     {
       "q": "Is acne scar treatment painful?",
-      "a": "Most people describe energy-based treatments as uncomfortable rather than painful. Topical numbing cream is applied beforehand where appropriate, and cooling is used during and after. Ablative resurfacing is more uncomfortable than non-ablative treatments, and RF microneedling is generally felt more than pico laser. Settings and numbing time can be adjusted."
+      "a": "Most people describe energy-based treatments as uncomfortable rather than painful. Topical numbing cream is applied beforehand where appropriate, and cooling is used during and after. Ablative resurfacing is more uncomfortable than non-ablative treatments, and RF microneedling is generally felt more than pico laser."
     },
     {
       "q": "Can acne scars on the back or chest be treated?",
-      "a": "Yes, though these areas behave differently from the face. Skin on the back and chest is thicker, lesions there tend to be larger, and scarring is more likely to be raised than depressed, which calls for a different approach entirely. Treatment sessions also cover a bigger area."
-    },
-    {
-      "q": "Can new acne still scar after treatment?",
-      "a": "Yes. Treating scars addresses what previous breakouts left behind. It doesn't change your skin's underlying tendency to break out, so acne can recur. That's why the plan usually includes a maintenance element: appropriate daily skincare, sun protection, and ongoing medical management where indicated. Long-term control is a realistic goal; a permanent cure isn't something anyone can promise."
+      "a": "Yes, though these areas behave differently from the face. Skin on the back and chest is thicker, lesions there tend to be larger, and scarring is more likely to be raised than depressed, which calls for a different approach entirely."
     }
   ],
   "relatedConcerns": [

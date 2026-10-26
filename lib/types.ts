@@ -77,9 +77,9 @@ export interface Treatment {
    *  `notSuitableFor` as a scannable suitable/not-suitable checklist. */
   suitableFor?: string[];
   /** Contraindications / who should avoid this treatment (docs/05 §9) —
-   *  paired with `suitableFor`. Before/after patient photography belongs on
-   *  concern pages only, under docs/adr/0001-before-after-imagery.md; treatment
-   *  pages carry none. */
+   *  paired with `suitableFor`. Before/after photography is authored on
+   *  concerns only; a treatment page derives its concerns' set
+   *  (docs/adr/0001-before-after-imagery.md §6). */
   notSuitableFor?: string[];
   /** Factual comparison vs alternative treatments for the same concerns. */
   comparisons?: { name: string; bestFor: string; downtime: string }[];

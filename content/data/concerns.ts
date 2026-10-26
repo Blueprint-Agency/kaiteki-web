@@ -24,9 +24,9 @@ export const concerns: Concern[] = [
     group: "Skin",
     image: "https://cdn.kaiteki.my/concerns/acne/card.jpg",
     summary:
-      "Active breakouts and old scarring respond to different treatments. A doctor identifies the type and cause before recommending a plan.",
+      "Active breakouts and old scarring respond to different treatments.",
     leadAnswer:
-      "Acne is a common skin condition in which pores become blocked with oil and dead skin, leading to blackheads, inflamed spots and sometimes scarring. Active breakouts, flat marks and scars are three different problems: active acne is usually managed medically first, and energy-based treatment is considered for the marks and scars it leaves.",
+      "Acne is a common skin condition in which pores become blocked with oil and dead skin, leading to blackheads, inflamed spots and sometimes scarring. Active acne is usually managed medically first, and energy-based treatment is considered for the marks and scars it leaves.",
     treatments: [
       "pico-laser",
       "microneedling",
@@ -86,7 +86,7 @@ export const concerns: Concern[] = [
       {
         heading: "What is acne?",
         body: [
-          "Acne occurs when hair follicles become blocked with oil and dead skin cells. That blockage can stay quiet as a blackhead or whitehead, or it can become inflamed and form a red, tender spot. It most often appears on the face, but the back, chest and shoulders are also common.",
+          "Acne occurs when hair follicles become blocked with oil and dead skin cells. That blockage can stay quiet as a blackhead or whitehead, or it can become inflamed and form a red, tender spot.",
         ],
       },
     ],
@@ -115,8 +115,6 @@ export const concerns: Concern[] = [
           body: "family history, certain medications, occlusive skincare or makeup, humidity and sweat, friction from helmets, straps or masks.",
         },
       ],
-      outro:
-        "Diet, stress and sleep can influence acne for some people, but they are rarely the whole picture on their own.",
     },
 
     // ── 05 · the differentiator. Three tabs, each ending in a routing line that
@@ -132,21 +130,7 @@ export const concerns: Concern[] = [
           label: "Active acne",
           sub: "Spots you have now",
           title: "Active acne",
-          body: "Spots that are currently forming. These are usually treated medically first, with topical or oral treatment, because settling the inflammation protects the skin from further marking and scarring.",
-          items: [
-            {
-              lead: "Comedonal:",
-              body: "blackheads and whiteheads, no redness. Often across the forehead, nose and chin.",
-            },
-            {
-              lead: "Inflammatory:",
-              body: "red papules and pustules that are tender to touch.",
-            },
-            {
-              lead: "Nodulocystic:",
-              body: "deep, firm, painful lumps under the skin that do not come to a head. The type most likely to scar.",
-            },
-          ],
+          body: "Spots that are currently forming.",
           routing:
             "medical management first, with clinic facials or RF microneedling considered as support once the doctor advises it.",
         },
@@ -165,13 +149,13 @@ export const concerns: Concern[] = [
               body: "(post-inflammatory hyperpigmentation), from excess pigment produced during inflammation. Very common in the medium and deeper skin tones seen across Malaysia, and worsened by sun exposure.",
             },
           ],
-          routing: "pico laser, with daily sunscreen as a non-negotiable part of the plan.",
+          routing: "pico laser.",
         },
         {
           label: "Scarring",
           sub: "Texture you can feel",
           title: "Acne scarring",
-          body: "A change in the skin's structure you can feel as a dip or a raised area. Scars do not fade on their own. The scar types and how each is approached are covered on the acne scars page.",
+          body: "A change in the skin's structure you can feel as a dip or a raised area. Scars do not fade on their own.",
           routing:
             "RF microneedling or resurfacing laser, often over several sessions, with combinations chosen by scar type.",
         },
@@ -213,7 +197,7 @@ export const concerns: Concern[] = [
     locationBlock: {
       heading: "Where acne appears",
       intro:
-        "Location is a clue, not a diagnosis. The idea that a spot in one place points to a specific organ has no clinical basis, but some patterns are genuinely useful to notice.",
+        "Location is a clue, not a diagnosis.",
       cards: [
         {
           title: "Chin and jawline",
@@ -221,15 +205,15 @@ export const concerns: Concern[] = [
         },
         {
           title: "Forehead",
-          body: "Commonly linked to oil, sweat, hair products and friction from caps, helmets or fringes. Small rough bumps here are usually closed comedones.",
+          body: "Commonly linked to oil, sweat, hair products and friction from caps, helmets or fringes.",
         },
         {
           title: "Cheeks",
-          body: "Friction and contact are frequent contributors: phone screens, pillowcases, mask edges. Cheeks also mark and scar readily.",
+          body: "Friction and contact are frequent contributors: phone screens, pillowcases, mask edges.",
         },
         {
           title: "Nose",
-          body: "Dense oil glands mean blackheads and visible pores are common here. Squeezing tends to worsen both.",
+          body: "Dense oil glands mean blackheads and visible pores are common here.",
         },
         {
           title: "Back, chest and shoulders",
@@ -238,7 +222,7 @@ export const concerns: Concern[] = [
       ],
       note: {
         title: "Not typical acne?",
-        body: "Small uniform bumps that itch, or rashes that do not respond to acne treatment, may be something else entirely, such as folliculitis or rosacea. A doctor can tell the difference.",
+        body: "Small uniform bumps that itch, or rashes that do not respond to acne treatment, may be something else entirely, such as folliculitis or rosacea.",
       },
     },
 
@@ -248,12 +232,9 @@ export const concerns: Concern[] = [
       triggers: [
         "Over-the-counter products have not helped after around eight to twelve weeks of consistent use.",
         "Spots are deep, painful or leaving marks behind.",
-        "You are already seeing indentations or texture change.",
         "Breakouts started in adulthood, or changed pattern suddenly.",
         "Your acne is affecting your mood, confidence or how you go about your day.",
       ],
-      outro:
-        "With deep or scarring acne, early assessment matters: the aim is to settle inflammation before it leaves permanent change.",
     },
 
     // ── 08
@@ -269,7 +250,7 @@ export const concerns: Concern[] = [
     treatmentWhy: {
       "pico-laser": {
         why: "For post-acne marks and uneven tone",
-        body: "A picosecond laser that targets pigment in short, high-speed pulses. Most relevant once acne has settled and what remains is discolouration rather than texture.",
+        body: "A picosecond laser that targets pigment in short, high-speed pulses.",
       },
       microneedling: {
         why: "For depressed scarring, texture and enlarged pores",
@@ -277,19 +258,17 @@ export const concerns: Concern[] = [
       },
       "resurfacing-laser": {
         why: "For deeper scarring and significant texture change",
-        body: "A fractional CO₂ laser used where scarring is more established. More downtime than the options above, and requires careful sun avoidance afterwards.",
+        body: "A fractional CO₂ laser used where scarring is more established. More downtime than the options above.",
       },
       "exosome-therapy": {
         why: "Used alongside other treatments, not instead of them",
-        body: "A regenerative approach applied after energy-based treatment to support skin recovery. The evidence base is still developing, and it is offered as an adjunct rather than a standalone acne treatment.",
+        body: "A regenerative approach applied after energy-based treatment to support skin recovery. The evidence base is still developing.",
       },
       "facial-treatments": {
         why: "For congestion, cleansing and ongoing maintenance",
-        body: "Hydrafacial and Silkpeel are used to support cleansing and exfoliation, particularly with comedonal congestion. Supportive care. They do not replace medical treatment for inflammatory acne.",
+        body: "Hydrafacial and Silkpeel are used to support cleansing and exfoliation, particularly with comedonal congestion. They do not replace medical treatment for inflammatory acne.",
       },
     },
-    treatmentsNote:
-      "Active inflammatory acne is usually managed medically first. Energy-based treatments are generally considered once breakouts are under control, or alongside medical treatment where the doctor judges it appropriate.",
 
     // ── 10 · full depth only. "Commonly considered", never "best suited" (R-02),
     // and no column promises a result or a timeframe to one.
@@ -346,19 +325,17 @@ export const concerns: Concern[] = [
       steps: [
         {
           title: "History",
-          body: "What you've tried, how long it's been going on, your medical history, and any medication or skincare you're currently using.",
+          body: "What you've tried, and any medication or skincare you currently use.",
         },
         {
           title: "Examination",
-          body: "The doctor examines your skin, sometimes under magnification, to identify what's active, what's marking, and what's scarring.",
+          body: "The doctor examines your skin, sometimes under magnification.",
         },
         {
           title: "Discussion and plan",
-          body: "Options, risks and downtime for active acne, marks and scarring, and what is realistic, with no obligation to proceed.",
+          body: "Options, risks and downtime, with no obligation to proceed.",
         },
       ],
-      outro:
-        "Bring a list of anything you're currently applying or taking, including supplements and oral acne medication. If you have photographs of your skin during a flare, those help too.",
     },
 
     // ── 12 media · no visitImages: the three legacy "procedure" files were
@@ -378,11 +355,11 @@ export const concerns: Concern[] = [
         },
         {
           lead: "Sun protection is not optional",
-          body: "Daily broad-spectrum sunscreen is part of the plan for every treatment listed above, both before and after. Without it, marks are likely to return or deepen.",
+          body: "Daily broad-spectrum sunscreen is part of the plan for every treatment listed above, both before and after.",
         },
         {
           lead: "What treatment cannot do",
-          body: "Ice-pick scarring rarely resolves fully with energy devices alone. Acne can recur after treatment, because treating marks or scars does not change the tendency to break out. Improvement builds gradually over months as collagen remodels. It is not visible the following week.",
+          body: "Ice-pick scarring rarely resolves fully with energy devices alone. Acne can recur after treatment, because treating marks or scars does not change the tendency to break out. Improvement builds gradually over months as collagen remodels.",
         },
       ],
       disclose:
@@ -403,55 +380,39 @@ export const concerns: Concern[] = [
       ],
     },
 
-    // ── 16 · twelve questions, 60–90 words each, all in the DOM (R-10).
+    // ── 16 · eight questions (full depth), short answers, all in the DOM (R-10).
     faqs: [
       {
-        q: "What's the difference between active acne and acne scars?",
-        a: "Active acne is what's forming now: spots, redness, congestion. Scarring is the structural change left behind after inflammation has settled, and you can usually feel it as a dip or an irregularity. Between the two sit flat marks: red or brown discolouration where the skin is smooth but the colour hasn't returned to normal. All three often coexist and are treated differently.",
-      },
-      {
         q: "Can acne scarring be treated?",
-        a: "Depressed scarring can often be improved, though rarely erased. Treatments like RF microneedling and resurfacing lasers work by stimulating the skin to remodel its own collagen, which takes place gradually over months rather than immediately. How much improvement is realistic depends heavily on scar type: rolling and boxcar scars usually respond better than ice-pick scars, which are narrow and deep. See the acne scars page for each scar type.",
+        a: "Depressed scarring can often be improved, though rarely erased. How much improvement is realistic depends heavily on scar type: rolling and boxcar scars usually respond better than ice-pick scars, which are narrow and deep. See the acne scars page for each scar type.",
       },
       {
         q: "Why does adult acne happen?",
-        a: "Adult acne is usually multi-factorial. Hormonal fluctuation is a frequent contributor, particularly for women with breakouts around the jawline and chin that follow a cycle. Skincare and makeup that block pores, certain medications, stress affecting sleep and skin barrier function, and simple genetic tendency all play a part. It's also common for adult acne to look different from teenage acne: fewer spots, but deeper and slower to settle.",
+        a: "Adult acne is usually multi-factorial. Hormonal fluctuation is a frequent contributor, particularly for women with breakouts around the jawline and chin that follow a cycle. It's also common for adult acne to look different from teenage acne: fewer spots, but deeper and slower to settle.",
       },
       {
         q: "Will treatment make my acne worse first?",
-        a: "Some medical acne treatments involve an initial adjustment period where the skin appears worse before it improves. This is expected with certain topical treatments and your doctor will tell you in advance if it applies. Energy-based treatments don't typically cause a flare, but they can leave redness or dryness for a few days.",
-      },
-      {
-        q: "How many sessions will I need?",
-        a: "This is set after the doctor examines your skin, because it depends on what's being treated and how severe it is. Energy-based treatments for scarring are typically planned as a course of several sessions spaced around four weeks apart, with a review point built in to check how your skin is responding.",
-      },
-      {
-        q: "How soon will I see a difference?",
-        a: "It depends entirely on what's being treated. Marks and discolouration generally shift earlier than structural scarring. Scar treatment works by stimulating collagen remodelling, and that process continues for months beneath the surface after the skin looks recovered. Deeper scars are often formally reassessed six to twelve months after a course. Taking your own photographs in consistent lighting helps, because daily change is very hard to notice in the mirror.",
+        a: "Some medical acne treatments involve an initial adjustment period where the skin appears worse before it improves. Energy-based treatments don't typically cause a flare, but they can leave redness or dryness for a few days.",
       },
       {
         q: "Is laser treatment safe for darker or Asian skin tones?",
-        a: "Yes, when the device and settings are chosen appropriately by a doctor who is experienced with your skin type. The specific concern with medium and deeper skin tones is post-inflammatory hyperpigmentation, the skin responding to treatment by producing extra pigment. This is managed by selecting suitable devices, using conservative settings, spacing sessions further apart, and being strict about sun protection. It's a real consideration, not a reason to avoid treatment.",
+        a: "Yes, when the device and settings are chosen appropriately by a doctor who is experienced with your skin type. The specific concern with medium and deeper skin tones is post-inflammatory hyperpigmentation, the skin responding to treatment by producing extra pigment. It's a real consideration, not a reason to avoid treatment.",
       },
       {
         q: "Can I wear makeup after treatment?",
-        a: "It depends on the treatment. After minimal-downtime treatments, makeup can usually be applied the following day. After RF microneedling, most people wait until the redness settles, typically two to three days. After resurfacing laser, longer: the skin needs to re-epithelialise first. Your doctor will give you specific timing for what you've had.",
+        a: "After minimal-downtime treatments, makeup can usually be applied the following day. After RF microneedling, most people wait until the redness settles, typically two to three days. After resurfacing laser, longer: the skin needs to re-epithelialise first.",
       },
       {
         q: "Will my acne come back after treatment?",
-        a: "Possibly. Treating marks or scars addresses what previous breakouts left behind. It doesn't change your skin's underlying tendency to break out. Acne is a chronic condition for many people, with periods of flare and quiet. That's why the plan usually includes a maintenance element: appropriate daily skincare, sun protection, and ongoing medical management where indicated. Long-term control is a realistic goal; a permanent cure isn't something anyone can promise.",
+        a: "Possibly. Acne is a chronic condition for many people, with periods of flare and quiet. That's why the plan usually includes a maintenance element: appropriate daily skincare, sun protection, and ongoing medical management where indicated.",
       },
       {
         q: "Do I need to stop my current skincare or acne medication?",
-        a: "Don't stop anything without telling your doctor first. Some products, retinoids and exfoliating acids in particular, are usually paused for a period before and after energy-based treatment. Oral acne medication matters especially: if you're taking it now or have taken it recently, say so at the consultation, as it can affect the timing of what's appropriate.",
+        a: "Don't stop anything without telling your doctor first. Some products, retinoids and exfoliating acids in particular, are usually paused for a period before and after energy-based treatment.",
       },
       {
         q: "Is treatment painful?",
-        a: "Most people describe energy-based treatments as uncomfortable rather than painful. Topical numbing cream is applied beforehand where appropriate, and cooling is used during and after. RF microneedling is generally felt more than pico laser. Settings and numbing time can be adjusted.",
-      },
-      {
-        q: "Can acne on my back or chest be treated?",
-        a: "Yes, though these areas behave differently from the face. Skin on the back and chest is thicker, lesions there tend to be larger, and scarring is more likely to be raised than depressed, which calls for a different approach entirely. Treatment sessions also cover a bigger area.",
+        a: "Most people describe energy-based treatments as uncomfortable rather than painful. Topical numbing cream is applied beforehand where appropriate, and cooling is used during and after. RF microneedling is generally felt more than pico laser.",
       },
     ],
 
@@ -496,7 +457,7 @@ export const concerns: Concern[] = [
     group: "Skin",
     image: "https://cdn.kaiteki.my/concerns/acne-scars/card-2.jpg",
     summary:
-      "Acne scars are a change in the skin's structure, not its colour, and the type of scar decides what is likely to help. A doctor assesses which types you have.",
+      "Acne scars are a change in the skin's structure, not its colour, and the type of scar decides what is likely to help.",
     leadAnswer:
       "Acne scarring is a change in the skin's structure, felt as a dip or an irregularity once inflammation has settled. Scars do not fade on their own; they are remodelled gradually, over months. Pico laser is mainly for flat marks rather than texture, so depressed scars usually start with RF microneedling or a resurfacing laser.",
     treatments: ["microneedling", "resurfacing-laser", "pico-laser", "exosome-therapy"],
@@ -535,7 +496,7 @@ export const concerns: Concern[] = [
       {
         heading: "What are acne scars?",
         body: [
-          "A scar is a change in the skin's structure, felt as a dip or a raised area. A mark is flat: red or brown discolouration on smooth skin. Marks often fade on their own over months; scars do not, and are remodelled gradually instead.",
+          "A scar is a change in the skin's structure, felt as a dip or a raised area. A mark is flat: red or brown discolouration on smooth skin.",
         ],
       },
     ],
@@ -566,17 +527,17 @@ export const concerns: Concern[] = [
       kind: "tabs",
       heading: "Which kind of scar do I have?",
       intro:
-        "Most people have more than one type. Working out the mix matters, because each type responds to a different approach, and some flat marks are not scars at all.",
+        "Most people have more than one type.",
       tabs: [
         {
           label: "Depressed",
           sub: "Dips you can feel",
           title: "Depressed scars",
-          body: "Dips below the skin surface. Rolling and boxcar scars usually respond better than ice pick scars.",
+          body: "Dips below the skin surface.",
           items: [
             {
               lead: "Ice pick:",
-              body: "narrow, deep, sharply defined pits. The hardest type to treat with energy devices alone.",
+              body: "narrow, deep, sharply defined pits.",
             },
             {
               lead: "Boxcar:",
@@ -594,7 +555,7 @@ export const concerns: Concern[] = [
           label: "Raised",
           sub: "Firm, above the skin",
           title: "Raised scars (hypertrophic or keloid)",
-          body: "Firm, thickened tissue sitting above skin level. More common on the chest, shoulders and back, and treated very differently from depressed scars.",
+          body: "Firm, thickened tissue sitting above skin level. More common on the chest, shoulders and back.",
           routing: "a separate assessment, because the approach differs from depressed scarring.",
         },
         {
@@ -612,7 +573,7 @@ export const concerns: Concern[] = [
               body: "(post-inflammatory hyperpigmentation), from excess pigment produced during inflammation. Very common in the medium and deeper skin tones seen across Malaysia, and worsened by sun exposure.",
             },
           ],
-          routing: "pico laser, with daily sunscreen as a non-negotiable part of the plan.",
+          routing: "pico laser.",
         },
       ],
     },
@@ -650,8 +611,8 @@ export const concerns: Concern[] = [
       intro: "Have it assessed if:",
       triggers: [
         "You are already seeing indentations or texture change.",
-        "You still have active breakouts. Treating scarring while acne is still active usually does not work well, so the acne is settled first.",
-        "A scar is raised and firm, which is treated very differently from depressed scarring.",
+        "You still have active breakouts.",
+        "A scar is raised and firm.",
       ],
     },
 
@@ -667,23 +628,21 @@ export const concerns: Concern[] = [
     treatmentWhy: {
       microneedling: {
         why: "For rolling and boxcar scars, including on deeper skin tones",
-        body: "Fine needles deliver radiofrequency energy into the deeper layer of the skin to stimulate collagen. Often the starting point for rolling and boxcar scarring, and generally considered a lower pigmentation-risk option for medium and deeper skin tones.",
+        body: "Fine needles deliver radiofrequency energy into the deeper layer of the skin to stimulate collagen.",
       },
       "resurfacing-laser": {
         why: "For established scarring, where the recovery time works for you",
-        body: "A fractional CO₂ laser used where scarring is more established. More downtime than RF microneedling, and requires careful sun avoidance afterwards. On Asian skin it is used more conservatively, often at lower intensity across more sessions.",
+        body: "A fractional CO₂ laser used where scarring is more established.",
       },
       "pico-laser": {
         why: "For the flat marks around scars, rather than the dips themselves",
-        body: "A picosecond laser that targets pigment in short, high-speed pulses. Most relevant where what remains is discolouration rather than texture. Some pico devices carry a fractional lens the manufacturer indicates for acne scars in skin types I to IV, and your doctor will say whether that applies to you.",
+        body: "A picosecond laser that targets pigment in short, high-speed pulses.",
       },
       "exosome-therapy": {
         why: "To support the skin after scar treatment, as an adjunct",
-        body: "A regenerative approach applied after energy-based treatment to support skin recovery. The evidence base is still developing, and it is offered alongside scar treatment rather than as a treatment for scars in its own right.",
+        body: "A regenerative approach applied after energy-based treatment to support skin recovery. The evidence base is still developing.",
       },
     },
-    treatmentsNote:
-      "Scar treatment usually waits until active acne is under control.",
 
     // ── 10 · full depth. "Commonly considered", never "best suited" (R-02).
     compare: {
@@ -711,19 +670,17 @@ export const concerns: Concern[] = [
       steps: [
         {
           title: "History",
-          body: "How long the scarring has been there, whether you still break out, your medical history, and any medication or skincare you're currently using.",
+          body: "How long the scarring has been there, and whether you still break out.",
         },
         {
           title: "Examination",
-          body: "The doctor examines your skin, sometimes under magnification, to identify which types of scar you have and what is a flat mark rather than a scar.",
+          body: "The doctor examines your skin, sometimes under magnification.",
         },
         {
           title: "Discussion and plan",
-          body: "Options, risks and downtime for your scar types, and what is realistic, with no obligation to proceed.",
+          body: "Options, risks and downtime, with no obligation to proceed.",
         },
       ],
-      outro:
-        "Bring a list of anything you're currently applying or taking, including oral acne medication, and tell the doctor about any scar treatment you have had before.",
     },
     // procedure-01/02 (framed legacy before/after composites) removed: this
     // block shows a device in use, never an outcome.
@@ -764,7 +721,7 @@ export const concerns: Concern[] = [
         },
         {
           lead: "What treatment cannot do",
-          body: "Scars are improved, rarely erased, and ice pick scars rarely resolve with energy devices alone. Treating scars does not stop new breakouts. Collagen remodels over months, so change is not visible the following week.",
+          body: "Scars are improved, rarely erased, and ice pick scars rarely resolve with energy devices alone. Treating scars does not stop new breakouts. Collagen remodels over months.",
         },
       ],
       disclose:
@@ -784,59 +741,39 @@ export const concerns: Concern[] = [
       ],
     },
 
-    // ── 15
-    technologyIntro:
-      "Having more than one platform means the doctor can match the device to your skin type and to the type of scar, rather than fitting your skin to a single machine.",
-
-    // ── 16 · twelve questions (full depth), all from reviewed copy.
+    // ── 16 · eight questions (full depth), all from reviewed copy.
     faqs: [
       {
         q: "Can acne scars be removed completely?",
-        a: "Depressed scarring can often be improved, though rarely erased. Treatments like RF microneedling and resurfacing lasers work by stimulating the skin to remodel its own collagen, which takes place gradually over months rather than immediately. How much improvement is realistic depends heavily on scar type: rolling and boxcar scars usually respond better than ice-pick scars, which are narrow and deep.",
-      },
-      {
-        q: "What's the difference between acne scars and acne marks?",
-        a: "Scarring is the structural change left behind after inflammation has settled, and you can usually feel it as a dip or an irregularity. Marks are flat: red or brown discolouration where the skin is smooth but the colour hasn't returned to normal. Marks often fade on their own over months; scars do not fade on their own.",
+        a: "Depressed scarring can often be improved, though rarely erased. Treatments like RF microneedling and resurfacing lasers work by stimulating the skin to remodel its own collagen, which takes place gradually over months rather than immediately.",
       },
       {
         q: "Is pico laser used for acne scars?",
-        a: "Pico laser is most relevant to the flat marks and discolouration acne leaves, rather than to the texture of a scar. Some pico devices carry a fractional lens array that the manufacturer indicates for acne scars in skin types I to IV. For rolling and boxcar scars, RF microneedling is often the starting point, and a resurfacing laser where scarring is more established.",
+        a: "Pico laser is most relevant to the flat marks and discolouration acne leaves, rather than to the texture of a scar. Some pico devices carry a fractional lens array that the manufacturer indicates for acne scars in skin types I to IV.",
       },
       {
         q: "Can ice pick scars be treated?",
-        a: "Ice pick scars are narrow, deep pits and the hardest type to treat with energy devices alone; they rarely resolve fully that way. Rolling and boxcar scars usually respond better. The doctor will say what is realistic for yours.",
+        a: "Ice pick scars are narrow, deep pits and the hardest type to treat with energy devices alone; they rarely resolve fully that way. Rolling and boxcar scars usually respond better.",
       },
       {
         q: "Can I treat my scars while I still have active acne?",
-        a: "Usually not yet. Treating scarring while acne is still active usually does not work well, and treating active acne will not remove existing scars. Active inflammatory acne is usually managed medically first, and energy-based treatments are generally considered once breakouts are under control, or alongside medical treatment where the doctor judges it appropriate.",
-      },
-      {
-        q: "How many sessions do acne scars need?",
-        a: "This is set after the doctor examines your skin, because it depends on what's being treated and how severe it is. Energy-based treatments for scarring are typically planned as a course of several sessions spaced around four weeks apart, with a review point built in to check how your skin is responding.",
-      },
-      {
-        q: "How soon will I see a difference in my scars?",
-        a: "Scar treatment works by stimulating collagen remodelling, and that process continues for months beneath the surface after the skin looks recovered. Deeper scars are often formally reassessed six to twelve months after a course. Taking your own photographs in consistent lighting helps, because daily change is very hard to notice in the mirror.",
+        a: "Usually not yet. Treating scarring while acne is still active usually does not work well, and treating active acne will not remove existing scars.",
       },
       {
         q: "Is laser treatment for acne scars safe on Asian skin?",
-        a: "Yes, when the device and settings are chosen appropriately by a doctor who is experienced with your skin type. The specific concern with medium and deeper skin tones is post-inflammatory hyperpigmentation, the skin responding to treatment by producing extra pigment. This is managed by selecting suitable devices, using conservative settings, spacing sessions further apart, and being strict about sun protection. It's a real consideration, not a reason to avoid treatment.",
+        a: "Yes, when the device and settings are chosen appropriately by a doctor who is experienced with your skin type. The specific concern with medium and deeper skin tones is post-inflammatory hyperpigmentation, the skin responding to treatment by producing extra pigment. It's a real consideration, not a reason to avoid treatment.",
       },
       {
         q: "What is the downtime after acne scar treatment?",
-        a: "It depends on the treatment. After RF microneedling, most people wait until the redness settles, typically two to three days. After fractional CO2 resurfacing, expect redness, swelling and a hot, tight feeling for the first day or two, then several days of bronzing and flaking; a lighter session commonly settles within about a week, and deeper settings take longer. Your doctor will give you specific timing for what you've had.",
+        a: "After RF microneedling, most people wait until the redness settles, typically two to three days. After fractional CO2 resurfacing, expect redness, swelling and a hot, tight feeling for the first day or two, then several days of bronzing and flaking; a lighter session commonly settles within about a week, and deeper settings take longer.",
       },
       {
         q: "Is acne scar treatment painful?",
-        a: "Most people describe energy-based treatments as uncomfortable rather than painful. Topical numbing cream is applied beforehand where appropriate, and cooling is used during and after. Ablative resurfacing is more uncomfortable than non-ablative treatments, and RF microneedling is generally felt more than pico laser. Settings and numbing time can be adjusted.",
+        a: "Most people describe energy-based treatments as uncomfortable rather than painful. Topical numbing cream is applied beforehand where appropriate, and cooling is used during and after. Ablative resurfacing is more uncomfortable than non-ablative treatments, and RF microneedling is generally felt more than pico laser.",
       },
       {
         q: "Can acne scars on the back or chest be treated?",
-        a: "Yes, though these areas behave differently from the face. Skin on the back and chest is thicker, lesions there tend to be larger, and scarring is more likely to be raised than depressed, which calls for a different approach entirely. Treatment sessions also cover a bigger area.",
-      },
-      {
-        q: "Can new acne still scar after treatment?",
-        a: "Yes. Treating scars addresses what previous breakouts left behind. It doesn't change your skin's underlying tendency to break out, so acne can recur. That's why the plan usually includes a maintenance element: appropriate daily skincare, sun protection, and ongoing medical management where indicated. Long-term control is a realistic goal; a permanent cure isn't something anyone can promise.",
+        a: "Yes, though these areas behave differently from the face. Skin on the back and chest is thicker, lesions there tend to be larger, and scarring is more likely to be raised than depressed, which calls for a different approach entirely.",
       },
     ],
 
@@ -871,7 +808,7 @@ export const concerns: Concern[] = [
     group: "Skin",
     image: "https://cdn.kaiteki.my/concerns/pigmentation/card.jpg",
     summary:
-      "Melasma, sun spots and post-inflammatory marks each behave differently. The right laser or treatment depends on which type you have.",
+      "Melasma, sun spots and post-inflammatory marks each behave differently.",
     leadAnswer:
       "Pigmentation describes areas of darker skin, most commonly sun spots, melasma and marks left after inflammation. They can look alike but are managed differently: sun spots are often treated with pico laser, melasma is managed conservatively and long-term, and post-inflammatory marks usually start with treating the cause.",
     treatments: [
@@ -927,7 +864,7 @@ export const concerns: Concern[] = [
       {
         heading: "What is pigmentation?",
         body: [
-          "Skin colour comes from melanin, made by cells called melanocytes. Pigmentation becomes a concern when melanin is produced or distributed unevenly, leaving patches darker than the surrounding skin. Several different conditions do this, and they are not treated the same way.",
+          "Skin colour comes from melanin, made by cells called melanocytes. Pigmentation becomes a concern when melanin is produced or distributed unevenly, leaving patches darker than the surrounding skin.",
         ],
       },
     ],
@@ -947,7 +884,7 @@ export const concerns: Concern[] = [
         },
         {
           lead: "Hormonal change:",
-          body: "pregnancy, hormonal contraception and thyroid conditions are all associated with melasma, which is why it is sometimes called the mask of pregnancy.",
+          body: "pregnancy, hormonal contraception and thyroid conditions are all associated with melasma.",
         },
         {
           lead: "Inflammation or injury to the skin:",
@@ -958,8 +895,6 @@ export const concerns: Concern[] = [
           body: "medium and deeper skin tones produce pigment more readily in response to injury, and melasma in particular tends to run in families.",
         },
       ],
-      outro:
-        "Heat matters too, independently of UV. Cooking, hot yoga and long periods outdoors can aggravate melasma even where sunscreen is being used properly.",
     },
 
     // ── 05 · the differentiator. Three tabs, each with a routing line, because
@@ -972,14 +907,14 @@ export const concerns: Concern[] = [
       // reviewing doctor: sun spots epidermal; melasma and PIH can be either.
       diagram: "skin-depth",
       intro:
-        "These three account for most cases. They look alike in a mirror and are managed very differently.",
+        "These three account for most cases.",
       tabs: [
         {
           depth: "epidermis",
           label: "Sun spots",
           sub: "Defined brown patches",
           title: "Sun-related pigmentation",
-          body: "Discrete, fairly well-defined brown patches on the areas that catch the most light: the cheekbones, the bridge of the nose, the forehead, the backs of the hands. They accumulate slowly over years and do not fade in the way a tan does.",
+          body: "Discrete, fairly well-defined brown patches on the areas that catch the most light. They accumulate slowly over years and do not fade in the way a tan does.",
           items: [
             {
               lead: "Solar lentigines:",
@@ -990,26 +925,22 @@ export const concerns: Concern[] = [
               body: "smaller, lighter and more numerous, usually appearing early in life and darkening with sun exposure.",
             },
           ],
-          routing: "commonly assessed for pico laser, with daily sun protection built into the plan.",
+          routing: "commonly assessed for pico laser.",
         },
         {
           depth: "both",
           label: "Melasma",
           sub: "Symmetrical, blurred edges",
           title: "Melasma",
-          body: "Larger, symmetrical patches with soft, ill-defined edges, typically across the cheeks, upper lip, forehead and jaw. It is hormone-influenced and heat-sensitive, and it is the one type where aggressive treatment tends to make things worse rather than better.",
+          body: "Larger, symmetrical patches with soft, ill-defined edges, typically across the cheeks, upper lip, forehead and jaw. It is hormone-influenced and heat-sensitive.",
           items: [
             {
-              lead: "Symmetry is the clue:",
-              body: "melasma usually appears in a mirror-image pattern on both sides of the face.",
-            },
-            {
               lead: "It fluctuates:",
-              body: "it darkens with sun, heat and hormonal shifts, and lightens again in quieter periods. That cycle continues whether or not it is treated.",
+              body: "it darkens with sun, heat and hormonal shifts, and lightens again in quieter periods.",
             },
           ],
           routing:
-            "assessed cautiously: conservative settings, longer intervals, daily protection. See the melasma page for the full picture.",
+            "assessed cautiously: conservative settings, longer intervals, daily protection.",
         },
         {
           depth: "both",
@@ -1024,7 +955,7 @@ export const concerns: Concern[] = [
             },
             {
               lead: "It often fades on its own:",
-              body: "though slowly, over months, and sun exposure prolongs it. Treating the underlying cause matters more than treating the mark.",
+              body: "though slowly, over months, and sun exposure prolongs it.",
             },
           ],
           routing:
@@ -1049,11 +980,11 @@ export const concerns: Concern[] = [
         },
         {
           title: "Forehead and temples",
-          body: "Sun exposure dominates here, and hair products or a fringe can also contribute by trapping heat and irritation against the skin.",
+          body: "Sun exposure dominates here.",
         },
         {
           title: "Nose and bridge",
-          body: "Catches direct light all day, so freckles and solar lentigines cluster here. Also the area most likely to be missed when sunscreen is applied in a hurry.",
+          body: "Catches direct light all day, so freckles and solar lentigines cluster here.",
         },
         {
           title: "Neck, chest and hands",
@@ -1062,7 +993,7 @@ export const concerns: Concern[] = [
       ],
       note: {
         title: "Not typical pigmentation?",
-        body: "A mark that is changing in size, shape or colour, has an irregular border, itches or bleeds should be examined promptly. That is a different assessment entirely, and it is not a cosmetic one.",
+        body: "A mark that is changing in size, shape or colour, has an irregular border, itches or bleeds should be examined promptly.",
       },
     },
 
@@ -1072,9 +1003,7 @@ export const concerns: Concern[] = [
       triggers: [
         "Over-the-counter brightening products have not helped after a few months of consistent use.",
         "The patches are spreading, or returning each time they fade.",
-        "You are unsure whether you are looking at melasma or sun damage, and the products you are using are aimed at one of them.",
         "The pigmentation followed acne, eczema or a cosmetic procedure.",
-        "Any mark is changing in size, shape, colour or texture, which needs assessment regardless of cosmetic concern.",
       ],
     },
 
@@ -1090,27 +1019,25 @@ export const concerns: Concern[] = [
     treatmentWhy: {
       "pico-laser": {
         why: "For sun spots, freckles and stubborn pigment",
-        body: "A picosecond laser that shatters pigment with very short pulses rather than heating the surrounding skin. Most predictable on discrete, well-defined sun-related spots. Used far more cautiously where melasma is involved.",
+        body: "A picosecond laser that shatters pigment with very short pulses rather than heating the surrounding skin.",
       },
       "vascular-pigment-laser": {
         why: "For redness sitting under the brown",
-        body: "Targets both pigment and superficial blood vessels, which matters where a patch carries a red or flushed component as well as a brown one.",
+        body: "Targets both pigment and superficial blood vessels.",
       },
       "resurfacing-laser": {
         why: "For pigment bound up with texture change",
-        body: "A fractional laser used where uneven tone sits alongside roughness, sun damage or scarring rather than on its own. More downtime, and strict sun avoidance afterwards is not optional.",
+        body: "A fractional laser used where uneven tone sits alongside roughness, sun damage or scarring rather than on its own. More downtime.",
       },
       "skin-booster": {
         why: "For dull, dehydrated skin around the patches",
-        body: "Injectable hydration that addresses the overall quality of the skin rather than the pigment itself. Considered as support, particularly where dryness is making tone look more uneven than it is.",
+        body: "Injectable hydration that addresses the overall quality of the skin rather than the pigment itself.",
       },
       "facial-treatments": {
         why: "For gentle exfoliation between laser sessions",
-        body: "Hydrafacial and Silkpeel support surface cell turnover without the heat or aggression that aggravates melasma. Maintenance care.",
+        body: "Hydrafacial and Silkpeel support surface cell turnover without the heat or aggression that aggravates melasma.",
       },
     },
-    treatmentsNote:
-      "Melasma is managed, not cured. Where it is the diagnosis, the plan is usually conservative and long-term, and the doctor may recommend medical treatment and sun protection before considering any device at all.",
 
     // ── 10
     compare: {
@@ -1164,19 +1091,17 @@ export const concerns: Concern[] = [
       steps: [
         {
           title: "History",
-          body: "How long the pigmentation has been there, whether it followed pregnancy, contraception, acne or a procedure, what you have already tried, and any medication you are taking.",
+          body: "Whether it followed pregnancy, contraception, acne or a procedure.",
         },
         {
           title: "Examination",
-          body: "The doctor examines the skin, sometimes under magnification or a Wood's lamp, to judge the pattern and depth.",
+          body: "The doctor examines your skin, sometimes under magnification.",
         },
         {
           title: "Discussion and plan",
-          body: "Which type it looks like, the options and their risks for your skin tone, and what is realistic, with no obligation to proceed.",
+          body: "Options, risks and downtime, with no obligation to proceed.",
         },
       ],
-      outro:
-        "Bring the products you are currently using, or photographs of the labels. Bring older photographs of your face too, if you have them: they show whether the pattern is spreading or holding steady.",
     },
     visitImages: [
       {
@@ -1230,59 +1155,39 @@ export const concerns: Concern[] = [
       ],
     },
 
-    // ── 15
-    technologyIntro:
-      "Pigmentation is the concern where device choice matters most, because the wavelength and pulse duration that suit a sun spot are not the ones that suit melasma.",
-
     // ── 16
     faqs: [
       {
         q: "What is the difference between melasma and sun spots?",
-        a: "Sun spots are discrete brown patches with a fairly clear border, scattered across the areas that catch the most light, and they accumulate slowly over years. Melasma is larger, symmetrical and soft-edged, usually across both cheeks, the upper lip or the forehead, and it is influenced by hormones and heat as well as sun. They can look similar in a mirror and they are managed almost oppositely.",
-      },
-      {
-        q: "Can pigmentation be treated?",
-        a: "Some types respond well and others need caution, so it depends entirely on which you have. Discrete sun-related spots are generally the most predictable. Melasma is managed rather than resolved, and post-inflammatory marks often fade on their own once the underlying cause settles.",
+        a: "Sun spots are discrete brown patches with a fairly clear border. Melasma is larger, symmetrical and soft-edged, and it is influenced by hormones and heat as well as sun. They can look similar in a mirror and they are managed almost oppositely.",
       },
       {
         q: "Why does pigmentation come back?",
-        a: "Because treatment addresses the pigment that is there, not the tendency to produce it. Melanocytes respond to UV, heat, inflammation and hormonal change exactly as they did before. Melasma in particular fluctuates for years. Daily sun protection and, where relevant, ongoing medical treatment are what keep treated skin stable.",
+        a: "Because treatment addresses the pigment that is there, not the tendency to produce it. Daily sun protection and, where relevant, ongoing medical treatment are what keep treated skin stable.",
       },
       {
         q: "Is laser safe for darker or Asian skin tones?",
-        a: "Yes, when the device and settings are chosen by a doctor experienced with your skin type. The specific risk in medium and deeper tones is post-inflammatory hyperpigmentation: the skin responding to treatment by producing more pigment. It is managed by selecting suitable wavelengths, using conservative settings, spacing sessions further apart and being strict about sun protection. It is a real consideration rather than a reason to avoid treatment.",
+        a: "Yes, when the device and settings are chosen by a doctor experienced with your skin type. The specific risk in medium and deeper tones is post-inflammatory hyperpigmentation: the skin responding to treatment by producing more pigment. It is a real consideration rather than a reason to avoid treatment.",
       },
       {
         q: "Does sunscreen actually help pigmentation?",
-        a: "It is the single most consistent thing you can do, both to prevent new pigmentation and to hold on to any improvement. Malaysia sits close to the equator, so UV is high year-round and passes through cloud and window glass. A broad-spectrum sunscreen applied every morning and reapplied through the day is standard advice, and tinted formulations add some protection against visible light, which is relevant in melasma.",
+        a: "It is the single most consistent thing you can do, both to prevent new pigmentation and to hold on to any improvement. A broad-spectrum sunscreen applied every morning and reapplied through the day is standard advice, and tinted formulations add some protection against visible light, which is relevant in melasma.",
       },
       {
         q: "Can pigmentation be treated during pregnancy?",
-        a: "Elective treatment is generally deferred until after pregnancy and breastfeeding. Melasma often appears or worsens during pregnancy because of hormonal change, and it commonly settles to some degree afterwards, so treating in the middle of that is rarely sensible. Sun protection and gentle skincare are usually the advice in the meantime.",
+        a: "Elective treatment is generally deferred until after pregnancy and breastfeeding. Melasma often appears or worsens during pregnancy because of hormonal change, and it commonly settles to some degree afterwards.",
       },
       {
         q: "Will over-the-counter brightening products work?",
-        a: "They can help with mild surface pigmentation and they support any in-clinic plan, but expectations should be modest. Most work slowly and their effect depends on consistent use over months. Where the pigment sits deeper, topical products alone often reach a ceiling.",
-      },
-      {
-        q: "How many sessions will I need?",
-        a: "That is set after the doctor examines your skin, because it depends on the type, the depth and the area. Laser courses for sun-related pigmentation are typically planned as several sessions spaced weeks apart, with a review point built in. Melasma is planned as ongoing management rather than a fixed course.",
+        a: "They can help with mild surface pigmentation and they support any in-clinic plan, but expectations should be modest. Where the pigment sits deeper, topical products alone often reach a ceiling.",
       },
       {
         q: "Does the pigmentation get darker before it fades?",
-        a: "With some laser treatments, yes. Treated spots can appear darker for several days, then flake or lift as the skin turns over. This is an expected part of how the treatment works rather than a sign something has gone wrong. If a treated area behaves differently from what you were told to expect, contact the clinic.",
+        a: "With some laser treatments, yes. Treated spots can appear darker for several days, then flake or lift as the skin turns over. This is an expected part of how the treatment works rather than a sign something has gone wrong.",
       },
       {
         q: "Can I still use my retinol or acid products?",
-        a: "Do not stop or start anything without telling your doctor. Retinoids and exfoliating acids are usually paused for a period before and after energy-based treatment, because they thin the surface and increase sensitivity. Some are useful between sessions. Bring the actual products or photographs of the labels to the consultation.",
-      },
-      {
-        q: "What is post-inflammatory hyperpigmentation?",
-        a: "It is a flat brown or grey-brown mark left where the skin has been inflamed or injured: after a spot, a scratch, eczema, a burn or a procedure. The surface is smooth and only the colour has changed. It is very common in medium and deeper skin tones. It generally fades on its own over months, faster if the underlying cause is controlled and the area is protected from sun.",
-      },
-      {
-        q: "Can pigmentation on the hands, neck or chest be treated?",
-        a: "Yes, though these areas behave differently from the face. Skin there is thinner, has fewer oil glands and recovers more slowly, so treatment is usually more conservative and spaced further apart. They are also the areas people protect least, which is often why the pigmentation is more advanced there than on the face.",
+        a: "Do not stop or start anything without telling your doctor. Retinoids and exfoliating acids are usually paused for a period before and after energy-based treatment, because they thin the surface and increase sensitivity.",
       },
     ],
 
@@ -1322,9 +1227,9 @@ export const concerns: Concern[] = [
     group: "Skin",
     image: "https://cdn.kaiteki.my/concerns/melasma/card.jpg",
     summary:
-      "Melasma is managed rather than cured, and the wrong laser can darken it. A doctor confirms it is melasma, and how deep it sits, before anything is used.",
+      "Melasma is managed rather than cured, and the wrong laser can darken it.",
     leadAnswer:
-      "Laser can make melasma worse if the wrong device or settings are used: high-heat lasers create inflammation, and inflammation tells pigment cells to darken. Melasma is a chronic pigmentation condition causing symmetrical brown or grey patches, driven by UV, hormones and genetics. It is managed rather than cured, and daily sun protection is the foundation.",
+      "Laser can make melasma worse if the wrong device or settings are used: high-heat lasers create inflammation, and inflammation tells pigment cells to darken. Melasma is a chronic pigmentation condition causing symmetrical brown or grey patches, driven by UV, hormones and genetics.",
     treatments: ["pico-laser", "microneedling", "facial-treatments"],
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-10-11",
@@ -1362,7 +1267,7 @@ export const concerns: Concern[] = [
       {
         heading: "What is melasma?",
         body: [
-          "Melasma is a chronic pigmentation disorder in which melanocytes, the pigment-producing cells in the skin, go into overdrive and produce excess melanin. The result is dark brown, light brown or grey patches on the face. The patches are flat and painless, and they usually appear symmetrically on both sides, which is why melasma in pregnancy is sometimes called the \"mask of pregnancy\".",
+          "Melasma is a chronic pigmentation disorder in which melanocytes, the pigment-producing cells in the skin, go into overdrive and produce excess melanin. The result is dark brown, light brown or grey patches on the face.",
           "It is not harmful or contagious, but it rarely clears on its own. It is far more common in women, and in medium to deep skin tones.",
         ],
       },
@@ -1375,7 +1280,7 @@ export const concerns: Concern[] = [
       items: [
         {
           lead: "UV radiation:",
-          body: "the primary trigger. Malaysia's equatorial position means intense UV exposure all year, so even brief unprotected time outdoors can darken existing patches or set off new ones.",
+          body: "the primary trigger. Malaysia's equatorial position means intense UV exposure all year.",
         },
         {
           lead: "Hormonal change:",
@@ -1390,8 +1295,6 @@ export const concerns: Concern[] = [
           body: "infrared heat from cooking, saunas or direct sun warmth, and blue light from screens, can stimulate pigment pathways without classic UV exposure.",
         },
       ],
-      outro:
-        "Irritation matters too. Inflammation makes melasma worse, which is why aggressive skincare routines usually backfire.",
     },
 
     // ── 05 · the differentiator: depth, because depth decides the plan.
@@ -1435,7 +1338,6 @@ export const concerns: Concern[] = [
     // ── 06 · where it appears.
     locationBlock: {
       heading: "Where melasma appears",
-      intro: "Melasma usually appears in a mirror-image pattern on both sides of the face.",
       cards: [
         {
           title: "Cheekbones",
@@ -1443,7 +1345,7 @@ export const concerns: Concern[] = [
         },
         {
           title: "Upper lip, forehead, nose and chin",
-          body: "The centre of the face. A symmetrical shadow above the lip is a common melasma pattern, and one that is often mistaken for facial hair or a shaving mark.",
+          body: "A symmetrical shadow above the lip is a common melasma pattern, and one that is often mistaken for facial hair or a shaving mark.",
         },
         {
           title: "Jawline",
@@ -1461,9 +1363,7 @@ export const concerns: Concern[] = [
       intro: "Have it assessed if:",
       triggers: [
         "A consistent home routine with daily sunscreen has not moved things far enough after 8 to 12 weeks.",
-        "You are unsure whether you are looking at melasma or sun damage, and the products you are using are aimed at one of them.",
-        "You have brown patches and persistent flushing on the same face.",
-        "You are considering a laser or other device, which should only follow an assessment of the depth and type of your melasma.",
+        "You are considering a laser or other device.",
       ],
     },
 
@@ -1479,19 +1379,17 @@ export const concerns: Concern[] = [
     treatmentWhy: {
       "pico-laser": {
         why: "For melasma at low energy, as part of a course",
-        body: "Delivers ultra-short pulses that work largely through photoacoustic pressure rather than heat. That matters in melasma, because high-heat devices can provoke inflammation and a rebound. Planned as a course at low energy settings, and used far more cautiously than on sun spots.",
+        body: "Delivers ultra-short pulses that work largely through photoacoustic pressure rather than heat.",
       },
       microneedling: {
         why: "For melasma, using a pulsed-wave mode",
-        body: "Sylfirm X has a pulsed wave mode that the manufacturer developed with pigment and vascular concerns in mind. Melasma is still chronic and relapsing, so it is combined with topical care and strict sun protection rather than treated as a one-off procedure.",
+        body: "Sylfirm X has a pulsed wave mode that the manufacturer developed with pigment and vascular concerns in mind.",
       },
       "facial-treatments": {
         why: "For surface turnover without heat",
-        body: "Hydrafacial and Silkpeel exfoliate gently without heat. Used between other treatments as maintenance.",
+        body: "Hydrafacial and Silkpeel exfoliate gently without heat.",
       },
     },
-    treatmentsNote:
-      "With epidermal melasma, a topical routine and sun protection often come before any device.",
 
     // ── 12
     firstVisit: {
@@ -1500,7 +1398,7 @@ export const concerns: Concern[] = [
       steps: [
         {
           title: "History",
-          body: "When the patches appeared, whether they changed with pregnancy, contraception or sun exposure, your skincare, and any medication you take.",
+          body: "When the patches appeared, and whether they changed with pregnancy, contraception or sun exposure.",
         },
         {
           title: "Examination",
@@ -1508,11 +1406,9 @@ export const concerns: Concern[] = [
         },
         {
           title: "Discussion and plan",
-          body: "Options, risks and downtime for your type of melasma, and what is realistic, with no obligation to proceed.",
+          body: "Options, risks and downtime, with no obligation to proceed.",
         },
       ],
-      outro:
-        "Bring a list of everything you apply to your skin, including any brightening or prescription products, and tell the doctor if you are pregnant, breastfeeding or planning to be.",
     },
     // procedure-01 (a framed legacy before/after composite) removed: this
     // block shows a device in use, never an outcome.
@@ -1540,7 +1436,7 @@ export const concerns: Concern[] = [
         },
         {
           lead: "What treatment cannot do",
-          body: "No treatment changes the tendency to produce pigment. Melasma is managed rather than cured and commonly returns with sun, heat or hormonal change. How much a given person improves varies, and nobody can promise a specific result in advance.",
+          body: "No treatment changes the tendency to produce pigment. How much a given person improves varies, and nobody can promise a specific result in advance.",
         },
       ],
       disclose:
@@ -1557,14 +1453,9 @@ export const concerns: Concern[] = [
         "The number of sessions in a device course, and any maintenance.",
         "Whether treatments are combined.",
       ],
-      outro: "Melasma is planned as ongoing management rather than a fixed course.",
     },
 
-    // ── 15
-    technologyIntro:
-      "With melasma, the device and settings matter more than with almost any other concern, because heat can make it darker.",
-
-    // ── 16 · eight questions (lite depth).
+    // ── 16 · six questions (lite depth).
     faqs: [
       {
         q: "Is melasma curable?",
@@ -1572,15 +1463,15 @@ export const concerns: Concern[] = [
       },
       {
         q: "Can laser make melasma worse?",
-        a: "Yes, if the wrong device or the wrong settings are used. High-heat lasers create inflammation, and inflammation tells pigment cells to rebound and darken. This is why melasma is treated with low-energy, photoacoustic settings and conservative spacing.",
+        a: "Yes, if the wrong device or the wrong settings are used. This is why melasma is treated with low-energy, photoacoustic settings and conservative spacing.",
       },
       {
         q: "What is the difference between melasma and sun spots?",
-        a: "Sun spots are discrete, sharp-edged brown spots that build up over years on the most sun-exposed skin. Melasma forms larger, symmetrical, soft-edged patches across both cheeks, the upper lip or forehead, and it shifts with hormones and heat. Laser settings that suit sun spots can darken melasma.",
+        a: "Sun spots are discrete, sharp-edged brown spots that build up over years on the most sun-exposed skin. Melasma forms larger, symmetrical, soft-edged patches across both cheeks, the upper lip or forehead, and it shifts with hormones and heat.",
       },
       {
         q: "Does pregnancy melasma go away after childbirth?",
-        a: "Often it lightens over the months after delivery, as hormones settle. Residual patches frequently remain, particularly in a high UV country like Malaysia. Gentle topical care, once you are no longer pregnant or breastfeeding and your doctor has cleared it, can help clear what is left.",
+        a: "Often it lightens over the months after delivery, as hormones settle. Residual patches frequently remain, particularly in a high UV country like Malaysia.",
       },
       {
         q: "Can I have melasma treatment while pregnant or breastfeeding?",
@@ -1588,15 +1479,7 @@ export const concerns: Concern[] = [
       },
       {
         q: "Can Sylfirm X be used for melasma on Asian skin?",
-        a: "Melasma is one of the concerns the manufacturer positions the pulsed wave mode for, and radiofrequency energy is not melanin-targeted, so RF microneedling is used across deeper skin tones. Melasma is still a chronic, relapsing condition that needs ongoing topical care and sun protection rather than a single procedure.",
-      },
-      {
-        q: "Why does melasma come back after treatment?",
-        a: "Treatment lightens existing pigment; it does not change the pigment cells' tendency to reactivate with UV, heat, hormones or irritation. That is why daily sunscreen and periodic maintenance are part of the plan, and why stopping sunscreen is the most common reason patches return.",
-      },
-      {
-        q: "Can facial redness be a sign of melasma?",
-        a: "No. Melasma causes brown or grey discolouration, not redness. The two can appear together on the same face, though. If you have dark patches and persistent flushing, get it assessed so the plan addresses both rather than treating one and aggravating the other.",
+        a: "Melasma is one of the concerns the manufacturer positions the pulsed wave mode for, and radiofrequency energy is not melanin-targeted, so RF microneedling is used across deeper skin tones.",
       },
     ],
 
@@ -1629,7 +1512,7 @@ export const concerns: Concern[] = [
     group: "Skin",
     image: "https://cdn.kaiteki.my/concerns/enlarged-pores/card.jpg",
     summary:
-      "Visible pores are often tied to oil production, texture or age. Treatment options range from lasers to skin boosters, matched to the cause.",
+      "Visible pores are often tied to oil production, texture or age.",
     leadAnswer:
       "Enlarged-looking pores are shaped by oil production, build-up, sun damage and loss of firmness with age. Pores cannot be closed or removed, and they do not open and close. What treatment and skincare may change is how visible they look, by addressing whichever of those factors is driving yours.",
     treatments: [
@@ -1685,14 +1568,14 @@ export const concerns: Concern[] = [
       {
         heading: "What are enlarged pores?",
         body: [
-          "Pores are the openings that carry oil and sweat to the skin's surface. The ones people notice are the oil pores of the T-zone (nose, forehead, inner cheeks and chin). Their size is largely set by genetics; what changes is how much oil and debris sits in them and how firmly the surrounding skin holds its shape.",
+          "The ones people notice are the oil pores of the T-zone (nose, forehead, inner cheeks and chin).",
         ],
       },
       {
         heading: "Pores, blackheads and sebaceous filaments",
         body: [
-          "Three things are easily confused, and they are handled differently. Sebaceous filaments are the fine, greyish dots across the nose that look like blackheads: they are a normal lining of oil and skin cells in every pore, and they refill within weeks of being squeezed or stripped out. Blackheads are true plugs that have darkened at the surface and are a mild form of acne. An enlarged pore is the opening itself, visible whether or not anything is sitting in it.",
-          "Which one you are looking at changes the plan. Filaments are usually left alone or managed with skincare, blackheads respond to acne care and clinical cleansing, and a pore that stays visible on clean skin is a texture and firmness question.",
+          "Sebaceous filaments are the fine, greyish dots across the nose that look like blackheads: they are a normal lining of oil and skin cells in every pore, and they refill within weeks of being squeezed or stripped out. Blackheads are true plugs that have darkened at the surface and are a mild form of acne. An enlarged pore is the opening itself, visible whether or not anything is sitting in it.",
+          "Filaments are usually left alone or managed with skincare, blackheads respond to acne care and clinical cleansing, and a pore that stays visible on clean skin is a texture and firmness question.",
         ],
       },
     ],
@@ -1706,7 +1589,7 @@ export const concerns: Concern[] = [
       items: [
         {
           lead: "Oil production:",
-          body: "more sebum fills and stretches the opening, and an oily surface reflects light in a way that makes pores stand out. Oil output is largely set by genetics and hormones, which is why pores are often most noticeable in the teens and twenties.",
+          body: "more sebum fills and stretches the opening, and an oily surface reflects light in a way that makes pores stand out.",
         },
         {
           lead: "Build-up inside the pore:",
@@ -1738,7 +1621,7 @@ export const concerns: Concern[] = [
         {
           claim: "Hot water opens pores and cold water closes them.",
           reality:
-            "Pores have no muscles, so they cannot open or close. Warmth softens the oil inside them, which is why cleansing feels easier after a shower, and cold briefly tightens the skin surface. Neither changes the size of the pore.",
+            "Pores have no muscles, so they cannot open or close.",
         },
         {
           claim: "Pore strips and squeezing shrink pores.",
@@ -1748,12 +1631,12 @@ export const concerns: Concern[] = [
         {
           claim: "A treatment can close pores permanently.",
           reality:
-            "Pores cannot be closed, because skin needs them to release oil. Treatment aims to make pores less noticeable by improving firmness, texture and oil control around them, and that change needs maintaining rather than being permanent.",
+            "Pores cannot be closed, because skin needs them to release oil.",
         },
         {
           claim: "Only oily skin has visible pores.",
           reality:
-            "Oily skin shows them earlier, but loss of firmness with age and sun damage make pores more visible on drier skin too. Pores that appear in later life are often a firmness problem rather than an oil problem.",
+            "Oily skin shows them earlier, but loss of firmness with age and sun damage make pores more visible on drier skin too.",
         },
         {
           claim: "Primers and mattifying products shrink pores.",
@@ -1771,8 +1654,6 @@ export const concerns: Concern[] = [
         "A consistent skincare routine has not made a difference after a few months.",
         "Pores come with frequent breakouts, blackheads or congestion.",
         "You can feel dips or uneven texture, which may be early scarring rather than pores.",
-        "There is a single, unusually large pore, often with a dark plug, that has been there a long time.",
-        "Small yellowish bumps with a dip in the centre have appeared, often on the forehead or cheeks.",
       ],
     },
 
@@ -1785,19 +1666,19 @@ export const concerns: Concern[] = [
     // ── 09 · the "why for pores" line on each card must differ from every other
     // concern page that lists the same treatment (R-04).
     treatmentsIntro:
-      "Which one fits depends on what is driving yours: congestion, oil, texture or loss of firmness. Daily skincare is part of every plan.",
+      "Which one fits depends on what is driving yours: congestion, oil, texture or loss of firmness.",
     treatmentWhy: {
       microneedling: {
         why: "For pores that look stretched as skin loses firmness",
-        body: "Fine needles deliver radiofrequency energy into the dermis to stimulate collagen around the pore walls. Often a starting point where pores sit alongside texture change, and generally considered a lower pigmentation-risk option for medium and deeper skin tones.",
+        body: "Fine needles deliver radiofrequency energy into the dermis to stimulate collagen around the pore walls.",
       },
       "pico-laser": {
         why: "For pores alongside dullness and uneven tone",
-        body: "A picosecond laser mainly used for pigment, with a fractional mode some doctors use for surface texture. Considered where visible pores come with uneven tone or post-acne marks, and typically has minimal downtime.",
+        body: "A picosecond laser mainly used for pigment, with a fractional mode some doctors use for surface texture.",
       },
       radiofrequency: {
         why: "For firmness around the pores without needles",
-        body: "Radiofrequency energy heats the deeper layers of the skin to support collagen without breaking the surface. Considered where loss of firmness is part of the picture and downtime needs to be kept low.",
+        body: "Radiofrequency energy heats the deeper layers of the skin to support collagen without breaking the surface.",
       },
       "resurfacing-laser": {
         why: "For pores set in rough, uneven texture",
@@ -1805,7 +1686,7 @@ export const concerns: Concern[] = [
       },
       "facial-treatments": {
         why: "For clearing build-up from congested pores",
-        body: "Clinical facials such as Hydrafacial and Silkpeel cleanse, exfoliate and extract. They help pores look clearer for a time and suit maintenance between other treatments, but they do not change the structure of the pore.",
+        body: "Clinical facials such as Hydrafacial and Silkpeel cleanse, exfoliate and extract. They do not change the structure of the pore.",
       },
     },
     treatmentsNote:
@@ -1841,7 +1722,7 @@ export const concerns: Concern[] = [
       steps: [
         {
           title: "History",
-          body: "Your skincare routine, what you have already tried, how oily your skin runs through the day, any breakouts, and your sun exposure.",
+          body: "Your skincare routine, how oily your skin runs through the day, and any breakouts.",
         },
         {
           title: "Examination",
@@ -1849,11 +1730,9 @@ export const concerns: Concern[] = [
         },
         {
           title: "Discussion and plan",
-          body: "What is likely driving your pores, the options with their risks and downtime, and what is realistic, including when skincare alone is the sensible answer. No obligation to proceed.",
+          body: "What is likely driving your pores, including when skincare alone is the sensible answer.",
         },
       ],
-      outro:
-        "Come without makeup if you can, and bring the products you use daily or photos of their labels. Both make the assessment more accurate.",
     },
     // ── 04 media · pairs with the five drivers by position (Q-19); only the
     // skin-structure diagram carries information, so the rest are null.
@@ -1888,7 +1767,7 @@ export const concerns: Concern[] = [
         },
         {
           lead: "Sun protection and skincare are part of it",
-          body: "Daily broad-spectrum sunscreen protects the collagen that keeps pores looking tighter. Without sun protection and a consistent routine, any change from treatment is likely to fade.",
+          body: "Daily broad-spectrum sunscreen protects the collagen that keeps pores looking tighter.",
         },
         {
           lead: "What treatment cannot do",
@@ -1912,51 +1791,31 @@ export const concerns: Concern[] = [
       ],
     },
 
-    // ── 15
-    technologyIntro:
-      "Pores driven by oil, texture and loss of firmness respond to different energy types, so having several platforms lets the doctor match the device to what is behind yours.",
-
-    // ── 16 · twelve questions (full depth).
+    // ── 16 · eight questions (full depth).
     faqs: [
       {
         q: "Can pores be shrunk permanently?",
         a: "Pores cannot be closed or removed permanently, because the skin needs them to release oil and sweat and stay healthy. Some treatments and skincare may reduce the appearance of pores by improving firmness, texture and oil control around them, but results vary between individuals and need maintaining.",
       },
       {
-        q: "Do pores open and close?",
-        a: "Pores do not have muscles, so they do not physically open and close. Their appearance changes with oil, build-up, hydration and skin firmness, which is why they may look more or less visible at different times of day. Warm water softens the oil inside them, and cold water briefly tightens the surface, but neither changes the size of the pore itself.",
-      },
-      {
         q: "Is skincare or in-clinic treatment better for pores?",
-        a: "They do different jobs. A consistent routine with gentle cleansing, sun protection and, where suitable, ingredients such as retinoids or salicylic acid keeps pores clearer and supports texture over time. In-clinic treatment is considered when the issue is firmness or texture that skincare alone does not reach. Most plans use both, and the doctor will say plainly if skincare is all you need.",
+        a: "They do different jobs. A consistent routine with gentle cleansing, sun protection and, where suitable, ingredients such as retinoids or salicylic acid keeps pores clearer and supports texture over time. In-clinic treatment is considered when the issue is firmness or texture that skincare alone does not reach.",
       },
       {
         q: "Why are my pores bigger on my nose and cheeks?",
-        a: "The nose and central face have the densest oil glands, so pores there carry more sebum and look wider. Cheek pores behave differently: they often become more visible with age, as the skin around them loses firmness and the openings stretch into an oval or teardrop shape. That difference matters, because oil-driven and firmness-driven pores are usually approached with different treatments.",
-      },
-      {
-        q: "Are the dark dots on my nose blackheads?",
-        a: "Often they are sebaceous filaments, the normal lining of oil and skin cells inside every pore, which look grey or tan and sit flat. Blackheads are true plugs, usually darker and slightly raised, and are a mild form of acne. Filaments refill within weeks of being removed, so squeezing them repeatedly mostly irritates the skin.",
+        a: "The nose and central face have the densest oil glands, so pores there carry more sebum and look wider. Cheek pores behave differently: they often become more visible with age, as the skin around them loses firmness and the openings stretch into an oval or teardrop shape.",
       },
       {
         q: "Do pore strips and extractions help?",
-        a: "They empty the pore for a while, which can make it look smaller until it refills. Professional extraction during a clinical facial is done with the skin prepared and in a controlled way, which limits damage. Squeezing at home, particularly with fingernails, is more likely to inflame the skin, leave marks and gradually stretch the opening, so it tends to work against the goal.",
+        a: "They empty the pore for a while, which can make it look smaller until it refills. Professional extraction during a clinical facial is done with the skin prepared and in a controlled way, which limits damage.",
       },
       {
         q: "Does the humid weather in Malaysia make pores worse?",
-        a: "Heat and humidity increase oil and sweat on the skin surface, which can make pores look more obvious as the day goes on. The pores themselves do not grow in hot weather. Light, non-comedogenic products, regular gentle cleansing and daily sunscreen help keep oily skin manageable in this climate.",
-      },
-      {
-        q: "How many sessions will I need?",
-        a: "This is set after the doctor examines your skin, because it depends on what is driving your pores and which treatment suits it. Energy-based treatments for texture and firmness are usually planned as a course of several sessions spaced weeks apart, with a review point to check how your skin is responding. Clinical facials are typically used as ongoing maintenance rather than a fixed course.",
+        a: "The pores themselves do not grow in hot weather. Light, non-comedogenic products, regular gentle cleansing and daily sunscreen help keep oily skin manageable in this climate.",
       },
       {
         q: "Is treatment for pores safe for darker or Asian skin tones?",
-        a: "It can be, when the device and settings are chosen by a doctor experienced with your skin type. The main concern with medium and deeper skin tones is post-inflammatory hyperpigmentation after laser or other energy-based treatment. This is managed by selecting suitable devices, using conservative settings, spacing sessions further apart and being strict about sun protection.",
-      },
-      {
-        q: "Will my pores come back after treatment?",
-        a: "Pores do not disappear, so the question is how long any improvement in appearance lasts. Oil production continues, and ageing and sun exposure keep weakening the support around each pore. Most people who see a change keep it with daily sunscreen, a suitable skincare routine and, where appropriate, occasional maintenance sessions.",
+        a: "It can be, when the device and settings are chosen by a doctor experienced with your skin type. The main concern with medium and deeper skin tones is post-inflammatory hyperpigmentation after laser or other energy-based treatment.",
       },
       {
         q: "Can enlarged pores be a sign of something else?",
@@ -1964,7 +1823,7 @@ export const concerns: Concern[] = [
       },
       {
         q: "What should I stop before treatment?",
-        a: "Do not stop anything without telling your doctor first. Retinoids and exfoliating acids are usually paused for a few days before and after energy-based treatment, and recent oral acne medication can affect what is appropriate and when. Bring your products, or photos of their labels, to the consultation so the doctor can give you specific advice.",
+        a: "Do not stop anything without telling your doctor first. Retinoids and exfoliating acids are usually paused for a few days before and after energy-based treatment, and recent oral acne medication can affect what is appropriate and when.",
       },
     ],
 
@@ -1994,7 +1853,7 @@ export const concerns: Concern[] = [
     group: "Face",
     image: "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/card.jpg",
     summary:
-      "Lines that appear when you move and lines that stay at rest need different approaches. A doctor assesses which type you have before recommending treatment.",
+      "Lines that appear when you move and lines that stay at rest need different approaches.",
     leadAnswer:
       "Fine lines and wrinkles come from three sources: muscle movement folding the skin (dynamic lines), the skin itself thinning with age and sun (static lines), and lost volume creating folds. Each is approached differently: muscle-relaxing injection for dynamic lines, collagen-stimulating treatment for static ones, and support above the fold for volume loss.",
     treatments: [
@@ -2049,7 +1908,6 @@ export const concerns: Concern[] = [
         heading: "What are fine lines and wrinkles?",
         body: [
           "Fine lines and wrinkles are creases that form in the skin over time. Expression lines appear with movement, smiling, squinting or frowning, and are linked to how the face moves, often showing around the eyes, forehead and mouth.",
-          "Static wrinkles are lines that remain visible even when the face is at rest. They tend to develop gradually as the skin's collagen and elastin change with age and sun exposure.",
         ],
       },
     ],
@@ -2063,27 +1921,27 @@ export const concerns: Concern[] = [
       items: [
         {
           lead: "Repeated expression:",
-          body: "smiling, squinting and raising the brows fold the skin in the same place thousands of times. Crow's feet and forehead lines start here; the skin around the eyes is the thinnest on the face, so it shows this earliest.",
+          body: "smiling, squinting and raising the brows fold the skin in the same place thousands of times. Crow's feet and forehead lines start here.",
         },
         {
           lead: "Frowning and concentration:",
-          body: "the vertical glabellar lines between the brows come from the muscles that pull them together. Screen work, bright sun and reading without the right glasses all encourage it.",
+          body: "the vertical glabellar lines between the brows come from the muscles that pull them together.",
         },
         {
           lead: "Pursing and lip movement:",
-          body: "fine vertical perioral lines around the mouth come from the circular muscle in the lips. Smoking accelerates them considerably, both mechanically and through its effect on collagen.",
+          body: "fine vertical perioral lines around the mouth come from the circular muscle in the lips.",
         },
         {
           lead: "Volume loss and gravity:",
-          body: "marionette lines running from the mouth corners toward the chin deepen as support in the mid-face is lost and tissue settles. The line is a fold rather than a crease in the skin.",
+          body: "marionette lines running from the mouth corners toward the chin deepen as support in the mid-face is lost and tissue settles.",
         },
         {
           lead: "Collagen decline and sun damage:",
-          body: "static wrinkles present at rest reflect the skin's own structure thinning. UV exposure is the single largest accelerator, which is why sun-exposed skin ages visibly faster than skin that is covered.",
+          body: "static wrinkles present at rest reflect the skin's own structure thinning. UV exposure is the single largest accelerator.",
         },
         {
           lead: "Sleep position:",
-          body: "sleeping face-down or consistently on one side presses the skin into the same folds for hours each night. Sleep lines are typically diagonal and asymmetric, which is what distinguishes them.",
+          body: "sleeping face-down or consistently on one side presses the skin into the same folds for hours each night.",
         },
         {
           lead: "Neck posture and exposure:",
@@ -2101,19 +1959,13 @@ export const concerns: Concern[] = [
       kind: "tabs",
       heading: "Which type do I have?",
       intro:
-        "One test separates most of this. Look in a mirror with your face completely relaxed, then make the expression that produces the line. What the line does between those two states decides how it is treated.",
+        "One test separates most of this. Look in a mirror with your face completely relaxed, then make the expression that produces the line.",
       tabs: [
         {
           label: "Dynamic",
           sub: "Only when you move",
           title: "Dynamic lines",
-          body: "Lines that appear when you make an expression and vanish when your face relaxes. They are produced by muscle folding the skin above it, and the skin itself is still intact. This is the earliest stage, and the one where treatment is most straightforward.",
-          items: [
-            {
-              lead: "The tell:",
-              body: "gone entirely at rest, obvious on movement. Crow's feet, forehead lines and frown lines usually begin here.",
-            },
-          ],
+          body: "Lines that appear when you make an expression and vanish when your face relaxes. They are produced by muscle folding the skin above it, and the skin itself is still intact.",
           routing:
             "commonly assessed for muscle-relaxing injection, with attention to skin quality alongside it.",
         },
@@ -2121,15 +1973,11 @@ export const concerns: Concern[] = [
           label: "Static",
           sub: "Visible at rest",
           title: "Static lines",
-          body: "Lines still present when your face is completely relaxed. The skin has been folded often enough, or has thinned enough, that the crease persists. Sun damage and collagen loss are usually part of the picture rather than muscle alone.",
+          body: "Lines still present when your face is completely relaxed. The skin has been folded often enough, or has thinned enough, that the crease persists.",
           items: [
             {
               lead: "The tell:",
               body: "you can see it with a still face, and stretching the skin gently reduces it.",
-            },
-            {
-              lead: "What it means for treatment:",
-              body: "relaxing the muscle alone will soften it but not remove it, because part of the line now lives in the skin.",
             },
           ],
           routing:
@@ -2139,15 +1987,11 @@ export const concerns: Concern[] = [
           label: "Fold",
           sub: "Made by lost support",
           title: "Volume-related folds",
-          body: "Deeper creases such as nasolabial folds and marionette lines, which are not really wrinkles at all. They mark where tissue has descended or deflated, creating a shadowed junction between two areas of the face rather than a crease in the skin surface.",
+          body: "Deeper creases such as nasolabial folds and marionette lines, which are not really wrinkles at all. They mark where tissue has descended or deflated.",
           items: [
             {
               lead: "The tell:",
               body: "lying down softens it considerably, and lifting the cheek gently with a fingertip reduces the fold.",
-            },
-            {
-              lead: "The common mistake:",
-              body: "treating the fold directly rather than the loss above it, which adds weight to an area that is already heavy.",
             },
           ],
           routing:
@@ -2165,13 +2009,9 @@ export const concerns: Concern[] = [
       intro: "There is no threshold at which lines need treating. It is worth an assessment if:",
       triggers: [
         "Lines that used to appear only on movement are now visible when your face is at rest.",
-        "You are unsure whether what you are seeing is a wrinkle or a fold from lost volume.",
-        "You are considering treatment for the first time and want a conservative, staged plan rather than a package.",
         "You have had treatment elsewhere and were unhappy with how it looked.",
         "A crease is red, scaly, itchy or bleeding, or the skin has changed texture rather than folded: that needs examining, not cosmetic treatment.",
       ],
-      outro:
-        "A dynamic line is simpler to address than a static one. That is a reason to understand your options, not to start before you want to.",
     },
 
     // ── 08
@@ -2186,19 +2026,19 @@ export const concerns: Concern[] = [
     treatmentWhy: {
       "botulinum-toxin": {
         why: "For lines that appear when you move",
-        body: "Relaxes the specific muscle folding the skin, so the line forms less forcefully. Most relevant on dynamic forehead, frown and crow's-feet lines. Temporary, and repeated periodically. Dose and placement are what separate a natural result from a frozen one.",
+        body: "Relaxes the specific muscle folding the skin, so the line forms less forcefully. Temporary, and repeated periodically.",
       },
       "dermal-fillers": {
         why: "For folds held open by lost volume",
-        body: "Placed to restore support where the face has flattened, rather than into the crease itself. Most relevant for nasolabial and marionette folds.",
+        body: "Placed to restore support where the face has flattened, rather than into the crease itself.",
       },
       "skin-booster": {
         why: "For fine crepe lines and surface dryness",
-        body: "Injectable hydration that improves the quality and light-reflection of the skin rather than filling any single line. Considered where fine crepiness across an area, rather than one crease, is what you are noticing.",
+        body: "Injectable hydration that improves the quality and light-reflection of the skin rather than filling any single line.",
       },
       microneedling: {
         why: "For etched lines and overall texture",
-        body: "Fine needles with radiofrequency energy stimulate collagen through the deeper skin. Considered for static lines and general texture, and generally a lower pigmentation-risk option for medium and deeper skin tones.",
+        body: "Fine needles with radiofrequency energy stimulate collagen through the deeper skin.",
       },
       "resurfacing-laser": {
         why: "For deeper static lines around the mouth",
@@ -2206,7 +2046,7 @@ export const concerns: Concern[] = [
       },
       hifu: {
         why: "For laxity that deepens the folds",
-        body: "Focused ultrasound aimed at firmness beneath the skin. Considered where folds are being deepened by descent, so the useful target is the support above the line rather than the line itself.",
+        body: "Focused ultrasound aimed at firmness beneath the skin.",
       },
       ultherapy: {
         why: "For lifting that softens the fold above it",
@@ -2214,7 +2054,7 @@ export const concerns: Concern[] = [
       },
     },
     treatmentsNote:
-      "Combinations are the norm rather than the exception, because most faces carry dynamic lines, static lines and folds at once. Sequence matters: relaxing the muscle first often shows how much of a line was actually etched into the skin.",
+      "Sequence matters: relaxing the muscle first often shows how much of a line was actually etched into the skin.",
 
     // ── 10
     compare: {
@@ -2249,7 +2089,7 @@ export const concerns: Concern[] = [
       steps: [
         {
           title: "History",
-          body: "What you have noticed and how long ago, any previous injectables or laser treatment, your skincare, sun habits, whether you smoke, and any medical history or medication.",
+          body: "Any previous injectables or laser treatment, and whether you smoke.",
         },
         {
           title: "Examination",
@@ -2257,11 +2097,9 @@ export const concerns: Concern[] = [
         },
         {
           title: "Discussion and plan",
-          body: "Which lines are dynamic, static or folds, what each option changes, downtime and risks, and a conservative first step, with no obligation to proceed.",
+          body: "What each option changes, and a conservative first step, with no obligation to proceed.",
         },
       ],
-      outro:
-        "Bring details of any previous injectable treatment, including the product and roughly when. It changes both the assessment and the timing of anything new.",
     },
     visitImages: [
       {
@@ -2279,11 +2117,11 @@ export const concerns: Concern[] = [
         },
         {
           lead: "Uncommon but important",
-          body: "Muscle-relaxing injection can spread slightly beyond the intended muscle and cause a temporary drooping brow or eyelid, which resolves as the effect wears off. Injectables carry a rare but serious risk of vascular occlusion. Both are reasons to be treated by a doctor who knows facial anatomy.",
+          body: "Muscle-relaxing injection can spread slightly beyond the intended muscle and cause a temporary drooping brow or eyelid, which resolves as the effect wears off. Injectables carry a rare but serious risk of vascular occlusion.",
         },
         {
           lead: "Pigment change and Malaysian skin",
-          body: "Medium and deeper skin tones carry a higher chance of post-inflammatory hyperpigmentation after laser or energy-based treatment. Settings are chosen conservatively and sessions spaced further apart for this reason, and daily sun protection is part of the plan.",
+          body: "Medium and deeper skin tones carry a higher chance of post-inflammatory hyperpigmentation after laser or energy-based treatment. Settings are chosen conservatively and sessions spaced further apart for this reason.",
         },
         {
           lead: "What treatment cannot do",
@@ -2315,27 +2153,19 @@ export const concerns: Concern[] = [
     faqs: [
       {
         q: "What is the difference between fine lines and wrinkles?",
-        a: "Fine lines are shallow surface creases, often the first thing people notice around the eyes and on the lip. Wrinkles are deeper and more established. More useful than depth, though, is whether a line is present when your face is relaxed. A line that only appears on movement is treated differently from one visible at rest.",
+        a: "Fine lines are shallow surface creases, often the first thing people notice around the eyes and on the lip. Wrinkles are deeper and more established.",
       },
       {
         q: "Can lines and wrinkles be prevented?",
-        a: "Not entirely, since everyone's face ages and movement is part of living in it. What is well established is that daily broad-spectrum sunscreen slows the process considerably, particularly in a country with year-round equatorial UV, and that not smoking makes a visible difference around the mouth. Beyond that, sleep, hydration and a sensible skincare routine support skin quality without stopping the underlying change.",
+        a: "Not entirely, since everyone's face ages and movement is part of living in it. What is well established is that daily broad-spectrum sunscreen slows the process considerably, particularly in a country with year-round equatorial UV, and that not smoking makes a visible difference around the mouth.",
       },
       {
         q: "Will muscle-relaxing injection make my face look frozen?",
-        a: "Only if it is overdosed or misplaced. Used conservatively, it reduces how forcefully a specific muscle folds the skin while leaving expression intact. A frozen appearance almost always comes from treating too many muscles at once, or from too much product in one area. It is entirely reasonable to say at consultation that you want to keep full movement and would rather start low and review.",
-      },
-      {
-        q: "Are nasolabial folds wrinkles?",
-        a: "Not really. The fold running from the nose to the corner of the mouth marks the junction between the cheek and the lip area, and everyone has one. It deepens as support in the mid-face is lost, so it becomes a shadow rather than a crease in the skin. Treating it by filling the line directly usually looks heavy; supporting the cheek above it is generally the more sensible approach.",
-      },
-      {
-        q: "How soon will I see a difference?",
-        a: "Muscle-relaxing injection takes a few days to begin and around two weeks to show its full effect, which is why review appointments are scheduled at that point rather than sooner. Volume support is visible immediately, though swelling makes the first days unreliable. Collagen-stimulating treatments build gradually over months. Photographs at consistent angles and lighting are far more useful than daily mirror checks.",
+        a: "Only if it is overdosed or misplaced. Used conservatively, it reduces how forcefully a specific muscle folds the skin while leaving expression intact. A frozen appearance almost always comes from treating too many muscles at once, or from too much product in one area.",
       },
       {
         q: "How long do the effects last?",
-        a: "It depends entirely on the treatment. Muscle-relaxing injection wears off over a period of months and is repeated. Volume support is gradually broken down by the body over a longer period. Collagen-based change builds and then recedes as ageing continues. None of it is permanent.",
+        a: "Muscle-relaxing injection wears off over a period of months and is repeated. Volume support is gradually broken down by the body over a longer period. Collagen-based change builds and then recedes as ageing continues. None of it is permanent.",
       },
       {
         q: "Is treatment painful?",
@@ -2343,23 +2173,15 @@ export const concerns: Concern[] = [
       },
       {
         q: "Can I start treatment in my twenties or thirties?",
-        a: "Many people do, usually for dynamic lines that are beginning to persist. The argument for it is that a line is simpler to address before it becomes etched into the skin. The argument against starting too early is cost, commitment and the fact that some lines never progress. There is no medically correct age, and a doctor who tells you that you need treatment now should be questioned.",
+        a: "Many people do, usually for dynamic lines that are beginning to persist. The argument for it is that a line is simpler to address before it becomes etched into the skin. The argument against starting too early is cost, commitment and the fact that some lines never progress.",
       },
       {
         q: "Does skincare actually help?",
-        a: "It helps with skin quality, which is a real part of how lines read, and a sensible routine supports any in-clinic plan. Sunscreen is the single most evidenced item in it. Well-formulated retinoids and antioxidants have reasonable support behind them. What skincare will not do is relax a muscle or restore lost volume, so expectations should match the mechanism of whatever you are buying.",
-      },
-      {
-        q: "Can the lines on my neck be treated?",
-        a: "The neck is commonly assessed alongside the face. It also behaves differently: the skin is thinner, has fewer oil glands and recovers more slowly, so treatment here is deliberately more conservative and expectations should be modest. Horizontal creases shaped by posture and movement respond less predictably than lines on the face.",
+        a: "It helps with skin quality, which is a real part of how lines read, and a sensible routine supports any in-clinic plan. Well-formulated retinoids and antioxidants have reasonable support behind them.",
       },
       {
         q: "What if I don't like the result?",
-        a: "That depends on what you have had. Muscle-relaxing injection is temporary and wears off, which is one reason it is a reasonable first treatment. Hyaluronic-acid fillers can be dissolved, which is why they are generally preferred over permanent products. Energy-based treatments cannot be undone, which is an argument for treating conservatively first. Ask about reversibility at the consultation, before you decide.",
-      },
-      {
-        q: "Should I treat every line I have?",
-        a: "Usually not. Treating everything at once removes the information you need to judge what actually helped, costs more, and increases the chance of a face that reads as treated. Addressing the one or two things that bother you most, then reviewing, gives a better result and leaves you free to stop at any point.",
+        a: "Muscle-relaxing injection is temporary and wears off, which is one reason it is a reasonable first treatment. Hyaluronic-acid fillers can be dissolved, which is why they are generally preferred over permanent products. Energy-based treatments cannot be undone, which is an argument for treating conservatively first.",
       },
     ],
 
@@ -2389,7 +2211,7 @@ export const concerns: Concern[] = [
     group: "Eyes",
     image: "https://cdn.kaiteki.my/concerns/dark-eye-circles/card.jpg",
     summary:
-      "Dark circles can come from pigment, blood vessels or hollowing under the eye. The treatment depends entirely on which cause is behind yours.",
+      "Dark circles can come from pigment, blood vessels or hollowing under the eye.",
     leadAnswer:
       "Dark eye circles come from three things that look alike: extra pigment in the skin, blood vessels showing through thin under-eye skin, and a hollow that casts a shadow. Most people have more than one. Each is treated differently: laser for pigment or vessels, skin-quality treatment for thin skin, and volume support for a hollow.",
     treatments: [
@@ -2442,7 +2264,7 @@ export const concerns: Concern[] = [
       {
         heading: "What are dark eye circles?",
         body: [
-          "Dark circles are not a single condition. The darkness can be pigment, visible vessels or shadow from the shape of the area, and often more than one at once, so what looks similar on two people can need different treatment.",
+          "Dark circles are not a single condition.",
         ],
       },
     ],
@@ -2453,8 +2275,6 @@ export const concerns: Concern[] = [
     // under-eye diagram beside the tabs shows the three mechanisms instead.
     drivers: {
       heading: "What causes dark eye circles?",
-      intro:
-        "Under-eye skin is the thinnest on the body, which is why three quite different things can show through it and all read as a dark circle.",
       items: [
         {
           lead: "Extra pigment in the skin:",
@@ -2469,8 +2289,6 @@ export const concerns: Concern[] = [
           body: "as the fat pad under the eye shrinks or descends, a groove forms between the lid and the cheek. What you see there is not pigment at all: it is a shadow cast by the contour.",
         },
       ],
-      outro:
-        "Poor sleep, alcohol, salt and dehydration rarely cause dark circles on their own, but they make all three more visible, which is why the area looks worse on some mornings than others. Ageing deepens all three.",
     },
 
     // ── 05 · the differentiator. Two self-tests give the visitor something they
@@ -2488,13 +2306,7 @@ export const concerns: Concern[] = [
           label: "Pigment",
           sub: "Brown, stays when stretched",
           title: "Pigmented circles",
-          body: "A brown or grey-brown discolouration that stays visible when you stretch the skin gently and when light hits the area straight on. It often extends onto the lid or toward the temple rather than sitting only in the hollow.",
-          items: [
-            {
-              lead: "The tell:",
-              body: "stretching the skin does not lighten it, and direct light does not remove it.",
-            },
-          ],
+          body: "A brown or grey-brown discolouration that stays visible when you stretch the skin gently and when light hits the area straight on.",
           routing:
             "commonly assessed for pigment-targeted laser, with sun protection and any allergy or eczema addressed alongside.",
         },
@@ -2504,12 +2316,6 @@ export const concerns: Concern[] = [
           sub: "Blue or purple tint",
           title: "Vascular circles",
           body: "A bluish or purplish cast, sometimes with visible fine vessels, which becomes more obvious when you are tired, congested or crying. Stretching the skin makes it fade slightly as the vessels are drawn flatter.",
-          items: [
-            {
-              lead: "The tell:",
-              body: "the colour is blue or purple rather than brown, and it fluctuates from day to day.",
-            },
-          ],
           routing:
             "assessed for vascular laser or skin-quality treatment, with nasal allergy managed if it is contributing.",
         },
@@ -2518,7 +2324,7 @@ export const concerns: Concern[] = [
           label: "Structural",
           sub: "Shadow that light removes",
           title: "Structural circles",
-          body: "A hollow or groove between the lower lid and the cheek that reads as dark in overhead light and largely disappears when light comes from straight ahead.",
+          body: "A hollow or groove between the lower lid and the cheek.",
           items: [
             {
               lead: "The tell:",
@@ -2533,13 +2339,7 @@ export const concerns: Concern[] = [
           label: "Mixed",
           sub: "More than one at once",
           title: "Mixed circles",
-          body: "The most common answer, particularly past the mid-thirties. Pigment sits over a hollow, or thin skin shows vessels while a shadow deepens the effect. Treating one component alone then produces a partial, disappointing change.",
-          items: [
-            {
-              lead: "The tell:",
-              body: "the mirror tests give ambiguous answers, and the area looks different in every light.",
-            },
-          ],
+          body: "The most common answer, particularly past the mid-thirties. Pigment sits over a hollow, or thin skin shows vessels while a shadow deepens the effect.",
           routing:
             "assessed as a sequence, with the dominant component treated first and the remainder reviewed afterwards.",
         },
@@ -2559,7 +2359,7 @@ export const concerns: Concern[] = [
       ],
       note: {
         title: "Not just a dark circle?",
-        body: "Persistent puffiness, swelling that comes and goes through the day, a lump, or any change in vision or in the appearance of one eye only should be assessed by a doctor. That is a medical question, not a cosmetic one.",
+        body: "Persistent puffiness, swelling that comes and goes through the day, a lump, or any change in vision or in the appearance of one eye only should be assessed by a doctor.",
       },
     },
 
@@ -2568,12 +2368,9 @@ export const concerns: Concern[] = [
       intro: "Have it looked at if:",
       triggers: [
         "Eye creams and concealer have not made a difference after a few months of consistent use.",
-        "You cannot tell whether what you have is pigment, vessels or shadow, and are buying products aimed at one of them.",
         "The darkness appeared or worsened noticeably over a short period.",
         "It sits alongside itching, congestion or eczema, which may be aggravating it.",
       ],
-      outro:
-        "Poorly judged treatment shows more here than anywhere else on the face.",
     },
 
     // ── 08
@@ -2588,23 +2385,21 @@ export const concerns: Concern[] = [
     treatmentWhy: {
       "skin-booster": {
         why: "For thin, crepey under-eye skin",
-        body: "Injectable hydration placed superficially to improve the quality and thickness of very thin skin, so less shows through it. Considered where skin quality rather than pigment or volume is the leading issue.",
+        body: "Injectable hydration placed superficially to improve the quality and thickness of very thin skin, so less shows through it.",
       },
       "vascular-pigment-laser": {
         why: "For bluish vessels showing through",
-        body: "Targets superficial vessels and pigment around the eye, with settings chosen conservatively because the skin here is far thinner than on the cheek. Relevant where colour rather than contour is the problem.",
+        body: "Targets superficial vessels and pigment around the eye, with settings chosen conservatively because the skin here is far thinner than on the cheek.",
       },
       radiofrequency: {
         why: "For laxity in the lower lid",
-        body: "Gentle heating to prompt collagen change where the lower lid skin has loosened and creased. Considered where crepiness accompanies the darkness rather than where a hollow dominates.",
+        body: "Gentle heating to prompt collagen change where the lower lid skin has loosened and creased.",
       },
       "dermal-fillers": {
         why: "For the hollow that casts the shadow",
-        body: "Small volumes placed deeply to soften a groove between lid and cheek. The most technically demanding injection on the face, and the one where conservative placement matters most, because the area shows every error.",
+        body: "Small volumes placed deeply to soften a groove between lid and cheek.",
       },
     },
-    treatmentsNote:
-      "Where a hollow is the cause, no laser will remove the shadow, and where pigment is the cause, adding volume will not lighten it. Mixed circles are treated in sequence rather than all at once, so each step can be judged on its own.",
 
     // ── 10
     compare: {
@@ -2642,7 +2437,7 @@ export const concerns: Concern[] = [
       steps: [
         {
           title: "History",
-          body: "How long it has been there, whether anyone in your family has the same pattern, any allergy, eczema or congestion, your sleep and general health, and anything you have already tried.",
+          body: "Whether anyone in your family has the same pattern, and any allergy, eczema or congestion.",
         },
         {
           title: "Examination",
@@ -2650,11 +2445,11 @@ export const concerns: Concern[] = [
         },
         {
           title: "Discussion and plan",
-          body: "Which mechanism is leading, what each option can reach, the specific risks of treating this area, and what is realistic, with no obligation to proceed.",
+          body: "Which mechanism is leading, and the specific risks of treating this area, with no obligation to proceed.",
         },
       ],
       outro:
-        "Come without makeup if you can, and bring a photograph of yourself in daylight. Clinic lighting is overhead, which exaggerates shadow, so a daylight photograph often shows the area more honestly than the mirror in the room.",
+        "Come without makeup if you can, and bring a photograph of yourself in daylight.",
     },
     visitImages: [
       {
@@ -2665,8 +2460,6 @@ export const concerns: Concern[] = [
 
     // ── 13
     risks: {
-      intro:
-        "The under-eye area carries more risk than most: the skin is thin and the anatomy unforgiving.",
       items: [
         {
           lead: "Common and usually temporary",
@@ -2682,7 +2475,7 @@ export const concerns: Concern[] = [
         },
         {
           lead: "What treatment cannot do",
-          body: "Nothing on this page changes an inherited eye-socket shape or removes a shadow that comes from bone. Treating pigment will not lift a hollow, and volume will not lighten brown skin. Sleep does not cure dark circles, and neither does any single session. Improvement is usually partial.",
+          body: "Nothing on this page changes an inherited eye-socket shape or removes a shadow that comes from bone. Treating pigment will not lift a hollow, and volume will not lighten brown skin. Improvement is usually partial.",
         },
       ],
       disclose:
@@ -2710,47 +2503,31 @@ export const concerns: Concern[] = [
     faqs: [
       {
         q: "Are dark circles caused by lack of sleep?",
-        a: "Not usually, though poor sleep makes them more visible. The underlying darkness comes from pigment in the skin, blood vessels showing through it, or a shadow cast by the contour beneath the eye, and none of those changes overnight. Tiredness dilates vessels and leaves the face paler, which increases the contrast. If your circles are present on well-rested mornings too, sleep is not the cause.",
-      },
-      {
-        q: "How do I tell which type I have?",
-        a: "Two checks help. Stretch the skin gently sideways: if the colour stays, it is likely pigment; if it fades, vessels are contributing. Then change the light so it comes from directly in front rather than overhead: if the darkness largely disappears, you are looking at shadow from a hollow rather than at colour in the skin. Most people find they have more than one.",
+        a: "Not usually, though poor sleep makes them more visible. Tiredness dilates vessels and leaves the face paler, which increases the contrast. If your circles are present on well-rested mornings too, sleep is not the cause.",
       },
       {
         q: "Do eye creams work?",
-        a: "They can help modestly where surface pigment or dryness is part of the picture, and a well-formulated one supports any in-clinic plan. They will not lift a hollow or remove vessels beneath the skin, so expectations should match the mechanism.",
+        a: "They can help modestly where surface pigment or dryness is part of the picture, and a well-formulated one supports any in-clinic plan. They will not lift a hollow or remove vessels beneath the skin.",
       },
       {
         q: "Is filler under the eyes safe?",
-        a: "It is a well-established treatment in experienced hands, but it is the most technically demanding injection on the face and it deserves a careful conversation. The skin is thin, the area holds fluid, and product placed poorly can leave a bluish tinge, lumps or lasting puffiness. It is dissolvable, which matters.",
+        a: "It is a well-established treatment in experienced hands, but it is the most technically demanding injection on the face and it deserves a careful conversation. It is dissolvable, which matters.",
       },
       {
         q: "Will treatment get rid of them completely?",
-        a: "Rarely. Improvement is usually partial, particularly where more than one mechanism is involved or where the socket shape is inherited. Many people get a meaningful reduction in how tired they look without the area becoming uniform with the cheek.",
-      },
-      {
-        q: "Does rubbing my eyes make dark circles worse?",
-        a: "Yes, and it is one of the more fixable contributors. Repeated friction inflames very thin skin and drives pigment production, which is why people with allergic rhinitis or eczema around the eyes often have the darkest circles. Treating the itch is part of treating the circle.",
+        a: "Rarely. Improvement is usually partial, particularly where more than one mechanism is involved or where the socket shape is inherited.",
       },
       {
         q: "Can dark circles be treated during pregnancy?",
-        a: "Elective treatment is generally deferred until after pregnancy and breastfeeding. Fluid shifts and hormonal change during pregnancy also make the area behave differently, so an assessment made then may not reflect your baseline. Sun protection, gentle skincare and managing any congestion are usually the advice in the meantime.",
+        a: "Elective treatment is generally deferred until after pregnancy and breastfeeding. Fluid shifts and hormonal change during pregnancy also make the area behave differently, so an assessment made then may not reflect your baseline.",
       },
       {
         q: "Why do my dark circles look worse in photos?",
-        a: "Overhead lighting is the usual explanation. Ceiling lights, and phone cameras held above eye level, both throw the light from above, which deepens any shadow under the eye. That is also why a bathroom mirror is a poor place to judge them. A photograph taken in daylight, with the light coming from in front, shows the area far more honestly.",
-      },
-      {
-        q: "Is there any downtime?",
-        a: "Bruising and swelling after injectable treatment are more visible here than elsewhere and can last a week or more, so plan around events. Laser treatment usually leaves redness and dryness for a few days. Skin boosters can leave small raised points for a day or two.",
+        a: "Overhead lighting is the usual explanation. Ceiling lights, and phone cameras held above eye level, both throw the light from above, which deepens any shadow under the eye. A photograph taken in daylight, with the light coming from in front, shows the area far more honestly.",
       },
       {
         q: "Can men have this treated?",
-        a: "Yes, and it is a common reason men attend, often described as looking permanently tired rather than as a cosmetic concern. The assessment is identical. Where volume support is involved, the placement differs, because a male lower lid usually reads better with less fullness than a female one. The plan follows your anatomy rather than a template.",
-      },
-      {
-        q: "Will they come back after treatment?",
-        a: "The tendency does not go away. Pigment production, vessel visibility and volume loss all continue, so most people who are pleased with a result return periodically rather than once. Where an underlying contributor such as allergy or sun exposure is managed alongside, the result tends to hold better.",
+        a: "Yes, and it is a common reason men attend, often described as looking permanently tired rather than as a cosmetic concern. Where volume support is involved, the placement differs, because a male lower lid usually reads better with less fullness than a female one.",
       },
       {
         q: "Should I just use concealer?",
@@ -2784,7 +2561,7 @@ export const concerns: Concern[] = [
     group: "Face",
     image: "https://cdn.kaiteki.my/concerns/face-contouring/card.jpg",
     summary:
-      "Jawline definition, cheek volume and facial proportions can be refined without surgery. A doctor plans the approach based on your facial structure.",
+      "Jawline definition, cheek volume and facial proportions can be refined without surgery.",
     leadAnswer:
       "Face contouring addresses the shape and definition of the jawline, chin and cheeks. The same complaint can come from fat under the chin, chewing-muscle bulk, loose skin or a lack of projection, and each is treated differently. Non-surgical treatment works on those soft-tissue layers; it does not change bone.",
     treatments: ["hifu", "fat-freezing", "radiofrequency", "botulinum-toxin", "dermal-fillers"],
@@ -2832,7 +2609,6 @@ export const concerns: Concern[] = [
         heading: "What is face contouring?",
         body: [
           "Face contouring refers to the shape, definition and proportion of facial areas such as the jawline, chin and cheeks. It is about how these features relate to one another rather than any single feature in isolation.",
-          "What reads as a balanced contour differs from person to person, and it is shaped as much by bone as by anything a clinic can change.",
         ],
       },
     ],
@@ -2847,7 +2623,7 @@ export const concerns: Concern[] = [
       items: [
         {
           lead: "Soft-tissue descent along the jawline:",
-          body: "as skin and the layer beneath it loosen, tissue settles downward and breaks the jaw into two lines rather than one. This is the change most often described as the face losing its shape.",
+          body: "as skin and the layer beneath it loosen, tissue settles downward and breaks the jaw into two lines rather than one.",
         },
         {
           lead: "Fullness under the chin:",
@@ -2874,21 +2650,17 @@ export const concerns: Concern[] = [
       kind: "tabs",
       heading: "What's shaping yours?",
       intro:
-        "A jawline is made by bone, fat, muscle and skin, and the layer responsible decides the treatment. Most faces involve more than one.",
+        "Most faces involve more than one.",
       tabs: [
         {
           label: "Fat",
           sub: "Fullness under the chin",
           title: "Fat under the chin or along the jaw",
-          body: "A soft pocket you can pinch, sitting between the chin and the neck or spilling slightly over the jawline. It is often familial, frequently present at a stable and healthy weight.",
+          body: "A soft pocket you can pinch, sitting between the chin and the neck or spilling slightly over the jawline.",
           items: [
             {
               lead: "The tell:",
               body: "you can hold it between finger and thumb, and it softens or shifts when you tip your head back.",
-            },
-            {
-              lead: "What it is not:",
-              body: "not skin laxity. Tightening treatments aimed at loose skin will not remove a fat pocket.",
             },
           ],
           routing: "commonly assessed for fat-reduction treatment targeted at the submental area.",
@@ -2897,7 +2669,7 @@ export const concerns: Concern[] = [
           label: "Muscle",
           sub: "Width at the back of the jaw",
           title: "Chewing-muscle bulk",
-          body: "The masseter muscle at the back of the jaw can be naturally strong or enlarged by clenching and grinding, widening the lower face when viewed from the front. Often accompanied by jaw tension, morning aching or worn teeth.",
+          body: "The masseter muscle at the back of the jaw can be naturally strong or enlarged by clenching and grinding, widening the lower face when viewed from the front.",
           items: [
             {
               lead: "The tell:",
@@ -2911,7 +2683,7 @@ export const concerns: Concern[] = [
           label: "Skin",
           sub: "Laxity breaking the line",
           title: "Skin and soft-tissue laxity",
-          body: "The jaw outline is intact but the edge is no longer crisp, with small jowls either side of the chin. Pulling the skin gently back toward the ear restores the line, which is the clearest indication that laxity rather than volume is responsible.",
+          body: "The jaw outline is intact but the edge is no longer crisp, with small jowls either side of the chin.",
           items: [
             {
               lead: "The tell:",
@@ -2919,13 +2691,13 @@ export const concerns: Concern[] = [
             },
           ],
           routing:
-            "assessed for energy-based tightening; see our face-lifting page for how laxity is approached in more depth.",
+            "assessed for energy-based tightening.",
         },
         {
           label: "Structure",
           sub: "Projection and proportion",
           title: "Bone and volume proportion",
-          body: "A recessed chin, a flat mid-face or a short lower third change how defined a jawline looks without anything having sagged. This is a proportion question, and it is often present from youth rather than something that developed.",
+          body: "A recessed chin, a flat mid-face or a short lower third change how defined a jawline looks without anything having sagged.",
           items: [
             {
               lead: "The tell:",
@@ -2950,17 +2722,13 @@ export const concerns: Concern[] = [
         },
         {
           title: "What surgery does",
-          body: "Procedures such as jaw or chin surgery, or surgical removal of tissue, change structure directly. They are carried out by qualified surgeons under anaesthetic, with the recovery and risk that implies.",
+          body: "Procedures such as jaw or chin surgery, or surgical removal of tissue, change structure directly.",
         },
         {
           title: "Where the line usually falls",
-          body: "Bone is the clearest boundary: if the outline you want requires a different jaw or chin, no injectable or device will produce it, and it is fairer to say so than to stage a course of treatment toward it.",
+          body: "Bone is the clearest boundary: if the outline you want requires a different jaw or chin, no injectable or device will produce it.",
         },
       ],
-      note: {
-        title: "When we will say so",
-        body: "If the change you want needs bone work, the doctor will say so. A referral for a surgical opinion is a legitimate outcome.",
-      },
     },
 
     // ── 07
@@ -2969,7 +2737,6 @@ export const concerns: Concern[] = [
       intro:
         "There is no clinical threshold. It is worth an assessment if:",
       triggers: [
-        "You are unsure whether what you see under your chin is fat, loose skin or something else.",
         "The lower face has widened, or you clench and grind your teeth and wake with a tight jaw.",
         "The jawline has lost definition over time rather than always having looked this way.",
         "You have been offered a treatment elsewhere and want a second opinion on whether it matches the cause.",
@@ -2990,27 +2757,25 @@ export const concerns: Concern[] = [
     treatmentWhy: {
       "fat-freezing": {
         why: "For a defined pocket of fat under the chin",
-        body: "Controlled cooling applied to the submental area to reduce a localised fat pocket. Relevant only where fat is what is there.",
+        body: "Controlled cooling applied to the submental area to reduce a localised fat pocket.",
       },
       "botulinum-toxin": {
         why: "For a wide jaw driven by chewing muscle",
-        body: "A small dose placed into the masseter muscle so it works less forcefully and gradually reduces in bulk. Often relevant alongside clenching or grinding. The effect is temporary and repeated periodically.",
+        body: "A small dose placed into the masseter muscle so it works less forcefully and gradually reduces in bulk. The effect is temporary and repeated periodically.",
       },
       hifu: {
         why: "For a softer jawline outline",
-        body: "Focused ultrasound delivered beneath the skin to firm the tissue along the jaw. Considered where the outline has blurred through laxity rather than through volume under the chin.",
+        body: "Focused ultrasound delivered beneath the skin to firm the tissue along the jaw.",
       },
       radiofrequency: {
         why: "For skin firmness across the lower face",
-        body: "Heats the dermis to prompt collagen change across a broader area than a focused device. Considered where general firmness rather than a single line is the concern.",
+        body: "Heats the dermis to prompt collagen change across a broader area than a focused device.",
       },
       "dermal-fillers": {
         why: "For projection at the chin and cheek",
-        body: "Placed on bone to build structure where projection or proportion is lacking, rather than to fill a line. Small volumes change how a profile reads. Poor placement adds weight, so anatomy knowledge matters.",
+        body: "Placed on bone to build structure where projection or proportion is lacking, rather than to fill a line.",
       },
     },
-    treatmentsNote:
-      "Combinations are common, and sequence matters: reducing fullness under the chin before addressing laxity gives a clearer picture of what laxity is actually there.",
 
     // ── 10
     compare: {
@@ -3053,7 +2818,7 @@ export const concerns: Concern[] = [
       steps: [
         {
           title: "History",
-          body: "What you would like to change and how long it has been that way, your weight history, whether you clench or grind, and any previous injectables, threads or surgery.",
+          body: "Your weight history, whether you clench or grind, and any previous injectables, threads or surgery.",
         },
         {
           title: "Examination",
@@ -3061,11 +2826,9 @@ export const concerns: Concern[] = [
         },
         {
           title: "Discussion and plan",
-          body: "Which layer is responsible, what each option changes and will not change, downtime and risks, and whether the outcome you have in mind is achievable, with no obligation to proceed.",
+          body: "Which layer is responsible, and whether the outcome you have in mind is achievable, with no obligation to proceed.",
         },
       ],
-      outro:
-        "Bring a photograph of what you have in mind if you have one. It is far more useful than a description, and it lets the doctor be specific about what is and is not achievable on your face.",
     },
     visitImages: [
       {
@@ -3083,7 +2846,7 @@ export const concerns: Concern[] = [
         },
         {
           lead: "Uncommon but important",
-          body: "Injectables carry a rare but serious risk of vascular occlusion, and muscle-relaxing injection can, uncommonly, affect a neighbouring muscle and alter the smile temporarily. Both are reasons to be treated by a doctor familiar with facial anatomy.",
+          body: "Injectables carry a rare but serious risk of vascular occlusion, and muscle-relaxing injection can, uncommonly, affect a neighbouring muscle and alter the smile temporarily.",
         },
         {
           lead: "Asymmetry is normal, and worth knowing about",
@@ -3122,52 +2885,36 @@ export const concerns: Concern[] = [
     // ── 16
     faqs: [
       {
-        q: "Can face contouring change my bone structure?",
-        a: "No. Every treatment discussed on this page works on soft tissue: fat, muscle, skin or added volume. Bone sets the outline your face works within, and changing it is a surgical procedure carried out by qualified surgeons. What non-surgical treatment can do is change how much support sits on that structure and how crisply the edges read.",
-      },
-      {
         q: "How do I know whether it is fat or loose skin under my chin?",
-        a: "The pinch test is the usual starting point: if you can hold it between finger and thumb and it feels soft and substantial, fat is likely part of it. If gently drawing the skin back toward the ear restores the jaw outline, laxity is contributing. Many people have both, in which case sequence matters, because reducing fullness first shows how much laxity was really there.",
+        a: "The pinch test is the usual starting point: if you can hold it between finger and thumb and it feels soft and substantial, fat is likely part of it. If gently drawing the skin back toward the ear restores the jaw outline, laxity is contributing.",
       },
       {
         q: "Does treating the masseter muscle change my face shape?",
-        a: "It can, where the muscle is genuinely contributing to width at the back of the jaw. The muscle works less forcefully after treatment and gradually reduces in bulk over weeks, which softens the outline viewed from the front. It is temporary and repeated periodically to maintain. If you clench or grind, it may also relieve jaw aching.",
+        a: "It can, where the muscle is genuinely contributing to width at the back of the jaw. The muscle works less forcefully after treatment and gradually reduces in bulk over weeks, which softens the outline viewed from the front.",
       },
       {
         q: "Is chin filler safe?",
-        a: "In trained hands and with an appropriate product, it is a well-established treatment, but it is not trivial. The chin and jaw area contains arteries, and the serious risk with any filler is accidental placement into a vessel. This is why it should be performed by a doctor who knows the anatomy, with the means to manage a complication.",
+        a: "In trained hands and with an appropriate product, it is a well-established treatment, but it is not trivial. The chin and jaw area contains arteries, and the serious risk with any filler is accidental placement into a vessel.",
       },
       {
         q: "Will fat freezing under my chin help me lose weight?",
-        a: "No. It targets a localised pocket in a specific area and does not change your overall weight or treat obesity. It is generally considered for people who are near a stable weight and have a defined pocket that has not responded to diet and exercise. If overall weight is the concern, that is a different conversation.",
-      },
-      {
-        q: "How long do the effects last?",
-        a: "It varies by treatment. Muscle-relaxing injection wears off over a period of months and is repeated. Volume support lasts longer but is gradually broken down by the body. Fat reduction removes fat cells from the treated pocket, though remaining cells still respond to weight change, so the result depends on your weight staying reasonably stable.",
+        a: "No. It targets a localised pocket in a specific area and does not change your overall weight or treat obesity. It is generally considered for people who are near a stable weight and have a defined pocket that has not responded to diet and exercise.",
       },
       {
         q: "Will I look overdone?",
-        a: "That risk comes almost entirely from too much product placed to chase a shape the face cannot naturally hold. It is avoided by treating conservatively, staging over sessions and reviewing between them, and by the doctor being willing to say that a request is not proportionate. It is entirely reasonable to state at consultation that you want the change to be subtle.",
-      },
-      {
-        q: "Is there downtime?",
-        a: "Muscle-relaxing injection usually has none. Injectables can bruise and swell for several days, so plan around events. Fat-reduction treatment leaves the area swollen, firm and tender, sometimes for a week or two, and numbness can persist longer. Energy-based tightening is generally same-day with some redness.",
+        a: "That risk comes almost entirely from too much product placed to chase a shape the face cannot naturally hold. It is avoided by treating conservatively, staging over sessions and reviewing between them, and by the doctor being willing to say that a request is not proportionate.",
       },
       {
         q: "Can men have face contouring?",
-        a: "Yes, and jaw and chin definition is one of the more common reasons men attend. The assessment differs, because a male jawline is typically wider and more angular and treatment aimed at a narrower outline would be the wrong goal. Masseter treatment in particular is considered carefully in men, since reducing width may not be desirable. The plan follows your anatomy and what you want, not a template.",
-      },
-      {
-        q: "How soon will I see a change?",
-        a: "It depends on the treatment. Volume support is visible immediately, though swelling makes the first days misleading. Muscle-relaxing injection takes a couple of weeks to show and continues to develop over the following months. Fat reduction and energy-based tightening build gradually over weeks to months.",
+        a: "Yes, and jaw and chin definition is one of the more common reasons men attend. The assessment differs, because a male jawline is typically wider and more angular and treatment aimed at a narrower outline would be the wrong goal.",
       },
       {
         q: "Can I bring a photo of the look I want?",
-        a: "Please do. It makes the consultation more useful, because it lets the doctor be specific rather than general about what your anatomy allows. Be prepared for an honest answer: reference images are often of faces with different bone structure, and sometimes the truthful response is that the outline in the picture is not reachable on your face by any non-surgical route.",
+        a: "Please do. Be prepared for an honest answer: reference images are often of faces with different bone structure, and sometimes the truthful response is that the outline in the picture is not reachable on your face by any non-surgical route.",
       },
       {
         q: "What if nothing here suits me?",
-        a: "Then that is what the consultation should tell you. If the change you want requires surgery, or if the assessment finds nothing that treatment would meaningfully improve, our doctors will say so and, where appropriate, suggest a surgical opinion. Being told that no treatment is warranted is a legitimate outcome.",
+        a: "Then that is what the consultation should tell you. If the change you want requires surgery, or if the assessment finds nothing that treatment would meaningfully improve, our doctors will say so and, where appropriate, suggest a surgical opinion.",
       },
     ],
 
@@ -3197,9 +2944,9 @@ export const concerns: Concern[] = [
     group: "Face",
     image: "https://cdn.kaiteki.my/concerns/face-lifting/card.jpg",
     summary:
-      "Sagging along the jawline, neck or mid-face can be addressed with non-surgical lifting options. A doctor assesses the degree of laxity first.",
+      "Sagging along the jawline, neck or mid-face can be addressed with non-surgical lifting options.",
     leadAnswer:
-      "Sagging comes from three layers: the skin loosening, the face losing volume, and the deeper tissue under the skin descending. Non-surgical options such as focused ultrasound, laser protocols and collagen-stimulating injectables work gradually, in degrees of firmness rather than lift. They do not remove excess skin, and advanced descent is a question for a surgeon.",
+      "Sagging comes from three layers: the skin loosening, the face losing volume, and the deeper tissue under the skin descending. Non-surgical options such as focused ultrasound, laser protocols and collagen-stimulating injectables work gradually, in degrees of firmness rather than lift.",
     treatments: [
       "hifu",
       "ultherapy",
@@ -3252,7 +2999,7 @@ export const concerns: Concern[] = [
       {
         heading: "What is non-surgical face lifting?",
         body: [
-          "As a concern, face lifting means wanting firmer skin that sits higher, mainly along the cheeks, jawline and neck. The options discussed here are non-surgical, energy-based and injectable; a surgical face-lift is a separate procedure carried out by a surgeon.",
+          "As a concern, face lifting means wanting firmer skin that sits higher, mainly along the cheeks, jawline and neck.",
         ],
       },
     ],
@@ -3270,12 +3017,8 @@ export const concerns: Concern[] = [
           body: "the scaffolding that holds skin taut is renewed more slowly from the mid-twenties onward, so the skin recovers its shape less readily after it is stretched.",
         },
         {
-          lead: "Skin laxity:",
-          body: "as that scaffolding thins, skin has more surface area than the structure beneath it needs, and the excess settles downward along the jaw and neck.",
-        },
-        {
           lead: "Changes in muscle and the layer beneath:",
-          body: "the sheet of muscle and connective tissue under the skin, the SMAS, loosens with age, and the ligaments that anchor it to bone stretch. Much of what reads as sagging happens at this depth rather than at the surface.",
+          body: "the sheet of muscle and connective tissue under the skin, the SMAS, loosens with age, and the ligaments that anchor it to bone stretch.",
         },
         {
           lead: "Gravity and time:",
@@ -3302,13 +3045,7 @@ export const concerns: Concern[] = [
           label: "Skin",
           sub: "Surface laxity and texture",
           title: "Skin-level laxity",
-          body: "The skin itself has thinned and lost elasticity. Pinch it gently on the cheek and it returns to place slowly. Surface texture, fine crepe lines and a general looseness dominate, while the underlying shape of the face still looks broadly intact.",
-          items: [
-            {
-              lead: "What it is not:",
-              body: "not a shape problem. Adding volume to skin-level laxity usually makes a face look fuller rather than firmer.",
-            },
-          ],
+          body: "The skin itself has thinned and lost elasticity. Pinch it gently on the cheek and it returns to place slowly.",
           routing:
             "commonly assessed for energy-based tightening or collagen-stimulating treatments aimed at skin quality.",
         },
@@ -3356,13 +3093,9 @@ export const concerns: Concern[] = [
         },
         {
           title: "Downtime and commitment",
-          body: "Non-surgical treatments are typically same-day, with little or no time away from work. Surgery involves weeks of recovery. That difference is often the deciding factor rather than the result itself.",
+          body: "Non-surgical treatments are typically same-day, with little or no time away from work. Surgery involves weeks of recovery.",
         },
       ],
-      note: {
-        title: "When we will say so",
-        body: "If the laxity is beyond what a device can address, the doctor will say so. A referral for a surgical opinion is a legitimate outcome.",
-      },
     },
 
     // ── 07
@@ -3373,8 +3106,6 @@ export const concerns: Concern[] = [
       triggers: [
         "You are noticing the jawline losing definition, or jowls forming either side of the chin.",
         "Skin along the neck feels looser, or the angle under the jaw has softened.",
-        "You are considering treatment and want to know whether non-surgical options can realistically address what you have.",
-        "You have been recommended a treatment elsewhere and want a second opinion on whether it fits the problem.",
       ],
     },
 
@@ -3390,31 +3121,29 @@ export const concerns: Concern[] = [
     treatmentWhy: {
       hifu: {
         why: "For laxity along the jawline and neck",
-        body: "Focused ultrasound delivered to set depths beneath the skin, including the layer surgeons address. Considered where mild to moderate descent is the concern rather than skin quality.",
+        body: "Focused ultrasound delivered to set depths beneath the skin, including the layer surgeons address.",
       },
       ultherapy: {
         why: "For lifting with ultrasound imaging to guide it",
-        body: "The same principle as HIFU, with real-time imaging so the doctor can see the tissue layers as energy is delivered. Relevant where precision at depth matters, or where anatomy makes blind delivery less appropriate.",
+        body: "The same principle as HIFU, with real-time imaging so the doctor can see the tissue layers as energy is delivered.",
       },
       "fotona-4d": {
         why: "For laxity treated from inside the mouth outwards",
-        body: "A laser protocol that works in several passes, one of them delivered through the inside of the cheek. Considered where firmness and skin quality are both part of the picture rather than descent alone.",
+        body: "A laser protocol that works in several passes, one of them delivered through the inside of the cheek.",
       },
       "microwave-contouring": {
         why: "For fullness under the chin that blurs the jawline",
-        body: "Targets fat and skin firmness in the submental area. Considered where what obscures the jawline is tissue volume under the chin rather than laxity along it.",
+        body: "Targets fat and skin firmness in the submental area.",
       },
       "bio-stimulator": {
         why: "For gradual collagen rebuilding over months",
-        body: "An injectable that prompts the skin to produce its own collagen rather than adding volume directly. Change is deliberately slow, which some people prefer and others find frustrating.",
+        body: "An injectable that prompts the skin to produce its own collagen rather than adding volume directly.",
       },
       "dermal-fillers": {
         why: "For support where volume loss is doing the sagging",
-        body: "Placed to rebuild structure in a flattened mid-face rather than to fill a line. Most relevant where the face has deflated rather than descended.",
+        body: "Placed to rebuild structure in a flattened mid-face rather than to fill a line.",
       },
     },
-    treatmentsNote:
-      "Combinations are common, because most faces involve more than one layer.",
 
     // ── 10
     compare: {
@@ -3424,7 +3153,6 @@ export const concerns: Concern[] = [
       rows: [
         ["Skin looseness and crepe texture", "Collagen-stimulating treatment", "Course, then maintenance", "Minimal"],
         ["Mild jawline softening", "Focused ultrasound", "Single session, reviewed", "None to minimal"],
-        ["Jowls with a clear jawline break", "Focused ultrasound, assessed individually", "Assessed individually", "None to minimal"],
         ["Flattened mid-face", "Volume support or bio-stimulator", "Staged over sessions", "1–2 days swelling"],
         ["Fullness under the chin", "Microwave contouring", "Assessed individually", "Several days tenderness"],
         ["Firmness plus skin quality", "Laser protocol across depths", "Course, spaced", "1–3 days redness"],
@@ -3458,19 +3186,17 @@ export const concerns: Concern[] = [
       steps: [
         {
           title: "History",
-          body: "What you have noticed and over what period, any previous treatments or surgery, your medical history, and any medication or injectables you have had.",
+          body: "Previous treatments, surgery, threads or injectables, and your medical history.",
         },
         {
           title: "Examination",
-          body: "Laxity looks different lying down, so the examination is done upright.",
+          body: "Each layer is examined in turn.",
         },
         {
           title: "Discussion and plan",
-          body: "Which layer is leading, what each option can and cannot reach, downtime and risks, and whether a surgical opinion would serve you better, with no obligation to proceed.",
+          body: "Which layer is leading, what each option can reach, and whether a surgical opinion would serve you better.",
         },
       ],
-      outro:
-        "Bring photographs of yourself from five or ten years ago if you have them. They are far more useful than a description for judging what has actually changed and how quickly.",
     },
 
     // ── 12 media · the clinic's own session photography (Drive "Media Sync",
@@ -3492,7 +3218,7 @@ export const concerns: Concern[] = [
         },
         {
           lead: "Uncommon but important",
-          body: "Energy-based lifting can, rarely, cause a temporary weakness in a facial nerve branch or a small area of fat loss. Injectables carry a rare but serious risk of vascular occlusion. Both are reasons treatment should be carried out by a doctor who knows the anatomy at depth.",
+          body: "Energy-based lifting can, rarely, cause a temporary weakness in a facial nerve branch or a small area of fat loss. Injectables carry a rare but serious risk of vascular occlusion.",
         },
         {
           lead: "Pigment change and Malaysian skin",
@@ -3524,55 +3250,40 @@ export const concerns: Concern[] = [
     technologyIntro:
       "Lifting treatments differ mainly in the depth they reach and how they deliver energy there.",
 
+
     // ── 16
     faqs: [
       {
         q: "What is the difference between non-surgical and surgical face lifting?",
-        a: "A surgical face-lift repositions and removes tissue directly under anaesthetic, performed by a qualified surgeon, and it reaches a degree of descent no device can. Non-surgical options work by stimulating the skin to build collagen, or by supporting structure with injectables, and the change is gradual and partial. They are different categories rather than two strengths of the same thing.",
-      },
-      {
-        q: "When should I consider a lifting treatment?",
-        a: "There is no fixed age. What matters is what is actually changing: skin quality, volume, or the position of deeper tissue. Many people are assessed in their thirties and forties for skin-level laxity and volume, and treated more conservatively than they expected. Others arrive with descent that has passed what a device can reach.",
+        a: "A surgical face-lift repositions and removes tissue directly under anaesthetic, performed by a qualified surgeon, and it reaches a degree of descent no device can. Non-surgical options work by stimulating the skin to build collagen, or by supporting structure with injectables, and the change is gradual and partial.",
       },
       {
         q: "How long does the effect last?",
-        a: "It varies with the treatment, your skin and how quickly you age, and no one can put a reliable number on it in advance. Collagen-based treatments build change over several months and then that change gradually recedes as ageing continues, so they are typically repeated periodically rather than done once. Volume support behaves differently again.",
+        a: "Collagen-based treatments build change over several months and then that change gradually recedes as ageing continues, so they are typically repeated periodically rather than done once.",
       },
       {
         q: "Is it painful?",
-        a: "Most people describe energy-based lifting as uncomfortable rather than painful, with a deep warm or prickling sensation that comes in pulses. Treatment at deeper settings is felt more. Numbing cream, cooling and, where appropriate, oral pain relief are used. Injectables are generally more comfortable, often with local anaesthetic in the product.",
+        a: "Most people describe energy-based lifting as uncomfortable rather than painful, with a deep warm or prickling sensation that comes in pulses. Numbing cream, cooling and, where appropriate, oral pain relief are used. Injectables are generally more comfortable, often with local anaesthetic in the product.",
       },
       {
         q: "How soon will I see a difference?",
-        a: "With collagen-stimulating treatments, gradually. A degree of immediate tightening is sometimes noticeable from tissue contraction, but the meaningful change comes as new collagen forms over the following months, and it is often more obvious to other people than to you. Volume support shows immediately, though swelling in the first days makes early judgement unreliable.",
+        a: "With collagen-stimulating treatments, gradually. A degree of immediate tightening is sometimes noticeable from tissue contraction, but the meaningful change comes as new collagen forms over the following months, and it is often more obvious to other people than to you.",
       },
       {
         q: "Will it make my face look done or unnatural?",
-        a: "Energy-based lifting does not add anything to the face, so it does not carry that risk in the way injectables can. With volume support, an overdone look almost always comes from too much product placed to fill lines rather than to rebuild structure. Conservative, staged treatment with a review point between sessions is how that is avoided.",
+        a: "Energy-based lifting does not add anything to the face, so it does not carry that risk in the way injectables can. With volume support, an overdone look almost always comes from too much product placed to fill lines rather than to rebuild structure.",
       },
       {
         q: "Is there any downtime?",
-        a: "For most energy-based lifting, little to none: some redness, warmth and tenderness for a day or two, and you can generally go back to work the same day. Injectables can leave bruising and swelling for several days, which is worth planning around if you have an event. Laser-based protocols can leave redness for longer.",
+        a: "For most energy-based lifting, little to none: some redness, warmth and tenderness for a day or two, and you can generally go back to work the same day. Injectables can leave bruising and swelling for several days, which is worth planning around if you have an event.",
       },
       {
         q: "Can I have this if I have had fillers or threads before?",
-        a: "Usually yes, but the doctor needs to know exactly what you have had and when, because it changes the assessment and sometimes the technique. Energy delivered over existing product may affect it, and previous threads alter the tissue planes. Bring records if you have them, including product names and dates. Withholding this makes the treatment less safe, not more discreet.",
+        a: "Usually yes, but the doctor needs to know exactly what you have had and when, because it changes the assessment and sometimes the technique. Bring records if you have them, including product names and dates.",
       },
       {
         q: "Can non-surgical lifting treat the neck?",
-        a: "The neck is commonly assessed alongside the lower face. It also behaves differently: skin there is thinner, has less support beneath it and recovers more slowly, so treatment is typically more conservative. Where the concern is loose skin rather than firmness, expectations should be modest, and a surgical opinion is sometimes the more honest recommendation.",
-      },
-      {
-        q: "Do I need several sessions or just one?",
-        a: "That depends on the treatment. Some focused-ultrasound protocols are planned as a single session with a review months later, while collagen-stimulating injectables and laser protocols are typically staged across several visits weeks apart. What is common to all of them is that the plan is set after assessment and adjusted at review.",
-      },
-      {
-        q: "Will I need to keep having treatment?",
-        a: "If you want to hold the change, generally yes. These treatments work with your own collagen, and ageing continues around them. Most people who are pleased with the result return periodically rather than once.",
-      },
-      {
-        q: "What if a doctor tells me nothing here will work?",
-        a: "That is a useful consultation, not a wasted one. Where descent is advanced, no non-surgical device reaches what surgery does, and a course of treatment sold into that situation costs money and delivers disappointment. Our doctors will say so and, where appropriate, suggest a surgical opinion. You are also free to have the assessment and decide to do nothing at all.",
+        a: "The neck is commonly assessed alongside the lower face. It also behaves differently: skin there is thinner, has less support beneath it and recovers more slowly, so treatment is typically more conservative.",
       },
     ],
 
@@ -3602,9 +3313,9 @@ export const concerns: Concern[] = [
     group: "Skin",
     image: "https://cdn.kaiteki.my/concerns/aging/card.jpg",
     summary:
-      "Firmness, texture and volume change at different rates. A doctor maps what's happening with your skin before building a plan.",
+      "Firmness, texture and volume change at different rates.",
     leadAnswer:
-      "Skin ageing is gradual change in firmness, texture, hydration and volume, driven by genetics and time (intrinsic ageing) and, to a large extent, by cumulative sun exposure and habits (extrinsic ageing). The four change at different rates, so plans are usually staged, starting with whichever change bothers you most.",
+      "Skin ageing is gradual change in firmness, texture, hydration and volume, driven by genetics and time (intrinsic ageing) and, to a large extent, by cumulative sun exposure and habits (extrinsic ageing).",
     treatments: [
       "hifu",
       "ultherapy",
@@ -3659,7 +3370,7 @@ export const concerns: Concern[] = [
       {
         heading: "What is skin ageing?",
         body: [
-          "Skin ageing is the gradual loss of collagen, elasticity, hydration and volume. Part of it is intrinsic, set by genes and time; part is extrinsic, driven mainly by sun exposure and habits. The extrinsic part is the part anything can be done about.",
+          "Skin ageing is the gradual loss of collagen, elasticity, hydration and volume.",
         ],
       },
     ],
@@ -3677,11 +3388,11 @@ export const concerns: Concern[] = [
         },
         {
           lead: "Cumulative UV exposure:",
-          body: "the single largest external contributor, and the one most within your control. Compare the skin on your inner arm with the back of your hand: the difference is largely sun rather than years.",
+          body: "the single largest external contributor, and the one most within your control.",
         },
         {
           lead: "Volume loss and redistribution:",
-          body: "fat pads in the mid-face shrink and descend, and bone itself remodels over decades. Much of what reads as sagging is actually deflation, and it changes proportion as well as firmness.",
+          body: "fat pads in the mid-face shrink and descend, and bone itself remodels over decades.",
         },
         {
           lead: "Reduced hydration and barrier function:",
@@ -3707,7 +3418,7 @@ export const concerns: Concern[] = [
           label: "Early",
           sub: "Quality and prevention",
           title: "Early change",
-          body: "The face still holds its shape. What has changed is skin quality: a little less bounce, fine lines appearing on movement, tone less even, and skin that looks tired earlier in the day than it used to. Volume and firmness are broadly intact.",
+          body: "The face still holds its shape. What has changed is skin quality: a little less bounce, fine lines appearing on movement, tone less even, and skin that looks tired earlier in the day than it used to.",
           routing:
             "commonly assessed for skin-quality treatment and a sensible daily routine rather than anything structural.",
         },
@@ -3715,7 +3426,7 @@ export const concerns: Concern[] = [
           label: "Established",
           sub: "Lines at rest, early laxity",
           title: "Established change",
-          body: "Lines are now visible when the face is relaxed, the mid-face has begun to flatten, and the jawline is a little less crisp than it was. Several things are changing at once, which is what makes this stage the one where sequencing matters most.",
+          body: "Lines are now visible when the face is relaxed, the mid-face has begun to flatten, and the jawline is a little less crisp than it was.",
           routing:
             "assessed as a sequence across skin quality, volume and firmness, with review points between stages.",
         },
@@ -3723,7 +3434,7 @@ export const concerns: Concern[] = [
           label: "Advanced",
           sub: "Laxity, folds and texture",
           title: "Advanced change",
-          body: "Laxity along the jawline and neck, deeper folds, significant volume loss and accumulated sun damage in the skin surface. Non-surgical treatment still has a role here, but it is important to be clear about its reach.",
+          body: "Laxity along the jawline and neck, deeper folds, significant volume loss and accumulated sun damage in the skin surface.",
           routing:
             "assessed individually, with a frank discussion about what non-surgical treatment can and cannot reach.",
         },
@@ -3733,8 +3444,6 @@ export const concerns: Concern[] = [
     // ── 06
     locationBlock: {
       heading: "Where ageing shows first",
-      intro:
-        "Different areas change at different rates, largely according to how thin the skin is, how much it moves and how much sun it has taken.",
       cards: [
         {
           title: "Around the eyes",
@@ -3746,7 +3455,7 @@ export const concerns: Concern[] = [
         },
         {
           title: "Around the mouth",
-          body: "Fine vertical lines on the lip and folds running from the mouth corners. Movement, sun and volume change all contribute, and smoking accelerates all three.",
+          body: "Fine vertical lines on the lip and folds running from the mouth corners.",
         },
         {
           title: "Jawline and lower face",
@@ -3754,12 +3463,12 @@ export const concerns: Concern[] = [
         },
         {
           title: "Neck, chest and hands",
-          body: "Thin skin, few oil glands and decades of missed sunscreen. Often noticeably older than the face, and treated more conservatively because they heal more slowly.",
+          body: "Thin skin, few oil glands and decades of missed sunscreen.",
         },
       ],
       note: {
         title: "Not ageing?",
-        body: "A new or changing mark, a patch that is scaly, crusting or bleeding, or a lesion that will not heal is not a sign of ageing and should be examined promptly. Years of sun exposure make that check more important, not less.",
+        body: "A new or changing mark, a patch that is scaly, crusting or bleeding, or a lesion that will not heal is not a sign of ageing and should be examined promptly.",
       },
     },
 
@@ -3769,7 +3478,6 @@ export const concerns: Concern[] = [
         "There is no age at which an assessment becomes necessary. It is worth having one if:",
       triggers: [
         "Change seems to have accelerated over a short period, which is worth examining on its own.",
-        "You are considering treatment and want a staged, conservative plan rather than a package.",
       ],
     },
 
@@ -3785,7 +3493,7 @@ export const concerns: Concern[] = [
     treatmentWhy: {
       "skin-booster": {
         why: "For hydration and skin quality overall",
-        body: "Injectable hydration distributed across an area to improve how the skin holds water and reflects light. Considered where dullness, dryness and fine crepiness are what you are noticing rather than shape.",
+        body: "Injectable hydration distributed across an area to improve how the skin holds water and reflects light.",
       },
       "resurfacing-laser": {
         why: "For sun damage, texture and tone together",
@@ -3793,15 +3501,15 @@ export const concerns: Concern[] = [
       },
       "fotona-4d": {
         why: "For a layered approach across several depths",
-        body: "A laser protocol working in several passes at different depths, including one delivered from inside the mouth. Considered where firmness and surface quality both need attention in the same course.",
+        body: "A laser protocol working in several passes at different depths, including one delivered from inside the mouth.",
       },
       hifu: {
         why: "For firmness in the lower third of the face",
-        body: "Focused ultrasound delivered beneath the skin to prompt collagen change at depth. Considered where the jawline and lower face are leading the picture rather than skin surface or volume.",
+        body: "Focused ultrasound delivered beneath the skin to prompt collagen change at depth.",
       },
       ultherapy: {
         why: "For a targeted lift where laxity leads the picture",
-        body: "The same principle with ultrasound imaging so the doctor can see the tissue layers while treating. Relevant where precision at depth matters more than breadth of coverage.",
+        body: "The same principle with ultrasound imaging so the doctor can see the tissue layers while treating.",
       },
       "bio-stimulator": {
         why: "For rebuilding structure gradually rather than filling",
@@ -3809,11 +3517,9 @@ export const concerns: Concern[] = [
       },
       "dermal-fillers": {
         why: "For restoring volume where the face has flattened",
-        body: "Placed to rebuild support in a deflated mid-face rather than to fill individual lines. Conservative, staged placement is what separates a rested look from an overfilled one.",
+        body: "Placed to rebuild support in a deflated mid-face rather than to fill individual lines.",
       },
     },
-    treatmentsNote:
-      "Almost nobody needs all of these, and treating everything at once removes the information needed to judge what actually helped. A sensible plan addresses the change that bothers you most, reviews it, and stops when you are satisfied.",
 
     // ── 10
     compare: {
@@ -3843,7 +3549,7 @@ export const concerns: Concern[] = [
       steps: [
         {
           title: "History",
-          body: "What you have noticed and over what period, your sun habits, whether you smoke, your current skincare, any previous treatments, and your general health and medication.",
+          body: "Your sun habits, smoking, skincare and previous treatments.",
         },
         {
           title: "Examination",
@@ -3851,7 +3557,7 @@ export const concerns: Concern[] = [
         },
         {
           title: "Discussion and plan",
-          body: "Which change is leading, what each option addresses and will not address, downtime and risks, and a conservative first step, with no obligation to proceed.",
+          body: "Which change is leading, and a conservative first step.",
         },
       ],
       outro:
@@ -3881,7 +3587,7 @@ export const concerns: Concern[] = [
         },
         {
           lead: "What treatment cannot do",
-          body: "Nothing here stops or reverses ageing. Treatment addresses some of the visible change, gradually and partially, and the process continues underneath it. No device removes excess skin, and results are maintained rather than permanent.",
+          body: "Nothing here stops or reverses ageing. No device removes excess skin, and results are maintained rather than permanent.",
         },
       ],
       disclose:
@@ -3905,15 +3611,7 @@ export const concerns: Concern[] = [
     faqs: [
       {
         q: "Can skin ageing be prevented?",
-        a: "Not the intrinsic part, which is driven by genetics and time and happens to everyone. The extrinsic part is a different matter: cumulative UV exposure accounts for a large share of what people describe as ageing skin, and daily broad-spectrum sunscreen is by a distance the most evidenced thing you can do about it. Not smoking, sleeping properly and a sensible diet all support the same outcome without stopping the underlying process.",
-      },
-      {
-        q: "What actually changes as skin ages?",
-        a: "Four things, at different speeds. Collagen and elastin decline, so firmness and recoil reduce. Volume is lost and redistributed as fat pads shrink and descend. Hydration and barrier function fall, making skin drier and duller. And accumulated sun damage shows as uneven tone and rough texture. Two people the same age can be dominated by entirely different ones.",
-      },
-      {
-        q: "At what age should I start treatment?",
-        a: "There is no medically correct age. What is true is that skin quality and sun protection matter at every age, and that a change addressed early is generally simpler than one addressed late. Plenty of people are assessed, told that their routine is doing the job, and leave without booking anything.",
+        a: "Not the intrinsic part, which is driven by genetics and time and happens to everyone. The extrinsic part is a different matter: cumulative UV exposure accounts for a large share of what people describe as ageing skin, and daily broad-spectrum sunscreen is by a distance the most evidenced thing you can do about it.",
       },
       {
         q: "Does skincare make a real difference?",
@@ -3921,35 +3619,27 @@ export const concerns: Concern[] = [
       },
       {
         q: "How soon will I see a difference?",
-        a: "It depends on the treatment. Volume support is visible immediately, though swelling makes the first days unreliable. Skin boosters show over a few weeks. Collagen-stimulating and energy-based treatments build gradually over several months, and are often more noticeable to other people than to you.",
+        a: "It depends on the treatment. Collagen-stimulating and energy-based treatments build gradually over several months, and are often more noticeable to other people than to you.",
       },
       {
         q: "Will treatment make me look unnatural?",
-        a: "That risk comes almost entirely from doing too much at once, particularly with volume. Conservative, staged treatment with a review point between stages is how it is avoided, along with a doctor willing to say that a request is not proportionate. It is entirely reasonable to state at the consultation that you would rather look rested than different.",
+        a: "That risk comes almost entirely from doing too much at once, particularly with volume. Conservative, staged treatment with a review point between stages is how it is avoided, along with a doctor willing to say that a request is not proportionate.",
       },
       {
         q: "How long do the effects last?",
-        a: "None of it is permanent, and ageing continues underneath whatever is done. Volume support is gradually broken down by the body over a period of months to years depending on the product and placement. Collagen-based change builds and then recedes. Most people who are pleased with a result return periodically.",
+        a: "Volume support is gradually broken down by the body over a period of months to years depending on the product and placement. Collagen-based change builds and then recedes.",
       },
       {
         q: "Is laser treatment safe for Asian skin?",
-        a: "Yes, when the device and settings are chosen by a doctor experienced with your skin type. The specific consideration in medium and deeper tones is post-inflammatory hyperpigmentation, where the skin responds to treatment by producing extra pigment. It is managed by choosing suitable wavelengths, using conservative settings, spacing sessions further apart and being strict about sun protection afterwards.",
+        a: "Yes, when the device and settings are chosen by a doctor experienced with your skin type. The specific consideration in medium and deeper tones is post-inflammatory hyperpigmentation, where the skin responds to treatment by producing extra pigment.",
       },
       {
         q: "Should I treat my neck and hands as well?",
-        a: "They are worth assessing, and they are often noticeably more sun-damaged than the face because they are protected least. They also behave differently: thinner skin, fewer oil glands and slower recovery mean treatment is more conservative and expectations more modest. A face treated in isolation while the neck and hands are left can end up looking mismatched.",
+        a: "They are worth assessing, and they are often noticeably more sun-damaged than the face because they are protected least. A face treated in isolation while the neck and hands are left can end up looking mismatched.",
       },
       {
         q: "What is the difference between intrinsic and extrinsic ageing?",
-        a: "Intrinsic ageing is what your genes and the passage of time do regardless of how you live: gradual collagen decline, thinning skin, volume change. Extrinsic ageing is what environment and habits add on top, and it is dominated by UV exposure, with smoking, pollution and diet contributing. The useful part of the distinction is that the second is largely within your control, and it is the larger share of what most people see.",
-      },
-      {
-        q: "Do I need to do all of this at once?",
-        a: "No, and it is usually a poor idea. Treating everything simultaneously costs more, increases the chance of an overdone look, and removes the information you need to judge what actually worked. Addressing the one thing that bothers you most, reviewing it, then deciding whether to continue is both cheaper and more likely to leave you satisfied.",
-      },
-      {
-        q: "Is there a point where non-surgical treatment isn't enough?",
-        a: "Yes, and an honest consultation will say so. Where laxity is advanced and skin has genuinely descended, no device removes excess skin, and a course of treatment sold into that situation delivers disappointment. Our doctors will tell you when that is the case and, where appropriate, suggest a surgical opinion.",
+        a: "Intrinsic ageing is what your genes and the passage of time do regardless of how you live: gradual collagen decline, thinning skin, volume change. Extrinsic ageing is what environment and habits add on top, and it is dominated by UV exposure, with smoking, pollution and diet contributing.",
       },
     ],
 
@@ -3981,9 +3671,9 @@ export const concerns: Concern[] = [
     group: "Hair & Body",
     image: "https://cdn.kaiteki.my/concerns/body-slimming/card.jpg",
     summary:
-      "Stubborn fat in specific areas can be targeted without surgery. These are body-contouring treatments, not weight-loss solutions.",
+      "Stubborn fat in specific areas can be targeted without surgery.",
     leadAnswer:
-      "Body contouring targets localised pockets of fat (the lower abdomen, flanks, bra line) that persist at a stable weight, using fat freezing, microwave energy or muscle stimulation. It is not a weight-loss treatment: it does not change overall weight or treat obesity, and is generally considered for people near a weight they can maintain.",
+      "Body contouring targets localised pockets of fat (the lower abdomen, flanks, bra line) that persist at a stable weight, using fat freezing, microwave energy or muscle stimulation.",
     treatments: ["fat-freezing", "microwave-contouring", "muscle-stimulation"],
     reviewedBy: "dr-joaan-kong",
     lastReviewed: "2026-06-08",
@@ -4028,7 +3718,7 @@ export const concerns: Concern[] = [
       {
         heading: "What is body contouring?",
         body: [
-          "Body contouring, often called body slimming, describes in-clinic treatments aimed at the shape of a specific area (a fat pocket, muscle tone or skin firmness) rather than body weight. It sits alongside diet and exercise, never in place of them.",
+          "Body contouring, often called body slimming, describes in-clinic treatments aimed at the shape of a specific area (a fat pocket, muscle tone or skin firmness) rather than body weight.",
         ],
       },
     ],
@@ -4054,7 +3744,7 @@ export const concerns: Concern[] = [
         },
         {
           lead: "Skin texture and cellulite:",
-          body: "dimpling caused by fibrous bands tethering skin to deeper tissue while fat pushes between them. It is a structural feature of skin, present at every body size, and it is not a sign of excess weight.",
+          body: "dimpling caused by fibrous bands tethering skin to deeper tissue while fat pushes between them.",
         },
       ],
     },
@@ -4076,22 +3766,22 @@ export const concerns: Concern[] = [
         {
           claim: "The fat comes back somewhere else.",
           reality:
-            "Fat cells removed from a treated area do not relocate. What happens is that if you gain weight afterwards, the fat cells you still have everywhere else enlarge, and the treated area can look proportionally different. The outcome depends on your weight staying reasonably stable.",
+            "Fat cells removed from a treated area do not relocate. What happens is that if you gain weight afterwards, the fat cells you still have everywhere else enlarge, and the treated area can look proportionally different.",
         },
         {
           claim: "One session and it's done.",
           reality:
-            "Most areas are planned as a course with review points, and change from fat-reduction treatment builds over weeks to months as the body clears treated cells. A single session may be appropriate for a small area, but it is decided after assessment rather than sold in advance.",
+            "Most areas are planned as a course with review points, and change from fat-reduction treatment builds over weeks to months as the body clears treated cells.",
         },
         {
           claim: "It will tighten loose skin too.",
           reality:
-            "Fat reduction and skin firmness are different problems. Reducing fat under loose skin can make the looseness more visible rather than less. Where skin laxity is the leading issue, it is assessed on its own terms and may call for a different treatment entirely, or none.",
+            "Fat reduction and skin firmness are different problems. Reducing fat under loose skin can make the looseness more visible rather than less.",
         },
         {
           claim: "Cellulite can be removed.",
           reality:
-            "It can sometimes be made less obvious, but it is a structural feature of how skin attaches to the tissue beneath, present in people of every size and fitness level. Any treatment aimed at it should be discussed as improvement in appearance rather than removal.",
+            "It can sometimes be made less obvious, but it is a structural feature of how skin attaches to the tissue beneath, present in people of every size and fitness level.",
         },
       ],
     },
@@ -4102,11 +3792,7 @@ export const concerns: Concern[] = [
       triggers: [
         "A specific area has not changed despite a stable weight and consistent exercise.",
         "You are unsure whether what you are looking at is fat, loose skin or muscle tone.",
-        "You have been offered a treatment elsewhere and want a second opinion on whether it matches the concern.",
-        "Your weight is still changing, in which case timing is part of the advice.",
       ],
-      outro:
-        "If your weight is not yet stable, the advice is usually to wait.",
     },
 
     // ── 08
@@ -4121,19 +3807,17 @@ export const concerns: Concern[] = [
     treatmentWhy: {
       "fat-freezing": {
         why: "For a pinchable pocket that diet has not shifted",
-        body: "Controlled cooling applied to a defined pocket of fat, which the body then clears over the following weeks. Suitable where the fat can be drawn into an applicator, which is why the pinch test at assessment decides whether it applies at all.",
+        body: "Controlled cooling applied to a defined pocket of fat, which the body then clears over the following weeks.",
       },
       "microwave-contouring": {
         why: "For fat and skin firmness in one pass",
-        body: "Delivers energy that addresses fat volume and skin quality in the same treatment. Considered where an area shows both a pocket and some looseness, rather than one or the other cleanly.",
+        body: "Delivers energy that addresses fat volume and skin quality in the same treatment.",
       },
       "muscle-stimulation": {
         why: "For muscle tone under the fat layer",
-        body: "Prompts intense muscle contraction to build tone in the underlying muscle rather than to reduce fat. Considered where definition rather than volume is the concern, and often discussed alongside, not instead of, exercise.",
+        body: "Prompts intense muscle contraction to build tone in the underlying muscle rather than to reduce fat.",
       },
     },
-    treatmentsNote:
-      "Sequence matters where more than one applies: reducing a fat pocket first shows how much of what you were seeing was actually skin looseness underneath.",
 
     // ── results
     results: [
@@ -4151,7 +3835,7 @@ export const concerns: Concern[] = [
       steps: [
         {
           title: "History",
-          body: "Your weight over the past year or two, whether it is stable, what you have already tried, any pregnancies or significant weight change, your general health and any medication.",
+          body: "Your weight over the past year or two, any pregnancies, and what you have already tried.",
         },
         {
           title: "Examination",
@@ -4159,11 +3843,9 @@ export const concerns: Concern[] = [
         },
         {
           title: "Discussion and plan",
-          body: "What each option does, how long change takes to appear, downtime and risks, and what is realistic, including waiting until your weight settles. No obligation to proceed.",
+          body: "What is realistic, including waiting until your weight settles.",
         },
       ],
-      outro:
-        "Wear or bring clothing that lets the area be examined comfortably. If you have photographs from a period when your weight was different, they help the doctor judge what has actually changed.",
     },
     visitImages: [
       {
@@ -4197,7 +3879,7 @@ export const concerns: Concern[] = [
         },
         {
           lead: "What treatment cannot do",
-          body: "It brings no metabolic health benefit, and it cannot reduce overall weight, treat obesity or tighten loose skin. Cellulite is not removed. Change builds over weeks to months.",
+          body: "It brings no metabolic health benefit, and it cannot reduce overall weight, treat obesity or tighten loose skin. Cellulite is not removed.",
         },
       ],
       disclose:
@@ -4221,31 +3903,24 @@ export const concerns: Concern[] = [
     technologyIntro:
       "Fat volume, skin firmness and muscle tone are three different problems, and no single device addresses all three.",
 
+
     // ── 16
     faqs: [
       {
-        q: "Is body contouring a way to lose weight?",
-        a: "No. It reduces or reshapes fat in one specific area and does not change your overall weight, body mass index or metabolic health. It is not a treatment for obesity and it is not a substitute for diet and exercise. It is generally considered for people already near a weight they can maintain who have a localised area that has not responded.",
-      },
-      {
         q: "Will the fat come back?",
-        a: "Fat cells removed from a treated area do not return or move elsewhere. What can happen is that if you gain weight afterwards, the fat cells you still have throughout your body enlarge, including any remaining in the treated area, so the shape changes again. The result depends on your weight staying reasonably stable.",
+        a: "Fat cells removed from a treated area do not return or move elsewhere. The result depends on your weight staying reasonably stable.",
       },
       {
         q: "How soon will I see a difference?",
-        a: "Gradually. Fat-reduction treatment works by causing treated cells to be cleared by the body over the following weeks and months, so there is nothing to see immediately and the area may in fact look swollen at first. Muscle-stimulation treatment builds tone over a course.",
+        a: "Gradually. Fat-reduction treatment works by causing treated cells to be cleared by the body over the following weeks and months, so there is nothing to see immediately and the area may in fact look swollen at first.",
       },
       {
         q: "Does it hurt?",
-        a: "Cooling-based treatment is uncomfortable at first as the area numbs, then usually tolerable, with pulling and tugging sensations from the applicator. Afterwards the area is often tender, swollen and numb for some time, and a deep ache in the first days is common. Muscle stimulation feels like intense involuntary contractions and leaves aching similar to a hard workout. None of it requires anaesthetic.",
+        a: "Cooling-based treatment is uncomfortable at first as the area numbs, then usually tolerable, with pulling and tugging sensations from the applicator. Muscle stimulation feels like intense involuntary contractions and leaves aching similar to a hard workout. None of it requires anaesthetic.",
       },
       {
         q: "Can it treat cellulite?",
-        a: "The appearance can sometimes be improved, but cellulite is not removed by any treatment on this page. It is caused by fibrous bands tethering the skin to deeper tissue while fat pushes up between them, and it is present in people of every size and fitness level.",
-      },
-      {
-        q: "Will it tighten loose skin?",
-        a: "Not on its own, and reducing the fat beneath loose skin can make the looseness more obvious. Skin firmness is a separate problem from fat volume, assessed separately, and after significant weight loss or pregnancy it is often the leading issue.",
+        a: "The appearance can sometimes be improved, but cellulite is not removed by any treatment on this page.",
       },
       {
         q: "Can I have this after pregnancy?",
@@ -4253,7 +3928,7 @@ export const concerns: Concern[] = [
       },
       {
         q: "How do I know if I'm a suitable candidate?",
-        a: "The usual picture is someone at or near a stable weight, in reasonable health, with a defined area that has not responded to diet and exercise, and with realistic expectations about the scale of change. The pinch test at assessment decides whether the fat can be treated with the equipment available. If your weight is still moving, or if the concern is overall size, the honest answer is often no.",
+        a: "The usual picture is someone at or near a stable weight, in reasonable health, with a defined area that has not responded to diet and exercise, and with realistic expectations about the scale of change. If your weight is still moving, or if the concern is overall size, the honest answer is often no.",
       },
     ],
 
@@ -4281,9 +3956,9 @@ export const concerns: Concern[] = [
     group: "Hair & Body",
     image: "https://cdn.kaiteki.my/concerns/hair-loss/card.jpg",
     summary:
-      "Thinning, receding and patchy hair loss each have different causes. A doctor evaluates your pattern before recommending whether treatment can help.",
+      "Thinning, receding and patchy hair loss each have different causes.",
     leadAnswer:
-      "Some daily shedding is normal. Hair loss is a change from your usual pattern: gradual hereditary thinning, sudden shedding after illness, childbirth or stress, patchy loss, or loss caused by a scalp or medical condition such as thyroid disease or low iron. The cause decides the plan, and hair loss is managed medically first.",
+      "Hair loss is a change from your usual pattern: gradual hereditary thinning, sudden shedding after illness, childbirth or stress, patchy loss, or loss caused by a scalp or medical condition such as thyroid disease or low iron.",
     treatments: ["exosome-therapy"],
     reviewedBy: "dr-tim-chua",
     lastReviewed: "2026-06-06",
@@ -4330,7 +4005,7 @@ export const concerns: Concern[] = [
       {
         heading: "What counts as hair loss?",
         body: [
-          "Each follicle moves through a repeating cycle: an active growing phase lasting years, a short transitional phase, and a resting phase after which the hair sheds and the follicle can begin again. Hairs across the scalp sit at different points of this cycle at any moment, which is why finding hair on a pillow or in a drain is usually normal. Hair loss becomes a concern when the balance shifts, and the reason it has shifted matters more than the shedding itself.",
+          "Each follicle moves through a repeating cycle: an active growing phase lasting years, a short transitional phase, and a resting phase after which the hair sheds and the follicle can begin again. Hair loss becomes a concern when the balance shifts, and the reason it has shifted matters more than the shedding itself.",
         ],
       },
     ],
@@ -4344,7 +4019,7 @@ export const concerns: Concern[] = [
       items: [
         {
           lead: "Genetics and family history:",
-          body: "hereditary pattern loss is by a wide margin the most common cause in both men and women. Follicles gradually produce finer, shorter hairs until they stop, which is why it shows as thinning before it shows as a bare patch.",
+          body: "hereditary pattern loss is by a wide margin the most common cause in both men and women.",
         },
         {
           lead: "Hormonal change:",
@@ -4356,7 +4031,7 @@ export const concerns: Concern[] = [
         },
         {
           lead: "Scalp conditions:",
-          body: "fungal infection, seborrhoeic dermatitis and psoriasis inflame the scalp and disrupt the follicles in it. These are treated as scalp problems first, because the hair rarely improves while the scalp is inflamed.",
+          body: "fungal infection, seborrhoeic dermatitis and psoriasis inflame the scalp and disrupt the follicles in it.",
         },
         {
           lead: "Underlying medical conditions:",
@@ -4371,8 +4046,6 @@ export const concerns: Concern[] = [
           body: "consistently tight braids, ponytails or extensions pull on the follicle over years. Caught early this is reversible; left long enough, the follicle scars and it is not.",
         },
       ],
-      outro:
-        "Hereditary thinning uncovered by a stressful year is a more common story than either cause alone.",
     },
 
     // ── 05 · archetype D's differentiator: is this the primary condition, or a
@@ -4382,7 +4055,7 @@ export const concerns: Concern[] = [
       kind: "tabs",
       heading: "Which kind is it?",
       intro:
-        "The most useful thing an assessment does here is separate hair loss that is the condition from hair loss that is a symptom of something else. The second needs investigating rather than treating.",
+        "The most useful thing an assessment does here is separate hair loss that is the condition from hair loss that is a symptom of something else.",
       tabs: [
         {
           label: "Pattern loss",
@@ -4403,12 +4076,6 @@ export const concerns: Concern[] = [
           sub: "Sudden, patchy or with symptoms",
           title: "Hair loss as a symptom",
           body: "Loss that came on suddenly, appears in discrete patches, follows an illness or a hormonal event, or comes with an itchy, scaly, sore or scarred scalp. Here the hair is a signal.",
-          items: [
-            {
-              lead: "The tell:",
-              body: "a clear change over weeks rather than years, distinct bald patches, or scalp symptoms alongside the loss.",
-            },
-          ],
           routing:
             "assessed with examination and, where indicated, blood tests, before any cosmetic treatment is discussed.",
         },
@@ -4418,16 +4085,10 @@ export const concerns: Concern[] = [
     // ── 06 · archetype D: location grid, read as pattern across the scalp.
     locationBlock: {
       heading: "Pattern on the scalp",
-      intro:
-        "Where hair is thinning is one of the most informative things a doctor looks at.",
       cards: [
         {
           title: "Temples and receding hairline",
           body: "A hairline moving back at the corners is the classic early male pattern. In women a receding frontal hairline is less typical and is worth assessing, as it points toward other causes.",
-        },
-        {
-          title: "Crown and vertex",
-          body: "Thinning at the back of the crown often goes unnoticed until someone else mentions it or it appears in a photograph.",
         },
         {
           title: "Widening central parting",
@@ -4456,13 +4117,9 @@ export const concerns: Concern[] = [
         "Some shedding is normal, so the question is what makes it worth an appointment. Any of these is a reason:",
       triggers: [
         "Hair loss came on suddenly, or shedding increased noticeably over a few weeks.",
-        "It is appearing in discrete patches rather than thinning evenly.",
-        "The scalp is itchy, sore, scaly, red, or smooth and shiny where hair has gone.",
         "It followed childbirth, illness, surgery, rapid weight loss or a change in medication.",
         "You are also noticing fatigue, weight change, or changes to your nails or skin.",
       ],
-      outro:
-        "Timing matters more here than in most concerns: scarring conditions cause permanent loss if left.",
     },
 
     // ── 08
@@ -4480,8 +4137,6 @@ export const concerns: Concern[] = [
         body: "A regenerative preparation applied to the scalp to support the follicular environment. The evidence base is still developing, and it is offered as an adjunct to medical management rather than as a treatment for hair loss in its own right.",
       },
     },
-    treatmentsNote:
-      "Where the assessment finds a scalp condition, a deficiency or a medical cause, that is treated first. Prescription options are discussed individually, not advertised.",
 
     // ── results
     results: [
@@ -4499,23 +4154,21 @@ export const concerns: Concern[] = [
       steps: [
         {
           title: "History",
-          body: "When it started and how quickly, family history, any recent illness, childbirth, weight change or new medication, your diet, and how you style and treat your hair.",
+          body: "When it started, family history, recent illness, childbirth or new medication, and how you style your hair.",
         },
         {
           title: "Examination",
-          body: "The doctor examines the scalp itself as well as the hair, sometimes under magnification, looking at the pattern, the calibre of the hairs and the condition of the skin beneath them.",
+          body: "The pattern, the calibre of the hairs and the scalp beneath, sometimes under magnification.",
         },
         {
           title: "Investigation where indicated",
-          body: "Blood tests are often appropriate, particularly with diffuse or sudden loss, because thyroid function and iron are common and treatable contributors that no topical treatment addresses.",
+          body: "Blood tests for thyroid function and iron, particularly with diffuse or sudden loss.",
         },
         {
           title: "Discussion and plan",
-          body: "What the likely cause is, what medical management would involve, where in-clinic treatment fits, and what is realistic.",
+          body: "The likely cause, and where in-clinic treatment fits alongside medical management.",
         },
       ],
-      outro:
-        "Bring photographs of your hair from one, three and five years ago if you have them.",
     },
     // ── 04 media · pairs with the seven drivers by position (Q-19). Only the
     // Norwood chart and the parting photograph carry information; the stress
@@ -4559,7 +4212,7 @@ export const concerns: Concern[] = [
         },
         {
           lead: "The evidence base is still developing",
-          body: "Regenerative treatments for hair are an active area of research rather than settled practice. That is not a reason to avoid them, but it is a reason to be told honestly where the evidence stands before paying for a course.",
+          body: "Regenerative treatments for hair are an active area of research rather than settled practice.",
         },
         {
           lead: "Treating the wrong thing",
@@ -4583,7 +4236,6 @@ export const concerns: Concern[] = [
         "The area being treated, since a receding hairline and a diffusely thinning scalp are different in scale.",
         "How many sessions, which is set after assessment and reviewed as the scalp responds.",
         "Whether ongoing medical management forms part of the plan alongside in-clinic treatment.",
-        "How long the plan runs, because hair changes are judged over many months rather than weeks.",
       ],
     },
 
@@ -4591,23 +4243,15 @@ export const concerns: Concern[] = [
     faqs: [
       {
         q: "How much hair loss is normal?",
-        a: "Finding hair on your pillow, in the shower or on a brush is a normal part of the growth cycle, and most people shed a noticeable amount every day without their hair thinning at all. What matters is change: more shedding than is usual for you, sustained over weeks, or a parting or hairline that looks different from photographs a year or two ago.",
+        a: "What matters is change: more shedding than is usual for you, sustained over weeks, or a parting or hairline that looks different from photographs a year or two ago.",
       },
       {
         q: "Is hair loss treatable?",
-        a: "It depends entirely on the cause. Loss driven by a thyroid disorder, iron deficiency, a scalp infection or a stressful event often improves once that cause is addressed. Hereditary pattern loss is managed long-term rather than cured. Scarring conditions cause permanent loss, and there the goal is to stop further damage rather than to recover what has gone.",
-      },
-      {
-        q: "Why is timing so important?",
-        a: "Because follicles change over time. A follicle still producing fine, short hair can often be supported; one that has been dormant for years, or that has scarred, cannot be brought back by any treatment. Scarring conditions in particular do permanent damage while they are active. This is the one cosmetic concern where waiting to see what happens genuinely costs you options.",
-      },
-      {
-        q: "Do I need blood tests?",
-        a: "Often, particularly where the loss is diffuse, sudden or accompanied by other symptoms. Thyroid function and iron status are common, treatable contributors that no shampoo or in-clinic treatment addresses, and finding one changes the plan entirely.",
+        a: "It depends entirely on the cause. Loss driven by a thyroid disorder, iron deficiency, a scalp infection or a stressful event often improves once that cause is addressed. Hereditary pattern loss is managed long-term rather than cured.",
       },
       {
         q: "Is hair loss after childbirth permanent?",
-        a: "Usually not. A large increase in shedding a few months after giving birth is a well-recognised pattern caused by many follicles entering the resting phase together as hormone levels change, and for most people it settles over the following months without treatment. It is still worth an assessment if it is prolonged or severe, since iron and thyroid changes are also common in the same period.",
+        a: "Usually not. A large increase in shedding a few months after giving birth is a well-recognised pattern caused by many follicles entering the resting phase together as hormone levels change, and for most people it settles over the following months without treatment.",
       },
       {
         q: "Do supplements help?",
@@ -4615,11 +4259,11 @@ export const concerns: Concern[] = [
       },
       {
         q: "Does stress cause hair loss?",
-        a: "It can, through a mechanism where a physical or emotional shock pushes many follicles into the resting phase at once. The shedding typically appears two to three months after the event, which is long enough afterwards that people often do not connect the two. It usually recovers once the trigger has passed, though it can also unmask hereditary thinning that was already underway.",
+        a: "It can, through a mechanism where a physical or emotional shock pushes many follicles into the resting phase at once. The shedding typically appears two to three months after the event, which is long enough afterwards that people often do not connect the two.",
       },
       {
         q: "Can women have hair loss too?",
-        a: "Yes, and it is far more common than the way it is usually discussed suggests. The pattern differs: women more often notice a widening central parting with the front hairline preserved, rather than a receding hairline. Hormonal events, iron status and thyroid function are all frequent contributors and are routinely checked.",
+        a: "Yes, and it is far more common than the way it is usually discussed suggests. Hormonal events, iron status and thyroid function are all frequent contributors and are routinely checked.",
       },
     ],
 
@@ -4647,9 +4291,9 @@ export const concerns: Concern[] = [
     group: "Skin",
     image: "https://cdn.kaiteki.my/concerns/tattoo-removal/card-2.jpg",
     summary:
-      "Ink colour, depth and skin tone all affect how removal works. A doctor assesses your tattoo before estimating what to expect.",
+      "Ink colour, depth and skin tone all affect how removal works.",
     leadAnswer:
-      "Tattoo removal is the gradual fading of tattoo ink using laser energy that breaks pigment into smaller particles the body may clear over time. Ink type, colour, depth and skin type all affect suitability and the number of sessions.",
+      "Tattoo removal is the gradual fading of tattoo ink using laser energy that breaks pigment into smaller particles the body may clear over time.",
     treatments: ["pico-laser"],
     reviewedBy: "dr-calvin-tan",
     lastReviewed: "2026-07-13",
@@ -4695,7 +4339,7 @@ export const concerns: Concern[] = [
       {
         heading: "What is laser tattoo removal?",
         body: [
-          "Laser tattoo removal uses focused laser energy to break the ink held in the skin into fragments small enough for the body's own immune system to carry away. The laser does not remove ink directly; it makes the particles small enough for the body to clear over the weeks that follow. That is why the interval between sessions matters as much as the sessions themselves.",
+          "Laser tattoo removal uses focused laser energy to break the ink held in the skin into fragments small enough for the body's own immune system to carry away. That is why the interval between sessions matters as much as the sessions themselves.",
         ],
       },
     ],
@@ -4709,7 +4353,7 @@ export const concerns: Concern[] = [
       items: [
         {
           lead: "Ink colour:",
-          body: "different pigments absorb different wavelengths. Black and dark blue absorb broadly and respond predictably. Greens, light blues, yellows and some reds need specific wavelengths and behave less consistently.",
+          body: "different pigments absorb different wavelengths.",
         },
         {
           lead: "How deep the ink sits:",
@@ -4717,7 +4361,7 @@ export const concerns: Concern[] = [
         },
         {
           lead: "Size and density:",
-          body: "a larger or heavily saturated piece simply contains more pigment. Solid black fill behaves differently from fine line work of the same dimensions.",
+          body: "a larger or heavily saturated piece simply contains more pigment.",
         },
         {
           lead: "Where it sits on the body:",
@@ -4728,8 +4372,6 @@ export const concerns: Concern[] = [
           body: "older tattoos have usually faded somewhat already. Smoking, poor circulation and anything that suppresses immune function slow the clearance the treatment depends on.",
         },
       ],
-      outro:
-        "Skin tone is assessed alongside all of this. Medium and deeper skin tones contain more melanin, which competes with the ink for laser energy, so settings are chosen more conservatively and sessions are spaced further apart.",
     },
 
     // ── 05 · archetype C's differentiator is a response table rather than a tab
@@ -4767,18 +4409,7 @@ export const concerns: Concern[] = [
           "Can darken on contact with laser energy",
           "Tested on a small area first, because some formulations oxidise to grey or black",
         ],
-        [
-          "Cosmetic and permanent makeup",
-          "Composition varies widely and is rarely known",
-          "Always patch-tested; brow and lip pigment are among the most unpredictable to treat",
-        ],
-        [
-          "Amateur or hand-poked",
-          "Shallower and less densely packed",
-          "Often responds sooner than professional work of the same size",
-        ],
       ],
-      note: "A test patch on a small, discreet area is standard practice where colour behaviour is uncertain. It costs one appointment and prevents a surprise across the whole piece.",
     },
 
     // ── 06 · archetype C's block 06 is body location rather than a where-it-
@@ -4790,11 +4421,7 @@ export const concerns: Concern[] = [
       cards: [
         {
           title: "Upper arm, chest and back",
-          body: "Strong circulation and good lymphatic drainage. These areas generally clear fragments more readily between appointments.",
-        },
-        {
-          title: "Forearm and lower leg",
-          body: "Intermediate. Frequently exposed to sun as well, which matters both for the risk of pigment change and for how carefully the area has to be protected between sessions.",
+          body: "Strong circulation and good lymphatic drainage.",
         },
         {
           title: "Hands, fingers, ankles and feet",
@@ -4819,12 +4446,8 @@ export const concerns: Concern[] = [
       triggers: [
         "The colours present, and whether the clinic's platform has a wavelength for each of them.",
         "Whether the tattoo is a cover-up, a rework, or has been treated elsewhere before.",
-        "Your skin tone, since it determines how conservative the settings need to be.",
-        "Any mole, changing mark or scar within or beside the tattoo, which is examined on its own terms.",
         "Your medical history, including anything affecting immune function, healing or photosensitivity.",
       ],
-      outro:
-        "A test patch often follows this visit, particularly with colours, cosmetic pigment or deeper skin tones.",
     },
 
     // ── 08
@@ -4835,15 +4458,13 @@ export const concerns: Concern[] = [
 
     // ── 09
     treatmentsIntro:
-      "Tattoo removal at our clinics is a single treatment carried out over a course of appointments. What varies is the wavelength used, the settings chosen for your skin, and how far apart the sessions are spaced.",
+      "Tattoo removal at our clinics is a single treatment carried out over a course of appointments.",
     treatmentWhy: {
       "pico-laser": {
         why: "For breaking ink into particles the body clears",
-        body: "A picosecond laser delivers energy in pulses short enough to shatter pigment mechanically rather than by heating it, which reduces the heat delivered to surrounding skin. Several wavelengths are available so different ink colours can be targeted, and settings are chosen for your skin tone.",
+        body: "A picosecond laser delivers energy in pulses short enough to shatter pigment mechanically rather than by heating it, which reduces the heat delivered to surrounding skin.",
       },
     },
-    treatmentsNote:
-      "The tattoo is reviewed at each visit, and the course continues, is adjusted or is stopped by agreement.",
 
     // ── results · -07…10 removed: the same four tattoos as -01…04 again, in the
     // pink legacy frame.
@@ -4863,23 +4484,21 @@ export const concerns: Concern[] = [
       steps: [
         {
           title: "History",
-          body: "When and where the tattoo was done, whether it is a cover-up or has been treated before, your medical history, medication, and how your skin usually heals.",
+          body: "When the tattoo was done, whether it is a cover-up or has been treated before, and how your skin usually heals.",
         },
         {
           title: "Examination",
-          body: "The doctor examines the tattoo directly: colours, density, depth, the state of the surrounding skin, and anything within it that needs assessing on its own terms.",
+          body: "Colours, density, depth and the surrounding skin.",
         },
         {
           title: "Discussion",
-          body: "Which colours are likely to respond, how spacing works and why, aftercare, risks including pigment change and scarring, and what a realistic course looks like for a tattoo like yours.",
+          body: "Which colours are likely to respond, and how sessions are spaced.",
         },
         {
           title: "Test patch and plan",
           body: "Where colour behaviour is uncertain, a small test area is treated first, then a sequence and a review point.",
         },
       ],
-      outro:
-        "Bring any information you have about the tattoo: who did it, when, and whether it covers earlier work. Photographs from when it was new are useful, since they show how much it has already faded.",
     },
 
     visitImages: [
@@ -4908,11 +4527,11 @@ export const concerns: Concern[] = [
       items: [
         {
           lead: "Common and expected",
-          body: "Immediate whitening of the treated area, then redness, swelling, tenderness and often blistering or crusting over the following days. The area may weep briefly. Full aftercare instructions are given, and following them is the main thing that protects the outcome.",
+          body: "Immediate whitening of the treated area, then redness, swelling, tenderness and often blistering or crusting over the following days. The area may weep briefly.",
         },
         {
           lead: "Pigment change and Malaysian skin",
-          body: "Medium and deeper skin tones carry a higher chance of hypopigmentation, where treated skin ends up lighter than the surrounding area, and of post-inflammatory hyperpigmentation. Both are why conservative settings and long intervals are used here.",
+          body: "Medium and deeper skin tones carry a higher chance of hypopigmentation, where treated skin ends up lighter than the surrounding area, and of post-inflammatory hyperpigmentation.",
         },
         {
           lead: "Scarring and ink darkening",
@@ -4948,31 +4567,23 @@ export const concerns: Concern[] = [
     faqs: [
       {
         q: "Can a tattoo be completely removed?",
-        a: "Sometimes, but it cannot be promised for any tattoo before it has been treated. Black and dark blue generally clear most predictably, while yellow, pastel and some cosmetic pigments often persist after everything else has gone. A faint shadow or a subtle change in skin texture where the tattoo sat is a common end point.",
+        a: "Sometimes, but it cannot be promised for any tattoo before it has been treated. Black and dark blue generally clear most predictably, while yellow, pastel and some cosmetic pigments often persist after everything else has gone.",
       },
       {
         q: "How many sessions will it take?",
-        a: "There is no fixed number. It depends on the colours, how deeply and densely the ink was placed, the size, where it sits on the body, your skin tone and how well you heal. The tattoo is reviewed at every visit and the plan is adjusted as it fades.",
-      },
-      {
-        q: "Why do sessions have to be spaced so far apart?",
-        a: "Because the laser does not remove ink. It fragments it, and your own immune system carries the fragments away over the following weeks. The interval is when the actual clearing happens. Treating sooner adds heat and risk to skin that has not finished recovering, without giving the body time to do its part.",
+        a: "There is no fixed number. It depends on the colours, how deeply and densely the ink was placed, the size, where it sits on the body, your skin tone and how well you heal.",
       },
       {
         q: "Does it hurt?",
-        a: "It is generally described as more uncomfortable than getting the tattoo, though it is over far more quickly. People often compare it to a hot elastic band snapping against the skin. Numbing cream is applied beforehand and cooling is used during and after. Bony areas such as the ribs, ankles and hands are felt more.",
-      },
-      {
-        q: "Will it leave a scar?",
-        a: "Scarring is uncommon when treatment is spaced properly and aftercare is followed, but it is a real risk rather than a theoretical one. Picking at crusts or blisters is the most avoidable cause. Existing scarring from the original tattooing may also become more visible once the ink covering it is gone, which the doctor should point out at the assessment.",
+        a: "It is generally described as more uncomfortable than getting the tattoo, though it is over far more quickly. People often compare it to a hot elastic band snapping against the skin. Numbing cream is applied beforehand and cooling is used during and after.",
       },
       {
         q: "Is it safe on darker skin?",
-        a: "Yes, with the right wavelength, conservative settings and longer intervals. The specific issue is that melanin in the skin competes with the ink for laser energy, which raises the chance of the treated area ending up lighter or darker than the surrounding skin. This is exactly what a test patch is for.",
+        a: "Yes, with the right wavelength, conservative settings and longer intervals. The specific issue is that melanin in the skin competes with the ink for laser energy, which raises the chance of the treated area ending up lighter or darker than the surrounding skin.",
       },
       {
         q: "Can eyebrow or lip tattoos be removed?",
-        a: "They can be assessed, but they are among the least predictable pigments to treat. Cosmetic formulations vary widely, are rarely documented, and some contain compounds that darken on contact with laser energy rather than fading. A test patch on a small, discreet area is standard practice before treating anything on the face, and the assessment may conclude that treatment is not advisable.",
+        a: "They can be assessed, but they are among the least predictable pigments to treat. A test patch on a small, discreet area is standard practice before treating anything on the face, and the assessment may conclude that treatment is not advisable.",
       },
       {
         q: "What do I need to do afterwards?",
@@ -5004,9 +4615,9 @@ export const concerns: Concern[] = [
     group: "Skin",
     image: "https://cdn.kaiteki.my/concerns/birthmark/card.jpg",
     summary:
-      "Not all birthmarks respond to treatment the same way. A doctor evaluates the type, depth and location before discussing options.",
+      "Not all birthmarks respond to treatment the same way.",
     leadAnswer:
-      "Birthmarks are marks present at or soon after birth, made either of clustered pigment cells (café-au-lait patches, naevus of Ota, Mongolian spots) or of blood vessels (port-wine stains, salmon patches, haemangiomas). Most are harmless, many fade on their own, and the two families are treated with different lasers, or not at all.",
+      "Birthmarks are marks present at or soon after birth, made either of clustered pigment cells (café-au-lait patches, naevus of Ota, Mongolian spots) or of blood vessels (port-wine stains, salmon patches, haemangiomas).",
     treatments: ["pico-laser", "vascular-pigment-laser"],
     reviewedBy: "dr-lucas-chew",
     lastReviewed: "2026-07-13",
@@ -5056,7 +4667,7 @@ export const concerns: Concern[] = [
       {
         heading: "What is a birthmark?",
         body: [
-          "A birthmark is an area of skin that is discoloured from birth or appears in the first weeks of life. Birthmarks are common and most are benign, but they differ widely in cause, colour and depth, which is why they are assessed individually rather than treated as one thing.",
+          "A birthmark is an area of skin that is discoloured from birth or appears in the first weeks of life.",
           "Nothing a parent did or did not do during pregnancy causes a birthmark.",
         ],
       },
@@ -5070,7 +4681,7 @@ export const concerns: Concern[] = [
       items: [
         {
           lead: "Which structure it is made of.",
-          body: "Pigmented birthmarks come from clusters of melanocytes, the pigment cells in the upper layer of skin. Vascular birthmarks come from blood vessels in the dermis below. Each absorbs a different wavelength of light.",
+          body: "Pigmented birthmarks come from clusters of melanocytes, the pigment cells in the upper layer of skin. Vascular birthmarks come from blood vessels in the dermis below.",
         },
         {
           lead: "How deep the colour sits.",
@@ -5109,12 +4720,6 @@ export const concerns: Concern[] = [
           sub: "Brown, blue or grey",
           title: "Pigmented birthmarks",
           body: "Flat patches that are light to dark brown, or blue-grey where the pigment sits deeper. Café-au-lait patches, naevus of Ota around the eye and temple, and Mongolian spots that persist past childhood all belong here.",
-          items: [
-            {
-              lead: "The tell:",
-              body: "the colour does not blanch when pressed, and the surface is usually flat and smooth.",
-            },
-          ],
           routing: "assessed for pigment laser, with a test area often discussed first.",
         },
         {
@@ -5135,13 +4740,7 @@ export const concerns: Concern[] = [
           label: "Monitor",
           sub: "Moles and changing marks",
           title: "Marks to watch, not laser",
-          body: "Congenital moles, and any birthmark that has started to change, sit outside the cosmetic route. Lasering a mole can mask changes that matter, so these are examined, monitored and, where needed, referred for dermatological assessment.",
-          items: [
-            {
-              lead: "The tell:",
-              body: "a raised or textured mark, hair growing from it, or any recent change in size, shape or colour.",
-            },
-          ],
+          body: "Congenital moles, and any birthmark that has started to change, sit outside the cosmetic route.",
           routing: "assessed and photographed for monitoring, with referral where anything looks atypical.",
         },
       ],
@@ -5151,8 +4750,6 @@ export const concerns: Concern[] = [
     // diagnosis and how cautiously a mark is treated.
     locationBlock: {
       heading: "Where it appears",
-      intro:
-        "Where a birthmark sits affects both what it is likely to be and how it is approached.",
       cards: [
         {
           title: "Around the eye and temple",
@@ -5160,7 +4757,7 @@ export const concerns: Concern[] = [
         },
         {
           title: "Cheek and side of the face",
-          body: "Port-wine stains and café-au-lait patches are common here. On the face, colour matching to the surrounding skin is the main consideration, so test areas and conservative settings are usual.",
+          body: "Port-wine stains and café-au-lait patches are common here.",
         },
         {
           title: "Forehead, eyelids and nape",
@@ -5172,7 +4769,7 @@ export const concerns: Concern[] = [
         },
         {
           title: "Trunk and limbs",
-          body: "Café-au-lait patches and congenital moles are frequently found here. The number of café-au-lait patches matters as much as their appearance, which is why they are counted at assessment.",
+          body: "Café-au-lait patches and congenital moles are frequently found here.",
         },
       ],
       note: {
@@ -5193,10 +4790,7 @@ export const concerns: Concern[] = [
         "It has become raised, lumpy, itchy, crusted, or bleeds without an obvious injury.",
         "A new pigmented mark has appeared in adulthood that you did not have before.",
         "An infant's haemangioma is growing quickly, is near the eye, nose, lip or nappy area, or has broken down into a sore.",
-        "A child has several café-au-lait patches, or a port-wine stain across the forehead and eyelid.",
       ],
-      outro:
-        "Photographing a birthmark against a ruler every few months is the simplest way to track it. Change is what matters, and change is almost impossible to judge from memory.",
     },
 
     // ── 08
@@ -5211,15 +4805,13 @@ export const concerns: Concern[] = [
     treatmentWhy: {
       "pico-laser": {
         why: "For pigment birthmarks such as naevus of Ota",
-        body: "Very short laser pulses break up pigment in the skin so the body can gradually clear it. It is used for pigmented birthmarks, particularly deeper blue-grey marks such as naevus of Ota, and usually over several sessions. Café-au-lait patches respond less predictably and can recur.",
+        body: "Very short laser pulses break up pigment in the skin so the body can gradually clear it.",
       },
       "vascular-pigment-laser": {
         why: "For port-wine stains and other vessel birthmarks",
-        body: "Laser energy absorbed by the blood in the vessels heats and closes them, lightening the colour of a vascular birthmark. Port-wine stains generally need a series of sessions, and the aim is usually lightening rather than complete clearance.",
+        body: "Laser energy absorbed by the blood in the vessels heats and closes them, lightening the colour of a vascular birthmark.",
       },
     },
-    treatmentsNote:
-      "Congenital moles, changing marks and infant haemangiomas are not part of this route. Moles are monitored and referred where needed, and haemangiomas that need treatment are managed medically under a paediatric specialist rather than with cosmetic laser.",
 
     // ── results
     results: [
@@ -5234,7 +4826,7 @@ export const concerns: Concern[] = [
       steps: [
         {
           title: "History",
-          body: "When the mark first appeared, whether it has changed, any previous treatment, other similar marks on the body, and your skin's history with sun, pigmentation and scarring.",
+          body: "When the mark first appeared, whether it has changed, and any previous treatment.",
         },
         {
           title: "Examination",
@@ -5242,15 +4834,13 @@ export const concerns: Concern[] = [
         },
         {
           title: "Photographs",
-          body: "Standardised photographs are taken so that any change, whether from treatment or over time, can be judged against a fixed record rather than memory.",
+          body: "Standardised photographs give a fixed record for judging change.",
         },
         {
           title: "Discussion and plan",
-          body: "What the mark most likely is, whether treatment is appropriate, which laser if any, what a test area would involve, and what is realistic for that type. Referral is discussed here if anything needs it.",
+          body: "What the mark most likely is, which laser if any, and whether referral is needed.",
         },
       ],
-      outro:
-        "Bring any earlier photographs of the birthmark, especially from childhood. They are the most reliable way to show whether it has changed.",
     },
 
     visitImages: [
@@ -5277,7 +4867,7 @@ export const concerns: Concern[] = [
         },
         {
           lead: "Uncommon",
-          body: "Scarring, a change in skin texture, and patchy or uneven lightening that leaves the mark looking mottled. A test area is used partly to show how your skin reacts before a larger area is treated.",
+          body: "Scarring, a change in skin texture, and patchy or uneven lightening that leaves the mark looking mottled.",
         },
         {
           lead: "What treatment cannot do",
@@ -5297,7 +4887,6 @@ export const concerns: Concern[] = [
         "The size of the area and where it sits, because marks near the eye take more time and care.",
         "Whether a test area is done first, which is common on the face and on darker skin.",
         "How many sessions are planned, which varies widely between types and is reviewed as the mark responds.",
-        "The spacing between sessions, as some types need longer gaps for the skin to settle.",
       ],
     },
 
@@ -5305,27 +4894,19 @@ export const concerns: Concern[] = [
     faqs: [
       {
         q: "Can birthmarks be removed?",
-        a: "It depends on the type, and outcomes vary between individuals. Some pigmented birthmarks, such as naevus of Ota, often lighten with a course of pigment laser, and port-wine stains are commonly lightened with vascular laser. Others, including congenital moles and many birthmarks in young children, are better monitored or left alone.",
-      },
-      {
-        q: "Are birthmarks dangerous?",
-        a: "Most are harmless. The ones worth examining are marks that change: growing, darkening unevenly, becoming raised, bleeding or itching. Large congenital moles are monitored over time, and some birthmark patterns in children are checked for links to other conditions.",
-      },
-      {
-        q: "Why do different birthmarks need different treatments?",
-        a: "Pigmented and vascular birthmarks arise from different structures in the skin, pigment cells versus blood vessels, and each absorbs a different wavelength of laser light. Using the wrong one does little to the mark and still carries the risks of treatment.",
+        a: "It depends on the type, and outcomes vary between individuals. Some pigmented birthmarks, such as naevus of Ota, often lighten with a course of pigment laser, and port-wine stains are commonly lightened with vascular laser.",
       },
       {
         q: "Will my child's birthmark fade on its own?",
-        a: "Many do. Mongolian spots usually fade during childhood, salmon patches on the face often fade in the first years, and infant haemangiomas typically grow for several months before slowly shrinking. Port-wine stains and café-au-lait patches generally persist. A paediatric opinion is the right first step for a birthmark in a baby, particularly one that is growing quickly or sits near the eye, nose or mouth.",
+        a: "Many do. Mongolian spots usually fade during childhood, salmon patches on the face often fade in the first years, and infant haemangiomas typically grow for several months before slowly shrinking. Port-wine stains and café-au-lait patches generally persist.",
       },
       {
         q: "How many sessions does birthmark laser take?",
-        a: "There is no standard number, because it depends on the type, depth, size and location of the mark and on how your skin responds. Pigment and vascular birthmarks usually need a series of sessions spaced weeks apart, and the plan is reviewed after each one.",
+        a: "There is no standard number, because it depends on the type, depth, size and location of the mark and on how your skin responds.",
       },
       {
         q: "Does birthmark laser hurt?",
-        a: "Most people describe a snapping or stinging sensation, like a rubber band flicked against the skin. Numbing cream and skin cooling are commonly used to make sessions more comfortable. Sensitivity varies with the area treated, and skin near the eye or upper lip tends to feel more.",
+        a: "Most people describe a snapping or stinging sensation, like a rubber band flicked against the skin. Numbing cream and skin cooling are commonly used to make sessions more comfortable.",
       },
       {
         q: "Can a birthmark come back after laser?",
@@ -5333,7 +4914,7 @@ export const concerns: Concern[] = [
       },
       {
         q: "Can a mole I was born with be lasered off?",
-        a: "Laser is not used to remove congenital moles for appearance. It can lighten the surface while leaving cells deeper down, which makes future changes harder to spot. Moles are examined, photographed and monitored, and where removal is appropriate the doctor will refer you for dermatological assessment rather than offer laser.",
+        a: "Laser is not used to remove congenital moles for appearance. It can lighten the surface while leaving cells deeper down, which makes future changes harder to spot.",
       },
     ],
 
@@ -5361,9 +4942,9 @@ export const concerns: Concern[] = [
     group: "Skin",
     image: "https://cdn.kaiteki.my/concerns/vascular-lesions/card.jpg",
     summary:
-      "Visible blood vessels, redness and broken capillaries can have different causes. A doctor identifies yours before recommending a treatment path.",
+      "Visible blood vessels, redness and broken capillaries can have different causes.",
     leadAnswer:
-      "Vascular lesions are visible blood vessels or areas of redness in the skin: facial thread veins, spider angiomas, cherry angiomas and the persistent redness of rosacea. The vessels are dilated, not broken. Vascular laser is commonly used for superficial vessels; rosacea also needs trigger control and skincare, and leg varicose veins need a separate vascular assessment.",
+      "Vascular lesions are visible blood vessels or areas of redness in the skin: facial thread veins, spider angiomas, cherry angiomas and the persistent redness of rosacea.",
     treatments: ["vascular-pigment-laser"],
     reviewedBy: "dr-jade",
     lastReviewed: "2026-07-13",
@@ -5411,8 +4992,7 @@ export const concerns: Concern[] = [
       {
         heading: "What are vascular lesions?",
         body: [
-          "Vascular lesions occur when small blood vessels near the surface of the skin become visible or dilated, appearing as fine red or purplish lines, small red spots, patches, or persistent redness. They most commonly affect the face, particularly the cheeks and nose, but can appear elsewhere on the body.",
-          "Repeated widening, sun damage to the supporting tissue and thinning skin can leave a vessel permanently dilated, so it shows through as a fine line or a patch of redness.",
+          "Vascular lesions occur when small blood vessels near the surface of the skin become visible or dilated, appearing as fine red or purplish lines, small red spots, patches, or persistent redness.",
         ],
       },
     ],
@@ -5427,19 +5007,11 @@ export const concerns: Concern[] = [
       items: [
         {
           lead: "Sun exposure:",
-          body: "ultraviolet light weakens the collagen that supports the small vessels in the upper skin, which is why thread veins gather on the cheeks and nose, the most exposed parts of the face.",
+          body: "ultraviolet light weakens the collagen that supports the small vessels in the upper skin.",
         },
         {
           lead: "Genetics and skin type:",
           body: "a tendency toward visible vessels and facial flushing often runs in families, and fair or thin skin shows vessels that sit at the same depth in other skin.",
-        },
-        {
-          lead: "Skin ageing:",
-          body: "as the skin thins with age, vessels that were always there become easier to see, and small red spots on the trunk become more common from middle age onwards.",
-        },
-        {
-          lead: "Heat, alcohol and spicy food:",
-          body: "anything that repeatedly flushes the face widens the vessels over and over.",
         },
         {
           lead: "Hormonal change:",
@@ -5465,12 +5037,6 @@ export const concerns: Concern[] = [
           sub: "Fine red lines",
           title: "Facial thread veins and spider veins",
           body: "Fine red or purple lines (telangiectasia), usually on the cheeks, around the nostrils and on the chin. A spider angioma is a related pattern: a small central red point with fine vessels radiating outward, which briefly blanches when pressed.",
-          items: [
-            {
-              lead: "The tell:",
-              body: "individual vessels you can trace with a fingertip, steady rather than coming and going.",
-            },
-          ],
           routing: "usually assessed for vascular laser.",
         },
         {
@@ -5478,12 +5044,6 @@ export const concerns: Concern[] = [
           sub: "Small, raised or bluish",
           title: "Cherry angiomas and venous lakes",
           body: "Cherry angiomas are small, bright red, often slightly raised spots, most common on the trunk and arms and increasingly frequent with age. Venous lakes are soft, dark blue or purple bumps, usually on the lips or ears in sun-exposed older skin.",
-          items: [
-            {
-              lead: "The tell:",
-              body: "a well-defined spot rather than a line or a flush, stable over months.",
-            },
-          ],
           routing: "usually assessed for vascular laser once the doctor is satisfied the spot is what it appears to be.",
         },
         {
@@ -5491,12 +5051,6 @@ export const concerns: Concern[] = [
           sub: "Flushing, patchy redness",
           title: "Persistent redness and rosacea",
           body: "Background redness across the cheeks, nose and chin that worsens with heat, sun, alcohol, spicy food or stress, sometimes with fine visible vessels and, in some people, small bumps. This pattern is frequently part of rosacea.",
-          items: [
-            {
-              lead: "The tell:",
-              body: "redness that comes and goes with triggers, often with sensitive, easily irritated skin.",
-            },
-          ],
           routing: "assessed for medical management first, with vascular laser discussed for persistent vessels.",
         },
       ],
@@ -5510,15 +5064,11 @@ export const concerns: Concern[] = [
       cards: [
         {
           title: "Cheeks and nose",
-          body: "The most common site for thread veins and diffuse redness, because these areas take the most sun and flush the most readily. Redness centred here, with triggers, often points toward rosacea.",
+          body: "The most common site for thread veins and diffuse redness, because these areas take the most sun and flush the most readily.",
         },
         {
           title: "Chin and around the mouth",
           body: "Fine vessels on the chin and beside the nostrils are common. Redness with scaling or small bumps around the mouth can be a different skin condition and is assessed as such.",
-        },
-        {
-          title: "Trunk and arms",
-          body: "Small red cherry angiomas cluster here, often multiplying gradually with age. They are typically harmless and are assessed spot by spot.",
         },
         {
           title: "Legs",
@@ -5543,8 +5093,6 @@ export const concerns: Concern[] = [
         "Leg veins are bulging, aching, swollen, or the skin over them has changed colour.",
         "Facial redness comes with burning, stinging, bumps or eye irritation.",
       ],
-      outro:
-        "Where a medical cause is possible, it is looked at first.",
     },
 
     // ── 08
@@ -5555,15 +5103,13 @@ export const concerns: Concern[] = [
 
     // ── 09
     treatmentsIntro:
-      "Vascular laser is the in-clinic option for visible vessels on the face and body. Whether it is appropriate depends on the type, its depth and your skin tone, which the assessment establishes first.",
+      "Vascular laser is the in-clinic option for visible vessels on the face and body.",
     treatmentWhy: {
       "vascular-pigment-laser": {
         why: "For dilated vessels you can see at the surface",
-        body: "Delivers light absorbed by the haemoglobin in small, superficial vessels, heating them so the body can gradually clear them. Settings are chosen for the vessel's size and depth and for your skin tone. Larger or deeper vessels, and leg veins, may not be suitable.",
+        body: "Delivers light absorbed by the haemoglobin in small, superficial vessels, heating them so the body can gradually clear them.",
       },
     },
-    treatmentsNote:
-      "Where redness is driven by rosacea, laser addresses the visible vessels but not the condition underneath. Gentle skincare, daily sun protection and managing your own triggers are part of the plan, and some people need prescribed treatment alongside.",
 
     // ── results · 02 and 03 repeat the patients in 01 and 04 at a smaller size,
     // so only one of each pair is used.
@@ -5580,7 +5126,7 @@ export const concerns: Concern[] = [
       steps: [
         {
           title: "History",
-          body: "When the vessels or redness appeared, whether they come and go, what makes them worse, your skincare and any medication, and relevant medical history such as liver or hormonal conditions.",
+          body: "When the vessels or redness appeared, whether they come and go, what makes them worse, and any medication.",
         },
         {
           title: "Examination",
@@ -5588,11 +5134,11 @@ export const concerns: Concern[] = [
         },
         {
           title: "Ruling out medical causes",
-          body: "Anything that bleeds, is changing, or appears in an unusual pattern is assessed first, with referral to a GP or specialist where that is the right next step.",
+          body: "Anything that bleeds, is changing or looks unusual is assessed first, with referral where needed.",
         },
         {
           title: "Discussion and plan",
-          body: "Whether laser is appropriate, what it can and cannot change for your type, what aftercare involves, and what to do about triggers.",
+          body: "Whether laser suits your type, and what to do about triggers.",
         },
       ],
       outro:
@@ -5627,7 +5173,7 @@ export const concerns: Concern[] = [
         },
         {
           lead: "Less common",
-          body: "Blistering, crusting or, rarely, scarring. Following the aftercare instructions and avoiding sun on the treated area reduces this risk.",
+          body: "Blistering, crusting or, rarely, scarring.",
         },
         {
           lead: "What treatment cannot do",
@@ -5654,24 +5200,16 @@ export const concerns: Concern[] = [
     // ── 16
     faqs: [
       {
-        q: "Can vascular lesions be treated?",
-        a: "Some can, depending on the type, and results vary between individuals. Facial thread veins, spider angiomas and cherry angiomas are usually assessed for vascular laser, which heats the vessel so the body can gradually clear it. Rosacea redness is managed long-term with trigger control and skincare, with laser for the visible vessels. Large leg veins need a vascular assessment instead.",
-      },
-      {
-        q: "Why does the cause of redness matter?",
-        a: "Because the same redness can come from dilated vessels, rosacea or a different skin condition, and each is approached differently: laser addresses visible vessels, while rosacea also needs trigger control and skincare. Rosacea flares with heat, sun, alcohol and stress; redness with scaling or bumps around the mouth may be something else.",
-      },
-      {
         q: "Do vascular lesions come back after treatment?",
-        a: "Laser does not change the tendency that produced them, so new vessels can form over time, particularly with sun exposure, heat and flushing triggers. That is why daily sun protection and occasional maintenance are often part of the plan.",
+        a: "Laser does not change the tendency that produced them, so new vessels can form over time, particularly with sun exposure, heat and flushing triggers.",
       },
       {
         q: "Are broken capillaries actually broken?",
-        a: "No. The common name is misleading: the vessels are dilated, not broken. They have widened and stayed open, which is why they show through the skin as fine red lines. This is also why they do not heal on their own the way a bruise does.",
+        a: "No. The common name is misleading: the vessels are dilated, not broken. This is also why they do not heal on their own the way a bruise does.",
       },
       {
         q: "Are red spots on my body a sign of something serious?",
-        a: "Small, bright red cherry angiomas are very common and harmless, and they tend to increase in number with age. A spot that bleeds, grows quickly or looks different from the others should be examined. Many spider angiomas appearing in a short time are also worth checking with a GP, as they can occasionally point to a liver or hormonal cause.",
+        a: "Small, bright red cherry angiomas are very common and harmless, and they tend to increase in number with age. A spot that bleeds, grows quickly or looks different from the others should be examined.",
       },
       {
         q: "Is rosacea the same as a vascular lesion?",
@@ -5679,11 +5217,11 @@ export const concerns: Concern[] = [
       },
       {
         q: "Can leg veins be treated the same way?",
-        a: "Fine spider veins on the legs can sometimes be treated with laser, but they are assessed differently from facial vessels. Larger, bulging or aching veins are varicose veins, which involve the deeper venous system and need a vascular assessment rather than a cosmetic laser.",
+        a: "Fine spider veins on the legs can sometimes be treated with laser, but they are assessed differently from facial vessels.",
       },
       {
         q: "Is vascular laser suitable for darker skin tones?",
-        a: "It can be, with care. Darker skin carries more pigment that also absorbs laser light, which increases the risk of pigment change. The doctor adjusts settings to your skin tone and will tell you plainly if the balance of benefit and risk does not favour treatment.",
+        a: "It can be, with care. Darker skin carries more pigment that also absorbs laser light, which increases the risk of pigment change.",
       },
     ],
 
@@ -5711,9 +5249,9 @@ export const concerns: Concern[] = [
     group: "Skin",
     image: "https://cdn.kaiteki.my/concerns/excessive-sweating/card.jpg",
     summary:
-      "Sweating that disrupts daily life can often be managed. A doctor assesses your pattern and severity to determine which approach fits.",
+      "Sweating that disrupts daily life can often be managed.",
     leadAnswer:
-      "Excessive sweating (hyperhidrosis) is sweating beyond what the body needs to regulate temperature, most often in the underarms, palms, soles or face. Primary hyperhidrosis starts young, runs in families and is managed in steps, starting with clinical-strength antiperspirant. Sweating that is generalised, new in adulthood or at night is investigated first.",
+      "Excessive sweating (hyperhidrosis) is sweating beyond what the body needs to regulate temperature, most often in the underarms, palms, soles or face. Primary hyperhidrosis starts young, runs in families and is managed in steps, starting with clinical-strength antiperspirant.",
     treatments: ["botulinum-toxin"],
     reviewedBy: "dr-teresa-tan",
     lastReviewed: "2026-07-13",
@@ -5763,13 +5301,12 @@ export const concerns: Concern[] = [
         heading: "What is excessive sweating?",
         body: [
           "Sweating is a normal bodily function that helps regulate temperature. Excessive sweating, medically known as hyperhidrosis, describes sweating that is noticeably more than what is needed for temperature regulation, and can affect daily activities and confidence.",
-          "It most commonly affects the underarms, palms, soles of the feet and, less often, the face and scalp.",
         ],
       },
       {
         heading: "How sweating is controlled",
         body: [
-          "The skin carries millions of eccrine sweat glands, which release a watery sweat to cool the body, and a smaller number of apocrine glands concentrated in the underarms and groin. Eccrine glands are switched on by nerve signals from the sympathetic nervous system, the same system that responds to heat, exercise and stress.",
+          "Eccrine glands are switched on by nerve signals from the sympathetic nervous system, the same system that responds to heat, exercise and stress.",
           "In primary hyperhidrosis the glands themselves are normal; the signal reaching them is stronger or more frequent than the body needs. That is why the condition is not a hygiene problem, and why treatments that work on the signal, rather than on the skin surface, are part of the discussion.",
         ],
       },
@@ -5779,20 +5316,14 @@ export const concerns: Concern[] = [
     // duplicated the card or were decorative.
     drivers: {
       heading: "Common causes",
-      intro:
-        "Sweating can be the condition itself or a sign of something else. The main contributors:",
       items: [
-        {
-          lead: "Primary focal hyperhidrosis:",
-          body: "the most common form, usually starting in childhood or adolescence and often running in families.",
-        },
         {
           lead: "Hormonal change:",
           body: "puberty, pregnancy, menopause and thyroid disorders can all increase sweating.",
         },
         {
           lead: "Stress and anxiety:",
-          body: "emotional triggers activate the same nerve pathway that drives sweating. For someone with primary hyperhidrosis, stressful situations can make it noticeably worse, and the worry about sweating can become a trigger of its own.",
+          body: "emotional triggers activate the same nerve pathway that drives sweating.",
         },
         {
           lead: "Medication:",
@@ -5803,8 +5334,6 @@ export const concerns: Concern[] = [
           body: "an overactive thyroid, diabetes, infections and, rarely, more serious conditions can cause sweating.",
         },
       ],
-      outro:
-        "Diet, caffeine, alcohol and tight synthetic clothing can make sweating worse, but they are aggravating factors rather than causes.",
     },
 
     // ── 05 · archetype D's differentiator: primary vs secondary. On this
@@ -5813,19 +5342,13 @@ export const concerns: Concern[] = [
       kind: "tabs",
       heading: "Which kind is it?",
       intro:
-        "The most important thing an assessment does here is decide whether the sweating is the condition itself, or a sign of something else. The second needs investigating rather than treating.",
+        "The most important thing an assessment does here is decide whether the sweating is the condition itself, or a sign of something else.",
       tabs: [
         {
           label: "Primary",
           sub: "Focal, since your teens",
           title: "Primary focal hyperhidrosis",
           body: "Sweating in specific areas, typically the underarms, palms, soles or face, affecting both sides evenly. It usually began in childhood or adolescence, often runs in the family, and tends to ease during sleep.",
-          items: [
-            {
-              lead: "The tell:",
-              body: "the same areas, on both sides, for years, often with relatives who describe the same thing.",
-            },
-          ],
           routing:
             "assessed for a stepped management plan, starting with topical measures and moving on only if they are not enough.",
         },
@@ -5834,12 +5357,6 @@ export const concerns: Concern[] = [
           sub: "Generalised or new in adulthood",
           title: "Sweating as a symptom",
           body: "Sweating across large areas of the body, sweating that started in adulthood without an obvious reason, sweating on one side only, or sweating at night that soaks the bedding. Here the sweating is a signal.",
-          items: [
-            {
-              lead: "The tell:",
-              body: "a clear change from what is normal for you, night sweats, or other symptoms such as weight loss, fever or a racing heart.",
-            },
-          ],
           routing:
             "assessed with history, examination and, where indicated, investigation or referral before any cosmetic treatment is discussed.",
         },
@@ -5858,7 +5375,7 @@ export const concerns: Concern[] = [
         },
         {
           title: "Palms",
-          body: "Sweaty hands affect handshakes, writing, gripping and using phones or keyboards. Treatment options for the palms differ from the underarms because the skin and the hand's function are different.",
+          body: "Sweaty hands affect handshakes, writing, gripping and using phones or keyboards.",
         },
         {
           title: "Soles of the feet",
@@ -5866,11 +5383,7 @@ export const concerns: Concern[] = [
         },
         {
           title: "Face and scalp",
-          body: "Sweating from the forehead, scalp or upper lip, often triggered by heat, food or stress. It is particularly noticeable and is assessed carefully, as the face is a delicate area to treat.",
-        },
-        {
-          title: "Across the whole body",
-          body: "Generalised sweating, rather than sweating in a few defined areas, is more often secondary to another cause and is investigated before treatment is considered.",
+          body: "Sweating from the forehead, scalp or upper lip, often triggered by heat, food or stress.",
         },
       ],
       note: {
@@ -5888,14 +5401,10 @@ export const concerns: Concern[] = [
       triggers: [
         "Sweating that soaks through clothing, drips, or interferes with work, gripping or daily tasks.",
         "Night sweats that soak your sleepwear or bedding.",
-        "Generalised sweating that started in adulthood without an obvious reason.",
         "Unexplained weight loss, fever, a racing or irregular heartbeat, or feeling unusually tired alongside the sweating.",
-        "Sweating on one side of the body or face only.",
         "Sweating that began or increased after starting a new medication.",
         "Clinical-strength antiperspirant, used correctly for a few weeks, has not made enough difference.",
       ],
-      outro:
-        "With night sweats, weight loss, fever or one-sided sweating, the first step may be your GP rather than an aesthetic treatment.",
     },
 
     // ── 08
@@ -5916,7 +5425,7 @@ export const concerns: Concern[] = [
       },
     },
     treatmentsNote:
-      "Clinical-strength antiperspirant applied to dry skin at night is a reasonable first step. Prescription topicals, oral medication and iontophoresis for hands and feet are discussed individually. Secondary sweating is addressed at its cause first.",
+      "Clinical-strength antiperspirant applied to dry skin at night is a reasonable first step. Prescription topicals, oral medication and iontophoresis for hands and feet are discussed individually.",
 
     // ── 12
     firstVisit: {
@@ -5925,23 +5434,21 @@ export const concerns: Concern[] = [
       steps: [
         {
           title: "History",
-          body: "When the sweating started, which areas are affected, whether it happens at rest or during sleep, family history, any other symptoms, your medications, and what you have already tried.",
+          body: "When it started, which areas, whether it happens during sleep, family history and your medications.",
         },
         {
           title: "Examination",
-          body: "The doctor looks at the affected areas and the skin around them, checking for irritation or infection and whether the pattern fits primary focal sweating.",
+          body: "The affected skin, checked for irritation or infection.",
         },
         {
           title: "Ruling out other causes",
-          body: "Where the history or pattern suggests something else may be driving it, the doctor will discuss investigation, such as blood tests, or a referral before planning any treatment.",
+          body: "Blood tests or a referral where something else may be driving it.",
         },
         {
           title: "Discussion and plan",
-          body: "Which step makes sense for you now, what it involves, its risks and limits, and what would come next if it is not enough.",
+          body: "Which step makes sense now, and what would come next.",
         },
       ],
-      outro:
-        "It helps to bring a list of your medications and to note when the sweating is worst. A few days of notes is more useful than trying to remember.",
     },
     visitImages: [
       {
@@ -5976,7 +5483,7 @@ export const concerns: Concern[] = [
         },
         {
           lead: "Treating the wrong thing",
-          body: "The most consequential risk here is managing the sweating while an overactive thyroid, an infection or another underlying cause goes unnoticed. This is why secondary causes are ruled out first.",
+          body: "The most consequential risk here is managing the sweating while an overactive thyroid, an infection or another underlying cause goes unnoticed.",
         },
         {
           lead: "What treatment cannot do",
@@ -6003,31 +5510,23 @@ export const concerns: Concern[] = [
     faqs: [
       {
         q: "Is excessive sweating a medical condition?",
-        a: "Yes. When sweating is noticeably beyond what is needed to regulate temperature, it is recognised as a condition called hyperhidrosis. It is not a hygiene problem: the sweat glands receive a stronger signal than the body needs.",
-      },
-      {
-        q: "What causes excessive sweating?",
-        a: "Most often it occurs on its own, usually starting in childhood or adolescence and often running in families. It can also be caused or worsened by hormonal changes, stress, certain medications and some medical conditions.",
-      },
-      {
-        q: "Is excessive sweating treatable?",
-        a: "It can usually be managed, though primary hyperhidrosis is not cured. Options range from clinical-strength antiperspirants to prescription treatments and in-clinic procedures, tried in steps. Where sweating is caused by another condition, treating that condition comes first.",
+        a: "Yes. When sweating is noticeably beyond what is needed to regulate temperature, it is recognised as a condition called hyperhidrosis.",
       },
       {
         q: "How is it different from normal sweating in hot weather?",
-        a: "Everyone sweats more in Malaysia's heat and humidity. Hyperhidrosis is suggested when you sweat heavily in a cool or air-conditioned room, at rest, or in specific areas such as the palms or underarms regardless of the temperature, and when it interferes with daily life. Constant moisture also makes skin irritation and fungal infection more likely.",
+        a: "Everyone sweats more in Malaysia's heat and humidity. Hyperhidrosis is suggested when you sweat heavily in a cool or air-conditioned room, at rest, or in specific areas such as the palms or underarms regardless of the temperature, and when it interferes with daily life.",
       },
       {
         q: "What is the difference between deodorant and antiperspirant?",
-        a: "A deodorant masks or reduces odour but does not reduce sweat. An antiperspirant contains aluminium salts that temporarily plug the sweat ducts, reducing how much sweat reaches the skin. Clinical-strength antiperspirants are applied to dry skin at night, when the glands are less active, and are a reasonable first step before considering anything else.",
+        a: "A deodorant masks or reduces odour but does not reduce sweat. An antiperspirant contains aluminium salts that temporarily plug the sweat ducts, reducing how much sweat reaches the skin.",
       },
       {
         q: "Why do night sweats matter?",
-        a: "Primary hyperhidrosis usually eases during sleep. Sweating at night that soaks your sleepwear or bedding is more likely to have another cause, such as a hormonal change, an infection, a medication side effect or another medical condition, and is worth having investigated rather than simply treated.",
+        a: "Sweating at night that soaks your sleepwear or bedding is more likely to have another cause, such as a hormonal change, an infection, a medication side effect or another medical condition, and is worth having investigated rather than simply treated.",
       },
       {
         q: "Will treating one area make me sweat more elsewhere?",
-        a: "Some people notice more sweating in untreated areas after treatment, which is called compensatory sweating. It is most strongly associated with surgical approaches, which are not offered here. The body has many sweat glands outside any treated area, so temperature regulation continues.",
+        a: "Some people notice more sweating in untreated areas after treatment, which is called compensatory sweating. It is most strongly associated with surgical approaches, which are not offered here.",
       },
       {
         q: "Does excessive sweating cause body odour?",

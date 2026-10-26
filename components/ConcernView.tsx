@@ -24,10 +24,12 @@ import {
   ConcernCostBlock,
   RelatedConcernsBlock,
   ResultsBlock,
+  resultsIntro,
 } from "@/components/concern-blocks";
 import { concernBySlug } from "@/content/data/concerns";
 import { postsFor } from "@/content/data/blog";
-import { technologyOfConcern, treatmentsOfConcern } from "@/content/data/relations";
+import { resultsOfConcern, technologyOfConcern, treatmentsOfConcern } from "@/content/data/relations";
+import { localizedConcern } from "@/content/i18n/concern-locale";
 import { reviewerByline } from "@/content/data/doctors";
 import { concernReviewer } from "@/lib/signoff";
 import { concernToc, sectionAnchors } from "@/lib/concern-toc";
@@ -181,6 +183,12 @@ export function ConcernView({
     })
     .filter((r): r is { slug: string; name: string; reason: string; href: string } => Boolean(r));
   const anchors = sectionAnchors(c, source);
+  // A concern with no photographs of its own borrows a related concern's, and
+  // the intro says whose they are; captions come from the locale's overlay.
+  const results = resultsOfConcern(c, (x) => (en ? x : (localizedConcern(locale, x.slug)?.c ?? x)));
+  const resultsFrom = results.from
+    ? resultsIntro([results.from], { ui, locale })
+    : undefined;
 
   // The rail is fed from the same list the QA gate checks jump-nav anchors
   // against, so every entry scrolls to a section this page actually renders.
@@ -202,6 +210,7 @@ export function ConcernView({
       faq: ui.faqHeading,
     },
     source,
+    results.items,
   );
   const hasRail = headings.length >= TOC_MIN_HEADINGS;
 
@@ -303,6 +312,12 @@ export function ConcernView({
           </div>
         </Section>
 
+        {/* Results — straight under the answer, because the photographs are
+            what a visitor scrolls looking for. One swipeable row, so the
+            contents rail keeps running beside it and the page below is not
+            pushed down. It renders its own disclaimer (ADR-0001 §2). */}
+        <ResultsBlock items={results.items} intro={resultsFrom} ui={ui} locale={locale} />
+
         {/* 03 · What is X — anchor ids derive from the heading, so the rail
             addresses any section without a second authored field. */}
         {c.sections?.map((s, i) => (
@@ -356,11 +371,6 @@ export function ConcernView({
             visitor has just read the options and cannot pick between them alone. */}
         {/* A rounded card inside the column at every width, so it does not bleed. */}
         <CtaMid cta={c.ctaMid} href={wa} position="mid" copy={en ? undefined : ui.ctaMid} />
-
-        {/* Results — large before/after pairs in the reading column, so the
-            contents rail keeps running beside it. It renders its own disclaimer
-            (ADR-0001 §2). */}
-        <ResultsBlock items={c.results} ui={ui} locale={locale} />
 
         {/* 15 · technology. The lead sentence is the point — a bare logo wall
             says nothing, "the device is matched to you" is a reason to choose

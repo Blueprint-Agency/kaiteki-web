@@ -21,7 +21,7 @@
   "device": "HIFU",
   "typicalSessions": "1 hingga beberapa sesi, dengan semakan",
   "summary": "Ultrabunyi berfokus yang digunakan untuk masalah tegang dan angkat kulit tanpa pembedahan.",
-  "leadAnswer": "HIFU (high-intensity focused ultrasound, atau ultrabunyi berfokus berintensiti tinggi) ialah rawatan tanpa pembedahan yang menghantar tenaga ultrabunyi berfokus ke lapisan kulit yang lebih dalam. Ia lazim digunakan untuk masalah kulit kendur dan ketegangan kulit. Tahap kekenduran dan sedalam mana ia berlaku yang menentukan sama ada rawatan ini sesuai untuk anda atau tidak, jadi doktor memeriksa muka anda dahulu sebelum sebarang pelan dibuat.",
+  "leadAnswer": "HIFU (high-intensity focused ultrasound, atau ultrabunyi berfokus berintensiti tinggi) ialah rawatan tanpa pembedahan yang menghantar tenaga ultrabunyi berfokus ke lapisan kulit yang lebih dalam. Tahap kekenduran dan sedalam mana ia berlaku yang menentukan sama ada rawatan ini sesuai untuk anda atau tidak, jadi doktor memeriksa muka anda dahulu sebelum sebarang pelan dibuat.",
   "facts": [
     {
       "value": "2 platform ultrabunyi",
@@ -39,7 +39,7 @@
   "routes": [
     {
       "title": "Kulit kendur di garis rahang dan pipi jatuh",
-      "body": "Kekenduran peringkat awal hingga sederhana di bahagian bawah muka dan di sepanjang garis rahang, serta bentuk bawah dagu yang semakin kurang jelas. Inilah corak yang paling kerap dipertimbangkan untuk ultrabunyi berfokus.",
+      "body": "Kekenduran peringkat awal hingga sederhana di bahagian bawah muka dan di sepanjang garis rahang, serta bentuk bawah dagu yang semakin kurang jelas.",
       "links": [
         {
           "href": "/concerns/face-lifting",
@@ -53,7 +53,7 @@
     },
     {
       "title": "Ketegangan kulit serta garis halus akibat usia",
-      "body": "Kulit kurang tegang kerana kolagen berkurangan, kulit leher yang nipis berlipat seperti kertas krep atau terasa longgar, dan keanjalan kulit yang menurun secara keseluruhan. Biasanya ia sebahagian daripada pelan penjagaan jangka panjang, bukan penyelesaian sekali buat.",
+      "body": "Kulit kurang tegang kerana kolagen berkurangan, kulit leher yang nipis berlipat seperti kertas krep atau terasa longgar, dan keanjalan kulit yang menurun secara keseluruhan.",
       "links": [
         {
           "href": "/concerns/aging",
@@ -66,15 +66,14 @@
       ]
     }
   ],
-  "routesNote": "Ultrabunyi berfokus merawat kekenduran. Ia tidak menggantikan volum yang hilang, tidak melegakan garis akibat pergerakan otot dan tidak memperbaiki kualiti kulit, jadi pelan rawatan selalunya menggabungkannya dengan rawatan lain.",
   "variantModule": {
     "heading": "Ultracel Q atau Liftera: jenis mesin HIFU yang digunakan, dan kenapa",
-    "intro": "Kedua-dua mesin memfokuskan ultrabunyi di bawah permukaan kulit, jadi pemanasan berlaku pada lapisan lebih dalam yang dipilih, manakala permukaan kulit sebahagian besarnya tidak terjejas. Bezanya ialah cara tenaga itu dibentuk.",
+    "intro": "Kedua-dua mesin memfokuskan ultrabunyi di bawah permukaan kulit. Bezanya ialah cara tenaga itu dibentuk.",
     "items": [
       {
         "eyebrow": "Berasaskan kartrij · Jeisys Medical",
         "title": "Ultracel Q",
-        "body": "Doktor menukar kartrij untuk menukar kedalaman fokus, jadi platform yang sama boleh disasarkan ke dermis, lapisan SMAS yang lebih dalam atau lapisan lemak, dengan tenaga difokuskan sama ada sebagai titik atau sepanjang satu garisan. Hujungnya yang kecil direka untuk mencapai kontur seperti garis rahang dan bawah dagu.",
+        "body": "Doktor menukar kartrij untuk menukar kedalaman fokus, jadi platform yang sama boleh disasarkan ke dermis, lapisan SMAS yang lebih dalam atau lapisan lemak, dengan tenaga difokuskan sama ada sebagai titik atau sepanjang satu garisan.",
         "href": "/technology/ultracel-q",
         "hrefLabel": "Tentang Ultracel Q"
       },
@@ -85,8 +84,7 @@
         "href": "/technology/lifthera",
         "hrefLabel": "Tentang Liftera"
       }
-    ],
-    "note": "Kedua-dua mesin ini tiada imej lapisan tisu pada skrin. Apabila doktor mahu melihat lapisan itu sebelum menghantar tenaga, platform Ultherapy yang berasingan digunakan."
+    ]
   },
   "ctaMid": {
     "heading": "Tak pasti sama ada muka anda perlukan rawatan tegang muka?",
@@ -114,11 +112,10 @@
       "body": ""
     }
   ],
-  "bringToConsult": "Bawa sejarah perubatan anda, senarai ubat-ubatan dan semua rawatan estetik yang pernah dibuat, termasuk rawatan berasaskan tenaga. Implan dan peranti di kawasan rawatan paling kerap terlupa, dan ia penting untuk rawatan ini.",
   "sessionSteps": [
     {
       "title": "Konsultasi dan penilaian",
-      "body": "Lawatan pertama anda ialah konsultasi, bukan rawatan. Doktor memeriksa di mana kekenduran anda berlaku, sama ada tahapnya cukup untuk ultrabunyi berfokus berbaloi dibuat, dan mesin mana yang sesuai untuk setiap kawasan."
+      "body": "Doktor memeriksa di mana kekenduran anda berlaku, sama ada tahapnya cukup untuk ultrabunyi berfokus berbaloi dibuat, dan mesin mana yang sesuai untuk setiap kawasan."
     },
     {
       "title": "Pemetaan dan persediaan",
@@ -126,15 +123,15 @@
     },
     {
       "title": "Garisan rawatan",
-      "body": "Doktor menghantar tenaga garisan demi garisan dengan kartrij yang dipilih. Kebanyakan orang menggambarkan rasa hangat, mencucuk atau ketukan dalam yang singkat bagi setiap denyutan, bukan sakit yang berterusan, dan ia lebih terasa di kawasan bertulang seperti rahang dan dahi. Tetapan boleh diubah jika rasa tidak selesa."
+      "body": "Doktor menghantar tenaga garisan demi garisan dengan kartrij yang dipilih. Kebanyakan orang menggambarkan rasa hangat, mencucuk atau ketukan dalam yang singkat bagi setiap denyutan, bukan sakit yang berterusan, dan ia lebih terasa di kawasan bertulang seperti rahang dan dahi."
     },
     {
       "title": "Selepas itu",
-      "body": "Gel dibersihkan dan anda diberi nasihat penjagaan selepas rawatan. Kebanyakan orang kembali kepada aktiviti biasa pada hari yang sama."
+      "body": "Gel dibersihkan dan anda diberi nasihat penjagaan selepas rawatan."
     }
   ],
   "afterSession": {
-    "intro": "Biasanya downtime sangat sedikit atau tiada langsung: tiada apa yang perlu sembuh di permukaan, kerana tenaga dihantar ke bawahnya.",
+    "intro": "",
     "bands": [
       {
         "title": "Sejurus selepas rawatan",
@@ -143,21 +140,17 @@
       {
         "title": "Beberapa hari pertama",
         "body": "Rasa sengal apabila disentuh, atau rasa tegang sementara di kawasan yang dirawat, biasanya reda sendiri dalam beberapa hari."
-      },
-      {
-        "title": "Beberapa minggu dan bulan berikutnya",
-        "body": "Tindak balas kolagen berlaku secara beransur-ansur, jadi tiada apa yang dinilai pada hari rawatan. Pelan selalunya termasuk semakan selepas masa yang mencukupi berlalu."
       }
     ],
     "aftercare": "Penjagaan kulit yang lembut dan pelindung matahari setiap hari. Anda mungkin diminta mengelak haba melampau, seperti sauna atau hot yoga, untuk tempoh yang singkat."
   },
   "risks": {
-    "intro": "Setiap satu diterangkan semasa konsultasi, sebelum apa-apa ditempah.",
+    "intro": "",
     "common": "Kemerahan, bengkak, rasa sengal, lebam kecil, dan kebas atau rasa kesemutan sementara di kawasan yang dirawat.",
-    "lessCommon": "Bintat (kesan bengkak berjalur), dan kesan sementara berkaitan saraf seperti otot lemah setempat, pernah dilaporkan dengan rawatan ultrabunyi berfokus. Kesan serius jarang berlaku apabila rawatan dipilih dengan sesuai, dipetakan dengan betul dan dilakukan oleh doktor terlatih.",
+    "lessCommon": "Bintat (kesan bengkak berjalur), dan kesan sementara berkaitan saraf seperti otot lemah setempat, pernah dilaporkan dengan rawatan ultrabunyi berfokus.",
     "pigmentNote": "Ultrabunyi berfokus diserap oleh tisu, bukan oleh melanin, jadi HIFU lazimnya digunakan untuk pelbagai warna kulit, termasuk kulit Asia yang lebih gelap, tanpa pertimbangan pigmen seperti sesetengah laser. Risiko yang lebih besar di sini ialah mesin dan orang yang mengendalikannya. Lihat “HIFU murah selamat ke?” di bawah.",
     "cannotDo": [
-      "Ia bukan pembedahan face lift. Ia tidak memotong, menarik atau membuang kulit, dan perubahannya tidak setanding dengan pembedahan. Kekenduran yang teruk selalunya lebih sesuai dibincangkan sebagai soal pembedahan.",
+      "Ia bukan pembedahan face lift. Ia tidak memotong, menarik atau membuang kulit. Kekenduran yang teruk selalunya lebih sesuai dibincangkan sebagai soal pembedahan.",
       "Ia tidak menggantikan volum yang hilang, tidak melegakan garis akibat pergerakan otot, dan tidak merawat tekstur permukaan atau pigmen.",
       "Ia tidak kekal. Kulit terus menua selepas sebarang rawatan tegang, sebab itu pelan rawatan termasuk semakan dan penjagaan susulan sekali-sekala."
     ],
@@ -169,10 +162,8 @@
       "Kawasan yang dirawat. Pelan untuk garis rahang dan leher melibatkan jumlah kerja yang berbeza daripada seluruh muka dan leher.",
       "Bilangan shot atau garisan yang dihantar di kawasan tersebut.",
       "Mesin dan kartrij yang diperlukan dalam pelan anda.",
-      "Sama ada pelan ialah satu sesi dengan semakan, atau satu kursus pendek.",
       "Sama ada HIFU digabungkan dengan rawatan lain dalam pelan yang lebih luas."
-    ],
-    "outro": "Selalunya dirancang sebagai satu sesi dengan semakan beberapa bulan kemudian, atau satu kursus kecil yang dijarakkan, dengan penjagaan susulan sekali-sekala."
+    ]
   },
   "comparisons": [
     {
@@ -181,24 +172,9 @@
       "downtime": "Tiada bagi kebanyakan orang"
     },
     {
-      "name": "Ultherapy",
-      "bestFor": "Kekenduran apabila doktor melihat lapisan tisu pada skrin sebelum merawat",
-      "downtime": "Tiada bagi kebanyakan orang"
-    },
-    {
       "name": "Dermal Filler",
       "bestFor": "Garis dan lekuk akibat kehilangan volum atau struktur",
       "downtime": "1-3 hari"
-    },
-    {
-      "name": "Toksin Botulinum",
-      "bestFor": "Garis akibat pergerakan otot",
-      "downtime": "Tiada"
-    },
-    {
-      "name": "Skin booster",
-      "bestFor": "Kualiti kulit dan kelembapan, bukan kekenduran",
-      "downtime": "1-2 hari"
     }
   ],
   "related": [
@@ -219,25 +195,21 @@
     {
       "heading": "Apa itu HIFU?",
       "body": [
-        "HIFU ialah singkatan high-intensity focused ultrasound: rawatan tanpa pembedahan berasaskan tenaga yang menghantar ultrabunyi ke kedalaman tertentu di bawah kulit, tanpa sebarang hirisan. Di Kaiteki, ia dipertimbangkan untuk masalah tegang dan angkat muka serta leher."
+        "HIFU ialah singkatan high-intensity focused ultrasound: rawatan tanpa pembedahan berasaskan tenaga yang menghantar ultrabunyi ke kedalaman tertentu di bawah kulit, tanpa sebarang hirisan."
       ]
     },
     {
       "heading": "Bagaimana HIFU sampai ke lapisan SMAS, lapisan yang dirawat dalam pembedahan face lift?",
       "body": [
         "HIFU menumpukan tenaga ultrabunyi pada kedalaman tertentu di bawah permukaan kulit, termasuk lapisan sokongan yang lebih dalam yang kadangkala dipanggil SMAS (superficial muscular aponeurotic system). Itulah lapisan yang sama dirawat dalam pembedahan face lift, tetapi ultrabunyi berfokus mencapainya tanpa hirisan. Tenaga itu menghasilkan titik haba kecil yang terkawal pada kedalaman tersebut, manakala permukaan kulit sebahagian besarnya tidak terjejas, sebab itu tiada luka yang perlu sembuh.",
-        "Pemanasan terkawal itu mencetuskan tindak balas pemulihan badan, dan kulit menghasilkan kolagen baharu di zon yang dirawat. Oleh kerana ini tindak balas kolagen dan bukan pengetatan secara mekanikal, sebarang perubahan berlaku secara beransur-ansur dan berbeza bagi setiap orang. Doktor memilih mesin, kedalaman dan tetapan untuk setiap kawasan."
+        "Pemanasan terkawal itu mencetuskan tindak balas pemulihan badan, dan kulit menghasilkan kolagen baharu di zon yang dirawat. Oleh kerana ini tindak balas kolagen dan bukan pengetatan secara mekanikal, sebarang perubahan berlaku secara beransur-ansur dan berbeza bagi setiap orang."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Adakah HIFU satu pembedahan?",
-      "a": "Tidak. HIFU menggunakan ultrabunyi berfokus di bawah kulit, tanpa hirisan. Ia bukan pembedahan face lift dan tidak membuang kulit."
-    },
-    {
       "q": "Apa beza HIFU dan Ultherapy?",
-      "a": "Kedua-duanya menggunakan ultrabunyi berfokus. HIFU di Kaiteki menggunakan Liftera dan Ultracel Q, dan selalunya dipertimbangkan untuk rahang dan pipi jatuh. Ultherapy ialah platform berasingan yang memaparkan lapisan tisu pada skrin sebelum merawat, dan kadangkala dipertimbangkan untuk kawasan yang memerlukan lebih ketepatan seperti kening dan leher."
+      "a": "Kedua-duanya menggunakan ultrabunyi berfokus. Ultherapy ialah platform berasingan yang memaparkan lapisan tisu pada skrin sebelum rawatan."
     },
     {
       "q": "HIFU ada downtime ke?",
@@ -245,19 +217,15 @@
     },
     {
       "q": "Perlu buat HIFU berapa kali?",
-      "a": "Ia bergantung pada kawasan dan pelan anda. HIFU selalunya dirancang sebagai satu sesi dengan semakan, atau beberapa sesi sepanjang tahun, dan bukan kursus yang tetap."
+      "a": "HIFU selalunya dirancang sebagai satu sesi dengan semakan, atau beberapa sesi sepanjang tahun, dan bukan kursus yang tetap."
     },
     {
       "q": "HIFU sakit tak?",
-      "a": "Kebanyakan orang merasa hangat, mencucuk atau ketukan dalam yang singkat bagi setiap denyutan, bukan sakit yang berpanjangan, dan ia lebih terasa di kawasan bertulang seperti rahang dan dahi. Krim kebas dan tetapan yang diubah membantu menjadikannya boleh ditahan, jadi beritahu jika anda rasa tidak selesa."
-    },
-    {
-      "q": "HIFU tahan berapa lama, dan adakah hasilnya kekal?",
-      "a": "Tidak kekal. Kulit terus menua selepas sebarang rawatan tegang, jadi pelan rawatan biasanya termasuk semakan dan penjagaan susulan sekali-sekala."
+      "a": "Krim kebas dan tetapan yang diubah membantu menjadikannya boleh ditahan, jadi beritahu jika anda rasa tidak selesa."
     },
     {
       "q": "HIFU murah selamat ke?",
-      "a": "HIFU yang terlalu murah, terutamanya di premis bukan perubatan, ialah tempat risiko sebenar berada. Ultrabunyi berfokus menghantar tenaga jauh ke dalam tisu, dan mesin yang tidak ditentukur dengan betul atau pengendali yang tidak terlatih boleh menyebabkan lecuran, kehilangan lemak yang tidak diingini atau kecederaan saraf. Pilih klinik yang menyatakan mesin yang digunakan, mesin itu berdaftar dengan Pihak Berkuasa Peranti Perubatan Malaysia (MDA), dan rawatan dilakukan oleh doktor berdaftar."
+      "a": "HIFU yang terlalu murah, terutamanya di premis bukan perubatan, ialah tempat risiko sebenar berada: mesin yang tidak ditentukur dengan betul atau pengendali yang tidak terlatih boleh menyebabkan lecuran, kehilangan lemak yang tidak diingini atau kecederaan saraf. Pilih klinik yang menyatakan mesin yang digunakan, mesin itu berdaftar dengan Pihak Berkuasa Peranti Perubatan Malaysia (MDA), dan rawatan dilakukan oleh doktor berdaftar."
     }
   ]
 }

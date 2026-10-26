@@ -7,11 +7,11 @@
   "device": "Profhilo",
   "typicalSessions": "Satu kursus pendek, kemudian rawatan penyelenggaraan",
   "summary": "Rawatan suntikan penghidratan yang digunakan untuk menyokong kualiti dan kelembapan kulit.",
-  "leadAnswer": "Skin booster ialah rawatan suntikan yang menghantar bahan penghidratan ke dalam kulit untuk menyokong kualiti dan kelembapan kulit sepanjang satu kursus sesi. Produk mana yang sesuai untuk kulit anda, dan sama ada suntikan cara yang betul untuk masalah yang anda alami, ditentukan oleh doktor semasa konsultasi.",
+  "leadAnswer": "Skin booster ialah rawatan suntikan yang menghantar bahan penghidratan ke dalam kulit. Produk mana yang sesuai untuk kulit anda, dan sama ada suntikan cara yang betul untuk masalah yang anda alami, ditentukan oleh doktor semasa konsultasi.",
   "routes": [
     {
       "title": "Kulit kering dan kusam, atau nampak kurang lembap",
-      "body": "Kelembapan dan kualiti kulit secara keseluruhan, serta garis halus yang berkaitan dengan kulit kering. Profhilo dan Hydrodeluxe ialah produk asid hialuronik dalam rangkaian ini, dibina untuk penghidratan.",
+      "body": "Kelembapan dan kualiti kulit secara keseluruhan, serta garis halus yang berkaitan dengan kulit kering.",
       "links": [
         {
           "href": "/concerns/aging",
@@ -48,15 +48,14 @@
       ]
     }
   ],
-  "routesNote": "Jika yang anda mahukan ialah perubahan pada kontur muka, skin booster bukan kategori yang betul, dan halaman dermal filler yang berkaitan.",
   "variantModule": {
     "heading": "Jenis skin booster, dan apa kandungannya",
-    "intro": "Skin booster ialah istilah umum, dan produk di bawahnya tidak boleh ditukar ganti. Bahan aktifnya berbeza, dan bahan itulah yang menentukan jenis kulit yang dipertimbangkan oleh doktor untuknya.",
+    "intro": "Skin booster ialah istilah umum, dan produk di bawahnya tidak boleh ditukar ganti. Bahan aktifnya berbeza.",
     "items": [
       {
         "eyebrow": "Polinukleotida salmon · Pharma Research, Korea",
         "title": "Rejuran",
-        "body": "Digunakan untuk menyokong lapisan pelindung kulit dan pemulihan kulit, dan sering dipertimbangkan untuk kulit sensitif, mudah berjerawat atau rosak. Kerana ia berasal daripada ikan salmon, sebarang alahan ikan atau makanan laut mesti dimaklumkan.",
+        "body": "Digunakan untuk menyokong lapisan pelindung kulit dan pemulihan kulit, dan sering dipertimbangkan untuk kulit sensitif, mudah berjerawat atau rosak.",
         "href": "/technology/rejuran",
         "hrefLabel": "Tentang Rejuran"
       },
@@ -84,12 +83,11 @@
       {
         "eyebrow": "PDLLA + HA · VAIM, Korea Selatan",
         "title": "Juvelook",
-        "body": "Skin booster perangsang kolagen yang digunakan untuk liang pori, tekstur dan garis halus, di mana sebarang perubahan terbina dalam beberapa bulan, bukan beberapa hari.",
+        "body": "Skin booster perangsang kolagen yang digunakan untuk liang pori, tekstur dan garis halus.",
         "href": "/technology/juvelook",
         "hrefLabel": "Tentang Juvelook"
       }
-    ],
-    "note": "Doktor mungkin bermula dengan skin booster penghidratan atau polinukleotida sebelum yang jenis perangsang kolagen, atau memutuskan bahawa skin booster langsung bukan kategori yang sesuai."
+    ]
   },
   "avoidIf": [
     {
@@ -117,11 +115,10 @@
       "body": "yang perlu dipertimbangkan untuk produk perangsang kolagen seperti Juvelook."
     }
   ],
-  "bringToConsult": "Bawa sejarah perubatan, alahan dan ubat anda, serta senarai setiap rawatan suntikan yang pernah anda buat, termasuk filler.",
   "sessionSteps": [
     {
       "title": "Konsultasi dan penilaian kulit",
-      "body": "Lawatan pertama anda ialah konsultasi, bukan rawatan. Doktor memeriksa kulit anda dan menentukan sama ada skin booster sesuai untuk masalah anda dan, jika ya, jenis yang mana: penghidratan, polinukleotida atau perangsang kolagen."
+      "body": "Doktor memeriksa kulit anda dan menentukan sama ada skin booster sesuai untuk masalah anda dan, jika ya, jenis yang mana: penghidratan, polinukleotida atau perangsang kolagen."
     },
     {
       "title": "Persediaan",
@@ -133,11 +130,11 @@
     },
     {
       "title": "Selepas itu",
-      "body": "Penjagaan untuk menenangkan kulit dan nasihat penjagaan selepas rawatan. Sesi seterusnya dijarakkan mengikut kulit dan tindak balas anda."
+      "body": "Penjagaan untuk menenangkan kulit dan nasihat penjagaan selepas rawatan."
     }
   ],
   "afterSession": {
-    "intro": "Downtime biasanya singkat tetapi boleh dilihat untuk satu tempoh, dan ia berbeza antara produk.",
+    "intro": "",
     "bands": [
       {
         "title": "Sejurus selepas rawatan",
@@ -150,18 +147,14 @@
       {
         "title": "Beberapa hari berikutnya",
         "body": "Rasa sengal dan sebarang lebam akan pudar. Selepas skin booster perangsang kolagen seperti Juvelook, kemerahan dan bintil boleh mengambil masa beberapa hari untuk reda."
-      },
-      {
-        "title": "Sepanjang kursus",
-        "body": "Sesi dijarakkan beberapa minggu, dan sebarang perubahan berlaku secara beransur-ansur."
       }
     ],
     "aftercare": "Penjagaan kulit yang lembut dan perlindungan matahari, serta berehat sebentar daripada haba, senaman berat dan tekanan pada kawasan yang dirawat sebelum kembali menggunakan produk aktif dan makeup."
   },
   "risks": {
-    "intro": "Skin booster membawa risiko yang sama seperti mana-mana suntikan muka, dan semuanya diterangkan sepenuhnya sebelum apa-apa ditempah.",
+    "intro": "",
     "common": "Bintil di titik suntikan, bengkak, kemerahan, lebam, rasa sengal dan ketulan kecil yang boleh dirasa, yang biasanya reda dalam tempoh singkat.",
-    "lessCommon": "Jangkitan, bengkak yang berpanjangan, nodul dan tindak balas hipersensitiviti. Nodul yang berterusan atau pembentukan granuloma ialah pertimbangan yang diiktiraf bagi produk perangsang kolagen. Komplikasi vaskular jarang berlaku tetapi diiktiraf bagi mana-mana suntikan muka. Kesan serius tidak biasa apabila produk dipilih dengan sesuai dan disuntik oleh doktor yang terlatih.",
+    "lessCommon": "Jangkitan, bengkak yang berpanjangan, nodul dan tindak balas hipersensitiviti. Nodul yang berterusan atau pembentukan granuloma ialah pertimbangan yang diiktiraf bagi produk perangsang kolagen. Komplikasi vaskular jarang berlaku tetapi diiktiraf bagi mana-mana suntikan muka.",
     "cannotDo": [
       "Ia tidak menambah isi atau mengubah bentuk muka.",
       "Ia tidak berkesan dalam satu sesi. Skin booster digunakan sebagai satu kursus, dan sebarang perubahan berlaku secara beransur-ansur.",
@@ -190,11 +183,6 @@
       "downtime": "1-3 hari"
     },
     {
-      "name": "Toksin botulinum",
-      "bestFor": "Garis akibat pergerakan otot",
-      "downtime": "Tiada"
-    },
-    {
       "name": "HIFU / Ultherapy",
       "bestFor": "Kulit kendur dan ketegangan, bukan kualiti kulit",
       "downtime": "Tiada bagi kebanyakan orang"
@@ -218,38 +206,36 @@
     {
       "heading": "Apa itu skin booster?",
       "body": [
-        "Skin booster ialah rawatan suntikan yang meletakkan bahan penghidratan dan penjagaan kulit ke dalam kulit untuk menyokong kualitinya secara keseluruhan, bukan untuk menambah isi atau mengubah bentuk muka. Kerana ia rawatan suntikan, ia dilakukan oleh doktor.",
-        "Skin booster ialah istilah umum yang merangkumi produk penghidratan, polinukleotida dan perangsang kolagen, yang dibandingkan di bawah."
+        "Skin booster ialah rawatan suntikan yang meletakkan bahan penghidratan dan penjagaan kulit ke dalam kulit untuk menyokong kualitinya secara keseluruhan. Kerana ia rawatan suntikan, ia dilakukan oleh doktor."
       ]
     },
     {
       "heading": "Apa beza skin booster dan filler?",
       "body": [
-        "Filler diletakkan untuk menambah isi atau mengubah kontur: pipi yang lebih berisi, dagu yang lebih jelas, lekuk yang diperbetulkan. Skin booster tidak begitu. Ia dihantar dalam jumlah kecil melalui satu siri suntikan mikro halus yang diagihkan di seluruh kawasan rawatan, dan bahannya bertujuan bertindak di dalam kulit itu sendiri untuk menyokong kelembapan dan kualiti kulit dari semasa ke semasa.",
-        "Itu juga sebabnya kedua-duanya dirancang secara berbeza: skin booster digunakan sebagai satu kursus, bukan satu rawatan sahaja, dan sebarang perubahan berlaku secara beransur-ansur."
+        "Filler diletakkan untuk menambah isi atau mengubah kontur: pipi yang lebih berisi, dagu yang lebih jelas, lekuk yang diperbetulkan. Skin booster tidak begitu. Ia dihantar dalam jumlah kecil melalui satu siri suntikan mikro halus yang diagihkan di seluruh kawasan rawatan, dan bahannya bertujuan bertindak di dalam kulit itu sendiri untuk menyokong kelembapan dan kualiti kulit dari semasa ke semasa."
       ]
     }
   ],
   "faqs": [
     {
       "q": "Skin booster sesuai ke untuk kulit sensitif atau berjerawat?",
-      "a": "Mungkin. Skin booster polinukleotida, iaitu Rejuran dan Plinest, sering dipertimbangkan untuk kulit sensitif atau rosak, selepas sebarang jerawat aktif reda."
+      "a": "Mungkin, selepas sebarang jerawat aktif reda."
     },
     {
       "q": "Skin booster ada downtime ke? Berapa lama?",
-      "a": "Bintil kecil di setiap titik suntikan adalah dijangka, dan ia reda dalam beberapa jam hingga kira-kira sehari untuk skin booster asid hialuronik, dan dalam satu hingga dua hari untuk polinukleotida. Kemerahan dan lebam titik halus juga boleh berlaku."
+      "a": "Bintil kecil di setiap titik suntikan adalah dijangka, dan ia reda dalam beberapa jam hingga kira-kira sehari untuk skin booster asid hialuronik, dan dalam satu hingga dua hari untuk polinukleotida."
     },
     {
       "q": "Perlu buat skin booster berapa kali?",
-      "a": "Biasanya satu kursus pendek yang dijarakkan beberapa minggu, kemudian penyelenggaraan berkala. Bilangannya bergantung pada produk dan kulit anda."
+      "a": "Biasanya satu kursus pendek yang dijarakkan beberapa minggu, kemudian penyelenggaraan berkala."
     },
     {
       "q": "Apa beza Rejuran dan Profhilo?",
-      "a": "Kedua-duanya dibina daripada bahan yang berbeza. Rejuran ialah polinukleotida daripada ikan salmon yang digunakan untuk menyokong lapisan pelindung dan pemulihan kulit, sering dipertimbangkan untuk kulit sensitif atau rosak. Profhilo ialah asid hialuronik berkepekatan tinggi yang digunakan untuk penghidratan mendalam dan pembentukan semula kulit."
+      "a": "Kedua-duanya dibina daripada bahan yang berbeza: Rejuran ialah polinukleotida daripada ikan salmon, manakala Profhilo ialah asid hialuronik berkepekatan tinggi."
     },
     {
       "q": "Boleh ke buat skin booster kalau saya alah pada ikan?",
-      "a": "Beritahu doktor dahulu. Rejuran dan Plinest ialah polinukleotida yang berasal daripada ikan, jadi alahan ikan atau makanan laut penting untuk kedua-duanya. Skin booster asid hialuronik, seperti Profhilo dan Hydrodeluxe, dibina daripada bahan yang berbeza."
+      "a": "Beritahu doktor dahulu. Rejuran dan Plinest ialah polinukleotida yang berasal daripada ikan. Skin booster asid hialuronik, seperti Profhilo dan Hydrodeluxe, dibina daripada bahan yang berbeza."
     }
   ]
 }

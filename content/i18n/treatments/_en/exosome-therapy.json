@@ -42,7 +42,7 @@
   "routes": [
     {
       "title": "Skin recovery after energy-based acne treatment",
-      "body": "A regenerative approach applied after energy-based treatment to support skin recovery. It is offered as an adjunct rather than a standalone acne treatment.",
+      "body": "A regenerative approach applied after energy-based treatment to support skin recovery.",
       "links": [
         {
           "href": "/concerns/acne",
@@ -52,7 +52,7 @@
     },
     {
       "title": "The scalp, alongside medical hair-loss treatment",
-      "body": "A regenerative preparation applied to the scalp to support the follicular environment, offered as an adjunct to medical management. It is not a substitute for finding the cause.",
+      "body": "A regenerative preparation applied to the scalp to support the follicular environment, offered as an adjunct to medical management.",
       "links": [
         {
           "href": "/concerns/hair-loss",
@@ -61,7 +61,6 @@
       ]
     }
   ],
-  "routesNote": "Exosome therapy is used alongside other treatments, not instead of them.",
   "ctaMid": {
     "heading": "Wondering whether exosome therapy adds anything to your plan?",
     "body": "It is an adjunct, so whether it belongs in your plan depends on what it would accompany."
@@ -80,7 +79,6 @@
       "body": "which your doctor goes through with you at consultation."
     }
   ],
-  "bringToConsult": "Bring your full medical, skincare and hair history, including any skin or scalp condition and medication.",
   "sessionSteps": [
     {
       "title": "Consultation and assessment",
@@ -96,7 +94,7 @@
     },
     {
       "title": "Afterwards",
-      "body": "You are given aftercare for the combined procedure. A short course spaced a few weeks apart is common, planned for you rather than sold as a package."
+      "body": "A short course spaced a few weeks apart is common."
     }
   ],
   "afterSession": {
@@ -105,18 +103,14 @@
       {
         "title": "The first few days",
         "body": "When paired with microneedling or a laser, temporary redness, mild swelling or sensitivity can occur, and typically settles over the following days."
-      },
-      {
-        "title": "Across a course",
-        "body": "Any change develops gradually across the course, not on the day."
       }
     ],
-    "aftercare": "Gentle skincare and sun protection are usually advised afterwards. Your doctor will give aftercare guidance specific to your treatment."
+    "aftercare": "Gentle skincare and sun protection are usually advised afterwards."
   },
   "risks": {
     "intro": "The doctor explains these, and those of the procedure it accompanies, before you decide.",
     "common": "Redness, swelling, sensitivity or irritation at the treated area.",
-    "lessCommon": "Any procedure it is combined with, such as microneedling, a laser or PRP, carries its own considerations, which are explained alongside it.",
+    "lessCommon": "The procedure it is combined with carries its own considerations.",
     "cannotDo": [
       "It is not a standalone acne treatment, only an adjunct after energy-based treatment.",
       "It is not a treatment for hair loss in its own right, and it is not a substitute for finding the cause.",
@@ -129,7 +123,6 @@
     "factors": [
       "The concern being addressed.",
       "The area treated, skin or scalp.",
-      "Any treatment it is combined with.",
       "The number of sessions, and your individual response across the course."
     ]
   },
@@ -140,30 +133,24 @@
     {
       "heading": "What is exosome therapy?",
       "body": [
-        "Exosomes are tiny cell-derived vesicles that carry signalling molecules such as proteins, lipids and RNA. In the body they act as messengers between cells, and this signalling role is why they are being explored in regenerative aesthetics.",
-        "Exosome therapy applies preparations of these vesicles to the skin or scalp, usually as part of a wider treatment plan rather than on its own. It is an emerging area of aesthetic medicine."
+        "Exosomes are tiny cell-derived vesicles that carry signalling molecules such as proteins, lipids and RNA. In the body they act as messengers between cells, and this signalling role is why they are being explored in regenerative aesthetics."
       ]
     },
     {
       "heading": "Why is exosome therapy applied after another procedure?",
       "body": [
-        "The aim of exosome therapy is to support the skin's or scalp's own repair and renewal processes by delivering exosome-based signalling molecules to the treated area. Because exosomes are small, they are commonly applied after a procedure that briefly opens channels in the skin, such as microneedling or certain lasers.",
-        "That is why its role, and its downtime, depend on the procedure it follows."
+        "The aim of exosome therapy is to support the skin's or scalp's own repair and renewal processes by delivering exosome-based signalling molecules to the treated area. Because exosomes are small, they are commonly applied after a procedure that briefly opens channels in the skin, such as microneedling or certain lasers."
       ]
     }
   ],
   "faqs": [
     {
       "q": "Is exosome therapy safe?",
-      "a": "Common effects are temporary redness, swelling, sensitivity or irritation, and the accompanying procedure carries its own risks. It is an emerging treatment with a developing evidence base, so the doctor sets out what is and is not known before you decide."
-    },
-    {
-      "q": "Can exosome therapy be combined with other treatments?",
-      "a": "Yes, and it usually is: it is commonly applied after microneedling or certain lasers, which briefly open channels in the skin, or alongside PRP."
+      "a": "Common effects are temporary redness, swelling, sensitivity or irritation, and the accompanying procedure carries its own risks. The evidence base is still developing."
     },
     {
       "q": "Who is a suitable candidate for exosome therapy?",
-      "a": "People already planning microneedling, a laser or PRP for skin recovery or scalp concerns may be assessed for it. It is deferred in pregnancy and breastfeeding, and certain skin or scalp conditions can rule it out."
+      "a": "People already planning microneedling, a laser or PRP for skin recovery or scalp concerns may be assessed for it."
     },
     {
       "q": "When might I notice a change?",

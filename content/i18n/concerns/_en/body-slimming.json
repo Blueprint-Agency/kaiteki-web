@@ -5,8 +5,8 @@
   "name": "Body Slimming",
   "group": "Hair & Body",
   "image": "https://cdn.kaiteki.my/concerns/body-slimming/card.jpg",
-  "summary": "Stubborn fat in specific areas can be targeted without surgery. These are body-contouring treatments, not weight-loss solutions.",
-  "leadAnswer": "Body contouring targets localised pockets of fat (the lower abdomen, flanks, bra line) that persist at a stable weight, using fat freezing, microwave energy or muscle stimulation. It is not a weight-loss treatment: it does not change overall weight or treat obesity, and is generally considered for people near a weight they can maintain.",
+  "summary": "Stubborn fat in specific areas can be targeted without surgery.",
+  "leadAnswer": "Body contouring targets localised pockets of fat (the lower abdomen, flanks, bra line) that persist at a stable weight, using fat freezing, microwave energy or muscle stimulation.",
   "treatments": [
     "fat-freezing",
     "microwave-contouring",
@@ -65,7 +65,7 @@
     {
       "heading": "What is body contouring?",
       "body": [
-        "Body contouring, often called body slimming, describes in-clinic treatments aimed at the shape of a specific area (a fat pocket, muscle tone or skin firmness) rather than body weight. It sits alongside diet and exercise, never in place of them."
+        "Body contouring, often called body slimming, describes in-clinic treatments aimed at the shape of a specific area (a fat pocket, muscle tone or skin firmness) rather than body weight."
       ]
     }
   ],
@@ -87,7 +87,7 @@
       },
       {
         "lead": "Skin texture and cellulite:",
-        "body": "dimpling caused by fibrous bands tethering skin to deeper tissue while fat pushes between them. It is a structural feature of skin, present at every body size, and it is not a sign of excess weight."
+        "body": "dimpling caused by fibrous bands tethering skin to deeper tissue while fat pushes between them."
       }
     ]
   },
@@ -102,19 +102,19 @@
       },
       {
         "claim": "The fat comes back somewhere else.",
-        "reality": "Fat cells removed from a treated area do not relocate. What happens is that if you gain weight afterwards, the fat cells you still have everywhere else enlarge, and the treated area can look proportionally different. The outcome depends on your weight staying reasonably stable."
+        "reality": "Fat cells removed from a treated area do not relocate. What happens is that if you gain weight afterwards, the fat cells you still have everywhere else enlarge, and the treated area can look proportionally different."
       },
       {
         "claim": "One session and it's done.",
-        "reality": "Most areas are planned as a course with review points, and change from fat-reduction treatment builds over weeks to months as the body clears treated cells. A single session may be appropriate for a small area, but it is decided after assessment rather than sold in advance."
+        "reality": "Most areas are planned as a course with review points, and change from fat-reduction treatment builds over weeks to months as the body clears treated cells."
       },
       {
         "claim": "It will tighten loose skin too.",
-        "reality": "Fat reduction and skin firmness are different problems. Reducing fat under loose skin can make the looseness more visible rather than less. Where skin laxity is the leading issue, it is assessed on its own terms and may call for a different treatment entirely, or none."
+        "reality": "Fat reduction and skin firmness are different problems. Reducing fat under loose skin can make the looseness more visible rather than less."
       },
       {
         "claim": "Cellulite can be removed.",
-        "reality": "It can sometimes be made less obvious, but it is a structural feature of how skin attaches to the tissue beneath, present in people of every size and fitness level. Any treatment aimed at it should be discussed as improvement in appearance rather than removal."
+        "reality": "It can sometimes be made less obvious, but it is a structural feature of how skin attaches to the tissue beneath, present in people of every size and fitness level."
       }
     ]
   },
@@ -122,11 +122,8 @@
     "intro": "Have an area assessed if:",
     "triggers": [
       "A specific area has not changed despite a stable weight and consistent exercise.",
-      "You are unsure whether what you are looking at is fat, loose skin or muscle tone.",
-      "You have been offered a treatment elsewhere and want a second opinion on whether it matches the concern.",
-      "Your weight is still changing, in which case timing is part of the advice."
-    ],
-    "outro": "If your weight is not yet stable, the advice is usually to wait."
+      "You are unsure whether what you are looking at is fat, loose skin or muscle tone."
+    ]
   },
   "ctaMid": {
     "heading": "Not sure if it's fat or loose skin?",
@@ -136,18 +133,17 @@
   "treatmentWhy": {
     "fat-freezing": {
       "why": "For a pinchable pocket that diet has not shifted",
-      "body": "Controlled cooling applied to a defined pocket of fat, which the body then clears over the following weeks. Suitable where the fat can be drawn into an applicator, which is why the pinch test at assessment decides whether it applies at all."
+      "body": "Controlled cooling applied to a defined pocket of fat, which the body then clears over the following weeks."
     },
     "microwave-contouring": {
       "why": "For fat and skin firmness in one pass",
-      "body": "Delivers energy that addresses fat volume and skin quality in the same treatment. Considered where an area shows both a pocket and some looseness, rather than one or the other cleanly."
+      "body": "Delivers energy that addresses fat volume and skin quality in the same treatment."
     },
     "muscle-stimulation": {
       "why": "For muscle tone under the fat layer",
-      "body": "Prompts intense muscle contraction to build tone in the underlying muscle rather than to reduce fat. Considered where definition rather than volume is the concern, and often discussed alongside, not instead of, exercise."
+      "body": "Prompts intense muscle contraction to build tone in the underlying muscle rather than to reduce fat."
     }
   },
-  "treatmentsNote": "Sequence matters where more than one applies: reducing a fat pocket first shows how much of what you were seeing was actually skin looseness underneath.",
   "results": [
     {
       "src": "https://cdn.kaiteki.my/concerns/body-slimming/before-after-01.jpg",
@@ -185,7 +181,7 @@
     "steps": [
       {
         "title": "History",
-        "body": "Your weight over the past year or two, whether it is stable, what you have already tried, any pregnancies or significant weight change, your general health and any medication."
+        "body": "Your weight over the past year or two, any pregnancies, and what you have already tried."
       },
       {
         "title": "Examination",
@@ -193,10 +189,9 @@
       },
       {
         "title": "Discussion and plan",
-        "body": "What each option does, how long change takes to appear, downtime and risks, and what is realistic, including waiting until your weight settles. No obligation to proceed."
+        "body": "What is realistic, including waiting until your weight settles."
       }
-    ],
-    "outro": "Wear or bring clothing that lets the area be examined comfortably. If you have photographs from a period when your weight was different, they help the doctor judge what has actually changed."
+    ]
   },
   "visitImages": [
     {
@@ -228,7 +223,7 @@
       },
       {
         "lead": "What treatment cannot do",
-        "body": "It brings no metabolic health benefit, and it cannot reduce overall weight, treat obesity or tighten loose skin. Cellulite is not removed. Change builds over weeks to months."
+        "body": "It brings no metabolic health benefit, and it cannot reduce overall weight, treat obesity or tighten loose skin. Cellulite is not removed."
       }
     ],
     "disclose": "Tell your doctor if you are pregnant, breastfeeding or planning pregnancy, have a hernia in or near the area, have a pacemaker or metal implant, take blood thinners, have a cold-sensitivity condition such as cryoglobulinaemia or cold urticaria, or have had surgery in the area."
@@ -246,28 +241,20 @@
   "technologyIntro": "Fat volume, skin firmness and muscle tone are three different problems, and no single device addresses all three.",
   "faqs": [
     {
-      "q": "Is body contouring a way to lose weight?",
-      "a": "No. It reduces or reshapes fat in one specific area and does not change your overall weight, body mass index or metabolic health. It is not a treatment for obesity and it is not a substitute for diet and exercise. It is generally considered for people already near a weight they can maintain who have a localised area that has not responded."
-    },
-    {
       "q": "Will the fat come back?",
-      "a": "Fat cells removed from a treated area do not return or move elsewhere. What can happen is that if you gain weight afterwards, the fat cells you still have throughout your body enlarge, including any remaining in the treated area, so the shape changes again. The result depends on your weight staying reasonably stable."
+      "a": "Fat cells removed from a treated area do not return or move elsewhere. The result depends on your weight staying reasonably stable."
     },
     {
       "q": "How soon will I see a difference?",
-      "a": "Gradually. Fat-reduction treatment works by causing treated cells to be cleared by the body over the following weeks and months, so there is nothing to see immediately and the area may in fact look swollen at first. Muscle-stimulation treatment builds tone over a course."
+      "a": "Gradually. Fat-reduction treatment works by causing treated cells to be cleared by the body over the following weeks and months, so there is nothing to see immediately and the area may in fact look swollen at first."
     },
     {
       "q": "Does it hurt?",
-      "a": "Cooling-based treatment is uncomfortable at first as the area numbs, then usually tolerable, with pulling and tugging sensations from the applicator. Afterwards the area is often tender, swollen and numb for some time, and a deep ache in the first days is common. Muscle stimulation feels like intense involuntary contractions and leaves aching similar to a hard workout. None of it requires anaesthetic."
+      "a": "Cooling-based treatment is uncomfortable at first as the area numbs, then usually tolerable, with pulling and tugging sensations from the applicator. Muscle stimulation feels like intense involuntary contractions and leaves aching similar to a hard workout. None of it requires anaesthetic."
     },
     {
       "q": "Can it treat cellulite?",
-      "a": "The appearance can sometimes be improved, but cellulite is not removed by any treatment on this page. It is caused by fibrous bands tethering the skin to deeper tissue while fat pushes up between them, and it is present in people of every size and fitness level."
-    },
-    {
-      "q": "Will it tighten loose skin?",
-      "a": "Not on its own, and reducing the fat beneath loose skin can make the looseness more obvious. Skin firmness is a separate problem from fat volume, assessed separately, and after significant weight loss or pregnancy it is often the leading issue."
+      "a": "The appearance can sometimes be improved, but cellulite is not removed by any treatment on this page."
     },
     {
       "q": "Can I have this after pregnancy?",
@@ -275,7 +262,7 @@
     },
     {
       "q": "How do I know if I'm a suitable candidate?",
-      "a": "The usual picture is someone at or near a stable weight, in reasonable health, with a defined area that has not responded to diet and exercise, and with realistic expectations about the scale of change. The pinch test at assessment decides whether the fat can be treated with the equipment available. If your weight is still moving, or if the concern is overall size, the honest answer is often no."
+      "a": "The usual picture is someone at or near a stable weight, in reasonable health, with a defined area that has not responded to diet and exercise, and with realistic expectations about the scale of change. If your weight is still moving, or if the concern is overall size, the honest answer is often no."
     }
   ],
   "relatedConcerns": [

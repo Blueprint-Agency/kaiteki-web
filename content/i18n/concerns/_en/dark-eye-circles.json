@@ -3,7 +3,7 @@
   "name": "Dark Eye Circles",
   "group": "Eyes",
   "image": "https://cdn.kaiteki.my/concerns/dark-eye-circles/card.jpg",
-  "summary": "Dark circles can come from pigment, blood vessels or hollowing under the eye. The treatment depends entirely on which cause is behind yours.",
+  "summary": "Dark circles can come from pigment, blood vessels or hollowing under the eye.",
   "leadAnswer": "Dark eye circles come from three things that look alike: extra pigment in the skin, blood vessels showing through thin under-eye skin, and a hollow that casts a shadow. Most people have more than one. Each is treated differently: laser for pigment or vessels, skin-quality treatment for thin skin, and volume support for a hollow.",
   "treatments": [
     "skin-booster",
@@ -68,13 +68,12 @@
     {
       "heading": "What are dark eye circles?",
       "body": [
-        "Dark circles are not a single condition. The darkness can be pigment, visible vessels or shadow from the shape of the area, and often more than one at once, so what looks similar on two people can need different treatment."
+        "Dark circles are not a single condition."
       ]
     }
   ],
   "drivers": {
     "heading": "What causes dark eye circles?",
-    "intro": "Under-eye skin is the thinnest on the body, which is why three quite different things can show through it and all read as a dark circle.",
     "items": [
       {
         "lead": "Extra pigment in the skin:",
@@ -88,8 +87,7 @@
         "lead": "Shape and shadow:",
         "body": "as the fat pad under the eye shrinks or descends, a groove forms between the lid and the cheek. What you see there is not pigment at all: it is a shadow cast by the contour."
       }
-    ],
-    "outro": "Poor sleep, alcohol, salt and dehydration rarely cause dark circles on their own, but they make all three more visible, which is why the area looks worse on some mornings than others. Ageing deepens all three."
+    ]
   },
   "variant": {
     "kind": "tabs",
@@ -102,13 +100,7 @@
         "label": "Pigment",
         "sub": "Brown, stays when stretched",
         "title": "Pigmented circles",
-        "body": "A brown or grey-brown discolouration that stays visible when you stretch the skin gently and when light hits the area straight on. It often extends onto the lid or toward the temple rather than sitting only in the hollow.",
-        "items": [
-          {
-            "lead": "The tell:",
-            "body": "stretching the skin does not lighten it, and direct light does not remove it."
-          }
-        ],
+        "body": "A brown or grey-brown discolouration that stays visible when you stretch the skin gently and when light hits the area straight on.",
         "routing": "commonly assessed for pigment-targeted laser, with sun protection and any allergy or eczema addressed alongside."
       },
       {
@@ -117,12 +109,6 @@
         "sub": "Blue or purple tint",
         "title": "Vascular circles",
         "body": "A bluish or purplish cast, sometimes with visible fine vessels, which becomes more obvious when you are tired, congested or crying. Stretching the skin makes it fade slightly as the vessels are drawn flatter.",
-        "items": [
-          {
-            "lead": "The tell:",
-            "body": "the colour is blue or purple rather than brown, and it fluctuates from day to day."
-          }
-        ],
         "routing": "assessed for vascular laser or skin-quality treatment, with nasal allergy managed if it is contributing."
       },
       {
@@ -130,7 +116,7 @@
         "label": "Structural",
         "sub": "Shadow that light removes",
         "title": "Structural circles",
-        "body": "A hollow or groove between the lower lid and the cheek that reads as dark in overhead light and largely disappears when light comes from straight ahead.",
+        "body": "A hollow or groove between the lower lid and the cheek.",
         "items": [
           {
             "lead": "The tell:",
@@ -144,13 +130,7 @@
         "label": "Mixed",
         "sub": "More than one at once",
         "title": "Mixed circles",
-        "body": "The most common answer, particularly past the mid-thirties. Pigment sits over a hollow, or thin skin shows vessels while a shadow deepens the effect. Treating one component alone then produces a partial, disappointing change.",
-        "items": [
-          {
-            "lead": "The tell:",
-            "body": "the mirror tests give ambiguous answers, and the area looks different in every light."
-          }
-        ],
+        "body": "The most common answer, particularly past the mid-thirties. Pigment sits over a hollow, or thin skin shows vessels while a shadow deepens the effect.",
         "routing": "assessed as a sequence, with the dominant component treated first and the remainder reviewed afterwards."
       }
     ]
@@ -166,18 +146,16 @@
     ],
     "note": {
       "title": "Not just a dark circle?",
-      "body": "Persistent puffiness, swelling that comes and goes through the day, a lump, or any change in vision or in the appearance of one eye only should be assessed by a doctor. That is a medical question, not a cosmetic one."
+      "body": "Persistent puffiness, swelling that comes and goes through the day, a lump, or any change in vision or in the appearance of one eye only should be assessed by a doctor."
     }
   },
   "seeDoctor": {
     "intro": "Have it looked at if:",
     "triggers": [
       "Eye creams and concealer have not made a difference after a few months of consistent use.",
-      "You cannot tell whether what you have is pigment, vessels or shadow, and are buying products aimed at one of them.",
       "The darkness appeared or worsened noticeably over a short period.",
       "It sits alongside itching, congestion or eczema, which may be aggravating it."
-    ],
-    "outro": "Poorly judged treatment shows more here than anywhere else on the face."
+    ]
   },
   "ctaMid": {
     "heading": "Pigment, vessels or shadow?",
@@ -187,22 +165,21 @@
   "treatmentWhy": {
     "skin-booster": {
       "why": "For thin, crepey under-eye skin",
-      "body": "Injectable hydration placed superficially to improve the quality and thickness of very thin skin, so less shows through it. Considered where skin quality rather than pigment or volume is the leading issue."
+      "body": "Injectable hydration placed superficially to improve the quality and thickness of very thin skin, so less shows through it."
     },
     "vascular-pigment-laser": {
       "why": "For bluish vessels showing through",
-      "body": "Targets superficial vessels and pigment around the eye, with settings chosen conservatively because the skin here is far thinner than on the cheek. Relevant where colour rather than contour is the problem."
+      "body": "Targets superficial vessels and pigment around the eye, with settings chosen conservatively because the skin here is far thinner than on the cheek."
     },
     "radiofrequency": {
       "why": "For laxity in the lower lid",
-      "body": "Gentle heating to prompt collagen change where the lower lid skin has loosened and creased. Considered where crepiness accompanies the darkness rather than where a hollow dominates."
+      "body": "Gentle heating to prompt collagen change where the lower lid skin has loosened and creased."
     },
     "dermal-fillers": {
       "why": "For the hollow that casts the shadow",
-      "body": "Small volumes placed deeply to soften a groove between lid and cheek. The most technically demanding injection on the face, and the one where conservative placement matters most, because the area shows every error."
+      "body": "Small volumes placed deeply to soften a groove between lid and cheek."
     }
   },
-  "treatmentsNote": "Where a hollow is the cause, no laser will remove the shadow, and where pigment is the cause, adding volume will not lighten it. Mixed circles are treated in sequence rather than all at once, so each step can be judged on its own.",
   "compare": {
     "intro": "A general guide. Mixed circles are the norm, and treatment here is deliberately conservative.",
     "columns": [
@@ -287,7 +264,7 @@
     "steps": [
       {
         "title": "History",
-        "body": "How long it has been there, whether anyone in your family has the same pattern, any allergy, eczema or congestion, your sleep and general health, and anything you have already tried."
+        "body": "Whether anyone in your family has the same pattern, and any allergy, eczema or congestion."
       },
       {
         "title": "Examination",
@@ -295,10 +272,10 @@
       },
       {
         "title": "Discussion and plan",
-        "body": "Which mechanism is leading, what each option can reach, the specific risks of treating this area, and what is realistic, with no obligation to proceed."
+        "body": "Which mechanism is leading, and the specific risks of treating this area, with no obligation to proceed."
       }
     ],
-    "outro": "Come without makeup if you can, and bring a photograph of yourself in daylight. Clinic lighting is overhead, which exaggerates shadow, so a daylight photograph often shows the area more honestly than the mirror in the room."
+    "outro": "Come without makeup if you can, and bring a photograph of yourself in daylight."
   },
   "visitImages": [
     {
@@ -307,7 +284,6 @@
     }
   ],
   "risks": {
-    "intro": "The under-eye area carries more risk than most: the skin is thin and the anatomy unforgiving.",
     "items": [
       {
         "lead": "Common and usually temporary",
@@ -323,7 +299,7 @@
       },
       {
         "lead": "What treatment cannot do",
-        "body": "Nothing on this page changes an inherited eye-socket shape or removes a shadow that comes from bone. Treating pigment will not lift a hollow, and volume will not lighten brown skin. Sleep does not cure dark circles, and neither does any single session. Improvement is usually partial."
+        "body": "Nothing on this page changes an inherited eye-socket shape or removes a shadow that comes from bone. Treating pigment will not lift a hollow, and volume will not lighten brown skin. Improvement is usually partial."
       }
     ],
     "disclose": "Tell your doctor if you are pregnant or breastfeeding, take blood thinners, have thyroid or kidney conditions associated with puffiness, have a history of cold sores or keloid scarring, have had eyelid surgery or injectables in this area before, or have any current eye condition."
@@ -342,47 +318,31 @@
   "faqs": [
     {
       "q": "Are dark circles caused by lack of sleep?",
-      "a": "Not usually, though poor sleep makes them more visible. The underlying darkness comes from pigment in the skin, blood vessels showing through it, or a shadow cast by the contour beneath the eye, and none of those changes overnight. Tiredness dilates vessels and leaves the face paler, which increases the contrast. If your circles are present on well-rested mornings too, sleep is not the cause."
-    },
-    {
-      "q": "How do I tell which type I have?",
-      "a": "Two checks help. Stretch the skin gently sideways: if the colour stays, it is likely pigment; if it fades, vessels are contributing. Then change the light so it comes from directly in front rather than overhead: if the darkness largely disappears, you are looking at shadow from a hollow rather than at colour in the skin. Most people find they have more than one."
+      "a": "Not usually, though poor sleep makes them more visible. Tiredness dilates vessels and leaves the face paler, which increases the contrast. If your circles are present on well-rested mornings too, sleep is not the cause."
     },
     {
       "q": "Do eye creams work?",
-      "a": "They can help modestly where surface pigment or dryness is part of the picture, and a well-formulated one supports any in-clinic plan. They will not lift a hollow or remove vessels beneath the skin, so expectations should match the mechanism."
+      "a": "They can help modestly where surface pigment or dryness is part of the picture, and a well-formulated one supports any in-clinic plan. They will not lift a hollow or remove vessels beneath the skin."
     },
     {
       "q": "Is filler under the eyes safe?",
-      "a": "It is a well-established treatment in experienced hands, but it is the most technically demanding injection on the face and it deserves a careful conversation. The skin is thin, the area holds fluid, and product placed poorly can leave a bluish tinge, lumps or lasting puffiness. It is dissolvable, which matters."
+      "a": "It is a well-established treatment in experienced hands, but it is the most technically demanding injection on the face and it deserves a careful conversation. It is dissolvable, which matters."
     },
     {
       "q": "Will treatment get rid of them completely?",
-      "a": "Rarely. Improvement is usually partial, particularly where more than one mechanism is involved or where the socket shape is inherited. Many people get a meaningful reduction in how tired they look without the area becoming uniform with the cheek."
-    },
-    {
-      "q": "Does rubbing my eyes make dark circles worse?",
-      "a": "Yes, and it is one of the more fixable contributors. Repeated friction inflames very thin skin and drives pigment production, which is why people with allergic rhinitis or eczema around the eyes often have the darkest circles. Treating the itch is part of treating the circle."
+      "a": "Rarely. Improvement is usually partial, particularly where more than one mechanism is involved or where the socket shape is inherited."
     },
     {
       "q": "Can dark circles be treated during pregnancy?",
-      "a": "Elective treatment is generally deferred until after pregnancy and breastfeeding. Fluid shifts and hormonal change during pregnancy also make the area behave differently, so an assessment made then may not reflect your baseline. Sun protection, gentle skincare and managing any congestion are usually the advice in the meantime."
+      "a": "Elective treatment is generally deferred until after pregnancy and breastfeeding. Fluid shifts and hormonal change during pregnancy also make the area behave differently, so an assessment made then may not reflect your baseline."
     },
     {
       "q": "Why do my dark circles look worse in photos?",
-      "a": "Overhead lighting is the usual explanation. Ceiling lights, and phone cameras held above eye level, both throw the light from above, which deepens any shadow under the eye. That is also why a bathroom mirror is a poor place to judge them. A photograph taken in daylight, with the light coming from in front, shows the area far more honestly."
-    },
-    {
-      "q": "Is there any downtime?",
-      "a": "Bruising and swelling after injectable treatment are more visible here than elsewhere and can last a week or more, so plan around events. Laser treatment usually leaves redness and dryness for a few days. Skin boosters can leave small raised points for a day or two."
+      "a": "Overhead lighting is the usual explanation. Ceiling lights, and phone cameras held above eye level, both throw the light from above, which deepens any shadow under the eye. A photograph taken in daylight, with the light coming from in front, shows the area far more honestly."
     },
     {
       "q": "Can men have this treated?",
-      "a": "Yes, and it is a common reason men attend, often described as looking permanently tired rather than as a cosmetic concern. The assessment is identical. Where volume support is involved, the placement differs, because a male lower lid usually reads better with less fullness than a female one. The plan follows your anatomy rather than a template."
-    },
-    {
-      "q": "Will they come back after treatment?",
-      "a": "The tendency does not go away. Pigment production, vessel visibility and volume loss all continue, so most people who are pleased with a result return periodically rather than once. Where an underlying contributor such as allergy or sun exposure is managed alongside, the result tends to hold better."
+      "a": "Yes, and it is a common reason men attend, often described as looking permanently tired rather than as a cosmetic concern. Where volume support is involved, the placement differs, because a male lower lid usually reads better with less fullness than a female one."
     },
     {
       "q": "Should I just use concealer?",

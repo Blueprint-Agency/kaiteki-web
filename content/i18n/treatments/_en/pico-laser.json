@@ -68,7 +68,7 @@
   "routes": [
     {
       "title": "Surface pigment",
-      "body": "Sun spots, freckles and other benign pigmented marks sitting in the upper skin. These are generally the most predictable pigment to treat and usually need the fewest sessions.",
+      "body": "Sun spots, freckles and other benign pigmented marks sitting in the upper skin.",
       "links": [
         {
           "href": "/concerns/pigmentation",
@@ -78,7 +78,7 @@
     },
     {
       "title": "Deeper and hormonal pigment",
-      "body": "Melasma, and dermal pigment conditions such as naevus of Ota or Hori's naevus. These sit deeper, respond less predictably, and melasma in particular is a long-term condition managed rather than finished.",
+      "body": "Melasma, and dermal pigment conditions such as naevus of Ota or Hori's naevus. These sit deeper and respond less predictably.",
       "links": [
         {
           "href": "/concerns/pigmentation",
@@ -88,7 +88,7 @@
     },
     {
       "title": "Post-acne marks and tone",
-      "body": "Brown marks left behind after spots have settled, along with dull or uneven overall tone and the look of enlarged pores. Active acne is managed medically first; see below.",
+      "body": "Brown marks left behind after spots have settled, along with dull or uneven overall tone and the look of enlarged pores.",
       "links": [
         {
           "href": "/concerns/acne",
@@ -111,7 +111,6 @@
       ]
     }
   ],
-  "routesNote": "Pico laser treats the marks acne leaves, not acne itself. Active inflammatory spots are usually managed medically first, with pigment work once the skin has settled.",
   "variantModule": {
     "heading": "Which pico device, and why it matters",
     "intro": "Both platforms fire picosecond pulses, but their primary wavelengths differ, and wavelength changes how strongly melanin absorbs the pulse. That is a difference in energy delivery, not a ranking.",
@@ -130,8 +129,7 @@
         "href": "/technology/fotona-pqx",
         "hrefLabel": "About Fotona PQX"
       }
-    ],
-    "note": "A single-device clinic can offer only that device's wavelength. Running two lets the device be matched to your skin, not the other way round."
+    ]
   },
   "ctaMid": {
     "heading": "Not sure which applies to you?",
@@ -163,11 +161,10 @@
       "body": "on the same area."
     }
   ],
-  "bringToConsult": "Bring your medical, medication and skincare history, including previous lasers or peels and any tendency to darken after a spot or scratch. That last detail changes the settings chosen.",
   "sessionSteps": [
     {
       "title": "Consultation and skin assessment",
-      "body": "Your first visit is a doctor consultation, not a treatment. The doctor examines the area, takes your history, and explains whether a pico laser is appropriate. Sometimes the answer is a different treatment, or waiting."
+      "body": "The doctor examines the area, takes your history, and explains whether a pico laser is appropriate. Sometimes the answer is a different treatment, or waiting."
     },
     {
       "title": "Test area where appropriate",
@@ -183,11 +180,11 @@
     },
     {
       "title": "Afterwards",
-      "body": "A cooling or soothing step, sunscreen, and aftercare instructions for the area treated. Tattoo appointments vary with size."
+      "body": "A cooling or soothing step, sunscreen, and aftercare instructions for the area treated."
     }
   ],
   "afterSession": {
-    "intro": "Downtime is usually short, but short is not none, and what you see in the first fortnight is part of the process rather than a problem.",
+    "intro": "",
     "bands": [
       {
         "title": "The first few hours",
@@ -195,31 +192,27 @@
       },
       {
         "title": "Day one to two",
-        "body": "Redness typically settles. Where pigment was targeted directly, treated spots often look darker than before. This is expected and not a sign the treatment has gone wrong."
+        "body": "Redness typically settles. Where pigment was targeted directly, treated spots often look darker than before."
       },
       {
         "title": "Day three to roughly two weeks",
         "body": "Small darkened flecks or fine crusting may appear and then flake away on their own. Leave them alone; picking is the most common cause of a mark that outlasts the treatment."
-      },
-      {
-        "title": "Between sessions",
-        "body": "Sessions are spaced a few weeks apart to let the skin clear treated pigment before the next pass."
       }
     ],
-    "aftercare": "Daily broad-spectrum sunscreen and real sun avoidance, since sun exposure between sessions is a main reason pigment returns; gentle cleansing and moisturising; and no retinoids or acids until your doctor says to resume."
+    "aftercare": "Daily broad-spectrum sunscreen and real sun avoidance; gentle cleansing and moisturising; and no retinoids or acids until your doctor says to resume."
   },
   "risks": {
-    "intro": "Each is explained at consultation, before anything is booked.",
+    "intro": "",
     "common": "Redness, warmth, mild swelling, pinpoint bruising and small crusts that flake away over one to two weeks.",
     "lessCommon": "Darkening of the treated skin after treatment (post-inflammatory hyperpigmentation), lightening of the treated skin, blistering and, rarely, scarring.",
-    "pigmentNote": "Post-inflammatory hyperpigmentation is the risk that matters most in the skin tones common here: skin with more melanin answers injury with more pigment, so an over-aggressive setting can leave a darker mark than the one it targeted. That is why a doctor may choose lower energy, longer intervals, a test patch or a different wavelength. A slower plan is often the safer one.",
+    "pigmentNote": "Post-inflammatory hyperpigmentation is the risk that matters most in the skin tones common here: skin with more melanin answers injury with more pigment, so an over-aggressive setting can leave a darker mark than the one it targeted. That is why a doctor may choose lower energy, longer intervals, a test patch or a different wavelength.",
     "cannotDo": [
-      "It does not stop new pigment forming. Without daily sun protection, sun-related marks return, and melasma in particular fluctuates with sun exposure and hormones, so it is managed long-term rather than finished in a fixed course.",
+      "It does not stop new pigment forming. Without daily sun protection, sun-related marks return, and melasma fluctuates with sun exposure and hormones.",
       "It does not treat active acne. Marks left behind, yes; the inflammatory condition itself is managed medically.",
       "It cannot promise complete clearance of a tattoo. Ink composition is rarely known with certainty, and some colours respond poorly.",
       "It does not lift or tighten skin."
     ],
-    "disclose": "Tell your doctor about anything listed under who should postpone it, and any history of cold sores."
+    "disclose": "Also tell your doctor about any history of cold sores."
   },
   "costFactors": {
     "intro": "Kaiteki does not quote prices online; the figure you get at consultation reflects your assessed plan. What moves it:",
@@ -228,10 +221,8 @@
       "Size of the area treated, whether a few spots, a full face, or a body area.",
       "Which device and settings your doctor selects for your skin type.",
       "For tattoos: ink colours, density, how many layers were applied, the age of the tattoo and where it sits on the body.",
-      "How your skin responds between sessions, which is reviewed each visit.",
       "Whether pico work is combined with other steps in a wider plan."
-    ],
-    "outro": "Facial pigment is commonly planned as several sessions a few weeks apart, reviewed as it goes; melasma is managed on an ongoing basis."
+    ]
   },
   "related": [
     "microneedling",
@@ -258,51 +249,35 @@
     {
       "heading": "How does a picosecond pulse break up pigment?",
       "body": [
-        "The pulse is absorbed by pigment far more strongly than by the surrounding skin. Because it arrives and ends in trillionths of a second, the pigment particle takes the energy as a mechanical shock and breaks into smaller fragments. Those fragments are then cleared gradually by the body's own immune cells over the weeks that follow, which is why the visible change after a pico session develops over time rather than appearing on the day.",
-        "Delivered at lower energy with a diffractive lens, the same pulse creates small zones of controlled injury in the upper skin without breaking the surface, which is used as a skin-renewal pass for texture and tone rather than for a specific mark. Wavelength, energy, spot size and lens are set per patient, not fixed."
+        "The pulse is absorbed by pigment far more strongly than by the surrounding skin. Because it arrives and ends in trillionths of a second, the pigment particle takes the energy as a mechanical shock and breaks into smaller fragments. Those fragments are then cleared gradually by the body's own immune cells over the weeks that follow.",
+        "Delivered at lower energy with a diffractive lens, the same pulse creates small zones of controlled injury in the upper skin without breaking the surface, which is used as a skin-renewal pass for texture and tone rather than for a specific mark."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "What is the difference between PicoSure and Fotona PQX?",
-      "a": "Both are picosecond lasers with different primary wavelengths. PicoSure's 755nm is absorbed strongly by melanin, which is useful for certain pigment and ink colours but makes skin tone a bigger factor in the settings. Fotona PQX's 1064nm interacts less with surface melanin and travels deeper. A plan may use one, the other, or both."
-    },
-    {
       "q": "Does Pico laser hurt?",
-      "a": "Most people describe brief snapping or hot-pinprick sensations rather than sustained pain, and picosecond pulses are generally reported as more tolerable than older longer-pulse lasers. Numbing cream can be used for sensitive areas and tattoo work, and settings can be adjusted during the session."
+      "a": "Picosecond pulses are generally reported as more tolerable than older longer-pulse lasers, and settings can be adjusted during the session."
     },
     {
       "q": "How many sessions will I need?",
-      "a": "It depends on pigment type and depth, area size, and how your skin responds between visits. Surface sun spots generally need fewer sessions than dermal pigment or a dense tattoo. Facial pigment is commonly planned as several sessions a few weeks apart; melasma is managed on an ongoing basis."
-    },
-    {
-      "q": "What happens in the days after a session?",
-      "a": "Mild redness and warmth for a few hours, sometimes slight swelling. Treated spots often look darker for a day or two, then small flecks or fine crusting flake away on their own over one to two weeks. Don't pick, keep skincare gentle, and use sunscreen daily."
+      "a": "Surface sun spots generally need fewer sessions than dermal pigment or a dense tattoo. Facial pigment is commonly planned as several sessions a few weeks apart."
     },
     {
       "q": "Will I see a difference after one session?",
-      "a": "Not reliably. Your body clears fragmented pigment gradually, so change develops over the weeks after each session, and deeper pigment typically needs more sessions than surface marks. Progress is reviewed at each visit."
-    },
-    {
-      "q": "Is Pico laser suitable for darker Malaysian skin tones?",
-      "a": "Picosecond lasers are used across a wide range of skin tones, but skin with more melanin is more likely to darken after treatment, so settings, wavelength and intervals are chosen more conservatively and a test patch is often used. 755nm interacts more with melanin than 1064nm, which is one reason Kaiteki runs both."
+      "a": "Not reliably. Your body clears fragmented pigment gradually, so change develops over the weeks after each session. Progress is reviewed at each visit."
     },
     {
       "q": "Can Pico laser treat melasma?",
-      "a": "Sometimes, with caution. Melasma is chronic, driven by sun and hormones, and can recur, and over-aggressive treatment can worsen it. It is usually managed as an ongoing plan of sun protection, topical care and conservative in-clinic settings, and a doctor decides whether any laser suits your melasma at all."
-    },
-    {
-      "q": "Can a tattoo be completely removed?",
-      "a": "That cannot be predicted before assessment. Black and dark blue inks respond most predictably; light colours, white and some cosmetic pigments can resist or behave unpredictably. Because ink composition is rarely known, a small test area may be treated first. Size, depth, age and location affect the number of sessions."
+      "a": "Sometimes, with caution. Over-aggressive treatment can worsen melasma, so it is usually managed as an ongoing plan of sun protection, topical care and conservative in-clinic settings. A doctor decides whether any laser suits your melasma at all."
     },
     {
       "q": "How much does Pico laser cost in Malaysia?",
-      "a": "Kaiteki does not quote prices online. Cost depends on pigment type and depth, area size, device and settings, number of sessions and any combined treatment, and for tattoos on ink colours and density too. Pricing is given at consultation for your assessed plan."
+      "a": "Kaiteki does not quote prices online. Pricing is given at consultation for your assessed plan."
     },
     {
       "q": "Can I wear makeup or go back to work afterwards?",
-      "a": "Most people return to their day straight after a facial pigment session, and redness usually settles within hours to a day or two. Makeup can go back on once redness settles, over intact skin only and never over crusting. Daily sunscreen matters more than makeup timing."
+      "a": "Makeup can go back on once redness settles, over intact skin only and never over crusting."
     }
   ]
 }

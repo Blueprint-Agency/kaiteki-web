@@ -77,9 +77,13 @@ export function concernToc(
   hasTechnology: boolean,
   labels: TocLabels = EN_LABELS,
   anchorSource: Concern = c,
+  /** What the results block shows: the page's own, or a related concern's. */
+  results: Concern["results"] = c.results,
 ): Heading[] {
   const anchors = sectionAnchors(c, anchorSource);
   const entries: (Heading | false | undefined | 0)[] = [
+    // Results render first, straight under the lead answer.
+    !!results?.length && { id: "results", text: resultsHeading(results, labels.results), level: 2 as const },
     ...(c.sections ?? []).map((s, i) => ({ id: anchors[i], text: s.heading, level: 2 as const })),
     !!c.drivers?.items.length && { id: "causes", text: c.drivers.heading, level: 2 as const },
     !!c.variant && { id: "which-type", text: c.variant.heading, level: 2 as const },
@@ -91,7 +95,6 @@ export function concernToc(
     },
     c.treatments.length > 0 && { id: "treatments", text: labels.treatments, level: 2 as const },
     !!c.compare?.rows.length && { id: "compare", text: labels.compare, level: 2 as const },
-    !!c.results?.length && { id: "results", text: resultsHeading(c.results, labels.results), level: 2 as const },
     hasTechnology && { id: "technology", text: labels.technology, level: 2 as const },
     !!c.risks?.items.length && { id: "risks", text: labels.risks, level: 2 as const },
     !!c.firstVisit?.steps.length && { id: "first-visit", text: labels.firstVisit, level: 2 as const },

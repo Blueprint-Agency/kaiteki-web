@@ -3,8 +3,8 @@
   "name": "Tegang & Angkat Muka",
   "group": "Face",
   "image": "https://cdn.kaiteki.my/concerns/face-lifting/card.jpg",
-  "summary": "Kulit kendur di sepanjang garis rahang, leher atau bahagian tengah muka boleh dirawat dengan pilihan tegang muka tanpa pembedahan. Doktor menilai tahap kekenduran terlebih dahulu.",
-  "leadAnswer": "Kekenduran berpunca daripada tiga lapisan: kulit menjadi longgar, muka kehilangan volum, dan tisu yang lebih dalam di bawah kulit turun ke bawah. Pilihan tanpa pembedahan seperti ultrabunyi berfokus, protokol laser dan suntikan merangsang kolagen berfungsi secara beransur-ansur, dari segi tahap ketegangan, bukan berapa banyak muka terangkat. Ia tidak membuang lebihan kulit, dan kekenduran yang teruk perlu dibincangkan dengan pakar bedah.",
+  "summary": "Kulit kendur di sepanjang garis rahang, leher atau bahagian tengah muka boleh dirawat dengan pilihan tegang muka tanpa pembedahan.",
+  "leadAnswer": "Kekenduran berpunca daripada tiga lapisan: kulit menjadi longgar, muka kehilangan volum, dan tisu yang lebih dalam di bawah kulit turun ke bawah. Pilihan tanpa pembedahan seperti ultrabunyi berfokus, protokol laser dan suntikan merangsang kolagen berfungsi secara beransur-ansur, dari segi tahap ketegangan, bukan berapa banyak muka terangkat.",
   "treatments": [
     "hifu",
     "ultherapy",
@@ -70,7 +70,7 @@
     {
       "heading": "Apa itu rawatan tegang muka tanpa pembedahan?",
       "body": [
-        "Sebagai satu masalah, tegang dan angkat muka bermaksud mahukan kulit yang lebih tegang dan berada lebih tinggi, terutamanya di pipi, garis rahang dan leher. Pilihan yang dibincangkan di sini ialah rawatan tanpa pembedahan, berasaskan tenaga dan suntikan; pembedahan face lift ialah prosedur berasingan yang dilakukan oleh pakar bedah."
+        "Sebagai satu masalah, tegang dan angkat muka bermaksud mahukan kulit yang lebih tegang dan berada lebih tinggi, terutamanya di pipi, garis rahang dan leher."
       ]
     }
   ],
@@ -83,12 +83,8 @@
         "body": "struktur sokongan yang memastikan kulit tegang diperbaharui dengan lebih perlahan mulai pertengahan umur 20-an, jadi kulit lebih sukar kembali ke bentuk asal selepas diregangkan."
       },
       {
-        "lead": "Kulit kendur:",
-        "body": "apabila struktur sokongan itu menipis, keluasan kulit menjadi lebih besar daripada yang diperlukan oleh struktur di bawahnya, dan lebihannya turun ke bawah di sepanjang rahang dan leher."
-      },
-      {
         "lead": "Perubahan otot dan lapisan di bawahnya:",
-        "body": "lapisan otot dan tisu penghubung di bawah kulit, iaitu SMAS, menjadi longgar dengan usia, dan ligamen yang menambatnya pada tulang menjadi teregang. Banyak perubahan yang kelihatan seperti kendur sebenarnya berlaku pada kedalaman ini, bukan di permukaan."
+        "body": "lapisan otot dan tisu penghubung di bawah kulit, iaitu SMAS, menjadi longgar dengan usia, dan ligamen yang menambatnya pada tulang menjadi teregang."
       },
       {
         "lead": "Graviti dan masa:",
@@ -108,13 +104,7 @@
         "label": "Kulit",
         "sub": "Kendur di permukaan dan tekstur",
         "title": "Kulit kendur di lapisan permukaan",
-        "body": "Kulit itu sendiri sudah menipis dan hilang keanjalan. Cubit perlahan pada pipi dan kulit mengambil masa untuk kembali ke tempat asal. Tekstur permukaan, garis halus seperti kertas krep dan rasa longgar secara umum lebih ketara, manakala bentuk asas muka masih kelihatan lebih kurang sama.",
-        "items": [
-          {
-            "lead": "Apa yang ia bukan:",
-            "body": "bukan masalah bentuk. Menambah volum pada kulit yang kendur di permukaan biasanya menjadikan muka kelihatan lebih berisi, bukan lebih tegang."
-          }
-        ],
+        "body": "Kulit itu sendiri sudah menipis dan hilang keanjalan. Cubit perlahan pada pipi dan kulit mengambil masa untuk kembali ke tempat asal.",
         "routing": "lazimnya dinilai untuk rawatan tegang berasaskan tenaga atau rawatan merangsang kolagen yang bertujuan memperbaiki kualiti kulit."
       },
       {
@@ -155,22 +145,16 @@
       },
       {
         "title": "Downtime dan komitmen",
-        "body": "Rawatan tanpa pembedahan biasanya selesai pada hari yang sama, dengan sedikit atau tiada cuti kerja. Pembedahan memerlukan beberapa minggu untuk pulih. Perbezaan ini selalunya menjadi faktor penentu, bukan hasilnya."
+        "body": "Rawatan tanpa pembedahan biasanya selesai pada hari yang sama, dengan sedikit atau tiada cuti kerja. Pembedahan memerlukan beberapa minggu untuk pulih."
       }
-    ],
-    "note": {
-      "title": "Bila kami akan berterus terang",
-      "body": "Jika kekenduran melebihi apa yang boleh dirawat oleh mesin, doktor akan memberitahu anda. Dirujuk untuk mendapatkan pendapat pembedahan ialah hasil yang sah."
-    }
+    ]
   },
   "seeDoctor": {
     "heading": "Bila wajar membuat penilaian",
     "intro": "Tiada umur atau tahap tertentu yang menjadikan rawatan tegang muka sesuai. Penilaian berbaloi jika:",
     "triggers": [
       "Anda perasan garis rahang semakin kurang jelas, atau pipi mula jatuh di kedua-dua sisi dagu.",
-      "Kulit di leher terasa lebih longgar, atau sudut di bawah rahang menjadi kurang jelas.",
-      "Anda sedang mempertimbangkan rawatan dan ingin tahu sama ada pilihan tanpa pembedahan benar-benar boleh merawat masalah anda.",
-      "Anda telah disyorkan rawatan di tempat lain dan mahukan pendapat kedua sama ada ia sesuai dengan masalah anda."
+      "Kulit di leher terasa lebih longgar, atau sudut di bawah rahang menjadi kurang jelas."
     ]
   },
   "ctaMid": {
@@ -181,30 +165,29 @@
   "treatmentWhy": {
     "hifu": {
       "why": "Untuk kekenduran di sepanjang garis rahang dan leher",
-      "body": "Ultrabunyi berfokus dihantar ke kedalaman tertentu di bawah kulit, termasuk lapisan yang dirawat oleh pakar bedah. Dipertimbangkan apabila masalah utama ialah kekenduran ringan hingga sederhana, bukan kualiti kulit."
+      "body": "Ultrabunyi berfokus dihantar ke kedalaman tertentu di bawah kulit, termasuk lapisan yang dirawat oleh pakar bedah."
     },
     "ultherapy": {
       "why": "Untuk tegang muka dengan panduan imej ultrabunyi",
-      "body": "Prinsip yang sama seperti HIFU, dengan imej masa nyata supaya doktor boleh melihat lapisan tisu semasa tenaga dihantar. Relevan apabila ketepatan pada kedalaman penting, atau apabila struktur muka menjadikan rawatan tanpa imej kurang sesuai."
+      "body": "Prinsip yang sama seperti HIFU, dengan imej masa nyata supaya doktor boleh melihat lapisan tisu semasa tenaga dihantar."
     },
     "fotona-4d": {
       "why": "Untuk kekenduran yang dirawat dari dalam mulut ke luar",
-      "body": "Protokol laser yang dilakukan dalam beberapa peringkat, salah satunya melalui bahagian dalam pipi. Dipertimbangkan apabila ketegangan dan kualiti kulit kedua-duanya menjadi masalah, bukan kekenduran semata-mata."
+      "body": "Protokol laser yang dilakukan dalam beberapa peringkat, salah satunya melalui bahagian dalam pipi."
     },
     "microwave-contouring": {
       "why": "Untuk lebihan di bawah dagu yang mengaburkan garis rahang",
-      "body": "Menyasarkan lemak dan ketegangan kulit di kawasan bawah dagu. Dipertimbangkan apabila yang mengaburkan garis rahang ialah isipadu tisu di bawah dagu, bukan kekenduran di sepanjangnya."
+      "body": "Menyasarkan lemak dan ketegangan kulit di kawasan bawah dagu."
     },
     "bio-stimulator": {
       "why": "Untuk membina semula kolagen secara beransur-ansur dalam beberapa bulan",
-      "body": "Suntikan yang mendorong kulit menghasilkan kolagennya sendiri, bukan menambah volum secara langsung. Perubahannya sengaja perlahan, sesuatu yang disukai sesetengah orang dan dirasakan mengecewakan oleh orang lain."
+      "body": "Suntikan yang mendorong kulit menghasilkan kolagennya sendiri, bukan menambah volum secara langsung."
     },
     "dermal-fillers": {
       "why": "Untuk sokongan apabila kehilangan volum yang menyebabkan muka kendur",
-      "body": "Diletakkan untuk membina semula struktur pada bahagian tengah muka yang rata, bukan untuk mengisi satu garis. Paling relevan apabila muka menjadi cengkung, bukan turun."
+      "body": "Diletakkan untuk membina semula struktur pada bahagian tengah muka yang rata, bukan untuk mengisi satu garis."
     }
   },
-  "treatmentsNote": "Gabungan rawatan adalah biasa, kerana kebanyakan muka melibatkan lebih daripada satu lapisan.",
   "compare": {
     "intro": "Panduan umum. Kebanyakan pelan menggabungkan beberapa pendekatan, dan pelan berasaskan kolagen termasuk titik semakan.",
     "columns": [
@@ -224,12 +207,6 @@
         "Garis rahang sedikit kurang jelas",
         "Ultrabunyi berfokus",
         "Satu sesi, kemudian dinilai semula",
-        "Tiada hingga minimum"
-      ],
-      [
-        "Pipi jatuh dengan garis rahang yang jelas terputus",
-        "Ultrabunyi berfokus, dinilai secara individu",
-        "Dinilai secara individu",
         "Tiada hingga minimum"
       ],
       [
@@ -343,18 +320,17 @@
     "steps": [
       {
         "title": "Sejarah",
-        "body": "Apa yang anda perasan dan sejak bila, sebarang rawatan atau pembedahan sebelum ini, sejarah perubatan anda, serta sebarang ubat atau suntikan yang pernah anda ambil."
+        "body": "Rawatan sebelum ini, pembedahan, benang atau suntikan, serta sejarah perubatan anda."
       },
       {
         "title": "Pemeriksaan",
-        "body": "Kekenduran kelihatan berbeza apabila berbaring, jadi pemeriksaan dibuat semasa duduk tegak."
+        "body": "Setiap lapisan diperiksa satu per satu."
       },
       {
         "title": "Perbincangan dan pelan",
-        "body": "Lapisan mana yang paling utama, apa yang setiap pilihan boleh dan tidak boleh capai, downtime dan risiko, dan sama ada pendapat pembedahan akan lebih membantu anda, tanpa sebarang kewajipan untuk meneruskan."
+        "body": "Lapisan mana yang paling utama, apa yang boleh dicapai oleh setiap pilihan, dan sama ada pendapat pembedahan akan lebih membantu anda."
       }
-    ],
-    "outro": "Bawa gambar diri anda dari lima atau sepuluh tahun lalu jika ada. Gambar jauh lebih berguna daripada penerangan untuk menilai apa yang sebenarnya telah berubah dan seberapa cepat."
+    ]
   },
   "visitImages": [
     {
@@ -370,7 +346,7 @@
       },
       {
         "lead": "Jarang tetapi penting",
-        "body": "Rawatan tegang muka berasaskan tenaga, dalam kes yang jarang, boleh menyebabkan kelemahan sementara pada cabang saraf muka atau kehilangan lemak di kawasan kecil. Suntikan membawa risiko oklusi saluran darah yang jarang tetapi serius. Kedua-duanya ialah sebab rawatan perlu dilakukan oleh doktor yang memahami anatomi pada kedalaman tersebut."
+        "body": "Rawatan tegang muka berasaskan tenaga, dalam kes yang jarang, boleh menyebabkan kelemahan sementara pada cabang saraf muka atau kehilangan lemak di kawasan kecil. Suntikan membawa risiko oklusi saluran darah yang jarang tetapi serius."
       },
       {
         "lead": "Perubahan pigmen dan kulit rakyat Malaysia",
@@ -397,51 +373,35 @@
   "faqs": [
     {
       "q": "Apa beza rawatan tegang muka tanpa pembedahan dan pembedahan face lift?",
-      "a": "Pembedahan face lift mengalihkan dan membuang tisu secara langsung di bawah bius, dilakukan oleh pakar bedah yang bertauliah, dan ia dapat merawat tahap kekenduran yang tidak dapat dicapai oleh mana-mana mesin. Pilihan tanpa pembedahan berfungsi dengan merangsang kulit membina kolagen, atau dengan menyokong struktur menggunakan suntikan, dan perubahannya beransur-ansur serta separa. Kedua-duanya ialah kategori yang berbeza, bukan dua tahap kekuatan bagi perkara yang sama."
-    },
-    {
-      "q": "Umur berapa sesuai buat rawatan tegang muka? Bila patut pertimbangkan?",
-      "a": "Tiada umur yang tetap. Yang penting ialah apa yang sebenarnya berubah: kualiti kulit, volum, atau kedudukan tisu yang lebih dalam. Ramai orang dinilai pada usia 30-an dan 40-an untuk kulit kendur di permukaan dan kehilangan volum, dan dirawat dengan lebih konservatif daripada yang mereka jangkakan. Ada juga yang datang dengan kekenduran yang sudah melebihi apa yang boleh dicapai oleh mesin."
+      "a": "Pembedahan face lift mengalihkan dan membuang tisu secara langsung di bawah bius, dilakukan oleh pakar bedah yang bertauliah, dan ia dapat merawat tahap kekenduran yang tidak dapat dicapai oleh mana-mana mesin. Pilihan tanpa pembedahan berfungsi dengan merangsang kulit membina kolagen, atau dengan menyokong struktur menggunakan suntikan, dan perubahannya beransur-ansur serta separa."
     },
     {
       "q": "Kesannya tahan berapa lama?",
-      "a": "Ia berbeza mengikut rawatan, kulit anda dan seberapa cepat anda menua, dan tiada sesiapa boleh memberi angka yang boleh dipercayai lebih awal. Rawatan berasaskan kolagen membina perubahan dalam beberapa bulan, kemudian perubahan itu berkurangan secara beransur-ansur apabila penuaan berterusan, jadi ia biasanya diulang secara berkala, bukan dilakukan sekali sahaja. Sokongan volum pula berbeza lagi."
+      "a": "Rawatan berasaskan kolagen membina perubahan dalam beberapa bulan, kemudian perubahan itu berkurangan secara beransur-ansur apabila penuaan berterusan, jadi ia biasanya diulang secara berkala, bukan dilakukan sekali sahaja."
     },
     {
       "q": "Rawatan ini sakit ke?",
-      "a": "Kebanyakan orang menggambarkan rawatan tegang muka berasaskan tenaga sebagai tidak selesa, bukan sakit, dengan rasa panas atau mencucuk yang dalam dan datang secara berdenyut. Rawatan pada tetapan yang lebih dalam lebih terasa. Krim kebas, penyejukan dan, jika sesuai, ubat tahan sakit oral digunakan. Suntikan biasanya lebih selesa, dan produknya selalunya mengandungi bius setempat."
+      "a": "Kebanyakan orang menggambarkan rawatan tegang muka berasaskan tenaga sebagai tidak selesa, bukan sakit, dengan rasa panas atau mencucuk yang dalam dan datang secara berdenyut. Krim kebas, penyejukan dan, jika sesuai, ubat tahan sakit oral digunakan. Suntikan biasanya lebih selesa, dan produknya selalunya mengandungi bius setempat."
     },
     {
       "q": "Berapa lama baru nampak perubahan?",
-      "a": "Dengan rawatan merangsang kolagen, secara beransur-ansur. Sedikit rasa tegang serta-merta kadangkala dapat dirasai akibat tisu mengecut, tetapi perubahan yang bermakna berlaku apabila kolagen baharu terbentuk dalam beberapa bulan berikutnya, dan ia selalunya lebih jelas kepada orang lain berbanding diri anda sendiri. Sokongan volum kelihatan serta-merta, walaupun bengkak pada hari-hari pertama menyebabkan penilaian awal kurang tepat."
+      "a": "Dengan rawatan merangsang kolagen, secara beransur-ansur. Sedikit rasa tegang serta-merta kadangkala dapat dirasai akibat tisu mengecut, tetapi perubahan yang bermakna berlaku apabila kolagen baharu terbentuk dalam beberapa bulan berikutnya, dan ia selalunya lebih jelas kepada orang lain berbanding diri anda sendiri."
     },
     {
       "q": "Adakah muka saya akan nampak tidak semula jadi atau berlebihan?",
-      "a": "Rawatan tegang muka berasaskan tenaga tidak menambah apa-apa pada muka, jadi ia tidak membawa risiko itu seperti suntikan. Dengan sokongan volum, rupa yang berlebihan hampir selalu berpunca daripada terlalu banyak produk yang diletakkan untuk mengisi garis, bukan untuk membina semula struktur. Rawatan yang konservatif dan berperingkat, dengan titik semakan antara sesi, ialah cara untuk mengelakkannya."
+      "a": "Rawatan tegang muka berasaskan tenaga tidak menambah apa-apa pada muka, jadi ia tidak membawa risiko itu seperti suntikan. Dengan sokongan volum, rupa yang berlebihan hampir selalu berpunca daripada terlalu banyak produk yang diletakkan untuk mengisi garis, bukan untuk membina semula struktur."
     },
     {
       "q": "Ada downtime selepas rawatan?",
-      "a": "Bagi kebanyakan rawatan tegang muka berasaskan tenaga, sedikit atau tiada: sedikit kemerahan, rasa panas dan sengal selama sehari dua, dan anda biasanya boleh kembali bekerja pada hari yang sama. Suntikan boleh meninggalkan lebam dan bengkak selama beberapa hari, jadi elok dirancang jika anda ada majlis. Protokol berasaskan laser boleh menyebabkan kemerahan yang lebih lama."
+      "a": "Bagi kebanyakan rawatan tegang muka berasaskan tenaga, sedikit atau tiada: sedikit kemerahan, rasa panas dan sengal selama sehari dua, dan anda biasanya boleh kembali bekerja pada hari yang sama. Suntikan boleh meninggalkan lebam dan bengkak selama beberapa hari, jadi elok dirancang jika anda ada majlis."
     },
     {
       "q": "Boleh ke buat rawatan ini jika pernah ambil filler atau tanam benang sebelum ini?",
-      "a": "Biasanya boleh, tetapi doktor perlu tahu dengan tepat apa yang pernah anda ambil dan bila, kerana ia mengubah penilaian dan kadangkala tekniknya. Tenaga yang dihantar ke atas produk sedia ada mungkin menjejaskannya, dan benang yang pernah ditanam mengubah lapisan tisu. Bawa rekod jika ada, termasuk nama produk dan tarikh. Merahsiakan maklumat ini menjadikan rawatan kurang selamat, bukan lebih rahsia."
+      "a": "Biasanya boleh, tetapi doktor perlu tahu dengan tepat apa yang pernah anda ambil dan bila, kerana ia mengubah penilaian dan kadangkala tekniknya. Bawa rekod jika ada, termasuk nama produk dan tarikh."
     },
     {
       "q": "Rawatan tegang muka tanpa pembedahan boleh rawat leher kendur ke?",
-      "a": "Leher lazimnya dinilai bersama bahagian bawah muka. Leher juga berkelakuan berbeza: kulitnya lebih nipis, kurang sokongan di bawahnya dan lebih lambat pulih, jadi rawatan biasanya lebih konservatif. Jika masalahnya ialah kulit yang longgar, bukan ketegangan, jangkaan perlu sederhana, dan pendapat pembedahan kadangkala menjadi cadangan yang lebih jujur."
-    },
-    {
-      "q": "Perlu buat berapa kali, atau cukup sekali sahaja?",
-      "a": "Itu bergantung pada rawatan. Sesetengah protokol ultrabunyi berfokus dirancang sebagai satu sesi dengan semakan beberapa bulan kemudian, manakala suntikan merangsang kolagen dan protokol laser biasanya dibuat berperingkat dalam beberapa lawatan yang berjarak beberapa minggu. Persamaannya, pelan ditetapkan selepas penilaian dan diubah suai semasa semakan."
-    },
-    {
-      "q": "Perlu ke saya terus buat rawatan selepas ini?",
-      "a": "Jika anda mahu mengekalkan perubahan itu, secara amnya ya. Rawatan ini bekerja dengan kolagen anda sendiri, dan penuaan terus berlaku di sekelilingnya. Kebanyakan orang yang berpuas hati dengan hasilnya kembali secara berkala, bukan sekali sahaja."
-    },
-    {
-      "q": "Bagaimana jika doktor kata tiada rawatan di sini yang akan berkesan untuk saya?",
-      "a": "Itu konsultasi yang berguna, bukan yang sia-sia. Apabila kekenduran sudah teruk, tiada mesin tanpa pembedahan yang dapat mencapai apa yang dilakukan oleh pembedahan, dan kursus rawatan yang dijual dalam keadaan begitu hanya membazirkan wang dan mengecewakan. Doktor kami akan berterus terang dan, jika sesuai, mencadangkan pendapat pembedahan. Anda juga bebas untuk membuat penilaian dan memutuskan untuk tidak melakukan apa-apa langsung."
+      "a": "Leher lazimnya dinilai bersama bahagian bawah muka. Leher juga berkelakuan berbeza: kulitnya lebih nipis, kurang sokongan di bawahnya dan lebih lambat pulih, jadi rawatan biasanya lebih konservatif."
     }
   ],
   "relatedConcerns": [

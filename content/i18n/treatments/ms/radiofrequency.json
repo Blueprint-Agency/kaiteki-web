@@ -19,7 +19,7 @@
     }
   ],
   "summary": "Tenaga radiofrekuensi yang digunakan untuk menyokong masalah ketegangan dan tekstur kulit.",
-  "leadAnswer": "Rawatan radiofrekuensi (RF) menggunakan tenaga terkawal, yang dihantar dari permukaan kulit tanpa jarum, untuk memanaskan lapisan kulit yang lebih dalam. Ia mungkin membantu masalah ketegangan dan tekstur kulit dalam satu kursus beberapa sesi. Kaiteki menggunakan empat platform RF, dan doktor memeriksa kulit anda dahulu sebelum memilih salah satu.",
+  "leadAnswer": "Rawatan radiofrekuensi (RF) menggunakan tenaga terkawal, yang dihantar dari permukaan kulit tanpa jarum, untuk memanaskan lapisan kulit yang lebih dalam. Kaiteki menggunakan empat platform RF, dan doktor memeriksa kulit anda dahulu sebelum memilih salah satu.",
   "related": [
     "microneedling",
     "hifu"
@@ -46,7 +46,7 @@
   "routes": [
     {
       "title": "Ketegangan kulit di bahagian bawah muka (muka kendur)",
-      "body": "Memanaskan lapisan dermis untuk merangsang perubahan kolagen pada kawasan yang lebih luas berbanding mesin terfokus. Dipertimbangkan apabila ketegangan keseluruhan, bukan satu garis, yang menjadi kebimbangan.",
+      "body": "Memanaskan lapisan dermis untuk merangsang perubahan kolagen pada kawasan yang lebih luas berbanding mesin terfokus.",
       "links": [
         {
           "href": "/concerns/face-contouring",
@@ -93,7 +93,7 @@
       {
         "eyebrow": "Monopolar pelbagai frekuensi · penyejukan krio",
         "title": "XERF",
-        "body": "Menggabungkan 6.78 MHz dan 2 MHz supaya tenaga boleh dihalakan ke tisu yang lebih cetek atau lebih dalam, dengan penyejukan krio bersepadu, dan berfungsi sepenuhnya dari permukaan kulit tanpa jarum.",
+        "body": "Menggabungkan 6.78 MHz dan 2 MHz supaya tenaga boleh dihalakan ke tisu yang lebih cetek atau lebih dalam, dengan penyejukan krio bersepadu.",
         "href": "/technology/xerf",
         "hrefLabel": "Tentang XERF"
       }
@@ -125,11 +125,10 @@
       "body": "yang disemak sebelum rawatan."
     }
   ],
-  "bringToConsult": "Beritahu doktor apa yang sedang anda gunakan pada kulit dan juga ubat yang anda ambil: retinoid dan peel yang baru dibuat mengubah apa yang boleh ditahan oleh kulit pada hari rawatan.",
   "sessionSteps": [
     {
       "title": "Konsultasi dan penilaian",
-      "body": "Lawatan pertama anda ialah konsultasi, bukan rawatan. Doktor menilai ketebalan dan kekenduran kulit anda, yang menentukan mesin dan tetapan."
+      "body": "Doktor menilai ketebalan dan kekenduran kulit anda, yang menentukan mesin dan tetapan."
     },
     {
       "title": "Rawatan",
@@ -141,7 +140,7 @@
     }
   ],
   "afterSession": {
-    "intro": "Downtime biasanya minimum: tiada luka, kerana tenaga bertindak di bawah permukaan kulit.",
+    "intro": "",
     "bands": [
       {
         "title": "Sejurus selepas rawatan",
@@ -150,22 +149,17 @@
       {
         "title": "Pada hari yang sama",
         "body": "Kebanyakan orang kembali kepada aktiviti biasa, dan makeup secara amnya boleh dipakai terus selepas sesi muka."
-      },
-      {
-        "title": "Dalam beberapa bulan berikutnya",
-        "body": "Pembaharuan kolagen berlaku perlahan, jadi apa-apa perubahan berkembang secara beransur-ansur dalam beberapa minggu hingga beberapa bulan, dan pelan di sini dikira dalam bulan, bukan minggu."
       }
     ],
     "aftercare": "Penjagaan kulit yang lembut dan perlindungan matahari setiap hari selepas itu."
   },
   "risks": {
-    "intro": "Risiko diterangkan sebelum apa-apa ditempah.",
+    "intro": "",
     "common": "Kemerahan, rasa hangat atau bengkak ringan yang biasanya reda.",
-    "lessCommon": "Melecur dan perubahan pigmen yang berpanjangan. Kedua-duanya berpunca daripada tetapan tenaga, dan sebab itu doktor menetapkannya mengikut kulit anda.",
-    "pigmentNote": "RF memanaskan tisu dan tidak menyasarkan pigmen, jadi ia tidak bergantung pada perbezaan warna dan digunakan merentasi pelbagai warna kulit, termasuk kulit Asia. Pemanasan berlebihan masih boleh menyebabkan perubahan pigmen, dan sebab itu tetapan penting.",
+    "lessCommon": "Lecur dan perubahan pigmen yang berpanjangan.",
+    "pigmentNote": "RF memanaskan tisu dan tidak menyasarkan pigmen, jadi ia tidak bergantung pada perbezaan warna dan digunakan merentasi pelbagai warna kulit, termasuk kulit Asia.",
     "cannotDo": [
       "Ia bukan pengganti pembedahan apabila terdapat kulit berlebihan yang ketara.",
-      "Kekenduran yang ketara mungkin lebih sesuai dengan pendekatan lain yang boleh dibincangkan oleh doktor anda.",
       "Ia tidak mengubah kulit pada hari yang sama; apa-apa perubahan bergantung pada pembentukan semula tisu yang perlahan."
     ],
     "disclose": "Beritahu doktor tentang apa-apa dalam senarai yang perlu dielakkan di atas, termasuk peranti yang diimplan di mana-mana berhampiran kawasan rawatan."
@@ -176,7 +170,7 @@
       "Keadaan kulit anda.",
       "Kawasan yang dirawat. Pelan untuk muka sahaja berbeza daripada pelan muka dan leher atau badan.",
       "Bilangan sesi dalam kursus.",
-      "Sebarang sesi penyelenggaraan, selalunya setiap 6 hingga 12 bulan."
+      "Sebarang sesi penyelenggaraan."
     ]
   },
   "relatedReasons": {
@@ -187,14 +181,13 @@
     {
       "heading": "Apa itu rawatan radiofrekuensi (RF)?",
       "body": [
-        "Rawatan radiofrekuensi (RF) ialah pendekatan bukan pembedahan yang menggunakan tenaga terkawal untuk memanaskan lapisan kulit yang lebih dalam, dan bukan bertindak di permukaan seperti produk penjagaan kulit. Di Kaiteki ia digunakan terutamanya untuk masalah ketegangan kulit, kekenduran dan kontur, tanpa pembedahan, jarum atau suntikan."
+        "Rawatan radiofrekuensi (RF) ialah pendekatan bukan pembedahan yang menggunakan tenaga terkawal untuk memanaskan lapisan kulit yang lebih dalam, dan bukan bertindak di permukaan seperti produk penjagaan kulit."
       ]
     },
     {
       "heading": "Bagaimana radiofrekuensi memanaskan kulit tanpa jarum?",
       "body": [
-        "Mesin RF menghantar tenaga haba terkawal ke dalam dermis dan memanaskan tisu dengan lembut. Pemanasan ini bertujuan untuk bertindak pada gentian kolagen sedia ada dan merangsang tindak balas pembaharuan kolagen kulit sendiri secara beransur-ansur dari semasa ke semasa.",
-        "Langkah penyejukan sentuhan digunakan semasa rawatan untuk membantu memastikan setiap sesi selesa."
+        "Mesin RF menghantar tenaga haba terkawal ke dalam dermis dan memanaskan tisu dengan lembut. Pemanasan ini bertujuan untuk bertindak pada gentian kolagen sedia ada dan merangsang tindak balas pembaharuan kolagen kulit sendiri secara beransur-ansur dari semasa ke semasa."
       ]
     }
   ],
@@ -209,11 +202,11 @@
     },
     {
       "q": "Rawatan RF perlu buat berapa kali?",
-      "a": "Satu kursus lebih kurang 2 hingga 3 sesi, dijarakkan 4 hingga 6 minggu, adalah biasa, kadangkala diikuti sesi penyelenggaraan setiap 6 hingga 12 bulan."
+      "a": "Satu kursus lebih kurang 2 hingga 3 sesi adalah biasa, kadangkala diikuti sesi penyelenggaraan setiap 6 hingga 12 bulan."
     },
     {
       "q": "Bila saya boleh nampak hasilnya?",
-      "a": "Bukan pada hari yang sama. RF berfungsi dengan memanaskan tisu dan membiarkannya membentuk semula, jadi apa-apa perubahan berkembang secara beransur-ansur dalam beberapa minggu hingga beberapa bulan dan berbeza antara individu."
+      "a": "Apa-apa perubahan berkembang secara beransur-ansur dalam beberapa minggu hingga beberapa bulan dan berbeza antara individu."
     }
   ]
 }

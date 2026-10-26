@@ -5,8 +5,8 @@
   "name": "Urat Merah & Lesi Vaskular",
   "group": "Skin",
   "image": "https://cdn.kaiteki.my/concerns/vascular-lesions/card.jpg",
-  "summary": "Saluran darah yang kelihatan, kemerahan dan kapilari pecah boleh berpunca daripada sebab yang berbeza. Doktor mengenal pasti jenisnya sebelum mencadangkan hala tuju rawatan.",
-  "leadAnswer": "Lesi vaskular ialah saluran darah yang kelihatan atau kawasan kemerahan pada kulit: urat merah halus di muka, spider angioma, cherry angioma dan kemerahan berterusan akibat rosacea. Saluran darah itu mengembang, bukan pecah. Laser vaskular biasa digunakan untuk saluran darah yang cetek; rosacea juga memerlukan kawalan pencetus dan penjagaan kulit, dan urat varikos di kaki memerlukan penilaian vaskular yang berasingan.",
+  "summary": "Saluran darah yang kelihatan, kemerahan dan kapilari pecah boleh berpunca daripada sebab yang berbeza.",
+  "leadAnswer": "Lesi vaskular ialah saluran darah yang kelihatan atau kawasan kemerahan pada kulit: urat merah halus di muka, spider angioma, cherry angioma dan kemerahan berterusan akibat rosacea.",
   "treatments": [
     "vascular-pigment-laser"
   ],
@@ -67,8 +67,7 @@
     {
       "heading": "Apa itu lesi vaskular?",
       "body": [
-        "Lesi vaskular berlaku apabila saluran darah kecil berhampiran permukaan kulit menjadi kelihatan atau mengembang, dan muncul sebagai garisan halus merah atau keunguan, bintik merah kecil, tompok, atau kemerahan yang berterusan. Ia paling kerap berlaku di muka, terutamanya di pipi dan hidung, tetapi boleh muncul di bahagian badan yang lain.",
-        "Pengembangan yang berulang, kerosakan matahari pada tisu penyokong dan kulit yang menipis boleh menyebabkan saluran darah terus mengembang, lalu ia kelihatan melalui kulit sebagai garisan halus atau tompok kemerahan."
+        "Lesi vaskular berlaku apabila saluran darah kecil berhampiran permukaan kulit menjadi kelihatan atau mengembang, dan muncul sebagai garisan halus merah atau keunguan, bintik merah kecil, tompok, atau kemerahan yang berterusan."
       ]
     }
   ],
@@ -78,19 +77,11 @@
     "items": [
       {
         "lead": "Pendedahan matahari:",
-        "body": "cahaya ultraungu melemahkan kolagen yang menyokong saluran darah kecil di lapisan atas kulit, sebab itu urat merah halus berkumpul di pipi dan hidung, bahagian muka yang paling terdedah."
+        "body": "cahaya ultraungu melemahkan kolagen yang menyokong saluran darah kecil di lapisan atas kulit."
       },
       {
         "lead": "Genetik dan jenis kulit:",
         "body": "kecenderungan untuk mempunyai saluran darah yang kelihatan dan muka yang mudah merah selalunya diwarisi dalam keluarga, dan kulit cerah atau nipis menampakkan saluran darah yang berada pada kedalaman yang sama pada kulit lain."
-      },
-      {
-        "lead": "Penuaan kulit:",
-        "body": "apabila kulit menipis dengan usia, saluran darah yang memang sudah ada menjadi lebih mudah dilihat, dan bintik merah kecil di badan menjadi lebih biasa dari usia pertengahan dan seterusnya."
-      },
-      {
-        "lead": "Cuaca panas, alkohol dan makanan pedas:",
-        "body": "apa sahaja yang membuat muka merah berulang kali akan mengembangkan saluran darah berulang kali."
       },
       {
         "lead": "Perubahan hormon:",
@@ -112,12 +103,6 @@
         "sub": "Garisan merah halus",
         "title": "Urat merah di muka dan urat labah-labah",
         "body": "Garisan halus merah atau ungu (telangiektasia), biasanya di pipi, sekitar lubang hidung dan di dagu. Spider angioma ialah corak yang berkaitan: titik merah kecil di tengah dengan saluran darah halus yang memancar ke luar, dan menjadi pucat seketika apabila ditekan.",
-        "items": [
-          {
-            "lead": "Tandanya:",
-            "body": "saluran darah satu per satu yang boleh dijejak dengan hujung jari, dan sentiasa ada, bukan datang dan pergi."
-          }
-        ],
         "routing": "biasanya dinilai untuk laser vaskular."
       },
       {
@@ -125,12 +110,6 @@
         "sub": "Kecil, timbul atau kebiruan",
         "title": "Cherry angioma (bintik merah) dan venous lake",
         "body": "Cherry angioma ialah bintik kecil berwarna merah terang, selalunya sedikit timbul, paling biasa di badan dan lengan dan semakin kerap dengan usia. Venous lake pula ialah bintil lembut berwarna biru gelap atau ungu, biasanya di bibir atau telinga pada kulit yang lebih berusia dan kerap terdedah kepada matahari.",
-        "items": [
-          {
-            "lead": "Tandanya:",
-            "body": "bintik yang jelas sempadannya, bukan garisan atau kemerahan, dan tidak berubah selama berbulan-bulan."
-          }
-        ],
         "routing": "biasanya dinilai untuk laser vaskular setelah doktor berpuas hati bahawa bintik itu memang seperti yang disangka."
       },
       {
@@ -138,12 +117,6 @@
         "sub": "Muka mudah merah, kemerahan bertompok",
         "title": "Kemerahan berterusan dan rosacea",
         "body": "Kemerahan latar di pipi, hidung dan dagu yang bertambah teruk dengan cuaca panas, matahari, alkohol, makanan pedas atau tekanan, kadangkala dengan saluran darah halus yang kelihatan dan, pada sesetengah orang, bintil kecil. Corak ini selalunya sebahagian daripada rosacea.",
-        "items": [
-          {
-            "lead": "Tandanya:",
-            "body": "kemerahan yang datang dan pergi mengikut pencetus, selalunya dengan kulit yang sensitif dan mudah rengsa."
-          }
-        ],
         "routing": "dinilai untuk rawatan perubatan dahulu, dengan laser vaskular dibincangkan untuk saluran darah yang berterusan."
       }
     ]
@@ -154,15 +127,11 @@
     "cards": [
       {
         "title": "Pipi dan hidung",
-        "body": "Tempat paling biasa untuk urat merah halus dan kemerahan meluas, kerana kawasan ini paling banyak terkena matahari dan paling mudah merah. Kemerahan yang tertumpu di sini, dengan pencetus, selalunya menunjukkan rosacea."
+        "body": "Tempat paling biasa untuk urat merah halus dan kemerahan meluas, kerana kawasan ini paling banyak terkena matahari dan paling mudah merah."
       },
       {
         "title": "Dagu dan sekitar mulut",
         "body": "Saluran darah halus di dagu dan di tepi lubang hidung adalah biasa. Kemerahan dengan kulit bersisik atau bintil kecil di sekitar mulut mungkin keadaan kulit yang lain dan dinilai sebagai keadaan itu."
-      },
-      {
-        "title": "Badan dan lengan",
-        "body": "Cherry angioma merah yang kecil berkumpul di sini, selalunya bertambah perlahan-lahan dengan usia. Ia biasanya tidak berbahaya dan dinilai satu per satu."
       },
       {
         "title": "Kaki",
@@ -183,21 +152,19 @@
       "Beberapa spider angioma baharu muncul dalam masa yang singkat. Jika banyak, ia boleh dikaitkan dengan punca hati atau hormon dan patut diperiksa oleh doktor am (GP).",
       "Urat kaki timbul, sakit, bengkak, atau kulit di atasnya berubah warna.",
       "Muka merah disertai rasa panas membakar, pedih, bintil atau mata yang rengsa."
-    ],
-    "outro": "Jika mungkin ada punca perubatan, ia diperiksa dahulu."
+    ]
   },
   "ctaMid": {
     "heading": "Urat merah, bintik merah atau rosacea?",
     "body": "Hantar gambar kepada kami di WhatsApp dan doktor boleh beritahu yang mana paling mungkin."
   },
-  "treatmentsIntro": "Laser vaskular ialah pilihan di klinik untuk saluran darah yang kelihatan di muka dan badan. Sama ada ia sesuai bergantung pada jenis, kedalaman dan tona kulit anda, yang ditentukan melalui penilaian dahulu.",
+  "treatmentsIntro": "Laser vaskular ialah pilihan di klinik untuk saluran darah yang kelihatan di muka dan badan.",
   "treatmentWhy": {
     "vascular-pigment-laser": {
       "why": "Untuk saluran darah mengembang yang kelihatan di permukaan",
-      "body": "Menghantar cahaya yang diserap oleh hemoglobin dalam saluran darah kecil yang cetek, memanaskannya supaya badan boleh membersihkannya secara beransur-ansur. Tetapan dipilih mengikut saiz dan kedalaman saluran darah serta tona kulit anda. Saluran darah yang lebih besar atau lebih dalam, dan urat kaki, mungkin tidak sesuai."
+      "body": "Menghantar cahaya yang diserap oleh hemoglobin dalam saluran darah kecil yang cetek, memanaskannya supaya badan boleh membersihkannya secara beransur-ansur."
     }
   },
-  "treatmentsNote": "Jika kemerahan didorong oleh rosacea, laser menangani saluran darah yang kelihatan tetapi bukan keadaan di sebaliknya. Penjagaan kulit yang lembut, perlindungan matahari setiap hari dan mengawal pencetus anda sendiri ialah sebahagian daripada pelan, dan sesetengah orang memerlukan rawatan preskripsi pada masa yang sama.",
   "results": [
     {
       "src": "https://cdn.kaiteki.my/concerns/vascular-lesions/before-after-01.jpg",
@@ -223,7 +190,7 @@
     "steps": [
       {
         "title": "Sejarah",
-        "body": "Bila saluran darah atau kemerahan itu muncul, sama ada ia datang dan pergi, apa yang memburukkannya, penjagaan kulit dan sebarang ubat anda, serta sejarah perubatan yang berkaitan seperti masalah hati atau hormon."
+        "body": "Bila saluran darah atau kemerahan itu muncul, sama ada ia datang dan pergi, apa yang memburukkannya, dan sebarang ubat yang diambil."
       },
       {
         "title": "Pemeriksaan",
@@ -231,11 +198,11 @@
       },
       {
         "title": "Menolak punca perubatan",
-        "body": "Apa-apa yang berdarah, sedang berubah atau muncul dalam corak yang luar biasa dinilai dahulu, dengan rujukan kepada doktor am (GP) atau doktor pakar jika itu langkah seterusnya yang betul."
+        "body": "Apa-apa yang berdarah, sedang berubah atau nampak luar biasa dinilai dahulu, dengan rujukan jika perlu."
       },
       {
         "title": "Perbincangan dan pelan",
-        "body": "Sama ada laser sesuai, apa yang boleh dan tidak boleh diubahnya untuk jenis anda, apa yang terlibat dalam penjagaan selepas rawatan, dan apa yang perlu dibuat tentang pencetus."
+        "body": "Sama ada laser sesuai untuk jenis anda, dan apa yang perlu dibuat tentang pencetus."
       }
     ],
     "outro": "Datang tanpa solekan pada kawasan yang terjejas jika boleh. Concealer menyembunyikan tepat apa yang doktor perlu lihat."
@@ -266,7 +233,7 @@
       },
       {
         "lead": "Kurang biasa",
-        "body": "Melepuh, berkerak atau, jarang sekali, parut. Mengikut arahan penjagaan selepas rawatan dan mengelakkan matahari pada kawasan yang dirawat mengurangkan risiko ini."
+        "body": "Melepuh, berkerak atau, jarang sekali, parut."
       },
       {
         "lead": "Apa yang rawatan tidak dapat lakukan",
@@ -287,24 +254,16 @@
   },
   "faqs": [
     {
-      "q": "Lesi vaskular boleh dirawat ke?",
-      "a": "Sesetengahnya boleh, bergantung pada jenis, dan hasilnya berbeza antara individu. Urat merah halus di muka, spider angioma dan cherry angioma biasanya dinilai untuk laser vaskular, yang memanaskan saluran darah supaya badan boleh membersihkannya secara beransur-ansur. Kemerahan rosacea diuruskan dalam jangka panjang dengan kawalan pencetus dan penjagaan kulit, dengan laser untuk saluran darah yang kelihatan. Urat kaki yang besar pula memerlukan penilaian vaskular."
-    },
-    {
-      "q": "Kenapa punca muka merah itu penting?",
-      "a": "Kerana kemerahan yang sama boleh berpunca daripada saluran darah yang mengembang, rosacea atau keadaan kulit yang lain, dan setiap satu ditangani secara berbeza: laser menangani saluran darah yang kelihatan, manakala rosacea juga memerlukan kawalan pencetus dan penjagaan kulit. Rosacea bertambah teruk dengan cuaca panas, matahari, alkohol dan tekanan; kemerahan dengan kulit bersisik atau bintil di sekitar mulut mungkin keadaan yang lain."
-    },
-    {
       "q": "Urat merah akan datang balik selepas rawatan?",
-      "a": "Laser tidak mengubah kecenderungan yang menyebabkannya, jadi saluran darah baharu boleh terbentuk dari semasa ke semasa, terutamanya dengan pendedahan matahari, cuaca panas dan pencetus muka merah. Sebab itu perlindungan matahari setiap hari dan penjagaan sekali-sekala selalunya sebahagian daripada pelan."
+      "a": "Laser tidak mengubah kecenderungan yang menyebabkannya, jadi saluran darah baharu boleh terbentuk dari semasa ke semasa, terutamanya dengan pendedahan matahari, cuaca panas dan pencetus muka merah."
     },
     {
       "q": "Kapilari pecah betul-betul pecah ke?",
-      "a": "Tidak. Nama biasa itu mengelirukan: saluran darah itu mengembang, bukan pecah. Ia telah melebar dan terus terbuka, sebab itu ia kelihatan melalui kulit sebagai garisan merah halus. Ini juga sebab ia tidak sembuh dengan sendirinya seperti lebam."
+      "a": "Tidak. Nama biasa itu mengelirukan: saluran darah itu mengembang, bukan pecah. Ini juga sebab ia tidak sembuh dengan sendirinya seperti lebam."
     },
     {
       "q": "Bintik merah di badan tanda masalah serius ke?",
-      "a": "Cherry angioma yang kecil dan merah terang sangat biasa dan tidak berbahaya, dan cenderung bertambah bilangannya dengan usia. Bintik yang berdarah, membesar dengan cepat atau nampak berbeza daripada yang lain perlu diperiksa. Banyak spider angioma yang muncul dalam masa singkat juga patut diperiksa oleh doktor am (GP), kerana kadangkala ia boleh menunjukkan punca hati atau hormon."
+      "a": "Cherry angioma yang kecil dan merah terang sangat biasa dan tidak berbahaya, dan cenderung bertambah bilangannya dengan usia. Bintik yang berdarah, membesar dengan cepat atau nampak berbeza daripada yang lain perlu diperiksa."
     },
     {
       "q": "Rosacea sama dengan lesi vaskular ke?",
@@ -312,11 +271,11 @@
     },
     {
       "q": "Urat labah-labah dan urat timbul di kaki boleh dirawat dengan cara yang sama ke?",
-      "a": "Urat labah-labah yang halus di kaki kadangkala boleh dirawat dengan laser, tetapi ia dinilai secara berbeza daripada saluran darah di muka. Urat yang lebih besar, timbul atau sakit ialah urat varikos, yang melibatkan sistem vena yang lebih dalam dan memerlukan penilaian vaskular, bukan laser kosmetik."
+      "a": "Urat labah-labah halus di kaki kadangkala boleh dirawat dengan laser, tetapi ia dinilai secara berbeza daripada saluran darah di muka."
     },
     {
       "q": "Laser vaskular sesuai ke untuk kulit gelap atau sawo matang?",
-      "a": "Boleh, dengan berhati-hati. Kulit yang lebih gelap mengandungi lebih banyak pigmen yang juga menyerap cahaya laser, dan ini meningkatkan risiko perubahan pigmen. Doktor menyelaraskan tetapan mengikut tona kulit anda dan akan berterus terang jika keseimbangan antara manfaat dan risiko tidak menyokong rawatan."
+      "a": "Boleh, dengan berhati-hati. Kulit yang lebih gelap mengandungi lebih banyak pigmen yang juga menyerap cahaya laser, dan ini meningkatkan risiko perubahan pigmen."
     }
   ],
   "relatedConcerns": [

@@ -77,6 +77,8 @@ export function treatmentToc(
   hasRelatedConcerns = false,
   labels: TreatmentTocLabels = EN_LABELS,
   anchorSource: Treatment = t,
+  /** The results block's h2, when the page shows one (it renders first). */
+  resultsText?: string,
 ): Heading[] {
   const h = (id: string, text: string): Heading => ({ id, text, level: 2 });
   const L = labels;
@@ -84,6 +86,7 @@ export function treatmentToc(
   const anchors = treatmentSectionAnchors(t, anchorSource);
 
   const entries: (Heading | false | undefined | 0)[] = [
+    !!resultsText && h("results", resultsText),
     ...(t.sections ?? []).map((s, i) => h(anchors[i], s.heading)),
     t.routes?.length
       ? h("what-it-treats", n(L.routesTitle))

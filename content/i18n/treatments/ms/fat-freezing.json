@@ -55,7 +55,7 @@
     },
     {
       "title": "Lemak setempat di bawah dagu (dagu berlapis)",
-      "body": "Penyejukan terkawal pada lemak setempat di bawah dagu, hanya relevan jika kepenuhan itu memang lemak.",
+      "body": "Hanya relevan jika kepenuhan di bawah dagu itu memang lemak.",
       "links": [
         {
           "href": "/concerns/face-contouring",
@@ -64,10 +64,9 @@
       ]
     }
   ],
-  "routesNote": "Ia ditujukan untuk orang yang berada pada atau hampir dengan berat badan yang stabil, dengan lemak setempat di kawasan tertentu, bukan untuk berat badan keseluruhan yang perlu diturunkan.",
   "variantModule": {
     "heading": "Cooltech atau CoolSculpting: mesin mana, dan kenapa",
-    "intro": "Kedua-duanya mesin kriolipolisis yang berfungsi dengan prinsip yang sama. Perbezaannya pada reka bentuk aplikator, dan doktor yang memilih mesin serta aplikator untuk kawasan anda.",
+    "intro": "Kedua-duanya mesin kriolipolisis yang berfungsi dengan prinsip yang sama. Perbezaannya pada reka bentuk aplikator.",
     "items": [
       {
         "eyebrow": "Penyejukan 360° · Cocoon Medical",
@@ -79,7 +78,7 @@
       {
         "eyebrow": "Kriolipolisis · CoolSculpting",
         "title": "CoolSculpting",
-        "body": "Aplikator menarik kawasan sasaran rapat pada plat penyejuk, dan setiap kitaran biasanya mengambil masa kira-kira 35 hingga 60 minit.",
+        "body": "Aplikator menarik kawasan sasaran rapat pada plat penyejuk.",
         "href": "/technology/coolsculpting",
         "hrefLabel": "Tentang CoolSculpting"
       }
@@ -111,11 +110,10 @@
       "body": "yang akan diterangkan oleh doktor kepada anda."
     }
   ],
-  "bringToConsult": "Bawa sejarah perubatan anda, senarai ubat, sebarang implan atau peranti, dan butiran prosedur membentuk badan yang pernah dibuat sebelum ini.",
   "sessionSteps": [
     {
       "title": "Konsultasi dan penilaian",
-      "body": "Lawatan pertama anda ialah konsultasi, bukan rawatan. Doktor memeriksa sama ada lemak di kawasan itu boleh ditarik masuk ke dalam aplikator."
+      "body": "Doktor memeriksa sama ada lemak di kawasan itu boleh ditarik masuk ke dalam aplikator."
     },
     {
       "title": "Persediaan",
@@ -131,7 +129,7 @@
     }
   ],
   "afterSession": {
-    "intro": "Downtime biasanya terhad, dan kebanyakan orang kembali kepada aktiviti harian selepas sesi.",
+    "intro": "",
     "bands": [
       {
         "title": "Sejurus selepas rawatan",
@@ -140,18 +138,14 @@
       {
         "title": "Minggu-minggu pertama",
         "body": "Rasa sengal, bengkak, kesemutan atau sakit tumpul sementara di kawasan yang dirawat boleh berlarutan beberapa hari hingga satu atau dua minggu, dan sesetengah orang lebih selesa memakai pakaian longgar atau pakaian mampatan dalam tempoh itu."
-      },
-      {
-        "title": "Beberapa minggu hingga bulan",
-        "body": "Sebarang perubahan berlaku secara beransur-ansur, kerana badan menyingkirkan sel yang dirawat dalam beberapa minggu berikutnya dan bukan semasa temu janji, jadi ia biasanya dinilai kira-kira dua bulan kemudian, bukan serta-merta."
       }
     ],
     "aftercare": "Kekalkan berat badan yang stabil dengan pemakanan dan aktiviti biasa anda."
   },
   "risks": {
-    "intro": "Kriolipolisis ada risikonya, dan doktor akan menerangkannya sebelum apa-apa rawatan ditempah.",
+    "intro": "",
     "common": "Kemerahan, bengkak, lebam, rasa keras, kebas, kesemutan, gatal atau kejang di kawasan yang dirawat, serta perubahan deria pada kulit yang mungkin mengambil masa beberapa minggu untuk kembali normal.",
-    "lessCommon": "Sakit yang berlarutan di kawasan yang dirawat, dan hiperplasia adipos paradoks, di mana lemak setempat yang dirawat menjadi keras dan membesar dan bukannya mengecil. Kesan serius jarang berlaku apabila rawatan dipilih dengan betul dan dijalankan oleh doktor yang terlatih.",
+    "lessCommon": "Sakit yang berlarutan di kawasan yang dirawat, dan hiperplasia adipos paradoks, di mana lemak setempat yang dirawat menjadi keras dan membesar dan bukannya mengecil.",
     "pigmentNote": "Ia bertindak pada lemak di bawah kulit, bukan pada pigmen, jadi warna kulit kurang penting berbanding rawatan laser. Ketebalan dan taburan lemak di kawasan itu lebih penting.",
     "cannotDo": [
       "Ia bukan rawatan menurunkan berat badan, bukan rawatan obesiti, dan tidak menggantikan pemakanan, senaman atau pengurusan berat badan secara perubatan.",
@@ -175,15 +169,14 @@
     {
       "heading": "Apa itu fat freezing?",
       "body": [
-        "Fat freezing ialah nama harian untuk kriolipolisis, iaitu pendekatan tanpa pembedahan yang menggunakan penyejukan terkawal untuk menyasarkan lemak setempat di kawasan tertentu pada badan. \"Fat freezing\" menggambarkan kaedahnya, bukan satu mesin tertentu, dan beberapa mesin berfungsi dengan prinsip kriolipolisis yang sama.",
-        "Ia ditujukan untuk lemak degil setempat di kawasan yang jelas, bukan untuk menurunkan berat badan secara keseluruhan."
+        "Fat freezing ialah nama harian untuk kriolipolisis, iaitu pendekatan tanpa pembedahan yang menggunakan penyejukan terkawal untuk menyasarkan lemak setempat di kawasan tertentu pada badan."
       ]
     },
     {
       "heading": "Kenapa penyejukan memberi kesan pada lemak dan bukan pada kulit di sekelilingnya?",
       "body": [
         "Kriolipolisis berdasarkan idea bahawa sel lemak lebih sensitif terhadap sejuk berbanding kulit, saraf dan otot di sekelilingnya. Semasa sesi, aplikator menyejukkan kawasan yang ditetapkan pada suhu rendah yang terkawal untuk tempoh tertentu.",
-        "Tujuannya ialah memberi kesan pada sel lemak dalam lemak setempat yang dirawat sambil mengehadkan kesan pada tisu berdekatan. Badan kemudian menyingkirkan sel yang terjejas secara beransur-ansur dalam beberapa minggu berikutnya."
+        "Tujuannya ialah memberi kesan pada sel lemak dalam lemak setempat yang dirawat sambil mengehadkan kesan pada tisu berdekatan."
       ]
     }
   ],
@@ -198,7 +191,7 @@
     },
     {
       "q": "Perlu buat fat freezing berapa sesi?",
-      "a": "Ia bergantung pada kawasan, jumlah lemak setempat dan tindak balas anda, yang dinilai semula kira-kira dua bulan selepas setiap sesi."
+      "a": "Ia bergantung pada kawasan, jumlah lemak setempat dan tindak balas anda."
     },
     {
       "q": "Bila saya mungkin mula nampak perubahan?",

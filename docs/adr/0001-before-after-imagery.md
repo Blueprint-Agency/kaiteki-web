@@ -84,3 +84,29 @@ never uploaded. Files belonging to no concern page take a `parked/` key rather t
   concluding it is a bug.
 - Reversing this decision means deleting the `results` field from the affected concerns and
   the objects under the `concerns/` prefix; nothing else depends on it.
+
+## 6. Amendment, 2026-10-26: treatment pages, and placement
+
+**Instruction:** the project owner asked that every concern *and* treatment page show
+before/after photos, placed high on the page rather than near the bottom.
+
+- **Placement.** The results block now renders directly under the "In brief" lead answer on
+  both templates, as one swipeable row of fixed height (`ResultsGallery`), so a 17-image set
+  does not push the rest of the page down. Captions stay visible under every image (§3.1) and
+  the disclaimer still renders with the block (§3.2).
+- **Treatment pages.** No result is filed by treatment (`docs/13` §3.3), so a treatment page
+  shows the photographs of the concerns it is listed for (`resultsOfTreatment` in
+  `content/data/relations.ts`, up to 10, dealt round-robin). The intro names those concerns
+  and states that a plan may combine more than one treatment: **no image is credited to the
+  treatment whose page it appears on**, because nobody has recorded which treatment produced
+  it. Crediting one would be an unsubstantiated efficacy claim. If the clinic re-files results
+  by treatment, author them on the treatment record and drop the derivation.
+- **Concerns without their own set** (melasma) borrow the first related concern's photographs
+  (`resultsOfConcern`), and the intro names that concern ("…treated at Kaiteki for
+  pigmentation"). The images are never relabelled as the borrowing concern's.
+- **No set at all.** `double-eyelid` and `laser-hair-removal` are listed on no concern, and the
+  only double-eyelid composites (`ba_doubleeyelidsuture_01`, `img_ba_doubleeyelidsuture_01`)
+  are parked and not on the CDN (`docs/11` §3). Those two pages render no results until the
+  clinic supplies cleared images.
+- §5 applies to the new placements unchanged: the MAB-adviser review now covers treatment
+  pages as well.

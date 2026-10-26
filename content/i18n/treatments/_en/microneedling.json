@@ -13,7 +13,7 @@
   ],
   "device": "Potenza",
   "summary": "A radiofrequency (RF) microneedling treatment used for texture, scarring and pore concerns.",
-  "leadAnswer": "Microneedling at Kaiteki is usually radiofrequency (RF) microneedling: fine needles deliver radiofrequency energy at set depths to prompt a controlled skin-renewal response. It is commonly considered for texture, acne scarring and enlarged pores. The doctor chooses one of three devices and sets needle depth and energy for each area after assessing your skin.",
+  "leadAnswer": "Microneedling at Kaiteki is usually radiofrequency (RF) microneedling: fine needles deliver radiofrequency energy at set depths to prompt a controlled skin-renewal response. The doctor chooses one of three devices and sets needle depth and energy for each area after assessing your skin.",
   "related": [
     "pico-laser",
     "skin-booster"
@@ -40,7 +40,7 @@
   "routes": [
     {
       "title": "Depressed scarring, texture and enlarged pores",
-      "body": "Fine needles deliver radiofrequency energy into the deeper layer of the skin to stimulate collagen. Often the starting point for rolling and boxcar scarring.",
+      "body": "Often the starting point for rolling and boxcar scarring.",
       "links": [
         {
           "href": "/concerns/acne-scars",
@@ -67,10 +67,9 @@
       ]
     }
   ],
-  "routesNote": "Different scar types respond differently, and some are combined with other treatments rather than treated with RF microneedling alone.",
   "variantModule": {
     "heading": "Morpheus8, Sylfirm X or Potenza: which device, and why",
-    "intro": "Kaiteki offers three RF microneedling devices with different reach and RF modes. The doctor matches the device and settings to your concern and skin.",
+    "intro": "Kaiteki offers three RF microneedling devices with different reach and RF modes.",
     "items": [
       {
         "eyebrow": "Subdermal reach · InMode",
@@ -125,11 +124,11 @@
       "body": ""
     }
   ],
-  "bringToConsult": "Bring your medical, medication and skincare history. Recently tanned or sunburnt skin may mean postponing.",
+  "bringToConsult": "Recently tanned or sunburnt skin may mean postponing.",
   "sessionSteps": [
     {
       "title": "Consultation and assessment",
-      "body": "Your first visit is a consultation, not a treatment. A doctor reviews your skin and medical history and chooses the device and settings."
+      "body": "A doctor reviews your skin and medical history and chooses the device and settings."
     },
     {
       "title": "Numbing",
@@ -137,15 +136,15 @@
     },
     {
       "title": "The treatment",
-      "body": "The procedure itself usually takes around 20 to 40 minutes, depending on the area and settings. Needle depth, energy level and pattern are adjusted to your skin, and many people describe the sensation as mild heat and pressure."
+      "body": "Needle depth, energy level and pattern are adjusted to your skin, and many people describe the sensation as mild heat and pressure."
     },
     {
       "title": "Afterwards",
-      "body": "The skin is cooled and soothed, and you are given aftercare guidance. Sessions are usually spaced a few weeks apart."
+      "body": "The skin is cooled and soothed, and you are given aftercare guidance."
     }
   ],
   "afterSession": {
-    "intro": "Downtime varies between individuals, and with the depth and energy used.",
+    "intro": "",
     "bands": [
       {
         "title": "The first one to two days",
@@ -154,18 +153,14 @@
       {
         "title": "The following days",
         "body": "Some dryness or light flaking afterwards can be normal. Deeper settings can leave the skin flushed and tender for slightly longer, and pinpoint scabs can occur."
-      },
-      {
-        "title": "Between sessions",
-        "body": "The skin's repair and collagen-remodelling response builds over time, which is why the course is spaced a few weeks apart and reviewed as it goes."
       }
     ],
     "aftercare": "Sun protection and gentle skincare while the skin settles, with retinoids and acids usually paused for a short period."
   },
   "risks": {
-    "intro": "Because the needles penetrate the skin, RF microneedling carries risks, which the doctor goes through before anything is booked.",
+    "intro": "",
     "common": "Redness, swelling, sensitivity, dryness, pinpoint bruising or scabbing, and temporary changes in skin appearance.",
-    "lessCommon": "Infection, prolonged pigment change or scarring. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor.",
+    "lessCommon": "Infection, prolonged pigment change or scarring.",
     "pigmentNote": "Radiofrequency is not absorbed by melanin the way laser light is, so RF microneedling is used across a broad range of skin tones, including deeper Asian skin. Temporary pigment change is still possible, particularly with deeper settings or poor sun protection afterwards.",
     "cannotDo": [
       "It is not a substitute for surgery where there is significant sagging or excess skin.",
@@ -185,14 +180,14 @@
     ]
   },
   "relatedReasons": {
-    "pico-laser": "A picosecond laser used for pigmentation, dull skin tone and tattoo removal, where the concern is pigment rather than texture or scarring.",
+    "pico-laser": "Considered where the concern is pigment rather than texture or scarring.",
     "skin-booster": "Injectable hydrating treatments used to support skin quality and hydration, where an injectable rather than a device is the route."
   },
   "sections": [
     {
       "heading": "What is RF microneedling?",
       "body": [
-        "RF microneedling refers to a group of treatments that combine traditional microneedling with radiofrequency (RF) energy. Fine needles create controlled micro-channels in the skin while RF energy is delivered through those needles at set depths."
+        "RF microneedling refers to a group of treatments that combine traditional microneedling with radiofrequency (RF) energy."
       ]
     },
     {
@@ -205,19 +200,19 @@
   "faqs": [
     {
       "q": "Which device is right for me: Morpheus8, Sylfirm X or Potenza?",
-      "a": "As a general guide, Morpheus8 is associated with deeper skin tightening, Sylfirm X with pigment and redness, and Potenza with scarring and pores. The doctor chooses after examining your skin."
+      "a": "As a general guide, Morpheus8 is associated with deeper skin tightening, Sylfirm X with pigment and redness, and Potenza with scarring and pores."
     },
     {
       "q": "Is RF microneedling painful?",
-      "a": "Numbing cream is applied first, and many people describe the sensation as mild heat and pressure."
+      "a": "Numbing cream is applied first."
     },
     {
       "q": "Is there any downtime?",
-      "a": "Some redness for one to two days is common, and mild dryness or flaking can follow. Deeper settings can mean slightly longer."
+      "a": "Some redness for one to two days is common, and mild dryness or flaking can follow."
     },
     {
       "q": "How many sessions will I need?",
-      "a": "Usually a course of sessions spaced a few weeks apart. The number is set for your concern after assessment and reviewed as the course goes."
+      "a": "Usually a course of sessions spaced a few weeks apart."
     }
   ]
 }

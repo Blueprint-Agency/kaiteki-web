@@ -26,8 +26,9 @@ import type { Concern, ConcernVariant } from "@/lib/types";
 import type { Treatment } from "@/lib/types";
 import { concernUi, type ConcernUi } from "@/content/i18n/concern-ui";
 import { term } from "@/content/i18n/terms";
+import { fmt } from "@/content/i18n/chrome";
 import { lhref } from "@/lib/locale-pages";
-import type { Locale } from "@/lib/i18n";
+import { localeMeta, type Locale } from "@/lib/i18n";
 
 const EN_UI = concernUi.en;
 
@@ -94,12 +95,33 @@ function IllustrationGroups({ items }: { items: NonNullable<Concern["illustratio
  * opens fullscreen. The disclaimer renders from its single shared source with
  * every gallery (ADR-0001 §2, gate rule Q-18).
  */
+/** "Before and after photos of patients treated … for acne and pigmentation."
+ *  `mixed` adds that a plan may combine treatments, for a treatment page, which
+ *  shows its concerns' photographs and must not credit them to itself. */
+export function resultsIntro(
+  from: { slug: string; name: string }[],
+  { ui = EN_UI, locale = "en", mixed = false }: { ui?: ConcernUi; locale?: Locale; mixed?: boolean } = {},
+) {
+  if (!from.length) return undefined;
+  // Names are title case; mid-sentence they are common nouns. Only Title-case
+  // words drop the capital, so "V" or "RF" survive (Chinese has no case).
+  const names = from.map((c) =>
+    term(locale, "concern", c.slug, c.name).replace(/\b([A-Z])([a-z]+)\b/g, (_, a, b) => a.toLowerCase() + b),
+  );
+  const list = new Intl.ListFormat(localeMeta[locale].bcp47, { type: "conjunction" }).format(names);
+  const line = fmt(ui.resultsFrom, { concerns: list });
+  return mixed ? `${line} ${ui.resultsMixed}` : line;
+}
+
 export function ResultsBlock({
   items,
+  intro,
   ui = EN_UI,
   locale = "en",
 }: {
   items?: Concern["results"];
+  /** Whose photographs these are, when they are not the page's own. */
+  intro?: string;
   ui?: ConcernUi;
   locale?: Locale;
 }) {
@@ -109,8 +131,18 @@ export function ResultsBlock({
       <h2 className="h-section">
         {resultsHeading(items, { illustrated: ui.resultsIllustrated, patients: ui.resultsPatients })}
       </h2>
-      <ResultsGallery items={items} labels={{ prev: ui.prevImage, next: ui.nextImage, larger: ui.viewLarger }} />
-      <div className="mt-10 max-w-[70ch]">
+      {intro && <p className="mt-5 max-w-[62ch] leading-relaxed text-ink-700">{intro}</p>}
+      <ResultsGallery
+        items={items}
+        labels={{
+          prev: ui.prevImage,
+          next: ui.nextImage,
+          larger: ui.viewLarger,
+          hint: ui.resultsHint,
+          close: ui.close,
+        }}
+      />
+      <div className="mt-6 max-w-[70ch]">
         <ResultsDisclaimer locale={locale} />
       </div>
     </Section>

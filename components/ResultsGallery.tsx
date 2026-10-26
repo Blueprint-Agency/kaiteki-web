@@ -8,21 +8,31 @@ import { ArrowRight } from "@/components/icons";
 type Item = NonNullable<Concern["results"]>[number];
 
 /**
- * The results grid, with a fullscreen viewer. Thumbnails are capped at the
- * column width, and the composited before/after pair is the thing a visitor
- * actually wants to look at closely, so each one opens in a native <dialog>
- * with left/right paging. Keyboard: arrows page, Escape closes (free with
- * <dialog>).
+ * The results row, with a fullscreen viewer. The section sits near the top of
+ * the page, so it is one swipeable row of fixed height rather than a grid: a
+ * 17-image grid there would push everything else a dozen screens down. The
+ * composited before/after pair is the thing a visitor actually wants to look at
+ * closely, so each one opens in a native <dialog> with left/right paging.
+ * Keyboard: arrows page, Escape closes (free with <dialog>).
  */
 export function ResultsGallery({
   items,
-  labels = { prev: "Previous image", next: "Next image", larger: "View larger: {caption}" },
+  labels = {
+    prev: "Previous image",
+    next: "Next image",
+    larger: "View larger: {caption}",
+    hint: "{n} photos · tap one to enlarge",
+    close: "Close",
+  },
 }: {
   items: Item[];
-  labels?: { prev: string; next: string; larger: string };
+  labels?: { prev: string; next: string; larger: string; hint: string; close: string };
 }) {
   const [open, setOpen] = useState<number | null>(null);
   const ref = useRef<HTMLDialogElement>(null);
+  const row = useRef<HTMLUListElement>(null);
+  const scroll = (d: number) =>
+    row.current?.scrollBy({ left: d * row.current.clientWidth * 0.8, behavior: "smooth" });
 
   const step = useCallback(
     (d: number) => setOpen((i) => (i === null ? i : (i + d + items.length) % items.length)),
@@ -40,20 +50,36 @@ export function ResultsGallery({
 
   return (
     <>
-      {/* Composited before/after pairs: one per row on a phone, two-up from
-          sm. Any smaller and each half of the pair is too small to read. */}
-      <ul className="mt-10 grid gap-x-6 gap-y-9 sm:grid-cols-2">
+      <div className="mt-6 flex items-center justify-between gap-4">
+        <p className="text-sm text-ink-500">{labels.hint.replace("{n}", String(items.length))}</p>
+        {/* Arrows for a mouse, which has no sideways swipe. Hidden when one
+            image fits, as there is nothing to page to. */}
+        {items.length > 1 && (
+          <div className="hidden gap-2 sm:flex">
+            <RowPager label={labels.prev} onClick={() => scroll(-1)} back />
+            <RowPager label={labels.next} onClick={() => scroll(1)} />
+          </div>
+        )}
+      </div>
+      {/* Fixed height, width from each pair's ratio. 200px on a phone and 288px
+          from sm are both under every source's native height, so nothing here
+          is upscaled (ADR-0001 §5); the cap on width holds that for the
+          narrowest phones too. */}
+      <ul
+        ref={row}
+        className="mt-4 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 sm:gap-5"
+      >
         {items.map((r, i) => (
-          <li key={r.src}>
+          <li key={r.src} className="shrink-0 snap-start">
             <button
               type="button"
               onClick={() => setOpen(i)}
               aria-label={labels.larger.replace("{caption}", r.caption)}
-              className="group block w-full cursor-zoom-in"
+              className="group block cursor-zoom-in"
             >
               <div
-                className="relative overflow-hidden rounded-lg bg-tint ring-1 ring-hairline transition-colors group-hover:ring-mocha"
-                style={{ aspectRatio: r.ratio, maxWidth: r.nativeWidth }}
+                className="relative h-[12.5rem] max-w-[85vw] overflow-hidden rounded-lg bg-tint ring-1 ring-hairline transition-colors group-hover:ring-mocha sm:h-72"
+                style={{ aspectRatio: r.ratio }}
               >
                 {/* `object-contain`, not cover: the file is a composited pair,
                     and any drift between the declared ratio and the source
@@ -63,12 +89,15 @@ export function ResultsGallery({
                   src={r.src}
                   alt=""
                   fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 440px"
+                  sizes="(max-width: 640px) 85vw, 500px"
                   className="object-contain"
                 />
               </div>
             </button>
-            <p className="mt-2.5 max-w-[48ch] text-sm leading-snug text-ink-500">{r.caption}</p>
+            {/* Every result carries its caption (ADR-0001 §3.1). `w-0
+                min-w-full` wraps it to the image's width instead of letting
+                it widen the card. */}
+            <p className="mt-2.5 w-0 min-w-full text-sm leading-snug text-ink-500">{r.caption}</p>
           </li>
         ))}
       </ul>
@@ -110,13 +139,35 @@ export function ResultsGallery({
                 onClick={() => setOpen(null)}
                 className="ml-2 rounded-full border border-ink-on-dark/40 px-4 py-2 text-sm text-ink-on-dark hover:border-ink-on-dark"
               >
-                Close
+                {labels.close}
               </button>
             </div>
           </div>
         )}
       </dialog>
     </>
+  );
+}
+
+/** The row's arrows, on page ground — `Pager` is the viewer's, on espresso. */
+function RowPager({
+  label,
+  onClick,
+  back = false,
+}: {
+  label: string;
+  onClick: () => void;
+  back?: boolean;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-label={label}
+      className="flex size-10 items-center justify-center rounded-full border border-hairline text-ink-700 transition-colors hover:border-mocha hover:text-espresso"
+    >
+      <ArrowRight size={16} className={back ? "rotate-180" : undefined} />
+    </button>
   );
 }
 

@@ -3,7 +3,7 @@
   "name": "Fine Lines & Wrinkles",
   "group": "Face",
   "image": "https://cdn.kaiteki.my/concerns/fine-lines-wrinkles/card.jpg",
-  "summary": "Lines that appear when you move and lines that stay at rest need different approaches. A doctor assesses which type you have before recommending treatment.",
+  "summary": "Lines that appear when you move and lines that stay at rest need different approaches.",
   "leadAnswer": "Fine lines and wrinkles come from three sources: muscle movement folding the skin (dynamic lines), the skin itself thinning with age and sun (static lines), and lost volume creating folds. Each is approached differently: muscle-relaxing injection for dynamic lines, collagen-stimulating treatment for static ones, and support above the fold for volume loss.",
   "treatments": [
     "hifu",
@@ -67,8 +67,7 @@
     {
       "heading": "What are fine lines and wrinkles?",
       "body": [
-        "Fine lines and wrinkles are creases that form in the skin over time. Expression lines appear with movement, smiling, squinting or frowning, and are linked to how the face moves, often showing around the eyes, forehead and mouth.",
-        "Static wrinkles are lines that remain visible even when the face is at rest. They tend to develop gradually as the skin's collagen and elastin change with age and sun exposure."
+        "Fine lines and wrinkles are creases that form in the skin over time. Expression lines appear with movement, smiling, squinting or frowning, and are linked to how the face moves, often showing around the eyes, forehead and mouth."
       ]
     }
   ],
@@ -78,27 +77,27 @@
     "items": [
       {
         "lead": "Repeated expression:",
-        "body": "smiling, squinting and raising the brows fold the skin in the same place thousands of times. Crow's feet and forehead lines start here; the skin around the eyes is the thinnest on the face, so it shows this earliest."
+        "body": "smiling, squinting and raising the brows fold the skin in the same place thousands of times. Crow's feet and forehead lines start here."
       },
       {
         "lead": "Frowning and concentration:",
-        "body": "the vertical glabellar lines between the brows come from the muscles that pull them together. Screen work, bright sun and reading without the right glasses all encourage it."
+        "body": "the vertical glabellar lines between the brows come from the muscles that pull them together."
       },
       {
         "lead": "Pursing and lip movement:",
-        "body": "fine vertical perioral lines around the mouth come from the circular muscle in the lips. Smoking accelerates them considerably, both mechanically and through its effect on collagen."
+        "body": "fine vertical perioral lines around the mouth come from the circular muscle in the lips."
       },
       {
         "lead": "Volume loss and gravity:",
-        "body": "marionette lines running from the mouth corners toward the chin deepen as support in the mid-face is lost and tissue settles. The line is a fold rather than a crease in the skin."
+        "body": "marionette lines running from the mouth corners toward the chin deepen as support in the mid-face is lost and tissue settles."
       },
       {
         "lead": "Collagen decline and sun damage:",
-        "body": "static wrinkles present at rest reflect the skin's own structure thinning. UV exposure is the single largest accelerator, which is why sun-exposed skin ages visibly faster than skin that is covered."
+        "body": "static wrinkles present at rest reflect the skin's own structure thinning. UV exposure is the single largest accelerator."
       },
       {
         "lead": "Sleep position:",
-        "body": "sleeping face-down or consistently on one side presses the skin into the same folds for hours each night. Sleep lines are typically diagonal and asymmetric, which is what distinguishes them."
+        "body": "sleeping face-down or consistently on one side presses the skin into the same folds for hours each night."
       },
       {
         "lead": "Neck posture and exposure:",
@@ -110,34 +109,24 @@
   "variant": {
     "kind": "tabs",
     "heading": "Which type do I have?",
-    "intro": "One test separates most of this. Look in a mirror with your face completely relaxed, then make the expression that produces the line. What the line does between those two states decides how it is treated.",
+    "intro": "One test separates most of this. Look in a mirror with your face completely relaxed, then make the expression that produces the line.",
     "tabs": [
       {
         "label": "Dynamic",
         "sub": "Only when you move",
         "title": "Dynamic lines",
-        "body": "Lines that appear when you make an expression and vanish when your face relaxes. They are produced by muscle folding the skin above it, and the skin itself is still intact. This is the earliest stage, and the one where treatment is most straightforward.",
-        "items": [
-          {
-            "lead": "The tell:",
-            "body": "gone entirely at rest, obvious on movement. Crow's feet, forehead lines and frown lines usually begin here."
-          }
-        ],
+        "body": "Lines that appear when you make an expression and vanish when your face relaxes. They are produced by muscle folding the skin above it, and the skin itself is still intact.",
         "routing": "commonly assessed for muscle-relaxing injection, with attention to skin quality alongside it."
       },
       {
         "label": "Static",
         "sub": "Visible at rest",
         "title": "Static lines",
-        "body": "Lines still present when your face is completely relaxed. The skin has been folded often enough, or has thinned enough, that the crease persists. Sun damage and collagen loss are usually part of the picture rather than muscle alone.",
+        "body": "Lines still present when your face is completely relaxed. The skin has been folded often enough, or has thinned enough, that the crease persists.",
         "items": [
           {
             "lead": "The tell:",
             "body": "you can see it with a still face, and stretching the skin gently reduces it."
-          },
-          {
-            "lead": "What it means for treatment:",
-            "body": "relaxing the muscle alone will soften it but not remove it, because part of the line now lives in the skin."
           }
         ],
         "routing": "assessed for skin-directed treatment such as resurfacing or collagen stimulation, often combined with muscle treatment."
@@ -146,15 +135,11 @@
         "label": "Fold",
         "sub": "Made by lost support",
         "title": "Volume-related folds",
-        "body": "Deeper creases such as nasolabial folds and marionette lines, which are not really wrinkles at all. They mark where tissue has descended or deflated, creating a shadowed junction between two areas of the face rather than a crease in the skin surface.",
+        "body": "Deeper creases such as nasolabial folds and marionette lines, which are not really wrinkles at all. They mark where tissue has descended or deflated.",
         "items": [
           {
             "lead": "The tell:",
             "body": "lying down softens it considerably, and lifting the cheek gently with a fingertip reduces the fold."
-          },
-          {
-            "lead": "The common mistake:",
-            "body": "treating the fold directly rather than the loss above it, which adds weight to an area that is already heavy."
           }
         ],
         "routing": "assessed for support placed where volume was lost, rather than product placed into the line itself."
@@ -165,12 +150,9 @@
     "intro": "There is no threshold at which lines need treating. It is worth an assessment if:",
     "triggers": [
       "Lines that used to appear only on movement are now visible when your face is at rest.",
-      "You are unsure whether what you are seeing is a wrinkle or a fold from lost volume.",
-      "You are considering treatment for the first time and want a conservative, staged plan rather than a package.",
       "You have had treatment elsewhere and were unhappy with how it looked.",
       "A crease is red, scaly, itchy or bleeding, or the skin has changed texture rather than folded: that needs examining, not cosmetic treatment."
-    ],
-    "outro": "A dynamic line is simpler to address than a static one. That is a reason to understand your options, not to start before you want to."
+    ]
   },
   "ctaMid": {
     "heading": "Wrinkle or fold?",
@@ -180,19 +162,19 @@
   "treatmentWhy": {
     "botulinum-toxin": {
       "why": "For lines that appear when you move",
-      "body": "Relaxes the specific muscle folding the skin, so the line forms less forcefully. Most relevant on dynamic forehead, frown and crow's-feet lines. Temporary, and repeated periodically. Dose and placement are what separate a natural result from a frozen one."
+      "body": "Relaxes the specific muscle folding the skin, so the line forms less forcefully. Temporary, and repeated periodically."
     },
     "dermal-fillers": {
       "why": "For folds held open by lost volume",
-      "body": "Placed to restore support where the face has flattened, rather than into the crease itself. Most relevant for nasolabial and marionette folds."
+      "body": "Placed to restore support where the face has flattened, rather than into the crease itself."
     },
     "skin-booster": {
       "why": "For fine crepe lines and surface dryness",
-      "body": "Injectable hydration that improves the quality and light-reflection of the skin rather than filling any single line. Considered where fine crepiness across an area, rather than one crease, is what you are noticing."
+      "body": "Injectable hydration that improves the quality and light-reflection of the skin rather than filling any single line."
     },
     "microneedling": {
       "why": "For etched lines and overall texture",
-      "body": "Fine needles with radiofrequency energy stimulate collagen through the deeper skin. Considered for static lines and general texture, and generally a lower pigmentation-risk option for medium and deeper skin tones."
+      "body": "Fine needles with radiofrequency energy stimulate collagen through the deeper skin."
     },
     "resurfacing-laser": {
       "why": "For deeper static lines around the mouth",
@@ -200,14 +182,14 @@
     },
     "hifu": {
       "why": "For laxity that deepens the folds",
-      "body": "Focused ultrasound aimed at firmness beneath the skin. Considered where folds are being deepened by descent, so the useful target is the support above the line rather than the line itself."
+      "body": "Focused ultrasound aimed at firmness beneath the skin."
     },
     "ultherapy": {
       "why": "For lifting that softens the fold above it",
       "body": "The same principle with ultrasound imaging to guide delivery. Relevant where the doctor wants to see the tissue planes while treating, particularly around the brow and lower face."
     }
   },
-  "treatmentsNote": "Combinations are the norm rather than the exception, because most faces carry dynamic lines, static lines and folds at once. Sequence matters: relaxing the muscle first often shows how much of a line was actually etched into the skin.",
+  "treatmentsNote": "Sequence matters: relaxing the muscle first often shows how much of a line was actually etched into the skin.",
   "compare": {
     "intro": "A general guide. Most plans combine approaches; sessions are set after assessment.",
     "columns": [
@@ -286,7 +268,7 @@
     "steps": [
       {
         "title": "History",
-        "body": "What you have noticed and how long ago, any previous injectables or laser treatment, your skincare, sun habits, whether you smoke, and any medical history or medication."
+        "body": "Any previous injectables or laser treatment, and whether you smoke."
       },
       {
         "title": "Examination",
@@ -294,10 +276,9 @@
       },
       {
         "title": "Discussion and plan",
-        "body": "Which lines are dynamic, static or folds, what each option changes, downtime and risks, and a conservative first step, with no obligation to proceed."
+        "body": "What each option changes, and a conservative first step, with no obligation to proceed."
       }
-    ],
-    "outro": "Bring details of any previous injectable treatment, including the product and roughly when. It changes both the assessment and the timing of anything new."
+    ]
   },
   "visitImages": [
     {
@@ -313,11 +294,11 @@
       },
       {
         "lead": "Uncommon but important",
-        "body": "Muscle-relaxing injection can spread slightly beyond the intended muscle and cause a temporary drooping brow or eyelid, which resolves as the effect wears off. Injectables carry a rare but serious risk of vascular occlusion. Both are reasons to be treated by a doctor who knows facial anatomy."
+        "body": "Muscle-relaxing injection can spread slightly beyond the intended muscle and cause a temporary drooping brow or eyelid, which resolves as the effect wears off. Injectables carry a rare but serious risk of vascular occlusion."
       },
       {
         "lead": "Pigment change and Malaysian skin",
-        "body": "Medium and deeper skin tones carry a higher chance of post-inflammatory hyperpigmentation after laser or energy-based treatment. Settings are chosen conservatively and sessions spaced further apart for this reason, and daily sun protection is part of the plan."
+        "body": "Medium and deeper skin tones carry a higher chance of post-inflammatory hyperpigmentation after laser or energy-based treatment. Settings are chosen conservatively and sessions spaced further apart for this reason."
       },
       {
         "lead": "What treatment cannot do",
@@ -340,27 +321,19 @@
   "faqs": [
     {
       "q": "What is the difference between fine lines and wrinkles?",
-      "a": "Fine lines are shallow surface creases, often the first thing people notice around the eyes and on the lip. Wrinkles are deeper and more established. More useful than depth, though, is whether a line is present when your face is relaxed. A line that only appears on movement is treated differently from one visible at rest."
+      "a": "Fine lines are shallow surface creases, often the first thing people notice around the eyes and on the lip. Wrinkles are deeper and more established."
     },
     {
       "q": "Can lines and wrinkles be prevented?",
-      "a": "Not entirely, since everyone's face ages and movement is part of living in it. What is well established is that daily broad-spectrum sunscreen slows the process considerably, particularly in a country with year-round equatorial UV, and that not smoking makes a visible difference around the mouth. Beyond that, sleep, hydration and a sensible skincare routine support skin quality without stopping the underlying change."
+      "a": "Not entirely, since everyone's face ages and movement is part of living in it. What is well established is that daily broad-spectrum sunscreen slows the process considerably, particularly in a country with year-round equatorial UV, and that not smoking makes a visible difference around the mouth."
     },
     {
       "q": "Will muscle-relaxing injection make my face look frozen?",
-      "a": "Only if it is overdosed or misplaced. Used conservatively, it reduces how forcefully a specific muscle folds the skin while leaving expression intact. A frozen appearance almost always comes from treating too many muscles at once, or from too much product in one area. It is entirely reasonable to say at consultation that you want to keep full movement and would rather start low and review."
-    },
-    {
-      "q": "Are nasolabial folds wrinkles?",
-      "a": "Not really. The fold running from the nose to the corner of the mouth marks the junction between the cheek and the lip area, and everyone has one. It deepens as support in the mid-face is lost, so it becomes a shadow rather than a crease in the skin. Treating it by filling the line directly usually looks heavy; supporting the cheek above it is generally the more sensible approach."
-    },
-    {
-      "q": "How soon will I see a difference?",
-      "a": "Muscle-relaxing injection takes a few days to begin and around two weeks to show its full effect, which is why review appointments are scheduled at that point rather than sooner. Volume support is visible immediately, though swelling makes the first days unreliable. Collagen-stimulating treatments build gradually over months. Photographs at consistent angles and lighting are far more useful than daily mirror checks."
+      "a": "Only if it is overdosed or misplaced. Used conservatively, it reduces how forcefully a specific muscle folds the skin while leaving expression intact. A frozen appearance almost always comes from treating too many muscles at once, or from too much product in one area."
     },
     {
       "q": "How long do the effects last?",
-      "a": "It depends entirely on the treatment. Muscle-relaxing injection wears off over a period of months and is repeated. Volume support is gradually broken down by the body over a longer period. Collagen-based change builds and then recedes as ageing continues. None of it is permanent."
+      "a": "Muscle-relaxing injection wears off over a period of months and is repeated. Volume support is gradually broken down by the body over a longer period. Collagen-based change builds and then recedes as ageing continues. None of it is permanent."
     },
     {
       "q": "Is treatment painful?",
@@ -368,23 +341,15 @@
     },
     {
       "q": "Can I start treatment in my twenties or thirties?",
-      "a": "Many people do, usually for dynamic lines that are beginning to persist. The argument for it is that a line is simpler to address before it becomes etched into the skin. The argument against starting too early is cost, commitment and the fact that some lines never progress. There is no medically correct age, and a doctor who tells you that you need treatment now should be questioned."
+      "a": "Many people do, usually for dynamic lines that are beginning to persist. The argument for it is that a line is simpler to address before it becomes etched into the skin. The argument against starting too early is cost, commitment and the fact that some lines never progress."
     },
     {
       "q": "Does skincare actually help?",
-      "a": "It helps with skin quality, which is a real part of how lines read, and a sensible routine supports any in-clinic plan. Sunscreen is the single most evidenced item in it. Well-formulated retinoids and antioxidants have reasonable support behind them. What skincare will not do is relax a muscle or restore lost volume, so expectations should match the mechanism of whatever you are buying."
-    },
-    {
-      "q": "Can the lines on my neck be treated?",
-      "a": "The neck is commonly assessed alongside the face. It also behaves differently: the skin is thinner, has fewer oil glands and recovers more slowly, so treatment here is deliberately more conservative and expectations should be modest. Horizontal creases shaped by posture and movement respond less predictably than lines on the face."
+      "a": "It helps with skin quality, which is a real part of how lines read, and a sensible routine supports any in-clinic plan. Well-formulated retinoids and antioxidants have reasonable support behind them."
     },
     {
       "q": "What if I don't like the result?",
-      "a": "That depends on what you have had. Muscle-relaxing injection is temporary and wears off, which is one reason it is a reasonable first treatment. Hyaluronic-acid fillers can be dissolved, which is why they are generally preferred over permanent products. Energy-based treatments cannot be undone, which is an argument for treating conservatively first. Ask about reversibility at the consultation, before you decide."
-    },
-    {
-      "q": "Should I treat every line I have?",
-      "a": "Usually not. Treating everything at once removes the information you need to judge what actually helped, costs more, and increases the chance of a face that reads as treated. Addressing the one or two things that bother you most, then reviewing, gives a better result and leaves you free to stop at any point."
+      "a": "Muscle-relaxing injection is temporary and wears off, which is one reason it is a reasonable first treatment. Hyaluronic-acid fillers can be dissolved, which is why they are generally preferred over permanent products. Energy-based treatments cannot be undone, which is an argument for treating conservatively first."
     }
   ],
   "relatedConcerns": [

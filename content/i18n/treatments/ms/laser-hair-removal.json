@@ -60,23 +60,15 @@
       "body": "yang akan diteliti bersama anda oleh pengamal yang merawat anda."
     }
   ],
-  "bringToConsult": "Bawa sejarah perubatan dan ubat anda, dan beritahu bila kali terakhir anda membuat waxing, mencabut atau threading. Punca hormon bagi bulu yang berlebihan mungkin perlu disiasat seiring dengan rawatan.",
+  "bringToConsult": "Punca hormon bagi bulu yang berlebihan mungkin perlu disiasat seiring dengan rawatan.",
   "sessionSteps": [
     {
       "title": "Konsultasi dan penilaian",
       "body": "Lawatan pertama anda ialah konsultasi, bukan rawatan. Kawasan rawatan, jenis bulu dan warna kulit dinilai, dan kawasan ujian mungkin dipertimbangkan dahulu."
     },
     {
-      "title": "Sebelum sesi",
-      "body": "Anda biasanya diminta mencukur tidak lama sebelum sesi, bukan waxing atau mencabut, kerana bulu di atas kulit perlu pendek manakala folikel di bawahnya masih utuh."
-    },
-    {
       "title": "Rawatan",
-      "body": "Kawasan itu dibersihkan dan aplikator yang disejukkan digerakkan di atasnya berulang kali, membina kehangatan secara beransur-ansur. Kebanyakan orang menggambarkan rasa hangat yang merebak, bukan rasa seperti petikan getah daripada alat yang menembak satu demi satu."
-    },
-    {
-      "title": "Selepas itu",
-      "body": "Kebanyakan orang boleh terus meneruskan aktiviti harian. Sesi seterusnya dijadualkan mengikut kitaran pertumbuhan bulu."
+      "body": "Kawasan itu dibersihkan dan aplikator yang disejukkan digerakkan di atasnya berulang kali, membina kehangatan secara beransur-ansur."
     }
   ],
   "afterSession": {
@@ -100,19 +92,18 @@
   "risks": {
     "intro": "Seperti mana-mana rawatan berasaskan tenaga, ia ada risiko, dan risiko ini diterangkan sebelum satu siri rawatan ditempah.",
     "common": "Kemerahan, bengkak atau perubahan pigmentasi.",
-    "lessCommon": "Melepuh, lecur, folikulitis (radang folikel) dan, jarang sekali, rangsangan paradoks bulu halus di sesetengah kawasan. Kesan serius jarang berlaku apabila rawatan dipilih dengan sewajarnya dan dilakukan oleh pengamal yang terlatih.",
+    "lessCommon": "Melepuh, lecur, folikulitis (radang folikel) dan, jarang sekali, rangsangan paradoks bulu halus di sesetengah kawasan.",
     "pigmentNote": "Buang bulu berasaskan cahaya secara amnya lebih berkesan apabila kontras antara pigmen bulu dan kulit lebih besar. Alma menyatakan bahawa penghantaran fluens rendah dan ulangan tinggi dengan hujung aplikator yang disejukkan boleh digunakan pada kulit yang lebih gelap, tetapi kulit yang baru digelapkan matahari secara amnya tidak dirawat.",
     "cannotDo": [
-      "Ia bukan buang bulu kekal. Ia mengurangkan bulu melalui satu siri sesi, dan sedikit pertumbuhan semula atau sesi penyelenggaraan mungkin diperlukan dari semasa ke semasa.",
+      "Ia tidak membuang bulu secara kekal.",
       "Satu sesi tidak mencukupi, kerana hanya folikel dalam fasa pertumbuhan aktif yang bertindak balas pada mana-mana satu sesi.",
       "Bulu yang sangat cerah, kelabu atau putih mengandungi sedikit pigmen untuk disasarkan oleh cahaya, pada mana-mana platform."
     ],
-    "disclose": "Beritahu pengamal yang merawat anda tentang apa-apa dalam senarai tangguh-atau-elak di atas, dan tentang setiap ubat yang anda ambil."
+    "disclose": "Beritahu pengamal yang merawat anda tentang setiap ubat yang anda ambil."
   },
   "costFactors": {
     "intro": "Kos dikira mengikut kawasan bagi satu siri sesi, bukan setiap lawatan, dan siri itu ditetapkan semasa konsultasi. Faktor yang mempengaruhinya:",
     "factors": [
-      "Kawasan yang dirawat.",
       "Jenis bulu anda: warna, ketebalan dan ketumpatan.",
       "Tindak balas bulu anda sepanjang siri rawatan.",
       "Sama ada sesi penyelenggaraan diperlukan selepas itu."
@@ -125,14 +116,14 @@
     {
       "heading": "Apa itu laser buang bulu?",
       "body": [
-        "Laser Buang Bulu ialah rawatan yang bertujuan mengurangkan bulu yang tidak diingini dengan menyasarkan folikel bulu menggunakan teknologi berasaskan cahaya atau tenaga. Di Kaiteki, rawatan ini dilakukan dengan platform Alma, yang menggabungkan IPL (cahaya berdenyut berintensiti tinggi) dengan tenaga radiofrekuensi.",
+        "Laser Buang Bulu ialah rawatan yang bertujuan mengurangkan bulu yang tidak diingini dengan menyasarkan folikel bulu menggunakan teknologi berasaskan cahaya atau tenaga.",
         "Ia biasanya dipertimbangkan untuk kawasan seperti ketiak, kaki, lengan atau muka."
       ]
     },
     {
       "heading": "Kitaran pertumbuhan bulu: kenapa laser buang bulu perlu satu siri sesi?",
       "body": [
-        "Alma menghantar IPL dan radiofrekuensi serentak. Cahaya itu bertujuan diserap oleh pigmen dalam folikel bulu, dan radiofrekuensi menambah laluan tenaga kedua ke folikel.",
+        "Cahaya itu bertujuan diserap oleh pigmen dalam folikel bulu, dan radiofrekuensi menambah laluan tenaga kedua ke folikel.",
         "Folikel melalui kitaran fasa aktif dan fasa rehat, dan satu sesi hanya memberi kesan kepada folikel yang berada dalam fasa pertumbuhan aktif pada masa itu. Satu siri sesi yang dijarakkan mengikut kitaran itu bertujuan mencapai lebih banyak folikel."
       ]
     }
@@ -140,7 +131,7 @@
   "faqs": [
     {
       "q": "Perlu buat laser buang bulu berapa kali?",
-      "a": "Satu siri beberapa sesi yang dijarakkan beberapa minggu adalah biasa, kerana satu sesi hanya memberi kesan kepada bulu dalam fasa pertumbuhan aktif. Bilangannya bergantung pada jenis bulu dan kawasan anda."
+      "a": "Satu siri beberapa sesi yang dijarakkan beberapa minggu adalah biasa. Bilangannya bergantung pada jenis bulu dan kawasan anda."
     },
     {
       "q": "Laser buang bulu kekal ke?",
@@ -148,11 +139,7 @@
     },
     {
       "q": "Sesuai ke untuk semua warna kulit dan warna bulu?",
-      "a": "Tidak semua. Buang bulu berasaskan cahaya secara amnya lebih berkesan apabila kontras antara pigmen bulu dan kulit lebih besar. Bulu yang sangat cerah, kelabu atau putih mempunyai sedikit pigmen untuk disasarkan, dan kulit yang baru digelapkan matahari secara amnya tidak dirawat."
-    },
-    {
-      "q": "Laser buang bulu ada downtime ke?",
-      "a": "Biasanya minimum. Kemerahan atau rasa hangat sementara lazimnya reda dalam beberapa jam hingga sehari."
+      "a": "Tidak semua. Bulu yang sangat cerah, kelabu atau putih mempunyai sedikit pigmen untuk disasarkan, dan kulit yang baru digelapkan matahari secara amnya tidak dirawat."
     }
   ]
 }

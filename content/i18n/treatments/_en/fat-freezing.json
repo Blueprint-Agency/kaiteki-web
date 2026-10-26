@@ -55,7 +55,7 @@
     },
     {
       "title": "A defined pocket of fat under the chin",
-      "body": "Controlled cooling applied to a localised fat pocket under the chin, relevant only where the fullness is genuinely fat.",
+      "body": "Relevant only where the fullness under the chin is genuinely fat.",
       "links": [
         {
           "href": "/concerns/face-contouring",
@@ -64,10 +64,9 @@
       ]
     }
   ],
-  "routesNote": "It is intended for people at or near a stable weight with specific pockets of fat, not generalised weight to lose.",
   "variantModule": {
     "heading": "Cooltech or CoolSculpting: which device, and why",
-    "intro": "Both are cryolipolysis devices working on the same principle. They differ in applicator design, and the doctor chooses the device and applicator for your area.",
+    "intro": "Both are cryolipolysis devices working on the same principle. They differ in applicator design.",
     "items": [
       {
         "eyebrow": "360° cooling · Cocoon Medical",
@@ -79,7 +78,7 @@
       {
         "eyebrow": "Cryolipolysis · CoolSculpting",
         "title": "CoolSculpting",
-        "body": "An applicator draws the target area against a cooling plate, with each cycle typically running around 35 to 60 minutes.",
+        "body": "An applicator draws the target area against a cooling plate.",
         "href": "/technology/coolsculpting",
         "hrefLabel": "About CoolSculpting"
       }
@@ -111,11 +110,10 @@
       "body": "which your doctor goes through with you."
     }
   ],
-  "bringToConsult": "Bring your medical history, medications, any implants or devices, and details of previous body-contouring procedures.",
   "sessionSteps": [
     {
       "title": "Consultation and assessment",
-      "body": "Your first visit is a consultation, not a treatment. The doctor checks whether the fat in the area can be drawn into an applicator."
+      "body": "The doctor checks whether the fat in the area can be drawn into an applicator."
     },
     {
       "title": "Preparation",
@@ -131,7 +129,7 @@
     }
   ],
   "afterSession": {
-    "intro": "Downtime is usually limited, and most people return to everyday activities after a session.",
+    "intro": "",
     "bands": [
       {
         "title": "Straight afterwards",
@@ -140,18 +138,14 @@
       {
         "title": "The first weeks",
         "body": "Temporary tenderness, swelling, tingling or a dull ache in the treated area can persist for a few days to a couple of weeks, and some people find loose clothing or a compression garment more comfortable during that period."
-      },
-      {
-        "title": "Weeks to months",
-        "body": "Any change is gradual, because the body clears the treated cells over the following weeks rather than at the appointment, so it is typically assessed a couple of months later rather than immediately."
       }
     ],
     "aftercare": "Keep to a stable weight with your usual diet and activity."
   },
   "risks": {
-    "intro": "Cryolipolysis carries risks, which the doctor explains before anything is booked.",
+    "intro": "",
     "common": "Redness, swelling, bruising, firmness, numbness, tingling, itching or cramping in the treated area, and altered skin sensation that may take some weeks to normalise.",
-    "lessCommon": "Lingering pain in the treated area, and paradoxical adipose hyperplasia, in which the treated fat pocket firms and enlarges rather than reduces. Serious effects are uncommon when the treatment is appropriately selected and performed by a trained doctor.",
+    "lessCommon": "Lingering pain in the treated area, and paradoxical adipose hyperplasia, in which the treated fat pocket firms and enlarges rather than reduces.",
     "pigmentNote": "It acts on fat below the skin, not on pigment, so skin tone matters less than it does with lasers. The thickness and distribution of fat in the area matter more.",
     "cannotDo": [
       "It is not a weight-loss treatment, not a treatment for obesity, and not a substitute for diet, exercise or medical weight management.",
@@ -175,15 +169,14 @@
     {
       "heading": "What is fat freezing?",
       "body": [
-        "Fat freezing is the everyday name for cryolipolysis, a non-surgical approach that uses controlled cooling to target pockets of fat in specific areas of the body. \"Fat freezing\" describes the method rather than any single machine, and several devices work on the same cryolipolysis principle.",
-        "It is intended for localised, stubborn fat in defined areas rather than overall weight reduction."
+        "Fat freezing is the everyday name for cryolipolysis, a non-surgical approach that uses controlled cooling to target pockets of fat in specific areas of the body."
       ]
     },
     {
       "heading": "Why does cooling affect fat and not the skin around it?",
       "body": [
         "Cryolipolysis is based on the idea that fat cells are more sensitive to cold than the surrounding skin, nerves and muscle. During a session, an applicator cools a defined area to a controlled low temperature for a set period.",
-        "The aim is to affect fat cells within the treated pocket while limiting the effect on nearby tissue. The body then clears the affected cells gradually over the following weeks."
+        "The aim is to affect fat cells within the treated pocket while limiting the effect on nearby tissue."
       ]
     }
   ],
@@ -198,7 +191,7 @@
     },
     {
       "q": "How many sessions will I need?",
-      "a": "It depends on the area, the amount of localised fat and how you respond, which is reviewed a couple of months after each session."
+      "a": "It depends on the area, the amount of localised fat and how you respond."
     },
     {
       "q": "When might I notice a change?",

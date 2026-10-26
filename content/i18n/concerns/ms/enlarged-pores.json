@@ -5,7 +5,7 @@
   "name": "Liang Pori Besar",
   "group": "Skin",
   "image": "https://cdn.kaiteki.my/concerns/enlarged-pores/card.jpg",
-  "summary": "Liang pori yang ketara selalunya berkait dengan pengeluaran minyak, tekstur kulit atau usia. Pilihan rawatan merangkumi laser hingga skin booster, dipadankan dengan puncanya.",
+  "summary": "Liang pori yang ketara selalunya berkait dengan pengeluaran minyak, tekstur kulit atau usia.",
   "leadAnswer": "Liang pori yang nampak besar dipengaruhi oleh pengeluaran minyak, sumbatan, kerosakan matahari dan kehilangan keanjalan dengan usia. Liang pori tidak boleh ditutup atau dibuang, dan ia tidak terbuka dan tertutup. Apa yang mungkin diubah oleh rawatan dan penjagaan kulit ialah sejauh mana ia nampak ketara, dengan menangani faktor yang menjadi punca liang pori anda.",
   "treatments": [
     "microneedling",
@@ -71,14 +71,14 @@
     {
       "heading": "Apa itu liang pori besar?",
       "body": [
-        "Liang pori ialah bukaan yang membawa minyak dan peluh ke permukaan kulit. Yang biasanya diperasan ialah liang pori minyak di zon T (hidung, dahi, pipi bahagian dalam dan dagu). Saiznya kebanyakannya ditentukan oleh genetik; yang berubah ialah berapa banyak minyak dan kotoran yang berada di dalamnya, dan sejauh mana kulit di sekelilingnya tetap tegang dan mengekalkan bentuknya."
+        "Liang pori yang biasanya disedari orang ialah liang pori minyak di zon T (hidung, dahi, pipi bahagian dalam dan dagu)."
       ]
     },
     {
       "heading": "Liang pori, blackhead dan filamen sebum (sebaceous filament)",
       "body": [
-        "Tiga perkara ini mudah dikelirukan, dan cara menanganinya berbeza. Filamen sebum ialah titik halus kelabu di hidung yang nampak seperti blackhead: ia sebenarnya lapisan normal minyak dan sel kulit dalam setiap liang pori, dan akan penuh semula dalam beberapa minggu selepas dipicit atau ditarik keluar. Blackhead (komedo hitam) ialah sumbatan sebenar yang menjadi gelap di permukaan, dan merupakan bentuk jerawat yang ringan. Liang pori besar pula ialah bukaan itu sendiri, yang kelihatan sama ada ada sesuatu di dalamnya atau tidak.",
-        "Yang mana satu anda lihat akan mengubah pelannya. Filamen sebum biasanya dibiarkan sahaja atau dikawal dengan penjagaan kulit, blackhead boleh ditangani dengan penjagaan jerawat dan pembersihan di klinik, dan liang pori yang masih ketara pada kulit yang bersih ialah soal tekstur dan keanjalan kulit."
+        "Filamen sebum ialah titik halus kelabu di hidung yang nampak seperti blackhead: ia sebenarnya lapisan normal minyak dan sel kulit dalam setiap liang pori, dan akan penuh semula dalam beberapa minggu selepas dipicit atau ditarik keluar. Blackhead (komedo hitam) ialah sumbatan sebenar yang menjadi gelap di permukaan, dan merupakan bentuk jerawat yang ringan. Liang pori besar pula ialah bukaan itu sendiri, yang kelihatan sama ada ada sesuatu di dalamnya atau tidak.",
+        "Filamen sebum biasanya dibiarkan sahaja atau dikawal dengan penjagaan kulit, blackhead boleh ditangani dengan penjagaan jerawat dan pembersihan di klinik, dan liang pori yang masih ketara pada kulit yang bersih ialah soal tekstur dan keanjalan kulit."
       ]
     }
   ],
@@ -88,7 +88,7 @@
     "items": [
       {
         "lead": "Pengeluaran minyak:",
-        "body": "lebih banyak sebum mengisi dan meregangkan bukaan, dan permukaan yang berminyak memantulkan cahaya sehingga liang pori lebih menonjol. Pengeluaran minyak kebanyakannya ditentukan oleh genetik dan hormon, sebab itu liang pori selalunya paling ketara pada usia remaja dan 20-an."
+        "body": "lebih banyak sebum mengisi dan meregangkan bukaan, dan permukaan yang berminyak memantulkan cahaya sehingga liang pori lebih menonjol."
       },
       {
         "lead": "Sumbatan dalam liang pori:",
@@ -115,7 +115,7 @@
     "pairs": [
       {
         "claim": "Air panas membuka liang pori dan air sejuk menutupnya.",
-        "reality": "Liang pori tidak mempunyai otot, jadi ia tidak boleh terbuka atau tertutup. Kehangatan melembutkan minyak di dalamnya, sebab itu pembersihan terasa lebih mudah selepas mandi, dan air sejuk menegangkan permukaan kulit buat seketika. Kedua-duanya tidak mengubah saiz liang pori."
+        "reality": "Liang pori tidak mempunyai otot, jadi ia tidak boleh terbuka atau tertutup."
       },
       {
         "claim": "Pore strip dan memicit boleh mengecilkan liang pori.",
@@ -123,11 +123,11 @@
       },
       {
         "claim": "Rawatan boleh menutup liang pori secara kekal.",
-        "reality": "Liang pori tidak boleh ditutup, kerana kulit memerlukannya untuk mengeluarkan minyak. Rawatan bertujuan membuat liang pori kurang ketara dengan memperbaiki keanjalan, tekstur dan kawalan minyak di sekelilingnya, dan perubahan itu perlu dikekalkan dengan penjagaan berterusan, bukannya bersifat kekal."
+        "reality": "Liang pori tidak boleh ditutup, kerana kulit memerlukannya untuk mengeluarkan minyak."
       },
       {
         "claim": "Hanya kulit berminyak ada liang pori yang ketara.",
-        "reality": "Kulit berminyak menunjukkannya lebih awal, tetapi kehilangan keanjalan dengan usia dan kerosakan matahari juga membuat liang pori lebih ketara pada kulit yang lebih kering. Liang pori yang muncul pada usia lebih lanjut selalunya masalah keanjalan, bukan masalah minyak."
+        "reality": "Kulit berminyak menunjukkannya lebih awal, tetapi kehilangan keanjalan dengan usia dan kerosakan matahari juga membuat liang pori lebih ketara pada kulit yang lebih kering."
       },
       {
         "claim": "Primer dan produk mattifying mengecilkan liang pori.",
@@ -140,28 +140,26 @@
     "triggers": [
       "Rutin penjagaan kulit yang konsisten tidak membawa perubahan selepas beberapa bulan.",
       "Liang pori disertai jerawat yang kerap, blackhead atau sumbatan.",
-      "Anda boleh rasa lekuk atau tekstur yang tidak sekata, yang mungkin parut awal dan bukannya liang pori.",
-      "Ada satu liang pori yang luar biasa besar, selalunya dengan sumbatan gelap, yang sudah lama ada.",
-      "Muncul bintil kecil kekuningan dengan lekuk di tengah, selalunya di dahi atau pipi."
+      "Anda boleh rasa lekuk atau tekstur yang tidak sekata, yang mungkin parut awal dan bukannya liang pori."
     ]
   },
   "ctaMid": {
     "heading": "Tak pasti apa punca liang pori anda?",
     "body": "Hantar gambar kepada kami di WhatsApp dan doktor boleh beritahu apa yang paling mungkin menjadi punca liang pori anda."
   },
-  "treatmentsIntro": "Yang mana sesuai bergantung pada punca liang pori anda: sumbatan, minyak, tekstur atau kehilangan keanjalan. Penjagaan kulit harian ialah sebahagian daripada setiap pelan.",
+  "treatmentsIntro": "Yang mana sesuai bergantung pada punca liang pori anda: sumbatan, minyak, tekstur atau kehilangan keanjalan.",
   "treatmentWhy": {
     "microneedling": {
       "why": "Untuk liang pori yang nampak teregang apabila kulit hilang keanjalan",
-      "body": "Jarum halus menghantar tenaga radiofrekuensi ke dalam dermis untuk merangsang kolagen di sekeliling dinding liang pori. Selalunya titik permulaan apabila liang pori disertai perubahan tekstur, dan secara amnya dianggap pilihan berisiko pigmentasi lebih rendah untuk kulit sederhana dan lebih gelap."
+      "body": "Jarum halus menghantar tenaga radiofrekuensi ke dalam dermis untuk merangsang kolagen di sekeliling dinding liang pori."
     },
     "pico-laser": {
       "why": "Untuk liang pori yang disertai kulit kusam dan tona tidak sekata",
-      "body": "Laser pikosaat yang terutamanya digunakan untuk pigmentasi, dengan mod fraksional yang digunakan oleh sesetengah doktor untuk tekstur permukaan. Dipertimbangkan apabila liang pori yang ketara disertai tona kulit tidak sekata atau kesan jerawat, dan biasanya mempunyai downtime yang minimum."
+      "body": "Laser pikosaat yang terutamanya digunakan untuk pigmentasi, dengan mod fraksional yang digunakan oleh sesetengah doktor untuk tekstur permukaan."
     },
     "radiofrequency": {
       "why": "Untuk keanjalan di sekeliling liang pori tanpa jarum",
-      "body": "Tenaga radiofrekuensi memanaskan lapisan kulit yang lebih dalam untuk menyokong kolagen tanpa mencederakan permukaan. Dipertimbangkan apabila kehilangan keanjalan menjadi sebahagian daripada masalah dan downtime perlu dikekalkan rendah."
+      "body": "Tenaga radiofrekuensi memanaskan lapisan kulit yang lebih dalam untuk menyokong kolagen tanpa mencederakan permukaan."
     },
     "resurfacing-laser": {
       "why": "Untuk liang pori pada tekstur kulit yang kasar dan tidak sekata",
@@ -169,7 +167,7 @@
     },
     "facial-treatments": {
       "why": "Untuk membersihkan sumbatan daripada liang pori",
-      "body": "Facial klinikal seperti Hydrafacial dan Silkpeel membersihkan, mengeksfoliasi dan mengekstrak. Ia membantu liang pori nampak lebih bersih untuk satu tempoh dan sesuai sebagai penjagaan antara rawatan lain, tetapi tidak mengubah struktur liang pori."
+      "body": "Facial klinikal seperti Hydrafacial dan Silkpeel membersihkan, mengeksfoliasi dan mengekstrak. Ia tidak mengubah struktur liang pori."
     }
   },
   "treatmentsNote": "Jerawat aktif biasanya dikawal dahulu: rawatan berasaskan tenaga pada kulit yang meradang membawa risiko yang lebih tinggi.",
@@ -245,7 +243,7 @@
     "steps": [
       {
         "title": "Sejarah",
-        "body": "Rutin penjagaan kulit anda, apa yang sudah dicuba, sejauh mana kulit anda berminyak sepanjang hari, sebarang jerawat, dan pendedahan anda kepada matahari."
+        "body": "Rutin penjagaan kulit anda, sejauh mana kulit anda berminyak sepanjang hari, dan sebarang jerawat."
       },
       {
         "title": "Pemeriksaan",
@@ -253,10 +251,9 @@
       },
       {
         "title": "Perbincangan dan pelan",
-        "body": "Apa yang mungkin menjadi punca liang pori anda, pilihan yang ada beserta risiko dan downtime, dan apa yang realistik, termasuk bila penjagaan kulit sahaja ialah jawapan yang wajar. Tiada kewajipan untuk meneruskan."
+        "body": "Apa yang mungkin menjadi punca liang pori anda, termasuk bila penjagaan kulit sahaja ialah jawapan yang wajar."
       }
-    ],
-    "outro": "Datang tanpa solekan jika boleh, dan bawa produk yang anda guna setiap hari atau gambar labelnya. Kedua-duanya menjadikan penilaian lebih tepat."
+    ]
   },
   "figures": [
     null,
@@ -286,7 +283,7 @@
       },
       {
         "lead": "Perlindungan matahari dan penjagaan kulit sebahagian daripadanya",
-        "body": "Pelindung matahari spektrum luas setiap hari melindungi kolagen yang membuat liang pori nampak lebih tegang. Tanpa perlindungan matahari dan rutin yang konsisten, sebarang perubahan daripada rawatan berkemungkinan pudar."
+        "body": "Pelindung matahari spektrum luas setiap hari melindungi kolagen yang membuat liang pori nampak lebih tegang."
       },
       {
         "lead": "Apa yang rawatan tidak dapat lakukan",
@@ -305,47 +302,30 @@
       "Sama ada rawatan digabungkan, dan sama ada sesi penjagaan termasuk dalam pelan."
     ]
   },
-  "technologyIntro": "Liang pori yang disebabkan oleh minyak, tekstur dan kehilangan keanjalan bertindak balas terhadap jenis tenaga yang berbeza, jadi dengan beberapa platform, doktor boleh memadankan peranti dengan punca liang pori anda.",
   "faqs": [
     {
       "q": "Liang pori boleh dikecilkan secara kekal ke?",
       "a": "Liang pori tidak boleh ditutup atau dibuang secara kekal, kerana kulit memerlukannya untuk mengeluarkan minyak dan peluh serta terus sihat. Sesetengah rawatan dan penjagaan kulit mungkin mengurangkan rupa liang pori dengan memperbaiki keanjalan, tekstur dan kawalan minyak di sekelilingnya, tetapi hasilnya berbeza bagi setiap individu dan perlu dikekalkan."
     },
     {
-      "q": "Liang pori boleh terbuka dan tertutup ke?",
-      "a": "Liang pori tidak mempunyai otot, jadi ia tidak benar-benar terbuka dan tertutup. Rupanya berubah mengikut minyak, sumbatan, kelembapan dan keanjalan kulit, sebab itu ia mungkin nampak lebih atau kurang ketara pada waktu yang berbeza dalam sehari. Air suam melembutkan minyak di dalamnya, dan air sejuk menegangkan permukaan kulit buat seketika, tetapi kedua-duanya tidak mengubah saiz liang pori itu sendiri."
-    },
-    {
       "q": "Skincare atau rawatan klinik, mana lebih sesuai untuk liang pori besar?",
-      "a": "Kedua-duanya mempunyai fungsi berbeza. Rutin yang konsisten dengan pembersihan lembut, perlindungan matahari dan, jika sesuai, bahan seperti retinoid atau asid salisilik memastikan liang pori lebih bersih dan menyokong tekstur kulit dari semasa ke semasa. Rawatan di klinik dipertimbangkan apabila masalahnya ialah keanjalan atau tekstur yang tidak dapat dicapai oleh penjagaan kulit sahaja. Kebanyakan pelan menggunakan kedua-duanya, dan doktor akan berterus terang jika penjagaan kulit sahaja sudah mencukupi."
+      "a": "Kedua-duanya mempunyai fungsi berbeza. Rutin yang konsisten dengan pembersihan lembut, perlindungan matahari dan, jika sesuai, bahan seperti retinoid atau asid salisilik memastikan liang pori lebih bersih dan menyokong tekstur kulit dari semasa ke semasa. Rawatan di klinik dipertimbangkan apabila masalahnya ialah keanjalan atau tekstur yang tidak dapat dicapai oleh penjagaan kulit sahaja."
     },
     {
       "q": "Kenapa liang pori lebih besar di hidung dan pipi?",
-      "a": "Hidung dan bahagian tengah muka mempunyai kelenjar minyak yang paling padat, jadi liang pori di situ membawa lebih banyak sebum dan nampak lebih lebar. Liang pori di pipi berbeza: ia selalunya menjadi lebih ketara dengan usia, apabila kulit di sekelilingnya hilang keanjalan dan bukaannya teregang menjadi bujur atau berbentuk titisan air. Perbezaan ini penting, kerana liang pori yang disebabkan oleh minyak dan yang disebabkan oleh kehilangan keanjalan biasanya ditangani dengan rawatan yang berbeza."
-    },
-    {
-      "q": "Bintik hitam di hidung saya ni blackhead ke?",
-      "a": "Selalunya ia filamen sebum (sebaceous filament), iaitu lapisan normal minyak dan sel kulit dalam setiap liang pori, yang nampak kelabu atau perang muda dan rata. Blackhead ialah sumbatan sebenar, biasanya lebih gelap dan sedikit timbul, dan merupakan bentuk jerawat yang ringan. Filamen sebum penuh semula dalam beberapa minggu selepas dibuang, jadi memicitnya berulang kali kebanyakannya hanya merengsakan kulit."
+      "a": "Hidung dan bahagian tengah muka mempunyai kelenjar minyak yang paling padat, jadi liang pori di situ membawa lebih banyak sebum dan nampak lebih lebar. Liang pori di pipi berbeza: ia selalunya menjadi lebih ketara dengan usia, apabila kulit di sekelilingnya hilang keanjalan dan bukaannya teregang menjadi bujur atau berbentuk titisan air."
     },
     {
       "q": "Pore strip dan picit blackhead membantu ke?",
-      "a": "Ia mengosongkan liang pori untuk sementara, jadi liang pori mungkin nampak lebih kecil sehingga penuh semula. Pengekstrakan profesional semasa facial klinikal dibuat selepas kulit disediakan dan secara terkawal, yang mengehadkan kerosakan. Memicit sendiri di rumah, terutamanya dengan kuku, lebih berkemungkinan meradangkan kulit, meninggalkan kesan dan perlahan-lahan meregangkan bukaan, jadi ia cenderung memberi kesan yang bertentangan."
+      "a": "Ia mengosongkan liang pori untuk sementara, jadi liang pori mungkin nampak lebih kecil sehingga penuh semula. Pengekstrakan secara profesional semasa facial klinikal dibuat selepas kulit disediakan dan secara terkawal, yang mengehadkan kerosakan."
     },
     {
       "q": "Cuaca lembap di Malaysia buat liang pori lebih teruk ke?",
-      "a": "Cuaca panas dan lembap menambah minyak dan peluh di permukaan kulit, jadi liang pori boleh nampak lebih ketara semakin lewat hari. Liang pori itu sendiri tidak membesar dalam cuaca panas. Produk ringan yang tidak menyumbat liang pori (non-comedogenic), pembersihan lembut yang kerap dan pelindung matahari setiap hari membantu mengawal kulit berminyak dalam iklim ini."
-    },
-    {
-      "q": "Perlu buat berapa sesi?",
-      "a": "Ini ditetapkan selepas doktor memeriksa kulit anda, kerana ia bergantung pada punca liang pori anda dan rawatan yang sesuai. Rawatan berasaskan tenaga untuk tekstur dan keanjalan biasanya dirancang sebagai satu kursus beberapa sesi yang dijarakkan beberapa minggu, dengan titik semakan untuk melihat tindak balas kulit anda. Facial klinikal biasanya digunakan sebagai penjagaan berterusan dan bukannya kursus dengan bilangan sesi tetap."
+      "a": "Liang pori itu sendiri tidak membesar dalam cuaca panas. Produk ringan yang tidak menyumbat liang pori (non-comedogenic), pembersihan lembut yang kerap dan pelindung matahari setiap hari membantu mengawal kulit berminyak dalam iklim ini."
     },
     {
       "q": "Rawatan liang pori selamat ke untuk kulit gelap, sawo matang atau kulit Asia?",
-      "a": "Boleh, jika peranti dan tetapannya dipilih oleh doktor yang berpengalaman dengan jenis kulit anda. Kebimbangan utama bagi tona kulit sederhana dan lebih gelap ialah hiperpigmentasi pasca-radang selepas laser atau rawatan berasaskan tenaga yang lain. Ini ditangani dengan memilih peranti yang sesuai, menggunakan tetapan konservatif, menjarakkan sesi dan tegas tentang perlindungan matahari."
-    },
-    {
-      "q": "Liang pori akan nampak besar semula selepas rawatan?",
-      "a": "Liang pori tidak hilang, jadi persoalannya ialah berapa lama sebarang perbaikan pada rupanya bertahan. Pengeluaran minyak berterusan, dan penuaan serta pendedahan matahari terus melemahkan sokongan di sekeliling setiap liang pori. Kebanyakan orang yang melihat perubahan mengekalkannya dengan pelindung matahari setiap hari, rutin penjagaan kulit yang sesuai dan, jika perlu, sesi penjagaan sekali-sekala."
+      "a": "Boleh, jika peranti dan tetapannya dipilih oleh doktor yang berpengalaman dengan jenis kulit anda. Kebimbangan utama bagi tona kulit sederhana dan lebih gelap ialah hiperpigmentasi pasca-radang selepas laser atau rawatan berasaskan tenaga yang lain."
     },
     {
       "q": "Liang pori besar boleh jadi tanda masalah lain ke?",
@@ -353,7 +333,7 @@
     },
     {
       "q": "Apa yang perlu dihentikan sebelum rawatan?",
-      "a": "Jangan hentikan apa-apa tanpa memberitahu doktor anda dahulu. Retinoid dan asid pengelupas biasanya dihentikan beberapa hari sebelum dan selepas rawatan berasaskan tenaga, dan ubat jerawat oral yang diambil baru-baru ini boleh menjejaskan rawatan yang sesuai dan masanya. Bawa produk anda, atau gambar labelnya, semasa konsultasi supaya doktor boleh memberi nasihat yang khusus."
+      "a": "Jangan hentikan apa-apa tanpa memberitahu doktor anda dahulu. Retinoid dan asid pengelupas biasanya dihentikan beberapa hari sebelum dan selepas rawatan berasaskan tenaga, dan ubat jerawat oral yang diambil baru-baru ini boleh menjejaskan rawatan yang sesuai dan masanya."
     }
   ],
   "relatedConcerns": [

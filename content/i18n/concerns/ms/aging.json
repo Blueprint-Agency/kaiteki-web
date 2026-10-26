@@ -3,8 +3,8 @@
   "name": "Anti-Penuaan",
   "group": "Skin",
   "image": "https://cdn.kaiteki.my/concerns/aging/card.jpg",
-  "summary": "Ketegangan, tekstur dan isi padu kulit berubah pada kadar yang berbeza. Doktor akan mengenal pasti apa yang berlaku pada kulit anda sebelum merangka pelan.",
-  "leadAnswer": "Penuaan kulit ialah perubahan beransur-ansur pada ketegangan, tekstur, kelembapan dan isi padu, didorong oleh genetik dan masa (penuaan intrinsik) dan, sebahagian besarnya, oleh pendedahan matahari yang terkumpul serta tabiat harian (penuaan ekstrinsik). Keempat-empatnya berubah pada kadar berbeza, jadi pelan biasanya berperingkat, bermula dengan perubahan yang paling mengganggu anda.",
+  "summary": "Ketegangan, tekstur dan isi padu berubah pada kadar yang berbeza.",
+  "leadAnswer": "Penuaan kulit ialah perubahan beransur-ansur pada ketegangan, tekstur, kelembapan dan isi padu, didorong oleh genetik dan masa (penuaan intrinsik) dan, sebahagian besarnya, oleh pendedahan matahari yang terkumpul serta tabiat harian (penuaan ekstrinsik).",
   "treatments": [
     "hifu",
     "ultherapy",
@@ -71,7 +71,7 @@
     {
       "heading": "Apa itu penuaan kulit?",
       "body": [
-        "Penuaan kulit ialah kehilangan kolagen, keanjalan, kelembapan dan isi padu secara beransur-ansur. Sebahagiannya intrinsik, ditentukan oleh gen dan masa; sebahagian lagi ekstrinsik, didorong terutamanya oleh pendedahan matahari dan tabiat harian. Bahagian ekstrinsik inilah yang boleh diusahakan."
+        "Penuaan kulit ialah kehilangan kolagen, keanjalan, kelembapan dan isi padu secara beransur-ansur."
       ]
     }
   ],
@@ -85,11 +85,11 @@
       },
       {
         "lead": "Pendedahan UV yang terkumpul:",
-        "body": "penyumbang luaran yang terbesar, dan yang paling boleh anda kawal. Bandingkan kulit di bahagian dalam lengan dengan belakang tangan anda: perbezaannya kebanyakannya disebabkan oleh matahari, bukan usia."
+        "body": "penyumbang luaran yang terbesar, dan yang paling boleh anda kawal."
       },
       {
         "lead": "Kehilangan dan anjakan isi padu:",
-        "body": "pad lemak di bahagian tengah muka mengecut dan turun, dan tulang sendiri berubah bentuk sepanjang beberapa dekad. Banyak yang kelihatan seperti kendur sebenarnya ialah kehilangan isi padu, dan ia mengubah perkadaran muka serta ketegangannya."
+        "body": "pad lemak di bahagian tengah muka mengecut dan turun, dan tulang sendiri berubah bentuk sepanjang beberapa dekad."
       },
       {
         "lead": "Kelembapan dan fungsi pelindung kulit berkurang:",
@@ -110,28 +110,27 @@
         "label": "Awal",
         "sub": "Kualiti kulit dan pencegahan",
         "title": "Perubahan awal",
-        "body": "Bentuk muka masih terjaga. Yang berubah ialah kualiti kulit: kurang sedikit kenyal, garis halus muncul apabila muka bergerak, warna kulit kurang sekata, dan kulit nampak letih lebih awal dalam sehari berbanding dahulu. Isi padu dan ketegangan secara amnya masih baik.",
+        "body": "Bentuk muka masih terjaga. Yang berubah ialah kualiti kulit: kurang sedikit kenyal, garis halus muncul apabila muka bergerak, warna kulit kurang sekata, dan kulit nampak letih lebih awal dalam sehari berbanding dahulu.",
         "routing": "biasanya dinilai untuk rawatan kualiti kulit dan rutin harian yang munasabah, bukan rawatan struktur."
       },
       {
         "label": "Ketara",
         "sub": "Garisan ketika rehat, kulit mula kendur",
         "title": "Perubahan ketara (kulit mula kendur)",
-        "body": "Garisan kini kelihatan walaupun muka dalam keadaan rehat, bahagian tengah muka mula menjadi rata, dan garis rahang tidak lagi setajam dahulu. Beberapa perkara berubah serentak, dan itulah sebabnya urutan rawatan paling penting pada tahap ini.",
+        "body": "Garisan kini kelihatan walaupun muka dalam keadaan rehat, bahagian tengah muka mula menjadi rata, dan garis rahang tidak lagi setajam dahulu.",
         "routing": "dinilai mengikut urutan merangkumi kualiti kulit, isi padu dan ketegangan, dengan titik semakan antara setiap peringkat."
       },
       {
         "label": "Lanjut",
         "sub": "Kulit kendur, lipatan dan tekstur",
         "title": "Perubahan lanjut (kulit kendur)",
-        "body": "Kulit kendur di sepanjang garis rahang dan leher, lipatan yang lebih dalam, kehilangan isi padu yang ketara dan kerosakan matahari yang terkumpul pada permukaan kulit. Rawatan tanpa pembedahan masih ada peranannya di sini, tetapi penting untuk jelas tentang had capaiannya.",
+        "body": "Kulit kendur di sepanjang garis rahang dan leher, lipatan yang lebih dalam, kehilangan isi padu yang ketara dan kerosakan matahari yang terkumpul pada permukaan kulit.",
         "routing": "dinilai secara individu, dengan perbincangan terus terang tentang apa yang boleh dan tidak boleh dicapai oleh rawatan tanpa pembedahan."
       }
     ]
   },
   "locationBlock": {
     "heading": "Tanda penuaan muka: di mana ia muncul dahulu",
-    "intro": "Kawasan yang berbeza berubah pada kadar yang berbeza, bergantung terutamanya pada betapa nipis kulitnya, betapa banyak ia bergerak dan betapa banyak pendedahan matahari yang diterimanya.",
     "cards": [
       {
         "title": "Sekitar mata",
@@ -143,7 +142,7 @@
       },
       {
         "title": "Sekitar mulut",
-        "body": "Garisan halus menegak pada bibir dan lipatan yang turun dari hujung mulut. Pergerakan, matahari dan perubahan isi padu semuanya menyumbang, dan merokok mempercepatkan ketiga-tiganya."
+        "body": "Garisan halus menegak pada bibir dan lipatan yang turun dari hujung mulut."
       },
       {
         "title": "Garis rahang dan bahagian bawah muka",
@@ -151,19 +150,18 @@
       },
       {
         "title": "Leher, dada dan tangan",
-        "body": "Kulit nipis, sedikit kelenjar minyak dan berdekad-dekad tanpa pelindung matahari. Selalunya nampak lebih tua daripada muka, dan dirawat secara lebih konservatif kerana ia sembuh lebih perlahan."
+        "body": "Kulit nipis, sedikit kelenjar minyak dan berdekad-dekad tanpa pelindung matahari."
       }
     ],
     "note": {
       "title": "Bukan penuaan?",
-      "body": "Tanda baharu atau yang berubah, tompok yang bersisik, berkerak atau berdarah, atau luka yang tidak sembuh bukanlah tanda penuaan dan perlu diperiksa segera. Pendedahan matahari bertahun-tahun menjadikan pemeriksaan itu lebih penting, bukan kurang."
+      "body": "Tanda baharu atau yang berubah, tompok yang bersisik, berkerak atau berdarah, atau luka yang tidak sembuh bukanlah tanda penuaan dan perlu diperiksa segera."
     }
   },
   "seeDoctor": {
     "intro": "Tiada umur tertentu yang mewajibkan penilaian. Ada baiknya anda dapatkan penilaian jika:",
     "triggers": [
-      "Perubahan seolah-olah berlaku lebih cepat dalam tempoh yang singkat, dan itu sendiri wajar diperiksa.",
-      "Anda sedang mempertimbangkan rawatan dan mahukan pelan berperingkat yang konservatif, bukan pakej."
+      "Perubahan seolah-olah berlaku lebih cepat dalam tempoh yang singkat, dan itu sendiri wajar diperiksa."
     ]
   },
   "ctaMid": {
@@ -174,7 +172,7 @@
   "treatmentWhy": {
     "skin-booster": {
       "why": "Untuk kelembapan dan kualiti kulit secara keseluruhan",
-      "body": "Suntikan penghidratan yang diagihkan ke seluruh kawasan untuk membantu kulit menyimpan air dan memantulkan cahaya. Dipertimbangkan apabila kusam, kering dan kulit berkerepot halus yang anda sedari, bukan perubahan bentuk muka."
+      "body": "Suntikan penghidratan yang diagihkan ke seluruh kawasan untuk membantu kulit menyimpan air dan memantulkan cahaya."
     },
     "resurfacing-laser": {
       "why": "Untuk kerosakan matahari, tekstur dan warna kulit sekali gus",
@@ -182,15 +180,15 @@
     },
     "fotona-4d": {
       "why": "Untuk pendekatan berlapis pada beberapa kedalaman",
-      "body": "Protokol laser yang dibuat dalam beberapa laluan pada kedalaman berbeza, termasuk satu yang dilakukan dari dalam mulut. Dipertimbangkan apabila ketegangan dan kualiti permukaan kulit kedua-duanya perlu dirawat dalam kursus yang sama."
+      "body": "Protokol laser yang dibuat dalam beberapa laluan pada kedalaman berbeza, termasuk satu yang dilakukan dari dalam mulut."
     },
     "hifu": {
       "why": "Untuk ketegangan pada sepertiga bahagian bawah muka",
-      "body": "Ultrabunyi berfokus yang disalurkan di bawah kulit untuk merangsang perubahan kolagen di lapisan dalam. Dipertimbangkan apabila garis rahang dan bahagian bawah muka menjadi masalah utama, bukan permukaan kulit atau isi padu."
+      "body": "Ultrabunyi berfokus yang disalurkan di bawah kulit untuk merangsang perubahan kolagen di lapisan dalam."
     },
     "ultherapy": {
       "why": "Untuk angkatan yang disasarkan apabila kulit kendur menjadi masalah utama",
-      "body": "Prinsip yang sama, dengan pengimejan ultrabunyi supaya doktor dapat melihat lapisan tisu semasa merawat. Relevan apabila ketepatan di lapisan dalam lebih penting daripada keluasan kawasan yang dirawat."
+      "body": "Prinsip yang sama, dengan pengimejan ultrabunyi supaya doktor dapat melihat lapisan tisu semasa merawat."
     },
     "bio-stimulator": {
       "why": "Untuk membina semula struktur secara beransur-ansur, bukan mengisi",
@@ -198,10 +196,9 @@
     },
     "dermal-fillers": {
       "why": "Untuk memulihkan isi padu di bahagian muka yang menjadi rata",
-      "body": "Disuntik untuk membina semula sokongan di bahagian tengah muka yang kempis, bukan untuk mengisi garisan satu per satu. Suntikan yang konservatif dan berperingkat ialah perbezaan antara rupa yang segar dan rupa yang terlebih isi."
+      "body": "Disuntik untuk membina semula sokongan di bahagian tengah muka yang kempis, bukan untuk mengisi garisan satu per satu."
     }
   },
-  "treatmentsNote": "Hampir tiada sesiapa yang memerlukan kesemua rawatan ini, dan merawat semuanya serentak menghilangkan maklumat yang diperlukan untuk menilai apa yang sebenarnya membantu. Pelan yang munasabah menangani perubahan yang paling mengganggu anda, menilainya semula, dan berhenti apabila anda berpuas hati.",
   "compare": {
     "intro": "Panduan umum. Kebanyakan muka menunjukkan beberapa perubahan; pelan berasaskan kolagen termasuk titik semakan.",
     "columns": [
@@ -268,7 +265,7 @@
     "steps": [
       {
         "title": "Sejarah",
-        "body": "Apa yang anda sedari dan dalam tempoh berapa lama, tabiat anda di bawah matahari, sama ada anda merokok, penjagaan kulit semasa, sebarang rawatan sebelum ini, serta kesihatan umum dan ubat-ubatan anda."
+        "body": "Tabiat anda di bawah matahari, merokok, penjagaan kulit dan rawatan sebelum ini."
       },
       {
         "title": "Pemeriksaan",
@@ -276,7 +273,7 @@
       },
       {
         "title": "Perbincangan dan pelan",
-        "body": "Perubahan mana yang paling utama, apa yang ditangani dan tidak ditangani oleh setiap pilihan, downtime dan risiko, serta langkah pertama yang konservatif, tanpa sebarang kewajipan untuk meneruskan."
+        "body": "Perubahan mana yang paling utama, serta langkah pertama yang konservatif."
       }
     ],
     "outro": "Bawa gambar anda dari lima atau sepuluh tahun lalu: perubahan yang beransur-ansur sukar dinilai daripada cermin."
@@ -303,7 +300,7 @@
       },
       {
         "lead": "Apa yang rawatan tidak dapat lakukan",
-        "body": "Tiada apa-apa di sini yang menghentikan atau membalikkan penuaan. Rawatan menangani sebahagian perubahan yang kelihatan, secara beransur-ansur dan separa, dan proses itu terus berjalan di bawahnya. Tiada mesin yang membuang kulit berlebihan, dan hasil perlu dikekalkan dengan penjagaan berkala serta tidak bertahan selama-lamanya."
+        "body": "Tiada apa-apa di sini yang menghentikan atau membalikkan penuaan. Tiada mesin yang membuang kulit berlebihan, dan hasil perlu dikekalkan dengan penjagaan berkala serta tidak bertahan selama-lamanya."
       }
     ],
     "disclose": "Beritahu doktor anda jika anda hamil atau menyusu, mengambil ubat pencair darah, mempunyai penyakit autoimun atau tisu penghubung, menggunakan retinoid atau asid, mempunyai sejarah herpes bibir (cold sore) atau parut keloid, pernah menerima suntikan, benang atau pembedahan muka sebelum ini, atau kulit anda baru terbakar matahari."
@@ -321,15 +318,7 @@
   "faqs": [
     {
       "q": "Boleh ke penuaan kulit dicegah?",
-      "a": "Bahagian intrinsik tidak boleh, kerana ia didorong oleh genetik dan masa serta berlaku kepada semua orang. Bahagian ekstrinsik lain ceritanya: pendedahan UV yang terkumpul menyumbang sebahagian besar daripada apa yang orang gambarkan sebagai kulit menua, dan pelindung matahari spektrum luas setiap hari ialah langkah yang mempunyai bukti paling kukuh, jauh mengatasi yang lain. Tidak merokok, tidur yang cukup dan diet yang munasabah semuanya menyokong hasil yang sama tanpa menghentikan proses asasnya."
-    },
-    {
-      "q": "Apa tanda penuaan kulit, dan apa sebenarnya yang berubah?",
-      "a": "Empat perkara, pada kelajuan berbeza. Kolagen dan elastin berkurang, jadi ketegangan dan keanjalan menurun. Isi padu hilang dan beranjak apabila pad lemak mengecut dan turun. Kelembapan dan fungsi pelindung kulit menurun, menjadikan kulit lebih kering dan kusam. Kerosakan matahari yang terkumpul pula kelihatan sebagai warna kulit tidak sekata dan tekstur kasar. Dua orang yang sebaya boleh didominasi oleh perubahan yang berbeza sama sekali."
-    },
-    {
-      "q": "Umur berapa patut mula rawatan anti-penuaan?",
-      "a": "Tiada umur yang betul dari segi perubatan. Yang benar ialah kualiti kulit dan pelindung matahari penting pada setiap peringkat umur, dan perubahan yang ditangani awal secara amnya lebih mudah daripada yang ditangani lewat. Ramai orang dinilai, diberitahu bahawa rutin mereka sudah memadai, dan pulang tanpa menempah apa-apa."
+      "a": "Bahagian intrinsik tidak boleh, kerana ia didorong oleh genetik dan masa serta berlaku kepada semua orang. Bahagian ekstrinsik lain ceritanya: pendedahan UV yang terkumpul menyumbang sebahagian besar daripada apa yang orang gambarkan sebagai kulit menua, dan pelindung matahari spektrum luas setiap hari ialah langkah yang mempunyai bukti paling kukuh, jauh mengatasi yang lain."
     },
     {
       "q": "Skincare anti-aging betul-betul berkesan ke?",
@@ -337,35 +326,27 @@
     },
     {
       "q": "Berapa lama baru nampak perubahan?",
-      "a": "Ia bergantung pada rawatan. Sokongan isi padu kelihatan serta-merta, walaupun bengkak menyebabkan beberapa hari pertama sukar dinilai. Skin booster menunjukkan perubahan dalam beberapa minggu. Rawatan perangsang kolagen dan berasaskan tenaga membina perubahan secara beransur-ansur dalam beberapa bulan, dan selalunya lebih disedari oleh orang lain berbanding diri anda sendiri."
+      "a": "Ia bergantung pada rawatan. Rawatan perangsang kolagen dan berasaskan tenaga membina perubahan secara beransur-ansur dalam beberapa bulan, dan selalunya lebih disedari oleh orang lain berbanding diri anda sendiri."
     },
     {
       "q": "Adakah rawatan akan buat muka saya nampak tak natural?",
-      "a": "Risiko itu hampir sepenuhnya datang daripada membuat terlalu banyak sekali gus, terutamanya dengan isi padu. Cara mengelaknya ialah rawatan yang konservatif dan berperingkat dengan titik semakan antara setiap peringkat, bersama doktor yang sanggup berkata bahawa sesuatu permintaan itu tidak seimbang. Memang munasabah untuk menyatakan semasa konsultasi bahawa anda mahu nampak segar, bukan berbeza."
+      "a": "Risiko itu hampir sepenuhnya datang daripada membuat terlalu banyak sekali gus, terutamanya dengan isi padu. Cara mengelaknya ialah rawatan yang konservatif dan berperingkat dengan titik semakan antara setiap peringkat, bersama doktor yang sanggup berkata bahawa sesuatu permintaan itu tidak seimbang."
     },
     {
       "q": "Kesannya tahan berapa lama?",
-      "a": "Tiada satu pun yang bertahan selama-lamanya, dan penuaan terus berlaku di bawah apa sahaja yang dibuat. Sokongan isi padu diuraikan secara beransur-ansur oleh badan dalam tempoh beberapa bulan hingga beberapa tahun, bergantung pada produk dan kedudukan suntikan. Perubahan kolagen terbina dahulu, kemudian berkurang semula. Kebanyakan orang yang berpuas hati dengan hasilnya kembali secara berkala."
+      "a": "Sokongan isi padu diuraikan secara beransur-ansur oleh badan dalam tempoh beberapa bulan hingga beberapa tahun, bergantung pada produk dan kedudukan suntikan. Perubahan kolagen terbina dahulu, kemudian berkurang semula."
     },
     {
       "q": "Rawatan laser selamat ke untuk kulit Asia atau sawo matang?",
-      "a": "Ya, jika mesin dan tetapannya dipilih oleh doktor yang berpengalaman dengan jenis kulit anda. Perkara khusus yang perlu diambil kira bagi warna kulit sederhana dan lebih gelap ialah hiperpigmentasi pasca-radang, iaitu apabila kulit bertindak balas terhadap rawatan dengan menghasilkan pigmen tambahan. Ia diuruskan dengan memilih panjang gelombang yang sesuai, menggunakan tetapan yang konservatif, menjarakkan sesi dengan lebih jauh dan tegas tentang pelindung matahari selepas itu."
+      "a": "Ya, jika mesin dan tetapannya dipilih oleh doktor yang berpengalaman dengan jenis kulit anda. Perkara khusus yang perlu diambil kira bagi warna kulit sederhana dan lebih gelap ialah hiperpigmentasi pasca-radang, iaitu apabila kulit bertindak balas terhadap rawatan dengan menghasilkan pigmen tambahan."
     },
     {
       "q": "Perlu ke rawat kulit leher dan tangan juga?",
-      "a": "Ia wajar dinilai, dan selalunya kawasan ini lebih teruk dirosakkan matahari berbanding muka kerana paling kurang dilindungi. Ia juga bertindak balas secara berbeza: kulit lebih nipis, kelenjar minyak lebih sedikit dan pemulihan lebih perlahan bermakna rawatan lebih konservatif dan jangkaan lebih sederhana. Muka yang dirawat secara berasingan sementara leher dan tangan dibiarkan boleh kelihatan tidak sepadan."
+      "a": "Ia wajar dinilai, dan selalunya kawasan ini lebih teruk dirosakkan matahari berbanding muka kerana paling kurang dilindungi. Muka yang dirawat secara berasingan sementara leher dan tangan dibiarkan boleh kelihatan tidak sepadan."
     },
     {
       "q": "Apa beza penuaan intrinsik dan ekstrinsik?",
-      "a": "Penuaan intrinsik ialah apa yang dilakukan oleh gen dan peredaran masa tanpa mengira cara anda hidup: kolagen berkurang secara beransur-ansur, kulit menipis, isi padu berubah. Penuaan ekstrinsik ialah apa yang ditambah oleh persekitaran dan tabiat, dan ia didominasi oleh pendedahan UV, dengan merokok, pencemaran dan diet turut menyumbang. Bahagian berguna daripada perbezaan ini ialah yang kedua sebahagian besarnya dalam kawalan anda, dan ia merupakan bahagian lebih besar daripada apa yang kebanyakan orang lihat."
-    },
-    {
-      "q": "Perlu ke buat semua rawatan ini sekali gus?",
-      "a": "Tidak, dan biasanya itu bukan idea yang baik. Merawat semuanya serentak lebih mahal, meningkatkan kemungkinan rupa yang berlebihan, dan menghilangkan maklumat yang anda perlukan untuk menilai apa yang sebenarnya berkesan. Menangani satu perkara yang paling mengganggu anda, menilainya semula, kemudian memutuskan sama ada mahu teruskan adalah lebih jimat dan lebih berkemungkinan membuatkan anda berpuas hati."
-    },
-    {
-      "q": "Bila rawatan tanpa pembedahan tidak lagi mencukupi?",
-      "a": "Ada tahap sebegitu, dan konsultasi yang jujur akan menyatakannya. Apabila kulit sudah sangat kendur dan benar-benar turun, tiada mesin yang dapat membuang kulit berlebihan, dan kursus rawatan yang dijual dalam keadaan itu hanya membawa kekecewaan. Doktor kami akan memberitahu anda jika itu keadaannya dan, jika sesuai, mencadangkan anda mendapatkan pendapat pakar bedah."
+      "a": "Penuaan intrinsik ialah apa yang dilakukan oleh gen dan peredaran masa tanpa mengira cara anda hidup: kolagen berkurang secara beransur-ansur, kulit menipis, isi padu berubah. Penuaan ekstrinsik ialah apa yang ditambah oleh persekitaran dan tabiat, dan ia didominasi oleh pendedahan UV, dengan merokok, pencemaran dan diet turut menyumbang."
     }
   ],
   "relatedConcerns": [

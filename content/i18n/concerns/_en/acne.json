@@ -3,8 +3,8 @@
   "name": "Acne",
   "group": "Skin",
   "image": "https://cdn.kaiteki.my/concerns/acne/card.jpg",
-  "summary": "Active breakouts and old scarring respond to different treatments. A doctor identifies the type and cause before recommending a plan.",
-  "leadAnswer": "Acne is a common skin condition in which pores become blocked with oil and dead skin, leading to blackheads, inflamed spots and sometimes scarring. Active breakouts, flat marks and scars are three different problems: active acne is usually managed medically first, and energy-based treatment is considered for the marks and scars it leaves.",
+  "summary": "Active breakouts and old scarring respond to different treatments.",
+  "leadAnswer": "Acne is a common skin condition in which pores become blocked with oil and dead skin, leading to blackheads, inflamed spots and sometimes scarring. Active acne is usually managed medically first, and energy-based treatment is considered for the marks and scars it leaves.",
   "treatments": [
     "pico-laser",
     "microneedling",
@@ -69,7 +69,7 @@
     {
       "heading": "What is acne?",
       "body": [
-        "Acne occurs when hair follicles become blocked with oil and dead skin cells. That blockage can stay quiet as a blackhead or whitehead, or it can become inflamed and form a red, tender spot. It most often appears on the face, but the back, chest and shoulders are also common."
+        "Acne occurs when hair follicles become blocked with oil and dead skin cells. That blockage can stay quiet as a blackhead or whitehead, or it can become inflamed and form a red, tender spot."
       ]
     }
   ],
@@ -93,8 +93,7 @@
         "lead": "Contributing factors:",
         "body": "family history, certain medications, occlusive skincare or makeup, humidity and sweat, friction from helmets, straps or masks."
       }
-    ],
-    "outro": "Diet, stress and sleep can influence acne for some people, but they are rarely the whole picture on their own."
+    ]
   },
   "variant": {
     "kind": "tabs",
@@ -105,21 +104,7 @@
         "label": "Active acne",
         "sub": "Spots you have now",
         "title": "Active acne",
-        "body": "Spots that are currently forming. These are usually treated medically first, with topical or oral treatment, because settling the inflammation protects the skin from further marking and scarring.",
-        "items": [
-          {
-            "lead": "Comedonal:",
-            "body": "blackheads and whiteheads, no redness. Often across the forehead, nose and chin."
-          },
-          {
-            "lead": "Inflammatory:",
-            "body": "red papules and pustules that are tender to touch."
-          },
-          {
-            "lead": "Nodulocystic:",
-            "body": "deep, firm, painful lumps under the skin that do not come to a head. The type most likely to scar."
-          }
-        ],
+        "body": "Spots that are currently forming.",
         "routing": "medical management first, with clinic facials or RF microneedling considered as support once the doctor advises it."
       },
       {
@@ -137,13 +122,13 @@
             "body": "(post-inflammatory hyperpigmentation), from excess pigment produced during inflammation. Very common in the medium and deeper skin tones seen across Malaysia, and worsened by sun exposure."
           }
         ],
-        "routing": "pico laser, with daily sunscreen as a non-negotiable part of the plan."
+        "routing": "pico laser."
       },
       {
         "label": "Scarring",
         "sub": "Texture you can feel",
         "title": "Acne scarring",
-        "body": "A change in the skin's structure you can feel as a dip or a raised area. Scars do not fade on their own. The scar types and how each is approached are covered on the acne scars page.",
+        "body": "A change in the skin's structure you can feel as a dip or a raised area. Scars do not fade on their own.",
         "routing": "RF microneedling or resurfacing laser, often over several sessions, with combinations chosen by scar type."
       }
     ]
@@ -176,7 +161,7 @@
   ],
   "locationBlock": {
     "heading": "Where acne appears",
-    "intro": "Location is a clue, not a diagnosis. The idea that a spot in one place points to a specific organ has no clinical basis, but some patterns are genuinely useful to notice.",
+    "intro": "Location is a clue, not a diagnosis.",
     "cards": [
       {
         "title": "Chin and jawline",
@@ -184,15 +169,15 @@
       },
       {
         "title": "Forehead",
-        "body": "Commonly linked to oil, sweat, hair products and friction from caps, helmets or fringes. Small rough bumps here are usually closed comedones."
+        "body": "Commonly linked to oil, sweat, hair products and friction from caps, helmets or fringes."
       },
       {
         "title": "Cheeks",
-        "body": "Friction and contact are frequent contributors: phone screens, pillowcases, mask edges. Cheeks also mark and scar readily."
+        "body": "Friction and contact are frequent contributors: phone screens, pillowcases, mask edges."
       },
       {
         "title": "Nose",
-        "body": "Dense oil glands mean blackheads and visible pores are common here. Squeezing tends to worsen both."
+        "body": "Dense oil glands mean blackheads and visible pores are common here."
       },
       {
         "title": "Back, chest and shoulders",
@@ -201,7 +186,7 @@
     ],
     "note": {
       "title": "Not typical acne?",
-      "body": "Small uniform bumps that itch, or rashes that do not respond to acne treatment, may be something else entirely, such as folliculitis or rosacea. A doctor can tell the difference."
+      "body": "Small uniform bumps that itch, or rashes that do not respond to acne treatment, may be something else entirely, such as folliculitis or rosacea."
     }
   },
   "seeDoctor": {
@@ -209,11 +194,9 @@
     "triggers": [
       "Over-the-counter products have not helped after around eight to twelve weeks of consistent use.",
       "Spots are deep, painful or leaving marks behind.",
-      "You are already seeing indentations or texture change.",
       "Breakouts started in adulthood, or changed pattern suddenly.",
       "Your acne is affecting your mood, confidence or how you go about your day."
-    ],
-    "outro": "With deep or scarring acne, early assessment matters: the aim is to settle inflammation before it leaves permanent change."
+    ]
   },
   "ctaMid": {
     "heading": "Not sure which one you're dealing with?",
@@ -223,7 +206,7 @@
   "treatmentWhy": {
     "pico-laser": {
       "why": "For post-acne marks and uneven tone",
-      "body": "A picosecond laser that targets pigment in short, high-speed pulses. Most relevant once acne has settled and what remains is discolouration rather than texture."
+      "body": "A picosecond laser that targets pigment in short, high-speed pulses."
     },
     "microneedling": {
       "why": "For depressed scarring, texture and enlarged pores",
@@ -231,18 +214,17 @@
     },
     "resurfacing-laser": {
       "why": "For deeper scarring and significant texture change",
-      "body": "A fractional CO₂ laser used where scarring is more established. More downtime than the options above, and requires careful sun avoidance afterwards."
+      "body": "A fractional CO₂ laser used where scarring is more established. More downtime than the options above."
     },
     "exosome-therapy": {
       "why": "Used alongside other treatments, not instead of them",
-      "body": "A regenerative approach applied after energy-based treatment to support skin recovery. The evidence base is still developing, and it is offered as an adjunct rather than a standalone acne treatment."
+      "body": "A regenerative approach applied after energy-based treatment to support skin recovery. The evidence base is still developing."
     },
     "facial-treatments": {
       "why": "For congestion, cleansing and ongoing maintenance",
-      "body": "Hydrafacial and Silkpeel are used to support cleansing and exfoliation, particularly with comedonal congestion. Supportive care. They do not replace medical treatment for inflammatory acne."
+      "body": "Hydrafacial and Silkpeel are used to support cleansing and exfoliation, particularly with comedonal congestion. They do not replace medical treatment for inflammatory acne."
     }
   },
-  "treatmentsNote": "Active inflammatory acne is usually managed medically first. Energy-based treatments are generally considered once breakouts are under control, or alongside medical treatment where the doctor judges it appropriate.",
   "compare": {
     "intro": "A general guide. Combinations are common, and sessions are set after assessment.",
     "columns": [
@@ -351,18 +333,17 @@
     "steps": [
       {
         "title": "History",
-        "body": "What you've tried, how long it's been going on, your medical history, and any medication or skincare you're currently using."
+        "body": "What you've tried, and any medication or skincare you currently use."
       },
       {
         "title": "Examination",
-        "body": "The doctor examines your skin, sometimes under magnification, to identify what's active, what's marking, and what's scarring."
+        "body": "The doctor examines your skin, sometimes under magnification."
       },
       {
         "title": "Discussion and plan",
-        "body": "Options, risks and downtime for active acne, marks and scarring, and what is realistic, with no obligation to proceed."
+        "body": "Options, risks and downtime, with no obligation to proceed."
       }
-    ],
-    "outro": "Bring a list of anything you're currently applying or taking, including supplements and oral acne medication. If you have photographs of your skin during a flare, those help too."
+    ]
   },
   "risks": {
     "items": [
@@ -376,11 +357,11 @@
       },
       {
         "lead": "Sun protection is not optional",
-        "body": "Daily broad-spectrum sunscreen is part of the plan for every treatment listed above, both before and after. Without it, marks are likely to return or deepen."
+        "body": "Daily broad-spectrum sunscreen is part of the plan for every treatment listed above, both before and after."
       },
       {
         "lead": "What treatment cannot do",
-        "body": "Ice-pick scarring rarely resolves fully with energy devices alone. Acne can recur after treatment, because treating marks or scars does not change the tendency to break out. Improvement builds gradually over months as collagen remodels. It is not visible the following week."
+        "body": "Ice-pick scarring rarely resolves fully with energy devices alone. Acne can recur after treatment, because treating marks or scars does not change the tendency to break out. Improvement builds gradually over months as collagen remodels."
       }
     ],
     "disclose": "Tell your doctor if you are pregnant or breastfeeding, take or recently took oral acne medication, have a history of cold sores, keloid scarring or recent tanning, or have had any skin procedure in the past few weeks. Any of these may change what is appropriate or when."
@@ -397,52 +378,36 @@
   },
   "faqs": [
     {
-      "q": "What's the difference between active acne and acne scars?",
-      "a": "Active acne is what's forming now: spots, redness, congestion. Scarring is the structural change left behind after inflammation has settled, and you can usually feel it as a dip or an irregularity. Between the two sit flat marks: red or brown discolouration where the skin is smooth but the colour hasn't returned to normal. All three often coexist and are treated differently."
-    },
-    {
       "q": "Can acne scarring be treated?",
-      "a": "Depressed scarring can often be improved, though rarely erased. Treatments like RF microneedling and resurfacing lasers work by stimulating the skin to remodel its own collagen, which takes place gradually over months rather than immediately. How much improvement is realistic depends heavily on scar type: rolling and boxcar scars usually respond better than ice-pick scars, which are narrow and deep. See the acne scars page for each scar type."
+      "a": "Depressed scarring can often be improved, though rarely erased. How much improvement is realistic depends heavily on scar type: rolling and boxcar scars usually respond better than ice-pick scars, which are narrow and deep. See the acne scars page for each scar type."
     },
     {
       "q": "Why does adult acne happen?",
-      "a": "Adult acne is usually multi-factorial. Hormonal fluctuation is a frequent contributor, particularly for women with breakouts around the jawline and chin that follow a cycle. Skincare and makeup that block pores, certain medications, stress affecting sleep and skin barrier function, and simple genetic tendency all play a part. It's also common for adult acne to look different from teenage acne: fewer spots, but deeper and slower to settle."
+      "a": "Adult acne is usually multi-factorial. Hormonal fluctuation is a frequent contributor, particularly for women with breakouts around the jawline and chin that follow a cycle. It's also common for adult acne to look different from teenage acne: fewer spots, but deeper and slower to settle."
     },
     {
       "q": "Will treatment make my acne worse first?",
-      "a": "Some medical acne treatments involve an initial adjustment period where the skin appears worse before it improves. This is expected with certain topical treatments and your doctor will tell you in advance if it applies. Energy-based treatments don't typically cause a flare, but they can leave redness or dryness for a few days."
-    },
-    {
-      "q": "How many sessions will I need?",
-      "a": "This is set after the doctor examines your skin, because it depends on what's being treated and how severe it is. Energy-based treatments for scarring are typically planned as a course of several sessions spaced around four weeks apart, with a review point built in to check how your skin is responding."
-    },
-    {
-      "q": "How soon will I see a difference?",
-      "a": "It depends entirely on what's being treated. Marks and discolouration generally shift earlier than structural scarring. Scar treatment works by stimulating collagen remodelling, and that process continues for months beneath the surface after the skin looks recovered. Deeper scars are often formally reassessed six to twelve months after a course. Taking your own photographs in consistent lighting helps, because daily change is very hard to notice in the mirror."
+      "a": "Some medical acne treatments involve an initial adjustment period where the skin appears worse before it improves. Energy-based treatments don't typically cause a flare, but they can leave redness or dryness for a few days."
     },
     {
       "q": "Is laser treatment safe for darker or Asian skin tones?",
-      "a": "Yes, when the device and settings are chosen appropriately by a doctor who is experienced with your skin type. The specific concern with medium and deeper skin tones is post-inflammatory hyperpigmentation, the skin responding to treatment by producing extra pigment. This is managed by selecting suitable devices, using conservative settings, spacing sessions further apart, and being strict about sun protection. It's a real consideration, not a reason to avoid treatment."
+      "a": "Yes, when the device and settings are chosen appropriately by a doctor who is experienced with your skin type. The specific concern with medium and deeper skin tones is post-inflammatory hyperpigmentation, the skin responding to treatment by producing extra pigment. It's a real consideration, not a reason to avoid treatment."
     },
     {
       "q": "Can I wear makeup after treatment?",
-      "a": "It depends on the treatment. After minimal-downtime treatments, makeup can usually be applied the following day. After RF microneedling, most people wait until the redness settles, typically two to three days. After resurfacing laser, longer: the skin needs to re-epithelialise first. Your doctor will give you specific timing for what you've had."
+      "a": "After minimal-downtime treatments, makeup can usually be applied the following day. After RF microneedling, most people wait until the redness settles, typically two to three days. After resurfacing laser, longer: the skin needs to re-epithelialise first."
     },
     {
       "q": "Will my acne come back after treatment?",
-      "a": "Possibly. Treating marks or scars addresses what previous breakouts left behind. It doesn't change your skin's underlying tendency to break out. Acne is a chronic condition for many people, with periods of flare and quiet. That's why the plan usually includes a maintenance element: appropriate daily skincare, sun protection, and ongoing medical management where indicated. Long-term control is a realistic goal; a permanent cure isn't something anyone can promise."
+      "a": "Possibly. Acne is a chronic condition for many people, with periods of flare and quiet. That's why the plan usually includes a maintenance element: appropriate daily skincare, sun protection, and ongoing medical management where indicated."
     },
     {
       "q": "Do I need to stop my current skincare or acne medication?",
-      "a": "Don't stop anything without telling your doctor first. Some products, retinoids and exfoliating acids in particular, are usually paused for a period before and after energy-based treatment. Oral acne medication matters especially: if you're taking it now or have taken it recently, say so at the consultation, as it can affect the timing of what's appropriate."
+      "a": "Don't stop anything without telling your doctor first. Some products, retinoids and exfoliating acids in particular, are usually paused for a period before and after energy-based treatment."
     },
     {
       "q": "Is treatment painful?",
-      "a": "Most people describe energy-based treatments as uncomfortable rather than painful. Topical numbing cream is applied beforehand where appropriate, and cooling is used during and after. RF microneedling is generally felt more than pico laser. Settings and numbing time can be adjusted."
-    },
-    {
-      "q": "Can acne on my back or chest be treated?",
-      "a": "Yes, though these areas behave differently from the face. Skin on the back and chest is thicker, lesions there tend to be larger, and scarring is more likely to be raised than depressed, which calls for a different approach entirely. Treatment sessions also cover a bigger area."
+      "a": "Most people describe energy-based treatments as uncomfortable rather than painful. Topical numbing cream is applied beforehand where appropriate, and cooling is used during and after. RF microneedling is generally felt more than pico laser."
     }
   ],
   "relatedConcerns": [

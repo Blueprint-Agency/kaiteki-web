@@ -3,14 +3,14 @@
   "name": "Jeragat (Melasma)",
   "group": "Skin",
   "image": "https://cdn.kaiteki.my/concerns/melasma/card.jpg",
-  "summary": "Jeragat (melasma) dikawal, bukan disembuhkan, dan laser yang salah boleh menjadikannya lebih gelap. Doktor mengesahkan sama ada ia jeragat, dan sedalam mana ia berada, sebelum apa-apa digunakan.",
-  "leadAnswer": "Laser boleh memburukkan jeragat jika mesin atau tetapan yang salah digunakan: laser berhaba tinggi mencetuskan keradangan, dan keradangan memberi isyarat kepada sel pigmen untuk menjadi lebih gelap. Jeragat (melasma) ialah masalah pigmentasi kronik yang menyebabkan tompok coklat atau kelabu yang simetri, dicetuskan oleh UV, hormon dan genetik. Ia dikawal, bukan disembuhkan, dan pelindung matahari setiap hari ialah asasnya.",
+  "summary": "Jeragat (melasma) dikawal, bukan disembuhkan, dan laser yang salah boleh menjadikannya lebih gelap.",
+  "leadAnswer": "Laser boleh memburukkan jeragat jika mesin atau tetapan yang salah digunakan: laser berhaba tinggi mencetuskan keradangan, dan keradangan memberi isyarat kepada sel pigmen untuk menjadi lebih gelap. Jeragat (melasma) ialah masalah pigmentasi kronik yang menyebabkan tompok coklat atau kelabu yang simetri, dicetuskan oleh UV, hormon dan genetik.",
   "treatments": [
     "pico-laser",
     "microneedling",
     "facial-treatments"
   ],
-  "reviewedBy": "dr-joaan-kong",
+  "reviewedBy": "dr-chew-yuhhui",
   "lastReviewed": "2026-10-11",
   "seoTitle": "Rawatan Jeragat (Melasma) di Malaysia | Kaiteki",
   "seoDescription": "Jeragat (melasma) dikawal, bukan disembuhkan, dan laser yang salah boleh menggelapkannya. Doktor menilai jenis dan kedalamannya. Tempah konsultasi percuma.",
@@ -37,7 +37,7 @@
     {
       "heading": "Apa itu jeragat (melasma)?",
       "body": [
-        "Jeragat atau melasma ialah gangguan pigmentasi kronik di mana melanosit, iaitu sel penghasil pigmen dalam kulit, menjadi terlalu aktif dan menghasilkan melanin berlebihan. Hasilnya ialah tompok coklat gelap, coklat cerah atau kelabu di muka. Tompok ini rata dan tidak sakit, dan biasanya muncul secara simetri di kedua-dua belah muka, sebab itu jeragat semasa mengandung kadangkala dipanggil \"topeng kehamilan\".",
+        "Jeragat atau melasma ialah gangguan pigmentasi kronik di mana melanosit, iaitu sel penghasil pigmen dalam kulit, menjadi terlalu aktif dan menghasilkan melanin berlebihan. Hasilnya ialah tompok coklat gelap, coklat cerah atau kelabu di muka.",
         "Ia tidak berbahaya dan tidak berjangkit, tetapi jarang hilang dengan sendirinya. Ia jauh lebih biasa pada wanita, dan pada orang yang berkulit sederhana hingga gelap."
       ]
     }
@@ -48,7 +48,7 @@
     "items": [
       {
         "lead": "Sinaran UV:",
-        "body": "pencetus utama. Kedudukan Malaysia di garisan khatulistiwa bermakna pendedahan UV yang kuat sepanjang tahun, jadi walaupun seketika di luar tanpa perlindungan boleh menggelapkan tompok sedia ada atau mencetuskan tompok baharu."
+        "body": "pencetus utama. Kedudukan Malaysia di garisan khatulistiwa bermakna pendedahan UV yang kuat sepanjang tahun."
       },
       {
         "lead": "Perubahan hormon:",
@@ -62,8 +62,7 @@
         "lead": "Haba dan cahaya nampak:",
         "body": "haba inframerah daripada memasak, sauna atau kehangatan matahari secara langsung, dan cahaya biru daripada skrin, boleh merangsang laluan pigmen tanpa pendedahan UV yang biasa."
       }
-    ],
-    "outro": "Kerengsaan juga memainkan peranan. Keradangan memburukkan jeragat, sebab itu rutin penjagaan kulit yang terlalu agresif biasanya memakan diri."
+    ]
   },
   "variant": {
     "kind": "tabs",
@@ -99,7 +98,6 @@
   },
   "locationBlock": {
     "heading": "Kedudukan jeragat: di mana ia muncul",
-    "intro": "Jeragat biasanya muncul dalam corak seperti cermin di kedua-dua belah muka.",
     "cards": [
       {
         "title": "Tulang pipi",
@@ -107,7 +105,7 @@
       },
       {
         "title": "Atas bibir, dahi, hidung dan dagu",
-        "body": "Bahagian tengah muka. Bayang simetri di atas bibir ialah corak jeragat yang biasa, dan sering disangka bulu halus atau kesan bercukur."
+        "body": "Bayang simetri di atas bibir ialah corak jeragat yang biasa, dan sering disangka bulu halus atau kesan bercukur."
       },
       {
         "title": "Garis rahang",
@@ -123,9 +121,7 @@
     "intro": "Dapatkan penilaian jika:",
     "triggers": [
       "Rutin di rumah yang konsisten dengan pelindung matahari setiap hari masih belum membawa perubahan yang cukup selepas 8 hingga 12 minggu.",
-      "Anda tidak pasti sama ada itu jeragat atau kerosakan matahari, dan produk yang anda gunakan hanya ditujukan untuk salah satu daripadanya.",
-      "Anda ada tompok coklat dan muka yang kerap kemerahan pada muka yang sama.",
-      "Anda sedang mempertimbangkan laser atau mesin lain, yang sepatutnya hanya dibuat selepas kedalaman dan jenis jeragat anda dinilai."
+      "Anda sedang mempertimbangkan laser atau mesin lain."
     ]
   },
   "ctaMid": {
@@ -136,24 +132,23 @@
   "treatmentWhy": {
     "pico-laser": {
       "why": "Untuk jeragat pada tenaga rendah, sebagai sebahagian daripada kursus",
-      "body": "Menghantar denyutan yang sangat singkat dan berfungsi sebahagian besarnya melalui tekanan fotoakustik, bukan haba. Ini penting bagi jeragat, kerana mesin berhaba tinggi boleh mencetuskan keradangan dan lantunan semula. Dirancang sebagai satu kursus pada tetapan tenaga rendah, dan digunakan jauh lebih berhati-hati berbanding untuk tompok matahari."
+      "body": "Menghantar denyutan yang sangat singkat dan berfungsi sebahagian besarnya melalui tekanan fotoakustik, bukan haba."
     },
     "microneedling": {
       "why": "Untuk jeragat, menggunakan mod gelombang berdenyut",
-      "body": "Sylfirm X mempunyai mod gelombang berdenyut yang dibangunkan oleh pengeluar dengan mengambil kira masalah pigmen dan salur darah. Jeragat tetap kronik dan berulang, jadi ia digabungkan dengan penjagaan sapuan dan perlindungan matahari yang ketat, bukan dianggap prosedur sekali sahaja."
+      "body": "Sylfirm X mempunyai mod gelombang berdenyut yang dibangunkan oleh pengeluar dengan mengambil kira masalah pigmen dan salur darah."
     },
     "facial-treatments": {
       "why": "Untuk pembaharuan sel permukaan tanpa haba",
-      "body": "Hydrafacial dan Silkpeel mengelupas kulit dengan lembut tanpa haba. Digunakan antara rawatan lain sebagai penjagaan berterusan."
+      "body": "Hydrafacial dan Silkpeel mengelupas kulit dengan lembut tanpa haba."
     }
   },
-  "treatmentsNote": "Bagi jeragat epidermis, rutin sapuan dan perlindungan matahari selalunya didahulukan sebelum sebarang mesin.",
   "firstVisit": {
     "intro": "Pemeriksaan mengesahkan bahawa ia jeragat, bukan tompok matahari atau kesan, dan menganggarkan sedalam mana ia berada.",
     "steps": [
       {
         "title": "Sejarah",
-        "body": "Bila tompok itu muncul, sama ada ia berubah semasa mengandung, pengambilan pil perancang atau pendedahan matahari, penjagaan kulit anda, dan sebarang ubat yang anda ambil."
+        "body": "Bila tompok itu muncul, dan sama ada ia berubah semasa mengandung, pengambilan pil perancang atau pendedahan matahari."
       },
       {
         "title": "Pemeriksaan",
@@ -161,10 +156,9 @@
       },
       {
         "title": "Perbincangan dan pelan",
-        "body": "Pilihan, risiko dan downtime bagi jenis jeragat anda, dan apa yang realistik, tanpa sebarang kewajipan untuk meneruskan."
+        "body": "Pilihan, risiko dan downtime, tanpa sebarang kewajipan untuk meneruskan."
       }
-    ],
-    "outro": "Bawa senarai semua produk yang anda sapu pada kulit, termasuk produk pencerah atau preskripsi, dan beritahu doktor jika anda hamil, menyusu atau merancang untuk hamil."
+    ]
   },
   "visitImages": [
     {
@@ -188,7 +182,7 @@
       },
       {
         "lead": "Apa yang rawatan tidak dapat lakukan",
-        "body": "Tiada rawatan yang mengubah kecenderungan kulit untuk menghasilkan pigmen. Jeragat dikawal, bukan disembuhkan, dan lazimnya kembali dengan pendedahan matahari, haba atau perubahan hormon. Tahap perubahan berbeza bagi setiap orang, dan tiada siapa boleh menjanjikan hasil tertentu lebih awal."
+        "body": "Tiada rawatan yang mengubah kecenderungan kulit untuk menghasilkan pigmen. Tahap perubahan berbeza bagi setiap orang, dan tiada siapa boleh menjanjikan hasil tertentu lebih awal."
       }
     ],
     "disclose": "Beritahu doktor anda jika anda hamil atau menyusu, mengambil kontraseptif hormon atau terapi hormon, ada sejarah masalah pembekuan darah, mengambil sebarang ubat, atau baru-baru ini terdedah kepada matahari atau menjalani prosedur kulit."
@@ -200,10 +194,8 @@
       "Sama ada mesin termasuk dalam pelan, atau penjagaan sapuan dan perlindungan matahari didahulukan.",
       "Bilangan sesi dalam kursus rawatan mesin, dan sebarang penjagaan berterusan.",
       "Sama ada rawatan digabungkan."
-    ],
-    "outro": "Jeragat dirancang sebagai kawalan berterusan, bukan kursus yang tetap."
+    ]
   },
-  "technologyIntro": "Bagi jeragat, mesin dan tetapan lebih penting berbanding hampir semua masalah kulit lain, kerana haba boleh menjadikannya lebih gelap.",
   "faqs": [
     {
       "q": "Jeragat boleh hilang ke? Boleh sembuh?",
@@ -211,15 +203,15 @@
     },
     {
       "q": "Laser boleh buat jeragat makin teruk ke?",
-      "a": "Ya, jika mesin atau tetapan yang salah digunakan. Laser berhaba tinggi mencetuskan keradangan, dan keradangan memberi isyarat kepada sel pigmen untuk melantun semula dan menjadi lebih gelap. Sebab itu jeragat dirawat dengan tetapan fotoakustik bertenaga rendah dan jarak sesi yang konservatif."
+      "a": "Ya, jika mesin atau tetapan yang salah digunakan. Sebab itu jeragat dirawat dengan tetapan fotoakustik bertenaga rendah dan jarak sesi yang konservatif."
     },
     {
       "q": "Apa beza jeragat (melasma) dan tompok matahari?",
-      "a": "Tompok matahari ialah tompok coklat yang berasingan dengan tepi yang jelas, terkumpul selama bertahun-tahun pada kulit yang paling banyak terdedah kepada matahari. Jeragat membentuk tompok yang lebih besar, simetri dan bertepi lembut di kedua-dua pipi, atas bibir atau dahi, dan ia berubah mengikut hormon dan haba. Tetapan laser yang sesuai untuk tompok matahari boleh menjadikan jeragat lebih gelap."
+      "a": "Tompok matahari ialah tompok coklat yang berasingan dengan tepi yang jelas, terkumpul selama bertahun-tahun pada kulit yang paling banyak terdedah kepada matahari. Jeragat membentuk tompok yang lebih besar, simetri dan bertepi lembut di kedua-dua pipi, atas bibir atau dahi, dan ia berubah mengikut hormon dan haba."
     },
     {
       "q": "Jeragat semasa mengandung akan hilang selepas bersalin?",
-      "a": "Selalunya ia menjadi lebih cerah dalam beberapa bulan selepas bersalin, apabila hormon kembali stabil. Tompok yang tinggal sering masih ada, terutamanya di negara yang tinggi UV seperti Malaysia. Penjagaan sapuan yang lembut, setelah anda tidak lagi hamil atau menyusu dan doktor membenarkannya, boleh membantu mencerahkan yang masih tinggal."
+      "a": "Selalunya ia menjadi lebih cerah dalam beberapa bulan selepas bersalin, apabila hormon kembali stabil. Tompok yang tinggal sering masih ada, terutamanya di negara yang tinggi UV seperti Malaysia."
     },
     {
       "q": "Boleh ke buat rawatan jeragat semasa mengandung atau menyusu?",
@@ -227,15 +219,7 @@
     },
     {
       "q": "Boleh ke Sylfirm X digunakan untuk jeragat pada kulit Asia?",
-      "a": "Jeragat ialah antara masalah yang ditetapkan oleh pengeluar untuk mod gelombang berdenyutnya, dan tenaga radiofrekuensi tidak menyasarkan melanin, jadi RF microneedling digunakan merentasi warna kulit yang lebih gelap. Jeragat tetap masalah kronik dan berulang yang memerlukan penjagaan sapuan dan perlindungan matahari berterusan, bukan satu prosedur sahaja."
-    },
-    {
-      "q": "Kenapa jeragat datang balik selepas rawatan?",
-      "a": "Rawatan mencerahkan pigmen yang sedia ada; ia tidak mengubah kecenderungan sel pigmen untuk aktif semula dengan UV, haba, hormon atau kerengsaan. Sebab itu pelindung matahari setiap hari dan penjagaan berkala ialah sebahagian daripada pelan, dan sebab itu berhenti menggunakan pelindung matahari ialah sebab paling biasa tompok kembali."
-    },
-    {
-      "q": "Muka kemerahan boleh jadi tanda jeragat ke?",
-      "a": "Tidak. Jeragat menyebabkan perubahan warna coklat atau kelabu, bukan kemerahan. Namun, kedua-duanya boleh muncul bersama pada muka yang sama. Jika anda ada tompok gelap dan muka yang kerap kemerahan, dapatkan penilaian supaya pelan itu menangani kedua-duanya, bukan merawat satu dan memburukkan yang satu lagi."
+      "a": "Jeragat ialah antara masalah yang ditetapkan oleh pengeluar untuk mod gelombang berdenyutnya, dan tenaga radiofrekuensi tidak menyasarkan melanin, jadi RF microneedling digunakan merentasi warna kulit yang lebih gelap."
     }
   ],
   "relatedConcerns": [

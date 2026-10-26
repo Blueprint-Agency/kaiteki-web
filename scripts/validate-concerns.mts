@@ -12,8 +12,9 @@
 // and no compliance reversal"). Its treatment twin is the 156px `steps` ceiling,
 // which arrives with the field in ticket 02.
 //
-//   Q-02  depth matches the registry: full = 12 FAQs + comparison table,
-//         lite  = 8 FAQs and NO comparison table
+//   Q-02  depth matches the registry: full = 8 FAQs + comparison table,
+//         lite  = 6 FAQs and NO comparison table (cut from 12/8 on 2026-10-26:
+//         the extra questions restated the page body)
 //   Q-03  every "why for X" line is unique across all 14 concern pages
 //   Q-04  zero outcome promises, superiority words or prices
 //   Q-05  the risks block names at least one thing treatment cannot do

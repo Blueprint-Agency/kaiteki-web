@@ -3,7 +3,7 @@
   "name": "Pigmentation",
   "group": "Skin",
   "image": "https://cdn.kaiteki.my/concerns/pigmentation/card.jpg",
-  "summary": "Melasma, sun spots and post-inflammatory marks each behave differently. The right laser or treatment depends on which type you have.",
+  "summary": "Melasma, sun spots and post-inflammatory marks each behave differently.",
   "leadAnswer": "Pigmentation describes areas of darker skin, most commonly sun spots, melasma and marks left after inflammation. They can look alike but are managed differently: sun spots are often treated with pico laser, melasma is managed conservatively and long-term, and post-inflammatory marks usually start with treating the cause.",
   "treatments": [
     "pico-laser",
@@ -69,7 +69,7 @@
     {
       "heading": "What is pigmentation?",
       "body": [
-        "Skin colour comes from melanin, made by cells called melanocytes. Pigmentation becomes a concern when melanin is produced or distributed unevenly, leaving patches darker than the surrounding skin. Several different conditions do this, and they are not treated the same way."
+        "Skin colour comes from melanin, made by cells called melanocytes. Pigmentation becomes a concern when melanin is produced or distributed unevenly, leaving patches darker than the surrounding skin."
       ]
     }
   ],
@@ -83,7 +83,7 @@
       },
       {
         "lead": "Hormonal change:",
-        "body": "pregnancy, hormonal contraception and thyroid conditions are all associated with melasma, which is why it is sometimes called the mask of pregnancy."
+        "body": "pregnancy, hormonal contraception and thyroid conditions are all associated with melasma."
       },
       {
         "lead": "Inflammation or injury to the skin:",
@@ -93,21 +93,20 @@
         "lead": "Skin type and family history:",
         "body": "medium and deeper skin tones produce pigment more readily in response to injury, and melasma in particular tends to run in families."
       }
-    ],
-    "outro": "Heat matters too, independently of UV. Cooking, hot yoga and long periods outdoors can aggravate melasma even where sunscreen is being used properly."
+    ]
   },
   "variant": {
     "kind": "tabs",
     "heading": "Which type do I have?",
     "diagram": "skin-depth",
-    "intro": "These three account for most cases. They look alike in a mirror and are managed very differently.",
+    "intro": "These three account for most cases.",
     "tabs": [
       {
         "depth": "epidermis",
         "label": "Sun spots",
         "sub": "Defined brown patches",
         "title": "Sun-related pigmentation",
-        "body": "Discrete, fairly well-defined brown patches on the areas that catch the most light: the cheekbones, the bridge of the nose, the forehead, the backs of the hands. They accumulate slowly over years and do not fade in the way a tan does.",
+        "body": "Discrete, fairly well-defined brown patches on the areas that catch the most light. They accumulate slowly over years and do not fade in the way a tan does.",
         "items": [
           {
             "lead": "Solar lentigines:",
@@ -118,25 +117,21 @@
             "body": "smaller, lighter and more numerous, usually appearing early in life and darkening with sun exposure."
           }
         ],
-        "routing": "commonly assessed for pico laser, with daily sun protection built into the plan."
+        "routing": "commonly assessed for pico laser."
       },
       {
         "depth": "both",
         "label": "Melasma",
         "sub": "Symmetrical, blurred edges",
         "title": "Melasma",
-        "body": "Larger, symmetrical patches with soft, ill-defined edges, typically across the cheeks, upper lip, forehead and jaw. It is hormone-influenced and heat-sensitive, and it is the one type where aggressive treatment tends to make things worse rather than better.",
+        "body": "Larger, symmetrical patches with soft, ill-defined edges, typically across the cheeks, upper lip, forehead and jaw. It is hormone-influenced and heat-sensitive.",
         "items": [
           {
-            "lead": "Symmetry is the clue:",
-            "body": "melasma usually appears in a mirror-image pattern on both sides of the face."
-          },
-          {
             "lead": "It fluctuates:",
-            "body": "it darkens with sun, heat and hormonal shifts, and lightens again in quieter periods. That cycle continues whether or not it is treated."
+            "body": "it darkens with sun, heat and hormonal shifts, and lightens again in quieter periods."
           }
         ],
-        "routing": "assessed cautiously: conservative settings, longer intervals, daily protection. See the melasma page for the full picture."
+        "routing": "assessed cautiously: conservative settings, longer intervals, daily protection."
       },
       {
         "depth": "both",
@@ -151,7 +146,7 @@
           },
           {
             "lead": "It often fades on its own:",
-            "body": "though slowly, over months, and sun exposure prolongs it. Treating the underlying cause matters more than treating the mark."
+            "body": "though slowly, over months, and sun exposure prolongs it."
           }
         ],
         "routing": "settling the underlying cause first, then pico laser or supportive treatment if the mark persists."
@@ -172,11 +167,11 @@
       },
       {
         "title": "Forehead and temples",
-        "body": "Sun exposure dominates here, and hair products or a fringe can also contribute by trapping heat and irritation against the skin."
+        "body": "Sun exposure dominates here."
       },
       {
         "title": "Nose and bridge",
-        "body": "Catches direct light all day, so freckles and solar lentigines cluster here. Also the area most likely to be missed when sunscreen is applied in a hurry."
+        "body": "Catches direct light all day, so freckles and solar lentigines cluster here."
       },
       {
         "title": "Neck, chest and hands",
@@ -185,7 +180,7 @@
     ],
     "note": {
       "title": "Not typical pigmentation?",
-      "body": "A mark that is changing in size, shape or colour, has an irregular border, itches or bleeds should be examined promptly. That is a different assessment entirely, and it is not a cosmetic one."
+      "body": "A mark that is changing in size, shape or colour, has an irregular border, itches or bleeds should be examined promptly."
     }
   },
   "seeDoctor": {
@@ -193,9 +188,7 @@
     "triggers": [
       "Over-the-counter brightening products have not helped after a few months of consistent use.",
       "The patches are spreading, or returning each time they fade.",
-      "You are unsure whether you are looking at melasma or sun damage, and the products you are using are aimed at one of them.",
-      "The pigmentation followed acne, eczema or a cosmetic procedure.",
-      "Any mark is changing in size, shape, colour or texture, which needs assessment regardless of cosmetic concern."
+      "The pigmentation followed acne, eczema or a cosmetic procedure."
     ]
   },
   "ctaMid": {
@@ -206,26 +199,25 @@
   "treatmentWhy": {
     "pico-laser": {
       "why": "For sun spots, freckles and stubborn pigment",
-      "body": "A picosecond laser that shatters pigment with very short pulses rather than heating the surrounding skin. Most predictable on discrete, well-defined sun-related spots. Used far more cautiously where melasma is involved."
+      "body": "A picosecond laser that shatters pigment with very short pulses rather than heating the surrounding skin."
     },
     "vascular-pigment-laser": {
       "why": "For redness sitting under the brown",
-      "body": "Targets both pigment and superficial blood vessels, which matters where a patch carries a red or flushed component as well as a brown one."
+      "body": "Targets both pigment and superficial blood vessels."
     },
     "resurfacing-laser": {
       "why": "For pigment bound up with texture change",
-      "body": "A fractional laser used where uneven tone sits alongside roughness, sun damage or scarring rather than on its own. More downtime, and strict sun avoidance afterwards is not optional."
+      "body": "A fractional laser used where uneven tone sits alongside roughness, sun damage or scarring rather than on its own. More downtime."
     },
     "skin-booster": {
       "why": "For dull, dehydrated skin around the patches",
-      "body": "Injectable hydration that addresses the overall quality of the skin rather than the pigment itself. Considered as support, particularly where dryness is making tone look more uneven than it is."
+      "body": "Injectable hydration that addresses the overall quality of the skin rather than the pigment itself."
     },
     "facial-treatments": {
       "why": "For gentle exfoliation between laser sessions",
-      "body": "Hydrafacial and Silkpeel support surface cell turnover without the heat or aggression that aggravates melasma. Maintenance care."
+      "body": "Hydrafacial and Silkpeel support surface cell turnover without the heat or aggression that aggravates melasma."
     }
   },
-  "treatmentsNote": "Melasma is managed, not cured. Where it is the diagnosis, the plan is usually conservative and long-term, and the doctor may recommend medical treatment and sun protection before considering any device at all.",
   "compare": {
     "intro": "A general guide. Mixed pigmentation is common; sessions are set after assessment.",
     "columns": [
@@ -334,18 +326,17 @@
     "steps": [
       {
         "title": "History",
-        "body": "How long the pigmentation has been there, whether it followed pregnancy, contraception, acne or a procedure, what you have already tried, and any medication you are taking."
+        "body": "Whether it followed pregnancy, contraception, acne or a procedure."
       },
       {
         "title": "Examination",
-        "body": "The doctor examines the skin, sometimes under magnification or a Wood's lamp, to judge the pattern and depth."
+        "body": "The doctor examines your skin, sometimes under magnification."
       },
       {
         "title": "Discussion and plan",
-        "body": "Which type it looks like, the options and their risks for your skin tone, and what is realistic, with no obligation to proceed."
+        "body": "Options, risks and downtime, with no obligation to proceed."
       }
-    ],
-    "outro": "Bring the products you are currently using, or photographs of the labels. Bring older photographs of your face too, if you have them: they show whether the pattern is spreading or holding steady."
+    ]
   },
   "visitImages": [
     {
@@ -392,55 +383,38 @@
       "Whether medical treatment or prescription topicals form part of the plan alongside any device."
     ]
   },
-  "technologyIntro": "Pigmentation is the concern where device choice matters most, because the wavelength and pulse duration that suit a sun spot are not the ones that suit melasma.",
   "faqs": [
     {
       "q": "What is the difference between melasma and sun spots?",
-      "a": "Sun spots are discrete brown patches with a fairly clear border, scattered across the areas that catch the most light, and they accumulate slowly over years. Melasma is larger, symmetrical and soft-edged, usually across both cheeks, the upper lip or the forehead, and it is influenced by hormones and heat as well as sun. They can look similar in a mirror and they are managed almost oppositely."
-    },
-    {
-      "q": "Can pigmentation be treated?",
-      "a": "Some types respond well and others need caution, so it depends entirely on which you have. Discrete sun-related spots are generally the most predictable. Melasma is managed rather than resolved, and post-inflammatory marks often fade on their own once the underlying cause settles."
+      "a": "Sun spots are discrete brown patches with a fairly clear border. Melasma is larger, symmetrical and soft-edged, and it is influenced by hormones and heat as well as sun. They can look similar in a mirror and they are managed almost oppositely."
     },
     {
       "q": "Why does pigmentation come back?",
-      "a": "Because treatment addresses the pigment that is there, not the tendency to produce it. Melanocytes respond to UV, heat, inflammation and hormonal change exactly as they did before. Melasma in particular fluctuates for years. Daily sun protection and, where relevant, ongoing medical treatment are what keep treated skin stable."
+      "a": "Because treatment addresses the pigment that is there, not the tendency to produce it. Daily sun protection and, where relevant, ongoing medical treatment are what keep treated skin stable."
     },
     {
       "q": "Is laser safe for darker or Asian skin tones?",
-      "a": "Yes, when the device and settings are chosen by a doctor experienced with your skin type. The specific risk in medium and deeper tones is post-inflammatory hyperpigmentation: the skin responding to treatment by producing more pigment. It is managed by selecting suitable wavelengths, using conservative settings, spacing sessions further apart and being strict about sun protection. It is a real consideration rather than a reason to avoid treatment."
+      "a": "Yes, when the device and settings are chosen by a doctor experienced with your skin type. The specific risk in medium and deeper tones is post-inflammatory hyperpigmentation: the skin responding to treatment by producing more pigment. It is a real consideration rather than a reason to avoid treatment."
     },
     {
       "q": "Does sunscreen actually help pigmentation?",
-      "a": "It is the single most consistent thing you can do, both to prevent new pigmentation and to hold on to any improvement. Malaysia sits close to the equator, so UV is high year-round and passes through cloud and window glass. A broad-spectrum sunscreen applied every morning and reapplied through the day is standard advice, and tinted formulations add some protection against visible light, which is relevant in melasma."
+      "a": "It is the single most consistent thing you can do, both to prevent new pigmentation and to hold on to any improvement. A broad-spectrum sunscreen applied every morning and reapplied through the day is standard advice, and tinted formulations add some protection against visible light, which is relevant in melasma."
     },
     {
       "q": "Can pigmentation be treated during pregnancy?",
-      "a": "Elective treatment is generally deferred until after pregnancy and breastfeeding. Melasma often appears or worsens during pregnancy because of hormonal change, and it commonly settles to some degree afterwards, so treating in the middle of that is rarely sensible. Sun protection and gentle skincare are usually the advice in the meantime."
+      "a": "Elective treatment is generally deferred until after pregnancy and breastfeeding. Melasma often appears or worsens during pregnancy because of hormonal change, and it commonly settles to some degree afterwards."
     },
     {
       "q": "Will over-the-counter brightening products work?",
-      "a": "They can help with mild surface pigmentation and they support any in-clinic plan, but expectations should be modest. Most work slowly and their effect depends on consistent use over months. Where the pigment sits deeper, topical products alone often reach a ceiling."
-    },
-    {
-      "q": "How many sessions will I need?",
-      "a": "That is set after the doctor examines your skin, because it depends on the type, the depth and the area. Laser courses for sun-related pigmentation are typically planned as several sessions spaced weeks apart, with a review point built in. Melasma is planned as ongoing management rather than a fixed course."
+      "a": "They can help with mild surface pigmentation and they support any in-clinic plan, but expectations should be modest. Where the pigment sits deeper, topical products alone often reach a ceiling."
     },
     {
       "q": "Does the pigmentation get darker before it fades?",
-      "a": "With some laser treatments, yes. Treated spots can appear darker for several days, then flake or lift as the skin turns over. This is an expected part of how the treatment works rather than a sign something has gone wrong. If a treated area behaves differently from what you were told to expect, contact the clinic."
+      "a": "With some laser treatments, yes. Treated spots can appear darker for several days, then flake or lift as the skin turns over. This is an expected part of how the treatment works rather than a sign something has gone wrong."
     },
     {
       "q": "Can I still use my retinol or acid products?",
-      "a": "Do not stop or start anything without telling your doctor. Retinoids and exfoliating acids are usually paused for a period before and after energy-based treatment, because they thin the surface and increase sensitivity. Some are useful between sessions. Bring the actual products or photographs of the labels to the consultation."
-    },
-    {
-      "q": "What is post-inflammatory hyperpigmentation?",
-      "a": "It is a flat brown or grey-brown mark left where the skin has been inflamed or injured: after a spot, a scratch, eczema, a burn or a procedure. The surface is smooth and only the colour has changed. It is very common in medium and deeper skin tones. It generally fades on its own over months, faster if the underlying cause is controlled and the area is protected from sun."
-    },
-    {
-      "q": "Can pigmentation on the hands, neck or chest be treated?",
-      "a": "Yes, though these areas behave differently from the face. Skin there is thinner, has fewer oil glands and recovers more slowly, so treatment is usually more conservative and spaced further apart. They are also the areas people protect least, which is often why the pigmentation is more advanced there than on the face."
+      "a": "Do not stop or start anything without telling your doctor. Retinoids and exfoliating acids are usually paused for a period before and after energy-based treatment, because they thin the surface and increase sensitivity."
     }
   ],
   "relatedConcerns": [

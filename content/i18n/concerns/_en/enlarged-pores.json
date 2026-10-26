@@ -5,7 +5,7 @@
   "name": "Enlarged Pores",
   "group": "Skin",
   "image": "https://cdn.kaiteki.my/concerns/enlarged-pores/card.jpg",
-  "summary": "Visible pores are often tied to oil production, texture or age. Treatment options range from lasers to skin boosters, matched to the cause.",
+  "summary": "Visible pores are often tied to oil production, texture or age.",
   "leadAnswer": "Enlarged-looking pores are shaped by oil production, build-up, sun damage and loss of firmness with age. Pores cannot be closed or removed, and they do not open and close. What treatment and skincare may change is how visible they look, by addressing whichever of those factors is driving yours.",
   "treatments": [
     "microneedling",
@@ -71,14 +71,14 @@
     {
       "heading": "What are enlarged pores?",
       "body": [
-        "Pores are the openings that carry oil and sweat to the skin's surface. The ones people notice are the oil pores of the T-zone (nose, forehead, inner cheeks and chin). Their size is largely set by genetics; what changes is how much oil and debris sits in them and how firmly the surrounding skin holds its shape."
+        "The ones people notice are the oil pores of the T-zone (nose, forehead, inner cheeks and chin)."
       ]
     },
     {
       "heading": "Pores, blackheads and sebaceous filaments",
       "body": [
-        "Three things are easily confused, and they are handled differently. Sebaceous filaments are the fine, greyish dots across the nose that look like blackheads: they are a normal lining of oil and skin cells in every pore, and they refill within weeks of being squeezed or stripped out. Blackheads are true plugs that have darkened at the surface and are a mild form of acne. An enlarged pore is the opening itself, visible whether or not anything is sitting in it.",
-        "Which one you are looking at changes the plan. Filaments are usually left alone or managed with skincare, blackheads respond to acne care and clinical cleansing, and a pore that stays visible on clean skin is a texture and firmness question."
+        "Sebaceous filaments are the fine, greyish dots across the nose that look like blackheads: they are a normal lining of oil and skin cells in every pore, and they refill within weeks of being squeezed or stripped out. Blackheads are true plugs that have darkened at the surface and are a mild form of acne. An enlarged pore is the opening itself, visible whether or not anything is sitting in it.",
+        "Filaments are usually left alone or managed with skincare, blackheads respond to acne care and clinical cleansing, and a pore that stays visible on clean skin is a texture and firmness question."
       ]
     }
   ],
@@ -88,7 +88,7 @@
     "items": [
       {
         "lead": "Oil production:",
-        "body": "more sebum fills and stretches the opening, and an oily surface reflects light in a way that makes pores stand out. Oil output is largely set by genetics and hormones, which is why pores are often most noticeable in the teens and twenties."
+        "body": "more sebum fills and stretches the opening, and an oily surface reflects light in a way that makes pores stand out."
       },
       {
         "lead": "Build-up inside the pore:",
@@ -115,7 +115,7 @@
     "pairs": [
       {
         "claim": "Hot water opens pores and cold water closes them.",
-        "reality": "Pores have no muscles, so they cannot open or close. Warmth softens the oil inside them, which is why cleansing feels easier after a shower, and cold briefly tightens the skin surface. Neither changes the size of the pore."
+        "reality": "Pores have no muscles, so they cannot open or close."
       },
       {
         "claim": "Pore strips and squeezing shrink pores.",
@@ -123,11 +123,11 @@
       },
       {
         "claim": "A treatment can close pores permanently.",
-        "reality": "Pores cannot be closed, because skin needs them to release oil. Treatment aims to make pores less noticeable by improving firmness, texture and oil control around them, and that change needs maintaining rather than being permanent."
+        "reality": "Pores cannot be closed, because skin needs them to release oil."
       },
       {
         "claim": "Only oily skin has visible pores.",
-        "reality": "Oily skin shows them earlier, but loss of firmness with age and sun damage make pores more visible on drier skin too. Pores that appear in later life are often a firmness problem rather than an oil problem."
+        "reality": "Oily skin shows them earlier, but loss of firmness with age and sun damage make pores more visible on drier skin too."
       },
       {
         "claim": "Primers and mattifying products shrink pores.",
@@ -140,28 +140,26 @@
     "triggers": [
       "A consistent skincare routine has not made a difference after a few months.",
       "Pores come with frequent breakouts, blackheads or congestion.",
-      "You can feel dips or uneven texture, which may be early scarring rather than pores.",
-      "There is a single, unusually large pore, often with a dark plug, that has been there a long time.",
-      "Small yellowish bumps with a dip in the centre have appeared, often on the forehead or cheeks."
+      "You can feel dips or uneven texture, which may be early scarring rather than pores."
     ]
   },
   "ctaMid": {
     "heading": "Not sure what is behind your pores?",
     "body": "Send us a photo on WhatsApp and a doctor can tell you what is most likely behind yours."
   },
-  "treatmentsIntro": "Which one fits depends on what is driving yours: congestion, oil, texture or loss of firmness. Daily skincare is part of every plan.",
+  "treatmentsIntro": "Which one fits depends on what is driving yours: congestion, oil, texture or loss of firmness.",
   "treatmentWhy": {
     "microneedling": {
       "why": "For pores that look stretched as skin loses firmness",
-      "body": "Fine needles deliver radiofrequency energy into the dermis to stimulate collagen around the pore walls. Often a starting point where pores sit alongside texture change, and generally considered a lower pigmentation-risk option for medium and deeper skin tones."
+      "body": "Fine needles deliver radiofrequency energy into the dermis to stimulate collagen around the pore walls."
     },
     "pico-laser": {
       "why": "For pores alongside dullness and uneven tone",
-      "body": "A picosecond laser mainly used for pigment, with a fractional mode some doctors use for surface texture. Considered where visible pores come with uneven tone or post-acne marks, and typically has minimal downtime."
+      "body": "A picosecond laser mainly used for pigment, with a fractional mode some doctors use for surface texture."
     },
     "radiofrequency": {
       "why": "For firmness around the pores without needles",
-      "body": "Radiofrequency energy heats the deeper layers of the skin to support collagen without breaking the surface. Considered where loss of firmness is part of the picture and downtime needs to be kept low."
+      "body": "Radiofrequency energy heats the deeper layers of the skin to support collagen without breaking the surface."
     },
     "resurfacing-laser": {
       "why": "For pores set in rough, uneven texture",
@@ -169,7 +167,7 @@
     },
     "facial-treatments": {
       "why": "For clearing build-up from congested pores",
-      "body": "Clinical facials such as Hydrafacial and Silkpeel cleanse, exfoliate and extract. They help pores look clearer for a time and suit maintenance between other treatments, but they do not change the structure of the pore."
+      "body": "Clinical facials such as Hydrafacial and Silkpeel cleanse, exfoliate and extract. They do not change the structure of the pore."
     }
   },
   "treatmentsNote": "Active acne is usually settled first: energy-based treatment on inflamed skin carries more risk.",
@@ -245,7 +243,7 @@
     "steps": [
       {
         "title": "History",
-        "body": "Your skincare routine, what you have already tried, how oily your skin runs through the day, any breakouts, and your sun exposure."
+        "body": "Your skincare routine, how oily your skin runs through the day, and any breakouts."
       },
       {
         "title": "Examination",
@@ -253,10 +251,9 @@
       },
       {
         "title": "Discussion and plan",
-        "body": "What is likely driving your pores, the options with their risks and downtime, and what is realistic, including when skincare alone is the sensible answer. No obligation to proceed."
+        "body": "What is likely driving your pores, including when skincare alone is the sensible answer."
       }
-    ],
-    "outro": "Come without makeup if you can, and bring the products you use daily or photos of their labels. Both make the assessment more accurate."
+    ]
   },
   "figures": [
     null,
@@ -286,7 +283,7 @@
       },
       {
         "lead": "Sun protection and skincare are part of it",
-        "body": "Daily broad-spectrum sunscreen protects the collagen that keeps pores looking tighter. Without sun protection and a consistent routine, any change from treatment is likely to fade."
+        "body": "Daily broad-spectrum sunscreen protects the collagen that keeps pores looking tighter."
       },
       {
         "lead": "What treatment cannot do",
@@ -305,47 +302,30 @@
       "Whether treatments are combined, and whether maintenance sessions are part of the plan."
     ]
   },
-  "technologyIntro": "Pores driven by oil, texture and loss of firmness respond to different energy types, so having several platforms lets the doctor match the device to what is behind yours.",
   "faqs": [
     {
       "q": "Can pores be shrunk permanently?",
       "a": "Pores cannot be closed or removed permanently, because the skin needs them to release oil and sweat and stay healthy. Some treatments and skincare may reduce the appearance of pores by improving firmness, texture and oil control around them, but results vary between individuals and need maintaining."
     },
     {
-      "q": "Do pores open and close?",
-      "a": "Pores do not have muscles, so they do not physically open and close. Their appearance changes with oil, build-up, hydration and skin firmness, which is why they may look more or less visible at different times of day. Warm water softens the oil inside them, and cold water briefly tightens the surface, but neither changes the size of the pore itself."
-    },
-    {
       "q": "Is skincare or in-clinic treatment better for pores?",
-      "a": "They do different jobs. A consistent routine with gentle cleansing, sun protection and, where suitable, ingredients such as retinoids or salicylic acid keeps pores clearer and supports texture over time. In-clinic treatment is considered when the issue is firmness or texture that skincare alone does not reach. Most plans use both, and the doctor will say plainly if skincare is all you need."
+      "a": "They do different jobs. A consistent routine with gentle cleansing, sun protection and, where suitable, ingredients such as retinoids or salicylic acid keeps pores clearer and supports texture over time. In-clinic treatment is considered when the issue is firmness or texture that skincare alone does not reach."
     },
     {
       "q": "Why are my pores bigger on my nose and cheeks?",
-      "a": "The nose and central face have the densest oil glands, so pores there carry more sebum and look wider. Cheek pores behave differently: they often become more visible with age, as the skin around them loses firmness and the openings stretch into an oval or teardrop shape. That difference matters, because oil-driven and firmness-driven pores are usually approached with different treatments."
-    },
-    {
-      "q": "Are the dark dots on my nose blackheads?",
-      "a": "Often they are sebaceous filaments, the normal lining of oil and skin cells inside every pore, which look grey or tan and sit flat. Blackheads are true plugs, usually darker and slightly raised, and are a mild form of acne. Filaments refill within weeks of being removed, so squeezing them repeatedly mostly irritates the skin."
+      "a": "The nose and central face have the densest oil glands, so pores there carry more sebum and look wider. Cheek pores behave differently: they often become more visible with age, as the skin around them loses firmness and the openings stretch into an oval or teardrop shape."
     },
     {
       "q": "Do pore strips and extractions help?",
-      "a": "They empty the pore for a while, which can make it look smaller until it refills. Professional extraction during a clinical facial is done with the skin prepared and in a controlled way, which limits damage. Squeezing at home, particularly with fingernails, is more likely to inflame the skin, leave marks and gradually stretch the opening, so it tends to work against the goal."
+      "a": "They empty the pore for a while, which can make it look smaller until it refills. Professional extraction during a clinical facial is done with the skin prepared and in a controlled way, which limits damage."
     },
     {
       "q": "Does the humid weather in Malaysia make pores worse?",
-      "a": "Heat and humidity increase oil and sweat on the skin surface, which can make pores look more obvious as the day goes on. The pores themselves do not grow in hot weather. Light, non-comedogenic products, regular gentle cleansing and daily sunscreen help keep oily skin manageable in this climate."
-    },
-    {
-      "q": "How many sessions will I need?",
-      "a": "This is set after the doctor examines your skin, because it depends on what is driving your pores and which treatment suits it. Energy-based treatments for texture and firmness are usually planned as a course of several sessions spaced weeks apart, with a review point to check how your skin is responding. Clinical facials are typically used as ongoing maintenance rather than a fixed course."
+      "a": "The pores themselves do not grow in hot weather. Light, non-comedogenic products, regular gentle cleansing and daily sunscreen help keep oily skin manageable in this climate."
     },
     {
       "q": "Is treatment for pores safe for darker or Asian skin tones?",
-      "a": "It can be, when the device and settings are chosen by a doctor experienced with your skin type. The main concern with medium and deeper skin tones is post-inflammatory hyperpigmentation after laser or other energy-based treatment. This is managed by selecting suitable devices, using conservative settings, spacing sessions further apart and being strict about sun protection."
-    },
-    {
-      "q": "Will my pores come back after treatment?",
-      "a": "Pores do not disappear, so the question is how long any improvement in appearance lasts. Oil production continues, and ageing and sun exposure keep weakening the support around each pore. Most people who see a change keep it with daily sunscreen, a suitable skincare routine and, where appropriate, occasional maintenance sessions."
+      "a": "It can be, when the device and settings are chosen by a doctor experienced with your skin type. The main concern with medium and deeper skin tones is post-inflammatory hyperpigmentation after laser or other energy-based treatment."
     },
     {
       "q": "Can enlarged pores be a sign of something else?",
@@ -353,7 +333,7 @@
     },
     {
       "q": "What should I stop before treatment?",
-      "a": "Do not stop anything without telling your doctor first. Retinoids and exfoliating acids are usually paused for a few days before and after energy-based treatment, and recent oral acne medication can affect what is appropriate and when. Bring your products, or photos of their labels, to the consultation so the doctor can give you specific advice."
+      "a": "Do not stop anything without telling your doctor first. Retinoids and exfoliating acids are usually paused for a few days before and after energy-based treatment, and recent oral acne medication can affect what is appropriate and when."
     }
   ],
   "relatedConcerns": [

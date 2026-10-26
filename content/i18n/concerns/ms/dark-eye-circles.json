@@ -3,7 +3,7 @@
   "name": "Lingkaran Gelap Bawah Mata",
   "group": "Eyes",
   "image": "https://cdn.kaiteki.my/concerns/dark-eye-circles/card.jpg",
-  "summary": "Lingkaran gelap boleh berpunca daripada pigmen, saluran darah atau lekuk di bawah mata. Rawatannya bergantung sepenuhnya pada punca di sebalik lingkaran gelap anda.",
+  "summary": "Lingkaran gelap boleh berpunca daripada pigmen, saluran darah atau lekuk di bawah mata.",
   "leadAnswer": "Lingkaran gelap bawah mata datang daripada tiga perkara yang nampak serupa: pigmen berlebihan dalam kulit, saluran darah yang kelihatan melalui kulit bawah mata yang nipis, dan lekuk yang menghasilkan bayang-bayang. Kebanyakan orang ada lebih daripada satu. Setiap satu dirawat dengan cara berbeza: laser untuk pigmen atau saluran darah, rawatan kualiti kulit untuk kulit yang nipis, dan sokongan isi padu untuk lekuk.",
   "treatments": [
     "skin-booster",
@@ -68,13 +68,12 @@
     {
       "heading": "Apa itu lingkaran gelap bawah mata?",
       "body": [
-        "Lingkaran gelap bukan satu masalah tunggal. Kegelapan itu boleh jadi pigmen, saluran darah yang kelihatan atau bayang-bayang daripada bentuk kawasan itu, dan selalunya lebih daripada satu serentak, jadi apa yang nampak serupa pada dua orang mungkin memerlukan rawatan yang berbeza."
+        "Lingkaran gelap bukan satu keadaan tunggal."
       ]
     }
   ],
   "drivers": {
     "heading": "Apa punca lingkaran gelap bawah mata?",
-    "intro": "Kulit bawah mata ialah kulit paling nipis di badan, sebab itu tiga perkara yang agak berbeza boleh kelihatan melaluinya dan semuanya nampak seperti lingkaran gelap.",
     "items": [
       {
         "lead": "Pigmen berlebihan dalam kulit:",
@@ -88,8 +87,7 @@
         "lead": "Bentuk dan bayang-bayang:",
         "body": "apabila pad lemak di bawah mata mengecut atau turun, satu alur terbentuk antara kelopak mata dan pipi. Apa yang anda lihat di situ langsung bukan pigmen: ia bayang-bayang yang dihasilkan oleh kontur."
       }
-    ],
-    "outro": "Kurang tidur, alkohol, garam dan kekurangan air jarang menyebabkan lingkaran gelap dengan sendirinya, tetapi ia menjadikan ketiga-tiganya lebih ketara. Sebab itu kawasan ini nampak lebih teruk pada sesetengah pagi berbanding pagi yang lain. Penuaan mendalamkan ketiga-tiganya."
+    ]
   },
   "variant": {
     "kind": "tabs",
@@ -102,13 +100,7 @@
         "label": "Pigmen",
         "sub": "Coklat, tetap ada bila diregang",
         "title": "Lingkaran gelap berpigmen",
-        "body": "Perubahan warna coklat atau coklat kelabu yang masih kelihatan apabila anda meregangkan kulit perlahan-lahan dan apabila cahaya menyuluh terus ke kawasan itu. Ia selalunya melebar ke kelopak mata atau ke arah pelipis, bukan sahaja di bahagian lekuk.",
-        "items": [
-          {
-            "lead": "Tandanya:",
-            "body": "meregangkan kulit tidak menjadikannya lebih cerah, dan cahaya dari depan tidak menghilangkannya."
-          }
-        ],
+        "body": "Perubahan warna coklat atau coklat kelabu yang masih kelihatan apabila anda meregangkan kulit perlahan-lahan dan apabila cahaya menyuluh terus ke kawasan itu.",
         "routing": "biasanya dinilai untuk laser yang menyasarkan pigmen, dengan pelindung matahari dan rawatan alahan atau ekzema dibuat serentak."
       },
       {
@@ -117,12 +109,6 @@
         "sub": "Rona biru atau ungu",
         "title": "Lingkaran gelap vaskular",
         "body": "Rona kebiruan atau keunguan, kadangkala dengan saluran darah halus yang kelihatan, yang menjadi lebih ketara apabila anda letih, hidung tersumbat atau selepas menangis. Meregangkan kulit membuatkan warnanya pudar sedikit kerana saluran darah ditarik menjadi lebih rata.",
-        "items": [
-          {
-            "lead": "Tandanya:",
-            "body": "warnanya biru atau ungu, bukan coklat, dan ia berubah-ubah dari hari ke hari."
-          }
-        ],
         "routing": "dinilai untuk laser vaskular atau rawatan kualiti kulit, dengan alahan hidung dirawat jika ia turut menyumbang."
       },
       {
@@ -130,7 +116,7 @@
         "label": "Struktur",
         "sub": "Bayang-bayang yang hilang bila disuluh",
         "title": "Lingkaran gelap struktur (lekuk bawah mata)",
-        "body": "Lekuk atau alur antara kelopak mata bawah dan pipi yang nampak gelap di bawah lampu dari atas, dan sebahagian besarnya hilang apabila cahaya datang terus dari depan.",
+        "body": "Lekuk atau alur antara kelopak mata bawah dan pipi.",
         "items": [
           {
             "lead": "Tandanya:",
@@ -144,13 +130,7 @@
         "label": "Campuran",
         "sub": "Lebih daripada satu serentak",
         "title": "Lingkaran gelap campuran",
-        "body": "Jawapan yang paling biasa, terutamanya selepas pertengahan umur tiga puluhan. Pigmen berada di atas lekuk, atau kulit yang nipis menampakkan saluran darah sementara bayang-bayang menambah kesannya. Merawat satu komponen sahaja akan menghasilkan perubahan yang separa dan mengecewakan.",
-        "items": [
-          {
-            "lead": "Tandanya:",
-            "body": "ujian cermin memberi jawapan yang tidak jelas, dan kawasan itu nampak berbeza dalam setiap jenis cahaya."
-          }
-        ],
+        "body": "Jawapan yang paling biasa, terutamanya selepas pertengahan umur tiga puluhan. Pigmen berada di atas lekuk, atau kulit yang nipis menampakkan saluran darah sementara bayang-bayang menambah kesannya.",
         "routing": "dinilai sebagai satu urutan, dengan komponen dominan dirawat dahulu dan selebihnya disemak selepas itu."
       }
     ]
@@ -166,18 +146,16 @@
     ],
     "note": {
       "title": "Bukan sekadar lingkaran gelap?",
-      "body": "Bengkak yang berterusan, bengkak yang datang dan pergi sepanjang hari, ketulan, atau sebarang perubahan pada penglihatan atau pada rupa sebelah mata sahaja perlu diperiksa oleh doktor. Itu soalan perubatan, bukan soalan kosmetik."
+      "body": "Bengkak yang berterusan, bengkak yang datang dan pergi sepanjang hari, ketulan, atau sebarang perubahan pada penglihatan atau pada rupa sebelah mata sahaja perlu diperiksa oleh doktor."
     }
   },
   "seeDoctor": {
     "intro": "Dapatkan pemeriksaan jika:",
     "triggers": [
       "Krim mata dan concealer tidak membawa perubahan selepas beberapa bulan digunakan secara konsisten.",
-      "Anda tidak pasti sama ada apa yang anda alami ialah pigmen, saluran darah atau bayang-bayang, dan terus membeli produk yang menyasarkan salah satu daripadanya.",
       "Kegelapan itu muncul atau bertambah teruk dengan ketara dalam masa yang singkat.",
       "Ia datang bersama gatal, hidung tersumbat atau ekzema, yang mungkin memburukkannya."
-    ],
-    "outro": "Rawatan yang tidak dinilai dengan baik lebih ketara di sini berbanding di bahagian lain pada muka."
+    ]
   },
   "ctaMid": {
     "heading": "Pigmen, saluran darah atau bayang-bayang?",
@@ -187,22 +165,21 @@
   "treatmentWhy": {
     "skin-booster": {
       "why": "Untuk kulit bawah mata yang nipis dan berkedut halus",
-      "body": "Suntikan penghidratan yang diletakkan di lapisan cetek untuk memperbaiki kualiti dan ketebalan kulit yang sangat nipis, supaya kurang yang kelihatan melaluinya. Dipertimbangkan apabila kualiti kulit, bukan pigmen atau isi padu, ialah masalah utama."
+      "body": "Suntikan penghidratan yang diletakkan di lapisan cetek untuk memperbaiki kualiti dan ketebalan kulit yang sangat nipis, supaya kurang yang kelihatan melaluinya."
     },
     "vascular-pigment-laser": {
       "why": "Untuk saluran darah kebiruan yang kelihatan",
-      "body": "Menyasarkan saluran darah dan pigmen cetek di sekitar mata, dengan tetapan yang dipilih secara konservatif kerana kulit di sini jauh lebih nipis daripada di pipi. Sesuai apabila masalahnya ialah warna, bukan kontur."
+      "body": "Menyasarkan saluran darah dan pigmen cetek di sekitar mata, dengan tetapan yang dipilih secara konservatif kerana kulit di sini jauh lebih nipis daripada di pipi."
     },
     "radiofrequency": {
       "why": "Untuk kelopak mata bawah yang kendur",
-      "body": "Pemanasan lembut untuk merangsang perubahan kolagen di tempat kulit kelopak mata bawah sudah longgar dan berkedut. Dipertimbangkan apabila kedutan halus wujud bersama kegelapan, bukan apabila lekuk yang dominan."
+      "body": "Pemanasan lembut untuk merangsang perubahan kolagen di tempat kulit kelopak mata bawah sudah longgar dan berkedut."
     },
     "dermal-fillers": {
       "why": "Untuk lekuk yang menghasilkan bayang-bayang",
-      "body": "Isi padu kecil diletakkan di lapisan dalam untuk melembutkan alur antara kelopak mata dan pipi. Ini suntikan yang paling mencabar dari segi teknik di muka, dan tempat penyuntikan secara konservatif paling penting, kerana kawasan ini menampakkan setiap kesilapan."
+      "body": "Isi padu kecil diletakkan di lapisan dalam untuk melembutkan alur antara kelopak mata dan pipi."
     }
   },
-  "treatmentsNote": "Jika lekuk ialah puncanya, tiada laser yang akan menghilangkan bayang-bayang itu, dan jika pigmen ialah puncanya, menambah isi padu tidak akan mencerahkannya. Lingkaran gelap campuran dirawat mengikut urutan, bukan sekali gus, supaya setiap langkah boleh dinilai dengan sendirinya.",
   "compare": {
     "intro": "Panduan umum. Lingkaran gelap campuran adalah kebiasaan, dan rawatan di sini sengaja dibuat secara konservatif.",
     "columns": [
@@ -287,7 +264,7 @@
     "steps": [
       {
         "title": "Sejarah",
-        "body": "Berapa lama ia sudah ada, sama ada sesiapa dalam keluarga anda ada corak yang sama, sebarang alahan, ekzema atau hidung tersumbat, tidur dan kesihatan am anda, serta apa yang sudah anda cuba."
+        "body": "Sama ada sesiapa dalam keluarga anda ada corak yang sama, dan sebarang alahan, ekzema atau hidung tersumbat."
       },
       {
         "title": "Pemeriksaan",
@@ -295,10 +272,10 @@
       },
       {
         "title": "Perbincangan dan pelan",
-        "body": "Mekanisme mana yang dominan, apa yang boleh dicapai oleh setiap pilihan, risiko khusus merawat kawasan ini, dan apa yang realistik, tanpa sebarang kewajipan untuk meneruskan rawatan."
+        "body": "Mekanisme mana yang dominan, dan risiko khusus merawat kawasan ini, tanpa sebarang kewajipan untuk meneruskan rawatan."
       }
     ],
-    "outro": "Datang tanpa solekan jika boleh, dan bawa gambar diri anda yang diambil dalam cahaya siang. Lampu klinik datang dari atas dan membesar-besarkan bayang-bayang, jadi gambar dalam cahaya siang selalunya menunjukkan kawasan itu dengan lebih jujur berbanding cermin di dalam bilik."
+    "outro": "Datang tanpa solekan jika boleh, dan bawa gambar diri anda yang diambil dalam cahaya siang."
   },
   "visitImages": [
     {
@@ -307,7 +284,6 @@
     }
   ],
   "risks": {
-    "intro": "Kawasan bawah mata membawa risiko yang lebih tinggi daripada kebanyakan kawasan lain: kulitnya nipis dan anatominya tidak memaafkan kesilapan.",
     "items": [
       {
         "lead": "Biasa dan selalunya sementara",
@@ -323,7 +299,7 @@
       },
       {
         "lead": "Apa yang rawatan tidak dapat lakukan",
-        "body": "Tiada rawatan di halaman ini yang mengubah bentuk soket mata yang diwarisi atau menghilangkan bayang-bayang yang datang daripada tulang. Merawat pigmen tidak akan mengangkat lekuk, dan isi padu tidak akan mencerahkan kulit yang coklat. Tidur tidak menyembuhkan lingkaran gelap, begitu juga satu sesi rawatan. Perubahan biasanya separa."
+        "body": "Tiada rawatan di halaman ini yang mengubah bentuk soket mata yang diwarisi atau menghilangkan bayang-bayang yang datang daripada tulang. Merawat pigmen tidak akan mengangkat lekuk, dan isi padu tidak akan mencerahkan kulit yang coklat. Perubahan biasanya separa."
       }
     ],
     "disclose": "Beritahu doktor jika anda hamil atau menyusukan anak, mengambil ubat pencair darah, mempunyai masalah tiroid atau buah pinggang yang berkait dengan bengkak, pernah mengalami herpes bibir (cold sore) atau parut keloid, pernah menjalani pembedahan kelopak mata atau suntikan di kawasan ini sebelum ini, atau mempunyai sebarang masalah mata sekarang."
@@ -342,47 +318,31 @@
   "faqs": [
     {
       "q": "Lingkaran gelap bawah mata (mata panda) berpunca daripada kurang tidur ke?",
-      "a": "Biasanya tidak, walaupun kurang tidur menjadikannya lebih ketara. Kegelapan asasnya datang daripada pigmen dalam kulit, saluran darah yang kelihatan melaluinya, atau bayang-bayang daripada kontur di bawah mata, dan tiada satu pun yang berubah dalam satu malam. Keletihan mengembangkan saluran darah dan menjadikan muka lebih pucat, jadi kontrasnya bertambah. Jika lingkaran gelap anda tetap ada pada pagi selepas tidur yang cukup, tidur bukan puncanya."
-    },
-    {
-      "q": "Macam mana nak tahu jenis yang saya alami?",
-      "a": "Dua ujian boleh membantu. Regangkan kulit perlahan-lahan ke tepi: jika warnanya tidak berubah, kemungkinan besar ia pigmen; jika ia pudar, saluran darah turut menyumbang. Kemudian ubah cahaya supaya ia datang terus dari depan, bukan dari atas: jika kegelapan itu sebahagian besarnya hilang, anda sedang melihat bayang-bayang daripada lekuk, bukan warna dalam kulit. Kebanyakan orang mendapati mereka ada lebih daripada satu jenis."
+      "a": "Biasanya tidak, walaupun kurang tidur menjadikannya lebih ketara. Keletihan mengembangkan saluran darah dan menjadikan muka lebih pucat, jadi kontrasnya bertambah. Jika lingkaran gelap anda tetap ada pada pagi selepas tidur yang cukup, tidur bukan puncanya."
     },
     {
       "q": "Krim mata untuk lingkaran gelap berkesan ke?",
-      "a": "Krim mata boleh membantu sedikit jika pigmen di permukaan atau kulit kering ialah sebahagian daripada masalahnya, dan krim yang diformulasi dengan baik menyokong mana-mana pelan rawatan di klinik. Ia tidak akan mengangkat lekuk atau menghilangkan saluran darah di bawah kulit, jadi jangkaan perlu sepadan dengan mekanismenya."
+      "a": "Krim mata boleh membantu sedikit jika pigmen di permukaan atau kulit kering ialah sebahagian daripada masalahnya, dan krim yang diformulasi dengan baik menyokong mana-mana pelan rawatan di klinik. Ia tidak akan mengangkat lekuk atau menghilangkan saluran darah di bawah kulit."
     },
     {
       "q": "Filler bawah mata selamat ke? Ada bahayanya?",
-      "a": "Ia rawatan yang sudah mantap jika dibuat oleh tangan yang berpengalaman, tetapi ia suntikan yang paling mencabar dari segi teknik di muka dan wajar dibincangkan dengan teliti. Kulitnya nipis, kawasan ini mudah menakung cecair, dan produk yang diletakkan dengan tidak betul boleh meninggalkan rona kebiruan, ketulan atau bengkak yang berpanjangan. Filler ini boleh dilarutkan, dan itu penting."
+      "a": "Ia rawatan yang sudah mantap jika dibuat oleh tangan yang berpengalaman, tetapi ia suntikan yang paling mencabar dari segi teknik di muka dan wajar dibincangkan dengan teliti. Filler ini boleh dilarutkan, dan itu penting."
     },
     {
       "q": "Adakah rawatan boleh hilangkan lingkaran gelap sama sekali?",
-      "a": "Jarang sekali. Perubahan biasanya separa, terutamanya apabila lebih daripada satu mekanisme terlibat atau bentuk soket mata diwarisi. Ramai orang mendapat pengurangan yang bermakna dalam rupa penat mereka tanpa kawasan itu menjadi sama rata dengan pipi."
-    },
-    {
-      "q": "Gosok mata boleh buat lingkaran gelap lebih teruk ke?",
-      "a": "Ya, dan ia antara faktor penyumbang yang lebih mudah diatasi. Geseran berulang meradangkan kulit yang sangat nipis dan merangsang penghasilan pigmen, sebab itu orang yang ada resdung (rinitis alahan) atau ekzema di sekitar mata selalunya mempunyai lingkaran gelap yang paling gelap. Merawat gatal ialah sebahagian daripada merawat lingkaran gelap."
+      "a": "Jarang sekali. Perubahan biasanya separa, terutamanya apabila lebih daripada satu mekanisme terlibat atau bentuk soket mata diwarisi."
     },
     {
       "q": "Boleh ke rawat lingkaran gelap semasa mengandung?",
-      "a": "Rawatan elektif biasanya ditangguhkan sehingga selepas kehamilan dan tempoh menyusukan anak. Perubahan cecair dan hormon semasa hamil juga membuatkan kawasan ini berkelakuan berbeza, jadi penilaian yang dibuat pada masa itu mungkin tidak menggambarkan keadaan asal anda. Pelindung matahari, penjagaan kulit yang lembut dan merawat hidung tersumbat biasanya menjadi nasihat sementara itu."
+      "a": "Rawatan elektif biasanya ditangguhkan sehingga selepas kehamilan dan tempoh menyusukan anak. Perubahan cecair dan hormon semasa hamil juga membuatkan kawasan ini berkelakuan berbeza, jadi penilaian yang dibuat pada masa itu mungkin tidak menggambarkan keadaan asal anda."
     },
     {
       "q": "Kenapa lingkaran gelap nampak lebih teruk dalam gambar?",
-      "a": "Lampu dari atas ialah penjelasan biasanya. Lampu siling, dan kamera telefon yang dipegang lebih tinggi daripada paras mata, kedua-duanya memancarkan cahaya dari atas, yang mendalamkan sebarang bayang-bayang di bawah mata. Sebab itu juga cermin bilik air bukan tempat yang baik untuk menilainya. Gambar yang diambil dalam cahaya siang, dengan cahaya datang dari depan, menunjukkan kawasan itu dengan jauh lebih jujur."
-    },
-    {
-      "q": "Ada downtime?",
-      "a": "Lebam dan bengkak selepas rawatan suntikan lebih ketara di sini berbanding tempat lain dan boleh berlarutan seminggu atau lebih, jadi rancang mengikut majlis atau acara anda. Rawatan laser biasanya meninggalkan kemerahan dan kulit kering selama beberapa hari. Skin booster boleh meninggalkan bintil kecil yang timbul selama sehari dua."
+      "a": "Lampu dari atas ialah penjelasan biasanya. Lampu siling, dan kamera telefon yang dipegang lebih tinggi daripada paras mata, kedua-duanya memancarkan cahaya dari atas, yang mendalamkan sebarang bayang-bayang di bawah mata. Gambar yang diambil dalam cahaya siang, dengan cahaya datang dari depan, menunjukkan kawasan itu dengan jauh lebih jujur."
     },
     {
       "q": "Lelaki pun boleh rawat lingkaran gelap (mata panda) ke?",
-      "a": "Ya, dan ia sebab biasa lelaki datang ke klinik, selalunya digambarkan sebagai sentiasa nampak penat, bukan sebagai masalah kosmetik. Penilaiannya sama. Jika sokongan isi padu terlibat, kedudukan suntikan berbeza, kerana kelopak mata bawah lelaki biasanya nampak lebih elok dengan kurang isi berbanding wanita. Pelan rawatan mengikut anatomi anda, bukan templat."
-    },
-    {
-      "q": "Adakah ia akan datang balik selepas rawatan?",
-      "a": "Kecenderungannya tidak hilang. Penghasilan pigmen, saluran darah yang kelihatan dan kehilangan isi padu semuanya berterusan, jadi kebanyakan orang yang berpuas hati dengan hasilnya kembali secara berkala, bukan sekali sahaja. Jika faktor penyumbang seperti alahan atau pendedahan matahari diurus serentak, hasilnya cenderung bertahan lebih baik."
+      "a": "Ya, dan ia sebab biasa lelaki datang ke klinik, selalunya digambarkan sebagai sentiasa nampak penat, bukan sebagai masalah kosmetik. Jika sokongan isi padu terlibat, kedudukan suntikan berbeza, kerana kelopak mata bawah lelaki biasanya nampak lebih elok dengan kurang isi berbanding wanita."
     },
     {
       "q": "Patutkah saya guna concealer sahaja?",

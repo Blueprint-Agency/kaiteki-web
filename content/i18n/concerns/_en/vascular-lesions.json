@@ -5,8 +5,8 @@
   "name": "Vascular Lesions",
   "group": "Skin",
   "image": "https://cdn.kaiteki.my/concerns/vascular-lesions/card.jpg",
-  "summary": "Visible blood vessels, redness and broken capillaries can have different causes. A doctor identifies yours before recommending a treatment path.",
-  "leadAnswer": "Vascular lesions are visible blood vessels or areas of redness in the skin: facial thread veins, spider angiomas, cherry angiomas and the persistent redness of rosacea. The vessels are dilated, not broken. Vascular laser is commonly used for superficial vessels; rosacea also needs trigger control and skincare, and leg varicose veins need a separate vascular assessment.",
+  "summary": "Visible blood vessels, redness and broken capillaries can have different causes.",
+  "leadAnswer": "Vascular lesions are visible blood vessels or areas of redness in the skin: facial thread veins, spider angiomas, cherry angiomas and the persistent redness of rosacea.",
   "treatments": [
     "vascular-pigment-laser"
   ],
@@ -67,8 +67,7 @@
     {
       "heading": "What are vascular lesions?",
       "body": [
-        "Vascular lesions occur when small blood vessels near the surface of the skin become visible or dilated, appearing as fine red or purplish lines, small red spots, patches, or persistent redness. They most commonly affect the face, particularly the cheeks and nose, but can appear elsewhere on the body.",
-        "Repeated widening, sun damage to the supporting tissue and thinning skin can leave a vessel permanently dilated, so it shows through as a fine line or a patch of redness."
+        "Vascular lesions occur when small blood vessels near the surface of the skin become visible or dilated, appearing as fine red or purplish lines, small red spots, patches, or persistent redness."
       ]
     }
   ],
@@ -78,19 +77,11 @@
     "items": [
       {
         "lead": "Sun exposure:",
-        "body": "ultraviolet light weakens the collagen that supports the small vessels in the upper skin, which is why thread veins gather on the cheeks and nose, the most exposed parts of the face."
+        "body": "ultraviolet light weakens the collagen that supports the small vessels in the upper skin."
       },
       {
         "lead": "Genetics and skin type:",
         "body": "a tendency toward visible vessels and facial flushing often runs in families, and fair or thin skin shows vessels that sit at the same depth in other skin."
-      },
-      {
-        "lead": "Skin ageing:",
-        "body": "as the skin thins with age, vessels that were always there become easier to see, and small red spots on the trunk become more common from middle age onwards."
-      },
-      {
-        "lead": "Heat, alcohol and spicy food:",
-        "body": "anything that repeatedly flushes the face widens the vessels over and over."
       },
       {
         "lead": "Hormonal change:",
@@ -112,12 +103,6 @@
         "sub": "Fine red lines",
         "title": "Facial thread veins and spider veins",
         "body": "Fine red or purple lines (telangiectasia), usually on the cheeks, around the nostrils and on the chin. A spider angioma is a related pattern: a small central red point with fine vessels radiating outward, which briefly blanches when pressed.",
-        "items": [
-          {
-            "lead": "The tell:",
-            "body": "individual vessels you can trace with a fingertip, steady rather than coming and going."
-          }
-        ],
         "routing": "usually assessed for vascular laser."
       },
       {
@@ -125,12 +110,6 @@
         "sub": "Small, raised or bluish",
         "title": "Cherry angiomas and venous lakes",
         "body": "Cherry angiomas are small, bright red, often slightly raised spots, most common on the trunk and arms and increasingly frequent with age. Venous lakes are soft, dark blue or purple bumps, usually on the lips or ears in sun-exposed older skin.",
-        "items": [
-          {
-            "lead": "The tell:",
-            "body": "a well-defined spot rather than a line or a flush, stable over months."
-          }
-        ],
         "routing": "usually assessed for vascular laser once the doctor is satisfied the spot is what it appears to be."
       },
       {
@@ -138,12 +117,6 @@
         "sub": "Flushing, patchy redness",
         "title": "Persistent redness and rosacea",
         "body": "Background redness across the cheeks, nose and chin that worsens with heat, sun, alcohol, spicy food or stress, sometimes with fine visible vessels and, in some people, small bumps. This pattern is frequently part of rosacea.",
-        "items": [
-          {
-            "lead": "The tell:",
-            "body": "redness that comes and goes with triggers, often with sensitive, easily irritated skin."
-          }
-        ],
         "routing": "assessed for medical management first, with vascular laser discussed for persistent vessels."
       }
     ]
@@ -154,15 +127,11 @@
     "cards": [
       {
         "title": "Cheeks and nose",
-        "body": "The most common site for thread veins and diffuse redness, because these areas take the most sun and flush the most readily. Redness centred here, with triggers, often points toward rosacea."
+        "body": "The most common site for thread veins and diffuse redness, because these areas take the most sun and flush the most readily."
       },
       {
         "title": "Chin and around the mouth",
         "body": "Fine vessels on the chin and beside the nostrils are common. Redness with scaling or small bumps around the mouth can be a different skin condition and is assessed as such."
-      },
-      {
-        "title": "Trunk and arms",
-        "body": "Small red cherry angiomas cluster here, often multiplying gradually with age. They are typically harmless and are assessed spot by spot."
       },
       {
         "title": "Legs",
@@ -183,21 +152,19 @@
       "Several new spider angiomas have appeared in a short time. In numbers, these can be linked to liver or hormonal causes and are worth checking with a GP.",
       "Leg veins are bulging, aching, swollen, or the skin over them has changed colour.",
       "Facial redness comes with burning, stinging, bumps or eye irritation."
-    ],
-    "outro": "Where a medical cause is possible, it is looked at first."
+    ]
   },
   "ctaMid": {
     "heading": "Thread vein, red spot or rosacea?",
     "body": "Send us a photo on WhatsApp and a doctor can tell you which it most likely is."
   },
-  "treatmentsIntro": "Vascular laser is the in-clinic option for visible vessels on the face and body. Whether it is appropriate depends on the type, its depth and your skin tone, which the assessment establishes first.",
+  "treatmentsIntro": "Vascular laser is the in-clinic option for visible vessels on the face and body.",
   "treatmentWhy": {
     "vascular-pigment-laser": {
       "why": "For dilated vessels you can see at the surface",
-      "body": "Delivers light absorbed by the haemoglobin in small, superficial vessels, heating them so the body can gradually clear them. Settings are chosen for the vessel's size and depth and for your skin tone. Larger or deeper vessels, and leg veins, may not be suitable."
+      "body": "Delivers light absorbed by the haemoglobin in small, superficial vessels, heating them so the body can gradually clear them."
     }
   },
-  "treatmentsNote": "Where redness is driven by rosacea, laser addresses the visible vessels but not the condition underneath. Gentle skincare, daily sun protection and managing your own triggers are part of the plan, and some people need prescribed treatment alongside.",
   "results": [
     {
       "src": "https://cdn.kaiteki.my/concerns/vascular-lesions/before-after-01.jpg",
@@ -223,7 +190,7 @@
     "steps": [
       {
         "title": "History",
-        "body": "When the vessels or redness appeared, whether they come and go, what makes them worse, your skincare and any medication, and relevant medical history such as liver or hormonal conditions."
+        "body": "When the vessels or redness appeared, whether they come and go, what makes them worse, and any medication."
       },
       {
         "title": "Examination",
@@ -231,11 +198,11 @@
       },
       {
         "title": "Ruling out medical causes",
-        "body": "Anything that bleeds, is changing, or appears in an unusual pattern is assessed first, with referral to a GP or specialist where that is the right next step."
+        "body": "Anything that bleeds, is changing or looks unusual is assessed first, with referral where needed."
       },
       {
         "title": "Discussion and plan",
-        "body": "Whether laser is appropriate, what it can and cannot change for your type, what aftercare involves, and what to do about triggers."
+        "body": "Whether laser suits your type, and what to do about triggers."
       }
     ],
     "outro": "Come without make-up on the affected area if you can. Concealer hides exactly what the doctor needs to see."
@@ -266,7 +233,7 @@
       },
       {
         "lead": "Less common",
-        "body": "Blistering, crusting or, rarely, scarring. Following the aftercare instructions and avoiding sun on the treated area reduces this risk."
+        "body": "Blistering, crusting or, rarely, scarring."
       },
       {
         "lead": "What treatment cannot do",
@@ -287,24 +254,16 @@
   },
   "faqs": [
     {
-      "q": "Can vascular lesions be treated?",
-      "a": "Some can, depending on the type, and results vary between individuals. Facial thread veins, spider angiomas and cherry angiomas are usually assessed for vascular laser, which heats the vessel so the body can gradually clear it. Rosacea redness is managed long-term with trigger control and skincare, with laser for the visible vessels. Large leg veins need a vascular assessment instead."
-    },
-    {
-      "q": "Why does the cause of redness matter?",
-      "a": "Because the same redness can come from dilated vessels, rosacea or a different skin condition, and each is approached differently: laser addresses visible vessels, while rosacea also needs trigger control and skincare. Rosacea flares with heat, sun, alcohol and stress; redness with scaling or bumps around the mouth may be something else."
-    },
-    {
       "q": "Do vascular lesions come back after treatment?",
-      "a": "Laser does not change the tendency that produced them, so new vessels can form over time, particularly with sun exposure, heat and flushing triggers. That is why daily sun protection and occasional maintenance are often part of the plan."
+      "a": "Laser does not change the tendency that produced them, so new vessels can form over time, particularly with sun exposure, heat and flushing triggers."
     },
     {
       "q": "Are broken capillaries actually broken?",
-      "a": "No. The common name is misleading: the vessels are dilated, not broken. They have widened and stayed open, which is why they show through the skin as fine red lines. This is also why they do not heal on their own the way a bruise does."
+      "a": "No. The common name is misleading: the vessels are dilated, not broken. This is also why they do not heal on their own the way a bruise does."
     },
     {
       "q": "Are red spots on my body a sign of something serious?",
-      "a": "Small, bright red cherry angiomas are very common and harmless, and they tend to increase in number with age. A spot that bleeds, grows quickly or looks different from the others should be examined. Many spider angiomas appearing in a short time are also worth checking with a GP, as they can occasionally point to a liver or hormonal cause."
+      "a": "Small, bright red cherry angiomas are very common and harmless, and they tend to increase in number with age. A spot that bleeds, grows quickly or looks different from the others should be examined."
     },
     {
       "q": "Is rosacea the same as a vascular lesion?",
@@ -312,11 +271,11 @@
     },
     {
       "q": "Can leg veins be treated the same way?",
-      "a": "Fine spider veins on the legs can sometimes be treated with laser, but they are assessed differently from facial vessels. Larger, bulging or aching veins are varicose veins, which involve the deeper venous system and need a vascular assessment rather than a cosmetic laser."
+      "a": "Fine spider veins on the legs can sometimes be treated with laser, but they are assessed differently from facial vessels."
     },
     {
       "q": "Is vascular laser suitable for darker skin tones?",
-      "a": "It can be, with care. Darker skin carries more pigment that also absorbs laser light, which increases the risk of pigment change. The doctor adjusts settings to your skin tone and will tell you plainly if the balance of benefit and risk does not favour treatment."
+      "a": "It can be, with care. Darker skin carries more pigment that also absorbs laser light, which increases the risk of pigment change."
     }
   ],
   "relatedConcerns": [

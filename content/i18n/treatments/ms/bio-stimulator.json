@@ -32,7 +32,7 @@
   "routes": [
     {
       "title": "Pembinaan semula kolagen secara beransur-ansur dalam beberapa bulan",
-      "body": "Merangsang penghasilan kolagen anda sendiri dalam tempoh beberapa bulan, bukan menambah volum serta-merta. Perubahan sengaja berlaku perlahan; sesetengah orang lebih suka begini, dan ada yang rasa kecewa kerana lambat.",
+      "body": "Perubahan sengaja berlaku perlahan; sesetengah orang lebih suka begini, dan ada yang rasa kecewa kerana lambat.",
       "links": [
         {
           "href": "/concerns/face-lifting",
@@ -75,8 +75,7 @@
         "title": "Deusaderm",
         "body": "Suntikan berasaskan kolagen yang bertujuan menyokong kualiti, struktur dan keanjalan kulit."
       }
-    ],
-    "note": "Tiada satu pun daripada produk ini boleh dilarutkan seperti filler asid hialuronik, sebab itu penilaian terlebih dahulu penting."
+    ]
   },
   "ctaMid": {
     "heading": "Tak pasti sama ada anda perlukan filler atau bio-stimulator?",
@@ -108,11 +107,10 @@
       "body": "di kawasan yang sama."
     }
   ],
-  "bringToConsult": "Bawa sejarah perubatan, alahan, senarai ubat dan setiap suntikan, implan atau pembedahan yang pernah dibuat di kawasan itu.",
   "sessionSteps": [
     {
       "title": "Konsultasi dan penilaian",
-      "body": "Lawatan pertama anda ialah konsultasi, bukan rawatan. Doktor menilai kulit anda, mengesahkan kesesuaian, menerangkan jangka masa perubahan yang realistik dan memilih produk."
+      "body": "Doktor menilai kulit anda, mengesahkan kesesuaian, menerangkan jangka masa perubahan yang realistik dan memilih produk."
     },
     {
       "title": "Persediaan",
@@ -120,7 +118,7 @@
     },
     {
       "title": "Suntikan",
-      "body": "Doktor menyuntik kawasan yang telah dinilai. Suntikan itu sendiri cepat; kebanyakan masa sesi digunakan untuk penilaian dan persediaan."
+      "body": "Doktor menyuntik kawasan yang telah dinilai."
     },
     {
       "title": "Selepas itu",
@@ -128,25 +126,21 @@
     }
   ],
   "afterSession": {
-    "intro": "Downtime biasanya minimum.",
+    "intro": "",
     "bands": [
       {
         "title": "Di tempat suntikan",
-        "body": "Bengkak, kemerahan atau rasa sengal yang ringan mungkin berlaku dan biasanya reda dalam beberapa hari. Lebam kadangkala mengambil masa lebih lama untuk pudar, jadi rancang lebih awal jika anda ada majlis atau acara tidak lama lagi."
+        "body": "Bengkak, kemerahan atau rasa sengal yang ringan mungkin berlaku dan biasanya reda dalam beberapa hari. Lebam kadangkala mengambil masa lebih lama untuk pudar."
       },
       {
         "title": "Hari-hari pertama",
         "body": "Elakkan tekanan atau rawatan muka yang agresif pada kawasan itu untuk tempoh yang singkat, dan ikut sebarang arahan urutan yang diberikan."
-      },
-      {
-        "title": "Semakan",
-        "body": "Oleh kerana perubahan berkembang dalam beberapa bulan, sesi semakan lebih penting di sini berbanding rawatan yang memberi hasil serta-merta. Hadirlah, dan maklumkan apa-apa yang di luar jangkaan kepada klinik dengan segera, jangan tunggu."
       }
     ],
     "aftercare": "Ikut arahan urutan dan penjagaan selepas rawatan yang diberikan untuk produk anda."
   },
   "risks": {
-    "intro": "Doktor akan menerangkan semua ini sebelum apa-apa disuntik.",
+    "intro": "",
     "common": "Kemerahan, bengkak, lebam atau rasa sengal sementara di tempat suntikan.",
     "lessCommon": "Ketulan atau nodul yang muncul lewat pernah dilaporkan dengan produk perangsang kolagen, kadangkala beberapa bulan selepas rawatan, dan komplikasi saluran darah yang jarang berlaku tetapi serius diketahui boleh berlaku bagi suntikan muka secara umum.",
     "cannotDo": [
@@ -172,8 +166,7 @@
     {
       "heading": "Apa itu bio-stimulator?",
       "body": [
-        "Bio-stimulator ialah sejenis rawatan suntikan yang diberikan oleh doktor dan bertujuan menyokong rangka kolagen kulit anda sendiri, bukan menambah volum serta-merta seperti dermal filler biasa.",
-        "Filler memberikan isian struktur pada hari yang sama. Bio-stimulator diformulasikan untuk bertindak secara beransur-ansur, merangsang pembaharuan kulit dalam tempoh beberapa minggu hingga beberapa bulan, dan tidak seperti filler asid hialuronik, ia tidak boleh dilarutkan."
+        "Bio-stimulator ialah sejenis rawatan suntikan yang diberikan oleh doktor dan bertujuan menyokong rangka kolagen kulit anda sendiri, bukan menambah volum serta-merta seperti dermal filler biasa."
       ]
     },
     {
@@ -199,7 +192,7 @@
     },
     {
       "q": "Perlu berapa sesi bio-stimulator?",
-      "a": "Biasanya satu kursus pendek dengan jarak beberapa minggu, kadangkala diikuti penjagaan berkala selepas itu. Bilangannya bergantung pada produk dan kawasan."
+      "a": "Biasanya satu kursus pendek dengan jarak beberapa minggu, kadangkala diikuti penjagaan berkala selepas itu."
     }
   ]
 }
