@@ -14,7 +14,7 @@ export const products: Product[] = [
   // ── Kaiteki® own-brand ──────────────────────────────────────────────
   {
     slug: "hydroglow-masks",
-    image: "https://cdn.kaiteki.my/images/skincare/hydroglow-masks.jpg",
+    image: "https://cdn.kaiteki.my/images/skincare/2026/hydroglow-masks.jpg",
     name: "Kaiteki® HydroGlow Masks",
     brand: "Kaiteki",
     group: "Kaiteki® Cosmeceuticals",
@@ -28,7 +28,7 @@ export const products: Product[] = [
   },
   {
     slug: "intense-hydration-cream",
-    image: "https://cdn.kaiteki.my/images/skincare/intense-hydration-cream.jpg",
+    image: "https://cdn.kaiteki.my/images/skincare/2026/intense-hydration-cream.jpg",
     name: "Kaiteki Intense Hydration Cream",
     brand: "Kaiteki",
     group: "Kaiteki® Cosmeceuticals",
@@ -56,7 +56,7 @@ export const products: Product[] = [
   },
   {
     slug: "ultra-soothing-face-mist",
-    image: "https://cdn.kaiteki.my/images/skincare/ultra-soothing-face-mist.jpg",
+    image: "https://cdn.kaiteki.my/images/skincare/2026/ultra-soothing-face-mist.jpg",
     name: "Kaiteki® Ultra Soothing Face Mist",
     brand: "Kaiteki",
     group: "Kaiteki® Cosmeceuticals",
@@ -68,7 +68,7 @@ export const products: Product[] = [
   },
   {
     slug: "ultra-nourishing-body-lotion",
-    image: "https://cdn.kaiteki.my/images/skincare/ultra-nourishing-body-lotion.jpg",
+    image: "https://cdn.kaiteki.my/images/skincare/2026/ultra-nourishing-body-lotion.jpg",
     name: "Kaiteki® Ultra Nourishing Body Lotion",
     brand: "Kaiteki",
     group: "Kaiteki® Cosmeceuticals",
@@ -80,7 +80,7 @@ export const products: Product[] = [
   },
   {
     slug: "ultra-soothing-cleansing-gel",
-    image: "https://cdn.kaiteki.my/images/skincare/ultra-soothing-cleansing-gel.jpg",
+    image: "https://cdn.kaiteki.my/images/skincare/2026/ultra-soothing-cleansing-gel.jpg",
     name: "Kaiteki® Ultra Soothing Cleansing Gel",
     brand: "Kaiteki",
     group: "Kaiteki® Cosmeceuticals",
@@ -94,7 +94,7 @@ export const products: Product[] = [
   },
   {
     slug: "ultra-hydrating-serum",
-    image: "https://cdn.kaiteki.my/images/skincare/ultra-hydrating-serum.jpg",
+    image: "https://cdn.kaiteki.my/images/skincare/2026/ultra-hydrating-serum.jpg",
     name: "Kaiteki® Ultra Hydrating Serum",
     brand: "Kaiteki",
     group: "Kaiteki® Cosmeceuticals",
@@ -106,7 +106,7 @@ export const products: Product[] = [
   },
   {
     slug: "hydro-boost-moisturiser",
-    image: "https://cdn.kaiteki.my/images/skincare/hydro-boost-moisturiser.jpg",
+    image: "https://cdn.kaiteki.my/images/skincare/2026/hydro-boost-moisturiser.jpg",
     name: "Kaiteki® Hydro Boost Moisturiser",
     brand: "Kaiteki",
     group: "Kaiteki® Cosmeceuticals",
@@ -120,7 +120,7 @@ export const products: Product[] = [
   },
   {
     slug: "pore-refining-essence",
-    image: "https://cdn.kaiteki.my/images/skincare/pore-refining-essence.jpg",
+    image: "https://cdn.kaiteki.my/images/skincare/2026/pore-refining-essence.jpg",
     name: "Kaiteki® Pore Refining Essence",
     brand: "Kaiteki",
     group: "Kaiteki® Cosmeceuticals",
@@ -135,7 +135,7 @@ export const products: Product[] = [
   },
   {
     slug: "doubleblock-uv-sunscreen",
-    image: "https://cdn.kaiteki.my/images/skincare/doubleblock-uv-sunscreen.jpg",
+    image: "https://cdn.kaiteki.my/images/skincare/2026/doubleblock-uv-sunscreen.jpg",
     name: "Kaiteki® DoubleBlock UV Sunscreen",
     brand: "Kaiteki",
     group: "Kaiteki® Cosmeceuticals",
@@ -155,7 +155,7 @@ export const products: Product[] = [
   // ── Partner brands (resold) ─────────────────────────────────────────
   {
     slug: "heliocare-d-plus",
-    image: "https://cdn.kaiteki.my/images/skincare/heliocare-d-plus.jpg",
+    image: "https://cdn.kaiteki.my/images/skincare/2026/heliocare-d-plus.jpg",
     name: "Heliocare D Plus",
     brand: "Heliocare",
     group: "Partner Brands",
@@ -174,7 +174,7 @@ export const products: Product[] = [
   },
   {
     slug: "heliocare-luminance",
-    image: "https://cdn.kaiteki.my/images/skincare/heliocare-luminance.jpg",
+    image: "https://cdn.kaiteki.my/images/skincare/2026/heliocare-luminance.jpg",
     name: "Heliocare Luminance",
     brand: "Heliocare",
     group: "Partner Brands",
@@ -188,7 +188,7 @@ export const products: Product[] = [
   },
   {
     slug: "clinisept-skin",
-    image: "https://cdn.kaiteki.my/images/skincare/clinisept-skin.jpg",
+    image: "https://cdn.kaiteki.my/images/skincare/2026/clinisept-skin.jpg",
     name: "Clinisept+ Skin",
     brand: "Clinisept+",
     group: "Partner Brands",
