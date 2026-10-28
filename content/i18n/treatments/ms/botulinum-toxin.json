@@ -40,11 +40,11 @@
   ],
   "sessionSteps": [
     {
-      "title": "",
+      "title": "Konsultasi dan penilaian",
       "body": "Ia bermula dengan konsultasi. Doktor memerhati kawasan itu semasa rehat dan semasa bergerak, menerangkan apa yang boleh dan tidak boleh dicapai, dan menerangkan risikonya. Hanya selepas itu dos ditentukan."
     },
     {
-      "title": "",
+      "title": "Suntikan, kemudian sesi susulan",
       "body": "Kawasan itu dibersihkan dan doktor memberikan beberapa suntikan kecil dengan jarum halus di titik yang telah dirancang. Kebanyakan orang menyifatkannya sebagai rasa pedih yang singkat, dan ubat kebas atau penyejukan boleh digunakan. Sebarang perubahan berlaku secara beransur-ansur dalam beberapa hari berikutnya, dan sesi susulan menyemaknya sebelum apa-apa langkah seterusnya diputuskan."
     }
   ],
@@ -53,18 +53,18 @@
     "common": "Kesan sementara yang biasa dilaporkan termasuk rasa sengal, kemerahan atau lebam kecil di titik suntikan, dan sakit kepala. Kesan ini biasanya ringan dan tidak lama.",
     "lessCommon": "Kurang biasa, kesannya merebak sedikit melepasi otot yang disasarkan, menyebabkan muka tidak simetri buat sementara, kening terasa berat atau kelopak mata jatuh, yang boleh mengambil masa beberapa minggu untuk pulih. Dalam kes yang jarang berlaku, toksin yang merebak pernah dilaporkan menyebabkan kesukaran menelan, bercakap atau bernafas, atau otot lemah di tempat yang jauh dari titik suntikan. Keadaan ini memerlukan rawatan perubatan segera.",
     "cannotDo": [
-      "",
-      "",
-      ""
+      "Ia tidak bertahan selama-lamanya: isyarat saraf beransur pulih dan otot atau kelenjar kembali kepada aktiviti biasanya.",
+      "Ia tidak menambah isi, jadi ia tidak menangani garis atau lekuk akibat kehilangan isi atau struktur.",
+      "Ia tidak merawat punca yang menyebabkan peluh berlebihan, dan punca sebegitu disingkirkan terlebih dahulu."
     ],
     "disclose": "Beritahu doktor tentang semua ubat dan suplemen yang anda ambil, terutamanya ubat pencair darah, serta sebarang masalah neuromuskular"
   },
   "costFactors": {
     "intro": "Kos bergantung pada kawasan dan dos. Sebagai ubat preskripsi, harganya tidak boleh disebut atau dijual sebagai pakej sebelum penilaian.",
     "factors": [
-      "",
-      "",
-      ""
+      "Kawasan yang dirawat, sama ada satu atau beberapa.",
+      "Bilangan unit yang ditentukan oleh doktor selepas memeriksa cara otot anda bergerak. Unit adalah khusus bagi setiap produk, jadi angka yang disebut untuk jenama atau klinik lain tidak boleh dibandingkan secara terus.",
+      "Pelan anda dari semasa ke semasa: kesannya sementara, jadi rawatan ialah kitaran berulang yang disemak oleh doktor anda."
     ]
   },
   "comparisons": [

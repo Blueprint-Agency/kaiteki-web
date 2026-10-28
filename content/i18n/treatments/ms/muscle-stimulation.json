@@ -21,37 +21,37 @@
       "caption": "Aplikator Schwarzy dan talinya, diletakkan di kawasan rawatan sebelum tali pinggang diikat."
     }
   ],
-  "typicalSessions": "",
-  "bringToConsult": "",
+  "typicalSessions": "Satu set pendek dalam beberapa minggu",
+  "bringToConsult": "Sejarah perubatan anda diambil sebelum tali pinggang dipasang, jadi maklumkan setiap implan, peranti dan ubat.",
   "avoidIf": [
     {
-      "lead": "",
-      "body": ""
+      "lead": "Implan logam, perentak jantung (pacemaker) atau IUD tembaga",
+      "body": "di dalam atau berhampiran kawasan rawatan."
     },
     {
-      "lead": "",
-      "body": ""
+      "lead": "Peranti implan lain,",
+      "body": "seperti defibrilator, perangsang saraf (neurostimulator) atau pam ubat."
     },
     {
-      "lead": "",
-      "body": ""
+      "lead": "Hamil.",
+      "body": "Rawatan ditangguhkan."
     },
     {
-      "lead": "",
-      "body": ""
+      "lead": "Epilepsi atau sejarah sawan,",
+      "body": "atau hernia di kawasan itu."
     },
     {
-      "lead": "",
-      "body": ""
+      "lead": "Sesetengah keadaan perubatan yang menjejaskan kawasan rawatan,",
+      "body": "termasuk masalah jantung, buah pinggang atau pendarahan tertentu."
     }
   ],
   "sessionSteps": [
     {
-      "title": "",
-      "body": ""
+      "title": "Konsultasi dan saringan",
+      "body": "Lawatan pertama anda ialah konsultasi, bukan rawatan. Doktor menilai kawasan itu dan matlamat anda, serta menyemak sejarah implan dan perubatan anda, yang merupakan penentu utama kesesuaian."
     },
     {
-      "title": "",
+      "title": "Sesi rawatan",
       "body": "Selepas kawasan dan matlamat anda dinilai, aplikator diikat di atas kumpulan otot sasaran dan mesin menjalankan program pengecutan untuk tempoh yang ditetapkan."
     }
   ],
@@ -59,32 +59,32 @@
     "intro": "Tiada downtime yang tetap. Rasa lenguh seperti selepas bersenam, sedikit kemerahan atau rasa sengal di kawasan yang dirawat boleh berlaku dan biasanya reda dalam beberapa hari.",
     "bands": [
       {
-        "title": "",
-        "body": ""
+        "title": "Antara sesi",
+        "body": "Beri otot satu hari untuk pulih, teruskan pergerakan ringan dan minum air secukupnya, sama seperti anda menjarakkan sesi latihan."
       }
     ],
-    "aftercare": ""
+    "aftercare": "Doktor akan memberitahu anda cara menjarakkan sesi mengikut rutin latihan anda sendiri."
   },
   "risks": {
-    "intro": "",
-    "common": "",
-    "lessCommon": "",
-    "pigmentNote": "",
+    "intro": "Seperti mana-mana prosedur perubatan, ia ada risiko, dan risiko ini diterangkan sebelum satu set sesi ditempah.",
+    "common": "Otot lenguh, sengal atau kejang di kawasan yang dirawat, otot letih buat seketika, dan sedikit kemerahan atau rasa hangat di tempat pad diletakkan.",
+    "lessCommon": "Perubahan sementara pada deria rasa kulit.",
+    "pigmentNote": "Rangsangannya ialah medan magnet yang bertindak pada saraf ke otot, bukan cahaya atau haba, jadi warna kulit tidak menentukan kesesuaian. Implan dan sejarah perubatan yang menentukannya.",
     "cannotDo": [
-      "",
-      "",
-      "",
-      ""
+      "Ia tidak mengurangkan lemak, dan ia bukan rawatan menurunkan berat badan.",
+      "Ia tidak menegangkan kulit yang kendur.",
+      "Jika ada lapisan lemak di atas otot, menguatkan apa yang di bawah tidak akan mengubah apa yang di atasnya.",
+      "Tona otot yang diperoleh tidak bertahan selama-lamanya tanpa rangsangan atau aktiviti yang berterusan."
     ],
-    "disclose": ""
+    "disclose": "Maklumkan setiap implan, peranti dan ubat sebelum rawatan."
   },
   "costFactors": {
     "intro": "Sesi biasanya ditempah sebagai satu set pendek yang dijarakkan dalam beberapa minggu, bukan satu demi satu, jadi kos ditetapkan untuk keseluruhan set semasa konsultasi. Ia bergantung pada kawasan yang dirawat, matlamat anda dan tindak balas badan anda.",
     "factors": [
-      "",
-      "",
-      "",
-      ""
+      "Berapa banyak kumpulan otot yang anda mahu ditangani.",
+      "Bilangan sesi dalam pelan.",
+      "Sama ada sesi penyelenggaraan termasuk.",
+      "Sama ada matlamat anda melibatkan lemak dan juga tona otot, yang mana pelannya akan menggabungkan beberapa rawatan."
     ]
   },
   "sections": [
@@ -117,12 +117,12 @@
       "a": "Biasanya satu set pendek yang dijarakkan dalam beberapa minggu. Seperti mana-mana latihan otot, berapa lama hasilnya bertahan bergantung pada apa yang anda lakukan di antara sesi dan selepas sesi tamat."
     },
     {
-      "q": "",
-      "a": ""
+      "q": "Boleh ke buat rangsangan otot kalau ada IUD atau implan logam?",
+      "a": "Tidak di dalam atau berhampiran kawasan itu. Rangsangannya ialah medan magnet, jadi implan logam, perentak jantung dan IUD tembaga di dalam atau berhampiran kawasan rawatan menjadikannya tidak sesuai. Sebab itulah setiap implan dan peranti dimaklumkan sebelum tali pinggang dipasang."
     },
     {
-      "q": "",
-      "a": ""
+      "q": "Apa bezanya dengan bersenam sendiri?",
+      "a": "Pengecutan otot ini berlaku di luar kawalan anda dan diulang pada kadar dan kedalaman yang tidak dapat anda hasilkan dengan sengaja. Ia melengkapi aktiviti anda sendiri, bukan menggantikannya: kecergasan dan pengurusan berat badan masih datang daripada senaman dan pemakanan."
     }
   ]
 }

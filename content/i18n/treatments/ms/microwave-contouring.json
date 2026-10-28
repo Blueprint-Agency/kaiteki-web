@@ -41,29 +41,29 @@
     "Peha",
     "Lutut"
   ],
-  "typicalSessions": "",
-  "bringToConsult": "",
+  "typicalSessions": "Beberapa sesi, dijarakkan beberapa minggu",
+  "bringToConsult": "Beritahu tentang setiap peranti atau implan semasa konsultasi.",
   "avoidIf": [
     {
-      "lead": "",
-      "body": ""
+      "lead": "Hamil.",
+      "body": "Rawatan ditangguhkan."
     },
     {
-      "lead": "",
-      "body": ""
+      "lead": "Implan atau peranti perubatan",
+      "body": "di kawasan rawatan."
     },
     {
-      "lead": "",
-      "body": ""
+      "lead": "Sesetengah keadaan kulit atau kesihatan,",
+      "body": "yang akan diteliti bersama anda oleh doktor."
     }
   ],
   "sessionSteps": [
     {
-      "title": "",
-      "body": ""
+      "title": "Konsultasi dan penilaian",
+      "body": "Lawatan pertama anda ialah konsultasi, bukan rawatan. Doktor memeriksa kawasan itu, menentukan sama ada ia boleh dirawat, dan memilih antara Onda for Body dan Onda for Face."
     },
     {
-      "title": "",
+      "title": "Rawatan",
       "body": "Selepas kawasan itu diperiksa, alat pegang tangan digerakkan di atasnya untuk menyalurkan tenaga sementara permukaannya disejukkan. Kebanyakan orang menggambarkan rasa hangat."
     }
   ],
@@ -71,30 +71,30 @@
     "intro": "Downtime biasanya terhad.",
     "bands": [
       {
-        "title": "",
-        "body": ""
+        "title": "Sejurus selepas rawatan",
+        "body": "Rasa hangat, kemerahan atau rasa sengal ringan buat sementara di kawasan yang dirawat boleh berlaku dan lazimnya reda."
       }
     ],
-    "aftercare": ""
+    "aftercare": "Kebanyakan orang kembali kepada aktiviti biasa. Doktor akan memberikan panduan penjagaan yang khusus untuk anda."
   },
   "risks": {
-    "intro": "",
-    "common": "",
-    "lessCommon": "",
-    "pigmentNote": "",
+    "intro": "Seperti mana-mana rawatan berasaskan tenaga, ia ada risiko, dan risiko ini diterangkan sebelum satu kursus rawatan ditempah.",
+    "common": "Kemerahan, bengkak, rasa hangat atau sengal di kawasan yang dirawat.",
+    "lessCommon": "Tenaga ini ialah haba, jadi risiko yang penting ialah satu titik menjadi terlalu panas. Risiko ini dikawal dengan memastikan alat pegang tangan sentiasa bergerak dan dengan merawat dalam had yang dinilai doktor boleh diterima oleh tisu.",
+    "pigmentNote": "Tenaga gelombang mikro memanaskan tisu di bawah permukaan yang disejukkan, bukan menyasarkan pigmen, jadi ia tidak bergantung pada kontras warna seperti laser.",
     "cannotDo": [
-      "",
-      "",
-      ""
+      "Ia bukan rawatan menurunkan berat badan: ia merawat kawasan setempat, bukan berat badan keseluruhan.",
+      "Bukan semua kawasan boleh dirawat. Perkara ini ditentukan dengan memeriksa kawasan itu, bukan sekadar dengan menamakan masalahnya.",
+      "Ia bukan rawatan satu sesi. Satu kursus adalah biasa, dan kawasan badan biasanya memerlukan lebih banyak sesi berbanding kawasan muka."
     ],
-    "disclose": ""
+    "disclose": "Beritahu doktor tentang setiap implan atau peranti perubatan, dan sejarah perubatan anda yang lengkap."
   },
   "costFactors": {
     "intro": "Bilangan sesi dan kos bergantung pada kawasan yang dirawat dan tindak balas anda. Kawasan muka dan kawasan badan memerlukan masa yang sangat berbeza dengan alat pegang tangan, jadi kos mengikut kawasan yang dipersetujui semasa konsultasi.",
     "factors": [
-      "",
-      "",
-      ""
+      "Kawasan yang dirawat, badan atau muka.",
+      "Masalah yang ditangani.",
+      "Bilangan sesi yang diperlukan dalam kursus, yang bergantung pada tindak balas anda."
     ]
   },
   "sections": [
@@ -126,12 +126,12 @@
       "a": "Satu kursus beberapa sesi yang dijarakkan beberapa minggu adalah biasa. Kawasan badan biasanya memerlukan lebih banyak sesi berbanding kawasan muka, semata-mata kerana kawasannya lebih besar."
     },
     {
-      "q": "",
-      "a": ""
+      "q": "Onda boleh turunkan berat badan ke?",
+      "a": "Tidak. Ia menangani kawasan lemak setempat dan ketegangan kulit, bukan berat badan keseluruhan, dan ia bukan pengganti pengurusan berat badan."
     },
     {
-      "q": "",
-      "a": ""
+      "q": "Apa beza Onda dan Onda Pro?",
+      "a": "Onda Pro ialah generasi Onda yang lebih baharu daripada DEKA. Kedua-duanya menggunakan teknologi gelombang mikro Coolwaves® yang sama, dan Onda Pro mempunyai alat pegang tangan khusus untuk muka dan badan. Kaiteki mempunyai kedua-duanya, dan doktor memilih mesin mengikut kawasan yang dirawat."
     }
   ]
 }

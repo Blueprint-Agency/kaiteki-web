@@ -27,73 +27,73 @@
   "lastReviewed": "2026-07-13",
   "seoTitle": "Laser Pigmentasi & Vaskular di Malaysia | Kaiteki",
   "seoDescription": "Rawatan laser di Malaysia untuk pigmentasi, kemerahan dan urat merah halus guna M22 IPL, Pro Yellow dan DermaV. Tempah konsultasi percuma di Kaiteki.",
-  "typicalSessions": "",
-  "bringToConsult": "",
+  "typicalSessions": "Beberapa sesi, dijarakkan beberapa minggu",
+  "bringToConsult": "Kesesuaian juga bergantung pada mesin mana antara tiga mesin yang dipertimbangkan, jadi bawa sejarah perubatan dan penjagaan kulit anda yang lengkap. Jika anda ada rosacea, beritahu tentang pencetusnya, rawatan semasa anda dan sebarang laser vaskular sebelum ini.",
   "avoidIf": [
     {
-      "lead": "",
+      "lead": "Hamil atau menyusu.",
+      "body": "Rawatan ditangguhkan."
+    },
+    {
+      "lead": "Kulit yang baru digelapkan atau terbakar matahari.",
       "body": ""
     },
     {
-      "lead": "",
-      "body": ""
+      "lead": "Jangkitan aktif atau kulit yang meradang",
+      "body": "di kawasan yang akan dirawat."
     },
     {
-      "lead": "",
-      "body": ""
+      "lead": "Ubat yang meningkatkan kepekaan terhadap cahaya,",
+      "body": "termasuk isotretinoin oral dan antibiotik tertentu."
     },
     {
-      "lead": "",
-      "body": ""
-    },
-    {
-      "lead": "",
+      "lead": "Sejarah parut keloid atau keadaan kulit yang peka cahaya.",
       "body": ""
     }
   ],
   "sessionSteps": [
     {
-      "title": "",
-      "body": ""
+      "title": "Konsultasi dan penilaian",
+      "body": "Lawatan pertama anda ialah konsultasi, bukan rawatan. Doktor memeriksa sama ada sasarannya saluran darah atau pigmen, dan sedalam mana ia berada, sebelum memilih mesin."
     },
     {
-      "title": "",
+      "title": "Kawasan ujian, jika berguna",
       "body": "Ujian tampalan atau kawasan ujian mungkin dilakukan sebelum rawatan diteruskan."
     },
     {
-      "title": "",
-      "body": ""
+      "title": "Rawatan",
+      "body": "Kulit dibersihkan, pelindung mata dipakaikan dan cahaya dikenakan. Kebanyakan orang menggambarkan setiap denyutan sebagai rasa cucukan panas yang singkat atau seperti dipetik getah yang hangat."
     }
   ],
   "afterSession": {
     "intro": "Downtime biasanya terhad. Kemerahan sementara atau sensitiviti ringan lazimnya reda. Gunakan pelindung matahari dan penjagaan kulit yang lembut selepas itu.",
     "bands": [
       {
-        "title": "",
-        "body": ""
+        "title": "Sehari dua pertama",
+        "body": "Kemerahan, rasa hangat dan bengkak ringan adalah biasa. Saluran darah yang dirawat boleh kelihatan lebih gelap atau kelabu buat sementara, dan pigmen yang dirawat boleh menjadi lebih gelap atau sedikit berkerak sebelum tertanggal."
       }
     ],
-    "aftercare": ""
+    "aftercare": "Gunakan pelindung matahari setiap hari, gunakan penjagaan kulit yang lembut, dan elakkan haba seperti sauna dan mandi air panas selama tempoh yang ditetapkan oleh doktor."
   },
   "risks": {
     "intro": "Kesan sementara boleh termasuk kemerahan, bengkak atau perubahan pigmentasi. Merawat saluran darah dengan panjang gelombang yang dimaksudkan untuk pigmen, atau sebaliknya, ialah kesilapan yang menyebabkan masalah lain, dan itulah yang cuba dielakkan melalui penilaian dan ujian tampalan.",
-    "common": "",
-    "lessCommon": "",
+    "common": "Kemerahan, bengkak, lebam dan kerak kecil di atas saluran darah yang dirawat.",
+    "lessCommon": "Melepuh, lecur, parut dan perubahan pigmen yang lebih lama, lebih mungkin berlaku pada kulit yang tidak sesuai atau baru digelapkan matahari.",
     "pigmentNote": "Mesin ini digunakan pada pelbagai warna kulit, tetapi sesetengah jenis kulit dan masalah memerlukan penjagaan khusus untuk mengurangkan risiko perubahan pigmen, jadi jenis kulit dan sejarah anda dinilai dahulu.",
     "cannotDo": [
-      "",
-      "",
-      ""
+      "Saluran darah boleh muncul semula, kerana kecenderungan di sebaliknya masih ada.",
+      "Rosacea dan kecenderungan muka mudah merah ialah keadaan kronik: rawatan menangani saluran darah yang kelihatan, bukan keadaan itu sendiri.",
+      "Saluran darah yang sangat dalam atau besar mungkin bertindak balas secara berbeza berbanding saluran halus di permukaan, dan mungkin memerlukan pendekatan lain."
     ],
-    "disclose": ""
+    "disclose": "Beritahu doktor tentang pendedahan matahari baru-baru ini dan setiap ubat yang anda ambil."
   },
   "costFactors": {
     "intro": "Bilangan sesi dan kos bergantung pada mesin, masalah kulit dan tindak balas kulit anda. Harga ketiga-tiga platform ini tidak sama, jadi kos mengikut pilihan mesin oleh doktor, bukan ditetapkan sebelum pilihan itu dibuat.",
     "factors": [
-      "",
-      "",
-      "",
-      ""
+      "Mesin yang dipilih oleh doktor.",
+      "Sejauh mana masalahnya: beberapa saluran darah yang berasingan, atau kemerahan yang meluas.",
+      "Saiz kawasan.",
+      "Sama ada masalah kronik memerlukan sesi penyelenggaraan sekali-sekala."
     ]
   },
   "sections": [
@@ -126,12 +126,12 @@
       "a": "Satu siri beberapa sesi yang dijarakkan beberapa minggu adalah biasa. Saluran darah boleh muncul semula kerana kecenderungan di sebaliknya masih ada, jadi doktor akan memberitahu sama ada anda memerlukan satu siri rawatan atau susunan yang berterusan."
     },
     {
-      "q": "",
-      "a": ""
+      "q": "Laser vaskular untuk kemerahan dan urat merah sakit tak?",
+      "a": "Kebanyakan orang menggambarkan setiap denyutan sebagai rasa cucukan panas yang singkat atau seperti dipetik getah yang hangat. Mesin ini menyejukkan permukaan kulit semasa digunakan, yang bertujuan menjadikan sesi lebih selesa."
     },
     {
-      "q": "",
-      "a": ""
+      "q": "Ada downtime ke selepas laser untuk kemerahan atau pigmentasi?",
+      "a": "Biasanya sedikit. Kemerahan dan bengkak ringan selama beberapa jam hingga sehari dua adalah biasa, dan saluran darah atau pigmen yang dirawat boleh kelihatan lebih gelap buat sementara sebelum reda. Perlindungan matahari penting selepas itu."
     }
   ]
 }

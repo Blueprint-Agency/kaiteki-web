@@ -28,77 +28,77 @@
   "lastReviewed": "2026-07-13",
   "seoTitle": "Rawatan Laser Resurfacing CO2 di Malaysia | Kaiteki",
   "seoDescription": "Laser resurfacing CO2 fraksional di Malaysia untuk tekstur kulit, parut jerawat dan liang pori. Tempah konsultasi percuma bersama doktor Kaiteki untuk dinilai.",
-  "typicalSessions": "",
-  "bringToConsult": "",
+  "typicalSessions": "Satu kursus kecil, dijarakkan beberapa minggu",
+  "bringToConsult": "Beritahu tentang sebarang sejarah herpes bibir (cold sore), atau kecenderungan berparut teruk, tanpa menunggu ditanya: kedua-duanya mengubah sama ada, dan bagaimana, rawatan ini dilakukan.",
   "avoidIf": [
     {
-      "lead": "",
+      "lead": "Hamil atau menyusu.",
+      "body": "Rawatan ditangguhkan."
+    },
+    {
+      "lead": "Jangkitan atau keradangan aktif",
+      "body": "di kawasan itu, termasuk jerawat atau herpes bibir."
+    },
+    {
+      "lead": "Sejarah parut keloid atau parut hipertrofik.",
       "body": ""
     },
     {
-      "lead": "",
+      "lead": "Kulit yang baru digelapkan matahari, atau penggunaan isotretinoin baru-baru ini.",
       "body": ""
     },
     {
-      "lead": "",
-      "body": ""
-    },
-    {
-      "lead": "",
-      "body": ""
-    },
-    {
-      "lead": "",
-      "body": ""
+      "lead": "Sesetengah penyakit autoimun atau penyakit tisu penghubung,",
+      "body": "yang akan diteliti bersama anda oleh doktor."
     }
   ],
   "sessionSteps": [
     {
-      "title": "",
-      "body": ""
+      "title": "Konsultasi dan perancangan pemulihan",
+      "body": "Lawatan pertama anda ialah konsultasi, bukan rawatan. Bagi laser ablatif, ia termasuk merancang tempoh pemulihan anda mengikut jadual kerja atau acara sebelum apa-apa ditempah."
     },
     {
-      "title": "",
+      "title": "Krim kebas, kemudian laser",
       "body": "Krim kebas disapu, kemudian laser dilalukan di seluruh kawasan pada tetapan yang dipilih untuk kulit anda."
     },
     {
-      "title": "",
-      "body": ""
+      "title": "Pemulihan antara sesi",
+      "body": "Sesi dijarakkan beberapa minggu hingga beberapa bulan, supaya kulit sembuh dan terbentuk semula sepenuhnya di antara lawatan."
     }
   ],
   "afterSession": {
     "intro": "Jangkakan downtime yang lebih lama berbanding laser bukan ablatif. Kemerahan, bengkak dan kulit mengelupas selama beberapa hari hingga kira-kira seminggu adalah biasa dan lazimnya reda sendiri. Selepas itu, lindungi kulit daripada matahari dengan tekun dan gunakan penjagaan kulit yang lembut.",
     "bands": [
       {
-        "title": "",
-        "body": ""
+        "title": "Sehari dua pertama",
+        "body": "Kulit yang dirawat kelihatan merah, terasa panas dan tegang, dan jelas bengkak."
       },
       {
-        "title": "",
-        "body": ""
+        "title": "Baki minggu itu",
+        "body": "Kulit menjadi gelap keperangan (bronzing), kasar dan mengelupas apabila lajur yang dirawat keluar secara beransur-ansur. Warna merah jambu boleh berlanjutan selama beberapa minggu."
       }
     ],
-    "aftercare": ""
+    "aftercare": "Cuci muka dengan lembut, gunakan emolien yang diberikan, jangan kopek atau eksfoliasi, dan gunakan pelindung matahari setiap hari dengan tekun. Haba, berenang, solekan dan penjagaan kulit aktif ditangguhkan selama tempoh yang ditetapkan oleh doktor."
   },
   "risks": {
     "intro": "Kesan sementara termasuk kemerahan, bengkak, kulit mengelupas dan perubahan pigmentasi. Oleh kerana laser ini ablatif, kulit benar-benar dicederakan dan kemudian sembuh, jadi jangkitan dan parut memang boleh berlaku walaupun jarang. Itulah sebabnya penjagaan selepas rawatan di sini ialah arahan yang perlu diikuti, bukan sekadar nasihat.",
-    "common": "",
-    "lessCommon": "",
-    "pigmentNote": "",
+    "common": "Kemerahan, bengkak, rasa panas, kulit berkerak dan mengelupas, serta warna merah jambu yang boleh berlanjutan selama beberapa minggu.",
+    "lessCommon": "Hiperpigmentasi pasca-keradangan, kemerahan yang berpanjangan, herpes bibir yang aktif semula, jangkitan, dan parut atau perubahan tekstur.",
+    "pigmentNote": "Warna kulit yang lebih gelap dan kulit orang Asia mempunyai risiko hiperpigmentasi pasca-keradangan yang lebih tinggi selepas resurfacing ablatif, jadi tetapan dipilih secara konservatif, penjagaan kulit persediaan mungkin dinasihatkan, dan lebih banyak sesi pada intensiti lebih rendah mungkin diutamakan berbanding satu sesi yang agresif.",
     "cannotDo": [
-      "",
-      "",
-      ""
+      "Ia bukan rawatan yang boleh dibuat semasa waktu rehat lalu terus kembali bekerja: tempoh pemulihannya memang ada dan perlu dirancang.",
+      "Parut jerawat yang sudah lama biasanya memerlukan satu kursus, bukan satu lawatan.",
+      "Ia bekerja pada tekstur dan struktur, bukan pada warna kulit semata-mata."
     ],
-    "disclose": ""
+    "disclose": "Beritahu doktor tentang sebarang sejarah herpes bibir, parut atau masalah pigmen, dan sebarang penggunaan isotretinoin baru-baru ini."
   },
   "costFactors": {
     "intro": "Bilangan sesi dan kos bergantung pada masalah anda, kedalaman rawatan dan tindak balas kulit anda. Kedalaman dan ketumpatan ditetapkan mengikut jenis kulit anda, dan kos mengikut kedua-duanya, jadi kos disahkan semasa konsultasi, bukan disiarkan sebagai kadar tetap.",
     "factors": [
-      "",
-      "",
-      "",
-      ""
+      "Saiz kawasan.",
+      "Kedalaman dan ketumpatan tetapan yang diperlukan untuk masalah anda.",
+      "Bilangan sesi dalam pelan.",
+      "Sama ada ia digabungkan dengan rawatan lain dalam pelan parut atau resurfacing."
     ]
   },
   "sections": [
@@ -130,12 +130,12 @@
       "a": "Ia bergantung pada masalah anda dan kedalaman rawatan. Doktor menetapkan bilangan sesi dan jarak antara sesi selepas kulit anda dinilai."
     },
     {
-      "q": "",
-      "a": ""
+      "q": "Laser CO2 selamat ke untuk kulit orang Asia?",
+      "a": "Ia digunakan pada kulit orang Asia, tetapi secara lebih konservatif, kerana warna kulit yang lebih gelap mempunyai risiko hiperpigmentasi pasca-keradangan yang lebih tinggi selepas resurfacing ablatif. Ini selalunya bermaksud tetapan yang lebih rendah merentasi lebih banyak sesi, dan perlindungan matahari yang ketat selepas itu."
     },
     {
-      "q": "",
-      "a": ""
+      "q": "Apa beza laser CO2 fraksional dan laser CO2 ablatif penuh?",
+      "a": "Resurfacing ablatif penuh merawat seluruh permukaan dalam satu laluan, dengan tempoh pemulihan yang panjang. Penghantaran fraksional meninggalkan kulit yang tidak dirawat di antara lajur mikroskopik, jadi proses sembuh dibantu oleh kulit yang utuh itu dan tempoh pemulihan lebih singkat. Sebagai gantinya, kawasan permukaan yang dirawat dalam setiap sesi lebih kecil, sebab itulah satu kursus adalah biasa."
     }
   ]
 }

@@ -12,7 +12,7 @@
   "lastReviewed": "2026-06-01",
   "seoTitle": "Double Eyelid Malaysia | Pembedahan Kelopak Mata | Kaiteki",
   "seoDescription": "Double eyelid di Malaysia untuk membentuk atau memperhalusi lipatan kelopak mata atas. Tempah konsultasi percuma dengan doktor Kaiteki untuk menilai kesesuaian.",
-  "typicalSessions": "",
+  "typicalSessions": "Satu prosedur, kemudian sesi semakan",
   "bringToConsult": "Oleh kerana prosedur ini dilakukan di sekitar mata, keadaan berikut boleh menjadikannya tidak sesuai atau lebih berisiko:",
   "avoidIf": [
     {
@@ -47,24 +47,24 @@
   "afterSession": {
     "intro": "Bengkak dan lebam pada kelopak mata dijangka berlaku dan akan reda dari semasa ke semasa, biasanya lebih cepat dengan kaedah jahitan. Ramai orang kembali kepada aktiviti harian dalam kira-kira sepuluh hingga empat belas hari. Kelopak mata terus menetap dalam beberapa minggu hingga bulan berikutnya, jadi lipatan pada peringkat awal bukanlah lipatan akhirnya.",
     "bands": [],
-    "aftercare": ""
+    "aftercare": "Ikut arahan penjagaan kawasan mata yang diberikan oleh doktor, dan datang semula untuk sesi semakan."
   },
   "risks": {
     "intro": "Kesan sementara termasuk bengkak, lebam, rasa tegang dan ketidaksimetrian semasa proses sembuh. Doktor akan menerangkan risiko khusus di sekitar mata sebelum anda memberi persetujuan.",
-    "common": "",
-    "lessCommon": "",
+    "common": "Bengkak, lebam, rasa tegang dan ketidaksimetrian semasa kelopak mata sembuh.",
+    "lessCommon": "Risiko khusus pembedahan di sekitar mata, yang akan diterangkan oleh doktor kepada anda sebelum anda memberi persetujuan.",
     "cannotDo": [
-      "",
-      "",
-      ""
+      "Tiada tempoh khusus yang boleh dijanjikan. Pendekatan hirisan cenderung bertahan lebih lama berbanding pendekatan jahitan.",
+      "Lipatan pada peringkat awal bukanlah lipatan akhirnya: kelopak mata terus menetap dalam beberapa minggu hingga bulan.",
+      "Bukan semua kelopak mata sesuai untuk mana-mana kaedah. Struktur kelopak mata yang menentukan, sebab itulah kelopak mata diperiksa secara bersemuka dahulu."
     ],
-    "disclose": ""
+    "disclose": "Bawa sejarah perubatan anda yang lengkap, termasuk sebarang masalah mata."
   },
   "costFactors": {
     "intro": "Kos bergantung terutamanya pada kaedah. Jahitan dan hirisan ialah prosedur berbeza dengan kos yang berbeza, dan kaedah mana yang sesuai tidak dapat ditentukan sebelum kelopak mata diperiksa.",
     "factors": [
-      "",
-      ""
+      "Kaedah: jahitan atau hirisan.",
+      "Sama ada lemak berlebihan turut ditangani semasa prosedur."
     ]
   },
   "steps": [
@@ -128,12 +128,12 @@
       "a": "Kelopak mata dikebaskan dengan ubat bius setempat, dan anda tetap sedar. Rasa tegang, bengkak atau sengal semasa proses sembuh adalah biasa dan biasanya akan reda."
     },
     {
-      "q": "",
-      "a": ""
+      "q": "Berapa lama tempoh pemulihan selepas pembedahan double eyelid?",
+      "a": "Ramai orang kembali kepada aktiviti harian dalam kira-kira sepuluh hingga empat belas hari, biasanya lebih cepat dengan kaedah jahitan. Kelopak mata terus menetap dalam beberapa minggu hingga bulan selepas itu, jadi lipatan pada peringkat awal bukanlah lipatan akhirnya."
     },
     {
-      "q": "",
-      "a": ""
+      "q": "Apa beza kaedah jahitan (suture) dan kaedah hirisan (incisional)?",
+      "a": "Kaedah jahitan membentuk lipatan dengan benang jahitan halus melalui beberapa titik masuk kecil, tanpa hirisan yang berterusan, dan biasanya melibatkan tempoh bengkak yang lebih singkat. Kaedah hirisan menggunakan hirisan di sepanjang garisan lipatan dan cenderung bertahan lebih lama. Struktur kelopak mata anda yang menentukan kaedah mana yang sesuai, jika ada."
     }
   ]
 }

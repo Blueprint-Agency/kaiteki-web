@@ -25,10 +25,12 @@ export type LocalePageEntry =
 
 /** Keyed by the locale-neutral path, exactly as the English page's URL. */
 // 2026-10-28: the client reported every translation signed. All are marked so,
-// dated the day it was reported, except the ten treatment pages whose English
-// changed that day (docs/15 item 4.1): about 225 new strings per locale have no
-// translation yet (validate:locale L-01), and signing them would put English
-// under a prefix. They stay drafts until translated and read again.
+// dated the day it was reported. Exception, on the owner's instruction the same
+// day: the ten treatment pages whose English changed that day (docs/15 item 4.1)
+// went live with about 225 new strings per locale drafted by Claude, which no
+// doctor has read yet. Their signed date covers the earlier text only. The new
+// strings are the ones added in the commit that published them; send those to
+// each page's reviewer, and correct any line they change.
 export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntry>> = {
   zh: {
     "/": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
@@ -107,24 +109,24 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/products": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/privacy": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/treatments/bio-stimulator": { status: "signed", date: "2026-10-28" },
-    "/treatments/botulinum-toxin": { status: "draft" },
-    "/treatments/dermal-fillers": { status: "draft" },
-    "/treatments/double-eyelid": { status: "draft" },
-    "/treatments/exosome-therapy": { status: "draft" },
-    "/treatments/facial-treatments": { status: "draft" },
+    "/treatments/botulinum-toxin": { status: "signed", date: "2026-10-28" },
+    "/treatments/dermal-fillers": { status: "signed", date: "2026-10-28" },
+    "/treatments/double-eyelid": { status: "signed", date: "2026-10-28" },
+    "/treatments/exosome-therapy": { status: "signed", date: "2026-10-28" },
+    "/treatments/facial-treatments": { status: "signed", date: "2026-10-28" },
     "/treatments/fat-freezing": { status: "signed", date: "2026-10-28" },
     "/treatments/fotona-4d": { status: "signed", date: "2026-10-28" },
     "/treatments/hifu": { status: "signed", date: "2026-10-28" },
-    "/treatments/laser-hair-removal": { status: "draft" },
+    "/treatments/laser-hair-removal": { status: "signed", date: "2026-10-28" },
     "/treatments/microneedling": { status: "signed", date: "2026-10-28" },
-    "/treatments/microwave-contouring": { status: "draft" },
-    "/treatments/muscle-stimulation": { status: "draft" },
+    "/treatments/microwave-contouring": { status: "signed", date: "2026-10-28" },
+    "/treatments/muscle-stimulation": { status: "signed", date: "2026-10-28" },
     "/treatments/pico-laser": { status: "signed", date: "2026-10-28" },
     "/treatments/radiofrequency": { status: "signed", date: "2026-10-28" },
-    "/treatments/resurfacing-laser": { status: "draft" },
+    "/treatments/resurfacing-laser": { status: "signed", date: "2026-10-28" },
     "/treatments/skin-booster": { status: "signed", date: "2026-10-28" },
     "/treatments/ultherapy": { status: "signed", date: "2026-10-28" },
-    "/treatments/vascular-pigment-laser": { status: "draft" },
+    "/treatments/vascular-pigment-laser": { status: "signed", date: "2026-10-28" },
     "/concerns/acne": { status: "signed", date: "2026-10-28" },
     "/concerns/acne-scars": { status: "signed", date: "2026-10-28" },
     "/concerns/aging": { status: "signed", date: "2026-10-28" },
@@ -219,24 +221,24 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/products": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/privacy": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/treatments/bio-stimulator": { status: "signed", date: "2026-10-28" },
-    "/treatments/botulinum-toxin": { status: "draft" },
-    "/treatments/dermal-fillers": { status: "draft" },
-    "/treatments/double-eyelid": { status: "draft" },
-    "/treatments/exosome-therapy": { status: "draft" },
-    "/treatments/facial-treatments": { status: "draft" },
+    "/treatments/botulinum-toxin": { status: "signed", date: "2026-10-28" },
+    "/treatments/dermal-fillers": { status: "signed", date: "2026-10-28" },
+    "/treatments/double-eyelid": { status: "signed", date: "2026-10-28" },
+    "/treatments/exosome-therapy": { status: "signed", date: "2026-10-28" },
+    "/treatments/facial-treatments": { status: "signed", date: "2026-10-28" },
     "/treatments/fat-freezing": { status: "signed", date: "2026-10-28" },
     "/treatments/fotona-4d": { status: "signed", date: "2026-10-28" },
     "/treatments/hifu": { status: "signed", date: "2026-10-28" },
-    "/treatments/laser-hair-removal": { status: "draft" },
+    "/treatments/laser-hair-removal": { status: "signed", date: "2026-10-28" },
     "/treatments/microneedling": { status: "signed", date: "2026-10-28" },
-    "/treatments/microwave-contouring": { status: "draft" },
-    "/treatments/muscle-stimulation": { status: "draft" },
+    "/treatments/microwave-contouring": { status: "signed", date: "2026-10-28" },
+    "/treatments/muscle-stimulation": { status: "signed", date: "2026-10-28" },
     "/treatments/pico-laser": { status: "signed", date: "2026-10-28" },
     "/treatments/radiofrequency": { status: "signed", date: "2026-10-28" },
-    "/treatments/resurfacing-laser": { status: "draft" },
+    "/treatments/resurfacing-laser": { status: "signed", date: "2026-10-28" },
     "/treatments/skin-booster": { status: "signed", date: "2026-10-28" },
     "/treatments/ultherapy": { status: "signed", date: "2026-10-28" },
-    "/treatments/vascular-pigment-laser": { status: "draft" },
+    "/treatments/vascular-pigment-laser": { status: "signed", date: "2026-10-28" },
     "/concerns/acne": { status: "signed", date: "2026-10-28" },
     "/concerns/acne-scars": { status: "signed", date: "2026-10-28" },
     "/concerns/aging": { status: "signed", date: "2026-10-28" },

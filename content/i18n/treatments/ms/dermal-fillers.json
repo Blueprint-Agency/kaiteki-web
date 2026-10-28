@@ -15,72 +15,72 @@
   "lastReviewed": "2026-07-13",
   "seoTitle": "Dermal Filler di Malaysia | Juvederm, Restylane | Kaiteki",
   "seoDescription": "Rawatan dermal filler di Malaysia dengan Juvederm, Restylane, Belotero dan Art Filler untuk menyokong isi dan kontur muka. Tempah konsultasi percuma di Kaiteki.",
-  "typicalSessions": "",
-  "bringToConsult": "",
+  "typicalSessions": "Satu lawatan, atau secara berperingkat dalam beberapa lawatan",
+  "bringToConsult": "Bawa maklumat sejarah perubatan, ubat-ubatan dan alahan anda, termasuk sebarang penyakit autoimun dan sebarang ubat pencair darah atau ubat yang mempengaruhi sistem imun.",
   "avoidIf": [
     {
-      "lead": "",
-      "body": ""
+      "lead": "Hamil atau menyusu.",
+      "body": "Filler secara amnya tidak digunakan."
     },
     {
-      "lead": "",
-      "body": ""
+      "lead": "Jangkitan kulit yang aktif atau luka terbuka",
+      "body": "di kawasan yang akan dirawat."
     },
     {
-      "lead": "",
-      "body": ""
+      "lead": "Alahan yang diketahui",
+      "body": "terhadap asid hialuronik, lidocaine atau ubat bius setempat jenis amida, atau sejarah alahan teruk atau anafilaksis."
     },
     {
-      "lead": "",
-      "body": ""
+      "lead": "Filler sebelum ini atau implan kekal",
+      "body": "di kawasan itu, yang perlu diketahui oleh doktor terlebih dahulu."
     }
   ],
   "sessionSteps": [
     {
-      "title": "",
-      "body": ""
+      "title": "Konsultasi dan penilaian muka",
+      "body": "Lawatan pertama anda ialah konsultasi, bukan rawatan. Doktor menilai perkadaran muka dan sejarah perubatan anda, menentukan kawasan mana yang perlu ditangani dan mengikut urutan apa, dan menerangkan risikonya sebelum anda memberi persetujuan."
     },
     {
-      "title": "",
+      "title": "Produk dan persediaan",
       "body": "Selepas penilaian muka, doktor memilih produk untuk kawasan itu, membersihkan kulit dan, jika perlu, menyapu krim kebas sebelum menyuntik."
     },
     {
-      "title": "",
-      "body": ""
+      "title": "Suntikan",
+      "body": "Gel disuntik sedikit demi sedikit menggunakan jarum atau kanula. Satu kawasan selalunya mengambil masa 15 hingga 30 minit selepas persediaan selesai, dan banyak pelan dibuat secara berperingkat dalam lebih daripada satu lawatan."
     },
     {
-      "title": "",
-      "body": ""
+      "title": "Semakan",
+      "body": "Sesi semakan lazimnya diatur supaya doktor dapat menilai kawasan itu selepas bengkak reda."
     }
   ],
   "afterSession": {
     "intro": "Bengkak ringan, kemerahan, lebam atau rasa sengal di titik suntikan biasanya reda dalam beberapa hari hingga kira-kira seminggu. Ikut arahan penjagaan yang diberikan, yang mungkin termasuk mengelakkan aktiviti tertentu selama beberapa hari, dan hubungi klinik jika ada sebarang kebimbangan.",
     "bands": [
       {
-        "title": "",
-        "body": ""
+        "title": "Beberapa hari pertama",
+        "body": "Bibir dan kawasan bawah mata cenderung bengkak dengan lebih ketara berbanding pipi atau garis rahang. Beri ruang masa yang selesa sebelum sebarang acara yang penting bagi anda."
       }
     ],
-    "aftercare": ""
+    "aftercare": "Elakkan menekan atau mengurut kawasan yang dirawat, kurangkan senaman berat, haba dan alkohol untuk tempoh yang singkat, dan segera hubungi klinik jika ada apa-apa yang terasa luar biasa."
   },
   "risks": {
-    "intro": "",
+    "intro": "Filler ialah peranti perubatan suntikan, dan risikonya diterangkan semasa konsultasi sebelum anda memberi persetujuan.",
     "common": "Kesan sementara yang biasa ialah bengkak, kemerahan, lebam, rasa sengal atau ketulan di tempat suntikan, yang lazimnya akan reda.",
-    "lessCommon": "",
+    "lessCommon": "Jangkitan, nodul keradangan dan hipersensitiviti tertangguh. Risiko paling serius yang diketahui bagi mana-mana filler ialah oklusi vaskular: filler memasuki atau menekan saluran darah, yang boleh menjejaskan kulit atau, dalam kes yang jarang berlaku, penglihatan.",
     "cannotDo": [
-      "",
-      "",
-      ""
+      "Ia tidak bertahan selama-lamanya: filler asid hialuronik diuraikan oleh badan secara beransur-ansur.",
+      "Ia tidak melemaskan otot, jadi ia tidak menangani garis yang disebabkan oleh pergerakan.",
+      "Melarutkan filler bukanlah cara rutin untuk membatalkannya. Hyaluronidase ialah prosedur perubatan dengan risikonya sendiri, dan tidak sesuai dalam setiap keadaan."
     ],
-    "disclose": ""
+    "disclose": "Laporkan sakit secara tiba-tiba, kulit menjadi pucat atau sebarang perubahan penglihatan kepada klinik dengan segera, jangan tunggu."
   },
   "costFactors": {
     "intro": "Jumlah dan produk yang digunakan, dan oleh itu kosnya, bergantung pada kawasan yang dirawat dan penilaian anda. Kos disahkan sebaik sahaja pelan dipersetujui, bukan disebut dalam talian.",
     "factors": [
-      "",
-      "",
-      "",
-      ""
+      "Berapa banyak kawasan yang ditangani.",
+      "Gel mana yang sesuai untuk setiap kawasan. Gel struktur yang lebih padat dan gel yang lebih lembut untuk kawasan halus tidak boleh saling menggantikan.",
+      "Jumlah produk yang diperlukan mengikut struktur muka anda.",
+      "Kekerapan suntikan tambahan (top-up) diperlukan, yang berbeza bagi setiap individu."
     ]
   },
   "sections": [
@@ -114,16 +114,16 @@
       "a": "Sesetengah filler HA boleh, dalam keadaan tertentu, dipecahkan dengan agen pelarut. Sama ada ini terpakai untuk produk dan keadaan anda dinilai secara individu."
     },
     {
-      "q": "",
-      "a": ""
+      "q": "Suntik dermal filler sakit tak?",
+      "a": "Kebanyakan orang menggambarkan suntikan filler sebagai rasa tidak selesa yang singkat, bukan menyakitkan. Krim kebas mungkin disapu dahulu, dan banyak gel filler mengandungi lidocaine. Bibir biasanya lebih sensitif berbanding pipi."
     },
     {
-      "q": "",
-      "a": ""
+      "q": "Dermal filler selamat ke untuk kulit orang Asia?",
+      "a": "Filler asid hialuronik tidak menggunakan cahaya atau haba, jadi warna kulit bukanlah faktor penghad seperti yang boleh berlaku dengan laser. Struktur muka dan sejarah perubatan jauh lebih penting, dan doktor menilai kedua-duanya sebelum memutuskan sama ada filler sesuai."
     },
     {
-      "q": "",
-      "a": ""
+      "q": "Apa tanda bahaya selepas suntik filler?",
+      "a": "Sakit secara tiba-tiba, kulit menjadi pucat atau sebarang perubahan penglihatan boleh menandakan filler menjejaskan saluran darah, iaitu risiko paling serius yang diketahui bagi mana-mana filler. Hubungi klinik dengan segera, jangan tunggu."
     }
   ]
 }

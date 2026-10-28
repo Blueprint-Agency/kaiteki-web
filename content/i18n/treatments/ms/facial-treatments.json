@@ -28,64 +28,64 @@
   "lastReviewed": "2026-07-13",
   "seoTitle": "Rawatan Facial di Malaysia | Hydrafacial, Silkpeel | Kaiteki",
   "seoDescription": "Rawatan facial di klinik di Malaysia, termasuk Hydrafacial dan Silkpeel, untuk menyokong pembersihan dan kualiti kulit. Tempah konsultasi percuma di Kaiteki.",
-  "typicalSessions": "",
-  "bringToConsult": "",
+  "typicalSessions": "Berkala, sebagai penjagaan",
+  "bringToConsult": "Beritahu tentang rutin penjagaan kulit dan sejarah perubatan anda, terutamanya sebarang kepekaan yang diketahui terhadap produk penjagaan kulit.",
   "avoidIf": [
     {
-      "lead": "",
+      "lead": "Jerawat aktif yang meradang, jangkitan atau kulit yang luka",
+      "body": "di kawasan itu."
+    },
+    {
+      "lead": "Ekzema atau rosacea yang sedang naik (flare), atau kulit terbakar matahari.",
       "body": ""
     },
     {
-      "lead": "",
-      "body": ""
+      "lead": "Sejurus selepas peel, laser atau waxing",
+      "body": "di kawasan itu."
     },
     {
-      "lead": "",
-      "body": ""
-    },
-    {
-      "lead": "",
-      "body": ""
+      "lead": "Penggunaan isotretinoin atau retinoid topikal yang kuat baru-baru ini,",
+      "body": "yang mungkin bermaksud anda perlu menunggu atau facial perlu disesuaikan."
     }
   ],
   "sessionSteps": [
     {
-      "title": "",
-      "body": ""
+      "title": "Penilaian kulit",
+      "body": "Lawatan pertama anda bermula dengan penilaian, bukan rawatan. Ia menentukan facial mana yang sesuai untuk anda, atau sama ada kulit anda sebenarnya memerlukan rawatan perubatan."
     },
     {
-      "title": "",
-      "body": ""
+      "title": "Sesi facial",
+      "body": "Kulit dibersihkan, dieksfoliasi dan, bergantung pada pilihan, diberi pengekstrakan menggunakan peranti dan penyerapan serum. Sesi biasanya selesa, dan kebanyakan orang kembali kepada aktiviti biasa dengan serta-merta."
     }
   ],
   "afterSession": {
     "intro": "Kemerahan ringan dan sementara boleh berlaku selepas sesetengah facial, dan biasanya reda dalam beberapa jam. Dalam kes yang jarang berlaku, serum boleh menyebabkan reaksi kerengsaan. Gunakan pelindung matahari dan penjagaan kulit yang lembut selepas itu.",
     "bands": [
       {
-        "title": "",
-        "body": ""
+        "title": "Sehari dua berikutnya",
+        "body": "Gunakan penjagaan kulit yang lembut, dan tangguhkan bahan aktif yang kuat seperti retinoid dan asid kecuali dinasihatkan sebaliknya."
       }
     ],
-    "aftercare": ""
+    "aftercare": "Gunakan pelindung matahari setiap hari."
   },
   "risks": {
-    "intro": "",
-    "common": "",
-    "lessCommon": "",
+    "intro": "Facial di klinik berisiko rendah bagi kebanyakan orang, tetapi bukan tanpa risiko.",
+    "common": "Kemerahan, sensitiviti atau rasa tegang yang ringan, dan kawasan kecil yang terengsa di tempat pengekstrakan dibuat dengan lebih kuat.",
+    "lessCommon": "Jerawat naik buat seketika apabila liang pori yang tersumbat dibersihkan, dan, sekali-sekala, reaksi terhadap bahan dalam serum.",
     "cannotDo": [
-      "",
-      "",
-      ""
+      "Ia bekerja di permukaan kulit, bukan pada masalah struktur yang lebih dalam.",
+      "Ia bukan pengganti rawatan perubatan untuk jerawat atau pigmentasi.",
+      "Liang pori tersumbat cenderung berulang tanpa rutin penjagaan di rumah yang sesuai, sebab itulah facial ialah penjagaan berterusan, bukan rawatan sekali sahaja."
     ],
-    "disclose": ""
+    "disclose": "Beritahu pengamal klinik tentang produk yang anda gunakan sekarang, sebarang reaksi sebelum ini dan sebarang penggunaan isotretinoin baru-baru ini."
   },
   "costFactors": {
-    "intro": "",
+    "intro": "Kos bergantung pada facial yang dipilih dan apa yang ditambah kepadanya, jadi kos disahkan sebaik sahaja perkara itu diputuskan.",
     "factors": [
-      "",
-      "",
-      "",
-      ""
+      "Facial mana yang dipilih, dan langkah yang termasuk.",
+      "Tambahan seperti serum booster, pengekstrakan, masker atau LED.",
+      "Sama ada kawasan selain muka turut dirawat.",
+      "Berapa kerap anda memilih untuk datang."
     ]
   },
   "sections": [
@@ -118,12 +118,12 @@
       "a": "Tiada satu kekerapan yang sesuai untuk semua orang. Facial ditempah secara berkala sebagai penjagaan, pada selang masa yang ditentukan oleh keadaan kulit dan matlamat anda."
     },
     {
-      "q": "",
-      "a": ""
+      "q": "Facial di klinik sesuai ke untuk kulit sensitif?",
+      "a": "Selalunya sesuai, kerana sedutan, eksfoliasi dan larutan semuanya boleh dikurangkan, dan tiada tenaga cahaya atau laser terlibat. Ia ditangguhkan semasa ekzema atau rosacea sedang naik, pada kulit yang luka, atau tidak lama selepas peel, laser atau waxing."
     },
     {
-      "q": "",
-      "a": ""
+      "q": "Boleh ke facial bersihkan blackhead dan liang pori tersumbat?",
+      "a": "Pengekstrakan selepas eksfoliasi lazimnya digunakan untuk liang pori tersumbat dan blackhead, tetapi masalah ini cenderung berulang tanpa rutin penjagaan di rumah yang sesuai. Jika ia sebenarnya jerawat yang meradang, doktor mungkin mengesyorkan rawatan perubatan."
     }
   ]
 }
