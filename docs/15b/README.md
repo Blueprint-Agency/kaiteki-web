@@ -157,3 +157,12 @@ Five rewritten pages are in no arm because Google has never crawled them: juvede
 Side note: Google reports a failing *Product snippets* rich result on `/technology/botox`. The page declares
 schema.org `Drug`, correctly for a prescription medicine, and Google treats `Drug` as a kind of Product, then
 fails it for having no price or review. No issue is listed and it does not affect ranking; no change made.
+
+---
+
+## 4.5 · Measure, 2026-10-28
+
+> Data file: [`gsc-measure-2026-10-28.csv`](gsc-measure-2026-10-28.csv), one row per treatment, concern and
+> technology page (72), with the measure window (**28 Sep – 25 Oct 2026**, Malaysia), the baseline window beside
+> it, the rewrite batch, the 28 Oct `check:sameness` score and the 28 Oct URL Inspection result where it was run.
+> The tables and the read are in `docs/15` § "4.5 Measure — 2026-10-28".

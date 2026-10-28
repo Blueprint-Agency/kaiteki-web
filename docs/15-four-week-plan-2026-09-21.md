@@ -158,3 +158,187 @@ lands; never raise one to make the build pass.
 
 If content capacity is one person, drop **3.4** (skin tags) first and **4.1** second into week 5. Weeks 1 and 2
 do not move: they are the crawl-recovery path and everything else depends on them.
+
+---
+
+## 4.5 Measure — 2026-10-28
+
+> Data file: [`15b/gsc-measure-2026-10-28.csv`](15b/gsc-measure-2026-10-28.csv), one row per treatment, concern and
+> technology page (72, zeros included), with both windows, the rewrite batch, today's `check:sameness` score and
+> today's URL Inspection where it was run.
+
+**Verdict: the rewritten pages have not gained ground, and none of the 14 is indexed.** Clicks on the 22 pages
+rewritten on 28 Sep went from 15 to 28, but their position got worse, not better. Per D3 and the 4.5 row, the plan
+moves to `docs/16` §5 option B, and the paragraph-level sameness check becomes the next hypothesis.
+
+### How it was pulled
+
+| | |
+|---|---|
+| Source | Search Console API, `sc-domain:kaiteki.my`, Web, country = Malaysia, dimension `page`, as in `docs/15b` |
+| Baseline | **25 Aug – 21 Sep 2026** (28 days). Re-pulled today; it matches `gsc-baseline-2026-09-21.csv` on all 69 rows |
+| Measure | **28 Sep – 25 Oct 2026** (28 days). Ends 3 days before the pull, as the baseline did. 27 Oct was partial on the day; 26 Oct is left out to keep the 3-day rule. It starts on the day batches 2.1 to 2.3 went live |
+| Arms | before **31 Aug – 27 Sep** (28 days, ends the day before the rewrite) · halves **28 Sep – 10 Oct** and **13 – 25 Oct** (13 days each) |
+| Indexing | live URL Inspection, 28 Oct, on the 14, Plinest, Oligio and 11 rewritten technology pages |
+
+### What changed on the site during the measure window
+
+These overlap the window and make any before/after reading weaker:
+
+- **12 Oct, blog migration.** 152 legacy posts moved to `/blog`, and `blog.kaiteki.my` now 301s to `kaiteki.my/blog`
+  (checked today). Brand queries that went to the subdomain posts can now land on `/blog` instead.
+- **12 Oct, trim of concern and treatment pages** (`30ca38e`, `74de4bf`): sections simplified, media cut, hero
+  images swapped. Every concern and treatment page changed, so neither type has an untouched control.
+- **11 Oct, batches 3.1, 3.2 and 3.6** went live. The 3.7 control arm is rewritten from day 14 of the window.
+- **14 Oct onward, `/zh` and `/ms`.** No `/zh` or `/ms` URL earned a single impression from 14 to 26 Oct, in any
+  country, so they do not appear in the numbers. The English pages did gain hreflang alternates from 14 Oct.
+- 26 Oct, before/after results on concern and treatment pages (`c27050a`): after the window, no effect here.
+
+### Headline 1 · the 14 URLs unindexed on 24 Sep (D3)
+
+**0 of 14 are indexed.** Six have been crawled for the first time, which is movement, but not indexing.
+
+| Status on 28 Oct | Count | Pages |
+|---|---|---|
+| Indexed | **0** | none |
+| Crawled, currently not indexed (all crawled 21 Oct) | 6 | treatments `double-eyelid`, `vascular-pigment-laser`, `microwave-contouring`, `muscle-stimulation` · concerns `vascular-lesions`, `excessive-sweating` |
+| Discovered, currently not indexed (never crawled) | 7 | technology `juvederm`, `ultracel-q`, `lifthera`, `xerf`, `cooltech`, `fotona-sp-dynamis`, `wonderface` |
+| URL is unknown to Google | 1 | treatments `resurfacing-laser` |
+
+- `wonderface` moved from *unknown* to *discovered*. `resurfacing-laser` moved the other way, from *discovered* to
+  *unknown*, although it returns 200 and is in the sitemap.
+- **Plinest is back in the index**, crawled 26 Oct, after being dropped on 11 Oct.
+- `technology/oligio`, new on 11 Oct, is *Discovered, currently not indexed*.
+- Whether the client made the 1.6 requests is still unconfirmed. Nothing on the inspected pages shows that they did.
+
+### Headline 2 · the rewritten pages against the 15b baseline
+
+Baseline 25 Aug – 21 Sep against measure 28 Sep – 25 Oct.
+
+| Group | Pages (with impressions) | Clicks | Impressions | Impression-weighted position | Median position change per page |
+|---|---|---|---|---|---|
+| **2.1 injectables**, live 28 Sep | 13 (12 → 12) | 9 → 12 | 2,198 → 3,688 (+68%) | 16.7 → 18.6 | **+3.3** (worse) |
+| 2.2 lifting, live 28 Sep | 9 (4 → 5) | 6 → 16 | 1,188 → 2,380 (+100%) | 25.9 → 26.0 | −7.2 (n = 4) |
+| **2.1 + 2.2** | 22 (16 → 17) | **15 → 28** | 3,386 → 6,068 (+79%) | **19.9 → 21.5** | **+2.4** (worse) |
+| 3.1 + 3.2, live 11 Oct | 14 (12 → 11) | 73 → 71 | 8,957 → 8,552 (−5%) | 14.5 → 19.6 | −0.4 |
+| Treatments 1.4 + 2.3 | 5 (5 → 5) | 85 → 68 | 12,638 → 11,252 (−11%) | 14.4 → 13.5 | +0.5 |
+| Treatments 3.6, live 11 Oct | 5 (5 → 5) | 12 → 3 | 2,862 → 2,852 (0%) | 25.7 → 27.6 | +2.7 |
+
+A plus sign means a higher position number, so a worse ranking. The injectables' impression gain is partly
+mechanical: 12 of the 13 were first indexed on 6–7 Sep, 12 days into the baseline window. Position is the fairer
+measure, and it got worse.
+
+Per page, two injectables improved: `ellanse` (31.5 → 14.3, 1 → 3 clicks) and `belotero` (12.3 → 10.5).
+`restylane` (6.2 → 8.0) and `radiesse` (8.4 → 10.0) roughly held. The rest fell: `rejuran` (21.5 → 35.2, 250 → 53
+impressions), `sculptra` (18.4 → 28.1), `botox` (10.9 → 20.2), `juvelook` (9.8 → 13.3), `plinest` (18.3 → 21.3,
+out of the index for part of the window), and `art-filler` and `hydrodeluxe` on small numbers. In lifting,
+`sylfirm-x` (27.5 → 14.1, 1 → 4 clicks) and `potenza` (13.0 → 9.8, 5 → 11 clicks) gained; `ultherapy-system`
+stays past 60.
+
+### 3.7 arms on 28 days
+
+The 3.7 arms (`15b` §3.7) re-run with 28-day windows either side of the 28 Sep rewrite.
+
+| Arm | Pages | Clicks | Impressions | Impression-weighted position | Median position change per page |
+|---|---|---|---|---|---|
+| **A · rewritten, re-crawled by 11 Oct** | 12 | 18 → 27 | 2,934 → 4,085 (+39%) | 14.3 → 14.2 | +1.0 |
+| B · rewritten, not re-crawled by 11 Oct | 5 | 6 → 1 | 1,743 → 1,983 (+14%) | 24.9 → 36.5 | +4.9 |
+| **C · control, rewritten 11 Oct** (mid-window) | 14 | 86 → 71 | 8,614 → 8,552 (−1%) | 14.2 → 19.6 | −0.1 |
+| C without onda-coolwaves | 13 | 25 → 26 | 6,782 → 6,567 (−3%) | 16.5 → 23.9 | +0.5 |
+
+**There is no clean control on a 28-day window.** C was rewritten on 11 Oct, so half its after-window is treated.
+The B pages have all been re-crawled since (rejuran 22 Oct, sculptra 27 Oct, radiesse 17 Oct, ultherapy-system
+21 Oct, plinest 26 Oct), so B no longer means "Google has not seen the new text", only "Google saw it late".
+
+The rewrite dates allow one more cut. Batches 2.1 and 2.2 were live in both halves of the window; batches 3.1 and
+3.2 went live between them. If a rewrite lifts ranking, the second group should improve against the first.
+
+| Group, 28 Sep – 10 Oct → 13 – 25 Oct | Pages | Clicks | Impressions | Impression-weighted position | Median position change per page |
+|---|---|---|---|---|---|
+| A + B, rewritten before both halves | 17 | 16 → 12 | 2,824 → 2,961 (+5%) | 15.9 → 27.7 | +2.6 |
+| C, rewritten between the halves | 14 | 41 → 28 | 3,772 → 4,243 (+12%) | 15.4 → 24.2 | +4.8 |
+| C without onda-coolwaves | 13 | 18 → 7 | 2,894 → 3,277 (+13%) | 18.4 → 29.9 | +5.3 |
+
+Both groups lost position in the second half, the newly rewritten one slightly more. The fall coincides with the
+12–14 Oct deploys, not with either rewrite.
+
+### Search performance by page type (Malaysia, 28 days)
+
+Baseline → measure. Technology, treatments and concerns are detail pages only, as in `15b`; their hubs are in
+"Other" with the home page, doctors, products, Our Story and legacy `.php` and `www` URLs.
+
+| Page type | Pages with impressions | Clicks | Impressions | CTR | Avg. position* |
+|---|---|---|---|---|---|
+| Technology | 28 → 28 | 88 → 99 (+13%) | 12,343 → 14,620 (+18%) | 0.71% → 0.68% | 16.0 → 20.4 |
+| Treatments | 14 → 14 | 103 → 76 (−26%) | 24,015 → 21,747 (−9%) | 0.43% → 0.35% | 15.3 → 15.9 |
+| Concerns | 12 → 14 | 30 → 30 (0%) | 27,326 → 22,218 (−19%) | 0.11% → 0.14% | 14.8 → 13.9 |
+| Locations | 10 → 10 | 216 → 211 (−2%) | 25,800 → 25,198 (−2%) | 0.84% → 0.84% | 11.2 → 10.3 |
+| Blog, `kaiteki.my/blog` | 20 → 237 | 15 → 157 | 3,144 → 34,212 | 0.48% → 0.46% | 8.4 → 9.8 |
+| Legacy blog, `blog.kaiteki.my` | 286 → 299 | 84 → 31 (−63%) | 45,793 → 30,240 (−34%) | 0.18% → 0.10% | 21.5 → 23.2 |
+| Other | 32 → 31 | 314 → 270 (−14%) | 25,273 → 25,014 (−1%) | 1.24% → 1.08% | 18.1 → 21.9 |
+| **Total** | 402 → 633 | **850 → 874 (+3%)** | 163,694 → 173,249 (+6%) | 0.52% → 0.50% | 16.7 → 16.1 |
+
+\* Weighted by impressions.
+
+- **The blog is the one clear gain.** Both hosts together went from 99 to 188 clicks and from 48,937 to 64,452
+  impressions, at a better position (20.7 → 16.1). That is the 12 Oct migration, with only two weeks of it in the
+  window. 106 of the 237 `/blog` rows are `#anchor` URLs, which Search Console counts separately: 4,862
+  impressions, 0 clicks.
+- Treatments lost a quarter of their clicks, mostly on `exosome-therapy` (61 → 45, though its position improved
+  7.7 → 5.8) and `skin-booster` (9 → 2).
+- Concerns still convert worst: 22,218 impressions for 30 clicks.
+
+### Sameness and coverage
+
+| Measure | 20 Sep baseline | 28 Oct | Target |
+|---|---|---|---|
+| `check:sameness`, technology | 35 / 36 | **0 / 37** | 0 |
+| `check:sameness`, treatments | 17 / 19 | **0 / 19** | 0 |
+| `check:sameness`, concerns | 0 / 14 | 0 / 16 | 0 |
+| `leadAnswer`, technology | 0 / 36 | **37 / 37** | 36 / 36 |
+| `costFactors`, treatments | 1 / 19 | **11 / 19** (19 / 19 after 4.1, same day) | 19 / 19 |
+
+- The ratchet reached its end state on both clusters. Technology now has 37 pages, with `oligio` added 11 Oct.
+- **Treatments reached 0 without 4.1.** The eight batch-D pages (`botulinum-toxin`, `dermal-fillers`,
+  `double-eyelid`, `vascular-pigment-laser`, `resurfacing-laser`, `microwave-contouring`, `muscle-stimulation`,
+  `facial-treatments`) carry no generic heading, but they also have no `costFactors` block. They are the eight
+  missing from 19/19 at measurement. 4.1 shipped later the same day (commit `3666c89`), which brings it to
+  19/19; none of that is in these numbers. Five of the eight are among the 14 unindexed URLs.
+- `costFactors` is also on 37/37 technology and 16/16 concern pages; `leadAnswer` on 19/19 treatments.
+
+### Reading it
+
+Heading-level sameness went from 35 to 0 on technology pages and from 17 to 0 on treatments, and in the same
+period the rewritten technology pages lost ground. The 22 pages rewritten on 28 Sep earned 13 more clicks over
+28 days, but their median position worsened by 2.4 places, the injectables by 3.3. Against the 28-day arms, the
+rewritten-and-recrawled pages held their weighted position while the control slipped, but the median per-page
+change does not separate them (+1.0 against −0.1). When the control was itself rewritten mid-window, it did not
+improve against the pages rewritten earlier; both fell after the 12–14 Oct deploys. On crawl, none of the 14 is
+indexed, though six were crawled for the first time on 21 Oct. Nothing here shows the rewrite helped ranking.
+It also does not show it hurt: the October changes to the blog, the trim of the concern and treatment pages and
+the hreflang rollout all landed inside the window, and the pages involved have one to a dozen clicks each. The
+blog migration is the only change in the window with a clear gain.
+
+### Decisions this section makes
+
+1. **Option B goes to the client** (`docs/16` §5). The rewritten injectables have not gained ground, so the plan
+   moves to consolidation for the HA sub-group: one *HA dermal fillers* page with Juvéderm, Restylane, Belotero and
+   Art Filler as sections and anchors, and 301s from the four brand URLs. Juvéderm has never been crawled; the other
+   three have 71 to 225 impressions each and two clicks or fewer. `docs/16` worded the trigger as "batch 1 still
+   uncrawled", which is no longer the case (12 of 13 are indexed). The 4.5 row's trigger, "has not gained ground",
+   is met. It is the client's call.
+2. **Paragraph-level sameness becomes the next hypothesis to test.** Unique headings were not enough. The check
+   that flags any paragraph repeated on 3+ pages (the shared injectable risks paragraph, the HA-filler risks and
+   aftercare copy) is the next thing to build. The cost is rewriting reviewed clinical copy, which goes back into
+   the offline review round. Build the check first and count the repeats before committing to the rewrite.
+3. **The 14 stay on the request queue, with `oligio` added.** Confirm with the client whether the 1.6 requests
+   were ever made.
+4. **Titles.** Concerns are at 0.14% CTR on 22k impressions, so the click problem is unchanged. This section exists,
+   so title work is no longer blocked; it is not decided here.
+
+### Not measured
+
+- **No technology control on 28 days.** Every technology page was rewritten by 11 Oct.
+- **No first re-crawl date after a rewrite.** URL Inspection gives only the latest crawl.
+- **Pages with impressions in other countries** are not in these numbers, by design, as in `15b`.
+- **`/zh` and `/ms`**: no impressions yet, so nothing to measure.
