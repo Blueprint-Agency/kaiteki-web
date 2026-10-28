@@ -477,7 +477,42 @@ const authored: Post[] = [
   },
 ];
 
-export const posts: Post[] = [...authored, ...legacyPosts];
+/**
+ * Page links for legacy posts (docs/15 item 4.3). blog-legacy.ts is generated
+ * and moved the posts verbatim with no concern, treatment or technology tags,
+ * which left treatment, concern and technology pages with no "Read next" row
+ * even where the archive had a post on exactly that subject. Tags are layered
+ * on here so a re-run of the migration keeps them. Only metadata changes: the
+ * post bodies stay as published. `pnpm check:links` lists the pages that still
+ * have no post.
+ */
+const legacyLinks: Record<string, Pick<Post, "concerns" | "treatments" | "technology">> = {
+  "fotona-4d-laser": { treatments: ["fotona-4d"], technology: ["fotona-sp-dynamis"] },
+  "fotona-6d-vs-fotona-4d": { treatments: ["fotona-4d"], technology: ["fotona-sp-dynamis"] },
+  "face-lifting-treatments": { concerns: ["face-lifting"], treatments: ["fotona-4d", "hifu"] },
+  "profhilo-vs-rejuran": { treatments: ["skin-booster"], technology: ["profhilo", "rejuran"] },
+  "plinest-vs-rejuran": { treatments: ["skin-booster"], technology: ["plinest", "rejuran"] },
+  "juvelook-vs-profhilo": { treatments: ["skin-booster"], technology: ["juvelook", "profhilo"] },
+  "rejuran-healer": { technology: ["rejuran"] },
+  schwarzy: { concerns: ["body-slimming"], treatments: ["muscle-stimulation"], technology: ["schwarzy"] },
+  "alma-hair-removal": { treatments: ["laser-hair-removal"], technology: ["alma"] },
+  "diode-laser-hair-removal": { treatments: ["laser-hair-removal"] },
+  "laser-hair-removal-vs-ipl-which-is-right-for-you": { treatments: ["laser-hair-removal"] },
+  "open-pores-how-to-treat-them": { concerns: ["enlarged-pores"] },
+  "tips-to-minimise-enlarged-pores": { concerns: ["enlarged-pores"] },
+  "botox-vs-dermal-filler-which-is-right-for-you": {
+    concerns: ["fine-lines-wrinkles"],
+    treatments: ["botulinum-toxin", "dermal-fillers"],
+  },
+  "8-facts-about-botox": { concerns: ["fine-lines-wrinkles"], treatments: ["botulinum-toxin"] },
+  "birthmark-removal": { concerns: ["birthmark"] },
+  "double-eyelid-suture": { treatments: ["double-eyelid"] },
+};
+
+export const posts: Post[] = [
+  ...authored,
+  ...legacyPosts.map((p) => (legacyLinks[p.slug] ? { ...p, ...legacyLinks[p.slug] } : p)),
+];
 
 /** Display order everywhere — newest first. */
 export function postsNewestFirst(): Post[] {

@@ -23,6 +23,7 @@
     "i18n:export": "node --experimental-strip-types scripts/i18n-export.mts",
     "check:sameness": "node --experimental-strip-types scripts/check-sameness.mts",
     "check:cost": "node --experimental-strip-types scripts/check-cost-factors.mts",
+    "check:links": "node --experimental-strip-types scripts/check-links.mts",
     "audit:concern-media": "node --env-file-if-exists=.env.local scripts/media-audit.mjs concerns",
     "sync:concern-media": "node --env-file-if-exists=.env.local scripts/sync-media.mjs concerns",
     "audit:treatment-media": "node --env-file-if-exists=.env.local scripts/media-audit.mjs treatments",
