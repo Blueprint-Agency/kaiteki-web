@@ -1,4 +1,6 @@
 import type { NextConfig } from "next";
+import type { Redirect } from "next/dist/lib/load-custom-routes";
+import { localePages } from "./content/i18n/pages.ts";
 import createMDX from "@next/mdx";
 
 const nextConfig: NextConfig = {
@@ -52,7 +54,7 @@ const nextConfig: NextConfig = {
   // are now Technology items. ponytail: old nested /treatments/x/y URLs get their 301s
   // in the deferred redirect-map pass, not here.
   async redirects() {
-    return [
+    const rules: Redirect[] = [
       // --- Interim taxonomy 301s (new-URL internal moves, IA v2) ---
       { source: "/treatments/coolsculpting", destination: "/technology/coolsculpting", statusCode: 301 },
       { source: "/treatments/onda", destination: "/technology/onda-coolwaves", statusCode: 301 },
@@ -138,6 +140,32 @@ const nextConfig: NextConfig = {
       { source: "/skin-care", destination: "/products", statusCode: 301 },
       { source: "/skincare", destination: "/products", statusCode: 301 },
       { source: "/kuala-lumpur", destination: "/locations/bukit-jalil", statusCode: 301 },
+    ];
+
+    // The legacy /cn/ mirror (docs/01 §2: ~38 sitemap URLs, the same file names
+    // as the English site). docs/04 §9.9: each /cn page lands on its /zh twin
+    // once that exists, and on the English page until then, never a 404. A /zh
+    // page exists in production only once a doctor has signed its translation
+    // (content/i18n/pages.ts), so the destination follows the ledger and each
+    // redirect flips to Chinese on the first build after its page is signed.
+    // Derived from the English legacy rules above so the two maps cannot drift;
+    // `pnpm test:redirects` checks every one has its /cn twin.
+    const zh = (path: string) =>
+      localePages.zh[path]?.status === "signed" ? (path === "/" ? "/zh" : `/zh${path}`) : path;
+    const legacyFile = /^\/[a-z0-9-]+\.(html|php)$/;
+    const cn: Redirect[] = rules
+      .filter((r) => !r.has && legacyFile.test(r.source) && !r.destination.startsWith("/ads/"))
+      .map((r) => ({ source: `/cn${r.source}`, destination: zh(r.destination), statusCode: 301 }));
+
+    return [
+      ...rules,
+      { source: "/cn", destination: zh("/"), statusCode: 301 },
+      ...cn,
+      // The one page only the Chinese site had (docs/01 §2).
+      { source: "/cn/double-eyelid-suture-treatment.html", destination: zh("/treatments/double-eyelid"), statusCode: 301 },
+      // Anything else under /cn/ (dev leftovers, *_old.html, test pages): the
+      // home page.
+      { source: "/cn/:path*", destination: zh("/"), statusCode: 301 },
     ];
   },
 };

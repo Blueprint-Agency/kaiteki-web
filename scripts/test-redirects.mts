@@ -16,6 +16,7 @@ import { createRequire } from "node:module";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import ts from "typescript";
+import { localePages } from "../content/i18n/pages.ts";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const source = readFileSync(join(root, "next.config.ts"), "utf8");
@@ -30,7 +31,9 @@ const { outputText } = ts.transpileModule(source, {
   },
 });
 
-const tmpFile = join(root, "scripts", ".next.config.redirect-check.cjs");
+// At the repo root, so the config's relative imports (the locale ledger)
+// resolve as they do for Next.
+const tmpFile = join(root, ".next.config.redirect-check.cjs");
 writeFileSync(tmpFile, outputText);
 let config: {
   redirects: () => Promise<
@@ -49,11 +52,29 @@ try {
 // /treatments/<category>/<device> scheme the 2026-07-13 plan proposed: that
 // route was never built, so the devices live under /technology and ultherapy
 // went back to being a flat treatment page. Expect what shipped.
+// The /zh twin of an English path once its translation is signed, else the
+// English path itself: the rule next.config.ts applies to /cn.
+function zh(path: string) {
+  if (localePages.zh[path]?.status !== "signed") return path;
+  return path === "/" ? "/zh" : `/zh${path}`;
+}
+
 const want: Record<string, string> = {
   "/treatments/coolsculpting": "/technology/coolsculpting",
   "/treatments/onda": "/technology/onda-coolwaves",
   "/treatments/dermav": "/technology/dermav",
   "/treatments/tattoo-removal": "/concerns/tattoo-removal",
+  // The legacy Chinese mirror (docs/04 §9.9, docs/15 item 4.4): the /zh twin
+  // once its translation is signed, the English page until then.
+  "/cn": zh("/"),
+  "/cn/index.html": zh("/"),
+  "/cn/aboutus.html": zh("/our-story"),
+  "/cn/acne.html": zh("/concerns/acne"),
+  "/cn/pico-laser-treatment.html": zh("/treatments/pico-laser"),
+  "/cn/onda.html": zh("/technology/onda-coolwaves"),
+  "/cn/johor-pelangi-avenue.php": zh("/locations/pelangi-johor-bahru"),
+  "/cn/double-eyelid-suture-treatment.html": zh("/treatments/double-eyelid"),
+  "/cn/:path*": zh("/"),
 };
 
 // /treatments/ultherapy is a live page under IA v2, so a redirect there would
@@ -77,6 +98,14 @@ for (const source of wantNoRedirect) {
   const r = rules.find((x) => x.source === source);
   if (r) errs.push(`${source} redirects to ${r.destination}, but it is a live page under IA v2`);
 }
+// Next matches in order, so the /cn catch-all must follow every specific /cn
+// rule, and every legacy English page must have its /cn twin.
+const cnRules = rules.filter((x) => x.source.startsWith("/cn"));
+if (cnRules.at(-1)?.source !== "/cn/:path*") errs.push("the /cn/:path* catch-all is not the last /cn rule");
+for (const r of rules.filter((x) => /^\/[a-z0-9-]+\.(html|php)$/.test(x.source) && !x.destination.startsWith("/ads/"))) {
+  if (!rules.some((x) => x.source === `/cn${r.source}`)) errs.push(`no /cn twin for ${r.source}`);
+}
+
 if (errs.length) {
   console.error("✗ redirects:\n" + errs.map((e) => "  - " + e).join("\n"));
   process.exit(1);
