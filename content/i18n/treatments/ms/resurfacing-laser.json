@@ -28,6 +28,79 @@
   "lastReviewed": "2026-07-13",
   "seoTitle": "Rawatan Laser Resurfacing CO2 di Malaysia | Kaiteki",
   "seoDescription": "Laser resurfacing CO2 fraksional di Malaysia untuk tekstur kulit, parut jerawat dan liang pori. Tempah konsultasi percuma bersama doktor Kaiteki untuk dinilai.",
+  "typicalSessions": "",
+  "bringToConsult": "",
+  "avoidIf": [
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    }
+  ],
+  "sessionSteps": [
+    {
+      "title": "",
+      "body": ""
+    },
+    {
+      "title": "",
+      "body": "Krim kebas disapu, kemudian laser dilalukan di seluruh kawasan pada tetapan yang dipilih untuk kulit anda."
+    },
+    {
+      "title": "",
+      "body": ""
+    }
+  ],
+  "afterSession": {
+    "intro": "Jangkakan downtime yang lebih lama berbanding laser bukan ablatif. Kemerahan, bengkak dan kulit mengelupas selama beberapa hari hingga kira-kira seminggu adalah biasa dan lazimnya reda sendiri. Selepas itu, lindungi kulit daripada matahari dengan tekun dan gunakan penjagaan kulit yang lembut.",
+    "bands": [
+      {
+        "title": "",
+        "body": ""
+      },
+      {
+        "title": "",
+        "body": ""
+      }
+    ],
+    "aftercare": ""
+  },
+  "risks": {
+    "intro": "Kesan sementara termasuk kemerahan, bengkak, kulit mengelupas dan perubahan pigmentasi. Oleh kerana laser ini ablatif, kulit benar-benar dicederakan dan kemudian sembuh, jadi jangkitan dan parut memang boleh berlaku walaupun jarang. Itulah sebabnya penjagaan selepas rawatan di sini ialah arahan yang perlu diikuti, bukan sekadar nasihat.",
+    "common": "",
+    "lessCommon": "",
+    "pigmentNote": "",
+    "cannotDo": [
+      "",
+      "",
+      ""
+    ],
+    "disclose": ""
+  },
+  "costFactors": {
+    "intro": "Bilangan sesi dan kos bergantung pada masalah anda, kedalaman rawatan dan tindak balas kulit anda. Kedalaman dan ketumpatan ditetapkan mengikut jenis kulit anda, dan kos mengikut kedua-duanya, jadi kos disahkan semasa konsultasi, bukan disiarkan sebagai kadar tetap.",
+    "factors": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
   "sections": [
     {
       "heading": "Apa itu rawatan laser resurfacing?",
@@ -40,31 +113,6 @@
       "heading": "Kenapa laser CO2 fraksional sembuh lebih cepat berbanding resurfacing penuh?",
       "body": [
         "Laser CO2 fraksional menghantar tenaga dalam corak seperti grid yang terdiri daripada lajur mikroskopik, setiap satu dikelilingi kulit yang tidak dirawat. Pendekatan fraksional ini bertujuan mencetuskan tindak balas pembaharuan kulit dan pembentukan semula kolagen yang terkawal, sambil membolehkan pemulihan lebih cepat berbanding merawat seluruh permukaan sekali gus."
-      ]
-    },
-    {
-      "heading": "Siapa yang tidak sesuai untuk laser resurfacing CO2?",
-      "body": [
-        "Laser CO2 fraksional mungkin tidak sesuai semasa hamil, jika ada jangkitan aktif atau masalah kulit tertentu, sejarah parut keloid, atau pada kulit yang baru digelapkan matahari (tan). Beritahu doktor tentang apa-apa sejarah herpes bibir, atau kulit yang mudah berparut teruk, tanpa perlu ditanya: kedua-duanya mengubah sama ada, dan bagaimana, rawatan ini dibuat."
-      ]
-    },
-    {
-      "heading": "Seminggu selepas laser CO2: apa yang berlaku?",
-      "body": [
-        "Krim kebas disapu, kemudian laser dilalukan di seluruh kawasan pada tetapan yang dipilih untuk kulit anda.",
-        "Jangkakan downtime yang lebih lama berbanding laser bukan ablatif. Kemerahan, bengkak dan kulit mengelupas selama beberapa hari hingga kira-kira seminggu adalah biasa dan lazimnya reda sendiri. Selepas itu, lindungi kulit daripada matahari dengan tekun dan gunakan penjagaan kulit yang lembut."
-      ]
-    },
-    {
-      "heading": "Bolehkah laser resurfacing CO2 meninggalkan parut atau menggelapkan kulit?",
-      "body": [
-        "Kesan sementara termasuk kemerahan, bengkak, kulit mengelupas dan perubahan pigmentasi. Oleh kerana laser ini ablatif, kulit benar-benar dicederakan dan kemudian sembuh, jadi jangkitan dan parut memang boleh berlaku walaupun jarang. Itulah sebabnya penjagaan selepas rawatan di sini ialah arahan yang perlu diikuti, bukan sekadar nasihat."
-      ]
-    },
-    {
-      "heading": "Kenapa kos rawatan laser CO2 ditentukan semasa konsultasi?",
-      "body": [
-        "Bilangan sesi dan kos bergantung pada masalah anda, kedalaman rawatan dan tindak balas kulit anda. Kedalaman dan ketumpatan ditetapkan mengikut jenis kulit anda, dan kos mengikut kedua-duanya, jadi kos disahkan semasa konsultasi, bukan disiarkan sebagai kadar tetap."
       ]
     }
   ],
@@ -80,6 +128,14 @@
     {
       "q": "Perlu berapa sesi laser resurfacing?",
       "a": "Ia bergantung pada masalah anda dan kedalaman rawatan. Doktor menetapkan bilangan sesi dan jarak antara sesi selepas kulit anda dinilai."
+    },
+    {
+      "q": "",
+      "a": ""
+    },
+    {
+      "q": "",
+      "a": ""
     }
   ]
 }

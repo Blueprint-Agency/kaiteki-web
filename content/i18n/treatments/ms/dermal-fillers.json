@@ -15,6 +15,74 @@
   "lastReviewed": "2026-07-13",
   "seoTitle": "Dermal Filler di Malaysia | Juvederm, Restylane | Kaiteki",
   "seoDescription": "Rawatan dermal filler di Malaysia dengan Juvederm, Restylane, Belotero dan Art Filler untuk menyokong isi dan kontur muka. Tempah konsultasi percuma di Kaiteki.",
+  "typicalSessions": "",
+  "bringToConsult": "",
+  "avoidIf": [
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    }
+  ],
+  "sessionSteps": [
+    {
+      "title": "",
+      "body": ""
+    },
+    {
+      "title": "",
+      "body": "Selepas penilaian muka, doktor memilih produk untuk kawasan itu, membersihkan kulit dan, jika perlu, menyapu krim kebas sebelum menyuntik."
+    },
+    {
+      "title": "",
+      "body": ""
+    },
+    {
+      "title": "",
+      "body": ""
+    }
+  ],
+  "afterSession": {
+    "intro": "Bengkak ringan, kemerahan, lebam atau rasa sengal di titik suntikan biasanya reda dalam beberapa hari hingga kira-kira seminggu. Ikut arahan penjagaan yang diberikan, yang mungkin termasuk mengelakkan aktiviti tertentu selama beberapa hari, dan hubungi klinik jika ada sebarang kebimbangan.",
+    "bands": [
+      {
+        "title": "",
+        "body": ""
+      }
+    ],
+    "aftercare": ""
+  },
+  "risks": {
+    "intro": "",
+    "common": "Kesan sementara yang biasa ialah bengkak, kemerahan, lebam, rasa sengal atau ketulan di tempat suntikan, yang lazimnya akan reda.",
+    "lessCommon": "",
+    "cannotDo": [
+      "",
+      "",
+      ""
+    ],
+    "disclose": ""
+  },
+  "costFactors": {
+    "intro": "Jumlah dan produk yang digunakan, dan oleh itu kosnya, bergantung pada kawasan yang dirawat dan penilaian anda. Kos disahkan sebaik sahaja pelan dipersetujui, bukan disebut dalam talian.",
+    "factors": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
   "sections": [
     {
       "heading": "Apa itu dermal filler?",
@@ -30,32 +98,6 @@
         "Filler HA disuntik ke lapisan kulit tertentu atau tisu di bawahnya, di mana gel itu bertujuan memberikan isi atau sokongan struktur di kawasan yang dirawat.",
         "Formulasi berbeza dari segi kepekatan dan cara ia berkelakuan dalam tisu, sebab itulah doktor memadankan produk dan teknik dengan kawasan. Kesannya ada sejak disuntik dan terus menetap dalam beberapa hari berikutnya."
       ]
-    },
-    {
-      "heading": "Siapa yang tidak sesuai buat dermal filler?",
-      "body": [
-        "Filler biasanya dielakkan semasa hamil atau menyusu, jika ada jangkitan kulit aktif atau luka terbuka di kawasan itu, dan jika anda diketahui alah kepada bahan dalam sesuatu formulasi. Bawa sejarah perubatan, senarai ubat dan alahan anda semasa konsultasi."
-      ]
-    },
-    {
-      "heading": "Apa yang berlaku semasa sesi filler, dan bengkak berapa lama?",
-      "body": [
-        "Selepas penilaian muka, doktor memilih produk untuk kawasan itu, membersihkan kulit dan, jika perlu, menyapu krim kebas sebelum menyuntik.",
-        "Bengkak ringan, kemerahan, lebam atau rasa sengal di titik suntikan biasanya reda dalam beberapa hari hingga kira-kira seminggu. Ikut arahan penjagaan yang diberikan, yang mungkin termasuk mengelakkan aktiviti tertentu selama beberapa hari, dan hubungi klinik jika ada sebarang kebimbangan."
-      ]
-    },
-    {
-      "heading": "Apa risiko dan kesan sampingan dermal filler?",
-      "body": [
-        "Kesan sementara yang biasa ialah bengkak, kemerahan, lebam, rasa sengal atau ketulan di tempat suntikan, yang lazimnya akan reda.",
-        "Kesan yang kurang biasa tetapi lebih serius boleh berlaku dengan mana-mana suntikan filler. Doktor akan menerangkan kesan yang berkaitan dengan anda sebelum rawatan diteruskan."
-      ]
-    },
-    {
-      "heading": "Berapa banyak filler yang diperlukan, dan apa yang menentukan kos rawatan filler?",
-      "body": [
-        "Jumlah dan produk yang digunakan, dan oleh itu kosnya, bergantung pada kawasan yang dirawat dan penilaian anda. Kos disahkan sebaik sahaja pelan dipersetujui, bukan disebut dalam talian."
-      ]
     }
   ],
   "faqs": [
@@ -70,6 +112,18 @@
     {
       "q": "Boleh ke dermal filler dilarutkan atau dibuang?",
       "a": "Sesetengah filler HA boleh, dalam keadaan tertentu, dipecahkan dengan agen pelarut. Sama ada ini terpakai untuk produk dan keadaan anda dinilai secara individu."
+    },
+    {
+      "q": "",
+      "a": ""
+    },
+    {
+      "q": "",
+      "a": ""
+    },
+    {
+      "q": "",
+      "a": ""
     }
   ]
 }

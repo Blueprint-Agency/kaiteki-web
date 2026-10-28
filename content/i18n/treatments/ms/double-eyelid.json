@@ -12,6 +12,61 @@
   "lastReviewed": "2026-06-01",
   "seoTitle": "Double Eyelid Malaysia | Pembedahan Kelopak Mata | Kaiteki",
   "seoDescription": "Double eyelid di Malaysia untuk membentuk atau memperhalusi lipatan kelopak mata atas. Tempah konsultasi percuma dengan doktor Kaiteki untuk menilai kesesuaian.",
+  "typicalSessions": "",
+  "bringToConsult": "Oleh kerana prosedur ini dilakukan di sekitar mata, keadaan berikut boleh menjadikannya tidak sesuai atau lebih berisiko:",
+  "avoidIf": [
+    {
+      "lead": "Masalah mata kronik atau mata kering, yang boleh menjadi lebih teruk akibat prosedur kelopak mata atas",
+      "body": ""
+    },
+    {
+      "lead": "Tekanan darah tinggi yang tidak terkawal",
+      "body": ""
+    },
+    {
+      "lead": "Gangguan peredaran darah",
+      "body": ""
+    },
+    {
+      "lead": "Penyakit tiroid",
+      "body": ""
+    },
+    {
+      "lead": "Diabetes",
+      "body": ""
+    },
+    {
+      "lead": "Glaukoma",
+      "body": ""
+    },
+    {
+      "lead": "Penyakit jantung",
+      "body": ""
+    }
+  ],
+  "afterSession": {
+    "intro": "Bengkak dan lebam pada kelopak mata dijangka berlaku dan akan reda dari semasa ke semasa, biasanya lebih cepat dengan kaedah jahitan. Ramai orang kembali kepada aktiviti harian dalam kira-kira sepuluh hingga empat belas hari. Kelopak mata terus menetap dalam beberapa minggu hingga bulan berikutnya, jadi lipatan pada peringkat awal bukanlah lipatan akhirnya.",
+    "bands": [],
+    "aftercare": ""
+  },
+  "risks": {
+    "intro": "Kesan sementara termasuk bengkak, lebam, rasa tegang dan ketidaksimetrian semasa proses sembuh. Doktor akan menerangkan risiko khusus di sekitar mata sebelum anda memberi persetujuan.",
+    "common": "",
+    "lessCommon": "",
+    "cannotDo": [
+      "",
+      "",
+      ""
+    ],
+    "disclose": ""
+  },
+  "costFactors": {
+    "intro": "Kos bergantung terutamanya pada kaedah. Jahitan dan hirisan ialah prosedur berbeza dengan kos yang berbeza, dan kaedah mana yang sesuai tidak dapat ditentukan sebelum kelopak mata diperiksa.",
+    "factors": [
+      "",
+      ""
+    ]
+  },
   "steps": [
     {
       "label": "Reka bentuk",
@@ -57,39 +112,6 @@
         "Terdapat dua pendekatan umum. Kaedah jahitan (embedding) menggunakan beberapa titik masuk kecil untuk memasukkan benang jahitan halus bagi membentuk lipatan, tanpa hirisan yang berterusan. Kaedah hirisan menggunakan hirisan di sepanjang garisan lipatan yang dikehendaki, dan kadangkala dipertimbangkan apabila terdapat kulit atau lemak berlebihan, atau apabila pendekatan jahitan kurang sesuai.",
         "Kaedah jahitan biasanya melibatkan tempoh bengkak yang lebih singkat; kaedah hirisan cenderung bertahan lebih lama."
       ]
-    },
-    {
-      "heading": "Siapa yang tidak sesuai menjalani prosedur double eyelid?",
-      "body": [
-        "Oleh kerana prosedur ini dilakukan di sekitar mata, keadaan berikut boleh menjadikannya tidak sesuai atau lebih berisiko:"
-      ],
-      "list": [
-        "Masalah mata kronik atau mata kering, yang boleh menjadi lebih teruk akibat prosedur kelopak mata atas",
-        "Tekanan darah tinggi yang tidak terkawal",
-        "Gangguan peredaran darah",
-        "Penyakit tiroid",
-        "Diabetes",
-        "Glaukoma",
-        "Penyakit jantung"
-      ]
-    },
-    {
-      "heading": "Berapa lama tempoh pemulihan selepas pembedahan double eyelid?",
-      "body": [
-        "Bengkak dan lebam pada kelopak mata dijangka berlaku dan akan reda dari semasa ke semasa, biasanya lebih cepat dengan kaedah jahitan. Ramai orang kembali kepada aktiviti harian dalam kira-kira sepuluh hingga empat belas hari. Kelopak mata terus menetap dalam beberapa minggu hingga bulan berikutnya, jadi lipatan pada peringkat awal bukanlah lipatan akhirnya."
-      ]
-    },
-    {
-      "heading": "Apa risiko prosedur double eyelid?",
-      "body": [
-        "Kesan sementara termasuk bengkak, lebam, rasa tegang dan ketidaksimetrian semasa proses sembuh. Doktor akan menerangkan risiko khusus di sekitar mata sebelum anda memberi persetujuan."
-      ]
-    },
-    {
-      "heading": "Apa yang mempengaruhi kos pembedahan double eyelid?",
-      "body": [
-        "Kos bergantung terutamanya pada kaedah. Jahitan dan hirisan ialah prosedur berbeza dengan kos yang berbeza, dan kaedah mana yang sesuai tidak dapat ditentukan sebelum kelopak mata diperiksa."
-      ]
     }
   ],
   "faqs": [
@@ -104,6 +126,14 @@
     {
       "q": "Prosedur ini sakit tak?",
       "a": "Kelopak mata dikebaskan dengan ubat bius setempat, dan anda tetap sedar. Rasa tegang, bengkak atau sengal semasa proses sembuh adalah biasa dan biasanya akan reda."
+    },
+    {
+      "q": "",
+      "a": ""
+    },
+    {
+      "q": "",
+      "a": ""
     }
   ]
 }

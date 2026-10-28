@@ -21,6 +21,72 @@
       "caption": "A Schwarzy applicator and its strap, positioned before the belt is fastened over the area."
     }
   ],
+  "typicalSessions": "A short block over a few weeks",
+  "bringToConsult": "The medical history is taken before the belt goes on, so declare every implant, device and medication.",
+  "avoidIf": [
+    {
+      "lead": "Metal implants, pacemakers or copper IUDs",
+      "body": "in or near the treatment field."
+    },
+    {
+      "lead": "Other implanted devices,",
+      "body": "such as a defibrillator, neurostimulator or drug pump."
+    },
+    {
+      "lead": "Pregnancy.",
+      "body": "Treatment is deferred."
+    },
+    {
+      "lead": "Epilepsy or a seizure history,",
+      "body": "or a hernia in the area."
+    },
+    {
+      "lead": "Some medical conditions affecting the treatment area,",
+      "body": "including certain heart, kidney or bleeding conditions."
+    }
+  ],
+  "sessionSteps": [
+    {
+      "title": "Consultation and screening",
+      "body": "Your first visit is a consultation, not a treatment. The doctor assesses the area and your goals and reviews your implant and medical history, which is the main gate on suitability."
+    },
+    {
+      "title": "The session",
+      "body": "After the area and your goals are assessed, the applicator is strapped over the target muscle group and the device runs a programme of contractions for a set period."
+    }
+  ],
+  "afterSession": {
+    "intro": "There is no set downtime. Soreness like that after exercise, mild redness or tenderness at the treated area can follow and typically settles within a few days.",
+    "bands": [
+      {
+        "title": "Between sessions",
+        "body": "Allow the muscle a recovery day, keep up gentle movement and stay hydrated, much as you would space training."
+      }
+    ],
+    "aftercare": "Your doctor will tell you how to space sessions around your own training."
+  },
+  "risks": {
+    "intro": "Like any medical procedure, it carries risks, which are explained before a block is booked.",
+    "common": "Muscle soreness, aching or cramping in the treated area, brief muscle fatigue, and mild redness or warmth where the pad sat.",
+    "lessCommon": "A temporary change in skin sensation.",
+    "pigmentNote": "The stimulus is a magnetic field acting on the nerves to the muscle, not light or heat, so skin tone does not decide suitability. Implants and medical history do.",
+    "cannotDo": [
+      "It does not reduce fat, and it is not a weight-loss treatment.",
+      "It does not tighten loose skin.",
+      "If a layer of fat sits over the muscle, strengthening what is underneath will not change what is above it.",
+      "Tone gained is not held indefinitely without ongoing stimulus or activity."
+    ],
+    "disclose": "Declare every implant, device and medication before treatment."
+  },
+  "costFactors": {
+    "intro": "Sessions are usually booked as a short block spaced across a few weeks rather than singly, so the cost is set for the block at consultation. It depends on the area treated, your goals and how you respond.",
+    "factors": [
+      "How many muscle groups you want addressed.",
+      "How many sessions the plan calls for.",
+      "Whether maintenance sessions are included.",
+      "Whether your goals involve both fat and tone, in which case the plan combines treatments."
+    ]
+  },
   "sections": [
     {
       "heading": "What is Muscle Stimulation?",
@@ -34,25 +100,6 @@
       "body": [
         "The device delivers electromagnetic energy through an applicator placed over the target muscle group, inducing supramaximal contractions, a level of contraction that is difficult to achieve through voluntary exercise alone.",
         "Any change in tone develops gradually over a course of sessions."
-      ]
-    },
-    {
-      "heading": "Who cannot have electromagnetic muscle stimulation?",
-      "body": [
-        "Metal implants, pacemakers and copper IUDs in or near the treatment field rule it out, which is why the medical history is taken before the belt goes on. It may also not be appropriate during pregnancy or with some medical conditions affecting the treatment area."
-      ]
-    },
-    {
-      "heading": "What does a Schwarzy session feel like, and what are the side effects?",
-      "body": [
-        "After the area and your goals are assessed, the applicator is strapped over the target muscle group and the device runs a programme of contractions for a set period.",
-        "There is no set downtime. Soreness like that after exercise, mild redness or tenderness at the treated area can follow and typically settles within a few days."
-      ]
-    },
-    {
-      "heading": "Why is muscle stimulation booked as a block?",
-      "body": [
-        "Sessions are usually booked as a short block spaced across a few weeks rather than singly, so the cost is set for the block at consultation. It depends on the area treated, your goals and how you respond."
       ]
     }
   ],
@@ -68,6 +115,14 @@
     {
       "q": "How many sessions will I need?",
       "a": "A short block spaced across a few weeks is common. As with any muscle work, what it holds depends on what you do between and after the sessions."
+    },
+    {
+      "q": "Can I have muscle stimulation with an IUD or a metal implant?",
+      "a": "Not in or near that area. The stimulus is a magnetic field, so metal implants, pacemakers and copper IUDs in or near the treatment field rule it out. That is why every implant and device is declared before the belt goes on."
+    },
+    {
+      "q": "How is it different from exercising myself?",
+      "a": "The contractions are involuntary and repeated at a rate and depth you cannot produce by choice. It sits alongside your own activity, not in place of it: fitness and weight management still come from exercise and diet."
     }
   ]
 }

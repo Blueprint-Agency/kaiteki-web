@@ -27,6 +27,75 @@
   "lastReviewed": "2026-07-13",
   "seoTitle": "Pigmentation & Vascular Laser Malaysia | Kaiteki",
   "seoDescription": "Laser treatment in Malaysia for pigmentation, redness and visible vessels using M22 IPL, Pro Yellow and DermaV. Book a free consultation at Kaiteki.",
+  "typicalSessions": "Several, a few weeks apart",
+  "bringToConsult": "Suitability also depends on which of the three devices is being considered, so bring your full medical and skincare history. With rosacea, mention your triggers, current treatment and any previous vascular laser.",
+  "avoidIf": [
+    {
+      "lead": "Pregnancy or breastfeeding.",
+      "body": "Treatment is deferred."
+    },
+    {
+      "lead": "Recently tanned or sunburnt skin.",
+      "body": ""
+    },
+    {
+      "lead": "Active infection or inflamed skin",
+      "body": "in the area to be treated."
+    },
+    {
+      "lead": "Photosensitising medication,",
+      "body": "including oral isotretinoin and certain antibiotics."
+    },
+    {
+      "lead": "A history of keloid scarring or a light-sensitive condition.",
+      "body": ""
+    }
+  ],
+  "sessionSteps": [
+    {
+      "title": "Consultation and assessment",
+      "body": "Your first visit is a consultation, not a treatment. The doctor examines whether the target is a vessel or a pigment, and how deep it sits, before choosing a device."
+    },
+    {
+      "title": "A test area, where useful",
+      "body": "A patch or test area may be done before treatment goes ahead."
+    },
+    {
+      "title": "The treatment",
+      "body": "The skin is cleansed, eye protection is fitted and the light is applied. Most people describe each pulse as a brief hot pinprick or warm snap."
+    }
+  ],
+  "afterSession": {
+    "intro": "Downtime is usually limited. Temporary redness or mild sensitivity typically settles. Use sun protection and gentle skincare afterwards.",
+    "bands": [
+      {
+        "title": "The first day or two",
+        "body": "Redness, warmth and mild swelling are common. Treated vessels can look temporarily darker or greyish, and treated pigment can darken or crust slightly before flaking away."
+      }
+    ],
+    "aftercare": "Use daily sun protection, keep skincare gentle, and avoid heat such as saunas and hot showers for as long as your doctor specifies."
+  },
+  "risks": {
+    "intro": "Temporary effects can include redness, swelling or changes in pigmentation. Treating a vessel with a wavelength meant for pigment, or the reverse, is the mistake that causes the rest, and it is what the assessment and any test patch exist to prevent.",
+    "common": "Redness, swelling, bruising and small crusts over treated vessels.",
+    "lessCommon": "Blistering, burns, scarring and longer-lasting pigment change, more likely on unsuitable or recently tanned skin.",
+    "pigmentNote": "These devices are used across a range of skin tones, but some skin types and concerns need particular care to reduce the risk of pigment change, so your skin type and history are assessed first.",
+    "cannotDo": [
+      "Vessels can recur, because the tendency behind them remains.",
+      "Rosacea and a tendency to flush are chronic: treatment addresses visible vessels, not the condition.",
+      "Very deep or large vessels may respond differently from fine superficial ones, and may need another approach."
+    ],
+    "disclose": "Tell your doctor about recent sun exposure and every medication you take."
+  },
+  "costFactors": {
+    "intro": "Sessions and cost depend on the device, the concern and how your skin responds. The three platforms are not priced alike, so the cost follows the doctor's choice of device rather than preceding it.",
+    "factors": [
+      "Which device the doctor selects.",
+      "How extensive the concern is: a few discrete vessels, or diffuse redness.",
+      "The size of the area.",
+      "Whether a chronic concern needs occasional maintenance sessions."
+    ]
+  },
   "sections": [
     {
       "heading": "What is Vascular / Pigment Laser treatment?",
@@ -40,31 +109,6 @@
       "body": [
         "Pro Yellow delivers 577nm yellow-light energy, a wavelength associated with absorption by blood vessels, and is generally considered for vascular concerns such as redness and visible vessels. M22 IPL delivers broad-spectrum light that can be filtered for either vascular or pigment targets, offering flexibility across different skin concerns in one platform.",
         "The doctor selects the device, wavelength and settings for your concern and skin tone. The target, a vessel or a pigment particle, absorbs the energy, which may gradually reduce its visibility or prompt the body to clear it over time."
-      ]
-    },
-    {
-      "heading": "Who should not have vascular or pigment laser?",
-      "body": [
-        "Treatment may not be appropriate during pregnancy, with certain skin conditions or medications, or on recently tanned skin. Suitability also depends on which of the three devices is being considered, so bring your full medical and skincare history."
-      ]
-    },
-    {
-      "heading": "What happens at a session, and how long does the redness last?",
-      "body": [
-        "A patch or test area may be done before treatment goes ahead.",
-        "Downtime is usually limited. Temporary redness or mild sensitivity typically settles. Use sun protection and gentle skincare afterwards."
-      ]
-    },
-    {
-      "heading": "What are the risks of vascular and pigment laser?",
-      "body": [
-        "Temporary effects can include redness, swelling or changes in pigmentation. Treating a vessel with a wavelength meant for pigment, or the reverse, is the mistake that causes the rest, and it is what the assessment and any test patch exist to prevent."
-      ]
-    },
-    {
-      "heading": "Why does the cost depend on which device is used?",
-      "body": [
-        "Sessions and cost depend on the device, the concern and how your skin responds. The three platforms are not priced alike, so the cost follows the doctor's choice of device rather than preceding it."
       ]
     }
   ],
@@ -80,6 +124,14 @@
     {
       "q": "How many sessions will I need?",
       "a": "A course of several sessions spaced a few weeks apart is common. Vessels can recur because the tendency behind them remains, so the doctor will say whether you are looking at a course or an ongoing arrangement."
+    },
+    {
+      "q": "Does vascular laser hurt?",
+      "a": "Most people describe each pulse as a brief hot pinprick or warm snap. The devices cool the skin surface as they work, which is intended to keep sessions comfortable."
+    },
+    {
+      "q": "Is there downtime after laser for redness or pigmentation?",
+      "a": "Usually little. Redness and mild swelling for a few hours to a day or two are common, and treated vessels or pigment can look temporarily darker before settling. Sun protection matters afterwards."
     }
   ]
 }

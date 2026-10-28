@@ -27,6 +27,75 @@
   "lastReviewed": "2026-07-13",
   "seoTitle": "Laser Pigmentasi & Vaskular di Malaysia | Kaiteki",
   "seoDescription": "Rawatan laser di Malaysia untuk pigmentasi, kemerahan dan urat merah halus guna M22 IPL, Pro Yellow dan DermaV. Tempah konsultasi percuma di Kaiteki.",
+  "typicalSessions": "",
+  "bringToConsult": "",
+  "avoidIf": [
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    }
+  ],
+  "sessionSteps": [
+    {
+      "title": "",
+      "body": ""
+    },
+    {
+      "title": "",
+      "body": "Ujian tampalan atau kawasan ujian mungkin dilakukan sebelum rawatan diteruskan."
+    },
+    {
+      "title": "",
+      "body": ""
+    }
+  ],
+  "afterSession": {
+    "intro": "Downtime biasanya terhad. Kemerahan sementara atau sensitiviti ringan lazimnya reda. Gunakan pelindung matahari dan penjagaan kulit yang lembut selepas itu.",
+    "bands": [
+      {
+        "title": "",
+        "body": ""
+      }
+    ],
+    "aftercare": ""
+  },
+  "risks": {
+    "intro": "Kesan sementara boleh termasuk kemerahan, bengkak atau perubahan pigmentasi. Merawat saluran darah dengan panjang gelombang yang dimaksudkan untuk pigmen, atau sebaliknya, ialah kesilapan yang menyebabkan masalah lain, dan itulah yang cuba dielakkan melalui penilaian dan ujian tampalan.",
+    "common": "",
+    "lessCommon": "",
+    "pigmentNote": "Mesin ini digunakan pada pelbagai warna kulit, tetapi sesetengah jenis kulit dan masalah memerlukan penjagaan khusus untuk mengurangkan risiko perubahan pigmen, jadi jenis kulit dan sejarah anda dinilai dahulu.",
+    "cannotDo": [
+      "",
+      "",
+      ""
+    ],
+    "disclose": ""
+  },
+  "costFactors": {
+    "intro": "Bilangan sesi dan kos bergantung pada mesin, masalah kulit dan tindak balas kulit anda. Harga ketiga-tiga platform ini tidak sama, jadi kos mengikut pilihan mesin oleh doktor, bukan ditetapkan sebelum pilihan itu dibuat.",
+    "factors": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
   "sections": [
     {
       "heading": "Apa itu laser vaskular dan laser pigmentasi?",
@@ -40,31 +109,6 @@
       "body": [
         "Pro Yellow menghantar tenaga cahaya kuning 577nm, panjang gelombang yang dikaitkan dengan penyerapan oleh saluran darah, dan secara amnya dipertimbangkan untuk masalah vaskular seperti kemerahan dan saluran darah yang kelihatan. M22 IPL menghantar cahaya spektrum luas yang boleh ditapis untuk sasaran vaskular atau pigmen, jadi satu platform boleh digunakan secara fleksibel untuk masalah kulit yang berbeza.",
         "Doktor memilih mesin, panjang gelombang dan tetapan mengikut masalah dan warna kulit anda. Sasaran itu, sama ada saluran darah atau zarah pigmen, menyerap tenaga tersebut, dan ini mungkin mengurangkan kenampakannya secara beransur-ansur atau mendorong badan membersihkannya dari semasa ke semasa."
-      ]
-    },
-    {
-      "heading": "Siapa yang tidak sesuai untuk laser vaskular atau pigmentasi?",
-      "body": [
-        "Rawatan mungkin tidak sesuai semasa hamil, jika anda ada keadaan kulit atau mengambil ubat tertentu, atau pada kulit yang baru digelapkan matahari. Kesesuaian juga bergantung pada mesin mana antara tiga ini yang dipertimbangkan, jadi bawa sejarah perubatan dan penjagaan kulit anda yang lengkap."
-      ]
-    },
-    {
-      "heading": "Apa berlaku semasa sesi, dan berapa lama kemerahan selepas laser?",
-      "body": [
-        "Ujian tampalan atau kawasan ujian mungkin dilakukan sebelum rawatan diteruskan.",
-        "Downtime biasanya terhad. Kemerahan sementara atau sensitiviti ringan lazimnya reda. Gunakan pelindung matahari dan penjagaan kulit yang lembut selepas itu."
-      ]
-    },
-    {
-      "heading": "Apa risiko dan kesan sampingan laser vaskular dan pigmentasi?",
-      "body": [
-        "Kesan sementara boleh termasuk kemerahan, bengkak atau perubahan pigmentasi. Merawat saluran darah dengan panjang gelombang yang dimaksudkan untuk pigmen, atau sebaliknya, ialah kesilapan yang menyebabkan masalah lain, dan itulah yang cuba dielakkan melalui penilaian dan ujian tampalan."
-      ]
-    },
-    {
-      "heading": "Kenapa kos rawatan laser bergantung pada mesin yang digunakan?",
-      "body": [
-        "Bilangan sesi dan kos bergantung pada mesin, masalah kulit dan tindak balas kulit anda. Harga ketiga-tiga platform ini tidak sama, jadi kos mengikut pilihan mesin oleh doktor, bukan ditetapkan sebelum pilihan itu dibuat."
       ]
     }
   ],
@@ -80,6 +124,14 @@
     {
       "q": "Perlu buat laser berapa kali?",
       "a": "Satu siri beberapa sesi yang dijarakkan beberapa minggu adalah biasa. Saluran darah boleh muncul semula kerana kecenderungan di sebaliknya masih ada, jadi doktor akan memberitahu sama ada anda memerlukan satu siri rawatan atau susunan yang berterusan."
+    },
+    {
+      "q": "",
+      "a": ""
+    },
+    {
+      "q": "",
+      "a": ""
     }
   ]
 }

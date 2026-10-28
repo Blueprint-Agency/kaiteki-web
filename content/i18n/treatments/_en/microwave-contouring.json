@@ -41,6 +41,62 @@
     "Thighs",
     "Knees"
   ],
+  "typicalSessions": "Several, a few weeks apart",
+  "bringToConsult": "Mention every device or implant at consultation.",
+  "avoidIf": [
+    {
+      "lead": "Pregnancy.",
+      "body": "Treatment is deferred."
+    },
+    {
+      "lead": "Implants or medical devices",
+      "body": "in the treatment area."
+    },
+    {
+      "lead": "Some skin or health conditions,",
+      "body": "which your doctor goes through with you."
+    }
+  ],
+  "sessionSteps": [
+    {
+      "title": "Consultation and assessment",
+      "body": "Your first visit is a consultation, not a treatment. The doctor examines the area, decides whether it is treatable, and chooses between Onda for Body and Onda for Face."
+    },
+    {
+      "title": "The treatment",
+      "body": "After the area is examined, a handpiece is moved over it to deliver the energy while the surface is cooled. Most people describe a warming sensation."
+    }
+  ],
+  "afterSession": {
+    "intro": "Downtime is usually limited.",
+    "bands": [
+      {
+        "title": "Straight afterwards",
+        "body": "Temporary warmth, redness or mild tenderness over the treated area can occur and typically settles."
+      }
+    ],
+    "aftercare": "Most people return to usual activities. The doctor gives aftercare guidance specific to you."
+  },
+  "risks": {
+    "intro": "Like any energy-based treatment, it carries risks, which are explained before a course is booked.",
+    "common": "Redness, swelling, warmth or tenderness in the treated area.",
+    "lessCommon": "The energy is thermal, so the risk that matters is overheating one spot. It is managed by keeping the handpiece moving and by treating within what the doctor judges the tissue can take.",
+    "pigmentNote": "Microwave energy heats tissue beneath a cooled surface rather than targeting pigment, so it does not rely on colour contrast the way a laser does.",
+    "cannotDo": [
+      "It is not a weight-loss treatment: it treats localised areas, not overall body weight.",
+      "Not every area is treatable. That is settled by examining it, not by naming the concern.",
+      "It is not a single-session treatment. A course is common, and a body area generally takes more sessions than a facial one."
+    ],
+    "disclose": "Tell your doctor about every implant or medical device, and your full medical history."
+  },
+  "costFactors": {
+    "intro": "Sessions and cost depend on the areas treated and how you respond. A facial area and a body area take very different amounts of time on the handpiece, so cost follows the areas agreed at consultation.",
+    "factors": [
+      "The area being treated, body or face.",
+      "The concern being addressed.",
+      "How many sessions the course needs, which depends on your response."
+    ]
+  },
   "sections": [
     {
       "heading": "What is Microwave Contouring?",
@@ -53,31 +109,6 @@
       "heading": "How can microwave energy reach fat without burning the skin?",
       "body": [
         "Microwave energy is delivered beneath the skin's surface while built-in cooling helps keep the surface protected during treatment. The energy is intended to act on the targeted tissue, for example localised fat cells or the fibrous bands associated with cellulite, and may also prompt a gradual collagen-remodelling response supporting firmness."
-      ]
-    },
-    {
-      "heading": "Who should not have Onda microwave contouring?",
-      "body": [
-        "It may not be appropriate during pregnancy, with implants or medical devices in the treatment area, or with some skin or health conditions. Mention every device or implant at consultation."
-      ]
-    },
-    {
-      "heading": "What does an Onda session feel like, and is there downtime?",
-      "body": [
-        "After the area is examined, a handpiece is moved over it to deliver the energy while the surface is cooled. Most people describe a warming sensation.",
-        "Downtime is usually limited."
-      ]
-    },
-    {
-      "heading": "What are the risks of microwave contouring?",
-      "body": [
-        "Temporary effects include redness, swelling, warmth or tenderness in the treated area. The energy is thermal, so the risk that matters is overheating one spot. It is managed by keeping the handpiece moving and by treating within what the doctor judges the tissue can take."
-      ]
-    },
-    {
-      "heading": "Why do face and body areas cost differently?",
-      "body": [
-        "Sessions and cost depend on the areas treated and how you respond. A facial area and a body area take very different amounts of time on the handpiece, so cost follows the areas agreed at consultation."
       ]
     }
   ],
@@ -93,6 +124,14 @@
     {
       "q": "How many sessions will I need?",
       "a": "A course of several sessions spaced a few weeks apart is common. A body area generally takes more sessions than a facial one, simply because there is more of it."
+    },
+    {
+      "q": "Is Onda a weight-loss treatment?",
+      "a": "No. It addresses localised areas of fat and skin firmness, not overall body weight, and it is not a substitute for weight management."
+    },
+    {
+      "q": "What is the difference between Onda and Onda Pro?",
+      "a": "Onda Pro is DEKA's newer generation of Onda. Both use the same Coolwaves® microwave technology, and Onda Pro has dedicated handpieces for the face and the body. Kaiteki has both, and the doctor chooses the device for the area being treated."
     }
   ]
 }

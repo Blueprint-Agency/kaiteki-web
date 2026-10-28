@@ -28,6 +28,66 @@
   "lastReviewed": "2026-07-13",
   "seoTitle": "Rawatan Facial di Malaysia | Hydrafacial, Silkpeel | Kaiteki",
   "seoDescription": "Rawatan facial di klinik di Malaysia, termasuk Hydrafacial dan Silkpeel, untuk menyokong pembersihan dan kualiti kulit. Tempah konsultasi percuma di Kaiteki.",
+  "typicalSessions": "",
+  "bringToConsult": "",
+  "avoidIf": [
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    }
+  ],
+  "sessionSteps": [
+    {
+      "title": "",
+      "body": ""
+    },
+    {
+      "title": "",
+      "body": ""
+    }
+  ],
+  "afterSession": {
+    "intro": "Kemerahan ringan dan sementara boleh berlaku selepas sesetengah facial, dan biasanya reda dalam beberapa jam. Dalam kes yang jarang berlaku, serum boleh menyebabkan reaksi kerengsaan. Gunakan pelindung matahari dan penjagaan kulit yang lembut selepas itu.",
+    "bands": [
+      {
+        "title": "",
+        "body": ""
+      }
+    ],
+    "aftercare": ""
+  },
+  "risks": {
+    "intro": "",
+    "common": "",
+    "lessCommon": "",
+    "cannotDo": [
+      "",
+      "",
+      ""
+    ],
+    "disclose": ""
+  },
+  "costFactors": {
+    "intro": "",
+    "factors": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
   "sections": [
     {
       "heading": "Apa itu rawatan facial?",
@@ -41,25 +101,6 @@
       "body": [
         "Hydrafacial menggunakan proses berasaskan peranti yang membersihkan, mengeksfoliasi dan mengeluarkan kotoran dari liang pori, sebelum memasukkan serum yang sesuai dengan kulit. Silkpeel pula menggabungkan eksfoliasi dengan penyerapan larutan topikal pada masa yang sama.",
         "Kedua-duanya bertujuan membuang kotoran yang terkumpul di permukaan, menghaluskan tekstur dan menyokong kelembapan kulit, bukan merawat masalah struktur yang lebih dalam."
-      ]
-    },
-    {
-      "heading": "Bila anda tidak patut buat facial?",
-      "body": [
-        "Facial mungkin tidak sesuai jika ada jangkitan kulit yang aktif atau keradangan yang ketara, atau sejurus selepas prosedur tertentu yang lain. Beritahu tentang penjagaan kulit dan sejarah perubatan anda, terutamanya sebarang kepekaan terhadap produk penjagaan kulit yang anda tahu."
-      ]
-    },
-    {
-      "heading": "Apa yang berlaku semasa facial di klinik, dan adakah muka jadi merah selepasnya?",
-      "body": [
-        "Penilaian kulit yang ringkas mengesahkan facial mana yang sesuai untuk anda. Kulit kemudian dibersihkan, dieksfoliasi dan, bergantung pada pilihan, melalui pengekstrakan menggunakan peranti dan penyerapan serum. Sesi biasanya selesa, dan kebanyakan orang boleh terus kembali ke aktiviti biasa.",
-        "Kemerahan ringan dan sementara boleh berlaku selepas sesetengah facial, dan biasanya reda dalam beberapa jam. Dalam kes yang jarang berlaku, serum boleh menyebabkan reaksi kerengsaan. Gunakan pelindung matahari dan penjagaan kulit yang lembut selepas itu."
-      ]
-    },
-    {
-      "heading": "Berapa kerap buat facial di klinik, dan apa yang mempengaruhi kosnya?",
-      "body": [
-        "Facial biasanya ditempah secara berkala sebagai penjagaan, pada kekerapan yang ditentukan oleh keadaan kulit dan matlamat anda. Kos bergantung pada facial yang dipilih dan apa yang ditambah kepadanya, jadi ia disahkan selepas perkara itu diputuskan."
       ]
     }
   ],
@@ -75,6 +116,14 @@
     {
       "q": "Berapa kerap boleh buat facial?",
       "a": "Tiada satu kekerapan yang sesuai untuk semua orang. Facial ditempah secara berkala sebagai penjagaan, pada selang masa yang ditentukan oleh keadaan kulit dan matlamat anda."
+    },
+    {
+      "q": "",
+      "a": ""
+    },
+    {
+      "q": "",
+      "a": ""
     }
   ]
 }

@@ -16,18 +16,57 @@
     "Tapak tangan",
     "Betis"
   ],
-  "suitableFor": [
-    "Orang dewasa yang secara amnya sihat dan ingin dinilai untuk garis ekspresi dinamik",
-    "Mereka yang terganggu oleh peluh berlebihan di ketiak, tapak tangan atau tapak kaki yang tidak berkurang dengan antiperspirant",
-    "Mereka yang ingin dinilai untuk otot rahang atau betis yang besar"
+  "avoidIf": [
+    {
+      "lead": "Hamil atau menyusu",
+      "body": ""
+    },
+    {
+      "lead": "Masalah neuromuskular yang diketahui, seperti myasthenia gravis atau sindrom Lambert-Eaton",
+      "body": ""
+    },
+    {
+      "lead": "Alahan yang diketahui terhadap toksin botulinum atau mana-mana komponen dalam sediaannya",
+      "body": ""
+    },
+    {
+      "lead": "Jangkitan atau keradangan kulit yang aktif di tempat yang akan disuntik",
+      "body": ""
+    },
+    {
+      "lead": "Ubat tertentu, termasuk sesetengah antibiotik dan ubat pelemas otot: bawa senarai penuh",
+      "body": ""
+    }
   ],
-  "notSuitableFor": [
-    "Hamil atau menyusu",
-    "Masalah neuromuskular yang diketahui, seperti myasthenia gravis atau sindrom Lambert-Eaton",
-    "Alahan yang diketahui terhadap toksin botulinum atau mana-mana komponen dalam sediaannya",
-    "Jangkitan atau keradangan kulit yang aktif di tempat yang akan disuntik",
-    "Ubat tertentu, termasuk sesetengah antibiotik dan ubat pelemas otot: bawa senarai penuh"
+  "sessionSteps": [
+    {
+      "title": "",
+      "body": "Ia bermula dengan konsultasi. Doktor memerhati kawasan itu semasa rehat dan semasa bergerak, menerangkan apa yang boleh dan tidak boleh dicapai, dan menerangkan risikonya. Hanya selepas itu dos ditentukan."
+    },
+    {
+      "title": "",
+      "body": "Kawasan itu dibersihkan dan doktor memberikan beberapa suntikan kecil dengan jarum halus di titik yang telah dirancang. Kebanyakan orang menyifatkannya sebagai rasa pedih yang singkat, dan ubat kebas atau penyejukan boleh digunakan. Sebarang perubahan berlaku secara beransur-ansur dalam beberapa hari berikutnya, dan sesi susulan menyemaknya sebelum apa-apa langkah seterusnya diputuskan."
+    }
   ],
+  "risks": {
+    "intro": "",
+    "common": "Kesan sementara yang biasa dilaporkan termasuk rasa sengal, kemerahan atau lebam kecil di titik suntikan, dan sakit kepala. Kesan ini biasanya ringan dan tidak lama.",
+    "lessCommon": "Kurang biasa, kesannya merebak sedikit melepasi otot yang disasarkan, menyebabkan muka tidak simetri buat sementara, kening terasa berat atau kelopak mata jatuh, yang boleh mengambil masa beberapa minggu untuk pulih. Dalam kes yang jarang berlaku, toksin yang merebak pernah dilaporkan menyebabkan kesukaran menelan, bercakap atau bernafas, atau otot lemah di tempat yang jauh dari titik suntikan. Keadaan ini memerlukan rawatan perubatan segera.",
+    "cannotDo": [
+      "",
+      "",
+      ""
+    ],
+    "disclose": "Beritahu doktor tentang semua ubat dan suplemen yang anda ambil, terutamanya ubat pencair darah, serta sebarang masalah neuromuskular"
+  },
+  "costFactors": {
+    "intro": "Kos bergantung pada kawasan dan dos. Sebagai ubat preskripsi, harganya tidak boleh disebut atau dijual sebagai pakej sebelum penilaian.",
+    "factors": [
+      "",
+      "",
+      ""
+    ]
+  },
   "comparisons": [
     {
       "name": "Toksin botulinum",
@@ -74,28 +113,8 @@
       "heading": "Bagaimana toksin botulinum melemaskan otot atau kelenjar peluh?",
       "body": [
         "Otot mengecut apabila saraf melepaskan pembawa mesej kimia yang dipanggil asetilkolin di persimpangan antara saraf dan otot. Toksin botulinum menyekat pelepasan itu buat sementara waktu, jadi otot yang dirawat mengecut dengan kurang kuat. Mekanisme yang sama berlaku pada saraf yang menghidupkan kelenjar peluh, sebab itulah ia juga digunakan untuk peluh berlebihan.",
-        "Kesannya terhad kepada kawasan kecil yang disuntik dan bersifat sementara: isyarat saraf beransur pulih dan otot atau kelenjar kembali kepada aktiviti biasanya, pada kadar yang berbeza antara individu."
-      ]
-    },
-    {
-      "heading": "Apa yang berlaku semasa sesi suntikan toksin botulinum?",
-      "body": [
-        "Ia bermula dengan konsultasi. Doktor memerhati kawasan itu semasa rehat dan semasa bergerak, menerangkan apa yang boleh dan tidak boleh dicapai, dan menerangkan risikonya. Hanya selepas itu dos ditentukan.",
-        "Kawasan itu dibersihkan dan doktor memberikan beberapa suntikan kecil dengan jarum halus di titik yang telah dirancang. Kebanyakan orang menyifatkannya sebagai rasa pedih yang singkat, dan ubat kebas atau penyejukan boleh digunakan. Sebarang perubahan berlaku secara beransur-ansur dalam beberapa hari berikutnya, dan sesi susulan menyemaknya sebelum apa-apa langkah seterusnya diputuskan."
-      ]
-    },
-    {
-      "heading": "Apa kesan sampingan toksin botulinum?",
-      "body": [
-        "Kesan sementara yang biasa dilaporkan termasuk rasa sengal, kemerahan atau lebam kecil di titik suntikan, dan sakit kepala. Kesan ini biasanya ringan dan tidak lama.",
-        "Kurang biasa, kesannya merebak sedikit melepasi otot yang disasarkan, menyebabkan muka tidak simetri buat sementara, kening terasa berat atau kelopak mata jatuh, yang boleh mengambil masa beberapa minggu untuk pulih. Dalam kes yang jarang berlaku, toksin yang merebak pernah dilaporkan menyebabkan kesukaran menelan, bercakap atau bernafas, atau otot lemah di tempat yang jauh dari titik suntikan. Keadaan ini memerlukan rawatan perubatan segera."
-      ]
-    },
-    {
-      "heading": "Berapa kali toksin botulinum perlu diulang, dan apa yang menentukan kosnya?",
-      "body": [
-        "Oleh kerana kesannya beransur hilang, rawatan ini ialah kitaran berulang, bukan kursus yang ada titik akhir. Kekerapannya bergantung pada kawasan, dos dan tindak balas anda, dan diputuskan semasa sesi susulan.",
-        "Kos bergantung pada kawasan dan dos. Sebagai ubat preskripsi, harganya tidak boleh disebut atau dijual sebagai pakej sebelum penilaian."
+        "Kesannya terhad kepada kawasan kecil yang disuntik dan bersifat sementara: isyarat saraf beransur pulih dan otot atau kelenjar kembali kepada aktiviti biasanya, pada kadar yang berbeza antara individu.",
+        "Oleh kerana kesannya beransur hilang, rawatan ini ialah kitaran berulang, bukan kursus yang ada titik akhir. Kekerapannya bergantung pada kawasan, dos dan tindak balas anda, dan diputuskan semasa sesi susulan."
       ]
     }
   ],

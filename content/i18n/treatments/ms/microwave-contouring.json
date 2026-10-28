@@ -41,6 +41,62 @@
     "Peha",
     "Lutut"
   ],
+  "typicalSessions": "",
+  "bringToConsult": "",
+  "avoidIf": [
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    }
+  ],
+  "sessionSteps": [
+    {
+      "title": "",
+      "body": ""
+    },
+    {
+      "title": "",
+      "body": "Selepas kawasan itu diperiksa, alat pegang tangan digerakkan di atasnya untuk menyalurkan tenaga sementara permukaannya disejukkan. Kebanyakan orang menggambarkan rasa hangat."
+    }
+  ],
+  "afterSession": {
+    "intro": "Downtime biasanya terhad.",
+    "bands": [
+      {
+        "title": "",
+        "body": ""
+      }
+    ],
+    "aftercare": ""
+  },
+  "risks": {
+    "intro": "",
+    "common": "",
+    "lessCommon": "",
+    "pigmentNote": "",
+    "cannotDo": [
+      "",
+      "",
+      ""
+    ],
+    "disclose": ""
+  },
+  "costFactors": {
+    "intro": "Bilangan sesi dan kos bergantung pada kawasan yang dirawat dan tindak balas anda. Kawasan muka dan kawasan badan memerlukan masa yang sangat berbeza dengan alat pegang tangan, jadi kos mengikut kawasan yang dipersetujui semasa konsultasi.",
+    "factors": [
+      "",
+      "",
+      ""
+    ]
+  },
   "sections": [
     {
       "heading": "Apa itu kontur gelombang mikro (Onda)?",
@@ -53,31 +109,6 @@
       "heading": "Bagaimana tenaga gelombang mikro boleh sampai ke lemak tanpa melecurkan kulit?",
       "body": [
         "Tenaga gelombang mikro disalurkan di bawah permukaan kulit, sementara sistem penyejukan terbina dalam membantu melindungi permukaan kulit semasa rawatan. Tenaga itu bertujuan bertindak pada tisu sasaran, contohnya sel lemak setempat atau jalur berserat yang dikaitkan dengan selulit, dan mungkin juga mencetuskan tindak balas pembentukan semula kolagen secara beransur-ansur yang menyokong ketegangan kulit."
-      ]
-    },
-    {
-      "heading": "Siapa yang tidak sesuai untuk kontur gelombang mikro Onda?",
-      "body": [
-        "Ia mungkin tidak sesuai semasa hamil, jika ada implan atau peranti perubatan di kawasan rawatan, atau jika ada keadaan kulit atau kesihatan tertentu. Beritahu tentang setiap peranti atau implan semasa konsultasi."
-      ]
-    },
-    {
-      "heading": "Bagaimana rasanya sesi Onda, dan ada downtime ke?",
-      "body": [
-        "Selepas kawasan itu diperiksa, alat pegang tangan digerakkan di atasnya untuk menyalurkan tenaga sementara permukaannya disejukkan. Kebanyakan orang menggambarkan rasa hangat.",
-        "Downtime biasanya terhad."
-      ]
-    },
-    {
-      "heading": "Apakah risiko kontur gelombang mikro?",
-      "body": [
-        "Kesan sementara termasuk kemerahan, bengkak, rasa hangat atau sengal di kawasan yang dirawat. Tenaganya ialah tenaga haba, jadi risiko yang penting ialah satu titik menjadi terlalu panas. Ia dikawal dengan memastikan alat pegang tangan sentiasa bergerak dan dengan merawat dalam had yang doktor nilai boleh ditahan oleh tisu."
-      ]
-    },
-    {
-      "heading": "Kenapa kos Onda untuk muka dan badan berbeza?",
-      "body": [
-        "Bilangan sesi dan kos bergantung pada kawasan yang dirawat dan tindak balas anda. Kawasan muka dan kawasan badan memerlukan masa yang sangat berbeza dengan alat pegang tangan, jadi kos mengikut kawasan yang dipersetujui semasa konsultasi."
       ]
     }
   ],
@@ -93,6 +124,14 @@
     {
       "q": "Perlu buat Onda berapa sesi?",
       "a": "Satu kursus beberapa sesi yang dijarakkan beberapa minggu adalah biasa. Kawasan badan biasanya memerlukan lebih banyak sesi berbanding kawasan muka, semata-mata kerana kawasannya lebih besar."
+    },
+    {
+      "q": "",
+      "a": ""
+    },
+    {
+      "q": "",
+      "a": ""
     }
   ]
 }

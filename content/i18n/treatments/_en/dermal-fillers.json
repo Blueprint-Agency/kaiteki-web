@@ -15,6 +15,74 @@
   "lastReviewed": "2026-07-13",
   "seoTitle": "Dermal Fillers Malaysia | Juvederm, Restylane | Kaiteki",
   "seoDescription": "Dermal filler treatment in Malaysia using Juvederm, Restylane, Belotero and Art Filler to support facial volume and contour. Book a free consultation at Kaiteki.",
+  "typicalSessions": "One visit, or staged across several",
+  "bringToConsult": "Bring your medical history, medications and allergies, including any autoimmune condition and any blood-thinning or immune-modulating medication.",
+  "avoidIf": [
+    {
+      "lead": "Pregnancy or breastfeeding.",
+      "body": "Filler is generally not used."
+    },
+    {
+      "lead": "Active skin infection or open lesions",
+      "body": "in the area to be treated."
+    },
+    {
+      "lead": "A known allergy",
+      "body": "to hyaluronic acid, lidocaine or amide-type local anaesthetics, or a history of severe allergy or anaphylaxis."
+    },
+    {
+      "lead": "Previous filler or a permanent implant",
+      "body": "in the area, which the doctor needs to know about first."
+    }
+  ],
+  "sessionSteps": [
+    {
+      "title": "Consultation and facial assessment",
+      "body": "Your first visit is a consultation, not a treatment. The doctor assesses your facial proportions and medical history, decides which areas to address and in what order, and explains the risks before you consent."
+    },
+    {
+      "title": "Product and preparation",
+      "body": "After a facial assessment, the doctor selects a product for the area, cleanses the skin and, where relevant, applies topical numbing before injecting."
+    },
+    {
+      "title": "The injections",
+      "body": "The gel is placed in small increments with a needle or a cannula. A single area often takes 15 to 30 minutes once preparation is done, and many plans are staged across more than one visit."
+    },
+    {
+      "title": "Review",
+      "body": "A review appointment is commonly arranged so the doctor can assess the area once the swelling has settled."
+    }
+  ],
+  "afterSession": {
+    "intro": "Mild swelling, redness, bruising or tenderness at the injection sites commonly settles within a few days to about a week. Follow the aftercare you are given, which may include avoiding certain activities for a few days, and contact the clinic with any concern.",
+    "bands": [
+      {
+        "title": "The first few days",
+        "body": "The lips and under-eye area tend to swell more visibly than the cheeks or jawline. Allow a comfortable margin before any event that matters to you."
+      }
+    ],
+    "aftercare": "Avoid pressure or massage on the treated site, keep strenuous exercise, heat and alcohol to a minimum for a short period, and contact the clinic promptly if anything feels unusual."
+  },
+  "risks": {
+    "intro": "Filler is an injectable medical device, and its risks are explained at consultation before you consent.",
+    "common": "Common temporary effects are swelling, redness, bruising, tenderness or lumpiness at the injection site, which typically settle.",
+    "lessCommon": "Infection, inflammatory nodules and delayed hypersensitivity. The most serious recognised risk of any filler is vascular occlusion: filler entering or compressing a blood vessel, which can affect the skin or, rarely, vision.",
+    "cannotDo": [
+      "It is not permanent: hyaluronic-acid filler is gradually broken down by the body.",
+      "It does not relax muscle, so it does not address lines caused by movement.",
+      "Dissolving it is not a routine undo. Hyaluronidase is a medical procedure with its own risks, and not appropriate in every situation."
+    ],
+    "disclose": "Report sudden pain, skin blanching or any change in vision to the clinic immediately, rather than waiting."
+  },
+  "costFactors": {
+    "intro": "The amount and the product used, and so the cost, depend on the areas treated and your assessment. Cost is confirmed once a plan is agreed, not quoted online.",
+    "factors": [
+      "How many areas are being addressed.",
+      "Which gel suits each area. Firmer structural gels and softer gels for delicate areas are not interchangeable.",
+      "How much product your anatomy calls for.",
+      "How often top-ups are needed, which is individual."
+    ]
+  },
   "sections": [
     {
       "heading": "What are dermal fillers?",
@@ -30,32 +98,6 @@
         "HA fillers are injected into targeted layers of the skin or the tissue beneath it, where the gel is intended to provide volume or structural support at the treated site.",
         "Formulations differ in thickness and in how they behave in tissue, which is why the doctor matches the product and technique to the area. The effect is present from injection and continues to settle over the following days."
       ]
-    },
-    {
-      "heading": "Who should not have dermal fillers?",
-      "body": [
-        "Filler is usually avoided during pregnancy or breastfeeding, over active skin infection or open lesions in the area, and with a known allergy to a formulation's ingredients. Bring your medical history, medications and allergies to the consultation."
-      ]
-    },
-    {
-      "heading": "What happens at a filler appointment, and how long does swelling last?",
-      "body": [
-        "After a facial assessment, the doctor selects a product for the area, cleanses the skin and, where relevant, applies topical numbing before injecting.",
-        "Mild swelling, redness, bruising or tenderness at the injection sites commonly settles within a few days to about a week. Follow the aftercare you are given, which may include avoiding certain activities for a few days, and contact the clinic with any concern."
-      ]
-    },
-    {
-      "heading": "What are the risks of dermal fillers?",
-      "body": [
-        "Common temporary effects are swelling, redness, bruising, tenderness or lumpiness at the injection site, which typically settle.",
-        "Less common but more serious effects can occur with any filler injection. The doctor explains the ones relevant to you before treatment goes ahead."
-      ]
-    },
-    {
-      "heading": "What decides how much filler you need, and the cost?",
-      "body": [
-        "The amount and the product used, and so the cost, depend on the areas treated and your assessment. Cost is confirmed once a plan is agreed, not quoted online."
-      ]
     }
   ],
   "faqs": [
@@ -70,6 +112,18 @@
     {
       "q": "Are dermal fillers reversible?",
       "a": "Some HA fillers can, in certain circumstances, be broken down with a dissolving agent. Whether that applies to your product and situation is assessed individually."
+    },
+    {
+      "q": "Do dermal fillers hurt?",
+      "a": "Most people describe filler injection as briefly uncomfortable rather than painful. Topical numbing may be applied first, and many filler gels contain lidocaine. Lips are generally more sensitive than cheeks."
+    },
+    {
+      "q": "Are dermal fillers safe for Asian skin?",
+      "a": "Hyaluronic-acid fillers do not use light or heat, so skin tone is not the limiting factor it can be with lasers. Facial anatomy and medical history matter far more, and the doctor assesses both before deciding whether filler is appropriate."
+    },
+    {
+      "q": "What are the warning signs after filler?",
+      "a": "Sudden pain, skin blanching or any change in vision can signal filler affecting a blood vessel, the most serious recognised risk of any filler. Contact the clinic immediately rather than waiting."
     }
   ]
 }

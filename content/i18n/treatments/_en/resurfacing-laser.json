@@ -28,6 +28,79 @@
   "lastReviewed": "2026-07-13",
   "seoTitle": "CO2 Resurfacing Laser Malaysia | Kaiteki",
   "seoDescription": "Fractional CO2 resurfacing laser in Malaysia for skin texture, acne scarring and pores. Book a free consultation with a Kaiteki doctor to assess suitability.",
+  "typicalSessions": "A small course, spaced weeks apart",
+  "bringToConsult": "Raise any history of cold sores, or of scarring badly, without being asked: both change whether, and how, it is done.",
+  "avoidIf": [
+    {
+      "lead": "Pregnancy or breastfeeding.",
+      "body": "Treatment is deferred."
+    },
+    {
+      "lead": "Active infection or inflammation",
+      "body": "in the area, including acne or cold sores."
+    },
+    {
+      "lead": "A history of keloid or hypertrophic scarring.",
+      "body": ""
+    },
+    {
+      "lead": "Recently tanned skin, or recent isotretinoin.",
+      "body": ""
+    },
+    {
+      "lead": "Certain autoimmune or connective-tissue conditions,",
+      "body": "which your doctor goes through with you."
+    }
+  ],
+  "sessionSteps": [
+    {
+      "title": "Consultation and recovery planning",
+      "body": "Your first visit is a consultation, not a treatment. For an ablative laser it includes planning your recovery around work or events before anything is booked."
+    },
+    {
+      "title": "Numbing, then the laser",
+      "body": "Topical numbing is applied, then the laser is passed across the area at settings chosen for your skin."
+    },
+    {
+      "title": "Healing between sessions",
+      "body": "Sessions are spaced several weeks to a few months apart, so the skin heals and remodels fully between visits."
+    }
+  ],
+  "afterSession": {
+    "intro": "Expect more downtime than with non-ablative lasers. Redness, swelling and flaking or peeling over several days to about a week are common and typically settle. Diligent sun protection and gentle skincare follow.",
+    "bands": [
+      {
+        "title": "The first day or two",
+        "body": "Treated skin looks red, feels hot and tight, and is visibly swollen."
+      },
+      {
+        "title": "The rest of the week",
+        "body": "Bronzing, roughness and flaking as the treated columns work their way out. Pinkness can linger for weeks."
+      }
+    ],
+    "aftercare": "Gentle cleansing, the emollient you are given, no picking or exfoliating, and strict daily sun protection. Heat, swimming, makeup and active skincare are paused for as long as your doctor specifies."
+  },
+  "risks": {
+    "intro": "Temporary effects include redness, swelling, peeling and changes in pigmentation. Because the laser is ablative, the skin is genuinely wounded and then heals, so infection and scarring are real if uncommon possibilities. That is why aftercare here is instruction rather than advice.",
+    "common": "Redness, swelling, heat, crusting and peeling, and pinkness that can last for weeks.",
+    "lessCommon": "Post-inflammatory hyperpigmentation, prolonged redness, reactivation of cold sores, infection, and scarring or textural change.",
+    "pigmentNote": "Deeper and Asian skin tones carry a higher risk of post-inflammatory hyperpigmentation after ablative resurfacing, so settings are kept conservative, priming skincare may be advised, and more sessions at lower intensity may be preferred over one aggressive session.",
+    "cannotDo": [
+      "It is not a lunchtime treatment: the recovery is real and has to be planned for.",
+      "Established acne scarring generally needs a course, not one visit.",
+      "It works on texture and structure, not on skin colour alone."
+    ],
+    "disclose": "Tell your doctor about any history of cold sores, scarring or pigment problems, and any recent isotretinoin."
+  },
+  "costFactors": {
+    "intro": "Sessions and cost depend on the concern, the treatment depth and how your skin responds. Depth and density are set for your skin type, and they are what the cost tracks, so it is confirmed at consultation rather than published as a rate.",
+    "factors": [
+      "The size of the area.",
+      "The depth and density of settings your concern calls for.",
+      "How many sessions the plan involves.",
+      "Whether it is combined with other treatments in a scar or resurfacing plan."
+    ]
+  },
   "sections": [
     {
       "heading": "What is Resurfacing Laser treatment?",
@@ -40,31 +113,6 @@
       "heading": "Why does a fractional CO2 laser heal faster than full resurfacing?",
       "body": [
         "The fractional CO2 laser delivers energy in a grid-like pattern of microscopic columns, each surrounded by untreated skin. This fractional approach is intended to prompt a controlled skin-renewal and collagen-remodelling response while allowing faster recovery than treating the entire surface at once."
-      ]
-    },
-    {
-      "heading": "Who should not have CO2 resurfacing?",
-      "body": [
-        "Fractional CO2 may not be appropriate during pregnancy, with active infection or certain skin conditions, a history of keloid scarring, or on recently tanned skin. Raise any history of cold sores, or of scarring badly, without being asked: both change whether, and how, it is done."
-      ]
-    },
-    {
-      "heading": "What does the week after CO2 resurfacing look like?",
-      "body": [
-        "Topical numbing is applied, then the laser is passed across the area at settings chosen for your skin.",
-        "Expect more downtime than with non-ablative lasers. Redness, swelling and flaking or peeling over several days to about a week are common and typically settle. Diligent sun protection and gentle skincare follow."
-      ]
-    },
-    {
-      "heading": "Can CO2 resurfacing scar or darken the skin?",
-      "body": [
-        "Temporary effects include redness, swelling, peeling and changes in pigmentation. Because the laser is ablative, the skin is genuinely wounded and then heals, so infection and scarring are real if uncommon possibilities. That is why aftercare here is instruction rather than advice."
-      ]
-    },
-    {
-      "heading": "Why is CO2 resurfacing priced at consultation?",
-      "body": [
-        "Sessions and cost depend on the concern, the treatment depth and how your skin responds. Depth and density are set for your skin type, and they are what the cost tracks, so it is confirmed at consultation rather than published as a rate."
       ]
     }
   ],
@@ -80,6 +128,14 @@
     {
       "q": "How many sessions will I need?",
       "a": "It depends on the concern and the treatment depth. The doctor sets the number and spacing of sessions once your skin has been assessed."
+    },
+    {
+      "q": "Is CO2 laser safe for Asian skin?",
+      "a": "It is used on Asian skin, but more conservatively, because deeper skin tones carry a higher risk of post-inflammatory hyperpigmentation after ablative resurfacing. That often means lower settings across more sessions, and strict sun protection afterwards."
+    },
+    {
+      "q": "What is the difference between fractional and fully ablative CO2 laser?",
+      "a": "Fully ablative resurfacing treats the whole surface in one pass, with a long recovery. Fractional delivery leaves untreated skin between microscopic columns, so healing draws on that intact skin and recovery is shorter. The trade-off is less surface treated per session, which is why a course is usual."
     }
   ]
 }

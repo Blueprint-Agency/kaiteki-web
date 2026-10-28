@@ -1801,18 +1801,53 @@ export const treatments: Treatment[] = [
     leadAnswer:
       "Botulinum toxin is a prescription injectable that temporarily reduces the signal between nerves and the muscle or sweat gland it acts on. In aesthetic medicine it is used for expression lines, jaw and calf muscle bulk, and excessive sweating. It is a medicine, so a doctor must assess suitability before it can be prescribed or given.",
     areas: ["Forehead", "Frown lines", "Crow's feet", "Jawline", "Underarms", "Palms", "Calves"],
-    suitableFor: [
-      "Adults in general good health seeking assessment for dynamic expression lines",
-      "People bothered by excessive underarm, palm or sole sweating that has not responded to antiperspirants",
-      "People interested in assessment for jaw or calf muscle bulk",
+    // docs/15 item 4.1 (2026-10-28): the v2 block set, applied under docs/16 R1.
+    // Two prose sections kept; the rest became typed blocks and were deleted.
+    // Block copy is restructured from reviewed text only: this page and the
+    // Botox page. The avoidIf leads are the former notSuitableFor lines
+    // verbatim, so their signed translations carry over. No new claim, no
+    // figure. The re-arrangement goes to Dr Jeremy Low in the offline review
+    // round, which is why `lastReviewed` is unchanged.
+    avoidIf: [
+      { lead: "Pregnancy or breastfeeding", body: "" },
+      { lead: "Known neuromuscular conditions such as myasthenia gravis or Lambert-Eaton syndrome", body: "" },
+      { lead: "Known allergy to botulinum toxin or any component of the preparation", body: "" },
+      { lead: "Active skin infection or inflammation at the intended injection site", body: "" },
+      { lead: "Certain medications, including some antibiotics and muscle relaxants: bring a full list", body: "" },
     ],
-    notSuitableFor: [
-      "Pregnancy or breastfeeding",
-      "Known neuromuscular conditions such as myasthenia gravis or Lambert-Eaton syndrome",
-      "Known allergy to botulinum toxin or any component of the preparation",
-      "Active skin infection or inflammation at the intended injection site",
-      "Certain medications, including some antibiotics and muscle relaxants: bring a full list",
+    sessionSteps: [
+      {
+        title: "Consultation and assessment",
+        body: "It starts with a consultation. The doctor watches the area at rest and in movement, explains what is and is not achievable, and goes through the risks. Only then is a dose decided.",
+      },
+      {
+        title: "The injections, then a review",
+        body: "The area is cleansed and the doctor gives a series of small injections with a fine needle at planned points. Most people describe brief stinging, and numbing or cooling can be used. Any change develops over the following days, and a review appointment checks it before anything further is decided.",
+      },
     ],
+    risks: {
+      intro: "",
+      common:
+        "Commonly reported temporary effects include tenderness, redness or small bruises at the injection points, and headache. These are usually mild and short-lived.",
+      lessCommon:
+        "Less commonly, the effect extends slightly beyond the intended muscle, causing temporary asymmetry, a heavy-feeling brow or eyelid drooping, which can take weeks to resolve. Rarely, spread of the toxin has been reported to cause difficulty swallowing, speaking or breathing, or weakness away from the injection site. These need urgent medical attention.",
+      cannotDo: [
+        "It is not permanent: nerve signalling gradually returns and the muscle or gland resumes its usual activity.",
+        "It does not add volume, so it does not address lines or hollows caused by lost volume or structure.",
+        "It does not treat a cause of excessive sweating, which is ruled out first.",
+      ],
+      disclose:
+        "Tell your doctor about all medicines and supplements, especially blood thinners, and any neuromuscular condition",
+    },
+    costFactors: {
+      intro:
+        "Cost depends on the area and the dose. As a prescription medicine it cannot be quoted or sold as a package before assessment.",
+      factors: [
+        "The area or areas being treated.",
+        "The number of units your doctor decides after examining how the muscles move. Units are product-specific, so a figure quoted for another brand or clinic does not transfer.",
+        "Your plan over time: the effect is temporary, so treatment is a repeating cycle reviewed by your doctor.",
+      ],
+    },
     comparisons: [
       {
         name: "Botulinum toxin",
@@ -1857,27 +1892,7 @@ export const treatments: Treatment[] = [
         body: [
           "Muscles contract when a nerve releases a chemical messenger called acetylcholine at the junction between the nerve and the muscle. Botulinum toxin temporarily blocks that release, so the treated muscle contracts less strongly. The same mechanism applies to the nerves that switch on sweat glands, which is why it is also used for excessive sweating.",
           "The effect is confined to the small area injected and is temporary: nerve signalling gradually returns and the muscle or gland resumes its usual activity, at a pace that varies between people.",
-        ],
-      },
-      {
-        heading: "What happens at a botulinum toxin appointment?",
-        body: [
-          "It starts with a consultation. The doctor watches the area at rest and in movement, explains what is and is not achievable, and goes through the risks. Only then is a dose decided.",
-          "The area is cleansed and the doctor gives a series of small injections with a fine needle at planned points. Most people describe brief stinging, and numbing or cooling can be used. Any change develops over the following days, and a review appointment checks it before anything further is decided.",
-        ],
-      },
-      {
-        heading: "What are the side effects of botulinum toxin?",
-        body: [
-          "Commonly reported temporary effects include tenderness, redness or small bruises at the injection points, and headache. These are usually mild and short-lived.",
-          "Less commonly, the effect extends slightly beyond the intended muscle, causing temporary asymmetry, a heavy-feeling brow or eyelid drooping, which can take weeks to resolve. Rarely, spread of the toxin has been reported to cause difficulty swallowing, speaking or breathing, or weakness away from the injection site. These need urgent medical attention.",
-        ],
-      },
-      {
-        heading: "How often is botulinum toxin repeated, and what affects the cost?",
-        body: [
           "Because the effect wears off, treatment is a repeating cycle, not a course with an endpoint. How often depends on the area, the dose and how you respond, and is decided at review.",
-          "Cost depends on the area and the dose. As a prescription medicine it cannot be quoted or sold as a package before assessment.",
         ],
       },
     ],
@@ -2259,6 +2274,10 @@ export const treatments: Treatment[] = [
         q: "When might I notice a change?",
         a: "Any change develops gradually over the weeks after treatment, not immediately, and the extent varies between people.",
       },
+      {
+        q: "Can exosome therapy treat hair loss on its own?",
+        a: "No. On the scalp it is used alongside medical hair-loss treatment, not as a treatment in its own right, and it is not a substitute for finding the cause of the hair loss.",
+      },
     ],
   },
   {
@@ -2277,6 +2296,50 @@ export const treatments: Treatment[] = [
     seoTitle: "Double Eyelid Surgery Malaysia | Crease Procedure | Kaiteki",
     seoDescription:
       "Double-eyelid procedure in Malaysia to create or refine an upper-eyelid crease. Book a free consultation with a Kaiteki doctor to assess suitability.",
+    // docs/15 item 4.1 (2026-10-28): the v2 block set, applied under docs/16 R1.
+    // Two prose sections kept; the rest became typed blocks and were deleted.
+    // Copy is this page's own reviewed text, re-arranged: the avoidIf leads and
+    // their intro are the former list verbatim. The illustrated `steps` stay as
+    // the session sequence, so there is no sessionSteps. No new claim. The
+    // re-arrangement goes to Dr Lim Xiao Chien in the offline review round.
+    typicalSessions: "One procedure, then a review",
+    bringToConsult:
+      "Because the procedure is around the eye, these conditions can make it unsuitable or higher-risk:",
+    avoidIf: [
+      { lead: "Chronic or dry-eye conditions, which upper-eyelid procedures can aggravate", body: "" },
+      { lead: "Uncontrolled high blood pressure", body: "" },
+      { lead: "Circulation disorders", body: "" },
+      { lead: "Thyroid disease", body: "" },
+      { lead: "Diabetes", body: "" },
+      { lead: "Glaucoma", body: "" },
+      { lead: "Heart disease", body: "" },
+    ],
+    afterSession: {
+      intro:
+        "Swelling and bruising of the eyelids are expected and settle over time, generally sooner with the suture method. Many people return to everyday activities within around ten to fourteen days. The eyelids continue to settle over the following weeks to months, so the early crease is not the final one.",
+      bands: [],
+      aftercare: "Follow the eye-area aftercare the doctor gives you, and come back for the review appointment.",
+    },
+    risks: {
+      intro:
+        "Temporary effects include swelling, bruising, tightness and asymmetry while healing. The doctor goes through the specific risks around the eye before you consent.",
+      common: "Swelling, bruising, tightness and asymmetry while the eyelid heals.",
+      lessCommon: "Risks specific to surgery around the eye, which the doctor goes through with you before you consent.",
+      cannotDo: [
+        "No specific duration can be promised. The incisional approach tends to hold longer than the suture approach.",
+        "The early crease is not the final one: the eyelids keep settling for weeks to months.",
+        "Not every eyelid suits either method. Anatomy decides, which is why the eyelid is examined in person first.",
+      ],
+      disclose: "Bring your full medical history, including any eye condition.",
+    },
+    costFactors: {
+      intro:
+        "Cost depends mainly on the method. Suture and incisional are different procedures with different costs, and which one applies cannot be settled before the eyelid is examined.",
+      factors: [
+        "The method: suture or incisional.",
+        "Whether excess fat is addressed during the procedure.",
+      ],
+    },
     // The only authored `steps` sequence. Sources are 156×156 icons and the
     // cell is capped there (Q-19) — the order is the information, not the art.
     steps: [
@@ -2325,39 +2388,6 @@ export const treatments: Treatment[] = [
           "The suture method generally involves shorter swelling; the incisional method tends to hold longer.",
         ],
       },
-      {
-        heading: "Who should not have a double-eyelid procedure?",
-        body: [
-          "Because the procedure is around the eye, these conditions can make it unsuitable or higher-risk:",
-        ],
-        list: [
-          "Chronic or dry-eye conditions, which upper-eyelid procedures can aggravate",
-          "Uncontrolled high blood pressure",
-          "Circulation disorders",
-          "Thyroid disease",
-          "Diabetes",
-          "Glaucoma",
-          "Heart disease",
-        ],
-      },
-      {
-        heading: "How long is recovery after double-eyelid surgery?",
-        body: [
-          "Swelling and bruising of the eyelids are expected and settle over time, generally sooner with the suture method. Many people return to everyday activities within around ten to fourteen days. The eyelids continue to settle over the following weeks to months, so the early crease is not the final one.",
-        ],
-      },
-      {
-        heading: "What are the risks of a double-eyelid procedure?",
-        body: [
-          "Temporary effects include swelling, bruising, tightness and asymmetry while healing. The doctor goes through the specific risks around the eye before you consent.",
-        ],
-      },
-      {
-        heading: "What affects the cost of double-eyelid surgery?",
-        body: [
-          "Cost depends mainly on the method. Suture and incisional are different procedures with different costs, and which one applies cannot be settled before the eyelid is examined.",
-        ],
-      },
     ],
     faqs: [
       {
@@ -2371,6 +2401,14 @@ export const treatments: Treatment[] = [
       {
         q: "Does the procedure hurt?",
         a: "The eyelid is numbed with local anaesthetic, and you stay awake. Tightness, swelling or tenderness while healing is common and typically settles.",
+      },
+      {
+        q: "How long is the recovery after double eyelid surgery?",
+        a: "Many people return to everyday activities within around ten to fourteen days, generally sooner with the suture method. The eyelids keep settling for weeks to months after that, so the early crease is not the final one.",
+      },
+      {
+        q: "What is the difference between the suture and incisional methods?",
+        a: "The suture method forms the crease with fine sutures through small access points, without a continuous incision, and generally means shorter swelling. The incisional method uses an incision along the crease line and tends to hold longer. Your eyelid anatomy decides which applies, if either.",
       },
     ],
   },
@@ -2401,6 +2439,73 @@ export const treatments: Treatment[] = [
     // `vascular-lesions.png` stays out: it is a magnified side-by-side of a
     // treated and an untreated leg — a before/after in all but name, and the
     // treatment revamp ships none (docs/13 §3.3, ADR-0001).
+    //
+    // docs/15 item 4.1 (2026-10-28): the v2 block set, applied under docs/16 R1.
+    // Two prose sections kept; the rest became typed blocks and were deleted.
+    // Block copy is restructured from reviewed text only: this page and the
+    // Pro Yellow, M22 IPL and DermaV pages. No new claim, no figure. The
+    // re-arrangement goes to Dr Jeremy Low in the offline review round.
+    typicalSessions: "Several, a few weeks apart",
+    bringToConsult:
+      "Suitability also depends on which of the three devices is being considered, so bring your full medical and skincare history. With rosacea, mention your triggers, current treatment and any previous vascular laser.",
+    avoidIf: [
+      { lead: "Pregnancy or breastfeeding.", body: "Treatment is deferred." },
+      { lead: "Recently tanned or sunburnt skin.", body: "" },
+      { lead: "Active infection or inflamed skin", body: "in the area to be treated." },
+      { lead: "Photosensitising medication,", body: "including oral isotretinoin and certain antibiotics." },
+      { lead: "A history of keloid scarring or a light-sensitive condition.", body: "" },
+    ],
+    sessionSteps: [
+      {
+        title: "Consultation and assessment",
+        body: "Your first visit is a consultation, not a treatment. The doctor examines whether the target is a vessel or a pigment, and how deep it sits, before choosing a device.",
+      },
+      {
+        title: "A test area, where useful",
+        body: "A patch or test area may be done before treatment goes ahead.",
+      },
+      {
+        title: "The treatment",
+        body: "The skin is cleansed, eye protection is fitted and the light is applied. Most people describe each pulse as a brief hot pinprick or warm snap.",
+      },
+    ],
+    afterSession: {
+      intro:
+        "Downtime is usually limited. Temporary redness or mild sensitivity typically settles. Use sun protection and gentle skincare afterwards.",
+      bands: [
+        {
+          title: "The first day or two",
+          body: "Redness, warmth and mild swelling are common. Treated vessels can look temporarily darker or greyish, and treated pigment can darken or crust slightly before flaking away.",
+        },
+      ],
+      aftercare:
+        "Use daily sun protection, keep skincare gentle, and avoid heat such as saunas and hot showers for as long as your doctor specifies.",
+    },
+    risks: {
+      intro:
+        "Temporary effects can include redness, swelling or changes in pigmentation. Treating a vessel with a wavelength meant for pigment, or the reverse, is the mistake that causes the rest, and it is what the assessment and any test patch exist to prevent.",
+      common: "Redness, swelling, bruising and small crusts over treated vessels.",
+      lessCommon:
+        "Blistering, burns, scarring and longer-lasting pigment change, more likely on unsuitable or recently tanned skin.",
+      pigmentNote:
+        "These devices are used across a range of skin tones, but some skin types and concerns need particular care to reduce the risk of pigment change, so your skin type and history are assessed first.",
+      cannotDo: [
+        "Vessels can recur, because the tendency behind them remains.",
+        "Rosacea and a tendency to flush are chronic: treatment addresses visible vessels, not the condition.",
+        "Very deep or large vessels may respond differently from fine superficial ones, and may need another approach.",
+      ],
+      disclose: "Tell your doctor about recent sun exposure and every medication you take.",
+    },
+    costFactors: {
+      intro:
+        "Sessions and cost depend on the device, the concern and how your skin responds. The three platforms are not priced alike, so the cost follows the doctor's choice of device rather than preceding it.",
+      factors: [
+        "Which device the doctor selects.",
+        "How extensive the concern is: a few discrete vessels, or diffuse redness.",
+        "The size of the area.",
+        "Whether a chronic concern needs occasional maintenance sessions.",
+      ],
+    },
     sections: [
       {
         heading: "What is Vascular / Pigment Laser treatment?",
@@ -2416,31 +2521,6 @@ export const treatments: Treatment[] = [
           "The doctor selects the device, wavelength and settings for your concern and skin tone. The target, a vessel or a pigment particle, absorbs the energy, which may gradually reduce its visibility or prompt the body to clear it over time.",
         ],
       },
-      {
-        heading: "Who should not have vascular or pigment laser?",
-        body: [
-          "Treatment may not be appropriate during pregnancy, with certain skin conditions or medications, or on recently tanned skin. Suitability also depends on which of the three devices is being considered, so bring your full medical and skincare history.",
-        ],
-      },
-      {
-        heading: "What happens at a session, and how long does the redness last?",
-        body: [
-          "A patch or test area may be done before treatment goes ahead.",
-          "Downtime is usually limited. Temporary redness or mild sensitivity typically settles. Use sun protection and gentle skincare afterwards.",
-        ],
-      },
-      {
-        heading: "What are the risks of vascular and pigment laser?",
-        body: [
-          "Temporary effects can include redness, swelling or changes in pigmentation. Treating a vessel with a wavelength meant for pigment, or the reverse, is the mistake that causes the rest, and it is what the assessment and any test patch exist to prevent.",
-        ],
-      },
-      {
-        heading: "Why does the cost depend on which device is used?",
-        body: [
-          "Sessions and cost depend on the device, the concern and how your skin responds. The three platforms are not priced alike, so the cost follows the doctor's choice of device rather than preceding it.",
-        ],
-      },
     ],
     faqs: [
       {
@@ -2454,6 +2534,14 @@ export const treatments: Treatment[] = [
       {
         q: "How many sessions will I need?",
         a: "A course of several sessions spaced a few weeks apart is common. Vessels can recur because the tendency behind them remains, so the doctor will say whether you are looking at a course or an ongoing arrangement.",
+      },
+      {
+        q: "Does vascular laser hurt?",
+        a: "Most people describe each pulse as a brief hot pinprick or warm snap. The devices cool the skin surface as they work, which is intended to keep sessions comfortable.",
+      },
+      {
+        q: "Is there downtime after laser for redness or pigmentation?",
+        a: "Usually little. Redness and mild swelling for a few hours to a day or two are common, and treated vessels or pigment can look temporarily darker before settling. Sun protection matters afterwards.",
       },
     ],
   },
@@ -2477,6 +2565,77 @@ export const treatments: Treatment[] = [
     seoTitle: "CO2 Resurfacing Laser Malaysia | Kaiteki",
     seoDescription:
       "Fractional CO2 resurfacing laser in Malaysia for skin texture, acne scarring and pores. Book a free consultation with a Kaiteki doctor to assess suitability.",
+    // docs/15 item 4.1 (2026-10-28): the v2 block set, applied under docs/16 R1.
+    // Two prose sections kept; the rest became typed blocks and were deleted.
+    // Block copy is restructured from reviewed text only: this page and the
+    // fractional CO2 page. No new claim, no figure. The re-arrangement goes to
+    // Dr Chang Chee Seong in the offline review round.
+    typicalSessions: "A small course, spaced weeks apart",
+    bringToConsult:
+      "Raise any history of cold sores, or of scarring badly, without being asked: both change whether, and how, it is done.",
+    avoidIf: [
+      { lead: "Pregnancy or breastfeeding.", body: "Treatment is deferred." },
+      { lead: "Active infection or inflammation", body: "in the area, including acne or cold sores." },
+      { lead: "A history of keloid or hypertrophic scarring.", body: "" },
+      { lead: "Recently tanned skin, or recent isotretinoin.", body: "" },
+      { lead: "Certain autoimmune or connective-tissue conditions,", body: "which your doctor goes through with you." },
+    ],
+    sessionSteps: [
+      {
+        title: "Consultation and recovery planning",
+        body: "Your first visit is a consultation, not a treatment. For an ablative laser it includes planning your recovery around work or events before anything is booked.",
+      },
+      {
+        title: "Numbing, then the laser",
+        body: "Topical numbing is applied, then the laser is passed across the area at settings chosen for your skin.",
+      },
+      {
+        title: "Healing between sessions",
+        body: "Sessions are spaced several weeks to a few months apart, so the skin heals and remodels fully between visits.",
+      },
+    ],
+    afterSession: {
+      intro:
+        "Expect more downtime than with non-ablative lasers. Redness, swelling and flaking or peeling over several days to about a week are common and typically settle. Diligent sun protection and gentle skincare follow.",
+      bands: [
+        {
+          title: "The first day or two",
+          body: "Treated skin looks red, feels hot and tight, and is visibly swollen.",
+        },
+        {
+          title: "The rest of the week",
+          body: "Bronzing, roughness and flaking as the treated columns work their way out. Pinkness can linger for weeks.",
+        },
+      ],
+      aftercare:
+        "Gentle cleansing, the emollient you are given, no picking or exfoliating, and strict daily sun protection. Heat, swimming, makeup and active skincare are paused for as long as your doctor specifies.",
+    },
+    risks: {
+      intro:
+        "Temporary effects include redness, swelling, peeling and changes in pigmentation. Because the laser is ablative, the skin is genuinely wounded and then heals, so infection and scarring are real if uncommon possibilities. That is why aftercare here is instruction rather than advice.",
+      common: "Redness, swelling, heat, crusting and peeling, and pinkness that can last for weeks.",
+      lessCommon:
+        "Post-inflammatory hyperpigmentation, prolonged redness, reactivation of cold sores, infection, and scarring or textural change.",
+      pigmentNote:
+        "Deeper and Asian skin tones carry a higher risk of post-inflammatory hyperpigmentation after ablative resurfacing, so settings are kept conservative, priming skincare may be advised, and more sessions at lower intensity may be preferred over one aggressive session.",
+      cannotDo: [
+        "It is not a lunchtime treatment: the recovery is real and has to be planned for.",
+        "Established acne scarring generally needs a course, not one visit.",
+        "It works on texture and structure, not on skin colour alone.",
+      ],
+      disclose:
+        "Tell your doctor about any history of cold sores, scarring or pigment problems, and any recent isotretinoin.",
+    },
+    costFactors: {
+      intro:
+        "Sessions and cost depend on the concern, the treatment depth and how your skin responds. Depth and density are set for your skin type, and they are what the cost tracks, so it is confirmed at consultation rather than published as a rate.",
+      factors: [
+        "The size of the area.",
+        "The depth and density of settings your concern calls for.",
+        "How many sessions the plan involves.",
+        "Whether it is combined with other treatments in a scar or resurfacing plan.",
+      ],
+    },
     sections: [
       {
         heading: "What is Resurfacing Laser treatment?",
@@ -2489,31 +2648,6 @@ export const treatments: Treatment[] = [
         heading: "Why does a fractional CO2 laser heal faster than full resurfacing?",
         body: [
           "The fractional CO2 laser delivers energy in a grid-like pattern of microscopic columns, each surrounded by untreated skin. This fractional approach is intended to prompt a controlled skin-renewal and collagen-remodelling response while allowing faster recovery than treating the entire surface at once.",
-        ],
-      },
-      {
-        heading: "Who should not have CO2 resurfacing?",
-        body: [
-          "Fractional CO2 may not be appropriate during pregnancy, with active infection or certain skin conditions, a history of keloid scarring, or on recently tanned skin. Raise any history of cold sores, or of scarring badly, without being asked: both change whether, and how, it is done.",
-        ],
-      },
-      {
-        heading: "What does the week after CO2 resurfacing look like?",
-        body: [
-          "Topical numbing is applied, then the laser is passed across the area at settings chosen for your skin.",
-          "Expect more downtime than with non-ablative lasers. Redness, swelling and flaking or peeling over several days to about a week are common and typically settle. Diligent sun protection and gentle skincare follow.",
-        ],
-      },
-      {
-        heading: "Can CO2 resurfacing scar or darken the skin?",
-        body: [
-          "Temporary effects include redness, swelling, peeling and changes in pigmentation. Because the laser is ablative, the skin is genuinely wounded and then heals, so infection and scarring are real if uncommon possibilities. That is why aftercare here is instruction rather than advice.",
-        ],
-      },
-      {
-        heading: "Why is CO2 resurfacing priced at consultation?",
-        body: [
-          "Sessions and cost depend on the concern, the treatment depth and how your skin responds. Depth and density are set for your skin type, and they are what the cost tracks, so it is confirmed at consultation rather than published as a rate.",
         ],
       },
     ],
@@ -2529,6 +2663,14 @@ export const treatments: Treatment[] = [
       {
         q: "How many sessions will I need?",
         a: "It depends on the concern and the treatment depth. The doctor sets the number and spacing of sessions once your skin has been assessed.",
+      },
+      {
+        q: "Is CO2 laser safe for Asian skin?",
+        a: "It is used on Asian skin, but more conservatively, because deeper skin tones carry a higher risk of post-inflammatory hyperpigmentation after ablative resurfacing. That often means lower settings across more sessions, and strict sun protection afterwards.",
+      },
+      {
+        q: "What is the difference between fractional and fully ablative CO2 laser?",
+        a: "Fully ablative resurfacing treats the whole surface in one pass, with a long recovery. Fractional delivery leaves untreated skin between microscopic columns, so healing draws on that intact skin and recovery is shorter. The trade-off is less surface treated per session, which is why a course is usual.",
       },
     ],
   },
@@ -2569,6 +2711,63 @@ export const treatments: Treatment[] = [
       "Thighs",
       "Knees",
     ],
+    // docs/15 item 4.1 (2026-10-28): the v2 block set, applied under docs/16 R1.
+    // Two prose sections kept; the rest became typed blocks and were deleted.
+    // Block copy is restructured from reviewed text only: this page and the
+    // Onda page. The one exception is `pigmentNote`, which the template makes
+    // mandatory on energy-based pages and no reviewed copy states for Onda: it
+    // is worded on the RF page's note and flagged for Dr Jacqueline Tan, who
+    // gets the whole re-arrangement in the offline review round.
+    typicalSessions: "Several, a few weeks apart",
+    bringToConsult: "Mention every device or implant at consultation.",
+    avoidIf: [
+      { lead: "Pregnancy.", body: "Treatment is deferred." },
+      { lead: "Implants or medical devices", body: "in the treatment area." },
+      { lead: "Some skin or health conditions,", body: "which your doctor goes through with you." },
+    ],
+    sessionSteps: [
+      {
+        title: "Consultation and assessment",
+        body: "Your first visit is a consultation, not a treatment. The doctor examines the area, decides whether it is treatable, and chooses between Onda for Body and Onda for Face.",
+      },
+      {
+        title: "The treatment",
+        body: "After the area is examined, a handpiece is moved over it to deliver the energy while the surface is cooled. Most people describe a warming sensation.",
+      },
+    ],
+    afterSession: {
+      intro: "Downtime is usually limited.",
+      bands: [
+        {
+          title: "Straight afterwards",
+          body: "Temporary warmth, redness or mild tenderness over the treated area can occur and typically settles.",
+        },
+      ],
+      aftercare: "Most people return to usual activities. The doctor gives aftercare guidance specific to you.",
+    },
+    risks: {
+      intro: "Like any energy-based treatment, it carries risks, which are explained before a course is booked.",
+      common: "Redness, swelling, warmth or tenderness in the treated area.",
+      lessCommon:
+        "The energy is thermal, so the risk that matters is overheating one spot. It is managed by keeping the handpiece moving and by treating within what the doctor judges the tissue can take.",
+      pigmentNote:
+        "Microwave energy heats tissue beneath a cooled surface rather than targeting pigment, so it does not rely on colour contrast the way a laser does.",
+      cannotDo: [
+        "It is not a weight-loss treatment: it treats localised areas, not overall body weight.",
+        "Not every area is treatable. That is settled by examining it, not by naming the concern.",
+        "It is not a single-session treatment. A course is common, and a body area generally takes more sessions than a facial one.",
+      ],
+      disclose: "Tell your doctor about every implant or medical device, and your full medical history.",
+    },
+    costFactors: {
+      intro:
+        "Sessions and cost depend on the areas treated and how you respond. A facial area and a body area take very different amounts of time on the handpiece, so cost follows the areas agreed at consultation.",
+      factors: [
+        "The area being treated, body or face.",
+        "The concern being addressed.",
+        "How many sessions the course needs, which depends on your response.",
+      ],
+    },
     sections: [
       {
         heading: "What is Microwave Contouring?",
@@ -2581,31 +2780,6 @@ export const treatments: Treatment[] = [
         heading: "How can microwave energy reach fat without burning the skin?",
         body: [
           "Microwave energy is delivered beneath the skin's surface while built-in cooling helps keep the surface protected during treatment. The energy is intended to act on the targeted tissue, for example localised fat cells or the fibrous bands associated with cellulite, and may also prompt a gradual collagen-remodelling response supporting firmness.",
-        ],
-      },
-      {
-        heading: "Who should not have Onda microwave contouring?",
-        body: [
-          "It may not be appropriate during pregnancy, with implants or medical devices in the treatment area, or with some skin or health conditions. Mention every device or implant at consultation.",
-        ],
-      },
-      {
-        heading: "What does an Onda session feel like, and is there downtime?",
-        body: [
-          "After the area is examined, a handpiece is moved over it to deliver the energy while the surface is cooled. Most people describe a warming sensation.",
-          "Downtime is usually limited.",
-        ],
-      },
-      {
-        heading: "What are the risks of microwave contouring?",
-        body: [
-          "Temporary effects include redness, swelling, warmth or tenderness in the treated area. The energy is thermal, so the risk that matters is overheating one spot. It is managed by keeping the handpiece moving and by treating within what the doctor judges the tissue can take.",
-        ],
-      },
-      {
-        heading: "Why do face and body areas cost differently?",
-        body: [
-          "Sessions and cost depend on the areas treated and how you respond. A facial area and a body area take very different amounts of time on the handpiece, so cost follows the areas agreed at consultation.",
         ],
       },
     ],
@@ -2621,6 +2795,14 @@ export const treatments: Treatment[] = [
       {
         q: "How many sessions will I need?",
         a: "A course of several sessions spaced a few weeks apart is common. A body area generally takes more sessions than a facial one, simply because there is more of it.",
+      },
+      {
+        q: "Is Onda a weight-loss treatment?",
+        a: "No. It addresses localised areas of fat and skin firmness, not overall body weight, and it is not a substitute for weight management.",
+      },
+      {
+        q: "What is the difference between Onda and Onda Pro?",
+        a: "Onda Pro is DEKA's newer generation of Onda. Both use the same Coolwaves® microwave technology, and Onda Pro has dedicated handpieces for the face and the body. Kaiteki has both, and the doctor chooses the device for the area being treated.",
       },
     ],
   },
@@ -2646,6 +2828,68 @@ export const treatments: Treatment[] = [
         caption: "A Schwarzy applicator and its strap, positioned before the belt is fastened over the area.",
       },
     ],
+    // docs/15 item 4.1 (2026-10-28): the v2 block set, applied under docs/16 R1.
+    // Two prose sections kept; the rest became typed blocks and were deleted.
+    // Block copy is restructured from reviewed text only: this page and the
+    // Schwarzy page. `pigmentNote` follows the Schwarzy page's account of a
+    // magnetic field acting on motor nerves. No new claim, no figure. The
+    // re-arrangement goes to Dr Joaan Kong in the offline review round.
+    typicalSessions: "A short block over a few weeks",
+    bringToConsult:
+      "The medical history is taken before the belt goes on, so declare every implant, device and medication.",
+    avoidIf: [
+      { lead: "Metal implants, pacemakers or copper IUDs", body: "in or near the treatment field." },
+      { lead: "Other implanted devices,", body: "such as a defibrillator, neurostimulator or drug pump." },
+      { lead: "Pregnancy.", body: "Treatment is deferred." },
+      { lead: "Epilepsy or a seizure history,", body: "or a hernia in the area." },
+      { lead: "Some medical conditions affecting the treatment area,", body: "including certain heart, kidney or bleeding conditions." },
+    ],
+    sessionSteps: [
+      {
+        title: "Consultation and screening",
+        body: "Your first visit is a consultation, not a treatment. The doctor assesses the area and your goals and reviews your implant and medical history, which is the main gate on suitability.",
+      },
+      {
+        title: "The session",
+        body: "After the area and your goals are assessed, the applicator is strapped over the target muscle group and the device runs a programme of contractions for a set period.",
+      },
+    ],
+    afterSession: {
+      intro:
+        "There is no set downtime. Soreness like that after exercise, mild redness or tenderness at the treated area can follow and typically settles within a few days.",
+      bands: [
+        {
+          title: "Between sessions",
+          body: "Allow the muscle a recovery day, keep up gentle movement and stay hydrated, much as you would space training.",
+        },
+      ],
+      aftercare: "Your doctor will tell you how to space sessions around your own training.",
+    },
+    risks: {
+      intro: "Like any medical procedure, it carries risks, which are explained before a block is booked.",
+      common:
+        "Muscle soreness, aching or cramping in the treated area, brief muscle fatigue, and mild redness or warmth where the pad sat.",
+      lessCommon: "A temporary change in skin sensation.",
+      pigmentNote:
+        "The stimulus is a magnetic field acting on the nerves to the muscle, not light or heat, so skin tone does not decide suitability. Implants and medical history do.",
+      cannotDo: [
+        "It does not reduce fat, and it is not a weight-loss treatment.",
+        "It does not tighten loose skin.",
+        "If a layer of fat sits over the muscle, strengthening what is underneath will not change what is above it.",
+        "Tone gained is not held indefinitely without ongoing stimulus or activity.",
+      ],
+      disclose: "Declare every implant, device and medication before treatment.",
+    },
+    costFactors: {
+      intro:
+        "Sessions are usually booked as a short block spaced across a few weeks rather than singly, so the cost is set for the block at consultation. It depends on the area treated, your goals and how you respond.",
+      factors: [
+        "How many muscle groups you want addressed.",
+        "How many sessions the plan calls for.",
+        "Whether maintenance sessions are included.",
+        "Whether your goals involve both fat and tone, in which case the plan combines treatments.",
+      ],
+    },
     sections: [
       {
         heading: "What is Muscle Stimulation?",
@@ -2661,25 +2905,6 @@ export const treatments: Treatment[] = [
           "Any change in tone develops gradually over a course of sessions.",
         ],
       },
-      {
-        heading: "Who cannot have electromagnetic muscle stimulation?",
-        body: [
-          "Metal implants, pacemakers and copper IUDs in or near the treatment field rule it out, which is why the medical history is taken before the belt goes on. It may also not be appropriate during pregnancy or with some medical conditions affecting the treatment area.",
-        ],
-      },
-      {
-        heading: "What does a Schwarzy session feel like, and what are the side effects?",
-        body: [
-          "After the area and your goals are assessed, the applicator is strapped over the target muscle group and the device runs a programme of contractions for a set period.",
-          "There is no set downtime. Soreness like that after exercise, mild redness or tenderness at the treated area can follow and typically settles within a few days.",
-        ],
-      },
-      {
-        heading: "Why is muscle stimulation booked as a block?",
-        body: [
-          "Sessions are usually booked as a short block spaced across a few weeks rather than singly, so the cost is set for the block at consultation. It depends on the area treated, your goals and how you respond.",
-        ],
-      },
     ],
     faqs: [
       {
@@ -2693,6 +2918,14 @@ export const treatments: Treatment[] = [
       {
         q: "How many sessions will I need?",
         a: "A short block spaced across a few weeks is common. As with any muscle work, what it holds depends on what you do between and after the sessions.",
+      },
+      {
+        q: "Can I have muscle stimulation with an IUD or a metal implant?",
+        a: "Not in or near that area. The stimulus is a magnetic field, so metal implants, pacemakers and copper IUDs in or near the treatment field rule it out. That is why every implant and device is declared before the belt goes on.",
+      },
+      {
+        q: "How is it different from exercising myself?",
+        a: "The contractions are involuntary and repeated at a rate and depth you cannot produce by choice. It sits alongside your own activity, not in place of it: fitness and weight management still come from exercise and diet.",
       },
     ],
   },
@@ -2711,6 +2944,76 @@ export const treatments: Treatment[] = [
     seoTitle: "Dermal Fillers Malaysia | Juvederm, Restylane | Kaiteki",
     seoDescription:
       "Dermal filler treatment in Malaysia using Juvederm, Restylane, Belotero and Art Filler to support facial volume and contour. Book a free consultation at Kaiteki.",
+    // docs/15 item 4.1 (2026-10-28): the v2 block set, applied under docs/16 R1.
+    // Two prose sections kept; the rest became typed blocks and were deleted.
+    // Block copy is restructured from reviewed text only: this page and the
+    // Juvéderm, Restylane, Belotero and Art Filler pages. No new claim, no
+    // figure. The re-arrangement goes to Dr Tim Chua in the offline review round.
+    typicalSessions: "One visit, or staged across several",
+    bringToConsult:
+      "Bring your medical history, medications and allergies, including any autoimmune condition and any blood-thinning or immune-modulating medication.",
+    avoidIf: [
+      { lead: "Pregnancy or breastfeeding.", body: "Filler is generally not used." },
+      { lead: "Active skin infection or open lesions", body: "in the area to be treated." },
+      {
+        lead: "A known allergy",
+        body: "to hyaluronic acid, lidocaine or amide-type local anaesthetics, or a history of severe allergy or anaphylaxis.",
+      },
+      { lead: "Previous filler or a permanent implant", body: "in the area, which the doctor needs to know about first." },
+    ],
+    sessionSteps: [
+      {
+        title: "Consultation and facial assessment",
+        body: "Your first visit is a consultation, not a treatment. The doctor assesses your facial proportions and medical history, decides which areas to address and in what order, and explains the risks before you consent.",
+      },
+      {
+        title: "Product and preparation",
+        body: "After a facial assessment, the doctor selects a product for the area, cleanses the skin and, where relevant, applies topical numbing before injecting.",
+      },
+      {
+        title: "The injections",
+        body: "The gel is placed in small increments with a needle or a cannula. A single area often takes 15 to 30 minutes once preparation is done, and many plans are staged across more than one visit.",
+      },
+      {
+        title: "Review",
+        body: "A review appointment is commonly arranged so the doctor can assess the area once the swelling has settled.",
+      },
+    ],
+    afterSession: {
+      intro:
+        "Mild swelling, redness, bruising or tenderness at the injection sites commonly settles within a few days to about a week. Follow the aftercare you are given, which may include avoiding certain activities for a few days, and contact the clinic with any concern.",
+      bands: [
+        {
+          title: "The first few days",
+          body: "The lips and under-eye area tend to swell more visibly than the cheeks or jawline. Allow a comfortable margin before any event that matters to you.",
+        },
+      ],
+      aftercare:
+        "Avoid pressure or massage on the treated site, keep strenuous exercise, heat and alcohol to a minimum for a short period, and contact the clinic promptly if anything feels unusual.",
+    },
+    risks: {
+      intro: "Filler is an injectable medical device, and its risks are explained at consultation before you consent.",
+      common:
+        "Common temporary effects are swelling, redness, bruising, tenderness or lumpiness at the injection site, which typically settle.",
+      lessCommon:
+        "Infection, inflammatory nodules and delayed hypersensitivity. The most serious recognised risk of any filler is vascular occlusion: filler entering or compressing a blood vessel, which can affect the skin or, rarely, vision.",
+      cannotDo: [
+        "It is not permanent: hyaluronic-acid filler is gradually broken down by the body.",
+        "It does not relax muscle, so it does not address lines caused by movement.",
+        "Dissolving it is not a routine undo. Hyaluronidase is a medical procedure with its own risks, and not appropriate in every situation.",
+      ],
+      disclose: "Report sudden pain, skin blanching or any change in vision to the clinic immediately, rather than waiting.",
+    },
+    costFactors: {
+      intro:
+        "The amount and the product used, and so the cost, depend on the areas treated and your assessment. Cost is confirmed once a plan is agreed, not quoted online.",
+      factors: [
+        "How many areas are being addressed.",
+        "Which gel suits each area. Firmer structural gels and softer gels for delicate areas are not interchangeable.",
+        "How much product your anatomy calls for.",
+        "How often top-ups are needed, which is individual.",
+      ],
+    },
     sections: [
       {
         heading: "What are dermal fillers?",
@@ -2727,32 +3030,6 @@ export const treatments: Treatment[] = [
           "Formulations differ in thickness and in how they behave in tissue, which is why the doctor matches the product and technique to the area. The effect is present from injection and continues to settle over the following days.",
         ],
       },
-      {
-        heading: "Who should not have dermal fillers?",
-        body: [
-          "Filler is usually avoided during pregnancy or breastfeeding, over active skin infection or open lesions in the area, and with a known allergy to a formulation's ingredients. Bring your medical history, medications and allergies to the consultation.",
-        ],
-      },
-      {
-        heading: "What happens at a filler appointment, and how long does swelling last?",
-        body: [
-          "After a facial assessment, the doctor selects a product for the area, cleanses the skin and, where relevant, applies topical numbing before injecting.",
-          "Mild swelling, redness, bruising or tenderness at the injection sites commonly settles within a few days to about a week. Follow the aftercare you are given, which may include avoiding certain activities for a few days, and contact the clinic with any concern.",
-        ],
-      },
-      {
-        heading: "What are the risks of dermal fillers?",
-        body: [
-          "Common temporary effects are swelling, redness, bruising, tenderness or lumpiness at the injection site, which typically settle.",
-          "Less common but more serious effects can occur with any filler injection. The doctor explains the ones relevant to you before treatment goes ahead.",
-        ],
-      },
-      {
-        heading: "What decides how much filler you need, and the cost?",
-        body: [
-          "The amount and the product used, and so the cost, depend on the areas treated and your assessment. Cost is confirmed once a plan is agreed, not quoted online.",
-        ],
-      },
     ],
     faqs: [
       {
@@ -2766,6 +3043,18 @@ export const treatments: Treatment[] = [
       {
         q: "Are dermal fillers reversible?",
         a: "Some HA fillers can, in certain circumstances, be broken down with a dissolving agent. Whether that applies to your product and situation is assessed individually.",
+      },
+      {
+        q: "Do dermal fillers hurt?",
+        a: "Most people describe filler injection as briefly uncomfortable rather than painful. Topical numbing may be applied first, and many filler gels contain lidocaine. Lips are generally more sensitive than cheeks.",
+      },
+      {
+        q: "Are dermal fillers safe for Asian skin?",
+        a: "Hyaluronic-acid fillers do not use light or heat, so skin tone is not the limiting factor it can be with lasers. Facial anatomy and medical history matter far more, and the doctor assesses both before deciding whether filler is appropriate.",
+      },
+      {
+        q: "What are the warning signs after filler?",
+        a: "Sudden pain, skin blanching or any change in vision can signal filler affecting a blood vessel, the most serious recognised risk of any filler. Contact the clinic immediately rather than waiting.",
       },
     ],
   },
@@ -2789,6 +3078,63 @@ export const treatments: Treatment[] = [
     seoTitle: "Facial Treatments Malaysia | Hydrafacial, Silkpeel | Kaiteki",
     seoDescription:
       "Clinic facial treatments in Malaysia, including Hydrafacial and Silkpeel, to support skin cleansing and quality. Book a free consultation at Kaiteki.",
+    // docs/15 item 4.1 (2026-10-28): the v2 block set, applied under docs/16 R1.
+    // Two prose sections kept; the rest became typed blocks and were deleted.
+    // Block copy is restructured from reviewed text only: this page and the
+    // Hydrafacial and Silkpeel pages. Not energy-based, so no pigment note. No
+    // new claim, no figure. The re-arrangement goes to Dr Calvin Tan in the
+    // offline review round.
+    typicalSessions: "Periodic, as maintenance",
+    bringToConsult:
+      "Mention your skincare and medical history, especially any known sensitivity to skincare products.",
+    avoidIf: [
+      { lead: "Active inflamed acne, infection or broken skin", body: "in the area." },
+      { lead: "An eczema or rosacea flare, or sunburn.", body: "" },
+      { lead: "Straight after a peel, laser or waxing", body: "in the area." },
+      { lead: "Recent isotretinoin or strong topical retinoids,", body: "which can mean waiting or adjusting the facial." },
+    ],
+    sessionSteps: [
+      {
+        title: "Skin assessment",
+        body: "Your first visit starts with an assessment, not a treatment. It confirms which facial suits you, or whether your skin needs medical treatment instead.",
+      },
+      {
+        title: "The facial",
+        body: "The skin is cleansed, exfoliated and, depending on the option, given device-based extraction and serum infusion. Sessions are generally comfortable, and most people return to normal activities straight away.",
+      },
+    ],
+    afterSession: {
+      intro:
+        "Mild, temporary redness can follow some facials and usually settles within a few hours. Uncommonly, a serum causes an irritation reaction. Use sun protection and gentle skincare afterwards.",
+      bands: [
+        {
+          title: "The next day or two",
+          body: "Keep skincare gentle, and hold off on strong actives such as retinoids and acids unless advised otherwise.",
+        },
+      ],
+      aftercare: "Use daily sun protection.",
+    },
+    risks: {
+      intro: "Clinic facials are low-risk for most people, but not risk-free.",
+      common: "Redness, mild sensitivity or tightness, and small areas of irritation where extraction was firm.",
+      lessCommon: "A short-lived breakout as congestion clears, and, uncommonly, a reaction to a serum ingredient.",
+      cannotDo: [
+        "It works at the surface, not on deeper structural concerns.",
+        "It is not a substitute for medical treatment of acne or pigmentation.",
+        "Congestion tends to return without a suitable home routine, which is why a facial is maintenance rather than a one-off.",
+      ],
+      disclose: "Tell the clinician about your current products, any past reactions and any recent isotretinoin.",
+    },
+    costFactors: {
+      intro:
+        "Cost depends on which facial is chosen and what is added to it, so it is confirmed once that is settled.",
+      factors: [
+        "Which facial is chosen, and the steps included.",
+        "Add-ons such as serum boosters, extractions, masking or LED.",
+        "Whether areas beyond the face are treated.",
+        "How often you choose to come in.",
+      ],
+    },
     sections: [
       {
         heading: "What are Facial Treatments?",
@@ -2804,25 +3150,6 @@ export const treatments: Treatment[] = [
           "Both aim to clear surface build-up, refine texture and support hydration rather than treat deeper structural concerns.",
         ],
       },
-      {
-        heading: "When should you not have a facial?",
-        body: [
-          "A facial may not be appropriate over active skin infection or significant inflammation, or immediately after certain other procedures. Mention your skincare and medical history, especially any known sensitivity to skincare products.",
-        ],
-      },
-      {
-        heading: "What happens during a clinic facial, and is there redness afterwards?",
-        body: [
-          "A brief skin assessment confirms which facial suits you. The skin is then cleansed, exfoliated and, depending on the option, given device-based extraction and serum infusion. Sessions are generally comfortable, and most people return to normal activities straight away.",
-          "Mild, temporary redness can follow some facials and usually settles within a few hours. Uncommonly, a serum causes an irritation reaction. Use sun protection and gentle skincare afterwards.",
-        ],
-      },
-      {
-        heading: "How often are clinic facials booked, and what changes the cost?",
-        body: [
-          "Facials are usually booked periodically as maintenance, at a frequency set by your skin and goals. Cost depends on which facial is chosen and what is added to it, so it is confirmed once that is settled.",
-        ],
-      },
     ],
     faqs: [
       {
@@ -2836,6 +3163,14 @@ export const treatments: Treatment[] = [
       {
         q: "How often should I get a facial?",
         a: "There is no single frequency that suits everyone. Facials are booked periodically as maintenance, at an interval set by your skin and goals.",
+      },
+      {
+        q: "Is a clinic facial suitable for sensitive skin?",
+        a: "Often yes, because suction, exfoliation and solutions can all be turned down, and no light or laser energy is involved. It is deferred during an eczema or rosacea flare, over broken skin, or soon after a peel, laser or waxing.",
+      },
+      {
+        q: "Can a facial clear blackheads and clogged pores?",
+        a: "Extraction after exfoliation is commonly used for congestion and blackheads, but congestion tends to return without a suitable home routine. If it is really inflammatory acne, the doctor may recommend medical treatment instead.",
       },
     ],
   },
@@ -2984,6 +3319,10 @@ export const treatments: Treatment[] = [
       {
         q: "Is it suitable for all skin tones and hair colours?",
         a: "Not all. Very light, grey or white hair has little pigment to target, and recently tanned skin is generally not treated.",
+      },
+      {
+        q: "Can I shave between laser hair removal sessions?",
+        a: "Yes. Shaving is fine, but waxing, plucking, threading and depilatory creams are normally avoided between sessions, because they remove the follicle contents the light needs to target.",
       },
     ],
   },

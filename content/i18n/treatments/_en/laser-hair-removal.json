@@ -140,6 +140,10 @@
     {
       "q": "Is it suitable for all skin tones and hair colours?",
       "a": "Not all. Very light, grey or white hair has little pigment to target, and recently tanned skin is generally not treated."
+    },
+    {
+      "q": "Can I shave between laser hair removal sessions?",
+      "a": "Yes. Shaving is fine, but waxing, plucking, threading and depilatory creams are normally avoided between sessions, because they remove the follicle contents the light needs to target."
     }
   ]
 }

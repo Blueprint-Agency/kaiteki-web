@@ -2936,6 +2936,10 @@ export const technology: Technology[] = [
         q: "Is Botox permanent?",
         a: "No. The effect is temporary: nerve signalling gradually returns and the treated muscle or gland resumes its usual activity. How long that takes varies between individuals, so treatment is planned as a repeating cycle and reviewed by your doctor rather than set to a fixed schedule.",
       },
+      {
+        q: "Who can give Botox injections in Malaysia?",
+        a: "Botox is a prescription medicine, so it is prescribed and administered by a registered doctor after an in-person assessment. It is never given by a therapist acting alone, and never supplied for you to inject yourself.",
+      },
     ],
   },
   {

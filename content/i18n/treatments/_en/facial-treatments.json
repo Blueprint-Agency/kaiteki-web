@@ -28,6 +28,66 @@
   "lastReviewed": "2026-07-13",
   "seoTitle": "Facial Treatments Malaysia | Hydrafacial, Silkpeel | Kaiteki",
   "seoDescription": "Clinic facial treatments in Malaysia, including Hydrafacial and Silkpeel, to support skin cleansing and quality. Book a free consultation at Kaiteki.",
+  "typicalSessions": "Periodic, as maintenance",
+  "bringToConsult": "Mention your skincare and medical history, especially any known sensitivity to skincare products.",
+  "avoidIf": [
+    {
+      "lead": "Active inflamed acne, infection or broken skin",
+      "body": "in the area."
+    },
+    {
+      "lead": "An eczema or rosacea flare, or sunburn.",
+      "body": ""
+    },
+    {
+      "lead": "Straight after a peel, laser or waxing",
+      "body": "in the area."
+    },
+    {
+      "lead": "Recent isotretinoin or strong topical retinoids,",
+      "body": "which can mean waiting or adjusting the facial."
+    }
+  ],
+  "sessionSteps": [
+    {
+      "title": "Skin assessment",
+      "body": "Your first visit starts with an assessment, not a treatment. It confirms which facial suits you, or whether your skin needs medical treatment instead."
+    },
+    {
+      "title": "The facial",
+      "body": "The skin is cleansed, exfoliated and, depending on the option, given device-based extraction and serum infusion. Sessions are generally comfortable, and most people return to normal activities straight away."
+    }
+  ],
+  "afterSession": {
+    "intro": "Mild, temporary redness can follow some facials and usually settles within a few hours. Uncommonly, a serum causes an irritation reaction. Use sun protection and gentle skincare afterwards.",
+    "bands": [
+      {
+        "title": "The next day or two",
+        "body": "Keep skincare gentle, and hold off on strong actives such as retinoids and acids unless advised otherwise."
+      }
+    ],
+    "aftercare": "Use daily sun protection."
+  },
+  "risks": {
+    "intro": "Clinic facials are low-risk for most people, but not risk-free.",
+    "common": "Redness, mild sensitivity or tightness, and small areas of irritation where extraction was firm.",
+    "lessCommon": "A short-lived breakout as congestion clears, and, uncommonly, a reaction to a serum ingredient.",
+    "cannotDo": [
+      "It works at the surface, not on deeper structural concerns.",
+      "It is not a substitute for medical treatment of acne or pigmentation.",
+      "Congestion tends to return without a suitable home routine, which is why a facial is maintenance rather than a one-off."
+    ],
+    "disclose": "Tell the clinician about your current products, any past reactions and any recent isotretinoin."
+  },
+  "costFactors": {
+    "intro": "Cost depends on which facial is chosen and what is added to it, so it is confirmed once that is settled.",
+    "factors": [
+      "Which facial is chosen, and the steps included.",
+      "Add-ons such as serum boosters, extractions, masking or LED.",
+      "Whether areas beyond the face are treated.",
+      "How often you choose to come in."
+    ]
+  },
   "sections": [
     {
       "heading": "What are Facial Treatments?",
@@ -41,25 +101,6 @@
       "body": [
         "Hydrafacial uses a device-based process that cleanses, exfoliates and extracts debris from pores before infusing serums suited to the skin. Silkpeel combines exfoliation with simultaneous infusion of topical solutions.",
         "Both aim to clear surface build-up, refine texture and support hydration rather than treat deeper structural concerns."
-      ]
-    },
-    {
-      "heading": "When should you not have a facial?",
-      "body": [
-        "A facial may not be appropriate over active skin infection or significant inflammation, or immediately after certain other procedures. Mention your skincare and medical history, especially any known sensitivity to skincare products."
-      ]
-    },
-    {
-      "heading": "What happens during a clinic facial, and is there redness afterwards?",
-      "body": [
-        "A brief skin assessment confirms which facial suits you. The skin is then cleansed, exfoliated and, depending on the option, given device-based extraction and serum infusion. Sessions are generally comfortable, and most people return to normal activities straight away.",
-        "Mild, temporary redness can follow some facials and usually settles within a few hours. Uncommonly, a serum causes an irritation reaction. Use sun protection and gentle skincare afterwards."
-      ]
-    },
-    {
-      "heading": "How often are clinic facials booked, and what changes the cost?",
-      "body": [
-        "Facials are usually booked periodically as maintenance, at a frequency set by your skin and goals. Cost depends on which facial is chosen and what is added to it, so it is confirmed once that is settled."
       ]
     }
   ],
@@ -75,6 +116,14 @@
     {
       "q": "How often should I get a facial?",
       "a": "There is no single frequency that suits everyone. Facials are booked periodically as maintenance, at an interval set by your skin and goals."
+    },
+    {
+      "q": "Is a clinic facial suitable for sensitive skin?",
+      "a": "Often yes, because suction, exfoliation and solutions can all be turned down, and no light or laser energy is involved. It is deferred during an eczema or rosacea flare, over broken skin, or soon after a peel, laser or waxing."
+    },
+    {
+      "q": "Can a facial clear blackheads and clogged pores?",
+      "a": "Extraction after exfoliation is commonly used for congestion and blackheads, but congestion tends to return without a suitable home routine. If it is really inflammatory acne, the doctor may recommend medical treatment instead."
     }
   ]
 }

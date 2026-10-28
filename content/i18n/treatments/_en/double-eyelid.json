@@ -12,6 +12,61 @@
   "lastReviewed": "2026-06-01",
   "seoTitle": "Double Eyelid Surgery Malaysia | Crease Procedure | Kaiteki",
   "seoDescription": "Double-eyelid procedure in Malaysia to create or refine an upper-eyelid crease. Book a free consultation with a Kaiteki doctor to assess suitability.",
+  "typicalSessions": "One procedure, then a review",
+  "bringToConsult": "Because the procedure is around the eye, these conditions can make it unsuitable or higher-risk:",
+  "avoidIf": [
+    {
+      "lead": "Chronic or dry-eye conditions, which upper-eyelid procedures can aggravate",
+      "body": ""
+    },
+    {
+      "lead": "Uncontrolled high blood pressure",
+      "body": ""
+    },
+    {
+      "lead": "Circulation disorders",
+      "body": ""
+    },
+    {
+      "lead": "Thyroid disease",
+      "body": ""
+    },
+    {
+      "lead": "Diabetes",
+      "body": ""
+    },
+    {
+      "lead": "Glaucoma",
+      "body": ""
+    },
+    {
+      "lead": "Heart disease",
+      "body": ""
+    }
+  ],
+  "afterSession": {
+    "intro": "Swelling and bruising of the eyelids are expected and settle over time, generally sooner with the suture method. Many people return to everyday activities within around ten to fourteen days. The eyelids continue to settle over the following weeks to months, so the early crease is not the final one.",
+    "bands": [],
+    "aftercare": "Follow the eye-area aftercare the doctor gives you, and come back for the review appointment."
+  },
+  "risks": {
+    "intro": "Temporary effects include swelling, bruising, tightness and asymmetry while healing. The doctor goes through the specific risks around the eye before you consent.",
+    "common": "Swelling, bruising, tightness and asymmetry while the eyelid heals.",
+    "lessCommon": "Risks specific to surgery around the eye, which the doctor goes through with you before you consent.",
+    "cannotDo": [
+      "No specific duration can be promised. The incisional approach tends to hold longer than the suture approach.",
+      "The early crease is not the final one: the eyelids keep settling for weeks to months.",
+      "Not every eyelid suits either method. Anatomy decides, which is why the eyelid is examined in person first."
+    ],
+    "disclose": "Bring your full medical history, including any eye condition."
+  },
+  "costFactors": {
+    "intro": "Cost depends mainly on the method. Suture and incisional are different procedures with different costs, and which one applies cannot be settled before the eyelid is examined.",
+    "factors": [
+      "The method: suture or incisional.",
+      "Whether excess fat is addressed during the procedure."
+    ]
+  },
   "steps": [
     {
       "label": "Design",
@@ -57,39 +112,6 @@
         "There are two broad approaches. The suture (embedding) method uses small access points through which fine sutures are placed to form the crease, without a continuous incision. The incisional method uses an incision along the intended crease line and is sometimes considered where there is excess skin or fat, or where a suture approach is less suitable.",
         "The suture method generally involves shorter swelling; the incisional method tends to hold longer."
       ]
-    },
-    {
-      "heading": "Who should not have a double-eyelid procedure?",
-      "body": [
-        "Because the procedure is around the eye, these conditions can make it unsuitable or higher-risk:"
-      ],
-      "list": [
-        "Chronic or dry-eye conditions, which upper-eyelid procedures can aggravate",
-        "Uncontrolled high blood pressure",
-        "Circulation disorders",
-        "Thyroid disease",
-        "Diabetes",
-        "Glaucoma",
-        "Heart disease"
-      ]
-    },
-    {
-      "heading": "How long is recovery after double-eyelid surgery?",
-      "body": [
-        "Swelling and bruising of the eyelids are expected and settle over time, generally sooner with the suture method. Many people return to everyday activities within around ten to fourteen days. The eyelids continue to settle over the following weeks to months, so the early crease is not the final one."
-      ]
-    },
-    {
-      "heading": "What are the risks of a double-eyelid procedure?",
-      "body": [
-        "Temporary effects include swelling, bruising, tightness and asymmetry while healing. The doctor goes through the specific risks around the eye before you consent."
-      ]
-    },
-    {
-      "heading": "What affects the cost of double-eyelid surgery?",
-      "body": [
-        "Cost depends mainly on the method. Suture and incisional are different procedures with different costs, and which one applies cannot be settled before the eyelid is examined."
-      ]
     }
   ],
   "faqs": [
@@ -104,6 +126,14 @@
     {
       "q": "Does the procedure hurt?",
       "a": "The eyelid is numbed with local anaesthetic, and you stay awake. Tightness, swelling or tenderness while healing is common and typically settles."
+    },
+    {
+      "q": "How long is the recovery after double eyelid surgery?",
+      "a": "Many people return to everyday activities within around ten to fourteen days, generally sooner with the suture method. The eyelids keep settling for weeks to months after that, so the early crease is not the final one."
+    },
+    {
+      "q": "What is the difference between the suture and incisional methods?",
+      "a": "The suture method forms the crease with fine sutures through small access points, without a continuous incision, and generally means shorter swelling. The incisional method uses an incision along the crease line and tends to hold longer. Your eyelid anatomy decides which applies, if either."
     }
   ]
 }

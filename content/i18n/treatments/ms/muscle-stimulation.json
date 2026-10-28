@@ -21,6 +21,72 @@
       "caption": "Aplikator Schwarzy dan talinya, diletakkan di kawasan rawatan sebelum tali pinggang diikat."
     }
   ],
+  "typicalSessions": "",
+  "bringToConsult": "",
+  "avoidIf": [
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    },
+    {
+      "lead": "",
+      "body": ""
+    }
+  ],
+  "sessionSteps": [
+    {
+      "title": "",
+      "body": ""
+    },
+    {
+      "title": "",
+      "body": "Selepas kawasan dan matlamat anda dinilai, aplikator diikat di atas kumpulan otot sasaran dan mesin menjalankan program pengecutan untuk tempoh yang ditetapkan."
+    }
+  ],
+  "afterSession": {
+    "intro": "Tiada downtime yang tetap. Rasa lenguh seperti selepas bersenam, sedikit kemerahan atau rasa sengal di kawasan yang dirawat boleh berlaku dan biasanya reda dalam beberapa hari.",
+    "bands": [
+      {
+        "title": "",
+        "body": ""
+      }
+    ],
+    "aftercare": ""
+  },
+  "risks": {
+    "intro": "",
+    "common": "",
+    "lessCommon": "",
+    "pigmentNote": "",
+    "cannotDo": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "disclose": ""
+  },
+  "costFactors": {
+    "intro": "Sesi biasanya ditempah sebagai satu set pendek yang dijarakkan dalam beberapa minggu, bukan satu demi satu, jadi kos ditetapkan untuk keseluruhan set semasa konsultasi. Ia bergantung pada kawasan yang dirawat, matlamat anda dan tindak balas badan anda.",
+    "factors": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
   "sections": [
     {
       "heading": "Apa itu rangsangan otot?",
@@ -34,25 +100,6 @@
       "body": [
         "Mesin menyalurkan tenaga elektromagnet melalui aplikator yang diletakkan di atas kumpulan otot sasaran, lalu mencetuskan pengecutan supramaksimal, iaitu tahap pengecutan yang sukar dicapai melalui senaman biasa sahaja.",
         "Sebarang perubahan pada tona otot berlaku secara beransur-ansur sepanjang satu kursus sesi."
-      ]
-    },
-    {
-      "heading": "Siapa yang tidak boleh menjalani rangsangan otot elektromagnet?",
-      "body": [
-        "Implan logam, perentak jantung (pacemaker) dan IUD kuprum di dalam atau berhampiran kawasan rawatan menyebabkan rawatan ini tidak boleh dilakukan, dan sebab itulah sejarah perubatan anda diambil sebelum tali pinggang dipakaikan. Ia juga mungkin tidak sesuai semasa hamil atau jika anda mempunyai keadaan perubatan tertentu yang melibatkan kawasan rawatan."
-      ]
-    },
-    {
-      "heading": "Bagaimana rasanya sesi Schwarzy, dan apa kesan sampingannya?",
-      "body": [
-        "Selepas kawasan dan matlamat anda dinilai, aplikator diikat di atas kumpulan otot sasaran dan mesin menjalankan program pengecutan untuk tempoh yang ditetapkan.",
-        "Tiada downtime yang tetap. Rasa lenguh seperti selepas bersenam, sedikit kemerahan atau rasa sengal di kawasan yang dirawat boleh berlaku dan biasanya reda dalam beberapa hari."
-      ]
-    },
-    {
-      "heading": "Kenapa rangsangan otot ditempah sebagai satu set sesi?",
-      "body": [
-        "Sesi biasanya ditempah sebagai satu set pendek yang dijarakkan dalam beberapa minggu, bukan satu demi satu, jadi kos ditetapkan untuk keseluruhan set semasa konsultasi. Ia bergantung pada kawasan yang dirawat, matlamat anda dan tindak balas badan anda."
       ]
     }
   ],
@@ -68,6 +115,14 @@
     {
       "q": "Perlu buat berapa sesi?",
       "a": "Biasanya satu set pendek yang dijarakkan dalam beberapa minggu. Seperti mana-mana latihan otot, berapa lama hasilnya bertahan bergantung pada apa yang anda lakukan di antara sesi dan selepas sesi tamat."
+    },
+    {
+      "q": "",
+      "a": ""
+    },
+    {
+      "q": "",
+      "a": ""
     }
   ]
 }
