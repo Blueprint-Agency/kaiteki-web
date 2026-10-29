@@ -18,7 +18,7 @@ three languages, English, 中文 and BM, whether or not each language has measur
 ## Month 1: October four-week plan
 
 October 2026. The 21 Sep – 18 Oct plan in docs/15, one row per item; the Evidence column says which
-week. Rows with no language are dev, ops or client tasks, not content pieces. Still open on 19 Oct:
+week. Rows with no language are dev, ops or client tasks, not content pieces. Still open on 19 Oct (all but kt1.6 live by 28 Oct):
 kt4.1–kt4.6 and kt1.6, to be finished alongside Month 2
 
 | ID | Piece | Primary keyword | Type | Slug | Status | Evidence |
@@ -43,12 +43,12 @@ kt4.1–kt4.6 and kt1.6, to be finished alongside Month 2
 | kt3.5 | New page: /concerns/melasma | melasma | Content + Dev · EN | melasma | Live | Week 3. 720/mo |
 | kt3.6 | Treatments batch C: fat-freezing, fotona-4d, radiofrequency, bio-stimulator, laser-hair-removal |  | Content · EN |  | Live | Week 3. Treatments sameness budget ≤12 → ≤7 |
 | kt3.7 | Two-arm ranking check on the injectables (D2) |  | Ops |  | Live | Week 3 |
-| kt4.1 | Treatments batch D: the last 8 |  | Content · EN |  | Built | Week 4. Done 28 Oct on content/october-leftovers: 19/19 treatments carry the minimum. 225 new strings per locale await translation; one new clinical line awaits Dr Jacqueline Tan (docs/15c §3.2–3.3) |
-| kt4.2 | FAQ depth pass: 4–6 questions per page |  | Content · EN |  | Built | Week 4. Done 28 Oct on content/october-leftovers: every treatment and technology page at 4–6 FAQs |
-| kt4.3 | Internal-link audit script |  | Dev |  | Built | Week 4. scripts/check-links.mts (pnpm check:links): 0 rows, 7 reasoned exemptions waiting on pages that do not exist |
-| kt4.4 | Chinese /zh and Malay /ms: plumbing + 16-page pilot |  | Dev + Content + Client |  | In progress | Week 4. Plumbing and 221 zh/ms pages built 14–17 Oct; /cn redirects built 28 Oct. 0 pages signed, so none is live in production: waiting on doctor sign-off (docs/15c §3.1). Blog routes for /zh and /ms not built (needed for kt105–kt110) |
-| kt4.5 | Measure against the docs/15b baseline |  | Ops |  | Built | Week 4. docs/15 §4.5 and docs/15b/gsc-measure-2026-10-28.csv: rewritten pages gained impressions, not position; 0/14 indexed; option B and the paragraph check go to the client |
-| kt4.6 | Handover |  | Content · EN |  | Built | Week 4. docs/15c-handover-2026-10-28.md, filed; not yet sent to the client |
+| kt4.1 | Treatments batch D: the last 8 |  | Content · EN |  | Live | Week 4. Live 28 Oct: 19/19 treatments carry the minimum. One new clinical line (microwave contouring pigment note) awaits Dr Jacqueline Tan (docs/15c §3.3) |
+| kt4.2 | FAQ depth pass: 4–6 questions per page |  | Content · EN |  | Live | Week 4. Live 28 Oct: every treatment and technology page at 4–6 FAQs |
+| kt4.3 | Internal-link audit script |  | Dev |  | Live | Week 4. scripts/check-links.mts (pnpm check:links): 0 rows, 7 reasoned exemptions waiting on pages that do not exist |
+| kt4.4 | Chinese /zh and Malay /ms: plumbing + 16-page pilot |  | Dev + Content + Client |  | Live | Week 4. Live 28 Oct: 220 zh/ms pages signed and published (110 per locale), hreflang and sitemap; /cn redirects land on /zh. On 20 of them (10 treatments) about 225 strings per locale are Claude drafts no doctor has read yet (docs/15c §3.2). Blog routes for /zh and /ms carried to Month 2 (needed for kt105–kt110) |
+| kt4.5 | Measure against the docs/15b baseline |  | Ops |  | Live | Week 4. docs/15 §4.5 and docs/15b/gsc-measure-2026-10-28.csv: rewritten pages gained impressions, not position; 0/14 indexed; option B and the paragraph check go to the client |
+| kt4.6 | Handover |  | Content · EN |  | Live | Week 4. docs/15c-handover-2026-10-28.md, on main; not yet sent to the client |
 
 ## Month 2: Comparisons, aftercare and the pages that already rank
 
