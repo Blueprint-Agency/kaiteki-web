@@ -223,7 +223,5 @@ export const homeZh: HomeCopy = {
       },
     ],
     waMessage: "你好 Kaiteki，我想了解 7周年庆 Positive Face Project 优惠。",
-    next: "下一个优惠",
-    prev: "上一个优惠",
   },
 };

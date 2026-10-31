@@ -128,8 +128,6 @@ export type HomeCopy = {
   campaign: {
     slides: { label: string; alt: string }[];
     waMessage: string;
-    next: string;
-    prev: string;
   };
 };
 
@@ -341,8 +339,6 @@ const en: HomeCopy = {
       },
     ],
     waMessage: "Hi Kaiteki, I'd like to know more about the 7th Anniversary Positive Face Project promotion.",
-    next: "Next promotion",
-    prev: "Previous promotion",
   },
 };
 
