@@ -86,7 +86,7 @@ const spots: Spot[] = [
 
 const spotStyle = (s: Spot): CSSProperties => ({ left: `${s.x}%`, top: `${s.y}%` });
 
-export function HeroFace({ locale = "en" }: { locale?: Locale }) {
+export function HeroFace({ locale = "en", priority = true }: { locale?: Locale; priority?: boolean }) {
   const h = homeCopy[locale].hero;
   // English keeps its sentence-case hotspot names; other locales use the
   // researched concern names so the label matches the page it opens.
@@ -113,7 +113,10 @@ export function HeroFace({ locale = "en" }: { locale?: Locale }) {
         alt={h.imageAlt}
         width={873}
         height={1091}
-        priority
+        // Off while a campaign banner leads the hero carousel: the banner is
+        // then the LCP element and owns the preload. This figure is still laid
+        // out (opacity-0, not display:none), so it loads at normal priority.
+        priority={priority}
         sizes="(min-width: 1024px) 560px, (min-width: 640px) 460px, 92vw"
         className="hero-figure-img relative z-10 h-auto w-full"
       />
