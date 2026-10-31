@@ -50,5 +50,3 @@ export const posters: Poster[] = [
     featured: true,
   },
 ];
-
-export const waMessage = "Hi Kaiteki, I'm interested in the 7th Anniversary promotions.";
