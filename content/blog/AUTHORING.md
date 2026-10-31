@@ -240,7 +240,7 @@ Non-negotiable, and no regex catches these. `docs/02` §8 is the full rule set.
 ```bash
 pnpm check:blog    # the contract above, machine-checked
 pnpm typecheck     # the metadata object is typed; this catches a bad field
-pnpm build         # optional locally; CI runs it on merge
+pnpm build         # optional locally; Vercel builds it on deploy
 ```
 
 `check:blog` prints warnings (thin description, few internal links, reading time
