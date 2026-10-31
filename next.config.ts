@@ -7,7 +7,9 @@ const nextConfig: NextConfig = {
   // Lean container image: emit a self-contained server (.next/standalone) for Docker.
   output: "standalone",
   // Pin the workspace root so Next doesn't infer it from a stray parent lockfile.
-  // (docs/07 §14 — this repo root is the app root; well-known/ is excluded reference.)
+  // (docs/07 §14 — this repo root is the app root.) The legacy-site reference that
+  // used to sit in well-known/ now lives beside the repo in ../kaiteki-legacy:
+  // 43k files under this root made the dev server watch them all.
   turbopack: {
     root: __dirname,
   },
@@ -18,9 +20,11 @@ const nextConfig: NextConfig = {
   },
   // Dev-only: allow HMR when previewing from another device on the LAN.
   allowedDevOrigins: ["192.168.101.7"],
-  // Modern formats for the warm imagery (docs/02 §2).
+  // Modern formats for the warm imagery (docs/02 §2). Dev serves WebP only:
+  // AVIF encoding is slow and CPU-heavy, and `next dev` re-encodes on request.
   images: {
-    formats: ["image/avif", "image/webp"],
+    formats:
+      process.env.NODE_ENV === "development" ? ["image/webp"] : ["image/avif", "image/webp"],
     // New blog media lives in Cloudflare R2 (bucket kaiteki-web-prod) behind the
     // existing cdn.kaiteki.my, under a blog/ prefix so it stays clear of the
     // brand/ objects already there. See content/blog/AUTHORING.md §3.

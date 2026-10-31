@@ -34,8 +34,8 @@ This is a **YMYL / medical** site: health-content accuracy, E-E-A-T, and **Malay
 ## Repo layout
 
 - `docs/` — research, audit, specs, proposals (see `docs/README.md`). `PRODUCT.md` · `DESIGN.md` — Impeccable brand/design context (register, palette, "Warm Sanctuary").
-- **`well-known/` is the OLD site, git-ignored on purpose** (~750 MB, ~20k files incl. a WordPress backup, plus `kaitekim_blog2.sql.gz` — the legacy WordPress dump that sources the `/blog` MDX migration). Treat it as **read-only reference**. Never edit it; never assume it's the new app. To track it, remove the relevant lines in `.gitignore`.
-- All new application code goes at the repo root, not inside `well-known/`.
+- **The OLD site lives outside the repo at `../kaiteki-legacy/`** (formerly `well-known/` inside the repo; moved 2026-10-31 because its 43k files under the project root slowed `next dev`). ~1.7 GB incl. a WordPress backup, plus `kaitekim_blog2.sql.gz` — the legacy WordPress dump that sources the `/blog` MDX migration. Treat it as **read-only reference**. Never edit it; never assume it's the new app. Don't move it back under the repo.
+- All new application code goes at the repo root.
 
 ## Documentation map
 
@@ -51,7 +51,7 @@ See **`docs/README.md`** for the full index. Phase status:
 
 ## Working conventions
 
-- **Context discipline:** this session uses context-mode — prefer `ctx_*` sandbox tools for large outputs; don't flood context reading `well-known/` (use Grep/Explore agents). Raw legacy files are huge.
+- **Context discipline:** this session uses context-mode — prefer `ctx_*` sandbox tools for large outputs; don't flood context reading `../kaiteki-legacy/` (use Grep/Explore agents). Raw legacy files are huge.
 - **SEO is a gate, not a garnish.** Any new page type must define: clean URL, title/meta template, heading hierarchy, internal-linking role, schema type, and E-E-A-T signals. (`docs/02` is the checklist.)
 - **Preserve rankings:** every legacy URL in `docs/01` §2 needs a 301 to its new home. Don't ship the rebuild without the redirect map (`docs/04`/`docs/07`).
 - **Medical/YMYL caution:** don't write outcome/efficacy claims, before/after, or testimonials that breach Malaysian advertising rules — see `docs/02` §8. When unsure, flag it.
@@ -87,7 +87,7 @@ pnpm blog:manifest / blog:import / blog:redirects  # legacy WordPress migration
 
 **Images live in Cloudflare R2** (bucket `kaiteki-web-prod`, served from `https://cdn.kaiteki.my`), not `public/`. Only SEO-pinned files stay local: `public/brand/` (schema logo), `public/images/hero/` (site-wide OG image), app icons, and the `public/ads/` landing bundle. A new image goes up to R2 and its URL into the data file; card images also get a key in `config/site-media.json`. R2 creds are in `.env.local` (see `.env.example`).
 
-`well-known/` is excluded in `tsconfig.json` and `turbopack.root` is pinned in `next.config.ts` (both required for a clean build).
+`turbopack.root` is pinned in `next.config.ts` (required for a clean build). Keep large non-app folders out of the repo root: Turbopack watches everything under it.
 
 ## Git
 
