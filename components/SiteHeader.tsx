@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { waForPage } from "@/lib/wa";
 import { ChevronDown, WhatsApp } from "./icons";
 import { Container } from "./Container";
 import { LanguageSwitcher } from "./LanguageSwitcher";
@@ -27,6 +29,8 @@ export function SiteHeader({
 }) {
   const primaryNav = model.nav;
   const h = chrome.header;
+  // A campaign page swaps in its own WhatsApp link (lib/wa.ts PAGE_WA).
+  const wa = waForPage(usePathname(), waHref);
   // Malay labels run about twice the English length ("Teknologi & Suntikan");
   // locales other than English get tighter padding so the bar stays on one line.
   const dense = locale !== "en";
@@ -205,7 +209,7 @@ export function SiteHeader({
           <div className="flex items-center gap-2">
             <LanguageSwitcher locale={locale} live={live} label={h.language} />
             <a
-              href={waHref}
+              href={wa}
               target="_blank"
               rel="noopener"
               data-ga-cta_position="header"

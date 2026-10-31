@@ -3,11 +3,10 @@ name: Sync blog media to R2
 # All blog media lives in Cloudflare R2, never in public/ (content/blog/AUTHORING.md §3).
 # This is the only thing that puts it there.
 #
-# Both deploy workflows call it before they build, so a push to staging or main
-# warms the CDN ahead of the site that references it. It also runs on demand
-# from any branch, which is what an author needs: the images have to be live
-# before the post can be previewed locally or reviewed in a PR, and neither of
-# those is a merge.
+# The site deploys on Vercel now, which does not run this. Run it by hand
+# (Actions -> Sync blog media to R2 -> Run workflow) BEFORE pushing a post that
+# needs new media: the images have to be live before the post can be previewed
+# locally, reviewed in a PR, or served from production.
 on:
   workflow_call:
   workflow_dispatch:

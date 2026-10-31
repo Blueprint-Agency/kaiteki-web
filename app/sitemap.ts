@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/locations",
     "/products",
     "/our-story",
+    "/anniversary/2026",
     "/blog",
     "/privacy",
   ];
