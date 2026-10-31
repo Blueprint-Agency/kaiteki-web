@@ -20,51 +20,70 @@ export type HeroSlide = {
  *  banner and the "warm sanctuary" fold), so every link and the <h1> are in the
  *  HTML whether or not this component ever hydrates.
  *
- *  Height: slides are stacked in one grid cell, so the box would otherwise size
- *  to the tallest of them (the banner is ~16:9, the fold is roughly a screen
- *  tall — very different on a phone). Instead the container's height follows the
- *  ACTIVE slide, measured after mount. The pre-hydration height is set in CSS by
- *  `initialHeightClass` so it already matches slide 0 and nothing shifts. */
+ *  Height: slides are stacked in one grid cell, so the hero is as tall as the
+ *  tallest slide and stays that height whichever slide is showing. Each slide
+ *  stretches to fill the cell (a slide is a flex column; its content decides
+ *  how to sit in the spare room). Pure CSS, so nothing shifts on hydration.
+ *
+ *  Motion: changing slide slides the new one in from the side you're heading
+ *  to and the old one out the other side (Web Animations, ~600ms). It isn't
+ *  gated on reduced motion: it only runs when the visitor (or autoplay, which
+ *  is gated) changes slide, and an instant swap reads as a glitch. */
 export function HeroSlider({
   slides,
   interval = 5000,
-  initialHeightClass = "",
 }: {
   slides: HeroSlide[];
   /** ms per slide */
   interval?: number;
-  /** Tailwind height utility matching slide 0's natural height, used until the
-   *  first measurement lands (prevents a hydration jump / CLS). */
-  initialHeightClass?: string;
 }) {
   const [active, setActive] = useState(0);
-  const [height, setHeight] = useState<number | null>(null);
   const [hovered, setHovered] = useState(false);
   const [onScreen, setOnScreen] = useState(true);
   const [tabVisible, setTabVisible] = useState(true);
   const rootRef = useRef<HTMLDivElement>(null);
   const slideRefs = useRef<(HTMLDivElement | null)[]>([]);
+  // The slide being left and the direction of travel, read by the layout
+  // effect below to run the transition for the change that just rendered.
+  const leaving = useRef<number | null>(null);
+  const dir = useRef<1 | -1>(1);
   const count = slides.length;
 
-  const go = useCallback((i: number) => setActive((i + count) % count), [count]);
+  const go = useCallback(
+    (i: number, d?: 1 | -1) => {
+      const next = (i + count) % count;
+      if (next === active) return;
+      leaving.current = active;
+      dir.current = d ?? (next > active ? 1 : -1);
+      setActive(next);
+    },
+    [active, count],
+  );
 
-  /* Track the active slide's height (and re-track on resize / font swap /
-     image decode, which is what ResizeObserver on every slide buys us). */
   useLayoutEffect(() => {
-    const measure = () => {
-      const el = slideRefs.current[active];
-      if (el) setHeight(el.offsetHeight);
-    };
-    measure();
-    const ro = new ResizeObserver(measure);
-    for (const el of slideRefs.current) if (el) ro.observe(el);
-    return () => ro.disconnect();
+    const from = leaving.current;
+    leaving.current = null;
+    const inEl = slideRefs.current[active];
+    const outEl = from === null ? null : slideRefs.current[from];
+    if (!inEl || !outEl) return;
+    for (const el of slideRefs.current) el?.getAnimations().forEach((a) => a.cancel());
+    const d = dir.current;
+    const timing = { duration: 600, easing: "cubic-bezier(0.22, 1, 0.36, 1)" };
+    inEl.animate([{ transform: `translateX(${d * 100}%)` }, { transform: "none" }], timing);
+    // The outgoing slide is already `invisible` in the new render; holding
+    // visibility in both keyframes keeps it on screen for the slide-out.
+    outEl.animate(
+      [
+        { transform: "none", visibility: "visible" },
+        { transform: `translateX(${-d * 100}%)`, visibility: "visible" },
+      ],
+      timing,
+    );
   }, [active]);
 
-  /* Advancing changes the hero's height, which moves everything below it. Doing
-     that while someone is reading the section under the fold is the classic
-     carousel annoyance, so autoplay only runs while the hero is actually on
-     screen. Same observer also covers the "left the tab open for an hour" case. */
+  /* Autoplay only runs while the hero is actually on screen: nobody needs it
+     turning over while they read further down. The same observer also covers
+     the "left the tab open for an hour" case. */
   useEffect(() => {
     const el = rootRef.current;
     if (!el) return;
@@ -88,9 +107,9 @@ export function HeroSlider({
   useEffect(() => {
     if (!running) return;
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const id = setInterval(() => setActive((a) => (a + 1) % count), interval);
+    const id = setInterval(() => go(active + 1, 1), interval);
     return () => clearInterval(id);
-  }, [running, count, interval, active]);
+  }, [running, interval, active, go]);
 
   return (
     <div
@@ -103,35 +122,18 @@ export function HeroSlider({
       onMouseLeave={() => setHovered(false)}
       onFocusCapture={() => setHovered(true)}
       onBlurCapture={() => setHovered(false)}
-      // Server-rendered slide content can't take a callback, so a button inside
-      // a slide jumps the carousel by carrying data-slide-to="<index>".
-      onClick={(e) => {
-        const to = (e.target as Element).closest<HTMLElement>("[data-slide-to]")?.dataset.slideTo;
-        if (to !== undefined) go(Number(to));
-      }}
     >
-      <div
-        // `initialHeightClass` is derived from vw, so on a desktop with a
-        // classic scrollbar it over-states slide 0 by ~0.56 × scrollbar width.
-        // The first measurement corrects that ~9px through the same transition;
-        // on touch (overlay scrollbars) the two agree exactly.
-        className={`grid overflow-hidden transition-[height] duration-500 ease-out motion-reduce:transition-none ${
-          height === null ? initialHeightClass : ""
-        }`}
-        style={height === null ? undefined : { height }}
-      >
+      <div className="grid overflow-hidden">
         {slides.map((s, i) => (
           <div
             key={s.label}
             ref={(el) => {
               slideRefs.current[i] = el;
             }}
-            // Every slide occupies the same cell; only opacity separates them.
-            // Never `display:none` — the inactive slide has to stay laid out so
-            // it can be measured, and its markup stays readable to crawlers.
-            className={`col-start-1 row-start-1 self-start transition-opacity duration-500 ease-out motion-reduce:transition-none ${
-              i === active ? "opacity-100" : "pointer-events-none opacity-0"
-            }`}
+            // Every slide occupies the same cell; `invisible` hides the others.
+            // Never `display:none`: every slide has to count towards the shared
+            // height, and its markup stays readable to crawlers.
+            className={`col-start-1 row-start-1 flex flex-col ${i === active ? "" : "invisible"}`}
             role="group"
             aria-roledescription="slide"
             aria-label={`${i + 1} of ${count}: ${s.label}`}
@@ -147,12 +149,12 @@ export function HeroSlider({
       {count > 1 && (
         <div className="pointer-events-none absolute inset-x-0 bottom-4 z-30 flex justify-center sm:bottom-5">
           <div className="pointer-events-auto flex items-center gap-2 rounded-full bg-surface/80 px-1.5 py-1 shadow-sm ring-1 ring-espresso/10 backdrop-blur">
-            {/* Prev/next wrap around, so every slide is reachable without
-                autoplay (which reduced-motion visitors never get) and without
-                relying on arrows printed into a slide's artwork. */}
+            {/* The carousel's only controls. Prev/next wrap around, so every
+                slide is reachable without autoplay, which reduced-motion
+                visitors never get. */}
             <button
               type="button"
-              onClick={() => go(active - 1)}
+              onClick={() => go(active - 1, -1)}
               aria-label="Previous slide"
               className="flex size-7 items-center justify-center rounded-full text-espresso/70 transition-colors hover:bg-espresso/10 hover:text-espresso"
             >
@@ -172,7 +174,7 @@ export function HeroSlider({
             ))}
             <button
               type="button"
-              onClick={() => go(active + 1)}
+              onClick={() => go(active + 1, 1)}
               aria-label="Next slide"
               className="flex size-7 items-center justify-center rounded-full text-espresso/70 transition-colors hover:bg-espresso/10 hover:text-espresso"
             >
