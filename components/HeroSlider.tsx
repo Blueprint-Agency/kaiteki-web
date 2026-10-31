@@ -8,6 +8,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { ArrowLeft, ArrowRight } from "./icons";
 
 export type HeroSlide = {
   /** Short label for the dot's accessible name, e.g. "Merdeka promotion". */
@@ -102,6 +103,12 @@ export function HeroSlider({
       onMouseLeave={() => setHovered(false)}
       onFocusCapture={() => setHovered(true)}
       onBlurCapture={() => setHovered(false)}
+      // Server-rendered slide content can't take a callback, so a button inside
+      // a slide jumps the carousel by carrying data-slide-to="<index>".
+      onClick={(e) => {
+        const to = (e.target as Element).closest<HTMLElement>("[data-slide-to]")?.dataset.slideTo;
+        if (to !== undefined) go(Number(to));
+      }}
     >
       <div
         // `initialHeightClass` is derived from vw, so on a desktop with a
@@ -139,7 +146,18 @@ export function HeroSlider({
 
       {count > 1 && (
         <div className="pointer-events-none absolute inset-x-0 bottom-4 z-30 flex justify-center sm:bottom-5">
-          <div className="pointer-events-auto flex items-center gap-2 rounded-full bg-surface/80 px-3 py-2 shadow-sm ring-1 ring-espresso/10 backdrop-blur">
+          <div className="pointer-events-auto flex items-center gap-2 rounded-full bg-surface/80 px-1.5 py-1 shadow-sm ring-1 ring-espresso/10 backdrop-blur">
+            {/* Prev/next wrap around, so every slide is reachable without
+                autoplay (which reduced-motion visitors never get) and without
+                relying on arrows printed into a slide's artwork. */}
+            <button
+              type="button"
+              onClick={() => go(active - 1)}
+              aria-label="Previous slide"
+              className="flex size-7 items-center justify-center rounded-full text-espresso/70 transition-colors hover:bg-espresso/10 hover:text-espresso"
+            >
+              <ArrowLeft size={14} />
+            </button>
             {slides.map((s, i) => (
               <button
                 key={s.label}
@@ -152,6 +170,14 @@ export function HeroSlider({
                 }`}
               />
             ))}
+            <button
+              type="button"
+              onClick={() => go(active + 1)}
+              aria-label="Next slide"
+              className="flex size-7 items-center justify-center rounded-full text-espresso/70 transition-colors hover:bg-espresso/10 hover:text-espresso"
+            >
+              <ArrowRight size={14} />
+            </button>
           </div>
         </div>
       )}

@@ -1,4 +1,5 @@
 import { Container } from "./Container";
+import { HScroll } from "./HScroll";
 import { homeCopy } from "@/content/i18n/home";
 import type { Locale } from "@/lib/i18n";
 
@@ -11,13 +12,12 @@ export function HowItWorks({ locale = "en" }: { locale?: Locale }) {
   return (
     <section id="how-it-works" className="relative bg-page">
       {/* The four steps read sideways: while this tall block is pinned, vertical
-          scroll drives the track's translateX (CSS scroll-driven animation — see
-          .hscroll in globals.css). The heading lives inside the pinned stage so
-          the section is one screen tall with no dead space above the track.
-          Browsers without animation-timeline, and anyone on
-          prefers-reduced-motion, get the same track as a plain swipeable
-          scroller — the markup is one list either way. */}
-      <div className="hscroll">
+          scroll drives the track's translateX (components/HScroll.tsx). The
+          heading lives inside the pinned stage so the section is one screen
+          tall with no dead space above the track. Short windows and no-JS
+          get the same track as a plain swipeable scroller —
+          the markup is one list either way. */}
+      <HScroll>
         <div className="hscroll-stage">
           <Container className="reveal shrink-0">
             <div className="mx-auto max-w-2xl text-center">
@@ -40,7 +40,7 @@ export function HowItWorks({ locale = "en" }: { locale?: Locale }) {
             ))}
           </ol>
         </div>
-      </div>
+      </HScroll>
     </section>
   );
 }
