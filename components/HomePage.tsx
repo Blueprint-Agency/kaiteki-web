@@ -65,13 +65,11 @@ export function HomePage({ locale }: { locale: Locale }) {
           server-rendered inside the client HeroSlider, so the <h1>, the CTAs
           and every concern hotspot link stay in the HTML. Pulled under the
           transparent header; each slide re-adds the 68px clearance itself.
+          All three share one height, the tallest slide's (see HeroSlider).
           When the campaign ends, render <WarmSlide locale={locale} /> alone
           again; without `lead={false}` its photo gets `priority` back. */}
       <section className="hero-warm relative -mt-[68px] overflow-hidden">
         <HeroSlider
-          // Matches a banner slide's natural height exactly (68px clearance +
-          // the width-capped 16:9 banner), so hydration doesn't shift anything.
-          initialHeightClass="h-[calc(68px+min(56.25vw,100dvh-92px))]"
           slides={[
             ...ANNIVERSARY_BANNERS.map((src, i) => ({
               label: copy.campaign.slides[i].label,
@@ -110,24 +108,21 @@ export function HomePage({ locale }: { locale: Locale }) {
 /* ── Hero — campaign banner slides ───────────────────────────────────────────
    16:9 artwork from the designer's PDF, hosted on R2. Width-capped so a banner
    never grows taller than the fold. Tapping it opens WhatsApp with the campaign
-   named (WhatsApp-only conversion). The artwork has a slider arrow printed on
-   it (right edge on banner 1, left edge on banner 2); an invisible button sits
-   over each one, so it does what it looks like rather than opening WhatsApp. */
+   named (WhatsApp-only conversion). The PDF's artwork had slider arrows printed
+   on it; these renders leave them out so the carousel's own controls are the
+   only navigation. Where the hero is taller or wider than the banner (phones,
+   very wide windows) a blurred copy of it fills the rest: same URL, so no
+   extra download. */
 const ANNIVERSARY_BANNERS = [
-  "https://cdn.kaiteki.my/images/promos/anniversary-2026-1.jpg",
-  "https://cdn.kaiteki.my/images/promos/anniversary-2026-2.jpg",
+  "https://cdn.kaiteki.my/images/promos/anniversary-2026-hero-1.jpg",
+  "https://cdn.kaiteki.my/images/promos/anniversary-2026-hero-2.jpg",
 ];
-// Arrow centres as a share of the artwork's width/height (from the PDF).
-const BANNER_ARROWS = [
-  { left: "97.27%", top: "48.1%", to: 1, dir: "next" },
-  { left: "2.17%", top: "48.1%", to: 0, dir: "prev" },
-] as const;
 
 function BannerSlide({ locale, index, src }: { locale: Locale; index: number; src: string }) {
   const c = homeCopy[locale].campaign;
-  const arrow = BANNER_ARROWS[index];
   return (
-    <div className="pt-[68px]">
+    <div className="relative flex flex-1 items-center pt-[68px]">
+      <Image src={src} alt="" aria-hidden fill sizes="100vw" className="scale-110 object-cover opacity-70 blur-2xl" />
       <div className="relative mx-auto w-full max-w-[calc((100dvh-92px)*1.7778)]">
         <a
           href={waLink(c.waMessage)}
@@ -147,15 +142,6 @@ function BannerSlide({ locale, index, src }: { locale: Locale; index: number; sr
             className="aspect-[16/9] h-auto w-full"
           />
         </a>
-        {arrow && (
-          <button
-            type="button"
-            data-slide-to={arrow.to}
-            aria-label={c[arrow.dir]}
-            style={{ left: arrow.left, top: arrow.top }}
-            className="absolute aspect-square w-[max(2.75rem,5%)] -translate-x-1/2 -translate-y-1/2 rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-          />
-        )}
       </div>
     </div>
   );
@@ -167,7 +153,9 @@ function BannerSlide({ locale, index, src }: { locale: Locale; index: number; sr
 function WarmSlide({ locale, lead = true }: { locale: Locale; lead?: boolean }) {
   const h = homeCopy[locale].hero;
   return (
-    <Container className="relative">
+    // mt-auto: in the carousel the slide may have spare height (it shares the
+    // tallest slide's), and the subject photo has to stay bottom-flush.
+    <Container className="relative mt-auto">
       {/* pt-[68px] offsets the -mt on the section so content clears the
           transparent header; the fold sizes to its content, not the viewport. */}
       <div className="grid items-end gap-x-10 pt-[68px] lg:grid-cols-[minmax(0,1fr)_minmax(0,50%)]">

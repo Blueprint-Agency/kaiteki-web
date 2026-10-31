@@ -222,7 +222,5 @@ export const homeMs: HomeCopy = {
       },
     ],
     waMessage: "Hai Kaiteki, saya nak tahu lebih lanjut tentang promosi Positive Face Project sempena Ulang Tahun ke-7.",
-    next: "Promosi seterusnya",
-    prev: "Promosi sebelumnya",
   },
 };
