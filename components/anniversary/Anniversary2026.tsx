@@ -9,11 +9,11 @@ import { JsonLd } from "@/components/JsonLd";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { Sparkle } from "@/components/icons";
 import { Countdown } from "./Countdown";
-import { CAMPAIGN, posters, waMessage, type Poster } from "@/content/data/anniversary-2026";
+import { CAMPAIGN, posters, type Poster } from "@/content/data/anniversary-2026";
 import { branches } from "@/content/data/branches";
 import { pageMeta } from "@/lib/seo";
 import { webPageNode } from "@/lib/schema";
-import { waLink } from "@/lib/wa";
+import { PAGE_WA } from "@/lib/wa";
 
 // /anniversary/2026 — the 7th Anniversary campaign page. Sections, order and
 // copy follow the designer's concept page (Kaiteki_7th_Anniversary_Share/
@@ -61,7 +61,7 @@ function Hero() {
       <Container className="pt-6 sm:pt-8">
         <Breadcrumbs items={[{ label: "7th Anniversary" }]} />
         <div className="grid items-center gap-x-12 gap-y-10 pb-14 pt-8 sm:pt-12 lg:grid-cols-2 lg:pb-20">
-          <div>
+          <div className="text-center lg:text-left">
             <p className="rise kicker" style={si(0)}>
               Kaiteki · 7th anniversary
             </p>
@@ -72,7 +72,7 @@ function Hero() {
                 Countless reasons to <span className="h-em">smile.</span>
               </span>
             </h1>
-            <p className="rise prose mt-5 max-w-[450px] text-lg leading-relaxed text-ink-700" style={si(1)}>
+            <p className="rise prose mx-auto mt-5 max-w-[450px] text-lg leading-relaxed text-ink-700 lg:mx-0" style={si(1)}>
               Celebrating the faces, stories and confidence that have shaped our journey. Here&apos;s to embracing the
               positive in every one of us.
             </p>
@@ -92,11 +92,11 @@ function Hero() {
 /** The large "7" with "Years of Kaiteki" beneath it, set in an arch. */
 function SevenMark() {
   return (
-    <div className="relative mx-auto w-full max-w-[420px] lg:mr-0">
+    <div className="relative mx-auto w-full max-w-[300px] sm:max-w-[380px] lg:mr-0 lg:max-w-[420px]">
       <div className="hero-arch relative aspect-[4/5] overflow-hidden rounded-t-full rounded-b-[10px] bg-[radial-gradient(circle_at_50%_40%,#f9eee9_0%,#e9d2ca_50%,#c6aa93_100%)] ring-1 ring-hairline">
         <Dandelion />
         <div aria-hidden className="absolute inset-0 flex items-center justify-center pt-[4%]">
-          <span className="relative font-display text-[clamp(14rem,28vw,20rem)] font-[340] leading-none text-white/80 [text-shadow:0_6px_30px_rgb(118_91_78/0.35)]">
+          <span className="relative font-display text-[clamp(11rem,28vw,20rem)] font-[340] leading-none text-white/80 [text-shadow:0_6px_30px_rgb(118_91_78/0.35)]">
             7
             <Sparkle size={34} className="absolute -right-6 top-8 text-white" />
           </span>
@@ -133,7 +133,7 @@ function Theme() {
       <Container className="reveal grid items-center gap-10 py-16 sm:py-24 lg:grid-cols-2 lg:gap-14">
         <div
           aria-hidden
-          className="relative flex min-h-[340px] items-center justify-center overflow-hidden rounded-[10px] bg-[linear-gradient(145deg,#d9bdb5,#f8ede4)] p-8 text-center sm:min-h-[410px]"
+          className="relative flex min-h-[240px] items-center justify-center overflow-hidden rounded-[10px] bg-[linear-gradient(145deg,#d9bdb5,#f8ede4)] p-8 text-center sm:min-h-[340px] lg:min-h-[410px]"
         >
           <Dandelion className="opacity-70" />
           <p className="relative font-display text-[clamp(2.2rem,1.5rem+2.6vw,3.25rem)] font-[380] italic leading-[1.1] text-white [text-shadow:0_2px_18px_rgb(118_91_78/0.3)]">
@@ -143,14 +143,14 @@ function Theme() {
           </p>
         </div>
 
-        <div>
+        <div className="text-center lg:text-left">
           <p className="kicker">Our anniversary theme</p>
           <h2 className="h-section mt-3">
             Less negativity.
             <br />
             More <span className="h-em">possibilities.</span>
           </h2>
-          <div className="prose mt-5 space-y-4 text-lg leading-relaxed text-ink-700">
+          <div className="prose mx-auto mt-5 max-w-[60ch] space-y-4 text-lg leading-relaxed text-ink-700 lg:mx-0">
             <p>
               Our 7th anniversary celebrates beauty. It&apos;s an invitation to let go of unnecessary self criticism,
               embrace what makes us unique, and move forward with confidence.
@@ -187,7 +187,7 @@ function Offers() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2">
+        <div className="mx-auto mt-10 grid max-w-[480px] gap-5 sm:max-w-none sm:grid-cols-2 sm:gap-6">
           {posters.map((p) => (
             <PosterCard key={p.src} p={p} />
           ))}
@@ -214,7 +214,7 @@ function PosterCard({ p }: { p: Poster }) {
       target="_blank"
       rel="noopener"
       aria-label={`View ${p.label} full-size`}
-      className={`reveal group block overflow-hidden rounded-[18px] border border-hairline bg-surface shadow-[0_12px_34px_-14px_rgb(73_54_40/0.25)] ${
+      className={`reveal group block overflow-hidden rounded-[14px] border sm:rounded-[18px] border-hairline bg-surface shadow-[0_12px_34px_-14px_rgb(73_54_40/0.25)] ${
         p.featured ? "sm:col-span-2 sm:mx-auto sm:w-full sm:max-w-[520px]" : ""
       }`}
     >
@@ -226,7 +226,7 @@ function PosterCard({ p }: { p: Poster }) {
         sizes="(min-width: 1200px) 560px, (min-width: 640px) 48vw, 100vw"
         className="h-auto w-full"
       />
-      <span className="flex items-center justify-between gap-3 px-5 py-4 text-sm font-semibold text-espresso">
+      <span className="flex min-h-12 items-center justify-between gap-3 px-4 py-3 text-sm font-semibold text-espresso sm:px-5 sm:py-4">
         {p.label}
         <span aria-hidden className="text-accent transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5">
           ↗
@@ -251,14 +251,18 @@ function Branches() {
             Nine branches across Kuala Lumpur, Selangor, Johor and Sabah.
           </p>
         </div>
-        <ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-10 grid grid-cols-2 gap-3 lg:grid-cols-3">
           {branches.map((b) => (
-            <li key={b.slug} className="reveal rounded-[10px] border border-hairline bg-surface p-6">
-              <p className="kicker">{b.region}</p>
-              <h3 className="h-sub mt-2">{b.name}</h3>
+            <li
+              key={b.slug}
+              // Two columns below lg leave the ninth card alone; centre it.
+              className="reveal flex flex-col items-center rounded-[10px] border border-hairline bg-surface px-3 py-5 text-center sm:items-start sm:p-6 sm:text-left max-lg:last:odd:col-span-2 max-lg:last:odd:mx-auto max-lg:last:odd:w-[calc(50%-0.375rem)]"
+            >
+              <p className="kicker !tracking-[0.1em] sm:!tracking-[0.16em]">{b.region}</p>
+              <h3 className="h-sub mt-2 !text-base sm:!text-[1.2rem]">{b.name}</h3>
               <Link
                 href={`/locations/${b.slug}`}
-                className="mt-3 inline-block text-sm text-accent underline decoration-mocha/40 underline-offset-4 transition-colors hover:text-espresso"
+                className="mt-auto inline-block pt-3 text-sm text-accent underline decoration-mocha/40 underline-offset-4 transition-colors hover:text-espresso"
               >
                 View branch address
               </Link>
@@ -289,7 +293,7 @@ function CustomerService() {
           size="lg"
           position="closing"
           label="WhatsApp customer service"
-          href={waLink(waMessage)}
+          href={PAGE_WA[PATH]}
           className="mt-7"
         />
         <p className="mt-4 text-sm text-ink-on-dark/75">
