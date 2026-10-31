@@ -65,11 +65,15 @@ export function HomePage({ locale }: { locale: Locale }) {
           server-rendered inside the client HeroSlider, so the <h1>, the CTAs
           and every concern hotspot link stay in the HTML. Pulled under the
           transparent header; each slide re-adds the 68px clearance itself.
-          All three share one height, the tallest slide's (see HeroSlider).
+          From lg up all three share one height, the tallest slide's; below lg
+          the hero fits the slide on show (see HeroSlider).
           When the campaign ends, render <WarmSlide locale={locale} /> alone
           again; without `lead={false}` its photo gets `priority` back. */}
       <section className="hero-warm relative -mt-[68px] overflow-hidden">
         <HeroSlider
+          // A banner slide's natural height below lg (68px clearance + the
+          // width-capped 16:9 banner), so hydration doesn't shift anything.
+          initialHeightClass="max-lg:h-[calc(68px+min(56.25vw,100dvh-92px))]"
           slides={[
             ...ANNIVERSARY_BANNERS.map((src, i) => ({
               label: copy.campaign.slides[i].label,
