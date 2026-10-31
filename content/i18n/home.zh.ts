@@ -211,4 +211,19 @@ export const homeZh: HomeCopy = {
     viewProducts: "查看护肤产品",
     waMessage: "你好 Kaiteki，我想了解 Skincare Mix & Match RM699 优惠。",
   },
+  campaign: {
+    slides: [
+      {
+        label: "7周年庆优惠（一）",
+        alt: "Kaiteki 7周年庆 Positive Face Project，11月1日至30日。疗程配套：Happy Face Reset（39% 折扣）、Bye Bye Angry Face、Dull Out Glow On（48% 折扣）、BB Face Lift（节省 RM2,500）及 Tired Face Quickfix。另送限量版旅行香水、免费咨询、免费礼品袋及高达 RM5,000 现金抵用额。受条款与条件约束。",
+      },
+      {
+        label: "7周年庆优惠（二）",
+        alt: "Kaiteki 7周年庆 Positive Face Project，11月1日至30日。疗程配套：Face Sculpt & Slim、Clear Skin Glow（49% 折扣）、Sick/Fatigue No More、Blooming Scalp（节省 RM1,600）及加购优惠（50% 折扣）。另送限量版旅行香水、免费咨询、免费礼品袋及高达 RM5,000 现金抵用额。受条款与条件约束。",
+      },
+    ],
+    waMessage: "你好 Kaiteki，我想了解 7周年庆 Positive Face Project 优惠。",
+    next: "下一个优惠",
+    prev: "上一个优惠",
+  },
 };

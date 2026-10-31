@@ -210,4 +210,19 @@ export const homeMs: HomeCopy = {
     viewProducts: "Lihat produk",
     waMessage: "Hai Kaiteki, saya nak tahu lebih lanjut tentang promosi Skincare Mix & Match RM699.",
   },
+  campaign: {
+    slides: [
+      {
+        label: "Promosi Ulang Tahun ke-7, bahagian 1",
+        alt: "Jualan Ulang Tahun ke-7 Kaiteki, Positive Face Project, 1 hingga 30 November. Pakej rawatan: Happy Face Reset (diskaun 39%), Bye Bye Angry Face, Dull Out Glow On (diskaun 48%), BB Face Lift (jimat RM2,500) dan Tired Face Quickfix. Juga percuma minyak wangi perjalanan edisi terhad, konsultasi percuma, beg cenderahati percuma dan kredit tunai sehingga RM5,000. Tertakluk pada terma dan syarat.",
+      },
+      {
+        label: "Promosi Ulang Tahun ke-7, bahagian 2",
+        alt: "Jualan Ulang Tahun ke-7 Kaiteki, Positive Face Project, 1 hingga 30 November. Pakej rawatan: Face Sculpt & Slim, Clear Skin Glow (diskaun 49%), Sick/Fatigue No More, Blooming Scalp (jimat RM1,600) dan tawaran beli dengan pembelian (diskaun 50%). Juga percuma minyak wangi perjalanan edisi terhad, konsultasi percuma, beg cenderahati percuma dan kredit tunai sehingga RM5,000. Tertakluk pada terma dan syarat.",
+      },
+    ],
+    waMessage: "Hai Kaiteki, saya nak tahu lebih lanjut tentang promosi Positive Face Project sempena Ulang Tahun ke-7.",
+    next: "Promosi seterusnya",
+    prev: "Promosi sebelumnya",
+  },
 };

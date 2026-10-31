@@ -123,6 +123,14 @@ export type HomeCopy = {
     viewProducts: string;
     waMessage: string;
   };
+  /** Hero campaign banners, in carousel order. Labels must be unique (they key
+   *  the slides). Clear the slides in HomePage when the campaign ends. */
+  campaign: {
+    slides: { label: string; alt: string }[];
+    waMessage: string;
+    next: string;
+    prev: string;
+  };
 };
 
 const en: HomeCopy = {
@@ -320,6 +328,21 @@ const en: HomeCopy = {
     enquire: "Enquire on WhatsApp",
     viewProducts: "View products",
     waMessage: "I'd like to know more about the Skincare Mix & Match RM699 promotion.",
+  },
+  campaign: {
+    slides: [
+      {
+        label: "7th Anniversary promotion, part 1",
+        alt: "Kaiteki 7th Anniversary Sale, Positive Face Project, 1 to 30 November. Treatment bundles: Happy Face Reset (39% off), Bye Bye Angry Face, Dull Out Glow On (48% off), BB Face Lift (save RM2,500) and Tired Face Quickfix. Plus a free limited-edition travel perfume, complimentary consultation, free goodie bag and up to RM5,000 in cash credits. Terms and conditions apply.",
+      },
+      {
+        label: "7th Anniversary promotion, part 2",
+        alt: "Kaiteki 7th Anniversary Sale, Positive Face Project, 1 to 30 November. Treatment bundles: Face Sculpt & Slim, Clear Skin Glow (49% off), Sick/Fatigue No More, Blooming Scalp (save RM1,600) and purchase-with-purchase deals at 50% off. Plus a free limited-edition travel perfume, complimentary consultation, free goodie bag and up to RM5,000 in cash credits. Terms and conditions apply.",
+      },
+    ],
+    waMessage: "Hi Kaiteki, I'd like to know more about the 7th Anniversary Positive Face Project promotion.",
+    next: "Next promotion",
+    prev: "Previous promotion",
   },
 };
 

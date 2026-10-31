@@ -102,6 +102,12 @@ export function HeroSlider({
       onMouseLeave={() => setHovered(false)}
       onFocusCapture={() => setHovered(true)}
       onBlurCapture={() => setHovered(false)}
+      // Server-rendered slide content can't take a callback, so a button inside
+      // a slide jumps the carousel by carrying data-slide-to="<index>".
+      onClick={(e) => {
+        const to = (e.target as Element).closest<HTMLElement>("[data-slide-to]")?.dataset.slideTo;
+        if (to !== undefined) go(Number(to));
+      }}
     >
       <div
         // `initialHeightClass` is derived from vw, so on a desktop with a
