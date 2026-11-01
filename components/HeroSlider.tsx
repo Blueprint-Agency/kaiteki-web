@@ -31,8 +31,7 @@ export type HeroSlide = {
  *
  *  Motion: changing slide slides the new one in from the side you're heading
  *  to and the old one out the other side (Web Animations, ~600ms). It isn't
- *  gated on reduced motion: it only runs when the visitor (or autoplay, which
- *  is gated) changes slide, and an instant swap reads as a glitch. A horizontal
+ *  gated on reduced motion: an instant swap reads as a glitch. A horizontal
  *  swipe changes slide on touch screens. */
 export function HeroSlider({
   slides,
@@ -51,6 +50,7 @@ export function HeroSlider({
   const [height, setHeight] = useState<number | null>(null);
   const touchStart = useRef<{ x: number; y: number } | null>(null);
   const [hovered, setHovered] = useState(false);
+  const [focused, setFocused] = useState(false);
   const [onScreen, setOnScreen] = useState(true);
   const [tabVisible, setTabVisible] = useState(true);
   const rootRef = useRef<HTMLDivElement>(null);
@@ -144,13 +144,18 @@ export function HeroSlider({
     return () => document.removeEventListener("visibilitychange", onChange);
   }, []);
 
-  /* Autoplay. Skipped entirely under prefers-reduced-motion (docs/06 §3).
-     `active` in the deps is deliberate: picking a dot restarts the full
+  /* Autoplay. Runs under prefers-reduced-motion too: the client wants the
+     banners to rotate for every visitor, and a slide change every 5s isn't the
+     parallax/zoom motion that setting guards against. It pauses while a mouse
+     is over the controls bar or keyboard focus is inside the hero (the WCAG
+     2.2.2 pause). Not on hover of the whole hero: on desktop it fills the
+     screen, so the cursor is nearly always on it. And not after a tap or
+     click: a touch fires an emulated mouseenter with no mouseleave, and a
+     clicked dot keeps focus, and either would stop it for good. `active` in the deps is deliberate: picking a dot restarts the full
      interval rather than cutting the chosen slide short. */
-  const running = count > 1 && !hovered && onScreen && tabVisible;
+  const running = count > 1 && !hovered && !focused && onScreen && tabVisible;
   useEffect(() => {
     if (!running) return;
-    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const id = setInterval(() => go(active + 1, 1), interval);
     return () => clearInterval(id);
   }, [running, interval, active, go]);
@@ -162,10 +167,8 @@ export function HeroSlider({
       role="group"
       aria-roledescription="carousel"
       aria-label="Kaiteki highlights"
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      onFocusCapture={() => setHovered(true)}
-      onBlurCapture={() => setHovered(false)}
+      onFocusCapture={(e) => setFocused(e.target.matches(":focus-visible"))}
+      onBlurCapture={() => setFocused(false)}
     >
       <div
         className={`grid touch-pan-y touch-pinch-zoom overflow-hidden transition-[height] duration-500 ease-out ${initialHeightClass}`}
@@ -207,10 +210,12 @@ export function HeroSlider({
         // Below lg the bar sits under the slide rather than over it: on a phone
         // a banner is only ~225px tall and the bar would cover its bottom row.
         <div className="pointer-events-none z-30 flex justify-center py-3 lg:absolute lg:inset-x-0 lg:bottom-5 lg:py-0">
-          <div className="pointer-events-auto flex items-center gap-2 rounded-full bg-surface/80 px-1.5 py-1 shadow-sm ring-1 ring-espresso/10 backdrop-blur">
-            {/* The carousel's only controls. Prev/next wrap around, so every
-                slide is reachable without autoplay, which reduced-motion
-                visitors never get. */}
+          <div
+            className="pointer-events-auto flex items-center gap-2 rounded-full bg-surface/80 px-1.5 py-1 shadow-sm ring-1 ring-espresso/10 backdrop-blur"
+            onPointerEnter={(e) => setHovered(e.pointerType === "mouse")}
+            onPointerLeave={() => setHovered(false)}
+          >
+            {/* The carousel's only controls. Prev/next wrap around. */}
             <button
               type="button"
               onClick={() => go(active - 1, -1)}
