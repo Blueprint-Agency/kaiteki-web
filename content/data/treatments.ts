@@ -26,7 +26,7 @@ export const treatments: Treatment[] = [
     durationDowntime: "20-40 min · Minimal downtime (1-2 days)",
     name: "Pico Laser",
     category: "Lasers",
-    image: "https://cdn.kaiteki.my/treatments/pico-laser/hero-2.jpg",
+    image: "https://cdn.kaiteki.my/treatments/pico-laser/hero-v3.jpg",
     procedureImages: [
       { src: "https://cdn.kaiteki.my/treatments/pico-laser/procedure-01.jpg", caption: "A practitioner guides the laser handpiece over the patient's cheek during a session at Kaiteki." },
       { src: "https://cdn.kaiteki.my/treatments/pico-laser/procedure-02.jpg", caption: "A practitioner in protective eyewear works the laser handpiece across the patient's face." },
