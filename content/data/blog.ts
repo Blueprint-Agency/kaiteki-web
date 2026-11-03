@@ -485,6 +485,9 @@ const authored: Post[] = [
     description:
       "How to tell ice pick scars from pores and other acne scars, why lasers alone rarely reach them, and what TCA CROSS and punch excision involve on Malaysian skin.",
     category: "Skin Concerns",
+    image: "https://cdn.kaiteki.my/blog/ice-pick-scars/ice-pick-scars-cover.png",
+    imageAlt:
+      "Line illustration of a man holding a hand mirror and touching his cheek, where a small cluster of pinpoint pits is shaded pink",
     author: "dr-jen-meng",
     reviewedBy: "dr-yeong-bin",
     publishedAt: "2026-11-03",
