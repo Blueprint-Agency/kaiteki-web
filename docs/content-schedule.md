@@ -8,6 +8,11 @@ as the tracker's source; docs/15 stays as the record of how the October weeks we
 three languages, English, 中文 and BM, whether or not each language has measured search volume, so
 10 pieces is 30 pages.
 
+> **3 Nov 2026, owner:** blog posts are English only for now; no Chinese or Malay blog versions.
+> Concern, treatment and other page types keep their 中文 and BM versions. The /zh and /ms blog
+> routes are built but held (git stash "blog locale routes"), so kt105–kt110 need a decision on
+> whether they still lead in 中文 or BM.
+
 - **Type** gives the page type and the **primary language**, the one the primary keyword is
   researched in: `Concern · EN`, `Blog · ZH`, `Blog · BM`. The other two languages are versions
   of the same piece, each on its own keyword, never a literal translation.
@@ -61,8 +66,8 @@ recheck in Search Console once live. ⚑ kt103 and kt101 need the client (see th
 
 | ID | Piece | Primary keyword | Type | Slug | Status | Evidence |
 |---|---|---|---|---|---|---|
-| kt101 | Skin tags and moles: why a mole is assessed before removal, and CO2 laser removal | skin tag removal | Concern · EN | /concerns/skin-tags-moles | Not started | 2,900/mo · October item kt3.4, never built + docs/03d §5. 中文 激光点痣 · BM buang tahi lalat laser (docs/19 birthmark.md). ⚑ Needs clinician input; the legacy /blog/skin-tag-removal-malaysia should link to it |
-| kt102 | Ice pick scars: what they are and which treatments reach them | ice pick scars | Blog · EN | /blog/ice-pick-scars | Not started | 880/mo, Clique #2 via a blog post · docs/03d §5 D6. Spoke of /concerns/acne-scars. 中文 冰锥型痘疤 · BM parut jerawat ice pick (docs/19 acne-scars.md) |
+| kt101 | Skin tags and moles: why a mole is assessed before removal, and CO2 laser removal | skin tag removal | Concern · EN | /concerns/skin-tags-moles | In progress | 2,900/mo · October item kt3.4, never built + docs/03d §5. 中文 激光点痣 · BM buang tahi lalat laser (docs/19 birthmark.md). ⚑ Needs clinician input; the legacy /blog/skin-tag-removal-malaysia should link to it. **Parked 3 Nov:** EN draft written (combined page, led by skin tags; one page, not a standalone mole page: EN "mole removal" measures 0 but BM tahi lalat 1,900/mo and the mole check is the safety content). Competitor gap in docs/03e: the assess-first angle is no longer unique; owned gaps are Asian-skin melanoma sites and lookalike routing. Draft held locally (git stash "kt101 skin tags & moles draft"). Resume when: card image chosen (stock or generated), Dr Chew (proposed) signs, client answers docs/03e decision 4 (suspicious-mole route, warts, CO2 device), and owner picks the legacy post route (301, rewrite, or split) |
+| kt102 | Ice pick scars: what they are and which treatments reach them | ice pick scars | Blog · EN | /blog/ice-pick-scars | Built | 880/mo, Clique #2 via a blog post · docs/03d §5 D6. Spoke of /concerns/acne-scars. 中文 冰锥型痘疤 · BM parut jerawat ice pick (docs/19 acne-scars.md). **Built 3 Nov** (branch content/ice-pick-scars), EN only. Angle from a competitor check (Dr Chong #3, Cleo #9, Clique #10 list the same four methods): self-check vs pores, Malaysian skin, scar-by-scar order. TCA CROSS and punch excision framed as "decided at consultation" (owner, 3 Nov); author Dr Jen Meng, reviewer Dr Yeong Bin, both proposed |
 | kt103 | Nose thread lift: how it works, suitability and downtime | nose thread lift | Treatment · EN | /treatments/nose-thread-lift | Not started | No MY volume in docs. 2,589 MY impressions, 0 clicks, not in top 16 · docs/03b T6 + §1.5. ⚑ Thread lift is not in content/data/treatments.ts: client to confirm it is offered and who reviews it |
 | kt104 | Sculptra vs Radiesse: how the two bio-stimulators differ | sculptra vs radiesse | Blog · EN | /blog/sculptra-vs-radiesse | Not started | Comparison demand (autocomplete) · docs/21 sculptra.md. Comparisons earn 3–4.4% CTR vs a 0.1–1% norm · docs/03b T10. 中文 radiesse 和 sculptra |
 | kt105 | Pantang Selepas Laser Muka: Apa yang Perlu Dielakkan (What to avoid after a facial laser treatment) | pantang selepas laser muka | Blog · BM | /blog/after-facial-laser-aftercare | Not started | Autocomplete, no volume; a Malaysian framing with clear demand · docs/18 §6 Q7. 中文 医美恢复期, 激光祛斑多久恢复 (docs/18 §6) |
