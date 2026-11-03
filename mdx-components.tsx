@@ -1,6 +1,7 @@
 import type { MDXComponents } from "mdx/types";
 import Link from "next/link";
-import { AskCta, Figure, Timeline, YouTube } from "@/components/blog/blocks";
+import { AskCta, Figure, ProductImage, Timeline, YouTube } from "@/components/blog/blocks";
+import { Checklist, Note, StageTimeline, Takeaways } from "@/components/blog/visual-blocks";
 
 /**
  * Brand styling for MDX bodies (currently /blog only). @next/mdx looks this file
@@ -94,9 +95,14 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
     // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
     img: (props) => <img {...props} className="mt-7 w-full rounded-2xl" />,
-    // Authoring blocks (components/blog/blocks.tsx): usable in any .mdx body
-    // with no import line. See content/blog/AUTHORING.md.
+    // Authoring blocks (components/blog/blocks.tsx and visual-blocks.tsx):
+    // usable in any .mdx body with no import line. See content/blog/AUTHORING.md.
     Figure,
+    ProductImage,
+    Takeaways,
+    StageTimeline,
+    Note,
+    Checklist,
     AskCta,
     Timeline,
     YouTube,

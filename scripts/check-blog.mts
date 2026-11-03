@@ -255,11 +255,13 @@ for (const p of posts) {
 
   // Raw markdown images bypass next/image; <Figure> is the block for this.
   if (/!\[[^\]]*\]\(/.test(body)) warn(`${at}: markdown image in body, use <Figure> instead`);
-  for (const tag of body.match(/<Figure[^>]*>/g) ?? []) {
-    if (!/\salt="/.test(tag)) err(`${at}: <Figure> without alt text`);
+  // ProductImage (an inline packshot for table cells) follows the same rules.
+  for (const tag of body.match(/<(?:Figure|ProductImage)\b[^>]*>/g) ?? []) {
+    const block = tag.startsWith("<Figure") ? "<Figure>" : "<ProductImage>";
+    if (!/\salt="/.test(tag)) err(`${at}: ${block} without alt text`);
     const src = tag.match(/\ssrc="([^"]*)"/)?.[1];
-    if (!src) err(`${at}: <Figure> without src`);
-    else checkMedia(at, src, `<Figure> src ${src}`);
+    if (!src) err(`${at}: ${block} without src`);
+    else checkMedia(at, src, `${block} src ${src}`);
   }
 
   // Reading time is shown on every card, so a wrong one is a small broken promise.

@@ -217,6 +217,57 @@ Available in any `.mdx` body with no import line (`components/blog/blocks.tsx`):
 - `AskCta` — one mid-article WhatsApp CTA for long posts. At most one; the
   closing CTA is rendered by the page already.
 
+### Visual blocks (`components/blog/visual-blocks.tsx`)
+
+They make a post scannable without putting a single word inside an image:
+every one renders as real HTML (a list, a table, a paragraph), so it counts
+for SEO and answer engines exactly like prose. Reference post:
+`content/blog/sculptra-vs-radiesse.mdx`.
+
+```mdx
+## Key takeaways
+
+<Takeaways
+  items={[
+    { icon: "clock", lead: "Timing is the main difference", body: "One gives some support on the day; the other builds over weeks." },
+    { icon: "lock", lead: "Neither can be dissolved", body: "So careful assessment beforehand matters more." },
+  ]}
+/>
+
+<StageTimeline
+  options={["Option A", "Option B"]}
+  stages={[
+    { stage: "On the day", cells: [{ notice: "little", text: "..." }, { notice: "some", text: "..." }] },
+    { stage: "The months after", cells: [{ notice: "main", text: "..." }, { notice: "main", text: "..." }] },
+  ]}
+  caption="Timing only, not the size of a result. How much change you see, and when, varies between individuals."
+/>
+
+<Note icon="shield" title="Who should not have either" body="..." />
+
+<Checklist items={["A question to ask at consultation.", "Another one."]} />
+
+| | <ProductImage src="https://cdn.kaiteki.my/blog/<slug>/<product>.jpg" alt="..." /> Product A | ... |
+```
+
+- `Takeaways` — the key points as an annotated list (icon, bold lead, a
+  sentence), two columns on wide screens. Keep the `## Key takeaways` heading
+  above it in markdown, so it stays a real H2. Two to six items.
+- `StageTimeline` — two options compared over stages, as a real table.
+  `notice` is `little`, `some` or `main`: **timing, never the size of a
+  result**, and never a figure (house rule, §5). Always keep the caption that
+  says so. Use it only where the copy already says the same thing in words.
+- `Note` — one point the reader must not miss (who should not have it, a
+  safety point). Once or twice a post at most.
+- `Checklist` — things to do or to ask, each with a check mark.
+- `ProductImage` — a small packshot inside a table header cell. Same rules
+  as `Figure`: staged under `content/blog/media/`, `alt` mandatory.
+- Icons, named as strings: `layers`, `clock`, `lock`, `tone`, `shield`,
+  `badge`, `check`, `eye`, `search`, `sparkle`, `sun`, `droplet`.
+- **No charts of outcomes.** A curve of "improvement over time" reads as a
+  results claim under MAB rules even with no numbers on it. Plot real data
+  only (a study's published figures, cited), or use `StageTimeline`.
+
 Everything else the page renders for you from metadata: breadcrumbs, byline and
 reviewer line, hero image, lead answer, table of contents, FAQ accordion,
 related-pages links, author card, medical disclaimer, closing CTA, JSON-LD.

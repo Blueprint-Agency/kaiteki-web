@@ -208,3 +208,44 @@ export function LinkedIn({ className, size = 20 }: IconProps) {
     </svg>
   );
 }
+
+export function Clock({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M12 7.5V12l3 2" />
+    </svg>
+  );
+}
+
+/** Stacked layers: a category, or the skin's depths. */
+export function Layers({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <path d="m12 4 8.5 4.5L12 13 3.5 8.5 12 4Z" />
+      <path d="m3.5 12.5 8.5 4.5 8.5-4.5" />
+      <path d="m3.5 16.5 8.5 4.5 8.5-4.5" />
+    </svg>
+  );
+}
+
+/** Something that cannot be undone once placed. */
+export function Lock({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <rect x="5" y="10.5" width="14" height="10" rx="2" />
+      <path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" />
+      <path d="M12 14.5v2" />
+    </svg>
+  );
+}
+
+/** Skin tone: a circle half shaded. */
+export function Tone({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M12 3.5a8.5 8.5 0 0 1 0 17Z" fill="currentColor" fillOpacity={0.25} />
+    </svg>
+  );
+}
