@@ -517,6 +517,48 @@ const authored: Post[] = [
       },
     ],
   },
+  {
+    // kt104 (docs/content-schedule.md). No Malaysian page ranks for the term
+    // (2026-11-03); the US pages quote durations, which house rules do not.
+    // Facts match the signed /technology/sculptra and /technology/radiesse pages.
+    slug: "sculptra-vs-radiesse",
+    title: "Sculptra vs Radiesse: how the two collagen stimulators differ",
+    seoTitle: "Sculptra vs Radiesse: How They Differ | Kaiteki",
+    description:
+      "Sculptra and Radiesse are both collagen stimulators but differ in material, timing and where they are used. How each works, and why neither can be dissolved.",
+    category: "Device & Injectables",
+    image: "https://cdn.kaiteki.my/blog/sculptra-vs-radiesse/sculptra-vs-radiesse-cover.png",
+    imageAlt:
+      "Line illustration of a woman resting her fingertips on her cheekbone, with the temple, mid-cheek and jawline shaded pink",
+    author: "dr-jamie-gan",
+    reviewedBy: "dr-chin-wei-horng",
+    publishedAt: "2026-11-03",
+    readingMinutes: 5,
+    leadAnswer:
+      "Sculptra and Radiesse both prompt the skin's own collagen, but they behave differently. Sculptra, made of poly-L-lactic acid, works only gradually over a course of sessions. Radiesse, made of calcium hydroxylapatite in a gel, gives some support on the day, then works gradually too. Neither can be dissolved, so a doctor plans either carefully.",
+    concerns: ["face-lifting", "aging"],
+    treatments: ["bio-stimulator", "dermal-fillers"],
+    technology: ["sculptra", "radiesse", "ellanse"],
+    related: ["ellanse-vs-sculptra", "radiesse"],
+    faqs: [
+      {
+        q: "Is Sculptra a filler?",
+        a: "Not in the usual sense. It is a collagen stimulator: it adds little volume on the day and works by prompting your own collagen over time.",
+      },
+      {
+        q: "Which lasts longer, Sculptra or Radiesse?",
+        a: "Both manufacturers publish figures from their own studies, but duration varies between people, because the material is cleared by the body and your tissue keeps ageing. Your doctor will explain what is realistic for you rather than quote a number.",
+      },
+      {
+        q: "Can Sculptra and Radiesse be used together?",
+        a: "Sometimes, in different areas or at different stages of a plan. Whether that makes sense for you is decided at assessment.",
+      },
+      {
+        q: "Are Sculptra and Radiesse suitable for Asian skin?",
+        a: "Both work biologically rather than with light, so skin tone is not the limiting factor it can be with lasers. Suitability depends on your anatomy, the area and your medical history.",
+      },
+    ],
+  },
 ];
 
 /**
