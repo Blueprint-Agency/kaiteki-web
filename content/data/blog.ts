@@ -475,6 +475,45 @@ const authored: Post[] = [
       },
     ],
   },
+  {
+    // kt102 (docs/content-schedule.md). Spoke of /concerns/acne-scars. Competitor
+    // gap 2026-11-03: the self-check (stretch test, side light, pores) and the
+    // Malaysian-skin note are what the ranking Malaysian posts leave out.
+    slug: "ice-pick-scars",
+    title: "Ice pick scars: how to recognise them and which treatments reach them",
+    seoTitle: "Ice Pick Scars: How to Tell & What Reaches Them | Kaiteki",
+    description:
+      "How to tell ice pick scars from pores and other acne scars, why lasers alone rarely reach them, and what TCA CROSS and punch excision involve on Malaysian skin.",
+    category: "Skin Concerns",
+    author: "dr-jen-meng",
+    reviewedBy: "dr-yeong-bin",
+    publishedAt: "2026-11-03",
+    readingMinutes: 6,
+    leadAnswer:
+      "Ice pick scars are narrow, deep acne scars, usually under 2mm wide, that run straight down into the skin. Lasers and microneedling help the skin around them but rarely resolve them alone. The treatments aimed at them work scar by scar, such as TCA CROSS or punch excision, followed by resurfacing.",
+    concerns: ["acne-scars", "acne"],
+    treatments: ["microneedling", "resurfacing-laser"],
+    technology: ["fractional-co2", "potenza"],
+    related: ["best-laser-for-acne-scars", "dermapen-vs-rf-microneedling"],
+    faqs: [
+      {
+        q: "Can ice pick scars be removed completely?",
+        a: "Rarely. They can often be improved, but not erased, and improvement builds over months as collagen remodels.",
+      },
+      {
+        q: "Can pico laser treat ice pick scars?",
+        a: "Pico laser is mainly for the flat marks around scars. It does not reach the depth of an ice pick scar on its own.",
+      },
+      {
+        q: "Do ice pick scars get worse with age?",
+        a: "They can look more noticeable as skin loses volume and firmness, even though the scar itself has not changed.",
+      },
+      {
+        q: "How many TCA CROSS sessions are needed?",
+        a: "It is usually repeated over several sessions a few weeks apart. The number is set after the doctor has examined each scar.",
+      },
+    ],
+  },
 ];
 
 /**
