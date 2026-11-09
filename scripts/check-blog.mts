@@ -20,6 +20,8 @@ import { concernBySlug } from "../content/data/concerns.ts";
 import { treatmentBySlug } from "../content/data/treatments.ts";
 import { technologyBySlug } from "../content/data/technology.ts";
 import { branchBySlug } from "../content/data/branches.ts";
+import { localePosts } from "../content/data/blog-locale.ts";
+import { localePages } from "../content/i18n/pages.ts";
 
 const ROOT = process.cwd();
 const BLOG_DIR = join(ROOT, "content", "blog");
@@ -285,6 +287,42 @@ for (const f of bodies) {
     err(`content/blog/${f}: no entry in content/data/blog.ts, so nothing renders it`);
 }
 
+// ── Chinese and Malay posts (content/data/blog-locale.ts) ──────────────────
+// Each needs its English twin (same slug: hreflang and x-default point there),
+// a body under content/blog/<locale>/, and a ledger entry, without which it
+// never gets a URL. A body with no data entry renders nothing.
+let localeCount = 0;
+for (const locale of ["zh", "ms"] as const) {
+  const dir = join(BLOG_DIR, locale);
+  for (const p of localePosts[locale]) {
+    localeCount++;
+    const at = `${locale}/${p.slug}`;
+    if (!posts.some((e) => e.slug === p.slug))
+      err(`${at}: no English post with this slug in content/data/blog.ts (hreflang needs the twin)`);
+    if (!existsSync(join(dir, `${p.slug}.mdx`))) err(`${at}: body missing at content/blog/${at}.mdx`);
+    if (!localePages[locale][`/blog/${p.slug}`])
+      warn(`${at}: no entry in content/i18n/pages.ts, so it has no URL yet`);
+    if (!doctorBySlug(p.author)) err(`${at}: author "${p.author}" is not a doctor slug`);
+    if (p.description.length < 40) warn(`${at}: description only ${p.description.length} chars`);
+    for (const s of p.concerns ?? []) if (!concernBySlug(s)) err(`${at}: unknown concern "${s}"`);
+    for (const s of p.treatments ?? []) if (!treatmentBySlug(s)) err(`${at}: unknown treatment "${s}"`);
+    for (const s of p.technology ?? []) if (!technologyBySlug(s)) err(`${at}: unknown technology "${s}"`);
+    if (existsSync(join(dir, `${p.slug}.mdx`))) {
+      readFileSync(join(dir, `${p.slug}.mdx`), "utf8")
+        .split(/\r?\n/)
+        .forEach((line, i) => {
+          if (EM_DASH.test(line)) err(`content/blog/${at}.mdx:${i + 1}: em-dash in body`);
+        });
+    }
+  }
+  if (existsSync(dir))
+    for (const f of readdirSync(dir).filter((f) => f.endsWith(".mdx")))
+      if (!localePosts[locale].some((p) => p.slug === f.replace(/\.mdx$/, "")))
+        err(`content/blog/${locale}/${f}: no entry in content/data/blog-locale.ts, so nothing renders it`);
+  if (localePosts[locale].length && !localePages[locale]["/blog"])
+    warn(`${locale}: posts exist but "/blog" has no ledger entry, so the ${locale} hub has no URL`);
+}
+
 const featured = posts.filter((p) => p.featured);
 if (featured.length > 1)
   err(`featured: ${featured.length} posts marked featured, at most one may be`);
@@ -313,6 +351,7 @@ const walk = (dir: string) => {
 // English routes live in the pathless (en) group since the zh/ms root layouts (docs/07 §11).
 walk(join(ROOT, "app", "(en)", "blog"));
 walk(join(ROOT, "components", "blog"));
+for (const l of ["zh", "ms"]) if (existsSync(join(ROOT, "app", l, "blog"))) walk(join(ROOT, "app", l, "blog"));
 
 // ── Report ──────────────────────────────────────────────────────────────────
 if (warnings.length) {
@@ -323,4 +362,4 @@ if (errors.length) {
   console.error("\n  Contract: content/blog/AUTHORING.md");
   process.exit(1);
 }
-console.log(`✓ blog: ${posts.length} post(s) pass the publishing gate`);
+console.log(`✓ blog: ${posts.length} post(s) + ${localeCount} zh/ms post(s) pass the publishing gate`);

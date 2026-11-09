@@ -19,10 +19,13 @@ export interface Heading {
  * table-of-contents link lands nowhere.
  */
 export function headingId(text: string): string {
+  // Unicode letters and digits, not just a-z: github-slugger keeps Chinese and
+  // accented Malay characters, so a /zh or /ms contents link must too. For ASCII
+  // headings this is the same as the old [a-z0-9] class.
   return text
     .toLowerCase()
     .trim()
-    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/[^\p{L}\p{M}\p{N}\s-]/gu, "")
     .replace(/\s+/g, "-");
 }
 
@@ -43,10 +46,10 @@ function plainText(md: string): string {
  * Derived from the file rather than hand-listed in content/data/blog.ts so a
  * heading can never drift out of sync with the article it points at.
  */
-export async function postHeadings(slug: string): Promise<Heading[]> {
+export async function postHeadings(slug: string, locale?: "zh" | "ms"): Promise<Heading[]> {
   let raw: string;
   try {
-    raw = await readFile(path.join(BLOG_DIR, `${slug}.mdx`), "utf8");
+    raw = await readFile(path.join(BLOG_DIR, ...(locale ? [locale] : []), `${slug}.mdx`), "utf8");
   } catch {
     return [];
   }

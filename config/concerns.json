@@ -115,6 +115,17 @@
       "status": "pending"
     },
     {
+      "slug": "skin-tags-moles",
+      "category": "Skin",
+      "archetype": "A",
+      "depth": "lite",
+      "treatments": 1,
+      "technologies": 0,
+      "reviewer": "Dr Chew Yuhhui",
+      "lastReviewed": "2026-11-09",
+      "status": "pending"
+    },
+    {
       "slug": "enlarged-pores",
       "category": "Skin",
       "archetype": "B",

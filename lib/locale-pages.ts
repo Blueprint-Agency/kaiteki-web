@@ -3,6 +3,7 @@
 // page cannot be linked in one place and missing in another.
 
 import { localePages, type LocalePageEntry } from "@/content/i18n/pages";
+import { postBySlug } from "@/content/data/blog";
 import { doctorBySlug } from "@/content/data/doctors";
 import { technologyBySlug } from "@/content/data/technology";
 import { treatmentBySlug } from "@/content/data/treatments";
@@ -29,6 +30,10 @@ function englishReviewer(path: string): string | undefined {
   if (kind === "concerns" && slug) return concernSignoff(slug)?.doctor;
   if (kind === "treatments" && slug) return treatmentBySlug(slug)?.reviewedBy;
   if (kind === "technology" && slug) return technologyBySlug(slug)?.reviewedBy;
+  if (kind === "blog" && slug) {
+    const post = postBySlug(slug);
+    return post ? (post.reviewedBy ?? post.author) || undefined : undefined;
+  }
   return undefined;
 }
 

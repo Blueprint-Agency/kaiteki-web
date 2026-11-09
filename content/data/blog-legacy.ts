@@ -521,25 +521,6 @@ export const legacyPosts: Post[] = [
     "legacyPath": "/fat-freezing-therapy/"
   },
   {
-    "slug": "skin-tag-removal-malaysia",
-    "title": "Skin Tag Removal Malaysia: Everything You Need to Know",
-    "description": "Remove skin tags safely in Malaysia with expert care at Kaiteki Clinic. Fast, effective treatments for smooth, clear skin with minimal downtime.",
-    "category": "Treatments Explained",
-    "tags": [
-      "Minor Surgery",
-      "Lasers",
-      "Skin Bumps"
-    ],
-    "image": "https://cdn.kaiteki.my/blog/skin-tag-removal-malaysia/122.jpg",
-    "imageAlt": "Skin tag removal malaysia",
-    "author": "dr-chew-yuhhui",
-    "publishedAt": "2025-04-28",
-    "updatedAt": "2025-05-06",
-    "readingMinutes": 2,
-    "legacy": true,
-    "legacyPath": "/skin-tag-removal-malaysia/"
-  },
-  {
     "slug": "hydrating-facial",
     "title": "Hydrating Facial Treatment for Glowing, Radiant Skin",
     "seoTitle": "Hydrating Facial Treatment for Glowing, Radiant Skin - Kaiteki Blog | Skin Care | Updates",

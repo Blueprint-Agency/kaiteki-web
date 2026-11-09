@@ -44,6 +44,7 @@ const EXEMPT: Record<string, string> = {
   "treatment:exosome-therapy:technology": "no exosome product page yet; client to name the product",
   "concern:hair-loss:technology": "its one treatment is exosome therapy, which has no product page yet",
   "treatment:laser-hair-removal:concerns": "no unwanted-hair concern page yet",
+  "concern:skin-tags-moles:posts": "its only post was merged into it (301, kt101); no spoke post written yet",
   "technology:alma:concerns": "powers laser hair removal only, which has no concern page yet",
 };
 
