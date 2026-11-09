@@ -33,6 +33,10 @@ export type LocalePageEntry =
 // each page's reviewer, and correct any line they change.
 export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntry>> = {
   zh: {
+    // Blog (kt105, 2026-11-09): drafts until the reviewer signs. The hub is
+    // signed by Dr Chew like the other hubs once its first post is signed.
+    "/blog": { status: "draft", doctor: "dr-chew-yuhhui" },
+    "/blog/after-facial-laser-aftercare": { status: "draft" },
     "/": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/concerns": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/treatments": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
@@ -145,6 +149,10 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/concerns/vascular-lesions": { status: "signed", date: "2026-10-28" },
   },
   ms: {
+    // Blog (kt105, 2026-11-09): drafts until the reviewer signs. The hub is
+    // signed by Dr Chew like the other hubs once its first post is signed.
+    "/blog": { status: "draft", doctor: "dr-chew-yuhhui" },
+    "/blog/after-facial-laser-aftercare": { status: "draft" },
     "/": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/concerns": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/treatments": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },

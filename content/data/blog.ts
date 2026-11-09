@@ -559,6 +559,44 @@ const authored: Post[] = [
       },
     ],
   },
+  {
+    // kt105, English twin of the BM lead piece (pantang selepas laser muka) and
+    // the 中文 version (激光后注意事项); both in content/data/blog-locale.ts.
+    // Sources: Davis & Callender, J Clin Aesthet Dermatol 2010 (PIH in skin of
+    // colour); Mayo Clinic, laser resurfacing; The Star QuickCheck, 6 Mar 2026.
+    slug: "after-facial-laser-aftercare",
+    title: "What to avoid after laser treatment on your face, and which rules are myths",
+    seoTitle: "What to Avoid After Laser Treatment on Your Face | Kaiteki",
+    description:
+      "What to avoid after a facial laser treatment and why: sun, heat, active skincare and picking. Plus the food myths, and the signs that mean call your doctor.",
+    category: "Treatments Explained",
+    author: "dr-say-wei-xian",
+    reviewedBy: "dr-hong-peiyi",
+    publishedAt: "2026-11-09",
+    readingMinutes: 3,
+    leadAnswer:
+      "After a facial laser treatment, the rules that matter are protecting your skin from sun and heat, pausing active skincare such as retinoids and acids, and leaving any fine crusts to fall off on their own. How long depends on the laser used. Avoiding soy sauce or dark foods has no evidence behind it.",
+    concerns: ["pigmentation", "melasma"],
+    treatments: ["pico-laser", "resurfacing-laser"],
+    faqs: [
+      {
+        q: "Can I eat soy sauce after a facial laser?",
+        a: "Yes. There is no evidence that soy sauce or other dark-coloured food darkens skin after laser.",
+      },
+      {
+        q: "How long should I wear sunscreen after laser?",
+        a: "Every day, and keep going after the skin has healed, because sun is the main reason pigment comes back.",
+      },
+      {
+        q: "When can I wear makeup again after laser?",
+        a: "Once redness settles and the skin is intact. Your doctor will tell you for your own treatment.",
+      },
+      {
+        q: "Can I exercise after a facial laser?",
+        a: "Light activity is usually fine. Avoid hard workouts and heat for the period your doctor specifies.",
+      },
+    ],
+  },
 ];
 
 /**
