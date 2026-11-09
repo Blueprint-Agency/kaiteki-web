@@ -1,0 +1,246 @@
+{
+  "slug": "skin-tags-moles",
+  "name": "Skin Tag & Tahi Lalat",
+  "group": "Skin",
+  "image": "https://cdn.kaiteki.my/concerns/skin-tags-moles/card.jpg",
+  "summary": "Skin tag biasanya boleh dibuang pada hari yang sama; tahi lalat diperiksa dahulu.",
+  "leadAnswer": "Skin tag ialah ketumbuhan kecil, lembut dan tidak berbahaya yang tergantung pada kulit, dan biasanya boleh dibuang dalam satu prosedur ringkas seperti laser CO2. Tahi lalat berbeza: doktor memeriksanya dahulu, kerana tahi lalat yang kelihatan luar biasa perlu dibuang dengan cara yang membolehkan tisunya diuji, atau dirujuk, bukan dilaser begitu sahaja.",
+  "treatments": [
+    "resurfacing-laser"
+  ],
+  "reviewedBy": "dr-chew-yuhhui",
+  "lastReviewed": "2026-11-09",
+  "seoTitle": "Buang Skin Tag & Tahi Lalat di Malaysia | Kaiteki",
+  "seoDescription": "Skin tag tidak berbahaya dan cepat dibuang; tahi lalat diperiksa dahulu supaya tiada yang perlu diuji dilaser begitu sahaja. Tempah konsultasi percuma di Kaiteki.",
+  "facts": [
+    {
+      "value": "Skin tag tidak berbahaya",
+      "label": "Ia dibuang kerana selesa atau penampilan, bukan kerana ia akan menjadi kanser."
+    },
+    {
+      "value": "Tahi lalat diperiksa dahulu",
+      "label": "Doktor melihat setiap tahi lalat sebelum memutuskan sama ada, dan bagaimana, ia dibuang."
+    },
+    {
+      "value": "Kaedah ikut diagnosis",
+      "label": "Laser sesuai untuk skin tag atau tahi lalat yang disahkan tidak berbahaya; apa-apa yang tidak pasti dibuang supaya boleh diuji."
+    }
+  ],
+  "jumpNav": [
+    {
+      "id": "which-type",
+      "label": "Skin tag, tahi lalat atau lain?"
+    },
+    {
+      "id": "where",
+      "label": "Bahagian yang perlu diperiksa"
+    },
+    {
+      "id": "treatments",
+      "label": "Cara membuang"
+    },
+    {
+      "id": "first-visit",
+      "label": "Lawatan pertama"
+    },
+    {
+      "id": "risks",
+      "label": "Risiko"
+    },
+    {
+      "id": "cost",
+      "label": "Kos"
+    },
+    {
+      "id": "faq",
+      "label": "Soalan lazim"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Apakah skin tag dan tahi lalat?",
+      "body": [
+        "Skin tag (akrokordon) ialah lipatan kecil kulit normal yang lembut, bersambung pada kulit melalui tangkai halus. Ia biasanya sewarna kulit atau sedikit lebih gelap, tidak sakit, dan tumbuh di tempat kulit bergeser dengan kulit atau pakaian. Ramai orang memanggil skin tag di leher sebagai \"ketuat leher\", tetapi ketuat sebenar ialah keadaan yang berbeza.",
+        "Tahi lalat (nevus) ialah sekumpulan sel pigmen. Ia boleh rata atau timbul, berwarna perang, hitam atau sewarna kulit, dan kebanyakan orang mempunyai beberapa. Hampir semuanya tidak berbahaya, tetapi sebilangan kecil berubah dari masa ke masa, sebab itu tahi lalat diperiksa sebelum apa-apa dilakukan."
+      ]
+    }
+  ],
+  "drivers": {
+    "heading": "Kenapa skin tag tumbuh",
+    "intro": "Selalunya lebih daripada satu sebab:",
+    "items": [
+      {
+        "lead": "Geseran:",
+        "body": "kulit bergeser dengan kulit, kolar, tali coli atau barang kemas, sebab itu leher, ketiak dan celah paha ialah tempat yang biasa."
+      },
+      {
+        "lead": "Rintangan insulin dan berat badan:",
+        "body": "skin tag yang banyak dikaitkan dengan rintangan insulin, diabetes jenis 2 dan berat badan berlebihan. Jika banyak skin tag muncul dalam masa singkat, beritahu doktor anda."
+      },
+      {
+        "lead": "Perubahan hormon:",
+        "body": "skin tag sering muncul atau membesar semasa hamil."
+      },
+      {
+        "lead": "Umur dan keturunan:",
+        "body": "ia lebih biasa dari usia pertengahan, dan cenderung berlaku dalam keluarga."
+      }
+    ]
+  },
+  "variant": {
+    "kind": "tabs",
+    "heading": "Skin tag, tahi lalat atau sesuatu yang lain?",
+    "intro": "Apa ketumbuhan itu menentukan sama ada ia boleh dibuang terus, dan bagaimana. Doktor mengesahkannya sebelum apa-apa dibuang.",
+    "tabs": [
+      {
+        "label": "Skin tag",
+        "sub": "Lembut, bertangkai",
+        "title": "Skin tag",
+        "body": "Lembut, sewarna kulit atau perang muda, tergantung pada tangkai halus dan bergerak apabila disentuh. Skin tag tidak menjadi kanser.",
+        "routing": "dibuang dalam prosedur ringkas, biasanya laser CO2, selepas doktor mengesahkan ia skin tag."
+      },
+      {
+        "label": "Tahi lalat",
+        "sub": "Bintik pigmen",
+        "title": "Tahi lalat",
+        "body": "Bintik rata atau timbul yang terdiri daripada sel pigmen. Tahi lalat yang baru tumbuh semasa dewasa, berubah, bentuk atau warnanya tidak sekata, gatal atau berdarah perlu diperiksa dengan teliti dahulu.",
+        "routing": "diperiksa dahulu. Tahi lalat yang doktor yakin tidak berbahaya boleh dilaser; yang tidak pasti dibuang supaya tisunya boleh diuji di makmal, atau anda dirujuk."
+      },
+      {
+        "label": "Lain-lain",
+        "sub": "Yang serupa",
+        "title": "Sesuatu yang lain",
+        "body": "Keratosis seborea (ketumbuhan perang kasar yang seperti melekat), ketuat, milia, sista dan sesetengah kanser kulit boleh disangka skin tag atau tahi lalat. Ketumbuhan di sekitar kemaluan atau dubur selalunya ketuat atau keadaan lain, bukan skin tag.",
+        "routing": "diagnosis sebelum apa-apa dibuang. Sesetengahnya memerlukan rawatan perubatan atau rujukan, bukan pembuangan kosmetik."
+      }
+    ]
+  },
+  "locationBlock": {
+    "heading": "Bahagian yang perlu diperiksa, dan kenapa kulit Asia berbeza",
+    "intro": "Skin tag suka tumbuh di lipatan kulit. Melanoma, kanser kulit yang paling serius, jarang berlaku pada kulit Asia, tetapi apabila ia berlaku, ia lebih kerap muncul di tempat yang orang jarang periksa.",
+    "cards": [
+      {
+        "title": "Leher, ketiak, kelopak mata dan celah paha",
+        "body": "Tempat biasa skin tag, di mana kulit berlipat dan bergeser."
+      },
+      {
+        "title": "Tapak tangan, tapak kaki dan bawah kuku",
+        "body": "Dalam populasi Asia, jenis melanoma yang paling biasa (melanoma lentiginous akral) muncul di tapak tangan, tapak kaki dan bawah kuku. Tompok gelap yang baru atau berubah di situ, atau garis gelap memanjang pada kuku, perlu diperiksa, bukan dibuang."
+      },
+      {
+        "title": "Muka dan badan",
+        "body": "Kebanyakan tahi lalat di muka dan badan tidak berbahaya, tetapi muka juga tempat kesan pembuangan paling ketara, jadi kaedahnya penting."
+      }
+    ],
+    "note": {
+      "title": "Di sekitar kemaluan atau dubur?",
+      "body": "Ketumbuhan di situ mungkin kelihatan seperti skin tag tetapi sebenarnya ketuat atau keadaan lain yang memerlukan rawatan perubatan. Jumpa doktor atau klinik kesihatan untuk diagnosis dahulu."
+    }
+  },
+  "seeDoctor": {
+    "intro": "Dapatkan pemeriksaan segera jika:",
+    "triggers": [
+      "Tahi lalat baru tumbuh semasa dewasa, atau sedang berubah saiz, bentuk atau warna.",
+      "Tahi lalat tidak simetri, tepinya tidak sekata, mempunyai beberapa warna, atau lebih besar daripada kira-kira 6 mm.",
+      "Sesuatu bintik gatal, berdarah, berkerak atau tidak sembuh.",
+      "Tompok gelap baru muncul di tapak tangan atau tapak kaki, atau garis gelap muncul pada kuku.",
+      "Banyak skin tag muncul dalam masa singkat."
+    ]
+  },
+  "ctaMid": {
+    "heading": "Tidak pasti apa itu?",
+    "body": "Hantar gambar kepada kami di WhatsApp dan doktor boleh memberitahu sama ada ia kelihatan seperti skin tag, tahi lalat atau sesuatu yang perlu diperiksa secara bersemuka."
+  },
+  "treatmentsIntro": "Pembuangan dipertimbangkan selepas doktor mengesahkan apa ketumbuhan itu.",
+  "treatmentWhy": {
+    "resurfacing-laser": {
+      "why": "Untuk skin tag dan tahi lalat yang disahkan tidak berbahaya",
+      "body": "Laser CO2 mengewapkan ketumbuhan lapis demi lapis dengan sedikit pendarahan. Kaedah lain termasuk pembekuan (krioterapi), elektrokauteri dan gunting atau potong keluar. Laser tidak meninggalkan apa-apa untuk diuji, sebab itu tahi lalat yang perlu diuji dipotong keluar."
+    }
+  },
+  "treatmentsNote": "Pembuangan bukan pengganti diagnosis. Jika doktor tidak pasti apa ketumbuhan itu, ia tidak dilaser.",
+  "firstVisit": {
+    "intro": "Lawatan ini menentukan apa ketumbuhan itu sebelum menentukan cara membuangnya.",
+    "steps": [
+      {
+        "title": "Sejarah",
+        "body": "Berapa lama ia ada, sama ada ia berubah, dan sejarah kanser kulit anda atau keluarga."
+      },
+      {
+        "title": "Pemeriksaan",
+        "body": "Doktor memeriksa ketumbuhan itu, kadangkala di bawah pembesaran dengan dermatoskop."
+      },
+      {
+        "title": "Pelan",
+        "body": "Pembuangan, pemantauan, ujian atau rujukan, dengan pilihan, risiko dan penjagaan selepas rawatan diterangkan, tanpa kewajipan untuk meneruskan."
+      }
+    ]
+  },
+  "risks": {
+    "items": [
+      {
+        "lead": "Kesan kecil di tempat itu",
+        "body": "Setiap pembuangan meninggalkan kesan kecil semasa sembuh, biasanya bintik merah jambu atau berkerak. Sesetengahnya pudar dengan masa, dan sesetengahnya meninggalkan bintik lebih cerah atau sedikit lekuk."
+      },
+      {
+        "lead": "Kulit menjadi gelap pada kulit Malaysia",
+        "body": "Kulit sederhana hingga gelap lebih mudah menjadi gelap sementara (hiperpigmentasi pasca-keradangan) di tempat itu. Perlindungan matahari semasa sembuh mengurangkan risiko."
+      },
+      {
+        "lead": "Parut timbul di sesetengah tempat",
+        "body": "Dada, bahu dan belakang atas lebih mudah mendapat parut timbul (hipertrofik atau keloid), terutamanya jika anda pernah mendapat keloid. Beritahu doktor anda."
+      },
+      {
+        "lead": "Apa yang pembuangan tidak dapat lakukan",
+        "body": "Membuang skin tag tidak menghalang skin tag baru tumbuh, dan tahi lalat kadangkala boleh tumbuh semula daripada sel yang tinggal jauh di dalam kulit. Tahi lalat yang dilaser tidak meninggalkan tisu untuk diuji."
+      }
+    ],
+    "disclose": "Beritahu doktor anda jika anda mempunyai sejarah keloid atau kanser kulit, mengambil ubat pencair darah atau ubat lain, menghidap diabetes, sedang hamil, atau baru terdedah kepada matahari."
+  },
+  "costFactors": {
+    "intro": "Harga ditetapkan selepas pemeriksaan. Ia bergantung pada:",
+    "factors": [
+      "Berapa banyak ketumbuhan dibuang, dan saiznya.",
+      "Lokasinya: muka dan kelopak mata memerlukan lebih penjagaan.",
+      "Sama ada ketumbuhan dilaser, atau dipotong keluar dan dihantar untuk ujian makmal."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Bolehkah skin tag menjadi kanser?",
+      "a": "Tidak. Skin tag tidak berbahaya dan tidak menjadi kanser. Doktor memeriksa dahulu kerana sesetengah ketumbuhan yang kelihatan seperti skin tag sebenarnya sesuatu yang lain."
+    },
+    {
+      "q": "Adakah tahi lalat yang dibuang dihantar ke makmal?",
+      "a": "Jika doktor ragu-ragu tentang sesuatu tahi lalat, ia dibuang dengan cara yang mengekalkan tisunya supaya boleh diperiksa di makmal (histopatologi), atau anda dirujuk kepada pakar dermatologi. Tahi lalat yang dilaser tidak boleh diuji, jadi laser hanya digunakan apabila doktor yakin ia tidak berbahaya. Doktor akan memberitahu anda yang mana satu sebelum apa-apa dilakukan."
+    },
+    {
+      "q": "Bolehkah saya buang skin tag sendiri di rumah, atau dengan krim?",
+      "a": "Tidak digalakkan. Mengikat, menggunting atau membakar skin tag sendiri berisiko berdarah, jangkitan dan parut, dan krim pembuang boleh membakar kulit di sekelilingnya. Risiko yang lebih besar ialah membuang sesuatu yang sebenarnya bukan skin tag."
+    },
+    {
+      "q": "Adakah buang skin tag atau tahi lalat meninggalkan parut?",
+      "a": "Setiap pembuangan meninggalkan kesan kecil semasa sembuh. Ketumbuhan kecil dan cetek selalunya sembuh dengan kesan yang sedikit; tahi lalat yang lebih dalam, tempat yang mudah keloid dan kulit yang lebih gelap lebih berkemungkinan meninggalkan kesan yang ketara. Doktor akan menerangkan untuk ketumbuhan anda."
+    },
+    {
+      "q": "Adakah skin tag tanda diabetes?",
+      "a": "Ia boleh dikaitkan dengan rintangan insulin dan diabetes jenis 2, terutamanya apabila jumlahnya banyak. Mempunyai skin tag tidak bermakna anda menghidap diabetes, tetapi jika banyak yang muncul, doktor mungkin mencadangkan anda memeriksa paras gula darah."
+    },
+    {
+      "q": "Adakah skin tag atau tahi lalat tumbuh semula selepas dibuang?",
+      "a": "Skin tag yang dibuang biasanya tidak tumbuh semula di tempat yang sama, tetapi yang baru boleh tumbuh berdekatan. Tahi lalat kadangkala tumbuh semula jika sel pigmen masih ada jauh di dalam kulit, dan tahi lalat yang tumbuh semula perlu ditunjukkan kepada doktor."
+    }
+  ],
+  "relatedConcerns": [
+    {
+      "slug": "birthmark",
+      "reason": "Tanda berpigmen sejak lahir, yang dinilai secara berbeza daripada tahi lalat."
+    },
+    {
+      "slug": "pigmentation",
+      "reason": "Tompok perang rata dan bintik matahari, yang sering disangka tahi lalat."
+    }
+  ],
+  "ctaHeading": "Ketahui apa ketumbuhan anda",
+  "ctaAssesses": "skin tag atau tahi lalat anda"
+}
