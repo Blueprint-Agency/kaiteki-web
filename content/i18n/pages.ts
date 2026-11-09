@@ -37,6 +37,11 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     // signed by Dr Chew like the other hubs once its first post is signed.
     "/blog": { status: "draft", doctor: "dr-chew-yuhhui" },
     "/blog/after-facial-laser-aftercare": { status: "draft" },
+    "/blog/melasma-vs-pigmentation": { status: "draft" },
+    "/blog/darkening-after-laser": { status: "draft" },
+    "/blog/nasolabial-folds": { status: "draft" },
+    "/blog/fat-freezing-aftercare": { status: "draft" },
+    "/blog/skin-booster-vs-microneedling": { status: "draft" },
     "/": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/concerns": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/treatments": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
@@ -153,6 +158,11 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     // signed by Dr Chew like the other hubs once its first post is signed.
     "/blog": { status: "draft", doctor: "dr-chew-yuhhui" },
     "/blog/after-facial-laser-aftercare": { status: "draft" },
+    "/blog/melasma-vs-pigmentation": { status: "draft" },
+    "/blog/darkening-after-laser": { status: "draft" },
+    "/blog/nasolabial-folds": { status: "draft" },
+    "/blog/fat-freezing-aftercare": { status: "draft" },
+    "/blog/skin-booster-vs-microneedling": { status: "draft" },
     "/": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/concerns": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/treatments": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
