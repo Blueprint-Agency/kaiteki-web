@@ -149,6 +149,8 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/concerns/fine-lines-wrinkles": { status: "signed", date: "2026-10-28" },
     "/concerns/hair-loss": { status: "signed", date: "2026-10-28" },
     "/concerns/melasma": { status: "signed", date: "2026-10-28" },
+    // kt101 (2026-11-09): Dr Chew signed the English; translations await the same read.
+    "/concerns/skin-tags-moles": { status: "draft" },
     "/concerns/pigmentation": { status: "signed", date: "2026-10-28" },
     "/concerns/tattoo-removal": { status: "signed", date: "2026-10-28" },
     "/concerns/vascular-lesions": { status: "signed", date: "2026-10-28" },
@@ -270,6 +272,8 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/concerns/fine-lines-wrinkles": { status: "signed", date: "2026-10-28" },
     "/concerns/hair-loss": { status: "signed", date: "2026-10-28" },
     "/concerns/melasma": { status: "signed", date: "2026-10-28" },
+    // kt101 (2026-11-09): Dr Chew signed the English; translations await the same read.
+    "/concerns/skin-tags-moles": { status: "draft" },
     "/concerns/pigmentation": { status: "signed", date: "2026-10-28" },
     "/concerns/tattoo-removal": { status: "signed", date: "2026-10-28" },
     "/concerns/vascular-lesions": { status: "signed", date: "2026-10-28" },
