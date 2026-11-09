@@ -596,6 +596,227 @@ const authored: Post[] = [
         a: "Light activity is usually fine. Avoid hard workouts and heat for the period your doctor specifies.",
       },
     ],
+  },  {
+    // kt106 · Melasma vs pigmentation. BM lead "jeragat vs pigmentasi" (head term
+    // jeragat 5,400/mo; docs/03d §3, docs/19 melasma.md); 中文 黄褐斑 vs 色斑 /
+    // 黄褐斑和晒斑的区别 (docs/18 §5.1, docs/19 melasma.md); EN "melasma vs
+    // pigmentation". EN links to melasma-treatment-malaysia-causes-skincare rather
+    // than repeating its treatment plan (no cannibalisation).
+    // Sources: Ogbechie-Godec & Elbuluk, "Melasma: an Up-to-Date Comprehensive
+    // Review", Dermatology and Therapy 2017 (PMC5574745); Davis & Callender, J Clin
+    // Aesthet Dermatol 2010 (PIH in skin of colour); AAD, Melasma overview.
+    // Author dr-lim-xiao-chien, reviewer dr-jacqueline-tan (both proposed).
+    slug: "melasma-vs-pigmentation",
+    title: "Melasma vs pigmentation: how to tell them apart, and why it matters",
+    seoTitle: "Melasma vs Pigmentation: How to Tell Them Apart | Kaiteki",
+    description: "Melasma, sun spots and post-inflammatory marks look alike but behave differently. How to tell melasma from other pigmentation, and why it matters before laser.",
+    category: "Skin Concerns",
+    author: "dr-lim-xiao-chien",
+    reviewedBy: "dr-jacqueline-tan",
+    publishedAt: "2026-11-09",
+    readingMinutes: 4,
+    leadAnswer: "Melasma is one type of pigmentation. It forms soft-edged, symmetrical patches on both cheeks, the upper lip or forehead, and shifts with sun, heat and hormones. Sun spots are discrete, sharp-edged spots from years of sun, and post-inflammatory marks follow acne or irritation. Each is managed differently, so a doctor confirms the type first.",
+    concerns: ["melasma", "pigmentation", "acne"],
+    treatments: ["pico-laser"],
+    related: ["melasma-treatment-malaysia-causes-skincare", "after-facial-laser-aftercare"],
+    faqs: [
+      {
+        q: "Is melasma the same as pigmentation?",
+        a: "Melasma is one kind of pigmentation. Pigmentation also includes sun spots, freckles and the marks left after acne or irritation.",
+      },
+      {
+        q: "How can I tell if I have melasma or sun spots?",
+        a: "Melasma tends to form matching, soft-edged patches on both cheeks or above the lip. Sun spots are separate, sharp-edged spots. A doctor can confirm which you have, sometimes under magnification.",
+      },
+      {
+        q: "Can laser make melasma worse?",
+        a: "It can, if the wrong device or settings are used. This is why melasma is identified before any laser and treated conservatively.",
+      },
+      {
+        q: "Does post-acne pigmentation go away on its own?",
+        a: "It often fades over months once the acne has settled, especially with daily sun protection. Darker skin tones can take longer.",
+      },
+    ],
+  },
+  {
+    // kt107 · darkening after laser (docs/content-schedule.md). 中文 lead on
+    // 激光反黑怎么办 (also 打斑后反黑; docs/18 §6 Q4, docs/19 acne.md, pigmentation.md),
+    // BM on "kulit gelap selepas laser" (laser kulit gelap), EN twin on "darkening
+    // after laser treatment". Autocomplete demand only, no measured volume.
+    // Distinct from kt105 (aftercare/prevention): this is what to do once darkening
+    // has appeared. Links to kt105 in each language.
+    // Sources: Davis & Callender, J Clin Aesthet Dermatol 2010 (PIH in skin of
+    // colour); Mar et al., J Cutan Med Surg 2024;28(5):473-480 (systematic review:
+    // partial, inconsistent responses; laser sometimes worsened PIH); Medscape,
+    // Postinflammatory Hyperpigmentation (clearing often takes months); NPRA
+    // cancellations of cosmetic notifications for mercury/hydroquinone/tretinoin.
+    // Bodies: content/blog/darkening-after-laser.mdx, content/blog/zh/…, content/blog/ms/….
+    slug: "darkening-after-laser",
+    title: "Darkening after laser treatment: why it happens on Asian skin and what to do",
+    seoTitle: "Darkening After Laser Treatment: What to Do | Kaiteki",
+    description: "Skin turning darker after a laser is usually post-inflammatory hyperpigmentation. Why it happens on Asian skin, how to tell it from melasma, and what to do now.",
+    category: "Skin Concerns",
+    author: "dr-chloe-wan",
+    reviewedBy: "dr-teresa-tan",
+    publishedAt: "2026-11-09",
+    readingMinutes: 3,
+    leadAnswer: "Darkening after a laser is usually post-inflammatory hyperpigmentation, the skin's response to inflammation, and it is more common in Asian and deeper skin tones. Strict daily sun protection and a gentle routine come first, then doctor-guided treatment. It usually fades over months, and another strong laser too soon can make it worse.",
+    concerns: ["pigmentation", "melasma"],
+    treatments: ["pico-laser"],
+    related: ["after-facial-laser-aftercare"],
+    faqs: [
+      {
+        q: "Is darkening after laser permanent?",
+        a: "Usually not. Post-inflammatory darkening tends to lighten over months with sun protection and care, though how long it takes varies and some marks need treatment.",
+      },
+      {
+        q: "Should I have another laser to clear the darkening?",
+        a: "Not straight away. More heat can deepen it. A doctor may consider low-energy laser later, once the skin has calmed and only if topical care is not enough.",
+      },
+      {
+        q: "Can I use a whitening cream on laser darkening?",
+        a: "Only one your doctor recommends. Unregistered lightening creams can contain mercury, hydroquinone or tretinoin, which can irritate skin and make darkening worse.",
+      },
+      {
+        q: "How do I know if it is melasma rather than laser darkening?",
+        a: "Melasma forms symmetrical patches on both cheeks, forehead or upper lip, while post-laser darkening follows the treated area. A doctor examines the skin to tell them apart.",
+      },
+    ],
+  },
+  {
+    // kt108 · Nasolabial folds. 中文 lead: 法令纹怎么消除 (docs/18 §5.1, docs/19
+    // fine-lines-wrinkles.md); BM: cara hilangkan garis senyuman; EN: nasolabial
+    // folds treatment. Spoke of /concerns/fine-lines-wrinkles.
+    // Bodies: content/blog/nasolabial-folds.mdx, content/blog/zh/…, content/blog/ms/….
+    // Sources: Rohrich & Pessa, Plast Reconstr Surg 2007;119:2219 (facial fat
+    // compartments; nasolabial fat a discrete unit); Beleznay et al., Dermatol Surg
+    // 2015 (blindness from fillers: nasolabial fold 13.3% of reported sites).
+    // Facts agree with the signed dermal-fillers, bio-stimulator, hifu, ultherapy and
+    // radiofrequency pages and the fine-lines-wrinkles concern page ("support placed
+    // above the fold"). Author dr-yvonne-chuah, reviewer dr-lucas-chew, both proposed.
+    slug: "nasolabial-folds",
+    title: "Nasolabial folds: why they deepen and the non-surgical options a doctor considers",
+    seoTitle: "Nasolabial Folds Treatment: Causes & Options | Kaiteki",
+    description: "Why nasolabial folds deepen, how a doctor finds the cause, and which non-surgical options are considered for each, with the filler risks in this area.",
+    category: "Skin Concerns",
+    author: "dr-yvonne-chuah",
+    reviewedBy: "dr-lucas-chew",
+    publishedAt: "2026-11-09",
+    readingMinutes: 4,
+    leadAnswer: "Nasolabial folds are a normal crease where the cheek meets the lip, so treatment can soften a deepened fold but not remove it. The cause decides the plan: lost cheek volume, descended tissue or loose skin. Options include fillers, bio-stimulators and energy-based lifting, and filler here carries a recognised vascular risk.",
+    concerns: ["fine-lines-wrinkles", "face-lifting"],
+    treatments: ["dermal-fillers", "bio-stimulator", "hifu", "ultherapy", "radiofrequency"],
+    technology: ["sculptra", "radiesse"],
+    related: ["sculptra-vs-radiesse"],
+    faqs: [
+      {
+        q: "Can nasolabial folds be removed completely?",
+        a: "No. The fold is normal anatomy where the cheek meets the lip. Treatment aims to soften a fold that has deepened, and a face with no fold at all would not look natural.",
+      },
+      {
+        q: "Is filler injected straight into the nasolabial fold?",
+        a: "Not always. When the fold has deepened because the cheek above it has lost volume, support is often placed in the cheek rather than in the line. The doctor decides after assessing the whole mid-face.",
+      },
+      {
+        q: "Is filler in the nasolabial area safe?",
+        a: "It is a recognised higher-risk area because blood vessels run close to the fold. Serious complications are rare, but it should only be done by a doctor trained in facial anatomy and in managing complications.",
+      },
+      {
+        q: "Can HIFU or radiofrequency treat nasolabial folds?",
+        a: "They are used for skin laxity, which is one cause of a deeper fold. They do not replace lost volume, so whether they suit you depends on what is behind your fold.",
+      },
+    ],
+  },
+  {
+    // kt109 · fat-freezing-aftercare. 中文 lead: 冷冻溶脂后注意事项 (autocomplete also
+    // 冷冻溶脂后遗症, gl=my hl=zh-CN, 2026-11-09). EN twin: "fat freezing side effects"
+    // (strong autocomplete). BM: unmapped, no Malay autocomplete for aftercare or side
+    // effects; written on "rawatan fat freezing" / "bekukan lemak" (both thin autocomplete).
+    // Sources: Jalian et al., JAMA Dermatology 2014 (PAH first described; sensation loss
+    // up to ~8 weeks); 2025 systematic review, Aesthetic Surgery Journal Open Forum
+    // (28 studies, ~13,078 patients, pooled PAH ~0.22% / 1 in 455, low certainty);
+    // Keaney, Gudas & Alster, Dermatologic Surgery 2015 (delayed-onset pain).
+    // Aftercare kept to the signed /treatments/fat-freezing page (loose clothing or
+    // compression garment, stable weight, review ~2 months) and "your doctor's instructions".
+    // Author Dr Calvin Tan, reviewer Dr Tim Chua, both proposed.
+    slug: "fat-freezing-aftercare",
+    title: "Fat freezing aftercare: what is normal, what helps and when to call your doctor",
+    seoTitle: "Fat Freezing Side Effects & Aftercare | Kaiteki",
+    description: "What is normal after fat freezing, from redness and numbness to delayed pain, what helps, the rare paradoxical fat growth, and when to call your doctor.",
+    category: "Treatments Explained",
+    author: "dr-calvin-tan",
+    reviewedBy: "dr-tim-chua",
+    publishedAt: "2026-11-09",
+    readingMinutes: 4,
+    leadAnswer: "After fat freezing, redness, firmness, swelling, tingling and numbness in the treated area are expected and usually ease over hours to a few weeks. Numbness can last longer. A rare delayed effect, paradoxical adipose hyperplasia, makes the area firmer and larger instead, and needs a doctor's assessment.",
+    concerns: ["body-slimming"],
+    treatments: ["fat-freezing"],
+    technology: ["coolsculpting", "cooltech"],
+    related: ["after-facial-laser-aftercare"],
+    faqs: [
+      {
+        q: "How long does numbness last after fat freezing?",
+        a: "Reduced sensation in the treated area is common and can take some weeks to return to normal. Tell your doctor if it is still there at your review.",
+      },
+      {
+        q: "Is it normal for pain to start a few days after fat freezing?",
+        a: "Some people notice a deeper ache or tingling a few days later, and it usually settles on its own. Let the clinic know so your doctor can advise you.",
+      },
+      {
+        q: "Do I need to avoid any food after fat freezing?",
+        a: "No. Keep to your usual diet and activity and aim for a stable weight.",
+      },
+      {
+        q: "What is paradoxical adipose hyperplasia?",
+        a: "A rare delayed effect in which the treated fat becomes firmer and larger instead of reducing. It does not go away on its own, so see your doctor if you notice it.",
+      },
+    ],
+  },
+  {
+    // kt110 · 水光针和微针的区别 (中文 lead, docs/18 §6 Q9; autocomplete hl=zh-CN gl=my
+    // "水光针和微针" → "水光针和微针的区别", no volume). BM: "skin booster vs
+    // microneedling" (autocomplete hl=ms gl=my) plus the dermapen framing from
+    // "lebih bagus skin booster atau dermapen"; no measured volume. EN twin:
+    // "skin booster vs microneedling".
+    // Sources: Rho N-K et al., "Injectable 'Skin Boosters' in Aging Skin
+    // Rejuvenation: A Current Overview", Archives of Plastic Surgery 2024;51(6):528
+    // (PMID 39544509); "Radiofrequency and Radiofrequency Microneedling in Skin of
+    // Color: A Review of Usage, Safety, and Efficacy", Dermatologic Surgery 2023
+    // (PMID 36826381). Facts match the signed /treatments/skin-booster and
+    // /treatments/microneedling pages (durationDowntime, afterSession, avoidIf).
+    // Author Dr Jeremy Low, reviewer Dr Chang Chee Seong, both proposed.
+    slug: "skin-booster-vs-microneedling",
+    title: "Skin booster vs microneedling: how they differ and which suits your skin",
+    seoTitle: "Skin Booster vs Microneedling: How They Differ | Kaiteki",
+    description: "Skin booster vs microneedling: one injects a hydrating or regenerative material, the other uses RF energy. How each works, recovery, and who should avoid them.",
+    category: "Treatments Explained",
+    author: "dr-jeremy-low",
+    reviewedBy: "dr-chang-chee-seong",
+    publishedAt: "2026-11-09",
+    readingMinutes: 5,
+    leadAnswer: "A skin booster injects a material, such as hyaluronic acid or polynucleotide, into the skin to support hydration and skin quality. RF microneedling uses fine needles to deliver radiofrequency energy that prompts the skin's own renewal, and is more often considered for scarring, texture and pores. Your concern decides which, if either, suits.",
+    concerns: ["acne-scars", "enlarged-pores", "aging"],
+    treatments: ["skin-booster", "microneedling"],
+    technology: ["profhilo", "rejuran", "juvelook", "potenza", "sylfirm-x"],
+    related: ["after-facial-laser-aftercare"],
+    faqs: [
+      {
+        q: "Should I choose a skin booster or microneedling for acne scars?",
+        a: "It depends on the scar. Depressed acne scarring is more often a reason to consider RF microneedling, while skin boosters are mainly considered for hydration and skin quality. A doctor assesses the scar type first.",
+      },
+      {
+        q: "Can I have a skin booster and microneedling together?",
+        a: "Sometimes both are part of one plan, usually on separate visits, with the order and spacing set by your doctor.",
+      },
+      {
+        q: "Which has more downtime, a skin booster or RF microneedling?",
+        a: "Our pages list 1 to 2 days for a skin booster and 2 to 3 days for RF microneedling. It varies with the product, the device settings and your skin.",
+      },
+      {
+        q: "Is dermapen the same as RF microneedling?",
+        a: "No. A dermapen is plain microneedling with needles only. RF microneedling also delivers radiofrequency energy through the needles at a set depth.",
+      },
+    ],
   },
 ];
 
