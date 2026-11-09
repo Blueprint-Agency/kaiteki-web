@@ -33,15 +33,15 @@ export type LocalePageEntry =
 // each page's reviewer, and correct any line they change.
 export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntry>> = {
   zh: {
-    // Blog (kt105, 2026-11-09): drafts until the reviewer signs. The hub is
-    // signed by Dr Chew like the other hubs once its first post is signed.
-    "/blog": { status: "draft", doctor: "dr-chew-yuhhui" },
-    "/blog/after-facial-laser-aftercare": { status: "draft" },
-    "/blog/melasma-vs-pigmentation": { status: "draft" },
-    "/blog/darkening-after-laser": { status: "draft" },
-    "/blog/nasolabial-folds": { status: "draft" },
-    "/blog/fat-freezing-aftercare": { status: "draft" },
-    "/blog/skin-booster-vs-microneedling": { status: "draft" },
+    // Blog (kt105-kt110): each post signed by its reviewer, the hub by Dr Chew
+    // like the other hubs, all reported read by the owner on 2026-11-10.
+    "/blog": { status: "signed", date: "2026-11-10", doctor: "dr-chew-yuhhui" },
+    "/blog/after-facial-laser-aftercare": { status: "signed", date: "2026-11-10" },
+    "/blog/melasma-vs-pigmentation": { status: "signed", date: "2026-11-10" },
+    "/blog/darkening-after-laser": { status: "signed", date: "2026-11-10" },
+    "/blog/nasolabial-folds": { status: "signed", date: "2026-11-10" },
+    "/blog/fat-freezing-aftercare": { status: "signed", date: "2026-11-10" },
+    "/blog/skin-booster-vs-microneedling": { status: "signed", date: "2026-11-10" },
     "/": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/concerns": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/treatments": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
@@ -156,15 +156,15 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/concerns/vascular-lesions": { status: "signed", date: "2026-10-28" },
   },
   ms: {
-    // Blog (kt105, 2026-11-09): drafts until the reviewer signs. The hub is
-    // signed by Dr Chew like the other hubs once its first post is signed.
-    "/blog": { status: "draft", doctor: "dr-chew-yuhhui" },
-    "/blog/after-facial-laser-aftercare": { status: "draft" },
-    "/blog/melasma-vs-pigmentation": { status: "draft" },
-    "/blog/darkening-after-laser": { status: "draft" },
-    "/blog/nasolabial-folds": { status: "draft" },
-    "/blog/fat-freezing-aftercare": { status: "draft" },
-    "/blog/skin-booster-vs-microneedling": { status: "draft" },
+    // Blog (kt105-kt110): each post signed by its reviewer, the hub by Dr Chew
+    // like the other hubs, all reported read by the owner on 2026-11-10.
+    "/blog": { status: "signed", date: "2026-11-10", doctor: "dr-chew-yuhhui" },
+    "/blog/after-facial-laser-aftercare": { status: "signed", date: "2026-11-10" },
+    "/blog/melasma-vs-pigmentation": { status: "signed", date: "2026-11-10" },
+    "/blog/darkening-after-laser": { status: "signed", date: "2026-11-10" },
+    "/blog/nasolabial-folds": { status: "signed", date: "2026-11-10" },
+    "/blog/fat-freezing-aftercare": { status: "signed", date: "2026-11-10" },
+    "/blog/skin-booster-vs-microneedling": { status: "signed", date: "2026-11-10" },
     "/": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/concerns": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/treatments": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
