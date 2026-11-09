@@ -1189,6 +1189,15 @@
       "manual": true
     },
     {
+      "source": "concerns/skin-tags-moles/card.jpg",
+      "key": "concerns/skin-tags-moles/card.jpg",
+      "concern": "skin-tags-moles",
+      "family": "card",
+      "width": 1440,
+      "height": 900,
+      "manual": true
+    },
+    {
       "source": "concerns/tattoo-removal/card-2.jpg",
       "key": "concerns/tattoo-removal/card-2.jpg",
       "concern": "tattoo-removal",

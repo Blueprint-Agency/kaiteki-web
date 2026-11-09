@@ -10,6 +10,8 @@ export const MOVED = {
   "alma-titanium-lifting-is-this-non-surgical-facelift-worth-it": "/blog/alma-titanium-lifting",
   "discovery-pico-vs-picosure": "/blog/picocare-vs-picosure",
   "wegovy-vs-mounjaro-which-is-better-for-you": "/blog/wegovy-vs-mounjaro",
+  // Consolidated into the concern page, not a post (kt101, 2026-11-09).
+  "skin-tag-removal-malaysia": "/concerns/skin-tags-moles",
 };
 
 /** Old slugs that posts still link to. WordPress 301s the first three; the rest

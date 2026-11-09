@@ -1504,6 +1504,283 @@ export const concerns: Concern[] = [
     ctaAssesses: "your pigmentation",
   },
 
+  // kt101 (docs/content-schedule.md), rebuilt 2026-11-09 from docs/03e after the
+  // 3 Nov draft stash was lost. One combined page, led by skin tags (EN "skin tag
+  // removal" 2,900/mo; EN "mole removal" measures 0, but the mole check is the
+  // safety content and BM tahi lalat is 1,900/mo). Differentiators (docs/03e §8b):
+  // where melanoma appears on Asian skin, and lookalikes routed away from a
+  // cosmetic removal. Worded to be true whichever way the client answers docs/03e
+  // decision 4: suspicious moles are "tested or referred", warts are not offered,
+  // and the device is named only as the resurfacing CO2 laser the clinic lists.
+  // Not in config/concern-signoff.json: renders "Awaiting medical review" until
+  // Dr Chew (proposed) signs. No prices (R-03), no healing timeline (decision 6).
+  {
+    slug: "skin-tags-moles",
+    name: "Skin Tags & Moles",
+    group: "Skin",
+    image: "https://cdn.kaiteki.my/concerns/skin-tags-moles/card.jpg",
+    summary:
+      "A skin tag can usually be removed the same day; a mole is examined first.",
+    leadAnswer:
+      "Skin tags are small, soft, harmless growths that hang from the skin, and they can usually be removed in a single short procedure such as CO2 laser. Moles are different: a doctor examines a mole before it is removed, because a mole that looks unusual should be removed in a way that lets the tissue be tested, or referred, rather than vaporised by laser.",
+    treatments: ["resurfacing-laser"],
+    reviewedBy: "dr-chew-yuhhui",
+    lastReviewed: "2026-11-09",
+    seoTitle: "Skin Tag & Mole Removal in Malaysia | Kaiteki",
+    seoDescription:
+      "Skin tags are harmless and quick to remove; moles are examined first, so nothing that needs testing is lasered away. Book a free consultation at Kaiteki.",
+
+    // ── 01 · no banner yet: the card image is an AI-generated illustrative
+    // photograph (Higgsfield), not a patient and not a result.
+
+    // ── 02 · process facts, no time-to-result (R-01).
+    facts: [
+      {
+        value: "Skin tags are harmless",
+        label: "They are removed for comfort or appearance, not because they turn into cancer.",
+      },
+      {
+        value: "Moles are examined first",
+        label: "A doctor looks at every mole before deciding whether, and how, it is removed.",
+      },
+      {
+        value: "Method follows the diagnosis",
+        label: "Laser suits a confirmed skin tag or harmless mole; anything uncertain is removed so it can be tested.",
+      },
+    ],
+
+    jumpNav: [
+      { id: "which-type", label: "Tag, mole or something else?" },
+      { id: "where", label: "Where to check" },
+      { id: "treatments", label: "Removal" },
+      { id: "first-visit", label: "Your first visit" },
+      { id: "risks", label: "Risks" },
+      { id: "cost", label: "Cost" },
+      { id: "faq", label: "FAQ" },
+    ],
+
+    sections: [
+      {
+        heading: "What are skin tags and moles?",
+        body: [
+          "A skin tag (acrochordon) is a small, soft flap of normal skin attached by a thin stalk. Tags are usually skin-coloured or slightly darker, painless, and appear where skin rubs against skin or clothing.",
+          "A mole (naevus) is a cluster of pigment cells. Moles can be flat or raised, brown, black or skin-coloured, and most people have several. Almost all are harmless, but a small number change over time, and that is why a mole is examined before anything is done to it.",
+        ],
+      },
+    ],
+
+    // ── 04 · archetype A: what makes skin tags more likely.
+    drivers: {
+      heading: "Why skin tags appear",
+      intro: "Often more than one of these:",
+      items: [
+        {
+          lead: "Friction:",
+          body: "skin rubbing against skin, collars, bra straps or jewellery, which is why the neck, underarms and groin are common sites.",
+        },
+        {
+          lead: "Insulin resistance and weight:",
+          body: "multiple skin tags are associated with insulin resistance, type 2 diabetes and higher body weight. Many skin tags appearing over a short time is worth mentioning to your doctor.",
+        },
+        {
+          lead: "Hormonal change:",
+          body: "tags often appear or grow during pregnancy.",
+        },
+        {
+          lead: "Age and family history:",
+          body: "they become more common from middle age, and tend to run in families.",
+        },
+      ],
+    },
+
+    // ── 05 · the differentiator: route by what the growth is, before method.
+    variant: {
+      kind: "tabs",
+      heading: "Is it a skin tag, a mole or something else?",
+      intro:
+        "What the growth is decides whether it can be removed straight away, and how. A doctor confirms which it is before any removal.",
+      tabs: [
+        {
+          label: "Skin tag",
+          sub: "Soft, on a stalk",
+          title: "Skin tag",
+          body: "Soft, skin-coloured or light brown, hangs from a narrow stalk and moves when touched. Skin tags do not become cancerous.",
+          routing:
+            "removal in a short procedure, usually CO2 laser, once the doctor has confirmed it is a skin tag.",
+        },
+        {
+          label: "Mole",
+          sub: "A pigment spot",
+          title: "Mole",
+          body: "A flat or raised spot made of pigment cells. A mole that is new in adulthood, changing, irregular in shape or colour, itchy or bleeding needs a closer look before anything else.",
+          routing:
+            "examination first. A mole the doctor is satisfied is harmless may be lasered; one that is uncertain is removed so the tissue can be tested in a laboratory, or you are referred.",
+        },
+        {
+          label: "Something else",
+          sub: "Lookalikes",
+          title: "Something else",
+          body: "Seborrhoeic keratoses (rough, stuck-on brown growths), warts, milia, cysts and some skin cancers can all be mistaken for a tag or a mole. Growths around the genitals or anus are often warts or another condition, not skin tags.",
+          routing:
+            "diagnosis before anything is removed. Some lookalikes need medical treatment or a referral rather than a cosmetic removal.",
+        },
+      ],
+    },
+
+    // ── 06 · where to check: the Asian-skin melanoma sites (owned, docs/03e).
+    locationBlock: {
+      heading: "Where to check, and why it differs on Asian skin",
+      intro:
+        "Skin tags favour folds. Melanoma, the most serious skin cancer, is rare in Asian skin, but when it does occur it is more often in places people do not think to look.",
+      cards: [
+        {
+          title: "Neck, underarms, eyelids and groin",
+          body: "The usual places for skin tags, where skin folds and rubs.",
+        },
+        {
+          title: "Palms, soles and under the nails",
+          body: "In Asian populations, the most common type of melanoma (acral lentiginous melanoma) appears on the palms, the soles of the feet and under the nails. A new or changing dark patch there, or a dark streak along a nail, should be examined rather than removed.",
+        },
+        {
+          title: "Face and body",
+          body: "Most moles on the face and trunk are harmless, but the face is also where removal leaves the most visible mark, so the method matters.",
+        },
+      ],
+      note: {
+        title: "Around the genitals or anus?",
+        body: "A growth there may look like a skin tag but be a wart or another condition that needs medical care. See a doctor or GP for a diagnosis first.",
+      },
+    },
+
+    // ── 07
+    seeDoctor: {
+      intro: "Have a growth examined promptly if:",
+      triggers: [
+        "A mole is new in adulthood, or is changing in size, shape or colour.",
+        "A mole is asymmetrical, has an irregular border, several colours, or is larger than about 6 mm.",
+        "A spot itches, bleeds, crusts or will not heal.",
+        "A new dark patch appears on a palm or sole, or a dark streak appears along a nail.",
+        "Many skin tags have appeared over a short time.",
+      ],
+    },
+
+    // ── 08
+    ctaMid: {
+      heading: "Not sure what it is?",
+      body: "Send us a photo on WhatsApp and a doctor can tell you whether it looks like a skin tag, a mole or something that should be examined in person.",
+    },
+
+    // ── 09 · "why for X" line unique across all concern pages (R-04, Q-03).
+    treatmentsIntro:
+      "Removal is considered once the doctor has confirmed what the growth is.",
+    treatmentWhy: {
+      "resurfacing-laser": {
+        why: "For confirmed skin tags and harmless moles",
+        body: "A CO2 laser vaporises the growth layer by layer with little bleeding. Other methods include freezing (cryotherapy), electrocautery and snipping or cutting out. Laser leaves nothing to test, which is why a mole that needs testing is cut out instead.",
+      },
+    },
+    treatmentsNote:
+      "Removal is never a substitute for diagnosis. If the doctor is not sure what a growth is, it is not lasered.",
+
+    // ── 12
+    firstVisit: {
+      intro:
+        "The visit decides what the growth is before it decides how to remove it.",
+      steps: [
+        {
+          title: "History",
+          body: "How long it has been there, whether it has changed, and any personal or family history of skin cancer.",
+        },
+        {
+          title: "Examination",
+          body: "The doctor examines the growth, sometimes under magnification with a dermatoscope.",
+        },
+        {
+          title: "Plan",
+          body: "Removal, monitoring, testing or referral, with the options, risks and aftercare explained and no obligation to proceed.",
+        },
+      ],
+    },
+
+    // ── 13 · R-05: what treatment cannot do, and pigment change on Malaysian skin.
+    risks: {
+      items: [
+        {
+          lead: "A mark at the site",
+          body: "Any removal leaves a small mark while it heals, usually a pink or crusted spot. Some marks fade fully and some leave a small lighter or depressed spot.",
+        },
+        {
+          lead: "Darkening on Malaysian skin",
+          body: "Medium and deeper skin tones carry a higher chance of temporary darkening (post-inflammatory hyperpigmentation) at the site. Sun protection while it heals reduces the risk.",
+        },
+        {
+          lead: "Raised scars at some sites",
+          body: "The chest, shoulders and upper back are more prone to raised (hypertrophic or keloid) scarring, particularly if you have had keloids before. Tell your doctor.",
+        },
+        {
+          lead: "What removal cannot do",
+          body: "Removing a skin tag does not stop new ones forming, and a mole can occasionally regrow from cells left deep in the skin. Laser removal of a mole leaves no tissue to test.",
+        },
+      ],
+      disclose:
+        "Tell your doctor if you have a history of keloids or skin cancer, take blood thinners or any other medication, have diabetes, are pregnant, or have had recent sun exposure.",
+    },
+
+    // ── 14 · factors only, no figures (R-03).
+    costFactors: {
+      intro: "Pricing is set after the examination. It depends on:",
+      factors: [
+        "How many growths are removed, and their size.",
+        "Where they are: the face and eyelids need more care.",
+        "Whether a growth is lasered, or cut out and sent for laboratory testing.",
+      ],
+    },
+
+    // ── 16 · six questions (lite depth).
+    faqs: [
+      {
+        q: "Can a skin tag turn into cancer?",
+        a: "No. Skin tags are benign and do not become cancerous. The reason a doctor looks first is that some growths that look like skin tags are something else.",
+      },
+      {
+        q: "Is a removed mole sent to a laboratory?",
+        a: "If the doctor has any doubt about a mole, it is removed in a way that keeps the tissue, so it can be examined in a laboratory (histopathology), or you are referred to a dermatologist. A mole that is lasered cannot be tested, so laser is used only when the doctor is satisfied it is harmless. Your doctor tells you which applies before anything is done.",
+      },
+      {
+        q: "Can I remove a skin tag at home, or with a cream?",
+        a: "It is not advised. Tying off, cutting or burning a tag at home risks bleeding, infection and scarring, and removal creams can burn the surrounding skin. The bigger risk is removing something that was never a skin tag.",
+      },
+      {
+        q: "Will skin tag or mole removal leave a scar?",
+        a: "Any removal leaves a small mark while it heals. Small, superficial growths often heal with little to see; deeper moles, sites prone to keloids, and deeper skin tones carry a higher chance of a visible mark. Your doctor explains what to expect for your growth.",
+      },
+      {
+        q: "Are skin tags a sign of diabetes?",
+        a: "They can be associated with insulin resistance and type 2 diabetes, especially when there are many. Having skin tags does not mean you have diabetes, but if many have appeared, your doctor may suggest checking your blood sugar.",
+      },
+      {
+        q: "Will a skin tag or mole come back after removal?",
+        a: "A removed skin tag does not usually come back, but new ones can form nearby. A mole can occasionally regrow if pigment cells remain deep in the skin, and a mole that regrows should be shown to a doctor.",
+      },
+    ],
+
+    // ── 17
+    relatedConcerns: [
+      {
+        slug: "birthmark",
+        reason: "Pigmented marks present from birth, which are assessed differently from moles.",
+      },
+      {
+        slug: "pigmentation",
+        reason: "Flat brown spots and sun spots, which are often mistaken for moles.",
+      },
+    ],
+
+    // ── 18
+    ctaHeading: "Find out what your growth is",
+    ctaAssesses: "your skin tag or mole",
+  },
+
   {
     slug: "enlarged-pores",
     ctaHeading: "Want to know what is making yours visible?",

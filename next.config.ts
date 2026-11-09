@@ -63,6 +63,9 @@ const nextConfig: NextConfig = {
       // Post renamed 2026-09-07: the comparison now covers Picocare, not Discovery Pico
       // (a device we do not offer). The slug is the URL, so the old one keeps its 301.
       { source: "/blog/discovery-pico-vs-picosure", destination: "/blog/picocare-vs-picosure", statusCode: 301 },
+      // kt101 (2026-11-09): the thin legacy skin tag post (ranked #3) consolidated
+      // into the signed concern page, so the two stop competing (docs/03e decision 5).
+      { source: "/blog/skin-tag-removal-malaysia", destination: "/concerns/skin-tags-moles", statusCode: 301 },
       // Page 1 of a blog listing is its base URL; never a second copy of it.
       { source: "/blog/page/1", destination: "/blog", statusCode: 301 },
       { source: "/blog/category/:slug/page/1", destination: "/blog/category/:slug", statusCode: 301 },
