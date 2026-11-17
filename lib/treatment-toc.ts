@@ -100,7 +100,7 @@ export function treatmentToc(
     !!t.procedureImages?.length && h("in-the-treatment-room", L.roomHeading),
     !!t.afterSession && h("after-a-session", L.afterHeading),
     !!t.risks && h("risks", n(L.risksHeading)),
-    !!t.costFactors && h("sessions-cost", L.costHeading),
+    !!t.costFactors && h("sessions-cost", t.costFactors.heading ?? L.costHeading),
     !!t.manufacturerImages?.length && h("manufacturer", L.manufacturerHeading),
     !!t.areas?.length && h("treatment-areas", L.areasHeading),
     !!t.comparisons?.length && h("comparisons", n(L.comparisonsHeading)),

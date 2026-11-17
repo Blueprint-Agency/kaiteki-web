@@ -133,8 +133,10 @@ export interface Treatment {
     cannotDo: string[];
     disclose: string;
   };
-  /** T-13 cost factors. Factors only — no figures, no ranges, no "from RM". */
-  costFactors?: { intro: string; factors: string[]; outro?: string };
+  /** T-13 cost factors. Factors only — no figures, no ranges, no "from RM".
+   *  `heading` replaces the shared "What affects the number of sessions, and
+   *  the cost" where a page has a price query worth naming in its H2 (kt112). */
+  costFactors?: { heading?: string; intro: string; factors: string[]; outro?: string };
   /** T-14 manufacturer images (Full only). Labelled in four places or omitted
    *  entirely — never shipped half-labelled (rule R-07). */
   manufacturerImages?: { src: string; alt: string; caption: string }[];
@@ -440,6 +442,10 @@ export interface Branch {
   parking?: string;
   /** 1–2 sentence branch-specific intro (unique per branch; beats a templated line). */
   gettingHere?: string;
+  /** Optional branch-specific section under "Find us": its own H2 and a few
+   *  paragraphs, for a branch whose page needs local copy beyond the template
+   *  (kt115). Facts already in this file only, nothing inferred. */
+  about?: { heading: string; body: string[] };
   /** Geo coordinates — enable schema `geo` + map pack. Client data (docs/05 §9);
    *  left undefined until verified so no wrong coordinates ship. */
   lat?: number;

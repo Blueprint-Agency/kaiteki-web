@@ -19,6 +19,7 @@
 //              (content/i18n/<kind>/_en/); pnpm i18n:sync <kind> re-aligns by text
 // And over content/i18n/locations.ts: L-02 to L-05 and L-06 as above, plus
 //   L-11 fail  a branch with a ledger entry but no copy in that file
+//   (L-01 also fails a branch whose English has `about` and whose copy lacks it)
 
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
@@ -212,6 +213,10 @@ for (const locale of LOCALES) {
     checkCopy(`locations/${locale}/${b.slug}`, locale, c);
     checkSeo(`locations/${locale}/${b.slug}`, locale, c);
     if (c.hours.length !== b.hours.length) warn(`locations/${locale}/${b.slug}`, "L-06", `hours: ${c.hours.length} lines vs ${b.hours.length} in English`);
+    // The page shows the locale's `about` or nothing, so a missing one would
+    // silently drop the English section from the translated page.
+    if (b.about && !c.about) fail(`locations/${locale}/${b.slug}`, "L-01", "English has an `about` section; this branch copy does not");
+    if (b.about && c.about && c.about.body.length !== b.about.body.length) warn(`locations/${locale}/${b.slug}`, "L-06", `about: ${c.about.body.length} paragraphs vs ${b.about.body.length} in English`);
   }
   console.log(`locations/${locale}: hub + ${Object.keys(branchCopy[locale]).length} branch(es) checked`);
 }

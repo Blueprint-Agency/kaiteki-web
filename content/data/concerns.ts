@@ -2499,9 +2499,14 @@ export const concerns: Concern[] = [
     ],
     reviewedBy: "dr-lim-xiao-chien",
     lastReviewed: "2026-06-14",
-    seoTitle: "Dark Eye Circle Treatment Assessment in Malaysia | Kaiteki",
+    // kt113 (Nov 2026): the page already ranks at positions 2-7 for every head
+    // query (GSC, Aug-Nov, MY) and loses the click, CTR 0.1-0.8%. A ranking fix
+    // would be wasted, so the title drops "Assessment" for the searcher's own
+    // words and the description leads with the two mirror checks, the one thing
+    // on this page a searcher cannot get from the AI answer above it.
+    seoTitle: "Dark Eye Circles Treatment in Malaysia: Which Type? | Kaiteki",
     seoDescription:
-      "Dark eye circles can be pigment, vascular or structural in cause. A doctor assesses yours before recommending treatment. Book a free consultation with Kaiteki.",
+      "Pigment, blood vessels or a shadow? Two mirror checks show which dark circles you have and which treatment suits each. Free consultation with a Kaiteki doctor.",
     // ── 01 · Pexels (pexels.com/photo/24428508), skin close-up faded into the
     // page on the right; uploaded by hand (`manual` in config/concern-media.json).
     banner: {
@@ -2540,8 +2545,11 @@ export const concerns: Concern[] = [
     sections: [
       {
         heading: "What are dark eye circles?",
+        // kt113: one sentence became a snippet-length answer, restated from this
+        // page's facts, causes and FAQ. No new claim.
         body: [
           "Dark circles are not a single condition.",
+          "Under-eye skin is the thinnest on the body, so whatever lies beneath it shows through more readily than anywhere else on the face. The same darkness can come from pigment in the skin, from vessels below it, or from a shadow cast by the contour of the lid and cheek. Tiredness makes each of these more visible, but it is rarely the cause on its own.",
         ],
       },
     ],
@@ -4239,9 +4247,12 @@ export const concerns: Concern[] = [
     treatments: ["exosome-therapy"],
     reviewedBy: "dr-tim-chua",
     lastReviewed: "2026-06-06",
-    seoTitle: "Hair Loss Treatment & Assessment in Malaysia | Kaiteki",
+    // kt114 (Nov 2026): Malaysian searchers say "hair fall" ("hair fall treatment
+    // malaysia", 159 MY impressions at pos 20.7, GSC Aug-Nov), a phrase the page
+    // never used.
+    seoTitle: "Hair Loss & Hair Fall Treatment in Malaysia | Kaiteki",
     seoDescription:
-      "Hair loss has several patterns and causes, and a doctor identifies yours before any treatment. Book a free hair loss consultation with Kaiteki today.",
+      "Hair fall, thinning or patches? A doctor finds the cause first, with blood tests where needed, before any treatment. Book a free hair loss consultation at Kaiteki.",
     // ── 01 · Pexels (pexels.com/photo/9755382), mirrored and faded into the
     // page on the right; uploaded by hand (`manual` in config/concern-media.json).
     banner: {
@@ -4283,6 +4294,8 @@ export const concerns: Concern[] = [
         heading: "What counts as hair loss?",
         body: [
           "Each follicle moves through a repeating cycle: an active growing phase lasting years, a short transitional phase, and a resting phase after which the hair sheds and the follicle can begin again. Hair loss becomes a concern when the balance shifts, and the reason it has shifted matters more than the shedding itself.",
+          // kt114: the searcher's word, restated from this page's facts and FAQ.
+          "In Malaysia it is often called hair fall. Losing some hair every day is normal; what is worth having checked is more shedding than is usual for you, sustained over weeks, a parting or hairline that looks different from a year or two ago, or a patch where hair has gone.",
         ],
       },
     ],

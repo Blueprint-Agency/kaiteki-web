@@ -200,8 +200,10 @@ export const treatments: Treatment[] = [
     },
 
     // T-13 — factors only, no figures (R-03). A list so it can become a price
-    // table later without a rebuild.
+    // table later without a rebuild. The heading names the price query
+    // ("pico laser price malaysia", 110/mo, docs/03d §6) without giving a price.
     costFactors: {
+      heading: "Pico laser price in Malaysia: what affects it",
       intro:
         "Kaiteki does not quote prices online; the figure you get at consultation reflects your assessed plan. What moves it:",
       factors: [
@@ -227,9 +229,12 @@ export const treatments: Treatment[] = [
     reviewedBy: "dr-chew-yuhhui",
     lastReviewed: "2026-06-20",
     // Title drops "Tattoo" so /concerns/tattoo-removal owns tattoo queries (OV-00c).
-    seoTitle: "Pico Laser Treatment Malaysia | Pigmentation | Kaiteki",
+    // kt112 (Nov 2026): "pico laser for pigmentation" sits at pos 2.7 with 825 MY
+    // impressions and a 0.12% CTR, and "dark spot removal laser malaysia" at 17.9,
+    // so the title leads with the pigment intent the page already ranks for.
+    seoTitle: "Pico Laser Malaysia for Pigmentation & Dark Spots | Kaiteki",
     seoDescription:
-      "Pico laser at Kaiteki uses picosecond pulses for pigmentation, uneven tone and tattoo ink. A doctor assesses which device and settings suit your skin.",
+      "Pico laser for pigmentation, dark spots and uneven tone at Kaiteki: which device suits your skin, sessions, downtime, risks and what affects the price.",
     sections: [
       {
         // T-04 — para 2 is what earns the snippet / AI-answer citation.
@@ -251,14 +256,27 @@ export const treatments: Treatment[] = [
     // T-16 — 10 at Full depth, 40–55 words each, no restating a block above. Required mix: device
     // comparison, pain, session count, post-session timeline, expectations,
     // local skin tones, cost-without-a-price, then practical.
+    // kt112 (Nov 2026): four added to reach the Full-depth ten, filling the
+    // device, interval, recurrence and skin-tone slots the mix asked for. Every
+    // fact is restated from the signed PicoSure and Fotona PQX pages or from
+    // this page's own risks block: no new claim, no figure. Goes to Dr Chew
+    // Yuhhui in the offline review round, so `lastReviewed` is unchanged.
     faqs: [
       {
+        q: "Is Pico laser the same as PicoSure?",
+        a: "No. PicoSure is one pico laser, a 755nm device made by Cynosure. “Pico” describes the pulse length, so other devices count too, such as Fotona PQX at 1064nm and 532nm. Kaiteki uses both, and the doctor chooses the wavelength that suits your pigment and skin tone.",
+      },
+      {
         q: "Does Pico laser hurt?",
-        a: "Picosecond pulses are generally reported as more tolerable than older longer-pulse lasers, and settings can be adjusted during the session.",
+        a: "Most people describe brief snapping or hot-pinprick sensations rather than continuous pain, and picosecond pulses are generally reported as more tolerable than older longer-pulse lasers. Topical numbing can be applied for sensitive areas or tattoo work, and settings can be adjusted during the session.",
       },
       {
         q: "How many sessions will I need?",
         a: "Surface sun spots generally need fewer sessions than dermal pigment or a dense tattoo. Facial pigment is commonly planned as several sessions a few weeks apart.",
+      },
+      {
+        q: "How long should I wait between Pico laser sessions?",
+        a: "Facial pigment sessions are commonly spaced a few weeks apart, so the skin has time to clear the pigment fragments broken up at the last visit. Tattoo sessions are usually spaced further apart to allow full healing. Your doctor sets the interval for your skin and reviews it at each visit.",
       },
       {
         q: "Will I see a difference after one session?",
@@ -269,12 +287,20 @@ export const treatments: Treatment[] = [
         a: "Sometimes, with caution. Over-aggressive treatment can worsen melasma, so it is usually managed as an ongoing plan of sun protection, topical care and conservative in-clinic settings. A doctor decides whether any laser suits your melasma at all.",
       },
       {
+        q: "Is Pico laser safe for Malaysian skin tones?",
+        a: "Pico lasers are used across a wide range of skin tones, but no setting is free of risk. Skin with more melanin is more prone to darkening after treatment, so a doctor may choose a 1064nm wavelength, lower energy, longer intervals or a test patch first. Recently tanned skin is usually treated later.",
+      },
+      {
+        q: "Will the pigment come back after Pico laser?",
+        a: "It depends on the pigment. Without daily sun protection, new sun spots can form where old ones cleared, and melasma is a long-term condition that fluctuates with sun, hormones and skincare. That is why sunscreen and, for some people, maintenance sessions are part of a realistic plan.",
+      },
+      {
         q: "How much does Pico laser cost in Malaysia?",
-        a: "Kaiteki does not quote prices online. Pricing is given at consultation for your assessed plan.",
+        a: "Kaiteki does not quote prices online. The figure is given at consultation for your assessed plan, and it depends on the type and depth of the pigment, the size of the area, the device and settings chosen, and whether pico work is combined with other treatments.",
       },
       {
         q: "Can I wear makeup or go back to work afterwards?",
-        a: "Makeup can go back on once redness settles, over intact skin only and never over crusting.",
+        a: "Most people go back to their day straight away. Makeup can go back on once redness settles, over intact skin only and never over crusting, and the treated area needs daily sunscreen and real sun avoidance until your doctor says otherwise.",
       },
     ],
   },
@@ -3190,8 +3216,10 @@ export const treatments: Treatment[] = [
     reviewedBy: "dr-lucas-chew",
     lastReviewed: "2026-07-13",
     seoTitle: "Laser Hair Removal Malaysia | IPL & RF Treatment | Kaiteki",
+    // kt111 (Nov 2026): names what searchers compare (IPL, skin tone, sessions)
+    // rather than restating the title.
     seoDescription:
-      "Laser hair removal in Malaysia using IPL and radiofrequency over a course of sessions. Book a free consultation with a Kaiteki doctor to assess suitability.",
+      "Laser hair removal in Malaysia on the Alma IPL and radiofrequency platform: who it suits, why it takes a course, shaving between visits and what affects cost.",
     // docs/15 item 3.6 (2026-10-11): the v2 block set, applied under docs/16 R1.
     // Two prose sections kept; the rest became typed blocks and were deleted.
     // Block copy is restructured from reviewed text only: this page, the Alma page,
@@ -3224,15 +3252,28 @@ export const treatments: Treatment[] = [
     bringToConsult:
       "Hormonal causes of excess hair may need investigating alongside treatment.",
 
-    // T-10 — step 1 states the first visit is not a treatment.
+    // T-10 — step 1 states the first visit is not a treatment. kt111 (Nov 2026):
+    // two steps became the template's five, restated from the signed Alma page.
     sessionSteps: [
       {
         title: "Consultation and assessment",
         body: "Your first visit is a consultation, not a treatment. The treatment area, hair type and skin tone are assessed, and a test area may be considered first.",
       },
       {
+        title: "Shave beforehand",
+        body: "You will usually be asked to shave shortly before the appointment rather than wax or pluck, so the hair above the skin is short while the follicle below stays intact.",
+      },
+      {
+        title: "Preparation",
+        body: "The area is cleansed, gel is applied where required and eye protection is fitted.",
+      },
+      {
         title: "The treatment",
-        body: "The area is cleansed and the cooled applicator is moved over it in repeated passes, building warmth gradually.",
+        body: "The cooled applicator is moved over the area in repeated passes, building warmth gradually. Most people describe spreading warmth rather than the snap of a stamping device. A small area such as the underarms may take only a few minutes; full legs or a back take considerably longer.",
+      },
+      {
+        title: "Afterwards",
+        body: "Sun protection on exposed areas, and for the first day no heat such as hot baths, saunas or vigorous exercise, and no deodorant or fragranced products on freshly treated skin.",
       },
     ],
 
@@ -3297,6 +3338,9 @@ export const treatments: Treatment[] = [
         body: [
           "Laser Hair Removal is a treatment intended to reduce unwanted hair by targeting the hair follicle with light or energy-based technology.",
           "It is generally considered for areas such as the underarms, legs, arms or face.",
+          // kt111: the page ranks for "ipl laser hair removal" (pos 5.1), so it
+          // says plainly which of the two it is. Restated from the Alma page.
+          "Strictly, the Alma platform used at Kaiteki is not a single-wavelength laser. Its applicators deliver broadband light (IPL), shaped towards the wavelengths melanin absorbs most strongly, alongside radiofrequency heating. “Laser hair removal” is the name most people search for, so it is the name used here.",
         ],
       },
       {
@@ -3323,6 +3367,15 @@ export const treatments: Treatment[] = [
       {
         q: "Can I shave between laser hair removal sessions?",
         a: "Yes. Shaving is fine, but waxing, plucking, threading and depilatory creams are normally avoided between sessions, because they remove the follicle contents the light needs to target.",
+      },
+      // kt111 (Nov 2026): two added, restated from the signed Alma page.
+      {
+        q: "Is this laser or IPL hair removal?",
+        a: "It is IPL combined with radiofrequency. The light is absorbed by pigment in the follicle, while the radiofrequency heats the surrounding tissue, so the follicle can reach the temperature it needs with less light energy. Which combination suits your hair and skin is decided by your doctor at consultation.",
+      },
+      {
+        q: "Does laser hair removal hurt?",
+        a: "Most people describe spreading warmth rather than the repeated snap of a stamped pulse, because the applicator is glided over the area and heat builds gradually. The applicator tip is cooled throughout. Comfort still varies between people and between body areas, and your doctor explains what to expect first.",
       },
     ],
   },

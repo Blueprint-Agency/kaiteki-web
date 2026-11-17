@@ -850,6 +850,27 @@ const legacyLinks: Record<string, Pick<Post, "concerns" | "treatments" | "techno
   "8-facts-about-botox": { concerns: ["fine-lines-wrinkles"], treatments: ["botulinum-toxin"] },
   "birthmark-removal": { concerns: ["birthmark"] },
   "double-eyelid-suture": { treatments: ["double-eyelid"] },
+  // kt112 (Nov 2026): ten archive posts held "pico" impressions (GSC Aug-Nov)
+  // and none linked to /treatments/pico-laser. A treatment tag gives each one a
+  // next-steps link to the treatment page. Treatment tags only: a concern or
+  // technology tag would put the post straight onto that page's Read next row,
+  // and on the pico page itself five newer authored posts fill all three slots.
+  // So the archive wording, which predates the MAB house style, is never
+  // surfaced on a signed page.
+  "pico-laser": { treatments: ["pico-laser"] },
+  "pico-laser-side-effects": { treatments: ["pico-laser"] },
+  "picosure-laser": { treatments: ["pico-laser"] },
+  "picosure-laser-vs-picolaser-which-is-right-for-you": { treatments: ["pico-laser"] },
+  "picosure-vs-picoway": { treatments: ["pico-laser"] },
+  "pico-laser-vs-carbon-laser": { treatments: ["pico-laser"] },
+  "pico-laser-vs-co2-laser": { treatments: ["pico-laser"] },
+  "fotona-laser-vs-pico-laser": { treatments: ["pico-laser"] },
+  "fotona-starwalker-pqx-vs-pico-laser": { treatments: ["pico-laser"] },
+  "pigmentation-laser-how-many-sessions": { treatments: ["pico-laser"] },
+  // kt114: the one archive hair post that is educational only. The PRP,
+  // transplant and "hair necessities" posts make outcome claims (docs/02 §8)
+  // and stay untagged until they are rewritten.
+  "hair-anatomy": { concerns: ["hair-loss"] },
 };
 
 export const posts: Post[] = [

@@ -380,7 +380,7 @@ export function CostFactors({
   if (!c) return null;
   return (
     <Section id="sessions-cost">
-      <SectionHead heading={ui.costHeading} intro={c.intro} />
+      <SectionHead heading={c.heading ?? ui.costHeading} intro={c.intro} />
       <List>
         {c.factors.map((f) => (
           <Item key={f}>{f}</Item>

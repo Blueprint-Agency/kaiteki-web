@@ -143,8 +143,23 @@ export const branches: Branch[] = [
     gettingHere: "Kaiteki Pelangi is at Pusat Komersial Pelangi on Jalan Sri Pelangi 4, Taman Pelangi. On-street parking is available around the commercial blocks.",
     parking: "On-street parking around the commercial blocks.",
     serves: ["Johor Bahru", "Taman Pelangi", "Century Garden", "Taman Sentosa", "Taman Abad"],
-    seoTitle: "Aesthetic Clinic in Taman Pelangi, Johor Bahru | Kaiteki",
-    seoDescription: "Kaiteki's aesthetic clinic in Taman Pelangi, Johor Bahru: doctor-led skin & aesthetic consultations. See address & hours. Book free via WhatsApp.",
+    // kt115 (Nov 2026): page 3 for "aesthetic clinic johor bahru" (238 MY
+    // impressions, pos 16.9) and "aesthetic clinic jb" (227, pos 19.0), while
+    // Southkey takes most JB impressions (GSC Aug-Nov). The title leads with the
+    // city query, and `about` says plainly how the two JB clinics differ. Built
+    // only from facts in this file: the 1.5 km is the straight line between the
+    // two branches' coordinates. Local detail (landmarks, doctors on site) needs
+    // the client; see the kt115 row in docs/content-schedule.md.
+    seoTitle: "Aesthetic Clinic Johor Bahru, Taman Pelangi | Kaiteki",
+    seoDescription: "Kaiteki Pelangi, one of two Kaiteki aesthetic clinics in Johor Bahru: doctor-led skin consultations in Taman Pelangi, open seven days. Book free on WhatsApp.",
+    about: {
+      heading: "One of two Kaiteki clinics in Johor Bahru",
+      body: [
+        "Kaiteki Pelangi is in the Pusat Komersial Pelangi commercial blocks in Taman Pelangi. Kaiteki's other Johor Bahru clinic is at Southkey, about 1.5 km to the north in a straight line, beside Mid Valley Southkey.",
+        "Both clinics offer the same treatments and the same doctor-led process, so the better choice is the one easier for you to reach. Pelangi has on-street parking around the commercial blocks; Southkey has parking in the commercial area beside the mall.",
+        "Whichever you choose, the first visit is a consultation with a doctor, not a treatment. Whether you come about acne, pigmentation or another concern, the doctor assesses your skin before anything is planned.",
+      ],
+    },
   },
   {
     slug: "kota-kinabalu", name: "Kota Kinabalu", city: "Kota Kinabalu", state: "Sabah", region: "Sabah",
