@@ -66,6 +66,10 @@ const nextConfig: NextConfig = {
       // kt101 (2026-11-09): the thin legacy skin tag post (ranked #3) consolidated
       // into the signed concern page, so the two stop competing (docs/03e decision 5).
       { source: "/blog/skin-tag-removal-malaysia", destination: "/concerns/skin-tags-moles", statusCode: 301 },
+      // 2026-11-18 (kt113 follow-up): the legacy "Top 5 Effective Treatments" post
+      // (pos 49, no clicks; "gold standard" claims, retired phone numbers)
+      // consolidated into the signed concern page, which ranks 2-7 for the same queries.
+      { source: "/blog/dark-eye-circles", destination: "/concerns/dark-eye-circles", statusCode: 301 },
       // Page 1 of a blog listing is its base URL; never a second copy of it.
       { source: "/blog/page/1", destination: "/blog", statusCode: 301 },
       { source: "/blog/category/:slug/page/1", destination: "/blog/category/:slug", statusCode: 301 },

@@ -2359,26 +2359,6 @@ export const legacyPosts: Post[] = [
     "legacyPath": "/ceramide/"
   },
   {
-    "slug": "dark-eye-circles",
-    "title": "Dark Eye Circles: Top 5 Effective Treatments",
-    "seoTitle": "Dark Eye Circles: Top 5 Effective Treatments - Kaiteki Blog | Skin Care | Updates",
-    "description": "Top 5 effective treatment for dark eye circles! Your friends will never say you look tired again! Read on for more information!",
-    "category": "Device & Injectables",
-    "tags": [
-      "Injectables",
-      "Dark Eye Circles",
-      "Lasers"
-    ],
-    "image": "https://cdn.kaiteki.my/blog/dark-eye-circles/dark-eye-circle.gif",
-    "imageAlt": "dark eye circles",
-    "author": "dr-chew-yuhhui",
-    "publishedAt": "2023-01-22",
-    "updatedAt": "2024-11-06",
-    "readingMinutes": 4,
-    "legacy": true,
-    "legacyPath": "/dark-eye-circles/"
-  },
-  {
     "slug": "maskne",
     "title": "Maskne is a Real Thing:  Here’s Why and How to Prevent It",
     "seoTitle": "Maskne is a Real Thing: Here's Why and How to Prevent It - Kaiteki Blog | Skin Care | Updates",

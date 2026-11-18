@@ -12,6 +12,8 @@ export const MOVED = {
   "wegovy-vs-mounjaro-which-is-better-for-you": "/blog/wegovy-vs-mounjaro",
   // Consolidated into the concern page, not a post (kt101, 2026-11-09).
   "skin-tag-removal-malaysia": "/concerns/skin-tags-moles",
+  // Consolidated into the signed concern page (kt113 follow-up, 2026-11-18).
+  "dark-eye-circles": "/concerns/dark-eye-circles",
 };
 
 /** Old slugs that posts still link to. WordPress 301s the first three; the rest
