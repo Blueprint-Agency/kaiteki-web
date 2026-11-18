@@ -2507,12 +2507,15 @@ export const concerns: Concern[] = [
     seoTitle: "Dark Eye Circles Treatment in Malaysia: Which Type? | Kaiteki",
     seoDescription:
       "Pigment, blood vessels or a shadow? Two mirror checks show which dark circles you have and which treatment suits each. Free consultation with a Kaiteki doctor.",
-    // ── 01 · Pexels (pexels.com/photo/24428508), skin close-up faded into the
-    // page on the right; uploaded by hand (`manual` in config/concern-media.json).
+    // ── 01 · Pexels (pexels.com/photo/5308665), subject shifted hard left with
+    // the photo's right edge faded into the page colour; uploaded by hand
+    // (`manual` in config/concern-media.json). Replaced the magnified eye
+    // close-up (pexels 24428508, banner-skin.jpg, kept in R2) on 2026-11-18
+    // because it read as jarring at banner size.
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/dark-eye-circles/banner-skin.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/dark-eye-circles/banner-skin-mobile.jpg",
-      alt: "Illustrative photograph: close-up of an eye with visible dark shadowing in the skin beneath it",
+      src: "https://cdn.kaiteki.my/concerns/dark-eye-circles/banner-calm.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/dark-eye-circles/banner-calm-mobile.jpg",
+      alt: "Illustrative photograph: a woman with a towel wrapped round her hair, eyes closed, pressing a clear gel patch under one eye",
     },
 
     // ── 02 · process facts. No claim about sleep fixing it, and no timeframe.

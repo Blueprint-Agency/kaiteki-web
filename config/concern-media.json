@@ -982,6 +982,24 @@
       "manual": true
     },
     {
+      "source": "concerns/dark-eye-circles/banner-calm.jpg",
+      "key": "concerns/dark-eye-circles/banner-calm.jpg",
+      "concern": "dark-eye-circles",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/dark-eye-circles/banner-calm-mobile.jpg",
+      "key": "concerns/dark-eye-circles/banner-calm-mobile.jpg",
+      "concern": "dark-eye-circles",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
       "source": "concerns/enlarged-pores/banner-skin.jpg",
       "key": "concerns/enlarged-pores/banner-skin.jpg",
       "concern": "enlarged-pores",
