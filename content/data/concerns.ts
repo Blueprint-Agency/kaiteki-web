@@ -5252,12 +5252,15 @@ export const concerns: Concern[] = [
     seoDescription:
       "Thread veins, spider veins and persistent redness have several causes. A doctor assesses the type before any treatment. Book a free consultation today.",
 
-    // ── 01 · Pexels (pexels.com/photo/1138531), skin close-up faded into the
-    // page on the right; uploaded by hand (`manual` in config/concern-media.json).
+    // ── 01 · Pexels (pexels.com/photo/8669724), portrait placed hard left with
+    // its right edge faded into the page colour; the mobile crop fills the
+    // width. Uploaded by hand (`manual` in config/concern-media.json).
+    // Replaced the magnified cheek close-up (pexels 1138531, banner-skin.jpg,
+    // kept in R2) on 2026-11-20 because it read as jarring at banner size.
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/vascular-lesions/banner-skin.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/vascular-lesions/banner-skin-mobile.jpg",
-      alt: "Illustrative photograph: close-up of the lower face in profile with visible redness across the cheek",
+      src: "https://cdn.kaiteki.my/concerns/vascular-lesions/banner-calm.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/vascular-lesions/banner-calm-mobile.jpg",
+      alt: "Illustrative photograph: a smiling woman in a lilac shirt resting both hands on her cheeks",
     },
 
     // ── 02 · process facts. Nothing about clearance or how quickly anything
@@ -5561,10 +5564,13 @@ export const concerns: Concern[] = [
 
     // ── 01 · Pexels (pexels.com/photo/5000223), recropped with the wall
     // extended right so the copy sits on plain white. Uploaded by hand
-    // (`manual` in config/concern-media.json).
+    // (`manual` in config/concern-media.json). Colour-corrected 2026-11-20
+    // (banner-warm): the wall read cool green-grey (216,227,230) beside the
+    // other banners, so R/G/B were scaled 1.083/1.009/0.965 to bring it to a
+    // warm off-white (233,229,222). The uncorrected pair stays in R2.
     banner: {
-      src: "https://cdn.kaiteki.my/concerns/excessive-sweating/banner.jpg",
-      sm: "https://cdn.kaiteki.my/concerns/excessive-sweating/banner-mobile.jpg",
+      src: "https://cdn.kaiteki.my/concerns/excessive-sweating/banner-warm.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/excessive-sweating/banner-warm-mobile.jpg",
       alt: "Illustrative photograph: a woman in a sports top dabbing her face with a white towel, against a white brick wall",
     },
 
