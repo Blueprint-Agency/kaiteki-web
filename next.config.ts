@@ -70,6 +70,10 @@ const nextConfig: NextConfig = {
       // (pos 49, no clicks; "gold standard" claims, retired phone numbers)
       // consolidated into the signed concern page, which ranks 2-7 for the same queries.
       { source: "/blog/dark-eye-circles", destination: "/concerns/dark-eye-circles", statusCode: 301 },
+      // 2026-11-20 (kt103): the two archive thread-lift posts (durations, "cost-effective",
+      // "lunch break") consolidated into the signed treatment page. Owner decision.
+      { source: "/blog/nose-thread-lift", destination: "/treatments/nose-thread-lift", statusCode: 301 },
+      { source: "/blog/rhinoplasty-vs-nose-thread-lift", destination: "/treatments/nose-thread-lift", statusCode: 301 },
       // 2026-11-20: the thin legacy Oligio vs Density post (unsupported "scientifically
       // validated" / "safe for all skin types" copy) consolidated into the new
       // three-device comparison requested by Dr Chew.

@@ -46,7 +46,7 @@ const EXEMPT: Record<string, string> = {
   // kt103 / kt114 (20 Nov 2026), new treatment pages.
   "treatment:nose-thread-lift:concerns": "no nose concern page; nose shape is not a skin concern",
   "treatment:nose-thread-lift:technology": "thread type not yet confirmed by the client (20 Nov message)",
-  "treatment:nose-thread-lift:posts": "the archive thread-lift posts quote durations and benefits (docs/02 §8); untagged until rewritten",
+  "treatment:nose-thread-lift:posts": "the two archive thread-lift posts were 301d into this page (2026-11-20); no spoke post written yet",
   "treatment:prp:technology": "prepared from the patient's own blood; no device or product page",
   "treatment:prp:posts": "the archive PRP posts make outcome claims (docs/02 §8); untagged until rewritten, as for kt114",
   "treatment:laser-hair-removal:concerns": "no unwanted-hair concern page yet",

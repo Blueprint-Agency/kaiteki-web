@@ -3386,10 +3386,10 @@ export const treatments: Treatment[] = [
   // (/blog/nose-thread-lift: absorbable PDO threads, local anaesthetic, a short
   // procedure; /blog/hair-prp-boost-hair-health: draw, spin, inject into the
   // scalp, no heavy sweating or hair products for the first day). No duration,
-  // figure or outcome is promised. Treatment pages print `reviewedBy` with no
-  // sign-off gate, so these two stay on their branch until the named doctor has
-  // read them. Reviewers are proposed; thread type and PRP scope wait on the
-  // client (20 Nov message).
+  // figure or outcome is promised. Signed off by the owner on 2026-11-20 for the
+  // named reviewers (treatment pages print `reviewedBy` with no gate of their
+  // own). Thread type and PRP scope wait on the client (20 Nov message); the
+  // copy holds either way.
   {
     slug: "nose-thread-lift",
     durationDowntime: "15-30 min · Swelling for a few days",

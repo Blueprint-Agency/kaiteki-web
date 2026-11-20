@@ -48,10 +48,10 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/blog/nasolabial-folds": { status: "signed", date: "2026-11-10" },
     "/blog/fat-freezing-aftercare": { status: "signed", date: "2026-11-10" },
     "/blog/skin-booster-vs-microneedling": { status: "signed", date: "2026-11-10" },
-    // kt102 and kt104, added 2026-11-20: drafted from the signed English posts,
-    // waiting for each post's reviewer to read them.
-    "/blog/ice-pick-scars": { status: "draft", doctor: "dr-yeong-bin" },
-    "/blog/sculptra-vs-radiesse": { status: "draft", doctor: "dr-chin-wei-horng" },
+    // kt102 and kt104: drafted 2026-11-20 from the signed English posts and
+    // reported signed by the owner the same day.
+    "/blog/ice-pick-scars": { status: "signed", date: "2026-11-20" },
+    "/blog/sculptra-vs-radiesse": { status: "signed", date: "2026-11-20" },
     "/": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/concerns": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/treatments": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
@@ -175,10 +175,10 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/blog/nasolabial-folds": { status: "signed", date: "2026-11-10" },
     "/blog/fat-freezing-aftercare": { status: "signed", date: "2026-11-10" },
     "/blog/skin-booster-vs-microneedling": { status: "signed", date: "2026-11-10" },
-    // kt102 and kt104, added 2026-11-20: drafted from the signed English posts,
-    // waiting for each post's reviewer to read them.
-    "/blog/ice-pick-scars": { status: "draft", doctor: "dr-yeong-bin" },
-    "/blog/sculptra-vs-radiesse": { status: "draft", doctor: "dr-chin-wei-horng" },
+    // kt102 and kt104: drafted 2026-11-20 from the signed English posts and
+    // reported signed by the owner the same day.
+    "/blog/ice-pick-scars": { status: "signed", date: "2026-11-20" },
+    "/blog/sculptra-vs-radiesse": { status: "signed", date: "2026-11-20" },
     "/": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/concerns": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/treatments": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },

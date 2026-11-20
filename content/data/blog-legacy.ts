@@ -2080,23 +2080,6 @@ export const legacyPosts: Post[] = [
     "legacyPath": "/overfilled-face/"
   },
   {
-    "slug": "nose-thread-lift",
-    "title": "Nose Thread Lift: Get Yourself 100% Prepared!",
-    "description": "This blog post explores nose thread lift, a non-surgical nose enhancement procedure. It covers the how it works, benefits, results, and the cost!",
-    "category": "Treatments Explained",
-    "tags": [
-      "Lifting"
-    ],
-    "image": "https://cdn.kaiteki.my/blog/nose-thread-lift/nose-thread-lift.gif",
-    "imageAlt": "nose thread lift cover",
-    "author": "dr-yeong-bin",
-    "publishedAt": "2023-07-27",
-    "updatedAt": "2023-12-27",
-    "readingMinutes": 6,
-    "legacy": true,
-    "legacyPath": "/nose-thread-lift/"
-  },
-  {
     "slug": "skin-bumps",
     "title": "Skin Bumps Decoded: Know Your Bumps, Find the Right Solutions",
     "description": "Explore the world of skin bumps in our comprehensive guide. Learn what causes these pesky bumps, effective treatments, and prevention tips.",
@@ -2525,23 +2508,6 @@ export const legacyPosts: Post[] = [
     "readingMinutes": 3,
     "legacy": true,
     "legacyPath": "/8-facts-about-botox/"
-  },
-  {
-    "slug": "rhinoplasty-vs-nose-thread-lift",
-    "title": "Rhinoplasty vs Nose Thread Lift : Which is Better for Me?",
-    "description": "Rhinoplasty is a surgical nose reshaping procedure, while nose thread lift is a non-surgical nose contouring procedure that uses threads.",
-    "category": "Treatments Explained",
-    "tags": [
-      "Lifting"
-    ],
-    "image": "https://cdn.kaiteki.my/blog/rhinoplasty-vs-nose-thread-lift/nose-thread-vs-rhino.jpg",
-    "imageAlt": "Rhinoplasty vs Nose Thread Lift",
-    "author": "dr-yeong-bin",
-    "publishedAt": "2022-08-24",
-    "updatedAt": "2023-09-01",
-    "readingMinutes": 4,
-    "legacy": true,
-    "legacyPath": "/rhinoplasty-vs-nose-thread-lift/"
   },
   {
     "slug": "blue-light-and-its-impact",
