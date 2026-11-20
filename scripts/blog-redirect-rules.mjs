@@ -14,6 +14,8 @@ export const MOVED = {
   "skin-tag-removal-malaysia": "/concerns/skin-tags-moles",
   // Consolidated into the signed concern page (kt113 follow-up, 2026-11-18).
   "dark-eye-circles": "/concerns/dark-eye-circles",
+  // Consolidated into the three-device comparison (2026-11-20).
+  "oligio-vs-density": "/blog/xerf-vs-oligio-vs-density",
 };
 
 /** Old slugs that posts still link to. WordPress 301s the first three; the rest

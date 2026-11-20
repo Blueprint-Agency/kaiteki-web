@@ -70,6 +70,10 @@ const nextConfig: NextConfig = {
       // (pos 49, no clicks; "gold standard" claims, retired phone numbers)
       // consolidated into the signed concern page, which ranks 2-7 for the same queries.
       { source: "/blog/dark-eye-circles", destination: "/concerns/dark-eye-circles", statusCode: 301 },
+      // 2026-11-20: the thin legacy Oligio vs Density post (unsupported "scientifically
+      // validated" / "safe for all skin types" copy) consolidated into the new
+      // three-device comparison requested by Dr Chew.
+      { source: "/blog/oligio-vs-density", destination: "/blog/xerf-vs-oligio-vs-density", statusCode: 301 },
       // Page 1 of a blog listing is its base URL; never a second copy of it.
       { source: "/blog/page/1", destination: "/blog", statusCode: 301 },
       { source: "/blog/category/:slug/page/1", destination: "/blog/category/:slug", statusCode: 301 },

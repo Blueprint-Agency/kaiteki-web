@@ -818,6 +818,47 @@ const authored: Post[] = [
       },
     ],
   },
+  {
+    slug: "xerf-vs-oligio-vs-density",
+    title: "XERF vs Oligio vs Density: how to choose between the three RF devices",
+    seoTitle: "XERF vs Oligio vs Density: How to Choose | Kaiteki",
+    description: "XERF, Oligio X and Density are all needle-free RF skin tightening devices. How they differ in energy, cooling and evidence, and how a doctor picks between them.",
+    category: "Device & Injectables",
+    image: "https://cdn.kaiteki.my/blog/xerf-vs-oligio-vs-density/xerf-vs-oligio-vs-density-cover.png",
+    imageAlt:
+      "Line illustration of a woman touching her jaw, with the lower cheek, jawline and upper neck shaded pink",
+    author: "dr-chew-yuhhui",
+    reviewedBy: "dr-chloe-wan",
+    publishedAt: "2026-11-20",
+    readingMinutes: 9,
+    leadAnswer: "XERF, Oligio X and Density all warm the deeper skin with radiofrequency, without needles, for early to moderate laxity. Oligio X uses one frequency, XERF blends two, and Density pairs monopolar with bipolar RF in each shot. No study compares them directly, so the choice depends on your skin, the area and comfort, after a doctor's assessment.",
+    concerns: ["face-lifting", "aging"],
+    treatments: ["radiofrequency", "hifu"],
+    technology: ["xerf", "oligio"],
+    related: ["dermapen-vs-rf-microneedling", "sculptra-vs-radiesse"],
+    faqs: [
+      {
+        q: "Which is the most painful: XERF, Oligio or Density?",
+        a: "There is no study comparing comfort across the three, and comfort varies a lot between people. Most describe deep warmth rather than sharp pain. Numbing cream and adjusted settings can help, so tell your doctor if a pass feels too hot.",
+      },
+      {
+        q: "Is RF the same as HIFU?",
+        a: "No. RF uses electrical energy that turns into heat in the skin. HIFU focuses ultrasound energy at set depths. They are sometimes used in the same plan, and a doctor decides which, if either, fits your concern.",
+      },
+      {
+        q: "How many sessions of XERF, Oligio or Density do I need?",
+        a: "The published studies used a single session. In practice some plans are one session and others a short course, followed by maintenance. Your doctor sets the plan after assessing your skin.",
+      },
+      {
+        q: "Is Density the same as Thermage?",
+        a: "No. Both use RF at 6.78 MHz, but Thermage delivers monopolar RF only, while Density pairs monopolar and bipolar RF within each shot. They are separate devices from different manufacturers.",
+      },
+      {
+        q: "Can I switch from one device to another for my next session?",
+        a: "Yes, if your doctor thinks another platform suits your skin or the area better. Tell them which device you had before, the settings if you know them, and how it felt.",
+      },
+    ],
+  },
 ];
 
 /**

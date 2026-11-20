@@ -293,25 +293,6 @@ export const legacyPosts: Post[] = [
     "legacyPath": "/ultherapy-prime-vs-ultherapy/"
   },
   {
-    "slug": "oligio-vs-density",
-    "title": "Oligio vs Density: Which Skin Tightening Treatment Should You Choose?",
-    "description": "Compare Oligio vs Density for skin tightening and rejuvenation. Discover key differences in technology, results, and comfort to choose your best option.",
-    "category": "Treatments Explained",
-    "tags": [
-      "Treatment vs Treatment",
-      "Aging",
-      "Lifting"
-    ],
-    "image": "https://cdn.kaiteki.my/blog/oligio-vs-density/135.png",
-    "imageAlt": "oligio vs density",
-    "author": "dr-lucas-chew",
-    "publishedAt": "2025-09-10",
-    "updatedAt": "2025-09-29",
-    "readingMinutes": 4,
-    "legacy": true,
-    "legacyPath": "/oligio-vs-density/"
-  },
-  {
     "slug": "fotona-starwalker-pqx-vs-pico-laser",
     "title": "Fotona StarWalker PQX vs Pico Laser: Which Laser Treatment Is Best for Your Skin?",
     "description": "Compare Fotona StarWalker and Pico Laser for pigmentation, scars, and tattoos. Learn the differences in technology, results, and comfort to choose right.",
