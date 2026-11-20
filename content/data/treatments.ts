@@ -2158,7 +2158,7 @@ export const treatments: Treatment[] = [
       "A regenerative approach used alongside other treatments for skin and scalp concerns.",
     leadAnswer:
       "Exosome therapy applies preparations of exosomes, tiny cell-derived vesicles that carry signalling molecules, to the skin or scalp. At Kaiteki it is usually used alongside another procedure such as microneedling, a laser or PRP, not on its own. The evidence base is still developing, so a doctor assesses whether it suits your plan.",
-    related: ["skin-booster", "prp"],
+    related: ["skin-booster"],
     reviewedBy: "dr-william-yap",
     lastReviewed: "2026-06-05",
     seoTitle: "Exosome Therapy Malaysia | Regenerative Treatment | Kaiteki",
@@ -2271,8 +2271,6 @@ export const treatments: Treatment[] = [
     relatedReasons: {
       "skin-booster":
         "Injectable hydrating treatments used to support skin quality and hydration, with their own established role rather than as an adjunct.",
-      // kt114 (20 Nov): PRP now has its own page.
-      prp: "Made from your own blood and injected into the scalp; one of the procedures exosome therapy can accompany, not a preparation applied on its own.",
     },
 
     sections: [
@@ -3381,15 +3379,14 @@ export const treatments: Treatment[] = [
       },
     ],
   },
-  // ── kt103 + kt114 (20 Nov 2026). Owner confirmed both are offered. Built to the
+  // ── kt103 (20 Nov 2026). Owner confirmed it is offered; the client (Dr Chew,
+  // 20 Nov) confirmed PDO threads and that all doctors perform it. A PRP page
+  // built alongside it was withdrawn the same day: the clinic does not offer PRP. Built to the
   // v2 block set from general clinical knowledge and Kaiteki's own archive posts
   // (/blog/nose-thread-lift: absorbable PDO threads, local anaesthetic, a short
-  // procedure; /blog/hair-prp-boost-hair-health: draw, spin, inject into the
-  // scalp, no heavy sweating or hair products for the first day). No duration,
-  // figure or outcome is promised. Signed off by the owner on 2026-11-20 for the
+  // procedure). No duration, figure or outcome is promised. Signed off by the owner on 2026-11-20 for the
   // named reviewers (treatment pages print `reviewedBy` with no gate of their
-  // own). Thread type and PRP scope wait on the client (20 Nov message); the
-  // copy holds either way.
+  // own).
   {
     slug: "nose-thread-lift",
     durationDowntime: "15-30 min · Swelling for a few days",
@@ -3406,7 +3403,7 @@ export const treatments: Treatment[] = [
       "Nose thread lift in Malaysia: how absorbable threads add bridge and tip definition, what it cannot change, recovery and side effects. Free consultation on WhatsApp.",
     typicalSessions: "One procedure, then a review",
     facts: [
-      { value: "Absorbable threads", label: "Placed under the skin of the bridge and tip" },
+      { value: "Absorbable PDO threads", label: "Placed under the skin of the bridge and tip" },
       { value: "Local anaesthetic", label: "You stay awake; the nose is numbed" },
       { value: "Assessment first", label: "Your first visit is a consultation, not a treatment" },
     ],
@@ -3480,7 +3477,7 @@ export const treatments: Treatment[] = [
         "The cost is set at consultation, once the doctor knows what your nose needs. What moves it:",
       factors: [
         "The number of threads needed for the bridge and the tip.",
-        "The type of thread used.",
+        "Whether the bridge, the tip or both are treated.",
         "Whether threads are combined with another treatment in the same plan.",
       ],
     },
@@ -3494,7 +3491,7 @@ export const treatments: Treatment[] = [
       {
         heading: "What is a nose thread lift?",
         body: [
-          "A nose thread lift is a non-surgical nose procedure. Fine threads made of absorbable medical material, commonly polydioxanone (PDO), are placed under the skin of the nose. Along the bridge they add height and a straighter line; placed into the tip they can give it more lift and definition.",
+          "A nose thread lift is a non-surgical nose procedure. At Kaiteki the threads are made of polydioxanone (PDO), an absorbable medical material, and are placed under the skin of the nose. Along the bridge they add height and a straighter line; placed into the tip they can give it more lift and definition.",
           "There is no incision and no general anaesthetic. The threads are absorbed by the body over time, and the support they give comes partly from the threads themselves and partly from the tissue that forms around them as they dissolve.",
         ],
         list: [
@@ -3531,146 +3528,6 @@ export const treatments: Treatment[] = [
       {
         q: "Can a nose thread lift make my nose smaller?",
         a: "No. Threads can add height and definition to the bridge and tip, but they cannot reduce a hump or narrow the nostrils. Those changes need surgery.",
-      },
-    ],
-  },
-  {
-    slug: "prp",
-    durationDowntime: "45-60 min · Minimal downtime",
-    name: "PRP Hair Treatment",
-    category: "Regenerative",
-    summary: "Platelet-rich plasma from your own blood, injected into thinning areas of the scalp over a course of sessions.",
-    leadAnswer:
-      "PRP (platelet-rich plasma) hair treatment uses a small sample of your own blood, spun to concentrate the platelets, which is then injected into thinning areas of the scalp. It is most often considered for hereditary thinning, over a course of sessions. It cannot regrow hair where follicles are gone, so the cause of the hair loss is assessed first.",
-    related: ["exosome-therapy"],
-    reviewedBy: "dr-tim-chua",
-    lastReviewed: "2026-11-20",
-    seoTitle: "PRP Hair Treatment Malaysia | Platelet-Rich Plasma | Kaiteki",
-    seoDescription:
-      "PRP hair treatment in Malaysia: how platelet-rich plasma from your own blood is used on a thinning scalp, who it suits, the course, side effects and what affects cost.",
-    typicalSessions: "A course, usually a few weeks apart",
-    facts: [
-      { value: "Your own blood", label: "Drawn, spun and concentrated on the day" },
-      { value: "Injected into the scalp", label: "Only into the areas that are thinning" },
-      { value: "Assessment first", label: "Your first visit is a consultation, not a treatment" },
-    ],
-    ctaMid: {
-      heading: "Not sure what is behind your hair thinning?",
-      body: "A doctor can assess your scalp and tell you whether PRP fits the cause, or whether something else should come first.",
-    },
-    avoidIf: [
-      { lead: "Low platelet count or a platelet or bleeding disorder.", body: "" },
-      { lead: "Blood-thinning medication,", body: "which your doctor goes through with you before anything is planned." },
-      { lead: "An active infection on the scalp or in the body.", body: "" },
-      { lead: "Current cancer treatment", body: "or a blood-related cancer." },
-      { lead: "Pregnancy or breastfeeding.", body: "Treatment is deferred." },
-    ],
-    bringToConsult:
-      "Hair loss has many causes. Bring any recent blood tests and a list of your medications, and tell the doctor when the thinning started and whether it runs in your family.",
-    sessionSteps: [
-      {
-        title: "Consultation and scalp assessment",
-        body: "Your first visit is a consultation, not a treatment. The doctor looks at the pattern of your hair loss and your scalp, and may suggest blood tests to check for causes such as iron deficiency or a thyroid problem.",
-      },
-      {
-        title: "Blood draw",
-        body: "If PRP suits you, a small amount of blood is drawn from your arm, as for a routine blood test.",
-      },
-      {
-        title: "Preparing the plasma",
-        body: "The blood is spun in a centrifuge to separate it. The plasma layer, which holds a concentrate of platelets, is drawn off for the treatment.",
-      },
-      {
-        title: "Scalp injections",
-        body: "The scalp is cleansed and the plasma is injected in small amounts across the thinning areas with a fine needle. Numbing can be used to make it more comfortable.",
-      },
-      {
-        title: "The course and review",
-        body: "PRP is given as a course of sessions spaced a few weeks apart, with reviews to see how your hair is responding before any further sessions are planned.",
-      },
-    ],
-    afterSession: {
-      intro: "Downtime is usually minimal, and most people go back to work the same day.",
-      bands: [
-        {
-          title: "The first day",
-          body: "The scalp can feel tender, tight or slightly swollen, and there may be a small bruise where blood was drawn. Avoid heavy sweating and hair products for the first 24 hours.",
-        },
-        {
-          title: "The following days",
-          body: "Tenderness usually settles within a few days. You can wash your hair as your doctor advises.",
-        },
-      ],
-      aftercare: "Avoid scratching or massaging the treated areas hard, and follow the timing your doctor gives you for washing and colouring your hair.",
-    },
-    risks: {
-      intro:
-        "Because PRP comes from your own blood, allergic reactions to it are not expected, but the injections themselves carry risks, which the doctor explains first.",
-      common: "Tenderness, a tight feeling, mild swelling or pinpoint bleeding at the injection sites, a headache, and bruising where blood was drawn.",
-      lessCommon: "Infection at an injection site, and temporary shedding of hair in the treated area.",
-      cannotDo: [
-        "It cannot regrow hair where the follicles are gone, such as smooth bald areas or scarring hair loss.",
-        "It does not treat the cause of hair loss. A thyroid problem, iron deficiency or a scalp condition needs treating in its own right.",
-        "Response differs between people, and the evidence is strongest for hereditary thinning; no result can be promised.",
-        "It is not permanent: hereditary thinning continues, so maintenance sessions are often discussed.",
-      ],
-      disclose: "Tell your doctor about every medication and supplement you take, including painkillers, which can affect platelets.",
-    },
-    costFactors: {
-      heading: "PRP hair treatment price in Malaysia: what affects it",
-      intro: "PRP is planned as a course, and the plan is set at consultation. What moves the cost:",
-      factors: [
-        "The number of sessions in the course.",
-        "The size of the area being treated.",
-        "Whether PRP is combined with another scalp treatment in the same plan.",
-        "Whether maintenance sessions are needed afterwards.",
-      ],
-    },
-    relatedReasons: {
-      "exosome-therapy":
-        "A regenerative preparation sometimes planned alongside PRP or microneedling, rather than a treatment made from your own blood.",
-    },
-    sections: [
-      {
-        heading: "What is PRP hair treatment?",
-        body: [
-          "PRP stands for platelet-rich plasma. Platelets are the blood cells that help wounds heal, and they carry growth factors. In PRP treatment, a sample of your own blood is spun to concentrate the platelets in the plasma, and that plasma is injected into the scalp where the hair is thinning.",
-          "The aim is to support the hair follicles that are still there. It is most often considered for hereditary thinning (androgenetic alopecia) in men and women, usually as part of a wider plan rather than on its own.",
-        ],
-        list: [
-          "Gradual hereditary thinning at the crown, parting or temples",
-          "Hair fall where the doctor has ruled out or is treating another cause",
-          "People who prefer not to rely on medication alone",
-        ],
-      },
-      {
-        heading: "Why the cause of hair loss comes first",
-        body: [
-          "Hair loss has many causes: hereditary thinning, shedding after illness, childbirth or stress, iron deficiency, thyroid problems, scalp conditions and patchy hair loss among them. PRP is aimed at hereditary thinning. Where the cause is something else, that cause is treated first, and PRP may not be needed at all.",
-          "This is why the first visit is an assessment, and why PRP is often one part of a hair-loss plan rather than the whole of it.",
-        ],
-      },
-    ],
-    faqs: [
-      {
-        q: "Does PRP for hair loss work?",
-        a: "Studies on hereditary thinning show improvement in hair density for some people, but results vary and treatment methods differ between studies. It works on follicles that are still present, so the doctor first checks whether your type of hair loss suits it.",
-      },
-      {
-        q: "How many PRP sessions will I need?",
-        a: "PRP is given as a course of several sessions a few weeks apart, followed by reviews. The number is set after your scalp has been assessed and depends on how you respond.",
-      },
-      {
-        q: "What are the side effects of PRP hair treatment?",
-        a: "Scalp tenderness, a tight feeling, mild swelling, a headache and bruising where blood was drawn are common and usually settle within days. Infection at an injection site is less common.",
-      },
-      {
-        q: "Is PRP hair treatment painful?",
-        a: "The injections can be uncomfortable, and numbing can be used to make them more comfortable. The scalp may feel tender for a day or two afterwards.",
-      },
-      {
-        q: "Is PRP permanent?",
-        a: "No. Hereditary thinning continues over time, so maintenance sessions are often discussed once the first course is finished.",
       },
     ],
   },

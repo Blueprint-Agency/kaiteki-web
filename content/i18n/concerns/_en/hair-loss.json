@@ -8,8 +8,7 @@
   "summary": "Thinning, receding and patchy hair loss each have different causes.",
   "leadAnswer": "Hair loss is a change from your usual pattern: gradual hereditary thinning, sudden shedding after illness, childbirth or stress, patchy loss, or loss caused by a scalp or medical condition such as thyroid disease or low iron.",
   "treatments": [
-    "exosome-therapy",
-    "prp"
+    "exosome-therapy"
   ],
   "reviewedBy": "dr-tim-chua",
   "lastReviewed": "2026-06-06",
@@ -177,10 +176,6 @@
     "exosome-therapy": {
       "why": "For supporting the scalp alongside medical treatment",
       "body": "A regenerative preparation applied to the scalp to support the follicular environment. The evidence base is still developing, and it is offered as an adjunct to medical management rather than as a treatment for hair loss in its own right."
-    },
-    "prp": {
-      "why": "For hereditary thinning where follicles are still present",
-      "body": "Plasma from your own blood, concentrated for its platelets and injected into thinning areas of the scalp over a course of sessions. It is considered once the cause of the hair loss is known, and it cannot regrow hair where follicles are gone."
     }
   },
   "results": [

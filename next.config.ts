@@ -74,6 +74,9 @@ const nextConfig: NextConfig = {
       // "lunch break") consolidated into the signed treatment page. Owner decision.
       { source: "/blog/nose-thread-lift", destination: "/treatments/nose-thread-lift", statusCode: 301 },
       { source: "/blog/rhinoplasty-vs-nose-thread-lift", destination: "/treatments/nose-thread-lift", statusCode: 301 },
+      // 2026-11-20: /treatments/prp was live for about an hour before the client
+      // confirmed the clinic does not offer PRP. Sent to the hair loss concern page.
+      { source: "/treatments/prp", destination: "/concerns/hair-loss", statusCode: 301 },
       // 2026-11-20: the thin legacy Oligio vs Density post (unsupported "scientifically
       // validated" / "safe for all skin types" copy) consolidated into the new
       // three-device comparison requested by Dr Chew.
