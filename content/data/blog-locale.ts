@@ -209,6 +209,57 @@ export const localePosts: Record<NonDefaultLocale, Post[]> = {
         },
       ],
     },
+    {
+      // kt102, see the English entry in content/data/blog.ts for sources. 中文 on
+      // 冰锥型痘疤 (docs/19 acne-scars.md; autocomplete also 痘坑能修复吗, 痘坑类型,
+      // gl=my hl=zh-CN, 2026-11-20). Added 20 Nov when the blog went trilingual again.
+      slug: "ice-pick-scars",
+      title: "冰锥型痘疤：怎么分辨，哪些治疗能真正到达疤底",
+      seoTitle: "冰锥型痘疤：怎么分辨与治疗选择 | Kaiteki",
+      description: "冰锥型痘疤和毛孔怎么分？为什么单靠激光很少能改善？了解 TCA CROSS 和环钻切除，以及马来西亚肤色治疗痘坑时要注意的事。",
+      category: "Skin Concerns",
+      author: "dr-jen-meng",
+      reviewedBy: "dr-yeong-bin",
+      publishedAt: "2026-11-20",
+      readingMinutes: 5,
+      leadAnswer: "冰锥型痘疤是又窄又深的痘坑，宽度通常不到 2 毫米，笔直深入皮肤。激光和微针能改善疤痕周围的皮肤，但单靠它们很少能解决。针对它的治疗是逐个处理每一颗疤，例如 TCA CROSS 或环钻切除，之后再做换肤疗程。",
+      concerns: ["acne-scars", "acne"],
+      treatments: ["microneedling", "resurfacing-laser"],
+      technology: ["fractional-co2", "potenza"],
+      related: ["skin-booster-vs-microneedling"],
+      faqs: [
+        { q: "冰锥型痘疤可以完全消除吗？", a: "很少能。它往往可以改善，但无法完全消除，而且改善会随着胶原蛋白重塑，在几个月里慢慢出现。" },
+        { q: "皮秒激光可以改善冰锥型痘疤吗？", a: "皮秒激光主要处理疤痕周围的平面印记，单靠它无法到达冰锥型痘疤的深度。" },
+        { q: "冰锥型痘疤会随年龄变明显吗？", a: "会看起来更明显，因为皮肤流失容量和紧致度，虽然疤本身没有改变。" },
+        { q: "TCA CROSS 要做几次？", a: "通常分几次进行，每次相隔几周。次数要在医生检查每一颗疤之后才决定。" },
+      ],
+    },
+    {
+      // kt104, see the English entry in content/data/blog.ts for sources. 中文 on
+      // radiesse 和 sculptra (autocomplete returns it, gl=my hl=zh-CN, 2026-11-20).
+      // The street names 童颜针 and 微晶瓷 are kept out (docs/19 _treatment-names.md,
+      // docs/21 sculptra.md and radiesse.md).
+      slug: "sculptra-vs-radiesse",
+      title: "Radiesse 和 Sculptra 有什么区别？两种胶原蛋白刺激剂的原理与选择",
+      seoTitle: "Radiesse 和 Sculptra 的区别 | Kaiteki",
+      description: "Sculptra 和 Radiesse 都是胶原蛋白刺激剂，但材料、见效时间和适用部位不同。了解两者的原理，以及为什么两者都无法溶解。",
+      category: "Device & Injectables",
+      author: "dr-jamie-gan",
+      reviewedBy: "dr-chin-wei-horng",
+      publishedAt: "2026-11-20",
+      readingMinutes: 5,
+      leadAnswer: "Sculptra 和 Radiesse 都会促使皮肤自身生成胶原蛋白，但表现不同。Sculptra 的成分是聚左旋乳酸，需要一个疗程慢慢起作用；Radiesse 是凝胶中的羟基磷灰石钙，当天有一定支撑，之后同样慢慢起作用。两者都无法溶解，所以医生会谨慎规划。",
+      concerns: ["face-lifting", "aging"],
+      treatments: ["bio-stimulator", "dermal-fillers"],
+      technology: ["sculptra", "radiesse", "ellanse"],
+      related: ["nasolabial-folds"],
+      faqs: [
+        { q: "Sculptra 是填充剂吗？", a: "不算一般意义上的填充剂。它是胶原蛋白刺激剂，当天补充的容量很少，主要是随时间促使你自身生成胶原蛋白。" },
+        { q: "Sculptra 和 Radiesse 哪个维持比较久？", a: "两家生产商都有各自研究的数据，但维持时间因人而异，因为材料会被身体代谢，组织也在继续老化。医生会说明对你来说什么是合理的，而不是报一个数字。" },
+        { q: "Sculptra 和 Radiesse 可以一起用吗？", a: "有时可以，用在不同部位或方案的不同阶段。是否适合你，要在评估时决定。" },
+        { q: "Sculptra 和 Radiesse 适合亚洲肤色吗？", a: "两者靠生物反应起作用，不是靠光，所以肤色不像激光那样是限制因素。是否适合，取决于你的脸部结构、部位和病史。" },
+      ],
+    },
   ],
   ms: [
     {
@@ -401,6 +452,56 @@ export const localePosts: Record<NonDefaultLocale, Post[]> = {
           q: "Adakah Rejuran sesuai jika saya alah kepada ikan?",
           a: "Rejuran dan Plinest berasal daripada ikan, jadi alahan ikan atau makanan laut mesti dimaklumkan kepada doktor sebelum rawatan.",
         },
+      ],
+    },
+    {
+      // kt102, see the English entry in content/data/blog.ts for sources. BM on
+      // parut jerawat ice pick (docs/19 acne-scars.md; autocomplete returns it, and
+      // parut jerawat berlubang carries the demand, gl=my hl=ms, 2026-11-20).
+      slug: "ice-pick-scars",
+      title: "Parut jerawat ice pick: cara mengenal pasti dan rawatan yang sampai ke dasarnya",
+      seoTitle: "Parut Jerawat Ice Pick: Cara Kenal & Rawatan | Kaiteki",
+      description: "Cara membezakan parut jerawat ice pick daripada liang pori dan parut berlubang lain, kenapa laser sahaja jarang sampai, dan apa itu TCA CROSS serta punch excision.",
+      category: "Skin Concerns",
+      author: "dr-jen-meng",
+      reviewedBy: "dr-yeong-bin",
+      publishedAt: "2026-11-20",
+      readingMinutes: 6,
+      leadAnswer: "Parut jerawat ice pick ialah parut sempit dan dalam, biasanya kurang daripada 2mm lebar, yang menjunam terus ke dalam kulit. Laser dan microneedling membantu kulit di sekelilingnya tetapi jarang menyelesaikannya sendirian. Rawatan yang menyasarkannya merawat parut satu demi satu, seperti TCA CROSS atau punch excision, diikuti rawatan pelicin kulit.",
+      concerns: ["acne-scars", "acne"],
+      treatments: ["microneedling", "resurfacing-laser"],
+      technology: ["fractional-co2", "potenza"],
+      related: ["skin-booster-vs-microneedling"],
+      faqs: [
+        { q: "Bolehkah parut ice pick hilang sepenuhnya?", a: "Jarang sekali. Ia selalunya boleh diperbaiki tetapi tidak dihapuskan, dan perubahan berlaku dalam beberapa bulan apabila kolagen membentuk semula." },
+        { q: "Bolehkah pico laser merawat parut ice pick?", a: "Pico laser kebanyakannya untuk kesan rata di sekeliling parut. Ia tidak sampai ke kedalaman parut ice pick dengan sendirinya." },
+        { q: "Adakah parut ice pick bertambah teruk dengan usia?", a: "Ia boleh kelihatan lebih ketara apabila kulit kehilangan isi dan kekencangan, walaupun parut itu sendiri tidak berubah." },
+        { q: "Berapa sesi TCA CROSS yang diperlukan?", a: "Ia biasanya diulang dalam beberapa sesi dengan jarak beberapa minggu. Bilangannya ditetapkan selepas doktor memeriksa setiap parut." },
+      ],
+    },
+    {
+      // kt104, see the English entry in content/data/blog.ts for sources. BM keeps
+      // the English comparison query (sculptra vs radiesse returns under hl=ms;
+      // Malay forms such as "beza sculptra" are empty, gl=my, 2026-11-20).
+      slug: "sculptra-vs-radiesse",
+      title: "Sculptra vs Radiesse: apa beza dua perangsang kolagen ini",
+      seoTitle: "Sculptra vs Radiesse: Apa Bezanya? | Kaiteki",
+      description: "Sculptra dan Radiesse kedua-duanya perangsang kolagen, tetapi berbeza dari segi bahan, masa dan kawasan. Cara setiap satu berfungsi, dan kenapa kedua-duanya tidak boleh dilarutkan.",
+      category: "Device & Injectables",
+      author: "dr-jamie-gan",
+      reviewedBy: "dr-chin-wei-horng",
+      publishedAt: "2026-11-20",
+      readingMinutes: 5,
+      leadAnswer: "Sculptra dan Radiesse kedua-duanya merangsang kolagen kulit sendiri, tetapi bertindak secara berbeza. Sculptra, daripada asid poli-L-laktik, berfungsi secara beransur-ansur melalui beberapa sesi. Radiesse, kalsium hidroksiapatit dalam gel, memberi sedikit sokongan pada hari itu, kemudian berfungsi secara beransur-ansur. Kedua-duanya tidak boleh dilarutkan, jadi doktor merancangnya dengan teliti.",
+      concerns: ["face-lifting", "aging"],
+      treatments: ["bio-stimulator", "dermal-fillers"],
+      technology: ["sculptra", "radiesse", "ellanse"],
+      related: ["nasolabial-folds"],
+      faqs: [
+        { q: "Adakah Sculptra sejenis filler?", a: "Bukan dalam erti kata biasa. Ia perangsang kolagen: hanya sedikit isi pada hari itu, dan ia bekerja dengan merangsang kolagen anda sendiri dari semasa ke semasa." },
+        { q: "Mana tahan lebih lama, Sculptra atau Radiesse?", a: "Kedua-dua pengeluar menerbitkan angka daripada kajian mereka sendiri, tetapi tempohnya berbeza antara individu, kerana bahan itu dikeluarkan oleh badan dan tisu anda terus menua. Doktor akan terangkan apa yang realistik untuk anda, bukan memberi satu angka." },
+        { q: "Bolehkah Sculptra dan Radiesse digunakan bersama?", a: "Kadangkala, di kawasan berbeza atau pada peringkat berbeza dalam pelan. Sama ada ia sesuai untuk anda diputuskan semasa penilaian." },
+        { q: "Adakah Sculptra dan Radiesse sesuai untuk kulit Asia?", a: "Kedua-duanya bekerja secara biologi, bukan dengan cahaya, jadi warna kulit bukan faktor pengehad seperti pada laser. Kesesuaian bergantung pada anatomi, kawasan dan sejarah perubatan anda." },
       ],
     },
   ],
