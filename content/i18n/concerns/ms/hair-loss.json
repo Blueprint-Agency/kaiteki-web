@@ -8,7 +8,8 @@
   "summary": "Rambut menipis, garis rambut yang makin ke belakang dan botak bertompok masing-masing mempunyai punca yang berbeza.",
   "leadAnswer": "Rambut gugur ialah perubahan daripada corak biasa anda: rambut menipis keturunan yang beransur-ansur, keguguran tiba-tiba selepas sakit, bersalin atau tekanan, rambut gugur bertompok, atau rambut gugur akibat masalah kulit kepala atau masalah kesihatan seperti penyakit tiroid atau kekurangan zat besi.",
   "treatments": [
-    "exosome-therapy"
+    "exosome-therapy",
+    "prp"
   ],
   "reviewedBy": "dr-tim-chua",
   "lastReviewed": "2026-06-06",
@@ -176,6 +177,10 @@
     "exosome-therapy": {
       "why": "Untuk menyokong kulit kepala bersama rawatan perubatan",
       "body": "Persediaan regeneratif yang dikenakan pada kulit kepala untuk menyokong persekitaran folikel. Asas bukti masih berkembang, dan ia ditawarkan sebagai tambahan kepada pengurusan perubatan, bukan sebagai rawatan rambut gugur yang tersendiri."
+    },
+    "prp": {
+      "why": "Untuk penipisan keturunan apabila folikel masih ada",
+      "body": "Plasma daripada darah anda sendiri, dipekatkan untuk platelet, dan disuntik ke kawasan kulit kepala yang menipis melalui beberapa sesi. Ia dipertimbangkan setelah punca keguguran rambut diketahui, dan tidak boleh menumbuhkan rambut di tempat folikel sudah tiada."
     }
   },
   "results": [
