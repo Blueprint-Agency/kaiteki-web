@@ -20,6 +20,9 @@ export const localePosts: Record<NonDefaultLocale, Post[]> = {
     {
       // kt105 · 激光后注意事项 (also 医美恢复期, 激光祛斑多久恢复; docs/18 §6 Q7).
       slug: "after-facial-laser-aftercare",
+      image: "https://cdn.kaiteki.my/blog/after-facial-laser-aftercare/after-facial-laser-aftercare-cover.png",
+      imageAlt:
+        "线条插图：一名男子轻拍脸颊涂抹保湿霜，两颊以粉色标示",
       category: "Treatments Explained",
       author: "dr-say-wei-xian",
       reviewedBy: "dr-hong-peiyi",
@@ -43,6 +46,9 @@ export const localePosts: Record<NonDefaultLocale, Post[]> = {
     {
       // kt106, see the English entry in content/data/blog.ts for sources.
       slug: "melasma-vs-pigmentation",
+      image: "https://cdn.kaiteki.my/blog/melasma-vs-pigmentation/melasma-vs-pigmentation-cover.png",
+      imageAlt:
+        "线条插图：一名女子用手镜查看脸颊，上脸颊几处色斑以粉色标示",
       title: "黄褐斑和色斑有什么区别？一次分清黄褐斑、晒斑和痘印",
       seoTitle: "黄褐斑和色斑有什么区别？| Kaiteki",
       description: "黄褐斑、晒斑和痘印看起来很像，处理方式却不同。教你从分布和变化分辨黄褐斑与其他色斑，以及为什么做激光前要先分清楚。",
@@ -76,6 +82,9 @@ export const localePosts: Record<NonDefaultLocale, Post[]> = {
     {
       // kt107, see the English entry in content/data/blog.ts for sources.
       slug: "darkening-after-laser",
+      image: "https://cdn.kaiteki.my/blog/darkening-after-laser/darkening-after-laser-cover.png",
+      imageAlt:
+        "线条插图：一名女子指尖轻贴脸颊，脸颊上一块区域以粉色标示",
       title: "激光反黑怎么办？亚洲肤色为什么会反黑，以及现在该做什么",
       seoTitle: "激光反黑怎么办？原因与处理方法 | Kaiteki",
       description: "打完激光反黑怎么办？了解亚洲肤色为何容易反黑、如何分辨反黑与黄褐斑，以及现在该做和不该做的事，什么情况要尽快找医生。",
@@ -110,6 +119,9 @@ export const localePosts: Record<NonDefaultLocale, Post[]> = {
     {
       // kt108, see the English entry in content/data/blog.ts for sources.
       slug: "nasolabial-folds",
+      image: "https://cdn.kaiteki.my/blog/nasolabial-folds/nasolabial-folds-cover.png",
+      imageAlt:
+        "线条插图：一名女子拿着手镜、轻触脸颊，从鼻翼到嘴角的法令纹以粉色标示",
       title: "法令纹可以消除吗？成因与非手术改善选择",
       seoTitle: "法令纹怎么消除？成因与非手术改善选择 | Kaiteki",
       description: "法令纹可以消除吗？了解法令纹变深的成因、医生如何判断，以及填充、胶原蛋白再生针与提拉仪器各适合哪种情况，还有这个部位的填充风险。",
@@ -144,6 +156,9 @@ export const localePosts: Record<NonDefaultLocale, Post[]> = {
     {
       // kt109, see the English entry in content/data/blog.ts for sources.
       slug: "fat-freezing-aftercare",
+      image: "https://cdn.kaiteki.my/blog/fat-freezing-aftercare/fat-freezing-aftercare-cover.png",
+      imageAlt:
+        "线条插图：一名穿运动上衣的女子把一只手放在下腹，下腹以粉色标示",
       title: "冷冻溶脂后注意事项：哪些反应正常，什么时候要找医生",
       seoTitle: "冷冻溶脂后注意事项与后遗症 | Kaiteki",
       description: "冷冻溶脂后泛红、麻木、肿痛正常吗？整理恢复期的正常反应、护理方式、罕见的反常性脂肪增生，以及需要联系医生的情况。",
@@ -178,6 +193,9 @@ export const localePosts: Record<NonDefaultLocale, Post[]> = {
     {
       // kt110, see the English entry in content/data/blog.ts for sources.
       slug: "skin-booster-vs-microneedling",
+      image: "https://cdn.kaiteki.my/blog/skin-booster-vs-microneedling/skin-booster-vs-microneedling-cover.png",
+      imageAlt:
+        "线条插图：一名男子轻触下颌，两颊以带细点的粉色标示",
       title: "水光针和微针的区别：原理、恢复期与适合谁",
       seoTitle: "水光针和微针的区别：原理、恢复期与适合谁 | Kaiteki",
       description: "水光针和微针有什么区别？一个是注射保湿修复成分，一个是射频能量刺激更新。比较原理、适合的皮肤问题、恢复期和不适合的人。",
@@ -214,6 +232,9 @@ export const localePosts: Record<NonDefaultLocale, Post[]> = {
     {
       // kt105 · BM lead piece: pantang selepas laser muka (docs/18 §6 Q7).
       slug: "after-facial-laser-aftercare",
+      image: "https://cdn.kaiteki.my/blog/after-facial-laser-aftercare/after-facial-laser-aftercare-cover.png",
+      imageAlt:
+        "Ilustrasi garis seorang lelaki menepuk pelembap perlahan-lahan pada pipinya, dengan kedua-dua pipi diwarnakan merah jambu",
       category: "Treatments Explained",
       author: "dr-say-wei-xian",
       reviewedBy: "dr-hong-peiyi",
@@ -237,6 +258,9 @@ export const localePosts: Record<NonDefaultLocale, Post[]> = {
     {
       // kt106, see the English entry in content/data/blog.ts for sources.
       slug: "melasma-vs-pigmentation",
+      image: "https://cdn.kaiteki.my/blog/melasma-vs-pigmentation/melasma-vs-pigmentation-cover.png",
+      imageAlt:
+        "Ilustrasi garis seorang wanita memeriksa pipinya dengan cermin tangan, dengan beberapa tompok lembut di pipi atas diwarnakan merah jambu",
       title: "Jeragat vs pigmentasi: apa bezanya, dan kenapa ia penting",
       seoTitle: "Jeragat vs Pigmentasi: Apa Bezanya? | Kaiteki",
       description: "Jeragat (melasma), tompok matahari dan tanda selepas jerawat nampak serupa tetapi berbeza. Cara membezakannya, dan kenapa ia penting sebelum rawatan laser.",
@@ -270,6 +294,9 @@ export const localePosts: Record<NonDefaultLocale, Post[]> = {
     {
       // kt107, see the English entry in content/data/blog.ts for sources.
       slug: "darkening-after-laser",
+      image: "https://cdn.kaiteki.my/blog/darkening-after-laser/darkening-after-laser-cover.png",
+      imageAlt:
+        "Ilustrasi garis seorang wanita meletakkan hujung jarinya pada pipi, dengan satu kawasan pipi diwarnakan merah jambu",
       title: "Kulit gelap selepas laser: kenapa ia berlaku pada kulit Asia dan apa perlu dibuat",
       seoTitle: "Kulit Gelap Selepas Laser: Punca & Apa Perlu Buat | Kaiteki",
       description: "Kulit menjadi gelap selepas laser biasanya hiperpigmentasi pasca-keradangan. Kenapa ia berlaku pada kulit Asia, beza dengan melasma, dan apa perlu dibuat.",
@@ -304,6 +331,9 @@ export const localePosts: Record<NonDefaultLocale, Post[]> = {
     {
       // kt108, see the English entry in content/data/blog.ts for sources.
       slug: "nasolabial-folds",
+      image: "https://cdn.kaiteki.my/blog/nasolabial-folds/nasolabial-folds-cover.png",
+      imageAlt:
+        "Ilustrasi garis seorang wanita memegang cermin tangan dan menyentuh pipinya, dengan garis dari hidung ke hujung mulut diwarnakan merah jambu",
       title: "Cara hilangkan garis senyuman: punca dan pilihan rawatan tanpa pembedahan",
       seoTitle: "Cara Hilangkan Garis Senyuman: Punca & Rawatan | Kaiteki",
       description: "Kenapa garis senyuman semakin dalam, bagaimana doktor menentukan puncanya, dan pilihan rawatan tanpa pembedahan untuk setiap punca, termasuk risiko filler.",
@@ -338,6 +368,9 @@ export const localePosts: Record<NonDefaultLocale, Post[]> = {
     {
       // kt109, see the English entry in content/data/blog.ts for sources.
       slug: "fat-freezing-aftercare",
+      image: "https://cdn.kaiteki.my/blog/fat-freezing-aftercare/fat-freezing-aftercare-cover.png",
+      imageAlt:
+        "Ilustrasi garis seorang wanita berbaju sukan meletakkan sebelah tangan pada perut bawahnya, yang diwarnakan merah jambu",
       title: "Selepas fat freezing: apa yang normal, apa yang membantu dan bila perlu jumpa doktor",
       seoTitle: "Selepas Fat Freezing: Kesan Sampingan & Penjagaan | Kaiteki",
       description: "Apa yang normal selepas rawatan fat freezing, daripada kemerahan dan kebas hingga sakit lewat, apa yang membantu, kesan jarang PAH, dan bila perlu jumpa doktor.",
@@ -372,6 +405,9 @@ export const localePosts: Record<NonDefaultLocale, Post[]> = {
     {
       // kt110, see the English entry in content/data/blog.ts for sources.
       slug: "skin-booster-vs-microneedling",
+      image: "https://cdn.kaiteki.my/blog/skin-booster-vs-microneedling/skin-booster-vs-microneedling-cover.png",
+      imageAlt:
+        "Ilustrasi garis seorang lelaki menyentuh rahangnya, dengan pipinya diwarnakan merah jambu bertitik halus",
       title: "Skin booster vs microneedling: apa bezanya, dan mana sesuai untuk kulit anda",
       seoTitle: "Skin Booster vs Microneedling: Apa Bezanya | Kaiteki",
       description: "Skin booster vs microneedling: satu menyuntik bahan pelembap atau pemulih, satu lagi guna tenaga RF. Cara kerja, pemulihan dan siapa yang tidak sesuai.",

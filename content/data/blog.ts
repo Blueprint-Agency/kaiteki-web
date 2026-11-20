@@ -565,6 +565,9 @@ const authored: Post[] = [
     // Sources: Davis & Callender, J Clin Aesthet Dermatol 2010 (PIH in skin of
     // colour); Mayo Clinic, laser resurfacing; The Star QuickCheck, 6 Mar 2026.
     slug: "after-facial-laser-aftercare",
+    image: "https://cdn.kaiteki.my/blog/after-facial-laser-aftercare/after-facial-laser-aftercare-cover.png",
+    imageAlt:
+      "Line illustration of a man gently patting moisturiser onto his cheek, with both cheeks shaded pink",
     title: "What to avoid after laser treatment on your face, and which rules are myths",
     seoTitle: "What to Avoid After Laser Treatment on Your Face | Kaiteki",
     description:
@@ -607,6 +610,9 @@ const authored: Post[] = [
     // Aesthet Dermatol 2010 (PIH in skin of colour); AAD, Melasma overview.
     // Author dr-lim-xiao-chien, reviewer dr-jacqueline-tan (both proposed).
     slug: "melasma-vs-pigmentation",
+    image: "https://cdn.kaiteki.my/blog/melasma-vs-pigmentation/melasma-vs-pigmentation-cover.png",
+    imageAlt:
+      "Line illustration of a woman checking her cheek in a hand mirror, with a few soft patches on her upper cheek shaded pink",
     title: "Melasma vs pigmentation: how to tell them apart, and why it matters",
     seoTitle: "Melasma vs Pigmentation: How to Tell Them Apart | Kaiteki",
     description: "Melasma, sun spots and post-inflammatory marks look alike but behave differently. How to tell melasma from other pigmentation, and why it matters before laser.",
@@ -652,6 +658,9 @@ const authored: Post[] = [
     // cancellations of cosmetic notifications for mercury/hydroquinone/tretinoin.
     // Bodies: content/blog/darkening-after-laser.mdx, content/blog/zh/…, content/blog/ms/….
     slug: "darkening-after-laser",
+    image: "https://cdn.kaiteki.my/blog/darkening-after-laser/darkening-after-laser-cover.png",
+    imageAlt:
+      "Line illustration of a woman resting her fingertips against her cheek, with one area of the cheek shaded pink",
     title: "Darkening after laser treatment: why it happens on Asian skin and what to do",
     seoTitle: "Darkening After Laser Treatment: What to Do | Kaiteki",
     description: "Skin turning darker after a laser is usually post-inflammatory hyperpigmentation. Why it happens on Asian skin, how to tell it from melasma, and what to do now.",
@@ -695,6 +704,9 @@ const authored: Post[] = [
     // radiofrequency pages and the fine-lines-wrinkles concern page ("support placed
     // above the fold"). Author dr-yvonne-chuah, reviewer dr-lucas-chew, both proposed.
     slug: "nasolabial-folds",
+    image: "https://cdn.kaiteki.my/blog/nasolabial-folds/nasolabial-folds-cover.png",
+    imageAlt:
+      "Line illustration of a woman holding a hand mirror and touching her cheek, with the folds from her nose to the corners of her mouth shaded pink",
     title: "Nasolabial folds: why they deepen and the non-surgical options a doctor considers",
     seoTitle: "Nasolabial Folds Treatment: Causes & Options | Kaiteki",
     description: "Why nasolabial folds deepen, how a doctor finds the cause, and which non-surgical options are considered for each, with the filler risks in this area.",
@@ -740,6 +752,9 @@ const authored: Post[] = [
     // compression garment, stable weight, review ~2 months) and "your doctor's instructions".
     // Author Dr Calvin Tan, reviewer Dr Tim Chua, both proposed.
     slug: "fat-freezing-aftercare",
+    image: "https://cdn.kaiteki.my/blog/fat-freezing-aftercare/fat-freezing-aftercare-cover.png",
+    imageAlt:
+      "Line illustration of a woman in a sports top resting one hand on her lower abdomen, which is shaded pink",
     title: "Fat freezing aftercare: what is normal, what helps and when to call your doctor",
     seoTitle: "Fat Freezing Side Effects & Aftercare | Kaiteki",
     description: "What is normal after fat freezing, from redness and numbness to delayed pain, what helps, the rare paradoxical fat growth, and when to call your doctor.",
@@ -786,6 +801,9 @@ const authored: Post[] = [
     // /treatments/microneedling pages (durationDowntime, afterSession, avoidIf).
     // Author Dr Jeremy Low, reviewer Dr Chang Chee Seong, both proposed.
     slug: "skin-booster-vs-microneedling",
+    image: "https://cdn.kaiteki.my/blog/skin-booster-vs-microneedling/skin-booster-vs-microneedling-cover.png",
+    imageAlt:
+      "Line illustration of a man touching his jaw, with his cheeks shaded pink and finely stippled",
     title: "Skin booster vs microneedling: how they differ and which suits your skin",
     seoTitle: "Skin Booster vs Microneedling: How They Differ | Kaiteki",
     description: "Skin booster vs microneedling: one injects a hydrating or regenerative material, the other uses RF energy. How each works, recovery, and who should avoid them.",
