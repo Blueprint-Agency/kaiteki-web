@@ -12,6 +12,11 @@
   "lastReviewed": "2026-11-09",
   "seoTitle": "马来西亚去肉粒与点痣：皮赘和痣 | Kaiteki",
   "seoDescription": "皮赘（肉粒）是良性的，去除很快；痣则要先由医生检查，确保需要化验的组织不会被激光直接打掉。WhatsApp 预约 Kaiteki 医生免费咨询。",
+  "banner": {
+    "src": "https://cdn.kaiteki.my/concerns/skin-tags-moles/banner.jpg",
+    "sm": "https://cdn.kaiteki.my/concerns/skin-tags-moles/banner-mobile.jpg",
+    "alt": "示意图片：一名穿着亚麻衬衫的女子，拿着手镜检查颈部的皮肤"
+  },
   "facts": [
     {
       "value": "皮赘是良性的",

@@ -1216,6 +1216,24 @@
       "manual": true
     },
     {
+      "source": "concerns/skin-tags-moles/banner.jpg",
+      "key": "concerns/skin-tags-moles/banner.jpg",
+      "concern": "skin-tags-moles",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/skin-tags-moles/banner-mobile.jpg",
+      "key": "concerns/skin-tags-moles/banner-mobile.jpg",
+      "concern": "skin-tags-moles",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
       "source": "concerns/tattoo-removal/card-2.jpg",
       "key": "concerns/tattoo-removal/card-2.jpg",
       "concern": "tattoo-removal",

@@ -1530,8 +1530,15 @@ export const concerns: Concern[] = [
     seoDescription:
       "Skin tags are harmless and quick to remove; moles are examined first, so nothing that needs testing is lasered away. Book a free consultation at Kaiteki.",
 
-    // ── 01 · no banner yet: the card image is an AI-generated illustrative
-    // photograph (Higgsfield), not a patient and not a result.
+    // ── 01 · banner cropped from the card image, an AI-generated illustrative
+    // photograph (Higgsfield), not a patient and not a result. Subject is
+    // already hard left with an empty wall on the right, so the headline
+    // sits on the wall. Uploaded by hand (`manual` in config/concern-media.json).
+    banner: {
+      src: "https://cdn.kaiteki.my/concerns/skin-tags-moles/banner.jpg",
+      sm: "https://cdn.kaiteki.my/concerns/skin-tags-moles/banner-mobile.jpg",
+      alt: "Illustrative image: a woman in a linen shirt checking the skin on her neck in a hand mirror",
+    },
 
     // ── 02 · process facts, no time-to-result (R-01).
     facts: [

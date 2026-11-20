@@ -12,6 +12,11 @@
   "lastReviewed": "2026-11-09",
   "seoTitle": "Buang Skin Tag & Tahi Lalat di Malaysia | Kaiteki",
   "seoDescription": "Skin tag tidak berbahaya dan cepat dibuang; tahi lalat diperiksa dahulu supaya tiada yang perlu diuji dilaser begitu sahaja. Tempah konsultasi percuma di Kaiteki.",
+  "banner": {
+    "src": "https://cdn.kaiteki.my/concerns/skin-tags-moles/banner.jpg",
+    "sm": "https://cdn.kaiteki.my/concerns/skin-tags-moles/banner-mobile.jpg",
+    "alt": "Imej ilustrasi: seorang wanita berbaju linen memeriksa kulit di lehernya dengan cermin tangan"
+  },
   "facts": [
     {
       "value": "Skin tag tidak berbahaya",

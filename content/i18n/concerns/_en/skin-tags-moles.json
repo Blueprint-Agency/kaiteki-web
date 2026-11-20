@@ -12,6 +12,11 @@
   "lastReviewed": "2026-11-09",
   "seoTitle": "Skin Tag & Mole Removal in Malaysia | Kaiteki",
   "seoDescription": "Skin tags are harmless and quick to remove; moles are examined first, so nothing that needs testing is lasered away. Book a free consultation at Kaiteki.",
+  "banner": {
+    "src": "https://cdn.kaiteki.my/concerns/skin-tags-moles/banner.jpg",
+    "sm": "https://cdn.kaiteki.my/concerns/skin-tags-moles/banner-mobile.jpg",
+    "alt": "Illustrative image: a woman in a linen shirt checking the skin on her neck in a hand mirror"
+  },
   "facts": [
     {
       "value": "Skin tags are harmless",
