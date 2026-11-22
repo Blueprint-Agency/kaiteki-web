@@ -2876,6 +2876,9 @@ export const technology: Technology[] = [
     group: "Injectables",
     type: "injectable",
     treatments: ["skin-booster"],
+    // Illustrative photograph (Higgsfield gpt_image_2_6), not a Kaiteki patient.
+    image: "https://cdn.kaiteki.my/images/technology/ecm-skin-booster.jpg",
+    imageAlt: "A doctor in pink gloves gives a skin booster injection into a patient's cheek",
     summary:
       "Essalia is the extracellular matrix (ECM) injectable used at Kaiteki, made from purified donated human dermal tissue, within skin-booster treatment for skin texture, density and elasticity.",
     leadAnswer:
@@ -2887,7 +2890,7 @@ export const technology: Technology[] = [
     ],
     results: [
       {
-        src: "https://cdn.kaiteki.my/technology/ecm-skin-booster/before-after-01.jpg",
+        src: "https://cdn.kaiteki.my/images/technology/ecm-skin-booster-before-after-01.jpg",
         nativeWidth: 864,
         ratio: "1/1",
         caption: "Before and after ECM skin booster (Essalia) treatment at Kaiteki",

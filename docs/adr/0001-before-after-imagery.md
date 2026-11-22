@@ -126,7 +126,8 @@ booster page (`/technology/ecm-skin-booster`) and asked that it appear there.
   beneath the photographs ("improves blemish marks", "more even skin tone", "smoother
   texture"). Those were cropped off before upload: an image must not carry claim text the page
   could not print (§2). The eyes were already masked by the clinic. Stored at
-  `technology/ecm-skin-booster/before-after-01.jpg`, 864×864, not upscaled (§3.5).
+  `images/technology/ecm-skin-booster-before-after-01.jpg` (inside the `/images/**` prefix
+  `next.config.ts` allows; a first upload under `technology/` was refused by the image optimiser), 864×864, not upscaled (§3.5).
 - §5 applies unchanged: the MAB-adviser review now covers technology pages as well.
 - **Caption.** "Before and after ECM skin booster (Essalia) treatment at Kaiteki". It names the
   product but not the number of sessions, on the project owner's instruction (2026-11-22), so it
