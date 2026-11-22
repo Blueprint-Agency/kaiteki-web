@@ -210,6 +210,13 @@ export interface Technology {
   costFactors?: { intro: string; factors: string[]; outro?: string };
   /** Optional device-brand logo (existing /images/tech logos). */
   device?: string;
+  /**
+   * The clinic's own before/after photographs of this product, under the
+   * conditions of ADR-0001 §3 (captioned, disclaimed, never schema). Unlike a
+   * treatment page these are credited to the product, because the clinic
+   * filed them by it (docs/adr/0001-before-after-imagery.md §7).
+   */
+  results?: Concern["results"];
   reviewedBy?: string;
   lastReviewed?: string;
   /** SEO-optimized <title>, 50–60 chars, brand baked in (docs/10). */

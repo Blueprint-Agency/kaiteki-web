@@ -110,3 +110,24 @@ before/after photos, placed high on the page rather than near the bottom.
   clinic supplies cleared images.
 - §5 applies to the new placements unchanged: the MAB-adviser review now covers treatment
   pages as well.
+
+## 7. Amendment, 2026-11-21: technology pages
+
+**Instruction:** the project owner supplied a clinic-made before/after for the new ECM skin
+booster page (`/technology/ecm-skin-booster`) and asked that it appear there.
+
+- **Field.** `Technology.results` takes the same shape as `Concern.results` and renders through
+  the same `ResultsBlock`, so the caption (§3.1) and `<ResultsDisclaimer />` (§3.2) come with it.
+  It renders under the lead answer, as on treatment pages.
+- **Credited to the product.** Unlike §6, the image is credited to the page it sits on, because
+  the clinic filed it by product: the source poster is titled "ECM Skinbooster" (Essalia). A technology
+  page may only carry results the clinic attributes to that product.
+- **Source cropped.** The supplied file was a social poster with three outcome claims printed
+  beneath the photographs ("improves blemish marks", "more even skin tone", "smoother
+  texture"). Those were cropped off before upload: an image must not carry claim text the page
+  could not print (§2). The eyes were already masked by the clinic. Stored at
+  `technology/ecm-skin-booster/before-after-01.jpg`, 864×864, not upscaled (§3.5).
+- §5 applies unchanged: the MAB-adviser review now covers technology pages as well.
+- **Caption.** "Before and after ECM skin booster (Essalia) treatment at Kaiteki". It names the
+  product but not the number of sessions, on the project owner's instruction (2026-11-22), so it
+  departs from the session-count example in §3.1.
