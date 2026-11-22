@@ -2866,6 +2866,138 @@ export const technology: Technology[] = [
       "Hydrodeluxe is a non-crosslinked hyaluronic acid injectable used in Kaiteki's skin-booster treatment for hydration and skin quality. Book a free consultation.",
   },
   {
+    // ECM boosters are the newest skin-booster category Kaiteki offers (client
+    // brief, 2026-11-21). The material is human-derived, so the page states that
+    // plainly and never calls it "safe": published safety data is thin, and the
+    // copy says so. Other brands are named as what a reader may see in
+    // context; Kaiteki uses Essalia (client, 2026-11-22).
+    slug: "ecm-skin-booster",
+    name: "ECM Skin Booster",
+    group: "Injectables",
+    type: "injectable",
+    treatments: ["skin-booster"],
+    summary:
+      "Essalia is the extracellular matrix (ECM) injectable used at Kaiteki, made from purified donated human dermal tissue, within skin-booster treatment for skin texture, density and elasticity.",
+    leadAnswer:
+      "An ECM skin booster is an injectable made from human acellular dermal matrix: donated skin tissue with every cell and all genetic material removed, leaving the collagen and elastin framework. Kaiteki uses Essalia. It aims to supply the skin's structural scaffold directly, rather than only hydrating like hyaluronic acid. Evidence is still early.",
+    facts: [
+      { value: "Human acellular dermal matrix", label: "Material" },
+      { value: "Essalia (Juveacell)", label: "Product used" },
+      { value: "Skin booster", label: "Used within" },
+    ],
+    results: [
+      {
+        src: "https://cdn.kaiteki.my/technology/ecm-skin-booster/before-after-01.jpg",
+        nativeWidth: 864,
+        ratio: "1/1",
+        caption: "Before and after ECM skin booster (Essalia) treatment at Kaiteki",
+      },
+    ],
+    sections: [
+      {
+        heading: "What is an ECM skin booster?",
+        body: [
+          "The extracellular matrix is the framework of collagen, elastin and hyaluronic acid that gives skin its structure. Think of it as the frame of a house: the pillars, the beams and the flooring that everything else rests on. With age and sun exposure that framework thins and breaks down, which shows up as fine lines, rough texture, looser skin and a crepey look in thin areas such as under the eyes.",
+          "An ECM skin booster aims to put structural material back into the skin directly. That is the difference from the boosters most people already know: a hyaluronic acid booster mainly holds water, and a polynucleotide booster is directed at the skin's own repair environment, whereas an ECM booster supplies the collagen and elastin scaffold itself. Whether it suits your skin, and which product, is decided by a doctor after examining you.",
+        ],
+      },
+      {
+        heading: "Is it really made from human skin?",
+        body: [
+          "Yes. Most ECM products on the market are made from human skin donated by deceased donors, through regulated tissue banks. This is not a new idea in medicine: acellular dermal matrix has been used for years as a graft material in breast reconstruction and nerve repair. What is new is processing it into an injectable for skin quality.",
+          "The donated tissue is processed to remove all cells and genetic material, a step called decellularisation, which leaves a purified collagen and elastin rich framework. That framework is then formulated into very fine particles. Depending on the product, it arrives either as a powder that the doctor dissolves in saline just before injecting, or as a ready-made gel in a syringe.",
+          "If you have personal, religious or ethical considerations about a human-derived material, please raise them at consultation. There are other categories of skin booster, and the doctor can talk you through them.",
+        ],
+      },
+      {
+        heading: "Essalia, Juveacell, Re2O: which ECM product does Kaiteki use?",
+        body: [
+          "Kaiteki uses Essalia, which is the name Juveacell is known by in Malaysia. Other ECM boosters you may come across include Elravie Re2O (often written Re20) and CellREDM. They share the same basic material but differ in how the tissue is processed, the particle form and how the product is prepared for injection.",
+          "Whether Essalia suits you, the amount used and how it is distributed across the face are decided by the treating doctor after examining your skin.",
+        ],
+      },
+      {
+        heading: "Which skin concerns is an ECM booster considered for?",
+        body: [
+          "ECM boosters are considered where the concern is skin quality and structure rather than volume or contour. It is not suitable for everyone, and a consultation determines whether it is appropriate for you. Concerns it is commonly considered for include:",
+        ],
+        list: [
+          "Fine lines from early skin thinning and dehydration",
+          "Rough texture and enlarged-looking pores",
+          "Loss of elasticity and skin density",
+          "Crepey or thin skin, such as under the eyes",
+          "Longer-term skin quality, used alongside other skin boosters in a plan",
+        ],
+      },
+      {
+        heading: "What does the research on ECM injectables show so far?",
+        body: [
+          "Early published studies have reported gains in skin density, elasticity, hydration, wrinkles and pore appearance. A randomised, double-blinded split-face trial of a particulated human acellular dermal matrix booster reported improvements in skin measures, and laboratory work has reported increased fibroblast activity and extracellular matrix production.",
+          "The evidence is honestly still early: the studies are small and long-term data is limited. Where change happens, it builds gradually over weeks rather than overnight, and a series of sessions is usually involved. Results vary between individuals and are not guaranteed.",
+        ],
+      },
+      {
+        heading: "Who should avoid or postpone ECM injections?",
+        body: [
+          "An ECM booster may not be suitable during pregnancy or breastfeeding, where there is active infection, an acne flare or inflammation at the injection site, if you have an autoimmune condition, if you have a bleeding disorder or take blood-thinning medication, or if you tend to form keloid or raised scars. A previous reaction to any injectable or to a tissue-derived product should always be mentioned.",
+          "Please bring your full medical history, allergies, medications and any previous injectable treatments to consultation so the doctor can advise safely.",
+        ],
+      },
+      {
+        heading: "What happens at an ECM skin booster appointment?",
+        body: [
+          "Your first visit is a doctor consultation and skin assessment, not a treatment. If an ECM booster is appropriate, the skin is cleansed and a numbing cream is usually applied and left to take effect. Where the product is a powder, the doctor prepares it with saline at the start of the session.",
+          "The doctor then places a series of small, shallow injections across the assessed area. Small bumps at the injection points are expected and commonly settle within a day or two, though this varies. A course of several sessions spaced a few weeks apart is common, and your doctor sets the number and interval for your skin rather than a fixed package.",
+          "Afterwards, keep skincare gentle, avoid makeup for the rest of the day, and use daily sunscreen. Your doctor will tell you when to resume actives, exercise and heat exposure.",
+        ],
+      },
+      {
+        heading: "What are the side effects and risks of ECM boosters?",
+        body: [
+          "Published safety data on ECM injectables specifically is still thin, so the risks below are the general risks of injecting into the skin. They are explained at consultation before anything is booked.",
+        ],
+        list: [
+          "Redness, swelling, bruising and tenderness at the injection sites",
+          "Small bumps or nodules",
+          "Infection or inflammation",
+          "Allergic or immune reactions, which are less common",
+        ],
+      },
+    ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. What moves it:",
+      factors: [
+          "The area being treated: a full face and the under-eye area alone differ.",
+        "How many sessions your skin is likely to need.",
+        "Whether the ECM booster is combined with another skin booster in the same plan.",
+      ],
+    },
+    faqs: [
+      {
+        q: "Is an ECM skin booster safe if it comes from human tissue?",
+        a: "The tissue comes from regulated tissue banks and is processed to remove all cells and genetic material before it is made into an injectable, and the same kind of material has a long history as a surgical graft. That said, published safety data on the injectable form is still limited, and like any injection it carries risks such as swelling, bumps, infection and, less commonly, allergic or immune reactions. Your doctor will go through these with you.",
+      },
+      {
+        q: "How is an ECM booster different from Profhilo or Rejuran?",
+        a: "Profhilo is a hyaluronic acid booster, chosen mainly for hydration. Rejuran is a polynucleotide booster, directed at the skin's own repair environment. An ECM booster supplies structural collagen and elastin directly. They are different categories rather than better or worse versions of one another, and they are sometimes used together in a plan. Which fits your skin is assessed by a doctor in person.",
+      },
+      {
+        q: "How many sessions will I need, and when will I see a change?",
+        a: "Change, where it happens, builds gradually over weeks rather than straight after the session, and a series of sessions is usually involved. The number and spacing depend on your skin and on the product used, so your doctor sets them at consultation rather than in advance.",
+      },
+      {
+        q: "Can an ECM booster be combined with other skin boosters?",
+        a: "Yes, it is often used alongside other skin boosters as part of a longer-term skin quality plan, for example pairing structural support with hydration. Your doctor decides the order and spacing so that each treatment has time to settle before the next.",
+      },
+    ],
+    reviewedBy: "dr-hong-peiyi",
+    lastReviewed: "2026-11-21",
+    seoTitle: "Essalia ECM Skin Booster (Juveacell) Malaysia | Kaiteki",
+    seoDescription:
+      "Essalia is the ECM skin booster Kaiteki uses: purified human dermal matrix for skin texture, density and elasticity. How it works, risks, who it suits.",
+  },
+  {
     // Botox is a prescription medicine, not a device or cosmetic. Copy stays
     // factual and mechanism-level: no efficacy, longevity or outcome claims, no
     // pricing, no "packages", and every line defers dose and suitability to an

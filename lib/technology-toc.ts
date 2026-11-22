@@ -53,6 +53,8 @@ export type TechnologyTocLabels = {
   faqHeading: string;
   typeWord: { device: string; injectable: string };
   alternatives?: string;
+  /** The rendered results heading, when the page shows before/after photos. */
+  results?: string;
 };
 
 const EN_LABELS: TechnologyTocLabels = {
@@ -85,6 +87,8 @@ export function technologyToc(
   const anchors = technologySectionAnchors(x, anchorSource);
 
   const entries: (Heading | false | undefined)[] = [
+    // Results render first, straight under the lead answer (ADR-0001 §6).
+    !!x.results?.length && !!L.results && h("results", L.results),
     ...(x.sections ?? []).map((s, i) => h(anchors[i], s.heading)),
     hasConcerns && h("may-help-with", L.concernsHeading.replace("{type}", typeWord)),
     hasTreatments && h("used-in", L.usedInHeading.replace("{name}", x.name)),

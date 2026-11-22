@@ -14,6 +14,8 @@ import { ReadNext } from "@/components/blog/ReadNext";
 import { ConcernCard, TreatmentCard, TechnologyCard } from "@/components/cards";
 import { CardRow } from "@/components/CardRow";
 import { Section, FactRail, CostFactors } from "@/components/treatment-blocks";
+import { ResultsBlock } from "@/components/concern-blocks";
+import { resultsHeading } from "@/lib/concern-toc";
 import {
   treatmentsOfTechnology,
   concernsOfTechnology,
@@ -192,6 +194,9 @@ export function TechnologyView({
       faqHeading: cu.faqHeading,
       typeWord: ui.typeWord,
       alternatives,
+      results: x.results?.length
+        ? resultsHeading(x.results, { illustrated: cu.resultsIllustrated, patients: cu.resultsPatients })
+        : undefined,
     },
     source,
   );
@@ -263,6 +268,11 @@ export function TechnologyView({
             <ArticleToc headings={headings} label={cu.onThisPage} />
           </div>
         )}
+
+        {/* The clinic's own photographs of this product, straight under the
+            answer as the treatment page places them. Captioned per image and
+            disclaimed by the block itself (ADR-0001 §3, §7). */}
+        <ResultsBlock items={x.results} ui={cu} locale={locale} />
 
         {/* The reading spine. Anchor ids derive from the heading, so every
             section is addressable without a second data field — which is what
