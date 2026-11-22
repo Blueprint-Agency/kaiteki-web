@@ -15,6 +15,7 @@ import { ConcernCard, TreatmentCard, TechnologyCard } from "@/components/cards";
 import { CardRow } from "@/components/CardRow";
 import { Section, FactRail, CostFactors } from "@/components/treatment-blocks";
 import { ResultsBlock } from "@/components/concern-blocks";
+import { TechBlocks } from "@/components/tech-blocks";
 import { resultsHeading } from "@/lib/concern-toc";
 import {
   treatmentsOfTechnology,
@@ -299,7 +300,10 @@ export function TechnologyView({
           </Section>
         ))}
 
-        {sections.length === 0 && (
+        {/* Visual blocks: icon cards, timeline, chips, diagram (tech-blocks.tsx). */}
+        <TechBlocks blocks={x.blocks} />
+
+        {sections.length === 0 && !x.blocks?.length && (
           <Section>
             <p className="max-w-[68ch] text-lg leading-relaxed text-ink-700">
               {fmt(ui.pending, { summary: x.summary, name: x.name })}

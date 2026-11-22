@@ -436,6 +436,33 @@ body {
     opacity: 1;
   }
 
+  /* ECM scaffold diagram (components/tech-blocks.tsx): on first view the
+     fibres draw themselves in, a beat apart, then the booster particles of the
+     third panel settle into the gaps. Static and complete without motion. */
+  .reveal-ready .ecm-diagram .sd-line {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    transition: stroke-dashoffset 1300ms var(--ease-out-expo);
+    transition-delay: calc(200ms + var(--i, 0) * 70ms);
+  }
+  .reveal-ready .ecm-diagram.is-visible .sd-line {
+    stroke-dashoffset: 0;
+  }
+  .reveal-ready .ecm-diagram .ecm-particles circle {
+    opacity: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: translateY(-14px) scale(0.4);
+    transition:
+      opacity 500ms var(--ease-out-quart),
+      transform 700ms var(--ease-out-expo);
+    transition-delay: calc(1100ms + var(--i, 0) * 60ms);
+  }
+  .reveal-ready .ecm-diagram.is-visible .ecm-particles circle {
+    opacity: 1;
+    transform: none;
+  }
+
   /* A short stagger for lists of peers (causes, location cards): each item
      rises a beat after the one before. Pairs with .reveal. */
   .reveal-ready .reveal.reveal-stagger {

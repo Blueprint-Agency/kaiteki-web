@@ -217,6 +217,13 @@ export interface Technology {
    * filed them by it (docs/adr/0001-before-after-imagery.md §7).
    */
   results?: Concern["results"];
+  /**
+   * Visual blocks rendered after `sections`, in order, each with its own h2 and
+   * anchor (components/tech-blocks.tsx). For pages that read better scanned than
+   * read: icon cards, a timeline, chips, a callout, paired checklists, or a
+   * named diagram. Content stays here; the component only lays it out.
+   */
+  blocks?: TechBlock[];
   reviewedBy?: string;
   lastReviewed?: string;
   /** SEO-optimized <title>, 50–60 chars, brand baked in (docs/10). */
@@ -224,6 +231,58 @@ export interface Technology {
   /** SEO meta description, 140–160 chars (docs/10). */
   seoDescription?: string;
 }
+
+/** Icon names a technology block may use (components/tech-blocks.tsx maps them). */
+export type TechIcon =
+  | "droplet" | "sparkle" | "layers" | "syringe" | "beaker" | "heart" | "eye" | "clock"
+  | "shield" | "check" | "x" | "sun" | "tone" | "waves" | "texture" | "calendar" | "search" | "chat";
+
+/** One visual block on a technology page. `heading` is the h2 and the anchor. */
+export type TechBlock =
+  | {
+      kind: "cards";
+      heading: string;
+      intro?: string;
+      items: { icon: TechIcon; eyebrow: string; title: string; body: string; highlight?: string }[];
+    }
+  | {
+      kind: "diagram";
+      heading: string;
+      intro?: string;
+      /** A named, hand-drawn SVG. `ecm-scaffold`: the dermal framework, intact,
+       *  thinned with age, and with booster particles settling into the gaps. */
+      diagram: "ecm-scaffold";
+      panels: { title: string; body: string }[];
+      caption: string;
+    }
+  | {
+      kind: "steps";
+      heading: string;
+      intro?: string;
+      items: { icon: TechIcon; title: string; body: string; tag?: string }[];
+      note?: string;
+    }
+  | {
+      kind: "chips";
+      heading: string;
+      intro?: string;
+      items: { icon: TechIcon; label: string }[];
+      note?: string;
+    }
+  | {
+      kind: "callout";
+      heading: string;
+      badge: string;
+      points: string[];
+      note: string;
+    }
+  | {
+      kind: "checklists";
+      heading: string;
+      intro?: string;
+      columns: { title: string; tone: "avoid" | "neutral"; items: string[] }[];
+      note?: string;
+    };
 
 /** A bold lead-in bullet: `lead` renders semibold, `body` plain after it. */
 export interface LeadIn {
