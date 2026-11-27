@@ -18,7 +18,7 @@
   "reviewedBy": "dr-lucas-chew",
   "lastReviewed": "2026-07-13",
   "seoTitle": "Rawatan Laser Buang Bulu di Malaysia | IPL & RF | Kaiteki",
-  "seoDescription": "Laser buang bulu di Malaysia guna IPL dan radiofrekuensi melalui satu siri sesi. Tempah konsultasi percuma dengan doktor Kaiteki untuk menilai kesesuaian.",
+  "seoDescription": "Laser buang bulu di Malaysia dengan platform IPL dan radiofrekuensi Alma: siapa yang sesuai, kenapa perlu satu siri sesi, mencukur antara sesi dan faktor kos.",
   "typicalSessions": "Satu siri sesi, dijarakkan mengikut kitaran pertumbuhan bulu",
   "facts": [
     {
@@ -67,8 +67,20 @@
       "body": "Lawatan pertama anda ialah konsultasi, bukan rawatan. Kawasan rawatan, jenis bulu dan warna kulit dinilai, dan kawasan ujian mungkin dipertimbangkan dahulu."
     },
     {
+      "title": "Cukur terlebih dahulu",
+      "body": "Anda biasanya diminta mencukur tidak lama sebelum temu janji, bukan waxing atau mencabut, supaya bulu di atas kulit pendek sementara folikel di bawah kulit tetap utuh."
+    },
+    {
+      "title": "Persediaan",
+      "body": "Kawasan itu dibersihkan, gel disapu jika perlu dan pelindung mata dipakai."
+    },
+    {
       "title": "Rawatan",
-      "body": "Kawasan itu dibersihkan dan aplikator yang disejukkan digerakkan di atasnya berulang kali, membina kehangatan secara beransur-ansur."
+      "body": "Aplikator yang disejukkan digerakkan di atas kawasan itu berulang kali, membina kehangatan secara beransur-ansur. Kebanyakan orang menggambarkan rasa hangat yang merebak, bukan rasa petikan seperti mesin yang ditekan setempat. Kawasan kecil seperti ketiak mungkin hanya mengambil beberapa minit; kaki penuh atau belakang badan mengambil masa yang jauh lebih lama."
+    },
+    {
+      "title": "Selepas rawatan",
+      "body": "Lindungi kawasan yang terdedah daripada matahari, dan pada hari pertama elakkan haba seperti mandi air panas, sauna atau senaman berat, serta jangan guna deodoran atau produk berwangian pada kulit yang baru dirawat."
     }
   ],
   "afterSession": {
@@ -117,7 +129,8 @@
       "heading": "Apa itu laser buang bulu?",
       "body": [
         "Laser Buang Bulu ialah rawatan yang bertujuan mengurangkan bulu yang tidak diingini dengan menyasarkan folikel bulu menggunakan teknologi berasaskan cahaya atau tenaga.",
-        "Ia biasanya dipertimbangkan untuk kawasan seperti ketiak, kaki, lengan atau muka."
+        "Ia biasanya dipertimbangkan untuk kawasan seperti ketiak, kaki, lengan atau muka.",
+        "Sebenarnya, platform Alma yang digunakan di Kaiteki bukan laser satu panjang gelombang. Aplikatornya memancarkan cahaya jalur lebar (IPL), yang dibentuk ke arah panjang gelombang yang paling kuat diserap oleh melanin, bersama pemanasan radiofrekuensi. “Laser buang bulu” ialah nama yang paling ramai orang cari, jadi nama itulah yang digunakan di sini."
       ]
     },
     {
@@ -144,6 +157,14 @@
     {
       "q": "Boleh ke cukur bulu antara sesi laser buang bulu?",
       "a": "Boleh. Mencukur tidak mengapa, tetapi waxing, mencabut, threading dan krim buang bulu biasanya dielakkan antara sesi, kerana ia membuang isi folikel yang perlu disasarkan oleh cahaya."
+    },
+    {
+      "q": "Ini laser atau IPL buang bulu?",
+      "a": "Ia ialah IPL yang digabungkan dengan radiofrekuensi. Cahaya diserap oleh pigmen dalam folikel, manakala radiofrekuensi memanaskan tisu di sekelilingnya, jadi folikel boleh mencapai suhu yang diperlukan dengan tenaga cahaya yang lebih rendah. Gabungan yang sesuai dengan bulu dan kulit anda ditentukan oleh doktor semasa konsultasi."
+    },
+    {
+      "q": "Laser buang bulu sakit tak?",
+      "a": "Kebanyakan orang menggambarkan rasa hangat yang merebak, bukan rasa petikan berulang seperti denyutan yang ditekan setempat, kerana aplikator digerakkan di atas kawasan itu dan haba terbina secara beransur-ansur. Hujung aplikator disejukkan sepanjang masa. Keselesaan tetap berbeza antara individu dan antara kawasan badan, dan doktor akan menerangkan apa yang dijangka terlebih dahulu."
     }
   ]
 }

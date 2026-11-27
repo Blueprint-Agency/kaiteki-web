@@ -31,8 +31,27 @@ export type LocalePageEntry =
 // doctor has read yet. Their signed date covers the earlier text only. The new
 // strings are the ones added in the commit that published them; send those to
 // each page's reviewer, and correct any line they change.
+// 2026-11-17 (kt111-kt115): the same arrangement, not yet approved by the owner
+// for this batch. /treatments/pico-laser, /treatments/laser-hair-removal,
+// /concerns/dark-eye-circles, /concerns/hair-loss and
+// /locations/pelangi-johor-bahru carry 中文 and BM strings drafted by Claude
+// (33 per locale, plus the Pelangi `about` and meta in locations.ts) that no
+// doctor has read. Their signed dates cover the earlier text only.
 export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntry>> = {
   zh: {
+    // Blog (kt105-kt110): each post signed by its reviewer, the hub by Dr Chew
+    // like the other hubs, all reported read by the owner on 2026-11-10.
+    "/blog": { status: "signed", date: "2026-11-10", doctor: "dr-chew-yuhhui" },
+    "/blog/after-facial-laser-aftercare": { status: "signed", date: "2026-11-10" },
+    "/blog/melasma-vs-pigmentation": { status: "signed", date: "2026-11-10" },
+    "/blog/darkening-after-laser": { status: "signed", date: "2026-11-10" },
+    "/blog/nasolabial-folds": { status: "signed", date: "2026-11-10" },
+    "/blog/fat-freezing-aftercare": { status: "signed", date: "2026-11-10" },
+    "/blog/skin-booster-vs-microneedling": { status: "signed", date: "2026-11-10" },
+    // kt102 and kt104: drafted 2026-11-20 from the signed English posts and
+    // reported signed by the owner the same day.
+    "/blog/ice-pick-scars": { status: "signed", date: "2026-11-20" },
+    "/blog/sculptra-vs-radiesse": { status: "signed", date: "2026-11-20" },
     "/": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/concerns": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/treatments": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
@@ -140,11 +159,26 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/concerns/fine-lines-wrinkles": { status: "signed", date: "2026-10-28" },
     "/concerns/hair-loss": { status: "signed", date: "2026-10-28" },
     "/concerns/melasma": { status: "signed", date: "2026-10-28" },
+    // kt101: Dr Chew signed the English and both translations, 2026-11-09.
+    "/concerns/skin-tags-moles": { status: "signed", date: "2026-11-09" },
     "/concerns/pigmentation": { status: "signed", date: "2026-10-28" },
     "/concerns/tattoo-removal": { status: "signed", date: "2026-10-28" },
     "/concerns/vascular-lesions": { status: "signed", date: "2026-10-28" },
   },
   ms: {
+    // Blog (kt105-kt110): each post signed by its reviewer, the hub by Dr Chew
+    // like the other hubs, all reported read by the owner on 2026-11-10.
+    "/blog": { status: "signed", date: "2026-11-10", doctor: "dr-chew-yuhhui" },
+    "/blog/after-facial-laser-aftercare": { status: "signed", date: "2026-11-10" },
+    "/blog/melasma-vs-pigmentation": { status: "signed", date: "2026-11-10" },
+    "/blog/darkening-after-laser": { status: "signed", date: "2026-11-10" },
+    "/blog/nasolabial-folds": { status: "signed", date: "2026-11-10" },
+    "/blog/fat-freezing-aftercare": { status: "signed", date: "2026-11-10" },
+    "/blog/skin-booster-vs-microneedling": { status: "signed", date: "2026-11-10" },
+    // kt102 and kt104: drafted 2026-11-20 from the signed English posts and
+    // reported signed by the owner the same day.
+    "/blog/ice-pick-scars": { status: "signed", date: "2026-11-20" },
+    "/blog/sculptra-vs-radiesse": { status: "signed", date: "2026-11-20" },
     "/": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/concerns": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
     "/treatments": { status: "signed", date: "2026-10-28", doctor: "dr-chew-yuhhui" },
@@ -252,6 +286,8 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/concerns/fine-lines-wrinkles": { status: "signed", date: "2026-10-28" },
     "/concerns/hair-loss": { status: "signed", date: "2026-10-28" },
     "/concerns/melasma": { status: "signed", date: "2026-10-28" },
+    // kt101: Dr Chew signed the English and both translations, 2026-11-09.
+    "/concerns/skin-tags-moles": { status: "signed", date: "2026-11-09" },
     "/concerns/pigmentation": { status: "signed", date: "2026-10-28" },
     "/concerns/tattoo-removal": { status: "signed", date: "2026-10-28" },
     "/concerns/vascular-lesions": { status: "signed", date: "2026-10-28" },

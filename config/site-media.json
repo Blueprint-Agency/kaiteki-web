@@ -36,6 +36,7 @@
     "concerns/hair-loss/card.jpg",
     "concerns/melasma/card.jpg",
     "concerns/pigmentation/card.jpg",
+    "concerns/skin-tags-moles/card.jpg",
     "concerns/tattoo-removal/card-2.jpg",
     "concerns/vascular-lesions/card.jpg",
     "images/doctors/dr-calvin-tan.jpg",
@@ -60,6 +61,11 @@
     "images/doctors/dr-yeong-bin.jpg",
     "images/doctors/dr-yvonne-chuah.jpg",
     "images/doctors/team-trio.png",
+    "images/promos/anniversary-2026/clear-skin-glow-blooming-scalp.jpg",
+    "images/promos/anniversary-2026/dull-out-glow-on-bb-face-lift.jpg",
+    "images/promos/anniversary-2026/happy-face-reset-bye-bye-angry-face.jpg",
+    "images/promos/anniversary-2026/positive-face-project-offers.jpg",
+    "images/promos/anniversary-2026/tired-face-quickfix-face-sculpt-slim.jpg",
     "images/promos/skincare-mix-match-699.jpg",
     "images/skincare/2026/clinisept-skin.jpg",
     "images/skincare/2026/doubleblock-uv-sunscreen.jpg",
@@ -137,12 +143,13 @@
     "treatments/microneedling/hero-v2.jpg",
     "treatments/microwave-contouring/hero.jpg",
     "treatments/muscle-stimulation/hero-v2.jpg",
-    "treatments/pico-laser/hero-2.jpg",
+    "treatments/pico-laser/hero-v3.jpg",
     "treatments/radiofrequency/hero.jpg",
     "treatments/radiofrequency/image-oligio.jpg",
     "treatments/resurfacing-laser/hero.jpg",
     "treatments/skin-booster/hero-2.jpg",
     "treatments/ultherapy/hero-2.jpg",
-    "treatments/vascular-pigment-laser/hero.jpg"
+    "treatments/vascular-pigment-laser/hero.jpg",
+    "images/technology/ecm-skin-booster-v2.jpg"
   ]
 }

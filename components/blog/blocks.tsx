@@ -64,6 +64,20 @@ export function Figure({
 }
 
 /**
+ * A small product photograph that sits inline, for a comparison table's header
+ * cells: `| | <ProductImage src="..." alt="..." /> Sculptra | ... |`. Shown
+ * whole (`object-contain`) because a packshot cropped to fit loses its label.
+ * For anything larger than a thumbnail, use Figure.
+ */
+export function ProductImage({ src, alt }: { src: string; alt: string }) {
+  return (
+    <span className="relative mb-2 block aspect-[16/10] w-full max-w-[11rem] overflow-hidden rounded-xl bg-white ring-1 ring-hairline">
+      <Image src={src} alt={alt} fill loading="lazy" sizes="176px" className="object-contain" />
+    </span>
+  );
+}
+
+/**
  * Mid-article WhatsApp CTA, for long posts where the closing CTA is a long
  * scroll away. `topic` only shapes the pre-filled message; keep it short and
  * factual. Position is reported to GA4 as "mid" (rule R-14).

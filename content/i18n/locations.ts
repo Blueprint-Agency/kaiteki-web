@@ -86,6 +86,8 @@ export type LocationsCopy = {
 /** Per-branch copy in a locale. `name` is the display name (the term map's). */
 export type BranchCopy = {
   gettingHere: string;
+  /** Required where the English branch has `about` (validate:locale L-01). */
+  about?: { heading: string; body: string[] };
   parking: string;
   serves: string[];
   hours: string[];
@@ -382,7 +384,15 @@ export const branchCopy: Record<NonDefaultLocale, Record<string, BranchCopy>> = 
       serves: ["新山 Johor Bahru", "Taman Pelangi 彩虹花园", "Century Garden", "Taman Sentosa", "Taman Abad"],
       hours: STD_ZH,
       seoTitle: "新山医美诊所 Pelangi 彩虹花园 | Kaiteki",
-      seoDescription: "Kaiteki 新山彩虹花园分店位于 Pusat Komersial Pelangi：由医生主导的皮肤与医美咨询。查看地址和营业时间，在 WhatsApp 预约免费咨询。",
+      seoDescription: "Kaiteki 新山彩虹花园分店，是 Kaiteki 在新山的两间医美诊所之一：医生主导的皮肤咨询，一周七天营业，在 WhatsApp 预约免费咨询。",
+      about: {
+        heading: "Kaiteki 在新山的两间诊所之一",
+        body: [
+          "Kaiteki Pelangi 位于彩虹花园（Taman Pelangi）的 Pusat Komersial Pelangi 商业区。Kaiteki 在新山的另一间诊所位于 Southkey，在这里以北直线距离约1.5公里，就在 Mid Valley Southkey 旁边。",
+          "两间诊所提供相同的疗程，也都由医生主导，所以哪一间对您来说比较方便，就选哪一间。Pelangi 在商业区周围有路边停车位；Southkey 在商场旁的商业区内有停车位。",
+          "无论选哪一间，第一次来都是医生咨询，不是疗程。不管您是为了暗疮、色斑还是其他问题而来，医生都会先评估您的皮肤，再决定任何方案。",
+        ],
+      },
     },
     "kota-kinabalu": {
       gettingHere: "Kaiteki Kota Kinabalu 位于沿海大道旁 Imago Shopping Mall（KK Times Square）一楼。商场内有室内停车场，每天营业。",
@@ -455,8 +465,16 @@ export const branchCopy: Record<NonDefaultLocale, Record<string, BranchCopy>> = 
       parking: "Tempat letak kereta di tepi jalan di sekitar blok komersial.",
       serves: ["Johor Bahru", "Taman Pelangi", "Century Garden", "Taman Sentosa", "Taman Abad"],
       hours: STD_MS,
-      seoTitle: "Klinik Kecantikan di Taman Pelangi, Johor Bahru | Kaiteki",
-      seoDescription: "Klinik kecantikan dan estetik Kaiteki di Taman Pelangi, Johor Bahru: konsultasi oleh doktor. Lihat alamat dan waktu operasi. Tempah konsultasi percuma di WhatsApp.",
+      seoTitle: "Klinik Kecantikan Johor Bahru, Taman Pelangi | Kaiteki",
+      seoDescription: "Kaiteki Pelangi, satu daripada dua klinik kecantikan Kaiteki di Johor Bahru: konsultasi kulit oleh doktor di Taman Pelangi, dibuka setiap hari. Tempah di WhatsApp.",
+      about: {
+        heading: "Salah satu daripada dua klinik Kaiteki di Johor Bahru",
+        body: [
+          "Kaiteki Pelangi terletak di blok komersial Pusat Komersial Pelangi, Taman Pelangi. Klinik Kaiteki yang satu lagi di Johor Bahru terletak di Southkey, kira-kira 1.5 km ke utara dalam garis lurus, bersebelahan Mid Valley Southkey.",
+          "Kedua-dua klinik menawarkan rawatan yang sama dan proses yang sama dikendalikan oleh doktor, jadi pilihlah klinik yang lebih mudah untuk anda sampai. Pelangi mempunyai tempat letak kereta di tepi jalan di sekitar blok komersial; Southkey mempunyai tempat letak kereta di kawasan komersial bersebelahan pusat beli-belah.",
+          "Klinik mana pun yang anda pilih, lawatan pertama ialah konsultasi dengan doktor, bukan rawatan. Sama ada anda datang kerana jerawat, pigmentasi atau masalah lain, doktor akan menilai kulit anda sebelum apa-apa dirancang.",
+        ],
+      },
     },
     "kota-kinabalu": {
       gettingHere: "Kaiteki Kota Kinabalu terletak di tingkat satu Imago Shopping Mall (KK Times Square), di luar Lebuhraya Pantai. Tempat letak kereta berbumbung disediakan di pusat beli-belah ini; dibuka setiap hari.",

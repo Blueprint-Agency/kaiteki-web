@@ -56,6 +56,8 @@ const terms: Record<NonDefaultLocale, Record<Kind, Names>> = {
       "dermal-fillers": "玻尿酸填充",
       "facial-treatments": "医美面部护理（Facial）",
       "laser-hair-removal": "激光脱毛",
+      // 20 Nov 2026 (kt103): autocomplete gl=my returns 线雕隆鼻.
+      "nose-thread-lift": "线雕隆鼻（Nose Thread Lift）",
     },
     category: {
       Lasers: "激光疗程",
@@ -127,6 +129,8 @@ const terms: Record<NonDefaultLocale, Record<Kind, Names>> = {
       "dermal-fillers": "Dermal Filler",
       "facial-treatments": "Rawatan Facial",
       "laser-hair-removal": "Laser Buang Bulu",
+      // 20 Nov 2026 (kt103): "thread lift hidung" returns (gl=my).
+      "nose-thread-lift": "Thread Lift Hidung",
     },
     category: {
       Lasers: "Laser",

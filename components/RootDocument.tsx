@@ -3,7 +3,7 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import { Schibsted_Grotesk, Source_Serif_4, Fraunces } from "next/font/google";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { StickyWhatsApp } from "@/components/WhatsAppCTA";
+import { PageStickyWhatsApp } from "@/components/PageStickyWhatsApp";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { JsonLd } from "@/components/JsonLd";
 import { Analytics } from "@/components/Analytics";
@@ -119,7 +119,7 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
         <SiteFooter locale={locale} />
         {/* spacer so the mobile sticky CTA never covers footer content */}
         <div className="h-16 md:hidden" aria-hidden />
-        <StickyWhatsApp href={wa} label={c.cta.bookShort} hoverLabel={c.cta.sticky} ariaLabel={c.cta.book} />
+        <PageStickyWhatsApp href={wa}label={c.cta.bookShort} hoverLabel={c.cta.sticky} ariaLabel={c.cta.book} />
         <ScrollReveal />
       </body>
     </html>

@@ -1,8 +1,10 @@
 import type { CSSProperties } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { HeroFace } from "@/components/HeroFace";
+import { HeroSlider } from "@/components/HeroSlider";
 import { WhyKaiteki } from "@/components/WhyKaiteki";
 import { LeaderBadges } from "@/components/LeaderBadges";
 import { RecognitionCabinet } from "@/components/RecognitionCabinet";
@@ -58,11 +60,31 @@ export function HomePage({ locale }: { locale: Locale }) {
         })}
       />
       <PromoModal copy={copy.promo} productsHref={lhref(locale, "/products")} />
-      {/* HERO — warm-sanctuary fold: subject photo with interactive concern
-          hotspots (see HeroFace). Pulled under the transparent header. When a
-          campaign banner is running, wrap this in components/HeroSlider. */}
+      {/* HERO — a carousel that auto-advances every 5s: the two 7th Anniversary
+          banners (1–30 Nov 2026), then the warm-sanctuary fold. Every slide is
+          server-rendered inside the client HeroSlider, so the <h1>, the CTAs
+          and every concern hotspot link stay in the HTML. Pulled under the
+          transparent header; each slide re-adds the 68px clearance itself.
+          From lg up all three share one height, the tallest slide's; below lg
+          the hero fits the slide on show (see HeroSlider).
+          When the campaign ends, render <WarmSlide locale={locale} /> alone
+          again; without `lead={false}` its photo gets `priority` back. */}
       <section className="hero-warm relative -mt-[68px] overflow-hidden">
-        <WarmSlide locale={locale} />
+        <HeroSlider
+          // A banner slide's natural height below lg (68px clearance + the
+          // width-capped 16:9 banner), so hydration doesn't shift anything.
+          initialHeightClass="max-lg:h-[calc(68px+min(56.25vw,100dvh-92px))]"
+          slides={[
+            ...ANNIVERSARY_BANNERS.map((src, i) => ({
+              label: copy.campaign.slides[i].label,
+              content: <BannerSlide locale={locale} index={i} src={src} />,
+            })),
+            {
+              label: copy.hero.h1.pre + copy.hero.h1.em,
+              content: <WarmSlide locale={locale} lead={false} />,
+            },
+          ]}
+        />
       </section>
 
       {/* Post-hero narrative: concerns → treatments → the doctors who stand
@@ -87,12 +109,57 @@ export function HomePage({ locale }: { locale: Locale }) {
   );
 }
 
+/* ── Hero — campaign banner slides ───────────────────────────────────────────
+   16:9 artwork from the designer's PDF, hosted on R2. Width-capped so a banner
+   never grows taller than the fold. Tapping it opens WhatsApp with the campaign
+   named (WhatsApp-only conversion). The PDF's artwork had slider arrows printed
+   on it; these renders leave them out so the carousel's own controls are the
+   only navigation. Where the hero is taller or wider than the banner (phones,
+   very wide windows) a blurred copy of it fills the rest: same URL, so no
+   extra download. */
+const ANNIVERSARY_BANNERS = [
+  "https://cdn.kaiteki.my/images/promos/anniversary-2026-hero-1.jpg",
+  "https://cdn.kaiteki.my/images/promos/anniversary-2026-hero-2.jpg",
+];
+
+function BannerSlide({ locale, index, src }: { locale: Locale; index: number; src: string }) {
+  const c = homeCopy[locale].campaign;
+  return (
+    <div className="relative flex flex-1 items-center pt-[68px]">
+      <Image src={src} alt="" aria-hidden fill sizes="100vw" className="scale-110 object-cover opacity-70 blur-2xl" />
+      <div className="relative mx-auto w-full max-w-[calc((100dvh-92px)*1.7778)]">
+        <a
+          href={waLink(c.waMessage)}
+          target="_blank"
+          rel="noopener"
+          data-ga="cta_click"
+          data-ga-cta_position="hero_banner"
+          className="block"
+        >
+          <Image
+            src={src}
+            alt={c.slides[index].alt}
+            width={2880}
+            height={1620}
+            sizes="100vw"
+            priority={index === 0}
+            className="aspect-[16/9] h-auto w-full"
+          />
+        </a>
+      </div>
+    </div>
+  );
+}
+
 /* ── Hero — the "Warm Sanctuary" fold ─────────────────────────────────────────
-   Subject photo with interactive concern hotspots (see HeroFace). */
-function WarmSlide({ locale }: { locale: Locale }) {
+   Subject photo with interactive concern hotspots (see HeroFace). `lead` is
+   false while a campaign banner is the first slide and owns the LCP preload. */
+function WarmSlide({ locale, lead = true }: { locale: Locale; lead?: boolean }) {
   const h = homeCopy[locale].hero;
   return (
-    <Container className="relative">
+    // mt-auto: in the carousel the slide may have spare height (it shares the
+    // tallest slide's), and the subject photo has to stay bottom-flush.
+    <Container className="relative mt-auto">
       {/* pt-[68px] offsets the -mt on the section so content clears the
           transparent header; the fold sizes to its content, not the viewport. */}
       <div className="grid items-end gap-x-10 pt-[68px] lg:grid-cols-[minmax(0,1fr)_minmax(0,50%)]">
@@ -138,7 +205,7 @@ function WarmSlide({ locale }: { locale: Locale }) {
         </div>
 
         {/* Subject column — bottom-flush, hotspots on the face */}
-        <HeroFace locale={locale} />
+        <HeroFace locale={locale} priority={lead} />
       </div>
     </Container>
   );

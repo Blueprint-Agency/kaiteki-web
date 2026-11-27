@@ -88,19 +88,19 @@ function Banner({ c }: { c: Concern }) {
   const { srcSet: mobileSrcSet, ...img } = getImageProps({ ...common, src: c.banner.sm }).props;
 
   return (
-    <div className="relative aspect-[16/9] w-full bg-tint sm:absolute sm:inset-0 sm:aspect-auto">
+    <div className="relative aspect-[16/9] w-full bg-tint lg:absolute lg:inset-0 lg:aspect-auto">
       <picture>
-        <source media="(min-width: 640px)" srcSet={desktop.srcSet} sizes={desktop.sizes} />
+        <source media="(min-width: 1024px)" srcSet={desktop.srcSet} sizes={desktop.sizes} />
         <source srcSet={mobileSrcSet} sizes={img.sizes} />
         {/* eslint-disable-next-line jsx-a11y/alt-text -- alt comes from getImageProps */}
         <img {...img} className="absolute inset-0 h-full w-full object-cover object-left" />
       </picture>
       {/* The scrim is what gives the headline its contrast, so it only exists
-          where the headline is over the artwork — below sm the copy sits under
+          where the headline is over the artwork — below lg the copy sits under
           the image and a scrim would wash out half the shot for nothing. */}
       <div
         aria-hidden
-        className="absolute inset-0 hidden bg-gradient-to-r from-transparent from-30% via-page/70 via-55% to-page/95 sm:block"
+        className="absolute inset-0 hidden bg-gradient-to-r from-transparent from-30% via-page/70 via-55% to-page/95 lg:block"
       />
     </div>
   );
@@ -243,15 +243,16 @@ export function ConcernView({
           // Chinese summary at tablet widths) grows the box instead of spilling
           // over the breadcrumb and the fact rail, which the absolutely
           // positioned copy did. On wide screens the copy fits and nothing moves.
-          <div className="relative mt-6 sm:flex sm:aspect-[2.88/1] sm:items-center">
+          <div className="relative mt-6 lg:flex lg:aspect-[2.88/1] lg:items-center">
             <Banner c={c} />
-            {/* On sm+ the headline sits in the banner's empty right half; on
-                narrow screens the artwork is too tight for it, so it falls
-                below the image instead of over a face. With no reviewer byline
+            {/* On lg+ (1024px) the headline sits in the banner's empty right half;
+                below that the cropped artwork pushes the subject under the copy
+                (seen on tablets, Nov 2026), so it falls below the image instead of
+                over a face. With no reviewer byline
                 under it (an unsigned page) the CTA note would sit on the
                 divider, so the copy carries its own bottom space. */}
-            <Container className={`relative sm:w-full sm:py-8 ${review ? "" : "pb-10 sm:pb-8"}`}>
-              <div className="pt-8 sm:ml-auto sm:w-1/2 sm:pt-0">
+            <Container className={`relative lg:w-full lg:py-8 ${review ? "" : "pb-10 lg:pb-8"}`}>
+              <div className="pt-8 lg:ml-auto lg:w-1/2 lg:pt-0">
                 <p className="kicker">{fmt(ui.kicker, { group: term(locale, "group", c.group, c.group) })}</p>
                 <h1 className="h-hero mt-4">{c.name}</h1>
                 <p className="mt-5 max-w-[46ch] text-lg leading-relaxed text-ink-700">

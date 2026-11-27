@@ -14,6 +14,9 @@ import { ReadNext } from "@/components/blog/ReadNext";
 import { ConcernCard, TreatmentCard, TechnologyCard } from "@/components/cards";
 import { CardRow } from "@/components/CardRow";
 import { Section, FactRail, CostFactors } from "@/components/treatment-blocks";
+import { ResultsBlock } from "@/components/concern-blocks";
+import { TechBlocks } from "@/components/tech-blocks";
+import { resultsHeading } from "@/lib/concern-toc";
 import {
   treatmentsOfTechnology,
   concernsOfTechnology,
@@ -192,6 +195,9 @@ export function TechnologyView({
       faqHeading: cu.faqHeading,
       typeWord: ui.typeWord,
       alternatives,
+      results: x.results?.length
+        ? resultsHeading(x.results, { illustrated: cu.resultsIllustrated, patients: cu.resultsPatients })
+        : undefined,
     },
     source,
   );
@@ -264,6 +270,11 @@ export function TechnologyView({
           </div>
         )}
 
+        {/* The clinic's own photographs of this product, straight under the
+            answer as the treatment page places them. Captioned per image and
+            disclaimed by the block itself (ADR-0001 §3, §7). */}
+        <ResultsBlock items={x.results} ui={cu} locale={locale} />
+
         {/* The reading spine. Anchor ids derive from the heading, so every
             section is addressable without a second data field — which is what
             lets an answer engine cite one section rather than the page. */}
@@ -289,7 +300,10 @@ export function TechnologyView({
           </Section>
         ))}
 
-        {sections.length === 0 && (
+        {/* Visual blocks: icon cards, timeline, chips, diagram (tech-blocks.tsx). */}
+        <TechBlocks blocks={x.blocks} />
+
+        {sections.length === 0 && !x.blocks?.length && (
           <Section>
             <p className="max-w-[68ch] text-lg leading-relaxed text-ink-700">
               {fmt(ui.pending, { summary: x.summary, name: x.name })}

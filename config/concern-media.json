@@ -982,6 +982,24 @@
       "manual": true
     },
     {
+      "source": "concerns/dark-eye-circles/banner-calm.jpg",
+      "key": "concerns/dark-eye-circles/banner-calm.jpg",
+      "concern": "dark-eye-circles",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/dark-eye-circles/banner-calm-mobile.jpg",
+      "key": "concerns/dark-eye-circles/banner-calm-mobile.jpg",
+      "concern": "dark-eye-circles",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
       "source": "concerns/enlarged-pores/banner-skin.jpg",
       "key": "concerns/enlarged-pores/banner-skin.jpg",
       "concern": "enlarged-pores",
@@ -1153,6 +1171,24 @@
       "manual": true
     },
     {
+      "source": "concerns/excessive-sweating/banner-warm.jpg",
+      "key": "concerns/excessive-sweating/banner-warm.jpg",
+      "concern": "excessive-sweating",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/excessive-sweating/banner-warm-mobile.jpg",
+      "key": "concerns/excessive-sweating/banner-warm-mobile.jpg",
+      "concern": "excessive-sweating",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
       "source": "concerns/pigmentation/banner-skin.jpg",
       "key": "concerns/pigmentation/banner-skin.jpg",
       "concern": "pigmentation",
@@ -1189,6 +1225,33 @@
       "manual": true
     },
     {
+      "source": "concerns/skin-tags-moles/card.jpg",
+      "key": "concerns/skin-tags-moles/card.jpg",
+      "concern": "skin-tags-moles",
+      "family": "card",
+      "width": 1440,
+      "height": 900,
+      "manual": true
+    },
+    {
+      "source": "concerns/skin-tags-moles/banner.jpg",
+      "key": "concerns/skin-tags-moles/banner.jpg",
+      "concern": "skin-tags-moles",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/skin-tags-moles/banner-mobile.jpg",
+      "key": "concerns/skin-tags-moles/banner-mobile.jpg",
+      "concern": "skin-tags-moles",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
       "source": "concerns/tattoo-removal/card-2.jpg",
       "key": "concerns/tattoo-removal/card-2.jpg",
       "concern": "tattoo-removal",
@@ -1209,6 +1272,24 @@
     {
       "source": "concerns/vascular-lesions/banner-skin-mobile.jpg",
       "key": "concerns/vascular-lesions/banner-skin-mobile.jpg",
+      "concern": "vascular-lesions",
+      "family": "banner",
+      "width": 1203,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/vascular-lesions/banner-calm.jpg",
+      "key": "concerns/vascular-lesions/banner-calm.jpg",
+      "concern": "vascular-lesions",
+      "family": "banner",
+      "width": 1920,
+      "height": 667,
+      "manual": true
+    },
+    {
+      "source": "concerns/vascular-lesions/banner-calm-mobile.jpg",
+      "key": "concerns/vascular-lesions/banner-calm-mobile.jpg",
       "concern": "vascular-lesions",
       "family": "banner",
       "width": 1203,

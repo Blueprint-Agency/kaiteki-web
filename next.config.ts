@@ -67,6 +67,24 @@ const nextConfig: NextConfig = {
       // Post renamed 2026-09-07: the comparison now covers Picocare, not Discovery Pico
       // (a device we do not offer). The slug is the URL, so the old one keeps its 301.
       { source: "/blog/discovery-pico-vs-picosure", destination: "/blog/picocare-vs-picosure", statusCode: 301 },
+      // kt101 (2026-11-09): the thin legacy skin tag post (ranked #3) consolidated
+      // into the signed concern page, so the two stop competing (docs/03e decision 5).
+      { source: "/blog/skin-tag-removal-malaysia", destination: "/concerns/skin-tags-moles", statusCode: 301 },
+      // 2026-11-18 (kt113 follow-up): the legacy "Top 5 Effective Treatments" post
+      // (pos 49, no clicks; "gold standard" claims, retired phone numbers)
+      // consolidated into the signed concern page, which ranks 2-7 for the same queries.
+      { source: "/blog/dark-eye-circles", destination: "/concerns/dark-eye-circles", statusCode: 301 },
+      // 2026-11-20 (kt103): the two archive thread-lift posts (durations, "cost-effective",
+      // "lunch break") consolidated into the signed treatment page. Owner decision.
+      { source: "/blog/nose-thread-lift", destination: "/treatments/nose-thread-lift", statusCode: 301 },
+      { source: "/blog/rhinoplasty-vs-nose-thread-lift", destination: "/treatments/nose-thread-lift", statusCode: 301 },
+      // 2026-11-20: /treatments/prp was live for about an hour before the client
+      // confirmed the clinic does not offer PRP. Sent to the hair loss concern page.
+      { source: "/treatments/prp", destination: "/concerns/hair-loss", statusCode: 301 },
+      // 2026-11-20: the thin legacy Oligio vs Density post (unsupported "scientifically
+      // validated" / "safe for all skin types" copy) consolidated into the new
+      // three-device comparison requested by Dr Chew.
+      { source: "/blog/oligio-vs-density", destination: "/blog/xerf-vs-oligio-vs-density", statusCode: 301 },
       // Page 1 of a blog listing is its base URL; never a second copy of it.
       { source: "/blog/page/1", destination: "/blog", statusCode: 301 },
       { source: "/blog/category/:slug/page/1", destination: "/blog/category/:slug", statusCode: 301 },

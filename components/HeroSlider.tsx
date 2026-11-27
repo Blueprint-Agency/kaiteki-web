@@ -7,7 +7,9 @@ import {
   useRef,
   useState,
   type ReactNode,
+  type TouchEvent,
 } from "react";
+import { ArrowLeft, ArrowRight } from "./icons";
 
 export type HeroSlide = {
   /** Short label for the dot's accessible name, e.g. "Merdeka promotion". */
@@ -19,11 +21,18 @@ export type HeroSlide = {
  *  banner and the "warm sanctuary" fold), so every link and the <h1> are in the
  *  HTML whether or not this component ever hydrates.
  *
- *  Height: slides are stacked in one grid cell, so the box would otherwise size
- *  to the tallest of them (the banner is ~16:9, the fold is roughly a screen
- *  tall — very different on a phone). Instead the container's height follows the
- *  ACTIVE slide, measured after mount. The pre-hydration height is set in CSS by
- *  `initialHeightClass` so it already matches slide 0 and nothing shifts. */
+ *  Height: slides are stacked in one grid cell. From lg up the hero is as tall
+ *  as the tallest slide and stays that height whichever slide is showing; each
+ *  slide stretches to fill the cell (a slide is a flex column; its content
+ *  decides how to sit in the spare room). Below lg the slides are too different
+ *  for that (a 16:9 banner is ~225px tall on a phone, the fold ~1000px), so the
+ *  hero follows the ACTIVE slide's height, measured after mount; until then
+ *  `initialHeightClass` holds it at slide 0's height so nothing shifts.
+ *
+ *  Motion: changing slide slides the new one in from the side you're heading
+ *  to and the old one out the other side (Web Animations, ~600ms). It isn't
+ *  gated on reduced motion: an instant swap reads as a glitch. A horizontal
+ *  swipe changes slide on touch screens. */
 export function HeroSlider({
   slides,
   interval = 5000,
@@ -32,38 +41,93 @@ export function HeroSlider({
   slides: HeroSlide[];
   /** ms per slide */
   interval?: number;
-  /** Tailwind height utility matching slide 0's natural height, used until the
-   *  first measurement lands (prevents a hydration jump / CLS). */
+  /** `max-lg:` height utility matching slide 0's natural height below lg,
+   *  used until the first measurement lands. */
   initialHeightClass?: string;
 }) {
   const [active, setActive] = useState(0);
+  // Below lg only: the active slide's measured height. null from lg up.
   const [height, setHeight] = useState<number | null>(null);
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
   const [hovered, setHovered] = useState(false);
+  const [focused, setFocused] = useState(false);
   const [onScreen, setOnScreen] = useState(true);
   const [tabVisible, setTabVisible] = useState(true);
   const rootRef = useRef<HTMLDivElement>(null);
   const slideRefs = useRef<(HTMLDivElement | null)[]>([]);
+  // The slide being left and the direction of travel, read by the layout
+  // effect below to run the transition for the change that just rendered.
+  const leaving = useRef<number | null>(null);
+  const dir = useRef<1 | -1>(1);
   const count = slides.length;
 
-  const go = useCallback((i: number) => setActive((i + count) % count), [count]);
+  const go = useCallback(
+    (i: number, d?: 1 | -1) => {
+      const next = (i + count) % count;
+      if (next === active) return;
+      leaving.current = active;
+      dir.current = d ?? (next > active ? 1 : -1);
+      setActive(next);
+    },
+    [active, count],
+  );
 
-  /* Track the active slide's height (and re-track on resize / font swap /
-     image decode, which is what ResizeObserver on every slide buys us). */
   useLayoutEffect(() => {
+    const from = leaving.current;
+    leaving.current = null;
+    const inEl = slideRefs.current[active];
+    const outEl = from === null ? null : slideRefs.current[from];
+    if (!inEl || !outEl) return;
+    for (const el of slideRefs.current) el?.getAnimations().forEach((a) => a.cancel());
+    const d = dir.current;
+    const timing = { duration: 600, easing: "cubic-bezier(0.22, 1, 0.36, 1)" };
+    inEl.animate([{ transform: `translateX(${d * 100}%)` }, { transform: "none" }], timing);
+    // The outgoing slide is already `invisible` in the new render; holding
+    // visibility in both keyframes keeps it on screen for the slide-out.
+    outEl.animate(
+      [
+        { transform: "none", visibility: "visible" },
+        { transform: `translateX(${-d * 100}%)`, visibility: "visible" },
+      ],
+      timing,
+    );
+  }, [active]);
+
+  /* Below lg, track the active slide's height (and re-track on resize, font
+     swap or image decode, which is what ResizeObserver on every slide buys). */
+  useLayoutEffect(() => {
+    const wide = matchMedia("(min-width: 1024px)");
     const measure = () => {
       const el = slideRefs.current[active];
-      if (el) setHeight(el.offsetHeight);
+      setHeight(wide.matches || !el ? null : el.offsetHeight);
     };
     measure();
     const ro = new ResizeObserver(measure);
     for (const el of slideRefs.current) if (el) ro.observe(el);
-    return () => ro.disconnect();
+    wide.addEventListener("change", measure);
+    return () => {
+      ro.disconnect();
+      wide.removeEventListener("change", measure);
+    };
   }, [active]);
 
-  /* Advancing changes the hero's height, which moves everything below it. Doing
-     that while someone is reading the section under the fold is the classic
-     carousel annoyance, so autoplay only runs while the hero is actually on
-     screen. Same observer also covers the "left the tab open for an hour" case. */
+  /* Swipe: a mostly-horizontal touch drag of 40px+ changes slide. Vertical
+     drags stay page scrolls (touch-action: pan-y on the track). */
+  const onTouchEnd = (e: TouchEvent) => {
+    const start = touchStart.current;
+    touchStart.current = null;
+    if (!start) return;
+    const t = e.changedTouches[0];
+    const dx = t.clientX - start.x;
+    const dy = t.clientY - start.y;
+    if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+    const d = dx < 0 ? 1 : -1;
+    go(active + d, d);
+  };
+
+  /* Autoplay only runs while the hero is actually on screen: nobody needs it
+     turning over while they read further down. The same observer also covers
+     the "left the tab open for an hour" case. */
   useEffect(() => {
     const el = rootRef.current;
     if (!el) return;
@@ -80,16 +144,21 @@ export function HeroSlider({
     return () => document.removeEventListener("visibilitychange", onChange);
   }, []);
 
-  /* Autoplay. Skipped entirely under prefers-reduced-motion (docs/06 §3).
-     `active` in the deps is deliberate: picking a dot restarts the full
+  /* Autoplay. Runs under prefers-reduced-motion too: the client wants the
+     banners to rotate for every visitor, and a slide change every 5s isn't the
+     parallax/zoom motion that setting guards against. It pauses while a mouse
+     is over the controls bar or keyboard focus is inside the hero (the WCAG
+     2.2.2 pause). Not on hover of the whole hero: on desktop it fills the
+     screen, so the cursor is nearly always on it. And not after a tap or
+     click: a touch fires an emulated mouseenter with no mouseleave, and a
+     clicked dot keeps focus, and either would stop it for good. `active` in the deps is deliberate: picking a dot restarts the full
      interval rather than cutting the chosen slide short. */
-  const running = count > 1 && !hovered && onScreen && tabVisible;
+  const running = count > 1 && !hovered && !focused && onScreen && tabVisible;
   useEffect(() => {
     if (!running) return;
-    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const id = setInterval(() => setActive((a) => (a + 1) % count), interval);
+    const id = setInterval(() => go(active + 1, 1), interval);
     return () => clearInterval(id);
-  }, [running, count, interval, active]);
+  }, [running, interval, active, go]);
 
   return (
     <div
@@ -98,20 +167,20 @@ export function HeroSlider({
       role="group"
       aria-roledescription="carousel"
       aria-label="Kaiteki highlights"
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      onFocusCapture={() => setHovered(true)}
-      onBlurCapture={() => setHovered(false)}
+      onFocusCapture={(e) => setFocused(e.target.matches(":focus-visible"))}
+      onBlurCapture={() => setFocused(false)}
     >
       <div
-        // `initialHeightClass` is derived from vw, so on a desktop with a
-        // classic scrollbar it over-states slide 0 by ~0.56 × scrollbar width.
-        // The first measurement corrects that ~9px through the same transition;
-        // on touch (overlay scrollbars) the two agree exactly.
-        className={`grid overflow-hidden transition-[height] duration-500 ease-out motion-reduce:transition-none ${
-          height === null ? initialHeightClass : ""
-        }`}
+        className={`grid touch-pan-y touch-pinch-zoom overflow-hidden transition-[height] duration-500 ease-out ${initialHeightClass}`}
         style={height === null ? undefined : { height }}
+        onTouchStart={(e) => {
+          const t = e.touches[0];
+          touchStart.current = { x: t.clientX, y: t.clientY };
+        }}
+        onTouchEnd={onTouchEnd}
+        onTouchCancel={() => {
+          touchStart.current = null;
+        }}
       >
         {slides.map((s, i) => (
           <div
@@ -119,12 +188,12 @@ export function HeroSlider({
             ref={(el) => {
               slideRefs.current[i] = el;
             }}
-            // Every slide occupies the same cell; only opacity separates them.
-            // Never `display:none` — the inactive slide has to stay laid out so
-            // it can be measured, and its markup stays readable to crawlers.
-            className={`col-start-1 row-start-1 self-start transition-opacity duration-500 ease-out motion-reduce:transition-none ${
-              i === active ? "opacity-100" : "pointer-events-none opacity-0"
-            }`}
+            // Every slide occupies the same cell; `invisible` hides the others.
+            // Never `display:none`: every slide has to stay laid out (for the
+            // shared height from lg up, and to be measured below it), and its
+            // markup stays readable to crawlers. Below lg a slide keeps its
+            // natural height (self-start) so it can be measured.
+            className={`col-start-1 row-start-1 flex flex-col self-start lg:self-stretch ${i === active ? "" : "invisible"}`}
             role="group"
             aria-roledescription="slide"
             aria-label={`${i + 1} of ${count}: ${s.label}`}
@@ -138,8 +207,23 @@ export function HeroSlider({
       </div>
 
       {count > 1 && (
-        <div className="pointer-events-none absolute inset-x-0 bottom-4 z-30 flex justify-center sm:bottom-5">
-          <div className="pointer-events-auto flex items-center gap-2 rounded-full bg-surface/80 px-3 py-2 shadow-sm ring-1 ring-espresso/10 backdrop-blur">
+        // Below lg the bar sits under the slide rather than over it: on a phone
+        // a banner is only ~225px tall and the bar would cover its bottom row.
+        <div className="pointer-events-none z-30 flex justify-center py-3 lg:absolute lg:inset-x-0 lg:bottom-5 lg:py-0">
+          <div
+            className="pointer-events-auto flex items-center gap-2 rounded-full bg-surface/80 px-1.5 py-1 shadow-sm ring-1 ring-espresso/10 backdrop-blur"
+            onPointerEnter={(e) => setHovered(e.pointerType === "mouse")}
+            onPointerLeave={() => setHovered(false)}
+          >
+            {/* The carousel's only controls. Prev/next wrap around. */}
+            <button
+              type="button"
+              onClick={() => go(active - 1, -1)}
+              aria-label="Previous slide"
+              className="flex size-7 items-center justify-center rounded-full text-espresso/70 transition-colors hover:bg-espresso/10 hover:text-espresso"
+            >
+              <ArrowLeft size={14} />
+            </button>
             {slides.map((s, i) => (
               <button
                 key={s.label}
@@ -152,6 +236,14 @@ export function HeroSlider({
                 }`}
               />
             ))}
+            <button
+              type="button"
+              onClick={() => go(active + 1, 1)}
+              aria-label="Next slide"
+              className="flex size-7 items-center justify-center rounded-full text-espresso/70 transition-colors hover:bg-espresso/10 hover:text-espresso"
+            >
+              <ArrowRight size={14} />
+            </button>
           </div>
         </div>
       )}

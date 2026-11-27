@@ -293,25 +293,6 @@ export const legacyPosts: Post[] = [
     "legacyPath": "/ultherapy-prime-vs-ultherapy/"
   },
   {
-    "slug": "oligio-vs-density",
-    "title": "Oligio vs Density: Which Skin Tightening Treatment Should You Choose?",
-    "description": "Compare Oligio vs Density for skin tightening and rejuvenation. Discover key differences in technology, results, and comfort to choose your best option.",
-    "category": "Treatments Explained",
-    "tags": [
-      "Treatment vs Treatment",
-      "Aging",
-      "Lifting"
-    ],
-    "image": "https://cdn.kaiteki.my/blog/oligio-vs-density/135.png",
-    "imageAlt": "oligio vs density",
-    "author": "dr-lucas-chew",
-    "publishedAt": "2025-09-10",
-    "updatedAt": "2025-09-29",
-    "readingMinutes": 4,
-    "legacy": true,
-    "legacyPath": "/oligio-vs-density/"
-  },
-  {
     "slug": "fotona-starwalker-pqx-vs-pico-laser",
     "title": "Fotona StarWalker PQX vs Pico Laser: Which Laser Treatment Is Best for Your Skin?",
     "description": "Compare Fotona StarWalker and Pico Laser for pigmentation, scars, and tattoos. Learn the differences in technology, results, and comfort to choose right.",
@@ -519,25 +500,6 @@ export const legacyPosts: Post[] = [
     "readingMinutes": 2,
     "legacy": true,
     "legacyPath": "/fat-freezing-therapy/"
-  },
-  {
-    "slug": "skin-tag-removal-malaysia",
-    "title": "Skin Tag Removal Malaysia: Everything You Need to Know",
-    "description": "Remove skin tags safely in Malaysia with expert care at Kaiteki Clinic. Fast, effective treatments for smooth, clear skin with minimal downtime.",
-    "category": "Treatments Explained",
-    "tags": [
-      "Minor Surgery",
-      "Lasers",
-      "Skin Bumps"
-    ],
-    "image": "https://cdn.kaiteki.my/blog/skin-tag-removal-malaysia/122.jpg",
-    "imageAlt": "Skin tag removal malaysia",
-    "author": "dr-chew-yuhhui",
-    "publishedAt": "2025-04-28",
-    "updatedAt": "2025-05-06",
-    "readingMinutes": 2,
-    "legacy": true,
-    "legacyPath": "/skin-tag-removal-malaysia/"
   },
   {
     "slug": "hydrating-facial",
@@ -2118,23 +2080,6 @@ export const legacyPosts: Post[] = [
     "legacyPath": "/overfilled-face/"
   },
   {
-    "slug": "nose-thread-lift",
-    "title": "Nose Thread Lift: Get Yourself 100% Prepared!",
-    "description": "This blog post explores nose thread lift, a non-surgical nose enhancement procedure. It covers the how it works, benefits, results, and the cost!",
-    "category": "Treatments Explained",
-    "tags": [
-      "Lifting"
-    ],
-    "image": "https://cdn.kaiteki.my/blog/nose-thread-lift/nose-thread-lift.gif",
-    "imageAlt": "nose thread lift cover",
-    "author": "dr-yeong-bin",
-    "publishedAt": "2023-07-27",
-    "updatedAt": "2023-12-27",
-    "readingMinutes": 6,
-    "legacy": true,
-    "legacyPath": "/nose-thread-lift/"
-  },
-  {
     "slug": "skin-bumps",
     "title": "Skin Bumps Decoded: Know Your Bumps, Find the Right Solutions",
     "description": "Explore the world of skin bumps in our comprehensive guide. Learn what causes these pesky bumps, effective treatments, and prevention tips.",
@@ -2378,26 +2323,6 @@ export const legacyPosts: Post[] = [
     "legacyPath": "/ceramide/"
   },
   {
-    "slug": "dark-eye-circles",
-    "title": "Dark Eye Circles: Top 5 Effective Treatments",
-    "seoTitle": "Dark Eye Circles: Top 5 Effective Treatments - Kaiteki Blog | Skin Care | Updates",
-    "description": "Top 5 effective treatment for dark eye circles! Your friends will never say you look tired again! Read on for more information!",
-    "category": "Device & Injectables",
-    "tags": [
-      "Injectables",
-      "Dark Eye Circles",
-      "Lasers"
-    ],
-    "image": "https://cdn.kaiteki.my/blog/dark-eye-circles/dark-eye-circle.gif",
-    "imageAlt": "dark eye circles",
-    "author": "dr-chew-yuhhui",
-    "publishedAt": "2023-01-22",
-    "updatedAt": "2024-11-06",
-    "readingMinutes": 4,
-    "legacy": true,
-    "legacyPath": "/dark-eye-circles/"
-  },
-  {
     "slug": "maskne",
     "title": "Maskne is a Real Thing:  Here’s Why and How to Prevent It",
     "seoTitle": "Maskne is a Real Thing: Here's Why and How to Prevent It - Kaiteki Blog | Skin Care | Updates",
@@ -2583,23 +2508,6 @@ export const legacyPosts: Post[] = [
     "readingMinutes": 3,
     "legacy": true,
     "legacyPath": "/8-facts-about-botox/"
-  },
-  {
-    "slug": "rhinoplasty-vs-nose-thread-lift",
-    "title": "Rhinoplasty vs Nose Thread Lift : Which is Better for Me?",
-    "description": "Rhinoplasty is a surgical nose reshaping procedure, while nose thread lift is a non-surgical nose contouring procedure that uses threads.",
-    "category": "Treatments Explained",
-    "tags": [
-      "Lifting"
-    ],
-    "image": "https://cdn.kaiteki.my/blog/rhinoplasty-vs-nose-thread-lift/nose-thread-vs-rhino.jpg",
-    "imageAlt": "Rhinoplasty vs Nose Thread Lift",
-    "author": "dr-yeong-bin",
-    "publishedAt": "2022-08-24",
-    "updatedAt": "2023-09-01",
-    "readingMinutes": 4,
-    "legacy": true,
-    "legacyPath": "/rhinoplasty-vs-nose-thread-lift/"
   },
   {
     "slug": "blue-light-and-its-impact",

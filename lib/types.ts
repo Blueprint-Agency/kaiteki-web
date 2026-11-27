@@ -133,8 +133,10 @@ export interface Treatment {
     cannotDo: string[];
     disclose: string;
   };
-  /** T-13 cost factors. Factors only — no figures, no ranges, no "from RM". */
-  costFactors?: { intro: string; factors: string[]; outro?: string };
+  /** T-13 cost factors. Factors only — no figures, no ranges, no "from RM".
+   *  `heading` replaces the shared "What affects the number of sessions, and
+   *  the cost" where a page has a price query worth naming in its H2 (kt112). */
+  costFactors?: { heading?: string; intro: string; factors: string[]; outro?: string };
   /** T-14 manufacturer images (Full only). Labelled in four places or omitted
    *  entirely — never shipped half-labelled (rule R-07). */
   manufacturerImages?: { src: string; alt: string; caption: string }[];
@@ -208,6 +210,20 @@ export interface Technology {
   costFactors?: { intro: string; factors: string[]; outro?: string };
   /** Optional device-brand logo (existing /images/tech logos). */
   device?: string;
+  /**
+   * The clinic's own before/after photographs of this product, under the
+   * conditions of ADR-0001 §3 (captioned, disclaimed, never schema). Unlike a
+   * treatment page these are credited to the product, because the clinic
+   * filed them by it (docs/adr/0001-before-after-imagery.md §7).
+   */
+  results?: Concern["results"];
+  /**
+   * Visual blocks rendered after `sections`, in order, each with its own h2 and
+   * anchor (components/tech-blocks.tsx). For pages that read better scanned than
+   * read: icon cards, a timeline, chips, a callout, paired checklists, or a
+   * named diagram. Content stays here; the component only lays it out.
+   */
+  blocks?: TechBlock[];
   reviewedBy?: string;
   lastReviewed?: string;
   /** SEO-optimized <title>, 50–60 chars, brand baked in (docs/10). */
@@ -215,6 +231,58 @@ export interface Technology {
   /** SEO meta description, 140–160 chars (docs/10). */
   seoDescription?: string;
 }
+
+/** Icon names a technology block may use (components/tech-blocks.tsx maps them). */
+export type TechIcon =
+  | "droplet" | "sparkle" | "layers" | "syringe" | "beaker" | "heart" | "eye" | "clock"
+  | "shield" | "check" | "x" | "sun" | "tone" | "waves" | "texture" | "calendar" | "search" | "chat";
+
+/** One visual block on a technology page. `heading` is the h2 and the anchor. */
+export type TechBlock =
+  | {
+      kind: "cards";
+      heading: string;
+      intro?: string;
+      items: { icon: TechIcon; eyebrow: string; title: string; body: string; highlight?: string }[];
+    }
+  | {
+      kind: "diagram";
+      heading: string;
+      intro?: string;
+      /** A named, hand-drawn SVG. `ecm-scaffold`: the dermal framework, intact,
+       *  thinned with age, and with booster particles settling into the gaps. */
+      diagram: "ecm-scaffold";
+      panels: { title: string; body: string }[];
+      caption: string;
+    }
+  | {
+      kind: "steps";
+      heading: string;
+      intro?: string;
+      items: { icon: TechIcon; title: string; body: string; tag?: string }[];
+      note?: string;
+    }
+  | {
+      kind: "chips";
+      heading: string;
+      intro?: string;
+      items: { icon: TechIcon; label: string }[];
+      note?: string;
+    }
+  | {
+      kind: "callout";
+      heading: string;
+      badge: string;
+      points: string[];
+      note: string;
+    }
+  | {
+      kind: "checklists";
+      heading: string;
+      intro?: string;
+      columns: { title: string; tone: "avoid" | "neutral"; items: string[] }[];
+      note?: string;
+    };
 
 /** A bold lead-in bullet: `lead` renders semibold, `body` plain after it. */
 export interface LeadIn {
@@ -440,6 +508,10 @@ export interface Branch {
   parking?: string;
   /** 1–2 sentence branch-specific intro (unique per branch; beats a templated line). */
   gettingHere?: string;
+  /** Optional branch-specific section under "Find us": its own H2 and a few
+   *  paragraphs, for a branch whose page needs local copy beyond the template
+   *  (kt115). Facts already in this file only, nothing inferred. */
+  about?: { heading: string; body: string[] };
   /** Geo coordinates — enable schema `geo` + map pack. Client data (docs/05 §9);
    *  left undefined until verified so no wrong coordinates ship. */
   lat?: number;

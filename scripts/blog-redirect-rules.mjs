@@ -10,6 +10,15 @@ export const MOVED = {
   "alma-titanium-lifting-is-this-non-surgical-facelift-worth-it": "/blog/alma-titanium-lifting",
   "discovery-pico-vs-picosure": "/blog/picocare-vs-picosure",
   "wegovy-vs-mounjaro-which-is-better-for-you": "/blog/wegovy-vs-mounjaro",
+  // Consolidated into the concern page, not a post (kt101, 2026-11-09).
+  "skin-tag-removal-malaysia": "/concerns/skin-tags-moles",
+  // Consolidated into the signed concern page (kt113 follow-up, 2026-11-18).
+  "dark-eye-circles": "/concerns/dark-eye-circles",
+  // Consolidated into the signed treatment page (kt103, 2026-11-20).
+  "nose-thread-lift": "/treatments/nose-thread-lift",
+  "rhinoplasty-vs-nose-thread-lift": "/treatments/nose-thread-lift",
+  // Consolidated into the three-device comparison (2026-11-20).
+  "oligio-vs-density": "/blog/xerf-vs-oligio-vs-density",
 };
 
 /** Old slugs that posts still link to. WordPress 301s the first three; the rest

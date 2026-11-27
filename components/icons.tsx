@@ -208,3 +208,119 @@ export function LinkedIn({ className, size = 20 }: IconProps) {
     </svg>
   );
 }
+
+export function Clock({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M12 7.5V12l3 2" />
+    </svg>
+  );
+}
+
+/** Stacked layers: a category, or the skin's depths. */
+export function Layers({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <path d="m12 4 8.5 4.5L12 13 3.5 8.5 12 4Z" />
+      <path d="m3.5 12.5 8.5 4.5 8.5-4.5" />
+      <path d="m3.5 16.5 8.5 4.5 8.5-4.5" />
+    </svg>
+  );
+}
+
+/** Something that cannot be undone once placed. */
+export function Lock({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <rect x="5" y="10.5" width="14" height="10" rx="2" />
+      <path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" />
+      <path d="M12 14.5v2" />
+    </svg>
+  );
+}
+
+/** Skin tone: a circle half shaded. */
+export function Tone({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M12 3.5a8.5 8.5 0 0 1 0 17Z" fill="currentColor" fillOpacity={0.25} />
+    </svg>
+  );
+}
+
+export function Syringe({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <path d="m18 2 4 4" />
+      <path d="m17 7 3-3" />
+      <path d="M19 9 8.7 19.3a1 1 0 0 1-1.4 0L4.7 16.7a1 1 0 0 1 0-1.4L15 5" />
+      <path d="m9 11 4 4" />
+      <path d="m5 19-3 3" />
+      <path d="m14 4 6 6" />
+    </svg>
+  );
+}
+
+export function Beaker({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <path d="M9 3h6" />
+      <path d="M10 3v6.5L4.6 18.4A1.7 1.7 0 0 0 6.1 21h11.8a1.7 1.7 0 0 0 1.5-2.6L14 9.5V3" />
+      <path d="M7.5 15h9" />
+    </svg>
+  );
+}
+
+export function Heart({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <path d="M12 20s-7.5-4.6-7.5-10.1A4.2 4.2 0 0 1 12 7.4a4.2 4.2 0 0 1 7.5 2.5C19.5 15.4 12 20 12 20Z" />
+    </svg>
+  );
+}
+
+export function Waves({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <path d="M3 8c2-1.6 4-1.6 6 0s4 1.6 6 0 4-1.6 6 0" />
+      <path d="M3 13c2-1.6 4-1.6 6 0s4 1.6 6 0 4-1.6 6 0" />
+      <path d="M3 18c2-1.6 4-1.6 6 0s4 1.6 6 0 4-1.6 6 0" />
+    </svg>
+  );
+}
+
+export function Texture({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <rect x="3.5" y="3.5" width="17" height="17" rx="4" />
+      <circle cx="8.5" cy="8.5" r="0.9" />
+      <circle cx="15.5" cy="8.5" r="0.9" />
+      <circle cx="12" cy="12" r="0.9" />
+      <circle cx="8.5" cy="15.5" r="0.9" />
+      <circle cx="15.5" cy="15.5" r="0.9" />
+    </svg>
+  );
+}
+
+export function Calendar({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <rect x="3.5" y="5" width="17" height="15.5" rx="2" />
+      <path d="M3.5 10h17" />
+      <path d="M8 3v4" />
+      <path d="M16 3v4" />
+    </svg>
+  );
+}
+
+export function Chat({ className, size }: IconProps) {
+  return (
+    <svg {...base(size)} className={className}>
+      <path d="M20.5 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 20.5 12Z" />
+      <path d="M8.5 11h7" />
+      <path d="M8.5 14h4.5" />
+    </svg>
+  );
+}

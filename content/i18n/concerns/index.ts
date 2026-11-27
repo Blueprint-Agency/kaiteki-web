@@ -14,6 +14,7 @@ import zh_fine_lines_wrinkles from "./zh/fine-lines-wrinkles.json";
 import zh_hair_loss from "./zh/hair-loss.json";
 import zh_melasma from "./zh/melasma.json";
 import zh_pigmentation from "./zh/pigmentation.json";
+import zh_skin_tags_moles from "./zh/skin-tags-moles.json";
 import zh_tattoo_removal from "./zh/tattoo-removal.json";
 import zh_vascular_lesions from "./zh/vascular-lesions.json";
 import ms_acne from "./ms/acne.json";
@@ -30,6 +31,7 @@ import ms_fine_lines_wrinkles from "./ms/fine-lines-wrinkles.json";
 import ms_hair_loss from "./ms/hair-loss.json";
 import ms_melasma from "./ms/melasma.json";
 import ms_pigmentation from "./ms/pigmentation.json";
+import ms_skin_tags_moles from "./ms/skin-tags-moles.json";
 import ms_tattoo_removal from "./ms/tattoo-removal.json";
 import ms_vascular_lesions from "./ms/vascular-lesions.json";
 
@@ -49,6 +51,7 @@ export const translations: Record<"zh" | "ms", Record<string, unknown>> = {
     "hair-loss": zh_hair_loss,
     "melasma": zh_melasma,
     "pigmentation": zh_pigmentation,
+    "skin-tags-moles": zh_skin_tags_moles,
     "tattoo-removal": zh_tattoo_removal,
     "vascular-lesions": zh_vascular_lesions,
   },
@@ -67,6 +70,7 @@ export const translations: Record<"zh" | "ms", Record<string, unknown>> = {
     "hair-loss": ms_hair_loss,
     "melasma": ms_melasma,
     "pigmentation": ms_pigmentation,
+    "skin-tags-moles": ms_skin_tags_moles,
     "tattoo-removal": ms_tattoo_removal,
     "vascular-lesions": ms_vascular_lesions,
   },

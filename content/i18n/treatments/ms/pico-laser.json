@@ -3,7 +3,7 @@
   "durationDowntime": "20-40 minit · Downtime minimum (1-2 hari)",
   "name": "Pico Laser",
   "category": "Lasers",
-  "image": "https://cdn.kaiteki.my/treatments/pico-laser/hero-2.jpg",
+  "image": "https://cdn.kaiteki.my/treatments/pico-laser/hero-v3.jpg",
   "procedureImages": [
     {
       "src": "https://cdn.kaiteki.my/treatments/pico-laser/procedure-01.jpg",
@@ -215,6 +215,7 @@
     "disclose": "Beritahu doktor juga tentang sebarang sejarah herpes bibir (cold sore)."
   },
   "costFactors": {
+    "heading": "Harga pico laser di Malaysia: apa yang mempengaruhinya",
     "intro": "Kaiteki tidak memaparkan harga dalam talian; angka yang anda terima semasa konsultasi mencerminkan pelan anda selepas dinilai. Faktor yang mempengaruhinya:",
     "factors": [
       "Jenis dan kedalaman pigmen. Sun spot di permukaan biasanya memerlukan lebih sedikit lawatan berbanding pigmen dermis yang lebih dalam.",
@@ -236,8 +237,8 @@
   },
   "reviewedBy": "dr-chew-yuhhui",
   "lastReviewed": "2026-06-20",
-  "seoTitle": "Rawatan Pico Laser di Malaysia | Pigmentasi | Kaiteki",
-  "seoDescription": "Pico laser Kaiteki guna denyutan pikosaat untuk pigmentasi, kulit tidak sekata dan dakwat tatu. Doktor menilai mesin dan tetapan yang sesuai untuk kulit anda.",
+  "seoTitle": "Pico Laser Malaysia: Pigmentasi & Tompok Gelap | Kaiteki",
+  "seoDescription": "Pico laser untuk pigmentasi, tompok gelap dan kulit tidak sekata di Kaiteki: mesin yang sesuai dengan kulit anda, bilangan sesi, downtime, risiko dan faktor harga.",
   "sections": [
     {
       "heading": "Apa itu pico laser?",
@@ -256,12 +257,20 @@
   ],
   "faqs": [
     {
+      "q": "Adakah pico laser sama dengan PicoSure?",
+      "a": "Tidak. PicoSure ialah salah satu pico laser, iaitu mesin 755nm buatan Cynosure. “Pico” merujuk kepada tempoh denyutan, jadi mesin lain juga termasuk, seperti Fotona PQX pada 1064nm dan 532nm. Kaiteki menggunakan kedua-duanya, dan doktor memilih panjang gelombang yang sesuai dengan pigmen dan warna kulit anda."
+    },
+    {
       "q": "Pico laser sakit tak?",
-      "a": "Denyutan pikosaat secara amnya dilaporkan lebih mudah ditahan berbanding laser denyutan panjang yang lebih lama, dan tetapan boleh dilaraskan semasa sesi."
+      "a": "Kebanyakan orang menggambarkan rasa seperti petikan getah atau cucukan jarum panas yang singkat, bukan sakit yang berterusan, dan denyutan pikosaat secara amnya dilaporkan lebih mudah ditahan berbanding laser denyutan panjang yang lebih lama. Krim kebas boleh disapu untuk kawasan sensitif atau tatu, dan tetapan boleh diubah semasa sesi."
     },
     {
       "q": "Perlu buat pico laser berapa kali?",
       "a": "Sun spot di permukaan biasanya memerlukan lebih sedikit sesi berbanding pigmen dermis atau tatu yang padat. Pigmentasi muka lazimnya dirancang sebagai beberapa sesi yang dijarakkan beberapa minggu."
+    },
+    {
+      "q": "Berapa lama perlu tunggu antara sesi pico laser?",
+      "a": "Sesi untuk pigmentasi muka lazimnya dijarakkan beberapa minggu, supaya kulit sempat membersihkan serpihan pigmen yang dipecahkan pada lawatan sebelumnya. Sesi tatu biasanya dijarakkan lebih lama supaya kulit sembuh sepenuhnya. Doktor menetapkan jarak sesi mengikut kulit anda dan menyemaknya pada setiap lawatan."
     },
     {
       "q": "Boleh nampak perubahan selepas satu sesi ke?",
@@ -272,12 +281,20 @@
       "a": "Kadangkala, dengan berhati-hati. Rawatan yang terlalu agresif boleh memburukkan jeragat, jadi ia biasanya diurus sebagai pelan berterusan yang merangkumi perlindungan matahari, penjagaan topikal dan tetapan klinik yang konservatif. Doktor menentukan sama ada sebarang laser sesuai untuk jeragat anda sama sekali."
     },
     {
+      "q": "Selamat ke pico laser untuk warna kulit orang Malaysia?",
+      "a": "Pico laser digunakan pada pelbagai warna kulit, tetapi tiada tetapan yang bebas risiko. Kulit yang mempunyai lebih banyak melanin lebih cenderung menjadi gelap selepas rawatan, jadi doktor mungkin memilih panjang gelombang 1064nm, tenaga yang lebih rendah, jarak sesi yang lebih panjang atau ujian tampalan dahulu. Kulit yang baru digelapkan matahari biasanya dirawat kemudian."
+    },
+    {
+      "q": "Adakah pigmentasi akan kembali selepas pico laser?",
+      "a": "Ia bergantung pada jenis pigmen. Tanpa perlindungan matahari setiap hari, sun spot baharu boleh muncul di tempat yang sudah hilang, dan jeragat ialah keadaan jangka panjang yang turun naik mengikut matahari, hormon dan penjagaan kulit. Sebab itu pelindung matahari, dan bagi sesetengah orang sesi penyelenggaraan, adalah sebahagian daripada pelan yang realistik."
+    },
+    {
       "q": "Berapa harga atau kos pico laser di Malaysia?",
-      "a": "Kaiteki tidak memaparkan harga dalam talian. Harga diberikan semasa konsultasi berdasarkan pelan anda selepas dinilai."
+      "a": "Kaiteki tidak memaparkan harga dalam talian. Harga diberikan semasa konsultasi berdasarkan pelan anda selepas dinilai, dan ia bergantung pada jenis dan kedalaman pigmen, saiz kawasan, mesin dan tetapan yang dipilih, serta sama ada pico laser digabungkan dengan rawatan lain."
     },
     {
       "q": "Boleh pakai makeup atau terus kembali bekerja selepas pico laser?",
-      "a": "Makeup boleh dipakai semula apabila kemerahan reda, hanya di atas kulit yang tidak luka dan tidak sekali-kali di atas kuping."
+      "a": "Kebanyakan orang boleh terus menjalani hari seperti biasa. Makeup boleh dipakai semula apabila kemerahan reda, hanya di atas kulit yang tidak luka dan tidak sekali-kali di atas kuping, dan kawasan yang dirawat perlukan pelindung matahari setiap hari serta benar-benar elak matahari sehingga doktor memberitahu sebaliknya."
     }
   ]
 }

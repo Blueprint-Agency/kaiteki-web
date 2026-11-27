@@ -15,10 +15,11 @@ export const site = {
   positioning: "MOH-licensed skin & aesthetic clinic, 9 branches across Malaysia.",
   instagram: "https://instagram.com/kaiteki.my",
   facebook: "https://facebook.com/mykaiteki",
-  // Company number as printed on the legacy site's own footer. No KKLIU line:
-  // none was ever issued, and the legacy site carried none either — displaying
-  // a placeholder would be worse than displaying nothing (spec bug B-02).
-  entity: "Kaiteki Clinic Sdn Bhd (1334975-M)",
+  // Registered entity, matching the Privacy Notice (app/(en)/privacy/notice.ts)
+  // and the legacy site's footer. No KKLIU line: none was ever issued, and the
+  // legacy site carried none either — displaying a placeholder would be worse
+  // than displaying nothing (spec bug B-02).
+  entity: "Kaiteki Beauty Sdn Bhd (1334975-M)",
   mmcNote: "All treatments are performed by MMC-registered doctors.",
 } as const;
 

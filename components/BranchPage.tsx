@@ -39,6 +39,7 @@ function fieldsFor(locale: Locale, b: Branch) {
       state: b.state,
       region: b.region,
       gettingHere: b.gettingHere,
+      about: b.about,
       parking: b.parking,
       serves: b.serves,
       hours: b.hours,
@@ -199,6 +200,17 @@ export function BranchPage({ locale, b }: { locale: Locale; b: Branch }) {
           />
         </div>
       </div>
+
+      {f.about && (
+        <section className="mt-12 max-w-[68ch]">
+          <h2 className="h-sub mb-4">{f.about.heading}</h2>
+          <div className="space-y-4 leading-relaxed text-ink-700">
+            {f.about.body.map((p) => (
+              <p key={p}>{p}</p>
+            ))}
+          </div>
+        </section>
+      )}
 
       {here.length > 0 && (
         <section className="mt-12">

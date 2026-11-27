@@ -18,7 +18,7 @@
   "reviewedBy": "dr-lucas-chew",
   "lastReviewed": "2026-07-13",
   "seoTitle": "Laser Hair Removal Malaysia | IPL & RF Treatment | Kaiteki",
-  "seoDescription": "Laser hair removal in Malaysia using IPL and radiofrequency over a course of sessions. Book a free consultation with a Kaiteki doctor to assess suitability.",
+  "seoDescription": "Laser hair removal in Malaysia on the Alma IPL and radiofrequency platform: who it suits, why it takes a course, shaving between visits and what affects cost.",
   "typicalSessions": "A course, spaced with the growth cycle",
   "facts": [
     {
@@ -67,8 +67,20 @@
       "body": "Your first visit is a consultation, not a treatment. The treatment area, hair type and skin tone are assessed, and a test area may be considered first."
     },
     {
+      "title": "Shave beforehand",
+      "body": "You will usually be asked to shave shortly before the appointment rather than wax or pluck, so the hair above the skin is short while the follicle below stays intact."
+    },
+    {
+      "title": "Preparation",
+      "body": "The area is cleansed, gel is applied where required and eye protection is fitted."
+    },
+    {
       "title": "The treatment",
-      "body": "The area is cleansed and the cooled applicator is moved over it in repeated passes, building warmth gradually."
+      "body": "The cooled applicator is moved over the area in repeated passes, building warmth gradually. Most people describe spreading warmth rather than the snap of a stamping device. A small area such as the underarms may take only a few minutes; full legs or a back take considerably longer."
+    },
+    {
+      "title": "Afterwards",
+      "body": "Sun protection on exposed areas, and for the first day no heat such as hot baths, saunas or vigorous exercise, and no deodorant or fragranced products on freshly treated skin."
     }
   ],
   "afterSession": {
@@ -117,7 +129,8 @@
       "heading": "What is Laser Hair Removal?",
       "body": [
         "Laser Hair Removal is a treatment intended to reduce unwanted hair by targeting the hair follicle with light or energy-based technology.",
-        "It is generally considered for areas such as the underarms, legs, arms or face."
+        "It is generally considered for areas such as the underarms, legs, arms or face.",
+        "Strictly, the Alma platform used at Kaiteki is not a single-wavelength laser. Its applicators deliver broadband light (IPL), shaped towards the wavelengths melanin absorbs most strongly, alongside radiofrequency heating. “Laser hair removal” is the name most people search for, so it is the name used here."
       ]
     },
     {
@@ -144,6 +157,14 @@
     {
       "q": "Can I shave between laser hair removal sessions?",
       "a": "Yes. Shaving is fine, but waxing, plucking, threading and depilatory creams are normally avoided between sessions, because they remove the follicle contents the light needs to target."
+    },
+    {
+      "q": "Is this laser or IPL hair removal?",
+      "a": "It is IPL combined with radiofrequency. The light is absorbed by pigment in the follicle, while the radiofrequency heats the surrounding tissue, so the follicle can reach the temperature it needs with less light energy. Which combination suits your hair and skin is decided by your doctor at consultation."
+    },
+    {
+      "q": "Does laser hair removal hurt?",
+      "a": "Most people describe spreading warmth rather than the repeated snap of a stamped pulse, because the applicator is glided over the area and heat builds gradually. The applicator tip is cooled throughout. Comfort still varies between people and between body areas, and your doctor explains what to expect first."
     }
   ]
 }

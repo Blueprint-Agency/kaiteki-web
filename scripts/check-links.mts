@@ -43,7 +43,12 @@ const EXEMPT: Record<string, string> = {
   "treatment:double-eyelid:related treatments": "no other eyelid procedure on the menu",
   "treatment:exosome-therapy:technology": "no exosome product page yet; client to name the product",
   "concern:hair-loss:technology": "its one treatment is exosome therapy, which has no product page yet",
+  // kt103 (20 Nov 2026), new treatment page.
+  "treatment:nose-thread-lift:concerns": "no nose concern page; nose shape is not a skin concern",
+  "treatment:nose-thread-lift:technology": "PDO threads (client, 20 Nov); a thread material, no device or product page",
+  "treatment:nose-thread-lift:posts": "the two archive thread-lift posts were 301d into this page (2026-11-20); no spoke post written yet",
   "treatment:laser-hair-removal:concerns": "no unwanted-hair concern page yet",
+  "concern:skin-tags-moles:posts": "its only post was merged into it (301, kt101); no spoke post written yet",
   "technology:alma:concerns": "powers laser hair removal only, which has no concern page yet",
 };
 

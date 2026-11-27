@@ -12,6 +12,21 @@ export function waLink(message?: string): string {
 
 export const waGeneric = waLink();
 
+/**
+ * Pages whose every WhatsApp CTA — the header button and the sticky one
+ * included — carries a campaign link instead of the generic message. Keyed by
+ * the locale-neutral path; the URLs are verbatim as supplied by the client.
+ */
+export const PAGE_WA: Record<string, string> = {
+  "/anniversary/2026":
+    "https://wa.me/60103818170?text=Hi%20Kaiteki%2C%20I%27m%20interested%20in%20the%207th%20Anniversary%20promotions.",
+};
+
+/** The page's campaign link if it has one, else `fallback`. */
+export function waForPage(pathname: string | null, fallback: string): string {
+  return (pathname && PAGE_WA[pathname.replace(/\/$/, "")]) || fallback;
+}
+
 export function waForTreatment(name: string): string {
   return waLink(`Hi Kaiteki, I'd like a free consultation about ${name}.`);
 }

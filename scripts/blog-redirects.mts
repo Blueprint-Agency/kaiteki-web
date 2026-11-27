@@ -2,6 +2,10 @@
 /**
  * The 301 map that retires blog.kaiteki.my.
  *
+ * HISTORICAL since 2026-10-31. WordPress is gone, so this can no longer run.
+ * The live map is config/blog-host-redirects.json, served by proxy.ts on
+ * Vercel. Edit that JSON by hand; the nginx container below no longer exists.
+ *
  *   pnpm blog:redirects                > blog-redirects.conf   # nginx
  *   pnpm blog:redirects --format=csv   > blog-redirects.csv    # from,to,status (for checking)
  *

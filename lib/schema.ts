@@ -284,7 +284,10 @@ export function blogPostingGraph({
   author,
   reviewer,
   section,
+  inLanguage = "en-MY",
+  blogPath = "/blog",
 }: {
+  /** Already locale-prefixed for a /zh or /ms post. */
   path: string;
   headline: string;
   description: string;
@@ -297,6 +300,10 @@ export function blogPostingGraph({
   reviewer?: PostPerson;
   /** Blog category, emitted as articleSection. */
   section: string;
+  /** BCP 47 language of this render (lib/i18n localeMeta.bcp47). */
+  inLanguage?: string;
+  /** The blog hub this post belongs to: "/zh/blog" for a Chinese post. */
+  blogPath?: string;
 }) {
   const url = abs(path);
   const modified = dateModified ?? datePublished;
@@ -312,8 +319,8 @@ export function blogPostingGraph({
       ? { image: abs(image), primaryImageOfPage: abs(image) }
       : {}),
     articleSection: section,
-    inLanguage: "en-MY",
-    isPartOf: { "@id": `${site.url}/blog#blog` },
+    inLanguage,
+    isPartOf: { "@id": `${site.url}${blogPath}#blog` },
     datePublished,
     dateModified: modified,
     lastReviewed: modified,
@@ -328,19 +335,26 @@ export function blogPostingGraph({
 export function blogNode({
   description,
   items,
+  path = "/blog",
+  name = `${site.name}: Skin & Aesthetic Blog`,
+  inLanguage = "en-MY",
 }: {
   description: string;
   items: { name: string; path: string; image?: string; datePublished: string }[];
+  /** "/zh/blog" for the Chinese hub. */
+  path?: string;
+  name?: string;
+  inLanguage?: string;
 }) {
-  const url = `${site.url}/blog`;
+  const url = `${site.url}${path}`;
   return {
     "@context": "https://schema.org",
     "@type": "Blog",
     "@id": `${url}#blog`,
     url,
-    name: `${site.name}: Skin & Aesthetic Blog`,
+    name,
     description,
-    inLanguage: "en-MY",
+    inLanguage,
     isPartOf: { "@id": websiteId },
     publisher: { "@id": orgId },
     blogPost: items.map((it) => ({
