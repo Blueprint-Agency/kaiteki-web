@@ -24,6 +24,9 @@ export const FIXED_KEYS = new Set([
   "ratio",
   "nativeWidth",
   "illustration",
+  // Technology blocks: an icon name and a checklist tone, keyed by the renderer.
+  "icon",
+  "tone",
   "archetype",
   "reviewedBy",
   "lastReviewed",

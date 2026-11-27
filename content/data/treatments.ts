@@ -17,10 +17,11 @@ import type { Treatment } from "@/lib/types";
 export const treatments: Treatment[] = [
   // ── Reference implementation of the v2 treatment template (config/treatments.json,
   // archetype ED, depth "full"). Copy authored in the Pico Laser page preview,
-  // 30 Jul 2026, pending Dr Chew Yuhhui's clinical sign-off. Two deliberate
-  // departures from that document, both because the source it cited is a 404:
-  // Picocare is absent from T-07 and T-15, and the fact strip says two platforms,
-  // not three. Restore both together if /technology/picocare ships.
+  // 30 Jul 2026, pending Dr Chew Yuhhui's clinical sign-off. Picocare was held
+  // out of T-07, T-15 and the fact strip until /technology/picocare shipped.
+  // Restored 27 Nov 2026 with that page: T-07 and the fact strip name it, the
+  // T-15 devices block lists it from its technology entry, and one T-16 answer
+  // mentions it.
   {
     slug: "pico-laser",
     durationDowntime: "20-40 min · Minimal downtime (1-2 days)",
@@ -43,7 +44,7 @@ export const treatments: Treatment[] = [
     // T-02 — process facts only. A time-to-result here would be an outcome
     // claim (R-01) and is medically wrong for melasma regardless.
     facts: [
-      { value: "2 pico platforms", label: "Matched to your skin type and pigment" },
+      { value: "3 pico platforms", label: "Matched to your skin type and pigment" },
       { value: "20–40 minutes", label: "Typical facial pigment appointment, including preparation" },
       { value: "Assessment first", label: "Your first visit is a doctor consultation, not a treatment" },
     ],
@@ -91,7 +92,7 @@ export const treatments: Treatment[] = [
     variantModule: {
       heading: "Which pico device, and why it matters",
       intro:
-        "Both platforms fire picosecond pulses, but their primary wavelengths differ, and wavelength changes how strongly melanin absorbs the pulse. That is a difference in energy delivery, not a ranking.",
+        "All three platforms fire picosecond pulses, but their primary wavelengths and handpieces differ, and wavelength changes how strongly melanin absorbs the pulse. That is a difference in energy delivery, not a ranking.",
       items: [
         {
           eyebrow: "755nm · Cynosure",
@@ -106,6 +107,13 @@ export const treatments: Treatment[] = [
           body: "Built around the longer 1064nm Nd:YAG wavelength, which interacts less with surface melanin and travels deeper. Often chosen where skin tone or pigment depth makes a 755nm pass less appropriate.",
           href: "/technology/fotona-pqx",
           hrefLabel: "About Fotona PQX",
+        },
+        {
+          eyebrow: "1064nm · Wontech",
+          title: "PicoCare",
+          body: "Like Fotona PQX, built around the 1064nm Nd:YAG wavelength, which interacts less with surface melanin. Where it differs is delivery: a HEXA micro-lens array for acne scar and texture passes, and optional 595nm and 660nm handpieces for tattoo colours the core wavelengths reach poorly.",
+          href: "/technology/picocare",
+          hrefLabel: "About PicoCare",
         },
       ],
     },
@@ -261,10 +269,12 @@ export const treatments: Treatment[] = [
     // fact is restated from the signed PicoSure and Fotona PQX pages or from
     // this page's own risks block: no new claim, no figure. Goes to Dr Chew
     // Yuhhui in the offline review round, so `lastReviewed` is unchanged.
+    // 2026-11-27: the first answer now also names PicoCare, from a page still
+    // awaiting Dr Calvin Tan's review, so that line goes to both doctors.
     faqs: [
       {
         q: "Is Pico laser the same as PicoSure?",
-        a: "No. PicoSure is one pico laser, a 755nm device made by Cynosure. “Pico” describes the pulse length, so other devices count too, such as Fotona PQX at 1064nm and 532nm. Kaiteki uses both, and the doctor chooses the wavelength that suits your pigment and skin tone.",
+        a: "No. PicoSure is one pico laser, a 755nm device made by Cynosure. “Pico” describes the pulse length, so other devices count too, such as Fotona PQX and PicoCare at 1064nm and 532nm. Kaiteki uses all three, and the doctor chooses the wavelength that suits your pigment and skin tone.",
       },
       {
         q: "Does Pico laser hurt?",
@@ -956,7 +966,7 @@ export const treatments: Treatment[] = [
     ],
     summary: "Radiofrequency energy used to support skin-firmness and texture concerns.",
     leadAnswer:
-      "Radiofrequency (RF) treatments use controlled energy, delivered from the skin surface with no needles, to warm the deeper layers of the skin. Kaiteki runs four RF platforms, and a doctor examines your skin before choosing one.",
+      "Radiofrequency (RF) treatments use controlled energy, delivered from the skin surface with no needles, to warm the deeper layers of the skin. Kaiteki runs five RF platforms, and a doctor examines your skin before choosing one.",
     related: ["microneedling", "hifu"],
     reviewedBy: "dr-chloe-wan",
     lastReviewed: "2026-06-12",
@@ -971,7 +981,7 @@ export const treatments: Treatment[] = [
     // `lastReviewed` is unchanged.
     typicalSessions: "About 2 to 3, then maintenance",
     facts: [
-      { value: "4 RF platforms", label: "BTL Exilis, Oligio X, Wonderface and XERF, matched to your skin" },
+      { value: "5 RF platforms", label: "BTL Exilis, Density, Oligio X, Wonderface and XERF, matched to your skin" },
       { value: "30–60 minutes", label: "Typical session, depending on the areas treated" },
       { value: "Assessment first", label: "Your first visit is a doctor consultation, not a treatment" },
     ],
@@ -992,9 +1002,9 @@ export const treatments: Treatment[] = [
 
     // T-07 — the devices paragraph of "How it works", as the variant module (R1).
     variantModule: {
-      heading: "BTL Exilis, Oligio X, Wonderface or XERF: which RF platform, and why",
+      heading: "BTL Exilis, Density, Oligio X, Wonderface or XERF: which RF platform, and why",
       intro:
-        "The four platforms differ in how deep the energy reaches and how the surface is cooled.",
+        "The five platforms differ in how deep the energy reaches and how the surface is cooled.",
       items: [
         {
           eyebrow: "Monopolar · embedded cooling",
@@ -1002,6 +1012,13 @@ export const treatments: Treatment[] = [
           body: "Monopolar delivery with embedded surface cooling lets the device keep working at a depth that reaches subcutaneous fat, which is why it is used for body-contour concerns as well as facial firmness.",
           href: "/technology/btl-exilis",
           hrefLabel: "About BTL Exilis",
+        },
+        {
+          eyebrow: "Sequential monopolar + bipolar · cryogen cooling",
+          title: "Density",
+          body: "A Korean 6.78 MHz platform whose dual-mode tips deliver monopolar and then bipolar RF in each shot, heating a deeper and a shallower layer in sequence, with a small tip for the eyelids.",
+          href: "/technology/density",
+          hrefLabel: "About Density",
         },
         {
           eyebrow: "Monopolar 6.78 MHz · contact cooling",
@@ -1218,7 +1235,7 @@ export const treatments: Treatment[] = [
           hrefLabel: "About Sylfirm X",
         },
         {
-          eyebrow: "Monopolar and bipolar · Cynosure Lutronic",
+          eyebrow: "Monopolar and bipolar · Jeisys, South Korea",
           title: "Potenza",
           body: "Adjustable needle depth with monopolar and bipolar RF modes, generally considered for acne scarring, enlarged pores and oily texture.",
           href: "/technology/potenza",
@@ -1568,6 +1585,10 @@ export const treatments: Treatment[] = [
     // named reviewer: this page's own sections and the five product pages
     // (Rejuran, Profhilo, Plinest, Juvelook, Hydrodeluxe). Where the products
     // differ, the block says which one it means rather than averaging them.
+    // 2026-11-27: Belotero Revive, NCTF 135HA and the ECM booster joined the
+    // module, and their contraindications and the Revive skin-type note were
+    // added to T-09 and T-12. Those three pages await their reviewers, so these
+    // lines go to Dr Jeremy Low, Dr Joaan Kong and Dr Hong Peiyi with them.
     // The re-arrangement goes to Dr Chew in the offline review round, which is
     // why `lastReviewed` is unchanged.
 
@@ -1597,7 +1618,7 @@ export const treatments: Treatment[] = [
       },
     ],
 
-    // T-07 — the five products, told apart by what is in them. Material and
+    // T-07 — the eight products, told apart by what is in them. Material and
     // manufacturer are the facts already on each product page (docs/15 2.0).
     variantModule: {
       heading: "Which skin booster, and what is in it",
@@ -1639,10 +1660,31 @@ export const treatments: Treatment[] = [
           href: "/technology/juvelook",
           hrefLabel: "About Juvelook",
         },
+        {
+          eyebrow: "Cross-linked HA + glycerol · Merz (Anteis), Switzerland",
+          title: "Belotero Revive",
+          body: "A cross-linked hyaluronic acid gel with added glycerol, from the Belotero family, used for dry skin and superficial fine lines rather than volume.",
+          href: "/technology/belotero-revive",
+          hrefLabel: "About Belotero Revive",
+        },
+        {
+          eyebrow: "HA + vitamins & amino acids · Fillmed, France",
+          title: "NCTF 135HA",
+          body: "A light hyaluronic acid solution carrying vitamins, amino acids, minerals and coenzymes, used for dull, dehydrated skin and superficial fine lines on the face, neck and décolletage.",
+          href: "/technology/nctf",
+          hrefLabel: "About NCTF 135HA",
+        },
+        {
+          eyebrow: "Human acellular dermal matrix · Essalia",
+          title: "ECM Skin Booster",
+          body: "Purified human dermal matrix that supplies collagen and elastin, the skin's structural framework, rather than only hydrating. The published evidence is still early.",
+          href: "/technology/ecm-skin-booster",
+          hrefLabel: "About the ECM Skin Booster",
+        },
       ],
     },
 
-    // T-09 — the union of the five product pages' contraindications, each
+    // T-09 — the union of the eight product pages' contraindications, each
     // tied to the product it applies to where it is product-specific.
     avoidIf: [
       { lead: "Pregnancy or breastfeeding.", body: "Treatment is deferred." },
@@ -1665,6 +1707,18 @@ export const treatments: Treatment[] = [
       {
         lead: "Nodules or granulomatous reactions to a previous filler or biostimulator,",
         body: "which is a consideration for collagen-stimulating products such as Juvelook.",
+      },
+      {
+        lead: "Being under 18,",
+        body: "which the Belotero Revive and NCTF 135HA instructions exclude.",
+      },
+      {
+        lead: "A non-dissolving filler already in the area, or a recent peel, laser or dermabrasion,",
+        body: "for Belotero Revive in particular, which is not injected over a permanent filler and waits at least two weeks for treated skin to heal fully.",
+      },
+      {
+        lead: "Severe allergies, anaphylaxis or a past streptococcal illness,",
+        body: "or a past reaction to a tissue-derived product, which matters for the human-derived ECM booster.",
       },
     ],
 
@@ -1710,14 +1764,14 @@ export const treatments: Treatment[] = [
         "Gentle skincare and sun protection, and a short break from heat, strenuous exercise and pressure on the treated area before resuming actives and makeup.",
     },
 
-    // T-12 — not energy-based, so no pigment note: skin tone is not a
-    // limiting factor the way it is with lasers (every product page says so).
+    // T-12 — not energy-based, so no laser-style pigment note. The exception is
+    // Belotero Revive, whose instructions name skin type, so lessCommon says so.
     risks: {
       intro: "",
       common:
         "Bumps at the injection points, swelling, redness, bruising, tenderness and small palpable lumps, which typically settle over a short period.",
       lessCommon:
-        "Infection, prolonged swelling, nodules and hypersensitivity reactions. Persistent nodules or granuloma formation are a recognised consideration with collagen-stimulating products. Vascular complications are rare but recognised with any facial injection.",
+        "Infection, prolonged swelling, nodules and hypersensitivity reactions. Persistent nodules or granuloma formation are a recognised consideration with collagen-stimulating products. Vascular complications are rare but recognised with any facial injection. The Belotero Revive instructions also note no clinical data in the deepest skin tones (Fitzpatrick V and VI) and a higher likelihood of itching, swelling and redness in patients of Asian background.",
       cannotDo: [
         "It does not add volume or change the shape of the face.",
         "It does not work in a single session. Skin boosters are used as a course, and any change develops gradually.",
@@ -1988,7 +2042,7 @@ export const treatments: Treatment[] = [
 
     // T-07 — the former "Types of bio-stimulator" section (R1).
     variantModule: {
-      heading: "Sculptra, Radiesse or Ellansé: which material, and why",
+      heading: "Sculptra, Radiesse, Ellansé or Deusaderm: which material, and why",
       intro:
         "Each product uses a different base material, which changes how it behaves and how long it takes to resorb.",
       items: [
@@ -2014,9 +2068,11 @@ export const treatments: Treatment[] = [
           hrefLabel: "About Ellansé",
         },
         {
-          eyebrow: "Collagen-based",
+          eyebrow: "Porcine collagen · Sunmax",
           title: "Deusaderm",
-          body: "A collagen-based injectable intended to support skin quality, structure and elasticity.",
+          body: "Purified collagen itself rather than a synthetic particle, so it gives some support when placed before being absorbed over months. It contains no hyaluronic acid and is considered for the under-eye area.",
+          href: "/technology/deusaderm",
+          hrefLabel: "About Deusaderm",
         },
       ],
     },
@@ -2026,7 +2082,8 @@ export const treatments: Treatment[] = [
       body: "A doctor can tell you which your concern calls for, or whether it needs neither.",
     },
 
-    // T-09 — this page and the three product pages.
+    // T-09 — this page and the four product pages. The Deusaderm item
+    // (2026-11-27) goes to Dr Jacqueline Tan with that page.
     avoidIf: [
       { lead: "Pregnancy or breastfeeding.", body: "Treatment is deferred." },
       { lead: "Active infection or inflammation", body: "in the treatment area." },
@@ -2036,6 +2093,10 @@ export const treatments: Treatment[] = [
       {
         lead: "Previous permanent or semi-permanent implants",
         body: "in the same area.",
+      },
+      {
+        lead: "An allergy to collagen, pork-derived products or lidocaine,",
+        body: "for Deusaderm, which is porcine collagen with lidocaine. If a porcine product is not acceptable to you, non-animal options can be discussed.",
       },
     ],
 
@@ -2578,7 +2639,6 @@ export const treatments: Treatment[] = [
     category: "Lasers",
     image: "https://cdn.kaiteki.my/treatments/resurfacing-laser/hero.jpg",
     procedureImages: [
-      { src: "https://cdn.kaiteki.my/treatments/resurfacing-laser/procedure-01.jpg", caption: "A doctor guides the laser handpiece close to the patient's skin." },
       { src: "https://cdn.kaiteki.my/treatments/resurfacing-laser/procedure-02.jpg", caption: "A doctor holds the patient's face steady while applying the laser handpiece." },
       { src: "https://cdn.kaiteki.my/treatments/resurfacing-laser/procedure-03.jpg", caption: "A practitioner moves the laser handpiece along the patient's jawline." },
     ],

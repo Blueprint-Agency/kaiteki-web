@@ -1,0 +1,246 @@
+{
+  "slug": "ecm-skin-booster",
+  "name": "Skin Booster ECM",
+  "group": "Injectables",
+  "type": "injectable",
+  "treatments": [
+    "skin-booster"
+  ],
+  "image": "https://cdn.kaiteki.my/images/technology/ecm-skin-booster-v2.jpg",
+  "imageAlt": "Seorang wanita tersenyum dengan kulit yang bersih dan semula jadi meletakkan tangan di pipinya di dalam bilik klinik yang terang",
+  "summary": "Essalia, skin booster ECM yang digunakan di Kaiteki: matriks dermis manusia yang telah ditulenkan, yang membekalkan kolagen dan elastin, iaitu kerangka struktur kulit.",
+  "leadAnswer": "Skin booster ECM ialah suntikan yang diperbuat daripada matriks dermis aselular manusia: tisu kulit yang didermakan, dengan setiap sel dan semua bahan genetik dibuang, meninggalkan kerangka kolagen dan elastin. Kaiteki menggunakan Essalia. Ia bertujuan membekalkan kerangka struktur kulit secara terus, bukan sekadar menghidratkan seperti asid hialuronik. Buktinya masih di peringkat awal.",
+  "facts": [
+    {
+      "value": "Matriks dermis aselular manusia",
+      "label": "Bahan"
+    },
+    {
+      "value": "Essalia (Juveacell)",
+      "label": "Produk yang digunakan"
+    },
+    {
+      "value": "Skin booster",
+      "label": "Digunakan dalam"
+    }
+  ],
+  "results": [
+    {
+      "src": "https://cdn.kaiteki.my/images/technology/ecm-skin-booster-before-after-01.jpg",
+      "nativeWidth": 864,
+      "ratio": "1/1",
+      "caption": "Sebelum dan selepas rawatan skin booster ECM (Essalia) di Kaiteki"
+    }
+  ],
+  "blocks": [
+    {
+      "kind": "cards",
+      "heading": "Tiga jenis skin booster, tiga tugas yang berbeza",
+      "intro": "Kebanyakan skin booster sama ada menambah air atau menyokong pemulihan. Skin booster ECM pula menambah semula struktur.",
+      "items": [
+        {
+          "icon": "droplet",
+          "eyebrow": "Asid hialuronik",
+          "title": "Memegang air",
+          "body": "Menarik kelembapan ke dalam kulit untuk penghidratan dan seri kulit. Profhilo ialah salah satu contohnya."
+        },
+        {
+          "icon": "sparkle",
+          "eyebrow": "Polinukleotida",
+          "title": "Menyokong pemulihan",
+          "body": "Serpihan DNA yang ditujukan kepada persekitaran pemulihan kulit itu sendiri. Rejuran ialah salah satu contohnya."
+        },
+        {
+          "icon": "layers",
+          "eyebrow": "Matriks ekstrasel",
+          "title": "Membekalkan struktur",
+          "body": "Membekalkan kolagen dan elastin, iaitu kerangka struktur kulit, secara terus.",
+          "highlight": "Essalia"
+        }
+      ]
+    },
+    {
+      "kind": "diagram",
+      "heading": "Apa yang ditambah semula oleh skin booster ECM",
+      "intro": "Bayangkan kulit anda sebagai sebuah rumah. Kolagen dan elastin ialah tiang dan rasuk yang menampung segala-galanya.",
+      "diagram": "ecm-scaffold",
+      "panels": [
+        {
+          "title": "Kerangka yang lengkap",
+          "body": "Kolagen yang padat dan elastin yang kenyal memastikan kulit tegang dan licin."
+        },
+        {
+          "title": "Menipis dengan masa",
+          "body": "Usia dan cahaya matahari merosakkan kerangka ini: garis halus bertambah, tekstur lebih kasar, kulit kurang anjal."
+        },
+        {
+          "title": "Struktur ditambah semula",
+          "body": "Zarah ECM membekalkan kolagen dan elastin ke dalam ruang yang kosong."
+        }
+      ],
+      "caption": "Ilustrasi sahaja. Tindak balas kulit anda dinilai oleh doktor dan berbeza antara individu."
+    },
+    {
+      "kind": "steps",
+      "heading": "Daripada tisu yang didermakan kepada suntikan yang halus",
+      "intro": "Ya, ia berasal daripada kulit manusia. Begini cara ia dihasilkan.",
+      "items": [
+        {
+          "icon": "heart",
+          "title": "Tisu yang didermakan",
+          "body": "Kulit yang didermakan melalui bank tisu yang dikawal selia."
+        },
+        {
+          "icon": "beaker",
+          "title": "Sel dibuang",
+          "body": "Setiap sel dan semua bahan genetik dikeluarkan, satu langkah yang dipanggil decellularisation (penyahselularan)."
+        },
+        {
+          "icon": "layers",
+          "title": "Kerangka dikekalkan",
+          "body": "Yang tinggal ialah kerangka yang telah ditulenkan dan kaya dengan kolagen dan elastin."
+        },
+        {
+          "icon": "syringe",
+          "title": "Dijadikan suntikan",
+          "body": "Dikisar menjadi zarah halus: sama ada serbuk yang dicampur dengan larutan salin, atau gel siap guna."
+        }
+      ],
+      "note": "Bahan yang sama telah digunakan selama bertahun-tahun dalam pembinaan semula payudara dan saraf. Jika anda mempunyai pertimbangan agama atau etika tentang produk yang berasal daripada manusia, beritahu doktor anda; ada skin booster lain sebagai pilihan."
+    },
+    {
+      "kind": "chips",
+      "heading": "Untuk siapa ia dipertimbangkan",
+      "intro": "Untuk kualiti dan struktur kulit, bukan volum. Kesesuaian ditentukan semasa konsultasi.",
+      "items": [
+        {
+          "icon": "waves",
+          "label": "Garis halus akibat kulit yang mula menipis"
+        },
+        {
+          "icon": "texture",
+          "label": "Tekstur kasar dan liang pori yang nampak besar"
+        },
+        {
+          "icon": "tone",
+          "label": "Kehilangan keanjalan dan ketumpatan kulit"
+        },
+        {
+          "icon": "eye",
+          "label": "Kulit nipis dan berkerepot di bawah mata"
+        },
+        {
+          "icon": "calendar",
+          "label": "Kualiti kulit jangka panjang, bersama skin booster lain"
+        }
+      ]
+    },
+    {
+      "kind": "callout",
+      "heading": "Apa yang ditunjukkan oleh kajian setakat ini",
+      "badge": "Bukti awal",
+      "points": [
+        "Kajian kecil melaporkan peningkatan dalam ketumpatan kulit, keanjalan, kelembapan dan penampilan liang pori.",
+        "Satu ujian separuh muka secara rawak dan dwi-buta ke atas skin booster matriks dermis manusia melaporkan ukuran kulit yang bertambah baik.",
+        "Kajian makmal melaporkan aktiviti fibroblas yang lebih tinggi, iaitu sel yang menghasilkan kolagen."
+      ],
+      "note": "Kajian-kajian ini kecil dan data jangka panjang masih terhad. Perubahan terbentuk secara beransur-ansur dalam beberapa minggu, biasanya melalui satu siri sesi, dan hasilnya berbeza antara individu."
+    },
+    {
+      "kind": "steps",
+      "heading": "Lawatan anda, langkah demi langkah",
+      "items": [
+        {
+          "icon": "chat",
+          "title": "Konsultasi dahulu",
+          "body": "Doktor memeriksa kulit anda dan menentukan sama ada Essalia sesuai untuk anda.",
+          "tag": "Lawatan awal"
+        },
+        {
+          "icon": "clock",
+          "title": "Krim kebas",
+          "body": "Disapu dan dibiarkan berkesan sementara produk disediakan."
+        },
+        {
+          "icon": "syringe",
+          "title": "Suntikan kecil dan cetek",
+          "body": "Diletakkan oleh doktor di seluruh kawasan yang telah dinilai."
+        },
+        {
+          "icon": "sun",
+          "title": "Bintil kecil reda",
+          "body": "Biasanya dalam satu atau dua hari. Penjagaan kulit yang lembut, tiada makeup pada hari itu, dan pelindung matahari setiap hari.",
+          "tag": "1 hingga 2 hari"
+        },
+        {
+          "icon": "calendar",
+          "title": "Satu kursus pendek",
+          "body": "Beberapa sesi yang dijarakkan beberapa minggu, ditetapkan oleh doktor mengikut kulit anda."
+        }
+      ]
+    },
+    {
+      "kind": "checklists",
+      "heading": "Siapa yang patut menunggu, dan kemungkinan kesan sampingan",
+      "columns": [
+        {
+          "title": "Tunggu atau elakkan jika",
+          "tone": "avoid",
+          "items": [
+            "Hamil atau menyusukan anak",
+            "Ada jangkitan, jerawat yang sedang naik atau keradangan di kawasan yang akan disuntik",
+            "Mempunyai keadaan autoimun",
+            "Mempunyai masalah pembekuan darah atau mengambil ubat pencair darah",
+            "Cenderung mendapat parut keloid atau parut timbul",
+            "Pernah mengalami tindak balas terhadap produk suntikan atau produk yang berasal daripada tisu"
+          ]
+        },
+        {
+          "title": "Kemungkinan kesan sampingan",
+          "tone": "neutral",
+          "items": [
+            "Kemerahan, bengkak, lebam atau rasa sengal",
+            "Bintil kecil atau nodul",
+            "Jangkitan atau keradangan",
+            "Tindak balas alahan atau imun, kurang biasa"
+          ]
+        }
+      ],
+      "note": "Data keselamatan yang diterbitkan tentang suntikan ECM masih sedikit, jadi ini ialah risiko umum bagi suntikan ke dalam kulit. Doktor anda akan menerangkannya sebelum sebarang sesi ditempah."
+    }
+  ],
+  "costFactors": {
+    "intro": "Harga dibincangkan semasa konsultasi, bukan disebut dalam talian, jadi sebarang angka mencerminkan pelan anda selepas penilaian, bukan pakej umum. Perkara yang mempengaruhinya:",
+    "factors": [
+      "Kawasan yang dirawat: seluruh muka berbeza daripada kawasan bawah mata sahaja.",
+      "Berapa banyak sesi yang mungkin diperlukan oleh kulit anda.",
+      "Sama ada skin booster ECM digabungkan dengan skin booster lain dalam pelan yang sama."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Produk ECM mana yang digunakan oleh Kaiteki?",
+      "a": "Kaiteki menggunakan Essalia, iaitu nama Juveacell di Malaysia. Skin booster ECM lain yang mungkin anda temui termasuk Elravie Re2O (sering ditulis Re20) dan CellREDM. Bahan asasnya sama, tetapi berbeza dari segi pemprosesan, bentuk zarah dan cara penyediaan. Sama ada Essalia sesuai untuk anda, dan berapa banyak yang digunakan, ditentukan oleh doktor selepas memeriksa kulit anda."
+    },
+    {
+      "q": "Adakah skin booster ECM selamat jika ia berasal daripada tisu manusia?",
+      "a": "Tisu ini datang daripada bank tisu yang dikawal selia dan diproses untuk membuang semua sel dan bahan genetik sebelum dijadikan suntikan, dan bahan yang sama jenis mempunyai sejarah panjang sebagai cantuman tisu dalam pembedahan. Namun begitu, data keselamatan yang diterbitkan untuk bentuk suntikan masih terhad, dan seperti mana-mana suntikan, ia mempunyai risiko seperti bengkak, bintil, jangkitan dan, walaupun kurang biasa, tindak balas alahan atau imun. Doktor anda akan menerangkannya kepada anda."
+    },
+    {
+      "q": "Apa beza skin booster ECM dengan Profhilo atau Rejuran?",
+      "a": "Profhilo ialah skin booster asid hialuronik, yang dipilih terutamanya untuk penghidratan. Rejuran ialah skin booster polinukleotida, yang ditujukan kepada persekitaran pemulihan kulit itu sendiri. Skin booster ECM pula membekalkan kolagen dan elastin struktur secara terus. Ketiga-tiganya kategori yang berbeza, bukan versi yang lebih baik atau lebih buruk antara satu sama lain, dan kadangkala digunakan bersama dalam satu pelan. Yang mana sesuai dengan kulit anda dinilai oleh doktor secara bersemuka."
+    },
+    {
+      "q": "Berapa sesi yang saya perlukan, dan bila saya akan nampak perubahan?",
+      "a": "Perubahan, jika ada, terbentuk secara beransur-ansur dalam beberapa minggu, bukan sejurus selepas sesi, dan biasanya melibatkan satu siri sesi. Bilangan dan jarak sesi bergantung pada kulit anda dan produk yang digunakan, jadi doktor menetapkannya semasa konsultasi, bukan lebih awal."
+    },
+    {
+      "q": "Bolehkah skin booster ECM digabungkan dengan skin booster lain?",
+      "a": "Boleh. Ia sering digunakan bersama skin booster lain sebagai sebahagian daripada pelan kualiti kulit jangka panjang, contohnya menggandingkan sokongan struktur dengan penghidratan. Doktor anda menentukan susunan dan jarak antara rawatan supaya setiap rawatan sempat reda sebelum yang seterusnya."
+    }
+  ],
+  "reviewedBy": "dr-hong-peiyi",
+  "lastReviewed": "2026-11-21",
+  "seoTitle": "Skin Booster ECM Essalia (Juveacell) di Malaysia | Kaiteki",
+  "seoDescription": "Essalia ialah skin booster ECM di Kaiteki: matriks dermis manusia yang ditulenkan untuk tekstur, ketumpatan dan keanjalan kulit. Cara kerja, risiko dan kesesuaian."
+}

@@ -1,0 +1,246 @@
+{
+  "slug": "ecm-skin-booster",
+  "name": "ECM Skin Booster",
+  "group": "Injectables",
+  "type": "injectable",
+  "treatments": [
+    "skin-booster"
+  ],
+  "image": "https://cdn.kaiteki.my/images/technology/ecm-skin-booster-v2.jpg",
+  "imageAlt": "A smiling woman with clear, natural skin rests a hand on her cheek in a bright clinic room",
+  "summary": "Essalia, the ECM skin booster used at Kaiteki: purified human dermal matrix that supplies collagen and elastin, the skin's structural framework.",
+  "leadAnswer": "An ECM skin booster is an injectable made from human acellular dermal matrix: donated skin tissue with every cell and all genetic material removed, leaving the collagen and elastin framework. Kaiteki uses Essalia. It aims to supply the skin's structural scaffold directly, rather than only hydrating like hyaluronic acid. Evidence is still early.",
+  "facts": [
+    {
+      "value": "Human acellular dermal matrix",
+      "label": "Material"
+    },
+    {
+      "value": "Essalia (Juveacell)",
+      "label": "Product used"
+    },
+    {
+      "value": "Skin booster",
+      "label": "Used within"
+    }
+  ],
+  "results": [
+    {
+      "src": "https://cdn.kaiteki.my/images/technology/ecm-skin-booster-before-after-01.jpg",
+      "nativeWidth": 864,
+      "ratio": "1/1",
+      "caption": "Before and after ECM skin booster (Essalia) treatment at Kaiteki"
+    }
+  ],
+  "blocks": [
+    {
+      "kind": "cards",
+      "heading": "Three kinds of skin booster, three different jobs",
+      "intro": "Most boosters either add water or support repair. An ECM booster puts back structure.",
+      "items": [
+        {
+          "icon": "droplet",
+          "eyebrow": "Hyaluronic acid",
+          "title": "Holds water",
+          "body": "Draws moisture into the skin for hydration and glow. Profhilo is one example."
+        },
+        {
+          "icon": "sparkle",
+          "eyebrow": "Polynucleotide",
+          "title": "Supports repair",
+          "body": "DNA fragments directed at the skin's own repair environment. Rejuran is one example."
+        },
+        {
+          "icon": "layers",
+          "eyebrow": "Extracellular matrix",
+          "title": "Supplies structure",
+          "body": "Supplies collagen and elastin, the skin's structural scaffold, directly.",
+          "highlight": "Essalia"
+        }
+      ]
+    },
+    {
+      "kind": "diagram",
+      "heading": "What an ECM booster puts back",
+      "intro": "Think of your skin as a house. Collagen and elastin are the pillars and beams that hold everything up.",
+      "diagram": "ecm-scaffold",
+      "panels": [
+        {
+          "title": "A full frame",
+          "body": "Dense collagen and springy elastin keep skin firm and smooth."
+        },
+        {
+          "title": "Thinning with time",
+          "body": "Age and sun break the frame down: finer lines, rougher texture, less bounce."
+        },
+        {
+          "title": "Structure added back",
+          "body": "ECM particles supply collagen and elastin into the gaps."
+        }
+      ],
+      "caption": "Illustrative only. How your skin responds is assessed by a doctor and varies between individuals."
+    },
+    {
+      "kind": "steps",
+      "heading": "From donated tissue to a fine injectable",
+      "intro": "Yes, it comes from human skin. Here is how it is made.",
+      "items": [
+        {
+          "icon": "heart",
+          "title": "Donated tissue",
+          "body": "Skin donated through regulated tissue banks."
+        },
+        {
+          "icon": "beaker",
+          "title": "Cells removed",
+          "body": "Every cell and all genetic material is taken out, a step called decellularisation."
+        },
+        {
+          "icon": "layers",
+          "title": "Framework kept",
+          "body": "What remains is a purified collagen and elastin rich scaffold."
+        },
+        {
+          "icon": "syringe",
+          "title": "Made injectable",
+          "body": "Milled into fine particles: a powder mixed with saline, or a ready-made gel."
+        }
+      ],
+      "note": "The same material has been used for years in breast and nerve reconstruction. If you have religious or ethical considerations about a human-derived product, tell your doctor; there are other boosters."
+    },
+    {
+      "kind": "chips",
+      "heading": "Who it's considered for",
+      "intro": "For skin quality and structure, not volume. Suitability is decided at consultation.",
+      "items": [
+        {
+          "icon": "waves",
+          "label": "Fine lines from early skin thinning"
+        },
+        {
+          "icon": "texture",
+          "label": "Rough texture and enlarged-looking pores"
+        },
+        {
+          "icon": "tone",
+          "label": "Loss of elasticity and skin density"
+        },
+        {
+          "icon": "eye",
+          "label": "Crepey, thin skin under the eyes"
+        },
+        {
+          "icon": "calendar",
+          "label": "Long-term skin quality, alongside other boosters"
+        }
+      ]
+    },
+    {
+      "kind": "callout",
+      "heading": "What the research shows so far",
+      "badge": "Early evidence",
+      "points": [
+        "Small studies report gains in skin density, elasticity, hydration and pore appearance.",
+        "A randomised, double-blinded split-face trial of a human dermal matrix booster reported improved skin measures.",
+        "Lab work reports more fibroblast activity, the cells that make collagen."
+      ],
+      "note": "Studies are small and long-term data is limited. Change builds gradually over weeks, usually across a series of sessions, and results vary between individuals."
+    },
+    {
+      "kind": "steps",
+      "heading": "Your appointment, step by step",
+      "items": [
+        {
+          "icon": "chat",
+          "title": "Consultation first",
+          "body": "A doctor examines your skin and decides whether Essalia suits you.",
+          "tag": "First visit"
+        },
+        {
+          "icon": "clock",
+          "title": "Numbing cream",
+          "body": "Applied and left to work while the product is prepared."
+        },
+        {
+          "icon": "syringe",
+          "title": "Small, shallow injections",
+          "body": "Placed across the assessed area by the doctor."
+        },
+        {
+          "icon": "sun",
+          "title": "Small bumps settle",
+          "body": "Usually within a day or two. Gentle skincare, no makeup that day, daily sunscreen.",
+          "tag": "1 to 2 days"
+        },
+        {
+          "icon": "calendar",
+          "title": "A short course",
+          "body": "Several sessions a few weeks apart, set by your doctor for your skin."
+        }
+      ]
+    },
+    {
+      "kind": "checklists",
+      "heading": "Who should wait, and the possible side effects",
+      "columns": [
+        {
+          "title": "Wait or avoid if",
+          "tone": "avoid",
+          "items": [
+            "Pregnant or breastfeeding",
+            "Infection, an acne flare or inflammation where it would be injected",
+            "An autoimmune condition",
+            "A bleeding disorder or blood-thinning medication",
+            "A tendency to keloid or raised scars",
+            "A past reaction to an injectable or tissue-derived product"
+          ]
+        },
+        {
+          "title": "Possible side effects",
+          "tone": "neutral",
+          "items": [
+            "Redness, swelling, bruising or tenderness",
+            "Small bumps or nodules",
+            "Infection or inflammation",
+            "Allergic or immune reactions, less common"
+          ]
+        }
+      ],
+      "note": "Published safety data on ECM injectables is still thin, so these are the general risks of injecting into the skin. Your doctor goes through them before anything is booked."
+    }
+  ],
+  "costFactors": {
+    "intro": "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. What moves it:",
+    "factors": [
+      "The area being treated: a full face and the under-eye area alone differ.",
+      "How many sessions your skin is likely to need.",
+      "Whether the ECM booster is combined with another skin booster in the same plan."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Which ECM product does Kaiteki use?",
+      "a": "Kaiteki uses Essalia, which is the name Juveacell is known by in Malaysia. Other ECM boosters you may come across include Elravie Re2O (often written Re20) and CellREDM. They share the same basic material but differ in processing, particle form and preparation. Whether Essalia suits you, and how much is used, is decided by the doctor after examining your skin."
+    },
+    {
+      "q": "Is an ECM skin booster safe if it comes from human tissue?",
+      "a": "The tissue comes from regulated tissue banks and is processed to remove all cells and genetic material before it is made into an injectable, and the same kind of material has a long history as a surgical graft. That said, published safety data on the injectable form is still limited, and like any injection it carries risks such as swelling, bumps, infection and, less commonly, allergic or immune reactions. Your doctor will go through these with you."
+    },
+    {
+      "q": "How is an ECM booster different from Profhilo or Rejuran?",
+      "a": "Profhilo is a hyaluronic acid booster, chosen mainly for hydration. Rejuran is a polynucleotide booster, directed at the skin's own repair environment. An ECM booster supplies structural collagen and elastin directly. They are different categories rather than better or worse versions of one another, and they are sometimes used together in a plan. Which fits your skin is assessed by a doctor in person."
+    },
+    {
+      "q": "How many sessions will I need, and when will I see a change?",
+      "a": "Change, where it happens, builds gradually over weeks rather than straight after the session, and a series of sessions is usually involved. The number and spacing depend on your skin and on the product used, so your doctor sets them at consultation rather than in advance."
+    },
+    {
+      "q": "Can an ECM booster be combined with other skin boosters?",
+      "a": "Yes, it is often used alongside other skin boosters as part of a longer-term skin quality plan, for example pairing structural support with hydration. Your doctor decides the order and spacing so that each treatment has time to settle before the next."
+    }
+  ],
+  "reviewedBy": "dr-hong-peiyi",
+  "lastReviewed": "2026-11-21",
+  "seoTitle": "Essalia ECM Skin Booster (Juveacell) Malaysia | Kaiteki",
+  "seoDescription": "Essalia is the ECM skin booster Kaiteki uses: purified human dermal matrix for skin texture, density and elasticity. How it works, risks, who it suits."
+}

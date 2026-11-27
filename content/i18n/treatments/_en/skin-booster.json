@@ -86,6 +86,27 @@
         "body": "A collagen-stimulating booster used for pores, texture and fine lines.",
         "href": "/technology/juvelook",
         "hrefLabel": "About Juvelook"
+      },
+      {
+        "eyebrow": "Cross-linked HA + glycerol · Merz (Anteis), Switzerland",
+        "title": "Belotero Revive",
+        "body": "A cross-linked hyaluronic acid gel with added glycerol, from the Belotero family, used for dry skin and superficial fine lines rather than volume.",
+        "href": "/technology/belotero-revive",
+        "hrefLabel": "About Belotero Revive"
+      },
+      {
+        "eyebrow": "HA + vitamins & amino acids · Fillmed, France",
+        "title": "NCTF 135HA",
+        "body": "A light hyaluronic acid solution carrying vitamins, amino acids, minerals and coenzymes, used for dull, dehydrated skin and superficial fine lines on the face, neck and décolletage.",
+        "href": "/technology/nctf",
+        "hrefLabel": "About NCTF 135HA"
+      },
+      {
+        "eyebrow": "Human acellular dermal matrix · Essalia",
+        "title": "ECM Skin Booster",
+        "body": "Purified human dermal matrix that supplies collagen and elastin, the skin's structural framework, rather than only hydrating. The published evidence is still early.",
+        "href": "/technology/ecm-skin-booster",
+        "hrefLabel": "About the ECM Skin Booster"
       }
     ]
   },
@@ -113,6 +134,18 @@
     {
       "lead": "Nodules or granulomatous reactions to a previous filler or biostimulator,",
       "body": "which is a consideration for collagen-stimulating products such as Juvelook."
+    },
+    {
+      "lead": "Being under 18,",
+      "body": "which the Belotero Revive and NCTF 135HA instructions exclude."
+    },
+    {
+      "lead": "A non-dissolving filler already in the area, or a recent peel, laser or dermabrasion,",
+      "body": "for Belotero Revive in particular, which is not injected over a permanent filler and waits at least two weeks for treated skin to heal fully."
+    },
+    {
+      "lead": "Severe allergies, anaphylaxis or a past streptococcal illness,",
+      "body": "or a past reaction to a tissue-derived product, which matters for the human-derived ECM booster."
     }
   ],
   "sessionSteps": [
@@ -154,7 +187,7 @@
   "risks": {
     "intro": "",
     "common": "Bumps at the injection points, swelling, redness, bruising, tenderness and small palpable lumps, which typically settle over a short period.",
-    "lessCommon": "Infection, prolonged swelling, nodules and hypersensitivity reactions. Persistent nodules or granuloma formation are a recognised consideration with collagen-stimulating products. Vascular complications are rare but recognised with any facial injection.",
+    "lessCommon": "Infection, prolonged swelling, nodules and hypersensitivity reactions. Persistent nodules or granuloma formation are a recognised consideration with collagen-stimulating products. Vascular complications are rare but recognised with any facial injection. The Belotero Revive instructions also note no clinical data in the deepest skin tones (Fitzpatrick V and VI) and a higher likelihood of itching, swelling and redness in patients of Asian background.",
     "cannotDo": [
       "It does not add volume or change the shape of the face.",
       "It does not work in a single session. Skin boosters are used as a course, and any change develops gradually.",

@@ -58,7 +58,7 @@ const BUDGET: Record<string, number> = {
 
 /** Brand, device and ingredient names that make two identical headings look different. */
 const BRANDS =
-  /\b(picosure|pico|rejuran|botox|botulinum|plinest|newest|juvelook|profhilo|sculptra|ellanse|radiesse|juv[eé]derm|restylane|belotero|hydrodeluxe|morpheus\s*8|potenza|sylfirm\s*x|ultherapy|ultracel\s*q|lifthera|xerf|coolsculpting|cooltech|onda|coolwaves|schwarzy|em-?fit|hydrafacial|silkpeel|alma|m22|derma\s*v|pro\s*yellow|quadrostar|fotona|starwalker|pqx|sp\s*dynamis|timewalker|fractional\s*co2|co2|wonderface|btl\s*exilis|art\s*filler|hifu|vycross|polynucleotide|coolwave)\b/gi;
+  /\b(picosure|pico|rejuran|botox|botulinum|plinest|newest|juvelook|profhilo|sculptra|ellanse|radiesse|juv[eé]derm|restylane|belotero|hydrodeluxe|morpheus\s*8|potenza|sylfirm\s*x|ultherapy|ultracel\s*q|lifthera|xerf|coolsculpting|cooltech|onda|coolwaves|schwarzy|em-?fit|hydrafacial|silkpeel|alma|m22|derma\s*v|pro\s*yellow|quadrostar|fotona|starwalker|pqx|sp\s*dynamis|timewalker|fractional\s*co2|co2|wonderface|btl\s*exilis|art\s*filler|hifu|vycross|polynucleotide|coolwave|picocare|density\s*noir|denza|deusaderm|nctf|filorga)\b/gi;
 
 // Accents are stripped first: "Ellansé" must match `ellanse`, or its headings
 // look unique and the page scores cleaner than it is.

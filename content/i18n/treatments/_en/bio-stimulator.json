@@ -46,7 +46,7 @@
     }
   ],
   "variantModule": {
-    "heading": "Sculptra, Radiesse or Ellansé: which material, and why",
+    "heading": "Sculptra, Radiesse, Ellansé or Deusaderm: which material, and why",
     "intro": "Each product uses a different base material, which changes how it behaves and how long it takes to resorb.",
     "items": [
       {
@@ -71,9 +71,11 @@
         "hrefLabel": "About Ellansé"
       },
       {
-        "eyebrow": "Collagen-based",
+        "eyebrow": "Porcine collagen · Sunmax",
         "title": "Deusaderm",
-        "body": "A collagen-based injectable intended to support skin quality, structure and elasticity."
+        "body": "Purified collagen itself rather than a synthetic particle, so it gives some support when placed before being absorbed over months. It contains no hyaluronic acid and is considered for the under-eye area.",
+        "href": "/technology/deusaderm",
+        "hrefLabel": "About Deusaderm"
       }
     ]
   },
@@ -105,6 +107,10 @@
     {
       "lead": "Previous permanent or semi-permanent implants",
       "body": "in the same area."
+    },
+    {
+      "lead": "An allergy to collagen, pork-derived products or lidocaine,",
+      "body": "for Deusaderm, which is porcine collagen with lidocaine. If a porcine product is not acceptable to you, non-animal options can be discussed."
     }
   ],
   "sessionSteps": [

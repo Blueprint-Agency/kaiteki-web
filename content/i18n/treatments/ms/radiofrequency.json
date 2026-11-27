@@ -19,7 +19,7 @@
     }
   ],
   "summary": "Tenaga radiofrekuensi yang digunakan untuk menyokong masalah ketegangan dan tekstur kulit.",
-  "leadAnswer": "Rawatan radiofrekuensi (RF) menggunakan tenaga terkawal, yang dihantar dari permukaan kulit tanpa jarum, untuk memanaskan lapisan kulit yang lebih dalam. Kaiteki menggunakan empat platform RF, dan doktor memeriksa kulit anda dahulu sebelum memilih salah satu.",
+  "leadAnswer": "Rawatan radiofrekuensi (RF) menggunakan tenaga terkawal, yang dihantar dari permukaan kulit tanpa jarum, untuk memanaskan lapisan kulit yang lebih dalam. Kaiteki menggunakan lima platform RF, dan doktor memeriksa kulit anda dahulu sebelum memilih salah satu.",
   "related": [
     "microneedling",
     "hifu"
@@ -31,8 +31,8 @@
   "typicalSessions": "Lebih kurang 2 hingga 3, kemudian sesi penyelenggaraan",
   "facts": [
     {
-      "value": "4 platform RF",
-      "label": "BTL Exilis, Oligio X, Wonderface dan XERF, dipadankan dengan kulit anda"
+      "value": "5 platform RF",
+      "label": "BTL Exilis, Density, Oligio X, Wonderface dan XERF, dipadankan dengan kulit anda"
     },
     {
       "value": "30–60 minit",
@@ -66,8 +66,8 @@
     }
   ],
   "variantModule": {
-    "heading": "BTL Exilis, Oligio X, Wonderface atau XERF: platform RF yang mana, dan kenapa",
-    "intro": "Keempat-empat platform ini berbeza dari segi sejauh mana tenaga sampai ke dalam kulit dan cara permukaan kulit disejukkan.",
+    "heading": "BTL Exilis, Density, Oligio X, Wonderface atau XERF: platform RF yang mana, dan kenapa",
+    "intro": "Kelima-lima platform ini berbeza dari segi sejauh mana tenaga sampai ke dalam kulit dan cara permukaan kulit disejukkan.",
     "items": [
       {
         "eyebrow": "Monopolar · penyejukan terbina dalam",
@@ -75,6 +75,13 @@
         "body": "Penghantaran monopolar dengan penyejukan permukaan terbina dalam membolehkan mesin terus berfungsi pada kedalaman yang sampai ke lemak bawah kulit, dan sebab itu ia digunakan untuk masalah kontur badan serta ketegangan kulit muka.",
         "href": "/technology/btl-exilis",
         "hrefLabel": "Tentang BTL Exilis"
+      },
+      {
+        "eyebrow": "Monopolar + bipolar berturutan · penyejukan krio",
+        "title": "Density",
+        "body": "Platform 6.78 MHz dari Korea yang hujung dwi-modnya menghantar RF monopolar dan kemudian bipolar dalam setiap tembakan, memanaskan lapisan yang lebih dalam dan lebih cetek secara berturutan, dengan hujung kecil untuk kelopak mata.",
+        "href": "/technology/density",
+        "hrefLabel": "Tentang Density"
       },
       {
         "eyebrow": "Monopolar 6.78 MHz · penyejukan sentuhan",

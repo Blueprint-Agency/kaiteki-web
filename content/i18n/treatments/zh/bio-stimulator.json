@@ -46,7 +46,7 @@
     }
   ],
   "variantModule": {
-    "heading": "Sculptra、Radiesse 还是 Ellansé：用哪种材料，为什么",
+    "heading": "Sculptra、Radiesse、Ellansé 还是 Deusaderm：用哪种材料，为什么",
     "intro": "每种产品使用不同的基础材料，这会改变它的作用方式，以及被身体吸收所需的时间。",
     "items": [
       {
@@ -71,9 +71,11 @@
         "hrefLabel": "了解 Ellansé"
       },
       {
-        "eyebrow": "胶原蛋白类",
+        "eyebrow": "猪源胶原蛋白 · Sunmax",
         "title": "Deusaderm",
-        "body": "一种以胶原蛋白为基础的注射剂，用于支持肤质、皮肤结构和弹性。"
+        "body": "注入的是提纯的胶原蛋白本身，而不是人工合成的微粒，所以注射时会提供一定的支撑，之后在几个月里被吸收。它不含玻尿酸，常被考虑用于眼下部位。",
+        "href": "/technology/deusaderm",
+        "hrefLabel": "了解 Deusaderm"
       }
     ]
   },
@@ -105,6 +107,10 @@
     {
       "lead": "以前打过永久性或半永久性植入物，",
       "body": "而且在同一部位。"
+    },
+    {
+      "lead": "对胶原蛋白、猪源产品或利多卡因过敏，",
+      "body": "这关系到 Deusaderm，它是含利多卡因的猪源胶原蛋白。如果你不能接受猪源产品，可以和医生讨论非动物来源的选择。"
     }
   ],
   "sessionSteps": [

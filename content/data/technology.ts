@@ -236,6 +236,116 @@ export const technology: Technology[] = [
       "Fotona StarWalker PQX is a 1064nm/532nm picosecond laser used at Kaiteki for pigment and tattoo concerns. Book a free consultation to check your suitability.",
   },
   {
+    slug: "picocare",
+    name: "PicoCare",
+    group: "Lasers",
+    type: "device",
+    treatments: ["pico-laser"],
+    summary:
+      "A Korean 1064nm/532nm picosecond Nd:YAG laser, with optional 595nm and 660nm handpieces and a micro-lens array, used within Pico laser treatment for pigment, tattoo ink and acne scarring.",
+    leadAnswer:
+      "PicoCare 450 is a picosecond Nd:YAG laser from Wontech, South Korea, used within Kaiteki's Pico laser treatment. It fires 1064nm or 532nm pulses of around 450 picoseconds, and can be fitted with a HEXA micro-lens array and 595nm and 660nm handpieces for acne scarring and tattoo colours. Which options suit you is decided at consultation.",
+    facts: [
+      { value: "Around 450 picoseconds", label: "Pulse duration" },
+      { value: "Wontech, South Korea", label: "Manufacturer" },
+      { value: "1064, 532, 595 and 660nm", label: "Wavelength options" },
+    ],
+    sections: [
+      {
+        heading: "What is PicoCare 450, and who makes it?",
+        body: [
+          "PicoCare is a picosecond Nd:YAG laser made by Wontech, a manufacturer headquartered in Daejeon, South Korea, and at Kaiteki it is one of the devices within our Pico laser treatment. Wontech also makes the Oligio X radiofrequency platform used at Kaiteki. The PicoCare 450 model is named for its pulse duration of around 450 picoseconds, short enough that pigment and ink are broken up mainly by a photoacoustic shockwave rather than by sustained heating of the surrounding skin.",
+          "PicoCare devices have held US FDA 510(k) clearance since June 2017 for tattoo removal: the 1064nm wavelength for dark inks in all skin types (Fitzpatrick I to VI), and the 532nm wavelength for lighter inks such as red and yellow in skin types I to III. Clearance is a regulatory finding that a device is substantially equivalent to one already on the market, not an approval of any cosmetic outcome, and uses such as pigment or scar work rest on clinical practice and published studies rather than on that clearance. Whether PicoCare suits your concern is decided by a doctor after examining your skin at consultation.",
+        ],
+      },
+      {
+        heading: "How do PicoCare's wavelengths and HEXA lens array divide the work?",
+        body: [
+          "The core of the system is an Nd:YAG source at 1064nm, which travels relatively deep and is absorbed comparatively little by melanin at the surface, plus a frequency-doubled 532nm output that superficial pigment and red, orange and yellow inks absorb more strongly. Wontech also offers dye handpieces that convert the laser's output to 595nm and 660nm, intended for tattoo colours that the two core wavelengths absorb poorly. The US clearances cover the 1064nm and 532nm outputs only.",
+          "For scar and texture work, the HEXA MLA (micro-lens array) handpiece splits the beam into a grid of tightly focused points. Each point concentrates energy into a microscopic zone inside the skin while the surface between the points is left largely intact, whereas full-beam handpieces spread the energy evenly for pigment and ink. Spot sizes run from about 2 to 10mm, and the wavelength, handpiece, spot size and fluence are chosen by the treating doctor for your skin and concern. Changes develop gradually over a course and vary between individuals.",
+        ],
+      },
+      {
+        heading: "What did the two split-face trials using PicoCare find?",
+        body: [
+          "PicoCare has device-specific trial data, though the studies are small. A 2020 randomised split-face study in Annals of Dermatology treated 20 Korean patients with solar lentigines (sun spots) in a single session, using PicoCare's 532nm picosecond output on one side of the face and a 532nm Q-switched nanosecond laser on the other. Over 12 weeks, blinded dermatologists graded clearance higher on the picosecond side, and post-inflammatory darkening appeared on one of 20 picosecond-treated sides against six of 20 Q-switched sides.",
+          "A 2023 pilot in Frontiers in Medicine followed 31 Chinese adults with skin types II to V and mild to moderate atrophic acne scars through four sessions four weeks apart, with PicoCare's 1064nm micro-lens array on one side and an ablative fractional 2940nm Er:YAG laser on the other. Scar scores improved on both sides with no significant difference between them at 20 weeks. The picosecond side was less painful, shed its crusts sooner and developed post-inflammatory hyperpigmentation less often, but its redness lasted longer, pinpoint bleeding spots were common, and overall satisfaction was higher on the Er:YAG side.",
+          "Both are short studies in a small number of East Asian patients with carefully selected concerns. They show what the device was tested on, not a prediction of what any one person will see.",
+        ],
+      },
+      {
+        heading: "Which pigment, ink and scar concerns is PicoCare considered for?",
+        body: [
+          "Within Kaiteki's Pico laser treatment, PicoCare is commonly considered for the concerns below. It is not suitable for everyone, and a consultation establishes whether it is appropriate for you and which wavelength or handpiece is the sensible starting point.",
+        ],
+        list: [
+          "Sun spots, freckles and other benign pigmented lesions, using the 532nm or 1064nm full beam",
+          "Dermal pigment such as naevus of Ota and Hori's naevus, as assessed by your doctor",
+          "Melasma, approached cautiously and only within a wider plan",
+          "Dark tattoo inks, plus colours the core wavelengths miss, using the dye handpieces",
+          "Atrophic acne scarring and uneven texture, using the HEXA micro-lens array",
+          "Dull, uneven tone and enlarged-looking pores",
+        ],
+      },
+      {
+        heading: "When is PicoCare the wrong tool, and when should treatment wait?",
+        body: [
+          "Not every dark mark is pigment a laser should chase. Melasma is driven by hormones, heat and sun, and aggressive laser settings can make it darker, sometimes weeks later, so it usually needs sun protection and topical treatment first, with laser used cautiously if at all. Deep, tethered acne scars often need other treatments alongside or instead of a micro-lens array pass, and a mole or patch that has changed in size, shape or colour needs a medical examination before any laser is considered.",
+          "PicoCare may not be suitable during pregnancy or breastfeeding, on recently tanned or sunburnt skin, over active infection, cold sores, eczema or open wounds in the area, with a history of keloid scarring, or while you are taking photosensitising medication including oral isotretinoin. Because the 532nm wavelength is absorbed strongly by melanin and its US clearance is limited to lighter skin types, your doctor may avoid it on deeper skin. Please share your full medical, medication and treatment history at consultation, including previous lasers, peels or injectables in the area.",
+        ],
+      },
+      {
+        heading: "What happens in a PicoCare session, and why can MLA passes leave pinpoint marks?",
+        body: [
+          "The first visit is a doctor consultation and skin assessment, not a treatment. If PicoCare is appropriate, the doctor chooses the wavelength and handpiece and may treat a small test area first, particularly for dermal pigment, melasma or deeper skin tones. On the day, the skin is cleansed, eye protection is fitted, and topical numbing cream may be applied, more often for tattoo work or micro-lens array passes than for a light pigment pass.",
+          "A full-beam pass feels like brief snaps or hot pinpricks, and treated spots can turn grey or darker for several days before they flake away, usually within one to two weeks. A micro-lens array pass behaves differently: the focused points can leave a pattern of tiny red or purple dots (petechiae), along with redness that lasted around four days on average in the 2023 trial. A facial session is usually a short appointment, often around 20 to 40 minutes including preparation. Courses are typically several sessions a few weeks apart, with tattoo sessions spaced further apart; your doctor sets the interval.",
+          "Daily broad-spectrum sunscreen and genuine sun avoidance between sessions are important, because sun exposure is one of the main reasons pigment returns or darkens after laser. Keep skincare gentle, let crusts and flakes shed on their own, and pause retinoids and acids until your doctor says you can resume them. You will be given aftercare instructions for the area and handpiece used.",
+        ],
+      },
+      {
+        heading: "What side effects were seen with PicoCare, and how often did pigment darken?",
+        body: [
+          "As with any medical laser, PicoCare carries risks, and these are explained at consultation before treatment is arranged. Temporary effects can include redness, swelling, itching, pinpoint bleeding spots, crusting, and either darkening (post-inflammatory hyperpigmentation) or lightening of the treated skin. In both trials above, darkening occurred less often on the PicoCare side than with the comparison laser, in one of 20 patients in the sun spot trial and one of 31 in the acne scar trial, but it still occurred, and melasma and deeper skin tones carry more risk. Blistering, infection and scarring are uncommon. Risk is reduced, though never removed, when the wavelength and settings are matched to your skin and the treatment is performed by a trained doctor.",
+        ],
+      },
+    ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. What moves it:",
+      factors: [
+        "Which handpiece the plan needs: a full-beam pass for pigment, the micro-lens array for scarring, or a dye handpiece for particular tattoo colours.",
+        "How deep the pigment sits, and how your skin clears it between visits.",
+        "The size of the area.",
+        "For acne scarring, how many sessions the course runs to.",
+        "For tattoos, the ink colours, density and layering.",
+        "Whether PicoCare is combined with other steps in your plan.",
+      ],
+    },
+    faqs: [
+      {
+        q: "How is PicoCare different from Fotona PQX at Kaiteki?",
+        a: "Both are built around a 1064nm/532nm Nd:YAG source, so they share the same core wavelengths and the lower melanin absorption that 1064nm brings. The differences are in delivery. Fotona PQX also offers Q-switched pulses, structured pulse control and Fotona's FracTAT® tattoo method, while PicoCare can be fitted with 595nm and 660nm dye handpieces and Wontech's HEXA micro-lens array. Your doctor chooses between them for your concern rather than by brand.",
+      },
+      {
+        q: "How does PicoCare compare with PicoSure?",
+        a: "PicoSure's main wavelength is 755nm, which melanin absorbs strongly, while PicoCare is led by 1064nm, which interacts less with surface melanin and reaches deeper. That is why a doctor may lean towards a 1064nm platform for deeper skin tones or deeper pigment, and towards 755nm for certain ink colours. Neither is better in general: the choice depends on your pigment, your skin type and the doctor's assessment.",
+      },
+      {
+        q: "Is PicoCare cleared by the US FDA?",
+        a: "Yes. PicoCare devices were first given US FDA 510(k) clearance in 2017 for tattoo removal: 1064nm for dark inks in all skin types, and 532nm for lighter inks such as red and yellow in skin types I to III. Clearance means the FDA found the device substantially equivalent to one already on the market. It is not an approval of a cosmetic result, and it does not cover every use a doctor may consider, such as acne scar work.",
+      },
+      {
+        q: "Which PicoCare wavelength is used on deeper Malaysian skin tones?",
+        a: "Usually 1064nm. It is absorbed less by melanin in the upper skin, and its US clearance for tattoo removal covers all Fitzpatrick skin types, whereas the 532nm clearance is limited to types I to III. Even at 1064nm, deeper skin carries a higher risk of pigment change, so conservative settings and a test area are common. Your doctor assesses your skin type and pigment history at consultation before choosing settings.",
+      },
+    ],
+    // Reviewer assigned: dr-calvin-tan. No byline until they have read this page
+    // (written 2026-11-27); then set reviewedBy and lastReviewed.
+    seoTitle: "PicoCare 450 Picosecond Laser in Malaysia | Kaiteki",
+    seoDescription:
+      "PicoCare 450 is a 1064nm/532nm picosecond laser by Wontech, used at Kaiteki for pigment, tattoo ink and acne scars. Book a free consultation today.",
+  },
+  {
     slug: "fotona-sp-dynamis",
     name: "Fotona SP Dynamis / TimeWalker",
     group: "Lasers",
@@ -1217,6 +1327,110 @@ export const technology: Technology[] = [
         "XERF is a multifrequency monopolar RF platform used at Kaiteki for skin firmness and laxity, with no needles or numbing cream. Book a free consultation.",
     },
   {
+    slug: "density",
+    name: "Density",
+    group: "Lifting & Tightening",
+    type: "device",
+    treatments: ["radiofrequency"],
+    summary:
+      "A Korean 6.78 MHz radiofrequency platform that can deliver monopolar and then bipolar energy within a single shot, with cryogen cooling, used within RF treatment for mild to moderate laxity.",
+    leadAnswer:
+      "Density is a radiofrequency platform from Jeisys Medical in South Korea, used at Kaiteki within our radiofrequency treatment. With its dual-mode tips, each 6.78 MHz shot delivers monopolar RF, which reaches deeper, followed by bipolar RF, which stays in the upper skin layers, while cryogen cooling protects the surface.",
+    facts: [
+      { value: "Monopolar + bipolar, 6.78 MHz", label: "Energy" },
+      { value: "Jeisys Medical, South Korea", label: "Manufacturer" },
+      { value: "Eye, face and body tips", label: "Treatment tips" },
+    ],
+    sections: [
+      {
+        heading: "What Density is, and where it comes from",
+        body: [
+          "Density is a radiofrequency (RF) skin-tightening platform made by Jeisys Medical, a Seoul-based manufacturer whose Ultracel Q HIFU platform is also used at Kaiteki. Here it is one of the platforms used within our radiofrequency treatment, and it works over intact skin with no needles. The current version is Density Noir, and the same system is also sold as Denza. In the United States, Density, Denza and Density Noir hold FDA 510(k) clearance as a radiofrequency device for dermatologic procedures, under clearances issued in 2023 and 2025; that is a regulatory clearance of the device, not an approval of any cosmetic outcome. Jeisys also lists certification by Korea's Ministry of Food and Drug Safety.",
+        ],
+      },
+      {
+        heading: "Monopolar, then bipolar: how one Density shot heats two layers",
+        body: [
+          "Density runs at 6.78 MHz and can deliver RF in two ways. In monopolar mode, current passes from the treatment tip through the tissue to a return pad placed on the body, which lets heat build deeper in the skin. In bipolar mode, current flows between electrodes a short distance apart on the tip itself, so the heat stays in the upper layers. With the tips Jeisys labels High tips, each shot delivers a monopolar pulse followed by a bipolar pulse, an approach the manufacturer calls Sequential Heating Technology; its Classic tips deliver monopolar RF alone. The aim is to warm a deeper and a shallower layer within the same shot, rather than settling on one depth.",
+          "That controlled heat makes existing collagen contract slightly and then prompts a slower remodelling response over the following months, which is where any gradual firming comes from. A cryogen cooling system cools the skin surface while heat builds beneath it, with five cooling levels listed by Jeisys, so the epidermis is protected while the dermis reaches a useful temperature. The device also reads tissue impedance in real time and calibrates each shot to it. The tip, energy level, cooling level and number of shots are chosen by the treating doctor for your skin.",
+        ],
+      },
+      {
+        heading: "How much evidence is there for Density on Asian skin?",
+        body: [
+          "Density has device-specific studies, and most of them were done in Asian patients. The largest is a 2026 open-label study in the Journal of Cosmetic Dermatology from King Chulalongkorn Memorial Hospital in Bangkok: 26 adults aged 30 to 60 with mild to moderate lower-face laxity had a single Density Noir session, and in the 23 who completed follow-up, laxity ratings improved at one, three and six months compared with baseline, with 3D imaging also recording smaller nasolabial fold measurements. Smaller case series have looked at five Asian patients with skin type IV, three Asian patients treated around the eyes, and 25 patients across clinics in the United States.",
+          "None of these studies had a control group or compared Density with monopolar-only RF or with another device, and each lists a co-author from the manufacturer's medical affairs team. The authors themselves call for controlled studies. They show what Density has been tested on, mild to moderate laxity treated in a single session, not what any one person will see.",
+        ],
+      },
+      {
+        heading: "Lower face, eyelids or body: where Density is considered",
+        body: [
+          "Density is mainly used for early to moderate loss of firmness on the face. A small eye tip, about half a centimetre square, is designed for the thinner skin around the eyes, and a larger tip covers selected body areas. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
+        ],
+        list: [
+          "Mild to moderate laxity of the lower face and jawline",
+          "Softening around the nasolabial folds where loose skin is part of the cause",
+          "Crepey or loosening skin on the upper and lower eyelids, using the eye tip",
+          "Fine lines and rougher texture that accompany early laxity",
+          "Loose skin on selected body areas, assessed individually",
+        ],
+      },
+      {
+        heading: "Fat, volume or heavy sagging: when Density is the wrong tool",
+        body: [
+          "Loose skin is only one reason a jawline softens. Fat under the chin, volume loss in the cheeks, chin projection and bone structure can all blur the contour, and RF tightens skin rather than removing fat or replacing volume. Around the eyes, heavy upper-lid hooding or under-eye bags caused by fat are a different problem from crepey skin, and an eye tip is not the tool for them. Marked sagging is generally beyond any surface RF device, and your doctor will tell you if surgery is the more honest conversation.",
+          "Because monopolar current travels through the body to the return pad, a pacemaker, defibrillator or other implanted electronic device rules Density out, and metal implants near the treatment area need assessment. It is also avoided during pregnancy, over active infection or inflamed skin, and with a history of keloid scarring. Tell the doctor about recent fillers, threads, retinoids or peels, because they affect timing and settings.",
+        ],
+      },
+      {
+        heading: "Inside a Density session: the return pad, the shots and the day after",
+        body: [
+          "The first visit is a consultation, not a treatment. If Density is appropriate, the skin is cleansed, the areas are mapped, and a return pad is placed on the body to complete the monopolar circuit. The doctor then works across each area shot by shot with the tip suited to it. Most people feel each shot as a brief burst of deep heat while the tip cools the surface. Numbing cream is often not needed, but it can be applied where comfort is a concern; in the published reports discomfort ranged from mild to moderate, and settings can be adjusted during the session.",
+          "The published Density studies each used a single session, and many plans follow that pattern, with any repeat usually considered six to twelve months later rather than within weeks. Redness is expected and mild swelling is common, both usually short-lived, and most people return to normal activities the same day. Avoid saunas, hot yoga and long midday sun for a day or two, and keep up daily sun protection to protect the collagen the treatment is building.",
+        ],
+      },
+      {
+        heading: "How often does Density cause redness or swelling?",
+        body: [
+          "As with any medical procedure, Density carries risks, which are explained during consultation. In the 2026 Bangkok study, almost all participants had temporary redness, about six in ten had temporary swelling, and mild pain during treatment was also reported; all of these were minor and settled on their own. Less commonly, RF can cause blistering, a burn or a change in pigmentation, which is why the cooling level, energy settings and choice of tip matter, and why treatment is performed by a trained doctor who matches them to your skin.",
+        ],
+      },
+    ],
+    costFactors: {
+      intro:
+        "Kaiteki does not quote prices online, because the plan sets the cost and the plan follows the assessment. What moves it:",
+      factors: [
+        "Which areas are treated, and how many shots each one needs.",
+        "Whether the eyes or body areas are added to the face, since each uses its own tip.",
+        "How much laxity there is.",
+        "Whether Density is part of a combined plan, and whether maintenance is planned.",
+      ],
+    },
+    faqs: [
+      {
+        q: "How is Density different from Oligio X and XERF at Kaiteki?",
+        a: "All three are surface RF platforms without needles that cool the skin while heating the dermis. Oligio X delivers monopolar RF at a single 6.78 MHz frequency, and XERF blends 6.78 MHz with 2 MHz. Density also runs at 6.78 MHz, but with its dual-mode tips each shot delivers monopolar and then bipolar RF, so a deeper and a shallower layer are heated in sequence. No study has compared the three directly, and your doctor chooses after assessing your skin.",
+      },
+      {
+        q: "Is Density the same as Density Noir or Denza?",
+        a: "They are names for the same Jeisys Medical platform. Density Noir is the current version and the name used in the most recent published studies, and Denza is another name the system is sold under. In the United States all three names are covered by the FDA 510(k) clearances issued in 2023 and 2025. Clinics may have different versions, so ask at consultation if it matters to you.",
+      },
+      {
+        q: "Can Density be used on the eyelids?",
+        a: "Density has a small eye tip, about half a centimetre square, designed for the thinner skin of the upper and lower eyelids. The published evidence for it so far is a case series of three patients followed for five months, so it is still early. It is considered for loose, crepey eyelid skin; heavy hooding or eye bags caused by fat usually need a different approach. Your doctor assesses this at consultation.",
+      },
+      {
+        q: "Is one Density session enough?",
+        a: "The published Density studies each used one session and assessed change over the following months, because collagen remodels gradually. Many plans are a single session with maintenance considered months later, while others combine Density with other treatments. How long any effect lasts varies with age, skin quality, sun exposure and lifestyle, and your doctor sets the plan after assessing your skin.",
+      },
+    ],
+    // Reviewer assigned: dr-hong-peiyi. No byline until they have read this page
+    // (written 2026-11-27); then set reviewedBy and lastReviewed.
+    seoTitle: "Density Monopolar + Bipolar RF Tightening Malaysia | Kaiteki",
+    seoDescription:
+      "Density is a Korean RF platform that delivers monopolar then bipolar energy in each shot, used at Kaiteki for mild to moderate skin laxity. Book a consultation.",
+  },
+  {
     slug: "oligio",
     name: "Oligio X",
     group: "Lifting & Tightening",
@@ -1555,7 +1769,7 @@ export const technology: Technology[] = [
     summary:
       "A radiofrequency microneedling device combining monopolar and bipolar modes at two frequencies, used for scarring, pore and texture concerns.",
     leadAnswer:
-      "Potenza is a radiofrequency microneedling device from Cynosure Lutronic, and its distinguishing feature is configurability: it offers monopolar and bipolar modes at two frequencies, so scarred areas, pore-dense zones and finer skin can be treated at different settings within one session.",
+      "Potenza is a radiofrequency microneedling device made by Jeisys Medical in South Korea and distributed by Cynosure Lutronic, and its distinguishing feature is configurability: it offers monopolar and bipolar modes at two frequencies, so scarred areas, pore-dense zones and finer skin can be treated at different settings within one session.",
     facts: [
       { value: "Monopolar and bipolar", label: "RF modes" },
       { value: "Two frequencies", label: "Configurability" },
@@ -1565,7 +1779,7 @@ export const technology: Technology[] = [
       {
         heading: "What is Potenza?",
         body: [
-          "Potenza is a radiofrequency (RF) microneedling device from Cynosure Lutronic. Like other devices in this category it passes very fine needles through the skin surface and releases radiofrequency energy from them at a chosen depth, and at Kaiteki it is used within our microneedling treatment.",
+          "Potenza is a radiofrequency (RF) microneedling device made by Jeisys Medical in South Korea, the manufacturer that holds its US FDA clearances, and distributed by Cynosure Lutronic. Like other devices in this category it passes very fine needles through the skin surface and releases radiofrequency energy from them at a chosen depth, and at Kaiteki it is used within our microneedling treatment.",
           "Its distinguishing feature is configurability. Most RF microneedling devices deliver one type of radiofrequency; Potenza offers four combinations (monopolar or bipolar radiofrequency, each delivered at 1MHz or 2MHz) in a single platform, alongside a range of interchangeable tips and adjustable needle depth. Whether it is the right device for you depends on your concern, skin type and medical history, which a doctor assesses at an in-person consultation.",
         ],
       },
@@ -3050,6 +3264,236 @@ export const technology: Technology[] = [
       "Essalia is the ECM skin booster Kaiteki uses: purified human dermal matrix for skin texture, density and elasticity. How it works, risks, who it suits.",
   },
   {
+    // Composition, indication, schedule, contraindications and aftercare are
+    // from the Merz IFU (international MN67107, 2021; Australian, 2023). The
+    // gel's listed composition has no lidocaine, so the page says so: the
+    // legacy blog claimed otherwise. Studies are described by design only,
+    // never by outcome percentage, and Merz funding is stated plainly.
+    slug: "belotero-revive",
+    name: "Belotero Revive",
+    group: "Injectables",
+    type: "injectable",
+    treatments: ["skin-booster"],
+    summary:
+      "A Merz Aesthetics injectable combining cross-linked hyaluronic acid with glycerol, used within skin-booster treatment for dry facial skin and superficial fine lines rather than for volume.",
+    leadAnswer:
+      "Belotero Revive is the skin-quality gel in Merz Aesthetics' Belotero range. It pairs 20 mg/ml of cross-linked hyaluronic acid with 17.5 mg/ml of glycerol, a water-binding humectant, and the manufacturer indicates it for dehydration and superficial fine lines on facial skin with early sun damage. It is not designed to add volume.",
+    facts: [
+      { value: "Cross-linked HA + glycerol", label: "Material" },
+      { value: "Merz (Anteis), Switzerland", label: "Manufacturer" },
+      { value: "1 to 3 sessions, 4+ weeks apart", label: "Manufacturer's course" },
+    ],
+    sections: [
+      {
+        heading: "Belotero Revive: the skin-quality gel in the Belotero range",
+        body: [
+          "Belotero Revive is an injectable hyaluronic acid (HA) gel from Merz Aesthetics, manufactured in Geneva, Switzerland, by Anteis SA, a Merz subsidiary. Launched in Europe and Latin America in 2019, it carries the Belotero name but has a different purpose from the rest of the range: the manufacturer indicates it for facial skin showing early sun damage, with dehydration and superficial fine lines, not for adding volume or contour. It is CE-marked as a medical device, which is a regulatory conformity marking rather than an endorsement of any cosmetic result.",
+          "Its formulation is what sets it apart from other HA skin boosters. Each millilitre contains 20 mg of cross-linked sodium hyaluronate and 17.5 mg of glycerol in a phosphate buffer, and the HA is of non-animal origin, produced by bacterial fermentation. Published studies refer to it as CPM-HA20G: CPM for the Cohesive Polydensified Matrix cross-linking technology behind the Belotero range, HA20 for the hyaluronic acid concentration and G for glycerol. Whether it suits you, and the quantity and technique used, is decided by the treating doctor after an in-person assessment.",
+        ],
+      },
+      {
+        heading: "Hyaluronic acid plus glycerol: what each part is for",
+        body: [
+          "Both ingredients bind water, in different ways. Hyaluronic acid holds water within the gel, and cross-linking it, here with the agent BDDE, slows how quickly the body breaks it down compared with plain HA. Glycerol is a small humectant molecule, familiar from moisturisers, that draws water in. Merz's own laboratory research, largely in cell and skin models rather than in patients, reports that the glycerol adds to the hydration effect and shows antioxidant activity. That is early, manufacturer-led science, not a promised outcome.",
+          "The manufacturer's instructions place the gel in the mid to deep dermis. Rather than one deposit, the doctor distributes small amounts across the area, by a series of fine punctures, short threads or a blunt cannula, then massages gently so the gel spreads evenly. Quantity, depth and spacing are chosen by the treating doctor for your skin. Changes, where they occur, develop gradually and vary between individuals.",
+        ],
+      },
+      {
+        heading: "Revive or a Belotero filler: which job is each built for?",
+        body: [
+          "Belotero Revive and the Belotero fillers (Balance, Soft, Intense and Volume) share a manufacturer and a cross-linking technology, and Merz lists Revive within its Belotero filler range. What separates them is the job. The fillers are made and placed to correct something specific: an etched line, a fold, the lips, or volume in the cheeks and chin. Revive adds glycerol, is described in studies as slightly cross-linked and low in viscoelasticity, and is spread as many small deposits through the skin of an area rather than shaped into a feature.",
+          "That is why Kaiteki uses Revive within skin-booster treatment and the other Belotero gels within dermal-filler treatment. Neither is a weaker or stronger version of the other: if what you want is contour or lost volume replaced, Revive is the wrong tool, and if what you want is hydration and finer surface texture, a structural filler is. The manufacturer allows Revive and other Belotero gels in the same session in different areas of the face, a decision your doctor makes.",
+          "Revive is a facial product: its instructions exclude the area between the brows and the nose, and there is no clinical data for the hands. It is not suitable for everyone, and a consultation determines whether it is appropriate for you. Concerns it is typically directed at include:",
+        ],
+        list: [
+          "Dry or very dry facial skin that feels tight or looks dull",
+          "Superficial fine lines linked to dryness rather than expression",
+          "Early loss of skin elasticity and firmness",
+          "Rough surface texture from accumulated sun exposure",
+          "Skin quality on the cheeks, the area most published studies treated",
+        ],
+      },
+      {
+        heading: "What have studies of Belotero Revive measured?",
+        body: [
+          "Most of the published work relies on instruments rather than photographs: devices that read skin hydration, elasticity, firmness and roughness, alongside doctor and patient ratings. An early observational study (Hertz-Kleptow and colleagues, 2019) followed 25 women who had three sessions four weeks apart in the lower cheek, measuring up to 36 weeks. A larger multicentre trial (Kerscher and colleagues, 2021) randomised 159 adults with early sun-damaged facial skin to a single session or a course, and tracked hydration in people with dry or very dry skin for up to nine months after the last injection.",
+          "Asian data is more recent and smaller. A 24-week open-label study treated 20 Korean women with three sessions in the cheeks, and a randomised, double-blinded split-face study of 30 participants in Bangkok compared Revive with a glycerol-free gel of the same HA concentration, looking at pore volume and hydration. A single-blinded split-face study of 24 women compared Revive with Profhilo and found no significant differences between the two in the skin measurements it tracked.",
+          "Read these for what they are: small studies, most of them funded by Merz or run by authors with Merz ties, measuring change against each person's own starting point. They describe what was measured, not what will happen to your skin, and results vary between individuals.",
+        ],
+      },
+      {
+        heading: "Who should not have Belotero Revive, and does skin type matter?",
+        body: [
+          "Revive is not used during pregnancy or breastfeeding, under the age of 18, with a general infection or an active autoimmune disease, or where there is inflammation or infection at the intended site. Tell your doctor about any allergy to hyaluronic acid, glycerol or BDDE; a history of streptococcal illness, severe allergies or anaphylaxis; a tendency to keloid or hypertrophic scars; cold sores; blood-thinning medication, anti-inflammatory painkillers or supplements such as vitamin E or ginkgo; and any non-dissolving filler already in the area, since Revive is not injected over one. A recent peel, laser or dermabrasion must have healed fully, and at least two weeks must have passed.",
+          "Because Revive works through injected gel rather than light or heat, the pigment concerns that limit some lasers do not apply in the same way, but the manufacturer's instructions are specific about skin type. They state there is no clinical data in Fitzpatrick skin types V and VI, the deepest skin tones; that darker skin is more prone to post-inflammatory hyperpigmentation and raised scarring after injection procedures generally; and that patients of Asian background should be told of a higher likelihood of reactions such as itching, swelling and redness. Your doctor weighs this for your skin at consultation.",
+        ],
+      },
+      {
+        heading: "What happens at a Belotero Revive session, and what to avoid afterwards?",
+        body: [
+          "Revive is used within Kaiteki's skin-booster treatment, so the visit starts with a doctor consultation and skin assessment, including whether a hydrating HA booster suits your concern or another category would make more sense. Revive's listed composition contains no lidocaine, unlike some gels in the Belotero filler range, so a topical anaesthetic cream is commonly applied and left to work first.",
+          "The doctor then places small amounts of gel across the assessed area and massages it gently to spread evenly. Including numbing time, a visit commonly takes under an hour. The manufacturer describes one to three sessions at least four weeks apart, repeated no sooner than six months later if continued; your doctor sets the actual plan for your skin, and it is not a promised course.",
+          "Small bumps, redness, swelling, tenderness and pinpoint bruising at the injection points are common and, according to the manufacturer, usually settle within a few days.",
+          "The manufacturer's aftercare is more specific than most: no make-up or skincare on the area for at least 12 hours; no sauna, steam room, peel, prolonged sun or UV exposure, or extreme heat or cold for two weeks; no alcohol for 24 hours before and after; and no pressure, rubbing or strenuous exercise straight afterwards. Your doctor may adjust this for you, so follow their instructions.",
+        ],
+      },
+      {
+        heading: "What can go wrong after Belotero Revive, and what needs urgent care?",
+        body: [
+          "As with any injectable procedure, Belotero Revive carries risks, which are explained during consultation. The manufacturer lists injection-site reactions such as swelling, small lumps, bruising, redness, tenderness, itching and needle marks, usually mild to moderate and settling within a few days; report any that last more than a week. Less common effects include inflammatory nodules, infection, pigment change, a bluish tinge where gel sits too superficially, and allergic reactions. Vascular occlusion, gel blocking a blood vessel, is rare but recognised with any facial injection: sudden or unusual pain, skin turning pale or any change in vision needs urgent attention. Because Revive is hyaluronic acid, the enzyme hyaluronidase is one of the tools a doctor can use if a complication calls for it.",
+        ],
+      },
+    ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. What moves it:",
+      factors: [
+        "The area being treated: the cheeks alone or a wider area of the face.",
+        "The quantity of gel your doctor judges appropriate.",
+        "Whether your plan is a single session or a course of up to three.",
+        "Whether Revive is combined in the same plan with another treatment, such as a filler in a different area.",
+      ],
+    },
+    faqs: [
+      {
+        q: "How is Belotero Revive different from Belotero fillers such as Balance or Volume?",
+        a: "They share a manufacturer and a cross-linked hyaluronic acid technology, but they are built for different jobs. Balance, Soft, Intense and Volume are fillers placed to soften a particular line, shape the lips or restore volume. Revive adds glycerol and is spread in small amounts through the skin for hydration and superficial fine lines, which is why Kaiteki uses it within skin-booster treatment rather than dermal fillers. Your doctor decides which, if either, fits your concern.",
+      },
+      {
+        q: "Belotero Revive or Profhilo: what is the difference?",
+        a: "Both are hyaluronic acid skin boosters, but the formulations differ. Profhilo uses IBSA's NAHYCO hybrid complexes of high and low molecular weight HA with no chemical cross-linker; Belotero Revive is a cross-linked HA gel with added glycerol. A small split-face study of 24 women compared the two and found no significant differences in the skin measurements it tracked. Neither is presented here as superior: which one a doctor selects depends on your skin and history, assessed in person.",
+      },
+      {
+        q: "Has Belotero Revive been studied in Asian skin?",
+        a: "Some data exists, but it is limited. Published studies include 20 Korean women followed for 24 weeks and a split-face study of 30 participants in Bangkok, both small. The manufacturer's instructions state there is no clinical data in the deepest skin tones (Fitzpatrick V and VI), and ask that patients of Asian background be told of a higher likelihood of reactions such as itching, swelling and redness. Your doctor takes your skin type into account at consultation.",
+      },
+      {
+        q: "How many Belotero Revive sessions are usual, and how long does it last?",
+        a: "The manufacturer describes one to three sessions at least four weeks apart, with the course repeated no sooner than six months later if it is continued. Any change is temporary, because hyaluronic acid is gradually broken down by the body, and how long it lasts varies between individuals. Your doctor sets the number and spacing for your skin and response rather than fixing them in advance.",
+      },
+    ],
+    // Reviewer assigned: dr-jeremy-low. No byline until they have read this page
+    // (written 2026-11-27); then set reviewedBy and lastReviewed.
+    seoTitle: "Belotero Revive Skin Booster Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Belotero Revive pairs cross-linked hyaluronic acid with glycerol for dry skin and fine lines. How it differs from Belotero fillers, who it suits and its risks.",
+  },
+  {
+    // NCTF 135HA (Laboratoires Fillmed, Paris). Composition, indications,
+    // contraindications and aftercare are from Fillmed's Summary of Safety and
+    // Clinical Performance (SSCP-NCTF-NCL, patient part rev. 25 Nov 2025). Named
+    // "NCTF 135HA", not "Filorga NCTF": the injectable has been Fillmed's since
+    // the 2015 split, and the Filorga brand on shop shelves is a separate company.
+    slug: "nctf",
+    name: "NCTF 135HA",
+    group: "Injectables",
+    type: "injectable",
+    treatments: ["skin-booster"],
+    summary:
+      "A French injectable that combines non-crosslinked hyaluronic acid with a solution of vitamins, amino acids, minerals, coenzymes and nucleosides, used within skin-booster treatment for skin hydration and radiance.",
+    leadAnswer:
+      "NCTF 135HA is an injectable from Laboratoires Fillmed in Paris, the medical business that separated from Filorga. It carries a light dose of non-crosslinked hyaluronic acid, 5 mg per ml, in a polyrevitalising solution of vitamins, amino acids, minerals, coenzymes and nucleosides, and is used for skin quality and radiance rather than contour.",
+    facts: [
+      { value: "Non-crosslinked HA, 5 mg/ml", label: "Material" },
+      { value: "Laboratoires Fillmed, France", label: "Manufacturer" },
+      { value: "60 ingredients in total", label: "Formula" },
+    ],
+    sections: [
+      {
+        heading: "NCTF 135HA, Fillmed and the Filorga name",
+        body: [
+          "NCTF 135HA is an injectable made by Laboratoires Fillmed, a French manufacturer based in Paris. NCTF, short for New Cellular Treatment Factor, was developed by Laboratoires Filorga, the company Dr Michel Tordjman founded in 1978. In 2015 its medical business was separated from its skincare business, and that medical business, Fillmed, has made and marketed the injectable since. The Filorga creams and serums sold in shops, including those labelled NCEF, now belong to a different company and are not this injectable.",
+          "Fillmed's safety summary describes NCTF 135HA as a sterile solution in 3 ml vials: non-crosslinked (also called free) hyaluronic acid at 5 mg per ml, carried in a polyrevitalising solution of 12 vitamins, 24 amino acids, 6 coenzymes, 6 minerals, 5 nucleosides and the antioxidant glutathione, with a few further components. Fillmed counts 60 ingredients in all. At Kaiteki it is one of the products a doctor may consider within our skin-booster treatment, and whether it suits you, the quantity and the technique are decided after an in-person assessment.",
+        ],
+      },
+      {
+        heading: "How the polyrevitalising formula is meant to work",
+        body: [
+          "According to the manufacturer, the hyaluronic acid binds water in the dermis, which supports hydration and softens superficial lines, while the polyrevitalising solution is intended to give fibroblasts, the cells that make collagen and other structural proteins, a favourable environment to work in. Vitamins C and E and glutathione are included for their antioxidant role. Because the hyaluronic acid is not cross-linked, it does not form a gel that holds a shape, and the body gradually breaks it down.",
+          "Two details set it apart from the other boosters you may be comparing. Its 5 mg per ml of hyaluronic acid is a light concentration: Profhilo, by comparison, contains 64 mg in 2 ml. And its nucleosides are single building blocks of DNA, not the long purified DNA chains in polynucleotide boosters such as Rejuran or Plinest, so it belongs to a different category from those.",
+          "The solution is placed in the dermis as many small, superficial injections, often called micro-papules, which then diffuse into the surrounding skin. Fillmed lists fine needles, cannulas and mesotherapy devices as ways of delivering it. Which is used, the amount and the areas are set by the treating doctor, and any change develops gradually and varies between individuals.",
+        ],
+      },
+      {
+        heading: "What the NCTF 135HA trials measured, and who funded them",
+        body: [
+          "The largest controlled trial, published in the Journal of Dermatological Treatment in 2023, randomly assigned 146 adults to three NCTF 135HA sessions plus a moisturiser, or to the moisturiser alone, and measured superficial wrinkles on the crow's feet area, neck and décolletage, along with hydration and radiance, up to day 120. It reported a greater reduction in measured wrinkles than with the cream alone, and most adverse events were mild and related to the injections themselves. A 2026 trial in China compared it with another non-crosslinked HA solution for neck lines in 188 adults and found the two comparable.",
+          "Two caveats matter. The 2023 trial and most other clinical work on NCTF 135HA were funded by Fillmed or include its staff as authors, and the frequently quoted laboratory figures on collagen come from cell-culture experiments, which cannot show what happens in a person's skin. These studies describe what the product was tested on, not what any one person will see.",
+        ],
+      },
+      {
+        heading: "Dull, dehydrated or tired-looking skin: where NCTF 135HA fits",
+        body: [
+          "Fillmed's stated purpose is cosmetic: revitalising and hydrating tired or dull skin, making it look more even and radiant, softening superficial wrinkles, and supporting density and elasticity in mature skin. It is indicated for the face, including the area around the eyes, the neck and the décolletage, in adults over 18.",
+          "It is not suitable for everyone, and a consultation determines whether it is appropriate for you. Concerns it is typically directed at include:",
+        ],
+        list: [
+          "Dull, tired-looking skin that has lost its radiance",
+          "Dehydrated skin on the face",
+          "Superficial fine lines, including around the eyes",
+          "Skin that looks uneven in texture",
+          "Thinner, less firm skin with age",
+          "Fine lines and crepey texture on the neck and décolletage",
+        ],
+      },
+      {
+        heading: "Not for volume or deep lines: when NCTF 135HA is the wrong choice",
+        body: [
+          "In Europe, NCTF 135HA has carried the CE mark since 2007 and is certified as a Class III product under the EU Medical Device Regulation, in the group of injectables used for dermal filling. That is a regulatory certification, not an approval of any cosmetic outcome, and it does not make NCTF 135HA a contour filler: at 5 mg per ml of non-crosslinked hyaluronic acid it is not designed to restore lost volume, fill deep folds or reshape a feature. Lines caused mainly by muscle movement, or marked sagging, also call for a different approach, and your doctor will say so rather than substitute one for the other.",
+          "Fillmed lists these contraindications: a skin condition or alteration in the area to be treated, a history of autoimmune disease or current immunotherapy, a known allergy to any of its ingredients, being under 18, and pregnancy or breastfeeding. It is not injected into moles or active acne lesions, or at the same session as a medium or deep chemical peel or dermabrasion. Tell your doctor if you take blood thinners or aspirin, which raise the chance of bruising, if you have had a permanent filler in the area, or if you are prone to cold sores. Because the formula has so many components, bring a list of any known allergies to your consultation.",
+        ],
+      },
+      {
+        heading: "Three sessions, three weeks apart: the visit and the first 48 hours",
+        body: [
+          "NCTF 135HA is used within Kaiteki's skin-booster treatment, so a visit begins with a doctor consultation and skin assessment, including whether a hydrating HA booster, a polynucleotide or a collagen-stimulating product would be the more sensible choice for your concern. If NCTF 135HA is appropriate, the skin is cleansed and a numbing cream may be applied; the manufacturer notes that numbing products can themselves cause redness or sensitivity in some people.",
+          "The doctor then places many small injections across the assessed areas. Fillmed's standard protocol is three sessions spaced three weeks apart, with repeat courses during the year to maintain any change, but the number of sessions and their spacing are set by your doctor for your skin rather than fixed in advance. The hyaluronic acid is gradually broken down by the body, so nothing about it is permanent.",
+          "Small raised papules at the injection points are expected straight afterwards as the solution settles into the skin. Redness, mild swelling, tenderness or small bruises can follow, and the manufacturer describes these as usually clearing within a few hours to a few days.",
+          "Fillmed's aftercare advice is to avoid make-up for 12 hours, and to avoid prolonged sun or UV exposure, very cold temperatures, saunas and steam rooms for at least 48 hours. Your doctor will give you aftercare specific to your skin, and that takes precedence over general advice found online.",
+        ],
+      },
+      {
+        heading: "What side effects have been reported with NCTF 135HA?",
+        body: [
+          "As with any injectable procedure, NCTF 135HA carries risks, which are explained during consultation. The expected effects are redness or mild inflammation, slight swelling, small bruises, pinpoint bleeding and brief discomfort at the injection points; in the 2023 trial the most frequent events were bruising and redness. Less common reactions include infection, including a flare of cold sores, persistent lumps or nodules and allergic reactions, and granulomas or skin discolouration have been reported rarely. Injection into a blood vessel must be avoided, as with any facial injectable. Serious effects are uncommon when the product is appropriately selected and administered by a trained doctor.",
+        ],
+      },
+    ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. What moves it:",
+      factors: [
+        "The number of areas being addressed: face, eye area, neck and décolletage all differ.",
+        "The quantity of product your doctor judges appropriate.",
+        "How many sessions the initial course needs.",
+        "Whether repeat courses form part of your plan over time.",
+      ],
+    },
+    faqs: [
+      {
+        q: "How is NCTF 135HA different from Profhilo or Hydrodeluxe at Kaiteki?",
+        a: "All three contain non-crosslinked hyaluronic acid, but they are built differently. Profhilo uses IBSA's NAHYCO hybrid complexes, with 64 mg of HA in 2 ml; Hydrodeluxe adds calcium hydroxyapatite and the amino acids glycine and L-proline to its HA hydrogel; NCTF 135HA uses a lighter 5 mg of HA per ml in a solution of vitamins, amino acids, minerals, coenzymes and nucleosides. None is presented here as superior: which one, if any, suits you is decided by your doctor in person.",
+      },
+      {
+        q: "Does NCTF 135HA contain DNA, like Rejuran or Plinest?",
+        a: "Not in the same form. Its formula includes five nucleosides, which are single building blocks of DNA, whereas Rejuran and Plinest are polynucleotide products made of long purified DNA chains derived from fish. That places NCTF 135HA in a different category. Its ingredient list is broad, so share any known allergies at consultation, and your doctor will explain which category, if any, fits your skin.",
+      },
+      {
+        q: "Is NCTF 135HA the same as Filorga skincare?",
+        a: "No. NCTF was developed by Laboratoires Filorga, but the injectable is now made by Laboratoires Fillmed, the medical business that separated from Filorga's skincare business in 2015. The Filorga creams and serums sold in shops, some labelled NCEF, belong to a different company and are not injected. If you are unsure what a clinic is offering, it is reasonable to ask which product will be used.",
+      },
+      {
+        q: "How many NCTF 135HA sessions are usually needed?",
+        a: "Fillmed's standard protocol is three sessions spaced three weeks apart, and it suggests repeating the course during the year to maintain any change. That is the manufacturer's outline rather than a fixed plan: your doctor sets the number and spacing for your skin, the areas treated and how you respond. The hyaluronic acid is gradually broken down by the body, so no change is permanent.",
+      },
+    ],
+    // Reviewer assigned: dr-joaan-kong. No byline until they have read this page
+    // (written 2026-11-27); then set reviewedBy and lastReviewed.
+    seoTitle: "NCTF 135HA Polyrevitalising Skin Booster Malaysia | Kaiteki",
+    seoDescription:
+      "NCTF 135HA by Fillmed pairs non-crosslinked hyaluronic acid with vitamins and amino acids, used in Kaiteki's skin-booster treatment. Book a free consultation.",
+  },
+  {
     // Botox is a prescription medicine, not a device or cosmetic. Copy stays
     // factual and mechanism-level: no efficacy, longevity or outcome claims, no
     // pricing, no "packages", and every line defers dose and suitability to an
@@ -3459,6 +3903,115 @@ export const technology: Technology[] = [
       seoDescription:
         "Radiesse is a calcium hydroxylapatite injectable used within Kaiteki's bio-stimulator treatment for support and collagen. Book a free consultation.",
     },
+  {
+    slug: "deusaderm",
+    name: "Deusaderm",
+    group: "Injectables",
+    type: "injectable",
+    treatments: ["bio-stimulator"],
+    summary:
+      "A cross-linked porcine collagen injectable from Taiwan, used within bio-stimulator treatment, including around the under-eye area.",
+    leadAnswer:
+      "Deusaderm is an injectable gel of cross-linked type I collagen, purified from pig skin by Sunmax Biotechnology in Taiwan; the version supplied in Malaysia also contains lidocaine. Rather than prompting collagen with a synthetic particle, it places collagen itself, giving some support when injected before being absorbed over months. It contains no hyaluronic acid.",
+    facts: [
+      { value: "Porcine type I collagen", label: "Material" },
+      { value: "Sunmax, Taiwan", label: "Manufacturer" },
+      { value: "Bio-stimulator", label: "Used within" },
+    ],
+    sections: [
+      {
+        heading: "What is Deusaderm made of, and who makes it?",
+        body: [
+          "Deusaderm is an injectable collagen gel made by Sunmax Biotechnology, a medical-device manufacturer based in Tainan, Taiwan. The manufacturer lists its contents as cross-linked type I atelocollagen at 35 mg/mL in phosphate-buffered saline, purified from the skin of specific-pathogen-free (SPF) pigs. Atelocollagen is collagen with the end segments of the molecule removed, the parts most associated with allergic reactions. The gel is white and opaque rather than clear, and it contains no hyaluronic acid. In Malaysia it is regulated as a medical device: the manufacturer lists a Medical Device Authority (MDA) registration for Deusaderm LIDO, the version that also contains lidocaine, a local anaesthetic, at 3 mg/mL.",
+          "That makes it different in kind from the other bio-stimulators Kaiteki uses. Sculptra, Radiesse and Ellansé are synthetic particles that prompt a collagen response as they are resorbed; Deusaderm places purified collagen itself. Sunmax's first injectable collagen received a Taiwan Food and Drug Administration licence in 2006. Whether Deusaderm suits your concern, or whether a filler or a different bio-stimulator would fit better, is decided by your doctor at an in-person consultation.",
+        ],
+      },
+      {
+        heading: "What does cross-linked collagen do once it is injected?",
+        body: [
+          "Collagen on its own is broken down quickly by the body's enzymes. Cross-linking bonds the collagen fibres together so the gel resists that breakdown for longer, and the manufacturer describes it forming a soft, fibrous network that stays at the injection site and fills the depression it is placed in. Over the following months it is absorbed into the surrounding connective tissue or broken down by enzymes, so it is biodegradable and temporary, and the manufacturer notes that how long it stays depends on the area and the injection technique.",
+          "Sunmax also describes the product as supporting the skin's own collagen over time, which is why Kaiteki groups it with its bio-stimulators. The published studies measured wrinkle grading and instrument readings of the skin rather than new collagen formation directly, so treat that as the manufacturer's account of the mechanism. The depth, the amount and whether a fine needle or a blunt cannula is used are decided by the treating doctor after examining you, and Kaiteki does not publish volumes. Results vary between individuals.",
+        ],
+      },
+      {
+        heading: "What have studies of Sunmax's collagen measured?",
+        body: [
+          "The largest published trial is a 2024 randomised, double-blind study at three Taiwanese hospitals, in which 252 adults had their nasolabial folds treated with one of two Sunmax cross-linked collagen formulations containing lidocaine. Wrinkle-severity scores improved from baseline in both groups, the newer formulation scored better than the older one from 12 to 52 weeks, and the authors observed a gradual decline across the year, which they suggested may reflect the collagen being broken down. The trial was sponsored by Sunmax.",
+          "Evidence for the under-eye area is thinner. A 2024 study of Sunmax's FACIALGAIN collagen around the eyes followed a small group of patients for 12 weeks using skin-measurement instruments: the change in lightness readings had faded by 12 weeks, the authors noted that regular treatment may be needed, and the study was uncontrolled and manufacturer-funded. Neither study names Deusaderm itself, as both use other product names from the same manufacturer's collagen range, and neither is a prediction of how you will respond.",
+        ],
+      },
+      {
+        heading: "Why is Deusaderm considered for the under-eye area and overfilled faces?",
+        body: [
+          "Hyaluronic acid binds water. In some people, particularly under the eyes where fluid tends to collect, a hyaluronic acid filler can contribute to puffiness or an overfilled look, and a clear gel placed too close to the surface can show a bluish tint known as the Tyndall effect. Deusaderm contains no hyaluronic acid and is white and opaque, and the Tyndall effect was not observed in the 2024 trial. Those properties, rather than any promised outcome, are why doctors consider it in these areas.",
+          "Within Kaiteki's bio-stimulator treatment, Deusaderm is commonly considered for the concerns below. Under-eye darkness has several causes, including pigment, visible blood vessels and hollowing, and an injectable addresses only some of them, so the cause is assessed first. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
+        ],
+        list: [
+          "Hollowness along the tear trough and lower eyelid",
+          "Dark circles linked to thin skin and hollowing, sometimes called panda eyes",
+          "Crepey, lax skin around the eyes",
+          "Concern about looking overfilled after repeated hyaluronic acid filler",
+          "Fine wrinkles and established facial folds, the use the manufacturer lists",
+          "Mild, localised volume loss where a lighter correction is preferred",
+        ],
+      },
+      {
+        heading: "Who should avoid Deusaderm, and why does its pig-derived collagen matter?",
+        body: [
+          "Because Deusaderm is animal-derived, tell your doctor about any allergy to collagen or pork-derived products, any previous reaction to a collagen filler, and any allergy to lidocaine or similar local anaesthetics. Older bovine collagen fillers required an allergy skin test before treatment; the authors of the 2024 trial state that one is not needed for this porcine formulation, but your doctor will still take an allergy history. If a porcine product is not acceptable to you for religious, dietary or personal reasons, say so: non-animal options, such as hyaluronic acid fillers or synthetic bio-stimulators, can be discussed instead.",
+          "Deusaderm is not used in pregnancy or while breastfeeding, or where there is infection, inflammation or a skin condition in the treatment area. A history of severe allergic reactions, autoimmune disease, keloid scarring, bleeding disorders or blood-thinning medication, immunosuppressant or steroid medication, and permanent implants or previous filler in the same area are all relevant; these mirror the exclusions of the 2024 trial. Its authors also cite an earlier report advising against injecting cross-linked porcine collagen into the lips because of a high rate of nodules, and call for further safety study in other facial areas. Please share your full medical history, medication list and any past injectable treatment at consultation.",
+        ],
+      },
+      {
+        heading: "What happens during a Deusaderm session, and what is the first week like?",
+        body: [
+          "The visit starts with a doctor consultation and assessment: what is causing the concern, what has been injected before, and whether collagen, a filler or neither is the right answer. If Deusaderm is appropriate, the skin is cleansed and a topical anaesthetic may be applied, and the lidocaine in the gel adds to comfort as it is injected. The doctor places the product with a fine needle or a blunt cannula at the depth chosen for your anatomy. The injecting itself is brief: most of the appointment is assessment and aftercare.",
+          "Swelling, redness, tenderness and bruising are common in the first days, and they tend to show more under the eyes than elsewhere on the face, so allow a margin before any event that matters to you. Your doctor will explain aftercare, which commonly includes cold compresses, not pressing or massaging the area, and avoiding heat and strenuous exercise for a short period. Most people return to normal activity the same day, though this varies.",
+          "Because the collagen is absorbed over months, some plans include a review and a further session rather than one larger treatment, and the authors of the under-eye study noted that regular treatment may be needed to maintain a change. Your doctor will set out what to expect for your case. Raise anything unexpected with the clinic promptly rather than waiting for the review.",
+        ],
+      },
+      {
+        heading: "What side effects were recorded, and why can Deusaderm not be dissolved?",
+        body: [
+          "As with any injectable procedure, Deusaderm carries risks, which are explained during consultation. In the 2024 trial the effects recorded were mostly at the injection site: swelling, pain, tenderness, bruising, small lumps (nodules), redness, itching and skin flaking. Most device-related effects resolved within a month, and no serious adverse events were reported. Allergic reaction and infection are possible with any animal-derived implant, and rare but serious vascular complications are recognised for facial injectables in general, including around the eyes.",
+          "Unlike hyaluronic acid filler, collagen has no dissolving agent: hyaluronidase, the enzyme used to dissolve hyaluronic acid, does not break it down, so a lump or an unwanted result cannot be reversed on demand. That is why careful assessment and conservative placement matter. Your doctor will explain which symptoms to report and how quickly.",
+        ],
+      },
+    ],
+    costFactors: {
+      intro:
+        "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. What moves it:",
+      factors: [
+        "The area being treated: the under-eye area alone, or other areas of the face as well.",
+        "The quantity your doctor judges appropriate.",
+        "Whether your plan includes a review and a further session.",
+        "Whether existing filler in the area needs to be assessed or dissolved first, which is a separate procedure.",
+      ],
+    },
+    faqs: [
+      {
+        q: "How is Deusaderm different from Sculptra?",
+        a: "The material is different in kind. Sculptra is poly-L-lactic acid, a synthetic powder reconstituted before use and intended to work gradually by prompting your own collagen over a course of sessions. Deusaderm is purified porcine collagen supplied as a ready-to-inject gel, so it gives some support when it is placed before being absorbed over months. Neither can be dissolved. Which suits your concern, if either, is decided by your doctor at consultation.",
+      },
+      {
+        q: "Is Deusaderm a hyaluronic acid filler?",
+        a: "No. It contains no hyaluronic acid, which binds water, and its gel is white rather than clear. That is why doctors consider it where puffiness, or a bluish tint from a clear gel, is a concern. The trade-off is that hyaluronidase, the enzyme that can dissolve hyaluronic acid filler, does not work on collagen. Your doctor will explain which category fits your concern at consultation.",
+      },
+      {
+        q: "Is Deusaderm made from pig collagen?",
+        a: "Yes. The manufacturer states that the collagen is purified from the skin of specific-pathogen-free pigs raised at an accredited agricultural research institute in Taiwan, and processed to remove the parts of the collagen molecule most associated with allergic reactions. If a porcine product is not acceptable to you for religious, dietary or personal reasons, tell your doctor: non-animal alternatives can be discussed.",
+      },
+      {
+        q: "How long does Deusaderm last?",
+        a: "It is temporary. The collagen is biodegradable and is absorbed over several months, and the manufacturer notes that how long it stays depends on the area treated and the technique. In the 2024 trial, wrinkle scores drifted back gradually over the year. Duration varies between individuals and is not guaranteed, so your doctor will discuss review and any repeat treatment at consultation.",
+      },
+    ],
+    // Reviewer assigned: dr-jacqueline-tan. No byline until they have read this
+    // page (written 2026-11-27); then set reviewedBy and lastReviewed.
+    seoTitle: "Deusaderm Collagen Injectable Treatment Malaysia | Kaiteki",
+    seoDescription:
+      "Deusaderm is a porcine collagen injectable from Taiwan, used in Kaiteki's bio-stimulator treatment, including under the eyes. Book a free consultation.",
+  },
   {
     slug: "juvederm",
     name: "Juvederm",

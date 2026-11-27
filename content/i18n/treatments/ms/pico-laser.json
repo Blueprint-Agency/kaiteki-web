@@ -23,7 +23,7 @@
   "leadAnswer": "Pico laser ialah satu kategori laser, bukan satu mesin. Setiap mesin pico memancarkan denyutan yang berlangsung dalam ukuran sepertrilion saat, tetapi panjang gelombangnya berbeza, dan panjang gelombang itulah yang menentukan pigmen, warna dakwat dan warna kulit yang sesuai untuk sesuatu mesin. Atas sebab itu Kaiteki menggunakan lebih daripada satu platform pico, dan doktor yang menentukan platform mana, jika ada, yang sesuai dengan kulit anda.",
   "facts": [
     {
-      "value": "2 platform pico",
+      "value": "3 platform pico",
       "label": "Dipadankan dengan jenis kulit dan pigmen anda"
     },
     {
@@ -113,7 +113,7 @@
   ],
   "variantModule": {
     "heading": "Jenis mesin pico laser, dan kenapa ia penting",
-    "intro": "Kedua-dua platform memancarkan denyutan pikosaat, tetapi panjang gelombang utamanya berbeza, dan panjang gelombang mengubah sejauh mana melanin menyerap denyutan itu. Itu perbezaan dalam cara tenaga dihantar, bukan penarafan.",
+    "intro": "Ketiga-tiga platform memancarkan denyutan pikosaat, tetapi panjang gelombang utama dan alat pegang tangannya berbeza, dan panjang gelombang mengubah sejauh mana melanin menyerap denyutan itu. Itu perbezaan dalam cara tenaga dihantar, bukan penarafan.",
     "items": [
       {
         "eyebrow": "755nm · Cynosure",
@@ -128,6 +128,13 @@
         "body": "Dibina di sekitar panjang gelombang Nd:YAG 1064nm yang lebih panjang, yang kurang berinteraksi dengan melanin di permukaan dan menembusi lebih dalam. Sering dipilih apabila warna kulit atau kedalaman pigmen menjadikan 755nm kurang sesuai.",
         "href": "/technology/fotona-pqx",
         "hrefLabel": "Tentang Fotona PQX"
+      },
+      {
+        "eyebrow": "1064nm · Wontech",
+        "title": "PicoCare",
+        "body": "Seperti Fotona PQX, dibina di sekitar panjang gelombang Nd:YAG 1064nm, yang kurang berinteraksi dengan melanin di permukaan. Perbezaannya pada cara penghantaran: tatasusunan kanta mikro HEXA untuk laluan parut jerawat dan tekstur, serta alat pegang tangan 595nm dan 660nm pilihan untuk warna tatu yang sukar dicapai oleh panjang gelombang teras.",
+        "href": "/technology/picocare",
+        "hrefLabel": "Tentang PicoCare"
       }
     ]
   },
@@ -258,7 +265,7 @@
   "faqs": [
     {
       "q": "Adakah pico laser sama dengan PicoSure?",
-      "a": "Tidak. PicoSure ialah salah satu pico laser, iaitu mesin 755nm buatan Cynosure. “Pico” merujuk kepada tempoh denyutan, jadi mesin lain juga termasuk, seperti Fotona PQX pada 1064nm dan 532nm. Kaiteki menggunakan kedua-duanya, dan doktor memilih panjang gelombang yang sesuai dengan pigmen dan warna kulit anda."
+      "a": "Tidak. PicoSure ialah salah satu pico laser, iaitu mesin 755nm buatan Cynosure. “Pico” merujuk kepada tempoh denyutan, jadi mesin lain juga termasuk, seperti Fotona PQX dan PicoCare pada 1064nm dan 532nm. Kaiteki menggunakan ketiga-tiganya, dan doktor memilih panjang gelombang yang sesuai dengan pigmen dan warna kulit anda."
     },
     {
       "q": "Pico laser sakit tak?",

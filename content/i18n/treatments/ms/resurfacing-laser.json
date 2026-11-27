@@ -6,10 +6,6 @@
   "image": "https://cdn.kaiteki.my/treatments/resurfacing-laser/hero.jpg",
   "procedureImages": [
     {
-      "src": "https://cdn.kaiteki.my/treatments/resurfacing-laser/procedure-01.jpg",
-      "caption": "Doktor menggerakkan alat laser dekat dengan kulit pesakit."
-    },
-    {
       "src": "https://cdn.kaiteki.my/treatments/resurfacing-laser/procedure-02.jpg",
       "caption": "Doktor menstabilkan muka pesakit sambil menggunakan alat laser."
     },

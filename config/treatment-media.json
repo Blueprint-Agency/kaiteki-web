@@ -832,14 +832,6 @@
       "height": 1410
     },
     {
-      "source": "treatments/resurfacing-laser/procedure-01.jpg",
-      "key": "treatments/resurfacing-laser/procedure-01.jpg",
-      "treatment": "resurfacing-laser",
-      "family": "procedure",
-      "width": 1200,
-      "height": 1200
-    },
-    {
       "source": "treatments/resurfacing-laser/procedure-02.jpg",
       "key": "treatments/resurfacing-laser/procedure-02.jpg",
       "treatment": "resurfacing-laser",

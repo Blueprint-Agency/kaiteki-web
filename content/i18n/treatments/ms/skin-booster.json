@@ -86,6 +86,27 @@
         "body": "Skin booster perangsang kolagen yang digunakan untuk liang pori, tekstur dan garis halus.",
         "href": "/technology/juvelook",
         "hrefLabel": "Tentang Juvelook"
+      },
+      {
+        "eyebrow": "HA berangkai silang + gliserol · Merz (Anteis), Switzerland",
+        "title": "Belotero Revive",
+        "body": "Gel asid hialuronik berangkai silang yang ditambah gliserol daripada keluarga Belotero, digunakan untuk kulit kering dan garis halus di permukaan, bukan untuk menambah volum.",
+        "href": "/technology/belotero-revive",
+        "hrefLabel": "Tentang Belotero Revive"
+      },
+      {
+        "eyebrow": "HA + vitamin & asid amino · Fillmed, Perancis",
+        "title": "NCTF 135HA",
+        "body": "Larutan asid hialuronik ringan yang mengandungi vitamin, asid amino, mineral dan koenzim, digunakan untuk kulit kusam dan kurang lembap serta garis halus cetek di muka, leher dan dada atas.",
+        "href": "/technology/nctf",
+        "hrefLabel": "Tentang NCTF 135HA"
+      },
+      {
+        "eyebrow": "Matriks dermis aselular manusia · Essalia",
+        "title": "Skin Booster ECM",
+        "body": "Matriks dermis manusia yang telah ditulenkan, yang membekalkan kolagen dan elastin, iaitu rangka struktur kulit, dan bukan sekadar melembapkan. Bukti yang diterbitkan masih di peringkat awal.",
+        "href": "/technology/ecm-skin-booster",
+        "hrefLabel": "Tentang Skin Booster ECM"
       }
     ]
   },
@@ -113,6 +134,18 @@
     {
       "lead": "Nodul atau tindak balas granuloma akibat filler atau bio-stimulator sebelum ini,",
       "body": "yang perlu dipertimbangkan untuk produk perangsang kolagen seperti Juvelook."
+    },
+    {
+      "lead": "Berumur bawah 18 tahun,",
+      "body": "yang dikecualikan oleh arahan penggunaan Belotero Revive dan NCTF 135HA."
+    },
+    {
+      "lead": "Filler yang tidak boleh dilarutkan sudah ada di kawasan itu, atau peel, laser atau dermabrasi baru-baru ini,",
+      "body": "terutamanya bagi Belotero Revive, yang tidak disuntik di atas filler kekal dan menunggu sekurang-kurangnya dua minggu sehingga kulit yang dirawat sembuh sepenuhnya."
+    },
+    {
+      "lead": "Alahan teruk, anafilaksis atau sejarah jangkitan streptokokus,",
+      "body": "atau tindak balas terhadap produk berasaskan tisu sebelum ini, yang penting bagi ECM booster yang berasal daripada tisu manusia."
     }
   ],
   "sessionSteps": [
@@ -154,7 +187,7 @@
   "risks": {
     "intro": "",
     "common": "Bintil di titik suntikan, bengkak, kemerahan, lebam, rasa sengal dan ketulan kecil yang boleh dirasa, yang biasanya reda dalam tempoh singkat.",
-    "lessCommon": "Jangkitan, bengkak yang berpanjangan, nodul dan tindak balas hipersensitiviti. Nodul yang berterusan atau pembentukan granuloma ialah pertimbangan yang diiktiraf bagi produk perangsang kolagen. Komplikasi vaskular jarang berlaku tetapi diiktiraf bagi mana-mana suntikan muka.",
+    "lessCommon": "Jangkitan, bengkak yang berpanjangan, nodul dan tindak balas hipersensitiviti. Nodul yang berterusan atau pembentukan granuloma ialah pertimbangan yang diiktiraf bagi produk perangsang kolagen. Komplikasi vaskular jarang berlaku tetapi diiktiraf bagi mana-mana suntikan muka. Arahan penggunaan Belotero Revive juga menyatakan tiada data klinikal bagi warna kulit paling gelap (Fitzpatrick V dan VI) dan kemungkinan gatal, bengkak dan kemerahan yang lebih tinggi dalam kalangan pesakit berlatar belakang Asia.",
     "cannotDo": [
       "Ia tidak menambah isi atau mengubah bentuk muka.",
       "Ia tidak berkesan dalam satu sesi. Skin booster digunakan sebagai satu kursus, dan sebarang perubahan berlaku secara beransur-ansur.",

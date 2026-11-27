@@ -19,7 +19,7 @@
     }
   ],
   "summary": "Radiofrequency energy used to support skin-firmness and texture concerns.",
-  "leadAnswer": "Radiofrequency (RF) treatments use controlled energy, delivered from the skin surface with no needles, to warm the deeper layers of the skin. Kaiteki runs four RF platforms, and a doctor examines your skin before choosing one.",
+  "leadAnswer": "Radiofrequency (RF) treatments use controlled energy, delivered from the skin surface with no needles, to warm the deeper layers of the skin. Kaiteki runs five RF platforms, and a doctor examines your skin before choosing one.",
   "related": [
     "microneedling",
     "hifu"
@@ -31,8 +31,8 @@
   "typicalSessions": "About 2 to 3, then maintenance",
   "facts": [
     {
-      "value": "4 RF platforms",
-      "label": "BTL Exilis, Oligio X, Wonderface and XERF, matched to your skin"
+      "value": "5 RF platforms",
+      "label": "BTL Exilis, Density, Oligio X, Wonderface and XERF, matched to your skin"
     },
     {
       "value": "30–60 minutes",
@@ -66,8 +66,8 @@
     }
   ],
   "variantModule": {
-    "heading": "BTL Exilis, Oligio X, Wonderface or XERF: which RF platform, and why",
-    "intro": "The four platforms differ in how deep the energy reaches and how the surface is cooled.",
+    "heading": "BTL Exilis, Density, Oligio X, Wonderface or XERF: which RF platform, and why",
+    "intro": "The five platforms differ in how deep the energy reaches and how the surface is cooled.",
     "items": [
       {
         "eyebrow": "Monopolar · embedded cooling",
@@ -75,6 +75,13 @@
         "body": "Monopolar delivery with embedded surface cooling lets the device keep working at a depth that reaches subcutaneous fat, which is why it is used for body-contour concerns as well as facial firmness.",
         "href": "/technology/btl-exilis",
         "hrefLabel": "About BTL Exilis"
+      },
+      {
+        "eyebrow": "Sequential monopolar + bipolar · cryogen cooling",
+        "title": "Density",
+        "body": "A Korean 6.78 MHz platform whose dual-mode tips deliver monopolar and then bipolar RF in each shot, heating a deeper and a shallower layer in sequence, with a small tip for the eyelids.",
+        "href": "/technology/density",
+        "hrefLabel": "About Density"
       },
       {
         "eyebrow": "Monopolar 6.78 MHz · contact cooling",

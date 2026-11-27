@@ -6,10 +6,6 @@
   "image": "https://cdn.kaiteki.my/treatments/resurfacing-laser/hero.jpg",
   "procedureImages": [
     {
-      "src": "https://cdn.kaiteki.my/treatments/resurfacing-laser/procedure-01.jpg",
-      "caption": "医生把激光手柄贴近患者的皮肤移动。"
-    },
-    {
       "src": "https://cdn.kaiteki.my/treatments/resurfacing-laser/procedure-02.jpg",
       "caption": "医生一边扶稳患者的脸，一边使用激光手柄。"
     },

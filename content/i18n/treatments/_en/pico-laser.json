@@ -23,7 +23,7 @@
   "leadAnswer": "Pico laser is a category of laser, not a single machine. Every pico device fires pulses lasting trillionths of a second, but they differ in wavelength, which decides which pigment, ink colours and skin tones a device suits. Kaiteki runs more than one pico platform for that reason, and a doctor decides which, if any, fits your skin.",
   "facts": [
     {
-      "value": "2 pico platforms",
+      "value": "3 pico platforms",
       "label": "Matched to your skin type and pigment"
     },
     {
@@ -113,7 +113,7 @@
   ],
   "variantModule": {
     "heading": "Which pico device, and why it matters",
-    "intro": "Both platforms fire picosecond pulses, but their primary wavelengths differ, and wavelength changes how strongly melanin absorbs the pulse. That is a difference in energy delivery, not a ranking.",
+    "intro": "All three platforms fire picosecond pulses, but their primary wavelengths and handpieces differ, and wavelength changes how strongly melanin absorbs the pulse. That is a difference in energy delivery, not a ranking.",
     "items": [
       {
         "eyebrow": "755nm · Cynosure",
@@ -128,6 +128,13 @@
         "body": "Built around the longer 1064nm Nd:YAG wavelength, which interacts less with surface melanin and travels deeper. Often chosen where skin tone or pigment depth makes a 755nm pass less appropriate.",
         "href": "/technology/fotona-pqx",
         "hrefLabel": "About Fotona PQX"
+      },
+      {
+        "eyebrow": "1064nm · Wontech",
+        "title": "PicoCare",
+        "body": "Like Fotona PQX, built around the 1064nm Nd:YAG wavelength, which interacts less with surface melanin. Where it differs is delivery: a HEXA micro-lens array for acne scar and texture passes, and optional 595nm and 660nm handpieces for tattoo colours the core wavelengths reach poorly.",
+        "href": "/technology/picocare",
+        "hrefLabel": "About PicoCare"
       }
     ]
   },
@@ -258,7 +265,7 @@
   "faqs": [
     {
       "q": "Is Pico laser the same as PicoSure?",
-      "a": "No. PicoSure is one pico laser, a 755nm device made by Cynosure. “Pico” describes the pulse length, so other devices count too, such as Fotona PQX at 1064nm and 532nm. Kaiteki uses both, and the doctor chooses the wavelength that suits your pigment and skin tone."
+      "a": "No. PicoSure is one pico laser, a 755nm device made by Cynosure. “Pico” describes the pulse length, so other devices count too, such as Fotona PQX and PicoCare at 1064nm and 532nm. Kaiteki uses all three, and the doctor chooses the wavelength that suits your pigment and skin tone."
     },
     {
       "q": "Does Pico laser hurt?",

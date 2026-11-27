@@ -1,0 +1,115 @@
+{
+  "slug": "picocare",
+  "name": "PicoCare",
+  "group": "Lasers",
+  "type": "device",
+  "treatments": [
+    "pico-laser"
+  ],
+  "summary": "Laser Nd:YAG pikosaat 1064nm/532nm dari Korea, dengan alat pegang tangan 595nm dan 660nm pilihan serta tatasusunan kanta mikro, yang digunakan dalam rawatan Pico laser untuk pigmen, dakwat tatu dan parut jerawat.",
+  "leadAnswer": "PicoCare 450 ialah laser Nd:YAG pikosaat daripada Wontech, Korea Selatan, yang digunakan dalam rawatan Pico laser di Kaiteki. Ia memancarkan denyutan 1064nm atau 532nm selama kira-kira 450 pikosaat, dan boleh dipasang dengan tatasusunan kanta mikro HEXA serta alat pegang tangan 595nm dan 660nm untuk parut jerawat dan warna tatu. Pilihan yang sesuai untuk anda ditentukan semasa konsultasi.",
+  "facts": [
+    {
+      "value": "Kira-kira 450 pikosaat",
+      "label": "Tempoh denyutan"
+    },
+    {
+      "value": "Wontech, Korea Selatan",
+      "label": "Pengeluar"
+    },
+    {
+      "value": "1064, 532, 595 dan 660nm",
+      "label": "Pilihan panjang gelombang"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Apa itu PicoCare 450, dan siapa pengeluarnya?",
+      "body": [
+        "PicoCare ialah laser Nd:YAG pikosaat buatan Wontech, pengeluar yang beribu pejabat di Daejeon, Korea Selatan, dan di Kaiteki ia salah satu mesin yang digunakan dalam rawatan Pico laser kami. Wontech juga mengeluarkan platform radiofrekuensi Oligio X yang digunakan di Kaiteki. Model PicoCare 450 dinamakan sempena tempoh denyutannya, iaitu kira-kira 450 pikosaat, cukup singkat sehingga pigmen dan dakwat dipecahkan terutamanya oleh gelombang kejutan fotoakustik, bukan dengan memanaskan kulit di sekelilingnya secara berterusan.",
+        "Peranti PicoCare mempunyai pelepasan US FDA 510(k) sejak Jun 2017 untuk buang tatu: panjang gelombang 1064nm untuk dakwat gelap pada semua jenis kulit (Fitzpatrick I hingga VI), dan panjang gelombang 532nm untuk dakwat yang lebih cerah seperti merah dan kuning pada jenis kulit I hingga III. Pelepasan ini ialah penemuan kawal selia bahawa peranti itu setara secara substansial dengan peranti yang sudah ada di pasaran, bukan kelulusan terhadap apa-apa hasil kosmetik, dan penggunaan seperti rawatan pigmen atau parut bergantung pada amalan klinikal dan kajian yang diterbitkan, bukan pada pelepasan itu. Sama ada PicoCare sesuai untuk masalah anda ditentukan oleh doktor selepas memeriksa kulit anda semasa konsultasi."
+      ]
+    },
+    {
+      "heading": "Bagaimana panjang gelombang dan tatasusunan kanta HEXA pada PicoCare membahagikan tugas?",
+      "body": [
+        "Teras sistem ini ialah sumber Nd:YAG pada 1064nm, yang menembusi agak dalam dan agak kurang diserap oleh melanin di permukaan, serta output 532nm yang digandakan frekuensinya, yang lebih kuat diserap oleh pigmen di permukaan dan oleh dakwat merah, oren dan kuning. Wontech juga menawarkan alat pegang tangan pewarna (dye) yang menukar output laser kepada 595nm dan 660nm, untuk warna tatu yang kurang diserap oleh dua panjang gelombang teras. Pelepasan di Amerika Syarikat hanya meliputi output 1064nm dan 532nm.",
+        "Untuk rawatan parut dan tekstur, alat pegang tangan HEXA MLA (micro-lens array, tatasusunan kanta mikro) memecahkan pancaran kepada grid titik yang sangat terfokus. Setiap titik menumpukan tenaga ke zon mikroskopik di dalam kulit, manakala permukaan di antara titik-titik itu sebahagian besarnya tidak terjejas; alat pegang tangan pancaran penuh pula menyebarkan tenaga secara sekata untuk pigmen dan dakwat. Saiz titik adalah antara kira-kira 2 hingga 10mm, dan panjang gelombang, alat pegang tangan, saiz titik serta fluens dipilih oleh doktor yang merawat mengikut kulit dan masalah anda. Perubahan berkembang secara beransur-ansur sepanjang kursus dan berbeza antara individu."
+      ]
+    },
+    {
+      "heading": "Apa dapatan dua ujian separuh muka yang menggunakan PicoCare?",
+      "body": [
+        "PicoCare mempunyai data ujian khusus untuk peranti ini, walaupun kajiannya kecil. Satu kajian rawak separuh muka pada 2020 dalam Annals of Dermatology merawat 20 pesakit Korea yang mempunyai lentigo solar (sun spot) dalam satu sesi, menggunakan output pikosaat 532nm PicoCare pada sebelah muka dan laser nanosaat Q-switched 532nm pada sebelah lagi. Sepanjang 12 minggu, pakar dermatologi yang menilai secara buta (blinded) memberi gred pembersihan yang lebih tinggi pada bahagian pikosaat, dan penggelapan pasca-radang muncul pada satu daripada 20 bahagian yang dirawat dengan pikosaat berbanding enam daripada 20 bahagian Q-switched.",
+        "Satu kajian perintis pada 2023 dalam Frontiers in Medicine mengikuti 31 orang dewasa Cina dengan jenis kulit II hingga V dan parut jerawat atrofik ringan hingga sederhana melalui empat sesi yang dijarakkan empat minggu, dengan tatasusunan kanta mikro 1064nm PicoCare pada sebelah muka dan laser Er:YAG 2940nm fraksional ablatif pada sebelah lagi. Skor parut bertambah baik pada kedua-dua belah tanpa perbezaan yang signifikan antara keduanya pada minggu ke-20. Bahagian pikosaat kurang sakit, kupingnya tertanggal lebih cepat dan kurang kerap mengalami hiperpigmentasi pasca-radang, tetapi kemerahannya berlanjutan lebih lama, bintik pendarahan halus kerap berlaku, dan kepuasan keseluruhan lebih tinggi pada bahagian Er:YAG.",
+        "Kedua-duanya ialah kajian jangka pendek ke atas sebilangan kecil pesakit Asia Timur dengan masalah yang dipilih dengan teliti. Kajian ini menunjukkan keadaan yang diuji pada peranti ini, bukan ramalan tentang apa yang akan dilihat oleh mana-mana individu."
+      ]
+    },
+    {
+      "heading": "Untuk masalah pigmen, tatu dan parut yang mana PicoCare dipertimbangkan?",
+      "body": [
+        "Dalam rawatan Pico laser Kaiteki, PicoCare biasanya dipertimbangkan untuk masalah di bawah. Ia tidak sesuai untuk semua orang, dan konsultasi akan menentukan sama ada ia sesuai untuk anda dan panjang gelombang atau alat pegang tangan mana yang wajar dimulakan."
+      ],
+      "list": [
+        "Sun spot, freckles dan lesi pigmen benigna yang lain, menggunakan pancaran penuh 532nm atau 1064nm",
+        "Pigmen dermis seperti nevus Ota dan nevus Hori, mengikut penilaian doktor anda",
+        "Jeragat (melasma), dirawat dengan berhati-hati dan hanya dalam pelan yang lebih menyeluruh",
+        "Dakwat tatu gelap, serta warna yang sukar dicapai oleh panjang gelombang teras, menggunakan alat pegang tangan pewarna",
+        "Parut jerawat atrofik dan tekstur kulit yang tidak rata, menggunakan tatasusunan kanta mikro HEXA",
+        "Kulit kusam, warna kulit tidak sekata dan liang pori yang nampak besar"
+      ]
+    },
+    {
+      "heading": "Bila PicoCare bukan alat yang sesuai, dan bila rawatan perlu ditangguhkan?",
+      "body": [
+        "Bukan setiap tanda gelap ialah pigmen yang patut dikejar dengan laser. Jeragat dipengaruhi oleh hormon, haba dan matahari, dan tetapan laser yang terlalu agresif boleh menjadikannya lebih gelap, kadangkala beberapa minggu kemudian, jadi ia biasanya memerlukan perlindungan matahari dan rawatan topikal dahulu, dengan laser digunakan secara berhati-hati atau tidak langsung. Parut jerawat yang dalam dan tertambat (tethered) selalunya memerlukan rawatan lain bersama atau sebagai ganti laluan tatasusunan kanta mikro, dan tahi lalat atau tompok yang berubah saiz, bentuk atau warna perlu diperiksa oleh doktor sebelum sebarang laser dipertimbangkan.",
+        "PicoCare mungkin tidak sesuai semasa hamil atau menyusukan anak, pada kulit yang baru digelapkan atau terbakar matahari, di atas jangkitan aktif, demam kura (cold sore), ekzema atau luka terbuka di kawasan itu, jika anda ada sejarah parut keloid, atau semasa anda mengambil ubat fotosensitif termasuk isotretinoin oral. Oleh kerana panjang gelombang 532nm diserap dengan kuat oleh melanin dan pelepasannya di Amerika Syarikat terhad kepada jenis kulit yang lebih cerah, doktor anda mungkin mengelak menggunakannya pada kulit yang lebih gelap. Sila kongsikan sejarah perubatan, ubat dan rawatan anda sepenuhnya semasa konsultasi, termasuk laser, peel atau suntikan sebelum ini di kawasan itu."
+      ]
+    },
+    {
+      "heading": "Apa yang berlaku semasa sesi PicoCare, dan kenapa laluan MLA boleh meninggalkan bintik halus?",
+      "body": [
+        "Lawatan pertama ialah konsultasi doktor dan penilaian kulit, bukan rawatan. Jika PicoCare sesuai, doktor memilih panjang gelombang dan alat pegang tangan, dan mungkin merawat kawasan ujian yang kecil dahulu, terutamanya bagi pigmen dermis, jeragat atau warna kulit yang lebih gelap. Pada hari rawatan, kulit dibersihkan, pelindung mata dipakaikan, dan krim kebas mungkin disapu, lebih kerap untuk kerja tatu atau laluan tatasusunan kanta mikro berbanding laluan pigmen yang ringan.",
+        "Laluan pancaran penuh terasa seperti petikan getah atau cucukan jarum panas yang singkat, dan tompok yang dirawat boleh menjadi kelabu atau lebih gelap selama beberapa hari sebelum tertanggal, biasanya dalam satu hingga dua minggu. Laluan tatasusunan kanta mikro berbeza: titik-titik terfokus itu boleh meninggalkan corak bintik merah atau ungu yang halus (petekia) serta kemerahan; dalam ujian 2023, kemerahan itu berlanjutan kira-kira empat hari secara purata. Sesi muka biasanya singkat, selalunya sekitar 20 hingga 40 minit termasuk persediaan. Kursus lazimnya beberapa sesi yang dijarakkan beberapa minggu, dengan sesi tatu dijarakkan lebih jauh; doktor anda menetapkan jaraknya.",
+        "Pelindung matahari spektrum luas setiap hari dan benar-benar mengelak matahari antara sesi adalah penting, kerana pendedahan matahari ialah salah satu sebab utama pigmen kembali atau menjadi lebih gelap selepas laser. Gunakan penjagaan kulit yang lembut, biarkan kuping dan kulit yang mengelupas tertanggal sendiri, dan hentikan retinoid dan asid sehingga doktor membenarkan anda menyambungnya semula. Anda akan diberi arahan penjagaan untuk kawasan dan alat pegang tangan yang digunakan."
+      ]
+    },
+    {
+      "heading": "Apakah kesan sampingan yang dilihat dengan PicoCare, dan berapa kerap pigmen menjadi gelap?",
+      "body": [
+        "Seperti mana-mana laser perubatan, PicoCare mempunyai risiko, dan risiko ini diterangkan semasa konsultasi sebelum rawatan diatur. Kesan sementara boleh termasuk kemerahan, bengkak, gatal, bintik pendarahan halus, kuping, dan kulit yang dirawat menjadi lebih gelap (hiperpigmentasi pasca-radang) atau lebih cerah. Dalam kedua-dua ujian di atas, penggelapan berlaku kurang kerap pada bahagian PicoCare berbanding laser perbandingan, iaitu pada satu daripada 20 pesakit dalam ujian sun spot dan satu daripada 31 dalam ujian parut jerawat, tetapi ia tetap berlaku, dan jeragat serta warna kulit yang lebih gelap membawa risiko yang lebih tinggi. Melepuh, jangkitan dan parut jarang berlaku. Risiko dikurangkan, walaupun tidak pernah dihapuskan, apabila panjang gelombang dan tetapan dipadankan dengan kulit anda dan rawatan dilakukan oleh doktor yang terlatih."
+      ]
+    }
+  ],
+  "costFactors": {
+    "intro": "Harga dibincangkan semasa konsultasi, bukan disebut dalam talian, jadi sebarang angka mencerminkan pelan anda selepas penilaian, bukan pakej umum. Perkara yang mempengaruhinya:",
+    "factors": [
+      "Alat pegang tangan yang diperlukan dalam pelan: pancaran penuh untuk pigmen, tatasusunan kanta mikro untuk parut, atau alat pegang tangan pewarna untuk warna tatu tertentu.",
+      "Sedalam mana pigmen itu berada, dan bagaimana kulit anda membersihkannya antara lawatan.",
+      "Saiz kawasan.",
+      "Bagi parut jerawat, berapa banyak sesi dalam kursus itu.",
+      "Bagi tatu, warna, ketumpatan dan lapisan dakwat.",
+      "Sama ada PicoCare digabungkan dengan langkah lain dalam pelan anda."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Apa beza PicoCare dengan Fotona PQX di Kaiteki?",
+      "a": "Kedua-duanya dibina di sekitar sumber Nd:YAG 1064nm/532nm, jadi panjang gelombang terasnya sama, begitu juga penyerapan melanin yang lebih rendah pada 1064nm. Perbezaannya terletak pada cara penghantaran. Fotona PQX juga menawarkan denyutan Q-switched, kawalan denyutan berstruktur dan kaedah buang tatu FracTAT® daripada Fotona, manakala PicoCare boleh dipasang dengan alat pegang tangan pewarna 595nm dan 660nm serta tatasusunan kanta mikro HEXA daripada Wontech. Doktor anda memilih antara keduanya mengikut masalah anda, bukan mengikut jenama."
+    },
+    {
+      "q": "Bagaimana PicoCare dibandingkan dengan PicoSure?",
+      "a": "Panjang gelombang utama PicoSure ialah 755nm, yang diserap dengan kuat oleh melanin, manakala PicoCare diterajui oleh 1064nm, yang kurang berinteraksi dengan melanin di permukaan dan sampai lebih dalam. Sebab itu doktor mungkin cenderung memilih platform 1064nm untuk warna kulit yang lebih gelap atau pigmen yang lebih dalam, dan 755nm untuk warna dakwat tertentu. Secara umumnya, tiada satu pun yang lebih baik: pilihannya bergantung pada pigmen anda, jenis kulit anda dan penilaian doktor."
+    },
+    {
+      "q": "Adakah PicoCare mendapat pelepasan US FDA?",
+      "a": "Ya. Peranti PicoCare mula mendapat pelepasan US FDA 510(k) pada 2017 untuk buang tatu: 1064nm untuk dakwat gelap pada semua jenis kulit, dan 532nm untuk dakwat yang lebih cerah seperti merah dan kuning pada jenis kulit I hingga III. Pelepasan bermaksud FDA mendapati peranti itu setara secara substansial dengan peranti yang sudah ada di pasaran. Ia bukan kelulusan terhadap hasil kosmetik, dan ia tidak meliputi setiap penggunaan yang mungkin dipertimbangkan oleh doktor, seperti rawatan parut jerawat."
+    },
+    {
+      "q": "Panjang gelombang PicoCare mana yang digunakan pada warna kulit orang Malaysia yang lebih gelap?",
+      "a": "Biasanya 1064nm. Ia kurang diserap oleh melanin di lapisan atas kulit, dan pelepasannya di Amerika Syarikat untuk buang tatu meliputi semua jenis kulit Fitzpatrick, manakala pelepasan 532nm terhad kepada jenis I hingga III. Walaupun pada 1064nm, kulit yang lebih gelap mempunyai risiko perubahan pigmen yang lebih tinggi, jadi tetapan yang konservatif dan kawasan ujian sering digunakan. Doktor anda menilai jenis kulit dan sejarah pigmen anda semasa konsultasi sebelum memilih tetapan."
+    }
+  ],
+  "seoTitle": "Laser Pikosaat PicoCare 450 di Malaysia | Kaiteki",
+  "seoDescription": "PicoCare 450 ialah laser pikosaat 1064nm/532nm daripada Wontech, digunakan di Kaiteki untuk pigmen, tatu dan parut jerawat. Tempah konsultasi percuma anda."
+}

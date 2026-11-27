@@ -46,7 +46,7 @@
     }
   ],
   "variantModule": {
-    "heading": "Sculptra, Radiesse atau Ellansé: bahan yang mana, dan kenapa",
+    "heading": "Sculptra, Radiesse, Ellansé atau Deusaderm: bahan yang mana, dan kenapa",
     "intro": "Setiap produk menggunakan bahan asas yang berbeza, dan ini mengubah cara ia bertindak serta berapa lama ia diserap semula oleh badan.",
     "items": [
       {
@@ -71,9 +71,11 @@
         "hrefLabel": "Tentang Ellansé"
       },
       {
-        "eyebrow": "Berasaskan kolagen",
+        "eyebrow": "Kolagen babi · Sunmax",
         "title": "Deusaderm",
-        "body": "Suntikan berasaskan kolagen yang bertujuan menyokong kualiti, struktur dan keanjalan kulit."
+        "body": "Kolagen tulen itu sendiri, bukan zarah sintetik, jadi ia memberi sedikit sokongan semasa diletakkan sebelum diserap dalam tempoh beberapa bulan. Ia tidak mengandungi asid hialuronik dan dipertimbangkan untuk kawasan bawah mata.",
+        "href": "/technology/deusaderm",
+        "hrefLabel": "Tentang Deusaderm"
       }
     ]
   },
@@ -105,6 +107,10 @@
     {
       "lead": "Implan kekal atau separa kekal sebelum ini",
       "body": "di kawasan yang sama."
+    },
+    {
+      "lead": "Alahan terhadap kolagen, produk berasaskan babi atau lidokain,",
+      "body": "bagi Deusaderm, iaitu kolagen babi yang mengandungi lidokain. Jika produk berasaskan babi tidak dapat diterima oleh anda, pilihan bukan haiwan boleh dibincangkan."
     }
   ],
   "sessionSteps": [

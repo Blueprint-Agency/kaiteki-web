@@ -19,7 +19,7 @@
     }
   ],
   "summary": "以射频能量辅助处理皮肤紧致度和肤质方面的问题。",
-  "leadAnswer": "RF 射频疗程用受控的能量，从皮肤表面输送、不用针，加热皮肤较深层。Kaiteki 有四个 RF 射频平台，医生会先检查你的皮肤，再选择用哪一个。",
+  "leadAnswer": "RF 射频疗程用受控的能量，从皮肤表面输送、不用针，加热皮肤较深层。Kaiteki 有五个 RF 射频平台，医生会先检查你的皮肤，再选择用哪一个。",
   "related": [
     "microneedling",
     "hifu"
@@ -31,8 +31,8 @@
   "typicalSessions": "大约2至3次，之后做维持疗程",
   "facts": [
     {
-      "value": "4 个 RF 射频平台",
-      "label": "BTL Exilis、Oligio X、Wonderface 和 XERF，按你的皮肤选择"
+      "value": "5 个 RF 射频平台",
+      "label": "BTL Exilis、Density、Oligio X、Wonderface 和 XERF，按你的皮肤选择"
     },
     {
       "value": "30–60 分钟",
@@ -66,8 +66,8 @@
     }
   ],
   "variantModule": {
-    "heading": "BTL Exilis、Oligio X、Wonderface 还是 XERF：用哪一个 RF 射频平台，为什么",
-    "intro": "这四个平台的差别，在于能量到达的深度，以及皮肤表面的冷却方式。",
+    "heading": "BTL Exilis、Density、Oligio X、Wonderface 还是 XERF：用哪一个 RF 射频平台，为什么",
+    "intro": "这五个平台的差别，在于能量到达的深度，以及皮肤表面的冷却方式。",
     "items": [
       {
         "eyebrow": "单极 · 内置冷却",
@@ -75,6 +75,13 @@
         "body": "单极输出配合内置的表面冷却，让仪器能在到达皮下脂肪的深度持续工作，所以除了脸部紧致度，它也用于身体轮廓方面的问题。",
         "href": "/technology/btl-exilis",
         "hrefLabel": "了解 BTL Exilis"
+      },
+      {
+        "eyebrow": "单极 + 双极序列输出 · 冷媒冷却",
+        "title": "Density",
+        "body": "韩国的 6.78 MHz 平台，双模式探头在每一发里先输出单极、再输出双极射频，依序加热一深一浅两个层次，并有用于眼皮的小型探头。",
+        "href": "/technology/density",
+        "hrefLabel": "了解 Density"
       },
       {
         "eyebrow": "单极 6.78 MHz · 接触式冷却",

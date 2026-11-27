@@ -3,10 +3,14 @@
 import zh_alma from "./zh/alma.json";
 import zh_art_filler from "./zh/art-filler.json";
 import zh_belotero from "./zh/belotero.json";
+import zh_belotero_revive from "./zh/belotero-revive.json";
 import zh_btl_exilis from "./zh/btl-exilis.json";
 import zh_coolsculpting from "./zh/coolsculpting.json";
 import zh_cooltech from "./zh/cooltech.json";
+import zh_density from "./zh/density.json";
 import zh_dermav from "./zh/dermav.json";
+import zh_deusaderm from "./zh/deusaderm.json";
+import zh_ecm_skin_booster from "./zh/ecm-skin-booster.json";
 import zh_ellanse from "./zh/ellanse.json";
 import zh_fotona_pqx from "./zh/fotona-pqx.json";
 import zh_fotona_sp_dynamis from "./zh/fotona-sp-dynamis.json";
@@ -18,8 +22,10 @@ import zh_juvelook from "./zh/juvelook.json";
 import zh_lifthera from "./zh/lifthera.json";
 import zh_m22_ipl from "./zh/m22-ipl.json";
 import zh_morpheus8 from "./zh/morpheus8.json";
+import zh_nctf from "./zh/nctf.json";
 import zh_oligio from "./zh/oligio.json";
 import zh_onda_coolwaves from "./zh/onda-coolwaves.json";
+import zh_picocare from "./zh/picocare.json";
 import zh_picosure from "./zh/picosure.json";
 import zh_plinest from "./zh/plinest.json";
 import zh_potenza from "./zh/potenza.json";
@@ -39,10 +45,14 @@ import zh_xerf from "./zh/xerf.json";
 import ms_alma from "./ms/alma.json";
 import ms_art_filler from "./ms/art-filler.json";
 import ms_belotero from "./ms/belotero.json";
+import ms_belotero_revive from "./ms/belotero-revive.json";
 import ms_btl_exilis from "./ms/btl-exilis.json";
 import ms_coolsculpting from "./ms/coolsculpting.json";
 import ms_cooltech from "./ms/cooltech.json";
+import ms_density from "./ms/density.json";
 import ms_dermav from "./ms/dermav.json";
+import ms_deusaderm from "./ms/deusaderm.json";
+import ms_ecm_skin_booster from "./ms/ecm-skin-booster.json";
 import ms_ellanse from "./ms/ellanse.json";
 import ms_fotona_pqx from "./ms/fotona-pqx.json";
 import ms_fotona_sp_dynamis from "./ms/fotona-sp-dynamis.json";
@@ -54,8 +64,10 @@ import ms_juvelook from "./ms/juvelook.json";
 import ms_lifthera from "./ms/lifthera.json";
 import ms_m22_ipl from "./ms/m22-ipl.json";
 import ms_morpheus8 from "./ms/morpheus8.json";
+import ms_nctf from "./ms/nctf.json";
 import ms_oligio from "./ms/oligio.json";
 import ms_onda_coolwaves from "./ms/onda-coolwaves.json";
+import ms_picocare from "./ms/picocare.json";
 import ms_picosure from "./ms/picosure.json";
 import ms_plinest from "./ms/plinest.json";
 import ms_potenza from "./ms/potenza.json";
@@ -78,10 +90,14 @@ export const translations: Record<"zh" | "ms", Record<string, unknown>> = {
     "alma": zh_alma,
     "art-filler": zh_art_filler,
     "belotero": zh_belotero,
+    "belotero-revive": zh_belotero_revive,
     "btl-exilis": zh_btl_exilis,
     "coolsculpting": zh_coolsculpting,
     "cooltech": zh_cooltech,
+    "density": zh_density,
     "dermav": zh_dermav,
+    "deusaderm": zh_deusaderm,
+    "ecm-skin-booster": zh_ecm_skin_booster,
     "ellanse": zh_ellanse,
     "fotona-pqx": zh_fotona_pqx,
     "fotona-sp-dynamis": zh_fotona_sp_dynamis,
@@ -93,8 +109,10 @@ export const translations: Record<"zh" | "ms", Record<string, unknown>> = {
     "lifthera": zh_lifthera,
     "m22-ipl": zh_m22_ipl,
     "morpheus8": zh_morpheus8,
+    "nctf": zh_nctf,
     "oligio": zh_oligio,
     "onda-coolwaves": zh_onda_coolwaves,
+    "picocare": zh_picocare,
     "picosure": zh_picosure,
     "plinest": zh_plinest,
     "potenza": zh_potenza,
@@ -116,10 +134,14 @@ export const translations: Record<"zh" | "ms", Record<string, unknown>> = {
     "alma": ms_alma,
     "art-filler": ms_art_filler,
     "belotero": ms_belotero,
+    "belotero-revive": ms_belotero_revive,
     "btl-exilis": ms_btl_exilis,
     "coolsculpting": ms_coolsculpting,
     "cooltech": ms_cooltech,
+    "density": ms_density,
     "dermav": ms_dermav,
+    "deusaderm": ms_deusaderm,
+    "ecm-skin-booster": ms_ecm_skin_booster,
     "ellanse": ms_ellanse,
     "fotona-pqx": ms_fotona_pqx,
     "fotona-sp-dynamis": ms_fotona_sp_dynamis,
@@ -131,8 +153,10 @@ export const translations: Record<"zh" | "ms", Record<string, unknown>> = {
     "lifthera": ms_lifthera,
     "m22-ipl": ms_m22_ipl,
     "morpheus8": ms_morpheus8,
+    "nctf": ms_nctf,
     "oligio": ms_oligio,
     "onda-coolwaves": ms_onda_coolwaves,
+    "picocare": ms_picocare,
     "picosure": ms_picosure,
     "plinest": ms_plinest,
     "potenza": ms_potenza,

@@ -6,10 +6,6 @@
   "image": "https://cdn.kaiteki.my/treatments/resurfacing-laser/hero.jpg",
   "procedureImages": [
     {
-      "src": "https://cdn.kaiteki.my/treatments/resurfacing-laser/procedure-01.jpg",
-      "caption": "A doctor guides the laser handpiece close to the patient's skin."
-    },
-    {
       "src": "https://cdn.kaiteki.my/treatments/resurfacing-laser/procedure-02.jpg",
       "caption": "A doctor holds the patient's face steady while applying the laser handpiece."
     },

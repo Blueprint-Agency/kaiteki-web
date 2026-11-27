@@ -37,6 +37,17 @@ export type LocalePageEntry =
 // /locations/pelangi-johor-bahru carry 中文 and BM strings drafted by Claude
 // (33 per locale, plus the Pelangi `about` and meta in locations.ts) that no
 // doctor has read. Their signed dates cover the earlier text only.
+// 2026-11-27: five new device pages (picocare, density, deusaderm,
+// belotero-revive, nctf) are drafts, each naming the doctor who reads them; the
+// ECM skin booster joins them the same day. The parent treatment pages are
+// already signed, and their 中文 and BM strings for the new products were
+// drafted by Claude and not yet read: on /treatments/pico-laser,
+// /treatments/radiofrequency, /treatments/skin-booster and
+// /treatments/bio-stimulator, the variantModule heading, intro and new cards,
+// the device-count fact, the radiofrequency leadAnswer, the pico FAQ "Is Pico
+// laser the same as PicoSure?", and the new avoidIf items on skin-booster and
+// bio-stimulator; on /technology/potenza, the corrected manufacturer lines
+// (Jeisys Medical, not Cynosure Lutronic). Send those to each page's reviewer.
 export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntry>> = {
   zh: {
     // Blog (kt105-kt110): each post signed by its reviewer, the hub by Dr Chew
@@ -59,10 +70,14 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/technology/alma": { status: "signed", date: "2026-10-28" },
     "/technology/art-filler": { status: "signed", date: "2026-10-28" },
     "/technology/belotero": { status: "signed", date: "2026-10-28" },
+    "/technology/belotero-revive": { status: "draft", doctor: "dr-jeremy-low" },
     "/technology/btl-exilis": { status: "signed", date: "2026-10-28" },
     "/technology/coolsculpting": { status: "signed", date: "2026-10-28" },
     "/technology/cooltech": { status: "signed", date: "2026-10-28" },
+    "/technology/density": { status: "draft", doctor: "dr-hong-peiyi" },
     "/technology/dermav": { status: "signed", date: "2026-10-28" },
+    "/technology/deusaderm": { status: "draft", doctor: "dr-jacqueline-tan" },
+    "/technology/ecm-skin-booster": { status: "draft", doctor: "dr-hong-peiyi" },
     "/technology/ellanse": { status: "signed", date: "2026-10-28" },
     "/technology/fotona-pqx": { status: "signed", date: "2026-10-28" },
     "/technology/fotona-sp-dynamis": { status: "signed", date: "2026-10-28" },
@@ -74,8 +89,10 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/technology/lifthera": { status: "signed", date: "2026-10-28" },
     "/technology/m22-ipl": { status: "signed", date: "2026-10-28" },
     "/technology/morpheus8": { status: "signed", date: "2026-10-28" },
+    "/technology/nctf": { status: "draft", doctor: "dr-joaan-kong" },
     "/technology/oligio": { status: "signed", date: "2026-10-28" },
     "/technology/onda-coolwaves": { status: "signed", date: "2026-10-28" },
+    "/technology/picocare": { status: "draft", doctor: "dr-calvin-tan" },
     "/technology/picosure": { status: "signed", date: "2026-10-28" },
     "/technology/plinest": { status: "signed", date: "2026-10-28" },
     "/technology/potenza": { status: "signed", date: "2026-10-28" },
@@ -186,10 +203,14 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/technology/alma": { status: "signed", date: "2026-10-28" },
     "/technology/art-filler": { status: "signed", date: "2026-10-28" },
     "/technology/belotero": { status: "signed", date: "2026-10-28" },
+    "/technology/belotero-revive": { status: "draft", doctor: "dr-jeremy-low" },
     "/technology/btl-exilis": { status: "signed", date: "2026-10-28" },
     "/technology/coolsculpting": { status: "signed", date: "2026-10-28" },
     "/technology/cooltech": { status: "signed", date: "2026-10-28" },
+    "/technology/density": { status: "draft", doctor: "dr-hong-peiyi" },
     "/technology/dermav": { status: "signed", date: "2026-10-28" },
+    "/technology/deusaderm": { status: "draft", doctor: "dr-jacqueline-tan" },
+    "/technology/ecm-skin-booster": { status: "draft", doctor: "dr-hong-peiyi" },
     "/technology/ellanse": { status: "signed", date: "2026-10-28" },
     "/technology/fotona-pqx": { status: "signed", date: "2026-10-28" },
     "/technology/fotona-sp-dynamis": { status: "signed", date: "2026-10-28" },
@@ -201,8 +222,10 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/technology/lifthera": { status: "signed", date: "2026-10-28" },
     "/technology/m22-ipl": { status: "signed", date: "2026-10-28" },
     "/technology/morpheus8": { status: "signed", date: "2026-10-28" },
+    "/technology/nctf": { status: "draft", doctor: "dr-joaan-kong" },
     "/technology/oligio": { status: "signed", date: "2026-10-28" },
     "/technology/onda-coolwaves": { status: "signed", date: "2026-10-28" },
+    "/technology/picocare": { status: "draft", doctor: "dr-calvin-tan" },
     "/technology/picosure": { status: "signed", date: "2026-10-28" },
     "/technology/plinest": { status: "signed", date: "2026-10-28" },
     "/technology/potenza": { status: "signed", date: "2026-10-28" },

@@ -1,0 +1,115 @@
+{
+  "slug": "picocare",
+  "name": "PicoCare",
+  "group": "Lasers",
+  "type": "device",
+  "treatments": [
+    "pico-laser"
+  ],
+  "summary": "A Korean 1064nm/532nm picosecond Nd:YAG laser, with optional 595nm and 660nm handpieces and a micro-lens array, used within Pico laser treatment for pigment, tattoo ink and acne scarring.",
+  "leadAnswer": "PicoCare 450 is a picosecond Nd:YAG laser from Wontech, South Korea, used within Kaiteki's Pico laser treatment. It fires 1064nm or 532nm pulses of around 450 picoseconds, and can be fitted with a HEXA micro-lens array and 595nm and 660nm handpieces for acne scarring and tattoo colours. Which options suit you is decided at consultation.",
+  "facts": [
+    {
+      "value": "Around 450 picoseconds",
+      "label": "Pulse duration"
+    },
+    {
+      "value": "Wontech, South Korea",
+      "label": "Manufacturer"
+    },
+    {
+      "value": "1064, 532, 595 and 660nm",
+      "label": "Wavelength options"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "What is PicoCare 450, and who makes it?",
+      "body": [
+        "PicoCare is a picosecond Nd:YAG laser made by Wontech, a manufacturer headquartered in Daejeon, South Korea, and at Kaiteki it is one of the devices within our Pico laser treatment. Wontech also makes the Oligio X radiofrequency platform used at Kaiteki. The PicoCare 450 model is named for its pulse duration of around 450 picoseconds, short enough that pigment and ink are broken up mainly by a photoacoustic shockwave rather than by sustained heating of the surrounding skin.",
+        "PicoCare devices have held US FDA 510(k) clearance since June 2017 for tattoo removal: the 1064nm wavelength for dark inks in all skin types (Fitzpatrick I to VI), and the 532nm wavelength for lighter inks such as red and yellow in skin types I to III. Clearance is a regulatory finding that a device is substantially equivalent to one already on the market, not an approval of any cosmetic outcome, and uses such as pigment or scar work rest on clinical practice and published studies rather than on that clearance. Whether PicoCare suits your concern is decided by a doctor after examining your skin at consultation."
+      ]
+    },
+    {
+      "heading": "How do PicoCare's wavelengths and HEXA lens array divide the work?",
+      "body": [
+        "The core of the system is an Nd:YAG source at 1064nm, which travels relatively deep and is absorbed comparatively little by melanin at the surface, plus a frequency-doubled 532nm output that superficial pigment and red, orange and yellow inks absorb more strongly. Wontech also offers dye handpieces that convert the laser's output to 595nm and 660nm, intended for tattoo colours that the two core wavelengths absorb poorly. The US clearances cover the 1064nm and 532nm outputs only.",
+        "For scar and texture work, the HEXA MLA (micro-lens array) handpiece splits the beam into a grid of tightly focused points. Each point concentrates energy into a microscopic zone inside the skin while the surface between the points is left largely intact, whereas full-beam handpieces spread the energy evenly for pigment and ink. Spot sizes run from about 2 to 10mm, and the wavelength, handpiece, spot size and fluence are chosen by the treating doctor for your skin and concern. Changes develop gradually over a course and vary between individuals."
+      ]
+    },
+    {
+      "heading": "What did the two split-face trials using PicoCare find?",
+      "body": [
+        "PicoCare has device-specific trial data, though the studies are small. A 2020 randomised split-face study in Annals of Dermatology treated 20 Korean patients with solar lentigines (sun spots) in a single session, using PicoCare's 532nm picosecond output on one side of the face and a 532nm Q-switched nanosecond laser on the other. Over 12 weeks, blinded dermatologists graded clearance higher on the picosecond side, and post-inflammatory darkening appeared on one of 20 picosecond-treated sides against six of 20 Q-switched sides.",
+        "A 2023 pilot in Frontiers in Medicine followed 31 Chinese adults with skin types II to V and mild to moderate atrophic acne scars through four sessions four weeks apart, with PicoCare's 1064nm micro-lens array on one side and an ablative fractional 2940nm Er:YAG laser on the other. Scar scores improved on both sides with no significant difference between them at 20 weeks. The picosecond side was less painful, shed its crusts sooner and developed post-inflammatory hyperpigmentation less often, but its redness lasted longer, pinpoint bleeding spots were common, and overall satisfaction was higher on the Er:YAG side.",
+        "Both are short studies in a small number of East Asian patients with carefully selected concerns. They show what the device was tested on, not a prediction of what any one person will see."
+      ]
+    },
+    {
+      "heading": "Which pigment, ink and scar concerns is PicoCare considered for?",
+      "body": [
+        "Within Kaiteki's Pico laser treatment, PicoCare is commonly considered for the concerns below. It is not suitable for everyone, and a consultation establishes whether it is appropriate for you and which wavelength or handpiece is the sensible starting point."
+      ],
+      "list": [
+        "Sun spots, freckles and other benign pigmented lesions, using the 532nm or 1064nm full beam",
+        "Dermal pigment such as naevus of Ota and Hori's naevus, as assessed by your doctor",
+        "Melasma, approached cautiously and only within a wider plan",
+        "Dark tattoo inks, plus colours the core wavelengths miss, using the dye handpieces",
+        "Atrophic acne scarring and uneven texture, using the HEXA micro-lens array",
+        "Dull, uneven tone and enlarged-looking pores"
+      ]
+    },
+    {
+      "heading": "When is PicoCare the wrong tool, and when should treatment wait?",
+      "body": [
+        "Not every dark mark is pigment a laser should chase. Melasma is driven by hormones, heat and sun, and aggressive laser settings can make it darker, sometimes weeks later, so it usually needs sun protection and topical treatment first, with laser used cautiously if at all. Deep, tethered acne scars often need other treatments alongside or instead of a micro-lens array pass, and a mole or patch that has changed in size, shape or colour needs a medical examination before any laser is considered.",
+        "PicoCare may not be suitable during pregnancy or breastfeeding, on recently tanned or sunburnt skin, over active infection, cold sores, eczema or open wounds in the area, with a history of keloid scarring, or while you are taking photosensitising medication including oral isotretinoin. Because the 532nm wavelength is absorbed strongly by melanin and its US clearance is limited to lighter skin types, your doctor may avoid it on deeper skin. Please share your full medical, medication and treatment history at consultation, including previous lasers, peels or injectables in the area."
+      ]
+    },
+    {
+      "heading": "What happens in a PicoCare session, and why can MLA passes leave pinpoint marks?",
+      "body": [
+        "The first visit is a doctor consultation and skin assessment, not a treatment. If PicoCare is appropriate, the doctor chooses the wavelength and handpiece and may treat a small test area first, particularly for dermal pigment, melasma or deeper skin tones. On the day, the skin is cleansed, eye protection is fitted, and topical numbing cream may be applied, more often for tattoo work or micro-lens array passes than for a light pigment pass.",
+        "A full-beam pass feels like brief snaps or hot pinpricks, and treated spots can turn grey or darker for several days before they flake away, usually within one to two weeks. A micro-lens array pass behaves differently: the focused points can leave a pattern of tiny red or purple dots (petechiae), along with redness that lasted around four days on average in the 2023 trial. A facial session is usually a short appointment, often around 20 to 40 minutes including preparation. Courses are typically several sessions a few weeks apart, with tattoo sessions spaced further apart; your doctor sets the interval.",
+        "Daily broad-spectrum sunscreen and genuine sun avoidance between sessions are important, because sun exposure is one of the main reasons pigment returns or darkens after laser. Keep skincare gentle, let crusts and flakes shed on their own, and pause retinoids and acids until your doctor says you can resume them. You will be given aftercare instructions for the area and handpiece used."
+      ]
+    },
+    {
+      "heading": "What side effects were seen with PicoCare, and how often did pigment darken?",
+      "body": [
+        "As with any medical laser, PicoCare carries risks, and these are explained at consultation before treatment is arranged. Temporary effects can include redness, swelling, itching, pinpoint bleeding spots, crusting, and either darkening (post-inflammatory hyperpigmentation) or lightening of the treated skin. In both trials above, darkening occurred less often on the PicoCare side than with the comparison laser, in one of 20 patients in the sun spot trial and one of 31 in the acne scar trial, but it still occurred, and melasma and deeper skin tones carry more risk. Blistering, infection and scarring are uncommon. Risk is reduced, though never removed, when the wavelength and settings are matched to your skin and the treatment is performed by a trained doctor."
+      ]
+    }
+  ],
+  "costFactors": {
+    "intro": "Pricing is discussed at consultation rather than quoted online, so any figure reflects your assessed plan rather than a generic package. What moves it:",
+    "factors": [
+      "Which handpiece the plan needs: a full-beam pass for pigment, the micro-lens array for scarring, or a dye handpiece for particular tattoo colours.",
+      "How deep the pigment sits, and how your skin clears it between visits.",
+      "The size of the area.",
+      "For acne scarring, how many sessions the course runs to.",
+      "For tattoos, the ink colours, density and layering.",
+      "Whether PicoCare is combined with other steps in your plan."
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How is PicoCare different from Fotona PQX at Kaiteki?",
+      "a": "Both are built around a 1064nm/532nm Nd:YAG source, so they share the same core wavelengths and the lower melanin absorption that 1064nm brings. The differences are in delivery. Fotona PQX also offers Q-switched pulses, structured pulse control and Fotona's FracTAT® tattoo method, while PicoCare can be fitted with 595nm and 660nm dye handpieces and Wontech's HEXA micro-lens array. Your doctor chooses between them for your concern rather than by brand."
+    },
+    {
+      "q": "How does PicoCare compare with PicoSure?",
+      "a": "PicoSure's main wavelength is 755nm, which melanin absorbs strongly, while PicoCare is led by 1064nm, which interacts less with surface melanin and reaches deeper. That is why a doctor may lean towards a 1064nm platform for deeper skin tones or deeper pigment, and towards 755nm for certain ink colours. Neither is better in general: the choice depends on your pigment, your skin type and the doctor's assessment."
+    },
+    {
+      "q": "Is PicoCare cleared by the US FDA?",
+      "a": "Yes. PicoCare devices were first given US FDA 510(k) clearance in 2017 for tattoo removal: 1064nm for dark inks in all skin types, and 532nm for lighter inks such as red and yellow in skin types I to III. Clearance means the FDA found the device substantially equivalent to one already on the market. It is not an approval of a cosmetic result, and it does not cover every use a doctor may consider, such as acne scar work."
+    },
+    {
+      "q": "Which PicoCare wavelength is used on deeper Malaysian skin tones?",
+      "a": "Usually 1064nm. It is absorbed less by melanin in the upper skin, and its US clearance for tattoo removal covers all Fitzpatrick skin types, whereas the 532nm clearance is limited to types I to III. Even at 1064nm, deeper skin carries a higher risk of pigment change, so conservative settings and a test area are common. Your doctor assesses your skin type and pigment history at consultation before choosing settings."
+    }
+  ],
+  "seoTitle": "PicoCare 450 Picosecond Laser in Malaysia | Kaiteki",
+  "seoDescription": "PicoCare 450 is a 1064nm/532nm picosecond laser by Wontech, used at Kaiteki for pigment, tattoo ink and acne scars. Book a free consultation today."
+}
