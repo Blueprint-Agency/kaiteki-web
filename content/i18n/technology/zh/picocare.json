@@ -6,6 +6,8 @@
   "treatments": [
     "pico-laser"
   ],
+  "image": "https://cdn.kaiteki.my/images/technology/picocare-v2.png",
+  "imageAlt": "Wontech PicoCare 450 皮秒激光",
   "summary": "一台来自韩国的 1064nm/532nm 皮秒 Nd:YAG 激光，可选配 595nm 和 660nm 手柄及微透镜阵列，在皮秒激光疗程中用于处理色斑、纹身墨水和痘疤。",
   "leadAnswer": "PicoCare 450 是韩国 Wontech 制造的皮秒 Nd:YAG 激光，在 Kaiteki 用于皮秒激光疗程。它以大约 450 皮秒的脉冲输出 1064nm 或 532nm 的能量，也可以配上 HEXA 微透镜阵列，以及 595nm 和 660nm 手柄，用于处理痘疤和不同颜色的纹身。哪些选项适合你，要在咨询时决定。",
   "facts": [

@@ -6,6 +6,8 @@
   "treatments": [
     "pico-laser"
   ],
+  "image": "https://cdn.kaiteki.my/images/technology/picocare-v2.png",
+  "imageAlt": "The Wontech PicoCare 450 picosecond laser",
   "summary": "A Korean 1064nm/532nm picosecond Nd:YAG laser, with optional 595nm and 660nm handpieces and a micro-lens array, used within Pico laser treatment for pigment, tattoo ink and acne scarring.",
   "leadAnswer": "PicoCare 450 is a picosecond Nd:YAG laser from Wontech, South Korea, used within Kaiteki's Pico laser treatment. It fires 1064nm or 532nm pulses of around 450 picoseconds, and can be fitted with a HEXA micro-lens array and 595nm and 660nm handpieces for acne scarring and tattoo colours. Which options suit you is decided at consultation.",
   "facts": [

@@ -6,6 +6,8 @@
   "treatments": [
     "radiofrequency"
   ],
+  "image": "https://cdn.kaiteki.my/images/technology/density-v2.png",
+  "imageAlt": "Peranti radiofrekuensi Jeisys Density",
   "summary": "Platform radiofrekuensi 6.78 MHz dari Korea yang boleh menghantar tenaga monopolar dan kemudian bipolar dalam satu tembakan, dengan penyejukan krio, digunakan dalam rawatan RF untuk kekenduran ringan hingga sederhana.",
   "leadAnswer": "Density ialah platform radiofrekuensi daripada Jeisys Medical di Korea Selatan, yang digunakan di Kaiteki dalam rawatan radiofrekuensi kami. Dengan hujung dwi-mod, setiap tembakan 6.78 MHz menghantar RF monopolar yang sampai lebih dalam, diikuti RF bipolar yang berada di lapisan atas kulit, sementara penyejukan krio melindungi permukaan.",
   "facts": [

@@ -6,6 +6,8 @@
   "treatments": [
     "radiofrequency"
   ],
+  "image": "https://cdn.kaiteki.my/images/technology/density-v2.png",
+  "imageAlt": "Jeisys Density 射频仪器",
   "summary": "一种来自韩国的 6.78 MHz 射频（RF）平台，可以在同一发里先输出单极、再输出双极能量，配合冷媒冷却，在 RF 射频疗程中用于轻度至中度的松弛。",
   "leadAnswer": "Density 是韩国 Jeisys Medical 推出的射频平台，在 Kaiteki 用于我们的射频疗程。使用双模式探头时，每一发 6.78 MHz 的能量会先输出到达较深层的单极射频，接着输出停留在皮肤上层的双极射频，同时由冷媒冷却保护皮肤表面。",
   "facts": [

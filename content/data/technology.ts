@@ -241,6 +241,8 @@ export const technology: Technology[] = [
     group: "Lasers",
     type: "device",
     treatments: ["pico-laser"],
+    image: "https://cdn.kaiteki.my/images/technology/picocare-v2.png",
+    imageAlt: "The Wontech PicoCare 450 picosecond laser",
     summary:
       "A Korean 1064nm/532nm picosecond Nd:YAG laser, with optional 595nm and 660nm handpieces and a micro-lens array, used within Pico laser treatment for pigment, tattoo ink and acne scarring.",
     leadAnswer:
@@ -1332,6 +1334,8 @@ export const technology: Technology[] = [
     group: "Lifting & Tightening",
     type: "device",
     treatments: ["radiofrequency"],
+    image: "https://cdn.kaiteki.my/images/technology/density-v2.png",
+    imageAlt: "The Jeisys Density radiofrequency device",
     summary:
       "A Korean 6.78 MHz radiofrequency platform that can deliver monopolar and then bipolar energy within a single shot, with cryogen cooling, used within RF treatment for mild to moderate laxity.",
     leadAnswer:
@@ -3274,6 +3278,8 @@ export const technology: Technology[] = [
     group: "Injectables",
     type: "injectable",
     treatments: ["skin-booster"],
+    image: "https://cdn.kaiteki.my/images/technology/belotero-revive-v2.png",
+    imageAlt: "A box of Belotero Revive from Merz Aesthetics",
     summary:
       "A Merz Aesthetics injectable combining cross-linked hyaluronic acid with glycerol, used within skin-booster treatment for dry facial skin and superficial fine lines rather than for volume.",
     leadAnswer:
@@ -3389,6 +3395,8 @@ export const technology: Technology[] = [
     group: "Injectables",
     type: "injectable",
     treatments: ["skin-booster"],
+    image: "https://cdn.kaiteki.my/images/technology/nctf-v2.png",
+    imageAlt: "A box of NCTF 135HA vials from Laboratoires Fillmed",
     summary:
       "A French injectable that combines non-crosslinked hyaluronic acid with a solution of vitamins, amino acids, minerals, coenzymes and nucleosides, used within skin-booster treatment for skin hydration and radiance.",
     leadAnswer:
@@ -3909,6 +3917,8 @@ export const technology: Technology[] = [
     group: "Injectables",
     type: "injectable",
     treatments: ["bio-stimulator"],
+    image: "https://cdn.kaiteki.my/images/technology/deusaderm-v2.png",
+    imageAlt: "A box of Deusaderm collagen injectable from Sunmax",
     summary:
       "A cross-linked porcine collagen injectable from Taiwan, used within bio-stimulator treatment, including around the under-eye area.",
     leadAnswer:

@@ -6,6 +6,8 @@
   "treatments": [
     "radiofrequency"
   ],
+  "image": "https://cdn.kaiteki.my/images/technology/density-v2.png",
+  "imageAlt": "The Jeisys Density radiofrequency device",
   "summary": "A Korean 6.78 MHz radiofrequency platform that can deliver monopolar and then bipolar energy within a single shot, with cryogen cooling, used within RF treatment for mild to moderate laxity.",
   "leadAnswer": "Density is a radiofrequency platform from Jeisys Medical in South Korea, used at Kaiteki within our radiofrequency treatment. With its dual-mode tips, each 6.78 MHz shot delivers monopolar RF, which reaches deeper, followed by bipolar RF, which stays in the upper skin layers, while cryogen cooling protects the surface.",
   "facts": [
