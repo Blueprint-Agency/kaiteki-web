@@ -375,7 +375,7 @@ export const legacyPosts: Post[] = [
   {
     "slug": "density-treatment",
     "title": "Density Treatment: Options, Benefits & What to Expect",
-    "description": "Explore density treatment options for fuller hair and rejuvenated skin. Book a free consultation at Kaiteki Clinic.",
+    "description": "Explore Density radiofrequency treatment for skin laxity and texture: how it works, who it suits and what to expect. Book a free consultation at Kaiteki Clinic.",
     "category": "Treatments Explained",
     "tags": [
       "Skin rejuvenation",
@@ -608,7 +608,7 @@ export const legacyPosts: Post[] = [
     "slug": "deusaderm-collagen-boosting-injectable",
     "title": "Deusaderm — The Collagen-Boosting Injectable You’ve Been Waiting For",
     "seoTitle": "Deusaderm — The Collagen-Boosting Injectable You’ve Been Waiting For - Kaiteki Blog | Skin Care | Updates",
-    "description": "Deusaderm revives skin naturally by boosting collagen without puffiness. Discover the gentle, regenerative injectable you've been waiting for",
+    "description": "Deusaderm is a porcine collagen injectable with no hyaluronic acid. What it is, how it differs from HA filler, what it is used for and its side effects.",
     "category": "Device & Injectables",
     "tags": [
       "Injectables",
@@ -628,7 +628,7 @@ export const legacyPosts: Post[] = [
     "slug": "deusaderm",
     "title": "Deusaderm – How can it help with Overfilled Syndrome?",
     "seoTitle": "Deusaderm - How can it help with Overfilled Syndrome? - Kaiteki Blog | Skin Care | Updates",
-    "description": "Deusaderm offers alternative to traditional hyaluronic acid fillers. Learn how it combats overfilled syndrome, reduces swelling naturally.",
+    "description": "Deusaderm is a porcine collagen injectable, an alternative to hyaluronic acid fillers. Why doctors consider it for overfilled faces, and its limits.",
     "category": "Device & Injectables",
     "tags": [
       "Injectables",
@@ -904,9 +904,9 @@ export const legacyPosts: Post[] = [
   },
   {
     "slug": "belotero-revive",
-    "title": "Belotero Revive Price, Benefits & Before-After",
-    "seoTitle": "Belotero Revive Price, Benefits & Before-After - Kaiteki Blog | Skin Care | Updates",
-    "description": "Discover Belotero Revive's price, amazing benefits, and stunning before-after results. Learn why it’s a top choice for radiant, hydrated skin.",
+    "title": "Belotero Revive: How It Works, Treatment & Aftercare",
+    "seoTitle": "Belotero Revive: How It Works, Treatment & Aftercare - Kaiteki Blog | Skin Care | Updates",
+    "description": "Belotero Revive pairs cross-linked hyaluronic acid with glycerol for dry skin and fine lines. How treatment works, aftercare, cost factors and who it suits.",
     "category": "Skin Concerns",
     "tags": [
       "Sensitive skin",
