@@ -166,6 +166,12 @@ export interface Treatment {
 
 export type TechType = "device" | "injectable";
 
+/** A technology page section. `links` render under its copy as contextual
+ *  routes to related pages: `href` is fixed, `label` is translated copy. */
+export interface TechSection extends Section {
+  links?: { label: string; href: string }[];
+}
+
 /** A device or injectable that powers one or more treatments. Its link to a
  *  treatment is the ONLY authored edge (many-to-many); concerns are derived. */
 export interface Technology {
@@ -185,7 +191,7 @@ export interface Technology {
   /** One compliant, factual sentence. */
   summary: string;
   /** Optional rich body — carried over for the 3 converted pages. */
-  sections?: Section[];
+  sections?: TechSection[];
   faqs?: Faq[];
   /**
    * 40-60 word answer-first capsule, as treatment and concern pages carry
@@ -592,6 +598,46 @@ export interface Product {
   highlights?: string[];
   /** Concern slugs this product relates to — drives internal cross-linking. */
   concerns?: string[];
+  /** Rich detail-page content. Only products that carry it get a
+   *  `/products/[slug]` page: the route's generateStaticParams lists exactly
+   *  the products with this field and every other slug 404s, so a catalogue
+   *  card never gets a thin page (docs/02 §8.3, §8.8). */
+  page?: ProductPage;
+}
+
+/** A section of a product detail page: a heading, prose paragraphs and an
+ *  optional rule-divided list. */
+export interface ProductSection {
+  heading: string;
+  body: string[];
+  list?: string[];
+}
+
+/** The authored content of a `/products/[slug]` page. Product facts only: no
+ *  efficacy or outcome claims, no ingredient, test result or rating that the
+ *  product record does not carry. Translated per locale as
+ *  content/i18n/products/<locale>.json → <slug>.page. */
+export interface ProductPage {
+  /** <title>, brand baked in. */
+  seoTitle: string;
+  /** Meta description, 140–160 chars. */
+  seoDescription: string;
+  /** Answer-first capsule under the hero (rendered with LeadAnswer). */
+  leadAnswer: string;
+  /** What it is, then who it suits: rendered in that order and anchored
+   *  #what-it-is and #who-it-suits. */
+  sections: ProductSection[];
+  howToUse: {
+    heading: string;
+    intro: string;
+    steps: { title: string; body: string }[];
+    /** Closing paragraph under the steps. */
+    note: string;
+  };
+  /** How it fits around clinic treatments; the product's `concerns` render as
+   *  cards beneath it. */
+  withTreatments: { heading: string; body: string[]; concernsHeading: string };
+  faqs: Faq[];
 }
 
 /**

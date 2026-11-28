@@ -33,6 +33,18 @@ export const homeMs: HomeCopy = {
   },
   // No badges: "paling banyak … di Malaysia" is a superlative (docs/18 §8.1).
   // Restore as a stated count once one is verified.
+  bestSellers: {
+    h2: "5 Terlaris",
+    sub: "Lima pilihan untuk bermula, dan setiap rawatan dinilai doktor dahulu.",
+    learnMore: "Ketahui lebih lanjut",
+    items: [
+      { title: "Rawatan Mata Panda Deusaderm" },
+      { title: "K Premium Lifting", sub: "Ultherapy + Oligio X, pengangkatan tanpa pembedahan" },
+      { title: "Onda Face", sub: "Pengetatan muka dengan gelombang mikro" },
+      { title: "Juvelook Advance Skin Booster" },
+      { title: "Kaiteki® DoubleBlock UV Sunscreen", sub: "Pelindung matahari muka SPF 50" },
+    ],
+  },
   concerns: {
     h2: "Apa masalah kulit anda?",
     sub: "Beritahu kami masalahnya. Doktor akan menilai dahulu sebelum mencadangkan sebarang rawatan.",

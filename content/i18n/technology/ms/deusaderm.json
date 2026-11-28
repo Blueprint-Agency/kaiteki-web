@@ -4,7 +4,8 @@
   "group": "Injectables",
   "type": "injectable",
   "treatments": [
-    "bio-stimulator"
+    "bio-stimulator",
+    "panda-eye-treatment"
   ],
   "image": "https://cdn.kaiteki.my/images/technology/deusaderm-v2.png",
   "imageAlt": "Kotak suntikan kolagen Deusaderm daripada Sunmax",
@@ -50,7 +51,7 @@
       "heading": "Kenapa Deusaderm dipertimbangkan untuk kawasan bawah mata dan muka yang nampak terlebih filler?",
       "body": [
         "Asid hialuronik menarik air. Pada sesetengah orang, terutamanya di bawah mata di mana cecair mudah berkumpul, filler asid hialuronik boleh menyumbang kepada bengkak atau rupa terlebih filler, dan gel jernih yang diletakkan terlalu hampir dengan permukaan boleh menampakkan warna kebiruan yang dikenali sebagai kesan Tyndall. Deusaderm tidak mengandungi asid hialuronik dan berwarna putih legap, dan kesan Tyndall tidak diperhatikan dalam ujian tahun 2024. Ciri-ciri inilah, bukan sebarang janji hasil, yang menjadi sebab doktor mempertimbangkannya di kawasan ini.",
-        "Dalam rawatan bio-stimulator Kaiteki, Deusaderm biasa dipertimbangkan untuk masalah di bawah. Lingkaran gelap bawah mata mempunyai beberapa punca, termasuk pigmen, saluran darah yang kelihatan dan kecengkungan, dan suntikan hanya menangani sebahagian daripadanya, jadi puncanya dinilai terlebih dahulu. Ia tidak sesuai untuk semua orang, dan konsultasi menentukan sama ada ia sesuai untuk anda."
+        "Dalam rawatan bio-stimulator Kaiteki, Deusaderm biasa dipertimbangkan untuk masalah di bawah. Lingkaran gelap bawah mata mempunyai beberapa punca, termasuk pigmen, saluran darah yang kelihatan dan kecengkungan, dan suntikan hanya menangani sebahagian daripadanya, jadi puncanya dinilai terlebih dahulu. Cara penilaian itu dibuat, dan cara Deusaderm diletakkan pada kulit nipis di bawah mata, diterangkan di halaman Deusaderm untuk Mata Panda. Ia tidak sesuai untuk semua orang, dan konsultasi menentukan sama ada ia sesuai untuk anda."
       ],
       "list": [
         "Kecengkungan di sepanjang lekuk bawah mata dan kelopak mata bawah",
@@ -59,6 +60,12 @@
         "Bimbang kelihatan terlebih filler selepas suntikan filler asid hialuronik berulang kali",
         "Garis halus & kedutan serta lipatan muka yang sudah terbentuk, iaitu kegunaan yang disenaraikan pengeluar",
         "Kehilangan volum yang ringan dan setempat pada muka, apabila pembetulan yang lebih ringan diutamakan"
+      ],
+      "links": [
+        {
+          "label": "Deusaderm untuk mata panda: rawatan bawah mata secara terperinci",
+          "href": "/treatments/panda-eye-treatment"
+        }
       ]
     },
     {

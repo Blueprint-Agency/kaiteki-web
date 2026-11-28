@@ -930,6 +930,11 @@ const legacyLinks: Record<string, Pick<Post, "concerns" | "treatments" | "techno
   // transplant and "hair necessities" posts make outcome claims (docs/02 §8)
   // and stay untagged until they are rewritten.
   "hair-anatomy": { concerns: ["hair-loss"] },
+  // 2026-11-28: the two archive Deusaderm posts, both corrected on 2026-11-27
+  // (porcine, no unsupported claims) and both about the under-eye use, give
+  // /treatments/panda-eye-treatment its Read next row and link back to it.
+  deusaderm: { treatments: ["panda-eye-treatment"] },
+  "deusaderm-collagen-boosting-injectable": { treatments: ["panda-eye-treatment"] },
 };
 
 export const posts: Post[] = [

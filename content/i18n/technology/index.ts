@@ -25,6 +25,7 @@ import zh_morpheus8 from "./zh/morpheus8.json";
 import zh_nctf from "./zh/nctf.json";
 import zh_oligio from "./zh/oligio.json";
 import zh_onda_coolwaves from "./zh/onda-coolwaves.json";
+import zh_onda_face from "./zh/onda-face.json";
 import zh_picocare from "./zh/picocare.json";
 import zh_picosure from "./zh/picosure.json";
 import zh_plinest from "./zh/plinest.json";
@@ -67,6 +68,7 @@ import ms_morpheus8 from "./ms/morpheus8.json";
 import ms_nctf from "./ms/nctf.json";
 import ms_oligio from "./ms/oligio.json";
 import ms_onda_coolwaves from "./ms/onda-coolwaves.json";
+import ms_onda_face from "./ms/onda-face.json";
 import ms_picocare from "./ms/picocare.json";
 import ms_picosure from "./ms/picosure.json";
 import ms_plinest from "./ms/plinest.json";
@@ -112,6 +114,7 @@ export const translations: Record<"zh" | "ms", Record<string, unknown>> = {
     "nctf": zh_nctf,
     "oligio": zh_oligio,
     "onda-coolwaves": zh_onda_coolwaves,
+    "onda-face": zh_onda_face,
     "picocare": zh_picocare,
     "picosure": zh_picosure,
     "plinest": zh_plinest,
@@ -156,6 +159,7 @@ export const translations: Record<"zh" | "ms", Record<string, unknown>> = {
     "nctf": ms_nctf,
     "oligio": ms_oligio,
     "onda-coolwaves": ms_onda_coolwaves,
+    "onda-face": ms_onda_face,
     "picocare": ms_picocare,
     "picosure": ms_picosure,
     "plinest": ms_plinest,

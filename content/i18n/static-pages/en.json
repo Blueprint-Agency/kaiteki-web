@@ -119,6 +119,19 @@
       "waOrder": "Hi Kaiteki, I'd like to order {name}.",
       "readMore": "Read more",
       "readLess": "Read less"
+    },
+    "detail": {
+      "ctaHero": "Ask about this product on WhatsApp",
+      "waAsk": "Hi Kaiteki, I'd like to ask about {name}.",
+      "imageAlt": "{name} ({category}), skincare at Kaiteki Skin Aesthetic Clinic",
+      "glance": "At a glance",
+      "priceLabel": "Price",
+      "ingredientLabel": "Key ingredient",
+      "typeLabel": "Type",
+      "featuresLabel": "Features",
+      "backToAll": "Back to all products",
+      "viewDetails": "Product details",
+      "viewDetailsLabel": "{name}: product details"
     }
   },
   "privacy": {

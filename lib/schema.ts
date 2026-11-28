@@ -246,6 +246,79 @@ export function webPageNode({
   };
 }
 
+/**
+ * A /products/[slug] page: an ItemPage whose main entity is a schema.org
+ * Product (brand, image, description, category) with an Offer. The Offer is
+ * marked up because the price is rendered on the page, exactly as the /products
+ * hub marks up the same price on its cards (only visible content is marked up).
+ * Never Review/AggregateRating, FAQPage or HowTo (see the note at the top of
+ * this file). `path` is locale-neutral, as everywhere else.
+ */
+export function productPageGraph({
+  path,
+  name,
+  pageName = name,
+  description,
+  pageDescription = description,
+  image,
+  brand,
+  category,
+  price,
+  locale = defaultLocale,
+}: {
+  path: string;
+  /** The product's name. */
+  name: string;
+  /** The page's title, when it differs (the SEO title). */
+  pageName?: string;
+  /** The product's description. */
+  description: string;
+  /** The page's meta description, when it differs. */
+  pageDescription?: string;
+  image?: string;
+  brand: string;
+  category: string;
+  /** MYR, as shown on the page. */
+  price: number;
+  locale?: Locale;
+}) {
+  const url = abs(localePath(locale, path));
+  const productId = `${url}#product`;
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ItemPage",
+        "@id": `${url}#webpage`,
+        url,
+        name: pageName,
+        description: pageDescription,
+        inLanguage: localeMeta[locale].bcp47,
+        isPartOf: { "@id": websiteId },
+        mainEntity: { "@id": productId },
+        ...(image ? { primaryImageOfPage: abs(image) } : {}),
+      },
+      {
+        "@type": "Product",
+        "@id": productId,
+        name,
+        url,
+        description,
+        ...(image ? { image: abs(image) } : {}),
+        brand: { "@type": "Brand", name: brand },
+        category,
+        offers: {
+          "@type": "Offer",
+          price,
+          priceCurrency: "MYR",
+          url,
+          seller: { "@id": orgId },
+        },
+      },
+    ],
+  };
+}
+
 /** Author/reviewer identity for a blog post — a credentialed Person, inlined
  *  rather than referenced, because cross-page @id refs don't resolve reliably in
  *  Google's parser (same reasoning as medicalWebPageNode's `reviewer`). */

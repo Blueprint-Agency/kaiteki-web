@@ -2503,6 +2503,7 @@ export const concerns: Concern[] = [
       "vascular-pigment-laser",
       "radiofrequency",
       "dermal-fillers",
+      "panda-eye-treatment",
     ],
     reviewedBy: "dr-lim-xiao-chien",
     lastReviewed: "2026-06-14",
@@ -2693,6 +2694,13 @@ export const concerns: Concern[] = [
       "dermal-fillers": {
         why: "For the hollow that casts the shadow",
         body: "Small volumes placed deeply to soften a groove between lid and cheek.",
+      },
+      // 2026-11-28: the collagen route for a hollow, now its own treatment page
+      // with a card here. It replaces the treatmentsNote that named the page in
+      // prose while it was a technology page; this line restates that note.
+      "panda-eye-treatment": {
+        why: "For a hollow where filler is a poor fit",
+        body: "Injectable collagen with no hyaluronic acid, which a doctor may discuss where the area already tends to look puffy.",
       },
     },
 

@@ -5,6 +5,7 @@ import { doctors } from "@/content/data/doctors";
 import { concerns } from "@/content/data/concerns";
 import { branches } from "@/content/data/branches";
 import { technology } from "@/content/data/technology";
+import { productsWithPage } from "@/content/data/products";
 import { posts, activeCategories, categorySlug } from "@/content/data/blog";
 import { localePath } from "@/lib/i18n";
 import { hreflangFor, liveLocaleEntries } from "@/lib/locale-pages";
@@ -37,6 +38,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...concerns.map((c) => ({ path: `/concerns/${c.slug}`, lastmod: c.lastReviewed })),
     ...branches.map((b) => ({ path: `/locations/${b.slug}` })),
     ...technology.map((t) => ({ path: `/technology/${t.slug}`, lastmod: t.lastReviewed })),
+    // Only products with a detail page; the rest are cards on /products. No
+    // lastmod: product pages carry no review date.
+    ...productsWithPage.map((p) => ({ path: `/products/${p.slug}` })),
     // Posts carry a real publish/review date, so they get a truthful lastmod.
     // Category archives don't — their contents change, the page itself doesn't.
     ...posts.map((p) => ({ path: `/blog/${p.slug}`, lastmod: p.updatedAt ?? p.publishedAt })),

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ProductCard, type ProductCardCopy } from "./cards";
+import { ProductCard, type ProductCardCopy, type ProductCardDetail } from "./cards";
 import { CardRow } from "./CardRow";
 import { FilterTabs } from "./FilterTabs";
 import { products, productGroups } from "@/content/data/products";
@@ -23,10 +23,13 @@ const GROUP_INTRO: Record<ProductGroup, string> = {
 export function SkincareExplorer({
   copy,
   cards,
+  details,
 }: {
   /** Tab labels and group intros in a non-English locale. */
   copy?: { all: string; groups: Record<string, string>; intros: Record<string, string> };
   cards?: Record<string, ProductCardCopy>;
+  /** Detail-page links by product slug: only products that have a page. */
+  details?: Record<string, ProductCardDetail>;
 } = {}) {
   const [filter, setFilter] = useState<Filter>("All");
   const tabs: Filter[] = ["All", ...productGroups];
@@ -48,7 +51,7 @@ export function SkincareExplorer({
       )}
       <CardRow className="mt-8">
         {shown.map((p) => (
-          <ProductCard key={p.slug} p={p} copy={cards?.[p.slug]} />
+          <ProductCard key={p.slug} p={p} copy={cards?.[p.slug]} detail={details?.[p.slug]} />
         ))}
       </CardRow>
     </div>

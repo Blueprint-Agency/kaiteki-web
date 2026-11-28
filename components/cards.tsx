@@ -354,8 +354,9 @@ export function ProductMotif({ slug, className = "" }: { slug: string; className
   );
 }
 
-/** Skincare product tile. Not a link (single hub, no per-product pages); the
- *  action is a WhatsApp order deep-link. Photo-led layout (2026-07): a prominent
+/** Skincare product tile. Not a link as a whole: the action is a WhatsApp order
+ *  deep-link, plus a text link to the detail page (`detail`) for the few
+ *  products that have one. Photo-led layout (2026-07): a prominent
  *  product-image band, then category, name, a chip row (a "best for" pill plus
  *  active-ingredient pills), a 2-line description that expands in place via
  *  ExpandableText, and a bold price above a full-width "Order Now" button. No
@@ -379,12 +380,16 @@ export type ProductCardCopy = {
   readLess: string;
 };
 
+/** A link through to a product's detail page, for the few products that have one. */
+export type ProductCardDetail = { href: string; label: string; ariaLabel: string };
+
 export function ProductCard({
   p,
   copy,
+  detail,
   className = "",
   style,
-}: { p: Product; copy?: ProductCardCopy } & Extra) {
+}: { p: Product; copy?: ProductCardCopy; detail?: ProductCardDetail } & Extra) {
   const category = copy?.category ?? p.category;
   const bestFor = copy ? copy.bestFor : p.bestFor;
   const priceNote = copy ? copy.priceNote : p.priceNote;
@@ -450,6 +455,16 @@ export function ProductCard({
             extra={highlights}
             {...(copy ? { labels: { more: copy.readMore, less: copy.readLess } } : {})}
           />
+          {detail && (
+            <Link
+              href={detail.href}
+              aria-label={detail.ariaLabel}
+              className="group/detail mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-espresso"
+            >
+              {detail.label}
+              <ArrowRight size={14} className="transition-transform group-hover/detail:translate-x-0.5" />
+            </Link>
+          )}
         </div>
 
         <div className="mt-auto pt-5">
@@ -488,6 +503,7 @@ export function TechnologyCard({
   typeLabel,
   name = x.name,
   summary = x.summary,
+  imageAlt = x.imageAlt,
   href = `/technology/${x.slug}`,
   learnMore = "Learn more",
   usedIn,
@@ -505,6 +521,9 @@ export function TechnologyCard({
   name?: string;
   /** null hides it (locale pages: the summary is English-only data). */
   summary?: string | null;
+  /** What the photo shows. Defaults to the record's own imageAlt (English when a
+   *  locale's translation is not live), then to a generic alt built from the name. */
+  imageAlt?: string;
   href?: string;
 } & Extra) {
   const powers = treatmentsOfTechnology(x.slug);
@@ -515,7 +534,7 @@ export function TechnologyCard({
           <div className="relative aspect-[16/10] overflow-hidden bg-tint">
             <Image
               src={x.image}
-              alt={`${name}${x.device ? ` (${x.device})` : ""}, aesthetic technology at Kaiteki Skin Aesthetic Clinic`}
+              alt={imageAlt ?? `${name}${x.device ? ` (${x.device})` : ""}, aesthetic technology at Kaiteki Skin Aesthetic Clinic`}
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"

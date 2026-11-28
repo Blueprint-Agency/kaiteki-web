@@ -4,8 +4,8 @@ import { SkincareExplorer } from "@/components/SkincareExplorer";
 import { PromoModal } from "@/components/PromoModal";
 import { WhatsAppButton } from "@/components/WhatsAppCTA";
 import { JsonLd } from "@/components/JsonLd";
-import type { ProductCardCopy } from "@/components/cards";
-import { products } from "@/content/data/products";
+import type { ProductCardCopy, ProductCardDetail } from "@/components/cards";
+import { products, productsWithPage } from "@/content/data/products";
 import { productCopy, staticPages } from "@/content/i18n/static-pages";
 import { homeCopy } from "@/content/i18n/home";
 import { concernUi } from "@/content/i18n/concern-ui";
@@ -55,11 +55,28 @@ function cardsFor(locale: Locale): Record<string, ProductCardCopy> | undefined {
   );
 }
 
+/** Links to the detail page, for the products that have one and whose page is
+ *  live in this locale (lhref falls back to the English page otherwise). */
+function detailsFor(locale: Locale): Record<string, ProductCardDetail> {
+  const k = staticPages[locale].products.detail;
+  return Object.fromEntries(
+    productsWithPage.map((p) => [
+      p.slug,
+      {
+        href: lhref(locale, `/products/${p.slug}`),
+        label: k.viewDetails,
+        ariaLabel: fmt(k.viewDetailsLabel, { name: p.name }),
+      },
+    ]),
+  );
+}
+
 // Bespoke rather than collectionPageNode(): these children are Products with
 // visible RM prices, so each needs Brand + Offer, which the generic hub builder
-// deliberately doesn't carry. Products have no detail route — the ItemList item
-// URL is the hub anchor. Offer prices are marked up because they are rendered
-// on the card (SD policy: only mark up visible content).
+// deliberately doesn't carry. A product with a detail page points its ItemList
+// item at that page; the rest point at the hub anchor. Offer prices are marked
+// up because they are rendered on the card (SD policy: only mark up visible
+// content).
 function collectionJsonLd(locale: Locale, cards: Record<string, ProductCardCopy> | undefined) {
   const k = staticPages[locale].products;
   const url = `${site.url}${localePath(locale, "/products")}`;
@@ -82,7 +99,7 @@ function collectionJsonLd(locale: Locale, cards: Record<string, ProductCardCopy>
         item: {
           "@type": "Product",
           name: p.name,
-          url: `${url}#${p.slug}`,
+          url: p.page ? `${site.url}${lhref(locale, `/products/${p.slug}`)}` : `${url}#${p.slug}`,
           // Product photos live on the CDN as absolute URLs; prefixing the site
           // host (as this used to) produced an invalid image URL.
           ...(p.image ? { image: p.image.startsWith("http") ? p.image : `${site.url}${p.image}` } : {}),
@@ -93,7 +110,6 @@ function collectionJsonLd(locale: Locale, cards: Record<string, ProductCardCopy>
             "@type": "Offer",
             price: p.price,
             priceCurrency: "MYR",
-            availability: "https://schema.org/InStock",
             url,
             seller: { "@id": orgId },
           },
@@ -134,7 +150,7 @@ export function ProductsHub({ locale }: { locale: Locale }) {
       </section>
 
       <div className="mt-12">
-        <SkincareExplorer {...(en ? {} : { copy: k.explorer, cards })} />
+        <SkincareExplorer {...(en ? {} : { copy: k.explorer, cards })} details={detailsFor(locale)} />
       </div>
 
       <p className="mt-14 text-sm text-ink-500">{k.pricesNote}</p>

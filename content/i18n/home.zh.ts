@@ -34,6 +34,18 @@ export const homeZh: HomeCopy = {
   },
   // No badges: "the most … in Malaysia" is a superlative, and 全马最多 would
   // double it (docs/18 §8.1). Restore as a stated count once one is verified.
+  bestSellers: {
+    h2: "热销 Top 5",
+    sub: "五个入门之选，每项疗程都先由医生评估。",
+    learnMore: "了解更多",
+    items: [
+      { title: "Deusaderm 熊猫眼疗程" },
+      { title: "K Premium Lifting", sub: "Ultherapy + Oligio X 非手术提拉" },
+      { title: "Onda Face", sub: "微波面部紧致" },
+      { title: "Juvelook Advance 水光针" },
+      { title: "Kaiteki® DoubleBlock UV Sunscreen", sub: "SPF 50 面部防晒霜" },
+    ],
+  },
   concerns: {
     h2: "你想改善哪一个皮肤问题？",
     sub: "告诉我们你的困扰，医生会先评估，再建议是否需要疗程。",

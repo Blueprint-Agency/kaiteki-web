@@ -9,7 +9,8 @@
     "skin-booster",
     "vascular-pigment-laser",
     "radiofrequency",
-    "dermal-fillers"
+    "dermal-fillers",
+    "panda-eye-treatment"
   ],
   "reviewedBy": "dr-lim-xiao-chien",
   "lastReviewed": "2026-06-14",
@@ -179,6 +180,10 @@
     "dermal-fillers": {
       "why": "Untuk lekuk yang menghasilkan bayang-bayang",
       "body": "Isi padu kecil diletakkan di lapisan dalam untuk melembutkan alur antara kelopak mata dan pipi."
+    },
+    "panda-eye-treatment": {
+      "why": "Untuk lekuk yang kurang sesuai untuk filler",
+      "body": "Suntikan kolagen tanpa asid hialuronik, yang mungkin dibincangkan oleh doktor jika kawasan itu memang mudah kelihatan sembap."
     }
   },
   "compare": {

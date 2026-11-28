@@ -239,7 +239,7 @@ function missingVs(en: unknown, tr: unknown, path = ""): string[] {
   return [];
 }
 const doctorSnapshot = (d: (typeof doctors)[number]) => ({ fullName: d.fullName, role: d.role ?? null, bio: d.bio ?? null, seoTitle: d.seoTitle ?? null, seoDescription: d.seoDescription ?? null });
-const productSnapshot = (p: (typeof products)[number]) => ({ name: p.name, brand: p.brand, category: p.category, summary: p.summary, bestFor: p.bestFor ?? null, ingredients: p.ingredients ?? null, highlights: p.highlights ?? null, priceNote: p.priceNote ?? null });
+const productSnapshot = (p: (typeof products)[number]) => ({ name: p.name, brand: p.brand, category: p.category, summary: p.summary, bestFor: p.bestFor ?? null, ingredients: p.ingredients ?? null, highlights: p.highlights ?? null, priceNote: p.priceNote ?? null, ...(p.page ? { page: p.page } : {}) });
 for (const [what, snap, now] of [
   ["doctors", doctorsSnapshotEn, Object.fromEntries(doctors.map((d) => [d.slug, doctorSnapshot(d)]))],
   ["products", productsSnapshotEn, Object.fromEntries(products.map((p) => [p.slug, productSnapshot(p)]))],
@@ -270,6 +270,7 @@ for (const locale of LOCALES) {
     const m = missingVs(productSnapshot(p), c);
     if (m.length) fail(where, "L-01", `${m.length} untranslated: ${m.slice(0, 5).join(", ")}`);
     checkCopy(where, locale, c);
+    if (p.page) checkSeo(where, locale, c?.page ?? {});
   }
   console.log(`static-pages/${locale}: 4 pages, ${doctors.length} doctors, ${products.length} products checked`);
 }

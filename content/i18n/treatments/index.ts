@@ -9,10 +9,12 @@ import zh_facial_treatments from "./zh/facial-treatments.json";
 import zh_fat_freezing from "./zh/fat-freezing.json";
 import zh_fotona_4d from "./zh/fotona-4d.json";
 import zh_hifu from "./zh/hifu.json";
+import zh_k_premium_lifting from "./zh/k-premium-lifting.json";
 import zh_laser_hair_removal from "./zh/laser-hair-removal.json";
 import zh_microneedling from "./zh/microneedling.json";
 import zh_microwave_contouring from "./zh/microwave-contouring.json";
 import zh_muscle_stimulation from "./zh/muscle-stimulation.json";
+import zh_panda_eye_treatment from "./zh/panda-eye-treatment.json";
 import zh_pico_laser from "./zh/pico-laser.json";
 import zh_radiofrequency from "./zh/radiofrequency.json";
 import zh_resurfacing_laser from "./zh/resurfacing-laser.json";
@@ -28,10 +30,12 @@ import ms_facial_treatments from "./ms/facial-treatments.json";
 import ms_fat_freezing from "./ms/fat-freezing.json";
 import ms_fotona_4d from "./ms/fotona-4d.json";
 import ms_hifu from "./ms/hifu.json";
+import ms_k_premium_lifting from "./ms/k-premium-lifting.json";
 import ms_laser_hair_removal from "./ms/laser-hair-removal.json";
 import ms_microneedling from "./ms/microneedling.json";
 import ms_microwave_contouring from "./ms/microwave-contouring.json";
 import ms_muscle_stimulation from "./ms/muscle-stimulation.json";
+import ms_panda_eye_treatment from "./ms/panda-eye-treatment.json";
 import ms_pico_laser from "./ms/pico-laser.json";
 import ms_radiofrequency from "./ms/radiofrequency.json";
 import ms_resurfacing_laser from "./ms/resurfacing-laser.json";
@@ -50,10 +54,12 @@ export const translations: Record<"zh" | "ms", Record<string, unknown>> = {
     "fat-freezing": zh_fat_freezing,
     "fotona-4d": zh_fotona_4d,
     "hifu": zh_hifu,
+    "k-premium-lifting": zh_k_premium_lifting,
     "laser-hair-removal": zh_laser_hair_removal,
     "microneedling": zh_microneedling,
     "microwave-contouring": zh_microwave_contouring,
     "muscle-stimulation": zh_muscle_stimulation,
+    "panda-eye-treatment": zh_panda_eye_treatment,
     "pico-laser": zh_pico_laser,
     "radiofrequency": zh_radiofrequency,
     "resurfacing-laser": zh_resurfacing_laser,
@@ -71,10 +77,12 @@ export const translations: Record<"zh" | "ms", Record<string, unknown>> = {
     "fat-freezing": ms_fat_freezing,
     "fotona-4d": ms_fotona_4d,
     "hifu": ms_hifu,
+    "k-premium-lifting": ms_k_premium_lifting,
     "laser-hair-removal": ms_laser_hair_removal,
     "microneedling": ms_microneedling,
     "microwave-contouring": ms_microwave_contouring,
     "muscle-stimulation": ms_muscle_stimulation,
+    "panda-eye-treatment": ms_panda_eye_treatment,
     "pico-laser": ms_pico_laser,
     "radiofrequency": ms_radiofrequency,
     "resurfacing-laser": ms_resurfacing_laser,

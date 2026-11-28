@@ -4,7 +4,8 @@
   "group": "Lifting & Tightening",
   "type": "device",
   "treatments": [
-    "ultherapy"
+    "ultherapy",
+    "k-premium-lifting"
   ],
   "image": "https://cdn.kaiteki.my/images/technology/ultherapy-system.jpg",
   "device": "Ultherapy",
@@ -44,6 +45,12 @@
       "body": [
         "Merz describes DeepSEE transducers that treat at three depths (approximately 1.5 mm in the superficial dermis, 3.0 mm in the deeper dermis and 4.5 mm at the level of the SMAS fascia), so the doctor can choose the layer rather than treating one fixed plane. The SMAS (superficial muscular aponeurotic system) is the deeper support layer of the face: the same layer a surgical facelift addresses, though focused ultrasound reaches it without incisions.",
         "The manufacturer states that the system visualises tissue to a depth of around 8 mm, which is what lets the doctor confirm the plane on screen before each line is delivered."
+      ],
+      "links": [
+        {
+          "label": "K Premium Lifting: Ultherapy paired with Oligio X radiofrequency",
+          "href": "/treatments/k-premium-lifting"
+        }
       ]
     },
     {

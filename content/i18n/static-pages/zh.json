@@ -135,6 +135,19 @@
       "waOrder": "你好 Kaiteki，我想订购 {name}。",
       "readMore": "展开阅读",
       "readLess": "收起"
+    },
+    "detail": {
+      "ctaHero": "通过 WhatsApp 咨询这款产品",
+      "waAsk": "你好 Kaiteki，我想咨询 {name}。",
+      "imageAlt": "{name}（{category}），Kaiteki 皮肤医美诊所护肤品",
+      "glance": "产品速览",
+      "priceLabel": "价格",
+      "ingredientLabel": "主要成分",
+      "typeLabel": "类型",
+      "featuresLabel": "特点",
+      "backToAll": "返回所有产品",
+      "viewDetails": "产品详情",
+      "viewDetailsLabel": "{name}：产品详情"
     }
   },
   "privacy": {

@@ -771,6 +771,236 @@ export const treatments: Treatment[] = [
     reviewedBy: "dr-jamie-gan",
     lastReviewed: "2026-06-18",
   },
+  {
+    // Kaiteki's own name for a plan that pairs two devices with pages of their
+    // own (/technology/ultherapy-system, /technology/oligio, which list this
+    // page through their `treatments` edge). Moved here from
+    // /technology/k-premium-lifting on 2026-11-28, before it went live: it is a
+    // treatment plan, not a device. Copy simplified the same day (shorter
+    // sentences, each hedge stated once). Device facts (depths, frequency,
+    // cooling, contraindications, recovery) are reused from those two pages and
+    // the RF and Ultherapy treatment pages; nothing here is new about either
+    // device. Combination evidence, checked 2026-11-28 and described by design
+    // only, never by outcome percentage:
+    //  - Kwon HH et al., J Cosmet Laser Ther 2018;20(7-8):449-453,
+    //    doi:10.1080/14764172.2018.1427870 (22 patients, monopolar RF then
+    //    focused ultrasound in one session, 20-week follow-up, no control).
+    //  - Khong SJML et al., Malays J Med Sci 2024;31(1):114-123,
+    //    doi:10.21315/mjms2024.31.1.10 (retrospective, 56 patients, Jeisys
+    //    HIFU + monopolar RF, no control).
+    //  - Choi WJ et al., Dermatol Surg 2025;51(9S):S49-S53,
+    //    doi:10.1097/DSS.0000000000004794 (split-face, 24 patients, same-day
+    //    Classys Volnewmer RF and Shurink Universe HIFU in both orders, day 90).
+    // Not cited on the page: Wang R et al., J Cosmet Dermatol 2025;24(10):e70455,
+    // doi:10.1111/jocd.70455 (MFU + microneedle RF, a different kind of RF).
+    // None tested Ultherapy with Oligio X (Kwon's device brands are not in the
+    // abstract, so the page does not say they were "other devices"). Order,
+    // spacing and session length are left to the doctor: the client has not
+    // described a protocol. The "K" is the package name only: no country or
+    // ranking claim.
+    slug: "k-premium-lifting",
+    durationDowntime: "Varies by plan · Back to normal the same day for most",
+    name: "K Premium Lifting",
+    category: "Lifting & Tightening",
+    // No photography of the combined plan exists. Ultherapy's earlier hero
+    // (an ultrasound handpiece on the jaw) stands in, so the two cards that sit
+    // side by side on the hub do not share one photograph.
+    image: "https://cdn.kaiteki.my/treatments/ultherapy/hero.jpg",
+    imageAlt: "A practitioner holds an ultrasound handpiece along a patient's jaw, with the device's screen behind",
+    summary:
+      "Kaiteki's non-surgical lifting plan pairing Ultherapy ultrasound for deeper layers with Oligio X radiofrequency for the skin above.",
+    leadAnswer:
+      "K Premium Lifting is Kaiteki's non-surgical lifting plan using two devices on one face. Ultherapy's micro-focused ultrasound treats deeper layers, including the SMAS. Oligio X's monopolar radiofrequency heats the skin layer above. One doctor plans both. No published study has tested this pairing, so the case rests on the different depths each reaches.",
+    related: ["ultherapy", "radiofrequency", "hifu", "dermal-fillers"],
+    // Reviewer assigned: dr-chew-yuhhui, who reviewed both device pages (and
+    // the locale drafts in content/i18n/pages.ts name her). No byline until she
+    // has read this page: then set reviewedBy and lastReviewed, and delete the
+    // check:links exemption for the reviewer.
+    reviewedBy: "",
+    lastReviewed: "",
+    seoTitle: "K Premium Lifting: Ultherapy + Oligio X Malaysia | Kaiteki",
+    seoDescription:
+      "K Premium Lifting pairs Ultherapy ultrasound with Oligio X radiofrequency for non-surgical lifting in Malaysia. Who it suits, the evidence, recovery and risks.",
+    typicalSessions: "Ultherapy often once; Oligio X often 2–3 sessions",
+    facts: [
+      { value: "Ultherapy + Oligio X", label: "Two devices, planned together by one doctor" },
+      { value: "Two depths", label: "Ultrasound down to the SMAS, radiofrequency in the dermis above" },
+      { value: "Assessment first", label: "Your first visit is a doctor consultation, not a treatment" },
+    ],
+
+    // T-07 — what each device does, linked to its own page. Never a ranking.
+    variantModule: {
+      heading: "What does each device do?",
+      intro: "Each device works at a different depth.",
+      items: [
+        {
+          eyebrow: "Micro-focused ultrasound · Merz Aesthetics",
+          title: "Ultherapy",
+          body: "Places points of heat at about 1.5, 3.0 or 4.5 mm, the deepest at the SMAS. The doctor checks each layer on screen first.",
+          href: "/technology/ultherapy-system",
+          hrefLabel: "About the Ultherapy System",
+        },
+        {
+          eyebrow: "Monopolar radiofrequency · Wontech",
+          title: "Oligio X",
+          body: "Sends 6.78 MHz current through a tip that cools the surface, warming the dermis shot by shot.",
+          href: "/technology/oligio",
+          hrefLabel: "About Oligio X",
+        },
+      ],
+    },
+
+    ctaMid: {
+      heading: "Not sure whether you need one device or both?",
+      body: "A doctor can see where your sagging sits and tell you if one device would be enough.",
+    },
+
+    // T-09 — the two device pages' contraindications, merged.
+    avoidIf: [
+      { lead: "Pregnancy or breastfeeding.", body: "" },
+      { lead: "A pacemaker, defibrillator or other implanted electronic device.", body: "" },
+      { lead: "Metal implants, or recently placed fillers or threads,", body: "in the treatment area." },
+      { lead: "Infection, open wounds or inflamed acne", body: "in the treatment area." },
+      { lead: "A tendency to keloid scarring.", body: "" },
+      { lead: "A bleeding disorder, blood thinners or certain autoimmune conditions.", body: "" },
+      { lead: "Recent retinoids or peels,", body: "which affect timing." },
+    ],
+    bringToConsult:
+      "Tell your doctor about any implants, fillers or threads in your face, and the medicines you take.",
+
+    // T-10 — step 1 states the first visit is not a treatment.
+    sessionSteps: [
+      {
+        title: "Consultation and assessment",
+        body: "Your first visit is a consultation, not a treatment. A doctor checks where your sagging sits and whether you need both devices.",
+      },
+      {
+        title: "Mapping the face",
+        body: "Ultrasound and radiofrequency areas are marked separately, and the doctor sets the order. Numbing cream is available.",
+      },
+      {
+        title: "Oligio X",
+        body: "The cooled tip moves across the face shot by shot. Most people feel short bursts of warmth.",
+      },
+      {
+        title: "Ultherapy",
+        body: "The doctor checks each layer on screen, then delivers lines of focused points. Expect brief, deep prickling, stronger over bone.",
+      },
+      {
+        title: "Review",
+        body: "A review a few months later checks how your skin has responded, and whether more RF sessions would help.",
+      },
+    ],
+
+    // T-11 — physical recovery only, never a timeframe to a result.
+    afterSession: {
+      intro: "Most people go back to normal activities the same day.",
+      bands: [
+        { title: "The first hours", body: "Redness and warmth usually settle within hours." },
+        {
+          title: "Days to a few weeks",
+          body: "Tenderness, slight swelling or a firm feeling under the skin can last days to a few weeks.",
+        },
+      ],
+      aftercare: "Wear sunscreen daily, and avoid saunas and strong heat for the short period your doctor advises.",
+    },
+
+    // T-12 — the pigment note is reviewed text from the Ultherapy and RF pages.
+    risks: {
+      intro: "A combined plan carries the risks of both devices.",
+      common:
+        "Short-lived redness, warmth and swelling; tenderness or a firm feeling under the skin; bruising or welts along the ultrasound lines; temporary numbness or tingling.",
+      lessCommon:
+        "Temporary nerve effects, such as localised muscle weakness, from the ultrasound. Blistering or a burn from the radiofrequency.",
+      pigmentNote:
+        "Neither device targets skin pigment, so both are used across skin tones, including Asian skin. The radiofrequency can, less commonly, cause a pigment change.",
+      cannotDo: [
+        "It does not replace lost volume. A hollow face usually needs fillers or bio-stimulators.",
+        "It does not remove fat, such as fullness under the chin that is mainly fat.",
+        "It does not cut, lift or remove skin. For advanced sagging, surgery is the honest comparison.",
+      ],
+      disclose: "Your doctor goes through these risks and your medical history before anything is booked.",
+    },
+
+    // T-13 — factors only, no figures (settled 2026-09-20).
+    costFactors: {
+      heading: "What affects the price of K Premium Lifting?",
+      intro:
+        "The price is set at consultation, once your plan is mapped. What moves it:",
+      factors: [
+        "Which areas get ultrasound or radiofrequency, and how much each needs.",
+        "The number of ultrasound lines and radiofrequency shots.",
+        "Whether it is done in one visit or several.",
+        "Whether extra RF sessions or later maintenance are part of the plan.",
+      ],
+    },
+
+    relatedReasons: {
+      ultherapy: "Ultherapy alone, where the deeper layer is the main problem.",
+      radiofrequency: "Radiofrequency alone, Oligio X included, where the skin layer is the main problem.",
+      hifu: "Focused ultrasound on devices without on-screen imaging.",
+      "dermal-fillers": "Fillers replace lost volume, which energy devices do not.",
+    },
+
+    sections: [
+      {
+        heading: "What is K Premium Lifting?",
+        body: [
+          "K Premium Lifting is Kaiteki's name for a treatment plan, not a separate machine or a manufacturer's protocol. It uses two devices the clinic already has: the Ultherapy System from Merz Aesthetics and Oligio X from Wontech.",
+        ],
+      },
+      {
+        heading: "Why combine ultrasound and radiofrequency?",
+        body: [
+          "Sagging often involves more than one layer, and each device reaches a different one. Ultherapy heats deep, as far as the SMAS, the support layer a facelift works on. Oligio X heats the dermis, the skin layer above.",
+          "Using both is about reaching more layers, not extra strength. There is no evidence that two devices give a faster or bigger change than one.",
+        ],
+      },
+      {
+        heading: "Who is K Premium Lifting for?",
+        body: [
+          "K Premium Lifting is generally considered for mild to moderate sagging in both the deeper support and the skin above it. It suits people with reasonable skin quality who want an option without incisions. A doctor decides at consultation.",
+        ],
+        list: [
+          "Early jowls and a softer jawline",
+          "Loose skin under the chin and on the upper neck",
+          "Sagging around the nose-to-mouth folds",
+          "A heavier brow line, assessed individually",
+          "Loss of firmness across the cheeks",
+        ],
+      },
+      {
+        heading: "Is there evidence for combining Ultherapy and Oligio X?",
+        body: [
+          "No published study has tested Ultherapy and Oligio X together. The plan rests on how each device works and on its own studies.",
+          "A few small studies have paired monopolar RF with focused ultrasound, but none used these two devices. All were short, so they show the pairing has been tried, not what it will do for your face.",
+        ],
+        list: [
+          "2018, Journal of Cosmetic and Laser Therapy: 22 adults had both in one session. Laxity scores improved with no serious side effects, but there was no comparison group.",
+          "2024, Malaysian Journal of Medical Sciences: a look back at 56 patients treated with both at one Malaysian clinic. Findings were similar, with no comparison group.",
+          "2025, Dermatologic Surgery: 24 adults had RF first on one side of the face and ultrasound first on the other. Both sides improved, and the better order stayed unclear.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Is K Premium Lifting a non-surgical facelift?",
+        a: "No. Ultherapy reaches the SMAS, the layer a facelift works on, but any change is gradual and partial, not comparable to surgery.",
+      },
+      {
+        q: "Are Ultherapy and Oligio X done on the same day?",
+        a: "They can be, or they can be spread across visits. Ultherapy is usually one session, while Oligio X is often two to three sessions a few weeks apart. Your doctor decides based on your skin, the areas and your comfort.",
+      },
+      {
+        q: "How soon will I see a change, and how long does it last?",
+        a: "Any change builds slowly as collagen remodels, usually over two to six months after the ultrasound, and it varies between people. It does not stop the skin from ageing, so maintenance is considered over time.",
+      },
+      {
+        q: "Can fillers or other injectables be part of the same plan?",
+        a: "Yes, where lost volume is part of the picture. Recent fillers or threads in the ultrasound's path must be taken into account, so your doctor sets the order and spacing.",
+      },
+    ],
+  },
   { slug: "fotona-4d", durationDowntime: "30-60 min · No downtime", name: "Fotona Laser", category: "Lasers", image: "https://cdn.kaiteki.my/treatments/fotona-4d/hero.jpg", procedureImages: [{ src: "https://cdn.kaiteki.my/treatments/fotona-4d/procedure-01.jpg", caption: "A doctor holds the laser handpiece above the patient's cheek during a session." }, { src: "https://cdn.kaiteki.my/treatments/fotona-4d/procedure-02.jpg", caption: "A doctor steadies the patient's face while guiding the laser handpiece." }, { src: "https://cdn.kaiteki.my/treatments/fotona-4d/procedure-03.jpg", caption: "A practitioner works inside the mouth area with a laser handpiece." }], device: "Fotona", summary: "A multi-application Nd:YAG/Er:YAG laser platform, most often used at Kaiteki for its Fotona 4D facial-firming protocol.", leadAnswer: "Fotona Laser is Kaiteki's Fotona SP Dynamis / TimeWalker platform, an Nd:YAG and Er:YAG laser system with several application modes. Its main facial protocol, Fotona 4D, combines four modes — one delivered from inside the mouth — for facial firmness and skin-quality concerns. A doctor decides which modes, if any, suit you.", related: ["hifu", "ultherapy"], reviewedBy: "dr-jen-meng", lastReviewed: "2026-06-15", seoTitle: "Fotona 4D Laser Skin Tightening Malaysia | Kaiteki", seoDescription: "Fotona 4D is a multi-mode laser used for facial firming and skin quality, doctor-assessed at Kaiteki clinics in Malaysia. Book a free consultation on WhatsApp.",
     // docs/15 item 3.6 (2026-10-11): the v2 block set, applied under docs/16 R1.
     // Two prose sections kept; the rest became typed blocks and were deleted.
@@ -2200,6 +2430,215 @@ export const treatments: Treatment[] = [
       {
         q: "How many sessions will I need?",
         a: "Usually a short course spaced several weeks apart, sometimes with periodic maintenance afterwards.",
+      },
+    ],
+  },
+  // ── 2026-11-28: the under-eye use of Deusaderm, a client best seller with its
+  // own search ("panda eye treatment"). Written the same day as
+  // /technology/deusaderm-panda-eye and moved here before going live: it is a
+  // treatment for one concern using one product, not a technology. Same verified
+  // facts as /technology/deusaderm; no new study, figure or claim. Copy
+  // simplified on the move (plain words, each caveat stated once). No under-eye
+  // photography exists and the product cover sits outside the treatments/ media
+  // prefix (Q-14), so the page has no hero image yet.
+  // Reviewer assigned: dr-jacqueline-tan, as for /technology/deusaderm. Until she
+  // has read this page, `reviewedBy` and `lastReviewed` stay empty, so no byline,
+  // schema reviewer or doctor-profile listing claims a review that has not
+  // happened. Then set both and delete the check:links exemption.
+  {
+    slug: "panda-eye-treatment",
+    durationDowntime: "Brief injection · Bruising can last a week or more",
+    name: "Deusaderm Panda Eye Treatment",
+    category: "Injectables",
+    summary:
+      "Deusaderm collagen under the eyes, considered for dark circles caused mainly by hollowing and thin skin, not pigment or blood vessels.",
+    leadAnswer:
+      "Deusaderm panda eye treatment injects small amounts of cross-linked, pig-derived collagen under the eyes. It aims to soften a hollow that casts a shadow, often where the skin is thin. It does not treat brown pigment or visible blood vessels, so a doctor first checks what is causing your dark circles.",
+    related: ["dermal-fillers", "skin-booster", "vascular-pigment-laser"],
+    reviewedBy: "",
+    lastReviewed: "",
+    seoTitle: "Panda Eye Treatment Malaysia: Deusaderm Collagen | Kaiteki",
+    seoDescription:
+      "Deusaderm panda eye treatment in Malaysia: collagen for dark circles caused by under-eye hollows. How doctors assess them, the risks and who should avoid it.",
+    typicalSessions: "One session, then a review",
+    facts: [
+      { value: "Hollowing and thin skin", label: "Dark circles it is considered for" },
+      { value: "Collagen, no hyaluronic acid", label: "What is injected" },
+      { value: "Cannot be dissolved", label: "Reversibility" },
+    ],
+
+    // T-07 — the one choice this page exists to explain, with the product page
+    // and the alternative linked. Former FAQ, promoted so the body says it once.
+    variantModule: {
+      heading: "Deusaderm or hyaluronic acid filler under the eyes?",
+      intro: "Both can be considered for an under-eye hollow. Neither is better for everyone.",
+      items: [
+        {
+          eyebrow: "Porcine collagen · Sunmax",
+          title: "Deusaderm",
+          body: "A white gel with no hyaluronic acid, which holds water. Doctors consider it where puffiness, an overfilled look or the bluish tint of a clear gel is a concern. It cannot be dissolved.",
+          href: "/technology/deusaderm",
+          hrefLabel: "About Deusaderm",
+        },
+        {
+          eyebrow: "Hyaluronic acid",
+          title: "Hyaluronic acid filler",
+          body: "A clear gel that can be dissolved with hyaluronidase if needed, which matters in this area.",
+          href: "/treatments/dermal-fillers",
+          hrefLabel: "About dermal fillers",
+        },
+      ],
+    },
+
+    ctaMid: {
+      heading: "Not sure Deusaderm suits your dark circles?",
+      body: "A doctor can check what is causing yours and which treatment fits, if any.",
+    },
+
+    // T-09 — safety-critical; every item carried over from the device page.
+    avoidIf: [
+      { lead: "Pregnancy or breastfeeding.", body: "" },
+      { lead: "Infection, inflammation or a skin condition", body: "around the eyes." },
+      { lead: "An allergy to collagen, pork-derived products or lidocaine,", body: "or a past reaction to a collagen filler." },
+      {
+        lead: "Autoimmune disease, keloid scarring or a bleeding disorder,",
+        body: "or taking blood thinners, immunosuppressants or steroids.",
+      },
+      { lead: "A permanent implant or earlier filler under the eyes", body: "not yet assessed." },
+      { lead: "Dark circles that are mainly pigment or visible vessels,", body: "which collagen does not treat." },
+    ],
+    bringToConsult:
+      "Come without eye makeup if you can. Bring a daylight photo, since overhead lights deepen under-eye shadows, and any record of past under-eye filler.",
+
+    // T-10 — step 1 states the first visit is a consultation.
+    sessionSteps: [
+      {
+        title: "Consultation and assessment",
+        body: "Your first visit is a consultation. The doctor checks which kind of dark circles you have.",
+      },
+      {
+        title: "History and consent",
+        body: "Your medication, past treatments and the risks are discussed before you decide.",
+      },
+      { title: "Numbing", body: "A numbing cream may be applied, and the gel itself contains lidocaine." },
+      {
+        title: "Small, careful placement",
+        body: "Small amounts, with a fine needle or a blunt cannula. The injecting itself is brief.",
+      },
+      {
+        title: "Review",
+        body: "The collagen is absorbed over months, so a further session may follow rather than more product at once.",
+      },
+    ],
+
+    // T-11 — injection site, the first days, the following week.
+    afterSession: {
+      intro: "Most people return to normal activity the same day.",
+      bands: [
+        {
+          title: "The first days",
+          body: "Swelling, tenderness and bruising are common, and show more under the eyes.",
+        },
+        {
+          title: "The following week",
+          body: "Bruising can last a week or more, so leave time before any important event.",
+        },
+      ],
+      aftercare:
+        "Aftercare usually means cold compresses and not rubbing the area. Contact the clinic straight away about sudden pain, skin turning pale or any change in your vision.",
+    },
+
+    // T-12
+    risks: {
+      intro: "",
+      common: "Bruising, swelling and tenderness, and redness, itching or flaking at the injection points.",
+      lessCommon:
+        "Small lumps (nodules), and allergic reaction or infection, as with any animal-derived implant. Rarely, serious vascular complications, which are gravest around the eye.",
+      cannotDo: [
+        "It does not lighten pigment or treat visible blood vessels.",
+        "It cannot be dissolved if a lump or uneven result appears.",
+        "It is not permanent: the collagen is absorbed over months.",
+      ],
+      disclose: "Your doctor explains the risks, and which symptoms to report, before anything is booked.",
+    },
+
+    // T-13 — factors only, no figures (settled 2026-09-20).
+    costFactors: {
+      heading: "Panda eye treatment cost in Malaysia: what affects it",
+      intro: "Pricing follows your assessment, because it depends on what the doctor finds:",
+      factors: [
+        "Whether your dark circles are mainly a hollow, or also need treatment for pigment or vessels.",
+        "How much collagen your doctor judges right for you.",
+        "Whether the plan is staged, with a review and a further session.",
+        "Whether existing under-eye filler must be assessed or dissolved first.",
+      ],
+    },
+
+    relatedReasons: {
+      "dermal-fillers": "The other option for an under-eye hollow, and it can be dissolved if needed.",
+      "skin-booster": "For thin, crepey skin where skin quality, not a hollow, is the main concern.",
+      "vascular-pigment-laser": "For brown pigment or visible vessels, which collagen does not treat.",
+    },
+
+    sections: [
+      {
+        heading: "Which type of panda eyes is Deusaderm for?",
+        body: [
+          "Deusaderm is considered for panda eyes that are mainly a shadow from a hollow under the eye, often with thin, crepey skin over it. Collagen placed beneath it aims to soften that shadow.",
+          "Most dark circles have more than one cause, especially from the mid-thirties, so collagen is often one part of a plan. The usual routes are:",
+        ],
+        list: [
+          "A hollow under the eye: Deusaderm or hyaluronic acid filler may be considered.",
+          "Thin, crepey skin over a hollow: Deusaderm or a skin booster may be discussed.",
+          "Brown pigment that stays when the skin is stretched: usually pigment laser and sun protection, not collagen.",
+          "A blue or purple tint from vessels: usually vascular laser or skin-quality treatment.",
+          "Puffiness, or swelling that comes and goes: checked first, as a medical question.",
+          "A shadow from the shape of the eye socket: no injectable changes bone, and concealer may do more.",
+        ],
+      },
+      {
+        heading: "What does the doctor check before injecting under the eyes?",
+        body: [
+          "The doctor looks at the area in different light and angles, and gently stretches the skin. Darkness that fades when light shines straight on it is likely a shadow from a hollow. A brown tone that stays is more likely pigment.",
+          "The doctor also asks whether the area tends to look puffy, and about any eyelid surgery or eye condition.",
+        ],
+      },
+      {
+        heading: "Why is under-eye collagen placed so cautiously?",
+        body: [
+          "Under-eye skin is the thinnest on the body. Anything placed beneath it can show as an outline, a lump or a change in colour.",
+          "So the doctor places small amounts, at a depth chosen for your anatomy, and may stage treatment with a review in between.",
+          "Collagen also cannot be dissolved, and rare vascular complications are most serious around the eye. So the doctor would rather place less and review.",
+        ],
+      },
+      {
+        heading: "What does research on under-eye collagen show?",
+        body: [
+          "The evidence is limited, and no study predicts how your own eyes will respond. Results vary between individuals.",
+        ],
+        list: [
+          "A 2024 study injected Sunmax's FACIALGAIN collagen around the eyes of a small group. Changes in skin lightness readings had faded by 12 weeks.",
+          "That study had no control group, was funded by the maker, and named a different Sunmax product, not Deusaderm.",
+          "A separate 2024 trial of Sunmax's collagen saw no bluish tint (the Tyndall effect), but it treated smile lines, not the under-eye area.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Will Deusaderm clear my panda eyes completely?",
+        a: "It is unlikely. Collagen is aimed only at the hollow, and most dark circles have more than one cause. Any improvement is usually partial.",
+      },
+      {
+        q: "Can I have Deusaderm if I've had under-eye filler before?",
+        a: "Possibly, once the doctor has assessed what is already there. If hyaluronic acid filler there needs dissolving, that is done first, in a separate procedure.",
+      },
+      {
+        q: "What if I avoid pork-derived products?",
+        a: "Deusaderm is made from pig collagen, so tell your doctor. Non-animal options, such as hyaluronic acid filler, can be discussed instead.",
+      },
+      {
+        q: "Can Deusaderm help dark circles that run in the family?",
+        a: "It depends on what is inherited. A family tendency to hollowing may be assessed for Deusaderm. Inherited brown pigment is not something collagen lightens.",
       },
     ],
   },

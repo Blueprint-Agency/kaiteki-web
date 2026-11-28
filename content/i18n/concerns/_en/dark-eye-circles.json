@@ -9,7 +9,8 @@
     "skin-booster",
     "vascular-pigment-laser",
     "radiofrequency",
-    "dermal-fillers"
+    "dermal-fillers",
+    "panda-eye-treatment"
   ],
   "reviewedBy": "dr-lim-xiao-chien",
   "lastReviewed": "2026-06-14",
@@ -179,6 +180,10 @@
     "dermal-fillers": {
       "why": "For the hollow that casts the shadow",
       "body": "Small volumes placed deeply to soften a groove between lid and cheek."
+    },
+    "panda-eye-treatment": {
+      "why": "For a hollow where filler is a poor fit",
+      "body": "Injectable collagen with no hyaluronic acid, which a doctor may discuss where the area already tends to look puffy."
     }
   },
   "compare": {

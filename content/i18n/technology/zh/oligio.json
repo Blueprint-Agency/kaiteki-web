@@ -4,7 +4,8 @@
   "group": "Lifting & Tightening",
   "type": "device",
   "treatments": [
-    "radiofrequency"
+    "radiofrequency",
+    "k-premium-lifting"
   ],
   "image": "https://cdn.kaiteki.my/treatments/radiofrequency/image-oligio.jpg",
   "summary": "一种来自韩国的 6.78 MHz 单极射频（RF）平台，配合皮肤表面的接触式冷却，在 RF 射频疗程中用于轻度至中度的脸部松弛。",
@@ -35,6 +36,12 @@
       "body": [
         "Oligio X 通过放在皮肤上的一次性探头，以 6.78 MHz 输送射频能量。电流遇到组织本身的阻抗时，会在真皮层转化为热能。这种受控的温热会让现有的胶原蛋白轻微收缩，之后在接下来几个月里引发较慢的重塑反应，任何逐渐出现的紧致变化都是由此而来。",
         "探头在接触时冷却皮肤表面，同时热能在底下累积，所以表皮层受到保护，而真皮层可以达到有用的温度。仪器也会通过探头监测接触状况和组织阻抗，帮助每一发的能量都均匀输送。能量水平、发数，以及每个部位来回治疗的次数，都由医生按你的皮肤来选择。"
+      ],
+      "links": [
+        {
+          "label": "K Premium Lifting：Oligio X 搭配 Ultherapy 超声波",
+          "href": "/treatments/k-premium-lifting"
+        }
       ]
     },
     {

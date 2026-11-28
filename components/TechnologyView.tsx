@@ -13,7 +13,7 @@ import { AuthorCard } from "@/components/blog/AuthorCard";
 import { ReadNext } from "@/components/blog/ReadNext";
 import { ConcernCard, TreatmentCard, TechnologyCard } from "@/components/cards";
 import { CardRow } from "@/components/CardRow";
-import { Section, FactRail, CostFactors } from "@/components/treatment-blocks";
+import { Section, FactRail, CostFactors, ArrowLink } from "@/components/treatment-blocks";
 import { ResultsBlock } from "@/components/concern-blocks";
 import { TechBlocks } from "@/components/tech-blocks";
 import { resultsHeading } from "@/lib/concern-toc";
@@ -296,6 +296,15 @@ export function TechnologyView({
                   </li>
                 ))}
               </ul>
+            )}
+            {s.links && (
+              <div className="mt-3 flex flex-wrap gap-x-6">
+                {s.links.map((l) => (
+                  <ArrowLink key={l.href} href={link(l.href)}>
+                    {l.label}
+                  </ArrowLink>
+                ))}
+              </div>
             )}
           </Section>
         ))}

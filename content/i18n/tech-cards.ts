@@ -18,6 +18,7 @@ import { term } from "@/content/i18n/terms";
 export type TechCardProps = {
   name?: string;
   summary?: string | null;
+  imageAlt?: string;
   typeLabel?: string;
   learnMore?: string;
   href?: string;
@@ -37,6 +38,7 @@ export function techCardProps(locale: Locale, x: Technology): TechCardProps {
   return {
     name: live ? page.x.name : x.name,
     summary: live ? page.x.summary : null,
+    imageAlt: live ? page.x.imageAlt : undefined,
     typeLabel: technologyUi[locale].type[x.type],
     learnMore: concernUi[locale].learnMore,
     href: lhref(locale, path),

@@ -4,7 +4,8 @@
   "group": "Lifting & Tightening",
   "type": "device",
   "treatments": [
-    "ultherapy"
+    "ultherapy",
+    "k-premium-lifting"
   ],
   "image": "https://cdn.kaiteki.my/images/technology/ultherapy-system.jpg",
   "device": "Ultherapy",
@@ -44,6 +45,12 @@
       "body": [
         "Merz menggambarkan transduser DeepSEE yang merawat pada tiga kedalaman (kira-kira 1.5 mm dalam dermis cetek, 3.0 mm dalam dermis yang lebih dalam dan 4.5 mm pada paras fasia SMAS), supaya doktor boleh memilih lapisan dan tidak hanya merawat satu lapisan yang tetap. SMAS (superficial muscular aponeurotic system) ialah lapisan sokongan muka yang lebih dalam: lapisan sama yang dirawat dalam pembedahan face lift, tetapi ultrabunyi berfokus mencapainya tanpa hirisan.",
         "Menurut pengeluar, sistem ini memaparkan tisu hingga kedalaman sekitar 8 mm, dan inilah yang membolehkan doktor mengesahkan lapisan pada skrin sebelum setiap garisan dihantar."
+      ],
+      "links": [
+        {
+          "label": "K Premium Lifting: Ultherapy digandingkan dengan radiofrekuensi Oligio X",
+          "href": "/treatments/k-premium-lifting"
+        }
       ]
     },
     {

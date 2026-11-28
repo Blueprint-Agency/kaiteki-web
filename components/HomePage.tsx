@@ -8,6 +8,7 @@ import { HeroSlider } from "@/components/HeroSlider";
 import { WhyKaiteki } from "@/components/WhyKaiteki";
 import { LeaderBadges } from "@/components/LeaderBadges";
 import { RecognitionCabinet } from "@/components/RecognitionCabinet";
+import { BestSellers } from "@/components/BestSellers";
 import { ConcernsMosaic } from "@/components/ConcernsMosaic";
 import { TreatmentsMenu } from "@/components/TreatmentsMenu";
 import { HowItWorks } from "@/components/HowItWorks";
@@ -92,6 +93,7 @@ export function HomePage({ locale }: { locale: Locale }) {
       {/* Device-fleet records, straight under the fold: the first thing after
           the hero, before the site starts explaining itself. */}
       <LeaderBadges locale={locale} />
+      <BestSellers locale={locale} />
       <ConcernsMosaic locale={locale} />
       <TreatmentsMenu locale={locale} />
       <HowItWorks locale={locale} />

@@ -47,9 +47,17 @@ const EXEMPT: Record<string, string> = {
   "treatment:nose-thread-lift:concerns": "no nose concern page; nose shape is not a skin concern",
   "treatment:nose-thread-lift:technology": "PDO threads (client, 20 Nov); a thread material, no device or product page",
   "treatment:nose-thread-lift:posts": "the two archive thread-lift posts were 301d into this page (2026-11-20); no spoke post written yet",
+  // 28 Nov 2026, new treatment page (moved from /technology the same day).
+  "treatment:k-premium-lifting:concerns":
+    "no concern page lists the plan yet; adding it to /concerns/face-lifting needs a treatmentWhy line its reviewer has not read",
+  "treatment:k-premium-lifting:posts": "no post covers the combined plan yet",
+  "treatment:k-premium-lifting:reviewer": "Dr Chew is assigned but has not read the page; no byline until she has",
   "treatment:laser-hair-removal:concerns": "no unwanted-hair concern page yet",
   "concern:skin-tags-moles:posts": "its only post was merged into it (301, kt101); no spoke post written yet",
   "technology:alma:concerns": "powers laser hair removal only, which has no concern page yet",
+  // 2026-11-28: drafted that day; no reviewer is printed until Dr Jacqueline
+  // Tan has read it. Set reviewedBy and lastReviewed, then delete this line.
+  "treatment:panda-eye-treatment:reviewer": "awaiting Dr Jacqueline Tan's first read; no byline before then",
 };
 
 const gaps: Gap[] = [];

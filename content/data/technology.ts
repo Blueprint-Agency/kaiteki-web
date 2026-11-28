@@ -1115,7 +1115,7 @@ export const technology: Technology[] = [
       name: "Ultherapy System",
       group: "Lifting & Tightening",
       type: "device",
-      treatments: ["ultherapy"],
+      treatments: ["ultherapy", "k-premium-lifting"],
       image: "https://cdn.kaiteki.my/images/technology/ultherapy-system.jpg",
       device: "Ultherapy",
       summary:
@@ -1148,6 +1148,7 @@ export const technology: Technology[] = [
             "Merz describes DeepSEE transducers that treat at three depths (approximately 1.5 mm in the superficial dermis, 3.0 mm in the deeper dermis and 4.5 mm at the level of the SMAS fascia), so the doctor can choose the layer rather than treating one fixed plane. The SMAS (superficial muscular aponeurotic system) is the deeper support layer of the face: the same layer a surgical facelift addresses, though focused ultrasound reaches it without incisions.",
             "The manufacturer states that the system visualises tissue to a depth of around 8 mm, which is what lets the doctor confirm the plane on screen before each line is delivered.",
           ],
+          links: [{ label: "K Premium Lifting: Ultherapy paired with Oligio X radiofrequency", href: "/treatments/k-premium-lifting" }],
         },
         {
           heading: "Is Ultherapy a non-surgical facelift?",
@@ -1439,7 +1440,7 @@ export const technology: Technology[] = [
     name: "Oligio X",
     group: "Lifting & Tightening",
     type: "device",
-    treatments: ["radiofrequency"],
+    treatments: ["radiofrequency", "k-premium-lifting"],
     image: "https://cdn.kaiteki.my/treatments/radiofrequency/image-oligio.jpg",
     summary:
       "A Korean 6.78 MHz monopolar radiofrequency platform with contact cooling of the skin surface, used within RF treatment for mild to moderate facial laxity.",
@@ -1463,6 +1464,7 @@ export const technology: Technology[] = [
           "Oligio X delivers RF energy at 6.78 MHz through a disposable tip placed on the skin. As the current meets the natural resistance of the tissue, it is converted to heat in the dermis. That controlled warmth makes existing collagen contract slightly and then prompts a slower remodelling response over the following months, which is where any gradual firming comes from.",
           "The tip cools the skin surface on contact while the heat builds beneath it, so the epidermis is protected and the dermis can reach a useful temperature. The device also monitors contact and tissue impedance through the tip, which helps the energy go in evenly from shot to shot. Energy level, the number of shots and the passes over each area are chosen by the treating doctor for your skin.",
         ],
+        links: [{ label: "K Premium Lifting: Oligio X paired with Ultherapy ultrasound", href: "/treatments/k-premium-lifting" }],
       },
       {
         heading: "What the published Oligio studies looked at",
@@ -2363,6 +2365,7 @@ export const technology: Technology[] = [
           "Onda for Body is used for localised fat and skin firmness, while Onda for Face uses a gentler approach for the face and jawline.",
           "Onda is not a weight-loss treatment; it addresses localised areas rather than overall body weight.",
         ],
+        links: [{ label: "Onda Face: the face handpiece in detail", href: "/technology/onda-face" }],
       },
       {
         heading: "Why do implants and medical devices matter before Onda?",
@@ -2423,6 +2426,163 @@ export const technology: Technology[] = [
     seoTitle: "Onda & Onda Pro Coolwaves Treatment Malaysia | Kaiteki",
     seoDescription:
       "Kaiteki has Onda and Onda Pro, microwave-based Coolwaves devices for localised fat, cellulite appearance and facial firmness. Book a free consultation.",
+  },
+  {
+    slug: "onda-face",
+    name: "Onda Face",
+    group: "Body & Slimming",
+    type: "device",
+    treatments: ["microwave-contouring"],
+    // No face-handpiece photography yet: the Onda Coolwaves cover, which shows
+    // the original Onda unit, not the Pocket handpiece. The alt says only that.
+    image: "https://cdn.kaiteki.my/images/technology/onda-coolwaves.jpg",
+    imageAlt: "The DEKA Onda microwave platform with its handpieces on articulated arms, under the Onda logo",
+    device: "Onda",
+    summary:
+      "The face handpiece of DEKA's Onda Pro microwave platform, used for jawline firmness and for fat or loose skin under the chin.",
+    leadAnswer:
+      "Onda Face is a microwave treatment used for loss of firmness along the jawline and lower face, and for fat or loose skin under the chin. It is DEKA's Onda Pro with a small face handpiece, Pocket, which focuses heat about 3 mm deep in the skin, under a cooled surface.",
+    facts: [
+      { value: "About 3 mm (Pocket handpiece)", label: "Focal depth; body handpieces reach 7 to 12 mm" },
+      { value: "2.45 GHz microwave, contact-cooled", label: "Energy" },
+      { value: "Jawline, lower face, under the chin", label: "Where it is used" },
+    ],
+    sections: [
+      {
+        heading: "How is Onda Face different from Onda for the body?",
+        body: [
+          "Onda Face uses the same microwave energy and cooling as body Onda, but a much shallower handpiece. It is DEKA's Onda Pro fitted with a small face handpiece called Pocket. Kaiteki has both the Onda Pro and the original Onda.",
+          "The body handpieces focus heat 7 to 12 mm deep, in the fat layer. The device's advisory board (2024) rules them out on the face and neck, except for one zone under the chin.",
+          "The Pocket focuses about 3 mm deep, in the skin's collagen layer, so Onda Face is used mainly for firmness. The heat is intended to start slow collagen remodelling over months. DEKA also lists it for fat under the chin.",
+        ],
+        links: [{ label: "Onda Coolwaves for the body", href: "/technology/onda-coolwaves" }],
+      },
+      {
+        heading: "Can Onda Face help a double chin?",
+        body: [
+          "Onda Face may help when the fullness comes from a modest pad of fat, loose skin, or both. It cannot change the jaw or chin bone.",
+          "A double chin is usually a mix of the three things below. Fullness from weight gain tends to follow your weight. Your doctor checks what is behind yours, then chooses the Pocket or the Shallow handpiece.",
+        ],
+        list: [
+          "Fat under the chin: only fat in front of the thin neck muscle (platysma) is treated",
+          "Loose skin: the layer the Pocket's heat is aimed at",
+          "Bone structure: a small or set-back chin can look full at any weight",
+        ],
+      },
+      {
+        heading: "What have studies of microwave face treatment found?",
+        body: [
+          "A few small, short studies suggest microwave heat may improve loose skin and fat under the chin.",
+          "The closest to Onda Face treated loose skin under the chin in 10 women, using the Pocket in two sessions a month apart. Laxity improved by just over one grade on average at 12 weeks (Zappia et al., Lasers in Medical Science, 2025).",
+          "An earlier study gave 48 people six sessions under the chin with the Shallow handpiece. Fat and laxity scores fell by 12 weeks (Salsi and Fusco, Journal of Cosmetic Dermatology, 2022). Neither study had a control group.",
+          "A 2026 study looked back at 89 East Asian patients treated with microwave face handpieces and 82 treated with focused ultrasound. The microwave group reported about half the pain and more early change. The ultrasound group showed more firming by three months (Aesthetic Surgery Journal, 2026).",
+          "The 2026 study was not randomised and did not name the microwave device. Studies show what was tested, not what any one person will see.",
+        ],
+      },
+      {
+        heading: "Jawline, jowls or chin: who is Onda Face for?",
+        body: [
+          "Onda Face is considered for early to moderate changes in the lower face, in people who prefer to avoid needles. A consultation decides whether it suits you.",
+        ],
+        list: [
+          "Early softening along the jawline",
+          "Mild jowls caused mainly by loose skin, not heavy tissue",
+          "Loose skin or a modest pad of fat under the chin, the area with the most published data",
+        ],
+      },
+      {
+        heading: "Who should not have Onda Face?",
+        body: [
+          "Onda Face is not used on a slim or hollow face, for heavy sagging and deep jowls, or with the medical conditions below. Your doctor will say if restoring volume or surgery is the more honest discussion.",
+          "A tendency to keloid scars and some medicines, such as recent retinoids or steroids, need assessment first. Mention any fillers, threads or botulinum toxin in the lower face. The advisory board notes heat could reduce the effect of fillers and toxin, so treatments are spaced around them.",
+        ],
+        list: [
+          "Pregnancy and breastfeeding, until 10 months after delivery",
+          "A pacemaker or other heart implant, or a deep brain or sacral nerve stimulator",
+          "Heart failure, a clotting disorder, or serious kidney or liver disease",
+          "Cancer now or in the past five years",
+          "Active infection or inflamed skin in the area",
+          "Reduced feeling in the area, since the doctor relies on you to report heat",
+        ],
+      },
+      {
+        heading: "What happens in an Onda Face session, and after?",
+        body: [
+          "Your first visit is a consultation, not a treatment. After a session, most people go back to work the same day.",
+        ],
+        list: [
+          "Make-up is removed, the areas are mapped, and a thin layer of oil is applied.",
+          "The doctor glides the cooled Pocket over each area in continuous passes.",
+          "Treating under the chin took about 10 minutes in the studies; the full jawline takes longer.",
+          "Redness and warmth usually settle within hours to a few days. The chin area may feel tender or swollen for a few days.",
+          "Use daily sun protection and follow your doctor's aftercare.",
+        ],
+      },
+      {
+        heading: "What can go wrong when microwaves heat facial tissue?",
+        body: [
+          "The main risk is overheating one spot, which can cause a blister or a burn. Keeping the handpiece moving, using comfortable settings and stopping when the skin gets too hot lower that risk. Your doctor explains all risks at consultation.",
+          "Used incorrectly, the device can cause uneven fat loss or asymmetry, so the areas are mapped first.",
+          "The under-chin studies reported no side effects, but were too small to show rare ones. The advisory board lists these effects, which usually settle within days:",
+        ],
+        list: [
+          "Redness, warmth, tenderness and swelling",
+          "Itching or temporary numbness",
+          "Bruising",
+          "Small firm lumps (nodules) under the skin",
+        ],
+      },
+      {
+        heading: "Onda Face, Ultherapy or Oligio X: which suits which problem?",
+        body: [
+          "All three are used for loss of firmness without needles, but each heats a different layer. As a rough guide, deeper laxity is usually discussed with focused ultrasound, and fat or loose skin under the chin with Onda Face.",
+          "Some plans combine them; your doctor decides after examining you. No study has compared Onda with Oligio X, and the 2026 microwave study did not test Ultherapy itself.",
+        ],
+        list: [
+          "Ultherapy System: focused ultrasound down to about 4.5 mm (the SMAS support layer), with on-screen imaging",
+          "Oligio X: monopolar radiofrequency that heats the dermis through a cooled tip",
+          "Onda Face: microwaves that heat a band about 3 mm deep",
+        ],
+        links: [
+          { label: "The Ultherapy System and its imaging", href: "/technology/ultherapy-system" },
+          { label: "Oligio X monopolar radiofrequency", href: "/technology/oligio" },
+        ],
+      },
+    ],
+    costFactors: {
+      intro:
+        "Kaiteki does not quote prices online; the cost follows your doctor's plan. What changes it:",
+      factors: [
+        "The areas treated: the jawline and lower face, under the chin, or both.",
+        "How many sessions you need.",
+        "Whether Onda Face is combined with another treatment, such as focused ultrasound for deeper laxity.",
+        "Whether maintenance sessions are planned.",
+      ],
+    },
+    faqs: [
+      {
+        q: "How many Onda Face sessions are needed for a double chin?",
+        a: "There is no fixed number; the published studies used two to six. Your doctor sets the course after examining you and reviews your response before adding more.",
+      },
+      {
+        q: "Does Onda Face hurt?",
+        a: "Most people feel warmth under a cool surface rather than pain, but comfort varies. Your feedback guides the power, so say if a spot feels too hot.",
+      },
+      {
+        q: "When might I notice a change, and how long does it last?",
+        a: "Any firming builds over weeks to months as collagen remodels. There is no long-term data on how long it lasts, and skin keeps ageing, so plans often include maintenance. Results vary between people.",
+      },
+      {
+        q: "Is Onda Face suitable for darker or Asian skin?",
+        a: "Skin tone matters less than with some lasers, because microwaves do not target pigment. A burn can still leave a pigment change, so settings are matched to your skin. Face data are limited: the Pocket study included skin types II to IV.",
+      },
+    ],
+    // Reviewer assigned: dr-tim-chua, who reviewed onda-coolwaves. No byline
+    // until they have read this page (written 2026-11-28); then set reviewedBy
+    // and lastReviewed.
+    seoTitle: "Onda Face Tightening & Double Chin Malaysia | Kaiteki",
+    seoDescription:
+      "Onda Face uses microwave heat, focused about 3 mm deep, for jawline tightening and a double chin. See how it works, the risks and who it suits in Malaysia.",
   },
   {
     slug: "schwarzy",
@@ -3916,7 +4076,9 @@ export const technology: Technology[] = [
     name: "Deusaderm",
     group: "Injectables",
     type: "injectable",
-    treatments: ["bio-stimulator"],
+    // bio-stimulator first: TechnologyExplorer files an injectable under its
+    // first treatment. panda-eye-treatment is its under-eye use (2026-11-28).
+    treatments: ["bio-stimulator", "panda-eye-treatment"],
     image: "https://cdn.kaiteki.my/images/technology/deusaderm-v2.png",
     imageAlt: "A box of Deusaderm collagen injectable from Sunmax",
     summary:
@@ -3954,7 +4116,7 @@ export const technology: Technology[] = [
         heading: "Why is Deusaderm considered for the under-eye area and overfilled faces?",
         body: [
           "Hyaluronic acid binds water. In some people, particularly under the eyes where fluid tends to collect, a hyaluronic acid filler can contribute to puffiness or an overfilled look, and a clear gel placed too close to the surface can show a bluish tint known as the Tyndall effect. Deusaderm contains no hyaluronic acid and is white and opaque, and the Tyndall effect was not observed in the 2024 trial. Those properties, rather than any promised outcome, are why doctors consider it in these areas.",
-          "Within Kaiteki's bio-stimulator treatment, Deusaderm is commonly considered for the concerns below. Under-eye darkness has several causes, including pigment, visible blood vessels and hollowing, and an injectable addresses only some of them, so the cause is assessed first. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
+          "Within Kaiteki's bio-stimulator treatment, Deusaderm is commonly considered for the concerns below. Under-eye darkness has several causes, including pigment, visible blood vessels and hollowing, and an injectable addresses only some of them, so the cause is assessed first. How that assessment works, and how Deusaderm is placed in the thin skin under the eyes, is set out on the Deusaderm Panda Eye Treatment page. It is not suitable for everyone, and a consultation determines whether it is appropriate for you.",
         ],
         list: [
           "Hollowness along the tear trough and lower eyelid",
@@ -3964,6 +4126,7 @@ export const technology: Technology[] = [
           "Fine wrinkles and established facial folds, the use the manufacturer lists",
           "Mild, localised volume loss where a lighter correction is preferred",
         ],
+        links: [{ label: "Deusaderm for panda eyes: the under-eye treatment in detail", href: "/treatments/panda-eye-treatment" }],
       },
       {
         heading: "Who should avoid Deusaderm, and why does its pig-derived collagen matter?",

@@ -4,7 +4,8 @@
   "group": "Injectables",
   "type": "injectable",
   "treatments": [
-    "bio-stimulator"
+    "bio-stimulator",
+    "panda-eye-treatment"
   ],
   "image": "https://cdn.kaiteki.my/images/technology/deusaderm-v2.png",
   "imageAlt": "A box of Deusaderm collagen injectable from Sunmax",
@@ -50,7 +51,7 @@
       "heading": "Why is Deusaderm considered for the under-eye area and overfilled faces?",
       "body": [
         "Hyaluronic acid binds water. In some people, particularly under the eyes where fluid tends to collect, a hyaluronic acid filler can contribute to puffiness or an overfilled look, and a clear gel placed too close to the surface can show a bluish tint known as the Tyndall effect. Deusaderm contains no hyaluronic acid and is white and opaque, and the Tyndall effect was not observed in the 2024 trial. Those properties, rather than any promised outcome, are why doctors consider it in these areas.",
-        "Within Kaiteki's bio-stimulator treatment, Deusaderm is commonly considered for the concerns below. Under-eye darkness has several causes, including pigment, visible blood vessels and hollowing, and an injectable addresses only some of them, so the cause is assessed first. It is not suitable for everyone, and a consultation determines whether it is appropriate for you."
+        "Within Kaiteki's bio-stimulator treatment, Deusaderm is commonly considered for the concerns below. Under-eye darkness has several causes, including pigment, visible blood vessels and hollowing, and an injectable addresses only some of them, so the cause is assessed first. How that assessment works, and how Deusaderm is placed in the thin skin under the eyes, is set out on the Deusaderm Panda Eye Treatment page. It is not suitable for everyone, and a consultation determines whether it is appropriate for you."
       ],
       "list": [
         "Hollowness along the tear trough and lower eyelid",
@@ -59,6 +60,12 @@
         "Concern about looking overfilled after repeated hyaluronic acid filler",
         "Fine wrinkles and established facial folds, the use the manufacturer lists",
         "Mild, localised volume loss where a lighter correction is preferred"
+      ],
+      "links": [
+        {
+          "label": "Deusaderm for panda eyes: the under-eye treatment in detail",
+          "href": "/treatments/panda-eye-treatment"
+        }
       ]
     },
     {

@@ -1,0 +1,212 @@
+{
+  "slug": "k-premium-lifting",
+  "durationDowntime": "Varies by plan · Back to normal the same day for most",
+  "name": "K Premium Lifting",
+  "category": "Lifting & Tightening",
+  "image": "https://cdn.kaiteki.my/treatments/ultherapy/hero.jpg",
+  "imageAlt": "A practitioner holds an ultrasound handpiece along a patient's jaw, with the device's screen behind",
+  "summary": "Kaiteki's non-surgical lifting plan pairing Ultherapy ultrasound for deeper layers with Oligio X radiofrequency for the skin above.",
+  "leadAnswer": "K Premium Lifting is Kaiteki's non-surgical lifting plan using two devices on one face. Ultherapy's micro-focused ultrasound treats deeper layers, including the SMAS. Oligio X's monopolar radiofrequency heats the skin layer above. One doctor plans both. No published study has tested this pairing, so the case rests on the different depths each reaches.",
+  "related": [
+    "ultherapy",
+    "radiofrequency",
+    "hifu",
+    "dermal-fillers"
+  ],
+  "reviewedBy": "",
+  "lastReviewed": "",
+  "seoTitle": "K Premium Lifting: Ultherapy + Oligio X Malaysia | Kaiteki",
+  "seoDescription": "K Premium Lifting pairs Ultherapy ultrasound with Oligio X radiofrequency for non-surgical lifting in Malaysia. Who it suits, the evidence, recovery and risks.",
+  "typicalSessions": "Ultherapy often once; Oligio X often 2–3 sessions",
+  "facts": [
+    {
+      "value": "Ultherapy + Oligio X",
+      "label": "Two devices, planned together by one doctor"
+    },
+    {
+      "value": "Two depths",
+      "label": "Ultrasound down to the SMAS, radiofrequency in the dermis above"
+    },
+    {
+      "value": "Assessment first",
+      "label": "Your first visit is a doctor consultation, not a treatment"
+    }
+  ],
+  "variantModule": {
+    "heading": "What does each device do?",
+    "intro": "Each device works at a different depth.",
+    "items": [
+      {
+        "eyebrow": "Micro-focused ultrasound · Merz Aesthetics",
+        "title": "Ultherapy",
+        "body": "Places points of heat at about 1.5, 3.0 or 4.5 mm, the deepest at the SMAS. The doctor checks each layer on screen first.",
+        "href": "/technology/ultherapy-system",
+        "hrefLabel": "About the Ultherapy System"
+      },
+      {
+        "eyebrow": "Monopolar radiofrequency · Wontech",
+        "title": "Oligio X",
+        "body": "Sends 6.78 MHz current through a tip that cools the surface, warming the dermis shot by shot.",
+        "href": "/technology/oligio",
+        "hrefLabel": "About Oligio X"
+      }
+    ]
+  },
+  "ctaMid": {
+    "heading": "Not sure whether you need one device or both?",
+    "body": "A doctor can see where your sagging sits and tell you if one device would be enough."
+  },
+  "avoidIf": [
+    {
+      "lead": "Pregnancy or breastfeeding.",
+      "body": ""
+    },
+    {
+      "lead": "A pacemaker, defibrillator or other implanted electronic device.",
+      "body": ""
+    },
+    {
+      "lead": "Metal implants, or recently placed fillers or threads,",
+      "body": "in the treatment area."
+    },
+    {
+      "lead": "Infection, open wounds or inflamed acne",
+      "body": "in the treatment area."
+    },
+    {
+      "lead": "A tendency to keloid scarring.",
+      "body": ""
+    },
+    {
+      "lead": "A bleeding disorder, blood thinners or certain autoimmune conditions.",
+      "body": ""
+    },
+    {
+      "lead": "Recent retinoids or peels,",
+      "body": "which affect timing."
+    }
+  ],
+  "bringToConsult": "Tell your doctor about any implants, fillers or threads in your face, and the medicines you take.",
+  "sessionSteps": [
+    {
+      "title": "Consultation and assessment",
+      "body": "Your first visit is a consultation, not a treatment. A doctor checks where your sagging sits and whether you need both devices."
+    },
+    {
+      "title": "Mapping the face",
+      "body": "Ultrasound and radiofrequency areas are marked separately, and the doctor sets the order. Numbing cream is available."
+    },
+    {
+      "title": "Oligio X",
+      "body": "The cooled tip moves across the face shot by shot. Most people feel short bursts of warmth."
+    },
+    {
+      "title": "Ultherapy",
+      "body": "The doctor checks each layer on screen, then delivers lines of focused points. Expect brief, deep prickling, stronger over bone."
+    },
+    {
+      "title": "Review",
+      "body": "A review a few months later checks how your skin has responded, and whether more RF sessions would help."
+    }
+  ],
+  "afterSession": {
+    "intro": "Most people go back to normal activities the same day.",
+    "bands": [
+      {
+        "title": "The first hours",
+        "body": "Redness and warmth usually settle within hours."
+      },
+      {
+        "title": "Days to a few weeks",
+        "body": "Tenderness, slight swelling or a firm feeling under the skin can last days to a few weeks."
+      }
+    ],
+    "aftercare": "Wear sunscreen daily, and avoid saunas and strong heat for the short period your doctor advises."
+  },
+  "risks": {
+    "intro": "A combined plan carries the risks of both devices.",
+    "common": "Short-lived redness, warmth and swelling; tenderness or a firm feeling under the skin; bruising or welts along the ultrasound lines; temporary numbness or tingling.",
+    "lessCommon": "Temporary nerve effects, such as localised muscle weakness, from the ultrasound. Blistering or a burn from the radiofrequency.",
+    "pigmentNote": "Neither device targets skin pigment, so both are used across skin tones, including Asian skin. The radiofrequency can, less commonly, cause a pigment change.",
+    "cannotDo": [
+      "It does not replace lost volume. A hollow face usually needs fillers or bio-stimulators.",
+      "It does not remove fat, such as fullness under the chin that is mainly fat.",
+      "It does not cut, lift or remove skin. For advanced sagging, surgery is the honest comparison."
+    ],
+    "disclose": "Your doctor goes through these risks and your medical history before anything is booked."
+  },
+  "costFactors": {
+    "heading": "What affects the price of K Premium Lifting?",
+    "intro": "The price is set at consultation, once your plan is mapped. What moves it:",
+    "factors": [
+      "Which areas get ultrasound or radiofrequency, and how much each needs.",
+      "The number of ultrasound lines and radiofrequency shots.",
+      "Whether it is done in one visit or several.",
+      "Whether extra RF sessions or later maintenance are part of the plan."
+    ]
+  },
+  "relatedReasons": {
+    "ultherapy": "Ultherapy alone, where the deeper layer is the main problem.",
+    "radiofrequency": "Radiofrequency alone, Oligio X included, where the skin layer is the main problem.",
+    "hifu": "Focused ultrasound on devices without on-screen imaging.",
+    "dermal-fillers": "Fillers replace lost volume, which energy devices do not."
+  },
+  "sections": [
+    {
+      "heading": "What is K Premium Lifting?",
+      "body": [
+        "K Premium Lifting is Kaiteki's name for a treatment plan, not a separate machine or a manufacturer's protocol. It uses two devices the clinic already has: the Ultherapy System from Merz Aesthetics and Oligio X from Wontech."
+      ]
+    },
+    {
+      "heading": "Why combine ultrasound and radiofrequency?",
+      "body": [
+        "Sagging often involves more than one layer, and each device reaches a different one. Ultherapy heats deep, as far as the SMAS, the support layer a facelift works on. Oligio X heats the dermis, the skin layer above.",
+        "Using both is about reaching more layers, not extra strength. There is no evidence that two devices give a faster or bigger change than one."
+      ]
+    },
+    {
+      "heading": "Who is K Premium Lifting for?",
+      "body": [
+        "K Premium Lifting is generally considered for mild to moderate sagging in both the deeper support and the skin above it. It suits people with reasonable skin quality who want an option without incisions. A doctor decides at consultation."
+      ],
+      "list": [
+        "Early jowls and a softer jawline",
+        "Loose skin under the chin and on the upper neck",
+        "Sagging around the nose-to-mouth folds",
+        "A heavier brow line, assessed individually",
+        "Loss of firmness across the cheeks"
+      ]
+    },
+    {
+      "heading": "Is there evidence for combining Ultherapy and Oligio X?",
+      "body": [
+        "No published study has tested Ultherapy and Oligio X together. The plan rests on how each device works and on its own studies.",
+        "A few small studies have paired monopolar RF with focused ultrasound, but none used these two devices. All were short, so they show the pairing has been tried, not what it will do for your face."
+      ],
+      "list": [
+        "2018, Journal of Cosmetic and Laser Therapy: 22 adults had both in one session. Laxity scores improved with no serious side effects, but there was no comparison group.",
+        "2024, Malaysian Journal of Medical Sciences: a look back at 56 patients treated with both at one Malaysian clinic. Findings were similar, with no comparison group.",
+        "2025, Dermatologic Surgery: 24 adults had RF first on one side of the face and ultrasound first on the other. Both sides improved, and the better order stayed unclear."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is K Premium Lifting a non-surgical facelift?",
+      "a": "No. Ultherapy reaches the SMAS, the layer a facelift works on, but any change is gradual and partial, not comparable to surgery."
+    },
+    {
+      "q": "Are Ultherapy and Oligio X done on the same day?",
+      "a": "They can be, or they can be spread across visits. Ultherapy is usually one session, while Oligio X is often two to three sessions a few weeks apart. Your doctor decides based on your skin, the areas and your comfort."
+    },
+    {
+      "q": "How soon will I see a change, and how long does it last?",
+      "a": "Any change builds slowly as collagen remodels, usually over two to six months after the ultrasound, and it varies between people. It does not stop the skin from ageing, so maintenance is considered over time."
+    },
+    {
+      "q": "Can fillers or other injectables be part of the same plan?",
+      "a": "Yes, where lost volume is part of the picture. Recent fillers or threads in the ultrasound's path must be taken into account, so your doctor sets the order and spacing."
+    }
+  ]
+}

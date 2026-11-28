@@ -135,6 +135,19 @@
       "waOrder": "Hai Kaiteki, saya nak pesan {name}.",
       "readMore": "Baca lagi",
       "readLess": "Tutup"
+    },
+    "detail": {
+      "ctaHero": "Tanya tentang produk ini di WhatsApp",
+      "waAsk": "Hai Kaiteki, saya nak tanya tentang {name}.",
+      "imageAlt": "{name} ({category}), penjagaan kulit di Kaiteki Skin Aesthetic Clinic",
+      "glance": "Sekilas pandang",
+      "priceLabel": "Harga",
+      "ingredientLabel": "Bahan utama",
+      "typeLabel": "Jenis",
+      "featuresLabel": "Ciri-ciri",
+      "backToAll": "Kembali ke semua produk",
+      "viewDetails": "Butiran produk",
+      "viewDetailsLabel": "{name}: butiran produk"
     }
   },
   "privacy": {

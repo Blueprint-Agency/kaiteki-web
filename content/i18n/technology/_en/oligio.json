@@ -4,7 +4,8 @@
   "group": "Lifting & Tightening",
   "type": "device",
   "treatments": [
-    "radiofrequency"
+    "radiofrequency",
+    "k-premium-lifting"
   ],
   "image": "https://cdn.kaiteki.my/treatments/radiofrequency/image-oligio.jpg",
   "summary": "A Korean 6.78 MHz monopolar radiofrequency platform with contact cooling of the skin surface, used within RF treatment for mild to moderate facial laxity.",
@@ -35,6 +36,12 @@
       "body": [
         "Oligio X delivers RF energy at 6.78 MHz through a disposable tip placed on the skin. As the current meets the natural resistance of the tissue, it is converted to heat in the dermis. That controlled warmth makes existing collagen contract slightly and then prompts a slower remodelling response over the following months, which is where any gradual firming comes from.",
         "The tip cools the skin surface on contact while the heat builds beneath it, so the epidermis is protected and the dermis can reach a useful temperature. The device also monitors contact and tissue impedance through the tip, which helps the energy go in evenly from shot to shot. Energy level, the number of shots and the passes over each area are chosen by the treating doctor for your skin."
+      ],
+      "links": [
+        {
+          "label": "K Premium Lifting: Oligio X paired with Ultherapy ultrasound",
+          "href": "/treatments/k-premium-lifting"
+        }
       ]
     },
     {

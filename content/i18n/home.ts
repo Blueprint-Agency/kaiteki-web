@@ -13,6 +13,8 @@ import type { Faq } from "@/lib/types";
 import { homeZh } from "./home.zh";
 import { homeMs } from "./home.ms";
 
+type BestSeller = { title: string; sub?: string };
+
 export type HomeCopy = {
   meta: { title: string; description: string };
   hero: {
@@ -38,6 +40,16 @@ export type HomeCopy = {
     most: string;
     where: string;
     seals: [subject: string, noun: string][];
+  };
+  /** "Top 5 best sellers": five cards linking to device, injectable and product
+   *  pages. `items` is in rank order and must stay in step with the card list
+   *  in components/BestSellers.tsx (titles and sublines only; brand names are
+   *  never translated). */
+  bestSellers: {
+    h2: string;
+    sub: string;
+    learnMore: string;
+    items: [BestSeller, BestSeller, BestSeller, BestSeller, BestSeller];
   };
   concerns: {
     h2: string;
@@ -164,6 +176,18 @@ const en: HomeCopy = {
       ["Onda", "machines"],
       ["Oligio X", "machines"],
       ["lifting", "devices"],
+    ],
+  },
+  bestSellers: {
+    h2: "Top 5 best sellers",
+    sub: "Five places to start, with a doctor assessing every treatment first.",
+    learnMore: "Learn more",
+    items: [
+      { title: "Deusaderm Panda Eye Treatment" },
+      { title: "K Premium Lifting", sub: "Ultherapy + Oligio X non-surgical lifting" },
+      { title: "Onda Face", sub: "Microwave face firming" },
+      { title: "Juvelook Advance Skin Booster" },
+      { title: "Kaiteki® DoubleBlock UV Sunscreen", sub: "SPF 50 facial sunscreen" },
     ],
   },
   concerns: {

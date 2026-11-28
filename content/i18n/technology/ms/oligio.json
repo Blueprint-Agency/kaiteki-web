@@ -4,7 +4,8 @@
   "group": "Lifting & Tightening",
   "type": "device",
   "treatments": [
-    "radiofrequency"
+    "radiofrequency",
+    "k-premium-lifting"
   ],
   "image": "https://cdn.kaiteki.my/treatments/radiofrequency/image-oligio.jpg",
   "summary": "Platform radiofrekuensi monopolar 6.78 MHz dari Korea dengan penyejukan sentuhan pada permukaan kulit, digunakan dalam rawatan RF untuk kekenduran muka yang ringan hingga sederhana.",
@@ -35,6 +36,12 @@
       "body": [
         "Oligio X menghantar tenaga RF pada 6.78 MHz melalui hujung pakai buang yang diletakkan pada kulit. Apabila arus bertemu rintangan semula jadi tisu, ia ditukar menjadi haba di dalam dermis. Kehangatan terkawal itu membuatkan kolagen sedia ada mengecut sedikit, kemudian mencetuskan tindak balas pembentukan semula yang lebih perlahan dalam beberapa bulan berikutnya, dan dari situlah datangnya apa-apa ketegangan kulit yang beransur-ansur.",
         "Hujung itu menyejukkan permukaan kulit semasa bersentuhan sementara haba terbina di bawahnya, jadi epidermis dilindungi dan dermis boleh mencapai suhu yang berguna. Peranti ini juga memantau sentuhan dan impedans tisu melalui hujung tersebut, yang membantu tenaga masuk secara sekata dari satu tembakan ke tembakan seterusnya. Tahap tenaga, bilangan tembakan dan bilangan laluan di setiap kawasan dipilih oleh doktor yang merawat mengikut kulit anda."
+      ],
+      "links": [
+        {
+          "label": "K Premium Lifting: Oligio X digandingkan dengan ultrabunyi Ultherapy",
+          "href": "/treatments/k-premium-lifting"
+        }
       ]
     },
     {

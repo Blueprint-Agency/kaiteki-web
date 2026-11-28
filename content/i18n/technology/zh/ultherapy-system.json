@@ -4,7 +4,8 @@
   "group": "Lifting & Tightening",
   "type": "device",
   "treatments": [
-    "ultherapy"
+    "ultherapy",
+    "k-premium-lifting"
   ],
   "image": "https://cdn.kaiteki.my/images/technology/ultherapy-system.jpg",
   "device": "Ultherapy",
@@ -44,6 +45,12 @@
       "body": [
         "Merz 形容 DeepSEE 探头可以在三个深度进行治疗（大约 1.5 毫米的浅层真皮、3.0 毫米的较深真皮，以及 4.5 毫米的 SMAS 筋膜层），所以医生可以选择层次，而不是只处理一个固定的层面。SMAS（表浅肌肉腱膜系统）是脸部较深的支撑层，也就是外科拉皮手术处理的那一层，不过聚焦超声波不需要开刀就能到达。",
         "制造商表示，这个系统可以显示深至大约 8 毫米的组织，所以医生能在每一行输出之前，先在屏幕上确认层面。"
+      ],
+      "links": [
+        {
+          "label": "K Premium Lifting：Ultherapy 搭配 Oligio X 射频",
+          "href": "/treatments/k-premium-lifting"
+        }
       ]
     },
     {

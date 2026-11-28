@@ -9,7 +9,8 @@
     "skin-booster",
     "vascular-pigment-laser",
     "radiofrequency",
-    "dermal-fillers"
+    "dermal-fillers",
+    "panda-eye-treatment"
   ],
   "reviewedBy": "dr-lim-xiao-chien",
   "lastReviewed": "2026-06-14",
@@ -179,6 +180,10 @@
     "dermal-fillers": {
       "why": "针对投下阴影的凹陷",
       "body": "把少量填充剂打在深层，柔化眼睑和脸颊之间的凹沟。"
+    },
+    "panda-eye-treatment": {
+      "why": "针对不太适合用填充剂的凹陷",
+      "body": "不含玻尿酸的注射胶原蛋白。如果这个部位本来就容易浮肿，医生可能会和你讨论这个选择。"
     }
   },
   "compare": {

@@ -48,6 +48,21 @@ export type LocalePageEntry =
 // laser the same as PicoSure?", and the new avoidIf items on skin-booster and
 // bio-stimulator; on /technology/potenza, the corrected manufacturer lines
 // (Jeisys Medical, not Cynosure Lutronic). Send those to each page's reviewer.
+// 2026-11-28: /treatments/k-premium-lifting (Kaiteki's Ultherapy + Oligio X
+// plan) is a draft naming Dr Chew, who reviewed both device pages. It was
+// drafted the same day as /technology/k-premium-lifting, then simplified and
+// moved to the treatment template before anything went live, so no redirect.
+// Its English page carries no reviewer byline until Dr Chew has read it. Those
+// two device pages are signed, so they gain only navigation, in English, 中文
+// and BM: one link label to the plan (under "How Oligio X heats the skin from
+// the inside" and "Which layers does Ultherapy treat, and at what depths?").
+// The combining FAQs drafted for them were held back so no signed page shows a
+// review date over medical copy its doctor has not read; they can return once
+// Dr Chew signs the plan. Send the two labels to Dr Chew.
+// 2026-11-28: /technology/onda-face is a draft for Dr Tim Chua, who reviewed
+// onda-coolwaves. That signed page gains one string drafted by Claude and not
+// yet read: the link label under "Onda for Body or Onda for Face" pointing to
+// the new page. Send it to him with the draft.
 export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntry>> = {
   zh: {
     // Blog (kt105-kt110): each post signed by its reviewer, the hub by Dr Chew
@@ -92,6 +107,7 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/technology/nctf": { status: "draft", doctor: "dr-joaan-kong" },
     "/technology/oligio": { status: "signed", date: "2026-10-28" },
     "/technology/onda-coolwaves": { status: "signed", date: "2026-10-28" },
+    "/technology/onda-face": { status: "draft", doctor: "dr-tim-chua" },
     "/technology/picocare": { status: "draft", doctor: "dr-calvin-tan" },
     "/technology/picosure": { status: "signed", date: "2026-10-28" },
     "/technology/plinest": { status: "signed", date: "2026-10-28" },
@@ -153,10 +169,21 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/treatments/fat-freezing": { status: "signed", date: "2026-10-28" },
     "/treatments/fotona-4d": { status: "signed", date: "2026-10-28" },
     "/treatments/hifu": { status: "signed", date: "2026-10-28" },
+    "/treatments/k-premium-lifting": { status: "draft", doctor: "dr-chew-yuhhui" },
     "/treatments/laser-hair-removal": { status: "signed", date: "2026-10-28" },
     "/treatments/microneedling": { status: "signed", date: "2026-10-28" },
     "/treatments/microwave-contouring": { status: "signed", date: "2026-10-28" },
     "/treatments/muscle-stimulation": { status: "signed", date: "2026-10-28" },
+    // 2026-11-28: Deusaderm for panda eyes, the under-eye use of
+    // /technology/deusaderm, a draft for that page's doctor. Written the same
+    // day as /technology/deusaderm-panda-eye and moved to the treatment type
+    // before it went live, so no redirect. Also drafted by Claude and not yet
+    // read: the sentence and link in the parent's under-eye section, which now
+    // point here, and the new treatment card ("For a hollow where filler is a
+    // poor fit") on the signed /concerns/dark-eye-circles, which replaces the
+    // treatmentsNote drafted earlier that day (English, 中文 and BM). Send those
+    // to each page's reviewer.
+    "/treatments/panda-eye-treatment": { status: "draft", doctor: "dr-jacqueline-tan" },
     "/treatments/pico-laser": { status: "signed", date: "2026-10-28" },
     "/treatments/radiofrequency": { status: "signed", date: "2026-10-28" },
     "/treatments/resurfacing-laser": { status: "signed", date: "2026-10-28" },
@@ -181,6 +208,12 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/concerns/pigmentation": { status: "signed", date: "2026-10-28" },
     "/concerns/tattoo-removal": { status: "signed", date: "2026-10-28" },
     "/concerns/vascular-lesions": { status: "signed", date: "2026-10-28" },
+    // 2026-11-28: the first product detail page. The 中文 and BM copy is drafted
+    // by Claude from the English (content/i18n/products/<locale>.json → page) and
+    // no doctor has read it, so it is a draft: it renders in dev and on staging
+    // and 404s in production until Dr Chew signs it. Products have no English
+    // reviewer, hence the named doctor.
+    "/products/doubleblock-uv-sunscreen": { status: "draft", doctor: "dr-chew-yuhhui" },
   },
   ms: {
     // Blog (kt105-kt110): each post signed by its reviewer, the hub by Dr Chew
@@ -225,6 +258,7 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/technology/nctf": { status: "draft", doctor: "dr-joaan-kong" },
     "/technology/oligio": { status: "signed", date: "2026-10-28" },
     "/technology/onda-coolwaves": { status: "signed", date: "2026-10-28" },
+    "/technology/onda-face": { status: "draft", doctor: "dr-tim-chua" },
     "/technology/picocare": { status: "draft", doctor: "dr-calvin-tan" },
     "/technology/picosure": { status: "signed", date: "2026-10-28" },
     "/technology/plinest": { status: "signed", date: "2026-10-28" },
@@ -286,10 +320,21 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/treatments/fat-freezing": { status: "signed", date: "2026-10-28" },
     "/treatments/fotona-4d": { status: "signed", date: "2026-10-28" },
     "/treatments/hifu": { status: "signed", date: "2026-10-28" },
+    "/treatments/k-premium-lifting": { status: "draft", doctor: "dr-chew-yuhhui" },
     "/treatments/laser-hair-removal": { status: "signed", date: "2026-10-28" },
     "/treatments/microneedling": { status: "signed", date: "2026-10-28" },
     "/treatments/microwave-contouring": { status: "signed", date: "2026-10-28" },
     "/treatments/muscle-stimulation": { status: "signed", date: "2026-10-28" },
+    // 2026-11-28: Deusaderm for panda eyes, the under-eye use of
+    // /technology/deusaderm, a draft for that page's doctor. Written the same
+    // day as /technology/deusaderm-panda-eye and moved to the treatment type
+    // before it went live, so no redirect. Also drafted by Claude and not yet
+    // read: the sentence and link in the parent's under-eye section, which now
+    // point here, and the new treatment card ("For a hollow where filler is a
+    // poor fit") on the signed /concerns/dark-eye-circles, which replaces the
+    // treatmentsNote drafted earlier that day (English, 中文 and BM). Send those
+    // to each page's reviewer.
+    "/treatments/panda-eye-treatment": { status: "draft", doctor: "dr-jacqueline-tan" },
     "/treatments/pico-laser": { status: "signed", date: "2026-10-28" },
     "/treatments/radiofrequency": { status: "signed", date: "2026-10-28" },
     "/treatments/resurfacing-laser": { status: "signed", date: "2026-10-28" },
@@ -314,5 +359,7 @@ export const localePages: Record<NonDefaultLocale, Record<string, LocalePageEntr
     "/concerns/pigmentation": { status: "signed", date: "2026-10-28" },
     "/concerns/tattoo-removal": { status: "signed", date: "2026-10-28" },
     "/concerns/vascular-lesions": { status: "signed", date: "2026-10-28" },
+    // 2026-11-28: product detail page, a draft as in zh above.
+    "/products/doubleblock-uv-sunscreen": { status: "draft", doctor: "dr-chew-yuhhui" },
   },
 };

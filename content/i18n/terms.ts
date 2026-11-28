@@ -58,6 +58,8 @@ const terms: Record<NonDefaultLocale, Record<Kind, Names>> = {
       "laser-hair-removal": "激光脱毛",
       // 20 Nov 2026 (kt103): autocomplete gl=my returns 线雕隆鼻.
       "nose-thread-lift": "线雕隆鼻（Nose Thread Lift）",
+      // 2026-11-28: the name the page carried as a technology draft.
+      "panda-eye-treatment": "Deusaderm 熊猫眼注射",
     },
     category: {
       Lasers: "激光疗程",
@@ -131,6 +133,8 @@ const terms: Record<NonDefaultLocale, Record<Kind, Names>> = {
       "laser-hair-removal": "Laser Buang Bulu",
       // 20 Nov 2026 (kt103): "thread lift hidung" returns (gl=my).
       "nose-thread-lift": "Thread Lift Hidung",
+      // 2026-11-28: the name the page carried as a technology draft.
+      "panda-eye-treatment": "Deusaderm untuk Mata Panda",
     },
     category: {
       Lasers: "Laser",

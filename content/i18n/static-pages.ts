@@ -24,6 +24,7 @@ import doctorsMs from "./doctors/ms.json" with { type: "json" };
 import productsZh from "./products/zh.json" with { type: "json" };
 import productsMs from "./products/ms.json" with { type: "json" };
 import type { Locale, NonDefaultLocale } from "../../lib/i18n.ts";
+import type { ProductPage } from "../../lib/types.ts";
 
 export type StaticPagesCopy = typeof en;
 
@@ -43,6 +44,8 @@ export type ProductCopy = {
   ingredients: string[] | null;
   highlights: string[] | null;
   priceNote: string | null;
+  /** Detail-page copy, for a product whose English record carries `page`. */
+  page?: ProductPage;
 };
 
 export const doctorCopy: Record<NonDefaultLocale, Record<string, DoctorCopy>> = { zh: doctorsZh, ms: doctorsMs };
