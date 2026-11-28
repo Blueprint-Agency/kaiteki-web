@@ -20,11 +20,16 @@ const nextConfig: NextConfig = {
   },
   // Dev-only: allow HMR when previewing from another device on the LAN.
   allowedDevOrigins: ["192.168.101.7"],
-  // Modern formats for the warm imagery (docs/02 §2). Dev serves WebP only:
-  // AVIF encoding is slow and CPU-heavy, and `next dev` re-encodes on request.
+  // Images resize on Cloudflare, not Vercel (lib/cloudflare-image-loader.ts):
+  // Vercel's optimizer was the biggest metered line on the bill. Cloudflare picks
+  // AVIF/WebP per browser (format=auto), so `formats` no longer applies (docs/02 §2).
   images: {
-    formats:
-      process.env.NODE_ENV === "development" ? ["image/webp"] : ["image/avif", "image/webp"],
+    loader: "custom",
+    loaderFile: "./lib/cloudflare-image-loader.ts",
+    // Every width is a separate Cloudflare transformation per source per month
+    // (free plan: 5,000). Next's defaults add 750, 2048 and 3840; none earns its
+    // keep on a layout that tops out at 1920.
+    deviceSizes: [640, 828, 1080, 1200, 1920],
     // New blog media lives in Cloudflare R2 (bucket kaiteki-web-prod) behind the
     // existing cdn.kaiteki.my, under a blog/ prefix so it stays clear of the
     // brand/ objects already there. See content/blog/AUTHORING.md §3.
@@ -40,6 +45,8 @@ const nextConfig: NextConfig = {
     // uploads straight from the designer's folder via scripts/sync-media.mjs (ADR-0001 §4).
     // The list is a fence, not a convenience: an authored URL outside these prefixes is a
     // storage boundary drifting, which is why validate-concerns.mts Q-14 also checks it.
+    // With the custom loader Next no longer enforces this list at runtime, so Q-14 and
+    // validate:refs are now the only gate; the list stays as the written contract.
     remotePatterns: [
       { protocol: "https", hostname: "cdn.kaiteki.my", pathname: "/blog/**" },
       { protocol: "https", hostname: "cdn.kaiteki.my", pathname: "/concerns/**" },
