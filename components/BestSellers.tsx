@@ -17,11 +17,11 @@ const si = (i: number): CSSProperties => ({ "--i": Math.min(i, 8) } as CSSProper
 /** The five cards, in rank order. Titles and sublines are in
  *  homeCopy[locale].bestSellers.items at the same index (a five-item tuple, so a
  *  missing translation fails typecheck). `image` is the linked record's own cover
- *  image; the panda-eye treatment has none yet, so it shows the Deusaderm product
- *  it uses. The links are locale-neutral paths; lhref() points them at the
- *  translation once it is live and at the English page until then. */
+ *  image, so a card never drifts from its page. The links are locale-neutral
+ *  paths; lhref() points them at the translation once it is live and at the
+ *  English page until then. */
 const CARDS: { path: string; image: string | undefined; motif: string }[] = [
-  { path: "/treatments/panda-eye-treatment", image: technologyBySlug("deusaderm")?.image, motif: "deusaderm" },
+  { path: "/treatments/panda-eye-treatment", image: treatmentBySlug("panda-eye-treatment")?.image, motif: "deusaderm" },
   { path: "/treatments/k-premium-lifting", image: treatmentBySlug("k-premium-lifting")?.image, motif: "oligio" },
   { path: "/technology/onda-face", image: technologyBySlug("onda-face")?.image, motif: "onda-coolwaves" },
   { path: "/technology/juvelook", image: technologyBySlug("juvelook")?.image, motif: "juvelook" },

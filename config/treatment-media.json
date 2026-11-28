@@ -4,6 +4,15 @@
   "publicBase": "https://cdn.kaiteki.my/treatments/",
   "assets": [
     {
+      "source": "treatments/panda-eye-treatment/hero.png",
+      "key": "treatments/panda-eye-treatment/hero.png",
+      "treatment": "panda-eye-treatment",
+      "family": "hero",
+      "width": 1440,
+      "height": 900,
+      "manual": true
+    },
+    {
       "source": "treatments/bio-stimulator/hero-2.jpg",
       "key": "treatments/bio-stimulator/hero-2.jpg",
       "treatment": "bio-stimulator",

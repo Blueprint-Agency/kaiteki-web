@@ -3,6 +3,8 @@
   "durationDowntime": "注射时间短 · 瘀青可能持续一个星期或更久",
   "name": "Deusaderm 熊猫眼注射",
   "category": "Injectables",
+  "image": "https://cdn.kaiteki.my/treatments/panda-eye-treatment/hero.png",
+  "imageAlt": "双美生物科技（Sunmax）的 Deusaderm 胶原蛋白注射剂包装盒，即本疗程使用的产品",
   "summary": "在眼下注射 Deusaderm 胶原蛋白，考虑用于主要由凹陷和皮肤薄造成的黑眼圈，而不是色素或血管造成的黑眼圈。",
   "leadAnswer": "Deusaderm 熊猫眼注射是在眼下注入少量交联猪源胶原蛋白，目的是柔化投下阴影的凹陷，这些部位的皮肤往往也比较薄。它不能处理褐色色素或透出来的血管，所以医生会先检查你的黑眼圈是什么原因造成的。",
   "related": [

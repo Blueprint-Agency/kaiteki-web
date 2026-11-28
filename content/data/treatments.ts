@@ -2439,8 +2439,8 @@ export const treatments: Treatment[] = [
   // treatment for one concern using one product, not a technology. Same verified
   // facts as /technology/deusaderm; no new study, figure or claim. Copy
   // simplified on the move (plain words, each caveat stated once). No under-eye
-  // photography exists and the product cover sits outside the treatments/ media
-  // prefix (Q-14), so the page has no hero image yet.
+  // photography exists, so the hero is a copy of the Deusaderm product cover,
+  // uploaded under the treatments/ media prefix (Q-14) on 2026-11-28.
   // Reviewer assigned: dr-jacqueline-tan, as for /technology/deusaderm. Until she
   // has read this page, `reviewedBy` and `lastReviewed` stay empty, so no byline,
   // schema reviewer or doctor-profile listing claims a review that has not
@@ -2450,6 +2450,8 @@ export const treatments: Treatment[] = [
     durationDowntime: "Brief injection · Bruising can last a week or more",
     name: "Deusaderm Panda Eye Treatment",
     category: "Injectables",
+    image: "https://cdn.kaiteki.my/treatments/panda-eye-treatment/hero.png",
+    imageAlt: "A box of Deusaderm collagen injectable from Sunmax, the product used in this treatment",
     summary:
       "Deusaderm collagen under the eyes, considered for dark circles caused mainly by hollowing and thin skin, not pigment or blood vessels.",
     leadAnswer:
